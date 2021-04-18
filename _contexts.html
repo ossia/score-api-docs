@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.8.17"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>score: $title</title>
+        <title>score: Contexts</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -93,13 +93,17 @@ $(document).ready(function(){initNavTree('_contexts.html',''); initResizable(); 
 </iframe>
 </div>
 
-<div class="PageDoc"><div class="contents">
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">Contexts </div>  </div>
+</div><!--header-->
+<div class="contents">
 <div class="textblock"><p>Contexts are a solution to the problem of requiring global state. There are multiple nested levels of context in score :</p>
 <ul>
 <li><a class="el" href="structscore_1_1_application_context.html" title="Used to access all the application-wide state and structures.">score::ApplicationContext</a> : where classes are registered</li>
 <li><a class="el" href="structscore_1_1_g_u_i_application_context.html" title="Specializes ApplicationContext with the QMainWindow.">score::GUIApplicationContext</a> : extends ApplicationContext, available in the GUI software (not in the command-line &amp; embedded players)</li>
 <li><a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a></li>
-<li>Scenario::Context</li>
+<li><a class="el" href="struct_process_1_1_context.html">Process::Context</a></li>
 <li>Various execution contexts, for audio, etc.</li>
 </ul>
 <p>A context is simply a class that references other classes useful in a given context.</p>

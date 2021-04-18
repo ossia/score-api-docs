@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.8.17"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>score: $title</title>
+        <title>score: Data models</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -93,7 +93,11 @@ $(document).ready(function(){initNavTree('_models.html',''); initResizable(); })
 </iframe>
 </div>
 
-<div class="PageDoc"><div class="contents">
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">Data models </div>  </div>
+</div><!--header-->
+<div class="contents">
 <div class="textblock"><p>score provides ways to create hierarchical data models, based on an entity-component paradigm similar to game engines.</p>
 <h1><a class="anchor" id="Organization"></a>
 Organization</h1>
@@ -153,6 +157,9 @@ Relationship to Qt's item models</h1>
  This is done mostly for performance &amp; memory usage reasons, and because it would not be really useful for these cases. <br  />
  For these objects, paths can still be saved with the <a class="el" href="class_tree_path.html" title="Path in a tree of QAbstractItemModel objects.">TreePath</a> class which is a simpler list of integers. <br  />
  A base "Tree" QAbstractItemModel implementation is provided with TreeNodeItemModel, with the nodes of the tree are based on <a class="el" href="class_tree_node.html">TreeNode</a>.</p>
+<h1><a class="anchor" id="SimpleObjectsModel"></a>
+Tree models for simple objects</h1>
+<p>This section refers to the handling of non-QObject objects. Such lightweight "data-like" objects (for the device explorer, the library, the states) don't own an identifier. They are identified by their position in their own tree. Such a data-like object can be put easily in a tree structure with the <a class="el" href="class_tree_node.html">TreeNode</a> mixin. It can then be exposed very easily to the Qt's model/view implementation, with NodeItemModel.</p>
 <dl class="section see"><dt>See also</dt><dd>Serialization </dd></dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

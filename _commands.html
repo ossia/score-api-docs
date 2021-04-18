@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.8.17"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>score: $title</title>
+        <title>score: Commands</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -93,7 +93,11 @@ $(document).ready(function(){initNavTree('_commands.html',''); initResizable(); 
 </iframe>
 </div>
 
-<div class="PageDoc"><div class="contents">
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">Commands </div>  </div>
+</div><!--header-->
+<div class="contents">
 <div class="textblock"><p>Commands are used for undo-redo. A command is simply a class which inherits from <a class="el" href="classscore_1_1_command.html" title="The Command class.">score::Command</a>.</p>
 <p>Commands can be serialized: this allows to restore everything on a crash (see <a class="el" href="classscore_1_1_document_backup_manager.html" title="Handles document backup to allow restoring if there is a crash.">score::DocumentBackupManager</a>).</p>
 <h1><a class="anchor" id="CreatingCommand"></a>
