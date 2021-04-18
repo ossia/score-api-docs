@@ -1,0 +1,4 @@
+var structw__internal_1_1_w___type_registery_3_01std_1_1vector_3_01vst3_1_1_available_plugin_01_4_01_4 =
+[
+    [ "registered", "structw__internal_1_1_w___type_registery_3_01std_1_1vector_3_01vst3_1_1_available_plugin_01_4_01_4.html#a1483838e1aed60ac90d7d0af5a3dd318a3805ec1c88b0c37268e1f9adb487e6df", null ]
+];

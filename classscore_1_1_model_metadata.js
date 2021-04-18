@@ -1,0 +1,27 @@
+var classscore_1_1_model_metadata =
+[
+    [ "W_BaseType", "classscore_1_1_model_metadata.html#a2a4d8b67c763587b9b086fda0d868e37", null ],
+    [ "ModelMetadata", "classscore_1_1_model_metadata.html#a6f374aaa73ed66fc18719e3d526c3824", null ],
+    [ "ColorChanged", "classscore_1_1_model_metadata.html#a5c7a78817b3ade754e6242f52bf67d40", null ],
+    [ "CommentChanged", "classscore_1_1_model_metadata.html#a4b1b90c306d5ed26df29d8f2579f1584", null ],
+    [ "ExtendedMetadataChanged", "classscore_1_1_model_metadata.html#a17f341e76588a0c837bf749b0e2afb62", null ],
+    [ "getColor", "classscore_1_1_model_metadata.html#ae4bdf36b96811d972b497a1ff4966f13", null ],
+    [ "getComment", "classscore_1_1_model_metadata.html#a97e5a038abc3f1ebe7c2cbafdc68c43b", null ],
+    [ "getExtendedMetadata", "classscore_1_1_model_metadata.html#a5fd9a8bf13f52bdde82d1f9cecc0921e", null ],
+    [ "getLabel", "classscore_1_1_model_metadata.html#a30cec8214ac32f34bf33337bde5b2906", null ],
+    [ "getName", "classscore_1_1_model_metadata.html#a58c921e5ae4ef92802a8d42ea4fbf9ba", null ],
+    [ "LabelChanged", "classscore_1_1_model_metadata.html#ab05ca7907210ca98838a8646bb36bc5c", null ],
+    [ "metadataChanged", "classscore_1_1_model_metadata.html#a2f5dc70a972612b69e80f2f389936a82", null ],
+    [ "metaObject", "classscore_1_1_model_metadata.html#a18f28ddfb7fb900ddadc849a6e0508b0", null ],
+    [ "NameChanged", "classscore_1_1_model_metadata.html#a1d307694fc5a02fab87ea89e6a134955", null ],
+    [ "qt_metacall", "classscore_1_1_model_metadata.html#a10484ff4ac2e2095f4bd5a756d270ddf", null ],
+    [ "qt_metacast", "classscore_1_1_model_metadata.html#a12184be1b4caa85a6bc02d4d54bb4945", null ],
+    [ "setColor", "classscore_1_1_model_metadata.html#a5b08908eb242d61c903f2feefdb30f95", null ],
+    [ "setComment", "classscore_1_1_model_metadata.html#aff6d8106da11497484ad53a9803445a8", null ],
+    [ "setExtendedMetadata", "classscore_1_1_model_metadata.html#a5e515c95326ccf31c22995d843f2984e", null ],
+    [ "setInstanceName", "classscore_1_1_model_metadata.html#abb50713ffd1da968538b159f283b4a0f", null ],
+    [ "setLabel", "classscore_1_1_model_metadata.html#a594ce8ecd25ddae07c9dd3a9efa09c04", null ],
+    [ "setName", "classscore_1_1_model_metadata.html#a2d8bcd64d0c8bb2ba7797a6558bce668", null ],
+    [ "touchedName", "classscore_1_1_model_metadata.html#a85564cbc0da9052277447917f867b018", null ],
+    [ "w_internal::FriendHelper", "classscore_1_1_model_metadata.html#aa7a7261c104c1136b1734e433d11755f", null ]
+];

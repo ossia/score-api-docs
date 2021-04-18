@@ -1,0 +1,4 @@
+var structw__internal_1_1_w___type_registery_3_01std_1_1shared__ptr_3_01_media_1_1_audio_file_01_4_01_4 =
+[
+    [ "registered", "structw__internal_1_1_w___type_registery_3_01std_1_1shared__ptr_3_01_media_1_1_audio_file_01_4_01_4.html#a2886e0aaec12d6b4b6842f280b5f6a44a66d694862afc2e92541c6e91928c9458", null ]
+];

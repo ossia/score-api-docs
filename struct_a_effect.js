@@ -1,0 +1,25 @@
+var struct_a_effect =
+[
+    [ "dispatcher", "struct_a_effect.html#aacdc461d88a2cff696c8459de6748ffc", null ],
+    [ "flags", "struct_a_effect.html#a0a142f0e2b3f85ce6469b4733a4552fd", null ],
+    [ "getParameter", "struct_a_effect.html#acfb4ef5d5b36efae2362acd3a0cf8c50", null ],
+    [ "initialDelay", "struct_a_effect.html#ae932e9c453e3653790f141474f3553c5", null ],
+    [ "ioRatio", "struct_a_effect.html#a87d2dffc75a065f3a9ec8e074833f068", null ],
+    [ "magic", "struct_a_effect.html#a7c8c6a2182181c621bb945c25807aece", null ],
+    [ "numInputs", "struct_a_effect.html#a8a6e1978e6c7a084eb025b046c66a2f5", null ],
+    [ "numOutputs", "struct_a_effect.html#a20708b94eb702cd65eca3916e96c3141", null ],
+    [ "numParams", "struct_a_effect.html#ad01aeba349ab475da5640fc4f1869f16", null ],
+    [ "numPrograms", "struct_a_effect.html#ad5fcf43058e23fb3581598c0f3bfed8c", null ],
+    [ "object", "struct_a_effect.html#ae9f3e1011a1a831e037aeb9136318c0c", null ],
+    [ "offQualities", "struct_a_effect.html#a4e060de0b219c2215c4171a182c56f49", null ],
+    [ "process", "struct_a_effect.html#a29bd0ea4ef3017af8a5c211c971be788", null ],
+    [ "processDoubleReplacing", "struct_a_effect.html#afa2edcec22128b135beb7141ca077621", null ],
+    [ "processReplacing", "struct_a_effect.html#a29c9b8ca452d9dc1119b027a6fbe0808", null ],
+    [ "realQualities", "struct_a_effect.html#a6a487a304b776a9e2d5436975e1d9e3e", null ],
+    [ "resvd1", "struct_a_effect.html#a57b755d43f26d1687bd1b38ffb7fb59d", null ],
+    [ "resvd2", "struct_a_effect.html#a8127a44c2a67151b0a21b1632e8b71ea", null ],
+    [ "setParameter", "struct_a_effect.html#a8c5d1eda63924b7d1522baacbf9b2274", null ],
+    [ "uniqueID", "struct_a_effect.html#a91cc3890b73363e04b792f62a8826616", null ],
+    [ "user", "struct_a_effect.html#aee5789fd3f0301cbfc91c97760291783", null ],
+    [ "version", "struct_a_effect.html#a15e8ddd47fc0c051f4b57a79c97b48f1", null ]
+];

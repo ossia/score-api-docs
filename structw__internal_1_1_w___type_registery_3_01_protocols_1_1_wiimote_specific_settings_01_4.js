@@ -1,0 +1,4 @@
+var structw__internal_1_1_w___type_registery_3_01_protocols_1_1_wiimote_specific_settings_01_4 =
+[
+    [ "registered", "structw__internal_1_1_w___type_registery_3_01_protocols_1_1_wiimote_specific_settings_01_4.html#a7551136b4541d1444892c2b04bb90129ae17f338b3f7325621dc473bd4e890da9", null ]
+];

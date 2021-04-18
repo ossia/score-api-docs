@@ -1,0 +1,4 @@
+var structw__internal_1_1_w___type_registery_3_01_protocols_1_1_o_s_c_query_specific_settings_01_4 =
+[
+    [ "registered", "structw__internal_1_1_w___type_registery_3_01_protocols_1_1_o_s_c_query_specific_settings_01_4.html#a4332d9f4e6a379363edbe95448c2ffb2ad31542da0b2aab9d55355a9065e1a0b4", null ]
+];

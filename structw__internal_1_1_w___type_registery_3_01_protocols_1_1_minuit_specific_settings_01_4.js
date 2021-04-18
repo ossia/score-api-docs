@@ -1,0 +1,4 @@
+var structw__internal_1_1_w___type_registery_3_01_protocols_1_1_minuit_specific_settings_01_4 =
+[
+    [ "registered", "structw__internal_1_1_w___type_registery_3_01_protocols_1_1_minuit_specific_settings_01_4.html#aba7a42e414b273a7f26766d944cc31e9adfa5f7d7030f9a64066f26859bf256d5", null ]
+];

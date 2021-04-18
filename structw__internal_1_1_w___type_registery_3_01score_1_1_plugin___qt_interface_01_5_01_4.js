@@ -1,0 +1,4 @@
+var structw__internal_1_1_w___type_registery_3_01score_1_1_plugin___qt_interface_01_5_01_4 =
+[
+    [ "registered", "structw__internal_1_1_w___type_registery_3_01score_1_1_plugin___qt_interface_01_5_01_4.html#a6e51fdf3992b8874ab1eb9e63de76278aa35de5de37d6672a809057d9c19b4366", null ]
+];

@@ -1,0 +1,4 @@
+var structw__internal_1_1_w___type_registery_3_01_curve_1_1_remove_point_behaviour_01_4 =
+[
+    [ "registered", "structw__internal_1_1_w___type_registery_3_01_curve_1_1_remove_point_behaviour_01_4.html#ab3552abb977c7edfa8c6655a2567b207acedfbd59908fbd3c909dcce1cf704628", null ]
+];

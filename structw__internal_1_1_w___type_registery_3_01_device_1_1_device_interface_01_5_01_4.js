@@ -1,0 +1,4 @@
+var structw__internal_1_1_w___type_registery_3_01_device_1_1_device_interface_01_5_01_4 =
+[
+    [ "registered", "structw__internal_1_1_w___type_registery_3_01_device_1_1_device_interface_01_5_01_4.html#a2fc44109fa9ba2c55e360a68e6ba3cf5a7bf9b8465add8d529dbab5a62416ffe3", null ]
+];

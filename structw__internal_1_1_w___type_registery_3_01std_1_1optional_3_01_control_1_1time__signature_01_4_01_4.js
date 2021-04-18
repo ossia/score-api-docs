@@ -1,0 +1,4 @@
+var structw__internal_1_1_w___type_registery_3_01std_1_1optional_3_01_control_1_1time__signature_01_4_01_4 =
+[
+    [ "registered", "structw__internal_1_1_w___type_registery_3_01std_1_1optional_3_01_control_1_1time__signature_01_4_01_4.html#a29fe3c0993a7d1109d3e473c6953c36aa5408a4bc1fa9eae5878a2f09169954d7", null ]
+];

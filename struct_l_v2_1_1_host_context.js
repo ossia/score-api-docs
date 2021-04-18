@@ -1,0 +1,27 @@
+var struct_l_v2_1_1_host_context =
+[
+    [ "make_node", "struct_l_v2_1_1_host_context.html#a621888723592aacd1bf897795c73b7d4", null ],
+    [ "atom_chunk_id", "struct_l_v2_1_1_host_context.html#a8fc61470e59403781ac69ad64d21b94e", null ],
+    [ "atom_class", "struct_l_v2_1_1_host_context.html#aaff7afb8756a734ca1282465c0a58113", null ],
+    [ "atom_eventTransfer", "struct_l_v2_1_1_host_context.html#a3afd33d679e209a93b2e809539f16a82", null ],
+    [ "atom_sequence_id", "struct_l_v2_1_1_host_context.html#a4f4a348ee30a84a035e8fd4401c7d699", null ],
+    [ "audio_class", "struct_l_v2_1_1_host_context.html#a55efbdaa002c679bd6439eae296a3cb3", null ],
+    [ "control_class", "struct_l_v2_1_1_host_context.html#a094304eab9dcf0ba51c0eb35e0bc0dba", null ],
+    [ "current", "struct_l_v2_1_1_host_context.html#ada36c1ef277fc3173cb16017dda9df5e", null ],
+    [ "cv_class", "struct_l_v2_1_1_host_context.html#a3e9f1187adcf0e92e838ccade3328cb0", null ],
+    [ "event_class", "struct_l_v2_1_1_host_context.html#ad8d8d3f8558f24959eaa65cc11149c10", null ],
+    [ "features", "struct_l_v2_1_1_host_context.html#ad7b60a03d8f4a101aabbc7c7956264d2", null ],
+    [ "fixed_size", "struct_l_v2_1_1_host_context.html#a0598dafaa7f0006bddb811a4ae985f32", null ],
+    [ "forge", "struct_l_v2_1_1_host_context.html#a61d2919b8daae9bfed660a48f3214118", null ],
+    [ "global", "struct_l_v2_1_1_host_context.html#a156a28a6674d36d1e5346fe8d48d3775", null ],
+    [ "input_class", "struct_l_v2_1_1_host_context.html#a62de526b6bd6973083dde79fd4fd1675", null ],
+    [ "midi_buffer_size", "struct_l_v2_1_1_host_context.html#a5965f192169030eeef18a86ace8d07d4", null ],
+    [ "midi_event_id", "struct_l_v2_1_1_host_context.html#a4bf5f060890c7ffdb08cd124744adc29", null ],
+    [ "no_user_resize", "struct_l_v2_1_1_host_context.html#a271aab645ee5c8b55a946f3c344197c6", null ],
+    [ "null_id", "struct_l_v2_1_1_host_context.html#a3928b2046415ad5c3c67b5e6260dc988", null ],
+    [ "optional_feature", "struct_l_v2_1_1_host_context.html#a41566a0988560a92a4c493511e447eaf", null ],
+    [ "output_class", "struct_l_v2_1_1_host_context.html#aa2a9a5dea757a4fe386707aef79f6f58", null ],
+    [ "work_interface", "struct_l_v2_1_1_host_context.html#a0d0ea595684705aaa67e51d446191e27", null ],
+    [ "work_schedule", "struct_l_v2_1_1_host_context.html#ae2a43e71c03c301a90a78d6acf903650", null ],
+    [ "world", "struct_l_v2_1_1_host_context.html#ac59e02dc9878eebce20d842e4108caaf", null ]
+];

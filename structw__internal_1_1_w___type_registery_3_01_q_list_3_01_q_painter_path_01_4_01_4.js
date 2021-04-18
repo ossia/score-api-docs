@@ -1,0 +1,4 @@
+var structw__internal_1_1_w___type_registery_3_01_q_list_3_01_q_painter_path_01_4_01_4 =
+[
+    [ "registered", "structw__internal_1_1_w___type_registery_3_01_q_list_3_01_q_painter_path_01_4_01_4.html#a67481ec92958a3b272c58eb039304b7aa5f1df8f134f8e7b94e2b65289873d5ad", null ]
+];

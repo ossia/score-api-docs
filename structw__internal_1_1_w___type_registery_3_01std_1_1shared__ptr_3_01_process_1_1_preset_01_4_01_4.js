@@ -1,0 +1,4 @@
+var structw__internal_1_1_w___type_registery_3_01std_1_1shared__ptr_3_01_process_1_1_preset_01_4_01_4 =
+[
+    [ "registered", "structw__internal_1_1_w___type_registery_3_01std_1_1shared__ptr_3_01_process_1_1_preset_01_4_01_4.html#ab9a46f2f6ad4f3b8432ad1f4916b3cc9aa3fcfdf5cc1ed473c1a8cb7f2389acaf", null ]
+];

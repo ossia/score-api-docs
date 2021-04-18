@@ -1,0 +1,4 @@
+var structw__internal_1_1_w___type_registery_3_01_protocols_1_1_serial_specific_settings_01_4 =
+[
+    [ "registered", "structw__internal_1_1_w___type_registery_3_01_protocols_1_1_serial_specific_settings_01_4.html#a95af1009edb36bd8a2165b911838f278ae21883e936bb6f5ab6d4b40dfb377409", null ]
+];
