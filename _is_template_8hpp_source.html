@@ -106,31 +106,31 @@ $(document).ready(function(){initNavTree('_is_template_8hpp_source.html',''); in
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// https://stackoverflow.com/questions/39812789/is-there-any-way-of-detecting-arbitrary-template-classes-that-mix-types-and-non</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// again wiht c++20</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="structis__template.html">    9</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structis__template.html">is_template</a> : std::false_type</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">struct </span>is_template : std::false_type</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;};</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">template</span> &lt;<span class="keyword">class</span>...&gt; <span class="keyword">class </span>T, <span class="keyword">class</span>... Args&gt;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structis__template_3_01_t_3_01_args_8_8_8_01_4_01_4.html">   14</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structis__template.html">is_template</a>&lt;T&lt;Args...&gt;&gt; : std::true_type</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">struct </span>is_template&lt;T&lt;Args...&gt;&gt; : std::true_type</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;};</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">template</span> &lt;<span class="keyword">auto</span>...&gt; <span class="keyword">class </span>T, <span class="keyword">auto</span>... Args&gt;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">struct </span><a class="code" href="structis__template.html">is_template</a>&lt;T&lt;Args...&gt;&gt; : std::true_type</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">struct </span>is_template&lt;T&lt;Args...&gt;&gt; : std::true_type</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">template</span> &lt;<span class="keyword">class</span>, <span class="keyword">auto</span>, <span class="keyword">auto</span>...&gt; <span class="keyword">class </span>T, <span class="keyword">class </span>Arg1, <span class="keyword">auto</span> Arg2, <span class="keyword">auto</span>... Arg3&gt;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structis__template_3_01_t_3_01_arg1_00_01_arg2_00_01_arg3_8_8_8_01_4_01_4.html">   24</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structis__template.html">is_template</a>&lt;T&lt;Arg1, Arg2, Arg3...&gt;&gt; : std::true_type</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">struct </span>is_template&lt;T&lt;Arg1, Arg2, Arg3...&gt;&gt; : std::true_type</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">template</span> &lt;<span class="keyword">auto</span>, <span class="keyword">class</span>, <span class="keyword">class</span>...&gt; <span class="keyword">class </span>T, <span class="keyword">auto</span> Arg1, <span class="keyword">class </span>Arg2, <span class="keyword">class</span>... Arg3&gt;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">struct </span><a class="code" href="structis__template.html">is_template</a>&lt;T&lt;Arg1, Arg2, Arg3...&gt;&gt; : std::true_type</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">struct </span>is_template&lt;T&lt;Arg1, Arg2, Arg3...&gt;&gt; : std::true_type</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">template</span> &lt;<span class="keyword">class</span>, auto, <span class="keyword">class</span>&gt; <span class="keyword">class </span>T, <span class="keyword">class </span>Arg1, <span class="keyword">auto</span> Arg2, <span class="keyword">class </span>Arg3&gt;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structis__template_3_01_t_3_01_arg1_00_01_arg2_00_01_arg3_01_4_01_4.html">   33</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structis__template.html">is_template</a>&lt;T&lt;Arg1, Arg2, Arg3&gt;&gt; : std::true_type</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">struct </span>is_template&lt;T&lt;Arg1, Arg2, Arg3&gt;&gt; : std::true_type</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('_is_template_8hpp_source.html',''); in
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">auto</span> Arg2,</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">class </span>Arg3,</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">class </span>Arg4&gt;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structis__template_3_01_t_3_01_arg1_00_01_arg2_00_01_arg3_00_01_arg4_01_4_01_4.html">   44</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structis__template.html">is_template</a>&lt;T&lt;Arg1, Arg2, Arg3, Arg4&gt;&gt; : std::true_type</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">struct </span>is_template&lt;T&lt;Arg1, Arg2, Arg3, Arg4&gt;&gt; : std::true_type</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
@@ -153,11 +153,11 @@ $(document).ready(function(){initNavTree('_is_template_8hpp_source.html',''); in
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">class </span>Arg3,</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">class </span>Arg4,</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">class </span>Arg5&gt;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structis__template_3_01_t_3_01_arg1_00_01_arg2_00_01_arg3_00_01_arg4_00_01_arg5_01_4_01_4.html">   56</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structis__template.html">is_template</a>&lt;T&lt;Arg1, Arg2, Arg3, Arg4, Arg5&gt;&gt; : std::true_type</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">struct </span>is_template&lt;T&lt;Arg1, Arg2, Arg3, Arg4, Arg5&gt;&gt; : std::true_type</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">template</span> &lt;auto, <span class="keyword">class</span>, auto&gt; <span class="keyword">class </span>T, <span class="keyword">auto</span> Arg1, <span class="keyword">class </span>Arg2, <span class="keyword">auto</span> Arg3&gt;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">struct </span><a class="code" href="structis__template.html">is_template</a>&lt;T&lt;Arg1, Arg2, Arg3&gt;&gt; : std::true_type</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">struct </span>is_template&lt;T&lt;Arg1, Arg2, Arg3&gt;&gt; : std::true_type</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('_is_template_8hpp_source.html',''); in
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">auto</span> A5,</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">auto</span> A6,</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">class </span>A7&gt;</div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="structis__template_3_01_t_3_01_a1_00_01_a2_00_01_a3_00_01_a4_00_01_a5_00_01_a6_00_01_a7_01_4_01_4.html">   74</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structis__template.html">is_template</a>&lt;T&lt;A1, A2, A3, A4, A5, A6, A7&gt;&gt; : std::true_type</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">struct </span>is_template&lt;T&lt;A1, A2, A3, A4, A5, A6, A7&gt;&gt; : std::true_type</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
@@ -186,26 +186,24 @@ $(document).ready(function(){initNavTree('_is_template_8hpp_source.html',''); in
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">auto</span> A6,</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">auto</span> A7,</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">class </span>A8&gt;</div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="structis__template_3_01_t_3_01_a1_00_01_a2_00_01_a3_00_01_a4_00_01_a5_00_01_a6_00_01_a7_00_01_a8_01_4_01_4.html">   89</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structis__template.html">is_template</a>&lt;T&lt;A1, A2, A3, A4, A5, A6, A7, A8&gt;&gt; : std::true_type</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">struct </span>is_template&lt;T&lt;A1, A2, A3, A4, A5, A6, A7, A8&gt;&gt; : std::true_type</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">// TODO check where this causes a conflict with gcc</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#if defined(__clang__) || defined(_MSC_VER)</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">template</span>&lt;<span class="keyword">class</span>, std::<span class="keywordtype">size_t</span>&gt; <span class="keyword">class </span>T, <span class="keyword">class </span>X, std::size_t u&gt;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">struct </span><a class="code" href="structis__template.html">is_template</a>&lt;T&lt;X,u&gt;&gt; : std::true_type</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">struct </span>is_template&lt;T&lt;X,u&gt;&gt; : std::true_type</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;{</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;};</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span>&gt;</div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="structis__custom__serialized.html">  102</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structis__custom__serialized.html">is_custom_serialized</a> : std::false_type</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">struct </span>is_custom_serialized : std::false_type</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;{</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astructis__template_html"><div class="ttname"><a href="structis__template.html">is_template</a></div><div class="ttdef"><b>Definition:</b> IsTemplate.hpp:9</div></div>
-<div class="ttc" id="astructis__custom__serialized_html"><div class="ttname"><a href="structis__custom__serialized.html">is_custom_serialized</a></div><div class="ttdef"><b>Definition:</b> IsTemplate.hpp:102</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

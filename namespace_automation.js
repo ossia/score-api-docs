@@ -12,6 +12,7 @@ var namespace_automation =
     [ "InspectorWidget", "class_automation_1_1_inspector_widget.html", "class_automation_1_1_inspector_widget" ],
     [ "LayerPresenter", "class_automation_1_1_layer_presenter.html", "class_automation_1_1_layer_presenter" ],
     [ "LayerView", "class_automation_1_1_layer_view.html", "class_automation_1_1_layer_view" ],
+    [ "MinMaxHeaderDelegate", "class_automation_1_1_min_max_header_delegate.html", "class_automation_1_1_min_max_header_delegate" ],
     [ "PointInspectorFactory", "class_automation_1_1_point_inspector_factory.html", "class_automation_1_1_point_inspector_factory" ],
     [ "PointInspectorWidget", "class_automation_1_1_point_inspector_widget.html", "class_automation_1_1_point_inspector_widget" ],
     [ "ProcessModel", "class_automation_1_1_process_model.html", "class_automation_1_1_process_model" ],

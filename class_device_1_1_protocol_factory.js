@@ -1,7 +1,7 @@
 var class_device_1_1_protocol_factory =
 [
     [ "StandardCategories", "struct_device_1_1_protocol_factory_1_1_standard_categories.html", null ],
-    [ "~ProtocolFactory", "class_device_1_1_protocol_factory.html#af0f7fbcfe8c336e9c9660bb132e060e4", null ],
+    [ "~ProtocolFactory", "class_device_1_1_protocol_factory.html#ad5e2808e0e651acaef0147c4d4fe216e", null ],
     [ "category", "class_device_1_1_protocol_factory.html#a412f5c064b2743919ddc3ddbec5f6afc", null ],
     [ "checkCompatibility", "class_device_1_1_protocol_factory.html#a234efca8b12f98a16a040b5108940110", null ],
     [ "defaultSettings", "class_device_1_1_protocol_factory.html#afe23713305124395ecc5291ab89aeac9", null ],
@@ -15,5 +15,5 @@ var class_device_1_1_protocol_factory =
     [ "prettyName", "class_device_1_1_protocol_factory.html#af2ce8aea8a61af9dfd523e3c4191bea7", null ],
     [ "serializeProtocolSpecificSettings", "class_device_1_1_protocol_factory.html#aaa1f7f37f2c1374858b972d191e71aea", null ],
     [ "serializeProtocolSpecificSettings_T", "class_device_1_1_protocol_factory.html#abc4e0cb5daa6c17e78b38618598ee3ed", null ],
-    [ "visualPriority", "class_device_1_1_protocol_factory.html#a4655bf54c0135439b3d984a08fae30bd", null ]
+    [ "visualPriority", "class_device_1_1_protocol_factory.html#ad5810a19e266a8ab9804f127cfebd0f3", null ]
 ];

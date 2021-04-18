@@ -1,4 +1,0 @@
-var structw__internal_1_1_w___type_registery_3_01score_1_1_model_metadata_01_5_01_4 =
-[
-    [ "registered", "structw__internal_1_1_w___type_registery_3_01score_1_1_model_metadata_01_5_01_4.html#afae15249a8c17f19f5a6dd0e151e469aadd151658fea50d13f23feda9e7075fd5", null ]
-];

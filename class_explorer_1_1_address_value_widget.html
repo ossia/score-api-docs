@@ -95,12 +95,7 @@ $(document).ready(function(){initNavTree('class_explorer_1_1_address_value_widge
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="class_explorer_1_1_address_value_widget-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Explorer::AddressValueWidget Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -110,26 +105,16 @@ $(document).ready(function(){initNavTree('class_explorer_1_1_address_value_widge
 Inheritance diagram for Explorer::AddressValueWidget:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="class_explorer_1_1_address_value_widget.png" alt=""/>
- </div></div>
+  <img src="class_explorer_1_1_address_value_widget.png" usemap="#Explorer::AddressValueWidget_map" alt=""/>
+  <map id="Explorer::AddressValueWidget_map" name="Explorer::AddressValueWidget_map">
+<area href="class_explorer_1_1_double_slider_value_widget.html" alt="Explorer::DoubleSliderValueWidget" shape="rect" coords="0,112,210,136"/>
+<area href="class_explorer_1_1_list_value_widget.html" alt="Explorer::ListValueWidget" shape="rect" coords="220,112,430,136"/>
+<area href="class_explorer_1_1_slider_value_widget.html" alt="Explorer::SliderValueWidget" shape="rect" coords="440,112,650,136"/>
+  </map>
+</div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:aaea27cfb429c85fdbeec053e986c644d"><td class="memItemLeft" align="right" valign="top"><a id="aaea27cfb429c85fdbeec053e986c644d"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>W_BaseType</b> = std::remove_reference_t&lt; decltype(w_internal::getParentObjectHelper(&amp;W_ThisType::qt_metacast))&gt;</td></tr>
-<tr class="separator:aaea27cfb429c85fdbeec053e986c644d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acca5144ab1a1ba1baee6b8be68acf97d"><td class="memItemLeft" align="right" valign="top"><a id="acca5144ab1a1ba1baee6b8be68acf97d"></a>
-virtual const QMetaObject *&#160;</td><td class="memItemRight" valign="bottom"><b>metaObject</b> () const</td></tr>
-<tr class="separator:acca5144ab1a1ba1baee6b8be68acf97d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac840039a20fa8945c1715498b5035ba"><td class="memItemLeft" align="right" valign="top"><a id="aac840039a20fa8945c1715498b5035ba"></a>
-virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacast</b> (const char *)</td></tr>
-<tr class="separator:aac840039a20fa8945c1715498b5035ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c2be9e38c6271c9ab1bd591d8df9cb4"><td class="memItemLeft" align="right" valign="top"><a id="a4c2be9e38c6271c9ab1bd591d8df9cb4"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacall</b> (QMetaObject::Call, int, void **)</td></tr>
-<tr class="separator:a4c2be9e38c6271c9ab1bd591d8df9cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace68cbece827df6704014b15c7297bed"><td class="memItemLeft" align="right" valign="top"><a id="ace68cbece827df6704014b15c7297bed"></a>
 virtual ossia::value&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> () const =0</td></tr>
 <tr class="separator:ace68cbece827df6704014b15c7297bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,27 +124,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>set</b> (ossi
 <tr class="memitem:a1aa36fd9c65bba23f54f74a138692c20"><td class="memItemLeft" align="right" valign="top"><a id="a1aa36fd9c65bba23f54f74a138692c20"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>changed</b> (ossia::value arg_1)</td></tr>
 <tr class="separator:a1aa36fd9c65bba23f54f74a138692c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a60a103c0e6e3935fb2a0094fb09a5672"><td class="memItemLeft" align="right" valign="top"><a id="a60a103c0e6e3935fb2a0094fb09a5672"></a>
-static QString&#160;</td><td class="memItemRight" valign="bottom"><b>tr</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:a60a103c0e6e3935fb2a0094fb09a5672"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4ed3eff0f79ca149efa070daa3fd912"><td class="memItemLeft" align="right" valign="top"><a id="ad4ed3eff0f79ca149efa070daa3fd912"></a>
-static QT_DEPRECATED QString&#160;</td><td class="memItemRight" valign="bottom"><b>trUtf8</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:ad4ed3eff0f79ca149efa070daa3fd912"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a8593e3faef78e3afd55c108b32c48abc"><td class="memItemLeft" align="right" valign="top"><a id="a8593e3faef78e3afd55c108b32c48abc"></a>
-static const Q_OBJECT_NO_OVERRIDE_WARNING QMetaObject&#160;</td><td class="memItemRight" valign="bottom"><b>staticMetaObject</b></td></tr>
-<tr class="separator:a8593e3faef78e3afd55c108b32c48abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:aa7a7261c104c1136b1734e433d11755f"><td class="memItemLeft" align="right" valign="top"><a id="aa7a7261c104c1136b1734e433d11755f"></a>
-struct&#160;</td><td class="memItemRight" valign="bottom"><b>w_internal::FriendHelper</b></td></tr>
-<tr class="separator:aa7a7261c104c1136b1734e433d11755f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_address_item_model_8hpp_source.html">AddressItemModel.hpp</a></li>

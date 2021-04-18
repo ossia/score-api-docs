@@ -95,12 +95,9 @@ $(document).ready(function(){initNavTree('classscore_1_1_command_stack.html','')
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classscore_1_1_command_stack-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -117,23 +114,8 @@ Inheritance diagram for score::CommandStack:</div>
 <div class="textblock"><p>Mostly equivalent to QUndoStack, but has added signals / slots. They are used to send &amp; receive the commands to the network, for instance.</p>
 <p>This class should never be used directly to send commands. Instead, the various command dispatchers, in score/command/Dispatchers should be used. </p>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:af0ef38f37281f31f53b26289395615d8"><td class="memItemLeft" align="right" valign="top"><a id="af0ef38f37281f31f53b26289395615d8"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>W_BaseType</b> = std::remove_reference_t&lt; decltype(w_internal::getParentObjectHelper(&amp;W_ThisType::qt_metacast))&gt;</td></tr>
-<tr class="separator:af0ef38f37281f31f53b26289395615d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a39d37c4d82919694c8737b22dbe94f3e"><td class="memItemLeft" align="right" valign="top"><a id="a39d37c4d82919694c8737b22dbe94f3e"></a>
-virtual const QMetaObject *&#160;</td><td class="memItemRight" valign="bottom"><b>metaObject</b> () const</td></tr>
-<tr class="separator:a39d37c4d82919694c8737b22dbe94f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39fd8a5875ef91ec0a2d9b9ae7d6c649"><td class="memItemLeft" align="right" valign="top"><a id="a39fd8a5875ef91ec0a2d9b9ae7d6c649"></a>
-virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacast</b> (const char *)</td></tr>
-<tr class="separator:a39fd8a5875ef91ec0a2d9b9ae7d6c649"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bf526f09ac3e3be1042eb4c8eb29ac3"><td class="memItemLeft" align="right" valign="top"><a id="a9bf526f09ac3e3be1042eb4c8eb29ac3"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacall</b> (QMetaObject::Call, int, void **)</td></tr>
-<tr class="separator:a9bf526f09ac3e3be1042eb4c8eb29ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a855a074c2a3a1f9ec47730b4c42bf42d"><td class="memItemLeft" align="right" valign="top"><a id="a855a074c2a3a1f9ec47730b4c42bf42d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>CommandStack</b> (const <a class="el" href="classscore_1_1_document.html">score::Document</a> &amp;ctx, QObject *parent=nullptr)</td></tr>
 <tr class="separator:a855a074c2a3a1f9ec47730b4c42bf42d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,9 +142,9 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="memitem:a3259cb6c40605059899acef1f03a7fdb"><td class="memItemLeft" align="right" valign="top"><a id="a3259cb6c40605059899acef1f03a7fdb"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const</td></tr>
 <tr class="separator:a3259cb6c40605059899acef1f03a7fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49f76d14b648f69dcf37bd6f8fcd1108"><td class="memItemLeft" align="right" valign="top"><a id="a49f76d14b648f69dcf37bd6f8fcd1108"></a>
+<tr class="memitem:a7b88616dbfe711703dfaae6507470c7a"><td class="memItemLeft" align="right" valign="top"><a id="a7b88616dbfe711703dfaae6507470c7a"></a>
 const <a class="el" href="classscore_1_1_command.html">score::Command</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>command</b> (int index) const</td></tr>
-<tr class="separator:a49f76d14b648f69dcf37bd6f8fcd1108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a7b88616dbfe711703dfaae6507470c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48029b2914c69892a2eff312a5b62ec5"><td class="memItemLeft" align="right" valign="top"><a id="a48029b2914c69892a2eff312a5b62ec5"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>currentIndex</b> () const</td></tr>
 <tr class="separator:a48029b2914c69892a2eff312a5b62ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,21 +219,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>sig_indexChanged</b> 
 <tr class="memitem:a98fd07ba06348fbef5d8ae045af2672e"><td class="memItemLeft" align="right" valign="top"><a id="a98fd07ba06348fbef5d8ae045af2672e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setIndex</b> (int index)</td></tr>
 <tr class="separator:a98fd07ba06348fbef5d8ae045af2672e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bbcee49158500ab30946491d06492c8"><td class="memItemLeft" align="right" valign="top"><a id="a9bbcee49158500ab30946491d06492c8"></a>
+<tr class="memitem:a889b548bc28d8d509ce643639b65e390"><td class="memItemLeft" align="right" valign="top"><a id="a889b548bc28d8d509ce643639b65e390"></a>
 vvvvvvvvoid&#160;</td><td class="memItemRight" valign="bottom"><b>setIndexQuiet</b> (int index)</td></tr>
-<tr class="separator:a9bbcee49158500ab30946491d06492c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a889b548bc28d8d509ce643639b65e390"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34759a5f8579d6ea94ff4d61c6c960d4"><td class="memItemLeft" align="right" valign="top"><a id="a34759a5f8579d6ea94ff4d61c6c960d4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>undoQuiet</b> ()</td></tr>
 <tr class="separator:a34759a5f8579d6ea94ff4d61c6c960d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ca8af69a6b62f887cf54a7e8ac6d8b5"><td class="memItemLeft" align="right" valign="top"><a id="a8ca8af69a6b62f887cf54a7e8ac6d8b5"></a>
+<tr class="memitem:af54c038ee6a21de935913523488853b3"><td class="memItemLeft" align="right" valign="top"><a id="af54c038ee6a21de935913523488853b3"></a>
 vvvvvvvvoid&#160;</td><td class="memItemRight" valign="bottom"><b>redoQuiet</b> ()</td></tr>
-<tr class="separator:a8ca8af69a6b62f887cf54a7e8ac6d8b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf792e6b30f8e276a5c0538d70f25fdf"><td class="memItemLeft" align="right" valign="top"><a id="abf792e6b30f8e276a5c0538d70f25fdf"></a>
+<tr class="separator:af54c038ee6a21de935913523488853b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2102a026e08a4e5b8712f7e3bc49c4d7"><td class="memItemLeft" align="right" valign="top"><a id="a2102a026e08a4e5b8712f7e3bc49c4d7"></a>
 *brief pushAndEmit Pushes a command on the stack and relevant public *param cmd The command *void&#160;</td><td class="memItemRight" valign="bottom"><b>redoAndPushQuiet</b> (<a class="el" href="classscore_1_1_command.html">score::Command</a> *cmd)</td></tr>
-<tr class="separator:abf792e6b30f8e276a5c0538d70f25fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1c328bb56b13cdbb8ba25e0da18e20b"><td class="memItemLeft" align="right" valign="top"><a id="af1c328bb56b13cdbb8ba25e0da18e20b"></a>
+<tr class="separator:a2102a026e08a4e5b8712f7e3bc49c4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68a0acb0eb9421a93fb40d5aa0b930b7"><td class="memItemLeft" align="right" valign="top"><a id="a68a0acb0eb9421a93fb40d5aa0b930b7"></a>
 vvvvvvvvoid&#160;</td><td class="memItemRight" valign="bottom"><b>pushQuiet</b> (<a class="el" href="classscore_1_1_command.html">score::Command</a> *cmd)</td></tr>
-<tr class="separator:af1c328bb56b13cdbb8ba25e0da18e20b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a68a0acb0eb9421a93fb40d5aa0b930b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34451d3233109d9c483ffc6b82c95f16"><td class="memItemLeft" align="right" valign="top"><a id="a34451d3233109d9c483ffc6b82c95f16"></a>
 vvvvvvvvoid&#160;</td><td class="memItemRight" valign="bottom"><b>undo</b> ()</td></tr>
 <tr class="separator:a34451d3233109d9c483ffc6b82c95f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -297,12 +279,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setSavedIndex</b> (in
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aec7fb532fa787786384c3d2d7f07b670"><td class="memItemLeft" align="right" valign="top"><a id="aec7fb532fa787786384c3d2d7f07b670"></a>
-static QString&#160;</td><td class="memItemRight" valign="bottom"><b>tr</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:aec7fb532fa787786384c3d2d7f07b670"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8746ea553e31fbf79957f670d0f9ce7"><td class="memItemLeft" align="right" valign="top"><a id="af8746ea553e31fbf79957f670d0f9ce7"></a>
-static QT_DEPRECATED QString&#160;</td><td class="memItemRight" valign="bottom"><b>trUtf8</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:af8746ea553e31fbf79957f670d0f9ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ef0735201c5406cbc4be44463d62505"><td class="memItemLeft" align="right" valign="top"><a id="a5ef0735201c5406cbc4be44463d62505"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>w_GetAccessSpecifierHelper</b> (W_INTEGRAL_CONSTANT_HELPER(setIndex, w_internal::W_EmptyFlag))</td></tr>
 <tr class="separator:a5ef0735201c5406cbc4be44463d62505"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -343,17 +319,8 @@ ppppppppublic&#160;</td><td class="memItemRight" valign="bottom"><b>__pad0__</b>
 ppppppppublic&#160;</td><td class="memItemRight" valign="bottom"><b>pre_canRedo</b> {canRedo()}</td></tr>
 <tr class="separator:aea92e1995b2e156ce1c6165e49bca8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a5141b7ac986961acb34d280783486d48"><td class="memItemLeft" align="right" valign="top"><a id="a5141b7ac986961acb34d280783486d48"></a>
-static const Q_OBJECT_NO_OVERRIDE_WARNING QMetaObject&#160;</td><td class="memItemRight" valign="bottom"><b>staticMetaObject</b></td></tr>
-<tr class="separator:a5141b7ac986961acb34d280783486d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:aa7a7261c104c1136b1734e433d11755f"><td class="memItemLeft" align="right" valign="top"><a id="aa7a7261c104c1136b1734e433d11755f"></a>
-struct&#160;</td><td class="memItemRight" valign="bottom"><b>w_internal::FriendHelper</b></td></tr>
-<tr class="separator:aa7a7261c104c1136b1734e433d11755f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd1bd407f63a31a546c030cbed9ad3c1"><td class="memItemLeft" align="right" valign="top"><a id="acd1bd407f63a31a546c030cbed9ad3c1"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>CommandBackupFile</b></td></tr>
 <tr class="separator:acd1bd407f63a31a546c030cbed9ad3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -361,28 +328,28 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CommandBackupFile</b
 struct&#160;</td><td class="memItemRight" valign="bottom"><b>CommandStackBackup</b></td></tr>
 <tr class="separator:a533857aecea4322a4e647eb54d1100aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a265d01c3caba9b294170b342245b48a9"><td class="memItemLeft" align="right" valign="top"><a id="a265d01c3caba9b294170b342245b48a9"></a>
-constexpr friend auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::MethodStateTag, <a class="el" href="classscore_1_1_command_stack.html">W_ThisType</a> ** &gt;&gt;, w_internal::MethodStateTag, <a class="el" href="classscore_1_1_command_stack.html">W_ThisType</a> **) -&gt; decltype((w_internal::makeMetaMethodInfo((&amp;W_ThisType::setIndex), w_internal::viewLiteral(&quot;setIndex&quot;), std::integral_constant&lt; decltype(W_OVERLOAD_RESOLVE(w_internal::W_EmptyFlag)(&amp;W_ThisType::setIndex)), &amp;W_ThisType::setIndex &gt;(), W_MACRO_MSVC_EMPTY w_internal::viewParsedLiterals&lt; w_internal::countParsedLiterals(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;)&gt;(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;), W_MACRO_MSVC_EXPAND())))</td></tr>
+constexpr friend auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::MethodStateTag, W_ThisType ** &gt;&gt;, w_internal::MethodStateTag, W_ThisType **) -&gt; decltype((w_internal::makeMetaMethodInfo((&amp;W_ThisType::setIndex), w_internal::viewLiteral(&quot;setIndex&quot;), std::integral_constant&lt; decltype(W_OVERLOAD_RESOLVE(w_internal::W_EmptyFlag)(&amp;W_ThisType::setIndex)), &amp;W_ThisType::setIndex &gt;(), W_MACRO_MSVC_EMPTY w_internal::viewParsedLiterals&lt; w_internal::countParsedLiterals(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;)&gt;(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;), W_MACRO_MSVC_EXPAND())))</td></tr>
 <tr class="separator:a265d01c3caba9b294170b342245b48a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55caf9aaee02cb1fb12cc66340bcc77d"><td class="memItemLeft" align="right" valign="top"><a id="a55caf9aaee02cb1fb12cc66340bcc77d"></a>
-constexpr friend auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::MethodStateTag, <a class="el" href="classscore_1_1_command_stack.html">W_ThisType</a> ** &gt;&gt;, w_internal::MethodStateTag, <a class="el" href="classscore_1_1_command_stack.html">W_ThisType</a> **) -&gt; decltype((w_internal::makeMetaMethodInfo((&amp;W_ThisType::setIndexQuiet), w_internal::viewLiteral(&quot;setIndexQuiet&quot;), std::integral_constant&lt; decltype(W_OVERLOAD_RESOLVE(w_internal::W_EmptyFlag)(&amp;W_ThisType::setIndexQuiet)), &amp;W_ThisType::setIndexQuiet &gt;(), W_MACRO_MSVC_EMPTY w_internal::viewParsedLiterals&lt; w_internal::countParsedLiterals(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;)&gt;(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;), W_MACRO_MSVC_EXPAND())))</td></tr>
+constexpr friend auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::MethodStateTag, W_ThisType ** &gt;&gt;, w_internal::MethodStateTag, W_ThisType **) -&gt; decltype((w_internal::makeMetaMethodInfo((&amp;W_ThisType::setIndexQuiet), w_internal::viewLiteral(&quot;setIndexQuiet&quot;), std::integral_constant&lt; decltype(W_OVERLOAD_RESOLVE(w_internal::W_EmptyFlag)(&amp;W_ThisType::setIndexQuiet)), &amp;W_ThisType::setIndexQuiet &gt;(), W_MACRO_MSVC_EMPTY w_internal::viewParsedLiterals&lt; w_internal::countParsedLiterals(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;)&gt;(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;), W_MACRO_MSVC_EXPAND())))</td></tr>
 <tr class="separator:a55caf9aaee02cb1fb12cc66340bcc77d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd362a21df5ad71986e38b08a3615f06"><td class="memItemLeft" align="right" valign="top"><a id="afd362a21df5ad71986e38b08a3615f06"></a>
-constexpr friend auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::MethodStateTag, <a class="el" href="classscore_1_1_command_stack.html">W_ThisType</a> ** &gt;&gt;, w_internal::MethodStateTag, <a class="el" href="classscore_1_1_command_stack.html">W_ThisType</a> **) -&gt; decltype((w_internal::makeMetaMethodInfo((&amp;W_ThisType::undoQuiet), w_internal::viewLiteral(&quot;undoQuiet&quot;), std::integral_constant&lt; decltype(W_OVERLOAD_RESOLVE(w_internal::W_EmptyFlag)(&amp;W_ThisType::undoQuiet)), &amp;W_ThisType::undoQuiet &gt;(), W_MACRO_MSVC_EMPTY w_internal::viewParsedLiterals&lt; w_internal::countParsedLiterals(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;)&gt;(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;), W_MACRO_MSVC_EXPAND())))</td></tr>
+constexpr friend auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::MethodStateTag, W_ThisType ** &gt;&gt;, w_internal::MethodStateTag, W_ThisType **) -&gt; decltype((w_internal::makeMetaMethodInfo((&amp;W_ThisType::undoQuiet), w_internal::viewLiteral(&quot;undoQuiet&quot;), std::integral_constant&lt; decltype(W_OVERLOAD_RESOLVE(w_internal::W_EmptyFlag)(&amp;W_ThisType::undoQuiet)), &amp;W_ThisType::undoQuiet &gt;(), W_MACRO_MSVC_EMPTY w_internal::viewParsedLiterals&lt; w_internal::countParsedLiterals(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;)&gt;(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;), W_MACRO_MSVC_EXPAND())))</td></tr>
 <tr class="separator:afd362a21df5ad71986e38b08a3615f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a908f51529012624251f840438d53aea0"><td class="memItemLeft" align="right" valign="top"><a id="a908f51529012624251f840438d53aea0"></a>
-constexpr friend auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::MethodStateTag, <a class="el" href="classscore_1_1_command_stack.html">W_ThisType</a> ** &gt;&gt;, w_internal::MethodStateTag, <a class="el" href="classscore_1_1_command_stack.html">W_ThisType</a> **) -&gt; decltype((w_internal::makeMetaMethodInfo((&amp;W_ThisType::redoQuiet), w_internal::viewLiteral(&quot;redoQuiet&quot;), std::integral_constant&lt; decltype(W_OVERLOAD_RESOLVE(w_internal::W_EmptyFlag)(&amp;W_ThisType::redoQuiet)), &amp;W_ThisType::redoQuiet &gt;(), W_MACRO_MSVC_EMPTY w_internal::viewParsedLiterals&lt; w_internal::countParsedLiterals(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;)&gt;(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;), W_MACRO_MSVC_EXPAND())))</td></tr>
+constexpr friend auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::MethodStateTag, W_ThisType ** &gt;&gt;, w_internal::MethodStateTag, W_ThisType **) -&gt; decltype((w_internal::makeMetaMethodInfo((&amp;W_ThisType::redoQuiet), w_internal::viewLiteral(&quot;redoQuiet&quot;), std::integral_constant&lt; decltype(W_OVERLOAD_RESOLVE(w_internal::W_EmptyFlag)(&amp;W_ThisType::redoQuiet)), &amp;W_ThisType::redoQuiet &gt;(), W_MACRO_MSVC_EMPTY w_internal::viewParsedLiterals&lt; w_internal::countParsedLiterals(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;)&gt;(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;), W_MACRO_MSVC_EXPAND())))</td></tr>
 <tr class="separator:a908f51529012624251f840438d53aea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66880148e02188d5d8fe437218427c3"><td class="memItemLeft" align="right" valign="top"><a id="ae66880148e02188d5d8fe437218427c3"></a>
-constexpr friend auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::MethodStateTag, <a class="el" href="classscore_1_1_command_stack.html">W_ThisType</a> ** &gt;&gt;, w_internal::MethodStateTag, <a class="el" href="classscore_1_1_command_stack.html">W_ThisType</a> **) -&gt; decltype((w_internal::makeMetaMethodInfo((&amp;W_ThisType::redoAndPushQuiet), w_internal::viewLiteral(&quot;redoAndPushQuiet&quot;), std::integral_constant&lt; decltype(W_OVERLOAD_RESOLVE(w_internal::W_EmptyFlag)(&amp;W_ThisType::redoAndPushQuiet)), &amp;W_ThisType::redoAndPushQuiet &gt;(), W_MACRO_MSVC_EMPTY w_internal::viewParsedLiterals&lt; w_internal::countParsedLiterals(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;)&gt;(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;), W_MACRO_MSVC_EXPAND())))</td></tr>
+constexpr friend auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::MethodStateTag, W_ThisType ** &gt;&gt;, w_internal::MethodStateTag, W_ThisType **) -&gt; decltype((w_internal::makeMetaMethodInfo((&amp;W_ThisType::redoAndPushQuiet), w_internal::viewLiteral(&quot;redoAndPushQuiet&quot;), std::integral_constant&lt; decltype(W_OVERLOAD_RESOLVE(w_internal::W_EmptyFlag)(&amp;W_ThisType::redoAndPushQuiet)), &amp;W_ThisType::redoAndPushQuiet &gt;(), W_MACRO_MSVC_EMPTY w_internal::viewParsedLiterals&lt; w_internal::countParsedLiterals(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;)&gt;(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;), W_MACRO_MSVC_EXPAND())))</td></tr>
 <tr class="separator:ae66880148e02188d5d8fe437218427c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95fd301f2b254a874323b211684f6281"><td class="memItemLeft" align="right" valign="top"><a id="a95fd301f2b254a874323b211684f6281"></a>
-constexpr friend auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::MethodStateTag, <a class="el" href="classscore_1_1_command_stack.html">W_ThisType</a> ** &gt;&gt;, w_internal::MethodStateTag, <a class="el" href="classscore_1_1_command_stack.html">W_ThisType</a> **) -&gt; decltype((w_internal::makeMetaMethodInfo((&amp;W_ThisType::pushQuiet), w_internal::viewLiteral(&quot;pushQuiet&quot;), std::integral_constant&lt; decltype(W_OVERLOAD_RESOLVE(w_internal::W_EmptyFlag)(&amp;W_ThisType::pushQuiet)), &amp;W_ThisType::pushQuiet &gt;(), W_MACRO_MSVC_EMPTY w_internal::viewParsedLiterals&lt; w_internal::countParsedLiterals(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;)&gt;(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;), W_MACRO_MSVC_EXPAND())))</td></tr>
+constexpr friend auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::MethodStateTag, W_ThisType ** &gt;&gt;, w_internal::MethodStateTag, W_ThisType **) -&gt; decltype((w_internal::makeMetaMethodInfo((&amp;W_ThisType::pushQuiet), w_internal::viewLiteral(&quot;pushQuiet&quot;), std::integral_constant&lt; decltype(W_OVERLOAD_RESOLVE(w_internal::W_EmptyFlag)(&amp;W_ThisType::pushQuiet)), &amp;W_ThisType::pushQuiet &gt;(), W_MACRO_MSVC_EMPTY w_internal::viewParsedLiterals&lt; w_internal::countParsedLiterals(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;)&gt;(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;), W_MACRO_MSVC_EXPAND())))</td></tr>
 <tr class="separator:a95fd301f2b254a874323b211684f6281"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5679361b651e25fe456fe99f750f55be"><td class="memItemLeft" align="right" valign="top"><a id="a5679361b651e25fe456fe99f750f55be"></a>
-constexpr friend auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::MethodStateTag, <a class="el" href="classscore_1_1_command_stack.html">W_ThisType</a> ** &gt;&gt;, w_internal::MethodStateTag, <a class="el" href="classscore_1_1_command_stack.html">W_ThisType</a> **) -&gt; decltype((w_internal::makeMetaMethodInfo((&amp;W_ThisType::undo), w_internal::viewLiteral(&quot;undo&quot;), std::integral_constant&lt; decltype(W_OVERLOAD_RESOLVE(w_internal::W_EmptyFlag)(&amp;W_ThisType::undo)), &amp;W_ThisType::undo &gt;(), W_MACRO_MSVC_EMPTY w_internal::viewParsedLiterals&lt; w_internal::countParsedLiterals(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;)&gt;(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;), W_MACRO_MSVC_EXPAND())))</td></tr>
+constexpr friend auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::MethodStateTag, W_ThisType ** &gt;&gt;, w_internal::MethodStateTag, W_ThisType **) -&gt; decltype((w_internal::makeMetaMethodInfo((&amp;W_ThisType::undo), w_internal::viewLiteral(&quot;undo&quot;), std::integral_constant&lt; decltype(W_OVERLOAD_RESOLVE(w_internal::W_EmptyFlag)(&amp;W_ThisType::undo)), &amp;W_ThisType::undo &gt;(), W_MACRO_MSVC_EMPTY w_internal::viewParsedLiterals&lt; w_internal::countParsedLiterals(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;)&gt;(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;), W_MACRO_MSVC_EXPAND())))</td></tr>
 <tr class="separator:a5679361b651e25fe456fe99f750f55be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bba22657ed332a6a3ef4c6b1ff5006a"><td class="memItemLeft" align="right" valign="top"><a id="a2bba22657ed332a6a3ef4c6b1ff5006a"></a>
-constexpr friend auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::MethodStateTag, <a class="el" href="classscore_1_1_command_stack.html">W_ThisType</a> ** &gt;&gt;, w_internal::MethodStateTag, <a class="el" href="classscore_1_1_command_stack.html">W_ThisType</a> **) -&gt; decltype((w_internal::makeMetaMethodInfo((&amp;W_ThisType::redo), w_internal::viewLiteral(&quot;redo&quot;), std::integral_constant&lt; decltype(W_OVERLOAD_RESOLVE(w_internal::W_EmptyFlag)(&amp;W_ThisType::redo)), &amp;W_ThisType::redo &gt;(), W_MACRO_MSVC_EMPTY w_internal::viewParsedLiterals&lt; w_internal::countParsedLiterals(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;)&gt;(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;), W_MACRO_MSVC_EXPAND())))</td></tr>
+constexpr friend auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::MethodStateTag, W_ThisType ** &gt;&gt;, w_internal::MethodStateTag, W_ThisType **) -&gt; decltype((w_internal::makeMetaMethodInfo((&amp;W_ThisType::redo), w_internal::viewLiteral(&quot;redo&quot;), std::integral_constant&lt; decltype(W_OVERLOAD_RESOLVE(w_internal::W_EmptyFlag)(&amp;W_ThisType::redo)), &amp;W_ThisType::redo &gt;(), W_MACRO_MSVC_EMPTY w_internal::viewParsedLiterals&lt; w_internal::countParsedLiterals(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;)&gt;(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;), W_MACRO_MSVC_EXPAND())))</td></tr>
 <tr class="separator:a2bba22657ed332a6a3ef4c6b1ff5006a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -452,8 +419,9 @@ constexpr friend auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_st
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_command_stack_8hpp_source.html">CommandStack.hpp</a></li>
+<li>CommandStack.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

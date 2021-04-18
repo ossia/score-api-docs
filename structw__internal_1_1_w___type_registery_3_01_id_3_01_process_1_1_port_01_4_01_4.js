@@ -1,4 +1,0 @@
-var structw__internal_1_1_w___type_registery_3_01_id_3_01_process_1_1_port_01_4_01_4 =
-[
-    [ "registered", "structw__internal_1_1_w___type_registery_3_01_id_3_01_process_1_1_port_01_4_01_4.html#ac3b4552f7b79195019d12597df226969a1489192518d92e3fcf341999dcdea3a2", null ]
-];

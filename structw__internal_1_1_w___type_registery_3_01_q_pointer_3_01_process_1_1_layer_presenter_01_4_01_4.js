@@ -1,4 +1,0 @@
-var structw__internal_1_1_w___type_registery_3_01_q_pointer_3_01_process_1_1_layer_presenter_01_4_01_4 =
-[
-    [ "registered", "structw__internal_1_1_w___type_registery_3_01_q_pointer_3_01_process_1_1_layer_presenter_01_4_01_4.html#a72d8f20daf4ed1da7e30f30399953599a370e134fd4384835ebbf217d96619dcb", null ]
-];

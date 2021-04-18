@@ -356,7 +356,7 @@ $(document).ready(function(){initNavTree('_d_s_p_wrapper_8hpp_source.html',''); 
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;}</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> DSP&gt;</div>
-<div class="line"><a name="l00259"></a><span class="lineno"><a class="line" href="structis__custom__serialized_3_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html">  259</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structis__custom__serialized.html">is_custom_serialized</a>&lt;FaustDSP::Fx&lt;DSP&gt;&gt; : std::true_type</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="keyword">struct </span>is_custom_serialized&lt;FaustDSP::Fx&lt;DSP&gt;&gt; : std::true_type</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;{</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;};</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
@@ -367,7 +367,7 @@ $(document).ready(function(){initNavTree('_d_s_p_wrapper_8hpp_source.html',''); 
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> readFrom(<a class="code" href="class_data_stream_reader.html">DataStream::Serializer</a>&amp; s, <span class="keyword">const</span> <a class="code" href="class_faust_d_s_p_1_1_fx.html">model_type</a>&amp; eff)</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  {</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    readPorts(s, eff.inlets(), eff.outlets());</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    s.insertDelimiter();</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    s.<a class="code" href="class_data_stream_reader.html#ac0eb5c043b33cc07de11c45edd22db1b">insertDelimiter</a>();</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  }</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> writeTo(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp; s, <a class="code" href="class_faust_d_s_p_1_1_fx.html">model_type</a>&amp; eff)</div>
@@ -375,7 +375,7 @@ $(document).ready(function(){initNavTree('_d_s_p_wrapper_8hpp_source.html',''); 
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    writePorts(</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        s, s.components.interfaces&lt;<a class="code" href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a>&gt;(), eff.inlets(), eff.outlets(), &amp;eff);</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    s.checkDelimiter();</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    s.<a class="code" href="class_data_stream_writer.html#ae5394117c6269533c28737b5092138a9">checkDelimiter</a>();</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  }</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;};</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
@@ -428,11 +428,12 @@ $(document).ready(function(){initNavTree('_d_s_p_wrapper_8hpp_source.html',''); 
 <div class="ttc" id="aclass_process_1_1_outlet_html"><div class="ttname"><a href="class_process_1_1_outlet.html">Process::Outlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:249</div></div>
 <div class="ttc" id="astruct_metadata_html"><div class="ttname"><a href="struct_metadata.html">Metadata</a></div><div class="ttdoc">Static metadata implementation.</div><div class="ttdef"><b>Definition:</b> lib/score/tools/Metadata.hpp:36</div></div>
 <div class="ttc" id="anamespace_process_html_a592bb361ebf8fbc09c929c93208c71f1"><div class="ttname"><a href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">Process::ProcessFlags</a></div><div class="ttdeci">ProcessFlags</div><div class="ttdoc">Various settings for processes.</div><div class="ttdef"><b>Definition:</b> ProcessFlags.hpp:15</div></div>
+<div class="ttc" id="aclass_data_stream_writer_html_ae5394117c6269533c28737b5092138a9"><div class="ttname"><a href="class_data_stream_writer.html#ae5394117c6269533c28737b5092138a9">DataStreamWriter::checkDelimiter</a></div><div class="ttdeci">void checkDelimiter()</div><div class="ttdoc">checkDelimiter</div><div class="ttdef"><b>Definition:</b> DataStreamVisitor.cpp:37</div></div>
 <div class="ttc" id="aclass_process_1_1_default_effect_item_html"><div class="ttname"><a href="class_process_1_1_default_effect_item.html">Process::DefaultEffectItem</a></div><div class="ttdef"><b>Definition:</b> DefaultEffectItem.hpp:15</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:63</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:65</div></div>
 <div class="ttc" id="aclass_uuid_key_html"><div class="ttname"><a href="class_uuid_key.html">UuidKey</a></div><div class="ttdef"><b>Definition:</b> UuidKey.hpp:362</div></div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition:</b> Identifier.hpp:56</div></div>
-<div class="ttc" id="anamespace_execution_html"><div class="ttname"><a href="namespace_execution.html">Execution</a></div><div class="ttdoc">Components used for the execution of a score.</div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:26</div></div>
+<div class="ttc" id="anamespace_execution_html"><div class="ttname"><a href="namespace_execution.html">Execution</a></div><div class="ttdoc">Components used for the execution of a score.</div><div class="ttdef"><b>Definition:</b> ProcessComponent.cpp:11</div></div>
 <div class="ttc" id="aclass_data_stream_html"><div class="ttname"><a href="class_data_stream.html">DataStream</a></div><div class="ttdef"><b>Definition:</b> VisitorInterface.hpp:53</div></div>
 <div class="ttc" id="astruct_faust_1_1_u_i_html"><div class="ttname"><a href="struct_faust_1_1_u_i.html">Faust::UI</a></div><div class="ttdef"><b>Definition:</b> Utils.hpp:16</div></div>
 <div class="ttc" id="aclass_tags__k_html"><div class="ttname"><a href="class_tags__k.html">Tags_k</a></div><div class="ttdoc">Metadata to associate tags to objects.</div><div class="ttdef"><b>Definition:</b> lib/score/tools/Metadata.hpp:67</div></div>
@@ -448,11 +449,11 @@ $(document).ready(function(){initNavTree('_d_s_p_wrapper_8hpp_source.html',''); 
 <div class="ttc" id="aclass_process_1_1_port_factory_list_html"><div class="ttname"><a href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a></div><div class="ttdef"><b>Definition:</b> PortFactory.hpp:68</div></div>
 <div class="ttc" id="aclass_process_flags__k_html"><div class="ttname"><a href="class_process_flags__k.html">ProcessFlags_k</a></div><div class="ttdoc">Metadata to retrieve the ProcessFlags of a process.</div></div>
 <div class="ttc" id="aclass_j_s_o_n_writer_html"><div class="ttname"><a href="class_j_s_o_n_writer.html">JSONWriter</a></div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:390</div></div>
+<div class="ttc" id="aclass_data_stream_reader_html_ac0eb5c043b33cc07de11c45edd22db1b"><div class="ttname"><a href="class_data_stream_reader.html#ac0eb5c043b33cc07de11c45edd22db1b">DataStreamReader::insertDelimiter</a></div><div class="ttdeci">void insertDelimiter()</div><div class="ttdoc">insertDelimiter</div><div class="ttdef"><b>Definition:</b> DataStreamVisitor.hpp:308</div></div>
 <div class="ttc" id="aclass_faust_d_s_p_1_1_executor_html"><div class="ttname"><a href="class_faust_d_s_p_1_1_executor.html">FaustDSP::Executor</a></div><div class="ttdef"><b>Definition:</b> DSPWrapper.hpp:184</div></div>
 <div class="ttc" id="astruct_faust_d_s_p_1_1_wrap_html"><div class="ttname"><a href="struct_faust_d_s_p_1_1_wrap.html">FaustDSP::Wrap</a></div><div class="ttdef"><b>Definition:</b> DSPWrapper.hpp:76</div></div>
 <div class="ttc" id="aclass_process_1_1_control_inlet_html"><div class="ttname"><a href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:192</div></div>
 <div class="ttc" id="astruct_t_serializer_html"><div class="ttname"><a href="struct_t_serializer.html">TSerializer</a></div><div class="ttdef"><b>Definition:</b> VisitorInterface.hpp:13</div></div>
-<div class="ttc" id="astructis__custom__serialized_html"><div class="ttname"><a href="structis__custom__serialized.html">is_custom_serialized</a></div><div class="ttdef"><b>Definition:</b> IsTemplate.hpp:102</div></div>
 <div class="ttc" id="aclass_category__k_html"><div class="ttname"><a href="class_category__k.html">Category_k</a></div><div class="ttdoc">Metadata to categorize objects: curves, audio, etc.</div><div class="ttdef"><b>Definition:</b> lib/score/tools/Metadata.hpp:61</div></div>
 <div class="ttc" id="aclass_process_1_1_inlet_html"><div class="ttname"><a href="class_process_1_1_inlet.html">Process::Inlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:167</div></div>
 <div class="ttc" id="aclass_process_1_1_effect_layer_factory___t_html"><div class="ttname"><a href="class_process_1_1_effect_layer_factory___t.html">Process::EffectLayerFactory_T</a></div><div class="ttdef"><b>Definition:</b> EffectFactory.hpp:58</div></div>

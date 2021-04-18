@@ -1,8 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"_explorer_presenter_8hpp_source.html":[12,0,395],
-"_explorer_view_8hpp_source.html":[12,0,396],
-"_expression_8hpp_source.html":[12,0,397],
 "_expression_editor_widget_8hpp_source.html":[12,0,398],
 "_expression_menu_8hpp_source.html":[12,0,399],
 "_expression_validator_8hpp_source.html":[12,0,400],
@@ -249,5 +246,8 @@ var NAVTREEINDEX2 =
 "_min_max_commands_8hpp_source.html":[12,0,696],
 "_min_max_float_port_8hpp_source.html":[12,0,697],
 "_mini_scenario_view_8hpp_source.html":[12,0,695],
-"_minimal_application_8hpp_source.html":[12,0,693]
+"_minimal_application_8hpp_source.html":[12,0,693],
+"_minimap_8hpp_source.html":[12,0,694],
+"_minuit_device_8hpp_source.html":[12,0,698],
+"_minuit_protocol_factory_8hpp_source.html":[12,0,699]
 };

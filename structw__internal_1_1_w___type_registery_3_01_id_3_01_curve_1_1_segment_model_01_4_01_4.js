@@ -1,4 +1,0 @@
-var structw__internal_1_1_w___type_registery_3_01_id_3_01_curve_1_1_segment_model_01_4_01_4 =
-[
-    [ "registered", "structw__internal_1_1_w___type_registery_3_01_id_3_01_curve_1_1_segment_model_01_4_01_4.html#a3469b70cb0dafc85d82e7d7859a21ce5aec4f823e92e3bd994a90435d4b0bb644", null ]
-];

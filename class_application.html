@@ -95,11 +95,7 @@ $(document).ready(function(){initNavTree('class_application.html',''); initResiz
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_application-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -123,23 +119,8 @@ Inheritance diagram for Application:</div>
 <div class="textblock"><p><a class="el" href="class_application.html" title="Application.">Application</a>. </p>
 <p>This class is the main object in score. It is the parent of every other object created. It does instantiate the rest of the software (MVP, settings, plugins). </p>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a70ca940159f0a47289498910e9bd2719"><td class="memItemLeft" align="right" valign="top"><a id="a70ca940159f0a47289498910e9bd2719"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>W_BaseType</b> = std::remove_reference_t&lt; decltype(w_internal::getParentObjectHelper(&amp;W_ThisType::qt_metacast))&gt;</td></tr>
-<tr class="separator:a70ca940159f0a47289498910e9bd2719"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4ae6acbf3696858085791fc62804590e"><td class="memItemLeft" align="right" valign="top"><a id="a4ae6acbf3696858085791fc62804590e"></a>
-virtual const QMetaObject *&#160;</td><td class="memItemRight" valign="bottom"><b>metaObject</b> () const</td></tr>
-<tr class="separator:a4ae6acbf3696858085791fc62804590e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b648ed1fa8648767a8b908c6e25cbee"><td class="memItemLeft" align="right" valign="top"><a id="a9b648ed1fa8648767a8b908c6e25cbee"></a>
-virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacast</b> (const char *)</td></tr>
-<tr class="separator:a9b648ed1fa8648767a8b908c6e25cbee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adebc81815802c7ca2e580951cbd0c514"><td class="memItemLeft" align="right" valign="top"><a id="adebc81815802c7ca2e580951cbd0c514"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacall</b> (QMetaObject::Call, int, void **)</td></tr>
-<tr class="separator:adebc81815802c7ca2e580951cbd0c514"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e443cbe3481a06d8effb4fa8878499c"><td class="memItemLeft" align="right" valign="top"><a id="a6e443cbe3481a06d8effb4fa8878499c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Application</b> (int &amp;argc, char **argv)</td></tr>
 <tr class="separator:a6e443cbe3481a06d8effb4fa8878499c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,14 +162,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>forceExit</b> ()</td>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ApplicationInterface</b> ()</td></tr>
 <tr class="separator:ab3db2df5130364a952401c6c6042d811 inherit pub_methods_classscore_1_1_g_u_i_application_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ae78d6d61b2f2f03c34fabb192e84b749"><td class="memItemLeft" align="right" valign="top"><a id="ae78d6d61b2f2f03c34fabb192e84b749"></a>
-static QString&#160;</td><td class="memItemRight" valign="bottom"><b>tr</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:ae78d6d61b2f2f03c34fabb192e84b749"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8044e9ccfcff751e718cbb0f857ad16"><td class="memItemLeft" align="right" valign="top"><a id="aa8044e9ccfcff751e718cbb0f857ad16"></a>
-static QT_DEPRECATED QString&#160;</td><td class="memItemRight" valign="bottom"><b>trUtf8</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:aa8044e9ccfcff751e718cbb0f857ad16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:ad4c67b13baca0d1929c81e0af9d5858e"><td class="memItemLeft" align="right" valign="top"><a id="ad4c67b13baca0d1929c81e0af9d5858e"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>ChildEventFilter</b></td></tr>
+<tr class="separator:ad4c67b13baca0d1929c81e0af9d5858e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_methods_classscore_1_1_g_u_i_application_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classscore_1_1_g_u_i_application_interface')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classscore_1_1_g_u_i_application_interface.html">score::GUIApplicationInterface</a></td></tr>
 <tr class="memitem:afa8a4cbf35180e54e8266bcb38928f8d inherit pub_static_methods_classscore_1_1_g_u_i_application_interface"><td class="memItemLeft" align="right" valign="top"><a id="afa8a4cbf35180e54e8266bcb38928f8d"></a>
 static <a class="el" href="classscore_1_1_g_u_i_application_interface.html">GUIApplicationInterface</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>instance</b> ()</td></tr>
@@ -197,24 +178,6 @@ static <a class="el" href="classscore_1_1_g_u_i_application_interface.html">GUIA
 <tr class="memitem:a4d2544e03d30d211fa90f271ea3f61c4 inherit pub_static_methods_classscore_1_1_application_interface"><td class="memItemLeft" align="right" valign="top"><a id="a4d2544e03d30d211fa90f271ea3f61c4"></a>
 static <a class="el" href="classscore_1_1_application_interface.html">ApplicationInterface</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>instance</b> ()</td></tr>
 <tr class="separator:a4d2544e03d30d211fa90f271ea3f61c4 inherit pub_static_methods_classscore_1_1_application_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a2e9ba940230f9757a26c080be797ccc6"><td class="memItemLeft" align="right" valign="top"><a id="a2e9ba940230f9757a26c080be797ccc6"></a>
-static const Q_OBJECT_NO_OVERRIDE_WARNING QMetaObject&#160;</td><td class="memItemRight" valign="bottom"><b>staticMetaObject</b></td></tr>
-<tr class="separator:a2e9ba940230f9757a26c080be797ccc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:aa7a7261c104c1136b1734e433d11755f"><td class="memItemLeft" align="right" valign="top"><a id="aa7a7261c104c1136b1734e433d11755f"></a>
-struct&#160;</td><td class="memItemRight" valign="bottom"><b>w_internal::FriendHelper</b></td></tr>
-<tr class="separator:aa7a7261c104c1136b1734e433d11755f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4c67b13baca0d1929c81e0af9d5858e"><td class="memItemLeft" align="right" valign="top"><a id="ad4c67b13baca0d1929c81e0af9d5858e"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>ChildEventFilter</b></td></tr>
-<tr class="separator:ad4c67b13baca0d1929c81e0af9d5858e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_static_attribs_classscore_1_1_application_interface"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_classscore_1_1_application_interface')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="classscore_1_1_application_interface.html">score::ApplicationInterface</a></td></tr>
 <tr class="memitem:a5a5ab1052be80232fc7ebd67686d298e inherit pro_static_attribs_classscore_1_1_application_interface"><td class="memItemLeft" align="right" valign="top"><a id="a5a5ab1052be80232fc7ebd67686d298e"></a>
 static <a class="el" href="classscore_1_1_application_interface.html">ApplicationInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_instance</b></td></tr>

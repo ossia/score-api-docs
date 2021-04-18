@@ -95,11 +95,8 @@ $(document).ready(function(){initNavTree('structscore_1_1_document_metadata.html
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="structscore_1_1_document_metadata-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -118,26 +115,8 @@ Inheritance diagram for score::DocumentMetadata:</div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Document-wide metadata. </p>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a32d678cbee2ef71c8bf75fb3c6f5c694"><td class="memItemLeft" align="right" valign="top"><a id="a32d678cbee2ef71c8bf75fb3c6f5c694"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>W_ThisType</b> = <a class="el" href="structscore_1_1_document_metadata.html">DocumentMetadata</a></td></tr>
-<tr class="separator:a32d678cbee2ef71c8bf75fb3c6f5c694"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5876609a92c6e06a303651628f2b0aca"><td class="memItemLeft" align="right" valign="top"><a id="a5876609a92c6e06a303651628f2b0aca"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>W_BaseType</b> = std::remove_reference_t&lt; decltype(w_internal::getParentObjectHelper(&amp;W_ThisType::qt_metacast))&gt;</td></tr>
-<tr class="separator:a5876609a92c6e06a303651628f2b0aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa3c51a2630be5dcda84beaa7253e7d94"><td class="memItemLeft" align="right" valign="top"><a id="aa3c51a2630be5dcda84beaa7253e7d94"></a>
-virtual const QMetaObject *&#160;</td><td class="memItemRight" valign="bottom"><b>metaObject</b> () const</td></tr>
-<tr class="separator:aa3c51a2630be5dcda84beaa7253e7d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af05c7a47cee227c52e82b7fdb4c37ab6"><td class="memItemLeft" align="right" valign="top"><a id="af05c7a47cee227c52e82b7fdb4c37ab6"></a>
-virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacast</b> (const char *)</td></tr>
-<tr class="separator:af05c7a47cee227c52e82b7fdb4c37ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bb768c607f4f7c58793ff8f6912eb8d"><td class="memItemLeft" align="right" valign="top"><a id="a2bb768c607f4f7c58793ff8f6912eb8d"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacall</b> (QMetaObject::Call, int, void **)</td></tr>
-<tr class="separator:a2bb768c607f4f7c58793ff8f6912eb8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a651ebd9457e6406d9b22afe74075c7d9"><td class="memItemLeft" align="right" valign="top"><a id="a651ebd9457e6406d9b22afe74075c7d9"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>DocumentMetadata</b> (QString file)</td></tr>
 <tr class="separator:a651ebd9457e6406d9b22afe74075c7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,39 +160,30 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>lastEditionChanged</b
 &#160;</td><td class="memItemRight" valign="bottom"><b>WWW_PROPERTY</b> (QString, author, &amp;W_ThisType::author, &amp;W_ThisType::setAuthor, W_Notify, &amp;W_ThisType::authorChanged, W_Final) friend const expr auto w_state(w_internal</td></tr>
 <tr class="separator:a8c871f312ee1e1feff359cf853154310"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aa38b2bee4595c01d7467e38a1ab2debc"><td class="memTemplParams" colspan="2"><a id="aa38b2bee4595c01d7467e38a1ab2debc"></a>
-template&lt;typename W_Flag &gt; </td></tr>
-<tr class="memitem:aa38b2bee4595c01d7467e38a1ab2debc"><td class="memTemplItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memTemplItemRight" valign="bottom"><b>w_flagAlias</b> (W_Flag)</td></tr>
-<tr class="separator:aa38b2bee4595c01d7467e38a1ab2debc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5684bd9f8f9628eedc7e1a1bfbec6327"><td class="memItemLeft" align="right" valign="top"><a id="a5684bd9f8f9628eedc7e1a1bfbec6327"></a>
-static QString&#160;</td><td class="memItemRight" valign="bottom"><b>tr</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:a5684bd9f8f9628eedc7e1a1bfbec6327"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9da2bcb8faf3386ab10d3c3da17558d6"><td class="memItemLeft" align="right" valign="top"><a id="a9da2bcb8faf3386ab10d3c3da17558d6"></a>
-static QT_DEPRECATED QString&#160;</td><td class="memItemRight" valign="bottom"><b>trUtf8</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:a9da2bcb8faf3386ab10d3c3da17558d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a20f13e4bab5616a37dfabf42e4d84cef"><td class="memItemLeft" align="right" valign="top"><a id="a20f13e4bab5616a37dfabf42e4d84cef"></a>
-static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>W_UnscopedName</b> = w_internal::viewLiteral(&quot;DocumentMetadata&quot;)</td></tr>
-<tr class="separator:a20f13e4bab5616a37dfabf42e4d84cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae689d01df8cafd3e4b731f30ebc73856"><td class="memItemLeft" align="right" valign="top"><a id="ae689d01df8cafd3e4b731f30ebc73856"></a>
-static const Q_OBJECT_NO_OVERRIDE_WARNING QMetaObject&#160;</td><td class="memItemRight" valign="bottom"><b>staticMetaObject</b></td></tr>
-<tr class="separator:ae689d01df8cafd3e4b731f30ebc73856"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a85634c539c2fadb2fae05ceefa2f6ee9"><td class="memItemLeft" align="right" valign="top"><a id="a85634c539c2fadb2fae05ceefa2f6ee9"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_fileName</b> {QObject::tr(&quot;Untitled&quot;)}</td></tr>
+<tr class="separator:a85634c539c2fadb2fae05ceefa2f6ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52e746a60d8485c38ff1a1233955aa89"><td class="memItemLeft" align="right" valign="top"><a id="a52e746a60d8485c38ff1a1233955aa89"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_author</b></td></tr>
+<tr class="separator:a52e746a60d8485c38ff1a1233955aa89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27954b53b65d6fc96cd75acfb5eb7c85"><td class="memItemLeft" align="right" valign="top"><a id="a27954b53b65d6fc96cd75acfb5eb7c85"></a>
+QDateTime&#160;</td><td class="memItemRight" valign="bottom"><b>m_creation</b></td></tr>
+<tr class="separator:a27954b53b65d6fc96cd75acfb5eb7c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acad73b68c88fd2a9ac8b847880ca60ca"><td class="memItemLeft" align="right" valign="top"><a id="acad73b68c88fd2a9ac8b847880ca60ca"></a>
+QDateTime&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastEdition</b></td></tr>
+<tr class="separator:acad73b68c88fd2a9ac8b847880ca60ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:aa7a7261c104c1136b1734e433d11755f"><td class="memItemLeft" align="right" valign="top"><a id="aa7a7261c104c1136b1734e433d11755f"></a>
-struct&#160;</td><td class="memItemRight" valign="bottom"><b>w_internal::FriendHelper</b></td></tr>
-<tr class="separator:aa7a7261c104c1136b1734e433d11755f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd7e85720f326cbc930c4d15a5ac1db6"><td class="memItemLeft" align="right" valign="top"><a id="afd7e85720f326cbc930c4d15a5ac1db6"></a>
-constexpr friend auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::PropertyStateTag, <a class="el" href="structscore_1_1_document_metadata.html">W_ThisType</a> ** &gt;&gt;, w_internal::PropertyStateTag, <a class="el" href="structscore_1_1_document_metadata.html">W_ThisType</a> **) -&gt; decltype((w_internal::makeMetaPropertyInfo&lt; QString &gt;(w_internal::viewLiteral(&quot;fileName&quot;), w_internal::viewLiteral(&quot;@-W_MACRO_REMOVEPAREN( QString )&quot;), &amp;W_ThisType::fileName W_WRITE setFileName, W_Notify, &amp;W_ThisType::fileNameChanged, W_Final)))</td></tr>
+constexpr friend auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::PropertyStateTag, W_ThisType ** &gt;&gt;, w_internal::PropertyStateTag, W_ThisType **) -&gt; decltype((w_internal::makeMetaPropertyInfo&lt; QString &gt;(w_internal::viewLiteral(&quot;fileName&quot;), w_internal::viewLiteral(&quot;@-W_MACRO_REMOVEPAREN( QString )&quot;), &amp;W_ThisType::fileName W_WRITE setFileName, W_Notify, &amp;W_ThisType::fileNameChanged, W_Final)))</td></tr>
 <tr class="separator:afd7e85720f326cbc930c4d15a5ac1db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="_document_metadata_8hpp_source.html">DocumentMetadata.hpp</a></li>
+<li>DocumentMetadata.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

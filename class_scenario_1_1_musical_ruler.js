@@ -6,5 +6,5 @@ var class_scenario_1_1_musical_ruler =
       [ "Semiquavers", "class_scenario_1_1_musical_ruler.html#ab8c4759e7469476ec550130817db77dbadfd7aaba18200556a0eb071bab7c9ae7", null ],
       [ "Cents", "class_scenario_1_1_musical_ruler.html#ab8c4759e7469476ec550130817db77dba3bf1d07807d65aa05e67e972680186a6", null ]
     ] ],
-    [ "MusicalRuler", "class_scenario_1_1_musical_ruler.html#a0aa394ad058dc1fb3bf28db8fd95c2df", null ]
+    [ "MusicalRuler", "class_scenario_1_1_musical_ruler.html#af5cd51ca9dd9b5d732e317044a259195", null ]
 ];

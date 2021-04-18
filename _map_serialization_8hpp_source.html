@@ -144,8 +144,8 @@ $(document).ready(function(){initNavTree('_map_serialization_8hpp_source.html','
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; pair : obj)</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      s.stream.StartArray();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      s.readFrom(pair.first);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      s.readFrom(pair.second);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      s.<a class="code" href="class_j_s_o_n_reader.html#a97ad23366c9ed5dc863982deb9de199c">readFrom</a>(pair.first);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      s.<a class="code" href="class_j_s_o_n_reader.html#a97ad23366c9ed5dc863982deb9de199c">readFrom</a>(pair.second);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      s.stream.EndArray();</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    s.stream.EndArray();</div>
@@ -233,6 +233,7 @@ $(document).ready(function(){initNavTree('_map_serialization_8hpp_source.html','
 </div><!-- doc-content -->
 <div class="ttc" id="astruct_json_value_html"><div class="ttname"><a href="struct_json_value.html">JsonValue</a></div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:347</div></div>
 <div class="ttc" id="aclass_j_s_o_n_reader_html"><div class="ttname"><a href="class_j_s_o_n_reader.html">JSONReader</a></div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:43</div></div>
+<div class="ttc" id="aclass_j_s_o_n_reader_html_a97ad23366c9ed5dc863982deb9de199c"><div class="ttname"><a href="class_j_s_o_n_reader.html#a97ad23366c9ed5dc863982deb9de199c">JSONReader::readFrom</a></div><div class="ttdeci">void readFrom(const score::Entity&lt; T &gt; &amp;obj)</div><div class="ttdoc">Called by code that wants to serialize.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:78</div></div>
 <div class="ttc" id="aclass_data_stream_html"><div class="ttname"><a href="class_data_stream.html">DataStream</a></div><div class="ttdef"><b>Definition:</b> VisitorInterface.hpp:53</div></div>
 <div class="ttc" id="astruct_map_serializer_html"><div class="ttname"><a href="struct_map_serializer.html">MapSerializer</a></div><div class="ttdef"><b>Definition:</b> MapSerialization.hpp:10</div></div>
 <div class="ttc" id="aclass_data_stream_writer_html"><div class="ttname"><a href="class_data_stream_writer.html">DataStreamWriter</a></div><div class="ttdef"><b>Definition:</b> DataStreamVisitor.hpp:353</div></div>

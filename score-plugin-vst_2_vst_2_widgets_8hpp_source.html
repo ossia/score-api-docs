@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('score-plugin-vst_2_vst_2_widgets_8hpp_
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">friend</span> <span class="keyword">struct </span>QGraphicsSliderBase&lt;<a class="code" href="classvst_1_1_graphics_slider.html">GraphicsSlider</a>&gt;;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">double</span> m_value{};</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="struct_a_effect.html">AEffect</a>* fx{};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  AEffect* fx{};</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">int</span> num{};</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">private</span>:</div>
@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('score-plugin-vst_2_vst_2_widgets_8hpp_
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">double</span> min = 0.;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">double</span> max = 1.;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structscore_1_1_default_graphics_slider_impl.html">score::DefaultGraphicsSliderImpl</a>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="classvst_1_1_graphics_slider.html">GraphicsSlider</a>(<a class="code" href="struct_a_effect.html">AEffect</a>* fx, <span class="keywordtype">int</span> num, QGraphicsItem* parent);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="classvst_1_1_graphics_slider.html">GraphicsSlider</a>(AEffect* fx, <span class="keywordtype">int</span> num, QGraphicsItem* parent);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">double</span> map(<span class="keywordtype">double</span> v) { <span class="keywordflow">return</span> v; }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">double</span> unmap(<span class="keywordtype">double</span> v) { <span class="keywordflow">return</span> v; }</div>
@@ -174,13 +174,13 @@ $(document).ready(function(){initNavTree('score-plugin-vst_2_vst_2_widgets_8hpp_
 <div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="structvst_1_1_v_s_t_float_slider.html">   74</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structvst_1_1_v_s_t_float_slider.html">VSTFloatSlider</a> : ossia::safe_nodes::control_in</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">static</span> QWidget* make_widget(</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <a class="code" href="struct_a_effect.html">AEffect</a>* fx,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      AEffect* fx,</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="keyword">const</span> <a class="code" href="classvst_1_1_control_inlet.html">ControlInlet</a>&amp; inlet,</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      QWidget* parent,</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      QObject* context);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">static</span> QGraphicsItem* make_item(</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <a class="code" href="struct_a_effect.html">AEffect</a>* fx,</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      AEffect* fx,</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <a class="code" href="classvst_1_1_control_inlet.html">ControlInlet</a>&amp; inlet,</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      QGraphicsItem* parent,</div>
@@ -200,7 +200,6 @@ $(document).ready(function(){initNavTree('score-plugin-vst_2_vst_2_widgets_8hpp_
 <div class="ttc" id="aclassvst_1_1_graphics_slider_html"><div class="ttname"><a href="classvst_1_1_graphics_slider.html">vst::GraphicsSlider</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst/Vst/Widgets.hpp:33</div></div>
 <div class="ttc" id="astructscore_1_1_q_graphics_slider_base_html"><div class="ttname"><a href="structscore_1_1_q_graphics_slider_base.html">score::QGraphicsSliderBase</a></div><div class="ttdef"><b>Definition:</b> QGraphicsSliderBase.hpp:15</div></div>
 <div class="ttc" id="astructvst_1_1_v_s_t_float_slider_html"><div class="ttname"><a href="structvst_1_1_v_s_t_float_slider.html">vst::VSTFloatSlider</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst/Vst/Widgets.hpp:74</div></div>
-<div class="ttc" id="astruct_a_effect_html"><div class="ttname"><a href="struct_a_effect.html">AEffect</a></div><div class="ttdef"><b>Definition:</b> vst-compat.hpp:911</div></div>
 <div class="ttc" id="aclassvst_1_1_control_inlet_html"><div class="ttname"><a href="classvst_1_1_control_inlet.html">vst::ControlInlet</a></div><div class="ttdef"><b>Definition:</b> Vst/Control.hpp:14</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

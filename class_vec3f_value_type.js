@@ -23,7 +23,6 @@ var class_vec3f_value_type =
     [ "x", "class_vec3f_value_type.html#a5aa28c399c59624b143ac2ef3c432a48", null ],
     [ "y", "class_vec3f_value_type.html#a9207e08de1d0f9e4cf8b43e237554ab5", null ],
     [ "z", "class_vec3f_value_type.html#af0cd2c6253eb0f5a3bd3b0558f54402f", null ],
-    [ "w_internal::FriendHelper", "class_vec3f_value_type.html#aa7a7261c104c1136b1734e433d11755f", null ],
     [ "w_state", "class_vec3f_value_type.html#a3626851249c7edbae5c8f64b443e2972", null ],
     [ "w_state", "class_vec3f_value_type.html#afe26d19852b49b9cf499a45962218f06", null ],
     [ "w_state", "class_vec3f_value_type.html#a41aaf55d7568fa58406ad0f1511304ec", null ],

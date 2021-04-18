@@ -95,13 +95,8 @@ $(document).ready(function(){initNavTree('class_explorer_1_1_exploration_worker.
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="class_explorer_1_1_exploration_worker-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Explorer::ExplorationWorker Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -120,23 +115,8 @@ Inheritance diagram for Explorer::ExplorationWorker:</div>
 <div class="textblock"><p>The <a class="el" href="class_explorer_1_1_exploration_worker.html" title="The ExplorationWorker class.">ExplorationWorker</a> class. </p>
 <p>Used as a thread worker to perform refreshing of a remote device without GUI interruption. See DeviceExplorerWidget::refresh() for usage. </p>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a93cec31fe48d09a0cbf7fe2f92918776"><td class="memItemLeft" align="right" valign="top"><a id="a93cec31fe48d09a0cbf7fe2f92918776"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>W_BaseType</b> = std::remove_reference_t&lt; decltype(w_internal::getParentObjectHelper(&amp;W_ThisType::qt_metacast))&gt;</td></tr>
-<tr class="separator:a93cec31fe48d09a0cbf7fe2f92918776"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1bde7544c2b0b1c98c1bfc4d4a28c80d"><td class="memItemLeft" align="right" valign="top"><a id="a1bde7544c2b0b1c98c1bfc4d4a28c80d"></a>
-virtual const QMetaObject *&#160;</td><td class="memItemRight" valign="bottom"><b>metaObject</b> () const</td></tr>
-<tr class="separator:a1bde7544c2b0b1c98c1bfc4d4a28c80d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a1f9767a036dee1d95e16ff12c57c74"><td class="memItemLeft" align="right" valign="top"><a id="a0a1f9767a036dee1d95e16ff12c57c74"></a>
-virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacast</b> (const char *)</td></tr>
-<tr class="separator:a0a1f9767a036dee1d95e16ff12c57c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c43cbd23f59832b7fb7ddd297e38bcd"><td class="memItemLeft" align="right" valign="top"><a id="a9c43cbd23f59832b7fb7ddd297e38bcd"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacall</b> (QMetaObject::Call, int, void **)</td></tr>
-<tr class="separator:a9c43cbd23f59832b7fb7ddd297e38bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7a3ce74aa528c83618f8e630ac4aa0c"><td class="memItemLeft" align="right" valign="top"><a id="af7a3ce74aa528c83618f8e630ac4aa0c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ExplorationWorker</b> (<a class="el" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a> &amp;dev)</td></tr>
 <tr class="separator:af7a3ce74aa528c83618f8e630ac4aa0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,15 +127,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>finished</b> ()</td><
 void&#160;</td><td class="memItemRight" valign="bottom"><b>failed</b> (QString arg_1)</td></tr>
 <tr class="separator:ae4d7f31813f5078affcda0be7f737aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a090ba272e78d2f1dd66a5bd301771121"><td class="memItemLeft" align="right" valign="top"><a id="a090ba272e78d2f1dd66a5bd301771121"></a>
-static QString&#160;</td><td class="memItemRight" valign="bottom"><b>tr</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:a090ba272e78d2f1dd66a5bd301771121"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d1fec8d9a6c799a0d682acaabc7a2f8"><td class="memItemLeft" align="right" valign="top"><a id="a6d1fec8d9a6c799a0d682acaabc7a2f8"></a>
-static QT_DEPRECATED QString&#160;</td><td class="memItemRight" valign="bottom"><b>trUtf8</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:a6d1fec8d9a6c799a0d682acaabc7a2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:af11ba7edb2f4cd113f73f000c56c2e7e"><td class="memItemLeft" align="right" valign="top"><a id="af11ba7edb2f4cd113f73f000c56c2e7e"></a>
@@ -164,21 +135,10 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:abbfdccdb831e8b06b38d5b693d69779d"><td class="memItemLeft" align="right" valign="top"><a id="abbfdccdb831e8b06b38d5b693d69779d"></a>
 <a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a>&#160;</td><td class="memItemRight" valign="bottom"><b>node</b></td></tr>
 <tr class="separator:abbfdccdb831e8b06b38d5b693d69779d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a4695021969423dca1ccfefd61e68fbf7"><td class="memItemLeft" align="right" valign="top"><a id="a4695021969423dca1ccfefd61e68fbf7"></a>
-static const Q_OBJECT_NO_OVERRIDE_WARNING QMetaObject&#160;</td><td class="memItemRight" valign="bottom"><b>staticMetaObject</b></td></tr>
-<tr class="separator:a4695021969423dca1ccfefd61e68fbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:aa7a7261c104c1136b1734e433d11755f"><td class="memItemLeft" align="right" valign="top"><a id="aa7a7261c104c1136b1734e433d11755f"></a>
-struct&#160;</td><td class="memItemRight" valign="bottom"><b>w_internal::FriendHelper</b></td></tr>
-<tr class="separator:aa7a7261c104c1136b1734e433d11755f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_exploration_worker_8hpp_source.html">ExplorationWorker.hpp</a></li>
+<li>ExplorationWorker.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

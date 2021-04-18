@@ -1,8 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"_minimap_8hpp_source.html":[12,0,694],
-"_minuit_device_8hpp_source.html":[12,0,698],
-"_minuit_protocol_factory_8hpp_source.html":[12,0,699],
 "_minuit_protocol_settings_widget_8hpp_source.html":[12,0,700],
 "_minuit_specific_settings_8hpp_source.html":[12,0,701],
 "_missing_command_8hpp_source.html":[12,0,702],
@@ -249,5 +246,8 @@ var NAVTREEINDEX3 =
 "_scenario_command_factory_8hpp_source.html":[12,0,970],
 "_scenario_context_menu_manager_8hpp_source.html":[12,0,973],
 "_scenario_copy_8hpp_source.html":[12,0,974],
-"_scenario_creation___from_event_8hpp_source.html":[12,0,975]
+"_scenario_creation___from_event_8hpp_source.html":[12,0,975],
+"_scenario_creation___from_nothing_8hpp_source.html":[12,0,976],
+"_scenario_creation___from_state_8hpp_source.html":[12,0,977],
+"_scenario_creation___from_time_sync_8hpp_source.html":[12,0,978]
 };

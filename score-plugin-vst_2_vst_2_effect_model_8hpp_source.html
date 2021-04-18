@@ -138,10 +138,10 @@ $(document).ready(function(){initNavTree('score-plugin-vst_2_vst_2_effect_model_
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#define VST_FIRST_CONTROL_INDEX(synth) ((synth) ? 2 : 1)</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">struct </span>AEffectWrapper</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="struct_a_effect.html">AEffect</a>* fx{};</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="struct_vst_time_info.html">VstTimeInfo</a> info;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  AEffect* fx{};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  VstTimeInfo info;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  AEffectWrapper(<a class="code" href="struct_a_effect.html">AEffect</a>* f) noexcept : fx{f} { }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  AEffectWrapper(AEffect* f) noexcept : fx{f} { }</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">auto</span> getParameter(int32_t index) <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> fx-&gt;getParameter(fx, index); }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">auto</span> setParameter(int32_t index, <span class="keywordtype">float</span> p) <span class="keyword">const</span> noexcept</div>
@@ -234,9 +234,9 @@ $(document).ready(function(){initNavTree('score-plugin-vst_2_vst_2_effect_model_
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;};</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment">// VSTModule* getPlugin(QString path);</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<a class="code" href="struct_a_effect.html">AEffect</a>* getPluginInstance(int32_t <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;AEffect* getPluginInstance(int32_t <span class="keywordtype">id</span>);</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;intptr_t vst_host_callback(</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <a class="code" href="struct_a_effect.html">AEffect</a>* effect,</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    AEffect* effect,</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    int32_t opcode,</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    int32_t index,</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    intptr_t value,</div>
@@ -269,8 +269,6 @@ $(document).ready(function(){initNavTree('score-plugin-vst_2_vst_2_effect_model_
 <div class="ttc" id="aclassvst_1_1_create_control_html"><div class="ttname"><a href="classvst_1_1_create_control.html">vst::CreateControl</a></div><div class="ttdef"><b>Definition:</b> plugins/score-plugin-vst/Vst/commands.hpp:40</div></div>
 <div class="ttc" id="aclass_process_1_1_port_html"><div class="ttname"><a href="class_process_1_1_port.html">Process::Port</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:102</div></div>
 <div class="ttc" id="astruct_process_1_1_descriptor_html"><div class="ttname"><a href="struct_process_1_1_descriptor.html">Process::Descriptor</a></div><div class="ttdef"><b>Definition:</b> ProcessMetadata.hpp:34</div></div>
-<div class="ttc" id="astruct_vst_time_info_html"><div class="ttname"><a href="struct_vst_time_info.html">VstTimeInfo</a></div><div class="ttdef"><b>Definition:</b> vst-compat.hpp:612</div></div>
-<div class="ttc" id="astruct_a_effect_html"><div class="ttname"><a href="struct_a_effect.html">AEffect</a></div><div class="ttdef"><b>Definition:</b> vst-compat.hpp:911</div></div>
 <div class="ttc" id="aclassvst_1_1_control_inlet_html"><div class="ttname"><a href="classvst_1_1_control_inlet.html">vst::ControlInlet</a></div><div class="ttdef"><b>Definition:</b> Vst/Control.hpp:14</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

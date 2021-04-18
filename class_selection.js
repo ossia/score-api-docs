@@ -8,6 +8,6 @@ var class_selection =
     [ "contains", "class_selection.html#af4e5f9903ed90781fd5250f88caf8c72", null ],
     [ "operator!=", "class_selection.html#ae8befe9ec8e3342781f114455e4c53c4", null ],
     [ "operator==", "class_selection.html#a3e926836ea432d8a526af6f25e8405a4", null ],
-    [ "removeDuplicates", "class_selection.html#a7187d4e31895d22c83d6e0a34ec85e2c", null ],
+    [ "removeDuplicates", "class_selection.html#a65b0d8b9647f54d4a23bcb27a0ccd4fd", null ],
     [ "toList", "class_selection.html#aa899a4bd6c5f2f6cd79d95e82c9ff988", null ]
 ];

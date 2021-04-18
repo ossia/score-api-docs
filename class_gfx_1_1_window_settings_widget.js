@@ -1,6 +1,6 @@
 var class_gfx_1_1_window_settings_widget =
 [
-    [ "WindowSettingsWidget", "class_gfx_1_1_window_settings_widget.html#a1134cf2d9335bd278899cc59821dc675", null ],
-    [ "getSettings", "class_gfx_1_1_window_settings_widget.html#aae9cb3c7200a14679c9a42c77e2ddce0", null ],
-    [ "setSettings", "class_gfx_1_1_window_settings_widget.html#a43b4b913d7571cf5daabbecfc4f06801", null ]
+    [ "WindowSettingsWidget", "class_gfx_1_1_window_settings_widget.html#afd4a01edded1706915c4c8bc81c4a787", null ],
+    [ "getSettings", "class_gfx_1_1_window_settings_widget.html#a43c238aa940fe10b145e41ca98aa1067", null ],
+    [ "setSettings", "class_gfx_1_1_window_settings_widget.html#a39c300600d9b097c10e0cf4ee08cad03", null ]
 ];

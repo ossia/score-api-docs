@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('_messages_panel_8hpp_source.html','');
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span>QDockWidget;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore.html">score</a></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="class_log_messages_item_model.html">LogMessagesItemModel</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>LogMessagesItemModel;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// REFACTORME</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>log</div>
@@ -139,15 +139,15 @@ $(document).ready(function(){initNavTree('_messages_panel_8hpp_source.html','');
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;W_OBJECT_IMPL(<a class="code" href="classscore_1_1_visibility_notifying.html">VisibilityNotifying&lt;T&gt;</a>, template &lt;typename T&gt;)</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">class </span>SCORE_LIB_BASE_EXPORT MessagesPanelDelegate final</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    : <span class="keyword">public</span> QObject</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    , <span class="keyword">public</span> <a class="code" href="classscore_1_1_panel_delegate.html">score::PanelDelegate</a></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classscore_1_1_messages_panel_delegate.html">   42</a></span>&#160;class SCORE_LIB_BASE_EXPORT <a class="code" href="classscore_1_1_messages_panel_delegate.html">MessagesPanelDelegate</a> final</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    : public QObject</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    , public <a class="code" href="namespacescore.html">score</a>::<a class="code" href="classscore_1_1_panel_delegate.html">PanelDelegate</a></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span>err_sink;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  W_OBJECT(MessagesPanelDelegate)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  W_OBJECT(<a class="code" href="classscore_1_1_messages_panel_delegate.html">MessagesPanelDelegate</a>)</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  MessagesPanelDelegate(<span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; ctx);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="classscore_1_1_messages_panel_delegate.html">MessagesPanelDelegate</a>(<span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; ctx);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> push(<span class="keyword">const</span> QString&amp; str, <span class="keyword">const</span> QColor&amp; col);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> qtLog(<span class="keyword">const</span> std::string&amp; str);</div>
@@ -157,25 +157,27 @@ $(document).ready(function(){initNavTree('_messages_panel_8hpp_source.html','');
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1_panel_status.html">score::PanelStatus</a>&amp; defaultPanelStatus() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="class_log_messages_item_model.html">LogMessagesItemModel</a>* m_itemModel{};</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  VisibilityNotifying&lt;QListView&gt;* m_widget{};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="classscore_1_1_log_messages_item_model.html">LogMessagesItemModel</a>* m_itemModel{};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="classscore_1_1_visibility_notifying.html">VisibilityNotifying&lt;QListView&gt;</a>* m_widget{};</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">class </span>MessagesPanelDelegateFactory final : <span class="keyword">public</span> <a class="code" href="classscore_1_1_panel_delegate_factory.html">score::PanelDelegateFactory</a></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classscore_1_1_messages_panel_delegate_factory.html">   64</a></span>&#160;<span class="keyword">class </span><a class="code" href="classscore_1_1_messages_panel_delegate_factory.html">MessagesPanelDelegateFactory</a> final : <span class="keyword">public</span> <a class="code" href="classscore_1_1_panel_delegate_factory.html">score::PanelDelegateFactory</a></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;84a66cbe-aee3-496a-b7f4-0ea0d699deac&quot;</span>)</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  std::unique_ptr&lt;<a class="code" href="namespacescore.html">score</a>::PanelDelegate&gt; make(const <a class="code" href="namespacescore.html">score</a>::GUIApplicationContext&amp; ctx) override;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  std::unique_ptr&lt;score::PanelDelegate&gt; make(<span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; ctx) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassscore_1_1_messages_panel_delegate_factory_html"><div class="ttname"><a href="classscore_1_1_messages_panel_delegate_factory.html">score::MessagesPanelDelegateFactory</a></div><div class="ttdef"><b>Definition:</b> MessagesPanel.hpp:64</div></div>
 <div class="ttc" id="aclassscore_1_1_visibility_notifying_html"><div class="ttname"><a href="classscore_1_1_visibility_notifying.html">score::VisibilityNotifying</a></div><div class="ttdef"><b>Definition:</b> MessagesPanel.hpp:25</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:63</div></div>
+<div class="ttc" id="aclassscore_1_1_log_messages_item_model_html"><div class="ttname"><a href="classscore_1_1_log_messages_item_model.html">score::LogMessagesItemModel</a></div><div class="ttdef"><b>Definition:</b> MessagesPanel.cpp:29</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:65</div></div>
 <div class="ttc" id="astructscore_1_1_g_u_i_application_context_html"><div class="ttname"><a href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a></div><div class="ttdoc">Specializes ApplicationContext with the QMainWindow.</div><div class="ttdef"><b>Definition:</b> GUIApplicationContext.hpp:14</div></div>
 <div class="ttc" id="aclassscore_1_1_panel_delegate_factory_html"><div class="ttname"><a href="classscore_1_1_panel_delegate_factory.html">score::PanelDelegateFactory</a></div><div class="ttdoc">Reimplement this interface to register new panels.</div><div class="ttdef"><b>Definition:</b> PanelDelegateFactory.hpp:9</div></div>
 <div class="ttc" id="aclassscore_1_1_panel_delegate_html"><div class="ttname"><a href="classscore_1_1_panel_delegate.html">score::PanelDelegate</a></div><div class="ttdoc">The PanelDelegate class.</div><div class="ttdef"><b>Definition:</b> PanelDelegate.hpp:54</div></div>
-<div class="ttc" id="aclass_log_messages_item_model_html"><div class="ttname"><a href="class_log_messages_item_model.html">LogMessagesItemModel</a></div><div class="ttdef"><b>Definition:</b> MessagesPanel.cpp:28</div></div>
+<div class="ttc" id="aclassscore_1_1_messages_panel_delegate_html"><div class="ttname"><a href="classscore_1_1_messages_panel_delegate.html">score::MessagesPanelDelegate</a></div><div class="ttdef"><b>Definition:</b> MessagesPanel.hpp:42</div></div>
 <div class="ttc" id="astructscore_1_1_panel_status_html"><div class="ttname"><a href="structscore_1_1_panel_status.html">score::PanelStatus</a></div><div class="ttdoc">The PanelStatus struct.</div><div class="ttdef"><b>Definition:</b> PanelDelegate.hpp:23</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

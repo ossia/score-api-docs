@@ -95,11 +95,7 @@ $(document).ready(function(){initNavTree('classscore_1_1_presenter.html',''); in
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classscore_1_1_presenter-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -120,32 +116,17 @@ Inheritance diagram for score::Presenter:</div>
 <p>Certainly needs refactoring. For now, manages menus and plug-in objects.</p>
 <p>It is also able to instantiate a <a class="el" href="classscore_1_1_command.html" title="The Command class.">Command</a> from serialized Undo/Redo data. (this should go in the <a class="el" href="classscore_1_1_document_presenter.html" title="Interface between the DocumentModel and the DocumentView.">DocumentPresenter</a> maybe ?) </p>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a1c28ea6bbc4b41690a44130ae8c4e09c"><td class="memItemLeft" align="right" valign="top"><a id="a1c28ea6bbc4b41690a44130ae8c4e09c"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>W_BaseType</b> = std::remove_reference_t&lt; decltype(w_internal::getParentObjectHelper(&amp;W_ThisType::qt_metacast))&gt;</td></tr>
-<tr class="separator:a1c28ea6bbc4b41690a44130ae8c4e09c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ade3e5fc01684258c7b5c44c5e4e76dc8"><td class="memItemLeft" align="right" valign="top"><a id="ade3e5fc01684258c7b5c44c5e4e76dc8"></a>
-virtual const QMetaObject *&#160;</td><td class="memItemRight" valign="bottom"><b>metaObject</b> () const</td></tr>
-<tr class="separator:ade3e5fc01684258c7b5c44c5e4e76dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dd993c74423ae177096449e7e4cc12e"><td class="memItemLeft" align="right" valign="top"><a id="a4dd993c74423ae177096449e7e4cc12e"></a>
-virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacast</b> (const char *)</td></tr>
-<tr class="separator:a4dd993c74423ae177096449e7e4cc12e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e3337dd0e0a760c46b30cb362114369"><td class="memItemLeft" align="right" valign="top"><a id="a0e3337dd0e0a760c46b30cb362114369"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacall</b> (QMetaObject::Call, int, void **)</td></tr>
-<tr class="separator:a0e3337dd0e0a760c46b30cb362114369"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ba2b8566237ac09c12b7a37a6c96f88"><td class="memItemLeft" align="right" valign="top"><a id="a7ba2b8566237ac09c12b7a37a6c96f88"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Presenter</b> (const <a class="el" href="structscore_1_1_application_settings.html">score::ApplicationSettings</a> &amp;app, <a class="el" href="classscore_1_1_settings.html">score::Settings</a> &amp;set, <a class="el" href="classscore_1_1_project_settings.html">score::ProjectSettings</a> &amp;pset, <a class="el" href="classscore_1_1_view.html">score::View</a> *view, QObject *parent)</td></tr>
 <tr class="separator:a7ba2b8566237ac09c12b7a37a6c96f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90a217a410f473bd8126380ea628e559"><td class="memItemLeft" align="right" valign="top"><a id="a90a217a410f473bd8126380ea628e559"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>exit</b> ()</td></tr>
 <tr class="separator:a90a217a410f473bd8126380ea628e559"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21d3c4351a6c87976c936bd1f3db5b7a"><td class="memItemLeft" align="right" valign="top"><a id="a21d3c4351a6c87976c936bd1f3db5b7a"></a>
+<tr class="memitem:a7017478d4328564586a94846e069ee42"><td class="memItemLeft" align="right" valign="top"><a id="a7017478d4328564586a94846e069ee42"></a>
 <a class="el" href="classscore_1_1_view.html">View</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>view</b> () const</td></tr>
-<tr class="separator:a21d3c4351a6c87976c936bd1f3db5b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a7017478d4328564586a94846e069ee42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1553a72820090c938658e04f6e38fff"><td class="memItemLeft" align="right" valign="top"><a id="ac1553a72820090c938658e04f6e38fff"></a>
 auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>menuManager</b> ()</td></tr>
 <tr class="separator:ac1553a72820090c938658e04f6e38fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,32 +158,15 @@ auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>settings</b> ()
 void&#160;</td><td class="memItemRight" valign="bottom"><b>optimize</b> ()</td></tr>
 <tr class="separator:aa2f938c806d626be5ac373c17e5d8394"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aa100a05715dd5b2420b07ef7928e23f3"><td class="memItemLeft" align="right" valign="top"><a id="aa100a05715dd5b2420b07ef7928e23f3"></a>
-static QString&#160;</td><td class="memItemRight" valign="bottom"><b>tr</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:aa100a05715dd5b2420b07ef7928e23f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace69f74fdf51a9e07077c5443b577c06"><td class="memItemLeft" align="right" valign="top"><a id="ace69f74fdf51a9e07077c5443b577c06"></a>
-static QT_DEPRECATED QString&#160;</td><td class="memItemRight" valign="bottom"><b>trUtf8</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:ace69f74fdf51a9e07077c5443b577c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a1cf7c4eeddbae98a0e91098f13c71690"><td class="memItemLeft" align="right" valign="top"><a id="a1cf7c4eeddbae98a0e91098f13c71690"></a>
-static const Q_OBJECT_NO_OVERRIDE_WARNING QMetaObject&#160;</td><td class="memItemRight" valign="bottom"><b>staticMetaObject</b></td></tr>
-<tr class="separator:a1cf7c4eeddbae98a0e91098f13c71690"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:aa7a7261c104c1136b1734e433d11755f"><td class="memItemLeft" align="right" valign="top"><a id="aa7a7261c104c1136b1734e433d11755f"></a>
-struct&#160;</td><td class="memItemRight" valign="bottom"><b>w_internal::FriendHelper</b></td></tr>
-<tr class="separator:aa7a7261c104c1136b1734e433d11755f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49e174f20acef972f0803f1d59e508d8"><td class="memItemLeft" align="right" valign="top"><a id="a49e174f20acef972f0803f1d59e508d8"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>score::CoreApplicationPlugin</b></td></tr>
 <tr class="separator:a49e174f20acef972f0803f1d59e508d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="lib_2core_2presenter_2_presenter_8hpp_source.html">lib/core/presenter/Presenter.hpp</a></li>
+<li>lib/core/presenter/Presenter.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

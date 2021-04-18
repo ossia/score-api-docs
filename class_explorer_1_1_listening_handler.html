@@ -95,12 +95,7 @@ $(document).ready(function(){initNavTree('class_explorer_1_1_listening_handler.h
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="class_explorer_1_1_listening_handler-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Explorer::ListeningHandler Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -117,23 +112,8 @@ Inheritance diagram for Explorer::ListeningHandler:</div>
   </map>
 </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:ad5e353b18461a17d54c7767d85496ce6"><td class="memItemLeft" align="right" valign="top"><a id="ad5e353b18461a17d54c7767d85496ce6"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>W_BaseType</b> = std::remove_reference_t&lt; decltype(w_internal::getParentObjectHelper(&amp;W_ThisType::qt_metacast))&gt;</td></tr>
-<tr class="separator:ad5e353b18461a17d54c7767d85496ce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab8aa9d50eb69e9e70ff8e5478ae3de06"><td class="memItemLeft" align="right" valign="top"><a id="ab8aa9d50eb69e9e70ff8e5478ae3de06"></a>
-virtual const QMetaObject *&#160;</td><td class="memItemRight" valign="bottom"><b>metaObject</b> () const</td></tr>
-<tr class="separator:ab8aa9d50eb69e9e70ff8e5478ae3de06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21ae37caf227c583da09af8fbe7dffb4"><td class="memItemLeft" align="right" valign="top"><a id="a21ae37caf227c583da09af8fbe7dffb4"></a>
-virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacast</b> (const char *)</td></tr>
-<tr class="separator:a21ae37caf227c583da09af8fbe7dffb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b732fa1026b8d3eea7f7d3eacc8c880"><td class="memItemLeft" align="right" valign="top"><a id="a5b732fa1026b8d3eea7f7d3eacc8c880"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacall</b> (QMetaObject::Call, int, void **)</td></tr>
-<tr class="separator:a5b732fa1026b8d3eea7f7d3eacc8c880"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a920fe80662ef4d17369a397e7f55aa36"><td class="memItemLeft" align="right" valign="top"><a id="a920fe80662ef4d17369a397e7f55aa36"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setListening</b> (<a class="el" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a> &amp;dev, const <a class="el" href="struct_state_1_1_address.html">State::Address</a> &amp;addr, bool b)=0</td></tr>
 <tr class="separator:a920fe80662ef4d17369a397e7f55aa36"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,30 +129,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
 <tr class="memitem:aa5eb0dbae04af37d696b201a228540a0"><td class="memItemLeft" align="right" valign="top"><a id="aa5eb0dbae04af37d696b201a228540a0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>restore</b> ()</td></tr>
 <tr class="separator:aa5eb0dbae04af37d696b201a228540a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aa0a008dd323cdfa17bc9b731b300bd6d"><td class="memItemLeft" align="right" valign="top"><a id="aa0a008dd323cdfa17bc9b731b300bd6d"></a>
-static QString&#160;</td><td class="memItemRight" valign="bottom"><b>tr</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:aa0a008dd323cdfa17bc9b731b300bd6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5323d86c677c6612b0e899384a83f2d"><td class="memItemLeft" align="right" valign="top"><a id="aa5323d86c677c6612b0e899384a83f2d"></a>
-static QT_DEPRECATED QString&#160;</td><td class="memItemRight" valign="bottom"><b>trUtf8</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:aa5323d86c677c6612b0e899384a83f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a3a1c3c306240451a6939520fdd337a1d"><td class="memItemLeft" align="right" valign="top"><a id="a3a1c3c306240451a6939520fdd337a1d"></a>
-static const Q_OBJECT_NO_OVERRIDE_WARNING QMetaObject&#160;</td><td class="memItemRight" valign="bottom"><b>staticMetaObject</b></td></tr>
-<tr class="separator:a3a1c3c306240451a6939520fdd337a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:aa7a7261c104c1136b1734e433d11755f"><td class="memItemLeft" align="right" valign="top"><a id="aa7a7261c104c1136b1734e433d11755f"></a>
-struct&#160;</td><td class="memItemRight" valign="bottom"><b>w_internal::FriendHelper</b></td></tr>
-<tr class="separator:aa7a7261c104c1136b1734e433d11755f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_listening_handler_8hpp_source.html">ListeningHandler.hpp</a></li>
+<li>ListeningHandler.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

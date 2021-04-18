@@ -110,24 +110,24 @@ $(document).ready(function(){initNavTree('isf_8hpp_source.html',''); initResizab
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>isf</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classisf_1_1invalid__file.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classisf_1_1invalid__file.html">invalid_file</a> : <span class="keyword">public</span> std::runtime_error</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>invalid_file : <span class="keyword">public</span> std::runtime_error</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">using</span> std::runtime_error::runtime_error;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structisf_1_1event__input.html">   19</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structisf_1_1event__input.html">event_input</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">struct </span>event_input</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structisf_1_1bool__input.html">   23</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structisf_1_1bool__input.html">bool_input</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">struct </span>bool_input</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">using</span> value_type = bool;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">using</span> has_default = std::true_type;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordtype">bool</span> def{};</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structisf_1_1long__input.html">   30</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structisf_1_1long__input.html">long_input</a></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">struct </span>long_input</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">using</span> value_type = int64_t;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">using</span> has_minmax = std::true_type;</div>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('isf_8hpp_source.html',''); initResizab
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  std::vector&lt;std::string&gt; labels;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  std::size_t def{}; <span class="comment">// index of default value</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structisf_1_1float__input.html">   38</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structisf_1_1float__input.html">float_input</a></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">struct </span>float_input</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">using</span> value_type = double;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">using</span> has_minmax = std::true_type;</div>
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('isf_8hpp_source.html',''); initResizab
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">double</span> def{};</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structisf_1_1point2d__input.html">   47</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structisf_1_1point2d__input.html">point2d_input</a></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">struct </span>point2d_input</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">using</span> value_type = std::array&lt;double, 2&gt;;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">using</span> has_minmax = std::true_type;</div>
@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('isf_8hpp_source.html',''); initResizab
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  std::optional&lt;value_type&gt; max{};</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structisf_1_1point3d__input.html">   56</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structisf_1_1point3d__input.html">point3d_input</a></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">struct </span>point3d_input</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">using</span> value_type = std::array&lt;double, 3&gt;;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">using</span> has_minmax = std::true_type;</div>
@@ -162,7 +162,7 @@ $(document).ready(function(){initNavTree('isf_8hpp_source.html',''); initResizab
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  std::optional&lt;value_type&gt; max{};</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="structisf_1_1color__input.html">   65</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structisf_1_1color__input.html">color_input</a></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">struct </span>color_input</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">using</span> value_type = std::array&lt;double, 4&gt;;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">using</span> has_minmax = std::true_type;</div>
@@ -171,33 +171,33 @@ $(document).ready(function(){initNavTree('isf_8hpp_source.html',''); initResizab
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  std::optional&lt;value_type&gt; max{};</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="structisf_1_1image__input.html">   74</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structisf_1_1image__input.html">image_input</a></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">struct </span>image_input</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="structisf_1_1audio__input.html">   78</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structisf_1_1audio__input.html">audio_input</a></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">struct </span>audio_input</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">int</span> max{};</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="structisf_1_1audio_f_f_t__input.html">   83</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structisf_1_1audio_f_f_t__input.html">audioFFT_input</a></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">struct </span>audioFFT_input</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">int</span> max{};</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="structisf_1_1input.html">   88</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structisf_1_1input.html">input</a></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">struct </span>input</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keyword">using</span> input_impl = std::variant&lt;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <a class="code" href="structisf_1_1float__input.html">float_input</a>,</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <a class="code" href="structisf_1_1long__input.html">long_input</a>,</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <a class="code" href="structisf_1_1event__input.html">event_input</a>,</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <a class="code" href="structisf_1_1bool__input.html">bool_input</a>,</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <a class="code" href="structisf_1_1color__input.html">color_input</a>,</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <a class="code" href="structisf_1_1point2d__input.html">point2d_input</a>,</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <a class="code" href="structisf_1_1point3d__input.html">point3d_input</a>,</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <a class="code" href="structisf_1_1image__input.html">image_input</a>,</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      <a class="code" href="structisf_1_1audio__input.html">audio_input</a>,</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <a class="code" href="structisf_1_1audio_f_f_t__input.html">audioFFT_input</a>&gt;;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      float_input,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      long_input,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      event_input,</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      bool_input,</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      color_input,</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      point2d_input,</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      point3d_input,</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      image_input,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      audio_input,</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      audioFFT_input&gt;;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  std::string name;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  std::string label;</div>
@@ -205,7 +205,7 @@ $(document).ready(function(){initNavTree('isf_8hpp_source.html',''); initResizab
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  input_impl data;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;};</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="structisf_1_1pass.html">  108</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structisf_1_1pass.html">pass</a></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">struct </span>pass</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;{</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  std::string target;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">bool</span> persistent{};</div>
@@ -214,7 +214,7 @@ $(document).ready(function(){initNavTree('isf_8hpp_source.html',''); initResizab
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  std::string height_expression{};</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;};</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="structisf_1_1descriptor.html">  117</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structisf_1_1descriptor.html">descriptor</a></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">struct </span>descriptor</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;{</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  std::string description;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  std::string credits;</div>
@@ -223,7 +223,7 @@ $(document).ready(function(){initNavTree('isf_8hpp_source.html',''); initResizab
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  std::vector&lt;pass&gt; passes;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;};</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="classisf_1_1parser.html">  126</a></span>&#160;<span class="keyword">class </span>ISF_EXPORT <a class="code" href="classisf_1_1parser.html">parser</a></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keyword">class </span>ISF_EXPORT parser</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;{</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  std::string m_sourceVertex;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  std::string m_sourceFragment;</div>
@@ -232,7 +232,7 @@ $(document).ready(function(){initNavTree('isf_8hpp_source.html',''); initResizab
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  std::string m_vertex;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  std::string m_fragment;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <a class="code" href="structisf_1_1descriptor.html">descriptor</a> m_desc;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  descriptor m_desc;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="keyword">enum class</span> ShaderType</div>
@@ -242,13 +242,13 @@ $(document).ready(function(){initNavTree('isf_8hpp_source.html',''); initResizab
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    ShaderToy,</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    GLSLSandBox</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  };</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <a class="code" href="classisf_1_1parser.html">parser</a>(</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  parser(</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;      std::string vert,</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;      std::string frag,</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      <span class="keywordtype">int</span> glslVersion = 450,</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      ShaderType = ShaderType::Autodetect);</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <a class="code" href="structisf_1_1descriptor.html">descriptor</a> data() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  descriptor data() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  std::string vertex() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  std::string fragment() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
@@ -260,21 +260,6 @@ $(document).ready(function(){initNavTree('isf_8hpp_source.html',''); initResizab
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astructisf_1_1input_html"><div class="ttname"><a href="structisf_1_1input.html">isf::input</a></div><div class="ttdef"><b>Definition:</b> isf.hpp:88</div></div>
-<div class="ttc" id="astructisf_1_1image__input_html"><div class="ttname"><a href="structisf_1_1image__input.html">isf::image_input</a></div><div class="ttdef"><b>Definition:</b> isf.hpp:74</div></div>
-<div class="ttc" id="astructisf_1_1audio__input_html"><div class="ttname"><a href="structisf_1_1audio__input.html">isf::audio_input</a></div><div class="ttdef"><b>Definition:</b> isf.hpp:78</div></div>
-<div class="ttc" id="aclassisf_1_1parser_html"><div class="ttname"><a href="classisf_1_1parser.html">isf::parser</a></div><div class="ttdef"><b>Definition:</b> isf.hpp:126</div></div>
-<div class="ttc" id="astructisf_1_1color__input_html"><div class="ttname"><a href="structisf_1_1color__input.html">isf::color_input</a></div><div class="ttdef"><b>Definition:</b> isf.hpp:65</div></div>
-<div class="ttc" id="astructisf_1_1point2d__input_html"><div class="ttname"><a href="structisf_1_1point2d__input.html">isf::point2d_input</a></div><div class="ttdef"><b>Definition:</b> isf.hpp:47</div></div>
-<div class="ttc" id="astructisf_1_1point3d__input_html"><div class="ttname"><a href="structisf_1_1point3d__input.html">isf::point3d_input</a></div><div class="ttdef"><b>Definition:</b> isf.hpp:56</div></div>
-<div class="ttc" id="astructisf_1_1float__input_html"><div class="ttname"><a href="structisf_1_1float__input.html">isf::float_input</a></div><div class="ttdef"><b>Definition:</b> isf.hpp:38</div></div>
-<div class="ttc" id="astructisf_1_1event__input_html"><div class="ttname"><a href="structisf_1_1event__input.html">isf::event_input</a></div><div class="ttdef"><b>Definition:</b> isf.hpp:19</div></div>
-<div class="ttc" id="astructisf_1_1long__input_html"><div class="ttname"><a href="structisf_1_1long__input.html">isf::long_input</a></div><div class="ttdef"><b>Definition:</b> isf.hpp:30</div></div>
-<div class="ttc" id="astructisf_1_1audio_f_f_t__input_html"><div class="ttname"><a href="structisf_1_1audio_f_f_t__input.html">isf::audioFFT_input</a></div><div class="ttdef"><b>Definition:</b> isf.hpp:83</div></div>
-<div class="ttc" id="astructisf_1_1pass_html"><div class="ttname"><a href="structisf_1_1pass.html">isf::pass</a></div><div class="ttdef"><b>Definition:</b> isf.hpp:108</div></div>
-<div class="ttc" id="astructisf_1_1bool__input_html"><div class="ttname"><a href="structisf_1_1bool__input.html">isf::bool_input</a></div><div class="ttdef"><b>Definition:</b> isf.hpp:23</div></div>
-<div class="ttc" id="aclassisf_1_1invalid__file_html"><div class="ttname"><a href="classisf_1_1invalid__file.html">isf::invalid_file</a></div><div class="ttdef"><b>Definition:</b> isf.hpp:13</div></div>
-<div class="ttc" id="astructisf_1_1descriptor_html"><div class="ttname"><a href="structisf_1_1descriptor.html">isf::descriptor</a></div><div class="ttdef"><b>Definition:</b> isf.hpp:117</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

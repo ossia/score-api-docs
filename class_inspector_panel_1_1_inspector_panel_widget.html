@@ -95,12 +95,7 @@ $(document).ready(function(){initNavTree('class_inspector_panel_1_1_inspector_pa
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="class_inspector_panel_1_1_inspector_panel_widget-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">InspectorPanel::InspectorPanelWidget Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -119,50 +114,14 @@ Inheritance diagram for InspectorPanel::InspectorPanelWidget:</div>
 <div class="textblock"><p>The InspectorPanel class manages the main panel. </p>
 <p>It creates and displays the view for each inspected element. </p>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a573eb6446a7baf0c37bebca498766b1c"><td class="memItemLeft" align="right" valign="top"><a id="a573eb6446a7baf0c37bebca498766b1c"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>W_BaseType</b> = std::remove_reference_t&lt; decltype(w_internal::getParentObjectHelper(&amp;W_ThisType::qt_metacast))&gt;</td></tr>
-<tr class="separator:a573eb6446a7baf0c37bebca498766b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4670dd87e010ad54d5aa1d7f2d9ec27e"><td class="memItemLeft" align="right" valign="top"><a id="a4670dd87e010ad54d5aa1d7f2d9ec27e"></a>
-virtual const QMetaObject *&#160;</td><td class="memItemRight" valign="bottom"><b>metaObject</b> () const</td></tr>
-<tr class="separator:a4670dd87e010ad54d5aa1d7f2d9ec27e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed6296638faf860d5bb5aad8972d1f57"><td class="memItemLeft" align="right" valign="top"><a id="aed6296638faf860d5bb5aad8972d1f57"></a>
-virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacast</b> (const char *)</td></tr>
-<tr class="separator:aed6296638faf860d5bb5aad8972d1f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52e3dbad0d125099467cfa3ccce12284"><td class="memItemLeft" align="right" valign="top"><a id="a52e3dbad0d125099467cfa3ccce12284"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacall</b> (QMetaObject::Call, int, void **)</td></tr>
-<tr class="separator:a52e3dbad0d125099467cfa3ccce12284"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdd58ef373652f8a9b8d346974cf60e0"><td class="memItemLeft" align="right" valign="top"><a id="acdd58ef373652f8a9b8d346974cf60e0"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>InspectorPanelWidget</b> (const <a class="el" href="class_inspector_1_1_inspector_widget_list.html">Inspector::InspectorWidgetList</a> &amp;list, <a class="el" href="classscore_1_1_selection_stack.html">score::SelectionStack</a> &amp;s, QVBoxLayout *lay, QWidget *parent, QObject *parentObj)</td></tr>
 <tr class="separator:acdd58ef373652f8a9b8d346974cf60e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6722a5be4536d5ad8663f79796b466d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inspector_panel_1_1_inspector_panel_widget.html#a6722a5be4536d5ad8663f79796b466d5">newItemsInspected</a> (const <a class="el" href="class_selection.html">Selection</a> &amp;)</td></tr>
 <tr class="memdesc:a6722a5be4536d5ad8663f79796b466d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">newItemInspected load the view for the selected object  <a href="class_inspector_panel_1_1_inspector_panel_widget.html#a6722a5be4536d5ad8663f79796b466d5">More...</a><br /></td></tr>
 <tr class="separator:a6722a5be4536d5ad8663f79796b466d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a455e674dfa0b141fe26fb88c7688cbe7"><td class="memItemLeft" align="right" valign="top"><a id="a455e674dfa0b141fe26fb88c7688cbe7"></a>
-static QString&#160;</td><td class="memItemRight" valign="bottom"><b>tr</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:a455e674dfa0b141fe26fb88c7688cbe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4992690575932d50aa6f2854a3bac1d2"><td class="memItemLeft" align="right" valign="top"><a id="a4992690575932d50aa6f2854a3bac1d2"></a>
-static QT_DEPRECATED QString&#160;</td><td class="memItemRight" valign="bottom"><b>trUtf8</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:a4992690575932d50aa6f2854a3bac1d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a8c5f8f9ed0e2cc7e3d91cc2f5b81a725"><td class="memItemLeft" align="right" valign="top"><a id="a8c5f8f9ed0e2cc7e3d91cc2f5b81a725"></a>
-static const Q_OBJECT_NO_OVERRIDE_WARNING QMetaObject&#160;</td><td class="memItemRight" valign="bottom"><b>staticMetaObject</b></td></tr>
-<tr class="separator:a8c5f8f9ed0e2cc7e3d91cc2f5b81a725"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:aa7a7261c104c1136b1734e433d11755f"><td class="memItemLeft" align="right" valign="top"><a id="aa7a7261c104c1136b1734e433d11755f"></a>
-struct&#160;</td><td class="memItemRight" valign="bottom"><b>w_internal::FriendHelper</b></td></tr>
-<tr class="separator:aa7a7261c104c1136b1734e433d11755f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6722a5be4536d5ad8663f79796b466d5"></a>
@@ -175,7 +134,7 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>w_internal::FriendH
           <td class="memname">void InspectorPanel::InspectorPanelWidget::newItemsInspected </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_selection.html">Selection</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>objects</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -191,8 +150,9 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>w_internal::FriendH
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_inspector_panel_8hpp_source.html">InspectorPanel.hpp</a></li>
+<li>InspectorPanel.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

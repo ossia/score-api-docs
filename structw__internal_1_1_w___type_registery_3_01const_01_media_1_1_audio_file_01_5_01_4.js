@@ -1,4 +1,0 @@
-var structw__internal_1_1_w___type_registery_3_01const_01_media_1_1_audio_file_01_5_01_4 =
-[
-    [ "registered", "structw__internal_1_1_w___type_registery_3_01const_01_media_1_1_audio_file_01_5_01_4.html#ac550515a834c0261d6acf02a3e211129a6b9c0e40977ceb5e589ab2f76e59b458", null ]
-];

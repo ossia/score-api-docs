@@ -95,13 +95,8 @@ $(document).ready(function(){initNavTree('classscore_1_1_document_presenter.html
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="classscore_1_1_document_presenter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">score::DocumentPresenter Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -119,23 +114,8 @@ Inheritance diagram for score::DocumentPresenter:</div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface between the <a class="el" href="classscore_1_1_document_model.html" title="Model part of a document.">DocumentModel</a> and the <a class="el" href="classscore_1_1_document_view.html" title="The DocumentView class shows a document.">DocumentView</a>. </p>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:ab62dacbea86339ba9001893706cfa770"><td class="memItemLeft" align="right" valign="top"><a id="ab62dacbea86339ba9001893706cfa770"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>W_BaseType</b> = std::remove_reference_t&lt; decltype(w_internal::getParentObjectHelper(&amp;W_ThisType::qt_metacast))&gt;</td></tr>
-<tr class="separator:ab62dacbea86339ba9001893706cfa770"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a97b2f612540665cb560064b60eddc08d"><td class="memItemLeft" align="right" valign="top"><a id="a97b2f612540665cb560064b60eddc08d"></a>
-virtual const QMetaObject *&#160;</td><td class="memItemRight" valign="bottom"><b>metaObject</b> () const</td></tr>
-<tr class="separator:a97b2f612540665cb560064b60eddc08d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd0d9871e86228b95b49fe73bf038334"><td class="memItemLeft" align="right" valign="top"><a id="afd0d9871e86228b95b49fe73bf038334"></a>
-virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacast</b> (const char *)</td></tr>
-<tr class="separator:afd0d9871e86228b95b49fe73bf038334"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae19f190cddb02e4ed74503e62f331263"><td class="memItemLeft" align="right" valign="top"><a id="ae19f190cddb02e4ed74503e62f331263"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacall</b> (QMetaObject::Call, int, void **)</td></tr>
-<tr class="separator:ae19f190cddb02e4ed74503e62f331263"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a58173d704263fd4377542996df4d06"><td class="memItemLeft" align="right" valign="top"><a id="a4a58173d704263fd4377542996df4d06"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>DocumentPresenter</b> (const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, <a class="el" href="classscore_1_1_document_delegate_factory.html">DocumentDelegateFactory</a> &amp;, const <a class="el" href="classscore_1_1_document_model.html">DocumentModel</a> &amp;, <a class="el" href="classscore_1_1_document_view.html">DocumentView</a> &amp;, QObject *parent)</td></tr>
 <tr class="separator:a4a58173d704263fd4377542996df4d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,15 +125,6 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacall</b
 <tr class="memitem:a6253affdd8606c289cbcbede79f9b31f"><td class="memItemLeft" align="right" valign="top"><a id="a6253affdd8606c289cbcbede79f9b31f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setNewSelection</b> (const <a class="el" href="class_selection.html">Selection</a> &amp;old, const <a class="el" href="class_selection.html">Selection</a> &amp;s)</td></tr>
 <tr class="separator:a6253affdd8606c289cbcbede79f9b31f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a3791cbc37c99927e0d57b85dd5ec060e"><td class="memItemLeft" align="right" valign="top"><a id="a3791cbc37c99927e0d57b85dd5ec060e"></a>
-static QString&#160;</td><td class="memItemRight" valign="bottom"><b>tr</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:a3791cbc37c99927e0d57b85dd5ec060e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefbf7d2558b25d1b2294b0c013f23f1f"><td class="memItemLeft" align="right" valign="top"><a id="aefbf7d2558b25d1b2294b0c013f23f1f"></a>
-static QT_DEPRECATED QString&#160;</td><td class="memItemRight" valign="bottom"><b>trUtf8</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:aefbf7d2558b25d1b2294b0c013f23f1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -166,21 +137,10 @@ const <a class="el" href="classscore_1_1_document_model.html">DocumentModel</a> 
 <tr class="memitem:a0b7175c767f2c5f0dbf9276b8bcb1339"><td class="memItemLeft" align="right" valign="top"><a id="a0b7175c767f2c5f0dbf9276b8bcb1339"></a>
 <a class="el" href="classscore_1_1_document_delegate_presenter.html">DocumentDelegatePresenter</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_presenter</b> {}</td></tr>
 <tr class="separator:a0b7175c767f2c5f0dbf9276b8bcb1339"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a78a4b6eea67b74049be6c8715b946699"><td class="memItemLeft" align="right" valign="top"><a id="a78a4b6eea67b74049be6c8715b946699"></a>
-static const Q_OBJECT_NO_OVERRIDE_WARNING QMetaObject&#160;</td><td class="memItemRight" valign="bottom"><b>staticMetaObject</b></td></tr>
-<tr class="separator:a78a4b6eea67b74049be6c8715b946699"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:aa7a7261c104c1136b1734e433d11755f"><td class="memItemLeft" align="right" valign="top"><a id="aa7a7261c104c1136b1734e433d11755f"></a>
-struct&#160;</td><td class="memItemRight" valign="bottom"><b>w_internal::FriendHelper</b></td></tr>
-<tr class="separator:aa7a7261c104c1136b1734e433d11755f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_document_presenter_8hpp_source.html">DocumentPresenter.hpp</a></li>
+<li>DocumentPresenter.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

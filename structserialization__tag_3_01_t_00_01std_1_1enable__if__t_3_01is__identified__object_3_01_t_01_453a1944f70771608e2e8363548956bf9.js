@@ -1,4 +1,0 @@
-var structserialization__tag_3_01_t_00_01std_1_1enable__if__t_3_01is__identified__object_3_01_t_01_453a1944f70771608e2e8363548956bf9 =
-[
-    [ "type", "structserialization__tag_3_01_t_00_01std_1_1enable__if__t_3_01is__identified__object_3_01_t_01_453a1944f70771608e2e8363548956bf9.html#aa76ed95171c123f012594c8e0d91689c", null ]
-];

@@ -95,12 +95,7 @@ $(document).ready(function(){initNavTree('class_focus_dispatcher.html',''); init
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="class_focus_dispatcher-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">FocusDispatcher Class Reference</div>  </div>
@@ -113,47 +108,11 @@ Inheritance diagram for FocusDispatcher:</div>
   <img src="class_focus_dispatcher.png" alt=""/>
  </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a9cefaae281ddef688a9cc934f2bc2bc9"><td class="memItemLeft" align="right" valign="top"><a id="a9cefaae281ddef688a9cc934f2bc2bc9"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>W_BaseType</b> = std::remove_reference_t&lt; decltype(w_internal::getParentObjectHelper(&amp;W_ThisType::qt_metacast))&gt;</td></tr>
-<tr class="separator:a9cefaae281ddef688a9cc934f2bc2bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a823808e29a35ead6a5490f63e1626b57"><td class="memItemLeft" align="right" valign="top"><a id="a823808e29a35ead6a5490f63e1626b57"></a>
-virtual const QMetaObject *&#160;</td><td class="memItemRight" valign="bottom"><b>metaObject</b> () const</td></tr>
-<tr class="separator:a823808e29a35ead6a5490f63e1626b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c8c3ea5565238c8e72a1ecdf3d8316d"><td class="memItemLeft" align="right" valign="top"><a id="a2c8c3ea5565238c8e72a1ecdf3d8316d"></a>
-virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacast</b> (const char *)</td></tr>
-<tr class="separator:a2c8c3ea5565238c8e72a1ecdf3d8316d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3ed217413f5bf287ce38a0ac5e4452b"><td class="memItemLeft" align="right" valign="top"><a id="aa3ed217413f5bf287ce38a0ac5e4452b"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacall</b> (QMetaObject::Call, int, void **)</td></tr>
-<tr class="separator:aa3ed217413f5bf287ce38a0ac5e4452b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24437066106e4c74df66db82f0ab61c8"><td class="memItemLeft" align="right" valign="top"><a id="a24437066106e4c74df66db82f0ab61c8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>focus</b> (QPointer&lt; <a class="el" href="class_process_1_1_layer_presenter.html">Process::LayerPresenter</a> &gt; arg_1)</td></tr>
 <tr class="separator:a24437066106e4c74df66db82f0ab61c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ae7d69c03fe25ab4576f370ddad612da9"><td class="memItemLeft" align="right" valign="top"><a id="ae7d69c03fe25ab4576f370ddad612da9"></a>
-static QString&#160;</td><td class="memItemRight" valign="bottom"><b>tr</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:ae7d69c03fe25ab4576f370ddad612da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af632dbba3f29201deee72a48f0f7294b"><td class="memItemLeft" align="right" valign="top"><a id="af632dbba3f29201deee72a48f0f7294b"></a>
-static QT_DEPRECATED QString&#160;</td><td class="memItemRight" valign="bottom"><b>trUtf8</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:af632dbba3f29201deee72a48f0f7294b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a1ef969fcf533fea0732397fa686a9140"><td class="memItemLeft" align="right" valign="top"><a id="a1ef969fcf533fea0732397fa686a9140"></a>
-static const Q_OBJECT_NO_OVERRIDE_WARNING QMetaObject&#160;</td><td class="memItemRight" valign="bottom"><b>staticMetaObject</b></td></tr>
-<tr class="separator:a1ef969fcf533fea0732397fa686a9140"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:aa7a7261c104c1136b1734e433d11755f"><td class="memItemLeft" align="right" valign="top"><a id="aa7a7261c104c1136b1734e433d11755f"></a>
-struct&#160;</td><td class="memItemRight" valign="bottom"><b>w_internal::FriendHelper</b></td></tr>
-<tr class="separator:aa7a7261c104c1136b1734e433d11755f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_focus_dispatcher_8hpp_source.html">FocusDispatcher.hpp</a></li>

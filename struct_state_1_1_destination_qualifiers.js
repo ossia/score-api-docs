@@ -16,6 +16,5 @@ var struct_state_1_1_destination_qualifiers =
     [ "operator=", "struct_state_1_1_destination_qualifiers.html#a6cff8bf3ac18ea74dafbd750703a1bef", null ],
     [ "operator=", "struct_state_1_1_destination_qualifiers.html#a6ed863b439fa9afedc81be449c918afd", null ],
     [ "operator==", "struct_state_1_1_destination_qualifiers.html#a4ae717faf3cd39fd045540f08b07e00b", null ],
-    [ "qt_check_for_QGADGET_macro", "struct_state_1_1_destination_qualifiers.html#a3dff15969413ab1857da9898df7461fa", null ],
-    [ "w_internal::FriendHelper", "struct_state_1_1_destination_qualifiers.html#aa7a7261c104c1136b1734e433d11755f", null ]
+    [ "qt_check_for_QGADGET_macro", "struct_state_1_1_destination_qualifiers.html#a3dff15969413ab1857da9898df7461fa", null ]
 ];

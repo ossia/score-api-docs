@@ -467,7 +467,7 @@ $(document).ready(function(){initNavTree('score-plugin-engine_2_engine_2_node_2_
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;}</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Info&gt;</div>
-<div class="line"><a name="l00371"></a><span class="lineno"><a class="line" href="structis__custom__serialized_3_01_control_1_1_control_process_3_01_info_01_4_01_4.html">  371</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structis__custom__serialized.html">is_custom_serialized</a>&lt;Control::ControlProcess&lt;Info&gt;&gt; : std::true_type</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="keyword">struct </span>is_custom_serialized&lt;Control::ControlProcess&lt;Info&gt;&gt; : std::true_type</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;{</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;};</div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160; </div>
@@ -487,7 +487,7 @@ $(document).ready(function(){initNavTree('score-plugin-engine_2_engine_2_node_2_
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    {</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;      s.stream() &lt;&lt; *obj;</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    }</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    s.insertDelimiter();</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    s.<a class="code" href="class_data_stream_reader.html#ac0eb5c043b33cc07de11c45edd22db1b">insertDelimiter</a>();</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;  }</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160; </div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> writeTo(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp; s, model_type&amp; obj)</div>
@@ -495,7 +495,7 @@ $(document).ready(function(){initNavTree('score-plugin-engine_2_engine_2_node_2_
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <span class="keyword">using namespace </span>Control;</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160; </div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    Control::PortSetup::load&lt;Info&gt;(s, obj);</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    s.checkDelimiter();</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    s.<a class="code" href="class_data_stream_writer.html#ae5394117c6269533c28737b5092138a9">checkDelimiter</a>();</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;  }</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;};</div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160; </div>
@@ -539,8 +539,9 @@ $(document).ready(function(){initNavTree('score-plugin-engine_2_engine_2_node_2_
 <div class="ttc" id="aclass_process_1_1_value_inlet_html"><div class="ttname"><a href="class_process_1_1_value_inlet.html">Process::ValueInlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:442</div></div>
 <div class="ttc" id="aclass_object_key__k_html"><div class="ttname"><a href="class_object_key__k.html">ObjectKey_k</a></div><div class="ttdoc">Metadata to get the key part of ObjectIdentifier.</div><div class="ttdef"><b>Definition:</b> lib/score/tools/Metadata.hpp:36</div></div>
 <div class="ttc" id="anamespace_process_html_a592bb361ebf8fbc09c929c93208c71f1"><div class="ttname"><a href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">Process::ProcessFlags</a></div><div class="ttdeci">ProcessFlags</div><div class="ttdoc">Various settings for processes.</div><div class="ttdef"><b>Definition:</b> ProcessFlags.hpp:15</div></div>
+<div class="ttc" id="aclass_data_stream_writer_html_ae5394117c6269533c28737b5092138a9"><div class="ttname"><a href="class_data_stream_writer.html#ae5394117c6269533c28737b5092138a9">DataStreamWriter::checkDelimiter</a></div><div class="ttdeci">void checkDelimiter()</div><div class="ttdoc">checkDelimiter</div><div class="ttdef"><b>Definition:</b> DataStreamVisitor.cpp:37</div></div>
 <div class="ttc" id="astruct_control_1_1_port_setup_html"><div class="ttname"><a href="struct_control_1_1_port_setup.html">Control::PortSetup</a></div><div class="ttdef"><b>Definition:</b> score-plugin-engine/Engine/Node/Process.hpp:127</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:63</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:65</div></div>
 <div class="ttc" id="aclass_uuid_key_html"><div class="ttname"><a href="class_uuid_key.html">UuidKey&lt; Process::ProcessModel &gt;</a></div></div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition:</b> Identifier.hpp:56</div></div>
 <div class="ttc" id="aclass_data_stream_html"><div class="ttname"><a href="class_data_stream.html">DataStream</a></div><div class="ttdef"><b>Definition:</b> VisitorInterface.hpp:53</div></div>
@@ -557,10 +558,10 @@ $(document).ready(function(){initNavTree('score-plugin-engine_2_engine_2_node_2_
 <div class="ttc" id="astruct_process_1_1_descriptor_html"><div class="ttname"><a href="struct_process_1_1_descriptor.html">Process::Descriptor</a></div><div class="ttdef"><b>Definition:</b> ProcessMetadata.hpp:34</div></div>
 <div class="ttc" id="aclass_process_flags__k_html"><div class="ttname"><a href="class_process_flags__k.html">ProcessFlags_k</a></div><div class="ttdoc">Metadata to retrieve the ProcessFlags of a process.</div></div>
 <div class="ttc" id="aclass_j_s_o_n_writer_html"><div class="ttname"><a href="class_j_s_o_n_writer.html">JSONWriter</a></div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:390</div></div>
+<div class="ttc" id="aclass_data_stream_reader_html_ac0eb5c043b33cc07de11c45edd22db1b"><div class="ttname"><a href="class_data_stream_reader.html#ac0eb5c043b33cc07de11c45edd22db1b">DataStreamReader::insertDelimiter</a></div><div class="ttdeci">void insertDelimiter()</div><div class="ttdoc">insertDelimiter</div><div class="ttdef"><b>Definition:</b> DataStreamVisitor.hpp:308</div></div>
 <div class="ttc" id="aclass_process_1_1_midi_outlet_html"><div class="ttname"><a href="class_process_1_1_midi_outlet.html">Process::MidiOutlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:365</div></div>
 <div class="ttc" id="aclass_process_1_1_control_inlet_html"><div class="ttname"><a href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:192</div></div>
 <div class="ttc" id="astruct_t_serializer_html"><div class="ttname"><a href="struct_t_serializer.html">TSerializer</a></div><div class="ttdef"><b>Definition:</b> VisitorInterface.hpp:13</div></div>
-<div class="ttc" id="astructis__custom__serialized_html"><div class="ttname"><a href="structis__custom__serialized.html">is_custom_serialized</a></div><div class="ttdef"><b>Definition:</b> IsTemplate.hpp:102</div></div>
 <div class="ttc" id="aclass_category__k_html"><div class="ttname"><a href="class_category__k.html">Category_k</a></div><div class="ttdoc">Metadata to categorize objects: curves, audio, etc.</div><div class="ttdef"><b>Definition:</b> lib/score/tools/Metadata.hpp:61</div></div>
 <div class="ttc" id="aclass_process_1_1_control_outlet_html"><div class="ttname"><a href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:385</div></div>
 <!-- HTML footer for doxygen 1.8.8-->

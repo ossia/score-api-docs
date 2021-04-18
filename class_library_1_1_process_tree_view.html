@@ -95,12 +95,7 @@ $(document).ready(function(){initNavTree('class_library_1_1_process_tree_view.ht
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="class_library_1_1_process_tree_view-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Library::ProcessTreeView Class Reference</div>  </div>
@@ -113,53 +108,18 @@ Inheritance diagram for Library::ProcessTreeView:</div>
   <img src="class_library_1_1_process_tree_view.png" alt=""/>
  </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a2483d1ee739e8d3ca1918e9fdb82f8f0"><td class="memItemLeft" align="right" valign="top"><a id="a2483d1ee739e8d3ca1918e9fdb82f8f0"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>W_BaseType</b> = std::remove_reference_t&lt; decltype(w_internal::getParentObjectHelper(&amp;W_ThisType::qt_metacast))&gt;</td></tr>
-<tr class="separator:a2483d1ee739e8d3ca1918e9fdb82f8f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3a1a98a440c7a5d6a21a257048db31f1"><td class="memItemLeft" align="right" valign="top"><a id="a3a1a98a440c7a5d6a21a257048db31f1"></a>
-virtual const QMetaObject *&#160;</td><td class="memItemRight" valign="bottom"><b>metaObject</b> () const</td></tr>
-<tr class="separator:a3a1a98a440c7a5d6a21a257048db31f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66a5eeb85597d683b2ed06348e1a6f97"><td class="memItemLeft" align="right" valign="top"><a id="a66a5eeb85597d683b2ed06348e1a6f97"></a>
-virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacast</b> (const char *)</td></tr>
-<tr class="separator:a66a5eeb85597d683b2ed06348e1a6f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad64f928291aa6d3e54b5ea0044f4fdb2"><td class="memItemLeft" align="right" valign="top"><a id="ad64f928291aa6d3e54b5ea0044f4fdb2"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacall</b> (QMetaObject::Call, int, void **)</td></tr>
-<tr class="separator:ad64f928291aa6d3e54b5ea0044f4fdb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae21530b6adaa303b370d51d4b02c3c46"><td class="memItemLeft" align="right" valign="top"><a id="ae21530b6adaa303b370d51d4b02c3c46"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>selected</b> (std::optional&lt; <a class="el" href="struct_library_1_1_process_data.html">Library::ProcessData</a> &gt; p)</td></tr>
 <tr class="separator:ae21530b6adaa303b370d51d4b02c3c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa754ff48f256020ace61bfeec30e7ab"><td class="memItemLeft" align="right" valign="top"><a id="aaa754ff48f256020ace61bfeec30e7ab"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>doubleClicked</b> (<a class="el" href="struct_library_1_1_process_data.html">Library::ProcessData</a> p)</td></tr>
 <tr class="separator:aaa754ff48f256020ace61bfeec30e7ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aa1ab5ebf6f687a810f2d86248b2a8c31"><td class="memItemLeft" align="right" valign="top"><a id="aa1ab5ebf6f687a810f2d86248b2a8c31"></a>
-static QString&#160;</td><td class="memItemRight" valign="bottom"><b>tr</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:aa1ab5ebf6f687a810f2d86248b2a8c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab0c52096f83d725c06e54b7ce3522b6"><td class="memItemLeft" align="right" valign="top"><a id="aab0c52096f83d725c06e54b7ce3522b6"></a>
-static QT_DEPRECATED QString&#160;</td><td class="memItemRight" valign="bottom"><b>trUtf8</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:aab0c52096f83d725c06e54b7ce3522b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a9613fa8f27a9115d1b2d386ae73fe113"><td class="memItemLeft" align="right" valign="top"><a id="a9613fa8f27a9115d1b2d386ae73fe113"></a>
-static const Q_OBJECT_NO_OVERRIDE_WARNING QMetaObject&#160;</td><td class="memItemRight" valign="bottom"><b>staticMetaObject</b></td></tr>
-<tr class="separator:a9613fa8f27a9115d1b2d386ae73fe113"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:aa7a7261c104c1136b1734e433d11755f"><td class="memItemLeft" align="right" valign="top"><a id="aa7a7261c104c1136b1734e433d11755f"></a>
-struct&#160;</td><td class="memItemRight" valign="bottom"><b>w_internal::FriendHelper</b></td></tr>
-<tr class="separator:aa7a7261c104c1136b1734e433d11755f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_process_tree_view_8hpp_source.html">ProcessTreeView.hpp</a></li>
+<li>ProcessTreeView.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

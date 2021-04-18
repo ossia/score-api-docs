@@ -1,4 +1,0 @@
-var structw__internal_1_1_w___type_registery_3_01_media_1_1_sound_1_1_computed_waveform_01_4 =
-[
-    [ "registered", "structw__internal_1_1_w___type_registery_3_01_media_1_1_sound_1_1_computed_waveform_01_4.html#aa17b5cf3adb065b80f65ced12776cae2a1121c1bc4364cc012afec4509e7e39e5", null ]
-];

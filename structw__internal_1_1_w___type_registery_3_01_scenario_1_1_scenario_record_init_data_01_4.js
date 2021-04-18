@@ -1,4 +1,0 @@
-var structw__internal_1_1_w___type_registery_3_01_scenario_1_1_scenario_record_init_data_01_4 =
-[
-    [ "registered", "structw__internal_1_1_w___type_registery_3_01_scenario_1_1_scenario_record_init_data_01_4.html#acdcbd22c71a535b36e462663eced72faabcefc7c8a9bef113f906b70199e568ff", null ]
-];

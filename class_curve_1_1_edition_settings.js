@@ -1,14 +1,10 @@
 var class_curve_1_1_edition_settings =
 [
-    [ "W_BaseType", "class_curve_1_1_edition_settings.html#ae3d4e695ed97d7d7421570158e4350c1", null ],
-    [ "addPointBehaviour", "class_curve_1_1_edition_settings.html#ad53001a32324406672d1eaeb5dadab5d", null ],
+    [ "addPointBehaviour", "class_curve_1_1_edition_settings.html#a43cb0d049a2cb24632cdb5902f028ae7", null ],
     [ "addPointBehaviourChanged", "class_curve_1_1_edition_settings.html#a2923fe31a2fc6ae706227fdc702875b8", null ],
     [ "lockBetweenPoints", "class_curve_1_1_edition_settings.html#a38cf9c7d6a7fc4bd62e3c880b69a113e", null ],
     [ "lockBetweenPointsChanged", "class_curve_1_1_edition_settings.html#a9607d47bce7f49c49a65c317663bdb36", null ],
-    [ "metaObject", "class_curve_1_1_edition_settings.html#a22d6e3021c9c5183f489835993ad0771", null ],
-    [ "qt_metacall", "class_curve_1_1_edition_settings.html#a173978bee38a2cc935f0e5c7568d0f6f", null ],
-    [ "qt_metacast", "class_curve_1_1_edition_settings.html#abd95d745d173c8d06a0c86bb6eee040d", null ],
-    [ "removePointBehaviour", "class_curve_1_1_edition_settings.html#adde294e7d87c50f88c12c5def3107cce", null ],
+    [ "removePointBehaviour", "class_curve_1_1_edition_settings.html#ae970f9f9d9bcc4ed1a2ded38f03a1215", null ],
     [ "removePointBehaviourChanged", "class_curve_1_1_edition_settings.html#a2a33df7a7b34c1ada1e104d73fabffdc", null ],
     [ "setAddPointBehaviour", "class_curve_1_1_edition_settings.html#a84b436620669ab98a38eea30706a2b23", null ],
     [ "setLockBetweenPoints", "class_curve_1_1_edition_settings.html#aa0a4d7314dde339356085e508c955778", null ],
@@ -20,10 +16,9 @@ var class_curve_1_1_edition_settings =
     [ "stretchBothBoundsChanged", "class_curve_1_1_edition_settings.html#ae158e9f452b4c89b6a41a932786929f2", null ],
     [ "suppressOnOverlap", "class_curve_1_1_edition_settings.html#ae80448dbf7f942ed0f3d0218743a76b4", null ],
     [ "suppressOnOverlapChanged", "class_curve_1_1_edition_settings.html#a16aaf4ee20b7eb6de78e364c775fe4a7", null ],
-    [ "tool", "class_curve_1_1_edition_settings.html#adf20fe7741e2c3475980ffbead61d1ea", null ],
+    [ "tool", "class_curve_1_1_edition_settings.html#aab3bc8bdb8d3d3f64b689e8c1de30827", null ],
     [ "toolChanged", "class_curve_1_1_edition_settings.html#a8072cc19d6b8dd14ab441d6032ec3516", null ],
     [ "WWW_PROPERTY", "class_curve_1_1_edition_settings.html#a463f1fea4b934127225078e965d5307b", null ],
     [ "WWW_PROPERTY", "class_curve_1_1_edition_settings.html#aac683f5665414f23f7bf4b069f132f1d", null ],
-    [ "w_internal::FriendHelper", "class_curve_1_1_edition_settings.html#aa7a7261c104c1136b1734e433d11755f", null ],
     [ "w_state", "class_curve_1_1_edition_settings.html#a568c954a5d2d2ad9d859137ca8d83e05", null ]
 ];

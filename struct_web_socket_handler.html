@@ -95,13 +95,8 @@ $(document).ready(function(){initNavTree('struct_web_socket_handler.html',''); i
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="struct_web_socket_handler-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">WebSocketHandler Struct Reference</div>  </div>
@@ -114,26 +109,8 @@ Inheritance diagram for WebSocketHandler:</div>
   <img src="struct_web_socket_handler.png" alt=""/>
  </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a625e6825d32a7915e18be63f1d45e1d8"><td class="memItemLeft" align="right" valign="top"><a id="a625e6825d32a7915e18be63f1d45e1d8"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>W_ThisType</b> = <a class="el" href="struct_web_socket_handler.html">WebSocketHandler</a></td></tr>
-<tr class="separator:a625e6825d32a7915e18be63f1d45e1d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7eb72f3c331d54a03b22014155abc41"><td class="memItemLeft" align="right" valign="top"><a id="ae7eb72f3c331d54a03b22014155abc41"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>W_BaseType</b> = std::remove_reference_t&lt; decltype(w_internal::getParentObjectHelper(&amp;W_ThisType::qt_metacast))&gt;</td></tr>
-<tr class="separator:ae7eb72f3c331d54a03b22014155abc41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af8cf23866cdd5241e9bd43cee23b2258"><td class="memItemLeft" align="right" valign="top"><a id="af8cf23866cdd5241e9bd43cee23b2258"></a>
-virtual const QMetaObject *&#160;</td><td class="memItemRight" valign="bottom"><b>metaObject</b> () const</td></tr>
-<tr class="separator:af8cf23866cdd5241e9bd43cee23b2258"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a8cd266c5bb3fdb52b0eba92bb55175"><td class="memItemLeft" align="right" valign="top"><a id="a8a8cd266c5bb3fdb52b0eba92bb55175"></a>
-virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacast</b> (const char *)</td></tr>
-<tr class="separator:a8a8cd266c5bb3fdb52b0eba92bb55175"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95a18d57c1739a18854eea29619d6d6b"><td class="memItemLeft" align="right" valign="top"><a id="a95a18d57c1739a18854eea29619d6d6b"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacall</b> (QMetaObject::Call, int, void **)</td></tr>
-<tr class="separator:a95a18d57c1739a18854eea29619d6d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f7e70567761fc13103502b37ff75e9e"><td class="memItemLeft" align="right" valign="top"><a id="a4f7e70567761fc13103502b37ff75e9e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>processTextMessage</b> (const QString &amp;message)</td></tr>
 <tr class="separator:a4f7e70567761fc13103502b37ff75e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,39 +133,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>on_stop</b> ()</td></
 void&#160;</td><td class="memItemRight" valign="bottom"><b>on_addressChanged</b> (QString addr)</td></tr>
 <tr class="separator:ae8e5e2da551316f9bd55a72c16f69c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a51a86d2cd518511b18e607a194f3e204"><td class="memTemplParams" colspan="2"><a id="a51a86d2cd518511b18e607a194f3e204"></a>
-template&lt;typename W_Flag &gt; </td></tr>
-<tr class="memitem:a51a86d2cd518511b18e607a194f3e204"><td class="memTemplItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memTemplItemRight" valign="bottom"><b>w_flagAlias</b> (W_Flag)</td></tr>
-<tr class="separator:a51a86d2cd518511b18e607a194f3e204"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d2574538c3c2cef6e9be359bd9c6e54"><td class="memItemLeft" align="right" valign="top"><a id="a1d2574538c3c2cef6e9be359bd9c6e54"></a>
-static QString&#160;</td><td class="memItemRight" valign="bottom"><b>tr</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:a1d2574538c3c2cef6e9be359bd9c6e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8e2a93a325941ae848e90ee7ea9ca22"><td class="memItemLeft" align="right" valign="top"><a id="ad8e2a93a325941ae848e90ee7ea9ca22"></a>
-static QT_DEPRECATED QString&#160;</td><td class="memItemRight" valign="bottom"><b>trUtf8</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:ad8e2a93a325941ae848e90ee7ea9ca22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a4f3bfb9055de7e5501c0b02b91dc8e9c"><td class="memItemLeft" align="right" valign="top"><a id="a4f3bfb9055de7e5501c0b02b91dc8e9c"></a>
 <a class="el" href="class_trigger_list.html">TriggerList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_activeSyncs</b></td></tr>
 <tr class="separator:a4f3bfb9055de7e5501c0b02b91dc8e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a18d5d879975c09dac148e7fb92a078ff"><td class="memItemLeft" align="right" valign="top"><a id="a18d5d879975c09dac148e7fb92a078ff"></a>
-static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>W_UnscopedName</b> = w_internal::viewLiteral(&quot;WebSocketHandler&quot;)</td></tr>
-<tr class="separator:a18d5d879975c09dac148e7fb92a078ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9badec8b51cc609f7d1c31adab6abe93"><td class="memItemLeft" align="right" valign="top"><a id="a9badec8b51cc609f7d1c31adab6abe93"></a>
-static const Q_OBJECT_NO_OVERRIDE_WARNING QMetaObject&#160;</td><td class="memItemRight" valign="bottom"><b>staticMetaObject</b></td></tr>
-<tr class="separator:a9badec8b51cc609f7d1c31adab6abe93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:aa7a7261c104c1136b1734e433d11755f"><td class="memItemLeft" align="right" valign="top"><a id="aa7a7261c104c1136b1734e433d11755f"></a>
-struct&#160;</td><td class="memItemRight" valign="bottom"><b>w_internal::FriendHelper</b></td></tr>
-<tr class="separator:aa7a7261c104c1136b1734e433d11755f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_remote_application_8hpp_source.html">RemoteApplication.hpp</a></li>

@@ -95,12 +95,7 @@ $(document).ready(function(){initNavTree('class_jit_1_1_addon_compiler.html','')
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="class_jit_1_1_addon_compiler-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Jit::AddonCompiler Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -118,23 +113,8 @@ Inheritance diagram for Jit::AddonCompiler:</div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Compiles jobs asynchronously. </p>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a343ec29f640b771b28661038c8f87e66"><td class="memItemLeft" align="right" valign="top"><a id="a343ec29f640b771b28661038c8f87e66"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>W_BaseType</b> = std::remove_reference_t&lt; decltype(w_internal::getParentObjectHelper(&amp;W_ThisType::qt_metacast))&gt;</td></tr>
-<tr class="separator:a343ec29f640b771b28661038c8f87e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a036945c502b893061e03d68eab6c8a0d"><td class="memItemLeft" align="right" valign="top"><a id="a036945c502b893061e03d68eab6c8a0d"></a>
-virtual const QMetaObject *&#160;</td><td class="memItemRight" valign="bottom"><b>metaObject</b> () const</td></tr>
-<tr class="separator:a036945c502b893061e03d68eab6c8a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e10fd8bc980ef227df237a860b2b3a7"><td class="memItemLeft" align="right" valign="top"><a id="a5e10fd8bc980ef227df237a860b2b3a7"></a>
-virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacast</b> (const char *)</td></tr>
-<tr class="separator:a5e10fd8bc980ef227df237a860b2b3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6974222069d4a0368a4b3dacbc8ed564"><td class="memItemLeft" align="right" valign="top"><a id="a6974222069d4a0368a4b3dacbc8ed564"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacall</b> (QMetaObject::Call, int, void **)</td></tr>
-<tr class="separator:a6974222069d4a0368a4b3dacbc8ed564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a603af7b3d24ad55e9abe39bdbbcc03d6"><td class="memItemLeft" align="right" valign="top"><a id="a603af7b3d24ad55e9abe39bdbbcc03d6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>submitJob</b> (const std::string &amp;id, std::string cpp, std::vector&lt; std::string &gt; flags, <a class="el" href="struct_jit_1_1_compiler_options.html">CompilerOptions</a> opts)</td></tr>
 <tr class="separator:a603af7b3d24ad55e9abe39bdbbcc03d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,27 +124,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>jobCompleted</b> (<a 
 <tr class="memitem:a1224d9a05d35294b949e64e375a7776b"><td class="memItemLeft" align="right" valign="top"><a id="a1224d9a05d35294b949e64e375a7776b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>on_job</b> (std::string id, std::string cpp, std::vector&lt; std::string &gt; flags, <a class="el" href="struct_jit_1_1_compiler_options.html">CompilerOptions</a> opts)</td></tr>
 <tr class="separator:a1224d9a05d35294b949e64e375a7776b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab3ff8d94ed682c6541b684034b83b005"><td class="memItemLeft" align="right" valign="top"><a id="ab3ff8d94ed682c6541b684034b83b005"></a>
-static QString&#160;</td><td class="memItemRight" valign="bottom"><b>tr</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:ab3ff8d94ed682c6541b684034b83b005"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d19c9253124a1d8257d5c6bcd594ed3"><td class="memItemLeft" align="right" valign="top"><a id="a3d19c9253124a1d8257d5c6bcd594ed3"></a>
-static QT_DEPRECATED QString&#160;</td><td class="memItemRight" valign="bottom"><b>trUtf8</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:a3d19c9253124a1d8257d5c6bcd594ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:af3350247904a81d110c5b1747fba13fb"><td class="memItemLeft" align="right" valign="top"><a id="af3350247904a81d110c5b1747fba13fb"></a>
-static const Q_OBJECT_NO_OVERRIDE_WARNING QMetaObject&#160;</td><td class="memItemRight" valign="bottom"><b>staticMetaObject</b></td></tr>
-<tr class="separator:af3350247904a81d110c5b1747fba13fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:aa7a7261c104c1136b1734e433d11755f"><td class="memItemLeft" align="right" valign="top"><a id="aa7a7261c104c1136b1734e433d11755f"></a>
-struct&#160;</td><td class="memItemRight" valign="bottom"><b>w_internal::FriendHelper</b></td></tr>
-<tr class="separator:aa7a7261c104c1136b1734e433d11755f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_addon_compiler_8hpp_source.html">AddonCompiler.hpp</a></li>

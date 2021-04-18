@@ -1,4 +1,0 @@
-var structw__internal_1_1_w___type_registery_3_01_curve_1_1_add_point_behaviour_01_4 =
-[
-    [ "registered", "structw__internal_1_1_w___type_registery_3_01_curve_1_1_add_point_behaviour_01_4.html#aa87934b32ead86e34cc132e34b8e8180a71ae725606fc22ddea2241ffcc1378bc", null ]
-];

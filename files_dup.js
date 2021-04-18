@@ -1272,7 +1272,6 @@ var files_dup =
     [ "VisitorCommon.hpp", "_visitor_common_8hpp.html", "_visitor_common_8hpp" ],
     [ "VisitorInterface.hpp", "_visitor_interface_8hpp_source.html", null ],
     [ "VisitorTags.hpp", "_visitor_tags_8hpp_source.html", null ],
-    [ "vst-compat.hpp", "vst-compat_8hpp_source.html", null ],
     [ "WASAPIPortAudioInterface.hpp", "_w_a_s_a_p_i_port_audio_interface_8hpp_source.html", null ],
     [ "WaveformComputer.hpp", "_waveform_computer_8hpp_source.html", null ],
     [ "WDMKSPortAudioInterface.hpp", "_w_d_m_k_s_port_audio_interface_8hpp_source.html", null ],

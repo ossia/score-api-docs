@@ -95,12 +95,7 @@ $(document).ready(function(){initNavTree('class_selectable.html',''); initResiza
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="class_selectable-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Selectable Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -119,23 +114,8 @@ Inheritance diagram for Selectable:</div>
 <div class="textblock"><p>The <a class="el" href="class_selectable.html" title="The Selectable class.">Selectable</a> class. </p>
 <p>A component that allows a class to be selected (or not). </p>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a02129e5412349329641de3091f52e209"><td class="memItemLeft" align="right" valign="top"><a id="a02129e5412349329641de3091f52e209"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>W_BaseType</b> = std::remove_reference_t&lt; decltype(w_internal::getParentObjectHelper(&amp;W_ThisType::qt_metacast))&gt;</td></tr>
-<tr class="separator:a02129e5412349329641de3091f52e209"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abe87b1addefc7fb3e6407d417a2318b4"><td class="memItemLeft" align="right" valign="top"><a id="abe87b1addefc7fb3e6407d417a2318b4"></a>
-virtual const QMetaObject *&#160;</td><td class="memItemRight" valign="bottom"><b>metaObject</b> () const</td></tr>
-<tr class="separator:abe87b1addefc7fb3e6407d417a2318b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cdb8cc3fdf4a279c3bc166bb8f936e5"><td class="memItemLeft" align="right" valign="top"><a id="a5cdb8cc3fdf4a279c3bc166bb8f936e5"></a>
-virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacast</b> (const char *)</td></tr>
-<tr class="separator:a5cdb8cc3fdf4a279c3bc166bb8f936e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af696819838ee4eee2fe52e2d8960dd2d"><td class="memItemLeft" align="right" valign="top"><a id="af696819838ee4eee2fe52e2d8960dd2d"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacall</b> (QMetaObject::Call, int, void **)</td></tr>
-<tr class="separator:af696819838ee4eee2fe52e2d8960dd2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a041b98e407e91ee7e20d1b13e49c9177"><td class="memItemLeft" align="right" valign="top"><a id="a041b98e407e91ee7e20d1b13e49c9177"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> () const noexcept</td></tr>
 <tr class="separator:a041b98e407e91ee7e20d1b13e49c9177"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,27 +125,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set</b> (bool b)</td>
 <tr class="memitem:a7813d5410d0154827f58630179ecdd69"><td class="memItemLeft" align="right" valign="top"><a id="a7813d5410d0154827f58630179ecdd69"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>changed</b> (bool b)</td></tr>
 <tr class="separator:a7813d5410d0154827f58630179ecdd69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a5b6206adbe9c56573eda4fc8821682cd"><td class="memItemLeft" align="right" valign="top"><a id="a5b6206adbe9c56573eda4fc8821682cd"></a>
-static QString&#160;</td><td class="memItemRight" valign="bottom"><b>tr</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:a5b6206adbe9c56573eda4fc8821682cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b2c6565392d3a61f185a5e3118ccfd2"><td class="memItemLeft" align="right" valign="top"><a id="a2b2c6565392d3a61f185a5e3118ccfd2"></a>
-static QT_DEPRECATED QString&#160;</td><td class="memItemRight" valign="bottom"><b>trUtf8</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:a2b2c6565392d3a61f185a5e3118ccfd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:af0a1d2214074fccd32b4d4dc358b367d"><td class="memItemLeft" align="right" valign="top"><a id="af0a1d2214074fccd32b4d4dc358b367d"></a>
-static const Q_OBJECT_NO_OVERRIDE_WARNING QMetaObject&#160;</td><td class="memItemRight" valign="bottom"><b>staticMetaObject</b></td></tr>
-<tr class="separator:af0a1d2214074fccd32b4d4dc358b367d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:aa7a7261c104c1136b1734e433d11755f"><td class="memItemLeft" align="right" valign="top"><a id="aa7a7261c104c1136b1734e433d11755f"></a>
-struct&#160;</td><td class="memItemRight" valign="bottom"><b>w_internal::FriendHelper</b></td></tr>
-<tr class="separator:aa7a7261c104c1136b1734e433d11755f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_selectable_8hpp_source.html">Selectable.hpp</a></li>

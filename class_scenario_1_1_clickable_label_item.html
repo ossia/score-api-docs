@@ -95,13 +95,9 @@ $(document).ready(function(){initNavTree('class_scenario_1_1_clickable_label_ite
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="class_scenario_1_1_clickable_label_item-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Scenario::ClickableLabelItem Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -119,24 +115,12 @@ Inheritance diagram for Scenario::ClickableLabelItem:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aa3a11cc8e653a9af753b98b3a74bfaa8"><td class="memItemLeft" align="right" valign="top"><a id="aa3a11cc8e653a9af753b98b3a74bfaa8"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>W_BaseType</b> = std::remove_reference_t&lt; decltype(w_internal::getParentObjectHelper(&amp;W_ThisType::qt_metacast))&gt;</td></tr>
-<tr class="separator:aa3a11cc8e653a9af753b98b3a74bfaa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac87e920aa36ba80872c2e2330aa51082"><td class="memItemLeft" align="right" valign="top"><a id="ac87e920aa36ba80872c2e2330aa51082"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ClickHandler</b> = std::function&lt; void(<a class="el" href="class_scenario_1_1_clickable_label_item.html">ClickableLabelItem</a> *)&gt;</td></tr>
 <tr class="separator:ac87e920aa36ba80872c2e2330aa51082"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abc697501c7e6f75a90a5804d412b3566"><td class="memItemLeft" align="right" valign="top"><a id="abc697501c7e6f75a90a5804d412b3566"></a>
-virtual const QMetaObject *&#160;</td><td class="memItemRight" valign="bottom"><b>metaObject</b> () const</td></tr>
-<tr class="separator:abc697501c7e6f75a90a5804d412b3566"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a928af79898c4467e47da792616d5e412"><td class="memItemLeft" align="right" valign="top"><a id="a928af79898c4467e47da792616d5e412"></a>
-virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacast</b> (const char *)</td></tr>
-<tr class="separator:a928af79898c4467e47da792616d5e412"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d97113274c95cfa1750c965c4537533"><td class="memItemLeft" align="right" valign="top"><a id="a1d97113274c95cfa1750c965c4537533"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacall</b> (QMetaObject::Call, int, void **)</td></tr>
-<tr class="separator:a1d97113274c95cfa1750c965c4537533"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad15c2224b3b095d793653ef7f359c141"><td class="memItemLeft" align="right" valign="top"><a id="ad15c2224b3b095d793653ef7f359c141"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ClickableLabelItem</b> (<a class="el" href="classscore_1_1_model_metadata.html">score::ModelMetadata</a> &amp;interval, ClickHandler &amp;&amp;onClick, const QString &amp;text, QGraphicsItem *parent)</td></tr>
 <tr class="separator:ad15c2224b3b095d793653ef7f359c141"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,21 +156,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setText</b> (std::str
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setColor</b> (const <a class="el" href="structscore_1_1_brush_set.html">score::BrushSet</a> &amp;c)</td></tr>
 <tr class="separator:ab718ad404ae4a5e0055d9dde275af5de inherit pub_methods_classscore_1_1_simple_text_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac5ca9fc29280832b8694643ca5647fff"><td class="memItemLeft" align="right" valign="top"><a id="ac5ca9fc29280832b8694643ca5647fff"></a>
-static QString&#160;</td><td class="memItemRight" valign="bottom"><b>tr</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:ac5ca9fc29280832b8694643ca5647fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e75a49a0737b389087112901d2ed7ff"><td class="memItemLeft" align="right" valign="top"><a id="a5e75a49a0737b389087112901d2ed7ff"></a>
-static QT_DEPRECATED QString&#160;</td><td class="memItemRight" valign="bottom"><b>trUtf8</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:a5e75a49a0737b389087112901d2ed7ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:aa34d3b0230dd75c332a336ca3fec0197"><td class="memItemLeft" align="right" valign="top"><a id="aa34d3b0230dd75c332a336ca3fec0197"></a>
-static const Q_OBJECT_NO_OVERRIDE_WARNING QMetaObject&#160;</td><td class="memItemRight" valign="bottom"><b>staticMetaObject</b></td></tr>
-<tr class="separator:aa34d3b0230dd75c332a336ca3fec0197"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a1d79a4fd5e3788af716357f9521df414"><td class="memItemLeft" align="right" valign="top"><a id="a1d79a4fd5e3788af716357f9521df414"></a>
@@ -198,15 +167,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>hoverEnterEvent</b> (
 <tr class="memitem:a30536fdb6148778102a833207c5ec5be"><td class="memItemLeft" align="right" valign="top"><a id="a30536fdb6148778102a833207c5ec5be"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>hoverLeaveEvent</b> (QGraphicsSceneHoverEvent *event) override</td></tr>
 <tr class="separator:a30536fdb6148778102a833207c5ec5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:aa7a7261c104c1136b1734e433d11755f"><td class="memItemLeft" align="right" valign="top"><a id="aa7a7261c104c1136b1734e433d11755f"></a>
-struct&#160;</td><td class="memItemRight" valign="bottom"><b>w_internal::FriendHelper</b></td></tr>
-<tr class="separator:aa7a7261c104c1136b1734e433d11755f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_clickable_label_item_8hpp_source.html">ClickableLabelItem.hpp</a></li>
+<li>ClickableLabelItem.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -95,11 +95,7 @@ $(document).ready(function(){initNavTree('class_j_s_1_1_inlet.html',''); initRes
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_j_s_1_1_inlet-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -113,23 +109,8 @@ Inheritance diagram for JS::Inlet:</div>
   <img src="class_j_s_1_1_inlet.png" alt=""/>
  </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a68416e14e307cdbd723f0e18fbd34690"><td class="memItemLeft" align="right" valign="top"><a id="a68416e14e307cdbd723f0e18fbd34690"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>W_BaseType</b> = std::remove_reference_t&lt; decltype(w_internal::getParentObjectHelper(&amp;W_ThisType::qt_metacast))&gt;</td></tr>
-<tr class="separator:a68416e14e307cdbd723f0e18fbd34690"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a87bfd3e4070d978c4c625731a099fe9b"><td class="memItemLeft" align="right" valign="top"><a id="a87bfd3e4070d978c4c625731a099fe9b"></a>
-virtual const QMetaObject *&#160;</td><td class="memItemRight" valign="bottom"><b>metaObject</b> () const</td></tr>
-<tr class="separator:a87bfd3e4070d978c4c625731a099fe9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab21cc1ac8bfd6410a6528d754394939"><td class="memItemLeft" align="right" valign="top"><a id="aab21cc1ac8bfd6410a6528d754394939"></a>
-virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacast</b> (const char *)</td></tr>
-<tr class="separator:aab21cc1ac8bfd6410a6528d754394939"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23497f641ad1ad3a7bf1b7651f99aec5"><td class="memItemLeft" align="right" valign="top"><a id="a23497f641ad1ad3a7bf1b7651f99aec5"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacall</b> (QMetaObject::Call, int, void **)</td></tr>
-<tr class="separator:a23497f641ad1ad3a7bf1b7651f99aec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27d0cfa90357d469e58a0a01c17bf661"><td class="memItemLeft" align="right" valign="top"><a id="a27d0cfa90357d469e58a0a01c17bf661"></a>
 virtual <a class="el" href="class_process_1_1_inlet.html">Process::Inlet</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>make</b> (<a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="class_process_1_1_port.html">Process::Port</a> &gt; &amp;&amp;id, QObject *)=0</td></tr>
 <tr class="separator:a27d0cfa90357d469e58a0a01c17bf661"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,28 +127,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setAddress</b> (const
 void&#160;</td><td class="memItemRight" valign="bottom"><b>addressChanged</b> (const QString &amp;v) W_SIGNAL(addressChanged</td></tr>
 <tr class="separator:a3b75ae6754beb776ac5a54971ed4bfc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a639405a4f816b541aae4b91ff6bbada4"><td class="memItemLeft" align="right" valign="top"><a id="a639405a4f816b541aae4b91ff6bbada4"></a>
-static QString&#160;</td><td class="memItemRight" valign="bottom"><b>tr</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:a639405a4f816b541aae4b91ff6bbada4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04714467f99406efc0e14ef805fd0a0b"><td class="memItemLeft" align="right" valign="top"><a id="a04714467f99406efc0e14ef805fd0a0b"></a>
-static QT_DEPRECATED QString&#160;</td><td class="memItemRight" valign="bottom"><b>trUtf8</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:a04714467f99406efc0e14ef805fd0a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a9f198c8a1e11f3f7e2b1834a355c6c71"><td class="memItemLeft" align="right" valign="top"><a id="a9f198c8a1e11f3f7e2b1834a355c6c71"></a>
-static const Q_OBJECT_NO_OVERRIDE_WARNING QMetaObject&#160;</td><td class="memItemRight" valign="bottom"><b>staticMetaObject</b></td></tr>
-<tr class="separator:a9f198c8a1e11f3f7e2b1834a355c6c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:aa7a7261c104c1136b1734e433d11755f"><td class="memItemLeft" align="right" valign="top"><a id="aa7a7261c104c1136b1734e433d11755f"></a>
-struct&#160;</td><td class="memItemRight" valign="bottom"><b>w_internal::FriendHelper</b></td></tr>
-<tr class="separator:aa7a7261c104c1136b1734e433d11755f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64e2c206c7cb59d0e09541e4990f73a2"><td class="memItemLeft" align="right" valign="top"><a id="a64e2c206c7cb59d0e09541e4990f73a2"></a>
-void v constexpr friend auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::PropertyStateTag, <a class="el" href="class_j_s_1_1_inlet.html">W_ThisType</a> ** &gt;&gt;, w_internal::PropertyStateTag, <a class="el" href="class_j_s_1_1_inlet.html">W_ThisType</a> **) -&gt; decltype((w_internal::makeMetaPropertyInfo&lt; QString &gt;(w_internal::viewLiteral(&quot;address&quot;), w_internal::viewLiteral(&quot;@-W_MACRO_REMOVEPAREN( QString )&quot;), &amp;W_ThisType::address, &amp;W_ThisType::setAddress, W_Notify, &amp;W_ThisType::addressChanged)))</td></tr>
+void v constexpr friend auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::PropertyStateTag, W_ThisType ** &gt;&gt;, w_internal::PropertyStateTag, W_ThisType **) -&gt; decltype((w_internal::makeMetaPropertyInfo&lt; QString &gt;(w_internal::viewLiteral(&quot;address&quot;), w_internal::viewLiteral(&quot;@-W_MACRO_REMOVEPAREN( QString )&quot;), &amp;W_ThisType::address, &amp;W_ThisType::setAddress, W_Notify, &amp;W_ThisType::addressChanged)))</td></tr>
 <tr class="separator:a64e2c206c7cb59d0e09541e4990f73a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>

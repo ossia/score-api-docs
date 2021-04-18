@@ -1,6 +1,6 @@
 var class_dataflow_1_1_audio_settings_widget =
 [
-    [ "AudioSettingsWidget", "class_dataflow_1_1_audio_settings_widget.html#a407e6fe5aaa0af6edb8a56b8a983cad7", null ],
-    [ "getSettings", "class_dataflow_1_1_audio_settings_widget.html#a822c1b5cca04f670b28481468c8a409b", null ],
-    [ "setSettings", "class_dataflow_1_1_audio_settings_widget.html#a3fe2a7ba0a940dd7cee81297b3afda82", null ]
+    [ "AudioSettingsWidget", "class_dataflow_1_1_audio_settings_widget.html#a95cf99b56a0cee5dc90fc2fb28cfe04b", null ],
+    [ "getSettings", "class_dataflow_1_1_audio_settings_widget.html#acd9e8df28e5cc72b9a84aa40680525ff", null ],
+    [ "setSettings", "class_dataflow_1_1_audio_settings_widget.html#ae2911f58b0ec82135a040c0ff7bb5f10", null ]
 ];

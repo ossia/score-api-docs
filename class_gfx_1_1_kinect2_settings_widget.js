@@ -1,6 +1,6 @@
 var class_gfx_1_1_kinect2_settings_widget =
 [
-    [ "Kinect2SettingsWidget", "class_gfx_1_1_kinect2_settings_widget.html#aa84e817c6f99f681955432eef71baa7b", null ],
-    [ "getSettings", "class_gfx_1_1_kinect2_settings_widget.html#adb3d60d32aca1bd147045ee55df3f9d8", null ],
-    [ "setSettings", "class_gfx_1_1_kinect2_settings_widget.html#acf43d4f494756bc76fce83081fa0e3d8", null ]
+    [ "Kinect2SettingsWidget", "class_gfx_1_1_kinect2_settings_widget.html#a8c0459dab69e6f926b9e5c6d8fee6287", null ],
+    [ "getSettings", "class_gfx_1_1_kinect2_settings_widget.html#aa5283353cedb88a4e3e9f8f701e2e394", null ],
+    [ "setSettings", "class_gfx_1_1_kinect2_settings_widget.html#ac10ac90d7f3b468136ce7081b82a66cd", null ]
 ];

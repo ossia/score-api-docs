@@ -25,7 +25,6 @@ var class_vec4f_value_type =
     [ "x", "class_vec4f_value_type.html#a1a00309021a23fc75ad868f61e3c4cfc", null ],
     [ "y", "class_vec4f_value_type.html#afa1e6f56eece7aefbba1a9d246a9aefb", null ],
     [ "z", "class_vec4f_value_type.html#aa8740da88b54e76a29c74b992212f9e2", null ],
-    [ "w_internal::FriendHelper", "class_vec4f_value_type.html#aa7a7261c104c1136b1734e433d11755f", null ],
     [ "w_state", "class_vec4f_value_type.html#afe26d19852b49b9cf499a45962218f06", null ],
     [ "w_state", "class_vec4f_value_type.html#a41aaf55d7568fa58406ad0f1511304ec", null ],
     [ "w_state", "class_vec4f_value_type.html#a7de5f7e0d9043bf2eaa61fe8dcbd870b", null ],

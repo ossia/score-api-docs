@@ -37,7 +37,6 @@ var class_token_request_value_type =
     [ "WWW_PROPERTY", "class_token_request_value_type.html#a9a0123596149c3079c31257211ad4ee0", null ],
     [ "WWW_PROPERTY", "class_token_request_value_type.html#a234a8f64ef0d04f74511bcb81e8c2975", null ],
     [ "WWWWWWWW_PROPERTY", "class_token_request_value_type.html#a117ac1a8c57d647a28b3614237c19cac", null ],
-    [ "w_internal::FriendHelper", "class_token_request_value_type.html#aa7a7261c104c1136b1734e433d11755f", null ],
     [ "w_state", "class_token_request_value_type.html#a76bfb4f162511b6116290a42806d73e0", null ],
     [ "w_state", "class_token_request_value_type.html#a5cdd7b7114186b32753fc74d34e5c32f", null ],
     [ "w_state", "class_token_request_value_type.html#a9d360200d43c2b7d75daf8f4f9b0b557", null ],

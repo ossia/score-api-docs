@@ -1,4 +1,0 @@
-var structw__internal_1_1_w___type_registery_3_01_protocols_1_1_joystick_specific_settings_01_4 =
-[
-    [ "registered", "structw__internal_1_1_w___type_registery_3_01_protocols_1_1_joystick_specific_settings_01_4.html#a9a834386c22a1ec632e675db2699f052a073c7c2fa81535b0e202a4129babb2d7", null ]
-];

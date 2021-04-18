@@ -95,12 +95,7 @@ $(document).ready(function(){initNavTree('class_scenario_1_1_object_item_model.h
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="class_scenario_1_1_object_item_model-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Scenario::ObjectItemModel Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -113,23 +108,8 @@ Inheritance diagram for Scenario::ObjectItemModel:</div>
   <img src="class_scenario_1_1_object_item_model.png" alt=""/>
  </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a60d47134ad5311b2b5313bf79af6ffd6"><td class="memItemLeft" align="right" valign="top"><a id="a60d47134ad5311b2b5313bf79af6ffd6"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>W_BaseType</b> = std::remove_reference_t&lt; decltype(w_internal::getParentObjectHelper(&amp;W_ThisType::qt_metacast))&gt;</td></tr>
-<tr class="separator:a60d47134ad5311b2b5313bf79af6ffd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab845962903b0f56083c3f91833bcde61"><td class="memItemLeft" align="right" valign="top"><a id="ab845962903b0f56083c3f91833bcde61"></a>
-virtual const QMetaObject *&#160;</td><td class="memItemRight" valign="bottom"><b>metaObject</b> () const</td></tr>
-<tr class="separator:ab845962903b0f56083c3f91833bcde61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47a68322c7cd150689851ab684287eeb"><td class="memItemLeft" align="right" valign="top"><a id="a47a68322c7cd150689851ab684287eeb"></a>
-virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacast</b> (const char *)</td></tr>
-<tr class="separator:a47a68322c7cd150689851ab684287eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b1675f30a5ad8ec5f6f812147516c3b"><td class="memItemLeft" align="right" valign="top"><a id="a7b1675f30a5ad8ec5f6f812147516c3b"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>qt_metacall</b> (QMetaObject::Call, int, void **)</td></tr>
-<tr class="separator:a7b1675f30a5ad8ec5f6f812147516c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a095a12f1e2ce1f0a7f02386a6048d724"><td class="memItemLeft" align="right" valign="top"><a id="a095a12f1e2ce1f0a7f02386a6048d724"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ObjectItemModel</b> (const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, QObject *parent)</td></tr>
 <tr class="separator:a095a12f1e2ce1f0a7f02386a6048d724"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,9 +140,9 @@ Qt::ItemFlags&#160;</td><td class="memItemRight" valign="bottom"><b>flags</b> (c
 <tr class="memitem:a773aedb9def2b6a42a0b5029667df783"><td class="memItemLeft" align="right" valign="top"><a id="a773aedb9def2b6a42a0b5029667df783"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>setData</b> (const QModelIndex &amp;index, const QVariant &amp;value, int role) override</td></tr>
 <tr class="separator:a773aedb9def2b6a42a0b5029667df783"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae490d7388fc2385c43c3396822cefbf2"><td class="memItemLeft" align="right" valign="top"><a id="ae490d7388fc2385c43c3396822cefbf2"></a>
+<tr class="memitem:a8e6e303cdfe4a100bf9ae706006e2db4"><td class="memItemLeft" align="right" valign="top"><a id="a8e6e303cdfe4a100bf9ae706006e2db4"></a>
 QMimeData *&#160;</td><td class="memItemRight" valign="bottom"><b>mimeData</b> (const QModelIndexList &amp;indexes) const override</td></tr>
-<tr class="separator:ae490d7388fc2385c43c3396822cefbf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a8e6e303cdfe4a100bf9ae706006e2db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade5e161468ca1098de82d639d4773f4f"><td class="memItemLeft" align="right" valign="top"><a id="ade5e161468ca1098de82d639d4773f4f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>canDropMimeData</b> (const QMimeData *data, Qt::DropAction action, int row, int column, const QModelIndex &amp;parent) const override</td></tr>
 <tr class="separator:ade5e161468ca1098de82d639d4773f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,30 +158,10 @@ Qt::DropActions&#160;</td><td class="memItemRight" valign="bottom"><b>supportedD
 <tr class="memitem:a5801f799a28c5aeca9d0324f7d54760d"><td class="memItemLeft" align="right" valign="top"><a id="a5801f799a28c5aeca9d0324f7d54760d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>changed</b> ()</td></tr>
 <tr class="separator:a5801f799a28c5aeca9d0324f7d54760d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a8532e3bc47e0cfbb3a9b08cfc794b7fe"><td class="memItemLeft" align="right" valign="top"><a id="a8532e3bc47e0cfbb3a9b08cfc794b7fe"></a>
-static QString&#160;</td><td class="memItemRight" valign="bottom"><b>tr</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:a8532e3bc47e0cfbb3a9b08cfc794b7fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d9dc93fad08b7ba3ce2113778346752"><td class="memItemLeft" align="right" valign="top"><a id="a0d9dc93fad08b7ba3ce2113778346752"></a>
-static QT_DEPRECATED QString&#160;</td><td class="memItemRight" valign="bottom"><b>trUtf8</b> (const char *s, const char *c=nullptr, int n=-1)</td></tr>
-<tr class="separator:a0d9dc93fad08b7ba3ce2113778346752"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a979e6e4f8720c1001ea1864e5704e224"><td class="memItemLeft" align="right" valign="top"><a id="a979e6e4f8720c1001ea1864e5704e224"></a>
-static const Q_OBJECT_NO_OVERRIDE_WARNING QMetaObject&#160;</td><td class="memItemRight" valign="bottom"><b>staticMetaObject</b></td></tr>
-<tr class="separator:a979e6e4f8720c1001ea1864e5704e224"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:aa7a7261c104c1136b1734e433d11755f"><td class="memItemLeft" align="right" valign="top"><a id="aa7a7261c104c1136b1734e433d11755f"></a>
-struct&#160;</td><td class="memItemRight" valign="bottom"><b>w_internal::FriendHelper</b></td></tr>
-<tr class="separator:aa7a7261c104c1136b1734e433d11755f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_object_item_model_8hpp_source.html">ObjectItemModel.hpp</a></li>
+<li>ObjectItemModel.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,4 +1,0 @@
-var structw__internal_1_1_w___type_registery_3_01std_1_1shared__ptr_3_01_execution_1_1_event_component_01_4_01_4 =
-[
-    [ "registered", "structw__internal_1_1_w___type_registery_3_01std_1_1shared__ptr_3_01_execution_1_1_event_component_01_4_01_4.html#a87e3aba80ba8b96998da00be314a994cae249046bbcd971b93cfc6867a5bf6799", null ]
-];

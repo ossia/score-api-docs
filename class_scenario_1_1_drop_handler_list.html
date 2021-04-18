@@ -135,7 +135,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>drop</b> (const <a cl
 <tr class="memdesc:a9089a3c0c8fbff8015cd0d2bba50c8be inherit pub_methods_classscore_1_1_interface_list"><td class="mdescLeft">&#160;</td><td class="mdescRight">insert Register a new factory.  <a href="classscore_1_1_interface_list.html#a9089a3c0c8fbff8015cd0d2bba50c8be">More...</a><br /></td></tr>
 <tr class="separator:a9089a3c0c8fbff8015cd0d2bba50c8be inherit pub_methods_classscore_1_1_interface_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a610c32e8a09033072c496f3fdff75520 inherit pub_methods_classscore_1_1_interface_list"><td class="memItemLeft" align="right" valign="top"><a id="a610c32e8a09033072c496f3fdff75520"></a>
-<a class="el" href="class_drop_handler.html">DropHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_interface_list.html#a610c32e8a09033072c496f3fdff75520">get</a> (const key_type &amp;k) const noexcept</td></tr>
+DropHandler *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_interface_list.html#a610c32e8a09033072c496f3fdff75520">get</a> (const key_type &amp;k) const noexcept</td></tr>
 <tr class="memdesc:a610c32e8a09033072c496f3fdff75520 inherit pub_methods_classscore_1_1_interface_list"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a particular factory from its ConcreteKey. <br /></td></tr>
 <tr class="separator:a610c32e8a09033072c496f3fdff75520 inherit pub_methods_classscore_1_1_interface_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76fdc156f89dc4fdd09194fa989e7096 inherit pub_methods_classscore_1_1_interface_list"><td class="memItemLeft" align="right" valign="top"><a id="a76fdc156f89dc4fdd09194fa989e7096"></a>
@@ -190,10 +190,10 @@ virtual <a class="el" href="class_uuid_key.html">score::InterfaceKey</a>&#160;</
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classscore_1_1_interface_list"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classscore_1_1_interface_list')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classscore_1_1_interface_list.html">score::InterfaceList&lt; DropHandler &gt;</a></td></tr>
 <tr class="memitem:a1c93cb8a43ec4699d1f8f6c34e5c225a inherit pub_types_classscore_1_1_interface_list"><td class="memItemLeft" align="right" valign="top"><a id="a1c93cb8a43ec4699d1f8f6c34e5c225a"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>factory_type</b> = <a class="el" href="class_drop_handler.html">DropHandler</a></td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>factory_type</b> = DropHandler</td></tr>
 <tr class="separator:a1c93cb8a43ec4699d1f8f6c34e5c225a inherit pub_types_classscore_1_1_interface_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d9a47475c378c0eec384e0f7fc817c9 inherit pub_types_classscore_1_1_interface_list"><td class="memItemLeft" align="right" valign="top"><a id="a4d9a47475c378c0eec384e0f7fc817c9"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>key_type</b> = typename <a class="el" href="class_drop_handler.html">DropHandler</a> ::ConcreteKey</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>key_type</b> = typename DropHandler ::ConcreteKey</td></tr>
 <tr class="separator:a4d9a47475c378c0eec384e0f7fc817c9 inherit pub_types_classscore_1_1_interface_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classscore_1_1_interface_list"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classscore_1_1_interface_list')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classscore_1_1_interface_list.html">score::InterfaceList&lt; DropHandler &gt;</a></td></tr>
 <tr class="memitem:a612876e7dc55db9b9b96a238bdbe5c14 inherit pub_static_methods_classscore_1_1_interface_list"><td class="memItemLeft" align="right" valign="top"><a id="a612876e7dc55db9b9b96a238bdbe5c14"></a>
@@ -205,10 +205,10 @@ static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>fact
 <tr class="separator:a98ff9b0bfa3d486f1c5e45475a547752 inherit pub_static_attribs_classscore_1_1_interface_list_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classscore_1_1_interface_list"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classscore_1_1_interface_list')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classscore_1_1_interface_list.html">score::InterfaceList&lt; DropHandler &gt;</a></td></tr>
 <tr class="memitem:a30f78240c64083e2744cac0e72149d47 inherit pro_attribs_classscore_1_1_interface_list"><td class="memItemLeft" align="right" valign="top"><a id="a30f78240c64083e2744cac0e72149d47"></a>
-ossia::fast_hash_map&lt; typename <a class="el" href="class_drop_handler.html">DropHandler</a> ::ConcreteKey, std::unique_ptr&lt; <a class="el" href="class_drop_handler.html">DropHandler</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>map</b></td></tr>
+ossia::fast_hash_map&lt; typename DropHandler ::ConcreteKey, std::unique_ptr&lt; DropHandler &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>map</b></td></tr>
 <tr class="separator:a30f78240c64083e2744cac0e72149d47 inherit pro_attribs_classscore_1_1_interface_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af781f00e3464cb0a61568100b7f4740d inherit pro_attribs_classscore_1_1_interface_list"><td class="memItemLeft" align="right" valign="top"><a id="af781f00e3464cb0a61568100b7f4740d"></a>
-std::vector&lt; <a class="el" href="class_drop_handler.html">DropHandler</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>vec</b></td></tr>
+std::vector&lt; DropHandler * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>vec</b></td></tr>
 <tr class="separator:af781f00e3464cb0a61568100b7f4740d inherit pro_attribs_classscore_1_1_interface_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>

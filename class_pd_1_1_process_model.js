@@ -14,7 +14,7 @@ var class_pd_1_1_process_model =
     [ "midiOutput", "class_pd_1_1_process_model.html#a121bbc0968e89e2a514871ec4e702730", null ],
     [ "midiOutputChanged", "class_pd_1_1_process_model.html#a1e971f6838f9f5a15639199646f1a284", null ],
     [ "patchSpec", "class_pd_1_1_process_model.html#a81d91c90225e6b7a42a26ca4877ad35e", null ],
-    [ "script", "class_pd_1_1_process_model.html#ad9aa5415651287927ee784d4f71fc314", null ],
+    [ "script", "class_pd_1_1_process_model.html#a4ff0d1c701ee6fa232db2e09392b95e1", null ],
     [ "scriptChanged", "class_pd_1_1_process_model.html#a0b8e306225c0c162eda9273309e293af", null ],
     [ "setAudioInputs", "class_pd_1_1_process_model.html#adb50d976d3c7badb80849107302f0d89", null ],
     [ "setAudioOutputs", "class_pd_1_1_process_model.html#a55693e5ef264b92fffe23357e542da8c", null ],
