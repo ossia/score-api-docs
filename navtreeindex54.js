@@ -1,5 +1,7 @@
 var NAVTREEINDEX54 =
 {
+"struct_midi_1_1_midi_style.html#a9c68653eb9d2f3378a0f36349b26194a":[11,0,27,6,7],
+"struct_midi_1_1_midi_style.html#ab1e8d5340d2dadea7fb5a2766f8434e6":[11,0,27,6,4],
 "struct_midi_1_1_midi_track.html":[11,0,27,7],
 "struct_midi_1_1_midi_track.html#a39bcccac3575223410818e1d15ffae3e":[11,0,27,7,2],
 "struct_midi_1_1_midi_track.html#a6014e7a3c9c88aec0d3f8f0ba60d5d51":[11,0,27,7,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX54 =
 "struct_nodes_1_1_pulse_to_note_1_1_node_1_1_note_in.html":[11,0,30,20,0,1],
 "struct_nodes_1_1_pulse_to_note_1_1_node_1_1_note_in.html#a118504eaf4054dc7011fa2354dc0ee7d":[11,0,30,20,0,1,1],
 "struct_nodes_1_1_pulse_to_note_1_1_node_1_1_note_in.html#a1302fe9d2b6057b5e83bf0f08976557b":[11,0,30,20,0,1,0],
-"struct_nodes_1_1_pulse_to_note_1_1_node_1_1_state.html":[11,0,30,20,0,2],
-"struct_nodes_1_1_pulse_to_note_1_1_node_1_1_state.html#a0946631054e6b31745392ad62600a20b":[11,0,30,20,0,2,1],
-"struct_nodes_1_1_pulse_to_note_1_1_node_1_1_state.html#ad82e07a5e87d3c5ee123670cc9997387":[11,0,30,20,0,2,0]
+"struct_nodes_1_1_pulse_to_note_1_1_node_1_1_state.html":[11,0,30,20,0,2]
 };

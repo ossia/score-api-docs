@@ -1,5 +1,7 @@
 var NAVTREEINDEX58 =
 {
+"struct_recording_1_1_record_automation_creation_visitor.html#a363e7ae8c597af79f5f66bf5ae5aa143":[11,0,37,7,10],
+"struct_recording_1_1_record_automation_creation_visitor.html#a428a3ecedbee738915479234fcb2399e":[11,0,37,7,3],
 "struct_recording_1_1_record_automation_creation_visitor.html#a52cf5c7cf365f7e405c2447fda2cb6e3":[11,0,37,7,0],
 "struct_recording_1_1_record_automation_creation_visitor.html#a62dc0c0ac02a29bcf7ba9feb2b6843f5":[11,0,37,7,4],
 "struct_recording_1_1_record_automation_creation_visitor.html#a75694eb91057fe534ed8ef8f13889c69":[11,0,37,7,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX58 =
 "struct_scenario_1_1_command_1_1_message_pairs.html#aa6e428f45a6c3b8c50369c9c22b1d1fc":[11,0,41,0,57,4],
 "struct_scenario_1_1_command_1_1_message_pairs.html#ab674fee2531b2e688209def4a3c07789":[11,0,41,0,57,1],
 "struct_scenario_1_1_command_1_1_message_pairs.html#ac2e40743d906be50fa761b2eaf6403db":[11,0,41,0,57,0],
-"struct_scenario_1_1_command_1_1_message_pairs.html#aefe07c0b9d9fdb25401ec426ebbf0c91":[11,0,41,0,57,2],
-"struct_scenario_1_1_command_1_1color__converter.html":[11,0,41,0,22],
-"struct_scenario_1_1_command_1_1color__converter.html#a0aeb950ec0f4631cb4531f4b9c85f726":[11,0,41,0,22,0]
+"struct_scenario_1_1_command_1_1_message_pairs.html#aefe07c0b9d9fdb25401ec426ebbf0c91":[11,0,41,0,57,2]
 };

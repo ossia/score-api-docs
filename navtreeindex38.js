@@ -1,5 +1,6 @@
 var NAVTREEINDEX38 =
 {
+"class_token_request_value_type.html#afa8713564f5e63de648a59ce529e6441":[11,0,416,29],
 "class_tool_palette_input_dispatcher.html":[11,0,417],
 "class_tool_palette_input_dispatcher.html#a430a9c5fb30b5e8ffab6a802733dd4a0":[11,0,417,1],
 "class_tool_palette_input_dispatcher.html#a5169071e4061f245e3db64d257509933":[11,0,417,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX38 =
 "class_web_socket_view.html#a2761d03c37cabd0845acea85c7f8f4d3":[11,0,546,3],
 "class_web_socket_view.html#a42be4604d0485cae53687680b1f55778":[11,0,546,0],
 "class_web_socket_view.html#a6fb0fd65fba02120ed3f2d2ed9aa32c8":[11,0,546,5],
-"class_web_socket_view.html#a8fecf04a110ae7f1c6f903e8f9b8e3fa":[11,0,546,4],
-"class_web_socket_view.html#a91316d6cbefb0c547549374404852f66":[11,0,546,1]
+"class_web_socket_view.html#a8fecf04a110ae7f1c6f903e8f9b8e3fa":[11,0,546,4]
 };

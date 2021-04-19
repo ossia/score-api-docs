@@ -45,6 +45,7 @@ var classscore_1_1_skin =
     [ "HalfLight", "classscore_1_1_skin.html#a1075a1856fb20b20471827217942426b", null ],
     [ "Light", "classscore_1_1_skin.html#a6a18996aca56648be4775eda9c7cd1c7", null ],
     [ "LightGray", "classscore_1_1_skin.html#a46510ae53262f87f86012735a021a8b3", null ],
+    [ "LoadIndex", "classscore_1_1_skin.html#abdc411a47f47fe17208e86ed1e91e664", null ],
     [ "Medium10Pt", "classscore_1_1_skin.html#a801184f737cb7339e2372dd773002e13", null ],
     [ "Medium12Pt", "classscore_1_1_skin.html#ae1626339c70c4bd24cc3c4f1e38ff556", null ],
     [ "Medium7Pt", "classscore_1_1_skin.html#a0990d259d484881004f6e991b07bd036", null ],

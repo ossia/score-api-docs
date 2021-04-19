@@ -12,6 +12,7 @@ var class_scenario_1_1_interval_view =
     [ "infinite", "class_scenario_1_1_interval_view.html#abb36d581357f8d7a900ad27deb5a7c05", null ],
     [ "intervalAndRackHeight", "class_scenario_1_1_interval_view.html#aadcc0aab7b062f9103a7eb74aa6dde9e", null ],
     [ "intervalColor", "class_scenario_1_1_interval_view.html#ae7fc58e91922029296359ba0592f0145", null ],
+    [ "intervalDashedPixmap", "class_scenario_1_1_interval_view.html#a4814f9c19c51f80ed90f3455b28b482a", null ],
     [ "isSelected", "class_scenario_1_1_interval_view.html#acd9a974ff768cea81b861dbbf02cb126", null ],
     [ "isValid", "class_scenario_1_1_interval_view.html#ac09572c76fbb91d1d138246e1746c7c4", null ],
     [ "leftBrace", "class_scenario_1_1_interval_view.html#a80a88bf2209d227f80e835a1910548a8", null ],

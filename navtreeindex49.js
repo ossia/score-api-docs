@@ -1,5 +1,7 @@
 var NAVTREEINDEX49 =
 {
+"struct_control_1_1setup___impl1.html#acd05336febec5ef7ab0e390c51529997":[11,0,3,36,1],
+"struct_control_1_1setup___impl1.html#adcdf8207a545e54d54c2503ab96fb500":[11,0,3,36,2],
 "struct_control_1_1setup___impl1___out.html":[11,0,3,37],
 "struct_control_1_1setup___impl1___out.html#a0809c266974028942d064d5d9d674279":[11,0,3,37,1],
 "struct_control_1_1setup___impl1___out.html#a28a14a9ab22232277d4858da8f094a41":[11,0,3,37,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX49 =
 "struct_empty_decoder.html#a73498b463c8b5ca676df0a0a1722f6a3":[11,0,96,0],
 "struct_empty_decoder.html#ae0374bd6986c20809a6f6790e19926d7":[11,0,96,2],
 "struct_empty_decoder.html#af1db5decc633173af465d6014cac6e67":[11,0,96,1],
-"struct_engine_1_1score__to__ossia_1_1_curve_traits.html":[11,0,8,0,0],
-"struct_engine_1_1score__to__ossia_1_1_curve_traits_3_01double_01_4.html":[11,0,8,0,1],
-"struct_engine_1_1score__to__ossia_1_1_curve_traits_3_01float_01_4.html":[11,0,8,0,2]
+"struct_engine_1_1score__to__ossia_1_1_curve_traits.html":[11,0,8,0,0]
 };

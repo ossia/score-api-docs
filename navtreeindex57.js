@@ -1,5 +1,7 @@
 var NAVTREEINDEX57 =
 {
+"struct_protocols_1_1_settings_1_1_midi_a_p_i.html#a2f82e35ee43bedd9e16c7addc715c910":[11,0,36,1,0,0],
+"struct_protocols_1_1_w_s_specific_settings.html":[11,0,36,63],
 "struct_protocols_1_1_w_s_specific_settings.html#ac42f002e23e40296fea2c1915fc88f1f":[11,0,36,63,1],
 "struct_protocols_1_1_w_s_specific_settings.html#af28ad233c2dc27f7a1bd1c0e8bcf7511":[11,0,36,63,0],
 "struct_protocols_1_1_wiimote_specific_settings.html":[11,0,36,59],
@@ -247,7 +249,5 @@ var NAVTREEINDEX57 =
 "struct_recording_1_1_parameter_policy.html":[11,0,37,5],
 "struct_recording_1_1_parameter_policy.html#a6f72dd3ddb36c7f3caf6c79732f8e7de":[11,0,37,5,0],
 "struct_recording_1_1_record_automation_creation_visitor.html":[11,0,37,7],
-"struct_recording_1_1_record_automation_creation_visitor.html#a08b8ab3af6b67e8873b4729f075eb86d":[11,0,37,7,11],
-"struct_recording_1_1_record_automation_creation_visitor.html#a363e7ae8c597af79f5f66bf5ae5aa143":[11,0,37,7,10],
-"struct_recording_1_1_record_automation_creation_visitor.html#a428a3ecedbee738915479234fcb2399e":[11,0,37,7,3]
+"struct_recording_1_1_record_automation_creation_visitor.html#a08b8ab3af6b67e8873b4729f075eb86d":[11,0,37,7,11]
 };

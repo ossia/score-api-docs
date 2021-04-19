@@ -1,5 +1,7 @@
 var NAVTREEINDEX55 =
 {
+"struct_nodes_1_1_pulse_to_note_1_1_node_1_1_state.html#a0946631054e6b31745392ad62600a20b":[11,0,30,20,0,2,1],
+"struct_nodes_1_1_pulse_to_note_1_1_node_1_1_state.html#ad82e07a5e87d3c5ee123670cc9997387":[11,0,30,20,0,2,0],
 "struct_nodes_1_1_pulse_to_note_1_1_node_1_1val__visitor.html":[11,0,30,20,0,3],
 "struct_nodes_1_1_pulse_to_note_1_1_node_1_1val__visitor.html#a055465d23fd7925166d74d3a0ddd9635":[11,0,30,20,0,3,4],
 "struct_nodes_1_1_pulse_to_note_1_1_node_1_1val__visitor.html#a4280345296ca4de2c22085895542af8d":[11,0,30,20,0,3,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX55 =
 "struct_process_1_1_magnetic_info.html":[11,0,35,58],
 "struct_process_1_1_magnetic_info.html#a5dc297e0f55d4bbfab3c92aee7346e93":[11,0,35,58,0],
 "struct_process_1_1_magnetic_info.html#a77d6bf73b8fd25e3d44ded1c6c1cd9e6":[11,0,35,58,2],
-"struct_process_1_1_magnetic_info.html#a8150ac3d0a59d9a38182095611e8caa3":[11,0,35,58,3],
-"struct_process_1_1_magnetic_info.html#a96f31e2800f223f03e5043439aa899c4":[11,0,35,58,1],
-"struct_process_1_1_multi_script_dialog_1_1_editor_tab.html":[11,0,35,64,0]
+"struct_process_1_1_magnetic_info.html#a8150ac3d0a59d9a38182095611e8caa3":[11,0,35,58,3]
 };
