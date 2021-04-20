@@ -1,5 +1,11 @@
 var NAVTREEINDEX57 =
 {
+"struct_protocols_1_1_o_s_c_specific_settings.html#aa41952fc4b9597254466ef68e8acb947":[11,0,36,46,3],
+"struct_protocols_1_1_o_s_c_specific_settings.html#ac6c80bef17252df502c1cea6b99fe601":[11,0,36,46,1],
+"struct_protocols_1_1_phidget_specific_settings.html":[11,0,36,50],
+"struct_protocols_1_1_serial_specific_settings.html":[11,0,36,55],
+"struct_protocols_1_1_serial_specific_settings.html#a0175d7cfa698fb7ed00b5380bdba05a6":[11,0,36,55,1],
+"struct_protocols_1_1_serial_specific_settings.html#ae724d472ff0bc96dbb35c7b0a3d12e05":[11,0,36,55,0],
 "struct_protocols_1_1_settings_1_1_midi_a_p_i.html":[11,0,36,1,0],
 "struct_protocols_1_1_settings_1_1_midi_a_p_i.html#a2f82e35ee43bedd9e16c7addc715c910":[11,0,36,1,0,0],
 "struct_protocols_1_1_w_s_specific_settings.html":[11,0,36,63],
@@ -243,11 +249,5 @@ var NAVTREEINDEX57 =
 "struct_r_g_b0_decoder.html#ae5a415fc06b6edadda239db9faa5f265":[11,0,350,4],
 "struct_recording_1_1_box.html":[11,0,37,2],
 "struct_recording_1_1_box.html#a721abe014117ce48acbc6449f0666db3":[11,0,37,2,0],
-"struct_recording_1_1_box.html#a8067c433c341792f1434368b960c7c6a":[11,0,37,2,1],
-"struct_recording_1_1_box.html#aab18663f6165896706ac1cf7c6827657":[11,0,37,2,2],
-"struct_recording_1_1_message_policy.html":[11,0,37,3],
-"struct_recording_1_1_message_policy.html#ab2f6b3b8b5ab68696b52c1160c76ffe0":[11,0,37,3,0],
-"struct_recording_1_1_parameter_policy.html":[11,0,37,5],
-"struct_recording_1_1_parameter_policy.html#a6f72dd3ddb36c7f3caf6c79732f8e7de":[11,0,37,5,0],
-"struct_recording_1_1_record_automation_creation_visitor.html":[11,0,37,7]
+"struct_recording_1_1_box.html#a8067c433c341792f1434368b960c7c6a":[11,0,37,2,1]
 };

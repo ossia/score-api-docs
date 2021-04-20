@@ -1,7 +1,7 @@
 var searchData=
 [
   ['lane_1068',['Lane',['../struct_patternist_1_1_lane.html',1,'Patternist']]],
-  ['languagespec_1069',['LanguageSpec',['../struct_faust_1_1_language_spec.html',1,'Faust::LanguageSpec'],['../struct_j_s_1_1_language_spec.html',1,'JS::LanguageSpec']]],
+  ['languagespec_1069',['LanguageSpec',['../struct_j_s_1_1_language_spec.html',1,'JS::LanguageSpec'],['../struct_faust_1_1_language_spec.html',1,'Faust::LanguageSpec']]],
   ['layer_1070',['Layer',['../struct_scenario_1_1_layer_data_1_1_layer.html',1,'Scenario::LayerData::Layer'],['../struct_ui_1_1_signal_display_1_1_node_1_1_layer.html',1,'Ui::SignalDisplay::Node::Layer']]],
   ['layercontext_1071',['LayerContext',['../struct_process_1_1_layer_context.html',1,'Process']]],
   ['layercontextmenu_1072',['LayerContextMenu',['../class_process_1_1_layer_context_menu.html',1,'Process']]],
@@ -15,7 +15,7 @@ var searchData=
   ['layerpresenter_1080',['LayerPresenter',['../class_automation_1_1_layer_presenter.html',1,'Automation::LayerPresenter'],['../class_metronome_1_1_layer_presenter.html',1,'Metronome::LayerPresenter'],['../class_mapping_1_1_layer_presenter.html',1,'Mapping::LayerPresenter'],['../class_process_1_1_layer_presenter.html',1,'Process::LayerPresenter'],['../class_media_1_1_sound_1_1_layer_presenter.html',1,'Media::Sound::LayerPresenter']]],
   ['layerrectitem_1081',['LayerRectItem',['../class_scenario_1_1_layer_rect_item.html',1,'Scenario']]],
   ['layerslotpresenter_1082',['LayerSlotPresenter',['../struct_scenario_1_1_layer_slot_presenter.html',1,'Scenario']]],
-  ['layerview_1083',['LayerView',['../class_automation_1_1_layer_view.html',1,'Automation::LayerView'],['../class_metronome_1_1_layer_view.html',1,'Metronome::LayerView'],['../class_mapping_1_1_layer_view.html',1,'Mapping::LayerView'],['../class_process_1_1_layer_view.html',1,'Process::LayerView'],['../class_media_1_1_sound_1_1_layer_view.html',1,'Media::Sound::LayerView']]],
+  ['layerview_1083',['LayerView',['../class_mapping_1_1_layer_view.html',1,'Mapping::LayerView'],['../class_automation_1_1_layer_view.html',1,'Automation::LayerView'],['../class_metronome_1_1_layer_view.html',1,'Metronome::LayerView'],['../class_process_1_1_layer_view.html',1,'Process::LayerView'],['../class_media_1_1_sound_1_1_layer_view.html',1,'Media::Sound::LayerView']]],
   ['layout_1084',['Layout',['../class_inspector_1_1_layout.html',1,'Inspector']]],
   ['lazy_5finit_1085',['lazy_init',['../class_execution_1_1_process_component.html#acbf98ea6e97c8420ab90f57ae4940e07',1,'Execution::ProcessComponent']]],
   ['lazy_5finit_5ft_1086',['lazy_init_t',['../structscore_1_1lazy__init__t.html',1,'score']]],
@@ -27,7 +27,7 @@ var searchData=
   ['libpd_5flist_5fwrapper_1092',['libpd_list_wrapper',['../struct_pd_1_1libpd__list__wrapper.html',1,'Pd']]],
   ['librarydeviceenumerator_1093',['LibraryDeviceEnumerator',['../class_protocols_1_1_library_device_enumerator.html',1,'Protocols']]],
   ['librarydocumentloader_1094',['LibraryDocumentLoader',['../class_library_1_1_library_document_loader.html',1,'Library']]],
-  ['libraryhandler_1095',['LibraryHandler',['../classvst_1_1_library_handler.html',1,'vst::LibraryHandler'],['../classvst3_1_1_library_handler.html',1,'vst3::LibraryHandler'],['../class_faust_1_1_library_handler.html',1,'Faust::LibraryHandler'],['../class_gfx_1_1_filter_1_1_library_handler.html',1,'Gfx::Filter::LibraryHandler'],['../class_gfx_1_1_images_1_1_library_handler.html',1,'Gfx::Images::LibraryHandler'],['../class_gfx_1_1_video_1_1_library_handler.html',1,'Gfx::Video::LibraryHandler'],['../class_l_v2_1_1_library_handler.html',1,'LV2::LibraryHandler'],['../class_j_s_1_1_library_handler.html',1,'JS::LibraryHandler'],['../class_media_1_1_sound_1_1_library_handler.html',1,'Media::Sound::LibraryHandler'],['../class_pd_1_1_library_handler.html',1,'Pd::LibraryHandler']]],
+  ['libraryhandler_1095',['LibraryHandler',['../classvst_1_1_library_handler.html',1,'vst::LibraryHandler'],['../classvst3_1_1_library_handler.html',1,'vst3::LibraryHandler'],['../class_faust_1_1_library_handler.html',1,'Faust::LibraryHandler'],['../class_j_s_1_1_library_handler.html',1,'JS::LibraryHandler'],['../class_gfx_1_1_images_1_1_library_handler.html',1,'Gfx::Images::LibraryHandler'],['../class_gfx_1_1_video_1_1_library_handler.html',1,'Gfx::Video::LibraryHandler'],['../class_l_v2_1_1_library_handler.html',1,'LV2::LibraryHandler'],['../class_media_1_1_sound_1_1_library_handler.html',1,'Media::Sound::LibraryHandler'],['../class_gfx_1_1_filter_1_1_library_handler.html',1,'Gfx::Filter::LibraryHandler'],['../class_pd_1_1_library_handler.html',1,'Pd::LibraryHandler']]],
   ['libraryinterface_1096',['LibraryInterface',['../class_library_1_1_library_interface.html',1,'Library']]],
   ['libraryinterfacelist_1097',['LibraryInterfaceList',['../class_library_1_1_library_interface_list.html',1,'Library']]],
   ['lightbars_1098',['LightBars',['../class_scenario_1_1_light_bars.html',1,'Scenario']]],

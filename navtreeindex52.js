@@ -1,5 +1,6 @@
 var NAVTREEINDEX52 =
 {
+"struct_j_s_o_n_reader_1_1assigner.html#a467a2306a6544e407d39cf34d19cdba9":[11,0,153,0,7],
 "struct_j_s_o_n_reader_1_1assigner.html#a4a690a0d87f11702ae5c9d3d36fc1a86":[11,0,153,0,6],
 "struct_j_s_o_n_reader_1_1assigner.html#a5832487b97f27d2faefc94fbe995018b":[11,0,153,0,20],
 "struct_j_s_o_n_reader_1_1assigner.html#a5b2ca650877349547b57f34f7468394a":[11,0,153,0,16],
@@ -234,6 +235,11 @@ var NAVTREEINDEX52 =
 "struct_library_1_1_process_data.html#a2248a8983a4d02936784bc0b0417e588":[11,0,21,10,2],
 "struct_library_1_1_process_data.html#a2fb669fe52503bd4c772bb2d6108804f":[11,0,21,10,1],
 "struct_library_1_1_process_data.html#a7fdf03a7f549515ba2fd4e6231e7328e":[11,0,21,10,0],
+"struct_library_1_1_subcategories.html":[11,0,21,20],
+"struct_library_1_1_subcategories.html#a11fd10f4b5ec7c1411a63e9a545b26ed":[11,0,21,20,3],
+"struct_library_1_1_subcategories.html#a38abc7e3f7b6771acba3f546143bc864":[11,0,21,20,0],
+"struct_library_1_1_subcategories.html#a3fbaf50b9d1e21af51469494a78402cb":[11,0,21,20,1],
+"struct_library_1_1_subcategories.html#af951ffdf31b3bcdce2e74ba2dd87ecbd":[11,0,21,20,2],
 "struct_local_tree_1_1_base_property.html":[11,0,22,2],
 "struct_local_tree_1_1_base_property.html#a0b3ec7813b43734d4fb3af21de017c55":[11,0,22,2,2],
 "struct_local_tree_1_1_base_property.html#a5c22125e022121885c53f70e82e37576":[11,0,22,2,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX52 =
 "struct_local_tree_1_1_get_property_wrapper.html#a415a2ac17ff794edfe165db0dfde16f1":[11,0,22,7,3],
 "struct_local_tree_1_1_get_property_wrapper.html#a8456ded8107d1ac3353dd32a4586ebd7":[11,0,22,7,0],
 "struct_local_tree_1_1_get_property_wrapper.html#a91d99b997323f5e995ab104bc9a88c09":[11,0,22,7,2],
-"struct_local_tree_1_1_get_property_wrapper.html#adc2de4217504a80633413394d49316c4":[11,0,22,7,4],
-"struct_local_tree_1_1_property_wrapper.html":[11,0,22,16],
-"struct_local_tree_1_1_property_wrapper.html#a0cdd9b67ed3094618f4ae078c9b9c65d":[11,0,22,16,2],
-"struct_local_tree_1_1_property_wrapper.html#a144bb06e8068f6208e8b714c7a623428":[11,0,22,16,4],
-"struct_local_tree_1_1_property_wrapper.html#a711895fa988744fce99e96b79a12f76f":[11,0,22,16,0],
-"struct_local_tree_1_1_property_wrapper.html#aca6011ee524f2c86cb96aeea32048156":[11,0,22,16,1],
-"struct_local_tree_1_1_property_wrapper.html#afbf70b86bbc09ba3459dba84f38df589":[11,0,22,16,3]
+"struct_local_tree_1_1_get_property_wrapper.html#adc2de4217504a80633413394d49316c4":[11,0,22,7,4]
 };

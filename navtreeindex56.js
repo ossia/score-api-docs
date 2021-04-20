@@ -1,5 +1,11 @@
 var NAVTREEINDEX56 =
 {
+"struct_process_1_1_log_float_slider.html#a91fd2ed4543d2fabed644ba156475d85":[11,0,35,57,4],
+"struct_process_1_1_log_float_slider.html#ab232d9571bd3a55ceaae832c8cc25608":[11,0,35,57,3],
+"struct_process_1_1_log_float_slider.html#ad24c6464aea69258f8a856f8c0bb8ec1":[11,0,35,57,0],
+"struct_process_1_1_magnetic_info.html":[11,0,35,58],
+"struct_process_1_1_magnetic_info.html#a5dc297e0f55d4bbfab3c92aee7346e93":[11,0,35,58,0],
+"struct_process_1_1_magnetic_info.html#a77d6bf73b8fd25e3d44ded1c6c1cd9e6":[11,0,35,58,2],
 "struct_process_1_1_magnetic_info.html#a8150ac3d0a59d9a38182095611e8caa3":[11,0,35,58,3],
 "struct_process_1_1_magnetic_info.html#a96f31e2800f223f03e5043439aa899c4":[11,0,35,58,1],
 "struct_process_1_1_multi_script_dialog_1_1_editor_tab.html":[11,0,35,64,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX56 =
 "struct_protocols_1_1_o_s_c_specific_settings.html":[11,0,36,46],
 "struct_protocols_1_1_o_s_c_specific_settings.html#a01e5f5b65a36bb5d390be771dd74ee43":[11,0,36,46,2],
 "struct_protocols_1_1_o_s_c_specific_settings.html#a26003f65edde8d5480a3dd94b79ae90d":[11,0,36,46,4],
-"struct_protocols_1_1_o_s_c_specific_settings.html#a83c8a0f0a0aa0db1e78223b86ceaf608":[11,0,36,46,0],
-"struct_protocols_1_1_o_s_c_specific_settings.html#aa41952fc4b9597254466ef68e8acb947":[11,0,36,46,3],
-"struct_protocols_1_1_o_s_c_specific_settings.html#ac6c80bef17252df502c1cea6b99fe601":[11,0,36,46,1],
-"struct_protocols_1_1_phidget_specific_settings.html":[11,0,36,50],
-"struct_protocols_1_1_serial_specific_settings.html":[11,0,36,55],
-"struct_protocols_1_1_serial_specific_settings.html#a0175d7cfa698fb7ed00b5380bdba05a6":[11,0,36,55,1],
-"struct_protocols_1_1_serial_specific_settings.html#ae724d472ff0bc96dbb35c7b0a3d12e05":[11,0,36,55,0]
+"struct_protocols_1_1_o_s_c_specific_settings.html#a83c8a0f0a0aa0db1e78223b86ceaf608":[11,0,36,46,0]
 };

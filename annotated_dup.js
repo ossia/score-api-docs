@@ -401,6 +401,7 @@ var annotated_dup =
       [ "ProjectPanel", "class_library_1_1_project_panel.html", "class_library_1_1_project_panel" ],
       [ "ProjectPanelFactory", "class_library_1_1_project_panel_factory.html", null ],
       [ "RecursiveFilterProxy", "class_library_1_1_recursive_filter_proxy.html", null ],
+      [ "Subcategories", "struct_library_1_1_subcategories.html", "struct_library_1_1_subcategories" ],
       [ "SystemLibraryWidget", "class_library_1_1_system_library_widget.html", "class_library_1_1_system_library_widget" ],
       [ "UserPanel", "class_library_1_1_user_panel.html", "class_library_1_1_user_panel" ],
       [ "UserPanelFactory", "class_library_1_1_user_panel_factory.html", null ]

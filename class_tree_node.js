@@ -24,6 +24,7 @@ var class_tree_node =
     [ "hasChild", "class_tree_node.html#a235aad91c39ad8a80ff651ed330c2657", null ],
     [ "hasChildren", "class_tree_node.html#a4d117c7d3596fb8d397b9838aa59d97c", null ],
     [ "indexOfChild", "class_tree_node.html#a7ca4cabeedf0aa2368fa721cf7a01fb3", null ],
+    [ "insert", "class_tree_node.html#a3e0625c3c21ce12a19d5764d45349d81", null ],
     [ "iterOfChild", "class_tree_node.html#a76dcb962e4543c6b5e342fcc28881cd3", null ],
     [ "operator=", "class_tree_node.html#adced853a107857b8171b72ba77946847", null ],
     [ "operator=", "class_tree_node.html#a8de01230def031fd1d859006d5f2f851", null ],

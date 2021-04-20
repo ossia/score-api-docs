@@ -1,5 +1,6 @@
 var NAVTREEINDEX50 =
 {
+"struct_empty_decoder.html#af1db5decc633173af465d6014cac6e67":[11,0,96,1],
 "struct_engine_1_1score__to__ossia_1_1_curve_traits.html":[11,0,8,0,0],
 "struct_engine_1_1score__to__ossia_1_1_curve_traits_3_01double_01_4.html":[11,0,8,0,1],
 "struct_engine_1_1score__to__ossia_1_1_curve_traits_3_01float_01_4.html":[11,0,8,0,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX50 =
 "struct_gfx_1_1_camera_settings.html#a395e703271b5c76ceee531202ae66bae":[11,0,13,12,1],
 "struct_gfx_1_1_camera_settings.html#a707454a6640caa086c6743527c6a500a":[11,0,13,12,3],
 "struct_gfx_1_1_camera_settings.html#ab159a0fda2c0408710f13d608d930d22":[11,0,13,12,2],
-"struct_gfx_1_1_image.html":[11,0,13,29],
-"struct_gfx_1_1_image.html#a3ceacce4747f45d4dc25167d00dd334d":[11,0,13,29,1]
+"struct_gfx_1_1_image.html":[11,0,13,29]
 };

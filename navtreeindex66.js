@@ -1,5 +1,11 @@
 var NAVTREEINDEX66 =
 {
+"structvisitor__entity__tag.html":[11,0,540],
+"structvisitor__enum__tag.html":[11,0,541],
+"structvisitor__object__tag.html":[11,0,542],
+"structvisitor__template__tag.html":[11,0,543],
+"structvst3_1_1_application_plugin.html":[11,0,51,0],
+"structvst3_1_1_application_plugin.html#a011c7644b9b999095ad939883901d173":[11,0,51,0,13],
 "structvst3_1_1_application_plugin.html#a314ea3c2b307e14c226b5dcdf3a25bb2":[11,0,51,0,11],
 "structvst3_1_1_application_plugin.html#a3af718dda38c4cd29a699cc00e7717b4":[11,0,51,0,1],
 "structvst3_1_1_application_plugin.html#a5487e8d9b19a378d327cb08627eae5a6":[11,0,51,0,9],

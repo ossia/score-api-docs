@@ -1,5 +1,11 @@
 var NAVTREEINDEX61 =
 {
+"struct_std_variant_data_stream_serializer.html#af8d39173f4f836d43852f52cffc1f6f4":[11,0,401,4],
+"struct_std_variant_j_s_o_n_deserializer.html":[11,0,402],
+"struct_std_variant_j_s_o_n_deserializer.html#a601b7e218d41d6fad28b2d008ff4b5bf":[11,0,402,0],
+"struct_std_variant_j_s_o_n_deserializer.html#a635eb96653cecc3f12d36f67a2747ff5":[11,0,402,2],
+"struct_std_variant_j_s_o_n_deserializer.html#a987216dc4740a332accb7af65b0cd5d6":[11,0,402,4],
+"struct_std_variant_j_s_o_n_deserializer.html#ab71d295af467425ea28751e3703d4c08":[11,0,402,1],
 "struct_std_variant_j_s_o_n_deserializer.html#acd4c95e96caad026719076720f416007":[11,0,402,3],
 "struct_std_variant_j_s_o_n_serializer.html":[11,0,403],
 "struct_std_variant_j_s_o_n_serializer.html#a4781fb8e7c5bbe43a8344b14aa341aa6":[11,0,403,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX61 =
 "struct_value_message.html#a4cb12bc82a235bb8cab273abf210ea54":[11,0,526,2],
 "struct_value_message.html#a83bce8412388e5be0b08aa4e94e11271":[11,0,526,3],
 "struct_value_message.html#a979aba836343403db928462ca450f8cc":[11,0,526,4],
-"struct_value_message.html#ab226c0c5e19ba79587a05f6e84050c11":[11,0,526,5],
-"struct_value_message.html#ab4621a385b9f664de53d8bb9cf440667":[11,0,526,0],
-"struct_value_message.html#ac0af341855c22a05aed779c2c73d6b9b":[11,0,526,1],
-"struct_value_variant_datastream_serializer.html":[11,0,528],
-"struct_value_variant_datastream_serializer.html#a5b1592b681063dca2704fcc07f791b53":[11,0,528,0],
-"struct_value_variant_datastream_serializer.html#a8c6ddf75c3ad11814028cc62fdb2e444":[11,0,528,1],
-"struct_variant_data_stream_deserializer.html":[11,0,529]
+"struct_value_message.html#ab226c0c5e19ba79587a05f6e84050c11":[11,0,526,5]
 };

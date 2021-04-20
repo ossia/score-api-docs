@@ -134,50 +134,51 @@ $(document).ready(function(){initNavTree('score-plugin-vst3_2_vst3_2_library_8hp
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;          <a class="code" href="struct_library_1_1_process_data.html">Library::ProcessData</a> parent_data{</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            {key, vst.name, QString{}}, {}, {}, {}</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;          };</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;          <span class="keyword">auto</span>&amp; node = parent.emplace_back(std::move(parent_data), &amp;parent);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;          <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; cls : vst.classInfo)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;          {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keyword">auto</span> name = QString::fromStdString(cls.name());</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keyword">auto</span> vendor = QString::fromStdString(cls.vendor());</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keyword">auto</span> desc = QString::fromStdString(cls.version());</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keyword">auto</span> uid = QString{<span class="stringliteral">&quot;%1/::/%2&quot;</span>}.arg(vst.path).arg(name);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <a class="code" href="struct_library_1_1_process_data.html">Library::ProcessData</a> classdata{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;              {key, name, uid}, {}, vendor, desc</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            };</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">if</span>(parent.author.isEmpty())</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;              parent.author = vendor;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">if</span>(vst.classInfo.size() == 1)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;              parent.customData = uid;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            node.emplace_back(std::move(classdata), &amp;node);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;          }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    };</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    reset_plugs();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    con(plug, &amp;vst3::ApplicationPlugin::vstChanged, <span class="keyword">this</span>, [=, &amp;model, &amp;parent] {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      model.beginResetModel();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      parent.resize(0);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      reset_plugs();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      model.endResetModel();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    });</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;          <span class="keyword">auto</span>&amp; node = Library::addToLibrary(parent, std::move(parent_data));</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;          <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; cls : vst.classInfo)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;          {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keyword">auto</span> name = QString::fromStdString(cls.name());</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keyword">auto</span> vendor = QString::fromStdString(cls.vendor());</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keyword">auto</span> desc = QString::fromStdString(cls.version());</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keyword">auto</span> uid = QString{<span class="stringliteral">&quot;%1/::/%2&quot;</span>}.arg(vst.path).arg(name);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <a class="code" href="struct_library_1_1_process_data.html">Library::ProcessData</a> classdata{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;              {key, name, uid}, {}, vendor, desc</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            };</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordflow">if</span>(parent.author.isEmpty())</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;              parent.author = vendor;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">if</span>(vst.classInfo.size() == 1)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;              parent.customData = uid;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            Library::addToLibrary(node, std::move(classdata));</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;          }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    };</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    reset_plugs();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    con(plug, &amp;vst3::ApplicationPlugin::vstChanged, <span class="keyword">this</span>, [=, &amp;model, &amp;parent] {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      model.beginResetModel();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      parent.resize(0);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      reset_plugs();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      model.endResetModel();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    });</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_tree_node_html"><div class="ttname"><a href="class_tree_node.html">TreeNode&lt; ProcessData &gt;</a></div></div>
-<div class="ttc" id="aclass_library_1_1_processes_item_model_html"><div class="ttname"><a href="class_library_1_1_processes_item_model.html">Library::ProcessesItemModel</a></div><div class="ttdef"><b>Definition:</b> ProcessesItemModel.hpp:31</div></div>
+<div class="ttc" id="aclass_library_1_1_processes_item_model_html"><div class="ttname"><a href="class_library_1_1_processes_item_model.html">Library::ProcessesItemModel</a></div><div class="ttdef"><b>Definition:</b> ProcessesItemModel.hpp:35</div></div>
 <div class="ttc" id="aclassvst3_1_1_library_handler_html"><div class="ttname"><a href="classvst3_1_1_library_handler.html">vst3::LibraryHandler</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst3/Vst3/Library.hpp:12</div></div>
 <div class="ttc" id="astructvst3_1_1_application_plugin_html"><div class="ttname"><a href="structvst3_1_1_application_plugin.html">vst3::ApplicationPlugin</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst3/Vst3/ApplicationPlugin.hpp:98</div></div>
 <div class="ttc" id="astruct_metadata_html"><div class="ttname"><a href="struct_metadata.html">Metadata</a></div><div class="ttdoc">Static metadata implementation.</div><div class="ttdef"><b>Definition:</b> lib/score/tools/Metadata.hpp:36</div></div>
 <div class="ttc" id="astructscore_1_1_g_u_i_application_context_html_a009d1e53ac9b30fc0f4d787ea677ce2a"><div class="ttname"><a href="structscore_1_1_g_u_i_application_context.html#a009d1e53ac9b30fc0f4d787ea677ce2a">score::GUIApplicationContext::applicationPlugin</a></div><div class="ttdeci">T &amp; applicationPlugin() const</div><div class="ttdoc">Access a specific application plug-in instance.</div><div class="ttdef"><b>Definition:</b> GUIApplicationContext.hpp:69</div></div>
 <div class="ttc" id="aclass_library_1_1_library_interface_html"><div class="ttname"><a href="class_library_1_1_library_interface.html">Library::LibraryInterface</a></div><div class="ttdef"><b>Definition:</b> LibraryInterface.hpp:16</div></div>
 <div class="ttc" id="astructscore_1_1_g_u_i_application_context_html"><div class="ttname"><a href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a></div><div class="ttdoc">Specializes ApplicationContext with the QMainWindow.</div><div class="ttdef"><b>Definition:</b> GUIApplicationContext.hpp:14</div></div>
-<div class="ttc" id="astruct_library_1_1_process_data_html"><div class="ttname"><a href="struct_library_1_1_process_data.html">Library::ProcessData</a></div><div class="ttdef"><b>Definition:</b> ProcessesItemModel.hpp:22</div></div>
+<div class="ttc" id="astruct_library_1_1_process_data_html"><div class="ttname"><a href="struct_library_1_1_process_data.html">Library::ProcessData</a></div><div class="ttdef"><b>Definition:</b> ProcessesItemModel.hpp:24</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
