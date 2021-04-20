@@ -1,5 +1,6 @@
 var NAVTREEINDEX65 =
 {
+"structscore_1_1_string_constants.html#aa8127745f1cbbe724a6bd36362a13d4b":[11,0,42,239,19],
 "structscore_1_1_string_constants.html#aa9f374e8aafd59bb00bb30b1c0c8272b":[11,0,42,239,67],
 "structscore_1_1_string_constants.html#aac61a30225f33137762c0d8f66c1f63a":[11,0,42,239,69],
 "structscore_1_1_string_constants.html#aad78e08e456c1d9f6bf115b9c9538651":[11,0,42,239,95],
@@ -248,6 +249,5 @@ var NAVTREEINDEX65 =
 "structunused__t.html#a471b44a30e3890fddbf892692408c744":[11,0,523,0],
 "structvisitor__abstract__entity__tag.html":[11,0,536],
 "structvisitor__abstract__object__tag.html":[11,0,537],
-"structvisitor__abstract__tag.html":[11,0,538],
-"structvisitor__default__tag.html":[11,0,539]
+"structvisitor__abstract__tag.html":[11,0,538]
 };

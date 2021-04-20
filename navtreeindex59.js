@@ -109,12 +109,13 @@ var NAVTREEINDEX59 =
 "struct_scenario_1_1_interval_properties.html":[11,0,41,126],
 "struct_scenario_1_1_interval_properties.html#a3f15f5012193bdea00efbdec1bdd785a":[11,0,41,126,3],
 "struct_scenario_1_1_interval_properties.html#a4710d77b7ee37141a2d047c426c4235d":[11,0,41,126,2],
-"struct_scenario_1_1_interval_properties.html#a48c9524e17c57a53a8bc6f4bb40e12a0":[11,0,41,126,4],
-"struct_scenario_1_1_interval_properties.html#a6745babe551a9150a953a9f3ff0c18af":[11,0,41,126,5],
-"struct_scenario_1_1_interval_properties.html#a7be68a645c18ad03e322c05396270c66":[11,0,41,126,7],
+"struct_scenario_1_1_interval_properties.html#a48c9524e17c57a53a8bc6f4bb40e12a0":[11,0,41,126,5],
+"struct_scenario_1_1_interval_properties.html#a6745babe551a9150a953a9f3ff0c18af":[11,0,41,126,6],
+"struct_scenario_1_1_interval_properties.html#a7be68a645c18ad03e322c05396270c66":[11,0,41,126,8],
+"struct_scenario_1_1_interval_properties.html#a8f766b8e3eeb222aa3c3f97c63c073d5":[11,0,41,126,4],
 "struct_scenario_1_1_interval_properties.html#aca3d8a9d7f620edde130856b3f100ec1":[11,0,41,126,1],
 "struct_scenario_1_1_interval_properties.html#acb0b92de78ffbff45ee3685f6fa44e48":[11,0,41,126,0],
-"struct_scenario_1_1_interval_properties.html#ae097f0de54e6fb1717c390e232b15318":[11,0,41,126,6],
+"struct_scenario_1_1_interval_properties.html#ae097f0de54e6fb1717c390e232b15318":[11,0,41,126,7],
 "struct_scenario_1_1_interval_save_data.html":[11,0,41,129],
 "struct_scenario_1_1_interval_save_data.html#a615bba330d287b022407ee3623160193":[11,0,41,129,4],
 "struct_scenario_1_1_interval_save_data.html#a6fb8721d82d05533d0cb07a7fffee5b2":[11,0,41,129,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX59 =
 "struct_scenario_1_1_slot_presenter.html#ae25d875d56bb0cc55ac887c7b128292e":[11,0,41,248,0],
 "struct_scenario_1_1_slot_presenter.html#aee26e4eff59278127d2fedbc77dcf123":[11,0,41,248,5],
 "struct_scenario_1_1_snapshot_action.html":[11,0,41,251],
-"struct_scenario_1_1_snapshot_action.html#a1d9107ce8d8e52f6d61419b0ef4931ed":[11,0,41,251,0],
-"struct_scenario_1_1_start_date_comparator.html":[11,0,41,254]
+"struct_scenario_1_1_snapshot_action.html#a1d9107ce8d8e52f6d61419b0ef4931ed":[11,0,41,251,0]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX60 =
 {
+"struct_scenario_1_1_start_date_comparator.html":[11,0,41,254],
 "struct_scenario_1_1_start_date_comparator.html#ade4223699e9054a47a65dad2dacd0b1b":[11,0,41,254,1],
 "struct_scenario_1_1_start_date_comparator.html#aee089766bacda5bcc0b06d14d40d7779":[11,0,41,254,0],
 "struct_scenario_1_1_state_overlays.html":[11,0,41,259],
@@ -248,6 +249,5 @@ var NAVTREEINDEX60 =
 "struct_std_variant_data_stream_serializer.html":[11,0,401],
 "struct_std_variant_data_stream_serializer.html#a057301684d5722736b01501671ffdabb":[11,0,401,2],
 "struct_std_variant_data_stream_serializer.html#a3eab9b363d19d982b1c6331bad7c03d8":[11,0,401,3],
-"struct_std_variant_data_stream_serializer.html#ab7102f6b0d77ed57908effef6e875e3b":[11,0,401,0],
-"struct_std_variant_data_stream_serializer.html#acc4f4a15d2c2c980aba128ae37a394e3":[11,0,401,1]
+"struct_std_variant_data_stream_serializer.html#ab7102f6b0d77ed57908effef6e875e3b":[11,0,401,0]
 };

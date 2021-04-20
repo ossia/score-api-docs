@@ -1,5 +1,6 @@
 var NAVTREEINDEX64 =
 {
+"structscore_1_1_hierarchical_member.html":[11,0,42,113],
 "structscore_1_1_hierarchical_member.html#a58395ed394a8009e45cbc032e751e920":[11,0,42,113,1],
 "structscore_1_1_hierarchical_member.html#acb359525555f83f75779444381383b31":[11,0,42,113,0],
 "structscore_1_1_id_gen.html":[11,0,42,118],
@@ -248,6 +249,5 @@ var NAVTREEINDEX64 =
 "structscore_1_1_string_constants.html#aa0111f53eb2e4db8e8ccb85a978d1959":[11,0,42,239,76],
 "structscore_1_1_string_constants.html#aa04fba02b2bb4dd8da9bc679c8dc3ee2":[11,0,42,239,90],
 "structscore_1_1_string_constants.html#aa5183bec32fdab40754c0b70ff0432d1":[11,0,42,239,0],
-"structscore_1_1_string_constants.html#aa687bafcc655e9be5217e1f7f13819b6":[11,0,42,239,82],
-"structscore_1_1_string_constants.html#aa8127745f1cbbe724a6bd36362a13d4b":[11,0,42,239,19]
+"structscore_1_1_string_constants.html#aa687bafcc655e9be5217e1f7f13819b6":[11,0,42,239,82]
 };
