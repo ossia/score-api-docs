@@ -1,5 +1,6 @@
 var NAVTREEINDEX55 =
 {
+"struct_nodes_1_1_pulse_to_note_1_1_node_1_1_state.html":[11,0,30,20,0,2],
 "struct_nodes_1_1_pulse_to_note_1_1_node_1_1_state.html#a0946631054e6b31745392ad62600a20b":[11,0,30,20,0,2,1],
 "struct_nodes_1_1_pulse_to_note_1_1_node_1_1_state.html#ad82e07a5e87d3c5ee123670cc9997387":[11,0,30,20,0,2,0],
 "struct_nodes_1_1_pulse_to_note_1_1_node_1_1val__visitor.html":[11,0,30,20,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX55 =
 "struct_process_1_1_log_float_slider.html#ad24c6464aea69258f8a856f8c0bb8ec1":[11,0,35,57,0],
 "struct_process_1_1_magnetic_info.html":[11,0,35,58],
 "struct_process_1_1_magnetic_info.html#a5dc297e0f55d4bbfab3c92aee7346e93":[11,0,35,58,0],
-"struct_process_1_1_magnetic_info.html#a77d6bf73b8fd25e3d44ded1c6c1cd9e6":[11,0,35,58,2],
-"struct_process_1_1_magnetic_info.html#a8150ac3d0a59d9a38182095611e8caa3":[11,0,35,58,3]
+"struct_process_1_1_magnetic_info.html#a77d6bf73b8fd25e3d44ded1c6c1cd9e6":[11,0,35,58,2]
 };

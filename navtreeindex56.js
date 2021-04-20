@@ -1,5 +1,6 @@
 var NAVTREEINDEX56 =
 {
+"struct_process_1_1_magnetic_info.html#a8150ac3d0a59d9a38182095611e8caa3":[11,0,35,58,3],
 "struct_process_1_1_magnetic_info.html#a96f31e2800f223f03e5043439aa899c4":[11,0,35,58,1],
 "struct_process_1_1_multi_script_dialog_1_1_editor_tab.html":[11,0,35,64,0],
 "struct_process_1_1_multi_script_dialog_1_1_editor_tab.html#a4fc533e5eee1a0e69ced41c296b351e3":[11,0,35,64,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX56 =
 "struct_protocols_1_1_phidget_specific_settings.html":[11,0,36,50],
 "struct_protocols_1_1_serial_specific_settings.html":[11,0,36,55],
 "struct_protocols_1_1_serial_specific_settings.html#a0175d7cfa698fb7ed00b5380bdba05a6":[11,0,36,55,1],
-"struct_protocols_1_1_serial_specific_settings.html#ae724d472ff0bc96dbb35c7b0a3d12e05":[11,0,36,55,0],
-"struct_protocols_1_1_settings_1_1_midi_a_p_i.html":[11,0,36,1,0]
+"struct_protocols_1_1_serial_specific_settings.html#ae724d472ff0bc96dbb35c7b0a3d12e05":[11,0,36,55,0]
 };

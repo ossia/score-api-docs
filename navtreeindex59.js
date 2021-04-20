@@ -1,5 +1,6 @@
 var NAVTREEINDEX59 =
 {
+"struct_scenario_1_1_command_1_1_message_pairs.html#aefe07c0b9d9fdb25401ec426ebbf0c91":[11,0,41,0,57,2],
 "struct_scenario_1_1_command_1_1color__converter.html":[11,0,41,0,22],
 "struct_scenario_1_1_command_1_1color__converter.html#a0aeb950ec0f4631cb4531f4b9c85f726":[11,0,41,0,22,0],
 "struct_scenario_1_1_command_1_1color__converter.html#a9bd944586e5603066b131e67f7b0165a":[11,0,41,0,22,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX59 =
 "struct_scenario_1_1_state_overlays.html":[11,0,41,259],
 "struct_scenario_1_1_state_overlays.html#a29e65e2d8e63620bfe2321e05b2118d8":[11,0,41,259,0],
 "struct_scenario_1_1_state_overlays.html#ab5fd66b5f5a9b23be365db1fbf53b4a9":[11,0,41,259,3],
-"struct_scenario_1_1_state_overlays.html#ad13806bb7ccb2da5f1808534c8da6d31":[11,0,41,259,1],
-"struct_scenario_1_1_state_overlays.html#af072db8932a76c1eb6186f12e3d2f00a":[11,0,41,259,2]
+"struct_scenario_1_1_state_overlays.html#ad13806bb7ccb2da5f1808534c8da6d31":[11,0,41,259,1]
 };

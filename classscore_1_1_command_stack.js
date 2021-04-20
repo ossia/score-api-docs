@@ -53,6 +53,7 @@ var classscore_1_1_command_stack =
     [ "undoText", "classscore_1_1_command_stack.html#a42d0cd62248338b94579fc1c7e792d42", null ],
     [ "undoTextChanged", "classscore_1_1_command_stack.html#af2ef66a7a2e59b6effffee53168083aa", null ],
     [ "undoTextChanged", "classscore_1_1_command_stack.html#aea50f1de30a11a6241ffa4f2c8b64f84", null ],
+    [ "validateDocument", "classscore_1_1_command_stack.html#a99f584413a0d1ad62bfb644fc289c854", null ],
     [ "CommandBackupFile", "classscore_1_1_command_stack.html#acd1bd407f63a31a546c030cbed9ad3c1", null ],
     [ "CommandStackBackup", "classscore_1_1_command_stack.html#a533857aecea4322a4e647eb54d1100aa", null ],
     [ "w_state", "classscore_1_1_command_stack.html#a95fd301f2b254a874323b211684f6281", null ],

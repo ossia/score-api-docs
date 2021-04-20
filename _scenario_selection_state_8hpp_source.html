@@ -182,8 +182,8 @@ $(document).ready(function(){initNavTree('_scenario_selection_state_8hpp_source.
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">if</span> constexpr (std::is_same_v&lt;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                      std::remove_reference_t&lt;decltype(presenter)&gt;,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                      <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_scenario_presenter.html">Scenario::ScenarioPresenter</a>&gt;)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                      std::remove_const_t&lt;std::remove_reference_t&lt;decltype(presenter)&gt;&gt;,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                      <a class="code" href="class_scenario_1_1_scenario_presenter.html">Scenario::ScenarioPresenter</a>&gt;)</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    {</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; elt : presenter.getGraphIntervals())</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      {</div>
