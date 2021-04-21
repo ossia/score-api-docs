@@ -1,5 +1,14 @@
 var NAVTREEINDEX54 =
 {
+"struct_metadata_3_01_pretty_name__k_00_01_faust_d_s_p_1_1_fx_3_01mydsp_01_4_01_4.html":[11,0,172],
+"struct_metadata_3_01_process_1_1_descriptor__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html":[11,0,173],
+"struct_metadata_3_01_process_1_1_descriptor__k_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[11,0,174],
+"struct_metadata_3_01_process_1_1_process_flags__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html":[11,0,175],
+"struct_metadata_3_01_process_1_1_process_flags__k_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[11,0,176],
+"struct_metadata_3_01_tags__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html":[11,0,177],
+"struct_metadata_3_01_tags__k_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[11,0,178],
+"struct_midi_1_1_midi_style.html":[11,0,27,6],
+"struct_midi_1_1_midi_style.html#a122486ab7c8003571b8f76f1d392e96e":[11,0,27,6,0],
 "struct_midi_1_1_midi_style.html#a29d59aeac066eedd40324bed009b876c":[11,0,27,6,6],
 "struct_midi_1_1_midi_style.html#a35edc943b7bac03d4117626a2b3c7c72":[11,0,27,6,3],
 "struct_midi_1_1_midi_style.html#a3d506335822b4e143fcf3f5d4fa9109d":[11,0,27,6,5],
@@ -240,14 +249,5 @@ var NAVTREEINDEX54 =
 "struct_nodes_1_1_metro_1_1_node_1_1_metadata.html":[11,0,30,17,0,0],
 "struct_nodes_1_1_midi_util_1_1_node.html":[11,0,30,18,0],
 "struct_nodes_1_1_midi_util_1_1_node.html#a11cac1032856a782f1d8dd6ac0aefabc":[11,0,30,18,0,2],
-"struct_nodes_1_1_midi_util_1_1_node_1_1_metadata.html":[11,0,30,18,0,0],
-"struct_nodes_1_1_midi_util_1_1_node_1_1_state.html":[11,0,30,18,0,1],
-"struct_nodes_1_1_midi_util_1_1_node_1_1_state.html#a21555f4b6b2c9fcd12ac4d53052a8949":[11,0,30,18,0,1,1],
-"struct_nodes_1_1_midi_util_1_1_node_1_1_state.html#a58bdd7eee84efa87a4fad9480c69ae96":[11,0,30,18,0,1,2],
-"struct_nodes_1_1_midi_util_1_1_node_1_1_state.html#adb773ae83389f7028e70cc23626cca86":[11,0,30,18,0,1,0],
-"struct_nodes_1_1_midi_util_1_1_node_1_1_state.html#ae53f4ac0030b7a8b67612c5cc8d511f1":[11,0,30,18,0,1,3],
-"struct_nodes_1_1_pitch_to_value_1_1_node.html":[11,0,30,19,0],
-"struct_nodes_1_1_pitch_to_value_1_1_node.html#aa8e3e35c962afe3114265bdb0176144e":[11,0,30,19,0,1],
-"struct_nodes_1_1_pitch_to_value_1_1_node_1_1_metadata.html":[11,0,30,19,0,0],
-"struct_nodes_1_1_pulse_to_note_1_1_node.html":[11,0,30,20,0]
+"struct_nodes_1_1_midi_util_1_1_node_1_1_metadata.html":[11,0,30,18,0,0]
 };

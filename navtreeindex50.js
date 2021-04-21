@@ -1,5 +1,14 @@
 var NAVTREEINDEX50 =
 {
+"struct_edge.html#a2f37b72f044427961d6730943daf10e0":[11,0,95,1],
+"struct_edge.html#a38588d542cb6e14f655fe571fbef2dd0":[11,0,95,3],
+"struct_edge.html#a696bc0144ccab153a129db068529a464":[11,0,95,0],
+"struct_edge.html#a91d31e1053e989ed84f8763aac8c93a6":[11,0,95,2],
+"struct_empty_decoder.html":[11,0,96],
+"struct_empty_decoder.html#a2da091c8b3219456e1b455827ecfe0bf":[11,0,96,3],
+"struct_empty_decoder.html#a4261e4ac96e6bbbc45d440c4a49f4368":[11,0,96,4],
+"struct_empty_decoder.html#a73498b463c8b5ca676df0a0a1722f6a3":[11,0,96,0],
+"struct_empty_decoder.html#ae0374bd6986c20809a6f6790e19926d7":[11,0,96,2],
 "struct_empty_decoder.html#af1db5decc633173af465d6014cac6e67":[11,0,96,1],
 "struct_engine_1_1score__to__ossia_1_1_curve_traits.html":[11,0,8,0,0],
 "struct_engine_1_1score__to__ossia_1_1_curve_traits_3_01double_01_4.html":[11,0,8,0,1],
@@ -240,14 +249,5 @@ var NAVTREEINDEX50 =
 "struct_filter_node.html#af4478e23cba9e426141d1d375bedb143":[11,0,106,3],
 "struct_filter_node.html#af7dbb0042c49d9e3743651b5d53a8282":[11,0,106,2],
 "struct_g_p_u_video_decoder.html":[11,0,113],
-"struct_g_p_u_video_decoder.html#a36726d539b76cebce5b39202e3394fa4":[11,0,113,0],
-"struct_g_p_u_video_decoder.html#a7ec06db8fa27777e1b3b00a65c1d4d03":[11,0,113,1],
-"struct_g_p_u_video_decoder.html#ab89f2bb566c6db22ad4462de2318bece":[11,0,113,3],
-"struct_g_p_u_video_decoder.html#aba832f3828d904ff0713871f058254bd":[11,0,113,2],
-"struct_gfx_1_1_camera_settings.html":[11,0,13,12],
-"struct_gfx_1_1_camera_settings.html#a25551c9b0211e5d371f9248be832ae03":[11,0,13,12,0],
-"struct_gfx_1_1_camera_settings.html#a395e703271b5c76ceee531202ae66bae":[11,0,13,12,1],
-"struct_gfx_1_1_camera_settings.html#a707454a6640caa086c6743527c6a500a":[11,0,13,12,3],
-"struct_gfx_1_1_camera_settings.html#ab159a0fda2c0408710f13d608d930d22":[11,0,13,12,2],
-"struct_gfx_1_1_image.html":[11,0,13,29]
+"struct_g_p_u_video_decoder.html#a36726d539b76cebce5b39202e3394fa4":[11,0,113,0]
 };

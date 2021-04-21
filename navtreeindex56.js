@@ -1,5 +1,14 @@
 var NAVTREEINDEX56 =
 {
+"struct_process_1_1_layer_context.html#a3b4287209f68957bd8d3ce2423b12893":[11,0,35,46,0],
+"struct_process_1_1_layer_context.html#a8fc5a6bb773b67a2e114b868baa1148d":[11,0,35,46,1],
+"struct_process_1_1_line_edit.html":[11,0,35,55],
+"struct_process_1_1_line_edit.html#aacbd7c5ebf52a782504dfcc51fa376f0":[11,0,35,55,1],
+"struct_process_1_1_line_edit.html#adb8cfc8efe5007d5a03d995e78045fc0":[11,0,35,55,2],
+"struct_process_1_1_line_edit.html#ae9029920910b39b6b3158ff8a443c056":[11,0,35,55,0],
+"struct_process_1_1_log_float_slider.html":[11,0,35,57],
+"struct_process_1_1_log_float_slider.html#a4077acda2f9621a81709dc6ba10e72b7":[11,0,35,57,1],
+"struct_process_1_1_log_float_slider.html#a4c564a77ce4ef0cf1298ce76b35a67ac":[11,0,35,57,2],
 "struct_process_1_1_log_float_slider.html#a91fd2ed4543d2fabed644ba156475d85":[11,0,35,57,4],
 "struct_process_1_1_log_float_slider.html#ab232d9571bd3a55ceaae832c8cc25608":[11,0,35,57,3],
 "struct_process_1_1_log_float_slider.html#ad24c6464aea69258f8a856f8c0bb8ec1":[11,0,35,57,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX56 =
 "struct_protocols_1_1_minuit_specific_settings.html":[11,0,36,36],
 "struct_protocols_1_1_minuit_specific_settings.html#a0cc7cf9446f9dd2f2b42e973c60cb50b":[11,0,36,36,2],
 "struct_protocols_1_1_minuit_specific_settings.html#a6f5cf61aeea82ab89aa291a557b14094":[11,0,36,36,1],
-"struct_protocols_1_1_minuit_specific_settings.html#ad150476803eb85a197987c7e2c36d334":[11,0,36,36,3],
-"struct_protocols_1_1_minuit_specific_settings.html#adfbb0ab883c705e80750d1cf9c9c91e3":[11,0,36,36,0],
-"struct_protocols_1_1_minuit_specific_settings.html#afd60fbe675c5103382d16b52ab3495b0":[11,0,36,36,4],
-"struct_protocols_1_1_o_s_c_query_specific_settings.html":[11,0,36,45],
-"struct_protocols_1_1_o_s_c_query_specific_settings.html#aabc9d9431d38e1b5e0cc2d46db747e0e":[11,0,36,45,1],
-"struct_protocols_1_1_o_s_c_query_specific_settings.html#ae363910c82c3309055357376008dd8cc":[11,0,36,45,0],
-"struct_protocols_1_1_o_s_c_specific_settings.html":[11,0,36,46],
-"struct_protocols_1_1_o_s_c_specific_settings.html#a01e5f5b65a36bb5d390be771dd74ee43":[11,0,36,46,2],
-"struct_protocols_1_1_o_s_c_specific_settings.html#a26003f65edde8d5480a3dd94b79ae90d":[11,0,36,46,4],
-"struct_protocols_1_1_o_s_c_specific_settings.html#a83c8a0f0a0aa0db1e78223b86ceaf608":[11,0,36,46,0]
+"struct_protocols_1_1_minuit_specific_settings.html#ad150476803eb85a197987c7e2c36d334":[11,0,36,36,3]
 };

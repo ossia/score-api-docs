@@ -1,5 +1,14 @@
 var NAVTREEINDEX61 =
 {
+"struct_std_variant_data_stream_deserializer.html#a2e652c9db533b3814eb49e36afcefd8a":[11,0,400,0],
+"struct_std_variant_data_stream_deserializer.html#a91df4783f92f7430a931e54e03a9b7a1":[11,0,400,5],
+"struct_std_variant_data_stream_deserializer.html#aa5d9264e3c9b3496899519955cf33d17":[11,0,400,1],
+"struct_std_variant_data_stream_deserializer.html#ab45325f76e7467a179814afcae7952d9":[11,0,400,2],
+"struct_std_variant_data_stream_deserializer.html#abca3d5c440fa7d82a0572bb7d2d32eda":[11,0,400,4],
+"struct_std_variant_data_stream_serializer.html":[11,0,401],
+"struct_std_variant_data_stream_serializer.html#a057301684d5722736b01501671ffdabb":[11,0,401,2],
+"struct_std_variant_data_stream_serializer.html#a3eab9b363d19d982b1c6331bad7c03d8":[11,0,401,3],
+"struct_std_variant_data_stream_serializer.html#ab7102f6b0d77ed57908effef6e875e3b":[11,0,401,0],
 "struct_std_variant_data_stream_serializer.html#acc4f4a15d2c2c980aba128ae37a394e3":[11,0,401,1],
 "struct_std_variant_data_stream_serializer.html#af8d39173f4f836d43852f52cffc1f6f4":[11,0,401,4],
 "struct_std_variant_j_s_o_n_deserializer.html":[11,0,402],
@@ -240,14 +249,5 @@ var NAVTREEINDEX61 =
 "struct_ui_1_1_signal_display_1_1_node_1_1_layer.html":[11,0,48,0,0,0],
 "struct_ui_1_1_signal_display_1_1_node_1_1_layer.html#a334c01793ce5702aa73e30db4014c163":[11,0,48,0,0,0,2],
 "struct_ui_1_1_signal_display_1_1_node_1_1_layer.html#a5ab846d77df922de3dff76781cd7a6e2":[11,0,48,0,0,0,1],
-"struct_ui_1_1_signal_display_1_1_node_1_1_layer.html#a992c0ad305660a53db8a3852b86473fd":[11,0,48,0,0,0,5],
-"struct_ui_1_1_signal_display_1_1_node_1_1_layer.html#a9ea113d6675bebad37f728df542754c9":[11,0,48,0,0,0,6],
-"struct_ui_1_1_signal_display_1_1_node_1_1_layer.html#ad2419d13186463bb845674625b0fc0f8":[11,0,48,0,0,0,3],
-"struct_ui_1_1_signal_display_1_1_node_1_1_layer.html#aed2dee8ba38d451ae197494bacc28a0f":[11,0,48,0,0,0,4],
-"struct_ui_1_1_signal_display_1_1_node_1_1_layer.html#af4ce968995bed682e2171001965edd4e":[11,0,48,0,0,0,0],
-"struct_ui_1_1_signal_display_1_1_node_1_1_metadata.html":[11,0,48,0,0,1],
-"struct_value_message.html":[11,0,526],
-"struct_value_message.html#a4cb12bc82a235bb8cab273abf210ea54":[11,0,526,2],
-"struct_value_message.html#a83bce8412388e5be0b08aa4e94e11271":[11,0,526,3],
-"struct_value_message.html#a979aba836343403db928462ca450f8cc":[11,0,526,4]
+"struct_ui_1_1_signal_display_1_1_node_1_1_layer.html#a992c0ad305660a53db8a3852b86473fd":[11,0,48,0,0,0,5]
 };

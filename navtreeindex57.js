@@ -1,5 +1,14 @@
 var NAVTREEINDEX57 =
 {
+"struct_protocols_1_1_minuit_specific_settings.html#adfbb0ab883c705e80750d1cf9c9c91e3":[11,0,36,36,0],
+"struct_protocols_1_1_minuit_specific_settings.html#afd60fbe675c5103382d16b52ab3495b0":[11,0,36,36,4],
+"struct_protocols_1_1_o_s_c_query_specific_settings.html":[11,0,36,45],
+"struct_protocols_1_1_o_s_c_query_specific_settings.html#aabc9d9431d38e1b5e0cc2d46db747e0e":[11,0,36,45,1],
+"struct_protocols_1_1_o_s_c_query_specific_settings.html#ae363910c82c3309055357376008dd8cc":[11,0,36,45,0],
+"struct_protocols_1_1_o_s_c_specific_settings.html":[11,0,36,46],
+"struct_protocols_1_1_o_s_c_specific_settings.html#a01e5f5b65a36bb5d390be771dd74ee43":[11,0,36,46,2],
+"struct_protocols_1_1_o_s_c_specific_settings.html#a26003f65edde8d5480a3dd94b79ae90d":[11,0,36,46,4],
+"struct_protocols_1_1_o_s_c_specific_settings.html#a83c8a0f0a0aa0db1e78223b86ceaf608":[11,0,36,46,0],
 "struct_protocols_1_1_o_s_c_specific_settings.html#aa41952fc4b9597254466ef68e8acb947":[11,0,36,46,3],
 "struct_protocols_1_1_o_s_c_specific_settings.html#ac6c80bef17252df502c1cea6b99fe601":[11,0,36,46,1],
 "struct_protocols_1_1_phidget_specific_settings.html":[11,0,36,50],
@@ -240,14 +249,5 @@ var NAVTREEINDEX57 =
 "struct_r_g_b0_decoder.html":[11,0,350],
 "struct_r_g_b0_decoder.html#a0ff6e00607182843a139a4dae91b95b5":[11,0,350,8],
 "struct_r_g_b0_decoder.html#a1bde0425686e00d3a6bc289d31f8ef28":[11,0,350,3],
-"struct_r_g_b0_decoder.html#a825219b9534380f3e4f9e48171e71474":[11,0,350,7],
-"struct_r_g_b0_decoder.html#a8e9e7b3cd2615a851af25b9e9d15e26f":[11,0,350,1],
-"struct_r_g_b0_decoder.html#a9634c52d64937b61b9c2e38152ae75e5":[11,0,350,0],
-"struct_r_g_b0_decoder.html#ad8b71c56b66e3a5e388db07320437335":[11,0,350,2],
-"struct_r_g_b0_decoder.html#ada190ab55a34cb669d9eac9047c75729":[11,0,350,6],
-"struct_r_g_b0_decoder.html#adc5f45fdbc4fa99194a1c821f94ccb46":[11,0,350,5],
-"struct_r_g_b0_decoder.html#ae5a415fc06b6edadda239db9faa5f265":[11,0,350,4],
-"struct_recording_1_1_box.html":[11,0,37,2],
-"struct_recording_1_1_box.html#a721abe014117ce48acbc6449f0666db3":[11,0,37,2,0],
-"struct_recording_1_1_box.html#a8067c433c341792f1434368b960c7c6a":[11,0,37,2,1]
+"struct_r_g_b0_decoder.html#a825219b9534380f3e4f9e48171e71474":[11,0,350,7]
 };

@@ -1,5 +1,14 @@
 var NAVTREEINDEX18 =
 {
+"class_library_1_1_process_panel.html#a8a710bd2d01ec1c9611e8a0a9086ea72":[11,0,21,12,1],
+"class_library_1_1_process_panel.html#a91e51d64338468c43f916147a619d913":[11,0,21,12,0],
+"class_library_1_1_process_panel_factory.html":[11,0,21,13],
+"class_library_1_1_process_tree_view.html":[11,0,21,14],
+"class_library_1_1_process_tree_view.html#aaa754ff48f256020ace61bfeec30e7ab":[11,0,21,14,0],
+"class_library_1_1_process_tree_view.html#ae21530b6adaa303b370d51d4b02c3c46":[11,0,21,14,1],
+"class_library_1_1_process_widget.html":[11,0,21,15],
+"class_library_1_1_process_widget.html#a0ac62b2ff37992aeef8db8d93630ccc8":[11,0,21,15,1],
+"class_library_1_1_process_widget.html#a235a7c18cc8aed9d636710e65ef1e6c6":[11,0,21,15,3],
 "class_library_1_1_process_widget.html#a2f6218a4dc02634a87b170d1392c6eb8":[11,0,21,15,2],
 "class_library_1_1_process_widget.html#aa07fac732ef976949e2f9132e8cb7390":[11,0,21,15,4],
 "class_library_1_1_process_widget.html#aba6fc80de137b65074db350814c57cbe":[11,0,21,15,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX18 =
 "class_media_1_1_metro_1_1_view.html":[11,0,25,1,2],
 "class_media_1_1_metro_1_1_view.html#a67581d036bd6c54b78e002dd0637044f":[11,0,25,1,2,0],
 "class_media_1_1_set_max.html":[11,0,25,16],
-"class_media_1_1_set_max.html#a9a7ab366b514673602efd881a957ecd7":[11,0,25,16,0],
-"class_media_1_1_set_merge_in_count.html":[11,0,25,17],
-"class_media_1_1_set_merge_in_count.html#a476bcbcaede4d3bc400ae746cde3b493":[11,0,25,17,0],
-"class_media_1_1_set_min.html":[11,0,25,18],
-"class_media_1_1_set_min.html#a798f21d65c93f01f2ae2c58ac5011a2c":[11,0,25,18,0],
-"class_media_1_1_set_step_count.html":[11,0,25,19],
-"class_media_1_1_set_step_count.html#a5aa54f558fb1398c556a2ece05cf4a08":[11,0,25,19,0],
-"class_media_1_1_set_step_duration.html":[11,0,25,20],
-"class_media_1_1_set_step_duration.html#a3f0113831e2098f7d2e017cf93545e22":[11,0,25,20,0],
-"class_media_1_1_settings_1_1_model.html":[11,0,25,2,0]
+"class_media_1_1_set_max.html#a9a7ab366b514673602efd881a957ecd7":[11,0,25,16,0]
 };

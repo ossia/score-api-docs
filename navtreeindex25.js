@@ -1,5 +1,14 @@
 var NAVTREEINDEX25 =
 {
+"class_protocols_1_1_o_s_c_protocol_settings_widget.html#adb792e86a7126151570297f77474b0b2":[11,0,36,40,0],
+"class_protocols_1_1_o_s_c_query_device.html":[11,0,36,41],
+"class_protocols_1_1_o_s_c_query_device.html#a04294b5763f359a8b37756e010026ab5":[11,0,36,41,0],
+"class_protocols_1_1_o_s_c_query_device.html#a1b1f5c2e8b1a038137a21ad059d11b7a":[11,0,36,41,3],
+"class_protocols_1_1_o_s_c_query_device.html#a4423bced84a6ed4e54bfd13361b080bc":[11,0,36,41,2],
+"class_protocols_1_1_o_s_c_query_device.html#a56c740cd98592dd25d4b66345ae874ea":[11,0,36,41,7],
+"class_protocols_1_1_o_s_c_query_device.html#a5f884c121796272a4094d344d025944f":[11,0,36,41,4],
+"class_protocols_1_1_o_s_c_query_device.html#a6ff158154c63f6f80a556e640b9e6e9d":[11,0,36,41,1],
+"class_protocols_1_1_o_s_c_query_device.html#ab1f6263ef88f82ae523f44d95113b755":[11,0,36,41,5],
 "class_protocols_1_1_o_s_c_query_device.html#afddf29a67171983c4c0af2cbb0299dea":[11,0,36,41,6],
 "class_protocols_1_1_o_s_c_query_enumerator.html":[11,0,36,42],
 "class_protocols_1_1_o_s_c_query_enumerator.html#a193621de35319e280b139f0bc4db8971":[11,0,36,42,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX25 =
 "class_scenario_1_1_add_process_dialog.html#acea111c7f26a3835ef9c2279e105b7ac":[11,0,41,2,4],
 "class_scenario_1_1_address_bar_item.html":[11,0,41,4],
 "class_scenario_1_1_address_bar_item.html#a1b004c0ff61bc8c4baf13b22d075293b":[11,0,41,4,5],
-"class_scenario_1_1_address_bar_item.html#a58ef2789450ea966d50528b0aeb2d095":[11,0,41,4,4],
-"class_scenario_1_1_address_bar_item.html#a961c24085038d3cb8f8f2a06225efaba":[11,0,41,4,1],
-"class_scenario_1_1_address_bar_item.html#a9b3c3d8ff65763965a4c7a6050bb8462":[11,0,41,4,2],
-"class_scenario_1_1_address_bar_item.html#ac07226457dbf4107bfc516c6b801205c":[11,0,41,4,3],
-"class_scenario_1_1_address_bar_item.html#ad5776112b553050ecd5e5f5bdb4090f8":[11,0,41,4,0],
-"class_scenario_1_1_address_bar_item.html#ae38e61506c3fb928e8c2775c27476a8b":[11,0,41,4,6],
-"class_scenario_1_1_amovible_slot_footer.html":[11,0,41,5],
-"class_scenario_1_1_amovible_slot_footer.html#ac7df6278521f94417a65ab11054c56be":[11,0,41,5,0],
-"class_scenario_1_1_automation_drop_handler.html":[11,0,41,6],
-"class_scenario_1_1_base_element_context.html":[11,0,41,7]
+"class_scenario_1_1_address_bar_item.html#a58ef2789450ea966d50528b0aeb2d095":[11,0,41,4,4]
 };

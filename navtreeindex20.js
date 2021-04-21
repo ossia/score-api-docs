@@ -1,5 +1,14 @@
 var NAVTREEINDEX20 =
 {
+"class_midi_1_1_remove_notes.html#a203b75b5951ca9a795d6b286f95f29fe":[11,0,27,15,4],
+"class_midi_1_1_remove_notes.html#a2ab8712cdc6fe7d8d92e97b81b98a792":[11,0,27,15,0],
+"class_midi_1_1_remove_notes.html#a51d56c97103eae4cda1e09841f891de3":[11,0,27,15,3],
+"class_midi_1_1_remove_notes.html#af2a5708dea2afeea1cea56a03fd8268c":[11,0,27,15,2],
+"class_midi_1_1_replace_notes.html":[11,0,27,16],
+"class_midi_1_1_replace_notes.html#a2191e41d85004b794a873d4b1c09c74e":[11,0,27,16,0],
+"class_midi_1_1_replace_notes.html#a303baa3ab0c138ce9d210f68b975042c":[11,0,27,16,2],
+"class_midi_1_1_replace_notes.html#ad9e33e8842114ed37deb22df795752ad":[11,0,27,16,1],
+"class_midi_1_1_replace_notes.html#aee0765f2f65c36d758a252a222ced4a1":[11,0,27,16,4],
 "class_midi_1_1_replace_notes.html#afc065ab8a0ac5b09413b0e6c28fc5451":[11,0,27,16,3],
 "class_midi_1_1_rescale_all_midi.html":[11,0,27,17],
 "class_midi_1_1_rescale_midi.html":[11,0,27,18],
@@ -240,14 +249,5 @@ var NAVTREEINDEX20 =
 "class_object_path.html#aa6b49805f1295fc53166bc20cab41f6a":[11,0,202,6],
 "class_object_path.html#aaef5a98be95493ee174b46a09de04bcc":[11,0,202,8],
 "class_object_path.html#ab56405eb9eb2bf7dd02e9676e12d70fe":[11,0,202,5],
-"class_object_path.html#ad6e43c3fc61ce1f457f47568080a6039":[11,0,202,7],
-"class_object_path.html#ae25c22e11f9de7baca3bb5b5f3cbb1bd":[11,0,202,12],
-"class_ongoing_command_dispatcher.html":[11,0,203],
-"class_ongoing_command_dispatcher.html#a025496b513fab9cdaabbff6b75f4e74b":[11,0,203,3],
-"class_ongoing_command_dispatcher.html#a98c51c70b84cb27505120b707bbe9b5e":[11,0,203,1],
-"class_ongoing_command_dispatcher.html#ac7d20a23177cc9acf50aabbbbf44b75f":[11,0,203,2],
-"class_ongoing_command_dispatcher.html#adbede1f1f2b21ed97f57d307708d5d75":[11,0,203,0],
-"class_opaque_string.html":[11,0,204],
-"class_opaque_string.html#a18ac98f7c6364576dc01b65659a7719f":[11,0,204,4],
-"class_opaque_string.html#a3f10db7efa332fa587349f7ffc411321":[11,0,204,7]
+"class_object_path.html#ad6e43c3fc61ce1f457f47568080a6039":[11,0,202,7]
 };
