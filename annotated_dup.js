@@ -234,6 +234,12 @@ var annotated_dup =
         [ "Model", "class_gfx_1_1_images_1_1_model.html", "class_gfx_1_1_images_1_1_model" ],
         [ "ProcessExecutorComponent", "class_gfx_1_1_images_1_1_process_executor_component.html", "class_gfx_1_1_images_1_1_process_executor_component" ]
       ] ],
+      [ "Settings", null, [
+        [ "GraphicsApis", "struct_gfx_1_1_settings_1_1_graphics_apis.html", "struct_gfx_1_1_settings_1_1_graphics_apis" ],
+        [ "Model", "class_gfx_1_1_settings_1_1_model.html", "class_gfx_1_1_settings_1_1_model" ],
+        [ "Presenter", "class_gfx_1_1_settings_1_1_presenter.html", "class_gfx_1_1_settings_1_1_presenter" ],
+        [ "View", "class_gfx_1_1_settings_1_1_view.html", "class_gfx_1_1_settings_1_1_view" ]
+      ] ],
       [ "Video", null, [
         [ "DropHandler", "class_gfx_1_1_video_1_1_drop_handler.html", null ],
         [ "InspectorFactory", "class_gfx_1_1_video_1_1_inspector_factory.html", null ],

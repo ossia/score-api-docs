@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['xyslider_5050',['XYSlider',['../struct_process_1_1_x_y_slider.html',1,'Process::XYSlider'],['../struct_widget_factory_1_1_x_y_slider.html',1,'WidgetFactory::XYSlider']]],
-  ['xyzedit_5051',['XYZEdit',['../struct_control_1_1_x_y_z_edit.html',1,'Control::XYZEdit'],['../struct_widget_factory_1_1_x_y_z_edit.html',1,'WidgetFactory::XYZEdit']]]
+  ['xyslider_5052',['XYSlider',['../struct_process_1_1_x_y_slider.html',1,'Process::XYSlider'],['../struct_widget_factory_1_1_x_y_slider.html',1,'WidgetFactory::XYSlider']]],
+  ['xyzedit_5053',['XYZEdit',['../struct_widget_factory_1_1_x_y_z_edit.html',1,'WidgetFactory::XYZEdit'],['../struct_control_1_1_x_y_z_edit.html',1,'Control::XYZEdit']]]
 ];

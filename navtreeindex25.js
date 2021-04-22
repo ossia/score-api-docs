@@ -1,5 +1,15 @@
 var NAVTREEINDEX25 =
 {
+"class_protocols_1_1_o_s_c_device.html#a1aa76db4faf9cfdccec33d8ac9fc0bfe":[11,0,36,37,1],
+"class_protocols_1_1_o_s_c_device.html#a2bef200279f30cbca38c5c3622c56fa8":[11,0,36,37,3],
+"class_protocols_1_1_o_s_c_device.html#a301b7593ce1c20d7dfe99640e6a94932":[11,0,36,37,4],
+"class_protocols_1_1_o_s_c_device.html#a7258af10e4efb66fd06f8fc378fe09e8":[11,0,36,37,2],
+"class_protocols_1_1_o_s_c_library_handler.html":[11,0,36,38],
+"class_protocols_1_1_o_s_c_protocol_factory.html":[11,0,36,39],
+"class_protocols_1_1_o_s_c_protocol_settings_widget.html":[11,0,36,40],
+"class_protocols_1_1_o_s_c_protocol_settings_widget.html#a2f273fefc605131c9f9874f5f92ebd4e":[11,0,36,40,1],
+"class_protocols_1_1_o_s_c_protocol_settings_widget.html#a61dcc9cc127037e3a8613df5eec448ac":[11,0,36,40,2],
+"class_protocols_1_1_o_s_c_protocol_settings_widget.html#a90be2fc676b8eb59a9ed7df3c3008e31":[11,0,36,40,3],
 "class_protocols_1_1_o_s_c_protocol_settings_widget.html#adb792e86a7126151570297f77474b0b2":[11,0,36,40,0],
 "class_protocols_1_1_o_s_c_query_device.html":[11,0,36,41],
 "class_protocols_1_1_o_s_c_query_device.html#a04294b5763f359a8b37756e010026ab5":[11,0,36,41,0],
@@ -239,15 +249,5 @@ var NAVTREEINDEX25 =
 "class_safe_q_application.html#a75979ddcfa75b02e2750491b1c50eae2":[11,0,351,5],
 "class_safe_q_application.html#a87c977b7ada3e2f95b8c8c022f8dbe80":[11,0,351,1],
 "class_safe_q_application.html#a980ef807c26be5979b0ca0ca60d1db95":[11,0,351,2],
-"class_safe_q_application.html#ab5aae30d62b4fd08688fe78fb87553d9":[11,0,351,3],
-"class_safe_q_application.html#af5f09f35352f3580e3e6f4c70456991d":[11,0,351,0],
-"class_scenario_1_1_add_process_dialog.html":[11,0,41,2],
-"class_scenario_1_1_add_process_dialog.html#a0a879cc9e9315dc7cb8604c1b23f580e":[11,0,41,2,3],
-"class_scenario_1_1_add_process_dialog.html#a162dfcff5f82255fb473703a896a081f":[11,0,41,2,0],
-"class_scenario_1_1_add_process_dialog.html#a75abc3001d747c70e3e60b945db2dbd6":[11,0,41,2,2],
-"class_scenario_1_1_add_process_dialog.html#acbd40ffe244bdaa1e6bb56cf647b5c58":[11,0,41,2,1],
-"class_scenario_1_1_add_process_dialog.html#acea111c7f26a3835ef9c2279e105b7ac":[11,0,41,2,4],
-"class_scenario_1_1_address_bar_item.html":[11,0,41,4],
-"class_scenario_1_1_address_bar_item.html#a1b004c0ff61bc8c4baf13b22d075293b":[11,0,41,4,5],
-"class_scenario_1_1_address_bar_item.html#a58ef2789450ea966d50528b0aeb2d095":[11,0,41,4,4]
+"class_safe_q_application.html#ab5aae30d62b4fd08688fe78fb87553d9":[11,0,351,3]
 };

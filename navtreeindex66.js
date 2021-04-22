@@ -1,5 +1,25 @@
 var NAVTREEINDEX66 =
 {
+"structstd_1_1hash_3_01_path_3_01tag_01_4_01_4.html#aba17034680075c818cbe3647abb97b34":[11,0,47,6,0],
+"structstd_1_1hash_3_01_q_string_01_4.html":[11,0,47,7],
+"structstd_1_1hash_3_01_q_string_01_4.html#a141b209db1df0a11c4cd1eaca52c304d":[11,0,47,7,0],
+"structstd_1_1hash_3_01_state_1_1_address_01_4.html":[11,0,47,10],
+"structstd_1_1hash_3_01_state_1_1_address_01_4.html#aab4bd582254305ae34f70d4149f93a9f":[11,0,47,10,0],
+"structstd_1_1hash_3_01_state_1_1_address_accessor_01_4.html":[11,0,47,11],
+"structstd_1_1hash_3_01_state_1_1_address_accessor_01_4.html#a5ade19912f6c63d2b4b2e5145b6d4d82":[11,0,47,11,0],
+"structstd_1_1hash_3_01_string_key_3_01_t_01_4_01_4.html":[11,0,47,15],
+"structstd_1_1hash_3_01_string_key_3_01_t_01_4_01_4.html#aad80255ac6d66cbc0c06bf7c55d7b8f5":[11,0,47,15,0],
+"structstd_1_1hash_3_01_time_val_01_4.html":[11,0,47,16],
+"structstd_1_1hash_3_01_time_val_01_4.html#aa00812ef067b51462b3bfed2856bcf1e":[11,0,47,16,0],
+"structstd_1_1hash_3_01_uuid_key_3_01_t_01_4_01_4.html":[11,0,47,17],
+"structstd_1_1hash_3_01_uuid_key_3_01_t_01_4_01_4.html#abeada9e99fcca6ca80945723aa535b6b":[11,0,47,17,0],
+"structstd_1_1hash_3_01ossia_1_1unit__variant_01_4.html":[11,0,47,5],
+"structstd_1_1hash_3_01ossia_1_1unit__variant_01_4.html#ab50a3463c75c92dbceaa33cd0da2c698":[11,0,47,5,0],
+"structstd_1_1hash_3_01score_1_1_loaded_plugin_versions_01_4.html":[11,0,47,8],
+"structstd_1_1hash_3_01score_1_1_loaded_plugin_versions_01_4.html#ad43efeb7e54a352cdc1e6cee5218debe":[11,0,47,8,0],
+"structstd_1_1hash_3_01score_1_1_version_01_4.html":[11,0,47,9],
+"structstd_1_1hash_3_01score_1_1_version_01_4.html#ae1e2987df8584ba8231000208fb48da4":[11,0,47,9,0],
+"structstd_1_1hash_3_01std_1_1pair_3_01_q_string_00_01_q_string_01_4_01_4.html":[11,0,47,13],
 "structstd_1_1hash_3_01std_1_1pair_3_01_q_string_00_01_q_string_01_4_01_4.html#a1546f4d48b32268ffa7c1cced3ba8e60":[11,0,47,13,0],
 "structstd_1_1hash_3_01std_1_1tuple_3_01_q_string_00_01_q_string_00_01_q_string_00_01_q_string_01_4_01_4.html":[11,0,47,14],
 "structstd_1_1hash_3_01std_1_1tuple_3_01_q_string_00_01_q_string_00_01_q_string_00_01_q_string_01_4_01_4.html#a9586ce1d4cf8fb69a4f6fe6db0206dd9":[11,0,47,14,0],
@@ -152,8 +172,8 @@ var NAVTREEINDEX66 =
 "structvst_1_1vst__node__base_1_1vst__control.html#a941a103e838cd796ef58965650bc9ca6":[11,0,50,15,0,1],
 "structvst_1_1vst__node__base_1_1vst__control.html#ac2ed257249b196072c159591509205bb":[11,0,50,15,0,2],
 "structvst_1_1vst__node__base_1_1vst__control.html#ac5cb8799293d4c342ef758549d932512":[11,0,50,15,0,0],
-"texgennode_8hpp_source.html":[12,0,1183],
+"texgennode_8hpp_source.html":[12,0,1186],
 "todo.html":[9],
-"uniforms_8hpp_source.html":[12,0,1230],
-"videonode_8hpp_source.html":[12,0,1258]
+"uniforms_8hpp_source.html":[12,0,1233],
+"videonode_8hpp_source.html":[12,0,1261]
 };
