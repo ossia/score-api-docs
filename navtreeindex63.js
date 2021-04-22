@@ -1,6 +1,5 @@
 var NAVTREEINDEX63 =
 {
-"structossia_1_1node__graph__process.html#a997e61f651050a2488c8447abd962fab":[11,0,31,2,2],
 "structossia_1_1node__graph__process.html#a9bfb1d71c5324fdfe12a82ca008fdb5f":[11,0,31,2,5],
 "structossia_1_1node__graph__process.html#abf8e7656fdc3e4394792cf2f8dea954f":[11,0,31,2,0],
 "structossia_1_1node__graph__process.html#af8d05b8110b2d5d02e9b629cca6737dc":[11,0,31,2,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX63 =
 "structscore_1_1_focus_facade.html#a8c59bdcb55b3a842090e31e7651aa201":[11,0,42,98,0],
 "structscore_1_1_focus_manager.html":[11,0,42,99],
 "structscore_1_1_focus_manager.html#a07515b3ef188b77213222784e2421b22":[11,0,42,99,0],
-"structscore_1_1_focus_manager.html#a0c9c5fa9f23694874dd7475342a613ab":[11,0,42,99,1]
+"structscore_1_1_focus_manager.html#a0c9c5fa9f23694874dd7475342a613ab":[11,0,42,99,1],
+"structscore_1_1_focus_manager.html#a0d75030005720a4461fbe0a5708a8665":[11,0,42,99,2]
 };

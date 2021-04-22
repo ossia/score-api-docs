@@ -1,6 +1,5 @@
 var NAVTREEINDEX6 =
 {
-"class_base_scenario_presenter.html#a9e90403f30d8f228d2fa7402f9728f53":[11,0,72,0],
 "class_base_scenario_presenter.html#ab221057021944ff39aeef264976571d0":[11,0,72,6],
 "class_base_scenario_presenter.html#ac0bb611061cbeefd53d3a6e32070de23":[11,0,72,10],
 "class_base_scenario_presenter.html#ad02ccb8464bfff324eac15ea43e469fd":[11,0,72,16],
@@ -249,5 +248,6 @@ var NAVTREEINDEX6 =
 "class_curve_1_1_edition_tool_for_create.html#a57eaba46d001724b5e4deea00d7248a7":[11,0,5,19,2],
 "class_curve_1_1_edition_tool_for_create.html#a8aa672217aa29688a8d1d70abfc15dde":[11,0,5,19,1],
 "class_curve_1_1_edition_tool_for_create.html#ae4a000d7cbf5628aa04e4e2cbcc60a93":[11,0,5,19,0],
-"class_curve_1_1_edition_tool_for_create.html#ae71596eae3fe8ac43f7556690d7f7187":[11,0,5,19,3]
+"class_curve_1_1_edition_tool_for_create.html#ae71596eae3fe8ac43f7556690d7f7187":[11,0,5,19,3],
+"class_curve_1_1_matched_curve_transition.html":[11,0,5,20]
 };
