@@ -22,10 +22,11 @@ var NAVTREEINDEX49 =
 "struct_control_surface_1_1_presenter_1_1_port.html#ab05f9598fe024ce7e8d83d3de5a10306":[11,0,4,5,0,1],
 "struct_control_surface_1_1_presenter_1_1_port.html#af14a789fbec3649a922b50149185c9e8":[11,0,4,5,0,2],
 "struct_control_surface_1_1_remote_messages.html":[11,0,4,8],
-"struct_control_surface_1_1_remote_messages.html#a6075403afeaaf5e344c6edcb68a64762":[11,0,4,8,2],
-"struct_control_surface_1_1_remote_messages.html#a683c676616a24b849b85c43af902f3a4":[11,0,4,8,3],
-"struct_control_surface_1_1_remote_messages.html#a79e4555a345cbc50b1d5a5f368a74d18":[11,0,4,8,1],
-"struct_control_surface_1_1_remote_messages.html#a8973c07401eaccf0bb4eafc8756af25d":[11,0,4,8,0],
+"struct_control_surface_1_1_remote_messages.html#a6075403afeaaf5e344c6edcb68a64762":[11,0,4,8,3],
+"struct_control_surface_1_1_remote_messages.html#a683c676616a24b849b85c43af902f3a4":[11,0,4,8,4],
+"struct_control_surface_1_1_remote_messages.html#a79e4555a345cbc50b1d5a5f368a74d18":[11,0,4,8,2],
+"struct_control_surface_1_1_remote_messages.html#a8973c07401eaccf0bb4eafc8756af25d":[11,0,4,8,1],
+"struct_control_surface_1_1_remote_messages.html#ab0089d46e316e97de013da81762a0be7":[11,0,4,8,0],
 "struct_control_surface_1_1con__unvalidated.html":[11,0,4,2],
 "struct_control_surface_1_1con__unvalidated.html#a0a1754b2f891fef83475006614619bcc":[11,0,4,2,3],
 "struct_control_surface_1_1con__unvalidated.html#a0ea977105fbc44896c84986013127509":[11,0,4,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX49 =
 "struct_device_1_1_full_address_settings.html#a98eff79b32e9b60830c9e3ab01fff221":[11,0,7,14,2],
 "struct_device_1_1_full_address_settings.html#aa2257e41e7f1e9ec5d162ea5edfb267c":[11,0,7,14,5],
 "struct_device_1_1_full_address_settings.html#ac1d4278b25b3cc1602192062af913965":[11,0,7,14,4],
-"struct_device_1_1_protocol_factory_1_1_standard_categories.html":[11,0,7,17,0],
-"struct_edge.html":[11,0,95]
+"struct_device_1_1_protocol_factory_1_1_standard_categories.html":[11,0,7,17,0]
 };
