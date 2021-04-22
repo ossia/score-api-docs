@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"class_explorer_1_1_device_edit_dialog.html#a77c52f3bb8f21f838cf8b283cfb39fac":[11,0,10,26,6],
 "class_explorer_1_1_device_edit_dialog.html#aa0e65c84e320a1eaffcb5adc6fa4f1ab":[11,0,10,26,4],
 "class_explorer_1_1_device_edit_dialog.html#ae1677e6893c95814f73ac6cbd54ad964":[11,0,10,26,7],
 "class_explorer_1_1_device_edit_dialog.html#aea4edb35a286038009648dc62364dca4":[11,0,10,26,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "class_gfx_1_1_change_shader.html":[11,0,13,15],
 "class_gfx_1_1_document_plugin.html":[11,0,13,18],
 "class_gfx_1_1_document_plugin.html#a133c8ea865569ef8a8ec7b7f08b72664":[11,0,13,18,1],
-"class_gfx_1_1_document_plugin.html#a33c59a8a72f1adb7068af978e17e5e34":[11,0,13,18,2],
-"class_gfx_1_1_document_plugin.html#a357d23b49a14e4369e6ec640b7056f8d":[11,0,13,18,3]
+"class_gfx_1_1_document_plugin.html#a33c59a8a72f1adb7068af978e17e5e34":[11,0,13,18,2]
 };

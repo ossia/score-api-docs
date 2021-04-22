@@ -108,11 +108,11 @@ $(document).ready(function(){initNavTree('plugins_2score-plugin-gfx_2_gfx_2_grap
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QTimer&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QtGui/private/qrhigles2_p.h&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_window.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_window.html">Window</a> : <span class="keyword">public</span> QWindow</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;Gfx/Qt5Compat.hpp&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_window.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_window.html">Window</a> : <span class="keyword">public</span> QWindow</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <a class="code" href="class_window.html">Window</a>(GraphicsApi graphicsApi)</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_window.html">Window</a>(GraphicsApi graphicsApi)</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">// Tell the platform plugin what we want.</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">switch</span> (graphicsApi)</div>
@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('plugins_2score-plugin-gfx_2_gfx_2_grap
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">if</span>(swapChain)</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      m_hasSwapChain = swapChain-&gt;buildOrResize();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      m_hasSwapChain = swapChain-&gt;createOrResize();</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      state.size = swapChain-&gt;currentPixelSize();</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keywordflow">if</span> (onResize)</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        onResize();</div>
@@ -166,7 +166,7 @@ $(document).ready(function(){initNavTree('plugins_2score-plugin-gfx_2_gfx_2_grap
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">if</span> (swapChain &amp;&amp; m_hasSwapChain)</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    {</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      m_hasSwapChain = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      swapChain-&gt;release();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      swapChain-&gt;destroy();</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  }</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
@@ -314,7 +314,7 @@ $(document).ready(function(){initNavTree('plugins_2score-plugin-gfx_2_gfx_2_grap
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astruct_render_state_html"><div class="ttname"><a href="struct_render_state.html">RenderState</a></div><div class="ttdef"><b>Definition:</b> renderstate.hpp:14</div></div>
-<div class="ttc" id="aclass_window_html"><div class="ttname"><a href="class_window.html">Window</a></div><div class="ttdef"><b>Definition:</b> plugins/score-plugin-gfx/Gfx/Graph/Window.hpp:11</div></div>
+<div class="ttc" id="aclass_window_html"><div class="ttname"><a href="class_window.html">Window</a></div><div class="ttdef"><b>Definition:</b> plugins/score-plugin-gfx/Gfx/Graph/Window.hpp:12</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

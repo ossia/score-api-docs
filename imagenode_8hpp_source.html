@@ -201,7 +201,7 @@ $(document).ready(function(){initNavTree('imagenode_8hpp_source.html',''); initR
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;          <span class="keyword">auto</span> tex = rhi.newTexture(</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;              QRhiTexture::BGRA8, QSize{sz.width(), sz.height()}, 1, QRhiTexture::Flag{});</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;          tex-&gt;build();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;          tex-&gt;create();</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;          textures.push_back(tex);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      }</div>
@@ -214,7 +214,7 @@ $(document).ready(function(){initNavTree('imagenode_8hpp_source.html',''); initR
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            QRhiSampler::Repeat,</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            QRhiSampler::Repeat);</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        sampler-&gt;build();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        sampler-&gt;create();</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keyword">auto</span> tex = textures.empty() ? renderer.m_emptyTexture : textures.front();</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        m_samplers.push_back({sampler, tex});</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      }</div>
@@ -255,49 +255,51 @@ $(document).ready(function(){initNavTree('imagenode_8hpp_source.html',''); initR
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordtype">void</span> customRelease(<a class="code" href="struct_renderer.html">Renderer</a>&amp;)<span class="keyword"> override</span></div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> tex : textures)</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        tex-&gt;releaseAndDestroyLater();</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      textures.clear();</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    }</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_images_node_1_1ubo.html">ubo</a> prev_ubo;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment">    std::optional&lt;QSize&gt; renderTargetSize() const noexcept override</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="comment">    {</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment">      auto&amp; decoder = *static_cast&lt;const RGB0Node&amp;&gt;(node).decoder;</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment">      const auto w = decoder.width(), h = decoder.height();</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment">      return QSize{w, h};</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment">    }*/</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  };</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_textured_triangle.html">TexturedTriangle</a>&amp; m_mesh = TexturedTriangle::instance();</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  std::vector&lt;Gfx::Image&gt; images;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <a class="code" href="struct_images_node.html">ImagesNode</a>(std::vector&lt;Gfx::Image&gt; dec) : images{std::move(dec)}</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  {</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    std::tie(m_vertexS, m_fragmentS) = makeShaders(vertex, filter);</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    input.push_back(<span class="keyword">new</span> <a class="code" href="struct_port.html">Port</a>{<span class="keyword">this</span>, &amp;ubo.currentImageIndex, Types::Int, {}});</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    input.push_back(<span class="keyword">new</span> <a class="code" href="struct_port.html">Port</a>{<span class="keyword">this</span>, &amp;ubo.opacity, Types::Float, {}});</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    input.push_back(<span class="keyword">new</span> <a class="code" href="struct_port.html">Port</a>{<span class="keyword">this</span>, &amp;ubo.position[0], Types::Vec2, {}});</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    input.push_back(<span class="keyword">new</span> <a class="code" href="struct_port.html">Port</a>{<span class="keyword">this</span>, &amp;ubo.scale[0], Types::Vec2, {}});</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    output.push_back(<span class="keyword">new</span> <a class="code" href="struct_port.html">Port</a>{<span class="keyword">this</span>, {}, Types::Image, {}});</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    m_materialData.reset((<span class="keywordtype">char</span>*)&amp;ubo);</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  }</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="struct_images_node.html">ImagesNode</a>() { m_materialData.release(); }</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_mesh.html">Mesh</a>&amp; mesh() const noexcept<span class="keyword"> override </span>{ <span class="keywordflow">return</span> this-&gt;m_mesh; }</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>* createRenderer() const noexcept<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> Rendered{*<span class="keyword">this</span>}; }</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;};</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      {</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        tex-&gt;deleteLater();</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      }</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      textures.clear();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_images_node_1_1ubo.html">ubo</a> prev_ubo;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment">    std::optional&lt;QSize&gt; renderTargetSize() const noexcept override</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment">    {</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment">      auto&amp; decoder = *static_cast&lt;const RGB0Node&amp;&gt;(node).decoder;</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment">      const auto w = decoder.width(), h = decoder.height();</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment">      return QSize{w, h};</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment">    }*/</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  };</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_textured_triangle.html">TexturedTriangle</a>&amp; m_mesh = TexturedTriangle::instance();</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  std::vector&lt;Gfx::Image&gt; images;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <a class="code" href="struct_images_node.html">ImagesNode</a>(std::vector&lt;Gfx::Image&gt; dec) : images{std::move(dec)}</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    std::tie(m_vertexS, m_fragmentS) = makeShaders(vertex, filter);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    input.push_back(<span class="keyword">new</span> <a class="code" href="struct_port.html">Port</a>{<span class="keyword">this</span>, &amp;ubo.currentImageIndex, Types::Int, {}});</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    input.push_back(<span class="keyword">new</span> <a class="code" href="struct_port.html">Port</a>{<span class="keyword">this</span>, &amp;ubo.opacity, Types::Float, {}});</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    input.push_back(<span class="keyword">new</span> <a class="code" href="struct_port.html">Port</a>{<span class="keyword">this</span>, &amp;ubo.position[0], Types::Vec2, {}});</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    input.push_back(<span class="keyword">new</span> <a class="code" href="struct_port.html">Port</a>{<span class="keyword">this</span>, &amp;ubo.scale[0], Types::Vec2, {}});</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    output.push_back(<span class="keyword">new</span> <a class="code" href="struct_port.html">Port</a>{<span class="keyword">this</span>, {}, Types::Image, {}});</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    m_materialData.reset((<span class="keywordtype">char</span>*)&amp;ubo);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="struct_images_node.html">ImagesNode</a>() { m_materialData.release(); }</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_mesh.html">Mesh</a>&amp; mesh() const noexcept<span class="keyword"> override </span>{ <span class="keywordflow">return</span> this-&gt;m_mesh; }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>* createRenderer() const noexcept<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> Rendered{*<span class="keyword">this</span>}; }</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astruct_port_html"><div class="ttname"><a href="struct_port.html">Port</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:36</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:179</div></div>
+<div class="ttc" id="astruct_port_html"><div class="ttname"><a href="struct_port.html">Port</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:35</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:178</div></div>
 <div class="ttc" id="astruct_mesh_html"><div class="ttname"><a href="struct_mesh.html">Mesh</a></div><div class="ttdef"><b>Definition:</b> mesh.hpp:9</div></div>
 <div class="ttc" id="astruct_gfx_1_1_image_html"><div class="ttname"><a href="struct_gfx_1_1_image.html">Gfx::Image</a></div><div class="ttdef"><b>Definition:</b> imagenode.hpp:12</div></div>
 <div class="ttc" id="astruct_images_node_1_1_rendered_html"><div class="ttname"><a href="struct_images_node_1_1_rendered.html">ImagesNode::Rendered</a></div><div class="ttdef"><b>Definition:</b> imagenode.hpp:81</div></div>
 <div class="ttc" id="astruct_renderer_html"><div class="ttname"><a href="struct_renderer.html">Renderer</a></div><div class="ttdef"><b>Definition:</b> renderer.hpp:30</div></div>
 <div class="ttc" id="astruct_images_node_1_1ubo_html"><div class="ttname"><a href="struct_images_node_1_1ubo.html">ImagesNode::ubo</a></div><div class="ttdef"><b>Definition:</b> imagenode.hpp:73</div></div>
-<div class="ttc" id="aclass_node_model_html"><div class="ttname"><a href="class_node_model.html">NodeModel</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:269</div></div>
-<div class="ttc" id="aclass_rendered_node_html"><div class="ttname"><a href="class_rendered_node.html">RenderedNode</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:211</div></div>
+<div class="ttc" id="aclass_node_model_html"><div class="ttname"><a href="class_node_model.html">NodeModel</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:268</div></div>
+<div class="ttc" id="aclass_rendered_node_html"><div class="ttname"><a href="class_rendered_node.html">RenderedNode</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:210</div></div>
 <div class="ttc" id="astruct_images_node_html"><div class="ttname"><a href="struct_images_node.html">ImagesNode</a></div><div class="ttdef"><b>Definition:</b> imagenode.hpp:19</div></div>
 <div class="ttc" id="astruct_textured_triangle_html"><div class="ttname"><a href="struct_textured_triangle.html">TexturedTriangle</a></div><div class="ttdef"><b>Definition:</b> mesh.hpp:203</div></div>
 <!-- HTML footer for doxygen 1.8.8-->

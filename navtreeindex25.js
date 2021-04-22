@@ -1,5 +1,6 @@
 var NAVTREEINDEX25 =
 {
+"class_protocols_1_1_minuit_protocol_settings_widget.html#af1fd676a971a0be682d8a185487a2f54":[11,0,36,35,10],
 "class_protocols_1_1_minuit_protocol_settings_widget.html#afda9add43da4cd6c3db32c9bad861f43":[11,0,36,35,9],
 "class_protocols_1_1_o_s_c_device.html":[11,0,36,37],
 "class_protocols_1_1_o_s_c_device.html#a1168805b7e65b2aa3e5e53ad7678e21b":[11,0,36,37,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX25 =
 "class_rendered_node.html#afd83b5bcda6fe3bd2155b534528e5b6c":[11,0,345,26],
 "class_resize_slot_vertically_test.html":[11,0,349],
 "class_safe_q_application.html":[11,0,351],
-"class_safe_q_application.html#a2ad1991a81471f295b51403aca58e701":[11,0,351,4],
-"class_safe_q_application.html#a75979ddcfa75b02e2750491b1c50eae2":[11,0,351,5]
+"class_safe_q_application.html#a2ad1991a81471f295b51403aca58e701":[11,0,351,4]
 };

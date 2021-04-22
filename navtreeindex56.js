@@ -1,5 +1,6 @@
 var NAVTREEINDEX56 =
 {
+"struct_process_1_1_float_slider.html#a058ffed0158537e4b11776f18f5adef0":[11,0,35,32,3],
 "struct_process_1_1_float_slider.html#a3c45b998a255743bcb96a4599e9c2a31":[11,0,35,32,4],
 "struct_process_1_1_float_slider.html#a4f919d52c7f8944d286f448149137f03":[11,0,35,32,0],
 "struct_process_1_1_float_slider.html#a965251b56a6df0a934d63a7ab6166ac1":[11,0,35,32,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX56 =
 "struct_protocols_1_1_fixture_database_1_1_scan.html":[11,0,36,9,0],
 "struct_protocols_1_1_fixture_database_1_1_scan.html#a3b7be4f9c56242d3fbf49533d137b9fe":[11,0,36,9,0,0],
 "struct_protocols_1_1_fixture_database_1_1_scan.html#ac815fe8f651e19a94be9735711c8abfe":[11,0,36,9,0,2],
-"struct_protocols_1_1_fixture_database_1_1_scan.html#ad1b0903b5165797816bf08ada75f03da":[11,0,36,9,0,1],
-"struct_protocols_1_1_fixture_mode.html":[11,0,36,10]
+"struct_protocols_1_1_fixture_database_1_1_scan.html#ad1b0903b5165797816bf08ada75f03da":[11,0,36,9,0,1]
 };

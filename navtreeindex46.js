@@ -1,5 +1,6 @@
 var NAVTREEINDEX46 =
 {
+"classvst3_1_1_v_s_t_graphics_slider.html":[11,0,51,23],
 "classvst3_1_1_v_s_t_graphics_slider.html#a2721215d3d25187e2c1bf521eec308f3":[11,0,51,23,3],
 "classvst3_1_1_v_s_t_graphics_slider.html#a2fe9f8798906e2b3dcba6b112804068e":[11,0,51,23,6],
 "classvst3_1_1_v_s_t_graphics_slider.html#a3c8163ea53bb3a1bf7ca50fec2c7a96c":[11,0,51,23,2],
@@ -237,17 +238,16 @@ var NAVTREEINDEX46 =
 "isfnode_8hpp_source.html":[12,0,540],
 "lib_2core_2documentation_2commands_8hpp_source.html":[12,0,155],
 "lib_2core_2presenter_2_presenter_8hpp_source.html":[12,0,843],
-"lib_2core_2settings_2_settings_8hpp_source.html":[12,0,1105],
-"lib_2core_2view_2_window_8hpp_source.html":[12,0,1294],
+"lib_2core_2settings_2_settings_8hpp_source.html":[12,0,1106],
+"lib_2core_2view_2_window_8hpp_source.html":[12,0,1295],
 "lib_2score_2model_2_component_8hpp_source.html":[12,0,177],
 "lib_2score_2plugins_2documentdelegate_2plugin_2_document_plugin_8hpp_source.html":[12,0,308],
 "lib_2score_2tools_2_metadata_8hpp_source.html":[12,0,646],
 "lib_2score_2widgets_2_control_widgets_8hpp_source.html":[12,0,197],
-"lib_2score_2widgets_2_selection_button_8hpp_source.html":[12,0,1074],
+"lib_2score_2widgets_2_selection_button_8hpp_source.html":[12,0,1075],
 "lv2__atom__helpers_8hpp_source.html":[12,0,609],
 "mesh_8hpp_source.html":[12,0,636],
 "models_8hpp_source.html":[12,0,720],
 "mvp_8hpp_source.html":[12,0,744],
-"namespace_automation.html":[10,0,0],
-"namespace_automation.html":[11,0,1]
+"namespace_automation.html":[10,0,0]
 };

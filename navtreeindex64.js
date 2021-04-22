@@ -1,5 +1,6 @@
 var NAVTREEINDEX64 =
 {
+"structscore_1_1_focus_manager.html#a0d75030005720a4461fbe0a5708a8665":[11,0,42,99,2],
 "structscore_1_1_focus_manager.html#ac4fe93ec76a7cbadd7516e3a35413655":[11,0,42,99,3],
 "structscore_1_1_g_l_capabilities.html":[11,0,42,106],
 "structscore_1_1_g_l_capabilities.html#a407553bf7a4d4c97f62cd01e9f729702":[11,0,42,106,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX64 =
 "structscore_1_1_string_constants.html#a5ff694aad9e8b59444578a8a63806618":[11,0,42,239,102],
 "structscore_1_1_string_constants.html#a65ca102cb201ea68e7468705c6363ac6":[11,0,42,239,50],
 "structscore_1_1_string_constants.html#a66c2b1a1733f6fad73417decf02df5f5":[11,0,42,239,20],
-"structscore_1_1_string_constants.html#a66da97056f342d58d32d26789503f2ce":[11,0,42,239,38],
-"structscore_1_1_string_constants.html#a68d443de1a345e56f3170808a9d97d5a":[11,0,42,239,37]
+"structscore_1_1_string_constants.html#a66da97056f342d58d32d26789503f2ce":[11,0,42,239,38]
 };

@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('_pd_library_8hpp_source.html',''); ini
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  {</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">if</span> (iterator.hasNext())</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      registerPatch(iterator.next());</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      registerPatch(QFileInfo{iterator.next()});</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      QTimer::singleShot(1, <span class="keyword">this</span>, &amp;LibraryHandler::next);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div>

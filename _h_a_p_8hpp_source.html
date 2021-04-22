@@ -207,7 +207,7 @@ $(document).ready(function(){initNavTree('_h_a_p_8hpp_source.html',''); initResi
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordtype">void</span> release(<a class="code" href="struct_renderer.html">Renderer</a>&amp;, <a class="code" href="class_rendered_node.html">RenderedNode</a>&amp; n)<span class="keyword"> override</span></div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">  </span>{</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> [sampler, tex] : n.m_samplers)</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      tex-&gt;releaseAndDestroyLater();</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      tex-&gt;deleteLater();</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  }</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">int</span> buffer_size = 1024 * 1024 * 16;</div>
@@ -277,7 +277,7 @@ $(document).ready(function(){initNavTree('_h_a_p_8hpp_source.html',''); initResi
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    {</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      <span class="keyword">auto</span> tex = rhi.newTexture(format, QSize{w, h}, 1, QRhiTexture::Flag{});</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      tex-&gt;build();</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      tex-&gt;create();</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;      <span class="keyword">auto</span> sampler = rhi.newSampler(</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;          QRhiSampler::Linear,</div>
@@ -285,7 +285,7 @@ $(document).ready(function(){initNavTree('_h_a_p_8hpp_source.html',''); initResi
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;          QRhiSampler::None,</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;          QRhiSampler::ClampToEdge,</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;          QRhiSampler::ClampToEdge);</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      sampler-&gt;build();</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      sampler-&gt;create();</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      rendered.m_samplers.push_back({sampler, tex});</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    }</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  }</div>
@@ -351,7 +351,7 @@ $(document).ready(function(){initNavTree('_h_a_p_8hpp_source.html',''); initResi
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="comment">// Color texture</span></div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    {</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      <span class="keyword">auto</span> tex = rhi.newTexture(QRhiTexture::BC3, QSize{w, h}, 1, QRhiTexture::Flag{});</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;      tex-&gt;build();</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;      tex-&gt;create();</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;      <span class="keyword">auto</span> sampler = rhi.newSampler(</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            QRhiSampler::Linear,</div>
@@ -359,13 +359,13 @@ $(document).ready(function(){initNavTree('_h_a_p_8hpp_source.html',''); initResi
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            QRhiSampler::None,</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            QRhiSampler::ClampToEdge,</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            QRhiSampler::ClampToEdge);</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;      sampler-&gt;build();</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;      sampler-&gt;create();</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;      rendered.m_samplers.push_back({sampler, tex});</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    }</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="comment">// Alpha texture</span></div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    {</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;      <span class="keyword">auto</span> tex = rhi.newTexture(QRhiTexture::BC4, QSize{w, h}, 1, QRhiTexture::Flag{});</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      tex-&gt;build();</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      tex-&gt;create();</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;      <span class="keyword">auto</span> sampler = rhi.newSampler(</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            QRhiSampler::Linear,</div>
@@ -373,7 +373,7 @@ $(document).ready(function(){initNavTree('_h_a_p_8hpp_source.html',''); initResi
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            QRhiSampler::None,</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            QRhiSampler::ClampToEdge,</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            QRhiSampler::ClampToEdge);</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;      sampler-&gt;build();</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;      sampler-&gt;create();</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;      rendered.m_samplers.push_back({sampler, tex});</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    }</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  }</div>
@@ -434,8 +434,8 @@ $(document).ready(function(){initNavTree('_h_a_p_8hpp_source.html',''); initResi
 <div class="ttc" id="astruct_h_a_p_m_decoder_html"><div class="ttname"><a href="struct_h_a_p_m_decoder.html">HAPMDecoder</a></div><div class="ttdef"><b>Definition:</b> HAP.hpp:194</div></div>
 <div class="ttc" id="astruct_h_a_p_decoder_1_1_h_a_p_section_html"><div class="ttname"><a href="struct_h_a_p_decoder_1_1_h_a_p_section.html">HAPDecoder::HAPSection</a></div><div class="ttdef"><b>Definition:</b> HAP.hpp:7</div></div>
 <div class="ttc" id="astruct_g_p_u_video_decoder_html"><div class="ttname"><a href="struct_g_p_u_video_decoder.html">GPUVideoDecoder</a></div><div class="ttdef"><b>Definition:</b> GPUVideoDecoder.hpp:19</div></div>
-<div class="ttc" id="aclass_node_model_html"><div class="ttname"><a href="class_node_model.html">NodeModel</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:269</div></div>
-<div class="ttc" id="aclass_rendered_node_html"><div class="ttname"><a href="class_rendered_node.html">RenderedNode</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:211</div></div>
+<div class="ttc" id="aclass_node_model_html"><div class="ttname"><a href="class_node_model.html">NodeModel</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:268</div></div>
+<div class="ttc" id="aclass_rendered_node_html"><div class="ttname"><a href="class_rendered_node.html">RenderedNode</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:210</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

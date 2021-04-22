@@ -173,7 +173,7 @@ $(document).ready(function(){initNavTree('texgennode_8hpp_source.html',''); init
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      {</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        texture = rhi.newTexture(QRhiTexture::RGBA8, n.image.size(), 1, QRhiTexture::Flag{});</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        texture-&gt;build();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        texture-&gt;create();</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      }</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      {</div>
@@ -184,7 +184,7 @@ $(document).ready(function(){initNavTree('texgennode_8hpp_source.html',''); init
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            QRhiSampler::ClampToEdge,</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            QRhiSampler::ClampToEdge);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        sampler-&gt;build();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        sampler-&gt;create();</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        m_samplers.push_back({sampler, texture});</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      }</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
@@ -201,7 +201,7 @@ $(document).ready(function(){initNavTree('texgennode_8hpp_source.html',''); init
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> customRelease(<a class="code" href="struct_renderer.html">Renderer</a>&amp;)<span class="keyword"> override</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      texture-&gt;releaseAndDestroyLater();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      texture-&gt;deleteLater();</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      texture = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
@@ -234,16 +234,16 @@ $(document).ready(function(){initNavTree('texgennode_8hpp_source.html',''); init
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astruct_port_html"><div class="ttname"><a href="struct_port.html">Port</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:36</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:179</div></div>
+<div class="ttc" id="astruct_port_html"><div class="ttname"><a href="struct_port.html">Port</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:35</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:178</div></div>
 <div class="ttc" id="astruct_mesh_html"><div class="ttname"><a href="struct_mesh.html">Mesh</a></div><div class="ttdef"><b>Definition:</b> mesh.hpp:9</div></div>
 <div class="ttc" id="astruct_texgen_node_1_1ubo_html"><div class="ttname"><a href="struct_texgen_node_1_1ubo.html">TexgenNode::ubo</a></div><div class="ttdef"><b>Definition:</b> texgennode.hpp:52</div></div>
 <div class="ttc" id="astructimage_html"><div class="ttname"><a href="structimage.html">image</a></div><div class="ttdef"><b>Definition:</b> uniforms.hpp:8</div></div>
 <div class="ttc" id="astruct_renderer_html"><div class="ttname"><a href="struct_renderer.html">Renderer</a></div><div class="ttdef"><b>Definition:</b> renderer.hpp:30</div></div>
 <div class="ttc" id="astruct_texgen_node_1_1_rendered_html"><div class="ttname"><a href="struct_texgen_node_1_1_rendered.html">TexgenNode::Rendered</a></div><div class="ttdef"><b>Definition:</b> texgennode.hpp:59</div></div>
 <div class="ttc" id="astruct_texgen_node_html"><div class="ttname"><a href="struct_texgen_node.html">TexgenNode</a></div><div class="ttdef"><b>Definition:</b> texgennode.hpp:8</div></div>
-<div class="ttc" id="aclass_node_model_html"><div class="ttname"><a href="class_node_model.html">NodeModel</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:269</div></div>
-<div class="ttc" id="aclass_rendered_node_html"><div class="ttname"><a href="class_rendered_node.html">RenderedNode</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:211</div></div>
+<div class="ttc" id="aclass_node_model_html"><div class="ttname"><a href="class_node_model.html">NodeModel</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:268</div></div>
+<div class="ttc" id="aclass_rendered_node_html"><div class="ttname"><a href="class_rendered_node.html">RenderedNode</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:210</div></div>
 <div class="ttc" id="astruct_textured_triangle_html"><div class="ttname"><a href="struct_textured_triangle.html">TexturedTriangle</a></div><div class="ttdef"><b>Definition:</b> mesh.hpp:203</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
