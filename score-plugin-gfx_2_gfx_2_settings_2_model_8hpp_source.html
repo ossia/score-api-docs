@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('score-plugin-gfx_2_gfx_2_settings_2_mo
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  QString getGraphicsApi() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">void</span> setGraphicsApi(QString);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> GraphicsApiChanged(QString arg) E_SIGNAL(SCORE_PLUGIN_GFX_EXPORT, GraphicsApiChanged, arg)</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  PROPERTY(QString, GraphicsApi READ getGraphicsApi WRITE setGraphicsApi NOTIFY GraphicsApiChanged)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  PROPERTY(QString, GraphicsApi, &amp;Model::getGraphicsApi, &amp;Model::setGraphicsApi, &amp;Model::GraphicsApiChanged)</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_gfx_1_1_settings_1_1_model.html">Model</a>, GraphicsApi)</div>
