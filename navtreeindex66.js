@@ -1,5 +1,8 @@
 var NAVTREEINDEX66 =
 {
+"structstd_1_1hash_3_01_object_path_01_4.html":[11,0,47,4],
+"structstd_1_1hash_3_01_object_path_01_4.html#a87194a04038ff95c5059d79e952c7a10":[11,0,47,4,0],
+"structstd_1_1hash_3_01_path_3_01tag_01_4_01_4.html":[11,0,47,6],
 "structstd_1_1hash_3_01_path_3_01tag_01_4_01_4.html#aba17034680075c818cbe3647abb97b34":[11,0,47,6,0],
 "structstd_1_1hash_3_01_q_string_01_4.html":[11,0,47,7],
 "structstd_1_1hash_3_01_q_string_01_4.html#a141b209db1df0a11c4cd1eaca52c304d":[11,0,47,7,0],

@@ -1,5 +1,8 @@
 var NAVTREEINDEX32 =
 {
+"class_scenario_1_1_interval_view.html#adfd15425cc48554e7e54c932567f0c78":[11,0,41,131,28],
+"class_scenario_1_1_interval_view.html#ae7fc58e91922029296359ba0592f0145":[11,0,41,131,11],
+"class_scenario_1_1_interval_view.html#aeadeb4f733e71320d00b5505a652be2e":[11,0,41,131,43],
 "class_scenario_1_1_interval_view.html#aebd36270bbe01216b374688f06839390":[11,0,41,131,2],
 "class_scenario_1_1_interval_view.html#aeecd495700770329fa986d750d397f02":[11,0,41,131,25],
 "class_scenario_1_1_interval_view.html#af7a1c8acaa7a84322d21ce38b35bb2dd":[11,0,41,131,44],
@@ -246,8 +249,5 @@ var NAVTREEINDEX32 =
 "class_scenario_1_1_musical_ruler.html#ab8c4759e7469476ec550130817db77db":[11,0,41,173,0],
 "class_scenario_1_1_musical_ruler.html#ab8c4759e7469476ec550130817db77dba226bea4d132b81f15f1bda87c76c6706":[11,0,41,173,0,0],
 "class_scenario_1_1_musical_ruler.html#ab8c4759e7469476ec550130817db77dba3bf1d07807d65aa05e67e972680186a6":[11,0,41,173,0,3],
-"class_scenario_1_1_musical_ruler.html#ab8c4759e7469476ec550130817db77dba5ecde7e225f74dcdd7b55a349f16bb92":[11,0,41,173,0,1],
-"class_scenario_1_1_musical_ruler.html#ab8c4759e7469476ec550130817db77dbadfd7aaba18200556a0eb071bab7c9ae7":[11,0,41,173,0,2],
-"class_scenario_1_1_musical_ruler.html#af5cd51ca9dd9b5d732e317044a259195":[11,0,41,173,1],
-"class_scenario_1_1_neighbour_selector.html":[11,0,41,174]
+"class_scenario_1_1_musical_ruler.html#ab8c4759e7469476ec550130817db77dba5ecde7e225f74dcdd7b55a349f16bb92":[11,0,41,173,0,1]
 };
