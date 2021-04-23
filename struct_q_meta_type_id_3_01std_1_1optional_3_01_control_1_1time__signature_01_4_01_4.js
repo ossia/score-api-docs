@@ -1,4 +1,0 @@
-var struct_q_meta_type_id_3_01std_1_1optional_3_01_control_1_1time__signature_01_4_01_4 =
-[
-    [ "Defined", "struct_q_meta_type_id_3_01std_1_1optional_3_01_control_1_1time__signature_01_4_01_4.html#a37c300b782c3c77dfaa69d90780c4f6faff046931e915b0d29757d08ed2f538fb", null ]
-];

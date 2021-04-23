@@ -104,38 +104,9 @@ $(document).ready(function(){initNavTree('_value_serialization_8hpp_source.html'
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_data_stream_visitor_8hpp.html">score/serialization/DataStreamVisitor.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;score/serialization/JSONVisitor.hpp&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">inline</span> QDataStream&amp; operator&lt;&lt;(QDataStream&amp; stream, <span class="keyword">const</span> ossia::value&amp; obj)</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <a class="code" href="class_data_stream_reader.html">DataStreamReader</a> reader{stream.device()};</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  reader.<a class="code" href="class_data_stream_reader.html#a4f58ef6aec2af2d3eeb68da834177886">readFrom</a>(obj);</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <span class="keywordflow">return</span> stream;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">inline</span> <a class="code" href="struct_data_stream_input.html">DataStreamInput</a>&amp; operator&lt;&lt;(<a class="code" href="struct_data_stream_input.html">DataStreamInput</a>&amp; s, <span class="keyword">const</span> ossia::value&amp; obj)</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  s.stream &lt;&lt; obj;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keywordflow">return</span> s;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">inline</span> QDataStream&amp; operator&gt;&gt;(QDataStream&amp; stream, ossia::value&amp; obj)</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <a class="code" href="class_data_stream_writer.html">DataStreamWriter</a> writer{stream.device()};</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  writer.writeTo(obj);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordflow">return</span> stream;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">inline</span> <a class="code" href="struct_data_stream_output.html">DataStreamOutput</a>&amp; operator&gt;&gt;(<a class="code" href="struct_data_stream_output.html">DataStreamOutput</a>&amp; s, ossia::value&amp; obj)</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  s.stream &gt;&gt; obj;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordflow">return</span> s;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;JSON_METADATA(ossia::value, <span class="stringliteral">&quot;Value&quot;</span>)</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;JSON_METADATA(ossia::value, <span class="stringliteral">&quot;Value&quot;</span>)</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astruct_data_stream_output_html"><div class="ttname"><a href="struct_data_stream_output.html">DataStreamOutput</a></div><div class="ttdef"><b>Definition:</b> DataStreamVisitor.hpp:175</div></div>
-<div class="ttc" id="aclass_data_stream_writer_html"><div class="ttname"><a href="class_data_stream_writer.html">DataStreamWriter</a></div><div class="ttdef"><b>Definition:</b> DataStreamVisitor.hpp:353</div></div>
-<div class="ttc" id="aclass_data_stream_reader_html"><div class="ttname"><a href="class_data_stream_reader.html">DataStreamReader</a></div><div class="ttdef"><b>Definition:</b> DataStreamVisitor.hpp:187</div></div>
-<div class="ttc" id="aclass_data_stream_reader_html_a4f58ef6aec2af2d3eeb68da834177886"><div class="ttname"><a href="class_data_stream_reader.html#a4f58ef6aec2af2d3eeb68da834177886">DataStreamReader::readFrom</a></div><div class="ttdeci">void readFrom(const score::Entity&lt; T &gt; &amp;obj)</div><div class="ttdoc">Called by code that wants to serialize.</div><div class="ttdef"><b>Definition:</b> DataStreamVisitor.hpp:214</div></div>
-<div class="ttc" id="astruct_data_stream_input_html"><div class="ttname"><a href="struct_data_stream_input.html">DataStreamInput</a></div><div class="ttdef"><b>Definition:</b> DataStreamVisitor.hpp:126</div></div>
 <div class="ttc" id="a_data_stream_visitor_8hpp_html"><div class="ttname"><a href="_data_stream_visitor_8hpp.html">DataStreamVisitor.hpp</a></div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

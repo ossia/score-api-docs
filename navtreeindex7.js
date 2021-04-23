@@ -1,17 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"class_curve_1_1_model.html":[11,0,5,21],
-"class_curve_1_1_model.html#a0c5a09981c9f4a4d0862df3c320417a2":[11,0,5,21,9],
-"class_curve_1_1_model.html#a2e8a55368489ec1089a281f112c4c07b":[11,0,5,21,7],
-"class_curve_1_1_model.html#a392a9a4186dc3dcc379733d6a76cf0c5":[11,0,5,21,23],
-"class_curve_1_1_model.html#a3f2b21dda288803ae6d8bd28965c67ab":[11,0,5,21,19],
-"class_curve_1_1_model.html#a4239d5fb6122089be024f807a47f34de":[11,0,5,21,6],
-"class_curve_1_1_model.html#a46c67ed29f4ca1686fa0daa6f83b437f":[11,0,5,21,20],
-"class_curve_1_1_model.html#a5138342a503e64568193b6fc9a51ebb0":[11,0,5,21,21],
-"class_curve_1_1_model.html#a5e65281179f15e8d51631f5bc471917f":[11,0,5,21,8],
-"class_curve_1_1_model.html#a6c4e76965f2427018a48514e2c9e5e18":[11,0,5,21,24],
-"class_curve_1_1_model.html#a7b8102ec95ed8796b01501bf054a3330":[11,0,5,21,5],
-"class_curve_1_1_model.html#a8735819ca57d45d1b9604c5b20f7fd1d":[11,0,5,21,3],
 "class_curve_1_1_model.html#a8af874f5f307c995af141f06d8d5f9b1":[11,0,5,21,0],
 "class_curve_1_1_model.html#a96830da4a1a2263e38ddff7c4e99f933":[11,0,5,21,14],
 "class_curve_1_1_model.html#a99b00cb3467f1c249a125929cee08ff5":[11,0,5,21,17],
@@ -249,5 +237,17 @@ var NAVTREEINDEX7 =
 "class_curve_1_1_tool_palette.html#a620f2bb6b357294d124a5b4ea915c34c":[11,0,5,48,1],
 "class_curve_1_1_tool_palette.html#a73953c5f359971a9c4e11c616b9369b0":[11,0,5,48,10],
 "class_curve_1_1_tool_palette.html#a898ee20fe9da4fc7bbd3041fc4a0fa58":[11,0,5,48,7],
-"class_curve_1_1_tool_palette.html#a975601be93d13e182e46ec496f4f36c5":[11,0,5,48,11]
+"class_curve_1_1_tool_palette.html#a975601be93d13e182e46ec496f4f36c5":[11,0,5,48,11],
+"class_curve_1_1_tool_palette.html#a9d6998910d82d525137b727d2eb3fa31":[11,0,5,48,8],
+"class_curve_1_1_tool_palette.html#ab806e8e872b6431c77dec9a091f3ea43":[11,0,5,48,9],
+"class_curve_1_1_tool_palette.html#af225b0241c31206f9c3a965c033dbffd":[11,0,5,48,6],
+"class_curve_1_1_update_curve.html":[11,0,5,50],
+"class_curve_1_1_update_curve.html#a1b45a921d50a6d808682824e28616159":[11,0,5,50,5],
+"class_curve_1_1_update_curve.html#a2f55d1ff2df5735dcceb503d3440450d":[11,0,5,50,3],
+"class_curve_1_1_update_curve.html#a585cc55d951eff536be17f397436f1bb":[11,0,5,50,4],
+"class_curve_1_1_update_curve.html#a7b2d015ba62b41a3036294999164f813":[11,0,5,50,1],
+"class_curve_1_1_update_curve.html#a994b691262db4e86ce0c20c3676b5c0b":[11,0,5,50,0],
+"class_curve_1_1_update_curve.html#ab4c6c18ec91d1d4b00a3bd15ec0f2730":[11,0,5,50,2],
+"class_curve_1_1_view.html":[11,0,5,51],
+"class_curve_1_1_view.html#a1bf21b646899a668b12a424216fc1655":[11,0,5,51,13]
 };

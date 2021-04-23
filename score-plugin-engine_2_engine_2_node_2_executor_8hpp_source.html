@@ -334,14 +334,14 @@ $(document).ready(function(){initNavTree('score-plugin-engine_2_engine_2_node_2_
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    : <span class="keyword">public</span> <a class="code" href="struct_execution_1_1_process_component___t.html">Execution::ProcessComponent_T</a>&lt;ControlProcess&lt;Info&gt;, ossia::node_process&gt;</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;{</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="keyword">static</span> Q_DECL_RELAXED_CONSTEXPR <a class="code" href="class_uuid_key.html">score::Component::Key</a> static_key() noexcept</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="keyword">static</span> Q_DECL_RELAXED_CONSTEXPR <a class="code" href="class_uuid_key.html">UuidKey&lt;score::Component&gt;</a> static_key() noexcept</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  {</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordflow">return</span> Info::Metadata::uuid;</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  }</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <a class="code" href="class_uuid_key.html">score::Component::Key</a> key() <span class="keyword">const</span> noexcept <span class="keyword">final</span> <span class="keyword">override</span> { <span class="keywordflow">return</span> static_key(); }</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <a class="code" href="class_uuid_key.html">UuidKey&lt;score::Component&gt;</a> key() <span class="keyword">const</span> noexcept <span class="keyword">final</span> <span class="keyword">override</span> { <span class="keywordflow">return</span> static_key(); }</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  <span class="keywordtype">bool</span> key_match(<a class="code" href="class_uuid_key.html">score::Component::Key</a> other) <span class="keyword">const</span> noexcept <span class="keyword">final</span> <span class="keyword">override</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  <span class="keywordtype">bool</span> key_match(<a class="code" href="class_uuid_key.html">UuidKey&lt;score::Component&gt;</a> other) <span class="keyword">const</span> noexcept <span class="keyword">final</span> <span class="keyword">override</span></div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  {</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordflow">return</span> static_key() == other || Execution::ProcessComponent::base_key_match(other);</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  }</div>

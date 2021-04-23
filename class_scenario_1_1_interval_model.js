@@ -11,7 +11,7 @@ var class_scenario_1_1_interval_model =
     [ "IntervalModel", "class_scenario_1_1_interval_model.html#a84e5b7ad5a406d83bfeb6b8369b090f2", null ],
     [ "IntervalModel", "class_scenario_1_1_interval_model.html#a565854055338dd08208a372200da5978", null ],
     [ "addLayer", "class_scenario_1_1_interval_model.html#ae348d19cf347ec5509619632f5b73465", null ],
-    [ "addSignature", "class_scenario_1_1_interval_model.html#a31be07ff45457543a306669f519918b2", null ],
+    [ "addSignature", "class_scenario_1_1_interval_model.html#a5289efebab9960ae6c40f8e8a956543d", null ],
     [ "addSlot", "class_scenario_1_1_interval_model.html#a93d5b2d5dfb0528bedb854b8a0af21df", null ],
     [ "addSlot", "class_scenario_1_1_interval_model.html#a78f0a6766f517bead8c5a18e31bac4b7", null ],
     [ "ancestorStartDateChanged", "class_scenario_1_1_interval_model.html#ad0f673f77adef9de94dd4844e3c909e2", null ],

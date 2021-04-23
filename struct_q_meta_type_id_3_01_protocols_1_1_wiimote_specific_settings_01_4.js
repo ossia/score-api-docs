@@ -1,4 +1,4 @@
 var struct_q_meta_type_id_3_01_protocols_1_1_wiimote_specific_settings_01_4 =
 [
-    [ "Defined", "struct_q_meta_type_id_3_01_protocols_1_1_wiimote_specific_settings_01_4.html#aa04fd26cdc83625cc43d4303026cf866aa130101d7ea688d14a1cdde9e788d274", null ]
+    [ "Defined", "struct_q_meta_type_id_3_01_protocols_1_1_wiimote_specific_settings_01_4.html#adcb04386d84ba36749dadde05f2018c3aa130101d7ea688d14a1cdde9e788d274", null ]
 ];
