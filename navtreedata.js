@@ -161,15 +161,15 @@ var NAVTREEINDEX =
 "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a832c91d7848f3079e1b88d822ff7db15",
 "struct_process_1_1_int_slider.html#a3185aa288f8120bb5e755a5bc39e6439",
 "struct_protocols_1_1_m_i_d_i_specific_settings.html#a96edc66808394ecd36565c282ed78a4f",
-"struct_recording_1_1_box.html#a721abe014117ce48acbc6449f0666db3",
-"struct_scenario_1_1_click_on_slot_handle___event.html#a125f220bc37f8ce0aace2160539a32a6",
-"struct_scenario_1_1_snapshot_action.html",
-"struct_std_variant_data_stream_serializer.html#a3eab9b363d19d982b1c6331bad7c03d8",
-"struct_value_message.html#a83bce8412388e5be0b08aa4e94e11271",
-"structscore_1_1_addon.html#ab673b0b100e90a1dc4c8875c02ffe6f4",
-"structscore_1_1_hierarchical_member.html",
-"structscore_1_1_string_constants.html#aa8127745f1cbbe724a6bd36362a13d4b",
-"structvisitor__default__tag.html"
+"struct_r_g_b0_decoder.html#ada190ab55a34cb669d9eac9047c75729",
+"struct_scenario_1_1_categorized_addresses.html#ac19938102b60421c565a6dc97796346f",
+"struct_scenario_1_1_slot_presenter.html#aa32e8fe73b3084c79f8363e98a73166b",
+"struct_std_variant_data_stream_deserializer.html#ab45325f76e7467a179814afcae7952d9",
+"struct_ui_1_1_signal_display_1_1_node_1_1_layer.html#af4ce968995bed682e2171001965edd4e",
+"structscore_1_1_addon.html#a3cff6093068797a65fa151c8fecfffe4",
+"structscore_1_1_hierarchic_model_3_01_model_00_01_arg_00_01_args_8_8_8_01_4.html",
+"structscore_1_1_string_constants.html#aa0111f53eb2e4db8e8ccb85a978d1959",
+"structunused__t.html#a471b44a30e3890fddbf892692408c744"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

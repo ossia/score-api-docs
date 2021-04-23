@@ -1129,6 +1129,8 @@ var annotated_dup =
     [ "QMetaTypeId< Curve::SegmentData >", "struct_q_meta_type_id_3_01_curve_1_1_segment_data_01_4.html", "struct_q_meta_type_id_3_01_curve_1_1_segment_data_01_4" ],
     [ "QMetaTypeId< Curve::Settings::Mode >", "struct_q_meta_type_id_3_01_curve_1_1_settings_1_1_mode_01_4.html", "struct_q_meta_type_id_3_01_curve_1_1_settings_1_1_mode_01_4" ],
     [ "QMetaTypeId< Curve::Tool >", "struct_q_meta_type_id_3_01_curve_1_1_tool_01_4.html", "struct_q_meta_type_id_3_01_curve_1_1_tool_01_4" ],
+    [ "QMetaTypeId< DataStreamReader * >", "struct_q_meta_type_id_3_01_data_stream_reader_01_5_01_4.html", "struct_q_meta_type_id_3_01_data_stream_reader_01_5_01_4" ],
+    [ "QMetaTypeId< DataStreamWriter * >", "struct_q_meta_type_id_3_01_data_stream_writer_01_5_01_4.html", "struct_q_meta_type_id_3_01_data_stream_writer_01_5_01_4" ],
     [ "QMetaTypeId< Device::DeviceSettings >", "struct_q_meta_type_id_3_01_device_1_1_device_settings_01_4.html", "struct_q_meta_type_id_3_01_device_1_1_device_settings_01_4" ],
     [ "QMetaTypeId< ExpandMode >", "struct_q_meta_type_id_3_01_expand_mode_01_4.html", "struct_q_meta_type_id_3_01_expand_mode_01_4" ],
     [ "QMetaTypeId< Gfx::CameraSettings >", "struct_q_meta_type_id_3_01_gfx_1_1_camera_settings_01_4.html", "struct_q_meta_type_id_3_01_gfx_1_1_camera_settings_01_4" ],
