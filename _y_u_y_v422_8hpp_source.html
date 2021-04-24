@@ -123,67 +123,68 @@ $(document).ready(function(){initNavTree('_y_u_y_v422_8hpp_source.html',''); ini
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="stringliteral">const vec3 offset = vec3(-0.0625, -0.5, -0.5);</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="stringliteral"></span> </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="stringliteral">void main() {</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="stringliteral">  vec3 tc =  texture(u_tex, v_texcoord).rgb;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="stringliteral">  vec3 yuv = vec3(tc.g, tc.b, tc.r);</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="stringliteral">  yuv += offset;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="stringliteral">  fragColor.r = dot(yuv, R_cf);</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="stringliteral">  fragColor.g = dot(yuv, G_cf);</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="stringliteral">  fragColor.b = dot(yuv, B_cf);</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="stringliteral">  fragColor.a = 1.0;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="stringliteral">}</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="stringliteral">)_&quot;;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="stringliteral"></span> </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="stringliteral">  <a class="code" href="struct_y_u_y_v422_decoder.html">YUYV422Decoder</a>(<a class="code" href="class_node_model.html">NodeModel</a>&amp; n, <a class="code" href="struct_video_1_1_video_interface.html">video_decoder</a>&amp; d): node{n}, decoder{d} { }</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="stringliteral">  <a class="code" href="class_node_model.html">NodeModel</a>&amp; node;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="stringliteral">  <a class="code" href="struct_video_1_1_video_interface.html">video_decoder</a>&amp; decoder;</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="stringliteral">  </span><span class="keywordtype">void</span> init(<a class="code" href="struct_renderer.html">Renderer</a>&amp; r, <a class="code" href="class_rendered_node.html">RenderedNode</a>&amp; rendered)<span class="keyword"> override</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">auto</span>&amp; rhi = *r.state.rhi;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    std::tie(node.m_vertexS, node.m_fragmentS) = makeShaders(node.mesh().defaultVertexShader(), filter);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> w = decoder.width, h = decoder.height;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// Y</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keyword">auto</span> tex = rhi.newTexture(QRhiTexture::RGBA8, {w/4, h/2}, 1, QRhiTexture::Flag{});</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      tex-&gt;create();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keyword">auto</span> sampler = rhi.newSampler(</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;          QRhiSampler::Linear,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="stringliteral">  vec2 texcoord = vec2(v_texcoord.x, tbuf.texcoordAdjust.y + tbuf.texcoordAdjust.x * v_texcoord.y);</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="stringliteral">  vec3 tc = texture(u_tex, texcoord).rgb;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="stringliteral">  vec3 yuv = vec3(tc.g, tc.b, tc.r);</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="stringliteral">  yuv += offset;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="stringliteral">  fragColor.r = dot(yuv, R_cf);</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="stringliteral">  fragColor.g = dot(yuv, G_cf);</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="stringliteral">  fragColor.b = dot(yuv, B_cf);</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="stringliteral">  fragColor.a = 1.0;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="stringliteral">}</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="stringliteral">)_&quot;;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="stringliteral"></span> </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="stringliteral">  <a class="code" href="struct_y_u_y_v422_decoder.html">YUYV422Decoder</a>(<a class="code" href="class_node_model.html">NodeModel</a>&amp; n, <a class="code" href="struct_video_1_1_video_interface.html">video_decoder</a>&amp; d): node{n}, decoder{d} { }</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="stringliteral">  <a class="code" href="class_node_model.html">NodeModel</a>&amp; node;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="stringliteral">  <a class="code" href="struct_video_1_1_video_interface.html">video_decoder</a>&amp; decoder;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="stringliteral">  </span><span class="keywordtype">void</span> init(<a class="code" href="struct_renderer.html">Renderer</a>&amp; r, <a class="code" href="class_rendered_node.html">RenderedNode</a>&amp; rendered)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">auto</span>&amp; rhi = *r.state.rhi;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::tie(node.m_vertexS, node.m_fragmentS) = makeShaders(node.mesh().defaultVertexShader(), filter);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> w = decoder.width, h = decoder.height;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// Y</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keyword">auto</span> tex = rhi.newTexture(QRhiTexture::RGBA8, {w/4, h/2}, 1, QRhiTexture::Flag{});</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      tex-&gt;create();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keyword">auto</span> sampler = rhi.newSampler(</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;          QRhiSampler::Linear,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;          QRhiSampler::None,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;          QRhiSampler::ClampToEdge,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;          QRhiSampler::ClampToEdge);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      sampler-&gt;create();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      rendered.m_samplers.push_back({sampler, tex});</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> exec(<a class="code" href="struct_renderer.html">Renderer</a>&amp;, <a class="code" href="class_rendered_node.html">RenderedNode</a>&amp; rendered, QRhiResourceUpdateBatch&amp; res, AVFrame&amp; frame)<span class="keyword"> override</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    setYPixels(rendered, res, frame.data[0], frame.linesize[0]);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> release(<a class="code" href="struct_renderer.html">Renderer</a>&amp;, <a class="code" href="class_rendered_node.html">RenderedNode</a>&amp; n)<span class="keyword"> override</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> [sampler, tex] : n.m_samplers)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      tex-&gt;deleteLater();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> setYPixels(<a class="code" href="class_rendered_node.html">RenderedNode</a>&amp; rendered, QRhiResourceUpdateBatch&amp; res, uint8_t* pixels, <span class="keywordtype">int</span> stride) <span class="keyword">const</span> noexcept</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> w = decoder.width, h = decoder.height;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">auto</span> y_tex = rendered.m_samplers[0].texture;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    QRhiTextureUploadEntry entry{0, 0, createTextureUpload(pixels, w, h, 1, stride)};</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    QRhiTextureUploadDescription desc{entry};</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    res.uploadTexture(y_tex, desc);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#include &lt;Gfx/Qt5CompatPop&gt;</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;          QRhiSampler::Linear,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;          QRhiSampler::None,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;          QRhiSampler::ClampToEdge,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;          QRhiSampler::ClampToEdge);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      sampler-&gt;create();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      rendered.m_samplers.push_back({sampler, tex});</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">void</span> exec(<a class="code" href="struct_renderer.html">Renderer</a>&amp;, <a class="code" href="class_rendered_node.html">RenderedNode</a>&amp; rendered, QRhiResourceUpdateBatch&amp; res, AVFrame&amp; frame)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    setYPixels(rendered, res, frame.data[0], frame.linesize[0]);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> release(<a class="code" href="struct_renderer.html">Renderer</a>&amp;, <a class="code" href="class_rendered_node.html">RenderedNode</a>&amp; n)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> [sampler, tex] : n.m_samplers)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      tex-&gt;deleteLater();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> setYPixels(<a class="code" href="class_rendered_node.html">RenderedNode</a>&amp; rendered, QRhiResourceUpdateBatch&amp; res, uint8_t* pixels, <span class="keywordtype">int</span> stride) <span class="keyword">const</span> noexcept</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> w = decoder.width, h = decoder.height;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">auto</span> y_tex = rendered.m_samplers[0].texture;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    QRhiTextureUploadEntry entry{0, 0, createTextureUpload(pixels, w, h, 1, stride)};</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    QRhiTextureUploadDescription desc{entry};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    res.uploadTexture(y_tex, desc);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#include &lt;Gfx/Qt5CompatPop&gt;</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astruct_video_1_1_video_interface_html"><div class="ttname"><a href="struct_video_1_1_video_interface.html">Video::VideoInterface</a></div><div class="ttdef"><b>Definition:</b> VideoInterface.hpp:24</div></div>
