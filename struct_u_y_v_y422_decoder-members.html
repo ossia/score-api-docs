@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.8.17"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>score: GPUVideoDecoder Struct Reference</title>
+        <title>score: Member List</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -75,7 +75,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('struct_g_p_u_video_decoder.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('struct_u_y_v_y422_decoder.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -94,54 +94,24 @@ $(document).ready(function(){initNavTree('struct_g_p_u_video_decoder.html',''); 
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="struct_g_p_u_video_decoder-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">GPUVideoDecoder Struct Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">UYVY422Decoder Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for GPUVideoDecoder:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="struct_g_p_u_video_decoder.png" usemap="#GPUVideoDecoder_map" alt=""/>
-  <map id="GPUVideoDecoder_map" name="GPUVideoDecoder_map">
-<area href="struct_empty_decoder.html" alt="EmptyDecoder" shape="rect" coords="0,56,127,80"/>
-<area href="struct_h_a_p_decoder.html" alt="HAPDecoder" shape="rect" coords="137,56,264,80"/>
-<area href="struct_r_g_b0_decoder.html" alt="RGB0Decoder" shape="rect" coords="274,56,401,80"/>
-<area href="struct_u_y_v_y422_decoder.html" alt="UYVY422Decoder" shape="rect" coords="411,56,538,80"/>
-<area href="struct_y_u_v420_decoder.html" alt="YUV420Decoder" shape="rect" coords="548,56,675,80"/>
-<area href="struct_y_u_v422_decoder.html" alt="YUV422Decoder" shape="rect" coords="685,56,812,80"/>
-<area href="struct_y_u_y_v422_decoder.html" alt="YUYV422Decoder" shape="rect" coords="822,56,949,80"/>
-<area href="struct_h_a_p_default_decoder.html" alt="HAPDefaultDecoder" shape="rect" coords="68,112,195,136"/>
-<area href="struct_h_a_p_m_decoder.html" alt="HAPMDecoder" shape="rect" coords="205,112,332,136"/>
-  </map>
-</div></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:aba832f3828d904ff0713871f058254bd"><td class="memItemLeft" align="right" valign="top"><a id="aba832f3828d904ff0713871f058254bd"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;r, <a class="el" href="class_rendered_node.html">RenderedNode</a> &amp;rendered)=0</td></tr>
-<tr class="separator:aba832f3828d904ff0713871f058254bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ec06db8fa27777e1b3b00a65c1d4d03"><td class="memItemLeft" align="right" valign="top"><a id="a7ec06db8fa27777e1b3b00a65c1d4d03"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>exec</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;, <a class="el" href="class_rendered_node.html">RenderedNode</a> &amp;rendered, QRhiResourceUpdateBatch &amp;res, AVFrame &amp;frame)=0</td></tr>
-<tr class="separator:a7ec06db8fa27777e1b3b00a65c1d4d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab89f2bb566c6db22ad4462de2318bece"><td class="memItemLeft" align="right" valign="top"><a id="ab89f2bb566c6db22ad4462de2318bece"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;, <a class="el" href="class_rendered_node.html">RenderedNode</a> &amp;rendered)=0</td></tr>
-<tr class="separator:ab89f2bb566c6db22ad4462de2318bece"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aa09f959a1d9888f80d591c79b492a74f"><td class="memItemLeft" align="right" valign="top"><a id="aa09f959a1d9888f80d591c79b492a74f"></a>
-static QRhiTextureSubresourceUploadDescription&#160;</td><td class="memItemRight" valign="bottom"><b>createTextureUpload</b> (uint8_t *pixels, int w, int h, int bytesPerPixel, int stride)</td></tr>
-<tr class="separator:aa09f959a1d9888f80d591c79b492a74f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="_g_p_u_video_decoder_8hpp_source.html">GPUVideoDecoder.hpp</a></li>
-</ul>
-</div><!-- contents -->
+
+<p>This is the complete list of members for <a class="el" href="struct_u_y_v_y422_decoder.html">UYVY422Decoder</a>, including all inherited members.</p>
+<table class="directory">
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>createTextureUpload</b>(uint8_t *pixels, int w, int h, int bytesPerPixel, int stride) (defined in <a class="el" href="struct_g_p_u_video_decoder.html">GPUVideoDecoder</a>)</td><td class="entry"><a class="el" href="struct_g_p_u_video_decoder.html">GPUVideoDecoder</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>decoder</b> (defined in <a class="el" href="struct_u_y_v_y422_decoder.html">UYVY422Decoder</a>)</td><td class="entry"><a class="el" href="struct_u_y_v_y422_decoder.html">UYVY422Decoder</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>exec</b>(Renderer &amp;, RenderedNode &amp;rendered, QRhiResourceUpdateBatch &amp;res, AVFrame &amp;frame) override (defined in <a class="el" href="struct_u_y_v_y422_decoder.html">UYVY422Decoder</a>)</td><td class="entry"><a class="el" href="struct_u_y_v_y422_decoder.html">UYVY422Decoder</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>filter</b> (defined in <a class="el" href="struct_u_y_v_y422_decoder.html">UYVY422Decoder</a>)</td><td class="entry"><a class="el" href="struct_u_y_v_y422_decoder.html">UYVY422Decoder</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>init</b>(Renderer &amp;r, RenderedNode &amp;rendered) override (defined in <a class="el" href="struct_u_y_v_y422_decoder.html">UYVY422Decoder</a>)</td><td class="entry"><a class="el" href="struct_u_y_v_y422_decoder.html">UYVY422Decoder</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>node</b> (defined in <a class="el" href="struct_u_y_v_y422_decoder.html">UYVY422Decoder</a>)</td><td class="entry"><a class="el" href="struct_u_y_v_y422_decoder.html">UYVY422Decoder</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>release</b>(Renderer &amp;, RenderedNode &amp;n) override (defined in <a class="el" href="struct_u_y_v_y422_decoder.html">UYVY422Decoder</a>)</td><td class="entry"><a class="el" href="struct_u_y_v_y422_decoder.html">UYVY422Decoder</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>setYPixels</b>(RenderedNode &amp;rendered, QRhiResourceUpdateBatch &amp;res, uint8_t *pixels, int stride) const noexcept (defined in <a class="el" href="struct_u_y_v_y422_decoder.html">UYVY422Decoder</a>)</td><td class="entry"><a class="el" href="struct_u_y_v_y422_decoder.html">UYVY422Decoder</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>UYVY422Decoder</b>(NodeModel &amp;n, video_decoder &amp;d) (defined in <a class="el" href="struct_u_y_v_y422_decoder.html">UYVY422Decoder</a>)</td><td class="entry"><a class="el" href="struct_u_y_v_y422_decoder.html">UYVY422Decoder</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>~GPUVideoDecoder</b>() (defined in <a class="el" href="struct_g_p_u_video_decoder.html">GPUVideoDecoder</a>)</td><td class="entry"><a class="el" href="struct_g_p_u_video_decoder.html">GPUVideoDecoder</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

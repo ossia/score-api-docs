@@ -84,7 +84,7 @@ var searchData=
   ['resizeslotverticallytest_1900',['ResizeSlotVerticallyTest',['../class_resize_slot_vertically_test.html',1,'']]],
   ['restorabledocument_1901',['RestorableDocument',['../structscore_1_1_restorable_document.html',1,'score']]],
   ['rgb0decoder_1902',['RGB0Decoder',['../struct_r_g_b0_decoder.html',1,'']]],
-  ['rgbaedit_1903',['RGBAEdit',['../struct_widget_factory_1_1_r_g_b_a_edit.html',1,'WidgetFactory::RGBAEdit'],['../struct_control_1_1_r_g_b_a_edit.html',1,'Control::RGBAEdit']]],
+  ['rgbaedit_1903',['RGBAEdit',['../struct_control_1_1_r_g_b_a_edit.html',1,'Control::RGBAEdit'],['../struct_widget_factory_1_1_r_g_b_a_edit.html',1,'WidgetFactory::RGBAEdit']]],
   ['rightbraceview_1904',['RightBraceView',['../class_scenario_1_1_right_brace_view.html',1,'Scenario']]],
   ['rightclickimpl_1905',['RightClickImpl',['../structscore_1_1_right_click_impl.html',1,'score']]],
   ['rmsdata_1906',['RMSData',['../struct_media_1_1_r_m_s_data.html',1,'Media']]],

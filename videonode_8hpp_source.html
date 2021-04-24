@@ -109,31 +109,32 @@ $(document).ready(function(){initNavTree('videonode_8hpp_source.html',''); initR
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QElapsedTimer&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;Video/VideoInterface.hpp&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/flicks.hpp&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="struct_video_node.html">   12</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_video_node.html">VideoNode</a> : <a class="code" href="class_node_model.html">NodeModel</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="struct_video_node.html">   12</a></span>&#160;<span class="keyword">struct </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="struct_video_node.html">VideoNode</a> : <a class="code" href="class_node_model.html">NodeModel</a></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  std::shared_ptr&lt;video_decoder&gt; decoder;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  std::unique_ptr&lt;GPUVideoDecoder&gt; gpu;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  AVPixelFormat current_format = AV_PIX_FMT_YUV420P;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  std::atomic_bool seeked{};</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  std::optional&lt;double&gt; nativeTempo;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  QString filter;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_textured_triangle.html">TexturedTriangle</a>&amp; m_mesh = TexturedTriangle::instance();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <a class="code" href="struct_video_node.html">VideoNode</a>(std::shared_ptr&lt;video_decoder&gt; dec</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            , std::optional&lt;double&gt; nativeTempo</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            , QString f = {});</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">void</span> initGpuDecoder();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordtype">void</span> checkFormat(AVPixelFormat fmt);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_mesh.html">Mesh</a>&amp; mesh() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">struct </span><a class="code" href="struct_video_node_1_1_rendered.html">Rendered</a>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="struct_video_node.html">VideoNode</a>();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>* createRenderer() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  AVPixelFormat current_format = AVPixelFormat(-1);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordtype">int</span> current_width{}, current_height{};</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  std::atomic_bool seeked{};</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  std::optional&lt;double&gt; nativeTempo;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  QString filter;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_textured_triangle.html">TexturedTriangle</a>&amp; m_mesh = TexturedTriangle::instance();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <a class="code" href="struct_video_node.html">VideoNode</a>(std::shared_ptr&lt;video_decoder&gt; dec</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            , std::optional&lt;double&gt; nativeTempo</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            , QString f = {});</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordtype">void</span> initGpuDecoder();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">void</span> checkFormat(AVPixelFormat fmt, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_mesh.html">Mesh</a>&amp; mesh() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">struct </span><a class="code" href="struct_video_node_1_1_rendered.html">Rendered</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="struct_video_node.html">VideoNode</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>* createRenderer() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:177</div></div>

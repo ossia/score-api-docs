@@ -1411,6 +1411,7 @@ var annotated_dup =
     [ "UnitTests", "class_unit_tests.html", null ],
     [ "unused_t", "structunused__t.html", "structunused__t" ],
     [ "UuidKey", "class_uuid_key.html", "class_uuid_key" ],
+    [ "UYVY422Decoder", "struct_u_y_v_y422_decoder.html", "struct_u_y_v_y422_decoder" ],
     [ "ValueInlet", "class_value_inlet.html", "class_value_inlet" ],
     [ "ValueMessage", "struct_value_message.html", "struct_value_message" ],
     [ "ValueOutlet", "class_value_outlet.html", "class_value_outlet" ],
