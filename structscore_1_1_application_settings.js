@@ -1,6 +1,7 @@
 var structscore_1_1_application_settings =
 [
     [ "parse", "structscore_1_1_application_settings.html#a0a5bdb3a4aa89add533f07a51e6ccbdc", null ],
+    [ "arguments", "structscore_1_1_application_settings.html#a50b4c9cd2201282fc335bc4ca5f4a6c8", null ],
     [ "autoplay", "structscore_1_1_application_settings.html#ae2b0c986e978926b5acc72732490123d", null ],
     [ "gui", "structscore_1_1_application_settings.html#a0a48ca49dc5cfd09a2534d2f3168c192", null ],
     [ "loadList", "structscore_1_1_application_settings.html#ac4485606b08677be4115260f2e30b241", null ],
