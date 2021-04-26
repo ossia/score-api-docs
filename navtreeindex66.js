@@ -1,5 +1,6 @@
 var NAVTREEINDEX66 =
 {
+"structstd_1_1hash_3_01ossia_1_1unit__variant_01_4.html#ab50a3463c75c92dbceaa33cd0da2c698":[11,0,47,5,0],
 "structstd_1_1hash_3_01score_1_1_loaded_plugin_versions_01_4.html":[11,0,47,8],
 "structstd_1_1hash_3_01score_1_1_loaded_plugin_versions_01_4.html#ad43efeb7e54a352cdc1e6cee5218debe":[11,0,47,8,0],
 "structstd_1_1hash_3_01score_1_1_version_01_4.html":[11,0,47,9],

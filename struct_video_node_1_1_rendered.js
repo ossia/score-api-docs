@@ -9,5 +9,6 @@ var struct_video_node_1_1_rendered =
     [ "current_format", "struct_video_node_1_1_rendered.html#a4113308716c6aedc90d8222c466e2d44", null ],
     [ "framesToFree", "struct_video_node_1_1_rendered.html#ad476e1239d894c76d2cbb9856a6f7b30", null ],
     [ "lastFrameTime", "struct_video_node_1_1_rendered.html#a98d2372d4568790d3c0d1a59f8d89756", null ],
+    [ "lastPlaybackTime", "struct_video_node_1_1_rendered.html#a0790c3cec43d985a8585c37116455b05", null ],
     [ "t", "struct_video_node_1_1_rendered.html#aef8ab3b3f5b9aff03ad08e949a97d633", null ]
 ];
