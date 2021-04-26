@@ -11,6 +11,7 @@ var class_explorer_1_1_device_explorer_model =
     [ "checkAddressInstantiatable", "class_explorer_1_1_device_explorer_model.html#ae115f209cc15f44abfef1c5339c3529d", null ],
     [ "checkAndLoadDevice", "class_explorer_1_1_device_explorer_model.html#abf8ae5ae94039147ffb7247bc5803701", null ],
     [ "checkAndLoadDevice", "class_explorer_1_1_device_explorer_model.html#aa3544a0a959c1a504d76bf15109f4912", null ],
+    [ "checkDeviceEditable", "class_explorer_1_1_device_explorer_model.html#abe667e9a6599bb71caca57fd4911e0f4", null ],
     [ "checkDeviceInstantiatable", "class_explorer_1_1_device_explorer_model.html#ac79723a31d0519160a0c54767aea16b6", null ],
     [ "columnCount", "class_explorer_1_1_device_explorer_model.html#a421ea3ee83b4e92ec087baef243412e8", null ],
     [ "columnCount", "class_explorer_1_1_device_explorer_model.html#a30adef021aaa7b5da1ea814c8b2b3965", null ],
