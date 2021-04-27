@@ -363,105 +363,106 @@ $(document).ready(function(){initNavTree('_scenario_creation___from_state_8hpp_s
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <a class="code" href="class_scenario_1_1_edition_settings.html">Scenario::EditionSettings</a>&amp; settings = this-&gt;m_parentSM.editionSettings();</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> sequence = settings.tool() == Tool::CreateSequence;</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> new_event = qApp-&gt;keyboardModifiers() &amp; Qt::ALT;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keyword">auto</span>&amp; st = scenar.state(*this-&gt;clickedState);</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keyword">auto</span>&amp; ev = Scenario::parentEvent(st, scenar);</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordflow">if</span>(ev.date() &gt; this-&gt;currentPoint.date)</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160; </div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keywordflow">if</span> (new_event &amp;&amp; !sequence)</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    {</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;      <span class="comment">// Create new event on the timesync</span></div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;      <span class="keyword">auto</span> tn = ev.timeSync();</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;      <span class="keyword">auto</span> cmd</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;          = <span class="keyword">new</span> <a class="code" href="class_scenario_1_1_command_1_1_create_event___state.html">Scenario::Command::CreateEvent_State</a>{this-&gt;m_scenario, tn, this-&gt;currentPoint.y};</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;      this-&gt;m_dispatcher.submit(cmd);</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;      this-&gt;createdEvents.append(cmd-&gt;createdEvent());</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;      this-&gt;createdStates.append(cmd-&gt;createdState());</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;      fun(this-&gt;createdStates.first());</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    }</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    {</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;      <span class="keywordflow">if</span> (!sequence)</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;      {</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="comment">// Create new state on the event</span></div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        <span class="keyword">auto</span> cmd = <span class="keyword">new</span> <a class="code" href="class_scenario_1_1_command_1_1_create_state.html">Scenario::Command::CreateState</a>{</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            this-&gt;m_scenario, st.eventId(), this-&gt;currentPoint.y};</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        this-&gt;m_dispatcher.submit(cmd);</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160; </div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        this-&gt;createdStates.append(cmd-&gt;createdState());</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        fun(this-&gt;createdStates.first());</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;      }</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;      {</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="keywordflow">if</span> (!st.nextInterval()) <span class="comment">// TODO &amp; deltaY &lt; deltaX</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        {</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;          this-&gt;currentPoint.y = st.heightPercentage();</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;          fun(*this-&gt;clickedState);</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        }</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        {</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;          <span class="comment">// Create new state on the event</span></div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;          <span class="keyword">auto</span> cmd = <span class="keyword">new</span> <a class="code" href="class_scenario_1_1_command_1_1_create_state.html">Scenario::Command::CreateState</a>{</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;              this-&gt;m_scenario, st.eventId(), this-&gt;currentPoint.y};</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;          this-&gt;m_dispatcher.submit(cmd);</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;          this-&gt;createdStates.append(cmd-&gt;createdState());</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;          fun(this-&gt;createdStates.first());</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;          <span class="comment">// create a single state on the same event (deltaY &gt; deltaX)</span></div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        }</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;      }</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    }</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  }</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;  <span class="comment">// Note : clickedEvent is set at startEvent if clicking in the background.</span></div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  <span class="keywordtype">void</span> createToNothing()</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  {</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    creationCheck([&amp;](<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;StateModel&gt;</a>&amp; <span class="keywordtype">id</span>) { this-&gt;createToNothing_base(<span class="keywordtype">id</span>); });</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;  }</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160; </div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;  <span class="keywordtype">void</span> createToTimeSync()</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  {</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    creationCheck([&amp;](<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;StateModel&gt;</a>&amp; <span class="keywordtype">id</span>) { this-&gt;createToTimeSync_base(<span class="keywordtype">id</span>); });</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  }</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160; </div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  <span class="keywordtype">void</span> createToEvent()</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  {</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordflow">if</span> (this-&gt;clickedState)</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    {</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;      <span class="keywordflow">if</span> (this-&gt;hoveredEvent == this-&gt;m_parentSM.model().state(*this-&gt;clickedState).eventId())</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;      {</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        creationCheck([&amp;](<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;StateModel&gt;</a>&amp; <span class="keywordtype">id</span>) {});</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;      }</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;      {</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        creationCheck([&amp;](<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;StateModel&gt;</a>&amp; <span class="keywordtype">id</span>) { this-&gt;createToEvent_base(<span class="keywordtype">id</span>); });</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;      }</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    }</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;  }</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160; </div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  <span class="keywordtype">void</span> createToState()</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  {</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keywordflow">if</span> (this-&gt;hoveredState)</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    {</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;      <span class="keyword">auto</span>&amp; st = this-&gt;m_parentSM.model().states.at(*this-&gt;hoveredState);</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;      <span class="keywordflow">if</span> (!st.previousInterval())</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;      {</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <span class="comment">// No previous interval -&gt; we create a new interval and link it to</span></div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        <span class="comment">// this state</span></div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        creationCheck([&amp;](<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;StateModel&gt;</a>&amp; <span class="keywordtype">id</span>) { this-&gt;createToState_base(<span class="keywordtype">id</span>); });</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;      }</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;      {</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        <span class="comment">// Previous interval -&gt; we add a new state to the event and link to</span></div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <span class="comment">// it.</span></div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        this-&gt;hoveredEvent = st.eventId();</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        creationCheck([&amp;](<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;StateModel&gt;</a>&amp; <span class="keywordtype">id</span>) { this-&gt;createToEvent_base(<span class="keywordtype">id</span>); });</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;      }</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    }</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;  }</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;};</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;}</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> graph_interval = settings.tool() == Scenario::Tool::CreateGraph;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keyword">auto</span>&amp; st = scenar.state(*this-&gt;clickedState);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keyword">auto</span>&amp; ev = Scenario::parentEvent(st, scenar);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keywordflow">if</span>(ev.date() &gt; this-&gt;currentPoint.date &amp;&amp; !graph_interval)</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;      <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keywordflow">if</span> (new_event &amp;&amp; !sequence)</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    {</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;      <span class="comment">// Create new event on the timesync</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;      <span class="keyword">auto</span> tn = ev.timeSync();</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;      <span class="keyword">auto</span> cmd</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;          = <span class="keyword">new</span> <a class="code" href="class_scenario_1_1_command_1_1_create_event___state.html">Scenario::Command::CreateEvent_State</a>{this-&gt;m_scenario, tn, this-&gt;currentPoint.y};</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;      this-&gt;m_dispatcher.submit(cmd);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;      this-&gt;createdEvents.append(cmd-&gt;createdEvent());</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;      this-&gt;createdStates.append(cmd-&gt;createdState());</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;      fun(this-&gt;createdStates.first());</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    }</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    {</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;      <span class="keywordflow">if</span> (!sequence)</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;      {</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        <span class="comment">// Create new state on the event</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <span class="keyword">auto</span> cmd = <span class="keyword">new</span> <a class="code" href="class_scenario_1_1_command_1_1_create_state.html">Scenario::Command::CreateState</a>{</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            this-&gt;m_scenario, st.eventId(), this-&gt;currentPoint.y};</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        this-&gt;m_dispatcher.submit(cmd);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        this-&gt;createdStates.append(cmd-&gt;createdState());</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        fun(this-&gt;createdStates.first());</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;      }</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;      {</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        <span class="keywordflow">if</span> (!st.nextInterval()) <span class="comment">// TODO &amp; deltaY &lt; deltaX</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        {</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;          this-&gt;currentPoint.y = st.heightPercentage();</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;          fun(*this-&gt;clickedState);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        }</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        {</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;          <span class="comment">// Create new state on the event</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;          <span class="keyword">auto</span> cmd = <span class="keyword">new</span> <a class="code" href="class_scenario_1_1_command_1_1_create_state.html">Scenario::Command::CreateState</a>{</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;              this-&gt;m_scenario, st.eventId(), this-&gt;currentPoint.y};</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;          this-&gt;m_dispatcher.submit(cmd);</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;          this-&gt;createdStates.append(cmd-&gt;createdState());</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;          fun(this-&gt;createdStates.first());</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;          <span class="comment">// create a single state on the same event (deltaY &gt; deltaX)</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        }</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;      }</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    }</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  }</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  <span class="comment">// Note : clickedEvent is set at startEvent if clicking in the background.</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  <span class="keywordtype">void</span> createToNothing()</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;  {</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    creationCheck([&amp;](<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;StateModel&gt;</a>&amp; <span class="keywordtype">id</span>) { this-&gt;createToNothing_base(<span class="keywordtype">id</span>); });</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  }</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160; </div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  <span class="keywordtype">void</span> createToTimeSync()</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  {</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    creationCheck([&amp;](<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;StateModel&gt;</a>&amp; <span class="keywordtype">id</span>) { this-&gt;createToTimeSync_base(<span class="keywordtype">id</span>); });</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  }</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160; </div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  <span class="keywordtype">void</span> createToEvent()</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;  {</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="keywordflow">if</span> (this-&gt;clickedState)</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    {</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;      <span class="keywordflow">if</span> (this-&gt;hoveredEvent == this-&gt;m_parentSM.model().state(*this-&gt;clickedState).eventId())</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;      {</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        creationCheck([&amp;](<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;StateModel&gt;</a>&amp; <span class="keywordtype">id</span>) {});</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;      }</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;      {</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        creationCheck([&amp;](<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;StateModel&gt;</a>&amp; <span class="keywordtype">id</span>) { this-&gt;createToEvent_base(<span class="keywordtype">id</span>); });</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;      }</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    }</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  }</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  <span class="keywordtype">void</span> createToState()</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;  {</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keywordflow">if</span> (this-&gt;hoveredState)</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    {</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;      <span class="keyword">auto</span>&amp; st = this-&gt;m_parentSM.model().states.at(*this-&gt;hoveredState);</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;      <span class="keywordflow">if</span> (!st.previousInterval())</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;      {</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        <span class="comment">// No previous interval -&gt; we create a new interval and link it to</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <span class="comment">// this state</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        creationCheck([&amp;](<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;StateModel&gt;</a>&amp; <span class="keywordtype">id</span>) { this-&gt;createToState_base(<span class="keywordtype">id</span>); });</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;      }</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;      {</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <span class="comment">// Previous interval -&gt; we add a new state to the event and link to</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        <span class="comment">// it.</span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        this-&gt;hoveredEvent = st.eventId();</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        creationCheck([&amp;](<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;StateModel&gt;</a>&amp; <span class="keywordtype">id</span>) { this-&gt;createToEvent_base(<span class="keywordtype">id</span>); });</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;      }</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    }</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;  }</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;};</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>
