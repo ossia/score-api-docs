@@ -27,7 +27,7 @@ var searchData=
   ['floatcontrol_3c_20t_2c_20widgetfactory_3a_3alinearnormalizer_2c_20true_20_3e_3214',['FloatControl&lt; T, WidgetFactory::LinearNormalizer, true &gt;',['../struct_widget_factory_1_1_float_control.html',1,'WidgetFactory']]],
   ['floatcontrol_3c_20t_2c_20widgetfactory_3a_3alognormalizer_2c_20true_20_3e_3215',['FloatControl&lt; T, WidgetFactory::LogNormalizer, true &gt;',['../struct_widget_factory_1_1_float_control.html',1,'WidgetFactory']]],
   ['floatdisplay_3216',['FloatDisplay',['../struct_control_1_1_float_display.html',1,'Control']]],
-  ['floatslider_3217',['FloatSlider',['../struct_process_1_1_float_slider.html',1,'Process::FloatSlider'],['../class_float_slider.html',1,'FloatSlider']]],
+  ['floatslider_3217',['FloatSlider',['../class_float_slider.html',1,'FloatSlider'],['../struct_process_1_1_float_slider.html',1,'Process::FloatSlider']]],
   ['focusactioncondition_3218',['FocusActionCondition',['../structscore_1_1_focus_action_condition.html',1,'score']]],
   ['focusdispatcher_3219',['FocusDispatcher',['../class_focus_dispatcher.html',1,'']]],
   ['focusfacade_3220',['FocusFacade',['../structscore_1_1_focus_facade.html',1,'score']]],

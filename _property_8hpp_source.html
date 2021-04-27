@@ -160,31 +160,33 @@ $(document).ready(function(){initNavTree('_property_8hpp_source.html',''); initR
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Property, <span class="keyword">typename</span> Object&gt;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">auto</span> add_property(ossia::net::node_base&amp; n, Object&amp; obj, QObject* context)</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  constexpr <span class="keyword">const</span> <span class="keyword">auto</span> t = ossia::qt_property_converter&lt;typename Property::param_type&gt;::val;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">auto</span> node = n.create_child(Property::name);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  SCORE_ASSERT(node);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">auto</span> addr = node-&gt;create_parameter(t);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  SCORE_ASSERT(addr);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  addr-&gt;set_access(ossia::access_mode::BI);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordflow">return</span> std::make_unique&lt;PropertyWrapper&lt;Property&gt;&gt;(*addr, obj, context);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Property, <span class="keyword">typename</span> Object&gt;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">auto</span> add_property(ossia::net::node_base&amp; n, Object&amp; obj, <span class="keyword">const</span> std::string&amp; name, QObject* context)</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  constexpr <span class="keyword">const</span> <span class="keyword">auto</span> t = ossia::qt_property_converter&lt;typename Property::param_type&gt;::val;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">auto</span> node = n.create_child(name);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  SCORE_ASSERT(node);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">auto</span> addr = node-&gt;create_parameter(t);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  SCORE_ASSERT(addr);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  addr-&gt;set_access(ossia::access_mode::BI);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordflow">return</span> std::make_unique&lt;PropertyWrapper&lt;Property&gt;&gt;(*addr, obj, context);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  SCORE_ASSERT(!std::string_view(Property::name).empty());</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  constexpr <span class="keyword">const</span> <span class="keyword">auto</span> t = ossia::qt_property_converter&lt;typename Property::param_type&gt;::val;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">auto</span> node = n.create_child(Property::name);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  SCORE_ASSERT(node);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">auto</span> addr = node-&gt;create_parameter(t);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  SCORE_ASSERT(addr);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  addr-&gt;set_access(ossia::access_mode::BI);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordflow">return</span> std::make_unique&lt;PropertyWrapper&lt;Property&gt;&gt;(*addr, obj, context);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Property, <span class="keyword">typename</span> Object&gt;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">auto</span> add_property(ossia::net::node_base&amp; n, Object&amp; obj, <span class="keyword">const</span> std::string&amp; name, QObject* context)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  SCORE_ASSERT(!name.empty());</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  constexpr <span class="keyword">const</span> <span class="keyword">auto</span> t = ossia::qt_property_converter&lt;typename Property::param_type&gt;::val;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">auto</span> node = n.create_child(name);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  SCORE_ASSERT(node);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keyword">auto</span> addr = node-&gt;create_parameter(t);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  SCORE_ASSERT(addr);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  addr-&gt;set_access(ossia::access_mode::BI);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordflow">return</span> std::make_unique&lt;PropertyWrapper&lt;Property&gt;&gt;(*addr, obj, context);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astruct_local_tree_1_1_property_wrapper_html"><div class="ttname"><a href="struct_local_tree_1_1_property_wrapper.html">LocalTree::PropertyWrapper</a></div><div class="ttdef"><b>Definition:</b> Property.hpp:19</div></div>

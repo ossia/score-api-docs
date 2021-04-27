@@ -1,9 +1,5 @@
 var NAVTREEINDEX48 =
 {
-"struct_audio_texture.html#a27fe527c36adccba918f77587522bc95":[11,0,68,4],
-"struct_audio_texture.html#a35dec05701c6550d7b42bd9081e34d83":[11,0,68,0],
-"struct_audio_texture.html#a67762d037a3e57c3d5e6efbc7a1875a2":[11,0,68,2],
-"struct_automation_1_1_recreate_on_play_1_1modvalue.html":[11,0,1,0,1],
 "struct_automation_1_1_recreate_on_play_1_1modvalue.html#a7abdbf683fc9c88338d030eb716da12b":[11,0,1,0,1,8],
 "struct_automation_1_1_recreate_on_play_1_1modvalue.html#a845a2426a3bc64cb7552d95324c31c6e":[11,0,1,0,1,2],
 "struct_automation_1_1_recreate_on_play_1_1modvalue.html#a87acfe6c430cb95b2f3ba26919623ee3":[11,0,1,0,1,4],
@@ -249,5 +245,9 @@ var NAVTREEINDEX48 =
 "struct_control_1_1score__generic__plugin.html":[11,0,3,34],
 "struct_control_1_1score__generic__plugin.html#a5605040863d1b074c8d03635a67be88f":[11,0,3,34,2],
 "struct_control_1_1score__generic__plugin.html#a7eb67f42224ccb5b8df8f6dff24e0cc9":[11,0,3,34,0],
-"struct_control_1_1score__generic__plugin.html#ab4ac453a97792a63b5f50a0d85bdd014":[11,0,3,34,3]
+"struct_control_1_1score__generic__plugin.html#ab4ac453a97792a63b5f50a0d85bdd014":[11,0,3,34,3],
+"struct_control_1_1score__generic__plugin.html#ad34531bd64343abe721937972dd94591":[11,0,3,34,1],
+"struct_control_1_1score__generic__plugin.html#ada657f31af6cbc5d808c8fe0d5322b01":[11,0,3,34,4],
+"struct_control_1_1score__generic__plugin.html#adb927fea43a207e45d02ae7b871a4878":[11,0,3,34,5],
+"struct_control_1_1setup___impl0.html":[11,0,3,35]
 };

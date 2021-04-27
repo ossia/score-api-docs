@@ -223,7 +223,6 @@ var annotated_dup =
         [ "DropHandler", "class_gfx_1_1_filter_1_1_drop_handler.html", null ],
         [ "filter_node", "class_gfx_1_1_filter_1_1filter__node.html", "class_gfx_1_1_filter_1_1filter__node" ],
         [ "LibraryHandler", "class_gfx_1_1_filter_1_1_library_handler.html", null ],
-        [ "LocalTreeProcessComponent", "class_gfx_1_1_filter_1_1_local_tree_process_component.html", "class_gfx_1_1_filter_1_1_local_tree_process_component" ],
         [ "Model", "class_gfx_1_1_filter_1_1_model.html", "class_gfx_1_1_filter_1_1_model" ],
         [ "ProcessExecutorComponent", "class_gfx_1_1_filter_1_1_process_executor_component.html", "class_gfx_1_1_filter_1_1_process_executor_component" ]
       ] ],
@@ -245,7 +244,6 @@ var annotated_dup =
         [ "InspectorFactory", "class_gfx_1_1_video_1_1_inspector_factory.html", null ],
         [ "InspectorWidget", "class_gfx_1_1_video_1_1_inspector_widget.html", "class_gfx_1_1_video_1_1_inspector_widget" ],
         [ "LibraryHandler", "class_gfx_1_1_video_1_1_library_handler.html", null ],
-        [ "LocalTreeProcessComponent", "class_gfx_1_1_video_1_1_local_tree_process_component.html", "class_gfx_1_1_video_1_1_local_tree_process_component" ],
         [ "Model", "class_gfx_1_1_video_1_1_model.html", "class_gfx_1_1_video_1_1_model" ],
         [ "Presenter", "class_gfx_1_1_video_1_1_presenter.html", "class_gfx_1_1_video_1_1_presenter" ],
         [ "ProcessExecutorComponent", "class_gfx_1_1_video_1_1_process_executor_component.html", "class_gfx_1_1_video_1_1_process_executor_component" ],
