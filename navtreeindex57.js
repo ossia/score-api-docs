@@ -1,7 +1,5 @@
 var NAVTREEINDEX57 =
 {
-"struct_protocols_1_1_minuit_specific_settings.html#afd60fbe675c5103382d16b52ab3495b0":[11,0,36,36,4],
-"struct_protocols_1_1_o_s_c_query_specific_settings.html":[11,0,36,45],
 "struct_protocols_1_1_o_s_c_query_specific_settings.html#aabc9d9431d38e1b5e0cc2d46db747e0e":[11,0,36,45,1],
 "struct_protocols_1_1_o_s_c_query_specific_settings.html#ae363910c82c3309055357376008dd8cc":[11,0,36,45,0],
 "struct_protocols_1_1_o_s_c_specific_settings.html":[11,0,36,46],
@@ -249,5 +247,7 @@ var NAVTREEINDEX57 =
 "struct_recording_1_1_message_policy.html#ab2f6b3b8b5ab68696b52c1160c76ffe0":[11,0,37,3,0],
 "struct_recording_1_1_parameter_policy.html":[11,0,37,5],
 "struct_recording_1_1_parameter_policy.html#a6f72dd3ddb36c7f3caf6c79732f8e7de":[11,0,37,5,0],
-"struct_recording_1_1_record_automation_creation_visitor.html":[11,0,37,7]
+"struct_recording_1_1_record_automation_creation_visitor.html":[11,0,37,7],
+"struct_recording_1_1_record_automation_creation_visitor.html#a08b8ab3af6b67e8873b4729f075eb86d":[11,0,37,7,11],
+"struct_recording_1_1_record_automation_creation_visitor.html#a363e7ae8c597af79f5f66bf5ae5aa143":[11,0,37,7,10]
 };

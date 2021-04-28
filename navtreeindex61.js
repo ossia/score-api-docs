@@ -1,7 +1,5 @@
 var NAVTREEINDEX61 =
 {
-"struct_std_variant_j_s_o_n_deserializer.html#ab71d295af467425ea28751e3703d4c08":[11,0,393,1],
-"struct_std_variant_j_s_o_n_deserializer.html#acd4c95e96caad026719076720f416007":[11,0,393,3],
 "struct_std_variant_j_s_o_n_serializer.html":[11,0,394],
 "struct_std_variant_j_s_o_n_serializer.html#a4781fb8e7c5bbe43a8344b14aa341aa6":[11,0,394,0],
 "struct_std_variant_j_s_o_n_serializer.html#a79516eac0f5a95cdd785829f3fb6e05d":[11,0,394,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX61 =
 "struct_ui_1_1_signal_display_1_1_node_1_1_layer.html#af4ce968995bed682e2171001965edd4e":[11,0,48,0,0,0,0],
 "struct_ui_1_1_signal_display_1_1_node_1_1_metadata.html":[11,0,48,0,0,1],
 "struct_value_message.html":[11,0,518],
-"struct_value_message.html#a4cb12bc82a235bb8cab273abf210ea54":[11,0,518,2]
+"struct_value_message.html#a4cb12bc82a235bb8cab273abf210ea54":[11,0,518,2],
+"struct_value_message.html#a83bce8412388e5be0b08aa4e94e11271":[11,0,518,3],
+"struct_value_message.html#a979aba836343403db928462ca450f8cc":[11,0,518,4]
 };

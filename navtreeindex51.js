@@ -1,7 +1,5 @@
 var NAVTREEINDEX51 =
 {
-"struct_gfx_1_1_camera_settings.html#ab159a0fda2c0408710f13d608d930d22":[11,0,13,13,2],
-"struct_gfx_1_1_image.html":[11,0,13,30],
 "struct_gfx_1_1_image.html#a3ceacce4747f45d4dc25167d00dd334d":[11,0,13,30,1],
 "struct_gfx_1_1_image.html#af50f7266c5ccaac2309d2405abe3b2a0":[11,0,13,30,0],
 "struct_gfx_1_1_kinect2_context.html":[11,0,13,38],
@@ -249,5 +247,7 @@ var NAVTREEINDEX51 =
 "struct_j_s_1_1_executor_1_1js__process.html#a858f2f65646df649e404e0f0863b6a9f":[11,0,20,0,2,0],
 "struct_j_s_1_1_executor_1_1js__process.html#ab12067305e7c7548465967a57c18cca9":[11,0,20,0,2,3],
 "struct_j_s_1_1_executor_1_1js__process.html#ace99a015bb99b84af0d5022e88fe6b98":[11,0,20,0,2,4],
-"struct_j_s_1_1_language_spec.html":[11,0,20,7]
+"struct_j_s_1_1_language_spec.html":[11,0,20,7],
+"struct_j_s_o_n_reader_1_1assigner.html":[11,0,151,0],
+"struct_j_s_o_n_reader_1_1assigner.html#a010bda03a031ec93e2920f304e73c21a":[11,0,151,0,4]
 };

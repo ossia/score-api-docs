@@ -1,7 +1,5 @@
 var NAVTREEINDEX66 =
 {
-"structunused__t.html#a471b44a30e3890fddbf892692408c744":[11,0,514,0],
-"structvisitor__abstract__entity__tag.html":[11,0,528],
 "structvisitor__abstract__object__tag.html":[11,0,529],
 "structvisitor__abstract__tag.html":[11,0,530],
 "structvisitor__default__tag.html":[11,0,531],

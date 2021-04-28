@@ -23,6 +23,5 @@ var class_scenario_1_1_event_view =
     [ "setExtent", "class_scenario_1_1_event_view.html#ad555e104656922323469ae2d50fcf948", null ],
     [ "setSelected", "class_scenario_1_1_event_view.html#ae961b75150ed78f02356ae65a4f220fa", null ],
     [ "setStatus", "class_scenario_1_1_event_view.html#ad616d822a2b90618790c783bb6338136", null ],
-    [ "setWidthScale", "class_scenario_1_1_event_view.html#ad103b573868f4bc401beffb3f8c02a3c", null ],
     [ "type", "class_scenario_1_1_event_view.html#adc902fdae309378b397e826a142dbf90", null ]
 ];

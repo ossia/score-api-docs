@@ -1,7 +1,5 @@
 var NAVTREEINDEX50 =
 {
-"struct_empty_decoder.html#a73498b463c8b5ca676df0a0a1722f6a3":[11,0,96,0],
-"struct_empty_decoder.html#ae0374bd6986c20809a6f6790e19926d7":[11,0,96,2],
 "struct_empty_decoder.html#af1db5decc633173af465d6014cac6e67":[11,0,96,1],
 "struct_engine_1_1score__to__ossia_1_1_curve_traits.html":[11,0,8,0,0],
 "struct_engine_1_1score__to__ossia_1_1_curve_traits_3_01double_01_4.html":[11,0,8,0,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX50 =
 "struct_gfx_1_1_camera_settings.html":[11,0,13,13],
 "struct_gfx_1_1_camera_settings.html#a25551c9b0211e5d371f9248be832ae03":[11,0,13,13,0],
 "struct_gfx_1_1_camera_settings.html#a395e703271b5c76ceee531202ae66bae":[11,0,13,13,1],
-"struct_gfx_1_1_camera_settings.html#a707454a6640caa086c6743527c6a500a":[11,0,13,13,3]
+"struct_gfx_1_1_camera_settings.html#a707454a6640caa086c6743527c6a500a":[11,0,13,13,3],
+"struct_gfx_1_1_camera_settings.html#ab159a0fda2c0408710f13d608d930d22":[11,0,13,13,2],
+"struct_gfx_1_1_image.html":[11,0,13,30]
 };
