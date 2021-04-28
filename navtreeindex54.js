@@ -1,17 +1,5 @@
 var NAVTREEINDEX54 =
 {
-"struct_mesh_buffers.html":[11,0,161],
-"struct_mesh_buffers.html#abd9bf6d231d68eb1ac009e6a0ed845d0":[11,0,161,0],
-"struct_mesh_buffers.html#ac0749f6b41b714729ddb82d47429bc83":[11,0,161,1],
-"struct_metadata.html":[11,0,162],
-"struct_metadata_3_01_category__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html":[11,0,163],
-"struct_metadata_3_01_category__k_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[11,0,164],
-"struct_metadata_3_01_concrete_key__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html":[11,0,165],
-"struct_metadata_3_01_concrete_key__k_00_01_faust_d_s_p_1_1_fx_3_01mydsp_01_4_01_4.html":[11,0,166],
-"struct_metadata_3_01_object_key__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html":[11,0,167],
-"struct_metadata_3_01_object_key__k_00_01_faust_d_s_p_1_1_fx_3_01mydsp_01_4_01_4.html":[11,0,168],
-"struct_metadata_3_01_pretty_name__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html":[11,0,169],
-"struct_metadata_3_01_pretty_name__k_00_01_faust_d_s_p_1_1_fx_3_01mydsp_01_4_01_4.html":[11,0,170],
 "struct_metadata_3_01_process_1_1_descriptor__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html":[11,0,171],
 "struct_metadata_3_01_process_1_1_descriptor__k_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[11,0,172],
 "struct_metadata_3_01_process_1_1_process_flags__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html":[11,0,173],
@@ -249,5 +237,17 @@ var NAVTREEINDEX54 =
 "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a412af015e599f3cbf88853c5d6ec039a":[11,0,30,16,0,1,12],
 "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a47c40bdbd3886bcc8a1931a0139f4aa3":[11,0,30,16,0,1,4],
 "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a55025143f83a0950a45fec796b42380e":[11,0,30,16,0,1,10],
-"struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a5f1fda76df26355ff198147f5e92977a":[11,0,30,16,0,1,1]
+"struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a5f1fda76df26355ff198147f5e92977a":[11,0,30,16,0,1,1],
+"struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a832c91d7848f3079e1b88d822ff7db15":[11,0,30,16,0,1,8],
+"struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a8b42c34dfc582fb9b93bca70ecc3adaf":[11,0,30,16,0,1,5],
+"struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#ac98f9ec78e8dc0e1815fa25a59994ecf":[11,0,30,16,0,1,6],
+"struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#ace9fdc9e40f96e98db7789bea262b079":[11,0,30,16,0,1,7],
+"struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#af9c38a555564d97b138c47479163b359":[11,0,30,16,0,1,0],
+"struct_nodes_1_1_metro_1_1_node.html":[11,0,30,17,0],
+"struct_nodes_1_1_metro_1_1_node.html#ab79dbff5c443412dbfc0c6c1b7614703":[11,0,30,17,0,1],
+"struct_nodes_1_1_metro_1_1_node_1_1_metadata.html":[11,0,30,17,0,0],
+"struct_nodes_1_1_midi_util_1_1_node.html":[11,0,30,18,0],
+"struct_nodes_1_1_midi_util_1_1_node.html#a11cac1032856a782f1d8dd6ac0aefabc":[11,0,30,18,0,2],
+"struct_nodes_1_1_midi_util_1_1_node_1_1_metadata.html":[11,0,30,18,0,0],
+"struct_nodes_1_1_midi_util_1_1_node_1_1_state.html":[11,0,30,18,0,1]
 };

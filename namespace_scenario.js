@@ -96,7 +96,6 @@ var namespace_scenario =
       [ "SetBus", "class_scenario_1_1_command_1_1_set_bus.html", "class_scenario_1_1_command_1_1_set_bus" ],
       [ "SetCommentText", "class_scenario_1_1_command_1_1_set_comment_text.html", "class_scenario_1_1_command_1_1_set_comment_text" ],
       [ "SetCondition", "class_scenario_1_1_command_1_1_set_condition.html", "class_scenario_1_1_command_1_1_set_condition" ],
-      [ "SetExtendedMetadata", "class_scenario_1_1_command_1_1_set_extended_metadata.html", "class_scenario_1_1_command_1_1_set_extended_metadata" ],
       [ "SetMaxDuration", "class_scenario_1_1_command_1_1_set_max_duration.html", "class_scenario_1_1_command_1_1_set_max_duration" ],
       [ "SetMinDuration", "class_scenario_1_1_command_1_1_set_min_duration.html", "class_scenario_1_1_command_1_1_set_min_duration" ],
       [ "SetOffsetBehavior", "class_scenario_1_1_command_1_1_set_offset_behavior.html", "class_scenario_1_1_command_1_1_set_offset_behavior" ],

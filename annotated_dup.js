@@ -1361,7 +1361,7 @@ var annotated_dup =
     [ "TSerializer< JSONObject, eggs::variant< Args... > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01eggs_1_1variant_3_01_args_8_8_8_01_4_01_4.html", "struct_t_serializer_3_01_j_s_o_n_object_00_01eggs_1_1variant_3_01_args_8_8_8_01_4_01_4" ],
     [ "TSerializer< JSONObject, FaustDSP::Fx< DSP > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html", "struct_t_serializer_3_01_j_s_o_n_object_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4" ],
     [ "TSerializer< JSONObject, Id< T > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01_id_3_01_t_01_4_01_4.html", "struct_t_serializer_3_01_j_s_o_n_object_00_01_id_3_01_t_01_4_01_4" ],
-    [ "TSerializer< JSONObject, IdContainer< T, U > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01_id_container_3_01_t_00_01_u_01_4_01_4.html", null ],
+    [ "TSerializer< JSONObject, IdContainer< T, U, V > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01_id_container_3_01_t_00_01_u_00_01_v_01_4_01_4.html", null ],
     [ "TSerializer< JSONObject, IdentifiedObject< T > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01_identified_object_3_01_t_01_4_01_4.html", null ],
     [ "TSerializer< JSONObject, Model< Info, Control::is_control > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01_model_3_01_info_00_01_control_1_1is__control_01_4_01_4.html", "struct_t_serializer_3_01_j_s_o_n_object_00_01_model_3_01_info_00_01_control_1_1is__control_01_4_01_4" ],
     [ "TSerializer< JSONObject, ossia::domain_base< bool > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01bool_01_4_01_4.html", "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01bool_01_4_01_4" ],

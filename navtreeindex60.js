@@ -1,17 +1,5 @@
 var NAVTREEINDEX60 =
 {
-"struct_scenario_1_1_slot_presenter.html#aa32e8fe73b3084c79f8363e98a73166b":[11,0,41,248,3],
-"struct_scenario_1_1_slot_presenter.html#ad03c19ac4999d616e51c8ffd772dedee":[11,0,41,248,6],
-"struct_scenario_1_1_slot_presenter.html#ae25d875d56bb0cc55ac887c7b128292e":[11,0,41,248,0],
-"struct_scenario_1_1_slot_presenter.html#aee26e4eff59278127d2fedbc77dcf123":[11,0,41,248,5],
-"struct_scenario_1_1_snapshot_action.html":[11,0,41,251],
-"struct_scenario_1_1_snapshot_action.html#a1d9107ce8d8e52f6d61419b0ef4931ed":[11,0,41,251,0],
-"struct_scenario_1_1_start_date_comparator.html":[11,0,41,254],
-"struct_scenario_1_1_start_date_comparator.html#ade4223699e9054a47a65dad2dacd0b1b":[11,0,41,254,1],
-"struct_scenario_1_1_start_date_comparator.html#aee089766bacda5bcc0b06d14d40d7779":[11,0,41,254,0],
-"struct_scenario_1_1_state_overlays.html":[11,0,41,259],
-"struct_scenario_1_1_state_overlays.html#a29e65e2d8e63620bfe2321e05b2118d8":[11,0,41,259,0],
-"struct_scenario_1_1_state_overlays.html#ab5fd66b5f5a9b23be365db1fbf53b4a9":[11,0,41,259,3],
 "struct_scenario_1_1_state_overlays.html#ad13806bb7ccb2da5f1808534c8da6d31":[11,0,41,259,1],
 "struct_scenario_1_1_state_overlays.html#af072db8932a76c1eb6186f12e3d2f00a":[11,0,41,259,2],
 "struct_scenario_1_1_timebars.html":[11,0,41,273],
@@ -249,5 +237,17 @@ var NAVTREEINDEX60 =
 "struct_std_variant_data_stream_deserializer.html#a0c75e0656b0a5121c3820913cca9559a":[11,0,391,3],
 "struct_std_variant_data_stream_deserializer.html#a2e652c9db533b3814eb49e36afcefd8a":[11,0,391,0],
 "struct_std_variant_data_stream_deserializer.html#a91df4783f92f7430a931e54e03a9b7a1":[11,0,391,5],
-"struct_std_variant_data_stream_deserializer.html#aa5d9264e3c9b3496899519955cf33d17":[11,0,391,1]
+"struct_std_variant_data_stream_deserializer.html#aa5d9264e3c9b3496899519955cf33d17":[11,0,391,1],
+"struct_std_variant_data_stream_deserializer.html#ab45325f76e7467a179814afcae7952d9":[11,0,391,2],
+"struct_std_variant_data_stream_deserializer.html#abca3d5c440fa7d82a0572bb7d2d32eda":[11,0,391,4],
+"struct_std_variant_data_stream_serializer.html":[11,0,392],
+"struct_std_variant_data_stream_serializer.html#a057301684d5722736b01501671ffdabb":[11,0,392,2],
+"struct_std_variant_data_stream_serializer.html#a3eab9b363d19d982b1c6331bad7c03d8":[11,0,392,3],
+"struct_std_variant_data_stream_serializer.html#ab7102f6b0d77ed57908effef6e875e3b":[11,0,392,0],
+"struct_std_variant_data_stream_serializer.html#acc4f4a15d2c2c980aba128ae37a394e3":[11,0,392,1],
+"struct_std_variant_data_stream_serializer.html#af8d39173f4f836d43852f52cffc1f6f4":[11,0,392,4],
+"struct_std_variant_j_s_o_n_deserializer.html":[11,0,393],
+"struct_std_variant_j_s_o_n_deserializer.html#a601b7e218d41d6fad28b2d008ff4b5bf":[11,0,393,0],
+"struct_std_variant_j_s_o_n_deserializer.html#a635eb96653cecc3f12d36f67a2747ff5":[11,0,393,2],
+"struct_std_variant_j_s_o_n_deserializer.html#a987216dc4740a332accb7af65b0cd5d6":[11,0,393,4]
 };

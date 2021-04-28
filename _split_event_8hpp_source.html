@@ -130,12 +130,12 @@ $(document).ready(function(){initNavTree('_split_event_8hpp_source.html',''); in
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="class_scenario_1_1_command_1_1_split_event.html">SplitEvent</a>(</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp; scenario,</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <a class="code" href="classid__base__t.html">Id&lt;EventModel&gt;</a> event,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      QVector&lt;<a class="code" href="classid__base__t.html">Id&lt;StateModel&gt;</a>&gt; movingstates);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      std::vector&lt;<a class="code" href="classid__base__t.html">Id&lt;StateModel&gt;</a>&gt; movingstates);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="class_scenario_1_1_command_1_1_split_event.html">SplitEvent</a>(</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp; scenario,</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <a class="code" href="classid__base__t.html">Id&lt;EventModel&gt;</a> event,</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <a class="code" href="classid__base__t.html">Id&lt;EventModel&gt;</a> new_event,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      QVector&lt;<a class="code" href="classid__base__t.html">Id&lt;StateModel&gt;</a>&gt; movingstates);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      std::vector&lt;<a class="code" href="classid__base__t.html">Id&lt;StateModel&gt;</a>&gt; movingstates);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">void</span> undo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> redo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('_split_event_8hpp_source.html',''); in
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="classid__base__t.html">Id&lt;EventModel&gt;</a> m_originalEvent;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="classid__base__t.html">Id&lt;EventModel&gt;</a> m_newEvent;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  QString m_createdName;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  QVector&lt;Id&lt;StateModel&gt;&gt; m_movingStates;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  std::vector&lt;Id&lt;StateModel&gt;&gt; m_movingStates;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_scenario_1_1_command_1_1_split_whole_event.html">   58</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_SCENARIO_EXPORT <a class="code" href="class_scenario_1_1_command_1_1_split_whole_event.html">SplitWholeEvent</a> final : <span class="keyword">public</span> <a class="code" href="classscore_1_1_command.html">score::Command</a></div>
