@@ -100,77 +100,78 @@ $(document).ready(function(){initNavTree('_unit_8hpp_source.html',''); initResiz
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;score/serialization/VisitorInterface.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QLatin1String&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;score_lib_state_export.h&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;verdigris&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>ossia</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">struct </span>unit_t;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_state.html">State</a></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="struct_state_1_1_unit.html">   16</a></span>&#160;<span class="keyword">struct </span>SCORE_LIB_STATE_EXPORT <a class="code" href="struct_state_1_1_unit.html">Unit</a></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="comment">// W_GADGET(Unit)</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="struct_state_1_1_unit.html">Unit</a>() noexcept;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <a class="code" href="struct_state_1_1_unit.html">Unit</a>(<span class="keyword">const</span> <a class="code" href="struct_state_1_1_unit.html">Unit</a>&amp; other) noexcept;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <a class="code" href="struct_state_1_1_unit.html">Unit</a>(<a class="code" href="struct_state_1_1_unit.html">Unit</a>&amp;&amp; other) noexcept;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <a class="code" href="struct_state_1_1_unit.html">Unit</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="struct_state_1_1_unit.html">Unit</a>&amp; other) noexcept;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="struct_state_1_1_unit.html">Unit</a>&amp; operator=(<a class="code" href="struct_state_1_1_unit.html">Unit</a>&amp;&amp; other) noexcept;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  ~<a class="code" href="struct_state_1_1_unit.html">Unit</a>();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="struct_state_1_1_unit.html">Unit</a>(<span class="keyword">const</span> ossia::unit_t&amp;) noexcept;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="struct_state_1_1_unit.html">Unit</a>&amp; operator=(<span class="keyword">const</span> ossia::unit_t&amp;) noexcept;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">operator</span> <span class="keyword">const</span> ossia::unit_t &amp;() <span class="keyword">const</span> noexcept;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">operator</span> ossia::unit_t &amp;() noexcept;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="struct_state_1_1_unit.html">State::Unit</a>&amp; other) <span class="keyword">const</span> noexcept;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="struct_state_1_1_unit.html">State::Unit</a>&amp; other) <span class="keyword">const</span> noexcept;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">const</span> ossia::unit_t&amp; get() <span class="keyword">const</span> noexcept;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  ossia::unit_t&amp; get() noexcept;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  std::unique_ptr&lt;ossia::unit_t&gt; unit;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;SCORE_LIB_STATE_EXPORT</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;QLatin1String prettyUnitText(<span class="keyword">const</span> ossia::unit_t&amp;);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="struct_t_serializer_3_01_data_stream_00_01ossia_1_1unit__t_01_4.html">   48</a></span>&#160;<span class="keyword">struct </span>SCORE_LIB_STATE_EXPORT <a class="code" href="struct_t_serializer.html">TSerializer</a>&lt;<a class="code" href="class_data_stream.html">DataStream</a>, ossia::unit_t&gt;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> readFrom(<a class="code" href="class_data_stream_reader.html">DataStreamReader</a>&amp; s, <span class="keyword">const</span> ossia::unit_t&amp; var);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> writeTo(<a class="code" href="class_data_stream_writer.html">DataStreamWriter</a>&amp; s, ossia::unit_t&amp; var);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="struct_t_serializer_3_01_data_stream_00_01_state_1_1_unit_01_4.html">   55</a></span>&#160;<span class="keyword">struct </span>SCORE_LIB_STATE_EXPORT <a class="code" href="struct_t_serializer.html">TSerializer</a>&lt;<a class="code" href="class_data_stream.html">DataStream</a>, <a class="code" href="namespace_state.html">State</a>::Unit&gt;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> readFrom(<a class="code" href="class_data_stream_reader.html">DataStreamReader</a>&amp; s, <span class="keyword">const</span> <a class="code" href="struct_state_1_1_unit.html">State::Unit</a>&amp; var);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> writeTo(<a class="code" href="class_data_stream_writer.html">DataStreamWriter</a>&amp; s, <a class="code" href="struct_state_1_1_unit.html">State::Unit</a>&amp; var);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">struct </span>is_custom_serialized&lt;ossia::unit_t&gt; : <span class="keyword">public</span> std::true_type</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;SCORE_SERIALIZE_DATASTREAM_DECLARE(SCORE_LIB_STATE_EXPORT, <a class="code" href="struct_state_1_1_unit.html">State::Unit</a>)</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_state_1_1_unit_01_4.html">   67</a></span>&#160;Q_DECLARE_METATYPE(<a class="code" href="namespace_state.html">State</a>::Unit)</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="namespace_state.html">State</a>::Unit)</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;score/serialization/DataStreamFwd.hpp&gt;</span> </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QLatin1String&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;score_lib_state_export.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;verdigris&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>ossia</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">struct </span>unit_t;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_state.html">State</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="struct_state_1_1_unit.html">   17</a></span>&#160;<span class="keyword">struct </span>SCORE_LIB_STATE_EXPORT <a class="code" href="struct_state_1_1_unit.html">Unit</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="comment">// W_GADGET(Unit)</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <a class="code" href="struct_state_1_1_unit.html">Unit</a>() noexcept;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <a class="code" href="struct_state_1_1_unit.html">Unit</a>(<span class="keyword">const</span> <a class="code" href="struct_state_1_1_unit.html">Unit</a>&amp; other) noexcept;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <a class="code" href="struct_state_1_1_unit.html">Unit</a>(<a class="code" href="struct_state_1_1_unit.html">Unit</a>&amp;&amp; other) noexcept;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="struct_state_1_1_unit.html">Unit</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="struct_state_1_1_unit.html">Unit</a>&amp; other) noexcept;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="struct_state_1_1_unit.html">Unit</a>&amp; operator=(<a class="code" href="struct_state_1_1_unit.html">Unit</a>&amp;&amp; other) noexcept;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  ~<a class="code" href="struct_state_1_1_unit.html">Unit</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="struct_state_1_1_unit.html">Unit</a>(<span class="keyword">const</span> ossia::unit_t&amp;) noexcept;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="struct_state_1_1_unit.html">Unit</a>&amp; operator=(<span class="keyword">const</span> ossia::unit_t&amp;) noexcept;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">operator</span> <span class="keyword">const</span> ossia::unit_t &amp;() <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">operator</span> ossia::unit_t &amp;() noexcept;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="struct_state_1_1_unit.html">State::Unit</a>&amp; other) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="struct_state_1_1_unit.html">State::Unit</a>&amp; other) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">const</span> ossia::unit_t&amp; get() <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  ossia::unit_t&amp; get() noexcept;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  std::unique_ptr&lt;ossia::unit_t&gt; unit;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;SCORE_LIB_STATE_EXPORT</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;QLatin1String prettyUnitText(<span class="keyword">const</span> ossia::unit_t&amp;);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="struct_t_serializer_3_01_data_stream_00_01ossia_1_1unit__t_01_4.html">   49</a></span>&#160;<span class="keyword">struct </span>SCORE_LIB_STATE_EXPORT <a class="code" href="struct_t_serializer.html">TSerializer</a>&lt;<a class="code" href="class_data_stream.html">DataStream</a>, ossia::unit_t&gt;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> readFrom(<a class="code" href="class_data_stream_reader.html">DataStreamReader</a>&amp; s, <span class="keyword">const</span> ossia::unit_t&amp; var);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> writeTo(<a class="code" href="class_data_stream_writer.html">DataStreamWriter</a>&amp; s, ossia::unit_t&amp; var);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="struct_t_serializer_3_01_data_stream_00_01_state_1_1_unit_01_4.html">   56</a></span>&#160;<span class="keyword">struct </span>SCORE_LIB_STATE_EXPORT <a class="code" href="struct_t_serializer.html">TSerializer</a>&lt;<a class="code" href="class_data_stream.html">DataStream</a>, <a class="code" href="namespace_state.html">State</a>::Unit&gt;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> readFrom(<a class="code" href="class_data_stream_reader.html">DataStreamReader</a>&amp; s, <span class="keyword">const</span> <a class="code" href="struct_state_1_1_unit.html">State::Unit</a>&amp; var);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> writeTo(<a class="code" href="class_data_stream_writer.html">DataStreamWriter</a>&amp; s, <a class="code" href="struct_state_1_1_unit.html">State::Unit</a>&amp; var);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">struct </span>is_custom_serialized&lt;ossia::unit_t&gt; : <span class="keyword">public</span> std::true_type</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;SCORE_SERIALIZE_DATASTREAM_DECLARE(SCORE_LIB_STATE_EXPORT, <a class="code" href="struct_state_1_1_unit.html">State::Unit</a>)</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_state_1_1_unit_01_4.html">   68</a></span>&#160;Q_DECLARE_METATYPE(<a class="code" href="namespace_state.html">State</a>::Unit)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="namespace_state.html">State</a>::Unit)</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_state_html"><div class="ttname"><a href="namespace_state.html">State</a></div><div class="ttdoc">Utilities for OSSIA data structures.</div><div class="ttdef"><b>Definition:</b> DeviceInterface.hpp:25</div></div>
 <div class="ttc" id="aclass_data_stream_html"><div class="ttname"><a href="class_data_stream.html">DataStream</a></div><div class="ttdef"><b>Definition:</b> VisitorInterface.hpp:53</div></div>
-<div class="ttc" id="astruct_state_1_1_unit_html"><div class="ttname"><a href="struct_state_1_1_unit.html">State::Unit</a></div><div class="ttdef"><b>Definition:</b> Unit.hpp:16</div></div>
+<div class="ttc" id="astruct_state_1_1_unit_html"><div class="ttname"><a href="struct_state_1_1_unit.html">State::Unit</a></div><div class="ttdef"><b>Definition:</b> Unit.hpp:17</div></div>
 <div class="ttc" id="aclass_data_stream_writer_html"><div class="ttname"><a href="class_data_stream_writer.html">DataStreamWriter</a></div><div class="ttdef"><b>Definition:</b> DataStreamVisitor.hpp:194</div></div>
 <div class="ttc" id="aclass_data_stream_reader_html"><div class="ttname"><a href="class_data_stream_reader.html">DataStreamReader</a></div><div class="ttdef"><b>Definition:</b> DataStreamVisitor.hpp:28</div></div>
 <div class="ttc" id="astruct_t_serializer_html"><div class="ttname"><a href="struct_t_serializer.html">TSerializer</a></div><div class="ttdef"><b>Definition:</b> VisitorInterface.hpp:13</div></div>
