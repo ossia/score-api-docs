@@ -1,5 +1,6 @@
 var NAVTREEINDEX48 =
 {
+"struct_automation_1_1_recreate_on_play_1_1range__position.html#a7599eaf64077122a49cfcb2448be498c":[11,0,1,0,2,0],
 "struct_color_node.html":[11,0,76],
 "struct_color_node.html#a00ab769fe3a3f096d384e45779a543a8":[11,0,76,0],
 "struct_color_node.html#a30e3423b3055dabdcf200033bf683754":[11,0,76,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX48 =
 "struct_control_1_1setup___impl0_1_1con__unvalidated.html#a218202e751d80c63a52ed2e74810784b":[11,0,3,35,0,0],
 "struct_control_1_1setup___impl0_1_1con__unvalidated.html#a50135261bf55c41720eb0994ec945aab":[11,0,3,35,0,2],
 "struct_control_1_1setup___impl0_1_1con__validated.html":[11,0,3,35,1],
-"struct_control_1_1setup___impl0_1_1con__validated.html#a22a0775fd28ea82dac68d66d94963652":[11,0,3,35,1,1],
-"struct_control_1_1setup___impl0_1_1con__validated.html#abc6fbc0e50d0ccea721ce238ca42c2b8":[11,0,3,35,1,2]
+"struct_control_1_1setup___impl0_1_1con__validated.html#a22a0775fd28ea82dac68d66d94963652":[11,0,3,35,1,1]
 };

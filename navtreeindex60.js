@@ -1,5 +1,6 @@
 var NAVTREEINDEX60 =
 {
+"struct_scenario_1_1_state_overlays.html":[11,0,41,259],
 "struct_scenario_1_1_state_overlays.html#a29e65e2d8e63620bfe2321e05b2118d8":[11,0,41,259,0],
 "struct_scenario_1_1_state_overlays.html#ab5fd66b5f5a9b23be365db1fbf53b4a9":[11,0,41,259,3],
 "struct_scenario_1_1_state_overlays.html#ad13806bb7ccb2da5f1808534c8da6d31":[11,0,41,259,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX60 =
 "struct_std_variant_data_stream_serializer.html#ab7102f6b0d77ed57908effef6e875e3b":[11,0,392,0],
 "struct_std_variant_data_stream_serializer.html#acc4f4a15d2c2c980aba128ae37a394e3":[11,0,392,1],
 "struct_std_variant_data_stream_serializer.html#af8d39173f4f836d43852f52cffc1f6f4":[11,0,392,4],
-"struct_std_variant_j_s_o_n_deserializer.html":[11,0,393],
-"struct_std_variant_j_s_o_n_deserializer.html#a601b7e218d41d6fad28b2d008ff4b5bf":[11,0,393,0]
+"struct_std_variant_j_s_o_n_deserializer.html":[11,0,393]
 };

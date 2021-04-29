@@ -271,6 +271,7 @@ var namespacescore =
     [ "ToggleButton", "structscore_1_1_toggle_button.html", "structscore_1_1_toggle_button" ],
     [ "Toolbar", "classscore_1_1_toolbar.html", "classscore_1_1_toolbar" ],
     [ "ToolbarManager", "classscore_1_1_toolbar_manager.html", "classscore_1_1_toolbar_manager" ],
+    [ "TreeViewExpandState", "structscore_1_1_tree_view_expand_state.html", "structscore_1_1_tree_view_expand_state" ],
     [ "UndoApplicationPlugin", "classscore_1_1_undo_application_plugin.html", "classscore_1_1_undo_application_plugin" ],
     [ "UndoListWidget", "classscore_1_1_undo_list_widget.html", "classscore_1_1_undo_list_widget" ],
     [ "UndoPanelDelegate", "classscore_1_1_undo_panel_delegate.html", "classscore_1_1_undo_panel_delegate" ],

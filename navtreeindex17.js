@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"class_j_s_o_n_reader.html#aae04075987948241ceb1058394087cad":[11,0,151,3],
 "class_j_s_o_n_reader.html#ab074a73cbe3aa6a168704149d4e4e543":[11,0,151,28],
 "class_j_s_o_n_reader.html#ab0e31b1fae2920cfa903400e19e5f0f5":[11,0,151,126],
 "class_j_s_o_n_reader.html#ab1b06649857240e4eef164fd9bf7297b":[11,0,151,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "class_library_1_1_preset_item_model.html#a7c95d6c7f84dbf6d30c9b4063094d359":[11,0,21,8,0],
 "class_library_1_1_preset_list_view.html":[11,0,21,9],
 "class_library_1_1_process_panel.html":[11,0,21,12],
-"class_library_1_1_process_panel.html#a8a710bd2d01ec1c9611e8a0a9086ea72":[11,0,21,12,1],
-"class_library_1_1_process_panel.html#a91e51d64338468c43f916147a619d913":[11,0,21,12,0]
+"class_library_1_1_process_panel.html#a8a710bd2d01ec1c9611e8a0a9086ea72":[11,0,21,12,1]
 };

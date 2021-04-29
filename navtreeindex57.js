@@ -1,5 +1,6 @@
 var NAVTREEINDEX57 =
 {
+"struct_protocols_1_1_minuit_specific_settings.html#a6f5cf61aeea82ab89aa291a557b14094":[11,0,36,36,1],
 "struct_protocols_1_1_minuit_specific_settings.html#ad150476803eb85a197987c7e2c36d334":[11,0,36,36,3],
 "struct_protocols_1_1_minuit_specific_settings.html#adfbb0ab883c705e80750d1cf9c9c91e3":[11,0,36,36,0],
 "struct_protocols_1_1_minuit_specific_settings.html#afd60fbe675c5103382d16b52ab3495b0":[11,0,36,36,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX57 =
 "struct_recording_1_1_box.html#a8067c433c341792f1434368b960c7c6a":[11,0,37,2,1],
 "struct_recording_1_1_box.html#aab18663f6165896706ac1cf7c6827657":[11,0,37,2,2],
 "struct_recording_1_1_message_policy.html":[11,0,37,3],
-"struct_recording_1_1_message_policy.html#ab2f6b3b8b5ab68696b52c1160c76ffe0":[11,0,37,3,0],
-"struct_recording_1_1_parameter_policy.html":[11,0,37,5]
+"struct_recording_1_1_message_policy.html#ab2f6b3b8b5ab68696b52c1160c76ffe0":[11,0,37,3,0]
 };

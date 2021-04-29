@@ -1225,6 +1225,7 @@ var files_dup =
     [ "TreeNodeItemModel.hpp", "_tree_node_item_model_8hpp_source.html", null ],
     [ "TreeNodeSerialization.hpp", "_tree_node_serialization_8hpp_source.html", null ],
     [ "TreePath.hpp", "_tree_path_8hpp_source.html", null ],
+    [ "TreeViewExpandState.hpp", "_tree_view_expand_state_8hpp_source.html", null ],
     [ "TriggerCommandFactory.hpp", "_trigger_command_factory_8hpp_source.html", null ],
     [ "TriggerCommandFactoryList.hpp", "_trigger_command_factory_list_8hpp_source.html", null ],
     [ "TriggerInspectorWidget.hpp", "_trigger_inspector_widget_8hpp_source.html", null ],

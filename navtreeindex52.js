@@ -1,5 +1,6 @@
 var NAVTREEINDEX52 =
 {
+"struct_j_s_1_1_executor_1_1js__process.html#ab12067305e7c7548465967a57c18cca9":[11,0,20,0,2,3],
 "struct_j_s_1_1_executor_1_1js__process.html#ace99a015bb99b84af0d5022e88fe6b98":[11,0,20,0,2,4],
 "struct_j_s_1_1_language_spec.html":[11,0,20,7],
 "struct_j_s_o_n_reader_1_1assigner.html":[11,0,151,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX52 =
 "struct_library_1_1_subcategories.html":[11,0,21,20],
 "struct_library_1_1_subcategories.html#a11fd10f4b5ec7c1411a63e9a545b26ed":[11,0,21,20,3],
 "struct_library_1_1_subcategories.html#a38abc7e3f7b6771acba3f546143bc864":[11,0,21,20,0],
-"struct_library_1_1_subcategories.html#a3fbaf50b9d1e21af51469494a78402cb":[11,0,21,20,1],
-"struct_library_1_1_subcategories.html#af951ffdf31b3bcdce2e74ba2dd87ecbd":[11,0,21,20,2]
+"struct_library_1_1_subcategories.html#a3fbaf50b9d1e21af51469494a78402cb":[11,0,21,20,1]
 };
