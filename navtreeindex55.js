@@ -1,5 +1,6 @@
 var NAVTREEINDEX55 =
 {
+"struct_nodes_1_1_midi_util_1_1_node_1_1_metadata.html":[11,0,30,18,0,0],
 "struct_nodes_1_1_midi_util_1_1_node_1_1_state.html":[11,0,30,18,0,1],
 "struct_nodes_1_1_midi_util_1_1_node_1_1_state.html#a21555f4b6b2c9fcd12ac4d53052a8949":[11,0,30,18,0,1,1],
 "struct_nodes_1_1_midi_util_1_1_node_1_1_state.html#a58bdd7eee84efa87a4fad9480c69ae96":[11,0,30,18,0,1,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX55 =
 "struct_process_1_1_int_spin_box.html#a6cbad3e75b9df5709b64231e2e03e466":[11,0,35,45,1],
 "struct_process_1_1_int_spin_box.html#a9458ccb2f39bd731836e224fedd6bb82":[11,0,35,45,0],
 "struct_process_1_1_int_spin_box.html#aa9d76f19419236cd90570cb19f54614c":[11,0,35,45,4],
-"struct_process_1_1_int_spin_box.html#ab09b661a53e603a821b66bbbcecd7cfd":[11,0,35,45,2],
-"struct_process_1_1_layer_context.html":[11,0,35,46]
+"struct_process_1_1_int_spin_box.html#ab09b661a53e603a821b66bbbcecd7cfd":[11,0,35,45,2]
 };
