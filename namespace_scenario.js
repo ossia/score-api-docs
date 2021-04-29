@@ -28,7 +28,6 @@ var namespace_scenario =
       [ "CreateCommentBlock", "class_scenario_1_1_command_1_1_create_comment_block.html", "class_scenario_1_1_command_1_1_create_comment_block" ],
       [ "CreateEvent_State", "class_scenario_1_1_command_1_1_create_event___state.html", "class_scenario_1_1_command_1_1_create_event___state" ],
       [ "CreateGradient", "class_scenario_1_1_command_1_1_create_gradient.html", "class_scenario_1_1_command_1_1_create_gradient" ],
-      [ "CreateInterpolationFromStates", "class_scenario_1_1_command_1_1_create_interpolation_from_states.html", "class_scenario_1_1_command_1_1_create_interpolation_from_states" ],
       [ "CreateInterval", "class_scenario_1_1_command_1_1_create_interval.html", "class_scenario_1_1_command_1_1_create_interval" ],
       [ "CreateInterval_State", "class_scenario_1_1_command_1_1_create_interval___state.html", "class_scenario_1_1_command_1_1_create_interval___state" ],
       [ "CreateInterval_State_Event", "class_scenario_1_1_command_1_1_create_interval___state___event.html", "class_scenario_1_1_command_1_1_create_interval___state___event" ],

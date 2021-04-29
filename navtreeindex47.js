@@ -1,7 +1,5 @@
 var NAVTREEINDEX47 =
 {
-"namespacemembers_type.html":[10,1,2],
-"namespaces.html":[10,0],
 "namespacescore.html":[11,0,42],
 "namespacescore.html":[10,0,10],
 "nodes_8hpp_source.html":[12,0,757],
@@ -249,5 +247,7 @@ var NAVTREEINDEX47 =
 "struct_automation_1_1_recreate_on_play_1_1modvalue.html#abe4b45593e49eea475bc3fee458cb008":[11,0,1,0,1,9],
 "struct_automation_1_1_recreate_on_play_1_1modvalue.html#acb15b94e09b5238164608c109fe6146c":[11,0,1,0,1,7],
 "struct_automation_1_1_recreate_on_play_1_1modvalue.html#afbe48bcde81a868de34fefb12ff8d076":[11,0,1,0,1,3],
-"struct_automation_1_1_recreate_on_play_1_1range__position.html":[11,0,1,0,2]
+"struct_automation_1_1_recreate_on_play_1_1range__position.html":[11,0,1,0,2],
+"struct_automation_1_1_recreate_on_play_1_1range__position.html#a7599eaf64077122a49cfcb2448be498c":[11,0,1,0,2,0],
+"struct_color_node.html":[11,0,76]
 };

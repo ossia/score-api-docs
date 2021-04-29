@@ -112,6 +112,7 @@ var annotated_dup =
       [ "CreateModulation", "class_dataflow_1_1_create_modulation.html", null ],
       [ "DragLine", "struct_dataflow_1_1_drag_line.html", "struct_dataflow_1_1_drag_line" ],
       [ "DragMoveFilter", "struct_dataflow_1_1_drag_move_filter.html", "struct_dataflow_1_1_drag_move_filter" ],
+      [ "DropPortInInterval", "class_dataflow_1_1_drop_port_in_interval.html", null ],
       [ "DropPortInScenario", "class_dataflow_1_1_drop_port_in_scenario.html", "class_dataflow_1_1_drop_port_in_scenario" ],
       [ "InletInspectorFactory", "class_dataflow_1_1_inlet_inspector_factory.html", "class_dataflow_1_1_inlet_inspector_factory" ],
       [ "LoadCables", "class_dataflow_1_1_load_cables.html", "class_dataflow_1_1_load_cables" ],

@@ -1,7 +1,5 @@
 var NAVTREEINDEX56 =
 {
-"struct_process_1_1_int_spin_box.html#ab09b661a53e603a821b66bbbcecd7cfd":[11,0,35,45,2],
-"struct_process_1_1_layer_context.html":[11,0,35,46],
 "struct_process_1_1_layer_context.html#a3b4287209f68957bd8d3ce2423b12893":[11,0,35,46,0],
 "struct_process_1_1_layer_context.html#a8fc5a6bb773b67a2e114b868baa1148d":[11,0,35,46,1],
 "struct_process_1_1_line_edit.html":[11,0,35,55],
@@ -249,5 +247,7 @@ var NAVTREEINDEX56 =
 "struct_protocols_1_1_m_i_d_i_specific_settings.html#aee788304e939cdee1ebb1876af1d3aa3a7c147cda9e49590f6abe83d118b7353b":[11,0,36,32,0,1],
 "struct_protocols_1_1_m_i_d_i_specific_settings.html#aee788304e939cdee1ebb1876af1d3aa3aefeb369cccbd560588a756610865664c":[11,0,36,32,0,0],
 "struct_protocols_1_1_minuit_specific_settings.html":[11,0,36,36],
-"struct_protocols_1_1_minuit_specific_settings.html#a0cc7cf9446f9dd2f2b42e973c60cb50b":[11,0,36,36,2]
+"struct_protocols_1_1_minuit_specific_settings.html#a0cc7cf9446f9dd2f2b42e973c60cb50b":[11,0,36,36,2],
+"struct_protocols_1_1_minuit_specific_settings.html#a6f5cf61aeea82ab89aa291a557b14094":[11,0,36,36,1],
+"struct_protocols_1_1_minuit_specific_settings.html#ad150476803eb85a197987c7e2c36d334":[11,0,36,36,3]
 };

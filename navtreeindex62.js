@@ -1,7 +1,5 @@
 var NAVTREEINDEX62 =
 {
-"struct_ui_1_1_signal_display_1_1_node_1_1_metadata.html":[11,0,48,0,0,1],
-"struct_value_message.html":[11,0,519],
 "struct_value_message.html#a4cb12bc82a235bb8cab273abf210ea54":[11,0,519,2],
 "struct_value_message.html#a83bce8412388e5be0b08aa4e94e11271":[11,0,519,3],
 "struct_value_message.html#a979aba836343403db928462ca450f8cc":[11,0,519,4],
@@ -249,5 +247,7 @@ var NAVTREEINDEX62 =
 "structscore_1_1_action_container.html":[11,0,42,10],
 "structscore_1_1_action_container.html#a16e6a5c48a4ba785dd35cc65cfcb3a1e":[11,0,42,10,0],
 "structscore_1_1_action_container.html#a897b403271e11fa8dd882e706e0232d6":[11,0,42,10,1],
-"structscore_1_1_addon.html":[11,0,42,13]
+"structscore_1_1_addon.html":[11,0,42,13],
+"structscore_1_1_addon.html#a0838aba6eab19f3e7f288f167702ec7b":[11,0,42,13,6],
+"structscore_1_1_addon.html#a38c58c801380d53604551efb5f120b4a":[11,0,42,13,4]
 };

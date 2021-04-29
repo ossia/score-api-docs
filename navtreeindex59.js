@@ -1,9 +1,7 @@
 var NAVTREEINDEX59 =
 {
-"struct_scenario_1_1_command_1_1_message_pairs.html#aa6e428f45a6c3b8c50369c9c22b1d1fc":[11,0,41,0,57,4],
-"struct_scenario_1_1_command_1_1_message_pairs.html#ab674fee2531b2e688209def4a3c07789":[11,0,41,0,57,1],
-"struct_scenario_1_1_command_1_1_message_pairs.html#ac2e40743d906be50fa761b2eaf6403db":[11,0,41,0,57,0],
-"struct_scenario_1_1_command_1_1_message_pairs.html#aefe07c0b9d9fdb25401ec426ebbf0c91":[11,0,41,0,57,2],
+"struct_scenario_1_1_command_1_1_message_pairs.html#ac2e40743d906be50fa761b2eaf6403db":[11,0,41,0,56,0],
+"struct_scenario_1_1_command_1_1_message_pairs.html#aefe07c0b9d9fdb25401ec426ebbf0c91":[11,0,41,0,56,2],
 "struct_scenario_1_1_command_1_1color__converter.html":[11,0,41,0,22],
 "struct_scenario_1_1_command_1_1color__converter.html#a0aeb950ec0f4631cb4531f4b9c85f726":[11,0,41,0,22,0],
 "struct_scenario_1_1_command_1_1color__converter.html#a9bd944586e5603066b131e67f7b0165a":[11,0,41,0,22,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX59 =
 "struct_scenario_1_1_snapshot_action.html#a1d9107ce8d8e52f6d61419b0ef4931ed":[11,0,41,251,0],
 "struct_scenario_1_1_start_date_comparator.html":[11,0,41,254],
 "struct_scenario_1_1_start_date_comparator.html#ade4223699e9054a47a65dad2dacd0b1b":[11,0,41,254,1],
-"struct_scenario_1_1_start_date_comparator.html#aee089766bacda5bcc0b06d14d40d7779":[11,0,41,254,0]
+"struct_scenario_1_1_start_date_comparator.html#aee089766bacda5bcc0b06d14d40d7779":[11,0,41,254,0],
+"struct_scenario_1_1_state_overlays.html":[11,0,41,259],
+"struct_scenario_1_1_state_overlays.html#a29e65e2d8e63620bfe2321e05b2118d8":[11,0,41,259,0]
 };

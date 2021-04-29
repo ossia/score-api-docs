@@ -1,7 +1,7 @@
 var searchData=
 [
   ['lane_1069',['Lane',['../struct_patternist_1_1_lane.html',1,'Patternist']]],
-  ['languagespec_1070',['LanguageSpec',['../struct_faust_1_1_language_spec.html',1,'Faust::LanguageSpec'],['../struct_j_s_1_1_language_spec.html',1,'JS::LanguageSpec']]],
+  ['languagespec_1070',['LanguageSpec',['../struct_j_s_1_1_language_spec.html',1,'JS::LanguageSpec'],['../struct_faust_1_1_language_spec.html',1,'Faust::LanguageSpec']]],
   ['layer_1071',['Layer',['../struct_scenario_1_1_layer_data_1_1_layer.html',1,'Scenario::LayerData::Layer'],['../struct_ui_1_1_signal_display_1_1_node_1_1_layer.html',1,'Ui::SignalDisplay::Node::Layer']]],
   ['layercontext_1072',['LayerContext',['../struct_process_1_1_layer_context.html',1,'Process']]],
   ['layercontextmenu_1073',['LayerContextMenu',['../class_process_1_1_layer_context_menu.html',1,'Process']]],
@@ -12,7 +12,7 @@ var searchData=
   ['layerfactory_5ft_3c_20model_5ft_2c_20default_5ft_2c_20default_5ft_2c_20default_5ft_20_3e_1078',['LayerFactory_T&lt; Model_T, default_t, default_t, default_t &gt;',['../class_process_1_1_layer_factory___t_3_01_model___t_00_01default__t_00_01default__t_00_01default__t_01_4.html',1,'Process']]],
   ['layerfactory_5ft_3c_20step_3a_3amodel_2c_20step_3a_3apresenter_2c_20step_3a_3aview_20_3e_1079',['LayerFactory_T&lt; Step::Model, Step::Presenter, Step::View &gt;',['../class_process_1_1_layer_factory___t.html',1,'Process']]],
   ['layerfactorylist_1080',['LayerFactoryList',['../class_process_1_1_layer_factory_list.html',1,'Process']]],
-  ['layerpresenter_1081',['LayerPresenter',['../class_automation_1_1_layer_presenter.html',1,'Automation::LayerPresenter'],['../class_metronome_1_1_layer_presenter.html',1,'Metronome::LayerPresenter'],['../class_mapping_1_1_layer_presenter.html',1,'Mapping::LayerPresenter'],['../class_process_1_1_layer_presenter.html',1,'Process::LayerPresenter'],['../class_media_1_1_sound_1_1_layer_presenter.html',1,'Media::Sound::LayerPresenter']]],
+  ['layerpresenter_1081',['LayerPresenter',['../class_automation_1_1_layer_presenter.html',1,'Automation::LayerPresenter'],['../class_metronome_1_1_layer_presenter.html',1,'Metronome::LayerPresenter'],['../class_process_1_1_layer_presenter.html',1,'Process::LayerPresenter'],['../class_mapping_1_1_layer_presenter.html',1,'Mapping::LayerPresenter'],['../class_media_1_1_sound_1_1_layer_presenter.html',1,'Media::Sound::LayerPresenter']]],
   ['layerrectitem_1082',['LayerRectItem',['../class_scenario_1_1_layer_rect_item.html',1,'Scenario']]],
   ['layerslotpresenter_1083',['LayerSlotPresenter',['../struct_scenario_1_1_layer_slot_presenter.html',1,'Scenario']]],
   ['layerview_1084',['LayerView',['../class_automation_1_1_layer_view.html',1,'Automation::LayerView'],['../class_metronome_1_1_layer_view.html',1,'Metronome::LayerView'],['../class_mapping_1_1_layer_view.html',1,'Mapping::LayerView'],['../class_process_1_1_layer_view.html',1,'Process::LayerView'],['../class_media_1_1_sound_1_1_layer_view.html',1,'Media::Sound::LayerView']]],
@@ -34,7 +34,7 @@ var searchData=
   ['lighterbars_1100',['LighterBars',['../class_scenario_1_1_lighter_bars.html',1,'Scenario']]],
   ['linear_5fid_5fgenerator_1101',['linear_id_generator',['../structscore_1_1linear__id__generator.html',1,'score']]],
   ['linearnormalizer_1102',['LinearNormalizer',['../struct_widget_factory_1_1_linear_normalizer.html',1,'WidgetFactory']]],
-  ['lineedit_1103',['LineEdit',['../struct_control_1_1_line_edit.html',1,'Control::LineEdit'],['../struct_widget_factory_1_1_line_edit.html',1,'WidgetFactory::LineEdit'],['../class_line_edit.html',1,'LineEdit'],['../struct_process_1_1_line_edit.html',1,'Process::LineEdit']]],
+  ['lineedit_1103',['LineEdit',['../struct_widget_factory_1_1_line_edit.html',1,'WidgetFactory::LineEdit'],['../struct_control_1_1_line_edit.html',1,'Control::LineEdit'],['../class_line_edit.html',1,'LineEdit'],['../struct_process_1_1_line_edit.html',1,'Process::LineEdit']]],
   ['lineedititem_1104',['LineEditItem',['../struct_widget_factory_1_1_line_edit_1_1_line_edit_item.html',1,'WidgetFactory::LineEdit']]],
   ['linetextitem_1105',['LineTextItem',['../class_scenario_1_1_line_text_item.html',1,'Scenario']]],
   ['listeninghandler_1106',['ListeningHandler',['../class_explorer_1_1_listening_handler.html',1,'Explorer']]],

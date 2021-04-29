@@ -1,7 +1,5 @@
 var NAVTREEINDEX37 =
 {
-"class_spline_1_1_curve_item.html#a9562a92517f4917cc2b29c9959697b9d":[11,0,44,2,0],
-"class_spline_1_1_curve_item.html#a95c3c7c9fe0924d982a32fa14e73e534":[11,0,44,2,11],
 "class_spline_1_1_curve_item.html#a9cde74fac883841bc87a719b17437c90":[11,0,44,2,6],
 "class_spline_1_1_curve_item.html#a9f3f7703ba4d9dc9d873800b8bd7e512":[11,0,44,2,9],
 "class_spline_1_1_curve_item.html#aa43e0c5ab4bde3c5d165b8d5b9382817":[11,0,44,2,8],
@@ -249,5 +247,7 @@ var NAVTREEINDEX37 =
 "class_token_request_value_type.html#af8d81d2fdb95c424c34bb97bd737c4b4":[11,0,407,10],
 "class_token_request_value_type.html#af97434680574ea879bd76126bc3b46c9":[11,0,407,3],
 "class_token_request_value_type.html#afa8713564f5e63de648a59ce529e6441":[11,0,407,29],
-"class_tool_palette_input_dispatcher.html":[11,0,408]
+"class_tool_palette_input_dispatcher.html":[11,0,408],
+"class_tool_palette_input_dispatcher.html#a430a9c5fb30b5e8ffab6a802733dd4a0":[11,0,408,1],
+"class_tool_palette_input_dispatcher.html#a5169071e4061f245e3db64d257509933":[11,0,408,4]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX66 =
 {
-"structstd_1_1hash_3_01std_1_1pair_3_01_q_string_00_01_q_string_01_4_01_4.html":[11,0,47,13],
-"structstd_1_1hash_3_01std_1_1pair_3_01_q_string_00_01_q_string_01_4_01_4.html#a1546f4d48b32268ffa7c1cced3ba8e60":[11,0,47,13,0],
 "structstd_1_1hash_3_01std_1_1tuple_3_01_q_string_00_01_q_string_00_01_q_string_00_01_q_string_01_4_01_4.html":[11,0,47,14],
 "structstd_1_1hash_3_01std_1_1tuple_3_01_q_string_00_01_q_string_00_01_q_string_00_01_q_string_01_4_01_4.html#a9586ce1d4cf8fb69a4f6fe6db0206dd9":[11,0,47,14,0],
 "structtypeholder.html":[11,0,512],
@@ -92,7 +90,7 @@ var NAVTREEINDEX66 =
 "structvst3_1_1_port_creation_visitor.html#af46d7273cf43f7c231f50d3738a3aa70":[11,0,51,12,3],
 "structvst3_1_1_port_creation_visitor.html#afb4802e008a306304a1277861728e130":[11,0,51,12,6],
 "structvst3_1_1_v_s_t_control_port_item.html":[11,0,51,20],
-"structvst3_1_1_v_s_t_control_port_item.html#a5b20844cfc7e43099296cb15f7cf257c":[11,0,51,20,0],
+"structvst3_1_1_v_s_t_control_port_item.html#a40f44e136d5e047674294f122fa2867b":[11,0,51,20,0],
 "structvst3_1_1_v_s_t_control_port_item.html#a8fecf5bf6aea4ad1a84fcf45a86e66ed":[11,0,51,20,1],
 "structvst3_1_1_v_s_t_float_slider.html":[11,0,51,22],
 "structvst3_1_1_vst3_data_stream.html":[11,0,51,15],
@@ -130,8 +128,8 @@ var NAVTREEINDEX66 =
 "structvst_1_1_application_plugin_1_1_scanning_process.html#abf9bb7ae96063e361351df95fa012d87":[11,0,50,0,0,3],
 "structvst_1_1_application_plugin_1_1_scanning_process.html#acdbf266302edb37c5914dee2455298d7":[11,0,50,0,0,1],
 "structvst_1_1_control_port_item.html":[11,0,50,3],
+"structvst_1_1_control_port_item.html#a60adf96e13c1d3d016533b47e03b25e3":[11,0,50,3,0],
 "structvst_1_1_control_port_item.html#a7d8b59a09e941cc9aeaed1a30a79a5f9":[11,0,50,3,1],
-"structvst_1_1_control_port_item.html#aeb35a85475ad43306e6d8864d4c2bec2":[11,0,50,3,0],
 "structvst_1_1_module.html":[11,0,50,10],
 "structvst_1_1_module.html#a1d2caf2b9b14d69032235cf2f389bf53":[11,0,50,10,0],
 "structvst_1_1_module.html#a4f8793d140bba368acc5d5cba484ba32":[11,0,50,10,2],
