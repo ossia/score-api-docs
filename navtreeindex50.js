@@ -1,5 +1,7 @@
 var NAVTREEINDEX50 =
 {
+"struct_empty_decoder.html#a73498b463c8b5ca676df0a0a1722f6a3":[11,0,96,0],
+"struct_empty_decoder.html#ae0374bd6986c20809a6f6790e19926d7":[11,0,96,2],
 "struct_empty_decoder.html#af1db5decc633173af465d6014cac6e67":[11,0,96,1],
 "struct_engine_1_1score__to__ossia_1_1_curve_traits.html":[11,0,8,0,0],
 "struct_engine_1_1score__to__ossia_1_1_curve_traits_3_01double_01_4.html":[11,0,8,0,1],
@@ -158,9 +160,11 @@ var NAVTREEINDEX50 =
 "struct_explorer_1_1_default_bounds_3_01float_01_4.html":[11,0,10,21],
 "struct_explorer_1_1_default_bounds_3_01int_01_4.html":[11,0,10,22],
 "struct_explorer_1_1_explorer_search_line_edit.html":[11,0,10,34],
-"struct_explorer_1_1_explorer_search_line_edit.html#ad0f81d48ac75bb8938a2eb804777c9c1":[11,0,10,34,0],
-"struct_explorer_1_1_explorer_search_line_edit.html#af635dfb4e013dab3f968097175d1d5e5":[11,0,10,34,2],
-"struct_explorer_1_1_explorer_search_line_edit.html#afe866c4632d6a9c85ebc1041daef4408":[11,0,10,34,1],
+"struct_explorer_1_1_explorer_search_line_edit.html#a9981d45795ee1b47d3ed3fe9aeef0912":[11,0,10,34,0],
+"struct_explorer_1_1_explorer_search_line_edit.html#ac566eb6c4fd4b511bee94f0ce8861cc1":[11,0,10,34,3],
+"struct_explorer_1_1_explorer_search_line_edit.html#ad0f81d48ac75bb8938a2eb804777c9c1":[11,0,10,34,1],
+"struct_explorer_1_1_explorer_search_line_edit.html#af635dfb4e013dab3f968097175d1d5e5":[11,0,10,34,4],
+"struct_explorer_1_1_explorer_search_line_edit.html#afe866c4632d6a9c85ebc1041daef4408":[11,0,10,34,2],
 "struct_explorer_1_1_selected_nodes.html":[11,0,10,48],
 "struct_explorer_1_1_selected_nodes.html#a0015ee94bbf39be77cee2942759bcc15":[11,0,10,48,1],
 "struct_explorer_1_1_selected_nodes.html#ae290430e3602a169ce75d658819a3a87":[11,0,10,48,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX50 =
 "struct_g_p_u_video_decoder.html#ab89f2bb566c6db22ad4462de2318bece":[11,0,113,3],
 "struct_g_p_u_video_decoder.html#aba832f3828d904ff0713871f058254bd":[11,0,113,2],
 "struct_gfx_1_1_camera_settings.html":[11,0,13,13],
-"struct_gfx_1_1_camera_settings.html#a25551c9b0211e5d371f9248be832ae03":[11,0,13,13,0],
-"struct_gfx_1_1_camera_settings.html#a395e703271b5c76ceee531202ae66bae":[11,0,13,13,1],
-"struct_gfx_1_1_camera_settings.html#a707454a6640caa086c6743527c6a500a":[11,0,13,13,3],
-"struct_gfx_1_1_camera_settings.html#ab159a0fda2c0408710f13d608d930d22":[11,0,13,13,2],
-"struct_gfx_1_1_image.html":[11,0,13,30]
+"struct_gfx_1_1_camera_settings.html#a25551c9b0211e5d371f9248be832ae03":[11,0,13,13,0]
 };

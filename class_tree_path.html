@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.8.17"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>score: TreePath&lt; T &gt; Class Template Reference</title>
+        <title>score: TreePath Class Reference</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -98,46 +98,46 @@ $(document).ready(function(){initNavTree('class_tree_path.html',''); initResizab
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_tree_path-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">TreePath&lt; T &gt; Class Template Reference</div>  </div>
+<div class="title">TreePath Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><a class="el" href="class_path.html" title="The Path class is a typesafe wrapper around ObjectPath.">Path</a> in a tree of QAbstractItemModel objects.  
  <a href="class_tree_path.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for TreePath&lt; T &gt;:</div>
+Inheritance diagram for TreePath:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_tree_path.png" alt=""/>
  </div></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename T&gt;<br />
-class TreePath&lt; T &gt;</h3>
-
-<p><a class="el" href="class_path.html" title="The Path class is a typesafe wrapper around ObjectPath.">Path</a> in a tree of QAbstractItemModel objects. </p>
+<div class="textblock"><p><a class="el" href="class_path.html" title="The Path class is a typesafe wrapper around ObjectPath.">Path</a> in a tree of QAbstractItemModel objects. </p>
 <p>Represents a path in a tree made with <a class="el" href="class_tree_node.html">TreeNode</a>. This allows sending path in commands and over the network.</p>
 <p>TODO : it should be feasible to add the caching of a QModelIndex or something like this here. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adc2159330fde44b40182e35cc9cb5646"><td class="memItemLeft" align="right" valign="top"><a id="adc2159330fde44b40182e35cc9cb5646"></a>
+<tr class="memitem:ae04b6dd3ca375afd2126223f32880306"><td class="memItemLeft" align="right" valign="top"><a id="ae04b6dd3ca375afd2126223f32880306"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>TreePath</b> (const impl_type &amp;other)</td></tr>
-<tr class="separator:adc2159330fde44b40182e35cc9cb5646"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a807749ec7893d1d8850d678602e29b37"><td class="memItemLeft" align="right" valign="top"><a id="a807749ec7893d1d8850d678602e29b37"></a>
+<tr class="separator:ae04b6dd3ca375afd2126223f32880306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91cdd7e08593cc5193beaac472afa5ed"><td class="memItemLeft" align="right" valign="top"><a id="a91cdd7e08593cc5193beaac472afa5ed"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>TreePath</b> (QModelIndex index)</td></tr>
-<tr class="separator:a807749ec7893d1d8850d678602e29b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10f013d36879bc701690a09f928236a2"><td class="memItemLeft" align="right" valign="top"><a id="a10f013d36879bc701690a09f928236a2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>TreePath</b> (const T &amp;node)</td></tr>
-<tr class="separator:a10f013d36879bc701690a09f928236a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af07720949d8dfc313e289683abae1e51"><td class="memItemLeft" align="right" valign="top"><a id="af07720949d8dfc313e289683abae1e51"></a>
+<tr class="separator:a91cdd7e08593cc5193beaac472afa5ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aa2829ae60e04e79a2a37c0057700db"><td class="memTemplParams" colspan="2"><a id="a9aa2829ae60e04e79a2a37c0057700db"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a9aa2829ae60e04e79a2a37c0057700db"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>TreePath</b> (const T &amp;node)</td></tr>
+<tr class="separator:a9aa2829ae60e04e79a2a37c0057700db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adafc1ecfaf601d398227dfe18a981bce"><td class="memItemLeft" align="right" valign="top"><a id="adafc1ecfaf601d398227dfe18a981bce"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>prepend</b> (int val)</td></tr>
-<tr class="separator:af07720949d8dfc313e289683abae1e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dcd8439bc44ac0de3e18c5eb03caf6d"><td class="memItemLeft" align="right" valign="top"><a id="a8dcd8439bc44ac0de3e18c5eb03caf6d"></a>
-const T *&#160;</td><td class="memItemRight" valign="bottom"><b>toNode</b> (const T *iter) const</td></tr>
-<tr class="separator:a8dcd8439bc44ac0de3e18c5eb03caf6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92403c1e5da8cddc53594dad90bc141c"><td class="memItemLeft" align="right" valign="top"><a id="a92403c1e5da8cddc53594dad90bc141c"></a>
-T *&#160;</td><td class="memItemRight" valign="bottom"><b>toNode</b> (T *iter) const</td></tr>
-<tr class="separator:a92403c1e5da8cddc53594dad90bc141c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:adafc1ecfaf601d398227dfe18a981bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dc01978ba92e2da54059a849268a380"><td class="memTemplParams" colspan="2"><a id="a3dc01978ba92e2da54059a849268a380"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a3dc01978ba92e2da54059a849268a380"><td class="memTemplItemLeft" align="right" valign="top">const T *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>toNode</b> (const T *iter) const</td></tr>
+<tr class="separator:a3dc01978ba92e2da54059a849268a380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4f7665eb176da0bfd2bc753a046e1df"><td class="memTemplParams" colspan="2"><a id="ae4f7665eb176da0bfd2bc753a046e1df"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae4f7665eb176da0bfd2bc753a046e1df"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>toNode</b> (T *iter) const</td></tr>
+<tr class="separator:ae4f7665eb176da0bfd2bc753a046e1df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_tree_path_8hpp_source.html">TreePath.hpp</a></li>

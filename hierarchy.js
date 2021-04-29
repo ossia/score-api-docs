@@ -225,8 +225,8 @@ var hierarchy =
     [ "Category_k", "class_category__k.html", null ],
     [ "Protocols::Artnet::Channel", "struct_protocols_1_1_artnet_1_1_channel.html", null ],
     [ "check_enum_size< T >", "structcheck__enum__size.html", null ],
-    [ "score::ComponentHierarchyManager< ParentComponent_T, ChildModel_T, ChildComponent_T >::ChildPair", "structscore_1_1_component_hierarchy_manager_1_1_child_pair.html", null ],
     [ "score::PolymorphicComponentHierarchyManager< ParentComponent_T, ChildModel_T, ChildComponent_T, ChildComponentFactoryList_T, HasOwnership >::ChildPair", "structscore_1_1_polymorphic_component_hierarchy_manager_1_1_child_pair.html", null ],
+    [ "score::ComponentHierarchyManager< ParentComponent_T, ChildModel_T, ChildComponent_T >::ChildPair", "structscore_1_1_component_hierarchy_manager_1_1_child_pair.html", null ],
     [ "Nodal::HierarchyManager::ChildPair", "struct_nodal_1_1_hierarchy_manager_1_1_child_pair.html", null ],
     [ "WidgetFactory::ChooserToggle", "struct_widget_factory_1_1_chooser_toggle.html", [
       [ "Control::ChooserToggle", "struct_control_1_1_chooser_toggle.html", null ]
@@ -1697,6 +1697,28 @@ var hierarchy =
     [ "Scenario::BaseScenarioContainer::no_init", "struct_scenario_1_1_base_scenario_container_1_1no__init.html", null ],
     [ "Explorer::AddressSettingsWidget::no_widgets_t", "struct_explorer_1_1_address_settings_widget_1_1no__widgets__t.html", null ],
     [ "Scenario::NodalSlotPresenter", "struct_scenario_1_1_nodal_slot_presenter.html", null ],
+    [ "Nodes::Metro::Node", "struct_nodes_1_1_metro_1_1_node.html", null ],
+    [ "Nodes::EmptyMidiMapping::Node", "struct_nodes_1_1_empty_midi_mapping_1_1_node.html", null ],
+    [ "Nodes::Envelope::Node", "struct_nodes_1_1_envelope_1_1_node.html", null ],
+    [ "Nodes::FactorOracle::Node", "struct_nodes_1_1_factor_oracle_1_1_node.html", null ],
+    [ "Ui::SignalDisplay::Node", "struct_ui_1_1_signal_display_1_1_node.html", null ],
+    [ "Nodes::Direction::Node", "struct_nodes_1_1_direction_1_1_node.html", null ],
+    [ "Nodes::Chord::Node", "struct_nodes_1_1_chord_1_1_node.html", null ],
+    [ "Nodes::ClassicalBeat::Node", "struct_nodes_1_1_classical_beat_1_1_node.html", null ],
+    [ "Nodes::Debug::Node", "struct_nodes_1_1_debug_1_1_node.html", null ],
+    [ "Nodes::EmptyValueMapping::Node", "struct_nodes_1_1_empty_value_mapping_1_1_node.html", null ],
+    [ "Nodes::EmptyAudioMapping::Node", "struct_nodes_1_1_empty_audio_mapping_1_1_node.html", null ],
+    [ "Nodes::Gain::Node", "struct_nodes_1_1_gain_1_1_node.html", null ],
+    [ "Nodes::LFO::Node", "struct_nodes_1_1_l_f_o_1_1_node.html", null ],
+    [ "Nodes::AudioLooper::Node", "struct_nodes_1_1_audio_looper_1_1_node.html", null ],
+    [ "Nodes::MathAudioGenerator::Node", "struct_nodes_1_1_math_audio_generator_1_1_node.html", null ],
+    [ "Nodes::MathMapping::Node", "struct_nodes_1_1_math_mapping_1_1_node.html", null ],
+    [ "Nodes::Arpeggiator::Node", "struct_nodes_1_1_arpeggiator_1_1_node.html", null ],
+    [ "Nodes::MathAudioFilter::Node", "struct_nodes_1_1_math_audio_filter_1_1_node.html", null ],
+    [ "Nodes::MidiUtil::Node", "struct_nodes_1_1_midi_util_1_1_node.html", null ],
+    [ "Nodes::PitchToValue::Node", "struct_nodes_1_1_pitch_to_value_1_1_node.html", null ],
+    [ "Nodes::Quantifier::Node", "struct_nodes_1_1_quantifier_1_1_node.html", null ],
+    [ "Nodes::PulseToNote::Node", "struct_nodes_1_1_pulse_to_note_1_1_node.html", null ],
     [ "score::gfx::Node", "classscore_1_1gfx_1_1_node.html", [
       [ "score::gfx::ProcessNode", "classscore_1_1gfx_1_1_process_node.html", [
         [ "ISFNode", "struct_i_s_f_node.html", null ],
@@ -1716,29 +1738,7 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
-    [ "Nodes::EmptyAudioMapping::Node", "struct_nodes_1_1_empty_audio_mapping_1_1_node.html", null ],
-    [ "Ui::SignalDisplay::Node", "struct_ui_1_1_signal_display_1_1_node.html", null ],
-    [ "Nodes::Direction::Node", "struct_nodes_1_1_direction_1_1_node.html", null ],
-    [ "Nodes::Chord::Node", "struct_nodes_1_1_chord_1_1_node.html", null ],
-    [ "Nodes::ClassicalBeat::Node", "struct_nodes_1_1_classical_beat_1_1_node.html", null ],
-    [ "Nodes::Debug::Node", "struct_nodes_1_1_debug_1_1_node.html", null ],
-    [ "Nodes::EmptyValueMapping::Node", "struct_nodes_1_1_empty_value_mapping_1_1_node.html", null ],
-    [ "Nodes::EmptyMidiMapping::Node", "struct_nodes_1_1_empty_midi_mapping_1_1_node.html", null ],
-    [ "Nodes::Envelope::Node", "struct_nodes_1_1_envelope_1_1_node.html", null ],
-    [ "Nodes::FactorOracle::Node", "struct_nodes_1_1_factor_oracle_1_1_node.html", null ],
-    [ "Nodes::Gain::Node", "struct_nodes_1_1_gain_1_1_node.html", null ],
-    [ "Nodes::AudioLooper::Node", "struct_nodes_1_1_audio_looper_1_1_node.html", null ],
     [ "Nodes::MathGenerator::Node", "struct_nodes_1_1_math_generator_1_1_node.html", null ],
-    [ "Nodes::MathAudioFilter::Node", "struct_nodes_1_1_math_audio_filter_1_1_node.html", null ],
-    [ "Nodes::Metro::Node", "struct_nodes_1_1_metro_1_1_node.html", null ],
-    [ "Nodes::MidiUtil::Node", "struct_nodes_1_1_midi_util_1_1_node.html", null ],
-    [ "Nodes::PitchToValue::Node", "struct_nodes_1_1_pitch_to_value_1_1_node.html", null ],
-    [ "Nodes::Quantifier::Node", "struct_nodes_1_1_quantifier_1_1_node.html", null ],
-    [ "Nodes::PulseToNote::Node", "struct_nodes_1_1_pulse_to_note_1_1_node.html", null ],
-    [ "Nodes::LFO::Node", "struct_nodes_1_1_l_f_o_1_1_node.html", null ],
-    [ "Nodes::MathMapping::Node", "struct_nodes_1_1_math_mapping_1_1_node.html", null ],
-    [ "Nodes::MathAudioGenerator::Node", "struct_nodes_1_1_math_audio_generator_1_1_node.html", null ],
-    [ "Nodes::Arpeggiator::Node", "struct_nodes_1_1_arpeggiator_1_1_node.html", null ],
     [ "node_base", null, [
       [ "Gfx::camera_node", "class_gfx_1_1camera__node.html", null ],
       [ "Gfx::gfx_node_base", "class_gfx_1_1gfx__node__base.html", null ],
@@ -1909,8 +1909,8 @@ var hierarchy =
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Metronome::ProcessModel >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -1996,8 +1996,8 @@ var hierarchy =
     [ "Curve::PointId", "struct_curve_1_1_point_id.html", null ],
     [ "Port", "struct_port.html", null ],
     [ "Process::DefaultEffectItem::Port", "struct_process_1_1_default_effect_item_1_1_port.html", null ],
-    [ "ControlSurface::Presenter::Port", "struct_control_surface_1_1_presenter_1_1_port.html", null ],
     [ "Gfx::Video::Presenter::Port", "struct_gfx_1_1_video_1_1_presenter_1_1_port.html", null ],
+    [ "ControlSurface::Presenter::Port", "struct_control_surface_1_1_presenter_1_1_port.html", null ],
     [ "Audio::PortAudioCard", "struct_audio_1_1_port_audio_card.html", null ],
     [ "Audio::PortAudioScope", "struct_audio_1_1_port_audio_scope.html", null ],
     [ "vst3::PortCreationVisitor", "structvst3_1_1_port_creation_visitor.html", null ],
@@ -2052,20 +2052,22 @@ var hierarchy =
       [ "score::LogMessagesItemModel", "classscore_1_1_log_messages_item_model.html", null ],
       [ "State::EmptyModel", "class_state_1_1_empty_model.html", null ],
       [ "State::UnitModel", "class_state_1_1_unit_model.html", null ],
-      [ "TreeNodeBasedItemModel< NodeType >", "class_tree_node_based_item_model.html", null ],
-      [ "TreeNodeBasedItemModel< Device::Node >", "class_tree_node_based_item_model.html", [
-        [ "Device::NodeBasedItemModel", "class_device_1_1_node_based_item_model.html", [
-          [ "Explorer::DeviceExplorerModel", "class_explorer_1_1_device_explorer_model.html", null ]
+      [ "TreeModel", "class_tree_model.html", [
+        [ "TreeNodeBasedItemModel< NodeType >", "class_tree_node_based_item_model.html", null ],
+        [ "TreeNodeBasedItemModel< Device::Node >", "class_tree_node_based_item_model.html", [
+          [ "Device::NodeBasedItemModel", "class_device_1_1_node_based_item_model.html", [
+            [ "Explorer::DeviceExplorerModel", "class_explorer_1_1_device_explorer_model.html", null ]
+          ] ]
+        ] ],
+        [ "TreeNodeBasedItemModel< FixtureNode >", "class_tree_node_based_item_model.html", [
+          [ "Protocols::FixtureDatabase", "class_protocols_1_1_fixture_database.html", null ]
+        ] ],
+        [ "TreeNodeBasedItemModel< Process::MessageNode >", "class_tree_node_based_item_model.html", [
+          [ "Scenario::MessageItemModel", "class_scenario_1_1_message_item_model.html", null ]
+        ] ],
+        [ "TreeNodeBasedItemModel< ProcessNode >", "class_tree_node_based_item_model.html", [
+          [ "Library::ProcessesItemModel", "class_library_1_1_processes_item_model.html", null ]
         ] ]
-      ] ],
-      [ "TreeNodeBasedItemModel< FixtureNode >", "class_tree_node_based_item_model.html", [
-        [ "Protocols::FixtureDatabase", "class_protocols_1_1_fixture_database.html", null ]
-      ] ],
-      [ "TreeNodeBasedItemModel< Process::MessageNode >", "class_tree_node_based_item_model.html", [
-        [ "Scenario::MessageItemModel", "class_scenario_1_1_message_item_model.html", null ]
-      ] ],
-      [ "TreeNodeBasedItemModel< ProcessNode >", "class_tree_node_based_item_model.html", [
-        [ "Library::ProcessesItemModel", "class_library_1_1_processes_item_model.html", null ]
       ] ]
     ] ],
     [ "QAbstractListModel", null, [
@@ -3208,8 +3210,8 @@ var hierarchy =
     [ "Sampler", "struct_sampler.html", null ],
     [ "Scenario::SavedPort", "struct_scenario_1_1_saved_port.html", null ],
     [ "Protocols::FixtureDatabase::Scan", "struct_protocols_1_1_fixture_database_1_1_scan.html", null ],
-    [ "vst3::ApplicationPlugin::ScanningProcess", "structvst3_1_1_application_plugin_1_1_scanning_process.html", null ],
     [ "vst::ApplicationPlugin::ScanningProcess", "structvst_1_1_application_plugin_1_1_scanning_process.html", null ],
+    [ "vst3::ApplicationPlugin::ScanningProcess", "structvst3_1_1_application_plugin_1_1_scanning_process.html", null ],
     [ "Scenario::ScenarioBeingCopied", "struct_scenario_1_1_scenario_being_copied.html", null ],
     [ "Scenario::ScenarioCreate< T >", "class_scenario_1_1_scenario_create.html", null ],
     [ "Scenario::ScenarioCreate< CommentBlockModel >", "class_scenario_1_1_scenario_create_3_01_comment_block_model_01_4.html", null ],
@@ -3332,19 +3334,19 @@ var hierarchy =
     [ "Device::ProtocolFactory::StandardCategories", "struct_device_1_1_protocol_factory_1_1_standard_categories.html", null ],
     [ "Scenario::StartDateComparator< T >", "struct_scenario_1_1_start_date_comparator.html", null ],
     [ "score::StartScreenLink", "structscore_1_1_start_screen_link.html", null ],
-    [ "Nodes::LFO::Node::State", "struct_nodes_1_1_l_f_o_1_1_node_1_1_state.html", null ],
-    [ "Nodes::MathGenerator::Node::State", "struct_nodes_1_1_math_generator_1_1_node_1_1_state.html", null ],
-    [ "Nodes::AudioLooper::Node::State", "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html", null ],
-    [ "Nodes::Direction::Node::State", "struct_nodes_1_1_direction_1_1_node_1_1_state.html", null ],
-    [ "Nodes::FactorOracle::Node::State", "struct_nodes_1_1_factor_oracle_1_1_node_1_1_state.html", null ],
-    [ "Nodes::Chord::Node::State", "struct_nodes_1_1_chord_1_1_node_1_1_state.html", null ],
-    [ "Nodes::MathAudioFilter::Node::State", "struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html", null ],
     [ "Nodes::MidiUtil::Node::State", "struct_nodes_1_1_midi_util_1_1_node_1_1_state.html", null ],
-    [ "Nodes::Quantifier::Node::State", "struct_nodes_1_1_quantifier_1_1_node_1_1_state.html", null ],
-    [ "Nodes::MathAudioGenerator::Node::State", "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html", null ],
-    [ "Nodes::Arpeggiator::Node::State", "struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html", null ],
-    [ "Nodes::MathMapping::Node::State", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html", null ],
+    [ "Nodes::Chord::Node::State", "struct_nodes_1_1_chord_1_1_node_1_1_state.html", null ],
+    [ "Nodes::LFO::Node::State", "struct_nodes_1_1_l_f_o_1_1_node_1_1_state.html", null ],
     [ "Nodes::PulseToNote::Node::State", "struct_nodes_1_1_pulse_to_note_1_1_node_1_1_state.html", null ],
+    [ "Nodes::MathGenerator::Node::State", "struct_nodes_1_1_math_generator_1_1_node_1_1_state.html", null ],
+    [ "Nodes::Arpeggiator::Node::State", "struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html", null ],
+    [ "Nodes::AudioLooper::Node::State", "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html", null ],
+    [ "Nodes::Quantifier::Node::State", "struct_nodes_1_1_quantifier_1_1_node_1_1_state.html", null ],
+    [ "Nodes::MathMapping::Node::State", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html", null ],
+    [ "Nodes::Direction::Node::State", "struct_nodes_1_1_direction_1_1_node_1_1_state.html", null ],
+    [ "Nodes::MathAudioFilter::Node::State", "struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html", null ],
+    [ "Nodes::MathAudioGenerator::Node::State", "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html", null ],
+    [ "Nodes::FactorOracle::Node::State", "struct_nodes_1_1_factor_oracle_1_1_node_1_1_state.html", null ],
     [ "StateNodeData", null, [
       [ "TreeNode< StateNodeData >", "class_tree_node.html", null ]
     ] ],
@@ -3478,7 +3480,7 @@ var hierarchy =
     [ "TSerializer< DataStream, std::variant< Args... > >", "struct_t_serializer_3_01_data_stream_00_01std_1_1variant_3_01_args_8_8_8_01_4_01_4.html", null ],
     [ "TSerializer< DataStream, std::vector< bool > >", "struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01bool_01_4_01_4.html", null ],
     [ "TSerializer< DataStream, std::vector< int > >", "struct_t_serializer.html", [
-      [ "TSerializer< DataStream, TreePath< T > >", "struct_t_serializer_3_01_data_stream_00_01_tree_path_3_01_t_01_4_01_4.html", null ]
+      [ "TSerializer< DataStream, TreePath >", "struct_t_serializer_3_01_data_stream_00_01_tree_path_01_4.html", null ]
     ] ],
     [ "TSerializer< DataStream, std::vector< T, Alloc >, std::enable_if_t< !is_QDataStreamSerializable< typename std::vector< T, Alloc >::value_type >::value &&!std::is_pointer_v< T > &&!is_shared_ptr_v< T > > >", "struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01_t_00_01_alloc_01_4_00_01std_1_1enabe39984c95d0489c1ceb4104524c4ac76.html", null ],
     [ "TSerializer< DataStream, std::vector< T, Alloc >, std::enable_if_t< is_QDataStreamSerializable< typename std::vector< T, Alloc >::value_type >::value > >", "struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01_t_00_01_alloc_01_4_00_01std_1_1enab3605288434eb5962fb34730a4a06e332.html", null ],
@@ -3518,14 +3520,14 @@ var hierarchy =
     [ "TSerializer< JSONObject, std::variant< Args... > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1variant_3_01_args_8_8_8_01_4_01_4.html", null ],
     [ "TSerializer< JSONObject, TimeVal >", "struct_t_serializer_3_01_j_s_o_n_object_00_01_time_val_01_4.html", null ],
     [ "TSerializer< JSONObject, TreeNode< T > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01_tree_node_3_01_t_01_4_01_4.html", null ],
-    [ "TSerializer< JSONObject, TreePath< T > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01_tree_path_3_01_t_01_4_01_4.html", null ],
+    [ "TSerializer< JSONObject, TreePath >", "struct_t_serializer_3_01_j_s_o_n_object_00_01_tree_path_01_4.html", null ],
     [ "TSerializer< JSONObject, UuidKey< U > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01_uuid_key_3_01_u_01_4_01_4.html", null ],
     [ "type", null, [
       [ "score::StaticPropertyCommand< T >", "structscore_1_1_static_property_command.html", null ]
     ] ],
     [ "typeholder< T >", "structtypeholder.html", null ],
-    [ "TexgenNode::ubo", "struct_texgen_node_1_1ubo.html", null ],
     [ "ImagesNode::ubo", "struct_images_node_1_1ubo.html", null ],
+    [ "TexgenNode::ubo", "struct_texgen_node_1_1ubo.html", null ],
     [ "UI", null, [
       [ "Faust::UI< Proc, Synth >", "struct_faust_1_1_u_i.html", [
         [ "Faust::UpdateUI< Proc, SetInit >", "struct_faust_1_1_update_u_i.html", null ]
@@ -3576,8 +3578,7 @@ var hierarchy =
     [ "Vec4fValueType", "class_vec4f_value_type.html", null ],
     [ "std::vector< T >", null, [
       [ "score::IndirectContainer< T, U >", "classscore_1_1_indirect_container.html", null ],
-      [ "TreePath< T >", "class_tree_path.html", null ],
-      [ "TreePath< Device::Node >", "class_tree_path.html", null ]
+      [ "TreePath", "class_tree_path.html", null ]
     ] ],
     [ "score::Version", "classscore_1_1_version.html", null ],
     [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [

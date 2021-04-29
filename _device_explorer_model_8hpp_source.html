@@ -234,51 +234,49 @@ $(document).ready(function(){initNavTree('_device_explorer_model_8hpp_source.htm
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      <span class="keywordtype">int</span> column,</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      <span class="keyword">const</span> QModelIndex&amp; parent) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  QModelIndex convertPathToIndex(<span class="keyword">const</span> <a class="code" href="class_tree_path.html">Device::NodePath</a>&amp; path);</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <a class="code" href="struct_explorer_1_1_selected_nodes.html">SelectedNodes</a> uniqueSelectedNodes(</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;      <span class="keyword">const</span> QModelIndexList&amp; indexes) <span class="keyword">const</span>; <span class="comment">// Note : filters so that only parents are given.</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordtype">void</span> checkAndLoadDevice(<a class="code" href="class_tree_node.html">Device::Node</a> n);</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordtype">void</span> checkAndLoadDevice(<a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> n);</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keywordtype">void</span> nodeChanged(<a class="code" href="class_tree_node.html">Device::Node</a>* n) E_SIGNAL(SCORE_PLUGIN_DEVICEEXPLORER_EXPORT, nodeChanged, n)</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keywordtype">void</span> debug_printPath(<span class="keyword">const</span> <a class="code" href="class_tree_path.html">Device::NodePath</a>&amp; path);</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <a class="code" href="class_explorer_1_1_device_document_plugin.html">DeviceDocumentPlugin</a>&amp; m_devicePlugin;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <a class="code" href="struct_explorer_1_1_selected_nodes.html">SelectedNodes</a> uniqueSelectedNodes(</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      <span class="keyword">const</span> QModelIndexList&amp; indexes) <span class="keyword">const</span>; <span class="comment">// Note : filters so that only parents are given.</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="keywordtype">void</span> checkAndLoadDevice(<a class="code" href="class_tree_node.html">Device::Node</a> n);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keywordtype">void</span> checkAndLoadDevice(<a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> n);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordtype">void</span> nodeChanged(<a class="code" href="class_tree_node.html">Device::Node</a>* n) E_SIGNAL(SCORE_PLUGIN_DEVICEEXPLORER_EXPORT, nodeChanged, n)</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordtype">void</span> debug_printPath(<span class="keyword">const</span> <a class="code" href="class_tree_path.html">Device::NodePath</a>&amp; path);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <a class="code" href="class_explorer_1_1_device_document_plugin.html">DeviceDocumentPlugin</a>&amp; m_devicePlugin;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  QModelIndex bottomIndex(<span class="keyword">const</span> QModelIndex&amp; index) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  QModelIndex bottomIndex(<span class="keyword">const</span> QModelIndex&amp; index) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <a class="code" href="class_tree_node.html">Device::Node</a>&amp; m_rootNode;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <a class="code" href="class_tree_node.html">Device::Node</a>&amp; m_rootNode;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="keyword">const</span> <a class="code" href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a>&amp; m_cmdQ;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keyword">const</span> <a class="code" href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a>&amp; m_cmdQ;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <a class="code" href="class_explorer_1_1_device_explorer_view.html">DeviceExplorerView</a>* m_view{};</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;};</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment">// Will update the tree and return the messages corresponding to the selected</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment">// nodes.</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;SCORE_PLUGIN_DEVICEEXPLORER_EXPORT State::MessageList</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;getSelectionSnapshot(<a class="code" href="class_explorer_1_1_device_explorer_model.html">DeviceExplorerModel</a>&amp; model);</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;SCORE_PLUGIN_DEVICEEXPLORER_EXPORT <a class="code" href="class_explorer_1_1_device_explorer_model.html">DeviceExplorerModel</a>&amp; deviceExplorerFromObject(<span class="keyword">const</span> QObject&amp;);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <a class="code" href="class_explorer_1_1_device_explorer_view.html">DeviceExplorerView</a>* m_view{};</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;};</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">// Will update the tree and return the messages corresponding to the selected</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">// nodes.</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;SCORE_PLUGIN_DEVICEEXPLORER_EXPORT State::MessageList</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;getSelectionSnapshot(<a class="code" href="class_explorer_1_1_device_explorer_model.html">DeviceExplorerModel</a>&amp; model);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;SCORE_PLUGIN_DEVICEEXPLORER_EXPORT <a class="code" href="class_explorer_1_1_device_explorer_model.html">DeviceExplorerModel</a>&amp; deviceExplorerFromObject(<span class="keyword">const</span> QObject&amp;);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;SCORE_PLUGIN_DEVICEEXPLORER_EXPORT <a class="code" href="class_explorer_1_1_device_explorer_model.html">DeviceExplorerModel</a>*</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;try_deviceExplorerFromObject(<span class="keyword">const</span> QObject&amp;);</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;SCORE_PLUGIN_DEVICEEXPLORER_EXPORT <a class="code" href="class_explorer_1_1_device_explorer_model.html">DeviceExplorerModel</a>*</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;try_deviceExplorerFromObject(<span class="keyword">const</span> QObject&amp;);</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;SCORE_PLUGIN_DEVICEEXPLORER_EXPORT <a class="code" href="class_explorer_1_1_device_explorer_model.html">DeviceExplorerModel</a>*</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;try_deviceExplorerFromContext(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx);</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;SCORE_PLUGIN_DEVICEEXPLORER_EXPORT <a class="code" href="class_explorer_1_1_device_explorer_model.html">DeviceExplorerModel</a>&amp;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;deviceExplorerFromContext(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx);</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment">// Will try to find a node and fill the structure with it.</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;SCORE_PLUGIN_DEVICEEXPLORER_EXPORT <a class="code" href="struct_device_1_1_full_address_accessor_settings.html">Device::FullAddressAccessorSettings</a></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;makeFullAddressAccessorSettings(</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keyword">const</span> <a class="code" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a>&amp; mess,</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    ossia::value min,</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    ossia::value max);</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;}</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;try_deviceExplorerFromContext(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;SCORE_PLUGIN_DEVICEEXPLORER_EXPORT <a class="code" href="class_explorer_1_1_device_explorer_model.html">DeviceExplorerModel</a>&amp;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;deviceExplorerFromContext(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="comment">// Will try to find a node and fill the structure with it.</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;SCORE_PLUGIN_DEVICEEXPLORER_EXPORT <a class="code" href="struct_device_1_1_full_address_accessor_settings.html">Device::FullAddressAccessorSettings</a></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;makeFullAddressAccessorSettings(</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keyword">const</span> <a class="code" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a>&amp; mess,</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    ossia::value min,</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    ossia::value max);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_explorer_1_1_device_explorer_model_html"><div class="ttname"><a href="class_explorer_1_1_device_explorer_model.html">Explorer::DeviceExplorerModel</a></div><div class="ttdef"><b>Definition:</b> DeviceExplorerModel.hpp:62</div></div>
@@ -291,7 +289,7 @@ $(document).ready(function(){initNavTree('_device_explorer_model_8hpp_source.htm
 <div class="ttc" id="aclassscore_1_1_command_stack_facade_html"><div class="ttname"><a href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a></div><div class="ttdoc">A small abstraction layer over the score::CommandStack.</div><div class="ttdef"><b>Definition:</b> CommandStackFacade.hpp:19</div></div>
 <div class="ttc" id="astruct_explorer_1_1_selected_nodes_html"><div class="ttname"><a href="struct_explorer_1_1_selected_nodes.html">Explorer::SelectedNodes</a></div><div class="ttdoc">The SelectedNodes struct.</div><div class="ttdef"><b>Definition:</b> DeviceExplorerModel.hpp:49</div></div>
 <div class="ttc" id="astruct_explorer_1_1_selected_nodes_html_a0015ee94bbf39be77cee2942759bcc15"><div class="ttname"><a href="struct_explorer_1_1_selected_nodes.html#a0015ee94bbf39be77cee2942759bcc15">Explorer::SelectedNodes::parents</a></div><div class="ttdeci">std::vector&lt; Device::Node * &gt; parents</div><div class="ttdoc">parents The topmost parents of the selected parameters</div><div class="ttdef"><b>Definition:</b> DeviceExplorerModel.hpp:54</div></div>
-<div class="ttc" id="aclass_tree_path_html"><div class="ttname"><a href="class_tree_path.html">TreePath&lt; Device::Node &gt;</a></div></div>
+<div class="ttc" id="aclass_tree_path_html"><div class="ttname"><a href="class_tree_path.html">TreePath</a></div><div class="ttdoc">Path in a tree of QAbstractItemModel objects.</div><div class="ttdef"><b>Definition:</b> TreePath.hpp:32</div></div>
 <div class="ttc" id="astruct_device_1_1_full_address_accessor_settings_html"><div class="ttname"><a href="struct_device_1_1_full_address_accessor_settings.html">Device::FullAddressAccessorSettings</a></div><div class="ttdef"><b>Definition:</b> AddressSettings.hpp:127</div></div>
 <div class="ttc" id="aclass_device_1_1_node_based_item_model_html"><div class="ttname"><a href="class_device_1_1_node_based_item_model.html">Device::NodeBasedItemModel</a></div><div class="ttdef"><b>Definition:</b> NodeBasedItemModel.hpp:16</div></div>
 <div class="ttc" id="anamespace_device_html"><div class="ttname"><a href="namespace_device.html">Device</a></div><div class="ttdoc">Manipulation of Devices from Qt.</div><div class="ttdef"><b>Definition:</b> AddressSettings.cpp:13</div></div>

@@ -16,7 +16,6 @@ var class_explorer_1_1_device_explorer_model =
     [ "columnCount", "class_explorer_1_1_device_explorer_model.html#a421ea3ee83b4e92ec087baef243412e8", null ],
     [ "columnCount", "class_explorer_1_1_device_explorer_model.html#a30adef021aaa7b5da1ea814c8b2b3965", null ],
     [ "commandStack", "class_explorer_1_1_device_explorer_model.html#a02b869129f55d3084ced7baea7b65f75", null ],
-    [ "convertPathToIndex", "class_explorer_1_1_device_explorer_model.html#ab42f8fac87d7a1ce82483285d1265fa1", null ],
     [ "data", "class_explorer_1_1_device_explorer_model.html#aad4abcd3bd23d886b109b2ca1ec0b30f", null ],
     [ "debug_printIndexes", "class_explorer_1_1_device_explorer_model.html#a60ee1357f7ee8f088d5b4e60b537d8e0", null ],
     [ "debug_printPath", "class_explorer_1_1_device_explorer_model.html#aa88a1662176dcda7567311e829b49117", null ],
