@@ -1,5 +1,10 @@
 var NAVTREEINDEX59 =
 {
+"struct_scenario_1_1_click_on_slot_handle___event.html#aaa85b06f506aa6bce91ef83a968ebf5c":[11,0,41,21,1],
+"struct_scenario_1_1_click_on_slot_handle___event.html#afcbf16c0b521f0e665d088ea5a22263e":[11,0,41,21,2],
+"struct_scenario_1_1_command_1_1_message_pairs.html":[11,0,41,0,56],
+"struct_scenario_1_1_command_1_1_message_pairs.html#aa1a0fdfb87fd65157d3f3b466b3e119a":[11,0,41,0,56,3],
+"struct_scenario_1_1_command_1_1_message_pairs.html#aa6e428f45a6c3b8c50369c9c22b1d1fc":[11,0,41,0,56,4],
 "struct_scenario_1_1_command_1_1_message_pairs.html#ab674fee2531b2e688209def4a3c07789":[11,0,41,0,56,1],
 "struct_scenario_1_1_command_1_1_message_pairs.html#ac2e40743d906be50fa761b2eaf6403db":[11,0,41,0,56,0],
 "struct_scenario_1_1_command_1_1_message_pairs.html#aefe07c0b9d9fdb25401ec426ebbf0c91":[11,0,41,0,56,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX59 =
 "struct_scenario_1_1_slot_presenter.html#ad03c19ac4999d616e51c8ffd772dedee":[11,0,41,249,6],
 "struct_scenario_1_1_slot_presenter.html#ae25d875d56bb0cc55ac887c7b128292e":[11,0,41,249,0],
 "struct_scenario_1_1_slot_presenter.html#aee26e4eff59278127d2fedbc77dcf123":[11,0,41,249,5],
-"struct_scenario_1_1_snapshot_action.html":[11,0,41,252],
-"struct_scenario_1_1_snapshot_action.html#a1d9107ce8d8e52f6d61419b0ef4931ed":[11,0,41,252,0],
-"struct_scenario_1_1_start_date_comparator.html":[11,0,41,255],
-"struct_scenario_1_1_start_date_comparator.html#ade4223699e9054a47a65dad2dacd0b1b":[11,0,41,255,1],
-"struct_scenario_1_1_start_date_comparator.html#aee089766bacda5bcc0b06d14d40d7779":[11,0,41,255,0],
-"struct_scenario_1_1_state_overlays.html":[11,0,41,260]
+"struct_scenario_1_1_snapshot_action.html":[11,0,41,252]
 };

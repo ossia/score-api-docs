@@ -1,5 +1,10 @@
 var NAVTREEINDEX49 =
 {
+"struct_control_1_1setup___impl0_1_1con__unvalidated.html#a218202e751d80c63a52ed2e74810784b":[11,0,3,35,0,0],
+"struct_control_1_1setup___impl0_1_1con__unvalidated.html#a50135261bf55c41720eb0994ec945aab":[11,0,3,35,0,2],
+"struct_control_1_1setup___impl0_1_1con__validated.html":[11,0,3,35,1],
+"struct_control_1_1setup___impl0_1_1con__validated.html#a22a0775fd28ea82dac68d66d94963652":[11,0,3,35,1,1],
+"struct_control_1_1setup___impl0_1_1con__validated.html#abc6fbc0e50d0ccea721ce238ca42c2b8":[11,0,3,35,1,2],
 "struct_control_1_1setup___impl0_1_1con__validated.html#adb31e1465214a4b4f70730cb074e0076":[11,0,3,35,1,0],
 "struct_control_1_1setup___impl1.html":[11,0,3,36],
 "struct_control_1_1setup___impl1.html#a2c6ed1774ecbe6f94504b5445cacc10d":[11,0,3,36,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX49 =
 "struct_device_1_1_protocol_factory_1_1_standard_categories.html":[11,0,7,17,0],
 "struct_edge.html":[11,0,95],
 "struct_edge.html#a2f37b72f044427961d6730943daf10e0":[11,0,95,1],
-"struct_edge.html#a38588d542cb6e14f655fe571fbef2dd0":[11,0,95,3],
-"struct_edge.html#a696bc0144ccab153a129db068529a464":[11,0,95,0],
-"struct_edge.html#a91d31e1053e989ed84f8763aac8c93a6":[11,0,95,2],
-"struct_empty_decoder.html":[11,0,96],
-"struct_empty_decoder.html#a2da091c8b3219456e1b455827ecfe0bf":[11,0,96,3],
-"struct_empty_decoder.html#a4261e4ac96e6bbbc45d440c4a49f4368":[11,0,96,4]
+"struct_edge.html#a38588d542cb6e14f655fe571fbef2dd0":[11,0,95,3]
 };

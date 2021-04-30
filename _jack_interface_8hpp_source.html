@@ -134,34 +134,35 @@ $(document).ready(function(){initNavTree('_jack_interface_8hpp_source.html','');
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  ~<a class="code" href="class_audio_1_1_jack_factory.html">JackFactory</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">bool</span> available() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  QString prettyName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> QObject::tr(<span class="stringliteral">&quot;JACK&quot;</span>); }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  std::unique_ptr&lt;ossia::audio_engine&gt;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  make_engine(<span class="keyword">const</span> <a class="code" href="class_audio_1_1_settings_1_1_model.html">Audio::Settings::Model</a>&amp; set, <span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp; ctx) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  std::shared_ptr&lt;ossia::jack_client&gt; acquireClient();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> setupSettingsWidget(</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      QWidget* w,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      QFormLayout* lay,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <a class="code" href="class_audio_1_1_settings_1_1_model.html">Audio::Settings::Model</a>&amp; m,</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <a class="code" href="class_audio_1_1_settings_1_1_view.html">Audio::Settings::View</a>&amp; v,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <a class="code" href="classscore_1_1_settings_command_dispatcher.html">score::SettingsCommandDispatcher</a>&amp; m_disp);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  QWidget* make_settings(</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <a class="code" href="class_audio_1_1_settings_1_1_model.html">Audio::Settings::Model</a>&amp; m,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <a class="code" href="class_audio_1_1_settings_1_1_view.html">Audio::Settings::View</a>&amp; v,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <a class="code" href="classscore_1_1_settings_command_dispatcher.html">score::SettingsCommandDispatcher</a>&amp; m_disp,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      QWidget* parent) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> transportStateChanged(ossia::transport_status st)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  E_SIGNAL(SCORE_PLUGIN_AUDIO_EXPORT, transportStateChanged, st);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  ossia::tick_transport_info currentTransportInfo;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  jack_transport_state_t m_prevState{};</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">void</span> initialize(<a class="code" href="class_audio_1_1_settings_1_1_model.html">Audio::Settings::Model</a>&amp; set, <span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp; ctx)<span class="keyword"> override </span>{ }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  QString prettyName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> QObject::tr(<span class="stringliteral">&quot;JACK&quot;</span>); }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  std::unique_ptr&lt;ossia::audio_engine&gt;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  make_engine(<span class="keyword">const</span> <a class="code" href="class_audio_1_1_settings_1_1_model.html">Audio::Settings::Model</a>&amp; set, <span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp; ctx) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  std::shared_ptr&lt;ossia::jack_client&gt; acquireClient();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> setupSettingsWidget(</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      QWidget* w,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      QFormLayout* lay,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <a class="code" href="class_audio_1_1_settings_1_1_model.html">Audio::Settings::Model</a>&amp; m,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <a class="code" href="class_audio_1_1_settings_1_1_view.html">Audio::Settings::View</a>&amp; v,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <a class="code" href="classscore_1_1_settings_command_dispatcher.html">score::SettingsCommandDispatcher</a>&amp; m_disp);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  QWidget* make_settings(</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <a class="code" href="class_audio_1_1_settings_1_1_model.html">Audio::Settings::Model</a>&amp; m,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <a class="code" href="class_audio_1_1_settings_1_1_view.html">Audio::Settings::View</a>&amp; v,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <a class="code" href="classscore_1_1_settings_command_dispatcher.html">score::SettingsCommandDispatcher</a>&amp; m_disp,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      QWidget* parent) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">void</span> transportStateChanged(ossia::transport_status st)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  E_SIGNAL(SCORE_PLUGIN_AUDIO_EXPORT, transportStateChanged, st);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  ossia::tick_transport_info currentTransportInfo;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  jack_transport_state_t m_prevState{};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_audio_1_1_jack_factory_html"><div class="ttname"><a href="class_audio_1_1_jack_factory.html">Audio::JackFactory</a></div><div class="ttdef"><b>Definition:</b> JackInterface.hpp:24</div></div>

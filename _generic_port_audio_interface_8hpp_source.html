@@ -120,26 +120,27 @@ $(document).ready(function(){initNavTree('_generic_port_audio_interface_8hpp_sou
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  ~<a class="code" href="class_audio_1_1_port_audio_factory.html">PortAudioFactory</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordtype">bool</span> available() <span class="keyword">const</span> noexcept <span class="keyword">override</span> { <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordtype">void</span> rescan();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  QString prettyName() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  std::unique_ptr&lt;ossia::audio_engine&gt;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  make_engine(<span class="keyword">const</span> <a class="code" href="class_audio_1_1_settings_1_1_model.html">Audio::Settings::Model</a>&amp; set, <span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp; ctx) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> setCardIn(QComboBox* combo, QString val);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> setCardOut(QComboBox* combo, QString val);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">void</span> updateSampleRates(QComboBox* rate, <span class="keyword">const</span> <a class="code" href="struct_audio_1_1_port_audio_card.html">PortAudioCard</a>&amp; input, <span class="keyword">const</span> <a class="code" href="struct_audio_1_1_port_audio_card.html">PortAudioCard</a>&amp; output);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  QWidget* make_settings(</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <a class="code" href="class_audio_1_1_settings_1_1_model.html">Audio::Settings::Model</a>&amp; m,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <a class="code" href="class_audio_1_1_settings_1_1_view.html">Audio::Settings::View</a>&amp; v,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <a class="code" href="classscore_1_1_settings_command_dispatcher.html">score::SettingsCommandDispatcher</a>&amp; m_disp,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      QWidget* parent) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordtype">void</span> initialize(<a class="code" href="class_audio_1_1_settings_1_1_model.html">Audio::Settings::Model</a>&amp; set, <span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp; ctx)<span class="keyword"> override </span>{ }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">void</span> rescan();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  QString prettyName() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  std::unique_ptr&lt;ossia::audio_engine&gt;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  make_engine(<span class="keyword">const</span> <a class="code" href="class_audio_1_1_settings_1_1_model.html">Audio::Settings::Model</a>&amp; set, <span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp; ctx) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> setCardIn(QComboBox* combo, QString val);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">void</span> setCardOut(QComboBox* combo, QString val);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> updateSampleRates(QComboBox* rate, <span class="keyword">const</span> <a class="code" href="struct_audio_1_1_port_audio_card.html">PortAudioCard</a>&amp; input, <span class="keyword">const</span> <a class="code" href="struct_audio_1_1_port_audio_card.html">PortAudioCard</a>&amp; output);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  QWidget* make_settings(</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <a class="code" href="class_audio_1_1_settings_1_1_model.html">Audio::Settings::Model</a>&amp; m,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <a class="code" href="class_audio_1_1_settings_1_1_view.html">Audio::Settings::View</a>&amp; v,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <a class="code" href="classscore_1_1_settings_command_dispatcher.html">score::SettingsCommandDispatcher</a>&amp; m_disp,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      QWidget* parent) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_audio_1_1_settings_1_1_view_html"><div class="ttname"><a href="class_audio_1_1_settings_1_1_view.html">Audio::Settings::View</a></div><div class="ttdef"><b>Definition:</b> score-plugin-audio/Audio/Settings/View.hpp:15</div></div>

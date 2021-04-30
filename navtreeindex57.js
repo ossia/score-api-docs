@@ -1,5 +1,10 @@
 var NAVTREEINDEX57 =
 {
+"struct_protocols_1_1_m_i_d_i_specific_settings.html#aee788304e939cdee1ebb1876af1d3aa3a7c147cda9e49590f6abe83d118b7353b":[11,0,36,32,0,1],
+"struct_protocols_1_1_m_i_d_i_specific_settings.html#aee788304e939cdee1ebb1876af1d3aa3aefeb369cccbd560588a756610865664c":[11,0,36,32,0,0],
+"struct_protocols_1_1_minuit_specific_settings.html":[11,0,36,36],
+"struct_protocols_1_1_minuit_specific_settings.html#a0cc7cf9446f9dd2f2b42e973c60cb50b":[11,0,36,36,2],
+"struct_protocols_1_1_minuit_specific_settings.html#a6f5cf61aeea82ab89aa291a557b14094":[11,0,36,36,1],
 "struct_protocols_1_1_minuit_specific_settings.html#ad150476803eb85a197987c7e2c36d334":[11,0,36,36,3],
 "struct_protocols_1_1_minuit_specific_settings.html#adfbb0ab883c705e80750d1cf9c9c91e3":[11,0,36,36,0],
 "struct_protocols_1_1_minuit_specific_settings.html#afd60fbe675c5103382d16b52ab3495b0":[11,0,36,36,4],
@@ -244,10 +249,5 @@ var NAVTREEINDEX57 =
 "struct_r_g_b0_decoder.html#adc5f45fdbc4fa99194a1c821f94ccb46":[11,0,341,5],
 "struct_r_g_b0_decoder.html#ae5a415fc06b6edadda239db9faa5f265":[11,0,341,4],
 "struct_recording_1_1_box.html":[11,0,37,2],
-"struct_recording_1_1_box.html#a721abe014117ce48acbc6449f0666db3":[11,0,37,2,0],
-"struct_recording_1_1_box.html#a8067c433c341792f1434368b960c7c6a":[11,0,37,2,1],
-"struct_recording_1_1_box.html#aab18663f6165896706ac1cf7c6827657":[11,0,37,2,2],
-"struct_recording_1_1_message_policy.html":[11,0,37,3],
-"struct_recording_1_1_message_policy.html#ab2f6b3b8b5ab68696b52c1160c76ffe0":[11,0,37,3,0],
-"struct_recording_1_1_parameter_policy.html":[11,0,37,5]
+"struct_recording_1_1_box.html#a721abe014117ce48acbc6449f0666db3":[11,0,37,2,0]
 };
