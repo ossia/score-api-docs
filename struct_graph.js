@@ -8,5 +8,6 @@ var struct_graph =
     [ "setupOutputs", "struct_graph.html#ab40684269af416fd6536c31007994018", null ],
     [ "setVSyncCallback", "struct_graph.html#ad0d8fc70a93d45cf0b6c581959dd53d3", null ],
     [ "edges", "struct_graph.html#a964549eb5fda12efd877e8741a624998", null ],
-    [ "nodes", "struct_graph.html#ac993850d94fdc19f5a9599d7bb800a95", null ]
+    [ "nodes", "struct_graph.html#ac993850d94fdc19f5a9599d7bb800a95", null ],
+    [ "outputs", "struct_graph.html#a8c8e7270c653181516a7701da30f87f7", null ]
 ];

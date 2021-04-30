@@ -125,12 +125,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a35b3e7c279834f7d1deae2e306327aeb"><td class="memItemLeft" align="right" valign="top"><a id="a35b3e7c279834f7d1deae2e306327aeb"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>VideoNode</b> (std::shared_ptr&lt; <a class="el" href="struct_video_1_1_video_interface.html">video_decoder</a> &gt; dec, std::optional&lt; double &gt; nativeTempo, QString f={})</td></tr>
 <tr class="separator:a35b3e7c279834f7d1deae2e306327aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06d232d5a071abbc6c44e08dd6b3615a"><td class="memItemLeft" align="right" valign="top"><a id="a06d232d5a071abbc6c44e08dd6b3615a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>initGpuDecoder</b> ()</td></tr>
-<tr class="separator:a06d232d5a071abbc6c44e08dd6b3615a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3d4710b66ad7380a71cc47879c542cc"><td class="memItemLeft" align="right" valign="top"><a id="ac3d4710b66ad7380a71cc47879c542cc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>checkFormat</b> (AVPixelFormat fmt, int w, int h)</td></tr>
-<tr class="separator:ac3d4710b66ad7380a71cc47879c542cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6281b3a5ae66a15716d3a85393cf0ff"><td class="memItemLeft" align="right" valign="top"><a id="aa6281b3a5ae66a15716d3a85393cf0ff"></a>
 const <a class="el" href="struct_mesh.html">Mesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>mesh</b> () const noexcept override</td></tr>
 <tr class="separator:aa6281b3a5ae66a15716d3a85393cf0ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,18 +145,6 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:abc6b183ce5a9e29088a6d39422a01ac3"><td class="memItemLeft" align="right" valign="top"><a id="abc6b183ce5a9e29088a6d39422a01ac3"></a>
 std::shared_ptr&lt; <a class="el" href="struct_video_1_1_video_interface.html">video_decoder</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>decoder</b></td></tr>
 <tr class="separator:abc6b183ce5a9e29088a6d39422a01ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7389564da5d480fe8870d591cfb6cd55"><td class="memItemLeft" align="right" valign="top"><a id="a7389564da5d480fe8870d591cfb6cd55"></a>
-std::unique_ptr&lt; <a class="el" href="struct_g_p_u_video_decoder.html">GPUVideoDecoder</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>gpu</b></td></tr>
-<tr class="separator:a7389564da5d480fe8870d591cfb6cd55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af56dd2b2f1cb96010f5b3e8769d384a3"><td class="memItemLeft" align="right" valign="top"><a id="af56dd2b2f1cb96010f5b3e8769d384a3"></a>
-AVPixelFormat&#160;</td><td class="memItemRight" valign="bottom"><b>current_format</b> = AVPixelFormat(-1)</td></tr>
-<tr class="separator:af56dd2b2f1cb96010f5b3e8769d384a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65df0322d12006457d9d64d9d150669e"><td class="memItemLeft" align="right" valign="top"><a id="a65df0322d12006457d9d64d9d150669e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>current_width</b> {}</td></tr>
-<tr class="separator:a65df0322d12006457d9d64d9d150669e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22ae95210687be1a80ed2844b8c410e1"><td class="memItemLeft" align="right" valign="top"><a id="a22ae95210687be1a80ed2844b8c410e1"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>current_height</b> {}</td></tr>
-<tr class="separator:a22ae95210687be1a80ed2844b8c410e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14335e87f1173dcfb7700cc9290b460b"><td class="memItemLeft" align="right" valign="top"><a id="a14335e87f1173dcfb7700cc9290b460b"></a>
 std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>seeked</b> {}</td></tr>
 <tr class="separator:a14335e87f1173dcfb7700cc9290b460b"><td class="memSeparator" colspan="2">&#160;</td></tr>

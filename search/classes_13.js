@@ -54,7 +54,7 @@ var searchData=
   ['timewidget_4741',['TimeWidget',['../class_execution_1_1_manual_clock_1_1_time_widget.html',1,'Execution::ManualClock']]],
   ['timings_4742',['timings',['../struct_scenario_1_1_musical_grid_1_1timings.html',1,'Scenario::MusicalGrid']]],
   ['titlebar_4743',['TitleBar',['../classscore_1_1_title_bar.html',1,'score']]],
-  ['toggle_4744',['Toggle',['../struct_process_1_1_toggle.html',1,'Process::Toggle'],['../struct_widget_factory_1_1_toggle.html',1,'WidgetFactory::Toggle'],['../struct_control_1_1_toggle.html',1,'Control::Toggle'],['../class_toggle.html',1,'Toggle']]],
+  ['toggle_4744',['Toggle',['../struct_widget_factory_1_1_toggle.html',1,'WidgetFactory::Toggle'],['../struct_process_1_1_toggle.html',1,'Process::Toggle'],['../struct_control_1_1_toggle.html',1,'Control::Toggle'],['../class_toggle.html',1,'Toggle']]],
   ['togglebutton_4745',['ToggleButton',['../structscore_1_1_toggle_button.html',1,'score']]],
   ['tokenrequestvaluetype_4746',['TokenRequestValueType',['../class_token_request_value_type.html',1,'']]],
   ['toolbar_4747',['Toolbar',['../classscore_1_1_toolbar.html',1,'score']]],

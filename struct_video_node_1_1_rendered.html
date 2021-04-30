@@ -115,9 +115,18 @@ Inheritance diagram for VideoNode::Rendered:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acc32df76d2c23f8e991842866628a6d0"><td class="memItemLeft" align="right" valign="top"><a id="acc32df76d2c23f8e991842866628a6d0"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Rendered</b> (const <a class="el" href="class_node_model.html">NodeModel</a> &amp;node) noexcept</td></tr>
-<tr class="separator:acc32df76d2c23f8e991842866628a6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afebcfa664839664fecec6f46e7ad34c7"><td class="memItemLeft" align="right" valign="top"><a id="afebcfa664839664fecec6f46e7ad34c7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Rendered</b> (const <a class="el" href="struct_video_node.html">VideoNode</a> &amp;node) noexcept</td></tr>
+<tr class="separator:afebcfa664839664fecec6f46e7ad34c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87856a3490e258a5d8d458be6dc83482"><td class="memItemLeft" align="right" valign="top"><a id="a87856a3490e258a5d8d458be6dc83482"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>createGpuDecoder</b> ()</td></tr>
+<tr class="separator:a87856a3490e258a5d8d458be6dc83482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9c071411b6b7e43d5a37282f17b2139"><td class="memItemLeft" align="right" valign="top"><a id="ac9c071411b6b7e43d5a37282f17b2139"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setupGpuDecoder</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;r)</td></tr>
+<tr class="separator:ac9c071411b6b7e43d5a37282f17b2139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c4e19c30216f0d070252d3165821ba3"><td class="memItemLeft" align="right" valign="top"><a id="a8c4e19c30216f0d070252d3165821ba3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>checkFormat</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;r, AVPixelFormat fmt, int w, int h)</td></tr>
+<tr class="separator:a8c4e19c30216f0d070252d3165821ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac520ff6c8e2ee297208a571a4cd164db"><td class="memItemLeft" align="right" valign="top"><a id="ac520ff6c8e2ee297208a571a4cd164db"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>customInit</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;renderer) override</td></tr>
 <tr class="separator:ac520ff6c8e2ee297208a571a4cd164db"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,12 +176,24 @@ QRhiShaderResourceBindings *&#160;</td><td class="memItemRight" valign="bottom">
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a2e53bf2226574fb44a9360ef9499c5ee"><td class="memItemLeft" align="right" valign="top"><a id="a2e53bf2226574fb44a9360ef9499c5ee"></a>
+std::unique_ptr&lt; <a class="el" href="struct_g_p_u_video_decoder.html">GPUVideoDecoder</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>gpu</b></td></tr>
+<tr class="separator:a2e53bf2226574fb44a9360ef9499c5ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a759f38d662b6cffabb3dd6d2639d8a29"><td class="memItemLeft" align="right" valign="top"><a id="a759f38d662b6cffabb3dd6d2639d8a29"></a>
+std::shared_ptr&lt; <a class="el" href="struct_video_1_1_video_interface.html">video_decoder</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>decoder</b></td></tr>
+<tr class="separator:a759f38d662b6cffabb3dd6d2639d8a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad476e1239d894c76d2cbb9856a6f7b30"><td class="memItemLeft" align="right" valign="top"><a id="ad476e1239d894c76d2cbb9856a6f7b30"></a>
 std::vector&lt; AVFrame * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>framesToFree</b></td></tr>
 <tr class="separator:ad476e1239d894c76d2cbb9856a6f7b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4113308716c6aedc90d8222c466e2d44"><td class="memItemLeft" align="right" valign="top"><a id="a4113308716c6aedc90d8222c466e2d44"></a>
 AVPixelFormat&#160;</td><td class="memItemRight" valign="bottom"><b>current_format</b> = AVPixelFormat(-1)</td></tr>
 <tr class="separator:a4113308716c6aedc90d8222c466e2d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d8af45a73ed8abb7c14718714a2d088"><td class="memItemLeft" align="right" valign="top"><a id="a9d8af45a73ed8abb7c14718714a2d088"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>current_width</b> {}</td></tr>
+<tr class="separator:a9d8af45a73ed8abb7c14718714a2d088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4184172138c91bda46e74bb7b87db02c"><td class="memItemLeft" align="right" valign="top"><a id="a4184172138c91bda46e74bb7b87db02c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>current_height</b> {}</td></tr>
+<tr class="separator:a4184172138c91bda46e74bb7b87db02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef8ab3b3f5b9aff03ad08e949a97d633"><td class="memItemLeft" align="right" valign="top"><a id="aef8ab3b3f5b9aff03ad08e949a97d633"></a>
 QElapsedTimer&#160;</td><td class="memItemRight" valign="bottom"><b>t</b></td></tr>
 <tr class="separator:aef8ab3b3f5b9aff03ad08e949a97d633"><td class="memSeparator" colspan="2">&#160;</td></tr>

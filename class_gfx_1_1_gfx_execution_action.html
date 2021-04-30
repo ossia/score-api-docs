@@ -95,6 +95,7 @@ $(document).ready(function(){initNavTree('class_gfx_1_1_gfx_execution_action.htm
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_gfx_1_1_gfx_execution_action-members.html">List of all members</a>  </div>
@@ -113,6 +114,15 @@ Inheritance diagram for Gfx::GfxExecutionAction:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a66eb0f88c06be1e55b922bde70793f1a"><td class="memItemLeft" align="right" valign="top"><a id="a66eb0f88c06be1e55b922bde70793f1a"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>edge</b> = std::pair&lt; port_index, port_index &gt;</td></tr>
+<tr class="separator:a66eb0f88c06be1e55b922bde70793f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1908afb7006b9f1bdb6d7ff41660e7d9"><td class="memItemLeft" align="right" valign="top"><a id="a1908afb7006b9f1bdb6d7ff41660e7d9"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>edge_queue</b> = moodycamel::ConcurrentQueue&lt; edge &gt;</td></tr>
+<tr class="separator:a1908afb7006b9f1bdb6d7ff41660e7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:abb935ecda079faf0985dda4f17797edc"><td class="memItemLeft" align="right" valign="top"><a id="abb935ecda079faf0985dda4f17797edc"></a>
@@ -138,12 +148,15 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ac609c15c7b406a0ecff4dcec59494be9"><td class="memItemLeft" align="right" valign="top"><a id="ac609c15c7b406a0ecff4dcec59494be9"></a>
 <a class="el" href="class_gfx_1_1gfx__window__context.html">gfx_window_context</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>ui</b> {}</td></tr>
 <tr class="separator:ac609c15c7b406a0ecff4dcec59494be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada3ebd8d11b6becb4a3950b7657eb4d9"><td class="memItemLeft" align="right" valign="top"><a id="ada3ebd8d11b6becb4a3950b7657eb4d9"></a>
-ossia::flat_set&lt; std::pair&lt; port_index, port_index &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>prev_edges</b></td></tr>
-<tr class="separator:ada3ebd8d11b6becb4a3950b7657eb4d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42d448afba5af060fd5ba6f42f9b937e"><td class="memItemLeft" align="right" valign="top"><a id="a42d448afba5af060fd5ba6f42f9b937e"></a>
-ossia::flat_set&lt; std::pair&lt; port_index, port_index &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>edges</b></td></tr>
-<tr class="separator:a42d448afba5af060fd5ba6f42f9b937e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30daa4c7c4a0e66d8bf5fbd1957b1976"><td class="memItemLeft" align="right" valign="top"><a id="a30daa4c7c4a0e66d8bf5fbd1957b1976"></a>
+std::vector&lt; edge &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>prev_edges</b></td></tr>
+<tr class="separator:a30daa4c7c4a0e66d8bf5fbd1957b1976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecafc045ddaddb5db438cb8fd0a1f865"><td class="memItemLeft" align="right" valign="top"><a id="aecafc045ddaddb5db438cb8fd0a1f865"></a>
+std::vector&lt; edge &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>edges_cache</b></td></tr>
+<tr class="separator:aecafc045ddaddb5db438cb8fd0a1f865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5197234019f84664e49b27dac7cb2b5f"><td class="memItemLeft" align="right" valign="top"><a id="a5197234019f84664e49b27dac7cb2b5f"></a>
+edge_queue&#160;</td><td class="memItemRight" valign="bottom"><b>incoming_edges</b></td></tr>
+<tr class="separator:a5197234019f84664e49b27dac7cb2b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_gfx_exec_context_8hpp_source.html">GfxExecContext.hpp</a></li>

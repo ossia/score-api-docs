@@ -31,7 +31,7 @@ var searchData=
   ['relation_4331',['Relation',['../struct_state_1_1_relation.html',1,'State']]],
   ['release_5ftag_4332',['Release_tag',['../structscore_1_1_modifier_1_1_release__tag.html',1,'score::Modifier']]],
   ['releaseonanything_5fslottransition_4333',['ReleaseOnAnything_SlotTransition',['../class_scenario_1_1_release_on_anything___slot_transition.html',1,'Scenario']]],
-  ['releaseonanything_5ftransition_4334',['ReleaseOnAnything_Transition',['../class_scenario_1_1_release_on_anything___transition.html',1,'Scenario::ReleaseOnAnything_Transition'],['../class_curve_1_1_release_on_anything___transition.html',1,'Curve::ReleaseOnAnything_Transition']]],
+  ['releaseonanything_5ftransition_4334',['ReleaseOnAnything_Transition',['../class_curve_1_1_release_on_anything___transition.html',1,'Curve::ReleaseOnAnything_Transition'],['../class_scenario_1_1_release_on_anything___transition.html',1,'Scenario::ReleaseOnAnything_Transition']]],
   ['releaseonslothandle_5fevent_4335',['ReleaseOnSlotHandle_Event',['../struct_scenario_1_1_release_on_slot_handle___event.html',1,'Scenario']]],
   ['releaseonslothandle_5ftransition_4336',['ReleaseOnSlotHandle_Transition',['../class_scenario_1_1_release_on_slot_handle___transition.html',1,'Scenario']]],
   ['reloadwholedevice_4337',['ReloadWholeDevice',['../class_explorer_1_1_command_1_1_reload_whole_device.html',1,'Explorer::Command']]],
@@ -78,7 +78,7 @@ var searchData=
   ['resizeslotverticallytest_4378',['ResizeSlotVerticallyTest',['../class_resize_slot_vertically_test.html',1,'']]],
   ['restorabledocument_4379',['RestorableDocument',['../structscore_1_1_restorable_document.html',1,'score']]],
   ['rgb0decoder_4380',['RGB0Decoder',['../struct_r_g_b0_decoder.html',1,'']]],
-  ['rgbaedit_4381',['RGBAEdit',['../struct_widget_factory_1_1_r_g_b_a_edit.html',1,'WidgetFactory::RGBAEdit'],['../struct_control_1_1_r_g_b_a_edit.html',1,'Control::RGBAEdit']]],
+  ['rgbaedit_4381',['RGBAEdit',['../struct_control_1_1_r_g_b_a_edit.html',1,'Control::RGBAEdit'],['../struct_widget_factory_1_1_r_g_b_a_edit.html',1,'WidgetFactory::RGBAEdit']]],
   ['rightbraceview_4382',['RightBraceView',['../class_scenario_1_1_right_brace_view.html',1,'Scenario']]],
   ['rightclickimpl_4383',['RightClickImpl',['../structscore_1_1_right_click_impl.html',1,'score']]],
   ['rmsdata_4384',['RMSData',['../struct_media_1_1_r_m_s_data.html',1,'Media']]]

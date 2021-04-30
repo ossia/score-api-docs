@@ -1,5 +1,9 @@
 var NAVTREEINDEX25 =
 {
+"class_protocols_1_1_o_s_c_device.html#a1168805b7e65b2aa3e5e53ad7678e21b":[11,0,36,37,0],
+"class_protocols_1_1_o_s_c_device.html#a1aa76db4faf9cfdccec33d8ac9fc0bfe":[11,0,36,37,1],
+"class_protocols_1_1_o_s_c_device.html#a2bef200279f30cbca38c5c3622c56fa8":[11,0,36,37,3],
+"class_protocols_1_1_o_s_c_device.html#a301b7593ce1c20d7dfe99640e6a94932":[11,0,36,37,4],
 "class_protocols_1_1_o_s_c_device.html#a7258af10e4efb66fd06f8fc378fe09e8":[11,0,36,37,2],
 "class_protocols_1_1_o_s_c_library_handler.html":[11,0,36,38],
 "class_protocols_1_1_o_s_c_protocol_factory.html":[11,0,36,39],
@@ -245,9 +249,5 @@ var NAVTREEINDEX25 =
 "class_safe_q_application.html#a2ad1991a81471f295b51403aca58e701":[11,0,342,4],
 "class_safe_q_application.html#a75979ddcfa75b02e2750491b1c50eae2":[11,0,342,5],
 "class_safe_q_application.html#a87c977b7ada3e2f95b8c8c022f8dbe80":[11,0,342,1],
-"class_safe_q_application.html#a980ef807c26be5979b0ca0ca60d1db95":[11,0,342,2],
-"class_safe_q_application.html#ab5aae30d62b4fd08688fe78fb87553d9":[11,0,342,3],
-"class_safe_q_application.html#af5f09f35352f3580e3e6f4c70456991d":[11,0,342,0],
-"class_scenario_1_1_add_process_dialog.html":[11,0,41,2],
-"class_scenario_1_1_add_process_dialog.html#a0a879cc9e9315dc7cb8604c1b23f580e":[11,0,41,2,3]
+"class_safe_q_application.html#a980ef807c26be5979b0ca0ca60d1db95":[11,0,342,2]
 };

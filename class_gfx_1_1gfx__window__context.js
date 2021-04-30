@@ -13,6 +13,7 @@ var class_gfx_1_1gfx__window__context =
     [ "edges", "class_gfx_1_1gfx__window__context.html#a4dd3518434bdc4cfa6ddce805781ea79", null ],
     [ "edges_changed", "class_gfx_1_1gfx__window__context.html#a434dc9e9e37f24fb642fd2f45ffce3d3", null ],
     [ "edges_lock", "class_gfx_1_1gfx__window__context.html#ab055e325b43a0995e241611340d7fc54", null ],
+    [ "m_timer", "class_gfx_1_1gfx__window__context.html#a776a743fb9809e09714980a0f741f92b", null ],
     [ "new_edges", "class_gfx_1_1gfx__window__context.html#af54fdae067cb76b65f8941ba2781dfa7", null ],
     [ "tick_messages", "class_gfx_1_1gfx__window__context.html#a208dc2b56d1e02f6b3ae3949424e8110", null ]
 ];

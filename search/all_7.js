@@ -55,7 +55,7 @@ var searchData=
   ['hostapp_816',['HostApp',['../structvst3_1_1_host_app.html',1,'vst3']]],
   ['hostcontext_817',['HostContext',['../struct_l_v2_1_1_host_context.html',1,'LV2']]],
   ['hseparator_818',['HSeparator',['../classscore_1_1_h_separator.html',1,'score']]],
-  ['hsvslider_819',['HSVSlider',['../struct_process_1_1_h_s_v_slider.html',1,'Process::HSVSlider'],['../struct_widget_factory_1_1_h_s_v_slider.html',1,'WidgetFactory::HSVSlider']]],
+  ['hsvslider_819',['HSVSlider',['../struct_widget_factory_1_1_h_s_v_slider.html',1,'WidgetFactory::HSVSlider'],['../struct_process_1_1_h_s_v_slider.html',1,'Process::HSVSlider']]],
   ['httpdevice_820',['HTTPDevice',['../class_protocols_1_1_h_t_t_p_device.html',1,'Protocols']]],
   ['httpprotocolfactory_821',['HTTPProtocolFactory',['../class_protocols_1_1_h_t_t_p_protocol_factory.html',1,'Protocols']]],
   ['httpprotocolsettingswidget_822',['HTTPProtocolSettingsWidget',['../class_protocols_1_1_h_t_t_p_protocol_settings_widget.html',1,'Protocols']]],
