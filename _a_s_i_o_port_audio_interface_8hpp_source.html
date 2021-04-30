@@ -162,114 +162,115 @@ $(document).ready(function(){initNavTree('_a_s_i_o_port_audio_interface_8hpp_sou
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;              dev_idx,</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;              dev-&gt;maxInputChannels,</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;              dev-&gt;maxOutputChannels,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;              hostapi-&gt;type});</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  QString prettyName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> QObject::tr(<span class="stringliteral">&quot;ASIO&quot;</span>); }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  std::unique_ptr&lt;ossia::audio_engine&gt;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  make_engine(<span class="keyword">const</span> <a class="code" href="class_audio_1_1_settings_1_1_model.html">Audio::Settings::Model</a>&amp; set, <span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp; ctx)<span class="keyword"> override</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span> std::make_unique&lt;ossia::portaudio_engine&gt;(</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="stringliteral">&quot;ossia score&quot;</span>,</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        set.getCardIn().toStdString(),</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        set.getCardOut().toStdString(),</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        set.getDefaultIn(),</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        set.getDefaultOut(),</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        set.getRate(),</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        set.getBufferSize(),</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        paASIO);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">void</span> setCard(QComboBox* combo, QString val)</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">auto</span> dev_it</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        = ossia::find_if(devices, [&amp;](<span class="keyword">const</span> PortAudioCard&amp; d) { <span class="keywordflow">return</span> d.raw_name == val; });</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">if</span> (dev_it != devices.end())</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      combo-&gt;setCurrentIndex(dev_it-&gt;out_index);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  }</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  QWidget* make_settings(</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <a class="code" href="class_audio_1_1_settings_1_1_model.html">Audio::Settings::Model</a>&amp; m,</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <a class="code" href="class_audio_1_1_settings_1_1_view.html">Audio::Settings::View</a>&amp; v,</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      <a class="code" href="classscore_1_1_settings_command_dispatcher.html">score::SettingsCommandDispatcher</a>&amp; m_disp,</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      QWidget* parent)<span class="keyword"> override</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">auto</span> w = <span class="keyword">new</span> QWidget{parent};</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">auto</span> lay = <span class="keyword">new</span> QFormLayout{w};</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keyword">auto</span> card_list = <span class="keyword">new</span> QComboBox{w};</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keyword">auto</span> show_ui = <span class="keyword">new</span> QPushButton{tr(<span class="stringliteral">&quot;Show Control Panel&quot;</span>), w};</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">// Disabled case</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    card_list-&gt;addItem(devices.front().pretty_name, 0);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    devices.front().out_index = 0;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">// Normal devices</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">for</span> (std::size_t i = 1; i &lt; devices.size(); i++)</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    {</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <span class="keyword">auto</span>&amp; card = devices[i];</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      card_list-&gt;addItem(card.pretty_name, (<span class="keywordtype">int</span>)i);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      card.out_index = card_list-&gt;count() - 1;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">using</span> Model = <a class="code" href="class_audio_1_1_settings_1_1_model.html">Audio::Settings::Model</a>;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    {</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      lay-&gt;addRow(QObject::tr(<span class="stringliteral">&quot;Device&quot;</span>), card_list);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      <span class="keyword">auto</span> update_dev = [=, &amp;m, &amp;m_disp](<span class="keyword">const</span> PortAudioCard&amp; dev) {</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">if</span> (dev.raw_name != m.getCardOut())</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;          m_disp.submitDeferredCommand&lt;Audio::Settings::SetModelCardIn&gt;(m, dev.raw_name);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;          m_disp.submitDeferredCommand&lt;Audio::Settings::SetModelCardOut&gt;(m, dev.raw_name);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;          m_disp.submitDeferredCommand&lt;Audio::Settings::SetModelDefaultIn&gt;(m, dev.inputChan);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;          m_disp.submitDeferredCommand&lt;Audio::Settings::SetModelDefaultOut&gt;(m, dev.outputChan);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        }</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      };</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;      QObject::connect(</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;          card_list, SignalUtils::QComboBox_currentIndexChanged_int(), &amp;v, [=](<span class="keywordtype">int</span> i) {</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            <span class="keyword">auto</span>&amp; device = devices[card_list-&gt;itemData(i).toInt()];</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            update_dev(device);</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;          });</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;      <span class="keywordflow">if</span> (m.getCardOut().isEmpty())</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;      {</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keywordflow">if</span> (!devices.empty())</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        {</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;          update_dev(devices.front());</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        }</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;      }</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      {</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        setCard(card_list, m.getCardOut());</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      }</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    }</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    {</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      lay-&gt;addWidget(show_ui);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;      connect(show_ui, &amp;QPushButton::clicked, <span class="keyword">this</span>, [=] {</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keyword">auto</span>&amp; dev = devices[card_list-&gt;itemData(card_list-&gt;currentIndex()).toInt()];</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        PortAudioScope portaudio;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        PaAsio_ShowControlPanel(dev.dev_idx, GetActiveWindow());</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      });</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    }</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    addBufferSizeWidget(*w, m, v);</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    addSampleRateWidget(*w, m, v);</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    con(m, &amp;Model::changed, w, [=, &amp;m] { setCard(card_list, m.getCardOut()); });</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordflow">return</span> w;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  }</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;};</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;              hostapi-&gt;type,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;              dev-&gt;defaultSampleRate});</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  QString prettyName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> QObject::tr(<span class="stringliteral">&quot;ASIO&quot;</span>); }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  std::unique_ptr&lt;ossia::audio_engine&gt;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  make_engine(<span class="keyword">const</span> <a class="code" href="class_audio_1_1_settings_1_1_model.html">Audio::Settings::Model</a>&amp; set, <span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp; ctx)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> std::make_unique&lt;ossia::portaudio_engine&gt;(</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="stringliteral">&quot;ossia score&quot;</span>,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        set.getCardIn().toStdString(),</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        set.getCardOut().toStdString(),</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        set.getDefaultIn(),</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        set.getDefaultOut(),</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        set.getRate(),</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        set.getBufferSize(),</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        paASIO);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">void</span> setCard(QComboBox* combo, QString val)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">auto</span> dev_it</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        = ossia::find_if(devices, [&amp;](<span class="keyword">const</span> PortAudioCard&amp; d) { <span class="keywordflow">return</span> d.raw_name == val; });</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">if</span> (dev_it != devices.end())</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      combo-&gt;setCurrentIndex(dev_it-&gt;out_index);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  QWidget* make_settings(</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <a class="code" href="class_audio_1_1_settings_1_1_model.html">Audio::Settings::Model</a>&amp; m,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      <a class="code" href="class_audio_1_1_settings_1_1_view.html">Audio::Settings::View</a>&amp; v,</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <a class="code" href="classscore_1_1_settings_command_dispatcher.html">score::SettingsCommandDispatcher</a>&amp; m_disp,</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      QWidget* parent)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">auto</span> w = <span class="keyword">new</span> QWidget{parent};</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">auto</span> lay = <span class="keyword">new</span> QFormLayout{w};</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keyword">auto</span> card_list = <span class="keyword">new</span> QComboBox{w};</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keyword">auto</span> show_ui = <span class="keyword">new</span> QPushButton{tr(<span class="stringliteral">&quot;Show Control Panel&quot;</span>), w};</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">// Disabled case</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    card_list-&gt;addItem(devices.front().pretty_name, 0);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    devices.front().out_index = 0;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="comment">// Normal devices</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">for</span> (std::size_t i = 1; i &lt; devices.size(); i++)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      <span class="keyword">auto</span>&amp; card = devices[i];</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      card_list-&gt;addItem(card.pretty_name, (<span class="keywordtype">int</span>)i);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      card.out_index = card_list-&gt;count() - 1;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">using</span> Model = <a class="code" href="class_audio_1_1_settings_1_1_model.html">Audio::Settings::Model</a>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      lay-&gt;addRow(QObject::tr(<span class="stringliteral">&quot;Device&quot;</span>), card_list);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      <span class="keyword">auto</span> update_dev = [=, &amp;m, &amp;m_disp](<span class="keyword">const</span> PortAudioCard&amp; dev) {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">if</span> (dev.raw_name != m.getCardOut())</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;          m_disp.submitDeferredCommand&lt;Audio::Settings::SetModelCardIn&gt;(m, dev.raw_name);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;          m_disp.submitDeferredCommand&lt;Audio::Settings::SetModelCardOut&gt;(m, dev.raw_name);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;          m_disp.submitDeferredCommand&lt;Audio::Settings::SetModelDefaultIn&gt;(m, dev.inputChan);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;          m_disp.submitDeferredCommand&lt;Audio::Settings::SetModelDefaultOut&gt;(m, dev.outputChan);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;      };</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;      QObject::connect(</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;          card_list, SignalUtils::QComboBox_currentIndexChanged_int(), &amp;v, [=](<span class="keywordtype">int</span> i) {</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <span class="keyword">auto</span>&amp; device = devices[card_list-&gt;itemData(i).toInt()];</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            update_dev(device);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;          });</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;      <span class="keywordflow">if</span> (m.getCardOut().isEmpty())</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;      {</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">if</span> (!devices.empty())</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;          update_dev(devices.front());</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      }</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        setCard(card_list, m.getCardOut());</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      }</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    }</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    {</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;      lay-&gt;addWidget(show_ui);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;      connect(show_ui, &amp;QPushButton::clicked, <span class="keyword">this</span>, [=] {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keyword">auto</span>&amp; dev = devices[card_list-&gt;itemData(card_list-&gt;currentIndex()).toInt()];</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        PortAudioScope portaudio;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        PaAsio_ShowControlPanel(dev.dev_idx, GetActiveWindow());</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      });</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    addBufferSizeWidget(*w, m, v);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    addSampleRateWidget(*w, m, v);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    con(m, &amp;Model::changed, w, [=, &amp;m] { setCard(card_list, m.getCardOut()); });</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">return</span> w;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  }</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;};</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_audio_1_1_settings_1_1_view_html"><div class="ttname"><a href="class_audio_1_1_settings_1_1_view.html">Audio::Settings::View</a></div><div class="ttdef"><b>Definition:</b> score-plugin-audio/Audio/Settings/View.hpp:15</div></div>
