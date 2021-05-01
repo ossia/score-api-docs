@@ -1,6 +1,5 @@
 var class_spline3_d_1_1_change_spline =
 [
-    [ "ChangeSpline", "class_spline3_d_1_1_change_spline.html#ac6371d26094d53e4fa7ee75de043f6b9", null ],
     [ "deserializeImpl", "class_spline3_d_1_1_change_spline.html#a709259d6f255b82d869aa1af91fef254", null ],
     [ "redo", "class_spline3_d_1_1_change_spline.html#a575fba9c71a75af97875289f069babc2", null ],
     [ "serializeImpl", "class_spline3_d_1_1_change_spline.html#a40156ff97a5664f36083aa5ece2f9b0f", null ],

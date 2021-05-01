@@ -99,52 +99,52 @@ $(document).ready(function(){initNavTree('_gfx_context_8hpp_source.html',''); in
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;ossia/network/value/value.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;ossia/gfx/port_index.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;ossia/dataflow/token_request.hpp&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;ossia/dataflow/nodes/media.hpp&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/hash_map.hpp&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/flat_set.hpp&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;Gfx/Graph/node.hpp&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Gfx/Graph/node.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;ossia/dataflow/nodes/media.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;ossia/dataflow/token_request.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/flat_set.hpp&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/hash_map.hpp&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;ossia/gfx/port_index.hpp&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;ossia/network/value/value.hpp&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;concurrentqueue.h&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;score_plugin_gfx_export.h&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="code" href="struct_graph.html">Graph</a>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore.html">score</a></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span>DocumentContext;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>Gfx</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">using</span> port_index = ossia::gfx::port_index;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">using</span> gfx_input = std::variant&lt;ossia::value, ossia::audio_vector&gt;;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="struct_gfx_1_1gfx__message.html">   26</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_gfx_1_1gfx__message.html">gfx_message</a></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  int32_t node_id{};</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  ossia::token_request token{};</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  std::vector&lt;std::vector&lt;gfx_input&gt;&gt; inputs;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="struct_gfx_1_1gfx__view__node.html">   35</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_gfx_1_1gfx__view__node.html">gfx_view_node</a></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  std::unique_ptr&lt;score::gfx::ProcessNode&gt; impl;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span> process(<span class="keyword">const</span> ossia::token_request&amp; tk);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">void</span> process(int32_t port, <span class="keyword">const</span> ossia::value&amp; v);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> process(int32_t port, <span class="keyword">const</span> ossia::audio_vector&amp; v);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">class </span><a class="code" href="class_gfx_1_1gfx__exec__node.html">gfx_exec_node</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">class </span><a class="code" href="class_gfx_1_1_gfx_execution_action.html">GfxExecutionAction</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_gfx_1_1gfx__window__context.html">   46</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="class_gfx_1_1gfx__window__context.html">gfx_window_context</a> : <span class="keyword">public</span> QObject</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_gfx_1_1gfx__exec__node.html">gfx_exec_node</a>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_gfx_1_1_gfx_execution_action.html">GfxExecutionAction</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;score_plugin_gfx_export.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="code" href="struct_graph.html">Graph</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore.html">score</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span>DocumentContext;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span>Gfx</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">using</span> port_index = ossia::gfx::port_index;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">using</span> gfx_input = std::variant&lt;ossia::value, ossia::audio_vector&gt;;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="struct_gfx_1_1gfx__message.html">   25</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_gfx_1_1gfx__message.html">gfx_message</a></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  int32_t node_id{};</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  ossia::token_request token{};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  std::vector&lt;std::vector&lt;gfx_input&gt;&gt; inputs;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="struct_gfx_1_1gfx__view__node.html">   34</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_gfx_1_1gfx__view__node.html">gfx_view_node</a></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  std::unique_ptr&lt;score::gfx::ProcessNode&gt; impl;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">void</span> process(<span class="keyword">const</span> ossia::token_request&amp; tk);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span> process(int32_t port, <span class="keyword">const</span> ossia::value&amp; v);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">void</span> process(int32_t port, <span class="keyword">const</span> ossia::audio_vector&amp; v);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">class </span><a class="code" href="class_gfx_1_1gfx__exec__node.html">gfx_exec_node</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">class </span><a class="code" href="class_gfx_1_1_gfx_execution_action.html">GfxExecutionAction</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_gfx_1_1gfx__window__context.html">   45</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="class_gfx_1_1gfx__window__context.html">gfx_window_context</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_gfx_1_1gfx__exec__node.html">gfx_exec_node</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_gfx_1_1_gfx_execution_action.html">GfxExecutionAction</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_gfx_1_1gfx__window__context.html">gfx_window_context</a>(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  ~<a class="code" href="class_gfx_1_1gfx__window__context.html">gfx_window_context</a>();</div>
@@ -183,14 +183,14 @@ $(document).ready(function(){initNavTree('_gfx_context_8hpp_source.html',''); in
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_gfx_1_1gfx__window__context_html"><div class="ttname"><a href="class_gfx_1_1gfx__window__context.html">Gfx::gfx_window_context</a></div><div class="ttdef"><b>Definition:</b> GfxContext.hpp:46</div></div>
+<div class="ttc" id="aclass_gfx_1_1gfx__window__context_html"><div class="ttname"><a href="class_gfx_1_1gfx__window__context.html">Gfx::gfx_window_context</a></div><div class="ttdef"><b>Definition:</b> GfxContext.hpp:45</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:15</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:65</div></div>
-<div class="ttc" id="aclass_gfx_1_1_gfx_execution_action_html"><div class="ttname"><a href="class_gfx_1_1_gfx_execution_action.html">Gfx::GfxExecutionAction</a></div><div class="ttdef"><b>Definition:</b> GfxExecContext.hpp:11</div></div>
-<div class="ttc" id="astruct_gfx_1_1gfx__message_html"><div class="ttname"><a href="struct_gfx_1_1gfx__message.html">Gfx::gfx_message</a></div><div class="ttdef"><b>Definition:</b> GfxContext.hpp:26</div></div>
-<div class="ttc" id="astruct_gfx_1_1gfx__view__node_html"><div class="ttname"><a href="struct_gfx_1_1gfx__view__node.html">Gfx::gfx_view_node</a></div><div class="ttdef"><b>Definition:</b> GfxContext.hpp:35</div></div>
-<div class="ttc" id="astruct_graph_html"><div class="ttname"><a href="struct_graph.html">Graph</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/graph.hpp:9</div></div>
-<div class="ttc" id="aclass_gfx_1_1gfx__exec__node_html"><div class="ttname"><a href="class_gfx_1_1gfx__exec__node.html">Gfx::gfx_exec_node</a></div><div class="ttdef"><b>Definition:</b> GfxExec.hpp:28</div></div>
+<div class="ttc" id="aclass_gfx_1_1_gfx_execution_action_html"><div class="ttname"><a href="class_gfx_1_1_gfx_execution_action.html">Gfx::GfxExecutionAction</a></div><div class="ttdef"><b>Definition:</b> GfxExecContext.hpp:12</div></div>
+<div class="ttc" id="astruct_gfx_1_1gfx__message_html"><div class="ttname"><a href="struct_gfx_1_1gfx__message.html">Gfx::gfx_message</a></div><div class="ttdef"><b>Definition:</b> GfxContext.hpp:25</div></div>
+<div class="ttc" id="astruct_gfx_1_1gfx__view__node_html"><div class="ttname"><a href="struct_gfx_1_1gfx__view__node.html">Gfx::gfx_view_node</a></div><div class="ttdef"><b>Definition:</b> GfxContext.hpp:34</div></div>
+<div class="ttc" id="astruct_graph_html"><div class="ttname"><a href="struct_graph.html">Graph</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/graph.hpp:10</div></div>
+<div class="ttc" id="aclass_gfx_1_1gfx__exec__node_html"><div class="ttname"><a href="class_gfx_1_1gfx__exec__node.html">Gfx::gfx_exec_node</a></div><div class="ttdef"><b>Definition:</b> GfxExec.hpp:30</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

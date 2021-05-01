@@ -107,28 +107,29 @@ $(document).ready(function(){initNavTree('score__plugin__protocols_8hpp_source.h
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;score/plugins/qt_interfaces/GUIApplicationPlugin_QtInterface.hpp&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;score/plugins/qt_interfaces/PluginRequirements_QtInterface.hpp&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classscore__plugin__protocols.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classscore__plugin__protocols.html">score_plugin_protocols</a> final : <span class="keyword">public</span> <a class="code" href="classscore_1_1_factory_interface___qt_interface.html">score::FactoryInterface_QtInterface</a>,</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                                     <span class="keyword">public</span> <a class="code" href="classscore_1_1_plugin___qt_interface.html">score::Plugin_QtInterface</a></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  SCORE_PLUGIN_METADATA(1, <span class="stringliteral">&quot;4fec0133-c8c4-4e5a-b211-3d007d98464b&quot;</span>)</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <a class="code" href="classscore__plugin__protocols.html">score_plugin_protocols</a>();</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classscore__plugin__protocols.html">score_plugin_protocols</a>();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="comment">// Contains the OSC, MIDI, Minuit factories</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  std::vector&lt;std::unique_ptr&lt;score::InterfaceBase&gt;&gt; factories(</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp;,</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_uuid_key.html">score::InterfaceKey</a>&amp; factoryName) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  std::vector&lt;score::PluginKey&gt; required() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classscore__plugin__protocols.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classscore__plugin__protocols.html">score_plugin_protocols</a> final</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classscore_1_1_factory_interface___qt_interface.html">score::FactoryInterface_QtInterface</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    , <span class="keyword">public</span> <a class="code" href="classscore_1_1_plugin___qt_interface.html">score::Plugin_QtInterface</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  SCORE_PLUGIN_METADATA(1, <span class="stringliteral">&quot;4fec0133-c8c4-4e5a-b211-3d007d98464b&quot;</span>)</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <a class="code" href="classscore__plugin__protocols.html">score_plugin_protocols</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classscore__plugin__protocols.html">score_plugin_protocols</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="comment">// Contains the OSC, MIDI, Minuit factories</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  std::vector&lt;std::unique_ptr&lt;score::InterfaceBase&gt;&gt; factories(</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp;,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_uuid_key.html">score::InterfaceKey</a>&amp; factoryName) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  std::vector&lt;score::PluginKey&gt; required() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassscore__plugin__protocols_html"><div class="ttname"><a href="classscore__plugin__protocols.html">score_plugin_protocols</a></div><div class="ttdef"><b>Definition:</b> score_plugin_protocols.hpp:10</div></div>
 <div class="ttc" id="aclassscore_1_1_factory_interface___qt_interface_html"><div class="ttname"><a href="classscore_1_1_factory_interface___qt_interface.html">score::FactoryInterface_QtInterface</a></div><div class="ttdef"><b>Definition:</b> FactoryInterface_QtInterface.hpp:18</div></div>
-<div class="ttc" id="aclass_uuid_key_html"><div class="ttname"><a href="class_uuid_key.html">UuidKey</a></div><div class="ttdef"><b>Definition:</b> UuidKey.hpp:362</div></div>
-<div class="ttc" id="aclassscore_1_1_plugin___qt_interface_html"><div class="ttname"><a href="classscore_1_1_plugin___qt_interface.html">score::Plugin_QtInterface</a></div><div class="ttdef"><b>Definition:</b> PluginRequirements_QtInterface.hpp:16</div></div>
+<div class="ttc" id="aclass_uuid_key_html"><div class="ttname"><a href="class_uuid_key.html">UuidKey</a></div><div class="ttdef"><b>Definition:</b> UuidKey.hpp:370</div></div>
+<div class="ttc" id="aclassscore_1_1_plugin___qt_interface_html"><div class="ttname"><a href="classscore_1_1_plugin___qt_interface.html">score::Plugin_QtInterface</a></div><div class="ttdef"><b>Definition:</b> PluginRequirements_QtInterface.hpp:17</div></div>
 <div class="ttc" id="astructscore_1_1_application_context_html"><div class="ttname"><a href="structscore_1_1_application_context.html">score::ApplicationContext</a></div><div class="ttdoc">Used to access all the application-wide state and structures.</div><div class="ttdef"><b>Definition:</b> ApplicationContext.hpp:23</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

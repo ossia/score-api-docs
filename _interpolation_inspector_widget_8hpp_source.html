@@ -133,54 +133,55 @@ $(document).ready(function(){initNavTree('_interpolation_inspector_widget_8hpp_s
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_interpolation_1_1_inspector_factory.html">   35</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_interpolation_1_1_inspector_factory.html">InspectorFactory</a> final</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    : <span class="keyword">public</span> <a class="code" href="class_process_1_1_inspector_widget_delegate_factory___t.html">Process::InspectorWidgetDelegateFactory_T</a>&lt;ProcessModel, InspectorWidget&gt;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;5159eabc-cd5c-4a00-a790-bd58936aace0&quot;</span>)</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_interpolation_1_1_state_inspector_widget.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_interpolation_1_1_state_inspector_widget.html">StateInspectorWidget</a> final : <span class="keyword">public</span> <a class="code" href="class_inspector_1_1_inspector_widget_base.html">Inspector::InspectorWidgetBase</a></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_interpolation_1_1_state_inspector_widget.html">StateInspectorWidget</a>(</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keyword">const</span> ProcessState&amp; <span class="keywordtype">object</span>,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; context,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> on_stateChanged();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">const</span> ProcessState&amp; m_state;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  QLabel* m_label{};</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_interpolation_1_1_state_inspector_factory.html">   56</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_interpolation_1_1_state_inspector_factory.html">StateInspectorFactory</a> final : <span class="keyword">public</span> <a class="code" href="class_inspector_1_1_inspector_widget_factory.html">Inspector::InspectorWidgetFactory</a></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;ea035d49-1897-4413-94e4-e5d6c90b21e6&quot;</span>)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="class_interpolation_1_1_state_inspector_factory.html">StateInspectorFactory</a>();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  QWidget* <a class="code" href="class_interpolation_1_1_state_inspector_factory.html#a87e56b47ce6679c1d216299993caf701">make</a>(</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keyword">const</span> InspectedObjects&amp; sourceElements,</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; doc,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      QWidget* parent) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="structmatches.html">matches</a>(<span class="keyword">const</span> InspectedObjects&amp; objects) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    : <span class="keyword">public</span> <a class="code" href="namespace_process.html">Process</a>::</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;          InspectorWidgetDelegateFactory_T&lt;ProcessModel, InspectorWidget&gt;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;5159eabc-cd5c-4a00-a790-bd58936aace0&quot;</span>)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_interpolation_1_1_state_inspector_widget.html">   42</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_interpolation_1_1_state_inspector_widget.html">StateInspectorWidget</a> final : <span class="keyword">public</span> <a class="code" href="class_inspector_1_1_inspector_widget_base.html">Inspector::InspectorWidgetBase</a></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_interpolation_1_1_state_inspector_widget.html">StateInspectorWidget</a>(</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keyword">const</span> ProcessState&amp; <span class="keywordtype">object</span>,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; context,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> on_stateChanged();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">const</span> ProcessState&amp; m_state;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  QLabel* m_label{};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_interpolation_1_1_state_inspector_factory.html">   57</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_interpolation_1_1_state_inspector_factory.html">StateInspectorFactory</a> final : <span class="keyword">public</span> <a class="code" href="class_inspector_1_1_inspector_widget_factory.html">Inspector::InspectorWidgetFactory</a></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;ea035d49-1897-4413-94e4-e5d6c90b21e6&quot;</span>)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="class_interpolation_1_1_state_inspector_factory.html">StateInspectorFactory</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  QWidget* <a class="code" href="class_interpolation_1_1_state_inspector_factory.html#a87e56b47ce6679c1d216299993caf701">make</a>(</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="keyword">const</span> InspectedObjects&amp; sourceElements,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; doc,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      QWidget* parent) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="structmatches.html">matches</a>(<span class="keyword">const</span> InspectedObjects&amp; objects) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_interpolation_1_1_state_inspector_factory_html"><div class="ttname"><a href="class_interpolation_1_1_state_inspector_factory.html">Interpolation::StateInspectorFactory</a></div><div class="ttdef"><b>Definition:</b> InterpolationInspectorWidget.hpp:56</div></div>
+<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1366</div></div>
+<div class="ttc" id="aclass_interpolation_1_1_state_inspector_factory_html"><div class="ttname"><a href="class_interpolation_1_1_state_inspector_factory.html">Interpolation::StateInspectorFactory</a></div><div class="ttdef"><b>Definition:</b> InterpolationInspectorWidget.hpp:57</div></div>
 <div class="ttc" id="aclass_process_1_1_inspector_widget_delegate___t_html"><div class="ttname"><a href="class_process_1_1_inspector_widget_delegate___t.html">Process::InspectorWidgetDelegate_T</a></div><div class="ttdef"><b>Definition:</b> ProcessInspectorWidgetDelegate.hpp:16</div></div>
 <div class="ttc" id="aclass_device_1_1_address_accessor_edit_widget_html"><div class="ttname"><a href="class_device_1_1_address_accessor_edit_widget.html">Device::AddressAccessorEditWidget</a></div><div class="ttdef"><b>Definition:</b> AddressAccessorEditWidget.hpp:25</div></div>
-<div class="ttc" id="aclass_interpolation_1_1_state_inspector_widget_html"><div class="ttname"><a href="class_interpolation_1_1_state_inspector_widget.html">Interpolation::StateInspectorWidget</a></div><div class="ttdef"><b>Definition:</b> InterpolationInspectorWidget.hpp:41</div></div>
+<div class="ttc" id="aclass_interpolation_1_1_state_inspector_widget_html"><div class="ttname"><a href="class_interpolation_1_1_state_inspector_widget.html">Interpolation::StateInspectorWidget</a></div><div class="ttdef"><b>Definition:</b> InterpolationInspectorWidget.hpp:42</div></div>
 <div class="ttc" id="astructmatches_html"><div class="ttname"><a href="structmatches.html">matches</a></div><div class="ttdef"><b>Definition:</b> ObjectMatches.hpp:5</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:15</div></div>
 <div class="ttc" id="aclass_interpolation_1_1_inspector_factory_html"><div class="ttname"><a href="class_interpolation_1_1_inspector_factory.html">Interpolation::InspectorFactory</a></div><div class="ttdef"><b>Definition:</b> InterpolationInspectorWidget.hpp:35</div></div>
 <div class="ttc" id="aclass_inspector_1_1_inspector_widget_base_html"><div class="ttname"><a href="class_inspector_1_1_inspector_widget_base.html">Inspector::InspectorWidgetBase</a></div><div class="ttdoc">The InspectorWidgetBase class Set the global structuration for an inspected element.</div><div class="ttdef"><b>Definition:</b> InspectorWidgetBase.hpp:36</div></div>
 <div class="ttc" id="aclass_inspector_1_1_inspector_widget_factory_html"><div class="ttname"><a href="class_inspector_1_1_inspector_widget_factory.html">Inspector::InspectorWidgetFactory</a></div><div class="ttdoc">The InspectorWidgetFactoryInterface class.</div><div class="ttdef"><b>Definition:</b> InspectorWidgetFactoryInterface.hpp:31</div></div>
 <div class="ttc" id="aclass_command_dispatcher_html"><div class="ttname"><a href="class_command_dispatcher.html">CommandDispatcher&lt;&gt;</a></div></div>
-<div class="ttc" id="aclass_interpolation_1_1_state_inspector_factory_html_a87e56b47ce6679c1d216299993caf701"><div class="ttname"><a href="class_interpolation_1_1_state_inspector_factory.html#a87e56b47ce6679c1d216299993caf701">Interpolation::StateInspectorFactory::make</a></div><div class="ttdeci">QWidget * make(const InspectedObjects &amp;sourceElements, const score::DocumentContext &amp;doc, QWidget *parent) const override</div><div class="ttdoc">makeWidget Makes a widget for the inspector from an object</div><div class="ttdef"><b>Definition:</b> InterpolationInspectorWidget.cpp:122</div></div>
-<div class="ttc" id="aclass_process_1_1_inspector_widget_delegate_factory___t_html"><div class="ttname"><a href="class_process_1_1_inspector_widget_delegate_factory___t.html">Process::InspectorWidgetDelegateFactory_T</a></div><div class="ttdef"><b>Definition:</b> ProcessInspectorWidgetDelegateFactory.hpp:54</div></div>
+<div class="ttc" id="aclass_interpolation_1_1_state_inspector_factory_html_a87e56b47ce6679c1d216299993caf701"><div class="ttname"><a href="class_interpolation_1_1_state_inspector_factory.html#a87e56b47ce6679c1d216299993caf701">Interpolation::StateInspectorFactory::make</a></div><div class="ttdeci">QWidget * make(const InspectedObjects &amp;sourceElements, const score::DocumentContext &amp;doc, QWidget *parent) const override</div><div class="ttdoc">makeWidget Makes a widget for the inspector from an object</div><div class="ttdef"><b>Definition:</b> InterpolationInspectorWidget.cpp:129</div></div>
 <div class="ttc" id="aclass_interpolation_1_1_inspector_widget_html"><div class="ttname"><a href="class_interpolation_1_1_inspector_widget.html">Interpolation::InspectorWidget</a></div><div class="ttdef"><b>Definition:</b> InterpolationInspectorWidget.hpp:16</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

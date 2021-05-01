@@ -12,7 +12,7 @@ var namespace_local_tree =
     [ "IntervalBase", "class_local_tree_1_1_interval_base.html", "class_local_tree_1_1_interval_base" ],
     [ "MappingComponent", "class_local_tree_1_1_mapping_component.html", "class_local_tree_1_1_mapping_component" ],
     [ "MetadataNamePropertyWrapper", "class_local_tree_1_1_metadata_name_property_wrapper.html", "class_local_tree_1_1_metadata_name_property_wrapper" ],
-    [ "ProcessComponent", "class_local_tree_1_1_process_component.html", "class_local_tree_1_1_process_component" ],
+    [ "ProcessComponent", "class_local_tree_1_1_process_component.html", null ],
     [ "ProcessComponentFactory", "class_local_tree_1_1_process_component_factory.html", "class_local_tree_1_1_process_component_factory" ],
     [ "ProcessComponentFactory_T", "class_local_tree_1_1_process_component_factory___t.html", "class_local_tree_1_1_process_component_factory___t" ],
     [ "ProcessComponentFactoryList", "class_local_tree_1_1_process_component_factory_list.html", "class_local_tree_1_1_process_component_factory_list" ],

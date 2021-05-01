@@ -125,25 +125,6 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Component</b> (<a class="el" href="class_pd_1_1_process_model.html">Pd::ProcessModel</a> &amp;element, const <a class="el" href="struct_execution_1_1_context.html">Execution::Context</a> &amp;ctx, const <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="classscore_1_1_component.html">score::Component</a> &gt; &amp;id, QObject *parent)</td></tr>
 <tr class="separator:af1593d18a3fd9bb9e9da21a5bd5ccdf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_execution_1_1_process_component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_execution_1_1_process_component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_execution_1_1_process_component.html">Execution::ProcessComponent</a></td></tr>
-<tr class="memitem:a7b35b8e5847a2040547155b8735830a2 inherit pub_methods_class_execution_1_1_process_component"><td class="memItemLeft" align="right" valign="top"><a id="a7b35b8e5847a2040547155b8735830a2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessComponent</b> (<a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;proc, const <a class="el" href="struct_execution_1_1_context.html">Context</a> &amp;ctx, const <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="classscore_1_1_component.html">score::Component</a> &gt; &amp;id, const QString &amp;name, QObject *parent)</td></tr>
-<tr class="separator:a7b35b8e5847a2040547155b8735830a2 inherit pub_methods_class_execution_1_1_process_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbf98ea6e97c8420ab90f57ae4940e07 inherit pub_methods_class_execution_1_1_process_component"><td class="memItemLeft" align="right" valign="top"><a id="acbf98ea6e97c8420ab90f57ae4940e07"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_execution_1_1_process_component.html#acbf98ea6e97c8420ab90f57ae4940e07">lazy_init</a> ()</td></tr>
-<tr class="memdesc:acbf98ea6e97c8420ab90f57ae4940e07 inherit pub_methods_class_execution_1_1_process_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reimplement this if the element needs two-phase initialization. <br /></td></tr>
-<tr class="separator:acbf98ea6e97c8420ab90f57ae4940e07 inherit pub_methods_class_execution_1_1_process_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dfbf9a048cd7cbd5f3c61ea0c691e29 inherit pub_methods_class_execution_1_1_process_component"><td class="memItemLeft" align="right" valign="top"><a id="a7dfbf9a048cd7cbd5f3c61ea0c691e29"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>cleanup</b> ()</td></tr>
-<tr class="separator:a7dfbf9a048cd7cbd5f3c61ea0c691e29 inherit pub_methods_class_execution_1_1_process_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacbec6695218218e3f99dc6afca677b8 inherit pub_methods_class_execution_1_1_process_component"><td class="memItemLeft" align="right" valign="top"><a id="aacbec6695218218e3f99dc6afca677b8"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
-<tr class="separator:aacbec6695218218e3f99dc6afca677b8 inherit pub_methods_class_execution_1_1_process_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc37eeb906dc6cfc4e6c6fc66ec8d68f inherit pub_methods_class_execution_1_1_process_component"><td class="memItemLeft" align="right" valign="top"><a id="abc37eeb906dc6cfc4e6c6fc66ec8d68f"></a>
-const std::shared_ptr&lt; ossia::time_process &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>OSSIAProcessPtr</b> ()</td></tr>
-<tr class="separator:abc37eeb906dc6cfc4e6c6fc66ec8d68f inherit pub_methods_class_execution_1_1_process_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44c4ca82863ab8687ea020d902f9b7cc inherit pub_methods_class_execution_1_1_process_component"><td class="memItemLeft" align="right" valign="top"><a id="a44c4ca82863ab8687ea020d902f9b7cc"></a>
-ossia::time_process &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>OSSIAProcess</b> () const</td></tr>
-<tr class="separator:a44c4ca82863ab8687ea020d902f9b7cc inherit pub_methods_class_execution_1_1_process_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed4deba126226629f97341b21df7321e inherit pub_methods_class_execution_1_1_process_component"><td class="memItemLeft" align="right" valign="top"><a id="aed4deba126226629f97341b21df7321e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>nodeChanged</b> (const ossia::node_ptr &amp;old_node, const ossia::node_ptr &amp;new_node, <a class="el" href="struct_execution_1_1_transaction.html">Execution::Transaction</a> *commands)</td></tr>
 <tr class="separator:aed4deba126226629f97341b21df7321e inherit pub_methods_class_execution_1_1_process_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,14 +139,6 @@ ProcessBase_T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>proces
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_attribs_class_execution_1_1_process_component"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_execution_1_1_process_component')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_execution_1_1_process_component.html">Execution::ProcessComponent</a></td></tr>
-<tr class="memitem:aa2f1838613d96633711d8ddd43a575f5 inherit pub_attribs_class_execution_1_1_process_component"><td class="memItemLeft" align="right" valign="top"><a id="aa2f1838613d96633711d8ddd43a575f5"></a>
-std::shared_ptr&lt; ossia::graph_node &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>node</b></td></tr>
-<tr class="separator:aa2f1838613d96633711d8ddd43a575f5 inherit pub_attribs_class_execution_1_1_process_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_attribs_class_execution_1_1_process_component"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_class_execution_1_1_process_component')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="class_execution_1_1_process_component.html">Execution::ProcessComponent</a></td></tr>
-<tr class="memitem:ac168d67e12e701afbfd3729ce5d95330 inherit pub_static_attribs_class_execution_1_1_process_component"><td class="memItemLeft" align="right" valign="top"><a id="ac168d67e12e701afbfd3729ce5d95330"></a>
-static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_unique</b> = true</td></tr>
-<tr class="separator:ac168d67e12e701afbfd3729ce5d95330 inherit pub_static_attribs_class_execution_1_1_process_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_execution_1_1_process_component"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_execution_1_1_process_component')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_execution_1_1_process_component.html">Execution::ProcessComponent</a></td></tr>
 <tr class="memitem:a00b4e335b5855104cbc236964cab5699 inherit pro_attribs_class_execution_1_1_process_component"><td class="memItemLeft" align="right" valign="top"><a id="a00b4e335b5855104cbc236964cab5699"></a>
 std::shared_ptr&lt; ossia::time_process &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_ossia_process</b></td></tr>

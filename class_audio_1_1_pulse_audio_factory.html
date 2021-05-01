@@ -117,6 +117,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abca47a53aed197582505ac7cb01b871b"><td class="memItemLeft" align="right" valign="top"><a id="abca47a53aed197582505ac7cb01b871b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>available</b> () const noexcept override</td></tr>
 <tr class="separator:abca47a53aed197582505ac7cb01b871b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cfc37ff17b29f26e64153fb1d3829f7"><td class="memItemLeft" align="right" valign="top"><a id="a7cfc37ff17b29f26e64153fb1d3829f7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initialize</b> (<a class="el" href="class_audio_1_1_settings_1_1_model.html">Audio::Settings::Model</a> &amp;set, const <a class="el" href="structscore_1_1_application_context.html">score::ApplicationContext</a> &amp;ctx) override</td></tr>
+<tr class="separator:a7cfc37ff17b29f26e64153fb1d3829f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a838673b65152f670a75481cc4d081676"><td class="memItemLeft" align="right" valign="top"><a id="a838673b65152f670a75481cc4d081676"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>prettyName</b> () const override</td></tr>
 <tr class="separator:a838673b65152f670a75481cc4d081676"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,10 +129,6 @@ std::unique_ptr&lt; ossia::audio_engine &gt;&#160;</td><td class="memItemRight" 
 <tr class="memitem:ad732c982ba7574c2c50db39128ce5919"><td class="memItemLeft" align="right" valign="top"><a id="ad732c982ba7574c2c50db39128ce5919"></a>
 QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>make_settings</b> (<a class="el" href="class_audio_1_1_settings_1_1_model.html">Audio::Settings::Model</a> &amp;m, <a class="el" href="class_audio_1_1_settings_1_1_view.html">Audio::Settings::View</a> &amp;v, <a class="el" href="classscore_1_1_settings_command_dispatcher.html">score::SettingsCommandDispatcher</a> &amp;m_disp, QWidget *parent) override</td></tr>
 <tr class="separator:ad732c982ba7574c2c50db39128ce5919"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_class_audio_1_1_audio_factory"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_audio_1_1_audio_factory')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_audio_1_1_audio_factory.html">Audio::AudioFactory</a></td></tr>
-<tr class="memitem:a91e4400454eaf054b3ee7b73e6dd6554 inherit pub_methods_class_audio_1_1_audio_factory"><td class="memItemLeft" align="right" valign="top"><a id="a91e4400454eaf054b3ee7b73e6dd6554"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>initialize</b> (<a class="el" href="class_audio_1_1_settings_1_1_model.html">Audio::Settings::Model</a> &amp;set, const <a class="el" href="structscore_1_1_application_context.html">score::ApplicationContext</a> &amp;ctx)=0</td></tr>
-<tr class="separator:a91e4400454eaf054b3ee7b73e6dd6554 inherit pub_methods_class_audio_1_1_audio_factory"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1_interface_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1_interface_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1_interface_base.html">score::InterfaceBase</a></td></tr>
 <tr class="memitem:a993744914ec2a9cdf05f07f6f1643d55 inherit pub_methods_classscore_1_1_interface_base"><td class="memItemLeft" align="right" valign="top"><a id="a993744914ec2a9cdf05f07f6f1643d55"></a>
 virtual <a class="el" href="class_uuid_key.html">InterfaceKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_interface_base.html#a993744914ec2a9cdf05f07f6f1643d55">interfaceKey</a> () const noexcept=0</td></tr>

@@ -311,12 +311,12 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>Component</b> = <a c
 <tr class="memitem:a50ca0026d1e883ca0aa42e5a2331cde4"><td class="memItemLeft" align="right" valign="top"><a id="a50ca0026d1e883ca0aa42e5a2331cde4"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>reverse_time_function</b> = smallfun::function&lt; <a class="el" href="struct_time_val.html">TimeVal</a>(const ossia::time_value &amp;)&gt;</td></tr>
 <tr class="separator:a50ca0026d1e883ca0aa42e5a2331cde4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8be38133ad7ccb8f513a0ebfc1c1b241"><td class="memItemLeft" align="right" valign="top"><a id="a8be38133ad7ccb8f513a0ebfc1c1b241"></a>
+<tr class="memitem:a62a39bb03dbbfc0d07c8dd76a9426609"><td class="memItemLeft" align="right" valign="top"><a id="a62a39bb03dbbfc0d07c8dd76a9426609"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ExecutionCommand</b> = smallfun::function&lt; void(), 128, std::max((int) 8,(int) std::max(alignof(std::function&lt; void()&gt;), alignof(double))), smallfun::Methods::Move &gt;</td></tr>
-<tr class="separator:a8be38133ad7ccb8f513a0ebfc1c1b241"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73e55486404c840f728594e382baba70"><td class="memItemLeft" align="right" valign="top"><a id="a73e55486404c840f728594e382baba70"></a>
+<tr class="separator:a62a39bb03dbbfc0d07c8dd76a9426609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83a31d854880dcc418ff76611e378187"><td class="memItemLeft" align="right" valign="top"><a id="a83a31d854880dcc418ff76611e378187"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>GCCommand</b> = smallfun::function&lt; void(), 128+4 *8, std::max((int) 8,(int) std::max(alignof(std::function&lt; void()&gt;), alignof(double))), smallfun::Methods::Move &gt;</td></tr>
-<tr class="separator:a73e55486404c840f728594e382baba70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a83a31d854880dcc418ff76611e378187"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c16f797b9843a87b8be5b40e4cb0db9"><td class="memItemLeft" align="right" valign="top"><a id="a2c16f797b9843a87b8be5b40e4cb0db9"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ExecutionCommandQueue</b> = ossia::spsc_queue&lt; ExecutionCommand, 1024 &gt;</td></tr>
 <tr class="separator:a2c16f797b9843a87b8be5b40e4cb0db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -326,9 +326,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>EditionCommandQueue<
 <tr class="memitem:a9a96a9bfbe82743124aef6b18b313f56"><td class="memItemLeft" align="right" valign="top"><a id="a9a96a9bfbe82743124aef6b18b313f56"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>GCCommandQueue</b> = moodycamel::ConcurrentQueue&lt; GCCommand &gt;</td></tr>
 <tr class="separator:a9a96a9bfbe82743124aef6b18b313f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2a558764fc9673f120c953fa5968fb0"><td class="memItemLeft" align="right" valign="top"><a id="ad2a558764fc9673f120c953fa5968fb0"></a>
+<tr class="memitem:af397a84cdcae3bea3cd6303344673ab0"><td class="memItemLeft" align="right" valign="top"><a id="af397a84cdcae3bea3cd6303344673ab0"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>exec_setup_fun</b> = std::function&lt; void(const <a class="el" href="struct_execution_1_1_context.html">Execution::Context</a> &amp;, <a class="el" href="class_execution_1_1_base_scenario_element.html">Execution::BaseScenarioElement</a> &amp;)&gt;</td></tr>
-<tr class="separator:ad2a558764fc9673f120c953fa5968fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:af397a84cdcae3bea3cd6303344673ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60fee0102b3c7e4ccf72e5d357047852"><td class="memItemLeft" align="right" valign="top"><a id="a60fee0102b3c7e4ccf72e5d357047852"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>tick_fun</b> = ossia::audio_engine::fun_type</td></tr>
 <tr class="separator:a60fee0102b3c7e4ccf72e5d357047852"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -434,7 +434,7 @@ template&lt;&gt; </td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astruct_execution_1_1_context_html_a1a0fd8f494c0a427dc09b7da3e94bf36"><div class="ttname"><a href="struct_execution_1_1_context.html#a1a0fd8f494c0a427dc09b7da3e94bf36">Execution::Context::executionQueue</a></div><div class="ttdeci">ExecutionCommandQueue &amp; executionQueue</div><div class="ttdef"><b>Definition:</b> ExecutionContext.hpp:99</div></div>
+<div class="ttc" id="astruct_execution_1_1_context_html_a1a0fd8f494c0a427dc09b7da3e94bf36"><div class="ttname"><a href="struct_execution_1_1_context.html#a1a0fd8f494c0a427dc09b7da3e94bf36">Execution::Context::executionQueue</a></div><div class="ttdeci">ExecutionCommandQueue &amp; executionQueue</div><div class="ttdef"><b>Definition:</b> ExecutionContext.hpp:103</div></div>
 <div class="ttc" id="anamespace_execution_html"><div class="ttname"><a href="namespace_execution.html">Execution</a></div><div class="ttdoc">Components used for the execution of a score.</div><div class="ttdef"><b>Definition:</b> ProcessComponent.cpp:11</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

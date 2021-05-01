@@ -34,8 +34,8 @@ var class_vec4f_value_type =
     [ "w_state", "class_vec4f_value_type.html#ae253766bcd8580dc7df07c772640a369", null ],
     [ "w_state", "class_vec4f_value_type.html#aa54d6dabf384adcafc16d4cb1051862e", null ],
     [ "w_state", "class_vec4f_value_type.html#a4064cb51dea35f393a8d172355391a51", null ],
-    [ "w_state", "class_vec4f_value_type.html#a23db7f728bf5a582dd4804a2f3ba73fe", null ],
+    [ "w_state", "class_vec4f_value_type.html#a17265b86d787e083ab6d8da749da7063", null ],
     [ "w_state", "class_vec4f_value_type.html#adab7252c4ac95e3e1a6527c5f3a0d60f", null ],
-    [ "w_state", "class_vec4f_value_type.html#ad5f9140656ac90539a8075e4f15b19f1", null ],
+    [ "w_state", "class_vec4f_value_type.html#a17cc11f69aae7b0cdf8d6884276e34ce", null ],
     [ "w_state", "class_vec4f_value_type.html#a83a303c5789ff29daf011d47dc06d68e", null ]
 ];

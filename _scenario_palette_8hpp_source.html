@@ -101,116 +101,118 @@ $(document).ready(function(){initNavTree('_scenario_palette_8hpp_source.html',''
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Process/ProcessContext.hpp&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Process/Tools/ToolPalette.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Scenario/Palette/ScenarioPoint.hpp&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Scenario/Palette/Tool.hpp&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Scenario/Palette/Tools/CreationToolState.hpp&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;Scenario/Palette/Tools/PlayToolState.hpp&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;Scenario/Palette/Tools/SmartTool.hpp&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;score/statemachine/GraphicsSceneToolPalette.hpp&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QPoint&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore.html">score</a></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span>CommandStack;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span>ObjectLocker;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_process.html">Process</a></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">class </span>MagnetismAdjuster;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_scenario.html">Scenario</a></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">class </span>EditionSettings;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">class </span>ScenarioPresenter;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">class </span>ScenarioView;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">class </span>MoveIntervalInScenario_StateWrapper;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">class </span>MoveLeftBraceInScenario_StateWrapper;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">class </span>MoveRightBraceInScenario_StateWrapper;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">class </span>MoveEventInScenario_StateWrapper;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">class </span>MoveTimeSyncInScenario_StateWrapper;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">class </span>ProcessModel;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_scenario_1_1_tool_palette.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_scenario_1_1_tool_palette.html">ToolPalette</a> final : <span class="keyword">public</span> <a class="code" href="class_graphics_scene_tool_palette.html">GraphicsSceneToolPalette</a></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="class_scenario_1_1_tool_palette.html">ToolPalette</a>(<a class="code" href="struct_process_1_1_layer_context.html">Process::LayerContext</a>&amp;, <a class="code" href="class_scenario_1_1_scenario_presenter.html">ScenarioPresenter</a>&amp; presenter);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="class_scenario_1_1_scenario_presenter.html">ScenarioPresenter</a>&amp; presenter()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_presenter; }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="class_scenario_1_1_edition_settings.html">Scenario::EditionSettings</a>&amp; editionSettings() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_process_1_1_layer_context.html">Process::LayerContext</a>&amp; context()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_context; }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="class_process_1_1_magnetism_adjuster.html">Process::MagnetismAdjuster</a>&amp; magnetic()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_magnetic; }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp; model()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_model; }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> on_pressed(QPointF);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> on_moved(QPointF);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> on_released(QPointF);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> on_cancel();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> activate(Scenario::Tool);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> desactivate(Scenario::Tool);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  QGraphicsItem*</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  itemAt(<span class="keyword">const</span> <a class="code" href="struct_scenario_1_1_point.html">Scenario::Point</a>&amp;, <span class="keyword">const</span> std::vector&lt;QGraphicsItem*&gt;&amp; ignore) <span class="keyword">const</span> noexcept;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="struct_scenario_1_1_point.html">Scenario::Point</a> ScenePointToScenarioPoint(QPointF point);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="class_scenario_1_1_scenario_presenter.html">ScenarioPresenter</a>&amp; m_presenter;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp; m_model;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="struct_process_1_1_layer_context.html">Process::LayerContext</a>&amp; m_context;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="class_process_1_1_magnetism_adjuster.html">Process::MagnetismAdjuster</a>&amp; m_magnetic;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="class_scenario_1_1_creation_tool.html">CreationTool&lt;ProcessModel, Scenario::ToolPalette&gt;</a> m_createTool;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="class_scenario_1_1_smart_tool.html">SmartTool</a>&lt;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <a class="code" href="class_scenario_1_1_process_model.html">ProcessModel</a>,</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <a class="code" href="class_scenario_1_1_tool_palette.html">Scenario::ToolPalette</a>,</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <a class="code" href="class_scenario_1_1_scenario_view.html">ScenarioView</a>,</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <a class="code" href="class_scenario_1_1_move_interval_in_scenario___state_wrapper.html">Scenario::MoveIntervalInScenario_StateWrapper</a>,</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <a class="code" href="class_scenario_1_1_move_left_brace_in_scenario___state_wrapper.html">Scenario::MoveLeftBraceInScenario_StateWrapper</a>,</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <a class="code" href="class_scenario_1_1_move_right_brace_in_scenario___state_wrapper.html">Scenario::MoveRightBraceInScenario_StateWrapper</a>,</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <a class="code" href="class_scenario_1_1_move_event_in_scenario___state_wrapper.html">Scenario::MoveEventInScenario_StateWrapper</a>,</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <a class="code" href="class_scenario_1_1_move_time_sync_in_scenario___state_wrapper.html">Scenario::MoveTimeSyncInScenario_StateWrapper</a>&gt;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      m_selectTool;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="class_scenario_1_1_play_tool_state.html">PlayToolState</a> m_playTool;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;score/statemachine/GraphicsSceneToolPalette.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QPoint&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;Scenario/Palette/ScenarioPoint.hpp&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;Scenario/Palette/Tool.hpp&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;Scenario/Palette/Tools/CreationToolState.hpp&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;Scenario/Palette/Tools/PlayToolState.hpp&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;Scenario/Palette/Tools/SmartTool.hpp&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore.html">score</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span>CommandStack;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span>ObjectLocker;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_process.html">Process</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">class </span>MagnetismAdjuster;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_scenario.html">Scenario</a></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">class </span>EditionSettings;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">class </span>ScenarioPresenter;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">class </span>ScenarioView;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">class </span>MoveIntervalInScenario_StateWrapper;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">class </span>MoveLeftBraceInScenario_StateWrapper;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">class </span>MoveRightBraceInScenario_StateWrapper;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">class </span>MoveEventInScenario_StateWrapper;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">class </span>MoveTimeSyncInScenario_StateWrapper;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">class </span>ProcessModel;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_scenario_1_1_tool_palette.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_scenario_1_1_tool_palette.html">ToolPalette</a> final : <span class="keyword">public</span> <a class="code" href="class_graphics_scene_tool_palette.html">GraphicsSceneToolPalette</a></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="class_scenario_1_1_tool_palette.html">ToolPalette</a>(<a class="code" href="struct_process_1_1_layer_context.html">Process::LayerContext</a>&amp;, <a class="code" href="class_scenario_1_1_scenario_presenter.html">ScenarioPresenter</a>&amp; presenter);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="class_scenario_1_1_scenario_presenter.html">ScenarioPresenter</a>&amp; presenter()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_presenter; }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="class_scenario_1_1_edition_settings.html">Scenario::EditionSettings</a>&amp; editionSettings() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_process_1_1_layer_context.html">Process::LayerContext</a>&amp; context()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_context; }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="class_process_1_1_magnetism_adjuster.html">Process::MagnetismAdjuster</a>&amp; magnetic()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_magnetic; }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp; model()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_model; }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> on_pressed(QPointF);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> on_moved(QPointF);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> on_released(QPointF);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> on_cancel();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> activate(Scenario::Tool);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> desactivate(Scenario::Tool);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  QGraphicsItem* itemAt(</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_scenario_1_1_point.html">Scenario::Point</a>&amp;,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keyword">const</span> std::vector&lt;QGraphicsItem*&gt;&amp; ignore) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="struct_scenario_1_1_point.html">Scenario::Point</a> ScenePointToScenarioPoint(QPointF point);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="class_scenario_1_1_scenario_presenter.html">ScenarioPresenter</a>&amp; m_presenter;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp; m_model;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="struct_process_1_1_layer_context.html">Process::LayerContext</a>&amp; m_context;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="class_process_1_1_magnetism_adjuster.html">Process::MagnetismAdjuster</a>&amp; m_magnetic;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="class_scenario_1_1_creation_tool.html">CreationTool&lt;ProcessModel, Scenario::ToolPalette&gt;</a> m_createTool;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="class_scenario_1_1_smart_tool.html">SmartTool</a>&lt;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <a class="code" href="class_scenario_1_1_process_model.html">ProcessModel</a>,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <a class="code" href="class_scenario_1_1_tool_palette.html">Scenario::ToolPalette</a>,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <a class="code" href="class_scenario_1_1_scenario_view.html">ScenarioView</a>,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <a class="code" href="class_scenario_1_1_move_interval_in_scenario___state_wrapper.html">Scenario::MoveIntervalInScenario_StateWrapper</a>,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <a class="code" href="class_scenario_1_1_move_left_brace_in_scenario___state_wrapper.html">Scenario::MoveLeftBraceInScenario_StateWrapper</a>,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <a class="code" href="class_scenario_1_1_move_right_brace_in_scenario___state_wrapper.html">Scenario::MoveRightBraceInScenario_StateWrapper</a>,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <a class="code" href="class_scenario_1_1_move_event_in_scenario___state_wrapper.html">Scenario::MoveEventInScenario_StateWrapper</a>,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <a class="code" href="class_scenario_1_1_move_time_sync_in_scenario___state_wrapper.html">Scenario::MoveTimeSyncInScenario_StateWrapper</a>&gt;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      m_selectTool;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <a class="code" href="class_tool_palette_input_dispatcher.html">ToolPaletteInputDispatcher</a>&lt;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      Scenario::Tool,</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <a class="code" href="class_scenario_1_1_tool_palette.html">ToolPalette</a>,</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <a class="code" href="struct_process_1_1_layer_context.html">Process::LayerContext</a>,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <a class="code" href="class_process_1_1_layer_view.html">Process::LayerView</a>&gt;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      m_inputDisp;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <a class="code" href="class_scenario_1_1_play_tool_state.html">PlayToolState</a> m_playTool;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="class_tool_palette_input_dispatcher.html">ToolPaletteInputDispatcher</a>&lt;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      Scenario::Tool,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <a class="code" href="class_scenario_1_1_tool_palette.html">ToolPalette</a>,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <a class="code" href="struct_process_1_1_layer_context.html">Process::LayerContext</a>,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <a class="code" href="class_process_1_1_layer_view.html">Process::LayerView</a>&gt;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      m_inputDisp;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1291</div></div>
-<div class="ttc" id="aclass_tool_palette_input_dispatcher_html"><div class="ttname"><a href="class_tool_palette_input_dispatcher.html">ToolPaletteInputDispatcher</a></div><div class="ttdef"><b>Definition:</b> ToolPalette.hpp:13</div></div>
+<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1366</div></div>
+<div class="ttc" id="aclass_tool_palette_input_dispatcher_html"><div class="ttname"><a href="class_tool_palette_input_dispatcher.html">ToolPaletteInputDispatcher</a></div><div class="ttdef"><b>Definition:</b> ToolPalette.hpp:17</div></div>
 <div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>
 <div class="ttc" id="aclass_scenario_1_1_scenario_view_html"><div class="ttname"><a href="class_scenario_1_1_scenario_view.html">Scenario::ScenarioView</a></div><div class="ttdef"><b>Definition:</b> ScenarioView.hpp:26</div></div>
 <div class="ttc" id="aclass_process_1_1_layer_view_html"><div class="ttname"><a href="class_process_1_1_layer_view.html">Process::LayerView</a></div><div class="ttdef"><b>Definition:</b> LayerView.hpp:18</div></div>
-<div class="ttc" id="aclass_scenario_1_1_scenario_presenter_html"><div class="ttname"><a href="class_scenario_1_1_scenario_presenter.html">Scenario::ScenarioPresenter</a></div><div class="ttdef"><b>Definition:</b> ScenarioPresenter.hpp:25</div></div>
-<div class="ttc" id="aclass_scenario_1_1_move_event_in_scenario___state_wrapper_html"><div class="ttname"><a href="class_scenario_1_1_move_event_in_scenario___state_wrapper.html">Scenario::MoveEventInScenario_StateWrapper</a></div><div class="ttdef"><b>Definition:</b> ScenarioMoveStatesWrapper.hpp:79</div></div>
+<div class="ttc" id="aclass_scenario_1_1_scenario_presenter_html"><div class="ttname"><a href="class_scenario_1_1_scenario_presenter.html">Scenario::ScenarioPresenter</a></div><div class="ttdef"><b>Definition:</b> ScenarioPresenter.hpp:26</div></div>
+<div class="ttc" id="aclass_scenario_1_1_move_event_in_scenario___state_wrapper_html"><div class="ttname"><a href="class_scenario_1_1_move_event_in_scenario___state_wrapper.html">Scenario::MoveEventInScenario_StateWrapper</a></div><div class="ttdef"><b>Definition:</b> ScenarioMoveStatesWrapper.hpp:86</div></div>
 <div class="ttc" id="aclass_process_1_1_magnetism_adjuster_html"><div class="ttname"><a href="class_process_1_1_magnetism_adjuster.html">Process::MagnetismAdjuster</a></div><div class="ttdef"><b>Definition:</b> MagnetismAdjuster.hpp:19</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:65</div></div>
-<div class="ttc" id="astruct_process_1_1_layer_context_html"><div class="ttname"><a href="struct_process_1_1_layer_context.html">Process::LayerContext</a></div><div class="ttdef"><b>Definition:</b> ProcessContext.hpp:26</div></div>
+<div class="ttc" id="astruct_process_1_1_layer_context_html"><div class="ttname"><a href="struct_process_1_1_layer_context.html">Process::LayerContext</a></div><div class="ttdef"><b>Definition:</b> ProcessContext.hpp:29</div></div>
 <div class="ttc" id="aclass_scenario_1_1_smart_tool_html"><div class="ttname"><a href="class_scenario_1_1_smart_tool.html">Scenario::SmartTool</a></div><div class="ttdef"><b>Definition:</b> score-plugin-scenario/Scenario/Palette/Tools/SmartTool.hpp:26</div></div>
-<div class="ttc" id="aclass_scenario_1_1_process_model_html"><div class="ttname"><a href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a></div><div class="ttdoc">The core hierarchical and temporal process of score.</div><div class="ttdef"><b>Definition:</b> ScenarioModel.hpp:33</div></div>
+<div class="ttc" id="aclass_scenario_1_1_process_model_html"><div class="ttname"><a href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a></div><div class="ttdoc">The core hierarchical and temporal process of score.</div><div class="ttdef"><b>Definition:</b> ScenarioModel.hpp:34</div></div>
 <div class="ttc" id="aclass_scenario_1_1_play_tool_state_html"><div class="ttname"><a href="class_scenario_1_1_play_tool_state.html">Scenario::PlayToolState</a></div><div class="ttdef"><b>Definition:</b> PlayToolState.hpp:11</div></div>
 <div class="ttc" id="aclass_scenario_1_1_creation_tool_html"><div class="ttname"><a href="class_scenario_1_1_creation_tool.html">Scenario::CreationTool</a></div><div class="ttdef"><b>Definition:</b> CreationToolState.hpp:28</div></div>
 <div class="ttc" id="aclass_scenario_1_1_edition_settings_html"><div class="ttname"><a href="class_scenario_1_1_edition_settings.html">Scenario::EditionSettings</a></div><div class="ttdef"><b>Definition:</b> ScenarioEditionSettings.hpp:12</div></div>
 <div class="ttc" id="aclass_scenario_1_1_move_interval_in_scenario___state_wrapper_html"><div class="ttname"><a href="class_scenario_1_1_move_interval_in_scenario___state_wrapper.html">Scenario::MoveIntervalInScenario_StateWrapper</a></div><div class="ttdef"><b>Definition:</b> ScenarioMoveStatesWrapper.hpp:17</div></div>
-<div class="ttc" id="astruct_scenario_1_1_point_html"><div class="ttname"><a href="struct_scenario_1_1_point.html">Scenario::Point</a></div><div class="ttdef"><b>Definition:</b> ScenarioPoint.hpp:11</div></div>
+<div class="ttc" id="astruct_scenario_1_1_point_html"><div class="ttname"><a href="struct_scenario_1_1_point.html">Scenario::Point</a></div><div class="ttdef"><b>Definition:</b> ScenarioPoint.hpp:12</div></div>
 <div class="ttc" id="aclass_graphics_scene_tool_palette_html"><div class="ttname"><a href="class_graphics_scene_tool_palette.html">GraphicsSceneToolPalette</a></div><div class="ttdef"><b>Definition:</b> GraphicsSceneToolPalette.hpp:9</div></div>
-<div class="ttc" id="aclass_scenario_1_1_move_left_brace_in_scenario___state_wrapper_html"><div class="ttname"><a href="class_scenario_1_1_move_left_brace_in_scenario___state_wrapper.html">Scenario::MoveLeftBraceInScenario_StateWrapper</a></div><div class="ttdef"><b>Definition:</b> ScenarioMoveStatesWrapper.hpp:39</div></div>
-<div class="ttc" id="aclass_scenario_1_1_tool_palette_html"><div class="ttname"><a href="class_scenario_1_1_tool_palette.html">Scenario::ToolPalette</a></div><div class="ttdef"><b>Definition:</b> ScenarioPalette.hpp:36</div></div>
-<div class="ttc" id="aclass_scenario_1_1_move_time_sync_in_scenario___state_wrapper_html"><div class="ttname"><a href="class_scenario_1_1_move_time_sync_in_scenario___state_wrapper.html">Scenario::MoveTimeSyncInScenario_StateWrapper</a></div><div class="ttdef"><b>Definition:</b> ScenarioMoveStatesWrapper.hpp:103</div></div>
-<div class="ttc" id="aclass_scenario_1_1_move_right_brace_in_scenario___state_wrapper_html"><div class="ttname"><a href="class_scenario_1_1_move_right_brace_in_scenario___state_wrapper.html">Scenario::MoveRightBraceInScenario_StateWrapper</a></div><div class="ttdef"><b>Definition:</b> ScenarioMoveStatesWrapper.hpp:59</div></div>
+<div class="ttc" id="aclass_scenario_1_1_move_left_brace_in_scenario___state_wrapper_html"><div class="ttname"><a href="class_scenario_1_1_move_left_brace_in_scenario___state_wrapper.html">Scenario::MoveLeftBraceInScenario_StateWrapper</a></div><div class="ttdef"><b>Definition:</b> ScenarioMoveStatesWrapper.hpp:40</div></div>
+<div class="ttc" id="aclass_scenario_1_1_tool_palette_html"><div class="ttname"><a href="class_scenario_1_1_tool_palette.html">Scenario::ToolPalette</a></div><div class="ttdef"><b>Definition:</b> ScenarioPalette.hpp:37</div></div>
+<div class="ttc" id="aclass_scenario_1_1_move_time_sync_in_scenario___state_wrapper_html"><div class="ttname"><a href="class_scenario_1_1_move_time_sync_in_scenario___state_wrapper.html">Scenario::MoveTimeSyncInScenario_StateWrapper</a></div><div class="ttdef"><b>Definition:</b> ScenarioMoveStatesWrapper.hpp:115</div></div>
+<div class="ttc" id="aclass_scenario_1_1_move_right_brace_in_scenario___state_wrapper_html"><div class="ttname"><a href="class_scenario_1_1_move_right_brace_in_scenario___state_wrapper.html">Scenario::MoveRightBraceInScenario_StateWrapper</a></div><div class="ttdef"><b>Definition:</b> ScenarioMoveStatesWrapper.hpp:63</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

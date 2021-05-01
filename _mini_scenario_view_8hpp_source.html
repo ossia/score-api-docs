@@ -108,25 +108,28 @@ $(document).ready(function(){initNavTree('_mini_scenario_view_8hpp_source.html',
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span>ProcessModel;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span>IntervalModel;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_scenario_1_1_mini_scenario_view.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_scenario_1_1_mini_scenario_view.html">MiniScenarioView</a> final : <span class="keyword">public</span> QObject, <span class="keyword">public</span> <a class="code" href="class_process_1_1_mini_layer.html">Process::MiniLayer</a>, <span class="keyword">public</span> Nano::Observer</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <a class="code" href="class_scenario_1_1_mini_scenario_view.html">MiniScenarioView</a>(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp; sc, QGraphicsItem* p);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordtype">void</span> on_elementChanged(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&amp;) { update(); }</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_scenario_1_1_mini_scenario_view.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_scenario_1_1_mini_scenario_view.html">MiniScenarioView</a> final</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    , <span class="keyword">public</span> <a class="code" href="class_process_1_1_mini_layer.html">Process::MiniLayer</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    , <span class="keyword">public</span> Nano::Observer</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <a class="code" href="class_scenario_1_1_mini_scenario_view.html">MiniScenarioView</a>(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp; sc, QGraphicsItem* p);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordtype">void</span> paint_impl(QPainter*) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp; m_scenario;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">void</span> on_elementChanged(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&amp;) { update(); }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordtype">void</span> paint_impl(QPainter*) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp; m_scenario;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>
-<div class="ttc" id="aclass_process_1_1_mini_layer_html"><div class="ttname"><a href="class_process_1_1_mini_layer.html">Process::MiniLayer</a></div><div class="ttdef"><b>Definition:</b> LayerView.hpp:89</div></div>
-<div class="ttc" id="aclass_scenario_1_1_process_model_html"><div class="ttname"><a href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a></div><div class="ttdoc">The core hierarchical and temporal process of score.</div><div class="ttdef"><b>Definition:</b> ScenarioModel.hpp:33</div></div>
+<div class="ttc" id="aclass_process_1_1_mini_layer_html"><div class="ttname"><a href="class_process_1_1_mini_layer.html">Process::MiniLayer</a></div><div class="ttdef"><b>Definition:</b> LayerView.hpp:98</div></div>
+<div class="ttc" id="aclass_scenario_1_1_process_model_html"><div class="ttname"><a href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a></div><div class="ttdoc">The core hierarchical and temporal process of score.</div><div class="ttdef"><b>Definition:</b> ScenarioModel.hpp:34</div></div>
 <div class="ttc" id="aclass_scenario_1_1_mini_scenario_view_html"><div class="ttname"><a href="class_scenario_1_1_mini_scenario_view.html">Scenario::MiniScenarioView</a></div><div class="ttdef"><b>Definition:</b> MiniScenarioView.hpp:11</div></div>
-<div class="ttc" id="aclass_scenario_1_1_interval_model_html"><div class="ttname"><a href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a></div><div class="ttdef"><b>Definition:</b> IntervalModel.hpp:47</div></div>
+<div class="ttc" id="aclass_scenario_1_1_interval_model_html"><div class="ttname"><a href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a></div><div class="ttdef"><b>Definition:</b> IntervalModel.hpp:48</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

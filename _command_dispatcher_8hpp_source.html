@@ -108,23 +108,24 @@ $(document).ready(function(){initNavTree('_command_dispatcher_8hpp_source.html',
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <a class="code" href="class_command_dispatcher.html">CommandDispatcher</a>(Args&amp;&amp;... args) : <a class="code" href="class_i_command_dispatcher.html">ICommandDispatcher</a>{std::forward&lt;Args&amp;&amp;&gt;(args)...}</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  }</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">void</span> submit(<a class="code" href="classscore_1_1_command.html">score::Command</a>* cmd)<span class="keyword"> const </span>{ SendStrategy::send(stack(), cmd); }</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordtype">void</span> submit(Args&amp;&amp;... args)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    SendStrategy::send(stack(), <span class="keyword">new</span> T{std::forward&lt;Args&gt;(args)...});</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">void</span> submit(std::unique_ptr&lt;score::Command&gt; cmd)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    SendStrategy::send(stack(), cmd.release());</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <a class="code" href="class_command_dispatcher.html">CommandDispatcher</a>(Args&amp;&amp;... args)</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      : <a class="code" href="class_i_command_dispatcher.html">ICommandDispatcher</a>{std::forward&lt;Args&amp;&amp;&gt;(args)...}</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  }</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordtype">void</span> submit(<a class="code" href="classscore_1_1_command.html">score::Command</a>* cmd)<span class="keyword"> const </span>{ SendStrategy::send(stack(), cmd); }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordtype">void</span> submit(Args&amp;&amp;... args)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    SendStrategy::send(stack(), <span class="keyword">new</span> T{std::forward&lt;Args&gt;(args)...});</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">void</span> submit(std::unique_ptr&lt;score::Command&gt; cmd)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    SendStrategy::send(stack(), cmd.release());</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassscore_1_1_command_html"><div class="ttname"><a href="classscore_1_1_command.html">score::Command</a></div><div class="ttdoc">The Command class.</div><div class="ttdef"><b>Definition:</b> Command.hpp:33</div></div>

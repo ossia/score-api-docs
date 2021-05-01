@@ -131,15 +131,16 @@ $(document).ready(function(){initNavTree('_message_list_serialization_8hpp_sourc
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">using</span> MimeDataWriter::MimeDataWriter;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  State::MessageList deserialize()</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">return</span> fromJson&lt;State::MessageList&gt;(m_mime.data(score::mime::messagelist()));</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">return</span> fromJson&lt;State::MessageList&gt;(</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        m_mime.data(score::mime::messagelist()));</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_state_html"><div class="ttname"><a href="namespace_state.html">State</a></div><div class="ttdoc">Utilities for OSSIA data structures.</div><div class="ttdef"><b>Definition:</b> DeviceInterface.hpp:29</div></div>
 <div class="ttc" id="astruct_mime_data_reader_html"><div class="ttname"><a href="struct_mime_data_reader.html">MimeDataReader</a></div><div class="ttdef"><b>Definition:</b> MimeVisitor.hpp:21</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:65</div></div>
-<div class="ttc" id="astruct_mime_data_writer_html"><div class="ttname"><a href="struct_mime_data_writer.html">MimeDataWriter</a></div><div class="ttdef"><b>Definition:</b> MimeVisitor.hpp:28</div></div>
+<div class="ttc" id="astruct_mime_data_writer_html"><div class="ttname"><a href="struct_mime_data_writer.html">MimeDataWriter</a></div><div class="ttdef"><b>Definition:</b> MimeVisitor.hpp:31</div></div>
 <div class="ttc" id="astruct_mime_writer_html"><div class="ttname"><a href="struct_mime_writer.html">MimeWriter</a></div><div class="ttdef"><b>Definition:</b> MimeVisitor.hpp:9</div></div>
 <div class="ttc" id="astruct_mime_reader_html"><div class="ttname"><a href="struct_mime_reader.html">MimeReader</a></div><div class="ttdef"><b>Definition:</b> MimeVisitor.hpp:7</div></div>
 <!-- HTML footer for doxygen 1.8.8-->

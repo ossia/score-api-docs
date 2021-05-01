@@ -56,7 +56,7 @@ var namespace_process =
     [ "LayerPresenter", "class_process_1_1_layer_presenter.html", "class_process_1_1_layer_presenter" ],
     [ "LayerView", "class_process_1_1_layer_view.html", "class_process_1_1_layer_view" ],
     [ "LineEdit", "struct_process_1_1_line_edit.html", "struct_process_1_1_line_edit" ],
-    [ "LoadPreset", "class_process_1_1_load_preset.html", "class_process_1_1_load_preset" ],
+    [ "LoadPreset", "class_process_1_1_load_preset.html", null ],
     [ "LogFloatSlider", "struct_process_1_1_log_float_slider.html", "struct_process_1_1_log_float_slider" ],
     [ "MagneticInfo", "struct_process_1_1_magnetic_info.html", "struct_process_1_1_magnetic_info" ],
     [ "MagnetismAdjuster", "class_process_1_1_magnetism_adjuster.html", "class_process_1_1_magnetism_adjuster" ],

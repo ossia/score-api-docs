@@ -127,64 +127,69 @@ $(document).ready(function(){initNavTree('_power_segment_8hpp_source.html',''); 
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">struct </span>SCORE_PLUGIN_CURVE_EXPORT PowerSegmentData</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  PowerSegmentData() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  PowerSegmentData(<span class="keywordtype">double</span> d) : gamma{d} { }</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="comment">// Value of gamma for which the pow will be == 1.</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">double</span> linearGamma = 1;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">double</span> gamma = linearGamma;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_CURVE_EXPORT PowerSegment final : <span class="keyword">public</span> SegmentModel</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  MODEL_METADATA_IMPL(PowerSegment)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">using</span> data_type = PowerSegmentData;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">using</span> SegmentModel::SegmentModel;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  PowerSegment(<span class="keyword">const</span> SegmentData&amp; dat, QObject* parent);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  PowerSegment(<span class="keyword">const</span> PowerSegment&amp; other, <span class="keyword">const</span> id_type&amp; <span class="keywordtype">id</span>, QObject* parent);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  PowerSegment(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp; vis, QObject* parent) : SegmentModel{vis, parent}</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    vis.writeTo(*<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  PowerSegment(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp; vis, QObject* parent) : SegmentModel{vis, parent}</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    vis.writeTo(*<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">double</span> gamma = PowerSegmentData::linearGamma; <span class="comment">// TODO private</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> on_startChanged() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> on_endChanged() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  PowerSegmentData(<span class="keywordtype">double</span> d)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      : gamma{d}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="comment">// Value of gamma for which the pow will be == 1.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">double</span> linearGamma = 1;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">double</span> gamma = linearGamma;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_CURVE_EXPORT PowerSegment final : <span class="keyword">public</span> SegmentModel</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  MODEL_METADATA_IMPL(PowerSegment)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">using</span> data_type = PowerSegmentData;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">using</span> SegmentModel::SegmentModel;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  PowerSegment(<span class="keyword">const</span> SegmentData&amp; dat, QObject* parent);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  PowerSegment(<span class="keyword">const</span> PowerSegment&amp; other, <span class="keyword">const</span> id_type&amp; <span class="keywordtype">id</span>, QObject* parent);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  PowerSegment(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp; vis, QObject* parent)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      : SegmentModel{vis, parent}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    vis.writeTo(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  PowerSegment(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp; vis, QObject* parent)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      : SegmentModel{vis, parent}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    vis.writeTo(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> updateData(<span class="keywordtype">int</span> numInterp) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">double</span> valueAt(<span class="keywordtype">double</span> x) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  std::optional&lt;double&gt; verticalParameter() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> setVerticalParameter(<span class="keywordtype">double</span> p) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  QVariant toSegmentSpecificData() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">double</span> gamma = PowerSegmentData::linearGamma; <span class="comment">// TODO private</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> on_startChanged() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> on_endChanged() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> updateData(<span class="keywordtype">int</span> numInterp) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">double</span> valueAt(<span class="keywordtype">double</span> x) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Y&gt;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  ossia::curve_segment&lt;Y&gt; makeFunction() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  std::optional&lt;double&gt; verticalParameter() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">void</span> setVerticalParameter(<span class="keywordtype">double</span> p) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  ossia::curve_segment&lt;double&gt; makeDoubleFunction() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  ossia::curve_segment&lt;float&gt; makeFloatFunction() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  ossia::curve_segment&lt;int&gt; makeIntFunction() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;SCORE_SERIALIZE_DATASTREAM_DECLARE(, Curve::PowerSegmentData)</div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_curve_1_1_power_segment_data_01_4.html">   80</a></span>&#160;Q_DECLARE_METATYPE(<a class="code" href="namespace_curve.html">Curve</a>::PowerSegmentData)</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="namespace_curve.html">Curve</a>::PowerSegmentData)</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  QVariant toSegmentSpecificData() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Y&gt;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  ossia::curve_segment&lt;Y&gt; makeFunction() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  ossia::curve_segment&lt;double&gt; makeDoubleFunction() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  ossia::curve_segment&lt;float&gt; makeFloatFunction() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  ossia::curve_segment&lt;int&gt; makeIntFunction() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;SCORE_SERIALIZE_DATASTREAM_DECLARE(, Curve::PowerSegmentData)</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_curve_1_1_power_segment_data_01_4.html">   85</a></span>&#160;Q_DECLARE_METATYPE(<a class="code" href="namespace_curve.html">Curve</a>::PowerSegmentData)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="namespace_curve.html">Curve</a>::PowerSegmentData)</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="a_visitor_common_8hpp_html"><div class="ttname"><a href="_visitor_common_8hpp.html">VisitorCommon.hpp</a></div></div>
 <div class="ttc" id="anamespace_curve_html"><div class="ttname"><a href="namespace_curve.html">Curve</a></div><div class="ttdoc">Utilities and base classes for 1D curves.</div><div class="ttdef"><b>Definition:</b> FocusDispatcher.hpp:11</div></div>
-<div class="ttc" id="aclass_data_stream_writer_html"><div class="ttname"><a href="class_data_stream_writer.html">DataStreamWriter</a></div><div class="ttdef"><b>Definition:</b> DataStreamVisitor.hpp:194</div></div>
-<div class="ttc" id="aclass_j_s_o_n_writer_html"><div class="ttname"><a href="class_j_s_o_n_writer.html">JSONWriter</a></div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:393</div></div>
+<div class="ttc" id="aclass_data_stream_writer_html"><div class="ttname"><a href="class_data_stream_writer.html">DataStreamWriter</a></div><div class="ttdef"><b>Definition:</b> DataStreamVisitor.hpp:207</div></div>
+<div class="ttc" id="aclass_j_s_o_n_writer_html"><div class="ttname"><a href="class_j_s_o_n_writer.html">JSONWriter</a></div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:432</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

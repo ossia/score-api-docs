@@ -106,20 +106,32 @@ $(document).ready(function(){initNavTree('_properties_8hpp_source.html',''); ini
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;score/command/PropertyCommand.hpp&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;score/model/path/PathSerialization.hpp&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;PROPERTY_COMMAND_T(<a class="code" href="namespace_process.html">Process</a>, SetLoop, ProcessModel::p_loops, <span class="stringliteral">&quot;Set process looping&quot;</span>)</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_process.html">Process</a>::SetLoop)</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;PROPERTY_COMMAND_T(<a class="code" href="namespace_process.html">Process</a>, SetStartOffset, ProcessModel::p_startOffset, &quot;Set start offset&quot;)</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_process.html">Process</a>::SetStartOffset)</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;PROPERTY_COMMAND_T(<a class="code" href="namespace_process.html">Process</a>, SetLoopDuration, ProcessModel::p_loopDuration, &quot;Set loop duration&quot;)</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_process.html">Process</a>::SetLoopDuration)</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;PROPERTY_COMMAND_T(<a class="code" href="namespace_process.html">Process</a>, MoveNode, ProcessModel::p_position, &quot;Move node&quot;)</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_process.html">Process</a>::MoveNode)</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;PROPERTY_COMMAND_T(<a class="code" href="namespace_process.html">Process</a>, ResizeNode, ProcessModel::p_size, &quot;Resize node&quot;)</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_process.html">Process</a>::ResizeNode)</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;PROPERTY_COMMAND_T(</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="namespace_process.html">Process</a>,</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    SetLoop,</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    ProcessModel::p_loops,</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="stringliteral">&quot;Set process looping&quot;</span>)</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_process.html">Process</a>::SetLoop)</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;PROPERTY_COMMAND_T(</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="namespace_process.html">Process</a>,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    SetStartOffset,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    ProcessModel::p_startOffset,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    &quot;Set start offset&quot;)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_process.html">Process</a>::SetStartOffset)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;PROPERTY_COMMAND_T(</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="namespace_process.html">Process</a>,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    SetLoopDuration,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    ProcessModel::p_loopDuration,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    &quot;Set loop duration&quot;)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_process.html">Process</a>::SetLoopDuration)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;PROPERTY_COMMAND_T(<a class="code" href="namespace_process.html">Process</a>, MoveNode, ProcessModel::p_position, &quot;Move node&quot;)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_process.html">Process</a>::MoveNode)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;PROPERTY_COMMAND_T(<a class="code" href="namespace_process.html">Process</a>, ResizeNode, ProcessModel::p_size, &quot;Resize node&quot;)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_process.html">Process</a>::ResizeNode)</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1291</div></div>
+<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1366</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

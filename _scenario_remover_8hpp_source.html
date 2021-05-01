@@ -100,95 +100,96 @@ $(document).ready(function(){initNavTree('_scenario_remover_8hpp_source.html',''
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Dataflow/Commands/EditConnection.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Scenario/Application/ScenarioActions.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Scenario/Commands/Interval/RemoveProcessFromInterval.hpp&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Scenario/Commands/Scenario/Creations/CreateCommentBlock.hpp&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Scenario/Commands/State/RemoveStateProcess.hpp&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;Scenario/Document/ScenarioDocument/ScenarioDocumentModel.hpp&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;Scenario/Process/ScenarioGlobalCommandManager.hpp&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;score/command/Dispatchers/CommandDispatcher.hpp&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;score/document/DocumentInterface.hpp&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;score/model/ObjectRemover.hpp&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_scenario.html">Scenario</a></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_scenario_1_1_scenario_remover.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_scenario_1_1_scenario_remover.html">ScenarioRemover</a> final : <span class="keyword">public</span> <a class="code" href="structscore_1_1_object_remover.html">score::ObjectRemover</a></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;90265073-0aae-4628-834a-f44048664476&quot;</span>)</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordtype">bool</span> remove(<span class="keyword">const</span> <a class="code" href="class_selection.html">Selection</a>&amp; s, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx)<span class="keyword"> override</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">if</span> (s.size() == 1)</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      <a class="code" href="class_command_dispatcher.html">CommandDispatcher&lt;&gt;</a> d{ctx.commandStack};</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      <span class="keyword">auto</span> first = s.begin()-&gt;data();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">auto</span> c = qobject_cast&lt;const Process::Cable*&gt;(first))</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">auto</span>&amp; doc = score::IDocument::get&lt;ScenarioDocumentModel&gt;(ctx.document);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        d.submit&lt;<a class="code" href="class_dataflow_1_1_remove_cable.html">Dataflow::RemoveCable</a>&gt;(doc, *c);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<span class="keyword">auto</span> proc = qobject_cast&lt;const Process::ProcessModel*&gt;(first))</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">using namespace </span>Command;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">auto</span> p = proc-&gt;parent();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">if</span> (<span class="keyword">auto</span> itv = qobject_cast&lt;IntervalModel*&gt;(p))</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;          d.submit&lt;RemoveProcessFromInterval&gt;(*itv, proc-&gt;id());</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<span class="keyword">auto</span> st = qobject_cast&lt;StateModel*&gt;(p))</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;          d.submit&lt;RemoveStateProcess&gt;(*st, proc-&gt;id());</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">auto</span> sm = focusedScenarioModel(ctx))</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keywordflow">if</span> (s.size() == 1)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">auto</span> first = s.begin()-&gt;data();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">if</span> (<span class="keyword">auto</span> cb = qobject_cast&lt;const Scenario::CommentBlockModel*&gt;(first))</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;          <a class="code" href="class_command_dispatcher.html">CommandDispatcher&lt;&gt;</a> d{ctx.commandStack};</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;          d.submit&lt;<a class="code" href="class_scenario_1_1_command_1_1_remove_comment_block.html">Command::RemoveCommentBlock</a>&gt;(*sm, *cb);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      Scenario::removeSelection(*sm, ctx);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">auto</span> si = focusedScenarioInterface(ctx);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">if</span> (si)</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      Scenario::clearContentFromSelection(*si, ctx);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;score/command/Dispatchers/CommandDispatcher.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;score/document/DocumentInterface.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;score/model/ObjectRemover.hpp&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;Scenario/Application/ScenarioActions.hpp&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;Scenario/Commands/Interval/RemoveProcessFromInterval.hpp&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;Scenario/Commands/Scenario/Creations/CreateCommentBlock.hpp&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;Scenario/Commands/State/RemoveStateProcess.hpp&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;Scenario/Document/ScenarioDocument/ScenarioDocumentModel.hpp&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;Scenario/Process/ScenarioGlobalCommandManager.hpp&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_scenario.html">Scenario</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_scenario_1_1_scenario_remover.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_scenario_1_1_scenario_remover.html">ScenarioRemover</a> final : <span class="keyword">public</span> <a class="code" href="structscore_1_1_object_remover.html">score::ObjectRemover</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;90265073-0aae-4628-834a-f44048664476&quot;</span>)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">bool</span> remove(<span class="keyword">const</span> <a class="code" href="class_selection.html">Selection</a>&amp; s, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">if</span> (s.size() == 1)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      <a class="code" href="class_command_dispatcher.html">CommandDispatcher&lt;&gt;</a> d{ctx.commandStack};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <span class="keyword">auto</span> first = s.begin()-&gt;data();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">auto</span> c = qobject_cast&lt;const Process::Cable*&gt;(first))</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">auto</span>&amp; doc = score::IDocument::get&lt;ScenarioDocumentModel&gt;(ctx.document);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        d.submit&lt;<a class="code" href="class_dataflow_1_1_remove_cable.html">Dataflow::RemoveCable</a>&gt;(doc, *c);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<span class="keyword">auto</span> proc = qobject_cast&lt;const Process::ProcessModel*&gt;(first))</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">using namespace </span>Command;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">auto</span> p = proc-&gt;parent();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">if</span> (<span class="keyword">auto</span> itv = qobject_cast&lt;IntervalModel*&gt;(p))</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;          d.submit&lt;RemoveProcessFromInterval&gt;(*itv, proc-&gt;id());</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<span class="keyword">auto</span> st = qobject_cast&lt;StateModel*&gt;(p))</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;          d.submit&lt;RemoveStateProcess&gt;(*st, proc-&gt;id());</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">auto</span> sm = focusedScenarioModel(ctx))</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keywordflow">if</span> (s.size() == 1)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">auto</span> first = s.begin()-&gt;data();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">if</span> (<span class="keyword">auto</span> cb = qobject_cast&lt;const Scenario::CommentBlockModel*&gt;(first))</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;          <a class="code" href="class_command_dispatcher.html">CommandDispatcher&lt;&gt;</a> d{ctx.commandStack};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;          d.submit&lt;<a class="code" href="class_scenario_1_1_command_1_1_remove_comment_block.html">Command::RemoveCommentBlock</a>&gt;(*sm, *cb);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      Scenario::removeSelection(*sm, ctx);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">auto</span> si = focusedScenarioInterface(ctx);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">if</span> (si)</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      Scenario::clearContentFromSelection(*si, ctx);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>
 <div class="ttc" id="aclass_selection_html"><div class="ttname"><a href="class_selection.html">Selection</a></div><div class="ttdef"><b>Definition:</b> Selection.hpp:11</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:15</div></div>
-<div class="ttc" id="aclass_scenario_1_1_scenario_remover_html"><div class="ttname"><a href="class_scenario_1_1_scenario_remover.html">Scenario::ScenarioRemover</a></div><div class="ttdef"><b>Definition:</b> ScenarioRemover.hpp:15</div></div>
+<div class="ttc" id="aclass_scenario_1_1_scenario_remover_html"><div class="ttname"><a href="class_scenario_1_1_scenario_remover.html">Scenario::ScenarioRemover</a></div><div class="ttdef"><b>Definition:</b> ScenarioRemover.hpp:16</div></div>
 <div class="ttc" id="astructscore_1_1_object_remover_html"><div class="ttname"><a href="structscore_1_1_object_remover.html">score::ObjectRemover</a></div><div class="ttdef"><b>Definition:</b> ObjectRemover.hpp:10</div></div>
 <div class="ttc" id="aclass_command_dispatcher_html"><div class="ttname"><a href="class_command_dispatcher.html">CommandDispatcher&lt;&gt;</a></div></div>
-<div class="ttc" id="aclass_scenario_1_1_command_1_1_remove_comment_block_html"><div class="ttname"><a href="class_scenario_1_1_command_1_1_remove_comment_block.html">Scenario::Command::RemoveCommentBlock</a></div><div class="ttdef"><b>Definition:</b> CreateCommentBlock.hpp:37</div></div>
-<div class="ttc" id="aclass_dataflow_1_1_remove_cable_html"><div class="ttname"><a href="class_dataflow_1_1_remove_cable.html">Dataflow::RemoveCable</a></div><div class="ttdef"><b>Definition:</b> EditConnection.hpp:55</div></div>
+<div class="ttc" id="aclass_scenario_1_1_command_1_1_remove_comment_block_html"><div class="ttname"><a href="class_scenario_1_1_command_1_1_remove_comment_block.html">Scenario::Command::RemoveCommentBlock</a></div><div class="ttdef"><b>Definition:</b> CreateCommentBlock.hpp:44</div></div>
+<div class="ttc" id="aclass_dataflow_1_1_remove_cable_html"><div class="ttname"><a href="class_dataflow_1_1_remove_cable.html">Dataflow::RemoveCable</a></div><div class="ttdef"><b>Definition:</b> EditConnection.hpp:62</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

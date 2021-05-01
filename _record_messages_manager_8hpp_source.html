@@ -110,38 +110,41 @@ $(document).ready(function(){initNavTree('_record_messages_manager_8hpp_source.h
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <span class="keywordtype">double</span> percentage;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <a class="code" href="struct_state_1_1_message.html">State::Message</a> m;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;};</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_recording_1_1_message_recorder.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_recording_1_1_message_recorder.html">MessageRecorder</a> : <span class="keyword">public</span> QObject, <span class="keyword">public</span> <a class="code" href="struct_recording_1_1_record_provider.html">RecordProvider</a>, <span class="keyword">public</span> Nano::Observer</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  W_OBJECT(<a class="code" href="class_recording_1_1_message_recorder.html">MessageRecorder</a>)</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <a class="code" href="struct_recording_1_1_record_context.html">RecordContext</a>&amp; context;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <a class="code" href="class_recording_1_1_message_recorder.html">MessageRecorder</a>(<a class="code" href="struct_recording_1_1_record_context.html">RecordContext</a>&amp; ctx);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordtype">bool</span> setup(<span class="keyword">const</span> <a class="code" href="struct_recording_1_1_box.html">Box</a>&amp;, <span class="keyword">const</span> RecordListening&amp;) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordtype">void</span> stop() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_recording_1_1_message_recorder.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_recording_1_1_message_recorder.html">MessageRecorder</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    , <span class="keyword">public</span> <a class="code" href="struct_recording_1_1_record_provider.html">RecordProvider</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    , <span class="keyword">public</span> Nano::Observer</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  W_OBJECT(<a class="code" href="class_recording_1_1_message_recorder.html">MessageRecorder</a>)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="struct_recording_1_1_record_context.html">RecordContext</a>&amp; context;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <a class="code" href="class_recording_1_1_message_recorder.html">MessageRecorder</a>(<a class="code" href="struct_recording_1_1_record_context.html">RecordContext</a>&amp; ctx);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">void</span> firstMessageReceived() W_SIGNAL(firstMessageReceived);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordtype">bool</span> setup(<span class="keyword">const</span> <a class="code" href="struct_recording_1_1_box.html">Box</a>&amp;, <span class="keyword">const</span> RecordListening&amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">void</span> stop() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">void</span> on_valueUpdated(<span class="keyword">const</span> <a class="code" href="struct_state_1_1_address.html">State::Address</a>&amp; addr, <span class="keyword">const</span> ossia::value&amp; val);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  std::vector&lt;QPointer&lt;Device::DeviceInterface&gt;&gt; m_recordCallbackConnections;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>* m_createdProcess{};</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  std::vector&lt;RecordedMessage&gt; m_records;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">void</span> firstMessageReceived() W_SIGNAL(firstMessageReceived);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> on_valueUpdated(<span class="keyword">const</span> <a class="code" href="struct_state_1_1_address.html">State::Address</a>&amp; addr, <span class="keyword">const</span> ossia::value&amp; val);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  std::vector&lt;QPointer&lt;Device::DeviceInterface&gt;&gt; m_recordCallbackConnections;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>* m_createdProcess{};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  std::vector&lt;RecordedMessage&gt; m_records;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astruct_state_1_1_address_html"><div class="ttname"><a href="struct_state_1_1_address.html">State::Address</a></div><div class="ttdoc">The Address struct.</div><div class="ttdef"><b>Definition:</b> Address.hpp:57</div></div>
 <div class="ttc" id="astruct_recording_1_1_record_context_html"><div class="ttname"><a href="struct_recording_1_1_record_context.html">Recording::RecordContext</a></div><div class="ttdef"><b>Definition:</b> RecordProviderFactory.hpp:26</div></div>
 <div class="ttc" id="aclass_recording_1_1_message_recorder_html"><div class="ttname"><a href="class_recording_1_1_message_recorder.html">Recording::MessageRecorder</a></div><div class="ttdef"><b>Definition:</b> RecordMessagesManager.hpp:13</div></div>
-<div class="ttc" id="astruct_recording_1_1_box_html"><div class="ttname"><a href="struct_recording_1_1_box.html">Recording::Box</a></div><div class="ttdef"><b>Definition:</b> RecordTools.hpp:61</div></div>
-<div class="ttc" id="aclass_scenario_1_1_process_model_html"><div class="ttname"><a href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a></div><div class="ttdoc">The core hierarchical and temporal process of score.</div><div class="ttdef"><b>Definition:</b> ScenarioModel.hpp:33</div></div>
+<div class="ttc" id="astruct_recording_1_1_box_html"><div class="ttname"><a href="struct_recording_1_1_box.html">Recording::Box</a></div><div class="ttdef"><b>Definition:</b> RecordTools.hpp:62</div></div>
+<div class="ttc" id="aclass_scenario_1_1_process_model_html"><div class="ttname"><a href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a></div><div class="ttdoc">The core hierarchical and temporal process of score.</div><div class="ttdef"><b>Definition:</b> ScenarioModel.hpp:34</div></div>
 <div class="ttc" id="astruct_recording_1_1_recorded_message_html"><div class="ttname"><a href="struct_recording_1_1_recorded_message.html">Recording::RecordedMessage</a></div><div class="ttdef"><b>Definition:</b> RecordMessagesManager.hpp:8</div></div>
 <div class="ttc" id="astruct_state_1_1_message_html"><div class="ttname"><a href="struct_state_1_1_message.html">State::Message</a></div><div class="ttdoc">The Message struct.</div><div class="ttdef"><b>Definition:</b> Message.hpp:14</div></div>
-<div class="ttc" id="astruct_recording_1_1_record_provider_html"><div class="ttname"><a href="struct_recording_1_1_record_provider.html">Recording::RecordProvider</a></div><div class="ttdef"><b>Definition:</b> RecordProviderFactory.hpp:66</div></div>
+<div class="ttc" id="astruct_recording_1_1_record_provider_html"><div class="ttname"><a href="struct_recording_1_1_record_provider.html">Recording::RecordProvider</a></div><div class="ttdef"><b>Definition:</b> RecordProviderFactory.hpp:72</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

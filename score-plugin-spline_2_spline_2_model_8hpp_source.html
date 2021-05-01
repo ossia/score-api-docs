@@ -122,80 +122,87 @@ $(document).ready(function(){initNavTree('score-plugin-spline_2_spline_2_model_8
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  W_OBJECT(<a class="code" href="class_spline_1_1_process_model.html">ProcessModel</a>)</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="class_spline_1_1_process_model.html">ProcessModel</a>(<span class="keyword">const</span> <a class="code" href="struct_time_val.html">TimeVal</a>&amp; duration, <span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Process::ProcessModel&gt;</a>&amp; <span class="keywordtype">id</span>, QObject* parent);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  ~<a class="code" href="class_spline_1_1_process_model.html">ProcessModel</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Impl&gt;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="class_spline_1_1_process_model.html">ProcessModel</a>(Impl&amp; vis, QObject* parent) : <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>{vis, parent}</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    vis.writeTo(*<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    init();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">void</span> init();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a> address() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">void</span> setAddress(<span class="keyword">const</span> <a class="code" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a>&amp; arg);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="struct_state_1_1_unit.html">State::Unit</a> unit() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span> setUnit(<span class="keyword">const</span> <a class="code" href="struct_state_1_1_unit.html">State::Unit</a>&amp;);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">bool</span> tween()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_tween; }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">void</span> setTween(<span class="keywordtype">bool</span> tween)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span> (m_tween == tween)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    m_tween = tween;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    tweenChanged(tween);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="class_spline_1_1_process_model.html">ProcessModel</a>(</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_time_val.html">TimeVal</a>&amp; duration,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      <span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Process::ProcessModel&gt;</a>&amp; <span class="keywordtype">id</span>,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      QObject* parent);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  ~<a class="code" href="class_spline_1_1_process_model.html">ProcessModel</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Impl&gt;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <a class="code" href="class_spline_1_1_process_model.html">ProcessModel</a>(Impl&amp; vis, QObject* parent)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      : <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>{vis, parent}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    vis.writeTo(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    init();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span> init();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a> address() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> setAddress(<span class="keyword">const</span> <a class="code" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a>&amp; arg);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="struct_state_1_1_unit.html">State::Unit</a> unit() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> setUnit(<span class="keyword">const</span> <a class="code" href="struct_state_1_1_unit.html">State::Unit</a>&amp;);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">bool</span> tween()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_tween; }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> setTween(<span class="keywordtype">bool</span> tween)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">if</span> (m_tween == tween)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  QString prettyName() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">const</span> ossia::spline_data&amp; spline() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> m_spline; }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> setSpline(<span class="keyword">const</span> ossia::spline_data&amp; c)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">if</span> (m_spline != c)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      m_spline = c;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      splineChanged();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  std::unique_ptr&lt;Process::Outlet&gt; outlet;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> addressChanged(const ::State::AddressAccessor&amp; arg_1) W_SIGNAL(addressChanged, arg_1);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> tweenChanged(<span class="keywordtype">bool</span> tween) W_SIGNAL(tweenChanged, tween);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> unitChanged(<span class="keyword">const</span> <a class="code" href="struct_state_1_1_unit.html">State::Unit</a>&amp; arg_1) W_SIGNAL(unitChanged, arg_1);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> splineChanged() W_SIGNAL(splineChanged);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">void</span> setDurationAndScale(<span class="keyword">const</span> <a class="code" href="struct_time_val.html">TimeVal</a>&amp; newDuration) noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> setDurationAndGrow(<span class="keyword">const</span> <a class="code" href="struct_time_val.html">TimeVal</a>&amp; newDuration) noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> setDurationAndShrink(<span class="keyword">const</span> <a class="code" href="struct_time_val.html">TimeVal</a>&amp; newDuration) noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="struct_time_val.html">TimeVal</a> contentDuration() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> loadPreset(<span class="keyword">const</span> <a class="code" href="struct_process_1_1_preset.html">Process::Preset</a>&amp; preset) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="struct_process_1_1_preset.html">Process::Preset</a> savePreset() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  ossia::spline_data m_spline;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">bool</span> m_tween = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  W_PROPERTY(<a class="code" href="struct_state_1_1_unit.html">State::Unit</a>, unit READ unit WRITE setUnit NOTIFY unitChanged)</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  W_PROPERTY(<span class="keywordtype">bool</span>, tween READ tween WRITE setTween NOTIFY tweenChanged)</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  W_PROPERTY(<a class="code" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a>, address READ address WRITE setAddress NOTIFY addressChanged)</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    m_tween = tween;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    tweenChanged(tween);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  QString prettyName() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">const</span> ossia::spline_data&amp; spline() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> m_spline; }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">void</span> setSpline(<span class="keyword">const</span> ossia::spline_data&amp; c)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">if</span> (m_spline != c)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      m_spline = c;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      splineChanged();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  std::unique_ptr&lt;Process::Outlet&gt; outlet;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> addressChanged(const ::State::AddressAccessor&amp; arg_1)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      W_SIGNAL(addressChanged, arg_1);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">void</span> tweenChanged(<span class="keywordtype">bool</span> tween) W_SIGNAL(tweenChanged, tween);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">void</span> unitChanged(<span class="keyword">const</span> <a class="code" href="struct_state_1_1_unit.html">State::Unit</a>&amp; arg_1) W_SIGNAL(unitChanged, arg_1);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> splineChanged() W_SIGNAL(splineChanged);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> setDurationAndScale(<span class="keyword">const</span> <a class="code" href="struct_time_val.html">TimeVal</a>&amp; newDuration) noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">void</span> setDurationAndGrow(<span class="keyword">const</span> <a class="code" href="struct_time_val.html">TimeVal</a>&amp; newDuration) noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">void</span> setDurationAndShrink(<span class="keyword">const</span> <a class="code" href="struct_time_val.html">TimeVal</a>&amp; newDuration) noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="struct_time_val.html">TimeVal</a> contentDuration() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">void</span> loadPreset(<span class="keyword">const</span> <a class="code" href="struct_process_1_1_preset.html">Process::Preset</a>&amp; preset) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="struct_process_1_1_preset.html">Process::Preset</a> savePreset() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  ossia::spline_data m_spline;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">bool</span> m_tween = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  W_PROPERTY(<a class="code" href="struct_state_1_1_unit.html">State::Unit</a>, unit READ unit WRITE setUnit NOTIFY unitChanged)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  W_PROPERTY(<span class="keywordtype">bool</span>, tween READ tween WRITE setTween NOTIFY tweenChanged)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  W_PROPERTY(</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <a class="code" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a>,</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      address READ address WRITE setAddress NOTIFY addressChanged)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="a_visitor_common_8hpp_html"><div class="ttname"><a href="_visitor_common_8hpp.html">VisitorCommon.hpp</a></div></div>
-<div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition:</b> TimeValue.hpp:20</div></div>
+<div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition:</b> TimeValue.hpp:19</div></div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition:</b> Identifier.hpp:56</div></div>
 <div class="ttc" id="astruct_state_1_1_unit_html"><div class="ttname"><a href="struct_state_1_1_unit.html">State::Unit</a></div><div class="ttdef"><b>Definition:</b> Unit.hpp:17</div></div>
 <div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Process.hpp:55</div></div>
 <div class="ttc" id="aclass_spline_1_1_process_model_html"><div class="ttname"><a href="class_spline_1_1_process_model.html">Spline::ProcessModel</a></div><div class="ttdef"><b>Definition:</b> score-plugin-spline/Spline/Model.hpp:17</div></div>
-<div class="ttc" id="astruct_process_1_1_preset_html"><div class="ttname"><a href="struct_process_1_1_preset.html">Process::Preset</a></div><div class="ttdef"><b>Definition:</b> Preset.hpp:27</div></div>
+<div class="ttc" id="astruct_process_1_1_preset_html"><div class="ttname"><a href="struct_process_1_1_preset.html">Process::Preset</a></div><div class="ttdef"><b>Definition:</b> Preset.hpp:34</div></div>
 <div class="ttc" id="astruct_state_1_1_address_accessor_html"><div class="ttname"><a href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a></div><div class="ttdef"><b>Definition:</b> Address.hpp:102</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

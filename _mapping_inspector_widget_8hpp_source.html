@@ -136,23 +136,25 @@ $(document).ready(function(){initNavTree('_mapping_inspector_widget_8hpp_source.
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      QWidget* parent);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span> on_sourceAddressChange(<span class="keyword">const</span> <a class="code" href="struct_device_1_1_full_address_accessor_settings.html">Device::FullAddressAccessorSettings</a>&amp; newText);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">void</span> on_sourceMinValueChanged();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> on_sourceMaxValueChanged();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> on_targetAddressChange(<span class="keyword">const</span> <a class="code" href="struct_device_1_1_full_address_accessor_settings.html">Device::FullAddressAccessorSettings</a>&amp; newText);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> on_targetMinValueChanged();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> on_targetMaxValueChanged();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="class_device_1_1_address_accessor_edit_widget.html">Device::AddressAccessorEditWidget</a>* m_sourceLineEdit{};</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  QDoubleSpinBox *m_sourceMin{}, *m_sourceMax{};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="class_device_1_1_address_accessor_edit_widget.html">Device::AddressAccessorEditWidget</a>* m_targetLineEdit{};</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  QDoubleSpinBox *m_targetMin{}, *m_targetMax{};</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="class_command_dispatcher.html">CommandDispatcher&lt;&gt;</a> m_dispatcher;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  on_sourceAddressChange(<span class="keyword">const</span> <a class="code" href="struct_device_1_1_full_address_accessor_settings.html">Device::FullAddressAccessorSettings</a>&amp; newText);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> on_sourceMinValueChanged();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">void</span> on_sourceMaxValueChanged();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  on_targetAddressChange(<span class="keyword">const</span> <a class="code" href="struct_device_1_1_full_address_accessor_settings.html">Device::FullAddressAccessorSettings</a>&amp; newText);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> on_targetMinValueChanged();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">void</span> on_targetMaxValueChanged();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="class_device_1_1_address_accessor_edit_widget.html">Device::AddressAccessorEditWidget</a>* m_sourceLineEdit{};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  QDoubleSpinBox *m_sourceMin{}, *m_sourceMax{};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="class_device_1_1_address_accessor_edit_widget.html">Device::AddressAccessorEditWidget</a>* m_targetLineEdit{};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  QDoubleSpinBox *m_targetMin{}, *m_targetMax{};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="class_command_dispatcher.html">CommandDispatcher&lt;&gt;</a> m_dispatcher;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_mapping_1_1_process_model_html"><div class="ttname"><a href="class_mapping_1_1_process_model.html">Mapping::ProcessModel</a></div><div class="ttdef"><b>Definition:</b> MappingModel.hpp:23</div></div>
@@ -163,7 +165,7 @@ $(document).ready(function(){initNavTree('_mapping_inspector_widget_8hpp_source.
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:65</div></div>
 <div class="ttc" id="aclass_command_dispatcher_html"><div class="ttname"><a href="class_command_dispatcher.html">CommandDispatcher&lt;&gt;</a></div></div>
 <div class="ttc" id="aclass_mapping_1_1_inspector_widget_html"><div class="ttname"><a href="class_mapping_1_1_inspector_widget.html">Mapping::InspectorWidget</a></div><div class="ttdef"><b>Definition:</b> MappingInspectorWidget.hpp:30</div></div>
-<div class="ttc" id="astruct_device_1_1_full_address_accessor_settings_html"><div class="ttname"><a href="struct_device_1_1_full_address_accessor_settings.html">Device::FullAddressAccessorSettings</a></div><div class="ttdef"><b>Definition:</b> AddressSettings.hpp:127</div></div>
+<div class="ttc" id="astruct_device_1_1_full_address_accessor_settings_html"><div class="ttname"><a href="struct_device_1_1_full_address_accessor_settings.html">Device::FullAddressAccessorSettings</a></div><div class="ttdef"><b>Definition:</b> AddressSettings.hpp:138</div></div>
 <div class="ttc" id="anamespace_device_html"><div class="ttname"><a href="namespace_device.html">Device</a></div><div class="ttdoc">Manipulation of Devices from Qt.</div><div class="ttdef"><b>Definition:</b> AddressSettings.cpp:13</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

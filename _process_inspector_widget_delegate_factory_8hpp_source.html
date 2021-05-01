@@ -151,47 +151,52 @@ $(document).ready(function(){initNavTree('_process_inspector_widget_delegate_fac
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Process_T, <span class="keyword">typename</span> W<span class="keywordtype">id</span>get_T&gt;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_process_1_1_inspector_widget_delegate_factory___t.html">   54</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_process_1_1_inspector_widget_delegate_factory___t.html">InspectorWidgetDelegateFactory_T</a> : <span class="keyword">public</span> <a class="code" href="class_process_1_1_inspector_widget_delegate_factory.html">Process::InspectorWidgetDelegateFactory</a></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  QWidget* make_process(</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; process,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; doc,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      QWidget* parent)<span class="keyword"> const override</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">auto</span> w = <span class="keyword">new</span> Widget_T{safe_cast&lt;const Process_T&amp;&gt;(process), doc, <span class="keyword">nullptr</span>};</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> wrap(process, doc, w, parent);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">bool</span> matches_process(<span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; process)<span class="keyword"> const override</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>Process_T*<span class="keyword">&gt;</span>(&amp;process);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_process_1_1_default_inspector_widget_delegate_factory.html">   73</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_process_1_1_default_inspector_widget_delegate_factory.html">DefaultInspectorWidgetDelegateFactory</a> : <span class="keyword">public</span> <a class="code" href="class_process_1_1_inspector_widget_delegate_factory.html">Process::InspectorWidgetDelegateFactory</a></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;07c0f07b-f996-4aa9-88b9-664486ddbb00&quot;</span>)</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  QWidget* make_process(</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; process,</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; doc,</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      QWidget* parent)<span class="keyword"> const override</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> wrap(process, doc, <span class="keyword">nullptr</span>, parent);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">bool</span> matches_process(<span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; process)<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_process_1_1_inspector_widget_delegate_factory___t.html">   54</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_process_1_1_inspector_widget_delegate_factory___t.html">InspectorWidgetDelegateFactory_T</a></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    : <span class="keyword">public</span> <a class="code" href="class_process_1_1_inspector_widget_delegate_factory.html">Process::InspectorWidgetDelegateFactory</a></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  QWidget* make_process(</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; process,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; doc,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      QWidget* parent)<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">auto</span> w = <span class="keyword">new</span> Widget_T{safe_cast&lt;const Process_T&amp;&gt;(process), doc, <span class="keyword">nullptr</span>};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> wrap(process, doc, w, parent);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">bool</span> matches_process(<span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; process)<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>Process_T*<span class="keyword">&gt;</span>(&amp;process);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="class_process_1_1_default_inspector_widget_delegate_factory.html">   74</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_process_1_1_default_inspector_widget_delegate_factory.html">DefaultInspectorWidgetDelegateFactory</a></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    : <span class="keyword">public</span> <a class="code" href="class_process_1_1_inspector_widget_delegate_factory.html">Process::InspectorWidgetDelegateFactory</a></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;07c0f07b-f996-4aa9-88b9-664486ddbb00&quot;</span>)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  QWidget* make_process(</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; process,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; doc,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      QWidget* parent)<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> wrap(process, doc, <span class="keyword">nullptr</span>, parent);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">bool</span> matches_process(<span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; process)<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1291</div></div>
+<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1366</div></div>
 <div class="ttc" id="aclass_process_1_1_inspector_widget_delegate_factory_html"><div class="ttname"><a href="class_process_1_1_inspector_widget_delegate_factory.html">Process::InspectorWidgetDelegateFactory</a></div><div class="ttdef"><b>Definition:</b> ProcessInspectorWidgetDelegateFactory.hpp:20</div></div>
 <div class="ttc" id="astructmatches_html"><div class="ttname"><a href="structmatches.html">matches</a></div><div class="ttdef"><b>Definition:</b> ObjectMatches.hpp:5</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:15</div></div>
-<div class="ttc" id="aclass_process_1_1_default_inspector_widget_delegate_factory_html"><div class="ttname"><a href="class_process_1_1_default_inspector_widget_delegate_factory.html">Process::DefaultInspectorWidgetDelegateFactory</a></div><div class="ttdef"><b>Definition:</b> ProcessInspectorWidgetDelegateFactory.hpp:73</div></div>
+<div class="ttc" id="aclass_process_1_1_default_inspector_widget_delegate_factory_html"><div class="ttname"><a href="class_process_1_1_default_inspector_widget_delegate_factory.html">Process::DefaultInspectorWidgetDelegateFactory</a></div><div class="ttdef"><b>Definition:</b> ProcessInspectorWidgetDelegateFactory.hpp:74</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:65</div></div>
 <div class="ttc" id="aclass_inspector_1_1_inspector_widget_factory_html"><div class="ttname"><a href="class_inspector_1_1_inspector_widget_factory.html">Inspector::InspectorWidgetFactory</a></div><div class="ttdoc">The InspectorWidgetFactoryInterface class.</div><div class="ttdef"><b>Definition:</b> InspectorWidgetFactoryInterface.hpp:31</div></div>
 <div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Process.hpp:55</div></div>

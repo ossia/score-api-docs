@@ -137,71 +137,79 @@ $(document).ready(function(){initNavTree('_curve_edition_settings_8hpp_source.ht
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">bool</span> m_lockBetweenPoints{<span class="keyword">true</span>};</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">bool</span> m_suppressOnOverlap{<span class="keyword">true</span>};</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">bool</span> m_stretchBothBounds{<span class="keyword">false</span>};</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  Curve::AddPointBehaviour m_addPointBehaviour{AddPointBehaviour::DuplicateSegment};</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  Curve::RemovePointBehaviour m_removePointBehaviour{RemovePointBehaviour::RemoveAndAddSegment};</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  Curve::Tool m_tool{Curve::Tool::Disabled};</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">bool</span> lockBetweenPoints() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">bool</span> suppressOnOverlap() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">bool</span> stretchBothBounds() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  Curve::AddPointBehaviour addPointBehaviour() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  Curve::RemovePointBehaviour removePointBehaviour() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  Curve::Tool tool() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> setLockBetweenPoints(<span class="keywordtype">bool</span>);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> setSuppressOnOverlap(<span class="keywordtype">bool</span>);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> setStretchBothBounds(<span class="keywordtype">bool</span>);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> setAddPointBehaviour(Curve::AddPointBehaviour);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> setRemovePointBehaviour(Curve::RemovePointBehaviour removePointBehaviour);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">void</span> setTool(Curve::Tool tool);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> lockBetweenPointsChanged(<span class="keywordtype">bool</span> arg_1)</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, lockBetweenPointsChanged, arg_1)</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> suppressOnOverlapChanged(<span class="keywordtype">bool</span> arg_1)</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, suppressOnOverlapChanged, arg_1)</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> stretchBothBoundsChanged(<span class="keywordtype">bool</span> arg_1)</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, stretchBothBoundsChanged, arg_1)</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> addPointBehaviourChanged(Curve::AddPointBehaviour arg_1)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, addPointBehaviourChanged, arg_1)</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> removePointBehaviourChanged(Curve::RemovePointBehaviour removePointBehaviour)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, removePointBehaviourChanged, removePointBehaviour)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span> toolChanged(Curve::Tool tool) E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, toolChanged, tool)</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  W_PROPERTY(Curve::Tool, tool READ tool WRITE setTool NOTIFY toolChanged)</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  W_PROPERTY(</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      Curve::RemovePointBehaviour,</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      removePointBehaviour READ removePointBehaviour WRITE setRemovePointBehaviour NOTIFY</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;          removePointBehaviourChanged)</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  W_PROPERTY(</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      Curve::AddPointBehaviour,</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      addPointBehaviour READ addPointBehaviour WRITE setAddPointBehaviour NOTIFY</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;          addPointBehaviourChanged)</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  W_PROPERTY(</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <span class="keywordtype">bool</span>,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      stretchBothBounds READ stretchBothBounds WRITE setStretchBothBounds NOTIFY</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;          stretchBothBoundsChanged)</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  W_PROPERTY(</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="keywordtype">bool</span>,</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      suppressOnOverlap READ suppressOnOverlap WRITE setSuppressOnOverlap NOTIFY</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;          suppressOnOverlapChanged)</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  W_PROPERTY(</div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_curve_1_1_tool_01_4.html">   95</a></span>&#160;      <span class="keywordtype">bool</span>,</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      lockBetweenPoints READ lockBetweenPoints WRITE setLockBetweenPoints NOTIFY</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;          lockBetweenPointsChanged)</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;};</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;Q_DECLARE_METATYPE(Curve::Tool)</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;W_REGISTER_ARGTYPE(Curve::Tool)</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;W_REGISTER_ARGTYPE(Curve::AddPointBehaviour)</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;W_REGISTER_ARGTYPE(Curve::RemovePointBehaviour)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  Curve::AddPointBehaviour m_addPointBehaviour{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      AddPointBehaviour::DuplicateSegment};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  Curve::RemovePointBehaviour m_removePointBehaviour{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      RemovePointBehaviour::RemoveAndAddSegment};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  Curve::Tool m_tool{Curve::Tool::Disabled};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">bool</span> lockBetweenPoints() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">bool</span> suppressOnOverlap() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">bool</span> stretchBothBounds() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  Curve::AddPointBehaviour addPointBehaviour() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  Curve::RemovePointBehaviour removePointBehaviour() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  Curve::Tool tool() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> setLockBetweenPoints(<span class="keywordtype">bool</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> setSuppressOnOverlap(<span class="keywordtype">bool</span>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> setStretchBothBounds(<span class="keywordtype">bool</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">void</span> setAddPointBehaviour(Curve::AddPointBehaviour);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  setRemovePointBehaviour(Curve::RemovePointBehaviour removePointBehaviour);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> setTool(Curve::Tool tool);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">void</span> lockBetweenPointsChanged(<span class="keywordtype">bool</span> arg_1)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, lockBetweenPointsChanged, arg_1)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> suppressOnOverlapChanged(<span class="keywordtype">bool</span> arg_1)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, suppressOnOverlapChanged, arg_1)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> stretchBothBoundsChanged(<span class="keywordtype">bool</span> arg_1)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, stretchBothBoundsChanged, arg_1)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> addPointBehaviourChanged(Curve::AddPointBehaviour arg_1)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, addPointBehaviourChanged, arg_1)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  removePointBehaviourChanged(Curve::RemovePointBehaviour removePointBehaviour)</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      E_SIGNAL(</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;          SCORE_PLUGIN_CURVE_EXPORT,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;          removePointBehaviourChanged,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;          removePointBehaviour)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> toolChanged(Curve::Tool tool)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, toolChanged, tool)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  W_PROPERTY(Curve::Tool, tool READ tool WRITE setTool NOTIFY toolChanged)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  W_PROPERTY(</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      Curve::RemovePointBehaviour,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      removePointBehaviour READ removePointBehaviour WRITE</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;          setRemovePointBehaviour NOTIFY removePointBehaviourChanged)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  W_PROPERTY(</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      Curve::AddPointBehaviour,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      addPointBehaviour READ addPointBehaviour WRITE setAddPointBehaviour</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;          NOTIFY addPointBehaviourChanged)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  W_PROPERTY(</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <span class="keywordtype">bool</span>,</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      stretchBothBounds READ stretchBothBounds WRITE setStretchBothBounds</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;          NOTIFY stretchBothBoundsChanged)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  W_PROPERTY(</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <span class="keywordtype">bool</span>,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      suppressOnOverlap READ suppressOnOverlap WRITE setSuppressOnOverlap</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;          NOTIFY suppressOnOverlapChanged)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  W_PROPERTY(</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_curve_1_1_tool_01_4.html">  103</a></span>&#160;      <span class="keywordtype">bool</span>,</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      lockBetweenPoints READ lockBetweenPoints WRITE setLockBetweenPoints</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;          NOTIFY lockBetweenPointsChanged)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;};</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;Q_DECLARE_METATYPE(Curve::Tool)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;W_REGISTER_ARGTYPE(Curve::Tool)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;W_REGISTER_ARGTYPE(Curve::AddPointBehaviour)</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;W_REGISTER_ARGTYPE(Curve::RemovePointBehaviour)</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_curve_html"><div class="ttname"><a href="namespace_curve.html">Curve</a></div><div class="ttdoc">Utilities and base classes for 1D curves.</div><div class="ttdef"><b>Definition:</b> FocusDispatcher.hpp:11</div></div>

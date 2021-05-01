@@ -130,24 +130,28 @@ $(document).ready(function(){initNavTree('_listening_manager_8hpp_source.html','
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> setDeviceWidgetListening();</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  disableListening_rec(<span class="keyword">const</span> <a class="code" href="class_tree_node.html">Device::Node</a>&amp; node, <a class="code" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>&amp;, <a class="code" href="class_explorer_1_1_listening_handler.html">ListeningHandler</a>&amp; lm);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  enableListening_rec(<span class="keyword">const</span> QModelIndex&amp; index, <a class="code" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>&amp;, <a class="code" href="class_explorer_1_1_listening_handler.html">ListeningHandler</a>&amp; lm);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>&amp; deviceFromNode(<span class="keyword">const</span> <a class="code" href="class_tree_node.html">Device::Node</a>&amp;);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>&amp; deviceFromProxyModelIndex(<span class="keyword">const</span> QModelIndex&amp;);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>&amp; deviceFromModelIndex(<span class="keyword">const</span> QModelIndex&amp; idx);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">void</span> disableListening_rec(</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_tree_node.html">Device::Node</a>&amp; node,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <a class="code" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>&amp;,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <a class="code" href="class_explorer_1_1_listening_handler.html">ListeningHandler</a>&amp; lm);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">void</span> enableListening_rec(</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keyword">const</span> QModelIndex&amp; index,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <a class="code" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>&amp;,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <a class="code" href="class_explorer_1_1_listening_handler.html">ListeningHandler</a>&amp; lm);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="class_tree_node.html">Device::Node</a>&amp; nodeFromProxyModelIndex(<span class="keyword">const</span> QModelIndex&amp;);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="class_tree_node.html">Device::Node</a>&amp; nodeFromModelIndex(<span class="keyword">const</span> QModelIndex&amp;);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="class_explorer_1_1_listening_handler.html">ListeningHandler</a>&amp; m_handler;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>&amp; deviceFromNode(<span class="keyword">const</span> <a class="code" href="class_tree_node.html">Device::Node</a>&amp;);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>&amp; deviceFromProxyModelIndex(<span class="keyword">const</span> QModelIndex&amp;);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>&amp; deviceFromModelIndex(<span class="keyword">const</span> QModelIndex&amp; idx);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="class_tree_node.html">Device::Node</a>&amp; nodeFromProxyModelIndex(<span class="keyword">const</span> QModelIndex&amp;);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="class_tree_node.html">Device::Node</a>&amp; nodeFromModelIndex(<span class="keyword">const</span> QModelIndex&amp;);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="class_explorer_1_1_listening_handler.html">ListeningHandler</a>&amp; m_handler;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_explorer_1_1_device_explorer_model_html"><div class="ttname"><a href="class_explorer_1_1_device_explorer_model.html">Explorer::DeviceExplorerModel</a></div><div class="ttdef"><b>Definition:</b> DeviceExplorerModel.hpp:62</div></div>
+<div class="ttc" id="aclass_explorer_1_1_device_explorer_model_html"><div class="ttname"><a href="class_explorer_1_1_device_explorer_model.html">Explorer::DeviceExplorerModel</a></div><div class="ttdef"><b>Definition:</b> DeviceExplorerModel.hpp:63</div></div>
 <div class="ttc" id="aclass_tree_node_html"><div class="ttname"><a href="class_tree_node.html">TreeNode&lt; DeviceExplorerNode &gt;</a></div></div>
 <div class="ttc" id="aclass_explorer_1_1_listening_handler_html"><div class="ttname"><a href="class_explorer_1_1_listening_handler.html">Explorer::ListeningHandler</a></div><div class="ttdef"><b>Definition:</b> ListeningHandler.hpp:20</div></div>
 <div class="ttc" id="aclass_device_1_1_device_interface_html"><div class="ttname"><a href="class_device_1_1_device_interface.html">Device::DeviceInterface</a></div><div class="ttdef"><b>Definition:</b> DeviceInterface.hpp:59</div></div>

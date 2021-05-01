@@ -100,15 +100,15 @@ $(document).ready(function(){initNavTree('_scenario_application_plugin_8hpp_sour
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Process/Layer/LayerContextMenu.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Scenario/Application/Menus/ObjectMenuActions.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Scenario/Application/Menus/ToolMenuActions.hpp&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Scenario/Application/Menus/TransportActions.hpp&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Scenario/Application/ScenarioEditionSettings.hpp&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;Scenario/Execution/ScenarioExecution.hpp&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;Scenario/Palette/ScenarioPoint.hpp&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;score/plugins/application/GUIApplicationPlugin.hpp&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;score/plugins/application/GUIApplicationPlugin.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Scenario/Application/Menus/ObjectMenuActions.hpp&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;Scenario/Application/Menus/ToolMenuActions.hpp&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;Scenario/Application/Menus/TransportActions.hpp&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;Scenario/Application/ScenarioEditionSettings.hpp&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;Scenario/Execution/ScenarioExecution.hpp&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;Scenario/Palette/ScenarioPoint.hpp&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;score_plugin_scenario_export.h&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
@@ -136,8 +136,8 @@ $(document).ready(function(){initNavTree('_scenario_application_plugin_8hpp_sour
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">class </span>StateModel;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_scenario_1_1_scenario_application_plugin.html">   38</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_SCENARIO_EXPORT <a class="code" href="class_scenario_1_1_scenario_application_plugin.html">ScenarioApplicationPlugin</a> final</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    : <span class="keyword">public</span> QObject,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keyword">public</span> <a class="code" href="classscore_1_1_g_u_i_application_plugin.html">score::GUIApplicationPlugin</a></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    , <span class="keyword">public</span> <a class="code" href="classscore_1_1_g_u_i_application_plugin.html">score::GUIApplicationPlugin</a></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  W_OBJECT(<a class="code" href="class_scenario_1_1_scenario_application_plugin.html">ScenarioApplicationPlugin</a>)</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_scenario_1_1_scenario_context_menu_manager.html">ScenarioContextMenuManager</a>;</div>
@@ -156,64 +156,68 @@ $(document).ready(function(){initNavTree('_scenario_application_plugin_8hpp_sour
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="class_scenario_1_1_edition_settings.html">Scenario::EditionSettings</a>&amp; editionSettings() { <span class="keywordflow">return</span> m_editionSettings; }</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="class_process_1_1_process_focus_manager.html">Process::ProcessFocusManager</a>* processFocusManager() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="class_process_1_1_layer_context_menu_manager.html">Process::LayerContextMenuManager</a>&amp; layerContextMenuRegistrar() { <span class="keywordflow">return</span> m_layerCtxMenuManager; }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_process_1_1_layer_context_menu_manager.html">Process::LayerContextMenuManager</a>&amp; layerContextMenuRegistrar()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> m_layerCtxMenuManager;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="class_scenario_1_1_scenario_execution.html">Scenario::ScenarioExecution</a>&amp; execution() { <span class="keywordflow">return</span> m_execution; }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="class_scenario_1_1_transport_actions.html">TransportActions</a>&amp; transportActions() { <span class="keywordflow">return</span> m_transportActions; };</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> keyPressed(<span class="keywordtype">int</span> arg_1) E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, keyPressed, arg_1)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span> keyReleased(<span class="keywordtype">int</span> arg_1) E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, keyReleased, arg_1)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="class_process_1_1_layer_context_menu_manager.html">Process::LayerContextMenuManager</a>&amp; layerContextMenuRegistrar()</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> m_layerCtxMenuManager;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_process_1_1_layer_context_menu_manager.html">Process::LayerContextMenuManager</a>&amp; layerContextMenuRegistrar()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> m_layerCtxMenuManager;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="class_scenario_1_1_scenario_execution.html">Scenario::ScenarioExecution</a>&amp; execution() { <span class="keywordflow">return</span> m_execution; }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="class_scenario_1_1_transport_actions.html">TransportActions</a>&amp; transportActions() { <span class="keywordflow">return</span> m_transportActions; };</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> prepareNewDocument() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> on_initDocument(<a class="code" href="classscore_1_1_document.html">score::Document</a>&amp; doc) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span> on_createdDocument(<a class="code" href="classscore_1_1_document.html">score::Document</a>&amp; doc) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> on_documentChanged(<a class="code" href="classscore_1_1_document.html">score::Document</a>* olddoc, <a class="code" href="classscore_1_1_document.html">score::Document</a>* newdoc) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">void</span> on_activeWindowChanged() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">void</span> on_presenterFocused(<a class="code" href="class_process_1_1_layer_presenter.html">Process::LayerPresenter</a>* lm);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">void</span> on_presenterDefocused(<a class="code" href="class_process_1_1_layer_presenter.html">Process::LayerPresenter</a>* lm);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  QMetaObject::Connection m_focusConnection,</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                          m_defocusConnection,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                          m_contextMenuConnection,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                          m_keyPressConnection,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                          m_keyReleaseConnection;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="code" href="class_scenario_1_1_edition_settings.html">Scenario::EditionSettings</a> m_editionSettings;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <a class="code" href="class_process_1_1_layer_context_menu_manager.html">Process::LayerContextMenuManager</a> m_layerCtxMenuManager;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <a class="code" href="class_scenario_1_1_scenario_execution.html">ScenarioExecution</a> m_execution;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> keyPressed(<span class="keywordtype">int</span> arg_1)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, keyPressed, arg_1)</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span> keyReleased(<span class="keywordtype">int</span> arg_1)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, keyReleased, arg_1)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">void</span> prepareNewDocument() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">void</span> on_initDocument(<a class="code" href="classscore_1_1_document.html">score::Document</a>&amp; doc) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">void</span> on_createdDocument(<a class="code" href="classscore_1_1_document.html">score::Document</a>&amp; doc) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">void</span> on_documentChanged(<a class="code" href="classscore_1_1_document.html">score::Document</a>* olddoc, <a class="code" href="classscore_1_1_document.html">score::Document</a>* newdoc)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">void</span> on_activeWindowChanged() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">void</span> on_presenterFocused(<a class="code" href="class_process_1_1_layer_presenter.html">Process::LayerPresenter</a>* lm);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">void</span> on_presenterDefocused(<a class="code" href="class_process_1_1_layer_presenter.html">Process::LayerPresenter</a>* lm);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  QMetaObject::Connection m_focusConnection, m_defocusConnection,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      m_contextMenuConnection, m_keyPressConnection, m_keyReleaseConnection;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="class_scenario_1_1_object_menu_actions.html">ObjectMenuActions</a> m_objectActions{<span class="keyword">this</span>};</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="class_scenario_1_1_tool_menu_actions.html">ToolMenuActions</a> m_toolActions{<span class="keyword">this</span>};</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="class_scenario_1_1_transport_actions.html">TransportActions</a> m_transportActions{context};</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  QAction* m_showCables{};</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  QAction* m_foldIntervals{};</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  QAction* m_unfoldIntervals{};</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  QAction* m_levelUp{};</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="class_scenario_1_1_edition_settings.html">Scenario::EditionSettings</a> m_editionSettings;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="class_process_1_1_layer_context_menu_manager.html">Process::LayerContextMenuManager</a> m_layerCtxMenuManager;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="class_scenario_1_1_scenario_execution.html">ScenarioExecution</a> m_execution;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <a class="code" href="class_scenario_1_1_object_menu_actions.html">ObjectMenuActions</a> m_objectActions{<span class="keyword">this</span>};</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <a class="code" href="class_scenario_1_1_tool_menu_actions.html">ToolMenuActions</a> m_toolActions{<span class="keyword">this</span>};</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <a class="code" href="class_scenario_1_1_transport_actions.html">TransportActions</a> m_transportActions{context};</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  QAction* m_showCables{};</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  QAction* m_foldIntervals{};</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  QAction* m_unfoldIntervals{};</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  QAction* m_levelUp{};</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1291</div></div>
+<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1366</div></div>
 <div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>
 <div class="ttc" id="astructscore_1_1_g_u_i_elements_html"><div class="ttname"><a href="structscore_1_1_g_u_i_elements.html">score::GUIElements</a></div><div class="ttdef"><b>Definition:</b> GUIApplicationPlugin.hpp:23</div></div>
-<div class="ttc" id="aclass_scenario_1_1_scenario_presenter_html"><div class="ttname"><a href="class_scenario_1_1_scenario_presenter.html">Scenario::ScenarioPresenter</a></div><div class="ttdef"><b>Definition:</b> ScenarioPresenter.hpp:25</div></div>
-<div class="ttc" id="aclass_scenario_1_1_tool_menu_actions_html"><div class="ttname"><a href="class_scenario_1_1_tool_menu_actions.html">Scenario::ToolMenuActions</a></div><div class="ttdef"><b>Definition:</b> ToolMenuActions.hpp:20</div></div>
+<div class="ttc" id="aclass_scenario_1_1_scenario_presenter_html"><div class="ttname"><a href="class_scenario_1_1_scenario_presenter.html">Scenario::ScenarioPresenter</a></div><div class="ttdef"><b>Definition:</b> ScenarioPresenter.hpp:26</div></div>
+<div class="ttc" id="aclass_scenario_1_1_tool_menu_actions_html"><div class="ttname"><a href="class_scenario_1_1_tool_menu_actions.html">Scenario::ToolMenuActions</a></div><div class="ttdef"><b>Definition:</b> ToolMenuActions.hpp:21</div></div>
 <div class="ttc" id="aclass_scenario_1_1_object_menu_actions_html"><div class="ttname"><a href="class_scenario_1_1_object_menu_actions.html">Scenario::ObjectMenuActions</a></div><div class="ttdef"><b>Definition:</b> ObjectMenuActions.hpp:17</div></div>
 <div class="ttc" id="aclassscore_1_1_document_html"><div class="ttname"><a href="classscore_1_1_document.html">score::Document</a></div><div class="ttdoc">The Document class is the central part of the software.</div><div class="ttdef"><b>Definition:</b> Document.hpp:49</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:65</div></div>
 <div class="ttc" id="astructscore_1_1_g_u_i_application_context_html"><div class="ttname"><a href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a></div><div class="ttdoc">Specializes ApplicationContext with the QMainWindow.</div><div class="ttdef"><b>Definition:</b> GUIApplicationContext.hpp:14</div></div>
 <div class="ttc" id="aclass_scenario_1_1_scenario_context_menu_manager_html"><div class="ttname"><a href="class_scenario_1_1_scenario_context_menu_manager.html">Scenario::ScenarioContextMenuManager</a></div><div class="ttdef"><b>Definition:</b> ScenarioContextMenuManager.hpp:26</div></div>
 <div class="ttc" id="aclass_process_1_1_layer_presenter_html"><div class="ttname"><a href="class_process_1_1_layer_presenter.html">Process::LayerPresenter</a></div><div class="ttdef"><b>Definition:</b> LayerPresenter.hpp:33</div></div>
-<div class="ttc" id="aclass_process_1_1_layer_context_menu_manager_html"><div class="ttname"><a href="class_process_1_1_layer_context_menu_manager.html">Process::LayerContextMenuManager</a></div><div class="ttdef"><b>Definition:</b> LayerContextMenu.hpp:36</div></div>
+<div class="ttc" id="aclass_process_1_1_layer_context_menu_manager_html"><div class="ttname"><a href="class_process_1_1_layer_context_menu_manager.html">Process::LayerContextMenuManager</a></div><div class="ttdef"><b>Definition:</b> LayerContextMenu.hpp:39</div></div>
 <div class="ttc" id="aclass_scenario_1_1_edition_settings_html"><div class="ttname"><a href="class_scenario_1_1_edition_settings.html">Scenario::EditionSettings</a></div><div class="ttdef"><b>Definition:</b> ScenarioEditionSettings.hpp:12</div></div>
 <div class="ttc" id="aclass_scenario_1_1_transport_actions_html"><div class="ttname"><a href="class_scenario_1_1_transport_actions.html">Scenario::TransportActions</a></div><div class="ttdef"><b>Definition:</b> TransportActions.hpp:17</div></div>
 <div class="ttc" id="aclass_scenario_1_1_scenario_application_plugin_html"><div class="ttname"><a href="class_scenario_1_1_scenario_application_plugin.html">Scenario::ScenarioApplicationPlugin</a></div><div class="ttdef"><b>Definition:</b> ScenarioApplicationPlugin.hpp:38</div></div>

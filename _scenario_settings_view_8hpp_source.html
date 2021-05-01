@@ -138,36 +138,38 @@ $(document).ready(function(){initNavTree('_scenario_settings_view_8hpp_source.ht
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">void</span> SkinChanged(<span class="keyword">const</span> QString&amp; arg_1) W_SIGNAL(SkinChanged, arg_1);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> DefaultEditorChanged(QString arg_1) W_SIGNAL(DefaultEditorChanged, arg_1);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> zoomChanged(<span class="keywordtype">int</span> arg_1) W_SIGNAL(zoomChanged, arg_1);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> SlotHeightChanged(<span class="keywordtype">int</span> arg_1) W_SIGNAL(SlotHeightChanged, arg_1);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> DefaultDurationChanged(<span class="keyword">const</span> <a class="code" href="struct_time_val.html">TimeVal</a>&amp; t) W_SIGNAL(DefaultDurationChanged, t);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">void</span> AutoSequenceChanged(<span class="keywordtype">bool</span> arg_1) W_SIGNAL(AutoSequenceChanged, arg_1);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> DefaultEditorChanged(QString arg_1)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      W_SIGNAL(DefaultEditorChanged, arg_1);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> zoomChanged(<span class="keywordtype">int</span> arg_1) W_SIGNAL(zoomChanged, arg_1);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> SlotHeightChanged(<span class="keywordtype">int</span> arg_1) W_SIGNAL(SlotHeightChanged, arg_1);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> DefaultDurationChanged(<span class="keyword">const</span> <a class="code" href="struct_time_val.html">TimeVal</a>&amp; t)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      W_SIGNAL(DefaultDurationChanged, t);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  QWidget* getWidget() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="classscore_1_1_form_widget.html">score::FormWidget</a>* m_widg{};</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  QComboBox* m_skin{};</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  QLineEdit* m_editor{};</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  QSpinBox* m_zoomSpinBox{};</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  QSpinBox* m_slotHeightBox{};</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="classscore_1_1_time_spin_box.html">score::TimeSpinBox</a>* m_defaultDur{};</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  QCheckBox* m_sequence{};</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> AutoSequenceChanged(<span class="keywordtype">bool</span> arg_1) W_SIGNAL(AutoSequenceChanged, arg_1);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  QWidget* getWidget() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="classscore_1_1_form_widget.html">score::FormWidget</a>* m_widg{};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  QComboBox* m_skin{};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  QLineEdit* m_editor{};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  QSpinBox* m_zoomSpinBox{};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  QSpinBox* m_slotHeightBox{};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="classscore_1_1_time_spin_box.html">score::TimeSpinBox</a>* m_defaultDur{};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  QCheckBox* m_sequence{};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>
-<div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition:</b> TimeValue.hpp:20</div></div>
-<div class="ttc" id="aclassscore_1_1_form_widget_html"><div class="ttname"><a href="classscore_1_1_form_widget.html">score::FormWidget</a></div><div class="ttdef"><b>Definition:</b> FormWidget.hpp:10</div></div>
+<div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition:</b> TimeValue.hpp:19</div></div>
+<div class="ttc" id="aclassscore_1_1_form_widget_html"><div class="ttname"><a href="classscore_1_1_form_widget.html">score::FormWidget</a></div><div class="ttdef"><b>Definition:</b> FormWidget.hpp:12</div></div>
 <div class="ttc" id="aclass_scenario_1_1_settings_1_1_view_html"><div class="ttname"><a href="class_scenario_1_1_settings_1_1_view.html">Scenario::Settings::View</a></div><div class="ttdef"><b>Definition:</b> ScenarioSettingsView.hpp:23</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:65</div></div>
-<div class="ttc" id="aclassscore_1_1_time_spin_box_html"><div class="ttname"><a href="classscore_1_1_time_spin_box.html">score::TimeSpinBox</a></div><div class="ttdef"><b>Definition:</b> TimeSpinBox.hpp:20</div></div>
+<div class="ttc" id="aclassscore_1_1_time_spin_box_html"><div class="ttname"><a href="classscore_1_1_time_spin_box.html">score::TimeSpinBox</a></div><div class="ttdef"><b>Definition:</b> TimeSpinBox.hpp:22</div></div>
 <div class="ttc" id="aclassscore_1_1_settings_delegate_view_html"><div class="ttname"><a href="classscore_1_1_settings_delegate_view.html">score::SettingsDelegateView</a></div><div class="ttdef"><b>Definition:</b> ProjectSettingsFactory.hpp:14</div></div>
 <div class="ttc" id="aclass_scenario_1_1_time_bar_html"><div class="ttname"><a href="class_scenario_1_1_time_bar.html">Scenario::TimeBar</a></div><div class="ttdef"><b>Definition:</b> ScenarioDocument/Timebar.hpp:7</div></div>
 <!-- HTML footer for doxygen 1.8.8-->

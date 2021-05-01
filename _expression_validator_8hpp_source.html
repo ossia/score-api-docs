@@ -120,15 +120,16 @@ $(document).ready(function(){initNavTree('_expression_validator_8hpp_source.html
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      m_currentExp = ::State::parseExpression(str);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      <span class="keywordflow">return</span> m_currentExp ? QValidator::State::Acceptable : QValidator::State::Intermediate;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  std::optional&lt;::State::Expression&gt; get()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_currentExp; }</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">mutable</span> std::optional&lt;::State::Expression&gt; m_currentExp;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      <span class="keywordflow">return</span> m_currentExp ? QValidator::State::Acceptable</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                          : QValidator::State::Intermediate;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  std::optional&lt;::State::Expression&gt; get()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_currentExp; }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">mutable</span> std::optional&lt;::State::Expression&gt; m_currentExp;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_expression_validator_html"><div class="ttname"><a href="class_expression_validator.html">ExpressionValidator</a></div><div class="ttdef"><b>Definition:</b> ExpressionValidator.hpp:9</div></div>

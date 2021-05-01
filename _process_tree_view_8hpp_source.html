@@ -105,9 +105,9 @@ $(document).ready(function(){initNavTree('_process_tree_view_8hpp_source.html','
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QTreeView&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;verdigris&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;score_plugin_library_export.h&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;score_plugin_library_export.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;verdigris&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>Library</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
 <div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_library_1_1_process_tree_view.html">   13</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_LIBRARY_EXPORT <a class="code" href="class_library_1_1_process_tree_view.html">ProcessTreeView</a> : <span class="keyword">public</span> QTreeView</div>
@@ -116,20 +116,24 @@ $(document).ready(function(){initNavTree('_process_tree_view_8hpp_source.html','
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">using</span> QTreeView::QTreeView;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordtype">void</span> selected(std::optional&lt;Library::ProcessData&gt; p) E_SIGNAL(SCORE_PLUGIN_LIBRARY_EXPORT, selected, p)</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">void</span> doubleClicked(<a class="code" href="struct_library_1_1_process_data.html">Library::ProcessData</a> p) E_SIGNAL(SCORE_PLUGIN_LIBRARY_EXPORT, doubleClicked, p)</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  QModelIndexList selectedDraggableIndexes() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordtype">void</span> selectionChanged(<span class="keyword">const</span> QItemSelection&amp; selected, <span class="keyword">const</span> QItemSelection&amp; deselected) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">void</span> startDrag(Qt::DropActions supportedActions) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">void</span> mouseDoubleClickEvent(QMouseEvent *event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="struct_library_1_1_process_data.html">Library::ProcessData</a>* dataFromViewIndex(QModelIndex);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordtype">void</span> selected(std::optional&lt;Library::ProcessData&gt; p)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      E_SIGNAL(SCORE_PLUGIN_LIBRARY_EXPORT, selected, p)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordtype">void</span> doubleClicked(<a class="code" href="struct_library_1_1_process_data.html">Library::ProcessData</a> p)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      E_SIGNAL(SCORE_PLUGIN_LIBRARY_EXPORT, doubleClicked, p)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  QModelIndexList selectedDraggableIndexes() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">void</span> selectionChanged(</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      <span class="keyword">const</span> QItemSelection&amp; selected,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      <span class="keyword">const</span> QItemSelection&amp; deselected) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">void</span> startDrag(Qt::DropActions supportedActions) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> mouseDoubleClickEvent(QMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <a class="code" href="struct_library_1_1_process_data.html">Library::ProcessData</a>* dataFromViewIndex(QModelIndex);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astruct_library_1_1_process_data_html"><div class="ttname"><a href="struct_library_1_1_process_data.html">Library::ProcessData</a></div><div class="ttdef"><b>Definition:</b> ProcessesItemModel.hpp:24</div></div>
+<div class="ttc" id="astruct_library_1_1_process_data_html"><div class="ttname"><a href="struct_library_1_1_process_data.html">Library::ProcessData</a></div><div class="ttdef"><b>Definition:</b> ProcessesItemModel.hpp:26</div></div>
 <div class="ttc" id="aclass_library_1_1_process_tree_view_html"><div class="ttname"><a href="class_library_1_1_process_tree_view.html">Library::ProcessTreeView</a></div><div class="ttdef"><b>Definition:</b> ProcessTreeView.hpp:13</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

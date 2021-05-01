@@ -99,20 +99,20 @@ $(document).ready(function(){initNavTree('score-plugin-media_2_media_2_effect_2_
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;score/plugins/ProjectSettings/ProjectSettingsView.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;score/plugins/settingsdelegate/SettingsDelegateView.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;score/plugins/InterfaceList.hpp&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;score/plugins/Interface.hpp&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;verdigris&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;score/plugins/Interface.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;score/plugins/InterfaceList.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;score/plugins/ProjectSettings/ProjectSettingsView.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;score/plugins/settingsdelegate/SettingsDelegateView.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;score_plugin_media_export.h&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span>QTabWidget;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;verdigris&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>Media::Settings</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_media_1_1_settings_1_1_view.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_media_1_1_settings_1_1_view.html">View</a></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classscore_1_1_settings_delegate_view.html">score::GlobalSettingsView</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span>QTabWidget;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>Media::Settings</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_media_1_1_settings_1_1_view.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_media_1_1_settings_1_1_view.html">View</a> : <span class="keyword">public</span> <a class="code" href="classscore_1_1_settings_delegate_view.html">score::GlobalSettingsView</a></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  W_OBJECT(<a class="code" href="class_media_1_1_settings_1_1_view.html">View</a>)</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
@@ -144,8 +144,8 @@ $(document).ready(function(){initNavTree('score-plugin-media_2_media_2_effect_2_
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassscore_1_1_interface_base_html"><div class="ttname"><a href="classscore_1_1_interface_base.html">score::InterfaceBase</a></div><div class="ttdoc">Base class for plug-in interfaces.</div><div class="ttdef"><b>Definition:</b> Interface.hpp:51</div></div>
-<div class="ttc" id="aclassscore_1_1_interface_list_html"><div class="ttname"><a href="classscore_1_1_interface_list.html">score::InterfaceList</a></div><div class="ttdoc">InterfaceList Default implementation of InterfaceListBase.</div><div class="ttdef"><b>Definition:</b> InterfaceList.hpp:76</div></div>
-<div class="ttc" id="aclass_media_1_1_settings_1_1_view_html"><div class="ttname"><a href="class_media_1_1_settings_1_1_view.html">Media::Settings::View</a></div><div class="ttdef"><b>Definition:</b> score-plugin-media/Media/Effect/Settings/View.hpp:14</div></div>
+<div class="ttc" id="aclassscore_1_1_interface_list_html"><div class="ttname"><a href="classscore_1_1_interface_list.html">score::InterfaceList</a></div><div class="ttdoc">InterfaceList Default implementation of InterfaceListBase.</div><div class="ttdef"><b>Definition:</b> InterfaceList.hpp:77</div></div>
+<div class="ttc" id="aclass_media_1_1_settings_1_1_view_html"><div class="ttname"><a href="class_media_1_1_settings_1_1_view.html">Media::Settings::View</a></div><div class="ttdef"><b>Definition:</b> score-plugin-media/Media/Effect/Settings/View.hpp:15</div></div>
 <div class="ttc" id="aclassscore_1_1_settings_delegate_view_html"><div class="ttname"><a href="classscore_1_1_settings_delegate_view.html">score::SettingsDelegateView</a></div><div class="ttdef"><b>Definition:</b> ProjectSettingsFactory.hpp:14</div></div>
 <div class="ttc" id="aclass_media_1_1_settings_1_1_plugin_settings_tab_html"><div class="ttname"><a href="class_media_1_1_settings_1_1_plugin_settings_tab.html">Media::Settings::PluginSettingsTab</a></div><div class="ttdef"><b>Definition:</b> score-plugin-media/Media/Effect/Settings/View.hpp:27</div></div>
 <div class="ttc" id="aclass_media_1_1_settings_1_1_plugin_settings_factory_list_html"><div class="ttname"><a href="class_media_1_1_settings_1_1_plugin_settings_factory_list.html">Media::Settings::PluginSettingsFactoryList</a></div><div class="ttdef"><b>Definition:</b> score-plugin-media/Media/Effect/Settings/View.hpp:39</div></div>

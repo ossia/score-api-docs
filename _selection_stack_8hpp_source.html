@@ -138,26 +138,28 @@ $(document).ready(function(){initNavTree('_selection_stack_8hpp_source.html','')
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="class_selection.html">Selection</a> currentSelection() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> pushNewSelection(<span class="keyword">const</span> <a class="code" href="class_selection.html">Selection</a>&amp; s) E_SIGNAL(SCORE_LIB_BASE_EXPORT, pushNewSelection, s)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> currentSelectionChanged(<span class="keyword">const</span> <a class="code" href="class_selection.html">Selection</a>&amp; old, <span class="keyword">const</span> <a class="code" href="class_selection.html">Selection</a>&amp; current)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      E_SIGNAL(SCORE_LIB_BASE_EXPORT, currentSelectionChanged, old, current)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> prune(<a class="code" href="class_identified_object_abstract.html">IdentifiedObjectAbstract</a>* p);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  W_INVOKABLE(prune)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="comment">// Select new objects</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> push(<span class="keyword">const</span> <a class="code" href="class_selection.html">Selection</a>&amp; s);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> pruneConnections();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="comment">// m_unselectable always contains the empty set at the beginning</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  QStack&lt;Selection&gt; m_unselectable;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  QStack&lt;Selection&gt; m_reselectable;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  tsl::hopscotch_map&lt;const IdentifiedObjectAbstract*, QMetaObject::Connection&gt; m_connections;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> pushNewSelection(<span class="keyword">const</span> <a class="code" href="class_selection.html">Selection</a>&amp; s)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      E_SIGNAL(SCORE_LIB_BASE_EXPORT, pushNewSelection, s)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> currentSelectionChanged(<span class="keyword">const</span> <a class="code" href="class_selection.html">Selection</a>&amp; old, <span class="keyword">const</span> <a class="code" href="class_selection.html">Selection</a>&amp; current)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      E_SIGNAL(SCORE_LIB_BASE_EXPORT, currentSelectionChanged, old, current)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> prune(<a class="code" href="class_identified_object_abstract.html">IdentifiedObjectAbstract</a>* p);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  W_INVOKABLE(prune)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="comment">// Select new objects</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> push(<span class="keyword">const</span> <a class="code" href="class_selection.html">Selection</a>&amp; s);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">void</span> pruneConnections();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="comment">// m_unselectable always contains the empty set at the beginning</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  QStack&lt;Selection&gt; m_unselectable;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  QStack&lt;Selection&gt; m_reselectable;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  tsl::hopscotch_map&lt;const IdentifiedObjectAbstract*, QMetaObject::Connection&gt;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      m_connections;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_selection_html"><div class="ttname"><a href="class_selection.html">Selection</a></div><div class="ttdef"><b>Definition:</b> Selection.hpp:11</div></div>

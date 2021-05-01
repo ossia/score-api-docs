@@ -160,35 +160,36 @@ $(document).ready(function(){initNavTree('lib_2core_2view_2_window_8hpp_source.h
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      E_SIGNAL(SCORE_LIB_BASE_EXPORT, closeRequested, arg_1)</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> ready() E_SIGNAL(SCORE_LIB_BASE_EXPORT, ready)</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> sizeChanged(QSize arg_1) E_SIGNAL(SCORE_LIB_BASE_EXPORT, sizeChanged, arg_1)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> on_fileNameChanged(<a class="code" href="classscore_1_1_document_view.html">DocumentView</a>* d, <span class="keyword">const</span> QString&amp; newName);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  W_SLOT(on_fileNameChanged);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  QWidget* centralDocumentWidget{};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  QSplitter* rightSplitter{};</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  QWidget* topleftToolbar{};</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <a class="code" href="classscore_1_1_fixed_tab_widget.html">FixedTabWidget</a>* leftTabs{};</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="comment">// QTabWidget* rightTabs{};</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="classscore_1_1_fixed_tab_widget.html">FixedTabWidget</a>* bottomTabs{};</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  QTabWidget* centralTabs{};</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  QWidget* transportBar{};</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">bool</span> event(QEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">void</span> changeEvent(QEvent*) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">void</span> resizeEvent(QResizeEvent*) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  std::map&lt;QWidget*, DocumentView*&gt; m_documents;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  std::vector&lt;QPair&lt;PanelDelegate*, QWidget*&gt;&gt; m_leftPanels;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  std::vector&lt;QPair&lt;PanelDelegate*, QWidget*&gt;&gt; m_rightPanels;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="code" href="classscore_1_1_presenter.html">Presenter</a>* m_presenter{};</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  QLabel* m_status{};</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> sizeChanged(QSize arg_1)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      E_SIGNAL(SCORE_LIB_BASE_EXPORT, sizeChanged, arg_1)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span> on_fileNameChanged(<a class="code" href="classscore_1_1_document_view.html">DocumentView</a>* d, <span class="keyword">const</span> QString&amp; newName);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  W_SLOT(on_fileNameChanged);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  QWidget* centralDocumentWidget{};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  QSplitter* rightSplitter{};</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  QWidget* topleftToolbar{};</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="classscore_1_1_fixed_tab_widget.html">FixedTabWidget</a>* leftTabs{};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="comment">// QTabWidget* rightTabs{};</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="classscore_1_1_fixed_tab_widget.html">FixedTabWidget</a>* bottomTabs{};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  QTabWidget* centralTabs{};</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  QWidget* transportBar{};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">bool</span> event(QEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">void</span> changeEvent(QEvent*) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">void</span> resizeEvent(QResizeEvent*) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  std::map&lt;QWidget*, DocumentView*&gt; m_documents;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  std::vector&lt;QPair&lt;PanelDelegate*, QWidget*&gt;&gt; m_leftPanels;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  std::vector&lt;QPair&lt;PanelDelegate*, QWidget*&gt;&gt; m_rightPanels;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <a class="code" href="classscore_1_1_presenter.html">Presenter</a>* m_presenter{};</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  QLabel* m_status{};</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassscore_1_1_presenter_html"><div class="ttname"><a href="classscore_1_1_presenter.html">score::Presenter</a></div><div class="ttdoc">The Presenter class.</div><div class="ttdef"><b>Definition:</b> lib/core/presenter/Presenter.hpp:35</div></div>
@@ -197,7 +198,7 @@ $(document).ready(function(){initNavTree('lib_2core_2view_2_window_8hpp_source.h
 <div class="ttc" id="aclassscore_1_1_fixed_tab_widget_html"><div class="ttname"><a href="classscore_1_1_fixed_tab_widget.html">score::FixedTabWidget</a></div><div class="ttdef"><b>Definition:</b> FixedTabWidget.hpp:17</div></div>
 <div class="ttc" id="aclassscore_1_1_view_html"><div class="ttname"><a href="classscore_1_1_view.html">score::View</a></div><div class="ttdoc">The main display of the application.</div><div class="ttdef"><b>Definition:</b> lib/core/view/Window.hpp:40</div></div>
 <div class="ttc" id="aclassscore_1_1_panel_delegate_html"><div class="ttname"><a href="classscore_1_1_panel_delegate.html">score::PanelDelegate</a></div><div class="ttdoc">The PanelDelegate class.</div><div class="ttdef"><b>Definition:</b> PanelDelegate.hpp:54</div></div>
-<div class="ttc" id="aclassscore_1_1_document_view_html"><div class="ttname"><a href="classscore_1_1_document_view.html">score::DocumentView</a></div><div class="ttdoc">The DocumentView class shows a document.</div><div class="ttdef"><b>Definition:</b> DocumentView.hpp:18</div></div>
+<div class="ttc" id="aclassscore_1_1_document_view_html"><div class="ttname"><a href="classscore_1_1_document_view.html">score::DocumentView</a></div><div class="ttdoc">The DocumentView class shows a document.</div><div class="ttdef"><b>Definition:</b> DocumentView.hpp:19</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

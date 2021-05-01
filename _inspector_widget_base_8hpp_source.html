@@ -139,45 +139,53 @@ $(document).ready(function(){initNavTree('_inspector_widget_base_8hpp_source.htm
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; context()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_context; }</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> updateSectionsView(QVBoxLayout* layout, <span class="keyword">const</span> std::vector&lt;QWidget*&gt;&amp; contents);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> updateAreaLayout(<span class="keyword">const</span> std::vector&lt;QWidget*&gt;&amp; contents);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> updateAreaLayout(std::initializer_list&lt;QWidget*&gt; contents);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">void</span> addHeader(QWidget* header);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> updateSectionsView(</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      QVBoxLayout* layout,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keyword">const</span> std::vector&lt;QWidget*&gt;&amp; contents);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">void</span> updateAreaLayout(<span class="keyword">const</span> std::vector&lt;QWidget*&gt;&amp; contents);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">void</span> updateAreaLayout(std::initializer_list&lt;QWidget*&gt; contents);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="comment">// Manage Values</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_identified_object_abstract.html">IdentifiedObjectAbstract</a>&amp; inspectedObject() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_identified_object_abstract.html">IdentifiedObjectAbstract</a>* inspectedObject_addr()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> &amp;inspectedObject(); }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="comment">// getters</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  QVBoxLayout* areaLayout() { <span class="keywordflow">return</span> m_scrollAreaLayout; }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="class_command_dispatcher.html">CommandDispatcher&lt;&gt;</a>* commandDispatcher()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_commandDispatcher; }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> addHeader(QWidget* header);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="comment">// Manage Values</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_identified_object_abstract.html">IdentifiedObjectAbstract</a>&amp; inspectedObject() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_identified_object_abstract.html">IdentifiedObjectAbstract</a>* inspectedObject_addr()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> &amp;inspectedObject();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_identified_object_abstract.html">IdentifiedObjectAbstract</a>&amp; m_inspectedObject;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; m_context;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="class_command_dispatcher.html">CommandDispatcher&lt;&gt;</a>* m_commandDispatcher{};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  QVBoxLayout* m_scrollAreaLayout{};</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  std::vector&lt;QWidget*&gt; m_sections;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  QColor _currentColor{Qt::gray};</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> m_colorIconSize{21};</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="class_inspector_1_1_v_box_layout.html">VBoxLayout</a>* m_layout{};</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  QLabel* m_label{};</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="comment">// getters</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  QVBoxLayout* areaLayout() { <span class="keywordflow">return</span> m_scrollAreaLayout; }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="class_command_dispatcher.html">CommandDispatcher&lt;&gt;</a>* commandDispatcher()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">return</span> m_commandDispatcher;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_identified_object_abstract.html">IdentifiedObjectAbstract</a>&amp; m_inspectedObject;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; m_context;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="class_command_dispatcher.html">CommandDispatcher&lt;&gt;</a>* m_commandDispatcher{};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  QVBoxLayout* m_scrollAreaLayout{};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  std::vector&lt;QWidget*&gt; m_sections;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  QColor _currentColor{Qt::gray};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> m_colorIconSize{21};</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <a class="code" href="class_inspector_1_1_v_box_layout.html">VBoxLayout</a>* m_layout{};</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  QLabel* m_label{};</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:15</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:65</div></div>
 <div class="ttc" id="aclass_inspector_1_1_inspector_widget_base_html"><div class="ttname"><a href="class_inspector_1_1_inspector_widget_base.html">Inspector::InspectorWidgetBase</a></div><div class="ttdoc">The InspectorWidgetBase class Set the global structuration for an inspected element.</div><div class="ttdef"><b>Definition:</b> InspectorWidgetBase.hpp:36</div></div>
 <div class="ttc" id="aclass_identified_object_abstract_html"><div class="ttname"><a href="class_identified_object_abstract.html">IdentifiedObjectAbstract</a></div><div class="ttdoc">Base class for IdentifiedObject.</div><div class="ttdef"><b>Definition:</b> IdentifiedObjectAbstract.hpp:15</div></div>
-<div class="ttc" id="aclass_inspector_1_1_v_box_layout_html"><div class="ttname"><a href="class_inspector_1_1_v_box_layout.html">Inspector::VBoxLayout</a></div><div class="ttdef"><b>Definition:</b> Layout.hpp:38</div></div>
+<div class="ttc" id="aclass_inspector_1_1_v_box_layout_html"><div class="ttname"><a href="class_inspector_1_1_v_box_layout.html">Inspector::VBoxLayout</a></div><div class="ttdef"><b>Definition:</b> Layout.hpp:45</div></div>
 <div class="ttc" id="aclass_command_dispatcher_html"><div class="ttname"><a href="class_command_dispatcher.html">CommandDispatcher&lt;&gt;</a></div></div>
-<div class="ttc" id="anamespace_inspector_html"><div class="ttname"><a href="namespace_inspector.html">Inspector</a></div><div class="ttdoc">Classes used for making and extending the inspector (default right panel).</div><div class="ttdef"><b>Definition:</b> Layout.hpp:25</div></div>
+<div class="ttc" id="anamespace_inspector_html"><div class="ttname"><a href="namespace_inspector.html">Inspector</a></div><div class="ttdoc">Classes used for making and extending the inspector (default right panel).</div><div class="ttdef"><b>Definition:</b> Layout.hpp:31</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

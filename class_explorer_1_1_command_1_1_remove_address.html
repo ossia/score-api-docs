@@ -95,7 +95,6 @@ $(document).ready(function(){initNavTree('class_explorer_1_1_command_1_1_remove_
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_explorer_1_1_command_1_1_remove_address-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -118,18 +117,21 @@ Inheritance diagram for Explorer::Command::RemoveAddress:</div>
 <div class="textblock"><p>The <a class="el" href="class_explorer_1_1_command_1_1_remove_address.html" title="The RemoveAddress class.">RemoveAddress</a> class. </p>
 <p>Removes an address and its child in the device explorer. </p>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a9c64b1a16e7267c80542246d20fbc109"><td class="memItemLeft" align="right" valign="top"><a id="a9c64b1a16e7267c80542246d20fbc109"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveAddress</b> (const <a class="el" href="class_explorer_1_1_device_document_plugin.html">DeviceDocumentPlugin</a> &amp;devplug, const <a class="el" href="class_tree_path.html">Device::NodePath</a> &amp;nodePath)</td></tr>
-<tr class="separator:a9c64b1a16e7267c80542246d20fbc109"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae58259ed3e85ce339e1ba81ef11828d"><td class="memItemLeft" align="right" valign="top"><a id="aae58259ed3e85ce339e1ba81ef11828d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>undo</b> (const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx) const override</td></tr>
-<tr class="separator:aae58259ed3e85ce339e1ba81ef11828d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6afbe8f416370b2e80e3d637b0c14c5"><td class="memItemLeft" align="right" valign="top"><a id="ab6afbe8f416370b2e80e3d637b0c14c5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>redo</b> (const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx) const override</td></tr>
-<tr class="separator:ab6afbe8f416370b2e80e3d637b0c14c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a2d82f8415836dd16bd3cfc7f91e65680"><td class="memItemLeft" align="right" valign="top"><a id="a2d82f8415836dd16bd3cfc7f91e65680"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>serializeImpl</b> (<a class="el" href="struct_data_stream_input.html">DataStreamInput</a> &amp;) const override</td></tr>
+<tr class="separator:a2d82f8415836dd16bd3cfc7f91e65680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f249dd4f37bc50f6a368572d574f8ec"><td class="memItemLeft" align="right" valign="top"><a id="a2f249dd4f37bc50f6a368572d574f8ec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>deserializeImpl</b> (<a class="el" href="struct_data_stream_output.html">DataStreamOutput</a> &amp;) override</td></tr>
+<tr class="separator:a2f249dd4f37bc50f6a368572d574f8ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1_command"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1_command')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1_command.html">score::Command</a></td></tr>
+<tr class="memitem:ada1beb83349ccddb4e46b092dc4740dc inherit pub_methods_classscore_1_1_command"><td class="memItemLeft" align="right" valign="top"><a id="ada1beb83349ccddb4e46b092dc4740dc"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>undo</b> (const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx) const =0</td></tr>
+<tr class="separator:ada1beb83349ccddb4e46b092dc4740dc inherit pub_methods_classscore_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6d367721392b078f3a1f5953863d390 inherit pub_methods_classscore_1_1_command"><td class="memItemLeft" align="right" valign="top"><a id="ac6d367721392b078f3a1f5953863d390"></a>
 virtual const <a class="el" href="class_string_key.html">CommandGroupKey</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>parentKey</b> () const noexcept=0</td></tr>
 <tr class="separator:ac6d367721392b078f3a1f5953863d390 inherit pub_methods_classscore_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,15 +147,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>deserialize</b> (cons
 <tr class="memitem:ab1e282d4b8859dc705d421975534baff inherit pub_methods_classscore_1_1_command"><td class="memItemLeft" align="right" valign="top"><a id="ab1e282d4b8859dc705d421975534baff"></a>
 virtual QString&#160;</td><td class="memItemRight" valign="bottom"><b>description</b> () const =0</td></tr>
 <tr class="separator:ab1e282d4b8859dc705d421975534baff inherit pub_methods_classscore_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a2d82f8415836dd16bd3cfc7f91e65680"><td class="memItemLeft" align="right" valign="top"><a id="a2d82f8415836dd16bd3cfc7f91e65680"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>serializeImpl</b> (<a class="el" href="struct_data_stream_input.html">DataStreamInput</a> &amp;) const override</td></tr>
-<tr class="separator:a2d82f8415836dd16bd3cfc7f91e65680"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f249dd4f37bc50f6a368572d574f8ec"><td class="memItemLeft" align="right" valign="top"><a id="a2f249dd4f37bc50f6a368572d574f8ec"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>deserializeImpl</b> (<a class="el" href="struct_data_stream_output.html">DataStreamOutput</a> &amp;) override</td></tr>
-<tr class="separator:a2f249dd4f37bc50f6a368572d574f8ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_remove_address_8hpp_source.html">RemoveAddress.hpp</a></li>

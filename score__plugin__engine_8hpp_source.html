@@ -110,36 +110,38 @@ $(document).ready(function(){initNavTree('score__plugin__engine_8hpp_source.html
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;verdigris&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="classscore__plugin__engine.html">  160</a></span>&#160;<span class="keyword">class </span><a class="code" href="classscore__plugin__engine.html">score_plugin_engine</a> final : <span class="keyword">public</span> <a class="code" href="classscore_1_1_application_plugin___qt_interface.html">score::ApplicationPlugin_QtInterface</a>,</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                                  <span class="keyword">public</span> <a class="code" href="classscore_1_1_factory_list___qt_interface.html">score::FactoryList_QtInterface</a>,</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                                  <span class="keyword">public</span> <a class="code" href="classscore_1_1_factory_interface___qt_interface.html">score::FactoryInterface_QtInterface</a>,</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                                  <span class="keyword">public</span> <a class="code" href="classscore_1_1_plugin___qt_interface.html">score::Plugin_QtInterface</a></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;{</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  SCORE_PLUGIN_METADATA(1, <span class="stringliteral">&quot;d4758f8d-64ac-41b4-8aaf-1cbd6f3feb91&quot;</span>)</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <a class="code" href="classscore__plugin__engine.html">score_plugin_engine</a>();</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classscore__plugin__engine.html">score_plugin_engine</a>();</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <a class="code" href="classscore_1_1_g_u_i_application_plugin.html">score::GUIApplicationPlugin</a>*</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  make_guiApplicationPlugin(<span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; app) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  std::vector&lt;std::unique_ptr&lt;score::InterfaceListBase&gt;&gt; factoryFamilies() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="comment">// Contains the OSC, MIDI, Minuit factories</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  std::vector&lt;std::unique_ptr&lt;score::InterfaceBase&gt;&gt; factories(</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp;,</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_uuid_key.html">score::InterfaceKey</a>&amp; factoryName) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  std::vector&lt;score::PluginKey&gt; required() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;};</div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="classscore__plugin__engine.html">  160</a></span>&#160;<span class="keyword">class </span><a class="code" href="classscore__plugin__engine.html">score_plugin_engine</a> final</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classscore_1_1_application_plugin___qt_interface.html">score::ApplicationPlugin_QtInterface</a></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    , <span class="keyword">public</span> <a class="code" href="classscore_1_1_factory_list___qt_interface.html">score::FactoryList_QtInterface</a></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    , <span class="keyword">public</span> <a class="code" href="classscore_1_1_factory_interface___qt_interface.html">score::FactoryInterface_QtInterface</a></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    , <span class="keyword">public</span> <a class="code" href="classscore_1_1_plugin___qt_interface.html">score::Plugin_QtInterface</a></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;{</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  SCORE_PLUGIN_METADATA(1, <span class="stringliteral">&quot;d4758f8d-64ac-41b4-8aaf-1cbd6f3feb91&quot;</span>)</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <a class="code" href="classscore__plugin__engine.html">score_plugin_engine</a>();</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classscore__plugin__engine.html">score_plugin_engine</a>();</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <a class="code" href="classscore_1_1_g_u_i_application_plugin.html">score::GUIApplicationPlugin</a>*</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  make_guiApplicationPlugin(<span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; app) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  std::vector&lt;std::unique_ptr&lt;score::InterfaceListBase&gt;&gt;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  factoryFamilies() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="comment">// Contains the OSC, MIDI, Minuit factories</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  std::vector&lt;std::unique_ptr&lt;score::InterfaceBase&gt;&gt; factories(</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp;,</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_uuid_key.html">score::InterfaceKey</a>&amp; factoryName) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  std::vector&lt;score::PluginKey&gt; required() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassscore_1_1_factory_interface___qt_interface_html"><div class="ttname"><a href="classscore_1_1_factory_interface___qt_interface.html">score::FactoryInterface_QtInterface</a></div><div class="ttdef"><b>Definition:</b> FactoryInterface_QtInterface.hpp:18</div></div>
 <div class="ttc" id="aclassscore_1_1_application_plugin___qt_interface_html"><div class="ttname"><a href="classscore_1_1_application_plugin___qt_interface.html">score::ApplicationPlugin_QtInterface</a></div><div class="ttdef"><b>Definition:</b> GUIApplicationPlugin_QtInterface.hpp:11</div></div>
 <div class="ttc" id="astructscore_1_1_g_u_i_application_context_html"><div class="ttname"><a href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a></div><div class="ttdoc">Specializes ApplicationContext with the QMainWindow.</div><div class="ttdef"><b>Definition:</b> GUIApplicationContext.hpp:14</div></div>
-<div class="ttc" id="aclass_uuid_key_html"><div class="ttname"><a href="class_uuid_key.html">UuidKey</a></div><div class="ttdef"><b>Definition:</b> UuidKey.hpp:362</div></div>
-<div class="ttc" id="aclassscore_1_1_plugin___qt_interface_html"><div class="ttname"><a href="classscore_1_1_plugin___qt_interface.html">score::Plugin_QtInterface</a></div><div class="ttdef"><b>Definition:</b> PluginRequirements_QtInterface.hpp:16</div></div>
+<div class="ttc" id="aclass_uuid_key_html"><div class="ttname"><a href="class_uuid_key.html">UuidKey</a></div><div class="ttdef"><b>Definition:</b> UuidKey.hpp:370</div></div>
+<div class="ttc" id="aclassscore_1_1_plugin___qt_interface_html"><div class="ttname"><a href="classscore_1_1_plugin___qt_interface.html">score::Plugin_QtInterface</a></div><div class="ttdef"><b>Definition:</b> PluginRequirements_QtInterface.hpp:17</div></div>
 <div class="ttc" id="astructscore_1_1_application_context_html"><div class="ttname"><a href="structscore_1_1_application_context.html">score::ApplicationContext</a></div><div class="ttdoc">Used to access all the application-wide state and structures.</div><div class="ttdef"><b>Definition:</b> ApplicationContext.hpp:23</div></div>
 <div class="ttc" id="aclassscore__plugin__engine_html"><div class="ttname"><a href="classscore__plugin__engine.html">score_plugin_engine</a></div><div class="ttdef"><b>Definition:</b> score_plugin_engine.hpp:160</div></div>
 <div class="ttc" id="aclassscore_1_1_g_u_i_application_plugin_html"><div class="ttname"><a href="classscore_1_1_g_u_i_application_plugin.html">score::GUIApplicationPlugin</a></div><div class="ttdoc">Used to extend the software with application-wide data.</div><div class="ttdef"><b>Definition:</b> GUIApplicationPlugin.hpp:88</div></div>

@@ -124,40 +124,44 @@ $(document).ready(function(){initNavTree('_clickable_label_item_8hpp_source.html
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="comment">// QGraphicsItem interface</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  QRectF boundingRect() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordtype">void</span> paint(QPainter* painter, <span class="keyword">const</span> QStyleOptionGraphicsItem* option, QWidget* widget) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_scenario_1_1_clickable_label_item.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_scenario_1_1_clickable_label_item.html">ClickableLabelItem</a> final : <span class="comment">// public QObject,</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                 <span class="keyword">public</span> <a class="code" href="classscore_1_1_simple_text_item.html">score::SimpleTextItem</a></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  W_OBJECT(<a class="code" href="class_scenario_1_1_clickable_label_item.html">ClickableLabelItem</a>)</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">using</span> ClickHandler = std::function&lt;void(<a class="code" href="class_scenario_1_1_clickable_label_item.html">ClickableLabelItem</a>*)&gt;;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="class_scenario_1_1_clickable_label_item.html">ClickableLabelItem</a>(</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <a class="code" href="classscore_1_1_model_metadata.html">score::ModelMetadata</a>&amp; interval,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      ClickHandler&amp;&amp; onClick,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keyword">const</span> QString&amp; text,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      QGraphicsItem* parent);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">int</span> index() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> setIndex(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> textChanged() W_SIGNAL(textChanged);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> mousePressEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> hoverEnterEvent(QGraphicsSceneHoverEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> hoverLeaveEvent(QGraphicsSceneHoverEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">int</span> m_index{-1};</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  ClickHandler m_onClick;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordtype">void</span> paint(</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      QPainter* painter,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      <span class="keyword">const</span> QStyleOptionGraphicsItem* option,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      QWidget* widget) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_scenario_1_1_clickable_label_item.html">   33</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_scenario_1_1_clickable_label_item.html">ClickableLabelItem</a> final</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    : <span class="comment">// public QObject,</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keyword">public</span> <a class="code" href="classscore_1_1_simple_text_item.html">score::SimpleTextItem</a></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  W_OBJECT(<a class="code" href="class_scenario_1_1_clickable_label_item.html">ClickableLabelItem</a>)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">using</span> ClickHandler = std::function&lt;void(<a class="code" href="class_scenario_1_1_clickable_label_item.html">ClickableLabelItem</a>*)&gt;;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="class_scenario_1_1_clickable_label_item.html">ClickableLabelItem</a>(</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <a class="code" href="classscore_1_1_model_metadata.html">score::ModelMetadata</a>&amp; interval,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      ClickHandler&amp;&amp; onClick,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keyword">const</span> QString&amp; text,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      QGraphicsItem* parent);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">int</span> index() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">void</span> setIndex(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> textChanged() W_SIGNAL(textChanged);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> mousePressEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> hoverEnterEvent(QGraphicsSceneHoverEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> hoverLeaveEvent(QGraphicsSceneHoverEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">int</span> m_index{-1};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  ClickHandler m_onClick;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_scenario_1_1_clickable_label_item_html"><div class="ttname"><a href="class_scenario_1_1_clickable_label_item.html">Scenario::ClickableLabelItem</a></div><div class="ttdef"><b>Definition:</b> ClickableLabelItem.hpp:30</div></div>
+<div class="ttc" id="aclass_scenario_1_1_clickable_label_item_html"><div class="ttname"><a href="class_scenario_1_1_clickable_label_item.html">Scenario::ClickableLabelItem</a></div><div class="ttdef"><b>Definition:</b> ClickableLabelItem.hpp:33</div></div>
 <div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>
 <div class="ttc" id="aclassscore_1_1_model_metadata_html"><div class="ttname"><a href="classscore_1_1_model_metadata.html">score::ModelMetadata</a></div><div class="ttdoc">The ModelMetadata class.</div><div class="ttdef"><b>Definition:</b> ModelMetadata.hpp:21</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:65</div></div>

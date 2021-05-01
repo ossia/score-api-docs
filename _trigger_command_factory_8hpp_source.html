@@ -112,17 +112,22 @@ $(document).ready(function(){initNavTree('_trigger_command_factory_8hpp_source.h
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>Command</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_scenario_1_1_command_1_1_trigger_command_factory.html">   15</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_SCENARIO_EXPORT <a class="code" href="class_scenario_1_1_command_1_1_trigger_command_factory.html">TriggerCommandFactory</a> : <span class="keyword">public</span> <a class="code" href="classscore_1_1_interface_base.html">score::InterfaceBase</a></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  SCORE_INTERFACE(<a class="code" href="class_scenario_1_1_command_1_1_trigger_command_factory.html">TriggerCommandFactory</a>, <span class="stringliteral">&quot;d6b7385e-b6c4-4cc2-8fc6-1041a43d98fa&quot;</span>)</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="class_scenario_1_1_command_1_1_trigger_command_factory.html">TriggerCommandFactory</a>();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="structmatches.html">matches</a>(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_time_sync_model.html">TimeSyncModel</a>&amp; tn) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classscore_1_1_command.html">score::Command</a>* make_addTriggerCommand(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_time_sync_model.html">TimeSyncModel</a>&amp; tn) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classscore_1_1_command.html">score::Command</a>* make_removeTriggerCommand(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_time_sync_model.html">TimeSyncModel</a>&amp; tn) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_scenario_1_1_command_1_1_trigger_command_factory.html">   15</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_SCENARIO_EXPORT <a class="code" href="class_scenario_1_1_command_1_1_trigger_command_factory.html">TriggerCommandFactory</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classscore_1_1_interface_base.html">score::InterfaceBase</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  SCORE_INTERFACE(</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      <a class="code" href="class_scenario_1_1_command_1_1_trigger_command_factory.html">TriggerCommandFactory</a>,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      <span class="stringliteral">&quot;d6b7385e-b6c4-4cc2-8fc6-1041a43d98fa&quot;</span>)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="class_scenario_1_1_command_1_1_trigger_command_factory.html">TriggerCommandFactory</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="structmatches.html">matches</a>(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_time_sync_model.html">TimeSyncModel</a>&amp; tn) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classscore_1_1_command.html">score::Command</a>*</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  make_addTriggerCommand(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_time_sync_model.html">TimeSyncModel</a>&amp; tn) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classscore_1_1_command.html">score::Command</a>*</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  make_removeTriggerCommand(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_time_sync_model.html">TimeSyncModel</a>&amp; tn) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>

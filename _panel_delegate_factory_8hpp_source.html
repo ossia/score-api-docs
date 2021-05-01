@@ -112,26 +112,27 @@ $(document).ready(function(){initNavTree('_panel_delegate_factory_8hpp_source.ht
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">bool</span> ui_interface = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classscore_1_1_panel_delegate_factory.html">PanelDelegateFactory</a>();</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">virtual</span> std::unique_ptr&lt;PanelDelegate&gt; make(<span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; ctx) = 0;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classscore_1_1_panel_delegate_factory_list.html">   21</a></span>&#160;<span class="keyword">class </span>SCORE_LIB_BASE_EXPORT <a class="code" href="classscore_1_1_panel_delegate_factory_list.html">PanelDelegateFactoryList</a> final</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classscore_1_1_interface_list.html">InterfaceList</a>&lt;score::PanelDelegateFactory&gt;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">using</span> <a class="code" href="classscore_1_1_panel_delegate.html">object_type</a> = <a class="code" href="classscore_1_1_panel_delegate.html">PanelDelegate</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  ~<a class="code" href="classscore_1_1_panel_delegate_factory_list.html">PanelDelegateFactoryList</a>();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">virtual</span> std::unique_ptr&lt;PanelDelegate&gt;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  make(<span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; ctx) = 0;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classscore_1_1_panel_delegate_factory_list.html">   22</a></span>&#160;<span class="keyword">class </span>SCORE_LIB_BASE_EXPORT <a class="code" href="classscore_1_1_panel_delegate_factory_list.html">PanelDelegateFactoryList</a> final</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classscore_1_1_interface_list.html">InterfaceList</a>&lt;score::PanelDelegateFactory&gt;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">using</span> <a class="code" href="classscore_1_1_panel_delegate.html">object_type</a> = <a class="code" href="classscore_1_1_panel_delegate.html">PanelDelegate</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  ~<a class="code" href="classscore_1_1_panel_delegate_factory_list.html">PanelDelegateFactoryList</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassscore_1_1_interface_base_html"><div class="ttname"><a href="classscore_1_1_interface_base.html">score::InterfaceBase</a></div><div class="ttdoc">Base class for plug-in interfaces.</div><div class="ttdef"><b>Definition:</b> Interface.hpp:51</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:65</div></div>
-<div class="ttc" id="aclassscore_1_1_interface_list_html"><div class="ttname"><a href="classscore_1_1_interface_list.html">score::InterfaceList</a></div><div class="ttdoc">InterfaceList Default implementation of InterfaceListBase.</div><div class="ttdef"><b>Definition:</b> InterfaceList.hpp:76</div></div>
+<div class="ttc" id="aclassscore_1_1_interface_list_html"><div class="ttname"><a href="classscore_1_1_interface_list.html">score::InterfaceList</a></div><div class="ttdoc">InterfaceList Default implementation of InterfaceListBase.</div><div class="ttdef"><b>Definition:</b> InterfaceList.hpp:77</div></div>
 <div class="ttc" id="astructscore_1_1_g_u_i_application_context_html"><div class="ttname"><a href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a></div><div class="ttdoc">Specializes ApplicationContext with the QMainWindow.</div><div class="ttdef"><b>Definition:</b> GUIApplicationContext.hpp:14</div></div>
 <div class="ttc" id="aclassscore_1_1_panel_delegate_factory_html"><div class="ttname"><a href="classscore_1_1_panel_delegate_factory.html">score::PanelDelegateFactory</a></div><div class="ttdoc">Reimplement this interface to register new panels.</div><div class="ttdef"><b>Definition:</b> PanelDelegateFactory.hpp:9</div></div>
 <div class="ttc" id="aclassscore_1_1_panel_delegate_html"><div class="ttname"><a href="classscore_1_1_panel_delegate.html">score::PanelDelegate</a></div><div class="ttdoc">The PanelDelegate class.</div><div class="ttdef"><b>Definition:</b> PanelDelegate.hpp:54</div></div>
-<div class="ttc" id="aclassscore_1_1_panel_delegate_factory_list_html"><div class="ttname"><a href="classscore_1_1_panel_delegate_factory_list.html">score::PanelDelegateFactoryList</a></div><div class="ttdoc">All the panels are registerd in this interface list.</div><div class="ttdef"><b>Definition:</b> PanelDelegateFactory.hpp:21</div></div>
+<div class="ttc" id="aclassscore_1_1_panel_delegate_factory_list_html"><div class="ttname"><a href="classscore_1_1_panel_delegate_factory_list.html">score::PanelDelegateFactoryList</a></div><div class="ttdoc">All the panels are registerd in this interface list.</div><div class="ttdef"><b>Definition:</b> PanelDelegateFactory.hpp:22</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

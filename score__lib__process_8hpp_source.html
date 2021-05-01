@@ -103,28 +103,31 @@ $(document).ready(function(){initNavTree('score__lib__process_8hpp_source.html',
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;score/plugins/qt_interfaces/FactoryFamily_QtInterface.hpp&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;score/plugins/qt_interfaces/GUIApplicationPlugin_QtInterface.hpp&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;score/plugins/qt_interfaces/PluginRequirements_QtInterface.hpp&gt;</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classscore__lib__process.html">   59</a></span>&#160;<span class="keyword">class </span><a class="code" href="classscore__lib__process.html">score_lib_process</a> final : <span class="keyword">public</span> <a class="code" href="classscore_1_1_plugin___qt_interface.html">score::Plugin_QtInterface</a>,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                <span class="keyword">public</span> <a class="code" href="classscore_1_1_factory_list___qt_interface.html">score::FactoryList_QtInterface</a>,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                <span class="keyword">public</span> <a class="code" href="classscore_1_1_command_factory___qt_interface.html">score::CommandFactory_QtInterface</a>,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                <span class="keyword">public</span> <a class="code" href="classscore_1_1_application_plugin___qt_interface.html">score::ApplicationPlugin_QtInterface</a></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  SCORE_PLUGIN_METADATA(1, <span class="stringliteral">&quot;bca574b4-2534-441f-9db1-32eb9a1325c7&quot;</span>)</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="classscore__lib__process.html">score_lib_process</a>();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  ~<a class="code" href="classscore__lib__process.html">score_lib_process</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  std::vector&lt;std::unique_ptr&lt;score::InterfaceListBase&gt;&gt; factoryFamilies() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  std::pair&lt;const CommandGroupKey, CommandGeneratorMap&gt; make_commands() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classscore__lib__process.html">   59</a></span>&#160;<span class="keyword">class </span><a class="code" href="classscore__lib__process.html">score_lib_process</a> final</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classscore_1_1_plugin___qt_interface.html">score::Plugin_QtInterface</a></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    , <span class="keyword">public</span> <a class="code" href="classscore_1_1_factory_list___qt_interface.html">score::FactoryList_QtInterface</a></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    , <span class="keyword">public</span> <a class="code" href="classscore_1_1_command_factory___qt_interface.html">score::CommandFactory_QtInterface</a></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    , <span class="keyword">public</span> <a class="code" href="classscore_1_1_application_plugin___qt_interface.html">score::ApplicationPlugin_QtInterface</a></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  SCORE_PLUGIN_METADATA(1, <span class="stringliteral">&quot;bca574b4-2534-441f-9db1-32eb9a1325c7&quot;</span>)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="classscore__lib__process.html">score_lib_process</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  ~<a class="code" href="classscore__lib__process.html">score_lib_process</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  std::vector&lt;std::unique_ptr&lt;score::InterfaceListBase&gt;&gt;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  factoryFamilies() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  std::pair&lt;const CommandGroupKey, CommandGeneratorMap&gt;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  make_commands() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassscore__lib__process_html"><div class="ttname"><a href="classscore__lib__process.html">score_lib_process</a></div><div class="ttdef"><b>Definition:</b> score_lib_process.hpp:59</div></div>
 <div class="ttc" id="aclassscore_1_1_application_plugin___qt_interface_html"><div class="ttname"><a href="classscore_1_1_application_plugin___qt_interface.html">score::ApplicationPlugin_QtInterface</a></div><div class="ttdef"><b>Definition:</b> GUIApplicationPlugin_QtInterface.hpp:11</div></div>
 <div class="ttc" id="aclassscore_1_1_command_factory___qt_interface_html"><div class="ttname"><a href="classscore_1_1_command_factory___qt_interface.html">score::CommandFactory_QtInterface</a></div><div class="ttdef"><b>Definition:</b> CommandFactory_QtInterface.hpp:11</div></div>
-<div class="ttc" id="aclassscore_1_1_plugin___qt_interface_html"><div class="ttname"><a href="classscore_1_1_plugin___qt_interface.html">score::Plugin_QtInterface</a></div><div class="ttdef"><b>Definition:</b> PluginRequirements_QtInterface.hpp:16</div></div>
+<div class="ttc" id="aclassscore_1_1_plugin___qt_interface_html"><div class="ttname"><a href="classscore_1_1_plugin___qt_interface.html">score::Plugin_QtInterface</a></div><div class="ttdef"><b>Definition:</b> PluginRequirements_QtInterface.hpp:17</div></div>
 <div class="ttc" id="aclassscore_1_1_factory_list___qt_interface_html"><div class="ttname"><a href="classscore_1_1_factory_list___qt_interface.html">score::FactoryList_QtInterface</a></div><div class="ttdef"><b>Definition:</b> FactoryFamily_QtInterface.hpp:13</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

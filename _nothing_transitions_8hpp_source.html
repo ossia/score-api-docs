@@ -146,28 +146,29 @@ $(document).ready(function(){initNavTree('_nothing_transitions_8hpp_source.html'
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    : <span class="keyword">public</span> <a class="code" href="class_scenario_1_1_matched_transition.html">MatchedTransition</a>&lt;Scenario_T, ReleaseOnNothing_Event&gt;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">using</span> <a class="code" href="class_scenario_1_1_matched_transition.html">MatchedTransition&lt;Scenario_T, ReleaseOnNothing_Event&gt;::MatchedTransition</a>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> onTransition(QEvent* ev)<span class="keyword"> override</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">auto</span> qev = <span class="keyword">static_cast&lt;</span><a class="code" href="struct_scenario_1_1_positioned_scenario_event.html">ReleaseOnNothing_Event</a>*<span class="keyword">&gt;</span>(ev);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    this-&gt;state().currentPoint = qev-&gt;point;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Scenario_T&gt;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">using</span> <a class="code" href="class_scenario_1_1_transition___t_3_01_scenario___t_00_01_release_on_nothing_01_4.html">ReleaseOnNothing_Transition</a> = <a class="code" href="class_scenario_1_1_transition___t_3_01_scenario___t_00_01_release_on_nothing_01_4.html">Transition_T&lt;Scenario_T, ReleaseOnNothing&gt;</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">using</span> <a class="code" href="class_scenario_1_1_matched_transition.html">MatchedTransition&lt;Scenario_T, ReleaseOnNothing_Event&gt;</a>::</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      MatchedTransition;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> onTransition(QEvent* ev)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">auto</span> qev = <span class="keyword">static_cast&lt;</span><a class="code" href="struct_scenario_1_1_positioned_scenario_event.html">ReleaseOnNothing_Event</a>*<span class="keyword">&gt;</span>(ev);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    this-&gt;state().currentPoint = qev-&gt;point;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Scenario_T&gt;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">using</span> <a class="code" href="class_scenario_1_1_transition___t_3_01_scenario___t_00_01_release_on_nothing_01_4.html">ReleaseOnNothing_Transition</a> = <a class="code" href="class_scenario_1_1_transition___t_3_01_scenario___t_00_01_release_on_nothing_01_4.html">Transition_T&lt;Scenario_T, ReleaseOnNothing&gt;</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>
-<div class="ttc" id="astruct_scenario_1_1_positioned_scenario_event_html"><div class="ttname"><a href="struct_scenario_1_1_positioned_scenario_event.html">Scenario::PositionedScenarioEvent</a></div><div class="ttdef"><b>Definition:</b> ScenarioPaletteBaseEvents.hpp:40</div></div>
+<div class="ttc" id="astruct_scenario_1_1_positioned_scenario_event_html"><div class="ttname"><a href="struct_scenario_1_1_positioned_scenario_event.html">Scenario::PositionedScenarioEvent</a></div><div class="ttdef"><b>Definition:</b> ScenarioPaletteBaseEvents.hpp:42</div></div>
 <div class="ttc" id="aclass_scenario_1_1_transition___t_3_01_scenario___t_00_01_release_on_nothing_01_4_html"><div class="ttname"><a href="class_scenario_1_1_transition___t_3_01_scenario___t_00_01_release_on_nothing_01_4.html">Scenario::Transition_T&lt; Scenario_T, ReleaseOnNothing &gt;</a></div><div class="ttdef"><b>Definition:</b> NothingTransitions.hpp:45</div></div>
 <div class="ttc" id="aclass_scenario_1_1_transition___t_3_01_scenario___t_00_01_click_on_nothing_01_4_html"><div class="ttname"><a href="class_scenario_1_1_transition___t_3_01_scenario___t_00_01_click_on_nothing_01_4.html">Scenario::Transition_T&lt; Scenario_T, ClickOnNothing &gt;</a></div><div class="ttdef"><b>Definition:</b> NothingTransitions.hpp:7</div></div>
 <div class="ttc" id="aclass_scenario_1_1_transition___t_3_01_scenario___t_00_01_move_on_nothing_01_4_html"><div class="ttname"><a href="class_scenario_1_1_transition___t_3_01_scenario___t_00_01_move_on_nothing_01_4.html">Scenario::Transition_T&lt; Scenario_T, MoveOnNothing &gt;</a></div><div class="ttdef"><b>Definition:</b> NothingTransitions.hpp:27</div></div>
-<div class="ttc" id="aclass_scenario_1_1_transition___t_html"><div class="ttname"><a href="class_scenario_1_1_transition___t.html">Scenario::Transition_T</a></div><div class="ttdef"><b>Definition:</b> ScenarioPaletteBaseTransitions.hpp:22</div></div>
-<div class="ttc" id="aclass_scenario_1_1_matched_transition_html"><div class="ttname"><a href="class_scenario_1_1_matched_transition.html">Scenario::MatchedTransition</a></div><div class="ttdef"><b>Definition:</b> ScenarioPaletteBaseTransitions.hpp:11</div></div>
+<div class="ttc" id="aclass_scenario_1_1_transition___t_html"><div class="ttname"><a href="class_scenario_1_1_transition___t.html">Scenario::Transition_T</a></div><div class="ttdef"><b>Definition:</b> ScenarioPaletteBaseTransitions.hpp:24</div></div>
+<div class="ttc" id="aclass_scenario_1_1_matched_transition_html"><div class="ttname"><a href="class_scenario_1_1_matched_transition.html">Scenario::MatchedTransition</a></div><div class="ttdef"><b>Definition:</b> ScenarioPaletteBaseTransitions.hpp:12</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

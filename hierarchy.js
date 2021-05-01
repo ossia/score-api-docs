@@ -1,65 +1,44 @@
 var hierarchy =
 [
-    [ " GenericComponentFactory", null, [
-      [ "RemoteControl::ProcessComponentFactory", "class_remote_control_1_1_process_component_factory.html", null ]
+    [ " InspectorWidgetDelegateFactory_T", null, [
+      [ "Automation::InspectorFactory", "class_automation_1_1_inspector_factory.html", null ],
+      [ "Gradient::InspectorFactory", "class_gradient_1_1_inspector_factory.html", null ],
+      [ "Interpolation::InspectorFactory", "class_interpolation_1_1_inspector_factory.html", null ],
+      [ "Mapping::MappingInspectorFactory", "class_mapping_1_1_mapping_inspector_factory.html", null ],
+      [ "Media::Sound::InspectorFactory", "class_media_1_1_sound_1_1_inspector_factory.html", null ],
+      [ "Metronome::InspectorFactory", "class_metronome_1_1_inspector_factory.html", null ],
+      [ "Midi::InspectorFactory", "class_midi_1_1_inspector_factory.html", null ],
+      [ "Patternist::InspectorFactory", "class_patternist_1_1_inspector_factory.html", null ]
     ] ],
     [ " ProcessComponent_T", null, [
+      [ "Automation::RecreateOnPlay::Component", "class_automation_1_1_recreate_on_play_1_1_component.html", null ],
+      [ "Control::Executor< Info >", "class_control_1_1_executor.html", null ],
+      [ "ControlSurface::ProcessExecutorComponent", "class_control_surface_1_1_process_executor_component.html", null ],
+      [ "Execution::FaustEffectComponent", "class_execution_1_1_faust_effect_component.html", null ],
       [ "Execution::JitEffectComponent", "class_execution_1_1_jit_effect_component.html", null ],
-      [ "Jit::BytebeatExecutor", "class_jit_1_1_bytebeat_executor.html", null ]
+      [ "Execution::MergerComponent", "class_execution_1_1_merger_component.html", null ],
+      [ "Execution::MetroComponent", "class_execution_1_1_metro_component.html", null ],
+      [ "Execution::SoundComponent", "class_execution_1_1_sound_component.html", null ],
+      [ "Execution::StepComponent", "class_execution_1_1_step_component.html", null ],
+      [ "Gfx::Filter::ProcessExecutorComponent", "class_gfx_1_1_filter_1_1_process_executor_component.html", null ],
+      [ "Gfx::Images::ProcessExecutorComponent", "class_gfx_1_1_images_1_1_process_executor_component.html", null ],
+      [ "Gfx::Video::ProcessExecutorComponent", "class_gfx_1_1_video_1_1_process_executor_component.html", null ],
+      [ "Gradient::RecreateOnPlay::Component", "class_gradient_1_1_recreate_on_play_1_1_component.html", null ],
+      [ "InterpState::ExecComponent", "class_interp_state_1_1_exec_component.html", null ],
+      [ "Jit::BytebeatExecutor", "class_jit_1_1_bytebeat_executor.html", null ],
+      [ "JS::Executor::Component", "class_j_s_1_1_executor_1_1_component.html", null ],
+      [ "Mapping::RecreateOnPlay::Component", "class_mapping_1_1_recreate_on_play_1_1_component.html", null ],
+      [ "Metronome::RecreateOnPlay::Component", "class_metronome_1_1_recreate_on_play_1_1_component.html", null ],
+      [ "Midi::Executor::Component", "class_midi_1_1_executor_1_1_component.html", null ],
+      [ "Patternist::Executor", "class_patternist_1_1_executor.html", null ],
+      [ "Spline3D::RecreateOnPlay::Component", "class_spline3_d_1_1_recreate_on_play_1_1_component.html", null ],
+      [ "Spline::RecreateOnPlay::Component", "class_spline_1_1_recreate_on_play_1_1_component.html", null ]
     ] ],
-    [ " StateAwareTransition", null, [
-      [ "Scenario::MatchedTransition< Scenario_T, ClickOnEvent_Event >", "class_scenario_1_1_matched_transition.html", [
-        [ "Scenario::ClickOnEndEvent_Transition< Scenario_T >", "class_scenario_1_1_click_on_end_event___transition.html", null ],
-        [ "Scenario::Transition_T< Scenario_T, ClickOnEvent >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_click_on_event_01_4.html", null ]
-      ] ],
-      [ "Scenario::MatchedTransition< Scenario_T, ClickOnInterval_Event >", "class_scenario_1_1_matched_transition.html", [
-        [ "Scenario::Transition_T< Scenario_T, ClickOnInterval >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_click_on_interval_01_4.html", null ]
-      ] ],
-      [ "Scenario::MatchedTransition< Scenario_T, ClickOnLeftBrace_Event >", "class_scenario_1_1_matched_transition.html", [
-        [ "Scenario::Transition_T< Scenario_T, ClickOnLeftBrace >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_click_on_left_brace_01_4.html", null ]
-      ] ],
-      [ "Scenario::MatchedTransition< Scenario_T, ClickOnNothing_Event >", "class_scenario_1_1_matched_transition.html", [
-        [ "Scenario::Transition_T< Scenario_T, ClickOnNothing >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_click_on_nothing_01_4.html", null ]
-      ] ],
-      [ "Scenario::MatchedTransition< Scenario_T, ClickOnRightBrace_Event >", "class_scenario_1_1_matched_transition.html", [
-        [ "Scenario::Transition_T< Scenario_T, ClickOnRightBrace >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_click_on_right_brace_01_4.html", null ]
-      ] ],
-      [ "Scenario::MatchedTransition< Scenario_T, ClickOnState_Event >", "class_scenario_1_1_matched_transition.html", [
-        [ "Scenario::ClickOnEndState_Transition< Scenario_T >", "class_scenario_1_1_click_on_end_state___transition.html", null ],
-        [ "Scenario::Transition_T< Scenario_T, ClickOnState >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_click_on_state_01_4.html", null ]
-      ] ],
-      [ "Scenario::MatchedTransition< Scenario_T, ClickOnTimeSync_Event >", "class_scenario_1_1_matched_transition.html", [
-        [ "Scenario::ClickOnEndTimeSync_Transition< Scenario_T >", "class_scenario_1_1_click_on_end_time_sync___transition.html", null ],
-        [ "Scenario::Transition_T< Scenario_T, ClickOnTimeSync >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_click_on_time_sync_01_4.html", null ]
-      ] ],
-      [ "Scenario::MatchedTransition< Scenario_T, MoveOnEvent_Event >", "class_scenario_1_1_matched_transition.html", [
-        [ "Scenario::Transition_T< Scenario_T, MoveOnEvent >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_move_on_event_01_4.html", null ]
-      ] ],
-      [ "Scenario::MatchedTransition< Scenario_T, MoveOnInterval_Event >", "class_scenario_1_1_matched_transition.html", [
-        [ "Scenario::Transition_T< Scenario_T, MoveOnInterval >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_move_on_interval_01_4.html", null ]
-      ] ],
-      [ "Scenario::MatchedTransition< Scenario_T, MoveOnNothing_Event >", "class_scenario_1_1_matched_transition.html", [
-        [ "Scenario::Transition_T< Scenario_T, MoveOnNothing >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_move_on_nothing_01_4.html", null ]
-      ] ],
-      [ "Scenario::MatchedTransition< Scenario_T, MoveOnState_Event >", "class_scenario_1_1_matched_transition.html", [
-        [ "Scenario::Transition_T< Scenario_T, MoveOnState >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_move_on_state_01_4.html", null ]
-      ] ],
-      [ "Scenario::MatchedTransition< Scenario_T, MoveOnTimeSync_Event >", "class_scenario_1_1_matched_transition.html", [
-        [ "Scenario::Transition_T< Scenario_T, MoveOnTimeSync >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_move_on_time_sync_01_4.html", null ]
-      ] ],
-      [ "Scenario::MatchedTransition< Scenario_T, ReleaseOnEvent_Event >", "class_scenario_1_1_matched_transition.html", [
-        [ "Scenario::Transition_T< Scenario_T, ReleaseOnEvent >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_release_on_event_01_4.html", null ]
-      ] ],
-      [ "Scenario::MatchedTransition< Scenario_T, ReleaseOnNothing_Event >", "class_scenario_1_1_matched_transition.html", [
-        [ "Scenario::Transition_T< Scenario_T, ReleaseOnNothing >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_release_on_nothing_01_4.html", null ]
-      ] ],
-      [ "Scenario::MatchedTransition< Scenario_T, ReleaseOnState_Event >", "class_scenario_1_1_matched_transition.html", [
-        [ "Scenario::Transition_T< Scenario_T, ReleaseOnState >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_release_on_state_01_4.html", null ]
-      ] ],
-      [ "Scenario::MatchedTransition< Scenario_T, ReleaseOnTimeSync_Event >", "class_scenario_1_1_matched_transition.html", [
-        [ "Scenario::Transition_T< Scenario_T, ReleaseOnTimeSync >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_release_on_time_sync_01_4.html", null ]
-      ] ],
-      [ "Scenario::MatchedTransition< Scenario_T, Event_T >", "class_scenario_1_1_matched_transition.html", null ]
+    [ " VariantBasedNode", null, [
+      [ "Device::DeviceExplorerNode", "class_device_1_1_device_explorer_node.html", null ],
+      [ "State::ExprData", "struct_state_1_1_expr_data.html", [
+        [ "TreeNode< State::ExprData >", "class_tree_node_3_01_state_1_1_expr_data_01_4.html", null ]
+      ] ]
     ] ],
     [ "AbstractVisitor", "class_abstract_visitor.html", [
       [ "DataStreamReader", "class_data_stream_reader.html", null ],
@@ -93,6 +72,7 @@ var hierarchy =
       [ "Device::FullAddressSettings", "struct_device_1_1_full_address_settings.html", null ]
     ] ],
     [ "Explorer::AddressSettingsFactory", "class_explorer_1_1_address_settings_factory.html", null ],
+    [ "vst::AEffectWrapper", "structvst_1_1_a_effect_wrapper.html", null ],
     [ "Scenario::IntervalDurations::Algorithms", "class_scenario_1_1_interval_durations_1_1_algorithms.html", null ],
     [ "score::any_serializer", "structscore_1_1any__serializer.html", [
       [ "score::any_serializer_t< T >", "structscore_1_1any__serializer__t.html", null ]
@@ -511,94 +491,9 @@ var hierarchy =
         [ "Execution::ProcessComponent", "class_execution_1_1_process_component.html", [
           [ "Pd::Component", "class_pd_1_1_component.html", null ]
         ] ],
-        [ "Process::GenericProcessComponent_T< ProcessComponent, Automation::ProcessModel >", "class_process_1_1_generic_process_component___t.html", [
-          [ "Execution::ProcessComponent_T< Automation::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-            [ "Automation::RecreateOnPlay::Component", "class_automation_1_1_recreate_on_play_1_1_component.html", null ]
-          ] ]
-        ] ],
-        [ "Process::GenericProcessComponent_T< ProcessComponent, ControlProcess< Info > >", "class_process_1_1_generic_process_component___t.html", [
-          [ "Execution::ProcessComponent_T< ControlProcess< Info >, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-            [ "Control::Executor< Info >", "class_control_1_1_executor.html", null ]
-          ] ]
-        ] ],
-        [ "Process::GenericProcessComponent_T< ProcessComponent, ControlSurface::Model >", "class_process_1_1_generic_process_component___t.html", [
-          [ "Execution::ProcessComponent_T< ControlSurface::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-            [ "ControlSurface::ProcessExecutorComponent", "class_control_surface_1_1_process_executor_component.html", null ]
-          ] ]
-        ] ],
-        [ "Process::GenericProcessComponent_T< ProcessComponent, Faust::FaustEffectModel >", "class_process_1_1_generic_process_component___t.html", [
-          [ "Execution::ProcessComponent_T< Faust::FaustEffectModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-            [ "Execution::FaustEffectComponent", "class_execution_1_1_faust_effect_component.html", null ]
-          ] ]
-        ] ],
         [ "Process::GenericProcessComponent_T< ProcessComponent, Fx< DSP > >", "class_process_1_1_generic_process_component___t.html", [
           [ "Execution::ProcessComponent_T< Fx< DSP >, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
             [ "FaustDSP::Executor< DSP >", "class_faust_d_s_p_1_1_executor.html", null ]
-          ] ]
-        ] ],
-        [ "Process::GenericProcessComponent_T< ProcessComponent, Gfx::Filter::Model >", "class_process_1_1_generic_process_component___t.html", [
-          [ "Execution::ProcessComponent_T< Gfx::Filter::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-            [ "Gfx::Filter::ProcessExecutorComponent", "class_gfx_1_1_filter_1_1_process_executor_component.html", null ]
-          ] ]
-        ] ],
-        [ "Process::GenericProcessComponent_T< ProcessComponent, Gfx::Images::Model >", "class_process_1_1_generic_process_component___t.html", [
-          [ "Execution::ProcessComponent_T< Gfx::Images::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-            [ "Gfx::Images::ProcessExecutorComponent", "class_gfx_1_1_images_1_1_process_executor_component.html", null ]
-          ] ]
-        ] ],
-        [ "Process::GenericProcessComponent_T< ProcessComponent, Gfx::Video::Model >", "class_process_1_1_generic_process_component___t.html", [
-          [ "Execution::ProcessComponent_T< Gfx::Video::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-            [ "Gfx::Video::ProcessExecutorComponent", "class_gfx_1_1_video_1_1_process_executor_component.html", null ]
-          ] ]
-        ] ],
-        [ "Process::GenericProcessComponent_T< ProcessComponent, Gradient::ProcessModel >", "class_process_1_1_generic_process_component___t.html", [
-          [ "Execution::ProcessComponent_T< Gradient::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-            [ "Gradient::RecreateOnPlay::Component", "class_gradient_1_1_recreate_on_play_1_1_component.html", null ]
-          ] ]
-        ] ],
-        [ "Process::GenericProcessComponent_T< ProcessComponent, InterpState::ProcessModel >", "class_process_1_1_generic_process_component___t.html", [
-          [ "Execution::ProcessComponent_T< InterpState::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-            [ "InterpState::ExecComponent", "class_interp_state_1_1_exec_component.html", null ]
-          ] ]
-        ] ],
-        [ "Process::GenericProcessComponent_T< ProcessComponent, JS::ProcessModel >", "class_process_1_1_generic_process_component___t.html", [
-          [ "Execution::ProcessComponent_T< JS::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-            [ "JS::Executor::Component", "class_j_s_1_1_executor_1_1_component.html", null ]
-          ] ]
-        ] ],
-        [ "Process::GenericProcessComponent_T< ProcessComponent, Mapping::ProcessModel >", "class_process_1_1_generic_process_component___t.html", [
-          [ "Execution::ProcessComponent_T< Mapping::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-            [ "Mapping::RecreateOnPlay::Component", "class_mapping_1_1_recreate_on_play_1_1_component.html", null ]
-          ] ]
-        ] ],
-        [ "Process::GenericProcessComponent_T< ProcessComponent, Media::Merger::Model >", "class_process_1_1_generic_process_component___t.html", [
-          [ "Execution::ProcessComponent_T< Media::Merger::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-            [ "Execution::MergerComponent", "class_execution_1_1_merger_component.html", null ]
-          ] ]
-        ] ],
-        [ "Process::GenericProcessComponent_T< ProcessComponent, Media::Metro::Model >", "class_process_1_1_generic_process_component___t.html", [
-          [ "Execution::ProcessComponent_T< Media::Metro::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-            [ "Execution::MetroComponent", "class_execution_1_1_metro_component.html", null ]
-          ] ]
-        ] ],
-        [ "Process::GenericProcessComponent_T< ProcessComponent, Media::Sound::ProcessModel >", "class_process_1_1_generic_process_component___t.html", [
-          [ "Execution::ProcessComponent_T< Media::Sound::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-            [ "Execution::SoundComponent", "class_execution_1_1_sound_component.html", null ]
-          ] ]
-        ] ],
-        [ "Process::GenericProcessComponent_T< ProcessComponent, Media::Step::Model >", "class_process_1_1_generic_process_component___t.html", [
-          [ "Execution::ProcessComponent_T< Media::Step::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-            [ "Execution::StepComponent", "class_execution_1_1_step_component.html", null ]
-          ] ]
-        ] ],
-        [ "Process::GenericProcessComponent_T< ProcessComponent, Metronome::ProcessModel >", "class_process_1_1_generic_process_component___t.html", [
-          [ "Execution::ProcessComponent_T< Metronome::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-            [ "Metronome::RecreateOnPlay::Component", "class_metronome_1_1_recreate_on_play_1_1_component.html", null ]
-          ] ]
-        ] ],
-        [ "Process::GenericProcessComponent_T< ProcessComponent, Midi::ProcessModel >", "class_process_1_1_generic_process_component___t.html", [
-          [ "Execution::ProcessComponent_T< Midi::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-            [ "Midi::Executor::Component", "class_midi_1_1_executor_1_1_component.html", null ]
           ] ]
         ] ],
         [ "Process::GenericProcessComponent_T< ProcessComponent, Nodal::Model >", "class_process_1_1_generic_process_component___t.html", [
@@ -608,11 +503,6 @@ var hierarchy =
                 [ "Nodal::NodalExecutor", "class_nodal_1_1_nodal_executor.html", null ]
               ] ]
             ] ]
-          ] ]
-        ] ],
-        [ "Process::GenericProcessComponent_T< ProcessComponent, Patternist::ProcessModel >", "class_process_1_1_generic_process_component___t.html", [
-          [ "Execution::ProcessComponent_T< Patternist::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-            [ "Patternist::Executor", "class_patternist_1_1_executor.html", null ]
           ] ]
         ] ],
         [ "Process::GenericProcessComponent_T< ProcessComponent, Process_T >", "class_process_1_1_generic_process_component___t.html", [
@@ -627,16 +517,6 @@ var hierarchy =
         [ "Process::GenericProcessComponent_T< ProcessComponent, Scenario::ProcessModel >", "class_process_1_1_generic_process_component___t.html", [
           [ "Execution::ProcessComponent_T< Scenario::ProcessModel, ossia::scenario >", "struct_execution_1_1_process_component___t.html", [
             [ "Execution::ScenarioComponentBase", "class_execution_1_1_scenario_component_base.html", null ]
-          ] ]
-        ] ],
-        [ "Process::GenericProcessComponent_T< ProcessComponent, Spline3D::ProcessModel >", "class_process_1_1_generic_process_component___t.html", [
-          [ "Execution::ProcessComponent_T< Spline3D::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-            [ "Spline3D::RecreateOnPlay::Component", "class_spline3_d_1_1_recreate_on_play_1_1_component.html", null ]
-          ] ]
-        ] ],
-        [ "Process::GenericProcessComponent_T< ProcessComponent, Spline::ProcessModel >", "class_process_1_1_generic_process_component___t.html", [
-          [ "Execution::ProcessComponent_T< Spline::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-            [ "Spline::RecreateOnPlay::Component", "class_spline_1_1_recreate_on_play_1_1_component.html", null ]
           ] ]
         ] ],
         [ "Process::GenericProcessComponent_T< ProcessComponent, vst3::Model >", "class_process_1_1_generic_process_component___t.html", [
@@ -1123,8 +1003,8 @@ var hierarchy =
     [ "IdContainer< Curve::PointView, Curve::PointModel >", "class_id_container.html", null ],
     [ "IdContainer< Curve::SegmentModel >", "class_id_container.html", null ],
     [ "IdContainer< Curve::SegmentView, Curve::SegmentModel >", "class_id_container.html", null ],
+    [ "IdContainer< Element, Model, std::enable_if_t< !std::is_base_of< IdentifiedObject< Model >, Element >::value > >", "class_id_container_3_01_element_00_01_model_00_01std_1_1enable__if__t_3_01_9std_1_1is__base__of_8909dbdfee8eb5e14375a53313fd2d0d.html", null ],
     [ "IdContainer< Element, Model, std::enable_if_t< std::is_base_of< IdentifiedObject< Model >, Element >::value > >", "class_id_container_3_01_element_00_01_model_00_01std_1_1enable__if__t_3_01std_1_1is__base__of_3_fa82f8e34463791cc3719bf96cdfa1aa.html", null ],
-    [ "IdContainer< Element, Model, std::enable_if_t<!std::is_base_of< IdentifiedObject< Model >, Element >::value > >", "class_id_container_3_01_element_00_01_model_00_01std_1_1enable__if__t_3_9std_1_1is__base__of_3_0398040744b894784cbf4c6c5f48e82f4.html", null ],
     [ "IdContainer< Midi::Note >", "class_id_container.html", null ],
     [ "IdContainer< Process::Cable >", "class_id_container.html", null ],
     [ "IdContainer< Process::NodeItem, Process::ProcessModel >", "class_id_container.html", null ],
@@ -1231,6 +1111,9 @@ var hierarchy =
         [ "Execution::PlayListeningHandlerFactory", "class_execution_1_1_play_listening_handler_factory.html", null ],
         [ "Explorer::DefaultListeningHandlerFactory", "class_explorer_1_1_default_listening_handler_factory.html", null ]
       ] ],
+      [ "score::GenericComponentFactory< Process::ProcessModel, DocumentPlugin, ProcessComponentFactory >", "classscore_1_1_generic_component_factory.html", [
+        [ "RemoteControl::ProcessComponentFactory", "class_remote_control_1_1_process_component_factory.html", null ]
+      ] ],
       [ "score::GenericComponentFactory< Process::ProcessModel, Execution::Context, Execution::ProcessComponentFactory >", "classscore_1_1_generic_component_factory.html", [
         [ "Execution::ProcessComponentFactory", "class_execution_1_1_process_component_factory.html", null ]
       ] ],
@@ -1249,16 +1132,6 @@ var hierarchy =
             [ "Gfx::Video::InspectorFactory", "class_gfx_1_1_video_1_1_inspector_factory.html", null ],
             [ "Media::Merger::InspectorFactory", "class_media_1_1_merger_1_1_inspector_factory.html", null ],
             [ "Media::Step::InspectorFactory", "class_media_1_1_step_1_1_inspector_factory.html", null ]
-          ] ],
-          [ "Process::InspectorWidgetDelegateFactory_T< ProcessModel, InspectorWidget >", "class_process_1_1_inspector_widget_delegate_factory___t.html", [
-            [ "Automation::InspectorFactory", "class_automation_1_1_inspector_factory.html", null ],
-            [ "Gradient::InspectorFactory", "class_gradient_1_1_inspector_factory.html", null ],
-            [ "Interpolation::InspectorFactory", "class_interpolation_1_1_inspector_factory.html", null ],
-            [ "Mapping::MappingInspectorFactory", "class_mapping_1_1_mapping_inspector_factory.html", null ],
-            [ "Media::Sound::InspectorFactory", "class_media_1_1_sound_1_1_inspector_factory.html", null ],
-            [ "Metronome::InspectorFactory", "class_metronome_1_1_inspector_factory.html", null ],
-            [ "Midi::InspectorFactory", "class_midi_1_1_inspector_factory.html", null ],
-            [ "Patternist::InspectorFactory", "class_patternist_1_1_inspector_factory.html", null ]
           ] ],
           [ "Process::InspectorWidgetDelegateFactory_T< ProcessModel, PdWidget >", "class_process_1_1_inspector_widget_delegate_factory___t.html", [
             [ "Pd::InspectorFactory", "class_pd_1_1_inspector_factory.html", null ]
@@ -1564,8 +1437,8 @@ var hierarchy =
     [ "Gfx::Kinect2Context", "struct_gfx_1_1_kinect2_context.html", null ],
     [ "Gfx::Kinect2Settings", "struct_gfx_1_1_kinect2_settings.html", null ],
     [ "Patternist::Lane", "struct_patternist_1_1_lane.html", null ],
-    [ "Faust::LanguageSpec", "struct_faust_1_1_language_spec.html", null ],
     [ "JS::LanguageSpec", "struct_j_s_1_1_language_spec.html", null ],
+    [ "Faust::LanguageSpec", "struct_faust_1_1_language_spec.html", null ],
     [ "Scenario::LayerData::Layer", "struct_scenario_1_1_layer_data_1_1_layer.html", null ],
     [ "Process::LayerContext", "struct_process_1_1_layer_context.html", null ],
     [ "Process::LayerContextMenu", "class_process_1_1_layer_context_menu.html", null ],
@@ -1698,29 +1571,28 @@ var hierarchy =
     [ "Scenario::BaseScenarioContainer::no_init", "struct_scenario_1_1_base_scenario_container_1_1no__init.html", null ],
     [ "Explorer::AddressSettingsWidget::no_widgets_t", "struct_explorer_1_1_address_settings_widget_1_1no__widgets__t.html", null ],
     [ "Scenario::NodalSlotPresenter", "struct_scenario_1_1_nodal_slot_presenter.html", null ],
-    [ "Nodes::MathAudioGenerator::Node", "struct_nodes_1_1_math_audio_generator_1_1_node.html", null ],
-    [ "Nodes::MathMapping::Node", "struct_nodes_1_1_math_mapping_1_1_node.html", null ],
-    [ "Nodes::Chord::Node", "struct_nodes_1_1_chord_1_1_node.html", null ],
     [ "Nodes::MathGenerator::Node", "struct_nodes_1_1_math_generator_1_1_node.html", null ],
-    [ "Nodes::MidiUtil::Node", "struct_nodes_1_1_midi_util_1_1_node.html", null ],
+    [ "Nodes::Chord::Node", "struct_nodes_1_1_chord_1_1_node.html", null ],
     [ "Nodes::ClassicalBeat::Node", "struct_nodes_1_1_classical_beat_1_1_node.html", null ],
-    [ "Nodes::Gain::Node", "struct_nodes_1_1_gain_1_1_node.html", null ],
+    [ "Nodes::EmptyAudioMapping::Node", "struct_nodes_1_1_empty_audio_mapping_1_1_node.html", null ],
     [ "Ui::SignalDisplay::Node", "struct_ui_1_1_signal_display_1_1_node.html", null ],
     [ "Nodes::Direction::Node", "struct_nodes_1_1_direction_1_1_node.html", null ],
+    [ "Nodes::Arpeggiator::Node", "struct_nodes_1_1_arpeggiator_1_1_node.html", null ],
     [ "Nodes::Debug::Node", "struct_nodes_1_1_debug_1_1_node.html", null ],
-    [ "Nodes::EmptyValueMapping::Node", "struct_nodes_1_1_empty_value_mapping_1_1_node.html", null ],
     [ "Nodes::EmptyMidiMapping::Node", "struct_nodes_1_1_empty_midi_mapping_1_1_node.html", null ],
     [ "Nodes::Envelope::Node", "struct_nodes_1_1_envelope_1_1_node.html", null ],
     [ "Nodes::FactorOracle::Node", "struct_nodes_1_1_factor_oracle_1_1_node.html", null ],
+    [ "Nodes::Gain::Node", "struct_nodes_1_1_gain_1_1_node.html", null ],
     [ "Nodes::LFO::Node", "struct_nodes_1_1_l_f_o_1_1_node.html", null ],
     [ "Nodes::AudioLooper::Node", "struct_nodes_1_1_audio_looper_1_1_node.html", null ],
+    [ "Nodes::MathMapping::Node", "struct_nodes_1_1_math_mapping_1_1_node.html", null ],
     [ "Nodes::MathAudioFilter::Node", "struct_nodes_1_1_math_audio_filter_1_1_node.html", null ],
     [ "Nodes::Metro::Node", "struct_nodes_1_1_metro_1_1_node.html", null ],
+    [ "Nodes::MidiUtil::Node", "struct_nodes_1_1_midi_util_1_1_node.html", null ],
     [ "Nodes::PitchToValue::Node", "struct_nodes_1_1_pitch_to_value_1_1_node.html", null ],
     [ "Nodes::Quantifier::Node", "struct_nodes_1_1_quantifier_1_1_node.html", null ],
     [ "Nodes::PulseToNote::Node", "struct_nodes_1_1_pulse_to_note_1_1_node.html", null ],
-    [ "Nodes::Arpeggiator::Node", "struct_nodes_1_1_arpeggiator_1_1_node.html", null ],
-    [ "Nodes::EmptyAudioMapping::Node", "struct_nodes_1_1_empty_audio_mapping_1_1_node.html", null ],
+    [ "Nodes::MathAudioGenerator::Node", "struct_nodes_1_1_math_audio_generator_1_1_node.html", null ],
     [ "score::gfx::Node", "classscore_1_1gfx_1_1_node.html", [
       [ "score::gfx::ProcessNode", "classscore_1_1gfx_1_1_process_node.html", [
         [ "ISFNode", "struct_i_s_f_node.html", null ],
@@ -1740,6 +1612,7 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "Nodes::EmptyValueMapping::Node", "struct_nodes_1_1_empty_value_mapping_1_1_node.html", null ],
     [ "node_base", null, [
       [ "Gfx::camera_node", "class_gfx_1_1camera__node.html", null ],
       [ "Gfx::gfx_node_base", "class_gfx_1_1gfx__node__base.html", null ],
@@ -1777,8 +1650,8 @@ var hierarchy =
     [ "Control::Note", "struct_control_1_1_note.html", null ],
     [ "Midi::NoteComparator", "struct_midi_1_1_note_comparator.html", null ],
     [ "Midi::NoteData", "struct_midi_1_1_note_data.html", null ],
-    [ "Nodes::PulseToNote::Node::NoteIn", "struct_nodes_1_1_pulse_to_note_1_1_node_1_1_note_in.html", null ],
     [ "Nodes::Quantifier::Node::NoteIn", "struct_nodes_1_1_quantifier_1_1_node_1_1_note_in.html", null ],
+    [ "Nodes::PulseToNote::Node::NoteIn", "struct_nodes_1_1_pulse_to_note_1_1_node_1_1_note_in.html", null ],
     [ "Curve::Element::Nothing_tag", "struct_curve_1_1_element_1_1_nothing__tag.html", null ],
     [ "ObjectIdentifier", "class_object_identifier.html", null ],
     [ "ObjectKey_k", "class_object_key__k.html", null ],
@@ -1910,8 +1783,8 @@ var hierarchy =
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Metronome::ProcessModel >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -1945,7 +1818,9 @@ var hierarchy =
     [ "Path< T >", "class_path.html", null ],
     [ "Path< TimeSyncModel >", "class_path.html", null ],
     [ "Path< vst3::ControlInlet >", "class_path.html", null ],
+    [ "Path< vst3::Model >", "class_path.html", null ],
     [ "Path< vst::ControlInlet >", "class_path.html", null ],
+    [ "Path< vst::Model >", "class_path.html", null ],
     [ "Patternist::Pattern", "struct_patternist_1_1_pattern.html", null ],
     [ "PdDataflowTest", "class_pd_dataflow_test.html", null ],
     [ "Protocols::PhidgetSpecificSettings", "struct_protocols_1_1_phidget_specific_settings.html", null ],
@@ -1995,10 +1870,10 @@ var hierarchy =
     [ "Scenario::Point", "struct_scenario_1_1_point.html", null ],
     [ "Curve::Element::Point_tag", "struct_curve_1_1_element_1_1_point__tag.html", null ],
     [ "Curve::PointId", "struct_curve_1_1_point_id.html", null ],
-    [ "Process::DefaultEffectItem::Port", "struct_process_1_1_default_effect_item_1_1_port.html", null ],
     [ "Port", "struct_port.html", null ],
-    [ "Gfx::Video::Presenter::Port", "struct_gfx_1_1_video_1_1_presenter_1_1_port.html", null ],
     [ "ControlSurface::Presenter::Port", "struct_control_surface_1_1_presenter_1_1_port.html", null ],
+    [ "Process::DefaultEffectItem::Port", "struct_process_1_1_default_effect_item_1_1_port.html", null ],
+    [ "Gfx::Video::Presenter::Port", "struct_gfx_1_1_video_1_1_presenter_1_1_port.html", null ],
     [ "Audio::PortAudioCard", "struct_audio_1_1_port_audio_card.html", null ],
     [ "Audio::PortAudioScope", "struct_audio_1_1_port_audio_scope.html", null ],
     [ "vst3::PortCreationVisitor", "structvst3_1_1_port_creation_visitor.html", null ],
@@ -2079,14 +1954,134 @@ var hierarchy =
     ] ],
     [ "QAbstractTransition", null, [
       [ "Curve::ReleaseOnAnything_Transition", "class_curve_1_1_release_on_anything___transition.html", null ],
+      [ "score::MatchedTransition< ClickOnEvent_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< ClickOnEvent_Event > >", "classscore_1_1_state_aware_transition.html", [
+          [ "Scenario::MatchedTransition< Scenario_T, ClickOnEvent_Event >", "class_scenario_1_1_matched_transition.html", [
+            [ "Scenario::ClickOnEndEvent_Transition< Scenario_T >", "class_scenario_1_1_click_on_end_event___transition.html", null ],
+            [ "Scenario::Transition_T< Scenario_T, ClickOnEvent >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_click_on_event_01_4.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "score::MatchedTransition< ClickOnInterval_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< ClickOnInterval_Event > >", "classscore_1_1_state_aware_transition.html", [
+          [ "Scenario::MatchedTransition< Scenario_T, ClickOnInterval_Event >", "class_scenario_1_1_matched_transition.html", [
+            [ "Scenario::Transition_T< Scenario_T, ClickOnInterval >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_click_on_interval_01_4.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "score::MatchedTransition< ClickOnLeftBrace_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< ClickOnLeftBrace_Event > >", "classscore_1_1_state_aware_transition.html", [
+          [ "Scenario::MatchedTransition< Scenario_T, ClickOnLeftBrace_Event >", "class_scenario_1_1_matched_transition.html", [
+            [ "Scenario::Transition_T< Scenario_T, ClickOnLeftBrace >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_click_on_left_brace_01_4.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "score::MatchedTransition< ClickOnNothing_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< ClickOnNothing_Event > >", "classscore_1_1_state_aware_transition.html", [
+          [ "Scenario::MatchedTransition< Scenario_T, ClickOnNothing_Event >", "class_scenario_1_1_matched_transition.html", [
+            [ "Scenario::Transition_T< Scenario_T, ClickOnNothing >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_click_on_nothing_01_4.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "score::MatchedTransition< ClickOnRightBrace_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< ClickOnRightBrace_Event > >", "classscore_1_1_state_aware_transition.html", [
+          [ "Scenario::MatchedTransition< Scenario_T, ClickOnRightBrace_Event >", "class_scenario_1_1_matched_transition.html", [
+            [ "Scenario::Transition_T< Scenario_T, ClickOnRightBrace >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_click_on_right_brace_01_4.html", null ]
+          ] ]
+        ] ]
+      ] ],
       [ "score::MatchedTransition< ClickOnSlotHandle_Event >", "classscore_1_1_matched_transition.html", [
         [ "Scenario::ClickOnSlotHandle_Transition", "class_scenario_1_1_click_on_slot_handle___transition.html", null ]
+      ] ],
+      [ "score::MatchedTransition< ClickOnState_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< ClickOnState_Event > >", "classscore_1_1_state_aware_transition.html", [
+          [ "Scenario::MatchedTransition< Scenario_T, ClickOnState_Event >", "class_scenario_1_1_matched_transition.html", [
+            [ "Scenario::ClickOnEndState_Transition< Scenario_T >", "class_scenario_1_1_click_on_end_state___transition.html", null ],
+            [ "Scenario::Transition_T< Scenario_T, ClickOnState >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_click_on_state_01_4.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "score::MatchedTransition< ClickOnTimeSync_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< ClickOnTimeSync_Event > >", "classscore_1_1_state_aware_transition.html", [
+          [ "Scenario::MatchedTransition< Scenario_T, ClickOnTimeSync_Event >", "class_scenario_1_1_matched_transition.html", [
+            [ "Scenario::ClickOnEndTimeSync_Transition< Scenario_T >", "class_scenario_1_1_click_on_end_time_sync___transition.html", null ],
+            [ "Scenario::Transition_T< Scenario_T, ClickOnTimeSync >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_click_on_time_sync_01_4.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "score::MatchedTransition< Event_T >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< Event_T > >", "classscore_1_1_state_aware_transition.html", [
+          [ "Scenario::MatchedTransition< Scenario_T, Event_T >", "class_scenario_1_1_matched_transition.html", null ]
+        ] ]
+      ] ],
+      [ "score::MatchedTransition< MoveOnEvent_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< MoveOnEvent_Event > >", "classscore_1_1_state_aware_transition.html", [
+          [ "Scenario::MatchedTransition< Scenario_T, MoveOnEvent_Event >", "class_scenario_1_1_matched_transition.html", [
+            [ "Scenario::Transition_T< Scenario_T, MoveOnEvent >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_move_on_event_01_4.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "score::MatchedTransition< MoveOnInterval_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< MoveOnInterval_Event > >", "classscore_1_1_state_aware_transition.html", [
+          [ "Scenario::MatchedTransition< Scenario_T, MoveOnInterval_Event >", "class_scenario_1_1_matched_transition.html", [
+            [ "Scenario::Transition_T< Scenario_T, MoveOnInterval >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_move_on_interval_01_4.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "score::MatchedTransition< MoveOnNothing_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< MoveOnNothing_Event > >", "classscore_1_1_state_aware_transition.html", [
+          [ "Scenario::MatchedTransition< Scenario_T, MoveOnNothing_Event >", "class_scenario_1_1_matched_transition.html", [
+            [ "Scenario::Transition_T< Scenario_T, MoveOnNothing >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_move_on_nothing_01_4.html", null ]
+          ] ]
+        ] ]
       ] ],
       [ "score::MatchedTransition< MoveOnSlotHandle_Event >", "classscore_1_1_matched_transition.html", [
         [ "Scenario::MoveOnSlotHandle_Transition", "class_scenario_1_1_move_on_slot_handle___transition.html", null ]
       ] ],
+      [ "score::MatchedTransition< MoveOnState_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< MoveOnState_Event > >", "classscore_1_1_state_aware_transition.html", [
+          [ "Scenario::MatchedTransition< Scenario_T, MoveOnState_Event >", "class_scenario_1_1_matched_transition.html", [
+            [ "Scenario::Transition_T< Scenario_T, MoveOnState >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_move_on_state_01_4.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "score::MatchedTransition< MoveOnTimeSync_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< MoveOnTimeSync_Event > >", "classscore_1_1_state_aware_transition.html", [
+          [ "Scenario::MatchedTransition< Scenario_T, MoveOnTimeSync_Event >", "class_scenario_1_1_matched_transition.html", [
+            [ "Scenario::Transition_T< Scenario_T, MoveOnTimeSync >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_move_on_time_sync_01_4.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "score::MatchedTransition< ReleaseOnEvent_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< ReleaseOnEvent_Event > >", "classscore_1_1_state_aware_transition.html", [
+          [ "Scenario::MatchedTransition< Scenario_T, ReleaseOnEvent_Event >", "class_scenario_1_1_matched_transition.html", [
+            [ "Scenario::Transition_T< Scenario_T, ReleaseOnEvent >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_release_on_event_01_4.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "score::MatchedTransition< ReleaseOnNothing_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< ReleaseOnNothing_Event > >", "classscore_1_1_state_aware_transition.html", [
+          [ "Scenario::MatchedTransition< Scenario_T, ReleaseOnNothing_Event >", "class_scenario_1_1_matched_transition.html", [
+            [ "Scenario::Transition_T< Scenario_T, ReleaseOnNothing >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_release_on_nothing_01_4.html", null ]
+          ] ]
+        ] ]
+      ] ],
       [ "score::MatchedTransition< ReleaseOnSlotHandle_Event >", "classscore_1_1_matched_transition.html", [
         [ "Scenario::ReleaseOnSlotHandle_Transition", "class_scenario_1_1_release_on_slot_handle___transition.html", null ]
+      ] ],
+      [ "score::MatchedTransition< ReleaseOnState_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< ReleaseOnState_Event > >", "classscore_1_1_state_aware_transition.html", [
+          [ "Scenario::MatchedTransition< Scenario_T, ReleaseOnState_Event >", "class_scenario_1_1_matched_transition.html", [
+            [ "Scenario::Transition_T< Scenario_T, ReleaseOnState >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_release_on_state_01_4.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "score::MatchedTransition< ReleaseOnTimeSync_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< ReleaseOnTimeSync_Event > >", "classscore_1_1_state_aware_transition.html", [
+          [ "Scenario::MatchedTransition< Scenario_T, ReleaseOnTimeSync_Event >", "class_scenario_1_1_matched_transition.html", [
+            [ "Scenario::Transition_T< Scenario_T, ReleaseOnTimeSync >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_release_on_time_sync_01_4.html", null ]
+          ] ]
+        ] ]
       ] ],
       [ "Scenario::MoveOnAnything_SlotTransition", "class_scenario_1_1_move_on_anything___slot_transition.html", null ],
       [ "Scenario::ReleaseOnAnything_SlotTransition", "class_scenario_1_1_release_on_anything___slot_transition.html", null ],
@@ -2231,9 +2226,7 @@ var hierarchy =
       [ "Process::NodeItem", "class_process_1_1_node_item.html", null ],
       [ "ProcessPanelGraphicsProxy", "class_process_panel_graphics_proxy.html", null ],
       [ "ProgressBar", "class_progress_bar.html", null ],
-      [ "score::QGraphicsSliderBase< GraphicsSlider >", "structscore_1_1_q_graphics_slider_base.html", [
-        [ "vst::GraphicsSlider", "classvst_1_1_graphics_slider.html", null ]
-      ] ],
+      [ "score::QGraphicsSliderBase< GraphicsSlider >", "structscore_1_1_q_graphics_slider_base.html", null ],
       [ "score::QGraphicsSliderBase< QGraphicsIntSlider >", "structscore_1_1_q_graphics_slider_base.html", [
         [ "score::QGraphicsIntSlider", "classscore_1_1_q_graphics_int_slider.html", null ]
       ] ],
@@ -2306,7 +2299,8 @@ var hierarchy =
       [ "score::QGraphicsNoteChooser", "classscore_1_1_q_graphics_note_chooser.html", null ],
       [ "score::QGraphicsSliderBase< T >", "structscore_1_1_q_graphics_slider_base.html", [
         [ "score::QGraphicsLogSlider", "classscore_1_1_q_graphics_log_slider.html", null ],
-        [ "vst3::VSTGraphicsSlider", "classvst3_1_1_v_s_t_graphics_slider.html", null ]
+        [ "vst3::VSTGraphicsSlider", "classvst3_1_1_v_s_t_graphics_slider.html", null ],
+        [ "vst::GraphicsSlider", "classvst_1_1_graphics_slider.html", null ]
       ] ],
       [ "score::QGraphicsToggle", "classscore_1_1_q_graphics_toggle.html", null ],
       [ "score::QGraphicsXYChooser", "classscore_1_1_q_graphics_x_y_chooser.html", null ],
@@ -2403,9 +2397,7 @@ var hierarchy =
     [ "QMetaTypeId< const Process::ProcessModel * >", "struct_q_meta_type_id_3_01const_01_process_1_1_process_model_01_5_01_4.html", null ],
     [ "QMetaTypeId< const QMimeData * >", "struct_q_meta_type_id_3_01const_01_q_mime_data_01_5_01_4.html", null ],
     [ "QMetaTypeId< const Scenario::IntervalModel * >", "struct_q_meta_type_id_3_01const_01_scenario_1_1_interval_model_01_5_01_4.html", null ],
-    [ "QMetaTypeId< const Scenario::ProcessModel * >", "struct_q_meta_type_id_3_01const_01_scenario_1_1_process_model_01_5_01_4.html", null ],
     [ "QMetaTypeId< const Scenario::ScenarioInterface * >", "struct_q_meta_type_id_3_01const_01_scenario_1_1_scenario_interface_01_5_01_4.html", null ],
-    [ "QMetaTypeId< Curve::PointArraySegmentData >", "struct_q_meta_type_id_3_01_curve_1_1_point_array_segment_data_01_4.html", null ],
     [ "QMetaTypeId< Curve::PowerSegmentData >", "struct_q_meta_type_id_3_01_curve_1_1_power_segment_data_01_4.html", null ],
     [ "QMetaTypeId< Curve::SegmentData >", "struct_q_meta_type_id_3_01_curve_1_1_segment_data_01_4.html", null ],
     [ "QMetaTypeId< Curve::Settings::Mode >", "struct_q_meta_type_id_3_01_curve_1_1_settings_1_1_mode_01_4.html", null ],
@@ -2673,7 +2665,9 @@ var hierarchy =
               [ "Pd::ProcessModel", "class_pd_1_1_process_model.html", null ],
               [ "Scenario::ProcessModel", "class_scenario_1_1_process_model.html", null ],
               [ "Spline3D::ProcessModel", "class_spline3_d_1_1_process_model.html", null ],
-              [ "Spline::ProcessModel", "class_spline_1_1_process_model.html", null ]
+              [ "Spline::ProcessModel", "class_spline_1_1_process_model.html", null ],
+              [ "vst3::Model", "classvst3_1_1_model.html", null ],
+              [ "vst::Model", "classvst_1_1_model.html", null ]
             ] ]
           ] ]
         ] ],
@@ -3004,8 +2998,8 @@ var hierarchy =
       [ "Scenario::MessageTreeView", "class_scenario_1_1_message_tree_view.html", null ],
       [ "Scenario::ObjectWidget", "class_scenario_1_1_object_widget.html", null ]
     ] ],
-    [ "SendStrategy::Quiet", "struct_send_strategy_1_1_quiet.html", null ],
     [ "RedoStrategy::Quiet", "struct_redo_strategy_1_1_quiet.html", null ],
+    [ "SendStrategy::Quiet", "struct_send_strategy_1_1_quiet.html", null ],
     [ "QValidator", null, [
       [ "ExpressionValidator< T >", "class_expression_validator.html", null ],
       [ "ExpressionValidator< TreeNode >", "class_expression_validator.html", null ],
@@ -3336,26 +3330,26 @@ var hierarchy =
     [ "Scenario::StartDateComparator< T >", "struct_scenario_1_1_start_date_comparator.html", null ],
     [ "score::StartScreenLink", "structscore_1_1_start_screen_link.html", null ],
     [ "Nodes::LFO::Node::State", "struct_nodes_1_1_l_f_o_1_1_node_1_1_state.html", null ],
-    [ "Nodes::Direction::Node::State", "struct_nodes_1_1_direction_1_1_node_1_1_state.html", null ],
-    [ "Nodes::AudioLooper::Node::State", "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html", null ],
-    [ "Nodes::PulseToNote::Node::State", "struct_nodes_1_1_pulse_to_note_1_1_node_1_1_state.html", null ],
-    [ "Nodes::Chord::Node::State", "struct_nodes_1_1_chord_1_1_node_1_1_state.html", null ],
-    [ "Nodes::Arpeggiator::Node::State", "struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html", null ],
-    [ "Nodes::MidiUtil::Node::State", "struct_nodes_1_1_midi_util_1_1_node_1_1_state.html", null ],
     [ "Nodes::MathAudioFilter::Node::State", "struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html", null ],
+    [ "Nodes::MathAudioGenerator::Node::State", "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html", null ],
+    [ "Nodes::MidiUtil::Node::State", "struct_nodes_1_1_midi_util_1_1_node_1_1_state.html", null ],
+    [ "Nodes::Quantifier::Node::State", "struct_nodes_1_1_quantifier_1_1_node_1_1_state.html", null ],
+    [ "Nodes::AudioLooper::Node::State", "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html", null ],
     [ "Nodes::MathMapping::Node::State", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html", null ],
     [ "Nodes::MathGenerator::Node::State", "struct_nodes_1_1_math_generator_1_1_node_1_1_state.html", null ],
-    [ "Nodes::Quantifier::Node::State", "struct_nodes_1_1_quantifier_1_1_node_1_1_state.html", null ],
-    [ "Nodes::MathAudioGenerator::Node::State", "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html", null ],
+    [ "Nodes::Chord::Node::State", "struct_nodes_1_1_chord_1_1_node_1_1_state.html", null ],
+    [ "Nodes::PulseToNote::Node::State", "struct_nodes_1_1_pulse_to_note_1_1_node_1_1_state.html", null ],
     [ "Nodes::FactorOracle::Node::State", "struct_nodes_1_1_factor_oracle_1_1_node_1_1_state.html", null ],
+    [ "Nodes::Direction::Node::State", "struct_nodes_1_1_direction_1_1_node_1_1_state.html", null ],
+    [ "Nodes::Arpeggiator::Node::State", "struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html", null ],
     [ "StateNodeData", null, [
       [ "TreeNode< StateNodeData >", "class_tree_node.html", null ]
     ] ],
     [ "Process::StateNodeData", "struct_process_1_1_state_node_data.html", null ],
     [ "Process::StateNodeValues", "struct_process_1_1_state_node_values.html", null ],
     [ "Scenario::StateOverlays", "struct_scenario_1_1_state_overlays.html", null ],
-    [ "HierarchicalBaseScenario< Component_T, BaseScenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T >::StatePair", "struct_hierarchical_base_scenario_1_1_state_pair.html", null ],
     [ "HierarchicalScenarioComponent< Component_T, Scenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T, HasOwnership >::StatePair", "struct_hierarchical_scenario_component_1_1_state_pair.html", null ],
+    [ "HierarchicalBaseScenario< Component_T, BaseScenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T >::StatePair", "struct_hierarchical_base_scenario_1_1_state_pair.html", null ],
     [ "StdVariantDataStreamDeserializer< T >", "struct_std_variant_data_stream_deserializer.html", null ],
     [ "StdVariantDataStreamSerializer< T >", "struct_std_variant_data_stream_serializer.html", null ],
     [ "StdVariantJSONDeserializer< T >", "struct_std_variant_j_s_o_n_deserializer.html", null ],
@@ -3529,8 +3523,8 @@ var hierarchy =
       [ "score::StaticPropertyCommand< T >", "structscore_1_1_static_property_command.html", null ]
     ] ],
     [ "typeholder< T >", "structtypeholder.html", null ],
-    [ "ImagesNode::ubo", "struct_images_node_1_1ubo.html", null ],
     [ "TexgenNode::ubo", "struct_texgen_node_1_1ubo.html", null ],
+    [ "ImagesNode::ubo", "struct_images_node_1_1ubo.html", null ],
     [ "UI", null, [
       [ "Faust::UI< Proc, Synth >", "struct_faust_1_1_u_i.html", [
         [ "Faust::UpdateUI< Proc, SetInit >", "struct_faust_1_1_update_u_i.html", null ]
@@ -3564,14 +3558,6 @@ var hierarchy =
       [ "Scenario::SlotPresenter", "struct_scenario_1_1_slot_presenter.html", null ]
     ] ],
     [ "score::VariantBasedNode< Args >", "classscore_1_1_variant_based_node.html", null ],
-    [ "score::VariantBasedNode< Device::DeviceSettings, Device::AddressSettings >", "classscore_1_1_variant_based_node.html", [
-      [ "Device::DeviceExplorerNode", "class_device_1_1_device_explorer_node.html", null ]
-    ] ],
-    [ "score::VariantBasedNode< Relation, Pulse, BinaryOperator, UnaryOperator >", "classscore_1_1_variant_based_node.html", [
-      [ "State::ExprData", "struct_state_1_1_expr_data.html", [
-        [ "TreeNode< State::ExprData >", "class_tree_node_3_01_state_1_1_expr_data_01_4.html", null ]
-      ] ]
-    ] ],
     [ "VariantDataStreamDeserializer< T >", "struct_variant_data_stream_deserializer.html", null ],
     [ "VariantDataStreamSerializer< T >", "struct_variant_data_stream_serializer.html", null ],
     [ "VariantJSONDeserializer< T >", "struct_variant_j_s_o_n_deserializer.html", null ],
@@ -3604,8 +3590,8 @@ var hierarchy =
     [ "visitor_object_tag", "structvisitor__object__tag.html", null ],
     [ "visitor_template_tag", "structvisitor__template__tag.html", null ],
     [ "VisitorVariant", "struct_visitor_variant.html", null ],
-    [ "vst::vst_node_base::vst_control", "structvst_1_1vst__node__base_1_1vst__control.html", null ],
     [ "vst3::vst_node_base::vst_control", "structvst3_1_1vst__node__base_1_1vst__control.html", null ],
+    [ "vst::vst_node_base::vst_control", "structvst_1_1vst__node__base_1_1vst__control.html", null ],
     [ "vst::VSTInfo", "structvst_1_1_v_s_t_info.html", null ],
     [ "Media::Sound::WaveformComputerImpl", "struct_media_1_1_sound_1_1_waveform_computer_impl.html", null ],
     [ "Media::Sound::WaveformRequest", "struct_media_1_1_sound_1_1_waveform_request.html", null ],

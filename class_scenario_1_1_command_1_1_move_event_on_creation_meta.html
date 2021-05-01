@@ -95,7 +95,6 @@ $(document).ready(function(){initNavTree('class_scenario_1_1_command_1_1_move_ev
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_scenario_1_1_command_1_1_move_event_on_creation_meta-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -113,23 +112,17 @@ Inheritance diagram for Scenario::Command::MoveEventOnCreationMeta:</div>
   </map>
 </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a1d6527040032103ef30fbd407aa5574e"><td class="memItemLeft" align="right" valign="top"><a id="a1d6527040032103ef30fbd407aa5574e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>MoveEventOnCreationMeta</b> (const <a class="el" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a> &amp;scenarioPath, <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="class_scenario_1_1_event_model.html">EventModel</a> &gt; eventId, <a class="el" href="struct_time_val.html">TimeVal</a> newDate, ExpandMode mode)</td></tr>
-<tr class="separator:a1d6527040032103ef30fbd407aa5574e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ee9501b062e931317b938790a26d950"><td class="memItemLeft" align="right" valign="top"><a id="a8ee9501b062e931317b938790a26d950"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>undo</b> (const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx) const override</td></tr>
-<tr class="separator:a8ee9501b062e931317b938790a26d950"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab98c7207b8c977a4eb63245c4464576e"><td class="memItemLeft" align="right" valign="top"><a id="ab98c7207b8c977a4eb63245c4464576e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>redo</b> (const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx) const override</td></tr>
-<tr class="separator:ab98c7207b8c977a4eb63245c4464576e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a476ac6317a2a0a57430a7401e038dc2b"><td class="memItemLeft" align="right" valign="top"><a id="a476ac6317a2a0a57430a7401e038dc2b"></a>
-const <a class="el" href="class_path.html">Path</a>&lt; <a class="el" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>path</b> () const override</td></tr>
-<tr class="separator:a476ac6317a2a0a57430a7401e038dc2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc12249a8322424984f32d0e3dfdc6cc"><td class="memItemLeft" align="right" valign="top"><a id="adc12249a8322424984f32d0e3dfdc6cc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (<a class="el" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a> &amp;scenario, const <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="class_scenario_1_1_event_model.html">EventModel</a> &gt; &amp;eventId, const <a class="el" href="struct_time_val.html">TimeVal</a> &amp;newDate, double, ExpandMode mode, LockMode lm) override</td></tr>
-<tr class="separator:adc12249a8322424984f32d0e3dfdc6cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aa75c37916f5fc842278c4910fd722acb"><td class="memItemLeft" align="right" valign="top"><a id="aa75c37916f5fc842278c4910fd722acb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>serializeImpl</b> (<a class="el" href="struct_data_stream_input.html">DataStreamInput</a> &amp;) const override</td></tr>
+<tr class="separator:aa75c37916f5fc842278c4910fd722acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad85eab08ec871a708354fad0679f8b8b"><td class="memItemLeft" align="right" valign="top"><a id="ad85eab08ec871a708354fad0679f8b8b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>deserializeImpl</b> (<a class="el" href="struct_data_stream_output.html">DataStreamOutput</a> &amp;) override</td></tr>
+<tr class="separator:ad85eab08ec871a708354fad0679f8b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1_command"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1_command')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1_command.html">score::Command</a></td></tr>
 <tr class="memitem:ac6d367721392b078f3a1f5953863d390 inherit pub_methods_classscore_1_1_command"><td class="memItemLeft" align="right" valign="top"><a id="ac6d367721392b078f3a1f5953863d390"></a>
 virtual const <a class="el" href="class_string_key.html">CommandGroupKey</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>parentKey</b> () const noexcept=0</td></tr>
@@ -146,15 +139,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>deserialize</b> (cons
 <tr class="memitem:ab1e282d4b8859dc705d421975534baff inherit pub_methods_classscore_1_1_command"><td class="memItemLeft" align="right" valign="top"><a id="ab1e282d4b8859dc705d421975534baff"></a>
 virtual QString&#160;</td><td class="memItemRight" valign="bottom"><b>description</b> () const =0</td></tr>
 <tr class="separator:ab1e282d4b8859dc705d421975534baff inherit pub_methods_classscore_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:aa75c37916f5fc842278c4910fd722acb"><td class="memItemLeft" align="right" valign="top"><a id="aa75c37916f5fc842278c4910fd722acb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>serializeImpl</b> (<a class="el" href="struct_data_stream_input.html">DataStreamInput</a> &amp;) const override</td></tr>
-<tr class="separator:aa75c37916f5fc842278c4910fd722acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad85eab08ec871a708354fad0679f8b8b"><td class="memItemLeft" align="right" valign="top"><a id="ad85eab08ec871a708354fad0679f8b8b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>deserializeImpl</b> (<a class="el" href="struct_data_stream_output.html">DataStreamOutput</a> &amp;) override</td></tr>
-<tr class="separator:ad85eab08ec871a708354fad0679f8b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_move_event_on_creation_meta_8hpp_source.html">MoveEventOnCreationMeta.hpp</a></li>

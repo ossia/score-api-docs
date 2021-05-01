@@ -1,8 +1,8 @@
 var struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper =
 [
-    [ "absmax_frame_fun_t", "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#aaaabe0aa51232d8d8bc569fc6cdd34f7", null ],
-    [ "frame_fun_t", "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a27f689bf0ee33084b5b24df5a6a6d207", null ],
-    [ "minmax_frame_fun_t", "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#ab7e6bd71fe6a92c2950738de91f9eb23", null ],
+    [ "absmax_frame_fun_t", "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a100540fdb72e407e5835ad25992539a3", null ],
+    [ "frame_fun_t", "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a498ca509857b4167250a2d6eef408518", null ],
+    [ "minmax_frame_fun_t", "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a57a9d270e570bf3e996a66582630c539", null ],
     [ "absmax_frame", "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a5269849f2664a7ac24a711ac3bd1a75c", null ],
     [ "frame", "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a6b46f905186cd97b3ebcbab8d5c287a8", null ],
     [ "minmax_frame", "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a46cec68e3ff3b7ce200cb14f063dc821", null ],

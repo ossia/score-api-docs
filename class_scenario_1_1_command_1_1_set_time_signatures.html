@@ -95,7 +95,6 @@ $(document).ready(function(){initNavTree('class_scenario_1_1_command_1_1_set_tim
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_scenario_1_1_command_1_1_set_time_signatures-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -112,20 +111,17 @@ Inheritance diagram for Scenario::Command::SetTimeSignatures:</div>
   </map>
 </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a31bdd1c69117fe48b1a208608358d763"><td class="memItemLeft" align="right" valign="top"><a id="a31bdd1c69117fe48b1a208608358d763"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SetTimeSignatures</b> (const <a class="el" href="class_scenario_1_1_interval_model.html">IntervalModel</a> &amp;cst, TimeSignatureMap newval)</td></tr>
-<tr class="separator:a31bdd1c69117fe48b1a208608358d763"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2031c65d713e8d10c7e58ba4a6aec65"><td class="memItemLeft" align="right" valign="top"><a id="ab2031c65d713e8d10c7e58ba4a6aec65"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (const <a class="el" href="class_scenario_1_1_interval_model.html">IntervalModel</a> &amp;cst, TimeSignatureMap newval)</td></tr>
-<tr class="separator:ab2031c65d713e8d10c7e58ba4a6aec65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5201deb483cf31113f337e7a117f377b"><td class="memItemLeft" align="right" valign="top"><a id="a5201deb483cf31113f337e7a117f377b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>undo</b> (const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx) const override</td></tr>
-<tr class="separator:a5201deb483cf31113f337e7a117f377b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71c762bad2df4f99d7873d40c4bb9aaf"><td class="memItemLeft" align="right" valign="top"><a id="a71c762bad2df4f99d7873d40c4bb9aaf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>redo</b> (const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx) const override</td></tr>
-<tr class="separator:a71c762bad2df4f99d7873d40c4bb9aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a96ad1f4c6fcd5fca4a2b5aacd3017d5e"><td class="memItemLeft" align="right" valign="top"><a id="a96ad1f4c6fcd5fca4a2b5aacd3017d5e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>serializeImpl</b> (<a class="el" href="struct_data_stream_input.html">DataStreamInput</a> &amp;s) const override</td></tr>
+<tr class="separator:a96ad1f4c6fcd5fca4a2b5aacd3017d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac18d5c835de6e873cdd0bc28e2c79433"><td class="memItemLeft" align="right" valign="top"><a id="ac18d5c835de6e873cdd0bc28e2c79433"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>deserializeImpl</b> (<a class="el" href="struct_data_stream_output.html">DataStreamOutput</a> &amp;s) override</td></tr>
+<tr class="separator:ac18d5c835de6e873cdd0bc28e2c79433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1_command"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1_command')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1_command.html">score::Command</a></td></tr>
 <tr class="memitem:ac6d367721392b078f3a1f5953863d390 inherit pub_methods_classscore_1_1_command"><td class="memItemLeft" align="right" valign="top"><a id="ac6d367721392b078f3a1f5953863d390"></a>
 virtual const <a class="el" href="class_string_key.html">CommandGroupKey</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>parentKey</b> () const noexcept=0</td></tr>
@@ -142,15 +138,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>deserialize</b> (cons
 <tr class="memitem:ab1e282d4b8859dc705d421975534baff inherit pub_methods_classscore_1_1_command"><td class="memItemLeft" align="right" valign="top"><a id="ab1e282d4b8859dc705d421975534baff"></a>
 virtual QString&#160;</td><td class="memItemRight" valign="bottom"><b>description</b> () const =0</td></tr>
 <tr class="separator:ab1e282d4b8859dc705d421975534baff inherit pub_methods_classscore_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a96ad1f4c6fcd5fca4a2b5aacd3017d5e"><td class="memItemLeft" align="right" valign="top"><a id="a96ad1f4c6fcd5fca4a2b5aacd3017d5e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>serializeImpl</b> (<a class="el" href="struct_data_stream_input.html">DataStreamInput</a> &amp;s) const override</td></tr>
-<tr class="separator:a96ad1f4c6fcd5fca4a2b5aacd3017d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac18d5c835de6e873cdd0bc28e2c79433"><td class="memItemLeft" align="right" valign="top"><a id="ac18d5c835de6e873cdd0bc28e2c79433"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>deserializeImpl</b> (<a class="el" href="struct_data_stream_output.html">DataStreamOutput</a> &amp;s) override</td></tr>
-<tr class="separator:ac18d5c835de6e873cdd0bc28e2c79433"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_signature_commands_8hpp_source.html">SignatureCommands.hpp</a></li>

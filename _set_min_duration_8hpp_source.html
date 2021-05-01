@@ -100,13 +100,13 @@ $(document).ready(function(){initNavTree('_set_min_duration_8hpp_source.html',''
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Process/TimeValue.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Scenario/Commands/ScenarioCommandFactory.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Scenario/Document/Interval/IntervalModel.hpp&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;score/command/Command.hpp&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;score/model/path/Path.hpp&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;score/model/path/PathSerialization.hpp&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;score/command/Command.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;score/model/path/Path.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;score/model/path/PathSerialization.hpp&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;Scenario/Commands/ScenarioCommandFactory.hpp&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;Scenario/Document/Interval/IntervalModel.hpp&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;tests/helpers/ForwardDeclaration.hpp&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_scenario.html">Scenario</a></div>
@@ -116,72 +116,76 @@ $(document).ready(function(){initNavTree('_set_min_duration_8hpp_source.html',''
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_scenario_1_1_command_1_1_set_min_duration.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_scenario_1_1_command_1_1_set_min_duration.html">SetMinDuration</a> final : <span class="keyword">public</span> <a class="code" href="classscore_1_1_command.html">score::Command</a></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  SCORE_COMMAND_DECL(CommandFactoryName(), <a class="code" href="class_scenario_1_1_command_1_1_set_min_duration.html">SetMinDuration</a>, <span class="stringliteral">&quot;Set interval minimum&quot;</span>)</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> corresponding_member = &amp;IntervalDurations::minDuration;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="class_scenario_1_1_command_1_1_set_min_duration.html">SetMinDuration</a>(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&amp; cst, <a class="code" href="struct_time_val.html">TimeVal</a> newval, <span class="keywordtype">bool</span> isMinNull)</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      : m_path{cst}</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      , m_oldVal{cst.duration.minDuration()}</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      , m_newVal{newval}</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      , m_oldMinNull{cst.duration.isMinNull()}</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      , m_newMinNull{isMinNull}</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">void</span> update(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&amp; cst, <a class="code" href="struct_time_val.html">TimeVal</a> newval, <span class="keywordtype">bool</span> isMinNull)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  SCORE_COMMAND_DECL(</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      CommandFactoryName(),</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <a class="code" href="class_scenario_1_1_command_1_1_set_min_duration.html">SetMinDuration</a>,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      <span class="stringliteral">&quot;Set interval minimum&quot;</span>)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> corresponding_member</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      = &amp;IntervalDurations::minDuration;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <a class="code" href="class_scenario_1_1_command_1_1_set_min_duration.html">SetMinDuration</a>(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&amp; cst, <a class="code" href="struct_time_val.html">TimeVal</a> newval, <span class="keywordtype">bool</span> isMinNull)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      : m_path{cst}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      , m_oldVal{cst.duration.minDuration()}</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      , m_newVal{newval}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      , m_oldMinNull{cst.duration.isMinNull()}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      , m_newMinNull{isMinNull}</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    m_newVal = newval;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">auto</span>&amp; cstrDuration = cst.duration;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">if</span> (m_newVal &lt; TimeVal::zero())</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      m_newVal = TimeVal::zero();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">if</span> (m_newVal &gt; cstrDuration.defaultDuration())</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      m_newVal = cstrDuration.defaultDuration();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">void</span> undo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx)<span class="keyword"> const override</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">auto</span>&amp; cstrDuration = m_path.find(ctx).duration;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    cstrDuration.setMinNull(m_oldMinNull);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    cstrDuration.setMinDuration(m_oldVal);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> redo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx)<span class="keyword"> const override</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">auto</span>&amp; cstrDuration = m_path.find(ctx).duration;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    cstrDuration.setMinNull(m_newMinNull);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    cstrDuration.setMinDuration(m_newVal);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> serializeImpl(<a class="code" href="struct_data_stream_input.html">DataStreamInput</a>&amp; s)<span class="keyword"> const override</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    s &lt;&lt; m_path &lt;&lt; m_oldVal &lt;&lt; m_newVal &lt;&lt; m_oldMinNull &lt;&lt; m_newMinNull;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> deserializeImpl(<a class="code" href="struct_data_stream_output.html">DataStreamOutput</a>&amp; s)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> update(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&amp; cst, <a class="code" href="struct_time_val.html">TimeVal</a> newval, <span class="keywordtype">bool</span> isMinNull)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    m_newVal = newval;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">auto</span>&amp; cstrDuration = cst.duration;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">if</span> (m_newVal &lt; TimeVal::zero())</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      m_newVal = TimeVal::zero();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span> (m_newVal &gt; cstrDuration.defaultDuration())</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      m_newVal = cstrDuration.defaultDuration();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> undo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx)<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">auto</span>&amp; cstrDuration = m_path.find(ctx).duration;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    cstrDuration.setMinNull(m_oldMinNull);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    cstrDuration.setMinDuration(m_oldVal);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">void</span> redo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx)<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">auto</span>&amp; cstrDuration = m_path.find(ctx).duration;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    cstrDuration.setMinNull(m_newMinNull);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    cstrDuration.setMinDuration(m_newVal);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> serializeImpl(<a class="code" href="struct_data_stream_input.html">DataStreamInput</a>&amp; s)<span class="keyword"> const override</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    s &gt;&gt; m_path &gt;&gt; m_oldVal &gt;&gt; m_newVal &gt;&gt; m_oldMinNull &gt;&gt; m_newMinNull;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    s &lt;&lt; m_path &lt;&lt; m_oldVal &lt;&lt; m_newVal &lt;&lt; m_oldMinNull &lt;&lt; m_newMinNull;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="class_path.html">Path&lt;IntervalModel&gt;</a> m_path;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <a class="code" href="struct_time_val.html">TimeVal</a> m_oldVal;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <a class="code" href="struct_time_val.html">TimeVal</a> m_newVal;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">bool</span> m_oldMinNull{}, m_newMinNull{};</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span> deserializeImpl(<a class="code" href="struct_data_stream_output.html">DataStreamOutput</a>&amp; s)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    s &gt;&gt; m_path &gt;&gt; m_oldVal &gt;&gt; m_newVal &gt;&gt; m_oldMinNull &gt;&gt; m_newMinNull;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="class_path.html">Path&lt;IntervalModel&gt;</a> m_path;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="struct_time_val.html">TimeVal</a> m_oldVal;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="struct_time_val.html">TimeVal</a> m_newVal;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">bool</span> m_oldMinNull{}, m_newMinNull{};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>
-<div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition:</b> TimeValue.hpp:20</div></div>
+<div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition:</b> TimeValue.hpp:19</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:15</div></div>
 <div class="ttc" id="aclassscore_1_1_command_html"><div class="ttname"><a href="classscore_1_1_command.html">score::Command</a></div><div class="ttdoc">The Command class.</div><div class="ttdef"><b>Definition:</b> Command.hpp:33</div></div>
-<div class="ttc" id="astruct_data_stream_output_html"><div class="ttname"><a href="struct_data_stream_output.html">DataStreamOutput</a></div><div class="ttdef"><b>Definition:</b> DataStreamHelpers.hpp:137</div></div>
+<div class="ttc" id="astruct_data_stream_output_html"><div class="ttname"><a href="struct_data_stream_output.html">DataStreamOutput</a></div><div class="ttdef"><b>Definition:</b> DataStreamHelpers.hpp:153</div></div>
 <div class="ttc" id="aclass_path_html"><div class="ttname"><a href="class_path.html">Path&lt; IntervalModel &gt;</a></div></div>
-<div class="ttc" id="aclass_scenario_1_1_interval_model_html"><div class="ttname"><a href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a></div><div class="ttdef"><b>Definition:</b> IntervalModel.hpp:47</div></div>
-<div class="ttc" id="astruct_data_stream_input_html"><div class="ttname"><a href="struct_data_stream_input.html">DataStreamInput</a></div><div class="ttdef"><b>Definition:</b> DataStreamHelpers.hpp:133</div></div>
+<div class="ttc" id="aclass_scenario_1_1_interval_model_html"><div class="ttname"><a href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a></div><div class="ttdef"><b>Definition:</b> IntervalModel.hpp:48</div></div>
+<div class="ttc" id="astruct_data_stream_input_html"><div class="ttname"><a href="struct_data_stream_input.html">DataStreamInput</a></div><div class="ttdef"><b>Definition:</b> DataStreamHelpers.hpp:149</div></div>
 <div class="ttc" id="aclass_scenario_1_1_command_1_1_set_min_duration_html"><div class="ttname"><a href="class_scenario_1_1_command_1_1_set_min_duration.html">Scenario::Command::SetMinDuration</a></div><div class="ttdoc">The SetMinDuration class.</div><div class="ttdef"><b>Definition:</b> SetMinDuration.hpp:22</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

@@ -101,12 +101,12 @@ $(document).ready(function(){initNavTree('_q_image_pool_8hpp_source.html',''); i
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;score/tools/Debug.hpp&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/hash_map.hpp&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/hash.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/hash.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/hash_map.hpp&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QVector&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QImage&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QImage&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QVector&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;chrono&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;mutex&gt;</span></div>
@@ -249,15 +249,16 @@ $(document).ready(function(){initNavTree('_q_image_pool_8hpp_source.html',''); i
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      }</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    qDebug() &lt;&lt; QString(<span class="stringliteral">&quot;%1 images: %2 megabytes ; hit/miss ratio : %3 / %4 = %5&quot;</span>)</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                    .arg(images)</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                    .arg(bytes / (1024 * 1024))</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                    .arg(hit)</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                    .arg(miss)</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                    .arg(<span class="keywordtype">double</span>(hit) / miss);</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  }</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;};</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;}</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    qDebug() &lt;&lt; QString(</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                    <span class="stringliteral">&quot;%1 images: %2 megabytes ; hit/miss ratio : %3 / %4 = %5&quot;</span>)</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                    .arg(images)</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                    .arg(bytes / (1024 * 1024))</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                    .arg(hit)</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                    .arg(miss)</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                    .arg(<span class="keywordtype">double</span>(hit) / miss);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;};</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astruct_media_1_1_sound_1_1_q_image_pool_html"><div class="ttname"><a href="struct_media_1_1_sound_1_1_q_image_pool.html">Media::Sound::QImagePool</a></div><div class="ttdef"><b>Definition:</b> QImagePool.hpp:32</div></div>

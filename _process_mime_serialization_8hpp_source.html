@@ -147,27 +147,28 @@ $(document).ready(function(){initNavTree('_process_mime_serialization_8hpp_sourc
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">using</span> MimeDataReader::MimeDataReader;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> serialize(<span class="keyword">const</span> <a class="code" href="struct_process_1_1_process_data.html">Process::ProcessData</a>&amp; lst)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    m_mime.setData(score::mime::processdata(), DataStreamReader::marshall(lst));</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="struct_mime_writer_3_01_process_1_1_process_data_01_4.html">   55</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_mime_writer.html">MimeWriter</a>&lt;<a class="code" href="namespace_process.html">Process</a>::ProcessData&gt; : <span class="keyword">public</span> <a class="code" href="struct_mime_data_writer.html">MimeDataWriter</a></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">using</span> MimeDataWriter::MimeDataWriter;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">auto</span> deserialize()</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> DataStreamWriter::unmarshall&lt;Process::ProcessData&gt;(</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        m_mime.data(score::mime::processdata()));</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    m_mime.setData(</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        score::mime::processdata(), DataStreamReader::marshall(lst));</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="struct_mime_writer_3_01_process_1_1_process_data_01_4.html">   56</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_mime_writer.html">MimeWriter</a>&lt;<a class="code" href="namespace_process.html">Process</a>::ProcessData&gt; : <span class="keyword">public</span> <a class="code" href="struct_mime_data_writer.html">MimeDataWriter</a></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">using</span> MimeDataWriter::MimeDataWriter;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">auto</span> deserialize()</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> DataStreamWriter::unmarshall&lt;Process::ProcessData&gt;(</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        m_mime.data(score::mime::processdata()));</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1291</div></div>
+<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1366</div></div>
 <div class="ttc" id="astruct_mime_data_reader_html"><div class="ttname"><a href="struct_mime_data_reader.html">MimeDataReader</a></div><div class="ttdef"><b>Definition:</b> MimeVisitor.hpp:21</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:65</div></div>
 <div class="ttc" id="aclass_uuid_key_html"><div class="ttname"><a href="class_uuid_key.html">UuidKey&lt; Process::ProcessModel &gt;</a></div></div>
-<div class="ttc" id="astruct_mime_data_writer_html"><div class="ttname"><a href="struct_mime_data_writer.html">MimeDataWriter</a></div><div class="ttdef"><b>Definition:</b> MimeVisitor.hpp:28</div></div>
+<div class="ttc" id="astruct_mime_data_writer_html"><div class="ttname"><a href="struct_mime_data_writer.html">MimeDataWriter</a></div><div class="ttdef"><b>Definition:</b> MimeVisitor.hpp:31</div></div>
 <div class="ttc" id="astruct_mime_writer_html"><div class="ttname"><a href="struct_mime_writer.html">MimeWriter</a></div><div class="ttdef"><b>Definition:</b> MimeVisitor.hpp:9</div></div>
 <div class="ttc" id="astruct_process_1_1_process_data_html"><div class="ttname"><a href="struct_process_1_1_process_data.html">Process::ProcessData</a></div><div class="ttdef"><b>Definition:</b> ProcessMimeSerialization.hpp:37</div></div>
 <div class="ttc" id="astruct_mime_reader_html"><div class="ttname"><a href="struct_mime_reader.html">MimeReader</a></div><div class="ttdef"><b>Definition:</b> MimeVisitor.hpp:7</div></div>

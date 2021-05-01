@@ -106,47 +106,52 @@ $(document).ready(function(){initNavTree('_curve_settings_view_8hpp_source.html'
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;verdigris&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span>QCheckBox;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span>QDoubleSpinBox;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore.html">score</a>{ <span class="keyword">class </span>FormWidget;}</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_curve.html">Curve</a></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>Settings</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_curve_1_1_settings_1_1_view.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_curve_1_1_settings_1_1_view.html">View</a> : <span class="keyword">public</span> <a class="code" href="classscore_1_1_settings_delegate_view.html">score::GlobalSettingsView</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore.html">score</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span>FormWidget;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_curve.html">Curve</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>Settings</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  W_OBJECT(<a class="code" href="class_curve_1_1_settings_1_1_view.html">View</a>)</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="class_curve_1_1_settings_1_1_view.html">View</a>();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordtype">void</span> setSimplificationRatio(<span class="keywordtype">int</span>);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordtype">void</span> setSimplify(<span class="keywordtype">bool</span>);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordtype">void</span> setMode(Mode);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">void</span> setPlayWhileRecording(<span class="keywordtype">bool</span>);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">void</span> simplificationRatioChanged(<span class="keywordtype">double</span> arg_1)</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, simplificationRatioChanged, arg_1);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> simplifyChanged(<span class="keywordtype">bool</span> arg_1) E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, simplifyChanged, arg_1);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> modeChanged(Mode arg_1) E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, modeChanged, arg_1);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">void</span> playWhileRecordingChanged(<span class="keywordtype">bool</span> arg_1)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, playWhileRecordingChanged, arg_1);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  QWidget* getWidget() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="classscore_1_1_form_widget.html">score::FormWidget</a>* m_widg{};</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  QDoubleSpinBox* m_sb{};</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  QCheckBox* m_simpl{};</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  QCheckBox* m_mode{};</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  QCheckBox* m_playWhileRecording{};</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_curve_1_1_settings_1_1_view.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_curve_1_1_settings_1_1_view.html">View</a> : <span class="keyword">public</span> <a class="code" href="classscore_1_1_settings_delegate_view.html">score::GlobalSettingsView</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  W_OBJECT(<a class="code" href="class_curve_1_1_settings_1_1_view.html">View</a>)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <a class="code" href="class_curve_1_1_settings_1_1_view.html">View</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">void</span> setSimplificationRatio(<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">void</span> setSimplify(<span class="keywordtype">bool</span>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordtype">void</span> setMode(Mode);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">void</span> setPlayWhileRecording(<span class="keywordtype">bool</span>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> simplificationRatioChanged(<span class="keywordtype">double</span> arg_1)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, simplificationRatioChanged, arg_1);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">void</span> simplifyChanged(<span class="keywordtype">bool</span> arg_1)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, simplifyChanged, arg_1);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">void</span> modeChanged(Mode arg_1)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, modeChanged, arg_1);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">void</span> playWhileRecordingChanged(<span class="keywordtype">bool</span> arg_1)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, playWhileRecordingChanged, arg_1);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  QWidget* getWidget() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="classscore_1_1_form_widget.html">score::FormWidget</a>* m_widg{};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  QDoubleSpinBox* m_sb{};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  QCheckBox* m_simpl{};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  QCheckBox* m_mode{};</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  QCheckBox* m_playWhileRecording{};</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassscore_1_1_form_widget_html"><div class="ttname"><a href="classscore_1_1_form_widget.html">score::FormWidget</a></div><div class="ttdef"><b>Definition:</b> FormWidget.hpp:10</div></div>
-<div class="ttc" id="aclass_curve_1_1_settings_1_1_view_html"><div class="ttname"><a href="class_curve_1_1_settings_1_1_view.html">Curve::Settings::View</a></div><div class="ttdef"><b>Definition:</b> CurveSettingsView.hpp:16</div></div>
+<div class="ttc" id="aclassscore_1_1_form_widget_html"><div class="ttname"><a href="classscore_1_1_form_widget.html">score::FormWidget</a></div><div class="ttdef"><b>Definition:</b> FormWidget.hpp:12</div></div>
+<div class="ttc" id="aclass_curve_1_1_settings_1_1_view_html"><div class="ttname"><a href="class_curve_1_1_settings_1_1_view.html">Curve::Settings::View</a></div><div class="ttdef"><b>Definition:</b> CurveSettingsView.hpp:19</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:65</div></div>
 <div class="ttc" id="anamespace_curve_html"><div class="ttname"><a href="namespace_curve.html">Curve</a></div><div class="ttdoc">Utilities and base classes for 1D curves.</div><div class="ttdef"><b>Definition:</b> FocusDispatcher.hpp:11</div></div>
 <div class="ttc" id="aclassscore_1_1_settings_delegate_view_html"><div class="ttname"><a href="classscore_1_1_settings_delegate_view.html">score::SettingsDelegateView</a></div><div class="ttdef"><b>Definition:</b> ProjectSettingsFactory.hpp:14</div></div>

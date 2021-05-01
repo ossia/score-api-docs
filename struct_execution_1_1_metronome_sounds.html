@@ -111,8 +111,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ac91fc97a2a970c3703978d7e1b6fe930"><td class="memItemLeft" align="right" valign="top"><a id="ac91fc97a2a970c3703978d7e1b6fe930"></a>
-const QString&#160;</td><td class="memItemRight" valign="bottom"><b>root</b> = score::AppContext().settings&lt;<a class="el" href="class_library_1_1_settings_1_1_model.html">Library::Settings::Model</a>&gt;().getPath() + &quot;/Util/&quot;</td></tr>
+<tr class="memitem:ac91fc97a2a970c3703978d7e1b6fe930"><td class="memItemLeft" align="right" valign="top">const QString&#160;</td><td class="memItemRight" valign="bottom"><b>root</b></td></tr>
 <tr class="separator:ac91fc97a2a970c3703978d7e1b6fe930"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a858ba4c5ce9d3eaa5b0b4931b9f154d4"><td class="memItemLeft" align="right" valign="top">const std::unique_ptr&lt; <a class="el" href="struct_media_1_1_audio_file.html">Media::AudioFile</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b></td></tr>
 <tr class="separator:a858ba4c5ce9d3eaa5b0b4931b9f154d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,6 +125,22 @@ const <a class="el" href="struct_media_1_1_audio_file_1_1_view_handle.html">Medi
 <tr class="separator:ae0299bcfc834063b1bd4d60c36298f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac91fc97a2a970c3703978d7e1b6fe930"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac91fc97a2a970c3703978d7e1b6fe930">&#9670;&nbsp;</a></span>root</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QString Execution::MetronomeSounds::root</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= score::AppContext().<a class="code" href="structscore_1_1_application_context.html#ae71a4a7f56ab86bfdb5308ed0bae8d00">settings</a>&lt;<a class="code" href="class_library_1_1_settings_1_1_model.html">Library::Settings::Model</a>&gt;().getPath()</div>
+<div class="line">        + <span class="stringliteral">&quot;/Util/&quot;</span></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a858ba4c5ce9d3eaa5b0b4931b9f154d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a858ba4c5ce9d3eaa5b0b4931b9f154d4">&#9670;&nbsp;</a></span>tick</h2>
 
@@ -139,7 +154,10 @@ const <a class="el" href="struct_media_1_1_audio_file_1_1_view_handle.html">Medi
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">{[<span class="keyword">this</span>] {</div>
 <div class="line">    <span class="keyword">auto</span> f = std::make_unique&lt;Media::AudioFile&gt;();</div>
-<div class="line">    f-&gt;load(root + <span class="stringliteral">&quot;/metro_tick.wav&quot;</span>, root + <span class="stringliteral">&quot;/metro_tick.wav&quot;</span>, Media::DecodingMethod::Libav);</div>
+<div class="line">    f-&gt;load(</div>
+<div class="line">        root + <span class="stringliteral">&quot;/metro_tick.wav&quot;</span>,</div>
+<div class="line">        root + <span class="stringliteral">&quot;/metro_tick.wav&quot;</span>,</div>
+<div class="line">        Media::DecodingMethod::Libav);</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">while</span> (f-&gt;samples() != f-&gt;decodedSamples())</div>
 <div class="line">    {</div>
@@ -164,7 +182,10 @@ const <a class="el" href="struct_media_1_1_audio_file_1_1_view_handle.html">Medi
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">{[<span class="keyword">this</span>] {</div>
 <div class="line">    <span class="keyword">auto</span> f = std::make_unique&lt;Media::AudioFile&gt;();</div>
-<div class="line">    f-&gt;load(root + <span class="stringliteral">&quot;/metro_tock.wav&quot;</span>, root + <span class="stringliteral">&quot;/metro_tock.wav&quot;</span>, Media::DecodingMethod::Libav);</div>
+<div class="line">    f-&gt;load(</div>
+<div class="line">        root + <span class="stringliteral">&quot;/metro_tock.wav&quot;</span>,</div>
+<div class="line">        root + <span class="stringliteral">&quot;/metro_tock.wav&quot;</span>,</div>
+<div class="line">        Media::DecodingMethod::Libav);</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">while</span> (f-&gt;samples() != f-&gt;decodedSamples())</div>
 <div class="line">    {</div>
@@ -181,6 +202,8 @@ const <a class="el" href="struct_media_1_1_audio_file_1_1_view_handle.html">Medi
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclass_library_1_1_settings_1_1_model_html"><div class="ttname"><a href="class_library_1_1_settings_1_1_model.html">Library::Settings::Model</a></div><div class="ttdef"><b>Definition:</b> LibrarySettings.hpp:45</div></div>
+<div class="ttc" id="astructscore_1_1_application_context_html_ae71a4a7f56ab86bfdb5308ed0bae8d00"><div class="ttname"><a href="structscore_1_1_application_context.html#ae71a4a7f56ab86bfdb5308ed0bae8d00">score::ApplicationContext::settings</a></div><div class="ttdeci">T &amp; settings() const</div><div class="ttdoc">Access a specific Settings model instance.</div><div class="ttdef"><b>Definition:</b> ApplicationContext.hpp:42</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

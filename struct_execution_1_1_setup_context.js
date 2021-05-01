@@ -25,9 +25,9 @@ var struct_execution_1_1_setup_context =
     [ "unregister_outlet", "struct_execution_1_1_setup_context.html#a26bf73772c90a30b01f1bf8d2bfc5893", null ],
     [ "unregister_outlet", "struct_execution_1_1_setup_context.html#a172a266df452a2353e002840e5b62167", null ],
     [ "context", "struct_execution_1_1_setup_context.html#a038bfa6e4a053e5f394a3dac5ade2ab9", null ],
-    [ "inlets", "struct_execution_1_1_setup_context.html#aad36d56e5b35d21528722d788370f65e", null ],
+    [ "inlets", "struct_execution_1_1_setup_context.html#ae6c38f5bcf3922adb97243194c141a95", null ],
     [ "m_cables", "struct_execution_1_1_setup_context.html#a3bd15520bd171fee7bb81845848fa14c", null ],
-    [ "outlets", "struct_execution_1_1_setup_context.html#a1d23ccc096f0e3086ecc04fa5f847f11", null ],
+    [ "outlets", "struct_execution_1_1_setup_context.html#ab8868208301b528bcb662b06b99aa8ef", null ],
     [ "proc_map", "struct_execution_1_1_setup_context.html#ab043559c6f517ca061b66359c4a42c80", null ],
     [ "runtime_connections", "struct_execution_1_1_setup_context.html#ac5abcff5d141e3ad5b05243f411d53c1", null ]
 ];
