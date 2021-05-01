@@ -1,6 +1,6 @@
 var class_gfx_1_1gfx__window__context =
 [
-    [ "gfx_window_context", "class_gfx_1_1gfx__window__context.html#afe95612e73ab687ec330f077726ae6e3", null ],
+    [ "gfx_window_context", "class_gfx_1_1gfx__window__context.html#a46ca1814e9eeab0565195df508a43ce1", null ],
     [ "~gfx_window_context", "class_gfx_1_1gfx__window__context.html#a1e73625ac66f2343fac7ee3950b95e81", null ],
     [ "recompute_connections", "class_gfx_1_1gfx__window__context.html#adf7e223ee880568cbcafb1fd44581245", null ],
     [ "recompute_edges", "class_gfx_1_1gfx__window__context.html#a23c865de9245cc205b83c49bae5d92f1", null ],

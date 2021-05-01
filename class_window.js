@@ -9,6 +9,7 @@ var class_window =
     [ "releaseSwapChain", "class_window.html#a030d9e1f463a90e644883f4515a9cfaa", null ],
     [ "render", "class_window.html#a0a2093bd2ed34740c08a6a2fdfc059c9", null ],
     [ "resizeSwapChain", "class_window.html#a9ec67fedaa9dd8cfda2bfb7832984495", null ],
+    [ "api", "class_window.html#a504467d2c1b2acc6f28d4bd88e4ea152", null ],
     [ "m_canRender", "class_window.html#acd389f1b9d2c2beb3adc5646a34909f4", null ],
     [ "onRender", "class_window.html#a0eb38be78e12dd3fa8ba722fee564b4a", null ],
     [ "onResize", "class_window.html#aae19d147d216069c5b79c31b757693ea", null ],

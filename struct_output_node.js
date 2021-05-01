@@ -12,5 +12,6 @@ var struct_output_node =
     [ "setRenderer", "struct_output_node.html#a3492f3001090e3486be90f7f4721ac3d", null ],
     [ "startRendering", "struct_output_node.html#ac13350288e377a688e6794449d48ab3b", null ],
     [ "stopRendering", "struct_output_node.html#a1057ea2bb2bd1ba9371b139f4ead6435", null ],
+    [ "updateGraphicsAPI", "struct_output_node.html#abfb918f4866b084233941f408e46929f", null ],
     [ "m_mesh", "struct_output_node.html#a816461bbd40cdbacd1a62229e915ca7b", null ]
 ];

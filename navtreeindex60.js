@@ -1,5 +1,7 @@
 var NAVTREEINDEX60 =
 {
+"struct_scenario_1_1_slot_presenter.html#a6d6bd62f72538d278a02c614652e2c0b":[11,0,41,249,2],
+"struct_scenario_1_1_slot_presenter.html#a76a4c47939e4d7afe329c0221d69d9e9":[11,0,41,249,1],
 "struct_scenario_1_1_slot_presenter.html#aa32e8fe73b3084c79f8363e98a73166b":[11,0,41,249,3],
 "struct_scenario_1_1_slot_presenter.html#ad03c19ac4999d616e51c8ffd772dedee":[11,0,41,249,6],
 "struct_scenario_1_1_slot_presenter.html#ae25d875d56bb0cc55ac887c7b128292e":[11,0,41,249,0],
@@ -84,7 +86,7 @@ var NAVTREEINDEX60 =
 "struct_scenario_rollback_strategy.html":[11,0,344],
 "struct_screen_node.html":[11,0,376],
 "struct_screen_node.html#a107495726ee7e35f52a22c1dedadda05":[11,0,376,7],
-"struct_screen_node.html#a11d7d03d0471339adc47814127f21cff":[11,0,376,14],
+"struct_screen_node.html#a11d7d03d0471339adc47814127f21cff":[11,0,376,15],
 "struct_screen_node.html#a15e5737b06f6334f95dbbaae680aef2b":[11,0,376,4],
 "struct_screen_node.html#a313ce8412bbd7f3a38cfc6f7feeaa984":[11,0,376,6],
 "struct_screen_node.html#a35e77a6dd6a9590d052a7695446e6ec3":[11,0,376,3],
@@ -97,7 +99,8 @@ var NAVTREEINDEX60 =
 "struct_screen_node.html#acefaf1e7fd0ac3a35661df5eb0c63c2d":[11,0,376,5],
 "struct_screen_node.html#ade53adef77fe1aa03a0c45b2b48f436a":[11,0,376,11],
 "struct_screen_node.html#ae385491c8627734c8cc31207a5074c77":[11,0,376,9],
-"struct_screen_node.html#ae4e5ba9814a59ea94f042776aaa6e964":[11,0,376,13],
+"struct_screen_node.html#ae4e5ba9814a59ea94f042776aaa6e964":[11,0,376,14],
+"struct_screen_node.html#af7e76e63681d0e1412cce6d43f5274a3":[11,0,376,13],
 "struct_screen_u_b_o.html":[11,0,377],
 "struct_screen_u_b_o.html#a44c214323695cd6d6f8fe326051e620f":[11,0,377,2],
 "struct_screen_u_b_o.html#a54ac1e0a6e7a3ce1023a00d623c7b884":[11,0,377,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX60 =
 "struct_state_1_1_vec_edit_base.html":[11,0,46,33],
 "struct_state_1_1_vec_edit_base.html#abae609e31ac61d56889b752f3ce961ed":[11,0,46,33,0],
 "struct_std_variant_data_stream_deserializer.html":[11,0,391],
-"struct_std_variant_data_stream_deserializer.html#a0c75e0656b0a5121c3820913cca9559a":[11,0,391,3],
-"struct_std_variant_data_stream_deserializer.html#a2e652c9db533b3814eb49e36afcefd8a":[11,0,391,0],
-"struct_std_variant_data_stream_deserializer.html#a91df4783f92f7430a931e54e03a9b7a1":[11,0,391,5],
-"struct_std_variant_data_stream_deserializer.html#aa5d9264e3c9b3496899519955cf33d17":[11,0,391,1]
+"struct_std_variant_data_stream_deserializer.html#a0c75e0656b0a5121c3820913cca9559a":[11,0,391,3]
 };
