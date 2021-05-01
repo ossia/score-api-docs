@@ -1,5 +1,6 @@
 var NAVTREEINDEX61 =
 {
+"struct_std_variant_data_stream_deserializer.html#ab45325f76e7467a179814afcae7952d9":[11,0,391,2],
 "struct_std_variant_data_stream_deserializer.html#abca3d5c440fa7d82a0572bb7d2d32eda":[11,0,391,4],
 "struct_std_variant_data_stream_serializer.html":[11,0,392],
 "struct_std_variant_data_stream_serializer.html#a057301684d5722736b01501671ffdabb":[11,0,392,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX61 =
 "struct_u_y_v_y422_decoder.html#a79c09392f6734e71493afadc207dd3c2":[11,0,517,0],
 "struct_u_y_v_y422_decoder.html#ae39fd0b7432b52a05430752d3ef8a0d5":[11,0,517,4],
 "struct_u_y_v_y422_decoder.html#afb8f5fe2377d067529d072ed232a5646":[11,0,517,1],
-"struct_ui_1_1_signal_display_1_1_node.html":[11,0,48,0,0],
-"struct_ui_1_1_signal_display_1_1_node.html#a4ba39cfce5b7fb834e7f14fcd0b97f1f":[11,0,48,0,0,2]
+"struct_ui_1_1_signal_display_1_1_node.html":[11,0,48,0,0]
 };

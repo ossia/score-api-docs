@@ -1,6 +1,7 @@
 var struct_audio_1_1_port_audio_card =
 [
     [ "api", "struct_audio_1_1_port_audio_card.html#a6b7473ba286f8bea401a5bc5bb2a8765", null ],
+    [ "defaultDevice", "struct_audio_1_1_port_audio_card.html#a95b58d385230c69a64fb1206b6df1d36", null ],
     [ "dev_idx", "struct_audio_1_1_port_audio_card.html#ad77e44c7122a06efd7f06e13ad321244", null ],
     [ "hostapi", "struct_audio_1_1_port_audio_card.html#abc7102777bf3cef549e642bed16ad4b3", null ],
     [ "in_index", "struct_audio_1_1_port_audio_card.html#aca1bbe4d1bd5139d8885a6db482e49d2", null ],

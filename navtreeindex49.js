@@ -1,5 +1,6 @@
 var NAVTREEINDEX49 =
 {
+"struct_control_1_1setup___impl0_1_1con__unvalidated.html":[11,0,3,35,0],
 "struct_control_1_1setup___impl0_1_1con__unvalidated.html#a056ccf93dc400eb349129699e9290d12":[11,0,3,35,0,1],
 "struct_control_1_1setup___impl0_1_1con__unvalidated.html#a218202e751d80c63a52ed2e74810784b":[11,0,3,35,0,0],
 "struct_control_1_1setup___impl0_1_1con__unvalidated.html#a50135261bf55c41720eb0994ec945aab":[11,0,3,35,0,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX49 =
 "struct_device_1_1_full_address_settings.html#aa2257e41e7f1e9ec5d162ea5edfb267c":[11,0,7,14,5],
 "struct_device_1_1_full_address_settings.html#ac1d4278b25b3cc1602192062af913965":[11,0,7,14,4],
 "struct_device_1_1_protocol_factory_1_1_standard_categories.html":[11,0,7,17,0],
-"struct_edge.html":[11,0,95],
-"struct_edge.html#a2f37b72f044427961d6730943daf10e0":[11,0,95,1]
+"struct_edge.html":[11,0,95]
 };

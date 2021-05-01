@@ -1,5 +1,6 @@
 var NAVTREEINDEX58 =
 {
+"struct_r_g_b0_decoder.html#adc5f45fdbc4fa99194a1c821f94ccb46":[11,0,341,5],
 "struct_r_g_b0_decoder.html#ae5a415fc06b6edadda239db9faa5f265":[11,0,341,4],
 "struct_recording_1_1_box.html":[11,0,37,2],
 "struct_recording_1_1_box.html#a721abe014117ce48acbc6449f0666db3":[11,0,37,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX58 =
 "struct_scenario_1_1_categorized_addresses.html#aaa64234baeb23520205c39b755950924":[11,0,41,16,4],
 "struct_scenario_1_1_categorized_addresses.html#ab2b31ace8c8aab1117b82ed039e19ce7":[11,0,41,16,19],
 "struct_scenario_1_1_categorized_addresses.html#ac0afdc12afb10e8fad75f7fe5c1cd001":[11,0,41,16,0],
-"struct_scenario_1_1_categorized_addresses.html#ac19938102b60421c565a6dc97796346f":[11,0,41,16,3],
-"struct_scenario_1_1_categorized_addresses.html#ae4574f54daee6196cdfcf5eb4547e00f":[11,0,41,16,17]
+"struct_scenario_1_1_categorized_addresses.html#ac19938102b60421c565a6dc97796346f":[11,0,41,16,3]
 };

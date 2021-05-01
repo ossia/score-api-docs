@@ -1,6 +1,6 @@
 var NAVTREEINDEX47 =
 {
-"namespace_state.html":[11,0,46],
+"namespace_state.html":[10,0,11],
 "namespacemembers.html":[10,1,0],
 "namespacemembers_enum.html":[10,1,3],
 "namespacemembers_eval.html":[10,1,4],
@@ -224,16 +224,17 @@ var NAVTREEINDEX47 =
 "struct_audio_1_1_audio_preview_executor_1_1sound.html#a1e62f5df8f131127966ecdcf709fd3d1":[11,0,0,5,0,2],
 "struct_audio_1_1_audio_preview_executor_1_1sound.html#ad6c589f3e84110b16ede0b9bef319f6b":[11,0,0,5,0,0],
 "struct_audio_1_1_port_audio_card.html":[11,0,0,8],
-"struct_audio_1_1_port_audio_card.html#a09af1e30d4505e5307c80c7e7d29ac81":[11,0,0,8,8],
-"struct_audio_1_1_port_audio_card.html#a1cd1c603bb38bbac0653a9d30cb761e5":[11,0,0,8,4],
+"struct_audio_1_1_port_audio_card.html#a09af1e30d4505e5307c80c7e7d29ac81":[11,0,0,8,9],
+"struct_audio_1_1_port_audio_card.html#a1cd1c603bb38bbac0653a9d30cb761e5":[11,0,0,8,5],
 "struct_audio_1_1_port_audio_card.html#a6b7473ba286f8bea401a5bc5bb2a8765":[11,0,0,8,0],
-"struct_audio_1_1_port_audio_card.html#a882846fcf1520f147f8689c7f39a4577":[11,0,0,8,6],
-"struct_audio_1_1_port_audio_card.html#a95713a0efd0a42f962ac5b305584c2de":[11,0,0,8,7],
-"struct_audio_1_1_port_audio_card.html#ab536c6782e2dd5a75ac418bce4b501be":[11,0,0,8,5],
-"struct_audio_1_1_port_audio_card.html#abc7102777bf3cef549e642bed16ad4b3":[11,0,0,8,2],
-"struct_audio_1_1_port_audio_card.html#aca1bbe4d1bd5139d8885a6db482e49d2":[11,0,0,8,3],
-"struct_audio_1_1_port_audio_card.html#ad77e44c7122a06efd7f06e13ad321244":[11,0,0,8,1],
-"struct_audio_1_1_port_audio_card.html#ae1d8ae142a54b8cca540f7137d4bf3e4":[11,0,0,8,9],
+"struct_audio_1_1_port_audio_card.html#a882846fcf1520f147f8689c7f39a4577":[11,0,0,8,7],
+"struct_audio_1_1_port_audio_card.html#a95713a0efd0a42f962ac5b305584c2de":[11,0,0,8,8],
+"struct_audio_1_1_port_audio_card.html#a95b58d385230c69a64fb1206b6df1d36":[11,0,0,8,1],
+"struct_audio_1_1_port_audio_card.html#ab536c6782e2dd5a75ac418bce4b501be":[11,0,0,8,6],
+"struct_audio_1_1_port_audio_card.html#abc7102777bf3cef549e642bed16ad4b3":[11,0,0,8,3],
+"struct_audio_1_1_port_audio_card.html#aca1bbe4d1bd5139d8885a6db482e49d2":[11,0,0,8,4],
+"struct_audio_1_1_port_audio_card.html#ad77e44c7122a06efd7f06e13ad321244":[11,0,0,8,2],
+"struct_audio_1_1_port_audio_card.html#ae1d8ae142a54b8cca540f7137d4bf3e4":[11,0,0,8,10],
 "struct_audio_1_1_port_audio_scope.html":[11,0,0,10],
 "struct_audio_1_1_port_audio_scope.html#a34e99eddd4bd69f07490f1ef43f0c33b":[11,0,0,10,1],
 "struct_audio_1_1_port_audio_scope.html#aea6b49537cfc54b1e36aaea5737020a5":[11,0,0,10,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX47 =
 "struct_automation_1_1_recreate_on_play_1_1modvalue.html#a845a2426a3bc64cb7552d95324c31c6e":[11,0,1,0,1,2],
 "struct_automation_1_1_recreate_on_play_1_1modvalue.html#a87acfe6c430cb95b2f3ba26919623ee3":[11,0,1,0,1,4],
 "struct_automation_1_1_recreate_on_play_1_1modvalue.html#a8a46ef5fbfb771b2973100744163b529":[11,0,1,0,1,5],
-"struct_automation_1_1_recreate_on_play_1_1modvalue.html#a8baf02a0757bc6630ef7ceaa785d3949":[11,0,1,0,1,1],
-"struct_automation_1_1_recreate_on_play_1_1modvalue.html#a9d438749acd7611390616a8ff6d8cefe":[11,0,1,0,1,0]
+"struct_automation_1_1_recreate_on_play_1_1modvalue.html#a8baf02a0757bc6630ef7ceaa785d3949":[11,0,1,0,1,1]
 };
