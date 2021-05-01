@@ -1,9 +1,5 @@
 var NAVTREEINDEX60 =
 {
-"struct_scenario_1_1_slot_presenter.html#a6d6bd62f72538d278a02c614652e2c0b":[11,0,41,249,2],
-"struct_scenario_1_1_slot_presenter.html#a76a4c47939e4d7afe329c0221d69d9e9":[11,0,41,249,1],
-"struct_scenario_1_1_slot_presenter.html#aa32e8fe73b3084c79f8363e98a73166b":[11,0,41,249,3],
-"struct_scenario_1_1_slot_presenter.html#ad03c19ac4999d616e51c8ffd772dedee":[11,0,41,249,6],
 "struct_scenario_1_1_slot_presenter.html#ae25d875d56bb0cc55ac887c7b128292e":[11,0,41,249,0],
 "struct_scenario_1_1_slot_presenter.html#aee26e4eff59278127d2fedbc77dcf123":[11,0,41,249,5],
 "struct_scenario_1_1_snapshot_action.html":[11,0,41,252],
@@ -249,5 +245,9 @@ var NAVTREEINDEX60 =
 "struct_state_1_1_vec_edit_base.html":[11,0,46,33],
 "struct_state_1_1_vec_edit_base.html#abae609e31ac61d56889b752f3ce961ed":[11,0,46,33,0],
 "struct_std_variant_data_stream_deserializer.html":[11,0,391],
-"struct_std_variant_data_stream_deserializer.html#a0c75e0656b0a5121c3820913cca9559a":[11,0,391,3]
+"struct_std_variant_data_stream_deserializer.html#a0c75e0656b0a5121c3820913cca9559a":[11,0,391,3],
+"struct_std_variant_data_stream_deserializer.html#a2e652c9db533b3814eb49e36afcefd8a":[11,0,391,0],
+"struct_std_variant_data_stream_deserializer.html#a91df4783f92f7430a931e54e03a9b7a1":[11,0,391,5],
+"struct_std_variant_data_stream_deserializer.html#aa5d9264e3c9b3496899519955cf33d17":[11,0,391,1],
+"struct_std_variant_data_stream_deserializer.html#ab45325f76e7467a179814afcae7952d9":[11,0,391,2]
 };

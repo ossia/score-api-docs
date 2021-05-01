@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('class_gfx_1_1gfx__window__context.html
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_gfx_1_1gfx__window__context-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Gfx::gfx_window_context Class Reference</div>  </div>
@@ -139,29 +139,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateGraph</b> ()</t
 void&#160;</td><td class="memItemRight" valign="bottom"><b>timerEvent</b> (QTimerEvent *) override</td></tr>
 <tr class="separator:a4d2d6704118120572738e0fb7a8cbe25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a208dc2b56d1e02f6b3ae3949424e8110"><td class="memItemLeft" align="right" valign="top"><a id="a208dc2b56d1e02f6b3ae3949424e8110"></a>
-moodycamel::ConcurrentQueue&lt; <a class="el" href="struct_gfx_1_1gfx__message.html">gfx_message</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>tick_messages</b></td></tr>
-<tr class="separator:a208dc2b56d1e02f6b3ae3949424e8110"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab055e325b43a0995e241611340d7fc54"><td class="memItemLeft" align="right" valign="top"><a id="ab055e325b43a0995e241611340d7fc54"></a>
-std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>edges_lock</b></td></tr>
-<tr class="separator:ab055e325b43a0995e241611340d7fc54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af54fdae067cb76b65f8941ba2781dfa7"><td class="memItemLeft" align="right" valign="top"><a id="af54fdae067cb76b65f8941ba2781dfa7"></a>
-ossia::flat_set&lt; std::pair&lt; port_index, port_index &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>new_edges</b></td></tr>
-<tr class="separator:af54fdae067cb76b65f8941ba2781dfa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dd3518434bdc4cfa6ddce805781ea79"><td class="memItemLeft" align="right" valign="top"><a id="a4dd3518434bdc4cfa6ddce805781ea79"></a>
-ossia::flat_set&lt; std::pair&lt; port_index, port_index &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>edges</b></td></tr>
-<tr class="separator:a4dd3518434bdc4cfa6ddce805781ea79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a434dc9e9e37f24fb642fd2f45ffce3d3"><td class="memItemLeft" align="right" valign="top"><a id="a434dc9e9e37f24fb642fd2f45ffce3d3"></a>
-std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>edges_changed</b> {}</td></tr>
-<tr class="separator:a434dc9e9e37f24fb642fd2f45ffce3d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a776a743fb9809e09714980a0f741f92b"><td class="memItemLeft" align="right" valign="top"><a id="a776a743fb9809e09714980a0f741f92b"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_timer</b> {-1}</td></tr>
-<tr class="separator:a776a743fb9809e09714980a0f741f92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:aefe754b9e1390b7fb34d643fffdcc849"><td class="memItemLeft" align="right" valign="top"><a id="aefe754b9e1390b7fb34d643fffdcc849"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>gfx_exec_node</b></td></tr>
+<tr class="separator:aefe754b9e1390b7fb34d643fffdcc849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27273530c8430156fa3fd63565226a42"><td class="memItemLeft" align="right" valign="top"><a id="a27273530c8430156fa3fd63565226a42"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>GfxExecutionAction</b></td></tr>
+<tr class="separator:a27273530c8430156fa3fd63565226a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_gfx_context_8hpp_source.html">GfxContext.hpp</a></li>
+<li>GfxContext.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

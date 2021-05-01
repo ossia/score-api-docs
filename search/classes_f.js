@@ -34,7 +34,7 @@ var searchData=
   ['path_3c_20media_3a_3astep_3a_3amodel_20_3e_3974',['Path&lt; Media::Step::Model &gt;',['../class_path.html',1,'']]],
   ['path_3c_20metronome_3a_3aprocessmodel_20_3e_3975',['Path&lt; Metronome::ProcessModel &gt;',['../class_path.html',1,'']]],
   ['path_3c_20midi_3a_3aprocessmodel_20_3e_3976',['Path&lt; Midi::ProcessModel &gt;',['../class_path.html',1,'']]],
-  ['path_3c_20model_20_3e_3977',['Path&lt; Model &gt;',['../class_path.html',1,'Path&lt; Model &gt;'],['../class_path.html',1,'Path&lt; model &gt;']]],
+  ['path_3c_20model_20_3e_3977',['Path&lt; model &gt;',['../class_path.html',1,'Path&lt; model &gt;'],['../class_path.html',1,'Path&lt; Model &gt;']]],
   ['path_3c_20model_5ft_20_3e_3978',['Path&lt; model_t &gt;',['../class_path.html',1,'']]],
   ['path_3c_20nodal_3a_3amodel_20_3e_3979',['Path&lt; Nodal::Model &gt;',['../class_path.html',1,'']]],
   ['path_3c_20note_20_3e_3980',['Path&lt; Note &gt;',['../class_path.html',1,'']]],
