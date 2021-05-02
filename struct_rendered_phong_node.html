@@ -131,26 +131,29 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>customRelease</b> (<a
 &#160;</td><td class="memItemRight" valign="bottom"><b>RenderedNode</b> (const <a class="el" href="class_node_model.html">NodeModel</a> &amp;node) noexcept</td></tr>
 <tr class="separator:ae248a134b9296ec0a0f2378ff18bd003 inherit pub_methods_class_rendered_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03de528b4abe8b95c7a31a3610fdb566 inherit pub_methods_class_rendered_node"><td class="memItemLeft" align="right" valign="top"><a id="a03de528b4abe8b95c7a31a3610fdb566"></a>
-virtual <a class="el" href="struct_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><b>createRenderTarget</b> (const <a class="el" href="struct_render_state.html">RenderState</a> &amp;state)</td></tr>
+<a class="el" href="struct_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><b>createRenderTarget</b> (const <a class="el" href="struct_render_state.html">RenderState</a> &amp;state)</td></tr>
 <tr class="separator:a03de528b4abe8b95c7a31a3610fdb566 inherit pub_methods_class_rendered_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedef28e152dbe839d3a7f7489f1f33e9 inherit pub_methods_class_rendered_node"><td class="memItemLeft" align="right" valign="top"><a id="aedef28e152dbe839d3a7f7489f1f33e9"></a>
-virtual std::optional&lt; QSize &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetSize</b> () const noexcept</td></tr>
-<tr class="separator:aedef28e152dbe839d3a7f7489f1f33e9 inherit pub_methods_class_rendered_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bb7f979e143855567151ed6124c94dc inherit pub_methods_class_rendered_node"><td class="memItemLeft" align="right" valign="top"><a id="a6bb7f979e143855567151ed6124c94dc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;renderer)</td></tr>
-<tr class="separator:a6bb7f979e143855567151ed6124c94dc inherit pub_methods_class_rendered_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa7f9c2d9cfff534221cb3b88d3f711c inherit pub_methods_class_rendered_node"><td class="memItemLeft" align="right" valign="top"><a id="afa7f9c2d9cfff534221cb3b88d3f711c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;renderer, QRhiResourceUpdateBatch &amp;res)</td></tr>
-<tr class="separator:afa7f9c2d9cfff534221cb3b88d3f711c inherit pub_methods_class_rendered_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ef462e5fd4051a443353875e8dd2092 inherit pub_methods_class_rendered_node"><td class="memItemLeft" align="right" valign="top"><a id="a0ef462e5fd4051a443353875e8dd2092"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;)</td></tr>
-<tr class="separator:a0ef462e5fd4051a443353875e8dd2092 inherit pub_methods_class_rendered_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99ed2469e0ed12e01c2c746306767da4 inherit pub_methods_class_rendered_node"><td class="memItemLeft" align="right" valign="top"><a id="a99ed2469e0ed12e01c2c746306767da4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseWithoutRenderTarget</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;)</td></tr>
-<tr class="separator:a99ed2469e0ed12e01c2c746306767da4 inherit pub_methods_class_rendered_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f3628dcd84ed63f9eae1c587f77b54c inherit pub_methods_class_rendered_node"><td class="memItemLeft" align="right" valign="top"><a id="a7f3628dcd84ed63f9eae1c587f77b54c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>runPass</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;, QRhiCommandBuffer &amp;commands, QRhiResourceUpdateBatch &amp;updateBatch)</td></tr>
-<tr class="separator:a7f3628dcd84ed63f9eae1c587f77b54c inherit pub_methods_class_rendered_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38b2f2e35674b324302be2fe72929c7f inherit pub_methods_class_rendered_node"><td class="memItemLeft" align="right" valign="top"><a id="a38b2f2e35674b324302be2fe72929c7f"></a>
+<a class="el" href="struct_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><b>renderTarget</b> () const noexcept override</td></tr>
+<tr class="separator:a38b2f2e35674b324302be2fe72929c7f inherit pub_methods_class_rendered_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a179060b129a77ad4957c5b36e2639aa8 inherit pub_methods_class_rendered_node"><td class="memItemLeft" align="right" valign="top"><a id="a179060b129a77ad4957c5b36e2639aa8"></a>
+std::optional&lt; QSize &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetSize</b> () const noexcept override</td></tr>
+<tr class="separator:a179060b129a77ad4957c5b36e2639aa8 inherit pub_methods_class_rendered_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e416bac345a3f5d9a8c7e6815a8de88 inherit pub_methods_class_rendered_node"><td class="memItemLeft" align="right" valign="top"><a id="a7e416bac345a3f5d9a8c7e6815a8de88"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;renderer) override</td></tr>
+<tr class="separator:a7e416bac345a3f5d9a8c7e6815a8de88 inherit pub_methods_class_rendered_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64620700226a0fd5925321ae299dffe7 inherit pub_methods_class_rendered_node"><td class="memItemLeft" align="right" valign="top"><a id="a64620700226a0fd5925321ae299dffe7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;renderer, QRhiResourceUpdateBatch &amp;res) override</td></tr>
+<tr class="separator:a64620700226a0fd5925321ae299dffe7 inherit pub_methods_class_rendered_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97fe5e696bf37079dfd799cd361d7d38 inherit pub_methods_class_rendered_node"><td class="memItemLeft" align="right" valign="top"><a id="a97fe5e696bf37079dfd799cd361d7d38"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;) override</td></tr>
+<tr class="separator:a97fe5e696bf37079dfd799cd361d7d38 inherit pub_methods_class_rendered_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac8509c6a638a2c5298fc87ab752ab5d inherit pub_methods_class_rendered_node"><td class="memItemLeft" align="right" valign="top"><a id="aac8509c6a638a2c5298fc87ab752ab5d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseWithoutRenderTarget</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;) override</td></tr>
+<tr class="separator:aac8509c6a638a2c5298fc87ab752ab5d inherit pub_methods_class_rendered_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11d6ddfbe135e046fbc897539295f2a2 inherit pub_methods_class_rendered_node"><td class="memItemLeft" align="right" valign="top"><a id="a11d6ddfbe135e046fbc897539295f2a2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>runPass</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;, QRhiCommandBuffer &amp;commands, QRhiResourceUpdateBatch &amp;updateBatch) override</td></tr>
+<tr class="separator:a11d6ddfbe135e046fbc897539295f2a2 inherit pub_methods_class_rendered_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c294e96d310dfc3f8ced7e65a2e4a53 inherit pub_methods_class_rendered_node"><td class="memItemLeft" align="right" valign="top"><a id="a2c294e96d310dfc3f8ced7e65a2e4a53"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>defaultShaderMaterialInit</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;renderer)</td></tr>
 <tr class="separator:a2c294e96d310dfc3f8ced7e65a2e4a53 inherit pub_methods_class_rendered_node"><td class="memSeparator" colspan="2">&#160;</td></tr>

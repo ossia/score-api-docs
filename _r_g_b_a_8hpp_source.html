@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('_r_g_b_a_8hpp_source.html',''); initRe
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> init(<a class="code" href="struct_renderer.html">Renderer</a>&amp; r, <a class="code" href="class_rendered_node.html">RenderedNode</a>&amp; rendered)<span class="keyword"> override</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">  </span>{</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">auto</span>&amp; rhi = *r.state.rhi;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    std::tie(node.m_vertexS, node.m_fragmentS) = makeShaders(</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    std::tie(node.m_vertexS, node.m_fragmentS) = score::gfx::makeShaders(</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        node.mesh().defaultVertexShader(), QString(rgb_filter).arg(filter));</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> w = decoder.width, h = decoder.height;</div>
@@ -202,8 +202,8 @@ $(document).ready(function(){initNavTree('_r_g_b_a_8hpp_source.html',''); initRe
 <div class="ttc" id="astruct_video_1_1_video_interface_html"><div class="ttname"><a href="struct_video_1_1_video_interface.html">Video::VideoInterface</a></div><div class="ttdef"><b>Definition:</b> VideoInterface.hpp:24</div></div>
 <div class="ttc" id="astruct_renderer_html"><div class="ttname"><a href="struct_renderer.html">Renderer</a></div><div class="ttdef"><b>Definition:</b> renderer.hpp:30</div></div>
 <div class="ttc" id="astruct_g_p_u_video_decoder_html"><div class="ttname"><a href="struct_g_p_u_video_decoder.html">GPUVideoDecoder</a></div><div class="ttdef"><b>Definition:</b> GPUVideoDecoder.hpp:18</div></div>
-<div class="ttc" id="aclass_node_model_html"><div class="ttname"><a href="class_node_model.html">NodeModel</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:274</div></div>
-<div class="ttc" id="aclass_rendered_node_html"><div class="ttname"><a href="class_rendered_node.html">RenderedNode</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:218</div></div>
+<div class="ttc" id="aclass_node_model_html"><div class="ttname"><a href="class_node_model.html">NodeModel</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:163</div></div>
+<div class="ttc" id="aclass_rendered_node_html"><div class="ttname"><a href="class_rendered_node.html">RenderedNode</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:103</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

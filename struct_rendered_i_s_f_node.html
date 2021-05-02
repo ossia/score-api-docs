@@ -95,9 +95,7 @@ $(document).ready(function(){initNavTree('struct_rendered_i_s_f_node.html',''); 
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_rendered_i_s_f_node-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">RenderedISFNode Struct Reference</div>  </div>
@@ -113,11 +111,6 @@ Inheritance diagram for RenderedISFNode:</div>
   </map>
 </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rendered_i_s_f_node_1_1_pass.html">Pass</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acdd0bafa4082349ae31b5a411b1dc89c"><td class="memItemLeft" align="right" valign="top"><a id="acdd0bafa4082349ae31b5a411b1dc89c"></a>
@@ -126,33 +119,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a146971541da8410256bcaa2d7a6c06df"><td class="memItemLeft" align="right" valign="top"><a id="a146971541da8410256bcaa2d7a6c06df"></a>
 std::optional&lt; QSize &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetSize</b> () const noexcept override</td></tr>
 <tr class="separator:a146971541da8410256bcaa2d7a6c06df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a345e62f6bc18fe843ad2fc1d14b6661b"><td class="memItemLeft" align="right" valign="top"><a id="a345e62f6bc18fe843ad2fc1d14b6661b"></a>
-<a class="el" href="struct_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><b>createRenderTarget</b> (const <a class="el" href="struct_render_state.html">RenderState</a> &amp;state) override</td></tr>
-<tr class="separator:a345e62f6bc18fe843ad2fc1d14b6661b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22c916a919b1e047c47b8f34453aacb7"><td class="memItemLeft" align="right" valign="top"><a id="a22c916a919b1e047c47b8f34453aacb7"></a>
-QSize&#160;</td><td class="memItemRight" valign="bottom"><b>computeTextureSize</b> (const isf::pass &amp;pass)</td></tr>
-<tr class="separator:a22c916a919b1e047c47b8f34453aacb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab339768b314888a419c76c4b4b1af51a"><td class="memItemLeft" align="right" valign="top"><a id="ab339768b314888a419c76c4b4b1af51a"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>initShaderSamplers</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;renderer)</td></tr>
-<tr class="separator:ab339768b314888a419c76c4b4b1af51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f6badb52aa2b18ec297de7abe03d21e"><td class="memItemLeft" align="right" valign="top"><a id="a6f6badb52aa2b18ec297de7abe03d21e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>initAudioTextures</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;renderer)</td></tr>
-<tr class="separator:a6f6badb52aa2b18ec297de7abe03d21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9f9cf7ae171c2e737c44c275db7330b"><td class="memItemLeft" align="right" valign="top"><a id="aa9f9cf7ae171c2e737c44c275db7330b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>initPassSamplers</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;renderer, int &amp;cur_pos)</td></tr>
-<tr class="separator:aa9f9cf7ae171c2e737c44c275db7330b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24e1954ec435c30a9d0a066952b46f97"><td class="memItemLeft" align="right" valign="top"><a id="a24e1954ec435c30a9d0a066952b46f97"></a>
+<a class="el" href="struct_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><b>renderTarget</b> () const noexcept override</td></tr>
+<tr class="separator:a24e1954ec435c30a9d0a066952b46f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04d32239e5c3381f70a1d79c9fa4bda4"><td class="memItemLeft" align="right" valign="top"><a id="a04d32239e5c3381f70a1d79c9fa4bda4"></a>
 <a class="el" href="struct_pipeline.html">Pipeline</a>&#160;</td><td class="memItemRight" valign="bottom"><b>buildPassPipeline</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;renderer, <a class="el" href="struct_texture_render_target.html">TextureRenderTarget</a> tgt, QRhiBuffer *processUBO)</td></tr>
 <tr class="separator:a04d32239e5c3381f70a1d79c9fa4bda4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef2784ec690eba69ecb77db091dce855"><td class="memItemLeft" align="right" valign="top"><a id="aef2784ec690eba69ecb77db091dce855"></a>
-<a class="el" href="struct_rendered_i_s_f_node_1_1_pass.html">Pass</a>&#160;</td><td class="memItemRight" valign="bottom"><b>createPass</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;renderer, <a class="el" href="struct_sampler.html">Sampler</a> target)</td></tr>
-<tr class="separator:aef2784ec690eba69ecb77db091dce855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5896c531c4f6b98c006e8b187ef4b8ce"><td class="memItemLeft" align="right" valign="top"><a id="a5896c531c4f6b98c006e8b187ef4b8ce"></a>
+std::pair&lt; <a class="el" href="struct_pass.html">Pass</a>, <a class="el" href="struct_pass.html">Pass</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createPass</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;renderer, <a class="el" href="struct_persist_sampler.html">PersistSampler</a> target)</td></tr>
+<tr class="separator:a5896c531c4f6b98c006e8b187ef4b8ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ab25381be8c30de3d8bdafbf7d0448e"><td class="memItemLeft" align="right" valign="top"><a id="a6ab25381be8c30de3d8bdafbf7d0448e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initPasses</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;renderer)</td></tr>
+<tr class="separator:a6ab25381be8c30de3d8bdafbf7d0448e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae39d53728de2879ada3f18b2e0083770"><td class="memItemLeft" align="right" valign="top"><a id="ae39d53728de2879ada3f18b2e0083770"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;renderer) override</td></tr>
 <tr class="separator:ae39d53728de2879ada3f18b2e0083770"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61b96cd53818a55eb85205b084013459"><td class="memItemLeft" align="right" valign="top"><a id="a61b96cd53818a55eb85205b084013459"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>updateAudioTexture</b> (<a class="el" href="struct_audio_texture.html">AudioTexture</a> &amp;audio, <a class="el" href="struct_renderer.html">Renderer</a> &amp;renderer, QRhiResourceUpdateBatch &amp;res)</td></tr>
-<tr class="separator:a61b96cd53818a55eb85205b084013459"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a643f4f1780604962e05ac9dd4972defa"><td class="memItemLeft" align="right" valign="top"><a id="a643f4f1780604962e05ac9dd4972defa"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;renderer, QRhiResourceUpdateBatch &amp;res) override</td></tr>
 <tr class="separator:a643f4f1780604962e05ac9dd4972defa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,44 +146,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> (<a class
 <tr class="memitem:a1c5e701cbce628f85f70a4000eac033d"><td class="memItemLeft" align="right" valign="top"><a id="a1c5e701cbce628f85f70a4000eac033d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>runPass</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;renderer, QRhiCommandBuffer &amp;cb, QRhiResourceUpdateBatch &amp;res) override</td></tr>
 <tr class="separator:a1c5e701cbce628f85f70a4000eac033d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:ae21b25a78b54aba5c3bc93f94b4bd280"><td class="memItemLeft" align="right" valign="top"><a id="ae21b25a78b54aba5c3bc93f94b4bd280"></a>
-std::vector&lt; <a class="el" href="struct_rendered_i_s_f_node_1_1_pass.html">Pass</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_passes</b></td></tr>
-<tr class="separator:ae21b25a78b54aba5c3bc93f94b4bd280"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa538c3b293f5c58891d0a8740f77b840"><td class="memItemLeft" align="right" valign="top"><a id="aa538c3b293f5c58891d0a8740f77b840"></a>
-<a class="el" href="struct_i_s_f_node.html">ISFNode</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>n</b></td></tr>
-<tr class="separator:aa538c3b293f5c58891d0a8740f77b840"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4b2e734b8462e34a20a64e7a88dc22e"><td class="memItemLeft" align="right" valign="top"><a id="ac4b2e734b8462e34a20a64e7a88dc22e"></a>
-<a class="el" href="struct_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastPassRT</b></td></tr>
-<tr class="separator:ac4b2e734b8462e34a20a64e7a88dc22e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3854fdd7ea0a19b09d87f9ac28579156"><td class="memItemLeft" align="right" valign="top"><a id="a3854fdd7ea0a19b09d87f9ac28579156"></a>
-std::vector&lt; <a class="el" href="struct_sampler.html">Sampler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_samplers</b></td></tr>
-<tr class="separator:a3854fdd7ea0a19b09d87f9ac28579156"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4c800fa52dcc0838c1639162caec893"><td class="memItemLeft" align="right" valign="top"><a id="ad4c800fa52dcc0838c1639162caec893"></a>
-QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_meshBuffer</b> {}</td></tr>
-<tr class="separator:ad4c800fa52dcc0838c1639162caec893"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c8036f933e8987a519b298d1711e5c8"><td class="memItemLeft" align="right" valign="top"><a id="a3c8036f933e8987a519b298d1711e5c8"></a>
-QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_idxBuffer</b> {}</td></tr>
-<tr class="separator:a3c8036f933e8987a519b298d1711e5c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7497e46e52dcf004a0562a80b3c0d052"><td class="memItemLeft" align="right" valign="top"><a id="a7497e46e52dcf004a0562a80b3c0d052"></a>
-QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_materialUBO</b> {}</td></tr>
-<tr class="separator:a7497e46e52dcf004a0562a80b3c0d052"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0825d8de951bf13070df8b392edbe49"><td class="memItemLeft" align="right" valign="top"><a id="aa0825d8de951bf13070df8b392edbe49"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_materialSize</b> {}</td></tr>
-<tr class="separator:aa0825d8de951bf13070df8b392edbe49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6eee1d8e91ac4fdc5288d7da8d5d3f58"><td class="memItemLeft" align="right" valign="top"><a id="a6eee1d8e91ac4fdc5288d7da8d5d3f58"></a>
-int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>materialChangedIndex</b> {-1}</td></tr>
-<tr class="separator:a6eee1d8e91ac4fdc5288d7da8d5d3f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a673ebb0e51930e0f51c7e673b936ba"><td class="memItemLeft" align="right" valign="top"><a id="a5a673ebb0e51930e0f51c7e673b936ba"></a>
-std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_audioScratchpad</b></td></tr>
-<tr class="separator:a5a673ebb0e51930e0f51c7e673b936ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33be077fdefae21142669a3611fb784c"><td class="memItemLeft" align="right" valign="top"><a id="a33be077fdefae21142669a3611fb784c"></a>
-ossia::fft&#160;</td><td class="memItemRight" valign="bottom"><b>m_fft</b></td></tr>
-<tr class="separator:a33be077fdefae21142669a3611fb784c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/>The documentation for this struct was generated from the following files:<ul>
+<li><a class="el" href="renderedisfnode_8hpp_source.html">renderedisfnode.hpp</a></li>
 <li>isfnode.cpp</li>
 </ul>
 </div><!-- contents -->

@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('filternode_8hpp_source.html',''); init
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <a class="code" href="struct_filter_node.html">FilterNode</a>(QString frag)</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    std::tie(m_vertexS, m_fragmentS)</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        = makeShaders(m_mesh.defaultVertexShader(), frag);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        = score::gfx::makeShaders(m_mesh.defaultVertexShader(), frag);</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; d = m_fragmentS.description();</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0, n = d.combinedImageSamplers().size(); i &lt; n; i++)</div>
@@ -202,10 +202,10 @@ $(document).ready(function(){initNavTree('filternode_8hpp_source.html',''); init
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astruct_port_html"><div class="ttname"><a href="struct_port.html">Port</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:36</div></div>
+<div class="ttc" id="astruct_port_html"><div class="ttname"><a href="struct_port.html">Port</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:34</div></div>
 <div class="ttc" id="astruct_mesh_html"><div class="ttname"><a href="struct_mesh.html">Mesh</a></div><div class="ttdef"><b>Definition:</b> mesh.hpp:8</div></div>
 <div class="ttc" id="astruct_filter_node_html"><div class="ttname"><a href="struct_filter_node.html">FilterNode</a></div><div class="ttdef"><b>Definition:</b> filternode.hpp:5</div></div>
-<div class="ttc" id="aclass_node_model_html"><div class="ttname"><a href="class_node_model.html">NodeModel</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:274</div></div>
+<div class="ttc" id="aclass_node_model_html"><div class="ttname"><a href="class_node_model.html">NodeModel</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:163</div></div>
 <div class="ttc" id="astruct_textured_triangle_html"><div class="ttname"><a href="struct_textured_triangle.html">TexturedTriangle</a></div><div class="ttdef"><b>Definition:</b> mesh.hpp:223</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

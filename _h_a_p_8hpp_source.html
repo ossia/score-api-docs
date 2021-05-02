@@ -303,7 +303,7 @@ $(document).ready(function(){initNavTree('_h_a_p_8hpp_source.html',''); initResi
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="keywordtype">void</span> init(<a class="code" href="struct_renderer.html">Renderer</a>&amp; r, <a class="code" href="class_rendered_node.html">RenderedNode</a>&amp; rendered)<span class="keyword"> override</span></div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="keyword">  </span>{</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keyword">auto</span>&amp; rhi = *r.state.rhi;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    std::tie(node.m_vertexS, node.m_fragmentS) = makeShaders(</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    std::tie(node.m_vertexS, node.m_fragmentS) = score::gfx::makeShaders(</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        node.mesh().defaultVertexShader(), QString(fragment).arg(filter));</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> w = decoder.width, h = decoder.height;</div>
@@ -378,7 +378,7 @@ $(document).ready(function(){initNavTree('_h_a_p_8hpp_source.html',''); initResi
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  <span class="keywordtype">void</span> init(<a class="code" href="struct_renderer.html">Renderer</a>&amp; r, <a class="code" href="class_rendered_node.html">RenderedNode</a>&amp; rendered)<span class="keyword"> override</span></div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="keyword">  </span>{</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="keyword">auto</span>&amp; rhi = *r.state.rhi;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    std::tie(node.m_vertexS, node.m_fragmentS) = makeShaders(</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    std::tie(node.m_vertexS, node.m_fragmentS) = score::gfx::makeShaders(</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        node.mesh().defaultVertexShader(), QString(fragment).arg(filter));</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> w = decoder.width, h = decoder.height;</div>
@@ -511,8 +511,8 @@ $(document).ready(function(){initNavTree('_h_a_p_8hpp_source.html',''); initResi
 <div class="ttc" id="astruct_h_a_p_m_decoder_html"><div class="ttname"><a href="struct_h_a_p_m_decoder.html">HAPMDecoder</a></div><div class="ttdef"><b>Definition:</b> HAP.hpp:227</div></div>
 <div class="ttc" id="astruct_h_a_p_decoder_1_1_h_a_p_section_html"><div class="ttname"><a href="struct_h_a_p_decoder_1_1_h_a_p_section.html">HAPDecoder::HAPSection</a></div><div class="ttdef"><b>Definition:</b> HAP.hpp:9</div></div>
 <div class="ttc" id="astruct_g_p_u_video_decoder_html"><div class="ttname"><a href="struct_g_p_u_video_decoder.html">GPUVideoDecoder</a></div><div class="ttdef"><b>Definition:</b> GPUVideoDecoder.hpp:18</div></div>
-<div class="ttc" id="aclass_node_model_html"><div class="ttname"><a href="class_node_model.html">NodeModel</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:274</div></div>
-<div class="ttc" id="aclass_rendered_node_html"><div class="ttname"><a href="class_rendered_node.html">RenderedNode</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:218</div></div>
+<div class="ttc" id="aclass_node_model_html"><div class="ttname"><a href="class_node_model.html">NodeModel</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:163</div></div>
+<div class="ttc" id="aclass_rendered_node_html"><div class="ttname"><a href="class_rendered_node.html">RenderedNode</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:103</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

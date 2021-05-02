@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('nodes_8hpp_source.html',''); initResiz
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="struct_output_node.html">OutputNode</a>()</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  {</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    std::tie(m_vertexS, m_fragmentS)</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        = makeShaders(m_mesh.defaultVertexShader(), filter);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        = score::gfx::makeShaders(m_mesh.defaultVertexShader(), filter);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_mesh.html">Mesh</a>&amp; mesh() <span class="keyword">const</span> noexcept <span class="keyword">override</span> { <span class="keywordflow">return</span> this-&gt;m_mesh; }</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
@@ -172,7 +172,7 @@ $(document).ready(function(){initNavTree('nodes_8hpp_source.html',''); initResiz
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="struct_color_node.html">ColorNode</a>()</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  {</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    std::tie(m_vertexS, m_fragmentS)</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        = makeShaders(m_mesh.defaultVertexShader(), filter);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        = score::gfx::makeShaders(m_mesh.defaultVertexShader(), filter);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    input.push_back(<span class="keyword">new</span> <a class="code" href="struct_port.html">Port</a>{<span class="keyword">this</span>, {}, Types::Vec4, {}});</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// input.back()-&gt;value = ossia::vec4f{0.6, 0.3, 0.78, 1.};</span></div>
@@ -199,7 +199,7 @@ $(document).ready(function(){initNavTree('nodes_8hpp_source.html',''); initResiz
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <a class="code" href="struct_noise_node.html">NoiseNode</a>()</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  {</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    std::tie(m_vertexS, m_fragmentS)</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        = makeShaders(m_mesh.defaultVertexShader(), filter);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        = score::gfx::makeShaders(m_mesh.defaultVertexShader(), filter);</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    output.push_back(<span class="keyword">new</span> <a class="code" href="struct_port.html">Port</a>{<span class="keyword">this</span>, {}, Types::Image, {}});</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  }</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_mesh.html">Mesh</a>&amp; mesh() <span class="keyword">const</span> noexcept <span class="keyword">override</span> { <span class="keywordflow">return</span> this-&gt;m_mesh; }</div>
@@ -227,7 +227,7 @@ $(document).ready(function(){initNavTree('nodes_8hpp_source.html',''); initResiz
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <a class="code" href="struct_product_node.html">ProductNode</a>()</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  {</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    std::tie(m_vertexS, m_fragmentS)</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        = makeShaders(m_mesh.defaultVertexShader(), filter);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        = score::gfx::makeShaders(m_mesh.defaultVertexShader(), filter);</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    input.push_back(<span class="keyword">new</span> <a class="code" href="struct_port.html">Port</a>{<span class="keyword">this</span>, {}, Types::Image, {}});</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    input.push_back(<span class="keyword">new</span> <a class="code" href="struct_port.html">Port</a>{<span class="keyword">this</span>, {}, Types::Image, {}});</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    output.push_back(<span class="keyword">new</span> <a class="code" href="struct_port.html">Port</a>{<span class="keyword">this</span>, {}, Types::Image, {}});</div>
@@ -262,7 +262,7 @@ $(document).ready(function(){initNavTree('nodes_8hpp_source.html',''); initResiz
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordtype">void</span> updateGraphicsAPI(GraphicsApi) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <a class="code" href="struct_render_state.html">RenderState</a>* renderState() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>* createRenderer() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>* createRenderer(<a class="code" href="struct_renderer.html">Renderer</a>&amp; r) <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keywordtype">bool</span> m_embedded{};</div>
@@ -271,8 +271,8 @@ $(document).ready(function(){initNavTree('nodes_8hpp_source.html',''); initResiz
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astruct_port_html"><div class="ttname"><a href="struct_port.html">Port</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:36</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:178</div></div>
+<div class="ttc" id="astruct_port_html"><div class="ttname"><a href="struct_port.html">Port</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:34</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:83</div></div>
 <div class="ttc" id="astruct_color_node_html"><div class="ttname"><a href="struct_color_node.html">ColorNode</a></div><div class="ttdef"><b>Definition:</b> nodes.hpp:54</div></div>
 <div class="ttc" id="astruct_output_node_html"><div class="ttname"><a href="struct_output_node.html">OutputNode</a></div><div class="ttdef"><b>Definition:</b> nodes.hpp:8</div></div>
 <div class="ttc" id="astruct_mesh_html"><div class="ttname"><a href="struct_mesh.html">Mesh</a></div><div class="ttdef"><b>Definition:</b> mesh.hpp:8</div></div>
@@ -281,7 +281,7 @@ $(document).ready(function(){initNavTree('nodes_8hpp_source.html',''); initResiz
 <div class="ttc" id="astruct_renderer_html"><div class="ttname"><a href="struct_renderer.html">Renderer</a></div><div class="ttdef"><b>Definition:</b> renderer.hpp:30</div></div>
 <div class="ttc" id="astruct_render_state_html"><div class="ttname"><a href="struct_render_state.html">RenderState</a></div><div class="ttdef"><b>Definition:</b> renderstate.hpp:14</div></div>
 <div class="ttc" id="aclass_window_html"><div class="ttname"><a href="class_window.html">Window</a></div><div class="ttdef"><b>Definition:</b> plugins/score-plugin-gfx/Gfx/Graph/Window.hpp:11</div></div>
-<div class="ttc" id="aclass_node_model_html"><div class="ttname"><a href="class_node_model.html">NodeModel</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:274</div></div>
+<div class="ttc" id="aclass_node_model_html"><div class="ttname"><a href="class_node_model.html">NodeModel</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:163</div></div>
 <div class="ttc" id="astruct_noise_node_html"><div class="ttname"><a href="struct_noise_node.html">NoiseNode</a></div><div class="ttdef"><b>Definition:</b> nodes.hpp:86</div></div>
 <div class="ttc" id="astruct_textured_triangle_html"><div class="ttname"><a href="struct_textured_triangle.html">TexturedTriangle</a></div><div class="ttdef"><b>Definition:</b> mesh.hpp:223</div></div>
 <!-- HTML footer for doxygen 1.8.8-->

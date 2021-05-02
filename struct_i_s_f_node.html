@@ -125,9 +125,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a613e428c621f76160f12ed641582f694"><td class="memItemLeft" align="right" valign="top"><a id="a613e428c621f76160f12ed641582f694"></a>
 const <a class="el" href="struct_mesh.html">Mesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>mesh</b> () const noexcept</td></tr>
 <tr class="separator:a613e428c621f76160f12ed641582f694"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4179da303709c297917cd34a1e846d2e"><td class="memItemLeft" align="right" valign="top"><a id="a4179da303709c297917cd34a1e846d2e"></a>
-<a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>createRenderer</b> () const noexcept</td></tr>
-<tr class="separator:a4179da303709c297917cd34a1e846d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f66a84716b21e39e5e4b0d6afd26d15"><td class="memItemLeft" align="right" valign="top"><a id="a0f66a84716b21e39e5e4b0d6afd26d15"></a>
+QSize&#160;</td><td class="memItemRight" valign="bottom"><b>computeTextureSize</b> (const isf::pass &amp;pass, QSize origSize)</td></tr>
+<tr class="separator:a0f66a84716b21e39e5e4b0d6afd26d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab38651f90c7afc16325fd64e2c2cb571"><td class="memItemLeft" align="right" valign="top"><a id="ab38651f90c7afc16325fd64e2c2cb571"></a>
+<a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>createRenderer</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;r) const noexcept</td></tr>
+<tr class="separator:ab38651f90c7afc16325fd64e2c2cb571"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1gfx_1_1_process_node"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1gfx_1_1_process_node')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1gfx_1_1_process_node.html">score::gfx::ProcessNode</a></td></tr>
 <tr class="memitem:abe3e5324b8df85751b01d0d02fbe49dd inherit pub_methods_classscore_1_1gfx_1_1_process_node"><td class="memItemLeft" align="right" valign="top"><a id="abe3e5324b8df85751b01d0d02fbe49dd"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Node</b> ()</td></tr>
@@ -135,6 +138,9 @@ const <a class="el" href="struct_mesh.html">Mesh</a> &amp;&#160;</td><td class="
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:ae1f2e540a6202120a5801059b054af70"><td class="memItemLeft" align="right" valign="top"><a id="ae1f2e540a6202120a5801059b054af70"></a>
+isf::descriptor&#160;</td><td class="memItemRight" valign="bottom"><b>descriptor</b></td></tr>
+<tr class="separator:ae1f2e540a6202120a5801059b054af70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44a410d2dbcc5f1bb2197578141ff6ac"><td class="memItemLeft" align="right" valign="top"><a id="a44a410d2dbcc5f1bb2197578141ff6ac"></a>
 std::list&lt; <a class="el" href="struct_audio_texture.html">AudioTexture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>audio_textures</b></td></tr>
 <tr class="separator:a44a410d2dbcc5f1bb2197578141ff6ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,6 +170,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>addedToGraph</b> {}</
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
+<tr class="memitem:a6c25b7af56df1e8188fe83e88311596a"><td class="memItemLeft" align="right" valign="top"><a id="a6c25b7af56df1e8188fe83e88311596a"></a>
+struct&#160;</td><td class="memItemRight" valign="bottom"><b>SinglePassISFNode</b></td></tr>
+<tr class="separator:a6c25b7af56df1e8188fe83e88311596a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae46bacf5fe757134561ecdc167a36fa2"><td class="memItemLeft" align="right" valign="top"><a id="ae46bacf5fe757134561ecdc167a36fa2"></a>
 struct&#160;</td><td class="memItemRight" valign="bottom"><b>RenderedISFNode</b></td></tr>
 <tr class="separator:ae46bacf5fe757134561ecdc167a36fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>

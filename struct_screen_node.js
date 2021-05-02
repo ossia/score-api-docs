@@ -5,7 +5,7 @@ var struct_screen_node =
     [ "~ScreenNode", "struct_screen_node.html#ac04068ec2f08c86ee4e057df69b6caf9", null ],
     [ "canRender", "struct_screen_node.html#a35e77a6dd6a9590d052a7695446e6ec3", null ],
     [ "createOutput", "struct_screen_node.html#a15e5737b06f6334f95dbbaae680aef2b", null ],
-    [ "createRenderer", "struct_screen_node.html#acefaf1e7fd0ac3a35661df5eb0c63c2d", null ],
+    [ "createRenderer", "struct_screen_node.html#a5fc3be0571c9bc7b859a0490c150b574", null ],
     [ "destroyOutput", "struct_screen_node.html#a313ce8412bbd7f3a38cfc6f7feeaa984", null ],
     [ "onRendererChange", "struct_screen_node.html#a107495726ee7e35f52a22c1dedadda05", null ],
     [ "renderer", "struct_screen_node.html#a51f2600df0d00e295da15655a912059d", null ],

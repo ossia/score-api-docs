@@ -3,7 +3,7 @@ var struct_video_node =
     [ "Rendered", "struct_video_node_1_1_rendered.html", "struct_video_node_1_1_rendered" ],
     [ "VideoNode", "struct_video_node.html#a35b3e7c279834f7d1deae2e306327aeb", null ],
     [ "~VideoNode", "struct_video_node.html#a68f4d8bc8a7cb0f2c3522293a6c5565e", null ],
-    [ "createRenderer", "struct_video_node.html#aa25cb8760684bc4807e36ea6680052ec", null ],
+    [ "createRenderer", "struct_video_node.html#a4ca866c57b1a037a6b1ec06290abe6f3", null ],
     [ "mesh", "struct_video_node.html#aa6281b3a5ae66a15716d3a85393cf0ff", null ],
     [ "decoder", "struct_video_node.html#abc6b183ce5a9e29088a6d39422a01ac3", null ],
     [ "filter", "struct_video_node.html#a30ef875797993045f0236051ec255f64", null ],

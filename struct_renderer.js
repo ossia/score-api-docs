@@ -1,7 +1,5 @@
 var struct_renderer =
 [
-    [ "createRenderTarget", "struct_renderer.html#aa471d8dcc63922ab0dabb348d60d74cf", null ],
-    [ "createRenderTargets", "struct_renderer.html#a992352358960c52ec5fbcb41585c8fd2", null ],
     [ "init", "struct_renderer.html#a26abbb3bdc9dae7fe089a8ea7d1b9a30", null ],
     [ "initMeshBuffer", "struct_renderer.html#a51222a267ea5eae7df9695b0a420853a", null ],
     [ "maybeRebuild", "struct_renderer.html#a131e28f75fe3f684d73535ab30a8ec3e", null ],
@@ -19,6 +17,5 @@ var struct_renderer =
     [ "ready", "struct_renderer.html#ae4d5fc7af63e50d9e81383cb1cdba6f6", null ],
     [ "renderedNodes", "struct_renderer.html#af8622f8c98ee9574bd964c6f1eba05e4", null ],
     [ "screenUBO", "struct_renderer.html#ab4a38bf21c706a871f171676358a3348", null ],
-    [ "state", "struct_renderer.html#ac9b27eb86fa8ec1ce681f659c0c861b3", null ],
-    [ "textureTargets", "struct_renderer.html#a617239dfdcdba189be7133368e890061", null ]
+    [ "state", "struct_renderer.html#ac9b27eb86fa8ec1ce681f659c0c861b3", null ]
 ];

@@ -284,7 +284,7 @@ $(document).ready(function(){initNavTree('imagenode_8hpp_source.html',''); initR
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <a class="code" href="struct_images_node.html">ImagesNode</a>(std::vector&lt;Gfx::Image&gt; dec)</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;      : images{std::move(dec)}</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  {</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    std::tie(m_vertexS, m_fragmentS) = makeShaders(vertex, filter);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    std::tie(m_vertexS, m_fragmentS) = score::gfx::makeShaders(vertex, filter);</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    input.push_back(<span class="keyword">new</span> <a class="code" href="struct_port.html">Port</a>{<span class="keyword">this</span>, &amp;ubo.currentImageIndex, Types::Int, {}});</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    input.push_back(<span class="keyword">new</span> <a class="code" href="struct_port.html">Port</a>{<span class="keyword">this</span>, &amp;ubo.opacity, Types::Float, {}});</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    input.push_back(<span class="keyword">new</span> <a class="code" href="struct_port.html">Port</a>{<span class="keyword">this</span>, &amp;ubo.position[0], Types::Vec2, {}});</div>
@@ -296,8 +296,8 @@ $(document).ready(function(){initNavTree('imagenode_8hpp_source.html',''); initR
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="struct_images_node.html">ImagesNode</a>() { m_materialData.release(); }</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_mesh.html">Mesh</a>&amp; mesh() const noexcept<span class="keyword"> override </span>{ <span class="keywordflow">return</span> this-&gt;m_mesh; }</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>* createRenderer() const noexcept<span class="keyword"> override</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>* createRenderer(<a class="code" href="struct_renderer.html">Renderer</a>&amp; r) <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  {</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> Rendered{*<span class="keyword">this</span>};</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  }</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;};</div>
@@ -305,15 +305,15 @@ $(document).ready(function(){initNavTree('imagenode_8hpp_source.html',''); initR
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="preprocessor">#include &lt;Gfx/Qt5CompatPop&gt;</span> <span class="comment">// clang-format: keep</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astruct_port_html"><div class="ttname"><a href="struct_port.html">Port</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:36</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:178</div></div>
+<div class="ttc" id="astruct_port_html"><div class="ttname"><a href="struct_port.html">Port</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:34</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:83</div></div>
 <div class="ttc" id="astruct_mesh_html"><div class="ttname"><a href="struct_mesh.html">Mesh</a></div><div class="ttdef"><b>Definition:</b> mesh.hpp:8</div></div>
 <div class="ttc" id="astruct_gfx_1_1_image_html"><div class="ttname"><a href="struct_gfx_1_1_image.html">Gfx::Image</a></div><div class="ttdef"><b>Definition:</b> imagenode.hpp:13</div></div>
 <div class="ttc" id="astruct_images_node_1_1_rendered_html"><div class="ttname"><a href="struct_images_node_1_1_rendered.html">ImagesNode::Rendered</a></div><div class="ttdef"><b>Definition:</b> imagenode.hpp:82</div></div>
 <div class="ttc" id="astruct_renderer_html"><div class="ttname"><a href="struct_renderer.html">Renderer</a></div><div class="ttdef"><b>Definition:</b> renderer.hpp:30</div></div>
 <div class="ttc" id="astruct_images_node_1_1ubo_html"><div class="ttname"><a href="struct_images_node_1_1ubo.html">ImagesNode::ubo</a></div><div class="ttdef"><b>Definition:</b> imagenode.hpp:74</div></div>
-<div class="ttc" id="aclass_node_model_html"><div class="ttname"><a href="class_node_model.html">NodeModel</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:274</div></div>
-<div class="ttc" id="aclass_rendered_node_html"><div class="ttname"><a href="class_rendered_node.html">RenderedNode</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:218</div></div>
+<div class="ttc" id="aclass_node_model_html"><div class="ttname"><a href="class_node_model.html">NodeModel</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:163</div></div>
+<div class="ttc" id="aclass_rendered_node_html"><div class="ttname"><a href="class_rendered_node.html">RenderedNode</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:103</div></div>
 <div class="ttc" id="astruct_images_node_html"><div class="ttname"><a href="struct_images_node.html">ImagesNode</a></div><div class="ttdef"><b>Definition:</b> imagenode.hpp:20</div></div>
 <div class="ttc" id="astruct_textured_triangle_html"><div class="ttname"><a href="struct_textured_triangle.html">TexturedTriangle</a></div><div class="ttdef"><b>Definition:</b> mesh.hpp:223</div></div>
 <!-- HTML footer for doxygen 1.8.8-->

@@ -227,7 +227,7 @@ $(document).ready(function(){initNavTree('texgennode_8hpp_source.html',''); init
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <a class="code" href="struct_texgen_node.html">TexgenNode</a>()</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  {</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <a class="code" href="structimage.html">image</a> = QImage{QSize(640, 480), QImage::Format_ARGB32_Premultiplied};</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    std::tie(m_vertexS, m_fragmentS) = makeShaders(vertex, filter);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    std::tie(m_vertexS, m_fragmentS) = score::gfx::makeShaders(vertex, filter);</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    output.push_back(<span class="keyword">new</span> <a class="code" href="struct_port.html">Port</a>{<span class="keyword">this</span>, {}, Types::Image, {}});</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  }</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="struct_texgen_node.html">TexgenNode</a>() { m_materialData.release(); }</div>
@@ -236,8 +236,8 @@ $(document).ready(function(){initNavTree('texgennode_8hpp_source.html',''); init
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  std::atomic&lt;func_t&gt; <span class="keyword">function</span>{};</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_mesh.html">Mesh</a>&amp; mesh() const noexcept<span class="keyword"> override </span>{ <span class="keywordflow">return</span> this-&gt;m_mesh; }</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>* createRenderer() const noexcept<span class="keyword"> override</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>* createRenderer(<a class="code" href="struct_renderer.html">Renderer</a>&amp; r) <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  {</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> Rendered{*<span class="keyword">this</span>};</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  }</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;};</div>
@@ -245,16 +245,16 @@ $(document).ready(function(){initNavTree('texgennode_8hpp_source.html',''); init
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">#include &lt;Gfx/Qt5CompatPop&gt;</span> <span class="comment">// clang-format: keep</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astruct_port_html"><div class="ttname"><a href="struct_port.html">Port</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:36</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:178</div></div>
+<div class="ttc" id="astruct_port_html"><div class="ttname"><a href="struct_port.html">Port</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:34</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:83</div></div>
 <div class="ttc" id="astruct_mesh_html"><div class="ttname"><a href="struct_mesh.html">Mesh</a></div><div class="ttdef"><b>Definition:</b> mesh.hpp:8</div></div>
 <div class="ttc" id="astruct_texgen_node_1_1ubo_html"><div class="ttname"><a href="struct_texgen_node_1_1ubo.html">TexgenNode::ubo</a></div><div class="ttdef"><b>Definition:</b> texgennode.hpp:52</div></div>
-<div class="ttc" id="astructimage_html"><div class="ttname"><a href="structimage.html">image</a></div><div class="ttdef"><b>Definition:</b> uniforms.hpp:10</div></div>
+<div class="ttc" id="astructimage_html"><div class="ttname"><a href="structimage.html">image</a></div><div class="ttdef"><b>Definition:</b> uniforms.hpp:9</div></div>
 <div class="ttc" id="astruct_renderer_html"><div class="ttname"><a href="struct_renderer.html">Renderer</a></div><div class="ttdef"><b>Definition:</b> renderer.hpp:30</div></div>
 <div class="ttc" id="astruct_texgen_node_1_1_rendered_html"><div class="ttname"><a href="struct_texgen_node_1_1_rendered.html">TexgenNode::Rendered</a></div><div class="ttdef"><b>Definition:</b> texgennode.hpp:60</div></div>
 <div class="ttc" id="astruct_texgen_node_html"><div class="ttname"><a href="struct_texgen_node.html">TexgenNode</a></div><div class="ttdef"><b>Definition:</b> texgennode.hpp:8</div></div>
-<div class="ttc" id="aclass_node_model_html"><div class="ttname"><a href="class_node_model.html">NodeModel</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:274</div></div>
-<div class="ttc" id="aclass_rendered_node_html"><div class="ttname"><a href="class_rendered_node.html">RenderedNode</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:218</div></div>
+<div class="ttc" id="aclass_node_model_html"><div class="ttname"><a href="class_node_model.html">NodeModel</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:163</div></div>
+<div class="ttc" id="aclass_rendered_node_html"><div class="ttname"><a href="class_rendered_node.html">RenderedNode</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/node.hpp:103</div></div>
 <div class="ttc" id="astruct_textured_triangle_html"><div class="ttname"><a href="struct_textured_triangle.html">TexturedTriangle</a></div><div class="ttdef"><b>Definition:</b> mesh.hpp:223</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

@@ -1,6 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"class_gfx_1_1_gfx_input_device.html#ac7bda7fb1f1777b5ff06d243f7815f60":[11,0,13,28,0],
 "class_gfx_1_1_gfx_input_device.html#ac8466315562de83e467f68e488e68962":[11,0,13,28,5],
 "class_gfx_1_1_gfx_input_device.html#aceb8a0852030a917b15ebea1f635d2a4":[11,0,13,28,9],
 "class_gfx_1_1_gfx_input_device.html#afe8d519c9ab1b8f50b5e6f74d395e963":[11,0,13,28,6],
@@ -65,8 +64,7 @@ var NAVTREEINDEX14 =
 "class_gfx_1_1_spout_device.html#ab3509b9db476a3919f2ff22e3c9ad9a3":[11,0,13,49,1],
 "class_gfx_1_1_spout_protocol_factory.html":[11,0,13,51],
 "class_gfx_1_1_spout_renderer.html":[11,0,13,52],
-"class_gfx_1_1_spout_renderer.html#a266e571747825aa404fad7933a5804ea":[11,0,13,52,0],
-"class_gfx_1_1_spout_renderer.html#ae248a134b9296ec0a0f2378ff18bd003":[11,0,13,52,1],
+"class_gfx_1_1_spout_renderer.html#aa4cf05e547a7bf7f53acc405a0ae7b09":[11,0,13,52,0],
 "class_gfx_1_1_spout_settings_widget.html":[11,0,13,53],
 "class_gfx_1_1_spout_settings_widget.html#a076b3ad02476b09a03795798ffc61b5c":[11,0,13,53,2],
 "class_gfx_1_1_spout_settings_widget.html#a267e86ad2a851504517b4a78373733cd":[11,0,13,53,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX14 =
 "class_gfx_1_1spout__device.html#a2037a3d82c8cbb5bd6b26e2a0c6ba880":[11,0,13,48,2],
 "class_gfx_1_1spout__device.html#a8cb9b32bdc3c822371f00192be752ff6":[11,0,13,48,1],
 "class_gfx_1_1spout__device.html#ab5de6696566d6e8f768fbb0aca7afd67":[11,0,13,48,0],
-"class_gradient_1_1_change_gradient.html":[11,0,14,1]
+"class_gradient_1_1_change_gradient.html":[11,0,14,1],
+"class_gradient_1_1_change_gradient.html#a39b2ac06fe2e40739d579c50369899e2":[11,0,14,1,1],
+"class_gradient_1_1_change_gradient.html#a8e45dbb9c8a6cf100316afcbfdc6fc71":[11,0,14,1,0]
 };

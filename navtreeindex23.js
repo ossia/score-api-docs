@@ -1,7 +1,5 @@
 var NAVTREEINDEX23 =
 {
-"class_process_1_1_magnetism_adjuster.html#aff5c102962f1e51c209001dca7ace84d":[11,0,35,59,0],
-"class_process_1_1_meta_context_menu.html":[11,0,35,60],
 "class_process_1_1_midi_inlet.html":[11,0,35,61],
 "class_process_1_1_midi_inlet.html#a44cbf7e981720e921ac3713a74657d94":[11,0,35,61,0],
 "class_process_1_1_midi_inlet.html#a5498cfc6656ad69227734bce0a9d18e6":[11,0,35,61,4],
@@ -249,5 +247,7 @@ var NAVTREEINDEX23 =
 "class_process_1_1_script_dialog.html#a8c2a5b38f731fe12e0dfaeef1a07b482":[11,0,35,89,4],
 "class_process_1_1_script_dialog.html#aa9fb90f1300726d1694e99d773de3f24":[11,0,35,89,2],
 "class_process_1_1_script_dialog.html#af349e6231806aff8aa0fa0dd04dea363":[11,0,35,89,5],
-"class_process_1_1_set_control_outlet_value.html":[11,0,35,90]
+"class_process_1_1_set_control_outlet_value.html":[11,0,35,90],
+"class_process_1_1_set_control_outlet_value.html#a0f9dad46b4b513d3185c50c5cf1e1a43":[11,0,35,90,0],
+"class_process_1_1_set_control_outlet_value.html#a2faca2530e8ae785fef803257d5ca520":[11,0,35,90,1]
 };
