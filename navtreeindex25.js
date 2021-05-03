@@ -1,5 +1,12 @@
 var NAVTREEINDEX25 =
 {
+"class_protocols_1_1_w_s_protocol_settings_widget.html#a6f065fc0b22efcc5d103f79f7ea895a7":[11,0,36,62,3],
+"class_protocols_1_1_w_s_protocol_settings_widget.html#aa4b9ec2452f8ab8dda02c8c4365e93b0":[11,0,36,62,4],
+"class_protocols_1_1_w_s_protocol_settings_widget.html#af3ef13cd37a34a9e3c406242b0b54ce2":[11,0,36,62,7],
+"class_protocols_1_1_wiimote_device.html":[11,0,36,56],
+"class_protocols_1_1_wiimote_device.html#a3c0a579e602687da923c4211e8926518":[11,0,36,56,1],
+"class_protocols_1_1_wiimote_device.html#aa5a79d0862d4d8b1b5ef0856ea55b6c7":[11,0,36,56,3],
+"class_protocols_1_1_wiimote_device.html#ac8025a812238d8969041bc98c431ce24":[11,0,36,56,0],
 "class_protocols_1_1_wiimote_device.html#aed0842356ecd92e92105a45e093bf53d":[11,0,36,56,2],
 "class_protocols_1_1_wiimote_protocol_factory.html":[11,0,36,57],
 "class_protocols_1_1_wiimote_protocol_settings_widget.html":[11,0,36,58],
@@ -242,12 +249,5 @@ var NAVTREEINDEX25 =
 "class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#a2f56ef2e466cd6c563293bdc9053057f":[11,0,41,11,11],
 "class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#a4ab198d4c5e22723ab6f56b74c66d16f":[11,0,41,11,12],
 "class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#a5e5a2fd1d2ec7e93b596799c451d1837":[11,0,41,11,10],
-"class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#a8995ae1891d97db397d09d46ef7136fc":[11,0,41,11,8],
-"class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#a9260357eb5505a1df850381767d1ff13":[11,0,41,11,1],
-"class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#adb89c16b967763987ed3c5875c11d9c7":[11,0,41,11,4],
-"class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#ae8cee88f530a08d81abaaec23c08451d":[11,0,41,11,6],
-"class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#aebd8ff10c9adcfceeb6746b88daf1a3e":[11,0,41,11,7],
-"class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#af03495c725f54ecff7311091132d2e93":[11,0,41,11,5],
-"class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#af4404ca7b16c89ac29baee752c959d1a":[11,0,41,11,0],
-"class_scenario_1_1_base_scenario_displayed_elements_tool_palette_factory.html":[11,0,41,12]
+"class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#a8995ae1891d97db397d09d46ef7136fc":[11,0,41,11,8]
 };

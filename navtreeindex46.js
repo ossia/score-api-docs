@@ -1,5 +1,12 @@
 var NAVTREEINDEX46 =
 {
+"lib_2core_2documentation_2commands_8hpp_source.html":[12,0,155],
+"lib_2core_2presenter_2_presenter_8hpp_source.html":[12,0,845],
+"lib_2core_2settings_2_settings_8hpp_source.html":[12,0,1108],
+"lib_2core_2view_2_window_8hpp_source.html":[12,0,1300],
+"lib_2score_2model_2_component_8hpp_source.html":[12,0,177],
+"lib_2score_2plugins_2documentdelegate_2plugin_2_document_plugin_8hpp_source.html":[12,0,310],
+"lib_2score_2tools_2_metadata_8hpp_source.html":[12,0,648],
 "lib_2score_2widgets_2_control_widgets_8hpp_source.html":[12,0,197],
 "lib_2score_2widgets_2_selection_button_8hpp_source.html":[12,0,1077],
 "lv2__atom__helpers_8hpp_source.html":[12,0,611],
@@ -242,12 +249,5 @@ var NAVTREEINDEX46 =
 "struct_array_serializer.html":[11,0,61],
 "struct_atom_buffer.html":[11,0,62],
 "struct_atom_buffer.html#a21269819a0af1cda603c0bd57403b197":[11,0,62,1],
-"struct_atom_buffer.html#a22ce175aec4abbc2be02031212ba3814":[11,0,62,2],
-"struct_atom_buffer.html#a4b235ae85d608b8f7a0cd74c7e15afdd":[11,0,62,4],
-"struct_atom_buffer.html#a56d0fa21194799d09277c4ec05ac2b30":[11,0,62,7],
-"struct_atom_buffer.html#a56d985b3af09bbe4f5b083676b8cde7e":[11,0,62,5],
-"struct_atom_buffer.html#a825c90bc1f9a1cf027dc2e9c0352ff1f":[11,0,62,3],
-"struct_atom_buffer.html#a83672d9abb1cb3cf352dbf62aa69e139":[11,0,62,0],
-"struct_atom_buffer.html#af2e5947c5458b4b8184c3becc05d238b":[11,0,62,6],
-"struct_audio_1_1_audio_preview_executor_1_1sound.html":[11,0,0,5,0]
+"struct_atom_buffer.html#a22ce175aec4abbc2be02031212ba3814":[11,0,62,2]
 };

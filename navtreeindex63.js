@@ -1,5 +1,12 @@
 var NAVTREEINDEX63 =
 {
+"structscore_1_1_focus_facade.html#a8c59bdcb55b3a842090e31e7651aa201":[11,0,42,98,0],
+"structscore_1_1_focus_manager.html":[11,0,42,99],
+"structscore_1_1_focus_manager.html#a07515b3ef188b77213222784e2421b22":[11,0,42,99,0],
+"structscore_1_1_focus_manager.html#a0c9c5fa9f23694874dd7475342a613ab":[11,0,42,99,1],
+"structscore_1_1_focus_manager.html#a0d75030005720a4461fbe0a5708a8665":[11,0,42,99,2],
+"structscore_1_1_focus_manager.html#ac4fe93ec76a7cbadd7516e3a35413655":[11,0,42,99,3],
+"structscore_1_1_g_l_capabilities.html":[11,0,42,106],
 "structscore_1_1_g_l_capabilities.html#a407553bf7a4d4c97f62cd01e9f729702":[11,0,42,106,0],
 "structscore_1_1_g_l_capabilities.html#a6d1b4eff16e35ed998c66d3045f357b5":[11,0,42,106,3],
 "structscore_1_1_g_l_capabilities.html#ab4a14e1061b7f11efa2b30a7ef9f27f1":[11,0,42,106,2],
@@ -242,12 +249,5 @@ var NAVTREEINDEX63 =
 "structscore_1_1_string_constants.html#a4d63c76fec3fdef2bc4cb26d82437e6d":[11,0,42,239,53],
 "structscore_1_1_string_constants.html#a5561ce310d1705052505d3b096b2428b":[11,0,42,239,24],
 "structscore_1_1_string_constants.html#a55dba134f3df2b4dbfe55568154d0f88":[11,0,42,239,68],
-"structscore_1_1_string_constants.html#a5ac750ce606885bf3a285934778501bd":[11,0,42,239,22],
-"structscore_1_1_string_constants.html#a5ff694aad9e8b59444578a8a63806618":[11,0,42,239,102],
-"structscore_1_1_string_constants.html#a65ca102cb201ea68e7468705c6363ac6":[11,0,42,239,50],
-"structscore_1_1_string_constants.html#a66c2b1a1733f6fad73417decf02df5f5":[11,0,42,239,20],
-"structscore_1_1_string_constants.html#a66da97056f342d58d32d26789503f2ce":[11,0,42,239,38],
-"structscore_1_1_string_constants.html#a68d443de1a345e56f3170808a9d97d5a":[11,0,42,239,37],
-"structscore_1_1_string_constants.html#a69f75ddebb0d3132611bded165b61ea5":[11,0,42,239,10],
-"structscore_1_1_string_constants.html#a6c5243c13b699324a339f126c47bc8d8":[11,0,42,239,77]
+"structscore_1_1_string_constants.html#a5ac750ce606885bf3a285934778501bd":[11,0,42,239,22]
 };

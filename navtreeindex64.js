@@ -1,5 +1,12 @@
 var NAVTREEINDEX64 =
 {
+"structscore_1_1_string_constants.html#a5ff694aad9e8b59444578a8a63806618":[11,0,42,239,102],
+"structscore_1_1_string_constants.html#a65ca102cb201ea68e7468705c6363ac6":[11,0,42,239,50],
+"structscore_1_1_string_constants.html#a66c2b1a1733f6fad73417decf02df5f5":[11,0,42,239,20],
+"structscore_1_1_string_constants.html#a66da97056f342d58d32d26789503f2ce":[11,0,42,239,38],
+"structscore_1_1_string_constants.html#a68d443de1a345e56f3170808a9d97d5a":[11,0,42,239,37],
+"structscore_1_1_string_constants.html#a69f75ddebb0d3132611bded165b61ea5":[11,0,42,239,10],
+"structscore_1_1_string_constants.html#a6c5243c13b699324a339f126c47bc8d8":[11,0,42,239,77],
 "structscore_1_1_string_constants.html#a6cf1ed1868a82f43f86d28ae37bf5a21":[11,0,42,239,58],
 "structscore_1_1_string_constants.html#a6d75cad2ed60a7610bc7236ac766aca7":[11,0,42,239,40],
 "structscore_1_1_string_constants.html#a6e928027f31b53991526f7b33a304ffe":[11,0,42,239,49],
@@ -242,12 +249,5 @@ var NAVTREEINDEX64 =
 "structscore_1_1uuids_1_1uuid.html#afdd1e9299ca9402dfd9de3676fecd14c":[11,0,42,6,1,0],
 "structserialization__tag.html":[11,0,383],
 "structserialization__tag.html#a244b6080c19feeb3d659035e3e6583c2":[11,0,383,0],
-"structserialization__tag_3_01_t_00_01std_1_1enable__if__t_3_01std_1_1is__enum_3_01_t_01_4_1_1value_01_4_01_4.html":[11,0,384],
-"structserialization__tag_3_01_t_00_01std_1_1enable__if__t_3_01std_1_1is__enum_3_01_t_01_4_1_1value_01_4_01_4.html#a7af24c36573143183bf12a86d59fb91c":[11,0,384,0],
-"structstd_1_1hash_3_01_device_1_1_full_address_settings_01_4.html":[11,0,47,0],
-"structstd_1_1hash_3_01_device_1_1_full_address_settings_01_4.html#a0d2972ddfb63ca49382b7baf94f184a5":[11,0,47,0,0],
-"structstd_1_1hash_3_01_gfx_1_1_shader_program_01_4.html":[11,0,47,1],
-"structstd_1_1hash_3_01_gfx_1_1_shader_program_01_4.html#ad229a4c0f5847bb29098953e98111886":[11,0,47,1,0],
-"structstd_1_1hash_3_01_id_3_01tag_01_4_01_4.html":[11,0,47,2],
-"structstd_1_1hash_3_01_id_3_01tag_01_4_01_4.html#ac90d6abf7262aba2a922f9c41a02a9c6":[11,0,47,2,0]
+"structserialization__tag_3_01_t_00_01std_1_1enable__if__t_3_01std_1_1is__enum_3_01_t_01_4_1_1value_01_4_01_4.html":[11,0,384]
 };

@@ -1,5 +1,12 @@
 var NAVTREEINDEX65 =
 {
+"structserialization__tag_3_01_t_00_01std_1_1enable__if__t_3_01std_1_1is__enum_3_01_t_01_4_1_1value_01_4_01_4.html#a7af24c36573143183bf12a86d59fb91c":[11,0,384,0],
+"structstd_1_1hash_3_01_device_1_1_full_address_settings_01_4.html":[11,0,47,0],
+"structstd_1_1hash_3_01_device_1_1_full_address_settings_01_4.html#a0d2972ddfb63ca49382b7baf94f184a5":[11,0,47,0,0],
+"structstd_1_1hash_3_01_gfx_1_1_shader_program_01_4.html":[11,0,47,1],
+"structstd_1_1hash_3_01_gfx_1_1_shader_program_01_4.html#ad229a4c0f5847bb29098953e98111886":[11,0,47,1,0],
+"structstd_1_1hash_3_01_id_3_01tag_01_4_01_4.html":[11,0,47,2],
+"structstd_1_1hash_3_01_id_3_01tag_01_4_01_4.html#ac90d6abf7262aba2a922f9c41a02a9c6":[11,0,47,2,0],
 "structstd_1_1hash_3_01_object_identifier_01_4.html":[11,0,47,3],
 "structstd_1_1hash_3_01_object_identifier_01_4.html#a138f81a4cd7760734e9f48859e902cb6":[11,0,47,3,0],
 "structstd_1_1hash_3_01_object_path_01_4.html":[11,0,47,4],

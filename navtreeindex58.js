@@ -1,5 +1,12 @@
 var NAVTREEINDEX58 =
 {
+"struct_scenario_1_1_categorized_addresses.html":[11,0,41,16],
+"struct_scenario_1_1_categorized_addresses.html#a0790d083c91b4badc474d004e62bfba7":[11,0,41,16,10],
+"struct_scenario_1_1_categorized_addresses.html#a09c6edac1385b68aa98df636ee5a2b45":[11,0,41,16,16],
+"struct_scenario_1_1_categorized_addresses.html#a0e733744385d43bf5988d3560d7fc1d8":[11,0,41,16,21],
+"struct_scenario_1_1_categorized_addresses.html#a1acc9e4c0f14eceadbfdaf02feb01342":[11,0,41,16,5],
+"struct_scenario_1_1_categorized_addresses.html#a3aaab2fcd42e668e1cddadcf026b9a91":[11,0,41,16,20],
+"struct_scenario_1_1_categorized_addresses.html#a43a631c488fe416f11c41daa229c1fda":[11,0,41,16,8],
 "struct_scenario_1_1_categorized_addresses.html#a4506010e9d82df23a6bc91b2a8c0b25e":[11,0,41,16,6],
 "struct_scenario_1_1_categorized_addresses.html#a52ea8cf59307696ce15409898f730e1e":[11,0,41,16,18],
 "struct_scenario_1_1_categorized_addresses.html#a5bcca91286116db4ff5d830d8974565e":[11,0,41,16,11],
@@ -242,12 +249,5 @@ var NAVTREEINDEX58 =
 "struct_scenario_1_1_slot_id.html#a44e12782ffcbf425604d466da55ae330":[11,0,41,246,7],
 "struct_scenario_1_1_slot_id.html#a550ef00b371f6ed20836aec07ab00eb2":[11,0,41,246,0],
 "struct_scenario_1_1_slot_id.html#a7f38a1ba2845791554ae9b37a706b033":[11,0,41,246,5],
-"struct_scenario_1_1_slot_id.html#a9346f9df2848b565cb34c97e0e872dfa":[11,0,41,246,1],
-"struct_scenario_1_1_slot_id.html#ad423a74735e2e046d68c94448036b502":[11,0,41,246,2],
-"struct_scenario_1_1_slot_id.html#aeff67447daef306cd935eaa354de0f67":[11,0,41,246,9],
-"struct_scenario_1_1_slot_path.html":[11,0,41,248],
-"struct_scenario_1_1_slot_path.html#a258cf8a4ef5337bc693cd05d35ba5a41":[11,0,41,248,5],
-"struct_scenario_1_1_slot_path.html#a291974864420e956a9288d7878036117":[11,0,41,248,4],
-"struct_scenario_1_1_slot_path.html#a37d9da2e8b3c8b9f6533f573e9df59ee":[11,0,41,248,12],
-"struct_scenario_1_1_slot_path.html#a917a863a1aa2dfcf6efea3a3042277c3":[11,0,41,248,8]
+"struct_scenario_1_1_slot_id.html#a9346f9df2848b565cb34c97e0e872dfa":[11,0,41,246,1]
 };

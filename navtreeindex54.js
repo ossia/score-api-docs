@@ -1,5 +1,12 @@
 var NAVTREEINDEX54 =
 {
+"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a1e078ee8d88577699b19b5ae39ec2188":[11,0,30,14,0,1,11],
+"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a26508726bd35c767b83a9e2d8984cf49":[11,0,30,14,0,1,0],
+"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a347b7d62230bc14ee1991fb600203d49":[11,0,30,14,0,1,3],
+"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a4f069fd52bd0659c8ad45c47e4e970fc":[11,0,30,14,0,1,12],
+"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a63c4cdabbe50eaaf1d07fe137994e8b6":[11,0,30,14,0,1,9],
+"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a7ec0709fcfa0c0ada73da5ca9afc4d89":[11,0,30,14,0,1,10],
+"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a9be26f6347fc818f9f27be0f4c8e5391":[11,0,30,14,0,1,4],
 "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a9e54f4f70e4dbd66306e0ec92c5436ca":[11,0,30,14,0,1,5],
 "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#aa952716083920e7367e6e8464504a9a9":[11,0,30,14,0,1,1],
 "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#abeec5675edf233c6d96512a609c483ca":[11,0,30,14,0,1,8],
@@ -242,12 +249,5 @@ var NAVTREEINDEX54 =
 "struct_process_1_1_context.html#ab99ea45db27659fdfdca64907fe75931":[11,0,35,12,1],
 "struct_process_1_1_control_message.html":[11,0,35,14],
 "struct_process_1_1_control_message.html#a88feb3aadc5557e2adc7ea6d7f50edb7":[11,0,35,14,0],
-"struct_process_1_1_control_message.html#a9a83dfd80878bd603e2f9b7a789d59ac":[11,0,35,14,1],
-"struct_process_1_1_control_message.html#aa6cb328892e65910050436469c198eea":[11,0,35,14,2],
-"struct_process_1_1_control_setup.html":[11,0,35,16],
-"struct_process_1_1_control_setup.html#a20cf97ff1ab576747d5c504cc5356062":[11,0,35,16,4],
-"struct_process_1_1_control_setup.html#a94bab3be048d189a89fb2dc93c96f763":[11,0,35,16,0],
-"struct_process_1_1_control_setup.html#a9bf51d3923572302660538704dd042ad":[11,0,35,16,3],
-"struct_process_1_1_control_setup.html#abe02bbfcefe5836cafdd4d46d65c7f12":[11,0,35,16,2],
-"struct_process_1_1_control_setup.html#aecc2c4ee191343419688e578b290cf1c":[11,0,35,16,1]
+"struct_process_1_1_control_message.html#a9a83dfd80878bd603e2f9b7a789d59ac":[11,0,35,14,1]
 };

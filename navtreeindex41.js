@@ -1,5 +1,12 @@
 var NAVTREEINDEX41 =
 {
+"classscore_1_1_log_messages_item_model.html#a656864dc3ff9e0397e1bd1454aff51c6":[11,0,42,137,4],
+"classscore_1_1_log_messages_item_model.html#a67cb7170f984506408558874df8f2064":[11,0,42,137,9],
+"classscore_1_1_log_messages_item_model.html#a72e163e17d0ee1b5f5d6055c363ebea6":[11,0,42,137,11],
+"classscore_1_1_log_messages_item_model.html#a9732d75b8bc30d2f1087210fb65e4a90":[11,0,42,137,1],
+"classscore_1_1_log_messages_item_model.html#aa3f6869f03632e557063022366af8207":[11,0,42,137,6],
+"classscore_1_1_log_messages_item_model.html#af614876f881b0c0daa11ce032ead02ed":[11,0,42,137,8],
+"classscore_1_1_log_messages_item_model.html#afb2b42d0366eb6fab700597592bcb5dc":[11,0,42,137,7],
 "classscore_1_1_margin_less.html":[11,0,42,138],
 "classscore_1_1_margin_less.html#a6df9a5a12de334906fe90d6f353d2d80":[11,0,42,138,0],
 "classscore_1_1_margin_less.html#aade56a3e97236fb13250a307c5115239":[11,0,42,138,1],
@@ -242,12 +249,5 @@ var NAVTREEINDEX41 =
 "classscore_1_1_q_graphics_knob.html#a8b679e54dfd536a31b26a7f9713bc241":[11,0,42,183,12],
 "classscore_1_1_q_graphics_knob.html#a99bbef6b010d28c6723cca6083f6a601":[11,0,42,183,7],
 "classscore_1_1_q_graphics_knob.html#a9b6975a6ecc62ce0e27ba485788c8522":[11,0,42,183,3],
-"classscore_1_1_q_graphics_knob.html#aa36395e04be7d6f7171dcd890c1f691c":[11,0,42,183,10],
-"classscore_1_1_q_graphics_knob.html#acf9482de1494d6c88048d2634db7c98b":[11,0,42,183,1],
-"classscore_1_1_q_graphics_knob.html#ad0e4a0d2541d899bfd009cfb90c1bd9d":[11,0,42,183,5],
-"classscore_1_1_q_graphics_knob.html#ad2e8c230512067e021ac4e9f1bbf5930":[11,0,42,183,6],
-"classscore_1_1_q_graphics_knob.html#aeba76c310bd1aeb37732274bf2eced36":[11,0,42,183,11],
-"classscore_1_1_q_graphics_log_knob.html":[11,0,42,184],
-"classscore_1_1_q_graphics_log_knob.html#a28dfd4406acc339097ec1631e5c52a52":[11,0,42,184,7],
-"classscore_1_1_q_graphics_log_knob.html#a30d4742e30a07e94637065e5f756b79c":[11,0,42,184,5]
+"classscore_1_1_q_graphics_knob.html#aa36395e04be7d6f7171dcd890c1f691c":[11,0,42,183,10]
 };
