@@ -98,7 +98,7 @@ var searchData=
   ['executorguiupdate_3174',['ExecutorGuiUpdate',['../struct_control_1_1_executor_gui_update.html',1,'Control']]],
   ['explorationworker_3175',['ExplorationWorker',['../class_explorer_1_1_exploration_worker.html',1,'Explorer']]],
   ['explorationworkerwrapper_3176',['ExplorationWorkerWrapper',['../class_explorer_1_1_exploration_worker_wrapper.html',1,'Explorer']]],
-  ['explorersearchlineedit_3177',['ExplorerSearchLineEdit',['../struct_explorer_1_1_explorer_search_line_edit.html',1,'Explorer']]],
+  ['explorersearchlineedit_3177',['ExplorerSearchLineEdit',['../class_explorer_1_1_explorer_search_line_edit.html',1,'Explorer']]],
   ['exprdata_3178',['ExprData',['../struct_state_1_1_expr_data.html',1,'State']]],
   ['expressioneditorwidget_3179',['ExpressionEditorWidget',['../class_scenario_1_1_expression_editor_widget.html',1,'Scenario']]],
   ['expressionmenu_3180',['ExpressionMenu',['../class_scenario_1_1_expression_menu.html',1,'Scenario']]],

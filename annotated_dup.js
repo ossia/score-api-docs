@@ -189,7 +189,7 @@ var annotated_dup =
       [ "DoubleSliderValueWidget", "class_explorer_1_1_double_slider_value_widget.html", "class_explorer_1_1_double_slider_value_widget" ],
       [ "ExplorationWorker", "class_explorer_1_1_exploration_worker.html", "class_explorer_1_1_exploration_worker" ],
       [ "ExplorationWorkerWrapper", "class_explorer_1_1_exploration_worker_wrapper.html", "class_explorer_1_1_exploration_worker_wrapper" ],
-      [ "ExplorerSearchLineEdit", "struct_explorer_1_1_explorer_search_line_edit.html", "struct_explorer_1_1_explorer_search_line_edit" ],
+      [ "ExplorerSearchLineEdit", "class_explorer_1_1_explorer_search_line_edit.html", "class_explorer_1_1_explorer_search_line_edit" ],
       [ "LearnDialog", "class_explorer_1_1_learn_dialog.html", "class_explorer_1_1_learn_dialog" ],
       [ "ListeningHandler", "class_explorer_1_1_listening_handler.html", "class_explorer_1_1_listening_handler" ],
       [ "ListeningHandlerFactory", "class_explorer_1_1_listening_handler_factory.html", null ],
@@ -897,7 +897,7 @@ var annotated_dup =
       [ "Window", "classvst_1_1_window.html", "classvst_1_1_window" ]
     ] ],
     [ "vst3", null, [
-      [ "ApplicationPlugin", "structvst3_1_1_application_plugin.html", "structvst3_1_1_application_plugin" ],
+      [ "ApplicationPlugin", "classvst3_1_1_application_plugin.html", "classvst3_1_1_application_plugin" ],
       [ "AvailablePlugin", "structvst3_1_1_available_plugin.html", "structvst3_1_1_available_plugin" ],
       [ "BusActivationVisitor", "structvst3_1_1_bus_activation_visitor.html", "structvst3_1_1_bus_activation_visitor" ],
       [ "ControlInlet", "classvst3_1_1_control_inlet.html", "classvst3_1_1_control_inlet" ],

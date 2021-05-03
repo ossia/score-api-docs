@@ -2,7 +2,6 @@ var struct_rendered_i_s_f_node =
 [
     [ "RenderedISFNode", "struct_rendered_i_s_f_node.html#acdd0bafa4082349ae31b5a411b1dc89c", null ],
     [ "~RenderedISFNode", "struct_rendered_i_s_f_node.html#a16b53456083bae6f4c57f9e1c712b824", null ],
-    [ "buildPassPipeline", "struct_rendered_i_s_f_node.html#a04d32239e5c3381f70a1d79c9fa4bda4", null ],
     [ "createPass", "struct_rendered_i_s_f_node.html#a5896c531c4f6b98c006e8b187ef4b8ce", null ],
     [ "init", "struct_rendered_i_s_f_node.html#ae39d53728de2879ada3f18b2e0083770", null ],
     [ "initPasses", "struct_rendered_i_s_f_node.html#a6ab25381be8c30de3d8bdafbf7d0448e", null ],

@@ -26,8 +26,8 @@ var NAVTREEINDEX13 =
 "class_explorer_1_1_device_explorer_view.html#aeefb7df573c5536a2b7411bef58df061":[11,0,10,29,5],
 "class_explorer_1_1_device_explorer_widget.html":[11,0,10,30],
 "class_explorer_1_1_device_explorer_widget.html#a2392f606a0cc7f15fcc945ddb6675141":[11,0,10,30,4],
+"class_explorer_1_1_device_explorer_widget.html#a2912940df3a1c533c140aa3f8a341fa0":[11,0,10,30,10],
 "class_explorer_1_1_device_explorer_widget.html#a3c5a6b18e6915c7db2b2ff87aaa9936e":[11,0,10,30,1],
-"class_explorer_1_1_device_explorer_widget.html#a44cbcba7bdd4b9d4c98f28ce79cdf924":[11,0,10,30,10],
 "class_explorer_1_1_device_explorer_widget.html#a4c638e3c61cebf10f56404eaf523edfb":[11,0,10,30,3],
 "class_explorer_1_1_device_explorer_widget.html#a72c94cb2e17f0bd91e11a80567622b7d":[11,0,10,30,5],
 "class_explorer_1_1_device_explorer_widget.html#a80c05d74aef058a657a201a91a809edd":[11,0,10,30,7],
@@ -50,6 +50,10 @@ var NAVTREEINDEX13 =
 "class_explorer_1_1_exploration_worker_wrapper.html#a663db84c3669cd2c577e025ce34de854":[11,0,10,33,2],
 "class_explorer_1_1_exploration_worker_wrapper.html#a8960213c4873e4791a0223c204bddec3":[11,0,10,33,0],
 "class_explorer_1_1_exploration_worker_wrapper.html#ab3af1d94b85e658049310260ac65f5c9":[11,0,10,33,1],
+"class_explorer_1_1_explorer_search_line_edit.html":[11,0,10,34],
+"class_explorer_1_1_explorer_search_line_edit.html#ad0f81d48ac75bb8938a2eb804777c9c1":[11,0,10,34,0],
+"class_explorer_1_1_explorer_search_line_edit.html#af635dfb4e013dab3f968097175d1d5e5":[11,0,10,34,2],
+"class_explorer_1_1_explorer_search_line_edit.html#afe866c4632d6a9c85ebc1041daef4408":[11,0,10,34,1],
 "class_explorer_1_1_learn_dialog.html":[11,0,10,35],
 "class_explorer_1_1_learn_dialog.html#a139575351f546471a4c1e7d4d5a605bc":[11,0,10,35,0],
 "class_explorer_1_1_learn_dialog.html#a25795b13ca8b2d2f0ea80bdb45b8ee67":[11,0,10,35,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX13 =
 "class_gfx_1_1_gfx_input_device.html":[11,0,13,28],
 "class_gfx_1_1_gfx_input_device.html#a2128cd3c2031a3e23ae78bbfa3a4fdfe":[11,0,13,28,2],
 "class_gfx_1_1_gfx_input_device.html#a345e41a76915ee02e40e6dc4528ab4bd":[11,0,13,28,4],
-"class_gfx_1_1_gfx_input_device.html#a43099616fb4d0391728b722eb1635b1c":[11,0,13,28,7],
-"class_gfx_1_1_gfx_input_device.html#a549ab80550ca1cfeefe4b29ab613466e":[11,0,13,28,1],
-"class_gfx_1_1_gfx_input_device.html#a68b815e6b767589fff8056f34b25b874":[11,0,13,28,3],
-"class_gfx_1_1_gfx_input_device.html#ac21a9009092d502edfc8addd28c725c2":[11,0,13,28,8],
-"class_gfx_1_1_gfx_input_device.html#ac7bda7fb1f1777b5ff06d243f7815f60":[11,0,13,28,0]
+"class_gfx_1_1_gfx_input_device.html#a43099616fb4d0391728b722eb1635b1c":[11,0,13,28,7]
 };

@@ -10,5 +10,5 @@ var class_explorer_1_1_device_explorer_widget =
     [ "setModel", "class_explorer_1_1_device_explorer_widget.html#a80c05d74aef058a657a201a91a809edd", null ],
     [ "sourceIndex", "class_explorer_1_1_device_explorer_widget.html#adc7902a5c8dba921693478608ddcddf3", null ],
     [ "view", "class_explorer_1_1_device_explorer_widget.html#ac88a5202e071a0c0aeeaa91282599be1", null ],
-    [ "ExplorerSearchLineEdit", "class_explorer_1_1_device_explorer_widget.html#a44cbcba7bdd4b9d4c98f28ce79cdf924", null ]
+    [ "ExplorerSearchLineEdit", "class_explorer_1_1_device_explorer_widget.html#a2912940df3a1c533c140aa3f8a341fa0", null ]
 ];

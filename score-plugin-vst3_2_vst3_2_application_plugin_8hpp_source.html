@@ -135,21 +135,21 @@ $(document).ready(function(){initNavTree('score-plugin-vst3_2_vst3_2_application
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">bool</span> isValid{};</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structvst3_1_1_host_app.html">   38</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structvst3_1_1_host_app.html">HostApp</a> : <span class="keyword">public</span> Steinberg::Vst::IHostApplication</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structvst3_1_1_host_app.html">   38</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structvst3_1_1_host_app.html">HostApp</a> final : <span class="keyword">public</span> Steinberg::Vst::IHostApplication</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  Steinberg::Vst::PlugInterfaceSupport m_support;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="structvst3_1_1_host_app.html">HostApp</a>() { }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  Steinberg::tresult getName(Steinberg::Vst::String128 name)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="structvst3_1_1_host_app.html">HostApp</a>() { }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  Steinberg::tresult getName(Steinberg::Vst::String128 name)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">  </span>{</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    Steinberg::String str(<span class="stringliteral">&quot;ossia score&quot;</span>);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    str.copyTo16(name, 0, 127);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> Steinberg::kResultTrue;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  }</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  Steinberg::tresult</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  createInstance(Steinberg::TUID cid, Steinberg::TUID _iid, <span class="keywordtype">void</span>** obj)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  createInstance(Steinberg::TUID cid, Steinberg::TUID _iid, <span class="keywordtype">void</span>** obj)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">  </span>{</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">using namespace </span>Steinberg;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">using namespace </span>Steinberg::Vst;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    FUID classID(FUID::fromTUID(cid));</div>
@@ -170,8 +170,8 @@ $(document).ready(function(){initNavTree('score-plugin-vst3_2_vst3_2_application
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">return</span> kResultFalse;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  }</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  Steinberg::tresult queryInterface(<span class="keyword">const</span> <span class="keywordtype">char</span>* _iid, <span class="keywordtype">void</span>** obj)</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  Steinberg::tresult queryInterface(<span class="keyword">const</span> <span class="keywordtype">char</span>* _iid, <span class="keywordtype">void</span>** obj)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">  </span>{</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">using namespace </span>Steinberg;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">using namespace </span>Steinberg::Vst;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    QUERY_INTERFACE(_iid, obj, FUnknown::iid, IHostApplication)</div>
@@ -184,18 +184,18 @@ $(document).ready(function(){initNavTree('score-plugin-vst3_2_vst3_2_application
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> kResultFalse;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  Steinberg::uint32 addRef() { <span class="keywordflow">return</span> 1; }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  Steinberg::uint32 addRef()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> 1; }</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  Steinberg::uint32 release() { <span class="keywordflow">return</span> 1; }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  Steinberg::uint32 release()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> 1; }</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="structvst3_1_1_application_plugin.html">   92</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structvst3_1_1_application_plugin.html">ApplicationPlugin</a></div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classvst3_1_1_application_plugin.html">   92</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvst3_1_1_application_plugin.html">ApplicationPlugin</a></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    : <span class="keyword">public</span> QObject</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    , <span class="keyword">public</span> <a class="code" href="classscore_1_1_application_plugin.html">score::ApplicationPlugin</a></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  W_OBJECT(<a class="code" href="structvst3_1_1_application_plugin.html">ApplicationPlugin</a>)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  W_OBJECT(<a class="code" href="classvst3_1_1_application_plugin.html">ApplicationPlugin</a>)</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <a class="code" href="structvst3_1_1_application_plugin.html">ApplicationPlugin</a>(<span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp; ctx);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <a class="code" href="classvst3_1_1_application_plugin.html">ApplicationPlugin</a>(<span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp; ctx);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">void</span> initialize() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
@@ -228,7 +228,7 @@ $(document).ready(function(){initNavTree('score-plugin-vst3_2_vst3_2_application
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astructvst3_1_1_application_plugin_html"><div class="ttname"><a href="structvst3_1_1_application_plugin.html">vst3::ApplicationPlugin</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst3/Vst3/ApplicationPlugin.hpp:92</div></div>
+<div class="ttc" id="aclassvst3_1_1_application_plugin_html"><div class="ttname"><a href="classvst3_1_1_application_plugin.html">vst3::ApplicationPlugin</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst3/Vst3/ApplicationPlugin.hpp:92</div></div>
 <div class="ttc" id="aclassscore_1_1_application_plugin_html"><div class="ttname"><a href="classscore_1_1_application_plugin.html">score::ApplicationPlugin</a></div><div class="ttdef"><b>Definition:</b> GUIApplicationPlugin.hpp:30</div></div>
 <div class="ttc" id="astructvst3_1_1vst__error_html"><div class="ttname"><a href="structvst3_1_1vst__error.html">vst3::vst_error</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst3/Vst3/ApplicationPlugin.hpp:20</div></div>
 <div class="ttc" id="astructvst3_1_1_available_plugin_html"><div class="ttname"><a href="structvst3_1_1_available_plugin.html">vst3::AvailablePlugin</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst3/Vst3/ApplicationPlugin.hpp:29</div></div>

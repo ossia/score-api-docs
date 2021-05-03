@@ -92,7 +92,7 @@ var hierarchy =
     ] ],
     [ "score::ApplicationPlugin", "classscore_1_1_application_plugin.html", [
       [ "LV2::ApplicationPlugin", "class_l_v2_1_1_application_plugin.html", null ],
-      [ "vst3::ApplicationPlugin", "structvst3_1_1_application_plugin.html", null ],
+      [ "vst3::ApplicationPlugin", "classvst3_1_1_application_plugin.html", null ],
       [ "vst::ApplicationPlugin", "classvst_1_1_application_plugin.html", null ]
     ] ],
     [ "score::ApplicationPlugin_QtInterface", "classscore_1_1_application_plugin___qt_interface.html", [
@@ -2367,7 +2367,7 @@ var hierarchy =
       ] ],
       [ "Scenario::TimeSignatureWidget", "class_scenario_1_1_time_signature_widget.html", null ],
       [ "score::SearchLineEdit", "classscore_1_1_search_line_edit.html", [
-        [ "Explorer::ExplorerSearchLineEdit", "struct_explorer_1_1_explorer_search_line_edit.html", null ],
+        [ "Explorer::ExplorerSearchLineEdit", "class_explorer_1_1_explorer_search_line_edit.html", null ],
         [ "Library::ItemModelFilterLineEdit", "struct_library_1_1_item_model_filter_line_edit.html", null ],
         [ "Scenario::SearchWidget", "class_scenario_1_1_search_widget.html", null ]
       ] ],
@@ -2901,7 +2901,7 @@ var hierarchy =
       [ "ToolPaletteInputDispatcher< Scenario::Tool, Scenario::ToolPalette, Process::LayerContext, Process::LayerView >", "class_tool_palette_input_dispatcher.html", null ],
       [ "UnitTests", "class_unit_tests.html", null ],
       [ "Video::VideoThumbnailer", "class_video_1_1_video_thumbnailer.html", null ],
-      [ "vst3::ApplicationPlugin", "structvst3_1_1_application_plugin.html", null ],
+      [ "vst3::ApplicationPlugin", "classvst3_1_1_application_plugin.html", null ],
       [ "vst3::LibraryHandler", "classvst3_1_1_library_handler.html", null ],
       [ "vst3::VSTGraphicsSlider", "classvst3_1_1_v_s_t_graphics_slider.html", null ],
       [ "vst::ApplicationPlugin", "classvst_1_1_application_plugin.html", null ],
