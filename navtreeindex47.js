@@ -1,5 +1,10 @@
 var NAVTREEINDEX47 =
 {
+"struct_array_entity_serializer.html":[11,0,60],
+"struct_array_serializer.html":[11,0,61],
+"struct_atom_buffer.html":[11,0,62],
+"struct_atom_buffer.html#a21269819a0af1cda603c0bd57403b197":[11,0,62,1],
+"struct_atom_buffer.html#a22ce175aec4abbc2be02031212ba3814":[11,0,62,2],
 "struct_atom_buffer.html#a4b235ae85d608b8f7a0cd74c7e15afdd":[11,0,62,4],
 "struct_atom_buffer.html#a56d0fa21194799d09277c4ec05ac2b30":[11,0,62,7],
 "struct_atom_buffer.html#a56d985b3af09bbe4f5b083676b8cde7e":[11,0,62,5],
@@ -244,10 +249,5 @@ var NAVTREEINDEX47 =
 "struct_control_1_1_out_control.html#a5d15fd0f8ad019e1705f20d237883d25":[11,0,3,31,2],
 "struct_control_1_1_out_control.html#aaa15707b5c252ab787d7e9e68f6deac6":[11,0,3,31,7],
 "struct_control_1_1_out_control.html#ae8ab7d5c5f83f521d29e309afb4b4b91":[11,0,3,31,3],
-"struct_control_1_1_port_setup.html":[11,0,3,32],
-"struct_control_1_1_r_g_b_a_edit.html":[11,0,3,33],
-"struct_control_1_1_r_g_b_a_edit.html#a413be71022e50ae4701d24ed3cb441df":[11,0,3,33,0],
-"struct_control_1_1_r_g_b_a_edit.html#aa58cd039d11c9db8eff713683280fcad":[11,0,3,33,1],
-"struct_control_1_1_r_g_b_a_edit.html#ab3a3f4b0f03a86a59bbb596c6117826c":[11,0,3,33,2],
-"struct_control_1_1_toggle.html":[11,0,3,38]
+"struct_control_1_1_port_setup.html":[11,0,3,32]
 };

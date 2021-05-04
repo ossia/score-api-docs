@@ -1,5 +1,10 @@
 var NAVTREEINDEX25 =
 {
+"class_protocols_1_1_w_s_protocol_settings_widget.html#a018eeca75a56e1eb4b81e84548900fe4":[11,0,36,62,5],
+"class_protocols_1_1_w_s_protocol_settings_widget.html#a1527216cf9d87d10dfbf3a4b2beee8c5":[11,0,36,62,1],
+"class_protocols_1_1_w_s_protocol_settings_widget.html#a40fa88d658d06b374dde0f5ec1e07cf9":[11,0,36,62,2],
+"class_protocols_1_1_w_s_protocol_settings_widget.html#a4ba3455db11804a01f8019bd39412960":[11,0,36,62,6],
+"class_protocols_1_1_w_s_protocol_settings_widget.html#a57bd97d0093b82ee30ea96e9131f585a":[11,0,36,62,0],
 "class_protocols_1_1_w_s_protocol_settings_widget.html#a6f065fc0b22efcc5d103f79f7ea895a7":[11,0,36,62,3],
 "class_protocols_1_1_w_s_protocol_settings_widget.html#aa4b9ec2452f8ab8dda02c8c4365e93b0":[11,0,36,62,4],
 "class_protocols_1_1_w_s_protocol_settings_widget.html#af3ef13cd37a34a9e3c406242b0b54ce2":[11,0,36,62,7],
@@ -244,10 +249,5 @@ var NAVTREEINDEX25 =
 "class_scenario_1_1_base_scenario_displayed_elements_provider.html#a76be1ecd4e82fadef9f5467a4da48cc7":[11,0,41,10,2],
 "class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html":[11,0,41,11],
 "class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#a06a70f1c4a8c19b8dba446eb34b14fd8":[11,0,41,11,3],
-"class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#a17f03dd06408f4aecc185354a1a92ba3":[11,0,41,11,9],
-"class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#a2c48f03a830c1471c7e524fa8c4fff47":[11,0,41,11,2],
-"class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#a2f56ef2e466cd6c563293bdc9053057f":[11,0,41,11,11],
-"class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#a4ab198d4c5e22723ab6f56b74c66d16f":[11,0,41,11,12],
-"class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#a5e5a2fd1d2ec7e93b596799c451d1837":[11,0,41,11,10],
-"class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#a8995ae1891d97db397d09d46ef7136fc":[11,0,41,11,8]
+"class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#a17f03dd06408f4aecc185354a1a92ba3":[11,0,41,11,9]
 };

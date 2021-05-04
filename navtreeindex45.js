@@ -1,5 +1,10 @@
 var NAVTREEINDEX45 =
 {
+"classvst3_1_1_v_s_t_control_port_factory.html#aca5a09c3214d85a4523f9219f4d15842":[11,0,51,20,1],
+"classvst3_1_1_v_s_t_effect_item.html":[11,0,51,22],
+"classvst3_1_1_v_s_t_effect_item.html#aa2def84df48dc246cade00dc0c6fb370":[11,0,51,22,1],
+"classvst3_1_1_v_s_t_effect_item.html#ad5898861ac0878bf44d57f28c6837295":[11,0,51,22,0],
+"classvst3_1_1_v_s_t_graphics_slider.html":[11,0,51,24],
 "classvst3_1_1_v_s_t_graphics_slider.html#a2721215d3d25187e2c1bf521eec308f3":[11,0,51,24,3],
 "classvst3_1_1_v_s_t_graphics_slider.html#a2fe9f8798906e2b3dcba6b112804068e":[11,0,51,24,6],
 "classvst3_1_1_v_s_t_graphics_slider.html#a3c8163ea53bb3a1bf7ca50fec2c7a96c":[11,0,51,24,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX45 =
 "globals.html":[12,1,0],
 "globals_defs.html":[12,1,2],
 "globals_type.html":[12,1,1],
-"hierarchy.html":[11,2],
-"imagenode_8hpp_source.html":[12,0,482],
-"index.html":[],
-"intro_8hpp_source.html":[12,0,536],
-"isf_8hpp_source.html":[12,0,541],
-"isfnode_8hpp_source.html":[12,0,542]
+"hierarchy.html":[11,2]
 };

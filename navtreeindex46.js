@@ -1,5 +1,10 @@
 var NAVTREEINDEX46 =
 {
+"imagenode_8hpp_source.html":[12,0,482],
+"index.html":[],
+"intro_8hpp_source.html":[12,0,536],
+"isf_8hpp_source.html":[12,0,541],
+"isfnode_8hpp_source.html":[12,0,542],
 "lib_2core_2documentation_2commands_8hpp_source.html":[12,0,155],
 "lib_2core_2presenter_2_presenter_8hpp_source.html":[12,0,845],
 "lib_2core_2settings_2_settings_8hpp_source.html":[12,0,1108],
@@ -15,8 +20,8 @@ var NAVTREEINDEX46 =
 "mvp_8hpp_source.html":[12,0,746],
 "namespace_automation.html":[10,0,0],
 "namespace_automation.html":[11,0,1],
-"namespace_curve.html":[11,0,5],
 "namespace_curve.html":[10,0,1],
+"namespace_curve.html":[11,0,5],
 "namespace_device.html":[11,0,7],
 "namespace_device.html":[10,0,2],
 "namespace_engine.html":[10,0,3],
@@ -24,8 +29,8 @@ var NAVTREEINDEX46 =
 "namespace_engine_1_1_network.html":[10,0,3,0],
 "namespace_execution.html":[10,0,4],
 "namespace_execution.html":[11,0,9],
-"namespace_inspector.html":[10,0,5],
 "namespace_inspector.html":[11,0,15],
+"namespace_inspector.html":[10,0,5],
 "namespace_local_tree.html":[10,0,6],
 "namespace_local_tree.html":[11,0,22],
 "namespace_plugin_loader.html":[10,0,7],
@@ -41,8 +46,8 @@ var NAVTREEINDEX46 =
 "namespacemembers_func.html":[10,1,1],
 "namespacemembers_type.html":[10,1,2],
 "namespaces.html":[10,0],
-"namespacescore.html":[11,0,42],
 "namespacescore.html":[10,0,10],
+"namespacescore.html":[11,0,42],
 "nodes_8hpp_source.html":[12,0,757],
 "pages.html":[],
 "phongnode_8hpp_source.html":[12,0,815],
@@ -244,10 +249,5 @@ var NAVTREEINDEX46 =
 "scoreinterfaces_8hpp_source.html":[12,0,1068],
 "serialization_8hpp_source.html":[12,0,1089],
 "shadercache_8hpp_source.html":[12,0,1119],
-"statemachines_8hpp_source.html":[12,0,1159],
-"struct_array_entity_serializer.html":[11,0,60],
-"struct_array_serializer.html":[11,0,61],
-"struct_atom_buffer.html":[11,0,62],
-"struct_atom_buffer.html#a21269819a0af1cda603c0bd57403b197":[11,0,62,1],
-"struct_atom_buffer.html#a22ce175aec4abbc2be02031212ba3814":[11,0,62,2]
+"statemachines_8hpp_source.html":[12,0,1159]
 };

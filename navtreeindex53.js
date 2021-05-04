@@ -1,5 +1,10 @@
 var NAVTREEINDEX53 =
 {
+"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a43aa5f92eadb4c55f03a71ecd61a7174":[11,0,25,3,12,2,6],
+"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a57229e47661f1c18bcc735886aca5152":[11,0,25,3,12,2,27],
+"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a5aac08cc6a93e5b36a882356083b481a":[11,0,25,3,12,2,9],
+"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a61d294ba9c52068f3e327163324e4cdb":[11,0,25,3,12,2,20],
+"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a709effb1c7e47693a2442fe084f0dd0e":[11,0,25,3,12,2,22],
 "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a768c145e626f9876e84c3fce96cfc5ca":[11,0,25,3,12,2,4],
 "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a7ce489429f2d3f94c1804b4224a09514":[11,0,25,3,12,2,24],
 "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a83122c383b16739edcff86ac607386ad":[11,0,25,3,12,2,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX53 =
 "struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html#ac91b0c48804dc9c05aeb6d1b25658728":[11,0,30,13,0,1,4],
 "struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html#af4b9696bb8d2d2e67a9016894ff8e861":[11,0,30,13,0,1,8],
 "struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html#af8bdbc5fff9a7d881e86fe2e71b2e76b":[11,0,30,13,0,1,7],
-"struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html#afe29e5eaa5c5c1682887e77860c1a7d6":[11,0,30,13,0,1,0],
-"struct_nodes_1_1_math_audio_generator_1_1_node.html":[11,0,30,14,0],
-"struct_nodes_1_1_math_audio_generator_1_1_node.html#a8dd5b5729e959fb579c93e4cd5e607d5":[11,0,30,14,0,2],
-"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_metadata.html":[11,0,30,14,0,0],
-"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html":[11,0,30,14,0,1],
-"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a0d275ab44052abe22fefebcccff48f86":[11,0,30,14,0,1,6]
+"struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html#afe29e5eaa5c5c1682887e77860c1a7d6":[11,0,30,13,0,1,0]
 };

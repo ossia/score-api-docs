@@ -26,6 +26,8 @@ var class_process_1_1_port =
     [ "setDescription", "class_process_1_1_port.html#a353fa7063080e23f0bb62f6591d17501", null ],
     [ "setExposed", "class_process_1_1_port.html#a38539ff4fbef1e904768196750b4db58", null ],
     [ "setName", "class_process_1_1_port.html#a939caf9ddc4667749fb0fd87c1ef5741", null ],
+    [ "setSettings", "class_process_1_1_port.html#a8b18c76c2fa8008fdbd9cf97e3e9f9e2", null ],
+    [ "settings", "class_process_1_1_port.html#a365371245bd416d4ddbe984a87932330", null ],
     [ "takeCables", "class_process_1_1_port.html#adc6898cbbd3739907b988c9ff6bc2cb9", null ],
     [ "type", "class_process_1_1_port.html#af4a0fb08aee0311b119f76a78916fe1c", null ],
     [ "visualDescription", "class_process_1_1_port.html#af6bc58f4b0c72bb9add69f4396e440db", null ],

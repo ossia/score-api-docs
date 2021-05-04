@@ -10,6 +10,7 @@ var namespace_process =
     [ "Cable", "class_process_1_1_cable.html", "class_process_1_1_cable" ],
     [ "CableData", "struct_process_1_1_cable_data.html", "struct_process_1_1_cable_data" ],
     [ "ChangePortAddress", "class_process_1_1_change_port_address.html", "class_process_1_1_change_port_address" ],
+    [ "ChangePortSettings", "class_process_1_1_change_port_settings.html", "class_process_1_1_change_port_settings" ],
     [ "ChooserToggle", "struct_process_1_1_chooser_toggle.html", "struct_process_1_1_chooser_toggle" ],
     [ "ComboBox", "struct_process_1_1_combo_box.html", "struct_process_1_1_combo_box" ],
     [ "Context", "struct_process_1_1_context.html", "struct_process_1_1_context" ],
