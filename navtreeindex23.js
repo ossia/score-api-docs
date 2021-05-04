@@ -1,5 +1,7 @@
 var NAVTREEINDEX23 =
 {
+"class_process_1_1_magnetism_adjuster.html":[11,0,35,60],
+"class_process_1_1_magnetism_adjuster.html#a28fb17bdfa1b8a53cffe167bff713f54":[11,0,35,60,6],
 "class_process_1_1_magnetism_adjuster.html#a4e9a58fcd7a4ed6e48abd63c0dbec710":[11,0,35,60,4],
 "class_process_1_1_magnetism_adjuster.html#a5590024af62c584a95d1c0bb27862343":[11,0,35,60,3],
 "class_process_1_1_magnetism_adjuster.html#a6446dd734c49ef44021d33f234bce7cc":[11,0,35,60,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX23 =
 "class_process_1_1_process_multi_script_edit_dialog.html":[11,0,35,87],
 "class_process_1_1_process_multi_script_edit_dialog.html#a0073c0177b6940cc00c1d1693186a3d7":[11,0,35,87,0],
 "class_process_1_1_process_multi_script_edit_dialog.html#a2ea14204cee711a5e929a01db9b53d85":[11,0,35,87,1],
-"class_process_1_1_process_multi_script_edit_dialog.html#a3d9f206b3c13f68dfd77582f3b199875":[11,0,35,87,2],
-"class_process_1_1_process_multi_script_edit_dialog.html#a85217463086f7905b5012971fdbc34bd":[11,0,35,87,3],
-"class_process_1_1_process_script_edit_dialog.html":[11,0,35,88]
+"class_process_1_1_process_multi_script_edit_dialog.html#a3d9f206b3c13f68dfd77582f3b199875":[11,0,35,87,2]
 };

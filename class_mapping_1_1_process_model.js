@@ -4,6 +4,7 @@ var class_mapping_1_1_process_model =
     [ "ProcessModel", "class_mapping_1_1_process_model.html#a32296f1268accba6fe7738e1c37e1eb1", null ],
     [ "ProcessModel", "class_mapping_1_1_process_model.html#ae854604fcc4bb1d08b710e6a5ae4aca1", null ],
     [ "~ProcessModel", "class_mapping_1_1_process_model.html#ac50741d1483c89de6204278fc4eecb09", null ],
+    [ "contentDuration", "class_mapping_1_1_process_model.html#ae4c33e441fd21756d86985b77f56bf40", null ],
     [ "prettyName", "class_mapping_1_1_process_model.html#a21b3182d5b102b3e5f34c5388d4ff32c", null ],
     [ "prettyValue", "class_mapping_1_1_process_model.html#a7c5d7059561dc2d26ab584661214fbfa", null ],
     [ "setSourceAddress", "class_mapping_1_1_process_model.html#a1e5e83fd757a327a61c8b1a3056c5969", null ],

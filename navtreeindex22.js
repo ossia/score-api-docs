@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"class_process_1_1_control_outlet.html#afa9f90cceb763885ddf96c043dab0746":[11,0,35,16,8],
+"class_process_1_1_dataflow_manager.html":[11,0,35,18],
 "class_process_1_1_dataflow_manager.html#a1130a4aabe6f60961e354beabf249427":[11,0,35,18,6],
 "class_process_1_1_dataflow_manager.html#a156eca3a1d204cfcc2f88f252b0b083d":[11,0,35,18,4],
 "class_process_1_1_dataflow_manager.html#a2ff5fba83204682c617dc63d785675f5":[11,0,35,18,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX22 =
 "class_process_1_1_layer_view.html#af30a7828eab1a3b239670e24daad636e":[11,0,35,55,26],
 "class_process_1_1_layer_view.html#af8f01a473423e5863c6a6850e0d9cc39":[11,0,35,55,17],
 "class_process_1_1_layer_view.html#afa8e70cce06bc2e88736d26c108ecbdb":[11,0,35,55,4],
-"class_process_1_1_load_preset.html":[11,0,35,57],
-"class_process_1_1_magnetism_adjuster.html":[11,0,35,60],
-"class_process_1_1_magnetism_adjuster.html#a28fb17bdfa1b8a53cffe167bff713f54":[11,0,35,60,6]
+"class_process_1_1_load_preset.html":[11,0,35,57]
 };

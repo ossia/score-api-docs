@@ -1,5 +1,7 @@
 var NAVTREEINDEX65 =
 {
+"structscore_1_1uuids_1_1uuid.html#ae227b7eea38c628332dbd301457304c1":[11,0,42,6,1,12],
+"structscore_1_1uuids_1_1uuid.html#aeef74c1ce5de605764b9c0f0883bea0c":[11,0,42,6,1,14],
 "structscore_1_1uuids_1_1uuid.html#af431f7a502fbfb6793ded71260d45388":[11,0,42,6,1,9],
 "structscore_1_1uuids_1_1uuid.html#afdd1e9299ca9402dfd9de3676fecd14c":[11,0,42,6,1,0],
 "structserialization__tag.html":[11,0,383],

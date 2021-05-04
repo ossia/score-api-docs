@@ -1,5 +1,7 @@
 var NAVTREEINDEX45 =
 {
+"classvst3_1_1_v_s_t_control_port_factory.html#a7b2edef54746849a2372e50b5fa9be7a":[11,0,51,20,2],
+"classvst3_1_1_v_s_t_control_port_factory.html#aa9efe1274249b8e951eca203dcb70256":[11,0,51,20,5],
 "classvst3_1_1_v_s_t_control_port_factory.html#aca5a09c3214d85a4523f9219f4d15842":[11,0,51,20,1],
 "classvst3_1_1_v_s_t_effect_item.html":[11,0,51,22],
 "classvst3_1_1_v_s_t_effect_item.html#aa2def84df48dc246cade00dc0c6fb370":[11,0,51,22,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX45 =
 "functions_w.html":[11,3,0,18],
 "functions_~.html":[11,3,0,19],
 "globals.html":[12,1,0],
-"globals_defs.html":[12,1,2],
-"globals_type.html":[12,1,1],
-"hierarchy.html":[11,2]
+"globals_defs.html":[12,1,2]
 };

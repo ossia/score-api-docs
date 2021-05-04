@@ -6,7 +6,7 @@ var class_curve_1_1_curve_process_presenter =
     [ "model", "class_curve_1_1_curve_process_presenter.html#ac4d9f89ecf48d704bc7faa2a0c160c2e", null ],
     [ "on_focusChanged", "class_curve_1_1_curve_process_presenter.html#a9ef8a5b098d4bc3137c5c86c63948c7b", null ],
     [ "on_zoomRatioChanged", "class_curve_1_1_curve_process_presenter.html#a9051bbe04e366252ecdf33eceb621f32", null ],
-    [ "parentGeometryChanged", "class_curve_1_1_curve_process_presenter.html#a2c027cff8b38974e66bedfca7fb0f0df", null ],
+    [ "parentGeometryChanged", "class_curve_1_1_curve_process_presenter.html#a9020aa2f5ef9fe966d285dd98dcf6583", null ],
     [ "putBehind", "class_curve_1_1_curve_process_presenter.html#ab9aa103e639944e0c3c783f09ac9c624", null ],
     [ "putToFront", "class_curve_1_1_curve_process_presenter.html#a4a735370330dc52db153a556eb9125a5", null ],
     [ "setHeight", "class_curve_1_1_curve_process_presenter.html#aa5d47504bdbd09d61660b54d01b2c0eb", null ],
