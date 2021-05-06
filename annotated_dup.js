@@ -847,6 +847,7 @@ var annotated_dup =
       [ "hash< ObjectPath >", "structstd_1_1hash_3_01_object_path_01_4.html", "structstd_1_1hash_3_01_object_path_01_4" ],
       [ "hash< ossia::unit_variant >", "structstd_1_1hash_3_01ossia_1_1unit__variant_01_4.html", "structstd_1_1hash_3_01ossia_1_1unit__variant_01_4" ],
       [ "hash< Path< tag > >", "structstd_1_1hash_3_01_path_3_01tag_01_4_01_4.html", "structstd_1_1hash_3_01_path_3_01tag_01_4_01_4" ],
+      [ "hash< QByteArray >", "structstd_1_1hash_3_01_q_byte_array_01_4.html", "structstd_1_1hash_3_01_q_byte_array_01_4" ],
       [ "hash< QString >", "structstd_1_1hash_3_01_q_string_01_4.html", "structstd_1_1hash_3_01_q_string_01_4" ],
       [ "hash< score::LoadedPluginVersions >", "structstd_1_1hash_3_01score_1_1_loaded_plugin_versions_01_4.html", "structstd_1_1hash_3_01score_1_1_loaded_plugin_versions_01_4" ],
       [ "hash< score::Version >", "structstd_1_1hash_3_01score_1_1_version_01_4.html", "structstd_1_1hash_3_01score_1_1_version_01_4" ],

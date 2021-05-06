@@ -1,6 +1,6 @@
 var classscore_1_1_document_plugin =
 [
-    [ "DocumentPlugin", "classscore_1_1_document_plugin.html#a04a16d19338a8ffb2b12be776d464855", null ],
+    [ "DocumentPlugin", "classscore_1_1_document_plugin.html#ad26a92ca12a114e70c55bdc274bd8a55", null ],
     [ "~DocumentPlugin", "classscore_1_1_document_plugin.html#a45f6345ed296c5a8a7e93d33cdc51fe0", null ],
     [ "DocumentPlugin", "classscore_1_1_document_plugin.html#a448df1dd2de8cb695194d0462761d475", null ],
     [ "context", "classscore_1_1_document_plugin.html#a9b6904502ce6f4f549b1509b80121c8c", null ],

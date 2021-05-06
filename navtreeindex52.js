@@ -1,5 +1,8 @@
 var NAVTREEINDEX52 =
 {
+"struct_l_v2_1_1_l_v2_data.html#a86dddee0ed803cf9c391704621ca876e":[11,0,23,6,7],
+"struct_l_v2_1_1_l_v2_data.html#ac6884472f8ec420418605debe6f59c98":[11,0,23,6,9],
+"struct_l_v2_1_1_l_v2_data.html#ad4e4eed9b43ae496bdbccfd3fa5f7b1a":[11,0,23,6,8],
 "struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html":[11,0,23,7],
 "struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html#a2dfa0cbb8a0737c2bc3d77e49d775364":[11,0,23,7,1],
 "struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html#a36699ab96640179b1a3216abbdf760bf":[11,0,23,7,7],
@@ -246,8 +249,5 @@ var NAVTREEINDEX52 =
 "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html":[11,0,25,3,12,2],
 "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a10273c5c949850e2718a0fa19c006df1":[11,0,25,3,12,2,7],
 "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a1047d726b5415f2d89e41bbc879fa1d6":[11,0,25,3,12,2,2],
-"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a1548185982d52babc99912fb80f1a2aa":[11,0,25,3,12,2,1],
-"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a16dae34e1a3583c561af6875f7a552f2":[11,0,25,3,12,2,15],
-"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a18a2a2b2edd4cff72cea5d084746daf9":[11,0,25,3,12,2,11],
-"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a2466a76616ef573c6630ba817dd56f6a":[11,0,25,3,12,2,3]
+"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a1548185982d52babc99912fb80f1a2aa":[11,0,25,3,12,2,1]
 };

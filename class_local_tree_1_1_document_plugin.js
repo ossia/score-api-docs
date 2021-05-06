@@ -1,6 +1,6 @@
 var class_local_tree_1_1_document_plugin =
 [
-    [ "DocumentPlugin", "class_local_tree_1_1_document_plugin.html#ab7368ff6408f1fe29aef4ecd1afbdbfe", null ],
+    [ "DocumentPlugin", "class_local_tree_1_1_document_plugin.html#af8585c55df0c0dd6f7b15f6399db7a4d", null ],
     [ "~DocumentPlugin", "class_local_tree_1_1_document_plugin.html#a4b9481c52cd6fa2ab23b69947d9d95bc", null ],
     [ "device", "class_local_tree_1_1_document_plugin.html#af31c84dccd806cfdecad87252d5978a6", null ],
     [ "device", "class_local_tree_1_1_document_plugin.html#afda5f4de332573e13a7d34cf8c38fe02", null ],

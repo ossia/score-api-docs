@@ -1,5 +1,8 @@
 var NAVTREEINDEX48 =
 {
+"struct_control_1_1_out_control.html#a422de713dcffdb4a2d9cd6ea98bd8426":[11,0,3,31,1],
+"struct_control_1_1_out_control.html#a5d15fd0f8ad019e1705f20d237883d25":[11,0,3,31,2],
+"struct_control_1_1_out_control.html#aaa15707b5c252ab787d7e9e68f6deac6":[11,0,3,31,7],
 "struct_control_1_1_out_control.html#ae8ab7d5c5f83f521d29e309afb4b4b91":[11,0,3,31,3],
 "struct_control_1_1_port_setup.html":[11,0,3,32],
 "struct_control_1_1_r_g_b_a_edit.html":[11,0,3,33],
@@ -246,8 +249,5 @@ var NAVTREEINDEX48 =
 "struct_device_1_1_address_settings_common.html#a170fa5d5fd9f607754e216d0f220b80a":[11,0,7,3,13],
 "struct_device_1_1_address_settings_common.html#a27a5afeee03c7642adbdf7d0137952f6":[11,0,7,3,5],
 "struct_device_1_1_address_settings_common.html#a296a1284cefa89c90ea0757c64a77e7c":[11,0,7,3,1],
-"struct_device_1_1_address_settings_common.html#a5aa04ba5ecce2ece6306d002a86bb35c":[11,0,7,3,2],
-"struct_device_1_1_address_settings_common.html#a5ac5f1a23adf8b6e50cfaeaa3b49d4fc":[11,0,7,3,9],
-"struct_device_1_1_address_settings_common.html#a63d79491eed338e66f26f1d6c55a01b0":[11,0,7,3,3],
-"struct_device_1_1_address_settings_common.html#a6d753213a5ba8714fba47eee0285c7ed":[11,0,7,3,11]
+"struct_device_1_1_address_settings_common.html#a5aa04ba5ecce2ece6306d002a86bb35c":[11,0,7,3,2]
 };

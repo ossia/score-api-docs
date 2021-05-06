@@ -1,5 +1,8 @@
 var NAVTREEINDEX47 =
 {
+"score__plugin__vst_8hpp_source.html":[12,0,1065],
+"scoreinterfaces_8hpp_source.html":[12,0,1068],
+"serialization_8hpp_source.html":[12,0,1089],
 "shadercache_8hpp_source.html":[12,0,1119],
 "statemachines_8hpp_source.html":[12,0,1159],
 "struct_array_entity_serializer.html":[11,0,60],
@@ -246,8 +249,5 @@ var NAVTREEINDEX47 =
 "struct_control_1_1_out_control.html#a2243c702da842e85ef7d120628e95f21":[11,0,3,31,5],
 "struct_control_1_1_out_control.html#a23e1e2d15b68adf56098c9eeb30b69b0":[11,0,3,31,6],
 "struct_control_1_1_out_control.html#a2ffc8977d3b67db3e34c3b62362ed9ac":[11,0,3,31,4],
-"struct_control_1_1_out_control.html#a301f3d58a7ee00002e6df367c943207e":[11,0,3,31,0],
-"struct_control_1_1_out_control.html#a422de713dcffdb4a2d9cd6ea98bd8426":[11,0,3,31,1],
-"struct_control_1_1_out_control.html#a5d15fd0f8ad019e1705f20d237883d25":[11,0,3,31,2],
-"struct_control_1_1_out_control.html#aaa15707b5c252ab787d7e9e68f6deac6":[11,0,3,31,7]
+"struct_control_1_1_out_control.html#a301f3d58a7ee00002e6df367c943207e":[11,0,3,31,0]
 };

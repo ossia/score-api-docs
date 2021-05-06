@@ -65,6 +65,7 @@ var namespacescore =
     [ "CommandStackFacade", "classscore_1_1_command_stack_facade.html", "classscore_1_1_command_stack_facade" ],
     [ "Component", "classscore_1_1_component.html", "classscore_1_1_component" ],
     [ "ComponentHierarchyManager", "classscore_1_1_component_hierarchy_manager.html", "classscore_1_1_component_hierarchy_manager" ],
+    [ "Components", "structscore_1_1_components.html", "structscore_1_1_components" ],
     [ "CoreApplicationPlugin", "classscore_1_1_core_application_plugin.html", "classscore_1_1_core_application_plugin" ],
     [ "CustomActionCondition", "structscore_1_1_custom_action_condition.html", "structscore_1_1_custom_action_condition" ],
     [ "DefaultComboImpl", "structscore_1_1_default_combo_impl.html", null ],

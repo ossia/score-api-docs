@@ -192,43 +192,41 @@ $(document).ready(function(){initNavTree('score-plugin-lv2_2_l_v2_2_effect_model
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  LV2EffectComponent(</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      LV2::Model&amp; proc,</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      const <a class="code" href="namespace_execution.html">Execution</a>::Context&amp; ctx,</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      const <a class="code" href="classid__base__t.html">Id</a>&lt;<a class="code" href="namespacescore.html">score</a>::Component&gt;&amp; <span class="keywordtype">id</span>,</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      QObject* parent);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">void</span> lazy_init() override;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">void</span> writeAtomToUi(</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      uint32_t port_index,</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      uint32_t type,</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      uint32_t size,</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      const <span class="keywordtype">void</span>* body);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;namespace <a class="code" href="namespace_process.html">Process</a></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;{</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;QString EffectProcessFactory_T&lt;LV2::Model&gt;::customConstructionData() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">namespace </span>LV2</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;{</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">using</span> ProcessFactory = <a class="code" href="class_process_1_1_effect_process_factory___t.html">Process::EffectProcessFactory_T&lt;Model&gt;</a>;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">using</span> ExecutorFactory</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    = <a class="code" href="class_execution_1_1_process_component_factory___t.html">Execution::ProcessComponentFactory_T&lt;LV2EffectComponent&gt;</a>;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      QObject* parent);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">void</span> lazy_init() override;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">void</span> writeAtomToUi(</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      uint32_t port_index,</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      uint32_t type,</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      uint32_t size,</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      const <span class="keywordtype">void</span>* body);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;};</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;namespace <a class="code" href="namespace_process.html">Process</a></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;QString EffectProcessFactory_T&lt;LV2::Model&gt;::customConstructionData() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">namespace </span>LV2</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;{</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">using</span> ProcessFactory = <a class="code" href="class_process_1_1_effect_process_factory___t.html">Process::EffectProcessFactory_T&lt;Model&gt;</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">using</span> ExecutorFactory</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    = <a class="code" href="class_execution_1_1_process_component_factory___t.html">Execution::ProcessComponentFactory_T&lt;LV2EffectComponent&gt;</a>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1366</div></div>
-<div class="ttc" id="aclass_execution_1_1_process_component_factory___t_html"><div class="ttname"><a href="class_execution_1_1_process_component_factory___t.html">Execution::ProcessComponentFactory_T</a></div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:122</div></div>
+<div class="ttc" id="aclass_execution_1_1_process_component_factory___t_html"><div class="ttname"><a href="class_execution_1_1_process_component_factory___t.html">Execution::ProcessComponentFactory_T</a></div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:120</div></div>
 <div class="ttc" id="astruct_l_v2_1_1_effect_context_html"><div class="ttname"><a href="struct_l_v2_1_1_effect_context.html">LV2::EffectContext</a></div><div class="ttdef"><b>Definition:</b> Context.hpp:85</div></div>
 <div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition:</b> TimeValue.hpp:19</div></div>
 <div class="ttc" id="aclass_process_1_1_effect_process_factory___t_html"><div class="ttname"><a href="class_process_1_1_effect_process_factory___t.html">Process::EffectProcessFactory_T</a></div><div class="ttdef"><b>Definition:</b> EffectFactory.hpp:12</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:65</div></div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition:</b> Identifier.hpp:56</div></div>
 <div class="ttc" id="anamespace_execution_html"><div class="ttname"><a href="namespace_execution.html">Execution</a></div><div class="ttdoc">Components used for the execution of a score.</div><div class="ttdef"><b>Definition:</b> ProcessComponent.cpp:11</div></div>
 <div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Process.hpp:55</div></div>
-<div class="ttc" id="astruct_execution_1_1_process_component___t_html"><div class="ttname"><a href="struct_execution_1_1_process_component___t.html">Execution::ProcessComponent_T</a></div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:93</div></div>
+<div class="ttc" id="astruct_execution_1_1_process_component___t_html"><div class="ttname"><a href="struct_execution_1_1_process_component___t.html">Execution::ProcessComponent_T</a></div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:92</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
