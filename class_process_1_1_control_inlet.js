@@ -13,7 +13,7 @@ var class_process_1_1_control_inlet =
     [ "loadData", "class_process_1_1_control_inlet.html#a4831079a4051affbb51e104b1ef65f24", null ],
     [ "saveData", "class_process_1_1_control_inlet.html#a4f3cdf976755f00a519838049d12a27c", null ],
     [ "setDomain", "class_process_1_1_control_inlet.html#a4cb44dd83c6dbca93fd86c8731589238", null ],
-    [ "setValue", "class_process_1_1_control_inlet.html#a00beb510f4e923932a5e1f52edc1afc5", null ],
+    [ "setValue", "class_process_1_1_control_inlet.html#a622286353871899a4314b36d99cf876e", null ],
     [ "type", "class_process_1_1_control_inlet.html#aa98c6d97edb835ac0113199f38a85fa8", null ],
     [ "value", "class_process_1_1_control_inlet.html#a58e556485a625bad74b3f93d52b71c14", null ],
     [ "valueChanged", "class_process_1_1_control_inlet.html#a9a5fd3a09835b65d73382aaa90727774", null ]

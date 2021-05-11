@@ -934,6 +934,7 @@ var annotated_dup =
       [ "FixedNormalizer", "struct_widget_factory_1_1_fixed_normalizer.html", "struct_widget_factory_1_1_fixed_normalizer" ],
       [ "FloatControl", "struct_widget_factory_1_1_float_control.html", null ],
       [ "HSVSlider", "struct_widget_factory_1_1_h_s_v_slider.html", null ],
+      [ "ImpulseButton", "struct_widget_factory_1_1_impulse_button.html", null ],
       [ "IntSlider", "struct_widget_factory_1_1_int_slider.html", null ],
       [ "IntSpinBox", "struct_widget_factory_1_1_int_spin_box.html", null ],
       [ "LinearNormalizer", "struct_widget_factory_1_1_linear_normalizer.html", null ],
