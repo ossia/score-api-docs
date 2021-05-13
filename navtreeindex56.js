@@ -1,5 +1,6 @@
 var NAVTREEINDEX56 =
 {
+"struct_protocols_1_1_w_s_specific_settings.html#af28ad233c2dc27f7a1bd1c0e8bcf7511":[11,0,36,63,0],
 "struct_protocols_1_1_wiimote_specific_settings.html":[11,0,36,59],
 "struct_protocols_1_1_wiimote_specific_settings.html#a122bb1e9f70fcfd0037befffe76affc2":[11,0,36,59,0],
 "struct_q_map_key_adaptor.html":[11,0,224],
@@ -248,6 +249,5 @@ var NAVTREEINDEX56 =
 "struct_recording_1_1_record_automation_first_callback_visitor.html#a2113e09c1695a50a7f0419b097b4fdc0":[11,0,37,8,5],
 "struct_recording_1_1_record_automation_first_callback_visitor.html#a35fb166b1a363a9b2f1beb4e1a959776":[11,0,37,8,4],
 "struct_recording_1_1_record_automation_first_callback_visitor.html#a4405f7c541a3d59b83c30a4236d56348":[11,0,37,8,9],
-"struct_recording_1_1_record_automation_first_callback_visitor.html#a653341cc07f83abb4b786bcf1b29602e":[11,0,37,8,1],
-"struct_recording_1_1_record_automation_first_callback_visitor.html#a81a4b5e938315a940cda0cde0f859311":[11,0,37,8,8]
+"struct_recording_1_1_record_automation_first_callback_visitor.html#a653341cc07f83abb4b786bcf1b29602e":[11,0,37,8,1]
 };

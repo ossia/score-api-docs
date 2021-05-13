@@ -1,5 +1,6 @@
 var NAVTREEINDEX55 =
 {
+"struct_process_1_1_descriptor.html#a22855c811355234c2a1d0b778cfe5146":[11,0,35,22,5],
 "struct_process_1_1_descriptor.html#a622e29f9a44fba78ca625f7ea630ed51":[11,0,35,22,4],
 "struct_process_1_1_descriptor.html#ac6b597116df073c1d78a84544d61da8a":[11,0,35,22,2],
 "struct_process_1_1_descriptor.html#acae18507eabcbdb8a8cf9359f3ed668c":[11,0,35,22,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX55 =
 "struct_protocols_1_1_settings_1_1_midi_a_p_i.html":[11,0,36,1,0],
 "struct_protocols_1_1_settings_1_1_midi_a_p_i.html#a2f82e35ee43bedd9e16c7addc715c910":[11,0,36,1,0,0],
 "struct_protocols_1_1_w_s_specific_settings.html":[11,0,36,63],
-"struct_protocols_1_1_w_s_specific_settings.html#ac42f002e23e40296fea2c1915fc88f1f":[11,0,36,63,1],
-"struct_protocols_1_1_w_s_specific_settings.html#af28ad233c2dc27f7a1bd1c0e8bcf7511":[11,0,36,63,0]
+"struct_protocols_1_1_w_s_specific_settings.html#ac42f002e23e40296fea2c1915fc88f1f":[11,0,36,63,1]
 };

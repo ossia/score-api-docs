@@ -1,5 +1,6 @@
 var NAVTREEINDEX46 =
 {
+"functions_w.html":[11,3,0,18],
 "functions_~.html":[11,3,0,19],
 "globals.html":[12,1,0],
 "globals_defs.html":[12,1,2],
@@ -25,15 +26,15 @@ var NAVTREEINDEX46 =
 "mvp_8hpp_source.html":[12,0,746],
 "namespace_automation.html":[11,0,1],
 "namespace_automation.html":[10,0,0],
-"namespace_curve.html":[10,0,1],
 "namespace_curve.html":[11,0,5],
+"namespace_curve.html":[10,0,1],
 "namespace_device.html":[11,0,7],
 "namespace_device.html":[10,0,2],
 "namespace_engine.html":[10,0,3],
 "namespace_engine.html":[11,0,8],
 "namespace_engine_1_1_network.html":[10,0,3,0],
-"namespace_execution.html":[10,0,4],
 "namespace_execution.html":[11,0,9],
+"namespace_execution.html":[10,0,4],
 "namespace_inspector.html":[11,0,15],
 "namespace_inspector.html":[10,0,5],
 "namespace_local_tree.html":[10,0,6],
@@ -41,8 +42,8 @@ var NAVTREEINDEX46 =
 "namespace_plugin_loader.html":[10,0,7],
 "namespace_process.html":[11,0,35],
 "namespace_process.html":[10,0,8],
-"namespace_scenario.html":[10,0,9],
 "namespace_scenario.html":[11,0,41],
+"namespace_scenario.html":[10,0,9],
 "namespace_state.html":[11,0,46],
 "namespace_state.html":[10,0,11],
 "namespacemembers.html":[10,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX46 =
 "score__plugin__scenario_8hpp_source.html":[12,0,1061],
 "score__plugin__spline3d_8hpp_source.html":[12,0,1063],
 "score__plugin__spline_8hpp_source.html":[12,0,1062],
-"score__plugin__ui_8hpp_source.html":[12,0,1064],
-"score__plugin__vst3_8hpp_source.html":[12,0,1066]
+"score__plugin__ui_8hpp_source.html":[12,0,1064]
 };

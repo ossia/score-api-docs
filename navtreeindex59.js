@@ -1,5 +1,6 @@
 var NAVTREEINDEX59 =
 {
+"struct_scenario_1_1get__curve__domain.html":[11,0,41,110],
 "struct_scenario_1_1get__curve__domain.html#a050c712a369bc5b096670e8e84385e3f":[11,0,41,110,8],
 "struct_scenario_1_1get__curve__domain.html#a2521112216b9ffdf2872f12cfa56908b":[11,0,41,110,4],
 "struct_scenario_1_1get__curve__domain.html#a4d6420d86b3548d151db8aa6b3505f75":[11,0,41,110,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX59 =
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1domain__base__variant_01_4.html#a6bb1838dd49de48877727521cc726227":[11,0,427,0],
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1flat__map_3_01_t_00_01_u_01_4_01_4.html":[11,0,428],
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1flat__map_3_01_t_00_01_u_01_4_01_4.html#a288aafceec752b4734f276f3d6164d07":[11,0,428,1],
-"struct_t_serializer_3_01_data_stream_00_01ossia_1_1flat__map_3_01_t_00_01_u_01_4_01_4.html#ac0e1c4334bcee1b6fd511f17b9b9ee0a":[11,0,428,0],
-"struct_t_serializer_3_01_data_stream_00_01ossia_1_1flat__set_3_01_t_01_4_01_4.html":[11,0,429]
+"struct_t_serializer_3_01_data_stream_00_01ossia_1_1flat__map_3_01_t_00_01_u_01_4_01_4.html#ac0e1c4334bcee1b6fd511f17b9b9ee0a":[11,0,428,0]
 };

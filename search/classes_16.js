@@ -13,7 +13,7 @@ var searchData=
   ['wiimoteprotocolfactory_4992',['WiimoteProtocolFactory',['../class_protocols_1_1_wiimote_protocol_factory.html',1,'Protocols']]],
   ['wiimoteprotocolsettingswidget_4993',['WiimoteProtocolSettingsWidget',['../class_protocols_1_1_wiimote_protocol_settings_widget.html',1,'Protocols']]],
   ['wiimotespecificsettings_4994',['WiimoteSpecificSettings',['../struct_protocols_1_1_wiimote_specific_settings.html',1,'Protocols']]],
-  ['window_4995',['Window',['../classvst_1_1_window.html',1,'vst::Window'],['../classvst3_1_1_window.html',1,'vst3::Window'],['../class_l_v2_1_1_window.html',1,'LV2::Window'],['../class_window.html',1,'Window']]],
+  ['window_4995',['Window',['../class_window.html',1,'Window'],['../classvst_1_1_window.html',1,'vst::Window'],['../class_l_v2_1_1_window.html',1,'LV2::Window'],['../classvst3_1_1_window.html',1,'vst3::Window']]],
   ['windowcontainer_4996',['WindowContainer',['../structvst3_1_1_window_container.html',1,'vst3']]],
   ['windowdevice_4997',['WindowDevice',['../class_gfx_1_1_window_device.html',1,'Gfx']]],
   ['windowprotocolfactory_4998',['WindowProtocolFactory',['../class_gfx_1_1_window_protocol_factory.html',1,'Gfx']]],

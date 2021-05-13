@@ -1,5 +1,6 @@
 var NAVTREEINDEX60 =
 {
+"struct_t_serializer_3_01_data_stream_00_01ossia_1_1flat__set_3_01_t_01_4_01_4.html":[11,0,429],
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1flat__set_3_01_t_01_4_01_4.html#a6aa8798d97834f0d30f6d72130d30bf1":[11,0,429,0],
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1small__vector_3_01_t_00_01_n_01_4_01_4.html":[11,0,430],
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1static__vector_3_01_t_00_01_n_01_4_01_4.html":[11,0,431],
@@ -248,6 +249,5 @@ var NAVTREEINDEX60 =
 "struct_video_1_1_read_frame.html#a752cf199fe44be267f64d0b48ca3f1c8":[11,0,49,2,1],
 "struct_video_1_1_read_frame.html#a965e8e3bc5f159837615dbf8b6092a92":[11,0,49,2,0],
 "struct_video_1_1_video_interface.html":[11,0,49,4],
-"struct_video_1_1_video_interface.html#a574fe3e5f0576c2332f84939be6b9cbc":[11,0,49,4,2],
-"struct_video_1_1_video_interface.html#a654c89747de3bd51f51c8c0b4614350a":[11,0,49,4,1]
+"struct_video_1_1_video_interface.html#a574fe3e5f0576c2332f84939be6b9cbc":[11,0,49,4,2]
 };
