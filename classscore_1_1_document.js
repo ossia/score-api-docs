@@ -12,6 +12,7 @@ var classscore_1_1_document =
     [ "metadata", "classscore_1_1_document.html#a7839b0d8fb31b19cd9948b0a5dbd7b07", null ],
     [ "model", "classscore_1_1_document.html#a2f0cf5c41c532e3579b4e0ebfff03ba3", null ],
     [ "presenter", "classscore_1_1_document.html#a7e5c40b403df300e0af3548d2436101f", null ],
+    [ "ready", "classscore_1_1_document.html#a60a379179f29bffebad8603a85bf9338", null ],
     [ "saveAsByteArray", "classscore_1_1_document.html#a8f666cf852cc29941c8ccbf0d111801a", null ],
     [ "saveAsJson", "classscore_1_1_document.html#afd5c45512a6362e4e076684c5525cf28", null ],
     [ "saveDocumentModelAsByteArray", "classscore_1_1_document.html#a9fc96385aa99d0d44d0349aba156d752", null ],

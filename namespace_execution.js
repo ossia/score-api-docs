@@ -25,7 +25,6 @@ var namespace_execution =
     [ "DefaultClock", "class_execution_1_1_default_clock.html", "class_execution_1_1_default_clock" ],
     [ "dfs_visitor", "struct_execution_1_1dfs__visitor.html", "struct_execution_1_1dfs__visitor" ],
     [ "dfs_visitor_state", "struct_execution_1_1dfs__visitor__state.html", "struct_execution_1_1dfs__visitor__state" ],
-    [ "DirectTransport", "class_execution_1_1_direct_transport.html", "class_execution_1_1_direct_transport" ],
     [ "DocumentPlugin", "class_execution_1_1_document_plugin.html", "class_execution_1_1_document_plugin" ],
     [ "EventComponent", "class_execution_1_1_event_component.html", "class_execution_1_1_event_component" ],
     [ "ExecutionAction", "class_execution_1_1_execution_action.html", "class_execution_1_1_execution_action" ],
@@ -61,7 +60,5 @@ var namespace_execution =
     [ "StateComponentBase", "class_execution_1_1_state_component_base.html", "class_execution_1_1_state_component_base" ],
     [ "StepComponent", "class_execution_1_1_step_component.html", "class_execution_1_1_step_component" ],
     [ "TimeSyncComponent", "class_execution_1_1_time_sync_component.html", "class_execution_1_1_time_sync_component" ],
-    [ "Transaction", "struct_execution_1_1_transaction.html", "struct_execution_1_1_transaction" ],
-    [ "TransportInterface", "class_execution_1_1_transport_interface.html", "class_execution_1_1_transport_interface" ],
-    [ "TransportInterfaceList", "class_execution_1_1_transport_interface_list.html", null ]
+    [ "Transaction", "struct_execution_1_1_transaction.html", "struct_execution_1_1_transaction" ]
 ];

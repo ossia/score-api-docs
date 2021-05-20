@@ -6,8 +6,8 @@ var class_scenario_1_1_settings_1_1_model =
     [ "SCORE_SETTINGS_PARAMETER_HPP", "class_scenario_1_1_settings_1_1_model.html#ad39f03a088ac8085e3411cf44a718160", null ],
     [ "SCORE_SETTINGS_PARAMETER_HPP", "class_scenario_1_1_settings_1_1_model.html#af5f87c4545ac063372f2784a623491a1", null ],
     [ "setSkin", "class_scenario_1_1_settings_1_1_model.html#a68f4def25ac8824baf88db0c653ef0fb", null ],
-    [ "SkinChanged", "class_scenario_1_1_settings_1_1_model.html#adbb5ce96c5ff157d43019e0e623d47fd", null ],
     [ "bool", "class_scenario_1_1_settings_1_1_model.html#a7d94a79aabaa4c153fde49fb9ff351cc", null ],
     [ "bool", "class_scenario_1_1_settings_1_1_model.html#a9bc5f799b3c7b5737983a2bac356fbbf", null ],
-    [ "double", "class_scenario_1_1_settings_1_1_model.html#a3bf0e5ee859cce8707b8e1fa29fb9d1e", null ]
+    [ "double", "class_scenario_1_1_settings_1_1_model.html#a3bf0e5ee859cce8707b8e1fa29fb9d1e", null ],
+    [ "SCORE_SETTINGS_PARAMETER_HPP", "class_scenario_1_1_settings_1_1_model.html#a20aaffbb7f3f6313bf747e13acb1e5c6", null ]
 ];

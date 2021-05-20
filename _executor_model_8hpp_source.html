@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('_executor_model_8hpp_source.html','');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Execution/Clock/ClockFactory.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Execution/Transport/TransportInterface.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Transport/TransportInterface.hpp&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Process/TimeValue.hpp&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;score/plugins/settingsdelegate/SettingsDelegateModel.hpp&gt;</span></div>
@@ -179,7 +179,7 @@ $(document).ready(function(){initNavTree('_executor_model_8hpp_source.html','');
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">bool</span> m_TransportValueCompilation{};</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_execution_1_1_clock_factory_list.html">ClockFactoryList</a>&amp; m_clockFactories;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_execution_1_1_transport_interface_list.html">TransportInterfaceList</a>&amp; m_transportInterfaces;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_transport_1_1_transport_interface_list.html">Transport::TransportInterfaceList</a>&amp; m_transportInterfaces;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>(QSettings&amp; set, <span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp; ctx);</div>
@@ -191,7 +191,7 @@ $(document).ready(function(){initNavTree('_executor_model_8hpp_source.html','');
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  reverse_time_function</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  makeReverseTimeFunction(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp;) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="class_execution_1_1_transport_interface.html">TransportInterface</a>* getTransport() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="class_transport_1_1_transport_interface.html">Transport::TransportInterface</a>* getTransport() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      SCORE_PLUGIN_ENGINE_EXPORT,</div>
@@ -240,12 +240,12 @@ $(document).ready(function(){initNavTree('_executor_model_8hpp_source.html','');
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:15</div></div>
-<div class="ttc" id="aclass_execution_1_1_transport_interface_list_html"><div class="ttname"><a href="class_execution_1_1_transport_interface_list.html">Execution::TransportInterfaceList</a></div><div class="ttdef"><b>Definition:</b> TransportInterface.hpp:44</div></div>
+<div class="ttc" id="aclass_transport_1_1_transport_interface_html"><div class="ttname"><a href="class_transport_1_1_transport_interface.html">Transport::TransportInterface</a></div><div class="ttdef"><b>Definition:</b> score-plugin-transport/Transport/TransportInterface.hpp:15</div></div>
 <div class="ttc" id="aclass_execution_1_1_clock_factory_list_html"><div class="ttname"><a href="class_execution_1_1_clock_factory_list.html">Execution::ClockFactoryList</a></div><div class="ttdef"><b>Definition:</b> ClockFactory.hpp:78</div></div>
-<div class="ttc" id="aclass_execution_1_1_transport_interface_html"><div class="ttname"><a href="class_execution_1_1_transport_interface.html">Execution::TransportInterface</a></div><div class="ttdef"><b>Definition:</b> TransportInterface.hpp:16</div></div>
 <div class="ttc" id="aclass_execution_1_1_clock_html"><div class="ttname"><a href="class_execution_1_1_clock.html">Execution::Clock</a></div><div class="ttdef"><b>Definition:</b> ClockFactory.hpp:41</div></div>
 <div class="ttc" id="anamespace_execution_html"><div class="ttname"><a href="namespace_execution.html">Execution</a></div><div class="ttdoc">Components used for the execution of a score.</div><div class="ttdef"><b>Definition:</b> ProcessComponent.cpp:11</div></div>
 <div class="ttc" id="anamespace_execution_html_aa65c041c9e6cd2071fd9f337e843f81d"><div class="ttname"><a href="namespace_execution.html#aa65c041c9e6cd2071fd9f337e843f81d">Execution::time_function</a></div><div class="ttdeci">smallfun::function&lt; ossia::time_value(const TimeVal &amp;)&gt; time_function</div><div class="ttdoc">Sets-up and manages the main execution clock.</div><div class="ttdef"><b>Definition:</b> ExecutionContext.hpp:65</div></div>
+<div class="ttc" id="aclass_transport_1_1_transport_interface_list_html"><div class="ttname"><a href="class_transport_1_1_transport_interface_list.html">Transport::TransportInterfaceList</a></div><div class="ttdef"><b>Definition:</b> score-plugin-transport/Transport/TransportInterface.hpp:46</div></div>
 <div class="ttc" id="aclass_execution_1_1_settings_1_1_model_html"><div class="ttname"><a href="class_execution_1_1_settings_1_1_model.html">Execution::Settings::Model</a></div><div class="ttdef"><b>Definition:</b> ExecutorModel.hpp:62</div></div>
 <div class="ttc" id="astruct_execution_1_1_context_html"><div class="ttname"><a href="struct_execution_1_1_context.html">Execution::Context</a></div><div class="ttdef"><b>Definition:</b> ExecutionContext.hpp:89</div></div>
 <div class="ttc" id="astruct_execution_1_1_settings_1_1_ordering_policies_html"><div class="ttname"><a href="struct_execution_1_1_settings_1_1_ordering_policies.html">Execution::Settings::OrderingPolicies</a></div><div class="ttdef"><b>Definition:</b> ExecutorModel.hpp:29</div></div>

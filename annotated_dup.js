@@ -860,6 +860,13 @@ var annotated_dup =
       [ "hash< TimeVal >", "structstd_1_1hash_3_01_time_val_01_4.html", "structstd_1_1hash_3_01_time_val_01_4" ],
       [ "hash< UuidKey< T > >", "structstd_1_1hash_3_01_uuid_key_3_01_t_01_4_01_4.html", "structstd_1_1hash_3_01_uuid_key_3_01_t_01_4_01_4" ]
     ] ],
+    [ "Transport", null, [
+      [ "ApplicationPlugin", "class_transport_1_1_application_plugin.html", "class_transport_1_1_application_plugin" ],
+      [ "DirectTransport", "class_transport_1_1_direct_transport.html", "class_transport_1_1_direct_transport" ],
+      [ "DocumentPlugin", "class_transport_1_1_document_plugin.html", "class_transport_1_1_document_plugin" ],
+      [ "TransportInterface", "class_transport_1_1_transport_interface.html", "class_transport_1_1_transport_interface" ],
+      [ "TransportInterfaceList", "class_transport_1_1_transport_interface_list.html", null ]
+    ] ],
     [ "Ui", null, [
       [ "SignalDisplay", null, [
         [ "Node", "struct_ui_1_1_signal_display_1_1_node.html", "struct_ui_1_1_signal_display_1_1_node" ]
@@ -1273,6 +1280,7 @@ var annotated_dup =
     [ "score_plugin_scenario", "classscore__plugin__scenario.html", "classscore__plugin__scenario" ],
     [ "score_plugin_spline", "classscore__plugin__spline.html", "classscore__plugin__spline" ],
     [ "score_plugin_spline3d", "classscore__plugin__spline3d.html", "classscore__plugin__spline3d" ],
+    [ "score_plugin_transport", "classscore__plugin__transport.html", "classscore__plugin__transport" ],
     [ "score_plugin_ui", "classscore__plugin__ui.html", "classscore__plugin__ui" ],
     [ "score_plugin_vst", "classscore__plugin__vst.html", "classscore__plugin__vst" ],
     [ "score_plugin_vst3", "classscore__plugin__vst3.html", "classscore__plugin__vst3" ],
