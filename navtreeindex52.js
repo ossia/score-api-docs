@@ -1,5 +1,6 @@
 var NAVTREEINDEX52 =
 {
+"struct_jit_1_1_application_plugin.html#aeabef4f1f490820abc0b3d14a67e7acc":[11,0,19,1,6],
 "struct_jit_1_1_application_plugin.html#af371078f6ef6eb42d29d43c5b283f77c":[11,0,19,1,0],
 "struct_jit_1_1_bytebeat_language_spec.html":[11,0,19,4],
 "struct_jit_1_1_compiler_options.html":[11,0,19,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX52 =
 "struct_media_1_1_audio_file_1_1_handle.html":[11,0,25,6,0],
 "struct_media_1_1_audio_file_1_1_handle.html#a759584b67c31e05fbd42e0b6f9b15b89":[11,0,25,6,0,1],
 "struct_media_1_1_audio_file_1_1_handle.html#a7892d21c3258405bbe6a2180aa9112e0":[11,0,25,6,0,2],
-"struct_media_1_1_audio_file_1_1_handle.html#aaf50e817c3c03a5541408f478a71e9b3":[11,0,25,6,0,3],
-"struct_media_1_1_audio_file_1_1_handle.html#ad24b3cf4216133f44c44e806a029845a":[11,0,25,6,0,0]
+"struct_media_1_1_audio_file_1_1_handle.html#aaf50e817c3c03a5541408f478a71e9b3":[11,0,25,6,0,3]
 };

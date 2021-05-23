@@ -224,13 +224,14 @@ var NAVTREEINDEX42 =
 "classscore_1_1_q_graphics_toggle.html#aad2b5dc0a10a1feccf06f1cde6f71dd8":[11,0,42,196,3],
 "classscore_1_1_q_graphics_toggle.html#af39ea460758591821f8e656a2711c034":[11,0,42,196,0],
 "classscore_1_1_q_graphics_x_y_chooser.html":[11,0,42,197],
-"classscore_1_1_q_graphics_x_y_chooser.html#a182fe3c2c87340ce5a97db4b26d4bfac":[11,0,42,197,5],
-"classscore_1_1_q_graphics_x_y_chooser.html#a4fb35bb078f7867bdaca6ac7229b188f":[11,0,42,197,3],
-"classscore_1_1_q_graphics_x_y_chooser.html#a598f331e8e65ba7eb86740889ab6629c":[11,0,42,197,4],
+"classscore_1_1_q_graphics_x_y_chooser.html#a182fe3c2c87340ce5a97db4b26d4bfac":[11,0,42,197,6],
+"classscore_1_1_q_graphics_x_y_chooser.html#a4fb35bb078f7867bdaca6ac7229b188f":[11,0,42,197,4],
+"classscore_1_1_q_graphics_x_y_chooser.html#a581ada99e86147da586552432836f9a9":[11,0,42,197,2],
+"classscore_1_1_q_graphics_x_y_chooser.html#a598f331e8e65ba7eb86740889ab6629c":[11,0,42,197,5],
 "classscore_1_1_q_graphics_x_y_chooser.html#a661b5e425632e7565cf0ed9a043ca8a3":[11,0,42,197,1],
 "classscore_1_1_q_graphics_x_y_chooser.html#ad1e593a8fb6670fc459b04022a499f94":[11,0,42,197,0],
-"classscore_1_1_q_graphics_x_y_chooser.html#ad7b9068ff49d05f45a69dc6178fcf558":[11,0,42,197,2],
-"classscore_1_1_q_graphics_x_y_chooser.html#aeacfd62e134677ef75a61f12dd674827":[11,0,42,197,6],
+"classscore_1_1_q_graphics_x_y_chooser.html#ad7b9068ff49d05f45a69dc6178fcf558":[11,0,42,197,3],
+"classscore_1_1_q_graphics_x_y_chooser.html#aeacfd62e134677ef75a61f12dd674827":[11,0,42,197,7],
 "classscore_1_1_reactive_label.html":[11,0,42,199],
 "classscore_1_1_reactive_label.html#a85b43379d6f5f02df564eb711ae6047a":[11,0,42,199,0],
 "classscore_1_1_rect_item.html":[11,0,42,200],
@@ -248,6 +249,5 @@ var NAVTREEINDEX42 =
 "classscore_1_1_resizeable_item.html":[11,0,42,203],
 "classscore_1_1_resizeable_item.html#a036417bf54386533a0b3d9ee04de0720":[11,0,42,203,2],
 "classscore_1_1_resizeable_item.html#ad38ac92fd7ee9801bb00ad05011b828e":[11,0,42,203,1],
-"classscore_1_1_resizeable_item.html#aebea1afeea2b50c3a76e531e4957734b":[11,0,42,203,0],
-"classscore_1_1_search_line_edit.html":[11,0,42,206]
+"classscore_1_1_resizeable_item.html#aebea1afeea2b50c3a76e531e4957734b":[11,0,42,203,0]
 };

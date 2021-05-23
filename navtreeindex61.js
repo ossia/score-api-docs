@@ -1,5 +1,6 @@
 var NAVTREEINDEX61 =
 {
+"struct_t_serializer_3_01_j_s_o_n_object_00_01tsl_1_1hopscotch__map_3_01_t_00_01_u_01_4_01_4.html":[11,0,519],
 "struct_texgen_node.html":[11,0,405],
 "struct_texgen_node.html#a0363c07cf807c30073d32f94e874c9e9":[11,0,405,5],
 "struct_texgen_node.html#a14a9a0590433a0277cb65e735ed41acf":[11,0,405,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX61 =
 "struct_y_u_v422_decoder.html":[11,0,555],
 "struct_y_u_v422_decoder.html#a2f950dcc69f15d51c87cf5bfdca47015":[11,0,555,7],
 "struct_y_u_v422_decoder.html#a54150155d537ae919f0bfec904808a99":[11,0,555,5],
-"struct_y_u_v422_decoder.html#a95be99401d5f4ce1d4a1c1bf62b987fb":[11,0,555,0],
-"struct_y_u_v422_decoder.html#aa4d2c1e24b24fdc07960131fe26342a2":[11,0,555,6]
+"struct_y_u_v422_decoder.html#a95be99401d5f4ce1d4a1c1bf62b987fb":[11,0,555,0]
 };

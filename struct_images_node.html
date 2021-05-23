@@ -238,7 +238,8 @@ Static Public Attributes</h2></td></tr>
 <div class="line"><span class="stringliteral">    vec2 texcoord = vec2(v_texcoord.x, texcoordAdjust.y + texcoordAdjust.x * v_texcoord.y);</span></div>
 <div class="line"><span class="stringliteral">    texcoord = vec2(1) - ifactor * position + texcoord / factor;</span></div>
 <div class="line"><span class="stringliteral">    texcoord = texcoord / scale;</span></div>
-<div class="line"><span class="stringliteral">    fragColor = texture(y_tex, texcoord) * opacity;</span></div>
+<div class="line"><span class="stringliteral">    float actual = texcoord.x &gt;= 0 &amp;&amp; texcoord.x &lt;= 1 &amp;&amp; texcoord.y &gt;= 0 &amp;&amp; texcoord.y &lt;= 1 ? 1.0f : 0.0f;</span></div>
+<div class="line"><span class="stringliteral">    fragColor = texture(y_tex, texcoord) * opacity * actual;</span></div>
 <div class="line"><span class="stringliteral">  }</span></div>
 <div class="line"><span class="stringliteral">  )_&quot;</span></div>
 </div><!-- fragment -->

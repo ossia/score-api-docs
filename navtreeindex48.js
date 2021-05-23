@@ -1,5 +1,6 @@
 var NAVTREEINDEX48 =
 {
+"struct_control_1_1_custom_u_i_setup.html#a1ec59ed8b27cdea17cfb4fef413161a9":[11,0,3,7,7],
 "struct_control_1_1_custom_u_i_setup.html#a1eed01131fe7c1fa36c68584903012e1":[11,0,3,7,5],
 "struct_control_1_1_custom_u_i_setup.html#a2737f785ce5717fdf701a66ac872e7c5":[11,0,3,7,1],
 "struct_control_1_1_custom_u_i_setup.html#a3b17fc3555e6d65abe63cb2b1e4f0b28":[11,0,3,7,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX48 =
 "struct_curve_1_1_point_id.html#a0092d249b97b957c826c8c33cc5e660e":[11,0,5,28,0],
 "struct_curve_1_1_point_id.html#ad555fddd580909741fecdef261765544":[11,0,5,28,1],
 "struct_curve_1_1_segment_data.html":[11,0,5,34],
-"struct_curve_1_1_segment_data.html#a19516992543de4f5bf01c8280a9b8093":[11,0,5,34,0],
-"struct_curve_1_1_segment_data.html#a2a1bdf6f352132329c0948777023a03c":[11,0,5,34,3]
+"struct_curve_1_1_segment_data.html#a19516992543de4f5bf01c8280a9b8093":[11,0,5,34,0]
 };
