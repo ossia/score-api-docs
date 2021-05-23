@@ -110,6 +110,7 @@ var files_dup =
     [ "BaseScenarioTriggerCommandFactory.hpp", "_base_scenario_trigger_command_factory_8hpp_source.html", null ],
     [ "Bind.hpp", "_bind_8hpp_source.html", null ],
     [ "BoolValueWidget.hpp", "_bool_value_widget_8hpp_source.html", null ],
+    [ "BoostVariant2Serialization.hpp", "_boost_variant2_serialization_8hpp_source.html", null ],
     [ "Bytebeat.hpp", "_bytebeat_8hpp_source.html", null ],
     [ "Cable.hpp", "_cable_8hpp_source.html", null ],
     [ "CableHelpers.hpp", "_cable_helpers_8hpp_source.html", null ],

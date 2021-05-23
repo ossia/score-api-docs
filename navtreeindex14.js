@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"class_gfx_1_1_gfx_input_device.html":[11,0,13,28],
 "class_gfx_1_1_gfx_input_device.html#a2128cd3c2031a3e23ae78bbfa3a4fdfe":[11,0,13,28,2],
 "class_gfx_1_1_gfx_input_device.html#a345e41a76915ee02e40e6dc4528ab4bd":[11,0,13,28,4],
 "class_gfx_1_1_gfx_input_device.html#a43099616fb4d0391728b722eb1635b1c":[11,0,13,28,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "class_gfx_1_1kinect2__protocol.html#a86fb7e0342d7b43771edb988dd610299":[11,0,13,36,2],
 "class_gfx_1_1kinect2__protocol.html#ad85ce540680f8f21521c8f965f48edd5":[11,0,13,36,4],
 "class_gfx_1_1kinect2__protocol.html#ae39c1a565b015a5d6fbdfcded477f523":[11,0,13,36,5],
-"class_gfx_1_1kinect2__protocol.html#ae6a1c439412a6c15d381b9de9f12dc87":[11,0,13,36,0],
-"class_gfx_1_1kinect2__protocol.html#ae9a930a2673a0d79905042e978e9f357":[11,0,13,36,3]
+"class_gfx_1_1kinect2__protocol.html#ae6a1c439412a6c15d381b9de9f12dc87":[11,0,13,36,0]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"class_media_1_1_settings_1_1_view.html":[11,0,25,2,4],
 "class_media_1_1_settings_1_1_view.html#aa304c00e45cdf2a9ea4582ae856df3e4":[11,0,25,2,4,0],
 "class_media_1_1_sound_1_1_audio_preview_widget.html":[11,0,25,3,0],
 "class_media_1_1_sound_1_1_audio_preview_widget.html#a0086dd3ef9db3a9d67df685a1b346741":[11,0,25,3,0,1],
@@ -100,7 +101,7 @@ var NAVTREEINDEX19 =
 "class_media_1_1_step_1_1_view.html#a52a3864c43b4e5492e547c81cfd81da5":[11,0,25,4,6,0],
 "class_media_1_1_step_1_1_view.html#a731842fe73469be9e759c2893f970144":[11,0,25,4,6,2],
 "class_media_1_1_step_1_1_view.html#ac06e594379be86a04356b435fc4b5c48":[11,0,25,4,6,3],
-"class_merge_time_syncs_test.html":[11,0,161],
+"class_merge_time_syncs_test.html":[11,0,165],
 "class_metronome_1_1_change_metronome_address.html":[11,0,26,1],
 "class_metronome_1_1_change_metronome_address.html#a1e129aa5d288d3e650a6555364d7f295":[11,0,26,1,2],
 "class_metronome_1_1_change_metronome_address.html#a7c3c5d5e0e08c55de6630d8f6b2a0ec5":[11,0,26,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "class_midi_1_1_scale_notes.html#a31bf3f3cf616ba0a7fd0fbb6c58325c8":[11,0,27,19,3],
 "class_midi_1_1_scale_notes.html#a644136ec0ff5f5c31b081520d4721420":[11,0,27,19,0],
 "class_midi_1_1_scale_notes.html#aa2e97114a0933f1a2e54daa5f062f775":[11,0,27,19,2],
-"class_midi_1_1_scale_notes.html#ac1073a547dccc309e3331f7d77491831":[11,0,27,19,1],
-"class_midi_1_1_set_channel.html":[11,0,27,20]
+"class_midi_1_1_scale_notes.html#ac1073a547dccc309e3331f7d77491831":[11,0,27,19,1]
 };
