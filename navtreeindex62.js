@@ -1,6 +1,5 @@
 var NAVTREEINDEX62 =
 {
-"structscore_1_1_flicks_spin_box.html#af4ba72846762a08741ca1c07608ba7f5":[11,0,42,97,1],
 "structscore_1_1_flicks_spin_box.html#afd3cc51157a7085e6fc6a078966fee46":[11,0,42,97,3],
 "structscore_1_1_focus_action_condition.html":[11,0,42,98],
 "structscore_1_1_focus_action_condition.html#a03b88275bb632bf44bb28b9c5ebab537":[11,0,42,98,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX62 =
 "structscore_1_1_string_constants.html#a428b08bc33a8a3ef57f5a7af0080559c":[11,0,42,240,55],
 "structscore_1_1_string_constants.html#a43ce55c4f4ad6ddb8f1de5b39442c604":[11,0,42,240,94],
 "structscore_1_1_string_constants.html#a46b545fcb9e6fb2449ebe5013021e112":[11,0,42,240,85],
-"structscore_1_1_string_constants.html#a4793bdc9dba1281cab05c2ca280506de":[11,0,42,240,17]
+"structscore_1_1_string_constants.html#a4793bdc9dba1281cab05c2ca280506de":[11,0,42,240,17],
+"structscore_1_1_string_constants.html#a4918131f6073e0d595c5bdd8016f4638":[11,0,42,240,115]
 };

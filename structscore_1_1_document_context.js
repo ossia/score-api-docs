@@ -18,6 +18,5 @@ var structscore_1_1_document_context =
     [ "execTimer", "structscore_1_1_document_context.html#aa66f8e03d18b7b055eca2070541480d0", null ],
     [ "focus", "structscore_1_1_document_context.html#a15dee1f5a48901298a1d0a8f651a18d6", null ],
     [ "objectLocker", "structscore_1_1_document_context.html#a71058c3d32e82917cf3e8eb429e22317", null ],
-    [ "selectionStack", "structscore_1_1_document_context.html#ab07daa73d84357e9419a6500b9f9dff5", null ],
-    [ "updateTimer", "structscore_1_1_document_context.html#aff5d4aa6bf90e191a9d31e36bf720e4d", null ]
+    [ "selectionStack", "structscore_1_1_document_context.html#ab07daa73d84357e9419a6500b9f9dff5", null ]
 ];
