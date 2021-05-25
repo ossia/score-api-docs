@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('score-plugin-gfx_2_gfx_2_settings_2_mo
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Gfx/Graph/renderstate.hpp&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Gfx/Graph/RenderState.hpp&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;score/plugins/ProjectSettings/ProjectSettingsModel.hpp&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;score/plugins/settingsdelegate/SettingsDelegateModel.hpp&gt;</span></div>
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('score-plugin-gfx_2_gfx_2_settings_2_mo
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_GFX_EXPORT, <span class="keywordtype">bool</span>, VSync)</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  GraphicsApi graphicsApiEnum() <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  score::gfx::GraphicsApi graphicsApiEnum() <span class="keyword">const</span> noexcept;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  QString getGraphicsApi() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span> setGraphicsApi(QString);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">void</span> GraphicsApiChanged(QString arg)</div>

@@ -101,50 +101,55 @@ $(document).ready(function(){initNavTree('classscore_1_1gfx_1_1_node_renderer.ht
 <div class="title">score::gfx::NodeRenderer Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Renderer for a given node.  
+ <a href="classscore_1_1gfx_1_1_node_renderer.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for score::gfx::NodeRenderer:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classscore_1_1gfx_1_1_node_renderer.png" usemap="#score::gfx::NodeRenderer_map" alt=""/>
   <map id="score::gfx::NodeRenderer_map" name="score::gfx::NodeRenderer_map">
-<area href="struct_rendered_i_s_f_node.html" alt="RenderedISFNode" shape="rect" coords="0,56,156,80"/>
-<area href="class_rendered_node.html" alt="RenderedNode" shape="rect" coords="415,56,571,80"/>
-<area href="class_gfx_1_1_spout_renderer.html" alt="Gfx::SpoutRenderer" shape="rect" coords="0,112,156,136"/>
-<area href="struct_images_node_1_1_rendered.html" alt="ImagesNode::Rendered" shape="rect" coords="166,112,322,136"/>
-<area href="struct_rendered_phong_node.html" alt="RenderedPhongNode" shape="rect" coords="332,112,488,136"/>
-<area href="struct_texgen_node_1_1_rendered.html" alt="TexgenNode::Rendered" shape="rect" coords="498,112,654,136"/>
-<area href="struct_video_node_1_1_rendered.html" alt="VideoNode::Rendered" shape="rect" coords="664,112,820,136"/>
-<area href="class_window_renderer.html" alt="WindowRenderer" shape="rect" coords="830,112,986,136"/>
+<area href="struct_rendered_depth_node.html" alt="RenderedDepthNode" shape="rect" coords="0,56,205,80"/>
+<area href="classscore_1_1gfx_1_1_generic_node_renderer.html" title="Generic renderer." alt="score::gfx::GenericNodeRenderer" shape="rect" coords="430,56,635,80"/>
+<area href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html" alt="score::gfx::RenderedISFNode" shape="rect" coords="645,56,850,80"/>
+<area href="classscore_1_1gfx_1_1_images_node_1_1_renderer.html" alt="score::gfx::ImagesNode::Renderer" shape="rect" coords="0,112,205,136"/>
+<area href="structscore_1_1gfx_1_1_rendered_phong_node.html" alt="score::gfx::RenderedPhongNode" shape="rect" coords="215,112,420,136"/>
+<area href="classscore_1_1gfx_1_1_screen_node_1_1_renderer.html" alt="score::gfx::ScreenNode::Renderer" shape="rect" coords="430,112,635,136"/>
+<area href="structscore_1_1gfx_1_1_texgen_node_1_1_rendered.html" alt="score::gfx::TexgenNode::Rendered" shape="rect" coords="645,112,850,136"/>
+<area href="structscore_1_1gfx_1_1_video_node_1_1_rendered.html" alt="score::gfx::VideoNode::Rendered" shape="rect" coords="860,112,1065,136"/>
   </map>
 </div></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Renderer for a given node. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac127687c0e96b35a7fa27f438f571d58"><td class="memItemLeft" align="right" valign="top"><a id="ac127687c0e96b35a7fa27f438f571d58"></a>
 virtual std::optional&lt; QSize &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetSize</b> () const noexcept=0</td></tr>
 <tr class="separator:ac127687c0e96b35a7fa27f438f571d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4db34e05f612b423e5053544dee045b"><td class="memItemLeft" align="right" valign="top"><a id="ad4db34e05f612b423e5053544dee045b"></a>
-virtual <a class="el" href="struct_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><b>renderTarget</b> () const noexcept=0</td></tr>
+virtual <a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><b>renderTarget</b> () const noexcept=0</td></tr>
 <tr class="separator:ad4db34e05f612b423e5053544dee045b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89f25cab4e2a484059e54614ccb635cf"><td class="memItemLeft" align="right" valign="top"><a id="a89f25cab4e2a484059e54614ccb635cf"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;renderer)=0</td></tr>
-<tr class="separator:a89f25cab4e2a484059e54614ccb635cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d70feecbef4eacaf703db974057b40d"><td class="memItemLeft" align="right" valign="top"><a id="a3d70feecbef4eacaf703db974057b40d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;renderer, QRhiResourceUpdateBatch &amp;res)=0</td></tr>
-<tr class="separator:a3d70feecbef4eacaf703db974057b40d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdd3cb44534b7f8550db5159d71172bc"><td class="memItemLeft" align="right" valign="top"><a id="abdd3cb44534b7f8550db5159d71172bc"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>runPass</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;, QRhiCommandBuffer &amp;commands, QRhiResourceUpdateBatch &amp;updateBatch)=0</td></tr>
-<tr class="separator:abdd3cb44534b7f8550db5159d71172bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61281387f18952e3b49bbf983f32ae25"><td class="memItemLeft" align="right" valign="top"><a id="a61281387f18952e3b49bbf983f32ae25"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;)=0</td></tr>
-<tr class="separator:a61281387f18952e3b49bbf983f32ae25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9497977dd47cf7416266fbcb19e90861"><td class="memItemLeft" align="right" valign="top"><a id="a9497977dd47cf7416266fbcb19e90861"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseWithoutRenderTarget</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;)=0</td></tr>
-<tr class="separator:a9497977dd47cf7416266fbcb19e90861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2a4f24715ae898eb03a2caba11f7fd0"><td class="memItemLeft" align="right" valign="top"><a id="af2a4f24715ae898eb03a2caba11f7fd0"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (<a class="el" href="structscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer)=0</td></tr>
+<tr class="separator:af2a4f24715ae898eb03a2caba11f7fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9808b5cf476d00be1214a68cf23a4f91"><td class="memItemLeft" align="right" valign="top"><a id="a9808b5cf476d00be1214a68cf23a4f91"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (<a class="el" href="structscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, QRhiResourceUpdateBatch &amp;res)=0</td></tr>
+<tr class="separator:a9808b5cf476d00be1214a68cf23a4f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fa0d8938f8b6f2f9dc6c652fd165832"><td class="memItemLeft" align="right" valign="top"><a id="a7fa0d8938f8b6f2f9dc6c652fd165832"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>runPass</b> (<a class="el" href="structscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;, QRhiCommandBuffer &amp;commands, QRhiResourceUpdateBatch &amp;updateBatch)=0</td></tr>
+<tr class="separator:a7fa0d8938f8b6f2f9dc6c652fd165832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab00c9cc3fa31204e95506913ae712b5e"><td class="memItemLeft" align="right" valign="top"><a id="ab00c9cc3fa31204e95506913ae712b5e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> (<a class="el" href="structscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;)=0</td></tr>
+<tr class="separator:ab00c9cc3fa31204e95506913ae712b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b678107e38dea2a188d5fed4d482716"><td class="memItemLeft" align="right" valign="top"><a id="a2b678107e38dea2a188d5fed4d482716"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseWithoutRenderTarget</b> (<a class="el" href="structscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;)=0</td></tr>
+<tr class="separator:a2b678107e38dea2a188d5fed4d482716"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="score-plugin-gfx_2_gfx_2_graph_2node_8hpp_source.html">score-plugin-gfx/Gfx/Graph/node.hpp</a></li>
-<li>node.cpp</li>
+<li><a class="el" href="_node_renderer_8hpp_source.html">NodeRenderer.hpp</a></li>
+<li>NodeRenderer.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

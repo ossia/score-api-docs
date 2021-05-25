@@ -1,6 +1,6 @@
 var classvst_1_1_window =
 [
-    [ "Window", "classvst_1_1_window.html#a92f30e478b96fbd03fe39871431386fd", null ],
-    [ "~Window", "classvst_1_1_window.html#a5388fe1ea0247653def5810c2998c270", null ],
-    [ "resize", "classvst_1_1_window.html#a86ff9b43289e79e46c33a9ff5e8303b5", null ]
+    [ "Window", "classvst_1_1_window.html#a318d55a917736c0870e8919d297c6b31", null ],
+    [ "~Window", "classvst_1_1_window.html#a6f59e9389256f8877ea5fdabd3fba7f0", null ],
+    [ "resize", "classvst_1_1_window.html#a18c4b356f496bb3cd8c141243e920c05", null ]
 ];

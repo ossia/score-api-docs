@@ -218,7 +218,6 @@ var namespace_scenario =
     [ "ExecutionStatusProperty", "struct_scenario_1_1_execution_status_property.html", "struct_scenario_1_1_execution_status_property" ],
     [ "ExpressionEditorWidget", "class_scenario_1_1_expression_editor_widget.html", "class_scenario_1_1_expression_editor_widget" ],
     [ "ExpressionMenu", "class_scenario_1_1_expression_menu.html", "class_scenario_1_1_expression_menu" ],
-    [ "ExtendedMetadataWidget", "class_scenario_1_1_extended_metadata_widget.html", "class_scenario_1_1_extended_metadata_widget" ],
     [ "FixedHandle", "class_scenario_1_1_fixed_handle.html", "class_scenario_1_1_fixed_handle" ],
     [ "FixedSlotFooter", "class_scenario_1_1_fixed_slot_footer.html", "class_scenario_1_1_fixed_slot_footer" ],
     [ "FullSlot", "struct_scenario_1_1_full_slot.html", "struct_scenario_1_1_full_slot" ],

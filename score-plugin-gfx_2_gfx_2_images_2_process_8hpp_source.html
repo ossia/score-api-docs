@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('score-plugin-gfx_2_gfx_2_images_2_proc
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Gfx/CommandFactory.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Gfx/Graph/imagenode.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Gfx/Graph/ImageNode.hpp&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Gfx/Images/Metadata.hpp&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Library/LibraryInterface.hpp&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Process/Drop/ProcessDropHandler.hpp&gt;</span></div>
@@ -132,19 +132,19 @@ $(document).ready(function(){initNavTree('score-plugin-gfx_2_gfx_2_images_2_proc
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  ~<a class="code" href="class_gfx_1_1_images_1_1_model.html">Model</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">const</span> std::vector&lt;Image&gt;&amp; images() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> m_images; }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">void</span> setImages(<span class="keyword">const</span> std::vector&lt;Image&gt;&amp; f);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">void</span> addImage(<span class="keyword">const</span> <a class="code" href="struct_gfx_1_1_image.html">Image</a>&amp; im);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">const</span> std::vector&lt;score::gfx::Image&gt;&amp; images() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> m_images; }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">void</span> setImages(<span class="keyword">const</span> std::vector&lt;score::gfx::Image&gt;&amp; f);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">void</span> addImage(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_image.html">score::gfx::Image</a>&amp; im);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">void</span> removeImage(<span class="keywordtype">int</span> i);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span> imagesChanged() W_SIGNAL(imagesChanged);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  PROPERTY(</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      std::vector&lt;Image&gt;,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      std::vector&lt;score::gfx::Image&gt;,</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      images READ images WRITE setImages NOTIFY imagesChanged)</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  QString prettyName() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  std::vector&lt;Image&gt; m_images;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  std::vector&lt;score::gfx::Image&gt; m_images;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">using</span> <a class="code" href="class_process_1_1_process_factory___t.html">ProcessFactory</a> = <a class="code" href="class_process_1_1_process_factory___t.html">Process::ProcessFactory_T&lt;Gfx::Images::Model&gt;</a>;</div>
@@ -208,21 +208,25 @@ $(document).ready(function(){initNavTree('score-plugin-gfx_2_gfx_2_images_2_proc
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="struct_gfx_1_1_image.html">Gfx::Image</a>)</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;PROPERTY_COMMAND_T(Gfx, ChangeImages, Images::Model::p_images, <span class="stringliteral">&quot;Change images&quot;</span>)</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;SCORE_COMMAND_DECL_T(Gfx::ChangeImages)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">namespace </span>Gfx</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">using</span> <a class="code" href="structscore_1_1gfx_1_1_image.html">Image</a> = <a class="code" href="structscore_1_1gfx_1_1_image.html">score::gfx::Image</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="structscore_1_1gfx_1_1_image.html">score::gfx::Image</a>)</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;PROPERTY_COMMAND_T(Gfx, ChangeImages, Images::Model::p_images, <span class="stringliteral">&quot;Change images&quot;</span>)</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;SCORE_COMMAND_DECL_T(Gfx::ChangeImages)</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition:</b> TimeValue.hpp:19</div></div>
 <div class="ttc" id="aclass_library_1_1_library_interface_html"><div class="ttname"><a href="class_library_1_1_library_interface.html">Library::LibraryInterface</a></div><div class="ttdef"><b>Definition:</b> LibraryInterface.hpp:16</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:15</div></div>
-<div class="ttc" id="astruct_gfx_1_1_image_html"><div class="ttname"><a href="struct_gfx_1_1_image.html">Gfx::Image</a></div><div class="ttdef"><b>Definition:</b> imagenode.hpp:13</div></div>
 <div class="ttc" id="aclass_gfx_1_1_images_1_1_drop_handler_html"><div class="ttname"><a href="class_gfx_1_1_images_1_1_drop_handler.html">Gfx::Images::DropHandler</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Images/Process.hpp:59</div></div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition:</b> Identifier.hpp:56</div></div>
 <div class="ttc" id="aclass_process_1_1_process_drop_handler_html"><div class="ttname"><a href="class_process_1_1_process_drop_handler.html">Process::ProcessDropHandler</a></div><div class="ttdef"><b>Definition:</b> ProcessDropHandler.hpp:19</div></div>
 <div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Process.hpp:55</div></div>
 <div class="ttc" id="aclass_process_1_1_process_factory___t_html"><div class="ttname"><a href="class_process_1_1_process_factory___t.html">Process::ProcessFactory_T</a></div><div class="ttdef"><b>Definition:</b> GenericProcessFactory.hpp:14</div></div>
 <div class="ttc" id="aclass_gfx_1_1_images_1_1_model_html"><div class="ttname"><a href="class_gfx_1_1_images_1_1_model.html">Gfx::Images::Model</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Images/Process.hpp:13</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_image_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_image.html">score::gfx::Image</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:106</div></div>
 <div class="ttc" id="aclass_gfx_1_1_images_1_1_library_handler_html"><div class="ttname"><a href="class_gfx_1_1_images_1_1_library_handler.html">Gfx::Images::LibraryHandler</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Images/Process.hpp:52</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

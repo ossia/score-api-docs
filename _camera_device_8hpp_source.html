@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('_camera_device_8hpp_source.html',''); 
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Gfx/GfxDevice.hpp&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Gfx/GfxExecContext.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Gfx/Graph/videonode.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Gfx/Graph/VideoNode.hpp&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Video/CameraInput.hpp&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;ossia/gfx/texture_parameter.hpp&gt;</span></div>
@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('_camera_device_8hpp_source.html',''); 
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  std::shared_ptr&lt;::Video::CameraInput&gt; camera;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  int32_t node_id{};</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="struct_video_node.html">VideoNode</a>* node{};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_video_node.html">score::gfx::VideoNode</a>* node{};</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="class_gfx_1_1camera__parameter.html">camera_parameter</a>(</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_gfx_1_1camera__settings.html">camera_settings</a>&amp; settings,</div>
@@ -173,8 +173,8 @@ $(document).ready(function(){initNavTree('_camera_device_8hpp_source.html',''); 
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        settings.size[1],</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        settings.fps);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    node = <span class="keyword">new</span> <a class="code" href="struct_video_node.html">VideoNode</a>(proto.camera, {});</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    node_id = context-&gt;ui-&gt;register_node(std::unique_ptr&lt;VideoNode&gt;(node));</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    node = <span class="keyword">new</span> <a class="code" href="structscore_1_1gfx_1_1_video_node.html">score::gfx::VideoNode</a>(proto.camera, {});</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    node_id = context-&gt;ui-&gt;register_node(std::unique_ptr&lt;score::gfx::VideoNode&gt;(node));</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  }</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">void</span> pull_texture(ossia::gfx::port_index idx)<span class="keyword"> override</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">  </span>{</div>
@@ -355,7 +355,7 @@ $(document).ready(function(){initNavTree('_camera_device_8hpp_source.html',''); 
 <div class="ttc" id="astruct_gfx_1_1_camera_settings_html"><div class="ttname"><a href="struct_gfx_1_1_camera_settings.html">Gfx::CameraSettings</a></div><div class="ttdef"><b>Definition:</b> CameraDevice.hpp:159</div></div>
 <div class="ttc" id="aclass_device_1_1_device_enumerator_html"><div class="ttname"><a href="class_device_1_1_device_enumerator.html">Device::DeviceEnumerator</a></div><div class="ttdef"><b>Definition:</b> ProtocolFactoryInterface.hpp:23</div></div>
 <div class="ttc" id="aclass_gfx_1_1camera__parameter_html"><div class="ttname"><a href="class_gfx_1_1camera__parameter.html">Gfx::camera_parameter</a></div><div class="ttdef"><b>Definition:</b> CameraDevice.hpp:51</div></div>
-<div class="ttc" id="astruct_video_node_html"><div class="ttname"><a href="struct_video_node.html">VideoNode</a></div><div class="ttdef"><b>Definition:</b> videonode.hpp:14</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_video_node_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_video_node.html">score::gfx::VideoNode</a></div><div class="ttdoc">Model for rendering a video.</div><div class="ttdef"><b>Definition:</b> VideoNode.hpp:13</div></div>
 <div class="ttc" id="astruct_device_1_1_device_settings_html"><div class="ttname"><a href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a></div><div class="ttdef"><b>Definition:</b> DeviceSettings.hpp:15</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

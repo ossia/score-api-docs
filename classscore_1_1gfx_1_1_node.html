@@ -97,65 +97,62 @@ $(document).ready(function(){initNavTree('classscore_1_1gfx_1_1_node.html',''); 
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="classscore_1_1gfx_1_1_node-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">score::gfx::Node Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Root data model for visual nodes.  
+ <a href="classscore_1_1gfx_1_1_node.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for score::gfx::Node:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classscore_1_1gfx_1_1_node.png" usemap="#score::gfx::Node_map" alt=""/>
   <map id="score::gfx::Node_map" name="score::gfx::Node_map">
-<area href="classscore_1_1gfx_1_1_process_node.html" alt="score::gfx::ProcessNode" shape="rect" coords="79,56,228,80"/>
-<area href="struct_i_s_f_node.html" alt="ISFNode" shape="rect" coords="0,112,149,136"/>
-<area href="class_node_model.html" alt="NodeModel" shape="rect" coords="159,112,308,136"/>
-<area href="struct_color_node.html" alt="ColorNode" shape="rect" coords="318,168,467,192"/>
-<area href="struct_filter_node.html" alt="FilterNode" shape="rect" coords="318,224,467,248"/>
-<area href="struct_images_node.html" alt="ImagesNode" shape="rect" coords="318,280,467,304"/>
-<area href="struct_noise_node.html" alt="NoiseNode" shape="rect" coords="318,336,467,360"/>
-<area href="struct_output_node.html" alt="OutputNode" shape="rect" coords="318,392,467,416"/>
-<area href="struct_phong_node.html" alt="PhongNode" shape="rect" coords="318,448,467,472"/>
-<area href="struct_product_node.html" alt="ProductNode" shape="rect" coords="318,504,467,528"/>
-<area href="struct_texgen_node.html" alt="TexgenNode" shape="rect" coords="318,560,467,584"/>
-<area href="struct_video_node.html" alt="VideoNode" shape="rect" coords="318,616,467,640"/>
+<area href="classscore_1_1gfx_1_1_process_node.html" title="Common base class for nodes that map to score processes." alt="score::gfx::ProcessNode" shape="rect" coords="159,56,308,80"/>
+<area href="structscore_1_1gfx_1_1_depth_node.html" alt="score::gfx::DepthNode" shape="rect" coords="0,112,149,136"/>
+<area href="classscore_1_1gfx_1_1_i_s_f_node.html" title="Data model for Interactive Shader Format filters." alt="score::gfx::ISFNode" shape="rect" coords="159,112,308,136"/>
+<area href="classscore_1_1gfx_1_1_node_model.html" title="Common base class for most single-pass, simple nodes." alt="score::gfx::NodeModel" shape="rect" coords="318,112,467,136"/>
+<area href="structscore_1_1gfx_1_1_images_node.html" title="A node that renders an image to screen." alt="score::gfx::ImagesNode" shape="rect" coords="0,168,149,192"/>
+<area href="structscore_1_1gfx_1_1_output_node.html" title="Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)" alt="score::gfx::OutputNode" shape="rect" coords="159,168,308,192"/>
+<area href="structscore_1_1gfx_1_1_phong_node.html" alt="score::gfx::PhongNode" shape="rect" coords="318,168,467,192"/>
+<area href="structscore_1_1gfx_1_1_texgen_node.html" alt="score::gfx::TexgenNode" shape="rect" coords="477,168,626,192"/>
+<area href="structscore_1_1gfx_1_1_video_node.html" title="Model for rendering a video." alt="score::gfx::VideoNode" shape="rect" coords="636,168,785,192"/>
+<area href="structscore_1_1gfx_1_1_screen_node.html" title="This node is used for rendering to a window." alt="score::gfx::ScreenNode" shape="rect" coords="159,224,308,248"/>
   </map>
 </div></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Root data model for visual nodes. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4444e9cecd53beb8f0f53a629c71c92d"><td class="memItemLeft" align="right" valign="top"><a id="a4444e9cecd53beb8f0f53a629c71c92d"></a>
-virtual <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">NodeRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>createRenderer</b> (<a class="el" href="struct_renderer.html">Renderer</a> &amp;r) const noexcept=0</td></tr>
-<tr class="separator:a4444e9cecd53beb8f0f53a629c71c92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a929921dfd819c153d1d008a80f8fa9f8"><td class="memItemLeft" align="right" valign="top"><a id="a929921dfd819c153d1d008a80f8fa9f8"></a>
+virtual <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">NodeRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>createRenderer</b> (<a class="el" href="structscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;r) const noexcept=0</td></tr>
+<tr class="separator:a929921dfd819c153d1d008a80f8fa9f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f0baa97fa627840052c57813430c552"><td class="memItemLeft" align="right" valign="top"><a id="a5f0baa97fa627840052c57813430c552"></a>
-virtual const <a class="el" href="struct_mesh.html">Mesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>mesh</b> () const noexcept=0</td></tr>
+virtual const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>mesh</b> () const noexcept=0</td></tr>
 <tr class="separator:a5f0baa97fa627840052c57813430c552"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a32f530890af66e0ecee6c66cdf430146"><td class="memItemLeft" align="right" valign="top"><a id="a32f530890af66e0ecee6c66cdf430146"></a>
-std::vector&lt; <a class="el" href="struct_port.html">Port</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>input</b></td></tr>
+std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>input</b></td></tr>
 <tr class="separator:a32f530890af66e0ecee6c66cdf430146"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a935fed99509c3fc246aff9266567eae2"><td class="memItemLeft" align="right" valign="top"><a id="a935fed99509c3fc246aff9266567eae2"></a>
-std::vector&lt; <a class="el" href="struct_port.html">Port</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>output</b></td></tr>
-<tr class="separator:a935fed99509c3fc246aff9266567eae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae94437cae5a6008af2da8409729e9d48"><td class="memItemLeft" align="right" valign="top"><a id="ae94437cae5a6008af2da8409729e9d48"></a>
-ossia::flat_map&lt; <a class="el" href="struct_renderer.html">Renderer</a> *, <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>renderedNodes</b></td></tr>
-<tr class="separator:ae94437cae5a6008af2da8409729e9d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb7194d7e2605a0a39c17eb3ac3e2fa5"><td class="memItemLeft" align="right" valign="top"><a id="afb7194d7e2605a0a39c17eb3ac3e2fa5"></a>
+ossia::small_pod_vector&lt; <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>output</b></td></tr>
+<tr class="separator:afb7194d7e2605a0a39c17eb3ac3e2fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbac77035201ad0586b55fb7f9075ea8"><td class="memItemLeft" align="right" valign="top"><a id="abbac77035201ad0586b55fb7f9075ea8"></a>
+ossia::flat_map&lt; <a class="el" href="structscore_1_1gfx_1_1_render_list.html">RenderList</a> *, <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>renderedNodes</b></td></tr>
+<tr class="separator:abbac77035201ad0586b55fb7f9075ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c822b931b169c3225586c6c90150855"><td class="memItemLeft" align="right" valign="top"><a id="a2c822b931b169c3225586c6c90150855"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>addedToGraph</b> {}</td></tr>
 <tr class="separator:a2c822b931b169c3225586c6c90150855"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:aa4ecdcef9c0f9a4ba580f70b98eadd0b"><td class="memItemLeft" align="right" valign="top"><a id="aa4ecdcef9c0f9a4ba580f70b98eadd0b"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>NodeRenderer</b></td></tr>
-<tr class="separator:aa4ecdcef9c0f9a4ba580f70b98eadd0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="score-plugin-gfx_2_gfx_2_graph_2node_8hpp_source.html">score-plugin-gfx/Gfx/Graph/node.hpp</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="score-plugin-gfx_2_gfx_2_graph_2_node_8hpp_source.html">score-plugin-gfx/Gfx/Graph/Node.hpp</a></li>
+<li>Node.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

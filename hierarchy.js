@@ -136,8 +136,8 @@ var hierarchy =
     [ "audio_kind_attr", "structaudio__kind__attr.html", null ],
     [ "audio_mapping_attr", "structaudio__mapping__attr.html", null ],
     [ "Media::AudioInfo", "struct_media_1_1_audio_info.html", null ],
-    [ "AudioTexture", "struct_audio_texture.html", null ],
-    [ "AudioTextureUpload", "struct_audio_texture_upload.html", null ],
+    [ "score::gfx::AudioTexture", "structscore_1_1gfx_1_1_audio_texture.html", null ],
+    [ "score::gfx::AudioTextureUpload", "structscore_1_1gfx_1_1_audio_texture_upload.html", null ],
     [ "Control::AutoUISetup", "struct_control_1_1_auto_u_i_setup.html", null ],
     [ "vst3::AvailablePlugin", "structvst3_1_1_available_plugin.html", null ],
     [ "Media::AVCodecContext_Free", "struct_media_1_1_a_v_codec_context___free.html", null ],
@@ -671,7 +671,7 @@ var hierarchy =
     [ "score::dynarray_impl< T >", "classscore_1_1dynarray__impl.html", null ],
     [ "score::dynvector_impl< T >", "classscore_1_1dynvector__impl.html", null ],
     [ "Curve::EasingData", "struct_curve_1_1_easing_data.html", null ],
-    [ "Edge", "struct_edge.html", null ],
+    [ "score::gfx::Edge", "structscore_1_1gfx_1_1_edge.html", null ],
     [ "Process::MultiScriptDialog::EditorTab", "struct_process_1_1_multi_script_dialog_1_1_editor_tab.html", null ],
     [ "LV2::EffectContext", "struct_l_v2_1_1_effect_context.html", null ],
     [ "Scenario::ElementsProperties", "struct_scenario_1_1_elements_properties.html", null ],
@@ -832,19 +832,19 @@ var hierarchy =
     [ "score::GLCapabilities", "structscore_1_1_g_l_capabilities.html", null ],
     [ "LV2::GlobalContext", "struct_l_v2_1_1_global_context.html", null ],
     [ "Scenario::GoodOldDisplacementPolicy", "class_scenario_1_1_good_old_displacement_policy.html", null ],
-    [ "GPUVideoDecoder", "struct_g_p_u_video_decoder.html", [
-      [ "EmptyDecoder", "struct_empty_decoder.html", null ],
-      [ "HAPDecoder", "struct_h_a_p_decoder.html", [
-        [ "HAPDefaultDecoder", "struct_h_a_p_default_decoder.html", null ],
-        [ "HAPMDecoder", "struct_h_a_p_m_decoder.html", null ]
+    [ "score::gfx::GPUVideoDecoder", "structscore_1_1gfx_1_1_g_p_u_video_decoder.html", [
+      [ "score::gfx::EmptyDecoder", "structscore_1_1gfx_1_1_empty_decoder.html", null ],
+      [ "score::gfx::HAPDecoder", "structscore_1_1gfx_1_1_h_a_p_decoder.html", [
+        [ "score::gfx::HAPDefaultDecoder", "structscore_1_1gfx_1_1_h_a_p_default_decoder.html", null ],
+        [ "score::gfx::HAPMDecoder", "structscore_1_1gfx_1_1_h_a_p_m_decoder.html", null ]
       ] ],
-      [ "RGB0Decoder", "struct_r_g_b0_decoder.html", null ],
-      [ "UYVY422Decoder", "struct_u_y_v_y422_decoder.html", null ],
-      [ "YUV420Decoder", "struct_y_u_v420_decoder.html", null ],
-      [ "YUV422Decoder", "struct_y_u_v422_decoder.html", null ],
-      [ "YUYV422Decoder", "struct_y_u_y_v422_decoder.html", null ]
+      [ "score::gfx::RGB0Decoder", "structscore_1_1gfx_1_1_r_g_b0_decoder.html", null ],
+      [ "score::gfx::UYVY422Decoder", "structscore_1_1gfx_1_1_u_y_v_y422_decoder.html", null ],
+      [ "score::gfx::YUV420Decoder", "structscore_1_1gfx_1_1_y_u_v420_decoder.html", null ],
+      [ "score::gfx::YUV422Decoder", "structscore_1_1gfx_1_1_y_u_v422_decoder.html", null ],
+      [ "score::gfx::YUYV422Decoder", "structscore_1_1gfx_1_1_y_u_y_v422_decoder.html", null ]
     ] ],
-    [ "Graph", "struct_graph.html", null ],
+    [ "score::gfx::Graph", "structscore_1_1gfx_1_1_graph.html", null ],
     [ "graph_node", null, [
       [ "FaustDSP::Executor< DSP >::exec_node", "class_faust_d_s_p_1_1_executor_1_1exec__node.html", null ],
       [ "JS::Executor::js_node", "class_j_s_1_1_executor_1_1js__node.html", null ],
@@ -916,7 +916,7 @@ var hierarchy =
     [ "score::GUIElements", "structscore_1_1_g_u_i_elements.html", null ],
     [ "Execution::HandleNodeChange", "struct_execution_1_1_handle_node_change.html", null ],
     [ "RemoteControl::Handler", "struct_remote_control_1_1_handler.html", null ],
-    [ "HAPDecoder::HAPSection", "struct_h_a_p_decoder_1_1_h_a_p_section.html", null ],
+    [ "score::gfx::HAPDecoder::HAPSection", "structscore_1_1gfx_1_1_h_a_p_decoder_1_1_h_a_p_section.html", null ],
     [ "has_base", "structhas__base.html", null ],
     [ "has_no_base", "structhas__no__base.html", null ],
     [ "has_ui< T, std::enable_if_t< T::ui_interface > >", "structhas__ui_3_01_t_00_01std_1_1enable__if__t_3_01_t_1_1ui__interface_01_4_01_4.html", null ],
@@ -1036,8 +1036,8 @@ var hierarchy =
     [ "IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "Gfx::Image", "struct_gfx_1_1_image.html", null ],
-    [ "image", "structimage.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Media::Sound::QImagePool::Images", "struct_media_1_1_sound_1_1_q_image_pool_1_1_images.html", null ],
     [ "impl_t", null, [
       [ "Media::AudioFile::Handle", "struct_media_1_1_audio_file_1_1_handle.html", null ]
@@ -1433,6 +1433,8 @@ var hierarchy =
     [ "Control::is_control", "struct_control_1_1is__control.html", null ],
     [ "boost::spirit::traits::is_empty_container< QString >", "structboost_1_1spirit_1_1traits_1_1is__empty__container_3_01_q_string_01_4.html", null ],
     [ "score::Menu::is_toplevel", "structscore_1_1_menu_1_1is__toplevel.html", null ],
+    [ "score::gfx::isf_input_port_vis", "structscore_1_1gfx_1_1isf__input__port__vis.html", null ],
+    [ "score::gfx::isf_input_size_vis", "structscore_1_1gfx_1_1isf__input__size__vis.html", null ],
     [ "Scenario::ItemType", "class_scenario_1_1_item_type.html", null ],
     [ "Iterator", "struct_iterator.html", null ],
     [ "Jit::JitCompiler", "class_jit_1_1_jit_compiler.html", null ],
@@ -1499,16 +1501,16 @@ var hierarchy =
     [ "score::MenuManager", "classscore_1_1_menu_manager.html", null ],
     [ "score::Menus", "structscore_1_1_menus.html", null ],
     [ "Execution::Settings::MergingPolicies", "struct_execution_1_1_settings_1_1_merging_policies.html", null ],
-    [ "Mesh", "struct_mesh.html", [
-      [ "PlainMesh", "struct_plain_mesh.html", [
-        [ "PlainTriangle", "struct_plain_triangle.html", null ]
+    [ "score::gfx::Mesh", "structscore_1_1gfx_1_1_mesh.html", [
+      [ "score::gfx::PlainMesh", "structscore_1_1gfx_1_1_plain_mesh.html", [
+        [ "score::gfx::PlainTriangle", "structscore_1_1gfx_1_1_plain_triangle.html", null ]
       ] ],
-      [ "TexturedMesh", "struct_textured_mesh.html", [
-        [ "TexturedTriangle", "struct_textured_triangle.html", null ]
+      [ "score::gfx::TexturedMesh", "structscore_1_1gfx_1_1_textured_mesh.html", [
+        [ "score::gfx::TexturedTriangle", "structscore_1_1gfx_1_1_textured_triangle.html", null ]
       ] ],
-      [ "TextureNormalMesh", "struct_texture_normal_mesh.html", null ]
+      [ "score::gfx::TextureNormalMesh", "structscore_1_1gfx_1_1_texture_normal_mesh.html", null ]
     ] ],
-    [ "MeshBuffers", "struct_mesh_buffers.html", null ],
+    [ "score::gfx::MeshBuffers", "structscore_1_1gfx_1_1_mesh_buffers.html", null ],
     [ "LV2::Message", "struct_l_v2_1_1_message.html", null ],
     [ "State::Message", "struct_state_1_1_message.html", null ],
     [ "Scenario::Command::MessagePairs", "struct_scenario_1_1_command_1_1_message_pairs.html", null ],
@@ -1582,45 +1584,41 @@ var hierarchy =
     [ "Nodes::MathAudioGenerator::Node", "struct_nodes_1_1_math_audio_generator_1_1_node.html", null ],
     [ "Nodes::LFO::Node", "struct_nodes_1_1_l_f_o_1_1_node.html", null ],
     [ "Nodes::AudioLooper::Node", "struct_nodes_1_1_audio_looper_1_1_node.html", null ],
-    [ "Nodes::MidiUtil::Node", "struct_nodes_1_1_midi_util_1_1_node.html", null ],
-    [ "Nodes::Debug::Node", "struct_nodes_1_1_debug_1_1_node.html", null ],
+    [ "Ui::SignalDisplay::Node", "struct_ui_1_1_signal_display_1_1_node.html", null ],
     [ "Nodes::Direction::Node", "struct_nodes_1_1_direction_1_1_node.html", null ],
     [ "Nodes::Chord::Node", "struct_nodes_1_1_chord_1_1_node.html", null ],
+    [ "Nodes::ClassicalBeat::Node", "struct_nodes_1_1_classical_beat_1_1_node.html", null ],
     [ "Nodes::EmptyAudioMapping::Node", "struct_nodes_1_1_empty_audio_mapping_1_1_node.html", null ],
     [ "Nodes::Envelope::Node", "struct_nodes_1_1_envelope_1_1_node.html", null ],
     [ "Nodes::FactorOracle::Node", "struct_nodes_1_1_factor_oracle_1_1_node.html", null ],
     [ "Nodes::Gain::Node", "struct_nodes_1_1_gain_1_1_node.html", null ],
     [ "Nodes::MathGenerator::Node", "struct_nodes_1_1_math_generator_1_1_node.html", null ],
     [ "Nodes::MathMapping::Node", "struct_nodes_1_1_math_mapping_1_1_node.html", null ],
-    [ "Nodes::Arpeggiator::Node", "struct_nodes_1_1_arpeggiator_1_1_node.html", null ],
-    [ "Nodes::EmptyMidiMapping::Node", "struct_nodes_1_1_empty_midi_mapping_1_1_node.html", null ],
+    [ "Nodes::MidiUtil::Node", "struct_nodes_1_1_midi_util_1_1_node.html", null ],
     [ "Nodes::PitchToValue::Node", "struct_nodes_1_1_pitch_to_value_1_1_node.html", null ],
     [ "Nodes::Quantifier::Node", "struct_nodes_1_1_quantifier_1_1_node.html", null ],
     [ "Nodes::PulseToNote::Node", "struct_nodes_1_1_pulse_to_note_1_1_node.html", null ],
-    [ "Nodes::EmptyValueMapping::Node", "struct_nodes_1_1_empty_value_mapping_1_1_node.html", null ],
     [ "score::gfx::Node", "classscore_1_1gfx_1_1_node.html", [
       [ "score::gfx::ProcessNode", "classscore_1_1gfx_1_1_process_node.html", [
-        [ "ISFNode", "struct_i_s_f_node.html", null ],
-        [ "NodeModel", "class_node_model.html", [
-          [ "ColorNode", "struct_color_node.html", null ],
-          [ "FilterNode", "struct_filter_node.html", null ],
-          [ "ImagesNode", "struct_images_node.html", null ],
-          [ "NoiseNode", "struct_noise_node.html", null ],
-          [ "OutputNode", "struct_output_node.html", [
-            [ "Gfx::SpoutNode", "struct_gfx_1_1_spout_node.html", null ],
-            [ "ScreenNode", "struct_screen_node.html", null ]
+        [ "score::gfx::DepthNode", "structscore_1_1gfx_1_1_depth_node.html", null ],
+        [ "score::gfx::ISFNode", "classscore_1_1gfx_1_1_i_s_f_node.html", null ],
+        [ "score::gfx::NodeModel", "classscore_1_1gfx_1_1_node_model.html", [
+          [ "score::gfx::ImagesNode", "structscore_1_1gfx_1_1_images_node.html", null ],
+          [ "score::gfx::OutputNode", "structscore_1_1gfx_1_1_output_node.html", [
+            [ "score::gfx::ScreenNode", "structscore_1_1gfx_1_1_screen_node.html", null ]
           ] ],
-          [ "PhongNode", "struct_phong_node.html", null ],
-          [ "ProductNode", "struct_product_node.html", null ],
-          [ "TexgenNode", "struct_texgen_node.html", null ],
-          [ "VideoNode", "struct_video_node.html", null ]
+          [ "score::gfx::PhongNode", "structscore_1_1gfx_1_1_phong_node.html", null ],
+          [ "score::gfx::TexgenNode", "structscore_1_1gfx_1_1_texgen_node.html", null ],
+          [ "score::gfx::VideoNode", "structscore_1_1gfx_1_1_video_node.html", null ]
         ] ]
       ] ]
     ] ],
     [ "Nodes::Metro::Node", "struct_nodes_1_1_metro_1_1_node.html", null ],
+    [ "Nodes::EmptyMidiMapping::Node", "struct_nodes_1_1_empty_midi_mapping_1_1_node.html", null ],
     [ "Nodes::MathAudioFilter::Node", "struct_nodes_1_1_math_audio_filter_1_1_node.html", null ],
-    [ "Ui::SignalDisplay::Node", "struct_ui_1_1_signal_display_1_1_node.html", null ],
-    [ "Nodes::ClassicalBeat::Node", "struct_nodes_1_1_classical_beat_1_1_node.html", null ],
+    [ "Nodes::Arpeggiator::Node", "struct_nodes_1_1_arpeggiator_1_1_node.html", null ],
+    [ "Nodes::EmptyValueMapping::Node", "struct_nodes_1_1_empty_value_mapping_1_1_node.html", null ],
+    [ "Nodes::Debug::Node", "struct_nodes_1_1_debug_1_1_node.html", null ],
     [ "node_base", null, [
       [ "Gfx::camera_node", "class_gfx_1_1camera__node.html", null ],
       [ "Gfx::gfx_node_base", "class_gfx_1_1gfx__node__base.html", null ],
@@ -1632,15 +1630,15 @@ var hierarchy =
       [ "Pd::pd_process", "class_pd_1_1pd__process.html", null ]
     ] ],
     [ "score::gfx::NodeRenderer", "classscore_1_1gfx_1_1_node_renderer.html", [
-      [ "RenderedISFNode", "struct_rendered_i_s_f_node.html", null ],
-      [ "RenderedNode", "class_rendered_node.html", [
-        [ "Gfx::SpoutRenderer", "class_gfx_1_1_spout_renderer.html", null ],
-        [ "ImagesNode::Rendered", "struct_images_node_1_1_rendered.html", null ],
-        [ "RenderedPhongNode", "struct_rendered_phong_node.html", null ],
-        [ "TexgenNode::Rendered", "struct_texgen_node_1_1_rendered.html", null ],
-        [ "VideoNode::Rendered", "struct_video_node_1_1_rendered.html", null ],
-        [ "WindowRenderer", "class_window_renderer.html", null ]
-      ] ]
+      [ "RenderedDepthNode", "struct_rendered_depth_node.html", null ],
+      [ "score::gfx::GenericNodeRenderer", "classscore_1_1gfx_1_1_generic_node_renderer.html", [
+        [ "score::gfx::ImagesNode::Renderer", "classscore_1_1gfx_1_1_images_node_1_1_renderer.html", null ],
+        [ "score::gfx::RenderedPhongNode", "structscore_1_1gfx_1_1_rendered_phong_node.html", null ],
+        [ "score::gfx::ScreenNode::Renderer", "classscore_1_1gfx_1_1_screen_node_1_1_renderer.html", null ],
+        [ "score::gfx::TexgenNode::Rendered", "structscore_1_1gfx_1_1_texgen_node_1_1_rendered.html", null ],
+        [ "score::gfx::VideoNode::Rendered", "structscore_1_1gfx_1_1_video_node_1_1_rendered.html", null ]
+      ] ],
+      [ "score::gfx::RenderedISFNode", "structscore_1_1gfx_1_1_rendered_i_s_f_node.html", null ]
     ] ],
     [ "Explorer::NodeUpdateProxy", "class_explorer_1_1_node_update_proxy.html", null ],
     [ "nonowning_graph_node", null, [
@@ -1747,6 +1745,9 @@ var hierarchy =
     [ "Protocols::OSCSpecificSettings", "struct_protocols_1_1_o_s_c_specific_settings.html", null ],
     [ "Pd::ossia_to_pd_value", "struct_pd_1_1ossia__to__pd__value.html", null ],
     [ "Jit::outlet_vis", "struct_jit_1_1outlet__vis.html", null ],
+    [ "OutputNode", null, [
+      [ "Gfx::SpoutNode", "struct_gfx_1_1_spout_node.html", null ]
+    ] ],
     [ "score::PaintVisitor", "structscore_1_1_paint_visitor.html", null ],
     [ "score::Brush::Pair", "structscore_1_1_brush_1_1_pair.html", null ],
     [ "score::PanelDelegate", "classscore_1_1_panel_delegate.html", [
@@ -1769,7 +1770,8 @@ var hierarchy =
       [ "score::PolymorphicComponentHierarchyManager< ParentComponent_T, ChildModel_T, ChildComponent_T, ChildComponentFactoryList_T, HasOwnership >", "classscore_1_1_polymorphic_component_hierarchy_manager.html", null ]
     ] ],
     [ "Scenario::ParentTimeInfo", "struct_scenario_1_1_parent_time_info.html", null ],
-    [ "Pass", "struct_pass.html", null ],
+    [ "score::gfx::Pass", "structscore_1_1gfx_1_1_pass.html", null ],
+    [ "RenderedDepthNode::Pass", "struct_rendered_depth_node_1_1_pass.html", null ],
     [ "Pd::PatchSpec", "struct_pd_1_1_patch_spec.html", null ],
     [ "Path< Object >", "class_path.html", null ],
     [ "Path< Automation::ProcessModel >", "class_path.html", null ],
@@ -1830,9 +1832,9 @@ var hierarchy =
     [ "Path< vst::Model >", "class_path.html", null ],
     [ "Patternist::Pattern", "struct_patternist_1_1_pattern.html", null ],
     [ "PdDataflowTest", "class_pd_dataflow_test.html", null ],
-    [ "PersistSampler", "struct_persist_sampler.html", null ],
+    [ "score::gfx::PersistSampler", "structscore_1_1gfx_1_1_persist_sampler.html", null ],
     [ "Protocols::PhidgetSpecificSettings", "struct_protocols_1_1_phidget_specific_settings.html", null ],
-    [ "Pipeline", "struct_pipeline.html", null ],
+    [ "score::gfx::Pipeline", "structscore_1_1gfx_1_1_pipeline.html", null ],
     [ "Process::Pixmaps", "struct_process_1_1_pixmaps.html", null ],
     [ "ossia::nodes::audio_metronome::played_sound", "structossia_1_1nodes_1_1audio__metronome_1_1played__sound.html", null ],
     [ "Execution::PlayFromIntervalScenarioPruner", "struct_execution_1_1_play_from_interval_scenario_pruner.html", null ],
@@ -1879,10 +1881,10 @@ var hierarchy =
     [ "Scenario::Point", "struct_scenario_1_1_point.html", null ],
     [ "Curve::Element::Point_tag", "struct_curve_1_1_element_1_1_point__tag.html", null ],
     [ "Curve::PointId", "struct_curve_1_1_point_id.html", null ],
-    [ "Process::DefaultEffectItem::Port", "struct_process_1_1_default_effect_item_1_1_port.html", null ],
-    [ "ControlSurface::Presenter::Port", "struct_control_surface_1_1_presenter_1_1_port.html", null ],
-    [ "Port", "struct_port.html", null ],
     [ "Gfx::Video::Presenter::Port", "struct_gfx_1_1_video_1_1_presenter_1_1_port.html", null ],
+    [ "ControlSurface::Presenter::Port", "struct_control_surface_1_1_presenter_1_1_port.html", null ],
+    [ "Process::DefaultEffectItem::Port", "struct_process_1_1_default_effect_item_1_1_port.html", null ],
+    [ "score::gfx::Port", "structscore_1_1gfx_1_1_port.html", null ],
     [ "Audio::PortAudioCard", "struct_audio_1_1_port_audio_card.html", null ],
     [ "Audio::PortAudioScope", "struct_audio_1_1_port_audio_scope.html", null ],
     [ "vst3::PortCreationVisitor", "structvst3_1_1_port_creation_visitor.html", null ],
@@ -2239,7 +2241,9 @@ var hierarchy =
       [ "score::QGraphicsSliderBase< QGraphicsIntSlider >", "structscore_1_1_q_graphics_slider_base.html", [
         [ "score::QGraphicsIntSlider", "classscore_1_1_q_graphics_int_slider.html", null ]
       ] ],
-      [ "score::QGraphicsSliderBase< QGraphicsLogSlider >", "structscore_1_1_q_graphics_slider_base.html", null ],
+      [ "score::QGraphicsSliderBase< QGraphicsLogSlider >", "structscore_1_1_q_graphics_slider_base.html", [
+        [ "score::QGraphicsLogSlider", "classscore_1_1_q_graphics_log_slider.html", null ]
+      ] ],
       [ "score::QGraphicsSliderBase< QGraphicsSlider >", "structscore_1_1_q_graphics_slider_base.html", [
         [ "score::QGraphicsSlider", "classscore_1_1_q_graphics_slider.html", null ]
       ] ],
@@ -2307,7 +2311,6 @@ var hierarchy =
       [ "score::QGraphicsMultiSlider", "classscore_1_1_q_graphics_multi_slider.html", null ],
       [ "score::QGraphicsNoteChooser", "classscore_1_1_q_graphics_note_chooser.html", null ],
       [ "score::QGraphicsSliderBase< T >", "structscore_1_1_q_graphics_slider_base.html", [
-        [ "score::QGraphicsLogSlider", "classscore_1_1_q_graphics_log_slider.html", null ],
         [ "vst3::VSTGraphicsSlider", "classvst3_1_1_v_s_t_graphics_slider.html", null ],
         [ "vst::GraphicsSlider", "classvst_1_1_graphics_slider.html", null ]
       ] ],
@@ -3113,7 +3116,6 @@ var hierarchy =
       [ "Scenario::EventShortCut", "class_scenario_1_1_event_short_cut.html", null ],
       [ "Scenario::EventSummaryWidget", "class_scenario_1_1_event_summary_widget.html", null ],
       [ "Scenario::ExpressionEditorWidget", "class_scenario_1_1_expression_editor_widget.html", null ],
-      [ "Scenario::ExtendedMetadataWidget", "class_scenario_1_1_extended_metadata_widget.html", null ],
       [ "Scenario::IntervalSummaryWidget", "class_scenario_1_1_interval_summary_widget.html", null ],
       [ "Scenario::MetadataWidget", "class_scenario_1_1_metadata_widget.html", null ],
       [ "Scenario::SelectionStackWidget", "class_scenario_1_1_selection_stack_widget.html", null ],
@@ -3162,7 +3164,7 @@ var hierarchy =
       [ "WidgetWrapper< Explorer::AddressSettingsWidget >", "class_widget_wrapper.html", null ]
     ] ],
     [ "QWindow", null, [
-      [ "Window", "class_window.html", null ]
+      [ "score::gfx::Window", "classscore_1_1gfx_1_1_window.html", null ]
     ] ],
     [ "score::random_id_generator", "structscore_1_1random__id__generator.html", null ],
     [ "RandomNameProvider", "class_random_name_provider.html", null ],
@@ -3187,8 +3189,11 @@ var hierarchy =
     [ "score::Modifier::Release_tag", "structscore_1_1_modifier_1_1_release__tag.html", null ],
     [ "ControlSurface::RemoteMessages", "struct_control_surface_1_1_remote_messages.html", null ],
     [ "PM::RemotePackage", "struct_p_m_1_1_remote_package.html", null ],
-    [ "Renderer", "struct_renderer.html", null ],
-    [ "RenderState", "struct_render_state.html", null ],
+    [ "RenderedNode", null, [
+      [ "Gfx::SpoutRenderer", "class_gfx_1_1_spout_renderer.html", null ]
+    ] ],
+    [ "score::gfx::RenderList", "structscore_1_1gfx_1_1_render_list.html", null ],
+    [ "score::gfx::RenderState", "structscore_1_1gfx_1_1_render_state.html", null ],
     [ "Scenario::RequestOverlayMenuCallback", "struct_scenario_1_1_request_overlay_menu_callback.html", null ],
     [ "score::RestorableDocument", "structscore_1_1_restorable_document.html", null ],
     [ "WidgetFactory::RGBAEdit", "struct_widget_factory_1_1_r_g_b_a_edit.html", [
@@ -3199,7 +3204,7 @@ var hierarchy =
     [ "Nodes::FactorOracle::safe_vector< int, 0 >", "struct_nodes_1_1_factor_oracle_1_1safe__vector.html", null ],
     [ "Nodes::FactorOracle::safe_vector_simple< T >", "struct_nodes_1_1_factor_oracle_1_1safe__vector__simple.html", null ],
     [ "Nodes::FactorOracle::safe_vector_simple< Nodes::FactorOracle::safe_vector< int, -1 > >", "struct_nodes_1_1_factor_oracle_1_1safe__vector__simple.html", null ],
-    [ "Sampler", "struct_sampler.html", null ],
+    [ "score::gfx::Sampler", "structscore_1_1gfx_1_1_sampler.html", null ],
     [ "Scenario::SavedPort", "struct_scenario_1_1_saved_port.html", null ],
     [ "Protocols::FixtureDatabase::Scan", "struct_protocols_1_1_fixture_database_1_1_scan.html", null ],
     [ "vst::ApplicationPlugin::ScanningProcess", "structvst_1_1_application_plugin_1_1_scanning_process.html", null ],
@@ -3222,12 +3227,11 @@ var hierarchy =
     [ "ScenarioRollbackStrategy", "struct_scenario_rollback_strategy.html", null ],
     [ "Scenario::ScenarioViewInterface", "class_scenario_1_1_scenario_view_interface.html", null ],
     [ "Execution::Settings::SchedulingPolicies", "struct_execution_1_1_settings_1_1_scheduling_policies.html", null ],
-    [ "ScreenUBO", "struct_screen_u_b_o.html", null ],
     [ "score::SecondSpinBox", "structscore_1_1_second_spin_box.html", null ],
     [ "Curve::Element::Segment_tag", "struct_curve_1_1_element_1_1_segment__tag.html", null ],
     [ "Curve::SegmentData", "struct_curve_1_1_segment_data.html", null ],
-    [ "Scenario::SelectedNodes", "struct_scenario_1_1_selected_nodes.html", null ],
     [ "Explorer::SelectedNodes", "struct_explorer_1_1_selected_nodes.html", null ],
+    [ "Scenario::SelectedNodes", "struct_scenario_1_1_selected_nodes.html", null ],
     [ "score::SelectionDispatcher", "classscore_1_1_selection_dispatcher.html", null ],
     [ "score::SerializableInterface< T >", "classscore_1_1_serializable_interface.html", null ],
     [ "score::SerializableInterface< DocumentPluginFactory >", "classscore_1_1_serializable_interface.html", [
@@ -3293,7 +3297,7 @@ var hierarchy =
     [ "Control::setup_Impl0< Info_T, Node_T, Element >", "struct_control_1_1setup___impl0.html", null ],
     [ "Control::setup_Impl1< Info, Element, Node_T >", "struct_control_1_1setup___impl1.html", null ],
     [ "Control::setup_Impl1_Out< Info, Element, Node_T >", "struct_control_1_1setup___impl1___out.html", null ],
-    [ "ShaderCache", "struct_shader_cache.html", null ],
+    [ "score::gfx::ShaderCache", "structscore_1_1gfx_1_1_shader_cache.html", null ],
     [ "Gfx::ShaderProgram", "struct_gfx_1_1_shader_program.html", [
       [ "Gfx::ProcessedProgram", "struct_gfx_1_1_processed_program.html", null ]
     ] ],
@@ -3326,27 +3330,27 @@ var hierarchy =
     [ "Device::ProtocolFactory::StandardCategories", "struct_device_1_1_protocol_factory_1_1_standard_categories.html", null ],
     [ "Scenario::StartDateComparator< T >", "struct_scenario_1_1_start_date_comparator.html", null ],
     [ "score::StartScreenLink", "structscore_1_1_start_screen_link.html", null ],
+    [ "Nodes::Quantifier::Node::State", "struct_nodes_1_1_quantifier_1_1_node_1_1_state.html", null ],
+    [ "Nodes::Direction::Node::State", "struct_nodes_1_1_direction_1_1_node_1_1_state.html", null ],
     [ "Nodes::MathAudioGenerator::Node::State", "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html", null ],
-    [ "Nodes::MathMapping::Node::State", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html", null ],
-    [ "Nodes::Arpeggiator::Node::State", "struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html", null ],
-    [ "Nodes::MathAudioFilter::Node::State", "struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html", null ],
+    [ "Nodes::MathGenerator::Node::State", "struct_nodes_1_1_math_generator_1_1_node_1_1_state.html", null ],
+    [ "Nodes::MidiUtil::Node::State", "struct_nodes_1_1_midi_util_1_1_node_1_1_state.html", null ],
+    [ "Nodes::AudioLooper::Node::State", "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html", null ],
     [ "Nodes::FactorOracle::Node::State", "struct_nodes_1_1_factor_oracle_1_1_node_1_1_state.html", null ],
     [ "Nodes::LFO::Node::State", "struct_nodes_1_1_l_f_o_1_1_node_1_1_state.html", null ],
-    [ "Nodes::Quantifier::Node::State", "struct_nodes_1_1_quantifier_1_1_node_1_1_state.html", null ],
-    [ "Nodes::PulseToNote::Node::State", "struct_nodes_1_1_pulse_to_note_1_1_node_1_1_state.html", null ],
+    [ "Nodes::Arpeggiator::Node::State", "struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html", null ],
+    [ "Nodes::MathAudioFilter::Node::State", "struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html", null ],
     [ "Nodes::Chord::Node::State", "struct_nodes_1_1_chord_1_1_node_1_1_state.html", null ],
-    [ "Nodes::MidiUtil::Node::State", "struct_nodes_1_1_midi_util_1_1_node_1_1_state.html", null ],
-    [ "Nodes::MathGenerator::Node::State", "struct_nodes_1_1_math_generator_1_1_node_1_1_state.html", null ],
-    [ "Nodes::Direction::Node::State", "struct_nodes_1_1_direction_1_1_node_1_1_state.html", null ],
-    [ "Nodes::AudioLooper::Node::State", "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html", null ],
+    [ "Nodes::PulseToNote::Node::State", "struct_nodes_1_1_pulse_to_note_1_1_node_1_1_state.html", null ],
+    [ "Nodes::MathMapping::Node::State", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html", null ],
+    [ "Process::StateNodeData", "struct_process_1_1_state_node_data.html", null ],
     [ "StateNodeData", null, [
       [ "TreeNode< StateNodeData >", "class_tree_node.html", null ]
     ] ],
-    [ "Process::StateNodeData", "struct_process_1_1_state_node_data.html", null ],
     [ "Process::StateNodeValues", "struct_process_1_1_state_node_values.html", null ],
     [ "Scenario::StateOverlays", "struct_scenario_1_1_state_overlays.html", null ],
-    [ "HierarchicalScenarioComponent< Component_T, Scenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T, HasOwnership >::StatePair", "struct_hierarchical_scenario_component_1_1_state_pair.html", null ],
     [ "HierarchicalBaseScenario< Component_T, BaseScenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T >::StatePair", "struct_hierarchical_base_scenario_1_1_state_pair.html", null ],
+    [ "HierarchicalScenarioComponent< Component_T, Scenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T, HasOwnership >::StatePair", "struct_hierarchical_scenario_component_1_1_state_pair.html", null ],
     [ "StdVariantDataStreamDeserializer< T >", "struct_std_variant_data_stream_deserializer.html", null ],
     [ "StdVariantDataStreamSerializer< T >", "struct_std_variant_data_stream_serializer.html", null ],
     [ "StdVariantJSONDeserializer< T >", "struct_std_variant_j_s_o_n_deserializer.html", null ],
@@ -3362,8 +3366,8 @@ var hierarchy =
     [ "StringKey< score::ActionCondition >", "class_string_key.html", null ],
     [ "StringKey< score::Menu >", "class_string_key.html", null ],
     [ "StringKey< score::Toolbar >", "class_string_key.html", null ],
-    [ "Curve::Style", "struct_curve_1_1_style.html", null ],
     [ "Process::Style", "struct_process_1_1_style.html", null ],
+    [ "Curve::Style", "struct_curve_1_1_style.html", null ],
     [ "Curve::StyleInterface", "struct_curve_1_1_style_interface.html", [
       [ "Curve::CurveLayerFactory_T< Model_T, LayerPresenter_T, LayerView_T, CurveColors_T, HeaderDelegate_T >", "class_curve_1_1_curve_layer_factory___t.html", null ]
     ] ],
@@ -3397,7 +3401,7 @@ var hierarchy =
     [ "texture_parameter", null, [
       [ "Gfx::gfx_parameter_base", "class_gfx_1_1gfx__parameter__base.html", null ]
     ] ],
-    [ "TextureRenderTarget", "struct_texture_render_target.html", null ],
+    [ "score::gfx::TextureRenderTarget", "structscore_1_1gfx_1_1_texture_render_target.html", null ],
     [ "score::ThreadPool", "classscore_1_1_thread_pool.html", null ],
     [ "Execution::Settings::TickPolicies", "struct_execution_1_1_settings_1_1_tick_policies.html", null ],
     [ "time_value", null, [
@@ -3408,8 +3412,8 @@ var hierarchy =
     [ "Scenario::TimenodeGraphConnectedComponent", "struct_scenario_1_1_timenode_graph_connected_component.html", null ],
     [ "Scenario::TimenodeProperties", "struct_scenario_1_1_timenode_properties.html", null ],
     [ "Jit::Timer", "struct_jit_1_1_timer.html", null ],
-    [ "HierarchicalScenarioComponent< Component_T, Scenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T, HasOwnership >::TimeSyncPair", "struct_hierarchical_scenario_component_1_1_time_sync_pair.html", null ],
     [ "HierarchicalBaseScenario< Component_T, BaseScenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T >::TimeSyncPair", "struct_hierarchical_base_scenario_1_1_time_sync_pair.html", null ],
+    [ "HierarchicalScenarioComponent< Component_T, Scenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T, HasOwnership >::TimeSyncPair", "struct_hierarchical_scenario_component_1_1_time_sync_pair.html", null ],
     [ "Scenario::MusicalGrid::timings", "struct_scenario_1_1_musical_grid_1_1timings.html", null ],
     [ "WidgetFactory::Toggle", "struct_widget_factory_1_1_toggle.html", [
       [ "Control::Toggle", "struct_control_1_1_toggle.html", null ]
@@ -3522,8 +3526,8 @@ var hierarchy =
       [ "score::StaticPropertyCommand< T >", "structscore_1_1_static_property_command.html", null ]
     ] ],
     [ "typeholder< T >", "structtypeholder.html", null ],
-    [ "ImagesNode::ubo", "struct_images_node_1_1ubo.html", null ],
-    [ "TexgenNode::ubo", "struct_texgen_node_1_1ubo.html", null ],
+    [ "score::gfx::TexgenNode::ubo", "structscore_1_1gfx_1_1_texgen_node_1_1ubo.html", null ],
+    [ "score::gfx::ImagesNode::UBO", "structscore_1_1gfx_1_1_images_node_1_1_u_b_o.html", null ],
     [ "UI", null, [
       [ "Faust::UI< Proc, Synth >", "struct_faust_1_1_u_i.html", [
         [ "Faust::UpdateUI< Proc, SetInit >", "struct_faust_1_1_update_u_i.html", null ]
@@ -3590,8 +3594,8 @@ var hierarchy =
     [ "visitor_object_tag", "structvisitor__object__tag.html", null ],
     [ "visitor_template_tag", "structvisitor__template__tag.html", null ],
     [ "VisitorVariant", "struct_visitor_variant.html", null ],
-    [ "vst3::vst_node_base::vst_control", "structvst3_1_1vst__node__base_1_1vst__control.html", null ],
     [ "vst::vst_node_base::vst_control", "structvst_1_1vst__node__base_1_1vst__control.html", null ],
+    [ "vst3::vst_node_base::vst_control", "structvst3_1_1vst__node__base_1_1vst__control.html", null ],
     [ "vst::VSTInfo", "structvst_1_1_v_s_t_info.html", null ],
     [ "Media::Sound::WaveformComputerImpl", "struct_media_1_1_sound_1_1_waveform_computer_impl.html", null ],
     [ "Media::Sound::WaveformRequest", "struct_media_1_1_sound_1_1_waveform_request.html", null ],

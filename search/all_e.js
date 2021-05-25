@@ -47,10 +47,10 @@ var searchData=
   ['oscspecificsettings_1425',['OSCSpecificSettings',['../struct_protocols_1_1_o_s_c_specific_settings.html',1,'Protocols']]],
   ['ossia_5fto_5fpd_5fvalue_1426',['ossia_to_pd_value',['../struct_pd_1_1ossia__to__pd__value.html',1,'Pd']]],
   ['outcontrol_1427',['OutControl',['../struct_control_1_1_out_control.html',1,'Control']]],
-  ['outlet_1428',['Outlet',['../class_outlet.html',1,'Outlet'],['../class_process_1_1_outlet.html',1,'Process::Outlet']]],
+  ['outlet_1428',['Outlet',['../class_process_1_1_outlet.html',1,'Process::Outlet'],['../class_outlet.html',1,'Outlet']]],
   ['outlet_5fvis_1429',['outlet_vis',['../struct_jit_1_1outlet__vis.html',1,'Jit']]],
   ['outletinspectorfactory_1430',['OutletInspectorFactory',['../class_dataflow_1_1_outlet_inspector_factory.html',1,'Dataflow']]],
-  ['outputnode_1431',['OutputNode',['../struct_output_node.html',1,'']]],
+  ['outputnode_1431',['OutputNode',['../structscore_1_1gfx_1_1_output_node.html',1,'score::gfx']]],
   ['overdub_1432',['overdub',['../struct_nodes_1_1_audio_looper_1_1_node.html#ad34503961f5ee389ed0333e6d9b1d5d2',1,'Nodes::AudioLooper::Node']]],
   ['overdub_5fnoecho_1433',['overdub_noecho',['../struct_nodes_1_1_audio_looper_1_1_node.html#a01bfcc8dceeb3b714854938605b7b2fa',1,'Nodes::AudioLooper::Node']]],
   ['owningdeviceinterface_1434',['OwningDeviceInterface',['../class_device_1_1_owning_device_interface.html',1,'Device']]]

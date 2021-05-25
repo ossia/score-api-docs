@@ -217,7 +217,7 @@ $(document).ready(function(){initNavTree('_kinect2_device_8hpp_source.html','');
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  std::shared_ptr&lt;kinect2_decoder&gt; decoder;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  int32_t node_id{};</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <a class="code" href="struct_video_node.html">VideoNode</a>* node{};</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  VideoNode* node{};</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <a class="code" href="class_gfx_1_1kinect2__parameter.html">kinect2_parameter</a>(</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      <span class="keyword">const</span> std::shared_ptr&lt;kinect2_decoder&gt;&amp; dec,</div>
@@ -226,7 +226,7 @@ $(document).ready(function(){initNavTree('_kinect2_device_8hpp_source.html','');
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      : ossia::gfx::texture_input_parameter{n}</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      , context{&amp;ctx}</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      , decoder{dec}</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      , node{<span class="keyword">new</span> <a class="code" href="struct_video_node.html">VideoNode</a>(decoder, {}, dec-&gt;filter)}</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      , node{<span class="keyword">new</span> VideoNode(decoder, {}, dec-&gt;filter)}</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  {</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    node_id = context-&gt;ui-&gt;register_node(std::unique_ptr&lt;VideoNode&gt;(node));</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  }</div>
@@ -400,7 +400,6 @@ $(document).ready(function(){initNavTree('_kinect2_device_8hpp_source.html','');
 <div class="ttc" id="aclass_gfx_1_1kinect2__device_html"><div class="ttname"><a href="class_gfx_1_1kinect2__device.html">Gfx::kinect2_device</a></div><div class="ttdef"><b>Definition:</b> Kinect2Device.hpp:183</div></div>
 <div class="ttc" id="aclass_gfx_1_1_kinect2_device_html"><div class="ttname"><a href="class_gfx_1_1_kinect2_device.html">Gfx::Kinect2Device</a></div><div class="ttdef"><b>Definition:</b> Kinect2Device.hpp:245</div></div>
 <div class="ttc" id="aclass_gfx_1_1_kinect2_settings_widget_html"><div class="ttname"><a href="class_gfx_1_1_kinect2_settings_widget.html">Gfx::Kinect2SettingsWidget</a></div><div class="ttdef"><b>Definition:</b> Kinect2Device.hpp:260</div></div>
-<div class="ttc" id="astruct_video_node_html"><div class="ttname"><a href="struct_video_node.html">VideoNode</a></div><div class="ttdef"><b>Definition:</b> videonode.hpp:14</div></div>
 <div class="ttc" id="astruct_device_1_1_device_settings_html"><div class="ttname"><a href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a></div><div class="ttdef"><b>Definition:</b> DeviceSettings.hpp:15</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

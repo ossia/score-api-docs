@@ -1,17 +1,5 @@
 var NAVTREEINDEX48 =
 {
-"struct_control_1_1_custom_u_i_setup.html#a1ec59ed8b27cdea17cfb4fef413161a9":[11,0,3,7,7],
-"struct_control_1_1_custom_u_i_setup.html#a1eed01131fe7c1fa36c68584903012e1":[11,0,3,7,5],
-"struct_control_1_1_custom_u_i_setup.html#a2737f785ce5717fdf701a66ac872e7c5":[11,0,3,7,1],
-"struct_control_1_1_custom_u_i_setup.html#a3b17fc3555e6d65abe63cb2b1e4f0b28":[11,0,3,7,3],
-"struct_control_1_1_custom_u_i_setup.html#a6598ed16cdb92d9e787adb53530907a0":[11,0,3,7,4],
-"struct_control_1_1_custom_u_i_setup.html#a8bebe5d464dc15acaf0c6b11622fcda8":[11,0,3,7,0],
-"struct_control_1_1_custom_u_i_setup.html#a8eb55c45bb08292b9c1f0e4b53a47156":[11,0,3,7,6],
-"struct_control_1_1_enum.html":[11,0,3,8],
-"struct_control_1_1_enum.html#ad02b2396471157c275d5158827839df7":[11,0,3,8,0],
-"struct_control_1_1_enum_base.html":[11,0,3,9],
-"struct_control_1_1_enum_base.html#a116798fe0e627e22f22bb90e024f436d":[11,0,3,9,8],
-"struct_control_1_1_enum_base.html#a1d1f4a70614afb6aa20ab87f1c0fb169":[11,0,3,9,5],
 "struct_control_1_1_enum_base.html#a209bdba659bf5230805333f01dc3b4ba":[11,0,3,9,9],
 "struct_control_1_1_enum_base.html#a352896069866c4f9751081e9756cf2c0":[11,0,3,9,7],
 "struct_control_1_1_enum_base.html#a3f5a05b7f209aa168bb81bed3d739dd4":[11,0,3,9,0],
@@ -249,5 +237,17 @@ var NAVTREEINDEX48 =
 "struct_curve_1_1_point_id.html#a0092d249b97b957c826c8c33cc5e660e":[11,0,5,28,0],
 "struct_curve_1_1_point_id.html#ad555fddd580909741fecdef261765544":[11,0,5,28,1],
 "struct_curve_1_1_segment_data.html":[11,0,5,34],
-"struct_curve_1_1_segment_data.html#a19516992543de4f5bf01c8280a9b8093":[11,0,5,34,0]
+"struct_curve_1_1_segment_data.html#a19516992543de4f5bf01c8280a9b8093":[11,0,5,34,0],
+"struct_curve_1_1_segment_data.html#a2a1bdf6f352132329c0948777023a03c":[11,0,5,34,3],
+"struct_curve_1_1_segment_data.html#a450f1b870034378143fb38e8f6d7ce9d":[11,0,5,34,6],
+"struct_curve_1_1_segment_data.html#a53f1819a00da9b693307201705e9fd99":[11,0,5,34,7],
+"struct_curve_1_1_segment_data.html#a6527d060235d65b1570c3a23f10fc29e":[11,0,5,34,1],
+"struct_curve_1_1_segment_data.html#a73311837ea6dc90a093ca90f2e783ee4":[11,0,5,34,8],
+"struct_curve_1_1_segment_data.html#a8fd77b8dd63ae6c9fe0e41f8f36914c4":[11,0,5,34,4],
+"struct_curve_1_1_segment_data.html#aa22908da5a33718a287aeb911eb2fe81":[11,0,5,34,12],
+"struct_curve_1_1_segment_data.html#aadfd25beeb747d05cf1d64f3b3f81ddb":[11,0,5,34,10],
+"struct_curve_1_1_segment_data.html#abe85c5e4976e1699fba4ca69910158ec":[11,0,5,34,11],
+"struct_curve_1_1_segment_data.html#ac90645ee720dc6c3914aa17dbbb81fe3":[11,0,5,34,2],
+"struct_curve_1_1_segment_data.html#ae777acdcabd505100f25987769254b41":[11,0,5,34,5],
+"struct_curve_1_1_segment_data.html#aea3c2b1abe95a88803324a1e6b1474ea":[11,0,5,34,13]
 };

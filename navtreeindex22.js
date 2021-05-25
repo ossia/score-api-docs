@@ -1,5 +1,13 @@
 var NAVTREEINDEX22 =
 {
+"class_process_1_1_change_port_address.html#a7794b4453075ece23351b759e6fc8f96":[11,0,35,7,1],
+"class_process_1_1_change_port_settings.html":[11,0,35,8],
+"class_process_1_1_change_port_settings.html#a537eef2136e1731d26babe30d434d02d":[11,0,35,8,1],
+"class_process_1_1_change_port_settings.html#ac3cbfb690e8f4295f0df755d89537a44":[11,0,35,8,0],
+"class_process_1_1_control_inlet.html":[11,0,35,10],
+"class_process_1_1_control_inlet.html#a090e429ec2585921ebfb752fd494b8fd":[11,0,35,10,3],
+"class_process_1_1_control_inlet.html#a1a5c744dc0e8b3931a7620285a85801f":[11,0,35,10,0],
+"class_process_1_1_control_inlet.html#a2529d38c85f0204c75d99c12575a68ef":[11,0,35,10,7],
 "class_process_1_1_control_inlet.html#a2dcea21f3391495fb334353c1c310165":[11,0,35,10,9],
 "class_process_1_1_control_inlet.html#a32d87f125b97ab227032a850391307e1":[11,0,35,10,8],
 "class_process_1_1_control_inlet.html#a4831079a4051affbb51e104b1ef65f24":[11,0,35,10,10],
@@ -241,13 +249,5 @@ var NAVTREEINDEX22 =
 "class_process_1_1_layer_presenter.html#acb4f4585c09d231eea4e244f8d480639":[11,0,35,45,15],
 "class_process_1_1_layer_presenter.html#ae0cb86445e1979d5234268206e64ad23":[11,0,35,45,9],
 "class_process_1_1_layer_presenter.html#ae35b15d21850f697cf8c84dc36ed134c":[11,0,35,45,17],
-"class_process_1_1_layer_presenter.html#ae928b2cb882f741b4a943ff6f2f2bec7":[11,0,35,45,7],
-"class_process_1_1_layer_presenter.html#aed1c404d3be06d317a8a65d4511fb94c":[11,0,35,45,5],
-"class_process_1_1_layer_presenter.html#af6bcfba7b1ab3c33b675e6e36fde6861":[11,0,35,45,13],
-"class_process_1_1_layer_presenter.html#af75a94b9278d37689a29b7c013be4f1d":[11,0,35,45,2],
-"class_process_1_1_layer_view.html":[11,0,35,46],
-"class_process_1_1_layer_view.html#a0511fffb7f828bd943a80bf9c113c22b":[11,0,35,46,6],
-"class_process_1_1_layer_view.html#a2be482183ab0e491abae841992757a5d":[11,0,35,46,5],
-"class_process_1_1_layer_view.html#a30123585a33c72146132d2b189b7e2ab":[11,0,35,46,8],
-"class_process_1_1_layer_view.html#a30b3954972f2cab8b970083fa6bf90a0":[11,0,35,46,32]
+"class_process_1_1_layer_presenter.html#ae928b2cb882f741b4a943ff6f2f2bec7":[11,0,35,45,7]
 };
