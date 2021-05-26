@@ -1,5 +1,6 @@
 var struct_execution_1_1_setup_context =
 [
+    [ "RegisteredPorts", "struct_execution_1_1_setup_context_1_1_registered_ports.html", "struct_execution_1_1_setup_context_1_1_registered_ports" ],
     [ "SetupContext", "struct_execution_1_1_setup_context.html#a4fc898c0f2618eaeaacab752d97e70ff", null ],
     [ "connectCable", "struct_execution_1_1_setup_context.html#aca50f72b15029e50d33847ba55fe8559", null ],
     [ "on_cableCreated", "struct_execution_1_1_setup_context.html#a2bc92ffd800d4c880ce60e2313b3d272", null ],
@@ -29,5 +30,5 @@ var struct_execution_1_1_setup_context =
     [ "m_cables", "struct_execution_1_1_setup_context.html#a3bd15520bd171fee7bb81845848fa14c", null ],
     [ "outlets", "struct_execution_1_1_setup_context.html#ab8868208301b528bcb662b06b99aa8ef", null ],
     [ "proc_map", "struct_execution_1_1_setup_context.html#ab043559c6f517ca061b66359c4a42c80", null ],
-    [ "runtime_connections", "struct_execution_1_1_setup_context.html#ac5abcff5d141e3ad5b05243f411d53c1", null ]
+    [ "runtime_connections", "struct_execution_1_1_setup_context.html#a06daa8ff8cff9a3e9310de8cf82b5018", null ]
 ];

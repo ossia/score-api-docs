@@ -1,5 +1,6 @@
 var NAVTREEINDEX49 =
 {
+"struct_curve_1_1_segment_data.html#aea3c2b1abe95a88803324a1e6b1474ea":[11,0,5,34,13],
 "struct_curve_1_1_segment_data.html#afc3b9181ba4742879776b4579d154f68":[11,0,5,34,9],
 "struct_curve_1_1_style.html":[11,0,5,46],
 "struct_curve_1_1_style.html#a03394e1d0b8e6cca0a621a98f1c87c60":[11,0,5,46,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX49 =
 "struct_execution_1_1_scenario_component.html#aa135661651621d212e2c86c59f3af356":[11,0,9,40,2],
 "struct_execution_1_1_scenario_component.html#aaac896f1dc74484bf321c055d419d9cc":[11,0,9,40,0],
 "struct_execution_1_1_settings_1_1_commit_policies.html":[11,0,9,1,0],
-"struct_execution_1_1_settings_1_1_commit_policies.html#a302078563919afaa574e4fe32a397dd8":[11,0,9,1,0,3],
-"struct_execution_1_1_settings_1_1_commit_policies.html#a5545217d2d6961cf2e907d05c79ac65f":[11,0,9,1,0,2]
+"struct_execution_1_1_settings_1_1_commit_policies.html#a302078563919afaa574e4fe32a397dd8":[11,0,9,1,0,3]
 };

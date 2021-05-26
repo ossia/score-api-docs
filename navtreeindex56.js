@@ -1,5 +1,10 @@
 var NAVTREEINDEX56 =
 {
+"struct_q_meta_type_id_3_01_data_stream_writer_01_5_01_4.html#a3089c34349591c359d41ed4b1961c720a4416ccb2172621afe016c9b1fbeca2c5":[11,0,214,0],
+"struct_q_meta_type_id_3_01_device_1_1_device_settings_01_4.html":[11,0,215],
+"struct_q_meta_type_id_3_01_device_1_1_device_settings_01_4.html#a0b6e456eb904275be6d9e2f166f32a19adc154c18f9ba20f72b75f2342114437b":[11,0,215,0],
+"struct_q_meta_type_id_3_01_expand_mode_01_4.html":[11,0,216],
+"struct_q_meta_type_id_3_01_expand_mode_01_4.html#acf4392ad7eee4b2b77ffd78cbd5f5e05a35f3e6f63f5b182e2c2da321467b17a0":[11,0,216,0],
 "struct_q_meta_type_id_3_01_gfx_1_1_camera_settings_01_4.html":[11,0,217],
 "struct_q_meta_type_id_3_01_gfx_1_1_camera_settings_01_4.html#ade01c81852d97bb5477e030e1546ca24aaddf49cfd01e45c6d75b7397581f5789":[11,0,217,0],
 "struct_q_meta_type_id_3_01_gfx_1_1_kinect2_settings_01_4.html":[11,0,218],
@@ -244,10 +249,5 @@ var NAVTREEINDEX56 =
 "struct_recording_1_1_record_context.html#a433ea37ae707cb4aaff0a1b6128039cd":[11,0,37,10,17],
 "struct_recording_1_1_record_context.html#a4c20afc238267eda00fa4a0fad8a7c61":[11,0,37,10,4],
 "struct_recording_1_1_record_context.html#a509bf112604fc2a80f3f4ad767a5b309":[11,0,37,10,14],
-"struct_recording_1_1_record_context.html#a521eb901906f3a52c5c621685225596f":[11,0,37,10,1],
-"struct_recording_1_1_record_context.html#a787c69ca7fecfe27f5c33dfb4b1a349e":[11,0,37,10,9],
-"struct_recording_1_1_record_context.html#aa060b7dcf25b5abf2211a74da07dc6c5":[11,0,37,10,11],
-"struct_recording_1_1_record_context.html#aa22b4a445b15c03e375d3aa13e93463d":[11,0,37,10,3],
-"struct_recording_1_1_record_context.html#ab1be896cc24afbde3a1192c23a34fdf9":[11,0,37,10,18],
-"struct_recording_1_1_record_context.html#abc5396e8e5dfd3bc2a7e83a1a91a6738":[11,0,37,10,15]
+"struct_recording_1_1_record_context.html#a521eb901906f3a52c5c621685225596f":[11,0,37,10,1]
 };

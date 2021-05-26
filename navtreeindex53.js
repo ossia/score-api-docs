@@ -1,5 +1,10 @@
 var NAVTREEINDEX53 =
 {
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#a4736679a06f59f880b7ac1c1f568b072":[11,0,25,3,12,6],
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#a4b0211f06fb73562840f78a94f75ee05":[11,0,25,3,12,8],
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#a52654a48b3b8df1a791393e1439946ea":[11,0,25,3,12,13],
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#a6bddae0e109eb92e1f3f45eba1623a3b":[11,0,25,3,12,4],
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#a773e85bd25945d6447fb5f0dcbdc113a":[11,0,25,3,12,12],
 "struct_media_1_1_sound_1_1_waveform_computer_impl.html#a98cbe7cb83aee57f83777d70ec90d262":[11,0,25,3,12,9],
 "struct_media_1_1_sound_1_1_waveform_computer_impl.html#aae73ae8d4333064505686e3429e560e8":[11,0,25,3,12,7],
 "struct_media_1_1_sound_1_1_waveform_computer_impl.html#ab0fe3a8b5b2e6254ee6a229c9d4ff27b":[11,0,25,3,12,10],
@@ -244,10 +249,5 @@ var NAVTREEINDEX53 =
 "struct_nodes_1_1_factor_oracle_1_1safe__vector__simple.html#a8f09d39e1eed55066bad28ca68543099":[11,0,30,10,3,2],
 "struct_nodes_1_1_factor_oracle_1_1safe__vector__simple.html#ad05672a9714cfd35b57a638b749ce708":[11,0,30,10,3,1],
 "struct_nodes_1_1_factor_oracle_1_1safe__vector__simple.html#af875c410096ac782fa0239e0f13721fa":[11,0,30,10,3,0],
-"struct_nodes_1_1_gain_1_1_node.html":[11,0,30,11,0],
-"struct_nodes_1_1_gain_1_1_node.html#a0bb00d61911e143eebff333ec930c9ba":[11,0,30,11,0,1],
-"struct_nodes_1_1_gain_1_1_node_1_1_metadata.html":[11,0,30,11,0,0],
-"struct_nodes_1_1_l_f_o_1_1_node.html":[11,0,30,12,0],
-"struct_nodes_1_1_l_f_o_1_1_node.html#ae68b3cee962b6838deefc6a36b154407":[11,0,30,12,0,2],
-"struct_nodes_1_1_l_f_o_1_1_node_1_1_metadata.html":[11,0,30,12,0,0]
+"struct_nodes_1_1_gain_1_1_node.html":[11,0,30,11,0]
 };

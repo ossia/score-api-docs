@@ -1,5 +1,10 @@
 var NAVTREEINDEX59 =
 {
+"struct_state_1_1_address.html#afb51dfd82edc90f1adc8b269fd0feeaf":[11,0,46,0,4],
+"struct_state_1_1_address_accessor.html":[11,0,46,1],
+"struct_state_1_1_address_accessor.html#a04279c8c5678ad0a76686d5a5ea8f3b5":[11,0,46,1,11],
+"struct_state_1_1_address_accessor.html#a21bdffd01c5a79f63107aeffd4398f49":[11,0,46,1,7],
+"struct_state_1_1_address_accessor.html#a40453755458853fbe66346d8d55ddf3c":[11,0,46,1,3],
 "struct_state_1_1_address_accessor.html#a4322c06df67a7c07e61ff67f61ca65bc":[11,0,46,1,0],
 "struct_state_1_1_address_accessor.html#a58f69549709f4a7cbb789aeaddc85fd2":[11,0,46,1,16],
 "struct_state_1_1_address_accessor.html#a5be0f5a6a1423c7830a03f2b7efa2e6d":[11,0,46,1,5],
@@ -244,10 +249,5 @@ var NAVTREEINDEX59 =
 "struct_t_serializer_3_01_j_s_o_n_object_00_01eggs_1_1variant_3_01_args_8_8_8_01_4_01_4.html":[11,0,434],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01eggs_1_1variant_3_01_args_8_8_8_01_4_01_4.html#a6527bc244f938431c836426807fae5a2":[11,0,434,0],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01_t_01_4_01_4.html":[11,0,443],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01_t_01_4_01_4.html#a2139b55b481216c4ff11701049447bdd":[11,0,443,0],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01bool_01_4_01_4.html":[11,0,440],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01bool_01_4_01_4.html#aa59b32d76f3d932165d2d62ed0c445e7":[11,0,440,0],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01ossia_1_1impulse_01_4_01_4.html":[11,0,441],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01ossia_1_1impulse_01_4_01_4.html#ad64b3bc0cfecd1c9d1f5f56f07e89149":[11,0,441,0],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01std_1_1string_01_4_01_4.html":[11,0,442]
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01_t_01_4_01_4.html#a2139b55b481216c4ff11701049447bdd":[11,0,443,0]
 };

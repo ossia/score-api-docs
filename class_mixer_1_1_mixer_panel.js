@@ -8,6 +8,7 @@ var class_mixer_1_1_mixer_panel =
     [ "m_busLayout", "class_mixer_1_1_mixer_panel.html#a83164402626e0c3e1671a24484c15507", null ],
     [ "m_busWidget", "class_mixer_1_1_mixer_panel.html#adc356c91316646347c1e87ee843fb975", null ],
     [ "m_busWidgets", "class_mixer_1_1_mixer_panel.html#a78f1ec824230e6a7f4020c4c78328ebd", null ],
+    [ "m_currentDevice", "class_mixer_1_1_mixer_panel.html#a2e5fad81c90c741986cf6320c0136bf2", null ],
     [ "m_mappingInArea", "class_mixer_1_1_mixer_panel.html#a9ad1bf747d9ab179d50719aa1f7a7513", null ],
     [ "m_mappingInLayout", "class_mixer_1_1_mixer_panel.html#af17c28c258fa7182636b079c6f6bb2be", null ],
     [ "m_mappingInWidget", "class_mixer_1_1_mixer_panel.html#acddc5320e75b577b7d7134664efddfe8", null ],
