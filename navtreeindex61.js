@@ -1,5 +1,7 @@
 var NAVTREEINDEX61 =
 {
+"structossia_1_1node__graph__process.html":[11,0,31,2],
+"structossia_1_1node__graph__process.html#a135220c9c031a860a1dbd7c7ca27e88e":[11,0,31,2,1],
 "structossia_1_1node__graph__process.html#a1e0999accf1c0e3482d15ad7dd353082":[11,0,31,2,9],
 "structossia_1_1node__graph__process.html#a4ab304cba3f5c3aa41c487dcf5c14e07":[11,0,31,2,7],
 "structossia_1_1node__graph__process.html#a66f02c8c5e11eb05e46a2c672a4d29ae":[11,0,31,2,12],
@@ -247,7 +249,5 @@ var NAVTREEINDEX61 =
 "structscore_1_1_event_visitor.html#a92383937fce4208ec702d25583e83642":[11,0,42,92,5],
 "structscore_1_1_event_visitor.html#ab50587023848d802bbd646ecd575e306":[11,0,42,92,3],
 "structscore_1_1_event_visitor.html#acf6e23d060aff643c6ee16a4d7fc06db":[11,0,42,92,0],
-"structscore_1_1_event_visitor.html#af06753c4b3a0028cce2525e8630169c4":[11,0,42,92,7],
-"structscore_1_1_event_visitor.html#afa90f68deb6415628e011341dddbb38c":[11,0,42,92,2],
-"structscore_1_1_flicks_spin_box.html":[11,0,42,97]
+"structscore_1_1_event_visitor.html#af06753c4b3a0028cce2525e8630169c4":[11,0,42,92,7]
 };

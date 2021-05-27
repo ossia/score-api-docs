@@ -1,5 +1,7 @@
 var NAVTREEINDEX54 =
 {
+"struct_nodes_1_1_factor_oracle_1_1safe__vector__simple.html#af875c410096ac782fa0239e0f13721fa":[11,0,30,10,3,0],
+"struct_nodes_1_1_gain_1_1_node.html":[11,0,30,11,0],
 "struct_nodes_1_1_gain_1_1_node.html#a0bb00d61911e143eebff333ec930c9ba":[11,0,30,11,0,1],
 "struct_nodes_1_1_gain_1_1_node_1_1_metadata.html":[11,0,30,11,0,0],
 "struct_nodes_1_1_l_f_o_1_1_node.html":[11,0,30,12,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX54 =
 "struct_process_1_1_pixmaps.html#a3cfd99f9c1756f32ecbeba5a87402a9f":[11,0,35,57,15],
 "struct_process_1_1_pixmaps.html#a41dba16984afd98f047c6c6b25f2d02d":[11,0,35,57,16],
 "struct_process_1_1_pixmaps.html#a5b3ecb9d5a9121c62cba51fba2717c86":[11,0,35,57,13],
-"struct_process_1_1_pixmaps.html#a5edc78b09ca32e70814bca21aecbdbaf":[11,0,35,57,6],
-"struct_process_1_1_pixmaps.html#a5eddb2c57c3ceb88cb475c6248907a38":[11,0,35,57,18],
-"struct_process_1_1_pixmaps.html#a6a2e1ba7fd9672178470913504837846":[11,0,35,57,5]
+"struct_process_1_1_pixmaps.html#a5edc78b09ca32e70814bca21aecbdbaf":[11,0,35,57,6]
 };

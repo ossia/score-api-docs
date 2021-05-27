@@ -1,5 +1,7 @@
 var NAVTREEINDEX63 =
 {
+"structscore_1_1_string_constants.html#a40b6ea8e08d9bd658f5d9414e1b22b57":[11,0,42,240,21],
+"structscore_1_1_string_constants.html#a427f3ab0e29cc6ee351af7fbbdac464a":[11,0,42,240,88],
 "structscore_1_1_string_constants.html#a428b08bc33a8a3ef57f5a7af0080559c":[11,0,42,240,55],
 "structscore_1_1_string_constants.html#a43ce55c4f4ad6ddb8f1de5b39442c604":[11,0,42,240,94],
 "structscore_1_1_string_constants.html#a46b545fcb9e6fb2449ebe5013021e112":[11,0,42,240,85],
@@ -247,7 +249,5 @@ var NAVTREEINDEX63 =
 "structscore_1_1gfx_1_1_images_node_1_1_u_b_o.html#a308ae22a92c475a42399d90b40790fd5":[11,0,42,2,13,1,0],
 "structscore_1_1gfx_1_1_images_node_1_1_u_b_o.html#a37676b2bf66a71bc0ff0fc11e56bb09f":[11,0,42,2,13,1,1],
 "structscore_1_1gfx_1_1_images_node_1_1_u_b_o.html#a7516ddb0e0f9908e02f1a7f1eba54f2b":[11,0,42,2,13,1,2],
-"structscore_1_1gfx_1_1_mesh.html":[11,0,42,2,17],
-"structscore_1_1gfx_1_1_mesh.html#a1402b326670889f29c2a8c91c0b42eb4":[11,0,42,2,17,1],
-"structscore_1_1gfx_1_1_mesh.html#a2d3cbf97d6225f0ba21c2d6bf17f501f":[11,0,42,2,17,4]
+"structscore_1_1gfx_1_1_mesh.html":[11,0,42,2,17]
 };
