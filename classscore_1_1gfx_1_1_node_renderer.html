@@ -111,14 +111,14 @@ Inheritance diagram for score::gfx::NodeRenderer:</div>
   <img src="classscore_1_1gfx_1_1_node_renderer.png" usemap="#score::gfx::NodeRenderer_map" alt=""/>
   <map id="score::gfx::NodeRenderer_map" name="score::gfx::NodeRenderer_map">
 <area href="struct_rendered_depth_node.html" alt="RenderedDepthNode" shape="rect" coords="0,56,205,80"/>
-<area href="classscore_1_1gfx_1_1_generic_node_renderer.html" title="Generic renderer." alt="score::gfx::GenericNodeRenderer" shape="rect" coords="537,56,742,80"/>
-<area href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html" alt="score::gfx::RenderedISFNode" shape="rect" coords="752,56,957,80"/>
+<area href="classscore_1_1gfx_1_1_generic_node_renderer.html" title="Generic renderer." alt="score::gfx::GenericNodeRenderer" shape="rect" coords="430,56,635,80"/>
+<area href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html" alt="score::gfx::RenderedISFNode" shape="rect" coords="645,56,850,80"/>
+<area href="classscore_1_1gfx_1_1_video_node_renderer.html" alt="score::gfx::VideoNodeRenderer" shape="rect" coords="860,56,1065,80"/>
 <area href="class_gfx_1_1_spout_renderer.html" alt="Gfx::SpoutRenderer" shape="rect" coords="0,112,205,136"/>
 <area href="classscore_1_1gfx_1_1_images_node_1_1_renderer.html" alt="score::gfx::ImagesNode::Renderer" shape="rect" coords="215,112,420,136"/>
 <area href="structscore_1_1gfx_1_1_rendered_phong_node.html" alt="score::gfx::RenderedPhongNode" shape="rect" coords="430,112,635,136"/>
 <area href="classscore_1_1gfx_1_1_screen_node_1_1_renderer.html" alt="score::gfx::ScreenNode::Renderer" shape="rect" coords="645,112,850,136"/>
 <area href="structscore_1_1gfx_1_1_texgen_node_1_1_rendered.html" alt="score::gfx::TexgenNode::Rendered" shape="rect" coords="860,112,1065,136"/>
-<area href="structscore_1_1gfx_1_1_video_node_1_1_rendered.html" alt="score::gfx::VideoNode::Rendered" shape="rect" coords="1075,112,1280,136"/>
   </map>
 </div></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -133,19 +133,19 @@ virtual std::optional&lt; QSize &gt;&#160;</td><td class="memItemRight" valign="
 virtual <a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><b>renderTarget</b> () const noexcept=0</td></tr>
 <tr class="separator:ad4db34e05f612b423e5053544dee045b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2a4f24715ae898eb03a2caba11f7fd0"><td class="memItemLeft" align="right" valign="top"><a id="af2a4f24715ae898eb03a2caba11f7fd0"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (<a class="el" href="structscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer)=0</td></tr>
 <tr class="separator:af2a4f24715ae898eb03a2caba11f7fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9808b5cf476d00be1214a68cf23a4f91"><td class="memItemLeft" align="right" valign="top"><a id="a9808b5cf476d00be1214a68cf23a4f91"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (<a class="el" href="structscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, QRhiResourceUpdateBatch &amp;res)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, QRhiResourceUpdateBatch &amp;res)=0</td></tr>
 <tr class="separator:a9808b5cf476d00be1214a68cf23a4f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fa0d8938f8b6f2f9dc6c652fd165832"><td class="memItemLeft" align="right" valign="top"><a id="a7fa0d8938f8b6f2f9dc6c652fd165832"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>runPass</b> (<a class="el" href="structscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;, QRhiCommandBuffer &amp;commands, QRhiResourceUpdateBatch &amp;updateBatch)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>runPass</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;, QRhiCommandBuffer &amp;commands, QRhiResourceUpdateBatch &amp;updateBatch)=0</td></tr>
 <tr class="separator:a7fa0d8938f8b6f2f9dc6c652fd165832"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab00c9cc3fa31204e95506913ae712b5e"><td class="memItemLeft" align="right" valign="top"><a id="ab00c9cc3fa31204e95506913ae712b5e"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> (<a class="el" href="structscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;)=0</td></tr>
 <tr class="separator:ab00c9cc3fa31204e95506913ae712b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b678107e38dea2a188d5fed4d482716"><td class="memItemLeft" align="right" valign="top"><a id="a2b678107e38dea2a188d5fed4d482716"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseWithoutRenderTarget</b> (<a class="el" href="structscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseWithoutRenderTarget</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;)=0</td></tr>
 <tr class="separator:a2b678107e38dea2a188d5fed4d482716"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>

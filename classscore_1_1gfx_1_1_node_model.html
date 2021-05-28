@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('classscore_1_1gfx_1_1_node_model.html'
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classscore_1_1gfx_1_1_node_model-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -112,15 +112,14 @@ Inheritance diagram for score::gfx::NodeModel:</div>
  <div class="center">
   <img src="classscore_1_1gfx_1_1_node_model.png" usemap="#score::gfx::NodeModel_map" alt=""/>
   <map id="score::gfx::NodeModel_map" name="score::gfx::NodeModel_map">
-<area href="classscore_1_1gfx_1_1_process_node.html" title="Common base class for nodes that map to score processes." alt="score::gfx::ProcessNode" shape="rect" coords="318,56,467,80"/>
-<area href="classscore_1_1gfx_1_1_node.html" title="Root data model for visual nodes." alt="score::gfx::Node" shape="rect" coords="318,0,467,24"/>
+<area href="classscore_1_1gfx_1_1_process_node.html" title="Common base class for nodes that map to score processes." alt="score::gfx::ProcessNode" shape="rect" coords="238,56,387,80"/>
+<area href="classscore_1_1gfx_1_1_node.html" title="Root data model for visual nodes." alt="score::gfx::Node" shape="rect" coords="238,0,387,24"/>
 <area href="structscore_1_1gfx_1_1_images_node.html" title="A node that renders an image to screen." alt="score::gfx::ImagesNode" shape="rect" coords="0,168,149,192"/>
 <area href="structscore_1_1gfx_1_1_output_node.html" title="Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)" alt="score::gfx::OutputNode" shape="rect" coords="159,168,308,192"/>
 <area href="structscore_1_1gfx_1_1_phong_node.html" alt="score::gfx::PhongNode" shape="rect" coords="318,168,467,192"/>
 <area href="structscore_1_1gfx_1_1_texgen_node.html" alt="score::gfx::TexgenNode" shape="rect" coords="477,168,626,192"/>
-<area href="structscore_1_1gfx_1_1_video_node.html" title="Model for rendering a video." alt="score::gfx::VideoNode" shape="rect" coords="636,168,785,192"/>
 <area href="struct_gfx_1_1_spout_node.html" alt="Gfx::SpoutNode" shape="rect" coords="79,224,228,248"/>
-<area href="structscore_1_1gfx_1_1_screen_node.html" title="This node is used for rendering to a window." alt="score::gfx::ScreenNode" shape="rect" coords="238,224,387,248"/>
+<area href="structscore_1_1gfx_1_1_screen_node.html" title="This node is used for rendering to a score::gfx::Window." alt="score::gfx::ScreenNode" shape="rect" coords="238,224,387,248"/>
   </map>
 </div></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -129,7 +128,8 @@ Inheritance diagram for score::gfx::NodeModel:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0387ceb6dd0c296d7f4063413ecf09b7"><td class="memItemLeft" align="right" valign="top"><a id="a0387ceb6dd0c296d7f4063413ecf09b7"></a>
-virtual <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>createRenderer</b> (<a class="el" href="structscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;r) const noexcept</td></tr>
+virtual <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_model.html#a0387ceb6dd0c296d7f4063413ecf09b7">createRenderer</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;r) const noexcept</td></tr>
+<tr class="memdesc:a0387ceb6dd0c296d7f4063413ecf09b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a renderer in a given context for this node. <br /></td></tr>
 <tr class="separator:a0387ceb6dd0c296d7f4063413ecf09b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fc90b23e35c46df6a661778a7b81c50"><td class="memItemLeft" align="right" valign="top"><a id="a2fc90b23e35c46df6a661778a7b81c50"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setShaders</b> (const QShader &amp;vert, const QShader &amp;frag)</td></tr>
@@ -140,11 +140,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setShaders</b> (const
 <tr class="separator:abe3e5324b8df85751b01d0d02fbe49dd inherit pub_methods_classscore_1_1gfx_1_1_process_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1gfx_1_1_node"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1gfx_1_1_node')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a></td></tr>
 <tr class="memitem:a5f0baa97fa627840052c57813430c552 inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a5f0baa97fa627840052c57813430c552"></a>
-virtual const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>mesh</b> () const noexcept=0</td></tr>
+virtual const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node.html#a5f0baa97fa627840052c57813430c552">mesh</a> () const noexcept=0</td></tr>
+<tr class="memdesc:a5f0baa97fa627840052c57813430c552 inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structscore_1_1gfx_1_1_mesh.html" title="Data model for meshes.">Mesh</a> corresponding to this node. <br /></td></tr>
 <tr class="separator:a5f0baa97fa627840052c57813430c552 inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
 <tr class="memitem:a48b82838de11e7d255c8ba9f8ba5b568"><td class="memItemLeft" align="right" valign="top"><a id="a48b82838de11e7d255c8ba9f8ba5b568"></a>
 std::unique_ptr&lt; char[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_materialData</b></td></tr>
 <tr class="separator:a48b82838de11e7d255c8ba9f8ba5b568"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,32 +155,38 @@ QShader&#160;</td><td class="memItemRight" valign="bottom"><b>m_vertexS</b></td>
 <tr class="memitem:a57f98fdb116e1d6d73c7b637760644f4"><td class="memItemLeft" align="right" valign="top"><a id="a57f98fdb116e1d6d73c7b637760644f4"></a>
 QShader&#160;</td><td class="memItemRight" valign="bottom"><b>m_fragmentS</b></td></tr>
 <tr class="separator:a57f98fdb116e1d6d73c7b637760644f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_classscore_1_1gfx_1_1_process_node"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classscore_1_1gfx_1_1_process_node')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classscore_1_1gfx_1_1_process_node.html">score::gfx::ProcessNode</a></td></tr>
-<tr class="memitem:a34794efa953e27e1b11f3f66cabdb561 inherit pub_attribs_classscore_1_1gfx_1_1_process_node"><td class="memItemLeft" align="right" valign="top"><a id="a34794efa953e27e1b11f3f66cabdb561"></a>
-int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>materialChanged</b> {0}</td></tr>
-<tr class="separator:a34794efa953e27e1b11f3f66cabdb561 inherit pub_attribs_classscore_1_1gfx_1_1_process_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d1669ef6e4560e73f413f040c97e669 inherit pub_attribs_classscore_1_1gfx_1_1_process_node"><td class="memItemLeft" align="right" valign="top"><a id="a3d1669ef6e4560e73f413f040c97e669"></a>
-ProcessUBO&#160;</td><td class="memItemRight" valign="bottom"><b>standardUBO</b> {}</td></tr>
-<tr class="separator:a3d1669ef6e4560e73f413f040c97e669 inherit pub_attribs_classscore_1_1gfx_1_1_process_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_classscore_1_1gfx_1_1_node"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classscore_1_1gfx_1_1_node')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a></td></tr>
-<tr class="memitem:a32f530890af66e0ecee6c66cdf430146 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a32f530890af66e0ecee6c66cdf430146"></a>
-std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>input</b></td></tr>
-<tr class="separator:a32f530890af66e0ecee6c66cdf430146 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb7194d7e2605a0a39c17eb3ac3e2fa5 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="afb7194d7e2605a0a39c17eb3ac3e2fa5"></a>
-ossia::small_pod_vector&lt; <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>output</b></td></tr>
-<tr class="separator:afb7194d7e2605a0a39c17eb3ac3e2fa5 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbac77035201ad0586b55fb7f9075ea8 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="abbac77035201ad0586b55fb7f9075ea8"></a>
-ossia::flat_map&lt; <a class="el" href="structscore_1_1gfx_1_1_render_list.html">RenderList</a> *, <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>renderedNodes</b></td></tr>
-<tr class="separator:abbac77035201ad0586b55fb7f9075ea8 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c822b931b169c3225586c6c90150855 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a2c822b931b169c3225586c6c90150855"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>addedToGraph</b> {}</td></tr>
-<tr class="separator:a2c822b931b169c3225586c6c90150855 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a41bef6fa615e8de4f44129be70a36f33"><td class="memItemLeft" align="right" valign="top"><a id="a41bef6fa615e8de4f44129be70a36f33"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>GenericNodeRenderer</b></td></tr>
 <tr class="separator:a41bef6fa615e8de4f44129be70a36f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_classscore_1_1gfx_1_1_process_node"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classscore_1_1gfx_1_1_process_node')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classscore_1_1gfx_1_1_process_node.html">score::gfx::ProcessNode</a></td></tr>
+<tr class="memitem:a18bc0ee788516342e3151760b670fdb2 inherit pub_attribs_classscore_1_1gfx_1_1_process_node"><td class="memItemLeft" align="right" valign="top"><a id="a18bc0ee788516342e3151760b670fdb2"></a>
+std::atomic_int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_process_node.html#a18bc0ee788516342e3151760b670fdb2">materialChanged</a> {0}</td></tr>
+<tr class="memdesc:a18bc0ee788516342e3151760b670fdb2 inherit pub_attribs_classscore_1_1gfx_1_1_process_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to notify a material change from the model to the renderers. <br /></td></tr>
+<tr class="separator:a18bc0ee788516342e3151760b670fdb2 inherit pub_attribs_classscore_1_1gfx_1_1_process_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d1669ef6e4560e73f413f040c97e669 inherit pub_attribs_classscore_1_1gfx_1_1_process_node"><td class="memItemLeft" align="right" valign="top">ProcessUBO&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_process_node.html#a3d1669ef6e4560e73f413f040c97e669">standardUBO</a> {}</td></tr>
+<tr class="memdesc:a3d1669ef6e4560e73f413f040c97e669 inherit pub_attribs_classscore_1_1gfx_1_1_process_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every node matching with a score process will have such an UBO.  <a href="classscore_1_1gfx_1_1_process_node.html#a3d1669ef6e4560e73f413f040c97e669">More...</a><br /></td></tr>
+<tr class="separator:a3d1669ef6e4560e73f413f040c97e669 inherit pub_attribs_classscore_1_1gfx_1_1_process_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classscore_1_1gfx_1_1_node"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classscore_1_1gfx_1_1_node')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a></td></tr>
+<tr class="memitem:a32f530890af66e0ecee6c66cdf430146 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a32f530890af66e0ecee6c66cdf430146"></a>
+std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node.html#a32f530890af66e0ecee6c66cdf430146">input</a></td></tr>
+<tr class="memdesc:a32f530890af66e0ecee6c66cdf430146 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input ports of that node. <br /></td></tr>
+<tr class="separator:a32f530890af66e0ecee6c66cdf430146 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb7194d7e2605a0a39c17eb3ac3e2fa5 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memItemLeft" align="right" valign="top">ossia::small_pod_vector&lt; <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node.html#afb7194d7e2605a0a39c17eb3ac3e2fa5">output</a></td></tr>
+<tr class="memdesc:afb7194d7e2605a0a39c17eb3ac3e2fa5 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output ports of that node.  <a href="classscore_1_1gfx_1_1_node.html#afb7194d7e2605a0a39c17eb3ac3e2fa5">More...</a><br /></td></tr>
+<tr class="separator:afb7194d7e2605a0a39c17eb3ac3e2fa5 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbac77035201ad0586b55fb7f9075ea8 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="abbac77035201ad0586b55fb7f9075ea8"></a>
+ossia::flat_map&lt; <a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> *, <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node.html#abbac77035201ad0586b55fb7f9075ea8">renderedNodes</a></td></tr>
+<tr class="memdesc:abbac77035201ad0586b55fb7f9075ea8 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map associating each <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a> to a Renderer for this model. <br /></td></tr>
+<tr class="separator:abbac77035201ad0586b55fb7f9075ea8 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c822b931b169c3225586c6c90150855 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a2c822b931b169c3225586c6c90150855"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>addedToGraph</b> {}</td></tr>
+<tr class="separator:a2c822b931b169c3225586c6c90150855 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="score-plugin-gfx_2_gfx_2_graph_2_node_8hpp_source.html">score-plugin-gfx/Gfx/Graph/Node.hpp</a></li>

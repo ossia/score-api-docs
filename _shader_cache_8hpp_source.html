@@ -111,59 +111,60 @@ $(document).ready(function(){initNavTree('_shader_cache_8hpp_source.html',''); i
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>score::gfx</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_shader_cache.html">   14</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structscore_1_1gfx_1_1_shader_cache.html">ShaderCache</a></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> std::pair&lt;QShader, QString&gt;&amp;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  get(<span class="keyword">const</span> QByteArray&amp; shader, QShader::Stage stage)</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">static</span> <a class="code" href="structscore_1_1gfx_1_1_shader_cache.html">ShaderCache</a> <span class="keyword">self</span>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">auto</span> it = <span class="keyword">self</span>.shaders.find(shader); it != <span class="keyword">self</span>.shaders.end())</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <span class="keywordflow">return</span> it-&gt;second;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">self</span>.baker.setSourceString(shader, stage);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">auto</span> res = <span class="keyword">self</span>.shaders.insert(</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        {shader, {<span class="keyword">self</span>.baker.bake(), <span class="keyword">self</span>.baker.errorMessage()}});</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> res.first-&gt;second;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <a class="code" href="structscore_1_1_g_l_capabilities.html">score::GLCapabilities</a> m_caps;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_shader_cache.html">ShaderCache</a>()</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    QShaderVersion::Flags glFlag = m_caps.type == QSurfaceFormat::OpenGLES</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                       ? QShaderVersion::GlslEs</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                       : QShaderVersion::Flag{};</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    baker.setGeneratedShaders({</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      {QShader::SpirvShader, 100},</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;          {QShader::GlslShader, QShaderVersion(m_caps.shaderVersion, glFlag)},</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#if defined(_WIN32)</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;          {QShader::HlslShader, QShaderVersion(50)},</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#if defined(__APPLE__)</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;          {QShader::MslShader, QShaderVersion(12)},</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    });</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    baker.setGeneratedShaderVariants({</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      QShader::Variant{}, QShader::Variant{},</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#if defined(_WIN32)</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;          QShader::Variant{},</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#if defined(__APPLE__)</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;          QShader::Variant{},</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    });</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  QShaderBaker baker;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  std::unordered_map&lt;QByteArray, std::pair&lt;QShader, QString&gt;&gt; shaders;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_shader_cache.html">   17</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structscore_1_1gfx_1_1_shader_cache.html">ShaderCache</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> std::pair&lt;QShader, QString&gt;&amp;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_shader_cache.html#a5c14bd7cada0e8b004d350c81d3c6204">   26</a></span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_shader_cache.html#a5c14bd7cada0e8b004d350c81d3c6204">get</a>(<span class="keyword">const</span> QByteArray&amp; shader, QShader::Stage stage)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">static</span> <a class="code" href="structscore_1_1gfx_1_1_shader_cache.html">ShaderCache</a> <span class="keyword">self</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">auto</span> it = <span class="keyword">self</span>.shaders.find(shader); it != <span class="keyword">self</span>.shaders.end())</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <span class="keywordflow">return</span> it-&gt;second;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">self</span>.baker.setSourceString(shader, stage);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">auto</span> res = <span class="keyword">self</span>.shaders.insert(</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        {shader, {<span class="keyword">self</span>.baker.bake(), <span class="keyword">self</span>.baker.errorMessage()}});</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> res.first-&gt;second;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="structscore_1_1_g_l_capabilities.html">score::GLCapabilities</a> m_caps;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_shader_cache.html">ShaderCache</a>()</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    QShaderVersion::Flags glFlag = m_caps.type == QSurfaceFormat::OpenGLES</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                       ? QShaderVersion::GlslEs</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                       : QShaderVersion::Flag{};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    baker.setGeneratedShaders({</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      {QShader::SpirvShader, 100},</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;          {QShader::GlslShader, QShaderVersion(m_caps.shaderVersion, glFlag)},</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#if defined(_WIN32)</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;          {QShader::HlslShader, QShaderVersion(50)},</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#if defined(__APPLE__)</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;          {QShader::MslShader, QShaderVersion(12)},</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    });</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    baker.setGeneratedShaderVariants({</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      QShader::Variant{}, QShader::Variant{},</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#if defined(_WIN32)</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;          QShader::Variant{},</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#if defined(__APPLE__)</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;          QShader::Variant{},</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    });</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  QShaderBaker baker;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  std::unordered_map&lt;QByteArray, std::pair&lt;QShader, QString&gt;&gt; shaders;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructscore_1_1_g_l_capabilities_html"><div class="ttname"><a href="structscore_1_1_g_l_capabilities.html">score::GLCapabilities</a></div><div class="ttdef"><b>Definition:</b> OpenGL.hpp:9</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_shader_cache_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_shader_cache.html">score::gfx::ShaderCache</a></div><div class="ttdef"><b>Definition:</b> ShaderCache.hpp:14</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_shader_cache_html_a5c14bd7cada0e8b004d350c81d3c6204"><div class="ttname"><a href="structscore_1_1gfx_1_1_shader_cache.html#a5c14bd7cada0e8b004d350c81d3c6204">score::gfx::ShaderCache::get</a></div><div class="ttdeci">static const std::pair&lt; QShader, QString &gt; &amp; get(const QByteArray &amp;shader, QShader::Stage stage)</div><div class="ttdoc">Get a QShader from a source string.</div><div class="ttdef"><b>Definition:</b> ShaderCache.hpp:26</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_shader_cache_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_shader_cache.html">score::gfx::ShaderCache</a></div><div class="ttdoc">Cache of baked QShader instances.</div><div class="ttdef"><b>Definition:</b> ShaderCache.hpp:17</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

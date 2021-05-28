@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['opengl_5220',['opengl',['../structscore_1_1_application_settings.html#a4624f2eed8f8e9bacc8533cedff743c1',1,'score::ApplicationSettings']]]
+  ['loadlist_5273',['loadList',['../structscore_1_1_application_settings.html#ac4485606b08677be4115260f2e30b241',1,'score::ApplicationSettings']]]
 ];

@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('_rendered_i_s_f_node_8hpp_source.html'
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> updateAudioTexture(</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <a class="code" href="structscore_1_1gfx_1_1_audio_texture.html">AudioTexture</a>&amp; audio,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <a class="code" href="structscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer,</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      QRhiResourceUpdateBatch&amp; res,</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      std::vector&lt;Pass&gt;&amp; passes);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
@@ -159,23 +159,23 @@ $(document).ready(function(){initNavTree('_rendered_i_s_f_node_8hpp_source.html'
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  std::optional&lt;QSize&gt; renderTargetSize() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a> renderTarget() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> init(<a class="code" href="structscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">void</span> update(<a class="code" href="structscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, QRhiResourceUpdateBatch&amp; res) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> releaseWithoutRenderTarget(<a class="code" href="structscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> release(<a class="code" href="structscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> init(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">void</span> update(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, QRhiResourceUpdateBatch&amp; res) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> releaseWithoutRenderTarget(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> release(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> runPass(</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <a class="code" href="structscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer,</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      QRhiCommandBuffer&amp; cb,</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      QRhiResourceUpdateBatch&amp; res) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  std::pair&lt;Pass, Pass&gt;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  createPass(<a class="code" href="structscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, <a class="code" href="structscore_1_1gfx_1_1_persist_sampler.html">PersistSampler</a> target);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> initPasses(<a class="code" href="structscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  createPass(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, <a class="code" href="structscore_1_1gfx_1_1_persist_sampler.html">PersistSampler</a> target);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> initPasses(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">static</span> std::vector&lt;PersistSampler&gt; initPassSamplers(</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <a class="code" href="classscore_1_1gfx_1_1_i_s_f_node.html">ISFNode</a>&amp; n,</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <a class="code" href="structscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer,</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keywordtype">int</span>&amp; cur_pos,</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      QSize mainTexSize);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
@@ -205,11 +205,11 @@ $(document).ready(function(){initNavTree('_rendered_i_s_f_node_8hpp_source.html'
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdoc">Renderer for a given node.</div><div class="ttdef"><b>Definition:</b> NodeRenderer.hpp:10</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_persist_sampler_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_persist_sampler.html">score::gfx::PersistSampler</a></div><div class="ttdef"><b>Definition:</b> RenderedISFNode.hpp:18</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_pass_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_pass.html">score::gfx::Pass</a></div><div class="ttdef"><b>Definition:</b> RenderedISFNode.hpp:11</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdef"><b>Definition:</b> RenderList.hpp:15</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_audio_texture_upload_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_audio_texture_upload.html">score::gfx::AudioTextureUpload</a></div><div class="ttdef"><b>Definition:</b> RenderedISFNode.hpp:24</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_pipeline_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_pipeline.html">score::gfx::Pipeline</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:67</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_audio_texture_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_audio_texture.html">score::gfx::AudioTexture</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:25</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_i_s_f_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_i_s_f_node.html">score::gfx::ISFNode</a></div><div class="ttdoc">Data model for Interactive Shader Format filters.</div><div class="ttdef"><b>Definition:</b> ISFNode.hpp:17</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_i_s_f_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_i_s_f_node.html">score::gfx::ISFNode</a></div><div class="ttdoc">Data model for Interactive Shader Format filters.</div><div class="ttdef"><b>Definition:</b> ISFNode.hpp:19</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition:</b> RenderList.hpp:24</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

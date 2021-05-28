@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"class_curve_1_1_state_base.html":[11,0,5,45],
 "class_curve_1_1_state_base.html#a17b12b95766886872904b8198e67ab6a":[11,0,5,45,1],
 "class_curve_1_1_state_base.html#a489b5a9463cfb7b2408f7148b35c9a56":[11,0,5,45,3],
 "class_curve_1_1_state_base.html#a78eea5743fbb17b2ff90b4132513081e":[11,0,5,45,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "class_data_stream_writer.html#a2a19ae24812727f331e6f76904aee7b2":[11,0,94,134],
 "class_data_stream_writer.html#a2d593567358962dc52a4f43e2ecb1b06":[11,0,94,45],
 "class_data_stream_writer.html#a2db75e6015c3b5c63ee6d8164443404f":[11,0,94,139],
-"class_data_stream_writer.html#a2e9071ab8312e9a385dfbbfb14db11b6":[11,0,94,146],
-"class_data_stream_writer.html#a3052cc63b433318ab6c950666c721302":[11,0,94,25]
+"class_data_stream_writer.html#a2e9071ab8312e9a385dfbbfb14db11b6":[11,0,94,146]
 };

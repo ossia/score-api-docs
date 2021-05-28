@@ -1,5 +1,6 @@
 var NAVTREEINDEX25 =
 {
+"class_protocols_1_1_o_s_c_query_protocol_settings_widget.html#afa21b189ece72bca6273531e0dcd56d6":[11,0,36,45,0],
 "class_protocols_1_1_phidget_device.html":[11,0,36,48],
 "class_protocols_1_1_phidget_device.html#a71967564b7bc7ba6e9e21602a38f784f":[11,0,36,48,0],
 "class_protocols_1_1_phidget_device.html#aae33f440d3eb841a2ece183cc7c264c6":[11,0,36,48,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX25 =
 "class_scenario_1_1_base_scenario.html#a1eabf12b0ef172027f4b3d6c5c243bc5":[11,0,41,8,0],
 "class_scenario_1_1_base_scenario.html#a5ce178286920935c646932a79657d1c5":[11,0,41,8,1],
 "class_scenario_1_1_base_scenario.html#a85bf185aa65ed1c98fd410474ac9e69e":[11,0,41,8,4],
-"class_scenario_1_1_base_scenario.html#ac62396f200262a0bba3795dbc858d427":[11,0,41,8,5],
-"class_scenario_1_1_base_scenario.html#ad7bfe17398874acd1447802636f68972":[11,0,41,8,3]
+"class_scenario_1_1_base_scenario.html#ac62396f200262a0bba3795dbc858d427":[11,0,41,8,5]
 };

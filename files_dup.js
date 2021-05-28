@@ -1275,6 +1275,7 @@ var files_dup =
     [ "VideoDecoder.hpp", "_video_decoder_8hpp_source.html", null ],
     [ "VideoInterface.hpp", "_video_interface_8hpp_source.html", null ],
     [ "VideoNode.hpp", "_video_node_8hpp_source.html", null ],
+    [ "VideoNodeRenderer.hpp", "_video_node_renderer_8hpp_source.html", null ],
     [ "score-plugin-audio/Audio/Settings/View.hpp", "score-plugin-audio_2_audio_2_settings_2_view_8hpp_source.html", null ],
     [ "score-plugin-controlsurface/ControlSurface/View.hpp", "score-plugin-controlsurface_2_control_surface_2_view_8hpp_source.html", null ],
     [ "score-plugin-gfx/Gfx/Settings/View.hpp", "score-plugin-gfx_2_gfx_2_settings_2_view_8hpp_source.html", null ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"class_gfx_1_1kinect2__node.html#a3989c41ff576936316979b596d5495db":[11,0,13,33,1],
 "class_gfx_1_1kinect2__node.html#a80cc98ac778cc03795146a4b35177698":[11,0,13,33,0],
 "class_gfx_1_1kinect2__parameter.html":[11,0,13,34],
 "class_gfx_1_1kinect2__parameter.html#a3886affc4e31da6391c011f53047dcad":[11,0,13,34,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "class_interpolation_1_1_change_address.html#af4874db45ca2ccdaab1037cbffcd37a6":[11,0,17,0,3],
 "class_interpolation_1_1_colors.html":[11,0,17,1],
 "class_interpolation_1_1_colors.html#a60e1a58276c07f0f9ae8832394146f69":[11,0,17,1,1],
-"class_interpolation_1_1_colors.html#abda94851281be26648cbc4007c240a14":[11,0,17,1,0],
-"class_interpolation_1_1_inspector_factory.html":[11,0,17,2]
+"class_interpolation_1_1_colors.html#abda94851281be26648cbc4007c240a14":[11,0,17,1,0]
 };

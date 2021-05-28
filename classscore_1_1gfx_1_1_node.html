@@ -111,17 +111,17 @@ Inheritance diagram for score::gfx::Node:</div>
  <div class="center">
   <img src="classscore_1_1gfx_1_1_node.png" usemap="#score::gfx::Node_map" alt=""/>
   <map id="score::gfx::Node_map" name="score::gfx::Node_map">
-<area href="classscore_1_1gfx_1_1_process_node.html" title="Common base class for nodes that map to score processes." alt="score::gfx::ProcessNode" shape="rect" coords="159,56,308,80"/>
+<area href="classscore_1_1gfx_1_1_process_node.html" title="Common base class for nodes that map to score processes." alt="score::gfx::ProcessNode" shape="rect" coords="238,56,387,80"/>
 <area href="structscore_1_1gfx_1_1_depth_node.html" alt="score::gfx::DepthNode" shape="rect" coords="0,112,149,136"/>
 <area href="classscore_1_1gfx_1_1_i_s_f_node.html" title="Data model for Interactive Shader Format filters." alt="score::gfx::ISFNode" shape="rect" coords="159,112,308,136"/>
 <area href="classscore_1_1gfx_1_1_node_model.html" title="Common base class for most single-pass, simple nodes." alt="score::gfx::NodeModel" shape="rect" coords="318,112,467,136"/>
-<area href="structscore_1_1gfx_1_1_images_node.html" title="A node that renders an image to screen." alt="score::gfx::ImagesNode" shape="rect" coords="0,168,149,192"/>
-<area href="structscore_1_1gfx_1_1_output_node.html" title="Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)" alt="score::gfx::OutputNode" shape="rect" coords="159,168,308,192"/>
-<area href="structscore_1_1gfx_1_1_phong_node.html" alt="score::gfx::PhongNode" shape="rect" coords="318,168,467,192"/>
-<area href="structscore_1_1gfx_1_1_texgen_node.html" alt="score::gfx::TexgenNode" shape="rect" coords="477,168,626,192"/>
-<area href="structscore_1_1gfx_1_1_video_node.html" title="Model for rendering a video." alt="score::gfx::VideoNode" shape="rect" coords="636,168,785,192"/>
-<area href="struct_gfx_1_1_spout_node.html" alt="Gfx::SpoutNode" shape="rect" coords="79,224,228,248"/>
-<area href="structscore_1_1gfx_1_1_screen_node.html" title="This node is used for rendering to a window." alt="score::gfx::ScreenNode" shape="rect" coords="238,224,387,248"/>
+<area href="structscore_1_1gfx_1_1_video_node.html" title="Model for rendering a video." alt="score::gfx::VideoNode" shape="rect" coords="477,112,626,136"/>
+<area href="structscore_1_1gfx_1_1_images_node.html" title="A node that renders an image to screen." alt="score::gfx::ImagesNode" shape="rect" coords="79,168,228,192"/>
+<area href="structscore_1_1gfx_1_1_output_node.html" title="Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)" alt="score::gfx::OutputNode" shape="rect" coords="238,168,387,192"/>
+<area href="structscore_1_1gfx_1_1_phong_node.html" alt="score::gfx::PhongNode" shape="rect" coords="397,168,546,192"/>
+<area href="structscore_1_1gfx_1_1_texgen_node.html" alt="score::gfx::TexgenNode" shape="rect" coords="556,168,705,192"/>
+<area href="struct_gfx_1_1_spout_node.html" alt="Gfx::SpoutNode" shape="rect" coords="159,224,308,248"/>
+<area href="structscore_1_1gfx_1_1_screen_node.html" title="This node is used for rendering to a score::gfx::Window." alt="score::gfx::ScreenNode" shape="rect" coords="318,224,467,248"/>
   </map>
 </div></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -130,27 +130,49 @@ Inheritance diagram for score::gfx::Node:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a929921dfd819c153d1d008a80f8fa9f8"><td class="memItemLeft" align="right" valign="top"><a id="a929921dfd819c153d1d008a80f8fa9f8"></a>
-virtual <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">NodeRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>createRenderer</b> (<a class="el" href="structscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;r) const noexcept=0</td></tr>
+virtual <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">NodeRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node.html#a929921dfd819c153d1d008a80f8fa9f8">createRenderer</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;r) const noexcept=0</td></tr>
+<tr class="memdesc:a929921dfd819c153d1d008a80f8fa9f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a renderer in a given context for this node. <br /></td></tr>
 <tr class="separator:a929921dfd819c153d1d008a80f8fa9f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f0baa97fa627840052c57813430c552"><td class="memItemLeft" align="right" valign="top"><a id="a5f0baa97fa627840052c57813430c552"></a>
-virtual const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>mesh</b> () const noexcept=0</td></tr>
+virtual const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node.html#a5f0baa97fa627840052c57813430c552">mesh</a> () const noexcept=0</td></tr>
+<tr class="memdesc:a5f0baa97fa627840052c57813430c552"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structscore_1_1gfx_1_1_mesh.html" title="Data model for meshes.">Mesh</a> corresponding to this node. <br /></td></tr>
 <tr class="separator:a5f0baa97fa627840052c57813430c552"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a32f530890af66e0ecee6c66cdf430146"><td class="memItemLeft" align="right" valign="top"><a id="a32f530890af66e0ecee6c66cdf430146"></a>
-std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>input</b></td></tr>
+std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node.html#a32f530890af66e0ecee6c66cdf430146">input</a></td></tr>
+<tr class="memdesc:a32f530890af66e0ecee6c66cdf430146"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input ports of that node. <br /></td></tr>
 <tr class="separator:a32f530890af66e0ecee6c66cdf430146"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb7194d7e2605a0a39c17eb3ac3e2fa5"><td class="memItemLeft" align="right" valign="top"><a id="afb7194d7e2605a0a39c17eb3ac3e2fa5"></a>
-ossia::small_pod_vector&lt; <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>output</b></td></tr>
+<tr class="memitem:afb7194d7e2605a0a39c17eb3ac3e2fa5"><td class="memItemLeft" align="right" valign="top">ossia::small_pod_vector&lt; <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node.html#afb7194d7e2605a0a39c17eb3ac3e2fa5">output</a></td></tr>
+<tr class="memdesc:afb7194d7e2605a0a39c17eb3ac3e2fa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output ports of that node.  <a href="classscore_1_1gfx_1_1_node.html#afb7194d7e2605a0a39c17eb3ac3e2fa5">More...</a><br /></td></tr>
 <tr class="separator:afb7194d7e2605a0a39c17eb3ac3e2fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbac77035201ad0586b55fb7f9075ea8"><td class="memItemLeft" align="right" valign="top"><a id="abbac77035201ad0586b55fb7f9075ea8"></a>
-ossia::flat_map&lt; <a class="el" href="structscore_1_1gfx_1_1_render_list.html">RenderList</a> *, <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>renderedNodes</b></td></tr>
+ossia::flat_map&lt; <a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> *, <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node.html#abbac77035201ad0586b55fb7f9075ea8">renderedNodes</a></td></tr>
+<tr class="memdesc:abbac77035201ad0586b55fb7f9075ea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map associating each <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a> to a Renderer for this model. <br /></td></tr>
 <tr class="separator:abbac77035201ad0586b55fb7f9075ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c822b931b169c3225586c6c90150855"><td class="memItemLeft" align="right" valign="top"><a id="a2c822b931b169c3225586c6c90150855"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>addedToGraph</b> {}</td></tr>
 <tr class="separator:a2c822b931b169c3225586c6c90150855"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="afb7194d7e2605a0a39c17eb3ac3e2fa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb7194d7e2605a0a39c17eb3ac3e2fa5">&#9670;&nbsp;</a></span>output</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ossia::small_pod_vector&lt;<a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a>*, 1&gt; score::gfx::Node::output</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Output ports of that node. </p>
+<p>Most of the time there will be a single image output. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="score-plugin-gfx_2_gfx_2_graph_2_node_8hpp_source.html">score-plugin-gfx/Gfx/Graph/Node.hpp</a></li>
 <li>Node.cpp</li>

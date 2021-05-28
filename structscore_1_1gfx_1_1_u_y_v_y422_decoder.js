@@ -1,10 +1,8 @@
 var structscore_1_1gfx_1_1_u_y_v_y422_decoder =
 [
-    [ "UYVY422Decoder", "structscore_1_1gfx_1_1_u_y_v_y422_decoder.html#abdb972081e928718b7a4566251dfde74", null ],
-    [ "exec", "structscore_1_1gfx_1_1_u_y_v_y422_decoder.html#a462bd24e47f4fada64bed811bc373ca6", null ],
-    [ "init", "structscore_1_1gfx_1_1_u_y_v_y422_decoder.html#a07183a84973f8e98b14db18ced908544", null ],
-    [ "release", "structscore_1_1gfx_1_1_u_y_v_y422_decoder.html#a4d09f75eb051ffe2c8a1eafe4a55407d", null ],
-    [ "setYPixels", "structscore_1_1gfx_1_1_u_y_v_y422_decoder.html#a2c4bea528888262f6df4ccbe9dcebcd3", null ],
-    [ "decoder", "structscore_1_1gfx_1_1_u_y_v_y422_decoder.html#a84e8e49b676cbedec045f1bacda503ae", null ],
-    [ "node", "structscore_1_1gfx_1_1_u_y_v_y422_decoder.html#a971cd3f7889ce580e56f5b6af3abb8db", null ]
+    [ "UYVY422Decoder", "structscore_1_1gfx_1_1_u_y_v_y422_decoder.html#ac019e1819e731d1cc9099a108bbf9824", null ],
+    [ "exec", "structscore_1_1gfx_1_1_u_y_v_y422_decoder.html#a1f322cad2851262994e700c7ec930614", null ],
+    [ "init", "structscore_1_1gfx_1_1_u_y_v_y422_decoder.html#a87b12eb06fdcfd7d7fec3feceed88fe8", null ],
+    [ "setYPixels", "structscore_1_1gfx_1_1_u_y_v_y422_decoder.html#aec9e51ee241352e66fb25d8ea90ea10f", null ],
+    [ "decoder", "structscore_1_1gfx_1_1_u_y_v_y422_decoder.html#a84e8e49b676cbedec045f1bacda503ae", null ]
 ];

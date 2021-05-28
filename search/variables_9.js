@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['waitafterload_5227',['waitAfterLoad',['../structscore_1_1_application_settings.html#adf1c9cd0f8980bf337fb2ba639553011',1,'score::ApplicationSettings']]]
+  ['parents_5279',['parents',['../struct_explorer_1_1_selected_nodes.html#a0015ee94bbf39be77cee2942759bcc15',1,'Explorer::SelectedNodes::parents()'],['../struct_scenario_1_1_selected_nodes.html#a619183b1416115fdeda3b645ab7b8831',1,'Scenario::SelectedNodes::parents()']]],
+  ['processes_5280',['processes',['../class_scenario_1_1_interval_model.html#af5235bf42e20b416c7b1e6356f6622e8',1,'Scenario::IntervalModel']]]
 ];
