@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['serialization_5309',['Serialization',['../_serialization.html',1,'']]],
-  ['state_20machines_5310',['State Machines',['../_state_machines.html',1,'']]]
+  ['plug_2dins_2c_20factories_20and_20interfaces_5337',['Plug-ins, factories and interfaces',['../_plugins_factories_and_interfaces.html',1,'']]]
 ];

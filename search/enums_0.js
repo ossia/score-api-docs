@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['processflags_5293',['ProcessFlags',['../namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1',1,'Process']]]
+  ['graphicsapi_5320',['GraphicsApi',['../namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734',1,'score::gfx']]]
 ];

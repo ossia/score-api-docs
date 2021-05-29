@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('_gfx_context_8hpp_source.html',''); in
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;concurrentqueue.h&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;score_plugin_gfx_export.h&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>score::gfx</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore_1_1gfx.html">score::gfx</a></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">struct </span>Graph;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('_gfx_context_8hpp_source.html',''); in
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">struct </span>DocumentContext;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span>Gfx</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_gfx.html">Gfx</a></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">using</span> port_index = ossia::gfx::port_index;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
@@ -142,14 +142,14 @@ $(document).ready(function(){initNavTree('_gfx_context_8hpp_source.html',''); in
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">class </span><a class="code" href="class_gfx_1_1gfx__exec__node.html">gfx_exec_node</a>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">class </span><a class="code" href="class_gfx_1_1_gfx_execution_action.html">GfxExecutionAction</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_gfx_1_1gfx__window__context.html">   47</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="class_gfx_1_1gfx__window__context.html">gfx_window_context</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_gfx_1_1_gfx_context.html">   47</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="class_gfx_1_1_gfx_context.html">GfxContext</a> : <span class="keyword">public</span> QObject</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_gfx_1_1gfx__exec__node.html">gfx_exec_node</a>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_gfx_1_1_gfx_execution_action.html">GfxExecutionAction</a>;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_gfx_1_1gfx__window__context.html">gfx_window_context</a>(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  ~<a class="code" href="class_gfx_1_1gfx__window__context.html">gfx_window_context</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_gfx_1_1_gfx_context.html">GfxContext</a>(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  ~<a class="code" href="class_gfx_1_1_gfx_context.html">GfxContext</a>();</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  int32_t register_node(std::unique_ptr&lt;score::gfx::ProcessNode&gt; node);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">void</span> unregister_node(int32_t idx);</div>
@@ -186,11 +186,13 @@ $(document).ready(function(){initNavTree('_gfx_context_8hpp_source.html',''); in
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructscore_1_1gfx_1_1_graph_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_graph.html">score::gfx::Graph</a></div><div class="ttdoc">Represents a graph of renderers.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Graph.hpp:15</div></div>
-<div class="ttc" id="aclass_gfx_1_1gfx__window__context_html"><div class="ttname"><a href="class_gfx_1_1gfx__window__context.html">Gfx::gfx_window_context</a></div><div class="ttdef"><b>Definition:</b> GfxContext.hpp:47</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:15</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:65</div></div>
 <div class="ttc" id="aclass_gfx_1_1_gfx_execution_action_html"><div class="ttname"><a href="class_gfx_1_1_gfx_execution_action.html">Gfx::GfxExecutionAction</a></div><div class="ttdef"><b>Definition:</b> GfxExecContext.hpp:12</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition:</b> Vulkan.cpp:7</div></div>
 <div class="ttc" id="astruct_gfx_1_1gfx__message_html"><div class="ttname"><a href="struct_gfx_1_1gfx__message.html">Gfx::gfx_message</a></div><div class="ttdef"><b>Definition:</b> GfxContext.hpp:27</div></div>
+<div class="ttc" id="aclass_gfx_1_1_gfx_context_html"><div class="ttname"><a href="class_gfx_1_1_gfx_context.html">Gfx::GfxContext</a></div><div class="ttdef"><b>Definition:</b> GfxContext.hpp:47</div></div>
+<div class="ttc" id="anamespace_gfx_html"><div class="ttname"><a href="namespace_gfx.html">Gfx</a></div><div class="ttdoc">Binds the rendering pipeline to ossia processes.</div><div class="ttdef"><b>Definition:</b> CameraDevice.cpp:29</div></div>
 <div class="ttc" id="astruct_gfx_1_1gfx__view__node_html"><div class="ttname"><a href="struct_gfx_1_1gfx__view__node.html">Gfx::gfx_view_node</a></div><div class="ttdef"><b>Definition:</b> GfxContext.hpp:36</div></div>
 <div class="ttc" id="aclass_gfx_1_1gfx__exec__node_html"><div class="ttname"><a href="class_gfx_1_1gfx__exec__node.html">Gfx::gfx_exec_node</a></div><div class="ttdef"><b>Definition:</b> GfxExec.hpp:30</div></div>
 <!-- HTML footer for doxygen 1.8.8-->

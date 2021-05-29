@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['yuv420decoder_2631',['YUV420Decoder',['../structscore_1_1gfx_1_1_y_u_v420_decoder.html',1,'score::gfx']]],
-  ['yuv422decoder_2632',['YUV422Decoder',['../structscore_1_1gfx_1_1_y_u_v422_decoder.html',1,'score::gfx']]],
-  ['yuyv422decoder_2633',['YUYV422Decoder',['../structscore_1_1gfx_1_1_y_u_y_v422_decoder.html',1,'score::gfx']]]
+  ['xyslider_2643',['XYSlider',['../struct_widget_factory_1_1_x_y_slider.html',1,'WidgetFactory']]],
+  ['xyzedit_2644',['XYZEdit',['../struct_control_1_1_x_y_z_edit.html',1,'Control::XYZEdit'],['../struct_widget_factory_1_1_x_y_z_edit.html',1,'WidgetFactory::XYZEdit']]]
 ];

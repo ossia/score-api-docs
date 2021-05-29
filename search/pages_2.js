@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['model_2dview_2dpresenter_20separation_5307',['Model-View-Presenter separation',['../_model_view_presenter.html',1,'']]]
+  ['graphics_20plug_2dins_5335',['Graphics plug-ins',['../_gfx_plugins.html',1,'']]]
 ];

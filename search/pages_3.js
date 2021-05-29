@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['plug_2dins_2c_20factories_20and_20interfaces_5308',['Plug-ins, factories and interfaces',['../_plugins_factories_and_interfaces.html',1,'']]]
+  ['model_2dview_2dpresenter_20separation_5336',['Model-View-Presenter separation',['../_model_view_presenter.html',1,'']]]
 ];

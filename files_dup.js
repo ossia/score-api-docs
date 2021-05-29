@@ -446,6 +446,7 @@ var files_dup =
     [ "GfxExec.hpp", "_gfx_exec_8hpp_source.html", null ],
     [ "GfxExecContext.hpp", "_gfx_exec_context_8hpp_source.html", null ],
     [ "GfxParameter.hpp", "_gfx_parameter_8hpp_source.html", null ],
+    [ "gfxplugins.hpp", "gfxplugins_8hpp_source.html", null ],
     [ "GoodOldDisplacementPolicy.hpp", "_good_old_displacement_policy_8hpp_source.html", null ],
     [ "GPUVideoDecoder.hpp", "_g_p_u_video_decoder_8hpp_source.html", null ],
     [ "GradientExecution.hpp", "_gradient_execution_8hpp_source.html", null ],

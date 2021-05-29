@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['localtree_5084',['LocalTree',['../namespace_local_tree.html',1,'']]]
+  ['inspector_5098',['Inspector',['../namespace_inspector.html',1,'']]]
 ];
