@@ -267,7 +267,6 @@ var annotated_dup =
       [ "con_unvalidated", "struct_gfx_1_1con__unvalidated.html", "struct_gfx_1_1con__unvalidated" ],
       [ "control_updater", "struct_gfx_1_1control__updater.html", "struct_gfx_1_1control__updater" ],
       [ "DocumentPlugin", "class_gfx_1_1_document_plugin.html", "class_gfx_1_1_document_plugin" ],
-      [ "gfx_device", "class_gfx_1_1gfx__device.html", "class_gfx_1_1gfx__device" ],
       [ "gfx_exec_node", "class_gfx_1_1gfx__exec__node.html", "class_gfx_1_1gfx__exec__node" ],
       [ "gfx_message", "struct_gfx_1_1gfx__message.html", "struct_gfx_1_1gfx__message" ],
       [ "gfx_node_base", "class_gfx_1_1gfx__node__base.html", "class_gfx_1_1gfx__node__base" ],
@@ -305,6 +304,7 @@ var annotated_dup =
       [ "TextureInletFactory", "struct_gfx_1_1_texture_inlet_factory.html", "struct_gfx_1_1_texture_inlet_factory" ],
       [ "TextureOutlet", "class_gfx_1_1_texture_outlet.html", "class_gfx_1_1_texture_outlet" ],
       [ "TextureOutletFactory", "struct_gfx_1_1_texture_outlet_factory.html", "struct_gfx_1_1_texture_outlet_factory" ],
+      [ "window_device", "class_gfx_1_1window__device.html", "class_gfx_1_1window__device" ],
       [ "WindowDevice", "class_gfx_1_1_window_device.html", "class_gfx_1_1_window_device" ],
       [ "WindowProtocolFactory", "class_gfx_1_1_window_protocol_factory.html", null ],
       [ "WindowSettingsWidget", "class_gfx_1_1_window_settings_widget.html", "class_gfx_1_1_window_settings_widget" ]

@@ -1,9 +1,5 @@
 var NAVTREEINDEX21 =
 {
-"class_opaque_string.html#ac2137d51cc24a149c3442d982cbb9373":[11,0,190,6],
-"class_opaque_string.html#adf332b2539bb81c6dc7ea98a311ae6ea":[11,0,190,2],
-"class_outlet.html":[11,0,192],
-"class_outlet.html#a2a7c9459f4ee7d9e484eb587c30d5c0e":[11,0,192,4],
 "class_outlet.html#a44bcab947b6525ab560a159897ba5683":[11,0,192,0],
 "class_outlet.html#a53b4a604b944ce2504e0b01dc9ef53f6":[11,0,192,3],
 "class_outlet.html#a64e2c206c7cb59d0e09541e4990f73a2":[11,0,192,5],
@@ -249,5 +245,9 @@ var NAVTREEINDEX21 =
 "class_process_1_1_cable.html#ab98396cda043effc216d2714a4670723":[11,0,35,5,7],
 "class_process_1_1_cable.html#ac45a7ec1e71a7cfb5ef775cfa345cc2d":[11,0,35,5,14],
 "class_process_1_1_cable.html#ad21867d7a23f242138702507b2a60b4e":[11,0,35,5,6],
-"class_process_1_1_cable.html#add84e150353535700364042f36a76e1a":[11,0,35,5,15]
+"class_process_1_1_cable.html#add84e150353535700364042f36a76e1a":[11,0,35,5,15],
+"class_process_1_1_change_port_address.html":[11,0,35,7],
+"class_process_1_1_change_port_address.html#a279f80d3b9afa474a45ef5806382936a":[11,0,35,7,0],
+"class_process_1_1_change_port_address.html#a7794b4453075ece23351b759e6fc8f96":[11,0,35,7,1],
+"class_process_1_1_change_port_settings.html":[11,0,35,8]
 };
