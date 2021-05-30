@@ -8,6 +8,7 @@ var class_library_1_1_processes_item_model =
     [ "headerData", "class_library_1_1_processes_item_model.html#aeb159e946a3c24f705043b4763befbc7", null ],
     [ "mimeData", "class_library_1_1_processes_item_model.html#af73cd03acdeea9278714823374731132", null ],
     [ "mimeTypes", "class_library_1_1_processes_item_model.html#add5cb1e242cf8ab9b34653e5bd6ec6d9", null ],
+    [ "on_newPlugin", "class_library_1_1_processes_item_model.html#a878b1511fbc26036903aa8b36be0643b", null ],
     [ "rootNode", "class_library_1_1_processes_item_model.html#a9f546f81488df400bc6fbcdc08f994bc", null ],
     [ "rootNode", "class_library_1_1_processes_item_model.html#a3b0b94dd44be8b0843bd492d58de00a3", null ],
     [ "supportedDragActions", "class_library_1_1_processes_item_model.html#a43b0a47282cfa51458c3209342a96485", null ]

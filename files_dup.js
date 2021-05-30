@@ -1073,6 +1073,7 @@ var files_dup =
     [ "ScriptWidget.hpp", "_script_widget_8hpp_source.html", null ],
     [ "SDLInterface.hpp", "_s_d_l_interface_8hpp_source.html", null ],
     [ "SearchLineEdit.hpp", "_search_line_edit_8hpp_source.html", null ],
+    [ "SectionMemoryManager.hpp", "_section_memory_manager_8hpp_source.html", null ],
     [ "Selectable.hpp", "_selectable_8hpp_source.html", null ],
     [ "Selection.hpp", "_selection_8hpp_source.html", null ],
     [ "SelectionButton.hpp", "_selection_button_8hpp_source.html", null ],
