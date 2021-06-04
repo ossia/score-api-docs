@@ -1,5 +1,9 @@
 var NAVTREEINDEX66 =
 {
+"structvst3_1_1vst__node__base_1_1_plugin_handle.html#a5edeed9593bb85938cb691a6fbcbbca7":[12,0,52,19,0,2],
+"structvst3_1_1vst__node__base_1_1_plugin_handle.html#a7584b216f07a57998d1e5ef36f0c32c6":[12,0,52,19,0,3],
+"structvst3_1_1vst__node__base_1_1vst__control.html":[12,0,52,19,1],
+"structvst3_1_1vst__node__base_1_1vst__control.html#a1c4f1d3f6df59a24180770d93eb7d445":[12,0,52,19,1,1],
 "structvst3_1_1vst__node__base_1_1vst__control.html#a7527a09d5e47be54d681075e864597be":[12,0,52,19,1,2],
 "structvst3_1_1vst__node__base_1_1vst__control.html#a7688f574ea15627529c83e52d8f9a3fb":[12,0,52,19,1,0],
 "structvst_1_1_a_effect_wrapper.html":[12,0,51,0],

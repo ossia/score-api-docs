@@ -265,6 +265,7 @@ var annotated_dup =
       [ "CompilerOptions", "struct_jit_1_1_compiler_options.html", "struct_jit_1_1_compiler_options" ],
       [ "Driver", "struct_jit_1_1_driver.html", "struct_jit_1_1_driver" ],
       [ "Exception", "struct_jit_1_1_exception.html", "struct_jit_1_1_exception" ],
+      [ "GlobalAtExit", "struct_jit_1_1_global_at_exit.html", "struct_jit_1_1_global_at_exit" ],
       [ "inlet_vis", "struct_jit_1_1inlet__vis.html", "struct_jit_1_1inlet__vis" ],
       [ "JitCompiler", "class_jit_1_1_jit_compiler.html", "class_jit_1_1_jit_compiler" ],
       [ "outlet_vis", "struct_jit_1_1outlet__vis.html", "struct_jit_1_1outlet__vis" ],
