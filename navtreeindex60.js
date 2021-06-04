@@ -1,5 +1,6 @@
 var NAVTREEINDEX60 =
 {
+"struct_t_serializer_3_01_data_stream_00_01ossia_1_1flat__map_3_01_t_00_01_u_01_4_01_4.html#a288aafceec752b4734f276f3d6164d07":[12,0,397,1],
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1flat__map_3_01_t_00_01_u_01_4_01_4.html#ac0e1c4334bcee1b6fd511f17b9b9ee0a":[12,0,397,0],
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1flat__set_3_01_t_01_4_01_4.html":[12,0,398],
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1flat__set_3_01_t_01_4_01_4.html#a6aa8798d97834f0d30f6d72130d30bf1":[12,0,398,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX60 =
 "struct_widget_factory_1_1_line_edit.html":[12,0,53,11],
 "struct_widget_factory_1_1_line_edit_1_1_line_edit_item.html":[12,0,53,11,0],
 "struct_widget_factory_1_1_line_edit_1_1_line_edit_item.html#ae4e55808d7ffb4b40e41e8034986f889":[12,0,53,11,0,0],
-"struct_widget_factory_1_1_linear_normalizer.html":[12,0,53,10],
-"struct_widget_factory_1_1_log_normalizer.html":[12,0,53,12]
+"struct_widget_factory_1_1_linear_normalizer.html":[12,0,53,10]
 };
