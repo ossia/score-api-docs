@@ -264,6 +264,7 @@ var annotated_dup =
       [ "ClangCC1Driver", "class_jit_1_1_clang_c_c1_driver.html", "class_jit_1_1_clang_c_c1_driver" ],
       [ "CompilerOptions", "struct_jit_1_1_compiler_options.html", "struct_jit_1_1_compiler_options" ],
       [ "Driver", "struct_jit_1_1_driver.html", "struct_jit_1_1_driver" ],
+      [ "EngineBuilder", "struct_jit_1_1_engine_builder.html", "struct_jit_1_1_engine_builder" ],
       [ "Exception", "struct_jit_1_1_exception.html", "struct_jit_1_1_exception" ],
       [ "GlobalAtExit", "struct_jit_1_1_global_at_exit.html", "struct_jit_1_1_global_at_exit" ],
       [ "inlet_vis", "struct_jit_1_1inlet__vis.html", "struct_jit_1_1inlet__vis" ],
