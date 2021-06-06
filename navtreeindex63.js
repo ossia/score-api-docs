@@ -1,7 +1,5 @@
 var NAVTREEINDEX63 =
 {
-"structscore_1_1_skin_1_1color__map.html#a830b508b072b339db1f9138f8fdbda73":[12,0,42,227,0,2],
-"structscore_1_1_slider_wrapper.html":[12,0,42,228],
 "structscore_1_1_slider_wrapper.html#a0110662ff279ea2bc2372711bdc73801":[12,0,42,228,10],
 "structscore_1_1_slider_wrapper.html#a050b585908fcb515bb206ba8f8487bff":[12,0,42,228,11],
 "structscore_1_1_slider_wrapper.html#a12036003799f4e526e231f0922ec6abc":[12,0,42,228,13],
@@ -249,5 +247,7 @@ var NAVTREEINDEX63 =
 "structscore_1_1gfx_1_1_default_shader_material.html":[12,0,42,2,2],
 "structscore_1_1gfx_1_1_default_shader_material.html#a3765edc802e3a69e0dbe9990740e09da":[12,0,42,2,2,1],
 "structscore_1_1gfx_1_1_default_shader_material.html#acc985788c23294febbc7876a63c1df5b":[12,0,42,2,2,2],
-"structscore_1_1gfx_1_1_default_shader_material.html#ad0fc59d72fbb432352cac0304bbea819":[12,0,42,2,2,0]
+"structscore_1_1gfx_1_1_default_shader_material.html#ad0fc59d72fbb432352cac0304bbea819":[12,0,42,2,2,0],
+"structscore_1_1gfx_1_1_depth_node.html":[12,0,42,2,3],
+"structscore_1_1gfx_1_1_depth_node.html#a188470c2b013a84f06fc6c071e8ea29a":[12,0,42,2,3,0]
 };
