@@ -1,6 +1,5 @@
 var NAVTREEINDEX61 =
 {
-"struct_widget_factory_1_1_log_normalizer.html":[12,0,53,12],
 "struct_widget_factory_1_1_multi_slider.html":[12,0,53,13],
 "struct_widget_factory_1_1_r_g_b_a_edit.html":[12,0,53,14],
 "struct_widget_factory_1_1_time_signature_validator.html":[12,0,53,15],
@@ -249,5 +248,6 @@ var NAVTREEINDEX61 =
 "structscore_1_1_dispatcher.html#ac607d244bc15a5ac6115cabf42bed536":[12,0,42,53,1],
 "structscore_1_1_dispatcher___t.html":[12,0,42,54],
 "structscore_1_1_dispatcher___t.html#a695dedbba1fb71ec69e2d2886748be40":[12,0,42,54,2],
-"structscore_1_1_dispatcher___t.html#add0638e1c42679a7a083c5f271f579c3":[12,0,42,54,0]
+"structscore_1_1_dispatcher___t.html#add0638e1c42679a7a083c5f271f579c3":[12,0,42,54,0],
+"structscore_1_1_dispatcher___t.html#afe5c712f514728519d742c7b9902c373":[12,0,42,54,1]
 };

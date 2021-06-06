@@ -11,6 +11,5 @@ var struct_jit_1_1_application_plugin =
     [ "m_addonsPaths", "struct_jit_1_1_application_plugin.html#a84cb0c0dbb21dbe9d5b9c30aa7992f00", null ],
     [ "m_addonsWatch", "struct_jit_1_1_application_plugin.html#a65cd094615e3f03b430f1891cbe0ffb0", null ],
     [ "m_compiler", "struct_jit_1_1_application_plugin.html#a9899dbd1ab99a7458865fd3da8d6726c", null ],
-    [ "m_nodesPaths", "struct_jit_1_1_application_plugin.html#a50d13edfcbf73b2d5f6c44ba5d361061", null ],
     [ "m_nodesWatch", "struct_jit_1_1_application_plugin.html#a226ff1c7374a1e2f4cb522c68d7a28ea", null ]
 ];

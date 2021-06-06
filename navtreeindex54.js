@@ -1,6 +1,5 @@
 var NAVTREEINDEX54 =
 {
-"struct_nodes_1_1_audio_looper_1_1_node_1_1_metadata.html":[12,0,30,1,0,0],
 "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html":[12,0,30,1,0,1],
 "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#a6e2222756fdebcbfc363372374ee1f79":[12,0,30,1,0,1,2],
 "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#aeec980fea5cbfd400f37b257aeefca32":[12,0,30,1,0,1,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX54 =
 "struct_pd_1_1ossia__to__pd__value.html#a4dd27d34e29b33a901c830c8cc23e8ad":[12,0,33,6,7],
 "struct_pd_1_1ossia__to__pd__value.html#a7dea85d88c009b174b22cce567b36fdb":[12,0,33,6,9],
 "struct_pd_1_1ossia__to__pd__value.html#abc244cca18af25c778bc7bbe1e35c6d6":[12,0,33,6,3],
-"struct_pd_1_1ossia__to__pd__value.html#abe033ebeb41f87ac339837711cea62e6":[12,0,33,6,6]
+"struct_pd_1_1ossia__to__pd__value.html#abe033ebeb41f87ac339837711cea62e6":[12,0,33,6,6],
+"struct_pd_1_1ossia__to__pd__value.html#ac84cde5b7b4c861a6e1e6945c8754403":[12,0,33,6,0]
 };
