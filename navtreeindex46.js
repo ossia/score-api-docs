@@ -1,5 +1,7 @@
 var NAVTREEINDEX46 =
 {
+"classvst3_1_1vst__node__base.html#ab604dd9431d84146f8cda4814158c037":[12,0,52,19,16],
+"classvst3_1_1vst__node__base.html#ab68159875a9d2c2f3c2c3a6cd4c8acc3":[12,0,52,19,26],
 "classvst3_1_1vst__node__base.html#ab8e15c9c77d23a3170037b4fe4fdfc11":[12,0,52,19,4],
 "classvst3_1_1vst__node__base.html#ad50cd67302755bf6773a25e3f39c00f6":[12,0,52,19,17],
 "classvst3_1_1vst__node__base.html#afecd7ef0e22d291cf4e47ef82d1a41c5":[12,0,52,19,22],
@@ -131,8 +133,8 @@ var NAVTREEINDEX46 =
 "data_structures_8hpp_source.html":[13,0,260],
 "element_finding_helper_8hpp_source.html":[13,0,347],
 "files.html":[13,0],
-"functions.html":[12,3,0],
 "functions.html":[12,3,0,0],
+"functions.html":[12,3,0],
 "functions_b.html":[12,3,0,1],
 "functions_c.html":[12,3,0,2],
 "functions_d.html":[12,3,0,3],
@@ -194,8 +196,8 @@ var NAVTREEINDEX46 =
 "lv2__atom__helpers_8hpp_source.html":[13,0,608],
 "models_8hpp_source.html":[13,0,719],
 "mvp_8hpp_source.html":[13,0,743],
-"namespace_automation.html":[12,0,1],
 "namespace_automation.html":[11,0,0],
+"namespace_automation.html":[12,0,1],
 "namespace_curve.html":[11,0,1],
 "namespace_curve.html":[12,0,5],
 "namespace_device.html":[11,0,2],
@@ -203,10 +205,10 @@ var NAVTREEINDEX46 =
 "namespace_engine.html":[12,0,8],
 "namespace_engine.html":[11,0,3],
 "namespace_engine_1_1_network.html":[11,0,3,0],
-"namespace_execution.html":[12,0,9],
 "namespace_execution.html":[11,0,4],
-"namespace_gfx.html":[12,0,13],
+"namespace_execution.html":[12,0,9],
 "namespace_gfx.html":[11,0,5],
+"namespace_gfx.html":[12,0,13],
 "namespace_inspector.html":[12,0,15],
 "namespace_inspector.html":[11,0,6],
 "namespace_local_tree.html":[12,0,22],
@@ -247,7 +249,5 @@ var NAVTREEINDEX46 =
 "plugins_2score-plugin-js_2_j_s_2_executor_2_component_8hpp_source.html":[13,0,179],
 "plugins_2score-plugin-lv2_2_l_v2_2_window_8hpp_source.html":[13,0,1300],
 "plugins_2score-plugin-media_2_media_2_effect_2_settings_2_presenter_8hpp_source.html":[13,0,847],
-"plugins_2score-plugin-media_2_media_2_merger_2_metadata_8hpp_source.html":[13,0,650],
-"plugins_2score-plugin-media_2_media_2_merger_2commands_8hpp_source.html":[13,0,158],
-"plugins_2score-plugin-media_2_media_2_step_2_metadata_8hpp_source.html":[13,0,651]
+"plugins_2score-plugin-media_2_media_2_merger_2_metadata_8hpp_source.html":[13,0,650]
 };

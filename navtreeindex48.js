@@ -1,5 +1,7 @@
 var NAVTREEINDEX48 =
 {
+"struct_control_1_1_auto_u_i_setup.html#afaecf1591bf0273b4d1ec7beaaaa6673":[12,0,3,0,4],
+"struct_control_1_1_button.html":[12,0,3,1],
 "struct_control_1_1_button.html#a2d29692df8c941b67f9355a8ade9a64d":[12,0,3,1,7],
 "struct_control_1_1_button.html#a3dc04378419702cd709bd6b640be5093":[12,0,3,1,8],
 "struct_control_1_1_button.html#a4cf5e2b46d7f025ed6842bb488775c78":[12,0,3,1,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX48 =
 "struct_control_surface_1_1_presenter_1_1_port.html#ab05f9598fe024ce7e8d83d3de5a10306":[12,0,4,5,0,1],
 "struct_control_surface_1_1_presenter_1_1_port.html#af14a789fbec3649a922b50149185c9e8":[12,0,4,5,0,2],
 "struct_control_surface_1_1_remote_messages.html":[12,0,4,8],
-"struct_control_surface_1_1_remote_messages.html#a6075403afeaaf5e344c6edcb68a64762":[12,0,4,8,3],
-"struct_control_surface_1_1_remote_messages.html#a683c676616a24b849b85c43af902f3a4":[12,0,4,8,4],
-"struct_control_surface_1_1_remote_messages.html#a79e4555a345cbc50b1d5a5f368a74d18":[12,0,4,8,2]
+"struct_control_surface_1_1_remote_messages.html#a6075403afeaaf5e344c6edcb68a64762":[12,0,4,8,3]
 };

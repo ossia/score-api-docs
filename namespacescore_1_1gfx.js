@@ -6,6 +6,7 @@ var namespacescore_1_1gfx =
     [ "DepthNode", "structscore_1_1gfx_1_1_depth_node.html", "structscore_1_1gfx_1_1_depth_node" ],
     [ "Edge", "structscore_1_1gfx_1_1_edge.html", "structscore_1_1gfx_1_1_edge" ],
     [ "EmptyDecoder", "structscore_1_1gfx_1_1_empty_decoder.html", "structscore_1_1gfx_1_1_empty_decoder" ],
+    [ "FullScreenImageNode", "structscore_1_1gfx_1_1_full_screen_image_node.html", "structscore_1_1gfx_1_1_full_screen_image_node" ],
     [ "GenericNodeRenderer", "classscore_1_1gfx_1_1_generic_node_renderer.html", "classscore_1_1gfx_1_1_generic_node_renderer" ],
     [ "GPUVideoDecoder", "classscore_1_1gfx_1_1_g_p_u_video_decoder.html", "classscore_1_1gfx_1_1_g_p_u_video_decoder" ],
     [ "Graph", "structscore_1_1gfx_1_1_graph.html", "structscore_1_1gfx_1_1_graph" ],

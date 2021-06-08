@@ -86,7 +86,7 @@ var searchData=
   ['documentmanager_479',['DocumentManager',['../classscore_1_1_document_manager.html',1,'score']]],
   ['documentmetadata_480',['DocumentMetadata',['../structscore_1_1_document_metadata.html',1,'score']]],
   ['documentmodel_481',['DocumentModel',['../classscore_1_1_document_model.html',1,'score']]],
-  ['documentplugin_482',['DocumentPlugin',['../classscore_1_1_document_plugin.html',1,'score::DocumentPlugin'],['../class_remote_control_1_1_document_plugin.html',1,'RemoteControl::DocumentPlugin'],['../class_transport_1_1_document_plugin.html',1,'Transport::DocumentPlugin'],['../class_execution_1_1_document_plugin.html',1,'Execution::DocumentPlugin'],['../class_local_tree_1_1_document_plugin.html',1,'LocalTree::DocumentPlugin'],['../class_gfx_1_1_document_plugin.html',1,'Gfx::DocumentPlugin']]],
+  ['documentplugin_482',['DocumentPlugin',['../class_remote_control_1_1_document_plugin.html',1,'RemoteControl::DocumentPlugin'],['../class_transport_1_1_document_plugin.html',1,'Transport::DocumentPlugin'],['../class_execution_1_1_document_plugin.html',1,'Execution::DocumentPlugin'],['../class_local_tree_1_1_document_plugin.html',1,'LocalTree::DocumentPlugin'],['../class_gfx_1_1_document_plugin.html',1,'Gfx::DocumentPlugin'],['../classscore_1_1_document_plugin.html',1,'score::DocumentPlugin']]],
   ['documentpluginfactory_483',['DocumentPluginFactory',['../classscore_1_1_document_plugin_factory.html',1,'score']]],
   ['documentpluginfactory_5ft_484',['DocumentPluginFactory_T',['../classscore_1_1_document_plugin_factory___t.html',1,'score']]],
   ['documentpluginfactorylist_485',['DocumentPluginFactoryList',['../classscore_1_1_document_plugin_factory_list.html',1,'score']]],
