@@ -361,17 +361,18 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="separator:a855ad085613b24425b80b94445d32b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a592bb361ebf8fbc09c929c93208c71f1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">ProcessFlags</a> : int64_t { <br />
-&#160;&#160;<a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a41b45c4f979aae481267ddb77cd85e96">SupportsTemporal</a> = 1, 
-<a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1ae0631948dc54ff47c847d8ab38627cc1">TimeIndependent</a> = 2, 
-<a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a116a8cc93738260c508ea2e898df19fa">SupportsState</a> = 4, 
-<a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1ab9b5a3c3da10a3f0f7630363584a979e">RequiresCustomData</a> = 8, 
+&#160;&#160;<a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a41b45c4f979aae481267ddb77cd85e96">SupportsTemporal</a> = (1 &lt;&lt; 0 ), 
+<a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1ae0631948dc54ff47c847d8ab38627cc1">TimeIndependent</a> = (1 &lt;&lt; 1 ), 
+<a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a116a8cc93738260c508ea2e898df19fa">SupportsState</a> = (1 &lt;&lt; 2 ), 
+<a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1ab9b5a3c3da10a3f0f7630363584a979e">RequiresCustomData</a> = (1 &lt;&lt; 3 ), 
 <br />
-&#160;&#160;<a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1aa76f0cafad2868e7b714583dad50cc02">PutInNewSlot</a> = 16, 
-<a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a28864adccb3f9149d5c1800509b4ef53">HandlesLooping</a> = 32, 
+&#160;&#160;<a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1aa76f0cafad2868e7b714583dad50cc02">PutInNewSlot</a> = (1 &lt;&lt; 4 ), 
+<a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a28864adccb3f9149d5c1800509b4ef53">HandlesLooping</a> = (1 &lt;&lt; 5 ), 
+<a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a04d62df558a1f3d140a99921aadbd254">ControlSurface</a> = (1 &lt;&lt; 6 ), 
 <b>SupportsLasting</b> = SupportsTemporal | TimeIndependent, 
-<b>ExternalEffect</b> = SupportsTemporal | TimeIndependent | RequiresCustomData, 
 <br />
-&#160;&#160;<b>SupportsAll</b> = SupportsTemporal | TimeIndependent | SupportsState
+&#160;&#160;<b>ExternalEffect</b> = SupportsTemporal | TimeIndependent | RequiresCustomData | ControlSurface, 
+<b>SupportsAll</b> = SupportsTemporal | TimeIndependent | SupportsState
 <br />
  }</td></tr>
 <tr class="memdesc:a592bb361ebf8fbc09c929c93208c71f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Various settings for processes.  <a href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">More...</a><br /></td></tr>
@@ -604,6 +605,8 @@ QDebug&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b
 <tr><td class="fieldname"><a id="a592bb361ebf8fbc09c929c93208c71f1aa76f0cafad2868e7b714583dad50cc02"></a>PutInNewSlot&#160;</td><td class="fielddoc"><p>When created in an interval, go on the top slot or in a new slot. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a592bb361ebf8fbc09c929c93208c71f1a28864adccb3f9149d5c1800509b4ef53"></a>HandlesLooping&#160;</td><td class="fielddoc"><p>The presenter / view already handles rendering when the model loops. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a592bb361ebf8fbc09c929c93208c71f1a04d62df558a1f3d140a99921aadbd254"></a>ControlSurface&#160;</td><td class="fielddoc"><p>The process supports being exposed to the ControlSurface. </p>
 </td></tr>
 </table>
 

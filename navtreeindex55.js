@@ -1,11 +1,5 @@
 var NAVTREEINDEX55 =
 {
-"struct_pd_1_1ossia__to__pd__value.html#abe033ebeb41f87ac339837711cea62e6":[12,0,33,6,6],
-"struct_pd_1_1ossia__to__pd__value.html#ac84cde5b7b4c861a6e1e6945c8754403":[12,0,33,6,0],
-"struct_pd_1_1ossia__to__pd__value.html#acb26c1f38f193caf54ab7a95354a0b35":[12,0,33,6,1],
-"struct_pd_1_1ossia__to__pd__value.html#acbca52e858bac0cb4285e97a8295f70b":[12,0,33,6,8],
-"struct_pd_1_1ossia__to__pd__value.html#ad66d3bfa33afd772576a38a9667a00a8":[12,0,33,6,4],
-"struct_pd_1_1ossia__to__pd__value.html#ad93e03ee41009712641357f5f1de5d98":[12,0,33,6,10],
 "struct_pd_1_1ossia__to__pd__value.html#adae6244e24ced8c6e887acb0cac687e4":[12,0,33,6,11],
 "struct_process_1_1_automatable_factory_list.html":[12,0,35,4],
 "struct_process_1_1_automatable_factory_list.html#a87c191b9e49245a9feec4db3d30b0654":[12,0,35,4,0],
@@ -249,5 +243,11 @@ var NAVTREEINDEX55 =
 "struct_protocols_1_1_fixture_mode.html#aa10c2569b5bdfdc0b82bd6d2b31cbf95":[12,0,36,10,0],
 "struct_protocols_1_1_h_t_t_p_specific_settings.html":[12,0,36,15],
 "struct_protocols_1_1_h_t_t_p_specific_settings.html#ae8f699f8bb503584e64ab477423dbe71":[12,0,36,15,0],
-"struct_protocols_1_1_joystick_specific_settings.html":[12,0,36,20]
+"struct_protocols_1_1_joystick_specific_settings.html":[12,0,36,20],
+"struct_protocols_1_1_joystick_specific_settings.html#a03b5c3bbf18d48fde7912997a5833296":[12,0,36,20,0],
+"struct_protocols_1_1_joystick_specific_settings.html#a9594eaa310829572d0d8a434cad71a9a":[12,0,36,20,1],
+"struct_protocols_1_1_local_specific_settings.html":[12,0,36,25],
+"struct_protocols_1_1_local_specific_settings.html#a37aaba774200b1304aef82c0d5983dc4":[12,0,36,25,1],
+"struct_protocols_1_1_local_specific_settings.html#a98eec5a96da486f31f6b80d2a41856e6":[12,0,36,25,0],
+"struct_protocols_1_1_m_i_d_i_specific_settings.html":[12,0,36,32]
 };

@@ -1463,81 +1463,73 @@ $(document).ready(function(){initNavTree('_j_s_o_n_visitor_8hpp_source.html','')
 <div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;SCORE_LIB_BASE_EXPORT</div>
 <div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;rapidjson::Document clone(<span class="keyword">const</span> rapidjson::Value&amp; val) noexcept;</div>
 <div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160; </div>
-<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;<span class="keyword">inline</span> rapidjson::Document readJson(<span class="keyword">const</span> QByteArray&amp; arr)</div>
-<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;{</div>
-<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;  rapidjson::Document doc;</div>
-<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;  doc.Parse(arr.data(), arr.size());</div>
-<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;  <span class="keywordflow">if</span> (doc.HasParseError())</div>
-<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;  {</div>
-<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;    qDebug() &lt;&lt; <span class="stringliteral">&quot;Invalid JSON document !&quot;</span>;</div>
-<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;  }</div>
-<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;  <span class="keywordflow">return</span> doc;</div>
-<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;}</div>
-<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160; </div>
-<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;<span class="keyword">inline</span> QByteArray jsonToByteArray(<span class="keyword">const</span> rapidjson::Value&amp; arr) noexcept</div>
-<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;{</div>
-<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;  rapidjson::StringBuffer buf;</div>
-<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;  buf.Reserve(8192);</div>
-<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;  JsonWriter w{buf};</div>
-<div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;  arr.Accept(w);</div>
-<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;  <span class="keywordflow">return</span> QByteArray(buf.GetString(), buf.GetSize());</div>
-<div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;}</div>
-<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160; </div>
-<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;SCORE_LIB_BASE_EXPORT</div>
-<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;rapidjson::Document toValue(<span class="keyword">const</span> <a class="code" href="class_j_s_o_n_reader.html">JSONReader</a>&amp;) noexcept;</div>
-<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160; </div>
-<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;T fromJson(<span class="keyword">const</span> QByteArray&amp; rawData)</div>
-<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;{</div>
-<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;  <span class="keyword">const</span> rapidjson::Document doc = readJson(rawData);</div>
-<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;  <a class="code" href="class_j_s_o_n_writer.html">JSONWriter</a> wr{doc};</div>
-<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;  T t;</div>
-<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;  wr.writeTo(t);</div>
-<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;  <span class="keywordflow">return</span> t;</div>
+<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;SCORE_LIB_BASE_EXPORT</div>
+<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;rapidjson::Document readJson(<span class="keyword">const</span> QByteArray&amp; arr);</div>
+<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160; </div>
+<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;<span class="keyword">inline</span> QByteArray jsonToByteArray(<span class="keyword">const</span> rapidjson::Value&amp; arr) noexcept</div>
+<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;{</div>
+<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;  rapidjson::StringBuffer buf;</div>
+<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;  buf.Reserve(8192);</div>
+<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;  JsonWriter w{buf};</div>
+<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;  arr.Accept(w);</div>
+<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;  <span class="keywordflow">return</span> QByteArray(buf.GetString(), buf.GetSize());</div>
+<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;}</div>
+<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160; </div>
+<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;SCORE_LIB_BASE_EXPORT</div>
+<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;rapidjson::Document toValue(<span class="keyword">const</span> <a class="code" href="class_j_s_o_n_reader.html">JSONReader</a>&amp;) noexcept;</div>
+<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160; </div>
+<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;T fromJson(<span class="keyword">const</span> QByteArray&amp; rawData)</div>
+<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;{</div>
+<div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;  <span class="keyword">const</span> rapidjson::Document doc = readJson(rawData);</div>
+<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;  <a class="code" href="class_j_s_o_n_writer.html">JSONWriter</a> wr{doc};</div>
+<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;  T t;</div>
+<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;  wr.writeTo(t);</div>
+<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;  <span class="keywordflow">return</span> t;</div>
+<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;}</div>
+<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160; </div>
+<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;QByteArray toJson(<span class="keyword">const</span> T&amp; t)</div>
+<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;{</div>
+<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;  <a class="code" href="class_j_s_o_n_reader.html">JSONReader</a> reader;</div>
+<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;  reader.<a class="code" href="class_j_s_o_n_reader.html#a97ad23366c9ed5dc863982deb9de199c">readFrom</a>(t);</div>
+<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;  <span class="keywordflow">return</span> reader.toByteArray();</div>
 <div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;}</div>
 <div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160; </div>
-<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;QByteArray toJson(<span class="keyword">const</span> T&amp; t)</div>
-<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;{</div>
-<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;  <a class="code" href="class_j_s_o_n_reader.html">JSONReader</a> reader;</div>
-<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;  reader.<a class="code" href="class_j_s_o_n_reader.html#a97ad23366c9ed5dc863982deb9de199c">readFrom</a>(t);</div>
-<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;  <span class="keywordflow">return</span> reader.toByteArray();</div>
-<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;}</div>
-<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160; </div>
-<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;<span class="comment">template&lt;typename T&gt;</span></div>
-<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;<span class="comment">struct optional_assigner {</span></div>
-<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;<span class="comment">  T&amp; lhs;</span></div>
-<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;<span class="comment">  bool set_default = false;</span></div>
-<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;<span class="comment">  template&lt;typename R&gt;</span></div>
-<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;<span class="comment">  void operator||(R&amp;&amp; rhs) const noexcept</span></div>
-<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;<span class="comment">  {</span></div>
-<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;<span class="comment">    if(set_default)</span></div>
-<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;<span class="comment">      lhs = std::forward&lt;R&gt;(rhs);</span></div>
-<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;<span class="comment">  }</span></div>
-<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;<span class="comment">};</span></div>
-<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;<span class="comment">template &lt;typename T&gt;</span></div>
-<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;<span class="comment">inline auto operator&lt;&lt;=(T&amp; t, const std::optional&lt;JsonValue&gt;&amp; self)</span></div>
-<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;<span class="comment">{</span></div>
-<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;<span class="comment">  if(self)</span></div>
-<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;<span class="comment">  {</span></div>
-<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;<span class="comment">    JSONWriter w{self-&gt;obj};</span></div>
-<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;<span class="comment">    w.writeTo(t);</span></div>
-<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;<span class="comment">    return optional_assigner&lt;T&gt;{t, false};</span></div>
-<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;<span class="comment">  }</span></div>
-<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;<span class="comment">  else</span></div>
-<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;<span class="comment">  {</span></div>
-<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;<span class="comment">    return optional_assigner&lt;T&gt;{t, true};</span></div>
-<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;<span class="comment">  }</span></div>
-<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;<span class="comment">}</span></div>
-<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160; </div>
-<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;<span class="preprocessor">#define assign_with_default(member, optional, alt_value) do { \</span></div>
-<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;<span class="preprocessor">  if (auto it = optional)  \</span></div>
-<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;<span class="preprocessor">    member &lt;&lt;= *it;  \</span></div>
-<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;<span class="preprocessor">  else  \</span></div>
-<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;<span class="preprocessor">    member = alt_value;  \</span></div>
-<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;<span class="preprocessor">  } while(0)</span></div>
+<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;<span class="comment">template&lt;typename T&gt;</span></div>
+<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;<span class="comment">struct optional_assigner {</span></div>
+<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;<span class="comment">  T&amp; lhs;</span></div>
+<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;<span class="comment">  bool set_default = false;</span></div>
+<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;<span class="comment">  template&lt;typename R&gt;</span></div>
+<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;<span class="comment">  void operator||(R&amp;&amp; rhs) const noexcept</span></div>
+<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;<span class="comment">  {</span></div>
+<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;<span class="comment">    if(set_default)</span></div>
+<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;<span class="comment">      lhs = std::forward&lt;R&gt;(rhs);</span></div>
+<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;<span class="comment">  }</span></div>
+<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;<span class="comment">};</span></div>
+<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;<span class="comment">template &lt;typename T&gt;</span></div>
+<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;<span class="comment">inline auto operator&lt;&lt;=(T&amp; t, const std::optional&lt;JsonValue&gt;&amp; self)</span></div>
+<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;<span class="comment">{</span></div>
+<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;<span class="comment">  if(self)</span></div>
+<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;<span class="comment">  {</span></div>
+<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;<span class="comment">    JSONWriter w{self-&gt;obj};</span></div>
+<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;<span class="comment">    w.writeTo(t);</span></div>
+<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;<span class="comment">    return optional_assigner&lt;T&gt;{t, false};</span></div>
+<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;<span class="comment">  }</span></div>
+<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;<span class="comment">  else</span></div>
+<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;<span class="comment">  {</span></div>
+<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;<span class="comment">    return optional_assigner&lt;T&gt;{t, true};</span></div>
+<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;<span class="comment">  }</span></div>
+<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;<span class="comment">}</span></div>
+<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160; </div>
+<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;<span class="preprocessor">#define assign_with_default(member, optional, alt_value) do { \</span></div>
+<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;<span class="preprocessor">  if (auto it = optional)  \</span></div>
+<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;<span class="preprocessor">    member &lt;&lt;= *it;  \</span></div>
+<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;<span class="preprocessor">  else  \</span></div>
+<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;<span class="preprocessor">    member = alt_value;  \</span></div>
+<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;<span class="preprocessor">  } while(0)</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1366</div></div>

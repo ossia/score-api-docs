@@ -1,8 +1,5 @@
 var NAVTREEINDEX15 =
 {
-"class_gfx_1_1kinect2__parameter.html#a7e571f8868ec00025a0207d678a3263f":[12,0,13,33,4],
-"class_gfx_1_1kinect2__parameter.html#a8928117765f87105db27aff186ec246e":[12,0,13,33,1],
-"class_gfx_1_1kinect2__parameter.html#adf129f8d232d490fc65fcadd0533e9f2":[12,0,13,33,2],
 "class_gfx_1_1kinect2__parameter.html#ae3d8099b217519212c72d9f2c1e55db1":[12,0,13,33,0],
 "class_gfx_1_1kinect2__protocol.html":[12,0,13,34],
 "class_gfx_1_1kinect2__protocol.html#a36b2ae00351a7a86d932bc8d8653c92b":[12,0,13,34,7],
@@ -249,5 +246,8 @@ var NAVTREEINDEX15 =
 "class_interpolation_1_1_colors.html":[12,0,17,1],
 "class_interpolation_1_1_colors.html#a60e1a58276c07f0f9ae8832394146f69":[12,0,17,1,1],
 "class_interpolation_1_1_colors.html#abda94851281be26648cbc4007c240a14":[12,0,17,1,0],
-"class_interpolation_1_1_inspector_factory.html":[12,0,17,2]
+"class_interpolation_1_1_inspector_factory.html":[12,0,17,2],
+"class_interpolation_1_1_inspector_widget.html":[12,0,17,3],
+"class_interpolation_1_1_inspector_widget.html#a99b4a5a2465da46f8a8f135254cdd929":[12,0,17,3,0],
+"class_interpolation_1_1_presenter.html":[12,0,17,4]
 };

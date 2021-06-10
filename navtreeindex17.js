@@ -1,8 +1,5 @@
 var NAVTREEINDEX17 =
 {
-"class_j_s_o_n_reader.html#aca7029839748403bce6301d625a27e31":[12,0,144,91],
-"class_j_s_o_n_reader.html#acaea45090bd9637ead398dee57394d16":[12,0,144,12],
-"class_j_s_o_n_reader.html#acb3f4bedf9b0e06c34a758c92faa2da3":[12,0,144,11],
 "class_j_s_o_n_reader.html#acbde97822cc8874da00b7297589c0d5a":[12,0,144,51],
 "class_j_s_o_n_reader.html#acc3180ad7329cb11a3a6a6ef26c695d0":[12,0,144,52],
 "class_j_s_o_n_reader.html#acdf2e945362a3601dc5c93099fadf0a5":[12,0,144,69],
@@ -249,5 +246,8 @@ var NAVTREEINDEX17 =
 "class_library_1_1_library_interface.html#afd4ca148bc062a06e9512bcd597bf2df":[12,0,21,5,2],
 "class_library_1_1_library_interface_list.html":[12,0,21,6],
 "class_library_1_1_library_interface_list.html#a6e07f3a3a4d9e97e0a7f0cbcc29c9e60":[12,0,21,6,0],
-"class_library_1_1_preset_filter_proxy.html":[12,0,21,7]
+"class_library_1_1_preset_filter_proxy.html":[12,0,21,7],
+"class_library_1_1_preset_filter_proxy.html#aeea151933512a4f8b2d5617eee089695":[12,0,21,7,0],
+"class_library_1_1_preset_item_model.html":[12,0,21,8],
+"class_library_1_1_preset_item_model.html#a3425cfdcacec352995c4297d09d4fd5f":[12,0,21,8,1]
 };

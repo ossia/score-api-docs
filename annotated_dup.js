@@ -82,8 +82,6 @@ var annotated_dup =
       [ "Model", "class_control_surface_1_1_model.html", "class_control_surface_1_1_model" ],
       [ "Presenter", "class_control_surface_1_1_presenter.html", "class_control_surface_1_1_presenter" ],
       [ "ProcessExecutorComponent", "class_control_surface_1_1_process_executor_component.html", "class_control_surface_1_1_process_executor_component" ],
-      [ "Remote", "class_control_surface_1_1_remote.html", "class_control_surface_1_1_remote" ],
-      [ "RemoteMessages", "struct_control_surface_1_1_remote_messages.html", "struct_control_surface_1_1_remote_messages" ],
       [ "RemoveControl", "class_control_surface_1_1_remove_control.html", "class_control_surface_1_1_remove_control" ],
       [ "View", "class_control_surface_1_1_view.html", "class_control_surface_1_1_view" ]
     ] ],
@@ -713,6 +711,7 @@ var annotated_dup =
         [ "View", "class_remote_control_1_1_settings_1_1_view.html", "class_remote_control_1_1_settings_1_1_view" ]
       ] ],
       [ "ApplicationPlugin", "class_remote_control_1_1_application_plugin.html", "class_remote_control_1_1_application_plugin" ],
+      [ "DefaultProcessComponent", "class_remote_control_1_1_default_process_component.html", "class_remote_control_1_1_default_process_component" ],
       [ "DocumentPlugin", "class_remote_control_1_1_document_plugin.html", "class_remote_control_1_1_document_plugin" ],
       [ "Event", "class_remote_control_1_1_event.html", "class_remote_control_1_1_event" ],
       [ "Handler", "struct_remote_control_1_1_handler.html", "struct_remote_control_1_1_handler" ],
@@ -723,6 +722,7 @@ var annotated_dup =
       [ "ProcessComponentFactory", "class_remote_control_1_1_process_component_factory.html", "class_remote_control_1_1_process_component_factory" ],
       [ "ProcessComponentFactory_T", "class_remote_control_1_1_process_component_factory___t.html", "class_remote_control_1_1_process_component_factory___t" ],
       [ "Receiver", "struct_remote_control_1_1_receiver.html", "struct_remote_control_1_1_receiver" ],
+      [ "RemoteMessages", "struct_remote_control_1_1_remote_messages.html", "struct_remote_control_1_1_remote_messages" ],
       [ "ScenarioBase", "class_remote_control_1_1_scenario_base.html", "class_remote_control_1_1_scenario_base" ],
       [ "State", "class_remote_control_1_1_state.html", "class_remote_control_1_1_state" ],
       [ "Sync", "class_remote_control_1_1_sync.html", "class_remote_control_1_1_sync" ],
