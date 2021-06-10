@@ -90,11 +90,13 @@ var searchData=
   ['resizeslotstate_1911',['ResizeSlotState',['../class_scenario_1_1_resize_slot_state.html',1,'Scenario']]],
   ['resizeslotvertically_1912',['ResizeSlotVertically',['../class_scenario_1_1_command_1_1_resize_slot_vertically.html',1,'Scenario::Command']]],
   ['resizeslotverticallytest_1913',['ResizeSlotVerticallyTest',['../class_resize_slot_vertically_test.html',1,'']]],
-  ['restorabledocument_1914',['RestorableDocument',['../structscore_1_1_restorable_document.html',1,'score']]],
-  ['rgb0decoder_1915',['RGB0Decoder',['../structscore_1_1gfx_1_1_r_g_b0_decoder.html',1,'score::gfx']]],
-  ['rgbaedit_1916',['RGBAEdit',['../struct_control_1_1_r_g_b_a_edit.html',1,'Control::RGBAEdit'],['../struct_widget_factory_1_1_r_g_b_a_edit.html',1,'WidgetFactory::RGBAEdit']]],
-  ['rightbraceview_1917',['RightBraceView',['../class_scenario_1_1_right_brace_view.html',1,'Scenario']]],
-  ['rightclickimpl_1918',['RightClickImpl',['../structscore_1_1_right_click_impl.html',1,'score']]],
-  ['rmsdata_1919',['RMSData',['../struct_media_1_1_r_m_s_data.html',1,'Media']]],
-  ['rollback_1920',['rollback',['../class_ongoing_command_dispatcher.html#ac7d20a23177cc9acf50aabbbbf44b75f',1,'OngoingCommandDispatcher']]]
+  ['resizetexture_1914',['resizeTexture',['../namespacescore_1_1gfx.html#ace27fba3b7ac24cd0777898e7eac1e53',1,'score::gfx']]],
+  ['resizetexturesize_1915',['resizeTextureSize',['../namespacescore_1_1gfx.html#a4492c024019592e9c74e2eaa88d6282c',1,'score::gfx']]],
+  ['restorabledocument_1916',['RestorableDocument',['../structscore_1_1_restorable_document.html',1,'score']]],
+  ['rgb0decoder_1917',['RGB0Decoder',['../structscore_1_1gfx_1_1_r_g_b0_decoder.html',1,'score::gfx']]],
+  ['rgbaedit_1918',['RGBAEdit',['../struct_control_1_1_r_g_b_a_edit.html',1,'Control::RGBAEdit'],['../struct_widget_factory_1_1_r_g_b_a_edit.html',1,'WidgetFactory::RGBAEdit']]],
+  ['rightbraceview_1919',['RightBraceView',['../class_scenario_1_1_right_brace_view.html',1,'Scenario']]],
+  ['rightclickimpl_1920',['RightClickImpl',['../structscore_1_1_right_click_impl.html',1,'score']]],
+  ['rmsdata_1921',['RMSData',['../struct_media_1_1_r_m_s_data.html',1,'Media']]],
+  ['rollback_1922',['rollback',['../class_ongoing_command_dispatcher.html#ac7d20a23177cc9acf50aabbbbf44b75f',1,'OngoingCommandDispatcher']]]
 ];
