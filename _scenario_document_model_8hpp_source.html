@@ -162,21 +162,23 @@ $(document).ready(function(){initNavTree('_scenario_document_model_8hpp_source.h
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">void</span> addBus(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>*);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> removeBus(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>*);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  std::vector&lt;const IntervalModel*&gt; busIntervals;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  std::vector&lt;const StateModel*&gt; statesWithControls;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> busesChanged() E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, busesChanged)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> busDeleted(<span class="keyword">const</span> <a class="code" href="class_identified_object_abstract.html">IdentifiedObjectAbstract</a>* itv);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  std::vector&lt;const IntervalModel*&gt; busIntervals;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  std::vector&lt;const StateModel*&gt; statesWithControls;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; context() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> m_context; }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span> busesChanged() E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, busesChanged)</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> init();</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; m_context;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <a class="code" href="class_scenario_1_1_base_scenario.html">BaseScenario</a>* m_baseScenario{};</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  std::vector&lt;QByteArray&gt; m_savedCables;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  rapidjson::Document m_savedCablesJson;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; context() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> m_context; }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span> init();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; m_context;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="class_scenario_1_1_base_scenario.html">BaseScenario</a>* m_baseScenario{};</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  std::vector&lt;QByteArray&gt; m_savedCables;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  rapidjson::Document m_savedCablesJson;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1366</div></div>
@@ -185,6 +187,7 @@ $(document).ready(function(){initNavTree('_scenario_document_model_8hpp_source.h
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:15</div></div>
 <div class="ttc" id="aclass_scenario_1_1_scenario_document_model_html"><div class="ttname"><a href="class_scenario_1_1_scenario_document_model.html">Scenario::ScenarioDocumentModel</a></div><div class="ttdef"><b>Definition:</b> ScenarioDocumentModel.hpp:31</div></div>
 <div class="ttc" id="aclass_data_stream_html"><div class="ttname"><a href="class_data_stream.html">DataStream</a></div><div class="ttdef"><b>Definition:</b> VisitorInterface.hpp:53</div></div>
+<div class="ttc" id="aclass_identified_object_abstract_html"><div class="ttname"><a href="class_identified_object_abstract.html">IdentifiedObjectAbstract</a></div><div class="ttdoc">Base class for IdentifiedObject.</div><div class="ttdef"><b>Definition:</b> IdentifiedObjectAbstract.hpp:15</div></div>
 <div class="ttc" id="astruct_visitor_variant_html"><div class="ttname"><a href="struct_visitor_variant.html">VisitorVariant</a></div><div class="ttdoc">The VisitorVariant struct.</div><div class="ttdef"><b>Definition:</b> VisitorInterface.hpp:25</div></div>
 <div class="ttc" id="aclass_j_s_o_n_object_html"><div class="ttname"><a href="class_j_s_o_n_object.html">JSONObject</a></div><div class="ttdef"><b>Definition:</b> VisitorInterface.hpp:61</div></div>
 <div class="ttc" id="aclassscore_1_1_document_delegate_model_html"><div class="ttname"><a href="classscore_1_1_document_delegate_model.html">score::DocumentDelegateModel</a></div><div class="ttdef"><b>Definition:</b> DocumentDelegateModel.hpp:9</div></div>
