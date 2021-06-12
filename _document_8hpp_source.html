@@ -246,16 +246,17 @@ $(document).ready(function(){initNavTree('_document_8hpp_source.html',''); initR
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  DocumentContext m_context;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordtype">bool</span> m_virgin{<span class="keyword">false</span>}; <span class="comment">// Used to check if we can safely close it</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="comment">// if we want to load a document instead upon opening score.</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;};</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;}</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
-<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01score_1_1_document_01_5_01_4.html">  167</a></span>&#160;Q_DECLARE_METATYPE(<a class="code" href="classscore_1_1_document.html">score::Document</a>*)</div>
-<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_id_3_01score_1_1_document_model_01_4_01_4.html">  168</a></span>&#160;Q_DECLARE_METATYPE(<a class="code" href="classid__base__t.html">Id</a>&lt;<a class="code" href="namespacescore.html">score</a>::DocumentModel&gt;)</div>
-<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01rapidjson_1_1_value_01_5_01_4.html">  169</a></span>&#160;Q_DECLARE_METATYPE(rapidjson::Value*)</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="namespacescore.html">score</a>::Document*)</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="classid__base__t.html">Id</a>&lt;<a class="code" href="namespacescore.html">score</a>::DocumentModel&gt;)</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  QByteArray m_initialData{};</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keywordtype">bool</span> m_virgin{<span class="keyword">false</span>}; <span class="comment">// Used to check if we can safely close it</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="comment">// if we want to load a document instead upon opening score.</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;};</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;}</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01score_1_1_document_01_5_01_4.html">  168</a></span>&#160;Q_DECLARE_METATYPE(<a class="code" href="classscore_1_1_document.html">score::Document</a>*)</div>
+<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_id_3_01score_1_1_document_model_01_4_01_4.html">  169</a></span>&#160;Q_DECLARE_METATYPE(<a class="code" href="classid__base__t.html">Id</a>&lt;<a class="code" href="namespacescore.html">score</a>::DocumentModel&gt;)</div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01rapidjson_1_1_value_01_5_01_4.html">  170</a></span>&#160;Q_DECLARE_METATYPE(rapidjson::Value*)</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="namespacescore.html">score</a>::Document*)</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="classid__base__t.html">Id</a>&lt;<a class="code" href="namespacescore.html">score</a>::DocumentModel&gt;)</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_j_s_o_n_reader_html"><div class="ttname"><a href="class_j_s_o_n_reader.html">JSONReader</a></div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:51</div></div>
