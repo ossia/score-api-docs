@@ -1,6 +1,5 @@
 var NAVTREEINDEX55 =
 {
-"struct_pd_1_1ossia__to__pd__value.html#ad93e03ee41009712641357f5f1de5d98":[12,0,33,6,10],
 "struct_pd_1_1ossia__to__pd__value.html#adae6244e24ced8c6e887acb0cac687e4":[12,0,33,6,11],
 "struct_process_1_1_automatable_factory_list.html":[12,0,35,4],
 "struct_process_1_1_automatable_factory_list.html#a87c191b9e49245a9feec4db3d30b0654":[12,0,35,4,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX55 =
 "struct_protocols_1_1_joystick_specific_settings.html#a9594eaa310829572d0d8a434cad71a9a":[12,0,36,20,1],
 "struct_protocols_1_1_local_specific_settings.html":[12,0,36,25],
 "struct_protocols_1_1_local_specific_settings.html#a37aaba774200b1304aef82c0d5983dc4":[12,0,36,25,1],
-"struct_protocols_1_1_local_specific_settings.html#a98eec5a96da486f31f6b80d2a41856e6":[12,0,36,25,0]
+"struct_protocols_1_1_local_specific_settings.html#a98eec5a96da486f31f6b80d2a41856e6":[12,0,36,25,0],
+"struct_protocols_1_1_m_i_d_i_specific_settings.html":[12,0,36,32]
 };
