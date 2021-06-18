@@ -6,7 +6,7 @@ var structscore_1_1gfx_1_1_screen_node =
     [ "~ScreenNode", "structscore_1_1gfx_1_1_screen_node.html#a25db3e70ab28a8eef11f35e376375223", null ],
     [ "canRender", "structscore_1_1gfx_1_1_screen_node.html#aaf790703629bbdc010160d6f4daf3bf1", null ],
     [ "createOutput", "structscore_1_1gfx_1_1_screen_node.html#ade1966f43193fa342d0ad7e3626f50d7", null ],
-    [ "createRenderer", "structscore_1_1gfx_1_1_screen_node.html#a79eb0ee9607671328d6511e554661a4e", null ],
+    [ "createRenderer", "structscore_1_1gfx_1_1_screen_node.html#a7057c698de89ebde92bfdc38bfa01352", null ],
     [ "destroyOutput", "structscore_1_1gfx_1_1_screen_node.html#ae046f69b4fc662a50261ade5a874c676", null ],
     [ "onRendererChange", "structscore_1_1gfx_1_1_screen_node.html#a31e2e253916c06ac238b26de566c22ea", null ],
     [ "renderer", "structscore_1_1gfx_1_1_screen_node.html#a503d5d7ca33200135ae58d800e7cae69", null ],

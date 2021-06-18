@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.8.17"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>score: Gfx::gfx_message Struct Reference</title>
+        <title>score: FactorOracle2MIDI::State&lt; T &gt; Class Template Reference</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -75,7 +75,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('struct_gfx_1_1gfx__message.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('class_factor_oracle2_m_i_d_i_1_1_state.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -95,27 +95,44 @@ $(document).ready(function(){initNavTree('struct_gfx_1_1gfx__message.html',''); 
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="struct_gfx_1_1gfx__message-members.html">List of all members</a>  </div>
+<a href="class_factor_oracle2_m_i_d_i_1_1_state-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Gfx::gfx_message Struct Reference</div>  </div>
+<div class="title">FactorOracle2MIDI::State&lt; T &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class T&gt;<br />
+class FactorOracle2MIDI::State&lt; T &gt;</h3>
+
+<p>The class <a class="el" href="class_factor_oracle2_m_i_d_i_1_1_state.html">State</a> denotes the elements that belong to each state state denotes de number of the state std::vector &lt;SingleTransition&gt; transition is the std::vector where all forward links of the state are defined suffix_transition denotes which is the suffix link of this state lrs is the longest repeated subsequence of this state </p>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a1bc81af9af060b8bb8a4751c899be78d"><td class="memItemLeft" align="right" valign="top"><a id="a1bc81af9af060b8bb8a4751c899be78d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>singleTransitionResize</b> ()</td></tr>
+<tr class="separator:a1bc81af9af060b8bb8a4751c899be78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ab2b10fa370695eb8df39e7a1cda7e699"><td class="memItemLeft" align="right" valign="top"><a id="ab2b10fa370695eb8df39e7a1cda7e699"></a>
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>node_id</b> {}</td></tr>
-<tr class="separator:ab2b10fa370695eb8df39e7a1cda7e699"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af34247640ab6cf44099b1483a1500ae5"><td class="memItemLeft" align="right" valign="top"><a id="af34247640ab6cf44099b1483a1500ae5"></a>
-ossia::token_request&#160;</td><td class="memItemRight" valign="bottom"><b>token</b> {}</td></tr>
-<tr class="separator:af34247640ab6cf44099b1483a1500ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b8264032026fae5e293d7c1bbae2e6a"><td class="memItemLeft" align="right" valign="top"><a id="a0b8264032026fae5e293d7c1bbae2e6a"></a>
-std::vector&lt; std::vector&lt; gfx_input &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
-<tr class="separator:a0b8264032026fae5e293d7c1bbae2e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23e4136902d5e16960eb9d9557622210"><td class="memItemLeft" align="right" valign="top"><a id="a23e4136902d5e16960eb9d9557622210"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_factor_oracle2_m_i_d_i_1_1_state.html#a23e4136902d5e16960eb9d9557622210">state_</a></td></tr>
+<tr class="memdesc:a23e4136902d5e16960eb9d9557622210"><td class="mdescLeft">&#160;</td><td class="mdescRight">denotes the number of the state <br /></td></tr>
+<tr class="separator:a23e4136902d5e16960eb9d9557622210"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0412fc16278ce6a0965fdb0854109acd"><td class="memItemLeft" align="right" valign="top"><a id="a0412fc16278ce6a0965fdb0854109acd"></a>
+std::vector&lt; <a class="el" href="class_factor_oracle2_m_i_d_i_1_1_single_transition.html">SingleTransition</a>&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_factor_oracle2_m_i_d_i_1_1_state.html#a0412fc16278ce6a0965fdb0854109acd">transition_</a></td></tr>
+<tr class="memdesc:a0412fc16278ce6a0965fdb0854109acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">denotes the number of the state <br /></td></tr>
+<tr class="separator:a0412fc16278ce6a0965fdb0854109acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4427d7cd5d1ec245d82b4a14c0b96c4e"><td class="memItemLeft" align="right" valign="top"><a id="a4427d7cd5d1ec245d82b4a14c0b96c4e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>suffix_transition_</b></td></tr>
+<tr class="separator:a4427d7cd5d1ec245d82b4a14c0b96c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd1016fc73c660729775019b766b7770"><td class="memItemLeft" align="right" valign="top"><a id="afd1016fc73c660729775019b766b7770"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>lrs_</b> = 0</td></tr>
+<tr class="separator:afd1016fc73c660729775019b766b7770"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="_gfx_context_8hpp_source.html">GfxContext.hpp</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="_factor_oracle2_m_i_d_i_8hpp_source.html">FactorOracle2MIDI.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

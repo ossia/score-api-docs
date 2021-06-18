@@ -194,6 +194,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_message.html">Message</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node.html">Node</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Root data model for visual nodes.  <a href="classscore_1_1gfx_1_1_node.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,8 +205,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">NodeRenderer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renderer for a given node.  <a href="classscore_1_1gfx_1_1_node_renderer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_output_node.html">OutputNode</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)  <a href="structscore_1_1gfx_1_1_output_node.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)  <a href="classscore_1_1gfx_1_1_output_node.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_output_node_renderer.html">OutputNodeRenderer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_pass.html">Pass</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -285,6 +289,21 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a5201aa54e805790d5e3efa358f6b24f5"><td class="memItemLeft" align="right" valign="top"><a id="a5201aa54e805790d5e3efa358f6b24f5"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Vertex</b> = <a class="el" href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a> *</td></tr>
+<tr class="separator:a5201aa54e805790d5e3efa358f6b24f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae11263b71178ed95262505d55c400b6d"><td class="memItemLeft" align="right" valign="top"><a id="ae11263b71178ed95262505d55c400b6d"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>GraphImpl</b> = boost::adjacency_list&lt; boost::vecS, boost::vecS, boost::directedS, <a class="el" href="classscore_1_1gfx_1_1_node.html">Vertex</a> &gt;</td></tr>
+<tr class="separator:ae11263b71178ed95262505d55c400b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8184e9f9fef21824a3b281ffc644c6a5"><td class="memItemLeft" align="right" valign="top"><a id="a8184e9f9fef21824a3b281ffc644c6a5"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>VertexMap</b> = std::map&lt; <a class="el" href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a> *, GraphImpl::vertex_descriptor &gt;</td></tr>
+<tr class="separator:a8184e9f9fef21824a3b281ffc644c6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08c0daeb65183024841bb4a0753e772c"><td class="memItemLeft" align="right" valign="top"><a id="a08c0daeb65183024841bb4a0753e772c"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>gfx_input</b> = std::variant&lt; ossia::value, ossia::audio_vector &gt;</td></tr>
+<tr class="separator:a08c0daeb65183024841bb4a0753e772c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d76695282728f9a95057bd6b18deccf"><td class="memItemLeft" align="right" valign="top"><a id="a9d76695282728f9a95057bd6b18deccf"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>PassOutput</b> = std::variant&lt; <a class="el" href="structscore_1_1gfx_1_1_persist_sampler.html">PersistSampler</a>, <a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a> &gt;</td></tr>
+<tr class="separator:a9d76695282728f9a95057bd6b18deccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a269a3abb86a1bf360e72c0abdcb34af3"><td class="memItemLeft" align="right" valign="top"><a id="a269a3abb86a1bf360e72c0abdcb34af3"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ValueVariant</b> = std::variant&lt; std::monostate, float, ossia::vec2f, ossia::vec3f, ossia::vec4f, <a class="el" href="structscore_1_1gfx_1_1image.html">image</a> &gt;</td></tr>
 <tr class="separator:a269a3abb86a1bf360e72c0abdcb34af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -326,6 +345,10 @@ QVulkanInstance *&#160;</td><td class="memItemRight" valign="bottom"><b>staticVu
 <tr class="memitem:ade240faed5ca4c785087262e25bfe848"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#ade240faed5ca4c785087262e25bfe848">__attribute__</a> ((packed)) ProcessUBO</td></tr>
 <tr class="memdesc:ade240faed5ca4c785087262e25bfe848"><td class="mdescLeft">&#160;</td><td class="mdescRight">UBO specific to individual processes / nodes.  <a href="namespacescore_1_1gfx.html#ade240faed5ca4c785087262e25bfe848">More...</a><br /></td></tr>
 <tr class="separator:ade240faed5ca4c785087262e25bfe848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15a05763dd9e30cdb72f2c3183359da1"><td class="memTemplParams" colspan="2"><a id="a15a05763dd9e30cdb72f2c3183359da1"></a>
+template&lt;typename Graph_T , typename IO &gt; </td></tr>
+<tr class="memitem:a15a05763dd9e30cdb72f2c3183359da1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>print_graph</b> (Graph_T &amp;g, IO &amp;stream)</td></tr>
+<tr class="separator:a15a05763dd9e30cdb72f2c3183359da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93637639b98f42b59cd9bb0b140fb5ca"><td class="memItemLeft" align="right" valign="top"><a id="a93637639b98f42b59cd9bb0b140fb5ca"></a>
 <a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#a93637639b98f42b59cd9bb0b140fb5ca">createRenderTarget</a> (const <a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> &amp;state, QRhiTexture *tex)</td></tr>
 <tr class="memdesc:a93637639b98f42b59cd9bb0b140fb5ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a render target from a texture. <br /></td></tr>

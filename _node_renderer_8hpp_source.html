@@ -110,86 +110,87 @@ $(document).ready(function(){initNavTree('_node_renderer_8hpp_source.html',''); 
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">NodeRenderer</a>() noexcept;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">NodeRenderer</a>();</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">virtual</span> std::optional&lt;QSize&gt; renderTargetSize() <span class="keyword">const</span> noexcept = 0;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a> renderTarget() <span class="keyword">const</span> noexcept = 0;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a> renderTargetForInput(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_port.html">Port</a>&amp; input) = 0;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> init(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer) = 0;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> update(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, QRhiResourceUpdateBatch&amp; res) = 0;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> runPass(</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;,</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      QRhiCommandBuffer&amp; commands,</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      QRhiResourceUpdateBatch&amp; updateBatch)</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      = 0;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> release(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;) = 0;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> releaseWithoutRenderTarget(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;) = 0;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_generic_node_renderer.html">   35</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="classscore_1_1gfx_1_1_generic_node_renderer.html">GenericNodeRenderer</a></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_generic_node_renderer.html">GenericNodeRenderer</a>(<span class="keyword">const</span> <a class="code" href="classscore_1_1gfx_1_1_node_model.html">NodeModel</a>&amp; node) noexcept</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      : <a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">NodeRenderer</a>{}</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      , node{node}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classscore_1_1gfx_1_1_generic_node_renderer.html">GenericNodeRenderer</a>() { }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">const</span> <a class="code" href="classscore_1_1gfx_1_1_node_model.html">NodeModel</a>&amp; node;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a> m_rt;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  std::vector&lt;Sampler&gt; m_samplers;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="comment">// Pipeline</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_pipeline.html">Pipeline</a> m_p;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  QRhiBuffer* m_meshBuffer{};</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  QRhiBuffer* m_idxBuffer{};</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> runInitialPasses(</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      QRhiCommandBuffer&amp; commands,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      QRhiResourceUpdateBatch*&amp; res,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      <a class="code" href="structscore_1_1gfx_1_1_edge.html">Edge</a>&amp; edge);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  [[nodiscard]]</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">virtual</span> QRhiResourceUpdateBatch* runRenderPass(</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      <a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      QRhiCommandBuffer&amp; commands,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <a class="code" href="structscore_1_1gfx_1_1_edge.html">Edge</a>&amp; edge);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> release(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;) = 0;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_generic_node_renderer.html">   42</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="classscore_1_1gfx_1_1_generic_node_renderer.html">GenericNodeRenderer</a></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_generic_node_renderer.html">GenericNodeRenderer</a>(<span class="keyword">const</span> <a class="code" href="classscore_1_1gfx_1_1_node_model.html">NodeModel</a>&amp; node) noexcept</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      : <a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">NodeRenderer</a>{}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      , node{node}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a> renderTargetForInput(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_port.html">Port</a>&amp; p) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classscore_1_1gfx_1_1_generic_node_renderer.html">GenericNodeRenderer</a>() { }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">const</span> <a class="code" href="classscore_1_1gfx_1_1_node_model.html">NodeModel</a>&amp; node;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="comment">//TextureRenderTarget m_rt;</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  QRhiBuffer* m_processUBO{};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  std::vector&lt;Sampler&gt; m_samplers;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_default_shader_material.html">DefaultShaderMaterial</a> m_material;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  int64_t materialChangedIndex{-1};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="comment">// Pipeline</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  ossia::small_vector&lt;std::pair&lt;Edge*, Pipeline&gt;, 2&gt; m_p;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a> <a class="code" href="namespacescore_1_1gfx.html#a93637639b98f42b59cd9bb0b140fb5ca">createRenderTarget</a>(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a>&amp; state);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a> renderTarget() <span class="keyword">const</span> noexcept <span class="keyword">override</span> { <span class="keywordflow">return</span> m_rt; }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  QRhiBuffer* m_meshBuffer{};</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  QRhiBuffer* m_idxBuffer{};</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  std::optional&lt;QSize&gt; renderTargetSize() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="comment">// Render loop</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> customInit(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span> init(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  QRhiBuffer* m_processUBO{};</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_default_shader_material.html">DefaultShaderMaterial</a> m_material;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  int64_t materialChangedIndex{-1};</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  customUpdate(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, QRhiResourceUpdateBatch&amp; res);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> update(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, QRhiResourceUpdateBatch&amp; res) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> customRelease(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> release(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">void</span> releaseWithoutRenderTarget(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">void</span> runPass(</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;,</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      QRhiCommandBuffer&amp; commands,</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      QRhiResourceUpdateBatch&amp; updateBatch) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  QRhiGraphicsPipeline* pipeline()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_p.pipeline; }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  QRhiShaderResourceBindings* resources()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_p.srb; }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="comment">// Render loop</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> defaultMeshInit(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> defaultUBOInit(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span> defaultPassesInit(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">void</span> init(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">void</span> defaultUBOUpdate(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, QRhiResourceUpdateBatch&amp; res);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">void</span> update(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, QRhiResourceUpdateBatch&amp; res) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">void</span> defaultRelease(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">void</span> release(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  QRhiResourceUpdateBatch* runRenderPass(</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      QRhiCommandBuffer&amp; commands,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <a class="code" href="structscore_1_1gfx_1_1_edge.html">Edge</a>&amp; edge) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructscore_1_1gfx_1_1_texture_render_target_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_texture_render_target.html">score::gfx::TextureRenderTarget</a></div><div class="ttdoc">Useful abstraction for storing all the data related to a render target.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:106</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdoc">Renderer for a given node.</div><div class="ttdef"><b>Definition:</b> NodeRenderer.hpp:10</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_node_model_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_model.html">score::gfx::NodeModel</a></div><div class="ttdoc">Common base class for most single-pass, simple nodes.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Node.hpp:87</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_node_model_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_model.html">score::gfx::NodeModel</a></div><div class="ttdoc">Common base class for most single-pass, simple nodes.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Node.hpp:108</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_default_shader_material_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_default_shader_material.html">score::gfx::DefaultShaderMaterial</a></div><div class="ttdoc">Utility to represent a shader material following score conventions.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:220</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_generic_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_generic_node_renderer.html">score::gfx::GenericNodeRenderer</a></div><div class="ttdoc">Generic renderer.</div><div class="ttdef"><b>Definition:</b> NodeRenderer.hpp:35</div></div>
-<div class="ttc" id="anamespacescore_1_1gfx_html_a93637639b98f42b59cd9bb0b140fb5ca"><div class="ttname"><a href="namespacescore_1_1gfx.html#a93637639b98f42b59cd9bb0b140fb5ca">score::gfx::createRenderTarget</a></div><div class="ttdeci">TextureRenderTarget createRenderTarget(const RenderState &amp;state, QRhiTexture *tex)</div><div class="ttdoc">Create a render target from a texture.</div><div class="ttdef"><b>Definition:</b> Utils.cpp:9</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_generic_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_generic_node_renderer.html">score::gfx::GenericNodeRenderer</a></div><div class="ttdoc">Generic renderer.</div><div class="ttdef"><b>Definition:</b> NodeRenderer.hpp:42</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_edge_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a></div><div class="ttdoc">Connection between two score::gfx::Port.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:61</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition:</b> Vulkan.cpp:7</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_pipeline_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_pipeline.html">score::gfx::Pipeline</a></div><div class="ttdoc">Useful abstraction for storing a graphics pipeline and associated resource bindings.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:88</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_render_state_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_render_state.html">score::gfx::RenderState</a></div><div class="ttdoc">Global state associated to a rendering context.</div><div class="ttdef"><b>Definition:</b> RenderState.hpp:24</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition:</b> RenderList.hpp:24</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_port_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a></div><div class="ttdoc">Port of a score::gfx::Node.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:43</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition:</b> RenderList.hpp:18</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -95,6 +95,7 @@ $(document).ready(function(){initNavTree('class_gfx_1_1_gfx_context.html',''); i
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_gfx_1_1_gfx_context-members.html">List of all members</a>  </div>
@@ -109,14 +110,20 @@ Inheritance diagram for Gfx::GfxContext:</div>
   <img src="class_gfx_1_1_gfx_context.png" alt=""/>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a935fff1a8ba44d90f28bfc932d4a6d79"><td class="memItemLeft" align="right" valign="top"><a id="a935fff1a8ba44d90f28bfc932d4a6d79"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>NodePtr</b> = std::unique_ptr&lt; <a class="el" href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a> &gt;</td></tr>
+<tr class="separator:a935fff1a8ba44d90f28bfc932d4a6d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a93dcc492895f2f9a894970cb3d77d503"><td class="memItemLeft" align="right" valign="top"><a id="a93dcc492895f2f9a894970cb3d77d503"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>GfxContext</b> (const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx)</td></tr>
 <tr class="separator:a93dcc492895f2f9a894970cb3d77d503"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96703d42b345f0f8f80ac9554f238fc6"><td class="memItemLeft" align="right" valign="top"><a id="a96703d42b345f0f8f80ac9554f238fc6"></a>
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>register_node</b> (std::unique_ptr&lt; <a class="el" href="classscore_1_1gfx_1_1_process_node.html">score::gfx::ProcessNode</a> &gt; node)</td></tr>
-<tr class="separator:a96703d42b345f0f8f80ac9554f238fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aaae7f1ddb09782cdb943f420db76be"><td class="memItemLeft" align="right" valign="top"><a id="a7aaae7f1ddb09782cdb943f420db76be"></a>
+int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>register_node</b> (NodePtr node)</td></tr>
+<tr class="separator:a7aaae7f1ddb09782cdb943f420db76be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fd5d03736d79861317e969646bccea8"><td class="memItemLeft" align="right" valign="top"><a id="a6fd5d03736d79861317e969646bccea8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>unregister_node</b> (int32_t idx)</td></tr>
 <tr class="separator:a6fd5d03736d79861317e969646bccea8"><td class="memSeparator" colspan="2">&#160;</td></tr>

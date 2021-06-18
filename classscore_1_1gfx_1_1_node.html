@@ -111,18 +111,18 @@ Inheritance diagram for score::gfx::Node:</div>
  <div class="center">
   <img src="classscore_1_1gfx_1_1_node.png" usemap="#score::gfx::Node_map" alt=""/>
   <map id="score::gfx::Node_map" name="score::gfx::Node_map">
-<area href="classscore_1_1gfx_1_1_process_node.html" title="Common base class for nodes that map to score processes." alt="score::gfx::ProcessNode" shape="rect" coords="312,56,510,80"/>
-<area href="structscore_1_1gfx_1_1_depth_node.html" alt="score::gfx::DepthNode" shape="rect" coords="0,112,198,136"/>
-<area href="classscore_1_1gfx_1_1_i_s_f_node.html" title="Data model for Interactive Shader Format filters." alt="score::gfx::ISFNode" shape="rect" coords="208,112,406,136"/>
-<area href="classscore_1_1gfx_1_1_node_model.html" title="Common base class for most single-pass, simple nodes." alt="score::gfx::NodeModel" shape="rect" coords="416,112,614,136"/>
-<area href="structscore_1_1gfx_1_1_video_node.html" title="Model for rendering a video." alt="score::gfx::VideoNode" shape="rect" coords="624,112,822,136"/>
-<area href="structscore_1_1gfx_1_1_full_screen_image_node.html" alt="score::gfx::FullScreenImageNode" shape="rect" coords="0,168,198,192"/>
-<area href="structscore_1_1gfx_1_1_images_node.html" title="A node that renders an image to screen." alt="score::gfx::ImagesNode" shape="rect" coords="208,168,406,192"/>
-<area href="structscore_1_1gfx_1_1_output_node.html" title="Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)" alt="score::gfx::OutputNode" shape="rect" coords="416,168,614,192"/>
-<area href="structscore_1_1gfx_1_1_phong_node.html" alt="score::gfx::PhongNode" shape="rect" coords="624,168,822,192"/>
-<area href="structscore_1_1gfx_1_1_texgen_node.html" alt="score::gfx::TexgenNode" shape="rect" coords="832,168,1030,192"/>
-<area href="struct_gfx_1_1_spout_node.html" alt="Gfx::SpoutNode" shape="rect" coords="312,224,510,248"/>
-<area href="structscore_1_1gfx_1_1_screen_node.html" title="This node is used for rendering to a score::gfx::Window." alt="score::gfx::ScreenNode" shape="rect" coords="520,224,718,248"/>
+<area href="classscore_1_1gfx_1_1_output_node.html" title="Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)" alt="score::gfx::OutputNode" shape="rect" coords="104,56,302,80"/>
+<area href="classscore_1_1gfx_1_1_process_node.html" title="Common base class for nodes that map to score processes." alt="score::gfx::ProcessNode" shape="rect" coords="728,56,926,80"/>
+<area href="struct_gfx_1_1_spout_node.html" alt="Gfx::SpoutNode" shape="rect" coords="0,112,198,136"/>
+<area href="structscore_1_1gfx_1_1_screen_node.html" title="This node is used for rendering to a score::gfx::Window." alt="score::gfx::ScreenNode" shape="rect" coords="208,112,406,136"/>
+<area href="structscore_1_1gfx_1_1_depth_node.html" alt="score::gfx::DepthNode" shape="rect" coords="416,112,614,136"/>
+<area href="classscore_1_1gfx_1_1_i_s_f_node.html" title="Data model for Interactive Shader Format filters." alt="score::gfx::ISFNode" shape="rect" coords="624,112,822,136"/>
+<area href="classscore_1_1gfx_1_1_node_model.html" title="Common base class for most single-pass, simple nodes." alt="score::gfx::NodeModel" shape="rect" coords="832,112,1030,136"/>
+<area href="structscore_1_1gfx_1_1_video_node.html" title="Model for rendering a video." alt="score::gfx::VideoNode" shape="rect" coords="1040,112,1238,136"/>
+<area href="structscore_1_1gfx_1_1_full_screen_image_node.html" alt="score::gfx::FullScreenImageNode" shape="rect" coords="520,168,718,192"/>
+<area href="structscore_1_1gfx_1_1_images_node.html" title="A node that renders an image to screen." alt="score::gfx::ImagesNode" shape="rect" coords="728,168,926,192"/>
+<area href="structscore_1_1gfx_1_1_phong_node.html" alt="score::gfx::PhongNode" shape="rect" coords="936,168,1134,192"/>
+<area href="structscore_1_1gfx_1_1_texgen_node.html" alt="score::gfx::TexgenNode" shape="rect" coords="1144,168,1342,192"/>
   </map>
 </div></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -138,6 +138,10 @@ virtual <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">NodeRender
 virtual const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node.html#a5f0baa97fa627840052c57813430c552">mesh</a> () const noexcept=0</td></tr>
 <tr class="memdesc:a5f0baa97fa627840052c57813430c552"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structscore_1_1gfx_1_1_mesh.html" title="Data model for meshes.">Mesh</a> corresponding to this node. <br /></td></tr>
 <tr class="separator:a5f0baa97fa627840052c57813430c552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77ba2c8b929537e064becf63a416a377"><td class="memItemLeft" align="right" valign="top"><a id="a77ba2c8b929537e064becf63a416a377"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node.html#a77ba2c8b929537e064becf63a416a377">process</a> (const <a class="el" href="structscore_1_1gfx_1_1_message.html">Message</a> &amp;msg)</td></tr>
+<tr class="memdesc:a77ba2c8b929537e064becf63a416a377"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_process.html" title="Base classes and tools to implement processes and layers.">Process</a> a message from the execution engine. <br /></td></tr>
+<tr class="separator:a77ba2c8b929537e064becf63a416a377"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>

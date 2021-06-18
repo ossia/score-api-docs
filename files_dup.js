@@ -407,6 +407,8 @@ var files_dup =
     [ "ExpressionMenu.hpp", "_expression_menu_8hpp_source.html", null ],
     [ "ExpressionValidator.hpp", "_expression_validator_8hpp_source.html", null ],
     [ "FactorOracle.hpp", "_factor_oracle_8hpp_source.html", null ],
+    [ "FactorOracle2.hpp", "_factor_oracle2_8hpp_source.html", null ],
+    [ "FactorOracle2MIDI.hpp", "_factor_oracle2_m_i_d_i_8hpp_source.html", null ],
     [ "score-plugin-audio/Audio/Settings/Factory.hpp", "score-plugin-audio_2_audio_2_settings_2_factory_8hpp_source.html", null ],
     [ "score-plugin-gfx/Gfx/Settings/Factory.hpp", "score-plugin-gfx_2_gfx_2_settings_2_factory_8hpp_source.html", null ],
     [ "score-plugin-media/Media/Effect/Settings/Factory.hpp", "score-plugin-media_2_media_2_effect_2_settings_2_factory_8hpp_source.html", null ],

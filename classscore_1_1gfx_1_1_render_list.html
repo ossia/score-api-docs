@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('classscore_1_1gfx_1_1_render_list.html
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>List of nodes to be rendered to an output. </p>
 <p>This references all the <a class="el" href="classscore_1_1gfx_1_1_node.html" title="Root data model for visual nodes.">score::gfx::Node</a> that have an effect on a given output, and manages all the matching renderers, as well as a few shared data, such as output-specific UBOs, shared textures and buffers, etc.</p>
-<p>The <a class="el" href="structscore_1_1gfx_1_1_graph.html" title="Represents a graph of renderers.">score::gfx::Graph</a> creates one <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a> per <a class="el" href="structscore_1_1gfx_1_1_output_node.html" title="Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)">OutputNode</a> in the graph. </p>
+<p>The <a class="el" href="structscore_1_1gfx_1_1_graph.html" title="Represents a graph of renderers.">score::gfx::Graph</a> creates one <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a> per <a class="el" href="classscore_1_1gfx_1_1_output_node.html" title="Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)">OutputNode</a> in the graph. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -120,7 +120,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>Buffers</b> = std::p
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0185f40e450af9a59c9e1ac96b2c8e26"><td class="memItemLeft" align="right" valign="top"><a id="a0185f40e450af9a59c9e1ac96b2c8e26"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RenderList</b> (<a class="el" href="structscore_1_1gfx_1_1_output_node.html">OutputNode</a> &amp;<a class="el" href="classscore_1_1gfx_1_1_render_list.html#ae178a78f64300b29ba29beb21653e2b4">output</a>, const <a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> &amp;<a class="el" href="classscore_1_1gfx_1_1_render_list.html#a4a7fed154ace49d0a73d4ea83624cbc5">state</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>RenderList</b> (<a class="el" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a> &amp;<a class="el" href="classscore_1_1gfx_1_1_render_list.html#ae178a78f64300b29ba29beb21653e2b4">output</a>, const <a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> &amp;<a class="el" href="classscore_1_1gfx_1_1_render_list.html#a4a7fed154ace49d0a73d4ea83624cbc5">state</a>)</td></tr>
 <tr class="separator:a0185f40e450af9a59c9e1ac96b2c8e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1be674c6e8c42ce80724f3a1ff3a9bd6"><td class="memItemLeft" align="right" valign="top"><a id="a1be674c6e8c42ce80724f3a1ff3a9bd6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a1be674c6e8c42ce80724f3a1ff3a9bd6">init</a> ()</td></tr>
@@ -145,9 +145,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a3d76d42b10aec8188188cc6bad2d04e7">maybeRebuild</a> ()</td></tr>
 <tr class="memdesc:a3d76d42b10aec8188188cc6bad2d04e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the render size has changed in order to rebuild the pipelines. <br /></td></tr>
 <tr class="separator:a3d76d42b10aec8188188cc6bad2d04e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf8d16ce901f157878e4180248568e31"><td class="memItemLeft" align="right" valign="top">QRhiTexture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#acf8d16ce901f157878e4180248568e31">textureTargetForInputPort</a> (<a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;port)</td></tr>
-<tr class="memdesc:acf8d16ce901f157878e4180248568e31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the texture corresponding to an input port.  <a href="classscore_1_1gfx_1_1_render_list.html#acf8d16ce901f157878e4180248568e31">More...</a><br /></td></tr>
-<tr class="separator:acf8d16ce901f157878e4180248568e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca38b48fa763dfd0aaf75f28f7a3ad60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#aca38b48fa763dfd0aaf75f28f7a3ad60">renderTargetForOutput</a> (const <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge) noexcept</td></tr>
+<tr class="memdesc:aca38b48fa763dfd0aaf75f28f7a3ad60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the texture corresponding to an output port.  <a href="classscore_1_1gfx_1_1_render_list.html#aca38b48fa763dfd0aaf75f28f7a3ad60">More...</a><br /></td></tr>
+<tr class="separator:aca38b48fa763dfd0aaf75f28f7a3ad60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af37102d6b29a5dd122a7aa022e3b6f66"><td class="memItemLeft" align="right" valign="top"><a id="af37102d6b29a5dd122a7aa022e3b6f66"></a>
 QRhiTexture &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#af37102d6b29a5dd122a7aa022e3b6f66">emptyTexture</a> () const noexcept</td></tr>
 <tr class="memdesc:af37102d6b29a5dd122a7aa022e3b6f66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Texture to use when a texture is missing. <br /></td></tr>
@@ -159,7 +159,7 @@ QRhiTexture &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="e
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ae178a78f64300b29ba29beb21653e2b4"><td class="memItemLeft" align="right" valign="top"><a id="ae178a78f64300b29ba29beb21653e2b4"></a>
-<a class="el" href="structscore_1_1gfx_1_1_output_node.html">OutputNode</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#ae178a78f64300b29ba29beb21653e2b4">output</a></td></tr>
+<a class="el" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#ae178a78f64300b29ba29beb21653e2b4">output</a></td></tr>
 <tr class="memdesc:ae178a78f64300b29ba29beb21653e2b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output node to which this <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a> is rendering to. <br /></td></tr>
 <tr class="separator:ae178a78f64300b29ba29beb21653e2b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a7fed154ace49d0a73d4ea83624cbc5"><td class="memItemLeft" align="right" valign="top"><a id="a4a7fed154ace49d0a73d4ea83624cbc5"></a>
@@ -232,25 +232,32 @@ std::vector&lt; <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">sc
 
 </div>
 </div>
-<a id="acf8d16ce901f157878e4180248568e31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf8d16ce901f157878e4180248568e31">&#9670;&nbsp;</a></span>textureTargetForInputPort()</h2>
+<a id="aca38b48fa763dfd0aaf75f28f7a3ad60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca38b48fa763dfd0aaf75f28f7a3ad60">&#9670;&nbsp;</a></span>renderTargetForOutput()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QRhiTexture * score::gfx::RenderList::textureTargetForInputPort </td>
+          <td class="memname"><a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a> score::gfx::RenderList::renderTargetForOutput </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;&#160;</td>
-          <td class="paramname"><em>port</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;&#160;</td>
+          <td class="paramname"><em>edge</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Obtain the texture corresponding to an input port. </p>
-<p>This is done by looking for the render target which corresponds to a given port.</p>
-<p>If it is not found, the empty 1x1 texture is returned. </p>
+<p>Obtain the texture corresponding to an output port. </p>
+<p>This is done by looking for the render target which corresponds to a given port. </p>
 
 </div>
 </div>

@@ -197,11 +197,19 @@ $(document).ready(function(){initNavTree('_mesh_8hpp_source.html',''); initResiz
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="structscore_1_1gfx_1_1_textured_triangle.html">TexturedTriangle</a>();</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_textured_triangle.html">TexturedTriangle</a>&amp; instance() noexcept;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;};</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_mesh_buffers.html">  124</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;{</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  QRhiBuffer* mesh{};</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  QRhiBuffer* index{};</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;};</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructscore_1_1gfx_1_1_mesh_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_mesh.html">score::gfx::Mesh</a></div><div class="ttdoc">Data model for meshes.</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:13</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition:</b> Vulkan.cpp:7</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_mesh_buffers_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_mesh_buffers.html">score::gfx::MeshBuffers</a></div><div class="ttdef"><b>Definition:</b> Mesh.hpp:124</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_plain_mesh_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_plain_mesh.html">score::gfx::PlainMesh</a></div><div class="ttdoc">A mesh with only position attributes.</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:45</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_texture_normal_mesh_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_texture_normal_mesh.html">score::gfx::TextureNormalMesh</a></div><div class="ttdoc">A mesh with positions, texture coordinates, and normals.</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:75</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_textured_mesh_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_textured_mesh.html">score::gfx::TexturedMesh</a></div><div class="ttdoc">A mesh with positions and texture coordinates.</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:60</div></div>

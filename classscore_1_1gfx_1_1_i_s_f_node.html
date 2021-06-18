@@ -96,6 +96,7 @@ $(document).ready(function(){initNavTree('classscore_1_1gfx_1_1_i_s_f_node.html'
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classscore_1_1gfx_1_1_i_s_f_node-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">score::gfx::ISFNode Class Reference</div>  </div>
@@ -141,12 +142,55 @@ QSize&#160;</td><td class="memItemRight" valign="bottom"><b>computeTextureSize</
 const isf::descriptor &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>descriptor</b> () const noexcept</td></tr>
 <tr class="separator:a64d863ccf1afbd92d6ea3a3833625607"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1gfx_1_1_process_node"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1gfx_1_1_process_node')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1gfx_1_1_process_node.html">score::gfx::ProcessNode</a></td></tr>
+<tr class="memitem:a07e20760fe4ea9145d7cfa1e7ab3be45 inherit pub_methods_classscore_1_1gfx_1_1_process_node"><td class="memItemLeft" align="right" valign="top"><a id="a07e20760fe4ea9145d7cfa1e7ab3be45"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_process_node.html#a07e20760fe4ea9145d7cfa1e7ab3be45">process</a> (const <a class="el" href="structscore_1_1gfx_1_1_message.html">Message</a> &amp;msg) override</td></tr>
+<tr class="memdesc:a07e20760fe4ea9145d7cfa1e7ab3be45 inherit pub_methods_classscore_1_1gfx_1_1_process_node"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_process.html" title="Base classes and tools to implement processes and layers.">Process</a> a message from the execution engine. <br /></td></tr>
+<tr class="separator:a07e20760fe4ea9145d7cfa1e7ab3be45 inherit pub_methods_classscore_1_1gfx_1_1_process_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a792b44a914901a8db7e76dd339775057 inherit pub_methods_classscore_1_1gfx_1_1_process_node"><td class="memItemLeft" align="right" valign="top"><a id="a792b44a914901a8db7e76dd339775057"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (const ossia::token_request &amp;tk)</td></tr>
+<tr class="separator:a792b44a914901a8db7e76dd339775057 inherit pub_methods_classscore_1_1gfx_1_1_process_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb04418b3cfa2ba79d9789c4d8e913e1 inherit pub_methods_classscore_1_1gfx_1_1_process_node"><td class="memItemLeft" align="right" valign="top"><a id="acb04418b3cfa2ba79d9789c4d8e913e1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (int32_t port, const ossia::value &amp;v)</td></tr>
+<tr class="separator:acb04418b3cfa2ba79d9789c4d8e913e1 inherit pub_methods_classscore_1_1gfx_1_1_process_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4461f30294e2664993ae76b47caf0ac9 inherit pub_methods_classscore_1_1gfx_1_1_process_node"><td class="memItemLeft" align="right" valign="top"><a id="a4461f30294e2664993ae76b47caf0ac9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (int32_t port, const ossia::audio_vector &amp;v)</td></tr>
+<tr class="separator:a4461f30294e2664993ae76b47caf0ac9 inherit pub_methods_classscore_1_1gfx_1_1_process_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe3e5324b8df85751b01d0d02fbe49dd inherit pub_methods_classscore_1_1gfx_1_1_process_node"><td class="memItemLeft" align="right" valign="top"><a id="abe3e5324b8df85751b01d0d02fbe49dd"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Node</b> ()</td></tr>
 <tr class="separator:abe3e5324b8df85751b01d0d02fbe49dd inherit pub_methods_classscore_1_1gfx_1_1_process_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ab64d91ec253896697ea66af00e39c9aa"><td class="memItemLeft" align="right" valign="top"><a id="ab64d91ec253896697ea66af00e39c9aa"></a>
+friend&#160;</td><td class="memItemRight" valign="bottom"><b>SinglePassISFNode</b></td></tr>
+<tr class="separator:ab64d91ec253896697ea66af00e39c9aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc620ff4dae08e6c44a7c0fdaee162ca"><td class="memItemLeft" align="right" valign="top"><a id="adc620ff4dae08e6c44a7c0fdaee162ca"></a>
+friend&#160;</td><td class="memItemRight" valign="bottom"><b>RenderedISFNode</b></td></tr>
+<tr class="separator:adc620ff4dae08e6c44a7c0fdaee162ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9af86aff5e6164e790abd16f871bc789"><td class="memItemLeft" align="right" valign="top"><a id="a9af86aff5e6164e790abd16f871bc789"></a>
+friend&#160;</td><td class="memItemRight" valign="bottom"><b>isf_input_port_vis</b></td></tr>
+<tr class="separator:a9af86aff5e6164e790abd16f871bc789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41aaf79d5d674732a25eeb45eefb5fe9"><td class="memItemLeft" align="right" valign="top"><a id="a41aaf79d5d674732a25eeb45eefb5fe9"></a>
+isf::descriptor&#160;</td><td class="memItemRight" valign="bottom"><b>m_descriptor</b></td></tr>
+<tr class="separator:a41aaf79d5d674732a25eeb45eefb5fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7229a6c791f44ac871166bf9dc06b58"><td class="memItemLeft" align="right" valign="top"><a id="af7229a6c791f44ac871166bf9dc06b58"></a>
+std::list&lt; <a class="el" href="structscore_1_1gfx_1_1_audio_texture.html">AudioTexture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_audio_textures</b></td></tr>
+<tr class="separator:af7229a6c791f44ac871166bf9dc06b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b494693f4f4731ca08895903e4190ff"><td class="memItemLeft" align="right" valign="top"><a id="a3b494693f4f4731ca08895903e4190ff"></a>
+std::unique_ptr&lt; char[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_material_data</b></td></tr>
+<tr class="separator:a3b494693f4f4731ca08895903e4190ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad79bff0ac6e0bda68b001210e3698a84"><td class="memItemLeft" align="right" valign="top"><a id="ad79bff0ac6e0bda68b001210e3698a84"></a>
+const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_mesh</b> {}</td></tr>
+<tr class="separator:ad79bff0ac6e0bda68b001210e3698a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3792292ab735432912b144e21e612fa"><td class="memItemLeft" align="right" valign="top"><a id="ac3792292ab735432912b144e21e612fa"></a>
+QShader&#160;</td><td class="memItemRight" valign="bottom"><b>m_vertexS</b></td></tr>
+<tr class="separator:ac3792292ab735432912b144e21e612fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a578cb6a279ad4c2498352b54bf3c5cdc"><td class="memItemLeft" align="right" valign="top"><a id="a578cb6a279ad4c2498352b54bf3c5cdc"></a>
+QShader&#160;</td><td class="memItemRight" valign="bottom"><b>m_fragmentS</b></td></tr>
+<tr class="separator:a578cb6a279ad4c2498352b54bf3c5cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeab42c4afb889b0956fa7e0f143a843d"><td class="memItemLeft" align="right" valign="top"><a id="aeab42c4afb889b0956fa7e0f143a843d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_materialSize</b> {}</td></tr>
+<tr class="separator:aeab42c4afb889b0956fa7e0f143a843d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classscore_1_1gfx_1_1_process_node"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classscore_1_1gfx_1_1_process_node')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classscore_1_1gfx_1_1_process_node.html">score::gfx::ProcessNode</a></td></tr>
 <tr class="memitem:a18bc0ee788516342e3151760b670fdb2 inherit pub_attribs_classscore_1_1gfx_1_1_process_node"><td class="memItemLeft" align="right" valign="top"><a id="a18bc0ee788516342e3151760b670fdb2"></a>
 std::atomic_int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_process_node.html#a18bc0ee788516342e3151760b670fdb2">materialChanged</a> {0}</td></tr>

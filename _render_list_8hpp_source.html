@@ -105,77 +105,72 @@ $(document).ready(function(){initNavTree('_render_list_8hpp_source.html',''); in
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore_1_1gfx.html">score::gfx</a></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_mesh_buffers.html">    8</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  QRhiBuffer* mesh{};</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  QRhiBuffer* index{};</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;};</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">struct </span><a class="code" href="structscore_1_1gfx_1_1_output_node.html">OutputNode</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_render_list.html">   24</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>(<a class="code" href="structscore_1_1gfx_1_1_output_node.html">OutputNode</a>&amp; output, <span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a>&amp; state);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">void</span> init();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> initMeshBuffer(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>&amp; mesh);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> update(QRhiResourceUpdateBatch&amp; res);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> render(QRhiCommandBuffer&amp; commands);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> release();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> maybeRebuild();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  QRhiTexture* textureTargetForInputPort(<a class="code" href="structscore_1_1gfx_1_1_port.html">Port</a>&amp; port);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_render_list.html#ae178a78f64300b29ba29beb21653e2b4">   74</a></span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_output_node.html">OutputNode</a>&amp; <a class="code" href="classscore_1_1gfx_1_1_render_list.html#ae178a78f64300b29ba29beb21653e2b4">output</a>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_render_list.html#a4a7fed154ace49d0a73d4ea83624cbc5">   79</a></span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> <a class="code" href="classscore_1_1gfx_1_1_render_list.html#a4a7fed154ace49d0a73d4ea83624cbc5">state</a>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">using</span> Buffers = std::pair&lt;const Mesh* const, MeshBuffers&gt;;</div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_render_list.html#a3a38761f45d48905a911d3c2ceec5051">   85</a></span>&#160;  ossia::small_vector&lt;Buffers, 4&gt; <a class="code" href="classscore_1_1gfx_1_1_render_list.html#a3a38761f45d48905a911d3c2ceec5051">buffersToUpload</a>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_render_list.html#ab2cdbf0f3dba7154f6551d478eee31c4">   90</a></span>&#160;  std::vector&lt;score::gfx::Node*&gt; <a class="code" href="classscore_1_1gfx_1_1_render_list.html#ab2cdbf0f3dba7154f6551d478eee31c4">nodes</a>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_render_list.html#a73bb243161c6a3a62aa9216748d4c110">   95</a></span>&#160;  std::vector&lt;score::gfx::NodeRenderer*&gt; <a class="code" href="classscore_1_1gfx_1_1_render_list.html#a73bb243161c6a3a62aa9216748d4c110">renderers</a>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_render_list.html#af37102d6b29a5dd122a7aa022e3b6f66">  100</a></span>&#160;  QRhiTexture&amp; <a class="code" href="classscore_1_1gfx_1_1_render_list.html#af37102d6b29a5dd122a7aa022e3b6f66">emptyTexture</a>() const noexcept { <span class="keywordflow">return</span> *m_emptyTexture; }</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span>OutputNode;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_render_list.html">   18</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>(<a class="code" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a>&amp; output, <span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a>&amp; state);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">void</span> init();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> initMeshBuffer(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>&amp; mesh);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span> update(QRhiResourceUpdateBatch&amp; res);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> render(QRhiCommandBuffer&amp; commands);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> release();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> maybeRebuild();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a> renderTargetForOutput(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_edge.html">Edge</a>&amp; edge) noexcept;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_render_list.html#ae178a78f64300b29ba29beb21653e2b4">   66</a></span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a>&amp; <a class="code" href="classscore_1_1gfx_1_1_render_list.html#ae178a78f64300b29ba29beb21653e2b4">output</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_render_list.html#a4a7fed154ace49d0a73d4ea83624cbc5">   71</a></span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> <a class="code" href="classscore_1_1gfx_1_1_render_list.html#a4a7fed154ace49d0a73d4ea83624cbc5">state</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">using</span> Buffers = std::pair&lt;const Mesh* const, MeshBuffers&gt;;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_render_list.html#a3a38761f45d48905a911d3c2ceec5051">   77</a></span>&#160;  ossia::small_vector&lt;Buffers, 4&gt; <a class="code" href="classscore_1_1gfx_1_1_render_list.html#a3a38761f45d48905a911d3c2ceec5051">buffersToUpload</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_render_list.html#ab2cdbf0f3dba7154f6551d478eee31c4">   82</a></span>&#160;  std::vector&lt;score::gfx::Node*&gt; <a class="code" href="classscore_1_1gfx_1_1_render_list.html#ab2cdbf0f3dba7154f6551d478eee31c4">nodes</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_render_list.html#a73bb243161c6a3a62aa9216748d4c110">   87</a></span>&#160;  std::vector&lt;score::gfx::NodeRenderer*&gt; <a class="code" href="classscore_1_1gfx_1_1_render_list.html#a73bb243161c6a3a62aa9216748d4c110">renderers</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_render_list.html#af37102d6b29a5dd122a7aa022e3b6f66">   92</a></span>&#160;  QRhiTexture&amp; <a class="code" href="classscore_1_1gfx_1_1_render_list.html#af37102d6b29a5dd122a7aa022e3b6f66">emptyTexture</a>() const noexcept { <span class="keywordflow">return</span> *m_emptyTexture; }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_render_list.html#acb4d286db246a8e40fc56b54fd419484">  100</a></span>&#160;  QRhiBuffer&amp; <a class="code" href="classscore_1_1gfx_1_1_render_list.html#acb4d286db246a8e40fc56b54fd419484">outputUBO</a>() const noexcept { <span class="keywordflow">return</span> *m_outputUBO; }</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_render_list.html#acb4d286db246a8e40fc56b54fd419484">  108</a></span>&#160;  QRhiBuffer&amp; <a class="code" href="classscore_1_1gfx_1_1_render_list.html#acb4d286db246a8e40fc56b54fd419484">outputUBO</a>() const noexcept { <span class="keywordflow">return</span> *m_outputUBO; }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  OutputUBO m_outputUBOData;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="comment">// Material</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  QRhiBuffer* m_outputUBO{};</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  QRhiTexture* m_emptyTexture{};</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  ossia::flat_map&lt;const Mesh*, MeshBuffers&gt; m_vertexBuffers;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  QSize m_lastSize{};</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordtype">bool</span> m_ready{};</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;};</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  OutputUBO m_outputUBOData;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="comment">// Material</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  QRhiBuffer* m_outputUBO{};</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  QRhiTexture* m_emptyTexture{};</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  ossia::flat_map&lt;const Mesh*, MeshBuffers&gt; m_vertexBuffers;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  QSize m_lastSize{};</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordtype">bool</span> m_ready{};</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;};</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html_acb4d286db246a8e40fc56b54fd419484"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html#acb4d286db246a8e40fc56b54fd419484">score::gfx::RenderList::outputUBO</a></div><div class="ttdeci">QRhiBuffer &amp; outputUBO() const noexcept</div><div class="ttdoc">UBO corresponding to the output parameters:</div><div class="ttdef"><b>Definition:</b> RenderList.hpp:108</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html_a3a38761f45d48905a911d3c2ceec5051"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html#a3a38761f45d48905a911d3c2ceec5051">score::gfx::RenderList::buffersToUpload</a></div><div class="ttdeci">ossia::small_vector&lt; Buffers, 4 &gt; buffersToUpload</div><div class="ttdoc">Buffers corresponding to the meshes to upload before rendering starts.</div><div class="ttdef"><b>Definition:</b> RenderList.hpp:85</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a></div><div class="ttdoc">Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)</div><div class="ttdef"><b>Definition:</b> OutputNode.hpp:23</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_texture_render_target_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_texture_render_target.html">score::gfx::TextureRenderTarget</a></div><div class="ttdoc">Useful abstraction for storing all the data related to a render target.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:106</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html_acb4d286db246a8e40fc56b54fd419484"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html#acb4d286db246a8e40fc56b54fd419484">score::gfx::RenderList::outputUBO</a></div><div class="ttdeci">QRhiBuffer &amp; outputUBO() const noexcept</div><div class="ttdoc">UBO corresponding to the output parameters:</div><div class="ttdef"><b>Definition:</b> RenderList.hpp:100</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html_a3a38761f45d48905a911d3c2ceec5051"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html#a3a38761f45d48905a911d3c2ceec5051">score::gfx::RenderList::buffersToUpload</a></div><div class="ttdeci">ossia::small_vector&lt; Buffers, 4 &gt; buffersToUpload</div><div class="ttdoc">Buffers corresponding to the meshes to upload before rendering starts.</div><div class="ttdef"><b>Definition:</b> RenderList.hpp:77</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_mesh_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_mesh.html">score::gfx::Mesh</a></div><div class="ttdoc">Data model for meshes.</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:13</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html_a4a7fed154ace49d0a73d4ea83624cbc5"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html#a4a7fed154ace49d0a73d4ea83624cbc5">score::gfx::RenderList::state</a></div><div class="ttdeci">RenderState state</div><div class="ttdoc">RenderState corresponding to this RenderList.</div><div class="ttdef"><b>Definition:</b> RenderList.hpp:79</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_output_node_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a></div><div class="ttdoc">Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)</div><div class="ttdef"><b>Definition:</b> OutputNode.hpp:14</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html_ab2cdbf0f3dba7154f6551d478eee31c4"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html#ab2cdbf0f3dba7154f6551d478eee31c4">score::gfx::RenderList::nodes</a></div><div class="ttdeci">std::vector&lt; score::gfx::Node * &gt; nodes</div><div class="ttdoc">Nodes present in this RenderList, in order.</div><div class="ttdef"><b>Definition:</b> RenderList.hpp:90</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html_a4a7fed154ace49d0a73d4ea83624cbc5"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html#a4a7fed154ace49d0a73d4ea83624cbc5">score::gfx::RenderList::state</a></div><div class="ttdeci">RenderState state</div><div class="ttdoc">RenderState corresponding to this RenderList.</div><div class="ttdef"><b>Definition:</b> RenderList.hpp:71</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_edge_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a></div><div class="ttdoc">Connection between two score::gfx::Port.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:61</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html_ab2cdbf0f3dba7154f6551d478eee31c4"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html#ab2cdbf0f3dba7154f6551d478eee31c4">score::gfx::RenderList::nodes</a></div><div class="ttdeci">std::vector&lt; score::gfx::Node * &gt; nodes</div><div class="ttdoc">Nodes present in this RenderList, in order.</div><div class="ttdef"><b>Definition:</b> RenderList.hpp:82</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition:</b> Vulkan.cpp:7</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_mesh_buffers_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_mesh_buffers.html">score::gfx::MeshBuffers</a></div><div class="ttdef"><b>Definition:</b> RenderList.hpp:8</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html_ae178a78f64300b29ba29beb21653e2b4"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html#ae178a78f64300b29ba29beb21653e2b4">score::gfx::RenderList::output</a></div><div class="ttdeci">OutputNode &amp; output</div><div class="ttdoc">Output node to which this RenderList is rendering to.</div><div class="ttdef"><b>Definition:</b> RenderList.hpp:74</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_port_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a></div><div class="ttdoc">Port of a score::gfx::Node.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:43</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html_af37102d6b29a5dd122a7aa022e3b6f66"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html#af37102d6b29a5dd122a7aa022e3b6f66">score::gfx::RenderList::emptyTexture</a></div><div class="ttdeci">QRhiTexture &amp; emptyTexture() const noexcept</div><div class="ttdoc">Texture to use when a texture is missing.</div><div class="ttdef"><b>Definition:</b> RenderList.hpp:100</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_mesh_buffers_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_mesh_buffers.html">score::gfx::MeshBuffers</a></div><div class="ttdef"><b>Definition:</b> Mesh.hpp:124</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html_ae178a78f64300b29ba29beb21653e2b4"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html#ae178a78f64300b29ba29beb21653e2b4">score::gfx::RenderList::output</a></div><div class="ttdeci">OutputNode &amp; output</div><div class="ttdoc">Output node to which this RenderList is rendering to.</div><div class="ttdef"><b>Definition:</b> RenderList.hpp:66</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html_af37102d6b29a5dd122a7aa022e3b6f66"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html#af37102d6b29a5dd122a7aa022e3b6f66">score::gfx::RenderList::emptyTexture</a></div><div class="ttdeci">QRhiTexture &amp; emptyTexture() const noexcept</div><div class="ttdoc">Texture to use when a texture is missing.</div><div class="ttdef"><b>Definition:</b> RenderList.hpp:92</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_render_state_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_render_state.html">score::gfx::RenderState</a></div><div class="ttdoc">Global state associated to a rendering context.</div><div class="ttdef"><b>Definition:</b> RenderState.hpp:24</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition:</b> RenderList.hpp:24</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html_a73bb243161c6a3a62aa9216748d4c110"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html#a73bb243161c6a3a62aa9216748d4c110">score::gfx::RenderList::renderers</a></div><div class="ttdeci">std::vector&lt; score::gfx::NodeRenderer * &gt; renderers</div><div class="ttdoc">Renderers - one per node.</div><div class="ttdef"><b>Definition:</b> RenderList.hpp:95</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition:</b> RenderList.hpp:18</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html_a73bb243161c6a3a62aa9216748d4c110"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html#a73bb243161c6a3a62aa9216748d4c110">score::gfx::RenderList::renderers</a></div><div class="ttdeci">std::vector&lt; score::gfx::NodeRenderer * &gt; renderers</div><div class="ttdoc">Renderers - one per node.</div><div class="ttdef"><b>Definition:</b> RenderList.hpp:87</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

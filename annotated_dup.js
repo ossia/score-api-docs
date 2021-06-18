@@ -204,6 +204,17 @@ var annotated_dup =
       [ "SelectedNodes", "struct_explorer_1_1_selected_nodes.html", "struct_explorer_1_1_selected_nodes" ],
       [ "SliderValueWidget", "class_explorer_1_1_slider_value_widget.html", "class_explorer_1_1_slider_value_widget" ]
     ] ],
+    [ "Factor", null, [
+      [ "FactorOracle", "class_factor_1_1_factor_oracle.html", "class_factor_1_1_factor_oracle" ],
+      [ "SingleTransition", "class_factor_1_1_single_transition.html", "class_factor_1_1_single_transition" ],
+      [ "State", "class_factor_1_1_state.html", "class_factor_1_1_state" ]
+    ] ],
+    [ "FactorOracle2MIDI", null, [
+      [ "FactorOracle2MIDI", "class_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i.html", "class_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i" ],
+      [ "Notes", "class_factor_oracle2_m_i_d_i_1_1_notes.html", "class_factor_oracle2_m_i_d_i_1_1_notes" ],
+      [ "SingleTransition", "class_factor_oracle2_m_i_d_i_1_1_single_transition.html", "class_factor_oracle2_m_i_d_i_1_1_single_transition" ],
+      [ "State", "class_factor_oracle2_m_i_d_i_1_1_state.html", "class_factor_oracle2_m_i_d_i_1_1_state" ]
+    ] ],
     [ "Faust", null, [
       [ "DropHandler", "class_faust_1_1_drop_handler.html", null ],
       [ "EditScript", "class_faust_1_1_edit_script.html", null ],
@@ -510,6 +521,12 @@ var annotated_dup =
         [ "Node", "struct_nodes_1_1_factor_oracle_1_1_node.html", "struct_nodes_1_1_factor_oracle_1_1_node" ],
         [ "safe_vector", "struct_nodes_1_1_factor_oracle_1_1safe__vector.html", "struct_nodes_1_1_factor_oracle_1_1safe__vector" ],
         [ "safe_vector_simple", "struct_nodes_1_1_factor_oracle_1_1safe__vector__simple.html", "struct_nodes_1_1_factor_oracle_1_1safe__vector__simple" ]
+      ] ],
+      [ "FactorOracle2", null, [
+        [ "Node", "struct_nodes_1_1_factor_oracle2_1_1_node.html", "struct_nodes_1_1_factor_oracle2_1_1_node" ]
+      ] ],
+      [ "FactorOracle2MIDI", null, [
+        [ "Node", "struct_nodes_1_1_factor_oracle2_m_i_d_i_1_1_node.html", "struct_nodes_1_1_factor_oracle2_m_i_d_i_1_1_node" ]
       ] ],
       [ "Gain", null, [
         [ "Node", "struct_nodes_1_1_gain_1_1_node.html", "struct_nodes_1_1_gain_1_1_node" ]
