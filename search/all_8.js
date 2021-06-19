@@ -58,7 +58,8 @@ var searchData=
   ['hseparator_833',['HSeparator',['../classscore_1_1_h_separator.html',1,'score']]],
   ['hsvslider_834',['HSVSlider',['../struct_widget_factory_1_1_h_s_v_slider.html',1,'WidgetFactory']]],
   ['httpdevice_835',['HTTPDevice',['../class_protocols_1_1_h_t_t_p_device.html',1,'Protocols']]],
-  ['httpprotocolfactory_836',['HTTPProtocolFactory',['../class_protocols_1_1_h_t_t_p_protocol_factory.html',1,'Protocols']]],
-  ['httpprotocolsettingswidget_837',['HTTPProtocolSettingsWidget',['../class_protocols_1_1_h_t_t_p_protocol_settings_widget.html',1,'Protocols']]],
-  ['httpspecificsettings_838',['HTTPSpecificSettings',['../struct_protocols_1_1_h_t_t_p_specific_settings.html',1,'Protocols']]]
+  ['httpget_836',['HTTPGet',['../classscore_1_1_h_t_t_p_get.html',1,'score']]],
+  ['httpprotocolfactory_837',['HTTPProtocolFactory',['../class_protocols_1_1_h_t_t_p_protocol_factory.html',1,'Protocols']]],
+  ['httpprotocolsettingswidget_838',['HTTPProtocolSettingsWidget',['../class_protocols_1_1_h_t_t_p_protocol_settings_widget.html',1,'Protocols']]],
+  ['httpspecificsettings_839',['HTTPSpecificSettings',['../struct_protocols_1_1_h_t_t_p_specific_settings.html',1,'Protocols']]]
 ];

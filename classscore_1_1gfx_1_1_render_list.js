@@ -2,6 +2,7 @@ var classscore_1_1gfx_1_1_render_list =
 [
     [ "Buffers", "classscore_1_1gfx_1_1_render_list.html#a0b6c7af89c427d4d6d651558a636bc94", null ],
     [ "RenderList", "classscore_1_1gfx_1_1_render_list.html#a0185f40e450af9a59c9e1ac96b2c8e26", null ],
+    [ "~RenderList", "classscore_1_1gfx_1_1_render_list.html#a999d40388d4a7c519151225335606b93", null ],
     [ "emptyTexture", "classscore_1_1gfx_1_1_render_list.html#af37102d6b29a5dd122a7aa022e3b6f66", null ],
     [ "init", "classscore_1_1gfx_1_1_render_list.html#a1be674c6e8c42ce80724f3a1ff3a9bd6", null ],
     [ "initMeshBuffer", "classscore_1_1gfx_1_1_render_list.html#a8ce1357933a6f40b19e664902110474b", null ],

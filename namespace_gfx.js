@@ -20,6 +20,11 @@ var namespace_gfx =
       [ "Presenter", "class_gfx_1_1_settings_1_1_presenter.html", "class_gfx_1_1_settings_1_1_presenter" ],
       [ "View", "class_gfx_1_1_settings_1_1_view.html", "class_gfx_1_1_settings_1_1_view" ]
     ] ],
+    [ "Text", null, [
+      [ "Model", "class_gfx_1_1_text_1_1_model.html", "class_gfx_1_1_text_1_1_model" ],
+      [ "ProcessExecutorComponent", "class_gfx_1_1_text_1_1_process_executor_component.html", "class_gfx_1_1_text_1_1_process_executor_component" ],
+      [ "text_node", "class_gfx_1_1_text_1_1text__node.html", "class_gfx_1_1_text_1_1text__node" ]
+    ] ],
     [ "Video", null, [
       [ "DropHandler", "class_gfx_1_1_video_1_1_drop_handler.html", null ],
       [ "InspectorFactory", "class_gfx_1_1_video_1_1_inspector_factory.html", null ],

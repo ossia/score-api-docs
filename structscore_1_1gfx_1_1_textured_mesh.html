@@ -110,8 +110,9 @@ Inheritance diagram for score::gfx::TexturedMesh:</div>
  <div class="center">
   <img src="structscore_1_1gfx_1_1_textured_mesh.png" usemap="#score::gfx::TexturedMesh_map" alt=""/>
   <map id="score::gfx::TexturedMesh_map" name="score::gfx::TexturedMesh_map">
-<area href="structscore_1_1gfx_1_1_mesh.html" title="Data model for meshes." alt="score::gfx::Mesh" shape="rect" coords="0,0,168,24"/>
-<area href="structscore_1_1gfx_1_1_textured_triangle.html" title="A triangle mesh with positions and texture coordinates." alt="score::gfx::TexturedTriangle" shape="rect" coords="0,112,168,136"/>
+<area href="structscore_1_1gfx_1_1_mesh.html" title="Data model for meshes." alt="score::gfx::Mesh" shape="rect" coords="89,0,257,24"/>
+<area href="structscore_1_1gfx_1_1_textured_quad.html" title="A quad mesh with positions and texture coordinates." alt="score::gfx::TexturedQuad" shape="rect" coords="0,112,168,136"/>
+<area href="structscore_1_1gfx_1_1_textured_triangle.html" title="A triangle mesh with positions and texture coordinates." alt="score::gfx::TexturedTriangle" shape="rect" coords="178,112,346,136"/>
   </map>
 </div></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -122,14 +123,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa64d19e313071077d95c9b430de88005"><td class="memItemLeft" align="right" valign="top"><a id="aa64d19e313071077d95c9b430de88005"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>TexturedMesh</b> (gsl::span&lt; const float &gt; vtx, int count)</td></tr>
 <tr class="separator:aa64d19e313071077d95c9b430de88005"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab415e4d99575d19d445626285f375a4f"><td class="memItemLeft" align="right" valign="top"><a id="ab415e4d99575d19d445626285f375a4f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_textured_mesh.html#ab415e4d99575d19d445626285f375a4f">setupBindings</a> (QRhiBuffer &amp;vtxData, QRhiBuffer *idxData, QRhiCommandBuffer &amp;cb) const noexcept override</td></tr>
-<tr class="memdesc:ab415e4d99575d19d445626285f375a4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup bindings according to the input triangle data. <br /></td></tr>
-<tr class="separator:ab415e4d99575d19d445626285f375a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbcbf92d0d4b9a568b85d0124df4220e"><td class="memItemLeft" align="right" valign="top"><a id="acbcbf92d0d4b9a568b85d0124df4220e"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_textured_mesh.html#acbcbf92d0d4b9a568b85d0124df4220e">defaultVertexShader</a> () const noexcept override</td></tr>
 <tr class="memdesc:acbcbf92d0d4b9a568b85d0124df4220e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A basic vertex shader that is going to work with this mesh. <br /></td></tr>
 <tr class="separator:acbcbf92d0d4b9a568b85d0124df4220e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_structscore_1_1gfx_1_1_mesh"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structscore_1_1gfx_1_1_mesh')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structscore_1_1gfx_1_1_mesh.html">score::gfx::Mesh</a></td></tr>
+<tr class="memitem:a3e860d96910c86a76fa30174250ddcf8 inherit pub_methods_structscore_1_1gfx_1_1_mesh"><td class="memItemLeft" align="right" valign="top"><a id="a3e860d96910c86a76fa30174250ddcf8"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_mesh.html#a3e860d96910c86a76fa30174250ddcf8">setupBindings</a> (QRhiBuffer &amp;vtxData, QRhiBuffer *idxData, QRhiCommandBuffer &amp;cb) const noexcept=0</td></tr>
+<tr class="memdesc:a3e860d96910c86a76fa30174250ddcf8 inherit pub_methods_structscore_1_1gfx_1_1_mesh"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup bindings according to the input triangle data. <br /></td></tr>
+<tr class="separator:a3e860d96910c86a76fa30174250ddcf8 inherit pub_methods_structscore_1_1gfx_1_1_mesh"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
