@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('_output_node_8hpp_source.html',''); in
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a>();</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> setRenderer(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>*) = 0;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> setRenderer(std::shared_ptr&lt;RenderList&gt;) = 0;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>* renderer() <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classscore_1_1gfx_1_1_output_node_renderer.html">OutputNodeRenderer</a>* createRenderer(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r) <span class="keyword">const</span> noexcept = 0;</div>

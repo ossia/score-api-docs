@@ -1,5 +1,6 @@
 var NAVTREEINDEX49 =
 {
+"struct_control_1_1_int_slider.html#ac160f32569eb2b1de07de259fabda945":[12,0,3,24,8],
 "struct_control_1_1_int_slider.html#af0079599ac6a9bb9bd4f5c91f8adb8fa":[12,0,3,24,6],
 "struct_control_1_1_int_slider.html#affee34887256237a4d04c439fb747eca":[12,0,3,24,2],
 "struct_control_1_1_int_spin_box.html":[12,0,3,25],
@@ -248,6 +249,5 @@ var NAVTREEINDEX49 =
 "struct_dataflow_1_1_min_max_float_outlet_factory.html#a6084688fc48bafbc98c57e32c8a542f5":[12,0,6,30,3],
 "struct_dataflow_1_1_min_max_float_outlet_factory.html#a8b598f6f080bfd3305fefcf7b3236a26":[12,0,6,30,0],
 "struct_dataflow_1_1_value_inlet_factory.html":[12,0,6,38],
-"struct_dataflow_1_1_value_inlet_factory.html#aa9feaa427f9083b2272c7c1e2866bbcb":[12,0,6,38,1],
-"struct_dataflow_1_1_value_inlet_factory.html#ad4b4ae153b181906053e65a660ef64e1":[12,0,6,38,2]
+"struct_dataflow_1_1_value_inlet_factory.html#aa9feaa427f9083b2272c7c1e2866bbcb":[12,0,6,38,1]
 };

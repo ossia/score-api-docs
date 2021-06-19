@@ -13,7 +13,7 @@ var structscore_1_1gfx_1_1_screen_node =
     [ "renderState", "structscore_1_1gfx_1_1_screen_node.html#a1d0b084a900b0aaa146e2ba90ebfe734", null ],
     [ "setFullScreen", "structscore_1_1gfx_1_1_screen_node.html#a281cdbe27e2fdd2f74c9dcb9b0eb97b0", null ],
     [ "setPosition", "structscore_1_1gfx_1_1_screen_node.html#a2432ebb887ebb71c944a17b39a5f9a9f", null ],
-    [ "setRenderer", "structscore_1_1gfx_1_1_screen_node.html#aae52c830592033d0f3ade6804afa75c2", null ],
+    [ "setRenderer", "structscore_1_1gfx_1_1_screen_node.html#a2b0f79999c628dde8c08d240dea62f00", null ],
     [ "setScreen", "structscore_1_1gfx_1_1_screen_node.html#ad332ca2296069f67278e71743c10746f", null ],
     [ "setSize", "structscore_1_1gfx_1_1_screen_node.html#abf3a24b996ca9dc947bbd59a24d6a7f3", null ],
     [ "startRendering", "structscore_1_1gfx_1_1_screen_node.html#a98486d365fb8301dc7190b4ab82450b1", null ],

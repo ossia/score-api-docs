@@ -43,6 +43,7 @@ var namespacescore_1_1gfx =
     [ "Sampler", "structscore_1_1gfx_1_1_sampler.html", "structscore_1_1gfx_1_1_sampler" ],
     [ "ScreenNode", "structscore_1_1gfx_1_1_screen_node.html", "structscore_1_1gfx_1_1_screen_node" ],
     [ "ShaderCache", "structscore_1_1gfx_1_1_shader_cache.html", null ],
+    [ "SimpleRenderedISFNode", "structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html", "structscore_1_1gfx_1_1_simple_rendered_i_s_f_node" ],
     [ "TexgenNode", "structscore_1_1gfx_1_1_texgen_node.html", "structscore_1_1gfx_1_1_texgen_node" ],
     [ "TextNode", "structscore_1_1gfx_1_1_text_node.html", "structscore_1_1gfx_1_1_text_node" ],
     [ "TexturedMesh", "structscore_1_1gfx_1_1_textured_mesh.html", "structscore_1_1gfx_1_1_textured_mesh" ],

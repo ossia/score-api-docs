@@ -95,7 +95,7 @@ var searchData=
   ['restorabledocument_1927',['RestorableDocument',['../structscore_1_1_restorable_document.html',1,'score']]],
   ['revsuffix_1928',['RevSuffix',['../class_factor_1_1_factor_oracle.html#a0c8087389175332cb57cb425fb2aa9d0',1,'Factor::FactorOracle::RevSuffix()'],['../class_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i.html#a88ce8dd41abafefe78d4054d728ffd84',1,'FactorOracle2MIDI::FactorOracle2MIDI::RevSuffix()']]],
   ['rgb0decoder_1929',['RGB0Decoder',['../structscore_1_1gfx_1_1_r_g_b0_decoder.html',1,'score::gfx']]],
-  ['rgbaedit_1930',['RGBAEdit',['../struct_widget_factory_1_1_r_g_b_a_edit.html',1,'WidgetFactory::RGBAEdit'],['../struct_control_1_1_r_g_b_a_edit.html',1,'Control::RGBAEdit']]],
+  ['rgbaedit_1930',['RGBAEdit',['../struct_control_1_1_r_g_b_a_edit.html',1,'Control::RGBAEdit'],['../struct_widget_factory_1_1_r_g_b_a_edit.html',1,'WidgetFactory::RGBAEdit']]],
   ['rightbraceview_1931',['RightBraceView',['../class_scenario_1_1_right_brace_view.html',1,'Scenario']]],
   ['rightclickimpl_1932',['RightClickImpl',['../structscore_1_1_right_click_impl.html',1,'score']]],
   ['rmsdata_1933',['RMSData',['../struct_media_1_1_r_m_s_data.html',1,'Media']]],

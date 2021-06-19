@@ -35,7 +35,7 @@ var searchData=
   ['changeshader_221',['ChangeShader',['../class_gfx_1_1_change_shader.html',1,'Gfx']]],
   ['changeslotposition_222',['ChangeSlotPosition',['../class_scenario_1_1_command_1_1_change_slot_position.html',1,'Scenario::Command']]],
   ['changesourceaddress_223',['ChangeSourceAddress',['../class_mapping_1_1_change_source_address.html',1,'Mapping']]],
-  ['changespline_224',['ChangeSpline',['../class_spline_1_1_change_spline.html',1,'Spline::ChangeSpline'],['../class_spline3_d_1_1_change_spline.html',1,'Spline3D::ChangeSpline']]],
+  ['changespline_224',['ChangeSpline',['../class_spline3_d_1_1_change_spline.html',1,'Spline3D::ChangeSpline'],['../class_spline_1_1_change_spline.html',1,'Spline::ChangeSpline']]],
   ['changesteps_225',['ChangeSteps',['../class_media_1_1_change_steps.html',1,'Media']]],
   ['changetargetaddress_226',['ChangeTargetAddress',['../class_mapping_1_1_change_target_address.html',1,'Mapping']]],
   ['channel_227',['Channel',['../struct_protocols_1_1_artnet_1_1_channel.html',1,'Protocols::Artnet']]],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX24 =
 {
+"class_process_1_1_port_factory___t.html#a37bee9d70364f99f8d0636c65af39e69":[12,0,37,60,0],
 "class_process_1_1_port_factory_list.html":[12,0,37,61],
 "class_process_1_1_port_factory_list.html#a038785ba78e1b8f0e3a02a7cebb23f29":[12,0,37,61,2],
 "class_process_1_1_port_factory_list.html#ab2257fb5ccf4494624ad92265fcab51f":[12,0,37,61,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX24 =
 "class_protocols_1_1_joystick_device.html#ae8c8e65b7cbca478a93dc5d0b8eb0dc7":[12,0,38,16,2],
 "class_protocols_1_1_joystick_enumerator.html":[12,0,38,17],
 "class_protocols_1_1_joystick_enumerator.html#a83ed06eb83e30615250ab8fe33e6f7f3":[12,0,38,17,0],
-"class_protocols_1_1_joystick_protocol_factory.html":[12,0,38,18],
-"class_protocols_1_1_joystick_protocol_settings_widget.html":[12,0,38,19]
+"class_protocols_1_1_joystick_protocol_factory.html":[12,0,38,18]
 };

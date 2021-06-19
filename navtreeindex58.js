@@ -1,5 +1,7 @@
 var NAVTREEINDEX58 =
 {
+"struct_remote_control_1_1_receiver.html#ab13a951d47c290ebaae2a852acf15e8c":[12,0,41,12,10],
+"struct_remote_control_1_1_receiver.html#ad5f235838679e7f7c92d0f04822ae427":[12,0,41,12,7],
 "struct_remote_control_1_1_receiver.html#af657b2308dc881724d9de068a52bdd1c":[12,0,41,12,11],
 "struct_remote_control_1_1_receiver.html#afec0a10b245bc26eb1c668b0f32124d4":[12,0,41,12,0],
 "struct_remote_control_1_1_remote_messages.html":[12,0,41,13],
@@ -247,7 +249,5 @@ var NAVTREEINDEX58 =
 "struct_scenario_1_1_layer_slot_presenter.html#a4e7afb8fffd885c9d12f691a83729e7e":[12,0,43,135,0],
 "struct_scenario_1_1_layer_slot_presenter.html#a557b1f8ecc55fe292ca0baae89a9e387":[12,0,43,135,5],
 "struct_scenario_1_1_layer_slot_presenter.html#a66bdc3a4334531fb2b7dc8a84b914fdb":[12,0,43,135,1],
-"struct_scenario_1_1_layer_slot_presenter.html#ac62b47d5b1d9316af2a2da4694a2b616":[12,0,43,135,2],
-"struct_scenario_1_1_magnetic_states.html":[12,0,43,140],
-"struct_scenario_1_1_magnetic_states.html#a198ac21579a7ee4dca3160d596bdca83":[12,0,43,140,2]
+"struct_scenario_1_1_layer_slot_presenter.html#ac62b47d5b1d9316af2a2da4694a2b616":[12,0,43,135,2]
 };
