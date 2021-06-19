@@ -1,11 +1,16 @@
 var NAVTREEINDEX47 =
 {
+"classvst_1_1vst__node__base.html#ad3cfe3ed788c86ae5fcf95829d03b5a5":[12,0,53,17,3],
+"classvst_1_1vst__node__base.html#ae8555db49dbf264c3d5c166ac99212b0":[12,0,53,17,2],
+"codingstyle_8hpp_source.html":[13,0,137],
+"contexts_8hpp_source.html":[13,0,190],
+"d_2_spline3_d_2_execution_8hpp_source.html":[13,0,370],
 "d_2_spline3_d_2_generator_dialog_8hpp_source.html":[13,0,439],
 "data_structures_8hpp_source.html":[13,0,260],
 "element_finding_helper_8hpp_source.html":[13,0,347],
 "files.html":[13,0],
-"functions.html":[12,3,0,0],
 "functions.html":[12,3,0],
+"functions.html":[12,3,0,0],
 "functions_b.html":[12,3,0,1],
 "functions_c.html":[12,3,0,2],
 "functions_d.html":[12,3,0,3],
@@ -73,11 +78,11 @@ var NAVTREEINDEX47 =
 "namespace_curve.html":[11,0,1],
 "namespace_device.html":[12,0,7],
 "namespace_device.html":[11,0,2],
-"namespace_engine.html":[11,0,3],
 "namespace_engine.html":[12,0,8],
+"namespace_engine.html":[11,0,3],
 "namespace_engine_1_1_network.html":[11,0,3,0],
-"namespace_execution.html":[11,0,4],
 "namespace_execution.html":[12,0,9],
+"namespace_execution.html":[11,0,4],
 "namespace_gfx.html":[12,0,15],
 "namespace_gfx.html":[11,0,5],
 "namespace_inspector.html":[11,0,6],
@@ -244,10 +249,5 @@ var NAVTREEINDEX47 =
 "score-plugin-scenario_2_scenario_2_palette_2_tools_2_smart_tool_8hpp_source.html":[13,0,1137],
 "score-plugin-spline3d_2_spline3_d_2_model_8hpp_source.html":[13,0,720],
 "score-plugin-spline_2_spline_2_model_8hpp_source.html":[13,0,719],
-"score-plugin-spline_2_spline_2_view_8hpp_source.html":[13,0,1283],
-"score-plugin-transport_2_transport_2_application_plugin_8hpp_source.html":[13,0,55],
-"score-plugin-vst3_2_vst3_2_application_plugin_8hpp_source.html":[13,0,57],
-"score-plugin-vst3_2_vst3_2_effect_model_8hpp_source.html":[13,0,345],
-"score-plugin-vst3_2_vst3_2_executor_8hpp_source.html":[13,0,390],
-"score-plugin-vst3_2_vst3_2_library_8hpp_source.html":[13,0,586]
+"score-plugin-spline_2_spline_2_view_8hpp_source.html":[13,0,1283]
 };

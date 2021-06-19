@@ -1,5 +1,10 @@
 var NAVTREEINDEX57 =
 {
+"struct_q_meta_type_id_3_01_lock_mode_01_4.html#a5d959938570da4c3f0bf0d41ddf52e0daf7e54de420a4da4af720fb919049332c":[12,0,241,0],
+"struct_q_meta_type_id_3_01_media_1_1_sound_1_1_computed_waveform_01_4.html":[12,0,243],
+"struct_q_meta_type_id_3_01_media_1_1_sound_1_1_computed_waveform_01_4.html#a3a82d3e90df4948481e39f520da8ee9aac4c330ebcc0f57a4846b68454b727b7e":[12,0,243,0],
+"struct_q_meta_type_id_3_01_media_1_1_sound_1_1_waveform_request_01_4.html":[12,0,244],
+"struct_q_meta_type_id_3_01_media_1_1_sound_1_1_waveform_request_01_4.html#a7b564a5f992622ac70380c63f82ed6a0a3ec114666a50c0c4dfdd0a419d79debc":[12,0,244,0],
 "struct_q_meta_type_id_3_01_media_1_1audio__handle_01_4.html":[12,0,242],
 "struct_q_meta_type_id_3_01_media_1_1audio__handle_01_4.html#a08e3ff703c7fcb36915e226b360a76a3a6b6cd181a966bc3a72df393602367d7e":[12,0,242,0],
 "struct_q_meta_type_id_3_01_p_m_1_1_remote_package_01_4.html":[12,0,251],
@@ -244,10 +249,5 @@ var NAVTREEINDEX57 =
 "struct_remote_control_1_1_receiver.html#a9790c165e79f219dc53ff53c850f3698":[12,0,41,12,4],
 "struct_remote_control_1_1_receiver.html#aa226c11b04084d2081d8c9eb679035b7":[12,0,41,12,5],
 "struct_remote_control_1_1_receiver.html#ab13a951d47c290ebaae2a852acf15e8c":[12,0,41,12,10],
-"struct_remote_control_1_1_receiver.html#ad5f235838679e7f7c92d0f04822ae427":[12,0,41,12,7],
-"struct_remote_control_1_1_receiver.html#af657b2308dc881724d9de068a52bdd1c":[12,0,41,12,11],
-"struct_remote_control_1_1_receiver.html#afec0a10b245bc26eb1c668b0f32124d4":[12,0,41,12,0],
-"struct_remote_control_1_1_remote_messages.html":[12,0,41,13],
-"struct_remote_control_1_1_remote_messages.html#a2f24eaa7cfd96044817aaf9288bfc5fb":[12,0,41,13,3],
-"struct_remote_control_1_1_remote_messages.html#a375568560411cbaa3485cda5a36fd23b":[12,0,41,13,2]
+"struct_remote_control_1_1_receiver.html#ad5f235838679e7f7c92d0f04822ae427":[12,0,41,12,7]
 };

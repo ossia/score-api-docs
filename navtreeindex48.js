@@ -1,5 +1,10 @@
 var NAVTREEINDEX48 =
 {
+"score-plugin-transport_2_transport_2_application_plugin_8hpp_source.html":[13,0,55],
+"score-plugin-vst3_2_vst3_2_application_plugin_8hpp_source.html":[13,0,57],
+"score-plugin-vst3_2_vst3_2_effect_model_8hpp_source.html":[13,0,345],
+"score-plugin-vst3_2_vst3_2_executor_8hpp_source.html":[13,0,390],
+"score-plugin-vst3_2_vst3_2_library_8hpp_source.html":[13,0,586],
 "score-plugin-vst3_2_vst3_2_node_8hpp_source.html":[13,0,754],
 "score-plugin-vst3_2_vst3_2_widgets_8hpp_source.html":[13,0,1300],
 "score-plugin-vst_2_vst_2_application_plugin_8hpp_source.html":[13,0,56],
@@ -244,10 +249,5 @@ var NAVTREEINDEX48 =
 "struct_control_1_1_int_slider.html#a97e1d7d7320229f15a351e0f8aedecd9":[12,0,3,24,0],
 "struct_control_1_1_int_slider.html#a982312629afe72c5f55676dae70f6b35":[12,0,3,24,7],
 "struct_control_1_1_int_slider.html#aa1261f1ecb85af3efd1597c3fcc38888":[12,0,3,24,12],
-"struct_control_1_1_int_slider.html#ac160f32569eb2b1de07de259fabda945":[12,0,3,24,8],
-"struct_control_1_1_int_slider.html#af0079599ac6a9bb9bd4f5c91f8adb8fa":[12,0,3,24,6],
-"struct_control_1_1_int_slider.html#affee34887256237a4d04c439fb747eca":[12,0,3,24,2],
-"struct_control_1_1_int_spin_box.html":[12,0,3,25],
-"struct_control_1_1_int_spin_box.html#a00cbc77ee92b3ce6b88e375a1b2b46a2":[12,0,3,25,1],
-"struct_control_1_1_int_spin_box.html#a07e36ca4881d928caa56795f3fbd8926":[12,0,3,25,12]
+"struct_control_1_1_int_slider.html#ac160f32569eb2b1de07de259fabda945":[12,0,3,24,8]
 };

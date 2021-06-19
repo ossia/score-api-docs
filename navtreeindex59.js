@@ -1,5 +1,10 @@
 var NAVTREEINDEX59 =
 {
+"struct_scenario_1_1_magnetic_states.html#a205681e720e13901ef2d50ae77d0bf47":[12,0,43,140,1],
+"struct_scenario_1_1_magnetic_states.html#a98252e6e234880e87aaf65dd71002eff":[12,0,43,140,0],
+"struct_scenario_1_1_move_on_slot_handle___event.html":[12,0,43,165],
+"struct_scenario_1_1_move_on_slot_handle___event.html#a1b52cee32d234a24887a1d2f2bd4b347":[12,0,43,165,1],
+"struct_scenario_1_1_move_on_slot_handle___event.html#a3f774ca92dc193f5b63557b9809d80a5":[12,0,43,165,2],
 "struct_scenario_1_1_move_on_slot_handle___event.html#ad17378360383b898a94c56560153c29f":[12,0,43,165,0],
 "struct_scenario_1_1_musical_grid_1_1timings.html":[12,0,43,172,0],
 "struct_scenario_1_1_musical_grid_1_1timings.html#a82458166586a6985b18153be0cd27350":[12,0,43,172,0,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX59 =
 "struct_state_1_1_destination_qualifiers.html#ac9c97185a053de0727405508d569ed89":[12,0,48,14,11],
 "struct_state_1_1_destination_qualifiers.html#ad2a9c604966454cc748fc8698e7611e9":[12,0,48,14,3],
 "struct_state_1_1_destination_qualifiers.html#aebc9bf16775ac6f45e415f0c8ff0fa22":[12,0,48,14,7],
-"struct_state_1_1_domain.html":[12,0,48,16],
-"struct_state_1_1_domain.html#a0f9f01cd833a0dd44e6893cb6677c7a9":[12,0,48,16,1],
-"struct_state_1_1_domain.html#a294edc07406f70672c3e08c6219b6746":[12,0,48,16,7],
-"struct_state_1_1_domain.html#a2cd06b970bcf9b46c5cd95d6b6e4b3f6":[12,0,48,16,0],
-"struct_state_1_1_domain.html#a38fc6e387a56e6cdb81661e0f65bc058":[12,0,48,16,3],
-"struct_state_1_1_domain.html#a3b8ba8928bfdfc2dc93dfbb8d80a61e8":[12,0,48,16,12]
+"struct_state_1_1_domain.html":[12,0,48,16]
 };
