@@ -1657,7 +1657,6 @@ var hierarchy =
     [ "score::gfx::NodeRenderer", "classscore_1_1gfx_1_1_node_renderer.html", [
       [ "RenderedDepthNode", "struct_rendered_depth_node.html", null ],
       [ "score::gfx::GenericNodeRenderer", "classscore_1_1gfx_1_1_generic_node_renderer.html", [
-        [ "Gfx::SpoutRenderer", "class_gfx_1_1_spout_renderer.html", null ],
         [ "score::gfx::FullScreenImageNode::Renderer", "classscore_1_1gfx_1_1_full_screen_image_node_1_1_renderer.html", null ],
         [ "score::gfx::ImagesNode::Renderer", "classscore_1_1gfx_1_1_images_node_1_1_renderer.html", null ],
         [ "score::gfx::RenderedPhongNode", "structscore_1_1gfx_1_1_rendered_phong_node.html", null ],
@@ -1665,6 +1664,7 @@ var hierarchy =
         [ "score::gfx::TextNode::Renderer", "classscore_1_1gfx_1_1_text_node_1_1_renderer.html", null ]
       ] ],
       [ "score::gfx::OutputNodeRenderer", "classscore_1_1gfx_1_1_output_node_renderer.html", [
+        [ "Gfx::SpoutRenderer", "class_gfx_1_1_spout_renderer.html", null ],
         [ "score::gfx::ScreenNode::Renderer", "classscore_1_1gfx_1_1_screen_node_1_1_renderer.html", null ]
       ] ],
       [ "score::gfx::RenderedISFNode", "structscore_1_1gfx_1_1_rendered_i_s_f_node.html", null ],

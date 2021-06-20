@@ -1,5 +1,6 @@
 var NAVTREEINDEX25 =
 {
+"class_protocols_1_1_h_t_t_p_protocol_settings_widget.html#ae2f3fc099b7a92efd3caeb13e69bcd28":[12,0,38,14,0],
 "class_protocols_1_1_h_t_t_p_protocol_settings_widget.html#afd3e8675e2aafac6abb84aafcf765ee0":[12,0,38,14,1],
 "class_protocols_1_1_joystick_device.html":[12,0,38,16],
 "class_protocols_1_1_joystick_device.html#a27941c25db5c3228130b4b40acaa5bca":[12,0,38,16,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX25 =
 "class_remote_application.html":[12,0,311],
 "class_remote_application.html#a0bdbfa18ac37339d0d94acf7affe45e5":[12,0,311,5],
 "class_remote_application.html#a1b6376ef2facc53c693fd5cf180a687d":[12,0,311,3],
-"class_remote_application.html#a419ee5fc214b3b76940ea6808b84026d":[12,0,311,2],
-"class_remote_application.html#a951a4d02b982ee92f0788b08de6b93f4":[12,0,311,0]
+"class_remote_application.html#a419ee5fc214b3b76940ea6808b84026d":[12,0,311,2]
 };
