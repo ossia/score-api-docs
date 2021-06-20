@@ -1,5 +1,13 @@
 var NAVTREEINDEX41 =
 {
+"classscore_1_1_g_u_i_application_plugin.html":[12,0,44,110],
+"classscore_1_1_g_u_i_application_plugin.html#a05683f211b55c61f104b5a6004db9240":[12,0,44,110,12],
+"classscore_1_1_g_u_i_application_plugin.html#a45b38739c51b1dd0e42e238a3f061e08":[12,0,44,110,0],
+"classscore_1_1_g_u_i_application_plugin.html#a45e268c5b923805dc82b45af79fe1e96":[12,0,44,110,9],
+"classscore_1_1_g_u_i_application_plugin.html#a4ac5df59d48c03c0517f3bba8f8022a9":[12,0,44,110,13],
+"classscore_1_1_g_u_i_application_plugin.html#a620a513cecc5825a857e1c26927e260c":[12,0,44,110,4],
+"classscore_1_1_g_u_i_application_plugin.html#a65db099590d76bf2c4361b161d35fd39":[12,0,44,110,5],
+"classscore_1_1_g_u_i_application_plugin.html#a6bfc9f3a1bafd2109ebfcad1c28000c1":[12,0,44,110,15],
 "classscore_1_1_g_u_i_application_plugin.html#a6eb40d143abe1b1232d9ba277cdbae26":[12,0,44,110,14],
 "classscore_1_1_g_u_i_application_plugin.html#a8eaed2a17567ffc080b2911a0755ae86":[12,0,44,110,10],
 "classscore_1_1_g_u_i_application_plugin.html#ab9b7f92447cd8f8e62856f3ca5159890":[12,0,44,110,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX41 =
 "classscore_1_1_minimal_g_u_i_application.html#afaf11742bdf6fb1e21953a8b7fc43b48":[12,0,44,151,8],
 "classscore_1_1_missing_command_exception.html":[12,0,44,152],
 "classscore_1_1_missing_command_exception.html#a7c29a41052c5c417924afa2aba6dad3e":[12,0,44,152,0],
-"classscore_1_1_model_metadata.html":[12,0,44,153],
-"classscore_1_1_model_metadata.html#a1d307694fc5a02fab87ea89e6a134955":[12,0,44,153,9],
-"classscore_1_1_model_metadata.html#a2abd9bab539ab75fa0cd644f7d336567":[12,0,44,153,6],
-"classscore_1_1_model_metadata.html#a2d8bcd64d0c8bb2ba7797a6558bce668":[12,0,44,153,14],
-"classscore_1_1_model_metadata.html#a2f5dc70a972612b69e80f2f389936a82":[12,0,44,153,8],
-"classscore_1_1_model_metadata.html#a3f42717c2ac60fd782b85340dd1d1cda":[12,0,44,153,4],
-"classscore_1_1_model_metadata.html#a4b1b90c306d5ed26df29d8f2579f1584":[12,0,44,153,2],
-"classscore_1_1_model_metadata.html#a594ce8ecd25ddae07c9dd3a9efa09c04":[12,0,44,153,13],
-"classscore_1_1_model_metadata.html#a5b08908eb242d61c903f2feefdb30f95":[12,0,44,153,10]
+"classscore_1_1_model_metadata.html":[12,0,44,153]
 };

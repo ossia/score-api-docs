@@ -1,5 +1,13 @@
 var NAVTREEINDEX39 =
 {
+"classid__base__t.html#aefea040df7bc2b48d0920fb265cbc273":[12,0,128,7],
+"classid__base__t.html#af9ed9a06e5d4e50df8977e908b67f7fa":[12,0,128,8],
+"classid__base__t.html#afe073106e0bd8fd0a02af81aaf4ddca3":[12,0,128,5],
+"classossia_1_1control__surface__node.html":[12,0,33,1],
+"classossia_1_1control__surface__node.html#a2735d5c8dda2925934db3257c8b1a950":[12,0,33,1,2],
+"classossia_1_1control__surface__node.html#a7d238dec4734b511982b018038bf5754":[12,0,33,1,4],
+"classossia_1_1control__surface__node.html#af0412968962c43084239dd2d251eb662":[12,0,33,1,3],
+"classossia_1_1control__surface__node.html#af6d8f4fb282529de846f7a6d68f85d7e":[12,0,33,1,1],
 "classossia_1_1nodes_1_1audio__metronome.html":[12,0,33,0,0],
 "classossia_1_1nodes_1_1audio__metronome.html#a092cfca76f18ab28ee8aa82d239987de":[12,0,33,0,0,8],
 "classossia_1_1nodes_1_1audio__metronome.html#a0c7bf874afe37d6060ee5d6d1f6c7ad4":[12,0,33,0,0,9],
@@ -41,8 +49,8 @@ var NAVTREEINDEX39 =
 "classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,44,12,4],
 "classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,44,12,5],
 "classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,44,12,6],
-"classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,44,12,8],
 "classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,44,12,7],
+"classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,44,12,8],
 "classscore_1_1_action_manager.html#a61deeb8b2ebd9442678d3573e00a2bf6":[12,0,44,12,20],
 "classscore_1_1_action_manager.html#a63a3b17b4bd8968eb3bec2c6712ad90b":[12,0,44,12,10],
 "classscore_1_1_action_manager.html#a6e37deb4b2f791fd5f2347e081a01a4d":[12,0,44,12,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX39 =
 "classscore_1_1_component_hierarchy_manager.html#a7f721df65740a9e27b687fa0608765c8":[12,0,44,45,4],
 "classscore_1_1_component_hierarchy_manager.html#a92b1368e5ebf5df24ce0c2b47b5ea39a":[12,0,44,45,1],
 "classscore_1_1_component_hierarchy_manager.html#aad160d76a64ad617bbfa091d8716e58f":[12,0,44,45,10],
-"classscore_1_1_component_hierarchy_manager.html#afc331a15acd5730bd763aa66205c3e0f":[12,0,44,45,8],
-"classscore_1_1_core_application_plugin.html":[12,0,44,47],
-"classscore_1_1_core_application_plugin.html#a26a4111307f54f282344562445faac8f":[12,0,44,47,0],
-"classscore_1_1_defaulted_generic_component_factory_list.html":[12,0,44,50],
-"classscore_1_1_defaulted_generic_component_factory_list.html#a9f0d4a1d937fb8ec49f4c1e8df39bcb7":[12,0,44,50,0],
-"classscore_1_1_document.html":[12,0,44,55],
-"classscore_1_1_document.html#a13a82dfba75abf65c2728ebe922885c2":[12,0,44,55,6],
-"classscore_1_1_document.html#a13c49b2440682f8ff227feaedc5a018d":[12,0,44,55,3],
-"classscore_1_1_document.html#a2f0cf5c41c532e3579b4e0ebfff03ba3":[12,0,44,55,9]
+"classscore_1_1_component_hierarchy_manager.html#afc331a15acd5730bd763aa66205c3e0f":[12,0,44,45,8]
 };

@@ -170,6 +170,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_gfx_output_device.html">GfxOutputDevice</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gfx_1_1_image_cache.html">ImageCache</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gfx_1_1kinect2__camera.html">kinect2_camera</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1kinect2__decoder.html">kinect2_decoder</a></td></tr>
@@ -238,9 +240,6 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ac0c3f1032bda65bd9d6f9c20b8f7bdb3"><td class="memItemLeft" align="right" valign="top"><a id="ac0c3f1032bda65bd9d6f9c20b8f7bdb3"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>port_index</b> = ossia::gfx::port_index</td></tr>
 <tr class="separator:ac0c3f1032bda65bd9d6f9c20b8f7bdb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeafe5929292c75ce33123db60537111e"><td class="memItemLeft" align="right" valign="top"><a id="aeafe5929292c75ce33123db60537111e"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>Image</b> = <a class="el" href="structscore_1_1gfx_1_1_image.html">score::gfx::Image</a></td></tr>
-<tr class="separator:aeafe5929292c75ce33123db60537111e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -251,6 +250,15 @@ const <a class="el" href="class_string_key.html">CommandGroupKey</a> &amp;&#160;
 template&lt;typename Vector &gt; </td></tr>
 <tr class="memitem:a6cae7f999eff804d75c6d08e657c8856"><td class="memTemplItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memTemplItemRight" valign="bottom"><b>index_of</b> (Vector &amp;&amp;v, const typename std::remove_reference_t&lt; Vector &gt;::value_type &amp;t)</td></tr>
 <tr class="separator:a6cae7f999eff804d75c6d08e657c8856"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b93817889198e0c0f0a8893acee8459"><td class="memItemLeft" align="right" valign="top"><a id="a0b93817889198e0c0f0a8893acee8459"></a>
+ossia::value&#160;</td><td class="memItemRight" valign="bottom"><b>fromImageSet</b> (const gsl::span&lt; <a class="el" href="structscore_1_1gfx_1_1_image.html">score::gfx::Image</a> &gt; &amp;images)</td></tr>
+<tr class="separator:a0b93817889198e0c0f0a8893acee8459"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b03924ce56e9287e911d49cd9076d75"><td class="memItemLeft" align="right" valign="top"><a id="a2b03924ce56e9287e911d49cd9076d75"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseImages</b> (std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_image.html">score::gfx::Image</a> &gt; &amp;imgs)</td></tr>
+<tr class="separator:a2b03924ce56e9287e911d49cd9076d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8959acef93cda3509ccf619a7ef66dc3"><td class="memItemLeft" align="right" valign="top"><a id="a8959acef93cda3509ccf619a7ef66dc3"></a>
+std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_image.html">score::gfx::Image</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getImages</b> (const ossia::value &amp;val)</td></tr>
+<tr class="separator:a8959acef93cda3509ccf619a7ef66dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab951292812b112bda68dd594d67afb67"><td class="memItemLeft" align="right" valign="top"><a id="ab951292812b112bda68dd594d67afb67"></a>
 <a class="el" href="struct_gfx_1_1_shader_program.html">ShaderProgram</a>&#160;</td><td class="memItemRight" valign="bottom"><b>programFromFragmentShaderPath</b> (const QString &amp;fsFilename, QByteArray fsData)</td></tr>
 <tr class="separator:ab951292812b112bda68dd594d67afb67"><td class="memSeparator" colspan="2">&#160;</td></tr>

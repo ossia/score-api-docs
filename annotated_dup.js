@@ -939,6 +939,7 @@ var annotated_dup =
     [ "DefaultRollbackStrategy", "struct_default_rollback_strategy.html", null ],
     [ "Description_k", "class_description__k.html", null ],
     [ "DLL", "class_d_l_l.html", "class_d_l_l" ],
+    [ "EditableTable", "class_editable_table.html", "class_editable_table" ],
     [ "EHExceptionRecord", "struct_e_h_exception_record.html", "struct_e_h_exception_record" ],
     [ "EntityMapInserter", "class_entity_map_inserter.html", null ],
     [ "EntityMapSerializer", "struct_entity_map_serializer.html", null ],

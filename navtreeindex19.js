@@ -1,5 +1,13 @@
 var NAVTREEINDEX19 =
 {
+"class_mapping_1_1_layer_presenter.html":[12,0,26,5],
+"class_mapping_1_1_layer_presenter.html#a85e38fbe1f7f30caadd44453087ca03a":[12,0,26,5,1],
+"class_mapping_1_1_layer_presenter.html#aceb2b928a2fd455efc161d48a4319772":[12,0,26,5,0],
+"class_mapping_1_1_layer_view.html":[12,0,26,6],
+"class_mapping_1_1_layer_view.html#a194e3e60fc96e2e4e62da67e208b1487":[12,0,26,6,1],
+"class_mapping_1_1_layer_view.html#a61f1b7bb74a39c6566569adb24b6b54c":[12,0,26,6,2],
+"class_mapping_1_1_layer_view.html#a654d1283dd493f993534be78f4d01958":[12,0,26,6,0],
+"class_mapping_1_1_mapping_inspector_factory.html":[12,0,26,7],
 "class_mapping_1_1_process_model.html":[12,0,26,8],
 "class_mapping_1_1_process_model.html#a16748d2c895ae885447294bd2a78560b":[12,0,26,8,21],
 "class_mapping_1_1_process_model.html#a1e5e83fd757a327a61c8b1a3056c5969":[12,0,26,8,7],
@@ -208,7 +216,7 @@ var NAVTREEINDEX19 =
 "class_media_1_1_step_1_1_view.html#a52a3864c43b4e5492e547c81cfd81da5":[12,0,27,4,6,0],
 "class_media_1_1_step_1_1_view.html#a731842fe73469be9e759c2893f970144":[12,0,27,4,6,2],
 "class_media_1_1_step_1_1_view.html#ac06e594379be86a04356b435fc4b5c48":[12,0,27,4,6,3],
-"class_merge_time_syncs_test.html":[12,0,154],
+"class_merge_time_syncs_test.html":[12,0,155],
 "class_metronome_1_1_change_metronome_address.html":[12,0,28,1],
 "class_metronome_1_1_change_metronome_address.html#a1e129aa5d288d3e650a6555364d7f295":[12,0,28,1,2],
 "class_metronome_1_1_change_metronome_address.html#a7c3c5d5e0e08c55de6630d8f6b2a0ec5":[12,0,28,1,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX19 =
 "class_metronome_1_1_process_model.html#acb96daf1117dad561c90971378f0b05c":[12,0,28,7,5],
 "class_metronome_1_1_process_model.html#acdbaee3417399a04d85699d91e56251c":[12,0,28,7,12],
 "class_metronome_1_1_process_model.html#ad591b5391dc3bcdd8a5661953392f1cb":[12,0,28,7,8],
-"class_metronome_1_1_process_model.html#adc446b48ce1e0f253f4b9f09821c0f3d":[12,0,28,7,2],
-"class_metronome_1_1_process_model.html#ae0f7ffea33503ad85dafdb56e77d5808":[12,0,28,7,4],
-"class_metronome_1_1_process_model.html#ae4d335c45c07b44fedcd19cf68a04e82":[12,0,28,7,13],
-"class_metronome_1_1_recreate_on_play_1_1_component.html":[12,0,28,0,0],
-"class_metronome_1_1_recreate_on_play_1_1_component.html#a4bd83f20990ce8b10b9064212e442be2":[12,0,28,0,0,0],
-"class_metronome_1_1_recreate_on_play_1_1_component.html#a4f613c313daab566b97feef3bce83d53":[12,0,28,0,0,1],
-"class_midi_1_1_add_note.html":[12,0,29,1],
-"class_midi_1_1_add_note.html#a221b9b4c2e763ec91a3f17c085eaec01":[12,0,29,1,4],
-"class_midi_1_1_add_note.html#a41ca1cb303c0ac87b057080363168581":[12,0,29,1,0]
+"class_metronome_1_1_process_model.html#adc446b48ce1e0f253f4b9f09821c0f3d":[12,0,28,7,2]
 };

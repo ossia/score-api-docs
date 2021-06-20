@@ -1,5 +1,13 @@
 var NAVTREEINDEX49 =
 {
+"struct_control_1_1_int_slider.html#a2180314cde750b282c81a1495d9c4312":[12,0,3,24,4],
+"struct_control_1_1_int_slider.html#a225dbfa504160253921efaa5daa43742":[12,0,3,24,3],
+"struct_control_1_1_int_slider.html#a2a475d03137ba0b294660f1d5984003f":[12,0,3,24,13],
+"struct_control_1_1_int_slider.html#a3f870c9b92546c520107e7bd2cdf5f3d":[12,0,3,24,1],
+"struct_control_1_1_int_slider.html#a4839e1ecb56c0b87a3c0943316fd0718":[12,0,3,24,5],
+"struct_control_1_1_int_slider.html#a58de0297da0009ed35b8ae5e215c389c":[12,0,3,24,11],
+"struct_control_1_1_int_slider.html#a8219b4555d0517398d5f9906482ec3a9":[12,0,3,24,10],
+"struct_control_1_1_int_slider.html#a881f33b65a6fcfa3e7362233cf2036bd":[12,0,3,24,9],
 "struct_control_1_1_int_slider.html#a97e1d7d7320229f15a351e0f8aedecd9":[12,0,3,24,0],
 "struct_control_1_1_int_slider.html#a982312629afe72c5f55676dae70f6b35":[12,0,3,24,7],
 "struct_control_1_1_int_slider.html#aa1261f1ecb85af3efd1597c3fcc38888":[12,0,3,24,12],
@@ -241,13 +249,5 @@ var NAVTREEINDEX49 =
 "struct_dataflow_1_1_midi_inlet_factory.html#aab8afef65c582e2045872a51c4ab226b":[12,0,6,27,2],
 "struct_dataflow_1_1_midi_inlet_factory.html#af90aadad8f440c697ccecea2ed4f257c":[12,0,6,27,1],
 "struct_dataflow_1_1_midi_outlet_factory.html":[12,0,6,28],
-"struct_dataflow_1_1_midi_outlet_factory.html#a0c1f7d393017070b78750f67f017563b":[12,0,6,28,2],
-"struct_dataflow_1_1_midi_outlet_factory.html#a5a7ff4fc4387388445bff04bfc794d57":[12,0,6,28,3],
-"struct_dataflow_1_1_midi_outlet_factory.html#a936dbca13a2f4734998cea765e4d12a7":[12,0,6,28,0],
-"struct_dataflow_1_1_midi_outlet_factory.html#ae7bc957a58b861d69866769dee974b0b":[12,0,6,28,1],
-"struct_dataflow_1_1_min_max_float_outlet_factory.html":[12,0,6,30],
-"struct_dataflow_1_1_min_max_float_outlet_factory.html#a02b2fb0dd1cd5bef187d4980e3fc82f5":[12,0,6,30,4],
-"struct_dataflow_1_1_min_max_float_outlet_factory.html#a1315f6f92e44a53b0ef3f665d6610c95":[12,0,6,30,2],
-"struct_dataflow_1_1_min_max_float_outlet_factory.html#a5c9887b53eb9f91a64832cbce358ff8c":[12,0,6,30,1],
-"struct_dataflow_1_1_min_max_float_outlet_factory.html#a6084688fc48bafbc98c57e32c8a542f5":[12,0,6,30,3]
+"struct_dataflow_1_1_midi_outlet_factory.html#a0c1f7d393017070b78750f67f017563b":[12,0,6,28,2]
 };

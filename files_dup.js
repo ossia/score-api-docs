@@ -487,6 +487,7 @@ var files_dup =
     [ "Identifier.hpp", "_identifier_8hpp_source.html", null ],
     [ "IdentifierDebug.hpp", "_identifier_debug_8hpp_source.html", null ],
     [ "IdentifierGeneration.hpp", "_identifier_generation_8hpp_source.html", null ],
+    [ "ImageListChooser.hpp", "_image_list_chooser_8hpp_source.html", null ],
     [ "ImageNode.hpp", "_image_node_8hpp_source.html", null ],
     [ "IncludeLibpd.hpp", "_include_libpd_8hpp_source.html", null ],
     [ "IndirectContainer.hpp", "_indirect_container_8hpp_source.html", null ],

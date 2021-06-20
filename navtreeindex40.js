@@ -1,5 +1,13 @@
 var NAVTREEINDEX40 =
 {
+"classscore_1_1_core_application_plugin.html":[12,0,44,47],
+"classscore_1_1_core_application_plugin.html#a26a4111307f54f282344562445faac8f":[12,0,44,47,0],
+"classscore_1_1_defaulted_generic_component_factory_list.html":[12,0,44,50],
+"classscore_1_1_defaulted_generic_component_factory_list.html#a9f0d4a1d937fb8ec49f4c1e8df39bcb7":[12,0,44,50,0],
+"classscore_1_1_document.html":[12,0,44,55],
+"classscore_1_1_document.html#a13a82dfba75abf65c2728ebe922885c2":[12,0,44,55,6],
+"classscore_1_1_document.html#a13c49b2440682f8ff227feaedc5a018d":[12,0,44,55,3],
+"classscore_1_1_document.html#a2f0cf5c41c532e3579b4e0ebfff03ba3":[12,0,44,55,9],
 "classscore_1_1_document.html#a60a379179f29bffebad8603a85bf9338":[12,0,44,55,11],
 "classscore_1_1_document.html#a6b6ffac2aff2fcb59e4a753a42a748a2":[12,0,44,55,7],
 "classscore_1_1_document.html#a7839b0d8fb31b19cd9948b0a5dbd7b07":[12,0,44,55,8],
@@ -241,13 +249,5 @@ var NAVTREEINDEX40 =
 "classscore_1_1_g_u_i_application_interface.html#a44ea4a8579f15dcb6feae4e58c5fb441":[12,0,44,109,4],
 "classscore_1_1_g_u_i_application_interface.html#ab3db2df5130364a952401c6c6042d811":[12,0,44,109,1],
 "classscore_1_1_g_u_i_application_interface.html#ad2d0f9fc90e4f05376149adb1e16e2df":[12,0,44,109,0],
-"classscore_1_1_g_u_i_application_interface.html#ae1229ff14f709dcb6f04dac70a846014":[12,0,44,109,2],
-"classscore_1_1_g_u_i_application_plugin.html":[12,0,44,110],
-"classscore_1_1_g_u_i_application_plugin.html#a05683f211b55c61f104b5a6004db9240":[12,0,44,110,12],
-"classscore_1_1_g_u_i_application_plugin.html#a45b38739c51b1dd0e42e238a3f061e08":[12,0,44,110,0],
-"classscore_1_1_g_u_i_application_plugin.html#a45e268c5b923805dc82b45af79fe1e96":[12,0,44,110,9],
-"classscore_1_1_g_u_i_application_plugin.html#a4ac5df59d48c03c0517f3bba8f8022a9":[12,0,44,110,13],
-"classscore_1_1_g_u_i_application_plugin.html#a620a513cecc5825a857e1c26927e260c":[12,0,44,110,4],
-"classscore_1_1_g_u_i_application_plugin.html#a65db099590d76bf2c4361b161d35fd39":[12,0,44,110,5],
-"classscore_1_1_g_u_i_application_plugin.html#a6bfc9f3a1bafd2109ebfcad1c28000c1":[12,0,44,110,15]
+"classscore_1_1_g_u_i_application_interface.html#ae1229ff14f709dcb6f04dac70a846014":[12,0,44,109,2]
 };
