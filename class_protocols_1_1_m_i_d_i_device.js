@@ -1,6 +1,6 @@
 var class_protocols_1_1_m_i_d_i_device =
 [
-    [ "MIDIDevice", "class_protocols_1_1_m_i_d_i_device.html#aba54fed505e2690f87aeef1dafd19ef0", null ],
+    [ "MIDIDevice", "class_protocols_1_1_m_i_d_i_device.html#a2e1030866713aa57a4ce14cfda3451c8", null ],
     [ "disconnect", "class_protocols_1_1_m_i_d_i_device.html#a43436cbd421864c6eaf91157a2cb7452", null ],
     [ "isLearning", "class_protocols_1_1_m_i_d_i_device.html#a07b78a0b8b3ee503cc525026b4035ba0", null ],
     [ "mimeData", "class_protocols_1_1_m_i_d_i_device.html#ab97a69eddfb60dec7243bc67b34b84c7", null ],

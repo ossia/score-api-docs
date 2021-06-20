@@ -5,7 +5,6 @@ var structscore_1_1gfx_1_1_text_node =
     [ "TextNode", "structscore_1_1gfx_1_1_text_node.html#a734f20770c0a7332caa8c34c0bc8d06f", null ],
     [ "~TextNode", "structscore_1_1gfx_1_1_text_node.html#a3d25baa7a92ce623b5472a4bb19a570d", null ],
     [ "createRenderer", "structscore_1_1gfx_1_1_text_node.html#a288d0fa8e9b5fb464c38730b7fba8a65", null ],
-    [ "mesh", "structscore_1_1gfx_1_1_text_node.html#a5cfe2fdd7ffe5f8a9a2ad70b07f76e61", null ],
     [ "process", "structscore_1_1gfx_1_1_text_node.html#ab8878c63651194158cc3c4befeb76b68", null ],
     [ "font", "structscore_1_1gfx_1_1_text_node.html#a2ef22e0fad218b3a6a5db3695c7b982f", null ],
     [ "mustRerender", "structscore_1_1gfx_1_1_text_node.html#abf9b6520789b21285045d33c11bb4d86", null ],

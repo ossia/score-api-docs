@@ -1,7 +1,5 @@
 var NAVTREEINDEX47 =
 {
-"classvst_1_1vst__node__base.html#a9295e394e8c4b68d8439308cb0ee4e3c":[12,0,53,17,4],
-"classvst_1_1vst__node__base.html#ad3cfe3ed788c86ae5fcf95829d03b5a5":[12,0,53,17,3],
 "classvst_1_1vst__node__base.html#ae8555db49dbf264c3d5c166ac99212b0":[12,0,53,17,2],
 "codingstyle_8hpp_source.html":[13,0,137],
 "contexts_8hpp_source.html":[13,0,190],
@@ -17,8 +15,8 @@ var NAVTREEINDEX47 =
 "functions_d.html":[12,3,0,3],
 "functions_e.html":[12,3,0,4],
 "functions_f.html":[12,3,0,5],
-"functions_func.html":[12,3,1],
 "functions_func.html":[12,3,1,0],
+"functions_func.html":[12,3,1],
 "functions_func_c.html":[12,3,1,1],
 "functions_func_d.html":[12,3,1,2],
 "functions_func_e.html":[12,3,1,3],
@@ -84,10 +82,10 @@ var NAVTREEINDEX47 =
 "namespace_engine_1_1_network.html":[11,0,3,0],
 "namespace_execution.html":[11,0,4],
 "namespace_execution.html":[12,0,9],
-"namespace_gfx.html":[12,0,15],
 "namespace_gfx.html":[11,0,5],
-"namespace_inspector.html":[11,0,6],
+"namespace_gfx.html":[12,0,15],
 "namespace_inspector.html":[12,0,17],
+"namespace_inspector.html":[11,0,6],
 "namespace_local_tree.html":[11,0,7],
 "namespace_local_tree.html":[12,0,24],
 "namespace_plugin_loader.html":[11,0,8],
@@ -95,8 +93,8 @@ var NAVTREEINDEX47 =
 "namespace_process.html":[11,0,9],
 "namespace_scenario.html":[12,0,43],
 "namespace_scenario.html":[11,0,10],
-"namespace_state.html":[11,0,12],
 "namespace_state.html":[12,0,48],
+"namespace_state.html":[11,0,12],
 "namespacemembers.html":[11,1,0],
 "namespacemembers_enum.html":[11,1,3],
 "namespacemembers_eval.html":[11,1,4],
@@ -249,5 +247,7 @@ var NAVTREEINDEX47 =
 "score-plugin-scenario_2_scenario_2_instantiations_8hpp_source.html":[13,0,506],
 "score-plugin-scenario_2_scenario_2_palette_2_tools_2_smart_tool_8hpp_source.html":[13,0,1137],
 "score-plugin-spline3d_2_spline3_d_2_model_8hpp_source.html":[13,0,720],
-"score-plugin-spline_2_spline_2_model_8hpp_source.html":[13,0,719]
+"score-plugin-spline_2_spline_2_model_8hpp_source.html":[13,0,719],
+"score-plugin-spline_2_spline_2_view_8hpp_source.html":[13,0,1283],
+"score-plugin-transport_2_transport_2_application_plugin_8hpp_source.html":[13,0,55]
 };

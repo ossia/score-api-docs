@@ -176,30 +176,32 @@ $(document).ready(function(){initNavTree('_device_document_plugin_8hpp_source.ht
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> reconnect(<span class="keyword">const</span> QString&amp;);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">void</span> initDevice(<a class="code" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>&amp;);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">void</span> on_valueUpdated(<span class="keyword">const</span> <a class="code" href="struct_state_1_1_address.html">State::Address</a>&amp; addr, <span class="keyword">const</span> ossia::value&amp; v);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="class_tree_node.html">Device::Node</a> m_rootNode;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="class_device_1_1_device_list.html">Device::DeviceList</a> m_list;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  std::atomic_bool m_processMessages{};</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  std::thread m_asioThread;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">mutable</span> std::unique_ptr&lt;Explorer::ListeningHandler&gt; m_listening;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="class_explorer_1_1_device_explorer_model.html">DeviceExplorerModel</a>* m_explorer{};</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  ossia::fast_hash_map&lt;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <a class="code" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>*,</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      std::vector&lt;QMetaObject::Connection&gt;&gt;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      m_connections;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">void</span> asyncConnect(<a class="code" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>&amp; newdev);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">void</span> timerEvent(QTimerEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">const</span> ossia::net::network_context_ptr&amp; networkContext() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> m_asioContext; }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">void</span> initDevice(<a class="code" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>&amp;);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">void</span> on_valueUpdated(<span class="keyword">const</span> <a class="code" href="struct_state_1_1_address.html">State::Address</a>&amp; addr, <span class="keyword">const</span> ossia::value&amp; v);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="class_tree_node.html">Device::Node</a> m_rootNode;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="class_device_1_1_device_list.html">Device::DeviceList</a> m_list;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  std::atomic_bool m_processMessages{};</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  std::thread m_asioThread;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  ossia::net::network_context_ptr m_asioContext;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keyword">mutable</span> std::unique_ptr&lt;Explorer::ListeningHandler&gt; m_listening;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <a class="code" href="class_explorer_1_1_device_explorer_model.html">DeviceExplorerModel</a>* m_explorer{};</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  ossia::fast_hash_map&lt;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <a class="code" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>*,</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      std::vector&lt;QMetaObject::Connection&gt;&gt;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      m_connections;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <a class="code" href="class_explorer_1_1_node_update_proxy.html">NodeUpdateProxy</a> updateProxy{*<span class="keyword">this</span>};</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  ossia::net::network_context_ptr asioContext;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">void</span> asyncConnect(<a class="code" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>&amp; newdev);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">void</span> timerEvent(QTimerEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <a class="code" href="class_explorer_1_1_node_update_proxy.html">NodeUpdateProxy</a> updateProxy{*<span class="keyword">this</span>};</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astruct_state_1_1_address_html"><div class="ttname"><a href="struct_state_1_1_address.html">State::Address</a></div><div class="ttdoc">The Address struct.</div><div class="ttdef"><b>Definition:</b> Address.hpp:57</div></div>
@@ -210,7 +212,7 @@ $(document).ready(function(){initNavTree('_device_document_plugin_8hpp_source.ht
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:15</div></div>
 <div class="ttc" id="aclass_explorer_1_1_node_update_proxy_html"><div class="ttname"><a href="class_explorer_1_1_node_update_proxy.html">Explorer::NodeUpdateProxy</a></div><div class="ttdoc">The NodeUpdateProxy class.</div><div class="ttdef"><b>Definition:</b> NodeUpdateProxy.hpp:38</div></div>
 <div class="ttc" id="aclass_device_1_1_device_list_html"><div class="ttname"><a href="class_device_1_1_device_list.html">Device::DeviceList</a></div><div class="ttdoc">The DeviceList class.</div><div class="ttdef"><b>Definition:</b> DeviceList.hpp:25</div></div>
-<div class="ttc" id="aclass_device_1_1_device_interface_html"><div class="ttname"><a href="class_device_1_1_device_interface.html">Device::DeviceInterface</a></div><div class="ttdef"><b>Definition:</b> DeviceInterface.hpp:59</div></div>
+<div class="ttc" id="aclass_device_1_1_device_interface_html"><div class="ttname"><a href="class_device_1_1_device_interface.html">Device::DeviceInterface</a></div><div class="ttdef"><b>Definition:</b> DeviceInterface.hpp:61</div></div>
 <div class="ttc" id="aclassscore_1_1_serializable_document_plugin_html"><div class="ttname"><a href="classscore_1_1_serializable_document_plugin.html">score::SerializableDocumentPlugin</a></div><div class="ttdoc">Document plug-in with serializable data.</div><div class="ttdef"><b>Definition:</b> SerializableDocumentPlugin.hpp:25</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

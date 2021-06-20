@@ -274,87 +274,89 @@ $(document).ready(function(){initNavTree('_camera_device_8hpp_source.html',''); 
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <a class="code" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>* makeDevice(</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; settings,</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; defaultSettings() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <a class="code" href="class_device_1_1_address_dialog.html">Device::AddressDialog</a>* makeAddAddressDialog(</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>&amp; dev,</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;      QWidget* parent) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <a class="code" href="class_device_1_1_address_dialog.html">Device::AddressDialog</a>* makeEditAddressDialog(</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_device_1_1_address_settings.html">Device::AddressSettings</a>&amp;,</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>&amp; dev,</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      QWidget*) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <a class="code" href="class_device_1_1_protocol_settings_widget.html">Device::ProtocolSettingsWidget</a>* makeSettingsWidget() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  QVariant</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  makeProtocolSpecificSettings(<span class="keyword">const</span> <a class="code" href="struct_visitor_variant.html">VisitorVariant</a>&amp; visitor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="keywordtype">void</span> serializeProtocolSpecificSettings(</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;      <span class="keyword">const</span> QVariant&amp; data,</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_visitor_variant.html">VisitorVariant</a>&amp; visitor) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keywordtype">bool</span> checkCompatibility(</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; a,</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; b) <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;};</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
-<div class="line"><a name="l00203"></a><span class="lineno"><a class="line" href="class_gfx_1_1_camera_device.html">  203</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_gfx_1_1_camera_device.html">CameraDevice</a> final : <span class="keyword">public</span> <a class="code" href="class_gfx_1_1_gfx_input_device.html">GfxInputDevice</a></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;{</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  W_OBJECT(<a class="code" href="class_gfx_1_1_camera_device.html">CameraDevice</a>)</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  <span class="keyword">using</span> GfxInputDevice::GfxInputDevice;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  ~<a class="code" href="class_gfx_1_1_camera_device.html">CameraDevice</a>();</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  <span class="keywordtype">bool</span> reconnect() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  ossia::net::device_base* getDevice()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> m_dev.get(); }</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <a class="code" href="class_gfx_1_1camera__protocol.html">camera_protocol</a>* m_protocol{};</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  <span class="keyword">mutable</span> std::unique_ptr&lt;camera_device&gt; m_dev;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;};</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
-<div class="line"><a name="l00218"></a><span class="lineno"><a class="line" href="class_gfx_1_1_camera_settings_widget.html">  218</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_gfx_1_1_camera_settings_widget.html">CameraSettingsWidget</a> final : <span class="keyword">public</span> <a class="code" href="class_device_1_1_protocol_settings_widget.html">Device::ProtocolSettingsWidget</a></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;{</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <a class="code" href="class_gfx_1_1_camera_settings_widget.html">CameraSettingsWidget</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> getSettings() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keywordtype">void</span> setSettings(<span class="keyword">const</span> <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; settings) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="keywordtype">void</span> setDefaults();</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  QLineEdit* m_deviceNameEdit{};</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> m_settings;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;};</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;}</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;SCORE_SERIALIZE_DATASTREAM_DECLARE(, <a class="code" href="struct_gfx_1_1_camera_settings.html">Gfx::CameraSettings</a>);</div>
-<div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_gfx_1_1_camera_settings_01_4.html">  235</a></span>&#160;Q_DECLARE_METATYPE(<a class="code" href="struct_gfx_1_1_camera_settings.html">Gfx::CameraSettings</a>)</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="struct_gfx_1_1_camera_settings.html">Gfx::CameraSettings</a>)</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_explorer_1_1_device_document_plugin.html">Explorer::DeviceDocumentPlugin</a>&amp; plugin,</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; defaultSettings() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <a class="code" href="class_device_1_1_address_dialog.html">Device::AddressDialog</a>* makeAddAddressDialog(</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>&amp; dev,</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;      QWidget* parent) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <a class="code" href="class_device_1_1_address_dialog.html">Device::AddressDialog</a>* makeEditAddressDialog(</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_device_1_1_address_settings.html">Device::AddressSettings</a>&amp;,</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>&amp; dev,</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      QWidget*) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <a class="code" href="class_device_1_1_protocol_settings_widget.html">Device::ProtocolSettingsWidget</a>* makeSettingsWidget() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  QVariant</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  makeProtocolSpecificSettings(<span class="keyword">const</span> <a class="code" href="struct_visitor_variant.html">VisitorVariant</a>&amp; visitor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keywordtype">void</span> serializeProtocolSpecificSettings(</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      <span class="keyword">const</span> QVariant&amp; data,</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_visitor_variant.html">VisitorVariant</a>&amp; visitor) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keywordtype">bool</span> checkCompatibility(</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; a,</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; b) <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;};</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="class_gfx_1_1_camera_device.html">  204</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_gfx_1_1_camera_device.html">CameraDevice</a> final : <span class="keyword">public</span> <a class="code" href="class_gfx_1_1_gfx_input_device.html">GfxInputDevice</a></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;{</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  W_OBJECT(<a class="code" href="class_gfx_1_1_camera_device.html">CameraDevice</a>)</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  <span class="keyword">using</span> GfxInputDevice::GfxInputDevice;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  ~<a class="code" href="class_gfx_1_1_camera_device.html">CameraDevice</a>();</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <span class="keywordtype">bool</span> reconnect() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  ossia::net::device_base* getDevice()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> m_dev.get(); }</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  <a class="code" href="class_gfx_1_1camera__protocol.html">camera_protocol</a>* m_protocol{};</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="keyword">mutable</span> std::unique_ptr&lt;camera_device&gt; m_dev;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;};</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00219"></a><span class="lineno"><a class="line" href="class_gfx_1_1_camera_settings_widget.html">  219</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_gfx_1_1_camera_settings_widget.html">CameraSettingsWidget</a> final : <span class="keyword">public</span> <a class="code" href="class_device_1_1_protocol_settings_widget.html">Device::ProtocolSettingsWidget</a></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;{</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  <a class="code" href="class_gfx_1_1_camera_settings_widget.html">CameraSettingsWidget</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> getSettings() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <span class="keywordtype">void</span> setSettings(<span class="keyword">const</span> <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; settings) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="keywordtype">void</span> setDefaults();</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  QLineEdit* m_deviceNameEdit{};</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> m_settings;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;};</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;}</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;SCORE_SERIALIZE_DATASTREAM_DECLARE(, <a class="code" href="struct_gfx_1_1_camera_settings.html">Gfx::CameraSettings</a>);</div>
+<div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_gfx_1_1_camera_settings_01_4.html">  236</a></span>&#160;Q_DECLARE_METATYPE(<a class="code" href="struct_gfx_1_1_camera_settings.html">Gfx::CameraSettings</a>)</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="struct_gfx_1_1_camera_settings.html">Gfx::CameraSettings</a>)</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_gfx_1_1_camera_device_html"><div class="ttname"><a href="class_gfx_1_1_camera_device.html">Gfx::CameraDevice</a></div><div class="ttdef"><b>Definition:</b> CameraDevice.hpp:203</div></div>
+<div class="ttc" id="aclass_gfx_1_1_camera_device_html"><div class="ttname"><a href="class_gfx_1_1_camera_device.html">Gfx::CameraDevice</a></div><div class="ttdef"><b>Definition:</b> CameraDevice.hpp:204</div></div>
 <div class="ttc" id="aclass_gfx_1_1camera__protocol_html"><div class="ttname"><a href="class_gfx_1_1camera__protocol.html">Gfx::camera_protocol</a></div><div class="ttdef"><b>Definition:</b> CameraDevice.hpp:24</div></div>
+<div class="ttc" id="aclass_explorer_1_1_device_document_plugin_html"><div class="ttname"><a href="class_explorer_1_1_device_document_plugin.html">Explorer::DeviceDocumentPlugin</a></div><div class="ttdef"><b>Definition:</b> DeviceDocumentPlugin.hpp:25</div></div>
 <div class="ttc" id="aclass_gfx_1_1camera__device_html"><div class="ttname"><a href="class_gfx_1_1camera__device.html">Gfx::camera_device</a></div><div class="ttdef"><b>Definition:</b> CameraDevice.hpp:131</div></div>
 <div class="ttc" id="aclass_gfx_1_1camera__node_html"><div class="ttname"><a href="class_gfx_1_1camera__node.html">Gfx::camera_node</a></div><div class="ttdef"><b>Definition:</b> CameraDevice.hpp:88</div></div>
 <div class="ttc" id="astruct_gfx_1_1camera__settings_html"><div class="ttname"><a href="struct_gfx_1_1camera__settings.html">Gfx::camera_settings</a></div><div class="ttdef"><b>Definition:</b> CameraDevice.hpp:16</div></div>
 <div class="ttc" id="astruct_device_1_1_address_settings_html"><div class="ttname"><a href="struct_device_1_1_address_settings.html">Device::AddressSettings</a></div><div class="ttdef"><b>Definition:</b> AddressSettings.hpp:50</div></div>
 <div class="ttc" id="aclass_gfx_1_1_camera_protocol_factory_html"><div class="ttname"><a href="class_gfx_1_1_camera_protocol_factory.html">Gfx::CameraProtocolFactory</a></div><div class="ttdef"><b>Definition:</b> CameraDevice.hpp:167</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:15</div></div>
-<div class="ttc" id="aclass_device_1_1_device_interface_html"><div class="ttname"><a href="class_device_1_1_device_interface.html">Device::DeviceInterface</a></div><div class="ttdef"><b>Definition:</b> DeviceInterface.hpp:59</div></div>
+<div class="ttc" id="aclass_device_1_1_device_interface_html"><div class="ttname"><a href="class_device_1_1_device_interface.html">Device::DeviceInterface</a></div><div class="ttdef"><b>Definition:</b> DeviceInterface.hpp:61</div></div>
 <div class="ttc" id="aclass_device_1_1_protocol_settings_widget_html"><div class="ttname"><a href="class_device_1_1_protocol_settings_widget.html">Device::ProtocolSettingsWidget</a></div><div class="ttdef"><b>Definition:</b> ProtocolSettingsWidget.hpp:21</div></div>
-<div class="ttc" id="aclass_device_1_1_protocol_factory_html"><div class="ttname"><a href="class_device_1_1_protocol_factory.html">Device::ProtocolFactory</a></div><div class="ttdef"><b>Definition:</b> ProtocolFactoryInterface.hpp:38</div></div>
+<div class="ttc" id="aclass_device_1_1_protocol_factory_html"><div class="ttname"><a href="class_device_1_1_protocol_factory.html">Device::ProtocolFactory</a></div><div class="ttdef"><b>Definition:</b> ProtocolFactoryInterface.hpp:42</div></div>
 <div class="ttc" id="aclass_gfx_1_1_gfx_input_device_html"><div class="ttname"><a href="class_gfx_1_1_gfx_input_device.html">Gfx::GfxInputDevice</a></div><div class="ttdef"><b>Definition:</b> GfxDevice.hpp:13</div></div>
 <div class="ttc" id="aclass_gfx_1_1_gfx_execution_action_html"><div class="ttname"><a href="class_gfx_1_1_gfx_execution_action.html">Gfx::GfxExecutionAction</a></div><div class="ttdef"><b>Definition:</b> GfxExecContext.hpp:12</div></div>
 <div class="ttc" id="aclass_device_1_1_address_dialog_html"><div class="ttname"><a href="class_device_1_1_address_dialog.html">Device::AddressDialog</a></div><div class="ttdef"><b>Definition:</b> ProtocolSettingsWidget.hpp:40</div></div>
-<div class="ttc" id="aclass_gfx_1_1_camera_settings_widget_html"><div class="ttname"><a href="class_gfx_1_1_camera_settings_widget.html">Gfx::CameraSettingsWidget</a></div><div class="ttdef"><b>Definition:</b> CameraDevice.hpp:218</div></div>
+<div class="ttc" id="aclass_gfx_1_1_camera_settings_widget_html"><div class="ttname"><a href="class_gfx_1_1_camera_settings_widget.html">Gfx::CameraSettingsWidget</a></div><div class="ttdef"><b>Definition:</b> CameraDevice.hpp:219</div></div>
 <div class="ttc" id="astruct_visitor_variant_html"><div class="ttname"><a href="struct_visitor_variant.html">VisitorVariant</a></div><div class="ttdoc">The VisitorVariant struct.</div><div class="ttdef"><b>Definition:</b> VisitorInterface.hpp:25</div></div>
 <div class="ttc" id="astruct_gfx_1_1_camera_settings_html"><div class="ttname"><a href="struct_gfx_1_1_camera_settings.html">Gfx::CameraSettings</a></div><div class="ttdef"><b>Definition:</b> CameraDevice.hpp:159</div></div>
 <div class="ttc" id="anamespace_gfx_html"><div class="ttname"><a href="namespace_gfx.html">Gfx</a></div><div class="ttdoc">Binds the rendering pipeline to ossia processes.</div><div class="ttdef"><b>Definition:</b> CameraDevice.cpp:29</div></div>
-<div class="ttc" id="aclass_device_1_1_device_enumerator_html"><div class="ttname"><a href="class_device_1_1_device_enumerator.html">Device::DeviceEnumerator</a></div><div class="ttdef"><b>Definition:</b> ProtocolFactoryInterface.hpp:23</div></div>
+<div class="ttc" id="aclass_device_1_1_device_enumerator_html"><div class="ttname"><a href="class_device_1_1_device_enumerator.html">Device::DeviceEnumerator</a></div><div class="ttdef"><b>Definition:</b> ProtocolFactoryInterface.hpp:27</div></div>
 <div class="ttc" id="aclass_gfx_1_1camera__parameter_html"><div class="ttname"><a href="class_gfx_1_1camera__parameter.html">Gfx::camera_parameter</a></div><div class="ttdef"><b>Definition:</b> CameraDevice.hpp:51</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_video_node_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_video_node.html">score::gfx::VideoNode</a></div><div class="ttdoc">Model for rendering a video.</div><div class="ttdef"><b>Definition:</b> VideoNode.hpp:14</div></div>
 <div class="ttc" id="astruct_device_1_1_device_settings_html"><div class="ttname"><a href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a></div><div class="ttdef"><b>Definition:</b> DeviceSettings.hpp:15</div></div>

@@ -10,11 +10,11 @@ var class_explorer_1_1_device_document_plugin =
     [ "list", "class_explorer_1_1_device_document_plugin.html#a8bb41b2f7e0b9e3985b854aff8422fb7", null ],
     [ "listening", "class_explorer_1_1_device_document_plugin.html#af534a90649b450ee8f9d240d45025c80", null ],
     [ "loadDeviceFromNode", "class_explorer_1_1_device_document_plugin.html#a4b5a845e02be6647c2ee3ee703b9cfe2", null ],
+    [ "networkContext", "class_explorer_1_1_device_document_plugin.html#aaf5d93494042b6c6dc6568325cf0f793", null ],
     [ "reconnect", "class_explorer_1_1_device_document_plugin.html#a524cff024393e8a321767727876e5406", null ],
     [ "rootNode", "class_explorer_1_1_device_document_plugin.html#a4689750aad406e946cf55a9f072d99c3", null ],
     [ "rootNode", "class_explorer_1_1_device_document_plugin.html#a4528695b442010617018c26cbfef1379", null ],
     [ "setConnection", "class_explorer_1_1_device_document_plugin.html#a3558b36f2958e9c6c7cdca867a82ee6c", null ],
     [ "setupConnections", "class_explorer_1_1_device_document_plugin.html#ac70f345189f3835d61bb41aec8e3025b", null ],
-    [ "asioContext", "class_explorer_1_1_device_document_plugin.html#aa67f524c4488812debf14d876f92b38c", null ],
     [ "updateProxy", "class_explorer_1_1_device_document_plugin.html#a80e1e193dd09c9e348e29572864f0ff3", null ]
 ];
