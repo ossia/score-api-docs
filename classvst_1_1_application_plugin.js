@@ -8,12 +8,14 @@ var classvst_1_1_application_plugin =
     [ "initialize", "classvst_1_1_application_plugin.html#a15cfa781b8b2423c4d4e24b9b6eac901", null ],
     [ "mainThreadId", "classvst_1_1_application_plugin.html#aeb4cdd861015090c41bf30e1701abe17", null ],
     [ "processIncomingMessage", "classvst_1_1_application_plugin.html#a8332bfec3efc032079355c12978b3720", null ],
+    [ "registerRunningVST", "classvst_1_1_application_plugin.html#a9efef5b50173febe54ca62f96d248354", null ],
     [ "rescanVSTs", "classvst_1_1_application_plugin.html#afd9c6a814813b2d9899a8934ab55114a", null ],
     [ "scanVSTsEvent", "classvst_1_1_application_plugin.html#ab560b6e272a75443e9c673b7e3d1ebc7", null ],
+    [ "unregisterRunningVST", "classvst_1_1_application_plugin.html#a4a08f7ffbd8de7e102028203147e2410", null ],
     [ "vstChanged", "classvst_1_1_application_plugin.html#a0034000f90989271dded29c5f4f99a8c", null ],
     [ "m_processes", "classvst_1_1_application_plugin.html#a9f6025ad6cae48fc294fedf5cc0896f4", null ],
+    [ "m_runningVSTs", "classvst_1_1_application_plugin.html#a36c08260bafe52dd2d7f50528495fbf4", null ],
     [ "m_tid", "classvst_1_1_application_plugin.html#a6559e287cb70e1c140f27ee09e1c949b", null ],
-    [ "m_wsServer", "classvst_1_1_application_plugin.html#afcbe4bc9dfd3fd644d37dd6079374667", null ],
     [ "vst_infos", "classvst_1_1_application_plugin.html#a811bf1d388169a5acdd282bb250fb163", null ],
     [ "vst_modules", "classvst_1_1_application_plugin.html#a9a2032a2da62e96a5950d4c8ffa924b5", null ]
 ];

@@ -138,6 +138,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>addInvalidVST</b> (co
 <tr class="memitem:a8b58e991041a983454a25dd798bbfa17"><td class="memItemLeft" align="right" valign="top"><a id="a8b58e991041a983454a25dd798bbfa17"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>addVST</b> (const QString &amp;path, const QJsonObject &amp;json)</td></tr>
 <tr class="separator:a8b58e991041a983454a25dd798bbfa17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9efef5b50173febe54ca62f96d248354"><td class="memItemLeft" align="right" valign="top"><a id="a9efef5b50173febe54ca62f96d248354"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>registerRunningVST</b> (<a class="el" href="classvst_1_1_model.html">vst::Model</a> *)</td></tr>
+<tr class="separator:a9efef5b50173febe54ca62f96d248354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a08f7ffbd8de7e102028203147e2410"><td class="memItemLeft" align="right" valign="top"><a id="a4a08f7ffbd8de7e102028203147e2410"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterRunningVST</b> (<a class="el" href="classvst_1_1_model.html">vst::Model</a> *)</td></tr>
+<tr class="separator:a4a08f7ffbd8de7e102028203147e2410"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab560b6e272a75443e9c673b7e3d1ebc7"><td class="memItemLeft" align="right" valign="top"><a id="ab560b6e272a75443e9c673b7e3d1ebc7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>scanVSTsEvent</b> ()</td></tr>
 <tr class="separator:ab560b6e272a75443e9c673b7e3d1ebc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,9 +172,9 @@ const std::thread::id&#160;</td><td class="memItemRight" valign="bottom"><b>m_ti
 <tr class="memitem:a9f6025ad6cae48fc294fedf5cc0896f4"><td class="memItemLeft" align="right" valign="top"><a id="a9f6025ad6cae48fc294fedf5cc0896f4"></a>
 std::vector&lt; <a class="el" href="structvst_1_1_application_plugin_1_1_scanning_process.html">ScanningProcess</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_processes</b></td></tr>
 <tr class="separator:a9f6025ad6cae48fc294fedf5cc0896f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcbe4bc9dfd3fd644d37dd6079374667"><td class="memItemLeft" align="right" valign="top"><a id="afcbe4bc9dfd3fd644d37dd6079374667"></a>
-QWebSocketServer&#160;</td><td class="memItemRight" valign="bottom"><b>m_wsServer</b></td></tr>
-<tr class="separator:afcbe4bc9dfd3fd644d37dd6079374667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36c08260bafe52dd2d7f50528495fbf4"><td class="memItemLeft" align="right" valign="top"><a id="a36c08260bafe52dd2d7f50528495fbf4"></a>
+std::vector&lt; <a class="el" href="classvst_1_1_model.html">vst::Model</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_runningVSTs</b></td></tr>
+<tr class="separator:a36c08260bafe52dd2d7f50528495fbf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classscore_1_1_application_plugin"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classscore_1_1_application_plugin')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classscore_1_1_application_plugin.html">score::ApplicationPlugin</a></td></tr>
 <tr class="memitem:a4acc35e7d5c719223b1d945ff599b68d inherit pub_attribs_classscore_1_1_application_plugin"><td class="memItemLeft" align="right" valign="top"><a id="a4acc35e7d5c719223b1d945ff599b68d"></a>
 const <a class="el" href="structscore_1_1_application_context.html">score::ApplicationContext</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>context</b></td></tr>

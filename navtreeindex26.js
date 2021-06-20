@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"class_remote_control_1_1_document_plugin.html":[12,0,41,3],
 "class_remote_control_1_1_document_plugin.html#a8092a28dc442461086fff2111321171a":[12,0,41,3,3],
 "class_remote_control_1_1_document_plugin.html#a997ef81f45032c1469152263d815e63e":[12,0,41,3,6],
 "class_remote_control_1_1_document_plugin.html#ac2b55de5c769b4087f0376cff1619103":[12,0,41,3,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "class_scenario_1_1_command_1_1_change_element_comments.html#ac631d9d80d6bd3f582bfc782b1f48132":[12,0,43,0,15,6],
 "class_scenario_1_1_command_1_1_change_element_label.html":[12,0,43,0,16],
 "class_scenario_1_1_command_1_1_change_element_label.html#a133c82c5591a6512b2332144d1b4f75a":[12,0,43,0,16,2],
-"class_scenario_1_1_command_1_1_change_element_label.html#a16ce292b185be40fc16155345f7417fc":[12,0,43,0,16,4],
-"class_scenario_1_1_command_1_1_change_element_label.html#a2ab9e5eaa2d7427af77f774d827be9bf":[12,0,43,0,16,3]
+"class_scenario_1_1_command_1_1_change_element_label.html#a16ce292b185be40fc16155345f7417fc":[12,0,43,0,16,4]
 };

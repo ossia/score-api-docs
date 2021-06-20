@@ -1,5 +1,6 @@
 var NAVTREEINDEX42 =
 {
+"classscore_1_1_model_metadata.html#a5c7a78817b3ade754e6242f52bf67d40":[12,0,44,153,1],
 "classscore_1_1_model_metadata.html#a6f374aaa73ed66fc18719e3d526c3824":[12,0,44,153,0],
 "classscore_1_1_model_metadata.html#a85564cbc0da9052277447917f867b018":[12,0,44,153,15],
 "classscore_1_1_model_metadata.html#ab05ca7907210ca98838a8646bb36bc5c":[12,0,44,153,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX42 =
 "classscore_1_1_q_graphics_pixmap_toggle.html#a795e23c4636a38c85063f0c24b5560fb":[12,0,44,192,6],
 "classscore_1_1_q_graphics_pixmap_toggle.html#a8b10f75591848614e0eca6e5a9c1ddd6":[12,0,44,192,3],
 "classscore_1_1_q_graphics_pixmap_toggle.html#a9e39d93510f98810aee4728d750cfd31":[12,0,44,192,0],
-"classscore_1_1_q_graphics_pixmap_toggle.html#aaed81629150dff1b533a5496ef404bd3":[12,0,44,192,5],
-"classscore_1_1_q_graphics_pixmap_toggle.html#ae657c8060ff23903eac813584143a30e":[12,0,44,192,1]
+"classscore_1_1_q_graphics_pixmap_toggle.html#aaed81629150dff1b533a5496ef404bd3":[12,0,44,192,5]
 };

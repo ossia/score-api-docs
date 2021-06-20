@@ -844,6 +844,7 @@ var files_dup =
     [ "score-lib-process/Process/Dataflow/PortItem.hpp", "score-lib-process_2_process_2_dataflow_2_port_item_8hpp_source.html", null ],
     [ "score-plugin-dataflow/Dataflow/PortItem.hpp", "score-plugin-dataflow_2_dataflow_2_port_item_8hpp_source.html", null ],
     [ "PortListWidget.hpp", "_port_list_widget_8hpp_source.html", null ],
+    [ "PortSerialization.hpp", "_port_serialization_8hpp_source.html", null ],
     [ "PortType.hpp", "_port_type_8hpp_source.html", null ],
     [ "PowerSegment.hpp", "_power_segment_8hpp_source.html", null ],
     [ "prefix.hpp", "prefix_8hpp_source.html", null ],
