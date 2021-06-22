@@ -2,9 +2,10 @@ var classscore_1_1gfx_1_1_generic_node_renderer =
 [
     [ "GenericNodeRenderer", "classscore_1_1gfx_1_1_generic_node_renderer.html#a6fb6b8b534b838fcdb31ff7c64ead3f1", null ],
     [ "~GenericNodeRenderer", "classscore_1_1gfx_1_1_generic_node_renderer.html#a5712f74739f5cdea3227cac749018c86", null ],
-    [ "defaultMeshInit", "classscore_1_1gfx_1_1_generic_node_renderer.html#af4b70c12ead12078c2486c89f261315e", null ],
-    [ "defaultPassesInit", "classscore_1_1gfx_1_1_generic_node_renderer.html#a6750d426856f9aa06000c9e65de810e2", null ],
+    [ "defaultMeshInit", "classscore_1_1gfx_1_1_generic_node_renderer.html#ad83f12101a7d860e829a66ec1ba04f2b", null ],
+    [ "defaultPassesInit", "classscore_1_1gfx_1_1_generic_node_renderer.html#ad99161ccbb625d01cf8c941e84d1f9bc", null ],
     [ "defaultRelease", "classscore_1_1gfx_1_1_generic_node_renderer.html#a0cc07b50e3c6690a0251eb2e41339bac", null ],
+    [ "defaultRenderPass", "classscore_1_1gfx_1_1_generic_node_renderer.html#a4542fdece0191686165f8c0bcc3abd35", null ],
     [ "defaultUBOInit", "classscore_1_1gfx_1_1_generic_node_renderer.html#aca7645f4d366baac6a8abf6596c71f0c", null ],
     [ "defaultUBOUpdate", "classscore_1_1gfx_1_1_generic_node_renderer.html#a1a82d36b735c7b8310c93e4115096e34", null ],
     [ "init", "classscore_1_1gfx_1_1_generic_node_renderer.html#a004e72a4b29a4714d51606bfcfe850b5", null ],

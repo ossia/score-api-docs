@@ -1,6 +1,5 @@
 var NAVTREEINDEX48 =
 {
-"score-plugin-remotecontrol_2_remote_control_2_application_plugin_8hpp_source.html":[13,0,54],
 "score-plugin-remotecontrol_2_remote_control_2_scenario_2_process_8hpp_source.html":[13,0,874],
 "score-plugin-remotecontrol_2_remote_control_2_settings_2_factory_8hpp_source.html":[13,0,418],
 "score-plugin-remotecontrol_2_remote_control_2_settings_2_model_8hpp_source.html":[13,0,719],
@@ -249,5 +248,6 @@ var NAVTREEINDEX48 =
 "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_audio_generator_1_1_node_01_4.html":[12,0,3,19],
 "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_generator_1_1_node_01_4.html":[12,0,3,20],
 "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_mapping_1_1_node_01_4.html":[12,0,3,21],
-"struct_control_1_1_has_custom_u_i_3_01_t_00_01std_1_1void__t_3_01decltype_07_6_t_1_1item_08_4_01_4.html":[12,0,3,22]
+"struct_control_1_1_has_custom_u_i_3_01_t_00_01std_1_1void__t_3_01decltype_07_6_t_1_1item_08_4_01_4.html":[12,0,3,22],
+"struct_control_1_1_int_slider.html":[12,0,3,24]
 };

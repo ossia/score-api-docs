@@ -131,15 +131,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a68093ad474e3611308426b51c4893acc"><td class="memItemLeft" align="right" valign="top"><a id="a68093ad474e3611308426b51c4893acc"></a>
 <a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetForInput</b> (const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;p) override</td></tr>
 <tr class="separator:a68093ad474e3611308426b51c4893acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4b70c12ead12078c2486c89f261315e"><td class="memItemLeft" align="right" valign="top"><a id="af4b70c12ead12078c2486c89f261315e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>defaultMeshInit</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer)</td></tr>
-<tr class="separator:af4b70c12ead12078c2486c89f261315e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad83f12101a7d860e829a66ec1ba04f2b"><td class="memItemLeft" align="right" valign="top"><a id="ad83f12101a7d860e829a66ec1ba04f2b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>defaultMeshInit</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a> &amp;mesh)</td></tr>
+<tr class="separator:ad83f12101a7d860e829a66ec1ba04f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca7645f4d366baac6a8abf6596c71f0c"><td class="memItemLeft" align="right" valign="top"><a id="aca7645f4d366baac6a8abf6596c71f0c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>defaultUBOInit</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer)</td></tr>
 <tr class="separator:aca7645f4d366baac6a8abf6596c71f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6750d426856f9aa06000c9e65de810e2"><td class="memItemLeft" align="right" valign="top"><a id="a6750d426856f9aa06000c9e65de810e2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>defaultPassesInit</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer)</td></tr>
-<tr class="separator:a6750d426856f9aa06000c9e65de810e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad99161ccbb625d01cf8c941e84d1f9bc"><td class="memItemLeft" align="right" valign="top"><a id="ad99161ccbb625d01cf8c941e84d1f9bc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>defaultPassesInit</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a> &amp;mesh)</td></tr>
+<tr class="separator:ad99161ccbb625d01cf8c941e84d1f9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a004e72a4b29a4714d51606bfcfe850b5"><td class="memItemLeft" align="right" valign="top"><a id="a004e72a4b29a4714d51606bfcfe850b5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer) override</td></tr>
 <tr class="separator:a004e72a4b29a4714d51606bfcfe850b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,6 +155,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>defaultRelease</b> (<
 <tr class="memitem:a77edf52bf035f0db94550d50d012bcd6"><td class="memItemLeft" align="right" valign="top"><a id="a77edf52bf035f0db94550d50d012bcd6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;) override</td></tr>
 <tr class="separator:a77edf52bf035f0db94550d50d012bcd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4542fdece0191686165f8c0bcc3abd35"><td class="memItemLeft" align="right" valign="top"><a id="a4542fdece0191686165f8c0bcc3abd35"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>defaultRenderPass</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;, const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a> &amp;mesh, QRhiCommandBuffer &amp;commands, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge)</td></tr>
+<tr class="separator:a4542fdece0191686165f8c0bcc3abd35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21a76fdd9bf9f2e8577021f962a33924"><td class="memItemLeft" align="right" valign="top"><a id="a21a76fdd9bf9f2e8577021f962a33924"></a>
 QRhiResourceUpdateBatch *&#160;</td><td class="memItemRight" valign="bottom"><b>runRenderPass</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;, QRhiCommandBuffer &amp;commands, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge) override</td></tr>
 <tr class="separator:a21a76fdd9bf9f2e8577021f962a33924"><td class="memSeparator" colspan="2">&#160;</td></tr>

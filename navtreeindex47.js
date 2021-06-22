@@ -1,6 +1,5 @@
 var NAVTREEINDEX47 =
 {
-"classvst_1_1vst__node.html#a354a831caf8d60318264918392f3b790":[12,0,53,16,8],
 "classvst_1_1vst__node.html#a701c69d99ecae4a112140fcd834bec1d":[12,0,53,16,4],
 "classvst_1_1vst__node.html#a71adcacc006f424a3783fe3b37416058":[12,0,53,16,5],
 "classvst_1_1vst__node.html#acd6825eef49468ba94a3019afca26521":[12,0,53,16,2],
@@ -29,8 +28,8 @@ var NAVTREEINDEX47 =
 "functions_d.html":[12,3,0,3],
 "functions_e.html":[12,3,0,4],
 "functions_f.html":[12,3,0,5],
-"functions_func.html":[12,3,1,0],
 "functions_func.html":[12,3,1],
+"functions_func.html":[12,3,1,0],
 "functions_func_c.html":[12,3,1,1],
 "functions_func_d.html":[12,3,1,2],
 "functions_func_e.html":[12,3,1,3],
@@ -94,12 +93,12 @@ var NAVTREEINDEX47 =
 "namespace_engine.html":[11,0,3],
 "namespace_engine.html":[12,0,8],
 "namespace_engine_1_1_network.html":[11,0,3,0],
-"namespace_execution.html":[12,0,9],
 "namespace_execution.html":[11,0,4],
+"namespace_execution.html":[12,0,9],
 "namespace_gfx.html":[12,0,15],
 "namespace_gfx.html":[11,0,5],
-"namespace_inspector.html":[11,0,6],
 "namespace_inspector.html":[12,0,17],
+"namespace_inspector.html":[11,0,6],
 "namespace_local_tree.html":[11,0,7],
 "namespace_local_tree.html":[12,0,24],
 "namespace_plugin_loader.html":[11,0,8],
@@ -249,5 +248,6 @@ var NAVTREEINDEX47 =
 "score-plugin-protocols_2_protocols_2_settings_2_factory_8hpp_source.html":[13,0,417],
 "score-plugin-protocols_2_protocols_2_settings_2_model_8hpp_source.html":[13,0,718],
 "score-plugin-protocols_2_protocols_2_settings_2_view_8hpp_source.html":[13,0,1283],
-"score-plugin-recording_2_recording_2_application_plugin_8hpp_source.html":[13,0,53]
+"score-plugin-recording_2_recording_2_application_plugin_8hpp_source.html":[13,0,53],
+"score-plugin-remotecontrol_2_remote_control_2_application_plugin_8hpp_source.html":[13,0,54]
 };
