@@ -39,6 +39,7 @@ var struct_time_val =
     [ "sec", "struct_time_val.html#a997d3b9aa912095f9bfbdea65f71eb73", null ],
     [ "setMSecs", "struct_time_val.html#a560d6c8f0710c07f0a25c4f655623cf9", null ],
     [ "toPixels", "struct_time_val.html#a568cdaf16ec59b0140032b21437ce1ca", null ],
+    [ "toPixelsRaw", "struct_time_val.html#aaaa11638d1c3ba1905d0dbeb3d432363", null ],
     [ "toQTime", "struct_time_val.html#ab7d17f93b395e5422675c4131fea60ed", null ],
     [ "toSample", "struct_time_val.html#a59b047afd944c332d1cffb8242d1404f", null ],
     [ "toString", "struct_time_val.html#ae6d9873444b59c0328a7782e9491ac80", null ]

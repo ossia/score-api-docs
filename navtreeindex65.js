@@ -1,5 +1,6 @@
 var NAVTREEINDEX65 =
 {
+"structscore_1_1gfx_1_1_persist_sampler.html#af3d786acfa6669d40c1f8d17a367c6d1":[12,0,44,2,28,1],
 "structscore_1_1gfx_1_1_phong_node.html":[12,0,44,2,29],
 "structscore_1_1gfx_1_1_phong_node.html#a21ddc413dec7f9a2eeb83ab2f64253a3":[12,0,44,2,29,2],
 "structscore_1_1gfx_1_1_phong_node.html#a6e08905e4f68c520ac81f93287c1593b":[12,0,44,2,29,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX65 =
 "structscore_1_1lazy__init__t.html":[12,0,44,134],
 "structscore_1_1linear__id__generator.html":[12,0,44,135],
 "structscore_1_1random__id__generator.html":[12,0,44,199],
-"structscore_1_1testing_1_1_mock_application.html":[12,0,44,5,0],
-"structscore_1_1testing_1_1_mock_application.html#a34c2a1d353018d04206e3b7fe6def6cb":[12,0,44,5,0,0]
+"structscore_1_1testing_1_1_mock_application.html":[12,0,44,5,0]
 };
