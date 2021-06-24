@@ -274,7 +274,15 @@ $(document).ready(function(){initNavTree('score-plugin-gfx_2_gfx_2_graph_2_utils
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;SCORE_PLUGIN_GFX_EXPORT</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;QImage <a class="code" href="namespacescore_1_1gfx.html#ace27fba3b7ac24cd0777898e7eac1e53">resizeTexture</a>(<span class="keyword">const</span> QImage&amp; img, <span class="keywordtype">int</span> min, <span class="keywordtype">int</span> max) noexcept;</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;}</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> copyMatrix(<span class="keyword">const</span> QMatrix4x4&amp; mat, <span class="keywordtype">float</span>* ptr) noexcept</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;{</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  memcpy(ptr, mat.constData(), <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>) * 16);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;}</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> copyMatrix(<span class="keyword">const</span> QMatrix3x3&amp; mat, <span class="keywordtype">float</span>* ptr) noexcept</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;{</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  memcpy(ptr, mat.constData(), <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>) * 9);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;}</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructscore_1_1gfx_1_1_port_html_adb11d4fb6715db432193ab623d3e679c"><div class="ttname"><a href="structscore_1_1gfx_1_1_port.html#adb11d4fb6715db432193ab623d3e679c">score::gfx::Port::edges</a></div><div class="ttdeci">std::vector&lt; Edge * &gt; edges</div><div class="ttdoc">Edges connected to that port.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:55</div></div>
