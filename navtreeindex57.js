@@ -1,6 +1,5 @@
 var NAVTREEINDEX57 =
 {
-"struct_q_meta_type_id_3_01_j_s_1_1_audio_outlet_01_5_01_4.html#a7b68644834e1559ee656ad5923fc39a4a5cee577d92176812066ddb2f47081af5":[12,0,233,0],
 "struct_q_meta_type_id_3_01_j_s_1_1_midi_inlet_01_5_01_4.html":[12,0,234],
 "struct_q_meta_type_id_3_01_j_s_1_1_midi_inlet_01_5_01_4.html#a301d393dc90fcb8f8b389c09a423aa3da4f009d71e68398c6fc7b6018f5bc333b":[12,0,234,0],
 "struct_q_meta_type_id_3_01_j_s_1_1_midi_message_01_4.html":[12,0,235],
@@ -249,5 +248,6 @@ var NAVTREEINDEX57 =
 "struct_remote_control_1_1_handler.html":[12,0,41,5],
 "struct_remote_control_1_1_handler.html#a4312bf627bd1d96f50d022b9bf74bb63":[12,0,41,5,2],
 "struct_remote_control_1_1_handler.html#a586e2e6b4ebea7183b6790086a8b5160":[12,0,41,5,4],
-"struct_remote_control_1_1_handler.html#a6118074f96d3ae9673fa16ddad211f55":[12,0,41,5,3]
+"struct_remote_control_1_1_handler.html#a6118074f96d3ae9673fa16ddad211f55":[12,0,41,5,3],
+"struct_remote_control_1_1_handler.html#a66b94f0a7af5d39dcd92b168d0a6d047":[12,0,41,5,1]
 };

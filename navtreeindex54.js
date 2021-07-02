@@ -190,7 +190,6 @@ var NAVTREEINDEX54 =
 "struct_nodes_1_1_factor_oracle2_1_1_node_1_1_state.html#aa8a4b3aa453ce8958ddd8e17e27c4df3":[12,0,32,11,0,1,2],
 "struct_nodes_1_1_factor_oracle2_1_1_node_1_1_state.html#af6d8e053556b84dfd4cbb884026b0fe1":[12,0,32,11,0,1,0],
 "struct_nodes_1_1_factor_oracle2_m_i_d_i_1_1_node.html":[12,0,32,12,0],
-"struct_nodes_1_1_factor_oracle2_m_i_d_i_1_1_node.html#a5bfc3e1b1cd6ff0bc30c82e06dfdb04c":[12,0,32,12,0,3],
 "struct_nodes_1_1_factor_oracle2_m_i_d_i_1_1_node.html#a7e275f99a9724e11dc1bd24ccaebb4c1":[12,0,32,12,0,2],
 "struct_nodes_1_1_factor_oracle2_m_i_d_i_1_1_node_1_1_metadata.html":[12,0,32,12,0,0],
 "struct_nodes_1_1_factor_oracle2_m_i_d_i_1_1_node_1_1_state.html":[12,0,32,12,0,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX54 =
 "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_metadata.html":[12,0,32,16,0,0],
 "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html":[12,0,32,16,0,1],
 "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a0d275ab44052abe22fefebcccff48f86":[12,0,32,16,0,1,6],
-"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a1e078ee8d88577699b19b5ae39ec2188":[12,0,32,16,0,1,11]
+"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a1e078ee8d88577699b19b5ae39ec2188":[12,0,32,16,0,1,11],
+"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a26508726bd35c767b83a9e2d8984cf49":[12,0,32,16,0,1,0]
 };
