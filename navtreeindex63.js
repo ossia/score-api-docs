@@ -1,5 +1,6 @@
 var NAVTREEINDEX63 =
 {
+"structscore_1_1_event_visitor.html#af06753c4b3a0028cce2525e8630169c4":[12,0,44,92,7],
 "structscore_1_1_event_visitor.html#afa90f68deb6415628e011341dddbb38c":[12,0,44,92,2],
 "structscore_1_1_flicks_spin_box.html":[12,0,44,97],
 "structscore_1_1_flicks_spin_box.html#a31bb0762ce691167d3e89576d489ef01":[12,0,44,97,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX63 =
 "structscore_1_1_string_constants.html#a306f2d1274816cbf4ef41b6a4bad6a7b":[12,0,44,241,47],
 "structscore_1_1_string_constants.html#a358b30c0af3a891ab7fcc473fe97c47e":[12,0,44,241,61],
 "structscore_1_1_string_constants.html#a37a13047b1dda08a32d560f0410c77f9":[12,0,44,241,11],
-"structscore_1_1_string_constants.html#a39149e7187283cfa8c1b7ffbbc18ef7d":[12,0,44,241,110],
-"structscore_1_1_string_constants.html#a3f40a71436e131fcc1aac0f6279a2a30":[12,0,44,241,100]
+"structscore_1_1_string_constants.html#a39149e7187283cfa8c1b7ffbbc18ef7d":[12,0,44,241,110]
 };

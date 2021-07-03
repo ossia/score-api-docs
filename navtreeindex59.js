@@ -1,5 +1,6 @@
 var NAVTREEINDEX59 =
 {
+"struct_scenario_1_1_full_slot.html#aeb981f2030ac2353f248b7f59227dcae":[12,0,43,105,0],
 "struct_scenario_1_1_interval_pixmaps.html":[12,0,43,124],
 "struct_scenario_1_1_interval_pixmaps.html#a1ad3578ed6537c23cc1509306cef7b39":[12,0,43,124,6],
 "struct_scenario_1_1_interval_pixmaps.html#a25b92700249773a45a407846b5959f33":[12,0,43,124,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX59 =
 "struct_state_1_1_address.html#aa0431c8a2d08110aa2a5016006707569":[12,0,48,0,9],
 "struct_state_1_1_address.html#aa09569fedf1ed3d64b9449ff09cce696":[12,0,48,0,11],
 "struct_state_1_1_address.html#aafc395048e6872e8f4b4d181b9a5bc13":[12,0,48,0,3],
-"struct_state_1_1_address.html#ac1ca83d0daa90ce17ae23f66d9fe7ea7":[12,0,48,0,0],
-"struct_state_1_1_address.html#acd08e95f4457689d27764ba8fa73f119":[12,0,48,0,1]
+"struct_state_1_1_address.html#ac1ca83d0daa90ce17ae23f66d9fe7ea7":[12,0,48,0,0]
 };

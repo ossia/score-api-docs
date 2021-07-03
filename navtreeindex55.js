@@ -1,5 +1,6 @@
 var NAVTREEINDEX55 =
 {
+"struct_nodes_1_1_math_audio_filter_1_1_node.html#a8ad69373459e4a390a800240b8a19615":[12,0,32,15,0,2],
 "struct_nodes_1_1_math_audio_filter_1_1_node_1_1_metadata.html":[12,0,32,15,0,0],
 "struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html":[12,0,32,15,0,1],
 "struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html#a0131d16bfe370f1f5a459be36da8b636":[12,0,32,15,0,1,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX55 =
 "struct_process_1_1_pixmaps.html#ac6e126103c6ea5a8c4148c2d3037f1ad":[12,0,37,59,4],
 "struct_process_1_1_pixmaps.html#ac85aa7409bcb0da28d068124db441c2a":[12,0,37,59,10],
 "struct_process_1_1_pixmaps.html#acafefb0ce32383be9fda8de20fa34637":[12,0,37,59,17],
-"struct_process_1_1_pixmaps.html#acd3f22a02ec5927c04c743b6bd072449":[12,0,37,59,2],
-"struct_process_1_1_pixmaps.html#ad9c1fc849118c1aa0e006b32b882b20b":[12,0,37,59,11]
+"struct_process_1_1_pixmaps.html#acd3f22a02ec5927c04c743b6bd072449":[12,0,37,59,2]
 };

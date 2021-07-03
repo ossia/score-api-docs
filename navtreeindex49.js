@@ -1,5 +1,6 @@
 var NAVTREEINDEX49 =
 {
+"struct_control_1_1_float_control.html#aef64fc4efa7d68b2aa9d6202e595d634":[12,0,3,13,2],
 "struct_control_1_1_float_display.html":[12,0,3,14],
 "struct_control_1_1_float_display.html#a0336d6ea1f78dd78a05d297f75988ac3":[12,0,3,14,1],
 "struct_control_1_1_float_display.html#a22f8d8cce3612e096f925c12f61b6235":[12,0,3,14,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX49 =
 "struct_dataflow_1_1_audio_outlet_factory.html#aae2e0d707d635ad26e99e94233a1beec":[12,0,6,3,0],
 "struct_dataflow_1_1_audio_outlet_factory.html#aaf2f51f518db9e39bb4d2cb1eb251cd1":[12,0,6,3,3],
 "struct_dataflow_1_1_audio_outlet_factory.html#ac41ff6919e1f60a32c043bc9a7ff9228":[12,0,6,3,1],
-"struct_dataflow_1_1_audio_outlet_factory.html#afb35a22eb5a4114d71e2eafff972375e":[12,0,6,3,4],
-"struct_dataflow_1_1_control_inlet_factory.html":[12,0,6,17]
+"struct_dataflow_1_1_audio_outlet_factory.html#afb35a22eb5a4114d71e2eafff972375e":[12,0,6,3,4]
 };
