@@ -1196,6 +1196,7 @@ var hierarchy =
         [ "Scenario::ScenarioTemporalLayerFactory", "class_scenario_1_1_scenario_temporal_layer_factory.html", null ],
         [ "WidgetLayer::LayerFactory< Model_T, Widget_T >", "class_widget_layer_1_1_layer_factory.html", null ]
       ] ],
+      [ "Process::OfflineAction", "class_process_1_1_offline_action.html", null ],
       [ "Process::PortFactory", "class_process_1_1_port_factory.html", [
         [ "Dataflow::AutomatablePortFactory", "class_dataflow_1_1_automatable_port_factory.html", [
           [ "Dataflow::AudioInletFactory", "struct_dataflow_1_1_audio_inlet_factory.html", null ],
@@ -1424,6 +1425,7 @@ var hierarchy =
         ] ]
       ] ],
       [ "Process::MagnetismAdjuster", "class_process_1_1_magnetism_adjuster.html", null ],
+      [ "Process::OfflineActionList", "class_process_1_1_offline_action_list.html", null ],
       [ "score::InterfaceList< FactoryType >", "classscore_1_1_interface_list.html", null ]
     ] ],
     [ "Execution::interval_duration_data", "struct_execution_1_1interval__duration__data.html", null ],
@@ -1601,28 +1603,27 @@ var hierarchy =
     [ "Scenario::BaseScenarioContainer::no_init", "struct_scenario_1_1_base_scenario_container_1_1no__init.html", null ],
     [ "Explorer::AddressSettingsWidget::no_widgets_t", "struct_explorer_1_1_address_settings_widget_1_1no__widgets__t.html", null ],
     [ "Scenario::NodalSlotPresenter", "struct_scenario_1_1_nodal_slot_presenter.html", null ],
-    [ "Nodes::LFO::Node", "struct_nodes_1_1_l_f_o_1_1_node.html", null ],
-    [ "Nodes::MidiUtil::Node", "struct_nodes_1_1_midi_util_1_1_node.html", null ],
-    [ "Nodes::AudioLooper::Node", "struct_nodes_1_1_audio_looper_1_1_node.html", null ],
-    [ "Nodes::Envelope::Node", "struct_nodes_1_1_envelope_1_1_node.html", null ],
-    [ "Ui::SignalDisplay::Node", "struct_ui_1_1_signal_display_1_1_node.html", null ],
     [ "Nodes::Direction::Node", "struct_nodes_1_1_direction_1_1_node.html", null ],
+    [ "Nodes::Quantifier::Node", "struct_nodes_1_1_quantifier_1_1_node.html", null ],
+    [ "Nodes::PitchToValue::Node", "struct_nodes_1_1_pitch_to_value_1_1_node.html", null ],
+    [ "Nodes::MidiUtil::Node", "struct_nodes_1_1_midi_util_1_1_node.html", null ],
+    [ "Ui::SignalDisplay::Node", "struct_ui_1_1_signal_display_1_1_node.html", null ],
+    [ "Nodes::MathGenerator::Node", "struct_nodes_1_1_math_generator_1_1_node.html", null ],
     [ "Nodes::Arpeggiator::Node", "struct_nodes_1_1_arpeggiator_1_1_node.html", null ],
     [ "Nodes::Chord::Node", "struct_nodes_1_1_chord_1_1_node.html", null ],
-    [ "Nodes::ClassicalBeat::Node", "struct_nodes_1_1_classical_beat_1_1_node.html", null ],
-    [ "Nodes::Debug::Node", "struct_nodes_1_1_debug_1_1_node.html", null ],
     [ "Nodes::EmptyValueMapping::Node", "struct_nodes_1_1_empty_value_mapping_1_1_node.html", null ],
     [ "Nodes::EmptyMidiMapping::Node", "struct_nodes_1_1_empty_midi_mapping_1_1_node.html", null ],
     [ "Nodes::EmptyAudioMapping::Node", "struct_nodes_1_1_empty_audio_mapping_1_1_node.html", null ],
     [ "Nodes::FactorOracle::Node", "struct_nodes_1_1_factor_oracle_1_1_node.html", null ],
-    [ "Nodes::MathGenerator::Node", "struct_nodes_1_1_math_generator_1_1_node.html", null ],
+    [ "Nodes::FactorOracle2::Node", "struct_nodes_1_1_factor_oracle2_1_1_node.html", null ],
     [ "Nodes::FactorOracle2MIDI::Node", "struct_nodes_1_1_factor_oracle2_m_i_d_i_1_1_node.html", null ],
+    [ "Nodes::Gain::Node", "struct_nodes_1_1_gain_1_1_node.html", null ],
+    [ "Nodes::MathAudioGenerator::Node", "struct_nodes_1_1_math_audio_generator_1_1_node.html", null ],
     [ "Nodes::MathMapping::Node", "struct_nodes_1_1_math_mapping_1_1_node.html", null ],
     [ "Nodes::MathAudioFilter::Node", "struct_nodes_1_1_math_audio_filter_1_1_node.html", null ],
     [ "Nodes::Metro::Node", "struct_nodes_1_1_metro_1_1_node.html", null ],
     [ "Nodes::PulseToNote::Node", "struct_nodes_1_1_pulse_to_note_1_1_node.html", null ],
-    [ "Nodes::Quantifier::Node", "struct_nodes_1_1_quantifier_1_1_node.html", null ],
-    [ "Nodes::Gain::Node", "struct_nodes_1_1_gain_1_1_node.html", null ],
+    [ "Nodes::ClassicalBeat::Node", "struct_nodes_1_1_classical_beat_1_1_node.html", null ],
     [ "score::gfx::Node", "classscore_1_1gfx_1_1_node.html", [
       [ "score::gfx::OutputNode", "classscore_1_1gfx_1_1_output_node.html", [
         [ "Gfx::SpoutNode", "struct_gfx_1_1_spout_node.html", null ],
@@ -1641,9 +1642,10 @@ var hierarchy =
         [ "score::gfx::VideoNode", "structscore_1_1gfx_1_1_video_node.html", null ]
       ] ]
     ] ],
-    [ "Nodes::FactorOracle2::Node", "struct_nodes_1_1_factor_oracle2_1_1_node.html", null ],
-    [ "Nodes::PitchToValue::Node", "struct_nodes_1_1_pitch_to_value_1_1_node.html", null ],
-    [ "Nodes::MathAudioGenerator::Node", "struct_nodes_1_1_math_audio_generator_1_1_node.html", null ],
+    [ "Nodes::Envelope::Node", "struct_nodes_1_1_envelope_1_1_node.html", null ],
+    [ "Nodes::Debug::Node", "struct_nodes_1_1_debug_1_1_node.html", null ],
+    [ "Nodes::LFO::Node", "struct_nodes_1_1_l_f_o_1_1_node.html", null ],
+    [ "Nodes::AudioLooper::Node", "struct_nodes_1_1_audio_looper_1_1_node.html", null ],
     [ "node_base", null, [
       [ "Gfx::camera_node", "class_gfx_1_1camera__node.html", null ],
       [ "Gfx::gfx_node_base", "class_gfx_1_1gfx__node__base.html", null ],
@@ -1681,8 +1683,8 @@ var hierarchy =
     [ "Control::Note", "struct_control_1_1_note.html", null ],
     [ "Midi::NoteComparator", "struct_midi_1_1_note_comparator.html", null ],
     [ "Midi::NoteData", "struct_midi_1_1_note_data.html", null ],
-    [ "Nodes::Quantifier::Node::NoteIn", "struct_nodes_1_1_quantifier_1_1_node_1_1_note_in.html", null ],
     [ "Nodes::PulseToNote::Node::NoteIn", "struct_nodes_1_1_pulse_to_note_1_1_node_1_1_note_in.html", null ],
+    [ "Nodes::Quantifier::Node::NoteIn", "struct_nodes_1_1_quantifier_1_1_node_1_1_note_in.html", null ],
     [ "FactorOracle2MIDI::Notes", "class_factor_oracle2_m_i_d_i_1_1_notes.html", null ],
     [ "Curve::Element::Nothing_tag", "struct_curve_1_1_element_1_1_nothing__tag.html", null ],
     [ "ObjectIdentifier", "class_object_identifier.html", null ],
@@ -1907,8 +1909,8 @@ var hierarchy =
     [ "Curve::PointId", "struct_curve_1_1_point_id.html", null ],
     [ "ControlSurface::Presenter::Port", "struct_control_surface_1_1_presenter_1_1_port.html", null ],
     [ "score::gfx::Port", "structscore_1_1gfx_1_1_port.html", null ],
-    [ "Gfx::Video::Presenter::Port", "struct_gfx_1_1_video_1_1_presenter_1_1_port.html", null ],
     [ "Process::DefaultEffectItem::Port", "struct_process_1_1_default_effect_item_1_1_port.html", null ],
+    [ "Gfx::Video::Presenter::Port", "struct_gfx_1_1_video_1_1_presenter_1_1_port.html", null ],
     [ "Audio::PortAudioCard", "struct_audio_1_1_port_audio_card.html", null ],
     [ "Audio::PortAudioScope", "struct_audio_1_1_port_audio_scope.html", null ],
     [ "vst3::PortCreationVisitor", "structvst3_1_1_port_creation_visitor.html", null ],
@@ -3021,8 +3023,8 @@ var hierarchy =
       [ "Scenario::MessageTreeView", "class_scenario_1_1_message_tree_view.html", null ],
       [ "Scenario::ObjectWidget", "class_scenario_1_1_object_widget.html", null ]
     ] ],
-    [ "SendStrategy::Quiet", "struct_send_strategy_1_1_quiet.html", null ],
     [ "RedoStrategy::Quiet", "struct_redo_strategy_1_1_quiet.html", null ],
+    [ "SendStrategy::Quiet", "struct_send_strategy_1_1_quiet.html", null ],
     [ "QValidator", null, [
       [ "ExpressionValidator< T >", "class_expression_validator.html", null ],
       [ "ExpressionValidator< TreeNode >", "class_expression_validator.html", null ],
@@ -3335,11 +3337,11 @@ var hierarchy =
       [ "Gfx::ProcessedProgram", "struct_gfx_1_1_processed_program.html", null ]
     ] ],
     [ "SignalUtils", "struct_signal_utils.html", null ],
-    [ "RollbackStrategy::Simple", "struct_rollback_strategy_1_1_simple.html", null ],
     [ "SendStrategy::Simple", "struct_send_strategy_1_1_simple.html", null ],
+    [ "RollbackStrategy::Simple", "struct_rollback_strategy_1_1_simple.html", null ],
     [ "Media::SingleFrameComputer", "struct_media_1_1_single_frame_computer.html", null ],
-    [ "Factor::SingleTransition< T >", "class_factor_1_1_single_transition.html", null ],
     [ "FactorOracle2MIDI::SingleTransition< T >", "class_factor_oracle2_m_i_d_i_1_1_single_transition.html", null ],
+    [ "Factor::SingleTransition< T >", "class_factor_1_1_single_transition.html", null ],
     [ "FactorOracle2MIDI::SingleTransition< int >", "class_factor_oracle2_m_i_d_i_1_1_single_transition.html", null ],
     [ "Factor::SingleTransition< ossia::value >", "class_factor_1_1_single_transition.html", null ],
     [ "Media::Sound::WaveformComputerImpl::SizeInfos", "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html", null ],
@@ -3351,9 +3353,6 @@ var hierarchy =
     [ "Audio::AudioPreviewExecutor::sound", "struct_audio_1_1_audio_preview_executor_1_1sound.html", null ],
     [ "Media::SoundComponentSetup", "class_media_1_1_sound_component_setup.html", null ],
     [ "spinbox_type", null, [
-      [ "score::MaxRangeSpinBox< SpinBox >", "classscore_1_1_max_range_spin_box.html", null ]
-    ] ],
-    [ "spinbox_type", null, [
       [ "score::MaxRangeSpinBox< TemplatedSpinBox< double > >", "classscore_1_1_max_range_spin_box.html", [
         [ "score::SpinBox< double >", "classscore_1_1_spin_box_3_01double_01_4.html", null ]
       ] ],
@@ -3364,26 +3363,29 @@ var hierarchy =
         [ "score::SpinBox< T >", "classscore_1_1_spin_box.html", null ]
       ] ]
     ] ],
+    [ "spinbox_type", null, [
+      [ "score::MaxRangeSpinBox< SpinBox >", "classscore_1_1_max_range_spin_box.html", null ]
+    ] ],
     [ "Device::ProtocolFactory::StandardCategories", "struct_device_1_1_protocol_factory_1_1_standard_categories.html", null ],
     [ "Scenario::StartDateComparator< T >", "struct_scenario_1_1_start_date_comparator.html", null ],
     [ "score::StartScreenLink", "structscore_1_1_start_screen_link.html", null ],
-    [ "FactorOracle2MIDI::State< T >", "class_factor_oracle2_m_i_d_i_1_1_state.html", null ],
-    [ "Nodes::MidiUtil::Node::State", "struct_nodes_1_1_midi_util_1_1_node_1_1_state.html", null ],
-    [ "Nodes::AudioLooper::Node::State", "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html", null ],
-    [ "Nodes::Quantifier::Node::State", "struct_nodes_1_1_quantifier_1_1_node_1_1_state.html", null ],
-    [ "Nodes::MathAudioFilter::Node::State", "struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html", null ],
-    [ "Nodes::Arpeggiator::Node::State", "struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html", null ],
-    [ "Nodes::FactorOracle2::Node::State", "struct_nodes_1_1_factor_oracle2_1_1_node_1_1_state.html", null ],
-    [ "Nodes::Chord::Node::State", "struct_nodes_1_1_chord_1_1_node_1_1_state.html", null ],
-    [ "Nodes::FactorOracle2MIDI::Node::State", "struct_nodes_1_1_factor_oracle2_m_i_d_i_1_1_node_1_1_state.html", null ],
-    [ "Nodes::MathAudioGenerator::Node::State", "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html", null ],
     [ "Nodes::Direction::Node::State", "struct_nodes_1_1_direction_1_1_node_1_1_state.html", null ],
+    [ "Nodes::Arpeggiator::Node::State", "struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html", null ],
+    [ "Nodes::MidiUtil::Node::State", "struct_nodes_1_1_midi_util_1_1_node_1_1_state.html", null ],
     [ "Nodes::PulseToNote::Node::State", "struct_nodes_1_1_pulse_to_note_1_1_node_1_1_state.html", null ],
-    [ "Nodes::LFO::Node::State", "struct_nodes_1_1_l_f_o_1_1_node_1_1_state.html", null ],
+    [ "Nodes::MathAudioGenerator::Node::State", "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html", null ],
+    [ "Nodes::Chord::Node::State", "struct_nodes_1_1_chord_1_1_node_1_1_state.html", null ],
     [ "Nodes::MathGenerator::Node::State", "struct_nodes_1_1_math_generator_1_1_node_1_1_state.html", null ],
     [ "Factor::State< T >", "class_factor_1_1_state.html", null ],
-    [ "Nodes::MathMapping::Node::State", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html", null ],
+    [ "FactorOracle2MIDI::State< T >", "class_factor_oracle2_m_i_d_i_1_1_state.html", null ],
     [ "Nodes::FactorOracle::Node::State", "struct_nodes_1_1_factor_oracle_1_1_node_1_1_state.html", null ],
+    [ "Nodes::FactorOracle2MIDI::Node::State", "struct_nodes_1_1_factor_oracle2_m_i_d_i_1_1_node_1_1_state.html", null ],
+    [ "Nodes::MathMapping::Node::State", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html", null ],
+    [ "Nodes::Quantifier::Node::State", "struct_nodes_1_1_quantifier_1_1_node_1_1_state.html", null ],
+    [ "Nodes::FactorOracle2::Node::State", "struct_nodes_1_1_factor_oracle2_1_1_node_1_1_state.html", null ],
+    [ "Nodes::LFO::Node::State", "struct_nodes_1_1_l_f_o_1_1_node_1_1_state.html", null ],
+    [ "Nodes::AudioLooper::Node::State", "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html", null ],
+    [ "Nodes::MathAudioFilter::Node::State", "struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html", null ],
     [ "FactorOracle2MIDI::State< int >", "class_factor_oracle2_m_i_d_i_1_1_state.html", null ],
     [ "Factor::State< ossia::value >", "class_factor_1_1_state.html", null ],
     [ "StateNodeData", null, [
@@ -3409,8 +3411,8 @@ var hierarchy =
     [ "StringKey< score::ActionCondition >", "class_string_key.html", null ],
     [ "StringKey< score::Menu >", "class_string_key.html", null ],
     [ "StringKey< score::Toolbar >", "class_string_key.html", null ],
-    [ "Process::Style", "struct_process_1_1_style.html", null ],
     [ "Curve::Style", "struct_curve_1_1_style.html", null ],
+    [ "Process::Style", "struct_process_1_1_style.html", null ],
     [ "Curve::StyleInterface", "struct_curve_1_1_style_interface.html", [
       [ "Curve::CurveLayerFactory_T< Model_T, LayerPresenter_T, LayerView_T, CurveColors_T, HeaderDelegate_T >", "class_curve_1_1_curve_layer_factory___t.html", null ]
     ] ],
@@ -3455,8 +3457,8 @@ var hierarchy =
     [ "Scenario::TimenodeGraphConnectedComponent", "struct_scenario_1_1_timenode_graph_connected_component.html", null ],
     [ "Scenario::TimenodeProperties", "struct_scenario_1_1_timenode_properties.html", null ],
     [ "Jit::Timer", "struct_jit_1_1_timer.html", null ],
-    [ "HierarchicalBaseScenario< Component_T, BaseScenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T >::TimeSyncPair", "struct_hierarchical_base_scenario_1_1_time_sync_pair.html", null ],
     [ "HierarchicalScenarioComponent< Component_T, Scenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T, HasOwnership >::TimeSyncPair", "struct_hierarchical_scenario_component_1_1_time_sync_pair.html", null ],
+    [ "HierarchicalBaseScenario< Component_T, BaseScenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T >::TimeSyncPair", "struct_hierarchical_base_scenario_1_1_time_sync_pair.html", null ],
     [ "Scenario::MusicalGrid::timings", "struct_scenario_1_1_musical_grid_1_1timings.html", null ],
     [ "WidgetFactory::Toggle", "struct_widget_factory_1_1_toggle.html", [
       [ "Control::Toggle", "struct_control_1_1_toggle.html", null ]
@@ -3570,8 +3572,8 @@ var hierarchy =
     ] ],
     [ "typeholder< T >", "structtypeholder.html", null ],
     [ "score::gfx::TexgenNode::ubo", "structscore_1_1gfx_1_1_texgen_node_1_1ubo.html", null ],
-    [ "score::gfx::TextNode::UBO", "structscore_1_1gfx_1_1_text_node_1_1_u_b_o.html", null ],
     [ "score::gfx::ImagesNode::UBO", "structscore_1_1gfx_1_1_images_node_1_1_u_b_o.html", null ],
+    [ "score::gfx::TextNode::UBO", "structscore_1_1gfx_1_1_text_node_1_1_u_b_o.html", null ],
     [ "UI", null, [
       [ "Faust::UI< Proc, Synth >", "struct_faust_1_1_u_i.html", [
         [ "Faust::UpdateUI< Proc, SetInit >", "struct_faust_1_1_update_u_i.html", null ]
@@ -3613,6 +3615,111 @@ var hierarchy =
     [ "Vec3fValueType", "class_vec3f_value_type.html", null ],
     [ "Vec4fValueType", "class_vec4f_value_type.html", null ],
     [ "std::vector< T >", null, [
+      [ "score::IndirectContainer< AudioFactory >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< AudioFactory >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< AutomatableFactory >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< AutomatableFactory >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< ClockFactory >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< ClockFactory >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< CoherencyCheckerFactoryInterface >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< CoherencyCheckerFactoryInterface >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< DeviceModelProvider >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< DeviceModelProvider >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< DisplayedElementsProvider >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< DisplayedElementsProvider >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< DisplayedElementsToolPaletteFactory >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< DisplayedElementsToolPaletteFactory >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< DropHandler >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< DropHandler >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< Execution::ProcessComponentFactory >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< Execution::ProcessComponentFactory >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< ExecutionAction >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< ExecutionAction >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< Explorer::ListeningHandlerFactory >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< Explorer::ListeningHandlerFactory >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< Factory_T >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< Factory_T >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< FactoryType >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< FactoryType >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< InspectorWidgetFactory >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< InspectorWidgetFactory >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< IntervalDropHandler >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< IntervalDropHandler >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< IntervalResizer >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< IntervalResizer >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< LayerFactory >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< LayerFactory >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< LibraryInterface >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< LibraryInterface >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< LocalTree::ProcessComponentFactory >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< LocalTree::ProcessComponentFactory >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< MoveEventFactoryInterface >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< MoveEventFactoryInterface >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< ObjectRemover >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< ObjectRemover >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< OfflineAction >", "classscore_1_1_indirect_container.html", [
+        [ "Process::OfflineActionList", "class_process_1_1_offline_action_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< PluginSettingsTab >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< PluginSettingsTab >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< PortFactory >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< PortFactory >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< ProcessDropHandler >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< ProcessDropHandler >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< ProcessModelFactory >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< ProcessModelFactory >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< ProtocolFactory >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< ProtocolFactory >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< score::DocumentDelegateFactory >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< score::DocumentDelegateFactory >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< score::DocumentPluginFactory >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< score::DocumentPluginFactory >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< score::PanelDelegateFactory >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< score::PanelDelegateFactory >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< score::ValidityChecker >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< score::ValidityChecker >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< SegmentFactory >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< SegmentFactory >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< T >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< T >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< TransportInterface >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< TransportInterface >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< TriggerCommandFactory >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< TriggerCommandFactory >", "classscore_1_1_interface_list.html", null ]
+      ] ],
       [ "score::Components", "structscore_1_1_components.html", null ],
       [ "score::IndirectContainer< T, U >", "classscore_1_1_indirect_container.html", null ],
       [ "TreePath", "class_tree_path.html", null ]

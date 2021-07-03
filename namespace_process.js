@@ -56,6 +56,8 @@ var namespace_process =
     [ "MiniLayer", "class_process_1_1_mini_layer.html", "class_process_1_1_mini_layer" ],
     [ "MultiScriptDialog", "class_process_1_1_multi_script_dialog.html", "class_process_1_1_multi_script_dialog" ],
     [ "NodeItem", "class_process_1_1_node_item.html", "class_process_1_1_node_item" ],
+    [ "OfflineAction", "class_process_1_1_offline_action.html", "class_process_1_1_offline_action" ],
+    [ "OfflineActionList", "class_process_1_1_offline_action_list.html", "class_process_1_1_offline_action_list" ],
     [ "Outlet", "class_process_1_1_outlet.html", "class_process_1_1_outlet" ],
     [ "Pixmaps", "struct_process_1_1_pixmaps.html", "struct_process_1_1_pixmaps" ],
     [ "Port", "class_process_1_1_port.html", "class_process_1_1_port" ],

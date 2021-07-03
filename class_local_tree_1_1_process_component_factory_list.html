@@ -106,9 +106,10 @@ Inheritance diagram for LocalTree::ProcessComponentFactoryList:</div>
  <div class="center">
   <img src="class_local_tree_1_1_process_component_factory_list.png" usemap="#LocalTree::ProcessComponentFactoryList_map" alt=""/>
   <map id="LocalTree::ProcessComponentFactoryList_map" name="LocalTree::ProcessComponentFactoryList_map">
-<area href="classscore_1_1_generic_component_factory_list.html" alt="score::GenericComponentFactoryList&lt; Process::ProcessModel, score::DocumentContext, LocalTree::ProcessComponentFactory &gt;" shape="rect" coords="0,112,748,136"/>
-<area href="classscore_1_1_interface_list.html" alt="score::InterfaceList&lt; LocalTree::ProcessComponentFactory &gt;" shape="rect" coords="0,56,748,80"/>
-<area href="classscore_1_1_interface_list_base.html" title="InterfaceListBase Interface to access factories." alt="score::InterfaceListBase" shape="rect" coords="0,0,748,24"/>
+<area href="classscore_1_1_generic_component_factory_list.html" alt="score::GenericComponentFactoryList&lt; Process::ProcessModel, score::DocumentContext, LocalTree::ProcessComponentFactory &gt;" shape="rect" coords="379,168,1127,192"/>
+<area href="classscore_1_1_interface_list.html" alt="score::InterfaceList&lt; LocalTree::ProcessComponentFactory &gt;" shape="rect" coords="379,112,1127,136"/>
+<area href="classscore_1_1_interface_list_base.html" title="InterfaceListBase Interface to access factories." alt="score::InterfaceListBase" shape="rect" coords="0,56,748,80"/>
+<area href="classscore_1_1_indirect_container.html" alt="score::IndirectContainer&lt; LocalTree::ProcessComponentFactory &gt;" shape="rect" coords="758,56,1506,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -121,6 +122,16 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>factory_type</b> = <
 <tr class="memitem:a4d9a47475c378c0eec384e0f7fc817c9 inherit pub_types_classscore_1_1_interface_list"><td class="memItemLeft" align="right" valign="top"><a id="a4d9a47475c378c0eec384e0f7fc817c9"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>key_type</b> = typename <a class="el" href="class_local_tree_1_1_process_component_factory.html">LocalTree::ProcessComponentFactory</a> ::ConcreteKey</td></tr>
 <tr class="separator:a4d9a47475c378c0eec384e0f7fc817c9 inherit pub_types_classscore_1_1_interface_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a722224f8f7fdc9100b61eece22d8c541 inherit pub_types_classscore_1_1_interface_list"><td class="memItemLeft" align="right" valign="top"><a id="a722224f8f7fdc9100b61eece22d8c541"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>vector_type</b> = <a class="el" href="classscore_1_1_indirect_container.html">IndirectContainer</a>&lt; <a class="el" href="class_local_tree_1_1_process_component_factory.html">LocalTree::ProcessComponentFactory</a> &gt;</td></tr>
+<tr class="separator:a722224f8f7fdc9100b61eece22d8c541 inherit pub_types_classscore_1_1_interface_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classscore_1_1_indirect_container"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classscore_1_1_indirect_container')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classscore_1_1_indirect_container.html">score::IndirectContainer&lt; LocalTree::ProcessComponentFactory &gt;</a></td></tr>
+<tr class="memitem:a8cc4525569cf77bb7bea9a6a94a04bed inherit pub_types_classscore_1_1_indirect_container"><td class="memItemLeft" align="right" valign="top"><a id="a8cc4525569cf77bb7bea9a6a94a04bed"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ctnr_t</b> = std::vector&lt; <a class="el" href="class_local_tree_1_1_process_component_factory.html">LocalTree::ProcessComponentFactory</a> *, std::allocator&lt; <a class="el" href="class_local_tree_1_1_process_component_factory.html">LocalTree::ProcessComponentFactory</a> * &gt; &gt;</td></tr>
+<tr class="separator:a8cc4525569cf77bb7bea9a6a94a04bed inherit pub_types_classscore_1_1_indirect_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91ce2893422f4a1ae696bede030eddc6 inherit pub_types_classscore_1_1_indirect_container"><td class="memItemLeft" align="right" valign="top"><a id="a91ce2893422f4a1ae696bede030eddc6"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = <a class="el" href="class_local_tree_1_1_process_component_factory.html">LocalTree::ProcessComponentFactory</a></td></tr>
+<tr class="separator:a91ce2893422f4a1ae696bede030eddc6 inherit pub_types_classscore_1_1_indirect_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1_generic_component_factory_list"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1_generic_component_factory_list')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1_generic_component_factory_list.html">score::GenericComponentFactoryList&lt; Process::ProcessModel, score::DocumentContext, LocalTree::ProcessComponentFactory &gt;</a></td></tr>
 <tr class="memitem:a5e47d705cc8d49ec42b9d9c619f6961e inherit pub_methods_classscore_1_1_generic_component_factory_list"><td class="memItemLeft" align="right" valign="top"><a id="a5e47d705cc8d49ec42b9d9c619f6961e"></a>
 <a class="el" href="class_local_tree_1_1_process_component_factory.html">LocalTree::ProcessComponentFactory</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>factory</b> (Args &amp;&amp;... args) const</td></tr>
@@ -137,36 +148,6 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>key_type</b> = typen
 <a class="el" href="class_local_tree_1_1_process_component_factory.html">LocalTree::ProcessComponentFactory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_interface_list.html#a610c32e8a09033072c496f3fdff75520">get</a> (const key_type &amp;k) const noexcept</td></tr>
 <tr class="memdesc:a610c32e8a09033072c496f3fdff75520 inherit pub_methods_classscore_1_1_interface_list"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a particular factory from its ConcreteKey. <br /></td></tr>
 <tr class="separator:a610c32e8a09033072c496f3fdff75520 inherit pub_methods_classscore_1_1_interface_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76fdc156f89dc4fdd09194fa989e7096 inherit pub_methods_classscore_1_1_interface_list"><td class="memItemLeft" align="right" valign="top"><a id="a76fdc156f89dc4fdd09194fa989e7096"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () noexcept</td></tr>
-<tr class="separator:a76fdc156f89dc4fdd09194fa989e7096 inherit pub_methods_classscore_1_1_interface_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebb1188164a0dacec3bbfca0082e94d7 inherit pub_methods_classscore_1_1_interface_list"><td class="memItemLeft" align="right" valign="top"><a id="aebb1188164a0dacec3bbfca0082e94d7"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () const noexcept</td></tr>
-<tr class="separator:aebb1188164a0dacec3bbfca0082e94d7 inherit pub_methods_classscore_1_1_interface_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17940e16238a1c8636a04ad7c463a6be inherit pub_methods_classscore_1_1_interface_list"><td class="memItemLeft" align="right" valign="top"><a id="a17940e16238a1c8636a04ad7c463a6be"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>cbegin</b> () noexcept</td></tr>
-<tr class="separator:a17940e16238a1c8636a04ad7c463a6be inherit pub_methods_classscore_1_1_interface_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09c795daa82f891a9d88b015fe32983c inherit pub_methods_classscore_1_1_interface_list"><td class="memItemLeft" align="right" valign="top"><a id="a09c795daa82f891a9d88b015fe32983c"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>cbegin</b> () const noexcept</td></tr>
-<tr class="separator:a09c795daa82f891a9d88b015fe32983c inherit pub_methods_classscore_1_1_interface_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dc16b86b2e1ab700e9e17ea5cb57593 inherit pub_methods_classscore_1_1_interface_list"><td class="memItemLeft" align="right" valign="top"><a id="a0dc16b86b2e1ab700e9e17ea5cb57593"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () noexcept</td></tr>
-<tr class="separator:a0dc16b86b2e1ab700e9e17ea5cb57593 inherit pub_methods_classscore_1_1_interface_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab08df315b285e4649cd562299c68bfb2 inherit pub_methods_classscore_1_1_interface_list"><td class="memItemLeft" align="right" valign="top"><a id="ab08df315b285e4649cd562299c68bfb2"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () const noexcept</td></tr>
-<tr class="separator:ab08df315b285e4649cd562299c68bfb2 inherit pub_methods_classscore_1_1_interface_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a961ee64c41bf0c8cbc78dda227e328a0 inherit pub_methods_classscore_1_1_interface_list"><td class="memItemLeft" align="right" valign="top"><a id="a961ee64c41bf0c8cbc78dda227e328a0"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>cend</b> () noexcept</td></tr>
-<tr class="separator:a961ee64c41bf0c8cbc78dda227e328a0 inherit pub_methods_classscore_1_1_interface_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79838a9cae5a69e1f600ed0de73b22fa inherit pub_methods_classscore_1_1_interface_list"><td class="memItemLeft" align="right" valign="top"><a id="a79838a9cae5a69e1f600ed0de73b22fa"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>cend</b> () const noexcept</td></tr>
-<tr class="separator:a79838a9cae5a69e1f600ed0de73b22fa inherit pub_methods_classscore_1_1_interface_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2488376250aeb628217aeda195741cb7 inherit pub_methods_classscore_1_1_interface_list"><td class="memItemLeft" align="right" valign="top"><a id="a2488376250aeb628217aeda195741cb7"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>empty</b> () const noexcept</td></tr>
-<tr class="separator:a2488376250aeb628217aeda195741cb7 inherit pub_methods_classscore_1_1_interface_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe3286ca9de56613ce8ac31d44a54025 inherit pub_methods_classscore_1_1_interface_list"><td class="memItemLeft" align="right" valign="top"><a id="afe3286ca9de56613ce8ac31d44a54025"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const noexcept</td></tr>
-<tr class="separator:afe3286ca9de56613ce8ac31d44a54025 inherit pub_methods_classscore_1_1_interface_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1_interface_list_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1_interface_list_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1_interface_list_base.html">score::InterfaceListBase</a></td></tr>
 <tr class="memitem:a2a2023a01129f93c068aa9da3942921a inherit pub_methods_classscore_1_1_interface_list_base"><td class="memItemLeft" align="right" valign="top"><a id="a2a2023a01129f93c068aa9da3942921a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>InterfaceListBase</b> (const <a class="el" href="classscore_1_1_interface_list_base.html">InterfaceListBase</a> &amp;)=delete</td></tr>
@@ -184,6 +165,58 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const noe
 virtual <a class="el" href="class_uuid_key.html">score::InterfaceKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_interface_list_base.html#a3451ef973452e213de841cc560271b6d">interfaceKey</a> () const noexcept=0</td></tr>
 <tr class="memdesc:a3451ef973452e213de841cc560271b6d inherit pub_methods_classscore_1_1_interface_list_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">A key that uniquely identifies this family of factories. <br /></td></tr>
 <tr class="separator:a3451ef973452e213de841cc560271b6d inherit pub_methods_classscore_1_1_interface_list_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classscore_1_1_indirect_container"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1_indirect_container')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1_indirect_container.html">score::IndirectContainer&lt; LocalTree::ProcessComponentFactory &gt;</a></td></tr>
+<tr class="memitem:afa18b68fe3d502baace2da8a592113b8 inherit pub_methods_classscore_1_1_indirect_container"><td class="memItemLeft" align="right" valign="top"><a id="afa18b68fe3d502baace2da8a592113b8"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () noexcept</td></tr>
+<tr class="separator:afa18b68fe3d502baace2da8a592113b8 inherit pub_methods_classscore_1_1_indirect_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a695425d92fd98a5298be14eafcd36ab6 inherit pub_methods_classscore_1_1_indirect_container"><td class="memItemLeft" align="right" valign="top"><a id="a695425d92fd98a5298be14eafcd36ab6"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () const noexcept</td></tr>
+<tr class="separator:a695425d92fd98a5298be14eafcd36ab6 inherit pub_methods_classscore_1_1_indirect_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fc5a6b20320d1e94484a27fd9a49934 inherit pub_methods_classscore_1_1_indirect_container"><td class="memItemLeft" align="right" valign="top"><a id="a0fc5a6b20320d1e94484a27fd9a49934"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () noexcept</td></tr>
+<tr class="separator:a0fc5a6b20320d1e94484a27fd9a49934 inherit pub_methods_classscore_1_1_indirect_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6da5228b8e1255a13a38f346c3d4536b inherit pub_methods_classscore_1_1_indirect_container"><td class="memItemLeft" align="right" valign="top"><a id="a6da5228b8e1255a13a38f346c3d4536b"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () const noexcept</td></tr>
+<tr class="separator:a6da5228b8e1255a13a38f346c3d4536b inherit pub_methods_classscore_1_1_indirect_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a095b09afbedd3f5623ab86e797f85e inherit pub_methods_classscore_1_1_indirect_container"><td class="memItemLeft" align="right" valign="top"><a id="a8a095b09afbedd3f5623ab86e797f85e"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>rbegin</b> () noexcept</td></tr>
+<tr class="separator:a8a095b09afbedd3f5623ab86e797f85e inherit pub_methods_classscore_1_1_indirect_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5468504c0fa749af122d2d532344b23a inherit pub_methods_classscore_1_1_indirect_container"><td class="memItemLeft" align="right" valign="top"><a id="a5468504c0fa749af122d2d532344b23a"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>rbegin</b> () const noexcept</td></tr>
+<tr class="separator:a5468504c0fa749af122d2d532344b23a inherit pub_methods_classscore_1_1_indirect_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab68319dc4ce8c2491e87abebd330516e inherit pub_methods_classscore_1_1_indirect_container"><td class="memItemLeft" align="right" valign="top"><a id="ab68319dc4ce8c2491e87abebd330516e"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>rend</b> () noexcept</td></tr>
+<tr class="separator:ab68319dc4ce8c2491e87abebd330516e inherit pub_methods_classscore_1_1_indirect_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b79ccfd873a25db507073ee4acff633 inherit pub_methods_classscore_1_1_indirect_container"><td class="memItemLeft" align="right" valign="top"><a id="a3b79ccfd873a25db507073ee4acff633"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>rend</b> () const noexcept</td></tr>
+<tr class="separator:a3b79ccfd873a25db507073ee4acff633 inherit pub_methods_classscore_1_1_indirect_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4ec268fd9f934d1e22289874f4e0ee0 inherit pub_methods_classscore_1_1_indirect_container"><td class="memItemLeft" align="right" valign="top"><a id="ad4ec268fd9f934d1e22289874f4e0ee0"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>cbegin</b> () const noexcept</td></tr>
+<tr class="separator:ad4ec268fd9f934d1e22289874f4e0ee0 inherit pub_methods_classscore_1_1_indirect_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c244606ac328be292c19c17dda66951 inherit pub_methods_classscore_1_1_indirect_container"><td class="memItemLeft" align="right" valign="top"><a id="a7c244606ac328be292c19c17dda66951"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>cend</b> () const noexcept</td></tr>
+<tr class="separator:a7c244606ac328be292c19c17dda66951 inherit pub_methods_classscore_1_1_indirect_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31128166194b6e9dd1f90b7e67d52dde inherit pub_methods_classscore_1_1_indirect_container"><td class="memItemLeft" align="right" valign="top"><a id="a31128166194b6e9dd1f90b7e67d52dde"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const noexcept</td></tr>
+<tr class="separator:a31128166194b6e9dd1f90b7e67d52dde inherit pub_methods_classscore_1_1_indirect_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ff45765450ce48a7af6ff81a0c576de inherit pub_methods_classscore_1_1_indirect_container"><td class="memItemLeft" align="right" valign="top"><a id="a3ff45765450ce48a7af6ff81a0c576de"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>empty</b> () const noexcept</td></tr>
+<tr class="separator:a3ff45765450ce48a7af6ff81a0c576de inherit pub_methods_classscore_1_1_indirect_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa064c6c8e1c953461695cf79149f20d6 inherit pub_methods_classscore_1_1_indirect_container"><td class="memItemLeft" align="right" valign="top"><a id="aa064c6c8e1c953461695cf79149f20d6"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>push_back</b> (<a class="el" href="class_local_tree_1_1_process_component_factory.html">LocalTree::ProcessComponentFactory</a> *ptr)</td></tr>
+<tr class="separator:aa064c6c8e1c953461695cf79149f20d6 inherit pub_methods_classscore_1_1_indirect_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0cebde1abc93300b735e3f213fe97a4 inherit pub_methods_classscore_1_1_indirect_container"><td class="memItemLeft" align="right" valign="top"><a id="ae0cebde1abc93300b735e3f213fe97a4"></a>
+auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>front</b> () const noexcept</td></tr>
+<tr class="separator:ae0cebde1abc93300b735e3f213fe97a4 inherit pub_methods_classscore_1_1_indirect_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2892fb24bfd7818a3de61b907028caed inherit pub_methods_classscore_1_1_indirect_container"><td class="memItemLeft" align="right" valign="top"><a id="a2892fb24bfd7818a3de61b907028caed"></a>
+auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>back</b> () const noexcept</td></tr>
+<tr class="separator:a2892fb24bfd7818a3de61b907028caed inherit pub_methods_classscore_1_1_indirect_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bcdb0b5fca037ea19ad8e1c55c21292 inherit pub_methods_classscore_1_1_indirect_container"><td class="memItemLeft" align="right" valign="top"><a id="a5bcdb0b5fca037ea19ad8e1c55c21292"></a>
+auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (int pos) noexcept</td></tr>
+<tr class="separator:a5bcdb0b5fca037ea19ad8e1c55c21292 inherit pub_methods_classscore_1_1_indirect_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60b5fd99482799364cbdafa0a3a13c48 inherit pub_methods_classscore_1_1_indirect_container"><td class="memItemLeft" align="right" valign="top"><a id="a60b5fd99482799364cbdafa0a3a13c48"></a>
+auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (int pos) const noexcept</td></tr>
+<tr class="separator:a60b5fd99482799364cbdafa0a3a13c48 inherit pub_methods_classscore_1_1_indirect_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classscore_1_1_interface_list"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classscore_1_1_interface_list')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classscore_1_1_interface_list.html">score::InterfaceList&lt; LocalTree::ProcessComponentFactory &gt;</a></td></tr>
 <tr class="memitem:a612876e7dc55db9b9b96a238bdbe5c14 inherit pub_static_methods_classscore_1_1_interface_list"><td class="memItemLeft" align="right" valign="top"><a id="a612876e7dc55db9b9b96a238bdbe5c14"></a>
 static const constexpr <a class="el" href="class_uuid_key.html">score::InterfaceKey</a>&#160;</td><td class="memItemRight" valign="bottom"><b>static_interfaceKey</b> () noexcept</td></tr>
@@ -200,9 +233,6 @@ static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>fact
 <tr class="memitem:ac9d160e3cb84203bd95821c387f74535 inherit pro_attribs_classscore_1_1_interface_list"><td class="memItemLeft" align="right" valign="top"><a id="ac9d160e3cb84203bd95821c387f74535"></a>
 ossia::fast_hash_map&lt; typename <a class="el" href="class_local_tree_1_1_process_component_factory.html">LocalTree::ProcessComponentFactory</a> ::ConcreteKey, std::unique_ptr&lt; <a class="el" href="class_local_tree_1_1_process_component_factory.html">LocalTree::ProcessComponentFactory</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>map</b></td></tr>
 <tr class="separator:ac9d160e3cb84203bd95821c387f74535 inherit pro_attribs_classscore_1_1_interface_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af781f00e3464cb0a61568100b7f4740d inherit pro_attribs_classscore_1_1_interface_list"><td class="memItemLeft" align="right" valign="top"><a id="af781f00e3464cb0a61568100b7f4740d"></a>
-std::vector&lt; <a class="el" href="class_local_tree_1_1_process_component_factory.html">LocalTree::ProcessComponentFactory</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>vec</b></td></tr>
-<tr class="separator:af781f00e3464cb0a61568100b7f4740d inherit pro_attribs_classscore_1_1_interface_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_local_tree_2_process_component_8hpp_source.html">LocalTree/ProcessComponent.hpp</a></li>

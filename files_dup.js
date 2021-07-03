@@ -772,6 +772,7 @@ var files_dup =
     [ "ObjectMenuActions.hpp", "_object_menu_actions_8hpp_source.html", null ],
     [ "ObjectPath.hpp", "_object_path_8hpp_source.html", null ],
     [ "ObjectRemover.hpp", "_object_remover_8hpp_source.html", null ],
+    [ "OfflineAction.hpp", "_offline_action_8hpp_source.html", null ],
     [ "OngoingCommandDispatcher.hpp", "_ongoing_command_dispatcher_8hpp_source.html", null ],
     [ "OngoingState.hpp", "_ongoing_state_8hpp_source.html", null ],
     [ "OpaqueString.hpp", "_opaque_string_8hpp_source.html", null ],
