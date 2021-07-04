@@ -1,5 +1,8 @@
 var NAVTREEINDEX51 =
 {
+"struct_execution_1_1_setup_context.html":[12,0,9,42],
+"struct_execution_1_1_setup_context.html#a038bfa6e4a053e5f394a3dac5ade2ab9":[12,0,9,42,25],
+"struct_execution_1_1_setup_context.html#a050e9fa942a3472949b1820f8e4ce199":[12,0,9,42,16],
 "struct_execution_1_1_setup_context.html#a0659f8868cb350d1905029e570690430":[12,0,9,42,9],
 "struct_execution_1_1_setup_context.html#a06daa8ff8cff9a3e9310de8cf82b5018":[12,0,9,42,30],
 "struct_execution_1_1_setup_context.html#a0e5d2bb1fa0f3911b7d862b3b199cc36":[12,0,9,42,6],
@@ -246,8 +249,5 @@ var NAVTREEINDEX51 =
 "struct_gfx_1_1kinect2__camera.html#a663d707b327969748867481c3b64db32":[12,0,15,29,5],
 "struct_gfx_1_1kinect2__camera.html#a8a1d45323607e371d11d56fabec2281f":[12,0,15,29,7],
 "struct_gfx_1_1kinect2__camera.html#a8d23395af4ef0d7a54eecd9062e65b03":[12,0,15,29,0],
-"struct_gfx_1_1kinect2__camera.html#ad4b543f2ccdef64bea86d62dfb43f951":[12,0,15,29,3],
-"struct_gfx_1_1kinect2__settings.html":[12,0,15,35],
-"struct_gfx_1_1kinect2__settings.html#a597c9700c432543513c48ad2502ec922":[12,0,15,35,1],
-"struct_gfx_1_1kinect2__settings.html#a65dba340152ec9f643b7bf7fbd3c27dc":[12,0,15,35,3]
+"struct_gfx_1_1kinect2__camera.html#ad4b543f2ccdef64bea86d62dfb43f951":[12,0,15,29,3]
 };

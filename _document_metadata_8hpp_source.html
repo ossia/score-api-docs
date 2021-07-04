@@ -106,61 +106,68 @@ $(document).ready(function(){initNavTree('_document_metadata_8hpp_source.html','
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;score_lib_base_export.h&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;verdigris&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore.html">score</a></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structscore_1_1_document_metadata.html">   14</a></span>&#160;<span class="keyword">struct </span>SCORE_LIB_BASE_EXPORT <a class="code" href="structscore_1_1_document_metadata.html">DocumentMetadata</a> : <span class="keyword">public</span> QObject</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  W_OBJECT(<a class="code" href="structscore_1_1_document_metadata.html">DocumentMetadata</a>)</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  QString m_fileName{QObject::tr(<span class="stringliteral">&quot;Untitled&quot;</span>)};</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  QString m_author;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  QDateTime m_creation;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  QDateTime m_lastEdition;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">using</span> QObject::QObject;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="structscore_1_1_document_metadata.html">DocumentMetadata</a>(QString file);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  QString fileName() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  QString author() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  QDateTime creation() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  QDateTime lastEdition() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> setFileName(QString fileName);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> setAuthor(QString author);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">void</span> setCreation(QDateTime creation);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">void</span> setLastEdition(QDateTime lastEdition);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">void</span> fileNameChanged(QString fileName)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      E_SIGNAL(SCORE_LIB_BASE_EXPORT, fileNameChanged, fileName)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">void</span> authorChanged(QString author)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      E_SIGNAL(SCORE_LIB_BASE_EXPORT, authorChanged, author)</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span> creationChanged(QDateTime creation)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      E_SIGNAL(SCORE_LIB_BASE_EXPORT, creationChanged, creation)</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> lastEditionChanged(QDateTime lastEdition)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      E_SIGNAL(SCORE_LIB_BASE_EXPORT, lastEditionChanged, lastEdition)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  W_PROPERTY(</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      QString,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      fileName READ fileName WRITE setFileName NOTIFY fileNameChanged,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      W_Final)</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  W_PROPERTY(</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      QString,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      author READ author WRITE setAuthor NOTIFY authorChanged,</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      W_Final)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  W_PROPERTY(</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      QDateTime,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      creation READ creation WRITE setCreation NOTIFY creationChanged,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      W_Final)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  W_PROPERTY(</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      QDateTime,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      lastEdition READ lastEdition WRITE setLastEdition NOTIFY</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;          lastEditionChanged,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      W_Final)</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span>QDir;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore.html">score</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structscore_1_1_document_metadata.html">   15</a></span>&#160;<span class="keyword">struct </span>SCORE_LIB_BASE_EXPORT <a class="code" href="structscore_1_1_document_metadata.html">DocumentMetadata</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  W_OBJECT(<a class="code" href="structscore_1_1_document_metadata.html">DocumentMetadata</a>)</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  QString m_fileName{QObject::tr(<span class="stringliteral">&quot;Untitled&quot;</span>)};</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  QString m_author;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  QDateTime m_creation;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  QDateTime m_lastEdition;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">using</span> QObject::QObject;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="structscore_1_1_document_metadata.html">DocumentMetadata</a>(QString file) noexcept;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  QString fileName() <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  QString author() <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  QDateTime creation() <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  QDateTime lastEdition() <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  QString projectFolder() <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">void</span> setFileName(QString fileName);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> setAuthor(QString author);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">void</span> setCreation(QDateTime creation);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">void</span> setLastEdition(QDateTime lastEdition);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">void</span> fileNameChanged(QString fileName)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      E_SIGNAL(SCORE_LIB_BASE_EXPORT, fileNameChanged, fileName)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">void</span> authorChanged(QString author)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      E_SIGNAL(SCORE_LIB_BASE_EXPORT, authorChanged, author)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">void</span> creationChanged(QDateTime creation)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      E_SIGNAL(SCORE_LIB_BASE_EXPORT, creationChanged, creation)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> lastEditionChanged(QDateTime lastEdition)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      E_SIGNAL(SCORE_LIB_BASE_EXPORT, lastEditionChanged, lastEdition)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  W_PROPERTY(</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      QString,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      fileName READ fileName WRITE setFileName NOTIFY fileNameChanged,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      W_Final)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  W_PROPERTY(</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      QString,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      author READ author WRITE setAuthor NOTIFY authorChanged,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      W_Final)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  W_PROPERTY(</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      QDateTime,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      creation READ creation WRITE setCreation NOTIFY creationChanged,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      W_Final)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  W_PROPERTY(</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      QDateTime,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      lastEdition READ lastEdition WRITE setLastEdition NOTIFY</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;          lastEditionChanged,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      W_Final)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;SCORE_LIB_BASE_EXPORT</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;QString <a class="code" href="namespacescore.html#a32796149f51ff5e6483f20895442a6b3">newProcessedFilePath</a>(<span class="keyword">const</span> QString&amp; sourceFile, <span class="keyword">const</span> QDir&amp; destination);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:77</div></div>
-<div class="ttc" id="astructscore_1_1_document_metadata_html"><div class="ttname"><a href="structscore_1_1_document_metadata.html">score::DocumentMetadata</a></div><div class="ttdoc">Document-wide metadata.</div><div class="ttdef"><b>Definition:</b> DocumentMetadata.hpp:14</div></div>
+<div class="ttc" id="astructscore_1_1_document_metadata_html"><div class="ttname"><a href="structscore_1_1_document_metadata.html">score::DocumentMetadata</a></div><div class="ttdoc">Document-wide metadata.</div><div class="ttdef"><b>Definition:</b> DocumentMetadata.hpp:15</div></div>
+<div class="ttc" id="anamespacescore_html_a32796149f51ff5e6483f20895442a6b3"><div class="ttname"><a href="namespacescore.html#a32796149f51ff5e6483f20895442a6b3">score::newProcessedFilePath</a></div><div class="ttdeci">QString newProcessedFilePath(const QString &amp;sourceFile, const QDir &amp;destination)</div><div class="ttdoc">Obtains a new file name in the project folder to save a processed file.</div><div class="ttdef"><b>Definition:</b> DocumentMetadata.cpp:88</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

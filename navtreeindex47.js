@@ -1,5 +1,8 @@
 var NAVTREEINDEX47 =
 {
+"classvst_1_1_remove_control.html#ac7c08f632e21d98847b22ecbd7077bcc":[12,0,53,13,4],
+"classvst_1_1_remove_control.html#af1cf9dc377357e50b646cdd81de5681c":[12,0,53,13,3],
+"classvst_1_1_remove_control.html#af3931d58aa59990c75c43bb208ac5e38":[12,0,53,13,0],
 "classvst_1_1_set_control.html":[12,0,53,14],
 "classvst_1_1_set_control.html#a6e1ecd766fe20bf4b395a8d95c2b07e9":[12,0,53,14,3],
 "classvst_1_1_set_control.html#a70ad539fd5d521b36b33c220bd0a43d1":[12,0,53,14,4],
@@ -109,8 +112,8 @@ var NAVTREEINDEX47 =
 "lv2__atom__helpers_8hpp_source.html":[13,0,613],
 "models_8hpp_source.html":[13,0,725],
 "mvp_8hpp_source.html":[13,0,749],
-"namespace_automation.html":[11,0,0],
 "namespace_automation.html":[12,0,1],
+"namespace_automation.html":[11,0,0],
 "namespace_curve.html":[12,0,5],
 "namespace_curve.html":[11,0,1],
 "namespace_device.html":[12,0,7],
@@ -122,8 +125,8 @@ var NAVTREEINDEX47 =
 "namespace_execution.html":[11,0,4],
 "namespace_gfx.html":[12,0,15],
 "namespace_gfx.html":[11,0,5],
-"namespace_inspector.html":[12,0,17],
 "namespace_inspector.html":[11,0,6],
+"namespace_inspector.html":[12,0,17],
 "namespace_local_tree.html":[11,0,7],
 "namespace_local_tree.html":[12,0,24],
 "namespace_plugin_loader.html":[11,0,8],
@@ -131,8 +134,8 @@ var NAVTREEINDEX47 =
 "namespace_process.html":[11,0,9],
 "namespace_scenario.html":[11,0,10],
 "namespace_scenario.html":[12,0,43],
-"namespace_state.html":[12,0,48],
 "namespace_state.html":[11,0,12],
+"namespace_state.html":[12,0,48],
 "namespacemembers.html":[11,1,0],
 "namespacemembers_enum.html":[11,1,3],
 "namespacemembers_eval.html":[11,1,4],
@@ -246,8 +249,5 @@ var NAVTREEINDEX47 =
 "score-plugin-lv2_2_l_v2_2_application_plugin_8hpp_source.html":[13,0,52],
 "score-plugin-lv2_2_l_v2_2_effect_model_8hpp_source.html":[13,0,343],
 "score-plugin-lv2_2_l_v2_2_library_8hpp_source.html":[13,0,585],
-"score-plugin-lv2_2_l_v2_2_node_8hpp_source.html":[13,0,753],
-"score-plugin-mapping_2_mapping_2_local_tree_8hpp_source.html":[13,0,609],
-"score-plugin-media_2_media_2_effect_2_settings_2_factory_8hpp_source.html":[13,0,412],
-"score-plugin-media_2_media_2_effect_2_settings_2_model_8hpp_source.html":[13,0,714]
+"score-plugin-lv2_2_l_v2_2_node_8hpp_source.html":[13,0,753]
 };

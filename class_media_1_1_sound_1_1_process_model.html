@@ -128,12 +128,10 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>prettyName</b> () 
 template&lt;typename Impl &gt; </td></tr>
 <tr class="memitem:aaeb5c451033ad56d3e68b59c18a7843d"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ProcessModel</b> (Impl &amp;vis, QObject *parent)</td></tr>
 <tr class="separator:aaeb5c451033ad56d3e68b59c18a7843d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cb6f5d590f82113519edabee77a5621"><td class="memItemLeft" align="right" valign="top"><a id="a0cb6f5d590f82113519edabee77a5621"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setFile</b> (const QString &amp;file)</td></tr>
+<tr class="memitem:a0cb6f5d590f82113519edabee77a5621"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_1_1_sound_1_1_process_model.html#a0cb6f5d590f82113519edabee77a5621">setFile</a> (const QString &amp;file)</td></tr>
 <tr class="separator:a0cb6f5d590f82113519edabee77a5621"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3fda1e2ac556ce4302397f262f41f62"><td class="memItemLeft" align="right" valign="top"><a id="ac3fda1e2ac556ce4302397f262f41f62"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setFile</b> (const <a class="el" href="struct_media_1_1_audio_file.html">AudioFile</a> &amp;file)</td></tr>
-<tr class="separator:ac3fda1e2ac556ce4302397f262f41f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4690c24c017f76612d65d74d7deef378"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_1_1_sound_1_1_process_model.html#a4690c24c017f76612d65d74d7deef378">setFileForced</a> (const QString &amp;file)</td></tr>
+<tr class="separator:a4690c24c017f76612d65d74d7deef378"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e3243f6bfa4f5d93e8c58ad3bae0028"><td class="memItemLeft" align="right" valign="top"><a id="a1e3243f6bfa4f5d93e8c58ad3bae0028"></a>
 std::shared_ptr&lt; <a class="el" href="struct_media_1_1_audio_file.html">AudioFile</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>file</b> ()</td></tr>
 <tr class="separator:a1e3243f6bfa4f5d93e8c58ad3bae0028"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -488,6 +486,48 @@ Process::Inlets&#160;</td><td class="memItemRight" valign="bottom"><b>m_inlets</
 Process::Outlets&#160;</td><td class="memItemRight" valign="bottom"><b>m_outlets</b></td></tr>
 <tr class="separator:a492e4ff09bb020871101ea4fbedb1f80 inherit pro_attribs_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0cb6f5d590f82113519edabee77a5621"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cb6f5d590f82113519edabee77a5621">&#9670;&nbsp;</a></span>setFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Media::Sound::ProcessModel::setFile </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Will load a new audio file, load its tempo, etc </p>
+
+</div>
+</div>
+<a id="a4690c24c017f76612d65d74d7deef378"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4690c24c017f76612d65d74d7deef378">&#9670;&nbsp;</a></span>setFileForced()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Media::Sound::ProcessModel::setFileForced </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Forces the reloading of only the audio data in a new file.</p><ul>
+<li>Will not reload metadata such as tempo, etc.</li>
+<li>Will still reload the file even if it's the same file name. </li>
+</ul>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_sound_model_8hpp_source.html">SoundModel.hpp</a></li>
 <li>SoundModel.cpp</li>

@@ -415,6 +415,7 @@ var annotated_dup =
       [ "ChangeAudioFile", "class_media_1_1_change_audio_file.html", "class_media_1_1_change_audio_file" ],
       [ "ChangeSteps", "class_media_1_1_change_steps.html", "class_media_1_1_change_steps" ],
       [ "FrameComputer", "struct_media_1_1_frame_computer.html", "struct_media_1_1_frame_computer" ],
+      [ "LoadProcessedAudioFile", "class_media_1_1_load_processed_audio_file.html", "class_media_1_1_load_processed_audio_file" ],
       [ "RMSData", "struct_media_1_1_r_m_s_data.html", "struct_media_1_1_r_m_s_data" ],
       [ "SetMax", "class_media_1_1_set_max.html", "class_media_1_1_set_max" ],
       [ "SetMergeInCount", "class_media_1_1_set_merge_in_count.html", null ],

@@ -17,6 +17,7 @@ var struct_media_1_1_audio_file =
     [ "decodedSamples", "struct_media_1_1_audio_file.html#a4bb76c5fd3122f8de07d16d0040585d5", null ],
     [ "empty", "struct_media_1_1_audio_file.html#a4ee4e1ac653d90ad68c4e01f2f8c573a", null ],
     [ "fileName", "struct_media_1_1_audio_file.html#a1f58220dac64de80772f2ae3c1721748", null ],
+    [ "getAudioArray", "struct_media_1_1_audio_file.html#a38c1c58d26bcc7b997fb3993394b0a49", null ],
     [ "handle", "struct_media_1_1_audio_file.html#aacc732ca61c3fab580478bda39d0a028", null ],
     [ "load", "struct_media_1_1_audio_file.html#a3d9e0078d6f7125c989f64b783762494", null ],
     [ "load", "struct_media_1_1_audio_file.html#a92072c41c3f9d00edaa4d4d9902083aa", null ],

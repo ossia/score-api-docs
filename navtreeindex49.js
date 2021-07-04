@@ -1,5 +1,8 @@
 var NAVTREEINDEX49 =
 {
+"struct_control_1_1_float_control.html#acb1d2568dca9cd67c02314652f5aa8f5":[12,0,3,13,3],
+"struct_control_1_1_float_control.html#ad96cc3544776b536fdc8e78946acac28":[12,0,3,13,0],
+"struct_control_1_1_float_control.html#aeb903b22cb9cb25c637b6c97eaf2cae3":[12,0,3,13,1],
 "struct_control_1_1_float_control.html#aef64fc4efa7d68b2aa9d6202e595d634":[12,0,3,13,2],
 "struct_control_1_1_float_display.html":[12,0,3,14],
 "struct_control_1_1_float_display.html#a0336d6ea1f78dd78a05d297f75988ac3":[12,0,3,14,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX49 =
 "struct_dataflow_1_1_audio_inlet_factory.html#ac566daf2f7c87fce7d2a657233dbc92d":[12,0,6,2,2],
 "struct_dataflow_1_1_audio_outlet_factory.html":[12,0,6,3],
 "struct_dataflow_1_1_audio_outlet_factory.html#a3feabdd35e60703bf3f81a4993c5fdad":[12,0,6,3,2],
-"struct_dataflow_1_1_audio_outlet_factory.html#aae2e0d707d635ad26e99e94233a1beec":[12,0,6,3,0],
-"struct_dataflow_1_1_audio_outlet_factory.html#aaf2f51f518db9e39bb4d2cb1eb251cd1":[12,0,6,3,3],
-"struct_dataflow_1_1_audio_outlet_factory.html#ac41ff6919e1f60a32c043bc9a7ff9228":[12,0,6,3,1],
-"struct_dataflow_1_1_audio_outlet_factory.html#afb35a22eb5a4114d71e2eafff972375e":[12,0,6,3,4]
+"struct_dataflow_1_1_audio_outlet_factory.html#aae2e0d707d635ad26e99e94233a1beec":[12,0,6,3,0]
 };

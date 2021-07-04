@@ -881,6 +881,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setQApplicationMetada
 template&lt;typename RedoFun &gt; </td></tr>
 <tr class="memitem:afd2ab52263ded5efdf91da445639eec3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>loadCommandStack</b> (const <a class="el" href="classscore_1_1_application_components.html">score::ApplicationComponents</a> &amp;components, <a class="el" href="class_data_stream_writer.html">DataStreamWriter</a> &amp;writer, <a class="el" href="classscore_1_1_command_stack.html">score::CommandStack</a> &amp;stack, RedoFun redo_fun)</td></tr>
 <tr class="separator:afd2ab52263ded5efdf91da445639eec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32796149f51ff5e6483f20895442a6b3"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#a32796149f51ff5e6483f20895442a6b3">newProcessedFilePath</a> (const QString &amp;sourceFile, const QDir &amp;destination)</td></tr>
+<tr class="memdesc:a32796149f51ff5e6483f20895442a6b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains a new file name in the project folder to save a processed file.  <a href="namespacescore.html#a32796149f51ff5e6483f20895442a6b3">More...</a><br /></td></tr>
+<tr class="separator:a32796149f51ff5e6483f20895442a6b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a107d8f59cbc69eba3517c97f824ad87f"><td class="memItemLeft" align="right" valign="top"><a id="a107d8f59cbc69eba3517c97f824ad87f"></a>
 <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="classscore_1_1_document_model.html">score::DocumentModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getStrongId</b> (const std::vector&lt; <a class="el" href="classscore_1_1_document.html">score::Document</a> * &gt; &amp;v)</td></tr>
 <tr class="separator:a107d8f59cbc69eba3517c97f824ad87f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1202,6 +1205,38 @@ template&lt;typename Type , typename Object &gt; </div>
   </dd>
 </dl>
 <p>This will create the relevant serialization datatype for Type. For instance, a QByteArray if it is <a class="el" href="class_data_stream.html">DataStream</a> and a QJSonObject if it is <a class="el" href="class_j_s_o_n_object.html">JSONObject</a> </p>
+
+</div>
+</div>
+<a id="a32796149f51ff5e6483f20895442a6b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32796149f51ff5e6483f20895442a6b3">&#9670;&nbsp;</a></span>newProcessedFilePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString score::newProcessedFilePath </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>sourceFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDir &amp;&#160;</td>
+          <td class="paramname"><em>destination</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtains a new file name in the project folder to save a processed file. </p>
+<p>e.g. if the source file is /tmp/foo.wav, the output may be</p>
+<p>/home/myself/Documents/My score project/Processed/foo-0003.wav </p>
 
 </div>
 </div>

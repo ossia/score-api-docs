@@ -1,5 +1,8 @@
 var NAVTREEINDEX45 =
 {
+"classscore_1_1gfx_1_1_generic_node_renderer.html#a6fb6b8b534b838fcdb31ff7c64ead3f1":[12,0,44,2,7,0],
+"classscore_1_1gfx_1_1_generic_node_renderer.html#a77edf52bf035f0db94550d50d012bcd6":[12,0,44,2,7,9],
+"classscore_1_1gfx_1_1_generic_node_renderer.html#a8ec58cd930f710f0b66ee0207a53e035":[12,0,44,2,7,18],
 "classscore_1_1gfx_1_1_generic_node_renderer.html#aa9ff92416d7d087cad439b8021edd330":[12,0,44,2,7,16],
 "classscore_1_1gfx_1_1_generic_node_renderer.html#ab58c9814b6de55b6ab24d3afaceca53e":[12,0,44,2,7,20],
 "classscore_1_1gfx_1_1_generic_node_renderer.html#ad3f3bcf2cf1dcedc4ab5d92e35a25696":[12,0,44,2,7,17],
@@ -246,8 +249,5 @@ var NAVTREEINDEX45 =
 "classscore__plugin__vst.html#ad4b80b5e70c2901627f844f79ed7de7c":[12,0,352,1],
 "classscore__plugin__vst.html#ad6d26ec932487ef2e53c50d84ba90ede":[12,0,352,5],
 "classscore__plugin__vst.html#ad7eb2a0c9256bd80a2e2382f62767242":[12,0,352,3],
-"classscore__plugin__vst.html#af84d5b43b25294ac6418d92e4055b570":[12,0,352,4],
-"classscore__plugin__vst3.html":[12,0,353],
-"classscore__plugin__vst3.html#ab7d02ecf16c5f63f9dd7aa378c36580e":[12,0,353,0],
-"classscore__plugin__vst3.html#ac75e97cf5d258d9274a5e669769c912a":[12,0,353,1]
+"classscore__plugin__vst.html#af84d5b43b25294ac6418d92e4055b570":[12,0,352,4]
 };
