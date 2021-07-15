@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"class_recording_1_1_automation_recorder.html#abaf11ef227fc53b3f9be0d75bbdd520f":[12,0,39,1,6],
 "class_recording_1_1_message_recorder.html":[12,0,39,4],
 "class_recording_1_1_message_recorder.html#a4831d9ff3b9360814df2b61273574e71":[12,0,39,4,0],
 "class_recording_1_1_message_recorder.html#a60366f0278eb89895eab0f25ceb00500":[12,0,39,4,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "class_scenario_1_1_command_1_1_add_state_process_to_state.html#a20dc6b1d7f72646b405ac4fe9c38df7f":[12,0,43,0,10,1],
 "class_scenario_1_1_command_1_1_add_state_process_to_state.html#a96a7556eaa87d04af222437bd4ee7123":[12,0,43,0,10,0],
 "class_scenario_1_1_command_1_1_add_state_with_data.html":[12,0,43,0,11],
-"class_scenario_1_1_command_1_1_add_trigger.html":[12,0,43,0,12],
-"class_scenario_1_1_command_1_1_add_trigger.html#a291d45d1cb63efed306fdf6b9abe01f6":[12,0,43,0,12,7]
+"class_scenario_1_1_command_1_1_add_trigger.html":[12,0,43,0,12]
 };

@@ -114,18 +114,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a18d67b2316887b2dbf6c0559e00c5aed"><td class="memItemLeft" align="right" valign="top"><a id="a18d67b2316887b2dbf6c0559e00c5aed"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>UiWrapper</b> (const <a class="el" href="class_pd_1_1_process_model.html">ProcessModel</a> &amp;proc, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, QWidget *parent)</td></tr>
 <tr class="separator:a18d67b2316887b2dbf6c0559e00c5aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd47524dac195928f96c366bfc2a176c"><td class="memItemLeft" align="right" valign="top"><a id="afd47524dac195928f96c366bfc2a176c"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>locatePdResourceFolder</b> () noexcept</td></tr>
+<tr class="separator:afd47524dac195928f96c366bfc2a176c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f26ec5a0b5beeea0d09a70457b3c830"><td class="memItemLeft" align="right" valign="top"><a id="a0f26ec5a0b5beeea0d09a70457b3c830"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>closeEvent</b> (QCloseEvent *event) override</td></tr>
 <tr class="separator:a0f26ec5a0b5beeea0d09a70457b3c830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5401d741acf803b32d0938e0e6e55d4e"><td class="memItemLeft" align="right" valign="top"><a id="a5401d741acf803b32d0938e0e6e55d4e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>timerEvent</b> (QTimerEvent *event) override</td></tr>
+<tr class="separator:a5401d741acf803b32d0938e0e6e55d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a04960f341c495953271a66a92d622c59"><td class="memItemLeft" align="right" valign="top"><a id="a04960f341c495953271a66a92d622c59"></a>
+std::shared_ptr&lt; <a class="el" href="struct_pd_1_1_instance.html">Pd::Instance</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_instance</b></td></tr>
+<tr class="separator:a04960f341c495953271a66a92d622c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b95a755b67b941a2e23115e40eb68b7"><td class="memItemLeft" align="right" valign="top"><a id="a3b95a755b67b941a2e23115e40eb68b7"></a>
 QPointer&lt; const <a class="el" href="class_pd_1_1_process_model.html">ProcessModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_model</b></td></tr>
 <tr class="separator:a3b95a755b67b941a2e23115e40eb68b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add832e44eed84451a3eda384cbf39901"><td class="memItemLeft" align="right" valign="top"><a id="add832e44eed84451a3eda384cbf39901"></a>
-QProcess&#160;</td><td class="memItemRight" valign="bottom"><b>m_process</b></td></tr>
-<tr class="separator:add832e44eed84451a3eda384cbf39901"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_pd_layer_8hpp_source.html">PdLayer.hpp</a></li>

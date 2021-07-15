@@ -111,9 +111,9 @@ Inheritance diagram for Pd::PdGraphNode:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afdb826629973487fad318c422d8789f9"><td class="memItemLeft" align="right" valign="top"><a id="afdb826629973487fad318c422d8789f9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PdGraphNode</b> (ossia::string_view folder, ossia::string_view file, const <a class="el" href="struct_execution_1_1_context.html">Execution::Context</a> &amp;ctx, std::size_t audio_inputs, std::size_t audio_outputs, Process::Inlets inmess, Process::Outlets outmess, const <a class="el" href="struct_pd_1_1_patch_spec.html">Pd::PatchSpec</a> &amp;spec, bool midi_in=true, bool midi_out=true)</td></tr>
-<tr class="separator:afdb826629973487fad318c422d8789f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f400dd1047b0611c46d5e3102949c96"><td class="memItemLeft" align="right" valign="top"><a id="a2f400dd1047b0611c46d5e3102949c96"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PdGraphNode</b> (std::shared_ptr&lt; <a class="el" href="struct_pd_1_1_instance.html">Instance</a> &gt; instance, ossia::string_view folder, ossia::string_view file, const <a class="el" href="struct_execution_1_1_context.html">Execution::Context</a> &amp;ctx, std::size_t audio_inputs, std::size_t audio_outputs, Process::Inlets inmess, Process::Outlets outmess, const <a class="el" href="struct_pd_1_1_patch_spec.html">Pd::PatchSpec</a> &amp;spec, bool midi_in=true, bool midi_out=true)</td></tr>
+<tr class="separator:a2f400dd1047b0611c46d5e3102949c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b4c5094da69877224681b3ea1951286"><td class="memItemLeft" align="right" valign="top"><a id="a7b4c5094da69877224681b3ea1951286"></a>
 ossia::outlet *&#160;</td><td class="memItemRight" valign="bottom"><b>get_outlet</b> (const char *str) const</td></tr>
 <tr class="separator:a7b4c5094da69877224681b3ea1951286"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,12 +135,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>add_dzero</b> (std::s
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:af755a80835ef2b1b1c53f301eb802ad8"><td class="memItemLeft" align="right" valign="top"><a id="af755a80835ef2b1b1c53f301eb802ad8"></a>
-_pdinstance *&#160;</td><td class="memItemRight" valign="bottom"><b>m_instance</b> {}</td></tr>
-<tr class="separator:af755a80835ef2b1b1c53f301eb802ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4279a84d4a2ef005f4b9c476422319f5"><td class="memItemLeft" align="right" valign="top"><a id="a4279a84d4a2ef005f4b9c476422319f5"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_dollarzero</b> = 0</td></tr>
-<tr class="separator:a4279a84d4a2ef005f4b9c476422319f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceef91929f0d502eb2e87c637c2058b9"><td class="memItemLeft" align="right" valign="top"><a id="aceef91929f0d502eb2e87c637c2058b9"></a>
+std::shared_ptr&lt; <a class="el" href="struct_pd_1_1_instance.html">Instance</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_instance</b></td></tr>
+<tr class="separator:aceef91929f0d502eb2e87c637c2058b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a301b4168f9a52408d3163c51368ed2f8"><td class="memItemLeft" align="right" valign="top"><a id="a301b4168f9a52408d3163c51368ed2f8"></a>
 std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_audioIns</b> {}</td></tr>
 <tr class="separator:a301b4168f9a52408d3163c51368ed2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -1,5 +1,6 @@
 var struct_pd_1_1_patch_spec_1_1_control =
 [
+    [ "deduced_type", "struct_pd_1_1_patch_spec_1_1_control.html#a6c1e82b232ae4f0c9203d34886c63b61", null ],
     [ "defaultv", "struct_pd_1_1_patch_spec_1_1_control.html#a9e0f3f2534f25e399ec03e96dc82e9e0", null ],
     [ "domain", "struct_pd_1_1_patch_spec_1_1_control.html#a8ba919870d7a05ee198df3c1019e5375", null ],
     [ "name", "struct_pd_1_1_patch_spec_1_1_control.html#a9682b5b8de7f9e1ba8b45e955a202c38", null ],

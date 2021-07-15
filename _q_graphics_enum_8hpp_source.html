@@ -136,34 +136,37 @@ $(document).ready(function(){initNavTree('_q_graphics_enum_8hpp_source.html','')
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    array.reserve(N);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> str : arr)</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      array.push_back(str);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="classscore_1_1_q_graphics_enum.html">QGraphicsEnum</a>(std::vector&lt;QString&gt; arr, QGraphicsItem* parent)</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      : <a class="code" href="classscore_1_1_q_graphics_enum.html">QGraphicsEnum</a>{parent}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    array = std::move(arr);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="classscore_1_1_q_graphics_enum.html">QGraphicsEnum</a>(QGraphicsItem* parent);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">void</span> setRect(<span class="keyword">const</span> QRectF&amp; r);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> setValue(<span class="keywordtype">int</span> v);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">int</span> value() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  QRectF boundingRect() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> currentIndexChanged(<span class="keywordtype">int</span> arg_1)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      E_SIGNAL(SCORE_LIB_BASE_EXPORT, currentIndexChanged, arg_1)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">void</span> mousePressEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">void</span> mouseMoveEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> mouseReleaseEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">void</span> paint(</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      QPainter* painter,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keyword">const</span> QStyleOptionGraphicsItem* option,</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      QWidget* widget) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    updateRect();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="classscore_1_1_q_graphics_enum.html">QGraphicsEnum</a>(std::vector&lt;QString&gt; arr, QGraphicsItem* parent)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      : <a class="code" href="classscore_1_1_q_graphics_enum.html">QGraphicsEnum</a>{parent}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    array = std::move(arr);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    updateRect();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="classscore_1_1_q_graphics_enum.html">QGraphicsEnum</a>(QGraphicsItem* parent);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> updateRect();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> setRect(<span class="keyword">const</span> QRectF&amp; r);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> setValue(<span class="keywordtype">int</span> v);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">int</span> value() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  QRectF boundingRect() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> currentIndexChanged(<span class="keywordtype">int</span> arg_1)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      E_SIGNAL(SCORE_LIB_BASE_EXPORT, currentIndexChanged, arg_1)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> mousePressEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">void</span> mouseMoveEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> mouseReleaseEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> paint(</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      QPainter* painter,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keyword">const</span> QStyleOptionGraphicsItem* option,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      QWidget* widget) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassscore_1_1_q_graphics_enum_html"><div class="ttname"><a href="classscore_1_1_q_graphics_enum.html">score::QGraphicsEnum</a></div><div class="ttdef"><b>Definition:</b> QGraphicsEnum.hpp:14</div></div>

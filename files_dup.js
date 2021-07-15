@@ -810,6 +810,7 @@ var files_dup =
     [ "PdExecutor.hpp", "_pd_executor_8hpp_source.html", null ],
     [ "PdFactory.hpp", "_pd_factory_8hpp_source.html", null ],
     [ "PdInspectorWidget.hpp", "_pd_inspector_widget_8hpp_source.html", null ],
+    [ "PdInstance.hpp", "_pd_instance_8hpp_source.html", null ],
     [ "PdLayer.hpp", "_pd_layer_8hpp_source.html", null ],
     [ "PdLibrary.hpp", "_pd_library_8hpp_source.html", null ],
     [ "PdMetadata.hpp", "_pd_metadata_8hpp_source.html", null ],

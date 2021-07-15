@@ -591,6 +591,7 @@ var annotated_dup =
       [ "DropHandler", "class_pd_1_1_drop_handler.html", null ],
       [ "EditPdPath", "class_pd_1_1_edit_pd_path.html", null ],
       [ "InspectorFactory", "class_pd_1_1_inspector_factory.html", null ],
+      [ "Instance", "struct_pd_1_1_instance.html", "struct_pd_1_1_instance" ],
       [ "libpd_list_wrapper", "struct_pd_1_1libpd__list__wrapper.html", "struct_pd_1_1libpd__list__wrapper" ],
       [ "LibraryHandler", "class_pd_1_1_library_handler.html", null ],
       [ "ossia_to_pd_value", "struct_pd_1_1ossia__to__pd__value.html", "struct_pd_1_1ossia__to__pd__value" ],

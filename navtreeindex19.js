@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"class_mapping_1_1_inspector_widget.html#ae46e40e0b81deac4ae73f9d253adda3e":[12,0,26,4,0],
 "class_mapping_1_1_layer_presenter.html":[12,0,26,5],
 "class_mapping_1_1_layer_presenter.html#a85e38fbe1f7f30caadd44453087ca03a":[12,0,26,5,1],
 "class_mapping_1_1_layer_presenter.html#aceb2b928a2fd455efc161d48a4319772":[12,0,26,5,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "class_metronome_1_1_process_model.html#a991f043a593dad0ac33c6385e7715010":[12,0,28,7,14],
 "class_metronome_1_1_process_model.html#aa820c8ea0cc98321254ea3ee94f724d5":[12,0,28,7,1],
 "class_metronome_1_1_process_model.html#ac2c97b07426f4c72a18a4225d9d16044":[12,0,28,7,0],
-"class_metronome_1_1_process_model.html#ac7fe80171be6e87b612a006e180e1b18":[12,0,28,7,9],
-"class_metronome_1_1_process_model.html#acb96daf1117dad561c90971378f0b05c":[12,0,28,7,5]
+"class_metronome_1_1_process_model.html#ac7fe80171be6e87b612a006e180e1b18":[12,0,28,7,9]
 };

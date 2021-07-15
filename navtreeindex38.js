@@ -1,5 +1,6 @@
 var NAVTREEINDEX38 =
 {
+"class_tree_node.html#a6d9c34929de6f4fe2a77d384be30306b":[12,0,382,6],
 "class_tree_node.html#a74532295ba2452c8efecbf0e92b8109d":[12,0,382,10],
 "class_tree_node.html#a76dcb962e4543c6b5e342fcc28881cd3":[12,0,382,25],
 "class_tree_node.html#a7ca4cabeedf0aa2368fa721cf7a01fb3":[12,0,382,23],
@@ -248,6 +249,5 @@ var NAVTREEINDEX38 =
 "class_widget_wrapper.html#a98058825d2feea81bc17875c4b5ddf33":[12,0,512,0],
 "class_widget_wrapper.html#ab36828f202c1b9b58958d2d7e9933a0c":[12,0,512,2],
 "class_writer.html":[12,0,514],
-"class_zeroconf_browser.html":[12,0,515],
-"class_zeroconf_browser.html#a0969c36d695e27d9b00db4aa57eb63f1":[12,0,515,0]
+"class_zeroconf_browser.html":[12,0,515]
 };
