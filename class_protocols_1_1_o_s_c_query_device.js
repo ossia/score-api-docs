@@ -1,6 +1,6 @@
 var class_protocols_1_1_o_s_c_query_device =
 [
-    [ "OSCQueryDevice", "class_protocols_1_1_o_s_c_query_device.html#a04294b5763f359a8b37756e010026ab5", null ],
+    [ "OSCQueryDevice", "class_protocols_1_1_o_s_c_query_device.html#af9adcb77de1a268f732d98acd02e4270", null ],
     [ "connected", "class_protocols_1_1_o_s_c_query_device.html#a6ff158154c63f6f80a556e640b9e6e9d", null ],
     [ "disconnect", "class_protocols_1_1_o_s_c_query_device.html#a4423bced84a6ed4e54bfd13361b080bc", null ],
     [ "reconnect", "class_protocols_1_1_o_s_c_query_device.html#a1b1f5c2e8b1a038137a21ad059d11b7a", null ],
