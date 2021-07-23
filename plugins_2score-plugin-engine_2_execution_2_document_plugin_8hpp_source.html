@@ -211,19 +211,20 @@ $(document).ready(function(){initNavTree('plugins_2score-plugin-engine_2_executi
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">void</span> registerDevice(ossia::net::device_base*);</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordtype">void</span> unregisterDevice(ossia::net::device_base*);</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordtype">void</span> makeGraph();</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keyword">mutable</span> ExecutionCommandQueue m_execQueue;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keyword">mutable</span> EditionCommandQueue m_editionQueue;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keyword">mutable</span> GCCommandQueue m_gcQueue;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <a class="code" href="struct_execution_1_1_context.html">Context</a> m_ctx;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <a class="code" href="struct_execution_1_1_setup_context.html">SetupContext</a> m_setup_ctx;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <a class="code" href="class_execution_1_1_base_scenario_element.html">BaseScenarioElement</a> m_base;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  std::vector&lt;ExecutionAction*&gt; m_actions;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  std::atomic_bool m_created{};</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordtype">int</span> m_tid{};</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;};</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordtype">void</span> initExecState();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keyword">mutable</span> ExecutionCommandQueue m_execQueue;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keyword">mutable</span> EditionCommandQueue m_editionQueue;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keyword">mutable</span> GCCommandQueue m_gcQueue;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <a class="code" href="struct_execution_1_1_context.html">Context</a> m_ctx;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <a class="code" href="struct_execution_1_1_setup_context.html">SetupContext</a> m_setup_ctx;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <a class="code" href="class_execution_1_1_base_scenario_element.html">BaseScenarioElement</a> m_base;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  std::vector&lt;ExecutionAction*&gt; m_actions;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  std::atomic_bool m_created{};</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordtype">int</span> m_tid{};</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;};</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_execution_1_1_execution_controller_html"><div class="ttname"><a href="class_execution_1_1_execution_controller.html">Execution::ExecutionController</a></div><div class="ttdef"><b>Definition:</b> ExecutionController.hpp:30</div></div>
