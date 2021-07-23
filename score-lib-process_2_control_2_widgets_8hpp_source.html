@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('score-lib-process_2_control_2_widgets_
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">bool</span> must_validate = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">using</span> type = float;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">using</span> port_type = Process::FloatSlider;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">using</span> <a class="code" href="struct_process_1_1_float_slider.html">port_type</a> = <a class="code" href="struct_process_1_1_float_slider.html">Process::FloatSlider</a>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> min{};</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> max{};</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> init{};</div>
@@ -165,7 +165,7 @@ $(document).ready(function(){initNavTree('score-lib-process_2_control_2_widgets_
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">auto</span> create_inlet(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> Process::FloatSlider{</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="struct_process_1_1_float_slider.html">Process::FloatSlider</a>{</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        min,</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        max,</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        init,</div>
@@ -201,7 +201,7 @@ $(document).ready(function(){initNavTree('score-lib-process_2_control_2_widgets_
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">bool</span> must_validate = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keyword">using</span> type = float;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keyword">using</span> port_type = Process::LogFloatSlider; <span class="comment">// TODO BUG</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keyword">using</span> <a class="code" href="struct_process_1_1_log_float_slider.html">port_type</a> = <a class="code" href="struct_process_1_1_log_float_slider.html">Process::LogFloatSlider</a>; <span class="comment">// TODO BUG</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> min{};</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> max{};</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> init{};</div>
@@ -224,7 +224,7 @@ $(document).ready(function(){initNavTree('score-lib-process_2_control_2_widgets_
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keyword">auto</span> create_inlet(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> Process::LogFloatSlider{</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="struct_process_1_1_log_float_slider.html">Process::LogFloatSlider</a>{</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        min,</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        max,</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        init,</div>
@@ -260,7 +260,7 @@ $(document).ready(function(){initNavTree('score-lib-process_2_control_2_widgets_
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;{</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">bool</span> must_validate = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keyword">using</span> type = float;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keyword">using</span> port_type = Process::Bargraph;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keyword">using</span> <a class="code" href="struct_process_1_1_bargraph.html">port_type</a> = <a class="code" href="struct_process_1_1_bargraph.html">Process::Bargraph</a>;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> min{};</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> max{};</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> init{};</div>
@@ -279,7 +279,7 @@ $(document).ready(function(){initNavTree('score-lib-process_2_control_2_widgets_
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keyword">auto</span> create_outlet(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> Process::Bargraph{</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="struct_process_1_1_bargraph.html">Process::Bargraph</a>{</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        min,</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        max,</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        init,</div>
@@ -320,7 +320,7 @@ $(document).ready(function(){initNavTree('score-lib-process_2_control_2_widgets_
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    , <a class="code" href="struct_widget_factory_1_1_int_slider.html">WidgetFactory::IntSlider</a></div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;{</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  <span class="keyword">using</span> type = int;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <span class="keyword">using</span> port_type = Process::IntSlider;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <span class="keyword">using</span> <a class="code" href="struct_process_1_1_int_slider.html">port_type</a> = <a class="code" href="struct_process_1_1_int_slider.html">Process::IntSlider</a>;</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> min{};</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> max{};</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> init{};</div>
@@ -343,7 +343,7 @@ $(document).ready(function(){initNavTree('score-lib-process_2_control_2_widgets_
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  <span class="keyword">auto</span> create_inlet(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> Process::IntSlider{</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="struct_process_1_1_int_slider.html">Process::IntSlider</a>{</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        min,</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        max,</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        init,</div>
@@ -372,7 +372,7 @@ $(document).ready(function(){initNavTree('score-lib-process_2_control_2_widgets_
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;{</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">bool</span> must_validate = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  <span class="keyword">using</span> type = int;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <span class="keyword">using</span> port_type = Process::IntSpinBox;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <span class="keyword">using</span> <a class="code" href="struct_process_1_1_int_spin_box.html">port_type</a> = <a class="code" href="struct_process_1_1_int_spin_box.html">Process::IntSpinBox</a>;</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> min{};</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> max{};</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> init{};</div>
@@ -394,7 +394,7 @@ $(document).ready(function(){initNavTree('score-lib-process_2_control_2_widgets_
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  <span class="keyword">auto</span> create_inlet(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> Process::IntSpinBox{</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="struct_process_1_1_int_spin_box.html">Process::IntSpinBox</a>{</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        min,</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        max,</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        init,</div>
@@ -428,10 +428,10 @@ $(document).ready(function(){initNavTree('score-lib-process_2_control_2_widgets_
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  }</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160; </div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  <span class="keyword">using</span> type = bool;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  <span class="keyword">using</span> port_type = Process::Toggle;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  <span class="keyword">using</span> <a class="code" href="struct_process_1_1_toggle.html">port_type</a> = <a class="code" href="struct_process_1_1_toggle.html">Process::Toggle</a>;</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  <span class="keyword">auto</span> create_inlet(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> Process::Button{</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="struct_process_1_1_button.html">Process::Button</a>{</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        QString::fromUtf8(name.data(), name.size()), id, parent};</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  }</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;  <span class="keyword">auto</span> create_inlet(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp; <span class="keywordtype">id</span>, QObject* parent)<span class="keyword"> const</span></div>
@@ -468,11 +468,11 @@ $(document).ready(function(){initNavTree('score-lib-process_2_control_2_widgets_
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;  }</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  <span class="keyword">using</span> type = bool;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;  <span class="keyword">using</span> port_type = Process::Toggle;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;  <span class="keyword">using</span> <a class="code" href="struct_process_1_1_toggle.html">port_type</a> = <a class="code" href="struct_process_1_1_toggle.html">Process::Toggle</a>;</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">bool</span> init{};</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  <span class="keyword">auto</span> create_inlet(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> Process::Toggle{</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="struct_process_1_1_toggle.html">Process::Toggle</a>{</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        init, QString::fromUtf8(name.data(), name.size()), id, parent};</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  }</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  <span class="keyword">auto</span> create_inlet(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp; <span class="keywordtype">id</span>, QObject* parent)<span class="keyword"> const</span></div>
@@ -512,7 +512,7 @@ $(document).ready(function(){initNavTree('score-lib-process_2_control_2_widgets_
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;  {</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;  }</div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;  <span class="keyword">using</span> type = bool;</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;  <span class="keyword">using</span> port_type = Process::ChooserToggle;</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;  <span class="keyword">using</span> <a class="code" href="struct_process_1_1_chooser_toggle.html">port_type</a> = <a class="code" href="struct_process_1_1_chooser_toggle.html">Process::ChooserToggle</a>;</div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;  std::array&lt;const char*, 2&gt; alternatives;</div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">bool</span> init{};</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160; </div>
@@ -524,7 +524,7 @@ $(document).ready(function(){initNavTree('score-lib-process_2_control_2_widgets_
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160; </div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;  <span class="keyword">auto</span> create_inlet(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> Process::ChooserToggle{</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="struct_process_1_1_chooser_toggle.html">Process::ChooserToggle</a>{</div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        {alternatives[0], alternatives[1]},</div>
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;        init,</div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;        QString::fromUtf8(name.data(), name.size()),</div>
@@ -566,11 +566,11 @@ $(document).ready(function(){initNavTree('score-lib-process_2_control_2_widgets_
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;  }</div>
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160; </div>
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;  <span class="keyword">using</span> type = std::string;</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;  <span class="keyword">using</span> port_type = Process::LineEdit;</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;  <span class="keyword">using</span> <a class="code" href="struct_process_1_1_line_edit.html">port_type</a> = <a class="code" href="struct_process_1_1_line_edit.html">Process::LineEdit</a>;</div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;  <span class="keyword">const</span> QLatin1String init{};</div>
 <div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;  <span class="keyword">auto</span> create_inlet(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> Process::LineEdit{</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="struct_process_1_1_line_edit.html">Process::LineEdit</a>{</div>
 <div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;        init, QString::fromUtf8(name.data(), name.size()), id, parent};</div>
 <div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;  }</div>
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;  <span class="keyword">auto</span> create_inlet(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp; <span class="keywordtype">id</span>, QObject* parent)<span class="keyword"> const</span></div>
@@ -591,7 +591,7 @@ $(document).ready(function(){initNavTree('score-lib-process_2_control_2_widgets_
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;{</div>
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">bool</span> must_validate = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;  <span class="keyword">using</span> type = T;</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;  <span class="keyword">using</span> port_type = Process::ComboBox;</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;  <span class="keyword">using</span> <a class="code" href="struct_process_1_1_combo_box.html">port_type</a> = <a class="code" href="struct_process_1_1_combo_box.html">Process::ComboBox</a>;</div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;  <span class="keyword">const</span> std::size_t init{};</div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;  <span class="keyword">const</span> std::array&lt;std::pair&lt;const char*, T&gt;, N&gt; values;</div>
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160; </div>
@@ -612,7 +612,7 @@ $(document).ready(function(){initNavTree('score-lib-process_2_control_2_widgets_
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; v : values)</div>
 <div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;      vec.emplace_back(v.first, v.second);</div>
 <div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160; </div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> Process::ComboBox(</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="struct_process_1_1_combo_box.html">Process::ComboBox</a>(</div>
 <div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;        vec,</div>
 <div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;        values[init].second,</div>
 <div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;        QString::fromUtf8(name.data(), name.size()),</div>
@@ -640,7 +640,7 @@ $(document).ready(function(){initNavTree('score-lib-process_2_control_2_widgets_
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;    , <a class="code" href="struct_widget_factory_1_1_enum.html">WidgetFactory::Enum</a></div>
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;{</div>
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;  <span class="keyword">using</span> type = std::string;</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;  <span class="keyword">using</span> port_type = Process::Enum;</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;  <span class="keyword">using</span> <a class="code" href="struct_process_1_1_enum.html">port_type</a> = <a class="code" href="struct_process_1_1_enum.html">Process::Enum</a>;</div>
 <div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;  <span class="keyword">const</span> std::size_t init{};</div>
 <div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;  <span class="keyword">const</span> ArrT values;</div>
 <div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;  <span class="keyword">using</span> Pixmaps_T = std::array&lt;<span class="keyword">const</span> <span class="keywordtype">char</span>*, 2 * ArrT{}.size()&gt;;</div>
@@ -677,7 +677,7 @@ $(document).ready(function(){initNavTree('score-lib-process_2_control_2_widgets_
 <div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160; </div>
 <div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;  <span class="keyword">auto</span> create_inlet(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> Process::Enum{</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="struct_process_1_1_enum.html">Process::Enum</a>{</div>
 <div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;        std::vector&lt;std::string&gt;(values.begin(), values.end()),</div>
 <div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;        pixmaps[0] == <span class="keyword">nullptr</span></div>
 <div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;            ? std::vector&lt;QString&gt;{}</div>
@@ -778,6 +778,9 @@ $(document).ready(function(){initNavTree('score-lib-process_2_control_2_widgets_
 <div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="astruct_process_1_1_log_float_slider_html"><div class="ttname"><a href="struct_process_1_1_log_float_slider.html">Process::LogFloatSlider</a></div><div class="ttdef"><b>Definition:</b> WidgetInlets.hpp:158</div></div>
+<div class="ttc" id="astruct_process_1_1_enum_html"><div class="ttname"><a href="struct_process_1_1_enum.html">Process::Enum</a></div><div class="ttdef"><b>Definition:</b> WidgetInlets.hpp:278</div></div>
+<div class="ttc" id="astruct_process_1_1_float_slider_html"><div class="ttname"><a href="struct_process_1_1_float_slider.html">Process::FloatSlider</a></div><div class="ttdef"><b>Definition:</b> WidgetInlets.hpp:122</div></div>
 <div class="ttc" id="astruct_control_1_1_out_control_html"><div class="ttname"><a href="struct_control_1_1_out_control.html">Control::OutControl</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Control/Widgets.hpp:13</div></div>
 <div class="ttc" id="astruct_widget_factory_1_1_button_html"><div class="ttname"><a href="struct_widget_factory_1_1_button.html">WidgetFactory::Button</a></div><div class="ttdef"><b>Definition:</b> plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp:413</div></div>
 <div class="ttc" id="astruct_widget_factory_1_1_int_spin_box_html"><div class="ttname"><a href="struct_widget_factory_1_1_int_spin_box.html">WidgetFactory::IntSpinBox</a></div><div class="ttdef"><b>Definition:</b> plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp:242</div></div>
@@ -786,9 +789,12 @@ $(document).ready(function(){initNavTree('score-lib-process_2_control_2_widgets_
 <div class="ttc" id="astruct_control_1_1_float_control_html"><div class="ttname"><a href="struct_control_1_1_float_control.html">Control::FloatControl</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Control/Widgets.hpp:43</div></div>
 <div class="ttc" id="astruct_control_1_1_chooser_toggle_html"><div class="ttname"><a href="struct_control_1_1_chooser_toggle.html">Control::ChooserToggle</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Control/Widgets.hpp:399</div></div>
 <div class="ttc" id="astruct_widget_factory_1_1_enum_html"><div class="ttname"><a href="struct_widget_factory_1_1_enum.html">WidgetFactory::Enum</a></div><div class="ttdef"><b>Definition:</b> plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp:630</div></div>
+<div class="ttc" id="astruct_process_1_1_button_html"><div class="ttname"><a href="struct_process_1_1_button.html">Process::Button</a></div><div class="ttdef"><b>Definition:</b> WidgetInlets.hpp:309</div></div>
+<div class="ttc" id="astruct_process_1_1_line_edit_html"><div class="ttname"><a href="struct_process_1_1_line_edit.html">Process::LineEdit</a></div><div class="ttdef"><b>Definition:</b> WidgetInlets.hpp:242</div></div>
 <div class="ttc" id="astruct_widget_factory_1_1_int_slider_html"><div class="ttname"><a href="struct_widget_factory_1_1_int_slider.html">WidgetFactory::IntSlider</a></div><div class="ttdef"><b>Definition:</b> plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp:164</div></div>
 <div class="ttc" id="astruct_control_1_1_unvalidated_enum_html"><div class="ttname"><a href="struct_control_1_1_unvalidated_enum.html">Control::UnvalidatedEnum</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Control/Widgets.hpp:622</div></div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition:</b> Identifier.hpp:56</div></div>
+<div class="ttc" id="astruct_process_1_1_int_spin_box_html"><div class="ttname"><a href="struct_process_1_1_int_spin_box.html">Process::IntSpinBox</a></div><div class="ttdef"><b>Definition:</b> WidgetInlets.hpp:194</div></div>
 <div class="ttc" id="astruct_control_1_1_enum_html"><div class="ttname"><a href="struct_control_1_1_enum.html">Control::Enum</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Control/Widgets.hpp:603</div></div>
 <div class="ttc" id="astruct_control_1_1_log_float_control_html"><div class="ttname"><a href="struct_control_1_1_log_float_control.html">Control::LogFloatControl</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Control/Widgets.hpp:98</div></div>
 <div class="ttc" id="astruct_control_1_1_toggle_html"><div class="ttname"><a href="struct_control_1_1_toggle.html">Control::Toggle</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Control/Widgets.hpp:358</div></div>
@@ -800,6 +806,9 @@ $(document).ready(function(){initNavTree('score-lib-process_2_control_2_widgets_
 <div class="ttc" id="astruct_control_1_1_line_edit_html"><div class="ttname"><a href="struct_control_1_1_line_edit.html">Control::LineEdit</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Control/Widgets.hpp:447</div></div>
 <div class="ttc" id="astruct_widget_factory_1_1_line_edit_html"><div class="ttname"><a href="struct_widget_factory_1_1_line_edit.html">WidgetFactory::LineEdit</a></div><div class="ttdef"><b>Definition:</b> plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp:550</div></div>
 <div class="ttc" id="astruct_control_1_1_int_slider_html"><div class="ttname"><a href="struct_control_1_1_int_slider.html">Control::IntSlider</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Control/Widgets.hpp:218</div></div>
+<div class="ttc" id="astruct_process_1_1_chooser_toggle_html"><div class="ttname"><a href="struct_process_1_1_chooser_toggle.html">Process::ChooserToggle</a></div><div class="ttdef"><b>Definition:</b> WidgetInlets.hpp:226</div></div>
+<div class="ttc" id="astruct_process_1_1_toggle_html"><div class="ttname"><a href="struct_process_1_1_toggle.html">Process::Toggle</a></div><div class="ttdef"><b>Definition:</b> WidgetInlets.hpp:212</div></div>
+<div class="ttc" id="astruct_process_1_1_bargraph_html"><div class="ttname"><a href="struct_process_1_1_bargraph.html">Process::Bargraph</a></div><div class="ttdef"><b>Definition:</b> WidgetInlets.hpp:387</div></div>
 <div class="ttc" id="astruct_control_1_1_float_display_html"><div class="ttname"><a href="struct_control_1_1_float_display.html">Control::FloatDisplay</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Control/Widgets.hpp:157</div></div>
 <div class="ttc" id="astruct_widget_factory_1_1_toggle_html"><div class="ttname"><a href="struct_widget_factory_1_1_toggle.html">WidgetFactory::Toggle</a></div><div class="ttdef"><b>Definition:</b> plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp:311</div></div>
 <div class="ttc" id="aclass_j_s_o_n_writer_html"><div class="ttname"><a href="class_j_s_o_n_writer.html">JSONWriter</a></div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:432</div></div>
@@ -807,8 +816,10 @@ $(document).ready(function(){initNavTree('score-lib-process_2_control_2_widgets_
 <div class="ttc" id="astruct_control_1_1_r_g_b_a_edit_html"><div class="ttname"><a href="struct_control_1_1_r_g_b_a_edit.html">Control::RGBAEdit</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Control/Widgets.hpp:658</div></div>
 <div class="ttc" id="astruct_widget_factory_1_1_chooser_toggle_html"><div class="ttname"><a href="struct_widget_factory_1_1_chooser_toggle.html">WidgetFactory::ChooserToggle</a></div><div class="ttdef"><b>Definition:</b> plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp:462</div></div>
 <div class="ttc" id="astruct_widget_factory_1_1_x_y_z_edit_html"><div class="ttname"><a href="struct_widget_factory_1_1_x_y_z_edit.html">WidgetFactory::XYZEdit</a></div><div class="ttdef"><b>Definition:</b> plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp:852</div></div>
+<div class="ttc" id="astruct_process_1_1_int_slider_html"><div class="ttname"><a href="struct_process_1_1_int_slider.html">Process::IntSlider</a></div><div class="ttdef"><b>Definition:</b> WidgetInlets.hpp:176</div></div>
 <div class="ttc" id="astruct_control_1_1_button_html"><div class="ttname"><a href="struct_control_1_1_button.html">Control::Button</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Control/Widgets.hpp:319</div></div>
 <div class="ttc" id="aclass_process_1_1_control_outlet_html"><div class="ttname"><a href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:417</div></div>
+<div class="ttc" id="astruct_process_1_1_combo_box_html"><div class="ttname"><a href="struct_process_1_1_combo_box.html">Process::ComboBox</a></div><div class="ttdef"><b>Definition:</b> WidgetInlets.hpp:256</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

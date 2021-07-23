@@ -164,18 +164,18 @@ var NAVTREEINDEX =
 "struct_l_v2_1_1_host_context.html#ac59e02dc9878eebce20d842e4108caaf",
 "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a4c6e1711e6c00d58238b88e3460ab5ff",
 "struct_nodes_1_1_gain_1_1_node_1_1_metadata.html",
-"struct_process_1_1_pixmaps.html#a2fb0e3f337c29e745fab4acea156253d",
-"struct_q_meta_type_id_3_01_audio_1_1_settings_1_1_external_transport_01_4.html",
-"struct_recording_1_1_record_automation_subsequent_callback_visitor.html#afc3c1ab32f9b17a5bf9b5e8374512e26",
-"struct_scenario_1_1_elements_properties.html#ab99243ebcfb6974d7d60d3216702eb77",
-"struct_send_strategy_1_1_undo_redo.html",
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_q_rect_01_4.html",
-"structhas__base.html",
-"structscore_1_1_document_metadata.html#ac138442546b8e940fece54726b7d6f3c",
-"structscore_1_1_string_constants.html#a0edbcb4fa36b9bacc14234606c264010",
-"structscore_1_1gfx_1_1_h_a_p_m_decoder.html#adce98d988de07471ed43146cf89255c6",
-"structscore_1_1indirect__iterator.html#aa73c3d916aff1ba1e9f7e3824c008952",
-"structvst_1_1_v_s_t_info.html"
+"struct_process_1_1_default_effect_item_1_1_port.html",
+"struct_process_1_1_toggle.html#ab69922a0ec9ebf0dbcf07bbbbf074f54",
+"struct_q_meta_type_id_3_01const_01_media_1_1_audio_file_01_5_01_4.html",
+"struct_scenario_1_1_categorized_addresses.html#a1acc9e4c0f14eceadbfdaf02feb01342",
+"struct_scenario_1_1_slot_path.html#a291974864420e956a9288d7878036117",
+"struct_std_variant_data_stream_serializer.html#ab7102f6b0d77ed57908effef6e875e3b",
+"struct_video_1_1_frame_queue.html#a11081a717113677ae6586c09a291fa63",
+"structscore_1_1_color_ref.html#a6661440b0fd95352b87e83eb91fe2367",
+"structscore_1_1_posted_event.html#ae64f9eca4a8e7d823d38ab03d8ac6347",
+"structscore_1_1_value_double_slider.html#aee561b23bf65661f9db84a513fd86807",
+"structscore_1_1gfx_1_1_text_node.html#a734f20770c0a7332caa8c34c0bc8d06f",
+"structvst3_1_1_host_app.html#a23ae2b3a4b6b2d1c3a9feeb2f64b5a08"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
