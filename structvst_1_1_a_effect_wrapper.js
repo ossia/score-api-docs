@@ -6,5 +6,6 @@ var structvst_1_1_a_effect_wrapper =
     [ "getParameter", "structvst_1_1_a_effect_wrapper.html#aa57a8821dedfe10eac134dac36748ad4", null ],
     [ "setParameter", "structvst_1_1_a_effect_wrapper.html#acb44356ca1fe295c37446db935073f95", null ],
     [ "fx", "structvst_1_1_a_effect_wrapper.html#ad91795d7d185971d576e2ca51657e086", null ],
-    [ "info", "structvst_1_1_a_effect_wrapper.html#a3c50379d6321950fbe7776af7388bfed", null ]
+    [ "info", "structvst_1_1_a_effect_wrapper.html#a3c50379d6321950fbe7776af7388bfed", null ],
+    [ "ui_opened", "structvst_1_1_a_effect_wrapper.html#a58ca91cca331a97d3e08590390fdf103", null ]
 ];
