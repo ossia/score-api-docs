@@ -1,5 +1,16 @@
 var NAVTREEINDEX54 =
 {
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#ab57285745f49c59fbe8aabb62ce24031":[12,0,27,3,12,3],
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#ac66b153f70b017ead9254eca216e1563":[12,0,27,3,12,16],
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#accfb5b5ee18df6beaa17b33627cd4660":[12,0,27,3,12,5],
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#acd6cae7ee45a191d440c24f524718efd":[12,0,27,3,12,17],
+"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html":[12,0,27,3,12,0],
+"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a0c55863b2aa52aa319f13b6719117ee7":[12,0,27,3,12,0,11],
+"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a100540fdb72e407e5835ad25992539a3":[12,0,27,3,12,0,0],
+"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a2ac8e9f8a434af49d65a9dc80ba7adc0":[12,0,27,3,12,0,9],
+"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a46cec68e3ff3b7ce200cb14f063dc821":[12,0,27,3,12,0,5],
+"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a498ca509857b4167250a2d6eef408518":[12,0,27,3,12,0,1],
+"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a4b2846ec31239949cab9a4437a666e88":[12,0,27,3,12,0,12],
 "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a4c6e1711e6c00d58238b88e3460ab5ff":[12,0,27,3,12,0,7],
 "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a5269849f2664a7ac24a711ac3bd1a75c":[12,0,27,3,12,0,3],
 "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a57a9d270e570bf3e996a66582630c539":[12,0,27,3,12,0,2],
@@ -238,16 +249,5 @@ var NAVTREEINDEX54 =
 "struct_nodes_1_1_factor_oracle_1_1_node_1_1_state.html#a27c1a45a42426cf7ac2143e61998e4a5":[12,0,32,10,1,1,2],
 "struct_nodes_1_1_factor_oracle_1_1_node_1_1_state.html#af1a6d9230411c9d5a1148de4efa4c0c1":[12,0,32,10,1,1,1],
 "struct_nodes_1_1_factor_oracle_1_1_node_1_1_state.html#af316491af51facd144e207ff95a4cac0":[12,0,32,10,1,1,0],
-"struct_nodes_1_1_factor_oracle_1_1safe__vector.html":[12,0,32,10,2],
-"struct_nodes_1_1_factor_oracle_1_1safe__vector.html#a2fe39fe64ad8627aac4ec7eff9a46fcf":[12,0,32,10,2,4],
-"struct_nodes_1_1_factor_oracle_1_1safe__vector.html#a36ad78e29f2ac241a6e757668767d680":[12,0,32,10,2,3],
-"struct_nodes_1_1_factor_oracle_1_1safe__vector.html#a3908d6b0b77c3a9008399ccfb66e5433":[12,0,32,10,2,1],
-"struct_nodes_1_1_factor_oracle_1_1safe__vector.html#a4cb7c5383a08e4fea2d5111ad8cdc540":[12,0,32,10,2,2],
-"struct_nodes_1_1_factor_oracle_1_1safe__vector.html#afd1515b84f940dfdb788f2413e911424":[12,0,32,10,2,0],
-"struct_nodes_1_1_factor_oracle_1_1safe__vector__simple.html":[12,0,32,10,3],
-"struct_nodes_1_1_factor_oracle_1_1safe__vector__simple.html#a8f09d39e1eed55066bad28ca68543099":[12,0,32,10,3,2],
-"struct_nodes_1_1_factor_oracle_1_1safe__vector__simple.html#ad05672a9714cfd35b57a638b749ce708":[12,0,32,10,3,1],
-"struct_nodes_1_1_factor_oracle_1_1safe__vector__simple.html#af875c410096ac782fa0239e0f13721fa":[12,0,32,10,3,0],
-"struct_nodes_1_1_gain_1_1_node.html":[12,0,32,13,0],
-"struct_nodes_1_1_gain_1_1_node.html#a0bb00d61911e143eebff333ec930c9ba":[12,0,32,13,0,1]
+"struct_nodes_1_1_factor_oracle_1_1safe__vector.html":[12,0,32,10,2]
 };

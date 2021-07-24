@@ -1,5 +1,16 @@
 var NAVTREEINDEX50 =
 {
+"struct_curve_1_1_tool_palette___t.html":[12,0,5,49],
+"struct_curve_1_1_tool_palette___t.html#a4aa78152497ad941e54217373802e9bc":[12,0,5,49,0],
+"struct_curve_1_1_tool_palette___t.html#afd07b9093bf2d55d8937ea3cbf22ac1a":[12,0,5,49,1],
+"struct_data_stream_input.html":[12,0,93],
+"struct_data_stream_input.html#af22a1f7f1841ed3ff18360f284322fd7":[12,0,93,0],
+"struct_data_stream_output.html":[12,0,94],
+"struct_data_stream_output.html#af873df47d484bf687a5191c6ece2aa47":[12,0,94,0],
+"struct_dataflow_1_1_audio_inlet_factory.html":[12,0,6,2],
+"struct_dataflow_1_1_audio_inlet_factory.html#a0a275c2c5b5c1ff53b2282db1d7d775a":[12,0,6,2,3],
+"struct_dataflow_1_1_audio_inlet_factory.html#a4a108a8d83900b5622b3c91a318d4133":[12,0,6,2,0],
+"struct_dataflow_1_1_audio_inlet_factory.html#a7c169852cb30983e3527835fd232664b":[12,0,6,2,1],
 "struct_dataflow_1_1_audio_inlet_factory.html#ac566daf2f7c87fce7d2a657233dbc92d":[12,0,6,2,2],
 "struct_dataflow_1_1_audio_outlet_factory.html":[12,0,6,3],
 "struct_dataflow_1_1_audio_outlet_factory.html#a3feabdd35e60703bf3f81a4993c5fdad":[12,0,6,3,2],
@@ -238,16 +249,5 @@ var NAVTREEINDEX50 =
 "struct_execution_1_1_settings_1_1_merging_policies.html#ad27b8a093f61662a732749d0d0afea16":[12,0,9,1,1,1],
 "struct_execution_1_1_settings_1_1_merging_policies.html#af15f8931630e7e619e5329a683f15215":[12,0,9,1,1,2],
 "struct_execution_1_1_settings_1_1_ordering_policies.html":[12,0,9,1,3],
-"struct_execution_1_1_settings_1_1_ordering_policies.html#a9f4cfc3df9473e938fde99af861fc92e":[12,0,9,1,3,2],
-"struct_execution_1_1_settings_1_1_ordering_policies.html#aa78f827d0efc4eb167f4f307e2f9e4be":[12,0,9,1,3,0],
-"struct_execution_1_1_settings_1_1_ordering_policies.html#ad2478a2cc6646aca4318d98560047c0d":[12,0,9,1,3,1],
-"struct_execution_1_1_settings_1_1_ordering_policies.html#aedc6a5f5786d3c64950b556e8567b3e6":[12,0,9,1,3,3],
-"struct_execution_1_1_settings_1_1_ordering_policies.html#afccdaa11e11350698b89460f7d1510b0":[12,0,9,1,3,4],
-"struct_execution_1_1_settings_1_1_scheduling_policies.html":[12,0,9,1,5],
-"struct_execution_1_1_settings_1_1_scheduling_policies.html#a11adbe1b76c814533ad9d149547e7625":[12,0,9,1,5,0],
-"struct_execution_1_1_settings_1_1_scheduling_policies.html#a2df3c78c2db9139339178032134d9e6f":[12,0,9,1,5,3],
-"struct_execution_1_1_settings_1_1_scheduling_policies.html#a3208c77b75f41029027f5ba6502e3a23":[12,0,9,1,5,1],
-"struct_execution_1_1_settings_1_1_scheduling_policies.html#a3889ead6bcb6807b8f71a8b19ac526ed":[12,0,9,1,5,4],
-"struct_execution_1_1_settings_1_1_scheduling_policies.html#a5fb726270e3952aa31524e6c1f9f63ec":[12,0,9,1,5,2],
-"struct_execution_1_1_settings_1_1_tick_policies.html":[12,0,9,1,6]
+"struct_execution_1_1_settings_1_1_ordering_policies.html#a9f4cfc3df9473e938fde99af861fc92e":[12,0,9,1,3,2]
 };

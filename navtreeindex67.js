@@ -1,5 +1,16 @@
 var NAVTREEINDEX67 =
 {
+"structvst3_1_1_available_plugin.html#a013f3b04472422d2842b360373d49de6":[12,0,54,1,3],
+"structvst3_1_1_available_plugin.html#a166bb484d49cfbce64399cb30fec71e5":[12,0,54,1,0],
+"structvst3_1_1_available_plugin.html#a7dd00ae0e4910d111fcef33f4b629531":[12,0,54,1,1],
+"structvst3_1_1_available_plugin.html#a8a570f0eaef2db69c7c9f93eb0a5cad8":[12,0,54,1,2],
+"structvst3_1_1_bus_activation_visitor.html":[12,0,54,2],
+"structvst3_1_1_bus_activation_visitor.html#a04529afeacf2a001cd8ce0f861664e85":[12,0,54,2,2],
+"structvst3_1_1_bus_activation_visitor.html#a0beb11d8e8eceac355516e4d0a5e8148":[12,0,54,2,3],
+"structvst3_1_1_bus_activation_visitor.html#a2277fd4d75b23e043e6a767b4cd0b3e2":[12,0,54,2,4],
+"structvst3_1_1_bus_activation_visitor.html#a2a58dc3ac6af2934a72dd7aca73efe9f":[12,0,54,2,1],
+"structvst3_1_1_bus_activation_visitor.html#af3376bc576ca6c74db318b000f495636":[12,0,54,2,0],
+"structvst3_1_1_host_app.html":[12,0,54,7],
 "structvst3_1_1_host_app.html#a23ae2b3a4b6b2d1c3a9feeb2f64b5a08":[12,0,54,7,4],
 "structvst3_1_1_host_app.html#a442287b0bd51ae00b8bfff5f0f882d5e":[12,0,54,7,6],
 "structvst3_1_1_host_app.html#a613aaa9853807e0131aebdc910d860cf":[12,0,54,7,2],

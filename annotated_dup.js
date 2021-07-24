@@ -80,6 +80,7 @@ var annotated_dup =
       [ "con_unvalidated", "struct_control_surface_1_1con__unvalidated.html", "struct_control_surface_1_1con__unvalidated" ],
       [ "LocalTreeProcessComponent", "class_control_surface_1_1_local_tree_process_component.html", "class_control_surface_1_1_local_tree_process_component" ],
       [ "Model", "class_control_surface_1_1_model.html", "class_control_surface_1_1_model" ],
+      [ "NodeObserver", "struct_control_surface_1_1_node_observer.html", "struct_control_surface_1_1_node_observer" ],
       [ "Presenter", "class_control_surface_1_1_presenter.html", "class_control_surface_1_1_presenter" ],
       [ "ProcessExecutorComponent", "class_control_surface_1_1_process_executor_component.html", "class_control_surface_1_1_process_executor_component" ],
       [ "RemoveControl", "class_control_surface_1_1_remove_control.html", "class_control_surface_1_1_remove_control" ],

@@ -1,5 +1,16 @@
 var NAVTREEINDEX56 =
 {
+"struct_process_1_1_context.html#ab99ea45db27659fdfdca64907fe75931":[12,0,37,13,1],
+"struct_process_1_1_control_message.html":[12,0,37,15],
+"struct_process_1_1_control_message.html#a88feb3aadc5557e2adc7ea6d7f50edb7":[12,0,37,15,0],
+"struct_process_1_1_control_message.html#a9a83dfd80878bd603e2f9b7a789d59ac":[12,0,37,15,1],
+"struct_process_1_1_control_message.html#aa6cb328892e65910050436469c198eea":[12,0,37,15,2],
+"struct_process_1_1_control_setup.html":[12,0,37,17],
+"struct_process_1_1_control_setup.html#a20cf97ff1ab576747d5c504cc5356062":[12,0,37,17,4],
+"struct_process_1_1_control_setup.html#a94bab3be048d189a89fb2dc93c96f763":[12,0,37,17,0],
+"struct_process_1_1_control_setup.html#a9bf51d3923572302660538704dd042ad":[12,0,37,17,3],
+"struct_process_1_1_control_setup.html#abe02bbfcefe5836cafdd4d46d65c7f12":[12,0,37,17,2],
+"struct_process_1_1_control_setup.html#aecc2c4ee191343419688e578b290cf1c":[12,0,37,17,1],
 "struct_process_1_1_default_effect_item_1_1_port.html":[12,0,37,20,0],
 "struct_process_1_1_default_effect_item_1_1_port.html#a04539bf58c771b460c5075b2df9d5033":[12,0,37,20,0,2],
 "struct_process_1_1_default_effect_item_1_1_port.html#a69b8ba4f6f66443b88ebb901873bb1eb":[12,0,37,20,0,1],
@@ -238,16 +249,5 @@ var NAVTREEINDEX56 =
 "struct_process_1_1_style.html#ad8e9901f5057b59f440894a6bd41cca2":[12,0,37,99,44],
 "struct_process_1_1_style.html#ada76c8cce956bf4d86ea9c16b0b66edd":[12,0,37,99,58],
 "struct_process_1_1_style.html#adda148d15b13820c80295820c434437d":[12,0,37,99,5],
-"struct_process_1_1_style.html#adede148b816064c7a74441301282bcc3":[12,0,37,99,74],
-"struct_process_1_1_style.html#ae47baebf9b82cf6aea4a5d84ea5e99f6":[12,0,37,99,28],
-"struct_process_1_1_style.html#ae7f678c3942ae5c2c9f0f961cd56df0c":[12,0,37,99,79],
-"struct_process_1_1_style.html#aeaf071280cd36cb7acce656a43f799e4":[12,0,37,99,14],
-"struct_process_1_1_style.html#aed88694fc59021036038ff323f899ffc":[12,0,37,99,47],
-"struct_process_1_1_style.html#aeefe121eec51bcdeaac3f31620d98d6d":[12,0,37,99,0],
-"struct_process_1_1_style.html#af6f635ac51c2b71bb0105f569b268f49":[12,0,37,99,92],
-"struct_process_1_1_style.html#af796bec8433ecce2e6e20f8c5f737971":[12,0,37,99,61],
-"struct_process_1_1_style.html#afb49121b55c48fd677a4a31e908c713a":[12,0,37,99,38],
-"struct_process_1_1_style.html#aff532ddb30c75ad393fcec13d9b11a93":[12,0,37,99,76],
-"struct_process_1_1_toggle.html":[12,0,37,100],
-"struct_process_1_1_toggle.html#aa41029b4542b8c7a476708c7eed3083c":[12,0,37,100,2]
+"struct_process_1_1_style.html#adede148b816064c7a74441301282bcc3":[12,0,37,99,74]
 };

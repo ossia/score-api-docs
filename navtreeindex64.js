@@ -1,5 +1,16 @@
 var NAVTREEINDEX64 =
 {
+"structscore_1_1_positioned_event_3_01_scenario_1_1_point_01_4.html#a04e63bf3e5cb1cc42980f0b0f5fd275d":[12,0,44,169,0],
+"structscore_1_1_positioned_event_3_01_scenario_1_1_point_01_4.html#a3a11b959c5bb8036b312208b8281c586":[12,0,44,169,2],
+"structscore_1_1_positioned_event_3_01_scenario_1_1_point_01_4.html#a49c8b6820691d2d63559d81450023037":[12,0,44,169,1],
+"structscore_1_1_posted_event.html":[12,0,44,170],
+"structscore_1_1_posted_event.html#a182ddc7bd97261e78eaed090d53d5e49":[12,0,44,170,5],
+"structscore_1_1_posted_event.html#a5711273c6edf38425a51f19442a8b35f":[12,0,44,170,1],
+"structscore_1_1_posted_event.html#a5d35a0b39dcd88fac8bf53c68b609cd1":[12,0,44,170,7],
+"structscore_1_1_posted_event.html#a62329ce356d50715d8d6743f7bfc1ee6":[12,0,44,170,0],
+"structscore_1_1_posted_event.html#aa3a0c232e6a01fa1de9a816532a288b3":[12,0,44,170,4],
+"structscore_1_1_posted_event.html#aa8084c00937152a9faa095b38f83d89d":[12,0,44,170,6],
+"structscore_1_1_posted_event.html#ab4a5186de66beeb9b72d1d3f23b6b107":[12,0,44,170,3],
 "structscore_1_1_posted_event.html#ae64f9eca4a8e7d823d38ab03d8ac6347":[12,0,44,170,2],
 "structscore_1_1_posted_event_base.html":[12,0,44,171],
 "structscore_1_1_posted_event_base.html#a8b1e96b3c839f10a79041f8f3b141b63":[12,0,44,171,1],
@@ -238,16 +249,5 @@ var NAVTREEINDEX64 =
 "structscore_1_1_value_assigner_3_01float_01_4.html#a4d4bc74b60e044e51efeeabe1e11219b":[12,0,44,262,0],
 "structscore_1_1_value_assigner_3_01float_01_4.html#a6bbb70d609af00adcfc616d366dd3493":[12,0,44,262,2],
 "structscore_1_1_value_assigner_3_01int_01_4.html":[12,0,44,263],
-"structscore_1_1_value_assigner_3_01int_01_4.html#a03d923b17ed67e8b5912f346c6f1b2c2":[12,0,44,263,0],
-"structscore_1_1_value_assigner_3_01int_01_4.html#a476b59674079f702fdc748096970fbe2":[12,0,44,263,1],
-"structscore_1_1_value_assigner_3_01int_01_4.html#ab6f8bd3e306f4f76d20bdb1b4d9df32d":[12,0,44,263,2],
-"structscore_1_1_value_assigner_3_01ossia_1_1value_01_4.html":[12,0,44,264],
-"structscore_1_1_value_assigner_3_01ossia_1_1value_01_4.html#a1247df9a8824a33e6bd5342305b0bcc5":[12,0,44,264,1],
-"structscore_1_1_value_assigner_3_01ossia_1_1value_01_4.html#a26caebd6e212849202d64eff418a1a8f":[12,0,44,264,0],
-"structscore_1_1_value_assigner_3_01ossia_1_1value_01_4.html#a73c90613f2026a95f69e155316f0a17a":[12,0,44,264,2],
-"structscore_1_1_value_double_slider.html":[12,0,44,265],
-"structscore_1_1_value_double_slider.html#a3c911ce4d4b95a51b3d93bf7ddf6ab40":[12,0,44,265,1],
-"structscore_1_1_value_double_slider.html#a552a61c5b90961e9b7f86f1d173dfb35":[12,0,44,265,2],
-"structscore_1_1_value_double_slider.html#a6f75ee33ecc8802b16735b3fa9f3254e":[12,0,44,265,3],
-"structscore_1_1_value_double_slider.html#ac0c585bd3526c733e91e53fad26480a8":[12,0,44,265,4]
+"structscore_1_1_value_assigner_3_01int_01_4.html#a03d923b17ed67e8b5912f346c6f1b2c2":[12,0,44,263,0]
 };

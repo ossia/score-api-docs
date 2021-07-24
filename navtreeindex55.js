@@ -1,5 +1,16 @@
 var NAVTREEINDEX55 =
 {
+"struct_nodes_1_1_factor_oracle_1_1safe__vector.html#a2fe39fe64ad8627aac4ec7eff9a46fcf":[12,0,32,10,2,4],
+"struct_nodes_1_1_factor_oracle_1_1safe__vector.html#a36ad78e29f2ac241a6e757668767d680":[12,0,32,10,2,3],
+"struct_nodes_1_1_factor_oracle_1_1safe__vector.html#a3908d6b0b77c3a9008399ccfb66e5433":[12,0,32,10,2,1],
+"struct_nodes_1_1_factor_oracle_1_1safe__vector.html#a4cb7c5383a08e4fea2d5111ad8cdc540":[12,0,32,10,2,2],
+"struct_nodes_1_1_factor_oracle_1_1safe__vector.html#afd1515b84f940dfdb788f2413e911424":[12,0,32,10,2,0],
+"struct_nodes_1_1_factor_oracle_1_1safe__vector__simple.html":[12,0,32,10,3],
+"struct_nodes_1_1_factor_oracle_1_1safe__vector__simple.html#a8f09d39e1eed55066bad28ca68543099":[12,0,32,10,3,2],
+"struct_nodes_1_1_factor_oracle_1_1safe__vector__simple.html#ad05672a9714cfd35b57a638b749ce708":[12,0,32,10,3,1],
+"struct_nodes_1_1_factor_oracle_1_1safe__vector__simple.html#af875c410096ac782fa0239e0f13721fa":[12,0,32,10,3,0],
+"struct_nodes_1_1_gain_1_1_node.html":[12,0,32,13,0],
+"struct_nodes_1_1_gain_1_1_node.html#a0bb00d61911e143eebff333ec930c9ba":[12,0,32,13,0,1],
 "struct_nodes_1_1_gain_1_1_node_1_1_metadata.html":[12,0,32,13,0,0],
 "struct_nodes_1_1_l_f_o_1_1_node.html":[12,0,32,14,0],
 "struct_nodes_1_1_l_f_o_1_1_node.html#ae68b3cee962b6838deefc6a36b154407":[12,0,32,14,0,2],
@@ -238,16 +249,5 @@ var NAVTREEINDEX55 =
 "struct_process_1_1_context.html":[12,0,37,13],
 "struct_process_1_1_context.html#a406b0e32dda131c34a49e09814789b3c":[12,0,37,13,2],
 "struct_process_1_1_context.html#a4363068d20d3716d38dc9918f636e21f":[12,0,37,13,0],
-"struct_process_1_1_context.html#a58dd39a6e6eeb0e2d45436630ddeef15":[12,0,37,13,3],
-"struct_process_1_1_context.html#ab99ea45db27659fdfdca64907fe75931":[12,0,37,13,1],
-"struct_process_1_1_control_message.html":[12,0,37,15],
-"struct_process_1_1_control_message.html#a88feb3aadc5557e2adc7ea6d7f50edb7":[12,0,37,15,0],
-"struct_process_1_1_control_message.html#a9a83dfd80878bd603e2f9b7a789d59ac":[12,0,37,15,1],
-"struct_process_1_1_control_message.html#aa6cb328892e65910050436469c198eea":[12,0,37,15,2],
-"struct_process_1_1_control_setup.html":[12,0,37,17],
-"struct_process_1_1_control_setup.html#a20cf97ff1ab576747d5c504cc5356062":[12,0,37,17,4],
-"struct_process_1_1_control_setup.html#a94bab3be048d189a89fb2dc93c96f763":[12,0,37,17,0],
-"struct_process_1_1_control_setup.html#a9bf51d3923572302660538704dd042ad":[12,0,37,17,3],
-"struct_process_1_1_control_setup.html#abe02bbfcefe5836cafdd4d46d65c7f12":[12,0,37,17,2],
-"struct_process_1_1_control_setup.html#aecc2c4ee191343419688e578b290cf1c":[12,0,37,17,1]
+"struct_process_1_1_context.html#a58dd39a6e6eeb0e2d45436630ddeef15":[12,0,37,13,3]
 };

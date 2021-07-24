@@ -147,8 +147,9 @@ var searchData=
   ['automationrecorder_145',['AutomationRecorder',['../class_recording_1_1_automation_recorder.html',1,'Recording']]],
   ['autoplay_146',['autoplay',['../structscore_1_1_application_settings.html#ae2b0c986e978926b5acc72732490123d',1,'score::ApplicationSettings']]],
   ['autouisetup_147',['AutoUISetup',['../struct_control_1_1_auto_u_i_setup.html',1,'Control']]],
-  ['availableplugin_148',['AvailablePlugin',['../structvst3_1_1_available_plugin.html',1,'vst3']]],
-  ['avcodeccontext_5ffree_149',['AVCodecContext_Free',['../struct_media_1_1_a_v_codec_context___free.html',1,'Media']]],
-  ['avformatcontext_5ffree_150',['AVFormatContext_Free',['../struct_media_1_1_a_v_format_context___free.html',1,'Media']]],
-  ['avframe_5ffree_151',['AVFrame_Free',['../struct_media_1_1_a_v_frame___free.html',1,'Media']]]
+  ['availablenode_148',['AvailableNode',['../struct_control_surface_1_1_node_observer_1_1_available_node.html',1,'ControlSurface::NodeObserver']]],
+  ['availableplugin_149',['AvailablePlugin',['../structvst3_1_1_available_plugin.html',1,'vst3']]],
+  ['avcodeccontext_5ffree_150',['AVCodecContext_Free',['../struct_media_1_1_a_v_codec_context___free.html',1,'Media']]],
+  ['avformatcontext_5ffree_151',['AVFormatContext_Free',['../struct_media_1_1_a_v_format_context___free.html',1,'Media']]],
+  ['avframe_5ffree_152',['AVFrame_Free',['../struct_media_1_1_a_v_frame___free.html',1,'Media']]]
 ];
