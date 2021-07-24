@@ -141,16 +141,18 @@ $(document).ready(function(){initNavTree('_midi_view_8hpp_source.html',''); init
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> keyPressEvent(QKeyEvent*) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">void</span> dropEvent(QGraphicsSceneDragDropEvent* event) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  QPainterPath m_selectArea;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">double</span> m_defaultW; <span class="comment">// Covers the [ 0; 1 ] area</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">int</span> m_min{0}, m_max{127};</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  QPixmap m_textCache;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  QPixmap m_bgCache;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">mutable</span> std::vector&lt;QPainter::PixmapFragment&gt; m_fragmentCache;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> updateBackground(<span class="keywordtype">double</span> height);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  QPainterPath m_selectArea;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">double</span> m_defaultW; <span class="comment">// Covers the [ 0; 1 ] area</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">int</span> m_min{0}, m_max{127};</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  QPixmap m_textCache;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  QPixmap m_bgCache;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">mutable</span> std::vector&lt;QPainter::PixmapFragment&gt; m_fragmentCache;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_process_1_1_layer_view_html"><div class="ttname"><a href="class_process_1_1_layer_view.html">Process::LayerView</a></div><div class="ttdef"><b>Definition:</b> LayerView.hpp:18</div></div>
