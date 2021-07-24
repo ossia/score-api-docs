@@ -1,5 +1,6 @@
 var NAVTREEINDEX64 =
 {
+"structscore_1_1_positioned_event_3_01_scenario_1_1_point_01_4.html":[12,0,44,169],
 "structscore_1_1_positioned_event_3_01_scenario_1_1_point_01_4.html#a04e63bf3e5cb1cc42980f0b0f5fd275d":[12,0,44,169,0],
 "structscore_1_1_positioned_event_3_01_scenario_1_1_point_01_4.html#a3a11b959c5bb8036b312208b8281c586":[12,0,44,169,2],
 "structscore_1_1_positioned_event_3_01_scenario_1_1_point_01_4.html#a49c8b6820691d2d63559d81450023037":[12,0,44,169,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX64 =
 "structscore_1_1_value_assigner_3_01float_01_4.html#a3ed8b56e9b85a4dfa30b27196742590a":[12,0,44,262,1],
 "structscore_1_1_value_assigner_3_01float_01_4.html#a4d4bc74b60e044e51efeeabe1e11219b":[12,0,44,262,0],
 "structscore_1_1_value_assigner_3_01float_01_4.html#a6bbb70d609af00adcfc616d366dd3493":[12,0,44,262,2],
-"structscore_1_1_value_assigner_3_01int_01_4.html":[12,0,44,263],
-"structscore_1_1_value_assigner_3_01int_01_4.html#a03d923b17ed67e8b5912f346c6f1b2c2":[12,0,44,263,0]
+"structscore_1_1_value_assigner_3_01int_01_4.html":[12,0,44,263]
 };

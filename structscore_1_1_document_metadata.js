@@ -5,6 +5,7 @@ var structscore_1_1_document_metadata =
     [ "authorChanged", "structscore_1_1_document_metadata.html#a0629305b4b1e4ac5bfdfb71f47be5344", null ],
     [ "creation", "structscore_1_1_document_metadata.html#aa747ca5e5879d846abed13160af289fa", null ],
     [ "creationChanged", "structscore_1_1_document_metadata.html#a56d9216c28f23b0732db1287769fb3f3", null ],
+    [ "documentName", "structscore_1_1_document_metadata.html#a8fae7e45081dc66d51581fd50e7ed328", null ],
     [ "fileName", "structscore_1_1_document_metadata.html#a7fe69d656c1aba02db283d14eaf44ad7", null ],
     [ "fileNameChanged", "structscore_1_1_document_metadata.html#abc7ab9c602708cb47c86d04a40a79630", null ],
     [ "lastEdition", "structscore_1_1_document_metadata.html#a22a428af396c67709d4dafd61f1ff447", null ],
