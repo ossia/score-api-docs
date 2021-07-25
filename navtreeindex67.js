@@ -1,5 +1,6 @@
 var NAVTREEINDEX67 =
 {
+"structvst3_1_1_application_plugin_1_1_scanning_process.html#afeeb5453aa160729c05ab5566b541bb5":[12,0,54,0,0,2],
 "structvst3_1_1_available_plugin.html":[12,0,54,1],
 "structvst3_1_1_available_plugin.html#a013f3b04472422d2842b360373d49de6":[12,0,54,1,3],
 "structvst3_1_1_available_plugin.html#a166bb484d49cfbce64399cb30fec71e5":[12,0,54,1,0],
