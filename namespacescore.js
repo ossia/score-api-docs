@@ -185,8 +185,6 @@ var namespacescore =
     [ "PolymorphicComponentHierarchyManager", "classscore_1_1_polymorphic_component_hierarchy_manager.html", "classscore_1_1_polymorphic_component_hierarchy_manager" ],
     [ "PositionedEvent", "structscore_1_1_positioned_event.html", "structscore_1_1_positioned_event" ],
     [ "PositionedEvent< Scenario::Point >", "structscore_1_1_positioned_event_3_01_scenario_1_1_point_01_4.html", "structscore_1_1_positioned_event_3_01_scenario_1_1_point_01_4" ],
-    [ "PostedEvent", "structscore_1_1_posted_event.html", "structscore_1_1_posted_event" ],
-    [ "PostedEventBase", "structscore_1_1_posted_event_base.html", "structscore_1_1_posted_event_base" ],
     [ "Presenter", "classscore_1_1_presenter.html", "classscore_1_1_presenter" ],
     [ "ProjectSettings", "classscore_1_1_project_settings.html", "classscore_1_1_project_settings" ],
     [ "ProjectSettingsDelegateFactory_T", "classscore_1_1_project_settings_delegate_factory___t.html", null ],
