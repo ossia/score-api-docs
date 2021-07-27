@@ -130,29 +130,29 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>label</b> () c
 <tr class="memitem:aed0ebec822928cdcfc3ed39e35cc32b2"><td class="memItemLeft" align="right" valign="top"><a id="aed0ebec822928cdcfc3ed39e35cc32b2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>all_notes_off</b> () noexcept override</td></tr>
 <tr class="separator:aed0ebec822928cdcfc3ed39e35cc32b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a701c69d99ecae4a112140fcd834bec1d"><td class="memTemplParams" colspan="2"><a id="a701c69d99ecae4a112140fcd834bec1d"></a>
+<tr class="memitem:a884e214cad2c0da03558f29daf7a1149"><td class="memTemplParams" colspan="2"><a id="a884e214cad2c0da03558f29daf7a1149"></a>
 template&lt;typename Fun &gt; </td></tr>
-<tr class="memitem:a701c69d99ecae4a112140fcd834bec1d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>dispatchMidi</b> (Fun &amp;&amp;f)</td></tr>
-<tr class="separator:a701c69d99ecae4a112140fcd834bec1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a884e214cad2c0da03558f29daf7a1149"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>dispatchMidi</b> (int64_t offset, Fun &amp;&amp;f)</td></tr>
+<tr class="separator:a884e214cad2c0da03558f29daf7a1149"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a354a831caf8d60318264918392f3b790"><td class="memItemLeft" align="right" valign="top"><a id="a354a831caf8d60318264918392f3b790"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (const ossia::token_request &amp;tk, ossia::exec_state_facade st) noexcept override</td></tr>
 <tr class="separator:a354a831caf8d60318264918392f3b790"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b5523b827d3c1546615348e4da5dfa5"><td class="memItemLeft" align="right" valign="top"><a id="a2b5523b827d3c1546615348e4da5dfa5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>processFloat</b> (std::size_t samples)</td></tr>
-<tr class="separator:a2b5523b827d3c1546615348e4da5dfa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6c5695874d6289c49c23bd274bc7d37"><td class="memItemLeft" align="right" valign="top"><a id="ae6c5695874d6289c49c23bd274bc7d37"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>processDouble</b> (std::size_t samples)</td></tr>
-<tr class="separator:ae6c5695874d6289c49c23bd274bc7d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c67dc748a4fb9a03798f82daf124eb6"><td class="memItemLeft" align="right" valign="top"><a id="a4c67dc748a4fb9a03798f82daf124eb6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>processFloat</b> (int64_t offset, int64_t samples)</td></tr>
+<tr class="separator:a4c67dc748a4fb9a03798f82daf124eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b2c54c608c637450261f2f0b63dcfe6"><td class="memItemLeft" align="right" valign="top"><a id="a7b2c54c608c637450261f2f0b63dcfe6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>processDouble</b> (int64_t offset, int64_t samples)</td></tr>
+<tr class="separator:a7b2c54c608c637450261f2f0b63dcfe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classvst_1_1vst__node__base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classvst_1_1vst__node__base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvst_1_1vst__node__base.html">vst::vst_node_base</a></td></tr>
 <tr class="memitem:a3394e443f1c905739e264f8661bd65e2 inherit pub_methods_classvst_1_1vst__node__base"><td class="memItemLeft" align="right" valign="top"><a id="a3394e443f1c905739e264f8661bd65e2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setControls</b> ()</td></tr>
 <tr class="separator:a3394e443f1c905739e264f8661bd65e2 inherit pub_methods_classvst_1_1vst__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3cfe3ed788c86ae5fcf95829d03b5a5 inherit pub_methods_classvst_1_1vst__node__base"><td class="memItemLeft" align="right" valign="top"><a id="ad3cfe3ed788c86ae5fcf95829d03b5a5"></a>
-auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>prepareInput</b> (std::size_t samples)</td></tr>
-<tr class="separator:ad3cfe3ed788c86ae5fcf95829d03b5a5 inherit pub_methods_classvst_1_1vst__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9295e394e8c4b68d8439308cb0ee4e3c inherit pub_methods_classvst_1_1vst__node__base"><td class="memItemLeft" align="right" valign="top"><a id="a9295e394e8c4b68d8439308cb0ee4e3c"></a>
-auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>prepareOutput</b> (std::size_t samples)</td></tr>
-<tr class="separator:a9295e394e8c4b68d8439308cb0ee4e3c inherit pub_methods_classvst_1_1vst__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a396d47dc1812886c14db3756cd136dca inherit pub_methods_classvst_1_1vst__node__base"><td class="memItemLeft" align="right" valign="top"><a id="a396d47dc1812886c14db3756cd136dca"></a>
+auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>prepareInput</b> (int64_t offset, int64_t samples)</td></tr>
+<tr class="separator:a396d47dc1812886c14db3756cd136dca inherit pub_methods_classvst_1_1vst__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5e220bc708cd0e6c6aa61c01078761c inherit pub_methods_classvst_1_1vst__node__base"><td class="memItemLeft" align="right" valign="top"><a id="ac5e220bc708cd0e6c6aa61c01078761c"></a>
+auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>prepareOutput</b> (int64_t offset, int64_t samples)</td></tr>
+<tr class="separator:ac5e220bc708cd0e6c6aa61c01078761c inherit pub_methods_classvst_1_1vst__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3831c663ceb7eb3653d587321358e2af inherit pub_methods_classvst_1_1vst__node__base"><td class="memItemLeft" align="right" valign="top"><a id="a3831c663ceb7eb3653d587321358e2af"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setupTimeInfo</b> (const ossia::token_request &amp;tk, ossia::exec_state_facade st)</td></tr>
 <tr class="separator:a3831c663ceb7eb3653d587321358e2af inherit pub_methods_classvst_1_1vst__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
