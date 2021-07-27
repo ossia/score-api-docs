@@ -1,5 +1,6 @@
 var NAVTREEINDEX54 =
 {
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#ab0fe3a8b5b2e6254ee6a229c9d4ff27b":[12,0,27,3,12,10],
 "struct_media_1_1_sound_1_1_waveform_computer_impl.html#ab57285745f49c59fbe8aabb62ce24031":[12,0,27,3,12,3],
 "struct_media_1_1_sound_1_1_waveform_computer_impl.html#ac66b153f70b017ead9254eca216e1563":[12,0,27,3,12,16],
 "struct_media_1_1_sound_1_1_waveform_computer_impl.html#accfb5b5ee18df6beaa17b33627cd4660":[12,0,27,3,12,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX54 =
 "struct_nodes_1_1_factor_oracle_1_1_node_1_1_state.html":[12,0,32,10,1,1],
 "struct_nodes_1_1_factor_oracle_1_1_node_1_1_state.html#a27c1a45a42426cf7ac2143e61998e4a5":[12,0,32,10,1,1,2],
 "struct_nodes_1_1_factor_oracle_1_1_node_1_1_state.html#af1a6d9230411c9d5a1148de4efa4c0c1":[12,0,32,10,1,1,1],
-"struct_nodes_1_1_factor_oracle_1_1_node_1_1_state.html#af316491af51facd144e207ff95a4cac0":[12,0,32,10,1,1,0],
-"struct_nodes_1_1_factor_oracle_1_1safe__vector.html":[12,0,32,10,2]
+"struct_nodes_1_1_factor_oracle_1_1_node_1_1_state.html#af316491af51facd144e207ff95a4cac0":[12,0,32,10,1,1,0]
 };

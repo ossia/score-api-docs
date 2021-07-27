@@ -121,9 +121,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a22180ff9d2894f4046aa0df099eb8e08"><td class="memItemLeft" align="right" valign="top"><a id="a22180ff9d2894f4046aa0df099eb8e08"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>vst_node</b> (std::shared_ptr&lt; <a class="el" href="structvst_1_1_a_effect_wrapper.html">AEffectWrapper</a> &gt; dat, int sampleRate)</td></tr>
-<tr class="separator:a22180ff9d2894f4046aa0df099eb8e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64844530bdb81441a818e5dd8ac6688f"><td class="memItemLeft" align="right" valign="top"><a id="a64844530bdb81441a818e5dd8ac6688f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>vst_node</b> (std::shared_ptr&lt; <a class="el" href="structvst_1_1_a_effect_wrapper.html">AEffectWrapper</a> &gt; dat, int sampleRate, int bs)</td></tr>
+<tr class="separator:a64844530bdb81441a818e5dd8ac6688f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71adcacc006f424a3783fe3b37416058"><td class="memItemLeft" align="right" valign="top"><a id="a71adcacc006f424a3783fe3b37416058"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>label</b> () const noexcept override</td></tr>
 <tr class="separator:a71adcacc006f424a3783fe3b37416058"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,6 +159,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setupTimeInfo</b> (co
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:ac2cbf9d6d9b0e5bbe2599e8d573f7941"><td class="memItemLeft" align="right" valign="top"><a id="ac2cbf9d6d9b0e5bbe2599e8d573f7941"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_bs</b> {}</td></tr>
+<tr class="separator:ac2cbf9d6d9b0e5bbe2599e8d573f7941"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01d70fb3593692add755c8ef4a1ce8ec"><td class="memItemLeft" align="right" valign="top"><a id="a01d70fb3593692add755c8ef4a1ce8ec"></a>
 std::conditional_t&lt;!UseDouble, std::array&lt; ossia::float_vector, 2 &gt;, <a class="el" href="structvst_1_1vst__node_1_1dummy__t.html">dummy_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>float_v</b></td></tr>
 <tr class="separator:a01d70fb3593692add755c8ef4a1ce8ec"><td class="memSeparator" colspan="2">&#160;</td></tr>

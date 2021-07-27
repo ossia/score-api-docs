@@ -1,5 +1,6 @@
 var NAVTREEINDEX53 =
 {
+"struct_l_v2_1_1_host_context.html#a3e9f1187adcf0e92e838ccade3328cb0":[12,0,25,3,8],
 "struct_l_v2_1_1_host_context.html#a41566a0988560a92a4c493511e447eaf":[12,0,25,3,19],
 "struct_l_v2_1_1_host_context.html#a4bf5f060890c7ffdb08cd124744adc29":[12,0,25,3,16],
 "struct_l_v2_1_1_host_context.html#a4f4a348ee30a84a035e8fd4401c7d699":[12,0,25,3,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX53 =
 "struct_media_1_1_sound_1_1_waveform_computer_impl.html#a6bddae0e109eb92e1f3f45eba1623a3b":[12,0,27,3,12,4],
 "struct_media_1_1_sound_1_1_waveform_computer_impl.html#a773e85bd25945d6447fb5f0dcbdc113a":[12,0,27,3,12,12],
 "struct_media_1_1_sound_1_1_waveform_computer_impl.html#a98cbe7cb83aee57f83777d70ec90d262":[12,0,27,3,12,9],
-"struct_media_1_1_sound_1_1_waveform_computer_impl.html#aae73ae8d4333064505686e3429e560e8":[12,0,27,3,12,7],
-"struct_media_1_1_sound_1_1_waveform_computer_impl.html#ab0fe3a8b5b2e6254ee6a229c9d4ff27b":[12,0,27,3,12,10]
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#aae73ae8d4333064505686e3429e560e8":[12,0,27,3,12,7]
 };
