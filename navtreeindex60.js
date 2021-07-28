@@ -1,5 +1,6 @@
 var NAVTREEINDEX60 =
 {
+"struct_scenario_1_1_slot.html#ac012744b2d36e07463882fd1b3d9e3d5":[12,0,43,241,2],
 "struct_scenario_1_1_slot.html#adcbfaefe9a125442c118598e1811e14d":[12,0,43,241,9],
 "struct_scenario_1_1_slot.html#af19d2260a15797ca089cc68c57233c5e":[12,0,43,241,13],
 "struct_scenario_1_1_slot.html#afb3cbe5bf847e941f34728104b135c03":[12,0,43,241,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX60 =
 "struct_state_1_1_unit_model_1_1_dataspace_model.html#ae6870432357bc974cd6e90e732e193e4":[12,0,48,29,1,2],
 "struct_state_1_1_unit_model_1_1_dataspace_model.html#af950d611af688679e6977367ba0dc1d9":[12,0,48,29,1,1],
 "struct_state_1_1_unit_model_1_1_tree_node.html":[12,0,48,29,2],
-"struct_state_1_1_unit_model_1_1_tree_node.html#a61ce5d45fd4f3bcc4e137cac07c87246":[12,0,48,29,2,0],
-"struct_state_1_1_unit_model_1_1_tree_node.html#a7d645743d37e44a51969cdefbdfc6ec9":[12,0,48,29,2,1]
+"struct_state_1_1_unit_model_1_1_tree_node.html#a61ce5d45fd4f3bcc4e137cac07c87246":[12,0,48,29,2,0]
 };

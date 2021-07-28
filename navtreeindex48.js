@@ -1,5 +1,6 @@
 var NAVTREEINDEX48 =
 {
+"score-plugin-jit_2_benchmarks_2_gain_8hpp_source.html":[13,0,437],
 "score-plugin-jit_2_jit_cpp_2_application_plugin_8hpp_source.html":[13,0,51],
 "score-plugin-jit_2_jit_cpp_2_edit_script_8hpp_source.html":[13,0,337],
 "score-plugin-js_2_j_s_2_commands_2_edit_script_8hpp_source.html":[13,0,338],
@@ -248,6 +249,5 @@ var NAVTREEINDEX48 =
 "struct_control_1_1_executor_gui_update.html#ac67de09649b5ad256f7a22eebbad691c":[12,0,3,12,2],
 "struct_control_1_1_executor_gui_update.html#af512470c1b86b17f7e3a2d9e7a69679f":[12,0,3,12,0],
 "struct_control_1_1_float_control.html":[12,0,3,13],
-"struct_control_1_1_float_control.html#a2e63a4ad1127546e8982454a16dca676":[12,0,3,13,11],
-"struct_control_1_1_float_control.html#a3abe40c464f05390a03b7fb590e443b7":[12,0,3,13,4]
+"struct_control_1_1_float_control.html#a2e63a4ad1127546e8982454a16dca676":[12,0,3,13,11]
 };

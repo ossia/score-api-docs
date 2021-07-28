@@ -1,5 +1,6 @@
 var NAVTREEINDEX47 =
 {
+"classvst_1_1_model.html#adbd71f4715f62f77642c87918594504c":[12,0,53,11,8],
 "classvst_1_1_model.html#ae30dfe2e738eca3842123b76317e5d08":[12,0,53,11,9],
 "classvst_1_1_model.html#ae575404b3f0780b5cea0638a9f79bd3f":[12,0,53,11,0],
 "classvst_1_1_model.html#afa447e4d7989990e49645f3e4bff6dce":[12,0,53,11,7],
@@ -57,8 +58,8 @@ var NAVTREEINDEX47 =
 "data_structures_8hpp_source.html":[13,0,260],
 "element_finding_helper_8hpp_source.html":[13,0,347],
 "files.html":[13,0],
-"functions.html":[12,3,0,0],
 "functions.html":[12,3,0],
+"functions.html":[12,3,0,0],
 "functions_b.html":[12,3,0,1],
 "functions_c.html":[12,3,0,2],
 "functions_d.html":[12,3,0,3],
@@ -135,13 +136,13 @@ var NAVTREEINDEX47 =
 "namespace_gfx.html":[11,0,5],
 "namespace_inspector.html":[12,0,17],
 "namespace_inspector.html":[11,0,6],
-"namespace_local_tree.html":[12,0,24],
 "namespace_local_tree.html":[11,0,7],
+"namespace_local_tree.html":[12,0,24],
 "namespace_plugin_loader.html":[11,0,8],
 "namespace_process.html":[12,0,37],
 "namespace_process.html":[11,0,9],
-"namespace_scenario.html":[11,0,10],
 "namespace_scenario.html":[12,0,43],
+"namespace_scenario.html":[11,0,10],
 "namespace_state.html":[11,0,12],
 "namespace_state.html":[12,0,48],
 "namespacemembers.html":[11,1,0],
@@ -150,8 +151,8 @@ var NAVTREEINDEX47 =
 "namespacemembers_func.html":[11,1,1],
 "namespacemembers_type.html":[11,1,2],
 "namespaces.html":[11,0],
-"namespacescore.html":[12,0,44],
 "namespacescore.html":[11,0,11],
+"namespacescore.html":[12,0,44],
 "namespacescore_1_1gfx.html":[12,0,44,2],
 "namespacescore_1_1gfx.html":[11,0,11,0],
 "pages.html":[],
@@ -248,6 +249,5 @@ var NAVTREEINDEX47 =
 "score-plugin-gfx_2_gfx_2_video_2_inspector_8hpp_source.html":[13,0,495],
 "score-plugin-gfx_2_gfx_2_video_2_layer_8hpp_source.html":[13,0,574],
 "score-plugin-gfx_2_gfx_2_video_2_process_8hpp_source.html":[13,0,874],
-"score-plugin-gfx_2_gfx_2_video_2_view_8hpp_source.html":[13,0,1280],
-"score-plugin-jit_2_benchmarks_2_gain_8hpp_source.html":[13,0,437]
+"score-plugin-gfx_2_gfx_2_video_2_view_8hpp_source.html":[13,0,1280]
 };

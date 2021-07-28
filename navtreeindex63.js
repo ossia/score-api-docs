@@ -1,5 +1,6 @@
 var NAVTREEINDEX63 =
 {
+"structscore_1_1_brush_set.html#a4e11f1014705762efaf9e5447fb2ee5f":[12,0,44,31,7],
 "structscore_1_1_brush_set.html#a718873a7c4a78e0bd73c7cf2bbede03b":[12,0,44,31,17],
 "structscore_1_1_brush_set.html#a783c55b69960732a05f35ea956bc3fc0":[12,0,44,31,6],
 "structscore_1_1_brush_set.html#a867ac207ac0a5913a7018d585ed752a1":[12,0,44,31,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX63 =
 "structscore_1_1_plugin_loader_1_1_plugin_dependency_graph_1_1_graph_vertex.html#adcea79500f335a2d9066138b9b6c1d24":[12,0,44,4,0,0,1],
 "structscore_1_1_plugin_loader_1_1_plugin_dependency_graph_1_1_graph_vertex.html#aeffd9d5576cf31b1bc96442d547f12b6":[12,0,44,4,0,0,0],
 "structscore_1_1_polymorphic_component_hierarchy_manager_1_1_child_pair.html":[12,0,44,167,0],
-"structscore_1_1_polymorphic_component_hierarchy_manager_1_1_child_pair.html#a9486c82f2db160bbad4498a501e67db2":[12,0,44,167,0,1],
-"structscore_1_1_polymorphic_component_hierarchy_manager_1_1_child_pair.html#ad571a5e92b8dc556563a2e49dcae6999":[12,0,44,167,0,0]
+"structscore_1_1_polymorphic_component_hierarchy_manager_1_1_child_pair.html#a9486c82f2db160bbad4498a501e67db2":[12,0,44,167,0,1]
 };
