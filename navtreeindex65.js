@@ -1,5 +1,7 @@
 var NAVTREEINDEX65 =
 {
+"structscore_1_1_value_double_slider.html#a3c911ce4d4b95a51b3d93bf7ddf6ab40":[12,0,44,263,1],
+"structscore_1_1_value_double_slider.html#a552a61c5b90961e9b7f86f1d173dfb35":[12,0,44,263,2],
 "structscore_1_1_value_double_slider.html#a6f75ee33ecc8802b16735b3fa9f3254e":[12,0,44,263,3],
 "structscore_1_1_value_double_slider.html#ac0c585bd3526c733e91e53fad26480a8":[12,0,44,263,4],
 "structscore_1_1_value_double_slider.html#aee561b23bf65661f9db84a513fd86807":[12,0,44,263,0],
@@ -205,6 +207,7 @@ var NAVTREEINDEX65 =
 "structscore_1_1gfx_1_1_screen_node.html#a503d5d7ca33200135ae58d800e7cae69":[12,0,44,2,41,9],
 "structscore_1_1gfx_1_1_screen_node.html#a7057c698de89ebde92bfdc38bfa01352":[12,0,44,2,41,6],
 "structscore_1_1gfx_1_1_screen_node.html#a8386d3dd3f55dc3b6808457a289f844c":[12,0,44,2,41,2],
+"structscore_1_1gfx_1_1_screen_node.html#a86bebfd13f0ae52a572f9b50c4d44170":[12,0,44,2,41,21],
 "structscore_1_1gfx_1_1_screen_node.html#a98486d365fb8301dc7190b4ab82450b1":[12,0,44,2,41,16],
 "structscore_1_1gfx_1_1_screen_node.html#aaf790703629bbdc010160d6f4daf3bf1":[12,0,44,2,41,4],
 "structscore_1_1gfx_1_1_screen_node.html#ab4b8e660eb8074d0680b89ab062252f0":[12,0,44,2,41,17],
@@ -212,6 +215,7 @@ var NAVTREEINDEX65 =
 "structscore_1_1gfx_1_1_screen_node.html#ad332ca2296069f67278e71743c10746f":[12,0,44,2,41,14],
 "structscore_1_1gfx_1_1_screen_node.html#ade1966f43193fa342d0ad7e3626f50d7":[12,0,44,2,41,5],
 "structscore_1_1gfx_1_1_screen_node.html#ae046f69b4fc662a50261ade5a874c676":[12,0,44,2,41,7],
+"structscore_1_1gfx_1_1_screen_node.html#ae667b2474fd6abf834b472716226c2f5":[12,0,44,2,41,20],
 "structscore_1_1gfx_1_1_screen_node.html#af7775e9d498f2d918ebfb7025ffcb4e7":[12,0,44,2,41,18],
 "structscore_1_1gfx_1_1_shader_cache.html":[12,0,44,2,42],
 "structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html":[12,0,44,2,43],
@@ -245,9 +249,5 @@ var NAVTREEINDEX65 =
 "structscore_1_1gfx_1_1_texgen_node_1_1ubo.html#a36a5986782b17c9cb4bca766b1a54077":[12,0,44,2,44,1,0],
 "structscore_1_1gfx_1_1_texgen_node_1_1ubo.html#a9b16fd8dd4fd3b5e31bb8c3010a16f2b":[12,0,44,2,44,1,2],
 "structscore_1_1gfx_1_1_texgen_node_1_1ubo.html#ac7f1c062e1051d2bfdea8230c3483062":[12,0,44,2,44,1,1],
-"structscore_1_1gfx_1_1_text_node.html":[12,0,44,2,45],
-"structscore_1_1gfx_1_1_text_node.html#a14cfd78db9802cff8b501cba3954378f":[12,0,44,2,45,8],
-"structscore_1_1gfx_1_1_text_node.html#a288d0fa8e9b5fb464c38730b7fba8a65":[12,0,44,2,45,4],
-"structscore_1_1gfx_1_1_text_node.html#a2ef22e0fad218b3a6a5db3695c7b982f":[12,0,44,2,45,6],
-"structscore_1_1gfx_1_1_text_node.html#a3d25baa7a92ce623b5472a4bb19a570d":[12,0,44,2,45,3]
+"structscore_1_1gfx_1_1_text_node.html":[12,0,44,2,45]
 };
