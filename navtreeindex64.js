@@ -1,5 +1,9 @@
 var NAVTREEINDEX64 =
 {
+"structscore_1_1_plugin_loader_1_1_plugin_dependency_graph_1_1_graph_vertex.html#adcea79500f335a2d9066138b9b6c1d24":[12,0,44,4,0,0,1],
+"structscore_1_1_plugin_loader_1_1_plugin_dependency_graph_1_1_graph_vertex.html#aeffd9d5576cf31b1bc96442d547f12b6":[12,0,44,4,0,0,0],
+"structscore_1_1_polymorphic_component_hierarchy_manager_1_1_child_pair.html":[12,0,44,167,0],
+"structscore_1_1_polymorphic_component_hierarchy_manager_1_1_child_pair.html#a9486c82f2db160bbad4498a501e67db2":[12,0,44,167,0,1],
 "structscore_1_1_polymorphic_component_hierarchy_manager_1_1_child_pair.html#ad571a5e92b8dc556563a2e49dcae6999":[12,0,44,167,0,0],
 "structscore_1_1_polymorphic_component_hierarchy_manager_1_1_child_pair.html#aefc4fdc71204481e3333f5e271797a07":[12,0,44,167,0,2],
 "structscore_1_1_positioned_event.html":[12,0,44,168],
@@ -245,9 +249,5 @@ var NAVTREEINDEX64 =
 "structscore_1_1_value_assigner_3_01int_01_4.html":[12,0,44,261],
 "structscore_1_1_value_assigner_3_01int_01_4.html#a03d923b17ed67e8b5912f346c6f1b2c2":[12,0,44,261,0],
 "structscore_1_1_value_assigner_3_01int_01_4.html#a476b59674079f702fdc748096970fbe2":[12,0,44,261,1],
-"structscore_1_1_value_assigner_3_01int_01_4.html#ab6f8bd3e306f4f76d20bdb1b4d9df32d":[12,0,44,261,2],
-"structscore_1_1_value_assigner_3_01ossia_1_1value_01_4.html":[12,0,44,262],
-"structscore_1_1_value_assigner_3_01ossia_1_1value_01_4.html#a1247df9a8824a33e6bd5342305b0bcc5":[12,0,44,262,1],
-"structscore_1_1_value_assigner_3_01ossia_1_1value_01_4.html#a26caebd6e212849202d64eff418a1a8f":[12,0,44,262,0],
-"structscore_1_1_value_assigner_3_01ossia_1_1value_01_4.html#a73c90613f2026a95f69e155316f0a17a":[12,0,44,262,2]
+"structscore_1_1_value_assigner_3_01int_01_4.html#ab6f8bd3e306f4f76d20bdb1b4d9df32d":[12,0,44,261,2]
 };

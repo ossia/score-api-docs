@@ -145,6 +145,7 @@ var annotated_dup =
         [ "RemoveNodes", "class_explorer_1_1_command_1_1_remove_nodes.html", null ],
         [ "ReplaceDevice", "class_explorer_1_1_command_1_1_replace_device.html", "class_explorer_1_1_command_1_1_replace_device" ],
         [ "UpdateAddressSettings", "class_explorer_1_1_command_1_1_update_address_settings.html", "class_explorer_1_1_command_1_1_update_address_settings" ],
+        [ "UpdateAndReloadMacro", "class_explorer_1_1_command_1_1_update_and_reload_macro.html", null ],
         [ "UpdateDeviceSettings", "class_explorer_1_1_command_1_1_update_device_settings.html", "class_explorer_1_1_command_1_1_update_device_settings" ]
       ] ],
       [ "ProjectSettings", null, [

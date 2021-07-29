@@ -1,5 +1,9 @@
 var NAVTREEINDEX47 =
 {
+"classvst_1_1_model.html#ab8589e3455c23f4d1cda67353df53301":[12,0,53,11,5],
+"classvst_1_1_model.html#ac2c1118d2bf28a70cc8c4b758c44764a":[12,0,53,11,12],
+"classvst_1_1_model.html#acdf4ef3f57556a8ab6e72390863f0b5b":[12,0,53,11,4],
+"classvst_1_1_model.html#ad96f1eca17e1c063221eacc5378a766c":[12,0,53,11,6],
 "classvst_1_1_model.html#adbd71f4715f62f77642c87918594504c":[12,0,53,11,8],
 "classvst_1_1_model.html#ae30dfe2e738eca3842123b76317e5d08":[12,0,53,11,9],
 "classvst_1_1_model.html#ae575404b3f0780b5cea0638a9f79bd3f":[12,0,53,11,0],
@@ -125,10 +129,10 @@ var NAVTREEINDEX47 =
 "namespace_automation.html":[11,0,0],
 "namespace_curve.html":[12,0,5],
 "namespace_curve.html":[11,0,1],
-"namespace_device.html":[12,0,7],
 "namespace_device.html":[11,0,2],
-"namespace_engine.html":[11,0,3],
+"namespace_device.html":[12,0,7],
 "namespace_engine.html":[12,0,8],
+"namespace_engine.html":[11,0,3],
 "namespace_engine_1_1_network.html":[11,0,3,0],
 "namespace_execution.html":[11,0,4],
 "namespace_execution.html":[12,0,9],
@@ -151,8 +155,8 @@ var NAVTREEINDEX47 =
 "namespacemembers_func.html":[11,1,1],
 "namespacemembers_type.html":[11,1,2],
 "namespaces.html":[11,0],
-"namespacescore.html":[11,0,11],
 "namespacescore.html":[12,0,44],
+"namespacescore.html":[11,0,11],
 "namespacescore_1_1gfx.html":[12,0,44,2],
 "namespacescore_1_1gfx.html":[11,0,11,0],
 "pages.html":[],
@@ -245,9 +249,5 @@ var NAVTREEINDEX47 =
 "score-plugin-gfx_2_gfx_2_text_2_executor_8hpp_source.html":[13,0,384],
 "score-plugin-gfx_2_gfx_2_text_2_layer_8hpp_source.html":[13,0,573],
 "score-plugin-gfx_2_gfx_2_text_2_process_8hpp_source.html":[13,0,873],
-"score-plugin-gfx_2_gfx_2_video_2_executor_8hpp_source.html":[13,0,385],
-"score-plugin-gfx_2_gfx_2_video_2_inspector_8hpp_source.html":[13,0,495],
-"score-plugin-gfx_2_gfx_2_video_2_layer_8hpp_source.html":[13,0,574],
-"score-plugin-gfx_2_gfx_2_video_2_process_8hpp_source.html":[13,0,874],
-"score-plugin-gfx_2_gfx_2_video_2_view_8hpp_source.html":[13,0,1280]
+"score-plugin-gfx_2_gfx_2_video_2_executor_8hpp_source.html":[13,0,385]
 };

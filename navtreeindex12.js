@@ -1,5 +1,8 @@
 var NAVTREEINDEX12 =
 {
+"class_execution_1_1_state_component.html#ad50323445dbb072a6c27cc3f96f12d29":[12,0,9,44,0],
+"class_execution_1_1_state_component.html#af72f43fe90a35107cd52802b0c1991a6":[12,0,9,44,3],
+"class_execution_1_1_state_component_base.html":[12,0,9,45],
 "class_execution_1_1_state_component_base.html#a5e893dcec3666158222f14faf7653ede":[12,0,9,45,10],
 "class_execution_1_1_state_component_base.html#a6af1aa51c09cb9c92f8beacec48f7c58":[12,0,9,45,16],
 "class_execution_1_1_state_component_base.html#a6b6f0282c75122fd0a25a55db81e0b50":[12,0,9,45,8],
@@ -213,9 +216,10 @@ var NAVTREEINDEX12 =
 "class_explorer_1_1_command_1_1_update_address_settings.html":[12,0,10,0,8],
 "class_explorer_1_1_command_1_1_update_address_settings.html#a51e375d5cb54cce2ebf561a6fad34374":[12,0,10,0,8,1],
 "class_explorer_1_1_command_1_1_update_address_settings.html#a6beaf327a0df6121d9e2f2b2fe752b8a":[12,0,10,0,8,0],
-"class_explorer_1_1_command_1_1_update_device_settings.html":[12,0,10,0,9],
-"class_explorer_1_1_command_1_1_update_device_settings.html#a54d33b294cd79dda30ae3b095455cefc":[12,0,10,0,9,1],
-"class_explorer_1_1_command_1_1_update_device_settings.html#adabf7560fb5a1828b40bf3449ff9d00d":[12,0,10,0,9,0],
+"class_explorer_1_1_command_1_1_update_and_reload_macro.html":[12,0,10,0,9],
+"class_explorer_1_1_command_1_1_update_device_settings.html":[12,0,10,0,10],
+"class_explorer_1_1_command_1_1_update_device_settings.html#a54d33b294cd79dda30ae3b095455cefc":[12,0,10,0,10,1],
+"class_explorer_1_1_command_1_1_update_device_settings.html#adabf7560fb5a1828b40bf3449ff9d00d":[12,0,10,0,10,0],
 "class_explorer_1_1_default_listening_handler.html":[12,0,10,23],
 "class_explorer_1_1_default_listening_handler.html#af4976f1dfc3a8205ec1c8669c851e3a4":[12,0,10,23,0],
 "class_explorer_1_1_default_listening_handler_factory.html":[12,0,10,24],
@@ -245,9 +249,5 @@ var NAVTREEINDEX12 =
 "class_explorer_1_1_device_edit_dialog.html#a6f1dc3460dd56e8cca7a723e76766eca":[12,0,10,26,1],
 "class_explorer_1_1_device_edit_dialog.html#a77c52f3bb8f21f838cf8b283cfb39fac":[12,0,10,26,7],
 "class_explorer_1_1_device_edit_dialog.html#aa0e65c84e320a1eaffcb5adc6fa4f1ab":[12,0,10,26,5],
-"class_explorer_1_1_device_edit_dialog.html#ab20251ea98004dae10bb6c537c6812e1":[12,0,10,26,0],
-"class_explorer_1_1_device_edit_dialog.html#ab20251ea98004dae10bb6c537c6812e1a1d688f0c341d92485b97092c9a7a26da":[12,0,10,26,0,1],
-"class_explorer_1_1_device_edit_dialog.html#ab20251ea98004dae10bb6c537c6812e1a7de3926e594f157c0ebaad052f46af34":[12,0,10,26,0,0],
-"class_explorer_1_1_device_edit_dialog.html#ae1677e6893c95814f73ac6cbd54ad964":[12,0,10,26,8],
-"class_explorer_1_1_device_edit_dialog.html#aea4edb35a286038009648dc62364dca4":[12,0,10,26,2]
+"class_explorer_1_1_device_edit_dialog.html#ab20251ea98004dae10bb6c537c6812e1":[12,0,10,26,0]
 };
