@@ -1,8 +1,5 @@
 var NAVTREEINDEX50 =
 {
-"struct_curve_1_1_style.html#a9eea13bca928960229ac6231ca94bdf5":[12,0,5,46,3],
-"struct_curve_1_1_style.html#aa2e29d5d92431d5c619d3f6837d0be54":[12,0,5,46,1],
-"struct_curve_1_1_style.html#aa81590a2b9e3a246d97d56a6075c9a82":[12,0,5,46,9],
 "struct_curve_1_1_style.html#ace6216e3bad50cbcec0a25cc87292cd0":[12,0,5,46,14],
 "struct_curve_1_1_style.html#ad92fe1669dfadf91724dce3293786128":[12,0,5,46,2],
 "struct_curve_1_1_style.html#ae8a0ab419093057f8af324abfce97b40":[12,0,5,46,15],
@@ -249,5 +246,8 @@ var NAVTREEINDEX50 =
 "struct_execution_1_1_settings_1_1_commit_policies.html":[12,0,9,1,0],
 "struct_execution_1_1_settings_1_1_commit_policies.html#a302078563919afaa574e4fe32a397dd8":[12,0,9,1,0,3],
 "struct_execution_1_1_settings_1_1_commit_policies.html#a5545217d2d6961cf2e907d05c79ac65f":[12,0,9,1,0,2],
-"struct_execution_1_1_settings_1_1_commit_policies.html#a87b999e3cb232b1ed59ba359ac9cc024":[12,0,9,1,0,1]
+"struct_execution_1_1_settings_1_1_commit_policies.html#a87b999e3cb232b1ed59ba359ac9cc024":[12,0,9,1,0,1],
+"struct_execution_1_1_settings_1_1_commit_policies.html#aa4186857b39a9f84e481176cc7a740b7":[12,0,9,1,0,0],
+"struct_execution_1_1_settings_1_1_commit_policies.html#abc777bb8c08676f662db097aed0012de":[12,0,9,1,0,4],
+"struct_execution_1_1_settings_1_1_merging_policies.html":[12,0,9,1,1]
 };

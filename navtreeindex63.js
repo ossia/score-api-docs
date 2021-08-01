@@ -1,8 +1,5 @@
 var NAVTREEINDEX63 =
 {
-"structscore_1_1_brush_set.html#a30c2fcee5e8152d46637d4f399539f66":[12,0,44,31,4],
-"structscore_1_1_brush_set.html#a372d2f91b5faa46d5df7de60b9b69dbc":[12,0,44,31,1],
-"structscore_1_1_brush_set.html#a4a1d15b73c3b7d7342ef77545791ccaa":[12,0,44,31,10],
 "structscore_1_1_brush_set.html#a4a43c12c11bcaac6b0ac880542b1523f":[12,0,44,31,13],
 "structscore_1_1_brush_set.html#a4e11f1014705762efaf9e5447fb2ee5f":[12,0,44,31,7],
 "structscore_1_1_brush_set.html#a718873a7c4a78e0bd73c7cf2bbede03b":[12,0,44,31,17],
@@ -249,5 +246,8 @@ var NAVTREEINDEX63 =
 "structscore_1_1_plugin_loader_1_1_plugin_dependency_graph.html#aeabe48bb5cc427b903d3e2e6c265d801":[12,0,44,4,0,3],
 "structscore_1_1_plugin_loader_1_1_plugin_dependency_graph.html#af3a354f07d12e8ec411f65eddef9ff76":[12,0,44,4,0,2],
 "structscore_1_1_plugin_loader_1_1_plugin_dependency_graph_1_1_graph_vertex.html":[12,0,44,4,0,0],
-"structscore_1_1_plugin_loader_1_1_plugin_dependency_graph_1_1_graph_vertex.html#a29344ba2a5e57f48e1ce31351669e436":[12,0,44,4,0,0,2]
+"structscore_1_1_plugin_loader_1_1_plugin_dependency_graph_1_1_graph_vertex.html#a29344ba2a5e57f48e1ce31351669e436":[12,0,44,4,0,0,2],
+"structscore_1_1_plugin_loader_1_1_plugin_dependency_graph_1_1_graph_vertex.html#adcea79500f335a2d9066138b9b6c1d24":[12,0,44,4,0,0,1],
+"structscore_1_1_plugin_loader_1_1_plugin_dependency_graph_1_1_graph_vertex.html#aeffd9d5576cf31b1bc96442d547f12b6":[12,0,44,4,0,0,0],
+"structscore_1_1_polymorphic_component_hierarchy_manager_1_1_child_pair.html":[12,0,44,167,0]
 };

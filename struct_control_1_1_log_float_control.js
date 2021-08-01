@@ -1,6 +1,5 @@
 var struct_control_1_1_log_float_control =
 [
-    [ "port_type", "struct_control_1_1_log_float_control.html#a0127dff2ff3d13fcdd62d3799f66cd9d", null ],
     [ "type", "struct_control_1_1_log_float_control.html#adce2dcae2643f3ad4e3a74e95f8a2618", null ],
     [ "LogFloatControl", "struct_control_1_1_log_float_control.html#abe472d0fe294b0200a73b9824f381e9d", null ],
     [ "create_inlet", "struct_control_1_1_log_float_control.html#aa4801ecbe177a1153e0d8e42d32fcd7f", null ],

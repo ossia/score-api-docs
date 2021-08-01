@@ -1,6 +1,5 @@
 var struct_control_1_1_float_control =
 [
-    [ "port_type", "struct_control_1_1_float_control.html#ad96cc3544776b536fdc8e78946acac28", null ],
     [ "type", "struct_control_1_1_float_control.html#aeb903b22cb9cb25c637b6c97eaf2cae3", null ],
     [ "FloatControl", "struct_control_1_1_float_control.html#aef64fc4efa7d68b2aa9d6202e595d634", null ],
     [ "create_inlet", "struct_control_1_1_float_control.html#acb1d2568dca9cd67c02314652f5aa8f5", null ],

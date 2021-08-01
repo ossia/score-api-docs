@@ -1,6 +1,5 @@
 var struct_control_1_1_out_control =
 [
-    [ "port_type", "struct_control_1_1_out_control.html#a301f3d58a7ee00002e6df367c943207e", null ],
     [ "type", "struct_control_1_1_out_control.html#a422de713dcffdb4a2d9cd6ea98bd8426", null ],
     [ "OutControl", "struct_control_1_1_out_control.html#a5d15fd0f8ad019e1705f20d237883d25", null ],
     [ "create_outlet", "struct_control_1_1_out_control.html#ae8ab7d5c5f83f521d29e309afb4b4b91", null ],

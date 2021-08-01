@@ -1,6 +1,5 @@
 var struct_control_1_1_button =
 [
-    [ "port_type", "struct_control_1_1_button.html#a80d98e2a6aeee6760e928f51e00c6e2b", null ],
     [ "type", "struct_control_1_1_button.html#ad8647dbbbb2d19101fd9c314c9c0b85b", null ],
     [ "Button", "struct_control_1_1_button.html#aac104a3054e8ee463e3c0ab1714fca5d", null ],
     [ "create_inlet", "struct_control_1_1_button.html#acea2931e183db113cb3d1a84429df07b", null ],

@@ -1,7 +1,6 @@
 var struct_control_1_1_enum_base =
 [
     [ "Pixmaps_T", "struct_control_1_1_enum_base.html#a3f5a05b7f209aa168bb81bed3d739dd4", null ],
-    [ "port_type", "struct_control_1_1_enum_base.html#a9f38c994b8b4cd0f145abbb335482da1", null ],
     [ "type", "struct_control_1_1_enum_base.html#af239ff82b954c08088ef43681b2b77d7", null ],
     [ "EnumBase", "struct_control_1_1_enum_base.html#a4b62d03a7f20b866915e457e3b7c97fe", null ],
     [ "EnumBase", "struct_control_1_1_enum_base.html#ae19dda4cd2f37df296837f9795d1baed", null ],

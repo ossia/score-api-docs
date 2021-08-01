@@ -1,6 +1,5 @@
 var struct_control_1_1_combo_box =
 [
-    [ "port_type", "struct_control_1_1_combo_box.html#af957b59f1bd11334cca39d214953c777", null ],
     [ "type", "struct_control_1_1_combo_box.html#a66f1b2ca09e0df45430f1428322df2fd", null ],
     [ "ComboBox", "struct_control_1_1_combo_box.html#a47620cd8ad7138388a64fa38913b185c", null ],
     [ "create_inlet", "struct_control_1_1_combo_box.html#a4b9004ccfbe4482a7c3c6238fb570ac8", null ],

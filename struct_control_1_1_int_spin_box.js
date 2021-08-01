@@ -1,6 +1,5 @@
 var struct_control_1_1_int_spin_box =
 [
-    [ "port_type", "struct_control_1_1_int_spin_box.html#aa6e84bb13d9c537821897aae4d40a529", null ],
     [ "type", "struct_control_1_1_int_spin_box.html#a00cbc77ee92b3ce6b88e375a1b2b46a2", null ],
     [ "IntSpinBox", "struct_control_1_1_int_spin_box.html#aba8adcf845a87e0f845de8f699620f88", null ],
     [ "create_inlet", "struct_control_1_1_int_spin_box.html#a4a9c1298100d8f015a419f5cb882bf24", null ],

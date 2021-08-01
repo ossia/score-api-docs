@@ -300,7 +300,7 @@ $(document).ready(function(){initNavTree('_control_widget_domains_8hpp_source.ht
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;      {</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="keyword">auto</span>&amp; min = *min_vec2;</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keyword">auto</span>&amp; max = *max_vec2;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; min.size(); i++) {</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; min.size(); i++) {</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="keywordflow">if</span> (max[i] - min[i] == 0)</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;          max[i] = min[i] + 1;</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        }</div>

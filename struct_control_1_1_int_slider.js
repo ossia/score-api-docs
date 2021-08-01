@@ -1,6 +1,5 @@
 var struct_control_1_1_int_slider =
 [
-    [ "port_type", "struct_control_1_1_int_slider.html#a97e1d7d7320229f15a351e0f8aedecd9", null ],
     [ "type", "struct_control_1_1_int_slider.html#a3f870c9b92546c520107e7bd2cdf5f3d", null ],
     [ "IntSlider", "struct_control_1_1_int_slider.html#affee34887256237a4d04c439fb747eca", null ],
     [ "create_inlet", "struct_control_1_1_int_slider.html#a225dbfa504160253921efaa5daa43742", null ],

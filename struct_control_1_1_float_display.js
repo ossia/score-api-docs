@@ -1,6 +1,5 @@
 var struct_control_1_1_float_display =
 [
-    [ "port_type", "struct_control_1_1_float_display.html#a6f15c65dc7f7a4a5f2681c27101a7880", null ],
     [ "type", "struct_control_1_1_float_display.html#a0336d6ea1f78dd78a05d297f75988ac3", null ],
     [ "FloatDisplay", "struct_control_1_1_float_display.html#ae56503dbcc136cbf4f2dbe7d16b2873b", null ],
     [ "create_outlet", "struct_control_1_1_float_display.html#af6b3ceb6f6b829a8193d99780bd93bf6", null ],

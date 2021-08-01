@@ -1,6 +1,5 @@
 var struct_control_1_1_toggle =
 [
-    [ "port_type", "struct_control_1_1_toggle.html#ab22764f0c3736e4bfc72e9274f823710", null ],
     [ "type", "struct_control_1_1_toggle.html#a1a1565192311afef0f7c365b2dd79b2d", null ],
     [ "Toggle", "struct_control_1_1_toggle.html#a87c78018953585a3d4f20cf68d064bea", null ],
     [ "create_inlet", "struct_control_1_1_toggle.html#a65c08638a82bd672aea528f3d6617e5b", null ],
