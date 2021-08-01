@@ -98,17 +98,16 @@ var NAVTREEINDEX14 =
 "class_gfx_1_1_gfx_context.html":[12,0,15,24],
 "class_gfx_1_1_gfx_context.html#a01e1fef0587a47d60f8d0dcbfb9e1e98":[12,0,15,24,10],
 "class_gfx_1_1_gfx_context.html#a24f63ee1d8f87064363c599af86bf79b":[12,0,15,24,3],
-"class_gfx_1_1_gfx_context.html#a27273530c8430156fa3fd63565226a42":[12,0,15,24,12],
+"class_gfx_1_1_gfx_context.html#a27273530c8430156fa3fd63565226a42":[12,0,15,24,11],
 "class_gfx_1_1_gfx_context.html#a4fa73685b9410bcf6cfbbeb9e204bcb5":[12,0,15,24,4],
 "class_gfx_1_1_gfx_context.html#a57150adbe94edd25cd66707e8b8e57de":[12,0,15,24,9],
 "class_gfx_1_1_gfx_context.html#a6432f3e5a9bd6cccea3319ccc7111f2e":[12,0,15,24,2],
+"class_gfx_1_1_gfx_context.html#a6ec5f9e78bca768ca34cbf115f5728ce":[12,0,15,24,7],
 "class_gfx_1_1_gfx_context.html#a6fd5d03736d79861317e969646bccea8":[12,0,15,24,8],
 "class_gfx_1_1_gfx_context.html#a7aaae7f1ddb09782cdb943f420db76be":[12,0,15,24,6],
 "class_gfx_1_1_gfx_context.html#a935fff1a8ba44d90f28bfc932d4a6d79":[12,0,15,24,0],
 "class_gfx_1_1_gfx_context.html#a93dcc492895f2f9a894970cb3d77d503":[12,0,15,24,1],
-"class_gfx_1_1_gfx_context.html#abe202381d0ca502733d2b7bdd2e3c783":[12,0,15,24,7],
 "class_gfx_1_1_gfx_context.html#aed3902ab774a145880498b305a050253":[12,0,15,24,5],
-"class_gfx_1_1_gfx_context.html#aefe754b9e1390b7fb34d643fffdcc849":[12,0,15,24,11],
 "class_gfx_1_1_gfx_execution_action.html":[12,0,15,25],
 "class_gfx_1_1_gfx_execution_action.html#a1908afb7006b9f1bdb6d7ff41660e7d9":[12,0,15,25,1],
 "class_gfx_1_1_gfx_execution_action.html#a30daa4c7c4a0e66d8bf5fbd1957b1976":[12,0,15,25,8],
@@ -249,5 +248,6 @@ var NAVTREEINDEX14 =
 "class_gfx_1_1_video_1_1_presenter.html#a2ac8dd00230644721a93050a8a6af331":[12,0,15,4,5,3],
 "class_gfx_1_1_video_1_1_presenter.html#a620d13b7c56b9dcb16ee62d7f95a5188":[12,0,15,4,5,8],
 "class_gfx_1_1_video_1_1_presenter.html#a6b41159f1a6e0095d07c7682bc14105c":[12,0,15,4,5,7],
-"class_gfx_1_1_video_1_1_presenter.html#a749f40e673341acf99c04b9315414a2a":[12,0,15,4,5,2]
+"class_gfx_1_1_video_1_1_presenter.html#a749f40e673341acf99c04b9315414a2a":[12,0,15,4,5,2],
+"class_gfx_1_1_video_1_1_presenter.html#a79f766fd1ae861ad5da8dcd9c759b56e":[12,0,15,4,5,6]
 };

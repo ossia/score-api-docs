@@ -5,7 +5,6 @@ var structscore_1_1gfx_1_1_texgen_node_1_1_rendered =
     [ "init", "structscore_1_1gfx_1_1_texgen_node_1_1_rendered.html#a2627b851d9733c4a44c42e82e0b3af55", null ],
     [ "release", "structscore_1_1gfx_1_1_texgen_node_1_1_rendered.html#ac12f290bef9948a59037737dfc26bcc9", null ],
     [ "update", "structscore_1_1gfx_1_1_texgen_node_1_1_rendered.html#a3f66431fd20fbe3a214181d9a8fb4e09", null ],
-    [ "m_uploaded", "structscore_1_1gfx_1_1_texgen_node_1_1_rendered.html#a96bf7ab68a3a7aebf4a1754d7ac1f06f", null ],
     [ "t", "structscore_1_1gfx_1_1_texgen_node_1_1_rendered.html#a612e042513ce990dfa01ce5ac8170a05", null ],
     [ "texture", "structscore_1_1gfx_1_1_texgen_node_1_1_rendered.html#ad88de17ff08565b8e3edea4afa08fad6", null ]
 ];

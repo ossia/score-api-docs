@@ -7,7 +7,7 @@ var classscore_1_1gfx_1_1_video_node_renderer =
     [ "init", "classscore_1_1gfx_1_1_video_node_renderer.html#a20f6f2ee9c72fea2005693b807bd2415", null ],
     [ "release", "classscore_1_1gfx_1_1_video_node_renderer.html#a53335184ee8b4577ab3d482be8dfa203", null ],
     [ "renderTargetForInput", "classscore_1_1gfx_1_1_video_node_renderer.html#ac1b2e6f3a1cb5b24679ba72dbde816bc", null ],
-    [ "runRenderPass", "classscore_1_1gfx_1_1_video_node_renderer.html#ae0cf97be9441263764e107b8dad40ed6", null ],
+    [ "runRenderPass", "classscore_1_1gfx_1_1_video_node_renderer.html#aa6707e74a0994c4d8fd12eba51c33a9e", null ],
     [ "setupGpuDecoder", "classscore_1_1gfx_1_1_video_node_renderer.html#aa43b08d01d49a0b7cd9a85f3d1ba1e52", null ],
     [ "update", "classscore_1_1gfx_1_1_video_node_renderer.html#af606e203ddc8f976a984f6c8f4da4def", null ]
 ];

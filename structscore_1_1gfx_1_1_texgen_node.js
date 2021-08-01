@@ -8,6 +8,5 @@ var structscore_1_1gfx_1_1_texgen_node =
     [ "createRenderer", "structscore_1_1gfx_1_1_texgen_node.html#a9cf81e68af66f6ee30b8dc122313f66b", null ],
     [ "function", "structscore_1_1gfx_1_1_texgen_node.html#aa099fc44c6644699fd3bd0f99a14aaa0", null ],
     [ "image", "structscore_1_1gfx_1_1_texgen_node.html#ad6f3463ec5e3ead40089e313dbcdb93b", null ],
-    [ "m_mesh", "structscore_1_1gfx_1_1_texgen_node.html#a0302210af182a79ca0f4261629331598", null ],
     [ "ubo", "structscore_1_1gfx_1_1_texgen_node.html#a4abc4a8ff19030e8c99b16278ca55787", null ]
 ];
