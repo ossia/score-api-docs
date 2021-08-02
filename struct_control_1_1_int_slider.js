@@ -1,7 +1,7 @@
 var struct_control_1_1_int_slider =
 [
     [ "type", "struct_control_1_1_int_slider.html#a3f870c9b92546c520107e7bd2cdf5f3d", null ],
-    [ "IntSlider", "struct_control_1_1_int_slider.html#affee34887256237a4d04c439fb747eca", null ],
+    [ "IntSlider", "struct_control_1_1_int_slider.html#abb22e8042a88cbf5ea6ff98aca97c6ff", null ],
     [ "create_inlet", "struct_control_1_1_int_slider.html#a225dbfa504160253921efaa5daa43742", null ],
     [ "create_inlet", "struct_control_1_1_int_slider.html#a2180314cde750b282c81a1495d9c4312", null ],
     [ "create_inlet", "struct_control_1_1_int_slider.html#a4839e1ecb56c0b87a3c0943316fd0718", null ],

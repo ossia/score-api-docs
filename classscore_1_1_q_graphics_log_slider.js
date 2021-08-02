@@ -2,6 +2,8 @@ var classscore_1_1_q_graphics_log_slider =
 [
     [ "QGraphicsLogSlider", "classscore_1_1_q_graphics_log_slider.html#a864ffaaebf884e7d989c2af615381590", null ],
     [ "map", "classscore_1_1_q_graphics_log_slider.html#a649f58a072e127f491177a33cc9f34c4", null ],
+    [ "resetExecution", "classscore_1_1_q_graphics_log_slider.html#af938fc0773753023f0fabe4a7ab254bb", null ],
+    [ "setExecutionValue", "classscore_1_1_q_graphics_log_slider.html#a58c81036bfd480b9c872d8652d03dd7f", null ],
     [ "setRange", "classscore_1_1_q_graphics_log_slider.html#a2118980f788705d06a2d91cf49a08a05", null ],
     [ "setValue", "classscore_1_1_q_graphics_log_slider.html#ac22d5908938e078bc5a9328b5e0aef92", null ],
     [ "sliderMoved", "classscore_1_1_q_graphics_log_slider.html#adae79721641fa463f289b083da45e883", null ],

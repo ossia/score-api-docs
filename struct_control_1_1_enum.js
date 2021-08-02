@@ -1,4 +1,6 @@
 var struct_control_1_1_enum =
 [
-    [ "fromValue", "struct_control_1_1_enum.html#ad02b2396471157c275d5158827839df7", null ]
+    [ "Enum", "struct_control_1_1_enum.html#a27acdc231176eed775243953340a917e", null ],
+    [ "Enum", "struct_control_1_1_enum.html#abd99de8a096df55036957c4030117f0d", null ],
+    [ "fromValue", "struct_control_1_1_enum.html#a2fbce06399ee6fd4c2c3325a6ed563f5", null ]
 ];

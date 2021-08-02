@@ -24,7 +24,7 @@ var searchData=
   ['fixturemode_3349',['FixtureMode',['../struct_protocols_1_1_fixture_mode.html',1,'Protocols']]],
   ['fixturetreeview_3350',['FixtureTreeView',['../class_protocols_1_1_fixture_tree_view.html',1,'Protocols']]],
   ['flicksspinbox_3351',['FlicksSpinBox',['../structscore_1_1_flicks_spin_box.html',1,'score']]],
-  ['floatcontrol_3352',['FloatControl',['../struct_control_1_1_float_control.html',1,'Control::FloatControl&lt; T &gt;'],['../struct_widget_factory_1_1_float_control.html',1,'WidgetFactory::FloatControl&lt; ControlUI, Normalizer, Control &gt;']]],
+  ['floatcontrol_3352',['FloatControl',['../struct_control_1_1_float_control.html',1,'Control::FloatControl&lt; Model_T, T &gt;'],['../struct_widget_factory_1_1_float_control.html',1,'WidgetFactory::FloatControl&lt; ControlUI, Normalizer, Control &gt;']]],
   ['floatcontrol_3c_20t_2c_20widgetfactory_3a_3alinearnormalizer_2c_20false_20_3e_3353',['FloatControl&lt; T, WidgetFactory::LinearNormalizer, false &gt;',['../struct_widget_factory_1_1_float_control.html',1,'WidgetFactory']]],
   ['floatcontrol_3c_20t_2c_20widgetfactory_3a_3alinearnormalizer_2c_20true_20_3e_3354',['FloatControl&lt; T, WidgetFactory::LinearNormalizer, true &gt;',['../struct_widget_factory_1_1_float_control.html',1,'WidgetFactory']]],
   ['floatcontrol_3c_20t_2c_20widgetfactory_3a_3alognormalizer_2c_20true_20_3e_3355',['FloatControl&lt; T, WidgetFactory::LogNormalizer, true &gt;',['../struct_widget_factory_1_1_float_control.html',1,'WidgetFactory']]],

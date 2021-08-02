@@ -1,7 +1,7 @@
 var struct_control_1_1_chooser_toggle =
 [
     [ "type", "struct_control_1_1_chooser_toggle.html#abf555eda1fa02b4ccefe8df5d347ced5", null ],
-    [ "ChooserToggle", "struct_control_1_1_chooser_toggle.html#a489b5dbc13238233e3852fc23158ca51", null ],
+    [ "ChooserToggle", "struct_control_1_1_chooser_toggle.html#a148850699d520caa92bae3a0c071c805", null ],
     [ "create_inlet", "struct_control_1_1_chooser_toggle.html#a93a7f61366f90aa4067b41efea235661", null ],
     [ "create_inlet", "struct_control_1_1_chooser_toggle.html#accbbc253632967e73a107db3ed162986", null ],
     [ "create_inlet", "struct_control_1_1_chooser_toggle.html#ae889e557d079b849b6278798c71fc804", null ],

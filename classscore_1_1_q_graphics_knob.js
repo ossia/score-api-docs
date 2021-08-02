@@ -3,6 +3,8 @@ var classscore_1_1_q_graphics_knob =
     [ "QGraphicsKnob", "classscore_1_1_q_graphics_knob.html#a1d3b243853a0eefa7eb796311b49178a", null ],
     [ "boundingRect", "classscore_1_1_q_graphics_knob.html#acf9482de1494d6c88048d2634db7c98b", null ],
     [ "map", "classscore_1_1_q_graphics_knob.html#a5119dd48c9cd88c33b3af8c35886d3be", null ],
+    [ "resetExecution", "classscore_1_1_q_graphics_knob.html#a6bd51c0046c73c90552f5d05a1c0fb13", null ],
+    [ "setExecutionValue", "classscore_1_1_q_graphics_knob.html#a484d06fdb385e4456752af6c28ec4b12", null ],
     [ "setRange", "classscore_1_1_q_graphics_knob.html#a9b6975a6ecc62ce0e27ba485788c8522", null ],
     [ "setRect", "classscore_1_1_q_graphics_knob.html#a72e7746425c37eb80c2ba783980dfce2", null ],
     [ "setValue", "classscore_1_1_q_graphics_knob.html#ad0e4a0d2541d899bfd009cfb90c1bd9d", null ],

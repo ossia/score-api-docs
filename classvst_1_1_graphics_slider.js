@@ -1,6 +1,8 @@
 var classvst_1_1_graphics_slider =
 [
     [ "GraphicsSlider", "classvst_1_1_graphics_slider.html#a308ce43b3e1ca52642cb0ba063aace4a", null ],
+    [ "resetExecution", "classvst_1_1_graphics_slider.html#a04946e8d73edfeceaa94e360d692ce31", null ],
+    [ "setExecutionValue", "classvst_1_1_graphics_slider.html#ac845eeb4689aee4b4439adda66b10220", null ],
     [ "setValue", "classvst_1_1_graphics_slider.html#ab267d48e3858579d392c1583d64340d1", null ],
     [ "sliderMoved", "classvst_1_1_graphics_slider.html#a6b12b87b9a9bce9af224a1278b149912", null ],
     [ "sliderReleased", "classvst_1_1_graphics_slider.html#ae77809369db222a257b56130b6033de0", null ],

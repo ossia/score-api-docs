@@ -117,6 +117,9 @@ QGraphicsScene *&#160;</td><td class="memItemRight" valign="bottom"><b>scene</b>
 <tr class="memitem:a32885fea8cf3d3fdf381cbb669d54793"><td class="memItemLeft" align="right" valign="top"><a id="a32885fea8cf3d3fdf381cbb669d54793"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>getHandleX</b> () const noexcept</td></tr>
 <tr class="separator:a32885fea8cf3d3fdf381cbb669d54793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17a375a37ef4a1b8feccee348c1badf6"><td class="memItemLeft" align="right" valign="top"><a id="a17a375a37ef4a1b8feccee348c1badf6"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>getExecHandleX</b> () const noexcept</td></tr>
+<tr class="separator:a17a375a37ef4a1b8feccee348c1badf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e36f9fd727047c1a1b030c8a26893e2"><td class="memItemLeft" align="right" valign="top"><a id="a1e36f9fd727047c1a1b030c8a26893e2"></a>
 QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>sliderRect</b> () const noexcept</td></tr>
 <tr class="separator:a1e36f9fd727047c1a1b030c8a26893e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,6 +129,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isInHandle</b> (QPoin
 <tr class="memitem:add3d777db62f3f074aafb0e6c8a314b0"><td class="memItemLeft" align="right" valign="top"><a id="add3d777db62f3f074aafb0e6c8a314b0"></a>
 QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>handleRect</b> () const noexcept</td></tr>
 <tr class="separator:add3d777db62f3f074aafb0e6c8a314b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a173ab2288c83816fbf68c5ae9d4be011"><td class="memItemLeft" align="right" valign="top"><a id="a173ab2288c83816fbf68c5ae9d4be011"></a>
+QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>execHandleRect</b> () const noexcept</td></tr>
+<tr class="separator:a173ab2288c83816fbf68c5ae9d4be011"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a363800decfa8d84a891a485c0636f119"><td class="memItemLeft" align="right" valign="top"><a id="a363800decfa8d84a891a485c0636f119"></a>
 QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>boundingRect</b> () const noexcept</td></tr>
 <tr class="separator:a363800decfa8d84a891a485c0636f119"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,6 +156,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a1654fe366cd54e589d60e716a3cf3a0b"><td class="memItemLeft" align="right" valign="top"><a id="a1654fe366cd54e589d60e716a3cf3a0b"></a>
 <a class="el" href="structscore_1_1_value_assigner.html">ValueAssigner</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_value</b> {}</td></tr>
 <tr class="separator:a1654fe366cd54e589d60e716a3cf3a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54e11fc05f6390b5397a3dd4f5ec09aa"><td class="memItemLeft" align="right" valign="top"><a id="a54e11fc05f6390b5397a3dd4f5ec09aa"></a>
+<a class="el" href="structscore_1_1_value_assigner.html">ValueAssigner</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_execValue</b> {}</td></tr>
+<tr class="separator:a54e11fc05f6390b5397a3dd4f5ec09aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b468dd171aaa61bfd9424fc91a34495"><td class="memItemLeft" align="right" valign="top"><a id="a5b468dd171aaa61bfd9424fc91a34495"></a>
 QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>rect</b> {defaultSliderSize}</td></tr>
 <tr class="separator:a5b468dd171aaa61bfd9424fc91a34495"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,6 +171,9 @@ double &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>min</b> = par
 <tr class="memitem:a8386ade49a5ce64d9d812b2353b09c93"><td class="memItemLeft" align="right" valign="top"><a id="a8386ade49a5ce64d9d812b2353b09c93"></a>
 double &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>max</b> = parent.max</td></tr>
 <tr class="separator:a8386ade49a5ce64d9d812b2353b09c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4c20128ac25750b075e3dc4151a7150"><td class="memItemLeft" align="right" valign="top"><a id="ad4c20128ac25750b075e3dc4151a7150"></a>
+bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_hasExec</b> {parent.m_hasExec}</td></tr>
+<tr class="separator:ad4c20128ac25750b075e3dc4151a7150"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12036003799f4e526e231f0922ec6abc"><td class="memItemLeft" align="right" valign="top"><a id="a12036003799f4e526e231f0922ec6abc"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_grab</b> {}</td></tr>
 <tr class="separator:a12036003799f4e526e231f0922ec6abc"><td class="memSeparator" colspan="2">&#160;</td></tr>

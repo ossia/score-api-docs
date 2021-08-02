@@ -3,6 +3,8 @@ var structscore_1_1_q_graphics_slider_base =
     [ "QGraphicsSliderBase", "structscore_1_1_q_graphics_slider_base.html#a541d352f2d205f9b53231af2ddca6839", null ],
     [ "~QGraphicsSliderBase", "structscore_1_1_q_graphics_slider_base.html#aea26176148e6fafffb79bb85cf6de35d", null ],
     [ "boundingRect", "structscore_1_1_q_graphics_slider_base.html#aa2b664661e1710b848f61b004da779db", null ],
+    [ "execHandleRect", "structscore_1_1_q_graphics_slider_base.html#aabb2cbb0002f1b024d463350c3e24076", null ],
+    [ "getExecHandleX", "structscore_1_1_q_graphics_slider_base.html#ab42e33d13e71bc82289dbbd81c19d513", null ],
     [ "getHandleX", "structscore_1_1_q_graphics_slider_base.html#a40f64695a5a7485e76930368dabc1249", null ],
     [ "handleRect", "structscore_1_1_q_graphics_slider_base.html#ae59d43ab8abe43d912f3e1e17b636f18", null ],
     [ "isInHandle", "structscore_1_1_q_graphics_slider_base.html#aed765ee805d9a160d0ccd2d7aad72122", null ],

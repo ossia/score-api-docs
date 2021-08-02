@@ -55,6 +55,7 @@ var annotated_dup =
       [ "HasCustomUI< Nodes::MathGenerator::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_generator_1_1_node_01_4.html", null ],
       [ "HasCustomUI< Nodes::MathMapping::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_mapping_1_1_node_01_4.html", null ],
       [ "HasCustomUI< T, std::void_t< decltype(&T::item)> >", "struct_control_1_1_has_custom_u_i_3_01_t_00_01std_1_1void__t_3_01decltype_07_6_t_1_1item_08_4_01_4.html", null ],
+      [ "HSVSlider", "struct_control_1_1_h_s_v_slider.html", "struct_control_1_1_h_s_v_slider" ],
       [ "ImpulseButton", "struct_control_1_1_impulse_button.html", "struct_control_1_1_impulse_button" ],
       [ "inlet_visitor", "struct_control_1_1inlet__visitor.html", "struct_control_1_1inlet__visitor" ],
       [ "IntSlider", "struct_control_1_1_int_slider.html", "struct_control_1_1_int_slider" ],
@@ -73,6 +74,7 @@ var annotated_dup =
       [ "setup_Impl1_Out", "struct_control_1_1setup___impl1___out.html", "struct_control_1_1setup___impl1___out" ],
       [ "Toggle", "struct_control_1_1_toggle.html", "struct_control_1_1_toggle" ],
       [ "UnvalidatedEnum", "struct_control_1_1_unvalidated_enum.html", "struct_control_1_1_unvalidated_enum" ],
+      [ "XYSlider", "struct_control_1_1_x_y_slider.html", "struct_control_1_1_x_y_slider" ],
       [ "XYZEdit", "struct_control_1_1_x_y_z_edit.html", "struct_control_1_1_x_y_z_edit" ]
     ] ],
     [ "ControlSurface", null, [

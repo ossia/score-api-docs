@@ -1,7 +1,7 @@
 var struct_control_1_1_float_display =
 [
     [ "type", "struct_control_1_1_float_display.html#a0336d6ea1f78dd78a05d297f75988ac3", null ],
-    [ "FloatDisplay", "struct_control_1_1_float_display.html#ae56503dbcc136cbf4f2dbe7d16b2873b", null ],
+    [ "FloatDisplay", "struct_control_1_1_float_display.html#a3849fd36086cdd72009fedc21a96e653", null ],
     [ "create_outlet", "struct_control_1_1_float_display.html#af6b3ceb6f6b829a8193d99780bd93bf6", null ],
     [ "create_outlet", "struct_control_1_1_float_display.html#a7d6b9bad9c39d35dd7df4ae194eac129", null ],
     [ "create_outlet", "struct_control_1_1_float_display.html#af8adbf9e39c503fa9a28cec0342c08e7", null ],

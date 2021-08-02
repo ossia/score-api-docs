@@ -1,7 +1,7 @@
 var struct_control_1_1_combo_box =
 [
     [ "type", "struct_control_1_1_combo_box.html#a66f1b2ca09e0df45430f1428322df2fd", null ],
-    [ "ComboBox", "struct_control_1_1_combo_box.html#a47620cd8ad7138388a64fa38913b185c", null ],
+    [ "ComboBox", "struct_control_1_1_combo_box.html#a1e11dc79987cfab1340377cc8c663111", null ],
     [ "create_inlet", "struct_control_1_1_combo_box.html#a4b9004ccfbe4482a7c3c6238fb570ac8", null ],
     [ "create_inlet", "struct_control_1_1_combo_box.html#ae5bc0ce55f29fc6daf1d8155825c2015", null ],
     [ "create_inlet", "struct_control_1_1_combo_box.html#aa505ddacf7a0560e256c9faa77360644", null ],

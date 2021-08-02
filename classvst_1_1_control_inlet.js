@@ -5,6 +5,8 @@ var classvst_1_1_control_inlet =
     [ "ControlInlet", "classvst_1_1_control_inlet.html#aed03c0d3480748f27baaacee62db85d6", null ],
     [ "ControlInlet", "classvst_1_1_control_inlet.html#a632ac408bcccb08181ddfcdb2b130ab9", null ],
     [ "ControlInlet", "classvst_1_1_control_inlet.html#a69d3255929123606c33e9472e1930f4f", null ],
+    [ "executionValueChanged", "classvst_1_1_control_inlet.html#a7e1d478ae7144cd36a5685baba452052", null ],
+    [ "setExecutionValue", "classvst_1_1_control_inlet.html#a2424a7e7d5c9fa6c1b52d50238e41a8b", null ],
     [ "setValue", "classvst_1_1_control_inlet.html#aaba2dd9a0fc89076285eb176016fe4a7", null ],
     [ "type", "classvst_1_1_control_inlet.html#a0c012604077b15b51efc58f5f9f1244b", null ],
     [ "value", "classvst_1_1_control_inlet.html#a58adf8d892cb9948d6be9aa513b9f9e7", null ],
