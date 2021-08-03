@@ -1,5 +1,10 @@
 var NAVTREEINDEX60 =
 {
+"struct_scenario_1_1_slot_presenter.html#aa32e8fe73b3084c79f8363e98a73166b":[12,0,43,248,3],
+"struct_scenario_1_1_slot_presenter.html#ad03c19ac4999d616e51c8ffd772dedee":[12,0,43,248,6],
+"struct_scenario_1_1_slot_presenter.html#ae25d875d56bb0cc55ac887c7b128292e":[12,0,43,248,0],
+"struct_scenario_1_1_slot_presenter.html#aee26e4eff59278127d2fedbc77dcf123":[12,0,43,248,5],
+"struct_scenario_1_1_snapshot_action.html":[12,0,43,251],
 "struct_scenario_1_1_snapshot_action.html#a1d9107ce8d8e52f6d61419b0ef4931ed":[12,0,43,251,0],
 "struct_scenario_1_1_start_date_comparator.html":[12,0,43,254],
 "struct_scenario_1_1_start_date_comparator.html#ade4223699e9054a47a65dad2dacd0b1b":[12,0,43,254,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX60 =
 "struct_std_variant_j_s_o_n_serializer.html#a850360e8cec6954c30281f3c26f26cc7":[12,0,371,4],
 "struct_std_variant_j_s_o_n_serializer.html#a87c1f4650676f086d60dde75e7fbfe03":[12,0,371,1],
 "struct_std_variant_j_s_o_n_serializer.html#afd406d784acbdbce7ced9e9707d48c0e":[12,0,371,2],
-"struct_sync_info.html":[12,0,373],
-"struct_sync_info.html#a2db893e89c95e03f551d8a980fd94223":[12,0,373,2],
-"struct_sync_info.html#a45bae3a237a46fe95289fc9e1c75da03":[12,0,373,0],
-"struct_sync_info.html#a556d85711b4bf33522a7c9b53f6c1831":[12,0,373,1],
-"struct_sync_info.html#ae0523854c5dda0fac003c4d80c94ce4c":[12,0,373,3],
-"struct_t_serializer.html":[12,0,387]
+"struct_sync_info.html":[12,0,373]
 };

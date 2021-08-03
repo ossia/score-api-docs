@@ -1,5 +1,10 @@
 var NAVTREEINDEX52 =
 {
+"struct_gfx_1_1_settings_1_1_graphics_apis.html#a47ffb3b0fcba2a4ba725045596e66068":[12,0,15,2,0,4],
+"struct_gfx_1_1_settings_1_1_graphics_apis.html#a77fbcd528c1674ba951613a76b8badf1":[12,0,15,2,0,0],
+"struct_gfx_1_1_settings_1_1_graphics_apis.html#a7c78e9240a968fb5e3e9a53ddaad9bfa":[12,0,15,2,0,2],
+"struct_gfx_1_1_settings_1_1_graphics_apis.html#a8406c9f323bb052091fb7dfbd413ca65":[12,0,15,2,0,3],
+"struct_gfx_1_1_shader_program.html":[12,0,15,45],
 "struct_gfx_1_1_shader_program.html#a15423e6761a35d83d6d8c41dd860ceb3":[12,0,15,45,10],
 "struct_gfx_1_1_shader_program.html#a2dea3e8b94370738a96792da62c3b613":[12,0,15,45,12],
 "struct_gfx_1_1_shader_program.html#a399373b31183ce1f7ff63b0d4fbb84d5":[12,0,15,45,13],
@@ -244,10 +249,5 @@ var NAVTREEINDEX52 =
 "struct_json_value.html":[12,0,148],
 "struct_json_value.html#a2735d0690549321036090afa531330bc":[12,0,148,8],
 "struct_json_value.html#a28a6ac8a3ed30414da6903127d6cf96e":[12,0,148,9],
-"struct_json_value.html#a68390eb3fa2e062f1593e6e7e4310744":[12,0,148,15],
-"struct_json_value.html#a68a8e2cc5b332d84fe0fb67322f67e36":[12,0,148,12],
-"struct_json_value.html#a73254f5fcd1b0ccbfc89c667ac53df25":[12,0,148,11],
-"struct_json_value.html#a740e5fe23fe3fc04281021d52dd57dbb":[12,0,148,14],
-"struct_json_value.html#a920ed694d7f86a0c6f9f31d5809479b7":[12,0,148,13],
-"struct_json_value.html#aa63a8e30a55fc443f02fcddc5199459d":[12,0,148,5]
+"struct_json_value.html#a68390eb3fa2e062f1593e6e7e4310744":[12,0,148,15]
 };

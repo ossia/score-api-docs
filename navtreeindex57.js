@@ -1,5 +1,10 @@
 var NAVTREEINDEX57 =
 {
+"struct_protocols_1_1_artnet_1_1_channel.html#acf8cd2e875d0364f0e7d172c11473bae":[12,0,38,0,1,0],
+"struct_protocols_1_1_artnet_1_1_channel.html#aed395b49751d3caa6c31e805cf0f0244":[12,0,38,0,1,1],
+"struct_protocols_1_1_artnet_1_1_fixture.html":[12,0,38,0,2],
+"struct_protocols_1_1_artnet_1_1_fixture.html#a1636355cdfffc0ad7acd4b6eeb5d0813":[12,0,38,0,2,1],
+"struct_protocols_1_1_artnet_1_1_fixture.html#a513cb61603bfdafcf749873104bb3391":[12,0,38,0,2,2],
 "struct_protocols_1_1_artnet_1_1_fixture.html#a61c53134ef99fe21cea272e2d492a849":[12,0,38,0,2,0],
 "struct_protocols_1_1_artnet_1_1_fixture.html#aa40e22558cd14438a94682d39a435db8":[12,0,38,0,2,3],
 "struct_protocols_1_1_artnet_1_1_range_capability.html":[12,0,38,0,3],
@@ -244,10 +249,5 @@ var NAVTREEINDEX57 =
 "struct_q_meta_type_id_3_01ossia_1_1bench__map_01_4.html":[12,0,247],
 "struct_q_meta_type_id_3_01ossia_1_1bench__map_01_4.html#ad1a25905b67ae1b88a7d84279d68cdbaa07a19c228c660c3666dabc3eaf7dc64a":[12,0,247,0],
 "struct_q_meta_type_id_3_01ossia_1_1exec__state__facade_01_4.html":[12,0,248],
-"struct_q_meta_type_id_3_01ossia_1_1exec__state__facade_01_4.html#a94712968c108b981f36026fd3676f7a4acdfa7479afb21436c8a38edadb88d69f":[12,0,248,0],
-"struct_q_meta_type_id_3_01ossia_1_1net_1_1tags_01_4.html":[12,0,249],
-"struct_q_meta_type_id_3_01ossia_1_1net_1_1tags_01_4.html#a9a5e6876f5297cfe3b43c7eb9bba1054a75844400202c69eef656d54da358dfb4":[12,0,249,0],
-"struct_q_meta_type_id_3_01ossia_1_1time__event_1_1status_01_4.html":[12,0,250],
-"struct_q_meta_type_id_3_01ossia_1_1time__event_1_1status_01_4.html#a5a8ce6f167036714b3807dbb97e253d3acf5bffca265a52da1f55c706f4821573":[12,0,250,0],
-"struct_q_meta_type_id_3_01rapidjson_1_1_value_01_5_01_4.html":[12,0,269]
+"struct_q_meta_type_id_3_01ossia_1_1exec__state__facade_01_4.html#a94712968c108b981f36026fd3676f7a4acdfa7479afb21436c8a38edadb88d69f":[12,0,248,0]
 };
