@@ -8,6 +8,7 @@ var classvst_1_1_model =
     [ "hasExternalUI", "classvst_1_1_model.html#ab8589e3455c23f4d1cda67353df53301", null ],
     [ "on_addControl", "classvst_1_1_model.html#ad96f1eca17e1c063221eacc5378a766c", null ],
     [ "on_addControl_impl", "classvst_1_1_model.html#afa447e4d7989990e49645f3e4bff6dce", null ],
+    [ "on_controlChangedFromScore", "classvst_1_1_model.html#ae0273a52846ae6f7605cc9e1b9d956fe", null ],
     [ "prettyName", "classvst_1_1_model.html#adbd71f4715f62f77642c87918594504c", null ],
     [ "reloadControls", "classvst_1_1_model.html#ae30dfe2e738eca3842123b76317e5d08", null ],
     [ "removeControl", "classvst_1_1_model.html#a19deda650935110b07deaaa8c6fb928c", null ],

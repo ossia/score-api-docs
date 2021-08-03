@@ -1,5 +1,6 @@
 var NAVTREEINDEX57 =
 {
+"struct_process_1_1_style.html#a3898c85ea91eb09165a3d9d4d8278dfd":[12,0,37,99,65],
 "struct_process_1_1_style.html#a3d1a0ca19e1851c8a497e644496990fe":[12,0,37,99,59],
 "struct_process_1_1_style.html#a3ff36f18c0cd8f79467bc571ea07d8b8":[12,0,37,99,60],
 "struct_process_1_1_style.html#a4409c2f9734680e169b0c2f0f42ce71f":[12,0,37,99,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX57 =
 "struct_q_meta_type_id_3_01_process_1_1_process_model_01_5_01_4.html#a91ab4384c697f5108ac3400bb4d85aa4a52781b8262dd441c07e687fd026c4e44":[12,0,254,0],
 "struct_q_meta_type_id_3_01_process_1_1pan__weight_01_4.html":[12,0,253],
 "struct_q_meta_type_id_3_01_process_1_1pan__weight_01_4.html#a68089390f7c1364e5c55d53c76865fd8accb66bd43c5228c56e3b0d49cfd100ff":[12,0,253,0],
-"struct_q_meta_type_id_3_01_protocols_1_1_artnet_specific_settings_01_4.html":[12,0,255],
-"struct_q_meta_type_id_3_01_protocols_1_1_artnet_specific_settings_01_4.html#af10e6159d1ef89b41cf8230996d497d4aa8f17b474189bb3d67953296850a927e":[12,0,255,0]
+"struct_q_meta_type_id_3_01_protocols_1_1_artnet_specific_settings_01_4.html":[12,0,255]
 };

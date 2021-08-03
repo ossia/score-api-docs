@@ -1,5 +1,6 @@
 var NAVTREEINDEX58 =
 {
+"struct_q_meta_type_id_3_01_protocols_1_1_artnet_specific_settings_01_4.html#af10e6159d1ef89b41cf8230996d497d4aa8f17b474189bb3d67953296850a927e":[12,0,255,0],
 "struct_q_meta_type_id_3_01_protocols_1_1_h_t_t_p_specific_settings_01_4.html":[12,0,256],
 "struct_q_meta_type_id_3_01_protocols_1_1_h_t_t_p_specific_settings_01_4.html#ae65c1317081158c8964c77d8c9d59576a96349c6f276f8b5f41c9e22450592c92":[12,0,256,0],
 "struct_q_meta_type_id_3_01_protocols_1_1_joystick_specific_settings_01_4.html":[12,0,257],
@@ -248,6 +249,5 @@ var NAVTREEINDEX58 =
 "struct_rendered_depth_node.html#a096aabb99a33725ccfc66eb0b6833ff9":[12,0,318,9],
 "struct_rendered_depth_node.html#a0c5737970017073fb1fa6fa68c0e987c":[12,0,318,8],
 "struct_rendered_depth_node.html#a19f935143ad611f30bf5641f065c7495":[12,0,318,2],
-"struct_rendered_depth_node.html#a237483699813af9af2d64c8ddd2002ec":[12,0,318,22],
-"struct_rendered_depth_node.html#a32acdd04f0edbe4f62fdb7973df8cdfb":[12,0,318,24]
+"struct_rendered_depth_node.html#a237483699813af9af2d64c8ddd2002ec":[12,0,318,22]
 };
