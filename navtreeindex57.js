@@ -1,8 +1,5 @@
 var NAVTREEINDEX57 =
 {
-"struct_process_1_1_style.html#aff532ddb30c75ad393fcec13d9b11a93":[12,0,37,85,76],
-"struct_process_1_1default__t.html":[12,0,37,15],
-"struct_protocols_1_1_artnet_1_1_base_capability.html":[12,0,38,0,0],
 "struct_protocols_1_1_artnet_1_1_base_capability.html#a874f31662ed5e972f5b263f71611cf84":[12,0,38,0,0,0],
 "struct_protocols_1_1_artnet_1_1_base_capability.html#aab9cce8c51960d10983c99cb764e4532":[12,0,38,0,0,2],
 "struct_protocols_1_1_artnet_1_1_base_capability.html#acf044378835430a4e4397f80109baf08":[12,0,38,0,0,1],
@@ -249,5 +246,8 @@ var NAVTREEINDEX57 =
 "struct_q_meta_type_id_3_01const_01_q_mime_data_01_5_01_4.html":[12,0,210],
 "struct_q_meta_type_id_3_01const_01_q_mime_data_01_5_01_4.html#a5f8616e09a51714db9f87b1973d56dffac830507a005a653686a61693faf18667":[12,0,210,0],
 "struct_q_meta_type_id_3_01const_01_scenario_1_1_interval_model_01_5_01_4.html":[12,0,211],
-"struct_q_meta_type_id_3_01const_01_scenario_1_1_interval_model_01_5_01_4.html#acd855dfb826a9552b68e7332997d976baa06b0fbff8eecf4216e9e920bfa9f066":[12,0,211,0]
+"struct_q_meta_type_id_3_01const_01_scenario_1_1_interval_model_01_5_01_4.html#acd855dfb826a9552b68e7332997d976baa06b0fbff8eecf4216e9e920bfa9f066":[12,0,211,0],
+"struct_q_meta_type_id_3_01const_01_scenario_1_1_scenario_interface_01_5_01_4.html":[12,0,212],
+"struct_q_meta_type_id_3_01const_01_scenario_1_1_scenario_interface_01_5_01_4.html#aed63c36e5f4ebaeaecacd23e5aacddb2aab8a83fb4f6fe93674d8a7eebf0fe629":[12,0,212,0],
+"struct_q_meta_type_id_3_01ossia_1_1audio__stretch__mode_01_4.html":[12,0,246]
 };

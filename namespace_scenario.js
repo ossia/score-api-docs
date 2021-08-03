@@ -387,7 +387,6 @@ var namespace_scenario =
     [ "TemporalIntervalView", "class_scenario_1_1_temporal_interval_view.html", "class_scenario_1_1_temporal_interval_view" ],
     [ "TempoView", "class_scenario_1_1_tempo_view.html", "class_scenario_1_1_tempo_view" ],
     [ "TextDialog", "class_scenario_1_1_text_dialog.html", "class_scenario_1_1_text_dialog" ],
-    [ "TimeBar", "class_scenario_1_1_time_bar.html", "class_scenario_1_1_time_bar" ],
     [ "Timebars", "struct_scenario_1_1_timebars.html", "struct_scenario_1_1_timebars" ],
     [ "TimenodeGraph", "struct_scenario_1_1_timenode_graph.html", "struct_scenario_1_1_timenode_graph" ],
     [ "TimenodeGraphComponents", "struct_scenario_1_1_timenode_graph_components.html", "struct_scenario_1_1_timenode_graph_components" ],

@@ -11,7 +11,6 @@ var class_scenario_1_1_scenario_document_view =
     [ "scene", "class_scenario_1_1_scenario_document_view.html#a5051ac287d2bc197e68dcb3243ae47b1", null ],
     [ "setLargeView", "class_scenario_1_1_scenario_document_view.html#a7e02fb7dcacb1845b157e54e041e3f3d", null ],
     [ "showRulers", "class_scenario_1_1_scenario_document_view.html#a2dad7b97c407b64f1cb15abff9704bdd", null ],
-    [ "timeBar", "class_scenario_1_1_scenario_document_view.html#a6adb3f038063c4414eec8244dc1e47a0", null ],
     [ "timeRuler", "class_scenario_1_1_scenario_document_view.html#a09c50cadbd45d449682d85016aa25c5c", null ],
     [ "timeRulerChanged", "class_scenario_1_1_scenario_document_view.html#a1918c6d111331bc355703592b73d9659", null ],
     [ "view", "class_scenario_1_1_scenario_document_view.html#aac15c1dceaa22581d3d520674c04c6f1", null ],

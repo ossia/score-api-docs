@@ -1,8 +1,5 @@
 var NAVTREEINDEX48 =
 {
-"score-lib-process_2_process_2_dataflow_2_port_8hpp_source.html":[13,0,839],
-"score-lib-process_2_process_2_dataflow_2_port_item_8hpp_source.html":[13,0,844],
-"score-lib-process_2_process_2_instantiations_8hpp_source.html":[13,0,506],
 "score-lib-process_2_process_2_process_8hpp_source.html":[13,0,868],
 "score-plugin-audio_2_audio_2_settings_2_factory_8hpp_source.html":[13,0,410],
 "score-plugin-audio_2_audio_2_settings_2_model_8hpp_source.html":[13,0,712],
@@ -249,5 +246,8 @@ var NAVTREEINDEX48 =
 "struct_control_1_1_chooser_toggle.html#aa815dca99f3be5bb82f7b9c88d6c5518":[12,0,3,2,7],
 "struct_control_1_1_chooser_toggle.html#abf555eda1fa02b4ccefe8df5d347ced5":[12,0,3,2,0],
 "struct_control_1_1_chooser_toggle.html#accbbc253632967e73a107db3ed162986":[12,0,3,2,3],
-"struct_control_1_1_chooser_toggle.html#ae889e557d079b849b6278798c71fc804":[12,0,3,2,4]
+"struct_control_1_1_chooser_toggle.html#ae889e557d079b849b6278798c71fc804":[12,0,3,2,4],
+"struct_control_1_1_combo_box.html":[12,0,3,3],
+"struct_control_1_1_combo_box.html#a0b8384a89fd1a0231cc68935b302f008":[12,0,3,3,9],
+"struct_control_1_1_combo_box.html#a1e11dc79987cfab1340377cc8c663111":[12,0,3,3,1]
 };
