@@ -1,5 +1,13 @@
 var NAVTREEINDEX56 =
 {
+"struct_pd_1_1_instance.html#ace9454bafe56c9fda1399831e4764da4":[12,0,35,4,2],
+"struct_pd_1_1_instance.html#ad1ef80f0e2279e10a9bde32f0d33cf68":[12,0,35,4,1],
+"struct_pd_1_1_patch_spec.html":[12,0,35,8],
+"struct_pd_1_1_patch_spec.html#a90142c8ee057d5ff3b894cbb9e30bb31":[12,0,35,8,2],
+"struct_pd_1_1_patch_spec.html#adb5acc3d0cd48b8c0a01f59de34d5442":[12,0,35,8,1],
+"struct_pd_1_1_patch_spec_1_1_control.html":[12,0,35,8,0],
+"struct_pd_1_1_patch_spec_1_1_control.html#a46075eb9a6a018a0c8832987de1bf7e0":[12,0,35,8,0,4],
+"struct_pd_1_1_patch_spec_1_1_control.html#a4db63b66fd8dc55d846823636aa5c655":[12,0,35,8,0,6],
 "struct_pd_1_1_patch_spec_1_1_control.html#a6c1e82b232ae4f0c9203d34886c63b61":[12,0,35,8,0,0],
 "struct_pd_1_1_patch_spec_1_1_control.html#a8ba919870d7a05ee198df3c1019e5375":[12,0,35,8,0,2],
 "struct_pd_1_1_patch_spec_1_1_control.html#a9682b5b8de7f9e1ba8b45e955a202c38":[12,0,35,8,0,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX56 =
 "struct_process_1_1_style.html#aeefe121eec51bcdeaac3f31620d98d6d":[12,0,37,85,0],
 "struct_process_1_1_style.html#af6f635ac51c2b71bb0105f569b268f49":[12,0,37,85,92],
 "struct_process_1_1_style.html#af796bec8433ecce2e6e20f8c5f737971":[12,0,37,85,61],
-"struct_process_1_1_style.html#afb49121b55c48fd677a4a31e908c713a":[12,0,37,85,38],
-"struct_process_1_1_style.html#aff532ddb30c75ad393fcec13d9b11a93":[12,0,37,85,76],
-"struct_process_1_1default__t.html":[12,0,37,15],
-"struct_protocols_1_1_artnet_1_1_base_capability.html":[12,0,38,0,0],
-"struct_protocols_1_1_artnet_1_1_base_capability.html#a874f31662ed5e972f5b263f71611cf84":[12,0,38,0,0,0],
-"struct_protocols_1_1_artnet_1_1_base_capability.html#aab9cce8c51960d10983c99cb764e4532":[12,0,38,0,0,2],
-"struct_protocols_1_1_artnet_1_1_base_capability.html#acf044378835430a4e4397f80109baf08":[12,0,38,0,0,1],
-"struct_protocols_1_1_artnet_1_1_channel.html":[12,0,38,0,1],
-"struct_protocols_1_1_artnet_1_1_channel.html#a5a9f2aa4a5cad928312ba9eeefc9f2d8":[12,0,38,0,1,2]
+"struct_process_1_1_style.html#afb49121b55c48fd677a4a31e908c713a":[12,0,37,85,38]
 };

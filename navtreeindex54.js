@@ -1,5 +1,13 @@
 var NAVTREEINDEX54 =
 {
+"struct_media_1_1_frame_computer.html":[12,0,27,14],
+"struct_media_1_1_frame_computer.html#a0c225eeb98e3d56246a4f7f2f3ed7564":[12,0,27,14,4],
+"struct_media_1_1_frame_computer.html#a361118bb24774ed6145f3206831518d3":[12,0,27,14,1],
+"struct_media_1_1_frame_computer.html#a4bb4fcc22249eb342dcff68282f74075":[12,0,27,14,6],
+"struct_media_1_1_frame_computer.html#acafd48c48266e6825857dc3f92ca406e":[12,0,27,14,0],
+"struct_media_1_1_frame_computer.html#ae1e677f8966bdc5880342d4c2efdc55c":[12,0,27,14,3],
+"struct_media_1_1_frame_computer.html#af5596814428c0ff7eb98edb2904c43c2":[12,0,27,14,2],
+"struct_media_1_1_frame_computer.html#af9326dfc3103436fcf645891a9e6f0a6":[12,0,27,14,5],
 "struct_media_1_1_r_m_s_data.html":[12,0,27,16],
 "struct_media_1_1_r_m_s_data.html#a1689646b80ca5aad92ee38529bda220c":[12,0,27,16,13],
 "struct_media_1_1_r_m_s_data.html#a2faa96880370d4c9e4e5f44556ea8ffe":[12,0,27,16,8],
@@ -241,13 +249,5 @@ var NAVTREEINDEX54 =
 "struct_nodes_1_1_arpeggiator_1_1_node.html#aeb2c6f15510b310d4c70bb985bf9ea0b":[12,0,32,0,0,4],
 "struct_nodes_1_1_arpeggiator_1_1_node_1_1_metadata.html":[12,0,32,0,0,0],
 "struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html":[12,0,32,0,0,1],
-"struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html#a0453ae6a552ff8339c687c4862cf9eac":[12,0,32,0,0,1,1],
-"struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html#a102c7bcc442b2f748b79fdcc39e6a4f9":[12,0,32,0,0,1,5],
-"struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html#a1640943ea4847e6de8c5d5a4c108b026":[12,0,32,0,0,1,2],
-"struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html#a19d482122a078b378b0bb674c7f0e98b":[12,0,32,0,0,1,3],
-"struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html#a444c9f7c86b8ae4c5fcae8c96b5f20f8":[12,0,32,0,0,1,4],
-"struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html#a69ed0de3c7b1f77a7b1fcd7c9701611a":[12,0,32,0,0,1,0],
-"struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html#a79306c30421b501a4b3e3777750c3fe7":[12,0,32,0,0,1,8],
-"struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html#ad4751baf7e954812d57189758e2054ce":[12,0,32,0,0,1,6],
-"struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html#ae72e32bab49ce5aaaa490d3831a499e0":[12,0,32,0,0,1,7]
+"struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html#a0453ae6a552ff8339c687c4862cf9eac":[12,0,32,0,0,1,1]
 };

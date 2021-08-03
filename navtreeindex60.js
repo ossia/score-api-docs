@@ -1,5 +1,13 @@
 var NAVTREEINDEX60 =
 {
+"struct_scenario_1_1_slot_path.html#ae5db15545aeb1661df399b3dd2a38c49":[12,0,43,247,9],
+"struct_scenario_1_1_slot_path.html#ae65d0c9bbc8d19a2505fa7a31d68614a":[12,0,43,247,11],
+"struct_scenario_1_1_slot_path.html#aea90acfb25f9b84718ede23a52ab99a2":[12,0,43,247,7],
+"struct_scenario_1_1_slot_path.html#af0a472e4db5f55c633e50056577bb4a8":[12,0,43,247,0],
+"struct_scenario_1_1_slot_presenter.html":[12,0,43,248],
+"struct_scenario_1_1_slot_presenter.html#a4dad5477a0c8f6f3a150f67bd4b5f0b6":[12,0,43,248,4],
+"struct_scenario_1_1_slot_presenter.html#a6d6bd62f72538d278a02c614652e2c0b":[12,0,43,248,2],
+"struct_scenario_1_1_slot_presenter.html#a76a4c47939e4d7afe329c0221d69d9e9":[12,0,43,248,1],
 "struct_scenario_1_1_slot_presenter.html#aa32e8fe73b3084c79f8363e98a73166b":[12,0,43,248,3],
 "struct_scenario_1_1_slot_presenter.html#ad03c19ac4999d616e51c8ffd772dedee":[12,0,43,248,6],
 "struct_scenario_1_1_slot_presenter.html#ae25d875d56bb0cc55ac887c7b128292e":[12,0,43,248,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX60 =
 "struct_std_variant_j_s_o_n_deserializer.html#a601b7e218d41d6fad28b2d008ff4b5bf":[12,0,370,0],
 "struct_std_variant_j_s_o_n_deserializer.html#a635eb96653cecc3f12d36f67a2747ff5":[12,0,370,2],
 "struct_std_variant_j_s_o_n_deserializer.html#a987216dc4740a332accb7af65b0cd5d6":[12,0,370,4],
-"struct_std_variant_j_s_o_n_deserializer.html#ab71d295af467425ea28751e3703d4c08":[12,0,370,1],
-"struct_std_variant_j_s_o_n_deserializer.html#acd4c95e96caad026719076720f416007":[12,0,370,3],
-"struct_std_variant_j_s_o_n_serializer.html":[12,0,371],
-"struct_std_variant_j_s_o_n_serializer.html#a4781fb8e7c5bbe43a8344b14aa341aa6":[12,0,371,0],
-"struct_std_variant_j_s_o_n_serializer.html#a79516eac0f5a95cdd785829f3fb6e05d":[12,0,371,3],
-"struct_std_variant_j_s_o_n_serializer.html#a850360e8cec6954c30281f3c26f26cc7":[12,0,371,4],
-"struct_std_variant_j_s_o_n_serializer.html#a87c1f4650676f086d60dde75e7fbfe03":[12,0,371,1],
-"struct_std_variant_j_s_o_n_serializer.html#afd406d784acbdbce7ced9e9707d48c0e":[12,0,371,2],
-"struct_sync_info.html":[12,0,373]
+"struct_std_variant_j_s_o_n_deserializer.html#ab71d295af467425ea28751e3703d4c08":[12,0,370,1]
 };

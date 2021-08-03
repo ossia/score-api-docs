@@ -1,5 +1,9 @@
 var NAVTREEINDEX25 =
 {
+"class_protocols_1_1_artnet_device.html#af7cd92191628ba011899d8da7492f828":[12,0,38,3,1],
+"class_protocols_1_1_artnet_protocol_factory.html":[12,0,38,4],
+"class_protocols_1_1_artnet_protocol_settings_widget.html":[12,0,38,5],
+"class_protocols_1_1_artnet_protocol_settings_widget.html#a129347b8392d7db00470c31870b7e5c9":[12,0,38,5,1],
 "class_protocols_1_1_artnet_protocol_settings_widget.html#a4c745cfb8fc836554f07f6f5b71afa08":[12,0,38,5,3],
 "class_protocols_1_1_artnet_protocol_settings_widget.html#abe61d89542b810a329a0243ed05c0d28":[12,0,38,5,2],
 "class_protocols_1_1_artnet_protocol_settings_widget.html#ae3707f48e045cf29f9f45276ea4ec1fd":[12,0,38,5,0],
@@ -55,12 +59,12 @@ var NAVTREEINDEX25 =
 "class_protocols_1_1_joystick_protocol_settings_widget.html#ad9ef8d6cdf1d9e4b6d8abcedcde0f351":[12,0,38,19,3],
 "class_protocols_1_1_joystick_protocol_settings_widget.html#af32992071fa9f2ef02f7e5730f8d28ed":[12,0,38,19,2],
 "class_protocols_1_1_library_device_enumerator.html":[12,0,38,21],
-"class_protocols_1_1_library_device_enumerator.html#a0122ae8f415b51e34d6a6baf9eb62b47":[12,0,38,21,5],
+"class_protocols_1_1_library_device_enumerator.html#a0122ae8f415b51e34d6a6baf9eb62b47":[12,0,38,21,4],
+"class_protocols_1_1_library_device_enumerator.html#a08faeb7f2f5fe064d3cfd254ce1df49f":[12,0,38,21,2],
 "class_protocols_1_1_library_device_enumerator.html#a1d668baf9e9714751ee831dfa2bb1f6f":[12,0,38,21,1],
 "class_protocols_1_1_library_device_enumerator.html#a4070fdbd0627dcc21d95f1867b611bbc":[12,0,38,21,3],
-"class_protocols_1_1_library_device_enumerator.html#a7fe27996620fd8f980c6f258ff9808a1":[12,0,38,21,4],
-"class_protocols_1_1_library_device_enumerator.html#aa95b15b76048e1e56448d84ab664cda3":[12,0,38,21,6],
-"class_protocols_1_1_library_device_enumerator.html#ad545e8f294034942599f8554592fb06f":[12,0,38,21,2],
+"class_protocols_1_1_library_device_enumerator.html#a74226cc7a150a7ccbe8410ba9bef0170":[12,0,38,21,6],
+"class_protocols_1_1_library_device_enumerator.html#aa95b15b76048e1e56448d84ab664cda3":[12,0,38,21,5],
 "class_protocols_1_1_library_device_enumerator.html#af0e2063356274e716d383189367e414b":[12,0,38,21,0],
 "class_protocols_1_1_local_device.html":[12,0,38,22],
 "class_protocols_1_1_local_device.html#a009e91a06150b3c2bae18a4297a48d95":[12,0,38,22,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX25 =
 "class_random_name_provider.html":[12,0,309],
 "class_reader.html":[12,0,310],
 "class_recording_1_1_application_plugin.html":[12,0,39,0],
-"class_recording_1_1_application_plugin.html#a4207bafdf2378184dc9231ba83cf3fce":[12,0,39,0,1],
-"class_recording_1_1_application_plugin.html#a47018781f710ba5f2a761bf1a3ccc760":[12,0,39,0,3],
-"class_recording_1_1_application_plugin.html#a6cb01a0e446f1d277c7de85b91b0e0f1":[12,0,39,0,2],
-"class_recording_1_1_application_plugin.html#a9b4babbff89955688e358802f77da386":[12,0,39,0,0],
-"class_recording_1_1_automation_recorder.html":[12,0,39,1]
+"class_recording_1_1_application_plugin.html#a4207bafdf2378184dc9231ba83cf3fce":[12,0,39,0,1]
 };

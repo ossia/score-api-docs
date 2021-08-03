@@ -1,5 +1,13 @@
 var NAVTREEINDEX50 =
 {
+"struct_control_surface_1_1_node_observer.html#a4a1288597dc0668e2139ac0263ec98d9":[12,0,4,5,6],
+"struct_control_surface_1_1_node_observer.html#a54bf83a0f3669ff435088972596f0ebb":[12,0,4,5,5],
+"struct_control_surface_1_1_node_observer.html#a6b47b4d719bdb4e140dd6421425ce9e4":[12,0,4,5,1],
+"struct_control_surface_1_1_node_observer.html#abffc7f4eff0c24126d6f19168e838d17":[12,0,4,5,4],
+"struct_control_surface_1_1_node_observer.html#ac808834cb8222cf7fef8d24e56a27263":[12,0,4,5,7],
+"struct_control_surface_1_1_node_observer.html#af53ea2c9fb42c8a7e4ddb978ddb8ff5a":[12,0,4,5,2],
+"struct_control_surface_1_1_node_observer_1_1_available_node.html":[12,0,4,5,0],
+"struct_control_surface_1_1_node_observer_1_1_available_node.html#a3d42d1f2a69ea8bea47c3f1c644908ad":[12,0,4,5,0,0],
 "struct_control_surface_1_1_node_observer_1_1_available_node.html#ae3763c563cf279c070602ba312533908":[12,0,4,5,0,1],
 "struct_control_surface_1_1_presenter_1_1_port.html":[12,0,4,6,0],
 "struct_control_surface_1_1_presenter_1_1_port.html#a9e3c0cf7401c35c93ec33a6d82f87163":[12,0,4,6,0,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX50 =
 "struct_e_h_exception_record_1_1_e_h_parameters.html#a91a822a9ae7298e12392c0ce261c116f":[12,0,101,0,1],
 "struct_engine_1_1score__to__ossia_1_1_curve_traits.html":[12,0,8,0,0],
 "struct_engine_1_1score__to__ossia_1_1_curve_traits_3_01double_01_4.html":[12,0,8,0,1],
-"struct_engine_1_1score__to__ossia_1_1_curve_traits_3_01float_01_4.html":[12,0,8,0,2],
-"struct_engine_1_1score__to__ossia_1_1_curve_traits_3_01int_01_4.html":[12,0,8,0,3],
-"struct_entity_map_serializer.html":[12,0,103],
-"struct_execution_1_1_add_process.html":[12,0,9,2],
-"struct_execution_1_1_add_process.html#a05df1686b62ee384d51c299fb7c3f76f":[12,0,9,2,3],
-"struct_execution_1_1_add_process.html#a1105b2b9ca102fd3c1ca306af01d8dc6":[12,0,9,2,2],
-"struct_execution_1_1_add_process.html#a5bd1004cba56759b1b8c0bbce0bf54a8":[12,0,9,2,4],
-"struct_execution_1_1_add_process.html#a6e335ecd79191f55bb14d165fff0882e":[12,0,9,2,0],
-"struct_execution_1_1_add_process.html#a8b3fd7f7a651efd4051a77370de19cd6":[12,0,9,2,5]
+"struct_engine_1_1score__to__ossia_1_1_curve_traits_3_01float_01_4.html":[12,0,8,0,2]
 };

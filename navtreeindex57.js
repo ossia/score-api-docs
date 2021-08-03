@@ -1,5 +1,13 @@
 var NAVTREEINDEX57 =
 {
+"struct_process_1_1_style.html#aff532ddb30c75ad393fcec13d9b11a93":[12,0,37,85,76],
+"struct_process_1_1default__t.html":[12,0,37,15],
+"struct_protocols_1_1_artnet_1_1_base_capability.html":[12,0,38,0,0],
+"struct_protocols_1_1_artnet_1_1_base_capability.html#a874f31662ed5e972f5b263f71611cf84":[12,0,38,0,0,0],
+"struct_protocols_1_1_artnet_1_1_base_capability.html#aab9cce8c51960d10983c99cb764e4532":[12,0,38,0,0,2],
+"struct_protocols_1_1_artnet_1_1_base_capability.html#acf044378835430a4e4397f80109baf08":[12,0,38,0,0,1],
+"struct_protocols_1_1_artnet_1_1_channel.html":[12,0,38,0,1],
+"struct_protocols_1_1_artnet_1_1_channel.html#a5a9f2aa4a5cad928312ba9eeefc9f2d8":[12,0,38,0,1,2],
 "struct_protocols_1_1_artnet_1_1_channel.html#acf8cd2e875d0364f0e7d172c11473bae":[12,0,38,0,1,0],
 "struct_protocols_1_1_artnet_1_1_channel.html#aed395b49751d3caa6c31e805cf0f0244":[12,0,38,0,1,1],
 "struct_protocols_1_1_artnet_1_1_fixture.html":[12,0,38,0,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX57 =
 "struct_q_meta_type_id_3_01const_01_q_mime_data_01_5_01_4.html":[12,0,210],
 "struct_q_meta_type_id_3_01const_01_q_mime_data_01_5_01_4.html#a5f8616e09a51714db9f87b1973d56dffac830507a005a653686a61693faf18667":[12,0,210,0],
 "struct_q_meta_type_id_3_01const_01_scenario_1_1_interval_model_01_5_01_4.html":[12,0,211],
-"struct_q_meta_type_id_3_01const_01_scenario_1_1_interval_model_01_5_01_4.html#acd855dfb826a9552b68e7332997d976baa06b0fbff8eecf4216e9e920bfa9f066":[12,0,211,0],
-"struct_q_meta_type_id_3_01const_01_scenario_1_1_scenario_interface_01_5_01_4.html":[12,0,212],
-"struct_q_meta_type_id_3_01const_01_scenario_1_1_scenario_interface_01_5_01_4.html#aed63c36e5f4ebaeaecacd23e5aacddb2aab8a83fb4f6fe93674d8a7eebf0fe629":[12,0,212,0],
-"struct_q_meta_type_id_3_01ossia_1_1audio__stretch__mode_01_4.html":[12,0,246],
-"struct_q_meta_type_id_3_01ossia_1_1audio__stretch__mode_01_4.html#a97d057984add31fabe12d2c5af2a1b03a82abd662d3d748dbb66e0e0da78a0ea7":[12,0,246,0],
-"struct_q_meta_type_id_3_01ossia_1_1bench__map_01_4.html":[12,0,247],
-"struct_q_meta_type_id_3_01ossia_1_1bench__map_01_4.html#ad1a25905b67ae1b88a7d84279d68cdbaa07a19c228c660c3666dabc3eaf7dc64a":[12,0,247,0],
-"struct_q_meta_type_id_3_01ossia_1_1exec__state__facade_01_4.html":[12,0,248],
-"struct_q_meta_type_id_3_01ossia_1_1exec__state__facade_01_4.html#a94712968c108b981f36026fd3676f7a4acdfa7479afb21436c8a38edadb88d69f":[12,0,248,0]
+"struct_q_meta_type_id_3_01const_01_scenario_1_1_interval_model_01_5_01_4.html#acd855dfb826a9552b68e7332997d976baa06b0fbff8eecf4216e9e920bfa9f066":[12,0,211,0]
 };

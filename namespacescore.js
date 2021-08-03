@@ -218,6 +218,7 @@ var namespacescore =
     [ "RectItem", "classscore_1_1_rect_item.html", "classscore_1_1_rect_item" ],
     [ "RectSplitter", "classscore_1_1_rect_splitter.html", "classscore_1_1_rect_splitter" ],
     [ "RectWidget", "classscore_1_1_rect_widget.html", "classscore_1_1_rect_widget" ],
+    [ "RecursiveWatch", "classscore_1_1_recursive_watch.html", "classscore_1_1_recursive_watch" ],
     [ "ResizeableItem", "classscore_1_1_resizeable_item.html", "classscore_1_1_resizeable_item" ],
     [ "RestorableDocument", "structscore_1_1_restorable_document.html", "structscore_1_1_restorable_document" ],
     [ "RightClickImpl", "structscore_1_1_right_click_impl.html", "structscore_1_1_right_click_impl" ],

@@ -319,6 +319,7 @@ var annotated_dup =
       [ "LibraryInterfaceList", "class_library_1_1_library_interface_list.html", "class_library_1_1_library_interface_list" ],
       [ "PresetFilterProxy", "class_library_1_1_preset_filter_proxy.html", "class_library_1_1_preset_filter_proxy" ],
       [ "PresetItemModel", "class_library_1_1_preset_item_model.html", "class_library_1_1_preset_item_model" ],
+      [ "PresetLibraryHandler", "class_library_1_1_preset_library_handler.html", "class_library_1_1_preset_library_handler" ],
       [ "PresetListView", "class_library_1_1_preset_list_view.html", null ],
       [ "ProcessData", "struct_library_1_1_process_data.html", "struct_library_1_1_process_data" ],
       [ "ProcessesItemModel", "class_library_1_1_processes_item_model.html", "class_library_1_1_processes_item_model" ],

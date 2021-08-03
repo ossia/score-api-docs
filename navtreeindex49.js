@@ -1,5 +1,13 @@
 var NAVTREEINDEX49 =
 {
+"struct_control_1_1_combo_box.html":[12,0,3,3],
+"struct_control_1_1_combo_box.html#a0b8384a89fd1a0231cc68935b302f008":[12,0,3,3,9],
+"struct_control_1_1_combo_box.html#a1e11dc79987cfab1340377cc8c663111":[12,0,3,3,1],
+"struct_control_1_1_combo_box.html#a4b9004ccfbe4482a7c3c6238fb570ac8":[12,0,3,3,2],
+"struct_control_1_1_combo_box.html#a54095cdb27223fc477df58e62adec8cc":[12,0,3,3,5],
+"struct_control_1_1_combo_box.html#a66f1b2ca09e0df45430f1428322df2fd":[12,0,3,3,0],
+"struct_control_1_1_combo_box.html#a74790fcb3ef352a892441ca040d1a6fd":[12,0,3,3,7],
+"struct_control_1_1_combo_box.html#a8ef4dae2c0931b77a25a19b9dde1de12":[12,0,3,3,6],
 "struct_control_1_1_combo_box.html#aa505ddacf7a0560e256c9faa77360644":[12,0,3,3,4],
 "struct_control_1_1_combo_box.html#ac21231363626421f72e5b8fd526ec43f":[12,0,3,3,8],
 "struct_control_1_1_combo_box.html#acaed2bc84486fcf249c27f5b58284a57":[12,0,3,3,10],
@@ -241,13 +249,5 @@ var NAVTREEINDEX49 =
 "struct_control_1_1setup___impl1___out.html#a28a14a9ab22232277d4858da8f094a41":[12,0,3,39,0],
 "struct_control_1_1setup___impl1___out.html#a728890d7d6591a9eded817f76e102e12":[12,0,3,39,2],
 "struct_control_surface_1_1_node_observer.html":[12,0,4,5],
-"struct_control_surface_1_1_node_observer.html#a27a37403182977d60df45928bc3dd336":[12,0,4,5,3],
-"struct_control_surface_1_1_node_observer.html#a4a1288597dc0668e2139ac0263ec98d9":[12,0,4,5,6],
-"struct_control_surface_1_1_node_observer.html#a54bf83a0f3669ff435088972596f0ebb":[12,0,4,5,5],
-"struct_control_surface_1_1_node_observer.html#a6b47b4d719bdb4e140dd6421425ce9e4":[12,0,4,5,1],
-"struct_control_surface_1_1_node_observer.html#abffc7f4eff0c24126d6f19168e838d17":[12,0,4,5,4],
-"struct_control_surface_1_1_node_observer.html#ac808834cb8222cf7fef8d24e56a27263":[12,0,4,5,7],
-"struct_control_surface_1_1_node_observer.html#af53ea2c9fb42c8a7e4ddb978ddb8ff5a":[12,0,4,5,2],
-"struct_control_surface_1_1_node_observer_1_1_available_node.html":[12,0,4,5,0],
-"struct_control_surface_1_1_node_observer_1_1_available_node.html#a3d42d1f2a69ea8bea47c3f1c644908ad":[12,0,4,5,0,0]
+"struct_control_surface_1_1_node_observer.html#a27a37403182977d60df45928bc3dd336":[12,0,4,5,3]
 };

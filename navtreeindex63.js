@@ -1,5 +1,13 @@
 var NAVTREEINDEX63 =
 {
+"structscore_1_1_color_ref.html#aee915d53978eb93a442fa426da79c02c":[12,0,44,33,11],
+"structscore_1_1_combo_slider.html":[12,0,44,35],
+"structscore_1_1_combo_slider.html#a167ed39f8dcd7d80fe9ace0407c7eee1":[12,0,44,35,4],
+"structscore_1_1_combo_slider.html#a59be30710e937df63e28648732be1ff4":[12,0,44,35,3],
+"structscore_1_1_combo_slider.html#aa3d2ab5958db2977e4d1c9a271086579":[12,0,44,35,2],
+"structscore_1_1_combo_slider.html#acd3a4dcc4a634294a6ce8cb0c8bf5cde":[12,0,44,35,0],
+"structscore_1_1_combo_slider.html#ad0095e0ec43cc419f77b8a074f601fcb":[12,0,44,35,1],
+"structscore_1_1_command_data.html":[12,0,44,38],
 "structscore_1_1_command_data.html#a85d47906690ba43b4f590a39e7fb676f":[12,0,44,38,1],
 "structscore_1_1_command_data.html#a8c0c7f7c221156255de262cc8620f61c":[12,0,44,38,4],
 "structscore_1_1_command_data.html#abe2509cf153b8be73742960b16295f09":[12,0,44,38,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX63 =
 "structscore_1_1_q_graphics_slider_base.html#ae71362560edbe716a22e68cb55c2986c":[12,0,44,193,10],
 "structscore_1_1_q_graphics_slider_base.html#aea26176148e6fafffb79bb85cf6de35d":[12,0,44,193,1],
 "structscore_1_1_q_graphics_slider_base.html#aed765ee805d9a160d0ccd2d7aad72122":[12,0,44,193,7],
-"structscore_1_1_restorable_document.html":[12,0,44,204],
-"structscore_1_1_restorable_document.html#a4e235985192263a6c7f4d2b16e46e612":[12,0,44,204,0],
-"structscore_1_1_restorable_document.html#ac4578cf136077e53940cf01e156bf302":[12,0,44,204,1],
-"structscore_1_1_restorable_document.html#acfcdc16e742c1f2bd7fc4997d4886649":[12,0,44,204,2],
-"structscore_1_1_right_click_impl.html":[12,0,44,205],
-"structscore_1_1_right_click_impl.html#a054cb41687c3c4ae3a2eb3c02e206653":[12,0,44,205,0],
-"structscore_1_1_right_click_impl.html#a536875fb4e7397d4bf5ebeaf36bdc2de":[12,0,44,205,1],
-"structscore_1_1_second_spin_box.html":[12,0,44,207],
-"structscore_1_1_second_spin_box.html#a978d054eb14facd404d1de5aca91a9a5":[12,0,44,207,5]
+"structscore_1_1_recursive_watch_1_1_callbacks.html":[12,0,44,203,0]
 };

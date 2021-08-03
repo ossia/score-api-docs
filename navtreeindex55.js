@@ -1,5 +1,13 @@
 var NAVTREEINDEX55 =
 {
+"struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html#a102c7bcc442b2f748b79fdcc39e6a4f9":[12,0,32,0,0,1,5],
+"struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html#a1640943ea4847e6de8c5d5a4c108b026":[12,0,32,0,0,1,2],
+"struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html#a19d482122a078b378b0bb674c7f0e98b":[12,0,32,0,0,1,3],
+"struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html#a444c9f7c86b8ae4c5fcae8c96b5f20f8":[12,0,32,0,0,1,4],
+"struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html#a69ed0de3c7b1f77a7b1fcd7c9701611a":[12,0,32,0,0,1,0],
+"struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html#a79306c30421b501a4b3e3777750c3fe7":[12,0,32,0,0,1,8],
+"struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html#ad4751baf7e954812d57189758e2054ce":[12,0,32,0,0,1,6],
+"struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html#ae72e32bab49ce5aaaa490d3831a499e0":[12,0,32,0,0,1,7],
 "struct_nodes_1_1_audio_looper_1_1_node.html":[12,0,32,1,0],
 "struct_nodes_1_1_audio_looper_1_1_node.html#a5226e768b1b62538d0341159e16d63f2":[12,0,32,1,0,2],
 "struct_nodes_1_1_audio_looper_1_1_node_1_1_metadata.html":[12,0,32,1,0,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX55 =
 "struct_pd_1_1_instance.html#a2a09d0889c783903ec70fed49050f272":[12,0,35,4,3],
 "struct_pd_1_1_instance.html#a3d9430da4d32f027b461ab52666a14bd":[12,0,35,4,0],
 "struct_pd_1_1_instance.html#a9c8fd19a77900d4ee3ee3728bc5d2b20":[12,0,35,4,4],
-"struct_pd_1_1_instance.html#aac2e2b74c06ddddb09ef156cc9963e6e":[12,0,35,4,5],
-"struct_pd_1_1_instance.html#ace9454bafe56c9fda1399831e4764da4":[12,0,35,4,2],
-"struct_pd_1_1_instance.html#ad1ef80f0e2279e10a9bde32f0d33cf68":[12,0,35,4,1],
-"struct_pd_1_1_patch_spec.html":[12,0,35,8],
-"struct_pd_1_1_patch_spec.html#a90142c8ee057d5ff3b894cbb9e30bb31":[12,0,35,8,2],
-"struct_pd_1_1_patch_spec.html#adb5acc3d0cd48b8c0a01f59de34d5442":[12,0,35,8,1],
-"struct_pd_1_1_patch_spec_1_1_control.html":[12,0,35,8,0],
-"struct_pd_1_1_patch_spec_1_1_control.html#a46075eb9a6a018a0c8832987de1bf7e0":[12,0,35,8,0,4],
-"struct_pd_1_1_patch_spec_1_1_control.html#a4db63b66fd8dc55d846823636aa5c655":[12,0,35,8,0,6]
+"struct_pd_1_1_instance.html#aac2e2b74c06ddddb09ef156cc9963e6e":[12,0,35,4,5]
 };

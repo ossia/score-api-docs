@@ -117,9 +117,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af0e2063356274e716d383189367e414b"><td class="memItemLeft" align="right" valign="top"><a id="af0e2063356274e716d383189367e414b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>LibraryDeviceEnumerator</b> (std::string pattern, QStringList extension, Device::ProtocolFactory::ConcreteKey k, std::function&lt; QVariant(QByteArray)&gt; createDev, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx)</td></tr>
 <tr class="separator:af0e2063356274e716d383189367e414b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad545e8f294034942599f8554592fb06f"><td class="memItemLeft" align="right" valign="top"><a id="ad545e8f294034942599f8554592fb06f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>next</b> ()</td></tr>
-<tr class="separator:ad545e8f294034942599f8554592fb06f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08faeb7f2f5fe064d3cfd254ce1df49f"><td class="memItemLeft" align="right" valign="top"><a id="a08faeb7f2f5fe064d3cfd254ce1df49f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>next</b> (std::string_view path)</td></tr>
+<tr class="separator:a08faeb7f2f5fe064d3cfd254ce1df49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d668baf9e9714751ee831dfa2bb1f6f"><td class="memItemLeft" align="right" valign="top"><a id="a1d668baf9e9714751ee831dfa2bb1f6f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>enumerate</b> (std::function&lt; void(const <a class="el" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> &amp;)&gt; onDevice) const override</td></tr>
 <tr class="separator:a1d668baf9e9714751ee831dfa2bb1f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,9 +145,9 @@ Device::ProtocolFactory::ConcreteKey&#160;</td><td class="memItemRight" valign="
 <tr class="memitem:a4070fdbd0627dcc21d95f1867b611bbc"><td class="memItemLeft" align="right" valign="top"><a id="a4070fdbd0627dcc21d95f1867b611bbc"></a>
 std::function&lt; QVariant(QByteArray)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_createDeviceSettings</b></td></tr>
 <tr class="separator:a4070fdbd0627dcc21d95f1867b611bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fe27996620fd8f980c6f258ff9808a1"><td class="memItemLeft" align="right" valign="top"><a id="a7fe27996620fd8f980c6f258ff9808a1"></a>
-QDirIterator&#160;</td><td class="memItemRight" valign="bottom"><b>m_iterator</b></td></tr>
-<tr class="separator:a7fe27996620fd8f980c6f258ff9808a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74226cc7a150a7ccbe8410ba9bef0170"><td class="memItemLeft" align="right" valign="top"><a id="a74226cc7a150a7ccbe8410ba9bef0170"></a>
+<a class="el" href="classscore_1_1_recursive_watch.html">score::RecursiveWatch</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_watch</b></td></tr>
+<tr class="separator:a74226cc7a150a7ccbe8410ba9bef0170"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_library_device_enumerator_8hpp_source.html">LibraryDeviceEnumerator.hpp</a></li>

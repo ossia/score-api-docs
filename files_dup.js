@@ -951,6 +951,7 @@ var files_dup =
     [ "RecordTools.hpp", "_record_tools_8hpp_source.html", null ],
     [ "RectItem.hpp", "_rect_item_8hpp_source.html", null ],
     [ "RecursiveFilterProxy.hpp", "_recursive_filter_proxy_8hpp_source.html", null ],
+    [ "RecursiveWatch.hpp", "_recursive_watch_8hpp_source.html", null ],
     [ "RefreshStates.hpp", "_refresh_states_8hpp_source.html", null ],
     [ "RefreshStatesMacro.hpp", "_refresh_states_macro_8hpp_source.html", null ],
     [ "Relation.hpp", "_relation_8hpp_source.html", null ],
