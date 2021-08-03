@@ -212,6 +212,7 @@ var namespacescore =
     [ "QGraphicsTextButton", "classscore_1_1_q_graphics_text_button.html", "classscore_1_1_q_graphics_text_button" ],
     [ "QGraphicsToggle", "classscore_1_1_q_graphics_toggle.html", "classscore_1_1_q_graphics_toggle" ],
     [ "QGraphicsXYChooser", "classscore_1_1_q_graphics_x_y_chooser.html", "classscore_1_1_q_graphics_x_y_chooser" ],
+    [ "QGraphicsXYZChooser", "classscore_1_1_q_graphics_x_y_z_chooser.html", "classscore_1_1_q_graphics_x_y_z_chooser" ],
     [ "random_id_generator", "structscore_1_1random__id__generator.html", null ],
     [ "ReactiveLabel", "classscore_1_1_reactive_label.html", "classscore_1_1_reactive_label" ],
     [ "RectItem", "classscore_1_1_rect_item.html", "classscore_1_1_rect_item" ],

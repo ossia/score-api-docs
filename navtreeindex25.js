@@ -1,5 +1,6 @@
 var NAVTREEINDEX25 =
 {
+"class_protocols_1_1_artnet_protocol_settings_widget.html#a4c745cfb8fc836554f07f6f5b71afa08":[12,0,38,5,3],
 "class_protocols_1_1_artnet_protocol_settings_widget.html#abe61d89542b810a329a0243ed05c0d28":[12,0,38,5,2],
 "class_protocols_1_1_artnet_protocol_settings_widget.html#ae3707f48e045cf29f9f45276ea4ec1fd":[12,0,38,5,0],
 "class_protocols_1_1_default_protocol_factory.html":[12,0,38,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX25 =
 "class_recording_1_1_application_plugin.html#a47018781f710ba5f2a761bf1a3ccc760":[12,0,39,0,3],
 "class_recording_1_1_application_plugin.html#a6cb01a0e446f1d277c7de85b91b0e0f1":[12,0,39,0,2],
 "class_recording_1_1_application_plugin.html#a9b4babbff89955688e358802f77da386":[12,0,39,0,0],
-"class_recording_1_1_automation_recorder.html":[12,0,39,1],
-"class_recording_1_1_automation_recorder.html#a1016ceea8f5845d2d6a9794f3f7e4064":[12,0,39,1,10]
+"class_recording_1_1_automation_recorder.html":[12,0,39,1]
 };

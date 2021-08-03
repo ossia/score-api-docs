@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"class_explorer_1_1_device_edit_dialog.html#ab20251ea98004dae10bb6c537c6812e1":[12,0,10,26,0],
 "class_explorer_1_1_device_edit_dialog.html#ab20251ea98004dae10bb6c537c6812e1a1d688f0c341d92485b97092c9a7a26da":[12,0,10,26,0,1],
 "class_explorer_1_1_device_edit_dialog.html#ab20251ea98004dae10bb6c537c6812e1a7de3926e594f157c0ebaad052f46af34":[12,0,10,26,0,0],
 "class_explorer_1_1_device_edit_dialog.html#ae1677e6893c95814f73ac6cbd54ad964":[12,0,10,26,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "class_factor_oracle2_m_i_d_i_1_1_state.html#a4427d7cd5d1ec245d82b4a14c0b96c4e":[12,0,12,3,3],
 "class_factor_oracle2_m_i_d_i_1_1_state.html#afd1016fc73c660729775019b766b7770":[12,0,12,3,1],
 "class_faust_1_1_drop_handler.html":[12,0,13,0],
-"class_faust_1_1_edit_script.html":[12,0,13,1],
-"class_faust_1_1_library_handler.html":[12,0,13,3]
+"class_faust_1_1_edit_script.html":[12,0,13,1]
 };

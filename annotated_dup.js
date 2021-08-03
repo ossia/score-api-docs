@@ -74,8 +74,7 @@ var annotated_dup =
       [ "setup_Impl1_Out", "struct_control_1_1setup___impl1___out.html", "struct_control_1_1setup___impl1___out" ],
       [ "Toggle", "struct_control_1_1_toggle.html", "struct_control_1_1_toggle" ],
       [ "UnvalidatedEnum", "struct_control_1_1_unvalidated_enum.html", "struct_control_1_1_unvalidated_enum" ],
-      [ "XYSlider", "struct_control_1_1_x_y_slider.html", "struct_control_1_1_x_y_slider" ],
-      [ "XYZEdit", "struct_control_1_1_x_y_z_edit.html", "struct_control_1_1_x_y_z_edit" ]
+      [ "XYSlider", "struct_control_1_1_x_y_slider.html", "struct_control_1_1_x_y_slider" ]
     ] ],
     [ "ControlSurface", null, [
       [ "AddControl", "class_control_surface_1_1_add_control.html", "class_control_surface_1_1_add_control" ],
@@ -896,7 +895,7 @@ var annotated_dup =
       [ "Toggle", "struct_widget_factory_1_1_toggle.html", null ],
       [ "UpdatingNormalizer", "struct_widget_factory_1_1_updating_normalizer.html", "struct_widget_factory_1_1_updating_normalizer" ],
       [ "XYSlider", "struct_widget_factory_1_1_x_y_slider.html", null ],
-      [ "XYZEdit", "struct_widget_factory_1_1_x_y_z_edit.html", null ]
+      [ "XYZSlider", "struct_widget_factory_1_1_x_y_z_slider.html", null ]
     ] ],
     [ "WidgetLayer", null, [
       [ "LayerFactory", "class_widget_layer_1_1_layer_factory.html", "class_widget_layer_1_1_layer_factory" ],

@@ -225,7 +225,7 @@ $(document).ready(function(){initNavTree('_qml_objects_8hpp_source.html',''); in
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <a class="code" href="class_process_1_1_inlet.html">Process::Inlet</a>* make(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp;&amp; <span class="keywordtype">id</span>, QObject* parent)<span class="keyword"> override</span></div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="struct_process_1_1_float_slider.html">Process::FloatSlider</a>{</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> Process::FloatSlider{</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        (float)m_min, (<span class="keywordtype">float</span>)m_max, (float)m_init, objectName(), id, parent};</div>
 <div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="class_int_slider.html">  130</a></span>&#160;  }</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
@@ -245,7 +245,7 @@ $(document).ready(function(){initNavTree('_qml_objects_8hpp_source.html',''); in
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <a class="code" href="class_process_1_1_inlet.html">Process::Inlet</a>* make(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp;&amp; <span class="keywordtype">id</span>, QObject* parent)<span class="keyword"> override</span></div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="class_enum.html">  148</a></span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="struct_process_1_1_int_slider.html">Process::IntSlider</a>{</div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="class_enum.html">  148</a></span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> Process::IntSlider{</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        m_min, m_max, m_init, objectName(), id, parent};</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  }</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
@@ -265,7 +265,7 @@ $(document).ready(function(){initNavTree('_qml_objects_8hpp_source.html',''); in
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <a class="code" href="class_process_1_1_inlet.html">Process::Inlet</a>* make(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp;&amp; <span class="keywordtype">id</span>, QObject* parent)<span class="keyword"> override</span></div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="struct_process_1_1_enum.html">Process::Enum</a>{</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> Process::Enum{</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        m_choices, {}, current(), objectName(), id, parent};</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  }</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
@@ -300,7 +300,7 @@ $(document).ready(function(){initNavTree('_qml_objects_8hpp_source.html',''); in
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordtype">bool</span> is_control()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <a class="code" href="class_process_1_1_inlet.html">Process::Inlet</a>* make(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp;&amp; <span class="keywordtype">id</span>, QObject* parent)<span class="keyword"> override</span></div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="struct_process_1_1_toggle.html">Process::Toggle</a>{m_checked, objectName(), id, parent};</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> Process::Toggle{m_checked, objectName(), id, parent};</div>
 <div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="class_line_edit.html">  204</a></span>&#160;  }</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  W_INLINE_PROPERTY_VALUE(</div>
@@ -322,7 +322,7 @@ $(document).ready(function(){initNavTree('_qml_objects_8hpp_source.html',''); in
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  <span class="keywordtype">bool</span> is_control()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <a class="code" href="class_process_1_1_inlet.html">Process::Inlet</a>* make(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp;&amp; <span class="keywordtype">id</span>, QObject* parent)<span class="keyword"> override</span></div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="struct_process_1_1_line_edit.html">Process::LineEdit</a>{m_text, objectName(), id, parent};</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> Process::LineEdit{m_text, objectName(), id, parent};</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  }</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  W_INLINE_PROPERTY_CREF(QString, text, {}, text, setText, textChanged)</div>
@@ -575,8 +575,6 @@ $(document).ready(function(){initNavTree('_qml_objects_8hpp_source.html',''); in
 <div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;W_REGISTER_ARGTYPE(JS::MidiOutlet*)</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astruct_process_1_1_enum_html"><div class="ttname"><a href="struct_process_1_1_enum.html">Process::Enum</a></div><div class="ttdef"><b>Definition:</b> WidgetInlets.hpp:278</div></div>
-<div class="ttc" id="astruct_process_1_1_float_slider_html"><div class="ttname"><a href="struct_process_1_1_float_slider.html">Process::FloatSlider</a></div><div class="ttdef"><b>Definition:</b> WidgetInlets.hpp:122</div></div>
 <div class="ttc" id="aclass_j_s_1_1_inlet_html"><div class="ttname"><a href="class_j_s_1_1_inlet.html">JS::Inlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:22</div></div>
 <div class="ttc" id="aclass_midi_inlet_html"><div class="ttname"><a href="class_midi_inlet.html">MidiInlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:312</div></div>
 <div class="ttc" id="aclass_process_1_1_midi_inlet_html"><div class="ttname"><a href="class_process_1_1_midi_inlet.html">Process::MidiInlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:377</div></div>
@@ -585,7 +583,6 @@ $(document).ready(function(){initNavTree('_qml_objects_8hpp_source.html',''); in
 <div class="ttc" id="aclass_midi_message_html"><div class="ttname"><a href="class_midi_message.html">MidiMessage</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:303</div></div>
 <div class="ttc" id="aclass_enum_html"><div class="ttname"><a href="class_enum.html">Enum</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:148</div></div>
 <div class="ttc" id="aclass_audio_outlet_html"><div class="ttname"><a href="class_audio_outlet.html">AudioOutlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:276</div></div>
-<div class="ttc" id="astruct_process_1_1_line_edit_html"><div class="ttname"><a href="struct_process_1_1_line_edit.html">Process::LineEdit</a></div><div class="ttdef"><b>Definition:</b> WidgetInlets.hpp:242</div></div>
 <div class="ttc" id="astruct_value_message_html"><div class="ttname"><a href="struct_value_message.html">ValueMessage</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:57</div></div>
 <div class="ttc" id="aclass_control_inlet_html"><div class="ttname"><a href="class_control_inlet.html">ControlInlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:91</div></div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition:</b> Identifier.hpp:56</div></div>
@@ -595,7 +592,6 @@ $(document).ready(function(){initNavTree('_qml_objects_8hpp_source.html',''); in
 <div class="ttc" id="aclass_process_1_1_value_outlet_html"><div class="ttname"><a href="class_process_1_1_value_outlet.html">Process::ValueOutlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:517</div></div>
 <div class="ttc" id="aclass_value_inlet_html"><div class="ttname"><a href="class_value_inlet.html">ValueInlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:66</div></div>
 <div class="ttc" id="aclass_process_1_1_audio_inlet_html"><div class="ttname"><a href="class_process_1_1_audio_inlet.html">Process::AudioInlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:294</div></div>
-<div class="ttc" id="astruct_process_1_1_toggle_html"><div class="ttname"><a href="struct_process_1_1_toggle.html">Process::Toggle</a></div><div class="ttdef"><b>Definition:</b> WidgetInlets.hpp:212</div></div>
 <div class="ttc" id="aclass_line_edit_html"><div class="ttname"><a href="class_line_edit.html">LineEdit</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:204</div></div>
 <div class="ttc" id="aclass_value_outlet_html"><div class="ttname"><a href="class_value_outlet.html">ValueOutlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:219</div></div>
 <div class="ttc" id="aclass_process_1_1_audio_outlet_html"><div class="ttname"><a href="class_process_1_1_audio_outlet.html">Process::AudioOutlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:317</div></div>
@@ -606,7 +602,6 @@ $(document).ready(function(){initNavTree('_qml_objects_8hpp_source.html',''); in
 <div class="ttc" id="aclass_outlet_html"><div class="ttname"><a href="class_outlet.html">Outlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:40</div></div>
 <div class="ttc" id="aclass_process_1_1_inlet_html"><div class="ttname"><a href="class_process_1_1_inlet.html">Process::Inlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:179</div></div>
 <div class="ttc" id="aclass_script_html"><div class="ttname"><a href="class_script.html">Script</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:381</div></div>
-<div class="ttc" id="astruct_process_1_1_int_slider_html"><div class="ttname"><a href="struct_process_1_1_int_slider.html">Process::IntSlider</a></div><div class="ttdef"><b>Definition:</b> WidgetInlets.hpp:176</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

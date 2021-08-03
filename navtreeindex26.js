@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"class_recording_1_1_automation_recorder.html#a1016ceea8f5845d2d6a9794f3f7e4064":[12,0,39,1,10],
 "class_recording_1_1_automation_recorder.html#a13f3a30f0842c2e55291dff53107bcdf":[12,0,39,1,1],
 "class_recording_1_1_automation_recorder.html#a19421cb430dc50779cdaac89a822c81f":[12,0,39,1,11],
 "class_recording_1_1_automation_recorder.html#a4ef35a7cc9736d5c88cef68cf8cdb8c5":[12,0,39,1,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "class_scenario_1_1_command_1_1_add_only_process_to_interval.html#af1212c85fc66b014f538ffd5f2a796bf":[12,0,43,0,6,0],
 "class_scenario_1_1_command_1_1_add_process_in_new_box_macro.html":[12,0,43,0,7],
 "class_scenario_1_1_command_1_1_add_process_in_new_slot.html":[12,0,43,0,8],
-"class_scenario_1_1_command_1_1_add_slot_to_rack.html":[12,0,43,0,9],
-"class_scenario_1_1_command_1_1_add_slot_to_rack.html#a13e28a2dbfa4c3e04444b973c1ce214e":[12,0,43,0,9,1]
+"class_scenario_1_1_command_1_1_add_slot_to_rack.html":[12,0,43,0,9]
 };

@@ -1,5 +1,15 @@
 var NAVTREEINDEX46 =
 {
+"classscore__plugin__packagemanager.html#a1267dcec5fae79f8002b68a693d67929":[12,0,342,0],
+"classscore__plugin__packagemanager.html#a805075f59731667a8ef19eefa21cd7bb":[12,0,342,1],
+"classscore__plugin__pd.html":[12,0,343],
+"classscore__plugin__pd.html#a4701ed0b74cc49774dac26275f05b0f0":[12,0,343,2],
+"classscore__plugin__pd.html#a4f1689ee70c855b8cbf5c79c0f792bf2":[12,0,343,4],
+"classscore__plugin__pd.html#aaea369a71039f1a7ffe489ffe6e469a9":[12,0,343,3],
+"classscore__plugin__pd.html#ab73bea216c22cb7abe335a4c13823629":[12,0,343,1],
+"classscore__plugin__pd.html#ac1011893a5501ca24ff159e562f6b99c":[12,0,343,6],
+"classscore__plugin__pd.html#ac74e3ddacefee4d2483213670224928c":[12,0,343,5],
+"classscore__plugin__pd.html#acf39b09fd960c35234b8778a397ae9df":[12,0,343,0],
 "classscore__plugin__protocols.html":[12,0,344],
 "classscore__plugin__protocols.html#a2e4840fa250d18a403dc09993769592e":[12,0,344,0],
 "classscore__plugin__protocols.html#acad07c1145855294abde99c89d27cf42":[12,0,344,1],
@@ -239,15 +249,5 @@ var NAVTREEINDEX46 =
 "classvst_1_1_control_port_factory.html#aa24117af20faf5a6e47f63b1a1badbe2":[12,0,53,3,5],
 "classvst_1_1_control_port_factory.html#aab57b1f2f06b40118aabaebe32f69b39":[12,0,53,3,4],
 "classvst_1_1_control_port_factory.html#adf7b65d32bfe3affc2e534a8ce9bb1e7":[12,0,53,3,0],
-"classvst_1_1_control_port_factory.html#aef395542708c84ad84fd32665b96ebf1":[12,0,53,3,2],
-"classvst_1_1_create_control.html":[12,0,53,5],
-"classvst_1_1_create_control.html#a1a86182b016bc4c318475688a1962c58":[12,0,53,5,0],
-"classvst_1_1_create_control.html#a34005e90b2bf8276e8babba24a2ecc99":[12,0,53,5,1],
-"classvst_1_1_create_control.html#a3e0ebdc0eca876b6a72a5b5624e3bd7c":[12,0,53,5,3],
-"classvst_1_1_create_control.html#a4597b71b20a632d72c9182db0a299b0f":[12,0,53,5,5],
-"classvst_1_1_create_control.html#a4a1ffdf38f241815cdc232fad01ed52a":[12,0,53,5,2],
-"classvst_1_1_create_control.html#af5a0b3b06bb66f50cd076969eb55289a":[12,0,53,5,4],
-"classvst_1_1_effect_item.html":[12,0,53,6],
-"classvst_1_1_effect_item.html#a117a3225aa243e9652d707ae657a7937":[12,0,53,6,0],
-"classvst_1_1_effect_item.html#aa0988678596d7346c592bb0bd6e9cc5d":[12,0,53,6,1]
+"classvst_1_1_control_port_factory.html#aef395542708c84ad84fd32665b96ebf1":[12,0,53,3,2]
 };

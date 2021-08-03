@@ -931,6 +931,7 @@ var files_dup =
     [ "QGraphicsSliderBase.hpp", "_q_graphics_slider_base_8hpp_source.html", null ],
     [ "QGraphicsToggle.hpp", "_q_graphics_toggle_8hpp_source.html", null ],
     [ "QGraphicsXYChooser.hpp", "_q_graphics_x_y_chooser_8hpp_source.html", null ],
+    [ "QGraphicsXYZChooser.hpp", "_q_graphics_x_y_z_chooser_8hpp_source.html", null ],
     [ "QImagePool.hpp", "_q_image_pool_8hpp_source.html", null ],
     [ "QMapHelper.hpp", "_q_map_helper_8hpp.html", "_q_map_helper_8hpp" ],
     [ "QmlObjects.hpp", "_qml_objects_8hpp_source.html", null ],
