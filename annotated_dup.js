@@ -784,7 +784,7 @@ var annotated_dup =
     [ "State", "namespace_state.html", "namespace_state" ],
     [ "std", null, [
       [ "hash< Device::FullAddressSettings >", "structstd_1_1hash_3_01_device_1_1_full_address_settings_01_4.html", "structstd_1_1hash_3_01_device_1_1_full_address_settings_01_4" ],
-      [ "hash< Gfx::ShaderProgram >", "structstd_1_1hash_3_01_gfx_1_1_shader_program_01_4.html", "structstd_1_1hash_3_01_gfx_1_1_shader_program_01_4" ],
+      [ "hash< Gfx::ShaderSource >", "structstd_1_1hash_3_01_gfx_1_1_shader_source_01_4.html", "structstd_1_1hash_3_01_gfx_1_1_shader_source_01_4" ],
       [ "hash< Id< tag > >", "structstd_1_1hash_3_01_id_3_01tag_01_4_01_4.html", "structstd_1_1hash_3_01_id_3_01tag_01_4_01_4" ],
       [ "hash< ObjectIdentifier >", "structstd_1_1hash_3_01_object_identifier_01_4.html", "structstd_1_1hash_3_01_object_identifier_01_4" ],
       [ "hash< ObjectPath >", "structstd_1_1hash_3_01_object_path_01_4.html", "structstd_1_1hash_3_01_object_path_01_4" ],
@@ -1070,7 +1070,7 @@ var annotated_dup =
     [ "QMetaTypeId< Gfx::CameraSettings >", "struct_q_meta_type_id_3_01_gfx_1_1_camera_settings_01_4.html", "struct_q_meta_type_id_3_01_gfx_1_1_camera_settings_01_4" ],
     [ "QMetaTypeId< Gfx::Kinect2Settings >", "struct_q_meta_type_id_3_01_gfx_1_1_kinect2_settings_01_4.html", "struct_q_meta_type_id_3_01_gfx_1_1_kinect2_settings_01_4" ],
     [ "QMetaTypeId< Gfx::ProcessedProgram >", "struct_q_meta_type_id_3_01_gfx_1_1_processed_program_01_4.html", "struct_q_meta_type_id_3_01_gfx_1_1_processed_program_01_4" ],
-    [ "QMetaTypeId< Gfx::ShaderProgram >", "struct_q_meta_type_id_3_01_gfx_1_1_shader_program_01_4.html", "struct_q_meta_type_id_3_01_gfx_1_1_shader_program_01_4" ],
+    [ "QMetaTypeId< Gfx::ShaderSource >", "struct_q_meta_type_id_3_01_gfx_1_1_shader_source_01_4.html", "struct_q_meta_type_id_3_01_gfx_1_1_shader_source_01_4" ],
     [ "QMetaTypeId< Id< Process::ProcessModel > >", "struct_q_meta_type_id_3_01_id_3_01_process_1_1_process_model_01_4_01_4.html", "struct_q_meta_type_id_3_01_id_3_01_process_1_1_process_model_01_4_01_4" ],
     [ "QMetaTypeId< Id< Scenario::EventModel > >", "struct_q_meta_type_id_3_01_id_3_01_scenario_1_1_event_model_01_4_01_4.html", "struct_q_meta_type_id_3_01_id_3_01_scenario_1_1_event_model_01_4_01_4" ],
     [ "QMetaTypeId< Id< Scenario::IntervalModel > >", "struct_q_meta_type_id_3_01_id_3_01_scenario_1_1_interval_model_01_4_01_4.html", "struct_q_meta_type_id_3_01_id_3_01_scenario_1_1_interval_model_01_4_01_4" ],

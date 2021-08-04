@@ -74,7 +74,7 @@ var searchData=
   ['maxrangespinbox_3c_20templatedspinbox_3c_20float_20_3e_20_3e_1274',['MaxRangeSpinBox&lt; TemplatedSpinBox&lt; float &gt; &gt;',['../classscore_1_1_max_range_spin_box.html',1,'score']]],
   ['maxrangespinbox_3c_20templatedspinbox_3c_20t_20_3e_20_3e_1275',['MaxRangeSpinBox&lt; TemplatedSpinBox&lt; T &gt; &gt;',['../classscore_1_1_max_range_spin_box.html',1,'score']]],
   ['mayberebuild_1276',['maybeRebuild',['../classscore_1_1gfx_1_1_render_list.html#a3d76d42b10aec8188188cc6bad2d04e7',1,'score::gfx::RenderList']]],
-  ['memberspec_1277',['MemberSpec',['../struct_gfx_1_1_shader_program_1_1_member_spec.html',1,'Gfx::ShaderProgram']]],
+  ['memberspec_1277',['MemberSpec',['../struct_gfx_1_1_shader_source_1_1_member_spec.html',1,'Gfx::ShaderSource']]],
   ['menu_1278',['Menu',['../classscore_1_1_menu.html',1,'score']]],
   ['menubutton_1279',['MenuButton',['../class_inspector_1_1_menu_button.html',1,'Inspector']]],
   ['menumanager_1280',['MenuManager',['../classscore_1_1_menu_manager.html',1,'score']]],

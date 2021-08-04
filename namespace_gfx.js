@@ -78,7 +78,7 @@ var namespace_gfx =
     [ "ProcessedProgram", "struct_gfx_1_1_processed_program.html", "struct_gfx_1_1_processed_program" ],
     [ "ProgramCache", "struct_gfx_1_1_program_cache.html", "struct_gfx_1_1_program_cache" ],
     [ "ShaderPreviewWidget", "class_gfx_1_1_shader_preview_widget.html", "class_gfx_1_1_shader_preview_widget" ],
-    [ "ShaderProgram", "struct_gfx_1_1_shader_program.html", "struct_gfx_1_1_shader_program" ],
+    [ "ShaderSource", "struct_gfx_1_1_shader_source.html", "struct_gfx_1_1_shader_source" ],
     [ "spout_device", "class_gfx_1_1spout__device.html", "class_gfx_1_1spout__device" ],
     [ "SpoutDevice", "class_gfx_1_1_spout_device.html", "class_gfx_1_1_spout_device" ],
     [ "SpoutNode", "struct_gfx_1_1_spout_node.html", "struct_gfx_1_1_spout_node" ],

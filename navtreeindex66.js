@@ -1,6 +1,5 @@
 var NAVTREEINDEX66 =
 {
-"structscore_1_1gfx_1_1_texture_normal_mesh.html#ac2f02c4296e1ff883ffd3253893770c4":[12,0,44,2,49,1],
 "structscore_1_1gfx_1_1_texture_render_target.html":[12,0,44,2,50],
 "structscore_1_1gfx_1_1_texture_render_target.html#a0aca7e827e4bbaf25cd10bc37ccca524":[12,0,44,2,50,5],
 "structscore_1_1gfx_1_1_texture_render_target.html#a37d7728b0d7222c68fa1e70581d6e79c":[12,0,44,2,50,1],
@@ -176,8 +175,8 @@ var NAVTREEINDEX66 =
 "structserialization__tag_3_01_t_00_01std_1_1enable__if__t_3_01std_1_1is__enum_3_01_t_01_4_1_1value_01_4_01_4.html#a7af24c36573143183bf12a86d59fb91c":[12,0,360,0],
 "structstd_1_1hash_3_01_device_1_1_full_address_settings_01_4.html":[12,0,49,0],
 "structstd_1_1hash_3_01_device_1_1_full_address_settings_01_4.html#a0d2972ddfb63ca49382b7baf94f184a5":[12,0,49,0,0],
-"structstd_1_1hash_3_01_gfx_1_1_shader_program_01_4.html":[12,0,49,1],
-"structstd_1_1hash_3_01_gfx_1_1_shader_program_01_4.html#ad229a4c0f5847bb29098953e98111886":[12,0,49,1,0],
+"structstd_1_1hash_3_01_gfx_1_1_shader_source_01_4.html":[12,0,49,1],
+"structstd_1_1hash_3_01_gfx_1_1_shader_source_01_4.html#a0880734b546ef52dad88196bac75d83e":[12,0,49,1,0],
 "structstd_1_1hash_3_01_id_3_01tag_01_4_01_4.html":[12,0,49,2],
 "structstd_1_1hash_3_01_id_3_01tag_01_4_01_4.html#ac90d6abf7262aba2a922f9c41a02a9c6":[12,0,49,2,0],
 "structstd_1_1hash_3_01_object_identifier_01_4.html":[12,0,49,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX66 =
 "structvst3_1_1_host_app.html#ad8398c42e0260f119f18f24e12db72a1":[12,0,54,7,3],
 "structvst3_1_1_plugin.html":[12,0,54,12],
 "structvst3_1_1_plugin.html#a0192a5996df478430d0cfab227d276f1":[12,0,54,12,10],
-"structvst3_1_1_plugin.html#a0224ffb26b64d0a61c6afe8c847d7ec2":[12,0,54,12,9]
+"structvst3_1_1_plugin.html#a0224ffb26b64d0a61c6afe8c847d7ec2":[12,0,54,12,9],
+"structvst3_1_1_plugin.html#a04132ba864d0f961baa68ae49e9af43a":[12,0,54,12,0]
 };

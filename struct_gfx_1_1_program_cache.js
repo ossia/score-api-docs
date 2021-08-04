@@ -1,5 +1,5 @@
 var struct_gfx_1_1_program_cache =
 [
-    [ "get", "struct_gfx_1_1_program_cache.html#a4dfa2503a0ccae9d46f649e3bfebd3c4", null ],
-    [ "programs", "struct_gfx_1_1_program_cache.html#a0d14c217e5efa37b36047a4e9df71905", null ]
+    [ "get", "struct_gfx_1_1_program_cache.html#ad80be5186205951541a64ae99b698696", null ],
+    [ "programs", "struct_gfx_1_1_program_cache.html#a8989fe52e99c1092136d52ba5a55c903", null ]
 ];
