@@ -1,5 +1,9 @@
 var NAVTREEINDEX25 =
 {
+"class_protocols_1_1_artnet_device.html#a080aab77c48446c65fd23844b04056f0":[12,0,38,3,0],
+"class_protocols_1_1_artnet_device.html#a1000368f450c6bb1fee332ebe15cf6e1":[12,0,38,3,3],
+"class_protocols_1_1_artnet_device.html#adab0829ad1148077854d736cc6452dda":[12,0,38,3,2],
+"class_protocols_1_1_artnet_device.html#af7cd92191628ba011899d8da7492f828":[12,0,38,3,1],
 "class_protocols_1_1_artnet_protocol_factory.html":[12,0,38,4],
 "class_protocols_1_1_artnet_protocol_settings_widget.html":[12,0,38,5],
 "class_protocols_1_1_artnet_protocol_settings_widget.html#a129347b8392d7db00470c31870b7e5c9":[12,0,38,5,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX25 =
 "class_qt_diagnostic_consumer.html":[12,0,308],
 "class_qt_diagnostic_consumer.html#a251fc75218cb12742cb3832de4cede64":[12,0,308,0],
 "class_qt_diagnostic_consumer.html#ab8a666f65c2592f5bebd5673a83a559a":[12,0,308,1],
-"class_random_name_provider.html":[12,0,309],
-"class_reader.html":[12,0,310],
-"class_recording_1_1_application_plugin.html":[12,0,39,0],
-"class_recording_1_1_application_plugin.html#a4207bafdf2378184dc9231ba83cf3fce":[12,0,39,0,1],
-"class_recording_1_1_application_plugin.html#a47018781f710ba5f2a761bf1a3ccc760":[12,0,39,0,3]
+"class_random_name_provider.html":[12,0,309]
 };

@@ -959,7 +959,7 @@ $(document).ready(function(){initNavTree('plugins_2score-lib-process_2_process_2
 <div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;  <span class="keyword">using</span> QValidator::QValidator;</div>
 <div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;  <a class="code" href="namespace_state.html">State</a> validate(QString&amp; str, <span class="keywordtype">int</span>&amp;)<span class="keyword"> const override</span></div>
 <div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;    <span class="keyword">auto</span> p = Control::get_time_signature(str.toStdString());</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;    <span class="keyword">auto</span> p = ossia::get_time_signature(str.toStdString());</div>
 <div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;    <span class="keywordflow">if</span> (!p)</div>
 <div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;      <span class="keywordflow">return</span> State::Invalid;</div>
 <div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160; </div>

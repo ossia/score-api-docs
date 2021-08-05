@@ -1,5 +1,14 @@
 var NAVTREEINDEX45 =
 {
+"classscore_1_1_zoom_item.html#a6609812205a3633cb4b61fcb7341b619":[12,0,44,276,4],
+"classscore_1_1_zoom_item.html#a94bc17116c0367b5110c0727cc2332d0":[12,0,44,276,3],
+"classscore_1_1_zoom_item.html#a998ffb456ae1a59d3340adc1216c638d":[12,0,44,276,2],
+"classscore_1_1_zoom_item.html#aad1d823932427c2471673e642318a3b9":[12,0,44,276,5],
+"classscore_1_1_zoom_item.html#ae40f9931209f98d8445c77fdd6945b92":[12,0,44,276,0],
+"classscore_1_1dynarray__impl.html":[12,0,44,79],
+"classscore_1_1dynarray__impl.html#a009738a1825cd6dadf2600e671f97e5a":[12,0,44,79,6],
+"classscore_1_1dynarray__impl.html#a28aa02075aab1381232a0269a4504cae":[12,0,44,79,4],
+"classscore_1_1dynarray__impl.html#a33cc5f787e0405cec8beb160ae9db62e":[12,0,44,79,3],
 "classscore_1_1dynarray__impl.html#a408e2d8e2df5cde39dfaf3ce073f40ff":[12,0,44,79,8],
 "classscore_1_1dynarray__impl.html#a4d6ba355f379c56dbb24a213b10cfa61":[12,0,44,79,9],
 "classscore_1_1dynarray__impl.html#a5e4adaf94b8246cc6f9505c0e740cdbc":[12,0,44,79,5],
@@ -240,14 +249,5 @@ var NAVTREEINDEX45 =
 "classscore__plugin__lv2.html#aea0e143ed44c4c618ae54c53c93e3de7":[12,0,337,2],
 "classscore__plugin__mapping.html":[12,0,338],
 "classscore__plugin__mapping.html#a8f7798334763df37f2fd20a9e2e0090b":[12,0,338,0],
-"classscore__plugin__mapping.html#a991d3379a887dc90c9b274b6b871d084":[12,0,338,1],
-"classscore__plugin__media.html":[12,0,339],
-"classscore__plugin__media.html#a7edcc14c03fa3ebb3ac5c62a90209ff4":[12,0,339,4],
-"classscore__plugin__media.html#a980164404a605fd348115d1d448a924c":[12,0,339,1],
-"classscore__plugin__media.html#aa04957ab8d1d28dba708de3d9fb2fa92":[12,0,339,0],
-"classscore__plugin__media.html#aa65bcd62a80177c991a3731295b8f388":[12,0,339,2],
-"classscore__plugin__media.html#ab8fcf1d1e700153d765a869b256c90d4":[12,0,339,3],
-"classscore__plugin__midi.html":[12,0,340],
-"classscore__plugin__midi.html#aa5083e02aac117b84edf1c720fbb6bb7":[12,0,340,1],
-"classscore__plugin__midi.html#affa12fc885c5d55617268de3962a73a1":[12,0,340,0]
+"classscore__plugin__mapping.html#a991d3379a887dc90c9b274b6b871d084":[12,0,338,1]
 };

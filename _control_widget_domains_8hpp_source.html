@@ -279,7 +279,7 @@ $(document).ready(function(){initNavTree('_control_widget_domains_8hpp_source.ht
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;bindVec2Domain(<span class="keyword">const</span> T&amp; slider, Control_T&amp; inlet, Widget_T&amp; widget)</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;{</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keyword">auto</span> update_range = [&amp;slider, &amp;widget, &amp;inlet]</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keyword">auto</span> update_range = [&amp;widget, &amp;inlet]</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  {</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keyword">auto</span> min = ossia::get_min(inlet.domain());</div>
@@ -325,7 +325,7 @@ $(document).ready(function(){initNavTree('_control_widget_domains_8hpp_source.ht
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;bindVec3Domain(<span class="keyword">const</span> T&amp; slider, Control_T&amp; inlet, Widget_T&amp; widget)</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;{</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="keyword">auto</span> update_range = [&amp;slider, &amp;widget, &amp;inlet]</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="keyword">auto</span> update_range = [&amp;widget, &amp;inlet]</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  {</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keyword">auto</span> min = ossia::get_min(inlet.domain());</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keyword">auto</span> max = ossia::get_max(inlet.domain());</div>

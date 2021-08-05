@@ -5,6 +5,7 @@ var class_scenario_1_1_interval_header =
       [ "RackHidden", "class_scenario_1_1_interval_header.html#a69b647db331d2a2aba18269fae915df1a8630728710b00809c14e4bfcd2dd4b6c", null ],
       [ "RackShown", "class_scenario_1_1_interval_header.html#a69b647db331d2a2aba18269fae915df1af1058dfad3237a06a9968d14f4e4ff4e", null ]
     ] ],
+    [ "intervalView", "class_scenario_1_1_interval_header.html#ae3db7761dce91990e13af876ebaf9c69", null ],
     [ "mouseMoveEvent", "class_scenario_1_1_interval_header.html#a24e5075c92e61db420bb86e1642ba2e7", null ],
     [ "mousePressEvent", "class_scenario_1_1_interval_header.html#a66e12451ec601dca074a3ff61cc89939", null ],
     [ "mouseReleaseEvent", "class_scenario_1_1_interval_header.html#a0c81da4635d033c618fd135518470aa4", null ],

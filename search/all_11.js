@@ -137,6 +137,6 @@ var searchData=
   ['qt_5fproperty_5fconverter_3c_20state_3a_3aaddressaccessor_20_3e_1880',['qt_property_converter&lt; State::AddressAccessor &gt;',['../structossia_1_1qt__property__converter_3_01_state_1_1_address_accessor_01_4.html',1,'ossia']]],
   ['qt_5fproperty_5fconverter_3c_3a_3atimeval_20_3e_1881',['qt_property_converter&lt;::TimeVal &gt;',['../structossia_1_1qt__property__converter_3_1_1_time_val_01_4.html',1,'ossia']]],
   ['qtdiagnosticconsumer_1882',['QtDiagnosticConsumer',['../class_qt_diagnostic_consumer.html',1,'']]],
-  ['quantificationwidget_1883',['QuantificationWidget',['../class_scenario_1_1_quantification_widget.html',1,'Scenario']]],
+  ['quantificationwidget_1883',['QuantificationWidget',['../classscore_1_1_quantification_widget.html',1,'score']]],
   ['quiet_1884',['Quiet',['../struct_send_strategy_1_1_quiet.html',1,'SendStrategy::Quiet'],['../struct_redo_strategy_1_1_quiet.html',1,'RedoStrategy::Quiet']]]
 ];

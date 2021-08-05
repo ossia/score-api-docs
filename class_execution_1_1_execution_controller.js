@@ -15,6 +15,7 @@ var class_execution_1_1_execution_controller =
     [ "request_reinitialize_from_localtree", "class_execution_1_1_execution_controller.html#af193bdbb2fa23e80b64993d39016e08c", null ],
     [ "request_stop", "class_execution_1_1_execution_controller.html#a43dccbb8d864f3011b929a90edec740c", null ],
     [ "request_stop_from_localtree", "class_execution_1_1_execution_controller.html#ae648841f9b649fb0c17cefa7589562c4", null ],
+    [ "request_stop_interval", "class_execution_1_1_execution_controller.html#a4a4583ed0a06495afeaca70ec0b196e0", null ],
     [ "request_transport_from_localtree", "class_execution_1_1_execution_controller.html#a23a6e140c6c360b7a489e1c3764d4f25", null ],
     [ "transport", "class_execution_1_1_execution_controller.html#a3952857a1fd546aba41ce459bd99598c", null ]
 ];

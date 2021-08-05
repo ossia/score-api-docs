@@ -1,5 +1,14 @@
 var NAVTREEINDEX52 =
 {
+"struct_gfx_1_1_kinect2_settings.html#a670f97eaeb1706407047686e0fc483ac":[12,0,15,40,1],
+"struct_gfx_1_1_kinect2_settings.html#ab9053655fffecf316fecd9350135f397":[12,0,15,40,0],
+"struct_gfx_1_1_kinect2_settings.html#ab9daeb417e4be702de8e2ecdaea1a7fa":[12,0,15,40,2],
+"struct_gfx_1_1_kinect2_settings.html#ac02329d6edbb05b430887bd367d8e9c8":[12,0,15,40,3],
+"struct_gfx_1_1_processed_program.html":[12,0,15,42],
+"struct_gfx_1_1_processed_program.html#a14141fdaa4fba7bbcb92fb6d17f7a1dc":[12,0,15,42,0],
+"struct_gfx_1_1_processed_program.html#a7355baf8b9b5e6f35a0d6ba9009262db":[12,0,15,42,2],
+"struct_gfx_1_1_processed_program.html#ac81ff4fc40524631e5fa6241770808b8":[12,0,15,42,1],
+"struct_gfx_1_1_program_cache.html":[12,0,15,43],
 "struct_gfx_1_1_program_cache.html#a8989fe52e99c1092136d52ba5a55c903":[12,0,15,43,1],
 "struct_gfx_1_1_program_cache.html#ad80be5186205951541a64ae99b698696":[12,0,15,43,0],
 "struct_gfx_1_1_settings_1_1_graphics_apis.html":[12,0,15,2,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX52 =
 "struct_jit_1_1_timer.html#abee83e17ff3726ef6f4dfaba6eef33b0":[12,0,21,14,2],
 "struct_jit_1_1inlet__vis.html":[12,0,21,10],
 "struct_jit_1_1inlet__vis.html#a178239c782c3ce95feb75158e79a8763":[12,0,21,10,3],
-"struct_jit_1_1inlet__vis.html#a4599690bf60ae881a23b30b0cf48c819":[12,0,21,10,4],
-"struct_jit_1_1inlet__vis.html#a532e87919cdbc3fb12af44c3b40d7afc":[12,0,21,10,1],
-"struct_jit_1_1inlet__vis.html#ade0c78a74e115647e0ae2fc1218a804f":[12,0,21,10,2],
-"struct_jit_1_1inlet__vis.html#ae045a365719d51dbc988886bf48e125f":[12,0,21,10,0],
-"struct_jit_1_1outlet__vis.html":[12,0,21,12],
-"struct_jit_1_1outlet__vis.html#a05c6cfd3addba5113b4bd981de8f532b":[12,0,21,12,1],
-"struct_jit_1_1outlet__vis.html#a0c2940c13c5a504c4854a4c5779ea873":[12,0,21,12,4],
-"struct_jit_1_1outlet__vis.html#a3b0193ce6697c773425865fc97677ade":[12,0,21,12,2],
-"struct_jit_1_1outlet__vis.html#a7726086610800c268caf7dc50f8bbc6e":[12,0,21,12,3],
-"struct_jit_1_1outlet__vis.html#aa8242fae358f16f5e6ca8a7cdd2e0bbf":[12,0,21,12,0]
+"struct_jit_1_1inlet__vis.html#a4599690bf60ae881a23b30b0cf48c819":[12,0,21,10,4]
 };

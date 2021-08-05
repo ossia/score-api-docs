@@ -325,7 +325,7 @@ $(document).ready(function(){initNavTree('_time_signature_item_8hpp_source.html'
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        &amp;LineTextItem::done,</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keyword">this</span>,</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        [<span class="keyword">this</span>, item](<span class="keyword">const</span> QString&amp; s) {</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;          <span class="keywordflow">if</span> (<span class="keyword">auto</span> sig = Control::get_time_signature(s.toStdString()))</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;          <span class="keywordflow">if</span> (<span class="keyword">auto</span> sig = ossia::get_time_signature(s.toStdString()))</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;          {</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            signatureChange(*sig);</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;          }</div>

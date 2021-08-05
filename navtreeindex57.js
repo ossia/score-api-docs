@@ -1,5 +1,17 @@
 var NAVTREEINDEX57 =
 {
+"struct_process_1_1_style.html#ae47baebf9b82cf6aea4a5d84ea5e99f6":[12,0,37,85,28],
+"struct_process_1_1_style.html#ae7f678c3942ae5c2c9f0f961cd56df0c":[12,0,37,85,79],
+"struct_process_1_1_style.html#aeaf071280cd36cb7acce656a43f799e4":[12,0,37,85,14],
+"struct_process_1_1_style.html#aed88694fc59021036038ff323f899ffc":[12,0,37,85,47],
+"struct_process_1_1_style.html#aeefe121eec51bcdeaac3f31620d98d6d":[12,0,37,85,0],
+"struct_process_1_1_style.html#af6f635ac51c2b71bb0105f569b268f49":[12,0,37,85,92],
+"struct_process_1_1_style.html#af796bec8433ecce2e6e20f8c5f737971":[12,0,37,85,61],
+"struct_process_1_1_style.html#afb49121b55c48fd677a4a31e908c713a":[12,0,37,85,38],
+"struct_process_1_1_style.html#aff532ddb30c75ad393fcec13d9b11a93":[12,0,37,85,76],
+"struct_process_1_1default__t.html":[12,0,37,15],
+"struct_protocols_1_1_artnet_1_1_base_capability.html":[12,0,38,0,0],
+"struct_protocols_1_1_artnet_1_1_base_capability.html#a874f31662ed5e972f5b263f71611cf84":[12,0,38,0,0,0],
 "struct_protocols_1_1_artnet_1_1_base_capability.html#aab9cce8c51960d10983c99cb764e4532":[12,0,38,0,0,2],
 "struct_protocols_1_1_artnet_1_1_base_capability.html#acf044378835430a4e4397f80109baf08":[12,0,38,0,0,1],
 "struct_protocols_1_1_artnet_1_1_channel.html":[12,0,38,0,1],
@@ -237,17 +249,5 @@ var NAVTREEINDEX57 =
 "struct_q_meta_type_id_3_01_uuid_key_3_01_audio_1_1_audio_factory_01_4_01_4.html":[12,0,304],
 "struct_q_meta_type_id_3_01_uuid_key_3_01_audio_1_1_audio_factory_01_4_01_4.html#a78209cf836c018239a4f7530a851b00aa1e3d0a4e001a0df077c4c88d0998fc81":[12,0,304,0],
 "struct_q_meta_type_id_3_01_uuid_key_3_01_device_1_1_protocol_factory_01_4_01_4.html":[12,0,305],
-"struct_q_meta_type_id_3_01_uuid_key_3_01_device_1_1_protocol_factory_01_4_01_4.html#aaea49c71c49db1af6eb55e107357f8c5af69865b7cf015912f076ade1440b7ed2":[12,0,305,0],
-"struct_q_meta_type_id_3_01const_01_media_1_1_audio_file_01_5_01_4.html":[12,0,208],
-"struct_q_meta_type_id_3_01const_01_media_1_1_audio_file_01_5_01_4.html#a7582b471504a8354aab8e2dea188dd1fabc2cd0c0a6f14ff1c019d7162c8e2bc7":[12,0,208,0],
-"struct_q_meta_type_id_3_01const_01_process_1_1_process_model_01_5_01_4.html":[12,0,209],
-"struct_q_meta_type_id_3_01const_01_process_1_1_process_model_01_5_01_4.html#a467eff97a8f2990b3c0b92b4821e680aa964ef78c024e8ecfe7abe0006362a905":[12,0,209,0],
-"struct_q_meta_type_id_3_01const_01_q_mime_data_01_5_01_4.html":[12,0,210],
-"struct_q_meta_type_id_3_01const_01_q_mime_data_01_5_01_4.html#a5f8616e09a51714db9f87b1973d56dffac830507a005a653686a61693faf18667":[12,0,210,0],
-"struct_q_meta_type_id_3_01const_01_scenario_1_1_interval_model_01_5_01_4.html":[12,0,211],
-"struct_q_meta_type_id_3_01const_01_scenario_1_1_interval_model_01_5_01_4.html#acd855dfb826a9552b68e7332997d976baa06b0fbff8eecf4216e9e920bfa9f066":[12,0,211,0],
-"struct_q_meta_type_id_3_01const_01_scenario_1_1_scenario_interface_01_5_01_4.html":[12,0,212],
-"struct_q_meta_type_id_3_01const_01_scenario_1_1_scenario_interface_01_5_01_4.html#aed63c36e5f4ebaeaecacd23e5aacddb2aab8a83fb4f6fe93674d8a7eebf0fe629":[12,0,212,0],
-"struct_q_meta_type_id_3_01ossia_1_1audio__stretch__mode_01_4.html":[12,0,246],
-"struct_q_meta_type_id_3_01ossia_1_1audio__stretch__mode_01_4.html#a97d057984add31fabe12d2c5af2a1b03a82abd662d3d748dbb66e0e0da78a0ea7":[12,0,246,0]
+"struct_q_meta_type_id_3_01_uuid_key_3_01_device_1_1_protocol_factory_01_4_01_4.html#aaea49c71c49db1af6eb55e107357f8c5af69865b7cf015912f076ade1440b7ed2":[12,0,305,0]
 };

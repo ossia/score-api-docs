@@ -1,5 +1,14 @@
 var NAVTREEINDEX46 =
 {
+"classscore__plugin__media.html":[12,0,339],
+"classscore__plugin__media.html#a7edcc14c03fa3ebb3ac5c62a90209ff4":[12,0,339,4],
+"classscore__plugin__media.html#a980164404a605fd348115d1d448a924c":[12,0,339,1],
+"classscore__plugin__media.html#aa04957ab8d1d28dba708de3d9fb2fa92":[12,0,339,0],
+"classscore__plugin__media.html#aa65bcd62a80177c991a3731295b8f388":[12,0,339,2],
+"classscore__plugin__media.html#ab8fcf1d1e700153d765a869b256c90d4":[12,0,339,3],
+"classscore__plugin__midi.html":[12,0,340],
+"classscore__plugin__midi.html#aa5083e02aac117b84edf1c720fbb6bb7":[12,0,340,1],
+"classscore__plugin__midi.html#affa12fc885c5d55617268de3962a73a1":[12,0,340,0],
 "classscore__plugin__nodal.html":[12,0,341],
 "classscore__plugin__nodal.html#a6d444c529fe203573deedbe4ab56e2bb":[12,0,341,0],
 "classscore__plugin__nodal.html#ac69a3b1eca0a68020325db29b46af3c1":[12,0,341,1],
@@ -240,14 +249,5 @@ var NAVTREEINDEX46 =
 "classvst_1_1_control_inlet.html#a58adf8d892cb9948d6be9aa513b9f9e7":[12,0,53,2,9],
 "classvst_1_1_control_inlet.html#a632ac408bcccb08181ddfcdb2b130ab9":[12,0,53,2,3],
 "classvst_1_1_control_inlet.html#a69d3255929123606c33e9472e1930f4f":[12,0,53,2,4],
-"classvst_1_1_control_inlet.html#a6e7fd2554d8632d19999cd32bb972d1f":[12,0,53,2,10],
-"classvst_1_1_control_inlet.html#a789d223e0d2a269502a44469dd9f8ec9":[12,0,53,2,1],
-"classvst_1_1_control_inlet.html#a7e1d478ae7144cd36a5685baba452052":[12,0,53,2,5],
-"classvst_1_1_control_inlet.html#aaba2dd9a0fc89076285eb176016fe4a7":[12,0,53,2,7],
-"classvst_1_1_control_inlet.html#aba78c9b3ba6d127d3ace848324ca19d8":[12,0,53,2,0],
-"classvst_1_1_control_inlet.html#ae04ef81082b0fb3cf4a32a6d6df7c2e0":[12,0,53,2,11],
-"classvst_1_1_control_inlet.html#aed03c0d3480748f27baaacee62db85d6":[12,0,53,2,2],
-"classvst_1_1_control_port_factory.html":[12,0,53,3],
-"classvst_1_1_control_port_factory.html#a0330ebd54fa5008b6deb7af497c83d20":[12,0,53,3,3],
-"classvst_1_1_control_port_factory.html#a35e0e4f3e8893d4361ca5148c29c36ff":[12,0,53,3,1]
+"classvst_1_1_control_inlet.html#a6e7fd2554d8632d19999cd32bb972d1f":[12,0,53,2,10]
 };

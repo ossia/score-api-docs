@@ -71,7 +71,7 @@ var searchData=
   ['color_5fmap_258',['color_map',['../structscore_1_1_skin_1_1color__map.html',1,'score::Skin']]],
   ['colorbang_259',['ColorBang',['../classscore_1_1_color_bang.html',1,'score']]],
   ['colorref_260',['ColorRef',['../structscore_1_1_color_ref.html',1,'score']]],
-  ['colors_261',['Colors',['../class_interpolation_1_1_colors.html',1,'Interpolation::Colors'],['../class_interp_state_1_1_colors.html',1,'InterpState::Colors'],['../class_automation_1_1_colors.html',1,'Automation::Colors'],['../class_metronome_1_1_colors.html',1,'Metronome::Colors'],['../class_mapping_1_1_colors.html',1,'Mapping::Colors']]],
+  ['colors_261',['Colors',['../class_automation_1_1_colors.html',1,'Automation::Colors'],['../class_interpolation_1_1_colors.html',1,'Interpolation::Colors'],['../class_interp_state_1_1_colors.html',1,'InterpState::Colors'],['../class_metronome_1_1_colors.html',1,'Metronome::Colors'],['../class_mapping_1_1_colors.html',1,'Mapping::Colors']]],
   ['combobox_262',['ComboBox',['../classscore_1_1_combo_box.html',1,'score::ComboBox'],['../struct_control_1_1_combo_box.html',1,'Control::ComboBox&lt; T, N &gt;'],['../struct_widget_factory_1_1_combo_box.html',1,'WidgetFactory::ComboBox']]],
   ['comboslider_263',['ComboSlider',['../structscore_1_1_combo_slider.html',1,'score']]],
   ['command_264',['Command',['../classscore_1_1_command.html',1,'score::Command'],['../structscore_1_1_property_command___t_1_1command.html',1,'score::PropertyCommand_T&lt; T &gt;::command&lt; U &gt;']]],

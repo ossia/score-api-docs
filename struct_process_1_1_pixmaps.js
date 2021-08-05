@@ -3,6 +3,8 @@ var struct_process_1_1_pixmaps =
     [ "add", "struct_process_1_1_pixmaps.html#afd4a3097be0e4290339412abf8c399c2", null ],
     [ "close_off", "struct_process_1_1_pixmaps.html#a2fb0e3f337c29e745fab4acea156253d", null ],
     [ "close_on", "struct_process_1_1_pixmaps.html#acd3f22a02ec5927c04c743b6bd072449", null ],
+    [ "interval_play", "struct_process_1_1_pixmaps.html#ad0a96ef503cbccdba2994c6252ab3475", null ],
+    [ "interval_stop", "struct_process_1_1_pixmaps.html#a25ae2768266b8dea0499fabe0705a5dc", null ],
     [ "metricHandle", "struct_process_1_1_pixmaps.html#aac83ff4ce5016f31629b203d3f2f28df", null ],
     [ "muted", "struct_process_1_1_pixmaps.html#ac6e126103c6ea5a8c4148c2d3037f1ad", null ],
     [ "nodal_off", "struct_process_1_1_pixmaps.html#a6a2e1ba7fd9672178470913504837846", null ],
