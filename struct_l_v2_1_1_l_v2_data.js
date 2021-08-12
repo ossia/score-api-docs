@@ -12,5 +12,6 @@ var struct_l_v2_1_1_l_v2_data =
     [ "host", "struct_l_v2_1_1_l_v2_data.html#ac6884472f8ec420418605debe6f59c98", null ],
     [ "midi_in_ports", "struct_l_v2_1_1_l_v2_data.html#a5217d1841891fb5b584e59d615e86841", null ],
     [ "midi_other_ports", "struct_l_v2_1_1_l_v2_data.html#a2eceb72d722ed88b326e530bd6daed2a", null ],
-    [ "midi_out_ports", "struct_l_v2_1_1_l_v2_data.html#a080589989279f26f12ae8e9a7f0b47ba", null ]
+    [ "midi_out_ports", "struct_l_v2_1_1_l_v2_data.html#a080589989279f26f12ae8e9a7f0b47ba", null ],
+    [ "time_Position_ports", "struct_l_v2_1_1_l_v2_data.html#aa84ab2c300e71fc21652e996611aaaa9", null ]
 ];
