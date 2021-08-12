@@ -1,5 +1,10 @@
 var NAVTREEINDEX54 =
 {
+"struct_media_1_1_audio_file_1_1_view_handle.html#a1d1a420f6ddc5a63d40cc998c3ce2a48":[12,0,27,6,5,3],
+"struct_media_1_1_audio_file_1_1_view_handle.html#a2e273d020882d96434c51848b67ea63f":[12,0,27,6,5,2],
+"struct_media_1_1_audio_file_1_1_view_handle.html#a663eba1888e8e11524c163a4689b10e2":[12,0,27,6,5,0],
+"struct_media_1_1_audio_file_1_1_view_handle.html#afff8a9612f90e072bd5213ef186809bd":[12,0,27,6,5,1],
+"struct_media_1_1_audio_info.html":[12,0,27,8],
 "struct_media_1_1_audio_info.html#a40dbe5a78f3c192217cf14fac08cf34b":[12,0,27,8,0],
 "struct_media_1_1_audio_info.html#a6851958bfe490e9a4174f6752cc949ae":[12,0,27,8,3],
 "struct_media_1_1_audio_info.html#a7d00c10ccb4aec745e52eccca372a263":[12,0,27,8,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX54 =
 "struct_nodal_1_1_add_node.html#a98c00b9b792257448b794b009f617fdf":[12,0,31,0,1],
 "struct_nodal_1_1_add_node.html#aa848a2e0b056b84373baca69014d518d":[12,0,31,0,3],
 "struct_nodal_1_1_hierarchy_manager_1_1_child_pair.html":[12,0,31,3,0],
-"struct_nodal_1_1_hierarchy_manager_1_1_child_pair.html#a175936fdf2cd9dad38b3331b15df4d6b":[12,0,31,3,0,1],
-"struct_nodal_1_1_hierarchy_manager_1_1_child_pair.html#a838cabf9d798279ec4910e9eb19d7352":[12,0,31,3,0,0],
-"struct_nodal_1_1_hierarchy_manager_1_1_child_pair.html#aca7eda97f2972432fa14d68cb60dc43a":[12,0,31,3,0,2],
-"struct_nodal_1_1_nodal_executor_base_1_1_registered_node.html":[12,0,31,6,0],
-"struct_nodal_1_1_nodal_executor_base_1_1_registered_node.html#a75d6c920fd0493d9388a36ba2e1b2f25":[12,0,31,6,0,0],
-"struct_nodes_1_1_arpeggiator_1_1_node.html":[12,0,32,0,0]
+"struct_nodal_1_1_hierarchy_manager_1_1_child_pair.html#a175936fdf2cd9dad38b3331b15df4d6b":[12,0,31,3,0,1]
 };

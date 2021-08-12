@@ -49,7 +49,7 @@ var searchData=
   ['oscspecificsettings_1514',['OSCSpecificSettings',['../struct_protocols_1_1_o_s_c_specific_settings.html',1,'Protocols']]],
   ['ossia_5fto_5fpd_5fvalue_1515',['ossia_to_pd_value',['../struct_pd_1_1ossia__to__pd__value.html',1,'Pd']]],
   ['outcontrol_1516',['OutControl',['../struct_control_1_1_out_control.html',1,'Control']]],
-  ['outlet_1517',['Outlet',['../class_outlet.html',1,'Outlet'],['../class_process_1_1_outlet.html',1,'Process::Outlet']]],
+  ['outlet_1517',['Outlet',['../class_process_1_1_outlet.html',1,'Process::Outlet'],['../class_outlet.html',1,'Outlet']]],
   ['outlet_5fvis_1518',['outlet_vis',['../struct_jit_1_1outlet__vis.html',1,'Jit']]],
   ['outletinspectorfactory_1519',['OutletInspectorFactory',['../class_dataflow_1_1_outlet_inspector_factory.html',1,'Dataflow']]],
   ['output_1520',['output',['../classscore_1_1gfx_1_1_node.html#afb7194d7e2605a0a39c17eb3ac3e2fa5',1,'score::gfx::Node::output()'],['../classscore_1_1gfx_1_1_render_list.html#ae178a78f64300b29ba29beb21653e2b4',1,'score::gfx::RenderList::output()']]],

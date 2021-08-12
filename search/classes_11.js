@@ -66,7 +66,7 @@ var searchData=
   ['rendereddepthnode_4529',['RenderedDepthNode',['../struct_rendered_depth_node.html',1,'']]],
   ['renderedisfnode_4530',['RenderedISFNode',['../structscore_1_1gfx_1_1_rendered_i_s_f_node.html',1,'score::gfx']]],
   ['renderedphongnode_4531',['RenderedPhongNode',['../structscore_1_1gfx_1_1_rendered_phong_node.html',1,'score::gfx']]],
-  ['renderer_4532',['Renderer',['../classscore_1_1gfx_1_1_screen_node_1_1_renderer.html',1,'score::gfx::ScreenNode::Renderer'],['../classscore_1_1gfx_1_1_full_screen_image_node_1_1_renderer.html',1,'score::gfx::FullScreenImageNode::Renderer'],['../classscore_1_1gfx_1_1_images_node_1_1_renderer.html',1,'score::gfx::ImagesNode::Renderer'],['../classscore_1_1gfx_1_1_text_node_1_1_renderer.html',1,'score::gfx::TextNode::Renderer']]],
+  ['renderer_4532',['Renderer',['../classscore_1_1gfx_1_1_text_node_1_1_renderer.html',1,'score::gfx::TextNode::Renderer'],['../classscore_1_1gfx_1_1_screen_node_1_1_renderer.html',1,'score::gfx::ScreenNode::Renderer'],['../classscore_1_1gfx_1_1_full_screen_image_node_1_1_renderer.html',1,'score::gfx::FullScreenImageNode::Renderer'],['../classscore_1_1gfx_1_1_images_node_1_1_renderer.html',1,'score::gfx::ImagesNode::Renderer']]],
   ['renderlist_4533',['RenderList',['../classscore_1_1gfx_1_1_render_list.html',1,'score::gfx']]],
   ['renderstate_4534',['RenderState',['../structscore_1_1gfx_1_1_render_state.html',1,'score::gfx']]],
   ['replacedevice_4535',['ReplaceDevice',['../class_explorer_1_1_command_1_1_replace_device.html',1,'Explorer::Command']]],

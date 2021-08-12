@@ -580,10 +580,12 @@ var annotated_dup =
       [ "qt_property_converter<::TimeVal >", "structossia_1_1qt__property__converter_3_1_1_time_val_01_4.html", "structossia_1_1qt__property__converter_3_1_1_time_val_01_4" ]
     ] ],
     [ "Patternist", null, [
+      [ "DropHandler", "class_patternist_1_1_drop_handler.html", null ],
       [ "Executor", "class_patternist_1_1_executor.html", "class_patternist_1_1_executor" ],
       [ "InspectorFactory", "class_patternist_1_1_inspector_factory.html", null ],
       [ "InspectorWidget", "class_patternist_1_1_inspector_widget.html", "class_patternist_1_1_inspector_widget" ],
       [ "Lane", "struct_patternist_1_1_lane.html", "struct_patternist_1_1_lane" ],
+      [ "LibraryHandler", "class_patternist_1_1_library_handler.html", null ],
       [ "Pattern", "struct_patternist_1_1_pattern.html", "struct_patternist_1_1_pattern" ],
       [ "pattern_node", "class_patternist_1_1pattern__node.html", "class_patternist_1_1pattern__node" ],
       [ "Presenter", "class_patternist_1_1_presenter.html", "class_patternist_1_1_presenter" ],

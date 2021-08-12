@@ -1,6 +1,7 @@
 var class_patternist_1_1_process_model =
 [
     [ "ProcessModel", "class_patternist_1_1_process_model.html#a5f0a1fcb16fbe4eb9ac10f7a918a2fa0", null ],
+    [ "ProcessModel", "class_patternist_1_1_process_model.html#abf6ac26215d48db1b1f880a4e5d59846", null ],
     [ "ProcessModel", "class_patternist_1_1_process_model.html#a3853a3e8a292adfc5292ec483e8a362f", null ],
     [ "~ProcessModel", "class_patternist_1_1_process_model.html#a468af39ee9f6ae77975010d75d93fa5e", null ],
     [ "channel", "class_patternist_1_1_process_model.html#a5d9dfdb2a3ad7558becff099a19c64a2", null ],

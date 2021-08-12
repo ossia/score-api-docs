@@ -1,5 +1,10 @@
 var NAVTREEINDEX63 =
 {
+"structscore_1_1_brush_set.html#ae8438ac552efdfb638a1dcc0c0adb556":[12,0,44,31,0],
+"structscore_1_1_brush_set.html#aeaa6c41aef80b33bb8d962e5f6f8cbd8":[12,0,44,31,5],
+"structscore_1_1_color_ref.html":[12,0,44,33],
+"structscore_1_1_color_ref.html#a033b6391537b94caea64453d11d2a209":[12,0,44,33,9],
+"structscore_1_1_color_ref.html#a1e8cc90a45947b68c9a951422d7154ac":[12,0,44,33,3],
 "structscore_1_1_color_ref.html#a54b0a9bcbf302379a9a66b8bb422cb6d":[12,0,44,33,6],
 "structscore_1_1_color_ref.html#a6661440b0fd95352b87e83eb91fe2367":[12,0,44,33,8],
 "structscore_1_1_color_ref.html#a6efcdabe8c103756d152568fe4f7241f":[12,0,44,33,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX63 =
 "structscore_1_1_positioned_event_3_01_scenario_1_1_point_01_4.html#a04e63bf3e5cb1cc42980f0b0f5fd275d":[12,0,44,169,0],
 "structscore_1_1_positioned_event_3_01_scenario_1_1_point_01_4.html#a3a11b959c5bb8036b312208b8281c586":[12,0,44,169,2],
 "structscore_1_1_positioned_event_3_01_scenario_1_1_point_01_4.html#a49c8b6820691d2d63559d81450023037":[12,0,44,169,1],
-"structscore_1_1_property_command___t_1_1command.html":[12,0,44,176,0],
-"structscore_1_1_q_graphics_slider_base.html":[12,0,44,193],
-"structscore_1_1_q_graphics_slider_base.html#a37e7765922857fe940820eb6669375f0":[12,0,44,193,8],
-"structscore_1_1_q_graphics_slider_base.html#a40f64695a5a7485e76930368dabc1249":[12,0,44,193,5],
-"structscore_1_1_q_graphics_slider_base.html#a488e774ea22684a91b58e9ecaddcb923":[12,0,44,193,11],
-"structscore_1_1_q_graphics_slider_base.html#a541d352f2d205f9b53231af2ddca6839":[12,0,44,193,0]
+"structscore_1_1_property_command___t_1_1command.html":[12,0,44,176,0]
 };
