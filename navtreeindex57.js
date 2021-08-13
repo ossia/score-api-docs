@@ -1,5 +1,11 @@
 var NAVTREEINDEX57 =
 {
+"struct_process_1_1_style.html#a34d021c0eb9864c90ac131d60bb0d1af":[12,0,37,85,41],
+"struct_process_1_1_style.html#a3898c85ea91eb09165a3d9d4d8278dfd":[12,0,37,85,65],
+"struct_process_1_1_style.html#a3d1a0ca19e1851c8a497e644496990fe":[12,0,37,85,59],
+"struct_process_1_1_style.html#a3ff36f18c0cd8f79467bc571ea07d8b8":[12,0,37,85,60],
+"struct_process_1_1_style.html#a4409c2f9734680e169b0c2f0f42ce71f":[12,0,37,85,3],
+"struct_process_1_1_style.html#a447b3ce83b96f4ab44f11ebbb3261161":[12,0,37,85,46],
 "struct_process_1_1_style.html#a49a114725dc727ac02b731b718e15da4":[12,0,37,85,13],
 "struct_process_1_1_style.html#a54bd8e79c89a83adc6c33872ba69accf":[12,0,37,85,10],
 "struct_process_1_1_style.html#a57afa669489d63f99a788f782b6998e5":[12,0,37,85,34],
@@ -243,11 +249,5 @@ var NAVTREEINDEX57 =
 "struct_q_meta_type_id_3_01_protocols_1_1_local_specific_settings_01_4.html#a8b268e8ebb71ddcec1e9839f996fd6c4adc36ee430db28f8c9fe95e8a230efa18":[12,0,258,0],
 "struct_q_meta_type_id_3_01_protocols_1_1_m_i_d_i_specific_settings_01_4.html":[12,0,259],
 "struct_q_meta_type_id_3_01_protocols_1_1_m_i_d_i_specific_settings_01_4.html#a0d0df00cbafc011db317582bba8a6783a3b4a530be1470216d000dc8883352a74":[12,0,259,0],
-"struct_q_meta_type_id_3_01_protocols_1_1_minuit_specific_settings_01_4.html":[12,0,260],
-"struct_q_meta_type_id_3_01_protocols_1_1_minuit_specific_settings_01_4.html#a74a5ffb31d50e7bfa3b0fc610b7af9afa3ba492db67eb79e5e771618d95cb5409":[12,0,260,0],
-"struct_q_meta_type_id_3_01_protocols_1_1_o_s_c_query_specific_settings_01_4.html":[12,0,261],
-"struct_q_meta_type_id_3_01_protocols_1_1_o_s_c_query_specific_settings_01_4.html#a41d2e756c6a3b6e8d5a2dd9e0a5b0a19aefcab8e2ac80187f4520a1a21ee8e02c":[12,0,261,0],
-"struct_q_meta_type_id_3_01_protocols_1_1_o_s_c_specific_settings_01_4.html":[12,0,262],
-"struct_q_meta_type_id_3_01_protocols_1_1_o_s_c_specific_settings_01_4.html#a6343464ac3aed9ce1332b7d1c4425e58a9b7571c4d19bc07f98a7e3a403957283":[12,0,262,0],
-"struct_q_meta_type_id_3_01_protocols_1_1_serial_specific_settings_01_4.html":[12,0,263]
+"struct_q_meta_type_id_3_01_protocols_1_1_minuit_specific_settings_01_4.html":[12,0,260]
 };

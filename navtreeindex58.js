@@ -1,5 +1,11 @@
 var NAVTREEINDEX58 =
 {
+"struct_q_meta_type_id_3_01_protocols_1_1_minuit_specific_settings_01_4.html#a74a5ffb31d50e7bfa3b0fc610b7af9afa3ba492db67eb79e5e771618d95cb5409":[12,0,260,0],
+"struct_q_meta_type_id_3_01_protocols_1_1_o_s_c_query_specific_settings_01_4.html":[12,0,261],
+"struct_q_meta_type_id_3_01_protocols_1_1_o_s_c_query_specific_settings_01_4.html#a41d2e756c6a3b6e8d5a2dd9e0a5b0a19aefcab8e2ac80187f4520a1a21ee8e02c":[12,0,261,0],
+"struct_q_meta_type_id_3_01_protocols_1_1_o_s_c_specific_settings_01_4.html":[12,0,262],
+"struct_q_meta_type_id_3_01_protocols_1_1_o_s_c_specific_settings_01_4.html#a6343464ac3aed9ce1332b7d1c4425e58a9b7571c4d19bc07f98a7e3a403957283":[12,0,262,0],
+"struct_q_meta_type_id_3_01_protocols_1_1_serial_specific_settings_01_4.html":[12,0,263],
 "struct_q_meta_type_id_3_01_protocols_1_1_serial_specific_settings_01_4.html#acb5ce23a7da5ca0151fc662f8ec4a09fa40c28a787f40291662104b914a39eb51":[12,0,263,0],
 "struct_q_meta_type_id_3_01_protocols_1_1_w_s_specific_settings_01_4.html":[12,0,265],
 "struct_q_meta_type_id_3_01_protocols_1_1_w_s_specific_settings_01_4.html#a3217cd092ca1c7053ae10157ea23d568a68cc95248c31f8fee3fd40929acd8fbd":[12,0,265,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX58 =
 "struct_rendered_depth_node.html#a5edbb5ebb38bfa1c08f1dee00ebd80e3":[12,0,318,7],
 "struct_rendered_depth_node.html#a704e8e2cde1a513d7aad1db4f2ebccb8":[12,0,318,19],
 "struct_rendered_depth_node.html#a791076c537b13b337823088c0529ed6f":[12,0,318,14],
-"struct_rendered_depth_node.html#a79c67d8a2c7e265ecb23445f476a34b2":[12,0,318,5],
-"struct_rendered_depth_node.html#a8ec548bfbba22b58b517f2d7ddece9c7":[12,0,318,10],
-"struct_rendered_depth_node.html#a96c41de2f15a63384ec15f74fa4a11ac":[12,0,318,1],
-"struct_rendered_depth_node.html#a981084d2513cfb28ccca9dcbb3493b6d":[12,0,318,12],
-"struct_rendered_depth_node.html#a98f5c958f9fb141a4221d807c8380fb8":[12,0,318,23],
-"struct_rendered_depth_node.html#a9cc045401b47fe60dd771a0ce8793d11":[12,0,318,6],
-"struct_rendered_depth_node.html#ab9936c5d3616eb78da614c5017721453":[12,0,318,21]
+"struct_rendered_depth_node.html#a79c67d8a2c7e265ecb23445f476a34b2":[12,0,318,5]
 };

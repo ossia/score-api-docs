@@ -198,13 +198,17 @@ $(document).ready(function(){initNavTree('_gfx_exec_node_8hpp_source.html',''); 
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <span class="comment">// due to the script changing</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      <span class="keywordflow">if</span>(script_index != node-&gt;script_index)</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      SCORE_ASSERT(i &lt; node-&gt;controls.size());</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      ctx.<a class="code" href="struct_execution_1_1_context.html#a1a0fd8f494c0a427dc09b7da3e94bf36">executionQueue</a>.enqueue(<a class="code" href="struct_gfx_1_1control__updater.html">control_updater</a>{node-&gt;controls[i], val});</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      <span class="comment">// This can happen if we sent controls from the UI before the execution engine had the time to add them</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <span class="comment">// Note: ideally something should be fixed to make that fit with the case above</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <span class="keywordflow">if</span>(i &gt;= node-&gt;controls.size())</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      ctx.<a class="code" href="struct_execution_1_1_context.html#a1a0fd8f494c0a427dc09b7da3e94bf36">executionQueue</a>.enqueue(<a class="code" href="struct_gfx_1_1control__updater.html">control_updater</a>{node-&gt;controls[i], val});</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;};</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astruct_execution_1_1_context_html_a1a0fd8f494c0a427dc09b7da3e94bf36"><div class="ttname"><a href="struct_execution_1_1_context.html#a1a0fd8f494c0a427dc09b7da3e94bf36">Execution::Context::executionQueue</a></div><div class="ttdeci">ExecutionCommandQueue &amp; executionQueue</div><div class="ttdef"><b>Definition:</b> ExecutionContext.hpp:103</div></div>

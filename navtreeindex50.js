@@ -1,5 +1,11 @@
 var NAVTREEINDEX50 =
 {
+"struct_control_1_1score__generic__plugin.html#ab4ac453a97792a63b5f50a0d85bdd014":[12,0,3,36,3],
+"struct_control_1_1score__generic__plugin.html#ad34531bd64343abe721937972dd94591":[12,0,3,36,1],
+"struct_control_1_1score__generic__plugin.html#ada657f31af6cbc5d808c8fe0d5322b01":[12,0,3,36,4],
+"struct_control_1_1score__generic__plugin.html#adb927fea43a207e45d02ae7b871a4878":[12,0,3,36,5],
+"struct_control_1_1setup___impl0.html":[12,0,3,37],
+"struct_control_1_1setup___impl0.html#a24418957f0a2dd961324d8c5fc7d506b":[12,0,3,37,3],
 "struct_control_1_1setup___impl0.html#ab838659ad243443144a8c0f32749ebf6":[12,0,3,37,6],
 "struct_control_1_1setup___impl0.html#ac106f6b843de63aa940b0270a4cd2230":[12,0,3,37,4],
 "struct_control_1_1setup___impl0.html#ad6e3435762288ed13bece3c9a73a8efc":[12,0,3,37,2],
@@ -243,11 +249,5 @@ var NAVTREEINDEX50 =
 "struct_device_1_1_full_address_accessor_settings.html#a4465e5c35d5fe43112f64a2fd9e915f0":[12,0,7,13,7],
 "struct_device_1_1_full_address_accessor_settings.html#a49dc79f93e2555c28d84ac40e8358610":[12,0,7,13,6],
 "struct_device_1_1_full_address_accessor_settings.html#a4fbd6c99bd1bf5cc7fdc21ddd59fffbc":[12,0,7,13,11],
-"struct_device_1_1_full_address_accessor_settings.html#a5fd6e18ef617c537ae2df4d1d04522a8":[12,0,7,13,1],
-"struct_device_1_1_full_address_accessor_settings.html#a7161829c7c2816a959168230ac87a184":[12,0,7,13,0],
-"struct_device_1_1_full_address_accessor_settings.html#a75376c37748f9e658caa55311b4eef1f":[12,0,7,13,14],
-"struct_device_1_1_full_address_accessor_settings.html#a871aaa96f7b51e799252a384fcbdd60c":[12,0,7,13,3],
-"struct_device_1_1_full_address_accessor_settings.html#a8bcce80621991615738c5185f46dff54":[12,0,7,13,16],
-"struct_device_1_1_full_address_accessor_settings.html#aba2e5f9473f627e0e0fd4c7817e4ee65":[12,0,7,13,4],
-"struct_device_1_1_full_address_accessor_settings.html#ac442360bfd1534d247e3b72afc26aa89":[12,0,7,13,8]
+"struct_device_1_1_full_address_accessor_settings.html#a5fd6e18ef617c537ae2df4d1d04522a8":[12,0,7,13,1]
 };

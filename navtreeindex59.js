@@ -1,5 +1,11 @@
 var NAVTREEINDEX59 =
 {
+"struct_rendered_depth_node.html#a8ec548bfbba22b58b517f2d7ddece9c7":[12,0,318,10],
+"struct_rendered_depth_node.html#a96c41de2f15a63384ec15f74fa4a11ac":[12,0,318,1],
+"struct_rendered_depth_node.html#a981084d2513cfb28ccca9dcbb3493b6d":[12,0,318,12],
+"struct_rendered_depth_node.html#a98f5c958f9fb141a4221d807c8380fb8":[12,0,318,23],
+"struct_rendered_depth_node.html#a9cc045401b47fe60dd771a0ce8793d11":[12,0,318,6],
+"struct_rendered_depth_node.html#ab9936c5d3616eb78da614c5017721453":[12,0,318,21],
 "struct_rendered_depth_node.html#ab999a87cebb49e4e465052abba465384":[12,0,318,16],
 "struct_rendered_depth_node.html#ac40159b6ac6157cdc7310d28702f555a":[12,0,318,13],
 "struct_rendered_depth_node.html#ad187111259be61aa4022c5657eddf0f1":[12,0,318,20],
@@ -243,11 +249,5 @@ var NAVTREEINDEX59 =
 "struct_scenario_1_1_point.html#a734f4c8f394b2a80b9ec6a3b43b24208":[12,0,43,185,0],
 "struct_scenario_1_1_point.html#a7567abdbc320349c76d3c4d508b5e9c2":[12,0,43,185,1],
 "struct_scenario_1_1_positioned_scenario_event.html":[12,0,43,186],
-"struct_scenario_1_1_positioned_scenario_event.html#acc6c289e17ce1be77259b57aef37d080":[12,0,43,186,0],
-"struct_scenario_1_1_positioned_with_id___scenario_event.html":[12,0,43,187],
-"struct_scenario_1_1_positioned_with_id___scenario_event.html#a9bc62c8405f41376f394d3b1b2d6ff91":[12,0,43,187,0],
-"struct_scenario_1_1_positioned_with_id___scenario_event.html#aad9f9a3f4ad1fe5d6c9ca01a9633ae71":[12,0,43,187,1],
-"struct_scenario_1_1_release_on_slot_handle___event.html":[12,0,43,196],
-"struct_scenario_1_1_release_on_slot_handle___event.html#a4b4c87673b6020f56753ed074b2ae501":[12,0,43,196,2],
-"struct_scenario_1_1_release_on_slot_handle___event.html#ab4e6ca69c4800da5447c3122a94a004e":[12,0,43,196,0]
+"struct_scenario_1_1_positioned_scenario_event.html#acc6c289e17ce1be77259b57aef37d080":[12,0,43,186,0]
 };

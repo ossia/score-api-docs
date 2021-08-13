@@ -1,5 +1,11 @@
 var NAVTREEINDEX67 =
 {
+"structscore_1_1uuids_1_1uuid.html#af431f7a502fbfb6793ded71260d45388":[12,0,44,6,1,9],
+"structscore_1_1uuids_1_1uuid.html#afdd1e9299ca9402dfd9de3676fecd14c":[12,0,44,6,1,0],
+"structserialization__tag.html":[12,0,359],
+"structserialization__tag.html#a244b6080c19feeb3d659035e3e6583c2":[12,0,359,0],
+"structserialization__tag_3_01_t_00_01std_1_1enable__if__t_3_01std_1_1is__enum_3_01_t_01_4_1_1value_01_4_01_4.html":[12,0,360],
+"structserialization__tag_3_01_t_00_01std_1_1enable__if__t_3_01std_1_1is__enum_3_01_t_01_4_1_1value_01_4_01_4.html#a7af24c36573143183bf12a86d59fb91c":[12,0,360,0],
 "structstd_1_1hash_3_01_device_1_1_full_address_settings_01_4.html":[12,0,49,0],
 "structstd_1_1hash_3_01_device_1_1_full_address_settings_01_4.html#a0d2972ddfb63ca49382b7baf94f184a5":[12,0,49,0,0],
 "structstd_1_1hash_3_01_gfx_1_1_shader_source_01_4.html":[12,0,49,1],

@@ -1,5 +1,11 @@
 var NAVTREEINDEX55 =
 {
+"struct_midi_1_1_note_comparator.html":[12,0,29,10],
+"struct_midi_1_1_note_comparator.html#a711f2c6b750ec96e0af8968e4ccceaac":[12,0,29,10,1],
+"struct_midi_1_1_note_comparator.html#afdc60b73ffe5f4990828c5f4b90a2def":[12,0,29,10,0],
+"struct_midi_1_1_note_data.html":[12,0,29,11],
+"struct_midi_1_1_note_data.html#a01bf215d009b36f18527507d9e1550a0":[12,0,29,11,2],
+"struct_midi_1_1_note_data.html#a115730e171d5f4df83dc8a42a5724d15":[12,0,29,11,0],
 "struct_midi_1_1_note_data.html#a2a96f574f73df5fe0e8c266503213c28":[12,0,29,11,7],
 "struct_midi_1_1_note_data.html#a2ab9b703d4860b60ed5fb685c1a1f7d0":[12,0,29,11,12],
 "struct_midi_1_1_note_data.html#a441e4e29b68c6b4bc36823443a75c5c0":[12,0,29,11,13],
@@ -243,11 +249,5 @@ var NAVTREEINDEX55 =
 "struct_nodes_1_1_pitch_to_value_1_1_node.html#aa8e3e35c962afe3114265bdb0176144e":[12,0,32,21,0,1],
 "struct_nodes_1_1_pitch_to_value_1_1_node_1_1_metadata.html":[12,0,32,21,0,0],
 "struct_nodes_1_1_pulse_to_note_1_1_node.html":[12,0,32,22,0],
-"struct_nodes_1_1_pulse_to_note_1_1_node.html#a0cf7e037e837ae8104422dec7885d7cd":[12,0,32,22,0,4],
-"struct_nodes_1_1_pulse_to_note_1_1_node.html#ac17d9d5786db61a044111ca1a8165c2b":[12,0,32,22,0,5],
-"struct_nodes_1_1_pulse_to_note_1_1_node_1_1_metadata.html":[12,0,32,22,0,0],
-"struct_nodes_1_1_pulse_to_note_1_1_node_1_1_note_in.html":[12,0,32,22,0,1],
-"struct_nodes_1_1_pulse_to_note_1_1_node_1_1_note_in.html#a118504eaf4054dc7011fa2354dc0ee7d":[12,0,32,22,0,1,1],
-"struct_nodes_1_1_pulse_to_note_1_1_node_1_1_note_in.html#a1302fe9d2b6057b5e83bf0f08976557b":[12,0,32,22,0,1,0],
-"struct_nodes_1_1_pulse_to_note_1_1_node_1_1_state.html":[12,0,32,22,0,2]
+"struct_nodes_1_1_pulse_to_note_1_1_node.html#a0cf7e037e837ae8104422dec7885d7cd":[12,0,32,22,0,4]
 };

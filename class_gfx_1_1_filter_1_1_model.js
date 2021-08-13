@@ -1,6 +1,7 @@
 var class_gfx_1_1_filter_1_1_model =
 [
     [ "Model", "class_gfx_1_1_filter_1_1_model.html#a1187f1a55d7e3548d3e9feaf634cb7b7", null ],
+    [ "Model", "class_gfx_1_1_filter_1_1_model.html#aba62dc689d5984c414ff0195e47ced63", null ],
     [ "Model", "class_gfx_1_1_filter_1_1_model.html#a7a65ac698d9cd931dca3d7263e0eb834", null ],
     [ "~Model", "class_gfx_1_1_filter_1_1_model.html#aad58f2326f6ea4e7e5fa4c26e114155d", null ],
     [ "errorMessage", "class_gfx_1_1_filter_1_1_model.html#ab9f4ac35e73a9d092ccb893b6833e155", null ],
