@@ -1,5 +1,13 @@
 var NAVTREEINDEX26 =
 {
+"class_protocols_1_1_wiimote_protocol_settings_widget.html#aa999eb107961b7350c77b55304c1f32a":[12,0,38,66,3],
+"class_ptr_container.html":[12,0,204],
+"class_ptr_container.html#a378d798d2ddcf48aed627defb116b545":[12,0,204,6],
+"class_ptr_container.html#a4e559886a569a2e53a7efd473a221e27":[12,0,204,4],
+"class_ptr_container.html#a6a54f210f07188f1fc84d00410585cf9":[12,0,204,3],
+"class_ptr_container.html#a6f5f5bb73318e6c5e86f0dc31a223a27":[12,0,204,2],
+"class_ptr_container.html#a73522dbc828f6c265a3bda8c53f19fe5":[12,0,204,0],
+"class_ptr_container.html#aa58fcab28c00663fd83c2585856e0f56":[12,0,204,1],
 "class_ptr_container.html#af7b94a5cb432fc5843481c8d2876dce4":[12,0,204,5],
 "class_q_map.html":[12,0,205],
 "class_qt_diagnostic_consumer.html":[12,0,308],
@@ -241,13 +249,5 @@ var NAVTREEINDEX26 =
 "class_scenario_1_1_clickable_label_item.html#a1d79a4fd5e3788af716357f9521df414":[12,0,43,17,5],
 "class_scenario_1_1_clickable_label_item.html#a30536fdb6148778102a833207c5ec5be":[12,0,43,17,3],
 "class_scenario_1_1_clickable_label_item.html#a986da3322b40719fa55e3df83c24452d":[12,0,43,17,7],
-"class_scenario_1_1_clickable_label_item.html#ac7e65af350356402f8a13b4e5c37d432":[12,0,43,17,4],
-"class_scenario_1_1_clickable_label_item.html#ac87e920aa36ba80872c2e2330aa51082":[12,0,43,17,0],
-"class_scenario_1_1_clickable_label_item.html#ad15c2224b3b095d793653ef7f359c141":[12,0,43,17,1],
-"class_scenario_1_1_coherency_checker_factory_interface.html":[12,0,43,23],
-"class_scenario_1_1_command_1_1_add_control_messages_to_state.html":[12,0,43,0,0],
-"class_scenario_1_1_command_1_1_add_layer_in_new_slot.html":[12,0,43,0,1],
-"class_scenario_1_1_command_1_1_add_layer_in_new_slot.html#a0f637bfae0df0db32a9a5d6190b127fc":[12,0,43,0,1,1],
-"class_scenario_1_1_command_1_1_add_layer_in_new_slot.html#a5c984f1ff175188a6d838fb4792163fd":[12,0,43,0,1,0],
-"class_scenario_1_1_command_1_1_add_layer_model_to_slot.html":[12,0,43,0,2]
+"class_scenario_1_1_clickable_label_item.html#ac7e65af350356402f8a13b4e5c37d432":[12,0,43,17,4]
 };

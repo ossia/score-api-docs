@@ -12,6 +12,8 @@ var struct_process_1_1_pixmaps =
     [ "play", "struct_process_1_1_pixmaps.html#a732b6a7fab23424ff9275f9f8d028f84", null ],
     [ "portHandleClosed", "struct_process_1_1_pixmaps.html#a6d7b828e73deacbc8c97b4d288cfb5aa", null ],
     [ "portHandleOpen", "struct_process_1_1_pixmaps.html#aa356d6b1c37e70a956586bb50b4cb39c", null ],
+    [ "preset_off", "struct_process_1_1_pixmaps.html#a9ea8d221135486a952b6d0d4c2e84910", null ],
+    [ "preset_on", "struct_process_1_1_pixmaps.html#a632e092a84ab9ca07659ff9d8b0f80b9", null ],
     [ "roll", "struct_process_1_1_pixmaps.html#ac85aa7409bcb0da28d068124db441c2a", null ],
     [ "roll_selected", "struct_process_1_1_pixmaps.html#ad9c1fc849118c1aa0e006b32b882b20b", null ],
     [ "roll_small", "struct_process_1_1_pixmaps.html#a051f1b896236ce0c9d19e1300a4296d2", null ],

@@ -417,6 +417,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setupExternalUI</b> (
 <tr class="memitem:a2908d234409bd1751471e58dcd3d9b6a"><td class="memItemLeft" align="right" valign="top"><a id="a2908d234409bd1751471e58dcd3d9b6a"></a>
 QGraphicsItem *&#160;</td><td class="memItemRight" valign="bottom"><b>makeExternalUIButton</b> (const <a class="el" href="class_process_1_1_process_model.html">ProcessModel</a> &amp;effect, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;context, QObject *self, QGraphicsItem *root)</td></tr>
 <tr class="separator:a2908d234409bd1751471e58dcd3d9b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba4a7dab14de1a921a80685d1875d736"><td class="memItemLeft" align="right" valign="top"><a id="aba4a7dab14de1a921a80685d1875d736"></a>
+QGraphicsItem *&#160;</td><td class="memItemRight" valign="bottom"><b>makePresetButton</b> (const <a class="el" href="class_process_1_1_process_model.html">ProcessModel</a> &amp;proc, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;context, QObject *self, QGraphicsItem *root)</td></tr>
+<tr class="separator:aba4a7dab14de1a921a80685d1875d736"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d39a634ea7ae1242c45e31eab91704c"><td class="memItemLeft" align="right" valign="top"><a id="a2d39a634ea7ae1242c45e31eab91704c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>copyProcess</b> (<a class="el" href="class_j_s_o_n_reader.html">JSONReader</a> &amp;r, const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;proc)</td></tr>
+<tr class="separator:a2d39a634ea7ae1242c45e31eab91704c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a0c341ebd2ab41f7c968f4d1e4b7fe6"><td class="memTemplParams" colspan="2"><a id="a4a0c341ebd2ab41f7c968f4d1e4b7fe6"></a>
 template&lt;typename F &gt; </td></tr>
 <tr class="memitem:a4a0c341ebd2ab41f7c968f4d1e4b7fe6"><td class="memTemplItemLeft" align="right" valign="top">QPointF&#160;</td><td class="memTemplItemRight" valign="bottom"><b>currentWigetPos</b> (int controlIndex, F getControlSize) noexcept(noexcept(getControlSize(0)))</td></tr>
@@ -438,6 +444,17 @@ QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>makeAddressCombo
 <tr class="memitem:a19d9faff7f2b40791ccc6c774befeb22"><td class="memItemLeft" align="right" valign="top"><a id="a19d9faff7f2b40791ccc6c774befeb22"></a>
 QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>makeDeviceCombo</b> (QStringList devices, const <a class="el" href="class_process_1_1_port.html">Process::Port</a> &amp;port, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, QWidget *parent)</td></tr>
 <tr class="separator:a19d9faff7f2b40791ccc6c774befeb22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a339ce34599014678a81f9572e05489"><td class="memItemLeft" align="right" valign="top"><a id="a1a339ce34599014678a81f9572e05489"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>verifyAndUpdateIfChildOf</b> (<a class="el" href="class_object_path.html">ObjectPath</a> &amp;path, const <a class="el" href="class_object_path.html">ObjectPath</a> &amp;parent)</td></tr>
+<tr class="separator:a1a339ce34599014678a81f9572e05489"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24aac184f2a37bc3cba6c8d0efa279a4"><td class="memTemplParams" colspan="2"><a id="a24aac184f2a37bc3cba6c8d0efa279a4"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a24aac184f2a37bc3cba6c8d0efa279a4"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>verifyAndUpdateIfChildOf</b> (<a class="el" href="struct_process_1_1_cable_data.html">Process::CableData</a> &amp;path, const std::vector&lt; <a class="el" href="class_path.html">Path</a>&lt; T &gt;&gt; &amp;vec)</td></tr>
+<tr class="separator:a24aac184f2a37bc3cba6c8d0efa279a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cba7e0f10bc86f4346f5837676a5055"><td class="memTemplParams" colspan="2"><a id="a0cba7e0f10bc86f4346f5837676a5055"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a0cba7e0f10bc86f4346f5837676a5055"><td class="memTemplItemLeft" align="right" valign="top">Dataflow::SerializedCables&#160;</td><td class="memTemplItemRight" valign="bottom"><b>cablesToCopy</b> (const std::vector&lt; T * &gt; &amp;array, const std::vector&lt; <a class="el" href="class_path.html">Path</a>&lt; std::remove_const_t&lt; T &gt;&gt;&gt; &amp;siblings, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx)</td></tr>
+<tr class="separator:a0cba7e0f10bc86f4346f5837676a5055"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa52d012342c2ff8f97651bbd37e790a"><td class="memItemLeft" align="right" valign="top"><a id="aaa52d012342c2ff8f97651bbd37e790a"></a>
 std::unique_ptr&lt; <a class="el" href="class_process_1_1_inlet.html">Inlet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>make_value_inlet</b> (const <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="class_process_1_1_port.html">Process::Port</a> &gt; &amp;c, QObject *parent)</td></tr>
 <tr class="separator:aaa52d012342c2ff8f97651bbd37e790a"><td class="memSeparator" colspan="2">&#160;</td></tr>

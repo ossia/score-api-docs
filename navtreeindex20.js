@@ -1,5 +1,13 @@
 var NAVTREEINDEX20 =
 {
+"class_metronome_1_1_colors.html#adec41021a70bc65c5fe488e5fa89ece9":[12,0,28,2,1],
+"class_metronome_1_1_inspector_factory.html":[12,0,28,3],
+"class_metronome_1_1_inspector_widget.html":[12,0,28,4],
+"class_metronome_1_1_inspector_widget.html#ac085744b4ed1ef2198c340a4fbcf65bf":[12,0,28,4,0],
+"class_metronome_1_1_layer_presenter.html":[12,0,28,5],
+"class_metronome_1_1_layer_presenter.html#ad961aae114e7a3a1ce60c8759c93ddcc":[12,0,28,5,0],
+"class_metronome_1_1_layer_view.html":[12,0,28,6],
+"class_metronome_1_1_layer_view.html#a1cb5d6ac14fcae111bb3ae9d761d2ee0":[12,0,28,6,2],
 "class_metronome_1_1_layer_view.html#a55a772c94965e5fc89d971c3c45fc372":[12,0,28,6,0],
 "class_metronome_1_1_layer_view.html#a6711af58996d39a694d66faec6a91563":[12,0,28,6,1],
 "class_metronome_1_1_process_model.html":[12,0,28,7],
@@ -241,13 +249,5 @@ var NAVTREEINDEX20 =
 "class_multi_ongoing_command_dispatcher.html#ae55b3bf87bd9661d725cc8b857c4352e":[12,0,187,5],
 "class_nodal_1_1_create_node.html":[12,0,31,1],
 "class_nodal_1_1_create_node.html#a2758a261bc2f7584b2224fc93107bce0":[12,0,31,1,3],
-"class_nodal_1_1_create_node.html#a3f3bd2d541a01be71c94680eb72fad8f":[12,0,31,1,2],
-"class_nodal_1_1_create_node.html#a4fbe93ffbbfc7fc80ea129911aa3adab":[12,0,31,1,1],
-"class_nodal_1_1_create_node.html#a789eba75258f5b9125d50001fdd5699f":[12,0,31,1,0],
-"class_nodal_1_1_create_node.html#a7b07e7d8f0dfcc5e28139aee1a36bc07":[12,0,31,1,4],
-"class_nodal_1_1_create_node.html#ae24342875718254ef05e47cb67d3ca2b":[12,0,31,1,5],
-"class_nodal_1_1_drop_nodes_macro.html":[12,0,31,2],
-"class_nodal_1_1_hierarchy_manager.html":[12,0,31,3],
-"class_nodal_1_1_hierarchy_manager.html#a1ab04196478949e2240d0149676edc52":[12,0,31,3,8],
-"class_nodal_1_1_hierarchy_manager.html#a3d9bbca541565b635bbf2c1ecd6bed19":[12,0,31,3,2]
+"class_nodal_1_1_create_node.html#a3f3bd2d541a01be71c94680eb72fad8f":[12,0,31,1,2]
 };

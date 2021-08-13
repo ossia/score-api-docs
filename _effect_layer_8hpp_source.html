@@ -169,10 +169,21 @@ $(document).ready(function(){initNavTree('_effect_layer_8hpp_source.html',''); i
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    QObject* <span class="keyword">self</span>,</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    QGraphicsItem* parent);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;SCORE_LIB_PROCESS_EXPORT</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;QGraphicsItem* makePresetButton(</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; proc,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    QObject* <span class="keyword">self</span>,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    QGraphicsItem* parent);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;SCORE_LIB_PROCESS_EXPORT</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keywordtype">void</span> copyProcess(<a class="code" href="class_j_s_o_n_reader.html">JSONReader</a>&amp; r, <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; proc);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1366</div></div>
+<div class="ttc" id="aclass_j_s_o_n_reader_html"><div class="ttname"><a href="class_j_s_o_n_reader.html">JSONReader</a></div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:51</div></div>
 <div class="ttc" id="aclass_process_1_1_layer_view_html"><div class="ttname"><a href="class_process_1_1_layer_view.html">Process::LayerView</a></div><div class="ttdef"><b>Definition:</b> LayerView.hpp:18</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:15</div></div>
 <div class="ttc" id="aclass_process_1_1_layer_factory_html"><div class="ttname"><a href="class_process_1_1_layer_factory.html">Process::LayerFactory</a></div><div class="ttdef"><b>Definition:</b> ProcessFactory.hpp:63</div></div>
