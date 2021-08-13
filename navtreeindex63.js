@@ -1,5 +1,8 @@
 var NAVTREEINDEX63 =
 {
+"structscore_1_1_application_context.html#ae9a5fb08fd24f276c868a77d7e6465be":[12,0,44,19,8],
+"structscore_1_1_application_context.html#aeb284339129087bc89d3cb9b26825a68":[12,0,44,19,2],
+"structscore_1_1_application_context.html#af71dfe5537d9ba73aad72e1a80ed8da2":[12,0,44,19,5],
 "structscore_1_1_application_settings.html":[12,0,44,24],
 "structscore_1_1_application_settings.html#a0a48ca49dc5cfd09a2534d2f3168c192":[12,0,44,24,3],
 "structscore_1_1_application_settings.html#a0a5bdb3a4aa89add533f07a51e6ccbdc":[12,0,44,24,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX63 =
 "structscore_1_1_menus.html":[12,0,44,146],
 "structscore_1_1_meta_action.html":[12,0,44,149],
 "structscore_1_1_modifier_1_1_click__tag.html":[12,0,44,3,0],
-"structscore_1_1_modifier_1_1_move__tag.html":[12,0,44,3,1],
-"structscore_1_1_modifier_1_1_release__tag.html":[12,0,44,3,2],
-"structscore_1_1_numbered_event.html":[12,0,44,154],
-"structscore_1_1_numbered_event.html#ab3416e423b95152c8a8fc86365334e3c":[12,0,44,154,0]
+"structscore_1_1_modifier_1_1_move__tag.html":[12,0,44,3,1]
 };

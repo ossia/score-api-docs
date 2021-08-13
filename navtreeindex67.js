@@ -1,5 +1,8 @@
 var NAVTREEINDEX67 =
 {
+"structstd_1_1hash_3_01_device_1_1_full_address_settings_01_4.html":[12,0,49,0],
+"structstd_1_1hash_3_01_device_1_1_full_address_settings_01_4.html#a0d2972ddfb63ca49382b7baf94f184a5":[12,0,49,0,0],
+"structstd_1_1hash_3_01_gfx_1_1_shader_source_01_4.html":[12,0,49,1],
 "structstd_1_1hash_3_01_gfx_1_1_shader_source_01_4.html#a0880734b546ef52dad88196bac75d83e":[12,0,49,1,0],
 "structstd_1_1hash_3_01_id_3_01tag_01_4_01_4.html":[12,0,49,2],
 "structstd_1_1hash_3_01_id_3_01tag_01_4_01_4.html#ac90d6abf7262aba2a922f9c41a02a9c6":[12,0,49,2,0],

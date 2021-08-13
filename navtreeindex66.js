@@ -1,5 +1,8 @@
 var NAVTREEINDEX66 =
 {
+"structscore_1_1gfx_1_1_rendered_i_s_f_node.html#ae498906a7750ad7159e367fb6a3784f3":[12,0,44,2,35,3],
+"structscore_1_1gfx_1_1_rendered_phong_node.html":[12,0,44,2,36],
+"structscore_1_1gfx_1_1_rendered_phong_node.html#a6fb6b8b534b838fcdb31ff7c64ead3f1":[12,0,44,2,36,0],
 "structscore_1_1gfx_1_1_sampler.html":[12,0,44,2,40],
 "structscore_1_1gfx_1_1_sampler.html#a57623fcefbc75d11cedba03e2006ad03":[12,0,44,2,40,0],
 "structscore_1_1gfx_1_1_sampler.html#ad4d2595df54f6132f95d404f26033339":[12,0,44,2,40,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX66 =
 "structserialization__tag.html":[12,0,359],
 "structserialization__tag.html#a244b6080c19feeb3d659035e3e6583c2":[12,0,359,0],
 "structserialization__tag_3_01_t_00_01std_1_1enable__if__t_3_01std_1_1is__enum_3_01_t_01_4_1_1value_01_4_01_4.html":[12,0,360],
-"structserialization__tag_3_01_t_00_01std_1_1enable__if__t_3_01std_1_1is__enum_3_01_t_01_4_1_1value_01_4_01_4.html#a7af24c36573143183bf12a86d59fb91c":[12,0,360,0],
-"structstd_1_1hash_3_01_device_1_1_full_address_settings_01_4.html":[12,0,49,0],
-"structstd_1_1hash_3_01_device_1_1_full_address_settings_01_4.html#a0d2972ddfb63ca49382b7baf94f184a5":[12,0,49,0,0],
-"structstd_1_1hash_3_01_gfx_1_1_shader_source_01_4.html":[12,0,49,1]
+"structserialization__tag_3_01_t_00_01std_1_1enable__if__t_3_01std_1_1is__enum_3_01_t_01_4_1_1value_01_4_01_4.html#a7af24c36573143183bf12a86d59fb91c":[12,0,360,0]
 };

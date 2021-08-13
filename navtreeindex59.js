@@ -1,5 +1,8 @@
 var NAVTREEINDEX59 =
 {
+"struct_rendered_depth_node.html#ab999a87cebb49e4e465052abba465384":[12,0,318,16],
+"struct_rendered_depth_node.html#ac40159b6ac6157cdc7310d28702f555a":[12,0,318,13],
+"struct_rendered_depth_node.html#ad187111259be61aa4022c5657eddf0f1":[12,0,318,20],
 "struct_rendered_depth_node.html#adef88fe5c9888a667a2b2dbe9d745f64":[12,0,318,11],
 "struct_rendered_depth_node_1_1_pass.html":[12,0,318,0],
 "struct_rendered_depth_node_1_1_pass.html#a0e68a6e26a2f423749743fba61846f91":[12,0,318,0,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX59 =
 "struct_scenario_1_1_positioned_with_id___scenario_event.html#aad9f9a3f4ad1fe5d6c9ca01a9633ae71":[12,0,43,187,1],
 "struct_scenario_1_1_release_on_slot_handle___event.html":[12,0,43,196],
 "struct_scenario_1_1_release_on_slot_handle___event.html#a4b4c87673b6020f56753ed074b2ae501":[12,0,43,196,2],
-"struct_scenario_1_1_release_on_slot_handle___event.html#ab4e6ca69c4800da5447c3122a94a004e":[12,0,43,196,0],
-"struct_scenario_1_1_release_on_slot_handle___event.html#ab6dac17db753bf341a8a2774c3b5fe94":[12,0,43,196,1],
-"struct_scenario_1_1_request_overlay_menu_callback.html":[12,0,43,198],
-"struct_scenario_1_1_request_overlay_menu_callback.html#a54bb32dd9633e148e2a27d9db62e80d2":[12,0,43,198,2]
+"struct_scenario_1_1_release_on_slot_handle___event.html#ab4e6ca69c4800da5447c3122a94a004e":[12,0,43,196,0]
 };
