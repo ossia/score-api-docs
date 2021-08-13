@@ -1,8 +1,5 @@
 var NAVTREEINDEX52 =
 {
-"struct_gfx_1_1_images_1_1_image_list_chooser.html#a5cd611f20e58d3c8a6213287b03191a5":[12,0,15,1,2,2],
-"struct_gfx_1_1_images_1_1_image_list_chooser.html#a742d2d5cd447ec30a33d7cad2cbd0b66":[12,0,15,1,2,0],
-"struct_gfx_1_1_kinect2_context.html":[12,0,15,36],
 "struct_gfx_1_1_kinect2_context.html#a9b8159367172477e63b02340deda6199":[12,0,15,36,0],
 "struct_gfx_1_1_kinect2_settings.html":[12,0,15,40],
 "struct_gfx_1_1_kinect2_settings.html#a670f97eaeb1706407047686e0fc483ac":[12,0,15,40,1],
@@ -249,5 +246,8 @@ var NAVTREEINDEX52 =
 "struct_jit_1_1_global_at_exit.html#ac1b771652755b1091f2cc62ad2eea4cb":[12,0,21,9,0],
 "struct_jit_1_1_global_at_exit.html#ae951ff8a0ee1f333275f4cd1bcdd0f13":[12,0,21,9,1],
 "struct_jit_1_1_timer.html":[12,0,21,14],
-"struct_jit_1_1_timer.html#aa16ef49b3e4b13e0c3d97a3564ce7000":[12,0,21,14,1]
+"struct_jit_1_1_timer.html#aa16ef49b3e4b13e0c3d97a3564ce7000":[12,0,21,14,1],
+"struct_jit_1_1_timer.html#aae6172af120660954579d746da3e36a7":[12,0,21,14,0],
+"struct_jit_1_1_timer.html#abee83e17ff3726ef6f4dfaba6eef33b0":[12,0,21,14,2],
+"struct_jit_1_1inlet__vis.html":[12,0,21,10]
 };

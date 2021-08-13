@@ -1,5 +1,6 @@
 var structscore_1_1_value_slider =
 [
+    [ "~ValueSlider", "structscore_1_1_value_slider.html#a7bda1afa9403d94d18803f54e704d6a1", null ],
     [ "IntSlider", "structscore_1_1_value_slider.html#a7acc2fac5ccd74485aabafe7da3a5092", null ],
     [ "IntSlider", "structscore_1_1_value_slider.html#a97c21f979c9307a971a36f061b57fe5f", null ],
     [ "paintEvent", "structscore_1_1_value_slider.html#a62e1cffc62108bf8788d522ff618d0ed", null ],

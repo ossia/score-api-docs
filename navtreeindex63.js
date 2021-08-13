@@ -1,8 +1,5 @@
 var NAVTREEINDEX63 =
 {
-"structscore_1_1_bar_spin_box.html#a5f160f80cc5b716a926a41432d8bbba5":[12,0,44,28,4],
-"structscore_1_1_bar_spin_box.html#a6f2c89e928645836abeeddceaebbdb66":[12,0,44,28,1],
-"structscore_1_1_bar_spin_box.html#a72f003922774a2480dd760b658044748":[12,0,44,28,5],
 "structscore_1_1_brush.html":[12,0,44,30],
 "structscore_1_1_brush.html#a068e70f093df21736c530e43a08530fe":[12,0,44,30,7],
 "structscore_1_1_brush.html#a3e18ec6877980b38da77c4e7442e8747":[12,0,44,30,3],
@@ -51,9 +48,10 @@ var NAVTREEINDEX63 =
 "structscore_1_1_color_ref.html#ad07c4288d72a7baad4c6ef040b2740e7":[12,0,44,33,4],
 "structscore_1_1_color_ref.html#aee915d53978eb93a442fa426da79c02c":[12,0,44,33,11],
 "structscore_1_1_combo_slider.html":[12,0,44,35],
-"structscore_1_1_combo_slider.html#a167ed39f8dcd7d80fe9ace0407c7eee1":[12,0,44,35,4],
-"structscore_1_1_combo_slider.html#a59be30710e937df63e28648732be1ff4":[12,0,44,35,3],
-"structscore_1_1_combo_slider.html#aa3d2ab5958db2977e4d1c9a271086579":[12,0,44,35,2],
+"structscore_1_1_combo_slider.html#a167ed39f8dcd7d80fe9ace0407c7eee1":[12,0,44,35,5],
+"structscore_1_1_combo_slider.html#a57668b126d487439e60e81ac59f65c95":[12,0,44,35,2],
+"structscore_1_1_combo_slider.html#a59be30710e937df63e28648732be1ff4":[12,0,44,35,4],
+"structscore_1_1_combo_slider.html#aa3d2ab5958db2977e4d1c9a271086579":[12,0,44,35,3],
 "structscore_1_1_combo_slider.html#acd3a4dcc4a634294a6ce8cb0c8bf5cde":[12,0,44,35,0],
 "structscore_1_1_combo_slider.html#ad0095e0ec43cc419f77b8a074f601fcb":[12,0,44,35,1],
 "structscore_1_1_command_data.html":[12,0,44,38],
@@ -249,5 +247,7 @@ var NAVTREEINDEX63 =
 "structscore_1_1_paint_visitor.html#a208d75d37ee3a4631d2e3582f0506f2c":[12,0,44,160,1],
 "structscore_1_1_paint_visitor.html#a2c8a9f6fb30ddc53b77cec6a86ab39cc":[12,0,44,160,0],
 "structscore_1_1_paint_visitor.html#a6175c069a559f128564e92f9c9e65c62":[12,0,44,160,3],
-"structscore_1_1_paint_visitor.html#ae2e5c309cfa988894b9dc3ce45315e94":[12,0,44,160,2]
+"structscore_1_1_paint_visitor.html#ae2e5c309cfa988894b9dc3ce45315e94":[12,0,44,160,2],
+"structscore_1_1_paint_visitor.html#ae39bfde95a64b208eb84122441b72c55":[12,0,44,160,9],
+"structscore_1_1_paint_visitor.html#ae812d24c9bd15f7d3802b544343f0a29":[12,0,44,160,7]
 };

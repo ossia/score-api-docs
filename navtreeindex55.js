@@ -1,8 +1,5 @@
 var NAVTREEINDEX55 =
 {
-"struct_mime.html#a6ac56ce9068e29e16617a270f8de54f5":[12,0,174,0],
-"struct_mime_data_reader.html":[12,0,175],
-"struct_mime_data_reader.html#a4b1b1fb9f3b5aa38f1f7231f3b0f04a6":[12,0,175,1],
 "struct_mime_data_reader.html#a9060109908d7f5c1cbbdd602f5cbaef8":[12,0,175,0],
 "struct_mime_data_writer.html":[12,0,176],
 "struct_mime_data_writer.html#a15b797b5233869f491cc95c044d4ba79":[12,0,176,1],
@@ -249,5 +246,8 @@ var NAVTREEINDEX55 =
 "struct_nodes_1_1_pulse_to_note_1_1_node_1_1val__visitor.html#ad27a78083d818145f9769d0da5855963":[12,0,32,22,0,3,5],
 "struct_nodes_1_1_pulse_to_note_1_1_node_1_1val__visitor.html#ad9d8ed10dcf4495360891fca618b9c52":[12,0,32,22,0,3,6],
 "struct_nodes_1_1_pulse_to_note_1_1_node_1_1val__visitor.html#ade1b8c0fb074bc56dd4d434c0ab09a37":[12,0,32,22,0,3,0],
-"struct_nodes_1_1_pulse_to_note_1_1_node_1_1val__visitor.html#af1bf624c475cdf3eb85939d5eaf0bf14":[12,0,32,22,0,3,7]
+"struct_nodes_1_1_pulse_to_note_1_1_node_1_1val__visitor.html#af1bf624c475cdf3eb85939d5eaf0bf14":[12,0,32,22,0,3,7],
+"struct_nodes_1_1_pulse_to_note_1_1_node_1_1val__visitor.html#afdbf37e167f0d1278bfb918fcc3b5c05":[12,0,32,22,0,3,8],
+"struct_nodes_1_1_quantifier_1_1_node.html":[12,0,32,23,0],
+"struct_nodes_1_1_quantifier_1_1_node.html#a261a49f460be966603a9c84457f4b013":[12,0,32,23,0,3]
 };

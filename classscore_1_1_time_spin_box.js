@@ -1,10 +1,5 @@
 var classscore_1_1_time_spin_box =
 [
-    [ "TimeMode", "classscore_1_1_time_spin_box.html#a6b532294f94935436f82a4091d1deca0", [
-      [ "Bars", "classscore_1_1_time_spin_box.html#a6b532294f94935436f82a4091d1deca0a118f9a059888fd66fc3e6dd27bc3cdeb", null ],
-      [ "Seconds", "classscore_1_1_time_spin_box.html#a6b532294f94935436f82a4091d1deca0accda3bc8c04e1076bc4ac658d5b30d57", null ],
-      [ "Flicks", "classscore_1_1_time_spin_box.html#a6b532294f94935436f82a4091d1deca0a57ebf4e9f9215647e64b36253a5d7f18", null ]
-    ] ],
     [ "TimeSpinBox", "classscore_1_1_time_spin_box.html#aa5dc0d9ab4cae0216c9264b0ad997fa7", null ],
     [ "~TimeSpinBox", "classscore_1_1_time_spin_box.html#adf76ad42c99134fc2b25ff9ec7544e8f", null ],
     [ "editingFinished", "classscore_1_1_time_spin_box.html#abbe35086b3c5f105b64aa39605d49e2d", null ],

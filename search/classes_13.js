@@ -49,7 +49,7 @@ var searchData=
   ['timesyncinspectorwidget_4929',['TimeSyncInspectorWidget',['../class_scenario_1_1_time_sync_inspector_widget.html',1,'Scenario']]],
   ['timesyncmodel_4930',['TimeSyncModel',['../class_scenario_1_1_time_sync_model.html',1,'Scenario']]],
   ['timesyncmodeltests_4931',['TimeSyncModelTests',['../class_time_sync_model_tests.html',1,'']]],
-  ['timesyncpair_4932',['TimeSyncPair',['../struct_hierarchical_scenario_component_1_1_time_sync_pair.html',1,'HierarchicalScenarioComponent&lt; Component_T, Scenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T, HasOwnership &gt;::TimeSyncPair'],['../struct_hierarchical_base_scenario_1_1_time_sync_pair.html',1,'HierarchicalBaseScenario&lt; Component_T, BaseScenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T &gt;::TimeSyncPair']]],
+  ['timesyncpair_4932',['TimeSyncPair',['../struct_hierarchical_base_scenario_1_1_time_sync_pair.html',1,'HierarchicalBaseScenario&lt; Component_T, BaseScenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T &gt;::TimeSyncPair'],['../struct_hierarchical_scenario_component_1_1_time_sync_pair.html',1,'HierarchicalScenarioComponent&lt; Component_T, Scenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T, HasOwnership &gt;::TimeSyncPair']]],
   ['timesyncpresenter_4933',['TimeSyncPresenter',['../class_scenario_1_1_time_sync_presenter.html',1,'Scenario']]],
   ['timesyncsummarywidget_4934',['TimeSyncSummaryWidget',['../class_scenario_1_1_time_sync_summary_widget.html',1,'Scenario']]],
   ['timesyncview_4935',['TimeSyncView',['../class_scenario_1_1_time_sync_view.html',1,'Scenario']]],

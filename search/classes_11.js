@@ -45,7 +45,7 @@ var searchData=
   ['removeaddress_4510',['RemoveAddress',['../class_explorer_1_1_command_1_1_remove_address.html',1,'Explorer::Command']]],
   ['removecable_4511',['RemoveCable',['../class_dataflow_1_1_remove_cable.html',1,'Dataflow']]],
   ['removecommentblock_4512',['RemoveCommentBlock',['../class_scenario_1_1_command_1_1_remove_comment_block.html',1,'Scenario::Command']]],
-  ['removecontrol_4513',['RemoveControl',['../class_control_surface_1_1_remove_control.html',1,'ControlSurface::RemoveControl'],['../classvst_1_1_remove_control.html',1,'vst::RemoveControl'],['../classvst3_1_1_remove_control.html',1,'vst3::RemoveControl']]],
+  ['removecontrol_4513',['RemoveControl',['../classvst_1_1_remove_control.html',1,'vst::RemoveControl'],['../classvst3_1_1_remove_control.html',1,'vst3::RemoveControl'],['../class_control_surface_1_1_remove_control.html',1,'ControlSurface::RemoveControl']]],
   ['removeeventtest_4514',['RemoveEventTest',['../class_remove_event_test.html',1,'']]],
   ['removeintervaltest_4515',['RemoveIntervalTest',['../class_remove_interval_test.html',1,'']]],
   ['removelayermodelfromslottest_4516',['RemoveLayerModelFromSlotTest',['../class_remove_layer_model_from_slot_test.html',1,'']]],

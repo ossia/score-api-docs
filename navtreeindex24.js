@@ -1,5 +1,6 @@
 var NAVTREEINDEX24 =
 {
+"class_process_1_1_offline_action_list.html#af79f86f4c7e50030ff7c7b24cfa9bcd0":[12,0,37,57,4],
 "class_process_1_1_outlet.html":[12,0,37,58],
 "class_process_1_1_outlet.html#a06cc88350f310adec325d54490e60d70":[12,0,37,58,8],
 "class_process_1_1_outlet.html#a2d3526670e36503fb8f63e13d4de5572":[12,0,37,58,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX24 =
 "class_progress_bar.html#a4c416634dfcde6b4d7de28ee1cd2eb35":[12,0,203,0],
 "class_progress_bar.html#a51a5bf19778972df7ede1c6f3d1ea8d8":[12,0,203,1],
 "class_progress_bar.html#ae50993b1b8b12e32c1a1558f104e7999":[12,0,203,2],
-"class_protocols_1_1_add_fixture_dialog.html":[12,0,38,2],
-"class_protocols_1_1_add_fixture_dialog.html#a0051ca8bfa50dc14aa4abc0ebfbce7da":[12,0,38,2,1]
+"class_protocols_1_1_add_fixture_dialog.html":[12,0,38,2]
 };

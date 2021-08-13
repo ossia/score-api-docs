@@ -269,15 +269,16 @@ $(document).ready(function(){initNavTree('_interval_execution_8hpp_source.html',
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="keywordtype">void</span> onSetup(</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      std::shared_ptr&lt;IntervalComponent&gt;,</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      std::shared_ptr&lt;ossia::time_interval&gt; ossia_cst,</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      <a class="code" href="struct_execution_1_1interval__duration__data.html">interval_duration_data</a> dur);</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keywordtype">void</span> slot_callback(<span class="keywordtype">bool</span> running, ossia::time_value date);</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  W_SLOT(slot_callback);</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keywordtype">void</span> graph_slot_callback(<span class="keywordtype">bool</span> running, ossia::time_value date);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  W_SLOT(graph_slot_callback);</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;};</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;}</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      <a class="code" href="struct_execution_1_1interval__duration__data.html">interval_duration_data</a> dur,</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      <span class="keywordtype">bool</span> executionRoot = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keywordtype">void</span> slot_callback(<span class="keywordtype">bool</span> running, ossia::time_value date);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  W_SLOT(slot_callback);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keywordtype">void</span> graph_slot_callback(<span class="keywordtype">bool</span> running, ossia::time_value date);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  W_SLOT(graph_slot_callback);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;};</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1366</div></div>

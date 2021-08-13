@@ -1,8 +1,5 @@
 var NAVTREEINDEX45 =
 {
-"classscore_1_1_visibility_notifying.html#aacaa6cf3e64e4b116ad79da984f3b513":[12,0,44,273,0],
-"classscore_1_1_visibility_notifying.html#ac4ca0abad96a58d5c95ead2539fe567b":[12,0,44,273,2],
-"classscore_1_1_zoom_item.html":[12,0,44,276],
 "classscore_1_1_zoom_item.html#a32eddb70ea1f901bae420035af991fe4":[12,0,44,276,1],
 "classscore_1_1_zoom_item.html#a57dda3098143568b26af1442a855bd80":[12,0,44,276,6],
 "classscore_1_1_zoom_item.html#a6609812205a3633cb4b61fcb7341b619":[12,0,44,276,4],
@@ -249,5 +246,8 @@ var NAVTREEINDEX45 =
 "classscore__plugin__library.html#a4dc641ccc94b5948239e78677f170757":[12,0,336,0],
 "classscore__plugin__lv2.html":[12,0,337],
 "classscore__plugin__lv2.html#a0b0c8d562a32e33e26786fd4d93c414b":[12,0,337,3],
-"classscore__plugin__lv2.html#a496e8540b36e3fcdda84a2e29507c636":[12,0,337,1]
+"classscore__plugin__lv2.html#a496e8540b36e3fcdda84a2e29507c636":[12,0,337,1],
+"classscore__plugin__lv2.html#a855e9286c662ead531e1b956a8c5b457":[12,0,337,0],
+"classscore__plugin__lv2.html#aea0e143ed44c4c618ae54c53c93e3de7":[12,0,337,2],
+"classscore__plugin__mapping.html":[12,0,338]
 };

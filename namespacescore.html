@@ -866,6 +866,11 @@ Enumerations</h2></td></tr>
 <b>Release</b> = 300
  }</td></tr>
 <tr class="separator:a3c62b7abaffeea4e4692a1a0d064f77b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3834cbcd77e334a4ab6ebfd20d4e61d"><td class="memItemLeft" align="right" valign="top"><a id="ad3834cbcd77e334a4ab6ebfd20d4e61d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TimeMode</b> { <b>Bars</b>, 
+<b>Seconds</b>, 
+<b>Flicks</b>
+ }</td></tr>
+<tr class="separator:ad3834cbcd77e334a4ab6ebfd20d4e61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -1030,12 +1035,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
 <tr class="memitem:affa9b66a444ea88b0605b63e83f3f0f4"><td class="memItemLeft" align="right" valign="top"><a id="affa9b66a444ea88b0605b63e83f3f0f4"></a>
 const SCORE_LIB_BASE_EXPORT QPalette &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>transparentPalette</b> ()</td></tr>
 <tr class="separator:affa9b66a444ea88b0605b63e83f3f0f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac15bb9f14cd6b572406b4c314fca28d7"><td class="memItemLeft" align="right" valign="top"><a id="ac15bb9f14cd6b572406b4c314fca28d7"></a>
-constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>valueFromSpeed</b> (double speed)</td></tr>
-<tr class="separator:ac15bb9f14cd6b572406b4c314fca28d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac80c7a411398ab375b33f473424a0d03"><td class="memItemLeft" align="right" valign="top"><a id="ac80c7a411398ab375b33f473424a0d03"></a>
-constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>speedFromValue</b> (double value)</td></tr>
-<tr class="separator:ac80c7a411398ab375b33f473424a0d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adebf75f54cfd2a84e2ed00c0442a9762"><td class="memItemLeft" align="right" valign="top"><a id="adebf75f54cfd2a84e2ed00c0442a9762"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>question</b> (QWidget *parent, const QString &amp;title, const QString &amp;text)</td></tr>
 <tr class="separator:adebf75f54cfd2a84e2ed00c0442a9762"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1051,6 +1050,9 @@ QImage&#160;</td><td class="memItemRight" valign="bottom"><b>get_image</b> (QStr
 <tr class="memitem:a9d423d32c56d6e50966e170cb47e4221"><td class="memItemLeft" align="right" valign="top"><a id="a9d423d32c56d6e50966e170cb47e4221"></a>
 QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>get_pixmap</b> (QString str)</td></tr>
 <tr class="separator:a9d423d32c56d6e50966e170cb47e4221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5220a830e93bdcf6aba57b0c090501fc"><td class="memItemLeft" align="right" valign="top"><a id="a5220a830e93bdcf6aba57b0c090501fc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setGlobalTimeMode</b> (TimeMode mode)</td></tr>
+<tr class="separator:a5220a830e93bdcf6aba57b0c090501fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c97f313c8478c92b734438cec345f00"><td class="memTemplParams" colspan="2"><a id="a3c97f313c8478c92b734438cec345f00"></a>
 template&lt;typename Vis , typename Info &gt; </td></tr>
 <tr class="memitem:a3c97f313c8478c92b734438cec345f00"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>serialize_dyn_impl</b> (Vis &amp;v, const <a class="el" href="class_control_1_1_control_process.html">Control::ControlProcess</a>&lt; Info &gt; &amp;t)</td></tr>
@@ -1064,9 +1066,9 @@ template&lt;typename Vis , typename DSP &gt; </td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:ae1d4d6253053dfebd482df22747a121b"><td class="memItemLeft" align="right" valign="top">std::array&lt; QString, 5 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>arrow_name</b></td></tr>
 <tr class="separator:ae1d4d6253053dfebd482df22747a121b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82126ee18dbc2104ad3652c68aa4578c"><td class="memItemLeft" align="right" valign="top"><a id="a82126ee18dbc2104ad3652c68aa4578c"></a>
-TimeSpinBox::TimeMode&#160;</td><td class="memItemRight" valign="bottom"><b>globalTimeMode</b> = TimeSpinBox::TimeMode::Bars</td></tr>
-<tr class="separator:a82126ee18dbc2104ad3652c68aa4578c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4c5fe5a08995a092b13a26c4ac76590"><td class="memItemLeft" align="right" valign="top"><a id="af4c5fe5a08995a092b13a26c4ac76590"></a>
+TimeMode&#160;</td><td class="memItemRight" valign="bottom"><b>globalTimeMode</b> = TimeMode::Bars</td></tr>
+<tr class="separator:af4c5fe5a08995a092b13a26c4ac76590"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="abe55a013aba51db7fae79be5eb285678"></a>

@@ -1212,6 +1212,7 @@ var files_dup =
     [ "TickPolicy.hpp", "_tick_policy_8hpp_source.html", null ],
     [ "Interval/FullView/Timebar.hpp", "_interval_2_full_view_2_timebar_8hpp_source.html", null ],
     [ "ScenarioDocument/Timebar.hpp", "_scenario_document_2_timebar_8hpp_source.html", null ],
+    [ "TimeMode.hpp", "_time_mode_8hpp_source.html", null ],
     [ "TimeRuler.hpp", "_time_ruler_8hpp_source.html", null ],
     [ "TimeRulerGraphicsView.hpp", "_time_ruler_graphics_view_8hpp_source.html", null ],
     [ "TimeSignature.hpp", "_time_signature_8hpp_source.html", null ],
