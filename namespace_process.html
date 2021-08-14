@@ -537,6 +537,9 @@ std::unique_ptr&lt; <a class="el" href="class_process_1_1_midi_outlet.html">Midi
 <tr class="memitem:af230197c0e4d63ac4eccebbde462a947"><td class="memItemLeft" align="right" valign="top"><a id="af230197c0e4d63ac4eccebbde462a947"></a>
 std::unique_ptr&lt; <a class="el" href="class_process_1_1_midi_outlet.html">MidiOutlet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>load_midi_outlet</b> (<a class="el" href="class_j_s_o_n_writer.html">JSONWriter</a> &amp;wr, QObject *parent)</td></tr>
 <tr class="separator:af230197c0e4d63ac4eccebbde462a947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a535ae95f6170e17fce20ef59f292c707"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_process.html#a535ae95f6170e17fce20ef59f292c707">displayNameForPort</a> (const <a class="el" href="class_process_1_1_port.html">Process::Port</a> &amp;outlet, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;doc)</td></tr>
+<tr class="memdesc:a535ae95f6170e17fce20ef59f292c707"><td class="mdescLeft">&#160;</td><td class="mdescRight">From a port, gives a name suitable for displaying in a process header.  <a href="namespace_process.html#a535ae95f6170e17fce20ef59f292c707">More...</a><br /></td></tr>
+<tr class="separator:a535ae95f6170e17fce20ef59f292c707"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a600ddde472c61ae519a0814382c3780b"><td class="memItemLeft" align="right" valign="top"><a id="a600ddde472c61ae519a0814382c3780b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>readPorts</b> (<a class="el" href="class_data_stream_reader.html">DataStreamReader</a> &amp;wr, const Process::Inlets &amp;ins, const Process::Outlets &amp;outs)</td></tr>
 <tr class="separator:a600ddde472c61ae519a0814382c3780b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -647,6 +650,38 @@ QDebug&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b
 <tr><td class="fieldname"><a id="a592bb361ebf8fbc09c929c93208c71f1a04d62df558a1f3d140a99921aadbd254"></a>ControlSurface&#160;</td><td class="fielddoc"><p>The process supports being exposed to the ControlSurface. </p>
 </td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a535ae95f6170e17fce20ef59f292c707"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a535ae95f6170e17fce20ef59f292c707">&#9670;&nbsp;</a></span>displayNameForPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SCORE_LIB_PROCESS_EXPORT QString Process::displayNameForPort </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_process_1_1_port.html">Process::Port</a> &amp;&#160;</td>
+          <td class="paramname"><em>outlet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>doc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>From a port, gives a name suitable for displaying in a process header. </p>
+<p>This is useful mainly for processes which are defined by their output, e.g. the automations. </p>
 
 </div>
 </div>

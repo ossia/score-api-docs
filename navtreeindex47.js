@@ -1,5 +1,6 @@
 var NAVTREEINDEX47 =
 {
+"classvst3_1_1vst__node__base.html#ad50cd67302755bf6773a25e3f39c00f6":[12,0,54,19,17],
 "classvst3_1_1vst__node__base.html#afecd7ef0e22d291cf4e47ef82d1a41c5":[12,0,54,19,22],
 "classvst_1_1_application_plugin.html":[12,0,53,1],
 "classvst_1_1_application_plugin.html#a0034000f90989271dded29c5f4f99a8c":[12,0,53,1,12],
@@ -193,8 +194,8 @@ var NAVTREEINDEX47 =
 "isf_8hpp_source.html":[13,0,554],
 "lib_2core_2documentation_2commands_8hpp_source.html":[13,0,156],
 "lib_2core_2presenter_2_presenter_8hpp_source.html":[13,0,862],
-"lib_2core_2settings_2_settings_8hpp_source.html":[13,0,1129],
-"lib_2core_2view_2_window_8hpp_source.html":[13,0,1326],
+"lib_2core_2settings_2_settings_8hpp_source.html":[13,0,1130],
+"lib_2core_2view_2_window_8hpp_source.html":[13,0,1327],
 "lib_2score_2model_2_component_8hpp_source.html":[13,0,179],
 "lib_2score_2plugins_2documentdelegate_2plugin_2_document_plugin_8hpp_source.html":[13,0,313],
 "lib_2score_2tools_2_metadata_8hpp_source.html":[13,0,659],
@@ -208,11 +209,11 @@ var NAVTREEINDEX47 =
 "namespace_curve.html":[11,0,1],
 "namespace_device.html":[12,0,7],
 "namespace_device.html":[11,0,2],
-"namespace_engine.html":[12,0,8],
 "namespace_engine.html":[11,0,3],
+"namespace_engine.html":[12,0,8],
 "namespace_engine_1_1_network.html":[11,0,3,0],
-"namespace_execution.html":[11,0,4],
 "namespace_execution.html":[12,0,9],
+"namespace_execution.html":[11,0,4],
 "namespace_gfx.html":[12,0,15],
 "namespace_gfx.html":[11,0,5],
 "namespace_inspector.html":[11,0,6],
@@ -247,7 +248,6 @@ var NAVTREEINDEX47 =
 "plugins_2score-plugin-engine_2_execution_2_document_plugin_8hpp_source.html":[13,0,315],
 "plugins_2score-plugin-faust_2_faust_2commands_8hpp_source.html":[13,0,158],
 "plugins_2score-plugin-gfx_2_gfx_2_filter_2_metadata_8hpp_source.html":[13,0,661],
-"plugins_2score-plugin-gfx_2_gfx_2_graph_2_window_8hpp_source.html":[13,0,1327],
-"plugins_2score-plugin-gfx_2_gfx_2_images_2_metadata_8hpp_source.html":[13,0,662],
-"plugins_2score-plugin-gfx_2_gfx_2_settings_2_presenter_8hpp_source.html":[13,0,865]
+"plugins_2score-plugin-gfx_2_gfx_2_graph_2_window_8hpp_source.html":[13,0,1328],
+"plugins_2score-plugin-gfx_2_gfx_2_images_2_metadata_8hpp_source.html":[13,0,662]
 };

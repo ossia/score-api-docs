@@ -879,6 +879,7 @@ var files_dup =
     [ "PresetHelpers.hpp", "_preset_helpers_8hpp_source.html", null ],
     [ "PresetItemModel.hpp", "_preset_item_model_8hpp_source.html", null ],
     [ "PresetListView.hpp", "_preset_list_view_8hpp_source.html", null ],
+    [ "PrettyPortName.hpp", "_pretty_port_name_8hpp_source.html", null ],
     [ "PreviewWidget.hpp", "_preview_widget_8hpp_source.html", null ],
     [ "score-lib-process/Process/Process.hpp", "score-lib-process_2_process_2_process_8hpp_source.html", null ],
     [ "score-plugin-controlsurface/ControlSurface/Process.hpp", "score-plugin-controlsurface_2_control_surface_2_process_8hpp_source.html", null ],

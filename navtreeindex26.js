@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"class_protocols_1_1_wiimote_protocol_factory.html":[12,0,38,65],
 "class_protocols_1_1_wiimote_protocol_settings_widget.html":[12,0,38,66],
 "class_protocols_1_1_wiimote_protocol_settings_widget.html#a0f04343b48f36594626f70f95cf0e6d4":[12,0,38,66,0],
 "class_protocols_1_1_wiimote_protocol_settings_widget.html#a4348a828a429c13f02afee27c4e3bae4":[12,0,38,66,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "class_scenario_1_1_click_on_slot_handle___transition.html#a077e22b8cfd9596aeb9d9a4f02ea017f":[12,0,43,22,2],
 "class_scenario_1_1_click_on_slot_handle___transition.html#a31b4447ff56066db3045ddcd7a419c79":[12,0,43,22,0],
 "class_scenario_1_1_click_on_slot_handle___transition.html#a700fbf3a8bd3ce8923c61cbf3b0e8426":[12,0,43,22,1],
-"class_scenario_1_1_clickable_label_item.html":[12,0,43,17],
-"class_scenario_1_1_clickable_label_item.html#a10b031fe61836ce5478152b69da297d3":[12,0,43,17,6]
+"class_scenario_1_1_clickable_label_item.html":[12,0,43,17]
 };

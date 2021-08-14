@@ -1,5 +1,6 @@
 var NAVTREEINDEX57 =
 {
+"struct_process_1_1_style.html#a2937f899f48a0f7b5c0bc315e3b5dbe7":[12,0,37,85,18],
 "struct_process_1_1_style.html#a2ba3821c6ce087466f0f6df42ac2aa89":[12,0,37,85,66],
 "struct_process_1_1_style.html#a2efaa7b8846993af09cf50ca4ac9a5a6":[12,0,37,85,12],
 "struct_process_1_1_style.html#a31b3efefd051024a16830a1d3b0c2f0c":[12,0,37,85,70],
@@ -248,6 +249,5 @@ var NAVTREEINDEX57 =
 "struct_q_meta_type_id_3_01_protocols_1_1_h_t_t_p_specific_settings_01_4.html":[12,0,256],
 "struct_q_meta_type_id_3_01_protocols_1_1_h_t_t_p_specific_settings_01_4.html#ae65c1317081158c8964c77d8c9d59576a96349c6f276f8b5f41c9e22450592c92":[12,0,256,0],
 "struct_q_meta_type_id_3_01_protocols_1_1_joystick_specific_settings_01_4.html":[12,0,257],
-"struct_q_meta_type_id_3_01_protocols_1_1_joystick_specific_settings_01_4.html#a18912cf41336b1ceb80d4d81a9cce9c3a411d22e89f1d141cd1008c07ce77348d":[12,0,257,0],
-"struct_q_meta_type_id_3_01_protocols_1_1_local_specific_settings_01_4.html":[12,0,258]
+"struct_q_meta_type_id_3_01_protocols_1_1_joystick_specific_settings_01_4.html#a18912cf41336b1ceb80d4d81a9cce9c3a411d22e89f1d141cd1008c07ce77348d":[12,0,257,0]
 };

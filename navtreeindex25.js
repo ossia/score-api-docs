@@ -1,5 +1,6 @@
 var NAVTREEINDEX25 =
 {
+"class_process_state_data_interface.html":[12,0,202],
 "class_process_state_data_interface.html#a130965b1c91a2757acc54e4f5576f24f":[12,0,202,1],
 "class_process_state_data_interface.html#a46ec9c95a84b86047bb478231300da8f":[12,0,202,0],
 "class_process_state_data_interface.html#a4efb71b7d91fe681fd2769663ed50ab2":[12,0,202,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX25 =
 "class_protocols_1_1_wiimote_device.html#a2cef54517f18effb47e006e8f8fcbfb2":[12,0,38,64,0],
 "class_protocols_1_1_wiimote_device.html#a3c0a579e602687da923c4211e8926518":[12,0,38,64,1],
 "class_protocols_1_1_wiimote_device.html#aa5a79d0862d4d8b1b5ef0856ea55b6c7":[12,0,38,64,3],
-"class_protocols_1_1_wiimote_device.html#aed0842356ecd92e92105a45e093bf53d":[12,0,38,64,2],
-"class_protocols_1_1_wiimote_protocol_factory.html":[12,0,38,65]
+"class_protocols_1_1_wiimote_device.html#aed0842356ecd92e92105a45e093bf53d":[12,0,38,64,2]
 };
