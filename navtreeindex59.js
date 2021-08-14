@@ -1,5 +1,8 @@
 var NAVTREEINDEX59 =
 {
+"struct_rendered_depth_node.html#a5edbb5ebb38bfa1c08f1dee00ebd80e3":[12,0,318,7],
+"struct_rendered_depth_node.html#a704e8e2cde1a513d7aad1db4f2ebccb8":[12,0,318,19],
+"struct_rendered_depth_node.html#a791076c537b13b337823088c0529ed6f":[12,0,318,14],
 "struct_rendered_depth_node.html#a79c67d8a2c7e265ecb23445f476a34b2":[12,0,318,5],
 "struct_rendered_depth_node.html#a8ec548bfbba22b58b517f2d7ddece9c7":[12,0,318,10],
 "struct_rendered_depth_node.html#a96c41de2f15a63384ec15f74fa4a11ac":[12,0,318,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX59 =
 "struct_scenario_1_1_parent_time_info.html#a3b17ba6e8dcce21a8f0bdb9f6addeccf":[12,0,43,183,0],
 "struct_scenario_1_1_parent_time_info.html#aac642646ce04da0012f95826b4938fed":[12,0,43,183,2],
 "struct_scenario_1_1_parent_time_info.html#aae78e8a09c20a23a552f1fe1b045c5e4":[12,0,43,183,1],
-"struct_scenario_1_1_point.html":[12,0,43,185],
-"struct_scenario_1_1_point.html#a734f4c8f394b2a80b9ec6a3b43b24208":[12,0,43,185,0],
-"struct_scenario_1_1_point.html#a7567abdbc320349c76d3c4d508b5e9c2":[12,0,43,185,1],
-"struct_scenario_1_1_positioned_scenario_event.html":[12,0,43,186]
+"struct_scenario_1_1_point.html":[12,0,43,185]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX57 =
 {
+"struct_process_1_1_style.html#a2ba3821c6ce087466f0f6df42ac2aa89":[12,0,37,85,66],
+"struct_process_1_1_style.html#a2efaa7b8846993af09cf50ca4ac9a5a6":[12,0,37,85,12],
+"struct_process_1_1_style.html#a31b3efefd051024a16830a1d3b0c2f0c":[12,0,37,85,70],
 "struct_process_1_1_style.html#a33e3b1818fefc383aec67f3603ef4165":[12,0,37,85,51],
 "struct_process_1_1_style.html#a34d021c0eb9864c90ac131d60bb0d1af":[12,0,37,85,41],
 "struct_process_1_1_style.html#a3898c85ea91eb09165a3d9d4d8278dfd":[12,0,37,85,65],
@@ -246,8 +249,5 @@ var NAVTREEINDEX57 =
 "struct_q_meta_type_id_3_01_protocols_1_1_h_t_t_p_specific_settings_01_4.html#ae65c1317081158c8964c77d8c9d59576a96349c6f276f8b5f41c9e22450592c92":[12,0,256,0],
 "struct_q_meta_type_id_3_01_protocols_1_1_joystick_specific_settings_01_4.html":[12,0,257],
 "struct_q_meta_type_id_3_01_protocols_1_1_joystick_specific_settings_01_4.html#a18912cf41336b1ceb80d4d81a9cce9c3a411d22e89f1d141cd1008c07ce77348d":[12,0,257,0],
-"struct_q_meta_type_id_3_01_protocols_1_1_local_specific_settings_01_4.html":[12,0,258],
-"struct_q_meta_type_id_3_01_protocols_1_1_local_specific_settings_01_4.html#a8b268e8ebb71ddcec1e9839f996fd6c4adc36ee430db28f8c9fe95e8a230efa18":[12,0,258,0],
-"struct_q_meta_type_id_3_01_protocols_1_1_m_i_d_i_specific_settings_01_4.html":[12,0,259],
-"struct_q_meta_type_id_3_01_protocols_1_1_m_i_d_i_specific_settings_01_4.html#a0d0df00cbafc011db317582bba8a6783a3b4a530be1470216d000dc8883352a74":[12,0,259,0]
+"struct_q_meta_type_id_3_01_protocols_1_1_local_specific_settings_01_4.html":[12,0,258]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX55 =
 {
+"struct_midi_1_1_midi_track_1_1_midi_song.html#a5c269848f73fcfb2df3b679ce966db7e":[12,0,29,7,0,0],
+"struct_midi_1_1_midi_track_1_1_midi_song.html#a9a09a9ed9e846b887bcd7a5704ecf5e1":[12,0,29,7,0,3],
+"struct_midi_1_1_midi_track_1_1_midi_song.html#aa4fcac5ed665d8005089954ecca174a3":[12,0,29,7,0,1],
 "struct_midi_1_1_midi_track_1_1_midi_song.html#af1f59e30d3c0707d375eb0a7153d61ed":[12,0,29,7,0,4],
 "struct_midi_1_1_note_comparator.html":[12,0,29,10],
 "struct_midi_1_1_note_comparator.html#a711f2c6b750ec96e0af8968e4ccceaac":[12,0,29,10,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX55 =
 "struct_nodes_1_1_midi_util_1_1_node_1_1_state.html#a58bdd7eee84efa87a4fad9480c69ae96":[12,0,32,20,0,1,2],
 "struct_nodes_1_1_midi_util_1_1_node_1_1_state.html#adb773ae83389f7028e70cc23626cca86":[12,0,32,20,0,1,0],
 "struct_nodes_1_1_midi_util_1_1_node_1_1_state.html#ae53f4ac0030b7a8b67612c5cc8d511f1":[12,0,32,20,0,1,3],
-"struct_nodes_1_1_pitch_to_value_1_1_node.html":[12,0,32,21,0],
-"struct_nodes_1_1_pitch_to_value_1_1_node.html#aa8e3e35c962afe3114265bdb0176144e":[12,0,32,21,0,1],
-"struct_nodes_1_1_pitch_to_value_1_1_node_1_1_metadata.html":[12,0,32,21,0,0],
-"struct_nodes_1_1_pulse_to_note_1_1_node.html":[12,0,32,22,0]
+"struct_nodes_1_1_pitch_to_value_1_1_node.html":[12,0,32,21,0]
 };

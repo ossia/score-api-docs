@@ -210,22 +210,26 @@ $(document).ready(function(){initNavTree('score-plugin-vst3_2_vst3_2_application
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">void</span> scanVSTsEvent();</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="structvst3_1_1_application_plugin_1_1_scanning_process.html">  113</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structvst3_1_1_application_plugin_1_1_scanning_process.html">ScanningProcess</a></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  {</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    QString path;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    std::unique_ptr&lt;QProcess&gt; process;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">bool</span> scanning{};</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    QElapsedTimer timer;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  };</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  std::vector&lt;ScanningProcess&gt; m_processes;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  QWebSocketServer m_wsServer;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <a class="code" href="structvst3_1_1_host_app.html">HostApp</a> m_host;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  ossia::string_map&lt;VST3::Hosting::Module::Ptr&gt; modules;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  std::vector&lt;AvailablePlugin&gt; vst_infos;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;};</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keyword">const</span> VST3::Hosting::ClassInfo* classInfo(<span class="keyword">const</span> VST3::UID&amp; uid) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  QString pathForClass(<span class="keyword">const</span> VST3::UID&amp; uid) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  std::optional&lt;VST3::UID&gt; uidForPathAndClassName(<span class="keyword">const</span> QString&amp; path, <span class="keyword">const</span> QString&amp; cls) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="structvst3_1_1_application_plugin_1_1_scanning_process.html">  117</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structvst3_1_1_application_plugin_1_1_scanning_process.html">ScanningProcess</a></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    QString path;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    std::unique_ptr&lt;QProcess&gt; process;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">bool</span> scanning{};</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    QElapsedTimer timer;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  };</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  std::vector&lt;ScanningProcess&gt; m_processes;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  QWebSocketServer m_wsServer;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <a class="code" href="structvst3_1_1_host_app.html">HostApp</a> m_host;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  ossia::string_map&lt;VST3::Hosting::Module::Ptr&gt; modules;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  std::vector&lt;AvailablePlugin&gt; vst_infos;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;};</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvst3_1_1_application_plugin_html"><div class="ttname"><a href="classvst3_1_1_application_plugin.html">vst3::ApplicationPlugin</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst3/Vst3/ApplicationPlugin.hpp:92</div></div>
@@ -234,7 +238,7 @@ $(document).ready(function(){initNavTree('score-plugin-vst3_2_vst3_2_application
 <div class="ttc" id="astructvst3_1_1_available_plugin_html"><div class="ttname"><a href="structvst3_1_1_available_plugin.html">vst3::AvailablePlugin</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst3/Vst3/ApplicationPlugin.hpp:29</div></div>
 <div class="ttc" id="astructvst3_1_1_host_app_html"><div class="ttname"><a href="structvst3_1_1_host_app.html">vst3::HostApp</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst3/Vst3/ApplicationPlugin.hpp:38</div></div>
 <div class="ttc" id="astructscore_1_1_application_context_html"><div class="ttname"><a href="structscore_1_1_application_context.html">score::ApplicationContext</a></div><div class="ttdoc">Used to access all the application-wide state and structures.</div><div class="ttdef"><b>Definition:</b> ApplicationContext.hpp:23</div></div>
-<div class="ttc" id="astructvst3_1_1_application_plugin_1_1_scanning_process_html"><div class="ttname"><a href="structvst3_1_1_application_plugin_1_1_scanning_process.html">vst3::ApplicationPlugin::ScanningProcess</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst3/Vst3/ApplicationPlugin.hpp:113</div></div>
+<div class="ttc" id="astructvst3_1_1_application_plugin_1_1_scanning_process_html"><div class="ttname"><a href="structvst3_1_1_application_plugin_1_1_scanning_process.html">vst3::ApplicationPlugin::ScanningProcess</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst3/Vst3/ApplicationPlugin.hpp:117</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

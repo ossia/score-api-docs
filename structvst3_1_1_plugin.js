@@ -4,7 +4,7 @@ var structvst3_1_1_plugin =
     [ "Plugin", "structvst3_1_1_plugin.html#a3478570c8ac01437d9c0a399162828e4", null ],
     [ "Plugin", "structvst3_1_1_plugin.html#aca2b3cc2f82061b379842d87e9445d5d", null ],
     [ "~Plugin", "structvst3_1_1_plugin.html#ab83f861834cbe2da0887702d9d74919b", null ],
-    [ "load", "structvst3_1_1_plugin.html#a4cb5a12f630b7ff1ad615e1fc7831d39", null ],
+    [ "load", "structvst3_1_1_plugin.html#a2edaf94755ed17600f03c8145a5e3a37", null ],
     [ "loadAudioProcessor", "structvst3_1_1_plugin.html#a8098e53a1853cf81eba49924edb1a0fc", null ],
     [ "loadBuses", "structvst3_1_1_plugin.html#a8f0c0b17d50a9cc5f6a3518c9808282d", null ],
     [ "loadEditController", "structvst3_1_1_plugin.html#af848fc32b259c8a8ecac391f5cb36dbf", null ],
