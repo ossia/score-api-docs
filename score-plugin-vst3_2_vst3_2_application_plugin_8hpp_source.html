@@ -210,7 +210,7 @@ $(document).ready(function(){initNavTree('score-plugin-vst3_2_vst3_2_application
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">void</span> scanVSTsEvent();</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keyword">const</span> VST3::Hosting::ClassInfo* classInfo(<span class="keyword">const</span> VST3::UID&amp; uid) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  std::pair&lt;const AvailablePlugin*, const VST3::Hosting::ClassInfo*&gt; classInfo(<span class="keyword">const</span> VST3::UID&amp; uid) <span class="keyword">const</span> noexcept;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  QString pathForClass(<span class="keyword">const</span> VST3::UID&amp; uid) <span class="keyword">const</span> noexcept;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  std::optional&lt;VST3::UID&gt; uidForPathAndClassName(<span class="keyword">const</span> QString&amp; path, <span class="keyword">const</span> QString&amp; cls) <span class="keyword">const</span> noexcept;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>

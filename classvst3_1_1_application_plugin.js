@@ -4,7 +4,7 @@ var classvst3_1_1_application_plugin =
     [ "ApplicationPlugin", "classvst3_1_1_application_plugin.html#a3af718dda38c4cd29a699cc00e7717b4", null ],
     [ "addInvalidVST", "classvst3_1_1_application_plugin.html#ae48829a036daac78a14a0d2e3a4cd472", null ],
     [ "addVST", "classvst3_1_1_application_plugin.html#ab0ee21a5b9fe4cc7fcae6766c0ff58b5", null ],
-    [ "classInfo", "classvst3_1_1_application_plugin.html#af84509ca6303289a10d816f6b42a1c9d", null ],
+    [ "classInfo", "classvst3_1_1_application_plugin.html#a23bbf2526c3e48a44c84ccf26959b022", null ],
     [ "getModule", "classvst3_1_1_application_plugin.html#a7f59908ccd04d81a4acc6990abbf2634", null ],
     [ "initialize", "classvst3_1_1_application_plugin.html#a6853897da3ff2bc9f8ce84e92a893a21", null ],
     [ "pathForClass", "classvst3_1_1_application_plugin.html#af21d5afc7261e5c33cdb749c34c363b1", null ],
