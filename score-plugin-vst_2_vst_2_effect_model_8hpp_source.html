@@ -227,46 +227,48 @@ $(document).ready(function(){initNavTree('score-plugin-vst_2_vst_2_effect_model_
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  }</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  std::atomic_bool needIdle{};</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  QString getString(AEffectOpcodes op, <span class="keywordtype">int</span> param);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordtype">void</span> setControlName(<span class="keywordtype">int</span> fxnum, <a class="code" href="classvst_1_1_control_inlet.html">ControlInlet</a>* ctrl);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keywordtype">void</span> init();</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keywordtype">void</span> create();</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keywordtype">void</span> load();</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  std::string m_backup_chunk;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  ossia::float_vector m_backup_float_data;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  int32_t m_effectId{};</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keywordtype">void</span> closePlugin();</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="keywordtype">void</span> initFx();</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;};</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment">// VSTModule* getPlugin(QString path);</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;AEffect* getPluginInstance(int32_t <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;intptr_t vst_host_callback(</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    AEffect* effect,</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    int32_t opcode,</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    int32_t index,</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    intptr_t value,</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">void</span>* ptr,</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordtype">float</span> opt);</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_process.html">Process</a></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;{</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;QString EffectProcessFactory_T&lt;vst::Model&gt;::customConstructionData() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<a class="code" href="struct_process_1_1_descriptor.html">Process::Descriptor</a></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;EffectProcessFactory_T&lt;vst::Model&gt;::descriptor(QString d) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keyword">namespace </span>vst</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;{</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keyword">using</span> VSTEffectFactory = <a class="code" href="class_process_1_1_effect_process_factory___t.html">Process::EffectProcessFactory_T&lt;Model&gt;</a>;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;}</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordtype">void</span> loadPreset(<span class="keyword">const</span> <a class="code" href="struct_process_1_1_preset.html">Process::Preset</a>&amp; preset) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <a class="code" href="struct_process_1_1_preset.html">Process::Preset</a> savePreset() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  QString getString(AEffectOpcodes op, <span class="keywordtype">int</span> param);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keywordtype">void</span> setControlName(<span class="keywordtype">int</span> fxnum, <a class="code" href="classvst_1_1_control_inlet.html">ControlInlet</a>* ctrl);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keywordtype">void</span> init();</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordtype">void</span> create();</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordtype">void</span> load();</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  std::string m_backup_chunk;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  ossia::float_vector m_backup_float_data;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  int32_t m_effectId{};</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordtype">void</span> closePlugin();</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keywordtype">void</span> initFx();</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;};</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment">// VSTModule* getPlugin(QString path);</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;AEffect* getPluginInstance(int32_t <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;intptr_t vst_host_callback(</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    AEffect* effect,</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    int32_t opcode,</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    int32_t index,</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    intptr_t value,</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordtype">void</span>* ptr,</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordtype">float</span> opt);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;}</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_process.html">Process</a></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;{</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;QString EffectProcessFactory_T&lt;vst::Model&gt;::customConstructionData() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<a class="code" href="struct_process_1_1_descriptor.html">Process::Descriptor</a></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;EffectProcessFactory_T&lt;vst::Model&gt;::descriptor(QString d) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;}</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keyword">namespace </span>vst</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;{</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="keyword">using</span> VSTEffectFactory = <a class="code" href="class_process_1_1_effect_process_factory___t.html">Process::EffectProcessFactory_T&lt;Model&gt;</a>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1366</div></div>
@@ -277,6 +279,7 @@ $(document).ready(function(){initNavTree('score-plugin-vst_2_vst_2_effect_model_
 <div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Process.hpp:55</div></div>
 <div class="ttc" id="aclassvst_1_1_create_control_html"><div class="ttname"><a href="classvst_1_1_create_control.html">vst::CreateControl</a></div><div class="ttdef"><b>Definition:</b> plugins/score-plugin-vst/Vst/commands.hpp:40</div></div>
 <div class="ttc" id="aclass_process_1_1_port_html"><div class="ttname"><a href="class_process_1_1_port.html">Process::Port</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:102</div></div>
+<div class="ttc" id="astruct_process_1_1_preset_html"><div class="ttname"><a href="struct_process_1_1_preset.html">Process::Preset</a></div><div class="ttdef"><b>Definition:</b> Preset.hpp:34</div></div>
 <div class="ttc" id="astructvst_1_1_a_effect_wrapper_html"><div class="ttname"><a href="structvst_1_1_a_effect_wrapper.html">vst::AEffectWrapper</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst/Vst/EffectModel.hpp:42</div></div>
 <div class="ttc" id="astruct_process_1_1_descriptor_html"><div class="ttname"><a href="struct_process_1_1_descriptor.html">Process::Descriptor</a></div><div class="ttdef"><b>Definition:</b> ProcessMetadata.hpp:34</div></div>
 <div class="ttc" id="aclassvst_1_1_model_html"><div class="ttname"><a href="classvst_1_1_model.html">vst::Model</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst/Vst/EffectModel.hpp:77</div></div>
