@@ -195,85 +195,88 @@ $(document).ready(function(){initNavTree('score-plugin-faust_2_faust_2_effect_mo
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  PROPERTY(QString, text READ text WRITE setText NOTIFY textChanged)</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;private:</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">void</span> init();</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">void</span> reload();</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">void</span> reloadFx(llvm_dsp_factory* fac, llvm_dsp* obj);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">void</span> reloadMidi(</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      ossia::nodes::custom_dsp_poly_factory* fac,</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      ossia::nodes::custom_dsp_poly_effect* obj);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  QString m_text;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  QString m_path;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  QString m_declareName;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;};</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;namespace <a class="code" href="namespace_process.html">Process</a></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;{</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;QString</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;EffectProcessFactory_T&lt;Faust::FaustEffectModel&gt;::customConstructionData()</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<a class="code" href="struct_process_1_1_descriptor.html">Process::Descriptor</a></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;EffectProcessFactory_T&lt;Faust::FaustEffectModel&gt;::descriptor(QString d) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">namespace </span>Faust</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;{</div>
-<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="struct_faust_1_1_language_spec.html">  124</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_faust_1_1_language_spec.html">LanguageSpec</a></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;{</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keyword">static</span> constexpr <span class="keyword">const</span> <span class="keywordtype">char</span>* language = <span class="stringliteral">&quot;Faust&quot;</span>;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;};</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keyword">using</span> <a class="code" href="class_process_1_1_effect_process_factory___t.html">FaustEffectFactory</a> = <a class="code" href="class_process_1_1_effect_process_factory___t.html">Process::EffectProcessFactory_T&lt;FaustEffectModel&gt;</a>;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keyword">using</span> <a class="code" href="class_process_1_1_effect_layer_factory___t.html">LayerFactory</a> = <a class="code" href="class_process_1_1_effect_layer_factory___t.html">Process::EffectLayerFactory_T</a>&lt;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    FaustEffectModel,</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="class_process_1_1_default_effect_item.html">Process::DefaultEffectItem</a>,</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <a class="code" href="class_process_1_1_process_script_edit_dialog.html">Process::ProcessScriptEditDialog</a>&lt;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        FaustEffectModel,</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        FaustEffectModel::p_text,</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <a class="code" href="struct_faust_1_1_language_spec.html">LanguageSpec</a>&gt;&gt;;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_execution.html">Execution</a></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;{</div>
-<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="class_execution_1_1_faust_effect_component.html">  141</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_execution_1_1_faust_effect_component.html">FaustEffectComponent</a> final</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    : <span class="keyword">public</span> <a class="code" href="namespace_execution.html">Execution</a>::</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;          <a class="code" href="struct_execution_1_1_process_component___t.html">ProcessComponent_T</a>&lt;Faust::FaustEffectModel, ossia::node_process&gt;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;{</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  W_OBJECT(<a class="code" href="class_execution_1_1_faust_effect_component.html">FaustEffectComponent</a>)</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  COMPONENT_METADATA(<span class="stringliteral">&quot;eb4f83af-5ddc-4f2f-9426-6f8a599a1e96&quot;</span>)</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> is_unique = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">void</span> loadPreset(const <a class="code" href="namespace_process.html">Process</a>::Preset&amp; preset) override;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <a class="code" href="namespace_process.html">Process</a>::Preset savePreset() const noexcept override;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">void</span> init();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">void</span> reload();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">void</span> reloadFx(llvm_dsp_factory* fac, llvm_dsp* obj);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">void</span> reloadMidi(</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      ossia::nodes::custom_dsp_poly_factory* fac,</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      ossia::nodes::custom_dsp_poly_effect* obj);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  QString m_text;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  QString m_path;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  QString m_declareName;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;};</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;namespace <a class="code" href="namespace_process.html">Process</a></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;{</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;QString</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;EffectProcessFactory_T&lt;Faust::FaustEffectModel&gt;::customConstructionData()</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<a class="code" href="struct_process_1_1_descriptor.html">Process::Descriptor</a></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;EffectProcessFactory_T&lt;Faust::FaustEffectModel&gt;::descriptor(QString d) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">namespace </span>Faust</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;{</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="struct_faust_1_1_language_spec.html">  127</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_faust_1_1_language_spec.html">LanguageSpec</a></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;{</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keyword">static</span> constexpr <span class="keyword">const</span> <span class="keywordtype">char</span>* language = <span class="stringliteral">&quot;Faust&quot;</span>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;};</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keyword">using</span> <a class="code" href="class_process_1_1_effect_process_factory___t.html">FaustEffectFactory</a> = <a class="code" href="class_process_1_1_effect_process_factory___t.html">Process::EffectProcessFactory_T&lt;FaustEffectModel&gt;</a>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keyword">using</span> <a class="code" href="class_process_1_1_effect_layer_factory___t.html">LayerFactory</a> = <a class="code" href="class_process_1_1_effect_layer_factory___t.html">Process::EffectLayerFactory_T</a>&lt;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    FaustEffectModel,</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <a class="code" href="class_process_1_1_default_effect_item.html">Process::DefaultEffectItem</a>,</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <a class="code" href="class_process_1_1_process_script_edit_dialog.html">Process::ProcessScriptEditDialog</a>&lt;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        FaustEffectModel,</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        FaustEffectModel::p_text,</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <a class="code" href="struct_faust_1_1_language_spec.html">LanguageSpec</a>&gt;&gt;;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;}</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_execution.html">Execution</a></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;{</div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="class_execution_1_1_faust_effect_component.html">  144</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_execution_1_1_faust_effect_component.html">FaustEffectComponent</a> final</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    : <span class="keyword">public</span> <a class="code" href="namespace_execution.html">Execution</a>::</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;          <a class="code" href="struct_execution_1_1_process_component___t.html">ProcessComponent_T</a>&lt;Faust::FaustEffectModel, ossia::node_process&gt;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;{</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  W_OBJECT(<a class="code" href="class_execution_1_1_faust_effect_component.html">FaustEffectComponent</a>)</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  COMPONENT_METADATA(<span class="stringliteral">&quot;eb4f83af-5ddc-4f2f-9426-6f8a599a1e96&quot;</span>)</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <a class="code" href="class_execution_1_1_faust_effect_component.html">FaustEffectComponent</a>(</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      Faust::FaustEffectModel&amp; proc,</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx,</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      QObject* parent);</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keywordtype">void</span> reload(<a class="code" href="struct_execution_1_1_transaction.html">Execution::Transaction</a>&amp;);</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordtype">void</span> reloadSynth(<a class="code" href="struct_execution_1_1_transaction.html">Execution::Transaction</a>&amp;);</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordtype">void</span> reloadFx(<a class="code" href="struct_execution_1_1_transaction.html">Execution::Transaction</a>&amp;);</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node_T&gt;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordtype">void</span> setupExecutionControls(<span class="keyword">const</span> Node_T&amp;, <span class="keywordtype">int</span> firstControlIndex);</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node_T&gt;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keywordtype">void</span> setupExecutionControlOutlets(<span class="keyword">const</span> Node_T&amp;, <span class="keywordtype">int</span> firstControlIndex);</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  std::vector&lt;QMetaObject::Connection&gt; m_controlConnections;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;};</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keyword">using</span> <a class="code" href="class_execution_1_1_process_component_factory___t.html">FaustEffectComponentFactory</a></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    = <a class="code" href="class_execution_1_1_process_component_factory___t.html">Execution::ProcessComponentFactory_T&lt;FaustEffectComponent&gt;</a>;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;}</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> is_unique = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <a class="code" href="class_execution_1_1_faust_effect_component.html">FaustEffectComponent</a>(</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      Faust::FaustEffectModel&amp; proc,</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx,</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;      QObject* parent);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keywordtype">void</span> reload(<a class="code" href="struct_execution_1_1_transaction.html">Execution::Transaction</a>&amp;);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keywordtype">void</span> reloadSynth(<a class="code" href="struct_execution_1_1_transaction.html">Execution::Transaction</a>&amp;);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordtype">void</span> reloadFx(<a class="code" href="struct_execution_1_1_transaction.html">Execution::Transaction</a>&amp;);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node_T&gt;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keywordtype">void</span> setupExecutionControls(<span class="keyword">const</span> Node_T&amp;, <span class="keywordtype">int</span> firstControlIndex);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node_T&gt;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keywordtype">void</span> setupExecutionControlOutlets(<span class="keyword">const</span> Node_T&amp;, <span class="keywordtype">int</span> firstControlIndex);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  std::vector&lt;QMetaObject::Connection&gt; m_controlConnections;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;};</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="keyword">using</span> <a class="code" href="class_execution_1_1_process_component_factory___t.html">FaustEffectComponentFactory</a></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    = <a class="code" href="class_execution_1_1_process_component_factory___t.html">Execution::ProcessComponentFactory_T&lt;FaustEffectComponent&gt;</a>;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1366</div></div>
 <div class="ttc" id="aclass_execution_1_1_process_component_factory___t_html"><div class="ttname"><a href="class_execution_1_1_process_component_factory___t.html">Execution::ProcessComponentFactory_T</a></div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:127</div></div>
 <div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition:</b> TimeValue.hpp:19</div></div>
-<div class="ttc" id="astruct_faust_1_1_language_spec_html"><div class="ttname"><a href="struct_faust_1_1_language_spec.html">Faust::LanguageSpec</a></div><div class="ttdef"><b>Definition:</b> score-plugin-faust/Faust/EffectModel.hpp:124</div></div>
+<div class="ttc" id="astruct_faust_1_1_language_spec_html"><div class="ttname"><a href="struct_faust_1_1_language_spec.html">Faust::LanguageSpec</a></div><div class="ttdef"><b>Definition:</b> score-plugin-faust/Faust/EffectModel.hpp:127</div></div>
 <div class="ttc" id="aclass_process_1_1_effect_process_factory___t_html"><div class="ttname"><a href="class_process_1_1_effect_process_factory___t.html">Process::EffectProcessFactory_T</a></div><div class="ttdef"><b>Definition:</b> EffectFactory.hpp:12</div></div>
 <div class="ttc" id="aclass_process_1_1_default_effect_item_html"><div class="ttname"><a href="class_process_1_1_default_effect_item.html">Process::DefaultEffectItem</a></div><div class="ttdef"><b>Definition:</b> DefaultEffectItem.hpp:15</div></div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition:</b> Identifier.hpp:56</div></div>
@@ -283,7 +286,7 @@ $(document).ready(function(){initNavTree('score-plugin-faust_2_faust_2_effect_mo
 <div class="ttc" id="aclass_process_1_1_process_script_edit_dialog_html"><div class="ttname"><a href="class_process_1_1_process_script_edit_dialog.html">Process::ProcessScriptEditDialog</a></div><div class="ttdef"><b>Definition:</b> ScriptEditor.hpp:41</div></div>
 <div class="ttc" id="astruct_process_1_1_descriptor_html"><div class="ttname"><a href="struct_process_1_1_descriptor.html">Process::Descriptor</a></div><div class="ttdef"><b>Definition:</b> ProcessMetadata.hpp:34</div></div>
 <div class="ttc" id="astruct_execution_1_1_transaction_html"><div class="ttname"><a href="struct_execution_1_1_transaction.html">Execution::Transaction</a></div><div class="ttdef"><b>Definition:</b> ExecutionSetup.hpp:44</div></div>
-<div class="ttc" id="aclass_execution_1_1_faust_effect_component_html"><div class="ttname"><a href="class_execution_1_1_faust_effect_component.html">Execution::FaustEffectComponent</a></div><div class="ttdef"><b>Definition:</b> score-plugin-faust/Faust/EffectModel.hpp:141</div></div>
+<div class="ttc" id="aclass_execution_1_1_faust_effect_component_html"><div class="ttname"><a href="class_execution_1_1_faust_effect_component.html">Execution::FaustEffectComponent</a></div><div class="ttdef"><b>Definition:</b> score-plugin-faust/Faust/EffectModel.hpp:144</div></div>
 <div class="ttc" id="aclass_process_1_1_effect_layer_factory___t_html"><div class="ttname"><a href="class_process_1_1_effect_layer_factory___t.html">Process::EffectLayerFactory_T</a></div><div class="ttdef"><b>Definition:</b> EffectFactory.hpp:68</div></div>
 <div class="ttc" id="astruct_execution_1_1_process_component___t_html"><div class="ttname"><a href="struct_execution_1_1_process_component___t.html">Execution::ProcessComponent_T</a></div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:96</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
