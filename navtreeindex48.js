@@ -1,5 +1,6 @@
 var NAVTREEINDEX48 =
 {
+"plugins_2score-plugin-js_2_j_s_2_executor_2_component_8hpp_source.html":[13,0,180],
 "plugins_2score-plugin-lv2_2_l_v2_2_window_8hpp_source.html":[13,0,1328],
 "plugins_2score-plugin-media_2_media_2_effect_2_settings_2_presenter_8hpp_source.html":[13,0,867],
 "plugins_2score-plugin-media_2_media_2_merger_2_metadata_8hpp_source.html":[13,0,665],
@@ -248,6 +249,5 @@ var NAVTREEINDEX48 =
 "struct_boost_variant2_j_s_o_n_serializer.html#a5498fe3c4933288bfd02b9f393c76543":[12,0,79,4],
 "struct_boost_variant2_j_s_o_n_serializer.html#a9a50e578f3cb69a00e82dcd8028f28ca":[12,0,79,2],
 "struct_control_1_1_auto_u_i_setup.html":[12,0,3,0],
-"struct_control_1_1_auto_u_i_setup.html#a0d61ef9789dc8200e2b559ca13b69b85":[12,0,3,0,7],
-"struct_control_1_1_auto_u_i_setup.html#a0eb025c2b87da9f013bb0287cbac228c":[12,0,3,0,5]
+"struct_control_1_1_auto_u_i_setup.html#a0d61ef9789dc8200e2b559ca13b69b85":[12,0,3,0,7]
 };
