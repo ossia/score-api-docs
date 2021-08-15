@@ -54,6 +54,7 @@ var annotated_dup =
       [ "HasCustomUI< Nodes::MathAudioGenerator::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_audio_generator_1_1_node_01_4.html", null ],
       [ "HasCustomUI< Nodes::MathGenerator::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_generator_1_1_node_01_4.html", null ],
       [ "HasCustomUI< Nodes::MathMapping::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_mapping_1_1_node_01_4.html", null ],
+      [ "HasCustomUI< Nodes::MicroMapping::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_micro_mapping_1_1_node_01_4.html", null ],
       [ "HasCustomUI< T, std::void_t< decltype(&T::item)> >", "struct_control_1_1_has_custom_u_i_3_01_t_00_01std_1_1void__t_3_01decltype_07_6_t_1_1item_08_4_01_4.html", null ],
       [ "HSVSlider", "struct_control_1_1_h_s_v_slider.html", "struct_control_1_1_h_s_v_slider" ],
       [ "ImpulseButton", "struct_control_1_1_impulse_button.html", "struct_control_1_1_impulse_button" ],
@@ -555,6 +556,9 @@ var annotated_dup =
       ] ],
       [ "Metro", null, [
         [ "Node", "struct_nodes_1_1_metro_1_1_node.html", "struct_nodes_1_1_metro_1_1_node" ]
+      ] ],
+      [ "MicroMapping", null, [
+        [ "Node", "struct_nodes_1_1_micro_mapping_1_1_node.html", "struct_nodes_1_1_micro_mapping_1_1_node" ]
       ] ],
       [ "MidiUtil", null, [
         [ "Node", "struct_nodes_1_1_midi_util_1_1_node.html", "struct_nodes_1_1_midi_util_1_1_node" ]

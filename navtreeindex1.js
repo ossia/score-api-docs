@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"_chord_8hpp_source.html":[13,0,130],
 "_clamp_8hpp_source.html":[13,0,131],
 "_clang_driver_8hpp_source.html":[13,0,132],
 "_classical_beat_8hpp_source.html":[13,0,133],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "_expand_mode_8hpp_source.html":[13,0,406],
 "_exploration_worker_8hpp_source.html":[13,0,407],
 "_exploration_worker_wrapper_8hpp_source.html":[13,0,408],
-"_explorer_factory_8hpp_source.html":[13,0,409],
-"_explorer_model_8hpp_source.html":[13,0,410]
+"_explorer_factory_8hpp_source.html":[13,0,409]
 };

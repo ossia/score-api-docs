@@ -1,6 +1,7 @@
 var NAVTREEINDEX48 =
 {
 "namespace_execution.html":[11,0,4],
+"namespace_execution.html":[12,0,9],
 "namespace_gfx.html":[12,0,15],
 "namespace_gfx.html":[11,0,5],
 "namespace_inspector.html":[11,0,6],
@@ -8,22 +9,22 @@ var NAVTREEINDEX48 =
 "namespace_local_tree.html":[11,0,7],
 "namespace_local_tree.html":[12,0,24],
 "namespace_plugin_loader.html":[11,0,8],
-"namespace_process.html":[12,0,37],
 "namespace_process.html":[11,0,9],
+"namespace_process.html":[12,0,37],
 "namespace_scenario.html":[12,0,43],
 "namespace_scenario.html":[11,0,10],
-"namespace_state.html":[12,0,48],
 "namespace_state.html":[11,0,12],
+"namespace_state.html":[12,0,48],
 "namespacemembers.html":[11,1,0],
 "namespacemembers_enum.html":[11,1,3],
 "namespacemembers_eval.html":[11,1,4],
 "namespacemembers_func.html":[11,1,1],
 "namespacemembers_type.html":[11,1,2],
 "namespaces.html":[11,0],
-"namespacescore.html":[12,0,44],
 "namespacescore.html":[11,0,11],
-"namespacescore_1_1gfx.html":[11,0,11,0],
+"namespacescore.html":[12,0,44],
 "namespacescore_1_1gfx.html":[12,0,44,2],
+"namespacescore_1_1gfx.html":[11,0,11,0],
 "pages.html":[],
 "pluginfactories_8hpp_source.html":[13,0,846],
 "plugins_2score-lib-process_2_process_2_dataflow_2_control_widgets_8hpp_source.html":[13,0,203],
@@ -248,6 +249,5 @@ var NAVTREEINDEX48 =
 "struct_audio_1_1_port_audio_card.html#abc7102777bf3cef549e642bed16ad4b3":[12,0,0,8,3],
 "struct_audio_1_1_port_audio_card.html#aca1bbe4d1bd5139d8885a6db482e49d2":[12,0,0,8,4],
 "struct_audio_1_1_port_audio_card.html#ad77e44c7122a06efd7f06e13ad321244":[12,0,0,8,2],
-"struct_audio_1_1_port_audio_card.html#ae1d8ae142a54b8cca540f7137d4bf3e4":[12,0,0,8,10],
-"struct_audio_1_1_port_audio_scope.html":[12,0,0,10]
+"struct_audio_1_1_port_audio_card.html#ae1d8ae142a54b8cca540f7137d4bf3e4":[12,0,0,8,10]
 };

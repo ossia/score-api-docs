@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"_explorer_model_8hpp_source.html":[13,0,410],
 "_explorer_model_provider_8hpp_source.html":[13,0,411],
 "_explorer_presenter_8hpp_source.html":[13,0,412],
 "_explorer_view_8hpp_source.html":[13,0,413],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "_midi_outlet_item_8hpp_source.html":[13,0,698],
 "_midi_presenter_8hpp_source.html":[13,0,699],
 "_midi_process_8hpp_source.html":[13,0,700],
-"_midi_process_inspector_8hpp_source.html":[13,0,701],
-"_midi_process_metadata_8hpp_source.html":[13,0,702]
+"_midi_process_inspector_8hpp_source.html":[13,0,701]
 };

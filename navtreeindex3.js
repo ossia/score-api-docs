@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"_midi_process_metadata_8hpp_source.html":[13,0,702],
 "_midi_style_8hpp_source.html":[13,0,706],
 "_midi_util_8hpp_source.html":[13,0,707],
 "_midi_view_8hpp_source.html":[13,0,708],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "_remove_nodes_8hpp_source.html":[13,0,978],
 "_remove_notes_8hpp_source.html":[13,0,979],
 "_remove_process_from_interval_8hpp_source.html":[13,0,980],
-"_remove_selection_8hpp_source.html":[13,0,981],
-"_remove_slot_from_rack_8hpp_source.html":[13,0,982]
+"_remove_selection_8hpp_source.html":[13,0,981]
 };

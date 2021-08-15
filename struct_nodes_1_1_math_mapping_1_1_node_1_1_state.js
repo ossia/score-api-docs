@@ -6,6 +6,7 @@ var struct_nodes_1_1_math_mapping_1_1_node_1_1_state =
     [ "cur_time", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a34ec48bb141684cc27e57083fb95c394", null ],
     [ "cur_value", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a47c40bdbd3886bcc8a1931a0139f4aa3", null ],
     [ "expr", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a8b42c34dfc582fb9b93bca70ecc3adaf", null ],
+    [ "last_value_time", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#aea49f4abcf2cf58f7bdbb084044d9854", null ],
     [ "m1", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#ac98f9ec78e8dc0e1815fa25a59994ecf", null ],
     [ "m2", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#ace9fdc9e40f96e98db7789bea262b079", null ],
     [ "m3", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a832c91d7848f3079e1b88d822ff7db15", null ],
