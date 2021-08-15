@@ -1,5 +1,13 @@
 var NAVTREEINDEX50 =
 {
+"struct_control_1_1_out_control.html#aaa15707b5c252ab787d7e9e68f6deac6":[12,0,3,34,6],
+"struct_control_1_1_out_control.html#ae8ab7d5c5f83f521d29e309afb4b4b91":[12,0,3,34,2],
+"struct_control_1_1_port_setup.html":[12,0,3,35],
+"struct_control_1_1_r_g_b_a_edit.html":[12,0,3,36],
+"struct_control_1_1_r_g_b_a_edit.html#a413be71022e50ae4701d24ed3cb441df":[12,0,3,36,0],
+"struct_control_1_1_r_g_b_a_edit.html#aa58cd039d11c9db8eff713683280fcad":[12,0,3,36,1],
+"struct_control_1_1_r_g_b_a_edit.html#ab3a3f4b0f03a86a59bbb596c6117826c":[12,0,3,36,2],
+"struct_control_1_1_toggle.html":[12,0,3,41],
 "struct_control_1_1_toggle.html#a07b27ae348a6397e5766c084c716be33":[12,0,3,41,8],
 "struct_control_1_1_toggle.html#a1714131398ace3a5f7493d471a6f519a":[12,0,3,41,4],
 "struct_control_1_1_toggle.html#a1a1565192311afef0f7c365b2dd79b2d":[12,0,3,41,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX50 =
 "struct_dataflow_1_1control__visitor.html#af4990d652cb3a84c5519cefa2daf77c3":[12,0,6,16,6],
 "struct_dataflow_1_1minmax.html":[12,0,6,29],
 "struct_dataflow_1_1minmax.html#a328c0479ae3a8e32ec1def6f41004afa":[12,0,6,29,2],
-"struct_dataflow_1_1minmax.html#a872de9cb46bd314494fb5aa5982f5412":[12,0,6,29,0],
-"struct_dataflow_1_1minmax.html#a9e0b9dc2c741acb132ff922d16fb562a":[12,0,6,29,1],
-"struct_default_rollback_strategy.html":[12,0,97],
-"struct_device_1_1_address_settings.html":[12,0,7,2],
-"struct_device_1_1_address_settings.html#a28e4d844260dec015feb7885e662f3b2":[12,0,7,2,2],
-"struct_device_1_1_address_settings.html#a44dd657e0d8c54f272694d96387a5495":[12,0,7,2,1],
-"struct_device_1_1_address_settings.html#a632a7b20e731db05ed2dbbd89931b631":[12,0,7,2,4],
-"struct_device_1_1_address_settings.html#aa9c99cad0f055ab210970b80e1930b0a":[12,0,7,2,6],
-"struct_device_1_1_address_settings.html#aba34b517c41c63c45d0d9ac831dd24b2":[12,0,7,2,3]
+"struct_dataflow_1_1minmax.html#a872de9cb46bd314494fb5aa5982f5412":[12,0,6,29,0]
 };

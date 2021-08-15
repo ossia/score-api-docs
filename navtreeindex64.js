@@ -1,5 +1,14 @@
 var NAVTREEINDEX64 =
 {
+"structscore_1_1_event_visitor.html#acf6e23d060aff643c6ee16a4d7fc06db":[12,0,44,92,0],
+"structscore_1_1_event_visitor.html#af06753c4b3a0028cce2525e8630169c4":[12,0,44,92,7],
+"structscore_1_1_event_visitor.html#afa90f68deb6415628e011341dddbb38c":[12,0,44,92,2],
+"structscore_1_1_flicks_spin_box.html":[12,0,44,97],
+"structscore_1_1_flicks_spin_box.html#a31bb0762ce691167d3e89576d489ef01":[12,0,44,97,5],
+"structscore_1_1_flicks_spin_box.html#a4a085917ecf3a5340f50e071e6689a6e":[12,0,44,97,2],
+"structscore_1_1_flicks_spin_box.html#ad7a450e66cbc848f388a4b73ffe41ca3":[12,0,44,97,4],
+"structscore_1_1_flicks_spin_box.html#ae7ae54506e6480a345003eddf253adeb":[12,0,44,97,0],
+"structscore_1_1_flicks_spin_box.html#af4ba72846762a08741ca1c07608ba7f5":[12,0,44,97,1],
 "structscore_1_1_flicks_spin_box.html#afd3cc51157a7085e6fc6a078966fee46":[12,0,44,97,3],
 "structscore_1_1_focus_action_condition.html":[12,0,44,98],
 "structscore_1_1_focus_action_condition.html#a03b88275bb632bf44bb28b9c5ebab537":[12,0,44,98,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX64 =
 "structscore_1_1_string_constants.html#a2bb46b67b8d5310bb96eac7878aec7a2":[12,0,44,243,35],
 "structscore_1_1_string_constants.html#a306f2d1274816cbf4ef41b6a4bad6a7b":[12,0,44,243,47],
 "structscore_1_1_string_constants.html#a358b30c0af3a891ab7fcc473fe97c47e":[12,0,44,243,61],
-"structscore_1_1_string_constants.html#a37a13047b1dda08a32d560f0410c77f9":[12,0,44,243,11],
-"structscore_1_1_string_constants.html#a39149e7187283cfa8c1b7ffbbc18ef7d":[12,0,44,243,110],
-"structscore_1_1_string_constants.html#a3f40a71436e131fcc1aac0f6279a2a30":[12,0,44,243,100],
-"structscore_1_1_string_constants.html#a40b6ea8e08d9bd658f5d9414e1b22b57":[12,0,44,243,21],
-"structscore_1_1_string_constants.html#a427f3ab0e29cc6ee351af7fbbdac464a":[12,0,44,243,88],
-"structscore_1_1_string_constants.html#a428b08bc33a8a3ef57f5a7af0080559c":[12,0,44,243,55],
-"structscore_1_1_string_constants.html#a43ce55c4f4ad6ddb8f1de5b39442c604":[12,0,44,243,94],
-"structscore_1_1_string_constants.html#a46b545fcb9e6fb2449ebe5013021e112":[12,0,44,243,85],
-"structscore_1_1_string_constants.html#a4793bdc9dba1281cab05c2ca280506de":[12,0,44,243,17],
-"structscore_1_1_string_constants.html#a4918131f6073e0d595c5bdd8016f4638":[12,0,44,243,115]
+"structscore_1_1_string_constants.html#a37a13047b1dda08a32d560f0410c77f9":[12,0,44,243,11]
 };

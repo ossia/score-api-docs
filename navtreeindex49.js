@@ -1,5 +1,13 @@
 var NAVTREEINDEX49 =
 {
+"struct_audio_1_1_port_audio_card.html#a882846fcf1520f147f8689c7f39a4577":[12,0,0,8,7],
+"struct_audio_1_1_port_audio_card.html#a95713a0efd0a42f962ac5b305584c2de":[12,0,0,8,8],
+"struct_audio_1_1_port_audio_card.html#a95b58d385230c69a64fb1206b6df1d36":[12,0,0,8,1],
+"struct_audio_1_1_port_audio_card.html#ab536c6782e2dd5a75ac418bce4b501be":[12,0,0,8,6],
+"struct_audio_1_1_port_audio_card.html#abc7102777bf3cef549e642bed16ad4b3":[12,0,0,8,3],
+"struct_audio_1_1_port_audio_card.html#aca1bbe4d1bd5139d8885a6db482e49d2":[12,0,0,8,4],
+"struct_audio_1_1_port_audio_card.html#ad77e44c7122a06efd7f06e13ad321244":[12,0,0,8,2],
+"struct_audio_1_1_port_audio_card.html#ae1d8ae142a54b8cca540f7137d4bf3e4":[12,0,0,8,10],
 "struct_audio_1_1_port_audio_scope.html":[12,0,0,10],
 "struct_audio_1_1_port_audio_scope.html#a34e99eddd4bd69f07490f1ef43f0c33b":[12,0,0,10,1],
 "struct_audio_1_1_port_audio_scope.html#aea6b49537cfc54b1e36aaea5737020a5":[12,0,0,10,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX49 =
 "struct_control_1_1_out_control.html#a23e1e2d15b68adf56098c9eeb30b69b0":[12,0,3,34,5],
 "struct_control_1_1_out_control.html#a2ffc8977d3b67db3e34c3b62362ed9ac":[12,0,3,34,3],
 "struct_control_1_1_out_control.html#a316c9c1a608ed15c972d69096a336016":[12,0,3,34,1],
-"struct_control_1_1_out_control.html#a422de713dcffdb4a2d9cd6ea98bd8426":[12,0,3,34,0],
-"struct_control_1_1_out_control.html#aaa15707b5c252ab787d7e9e68f6deac6":[12,0,3,34,6],
-"struct_control_1_1_out_control.html#ae8ab7d5c5f83f521d29e309afb4b4b91":[12,0,3,34,2],
-"struct_control_1_1_port_setup.html":[12,0,3,35],
-"struct_control_1_1_r_g_b_a_edit.html":[12,0,3,36],
-"struct_control_1_1_r_g_b_a_edit.html#a413be71022e50ae4701d24ed3cb441df":[12,0,3,36,0],
-"struct_control_1_1_r_g_b_a_edit.html#aa58cd039d11c9db8eff713683280fcad":[12,0,3,36,1],
-"struct_control_1_1_r_g_b_a_edit.html#ab3a3f4b0f03a86a59bbb596c6117826c":[12,0,3,36,2],
-"struct_control_1_1_toggle.html":[12,0,3,41]
+"struct_control_1_1_out_control.html#a422de713dcffdb4a2d9cd6ea98bd8426":[12,0,3,34,0]
 };

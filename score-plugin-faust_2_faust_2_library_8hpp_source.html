@@ -140,87 +140,81 @@ $(document).ready(function(){initNavTree('score-plugin-faust_2_faust_2_library_8
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">if</span> (node == QModelIndex{})</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    categories.parent</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        = <span class="keyword">reinterpret_cast&lt;</span><a class="code" href="class_tree_node.html">Library::ProcessNode</a>*<span class="keyword">&gt;</span>(node.internalPointer());</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    categories.init(node, ctx);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  }</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// We use the parent folder as category...</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    categories.libraryFolder.setPath(</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        ctx.<a class="code" href="structscore_1_1_application_context.html#ae71a4a7f56ab86bfdb5308ed0bae8d00">settings</a>&lt;<a class="code" href="class_library_1_1_settings_1_1_model.html">Library::Settings::Model</a>&gt;().getPath());</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> addPath(std::string_view path)<span class="keyword"> override</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    QFileInfo file{QString::fromUtf8(path.data(), path.length())};</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span> (file.fileName() != <span class="stringliteral">&quot;layout.dsp&quot;</span>)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      registerDSP(file);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">void</span> registerDSP(<span class="keyword">const</span> QFileInfo&amp; file)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="struct_library_1_1_process_data.html">Library::ProcessData</a> pdata;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    pdata.prettyName = file.baseName();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    pdata.key = <a class="code" href="struct_metadata.html">Metadata&lt;ConcreteKey_k, FaustEffectModel&gt;::get</a>();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    pdata.customData = [&amp;] { <span class="keywordflow">return</span> file.absoluteFilePath(); }();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    pdata.author = <span class="stringliteral">&quot;Faust standard library&quot;</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="keyword">auto</span> <a class="code" href="structmatches.html">matches</a> = nameExpr.match(pdata.customData);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="structmatches.html">matches</a>.hasMatch())</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        pdata.prettyName = <a class="code" href="structmatches.html">matches</a>.captured(1);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="keyword">auto</span> <a class="code" href="structmatches.html">matches</a> = authorExpr.match(pdata.customData);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="structmatches.html">matches</a>.hasMatch())</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        pdata.author = <a class="code" href="structmatches.html">matches</a>.captured(1);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keyword">auto</span> <a class="code" href="structmatches.html">matches</a> = descExpr.match(pdata.customData);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="structmatches.html">matches</a>.hasMatch())</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        pdata.description = <a class="code" href="structmatches.html">matches</a>.captured(1);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    categories.add(file, std::move(pdata));</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_faust_1_1_drop_handler.html">   92</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_faust_1_1_drop_handler.html">DropHandler</a> final : <span class="keyword">public</span> <a class="code" href="class_process_1_1_process_drop_handler.html">Process::ProcessDropHandler</a></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;1e83a000-5aca-4427-8de5-1dc7a390e201&quot;</span>)</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  QSet&lt;QString&gt; fileExtensions() <span class="keyword">const</span> noexcept <span class="keyword">override</span> { <span class="keywordflow">return</span> {<span class="stringliteral">&quot;dsp&quot;</span>}; }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  std::vector&lt;Process::ProcessDropHandler::ProcessDrop&gt; dropData(</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      <span class="keyword">const</span> std::vector&lt;DroppedFile&gt;&amp; data,</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    std::vector&lt;Process::ProcessDropHandler::ProcessDrop&gt; vec;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; [filename, _] : data)</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    {</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      <a class="code" href="struct_process_1_1_process_drop_handler_1_1_process_drop.html">Process::ProcessDropHandler::ProcessDrop</a> p;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      p.creation.key = <a class="code" href="struct_metadata.html">Metadata&lt;ConcreteKey_k, Faust::FaustEffectModel&gt;::get</a>();</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      <span class="comment">// TODO use faust-provided name</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      p.creation.prettyName = QFileInfo{filename}.baseName();</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      p.creation.customData = std::move(filename);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      vec.push_back(std::move(p));</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">return</span> vec;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  }</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;};</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> addPath(std::string_view path)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    QFileInfo file{QString::fromUtf8(path.data(), path.length())};</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span> (file.fileName() != <span class="stringliteral">&quot;layout.dsp&quot;</span>)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      registerDSP(file);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> registerDSP(<span class="keyword">const</span> QFileInfo&amp; file)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="struct_library_1_1_process_data.html">Library::ProcessData</a> pdata;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    pdata.prettyName = file.baseName();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    pdata.key = <a class="code" href="struct_metadata.html">Metadata&lt;ConcreteKey_k, FaustEffectModel&gt;::get</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    pdata.customData = [&amp;] { <span class="keywordflow">return</span> file.absoluteFilePath(); }();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    pdata.author = <span class="stringliteral">&quot;Faust standard library&quot;</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keyword">auto</span> <a class="code" href="structmatches.html">matches</a> = nameExpr.match(pdata.customData);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="structmatches.html">matches</a>.hasMatch())</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        pdata.prettyName = <a class="code" href="structmatches.html">matches</a>.captured(1);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="keyword">auto</span> <a class="code" href="structmatches.html">matches</a> = authorExpr.match(pdata.customData);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="structmatches.html">matches</a>.hasMatch())</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        pdata.author = <a class="code" href="structmatches.html">matches</a>.captured(1);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keyword">auto</span> <a class="code" href="structmatches.html">matches</a> = descExpr.match(pdata.customData);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="structmatches.html">matches</a>.hasMatch())</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        pdata.description = <a class="code" href="structmatches.html">matches</a>.captured(1);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    categories.add(file, std::move(pdata));</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_faust_1_1_drop_handler.html">   87</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_faust_1_1_drop_handler.html">DropHandler</a> final : <span class="keyword">public</span> <a class="code" href="class_process_1_1_process_drop_handler.html">Process::ProcessDropHandler</a></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;1e83a000-5aca-4427-8de5-1dc7a390e201&quot;</span>)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  QSet&lt;QString&gt; fileExtensions() <span class="keyword">const</span> noexcept <span class="keyword">override</span> { <span class="keywordflow">return</span> {<span class="stringliteral">&quot;dsp&quot;</span>}; }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  std::vector&lt;Process::ProcessDropHandler::ProcessDrop&gt; dropData(</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <span class="keyword">const</span> std::vector&lt;DroppedFile&gt;&amp; data,</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    std::vector&lt;Process::ProcessDropHandler::ProcessDrop&gt; vec;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; [filename, _] : data)</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <a class="code" href="struct_process_1_1_process_drop_handler_1_1_process_drop.html">Process::ProcessDropHandler::ProcessDrop</a> p;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      p.creation.key = <a class="code" href="struct_metadata.html">Metadata&lt;ConcreteKey_k, Faust::FaustEffectModel&gt;::get</a>();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <span class="comment">// TODO use faust-provided name</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      p.creation.prettyName = QFileInfo{filename}.baseName();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      p.creation.customData = std::move(filename);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      vec.push_back(std::move(p));</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">return</span> vec;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;};</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_tree_node_html"><div class="ttname"><a href="class_tree_node.html">TreeNode&lt; ProcessData &gt;</a></div></div>
-<div class="ttc" id="aclass_library_1_1_processes_item_model_html"><div class="ttname"><a href="class_library_1_1_processes_item_model.html">Library::ProcessesItemModel</a></div><div class="ttdef"><b>Definition:</b> ProcessesItemModel.hpp:39</div></div>
+<div class="ttc" id="aclass_library_1_1_processes_item_model_html"><div class="ttname"><a href="class_library_1_1_processes_item_model.html">Library::ProcessesItemModel</a></div><div class="ttdef"><b>Definition:</b> ProcessesItemModel.hpp:41</div></div>
 <div class="ttc" id="aclass_process_1_1_effect_process_factory___t_html"><div class="ttname"><a href="class_process_1_1_effect_process_factory___t.html">Process::EffectProcessFactory_T</a></div><div class="ttdef"><b>Definition:</b> EffectFactory.hpp:12</div></div>
 <div class="ttc" id="astruct_metadata_html"><div class="ttname"><a href="struct_metadata.html">Metadata</a></div><div class="ttdoc">Static metadata implementation.</div><div class="ttdef"><b>Definition:</b> lib/score/tools/Metadata.hpp:36</div></div>
 <div class="ttc" id="aclass_library_1_1_library_interface_html"><div class="ttname"><a href="class_library_1_1_library_interface.html">Library::LibraryInterface</a></div><div class="ttdef"><b>Definition:</b> LibraryInterface.hpp:20</div></div>
@@ -230,11 +224,9 @@ $(document).ready(function(){initNavTree('score-plugin-faust_2_faust_2_library_8
 <div class="ttc" id="astructscore_1_1_g_u_i_application_context_html"><div class="ttname"><a href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a></div><div class="ttdoc">Specializes ApplicationContext with the QMainWindow.</div><div class="ttdef"><b>Definition:</b> GUIApplicationContext.hpp:14</div></div>
 <div class="ttc" id="astruct_process_1_1_process_drop_handler_1_1_process_drop_html"><div class="ttname"><a href="struct_process_1_1_process_drop_handler_1_1_process_drop.html">Process::ProcessDropHandler::ProcessDrop</a></div><div class="ttdef"><b>Definition:</b> ProcessDropHandler.hpp:23</div></div>
 <div class="ttc" id="aclass_process_1_1_process_drop_handler_html"><div class="ttname"><a href="class_process_1_1_process_drop_handler.html">Process::ProcessDropHandler</a></div><div class="ttdef"><b>Definition:</b> ProcessDropHandler.hpp:19</div></div>
-<div class="ttc" id="astruct_library_1_1_process_data_html"><div class="ttname"><a href="struct_library_1_1_process_data.html">Library::ProcessData</a></div><div class="ttdef"><b>Definition:</b> ProcessesItemModel.hpp:28</div></div>
-<div class="ttc" id="aclass_faust_1_1_drop_handler_html"><div class="ttname"><a href="class_faust_1_1_drop_handler.html">Faust::DropHandler</a></div><div class="ttdef"><b>Definition:</b> score-plugin-faust/Faust/Library.hpp:92</div></div>
-<div class="ttc" id="aclass_library_1_1_settings_1_1_model_html"><div class="ttname"><a href="class_library_1_1_settings_1_1_model.html">Library::Settings::Model</a></div><div class="ttdef"><b>Definition:</b> LibrarySettings.hpp:45</div></div>
-<div class="ttc" id="astruct_library_1_1_subcategories_html"><div class="ttname"><a href="struct_library_1_1_subcategories.html">Library::Subcategories</a></div><div class="ttdef"><b>Definition:</b> ProcessesItemModel.hpp:77</div></div>
-<div class="ttc" id="astructscore_1_1_application_context_html_ae71a4a7f56ab86bfdb5308ed0bae8d00"><div class="ttname"><a href="structscore_1_1_application_context.html#ae71a4a7f56ab86bfdb5308ed0bae8d00">score::ApplicationContext::settings</a></div><div class="ttdeci">T &amp; settings() const</div><div class="ttdoc">Access a specific Settings model instance.</div><div class="ttdef"><b>Definition:</b> ApplicationContext.hpp:42</div></div>
+<div class="ttc" id="astruct_library_1_1_process_data_html"><div class="ttname"><a href="struct_library_1_1_process_data.html">Library::ProcessData</a></div><div class="ttdef"><b>Definition:</b> ProcessesItemModel.hpp:30</div></div>
+<div class="ttc" id="aclass_faust_1_1_drop_handler_html"><div class="ttname"><a href="class_faust_1_1_drop_handler.html">Faust::DropHandler</a></div><div class="ttdef"><b>Definition:</b> score-plugin-faust/Faust/Library.hpp:87</div></div>
+<div class="ttc" id="astruct_library_1_1_subcategories_html"><div class="ttname"><a href="struct_library_1_1_subcategories.html">Library::Subcategories</a></div><div class="ttdef"><b>Definition:</b> ProcessesItemModel.hpp:81</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

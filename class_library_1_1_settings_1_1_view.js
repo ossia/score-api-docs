@@ -1,6 +1,6 @@
 var class_library_1_1_settings_1_1_view =
 [
     [ "View", "class_library_1_1_settings_1_1_view.html#a088897c91ab2b48db5288a28f1d96509", null ],
-    [ "PathChanged", "class_library_1_1_settings_1_1_view.html#abc8365263199c4d3e14bc1b769538005", null ],
-    [ "setPath", "class_library_1_1_settings_1_1_view.html#a0e5e7c3e5c3a74416ba1ea5d82c8b259", null ]
+    [ "RootPathChanged", "class_library_1_1_settings_1_1_view.html#a2ed1a6d830fe4ba10a71608f600e5c93", null ],
+    [ "setRootPath", "class_library_1_1_settings_1_1_view.html#a31da4b88261353092706d9664d34fd53", null ]
 ];

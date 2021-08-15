@@ -1,5 +1,13 @@
 var NAVTREEINDEX51 =
 {
+"struct_dataflow_1_1minmax.html#a9e0b9dc2c741acb132ff922d16fb562a":[12,0,6,29,1],
+"struct_default_rollback_strategy.html":[12,0,97],
+"struct_device_1_1_address_settings.html":[12,0,7,2],
+"struct_device_1_1_address_settings.html#a28e4d844260dec015feb7885e662f3b2":[12,0,7,2,2],
+"struct_device_1_1_address_settings.html#a44dd657e0d8c54f272694d96387a5495":[12,0,7,2,1],
+"struct_device_1_1_address_settings.html#a632a7b20e731db05ed2dbbd89931b631":[12,0,7,2,4],
+"struct_device_1_1_address_settings.html#aa9c99cad0f055ab210970b80e1930b0a":[12,0,7,2,6],
+"struct_device_1_1_address_settings.html#aba34b517c41c63c45d0d9ac831dd24b2":[12,0,7,2,3],
 "struct_device_1_1_address_settings.html#af006b66f7269e6378cbc4b45f80c6b66":[12,0,7,2,5],
 "struct_device_1_1_address_settings.html#af3ffe1563a65ae9c2e4c740a178c4cb7":[12,0,7,2,0],
 "struct_device_1_1_address_settings_common.html":[12,0,7,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX51 =
 "struct_explorer_1_1_settings_1_1_device_log_level.html#a9735da91ea3ca65ce9a862e9ae2528e2":[12,0,10,2,0,2],
 "struct_explorer_1_1_settings_1_1_device_log_level.html#a9acdf32334b76523f4a92fb0f0a46991":[12,0,10,2,0,0],
 "struct_explorer_1_1_settings_1_1_device_log_level.html#af2c0672280b8aedfa8d1088f3a6a5580":[12,0,10,2,0,3],
-"struct_explorer_1_1make__dataspace.html":[12,0,10,41],
-"struct_explorer_1_1make__dataspace.html#a186042e23c167f558fa0f5cc8e2179d1":[12,0,10,41,2],
-"struct_explorer_1_1make__dataspace.html#a73883926ef49386a8bed5a982e8ce0ae":[12,0,10,41,3],
-"struct_explorer_1_1make__dataspace.html#abfc7f9e815a1a9f00b77363007e2f151":[12,0,10,41,1],
-"struct_explorer_1_1make__dataspace.html#aff8bbc877049ee414d0d819bf194df2f":[12,0,10,41,0],
-"struct_explorer_1_1make__unit.html":[12,0,10,42],
-"struct_explorer_1_1make__unit.html#a8e3594ff27b8034620986805c5bf6d99":[12,0,10,42,0],
-"struct_explorer_1_1make__unit.html#aae09056d9e19924857b4e91137b1c81c":[12,0,10,42,1],
-"struct_explorer_1_1print__node__rec.html":[12,0,10,47]
+"struct_explorer_1_1make__dataspace.html":[12,0,10,41]
 };

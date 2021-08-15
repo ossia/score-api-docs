@@ -1,5 +1,13 @@
 var NAVTREEINDEX44 =
 {
+"classscore_1_1_serializable_document_plugin.html#ac77e1f2986ec7bc375fcf11fc337d957":[12,0,44,214,1],
+"classscore_1_1_serializable_document_plugin.html#ad26a92ca12a114e70c55bdc274bd8a55":[12,0,44,214,2],
+"classscore_1_1_serializable_interface.html":[12,0,44,215],
+"classscore_1_1_serializable_interface.html#a5fb01291797aba3e8d0a8e3e2b7a645d":[12,0,44,215,4],
+"classscore_1_1_serializable_interface.html#a61d79a51e3a1ab7072d14660676cbed1":[12,0,44,215,2],
+"classscore_1_1_serializable_interface.html#a7370c1d6b71bffe747fa0d2453dac35f":[12,0,44,215,0],
+"classscore_1_1_serializable_interface.html#a898e3e34559e75c6b6ff38eb4cc6db99":[12,0,44,215,3],
+"classscore_1_1_serializable_interface.html#a97f9c4115baec8e7c631bb0672de7720":[12,0,44,215,1],
 "classscore_1_1_serializable_interface.html#aafa05e605f693e319e066767bd657abd":[12,0,44,215,5],
 "classscore_1_1_settings.html":[12,0,44,216],
 "classscore_1_1_settings.html#a04421a2c017ccf629f9a58a59fdcc459":[12,0,44,216,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX44 =
 "classscore_1_1_undo_panel_delegate.html#aeb112edf6fceffc8761e9b92fa196901":[12,0,44,260,1],
 "classscore_1_1_undo_panel_delegate_factory.html":[12,0,44,261],
 "classscore_1_1_v_separator.html":[12,0,44,276],
-"classscore_1_1_v_separator.html#a744b26a9793f84b7f94bc74368486701":[12,0,44,276,0],
-"classscore_1_1_v_separator.html#a76f263a9518f56ee0aae6ab8f92836c5":[12,0,44,276,1],
-"classscore_1_1_validity_checker.html":[12,0,44,262],
-"classscore_1_1_validity_checker.html#a3d7c351a3f8d7f74a4f03df35c69e38e":[12,0,44,262,0],
-"classscore_1_1_validity_checker.html#ab9179da24f950d4d9b30f5104f961b2c":[12,0,44,262,1],
-"classscore_1_1_validity_checker_list.html":[12,0,44,263],
-"classscore_1_1_validity_checker_list.html#a73210d9d6260b33c8605ff3633b26d81":[12,0,44,263,0],
-"classscore_1_1_validity_checker_list.html#a8e030356b787c12a811c89e0a67b1206":[12,0,44,263,1],
-"classscore_1_1_variant_based_node.html":[12,0,44,271]
+"classscore_1_1_v_separator.html#a744b26a9793f84b7f94bc74368486701":[12,0,44,276,0]
 };

@@ -1,5 +1,14 @@
 var NAVTREEINDEX62 =
 {
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01bool_01_4_01_4.html":[12,0,446],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01bool_01_4_01_4.html#aa59b32d76f3d932165d2d62ed0c445e7":[12,0,446,0],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01ossia_1_1impulse_01_4_01_4.html":[12,0,447],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01ossia_1_1impulse_01_4_01_4.html#ad64b3bc0cfecd1c9d1f5f56f07e89149":[12,0,447,0],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01std_1_1string_01_4_01_4.html":[12,0,448],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01std_1_1string_01_4_01_4.html#a03c1e5381b5977a18bf88832bb6cc406":[12,0,448,0],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base__variant_01_4.html":[12,0,450],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base__variant_01_4.html#ace5e4cd3b09e34a010cfbf15410732d9":[12,0,450,0],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base__variant_01_4.html#afd80d9b439c3c7a066c79b557935cc9b":[12,0,450,1],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1flat__map_3_01_t_00_01_u_01_4_01_4.html":[12,0,451],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1flat__map_3_01_t_00_01_u_01_4_01_4.html#a19383f0b2dfbc830707a904884742ac0":[12,0,451,0],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1flat__set_3_01_t_01_4_01_4.html":[12,0,452],
@@ -240,14 +249,5 @@ var NAVTREEINDEX62 =
 "structossia_1_1control__surface__node_1_1control__updater.html#a066902b3578dca4acb5f99cc9ed7f5fa":[12,0,33,1,0,1],
 "structossia_1_1control__surface__node_1_1control__updater.html#a963dedebbdc98540c6039fdfbb9ae927":[12,0,33,1,0,0],
 "structossia_1_1control__surface__node_1_1control__updater.html#ae7e8b2f3fd80d7f902d7aa218bf3ee0e":[12,0,33,1,0,2],
-"structossia_1_1node__graph__process.html":[12,0,33,2],
-"structossia_1_1node__graph__process.html#a135220c9c031a860a1dbd7c7ca27e88e":[12,0,33,2,1],
-"structossia_1_1node__graph__process.html#a1e0999accf1c0e3482d15ad7dd353082":[12,0,33,2,9],
-"structossia_1_1node__graph__process.html#a4ab304cba3f5c3aa41c487dcf5c14e07":[12,0,33,2,7],
-"structossia_1_1node__graph__process.html#a66f02c8c5e11eb05e46a2c672a4d29ae":[12,0,33,2,12],
-"structossia_1_1node__graph__process.html#a6815307d840af00e3278b310cc7b3b2a":[12,0,33,2,10],
-"structossia_1_1node__graph__process.html#a6dbee735e5912ae87a9e7e7ee8d81ff4":[12,0,33,2,8],
-"structossia_1_1node__graph__process.html#a6fc20a3bc33e0cfc65f802820821d287":[12,0,33,2,6],
-"structossia_1_1node__graph__process.html#a8f9ced34b3041f8df4a259f3e6513016":[12,0,33,2,11],
-"structossia_1_1node__graph__process.html#a9803653ca4f5ef5d4772499b521840ff":[12,0,33,2,4]
+"structossia_1_1node__graph__process.html":[12,0,33,2]
 };

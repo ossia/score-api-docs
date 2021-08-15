@@ -1,5 +1,12 @@
 var NAVTREEINDEX25 =
 {
+"class_process_1_1_value_inlet.html#a79ae01b3ef892bddae22d09242e82b8b":[12,0,37,87,0],
+"class_process_1_1_value_inlet.html#aacd1cf600576925e1d80ea24364c5582":[12,0,37,87,2],
+"class_process_1_1_value_inlet.html#ad8718ee1f89685c7897e98b1b24d8e65":[12,0,37,87,6],
+"class_process_1_1_value_inlet.html#ae5a1866a2e8655104824e9432ef911d7":[12,0,37,87,7],
+"class_process_1_1_value_inlet.html#aee5cd0caf69c001769ad0dcc13691e11":[12,0,37,87,5],
+"class_process_1_1_value_outlet.html":[12,0,37,88],
+"class_process_1_1_value_outlet.html#a1fdba83ccb946d898e7d50da1c0ec9a6":[12,0,37,88,8],
 "class_process_1_1_value_outlet.html#a46901afc77a04958be63bd71bd879020":[12,0,37,88,4],
 "class_process_1_1_value_outlet.html#a55823cebcdc21111f352df2ad431eaba":[12,0,37,88,0],
 "class_process_1_1_value_outlet.html#a60c6f1df4c5dba44ab168a05932f226c":[12,0,37,88,1],
@@ -242,12 +249,5 @@ var NAVTREEINDEX25 =
 "class_protocols_1_1_w_s_device.html#a219685c0902208342a095b5bb2e30eb8":[12,0,38,68,1],
 "class_protocols_1_1_w_s_device.html#aecc3a74898002639b1f0b7f22c6d7743":[12,0,38,68,0],
 "class_protocols_1_1_w_s_protocol_factory.html":[12,0,38,69],
-"class_protocols_1_1_w_s_protocol_settings_widget.html":[12,0,38,70],
-"class_protocols_1_1_w_s_protocol_settings_widget.html#a018eeca75a56e1eb4b81e84548900fe4":[12,0,38,70,5],
-"class_protocols_1_1_w_s_protocol_settings_widget.html#a1527216cf9d87d10dfbf3a4b2beee8c5":[12,0,38,70,1],
-"class_protocols_1_1_w_s_protocol_settings_widget.html#a19f1e7ee4ed75d725870fc57ff0845b8":[12,0,38,70,6],
-"class_protocols_1_1_w_s_protocol_settings_widget.html#a40fa88d658d06b374dde0f5ec1e07cf9":[12,0,38,70,2],
-"class_protocols_1_1_w_s_protocol_settings_widget.html#a57bd97d0093b82ee30ea96e9131f585a":[12,0,38,70,0],
-"class_protocols_1_1_w_s_protocol_settings_widget.html#a6f065fc0b22efcc5d103f79f7ea895a7":[12,0,38,70,3],
-"class_protocols_1_1_w_s_protocol_settings_widget.html#aa4b9ec2452f8ab8dda02c8c4365e93b0":[12,0,38,70,4]
+"class_protocols_1_1_w_s_protocol_settings_widget.html":[12,0,38,70]
 };
