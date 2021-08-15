@@ -1,5 +1,12 @@
 var NAVTREEINDEX25 =
 {
+"class_process_1_1_value_outlet.html#ad54251319bcffa36e55a3de7b25bf6fa":[12,0,37,88,6],
+"class_process_flags__k.html":[12,0,200],
+"class_process_panel_graphics_proxy.html":[12,0,201],
+"class_process_panel_graphics_proxy.html#a38fd83ea6e4d4e648850f6628218624c":[12,0,201,1],
+"class_process_panel_graphics_proxy.html#a4358ca15d098605e3091cd6bf7fbeb01":[12,0,201,0],
+"class_process_panel_graphics_proxy.html#a7c6eaadd3e9fde5754bc7baeda37a0b9":[12,0,201,2],
+"class_process_panel_graphics_proxy.html#ae37889335d4ffadbbd84117fcbfa5603":[12,0,201,3],
 "class_process_state_data_interface.html":[12,0,202],
 "class_process_state_data_interface.html#a130965b1c91a2757acc54e4f5576f24f":[12,0,202,1],
 "class_process_state_data_interface.html#a46ec9c95a84b86047bb478231300da8f":[12,0,202,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX25 =
 "class_protocols_1_1_websocket_client_widget.html#ab552fa19082414b9c16eb945778eb42c":[12,0,38,62,2],
 "class_protocols_1_1_websocket_client_widget.html#adc5a45775f3ca39d3b6f00e7b90d46ff":[12,0,38,62,0],
 "class_protocols_1_1_websocket_server_widget.html":[12,0,38,63],
-"class_protocols_1_1_websocket_server_widget.html#a0f8897f3e3bb0aa3594a59c92219c78e":[12,0,38,63,1],
-"class_protocols_1_1_websocket_server_widget.html#a6305bc8f432c342fe0e9abf333e9fcbe":[12,0,38,63,0],
-"class_protocols_1_1_websocket_server_widget.html#aeaf90e350f328f61a7e144375a4b6574":[12,0,38,63,2],
-"class_protocols_1_1_wiimote_device.html":[12,0,38,64],
-"class_protocols_1_1_wiimote_device.html#a2cef54517f18effb47e006e8f8fcbfb2":[12,0,38,64,0],
-"class_protocols_1_1_wiimote_device.html#a3c0a579e602687da923c4211e8926518":[12,0,38,64,1],
-"class_protocols_1_1_wiimote_device.html#aa5a79d0862d4d8b1b5ef0856ea55b6c7":[12,0,38,64,3],
-"class_protocols_1_1_wiimote_device.html#aed0842356ecd92e92105a45e093bf53d":[12,0,38,64,2]
+"class_protocols_1_1_websocket_server_widget.html#a0f8897f3e3bb0aa3594a59c92219c78e":[12,0,38,63,1]
 };

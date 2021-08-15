@@ -164,12 +164,15 @@ $(document).ready(function(){initNavTree('_q_graphics_selectable_pixmap_toggle_8
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      QGraphicsItem* parent);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  std::function&lt;void(QMimeData&amp;)&gt; createDrag;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> mousePressEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> mouseMoveEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span> mouseReleaseEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  std::function&lt;void(QPointF)&gt; click;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> mousePressEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span> mouseMoveEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">void</span> mouseReleaseEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">bool</span> m_didDrag{};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassscore_1_1_q_graphics_draggable_pixmap_html"><div class="ttname"><a href="classscore_1_1_q_graphics_draggable_pixmap.html">score::QGraphicsDraggablePixmap</a></div><div class="ttdef"><b>Definition:</b> QGraphicsSelectablePixmapToggle.hpp:51</div></div>

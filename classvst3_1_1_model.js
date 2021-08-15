@@ -4,6 +4,7 @@ var classvst3_1_1_model =
     [ "~Model", "classvst3_1_1_model.html#aad58f2326f6ea4e7e5fa4c26e114155d", null ],
     [ "Model", "classvst3_1_1_model.html#ab7569b3c3db7539701e064fc5df0b362", null ],
     [ "addControlFromEditor", "classvst3_1_1_model.html#a81387b8fdd850a49c0a264fa0210d72f", null ],
+    [ "effect", "classvst3_1_1_model.html#aded538a46c018a02a1f5fc202ac61e1e", null ],
     [ "getControl", "classvst3_1_1_model.html#acdf4ef3f57556a8ab6e72390863f0b5b", null ],
     [ "hasExternalUI", "classvst3_1_1_model.html#ab8589e3455c23f4d1cda67353df53301", null ],
     [ "initControl", "classvst3_1_1_model.html#aee21a74555cdd4eda94459ffba09a209", null ],

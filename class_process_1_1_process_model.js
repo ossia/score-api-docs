@@ -15,6 +15,7 @@ var class_process_1_1_process_model =
     [ "controlRemoved", "class_process_1_1_process_model.html#ae31ba175d40fa4fd8abc7db38b62ef4a", null ],
     [ "duration", "class_process_1_1_process_model.html#aafc3ce22b89700609775317e52441e3c", null ],
     [ "durationChanged", "class_process_1_1_process_model.html#a3077df173e9c90eee9e933b3095261cf", null ],
+    [ "effect", "class_process_1_1_process_model.html#a0085229a285d3ca08d65f21dbc2972f7", null ],
     [ "endStateData", "class_process_1_1_process_model.html#a9355992c7b76700248b4a978fdfbc858", null ],
     [ "externalUIVisible", "class_process_1_1_process_model.html#a308f3787f7042ffa777d12da4efe4049", null ],
     [ "flags", "class_process_1_1_process_model.html#a868ffa760b7923b685308572d81bed01", null ],

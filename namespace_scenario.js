@@ -132,6 +132,8 @@ var namespace_scenario =
     [ "CategorisedScenario", "struct_scenario_1_1_categorised_scenario.html", "struct_scenario_1_1_categorised_scenario" ],
     [ "CategorizedAddress", "struct_scenario_1_1_categorized_address.html", "struct_scenario_1_1_categorized_address" ],
     [ "CategorizedAddresses", "struct_scenario_1_1_categorized_addresses.html", "struct_scenario_1_1_categorized_addresses" ],
+    [ "CentralIntervalDisplay", "class_scenario_1_1_central_interval_display.html", "class_scenario_1_1_central_interval_display" ],
+    [ "CentralNodalDisplay", "class_scenario_1_1_central_nodal_display.html", "class_scenario_1_1_central_nodal_display" ],
     [ "ClickableLabelItem", "class_scenario_1_1_clickable_label_item.html", "class_scenario_1_1_clickable_label_item" ],
     [ "ClickOnEndEvent_Transition", "class_scenario_1_1_click_on_end_event___transition.html", "class_scenario_1_1_click_on_end_event___transition" ],
     [ "ClickOnEndState_Transition", "class_scenario_1_1_click_on_end_state___transition.html", "class_scenario_1_1_click_on_end_state___transition" ],

@@ -1,5 +1,6 @@
 var namespace_process =
 [
+    [ "ApplicationPlugin", "class_process_1_1_application_plugin.html", "class_process_1_1_application_plugin" ],
     [ "AudioInlet", "class_process_1_1_audio_inlet.html", "class_process_1_1_audio_inlet" ],
     [ "AudioOutlet", "class_process_1_1_audio_outlet.html", "class_process_1_1_audio_outlet" ],
     [ "AudioPortComboBox", "class_process_1_1_audio_port_combo_box.html", "class_process_1_1_audio_port_combo_box" ],

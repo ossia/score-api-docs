@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('score-plugin-lv2_2_l_v2_2_effect_model
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    reload();</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">const</span> QString&amp; effect()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_effectPath; }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  QString effect() const noexcept<span class="keyword"> override </span>{ <span class="keywordflow">return</span> m_effectPath; }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> setEffect(<span class="keyword">const</span> QString&amp; s) { m_effectPath = s; }</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>

@@ -110,40 +110,44 @@ $(document).ready(function(){initNavTree('_displayed_elements_tool_palette_facto
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span>IntervalModel;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span>ScenarioDocumentPresenter;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_scenario_1_1_displayed_elements_tool_palette_factory.html">   14</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_SCENARIO_EXPORT <a class="code" href="class_scenario_1_1_displayed_elements_tool_palette_factory.html">DisplayedElementsToolPaletteFactory</a></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classscore_1_1_interface_base.html">score::InterfaceBase</a></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  SCORE_INTERFACE(</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      <a class="code" href="class_scenario_1_1_displayed_elements_tool_palette_factory.html">DisplayedElementsToolPaletteFactory</a>,</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      <span class="stringliteral">&quot;0884edb9-81e4-44ff-856f-fbc772f6d683&quot;</span>)</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="class_scenario_1_1_displayed_elements_tool_palette_factory.html">DisplayedElementsToolPaletteFactory</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="structmatches.html">matches</a>(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&amp; interval) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="structmatches.html">matches</a>(</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <a class="code" href="class_scenario_1_1_scenario_document_presenter.html">ScenarioDocumentPresenter</a>&amp; pres,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&amp; interval,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      QGraphicsItem*)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="structmatches.html">matches</a>(interval);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">virtual</span> std::unique_ptr&lt;GraphicsSceneToolPalette&gt; make(</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <a class="code" href="class_scenario_1_1_scenario_document_presenter.html">ScenarioDocumentPresenter</a>&amp; pres,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&amp; interval,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      QGraphicsItem* parent)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      = 0;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>DisplayedElementsPresenter;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_scenario_1_1_displayed_elements_tool_palette_factory.html">   15</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_SCENARIO_EXPORT <a class="code" href="class_scenario_1_1_displayed_elements_tool_palette_factory.html">DisplayedElementsToolPaletteFactory</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classscore_1_1_interface_base.html">score::InterfaceBase</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  SCORE_INTERFACE(</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      <a class="code" href="class_scenario_1_1_displayed_elements_tool_palette_factory.html">DisplayedElementsToolPaletteFactory</a>,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      <span class="stringliteral">&quot;0884edb9-81e4-44ff-856f-fbc772f6d683&quot;</span>)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="class_scenario_1_1_displayed_elements_tool_palette_factory.html">DisplayedElementsToolPaletteFactory</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="structmatches.html">matches</a>(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&amp; interval) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="structmatches.html">matches</a>(</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      <a class="code" href="class_scenario_1_1_scenario_document_presenter.html">ScenarioDocumentPresenter</a>&amp; pres,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      <a class="code" href="class_scenario_1_1_displayed_elements_presenter.html">DisplayedElementsPresenter</a>&amp; presenters,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&amp; interval,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      QGraphicsItem*)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="structmatches.html">matches</a>(interval);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">virtual</span> std::unique_ptr&lt;GraphicsSceneToolPalette&gt; make(</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <a class="code" href="class_scenario_1_1_scenario_document_presenter.html">ScenarioDocumentPresenter</a>&amp; pres,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <a class="code" href="class_scenario_1_1_displayed_elements_presenter.html">DisplayedElementsPresenter</a>&amp; presenters,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&amp; interval,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      QGraphicsItem* parent)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      = 0;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>
 <div class="ttc" id="aclassscore_1_1_interface_base_html"><div class="ttname"><a href="classscore_1_1_interface_base.html">score::InterfaceBase</a></div><div class="ttdoc">Base class for plug-in interfaces.</div><div class="ttdef"><b>Definition:</b> Interface.hpp:51</div></div>
 <div class="ttc" id="astructmatches_html"><div class="ttname"><a href="structmatches.html">matches</a></div><div class="ttdef"><b>Definition:</b> ObjectMatches.hpp:5</div></div>
-<div class="ttc" id="aclass_scenario_1_1_displayed_elements_tool_palette_factory_html"><div class="ttname"><a href="class_scenario_1_1_displayed_elements_tool_palette_factory.html">Scenario::DisplayedElementsToolPaletteFactory</a></div><div class="ttdef"><b>Definition:</b> DisplayedElementsToolPaletteFactory.hpp:14</div></div>
-<div class="ttc" id="aclass_scenario_1_1_scenario_document_presenter_html"><div class="ttname"><a href="class_scenario_1_1_scenario_document_presenter.html">Scenario::ScenarioDocumentPresenter</a></div><div class="ttdoc">The ScenarioDocumentPresenter class.</div><div class="ttdef"><b>Definition:</b> ScenarioDocumentPresenter.hpp:54</div></div>
+<div class="ttc" id="aclass_scenario_1_1_displayed_elements_tool_palette_factory_html"><div class="ttname"><a href="class_scenario_1_1_displayed_elements_tool_palette_factory.html">Scenario::DisplayedElementsToolPaletteFactory</a></div><div class="ttdef"><b>Definition:</b> DisplayedElementsToolPaletteFactory.hpp:15</div></div>
+<div class="ttc" id="aclass_scenario_1_1_displayed_elements_presenter_html"><div class="ttname"><a href="class_scenario_1_1_displayed_elements_presenter.html">Scenario::DisplayedElementsPresenter</a></div><div class="ttdef"><b>Definition:</b> DisplayedElementsPresenter.hpp:22</div></div>
+<div class="ttc" id="aclass_scenario_1_1_scenario_document_presenter_html"><div class="ttname"><a href="class_scenario_1_1_scenario_document_presenter.html">Scenario::ScenarioDocumentPresenter</a></div><div class="ttdoc">The ScenarioDocumentPresenter class.</div><div class="ttdef"><b>Definition:</b> ScenarioDocumentPresenter.hpp:52</div></div>
 <div class="ttc" id="aclass_scenario_1_1_interval_model_html"><div class="ttname"><a href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a></div><div class="ttdef"><b>Definition:</b> IntervalModel.hpp:48</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

@@ -4,6 +4,7 @@ var classvst_1_1_model =
     [ "~Model", "classvst_1_1_model.html#aad58f2326f6ea4e7e5fa4c26e114155d", null ],
     [ "Model", "classvst_1_1_model.html#a040142fa4552178093aa3da6f0a28378", null ],
     [ "dispatch", "classvst_1_1_model.html#aac1dc2438fa71bed939fb8fb11f9e5af", null ],
+    [ "effect", "classvst_1_1_model.html#aded538a46c018a02a1f5fc202ac61e1e", null ],
     [ "getControl", "classvst_1_1_model.html#acdf4ef3f57556a8ab6e72390863f0b5b", null ],
     [ "hasExternalUI", "classvst_1_1_model.html#ab8589e3455c23f4d1cda67353df53301", null ],
     [ "on_addControl", "classvst_1_1_model.html#ad96f1eca17e1c063221eacc5378a766c", null ],

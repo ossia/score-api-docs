@@ -198,17 +198,18 @@ $(document).ready(function(){initNavTree('_pd_process_8hpp_source.html',''); ini
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  PROPERTY(QString, script READ script WRITE setScript NOTIFY scriptChanged)</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  std::shared_ptr&lt;Instance&gt; m_instance;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">void</span> loadPreset(<span class="keyword">const</span> <a class="code" href="struct_process_1_1_preset.html">Process::Preset</a>&amp; preset) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <a class="code" href="struct_process_1_1_preset.html">Process::Preset</a> savePreset() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">void</span> init();</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  QString m_script;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <a class="code" href="struct_pd_1_1_patch_spec.html">PatchSpec</a> m_spec;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordtype">int</span> m_audioInputs{0};</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordtype">int</span> m_audioOutputs{0};</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">bool</span> m_midiInput{};</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordtype">bool</span> m_midiOutput{};</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;};</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  QString effect() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">void</span> loadPreset(<span class="keyword">const</span> <a class="code" href="struct_process_1_1_preset.html">Process::Preset</a>&amp; preset) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <a class="code" href="struct_process_1_1_preset.html">Process::Preset</a> savePreset() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">void</span> init();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  QString m_script;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <a class="code" href="struct_pd_1_1_patch_spec.html">PatchSpec</a> m_spec;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordtype">int</span> m_audioInputs{0};</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">int</span> m_audioOutputs{0};</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordtype">bool</span> m_midiInput{};</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordtype">bool</span> m_midiOutput{};</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;};</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astruct_pd_1_1_patch_spec_1_1_control_html"><div class="ttname"><a href="struct_pd_1_1_patch_spec_1_1_control.html">Pd::PatchSpec::Control</a></div><div class="ttdef"><b>Definition:</b> PdProcess.hpp:23</div></div>
