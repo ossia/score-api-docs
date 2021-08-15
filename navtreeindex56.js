@@ -199,7 +199,7 @@ var NAVTREEINDEX56 =
 "struct_process_1_1_magnetic_info.html#a8150ac3d0a59d9a38182095611e8caa3":[12,0,37,49,3],
 "struct_process_1_1_magnetic_info.html#a96f31e2800f223f03e5043439aa899c4":[12,0,37,49,1],
 "struct_process_1_1_multi_script_dialog_1_1_editor_tab.html":[12,0,37,55,0],
-"struct_process_1_1_multi_script_dialog_1_1_editor_tab.html#a4fc533e5eee1a0e69ced41c296b351e3":[12,0,37,55,0,0],
+"struct_process_1_1_multi_script_dialog_1_1_editor_tab.html#aff1d3f9585e815f9d0a8a3d272993c97":[12,0,37,55,0,0],
 "struct_process_1_1_pixmaps.html":[12,0,37,60],
 "struct_process_1_1_pixmaps.html#a051f1b896236ce0c9d19e1300a4296d2":[12,0,37,60,16],
 "struct_process_1_1_pixmaps.html#a25ae2768266b8dea0499fabe0705a5dc":[12,0,37,60,4],
