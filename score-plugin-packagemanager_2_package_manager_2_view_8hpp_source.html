@@ -141,20 +141,23 @@ $(document).ready(function(){initNavTree('score-plugin-packagemanager_2_package_
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> install();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">void</span> on_message(QNetworkReply* rep);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  QTabWidget* m_widget = <span class="keyword">new</span> QTabWidget;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  QTableView* m_addonsOnSystem{<span class="keyword">new</span> QTableView};</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  QTableView* m_remoteAddons{<span class="keyword">new</span> QTableView};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  QPushButton* m_refresh{<span class="keyword">new</span> QPushButton{tr(<span class="stringliteral">&quot;Refresh&quot;</span>)}};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  QPushButton* m_install{<span class="keyword">new</span> QPushButton{tr(<span class="stringliteral">&quot;Install&quot;</span>)}};</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  QProgressBar* m_progress{<span class="keyword">new</span> QProgressBar};</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  QNetworkAccessManager mgr;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> on_packageInstallSuccess(<span class="keyword">const</span> <a class="code" href="struct_p_m_1_1_remote_package.html">RemotePackage</a>&amp; addon, <span class="keyword">const</span> QDir&amp; destination, <span class="keyword">const</span> std::vector&lt;QString&gt;&amp; res);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> on_packageInstallFailure(<span class="keyword">const</span> <a class="code" href="struct_p_m_1_1_remote_package.html">RemotePackage</a>&amp; addon);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  QTabWidget* m_widget = <span class="keyword">new</span> QTabWidget;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  QTableView* m_addonsOnSystem{<span class="keyword">new</span> QTableView};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  QTableView* m_remoteAddons{<span class="keyword">new</span> QTableView};</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  QPushButton* m_refresh{<span class="keyword">new</span> QPushButton{tr(<span class="stringliteral">&quot;Refresh&quot;</span>)}};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  QPushButton* m_install{<span class="keyword">new</span> QPushButton{tr(<span class="stringliteral">&quot;Install&quot;</span>)}};</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">int</span> m_addonsToRetrieve = 0;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  QProgressBar* m_progress{<span class="keyword">new</span> QProgressBar};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  QNetworkAccessManager mgr;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">int</span> m_addonsToRetrieve = 0;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassscore_1_1_settings_delegate_view_html"><div class="ttname"><a href="classscore_1_1_settings_delegate_view.html">score::SettingsDelegateView</a></div><div class="ttdef"><b>Definition:</b> ProjectSettingsFactory.hpp:14</div></div>

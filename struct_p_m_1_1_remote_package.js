@@ -15,5 +15,5 @@ var struct_p_m_1_1_remote_package =
     [ "smallImagePath", "struct_p_m_1_1_remote_package.html#af61dbd63611bd60b6b66bf2125471e25", null ],
     [ "target", "struct_p_m_1_1_remote_package.html#abc9d8a2783acdf6c91cf56f6360684ef", null ],
     [ "url", "struct_p_m_1_1_remote_package.html#afedd2fa5bba50bfe2cede2364203b6cf", null ],
-    [ "version", "struct_p_m_1_1_remote_package.html#a658345d8e719cdb2a2df121779377bdc", null ]
+    [ "version", "struct_p_m_1_1_remote_package.html#afca61b10ca456a3d61de41b5e166c0aa", null ]
 ];
