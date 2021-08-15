@@ -119,37 +119,27 @@ $(document).ready(function(){initNavTree('_load_cables_8hpp_source.html',''); in
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <a class="code" href="class_dataflow_1_1_load_cables.html">LoadCables</a>(<span class="keyword">const</span> <a class="code" href="class_object_path.html">ObjectPath</a>&amp; p, <span class="keyword">const</span> SerializedCables&amp; c)</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      : m_cables{c}</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; c : m_cables)</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      c.second.source.unsafePath().vec().insert(</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;          c.second.source.unsafePath().vec().begin(),</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;          p.vec().begin(),</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;          p.vec().end());</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      c.second.sink.unsafePath().vec().insert(</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;          c.second.sink.unsafePath().vec().begin(),</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;          p.vec().begin(),</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;          p.vec().end());</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    Dataflow::unstripCables(p, m_cables);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">void</span> undo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx)<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    Dataflow::removeCables(m_cables, ctx);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> redo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx)<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    Dataflow::restoreCables(m_cables, ctx);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  }</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">void</span> undo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx)<span class="keyword"> const override</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    Dataflow::removeCables(m_cables, ctx);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">void</span> redo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx)<span class="keyword"> const override</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    Dataflow::restoreCables(m_cables, ctx);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> serializeImpl(<a class="code" href="struct_data_stream_input.html">DataStreamInput</a>&amp; s)<span class="keyword"> const override </span>{ s &lt;&lt; m_cables; }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">void</span> deserializeImpl(<a class="code" href="struct_data_stream_output.html">DataStreamOutput</a>&amp; s)<span class="keyword"> override </span>{ s &gt;&gt; m_cables; }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  SerializedCables m_cables;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">void</span> serializeImpl(<a class="code" href="struct_data_stream_input.html">DataStreamInput</a>&amp; s)<span class="keyword"> const override </span>{ s &lt;&lt; m_cables; }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">void</span> deserializeImpl(<a class="code" href="struct_data_stream_output.html">DataStreamOutput</a>&amp; s)<span class="keyword"> override </span>{ s &gt;&gt; m_cables; }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  SerializedCables m_cables;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:15</div></div>

@@ -1,5 +1,11 @@
 var NAVTREEINDEX57 =
 {
+"struct_process_1_1_process_identifier.html#a854a9823a7b27246dc7c23e1a655e2a0":[12,0,37,75,4],
+"struct_process_1_1_process_identifier.html#af892a2e223c3030c1216863db6e2fcd3":[12,0,37,75,3],
+"struct_process_1_1_process_state_data.html":[12,0,37,80],
+"struct_process_1_1_process_state_data.html#a438743446d0d3abfbab7f9e378835bbc":[12,0,37,80,1],
+"struct_process_1_1_process_state_data.html#ac67cf43ab0f0fa3ad3ada5545069b394":[12,0,37,80,0],
+"struct_process_1_1_state_node_data.html":[12,0,37,84],
 "struct_process_1_1_state_node_data.html#a17f5eabca3a00a8f92c5b49eaf23f2e5":[12,0,37,84,1],
 "struct_process_1_1_state_node_data.html#a8288d396c9f42c9df52ad4cc34aafe03":[12,0,37,84,2],
 "struct_process_1_1_state_node_data.html#a8b8b4e25cad8ece3de6caff2c69faf81":[12,0,37,84,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX57 =
 "struct_q_meta_type_id_3_01_j_s_1_1_audio_outlet_01_5_01_4.html":[12,0,233],
 "struct_q_meta_type_id_3_01_j_s_1_1_audio_outlet_01_5_01_4.html#a7b68644834e1559ee656ad5923fc39a4a5cee577d92176812066ddb2f47081af5":[12,0,233,0],
 "struct_q_meta_type_id_3_01_j_s_1_1_midi_inlet_01_5_01_4.html":[12,0,234],
-"struct_q_meta_type_id_3_01_j_s_1_1_midi_inlet_01_5_01_4.html#a301d393dc90fcb8f8b389c09a423aa3da4f009d71e68398c6fc7b6018f5bc333b":[12,0,234,0],
-"struct_q_meta_type_id_3_01_j_s_1_1_midi_message_01_4.html":[12,0,235],
-"struct_q_meta_type_id_3_01_j_s_1_1_midi_message_01_4.html#a874f39552b16f2dea164d6f26547fc40a0dc27343fee03ba64adf7cbffc126ba7":[12,0,235,0],
-"struct_q_meta_type_id_3_01_j_s_1_1_midi_outlet_01_5_01_4.html":[12,0,236],
-"struct_q_meta_type_id_3_01_j_s_1_1_midi_outlet_01_5_01_4.html#a61675143920a9c57655ae594084794c4a0bd4f980ba5fd221d5367e38c40f713f":[12,0,236,0],
-"struct_q_meta_type_id_3_01_j_s_1_1_value_inlet_01_5_01_4.html":[12,0,237],
-"struct_q_meta_type_id_3_01_j_s_1_1_value_inlet_01_5_01_4.html#ae8f318451401e6fe54c2d54e9f04c686a43031649c5c174f7aae6164b6df0a4fe":[12,0,237,0]
+"struct_q_meta_type_id_3_01_j_s_1_1_midi_inlet_01_5_01_4.html#a301d393dc90fcb8f8b389c09a423aa3da4f009d71e68398c6fc7b6018f5bc333b":[12,0,234,0]
 };

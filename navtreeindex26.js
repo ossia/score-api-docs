@@ -1,5 +1,11 @@
 var NAVTREEINDEX26 =
 {
+"class_protocols_1_1_websocket_client_widget.html":[12,0,38,62],
+"class_protocols_1_1_websocket_client_widget.html#a43a39b558da096ae636c25bc44e9ce79":[12,0,38,62,1],
+"class_protocols_1_1_websocket_client_widget.html#ab552fa19082414b9c16eb945778eb42c":[12,0,38,62,2],
+"class_protocols_1_1_websocket_client_widget.html#adc5a45775f3ca39d3b6f00e7b90d46ff":[12,0,38,62,0],
+"class_protocols_1_1_websocket_server_widget.html":[12,0,38,63],
+"class_protocols_1_1_websocket_server_widget.html#a0f8897f3e3bb0aa3594a59c92219c78e":[12,0,38,63,1],
 "class_protocols_1_1_websocket_server_widget.html#a6305bc8f432c342fe0e9abf333e9fcbe":[12,0,38,63,0],
 "class_protocols_1_1_websocket_server_widget.html#aeaf90e350f328f61a7e144375a4b6574":[12,0,38,63,2],
 "class_protocols_1_1_wiimote_device.html":[12,0,38,64],
@@ -243,11 +249,5 @@ var NAVTREEINDEX26 =
 "class_scenario_1_1_c_s_p_coherency_checker_interface.html#ae592ad640157425483fcd1e1a37440ff":[12,0,43,43,1],
 "class_scenario_1_1_c_s_p_coherency_checker_list.html":[12,0,43,44],
 "class_scenario_1_1_c_s_p_coherency_checker_list.html#a97c263dea263a1cb887f333774baafe5":[12,0,43,44,0],
-"class_scenario_1_1_central_interval_display.html":[12,0,43,17],
-"class_scenario_1_1_central_interval_display.html#a1fea0bbfb4264e7ac53fbdbd23eff53f":[12,0,43,17,0],
-"class_scenario_1_1_central_interval_display.html#a21070cf4dfd51b16e84128a539f1d566":[12,0,43,17,1],
-"class_scenario_1_1_central_interval_display.html#a3d82d1f634490c76b28df9766b41ec5c":[12,0,43,17,6],
-"class_scenario_1_1_central_interval_display.html#aab7c5e006be201c660f253ab4a7674ee":[12,0,43,17,3],
-"class_scenario_1_1_central_interval_display.html#aba3daae5f8eebee9f8028f04aa3828cc":[12,0,43,17,5],
-"class_scenario_1_1_central_interval_display.html#abc75267a9b9f69df769f86dcdd638860":[12,0,43,17,2]
+"class_scenario_1_1_central_interval_display.html":[12,0,43,17]
 };

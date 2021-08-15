@@ -1,5 +1,11 @@
 var NAVTREEINDEX58 =
 {
+"struct_q_meta_type_id_3_01_j_s_1_1_midi_message_01_4.html":[12,0,235],
+"struct_q_meta_type_id_3_01_j_s_1_1_midi_message_01_4.html#a874f39552b16f2dea164d6f26547fc40a0dc27343fee03ba64adf7cbffc126ba7":[12,0,235,0],
+"struct_q_meta_type_id_3_01_j_s_1_1_midi_outlet_01_5_01_4.html":[12,0,236],
+"struct_q_meta_type_id_3_01_j_s_1_1_midi_outlet_01_5_01_4.html#a61675143920a9c57655ae594084794c4a0bd4f980ba5fd221d5367e38c40f713f":[12,0,236,0],
+"struct_q_meta_type_id_3_01_j_s_1_1_value_inlet_01_5_01_4.html":[12,0,237],
+"struct_q_meta_type_id_3_01_j_s_1_1_value_inlet_01_5_01_4.html#ae8f318451401e6fe54c2d54e9f04c686a43031649c5c174f7aae6164b6df0a4fe":[12,0,237,0],
 "struct_q_meta_type_id_3_01_j_s_1_1_value_outlet_01_5_01_4.html":[12,0,238],
 "struct_q_meta_type_id_3_01_j_s_1_1_value_outlet_01_5_01_4.html#a4de813cf3f9fecda4669f0cd86d33eddad3f78da2203ef53de5b4a9cc93da74e3":[12,0,238,0],
 "struct_q_meta_type_id_3_01_j_s_o_n_reader_01_5_01_4.html":[12,0,239],
@@ -243,11 +249,5 @@ var NAVTREEINDEX58 =
 "struct_remote_control_1_1_handler.html#a6118074f96d3ae9673fa16ddad211f55":[12,0,41,5,3],
 "struct_remote_control_1_1_handler.html#a66b94f0a7af5d39dcd92b168d0a6d047":[12,0,41,5,1],
 "struct_remote_control_1_1_handler.html#a6ef6ed429ab58f16b329c7501a0bca14":[12,0,41,5,5],
-"struct_remote_control_1_1_handler.html#ac54b733901b3f1e6b532129869fbb17e":[12,0,41,5,0],
-"struct_remote_control_1_1_interval_messages.html":[12,0,41,8],
-"struct_remote_control_1_1_interval_messages.html#a0c717d37df776449e1163a3f323a9638":[12,0,41,8,4],
-"struct_remote_control_1_1_interval_messages.html#a0e4c57686a543734dc83c989119c883f":[12,0,41,8,2],
-"struct_remote_control_1_1_interval_messages.html#a4f8c728d49c43fd6318aad3b7dd7eb44":[12,0,41,8,3],
-"struct_remote_control_1_1_interval_messages.html#a980f8351462a1f20553d685777ed5393":[12,0,41,8,1],
-"struct_remote_control_1_1_interval_messages.html#a9efcaaaa1161c19c6abf3d5714c1300b":[12,0,41,8,0]
+"struct_remote_control_1_1_handler.html#ac54b733901b3f1e6b532129869fbb17e":[12,0,41,5,0]
 };
