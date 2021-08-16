@@ -47,7 +47,8 @@ var NAVTREEINDEX55 =
 "struct_midi_1_1_midi_track.html":[12,0,29,7],
 "struct_midi_1_1_midi_track.html#a39bcccac3575223410818e1d15ffae3e":[12,0,29,7,2],
 "struct_midi_1_1_midi_track.html#a6014e7a3c9c88aec0d3f8f0ba60d5d51":[12,0,29,7,1],
-"struct_midi_1_1_midi_track.html#a8391241fd2f5a41237b748c466b6c5bc":[12,0,29,7,3],
+"struct_midi_1_1_midi_track.html#a6b865b015076826d0c32b0b8e28268ef":[12,0,29,7,3],
+"struct_midi_1_1_midi_track.html#a8391241fd2f5a41237b748c466b6c5bc":[12,0,29,7,4],
 "struct_midi_1_1_midi_track_1_1_midi_song.html":[12,0,29,7,0],
 "struct_midi_1_1_midi_track_1_1_midi_song.html#a153e6a7e6ed3ddf4f45cd17e397d0a54":[12,0,29,7,0,2],
 "struct_midi_1_1_midi_track_1_1_midi_song.html#a5c269848f73fcfb2df3b679ce966db7e":[12,0,29,7,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX55 =
 "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a347b7d62230bc14ee1991fb600203d49":[12,0,32,16,0,1,3],
 "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a4f069fd52bd0659c8ad45c47e4e970fc":[12,0,32,16,0,1,12],
 "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a63c4cdabbe50eaaf1d07fe137994e8b6":[12,0,32,16,0,1,9],
-"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a7ec0709fcfa0c0ada73da5ca9afc4d89":[12,0,32,16,0,1,10],
-"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a9be26f6347fc818f9f27be0f4c8e5391":[12,0,32,16,0,1,4]
+"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a7ec0709fcfa0c0ada73da5ca9afc4d89":[12,0,32,16,0,1,10]
 };
