@@ -1,5 +1,6 @@
 var NAVTREEINDEX49 =
 {
+"struct_audio_1_1_port_audio_card.html#a6b7473ba286f8bea401a5bc5bb2a8765":[12,0,0,8,0],
 "struct_audio_1_1_port_audio_card.html#a882846fcf1520f147f8689c7f39a4577":[12,0,0,8,7],
 "struct_audio_1_1_port_audio_card.html#a95713a0efd0a42f962ac5b305584c2de":[12,0,0,8,8],
 "struct_audio_1_1_port_audio_card.html#a95b58d385230c69a64fb1206b6df1d36":[12,0,0,8,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX49 =
 "struct_control_1_1_out_control.html#a2243c702da842e85ef7d120628e95f21":[12,0,3,34,4],
 "struct_control_1_1_out_control.html#a23e1e2d15b68adf56098c9eeb30b69b0":[12,0,3,34,5],
 "struct_control_1_1_out_control.html#a2ffc8977d3b67db3e34c3b62362ed9ac":[12,0,3,34,3],
-"struct_control_1_1_out_control.html#a316c9c1a608ed15c972d69096a336016":[12,0,3,34,1],
-"struct_control_1_1_out_control.html#a422de713dcffdb4a2d9cd6ea98bd8426":[12,0,3,34,0]
+"struct_control_1_1_out_control.html#a316c9c1a608ed15c972d69096a336016":[12,0,3,34,1]
 };

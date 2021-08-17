@@ -1,5 +1,6 @@
 var NAVTREEINDEX47 =
 {
+"classvst3_1_1param__queue.html":[12,0,54,11],
 "classvst3_1_1param__queue.html#a01d089778973465d985f88afe1c6333c":[12,0,54,11,5],
 "classvst3_1_1param__queue.html#a0c44cf480ccebd6b45fc2f5b712c8365":[12,0,54,11,0],
 "classvst3_1_1param__queue.html#a12e80c7be6b01e84c9c1eeb075afd23e":[12,0,54,11,3],
@@ -186,15 +187,15 @@ var NAVTREEINDEX47 =
 "data_structures_8hpp_source.html":[13,0,264],
 "element_finding_helper_8hpp_source.html":[13,0,358],
 "files.html":[13,0],
-"functions.html":[12,3,0],
 "functions.html":[12,3,0,0],
+"functions.html":[12,3,0],
 "functions_b.html":[12,3,0,1],
 "functions_c.html":[12,3,0,2],
 "functions_d.html":[12,3,0,3],
 "functions_e.html":[12,3,0,4],
 "functions_f.html":[12,3,0,5],
-"functions_func.html":[12,3,1],
 "functions_func.html":[12,3,1,0],
+"functions_func.html":[12,3,1],
 "functions_func_c.html":[12,3,1,1],
 "functions_func_d.html":[12,3,1,2],
 "functions_func_e.html":[12,3,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX47 =
 "lib_2score_2widgets_2_control_widgets_8hpp_source.html":[13,0,202],
 "lv2__atom__helpers_8hpp_source.html":[13,0,625],
 "models_8hpp_source.html":[13,0,737],
-"mvp_8hpp_source.html":[13,0,761],
-"namespace_automation.html":[11,0,0]
+"mvp_8hpp_source.html":[13,0,761]
 };

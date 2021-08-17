@@ -1,5 +1,6 @@
 var NAVTREEINDEX25 =
 {
+"class_process_1_1_value_inlet.html#a469fbb3edc39a91b2572127dd57a21b0":[12,0,37,87,3],
 "class_process_1_1_value_inlet.html#a79ae01b3ef892bddae22d09242e82b8b":[12,0,37,87,0],
 "class_process_1_1_value_inlet.html#aacd1cf600576925e1d80ea24364c5582":[12,0,37,87,2],
 "class_process_1_1_value_inlet.html#ad8718ee1f89685c7897e98b1b24d8e65":[12,0,37,87,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX25 =
 "class_protocols_1_1_w_s_device.html":[12,0,38,68],
 "class_protocols_1_1_w_s_device.html#a219685c0902208342a095b5bb2e30eb8":[12,0,38,68,1],
 "class_protocols_1_1_w_s_device.html#aecc3a74898002639b1f0b7f22c6d7743":[12,0,38,68,0],
-"class_protocols_1_1_w_s_protocol_factory.html":[12,0,38,69],
-"class_protocols_1_1_w_s_protocol_settings_widget.html":[12,0,38,70]
+"class_protocols_1_1_w_s_protocol_factory.html":[12,0,38,69]
 };

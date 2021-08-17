@@ -1,5 +1,6 @@
 var NAVTREEINDEX48 =
 {
+"namespace_automation.html":[11,0,0],
 "namespace_automation.html":[12,0,1],
 "namespace_curve.html":[12,0,5],
 "namespace_curve.html":[11,0,1],
@@ -10,15 +11,15 @@ var NAVTREEINDEX48 =
 "namespace_engine_1_1_network.html":[11,0,3,0],
 "namespace_execution.html":[11,0,4],
 "namespace_execution.html":[12,0,9],
-"namespace_gfx.html":[11,0,5],
 "namespace_gfx.html":[12,0,15],
+"namespace_gfx.html":[11,0,5],
 "namespace_inspector.html":[12,0,17],
 "namespace_inspector.html":[11,0,6],
 "namespace_local_tree.html":[11,0,7],
 "namespace_local_tree.html":[12,0,24],
 "namespace_plugin_loader.html":[11,0,8],
-"namespace_process.html":[12,0,37],
 "namespace_process.html":[11,0,9],
+"namespace_process.html":[12,0,37],
 "namespace_scenario.html":[12,0,43],
 "namespace_scenario.html":[11,0,10],
 "namespace_state.html":[12,0,48],
@@ -248,6 +249,5 @@ var NAVTREEINDEX48 =
 "struct_audio_1_1_audio_preview_executor_1_1sound.html#ad6c589f3e84110b16ede0b9bef319f6b":[12,0,0,5,0,0],
 "struct_audio_1_1_port_audio_card.html":[12,0,0,8],
 "struct_audio_1_1_port_audio_card.html#a09af1e30d4505e5307c80c7e7d29ac81":[12,0,0,8,9],
-"struct_audio_1_1_port_audio_card.html#a1cd1c603bb38bbac0653a9d30cb761e5":[12,0,0,8,5],
-"struct_audio_1_1_port_audio_card.html#a6b7473ba286f8bea401a5bc5bb2a8765":[12,0,0,8,0]
+"struct_audio_1_1_port_audio_card.html#a1cd1c603bb38bbac0653a9d30cb761e5":[12,0,0,8,5]
 };

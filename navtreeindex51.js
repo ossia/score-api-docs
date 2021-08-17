@@ -1,5 +1,6 @@
 var NAVTREEINDEX51 =
 {
+"struct_dataflow_1_1minmax.html#a872de9cb46bd314494fb5aa5982f5412":[12,0,6,29,0],
 "struct_dataflow_1_1minmax.html#a9e0b9dc2c741acb132ff922d16fb562a":[12,0,6,29,1],
 "struct_default_rollback_strategy.html":[12,0,97],
 "struct_device_1_1_address_settings.html":[12,0,7,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX51 =
 "struct_explorer_1_1_settings_1_1_device_log_level.html#a0a76f616bd01a706cf5854423ac49c08":[12,0,10,2,0,1],
 "struct_explorer_1_1_settings_1_1_device_log_level.html#a9735da91ea3ca65ce9a862e9ae2528e2":[12,0,10,2,0,2],
 "struct_explorer_1_1_settings_1_1_device_log_level.html#a9acdf32334b76523f4a92fb0f0a46991":[12,0,10,2,0,0],
-"struct_explorer_1_1_settings_1_1_device_log_level.html#af2c0672280b8aedfa8d1088f3a6a5580":[12,0,10,2,0,3],
-"struct_explorer_1_1make__dataspace.html":[12,0,10,41]
+"struct_explorer_1_1_settings_1_1_device_log_level.html#af2c0672280b8aedfa8d1088f3a6a5580":[12,0,10,2,0,3]
 };
