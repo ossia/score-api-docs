@@ -1,5 +1,6 @@
 var NAVTREEINDEX47 =
 {
+"classvst3_1_1param__changes.html#ac146072da0abd9f4dba6d03e135784ef":[12,0,54,10,3],
 "classvst3_1_1param__queue.html":[12,0,54,11],
 "classvst3_1_1param__queue.html#a01d089778973465d985f88afe1c6333c":[12,0,54,11,5],
 "classvst3_1_1param__queue.html#a0c44cf480ccebd6b45fc2f5b712c8365":[12,0,54,11,0],
@@ -194,8 +195,8 @@ var NAVTREEINDEX47 =
 "functions_d.html":[12,3,0,3],
 "functions_e.html":[12,3,0,4],
 "functions_f.html":[12,3,0,5],
-"functions_func.html":[12,3,1,0],
 "functions_func.html":[12,3,1],
+"functions_func.html":[12,3,1,0],
 "functions_func_c.html":[12,3,1,1],
 "functions_func_d.html":[12,3,1,2],
 "functions_func_e.html":[12,3,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX47 =
 "lib_2score_2tools_2_metadata_8hpp_source.html":[13,0,662],
 "lib_2score_2widgets_2_control_widgets_8hpp_source.html":[13,0,202],
 "lv2__atom__helpers_8hpp_source.html":[13,0,625],
-"models_8hpp_source.html":[13,0,737],
-"mvp_8hpp_source.html":[13,0,761]
+"models_8hpp_source.html":[13,0,737]
 };

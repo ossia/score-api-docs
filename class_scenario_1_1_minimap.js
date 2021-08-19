@@ -4,6 +4,7 @@ var class_scenario_1_1_minimap =
     [ "leftHandle", "class_scenario_1_1_minimap.html#a19f93b700edbde3f0709d38ef30af56e", null ],
     [ "modifyHandles", "class_scenario_1_1_minimap.html#aef5fd6a290d1e4b5e4aaa52676568c6c", null ],
     [ "rescale", "class_scenario_1_1_minimap.html#ae0934076b546dac25a2aff6a0abd083a", null ],
+    [ "restoreHandles", "class_scenario_1_1_minimap.html#ad48a20f0130601152eb2ab099861553b", null ],
     [ "rightHandle", "class_scenario_1_1_minimap.html#a24c7140cc58005150655b8dc9b8e9934", null ],
     [ "setHandles", "class_scenario_1_1_minimap.html#a428a25fbbbc9338dea7c78834a669d1b", null ],
     [ "setLargeView", "class_scenario_1_1_minimap.html#a468f7b7c19c9c03b909ad886ee673144", null ],
