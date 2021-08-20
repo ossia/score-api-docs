@@ -74,7 +74,7 @@ var searchData=
   ['dll_474',['DLL',['../class_d_l_l.html',1,'']]],
   ['document_475',['Document',['../classscore_1_1_document.html',1,'score::Document'],['../classscore_1_1_panel_delegate.html#aece2f08d7c2418a7ad2db0a596d5bbcf',1,'score::PanelDelegate::document()']]],
   ['documentactioncondition_476',['DocumentActionCondition',['../structscore_1_1_document_action_condition.html',1,'score']]],
-  ['documentbackupmanager_477',['DocumentBackupManager',['../classscore_1_1_document_backup_manager.html',1,'score']]],
+  ['documentbackupmanager_477',['DocumentBackupManager',['../classscore_1_1_document_backup_manager.html',1,'score::DocumentBackupManager'],['../classscore_1_1_document_backup_manager.html#a73ec4b51126b8eceb6417abce6c0bdbd',1,'score::DocumentBackupManager::DocumentBackupManager(const QByteArray &amp;data, Document &amp;doc)'],['../classscore_1_1_document_backup_manager.html#a3ce83b417bd5675790184b16772a0b56',1,'score::DocumentBackupManager::DocumentBackupManager(const score::RestorableDocument &amp;prev, Document &amp;doc)']]],
   ['documentbackups_478',['DocumentBackups',['../structscore_1_1_document_backups.html',1,'score']]],
   ['documentbuilder_479',['DocumentBuilder',['../classscore_1_1_document_builder.html',1,'score']]],
   ['documentcontext_480',['DocumentContext',['../structscore_1_1_document_context.html',1,'score']]],

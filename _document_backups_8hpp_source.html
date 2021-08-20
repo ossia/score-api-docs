@@ -113,26 +113,28 @@ $(document).ready(function(){initNavTree('_document_backups_8hpp_source.html',''
 <div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structscore_1_1_restorable_document.html">   13</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structscore_1_1_restorable_document.html">RestorableDocument</a></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  QString filePath;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  QByteArray doc;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  QByteArray commands;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structscore_1_1_document_backups.html">   33</a></span>&#160;<span class="keyword">struct </span>SCORE_LIB_BASE_EXPORT <a class="code" href="structscore_1_1_document_backups.html">DocumentBackups</a></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="comment">// Check if there are available backup files.</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> canRestoreDocuments();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="comment">// First is the data, second is the commands.</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">static</span> std::vector&lt;RestorableDocument&gt; restorableDocuments();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="comment">// Removes all the on-disk files that contains document backups.</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> clear();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  QString docPath;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  QString commandsPath;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  QByteArray doc;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  QByteArray commands;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structscore_1_1_document_backups.html">   35</a></span>&#160;<span class="keyword">struct </span>SCORE_LIB_BASE_EXPORT <a class="code" href="structscore_1_1_document_backups.html">DocumentBackups</a></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="comment">// Check if there are available backup files.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> canRestoreDocuments();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="comment">// First is the data, second is the commands.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">static</span> std::vector&lt;RestorableDocument&gt; restorableDocuments();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="comment">// Removes all the on-disk files that contains document backups.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> clear();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructscore_1_1_restorable_document_html"><div class="ttname"><a href="structscore_1_1_restorable_document.html">score::RestorableDocument</a></div><div class="ttdef"><b>Definition:</b> DocumentBackups.hpp:13</div></div>
-<div class="ttc" id="astructscore_1_1_document_backups_html"><div class="ttname"><a href="structscore_1_1_document_backups.html">score::DocumentBackups</a></div><div class="ttdoc">Manages the list of documents that can be restored after a crash.</div><div class="ttdef"><b>Definition:</b> DocumentBackups.hpp:33</div></div>
+<div class="ttc" id="astructscore_1_1_document_backups_html"><div class="ttname"><a href="structscore_1_1_document_backups.html">score::DocumentBackups</a></div><div class="ttdoc">Manages the list of documents that can be restored after a crash.</div><div class="ttdef"><b>Definition:</b> DocumentBackups.hpp:35</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:77</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

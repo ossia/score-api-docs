@@ -1,5 +1,7 @@
 var NAVTREEINDEX62 =
 {
+"struct_t_serializer_3_01_j_s_o_n_object_00_01boost_1_1variant2_1_1variant_3_01_args_8_8_8_01_4_01_4.html#aeca8063c00b4abc266564210f3f68324":[12,0,439,0],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01eggs_1_1variant_3_01_args_8_8_8_01_4_01_4.html":[12,0,440],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01eggs_1_1variant_3_01_args_8_8_8_01_4_01_4.html#a6527bc244f938431c836426807fae5a2":[12,0,440,0],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01_t_01_4_01_4.html":[12,0,449],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01_t_01_4_01_4.html#a2139b55b481216c4ff11701049447bdd":[12,0,449,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX62 =
 "structis__shared__ptr.html":[12,0,142],
 "structis__shared__ptr_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html":[12,0,143],
 "structmatches.html":[12,0,154],
-"structmatches.html#a9cdfdf88a59b5835ded36443f21de74b":[12,0,154,0],
-"structossia_1_1control__surface__node_1_1control__updater.html":[12,0,33,1,0],
-"structossia_1_1control__surface__node_1_1control__updater.html#a066902b3578dca4acb5f99cc9ed7f5fa":[12,0,33,1,0,1]
+"structmatches.html#a9cdfdf88a59b5835ded36443f21de74b":[12,0,154,0]
 };

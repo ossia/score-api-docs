@@ -123,9 +123,10 @@ Inheritance diagram for score::DocumentBackupManager:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a010740ac591f1d58cc98e04bd12efd93"><td class="memItemLeft" align="right" valign="top"><a id="a010740ac591f1d58cc98e04bd12efd93"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DocumentBackupManager</b> (<a class="el" href="classscore_1_1_document.html">Document</a> &amp;doc)</td></tr>
-<tr class="separator:a010740ac591f1d58cc98e04bd12efd93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73ec4b51126b8eceb6417abce6c0bdbd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_document_backup_manager.html#a73ec4b51126b8eceb6417abce6c0bdbd">DocumentBackupManager</a> (const QByteArray &amp;data, <a class="el" href="classscore_1_1_document.html">Document</a> &amp;doc)</td></tr>
+<tr class="separator:a73ec4b51126b8eceb6417abce6c0bdbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ce83b417bd5675790184b16772a0b56"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_document_backup_manager.html#a3ce83b417bd5675790184b16772a0b56">DocumentBackupManager</a> (const <a class="el" href="structscore_1_1_restorable_document.html">score::RestorableDocument</a> &amp;prev, <a class="el" href="classscore_1_1_document.html">Document</a> &amp;doc)</td></tr>
+<tr class="separator:a3ce83b417bd5675790184b16772a0b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add0c20e21a5e2bc868119eb8fa4f5970"><td class="memItemLeft" align="right" valign="top"><a id="add0c20e21a5e2bc868119eb8fa4f5970"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>saveModelData</b> (const QByteArray &amp;)</td></tr>
 <tr class="separator:add0c20e21a5e2bc868119eb8fa4f5970"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,6 +134,81 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>saveModelData</b> (co
 void&#160;</td><td class="memItemRight" valign="bottom"><b>updateBackupData</b> ()</td></tr>
 <tr class="separator:a83c1ac891a81c369af3e20222a0876be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a73ec4b51126b8eceb6417abce6c0bdbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73ec4b51126b8eceb6417abce6c0bdbd">&#9670;&nbsp;</a></span>DocumentBackupManager() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">score::DocumentBackupManager::DocumentBackupManager </td>
+          <td>(</td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classscore_1_1_document.html">score::Document</a> &amp;&#160;</td>
+          <td class="paramname"><em>doc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Used when creating a new document or loading from disk, data is the document data. </p>
+
+</div>
+</div>
+<a id="a3ce83b417bd5675790184b16772a0b56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ce83b417bd5675790184b16772a0b56">&#9670;&nbsp;</a></span>DocumentBackupManager() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">score::DocumentBackupManager::DocumentBackupManager </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1_restorable_document.html">score::RestorableDocument</a> &amp;&#160;</td>
+          <td class="paramname"><em>prev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classscore_1_1_document.html">Document</a> &amp;&#160;</td>
+          <td class="paramname"><em>doc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Used when restoring a document after the crash so that we can reuse the data </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_document_backup_manager_8hpp_source.html">DocumentBackupManager.hpp</a></li>
 <li>DocumentBackupManager.cpp</li>

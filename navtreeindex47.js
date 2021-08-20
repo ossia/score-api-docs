@@ -1,5 +1,7 @@
 var NAVTREEINDEX47 =
 {
+"classvst3_1_1param__changes.html#a9a2894084ff1101aa20b0e4345c68895":[12,0,54,10,1],
+"classvst3_1_1param__changes.html#aa23c7c0b3845473947168160d055def1":[12,0,54,10,2],
 "classvst3_1_1param__changes.html#ac146072da0abd9f4dba6d03e135784ef":[12,0,54,10,3],
 "classvst3_1_1param__queue.html":[12,0,54,11],
 "classvst3_1_1param__queue.html#a01d089778973465d985f88afe1c6333c":[12,0,54,11,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX47 =
 "lib_2score_2model_2_component_8hpp_source.html":[13,0,182],
 "lib_2score_2plugins_2documentdelegate_2plugin_2_document_plugin_8hpp_source.html":[13,0,316],
 "lib_2score_2tools_2_metadata_8hpp_source.html":[13,0,662],
-"lib_2score_2widgets_2_control_widgets_8hpp_source.html":[13,0,202],
-"lv2__atom__helpers_8hpp_source.html":[13,0,625],
-"models_8hpp_source.html":[13,0,737]
+"lib_2score_2widgets_2_control_widgets_8hpp_source.html":[13,0,202]
 };
