@@ -4,6 +4,7 @@ var class_execution_1_1_base_scenario_element =
     [ "~BaseScenarioElement", "class_execution_1_1_base_scenario_element.html#a2cde4302259a142825f8cd024ea5fb60", null ],
     [ "active", "class_execution_1_1_base_scenario_element.html#aaf0f593c883ac09c08517059b6e05612", null ],
     [ "baseInterval", "class_execution_1_1_base_scenario_element.html#a35b9152f0f25a8fe29a657c9c0cd1bce", null ],
+    [ "baseScenario", "class_execution_1_1_base_scenario_element.html#aece62d2fb5ea7d052e3dc50ac301e526", null ],
     [ "cleanup", "class_execution_1_1_base_scenario_element.html#a37cf53dab66e3bfaa3beec357442ccb6", null ],
     [ "endEvent", "class_execution_1_1_base_scenario_element.html#ab1bce434a87636110d936823b8f8f8b5", null ],
     [ "endState", "class_execution_1_1_base_scenario_element.html#ac9f09a4d3b1651905ac51cd892c031df", null ],

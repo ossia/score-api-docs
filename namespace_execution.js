@@ -20,8 +20,6 @@ var namespace_execution =
     [ "ClockFactory", "class_execution_1_1_clock_factory.html", "class_execution_1_1_clock_factory" ],
     [ "ClockFactoryList", "class_execution_1_1_clock_factory_list.html", "class_execution_1_1_clock_factory_list" ],
     [ "Context", "struct_execution_1_1_context.html", "struct_execution_1_1_context" ],
-    [ "ControlClock", "class_execution_1_1_control_clock.html", "class_execution_1_1_control_clock" ],
-    [ "ControlClockFactory", "class_execution_1_1_control_clock_factory.html", "class_execution_1_1_control_clock_factory" ],
     [ "DefaultClock", "class_execution_1_1_default_clock.html", "class_execution_1_1_default_clock" ],
     [ "dfs_visitor", "struct_execution_1_1dfs__visitor.html", "struct_execution_1_1dfs__visitor" ],
     [ "dfs_visitor_state", "struct_execution_1_1dfs__visitor__state.html", "struct_execution_1_1dfs__visitor__state" ],

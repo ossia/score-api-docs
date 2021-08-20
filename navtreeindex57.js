@@ -1,12 +1,5 @@
 var NAVTREEINDEX57 =
 {
-"struct_process_1_1_pixmaps.html#acd3f22a02ec5927c04c743b6bd072449":[12,0,37,60,2],
-"struct_process_1_1_pixmaps.html#ad0a96ef503cbccdba2994c6252ab3475":[12,0,37,60,3],
-"struct_process_1_1_pixmaps.html#ad9c1fc849118c1aa0e006b32b882b20b":[12,0,37,60,15],
-"struct_process_1_1_pixmaps.html#adfdeccbe785bce7bdfb6e70a0af2ac18":[12,0,37,60,24],
-"struct_process_1_1_pixmaps.html#ae66f8d42941885c70e0b77ca7de8e78a":[12,0,37,60,18],
-"struct_process_1_1_pixmaps.html#afd4a3097be0e4290339412abf8c399c2":[12,0,37,60,0],
-"struct_process_1_1_preset.html":[12,0,37,67],
 "struct_process_1_1_preset.html#a11f061c7edc9899ebb87047403152ded":[12,0,37,67,5],
 "struct_process_1_1_preset.html#a2367da0742ecd708e065167d27aafa5c":[12,0,37,67,0],
 "struct_process_1_1_preset.html#a2f9d666d988d3c411fe83aeb495af1c4":[12,0,37,67,1],
@@ -249,5 +242,12 @@ var NAVTREEINDEX57 =
 "struct_q_meta_type_id_3_01_data_stream_reader_01_5_01_4.html#aa489b659ac00418327dfb0fceeb9f4d0aa98ede8726a1165f1d2bdfed0b6da256":[12,0,217,0],
 "struct_q_meta_type_id_3_01_data_stream_writer_01_5_01_4.html":[12,0,218],
 "struct_q_meta_type_id_3_01_data_stream_writer_01_5_01_4.html#a3089c34349591c359d41ed4b1961c720a4416ccb2172621afe016c9b1fbeca2c5":[12,0,218,0],
-"struct_q_meta_type_id_3_01_device_1_1_device_settings_01_4.html":[12,0,219]
+"struct_q_meta_type_id_3_01_device_1_1_device_settings_01_4.html":[12,0,219],
+"struct_q_meta_type_id_3_01_device_1_1_device_settings_01_4.html#a0b6e456eb904275be6d9e2f166f32a19adc154c18f9ba20f72b75f2342114437b":[12,0,219,0],
+"struct_q_meta_type_id_3_01_expand_mode_01_4.html":[12,0,220],
+"struct_q_meta_type_id_3_01_expand_mode_01_4.html#acf4392ad7eee4b2b77ffd78cbd5f5e05a35f3e6f63f5b182e2c2da321467b17a0":[12,0,220,0],
+"struct_q_meta_type_id_3_01_gfx_1_1_camera_settings_01_4.html":[12,0,221],
+"struct_q_meta_type_id_3_01_gfx_1_1_camera_settings_01_4.html#ade01c81852d97bb5477e030e1546ca24aaddf49cfd01e45c6d75b7397581f5789":[12,0,221,0],
+"struct_q_meta_type_id_3_01_gfx_1_1_kinect2_settings_01_4.html":[12,0,222],
+"struct_q_meta_type_id_3_01_gfx_1_1_kinect2_settings_01_4.html#a4898fab040652cc7dfb711ec42509ba2a2eb66fbab8f0b0ffd864808589458638":[12,0,222,0]
 };
