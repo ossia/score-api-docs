@@ -125,12 +125,9 @@ const LilvNode *&#160;</td><td class="memItemRight" valign="bottom"><b>ui_type</
 <tr class="memitem:a7ad34e4028c41df155397ae6b12b7fae"><td class="memItemLeft" align="right" valign="top"><a id="a7ad34e4028c41df155397ae6b12b7fae"></a>
 SuilInstance *&#160;</td><td class="memItemRight" valign="bottom"><b>ui_instance</b> {}</td></tr>
 <tr class="separator:a7ad34e4028c41df155397ae6b12b7fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40c1e3d283b542b28c470f194b73aca3"><td class="memItemLeft" align="right" valign="top"><a id="a40c1e3d283b542b28c470f194b73aca3"></a>
-std::vector&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>worker_data</b></td></tr>
-<tr class="separator:a40c1e3d283b542b28c470f194b73aca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a941c2202713d0669addde22af5018699"><td class="memItemLeft" align="right" valign="top"><a id="a941c2202713d0669addde22af5018699"></a>
-std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>worker_response</b> {false}</td></tr>
-<tr class="separator:a941c2202713d0669addde22af5018699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72e9ce064eec131b56e9fae24296b323"><td class="memItemLeft" align="right" valign="top"><a id="a72e9ce064eec131b56e9fae24296b323"></a>
+moodycamel::ReaderWriterQueue&lt; std::vector&lt; char &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>worker_datas</b></td></tr>
+<tr class="separator:a72e9ce064eec131b56e9fae24296b323"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_context_8hpp_source.html">Context.hpp</a></li>

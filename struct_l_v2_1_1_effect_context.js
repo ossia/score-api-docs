@@ -7,6 +7,5 @@ var struct_l_v2_1_1_effect_context =
     [ "ui_instance", "struct_l_v2_1_1_effect_context.html#a7ad34e4028c41df155397ae6b12b7fae", null ],
     [ "ui_type", "struct_l_v2_1_1_effect_context.html#a1c0e7ee22c14bf72c557c2b4848dd1e1", null ],
     [ "worker", "struct_l_v2_1_1_effect_context.html#ae69d9253d0637b314d9f232a7814736e", null ],
-    [ "worker_data", "struct_l_v2_1_1_effect_context.html#a40c1e3d283b542b28c470f194b73aca3", null ],
-    [ "worker_response", "struct_l_v2_1_1_effect_context.html#a941c2202713d0669addde22af5018699", null ]
+    [ "worker_datas", "struct_l_v2_1_1_effect_context.html#a72e9ce064eec131b56e9fae24296b323", null ]
 ];
