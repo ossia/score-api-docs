@@ -1,5 +1,11 @@
 var NAVTREEINDEX56 =
 {
+"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a4f069fd52bd0659c8ad45c47e4e970fc":[12,0,32,16,0,1,12],
+"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a63c4cdabbe50eaaf1d07fe137994e8b6":[12,0,32,16,0,1,9],
+"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a7ec0709fcfa0c0ada73da5ca9afc4d89":[12,0,32,16,0,1,10],
+"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a9be26f6347fc818f9f27be0f4c8e5391":[12,0,32,16,0,1,4],
+"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a9e54f4f70e4dbd66306e0ec92c5436ca":[12,0,32,16,0,1,5],
+"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#aa952716083920e7367e6e8464504a9a9":[12,0,32,16,0,1,1],
 "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#abeec5675edf233c6d96512a609c483ca":[12,0,32,16,0,1,8],
 "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#ac4b7da53fad1563be1fad60dd044a5d7":[12,0,32,16,0,1,2],
 "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#ac52b77d9357b0cee675c484476185615":[12,0,32,16,0,1,7],
@@ -243,11 +249,5 @@ var NAVTREEINDEX56 =
 "struct_process_1_1_pixmaps.html#ac6e126103c6ea5a8c4148c2d3037f1ad":[12,0,37,60,6],
 "struct_process_1_1_pixmaps.html#ac85aa7409bcb0da28d068124db441c2a":[12,0,37,60,14],
 "struct_process_1_1_pixmaps.html#acafefb0ce32383be9fda8de20fa34637":[12,0,37,60,21],
-"struct_process_1_1_pixmaps.html#acd3f22a02ec5927c04c743b6bd072449":[12,0,37,60,2],
-"struct_process_1_1_pixmaps.html#ad0a96ef503cbccdba2994c6252ab3475":[12,0,37,60,3],
-"struct_process_1_1_pixmaps.html#ad9c1fc849118c1aa0e006b32b882b20b":[12,0,37,60,15],
-"struct_process_1_1_pixmaps.html#adfdeccbe785bce7bdfb6e70a0af2ac18":[12,0,37,60,24],
-"struct_process_1_1_pixmaps.html#ae66f8d42941885c70e0b77ca7de8e78a":[12,0,37,60,18],
-"struct_process_1_1_pixmaps.html#afd4a3097be0e4290339412abf8c399c2":[12,0,37,60,0],
-"struct_process_1_1_preset.html":[12,0,37,67]
+"struct_process_1_1_pixmaps.html#acd3f22a02ec5927c04c743b6bd072449":[12,0,37,60,2]
 };

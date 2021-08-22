@@ -349,6 +349,7 @@ var annotated_dup =
       [ "LV2PluginChooserDialog", "struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html", "struct_l_v2_1_1_l_v2_plugin_chooser_dialog" ],
       [ "Message", "struct_l_v2_1_1_message.html", "struct_l_v2_1_1_message" ],
       [ "on_finish", "struct_l_v2_1_1on__finish.html", "struct_l_v2_1_1on__finish" ],
+      [ "on_start", "struct_l_v2_1_1on__start.html", "struct_l_v2_1_1on__start" ],
       [ "Window", "class_l_v2_1_1_window.html", "class_l_v2_1_1_window" ]
     ] ],
     [ "Mapping", null, [

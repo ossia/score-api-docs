@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.8.17"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>score: LV2::lv2_node&lt; OnExecFinished &gt; Struct Template Reference</title>
+        <title>score: LV2::lv2_node&lt; OnExecStart, OnExecFinished &gt; Struct Template Reference</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -100,11 +100,11 @@ $(document).ready(function(){initNavTree('struct_l_v2_1_1lv2__node.html',''); in
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_l_v2_1_1lv2__node-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">LV2::lv2_node&lt; OnExecFinished &gt; Struct Template Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">LV2::lv2_node&lt; OnExecStart, OnExecFinished &gt; Struct Template Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Inheritance diagram for LV2::lv2_node&lt; OnExecFinished &gt;:</div>
+Inheritance diagram for LV2::lv2_node&lt; OnExecStart, OnExecFinished &gt;:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="struct_l_v2_1_1lv2__node.png" alt=""/>
@@ -117,72 +117,81 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a16a148de2669e758da2206d0ef7ce20c"><td class="memItemLeft" align="right" valign="top"><a id="a16a148de2669e758da2206d0ef7ce20c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>lv2_node</b> (<a class="el" href="struct_l_v2_1_1_l_v2_data.html">LV2Data</a> dat, int sampleRate, OnExecFinished of)</td></tr>
-<tr class="separator:a16a148de2669e758da2206d0ef7ce20c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd26279e2f36fd579d85e935dd664e50"><td class="memItemLeft" align="right" valign="top"><a id="acd26279e2f36fd579d85e935dd664e50"></a>
+<tr class="memitem:a7fb80dad708729089cad9a862b899068"><td class="memItemLeft" align="right" valign="top"><a id="a7fb80dad708729089cad9a862b899068"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>lv2_node</b> (<a class="el" href="struct_l_v2_1_1_l_v2_data.html">LV2Data</a> dat, int sampleRate, OnExecStart os, OnExecFinished of)</td></tr>
+<tr class="separator:a7fb80dad708729089cad9a862b899068"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0bb78dc27102643a5e7fbacf7cada60"><td class="memItemLeft" align="right" valign="top"><a id="ac0bb78dc27102643a5e7fbacf7cada60"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>connect_all_ports</b> ()</td></tr>
+<tr class="separator:ac0bb78dc27102643a5e7fbacf7cada60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77f5f3cfdd495d05639ffe2e6473b077"><td class="memItemLeft" align="right" valign="top"><a id="a77f5f3cfdd495d05639ffe2e6473b077"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>all_notes_off</b> () noexcept override</td></tr>
-<tr class="separator:acd26279e2f36fd579d85e935dd664e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44582a09d464900ddf74adac69626d9c"><td class="memItemLeft" align="right" valign="top"><a id="a44582a09d464900ddf74adac69626d9c"></a>
+<tr class="separator:a77f5f3cfdd495d05639ffe2e6473b077"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad68fde91a972481cdadc9b2a05487130"><td class="memItemLeft" align="right" valign="top"><a id="ad68fde91a972481cdadc9b2a05487130"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>preProcess</b> ()</td></tr>
-<tr class="separator:a44582a09d464900ddf74adac69626d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab78bda1d90770843bfe8c06ddb66b690"><td class="memItemLeft" align="right" valign="top"><a id="ab78bda1d90770843bfe8c06ddb66b690"></a>
+<tr class="separator:ad68fde91a972481cdadc9b2a05487130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a566193105bccd1fd71ddcdfd6e29c6dd"><td class="memItemLeft" align="right" valign="top"><a id="a566193105bccd1fd71ddcdfd6e29c6dd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>updateTime</b> (const ossia::token_request &amp;tk, ossia::exec_state_facade st)</td></tr>
-<tr class="separator:ab78bda1d90770843bfe8c06ddb66b690"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e2d4d5e2773009b0e31d9c075fdb40c"><td class="memItemLeft" align="right" valign="top"><a id="a2e2d4d5e2773009b0e31d9c075fdb40c"></a>
+<tr class="separator:a566193105bccd1fd71ddcdfd6e29c6dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50fc6ae862cd1849834f549f028ace8c"><td class="memItemLeft" align="right" valign="top"><a id="a50fc6ae862cd1849834f549f028ace8c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>postProcess</b> (int64_t offset)</td></tr>
-<tr class="separator:a2e2d4d5e2773009b0e31d9c075fdb40c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77ce643ecd57c1c9ce1a9f05183f4738"><td class="memItemLeft" align="right" valign="top"><a id="a77ce643ecd57c1c9ce1a9f05183f4738"></a>
+<tr class="separator:a50fc6ae862cd1849834f549f028ace8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a914f016ceee9633cd3588ee6dc249b17"><td class="memItemLeft" align="right" valign="top"><a id="a914f016ceee9633cd3588ee6dc249b17"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (const ossia::token_request &amp;tk, ossia::exec_state_facade st) noexcept override</td></tr>
-<tr class="separator:a77ce643ecd57c1c9ce1a9f05183f4738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a914f016ceee9633cd3588ee6dc249b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a143c4affb14f712effdc7aa9031463dc"><td class="memItemLeft" align="right" valign="top"><a id="a143c4affb14f712effdc7aa9031463dc"></a>
+<tr class="memitem:a96105c3b58c6f32706369b5d685da62c"><td class="memItemLeft" align="right" valign="top"><a id="a96105c3b58c6f32706369b5d685da62c"></a>
 <a class="el" href="struct_l_v2_1_1_l_v2_data.html">LV2Data</a>&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
-<tr class="separator:a143c4affb14f712effdc7aa9031463dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e97da547e8d927d13c5f9f0712c3f25"><td class="memItemLeft" align="right" valign="top"><a id="a8e97da547e8d927d13c5f9f0712c3f25"></a>
+<tr class="separator:a96105c3b58c6f32706369b5d685da62c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9c9b61745b296630f231d9b035f4355"><td class="memItemLeft" align="right" valign="top"><a id="af9c9b61745b296630f231d9b035f4355"></a>
 ossia::float_vector&#160;</td><td class="memItemRight" valign="bottom"><b>fInControls</b></td></tr>
-<tr class="separator:a8e97da547e8d927d13c5f9f0712c3f25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacf6bbea103f31bed372fd90a0de181d"><td class="memItemLeft" align="right" valign="top"><a id="aacf6bbea103f31bed372fd90a0de181d"></a>
+<tr class="separator:af9c9b61745b296630f231d9b035f4355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86db4ac3e16fb84521d31d2d173f0296"><td class="memItemLeft" align="right" valign="top"><a id="a86db4ac3e16fb84521d31d2d173f0296"></a>
 ossia::float_vector&#160;</td><td class="memItemRight" valign="bottom"><b>fOutControls</b></td></tr>
-<tr class="separator:aacf6bbea103f31bed372fd90a0de181d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af38367d85470eec50c726ade9500eb00"><td class="memItemLeft" align="right" valign="top"><a id="af38367d85470eec50c726ade9500eb00"></a>
+<tr class="separator:a86db4ac3e16fb84521d31d2d173f0296"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69429a150d30cf03bb55acc942e32001"><td class="memItemLeft" align="right" valign="top"><a id="a69429a150d30cf03bb55acc942e32001"></a>
 ossia::float_vector&#160;</td><td class="memItemRight" valign="bottom"><b>fParamMin</b></td></tr>
-<tr class="separator:af38367d85470eec50c726ade9500eb00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02935a4a2fe35645ceafbd048b6b22b3"><td class="memItemLeft" align="right" valign="top"><a id="a02935a4a2fe35645ceafbd048b6b22b3"></a>
+<tr class="separator:a69429a150d30cf03bb55acc942e32001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25e7f8b68b1476c09e3fd3db5df27e5d"><td class="memItemLeft" align="right" valign="top"><a id="a25e7f8b68b1476c09e3fd3db5df27e5d"></a>
 ossia::float_vector&#160;</td><td class="memItemRight" valign="bottom"><b>fParamMax</b></td></tr>
-<tr class="separator:a02935a4a2fe35645ceafbd048b6b22b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51781b9a9b8d48ed09338d557f4a4e47"><td class="memItemLeft" align="right" valign="top"><a id="a51781b9a9b8d48ed09338d557f4a4e47"></a>
+<tr class="separator:a25e7f8b68b1476c09e3fd3db5df27e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4979b8f8f80dae30c7f4d5153bb4971"><td class="memItemLeft" align="right" valign="top"><a id="ab4979b8f8f80dae30c7f4d5153bb4971"></a>
 ossia::float_vector&#160;</td><td class="memItemRight" valign="bottom"><b>fParamInit</b></td></tr>
-<tr class="separator:a51781b9a9b8d48ed09338d557f4a4e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f658c527aafd182c44a84664cc06c0b"><td class="memItemLeft" align="right" valign="top"><a id="a3f658c527aafd182c44a84664cc06c0b"></a>
+<tr class="separator:ab4979b8f8f80dae30c7f4d5153bb4971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d2b821c19869415caa84e3f12f1c7ee"><td class="memItemLeft" align="right" valign="top"><a id="a8d2b821c19869415caa84e3f12f1c7ee"></a>
 ossia::float_vector&#160;</td><td class="memItemRight" valign="bottom"><b>fOtherControls</b></td></tr>
-<tr class="separator:a3f658c527aafd182c44a84664cc06c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73a268d2b2a7cbcd4b1ecdf4a95809bc"><td class="memItemLeft" align="right" valign="top"><a id="a73a268d2b2a7cbcd4b1ecdf4a95809bc"></a>
+<tr class="separator:a8d2b821c19869415caa84e3f12f1c7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9cdf39ac649eb0038bb2e642aaa9574"><td class="memItemLeft" align="right" valign="top"><a id="ae9cdf39ac649eb0038bb2e642aaa9574"></a>
 std::vector&lt; ossia::float_vector &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fCVs</b></td></tr>
-<tr class="separator:a73a268d2b2a7cbcd4b1ecdf4a95809bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73dc17703b471fd1b611aaeecb8c4062"><td class="memItemLeft" align="right" valign="top"><a id="a73dc17703b471fd1b611aaeecb8c4062"></a>
+<tr class="separator:ae9cdf39ac649eb0038bb2e642aaa9574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad796f6a6a812560a0cacf6001945c0be"><td class="memItemLeft" align="right" valign="top"><a id="ad796f6a6a812560a0cacf6001945c0be"></a>
 std::vector&lt; <a class="el" href="struct_atom_buffer.html">AtomBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_atom_ins</b></td></tr>
-<tr class="separator:a73dc17703b471fd1b611aaeecb8c4062"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80e40b7ea69e6f581c2b688949bc0ba8"><td class="memItemLeft" align="right" valign="top"><a id="a80e40b7ea69e6f581c2b688949bc0ba8"></a>
+<tr class="separator:ad796f6a6a812560a0cacf6001945c0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae60ea63685e9e61b79179fd172f0eda6"><td class="memItemLeft" align="right" valign="top"><a id="ae60ea63685e9e61b79179fd172f0eda6"></a>
 std::vector&lt; <a class="el" href="struct_atom_buffer.html">AtomBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_atom_outs</b></td></tr>
-<tr class="separator:a80e40b7ea69e6f581c2b688949bc0ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a559cabc7c684e8bb5258c1d930abb4b2"><td class="memItemLeft" align="right" valign="top"><a id="a559cabc7c684e8bb5258c1d930abb4b2"></a>
+<tr class="separator:ae60ea63685e9e61b79179fd172f0eda6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7719f76c530ff259cb99974e7e9d5c4f"><td class="memItemLeft" align="right" valign="top"><a id="a7719f76c530ff259cb99974e7e9d5c4f"></a>
+std::vector&lt; ossia::small_vector&lt; <a class="el" href="struct_l_v2_1_1_message.html">Message</a>, 2 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_message_for_atom_ins</b></td></tr>
+<tr class="separator:a7719f76c530ff259cb99974e7e9d5c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae19627bc28039a9f75fd1fde3e1972c7"><td class="memItemLeft" align="right" valign="top"><a id="ae19627bc28039a9f75fd1fde3e1972c7"></a>
 LilvInstance *&#160;</td><td class="memItemRight" valign="bottom"><b>fInstance</b> {}</td></tr>
-<tr class="separator:a559cabc7c684e8bb5258c1d930abb4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a000096b1f4a288323e676a445d6754b3"><td class="memItemLeft" align="right" valign="top"><a id="a000096b1f4a288323e676a445d6754b3"></a>
+<tr class="separator:ae19627bc28039a9f75fd1fde3e1972c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3839c2595347a88a26181784fc1706e"><td class="memItemLeft" align="right" valign="top"><a id="ab3839c2595347a88a26181784fc1706e"></a>
 std::unique_ptr&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>timePositionBuffer</b> {}</td></tr>
-<tr class="separator:a000096b1f4a288323e676a445d6754b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac1c37d415248d07e6f7a31a5761357e"><td class="memItemLeft" align="right" valign="top"><a id="aac1c37d415248d07e6f7a31a5761357e"></a>
+<tr class="separator:ab3839c2595347a88a26181784fc1706e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8852b05b8106f3e0d774c50091431c84"><td class="memItemLeft" align="right" valign="top"><a id="a8852b05b8106f3e0d774c50091431c84"></a>
 std::vector&lt; <a class="el" href="struct_l_v2_1_1lv2__node_1_1_matched_port.html">MatchedPort</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_atom_timePosition_midi</b></td></tr>
-<tr class="separator:aac1c37d415248d07e6f7a31a5761357e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a223f662dc3621e0ad60a9ebbc16b55a6"><td class="memItemLeft" align="right" valign="top"><a id="a223f662dc3621e0ad60a9ebbc16b55a6"></a>
+<tr class="separator:a8852b05b8106f3e0d774c50091431c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9339cf8ce0accc320d84a73abcb3870a"><td class="memItemLeft" align="right" valign="top"><a id="a9339cf8ce0accc320d84a73abcb3870a"></a>
 std::vector&lt; <a class="el" href="struct_l_v2_1_1lv2__node_1_1_matched_port.html">MatchedPort</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_atom_timePosition_owned</b></td></tr>
-<tr class="separator:a223f662dc3621e0ad60a9ebbc16b55a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e0f4b531611c37de681769f1ebe4f4d"><td class="memItemLeft" align="right" valign="top"><a id="a0e0f4b531611c37de681769f1ebe4f4d"></a>
-OnExecFinished&#160;</td><td class="memItemRight" valign="bottom"><b>onFinished</b></td></tr>
-<tr class="separator:a0e0f4b531611c37de681769f1ebe4f4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a9339cf8ce0accc320d84a73abcb3870a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62a641c57dcbb30fb650836026ab82fe"><td class="memItemLeft" align="right" valign="top"><a id="a62a641c57dcbb30fb650836026ab82fe"></a>
+OnExecStart&#160;</td><td class="memItemRight" valign="bottom"><b>on_start</b></td></tr>
+<tr class="separator:a62a641c57dcbb30fb650836026ab82fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafb93dcacf0a8d917d3946b7fc6bc97f"><td class="memItemLeft" align="right" valign="top"><a id="aafb93dcacf0a8d917d3946b7fc6bc97f"></a>
+OnExecFinished&#160;</td><td class="memItemRight" valign="bottom"><b>on_finished</b></td></tr>
+<tr class="separator:aafb93dcacf0a8d917d3946b7fc6bc97f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="score-plugin-lv2_2_l_v2_2_node_8hpp_source.html">score-plugin-lv2/LV2/Node.hpp</a></li>
