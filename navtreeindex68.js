@@ -1,5 +1,11 @@
 var NAVTREEINDEX68 =
 {
+"structvst_1_1_v_s_t_float_slider.html":[12,0,53,18],
+"structvst_1_1_v_s_t_info.html":[12,0,53,19],
+"structvst_1_1_v_s_t_info.html#a0dc2624c9af478fab31f08d440cccdaf":[12,0,53,19,3],
+"structvst_1_1_v_s_t_info.html#a2c44b6295e631cb3d8057af487a10f08":[12,0,53,19,2],
+"structvst_1_1_v_s_t_info.html#a54b2fc9286eaced9c6ba2d50e315c7f4":[12,0,53,19,7],
+"structvst_1_1_v_s_t_info.html#a76013b9c3d06ec7047036964d5a3f4da":[12,0,53,19,5],
 "structvst_1_1_v_s_t_info.html#a7e828f3df85e060ebba64291cb571cec":[12,0,53,19,1],
 "structvst_1_1_v_s_t_info.html#abfc40ae22a5dcd6d74c6f1615b3c56db":[12,0,53,19,0],
 "structvst_1_1_v_s_t_info.html#acc6d179f70bce0b18dd1d72870e4eeae":[12,0,53,19,6],

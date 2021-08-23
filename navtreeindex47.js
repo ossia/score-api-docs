@@ -183,8 +183,8 @@ var NAVTREEINDEX47 =
 "data_structures_8hpp_source.html":[13,0,264],
 "element_finding_helper_8hpp_source.html":[13,0,358],
 "files.html":[13,0],
-"functions.html":[12,3,0],
 "functions.html":[12,3,0,0],
+"functions.html":[12,3,0],
 "functions_b.html":[12,3,0,1],
 "functions_c.html":[12,3,0,2],
 "functions_d.html":[12,3,0,3],
@@ -248,6 +248,6 @@ var NAVTREEINDEX47 =
 "mvp_8hpp_source.html":[13,0,761],
 "namespace_automation.html":[11,0,0],
 "namespace_automation.html":[12,0,1],
-"namespace_curve.html":[12,0,5],
-"namespace_curve.html":[11,0,1]
+"namespace_curve.html":[11,0,1],
+"namespace_curve.html":[12,0,5]
 };
