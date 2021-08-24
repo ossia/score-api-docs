@@ -1,5 +1,13 @@
 var NAVTREEINDEX26 =
 {
+"class_protocols_1_1_w_s_protocol_factory.html":[12,0,38,69],
+"class_protocols_1_1_w_s_protocol_settings_widget.html":[12,0,38,70],
+"class_protocols_1_1_w_s_protocol_settings_widget.html#a018eeca75a56e1eb4b81e84548900fe4":[12,0,38,70,5],
+"class_protocols_1_1_w_s_protocol_settings_widget.html#a1527216cf9d87d10dfbf3a4b2beee8c5":[12,0,38,70,1],
+"class_protocols_1_1_w_s_protocol_settings_widget.html#a19f1e7ee4ed75d725870fc57ff0845b8":[12,0,38,70,6],
+"class_protocols_1_1_w_s_protocol_settings_widget.html#a40fa88d658d06b374dde0f5ec1e07cf9":[12,0,38,70,2],
+"class_protocols_1_1_w_s_protocol_settings_widget.html#a57bd97d0093b82ee30ea96e9131f585a":[12,0,38,70,0],
+"class_protocols_1_1_w_s_protocol_settings_widget.html#a6f065fc0b22efcc5d103f79f7ea895a7":[12,0,38,70,3],
 "class_protocols_1_1_w_s_protocol_settings_widget.html#aa4b9ec2452f8ab8dda02c8c4365e93b0":[12,0,38,70,4],
 "class_protocols_1_1_w_s_protocol_settings_widget.html#af3ef13cd37a34a9e3c406242b0b54ce2":[12,0,38,70,7],
 "class_protocols_1_1_websocket_client_widget.html":[12,0,38,62],
@@ -241,13 +249,5 @@ var NAVTREEINDEX26 =
 "class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#adb89c16b967763987ed3c5875c11d9c7":[12,0,43,11,4],
 "class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#ae8cee88f530a08d81abaaec23c08451d":[12,0,43,11,6],
 "class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#aebd8ff10c9adcfceeb6746b88daf1a3e":[12,0,43,11,7],
-"class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#af03495c725f54ecff7311091132d2e93":[12,0,43,11,5],
-"class_scenario_1_1_base_scenario_displayed_elements_tool_palette_factory.html":[12,0,43,12],
-"class_scenario_1_1_base_scenario_displayed_elements_tool_palette_factory.html#a67ba46884760bc9cb10b10fa3042bed9":[12,0,43,12,1],
-"class_scenario_1_1_base_scenario_displayed_elements_tool_palette_factory.html#ac80d257264906494d4fd1a5cbd7d819f":[12,0,43,12,0],
-"class_scenario_1_1_base_scenario_interval_resizer.html":[12,0,43,13],
-"class_scenario_1_1_c_s_p_coherency_checker_interface.html":[12,0,43,43],
-"class_scenario_1_1_c_s_p_coherency_checker_interface.html#a3093a5878aa7e3b2b7117f712521e493":[12,0,43,43,0],
-"class_scenario_1_1_c_s_p_coherency_checker_interface.html#ae592ad640157425483fcd1e1a37440ff":[12,0,43,43,1],
-"class_scenario_1_1_c_s_p_coherency_checker_list.html":[12,0,43,44]
+"class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#af03495c725f54ecff7311091132d2e93":[12,0,43,11,5]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX43 =
 {
+"classscore_1_1_q_graphics_draggable_pixmap.html#adb6887208a326096badb0deb45ab4b35":[12,0,44,180,2],
+"classscore_1_1_q_graphics_enum.html":[12,0,44,181],
+"classscore_1_1_q_graphics_enum.html#a1119c64bc55ae2e3c5848ffed03f74e9":[12,0,44,181,15],
+"classscore_1_1_q_graphics_enum.html#a200b784575615be810f263e2378c95f6":[12,0,44,181,5],
+"classscore_1_1_q_graphics_enum.html#a45546b0c49fec4598d0dd1bcdf83dbf6":[12,0,44,181,11],
+"classscore_1_1_q_graphics_enum.html#a4f54ce044983a683dee34229988c1a03":[12,0,44,181,4],
+"classscore_1_1_q_graphics_enum.html#a4fbffc4d08d29b958085e48c719c18b8":[12,0,44,181,6],
+"classscore_1_1_q_graphics_enum.html#a5d7c0733e08542fdbc62358f48a2b91b":[12,0,44,181,1],
 "classscore_1_1_q_graphics_enum.html#a5f91b858cae67dab4dcd53c7e4260dec":[12,0,44,181,2],
 "classscore_1_1_q_graphics_enum.html#a61d176a8d0cd7e84f84636633dfce7eb":[12,0,44,181,14],
 "classscore_1_1_q_graphics_enum.html#a8039aad2d9724bf9b15bc202166b0a73":[12,0,44,181,7],
@@ -241,13 +249,5 @@ var NAVTREEINDEX43 =
 "classscore_1_1_selection_stack.html#ac897033610da38463eefce20f0041c31":[12,0,44,213,13],
 "classscore_1_1_selection_stack.html#ad369175bc720d1b87be9f0f66f1f1f9d":[12,0,44,213,17],
 "classscore_1_1_selection_stack.html#addd7c178c92b84388812265645993d88":[12,0,44,213,11],
-"classscore_1_1_selection_stack.html#ae28a1dce99c597fd0f464dcff8d697e9":[12,0,44,213,5],
-"classscore_1_1_selection_stack.html#af77e2dbba738b5cbd93cacd9a2964af8":[12,0,44,213,3],
-"classscore_1_1_selection_stack.html#afebe59a8eafa49e9033709d85b3bd7bd":[12,0,44,213,9],
-"classscore_1_1_serializable_document_plugin.html":[12,0,44,214],
-"classscore_1_1_serializable_document_plugin.html#a448df1dd2de8cb695194d0462761d475":[12,0,44,214,3],
-"classscore_1_1_serializable_document_plugin.html#a55f276184bea10f7b674ce1d75616a37":[12,0,44,214,0],
-"classscore_1_1_serializable_document_plugin.html#ac77e1f2986ec7bc375fcf11fc337d957":[12,0,44,214,1],
-"classscore_1_1_serializable_document_plugin.html#ad26a92ca12a114e70c55bdc274bd8a55":[12,0,44,214,2],
-"classscore_1_1_serializable_interface.html":[12,0,44,215]
+"classscore_1_1_selection_stack.html#ae28a1dce99c597fd0f464dcff8d697e9":[12,0,44,213,5]
 };

@@ -7,5 +7,6 @@ var struct_nodes_1_1_micro_mapping_1_1_node_1_1_state =
     [ "cur_value", "struct_nodes_1_1_micro_mapping_1_1_node_1_1_state.html#a1854686ad29df5678fb0a0d72fde37b8", null ],
     [ "expr", "struct_nodes_1_1_micro_mapping_1_1_node_1_1_state.html#ac1bf21abf70519c6df1382fde8ea1cfd", null ],
     [ "last_value_time", "struct_nodes_1_1_micro_mapping_1_1_node_1_1_state.html#aedc58bb0cf3ee384284d46a929f8cf2c", null ],
-    [ "ok", "struct_nodes_1_1_micro_mapping_1_1_node_1_1_state.html#aa7f671fd0fc6bf442e667ba6ab43009c", null ]
+    [ "ok", "struct_nodes_1_1_micro_mapping_1_1_node_1_1_state.html#aa7f671fd0fc6bf442e667ba6ab43009c", null ],
+    [ "prev_value", "struct_nodes_1_1_micro_mapping_1_1_node_1_1_state.html#a15db6c454adbafed3d7210a153d5e7d3", null ]
 ];

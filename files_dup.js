@@ -1164,6 +1164,7 @@ var files_dup =
     [ "SnapshotAction.hpp", "_snapshot_action_8hpp_source.html", null ],
     [ "SnapshotParameters.hpp", "_snapshot_parameters_8hpp_source.html", null ],
     [ "SnapshotStatesMacro.hpp", "_snapshot_states_macro_8hpp_source.html", null ],
+    [ "SndfileDecoder.hpp", "_sndfile_decoder_8hpp_source.html", null ],
     [ "SoundComponent.hpp", "_sound_component_8hpp_source.html", null ],
     [ "SoundDrop.hpp", "_sound_drop_8hpp_source.html", null ],
     [ "SoundFactory.hpp", "_sound_factory_8hpp_source.html", null ],

@@ -2,8 +2,10 @@ var struct_media_1_1_audio_info =
 [
     [ "duration", "struct_media_1_1_audio_info.html#a40dbe5a78f3c192217cf14fac08cf34b", null ],
     [ "channels", "struct_media_1_1_audio_info.html#a7d00c10ccb4aec745e52eccca372a263", null ],
-    [ "length", "struct_media_1_1_audio_info.html#aae2fe13a6e80b46b3e85e11dd318352f", null ],
+    [ "convertedLength", "struct_media_1_1_audio_info.html#af7f15015405642268183d78843e5322e", null ],
+    [ "convertedRate", "struct_media_1_1_audio_info.html#a3814c68ddf53f1ece24bf200e53f32f3", null ],
+    [ "fileLength", "struct_media_1_1_audio_info.html#aa37b806a4ff39129ef504a33b28167d7", null ],
+    [ "fileRate", "struct_media_1_1_audio_info.html#acebeb9a461ab5bf13e8a49a450c866cb", null ],
     [ "max_arr_length", "struct_media_1_1_audio_info.html#a6851958bfe490e9a4174f6752cc949ae", null ],
-    [ "rate", "struct_media_1_1_audio_info.html#a977bc6fe29ca4c96571ea35423e4fc81", null ],
-    [ "tempo", "struct_media_1_1_audio_info.html#ae18f6fdc2a3276e2f30ca0a4e617daf7", null ]
+    [ "tempo", "struct_media_1_1_audio_info.html#ad18b8d2b66de8f1d9ee0c05827d0efa2", null ]
 ];

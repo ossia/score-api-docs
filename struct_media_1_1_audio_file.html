@@ -119,11 +119,15 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_media_1_1_audio_file_1_1_libav_reader.html">LibavReader</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_media_1_1_audio_file_1_1_libav_view.html">LibavView</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_media_1_1_audio_file_1_1_mmap_reader.html">MmapReader</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_media_1_1_audio_file_1_1_mmap_view.html">MmapView</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_media_1_1_audio_file_1_1_r_a_m_reader.html">RAMReader</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_media_1_1_audio_file_1_1_r_a_m_view.html">RAMView</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_media_1_1_audio_file_1_1_sndfile_reader.html">SndfileReader</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_media_1_1_audio_file_1_1_view_handle.html">ViewHandle</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,12 +140,15 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>libav_ptr</b> = std:
 <tr class="memitem:ae8a5a08bab91ed492515d8bb7185809f"><td class="memItemLeft" align="right" valign="top"><a id="ae8a5a08bab91ed492515d8bb7185809f"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>mmap_ptr</b> = <a class="el" href="struct_media_1_1_audio_file_1_1_mmap_reader.html">MmapReader</a></td></tr>
 <tr class="separator:ae8a5a08bab91ed492515d8bb7185809f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ff0c8766bab4b538d4ea120d2dae47f"><td class="memItemLeft" align="right" valign="top"><a id="a7ff0c8766bab4b538d4ea120d2dae47f"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>impl_t</b> = eggs::variant&lt; <a class="el" href="struct_media_1_1_audio_file_1_1_mmap_reader.html">mmap_ptr</a>, libav_ptr &gt;</td></tr>
-<tr class="separator:a7ff0c8766bab4b538d4ea120d2dae47f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a345e916625b5491c8b2cb7a1355aa38c"><td class="memItemLeft" align="right" valign="top"><a id="a345e916625b5491c8b2cb7a1355aa38c"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>view_impl_t</b> = eggs::variant&lt; <a class="el" href="struct_media_1_1_audio_file_1_1_mmap_view.html">MmapView</a>, <a class="el" href="struct_media_1_1_audio_file_1_1_libav_view.html">LibavView</a> &gt;</td></tr>
-<tr class="separator:a345e916625b5491c8b2cb7a1355aa38c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70346c66e6f5c939d53b1a9cff3ee71b"><td class="memItemLeft" align="right" valign="top"><a id="a70346c66e6f5c939d53b1a9cff3ee71b"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>sndfile_ptr</b> = <a class="el" href="struct_media_1_1_audio_file_1_1_sndfile_reader.html">SndfileReader</a></td></tr>
+<tr class="separator:a70346c66e6f5c939d53b1a9cff3ee71b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8bec3a9e0dd400b33a6ee516a08896c"><td class="memItemLeft" align="right" valign="top"><a id="aa8bec3a9e0dd400b33a6ee516a08896c"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>impl_t</b> = eggs::variant&lt; <a class="el" href="struct_media_1_1_audio_file_1_1_mmap_reader.html">mmap_ptr</a>, libav_ptr, <a class="el" href="struct_media_1_1_audio_file_1_1_sndfile_reader.html">sndfile_ptr</a> &gt;</td></tr>
+<tr class="separator:aa8bec3a9e0dd400b33a6ee516a08896c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a124fd7343ed145d57819149a9fb32821"><td class="memItemLeft" align="right" valign="top"><a id="a124fd7343ed145d57819149a9fb32821"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>view_impl_t</b> = eggs::variant&lt; <a class="el" href="struct_media_1_1_audio_file_1_1_mmap_view.html">MmapView</a>, <a class="el" href="struct_media_1_1_audio_file_1_1_r_a_m_view.html">RAMView</a> &gt;</td></tr>
+<tr class="separator:a124fd7343ed145d57819149a9fb32821"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -197,6 +204,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateSampleRate</b> 
 <tr class="memitem:a098a67d82903006b0d77154243ff2166"><td class="memItemLeft" align="right" valign="top"><a id="a098a67d82903006b0d77154243ff2166"></a>
 const <a class="el" href="struct_media_1_1_audio_file_1_1_handle.html">Handle</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>unsafe_handle</b> () const noexcept</td></tr>
 <tr class="separator:a098a67d82903006b0d77154243ff2166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb89c1be68f5de02d4d10b47302964fc"><td class="memItemLeft" align="right" valign="top"><a id="abb89c1be68f5de02d4d10b47302964fc"></a>
+std::optional&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>knownTempo</b> () const noexcept</td></tr>
+<tr class="separator:abb89c1be68f5de02d4d10b47302964fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>

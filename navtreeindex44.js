@@ -1,5 +1,13 @@
 var NAVTREEINDEX44 =
 {
+"classscore_1_1_selection_stack.html#af77e2dbba738b5cbd93cacd9a2964af8":[12,0,44,213,3],
+"classscore_1_1_selection_stack.html#afebe59a8eafa49e9033709d85b3bd7bd":[12,0,44,213,9],
+"classscore_1_1_serializable_document_plugin.html":[12,0,44,214],
+"classscore_1_1_serializable_document_plugin.html#a448df1dd2de8cb695194d0462761d475":[12,0,44,214,3],
+"classscore_1_1_serializable_document_plugin.html#a55f276184bea10f7b674ce1d75616a37":[12,0,44,214,0],
+"classscore_1_1_serializable_document_plugin.html#ac77e1f2986ec7bc375fcf11fc337d957":[12,0,44,214,1],
+"classscore_1_1_serializable_document_plugin.html#ad26a92ca12a114e70c55bdc274bd8a55":[12,0,44,214,2],
+"classscore_1_1_serializable_interface.html":[12,0,44,215],
 "classscore_1_1_serializable_interface.html#a5fb01291797aba3e8d0a8e3e2b7a645d":[12,0,44,215,4],
 "classscore_1_1_serializable_interface.html#a61d79a51e3a1ab7072d14660676cbed1":[12,0,44,215,2],
 "classscore_1_1_serializable_interface.html#a7370c1d6b71bffe747fa0d2453dac35f":[12,0,44,215,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX44 =
 "classscore_1_1_undo_list_widget.html#a190a51e8f94aa59a3f544353cc9d7462":[12,0,44,259,0],
 "classscore_1_1_undo_list_widget.html#a22d551bba925b2e3ce082a9c27e78410":[12,0,44,259,1],
 "classscore_1_1_undo_list_widget.html#ab16f70dbaeaf46441d116bcee5091d14":[12,0,44,259,2],
-"classscore_1_1_undo_panel_delegate.html":[12,0,44,260],
-"classscore_1_1_undo_panel_delegate.html#a93a8f951a28b257101807449d6cac2d4":[12,0,44,260,0],
-"classscore_1_1_undo_panel_delegate.html#aeb112edf6fceffc8761e9b92fa196901":[12,0,44,260,1],
-"classscore_1_1_undo_panel_delegate_factory.html":[12,0,44,261],
-"classscore_1_1_v_separator.html":[12,0,44,276],
-"classscore_1_1_v_separator.html#a744b26a9793f84b7f94bc74368486701":[12,0,44,276,0],
-"classscore_1_1_v_separator.html#a76f263a9518f56ee0aae6ab8f92836c5":[12,0,44,276,1],
-"classscore_1_1_validity_checker.html":[12,0,44,262],
-"classscore_1_1_validity_checker.html#a3d7c351a3f8d7f74a4f03df35c69e38e":[12,0,44,262,0]
+"classscore_1_1_undo_panel_delegate.html":[12,0,44,260]
 };
