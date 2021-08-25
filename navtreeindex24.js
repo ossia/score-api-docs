@@ -1,5 +1,6 @@
 var NAVTREEINDEX24 =
 {
+"class_process_1_1_port.html":[12,0,36,61],
 "class_process_1_1_port.html#a00897fdc9c42c2cee7416a3da07caa89":[12,0,36,61,34],
 "class_process_1_1_port.html#a008ce8269eeef436f171225def68c051":[12,0,36,61,14],
 "class_process_1_1_port.html#a0e1569fe010cee7dc4c4a7bbf6d7baaa":[12,0,36,61,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX24 =
 "class_protocols_1_1_artnet_device.html#adab0829ad1148077854d736cc6452dda":[12,0,37,3,2],
 "class_protocols_1_1_artnet_device.html#af7cd92191628ba011899d8da7492f828":[12,0,37,3,1],
 "class_protocols_1_1_artnet_protocol_factory.html":[12,0,37,4],
-"class_protocols_1_1_artnet_protocol_settings_widget.html":[12,0,37,5],
-"class_protocols_1_1_artnet_protocol_settings_widget.html#a129347b8392d7db00470c31870b7e5c9":[12,0,37,5,1]
+"class_protocols_1_1_artnet_protocol_settings_widget.html":[12,0,37,5]
 };

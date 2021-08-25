@@ -1,5 +1,6 @@
 var NAVTREEINDEX47 =
 {
+"classvst3_1_1vst__node__base.html#a6656e2a17178db46d0dcf0befaffc520":[12,0,53,19,23],
 "classvst3_1_1vst__node__base.html#a6b52cdec60800f8ec995db959fed9121":[12,0,53,19,6],
 "classvst3_1_1vst__node__base.html#a8a8da367dcb1ea32493b9b23710e8627":[12,0,53,19,9],
 "classvst3_1_1vst__node__base.html#a9050ceb060ec2032494f0bd02b4f493c":[12,0,53,19,19],
@@ -148,8 +149,8 @@ var NAVTREEINDEX47 =
 "data_structures_8hpp_source.html":[13,0,264],
 "element_finding_helper_8hpp_source.html":[13,0,358],
 "files.html":[13,0],
-"functions.html":[12,3,0],
 "functions.html":[12,3,0,0],
+"functions.html":[12,3,0],
 "functions_b.html":[12,3,0,1],
 "functions_c.html":[12,3,0,2],
 "functions_d.html":[12,3,0,3],
@@ -220,8 +221,8 @@ var NAVTREEINDEX47 =
 "namespace_engine.html":[12,0,8],
 "namespace_engine.html":[11,0,3],
 "namespace_engine_1_1_network.html":[11,0,3,0],
-"namespace_execution.html":[11,0,4],
 "namespace_execution.html":[12,0,9],
+"namespace_execution.html":[11,0,4],
 "namespace_gfx.html":[11,0,5],
 "namespace_gfx.html":[12,0,15],
 "namespace_inspector.html":[11,0,6],
@@ -233,8 +234,8 @@ var NAVTREEINDEX47 =
 "namespace_process.html":[11,0,9],
 "namespace_scenario.html":[12,0,42],
 "namespace_scenario.html":[11,0,10],
-"namespace_state.html":[11,0,12],
 "namespace_state.html":[12,0,47],
+"namespace_state.html":[11,0,12],
 "namespacemembers.html":[11,1,0],
 "namespacemembers_enum.html":[11,1,3],
 "namespacemembers_eval.html":[11,1,4],
@@ -243,11 +244,10 @@ var NAVTREEINDEX47 =
 "namespaces.html":[11,0],
 "namespacescore.html":[12,0,43],
 "namespacescore.html":[11,0,11],
-"namespacescore_1_1gfx.html":[11,0,11,0],
 "namespacescore_1_1gfx.html":[12,0,43,2],
+"namespacescore_1_1gfx.html":[11,0,11,0],
 "pages.html":[],
 "pluginfactories_8hpp_source.html":[13,0,840],
 "plugins_2score-lib-process_2_process_2_dataflow_2_control_widgets_8hpp_source.html":[13,0,203],
-"plugins_2score-lib-process_2_process_2_document_plugin_8hpp_source.html":[13,0,317],
-"plugins_2score-plugin-audio_2_audio_2_settings_2_presenter_8hpp_source.html":[13,0,860]
+"plugins_2score-lib-process_2_process_2_document_plugin_8hpp_source.html":[13,0,317]
 };

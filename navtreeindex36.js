@@ -1,5 +1,6 @@
 var NAVTREEINDEX36 =
 {
+"class_scenario_1_1_tool_palette.html#aa3728ba9f216532d68e504bcfe7426e4":[12,0,42,290,1],
 "class_scenario_1_1_tool_palette.html#ad0c89404f16eeed503b4ec71df9ce996":[12,0,42,290,0],
 "class_scenario_1_1_tool_palette.html#ae10717a82c84f293a308f6d66ecc54e7":[12,0,42,290,8],
 "class_scenario_1_1_transition___t.html":[12,0,42,291],
@@ -248,6 +249,5 @@ var NAVTREEINDEX36 =
 "class_spline_1_1_generator_dialog.html#acd3328c37debb6d5385b0764cf10daf3":[12,0,45,3,0],
 "class_spline_1_1_generator_dialog.html#afa16b0ad97ea47e23136f8e316687a20":[12,0,45,3,4],
 "class_spline_1_1_presenter.html":[12,0,45,4],
-"class_spline_1_1_presenter.html#a128dc3f22c4fe041a9bce905f767a7e0":[12,0,45,4,0],
-"class_spline_1_1_presenter.html#a3e38e439b6c86cd331a23b86ae82a937":[12,0,45,4,3]
+"class_spline_1_1_presenter.html#a128dc3f22c4fe041a9bce905f767a7e0":[12,0,45,4,0]
 };

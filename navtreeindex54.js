@@ -1,5 +1,6 @@
 var NAVTREEINDEX54 =
 {
+"struct_library_1_1_subcategories.html#a11fd10f4b5ec7c1411a63e9a545b26ed":[12,0,23,21,4],
 "struct_library_1_1_subcategories.html#a38abc7e3f7b6771acba3f546143bc864":[12,0,23,21,0],
 "struct_library_1_1_subcategories.html#a3fbaf50b9d1e21af51469494a78402cb":[12,0,23,21,2],
 "struct_library_1_1_subcategories.html#a73e0b24aa0f70667807f881fee9fa21f":[12,0,23,21,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX54 =
 "struct_metadata.html":[12,0,155],
 "struct_metadata_3_01_category__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html":[12,0,156],
 "struct_metadata_3_01_category__k_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[12,0,157],
-"struct_metadata_3_01_concrete_key__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html":[12,0,158],
-"struct_metadata_3_01_concrete_key__k_00_01_faust_d_s_p_1_1_fx_3_01mydsp_01_4_01_4.html":[12,0,159]
+"struct_metadata_3_01_concrete_key__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html":[12,0,158]
 };

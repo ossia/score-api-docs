@@ -8,7 +8,8 @@ var class_opaque_string =
     [ "OpaqueString", "class_opaque_string.html#a7aaffc54ed5df2f76afa2ddfab2584ba", null ],
     [ "operator=", "class_opaque_string.html#ac2137d51cc24a149c3442d982cbb9373", null ],
     [ "operator=", "class_opaque_string.html#a3f10db7efa332fa587349f7ffc411321", null ],
-    [ "operator<", "class_opaque_string.html#aa5d905eb3e3d56b3019b9dc275e1121c", null ],
-    [ "operator==", "class_opaque_string.html#a98220ad27f4280d78c42f330de430799", null ],
+    [ "operator!=", "class_opaque_string.html#a1754956baf067934b4ae5dc45147e540", null ],
+    [ "operator<", "class_opaque_string.html#a74b4ffc772d4c180734a7ba05a0039f3", null ],
+    [ "operator==", "class_opaque_string.html#aa306f226907f0cfb90bfe2ff5bcf2e96", null ],
     [ "impl", "class_opaque_string.html#a9fa67d4b90ea1a64375da0c33ded8a7e", null ]
 ];

@@ -1,5 +1,6 @@
 var NAVTREEINDEX48 =
 {
+"plugins_2score-plugin-audio_2_audio_2_settings_2_presenter_8hpp_source.html":[13,0,860],
 "plugins_2score-plugin-controlsurface_2_control_surface_2_metadata_8hpp_source.html":[13,0,663],
 "plugins_2score-plugin-controlsurface_2_control_surface_2_presenter_8hpp_source.html":[13,0,861],
 "plugins_2score-plugin-controlsurface_2_control_surface_2commands_8hpp_source.html":[13,0,160],
@@ -248,6 +249,5 @@ var NAVTREEINDEX48 =
 "struct_boost_variant2_data_stream_serializer.html#a6d918963e0e46f29634d70f12c48b412":[12,0,76,2],
 "struct_boost_variant2_data_stream_serializer.html#aa261438bcab2a836ba71219d75617d03":[12,0,76,0],
 "struct_boost_variant2_data_stream_serializer.html#ae4e1017a92ef9690a7851ffc27cf828c":[12,0,76,1],
-"struct_boost_variant2_data_stream_serializer.html#af136c5961159060d702d9a38bb0cca08":[12,0,76,4],
-"struct_boost_variant2_j_s_o_n_deserializer.html":[12,0,77]
+"struct_boost_variant2_data_stream_serializer.html#af136c5961159060d702d9a38bb0cca08":[12,0,76,4]
 };
