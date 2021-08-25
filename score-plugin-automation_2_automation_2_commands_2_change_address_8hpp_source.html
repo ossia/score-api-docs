@@ -143,46 +143,15 @@ $(document).ready(function(){initNavTree('score-plugin-automation_2_automation_2
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="struct_device_1_1_full_address_accessor_settings.html">Device::FullAddressAccessorSettings</a> m_old, m_new;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">namespace </span>Metronome</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">class </span>ProcessModel;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_metronome_1_1_change_metronome_address.html">   50</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_metronome_1_1_change_metronome_address.html">ChangeMetronomeAddress</a> final : <span class="keyword">public</span> <a class="code" href="classscore_1_1_command.html">score::Command</a></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  SCORE_COMMAND_DECL(</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      Automation::CommandFactoryName(),</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <a class="code" href="class_metronome_1_1_change_metronome_address.html">ChangeMetronomeAddress</a>,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="stringliteral">&quot;ChangeMetronomeAddress&quot;</span>)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="class_metronome_1_1_change_metronome_address.html">ChangeMetronomeAddress</a>(</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_metronome_1_1_process_model.html">ProcessModel</a>&amp; autom,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_state_1_1_address.html">State::Address</a>&amp; newval);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> undo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">void</span> redo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> serializeImpl(<a class="code" href="struct_data_stream_input.html">DataStreamInput</a>&amp;) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> deserializeImpl(<a class="code" href="struct_data_stream_output.html">DataStreamOutput</a>&amp;) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="class_path.html">Path&lt;ProcessModel&gt;</a> m_path;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="struct_state_1_1_address.html">State::Address</a> m_old, m_new;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astruct_state_1_1_address_html"><div class="ttname"><a href="struct_state_1_1_address.html">State::Address</a></div><div class="ttdoc">The Address struct.</div><div class="ttdef"><b>Definition:</b> Address.hpp:57</div></div>
 <div class="ttc" id="astruct_device_1_1_full_address_settings_html"><div class="ttname"><a href="struct_device_1_1_full_address_settings.html">Device::FullAddressSettings</a></div><div class="ttdef"><b>Definition:</b> AddressSettings.hpp:64</div></div>
-<div class="ttc" id="aclass_metronome_1_1_process_model_html"><div class="ttname"><a href="class_metronome_1_1_process_model.html">Metronome::ProcessModel</a></div><div class="ttdef"><b>Definition:</b> MetronomeModel.hpp:20</div></div>
 <div class="ttc" id="aclass_automation_1_1_process_model_html"><div class="ttname"><a href="class_automation_1_1_process_model.html">Automation::ProcessModel</a></div><div class="ttdef"><b>Definition:</b> AutomationModel.hpp:32</div></div>
 <div class="ttc" id="anamespace_state_html"><div class="ttname"><a href="namespace_state.html">State</a></div><div class="ttdoc">Utilities for OSSIA data structures.</div><div class="ttdef"><b>Definition:</b> DeviceInterface.hpp:31</div></div>
 <div class="ttc" id="aclass_automation_1_1_change_address_html"><div class="ttname"><a href="class_automation_1_1_change_address.html">Automation::ChangeAddress</a></div><div class="ttdef"><b>Definition:</b> score-plugin-automation/Automation/Commands/ChangeAddress.hpp:19</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:15</div></div>
 <div class="ttc" id="aclassscore_1_1_command_html"><div class="ttname"><a href="classscore_1_1_command.html">score::Command</a></div><div class="ttdoc">The Command class.</div><div class="ttdef"><b>Definition:</b> Command.hpp:33</div></div>
 <div class="ttc" id="astruct_data_stream_output_html"><div class="ttname"><a href="struct_data_stream_output.html">DataStreamOutput</a></div><div class="ttdef"><b>Definition:</b> DataStreamHelpers.hpp:137</div></div>
-<div class="ttc" id="aclass_metronome_1_1_change_metronome_address_html"><div class="ttname"><a href="class_metronome_1_1_change_metronome_address.html">Metronome::ChangeMetronomeAddress</a></div><div class="ttdef"><b>Definition:</b> score-plugin-automation/Automation/Commands/ChangeAddress.hpp:50</div></div>
 <div class="ttc" id="aclass_path_html"><div class="ttname"><a href="class_path.html">Path&lt; ProcessModel &gt;</a></div></div>
 <div class="ttc" id="astruct_device_1_1_full_address_accessor_settings_html"><div class="ttname"><a href="struct_device_1_1_full_address_accessor_settings.html">Device::FullAddressAccessorSettings</a></div><div class="ttdef"><b>Definition:</b> AddressSettings.hpp:138</div></div>
 <div class="ttc" id="astruct_data_stream_input_html"><div class="ttname"><a href="struct_data_stream_input.html">DataStreamInput</a></div><div class="ttdef"><b>Definition:</b> DataStreamHelpers.hpp:133</div></div>

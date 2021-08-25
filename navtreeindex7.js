@@ -1,13 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"class_curve_1_1_easing_segment.html#a4e706cf1f3c5678bbc3aa4e630d370e0":[12,0,5,17,0],
-"class_curve_1_1_easing_segment.html#a5ad07854c61fd2d42ba6e58a25bcb05c":[12,0,5,17,16],
-"class_curve_1_1_easing_segment.html#a713a6ab002177eae15cf1f6004a5bcaa":[12,0,5,17,9],
-"class_curve_1_1_easing_segment.html#a8014f05668cc74e02bf3a5798adba227":[12,0,5,17,19],
-"class_curve_1_1_easing_segment.html#a80b60a693ca6a6f1d9bde724231461b0":[12,0,5,17,2],
-"class_curve_1_1_easing_segment.html#a918122120572672532ec498c6352af78":[12,0,5,17,15],
-"class_curve_1_1_easing_segment.html#a9f866728554e1d7ab9ce705fb15d65cc":[12,0,5,17,5],
-"class_curve_1_1_easing_segment.html#aac3af944279e58cc9ea05564c53e66ab":[12,0,5,17,3],
 "class_curve_1_1_easing_segment.html#aaf68dc5f2bfe2ccdac65fb6e4eb154ff":[12,0,5,17,10],
 "class_curve_1_1_easing_segment.html#ab52178e6ea582ed31a26130f418b74c7":[12,0,5,17,12],
 "class_curve_1_1_easing_segment.html#abdd9ff5c240f4358da792450ddb7354c":[12,0,5,17,18],
@@ -249,5 +241,13 @@ var NAVTREEINDEX7 =
 "class_curve_1_1_set_segment_parameters_command_object.html#a013b93c8cbfc4fe361328cec17399fc4":[12,0,5,43,4],
 "class_curve_1_1_set_segment_parameters_command_object.html#a1ec0b6c7cfafc4cd5b5751facc72eaaf":[12,0,5,43,0],
 "class_curve_1_1_set_segment_parameters_command_object.html#a23832159bdde23295d3635f348beb6a6":[12,0,5,43,1],
-"class_curve_1_1_set_segment_parameters_command_object.html#a4f2a0e0178a749dff9cae663ae843a23":[12,0,5,43,3]
+"class_curve_1_1_set_segment_parameters_command_object.html#a4f2a0e0178a749dff9cae663ae843a23":[12,0,5,43,3],
+"class_curve_1_1_set_segment_parameters_command_object.html#a6ad497a781c08f5a088c69b30d9e6408":[12,0,5,43,2],
+"class_curve_1_1_set_segment_parameters_command_object.html#ad58a2ee1bdd319a429ea45651d992ad4":[12,0,5,43,5],
+"class_curve_1_1_set_segment_tool.html":[12,0,5,44],
+"class_curve_1_1_set_segment_tool.html#a1b6b1330b7de0c48d80a065e5e71887c":[12,0,5,44,0],
+"class_curve_1_1_settings_1_1_model.html":[12,0,5,1,0],
+"class_curve_1_1_settings_1_1_model.html#a27079bc56986a36a7738f276ed874958":[12,0,5,1,0,4],
+"class_curve_1_1_settings_1_1_model.html#a2f5e0aae98e34ff2fbd58378f1d5038f":[12,0,5,1,0,3],
+"class_curve_1_1_settings_1_1_model.html#a831c000f8768512055314f7805580aa1":[12,0,5,1,0,0]
 };

@@ -434,18 +434,6 @@ var annotated_dup =
       [ "SndfileDecoder", "class_media_1_1_sndfile_decoder.html", "class_media_1_1_sndfile_decoder" ],
       [ "SoundComponentSetup", "class_media_1_1_sound_component_setup.html", null ]
     ] ],
-    [ "Metronome", null, [
-      [ "RecreateOnPlay", null, [
-        [ "Component", "class_metronome_1_1_recreate_on_play_1_1_component.html", "class_metronome_1_1_recreate_on_play_1_1_component" ]
-      ] ],
-      [ "ChangeMetronomeAddress", "class_metronome_1_1_change_metronome_address.html", "class_metronome_1_1_change_metronome_address" ],
-      [ "Colors", "class_metronome_1_1_colors.html", "class_metronome_1_1_colors" ],
-      [ "InspectorFactory", "class_metronome_1_1_inspector_factory.html", null ],
-      [ "InspectorWidget", "class_metronome_1_1_inspector_widget.html", "class_metronome_1_1_inspector_widget" ],
-      [ "LayerPresenter", "class_metronome_1_1_layer_presenter.html", "class_metronome_1_1_layer_presenter" ],
-      [ "LayerView", "class_metronome_1_1_layer_view.html", "class_metronome_1_1_layer_view" ],
-      [ "ProcessModel", "class_metronome_1_1_process_model.html", "class_metronome_1_1_process_model" ]
-    ] ],
     [ "Midi", null, [
       [ "Executor", null, [
         [ "Component", "class_midi_1_1_executor_1_1_component.html", "class_midi_1_1_executor_1_1_component" ]
