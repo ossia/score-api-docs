@@ -1,5 +1,6 @@
 var NAVTREEINDEX47 =
 {
+"classvst3_1_1vst__node__base.html#a6b52cdec60800f8ec995db959fed9121":[12,0,53,19,6],
 "classvst3_1_1vst__node__base.html#a8a8da367dcb1ea32493b9b23710e8627":[12,0,53,19,9],
 "classvst3_1_1vst__node__base.html#a9050ceb060ec2032494f0bd02b4f493c":[12,0,53,19,19],
 "classvst3_1_1vst__node__base.html#a981daa19d476927047c418dfd9dcc682":[12,0,53,19,15],
@@ -242,12 +243,11 @@ var NAVTREEINDEX47 =
 "namespaces.html":[11,0],
 "namespacescore.html":[12,0,43],
 "namespacescore.html":[11,0,11],
-"namespacescore_1_1gfx.html":[12,0,43,2],
 "namespacescore_1_1gfx.html":[11,0,11,0],
+"namespacescore_1_1gfx.html":[12,0,43,2],
 "pages.html":[],
 "pluginfactories_8hpp_source.html":[13,0,840],
 "plugins_2score-lib-process_2_process_2_dataflow_2_control_widgets_8hpp_source.html":[13,0,203],
 "plugins_2score-lib-process_2_process_2_document_plugin_8hpp_source.html":[13,0,317],
-"plugins_2score-plugin-audio_2_audio_2_settings_2_presenter_8hpp_source.html":[13,0,860],
-"plugins_2score-plugin-controlsurface_2_control_surface_2_metadata_8hpp_source.html":[13,0,663]
+"plugins_2score-plugin-audio_2_audio_2_settings_2_presenter_8hpp_source.html":[13,0,860]
 };

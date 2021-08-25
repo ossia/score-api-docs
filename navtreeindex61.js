@@ -1,5 +1,6 @@
 var NAVTREEINDEX61 =
 {
+"struct_state_1_1_address_accessor.html#a8e43baa498801b81ac8a9a2918fc3fba":[12,0,47,1,9],
 "struct_state_1_1_address_accessor.html#a9422915131df95e031deed3d388fd818":[12,0,47,1,8],
 "struct_state_1_1_address_accessor.html#a96b24a074d7e87addf08e3dae23f4566":[12,0,47,1,1],
 "struct_state_1_1_address_accessor.html#a9781032656030a90a74fb79e65eaab0b":[12,0,47,1,15],
@@ -248,6 +249,5 @@ var NAVTREEINDEX61 =
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base__variant_01_4.html#afd80d9b439c3c7a066c79b557935cc9b":[12,0,449,1],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1flat__map_3_01_t_00_01_u_01_4_01_4.html":[12,0,450],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1flat__map_3_01_t_00_01_u_01_4_01_4.html#a19383f0b2dfbc830707a904884742ac0":[12,0,450,0],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1flat__set_3_01_t_01_4_01_4.html":[12,0,451],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1flat__set_3_01_t_01_4_01_4.html#a980f02980701a8b574a950833b04a74f":[12,0,451,0]
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1flat__set_3_01_t_01_4_01_4.html":[12,0,451]
 };
