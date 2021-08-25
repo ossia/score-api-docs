@@ -828,6 +828,7 @@ var annotated_dup =
     [ "Video", null, [
       [ "CameraInput", "class_video_1_1_camera_input.html", "class_video_1_1_camera_input" ],
       [ "FrameQueue", "struct_video_1_1_frame_queue.html", "struct_video_1_1_frame_queue" ],
+      [ "FreeAVFrame", "struct_video_1_1_free_a_v_frame.html", "struct_video_1_1_free_a_v_frame" ],
       [ "ReadFrame", "struct_video_1_1_read_frame.html", "struct_video_1_1_read_frame" ],
       [ "VideoDecoder", "class_video_1_1_video_decoder.html", "class_video_1_1_video_decoder" ],
       [ "VideoInterface", "struct_video_1_1_video_interface.html", "struct_video_1_1_video_interface" ],
