@@ -1,5 +1,13 @@
 var NAVTREEINDEX67 =
 {
+"structscore_1_1gfx_1_1isf__input__port__vis.html#a90500a3f2c9031238756edc3145bdb1d":[12,0,44,2,16,0],
+"structscore_1_1gfx_1_1isf__input__port__vis.html#a91b84ca3d96d6ade16e08716e5eaa0d3":[12,0,44,2,16,4],
+"structscore_1_1gfx_1_1isf__input__port__vis.html#acbeae2a5e9c9aea8bfb0ac0132759d65":[12,0,44,2,16,11],
+"structscore_1_1gfx_1_1isf__input__port__vis.html#aeddf00466f96d19b12145dfc395cbed4":[12,0,44,2,16,7],
+"structscore_1_1gfx_1_1isf__input__size__vis.html":[12,0,44,2,17],
+"structscore_1_1gfx_1_1isf__input__size__vis.html#a1aa28de3dd2ff7370e6cb292d22bf5f5":[12,0,44,2,17,4],
+"structscore_1_1gfx_1_1isf__input__size__vis.html#a323dc90323c01f4da80e651b5a92903f":[12,0,44,2,17,8],
+"structscore_1_1gfx_1_1isf__input__size__vis.html#a484e06dc02248e4f3336330ce3be19fe":[12,0,44,2,17,3],
 "structscore_1_1gfx_1_1isf__input__size__vis.html#a5b281285374106ad7fa57ea477d0e351":[12,0,44,2,17,7],
 "structscore_1_1gfx_1_1isf__input__size__vis.html#a739c38fe358fa0077c5eb217144f742b":[12,0,44,2,17,0],
 "structscore_1_1gfx_1_1isf__input__size__vis.html#a9044528beddcc8d16413719458428877":[12,0,44,2,17,10],
@@ -241,13 +249,5 @@ var NAVTREEINDEX67 =
 "structvst3_1_1vst__node__base_1_1_plugin_handle.html":[12,0,54,19,0],
 "structvst3_1_1vst__node__base_1_1_plugin_handle.html#a1b205aea2070228e15b30bac083546a8":[12,0,54,19,0,0],
 "structvst3_1_1vst__node__base_1_1_plugin_handle.html#a41b488ef178a251d31562023744424b6":[12,0,54,19,0,1],
-"structvst3_1_1vst__node__base_1_1_plugin_handle.html#a5edeed9593bb85938cb691a6fbcbbca7":[12,0,54,19,0,2],
-"structvst3_1_1vst__node__base_1_1_plugin_handle.html#a7584b216f07a57998d1e5ef36f0c32c6":[12,0,54,19,0,3],
-"structvst3_1_1vst__node__base_1_1vst__control.html":[12,0,54,19,1],
-"structvst3_1_1vst__node__base_1_1vst__control.html#a1c4f1d3f6df59a24180770d93eb7d445":[12,0,54,19,1,1],
-"structvst3_1_1vst__node__base_1_1vst__control.html#a7527a09d5e47be54d681075e864597be":[12,0,54,19,1,2],
-"structvst3_1_1vst__node__base_1_1vst__control.html#a7688f574ea15627529c83e52d8f9a3fb":[12,0,54,19,1,0],
-"structvst_1_1_a_effect_wrapper.html":[12,0,53,0],
-"structvst_1_1_a_effect_wrapper.html#a3c50379d6321950fbe7776af7388bfed":[12,0,53,0,6],
-"structvst_1_1_a_effect_wrapper.html#a58ca91cca331a97d3e08590390fdf103":[12,0,53,0,7]
+"structvst3_1_1vst__node__base_1_1_plugin_handle.html#a5edeed9593bb85938cb691a6fbcbbca7":[12,0,54,19,0,2]
 };

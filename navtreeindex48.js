@@ -1,5 +1,10 @@
 var NAVTREEINDEX48 =
 {
+"lib_2core_2settings_2_settings_8hpp_source.html":[13,0,1133],
+"lib_2core_2view_2_window_8hpp_source.html":[13,0,1331],
+"lib_2score_2model_2_component_8hpp_source.html":[13,0,182],
+"lib_2score_2plugins_2documentdelegate_2plugin_2_document_plugin_8hpp_source.html":[13,0,316],
+"lib_2score_2tools_2_metadata_8hpp_source.html":[13,0,662],
 "lib_2score_2widgets_2_control_widgets_8hpp_source.html":[13,0,202],
 "lv2__atom__helpers_8hpp_source.html":[13,0,625],
 "models_8hpp_source.html":[13,0,737],
@@ -17,13 +22,13 @@ var NAVTREEINDEX48 =
 "namespace_execution.html":[11,0,4],
 "namespace_gfx.html":[12,0,15],
 "namespace_gfx.html":[11,0,5],
-"namespace_inspector.html":[12,0,17],
 "namespace_inspector.html":[11,0,6],
+"namespace_inspector.html":[12,0,17],
 "namespace_local_tree.html":[11,0,7],
 "namespace_local_tree.html":[12,0,24],
 "namespace_plugin_loader.html":[11,0,8],
-"namespace_process.html":[11,0,9],
 "namespace_process.html":[12,0,37],
+"namespace_process.html":[11,0,9],
 "namespace_scenario.html":[12,0,43],
 "namespace_scenario.html":[11,0,10],
 "namespace_state.html":[12,0,48],
@@ -244,10 +249,5 @@ var NAVTREEINDEX48 =
 "struct_atom_buffer.html#a4b235ae85d608b8f7a0cd74c7e15afdd":[12,0,65,4],
 "struct_atom_buffer.html#a56d0fa21194799d09277c4ec05ac2b30":[12,0,65,7],
 "struct_atom_buffer.html#a56d985b3af09bbe4f5b083676b8cde7e":[12,0,65,5],
-"struct_atom_buffer.html#a825c90bc1f9a1cf027dc2e9c0352ff1f":[12,0,65,3],
-"struct_atom_buffer.html#a83672d9abb1cb3cf352dbf62aa69e139":[12,0,65,0],
-"struct_atom_buffer.html#af2e5947c5458b4b8184c3becc05d238b":[12,0,65,6],
-"struct_audio_1_1_audio_preview_executor_1_1sound.html":[12,0,0,5,0],
-"struct_audio_1_1_audio_preview_executor_1_1sound.html#a000ad74d686baff6dc6dacfb8f3ab75f":[12,0,0,5,0,1],
-"struct_audio_1_1_audio_preview_executor_1_1sound.html#a1e62f5df8f131127966ecdcf709fd3d1":[12,0,0,5,0,2]
+"struct_atom_buffer.html#a825c90bc1f9a1cf027dc2e9c0352ff1f":[12,0,65,3]
 };

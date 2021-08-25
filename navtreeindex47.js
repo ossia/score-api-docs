@@ -1,5 +1,10 @@
 var NAVTREEINDEX47 =
 {
+"classvst3_1_1_window.html#ae2d3498b276424a42747196f2138f19b":[12,0,54,25,0],
+"classvst3_1_1param__changes.html":[12,0,54,10],
+"classvst3_1_1param__changes.html#a127330b6af778b47c4129bd14977453e":[12,0,54,10,5],
+"classvst3_1_1param__changes.html#a28bbf9cc9d4553a7dbe1268d81391314":[12,0,54,10,4],
+"classvst3_1_1param__changes.html#a5104bd84ebf440090ec29d7b91742d68":[12,0,54,10,0],
 "classvst3_1_1param__changes.html#a76cb40743881be6b16985a1df4a400d5":[12,0,54,10,6],
 "classvst3_1_1param__changes.html#a9a2894084ff1101aa20b0e4345c68895":[12,0,54,10,1],
 "classvst3_1_1param__changes.html#aa23c7c0b3845473947168160d055def1":[12,0,54,10,2],
@@ -191,8 +196,8 @@ var NAVTREEINDEX47 =
 "data_structures_8hpp_source.html":[13,0,264],
 "element_finding_helper_8hpp_source.html":[13,0,358],
 "files.html":[13,0],
-"functions.html":[12,3,0,0],
 "functions.html":[12,3,0],
+"functions.html":[12,3,0,0],
 "functions_b.html":[12,3,0,1],
 "functions_c.html":[12,3,0,2],
 "functions_d.html":[12,3,0,3],
@@ -244,10 +249,5 @@ var NAVTREEINDEX47 =
 "intro_8hpp_source.html":[13,0,552],
 "isf_8hpp_source.html":[13,0,557],
 "lib_2core_2documentation_2commands_8hpp_source.html":[13,0,159],
-"lib_2core_2presenter_2_presenter_8hpp_source.html":[13,0,865],
-"lib_2core_2settings_2_settings_8hpp_source.html":[13,0,1133],
-"lib_2core_2view_2_window_8hpp_source.html":[13,0,1331],
-"lib_2score_2model_2_component_8hpp_source.html":[13,0,182],
-"lib_2score_2plugins_2documentdelegate_2plugin_2_document_plugin_8hpp_source.html":[13,0,316],
-"lib_2score_2tools_2_metadata_8hpp_source.html":[13,0,662]
+"lib_2core_2presenter_2_presenter_8hpp_source.html":[13,0,865]
 };

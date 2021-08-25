@@ -1,5 +1,13 @@
 var NAVTREEINDEX64 =
 {
+"structscore_1_1_document_list.html#a437c8b31911df74aa8cdbe54ad653249":[12,0,44,66,1],
+"structscore_1_1_document_list.html#a43c52aad8170d023c6959c0267c1bcbb":[12,0,44,66,5],
+"structscore_1_1_document_list.html#a588038eda01cc6ce01951d123f8f5a4f":[12,0,44,66,0],
+"structscore_1_1_document_list.html#a6b2b6d6611eb07756780f924d2214a4f":[12,0,44,66,3],
+"structscore_1_1_document_list.html#a81ebd56bc541dea18f990144c7f7ead5":[12,0,44,66,2],
+"structscore_1_1_document_metadata.html":[12,0,44,68],
+"structscore_1_1_document_metadata.html#a0629305b4b1e4ac5bfdfb71f47be5344":[12,0,44,68,2],
+"structscore_1_1_document_metadata.html#a19d2cb2e4242197e327a9913eb8204b8":[12,0,44,68,9],
 "structscore_1_1_document_metadata.html#a1ea482395562765109e21b491fd5d709":[12,0,44,68,13],
 "structscore_1_1_document_metadata.html#a22a428af396c67709d4dafd61f1ff447":[12,0,44,68,8],
 "structscore_1_1_document_metadata.html#a27954b53b65d6fc96cd75acfb5eb7c85":[12,0,44,68,18],
@@ -241,13 +249,5 @@ var NAVTREEINDEX64 =
 "structscore_1_1_speed_slider.html#a143584fa0f8ec0035440a3d01675eded":[12,0,44,232,7],
 "structscore_1_1_speed_slider.html#a3cf625fbf06b4563120217641455a11f":[12,0,44,232,2],
 "structscore_1_1_speed_slider.html#a412cc08b8b1d6ca2c380863c30d4b3f7":[12,0,44,232,4],
-"structscore_1_1_speed_slider.html#a46008ccfbbf79ec274c391a79077eaf9":[12,0,44,232,6],
-"structscore_1_1_speed_slider.html#a464ab2a90cf80cf99bc88be8da9d7563":[12,0,44,232,0],
-"structscore_1_1_speed_slider.html#a4e2fb4f7cfac76c14c8c6d9813e5bee4":[12,0,44,232,8],
-"structscore_1_1_speed_slider.html#a6a827fde06a65121c72089d0dbb6c836":[12,0,44,232,9],
-"structscore_1_1_speed_slider.html#a7941f8f8ef492b4b8582bc413e13722e":[12,0,44,232,5],
-"structscore_1_1_speed_slider.html#a96c3ac5c95dc913002d295e4ec14026e":[12,0,44,232,1],
-"structscore_1_1_speed_slider.html#a9bec98499ac4893367cdb76fd38f006f":[12,0,44,232,3],
-"structscore_1_1_start_screen_link.html":[12,0,44,237],
-"structscore_1_1_start_screen_link.html#a070d794ddbd335668b4d2906230dd7cb":[12,0,44,237,4]
+"structscore_1_1_speed_slider.html#a46008ccfbbf79ec274c391a79077eaf9":[12,0,44,232,6]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX61 =
 {
+"struct_scenario_1_1get__curve__domain.html#afbdfce96c14a7256cae0bacbe77718c6":[12,0,43,111,6],
+"struct_scenario_1_1get__start__end.html":[12,0,43,112],
+"struct_scenario_1_1get__start__end.html#a3df7b8e469d15d5d2076ab5d4baea4ca":[12,0,43,112,4],
+"struct_scenario_1_1get__start__end.html#a5177d7b34fd1df48abce50cf4c694e78":[12,0,43,112,2],
+"struct_scenario_1_1get__start__end.html#a5473414927e5dcfc53e9f2e0b39de3f2":[12,0,43,112,3],
+"struct_scenario_1_1get__start__end.html#a5cce78b037a1e0c75c0dd18d8de8e08f":[12,0,43,112,5],
+"struct_scenario_1_1get__start__end.html#a8f44c867f88d0fca7670faf15f08048f":[12,0,43,112,6],
+"struct_scenario_1_1get__start__end.html#aa08ae25111ce84d49be7e816ab606433":[12,0,43,112,1],
 "struct_scenario_1_1get__start__end.html#ac1f9a44dcf8aa1067f68ef0d09ed4f48":[12,0,43,112,0],
 "struct_scenario_1_1value__size.html":[12,0,43,311],
 "struct_scenario_1_1value__size.html#a14224f71dbbd24cbe4c2b6125e19cd47":[12,0,43,311,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX61 =
 "struct_t_serializer_3_01_data_stream_00_01std_1_1unordered__map_3_01_t_00_01_u_01_4_01_4.html":[12,0,424],
 "struct_t_serializer_3_01_data_stream_00_01std_1_1variant_3_01_args_8_8_8_01_4_01_4.html":[12,0,425],
 "struct_t_serializer_3_01_data_stream_00_01std_1_1variant_3_01_args_8_8_8_01_4_01_4.html#a3598dcb68fe0ba287da411336a8980ff":[12,0,425,0],
-"struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01_t_00_01_alloc_01_4_00_01std_1_1enab3605288434eb5962fb34730a4a06e332.html":[12,0,429],
-"struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01_t_00_01_alloc_01_4_00_01std_1_1enabe39984c95d0489c1ceb4104524c4ac76.html":[12,0,428],
-"struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01_t_01_5_00_01_alloc_01_4_01_4.html":[12,0,427],
-"struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01bool_01_4_01_4.html":[12,0,426],
-"struct_t_serializer_3_01_data_stream_00_01tsl_1_1hopscotch__map_3_01_t_00_01_u_01_4_01_4.html":[12,0,434],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[12,0,441],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html#a7582390e1429d056f975b2261f99d1dd":[12,0,441,0],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_id_3_01_t_01_4_01_4.html":[12,0,442],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_id_3_01_t_01_4_01_4.html#a46e65e694ab43e40c6c72ed2ba262901":[12,0,442,0]
+"struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01_t_00_01_alloc_01_4_00_01std_1_1enab3605288434eb5962fb34730a4a06e332.html":[12,0,429]
 };

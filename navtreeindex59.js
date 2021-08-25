@@ -1,5 +1,10 @@
 var NAVTREEINDEX59 =
 {
+"struct_recording_1_1_record_automation_first_callback_visitor.html#abf0ac38d42a1428a440cc992b0b31220":[12,0,39,8,10],
+"struct_recording_1_1_record_automation_subsequent_callback_visitor.html":[12,0,39,9],
+"struct_recording_1_1_record_automation_subsequent_callback_visitor.html#a07fe12187305407b5bef98836d3da805":[12,0,39,9,8],
+"struct_recording_1_1_record_automation_subsequent_callback_visitor.html#a316b7940f7494666ca0748b000d3d2a9":[12,0,39,9,7],
+"struct_recording_1_1_record_automation_subsequent_callback_visitor.html#a443ec115a967a7d4f61153a659a44321":[12,0,39,9,6],
 "struct_recording_1_1_record_automation_subsequent_callback_visitor.html#a68dfe8c833b1549746dc22514af617fa":[12,0,39,9,5],
 "struct_recording_1_1_record_automation_subsequent_callback_visitor.html#a9316cbb253183261004235b6465597f2":[12,0,39,9,3],
 "struct_recording_1_1_record_automation_subsequent_callback_visitor.html#a931796c91c3dcff9a04e3d13384941c3":[12,0,39,9,10],
@@ -244,10 +249,5 @@ var NAVTREEINDEX59 =
 "struct_scenario_1_1_displayed_elements_presenter_container.html#aea4769915bc7761c5c5ec3aeab1625cc":[12,0,43,51,2],
 "struct_scenario_1_1_element_traits.html":[12,0,43,77],
 "struct_scenario_1_1_element_traits_3_01_base_scenario_container_00_01_event_model_01_4.html":[12,0,43,78],
-"struct_scenario_1_1_element_traits_3_01_base_scenario_container_00_01_interval_model_01_4.html":[12,0,43,79],
-"struct_scenario_1_1_element_traits_3_01_base_scenario_container_00_01_state_model_01_4.html":[12,0,43,80],
-"struct_scenario_1_1_element_traits_3_01_base_scenario_container_00_01_time_sync_model_01_4.html":[12,0,43,81],
-"struct_scenario_1_1_element_traits_3_01_scenario_1_1_process_model_00_01_event_model_01_4.html":[12,0,43,82],
-"struct_scenario_1_1_element_traits_3_01_scenario_1_1_process_model_00_01_interval_model_01_4.html":[12,0,43,83],
-"struct_scenario_1_1_element_traits_3_01_scenario_1_1_process_model_00_01_state_model_01_4.html":[12,0,43,84]
+"struct_scenario_1_1_element_traits_3_01_base_scenario_container_00_01_interval_model_01_4.html":[12,0,43,79]
 };

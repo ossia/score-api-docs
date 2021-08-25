@@ -1,5 +1,10 @@
 var NAVTREEINDEX58 =
 {
+"struct_protocols_1_1_serial_specific_settings.html#a0175d7cfa698fb7ed00b5380bdba05a6":[12,0,38,56,1],
+"struct_protocols_1_1_serial_specific_settings.html#ae724d472ff0bc96dbb35c7b0a3d12e05":[12,0,38,56,0],
+"struct_protocols_1_1_settings_1_1_midi_a_p_i.html":[12,0,38,1,0],
+"struct_protocols_1_1_settings_1_1_midi_a_p_i.html#a2f82e35ee43bedd9e16c7addc715c910":[12,0,38,1,0,0],
+"struct_protocols_1_1_w_s_specific_settings.html":[12,0,38,71],
 "struct_protocols_1_1_w_s_specific_settings.html#ac42f002e23e40296fea2c1915fc88f1f":[12,0,38,71,1],
 "struct_protocols_1_1_w_s_specific_settings.html#af28ad233c2dc27f7a1bd1c0e8bcf7511":[12,0,38,71,0],
 "struct_protocols_1_1_wiimote_specific_settings.html":[12,0,38,67],
@@ -244,10 +249,5 @@ var NAVTREEINDEX58 =
 "struct_recording_1_1_record_automation_first_callback_visitor.html#a81a4b5e938315a940cda0cde0f859311":[12,0,39,8,8],
 "struct_recording_1_1_record_automation_first_callback_visitor.html#a94f6384cc433db7bc77a7c89a76b66f8":[12,0,39,8,3],
 "struct_recording_1_1_record_automation_first_callback_visitor.html#ab3905cc92846ab3c952f402cadf9d66b":[12,0,39,8,7],
-"struct_recording_1_1_record_automation_first_callback_visitor.html#ab676a410afa6e7fe19ca5720d3f04f53":[12,0,39,8,6],
-"struct_recording_1_1_record_automation_first_callback_visitor.html#abf0ac38d42a1428a440cc992b0b31220":[12,0,39,8,10],
-"struct_recording_1_1_record_automation_subsequent_callback_visitor.html":[12,0,39,9],
-"struct_recording_1_1_record_automation_subsequent_callback_visitor.html#a07fe12187305407b5bef98836d3da805":[12,0,39,9,8],
-"struct_recording_1_1_record_automation_subsequent_callback_visitor.html#a316b7940f7494666ca0748b000d3d2a9":[12,0,39,9,7],
-"struct_recording_1_1_record_automation_subsequent_callback_visitor.html#a443ec115a967a7d4f61153a659a44321":[12,0,39,9,6]
+"struct_recording_1_1_record_automation_first_callback_visitor.html#ab676a410afa6e7fe19ca5720d3f04f53":[12,0,39,8,6]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX65 =
 {
+"structscore_1_1_speed_slider.html#a464ab2a90cf80cf99bc88be8da9d7563":[12,0,44,232,0],
+"structscore_1_1_speed_slider.html#a4e2fb4f7cfac76c14c8c6d9813e5bee4":[12,0,44,232,8],
+"structscore_1_1_speed_slider.html#a6a827fde06a65121c72089d0dbb6c836":[12,0,44,232,9],
+"structscore_1_1_speed_slider.html#a7941f8f8ef492b4b8582bc413e13722e":[12,0,44,232,5],
+"structscore_1_1_speed_slider.html#a96c3ac5c95dc913002d295e4ec14026e":[12,0,44,232,1],
+"structscore_1_1_speed_slider.html#a9bec98499ac4893367cdb76fd38f006f":[12,0,44,232,3],
+"structscore_1_1_start_screen_link.html":[12,0,44,237],
+"structscore_1_1_start_screen_link.html#a070d794ddbd335668b4d2906230dd7cb":[12,0,44,237,4],
 "structscore_1_1_start_screen_link.html#a40c125be54bb8a2845d5775c31e5a8bd":[12,0,44,237,2],
 "structscore_1_1_start_screen_link.html#a4b0b8ee9b144cd4733573e1cb83971f6":[12,0,44,237,3],
 "structscore_1_1_start_screen_link.html#a578ab78d445fdcea5b261c82029fe6b6":[12,0,44,237,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX65 =
 "structscore_1_1gfx_1_1_full_screen_image_node.html#a27e4621131c903fc28a566e1aa3d6faf":[12,0,44,2,6,3],
 "structscore_1_1gfx_1_1_full_screen_image_node.html#abd94073fc5b310dbd057d80222a882b3":[12,0,44,2,6,1],
 "structscore_1_1gfx_1_1_graph.html":[12,0,44,2,9],
-"structscore_1_1gfx_1_1_graph.html#a1693837e0d684408bb84af3f619cfc8a":[12,0,44,2,9,8],
-"structscore_1_1gfx_1_1_graph.html#a1c3b40f6e90a21e4fb0636257f7bc975":[12,0,44,2,9,5],
-"structscore_1_1gfx_1_1_graph.html#a2053b9d1b4c0466c9cc5fe87be8cb5a5":[12,0,44,2,9,7],
-"structscore_1_1gfx_1_1_graph.html#a27b1df43407c54984e12e5717382c983":[12,0,44,2,9,2],
-"structscore_1_1gfx_1_1_graph.html#a40ef061c5ac78aaa6243723c1cd95154":[12,0,44,2,9,6],
-"structscore_1_1gfx_1_1_graph.html#a45f84cb4eb3648b7cb42c45e46e44575":[12,0,44,2,9,9],
-"structscore_1_1gfx_1_1_graph.html#a657e52f4fed5ca3becc4d019b775e34c":[12,0,44,2,9,0],
-"structscore_1_1gfx_1_1_graph.html#a956b5fda40333edffaa3655bbf18f4c6":[12,0,44,2,9,4],
-"structscore_1_1gfx_1_1_graph.html#ac01ddf31f96f7f24e070fba6635f9993":[12,0,44,2,9,3]
+"structscore_1_1gfx_1_1_graph.html#a1693837e0d684408bb84af3f619cfc8a":[12,0,44,2,9,8]
 };

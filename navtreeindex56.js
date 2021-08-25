@@ -1,5 +1,10 @@
 var NAVTREEINDEX56 =
 {
+"struct_nodes_1_1_l_f_o_1_1_node_1_1_state.html#a6bbff0c3c7ff52d567d60a799d472503":[12,0,32,14,0,1,1],
+"struct_nodes_1_1_math_audio_filter_1_1_node.html":[12,0,32,15,0],
+"struct_nodes_1_1_math_audio_filter_1_1_node.html#a8ad69373459e4a390a800240b8a19615":[12,0,32,15,0,2],
+"struct_nodes_1_1_math_audio_filter_1_1_node_1_1_metadata.html":[12,0,32,15,0,0],
+"struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html":[12,0,32,15,0,1],
 "struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html#a0131d16bfe370f1f5a459be36da8b636":[12,0,32,15,0,1,11],
 "struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html#a3d4250d7f11a1320c944f93b8aa3c9d2":[12,0,32,15,0,1,3],
 "struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html#a47bb0378530a9bf3a449b06fcc1a14b8":[12,0,32,15,0,1,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX56 =
 "struct_process_1_1_enable_when_focused_process_is.html":[12,0,37,28],
 "struct_process_1_1_layer_context.html":[12,0,37,39],
 "struct_process_1_1_layer_context.html#a3b4287209f68957bd8d3ce2423b12893":[12,0,37,39,0],
-"struct_process_1_1_layer_context.html#a8fc5a6bb773b67a2e114b868baa1148d":[12,0,37,39,1],
-"struct_process_1_1_magnetic_info.html":[12,0,37,49],
-"struct_process_1_1_magnetic_info.html#a5dc297e0f55d4bbfab3c92aee7346e93":[12,0,37,49,0],
-"struct_process_1_1_magnetic_info.html#a77d6bf73b8fd25e3d44ded1c6c1cd9e6":[12,0,37,49,2],
-"struct_process_1_1_magnetic_info.html#a8150ac3d0a59d9a38182095611e8caa3":[12,0,37,49,3],
-"struct_process_1_1_magnetic_info.html#a96f31e2800f223f03e5043439aa899c4":[12,0,37,49,1]
+"struct_process_1_1_layer_context.html#a8fc5a6bb773b67a2e114b868baa1148d":[12,0,37,39,1]
 };
