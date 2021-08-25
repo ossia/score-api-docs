@@ -1,5 +1,6 @@
 var NAVTREEINDEX48 =
 {
+"plugins_2score-plugin-controlsurface_2_control_surface_2_presenter_8hpp_source.html":[13,0,861],
 "plugins_2score-plugin-controlsurface_2_control_surface_2commands_8hpp_source.html":[13,0,160],
 "plugins_2score-plugin-engine_2_execution_2_document_plugin_8hpp_source.html":[13,0,318],
 "plugins_2score-plugin-faust_2_faust_2commands_8hpp_source.html":[13,0,161],
@@ -248,6 +249,5 @@ var NAVTREEINDEX48 =
 "struct_boost_variant2_data_stream_serializer.html#ae4e1017a92ef9690a7851ffc27cf828c":[12,0,76,1],
 "struct_boost_variant2_data_stream_serializer.html#af136c5961159060d702d9a38bb0cca08":[12,0,76,4],
 "struct_boost_variant2_j_s_o_n_deserializer.html":[12,0,77],
-"struct_boost_variant2_j_s_o_n_deserializer.html#a5cbdd00ea344991b2c79656b6add988c":[12,0,77,4],
-"struct_boost_variant2_j_s_o_n_deserializer.html#a6eec60ff63398e7bb486b3db43a0ea07":[12,0,77,0]
+"struct_boost_variant2_j_s_o_n_deserializer.html#a5cbdd00ea344991b2c79656b6add988c":[12,0,77,4]
 };

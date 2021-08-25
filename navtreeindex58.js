@@ -1,5 +1,6 @@
 var NAVTREEINDEX58 =
 {
+"struct_q_meta_type_id_3_01_id_3_01score_1_1_document_model_01_4_01_4.html":[12,0,229],
 "struct_q_meta_type_id_3_01_id_3_01score_1_1_document_model_01_4_01_4.html#a1888c1efd4e4651e2e8a6e080aeac428a128d1d3531193d61d4c4cd6bebbdfb3a":[12,0,229,0],
 "struct_q_meta_type_id_3_01_j_s_1_1_audio_inlet_01_5_01_4.html":[12,0,231],
 "struct_q_meta_type_id_3_01_j_s_1_1_audio_inlet_01_5_01_4.html#a3289ba86930329372fd2e686739f8035a56c9800272bd8ba49ceeb8372b965a99":[12,0,231,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX58 =
 "struct_recording_1_1_recorded_message.html":[12,0,38,12],
 "struct_recording_1_1_recorded_message.html#a035817c2b42975b30a667a72a424785a":[12,0,38,12,0],
 "struct_recording_1_1_recorded_message.html#a813e8172e393fa8dfec0c0f9630cfa42":[12,0,38,12,1],
-"struct_redo_strategy_1_1_quiet.html":[12,0,39,0],
-"struct_redo_strategy_1_1_redo.html":[12,0,39,1]
+"struct_redo_strategy_1_1_quiet.html":[12,0,39,0]
 };
