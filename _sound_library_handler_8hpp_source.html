@@ -132,117 +132,115 @@ $(document).ready(function(){initNavTree('_sound_library_handler_8hpp_source.htm
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <a class="code" href="class_media_1_1_sound_1_1_audio_preview_widget.html">AudioPreviewWidget</a>(<span class="keyword">const</span> QString&amp; path, QWidget* parent = <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      : QWidget{parent}</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">// FIXME libav does not support rex2 format</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span>(path.endsWith(<span class="stringliteral">&quot;rx2&quot;</span>))</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">auto</span>&amp; audio = score::GUIAppContext().<a class="code" href="structscore_1_1_application_context.html#ae71a4a7f56ab86bfdb5308ed0bae8d00">settings</a>&lt;<a class="code" href="class_audio_1_1_settings_1_1_model.html">Audio::Settings::Model</a>&gt;();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">auto</span> lay = <span class="keyword">new</span> <a class="code" href="classscore_1_1_margin_less.html">score::MarginLess&lt;QHBoxLayout&gt;</a>{<span class="keyword">this</span>};</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    lay-&gt;setSpacing(8);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    lay-&gt;addWidget(&amp;m_playstop);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    lay-&gt;addWidget(&amp;m_name);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    m_name.setText(QFileInfo{path}.fileName());</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    m_reader.on_finishedDecoding</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        .connect&lt;&amp;AudioPreviewWidget::on_finishedDecoding&gt;(*this);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    m_reader.load(path, path, DecodingMethod::Libav);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    m_playPixmap = score::get_pixmap(<span class="stringliteral">&quot;:/icons/play_off.png&quot;</span>);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    m_stopPixmap = score::get_pixmap(<span class="stringliteral">&quot;:/icons/stop_off.png&quot;</span>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// FIXME libav does not support rex2 format</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">if</span>(path.endsWith(<span class="stringliteral">&quot;rx2&quot;</span>))</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">auto</span> lay = <span class="keyword">new</span> <a class="code" href="classscore_1_1_margin_less.html">score::MarginLess&lt;QHBoxLayout&gt;</a>{<span class="keyword">this</span>};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    lay-&gt;setSpacing(8);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    lay-&gt;addWidget(&amp;m_playstop);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    lay-&gt;addWidget(&amp;m_name);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    m_name.setText(QFileInfo{path}.fileName());</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    m_reader.on_finishedDecoding</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        .connect&lt;&amp;AudioPreviewWidget::on_finishedDecoding&gt;(*this);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    m_reader.load(path, path, DecodingMethod::Libav);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    m_playPixmap = score::get_pixmap(<span class="stringliteral">&quot;:/icons/play_off.png&quot;</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    m_stopPixmap = score::get_pixmap(<span class="stringliteral">&quot;:/icons/stop_off.png&quot;</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    m_playstop.setIcon(m_playPixmap);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    m_playstop.setIcon(m_playPixmap);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    m_playstop.setMinimumWidth(24);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    m_playstop.setMaximumWidth(24);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    connect(&amp;m_playstop, &amp;QPushButton::clicked, <span class="keyword">this</span>, [&amp;]() {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keywordflow">if</span> (!m_autoPlay)</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        setAutoPlay(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        startPlayback();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        stopPlayback();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        setAutoPlay(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    });</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">void</span> on_finishedDecoding()</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">if</span> (m_autoPlay)</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      m_playstop.setChecked(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      startPlayback();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">bool</span> autoPlay() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> m_autoPlay; }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">void</span> setAutoPlay(<span class="keywordtype">bool</span> b)</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">if</span> (b != m_autoPlay)</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      m_autoPlay = b;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">void</span> startPlayback()</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">auto</span>&amp; audio = score::GUIAppContext().<a class="code" href="structscore_1_1_application_context.html#ae71a4a7f56ab86bfdb5308ed0bae8d00">settings</a>&lt;<a class="code" href="class_audio_1_1_settings_1_1_model.html">Audio::Settings::Model</a>&gt;();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">int</span> rate = audio.getRate();</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">auto</span>&amp; inst = Audio::AudioPreviewExecutor::instance();</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">auto</span> reader = m_reader.unsafe_handle().target&lt;AudioFile::libav_ptr&gt;();</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    SCORE_ASSERT(reader);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    SCORE_ASSERT((*reader)-&gt;handle);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    inst.queue.enqueue(</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        {(*reader)-&gt;handle, (int)m_reader.channels(), (int)rate});</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    m_playstop.setIcon(m_stopPixmap);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">void</span> stopPlayback()</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keyword">auto</span>&amp; inst = Audio::AudioPreviewExecutor::instance();</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    inst.queue.enqueue({});</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    m_playstop.setIcon(m_playPixmap);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  }</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  QPushButton m_playstop{<span class="keyword">this</span>};</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  QLabel m_name{<span class="keyword">this</span>};</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  QPixmap m_playPixmap;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  QPixmap m_stopPixmap;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> m_autoPlay{<span class="keyword">false</span>};</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;};</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="class_media_1_1_sound_1_1_library_handler.html">  122</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_media_1_1_sound_1_1_library_handler.html">LibraryHandler</a> final : <span class="keyword">public</span> <a class="code" href="class_library_1_1_library_interface.html">Library::LibraryInterface</a></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;{</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;7d735f7f-d474-404d-8984-ba627e12f08c&quot;</span>)</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  QSet&lt;QString&gt; acceptedFiles() <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">return</span> {<span class="stringliteral">&quot;wav&quot;</span>, <span class="stringliteral">&quot;mp3&quot;</span>, <span class="stringliteral">&quot;m4a&quot;</span>, <span class="stringliteral">&quot;ogg&quot;</span>, <span class="stringliteral">&quot;flac&quot;</span>, <span class="stringliteral">&quot;aif&quot;</span>, <span class="stringliteral">&quot;aiff&quot;</span>};</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  }</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  QWidget*</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  previewWidget(<span class="keyword">const</span> QString&amp; path, QWidget* parent) <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  {</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_media_1_1_sound_1_1_audio_preview_widget.html">AudioPreviewWidget</a>{path, parent};</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  }</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;};</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    m_playstop.setMinimumWidth(24);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    m_playstop.setMaximumWidth(24);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    connect(&amp;m_playstop, &amp;QPushButton::clicked, <span class="keyword">this</span>, [&amp;]() {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keywordflow">if</span> (!m_autoPlay)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        setAutoPlay(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        startPlayback();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        stopPlayback();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        setAutoPlay(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    });</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span> on_finishedDecoding()</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">if</span> (m_autoPlay)</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      m_playstop.setChecked(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      startPlayback();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">bool</span> autoPlay() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> m_autoPlay; }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">void</span> setAutoPlay(<span class="keywordtype">bool</span> b)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">if</span> (b != m_autoPlay)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      m_autoPlay = b;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">void</span> startPlayback()</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">auto</span>&amp; audio = score::GUIAppContext().<a class="code" href="structscore_1_1_application_context.html#ae71a4a7f56ab86bfdb5308ed0bae8d00">settings</a>&lt;<a class="code" href="class_audio_1_1_settings_1_1_model.html">Audio::Settings::Model</a>&gt;();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">int</span> rate = audio.getRate();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">auto</span>&amp; inst = Audio::AudioPreviewExecutor::instance();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">auto</span> reader = m_reader.unsafe_handle().target&lt;AudioFile::libav_ptr&gt;();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    SCORE_ASSERT(reader);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    SCORE_ASSERT((*reader)-&gt;handle);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    inst.queue.enqueue(</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        {(*reader)-&gt;handle, (int)m_reader.channels(), (int)rate});</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    m_playstop.setIcon(m_stopPixmap);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">void</span> stopPlayback()</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keyword">auto</span>&amp; inst = Audio::AudioPreviewExecutor::instance();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    inst.queue.enqueue({});</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    m_playstop.setIcon(m_playPixmap);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  QPushButton m_playstop{<span class="keyword">this</span>};</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  QLabel m_name{<span class="keyword">this</span>};</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  QPixmap m_playPixmap;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  QPixmap m_stopPixmap;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> m_autoPlay{<span class="keyword">false</span>};</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;};</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="class_media_1_1_sound_1_1_library_handler.html">  120</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_media_1_1_sound_1_1_library_handler.html">LibraryHandler</a> final : <span class="keyword">public</span> <a class="code" href="class_library_1_1_library_interface.html">Library::LibraryInterface</a></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;{</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;7d735f7f-d474-404d-8984-ba627e12f08c&quot;</span>)</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  QSet&lt;QString&gt; acceptedFiles() <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">return</span> {<span class="stringliteral">&quot;wav&quot;</span>, <span class="stringliteral">&quot;mp3&quot;</span>, <span class="stringliteral">&quot;m4a&quot;</span>, <span class="stringliteral">&quot;ogg&quot;</span>, <span class="stringliteral">&quot;flac&quot;</span>, <span class="stringliteral">&quot;aif&quot;</span>, <span class="stringliteral">&quot;aiff&quot;</span>};</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  QWidget*</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  previewWidget(<span class="keyword">const</span> QString&amp; path, QWidget* parent) <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_media_1_1_sound_1_1_audio_preview_widget.html">AudioPreviewWidget</a>{path, parent};</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;};</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_media_1_1_sound_1_1_audio_preview_widget_html"><div class="ttname"><a href="class_media_1_1_sound_1_1_audio_preview_widget.html">Media::Sound::AudioPreviewWidget</a></div><div class="ttdef"><b>Definition:</b> SoundLibraryHandler.hpp:24</div></div>
 <div class="ttc" id="aclassscore_1_1_margin_less_html"><div class="ttname"><a href="classscore_1_1_margin_less.html">score::MarginLess&lt; QHBoxLayout &gt;</a></div></div>
 <div class="ttc" id="aclass_library_1_1_library_interface_html"><div class="ttname"><a href="class_library_1_1_library_interface.html">Library::LibraryInterface</a></div><div class="ttdef"><b>Definition:</b> LibraryInterface.hpp:20</div></div>
 <div class="ttc" id="astruct_media_1_1_audio_file_html"><div class="ttname"><a href="struct_media_1_1_audio_file.html">Media::AudioFile</a></div><div class="ttdef"><b>Definition:</b> MediaFileHandle.hpp:51</div></div>
-<div class="ttc" id="aclass_media_1_1_sound_1_1_library_handler_html"><div class="ttname"><a href="class_media_1_1_sound_1_1_library_handler.html">Media::Sound::LibraryHandler</a></div><div class="ttdef"><b>Definition:</b> SoundLibraryHandler.hpp:122</div></div>
+<div class="ttc" id="aclass_media_1_1_sound_1_1_library_handler_html"><div class="ttname"><a href="class_media_1_1_sound_1_1_library_handler.html">Media::Sound::LibraryHandler</a></div><div class="ttdef"><b>Definition:</b> SoundLibraryHandler.hpp:120</div></div>
 <div class="ttc" id="aclass_audio_1_1_settings_1_1_model_html"><div class="ttname"><a href="class_audio_1_1_settings_1_1_model.html">Audio::Settings::Model</a></div><div class="ttdef"><b>Definition:</b> score-plugin-audio/Audio/Settings/Model.hpp:21</div></div>
 <div class="ttc" id="astructscore_1_1_application_context_html_ae71a4a7f56ab86bfdb5308ed0bae8d00"><div class="ttname"><a href="structscore_1_1_application_context.html#ae71a4a7f56ab86bfdb5308ed0bae8d00">score::ApplicationContext::settings</a></div><div class="ttdeci">T &amp; settings() const</div><div class="ttdoc">Access a specific Settings model instance.</div><div class="ttdef"><b>Definition:</b> ApplicationContext.hpp:42</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
