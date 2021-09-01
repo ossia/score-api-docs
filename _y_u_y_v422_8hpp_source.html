@@ -268,27 +268,20 @@ $(document).ready(function(){initNavTree('_y_u_y_v422_8hpp_source.html',''); ini
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;      QRhiResourceUpdateBatch&amp; res,</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      AVFrame&amp; frame)<span class="keyword"> override</span></div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    setYPixels(res, frame.data[0], frame.linesize[0]);</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  }</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="keywordtype">void</span> setYPixels(</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;      QRhiResourceUpdateBatch&amp; res,</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      uint8_t* pixels,</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      <span class="keywordtype">int</span> stride) <span class="keyword">const</span> noexcept</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  {</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> w = decoder.width, h = decoder.height;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keyword">auto</span> y_tex = samplers[0].texture;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    QRhiTextureUploadEntry entry{</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        0, 0, <a class="code" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a70bc09ac7a5e91b4b26530851893ec7f">createTextureUpload</a>(pixels, w, h, 2, stride)};</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    QRhiTextureUploadDescription desc{entry};</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    res.uploadTexture(y_tex, desc);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  }</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;};</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor">#include &lt;Gfx/Qt5CompatPop&gt;</span> <span class="comment">// clang-format: keep</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;}</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keyword">auto</span> y_tex = samplers[0].texture;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keyword">auto</span> pixels = frame.data[0];</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keyword">auto</span> stride = frame.linesize[0];</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    QRhiTextureUploadEntry entry{</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        0, 0, <a class="code" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a70bc09ac7a5e91b4b26530851893ec7f">createTextureUpload</a>(pixels, frame.width, frame.height, 2, stride)};</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    QRhiTextureUploadDescription desc{entry};</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    res.uploadTexture(y_tex, desc);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  }</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;};</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="preprocessor">#include &lt;Gfx/Qt5CompatPop&gt;</span> <span class="comment">// clang-format: keep</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructscore_1_1gfx_1_1_u_y_v_y422_decoder_html_a87b12eb06fdcfd7d7fec3feceed88fe8"><div class="ttname"><a href="structscore_1_1gfx_1_1_u_y_v_y422_decoder.html#a87b12eb06fdcfd7d7fec3feceed88fe8">score::gfx::UYVY422Decoder::init</a></div><div class="ttdeci">std::pair&lt; QShader, QShader &gt; init(RenderList &amp;r) override</div><div class="ttdoc">Initialize a GPUVideoDecoder.</div><div class="ttdef"><b>Definition:</b> YUYV422.hpp:152</div></div>

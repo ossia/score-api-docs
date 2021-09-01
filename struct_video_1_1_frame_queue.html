@@ -104,15 +104,24 @@ $(document).ready(function(){initNavTree('struct_video_1_1_frame_queue.html','')
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a39d27b970216b521087fa52e7dc31fa3"><td class="memItemLeft" align="right" valign="top"><a id="a39d27b970216b521087fa52e7dc31fa3"></a>
-AVFrame *&#160;</td><td class="memItemRight" valign="bottom"><b>newFrame</b> () noexcept</td></tr>
-<tr class="separator:a39d27b970216b521087fa52e7dc31fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b7b35f70e3a449f97cdbaef9f762199"><td class="memItemLeft" align="right" valign="top"><a id="a5b7b35f70e3a449f97cdbaef9f762199"></a>
+AVFramePointer&#160;</td><td class="memItemRight" valign="bottom"><b>newFrame</b> () noexcept</td></tr>
+<tr class="separator:a5b7b35f70e3a449f97cdbaef9f762199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30524f31f44fd3b0924aae9bb42455e2"><td class="memItemLeft" align="right" valign="top"><a id="a30524f31f44fd3b0924aae9bb42455e2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>enqueue_decoding_error</b> (AVFrame *f)</td></tr>
+<tr class="separator:a30524f31f44fd3b0924aae9bb42455e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a241e628548228ad9a16c578304440e36"><td class="memItemLeft" align="right" valign="top"><a id="a241e628548228ad9a16c578304440e36"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>enqueue</b> (AVFrame *f)</td></tr>
 <tr class="separator:a241e628548228ad9a16c578304440e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11081a717113677ae6586c09a291fa63"><td class="memItemLeft" align="right" valign="top"><a id="a11081a717113677ae6586c09a291fa63"></a>
 AVFrame *&#160;</td><td class="memItemRight" valign="bottom"><b>dequeue</b> () noexcept</td></tr>
 <tr class="separator:a11081a717113677ae6586c09a291fa63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7730d1d630bccb4b3b0e85e32dafb401"><td class="memItemLeft" align="right" valign="top"><a id="a7730d1d630bccb4b3b0e85e32dafb401"></a>
+AVFrame *&#160;</td><td class="memItemRight" valign="bottom"><b>discard_and_dequeue</b> () noexcept</td></tr>
+<tr class="separator:a7730d1d630bccb4b3b0e85e32dafb401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3adcde69bebf83acb611598d0cf4660d"><td class="memItemLeft" align="right" valign="top"><a id="a3adcde69bebf83acb611598d0cf4660d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_discard_frame</b> (AVFrame *)</td></tr>
+<tr class="separator:a3adcde69bebf83acb611598d0cf4660d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c8aa97d7d6067602d4b6db96676e811"><td class="memItemLeft" align="right" valign="top"><a id="a0c8aa97d7d6067602d4b6db96676e811"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> (AVFrame *frame) noexcept</td></tr>
 <tr class="separator:a0c8aa97d7d6067602d4b6db96676e811"><td class="memSeparator" colspan="2">&#160;</td></tr>

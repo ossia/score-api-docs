@@ -148,32 +148,34 @@ $(document).ready(function(){initNavTree('_camera_input_8hpp_source.html',''); i
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  AVFrame* read_frame_impl() noexcept;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">bool</span> open_stream() noexcept;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> close_stream() noexcept;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">bool</span> enqueue_frame(<span class="keyword">const</span> AVPacket* pkt, AVFrame** frame) noexcept;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> init_scaler() noexcept;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">int</span> frames_to_buffer = 1;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  std::thread m_thread;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="struct_video_1_1_frame_queue.html">FrameQueue</a> m_frames;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  std::string m_inputKind;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  std::string m_inputDevice;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  AVFormatContext* m_formatContext{};</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  AVCodecContext* m_codecContext{};</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  SwsContext* m_rescale{};</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  AVCodec* m_codec{};</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">int</span> m_stream{-1};</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  std::atomic_bool m_running{};</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="struct_video_1_1_read_frame.html">ReadFrame</a> enqueue_frame(<span class="keyword">const</span> AVPacket* pkt, AVFramePointer frame) noexcept;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="struct_video_1_1_read_frame.html">ReadFrame</a> read_one_frame(AVFramePointer frame, AVPacket&amp; packet);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> init_scaler() noexcept;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">int</span> frames_to_buffer = 1;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  std::thread m_thread;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="struct_video_1_1_frame_queue.html">FrameQueue</a> m_frames;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  std::string m_inputKind;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  std::string m_inputDevice;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  AVFormatContext* m_formatContext{};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  AVCodecContext* m_codecContext{};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  SwsContext* m_rescale{};</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  AVCodec* m_codec{};</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">int</span> m_stream{-1};</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  std::atomic_bool m_running{};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astruct_video_1_1_video_interface_html"><div class="ttname"><a href="struct_video_1_1_video_interface.html">Video::VideoInterface</a></div><div class="ttdef"><b>Definition:</b> VideoInterface.hpp:24</div></div>
-<div class="ttc" id="astruct_video_1_1_frame_queue_html"><div class="ttname"><a href="struct_video_1_1_frame_queue.html">Video::FrameQueue</a></div><div class="ttdef"><b>Definition:</b> FrameQueue.hpp:15</div></div>
+<div class="ttc" id="astruct_video_1_1_frame_queue_html"><div class="ttname"><a href="struct_video_1_1_frame_queue.html">Video::FrameQueue</a></div><div class="ttdef"><b>Definition:</b> FrameQueue.hpp:17</div></div>
 <div class="ttc" id="aclass_video_1_1_camera_input_html"><div class="ttname"><a href="class_video_1_1_camera_input.html">Video::CameraInput</a></div><div class="ttdef"><b>Definition:</b> CameraInput.hpp:26</div></div>
+<div class="ttc" id="astruct_video_1_1_read_frame_html"><div class="ttname"><a href="struct_video_1_1_read_frame.html">Video::ReadFrame</a></div><div class="ttdef"><b>Definition:</b> VideoInterface.hpp:31</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
