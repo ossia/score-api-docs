@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('_jit_platform_8hpp_source.html',''); i
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">auto</span>&amp; ctx = score::AppContext().<a class="code" href="structscore_1_1_application_context.html#ae71a4a7f56ab86bfdb5308ed0bae8d00">settings</a>&lt;<a class="code" href="class_library_1_1_settings_1_1_model.html">Library::Settings::Model</a>&gt;();</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  QString path = ctx.getSDKPath();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordflow">if</span> (QString libPath = path + QString(SCORE_TAG_NO_V) + <span class="stringliteral">&quot;/usr&quot;</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordflow">if</span> (QString libPath = QStringLiteral(<span class="stringliteral">&quot;%1/%2/usr&quot;</span>).arg(path).arg(SCORE_TAG_NO_V);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      QDir(libPath + <span class="stringliteral">&quot;/include/c++&quot;</span>).exists())</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> libPath.toStdString();</div>
