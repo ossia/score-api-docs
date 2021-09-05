@@ -374,16 +374,17 @@ $(document).ready(function(){initNavTree('score-plugin-engine_2_engine_2_node_2_
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;              <span class="stringliteral">&quot;Executor::ControlProcess&lt;Info&gt;&quot;</span>,</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;              parent}</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  {</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keyword">auto</span> node = std::make_shared&lt;ossia::safe_nodes::safe_node&lt;Info&gt;&gt;();</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    this-&gt;node = node;</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    this-&gt;m_ossia_process = std::make_shared&lt;ossia::node_process&gt;(this-&gt;node);</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    setup_node&lt;Info&gt;(node, element, ctx, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  }</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  ~<a class="code" href="class_control_1_1_executor.html">Executor</a>() { }</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;};</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;}</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keyword">auto</span> node = ossia::make_node&lt;ossia::safe_nodes::safe_node&lt;Info&gt;&gt;(*ctx.execState.get());</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    this-&gt;node = node;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    this-&gt;m_ossia_process = std::make_shared&lt;ossia::node_process&gt;(this-&gt;node);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    setup_node&lt;Info&gt;(node, element, ctx, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  }</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  ~<a class="code" href="class_control_1_1_executor.html">Executor</a>() { }</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;};</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astruct_execution_1_1_context_html_a1a0fd8f494c0a427dc09b7da3e94bf36"><div class="ttname"><a href="struct_execution_1_1_context.html#a1a0fd8f494c0a427dc09b7da3e94bf36">Execution::Context::executionQueue</a></div><div class="ttdeci">ExecutionCommandQueue &amp; executionQueue</div><div class="ttdef"><b>Definition:</b> ExecutionContext.hpp:103</div></div>

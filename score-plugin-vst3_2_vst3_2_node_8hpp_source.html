@@ -753,7 +753,7 @@ $(document).ready(function(){initNavTree('score-plugin-vst3_2_vst3_2_node_8hpp_s
 <div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">bool</span> b1, <span class="keyword">typename</span>... Args&gt;</div>
 <div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;<span class="keyword">auto</span> make_vst_fx(Args&amp;... args)</div>
 <div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;{</div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;  <span class="keywordflow">return</span> std::make_shared&lt;vst_node&lt;b1&gt;&gt;(args...);</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;  <span class="keywordflow">return</span> ossia::make_node&lt;vst_node&lt;b1&gt;&gt;(args...);</div>
 <div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;}</div>
 <div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->

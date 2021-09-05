@@ -366,7 +366,7 @@ $(document).ready(function(){initNavTree('_d_s_p_wrapper_8hpp_source.html',''); 
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;          <span class="stringliteral">&quot;FaustComponent&quot;</span>,</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;          parent}</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  {</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keyword">auto</span> node = std::make_shared&lt;exec_node&gt;();</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keyword">auto</span> node = ossia::make_node&lt;exec_node&gt;(*ctx.execState);</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    this-&gt;node = node;</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    this-&gt;m_ossia_process = std::make_shared&lt;ossia::node_process&gt;(node);</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    node-&gt;dsp.instanceInit(ctx.execState-&gt;sampleRate);</div>
