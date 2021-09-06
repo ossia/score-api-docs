@@ -864,7 +864,6 @@ var annotated_dup =
       [ "RemoveControl", "classvst3_1_1_remove_control.html", "classvst3_1_1_remove_control" ],
       [ "SetControl", "classvst3_1_1_set_control.html", "classvst3_1_1_set_control" ],
       [ "Vst3DataStream", "structvst3_1_1_vst3_data_stream.html", "structvst3_1_1_vst3_data_stream" ],
-      [ "vst_error", "structvst3_1_1vst__error.html", "structvst3_1_1vst__error" ],
       [ "vst_node", "classvst3_1_1vst__node.html", "classvst3_1_1vst__node" ],
       [ "vst_node_base", "classvst3_1_1vst__node__base.html", "classvst3_1_1vst__node__base" ],
       [ "VSTControlPortFactory", "classvst3_1_1_v_s_t_control_port_factory.html", "classvst3_1_1_v_s_t_control_port_factory" ],
