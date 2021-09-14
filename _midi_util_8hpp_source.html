@@ -456,9 +456,9 @@ $(document).ready(function(){initNavTree('_midi_util_8hpp_source.html',''); init
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160; </div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> new_scale_idx = get_scale(scale);</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160; </div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> tick_start = st.physical_start(tk);</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="keyword">auto</span> apply = [&amp;](<span class="keyword">auto</span> f) {</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160; </div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <span class="keyword">auto</span> apply = [&amp;](<span class="keyword">auto</span> f) {</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span> [tick_start, d] = st.timings(tk);</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;      <span class="keywordflow">if</span> (new_scale_idx != scale::custom)</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;      {</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        f(midi_in,</div>

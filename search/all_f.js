@@ -57,7 +57,7 @@ var searchData=
   ['outputnode_1523',['OutputNode',['../classscore_1_1gfx_1_1_output_node.html',1,'score::gfx']]],
   ['outputnoderenderer_1524',['OutputNodeRenderer',['../classscore_1_1gfx_1_1_output_node_renderer.html',1,'score::gfx']]],
   ['outputubo_1525',['outputUBO',['../classscore_1_1gfx_1_1_render_list.html#acb4d286db246a8e40fc56b54fd419484',1,'score::gfx::RenderList']]],
-  ['overdub_1526',['overdub',['../struct_nodes_1_1_audio_looper_1_1_node.html#ad34503961f5ee389ed0333e6d9b1d5d2',1,'Nodes::AudioLooper::Node']]],
-  ['overdub_5fnoecho_1527',['overdub_noecho',['../struct_nodes_1_1_audio_looper_1_1_node.html#a01bfcc8dceeb3b714854938605b7b2fa',1,'Nodes::AudioLooper::Node']]],
+  ['overdub_1526',['overdub',['../struct_nodes_1_1_audio_looper_1_1_node.html#a9e8dc443bdef99a7549fcc2f3387ec64',1,'Nodes::AudioLooper::Node']]],
+  ['overdub_5fnoecho_1527',['overdub_noecho',['../struct_nodes_1_1_audio_looper_1_1_node.html#ac510a2228d965fc11895afe577b8b870',1,'Nodes::AudioLooper::Node']]],
   ['owningdeviceinterface_1528',['OwningDeviceInterface',['../class_device_1_1_owning_device_interface.html',1,'Device']]]
 ];

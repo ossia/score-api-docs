@@ -267,10 +267,10 @@ $(document).ready(function(){initNavTree('_arpeggiator_8hpp_source.html',''); in
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">self</span>.arpeggio.empty())</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    {</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span> start = st.physical_start(tk);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span> [tick_start, d] = st.timings(tk);</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;      <span class="keywordflow">for</span>(<span class="keywordtype">int</span> k = 0; k &lt; 128; k++)</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keywordflow">while</span>(<span class="keyword">self</span>.in_flight[k]-- &gt; 0)</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;          out.note_off(1, k, 0).timestamp = start;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;          out.note_off(1, k, 0).timestamp = tick_start;</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    }</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>

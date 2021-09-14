@@ -15,6 +15,6 @@ var searchData=
   ['optimize_5403',['optimize',['../classscore_1_1_interface_list_base.html#a465904f271fb88a998b4fd078188f8e4',1,'score::InterfaceListBase::optimize()'],['../class_process_1_1_offline_action_list.html#a0b98c6da032f3f34f2d12580daab4abe',1,'Process::OfflineActionList::optimize()']]],
   ['originalfile_5404',['originalFile',['../struct_media_1_1_audio_file.html#adae010269e2cd4341a3c46af33e7a80a',1,'Media::AudioFile']]],
   ['outputubo_5405',['outputUBO',['../classscore_1_1gfx_1_1_render_list.html#acb4d286db246a8e40fc56b54fd419484',1,'score::gfx::RenderList']]],
-  ['overdub_5406',['overdub',['../struct_nodes_1_1_audio_looper_1_1_node.html#ad34503961f5ee389ed0333e6d9b1d5d2',1,'Nodes::AudioLooper::Node']]],
-  ['overdub_5fnoecho_5407',['overdub_noecho',['../struct_nodes_1_1_audio_looper_1_1_node.html#a01bfcc8dceeb3b714854938605b7b2fa',1,'Nodes::AudioLooper::Node']]]
+  ['overdub_5406',['overdub',['../struct_nodes_1_1_audio_looper_1_1_node.html#a9e8dc443bdef99a7549fcc2f3387ec64',1,'Nodes::AudioLooper::Node']]],
+  ['overdub_5fnoecho_5407',['overdub_noecho',['../struct_nodes_1_1_audio_looper_1_1_node.html#ac510a2228d965fc11895afe577b8b870',1,'Nodes::AudioLooper::Node']]]
 ];
