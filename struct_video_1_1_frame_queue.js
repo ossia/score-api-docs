@@ -1,7 +1,9 @@
 var struct_video_1_1_frame_queue =
 [
     [ "dequeue", "struct_video_1_1_frame_queue.html#a11081a717113677ae6586c09a291fa63", null ],
+    [ "dequeue_one", "struct_video_1_1_frame_queue.html#ad6b3c8fb8227182810987bae27132c02", null ],
     [ "discard_and_dequeue", "struct_video_1_1_frame_queue.html#a7730d1d630bccb4b3b0e85e32dafb401", null ],
+    [ "discard_and_dequeue_one", "struct_video_1_1_frame_queue.html#a39df9a896fe26dd648550b2665842c9d", null ],
     [ "drain", "struct_video_1_1_frame_queue.html#aa0c2faed89122ae7c9e420ef4c536bb2", null ],
     [ "enqueue", "struct_video_1_1_frame_queue.html#a241e628548228ad9a16c578304440e36", null ],
     [ "enqueue_decoding_error", "struct_video_1_1_frame_queue.html#a30524f31f44fd3b0924aae9bb42455e2", null ],
