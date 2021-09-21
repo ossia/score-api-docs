@@ -1,5 +1,13 @@
 var NAVTREEINDEX57 =
 {
+"struct_process_1_1_preset.html#a2f9d666d988d3c411fe83aeb495af1c4":[12,0,36,67,1],
+"struct_process_1_1_preset.html#a79456f2ea80d5390280a5c9987cdd29c":[12,0,36,67,2],
+"struct_process_1_1_preset.html#abdc49021c07a7ce419c5cc0a5f6e00e8":[12,0,36,67,3],
+"struct_process_1_1_preset.html#ae771902c5c222db7f3d9562fe5ccc935":[12,0,36,67,6],
+"struct_process_1_1_preset.html#ae9b0b98d749ac68f73034c6e0d096f1f":[12,0,36,67,4],
+"struct_process_1_1_process_data.html":[12,0,36,69],
+"struct_process_1_1_process_data.html#a3ec7898480945fc173f7cd261f5c71a4":[12,0,36,69,1],
+"struct_process_1_1_process_data.html#a40c60b115e1e25e543b16e13616ca376":[12,0,36,69,0],
 "struct_process_1_1_process_data.html#a40cb27dbec9510069d7b61dbf1a220a5":[12,0,36,69,2],
 "struct_process_1_1_process_drop_handler_1_1_dropped_file.html":[12,0,36,70,0],
 "struct_process_1_1_process_drop_handler_1_1_dropped_file.html#a5801d3f0fd47bb820d1e5421e0730b80":[12,0,36,70,0,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX57 =
 "struct_q_meta_type_id_3_01_gfx_1_1_kinect2_settings_01_4.html":[12,0,221],
 "struct_q_meta_type_id_3_01_gfx_1_1_kinect2_settings_01_4.html#a4898fab040652cc7dfb711ec42509ba2a2eb66fbab8f0b0ffd864808589458638":[12,0,221,0],
 "struct_q_meta_type_id_3_01_gfx_1_1_processed_program_01_4.html":[12,0,222],
-"struct_q_meta_type_id_3_01_gfx_1_1_processed_program_01_4.html#a4ec714b1e566e841cb9b95d623db12caad5e3df4f4ec4781ac301a1cb17166536":[12,0,222,0],
-"struct_q_meta_type_id_3_01_gfx_1_1_shader_source_01_4.html":[12,0,223],
-"struct_q_meta_type_id_3_01_gfx_1_1_shader_source_01_4.html#a10e156f79ef967f9e8a1d1662e55156fa15308597c83a20c45eacaaa607dbc6c4":[12,0,223,0],
-"struct_q_meta_type_id_3_01_id_3_01_process_1_1_process_model_01_4_01_4.html":[12,0,224],
-"struct_q_meta_type_id_3_01_id_3_01_process_1_1_process_model_01_4_01_4.html#aef608c81921699a1aab434718f218baea3cd029606057d16689a549a866b773b1":[12,0,224,0],
-"struct_q_meta_type_id_3_01_id_3_01_scenario_1_1_event_model_01_4_01_4.html":[12,0,225],
-"struct_q_meta_type_id_3_01_id_3_01_scenario_1_1_event_model_01_4_01_4.html#a5e338b6624f806c69443dbe73d25ef43a9a6e5c4260b67c7ae421921ea544c21b":[12,0,225,0],
-"struct_q_meta_type_id_3_01_id_3_01_scenario_1_1_interval_model_01_4_01_4.html":[12,0,226],
-"struct_q_meta_type_id_3_01_id_3_01_scenario_1_1_interval_model_01_4_01_4.html#a99001e4a8ac33140b1175e57fd367c33aad05dc39b089ca79946aa07f61b4e82d":[12,0,226,0]
+"struct_q_meta_type_id_3_01_gfx_1_1_processed_program_01_4.html#a4ec714b1e566e841cb9b95d623db12caad5e3df4f4ec4781ac301a1cb17166536":[12,0,222,0]
 };

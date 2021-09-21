@@ -689,6 +689,7 @@ var files_dup =
     [ "MidiDrop.hpp", "_midi_drop_8hpp_source.html", null ],
     [ "MidiExecutor.hpp", "_midi_executor_8hpp_source.html", null ],
     [ "MidiFactory.hpp", "_midi_factory_8hpp_source.html", null ],
+    [ "MidiHiRes.hpp", "_midi_hi_res_8hpp_source.html", null ],
     [ "MidiInletItem.hpp", "_midi_inlet_item_8hpp_source.html", null ],
     [ "MidiNote.hpp", "_midi_note_8hpp_source.html", null ],
     [ "MidiNoteView.hpp", "_midi_note_view_8hpp_source.html", null ],

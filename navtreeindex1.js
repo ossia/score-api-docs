@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"_clamp_8hpp_source.html":[13,0,131],
 "_clang_driver_8hpp_source.html":[13,0,132],
 "_classical_beat_8hpp_source.html":[13,0,133],
 "_clear_interval_8hpp_source.html":[13,0,134],
@@ -230,7 +231,7 @@ var NAVTREEINDEX1 =
 "_event_summary_widget_8hpp_source.html":[13,0,377],
 "_event_transitions_8hpp_source.html":[13,0,378],
 "_event_view_8hpp_source.html":[13,0,379],
-"_execution_2_scenario_execution_8hpp_source.html":[13,0,1015],
+"_execution_2_scenario_execution_8hpp_source.html":[13,0,1016],
 "_execution_action_8hpp_source.html":[13,0,382],
 "_execution_component_8hpp_source.html":[13,0,383],
 "_execution_context_8hpp_source.html":[13,0,384],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "_exploration_worker_8hpp_source.html":[13,0,407],
 "_exploration_worker_wrapper_8hpp_source.html":[13,0,408],
 "_explorer_factory_8hpp_source.html":[13,0,409],
-"_explorer_model_8hpp_source.html":[13,0,410],
-"_explorer_model_provider_8hpp_source.html":[13,0,411]
+"_explorer_model_8hpp_source.html":[13,0,410]
 };

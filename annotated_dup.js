@@ -551,6 +551,10 @@ var annotated_dup =
       [ "MicroMapping", null, [
         [ "Node", "struct_nodes_1_1_micro_mapping_1_1_node.html", "struct_nodes_1_1_micro_mapping_1_1_node" ]
       ] ],
+      [ "MidiHiRes", null, [
+        [ "Input", "struct_nodes_1_1_midi_hi_res_1_1_input.html", "struct_nodes_1_1_midi_hi_res_1_1_input" ],
+        [ "Output", "struct_nodes_1_1_midi_hi_res_1_1_output.html", "struct_nodes_1_1_midi_hi_res_1_1_output" ]
+      ] ],
       [ "MidiUtil", null, [
         [ "Node", "struct_nodes_1_1_midi_util_1_1_node.html", "struct_nodes_1_1_midi_util_1_1_node" ]
       ] ],
