@@ -1,4 +1,4 @@
 var class_scenario_1_1_state_plus_overlay =
 [
-    [ "CrossOverlay", "class_scenario_1_1_state_plus_overlay.html#a10f94131b8d7b61164156b0c35012714", null ]
+    [ "StatePlusOverlay", "class_scenario_1_1_state_plus_overlay.html#a6e78379f19af0f707ea1ff6a4b698cb5", null ]
 ];

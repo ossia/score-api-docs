@@ -1,5 +1,6 @@
 var NAVTREEINDEX62 =
 {
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01bool_01_4_01_4.html":[12,0,445],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01bool_01_4_01_4.html#aa59b32d76f3d932165d2d62ed0c445e7":[12,0,445,0],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01ossia_1_1impulse_01_4_01_4.html":[12,0,446],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01ossia_1_1impulse_01_4_01_4.html#ad64b3bc0cfecd1c9d1f5f56f07e89149":[12,0,446,0],
@@ -226,12 +227,12 @@ var NAVTREEINDEX62 =
 "structgraphics__item__ptr.html":[12,0,116],
 "structgraphics__item__ptr.html#a10e6a4ba1c430fb49c89597e5a22c0ed":[12,0,116,1],
 "structgraphics__item__ptr.html#a272774f66d42794d06e9e64f39440bd2":[12,0,116,11],
-"structgraphics__item__ptr.html#a2c9d3fdcaa2a4eeb7e36d440db846fc3":[12,0,116,10],
+"structgraphics__item__ptr.html#a2f94081f23d8e7da0e862dbb41266bdd":[12,0,116,2],
 "structgraphics__item__ptr.html#a63956906ecb59abd706f228683660bd1":[12,0,116,8],
 "structgraphics__item__ptr.html#a802bde56fa9314417568f740ddc4148c":[12,0,116,3],
 "structgraphics__item__ptr.html#a832908ac7b14d1317ab911b5eb1f0f93":[12,0,116,5],
-"structgraphics__item__ptr.html#aa933f93678b7ea3e532ed36630b4033e":[12,0,116,2],
 "structgraphics__item__ptr.html#aaf0261053d0acc8293feb1b9175ed47a":[12,0,116,9],
+"structgraphics__item__ptr.html#abebaeaaa39fb6bc347fc1fca58be1aab":[12,0,116,10],
 "structgraphics__item__ptr.html#ac62a43da815aa46133369f7beda95ff3":[12,0,116,7],
 "structgraphics__item__ptr.html#acbb10cc36f6e6e96faf5783f0fb23e74":[12,0,116,4],
 "structgraphics__item__ptr.html#ade6ff9ec1494df963b43696e1eff038d":[12,0,116,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX62 =
 "structis___q_data_stream_serializable.html":[12,0,139],
 "structis___q_data_stream_serializable_3_01_t_00_01enable__if___q_data_stream_serializable_3_01ty7af32fa90288391deda099428bb0c0e7.html":[12,0,140],
 "structis__shared__ptr.html":[12,0,141],
-"structis__shared__ptr_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html":[12,0,142],
-"structmatches.html":[12,0,153]
+"structis__shared__ptr_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html":[12,0,142]
 };
