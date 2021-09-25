@@ -1,5 +1,6 @@
 var NAVTREEINDEX68 =
 {
+"structvst_1_1_v_s_t_info.html#a54b2fc9286eaced9c6ba2d50e315c7f4":[12,0,52,19,7],
 "structvst_1_1_v_s_t_info.html#a76013b9c3d06ec7047036964d5a3f4da":[12,0,52,19,5],
 "structvst_1_1_v_s_t_info.html#a7e828f3df85e060ebba64291cb571cec":[12,0,52,19,1],
 "structvst_1_1_v_s_t_info.html#abfc40ae22a5dcd6d74c6f1615b3c56db":[12,0,52,19,0],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX63 =
 {
+"structis__shared__ptr_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html":[12,0,142],
 "structmatches.html":[12,0,153],
 "structmatches.html#a9cdfdf88a59b5835ded36443f21de74b":[12,0,153,0],
 "structossia_1_1control__surface__node_1_1control__updater.html":[12,0,32,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX63 =
 "structscore_1_1_document_metadata.html#afd7e85720f326cbc930c4d15a5ac1db6":[12,0,43,68,16],
 "structscore_1_1_double_spinbox_with_enter.html":[12,0,43,78],
 "structscore_1_1_enable_action_if_document.html":[12,0,43,83],
-"structscore_1_1_enable_action_if_document.html#a2cbc84ad12455c68f53c63ace18d551c":[12,0,43,83,1],
-"structscore_1_1_enable_action_if_document.html#a3de6278c77505f8d1ad13e67dbe807e3":[12,0,43,83,2]
+"structscore_1_1_enable_action_if_document.html#a2cbc84ad12455c68f53c63ace18d551c":[12,0,43,83,1]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX47 =
 {
+"classvst3_1_1vst__node__base.html#a31baafe88bcce7ed13db2a70b938c281":[12,0,53,18,24],
 "classvst3_1_1vst__node__base.html#a4431096f4dbd723e3e068220232c668e":[12,0,53,18,13],
 "classvst3_1_1vst__node__base.html#a487e7887b95d1b0c1df691d617554825":[12,0,53,18,5],
 "classvst3_1_1vst__node__base.html#a4ddd5653ff47dbc96e175f2224d45430":[12,0,53,18,12],
@@ -207,16 +208,16 @@ var NAVTREEINDEX47 =
 "intro_8hpp_source.html":[13,0,552],
 "isf_8hpp_source.html":[13,0,557],
 "lib_2core_2documentation_2commands_8hpp_source.html":[13,0,159],
-"lib_2core_2presenter_2_presenter_8hpp_source.html":[13,0,860],
-"lib_2core_2settings_2_settings_8hpp_source.html":[13,0,1128],
-"lib_2core_2view_2_window_8hpp_source.html":[13,0,1326],
+"lib_2core_2presenter_2_presenter_8hpp_source.html":[13,0,861],
+"lib_2core_2settings_2_settings_8hpp_source.html":[13,0,1129],
+"lib_2core_2view_2_window_8hpp_source.html":[13,0,1327],
 "lib_2score_2model_2_component_8hpp_source.html":[13,0,182],
 "lib_2score_2plugins_2documentdelegate_2plugin_2_document_plugin_8hpp_source.html":[13,0,316],
-"lib_2score_2tools_2_metadata_8hpp_source.html":[13,0,662],
+"lib_2score_2tools_2_metadata_8hpp_source.html":[13,0,663],
 "lib_2score_2widgets_2_control_widgets_8hpp_source.html":[13,0,202],
-"lv2__atom__helpers_8hpp_source.html":[13,0,625],
-"models_8hpp_source.html":[13,0,732],
-"mvp_8hpp_source.html":[13,0,756],
+"lv2__atom__helpers_8hpp_source.html":[13,0,626],
+"models_8hpp_source.html":[13,0,733],
+"mvp_8hpp_source.html":[13,0,757],
 "namespace_automation.html":[11,0,0],
 "namespace_automation.html":[12,0,1],
 "namespace_curve.html":[12,0,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX47 =
 "namespacemembers_type.html":[11,1,2],
 "namespaces.html":[11,0],
 "namespacescore.html":[12,0,43],
-"namespacescore.html":[11,0,11],
-"namespacescore_1_1gfx.html":[12,0,43,2]
+"namespacescore.html":[11,0,11]
 };

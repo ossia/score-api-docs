@@ -1,5 +1,6 @@
 var NAVTREEINDEX55 =
 {
+"struct_media_1_1sndfile__deleter.html":[12,0,27,23],
 "struct_media_1_1sndfile__deleter.html#a3e2cfb1efcc6e9eea8b42fd0eea15562":[12,0,27,23,0],
 "struct_metadata.html":[12,0,155],
 "struct_metadata_3_01_category__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html":[12,0,156],
@@ -248,6 +249,5 @@ var NAVTREEINDEX55 =
 "struct_nodes_1_1_math_generator_1_1_node.html":[12,0,31,17,0],
 "struct_nodes_1_1_math_generator_1_1_node.html#a1ff66824002fce7562ff7d8b9f562610":[12,0,31,17,0,2],
 "struct_nodes_1_1_math_generator_1_1_node_1_1_metadata.html":[12,0,31,17,0,0],
-"struct_nodes_1_1_math_generator_1_1_node_1_1_state.html":[12,0,31,17,0,1],
-"struct_nodes_1_1_math_generator_1_1_node_1_1_state.html#a185a9632d03ebb90bb5e10bbe9d3a850":[12,0,31,17,0,1,11]
+"struct_nodes_1_1_math_generator_1_1_node_1_1_state.html":[12,0,31,17,0,1]
 };
