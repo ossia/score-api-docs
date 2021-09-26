@@ -1,5 +1,6 @@
 var NAVTREEINDEX67 =
 {
+"structscore_1_1indirect__iterator.html#aff4b0eb1a95682bddd814c9635da2f43":[12,0,43,121,12],
 "structscore_1_1indirect__map__iterator.html":[12,0,43,122],
 "structscore_1_1indirect__map__iterator.html#a00f98d17da0609e675342f39761eea59":[12,0,43,122,7],
 "structscore_1_1indirect__map__iterator.html#a0c47d30e1e068406aec18467d1815cc2":[12,0,43,122,1],
@@ -204,12 +205,13 @@ var NAVTREEINDEX67 =
 "structvst3_1_1_vst3_data_stream.html#ac46e29a7f51e4678c65ad0ee20490d8a":[12,0,53,16,1],
 "structvst3_1_1_vst3_data_stream.html#ace12c7d94f50df3aa2e85d15fd207886":[12,0,53,16,7],
 "structvst3_1_1_window_container.html":[12,0,53,25],
-"structvst3_1_1_window_container.html#a1f31e8eaae0dcfa72a8abfabbed125e7":[12,0,53,25,5],
+"structvst3_1_1_window_container.html#a1f31e8eaae0dcfa72a8abfabbed125e7":[12,0,53,25,6],
 "structvst3_1_1_window_container.html#a2543de81ed4d64f91c43bb71b1b1b3f7":[12,0,53,25,1],
 "structvst3_1_1_window_container.html#a4cac1f467fac8917be04de0fca4c426e":[12,0,53,25,0],
 "structvst3_1_1_window_container.html#a6e7395c9189c5acdd6ca8db915cb27c9":[12,0,53,25,2],
+"structvst3_1_1_window_container.html#a87121fef9315c3725bd504aa267daf91":[12,0,53,25,4],
 "structvst3_1_1_window_container.html#aecf734c284449b196c98e7ba79c42b13":[12,0,53,25,3],
-"structvst3_1_1_window_container.html#af345560a0a345022bb010f36b9597246":[12,0,53,25,4],
+"structvst3_1_1_window_container.html#af345560a0a345022bb010f36b9597246":[12,0,53,25,5],
 "structvst3_1_1vst__node_1_1dummy__t.html":[12,0,53,17,0],
 "structvst3_1_1vst__node__base_1_1_plugin_handle.html":[12,0,53,18,0],
 "structvst3_1_1vst__node__base_1_1_plugin_handle.html#a1b205aea2070228e15b30bac083546a8":[12,0,53,18,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX67 =
 "structvst_1_1_v_s_t_float_slider.html":[12,0,52,18],
 "structvst_1_1_v_s_t_info.html":[12,0,52,19],
 "structvst_1_1_v_s_t_info.html#a0dc2624c9af478fab31f08d440cccdaf":[12,0,52,19,3],
-"structvst_1_1_v_s_t_info.html#a2c44b6295e631cb3d8057af487a10f08":[12,0,52,19,2],
-"structvst_1_1_v_s_t_info.html#a54b2fc9286eaced9c6ba2d50e315c7f4":[12,0,52,19,7],
-"structvst_1_1_v_s_t_info.html#a76013b9c3d06ec7047036964d5a3f4da":[12,0,52,19,5]
+"structvst_1_1_v_s_t_info.html#a2c44b6295e631cb3d8057af487a10f08":[12,0,52,19,2]
 };

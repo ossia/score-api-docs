@@ -1,5 +1,6 @@
 var NAVTREEINDEX57 =
 {
+"struct_process_1_1_preset.html#a2367da0742ecd708e065167d27aafa5c":[12,0,36,67,0],
 "struct_process_1_1_preset.html#a2f9d666d988d3c411fe83aeb495af1c4":[12,0,36,67,1],
 "struct_process_1_1_preset.html#a79456f2ea80d5390280a5c9987cdd29c":[12,0,36,67,2],
 "struct_process_1_1_preset.html#abdc49021c07a7ce419c5cc0a5f6e00e8":[12,0,36,67,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX57 =
 "struct_q_meta_type_id_3_01_gfx_1_1_camera_settings_01_4.html#ade01c81852d97bb5477e030e1546ca24aaddf49cfd01e45c6d75b7397581f5789":[12,0,220,0],
 "struct_q_meta_type_id_3_01_gfx_1_1_kinect2_settings_01_4.html":[12,0,221],
 "struct_q_meta_type_id_3_01_gfx_1_1_kinect2_settings_01_4.html#a4898fab040652cc7dfb711ec42509ba2a2eb66fbab8f0b0ffd864808589458638":[12,0,221,0],
-"struct_q_meta_type_id_3_01_gfx_1_1_processed_program_01_4.html":[12,0,222],
-"struct_q_meta_type_id_3_01_gfx_1_1_processed_program_01_4.html#a4ec714b1e566e841cb9b95d623db12caad5e3df4f4ec4781ac301a1cb17166536":[12,0,222,0]
+"struct_q_meta_type_id_3_01_gfx_1_1_processed_program_01_4.html":[12,0,222]
 };
