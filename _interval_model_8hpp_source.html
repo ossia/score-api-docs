@@ -436,26 +436,28 @@ $(document).ready(function(){initNavTree('_interval_model_8hpp_source.html','');
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<a class="code" href="struct_scenario_1_1_parent_time_info.html">ParentTimeInfo</a> closestParentWithMusicalMetrics(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>*);</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;SCORE_PLUGIN_SCENARIO_EXPORT</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<a class="code" href="struct_scenario_1_1_parent_time_info.html">ParentTimeInfo</a> closestParentWithTempo(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>*);</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;SCORE_PLUGIN_SCENARIO_EXPORT</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<a class="code" href="struct_time_val.html">TimeVal</a> timeDelta(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>* child, <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>* parent);</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;}</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160; </div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;DEFAULT_MODEL_METADATA(<a class="code" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a>, <span class="stringliteral">&quot;Interval&quot;</span>)</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;SCORE_PLUGIN_SCENARIO_EXPORT</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<a class="code" href="struct_scenario_1_1_parent_time_info.html">ParentTimeInfo</a> closestParentWithQuantification(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>* <span class="keyword">self</span>);</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;SCORE_PLUGIN_SCENARIO_EXPORT</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<a class="code" href="struct_time_val.html">TimeVal</a> timeDelta(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>* child, <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>* parent);</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;}</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160; </div>
-<div class="line"><a name="l00349"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_scenario_1_1_time_signature_map_01_4.html">  349</a></span>&#160;Q_DECLARE_METATYPE(<a class="code" href="namespace_scenario.html">Scenario</a>::TimeSignatureMap)</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="namespace_scenario.html">Scenario</a>::TimeSignatureMap)</div>
-<div class="line"><a name="l00351"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_scenario_1_1_interval_model_1_1_view_mode_01_4.html">  351</a></span>&#160;Q_DECLARE_METATYPE(<a class="code" href="namespace_scenario.html">Scenario</a>::IntervalModel::ViewMode)</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="namespace_scenario.html">Scenario</a>::IntervalModel::ViewMode)</div>
-<div class="line"><a name="l00353"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_q_pointer_3_01_scenario_1_1_interval_model_01_4_01_4.html">  353</a></span>&#160;Q_DECLARE_METATYPE(QPointer&lt;<a class="code" href="namespace_scenario.html">Scenario</a>::IntervalModel&gt;)</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;W_REGISTER_ARGTYPE(QPointer&lt;<a class="code" href="namespace_scenario.html">Scenario</a>::IntervalModel&gt;)</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160; </div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;TR_TEXT_METADATA(, <a class="code" href="namespace_scenario.html">Scenario</a>::IntervalModel, <a class="code" href="class_pretty_name__k.html">PrettyName_k</a>, &quot;Interval&quot;)</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;DEFAULT_MODEL_METADATA(<a class="code" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a>, <span class="stringliteral">&quot;Interval&quot;</span>)</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
+<div class="line"><a name="l00351"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_scenario_1_1_time_signature_map_01_4.html">  351</a></span>&#160;Q_DECLARE_METATYPE(<a class="code" href="namespace_scenario.html">Scenario</a>::TimeSignatureMap)</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="namespace_scenario.html">Scenario</a>::TimeSignatureMap)</div>
+<div class="line"><a name="l00353"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_scenario_1_1_interval_model_1_1_view_mode_01_4.html">  353</a></span>&#160;Q_DECLARE_METATYPE(<a class="code" href="namespace_scenario.html">Scenario</a>::IntervalModel::ViewMode)</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="namespace_scenario.html">Scenario</a>::IntervalModel::ViewMode)</div>
+<div class="line"><a name="l00355"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_q_pointer_3_01_scenario_1_1_interval_model_01_4_01_4.html">  355</a></span>&#160;Q_DECLARE_METATYPE(QPointer&lt;<a class="code" href="namespace_scenario.html">Scenario</a>::IntervalModel&gt;)</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;W_REGISTER_ARGTYPE(QPointer&lt;<a class="code" href="namespace_scenario.html">Scenario</a>::IntervalModel&gt;)</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
-<div class="line"><a name="l00358"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_scenario_1_1_interval_model_01_5_01_4.html">  358</a></span>&#160;Q_DECLARE_METATYPE(<a class="code" href="namespace_scenario.html">Scenario</a>::IntervalModel*)</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="namespace_scenario.html">Scenario</a>::IntervalModel*)</div>
-<div class="line"><a name="l00360"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01const_01_scenario_1_1_interval_model_01_5_01_4.html">  360</a></span>&#160;Q_DECLARE_METATYPE(const <a class="code" href="namespace_scenario.html">Scenario</a>::IntervalModel*)</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;W_REGISTER_ARGTYPE(const <a class="code" href="namespace_scenario.html">Scenario</a>::IntervalModel*)</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;TR_TEXT_METADATA(, <a class="code" href="namespace_scenario.html">Scenario</a>::IntervalModel, <a class="code" href="class_pretty_name__k.html">PrettyName_k</a>, &quot;Interval&quot;)</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160; </div>
+<div class="line"><a name="l00360"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_scenario_1_1_interval_model_01_5_01_4.html">  360</a></span>&#160;Q_DECLARE_METATYPE(<a class="code" href="namespace_scenario.html">Scenario</a>::IntervalModel*)</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="namespace_scenario.html">Scenario</a>::IntervalModel*)</div>
+<div class="line"><a name="l00362"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01const_01_scenario_1_1_interval_model_01_5_01_4.html">  362</a></span>&#160;Q_DECLARE_METATYPE(const <a class="code" href="namespace_scenario.html">Scenario</a>::IntervalModel*)</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;W_REGISTER_ARGTYPE(const <a class="code" href="namespace_scenario.html">Scenario</a>::IntervalModel*)</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1366</div></div>
