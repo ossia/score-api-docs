@@ -8,6 +8,5 @@ var class_gfx_1_1_gfx_input_device =
     [ "recreate", "class_gfx_1_1_gfx_input_device.html#ac8466315562de83e467f68e488e68962", null ],
     [ "refresh", "class_gfx_1_1_gfx_input_device.html#afe8d519c9ab1b8f50b5e6f74d395e963", null ],
     [ "setupNode", "class_gfx_1_1_gfx_input_device.html#a43099616fb4d0391728b722eb1635b1c", null ],
-    [ "updateAddress", "class_gfx_1_1_gfx_input_device.html#ac21a9009092d502edfc8addd28c725c2", null ],
     [ "m_ctx", "class_gfx_1_1_gfx_input_device.html#aceb8a0852030a917b15ebea1f635d2a4", null ]
 ];

@@ -1,7 +1,5 @@
 var NAVTREEINDEX25 =
 {
-"class_protocols_1_1_artnet_device.html#af7cd92191628ba011899d8da7492f828":[12,0,37,3,1],
-"class_protocols_1_1_artnet_protocol_factory.html":[12,0,37,4],
 "class_protocols_1_1_artnet_protocol_settings_widget.html":[12,0,37,5],
 "class_protocols_1_1_artnet_protocol_settings_widget.html#a129347b8392d7db00470c31870b7e5c9":[12,0,37,5,1],
 "class_protocols_1_1_artnet_protocol_settings_widget.html#a4c745cfb8fc836554f07f6f5b71afa08":[12,0,37,5,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX25 =
 "class_random_name_provider.html":[12,0,308],
 "class_reader.html":[12,0,309],
 "class_recording_1_1_application_plugin.html":[12,0,38,0],
-"class_recording_1_1_application_plugin.html#a4207bafdf2378184dc9231ba83cf3fce":[12,0,38,0,1]
+"class_recording_1_1_application_plugin.html#a4207bafdf2378184dc9231ba83cf3fce":[12,0,38,0,1],
+"class_recording_1_1_application_plugin.html#a47018781f710ba5f2a761bf1a3ccc760":[12,0,38,0,3],
+"class_recording_1_1_application_plugin.html#a6cb01a0e446f1d277c7de85b91b0e0f1":[12,0,38,0,2]
 };

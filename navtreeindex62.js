@@ -1,7 +1,5 @@
 var NAVTREEINDEX62 =
 {
-"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01_t_01_4_01_4.html#a2139b55b481216c4ff11701049447bdd":[12,0,448,0],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01bool_01_4_01_4.html":[12,0,445],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01bool_01_4_01_4.html#aa59b32d76f3d932165d2d62ed0c445e7":[12,0,445,0],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01ossia_1_1impulse_01_4_01_4.html":[12,0,446],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01ossia_1_1impulse_01_4_01_4.html#ad64b3bc0cfecd1c9d1f5f56f07e89149":[12,0,446,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX62 =
 "structincrease__timer__precision.html#ad1d3c260fe9c0e5705958cf0b5e63331":[12,0,134,0],
 "structis___q_data_stream_serializable.html":[12,0,139],
 "structis___q_data_stream_serializable_3_01_t_00_01enable__if___q_data_stream_serializable_3_01ty7af32fa90288391deda099428bb0c0e7.html":[12,0,140],
-"structis__shared__ptr.html":[12,0,141]
+"structis__shared__ptr.html":[12,0,141],
+"structis__shared__ptr_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html":[12,0,142],
+"structmatches.html":[12,0,153]
 };

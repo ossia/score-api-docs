@@ -149,32 +149,34 @@ $(document).ready(function(){initNavTree('_window_device_8hpp_source.html',''); 
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  ~<a class="code" href="class_gfx_1_1_window_device.html">WindowDevice</a>();</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> setupContextMenu(QMenu&amp;) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  ossia::net::device_base* getDevice()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> m_dev.get(); }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">bool</span> reconnect() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="class_gfx_1_1gfx__protocol__base.html">gfx_protocol_base</a>* m_protocol{};</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">mutable</span> std::unique_ptr&lt;ossia::net::device_base&gt; m_dev;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_gfx_1_1_window_settings_widget.html">   60</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_gfx_1_1_window_settings_widget.html">WindowSettingsWidget</a> final : <span class="keyword">public</span> <a class="code" href="class_device_1_1_protocol_settings_widget.html">Device::ProtocolSettingsWidget</a></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="class_gfx_1_1_window_settings_widget.html">WindowSettingsWidget</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> getSettings() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> setSettings(<span class="keyword">const</span> <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; settings) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span> setDefaults();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  QLineEdit* m_deviceNameEdit{};</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> addAddress(<span class="keyword">const</span> <a class="code" href="struct_device_1_1_full_address_settings.html">Device::FullAddressSettings</a>&amp; settings) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> setupContextMenu(QMenu&amp;) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  ossia::net::device_base* getDevice()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> m_dev.get(); }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">bool</span> reconnect() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="class_gfx_1_1gfx__protocol__base.html">gfx_protocol_base</a>* m_protocol{};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">mutable</span> std::unique_ptr&lt;ossia::net::device_base&gt; m_dev;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_gfx_1_1_window_settings_widget.html">   61</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_gfx_1_1_window_settings_widget.html">WindowSettingsWidget</a> final : <span class="keyword">public</span> <a class="code" href="class_device_1_1_protocol_settings_widget.html">Device::ProtocolSettingsWidget</a></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="class_gfx_1_1_window_settings_widget.html">WindowSettingsWidget</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> getSettings() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> setSettings(<span class="keyword">const</span> <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; settings) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">void</span> setDefaults();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  QLineEdit* m_deviceNameEdit{};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_gfx_1_1_window_settings_widget_html"><div class="ttname"><a href="class_gfx_1_1_window_settings_widget.html">Gfx::WindowSettingsWidget</a></div><div class="ttdef"><b>Definition:</b> WindowDevice.hpp:60</div></div>
+<div class="ttc" id="aclass_gfx_1_1_window_settings_widget_html"><div class="ttname"><a href="class_gfx_1_1_window_settings_widget.html">Gfx::WindowSettingsWidget</a></div><div class="ttdef"><b>Definition:</b> WindowDevice.hpp:61</div></div>
+<div class="ttc" id="astruct_device_1_1_full_address_settings_html"><div class="ttname"><a href="struct_device_1_1_full_address_settings.html">Device::FullAddressSettings</a></div><div class="ttdef"><b>Definition:</b> AddressSettings.hpp:64</div></div>
 <div class="ttc" id="aclass_explorer_1_1_device_document_plugin_html"><div class="ttname"><a href="class_explorer_1_1_device_document_plugin.html">Explorer::DeviceDocumentPlugin</a></div><div class="ttdef"><b>Definition:</b> DeviceDocumentPlugin.hpp:25</div></div>
 <div class="ttc" id="astruct_device_1_1_address_settings_html"><div class="ttname"><a href="struct_device_1_1_address_settings.html">Device::AddressSettings</a></div><div class="ttdef"><b>Definition:</b> AddressSettings.hpp:50</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:15</div></div>
@@ -185,7 +187,7 @@ $(document).ready(function(){initNavTree('_window_device_8hpp_source.html',''); 
 <div class="ttc" id="aclass_gfx_1_1gfx__protocol__base_html"><div class="ttname"><a href="class_gfx_1_1gfx__protocol__base.html">Gfx::gfx_protocol_base</a></div><div class="ttdef"><b>Definition:</b> GfxParameter.hpp:42</div></div>
 <div class="ttc" id="aclass_device_1_1_address_dialog_html"><div class="ttname"><a href="class_device_1_1_address_dialog.html">Device::AddressDialog</a></div><div class="ttdef"><b>Definition:</b> ProtocolSettingsWidget.hpp:40</div></div>
 <div class="ttc" id="astruct_visitor_variant_html"><div class="ttname"><a href="struct_visitor_variant.html">VisitorVariant</a></div><div class="ttdoc">The VisitorVariant struct.</div><div class="ttdef"><b>Definition:</b> VisitorInterface.hpp:25</div></div>
-<div class="ttc" id="aclass_gfx_1_1_gfx_output_device_html"><div class="ttname"><a href="class_gfx_1_1_gfx_output_device.html">Gfx::GfxOutputDevice</a></div><div class="ttdef"><b>Definition:</b> GfxDevice.hpp:39</div></div>
+<div class="ttc" id="aclass_gfx_1_1_gfx_output_device_html"><div class="ttname"><a href="class_gfx_1_1_gfx_output_device.html">Gfx::GfxOutputDevice</a></div><div class="ttdef"><b>Definition:</b> GfxDevice.hpp:36</div></div>
 <div class="ttc" id="aclass_gfx_1_1_window_device_html"><div class="ttname"><a href="class_gfx_1_1_window_device.html">Gfx::WindowDevice</a></div><div class="ttdef"><b>Definition:</b> WindowDevice.hpp:44</div></div>
 <div class="ttc" id="anamespace_gfx_html"><div class="ttname"><a href="namespace_gfx.html">Gfx</a></div><div class="ttdoc">Binds the rendering pipeline to ossia processes.</div><div class="ttdef"><b>Definition:</b> CameraDevice.cpp:29</div></div>
 <div class="ttc" id="aclass_device_1_1_device_enumerator_html"><div class="ttname"><a href="class_device_1_1_device_enumerator.html">Device::DeviceEnumerator</a></div><div class="ttdef"><b>Definition:</b> ProtocolFactoryInterface.hpp:27</div></div>
