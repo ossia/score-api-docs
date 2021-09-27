@@ -301,6 +301,8 @@ var namespace_scenario =
     [ "ObjectPanelDelegateFactory", "class_scenario_1_1_object_panel_delegate_factory.html", null ],
     [ "ObjectWidget", "class_scenario_1_1_object_widget.html", "class_scenario_1_1_object_widget" ],
     [ "ParentTimeInfo", "struct_scenario_1_1_parent_time_info.html", "struct_scenario_1_1_parent_time_info" ],
+    [ "PathDetector", "struct_scenario_1_1_path_detector.html", "struct_scenario_1_1_path_detector" ],
+    [ "PathDetectorState", "struct_scenario_1_1_path_detector_state.html", "struct_scenario_1_1_path_detector_state" ],
     [ "PlayToolState", "class_scenario_1_1_play_tool_state.html", "class_scenario_1_1_play_tool_state" ],
     [ "Point", "struct_scenario_1_1_point.html", "struct_scenario_1_1_point" ],
     [ "PositionedScenarioEvent", "struct_scenario_1_1_positioned_scenario_event.html", "struct_scenario_1_1_positioned_scenario_event" ],

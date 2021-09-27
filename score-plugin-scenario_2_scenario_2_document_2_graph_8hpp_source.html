@@ -155,26 +155,28 @@ $(document).ready(function(){initNavTree('score-plugin-scenario_2_scenario_2_doc
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span>&amp; edges()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_edges; }</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span>&amp; vertices()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_vertices; }</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">bool</span> hasCycles() <span class="keyword">const</span> noexcept;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> writeGraphviz();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="struct_scenario_1_1_timenode_graph_components.html">TimenodeGraphComponents</a> components();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> intervalsChanged(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&amp;);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> timeSyncsChanged(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_time_sync_model.html">TimeSyncModel</a>&amp;);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span> recompute();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp; m_scenario;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  Graph m_graph;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">bool</span> m_cycles{};</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  score::hash_map&lt;const Scenario::TimeSyncModel*, Graph::vertex_descriptor&gt;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      m_vertices;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  score::hash_map&lt;const Scenario::IntervalModel*, Graph::edge_descriptor&gt;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      m_edges;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">bool</span> hasPath(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_time_sync_model.html">TimeSyncModel</a>&amp; t1, <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_time_sync_model.html">TimeSyncModel</a>&amp; t2) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">bool</span> hasCycles() <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">void</span> writeGraphviz();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <a class="code" href="struct_scenario_1_1_timenode_graph_components.html">TimenodeGraphComponents</a> components();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">void</span> intervalsChanged(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&amp;);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> timeSyncsChanged(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_time_sync_model.html">TimeSyncModel</a>&amp;);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">void</span> recompute();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp; m_scenario;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  Graph m_graph;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">bool</span> m_cycles{};</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  score::hash_map&lt;const Scenario::TimeSyncModel*, Graph::vertex_descriptor&gt;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      m_vertices;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  score::hash_map&lt;const Scenario::IntervalModel*, Graph::edge_descriptor&gt;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      m_edges;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astruct_scenario_1_1_timenode_graph_connected_component_html"><div class="ttname"><a href="struct_scenario_1_1_timenode_graph_connected_component.html">Scenario::TimenodeGraphConnectedComponent</a></div><div class="ttdoc">A directed graph of all the TimeSyncs in a ScenarioInterface.</div><div class="ttdef"><b>Definition:</b> score-plugin-scenario/Scenario/Document/Graph.hpp:39</div></div>

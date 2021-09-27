@@ -1,5 +1,11 @@
 var NAVTREEINDEX61 =
 {
+"struct_state_1_1_address.html#aa0431c8a2d08110aa2a5016006707569":[12,0,47,0,9],
+"struct_state_1_1_address.html#aa09569fedf1ed3d64b9449ff09cce696":[12,0,47,0,11],
+"struct_state_1_1_address.html#aafc395048e6872e8f4b4d181b9a5bc13":[12,0,47,0,3],
+"struct_state_1_1_address.html#ac1ca83d0daa90ce17ae23f66d9fe7ea7":[12,0,47,0,0],
+"struct_state_1_1_address.html#acd08e95f4457689d27764ba8fa73f119":[12,0,47,0,1],
+"struct_state_1_1_address.html#afaf7a1683bbb05ece69b803c6eca323c":[12,0,47,0,8],
 "struct_state_1_1_address.html#afb51dfd82edc90f1adc8b269fd0feeaf":[12,0,47,0,4],
 "struct_state_1_1_address_accessor.html":[12,0,47,1],
 "struct_state_1_1_address_accessor.html#a04279c8c5678ad0a76686d5a5ea8f3b5":[12,0,47,1,11],
@@ -243,11 +249,5 @@ var NAVTREEINDEX61 =
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_uuid_key_3_01_u_01_4_01_4.html":[12,0,484],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01boost_1_1container_1_1small__vector_3_01_t_00_01_n_00_01_alloc_01_4_01_4.html":[12,0,436],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01boost_1_1container_1_1small__vector_3_01_t_01_5_00_01_n_01_4_01_4.html":[12,0,435],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01boost_1_1container_1_1static__vector_3_01_t_00_01_n_01_4_01_4.html":[12,0,437],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01boost_1_1variant2_1_1variant_3_01_args_8_8_8_01_4_01_4.html":[12,0,438],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01boost_1_1variant2_1_1variant_3_01_args_8_8_8_01_4_01_4.html#aeca8063c00b4abc266564210f3f68324":[12,0,438,0],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01eggs_1_1variant_3_01_args_8_8_8_01_4_01_4.html":[12,0,439],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01eggs_1_1variant_3_01_args_8_8_8_01_4_01_4.html#a6527bc244f938431c836426807fae5a2":[12,0,439,0],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01_t_01_4_01_4.html":[12,0,448],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01_t_01_4_01_4.html#a2139b55b481216c4ff11701049447bdd":[12,0,448,0]
+"struct_t_serializer_3_01_j_s_o_n_object_00_01boost_1_1container_1_1static__vector_3_01_t_00_01_n_01_4_01_4.html":[12,0,437]
 };
