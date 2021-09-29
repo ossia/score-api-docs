@@ -14,6 +14,7 @@ var classvst3_1_1_model =
     [ "reloadControls", "classvst3_1_1_model.html#ae30dfe2e738eca3842123b76317e5d08", null ],
     [ "removeControl", "classvst3_1_1_model.html#a19deda650935110b07deaaa8c6fb928c", null ],
     [ "removeControl", "classvst3_1_1_model.html#ab4678f340522b1b6cdb342a287746596", null ],
+    [ "restartComponent", "classvst3_1_1_model.html#a2fd7c5776e5302512569065c1d2c0347", null ],
     [ "PortCreationVisitor", "classvst3_1_1_model.html#afdcf45b0259149771778ab30e950025f", null ],
     [ "vst3::CreateVSTControl", "classvst3_1_1_model.html#a60e9b4b06f36763b2023930f9e940eee", null ],
     [ "controls", "classvst3_1_1_model.html#ad7f91c72f7f243963d8af81a7ca53a0a", null ],

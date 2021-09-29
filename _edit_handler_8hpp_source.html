@@ -182,7 +182,7 @@ $(document).ready(function(){initNavTree('_edit_handler_8hpp_source.html',''); i
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  Steinberg::tresult restartComponent(Steinberg::int32 flags)<span class="keyword"> override</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">return</span> Steinberg::kResultOk;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">return</span> m_model.restartComponent(flags);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  }</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  Steinberg::tresult setDirty(Steinberg::TBool state)<span class="keyword"> override</span></div>
@@ -197,14 +197,17 @@ $(document).ready(function(){initNavTree('_edit_handler_8hpp_source.html',''); i
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">return</span> Steinberg::kResultOk;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  }</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  Steinberg::tresult startGroupEdit()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> Steinberg::kResultOk; }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  Steinberg::tresult finishGroupEdit()<span class="keyword"> override</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">return</span> Steinberg::kResultOk;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;};</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  Steinberg::tresult startGroupEdit()<span class="keyword"> override</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">return</span> Steinberg::kResultOk;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  Steinberg::tresult finishGroupEdit()<span class="keyword"> override</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">return</span> Steinberg::kResultOk;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;};</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvst3_1_1_create_control_html"><div class="ttname"><a href="classvst3_1_1_create_control.html">vst3::CreateControl</a></div><div class="ttdef"><b>Definition:</b> plugins/score-plugin-vst3/Vst3/commands.hpp:40</div></div>

@@ -22,6 +22,7 @@ var structvst3_1_1_plugin =
     [ "event_outs", "structvst3_1_1_plugin.html#a5f7ed0c940aac98ebba7a1b54c2555e8", null ],
     [ "hasUI", "structvst3_1_1_plugin.html#a646a0baa57cce1c90f59b196099cc783", null ],
     [ "mdl", "structvst3_1_1_plugin.html#add4dbf724b439c5f420ed6e6b036d07b", null ],
+    [ "midiControls", "structvst3_1_1_plugin.html#a57e3c2963cafe425bfafab1d8a4d928d", null ],
     [ "path", "structvst3_1_1_plugin.html#a0d8510a282e1b4d5c8e6743df5f152d0", null ],
     [ "processor", "structvst3_1_1_plugin.html#a6524f19aa74a519cbb1ba57cb69d0bac", null ],
     [ "supportsDouble", "structvst3_1_1_plugin.html#aeffdad7e7d52ca33f1a6d2b329329f18", null ],

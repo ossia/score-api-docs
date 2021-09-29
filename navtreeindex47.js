@@ -1,5 +1,7 @@
 var NAVTREEINDEX47 =
 {
+"classvst3_1_1vst__node__base.html#a30fb6a5d4495a041e3f42ba547b56fb2":[12,0,53,18,7],
+"classvst3_1_1vst__node__base.html#a31baafe88bcce7ed13db2a70b938c281":[12,0,53,18,24],
 "classvst3_1_1vst__node__base.html#a4431096f4dbd723e3e068220232c668e":[12,0,53,18,13],
 "classvst3_1_1vst__node__base.html#a487e7887b95d1b0c1df691d617554825":[12,0,53,18,5],
 "classvst3_1_1vst__node__base.html#a4ddd5653ff47dbc96e175f2224d45430":[12,0,53,18,12],
@@ -13,6 +15,7 @@ var NAVTREEINDEX47 =
 "classvst3_1_1vst__node__base.html#ab604dd9431d84146f8cda4814158c037":[12,0,53,18,16],
 "classvst3_1_1vst__node__base.html#ab68159875a9d2c2f3c2c3a6cd4c8acc3":[12,0,53,18,26],
 "classvst3_1_1vst__node__base.html#ab8e15c9c77d23a3170037b4fe4fdfc11":[12,0,53,18,4],
+"classvst3_1_1vst__node__base.html#ac46bef6c9bd3f5b84e470e79486d1a45":[12,0,53,18,27],
 "classvst3_1_1vst__node__base.html#ad50cd67302755bf6773a25e3f39c00f6":[12,0,53,18,17],
 "classvst3_1_1vst__node__base.html#afecd7ef0e22d291cf4e47ef82d1a41c5":[12,0,53,18,22],
 "classvst_1_1_application_plugin.html":[12,0,52,1],
@@ -154,15 +157,15 @@ var NAVTREEINDEX47 =
 "data_structures_8hpp_source.html":[13,0,264],
 "element_finding_helper_8hpp_source.html":[13,0,358],
 "files.html":[13,0],
-"functions.html":[12,3,0,0],
 "functions.html":[12,3,0],
+"functions.html":[12,3,0,0],
 "functions_b.html":[12,3,0,1],
 "functions_c.html":[12,3,0,2],
 "functions_d.html":[12,3,0,3],
 "functions_e.html":[12,3,0,4],
 "functions_f.html":[12,3,0,5],
-"functions_func.html":[12,3,1],
 "functions_func.html":[12,3,1,0],
+"functions_func.html":[12,3,1],
 "functions_func_c.html":[12,3,1,1],
 "functions_func_d.html":[12,3,1,2],
 "functions_func_e.html":[12,3,1,3],
@@ -226,8 +229,8 @@ var NAVTREEINDEX47 =
 "namespace_engine.html":[12,0,8],
 "namespace_engine.html":[11,0,3],
 "namespace_engine_1_1_network.html":[11,0,3,0],
-"namespace_execution.html":[12,0,9],
 "namespace_execution.html":[11,0,4],
+"namespace_execution.html":[12,0,9],
 "namespace_gfx.html":[12,0,15],
 "namespace_gfx.html":[11,0,5],
 "namespace_inspector.html":[11,0,6],
@@ -246,8 +249,5 @@ var NAVTREEINDEX47 =
 "namespacemembers_eval.html":[11,1,4],
 "namespacemembers_func.html":[11,1,1],
 "namespacemembers_type.html":[11,1,2],
-"namespaces.html":[11,0],
-"namespacescore.html":[12,0,43],
-"namespacescore.html":[11,0,11],
-"namespacescore_1_1gfx.html":[12,0,43,2]
+"namespaces.html":[11,0]
 };

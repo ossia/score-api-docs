@@ -4,6 +4,7 @@ var classvst3_1_1vst__node =
     [ "vst_node", "classvst3_1_1vst__node.html#a7094f023273c1b29c5031b33968e01cd", null ],
     [ "~vst_node", "classvst3_1_1vst__node.html#af9ea573aa87a0fb324f535cb43e7bbf8", null ],
     [ "all_notes_off", "classvst3_1_1vst__node.html#afa2ee832672b9415beab079cbbdfc3a0", null ],
+    [ "all_notes_off", "classvst3_1_1vst__node.html#ad5299a72da503e71cd91cc7c34463bde", null ],
     [ "label", "classvst3_1_1vst__node.html#ac66d6b97baa40aaaada5ffac5cb97bcf", null ],
     [ "processDouble", "classvst3_1_1vst__node.html#a31e165e79a428a208be78d242f21d444", null ],
     [ "processFloat", "classvst3_1_1vst__node.html#a6ffe4770be0e8c4cab61b39bf65fca53", null ],
