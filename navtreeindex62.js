@@ -1,6 +1,5 @@
 var NAVTREEINDEX62 =
 {
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_uuid_key_3_01_u_01_4_01_4.html":[12,0,484],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01boost_1_1container_1_1small__vector_3_01_t_00_01_n_00_01_alloc_01_4_01_4.html":[12,0,436],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01boost_1_1container_1_1small__vector_3_01_t_01_5_00_01_n_01_4_01_4.html":[12,0,435],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01boost_1_1container_1_1static__vector_3_01_t_00_01_n_01_4_01_4.html":[12,0,437],
@@ -249,5 +248,6 @@ var NAVTREEINDEX62 =
 "structgraphics__item__ptr.html#ae6f6290c904be30bff59cd2da372964d":[12,0,116,12],
 "structgraphics__item__ptr.html#afb8afe679462f7262069841b6e44287b":[12,0,116,6],
 "structhas__base.html":[12,0,119],
-"structhas__no__base.html":[12,0,120]
+"structhas__no__base.html":[12,0,120],
+"structhas__ui.html":[12,0,121]
 };

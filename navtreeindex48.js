@@ -1,8 +1,7 @@
 var NAVTREEINDEX48 =
 {
-"namespaces.html":[11,0],
-"namespacescore.html":[12,0,43],
 "namespacescore.html":[11,0,11],
+"namespacescore.html":[12,0,43],
 "namespacescore_1_1gfx.html":[12,0,43,2],
 "namespacescore_1_1gfx.html":[11,0,11,0],
 "pages.html":[],
@@ -249,5 +248,6 @@ var NAVTREEINDEX48 =
 "struct_boost_variant2_data_stream_deserializer.html":[12,0,75],
 "struct_boost_variant2_data_stream_deserializer.html#a319d8fd73e75a3042cde5820de17a4a8":[12,0,75,1],
 "struct_boost_variant2_data_stream_deserializer.html#a36a004f2e5d61e8e69b0e41a1fe74462":[12,0,75,2],
-"struct_boost_variant2_data_stream_deserializer.html#a4aee99eb327ad1ca461878bf0af75b05":[12,0,75,5]
+"struct_boost_variant2_data_stream_deserializer.html#a4aee99eb327ad1ca461878bf0af75b05":[12,0,75,5],
+"struct_boost_variant2_data_stream_deserializer.html#a54f4e0f02a7f2fb40291b252ee769a67":[12,0,75,3]
 };

@@ -2,7 +2,6 @@ var class_scenario_1_1_scenario_view =
 [
     [ "ScenarioView", "class_scenario_1_1_scenario_view.html#a2c10a29ec31737304e40c84b1603b33b", null ],
     [ "~ScenarioView", "class_scenario_1_1_scenario_view.html#af05509cd1fdff59cd0d4d474cdb55c07", null ],
-    [ "contextMenuEvent", "class_scenario_1_1_scenario_view.html#abe8e638f61a311ab5ae6a8f2fb7669af", null ],
     [ "dragEnterEvent", "class_scenario_1_1_scenario_view.html#a2a33451f955ee4b64fb81747d95ea658", null ],
     [ "dragLeaveEvent", "class_scenario_1_1_scenario_view.html#a919af0071521d541593757121a32c546", null ],
     [ "dragMoveEvent", "class_scenario_1_1_scenario_view.html#ac4791a65f77479146ccd071e0561b29a", null ],
