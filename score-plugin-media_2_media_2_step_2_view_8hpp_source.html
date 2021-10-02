@@ -136,57 +136,55 @@ $(document).ready(function(){initNavTree('score-plugin-media_2_media_2_step_2_vi
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">void</span> mousePressEvent(QGraphicsSceneMouseEvent* ev) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">void</span> mouseMoveEvent(QGraphicsSceneMouseEvent* ev) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">void</span> mouseReleaseEvent(QGraphicsSceneMouseEvent* ev) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span> contextMenuEvent(QGraphicsSceneContextMenuEvent* ev) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_media_1_1_step_1_1_model.html">Model</a>&amp; m_model;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">double</span> m_barWidth{};</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_media_1_1_step_1_1_item.html">   46</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_media_1_1_step_1_1_item.html">Item</a> final : <span class="keyword">public</span> <a class="code" href="classscore_1_1_empty_rect_item.html">score::EmptyRectItem</a></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  W_OBJECT(<a class="code" href="class_media_1_1_step_1_1_item.html">Item</a>)</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_media_1_1_step_1_1_item.html">Item</a>(</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_media_1_1_step_1_1_model.html">Model</a>&amp;,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; ctx,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      QGraphicsItem* parent);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  ~<a class="code" href="class_media_1_1_step_1_1_item.html">Item</a>();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> setBarWidth(<span class="keywordtype">double</span> v);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> change(<span class="keywordtype">int</span> arg_1, <span class="keywordtype">float</span> arg_2) W_SIGNAL(change, arg_1, arg_2);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> paint(</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      QPainter* painter,</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="keyword">const</span> QStyleOptionGraphicsItem* option,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      QWidget* widget) <span class="keyword">final</span> <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> mousePressEvent(QGraphicsSceneMouseEvent* ev) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> mouseMoveEvent(QGraphicsSceneMouseEvent* ev) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> mouseReleaseEvent(QGraphicsSceneMouseEvent* ev) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span> contextMenuEvent(QGraphicsSceneContextMenuEvent* ev) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_media_1_1_step_1_1_model.html">Model</a>&amp; m_model;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <a class="code" href="class_single_ongoing_command_dispatcher.html">SingleOngoingCommandDispatcher&lt;Media::ChangeSteps&gt;</a> m_disp;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">void</span> updateSteps(</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_media_1_1_step_1_1_model.html">Model</a>&amp; m,</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="class_single_ongoing_command_dispatcher.html">SingleOngoingCommandDispatcher&lt;Media::ChangeSteps&gt;</a>&amp; disp,</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    std::size_t num,</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">float</span> v);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_media_1_1_step_1_1_model.html">Model</a>&amp; m_model;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">double</span> m_barWidth{};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_media_1_1_step_1_1_item.html">   45</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_media_1_1_step_1_1_item.html">Item</a> final : <span class="keyword">public</span> <a class="code" href="classscore_1_1_empty_rect_item.html">score::EmptyRectItem</a></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  W_OBJECT(<a class="code" href="class_media_1_1_step_1_1_item.html">Item</a>)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_media_1_1_step_1_1_item.html">Item</a>(</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_media_1_1_step_1_1_model.html">Model</a>&amp;,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; ctx,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      QGraphicsItem* parent);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  ~<a class="code" href="class_media_1_1_step_1_1_item.html">Item</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> setBarWidth(<span class="keywordtype">double</span> v);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">void</span> change(<span class="keywordtype">int</span> arg_1, <span class="keywordtype">float</span> arg_2) W_SIGNAL(change, arg_1, arg_2);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">void</span> paint(</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      QPainter* painter,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keyword">const</span> QStyleOptionGraphicsItem* option,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      QWidget* widget) <span class="keyword">final</span> <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> mousePressEvent(QGraphicsSceneMouseEvent* ev) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> mouseMoveEvent(QGraphicsSceneMouseEvent* ev) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> mouseReleaseEvent(QGraphicsSceneMouseEvent* ev) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_media_1_1_step_1_1_model.html">Model</a>&amp; m_model;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="class_single_ongoing_command_dispatcher.html">SingleOngoingCommandDispatcher&lt;Media::ChangeSteps&gt;</a> m_disp;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">void</span> updateSteps(</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_media_1_1_step_1_1_model.html">Model</a>&amp; m,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="class_single_ongoing_command_dispatcher.html">SingleOngoingCommandDispatcher&lt;Media::ChangeSteps&gt;</a>&amp; disp,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    std::size_t num,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">float</span> v);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1366</div></div>
 <div class="ttc" id="aclassscore_1_1_empty_rect_item_html"><div class="ttname"><a href="classscore_1_1_empty_rect_item.html">score::EmptyRectItem</a></div><div class="ttdef"><b>Definition:</b> RectItem.hpp:50</div></div>
 <div class="ttc" id="aclass_media_1_1_step_1_1_view_html"><div class="ttname"><a href="class_media_1_1_step_1_1_view.html">Media::Step::View</a></div><div class="ttdef"><b>Definition:</b> score-plugin-media/Media/Step/View.hpp:21</div></div>
-<div class="ttc" id="aclass_media_1_1_step_1_1_item_html"><div class="ttname"><a href="class_media_1_1_step_1_1_item.html">Media::Step::Item</a></div><div class="ttdef"><b>Definition:</b> score-plugin-media/Media/Step/View.hpp:46</div></div>
+<div class="ttc" id="aclass_media_1_1_step_1_1_item_html"><div class="ttname"><a href="class_media_1_1_step_1_1_item.html">Media::Step::Item</a></div><div class="ttdef"><b>Definition:</b> score-plugin-media/Media/Step/View.hpp:45</div></div>
 <div class="ttc" id="aclass_process_1_1_layer_view_html"><div class="ttname"><a href="class_process_1_1_layer_view.html">Process::LayerView</a></div><div class="ttdef"><b>Definition:</b> LayerView.hpp:18</div></div>
 <div class="ttc" id="aclass_media_1_1_step_1_1_model_html"><div class="ttname"><a href="class_media_1_1_step_1_1_model.html">Media::Step::Model</a></div><div class="ttdef"><b>Definition:</b> score-plugin-media/Media/Step/Model.hpp:19</div></div>
 <div class="ttc" id="aclass_single_ongoing_command_dispatcher_html"><div class="ttname"><a href="class_single_ongoing_command_dispatcher.html">SingleOngoingCommandDispatcher&lt; Media::ChangeSteps &gt;</a></div></div>

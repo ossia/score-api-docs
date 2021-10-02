@@ -5,6 +5,7 @@ var class_process_1_1_layer_view =
     [ "askContextMenu", "class_process_1_1_layer_view.html#a8f248921b7dace68ff0f1698ef1b7a52", null ],
     [ "boundingRect", "class_process_1_1_layer_view.html#ae7dd7e7e986c0c97e5e9204ca6e300de", null ],
     [ "clearPressed", "class_process_1_1_layer_view.html#afa8e70cce06bc2e88736d26c108ecbdb", null ],
+    [ "contextMenuEvent", "class_process_1_1_layer_view.html#a8530d1a73094ef7b3f0fa67383436061", null ],
     [ "doubleClicked", "class_process_1_1_layer_view.html#a2be482183ab0e491abae841992757a5d", null ],
     [ "dragEnter", "class_process_1_1_layer_view.html#a0511fffb7f828bd943a80bf9c113c22b", null ],
     [ "dragEnterEvent", "class_process_1_1_layer_view.html#a425e69197cdea4a587415b8b4caf24df", null ],

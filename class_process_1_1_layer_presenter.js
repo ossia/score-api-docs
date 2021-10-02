@@ -15,6 +15,7 @@ var class_process_1_1_layer_presenter =
     [ "parentGeometryChanged", "class_process_1_1_layer_presenter.html#a60f0618b26e0acb6567ae0cedb4cca96", null ],
     [ "putBehind", "class_process_1_1_layer_presenter.html#af6bcfba7b1ab3c33b675e6e36fde6861", null ],
     [ "putToFront", "class_process_1_1_layer_presenter.html#ac3ecaf3186808fa1ca4540ebab50dfd8", null ],
+    [ "requestFocus", "class_process_1_1_layer_presenter.html#a0f4b05f2b537de76dcbf0af1220ce1b8", null ],
     [ "setFocus", "class_process_1_1_layer_presenter.html#acb4f4585c09d231eea4e244f8d480639", null ],
     [ "setFullView", "class_process_1_1_layer_presenter.html#a93d2e75b60f201ef9f2f18be4c5a8225", null ],
     [ "setHeight", "class_process_1_1_layer_presenter.html#ae35b15d21850f697cf8c84dc36ed134c", null ],
