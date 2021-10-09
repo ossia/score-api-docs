@@ -694,7 +694,7 @@ $(document).ready(function(){initNavTree('score-lib-process_2_control_2_widgets_
 <div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160; </div>
 <div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;  ossia::value toValue(<span class="keywordtype">int</span> v)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;    <span class="keywordflow">if</span>(v &gt;= 0 &amp;&amp; v &lt; values.size())</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;    <span class="keywordflow">if</span>(ossia::valid_index(v, values))</div>
 <div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;      <span class="keywordflow">return</span> ossia::value{std::string(values[v])};</div>
 <div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;      <span class="keywordflow">return</span> ossia::value{};</div>
@@ -764,7 +764,7 @@ $(document).ready(function(){initNavTree('score-lib-process_2_control_2_widgets_
 <div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;      <span class="keywordflow">case</span> ossia::val_type::INT:</div>
 <div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;      {</div>
 <div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;        <span class="keywordtype">int</span> t = *v.target&lt;<span class="keywordtype">int</span>&gt;();</div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;        <span class="keywordflow">if</span>(t &gt;= 0 &amp;&amp; t &lt; this-&gt;values.size())</div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;        <span class="keywordflow">if</span>(ossia::valid_index(t, this-&gt;values))</div>
 <div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;        {</div>
 <div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;          str = this-&gt;values[t];</div>
 <div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -795,7 +795,7 @@ $(document).ready(function(){initNavTree('score-lib-process_2_control_2_widgets_
 <div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;      <span class="keywordflow">case</span> ossia::val_type::INT:</div>
 <div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;      {</div>
 <div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;        <span class="keywordtype">int</span> t = *v.target&lt;<span class="keywordtype">int</span>&gt;();</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;        <span class="keywordflow">if</span>(t &gt;= 0 &amp;&amp; t &lt; this-&gt;values.size())</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;        <span class="keywordflow">if</span>(ossia::valid_index(t, this-&gt;values))</div>
 <div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;        {</div>
 <div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;          integer_like = t;</div>
 <div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
