@@ -401,187 +401,190 @@ $(document).ready(function(){initNavTree('_qml_objects_8hpp_source.html',''); in
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;      p-&gt;setPropagate(<span class="keyword">true</span>);</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordflow">return</span> p;</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  }</div>
-<div class="line"><a name="l00304"></a><span class="lineno"><a class="line" href="class_midi_message.html">  304</a></span>&#160; </div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  <span class="keyword">const</span> QVector&lt;QVector&lt;double&gt;&gt;&amp; audio() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  <span class="keywordtype">void</span> setChannel(<span class="keywordtype">int</span> i, QVector&lt;double&gt; v)</div>
+<div class="line"><a name="l00307"></a><span class="lineno"><a class="line" href="class_midi_message.html">  307</a></span>&#160;  <span class="keywordtype">void</span> setChannel(<span class="keywordtype">int</span> i, QVector&lt;double&gt; v)</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  {</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    i = std::abs(i);</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    m_audio.resize(ossia::max(i + 1, std::ssize(m_audio)));</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    m_audio[i] = v;</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  }</div>
-<div class="line"><a name="l00313"></a><span class="lineno"><a class="line" href="class_midi_inlet.html">  313</a></span>&#160;  W_INVOKABLE(setChannel)</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;  QVector&lt;QVector&lt;double&gt;&gt; m_audio;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;};</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="keyword">class </span><a class="code" href="class_midi_message.html">MidiMessage</a></div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;{</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  W_GADGET(<a class="code" href="class_midi_message.html">MidiMessage</a>)</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  QByteArray bytes;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordflow">if</span>(i &lt; 0)</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      i = 0;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordflow">if</span>(i + 1 &gt; std::ssize(m_audio))</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;      m_audio.resize(i + 1);</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    m_audio[i] = v;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;  }</div>
+<div class="line"><a name="l00316"></a><span class="lineno"><a class="line" href="class_midi_inlet.html">  316</a></span>&#160;  W_INVOKABLE(setChannel)</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;  QVector&lt;QVector&lt;double&gt;&gt; m_audio;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;};</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="keyword">class </span><a class="code" href="class_midi_message.html">MidiMessage</a></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;{</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  W_GADGET(<a class="code" href="class_midi_message.html">MidiMessage</a>)</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160; </div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;  W_PROPERTY(QByteArray, bytes MEMBER bytes)</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;};</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  QByteArray bytes;</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160; </div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="keyword">class </span><a class="code" href="class_midi_inlet.html">MidiInlet</a> : <span class="keyword">public</span> Inlet</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;{</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  W_OBJECT(<a class="code" href="class_midi_inlet.html">MidiInlet</a>)</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160; </div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  <a class="code" href="class_midi_inlet.html">MidiInlet</a>(QObject* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="class_midi_inlet.html">MidiInlet</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  <span class="keywordtype">void</span> setMidi(<span class="keyword">const</span> T&amp; arr)</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;  {</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    m_midi.clear();</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> libremidi::message&amp; mess : arr)</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    {</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span> N = mess.size();</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;      QVector&lt;int&gt; m;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;      m.resize(N);</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;      <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; N; i++)</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        m[i] = mess.bytes[i];</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  W_PROPERTY(QByteArray, bytes MEMBER bytes)</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;};</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160; </div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="keyword">class </span><a class="code" href="class_midi_inlet.html">MidiInlet</a> : <span class="keyword">public</span> Inlet</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;{</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  W_OBJECT(<a class="code" href="class_midi_inlet.html">MidiInlet</a>)</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160; </div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  <a class="code" href="class_midi_inlet.html">MidiInlet</a>(QObject* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="class_midi_inlet.html">MidiInlet</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;  <span class="keywordtype">void</span> setMidi(<span class="keyword">const</span> T&amp; arr)</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;  {</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    m_midi.clear();</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> libremidi::message&amp; mess : arr)</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    {</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span> N = mess.size();</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;      QVector&lt;int&gt; m;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;      m.resize(N);</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;      m_midi.push_back(QVariant::fromValue(m));</div>
-<div class="line"><a name="l00349"></a><span class="lineno"><a class="line" href="class_midi_outlet.html">  349</a></span>&#160;    }</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  }</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160; </div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;  QVariantList messages()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_midi; }</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;  W_INVOKABLE(messages);</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;      <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; N; i++)</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        m[i] = mess.bytes[i];</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;      m_midi.push_back(QVariant::fromValue(m));</div>
+<div class="line"><a name="l00352"></a><span class="lineno"><a class="line" href="class_midi_outlet.html">  352</a></span>&#160;    }</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;  }</div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160; </div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;  <a class="code" href="class_process_1_1_inlet.html">Process::Inlet</a>* make(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp;&amp; <span class="keywordtype">id</span>, QObject* parent)<span class="keyword"> override</span></div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_process_1_1_midi_inlet.html">Process::MidiInlet</a>(<span class="keywordtype">id</span>, parent);</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  }</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160; </div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  QVariantList m_midi;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;};</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160; </div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="keyword">class </span><a class="code" href="class_midi_outlet.html">MidiOutlet</a> : <span class="keyword">public</span> <a class="code" href="class_outlet.html">Outlet</a></div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;{</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;  W_OBJECT(<a class="code" href="class_midi_outlet.html">MidiOutlet</a>)</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160; </div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  <a class="code" href="class_midi_outlet.html">MidiOutlet</a>(QObject* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="class_midi_outlet.html">MidiOutlet</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;  <a class="code" href="class_process_1_1_outlet.html">Process::Outlet</a>* make(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp;&amp; <span class="keywordtype">id</span>, QObject* parent)<span class="keyword"> override</span></div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_process_1_1_midi_outlet.html">Process::MidiOutlet</a>(<span class="keywordtype">id</span>, parent);</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  }</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160; </div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;  <span class="keywordtype">void</span> clear();</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  <span class="keyword">const</span> QVector&lt;QVector&lt;int&gt;&gt;&amp; midi() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;  QVariantList messages()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_midi; }</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;  W_INVOKABLE(messages);</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  <a class="code" href="class_process_1_1_inlet.html">Process::Inlet</a>* make(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp;&amp; <span class="keywordtype">id</span>, QObject* parent)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_process_1_1_midi_inlet.html">Process::MidiInlet</a>(<span class="keywordtype">id</span>, parent);</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  }</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160; </div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;  QVariantList m_midi;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;};</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160; </div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="keyword">class </span><a class="code" href="class_midi_outlet.html">MidiOutlet</a> : <span class="keyword">public</span> <a class="code" href="class_outlet.html">Outlet</a></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;{</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  W_OBJECT(<a class="code" href="class_midi_outlet.html">MidiOutlet</a>)</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; </div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  <a class="code" href="class_midi_outlet.html">MidiOutlet</a>(QObject* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="class_midi_outlet.html">MidiOutlet</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  <a class="code" href="class_process_1_1_outlet.html">Process::Outlet</a>* make(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp;&amp; <span class="keywordtype">id</span>, QObject* parent)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_process_1_1_midi_outlet.html">Process::MidiOutlet</a>(<span class="keywordtype">id</span>, parent);</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  }</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160; </div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  <span class="keywordtype">void</span> setMessages(<span class="keyword">const</span> QVariantList m)</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;  {</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    m_midi.clear();</div>
-<div class="line"><a name="l00382"></a><span class="lineno"><a class="line" href="class_script.html">  382</a></span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; v : m)</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    {</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;      <span class="keywordflow">if</span> (v.canConvert&lt;QVector&lt;int&gt;&gt;())</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        m_midi.push_back(v.value&lt;QVector&lt;int&gt;&gt;());</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    }</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  }</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;  W_INVOKABLE(setMessages);</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160; </div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;  <span class="keywordtype">void</span> add(QVector&lt;int&gt; m) { m_midi.push_back(std::move(m)); }</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  W_INVOKABLE(add);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  <span class="keywordtype">void</span> clear();</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;  <span class="keyword">const</span> QVector&lt;QVector&lt;int&gt;&gt;&amp; midi() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160; </div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;  <span class="keywordtype">void</span> setMessages(<span class="keyword">const</span> QVariantList m)</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  {</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    m_midi.clear();</div>
+<div class="line"><a name="l00385"></a><span class="lineno"><a class="line" href="class_script.html">  385</a></span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; v : m)</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    {</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;      <span class="keywordflow">if</span> (v.canConvert&lt;QVector&lt;int&gt;&gt;())</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        m_midi.push_back(v.value&lt;QVector&lt;int&gt;&gt;());</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    }</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;  }</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  W_INVOKABLE(setMessages);</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160; </div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;  QVector&lt;QVector&lt;int&gt;&gt; m_midi;</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;};</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160; </div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="keyword">class </span><a class="code" href="class_script.html">Script</a> : <span class="keyword">public</span> QObject</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;{</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;  W_OBJECT(<a class="code" href="class_script.html">Script</a>)</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;  W_CLASSINFO(<span class="stringliteral">&quot;DefaultProperty&quot;</span>, <span class="stringliteral">&quot;data&quot;</span>)</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;  W_CLASSINFO(</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;      &quot;qt_QmlJSWrapperFactoryMethod&quot;,</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;      &quot;_q_createJSWrapper(QV4::ExecutionEngine*)&quot;)</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160; </div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;public:</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;  QQmlListProperty&lt;QObject&gt; data() noexcept</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;  {</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="preprocessor">#if QT_VERSION &gt;= QT_VERSION_CHECK(5, 15, 0)</span></div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="keywordflow">return</span> {<span class="keyword">this</span>, &amp;m_data};</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="keywordflow">return</span> {<span class="keyword">this</span>, m_data};</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;  }</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160; </div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;  QJSValue&amp; tick() <span class="comment">/*Qt6: const*/</span> noexcept { <span class="keywordflow">return</span> m_tick; }</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;  <span class="keywordtype">void</span> setTick(<span class="keyword">const</span> QJSValue&amp; v) { m_tick = v; }</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  QJSValue&amp; start() <span class="comment">/*Qt6: const*/</span> noexcept { <span class="keywordflow">return</span> m_start; }</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  <span class="keywordtype">void</span> setStart(<span class="keyword">const</span> QJSValue&amp; v) { m_start = v; }</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;  QJSValue&amp; stop() <span class="comment">/*Qt6: const*/</span> noexcept { <span class="keywordflow">return</span> m_stop; }</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;  <span class="keywordtype">void</span> setStop(<span class="keyword">const</span> QJSValue&amp; v) { m_stop = v; }</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;  QJSValue&amp; pause() <span class="comment">/*Qt6: const*/</span> noexcept { <span class="keywordflow">return</span> m_pause; }</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;  <span class="keywordtype">void</span> setPause(<span class="keyword">const</span> QJSValue&amp; v) { m_pause = v; }</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;  QJSValue&amp; resume() <span class="comment">/*Qt6: const*/</span> noexcept { <span class="keywordflow">return</span> m_resume; }</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;  <span class="keywordtype">void</span> setResume(<span class="keyword">const</span> QJSValue&amp; v) { m_resume = v; }</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;  W_PROPERTY(QJSValue, tick READ tick WRITE setTick CONSTANT)</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;  W_PROPERTY(QJSValue, start READ start WRITE setStart CONSTANT)</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;  W_PROPERTY(QJSValue, stop READ stop WRITE setStop CONSTANT)</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;  W_PROPERTY(QJSValue, pause READ pause WRITE setPause CONSTANT)</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;  W_PROPERTY(QJSValue, resume READ resume WRITE setResume CONSTANT)</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;  W_PROPERTY(QQmlListProperty&lt;QObject&gt;, data READ data)</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160; </div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;  QList&lt;QObject*&gt; m_data;</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;  QJSValue m_tick;</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;  QJSValue m_start;</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;  QJSValue m_stop;</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;  QJSValue m_pause;</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;  QJSValue m_resume;</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;};</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;}</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160; </div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="keyword">inline</span> QDataStream&amp; operator&lt;&lt;(QDataStream&amp; i, <span class="keyword">const</span> JS::MidiMessage&amp; sel)</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;{</div>
-<div class="line"><a name="l00444"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_j_s_1_1_value_inlet_01_5_01_4.html">  444</a></span>&#160;  SCORE_ABORT;</div>
-<div class="line"><a name="l00445"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_j_s_1_1_value_outlet_01_5_01_4.html">  445</a></span>&#160;  <span class="keywordflow">return</span> i;</div>
-<div class="line"><a name="l00446"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_j_s_1_1_audio_inlet_01_5_01_4.html">  446</a></span>&#160;}</div>
-<div class="line"><a name="l00447"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_j_s_1_1_audio_outlet_01_5_01_4.html">  447</a></span>&#160;<span class="keyword">inline</span> QDataStream&amp; operator&gt;&gt;(QDataStream&amp; i, JS::MidiMessage&amp; sel)</div>
-<div class="line"><a name="l00448"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_j_s_1_1_midi_message_01_4.html">  448</a></span>&#160;{</div>
-<div class="line"><a name="l00449"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_j_s_1_1_midi_inlet_01_5_01_4.html">  449</a></span>&#160;  SCORE_ABORT;</div>
-<div class="line"><a name="l00450"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_j_s_1_1_midi_outlet_01_5_01_4.html">  450</a></span>&#160;  <span class="keywordflow">return</span> i;</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;}</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="keyword">inline</span> QDataStream&amp; operator&lt;&lt;(QDataStream&amp; i, <span class="keyword">const</span> JS::ValueMessage&amp; sel)</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;{</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;  SCORE_ABORT;</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;  <span class="keywordflow">return</span> i;</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;}</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;<span class="keyword">inline</span> QDataStream&amp; operator&gt;&gt;(QDataStream&amp; i, JS::ValueMessage&amp; sel)</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;{</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;  SCORE_ABORT;</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;  <span class="keywordflow">return</span> i;</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;}</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;Q_DECLARE_METATYPE(JS::ValueInlet*)</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;Q_DECLARE_METATYPE(JS::ValueOutlet*)</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;Q_DECLARE_METATYPE(JS::AudioInlet*)</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;Q_DECLARE_METATYPE(JS::AudioOutlet*)</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;Q_DECLARE_METATYPE(JS::MidiMessage)</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;Q_DECLARE_METATYPE(JS::MidiInlet*)</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;Q_DECLARE_METATYPE(JS::MidiOutlet*)</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160; </div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;W_REGISTER_ARGTYPE(JS::ValueInlet*)</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;W_REGISTER_ARGTYPE(JS::ValueOutlet*)</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;W_REGISTER_ARGTYPE(JS::AudioInlet*)</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;W_REGISTER_ARGTYPE(JS::AudioOutlet*)</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;W_REGISTER_ARGTYPE(JS::MidiMessage)</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;W_REGISTER_ARGTYPE(JS::MidiInlet*)</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;W_REGISTER_ARGTYPE(JS::MidiOutlet*)</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;  <span class="keywordtype">void</span> add(QVector&lt;int&gt; m) { m_midi.push_back(std::move(m)); }</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;  W_INVOKABLE(add);</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160; </div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;  QVector&lt;QVector&lt;int&gt;&gt; m_midi;</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;};</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160; </div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="keyword">class </span><a class="code" href="class_script.html">Script</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;{</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;  W_OBJECT(<a class="code" href="class_script.html">Script</a>)</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;  W_CLASSINFO(<span class="stringliteral">&quot;DefaultProperty&quot;</span>, <span class="stringliteral">&quot;data&quot;</span>)</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;  W_CLASSINFO(</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;      &quot;qt_QmlJSWrapperFactoryMethod&quot;,</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;      &quot;_q_createJSWrapper(QV4::ExecutionEngine*)&quot;)</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160; </div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;public:</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;  QQmlListProperty&lt;QObject&gt; data() noexcept</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;  {</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="preprocessor">#if QT_VERSION &gt;= QT_VERSION_CHECK(5, 15, 0)</span></div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keywordflow">return</span> {<span class="keyword">this</span>, &amp;m_data};</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <span class="keywordflow">return</span> {<span class="keyword">this</span>, m_data};</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;  }</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160; </div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  QJSValue&amp; tick() <span class="comment">/*Qt6: const*/</span> noexcept { <span class="keywordflow">return</span> m_tick; }</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;  <span class="keywordtype">void</span> setTick(<span class="keyword">const</span> QJSValue&amp; v) { m_tick = v; }</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;  QJSValue&amp; start() <span class="comment">/*Qt6: const*/</span> noexcept { <span class="keywordflow">return</span> m_start; }</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;  <span class="keywordtype">void</span> setStart(<span class="keyword">const</span> QJSValue&amp; v) { m_start = v; }</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;  QJSValue&amp; stop() <span class="comment">/*Qt6: const*/</span> noexcept { <span class="keywordflow">return</span> m_stop; }</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;  <span class="keywordtype">void</span> setStop(<span class="keyword">const</span> QJSValue&amp; v) { m_stop = v; }</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;  QJSValue&amp; pause() <span class="comment">/*Qt6: const*/</span> noexcept { <span class="keywordflow">return</span> m_pause; }</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;  <span class="keywordtype">void</span> setPause(<span class="keyword">const</span> QJSValue&amp; v) { m_pause = v; }</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;  QJSValue&amp; resume() <span class="comment">/*Qt6: const*/</span> noexcept { <span class="keywordflow">return</span> m_resume; }</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;  <span class="keywordtype">void</span> setResume(<span class="keyword">const</span> QJSValue&amp; v) { m_resume = v; }</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;  W_PROPERTY(QJSValue, tick READ tick WRITE setTick CONSTANT)</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;  W_PROPERTY(QJSValue, start READ start WRITE setStart CONSTANT)</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;  W_PROPERTY(QJSValue, stop READ stop WRITE setStop CONSTANT)</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;  W_PROPERTY(QJSValue, pause READ pause WRITE setPause CONSTANT)</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;  W_PROPERTY(QJSValue, resume READ resume WRITE setResume CONSTANT)</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;  W_PROPERTY(QQmlListProperty&lt;QObject&gt;, data READ data)</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160; </div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;  QList&lt;QObject*&gt; m_data;</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;  QJSValue m_tick;</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;  QJSValue m_start;</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;  QJSValue m_stop;</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;  QJSValue m_pause;</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;  QJSValue m_resume;</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;};</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;}</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160; </div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;<span class="keyword">inline</span> QDataStream&amp; operator&lt;&lt;(QDataStream&amp; i, <span class="keyword">const</span> JS::MidiMessage&amp; sel)</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;{</div>
+<div class="line"><a name="l00447"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_j_s_1_1_value_inlet_01_5_01_4.html">  447</a></span>&#160;  SCORE_ABORT;</div>
+<div class="line"><a name="l00448"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_j_s_1_1_value_outlet_01_5_01_4.html">  448</a></span>&#160;  <span class="keywordflow">return</span> i;</div>
+<div class="line"><a name="l00449"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_j_s_1_1_audio_inlet_01_5_01_4.html">  449</a></span>&#160;}</div>
+<div class="line"><a name="l00450"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_j_s_1_1_audio_outlet_01_5_01_4.html">  450</a></span>&#160;<span class="keyword">inline</span> QDataStream&amp; operator&gt;&gt;(QDataStream&amp; i, JS::MidiMessage&amp; sel)</div>
+<div class="line"><a name="l00451"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_j_s_1_1_midi_message_01_4.html">  451</a></span>&#160;{</div>
+<div class="line"><a name="l00452"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_j_s_1_1_midi_inlet_01_5_01_4.html">  452</a></span>&#160;  SCORE_ABORT;</div>
+<div class="line"><a name="l00453"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_j_s_1_1_midi_outlet_01_5_01_4.html">  453</a></span>&#160;  <span class="keywordflow">return</span> i;</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;}</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="keyword">inline</span> QDataStream&amp; operator&lt;&lt;(QDataStream&amp; i, <span class="keyword">const</span> JS::ValueMessage&amp; sel)</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;{</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;  SCORE_ABORT;</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;  <span class="keywordflow">return</span> i;</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;}</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;<span class="keyword">inline</span> QDataStream&amp; operator&gt;&gt;(QDataStream&amp; i, JS::ValueMessage&amp; sel)</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;{</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;  SCORE_ABORT;</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;  <span class="keywordflow">return</span> i;</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;}</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;Q_DECLARE_METATYPE(JS::ValueInlet*)</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;Q_DECLARE_METATYPE(JS::ValueOutlet*)</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;Q_DECLARE_METATYPE(JS::AudioInlet*)</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;Q_DECLARE_METATYPE(JS::AudioOutlet*)</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;Q_DECLARE_METATYPE(JS::MidiMessage)</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;Q_DECLARE_METATYPE(JS::MidiInlet*)</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;Q_DECLARE_METATYPE(JS::MidiOutlet*)</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160; </div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;W_REGISTER_ARGTYPE(JS::ValueInlet*)</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;W_REGISTER_ARGTYPE(JS::ValueOutlet*)</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;W_REGISTER_ARGTYPE(JS::AudioInlet*)</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;W_REGISTER_ARGTYPE(JS::AudioOutlet*)</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;W_REGISTER_ARGTYPE(JS::MidiMessage)</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;W_REGISTER_ARGTYPE(JS::MidiInlet*)</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;W_REGISTER_ARGTYPE(JS::MidiOutlet*)</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_j_s_1_1_inlet_html"><div class="ttname"><a href="class_j_s_1_1_inlet.html">JS::Inlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:23</div></div>
-<div class="ttc" id="aclass_midi_inlet_html"><div class="ttname"><a href="class_midi_inlet.html">MidiInlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:313</div></div>
+<div class="ttc" id="aclass_midi_inlet_html"><div class="ttname"><a href="class_midi_inlet.html">MidiInlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:316</div></div>
 <div class="ttc" id="aclass_process_1_1_midi_inlet_html"><div class="ttname"><a href="class_process_1_1_midi_inlet.html">Process::MidiInlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:377</div></div>
 <div class="ttc" id="aclass_process_1_1_outlet_html"><div class="ttname"><a href="class_process_1_1_outlet.html">Process::Outlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:267</div></div>
 <div class="ttc" id="aclass_process_1_1_value_inlet_html"><div class="ttname"><a href="class_process_1_1_value_inlet.html">Process::ValueInlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:494</div></div>
-<div class="ttc" id="aclass_midi_message_html"><div class="ttname"><a href="class_midi_message.html">MidiMessage</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:304</div></div>
+<div class="ttc" id="aclass_midi_message_html"><div class="ttname"><a href="class_midi_message.html">MidiMessage</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:307</div></div>
 <div class="ttc" id="aclass_enum_html"><div class="ttname"><a href="class_enum.html">Enum</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:149</div></div>
 <div class="ttc" id="aclass_audio_outlet_html"><div class="ttname"><a href="class_audio_outlet.html">AudioOutlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:277</div></div>
 <div class="ttc" id="astruct_value_message_html"><div class="ttname"><a href="struct_value_message.html">ValueMessage</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:58</div></div>
@@ -589,7 +592,7 @@ $(document).ready(function(){initNavTree('_qml_objects_8hpp_source.html',''); in
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition:</b> Identifier.hpp:56</div></div>
 <div class="ttc" id="aclass_toggle_html"><div class="ttname"><a href="class_toggle.html">Toggle</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:184</div></div>
 <div class="ttc" id="aclass_int_slider_html"><div class="ttname"><a href="class_int_slider.html">IntSlider</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:131</div></div>
-<div class="ttc" id="aclass_midi_outlet_html"><div class="ttname"><a href="class_midi_outlet.html">MidiOutlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:349</div></div>
+<div class="ttc" id="aclass_midi_outlet_html"><div class="ttname"><a href="class_midi_outlet.html">MidiOutlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:352</div></div>
 <div class="ttc" id="aclass_process_1_1_value_outlet_html"><div class="ttname"><a href="class_process_1_1_value_outlet.html">Process::ValueOutlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:517</div></div>
 <div class="ttc" id="aclass_value_inlet_html"><div class="ttname"><a href="class_value_inlet.html">ValueInlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:67</div></div>
 <div class="ttc" id="aclass_process_1_1_audio_inlet_html"><div class="ttname"><a href="class_process_1_1_audio_inlet.html">Process::AudioInlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:294</div></div>
@@ -602,7 +605,7 @@ $(document).ready(function(){initNavTree('_qml_objects_8hpp_source.html',''); in
 <div class="ttc" id="aclass_process_1_1_control_inlet_html"><div class="ttname"><a href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:206</div></div>
 <div class="ttc" id="aclass_outlet_html"><div class="ttname"><a href="class_outlet.html">Outlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:41</div></div>
 <div class="ttc" id="aclass_process_1_1_inlet_html"><div class="ttname"><a href="class_process_1_1_inlet.html">Process::Inlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:179</div></div>
-<div class="ttc" id="aclass_script_html"><div class="ttname"><a href="class_script.html">Script</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:382</div></div>
+<div class="ttc" id="aclass_script_html"><div class="ttname"><a href="class_script.html">Script</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:385</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

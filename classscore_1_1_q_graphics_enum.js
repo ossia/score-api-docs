@@ -6,7 +6,7 @@ var classscore_1_1_q_graphics_enum =
     [ "boundingRect", "classscore_1_1_q_graphics_enum.html#ae127e33fe6687dbf0705fa1667c3d660", null ],
     [ "currentIndexChanged", "classscore_1_1_q_graphics_enum.html#a4f54ce044983a683dee34229988c1a03", null ],
     [ "setRect", "classscore_1_1_q_graphics_enum.html#a200b784575615be810f263e2378c95f6", null ],
-    [ "setValue", "classscore_1_1_q_graphics_enum.html#a4fbffc4d08d29b958085e48c719c18b8", null ],
+    [ "setValue", "classscore_1_1_q_graphics_enum.html#ad12eedc93474b118330e927e631a60d2", null ],
     [ "updateRect", "classscore_1_1_q_graphics_enum.html#a8039aad2d9724bf9b15bc202166b0a73", null ],
     [ "value", "classscore_1_1_q_graphics_enum.html#a82a34b24400782cd4ae3498a9ee2b8c6", null ],
     [ "array", "classscore_1_1_q_graphics_enum.html#a9c5567ff9e066015581bbeed27987d65", null ],
