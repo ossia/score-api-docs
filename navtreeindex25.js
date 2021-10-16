@@ -1,5 +1,6 @@
 var NAVTREEINDEX25 =
 {
+"class_protocols_1_1_artnet_device.html#adab0829ad1148077854d736cc6452dda":[12,0,37,3,2],
 "class_protocols_1_1_artnet_device.html#af7cd92191628ba011899d8da7492f828":[12,0,37,3,1],
 "class_protocols_1_1_artnet_protocol_factory.html":[12,0,37,4],
 "class_protocols_1_1_artnet_protocol_settings_widget.html":[12,0,37,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX25 =
 "class_qt_diagnostic_consumer.html#ab8a666f65c2592f5bebd5673a83a559a":[12,0,307,1],
 "class_random_name_provider.html":[12,0,308],
 "class_reader.html":[12,0,309],
-"class_recording_1_1_application_plugin.html":[12,0,38,0],
-"class_recording_1_1_application_plugin.html#a4207bafdf2378184dc9231ba83cf3fce":[12,0,38,0,1]
+"class_recording_1_1_application_plugin.html":[12,0,38,0]
 };

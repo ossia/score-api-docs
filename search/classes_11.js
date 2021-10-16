@@ -68,7 +68,7 @@ var searchData=
   ['rendereddepthnode_4550',['RenderedDepthNode',['../struct_rendered_depth_node.html',1,'']]],
   ['renderedisfnode_4551',['RenderedISFNode',['../structscore_1_1gfx_1_1_rendered_i_s_f_node.html',1,'score::gfx']]],
   ['renderedphongnode_4552',['RenderedPhongNode',['../structscore_1_1gfx_1_1_rendered_phong_node.html',1,'score::gfx']]],
-  ['renderer_4553',['Renderer',['../classscore_1_1gfx_1_1_text_node_1_1_renderer.html',1,'score::gfx::TextNode::Renderer'],['../classscore_1_1gfx_1_1_full_screen_image_node_1_1_renderer.html',1,'score::gfx::FullScreenImageNode::Renderer'],['../classscore_1_1gfx_1_1_screen_node_1_1_renderer.html',1,'score::gfx::ScreenNode::Renderer'],['../classscore_1_1gfx_1_1_images_node_1_1_renderer.html',1,'score::gfx::ImagesNode::Renderer']]],
+  ['renderer_4553',['Renderer',['../classscore_1_1gfx_1_1_full_screen_image_node_1_1_renderer.html',1,'score::gfx::FullScreenImageNode::Renderer'],['../classscore_1_1gfx_1_1_text_node_1_1_renderer.html',1,'score::gfx::TextNode::Renderer'],['../classscore_1_1gfx_1_1_screen_node_1_1_renderer.html',1,'score::gfx::ScreenNode::Renderer'],['../classscore_1_1gfx_1_1_images_node_1_1_renderer.html',1,'score::gfx::ImagesNode::Renderer']]],
   ['renderlist_4554',['RenderList',['../classscore_1_1gfx_1_1_render_list.html',1,'score::gfx']]],
   ['renderstate_4555',['RenderState',['../structscore_1_1gfx_1_1_render_state.html',1,'score::gfx']]],
   ['replaceallnodes_4556',['ReplaceAllNodes',['../class_nodal_1_1_replace_all_nodes.html',1,'Nodal']]],
@@ -83,7 +83,7 @@ var searchData=
   ['resizeslotverticallytest_4565',['ResizeSlotVerticallyTest',['../class_resize_slot_vertically_test.html',1,'']]],
   ['restorabledocument_4566',['RestorableDocument',['../structscore_1_1_restorable_document.html',1,'score']]],
   ['rgb0decoder_4567',['RGB0Decoder',['../structscore_1_1gfx_1_1_r_g_b0_decoder.html',1,'score::gfx']]],
-  ['rgbaedit_4568',['RGBAEdit',['../struct_control_1_1_r_g_b_a_edit.html',1,'Control::RGBAEdit'],['../struct_widget_factory_1_1_r_g_b_a_edit.html',1,'WidgetFactory::RGBAEdit']]],
+  ['rgbaedit_4568',['RGBAEdit',['../struct_widget_factory_1_1_r_g_b_a_edit.html',1,'WidgetFactory::RGBAEdit'],['../struct_control_1_1_r_g_b_a_edit.html',1,'Control::RGBAEdit']]],
   ['rightbraceview_4569',['RightBraceView',['../class_scenario_1_1_right_brace_view.html',1,'Scenario']]],
   ['rightclickimpl_4570',['RightClickImpl',['../structscore_1_1_right_click_impl.html',1,'score']]],
   ['rmsdata_4571',['RMSData',['../struct_media_1_1_r_m_s_data.html',1,'Media']]]
