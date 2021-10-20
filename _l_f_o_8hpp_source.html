@@ -290,10 +290,10 @@ $(document).ready(function(){initNavTree('_l_f_o_8hpp_source.html',''); initResi
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;          add_val(std::sin(custom_phase + ph));</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;          <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">case</span> Triangle:</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;          add_val(std::asin(std::sin(custom_phase + ph)));</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;          add_val(std::asin(std::sin(custom_phase + ph)) / ossia::half_pi);</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;          <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keywordflow">case</span> Saw:</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;          add_val(std::atan(std::tan(custom_phase + ph)));</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;          add_val(std::atan(std::tan(custom_phase + ph)) / ossia::half_pi);</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;          <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">case</span> Square:</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;          add_val((std::sin(custom_phase + ph) &gt; 0.f) ? 1.f : -1.f);</div>
