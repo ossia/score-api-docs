@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('_vel_to_note_8hpp_source.html',''); in
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr value_in value_ins[]{{<span class="stringliteral">&quot;in&quot;</span>, <span class="keyword">true</span>}};</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr midi_out midi_outs[]{<span class="stringliteral">&quot;out&quot;</span>};</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> controls = std::make_tuple(</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> controls = tuplet::make_tuple(</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="struct_control_1_1_combo_box.html">Control::ComboBox</a>&lt;<span class="keywordtype">float</span>, std::size(Control::Widgets::notes)&gt;(</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="stringliteral">&quot;Start quant.&quot;</span>,</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            2,</div>

@@ -104,65 +104,49 @@ $(document).ready(function(){initNavTree('_command_generator_map_8hpp_source.htm
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;score/tools/Debug.hpp&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;score/tools/std/HashMap.hpp&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QByteArray&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/algorithms.hpp&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;score_lib_base_export.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QByteArray&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore.html">score</a></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span>Command;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_command_factory.html">   48</a></span>&#160;<span class="keyword">class </span>SCORE_LIB_BASE_EXPORT <a class="code" href="class_command_factory.html">CommandFactory</a></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="class_command_factory.html">CommandFactory</a>();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classscore_1_1_command.html">score::Command</a>* operator()(<span class="keyword">const</span> QByteArray&amp; data) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_generic_command_factory.html">   59</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_generic_command_factory.html">GenericCommandFactory</a> : <span class="keyword">public</span> <a class="code" href="class_command_factory.html">CommandFactory</a></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="classscore_1_1_command.html">score::Command</a>* operator()(<span class="keyword">const</span> QByteArray&amp; data)<span class="keyword"> const override</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">auto</span> t = <span class="keyword">new</span> T;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    t-&gt;deserialize(data);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> t;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="_command_generator_map_8hpp.html#ad05ed0489a38d865beb16a623aed0d87">   75</a></span>&#160;<span class="keyword">using</span> <a class="code" href="_command_generator_map_8hpp.html#ad05ed0489a38d865beb16a623aed0d87">CommandGeneratorMap</a> = score::hash_map&lt;CommandKey, CommandFactory*&gt;;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore.html">score</a></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">namespace </span>commands</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="structscore_1_1commands_1_1_factory_inserter.html">   86</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structscore_1_1commands_1_1_factory_inserter.html">FactoryInserter</a></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <a class="code" href="_command_generator_map_8hpp.html#ad05ed0489a38d865beb16a623aed0d87">CommandGeneratorMap</a>&amp; fact;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TheCommand&gt;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">void</span> operator()()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    SCORE_ASSERT(<span class="keywordtype">bool</span>(fact.find(TheCommand::static_key()) == fact.end()));</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">auto</span> res = fact.insert(std::pair&lt;const CommandKey, CommandFactory*&gt;{</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        TheCommand::static_key(), <span class="keyword">new</span> <a class="code" href="class_generic_command_factory.html">GenericCommandFactory&lt;TheCommand&gt;</a>});</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    SCORE_ASSERT(res.second);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;score_lib_base_export.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore.html">score</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span>Command;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="_command_generator_map_8hpp.html#ab8206af91c216c74ee90ce7aa6ba2331">   47</a></span>&#160;<span class="keyword">using</span> <a class="code" href="_command_generator_map_8hpp.html#ab8206af91c216c74ee90ce7aa6ba2331">CommandFactory</a> = <a class="code" href="classscore_1_1_command.html">score::Command</a>* (*)(<span class="keyword">const</span> QByteArray&amp;);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="_command_generator_map_8hpp.html#a992cdd2d9f7cc029812d4bc71ce87096">   54</a></span>&#160;<span class="keyword">using</span> <a class="code" href="_command_generator_map_8hpp.html#a992cdd2d9f7cc029812d4bc71ce87096">CommandGeneratorMap</a> = std::vector&lt;std::pair&lt;CommandKey, CommandFactory&gt;&gt;;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore.html">score</a></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">namespace </span>commands</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="structscore_1_1commands_1_1_factory_inserter.html">   65</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structscore_1_1commands_1_1_factory_inserter.html">FactoryInserter</a></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="_command_generator_map_8hpp.html#a992cdd2d9f7cc029812d4bc71ce87096">CommandGeneratorMap</a>&amp; fact;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TheCommand&gt;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> operator()()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    SCORE_ASSERT(<span class="keywordtype">bool</span>(ossia::find_if(fact, [] (<span class="keyword">auto</span>&amp; e) { <span class="keywordflow">return</span> e.first == TheCommand::static_key(); }) == fact.end()));</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    constexpr <a class="code" href="_command_generator_map_8hpp.html#ab8206af91c216c74ee90ce7aa6ba2331">CommandFactory</a> f = [] (<span class="keyword">const</span> QByteArray&amp; data) -&gt; <a class="code" href="classscore_1_1_command.html">score::Command</a>* {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="keyword">auto</span> t = <span class="keyword">new</span> TheCommand;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      t-&gt;deserialize(data);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keywordflow">return</span> t;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    };</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    fact.emplace_back(TheCommand::static_key(), f);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_command_factory_html"><div class="ttname"><a href="class_command_factory.html">CommandFactory</a></div><div class="ttdoc">Base factory for commands.</div><div class="ttdef"><b>Definition:</b> CommandGeneratorMap.hpp:48</div></div>
 <div class="ttc" id="aclassscore_1_1_command_html"><div class="ttname"><a href="classscore_1_1_command.html">score::Command</a></div><div class="ttdoc">The Command class.</div><div class="ttdef"><b>Definition:</b> Command.hpp:33</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:77</div></div>
-<div class="ttc" id="astructscore_1_1commands_1_1_factory_inserter_html"><div class="ttname"><a href="structscore_1_1commands_1_1_factory_inserter.html">score::commands::FactoryInserter</a></div><div class="ttdoc">Creates and inserts a new factory class for a given command, in a list of such factories.</div><div class="ttdef"><b>Definition:</b> CommandGeneratorMap.hpp:86</div></div>
-<div class="ttc" id="aclass_generic_command_factory_html"><div class="ttname"><a href="class_generic_command_factory.html">GenericCommandFactory</a></div><div class="ttdoc">Standard implementation of the command factory.</div><div class="ttdef"><b>Definition:</b> CommandGeneratorMap.hpp:59</div></div>
-<div class="ttc" id="a_command_generator_map_8hpp_html_ad05ed0489a38d865beb16a623aed0d87"><div class="ttname"><a href="_command_generator_map_8hpp.html#ad05ed0489a38d865beb16a623aed0d87">CommandGeneratorMap</a></div><div class="ttdeci">score::hash_map&lt; CommandKey, CommandFactory * &gt; CommandGeneratorMap</div><div class="ttdoc">The CommandGeneratorMap struct.</div><div class="ttdef"><b>Definition:</b> CommandGeneratorMap.hpp:75</div></div>
+<div class="ttc" id="astructscore_1_1commands_1_1_factory_inserter_html"><div class="ttname"><a href="structscore_1_1commands_1_1_factory_inserter.html">score::commands::FactoryInserter</a></div><div class="ttdoc">Creates and inserts a new factory class for a given command, in a list of such factories.</div><div class="ttdef"><b>Definition:</b> CommandGeneratorMap.hpp:65</div></div>
+<div class="ttc" id="a_command_generator_map_8hpp_html_ab8206af91c216c74ee90ce7aa6ba2331"><div class="ttname"><a href="_command_generator_map_8hpp.html#ab8206af91c216c74ee90ce7aa6ba2331">CommandFactory</a></div><div class="ttdeci">score::Command *(*)(const QByteArray &amp;) CommandFactory</div><div class="ttdoc">Base factory for commands.</div><div class="ttdef"><b>Definition:</b> CommandGeneratorMap.hpp:47</div></div>
+<div class="ttc" id="a_command_generator_map_8hpp_html_a992cdd2d9f7cc029812d4bc71ce87096"><div class="ttname"><a href="_command_generator_map_8hpp.html#a992cdd2d9f7cc029812d4bc71ce87096">CommandGeneratorMap</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; CommandKey, CommandFactory &gt; &gt; CommandGeneratorMap</div><div class="ttdoc">The CommandGeneratorMap struct.</div><div class="ttdef"><b>Definition:</b> CommandGeneratorMap.hpp:54</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

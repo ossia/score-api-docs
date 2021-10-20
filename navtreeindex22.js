@@ -1,9 +1,5 @@
 var NAVTREEINDEX22 =
 {
-"class_pd_1_1_pd_widget.html#ad2340d23851aee0b2bdab67b0195e501":[12,0,34,11,1],
-"class_pd_1_1_process_model.html":[12,0,34,12],
-"class_pd_1_1_process_model.html#a03c16fd7fee082f1e6d6fa0f727b2852":[12,0,34,12,19],
-"class_pd_1_1_process_model.html#a0b8e306225c0c162eda9273309e293af":[12,0,34,12,15],
 "class_pd_1_1_process_model.html#a121bbc0968e89e2a514871ec4e702730":[12,0,34,12,11],
 "class_pd_1_1_process_model.html#a1e971f6838f9f5a15639199646f1a284":[12,0,34,12,12],
 "class_pd_1_1_process_model.html#a22750587129d752043d941e0a3af508a":[12,0,34,12,20],
@@ -37,9 +33,9 @@ var NAVTREEINDEX22 =
 "class_pd_1_1_set_midi_out.html#a0094c9f4ff007a0d9cafe451e10b5bbc":[12,0,34,16,0],
 "class_pd_1_1pd__process.html":[12,0,34,9],
 "class_pd_1_1pd__process.html#a5610828e5bbabe85b52f2fe2cfad9cfd":[12,0,34,9,0],
-"class_pd_dataflow_test.html":[12,0,197],
-"class_pd_dataflow_test.html#af1f825d9d7bf0fc973ba031f35e67501":[12,0,197,0],
-"class_pretty_name__k.html":[12,0,198],
+"class_pd_dataflow_test.html":[12,0,195],
+"class_pd_dataflow_test.html#af1f825d9d7bf0fc973ba031f35e67501":[12,0,195,0],
+"class_pretty_name__k.html":[12,0,196],
 "class_process_1_1_application_plugin.html":[12,0,36,0],
 "class_process_1_1_application_plugin.html#a13b59213b336824cd254bc609d026685":[12,0,36,0,1],
 "class_process_1_1_application_plugin.html#a314056d8c79ed7c43f743f7f311bdfdd":[12,0,36,0,3],
@@ -249,5 +245,9 @@ var NAVTREEINDEX22 =
 "class_process_1_1_effect_process_factory___t.html#ab6ed35e5c5b4683fb6fe55368d7e1bd1":[12,0,36,27,8],
 "class_process_1_1_effect_process_factory___t.html#ab6ed35e5c5b4683fb6fe55368d7e1bd1":[12,0,36,27,12],
 "class_process_1_1_effect_process_factory___t.html#ab836de56f442307f101645827a000a4e":[12,0,36,27,33],
-"class_process_1_1_effect_process_factory___t.html#acd7ad8aa60c9c897a8df58e7879101b8":[12,0,36,27,16]
+"class_process_1_1_effect_process_factory___t.html#acd7ad8aa60c9c897a8df58e7879101b8":[12,0,36,27,16],
+"class_process_1_1_effect_process_factory___t.html#acf534501f5fa073700481376f5e2aa39":[12,0,36,27,31],
+"class_process_1_1_effect_process_factory___t.html#ae33cecfc594bb9a0a283599378c2ece9":[12,0,36,27,5],
+"class_process_1_1_effect_process_factory___t.html#ae33cecfc594bb9a0a283599378c2ece9":[12,0,36,27,10],
+"class_process_1_1_effect_process_factory___t.html#af0e36b8ac2468a9216b4e33d8aa742a4":[12,0,36,27,32]
 };

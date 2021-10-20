@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('score-plugin-engine_2_engine_2_node_2_
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  {</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    constexpr <span class="keywordtype">int</span> i</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        = ossia::safe_nodes::info_functions&lt;Info&gt;::control_start + N;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    constexpr <span class="keyword">const</span> <span class="keyword">auto</span>&amp; ctrl = std::get&lt;N&gt;(Info::Metadata::controls);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    constexpr <span class="keyword">const</span> <span class="keyword">auto</span>&amp; ctrl = get&lt;N&gt;(Info::Metadata::controls);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">using</span> port_type = decltype(*ctrl.create_inlet(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>{}, <span class="keyword">nullptr</span>));</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>port_type&amp;<span class="keyword">&gt;</span>(*inlets[i]);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>

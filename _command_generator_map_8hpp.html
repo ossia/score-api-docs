@@ -117,12 +117,6 @@ $(document).ready(function(){initNavTree('_command_generator_map_8hpp.html','');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_command_factory.html">CommandFactory</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base factory for commands.  <a href="class_command_factory.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_generic_command_factory.html">GenericCommandFactory&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard implementation of the command factory.  <a href="class_generic_command_factory.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1commands_1_1_factory_inserter.html">score::commands::FactoryInserter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and inserts a new factory class for a given command, in a list of such factories.  <a href="structscore_1_1commands_1_1_factory_inserter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,19 +129,39 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ad05ed0489a38d865beb16a623aed0d87"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_command_generator_map_8hpp.html#ad05ed0489a38d865beb16a623aed0d87">CommandGeneratorMap</a> = score::hash_map&lt; <a class="el" href="class_string_key.html">CommandKey</a>, <a class="el" href="class_command_factory.html">CommandFactory</a> * &gt;</td></tr>
-<tr class="memdesc:ad05ed0489a38d865beb16a623aed0d87"><td class="mdescLeft">&#160;</td><td class="mdescRight">The CommandGeneratorMap struct.  <a href="_command_generator_map_8hpp.html#ad05ed0489a38d865beb16a623aed0d87">More...</a><br /></td></tr>
-<tr class="separator:ad05ed0489a38d865beb16a623aed0d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8206af91c216c74ee90ce7aa6ba2331"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_command_generator_map_8hpp.html#ab8206af91c216c74ee90ce7aa6ba2331">CommandFactory</a> = <a class="el" href="classscore_1_1_command.html">score::Command</a> *(*)(const QByteArray &amp;)</td></tr>
+<tr class="memdesc:ab8206af91c216c74ee90ce7aa6ba2331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base factory for commands.  <a href="_command_generator_map_8hpp.html#ab8206af91c216c74ee90ce7aa6ba2331">More...</a><br /></td></tr>
+<tr class="separator:ab8206af91c216c74ee90ce7aa6ba2331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a992cdd2d9f7cc029812d4bc71ce87096"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_command_generator_map_8hpp.html#a992cdd2d9f7cc029812d4bc71ce87096">CommandGeneratorMap</a> = std::vector&lt; std::pair&lt; <a class="el" href="class_string_key.html">CommandKey</a>, <a class="el" href="_command_generator_map_8hpp.html#ab8206af91c216c74ee90ce7aa6ba2331">CommandFactory</a> &gt; &gt;</td></tr>
+<tr class="memdesc:a992cdd2d9f7cc029812d4bc71ce87096"><td class="mdescLeft">&#160;</td><td class="mdescRight">The CommandGeneratorMap struct.  <a href="_command_generator_map_8hpp.html#a992cdd2d9f7cc029812d4bc71ce87096">More...</a><br /></td></tr>
+<tr class="separator:a992cdd2d9f7cc029812d4bc71ce87096"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ad05ed0489a38d865beb16a623aed0d87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad05ed0489a38d865beb16a623aed0d87">&#9670;&nbsp;</a></span>CommandGeneratorMap</h2>
+<a id="ab8206af91c216c74ee90ce7aa6ba2331"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8206af91c216c74ee90ce7aa6ba2331">&#9670;&nbsp;</a></span>CommandFactory</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="_command_generator_map_8hpp.html#ad05ed0489a38d865beb16a623aed0d87">CommandGeneratorMap</a> =  score::hash_map&lt;<a class="el" href="class_string_key.html">CommandKey</a>, <a class="el" href="class_command_factory.html">CommandFactory</a>*&gt;</td>
+          <td class="memname">using <a class="el" href="_command_generator_map_8hpp.html#ab8206af91c216c74ee90ce7aa6ba2331">CommandFactory</a> =  <a class="el" href="classscore_1_1_command.html">score::Command</a>* (*)(const QByteArray&amp;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Base factory for commands. </p>
+<p>Base typedef for command instantiation. Allows a polymorphic use. </p>
+
+</div>
+</div>
+<a id="a992cdd2d9f7cc029812d4bc71ce87096"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a992cdd2d9f7cc029812d4bc71ce87096">&#9670;&nbsp;</a></span>CommandGeneratorMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="_command_generator_map_8hpp.html#a992cdd2d9f7cc029812d4bc71ce87096">CommandGeneratorMap</a> =  std::vector&lt;std::pair&lt;<a class="el" href="class_string_key.html">CommandKey</a>, <a class="el" href="_command_generator_map_8hpp.html#ab8206af91c216c74ee90ce7aa6ba2331">CommandFactory</a>&gt; &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">

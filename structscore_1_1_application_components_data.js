@@ -8,7 +8,7 @@ var structscore_1_1_application_components_data =
     [ "operator=", "structscore_1_1_application_components_data.html#a8019b19fc7db9f67bb9912358df62e10", null ],
     [ "addons", "structscore_1_1_application_components_data.html#abe50941ef0fe9131c1f22234f94a483a", null ],
     [ "appPlugins", "structscore_1_1_application_components_data.html#af5dfe2705bdfbdffcff654868f6b9d8c", null ],
-    [ "commands", "structscore_1_1_application_components_data.html#a55c6d3f0e0f2116a8a3c46dbc568b9a8", null ],
+    [ "commands", "structscore_1_1_application_components_data.html#ad404b335ba5f3ed056e642e8b98b2a7b", null ],
     [ "factories", "structscore_1_1_application_components_data.html#a00eae689ef10fc5db1c07b0846fa936d", null ],
     [ "guiAppPlugins", "structscore_1_1_application_components_data.html#a2992c79ae28e74ea1e890c7af4ae4154", null ],
     [ "panels", "structscore_1_1_application_components_data.html#a45e45bba39215f72647f5bc47beab14f", null ]

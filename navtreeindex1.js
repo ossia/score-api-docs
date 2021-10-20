@@ -30,7 +30,8 @@ var NAVTREEINDEX1 =
 "_command_factory___qt_interface_8hpp_source.html":[13,0,157],
 "_command_factory_key_8hpp_source.html":[13,0,158],
 "_command_generator_map_8hpp.html":[13,0,159],
-"_command_generator_map_8hpp.html#ad05ed0489a38d865beb16a623aed0d87":[13,0,159,3],
+"_command_generator_map_8hpp.html#a992cdd2d9f7cc029812d4bc71ce87096":[13,0,159,2],
+"_command_generator_map_8hpp.html#ab8206af91c216c74ee90ce7aa6ba2331":[13,0,159,1],
 "_command_generator_map_8hpp_source.html":[13,0,159],
 "_command_spin_box_8hpp_source.html":[13,0,170],
 "_command_stack_8hpp_source.html":[13,0,171],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "_executor_view_8hpp_source.html":[13,0,406],
 "_expand_mode_8hpp_source.html":[13,0,407],
 "_exploration_worker_8hpp_source.html":[13,0,408],
-"_exploration_worker_wrapper_8hpp_source.html":[13,0,409],
-"_explorer_factory_8hpp_source.html":[13,0,410]
+"_exploration_worker_wrapper_8hpp_source.html":[13,0,409]
 };

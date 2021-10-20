@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('_math_generator_8hpp_source.html','');
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> miniMathItem(</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">const</span> std::tuple&lt;Control::LineEdit&gt;&amp; controls,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">const</span> tuplet::tuple&lt;Control::LineEdit&gt;&amp; controls,</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    Process::LineEdit&amp; edit,</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; process,</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    QGraphicsItem&amp; parent,</div>
@@ -149,13 +149,13 @@ $(document).ready(function(){initNavTree('_math_generator_8hpp_source.html','');
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      = doc.app.<a class="code" href="structscore_1_1_application_context.html#aad836474a385889c0486ecfeeadb06df">interfaces</a>&lt;<a class="code" href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a>&gt;();</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">auto</span> edit_item = makeControlNoText(</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      std::get&lt;0&gt;(controls), edit, parent, context, doc, portFactory);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      get&lt;0&gt;(controls), edit, parent, context, doc, portFactory);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  edit_item.control.setTextWidth(100);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  edit_item.control.setPos(15, 0);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> mathItem(</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">const</span> std::tuple&lt;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">const</span> tuplet::tuple&lt;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="struct_control_1_1_line_edit.html">Control::LineEdit</a>,</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="struct_control_1_1_float_control.html">Control::FloatSlider</a>,</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="struct_control_1_1_float_control.html">Control::FloatSlider</a>,</div>
@@ -179,7 +179,7 @@ $(document).ready(function(){initNavTree('_math_generator_8hpp_source.html','');
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  c0_bg-&gt;setRect({0., 0., 300., 200.});</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">auto</span> edit_item = makeControl(</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      std::get&lt;0&gt;(controls), edit, parent, context, doc, portFactory);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      get&lt;0&gt;(controls), edit, parent, context, doc, portFactory);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  edit_item.control.setTextWidth(280);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  edit_item.root.setPos(c0, 40);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="comment">/*</span></div>
@@ -190,13 +190,13 @@ $(document).ready(function(){initNavTree('_math_generator_8hpp_source.html','');
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">  */</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keyword">auto</span> a_item = makeControl(</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      std::get&lt;1&gt;(controls), a, parent, context, doc, portFactory);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      get&lt;1&gt;(controls), a, parent, context, doc, portFactory);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  a_item.root.setPos(c0, 5);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keyword">auto</span> b_item = makeControl(</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      std::get&lt;2&gt;(controls), b, parent, context, doc, portFactory);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      get&lt;2&gt;(controls), b, parent, context, doc, portFactory);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  b_item.root.setPos(c0 + 70, 5);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keyword">auto</span> c_item = makeControl(</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      std::get&lt;3&gt;(controls), c, parent, context, doc, portFactory);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      get&lt;3&gt;(controls), c, parent, context, doc, portFactory);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  c_item.root.setPos(c0 + 140, 5);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
@@ -222,7 +222,7 @@ $(document).ready(function(){initNavTree('_math_generator_8hpp_source.html','');
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr value_out value_outs[]{<span class="stringliteral">&quot;out&quot;</span>};</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> controls = std::make_tuple(</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> controls = tuplet::make_tuple(</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <a class="code" href="struct_control_1_1_line_edit.html">Control::LineEdit</a>(<span class="stringliteral">&quot;Expression (ExprTK)&quot;</span>, <span class="stringliteral">&quot;cos(t) + log(pos * 1 / dt)&quot;</span>),</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <a class="code" href="struct_control_1_1_float_control.html">Control::FloatSlider</a>(<span class="stringliteral">&quot;Param (a)&quot;</span>, 0., 1., 0.5),</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <a class="code" href="struct_control_1_1_float_control.html">Control::FloatSlider</a>(<span class="stringliteral">&quot;Param (b)&quot;</span>, 0., 1., 0.5),</div>
@@ -306,7 +306,7 @@ $(document).ready(function(){initNavTree('_math_generator_8hpp_source.html','');
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr audio_out audio_outs[]{<span class="stringliteral">&quot;out&quot;</span>};</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> controls = std::make_tuple(</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> controls = tuplet::make_tuple(</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <a class="code" href="struct_control_1_1_line_edit.html">Control::LineEdit</a>(</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            <span class="stringliteral">&quot;Expression (ExprTK)&quot;</span>,</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            <span class="stringliteral">&quot;var phi := 2 * pi * (20 + a * 500) / fs;\n&quot;</span></div>

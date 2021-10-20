@@ -1,9 +1,5 @@
 var NAVTREEINDEX47 =
 {
-"classvst3_1_1vst__node__base.html#a2f15b1a83cda8e0197bd790ab0ac53a7":[12,0,53,18,10],
-"classvst3_1_1vst__node__base.html#a30fb6a5d4495a041e3f42ba547b56fb2":[12,0,53,18,7],
-"classvst3_1_1vst__node__base.html#a31baafe88bcce7ed13db2a70b938c281":[12,0,53,18,24],
-"classvst3_1_1vst__node__base.html#a4431096f4dbd723e3e068220232c668e":[12,0,53,18,13],
 "classvst3_1_1vst__node__base.html#a487e7887b95d1b0c1df691d617554825":[12,0,53,18,5],
 "classvst3_1_1vst__node__base.html#a4ddd5653ff47dbc96e175f2224d45430":[12,0,53,18,12],
 "classvst3_1_1vst__node__base.html#a4e16edd359cdb96ee21232964b179438":[12,0,53,18,18],
@@ -165,8 +161,8 @@ var NAVTREEINDEX47 =
 "functions_d.html":[12,3,0,3],
 "functions_e.html":[12,3,0,4],
 "functions_f.html":[12,3,0,5],
-"functions_func.html":[12,3,1,0],
 "functions_func.html":[12,3,1],
+"functions_func.html":[12,3,1,0],
 "functions_func_c.html":[12,3,1,1],
 "functions_func_d.html":[12,3,1,2],
 "functions_func_e.html":[12,3,1,3],
@@ -232,8 +228,8 @@ var NAVTREEINDEX47 =
 "namespace_engine_1_1_network.html":[11,0,3,0],
 "namespace_execution.html":[12,0,9],
 "namespace_execution.html":[11,0,4],
-"namespace_gfx.html":[12,0,15],
 "namespace_gfx.html":[11,0,5],
+"namespace_gfx.html":[12,0,15],
 "namespace_inspector.html":[11,0,6],
 "namespace_inspector.html":[12,0,17],
 "namespace_local_tree.html":[11,0,7],
@@ -249,5 +245,9 @@ var NAVTREEINDEX47 =
 "namespacemembers_enum.html":[11,1,3],
 "namespacemembers_eval.html":[11,1,4],
 "namespacemembers_func.html":[11,1,1],
-"namespacemembers_type.html":[11,1,2]
+"namespacemembers_type.html":[11,1,2],
+"namespaces.html":[11,0],
+"namespacescore.html":[11,0,11],
+"namespacescore.html":[12,0,43],
+"namespacescore_1_1gfx.html":[12,0,43,2]
 };

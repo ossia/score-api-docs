@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('_looper_8hpp_source.html',''); initRes
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        = make_uuid(<span class="stringliteral">&quot;a0ad4227-ac3d-448b-a19b-19581ed4e2c6&quot;</span>);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">double</span> recommended_height = 65;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> controls = std::make_tuple(</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> controls = tuplet::make_tuple(</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        Control::Widgets::LoopChooser(),</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        Control::Widgets::QuantificationChooser(),</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="struct_control_1_1_toggle.html">Control::Toggle</a>(<span class="stringliteral">&quot;Passthrough&quot;</span>, <span class="keyword">true</span>),</div>
@@ -620,7 +620,7 @@ $(document).ready(function(){initNavTree('_looper_8hpp_source.html',''); initRes
 <div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    <span class="keyword">auto</span> c0_bg = <span class="keyword">new</span> <a class="code" href="classscore_1_1_background_item.html">score::BackgroundItem</a>{&amp;parent};</div>
 <div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    c0_bg-&gt;setRect({0., 0., 340., 60});</div>
 <div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    <span class="keyword">auto</span> mode_item = makeControlNoText(</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;        std::get&lt;0&gt;(Metadata::controls),</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;        get&lt;0&gt;(Metadata::controls),</div>
 <div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;        mode,</div>
 <div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;        parent,</div>
 <div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;        context,</div>
@@ -632,7 +632,7 @@ $(document).ready(function(){initNavTree('_looper_8hpp_source.html',''); initRes
 <div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;    mode_item.port.setPos({-8, 10});</div>
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160; </div>
 <div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;    <span class="keyword">auto</span> quant_item = makeControlNoText(</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;        std::get&lt;1&gt;(Metadata::controls),</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;        get&lt;1&gt;(Metadata::controls),</div>
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;        quantif,</div>
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;        parent,</div>
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;        context,</div>
@@ -643,7 +643,7 @@ $(document).ready(function(){initNavTree('_looper_8hpp_source.html',''); initRes
 <div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;    quant_item.port.setPos({-3, 4});</div>
 <div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160; </div>
 <div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;    <span class="keyword">auto</span> echo_item = makeControl(</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;        std::get&lt;2&gt;(Metadata::controls),</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;        get&lt;2&gt;(Metadata::controls),</div>
 <div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;        echo,</div>
 <div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;        parent,</div>
 <div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;        context,</div>

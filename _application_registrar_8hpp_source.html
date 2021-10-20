@@ -133,10 +133,10 @@ $(document).ready(function(){initNavTree('_application_registrar_8hpp_source.htm
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">void</span> registerAddons(std::vector&lt;score::Addon&gt; vec);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> registerApplicationPlugin(<a class="code" href="classscore_1_1_application_plugin.html">ApplicationPlugin</a>*);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> registerCommands(</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      score::hash_map&lt;CommandGroupKey, CommandGeneratorMap&gt;&amp;&amp; cmds);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  registerCommands(std::pair&lt;CommandGroupKey, CommandGeneratorMap&gt;&amp;&amp; cmds);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> registerCommands(<a class="code" href="structscore_1_1_command_store.html">CommandStore</a>&amp;&amp; cmds);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  registerCommands(<span class="keyword">const</span> <a class="code" href="class_string_key.html">CommandGroupKey</a>&amp; k, <a class="code" href="_command_generator_map_8hpp.html#a992cdd2d9f7cc029812d4bc71ce87096">CommandGeneratorMap</a>&amp;&amp; cmds);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">void</span> registerFactories(score::hash_map&lt;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                         <a class="code" href="class_uuid_key.html">score::InterfaceKey</a>,</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                         std::unique_ptr&lt;InterfaceListBase&gt;&gt;&amp;&amp; cmds);</div>
@@ -174,7 +174,9 @@ $(document).ready(function(){initNavTree('_application_registrar_8hpp_source.htm
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astructscore_1_1_application_components_data_html"><div class="ttname"><a href="structscore_1_1_application_components_data.html">score::ApplicationComponentsData</a></div><div class="ttdef"><b>Definition:</b> ApplicationComponents.hpp:26</div></div>
+<div class="ttc" id="astructscore_1_1_application_components_data_html"><div class="ttname"><a href="structscore_1_1_application_components_data.html">score::ApplicationComponentsData</a></div><div class="ttdef"><b>Definition:</b> ApplicationComponents.hpp:45</div></div>
+<div class="ttc" id="aclass_string_key_html"><div class="ttname"><a href="class_string_key.html">StringKey&lt; CommandParentTag &gt;</a></div></div>
+<div class="ttc" id="astructscore_1_1_command_store_html"><div class="ttname"><a href="structscore_1_1_command_store.html">score::CommandStore</a></div><div class="ttdef"><b>Definition:</b> ApplicationComponents.hpp:39</div></div>
 <div class="ttc" id="a_action_8hpp_html"><div class="ttname"><a href="_action_8hpp.html">Action.hpp</a></div></div>
 <div class="ttc" id="aclassscore_1_1_application_plugin_html"><div class="ttname"><a href="classscore_1_1_application_plugin.html">score::ApplicationPlugin</a></div><div class="ttdef"><b>Definition:</b> GUIApplicationPlugin.hpp:30</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:77</div></div>
@@ -188,6 +190,7 @@ $(document).ready(function(){initNavTree('_application_registrar_8hpp_source.htm
 <div class="ttc" id="aclassscore_1_1_toolbar_manager_html"><div class="ttname"><a href="classscore_1_1_toolbar_manager.html">score::ToolbarManager</a></div><div class="ttdoc">The ToolbarManager class.</div><div class="ttdef"><b>Definition:</b> ToolbarManager.hpp:14</div></div>
 <div class="ttc" id="aclassscore_1_1_action_manager_html"><div class="ttname"><a href="classscore_1_1_action_manager.html">score::ActionManager</a></div><div class="ttdoc">The ActionManager class.</div><div class="ttdef"><b>Definition:</b> ActionManager.hpp:19</div></div>
 <div class="ttc" id="aclassscore_1_1_g_u_i_application_plugin_html"><div class="ttname"><a href="classscore_1_1_g_u_i_application_plugin.html">score::GUIApplicationPlugin</a></div><div class="ttdoc">Used to extend the software with application-wide data.</div><div class="ttdef"><b>Definition:</b> GUIApplicationPlugin.hpp:88</div></div>
+<div class="ttc" id="a_command_generator_map_8hpp_html_a992cdd2d9f7cc029812d4bc71ce87096"><div class="ttname"><a href="_command_generator_map_8hpp.html#a992cdd2d9f7cc029812d4bc71ce87096">CommandGeneratorMap</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; CommandKey, CommandFactory &gt; &gt; CommandGeneratorMap</div><div class="ttdoc">The CommandGeneratorMap struct.</div><div class="ttdef"><b>Definition:</b> CommandGeneratorMap.hpp:54</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

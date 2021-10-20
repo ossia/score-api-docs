@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('_common_widgets_8hpp_source.html','');
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Control/Widgets.hpp&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/string_map.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/enum_map.hpp&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>Control</div>
@@ -171,15 +171,15 @@ $(document).ready(function(){initNavTree('_common_widgets_8hpp_source.html','');
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">inline</span> <span class="keyword">auto</span>&amp; waveformMap()</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> ossia::string_view_map&lt;Waveform&gt; waveform_map{</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      {<span class="stringliteral">&quot;Sin&quot;</span>, Sin},</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      {<span class="stringliteral">&quot;Triangle&quot;</span>, Triangle},</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      {<span class="stringliteral">&quot;Saw&quot;</span>, Saw},</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      {<span class="stringliteral">&quot;Square&quot;</span>, Square},</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      {<span class="stringliteral">&quot;Sample &amp; Hold&quot;</span>, SampleAndHold},</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      {<span class="stringliteral">&quot;Noise 1&quot;</span>, Noise1},</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      {<span class="stringliteral">&quot;Noise 2&quot;</span>, Noise2},</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      {<span class="stringliteral">&quot;Noise 3&quot;</span>, Noise3}};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> ossia::enum_map&lt;Waveform, std::string_view,8&gt; waveform_map{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      {Sin, <span class="stringliteral">&quot;Sin&quot;</span>},</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      {Triangle, <span class="stringliteral">&quot;Triangle&quot;</span>},</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      {Saw, <span class="stringliteral">&quot;Saw&quot;</span>},</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      {Square, <span class="stringliteral">&quot;Square&quot;</span>},</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      {SampleAndHold, <span class="stringliteral">&quot;Sample &amp; Hold&quot;</span>},</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      {Noise1, <span class="stringliteral">&quot;Noise 1&quot;</span>},</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      {Noise2, <span class="stringliteral">&quot;Noise 2&quot;</span>},</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      {Noise3, <span class="stringliteral">&quot;Noise 3&quot;</span>}};</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordflow">return</span> waveform_map;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">static</span> constexpr <span class="keyword">auto</span> WaveformChooser()</div>
