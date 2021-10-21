@@ -132,18 +132,21 @@ $(document).ready(function(){initNavTree('score-plugin-gfx_2_gfx_2_graph_2_graph
 <div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_graph.html#a956b5fda40333edffaa3655bbf18f4c6">   65</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="structscore_1_1gfx_1_1_graph.html#a956b5fda40333edffaa3655bbf18f4c6">canDoVSync</a>() const noexcept { <span class="keywordflow">return</span> m_outputs.size() == 1; }</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  std::shared_ptr&lt;RenderList&gt; createRenderList(<a class="code" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a>*, <a class="code" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> state);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  std::vector&lt;std::shared_ptr&lt;RenderList&gt;&gt; m_renderers;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  std::vector&lt;std::shared_ptr&lt;Window&gt;&gt; m_unused_windows;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  std::function&lt;void()&gt; m_vsync_callback;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  std::vector&lt;score::gfx::Node*&gt; m_nodes;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  std::vector&lt;Edge*&gt; m_edges;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> initializeOutput(<a class="code" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a>* output, <a class="code" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a> graphicsApi);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> createOutputRenderList(<a class="code" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a>&amp; output);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span> recreateOutputRenderList(<a class="code" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a>&amp; output);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  std::shared_ptr&lt;RenderList&gt; createRenderList(<a class="code" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a>*, <a class="code" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> state);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  std::vector&lt;std::shared_ptr&lt;RenderList&gt;&gt; m_renderers;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  std::vector&lt;std::shared_ptr&lt;Window&gt;&gt; m_unused_windows;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  std::function&lt;void()&gt; m_vsync_callback;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  std::vector&lt;OutputNode*&gt; m_outputs;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  std::vector&lt;score::gfx::Node*&gt; m_nodes;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  std::vector&lt;Edge*&gt; m_edges;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  std::vector&lt;OutputNode*&gt; m_outputs;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a></div><div class="ttdoc">Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)</div><div class="ttdef"><b>Definition:</b> OutputNode.hpp:23</div></div>
