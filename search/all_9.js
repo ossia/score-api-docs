@@ -75,7 +75,7 @@ var searchData=
   ['identifiedobject_3c_20timesyncmodel_20_3e_923',['IdentifiedObject&lt; TimeSyncModel &gt;',['../class_identified_object.html',1,'']]],
   ['identifiedobjectabstract_924',['IdentifiedObjectAbstract',['../class_identified_object_abstract.html',1,'']]],
   ['idgen_925',['IdGen',['../structscore_1_1_id_gen.html',1,'score']]],
-  ['image_926',['Image',['../structscore_1_1gfx_1_1_image.html',1,'score::gfx::Image'],['../structscore_1_1gfx_1_1image.html',1,'score::gfx::image']]],
+  ['image_926',['image',['../structscore_1_1gfx_1_1image.html',1,'score::gfx::image'],['../structscore_1_1gfx_1_1_image.html',1,'score::gfx::Image']]],
   ['image_5fnode_927',['image_node',['../class_gfx_1_1_images_1_1image__node.html',1,'Gfx::Images']]],
   ['imagecache_928',['ImageCache',['../struct_gfx_1_1_image_cache.html',1,'Gfx']]],
   ['imagelistchooser_929',['ImageListChooser',['../struct_gfx_1_1_images_1_1_image_list_chooser.html',1,'Gfx::Images']]],
