@@ -70,6 +70,7 @@ var namespacescore =
     [ "DefaultedGenericComponentFactoryList", "classscore_1_1_defaulted_generic_component_factory_list.html", "classscore_1_1_defaulted_generic_component_factory_list" ],
     [ "DefaultGraphicsKnobImpl", "structscore_1_1_default_graphics_knob_impl.html", null ],
     [ "DefaultGraphicsSliderImpl", "structscore_1_1_default_graphics_slider_impl.html", null ],
+    [ "delete_later", "structscore_1_1delete__later.html", "structscore_1_1delete__later" ],
     [ "Dispatcher", "structscore_1_1_dispatcher.html", "structscore_1_1_dispatcher" ],
     [ "Dispatcher_T", "structscore_1_1_dispatcher___t.html", "structscore_1_1_dispatcher___t" ],
     [ "Document", "classscore_1_1_document.html", "classscore_1_1_document" ],

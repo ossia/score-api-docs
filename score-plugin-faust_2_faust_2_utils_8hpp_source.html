@@ -253,7 +253,7 @@ $(document).ready(function(){initNavTree('score-plugin-faust_2_faust_2_utils_8hp
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keywordtype">void</span> closeBox()<span class="keyword"> override </span>{ }</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keywordtype">void</span> declare(FAUSTFLOAT* zone, <span class="keyword">const</span> <span class="keywordtype">char</span>* key, <span class="keyword">const</span> <span class="keywordtype">char</span>* val)<span class="keyword"> override</span></div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    qDebug() &lt;&lt; <span class="stringliteral">&quot;UpdateUI: &quot;</span> &lt;&lt; key &lt;&lt; val;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    MetaDataUI::declare(zone, key, val);</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  }</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordtype">void</span> addSoundfile(</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">char</span>* label,</div>
@@ -355,10 +355,10 @@ $(document).ready(function(){initNavTree('score-plugin-faust_2_faust_2_utils_8hp
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;      {</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        <span class="keywordflow">if</span> (isKnob(zone))</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        {</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;          slider-&gt;setName(label);</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;          slider-&gt;setDomain(ossia::make_domain(min, max));</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;          knob-&gt;setName(label);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;          knob-&gt;setDomain(ossia::make_domain(min, max));</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;          <span class="keywordflow">if</span> constexpr (SetInit)</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;              slider-&gt;setValue(init);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;              knob-&gt;setValue(init);</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        }</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        {</div>
