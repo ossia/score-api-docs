@@ -1,5 +1,7 @@
 var NAVTREEINDEX58 =
 {
+"struct_q_meta_type_id_3_01_audio_1_1_settings_1_1_external_transport_01_4.html#a9fb0eb1836e5718c8b9c62daf0836158a0695457de9a6e17ec9b6ec05f15dd4db":[12,0,204,0],
+"struct_q_meta_type_id_3_01_curve_1_1_power_segment_data_01_4.html":[12,0,210],
 "struct_q_meta_type_id_3_01_curve_1_1_power_segment_data_01_4.html#a00f8986c49ce3d24fc8f202dc58635e1abb072179b4230610ae951cd100c9ac09":[12,0,210,0],
 "struct_q_meta_type_id_3_01_curve_1_1_segment_data_01_4.html":[12,0,211],
 "struct_q_meta_type_id_3_01_curve_1_1_segment_data_01_4.html#a483b8b54a50099ea64c220ef4db998f4a8b9d3504567a1dc15da2168f9cced21c":[12,0,211,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX58 =
 "struct_recording_1_1_record_automation_subsequent_callback_visitor.html#abfd704c4a2a9be48170ae37aedf05434":[12,0,38,9,1],
 "struct_recording_1_1_record_automation_subsequent_callback_visitor.html#ad07d71c39b8aeaf2f668ce8028eb66ce":[12,0,38,9,2],
 "struct_recording_1_1_record_automation_subsequent_callback_visitor.html#adb013a29c90cd04db1b6bb10247fc24b":[12,0,38,9,11],
-"struct_recording_1_1_record_automation_subsequent_callback_visitor.html#afc3c1ab32f9b17a5bf9b5e8374512e26":[12,0,38,9,0],
-"struct_recording_1_1_record_context.html":[12,0,38,10],
-"struct_recording_1_1_record_context.html#a1c1a5107642e9e82f97597cdc8071d95":[12,0,38,10,0]
+"struct_recording_1_1_record_automation_subsequent_callback_visitor.html#afc3c1ab32f9b17a5bf9b5e8374512e26":[12,0,38,9,0]
 };

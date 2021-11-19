@@ -1,5 +1,7 @@
 var NAVTREEINDEX57 =
 {
+"struct_process_1_1_pixmaps.html#a5b3ecb9d5a9121c62cba51fba2717c86":[12,0,36,60,17],
+"struct_process_1_1_pixmaps.html#a5edc78b09ca32e70814bca21aecbdbaf":[12,0,36,60,8],
 "struct_process_1_1_pixmaps.html#a5eddb2c57c3ceb88cb475c6248907a38":[12,0,36,60,22],
 "struct_process_1_1_pixmaps.html#a632e092a84ab9ca07659ff9d8b0f80b9":[12,0,36,60,13],
 "struct_process_1_1_pixmaps.html#a6a2e1ba7fd9672178470913504837846":[12,0,36,60,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX57 =
 "struct_q_map_key_adaptor.html#a2d04c4beb09e6a21b14e03522698c229":[12,0,203,1],
 "struct_q_map_key_adaptor.html#aa37c93e953e29b4e8abbaba0dd83f4e2":[12,0,203,2],
 "struct_q_map_key_adaptor.html#ad89a272f642401011590109662f9856a":[12,0,203,0],
-"struct_q_meta_type_id_3_01_audio_1_1_settings_1_1_external_transport_01_4.html":[12,0,204],
-"struct_q_meta_type_id_3_01_audio_1_1_settings_1_1_external_transport_01_4.html#a9fb0eb1836e5718c8b9c62daf0836158a0695457de9a6e17ec9b6ec05f15dd4db":[12,0,204,0],
-"struct_q_meta_type_id_3_01_curve_1_1_power_segment_data_01_4.html":[12,0,210]
+"struct_q_meta_type_id_3_01_audio_1_1_settings_1_1_external_transport_01_4.html":[12,0,204]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX62 =
 {
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_id_container_3_01_t_00_01_u_00_01_v_01_4_01_4.html":[12,0,440],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_identified_object_3_01_t_01_4_01_4.html":[12,0,441],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_model_3_01_info_00_01_control_1_1is__control_01_4_01_4.html":[12,0,442],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_model_3_01_info_00_01_control_1_1is__control_01_4_01_4.html#ab991fdc5e4c3259c48446220f7f0c535":[12,0,442,0],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_path_3_01_t_01_4_01_4.html":[12,0,453],
@@ -247,7 +249,5 @@ var NAVTREEINDEX62 =
 "structaudio__mapping__attr.html":[12,0,67],
 "structaudio__mapping__attr.html#a3d421057f96c240c9e01b363280cbc24":[12,0,67,0],
 "structbase__kind.html":[12,0,70],
-"structbase__kind.html#a190e88c248421bde71bb91b258363581":[12,0,70,0],
-"structbase__kind_3_01_t_00_01std_1_1enable__if__t_3_9std_1_1is__same__v_3_01_t_00_01typename_01_t_1_1base__type_01_4_01_4_01_4.html":[12,0,71],
-"structbase__kind_3_01_t_00_01std_1_1enable__if__t_3_9std_1_1is__same__v_3_01_t_00_01typename_01_t_1_1base__type_01_4_01_4_01_4.html#a7773f27f0c255682a9cba71884da2ea5":[12,0,71,0]
+"structbase__kind.html#a190e88c248421bde71bb91b258363581":[12,0,70,0]
 };

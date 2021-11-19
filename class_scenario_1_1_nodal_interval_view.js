@@ -9,5 +9,6 @@ var class_scenario_1_1_nodal_interval_view =
     [ "enclosingRect", "class_scenario_1_1_nodal_interval_view.html#a7013f3c73dbb78b9965932ce8b7bf61e", null ],
     [ "on_drop", "class_scenario_1_1_nodal_interval_view.html#a93b1c82a5a43d19d73495a275e91a7eb", null ],
     [ "on_playPercentageChanged", "class_scenario_1_1_nodal_interval_view.html#a6bccac8ac45aab13fa76cae1a7d43f95", null ],
-    [ "recenter", "class_scenario_1_1_nodal_interval_view.html#a7df8aa45c143f3426e8e88494f5c3e8c", null ]
+    [ "recenter", "class_scenario_1_1_nodal_interval_view.html#a7df8aa45c143f3426e8e88494f5c3e8c", null ],
+    [ "rescale", "class_scenario_1_1_nodal_interval_view.html#a42a77737c15640b6ab4b2b045ddad111", null ]
 ];

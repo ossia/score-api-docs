@@ -1,5 +1,7 @@
 var NAVTREEINDEX51 =
 {
+"struct_device_1_1_address_settings_common.html#a5ac5f1a23adf8b6e50cfaeaa3b49d4fc":[12,0,7,3,9],
+"struct_device_1_1_address_settings_common.html#a63d79491eed338e66f26f1d6c55a01b0":[12,0,7,3,3],
 "struct_device_1_1_address_settings_common.html#a6d753213a5ba8714fba47eee0285c7ed":[12,0,7,3,11],
 "struct_device_1_1_address_settings_common.html#a8f80c9aebe241c5335622dad8e78217f":[12,0,7,3,6],
 "struct_device_1_1_address_settings_common.html#a925d8dde6e147495c14972a3a771e7e3":[12,0,7,3,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX51 =
 "struct_factory_builder_3_01score_1_1_g_u_i_application_context_00_01_scenario_1_1_scenario_temporal_layer_factory_01_4.html":[12,0,108],
 "struct_faust_1_1_language_spec.html":[12,0,13,2],
 "struct_faust_1_1_u_i.html":[12,0,13,4],
-"struct_faust_1_1_u_i.html#a1318a0d649e6677004b57bded89fa4c0":[12,0,13,4,14],
-"struct_faust_1_1_u_i.html#a1f3b161b727d3cc073da7902634d24b0":[12,0,13,4,13],
-"struct_faust_1_1_u_i.html#a2b8113563faa4f0704850085cf25ad0e":[12,0,13,4,2]
+"struct_faust_1_1_u_i.html#a1318a0d649e6677004b57bded89fa4c0":[12,0,13,4,14]
 };
