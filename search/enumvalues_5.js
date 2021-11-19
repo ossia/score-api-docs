@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['timeindependent_5536',['TimeIndependent',['../namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1ae0631948dc54ff47c847d8ab38627cc1',1,'Process']]]
+  ['supportsstate_5538',['SupportsState',['../namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a116a8cc93738260c508ea2e898df19fa',1,'Process']]],
+  ['supportstemporal_5539',['SupportsTemporal',['../namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a41b45c4f979aae481267ddb77cd85e96',1,'Process']]]
 ];

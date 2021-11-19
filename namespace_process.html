@@ -376,9 +376,10 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1aa76f0cafad2868e7b714583dad50cc02">PutInNewSlot</a> = (1 &lt;&lt; 4 ), 
 <a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a28864adccb3f9149d5c1800509b4ef53">HandlesLooping</a> = (1 &lt;&lt; 5 ), 
 <a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a04d62df558a1f3d140a99921aadbd254">ControlSurface</a> = (1 &lt;&lt; 6 ), 
-<b>SupportsLasting</b> = SupportsTemporal | TimeIndependent, 
+<a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1aa9c81d4f02379ef379045345e2c35c1e">FullyCustomItem</a> = (1 &lt;&lt; 7 ), 
 <br />
-&#160;&#160;<b>ExternalEffect</b> = SupportsTemporal | TimeIndependent | RequiresCustomData | ControlSurface, 
+&#160;&#160;<b>SupportsLasting</b> = SupportsTemporal | TimeIndependent, 
+<b>ExternalEffect</b> = SupportsTemporal | TimeIndependent | RequiresCustomData | ControlSurface, 
 <b>SupportsAll</b> = SupportsTemporal | TimeIndependent | SupportsState
 <br />
  }</td></tr>
@@ -398,7 +399,9 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>Mapping</b>, 
 <b>Script</b>, 
 <b>Structure</b>, 
-<b>Visual</b>
+<b>Visual</b>, 
+<br />
+&#160;&#160;<b>Deprecated</b> = (1LL &lt;&lt; 63)
 <br />
  }</td></tr>
 <tr class="separator:a8059d13e5c85feebf8cf2a52b7b3440a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -650,6 +653,8 @@ QDebug&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b
 <tr><td class="fieldname"><a id="a592bb361ebf8fbc09c929c93208c71f1a28864adccb3f9149d5c1800509b4ef53"></a>HandlesLooping&#160;</td><td class="fielddoc"><p>The presenter / view already handles rendering when the model loops. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a592bb361ebf8fbc09c929c93208c71f1a04d62df558a1f3d140a99921aadbd254"></a>ControlSurface&#160;</td><td class="fielddoc"><p>The process supports being exposed to the ControlSurface. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a592bb361ebf8fbc09c929c93208c71f1aa9c81d4f02379ef379045345e2c35c1e"></a>FullyCustomItem&#160;</td><td class="fielddoc"><p>The process's item handles all the decoration (won't be title, etc) </p>
 </td></tr>
 </table>
 

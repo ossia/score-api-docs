@@ -1,5 +1,8 @@
 var NAVTREEINDEX47 =
 {
+"classvst3_1_1vst__node__base.html#a30fb6a5d4495a041e3f42ba547b56fb2":[12,0,53,18,7],
+"classvst3_1_1vst__node__base.html#a31baafe88bcce7ed13db2a70b938c281":[12,0,53,18,24],
+"classvst3_1_1vst__node__base.html#a4431096f4dbd723e3e068220232c668e":[12,0,53,18,13],
 "classvst3_1_1vst__node__base.html#a487e7887b95d1b0c1df691d617554825":[12,0,53,18,5],
 "classvst3_1_1vst__node__base.html#a4ddd5653ff47dbc96e175f2224d45430":[12,0,53,18,12],
 "classvst3_1_1vst__node__base.html#a4e16edd359cdb96ee21232964b179438":[12,0,53,18,18],
@@ -219,8 +222,8 @@ var NAVTREEINDEX47 =
 "mvp_8hpp_source.html":[13,0,758],
 "namespace_automation.html":[11,0,0],
 "namespace_automation.html":[12,0,1],
-"namespace_curve.html":[12,0,5],
 "namespace_curve.html":[11,0,1],
+"namespace_curve.html":[12,0,5],
 "namespace_device.html":[12,0,7],
 "namespace_device.html":[11,0,2],
 "namespace_engine.html":[12,0,8],
@@ -230,8 +233,8 @@ var NAVTREEINDEX47 =
 "namespace_execution.html":[11,0,4],
 "namespace_gfx.html":[12,0,15],
 "namespace_gfx.html":[11,0,5],
-"namespace_inspector.html":[11,0,6],
 "namespace_inspector.html":[12,0,17],
+"namespace_inspector.html":[11,0,6],
 "namespace_local_tree.html":[11,0,7],
 "namespace_local_tree.html":[12,0,24],
 "namespace_plugin_loader.html":[11,0,8],
@@ -246,8 +249,5 @@ var NAVTREEINDEX47 =
 "namespacemembers_eval.html":[11,1,4],
 "namespacemembers_func.html":[11,1,1],
 "namespacemembers_type.html":[11,1,2],
-"namespaces.html":[11,0],
-"namespacescore.html":[11,0,11],
-"namespacescore.html":[12,0,43],
-"namespacescore_1_1gfx.html":[12,0,43,2]
+"namespaces.html":[11,0]
 };

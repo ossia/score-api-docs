@@ -109,19 +109,26 @@ Public Member Functions</h2></td></tr>
 template&lt;std::size_t N&gt; </td></tr>
 <tr class="memitem:a2737f785ce5717fdf701a66ac872e7c5"><td class="memTemplItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>getControl</b> () noexcept</td></tr>
 <tr class="separator:a2737f785ce5717fdf701a66ac872e7c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fc77360bf349bb2e505ffa7064a425b"><td class="memTemplParams" colspan="2"><a id="a0fc77360bf349bb2e505ffa7064a425b"></a>
-template&lt;std::size_t... C&gt; </td></tr>
-<tr class="memitem:a0fc77360bf349bb2e505ffa7064a425b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make</b> (const std::index_sequence&lt; C... &gt; &amp;) noexcept</td></tr>
-<tr class="separator:a0fc77360bf349bb2e505ffa7064a425b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bebe5d464dc15acaf0c6b11622fcda8"><td class="memItemLeft" align="right" valign="top"><a id="a8bebe5d464dc15acaf0c6b11622fcda8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CustomUISetup</b> (const Process::Inlets &amp;inlets, const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;process, QGraphicsItem &amp;parent, QObject &amp;context, const <a class="el" href="struct_process_1_1_context.html">Process::Context</a> &amp;doc)</td></tr>
-<tr class="separator:a8bebe5d464dc15acaf0c6b11622fcda8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c7a37125022a7c15e611cf85419f328"><td class="memTemplParams" colspan="2"><a id="a2c7a37125022a7c15e611cf85419f328"></a>
+template&lt;std::size_t N&gt; </td></tr>
+<tr class="memitem:a2c7a37125022a7c15e611cf85419f328"><td class="memTemplItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>getControlOut</b> () noexcept</td></tr>
+<tr class="separator:a2c7a37125022a7c15e611cf85419f328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabbdc26bb2641f298edd9e257c185eb4"><td class="memTemplParams" colspan="2"><a id="aabbdc26bb2641f298edd9e257c185eb4"></a>
+template&lt;std::size_t... CI, std::size_t... CO&gt; </td></tr>
+<tr class="memitem:aabbdc26bb2641f298edd9e257c185eb4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make</b> (std::index_sequence&lt; CI... &gt;, std::index_sequence&lt; CO... &gt;) noexcept</td></tr>
+<tr class="separator:aabbdc26bb2641f298edd9e257c185eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5dac6c52a4be71bf8b02d368ebd9a6b"><td class="memItemLeft" align="right" valign="top"><a id="aa5dac6c52a4be71bf8b02d368ebd9a6b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CustomUISetup</b> (const Process::Inlets &amp;inlets, const Process::Outlets &amp;outlets, const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;process, QGraphicsItem &amp;parent, QObject &amp;context, const <a class="el" href="struct_process_1_1_context.html">Process::Context</a> &amp;doc)</td></tr>
+<tr class="separator:aa5dac6c52a4be71bf8b02d368ebd9a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a1eed01131fe7c1fa36c68584903012e1"><td class="memItemLeft" align="right" valign="top"><a id="a1eed01131fe7c1fa36c68584903012e1"></a>
 const Process::Inlets &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>inlets</b></td></tr>
 <tr class="separator:a1eed01131fe7c1fa36c68584903012e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3682cb6fb50c1ade21bf48ea75373bea"><td class="memItemLeft" align="right" valign="top"><a id="a3682cb6fb50c1ade21bf48ea75373bea"></a>
+const Process::Outlets &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>outlets</b></td></tr>
+<tr class="separator:a3682cb6fb50c1ade21bf48ea75373bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ec59ed8b27cdea17cfb4fef413161a9"><td class="memItemLeft" align="right" valign="top"><a id="a1ec59ed8b27cdea17cfb4fef413161a9"></a>
 const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>process</b></td></tr>
 <tr class="separator:a1ec59ed8b27cdea17cfb4fef413161a9"><td class="memSeparator" colspan="2">&#160;</td></tr>

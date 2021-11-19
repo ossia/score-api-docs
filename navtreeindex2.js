@@ -1,5 +1,8 @@
 var NAVTREEINDEX2 =
 {
+"_expand_mode_8hpp_source.html":[13,0,407],
+"_exploration_worker_8hpp_source.html":[13,0,408],
+"_exploration_worker_wrapper_8hpp_source.html":[13,0,409],
 "_explorer_factory_8hpp_source.html":[13,0,410],
 "_explorer_model_8hpp_source.html":[13,0,411],
 "_explorer_model_provider_8hpp_source.html":[13,0,412],
@@ -246,8 +249,5 @@ var NAVTREEINDEX2 =
 "_midi_outlet_item_8hpp_source.html":[13,0,695],
 "_midi_presenter_8hpp_source.html":[13,0,696],
 "_midi_process_8hpp_source.html":[13,0,697],
-"_midi_process_inspector_8hpp_source.html":[13,0,698],
-"_midi_process_metadata_8hpp_source.html":[13,0,699],
-"_midi_style_8hpp_source.html":[13,0,703],
-"_midi_util_8hpp_source.html":[13,0,704]
+"_midi_process_inspector_8hpp_source.html":[13,0,698]
 };

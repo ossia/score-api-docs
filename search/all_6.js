@@ -55,6 +55,7 @@ var searchData=
   ['fullviewintervalheader_707',['FullViewIntervalHeader',['../class_scenario_1_1_full_view_interval_header.html',1,'Scenario']]],
   ['fullviewintervalpresenter_708',['FullViewIntervalPresenter',['../class_scenario_1_1_full_view_interval_presenter.html',1,'Scenario']]],
   ['fullviewintervalview_709',['FullViewIntervalView',['../class_scenario_1_1_full_view_interval_view.html',1,'Scenario']]],
-  ['fw_5ft_710',['FW_T',['../struct_f_w___t.html',1,'']]],
-  ['fx_711',['Fx',['../class_faust_d_s_p_1_1_fx.html',1,'FaustDSP']]]
+  ['fullycustomitem_710',['FullyCustomItem',['../namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1aa9c81d4f02379ef379045345e2c35c1e',1,'Process']]],
+  ['fw_5ft_711',['FW_T',['../struct_f_w___t.html',1,'']]],
+  ['fx_712',['Fx',['../class_faust_d_s_p_1_1_fx.html',1,'FaustDSP']]]
 ];

@@ -58,6 +58,7 @@ var annotated_dup =
       [ "HasCustomUI< T, std::void_t< decltype(&T::item)> >", "struct_control_1_1_has_custom_u_i_3_01_t_00_01std_1_1void__t_3_01decltype_07_6_t_1_1item_08_4_01_4.html", null ],
       [ "HSVSlider", "struct_control_1_1_h_s_v_slider.html", "struct_control_1_1_h_s_v_slider" ],
       [ "ImpulseButton", "struct_control_1_1_impulse_button.html", "struct_control_1_1_impulse_button" ],
+      [ "InControl", "struct_control_1_1_in_control.html", "struct_control_1_1_in_control" ],
       [ "inlet_visitor", "struct_control_1_1inlet__visitor.html", "struct_control_1_1inlet__visitor" ],
       [ "IntSlider", "struct_control_1_1_int_slider.html", "struct_control_1_1_int_slider" ],
       [ "IntSpinBox", "struct_control_1_1_int_spin_box.html", "struct_control_1_1_int_spin_box" ],
@@ -531,7 +532,12 @@ var annotated_dup =
         [ "Node", "struct_nodes_1_1_gain_1_1_node.html", "struct_nodes_1_1_gain_1_1_node" ]
       ] ],
       [ "LFO", null, [
-        [ "Node", "struct_nodes_1_1_l_f_o_1_1_node.html", "struct_nodes_1_1_l_f_o_1_1_node" ]
+        [ "v1", null, [
+          [ "Node", "struct_nodes_1_1_l_f_o_1_1v1_1_1_node.html", "struct_nodes_1_1_l_f_o_1_1v1_1_1_node" ]
+        ] ],
+        [ "v2", null, [
+          [ "Node", "struct_nodes_1_1_l_f_o_1_1v2_1_1_node.html", "struct_nodes_1_1_l_f_o_1_1v2_1_1_node" ]
+        ] ]
       ] ],
       [ "MathAudioFilter", null, [
         [ "Node", "struct_nodes_1_1_math_audio_filter_1_1_node.html", "struct_nodes_1_1_math_audio_filter_1_1_node" ]
@@ -813,6 +819,9 @@ var annotated_dup =
       [ "TransportInterfaceList", "class_transport_1_1_transport_interface_list.html", null ]
     ] ],
     [ "Ui", null, [
+      [ "Display", null, [
+        [ "Node", "struct_ui_1_1_display_1_1_node.html", "struct_ui_1_1_display_1_1_node" ]
+      ] ],
       [ "SignalDisplay", null, [
         [ "Node", "struct_ui_1_1_signal_display_1_1_node.html", "struct_ui_1_1_signal_display_1_1_node" ]
       ] ]
