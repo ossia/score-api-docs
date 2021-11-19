@@ -594,7 +594,7 @@ $(document).ready(function(){initNavTree('score-plugin-lv2_2_l_v2_2_node_8hpp_so
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;      {</div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;        <span class="keyword">auto</span>&amp; audio_out</div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;            = <span class="keyword">static_cast&lt;</span>ossia::audio_outlet*<span class="keyword">&gt;</span>(m_outlets[0])-&gt;data;</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;        audio_out.samples.resize(audio_outs);</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;        audio_out.set_channels(audio_outs);</div>
 <div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; audio_outs; i++)</div>
 <div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;        {</div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;          audio_out.samples[i].clear();</div>
