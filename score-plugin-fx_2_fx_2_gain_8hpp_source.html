@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('score-plugin-fx_2_fx_2_gain_8hpp_sourc
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      ossia::token_request t,</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      ossia::exec_state_facade st)</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> chans = p1.samples.size();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> chans = p1.channels();</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    p2.set_channels(chans);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> [first_pos, N] = st.timings(t);</div>
@@ -139,8 +139,8 @@ $(document).ready(function(){initNavTree('score-plugin-fx_2_fx_2_gain_8hpp_sourc
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> gain = g;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; chans; i++)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <span class="keyword">auto</span>&amp; in = p1.samples[i];</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keyword">auto</span>&amp; out = p2.samples[i];</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <span class="keyword">auto</span>&amp; in = p1.channel(i);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keyword">auto</span>&amp; out = p2.channel(i);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keyword">const</span> int64_t samples = in.size();</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      int64_t max = std::min(N, samples);</div>

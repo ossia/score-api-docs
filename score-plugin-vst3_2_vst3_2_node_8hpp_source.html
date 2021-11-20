@@ -477,11 +477,11 @@ $(document).ready(function(){initNavTree('score-plugin-vst3_2_vst3_2_node_8hpp_s
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  <span class="keyword">auto</span>&amp;</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  preparePort(ossia::audio_port&amp; port, <span class="keywordtype">int</span> numChannels, std::size_t samples)</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  {</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <span class="keyword">auto</span>&amp; ip = port.samples;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    ip.resize(numChannels);</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; i : ip)</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    port.set_channels(numChannels);</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160; </div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; i : port)</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;      i.resize(samples);</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="keywordflow">return</span> ip;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="keywordflow">return</span> port.get();</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  }</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160; </div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  <span class="keywordtype">void</span></div>
@@ -722,7 +722,7 @@ $(document).ready(function(){initNavTree('score-plugin-vst3_2_vst3_2_node_8hpp_s
 <div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;              = *m_outlets[i]-&gt;template target&lt;ossia::audio_port&gt;();</div>
 <div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;          <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; k &lt; numChannels; k++)</div>
 <div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;          {</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;            <span class="keyword">auto</span>&amp; audio_out = port.samples[k];</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;            <span class="keyword">auto</span>&amp; audio_out = port.channel(k);</div>
 <div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;            std::copy_n(float_v[float_k].data(), samples, audio_out.data());</div>
 <div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;          }</div>
 <div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;        }</div>

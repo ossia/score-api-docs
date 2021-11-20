@@ -564,13 +564,13 @@ $(document).ready(function(){initNavTree('score-plugin-lv2_2_l_v2_2_node_8hpp_so
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; audio_ins; i++)</div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;        {</div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;          in_vec[i].resize(samples);</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;          <span class="keywordflow">if</span> (audio_in.samples.size() &gt; i)</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;          <span class="keywordflow">if</span> (audio_in.channels() &gt; i)</div>
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;          {</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;            <span class="keywordflow">for</span> (std::size_t j = 0;</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;                 j &lt; std::min(std::size_t(samples), audio_in.samples[i].size());</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;                 j &lt; std::min(std::size_t(samples), audio_in.channel(i).size());</div>
 <div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;                 j++)</div>
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;            {</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;              in_vec[i][j] = (float)audio_in.samples[i][j];</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;              in_vec[i][j] = (float)audio_in.channel(i)[j];</div>
 <div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;            }</div>
 <div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;          }</div>
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;          lilv_instance_connect_port(</div>
@@ -597,11 +597,11 @@ $(document).ready(function(){initNavTree('score-plugin-lv2_2_l_v2_2_node_8hpp_so
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;        audio_out.set_channels(audio_outs);</div>
 <div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; audio_outs; i++)</div>
 <div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;        {</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;          audio_out.samples[i].clear();</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;          audio_out.samples[i].reserve(samples);</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;          audio_out.channel(i).clear();</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;          audio_out.channel(i).reserve(samples);</div>
 <div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;          <span class="keywordflow">for</span> (int64_t j = 0; j &lt; samples; j++)</div>
 <div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;          {</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;            audio_out.samples[i].push_back((<span class="keywordtype">double</span>)out_vec[i][j]);</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;            audio_out.channel(i).push_back((<span class="keywordtype">double</span>)out_vec[i][j]);</div>
 <div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;          }</div>
 <div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        }</div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;      }</div>
