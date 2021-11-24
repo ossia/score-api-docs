@@ -1005,6 +1005,7 @@ var annotated_dup =
     [ "JSONReader", "class_j_s_o_n_reader.html", "class_j_s_o_n_reader" ],
     [ "JsonValue", "struct_json_value.html", "struct_json_value" ],
     [ "JSONWriter", "class_j_s_o_n_writer.html", "class_j_s_o_n_writer" ],
+    [ "libsuil", "classlibsuil.html", "classlibsuil" ],
     [ "LineEdit", "class_line_edit.html", "class_line_edit" ],
     [ "LogFile", "class_log_file.html", "class_log_file" ],
     [ "LV2_Atom_Buffer", "struct_l_v2___atom___buffer.html", "struct_l_v2___atom___buffer" ],

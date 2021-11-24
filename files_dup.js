@@ -1200,6 +1200,7 @@ var files_dup =
     [ "StringValueWidget.hpp", "_string_value_widget_8hpp_source.html", null ],
     [ "StyleSheets.hpp", "_style_sheets_8hpp_source.html", null ],
     [ "SubtypeVariant.hpp", "_subtype_variant_8hpp_source.html", null ],
+    [ "Suil.hpp", "_suil_8hpp_source.html", null ],
     [ "SummaryInspectorWidget.hpp", "_summary_inspector_widget_8hpp_source.html", null ],
     [ "SwapSlots.hpp", "_swap_slots_8hpp_source.html", null ],
     [ "Sync.hpp", "_sync_8hpp_source.html", null ],

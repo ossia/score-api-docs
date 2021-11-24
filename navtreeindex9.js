@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"class_data_stream_writer.html#a085aba83754df2d1dda47461e9f98102":[12,0,94,74],
 "class_data_stream_writer.html#a09b0cc912a2b050291f41ad96cbabba6":[12,0,94,136],
 "class_data_stream_writer.html#a0a319226fbfa59c26b44840143e0ca59":[12,0,94,129],
 "class_data_stream_writer.html#a0b10a4e412ae08395c87b5f63a4f02d6":[12,0,94,149],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "class_dataflow_1_1_min_max_float_outlet_item.html":[12,0,6,31],
 "class_dataflow_1_1_min_max_float_outlet_item.html#a048e9261ddb2684f4f798563817457f6":[12,0,6,31,4],
 "class_dataflow_1_1_min_max_float_outlet_item.html#a4ef42f405ff4e06ab4dc111c33f9879c":[12,0,6,31,1],
-"class_dataflow_1_1_min_max_float_outlet_item.html#a50193568baff122c4e6aa9da0ad278f4":[12,0,6,31,3],
-"class_dataflow_1_1_min_max_float_outlet_item.html#aca6757abde2a860e001e3e602d4f679d":[12,0,6,31,5]
+"class_dataflow_1_1_min_max_float_outlet_item.html#a50193568baff122c4e6aa9da0ad278f4":[12,0,6,31,3]
 };
