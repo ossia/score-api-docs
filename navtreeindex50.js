@@ -1,5 +1,6 @@
 var NAVTREEINDEX50 =
 {
+"struct_control_1_1_out_control.html#ae8ab7d5c5f83f521d29e309afb4b4b91":[12,0,3,35,2],
 "struct_control_1_1_port_setup.html":[12,0,3,36],
 "struct_control_1_1_r_g_b_a_edit.html":[12,0,3,37],
 "struct_control_1_1_r_g_b_a_edit.html#a413be71022e50ae4701d24ed3cb441df":[12,0,3,37,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX50 =
 "struct_dataflow_1_1minmax.html":[12,0,6,29],
 "struct_dataflow_1_1minmax.html#a328c0479ae3a8e32ec1def6f41004afa":[12,0,6,29,2],
 "struct_dataflow_1_1minmax.html#a872de9cb46bd314494fb5aa5982f5412":[12,0,6,29,0],
-"struct_dataflow_1_1minmax.html#a9e0b9dc2c741acb132ff922d16fb562a":[12,0,6,29,1],
-"struct_default_rollback_strategy.html":[12,0,95]
+"struct_dataflow_1_1minmax.html#a9e0b9dc2c741acb132ff922d16fb562a":[12,0,6,29,1]
 };

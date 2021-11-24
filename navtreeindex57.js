@@ -1,5 +1,6 @@
 var NAVTREEINDEX57 =
 {
+"struct_process_1_1_layer_context.html#a8fc5a6bb773b67a2e114b868baa1148d":[12,0,36,39,1],
 "struct_process_1_1_magnetic_info.html":[12,0,36,49],
 "struct_process_1_1_magnetic_info.html#a5dc297e0f55d4bbfab3c92aee7346e93":[12,0,36,49,0],
 "struct_process_1_1_magnetic_info.html#a77d6bf73b8fd25e3d44ded1c6c1cd9e6":[12,0,36,49,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX57 =
 "struct_protocols_1_1_o_s_c_specific_settings.html#a01e5f5b65a36bb5d390be771dd74ee43":[12,0,37,47,1],
 "struct_protocols_1_1_o_s_c_specific_settings.html#a06a5e8556a4a2cb8d1b07db59a24305e":[12,0,37,47,0],
 "struct_protocols_1_1_o_s_c_specific_settings.html#aa41952fc4b9597254466ef68e8acb947":[12,0,37,47,2],
-"struct_protocols_1_1_phidget_specific_settings.html":[12,0,37,51],
-"struct_protocols_1_1_serial_specific_settings.html":[12,0,37,56]
+"struct_protocols_1_1_phidget_specific_settings.html":[12,0,37,51]
 };

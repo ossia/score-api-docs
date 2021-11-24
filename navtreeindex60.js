@@ -1,5 +1,6 @@
 var NAVTREEINDEX60 =
 {
+"struct_scenario_1_1_element_traits_3_01_base_scenario_container_00_01_interval_model_01_4.html":[12,0,42,79],
 "struct_scenario_1_1_element_traits_3_01_base_scenario_container_00_01_state_model_01_4.html":[12,0,42,80],
 "struct_scenario_1_1_element_traits_3_01_base_scenario_container_00_01_time_sync_model_01_4.html":[12,0,42,81],
 "struct_scenario_1_1_element_traits_3_01_scenario_1_1_process_model_00_01_event_model_01_4.html":[12,0,42,82],
@@ -248,6 +249,5 @@ var NAVTREEINDEX60 =
 "struct_scenario_1_1_vertical_extent.html#ad3ee386840b7c8b9e0d4d1b7cc08c5a1":[12,0,42,314,2],
 "struct_scenario_1_1_vertical_extent.html#ae1cac154aaf41ea551cf04ddfbc86812":[12,0,42,314,3],
 "struct_scenario_1_1get__curve__domain.html":[12,0,42,111],
-"struct_scenario_1_1get__curve__domain.html#a050c712a369bc5b096670e8e84385e3f":[12,0,42,111,8],
-"struct_scenario_1_1get__curve__domain.html#a2521112216b9ffdf2872f12cfa56908b":[12,0,42,111,4]
+"struct_scenario_1_1get__curve__domain.html#a050c712a369bc5b096670e8e84385e3f":[12,0,42,111,8]
 };

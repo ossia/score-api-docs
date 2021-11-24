@@ -1,5 +1,6 @@
 var NAVTREEINDEX59 =
 {
+"struct_recording_1_1_record_automation_first_callback_visitor.html#ab676a410afa6e7fe19ca5720d3f04f53":[12,0,38,8,6],
 "struct_recording_1_1_record_automation_first_callback_visitor.html#abf0ac38d42a1428a440cc992b0b31220":[12,0,38,8,10],
 "struct_recording_1_1_record_automation_subsequent_callback_visitor.html":[12,0,38,9],
 "struct_recording_1_1_record_automation_subsequent_callback_visitor.html#a07fe12187305407b5bef98836d3da805":[12,0,38,9,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX59 =
 "struct_scenario_1_1_displayed_elements_presenter_container.html#aaaf04fcbbc1e03fd3677b4763dad0a7b":[12,0,42,51,6],
 "struct_scenario_1_1_displayed_elements_presenter_container.html#aea4769915bc7761c5c5ec3aeab1625cc":[12,0,42,51,2],
 "struct_scenario_1_1_element_traits.html":[12,0,42,77],
-"struct_scenario_1_1_element_traits_3_01_base_scenario_container_00_01_event_model_01_4.html":[12,0,42,78],
-"struct_scenario_1_1_element_traits_3_01_base_scenario_container_00_01_interval_model_01_4.html":[12,0,42,79]
+"struct_scenario_1_1_element_traits_3_01_base_scenario_container_00_01_event_model_01_4.html":[12,0,42,78]
 };

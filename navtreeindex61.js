@@ -1,5 +1,6 @@
 var NAVTREEINDEX61 =
 {
+"struct_scenario_1_1get__curve__domain.html#a2521112216b9ffdf2872f12cfa56908b":[12,0,42,111,4],
 "struct_scenario_1_1get__curve__domain.html#a4d6420d86b3548d151db8aa6b3505f75":[12,0,42,111,5],
 "struct_scenario_1_1get__curve__domain.html#a67e16b522aba5d0f58f1c1b0611c2584":[12,0,42,111,7],
 "struct_scenario_1_1get__curve__domain.html#a7cb9457376050e58bada9731ea5069d1":[12,0,42,111,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX61 =
 "struct_t_serializer_3_01_data_stream_00_01ska_1_1flat__hash__map_3_01_t_00_01_u_01_4_01_4.html":[12,0,416],
 "struct_t_serializer_3_01_data_stream_00_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html":[12,0,418],
 "struct_t_serializer_3_01_data_stream_00_01std_1_1optional_3_01_t_01_4_01_4.html":[12,0,419],
-"struct_t_serializer_3_01_data_stream_00_01std_1_1pair_3_01_t_00_01_u_01_4_01_4.html":[12,0,420],
-"struct_t_serializer_3_01_data_stream_00_01std_1_1pair_3_01_t_00_01_u_01_4_01_4.html#a19bb4157ce772d90814448ae2010c6bd":[12,0,420,0]
+"struct_t_serializer_3_01_data_stream_00_01std_1_1pair_3_01_t_00_01_u_01_4_01_4.html":[12,0,420]
 };

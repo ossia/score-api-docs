@@ -1,5 +1,6 @@
 var NAVTREEINDEX66 =
 {
+"structscore_1_1gfx_1_1_audio_texture_upload.html#aa084db6dff3ba2d2c9724b92028a6e4b":[12,0,43,2,1,3],
 "structscore_1_1gfx_1_1_audio_texture_upload.html#adafa4daafa85c0005414ffba92967643":[12,0,43,2,1,0],
 "structscore_1_1gfx_1_1_default_shader_material.html":[12,0,43,2,2],
 "structscore_1_1gfx_1_1_default_shader_material.html#a3765edc802e3a69e0dbe9990740e09da":[12,0,43,2,2,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX66 =
 "structscore_1_1gfx_1_1_y_u_v420_decoder.html#aafc7d9516ab7ace78dff0dbe56038afc":[12,0,43,2,55,3],
 "structscore_1_1gfx_1_1_y_u_v420_decoder.html#ab89f43d84b4456117990da31d1c073cb":[12,0,43,2,55,5],
 "structscore_1_1gfx_1_1_y_u_v420_decoder.html#adf74a61f8110b84e3e93d3f7d6f82d4c":[12,0,43,2,55,6],
-"structscore_1_1gfx_1_1_y_u_v420_decoder.html#af93a6c9791adf8b7ca10ba863250272b":[12,0,43,2,55,1],
-"structscore_1_1gfx_1_1_y_u_v422_decoder.html":[12,0,43,2,56]
+"structscore_1_1gfx_1_1_y_u_v420_decoder.html#af93a6c9791adf8b7ca10ba863250272b":[12,0,43,2,55,1]
 };
