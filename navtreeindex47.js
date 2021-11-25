@@ -1,5 +1,7 @@
 var NAVTREEINDEX47 =
 {
+"classvst3_1_1vst__node.html":[12,0,53,17],
+"classvst3_1_1vst__node.html#a27a44805b02dd9736380791aa4e4afac":[12,0,53,17,8],
 "classvst3_1_1vst__node.html#a31e165e79a428a208be78d242f21d444":[12,0,53,17,6],
 "classvst3_1_1vst__node.html#a6ffe4770be0e8c4cab61b39bf65fca53":[12,0,53,17,7],
 "classvst3_1_1vst__node.html#a7094f023273c1b29c5031b33968e01cd":[12,0,53,17,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX47 =
 "namespace_engine.html":[12,0,8],
 "namespace_engine_1_1_network.html":[11,0,3,0],
 "namespace_execution.html":[12,0,9],
-"namespace_execution.html":[11,0,4],
-"namespace_gfx.html":[11,0,5],
-"namespace_gfx.html":[12,0,15]
+"namespace_execution.html":[11,0,4]
 };

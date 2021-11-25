@@ -155,6 +155,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>currentSelectionChang
 <tr class="memitem:a9acab908b21bee550a61dca4adadf257"><td class="memItemLeft" align="right" valign="top"><a id="a9acab908b21bee550a61dca4adadf257"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>prune</b> (<a class="el" href="class_identified_object_abstract.html">IdentifiedObjectAbstract</a> *p)</td></tr>
 <tr class="separator:a9acab908b21bee550a61dca4adadf257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2bf7c5bc8b0eff30cb8b598d0606190"><td class="memItemLeft" align="right" valign="top"><a id="af2bf7c5bc8b0eff30cb8b598d0606190"></a>
+vvvvvvvvoid&#160;</td><td class="memItemRight" valign="bottom"><b>pruneRecursively</b> (<a class="el" href="class_identified_object_abstract.html">IdentifiedObjectAbstract</a> *p)</td></tr>
+<tr class="separator:af2bf7c5bc8b0eff30cb8b598d0606190"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addd7c178c92b84388812265645993d88"><td class="memItemLeft" align="right" valign="top"><a id="addd7c178c92b84388812265645993d88"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>pruneConnections</b> ()</td></tr>
 <tr class="separator:addd7c178c92b84388812265645993d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,6 +167,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a9104ed90add53cae71559c9a7a21576e"><td class="memItemLeft" align="right" valign="top"><a id="a9104ed90add53cae71559c9a7a21576e"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>w_GetAccessSpecifierHelper</b> (W_INTEGRAL_CONSTANT_HELPER(prune, w_internal::W_EmptyFlag))</td></tr>
 <tr class="separator:a9104ed90add53cae71559c9a7a21576e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2cd3c4f6fa8c88d53c99bb1abc9450e"><td class="memItemLeft" align="right" valign="top"><a id="ae2cd3c4f6fa8c88d53c99bb1abc9450e"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>w_GetAccessSpecifierHelper</b> (W_INTEGRAL_CONSTANT_HELPER(pruneRecursively, w_internal::W_EmptyFlag))</td></tr>
+<tr class="separator:ae2cd3c4f6fa8c88d53c99bb1abc9450e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -185,6 +191,9 @@ Friends</h2></td></tr>
 <tr class="memitem:a69a7c303804b8d204fcec3df8d381015"><td class="memItemLeft" align="right" valign="top"><a id="a69a7c303804b8d204fcec3df8d381015"></a>
 constexpr friend auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::MethodStateTag, W_ThisType ** &gt;&gt;, w_internal::MethodStateTag, W_ThisType **) -&gt; decltype((w_internal::makeMetaMethodInfo((&amp;W_ThisType::prune), w_internal::viewLiteral(&quot;prune&quot;), std::integral_constant&lt; decltype(W_OVERLOAD_RESOLVE(w_internal::W_EmptyFlag)(&amp;W_ThisType::prune)), &amp;W_ThisType::prune &gt;(), W_MACRO_MSVC_EMPTY w_internal::viewParsedLiterals&lt; w_internal::countParsedLiterals(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;)&gt;(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;), W_MACRO_MSVC_EXPAND())))</td></tr>
 <tr class="separator:a69a7c303804b8d204fcec3df8d381015"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73d763a71de91500cb712328e12bb1ed"><td class="memItemLeft" align="right" valign="top"><a id="a73d763a71de91500cb712328e12bb1ed"></a>
+constexpr friend auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::MethodStateTag, W_ThisType ** &gt;&gt;, w_internal::MethodStateTag, W_ThisType **) -&gt; decltype((w_internal::makeMetaMethodInfo((&amp;W_ThisType::pruneRecursively), w_internal::viewLiteral(&quot;pruneRecursively&quot;), std::integral_constant&lt; decltype(W_OVERLOAD_RESOLVE(w_internal::W_EmptyFlag)(&amp;W_ThisType::pruneRecursively)), &amp;W_ThisType::pruneRecursively &gt;(), W_MACRO_MSVC_EMPTY w_internal::viewParsedLiterals&lt; w_internal::countParsedLiterals(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;)&gt;(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;), W_MACRO_MSVC_EXPAND())))</td></tr>
+<tr class="separator:a73d763a71de91500cb712328e12bb1ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_selection_stack_8hpp_source.html">SelectionStack.hpp</a></li>

@@ -1,5 +1,7 @@
 var NAVTREEINDEX68 =
 {
+"structvst3_1_1_v_s_t_control_port_item.html":[12,0,53,20],
+"structvst3_1_1_v_s_t_control_port_item.html#a40f44e136d5e047674294f122fa2867b":[12,0,53,20,0],
 "structvst3_1_1_v_s_t_control_port_item.html#a8fecf5bf6aea4ad1a84fcf45a86e66ed":[12,0,53,20,1],
 "structvst3_1_1_v_s_t_float_slider.html":[12,0,53,22],
 "structvst3_1_1_vst3_data_stream.html":[12,0,53,16],

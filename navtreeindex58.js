@@ -1,5 +1,7 @@
 var NAVTREEINDEX58 =
 {
+"struct_protocols_1_1_o_s_c_specific_settings.html#aa41952fc4b9597254466ef68e8acb947":[12,0,37,47,2],
+"struct_protocols_1_1_phidget_specific_settings.html":[12,0,37,51],
 "struct_protocols_1_1_serial_specific_settings.html":[12,0,37,56],
 "struct_protocols_1_1_serial_specific_settings.html#a0175d7cfa698fb7ed00b5380bdba05a6":[12,0,37,56,1],
 "struct_protocols_1_1_serial_specific_settings.html#ae724d472ff0bc96dbb35c7b0a3d12e05":[12,0,37,56,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX58 =
 "struct_recording_1_1_record_automation_first_callback_visitor.html#a35fb166b1a363a9b2f1beb4e1a959776":[12,0,38,8,4],
 "struct_recording_1_1_record_automation_first_callback_visitor.html#a4405f7c541a3d59b83c30a4236d56348":[12,0,38,8,9],
 "struct_recording_1_1_record_automation_first_callback_visitor.html#a653341cc07f83abb4b786bcf1b29602e":[12,0,38,8,1],
-"struct_recording_1_1_record_automation_first_callback_visitor.html#a81a4b5e938315a940cda0cde0f859311":[12,0,38,8,8],
-"struct_recording_1_1_record_automation_first_callback_visitor.html#a94f6384cc433db7bc77a7c89a76b66f8":[12,0,38,8,3],
-"struct_recording_1_1_record_automation_first_callback_visitor.html#ab3905cc92846ab3c952f402cadf9d66b":[12,0,38,8,7]
+"struct_recording_1_1_record_automation_first_callback_visitor.html#a81a4b5e938315a940cda0cde0f859311":[12,0,38,8,8]
 };

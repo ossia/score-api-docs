@@ -1,5 +1,7 @@
 var NAVTREEINDEX52 =
 {
+"struct_explorer_1_1make__dataspace.html":[12,0,10,41],
+"struct_explorer_1_1make__dataspace.html#a186042e23c167f558fa0f5cc8e2179d1":[12,0,10,41,2],
 "struct_explorer_1_1make__dataspace.html#a73883926ef49386a8bed5a982e8ce0ae":[12,0,10,41,3],
 "struct_explorer_1_1make__dataspace.html#abfc7f9e815a1a9f00b77363007e2f151":[12,0,10,41,1],
 "struct_explorer_1_1make__dataspace.html#aff8bbc877049ee414d0d819bf194df2f":[12,0,10,41,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX52 =
 "struct_j_s_1_1_executor_1_1js__process.html#a7578a5939272421fb06889d043fff9d3":[12,0,22,0,2,2],
 "struct_j_s_1_1_executor_1_1js__process.html#a858f2f65646df649e404e0f0863b6a9f":[12,0,22,0,2,0],
 "struct_j_s_1_1_executor_1_1js__process.html#ab12067305e7c7548465967a57c18cca9":[12,0,22,0,2,3],
-"struct_j_s_1_1_executor_1_1js__process.html#ace99a015bb99b84af0d5022e88fe6b98":[12,0,22,0,2,4],
-"struct_j_s_1_1_language_spec.html":[12,0,22,7],
-"struct_j_s_o_n_reader_1_1assigner.html":[12,0,144,0]
+"struct_j_s_1_1_executor_1_1js__process.html#ace99a015bb99b84af0d5022e88fe6b98":[12,0,22,0,2,4]
 };
