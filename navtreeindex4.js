@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"_remove_selection_8hpp_source.html":[13,0,978],
 "_remove_slot_from_rack_8hpp_source.html":[13,0,979],
 "_remove_state_process_8hpp_source.html":[13,0,980],
 "_remove_trigger_8hpp_source.html":[13,0,981],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "_type_conversion_8hpp_source.html":[13,0,1259],
 "_undo_application_plugin_8hpp_source.html":[13,0,1260],
 "_undo_list_widget_8hpp_source.html":[13,0,1261],
-"_undo_panel_delegate_8hpp_source.html":[13,0,1262],
-"_undo_panel_factory_8hpp_source.html":[13,0,1263]
+"_undo_panel_delegate_8hpp_source.html":[13,0,1262]
 };

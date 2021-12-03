@@ -1,5 +1,10 @@
 var NAVTREEINDEX47 =
 {
+"classvst3_1_1param__queue.html#ad82e81ba3818ed89e52466c2d931d895":[12,0,53,11,9],
+"classvst3_1_1param__queue.html#aef76960c1ab5bbcb4601e69140c29666":[12,0,53,11,11],
+"classvst3_1_1param__queue.html#af4e624ef012102e1cd79750dcafd1878":[12,0,53,11,8],
+"classvst3_1_1param__queue.html#afe54b144be879add15af00b29cdfb6ad":[12,0,53,11,10],
+"classvst3_1_1param__queue.html#aff49391ce7dfb4f1ba7574fb1de4874c":[12,0,53,11,4],
 "classvst3_1_1vst__node.html":[12,0,53,17],
 "classvst3_1_1vst__node.html#a27a44805b02dd9736380791aa4e4afac":[12,0,53,17,8],
 "classvst3_1_1vst__node.html#a31e165e79a428a208be78d242f21d444":[12,0,53,17,6],
@@ -176,8 +181,8 @@ var NAVTREEINDEX47 =
 "data_structures_8hpp_source.html":[13,0,265],
 "element_finding_helper_8hpp_source.html":[13,0,359],
 "files.html":[13,0],
-"functions.html":[12,3,0,0],
 "functions.html":[12,3,0],
+"functions.html":[12,3,0,0],
 "functions_b.html":[12,3,0,1],
 "functions_c.html":[12,3,0,2],
 "functions_d.html":[12,3,0,3],
@@ -231,7 +236,7 @@ var NAVTREEINDEX47 =
 "lib_2core_2documentation_2commands_8hpp_source.html":[13,0,160],
 "lib_2core_2presenter_2_presenter_8hpp_source.html":[13,0,862],
 "lib_2core_2settings_2_settings_8hpp_source.html":[13,0,1130],
-"lib_2core_2view_2_window_8hpp_source.html":[13,0,1329],
+"lib_2core_2view_2_window_8hpp_source.html":[13,0,1330],
 "lib_2score_2model_2_component_8hpp_source.html":[13,0,183],
 "lib_2score_2plugins_2documentdelegate_2plugin_2_document_plugin_8hpp_source.html":[13,0,317],
 "lib_2score_2tools_2_metadata_8hpp_source.html":[13,0,664],
@@ -241,13 +246,8 @@ var NAVTREEINDEX47 =
 "mvp_8hpp_source.html":[13,0,758],
 "namespace_automation.html":[11,0,0],
 "namespace_automation.html":[12,0,1],
-"namespace_curve.html":[11,0,1],
 "namespace_curve.html":[12,0,5],
+"namespace_curve.html":[11,0,1],
 "namespace_device.html":[12,0,7],
-"namespace_device.html":[11,0,2],
-"namespace_engine.html":[11,0,3],
-"namespace_engine.html":[12,0,8],
-"namespace_engine_1_1_network.html":[11,0,3,0],
-"namespace_execution.html":[12,0,9],
-"namespace_execution.html":[11,0,4]
+"namespace_device.html":[11,0,2]
 };

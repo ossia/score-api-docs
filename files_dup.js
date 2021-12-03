@@ -1279,6 +1279,7 @@ var files_dup =
     [ "ValidityChecker.hpp", "_validity_checker_8hpp_source.html", null ],
     [ "Value.hpp", "_value_8hpp_source.html", null ],
     [ "ValueConversion.hpp", "_value_conversion_8hpp_source.html", null ],
+    [ "ValueFilter.hpp", "_value_filter_8hpp_source.html", null ],
     [ "ValueInletItem.hpp", "_value_inlet_item_8hpp_source.html", null ],
     [ "ValueOutletItem.hpp", "_value_outlet_item_8hpp_source.html", null ],
     [ "ValueParser.hpp", "_value_parser_8hpp_source.html", null ],

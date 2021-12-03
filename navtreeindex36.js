@@ -1,5 +1,10 @@
 var NAVTREEINDEX36 =
 {
+"class_scenario_1_1_tool_menu_actions.html":[12,0,42,291],
+"class_scenario_1_1_tool_menu_actions.html#ab1c27f8ad76628213d2e202465b44116":[12,0,42,291,1],
+"class_scenario_1_1_tool_menu_actions.html#aee0c226552694d23d29ae05b17370646":[12,0,42,291,0],
+"class_scenario_1_1_tool_palette.html":[12,0,42,292],
+"class_scenario_1_1_tool_palette.html#a0d6e84cfa8db34ad89893978e03af51b":[12,0,42,292,5],
 "class_scenario_1_1_tool_palette.html#a30097f0786767027228f49a939e297f1":[12,0,42,292,3],
 "class_scenario_1_1_tool_palette.html#a3fca38c09c92dabc2f2223606264d6b6":[12,0,42,292,10],
 "class_scenario_1_1_tool_palette.html#a483ae485296c32abe272cb4c5559695f":[12,0,42,292,4],
@@ -88,8 +93,8 @@ var NAVTREEINDEX36 =
 "class_scenario_1_1_z_pos.html#aa71d6d7cf1018b951a40bd79cd93f09facb2635ec01d1ce191f8946b7428aa73b":[12,0,42,315,1,4],
 "class_script.html":[12,0,352],
 "class_script.html#a19e20e4aedccb7850d1430bfea3e1448":[12,0,352,17],
-"class_script.html#a29f6ce42a6600f7f0428ef4115300f48":[12,0,352,13],
 "class_script.html#a29f6ce42a6600f7f0428ef4115300f48":[12,0,352,14],
+"class_script.html#a29f6ce42a6600f7f0428ef4115300f48":[12,0,352,13],
 "class_script.html#a2ff42102760624c46f8584510ad738ac":[12,0,352,0],
 "class_script.html#a3e4c93ed51a903aaa40f2c6d39052419":[12,0,352,9],
 "class_script.html#a41a041bab04cc56ebf8e0d4169022e89":[12,0,352,6],
@@ -244,10 +249,5 @@ var NAVTREEINDEX36 =
 "class_spline_1_1_curve_item.html#acb0c1ffd2c44e68e8ee3d2ab7a9c426b":[12,0,45,2,2],
 "class_spline_1_1_curve_item.html#ad62138b379369c408e201f23108b3c24":[12,0,45,2,6],
 "class_spline_1_1_curve_item.html#ae148f567a57e13e5c1da636dfdf71eab":[12,0,45,2,21],
-"class_spline_1_1_curve_item.html#ae6df2047ebc920b6ab5d239c1d509ef8":[12,0,45,2,35],
-"class_spline_1_1_curve_item.html#aeab7d5b0281a15bb642c23a81b575426":[12,0,45,2,17],
-"class_spline_1_1_curve_item.html#af411e10ca4e1a52d48fed9801777235a":[12,0,45,2,29],
-"class_spline_1_1_curve_item.html#af84e9d8fe398dacec9f2c4450107fb59":[12,0,45,2,40],
-"class_spline_1_1_generator_dialog.html":[12,0,45,3],
-"class_spline_1_1_generator_dialog.html#a0faf9bb67bcb74d809369dd71a4cecf1":[12,0,45,3,2]
+"class_spline_1_1_curve_item.html#ae6df2047ebc920b6ab5d239c1d509ef8":[12,0,45,2,35]
 };

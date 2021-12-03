@@ -1,5 +1,10 @@
 var NAVTREEINDEX26 =
 {
+"class_q_map.html":[12,0,203],
+"class_qt_diagnostic_consumer.html":[12,0,306],
+"class_qt_diagnostic_consumer.html#a251fc75218cb12742cb3832de4cede64":[12,0,306,0],
+"class_qt_diagnostic_consumer.html#ab8a666f65c2592f5bebd5673a83a559a":[12,0,306,1],
+"class_random_name_provider.html":[12,0,307],
 "class_reader.html":[12,0,308],
 "class_recording_1_1_application_plugin.html":[12,0,38,0],
 "class_recording_1_1_application_plugin.html#a4207bafdf2378184dc9231ba83cf3fce":[12,0,38,0,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX26 =
 "class_scenario_1_1_click_on_end_time_sync___transition.html":[12,0,42,22],
 "class_scenario_1_1_click_on_end_time_sync___transition.html#a2cbc99d68be271acbabbdc8d637c2e30":[12,0,42,22,1],
 "class_scenario_1_1_click_on_end_time_sync___transition.html#a8c95b8b1693240eadcb2578e6b60a920":[12,0,42,22,0],
-"class_scenario_1_1_click_on_slot_handle___transition.html":[12,0,42,24],
-"class_scenario_1_1_click_on_slot_handle___transition.html#a077e22b8cfd9596aeb9d9a4f02ea017f":[12,0,42,24,2],
-"class_scenario_1_1_click_on_slot_handle___transition.html#a31b4447ff56066db3045ddcd7a419c79":[12,0,42,24,0],
-"class_scenario_1_1_click_on_slot_handle___transition.html#a700fbf3a8bd3ce8923c61cbf3b0e8426":[12,0,42,24,1],
-"class_scenario_1_1_clickable_label_item.html":[12,0,42,19],
-"class_scenario_1_1_clickable_label_item.html#a10b031fe61836ce5478152b69da297d3":[12,0,42,19,6]
+"class_scenario_1_1_click_on_slot_handle___transition.html":[12,0,42,24]
 };

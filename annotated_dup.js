@@ -572,6 +572,9 @@ var annotated_dup =
       ] ],
       [ "Quantifier", null, [
         [ "Node", "struct_nodes_1_1_quantifier_1_1_node.html", "struct_nodes_1_1_quantifier_1_1_node" ]
+      ] ],
+      [ "ValueFilter", null, [
+        [ "Node", "struct_nodes_1_1_value_filter_1_1_node.html", "struct_nodes_1_1_value_filter_1_1_node" ]
       ] ]
     ] ],
     [ "ossia", null, [

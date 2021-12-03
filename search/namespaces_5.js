@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['inspector_5284',['Inspector',['../namespace_inspector.html',1,'']]]
+  ['inspector_5286',['Inspector',['../namespace_inspector.html',1,'']]]
 ];
