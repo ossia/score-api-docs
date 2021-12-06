@@ -1,16 +1,16 @@
 var searchData=
 [
-  ['kinect2_5fcamera_3785',['kinect2_camera',['../struct_gfx_1_1kinect2__camera.html',1,'Gfx']]],
-  ['kinect2_5fdecoder_3786',['kinect2_decoder',['../class_gfx_1_1kinect2__decoder.html',1,'Gfx']]],
-  ['kinect2_5fdevice_3787',['kinect2_device',['../class_gfx_1_1kinect2__device.html',1,'Gfx']]],
-  ['kinect2_5fnode_3788',['kinect2_node',['../class_gfx_1_1kinect2__node.html',1,'Gfx']]],
-  ['kinect2_5fparameter_3789',['kinect2_parameter',['../class_gfx_1_1kinect2__parameter.html',1,'Gfx']]],
-  ['kinect2_5fprotocol_3790',['kinect2_protocol',['../class_gfx_1_1kinect2__protocol.html',1,'Gfx']]],
-  ['kinect2_5fsettings_3791',['kinect2_settings',['../struct_gfx_1_1kinect2__settings.html',1,'Gfx']]],
-  ['kinect2context_3792',['Kinect2Context',['../struct_gfx_1_1_kinect2_context.html',1,'Gfx']]],
-  ['kinect2device_3793',['Kinect2Device',['../class_gfx_1_1_kinect2_device.html',1,'Gfx']]],
-  ['kinect2enumerator_3794',['Kinect2Enumerator',['../class_gfx_1_1_kinect2_enumerator.html',1,'Gfx']]],
-  ['kinect2protocolfactory_3795',['Kinect2ProtocolFactory',['../class_gfx_1_1_kinect2_protocol_factory.html',1,'Gfx']]],
-  ['kinect2settings_3796',['Kinect2Settings',['../struct_gfx_1_1_kinect2_settings.html',1,'Gfx']]],
-  ['kinect2settingswidget_3797',['Kinect2SettingsWidget',['../class_gfx_1_1_kinect2_settings_widget.html',1,'Gfx']]]
+  ['kinect2_5fcamera_3790',['kinect2_camera',['../struct_gfx_1_1kinect2__camera.html',1,'Gfx']]],
+  ['kinect2_5fdecoder_3791',['kinect2_decoder',['../class_gfx_1_1kinect2__decoder.html',1,'Gfx']]],
+  ['kinect2_5fdevice_3792',['kinect2_device',['../class_gfx_1_1kinect2__device.html',1,'Gfx']]],
+  ['kinect2_5fnode_3793',['kinect2_node',['../class_gfx_1_1kinect2__node.html',1,'Gfx']]],
+  ['kinect2_5fparameter_3794',['kinect2_parameter',['../class_gfx_1_1kinect2__parameter.html',1,'Gfx']]],
+  ['kinect2_5fprotocol_3795',['kinect2_protocol',['../class_gfx_1_1kinect2__protocol.html',1,'Gfx']]],
+  ['kinect2_5fsettings_3796',['kinect2_settings',['../struct_gfx_1_1kinect2__settings.html',1,'Gfx']]],
+  ['kinect2context_3797',['Kinect2Context',['../struct_gfx_1_1_kinect2_context.html',1,'Gfx']]],
+  ['kinect2device_3798',['Kinect2Device',['../class_gfx_1_1_kinect2_device.html',1,'Gfx']]],
+  ['kinect2enumerator_3799',['Kinect2Enumerator',['../class_gfx_1_1_kinect2_enumerator.html',1,'Gfx']]],
+  ['kinect2protocolfactory_3800',['Kinect2ProtocolFactory',['../class_gfx_1_1_kinect2_protocol_factory.html',1,'Gfx']]],
+  ['kinect2settings_3801',['Kinect2Settings',['../struct_gfx_1_1_kinect2_settings.html',1,'Gfx']]],
+  ['kinect2settingswidget_3802',['Kinect2SettingsWidget',['../class_gfx_1_1_kinect2_settings_widget.html',1,'Gfx']]]
 ];

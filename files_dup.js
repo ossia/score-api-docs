@@ -596,6 +596,7 @@ var files_dup =
     [ "LeftBrace.hpp", "_left_brace_8hpp_source.html", null ],
     [ "LFO.hpp", "_l_f_o_8hpp_source.html", null ],
     [ "Libav.hpp", "_libav_8hpp_source.html", null ],
+    [ "LibmapperClientDevice.hpp", "_libmapper_client_device_8hpp_source.html", null ],
     [ "score-plugin-faust/Faust/Library.hpp", "score-plugin-faust_2_faust_2_library_8hpp_source.html", null ],
     [ "score-plugin-gfx/Gfx/Filter/Library.hpp", "score-plugin-gfx_2_gfx_2_filter_2_library_8hpp_source.html", null ],
     [ "score-plugin-lv2/LV2/Library.hpp", "score-plugin-lv2_2_l_v2_2_library_8hpp_source.html", null ],
