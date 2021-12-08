@@ -1,5 +1,15 @@
 var NAVTREEINDEX26 =
 {
+"class_protocols_1_1_w_s_protocol_settings_widget.html#a1527216cf9d87d10dfbf3a4b2beee8c5":[12,0,37,75,1],
+"class_protocols_1_1_w_s_protocol_settings_widget.html#a19f1e7ee4ed75d725870fc57ff0845b8":[12,0,37,75,6],
+"class_protocols_1_1_w_s_protocol_settings_widget.html#a40fa88d658d06b374dde0f5ec1e07cf9":[12,0,37,75,2],
+"class_protocols_1_1_w_s_protocol_settings_widget.html#a57bd97d0093b82ee30ea96e9131f585a":[12,0,37,75,0],
+"class_protocols_1_1_w_s_protocol_settings_widget.html#a6f065fc0b22efcc5d103f79f7ea895a7":[12,0,37,75,3],
+"class_protocols_1_1_w_s_protocol_settings_widget.html#aa4b9ec2452f8ab8dda02c8c4365e93b0":[12,0,37,75,4],
+"class_protocols_1_1_w_s_protocol_settings_widget.html#af3ef13cd37a34a9e3c406242b0b54ce2":[12,0,37,75,7],
+"class_protocols_1_1_websocket_client_widget.html":[12,0,37,67],
+"class_protocols_1_1_websocket_client_widget.html#a43a39b558da096ae636c25bc44e9ce79":[12,0,37,67,1],
+"class_protocols_1_1_websocket_client_widget.html#ab552fa19082414b9c16eb945778eb42c":[12,0,37,67,2],
 "class_protocols_1_1_websocket_client_widget.html#adc5a45775f3ca39d3b6f00e7b90d46ff":[12,0,37,67,0],
 "class_protocols_1_1_websocket_server_widget.html":[12,0,37,68],
 "class_protocols_1_1_websocket_server_widget.html#a0f8897f3e3bb0aa3594a59c92219c78e":[12,0,37,68,1],
@@ -239,15 +249,5 @@ var NAVTREEINDEX26 =
 "class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#af03495c725f54ecff7311091132d2e93":[12,0,42,11,5],
 "class_scenario_1_1_base_scenario_displayed_elements_tool_palette_factory.html":[12,0,42,12],
 "class_scenario_1_1_base_scenario_displayed_elements_tool_palette_factory.html#a67ba46884760bc9cb10b10fa3042bed9":[12,0,42,12,1],
-"class_scenario_1_1_base_scenario_displayed_elements_tool_palette_factory.html#ac80d257264906494d4fd1a5cbd7d819f":[12,0,42,12,0],
-"class_scenario_1_1_base_scenario_interval_resizer.html":[12,0,42,13],
-"class_scenario_1_1_c_s_p_coherency_checker_interface.html":[12,0,42,43],
-"class_scenario_1_1_c_s_p_coherency_checker_interface.html#a3093a5878aa7e3b2b7117f712521e493":[12,0,42,43,0],
-"class_scenario_1_1_c_s_p_coherency_checker_interface.html#ae592ad640157425483fcd1e1a37440ff":[12,0,42,43,1],
-"class_scenario_1_1_c_s_p_coherency_checker_list.html":[12,0,42,44],
-"class_scenario_1_1_c_s_p_coherency_checker_list.html#a97c263dea263a1cb887f333774baafe5":[12,0,42,44,0],
-"class_scenario_1_1_central_interval_display.html":[12,0,42,17],
-"class_scenario_1_1_central_interval_display.html#a1fea0bbfb4264e7ac53fbdbd23eff53f":[12,0,42,17,0],
-"class_scenario_1_1_central_interval_display.html#a21070cf4dfd51b16e84128a539f1d566":[12,0,42,17,1],
-"class_scenario_1_1_central_interval_display.html#a3d82d1f634490c76b28df9766b41ec5c":[12,0,42,17,7]
+"class_scenario_1_1_base_scenario_displayed_elements_tool_palette_factory.html#ac80d257264906494d4fd1a5cbd7d819f":[12,0,42,12,0]
 };

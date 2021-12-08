@@ -2,7 +2,7 @@ var class_explorer_1_1_device_explorer_model =
 [
     [ "DeviceExplorerModel", "class_explorer_1_1_device_explorer_model.html#a23d8dfae1d7debd83bb02a4c4bc28cca", null ],
     [ "~DeviceExplorerModel", "class_explorer_1_1_device_explorer_model.html#a7f169ec9bdc3bdcb62ba480df2997736", null ],
-    [ "addAddress", "class_explorer_1_1_device_explorer_model.html#af501094e66d6cec6cc7bac32ef1cd9f9", null ],
+    [ "addAddress", "class_explorer_1_1_device_explorer_model.html#a945dda9dd063c31674af2c5e3fd43062", null ],
     [ "addDevice", "class_explorer_1_1_device_explorer_model.html#af33a30fce56720092f152a8250b7cf97", null ],
     [ "addDevice", "class_explorer_1_1_device_explorer_model.html#a1c71f605d19b6303c0dce4a3dfae09db", null ],
     [ "addNode", "class_explorer_1_1_device_explorer_model.html#a00d68dfc0eceade63fbd3f8dc5fd7f44", null ],

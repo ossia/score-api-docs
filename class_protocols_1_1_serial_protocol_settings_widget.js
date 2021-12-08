@@ -6,5 +6,6 @@ var class_protocols_1_1_serial_protocol_settings_widget =
     [ "setSettings", "class_protocols_1_1_serial_protocol_settings_widget.html#a049f17d2a844ba380e1f13e6a0364a34", null ],
     [ "m_codeEdit", "class_protocols_1_1_serial_protocol_settings_widget.html#a6c5156b46a65086c463c1d7ec867be88", null ],
     [ "m_name", "class_protocols_1_1_serial_protocol_settings_widget.html#aac033ccc8350edb20664a4eaa3929275", null ],
-    [ "m_port", "class_protocols_1_1_serial_protocol_settings_widget.html#ae211d01ba3c5efd1d561f236857540b2", null ]
+    [ "m_port", "class_protocols_1_1_serial_protocol_settings_widget.html#ae211d01ba3c5efd1d561f236857540b2", null ],
+    [ "m_rate", "class_protocols_1_1_serial_protocol_settings_widget.html#a6d5be3af1e2b8b89c5cc2b920c3cc07f", null ]
 ];

@@ -132,7 +132,7 @@ static const constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><
 static const constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>kind</b> = Process::ProcessCategory::Mapping</td></tr>
 <tr class="separator:a01952ece15efaaafe7d0774d269fc479"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02bed1623d03f2ea85bc49154e1d9d1a"><td class="memItemLeft" align="right" valign="top"><a id="a02bed1623d03f2ea85bc49154e1d9d1a"></a>
-static const constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>description</b> = &quot;Filter and limit noisy value stream&quot;</td></tr>
+static const constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>description</b> = &quot;Filter noisy value stream&quot;</td></tr>
 <tr class="separator:a02bed1623d03f2ea85bc49154e1d9d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c927ea183181ab4c4dd413ee6daf3cc"><td class="memItemLeft" align="right" valign="top"><a id="a3c927ea183181ab4c4dd413ee6daf3cc"></a>
 static const uuid_constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>uuid</b> = make_uuid(&quot;809c014d-7d02-45dc-8849-de7a7db5fe67&quot;)</td></tr>
@@ -171,18 +171,14 @@ static const constexpr <a class="el" href="namespace_process.html#a592bb361ebf8f
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= tuplet::make_tuple(</div>
-<div class="line">          <a class="code" href="struct_control_1_1_toggle.html">Control::Toggle</a>{<span class="stringliteral">&quot;smooth&quot;</span>, <span class="keyword">true</span>},</div>
-<div class="line">          Control::make_enum(</div>
+<div class="line">        Control::make_enum(</div>
 <div class="line">            <span class="stringliteral">&quot;Type&quot;</span>,</div>
 <div class="line">            0U,</div>
 <div class="line">            ossia::make_array(<span class="stringliteral">&quot;OneEuro&quot;</span>, <span class="stringliteral">&quot;LowPass&quot;</span>, <span class="stringliteral">&quot;Average&quot;</span>, <span class="stringliteral">&quot;Median&quot;</span>)),</div>
-<div class="line">          <a class="code" href="struct_control_1_1_float_control.html">Control::FloatKnob</a>{<span class="stringliteral">&quot;amount&quot;</span>, 0., 1., 0.1},</div>
-<div class="line">          <a class="code" href="struct_control_1_1_float_control.html">Control::FloatSlider</a>{<span class="stringliteral">&quot;freq (1e/LP)&quot;</span>, 0., 300., 120.},</div>
-<div class="line">          <a class="code" href="struct_control_1_1_float_control.html">Control::FloatSlider</a>{<span class="stringliteral">&quot;cutoff (1e/LP)&quot;</span>, 0., 10., 1.},</div>
-<div class="line">          <a class="code" href="struct_control_1_1_float_control.html">Control::FloatSlider</a>{<span class="stringliteral">&quot;beta (1e only)&quot;</span>, 0., 10., 1.},</div>
-<div class="line">          <a class="code" href="struct_control_1_1_toggle.html">Control::Toggle</a>{<span class="stringliteral">&quot;rate&quot;</span>, <span class="keyword">false</span>},</div>
-<div class="line">          Control::Widgets::QuantificationChooser(),</div>
-<div class="line">          <a class="code" href="struct_control_1_1_int_slider.html">Control::IntSlider</a>{<span class="stringliteral">&quot;ms.&quot;</span>, 0, 1000, 10})</div>
+<div class="line">        <a class="code" href="struct_control_1_1_float_control.html">Control::FloatKnob</a>{<span class="stringliteral">&quot;Amount&quot;</span>, 0., 1., 0.1},</div>
+<div class="line">        <a class="code" href="struct_control_1_1_float_control.html">Control::FloatSlider</a>{<span class="stringliteral">&quot;Freq (1e/LP)&quot;</span>, 0., 300., 120.},</div>
+<div class="line">        <a class="code" href="struct_control_1_1_float_control.html">Control::FloatSlider</a>{<span class="stringliteral">&quot;Cutoff (1e/LP)&quot;</span>, 0., 10., 1.},</div>
+<div class="line">        <a class="code" href="struct_control_1_1_float_control.html">Control::FloatSlider</a>{<span class="stringliteral">&quot;Beta (1e only)&quot;</span>, 0., 10., 1.})</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -192,8 +188,6 @@ static const constexpr <a class="el" href="namespace_process.html#a592bb361ebf8f
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astruct_control_1_1_float_control_html"><div class="ttname"><a href="struct_control_1_1_float_control.html">Control::FloatControl</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Control/Widgets.hpp:72</div></div>
-<div class="ttc" id="astruct_control_1_1_toggle_html"><div class="ttname"><a href="struct_control_1_1_toggle.html">Control::Toggle</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Control/Widgets.hpp:421</div></div>
-<div class="ttc" id="astruct_control_1_1_int_slider_html"><div class="ttname"><a href="struct_control_1_1_int_slider.html">Control::IntSlider</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Control/Widgets.hpp:245</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -7,6 +7,7 @@ var class_explorer_1_1_node_update_proxy =
     [ "addAddress", "class_explorer_1_1_node_update_proxy.html#aa1f6cd5ce225205177532926150d5327", null ],
     [ "addDevice", "class_explorer_1_1_node_update_proxy.html#ae981dde5847e3b9b58b93883b2d7852e", null ],
     [ "addLocalAddress", "class_explorer_1_1_node_update_proxy.html#a777cbe3f4033a348a2b5523ad05cb0eb", null ],
+    [ "addLocalAddresses", "class_explorer_1_1_node_update_proxy.html#afd6cfef8ae3ebcdd43c625b296d0c9b4", null ],
     [ "addLocalNode", "class_explorer_1_1_node_update_proxy.html#af9eafcae4fd12f13d595cd3493fd8ae4", null ],
     [ "addNode", "class_explorer_1_1_node_update_proxy.html#acc225eeaeb1e34adc55755a6bc79cba1", null ],
     [ "loadDevice", "class_explorer_1_1_node_update_proxy.html#abed9f21de67a595f4abe2e86a3db597a", null ],

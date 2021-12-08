@@ -1,5 +1,14 @@
 var NAVTREEINDEX25 =
 {
+"class_process_state_data_interface.html#a46ec9c95a84b86047bb478231300da8f":[12,0,200,0],
+"class_process_state_data_interface.html#a4efb71b7d91fe681fd2769663ed50ab2":[12,0,200,3],
+"class_process_state_data_interface.html#a6680a70b488cf5282f33d0f74eb8140c":[12,0,200,2],
+"class_process_state_data_interface.html#a90b448c8b7009e11ad9a367340ffc08c":[12,0,200,4],
+"class_process_state_data_interface.html#ab0ace2ff661ff029fa7e5b1a0f594b25":[12,0,200,6],
+"class_process_state_data_interface.html#ae55c5121c3308809fa4a47493a90ef8c":[12,0,200,7],
+"class_process_state_data_interface.html#aee07d1a041cf865a60c37f59c734f6a7":[12,0,200,5],
+"class_progress_bar.html":[12,0,201],
+"class_progress_bar.html#a4c416634dfcde6b4d7de28ee1cd2eb35":[12,0,201,0],
 "class_progress_bar.html#a51a5bf19778972df7ede1c6f3d1ea8d8":[12,0,201,1],
 "class_progress_bar.html#ae50993b1b8b12e32c1a1558f104e7999":[12,0,201,2],
 "class_protocols_1_1_add_fixture_dialog.html":[12,0,37,2],
@@ -198,6 +207,7 @@ var NAVTREEINDEX25 =
 "class_protocols_1_1_serial_protocol_settings_widget.html#a049f17d2a844ba380e1f13e6a0364a34":[12,0,37,60,3],
 "class_protocols_1_1_serial_protocol_settings_widget.html#a1b2f50292d5a4e1f0e7b8e07ba97f41c":[12,0,37,60,2],
 "class_protocols_1_1_serial_protocol_settings_widget.html#a6c5156b46a65086c463c1d7ec867be88":[12,0,37,60,4],
+"class_protocols_1_1_serial_protocol_settings_widget.html#a6d5be3af1e2b8b89c5cc2b920c3cc07f":[12,0,37,60,7],
 "class_protocols_1_1_serial_protocol_settings_widget.html#a7035e05518fa5724fa0daef65ec1cb7c":[12,0,37,60,1],
 "class_protocols_1_1_serial_protocol_settings_widget.html#a8799c2e0a6982e42f3dac75fb3d27637":[12,0,37,60,0],
 "class_protocols_1_1_serial_protocol_settings_widget.html#aac033ccc8350edb20664a4eaa3929275":[12,0,37,60,5],
@@ -239,15 +249,5 @@ var NAVTREEINDEX25 =
 "class_protocols_1_1_w_s_device.html#aecc3a74898002639b1f0b7f22c6d7743":[12,0,37,73,0],
 "class_protocols_1_1_w_s_protocol_factory.html":[12,0,37,74],
 "class_protocols_1_1_w_s_protocol_settings_widget.html":[12,0,37,75],
-"class_protocols_1_1_w_s_protocol_settings_widget.html#a018eeca75a56e1eb4b81e84548900fe4":[12,0,37,75,5],
-"class_protocols_1_1_w_s_protocol_settings_widget.html#a1527216cf9d87d10dfbf3a4b2beee8c5":[12,0,37,75,1],
-"class_protocols_1_1_w_s_protocol_settings_widget.html#a19f1e7ee4ed75d725870fc57ff0845b8":[12,0,37,75,6],
-"class_protocols_1_1_w_s_protocol_settings_widget.html#a40fa88d658d06b374dde0f5ec1e07cf9":[12,0,37,75,2],
-"class_protocols_1_1_w_s_protocol_settings_widget.html#a57bd97d0093b82ee30ea96e9131f585a":[12,0,37,75,0],
-"class_protocols_1_1_w_s_protocol_settings_widget.html#a6f065fc0b22efcc5d103f79f7ea895a7":[12,0,37,75,3],
-"class_protocols_1_1_w_s_protocol_settings_widget.html#aa4b9ec2452f8ab8dda02c8c4365e93b0":[12,0,37,75,4],
-"class_protocols_1_1_w_s_protocol_settings_widget.html#af3ef13cd37a34a9e3c406242b0b54ce2":[12,0,37,75,7],
-"class_protocols_1_1_websocket_client_widget.html":[12,0,37,67],
-"class_protocols_1_1_websocket_client_widget.html#a43a39b558da096ae636c25bc44e9ce79":[12,0,37,67,1],
-"class_protocols_1_1_websocket_client_widget.html#ab552fa19082414b9c16eb945778eb42c":[12,0,37,67,2]
+"class_protocols_1_1_w_s_protocol_settings_widget.html#a018eeca75a56e1eb4b81e84548900fe4":[12,0,37,75,5]
 };

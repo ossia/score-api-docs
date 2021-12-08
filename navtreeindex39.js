@@ -1,5 +1,15 @@
 var NAVTREEINDEX39 =
 {
+"class_vec4f_value_type.html#a2b6fe9a6dbcdaa40bdc577ceef18d381":[12,0,498,1],
+"class_vec4f_value_type.html#a38652a9fb1188b0b1944663ccf426980":[12,0,498,13],
+"class_vec4f_value_type.html#a3c62eb45e2bd9476de90bb04a92fc575":[12,0,498,12],
+"class_vec4f_value_type.html#a3e3c5afec6ca4f84b2db7e2d45b05e44":[12,0,498,9],
+"class_vec4f_value_type.html#a4064cb51dea35f393a8d172355391a51":[12,0,498,33],
+"class_vec4f_value_type.html#a41aaf55d7568fa58406ad0f1511304ec":[12,0,498,26],
+"class_vec4f_value_type.html#a4cb84a7851f50b2df9dbbf505d4b08ef":[12,0,498,8],
+"class_vec4f_value_type.html#a604c55370c1205e2890dc2857d42652b":[12,0,498,17],
+"class_vec4f_value_type.html#a6469c4acd13862420b3409dc344ed9ab":[12,0,498,3],
+"class_vec4f_value_type.html#a6c1c0679a9795ccbd24588b02bc51107":[12,0,498,16],
 "class_vec4f_value_type.html#a7c8477db70eb444d75f2559305b659b9":[12,0,498,21],
 "class_vec4f_value_type.html#a7de5f7e0d9043bf2eaa61fe8dcbd870b":[12,0,498,27],
 "class_vec4f_value_type.html#a83a303c5789ff29daf011d47dc06d68e":[12,0,498,37],
@@ -239,15 +249,5 @@ var NAVTREEINDEX39 =
 "classscore_1_1_arrow_dialog.html#a2e22bd9fdabdc9c4d11c5f0db3119eff":[12,0,43,26,1],
 "classscore_1_1_arrow_dialog.html#af3c68d1d7c8e25404358c06722004135":[12,0,43,26,0],
 "classscore_1_1_background_item.html":[12,0,43,27],
-"classscore_1_1_background_item.html#a11a18d0701c7f4519a67597a37ce26a1":[12,0,43,27,3],
-"classscore_1_1_background_item.html#a11ad2b1351e3fbe77bb99d6b96fe2849":[12,0,43,27,2],
-"classscore_1_1_background_item.html#a7cccdcfbad5d705552ff558aebc6a65f":[12,0,43,27,1],
-"classscore_1_1_background_item.html#a892003a2cc2876eaa8f48ee8b7be1703":[12,0,43,27,4],
-"classscore_1_1_background_item.html#a896a6097fa206ff79feb4098adba0222":[12,0,43,27,0],
-"classscore_1_1_bottom_toolbar_widget.html":[12,0,43,29],
-"classscore_1_1_bottom_toolbar_widget.html#a5b53f6f45a952121c9caa5778ae1c93d":[12,0,43,29,0],
-"classscore_1_1_color_bang.html":[12,0,43,32],
-"classscore_1_1_color_bang.html#a1a00f1680d3e7fdc091175e8a5dbb7c9":[12,0,43,32,3],
-"classscore_1_1_color_bang.html#a21c21fe8b13e64ea21c12a244504c2b8":[12,0,43,32,0],
-"classscore_1_1_color_bang.html#a7fee11d6003a8e85e8c8262ed26bbae2":[12,0,43,32,2]
+"classscore_1_1_background_item.html#a11a18d0701c7f4519a67597a37ce26a1":[12,0,43,27,3]
 };

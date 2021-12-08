@@ -141,6 +141,7 @@ var annotated_dup =
     [ "Explorer", null, [
       [ "Command", null, [
         [ "AddAddress", "class_explorer_1_1_command_1_1_add_address.html", "class_explorer_1_1_command_1_1_add_address" ],
+        [ "AddAddresses", "class_explorer_1_1_command_1_1_add_addresses.html", null ],
         [ "AddWholeAddress", "class_explorer_1_1_command_1_1_add_whole_address.html", "class_explorer_1_1_command_1_1_add_whole_address" ],
         [ "LoadDevice", "class_explorer_1_1_command_1_1_load_device.html", "class_explorer_1_1_command_1_1_load_device" ],
         [ "ReloadWholeDevice", "class_explorer_1_1_command_1_1_reload_whole_device.html", "class_explorer_1_1_command_1_1_reload_whole_device" ],
@@ -164,6 +165,7 @@ var annotated_dup =
       ] ],
       [ "AccessModeComboBox", "class_explorer_1_1_access_mode_combo_box.html", "class_explorer_1_1_access_mode_combo_box" ],
       [ "AddressBoolSettingsWidget", "class_explorer_1_1_address_bool_settings_widget.html", "class_explorer_1_1_address_bool_settings_widget" ],
+      [ "AddressBraceExpressionValidator", "class_explorer_1_1_address_brace_expression_validator.html", "class_explorer_1_1_address_brace_expression_validator" ],
       [ "AddressCharSettingsWidget", "class_explorer_1_1_address_char_settings_widget.html", "class_explorer_1_1_address_char_settings_widget" ],
       [ "AddressEditDialog", "class_explorer_1_1_address_edit_dialog.html", "class_explorer_1_1_address_edit_dialog" ],
       [ "AddressImpulseSettingsWidget", "class_explorer_1_1_address_impulse_settings_widget.html", "class_explorer_1_1_address_impulse_settings_widget" ],
@@ -572,6 +574,9 @@ var annotated_dup =
       ] ],
       [ "Quantifier", null, [
         [ "Node", "struct_nodes_1_1_quantifier_1_1_node.html", "struct_nodes_1_1_quantifier_1_1_node" ]
+      ] ],
+      [ "RateLimiter", null, [
+        [ "Node", "struct_nodes_1_1_rate_limiter_1_1_node.html", "struct_nodes_1_1_rate_limiter_1_1_node" ]
       ] ],
       [ "ValueFilter", null, [
         [ "Node", "struct_nodes_1_1_value_filter_1_1_node.html", "struct_nodes_1_1_value_filter_1_1_node" ]

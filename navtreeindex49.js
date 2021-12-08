@@ -1,6 +1,16 @@
 var NAVTREEINDEX49 =
 {
-"statemachines_8hpp_source.html":[13,0,1184],
+"score__plugin__remotecontrol_8hpp_source.html":[13,0,1083],
+"score__plugin__scenario_8hpp_source.html":[13,0,1084],
+"score__plugin__spline3d_8hpp_source.html":[13,0,1086],
+"score__plugin__spline_8hpp_source.html":[13,0,1085],
+"score__plugin__transport_8hpp_source.html":[13,0,1087],
+"score__plugin__ui_8hpp_source.html":[13,0,1088],
+"score__plugin__vst3_8hpp_source.html":[13,0,1090],
+"score__plugin__vst_8hpp_source.html":[13,0,1089],
+"scoreinterfaces_8hpp_source.html":[13,0,1092],
+"serialization_8hpp_source.html":[13,0,1114],
+"statemachines_8hpp_source.html":[13,0,1185],
 "struct_array_entity_serializer.html":[12,0,62],
 "struct_array_serializer.html":[12,0,63],
 "struct_atom_buffer.html":[12,0,64],
@@ -239,15 +249,5 @@ var NAVTREEINDEX49 =
 "struct_control_1_1_int_spin_box.html#a4f934d716d40b2c77cbfc2ea95d75226":[12,0,3,29,5],
 "struct_control_1_1_int_spin_box.html#a672c03664bf22f259e12053340b9b4c3":[12,0,3,29,6],
 "struct_control_1_1_int_spin_box.html#a737daf1ff7bb4358c19869b81ae708a5":[12,0,3,29,12],
-"struct_control_1_1_int_spin_box.html#a826bc093193e5311c3b1ae92f6378c6c":[12,0,3,29,3],
-"struct_control_1_1_int_spin_box.html#aa3605203d0ce7c400d5946bf4e6412eb":[12,0,3,29,1],
-"struct_control_1_1_int_spin_box.html#ab5162ba187c9510c3ada24c7a9aa71ad":[12,0,3,29,10],
-"struct_control_1_1_int_spin_box.html#ac9990880a691fe17f10071e2369e6e3a":[12,0,3,29,4],
-"struct_control_1_1_int_spin_box.html#acb5bb491781079e91de329d9d272fad2":[12,0,3,29,8],
-"struct_control_1_1_int_spin_box.html#ad888efdae1ac1c36bff9bf56effbbb08":[12,0,3,29,9],
-"struct_control_1_1_int_spin_box.html#aeb5cdeed683b8f1336ef0ed234a1eabc":[12,0,3,29,7],
-"struct_control_1_1_line_edit.html":[12,0,3,31],
-"struct_control_1_1_line_edit.html#a0941a6f5dea584138215690014eb823f":[12,0,3,31,6],
-"struct_control_1_1_line_edit.html#a157a25b6b1488d2c3838aa38279b72c1":[12,0,3,31,5],
-"struct_control_1_1_line_edit.html#a2354173a4e7f1f899f018b90d3dd728c":[12,0,3,31,0]
+"struct_control_1_1_int_spin_box.html#a826bc093193e5311c3b1ae92f6378c6c":[12,0,3,29,3]
 };
