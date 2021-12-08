@@ -1,5 +1,6 @@
 var NAVTREEINDEX57 =
 {
+"struct_pd_1_1libpd__list__wrapper.html":[12,0,34,5],
 "struct_pd_1_1libpd__list__wrapper.html#a04944f7753cc17cc88ab0564c0dc2523":[12,0,34,5,1],
 "struct_pd_1_1libpd__list__wrapper.html#a5ed914ce492933b80aed6c7081d1a7ed":[12,0,34,5,4],
 "struct_pd_1_1libpd__list__wrapper.html#ae210f8d6861bfaf77b2f9e2dfff4b057":[12,0,34,5,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX57 =
 "struct_protocols_1_1_artnet_1_1_fixture.html#aa40e22558cd14438a94682d39a435db8":[12,0,37,0,2,3],
 "struct_protocols_1_1_artnet_1_1_range_capability.html":[12,0,37,0,3],
 "struct_protocols_1_1_artnet_1_1_range_capability.html#ac9ceade681882eab6953a7ccc54b1588":[12,0,37,0,3,0],
-"struct_protocols_1_1_artnet_1_1_single_capability.html":[12,0,37,0,4],
-"struct_protocols_1_1_artnet_specific_settings.html":[12,0,37,6]
+"struct_protocols_1_1_artnet_1_1_single_capability.html":[12,0,37,0,4]
 };

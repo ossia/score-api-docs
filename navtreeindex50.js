@@ -1,5 +1,6 @@
 var NAVTREEINDEX50 =
 {
+"struct_control_1_1_int_spin_box.html#a826bc093193e5311c3b1ae92f6378c6c":[12,0,3,29,3],
 "struct_control_1_1_int_spin_box.html#aa3605203d0ce7c400d5946bf4e6412eb":[12,0,3,29,1],
 "struct_control_1_1_int_spin_box.html#ab5162ba187c9510c3ada24c7a9aa71ad":[12,0,3,29,10],
 "struct_control_1_1_int_spin_box.html#ac9990880a691fe17f10071e2369e6e3a":[12,0,3,29,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX50 =
 "struct_dataflow_1_1_midi_inlet_factory.html#af90aadad8f440c697ccecea2ed4f257c":[12,0,6,27,1],
 "struct_dataflow_1_1_midi_outlet_factory.html":[12,0,6,28],
 "struct_dataflow_1_1_midi_outlet_factory.html#a0c1f7d393017070b78750f67f017563b":[12,0,6,28,2],
-"struct_dataflow_1_1_midi_outlet_factory.html#a5a7ff4fc4387388445bff04bfc794d57":[12,0,6,28,3],
-"struct_dataflow_1_1_midi_outlet_factory.html#a936dbca13a2f4734998cea765e4d12a7":[12,0,6,28,0]
+"struct_dataflow_1_1_midi_outlet_factory.html#a5a7ff4fc4387388445bff04bfc794d57":[12,0,6,28,3]
 };

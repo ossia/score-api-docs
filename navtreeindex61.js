@@ -1,5 +1,6 @@
 var NAVTREEINDEX61 =
 {
+"struct_scenario_1_1_slot_presenter.html#a6d6bd62f72538d278a02c614652e2c0b":[12,0,42,251,2],
 "struct_scenario_1_1_slot_presenter.html#a76a4c47939e4d7afe329c0221d69d9e9":[12,0,42,251,1],
 "struct_scenario_1_1_slot_presenter.html#aa32e8fe73b3084c79f8363e98a73166b":[12,0,42,251,3],
 "struct_scenario_1_1_slot_presenter.html#ad03c19ac4999d616e51c8ffd772dedee":[12,0,42,251,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX61 =
 "struct_std_variant_j_s_o_n_serializer.html":[12,0,369],
 "struct_std_variant_j_s_o_n_serializer.html#a4781fb8e7c5bbe43a8344b14aa341aa6":[12,0,369,0],
 "struct_std_variant_j_s_o_n_serializer.html#a79516eac0f5a95cdd785829f3fb6e05d":[12,0,369,3],
-"struct_std_variant_j_s_o_n_serializer.html#a850360e8cec6954c30281f3c26f26cc7":[12,0,369,4],
-"struct_std_variant_j_s_o_n_serializer.html#a87c1f4650676f086d60dde75e7fbfe03":[12,0,369,1]
+"struct_std_variant_j_s_o_n_serializer.html#a850360e8cec6954c30281f3c26f26cc7":[12,0,369,4]
 };

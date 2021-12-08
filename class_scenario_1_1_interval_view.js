@@ -6,6 +6,7 @@ var class_scenario_1_1_interval_view =
     [ "defaultWidth", "class_scenario_1_1_interval_view.html#ab2ed9b6e0eab71bcd566c40fa79078b8", null ],
     [ "dragEnterEvent", "class_scenario_1_1_interval_view.html#ab427c067bc181c13e3fa0a3f4869c387", null ],
     [ "dragLeaveEvent", "class_scenario_1_1_interval_view.html#a7e1b527f695b1816ffb72021295f1d0b", null ],
+    [ "dragMoveEvent", "class_scenario_1_1_interval_view.html#a54c1d55bb7ca96b2e2632c92995dd41d", null ],
     [ "dropEvent", "class_scenario_1_1_interval_view.html#a0468404e950ce5b9cccf377cd512c12e", null ],
     [ "dropReceived", "class_scenario_1_1_interval_view.html#aba0ca6966f8c7fdf6daf90a7e8160739", null ],
     [ "height", "class_scenario_1_1_interval_view.html#a6e2545d6ee9b1a6482914aadb3e3af3f", null ],
