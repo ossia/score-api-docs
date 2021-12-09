@@ -1,8 +1,5 @@
 var NAVTREEINDEX59 =
 {
-"struct_q_meta_type_id_3_01score_1_1_document_01_5_01_4.html#a3b2ccc0d594f168d9cd42da033ff2a7fa1d7faff897bd79bc6bd5bc9e570558d5":[12,0,282,0],
-"struct_q_meta_type_id_3_01score_1_1_model_metadata_01_5_01_4.html":[12,0,283],
-"struct_q_meta_type_id_3_01score_1_1_model_metadata_01_5_01_4.html#a798e6744744a5694445a7cffdb7da900a943c1119ad29cbad472cef55ac8ee334":[12,0,283,0],
 "struct_q_meta_type_id_3_01score_1_1_plugin___qt_interface_01_5_01_4.html":[12,0,284],
 "struct_q_meta_type_id_3_01score_1_1_plugin___qt_interface_01_5_01_4.html#a18d051f207cce53b94d7b48a3149fc34a8b347e84121b6a6abf6700dfe6926c3e":[12,0,284,0],
 "struct_q_meta_type_id_3_01std_1_1optional_3_01ossia_1_1time__signature_01_4_01_4.html":[12,0,291],
@@ -249,5 +246,8 @@ var NAVTREEINDEX59 =
 "struct_scenario_1_1_click_on_slot_handle___event.html":[12,0,42,23],
 "struct_scenario_1_1_click_on_slot_handle___event.html#a125f220bc37f8ce0aace2160539a32a6":[12,0,42,23,0],
 "struct_scenario_1_1_click_on_slot_handle___event.html#aaa85b06f506aa6bce91ef83a968ebf5c":[12,0,42,23,1],
-"struct_scenario_1_1_click_on_slot_handle___event.html#afcbf16c0b521f0e665d088ea5a22263e":[12,0,42,23,2]
+"struct_scenario_1_1_click_on_slot_handle___event.html#afcbf16c0b521f0e665d088ea5a22263e":[12,0,42,23,2],
+"struct_scenario_1_1_command_1_1_message_pairs.html":[12,0,42,0,56],
+"struct_scenario_1_1_command_1_1_message_pairs.html#aa1a0fdfb87fd65157d3f3b466b3e119a":[12,0,42,0,56,3],
+"struct_scenario_1_1_command_1_1_message_pairs.html#aa6e428f45a6c3b8c50369c9c22b1d1fc":[12,0,42,0,56,4]
 };

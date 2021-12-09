@@ -262,7 +262,13 @@ $(document).ready(function(){initNavTree('_scenario_document_presenter_8hpp_sour
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keywordtype">bool</span> m_updatingView{<span class="keyword">false</span>};</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;};</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;}</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>* closestParentProcessBeforeInterval(<span class="keyword">const</span> QObject* obj);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="keywordtype">void</span> createProcessAfterPort(</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <a class="code" href="class_scenario_1_1_scenario_document_presenter.html">Scenario::ScenarioDocumentPresenter</a>&amp; parent,</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keyword">const</span> <a class="code" href="struct_library_1_1_process_data.html">Library::ProcessData</a>&amp; dat,</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; parentProcess,</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_process_1_1_port.html">Process::Port</a>&amp; p);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1366</div></div>
@@ -286,6 +292,7 @@ $(document).ready(function(){initNavTree('_scenario_document_presenter_8hpp_sour
 <div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Process.hpp:55</div></div>
 <div class="ttc" id="astruct_library_1_1_process_data_html"><div class="ttname"><a href="struct_library_1_1_process_data.html">Library::ProcessData</a></div><div class="ttdef"><b>Definition:</b> ProcessesItemModel.hpp:30</div></div>
 <div class="ttc" id="astruct_process_1_1_context_html"><div class="ttname"><a href="struct_process_1_1_context.html">Process::Context</a></div><div class="ttdef"><b>Definition:</b> ProcessContext.hpp:11</div></div>
+<div class="ttc" id="aclass_process_1_1_port_html"><div class="ttname"><a href="class_process_1_1_port.html">Process::Port</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:102</div></div>
 <div class="ttc" id="aclassscore_1_1_document_presenter_html"><div class="ttname"><a href="classscore_1_1_document_presenter.html">score::DocumentPresenter</a></div><div class="ttdoc">Interface between the DocumentModel and the DocumentView.</div><div class="ttdef"><b>Definition:</b> DocumentPresenter.hpp:19</div></div>
 <div class="ttc" id="aclass_process_1_1_mini_layer_html"><div class="ttname"><a href="class_process_1_1_mini_layer.html">Process::MiniLayer</a></div><div class="ttdef"><b>Definition:</b> LayerView.hpp:100</div></div>
 <div class="ttc" id="aclassscore_1_1_document_delegate_model_html"><div class="ttname"><a href="classscore_1_1_document_delegate_model.html">score::DocumentDelegateModel</a></div><div class="ttdef"><b>Definition:</b> DocumentDelegateModel.hpp:9</div></div>

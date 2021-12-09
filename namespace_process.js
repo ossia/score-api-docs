@@ -8,7 +8,6 @@ var namespace_process =
     [ "AutomatableFactoryList", "struct_process_1_1_automatable_factory_list.html", "struct_process_1_1_automatable_factory_list" ],
     [ "Cable", "class_process_1_1_cable.html", "class_process_1_1_cable" ],
     [ "CableData", "struct_process_1_1_cable_data.html", "struct_process_1_1_cable_data" ],
-    [ "ChangePortAddress", "class_process_1_1_change_port_address.html", "class_process_1_1_change_port_address" ],
     [ "ChangePortSettings", "class_process_1_1_change_port_settings.html", "class_process_1_1_change_port_settings" ],
     [ "Context", "struct_process_1_1_context.html", "struct_process_1_1_context" ],
     [ "ControlInlet", "class_process_1_1_control_inlet.html", "class_process_1_1_control_inlet" ],

@@ -1,8 +1,5 @@
 var NAVTREEINDEX25 =
 {
-"class_process_state_data_interface.html#a46ec9c95a84b86047bb478231300da8f":[12,0,200,0],
-"class_process_state_data_interface.html#a4efb71b7d91fe681fd2769663ed50ab2":[12,0,200,3],
-"class_process_state_data_interface.html#a6680a70b488cf5282f33d0f74eb8140c":[12,0,200,2],
 "class_process_state_data_interface.html#a90b448c8b7009e11ad9a367340ffc08c":[12,0,200,4],
 "class_process_state_data_interface.html#ab0ace2ff661ff029fa7e5b1a0f594b25":[12,0,200,6],
 "class_process_state_data_interface.html#ae55c5121c3308809fa4a47493a90ef8c":[12,0,200,7],
@@ -249,5 +246,8 @@ var NAVTREEINDEX25 =
 "class_protocols_1_1_w_s_device.html#aecc3a74898002639b1f0b7f22c6d7743":[12,0,37,73,0],
 "class_protocols_1_1_w_s_protocol_factory.html":[12,0,37,74],
 "class_protocols_1_1_w_s_protocol_settings_widget.html":[12,0,37,75],
-"class_protocols_1_1_w_s_protocol_settings_widget.html#a018eeca75a56e1eb4b81e84548900fe4":[12,0,37,75,5]
+"class_protocols_1_1_w_s_protocol_settings_widget.html#a018eeca75a56e1eb4b81e84548900fe4":[12,0,37,75,5],
+"class_protocols_1_1_w_s_protocol_settings_widget.html#a1527216cf9d87d10dfbf3a4b2beee8c5":[12,0,37,75,1],
+"class_protocols_1_1_w_s_protocol_settings_widget.html#a19f1e7ee4ed75d725870fc57ff0845b8":[12,0,37,75,6],
+"class_protocols_1_1_w_s_protocol_settings_widget.html#a40fa88d658d06b374dde0f5ec1e07cf9":[12,0,37,75,2]
 };

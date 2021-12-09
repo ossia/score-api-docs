@@ -309,7 +309,7 @@ $(document).ready(function(){initNavTree('_command_a_p_i_8hpp_source.html',''); 
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Property, <span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="keywordtype">void</span> setProperty(<span class="keyword">const</span> T&amp; <span class="keywordtype">object</span>, U&amp;&amp; value)</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  {</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keyword">auto</span> cmd = <span class="keyword">new</span> <a class="code" href="classscore_1_1_property_command___t.html">score::PropertyCommand_T&lt;Property&gt;</a>{</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keyword">auto</span> cmd = <span class="keyword">new</span> <span class="keyword">typename</span> <a class="code" href="classscore_1_1_property_command___t.html">score::PropertyCommand_T&lt;Property&gt;::template</a> command&lt;void&gt;::type{</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        object, std::forward&lt;U&gt;(value)};</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    m.submit(cmd);</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  }</div>
