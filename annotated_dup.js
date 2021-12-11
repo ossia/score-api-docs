@@ -927,6 +927,18 @@ var annotated_dup =
       [ "Presenter", "class_widget_layer_1_1_presenter.html", "class_widget_layer_1_1_presenter" ],
       [ "View", "class_widget_layer_1_1_view.html", "class_widget_layer_1_1_view" ]
     ] ],
+    [ "YSFX", null, [
+      [ "Executor", null, [
+        [ "Component", "class_y_s_f_x_1_1_executor_1_1_component.html", "class_y_s_f_x_1_1_executor_1_1_component" ],
+        [ "ysfx_node", "class_y_s_f_x_1_1_executor_1_1ysfx__node.html", "class_y_s_f_x_1_1_executor_1_1ysfx__node" ]
+      ] ],
+      [ "ApplicationPlugin", "class_y_s_f_x_1_1_application_plugin.html", "class_y_s_f_x_1_1_application_plugin" ],
+      [ "DropHandler", "class_y_s_f_x_1_1_drop_handler.html", null ],
+      [ "LanguageSpec", "struct_y_s_f_x_1_1_language_spec.html", null ],
+      [ "LibraryHandler", "class_y_s_f_x_1_1_library_handler.html", null ],
+      [ "ProcessModel", "class_y_s_f_x_1_1_process_model.html", "class_y_s_f_x_1_1_process_model" ],
+      [ "ScriptMacro", "class_y_s_f_x_1_1_script_macro.html", null ]
+    ] ],
     [ "AbstractVisitor", "class_abstract_visitor.html", null ],
     [ "AddLayerModelToSlotTest", "class_add_layer_model_to_slot_test.html", null ],
     [ "AddProcessToIntervalTest", "class_add_process_to_interval_test.html", null ],
@@ -1223,6 +1235,7 @@ var annotated_dup =
     [ "score_plugin_ui", "classscore__plugin__ui.html", "classscore__plugin__ui" ],
     [ "score_plugin_vst", "classscore__plugin__vst.html", "classscore__plugin__vst" ],
     [ "score_plugin_vst3", "classscore__plugin__vst3.html", "classscore__plugin__vst3" ],
+    [ "score_plugin_ysfx", "classscore__plugin__ysfx.html", "classscore__plugin__ysfx" ],
     [ "Script", "class_script.html", "class_script" ],
     [ "SEHFrameHandler", "class_s_e_h_frame_handler.html", "class_s_e_h_frame_handler" ],
     [ "Selectable", "class_selectable.html", "class_selectable" ],

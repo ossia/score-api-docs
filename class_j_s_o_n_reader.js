@@ -141,6 +141,7 @@ var class_j_s_o_n_reader =
     [ "read", "class_j_s_o_n_reader.html#a6a8463aa59621a5216b37fee817ba788", null ],
     [ "read", "class_j_s_o_n_reader.html#a73b5a9b3bcbda040fe36048a0378739a", null ],
     [ "read", "class_j_s_o_n_reader.html#a89d792ccdc3e02a9e37b0181d669c4ca", null ],
+    [ "read", "class_j_s_o_n_reader.html#abb395fb52059c6242c2932ce6087cf79", null ],
     [ "readFrom", "class_j_s_o_n_reader.html#ab0e31b1fae2920cfa903400e19e5f0f5", null ],
     [ "readFrom", "class_j_s_o_n_reader.html#a5e9f32e3d6af8d9166e9c7f63f9baa01", null ],
     [ "readFrom", "class_j_s_o_n_reader.html#aa7462b496fe338625795304ca266f353", null ],

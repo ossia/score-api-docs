@@ -151,6 +151,7 @@ var class_data_stream_reader =
     [ "read", "class_data_stream_reader.html#affa5e8a40516bba2850bedca7a065536", null ],
     [ "read", "class_data_stream_reader.html#a101a51293d26b954afc5dafc34f0f9e3", null ],
     [ "read", "class_data_stream_reader.html#a2b5876d75dfc3e9cf97051b4d7b6a162", null ],
+    [ "read", "class_data_stream_reader.html#ae2dba58f9abde2fb101bc0ee695bf1ad", null ],
     [ "readFrom", "class_data_stream_reader.html#a0bb0e6b446ac07db0615b6eef43a27fe", null ],
     [ "readFrom", "class_data_stream_reader.html#a3bfea87fd2a0c74004a5f183c01812f5", null ],
     [ "readFrom", "class_data_stream_reader.html#a4f58ef6aec2af2d3eeb68da834177886", null ],
