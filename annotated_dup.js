@@ -937,7 +937,8 @@ var annotated_dup =
       [ "LanguageSpec", "struct_y_s_f_x_1_1_language_spec.html", null ],
       [ "LibraryHandler", "class_y_s_f_x_1_1_library_handler.html", null ],
       [ "ProcessModel", "class_y_s_f_x_1_1_process_model.html", "class_y_s_f_x_1_1_process_model" ],
-      [ "ScriptMacro", "class_y_s_f_x_1_1_script_macro.html", null ]
+      [ "ScriptMacro", "class_y_s_f_x_1_1_script_macro.html", null ],
+      [ "Window", "class_y_s_f_x_1_1_window.html", "class_y_s_f_x_1_1_window" ]
     ] ],
     [ "AbstractVisitor", "class_abstract_visitor.html", null ],
     [ "AddLayerModelToSlotTest", "class_add_layer_model_to_slot_test.html", null ],

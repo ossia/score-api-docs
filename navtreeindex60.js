@@ -1,5 +1,12 @@
 var NAVTREEINDEX60 =
 {
+"struct_scenario_1_1_categorised_scenario.html#a38179cd631f712352134f8aea49ab91a":[12,0,42,14,7],
+"struct_scenario_1_1_categorised_scenario.html#a45fab05c0ce8301bda287a321cc66b5d":[12,0,42,14,1],
+"struct_scenario_1_1_categorised_scenario.html#a4fc6408e8959b52b1a9ac54a07d527c1":[12,0,42,14,4],
+"struct_scenario_1_1_categorised_scenario.html#ac434920ccb2d827bbf1d217bde8639e9":[12,0,42,14,0],
+"struct_scenario_1_1_categorised_scenario.html#ace9594d620bcb58bf7ea22fda268d494":[12,0,42,14,5],
+"struct_scenario_1_1_categorised_scenario.html#adab264f30f071b5e5d28ba32f7f0cb2f":[12,0,42,14,2],
+"struct_scenario_1_1_categorised_scenario.html#ae645e5f252d40ff6a25370fc98e4149c":[12,0,42,14,3],
 "struct_scenario_1_1_categorized_address.html":[12,0,42,15],
 "struct_scenario_1_1_categorized_address.html#a08bc4e57a508c524e74b38ad20a74008":[12,0,42,15,7],
 "struct_scenario_1_1_categorized_address.html#a0a4137a6523655bfebda5fd8ca562ba5":[12,0,42,15,8],
@@ -242,12 +249,5 @@ var NAVTREEINDEX60 =
 "struct_scenario_1_1_scenario_record_init_data.html#a2c91a2ee4aafb91f4f854006fbf414f2":[12,0,42,228,1],
 "struct_scenario_1_1_scenario_record_init_data.html#a7bfa2f18676087c610a13f5f33f750c2":[12,0,42,228,2],
 "struct_scenario_1_1_scenario_record_init_data.html#ae428403cbfd21c4477ee942b223eafc2":[12,0,42,228,3],
-"struct_scenario_1_1_selected_nodes.html":[12,0,42,237],
-"struct_scenario_1_1_selected_nodes.html#a46bece1f2d2df2fb12699d6ae00d7e33":[12,0,42,237,0],
-"struct_scenario_1_1_selected_nodes.html#a619183b1416115fdeda3b645ab7b8831":[12,0,42,237,1],
-"struct_scenario_1_1_slot.html":[12,0,42,244],
-"struct_scenario_1_1_slot.html#a0616fd1a2ad98217288ae20821459dae":[12,0,42,244,12],
-"struct_scenario_1_1_slot.html#a0b8ec3ed53922db32f4c50c91e6a3bb8":[12,0,42,244,6],
-"struct_scenario_1_1_slot.html#a25c1f138a18cf52b6773d839234f2acf":[12,0,42,244,0],
-"struct_scenario_1_1_slot.html#a25c1f138a18cf52b6773d839234f2acfad1942c9e8fa991a5f29e3dd2e15fbba6":[12,0,42,244,0,0]
+"struct_scenario_1_1_selected_nodes.html":[12,0,42,237]
 };

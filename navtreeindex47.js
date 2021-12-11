@@ -1,5 +1,12 @@
 var NAVTREEINDEX47 =
 {
+"classvst3_1_1_model.html#a780f94e061df621073aee07adc526543":[12,0,53,9,18],
+"classvst3_1_1_model.html#a81387b8fdd850a49c0a264fa0210d72f":[12,0,53,9,3],
+"classvst3_1_1_model.html#aad58f2326f6ea4e7e5fa4c26e114155d":[12,0,53,9,1],
+"classvst3_1_1_model.html#ab4678f340522b1b6cdb342a287746596":[12,0,53,9,13],
+"classvst3_1_1_model.html#ab7569b3c3db7539701e064fc5df0b362":[12,0,53,9,2],
+"classvst3_1_1_model.html#ab8589e3455c23f4d1cda67353df53301":[12,0,53,9,6],
+"classvst3_1_1_model.html#acdf4ef3f57556a8ab6e72390863f0b5b":[12,0,53,9,5],
 "classvst3_1_1_model.html#ad7f91c72f7f243963d8af81a7ca53a0a":[12,0,53,9,17],
 "classvst3_1_1_model.html#adbd71f4715f62f77642c87918594504c":[12,0,53,9,10],
 "classvst3_1_1_model.html#aded538a46c018a02a1f5fc202ac61e1e":[12,0,53,9,4],
@@ -242,12 +249,5 @@ var NAVTREEINDEX47 =
 "classvst_1_1vst__node__base.html#ae8555db49dbf264c3d5c166ac99212b0":[12,0,52,17,2],
 "codingstyle_8hpp_source.html":[13,0,143],
 "contexts_8hpp_source.html":[13,0,198],
-"d_2_spline3_d_2_execution_8hpp_source.html":[13,0,386],
-"d_2_spline3_d_2_generator_dialog_8hpp_source.html":[13,0,455],
-"data_structures_8hpp_source.html":[13,0,268],
-"element_finding_helper_8hpp_source.html":[13,0,363],
-"files.html":[13,0],
-"functions.html":[12,3,0],
-"functions.html":[12,3,0,0],
-"functions_b.html":[12,3,0,1]
+"d_2_spline3_d_2_execution_8hpp_source.html":[13,0,386]
 };

@@ -1,5 +1,12 @@
 var NAVTREEINDEX67 =
 {
+"structscore_1_1gfx_1_1_rendered_i_s_f_node.html#ae251267542155bd005dd8d1c6d9d87c2":[12,0,43,2,35,6],
+"structscore_1_1gfx_1_1_rendered_i_s_f_node.html#ae498906a7750ad7159e367fb6a3784f3":[12,0,43,2,35,3],
+"structscore_1_1gfx_1_1_rendered_phong_node.html":[12,0,43,2,36],
+"structscore_1_1gfx_1_1_rendered_phong_node.html#a6fb6b8b534b838fcdb31ff7c64ead3f1":[12,0,43,2,36,0],
+"structscore_1_1gfx_1_1_sampler.html":[12,0,43,2,40],
+"structscore_1_1gfx_1_1_sampler.html#a57623fcefbc75d11cedba03e2006ad03":[12,0,43,2,40,0],
+"structscore_1_1gfx_1_1_sampler.html#ad4d2595df54f6132f95d404f26033339":[12,0,43,2,40,1],
 "structscore_1_1gfx_1_1_screen_node.html":[12,0,43,2,41],
 "structscore_1_1gfx_1_1_screen_node.html#a1d0b084a900b0aaa146e2ba90ebfe734":[12,0,43,2,41,10],
 "structscore_1_1gfx_1_1_screen_node.html#a2432ebb887ebb71c944a17b39a5f9a9f":[12,0,43,2,41,12],
@@ -242,12 +249,5 @@ var NAVTREEINDEX67 =
 "structserialization__tag.html":[12,0,359],
 "structserialization__tag.html#a244b6080c19feeb3d659035e3e6583c2":[12,0,359,0],
 "structserialization__tag_3_01_t_00_01std_1_1enable__if__t_3_01std_1_1is__enum_3_01_t_01_4_1_1value_01_4_01_4.html":[12,0,360],
-"structserialization__tag_3_01_t_00_01std_1_1enable__if__t_3_01std_1_1is__enum_3_01_t_01_4_1_1value_01_4_01_4.html#a7af24c36573143183bf12a86d59fb91c":[12,0,360,0],
-"structstd_1_1hash_3_01_device_1_1_full_address_settings_01_4.html":[12,0,48,0],
-"structstd_1_1hash_3_01_device_1_1_full_address_settings_01_4.html#a0d2972ddfb63ca49382b7baf94f184a5":[12,0,48,0,0],
-"structstd_1_1hash_3_01_gfx_1_1_shader_source_01_4.html":[12,0,48,1],
-"structstd_1_1hash_3_01_gfx_1_1_shader_source_01_4.html#a0880734b546ef52dad88196bac75d83e":[12,0,48,1,0],
-"structstd_1_1hash_3_01_id_3_01tag_01_4_01_4.html":[12,0,48,2],
-"structstd_1_1hash_3_01_id_3_01tag_01_4_01_4.html#ac90d6abf7262aba2a922f9c41a02a9c6":[12,0,48,2,0],
-"structstd_1_1hash_3_01_object_identifier_01_4.html":[12,0,48,3]
+"structserialization__tag_3_01_t_00_01std_1_1enable__if__t_3_01std_1_1is__enum_3_01_t_01_4_1_1value_01_4_01_4.html#a7af24c36573143183bf12a86d59fb91c":[12,0,360,0]
 };

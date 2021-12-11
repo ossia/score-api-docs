@@ -1,5 +1,12 @@
 var NAVTREEINDEX58 =
 {
+"struct_process_1_1_style.html#ab2dafff8eb51c580cf223c73b50a792f":[12,0,36,85,73],
+"struct_process_1_1_style.html#ab598a32e112a301f458468eb3f3eff32":[12,0,36,85,64],
+"struct_process_1_1_style.html#ab64afd101bcf33cb833b0e9497983b9b":[12,0,36,85,36],
+"struct_process_1_1_style.html#ab7db93e3008e9eb954d938ac4489fe61":[12,0,36,85,17],
+"struct_process_1_1_style.html#abb4119ed1208af3ee9b197dfe134113f":[12,0,36,85,93],
+"struct_process_1_1_style.html#abb97733dcfd5c2ca42f9c5dc68203c14":[12,0,36,85,67],
+"struct_process_1_1_style.html#abc9f50dd39178c7413ac8b4e0708274b":[12,0,36,85,53],
 "struct_process_1_1_style.html#abf41b04475ce537dd3dde963923ee31f":[12,0,36,85,86],
 "struct_process_1_1_style.html#ac2d8a3e8d2fa60209edd842b700b611c":[12,0,36,85,91],
 "struct_process_1_1_style.html#ac3c5b739240fdc1104b49fea8f214abc":[12,0,36,85,63],
@@ -242,12 +249,5 @@ var NAVTREEINDEX58 =
 "struct_q_meta_type_id_3_01_scenario_1_1_process_model_01_5_01_4.html#a174310ffa08620773d8f9c1373fb96acaf56a655d34bbb6e00e0361d40fab2ed6":[12,0,277,0],
 "struct_q_meta_type_id_3_01_scenario_1_1_scenario_interface_01_5_01_4.html":[12,0,278],
 "struct_q_meta_type_id_3_01_scenario_1_1_scenario_interface_01_5_01_4.html#a74eac9f48ec5d07170176ac718d65292a002dec7c2f4a7b997d65561b53ca7ecf":[12,0,278,0],
-"struct_q_meta_type_id_3_01_scenario_1_1_scenario_record_init_data_01_4.html":[12,0,279],
-"struct_q_meta_type_id_3_01_scenario_1_1_scenario_record_init_data_01_4.html#a72066d8adf6fe6c825dcdd73f28dec6aa3d653a2188bceeba532ae28730c7892e":[12,0,279,0],
-"struct_q_meta_type_id_3_01_scenario_1_1_time_signature_map_01_4.html":[12,0,280],
-"struct_q_meta_type_id_3_01_scenario_1_1_time_signature_map_01_4.html#afec63fe5b2d65eaa40d7411d12d16ebfa0db25fe82d1aa54d42205761aded48b3":[12,0,280,0],
-"struct_q_meta_type_id_3_01_scenario_1_1_tool_01_4.html":[12,0,281],
-"struct_q_meta_type_id_3_01_scenario_1_1_tool_01_4.html#aed915441d11d6a8c16f9f9222410ec7faf57e5c3eff1b3bfb8c9b870cb7dace4a":[12,0,281,0],
-"struct_q_meta_type_id_3_01_scenario_1_1_vertical_extent_01_4.html":[12,0,282],
-"struct_q_meta_type_id_3_01_scenario_1_1_vertical_extent_01_4.html#a98c9a3e7a36c9ac0458c897a730f7c37a90255faa2059a87de7fb3b786ff229b7":[12,0,282,0]
+"struct_q_meta_type_id_3_01_scenario_1_1_scenario_record_init_data_01_4.html":[12,0,279]
 };

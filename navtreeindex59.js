@@ -1,5 +1,12 @@
 var NAVTREEINDEX59 =
 {
+"struct_q_meta_type_id_3_01_scenario_1_1_scenario_record_init_data_01_4.html#a72066d8adf6fe6c825dcdd73f28dec6aa3d653a2188bceeba532ae28730c7892e":[12,0,279,0],
+"struct_q_meta_type_id_3_01_scenario_1_1_time_signature_map_01_4.html":[12,0,280],
+"struct_q_meta_type_id_3_01_scenario_1_1_time_signature_map_01_4.html#afec63fe5b2d65eaa40d7411d12d16ebfa0db25fe82d1aa54d42205761aded48b3":[12,0,280,0],
+"struct_q_meta_type_id_3_01_scenario_1_1_tool_01_4.html":[12,0,281],
+"struct_q_meta_type_id_3_01_scenario_1_1_tool_01_4.html#aed915441d11d6a8c16f9f9222410ec7faf57e5c3eff1b3bfb8c9b870cb7dace4a":[12,0,281,0],
+"struct_q_meta_type_id_3_01_scenario_1_1_vertical_extent_01_4.html":[12,0,282],
+"struct_q_meta_type_id_3_01_scenario_1_1_vertical_extent_01_4.html#a98c9a3e7a36c9ac0458c897a730f7c37a90255faa2059a87de7fb3b786ff229b7":[12,0,282,0],
 "struct_q_meta_type_id_3_01_selection_01_4.html":[12,0,286],
 "struct_q_meta_type_id_3_01_selection_01_4.html#acec6255fb4f4b7cae72bfbd0579f4ecda06b84b3a2159e2027e89fba1ed829db1":[12,0,286,0],
 "struct_q_meta_type_id_3_01_state_1_1_address_01_4.html":[12,0,287],
@@ -242,12 +249,5 @@ var NAVTREEINDEX59 =
 "struct_scenario_1_1_base_scenario_container_1_1no__init.html":[12,0,42,9,0],
 "struct_scenario_1_1_categorised_scenario.html":[12,0,42,14],
 "struct_scenario_1_1_categorised_scenario.html#a1015ae51dbddb5b67f862cf5aca766a8":[12,0,42,14,8],
-"struct_scenario_1_1_categorised_scenario.html#a1f68f980aaad5f0ee601e19be1995646":[12,0,42,14,6],
-"struct_scenario_1_1_categorised_scenario.html#a38179cd631f712352134f8aea49ab91a":[12,0,42,14,7],
-"struct_scenario_1_1_categorised_scenario.html#a45fab05c0ce8301bda287a321cc66b5d":[12,0,42,14,1],
-"struct_scenario_1_1_categorised_scenario.html#a4fc6408e8959b52b1a9ac54a07d527c1":[12,0,42,14,4],
-"struct_scenario_1_1_categorised_scenario.html#ac434920ccb2d827bbf1d217bde8639e9":[12,0,42,14,0],
-"struct_scenario_1_1_categorised_scenario.html#ace9594d620bcb58bf7ea22fda268d494":[12,0,42,14,5],
-"struct_scenario_1_1_categorised_scenario.html#adab264f30f071b5e5d28ba32f7f0cb2f":[12,0,42,14,2],
-"struct_scenario_1_1_categorised_scenario.html#ae645e5f252d40ff6a25370fc98e4149c":[12,0,42,14,3]
+"struct_scenario_1_1_categorised_scenario.html#a1f68f980aaad5f0ee601e19be1995646":[12,0,42,14,6]
 };

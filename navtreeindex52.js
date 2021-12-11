@@ -1,5 +1,12 @@
 var NAVTREEINDEX52 =
 {
+"struct_execution_1_1_settings_1_1_merging_policies.html#ad27b8a093f61662a732749d0d0afea16":[12,0,9,1,1,1],
+"struct_execution_1_1_settings_1_1_merging_policies.html#af15f8931630e7e619e5329a683f15215":[12,0,9,1,1,2],
+"struct_execution_1_1_settings_1_1_ordering_policies.html":[12,0,9,1,3],
+"struct_execution_1_1_settings_1_1_ordering_policies.html#a9f4cfc3df9473e938fde99af861fc92e":[12,0,9,1,3,2],
+"struct_execution_1_1_settings_1_1_ordering_policies.html#aa78f827d0efc4eb167f4f307e2f9e4be":[12,0,9,1,3,0],
+"struct_execution_1_1_settings_1_1_ordering_policies.html#ad2478a2cc6646aca4318d98560047c0d":[12,0,9,1,3,1],
+"struct_execution_1_1_settings_1_1_ordering_policies.html#aedc6a5f5786d3c64950b556e8567b3e6":[12,0,9,1,3,3],
 "struct_execution_1_1_settings_1_1_ordering_policies.html#afccdaa11e11350698b89460f7d1510b0":[12,0,9,1,3,4],
 "struct_execution_1_1_settings_1_1_scheduling_policies.html":[12,0,9,1,5],
 "struct_execution_1_1_settings_1_1_scheduling_policies.html#a11adbe1b76c814533ad9d149547e7625":[12,0,9,1,5,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX52 =
 "struct_gfx_1_1con__unvalidated.html":[12,0,15,17],
 "struct_gfx_1_1con__unvalidated.html#a00538da346da971ac5db4a99c7a24c42":[12,0,15,17,4],
 "struct_gfx_1_1con__unvalidated.html#a8f41ef19169b53d523bf61098639df8d":[12,0,15,17,0],
-"struct_gfx_1_1con__unvalidated.html#aafb77818572030deca1c6925b4a94da5":[12,0,15,17,1],
-"struct_gfx_1_1con__unvalidated.html#acc5eb1a4c0783b7a0a3687650f021546":[12,0,15,17,3],
-"struct_gfx_1_1con__unvalidated.html#ae75eb60f7c59e754b5b45abd21c40750":[12,0,15,17,2],
-"struct_gfx_1_1control__updater.html":[12,0,15,18],
-"struct_gfx_1_1control__updater.html#a4a930ddd85708f5dd6d055d8026a35dc":[12,0,15,18,0],
-"struct_gfx_1_1control__updater.html#aa747e9e19507aa54d17b22581ac1db3c":[12,0,15,18,2],
-"struct_gfx_1_1control__updater.html#ace217911381e0053a2366654c20cf331":[12,0,15,18,1],
-"struct_gfx_1_1gfx__exec__node_1_1control.html":[12,0,15,20,0]
+"struct_gfx_1_1con__unvalidated.html#aafb77818572030deca1c6925b4a94da5":[12,0,15,17,1]
 };

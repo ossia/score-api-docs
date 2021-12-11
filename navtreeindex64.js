@@ -1,5 +1,12 @@
 var NAVTREEINDEX64 =
 {
+"structscore_1_1_application_settings.html#a4624f2eed8f8e9bacc8533cedff743c1":[12,0,43,24,5],
+"structscore_1_1_application_settings.html#a50b4c9cd2201282fc335bc4ca5f4a6c8":[12,0,43,24,1],
+"structscore_1_1_application_settings.html#a761ffb07905a9fa1234563f8bd559714":[12,0,43,24,7],
+"structscore_1_1_application_settings.html#ac4485606b08677be4115260f2e30b241":[12,0,43,24,4],
+"structscore_1_1_application_settings.html#adf1c9cd0f8980bf337fb2ba639553011":[12,0,43,24,8],
+"structscore_1_1_application_settings.html#ae2b0c986e978926b5acc72732490123d":[12,0,43,24,2],
+"structscore_1_1_bar_spin_box.html":[12,0,43,28],
 "structscore_1_1_bar_spin_box.html#a1632cc8850585626bda87bec604ca476":[12,0,43,28,2],
 "structscore_1_1_bar_spin_box.html#a22bec27d743859a26278003864ad1759":[12,0,43,28,0],
 "structscore_1_1_bar_spin_box.html#a59bcd499b18d9a4017e9d88dea533fa9":[12,0,43,28,3],
@@ -242,12 +249,5 @@ var NAVTREEINDEX64 =
 "structscore_1_1_modifier_1_1_release__tag.html":[12,0,43,3,2],
 "structscore_1_1_numbered_event.html":[12,0,43,157],
 "structscore_1_1_numbered_event.html#ab3416e423b95152c8a8fc86365334e3c":[12,0,43,157,0],
-"structscore_1_1_numbered_with_path___event.html":[12,0,43,158],
-"structscore_1_1_numbered_with_path___event.html#a17935f37bacab3b2e08ec61f6dd9a4f7":[12,0,43,158,1],
-"structscore_1_1_numbered_with_path___event.html#adcc131ac4f01babb3d7491c1210ef8f9":[12,0,43,158,2],
-"structscore_1_1_numbered_with_path___event.html#aec89919e43783cde3392bc2d65f79c4a":[12,0,43,158,0],
-"structscore_1_1_object_remover.html":[12,0,43,160],
-"structscore_1_1_object_remover.html#a01648904803d79c14206476b886277ce":[12,0,43,160,1],
-"structscore_1_1_object_remover.html#a4e7a1d2a9ce10218b66fcf758c29a8fa":[12,0,43,160,0],
-"structscore_1_1_open_documents_file.html":[12,0,43,162]
+"structscore_1_1_numbered_with_path___event.html":[12,0,43,158]
 };

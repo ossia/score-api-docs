@@ -1,5 +1,12 @@
 var NAVTREEINDEX66 =
 {
+"structscore_1_1_string_constants.html#ad0e2dafcd5f3615fa5c4e7c6c68ad5ec":[12,0,43,246,103],
+"structscore_1_1_string_constants.html#ad201f6732a2e171895155ab60b9bf105":[12,0,43,246,9],
+"structscore_1_1_string_constants.html#ad212a7ae0da81f6ff4cdd9c1b9e5d0ab":[12,0,43,246,1],
+"structscore_1_1_string_constants.html#ad62672a48fd632bba3858ece2c0c0ee0":[12,0,43,246,117],
+"structscore_1_1_string_constants.html#ad6f381a7543862a5c09b314b5ae8c042":[12,0,43,246,23],
+"structscore_1_1_string_constants.html#ad91886dd0f2dab433e0380decb48bdf6":[12,0,43,246,48],
+"structscore_1_1_string_constants.html#adb05522d5e492c69b81c34af3f345cce":[12,0,43,246,26],
 "structscore_1_1_string_constants.html#adc20ee2c6ff4618e4f76759749705a7d":[12,0,43,246,111],
 "structscore_1_1_string_constants.html#add21065231323c1590e1d6754ffbec4b":[12,0,43,246,31],
 "structscore_1_1_string_constants.html#ae0059583e7f4704892f6d805ef8d360b":[12,0,43,246,113],
@@ -242,12 +249,5 @@ var NAVTREEINDEX66 =
 "structscore_1_1gfx_1_1_rendered_i_s_f_node.html#a5c26c0477d810969726669a872fe356d":[12,0,43,2,35,0],
 "structscore_1_1gfx_1_1_rendered_i_s_f_node.html#a5d87df6c23884b9288b12e4bd08102bb":[12,0,43,2,35,2],
 "structscore_1_1gfx_1_1_rendered_i_s_f_node.html#a5f0b8f908cfa7866e62e127e11a7f70b":[12,0,43,2,35,1],
-"structscore_1_1gfx_1_1_rendered_i_s_f_node.html#ad9f49cf6238c24c06c618c8e0de3455a":[12,0,43,2,35,7],
-"structscore_1_1gfx_1_1_rendered_i_s_f_node.html#ae251267542155bd005dd8d1c6d9d87c2":[12,0,43,2,35,6],
-"structscore_1_1gfx_1_1_rendered_i_s_f_node.html#ae498906a7750ad7159e367fb6a3784f3":[12,0,43,2,35,3],
-"structscore_1_1gfx_1_1_rendered_phong_node.html":[12,0,43,2,36],
-"structscore_1_1gfx_1_1_rendered_phong_node.html#a6fb6b8b534b838fcdb31ff7c64ead3f1":[12,0,43,2,36,0],
-"structscore_1_1gfx_1_1_sampler.html":[12,0,43,2,40],
-"structscore_1_1gfx_1_1_sampler.html#a57623fcefbc75d11cedba03e2006ad03":[12,0,43,2,40,0],
-"structscore_1_1gfx_1_1_sampler.html#ad4d2595df54f6132f95d404f26033339":[12,0,43,2,40,1]
+"structscore_1_1gfx_1_1_rendered_i_s_f_node.html#ad9f49cf6238c24c06c618c8e0de3455a":[12,0,43,2,35,7]
 };
