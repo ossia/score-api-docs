@@ -8,6 +8,7 @@ var class_midi_1_1_presenter =
     [ "on_noteChanged", "class_midi_1_1_presenter.html#a7654a03eb89b481f3d7c1d2f4ae322bd", null ],
     [ "on_noteChangeFinished", "class_midi_1_1_presenter.html#a4b61254dece9a323f307fb1a7074b1ae", null ],
     [ "on_noteScaled", "class_midi_1_1_presenter.html#a6971312a42416e80f6f0e874d6455912", null ],
+    [ "on_noteSelectionChanged", "class_midi_1_1_presenter.html#a3c0ab3314cd36780ca82a51927e18855", null ],
     [ "on_requestVelocityChange", "class_midi_1_1_presenter.html#ae5f5ae891dc94fbbd6dd95d0bf168c4a", null ],
     [ "on_velocityChangeFinished", "class_midi_1_1_presenter.html#a78fe6c5e92fbfe8ff4f2556de7361a6b", null ],
     [ "on_zoomRatioChanged", "class_midi_1_1_presenter.html#a4fe28fe66f6b1948f6aa1b997bf5e720", null ],

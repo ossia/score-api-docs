@@ -1,5 +1,6 @@
 var NAVTREEINDEX30 =
 {
+"class_scenario_1_1_edition_settings.html#a0a01b04ee9f02c12ec7db87622a15a7f":[12,0,42,74,12],
 "class_scenario_1_1_edition_settings.html#a2ca65839b1e7e89c0101d591a877b54a":[12,0,42,74,6],
 "class_scenario_1_1_edition_settings.html#a53f24c3b1bdcb3138c5ec8c89b149b28":[12,0,42,74,2],
 "class_scenario_1_1_edition_settings.html#a5c7401f1f766bba0bb9fa1125650e1ce":[12,0,42,74,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX30 =
 "class_scenario_1_1_interval_durations_1_1_algorithms.html":[12,0,42,121,0],
 "class_scenario_1_1_interval_header.html":[12,0,42,122],
 "class_scenario_1_1_interval_header.html#a0c81da4635d033c618fd135518470aa4":[12,0,42,122,4],
-"class_scenario_1_1_interval_header.html#a11864d7e661a8f8c306387cdce73c8d2":[12,0,42,122,6],
-"class_scenario_1_1_interval_header.html#a197dcaf4f31a2744d2b1691236bd799f":[12,0,42,122,7]
+"class_scenario_1_1_interval_header.html#a11864d7e661a8f8c306387cdce73c8d2":[12,0,42,122,6]
 };

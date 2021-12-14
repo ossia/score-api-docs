@@ -1,5 +1,6 @@
 var NAVTREEINDEX49 =
 {
+"score-plugin-spline3d_2_spline3_d_2_model_8hpp_source.html":[13,0,735],
 "score-plugin-spline_2_spline_2_model_8hpp_source.html":[13,0,734],
 "score-plugin-spline_2_spline_2_view_8hpp_source.html":[13,0,1318],
 "score-plugin-transport_2_transport_2_application_plugin_8hpp_source.html":[13,0,57],
@@ -248,6 +249,5 @@ var NAVTREEINDEX49 =
 "struct_control_1_1_h_s_v_slider.html#a496d4cb7063b82e899afdfce7dbb9ea5":[12,0,3,24,0],
 "struct_control_1_1_h_s_v_slider.html#a7d2992c24770c3615583eb3ea7d66c9a":[12,0,3,24,6],
 "struct_control_1_1_h_s_v_slider.html#a8750ee984a516fa4b31c47c989945652":[12,0,3,24,2],
-"struct_control_1_1_h_s_v_slider.html#a919ba287c04513ed492f23c3bb6df053":[12,0,3,24,8],
-"struct_control_1_1_h_s_v_slider.html#a9bc98419f8b790ea9941d5a326e7f67b":[12,0,3,24,7]
+"struct_control_1_1_h_s_v_slider.html#a919ba287c04513ed492f23c3bb6df053":[12,0,3,24,8]
 };
