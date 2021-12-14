@@ -1,5 +1,6 @@
 var NAVTREEINDEX51 =
 {
+"struct_curve_1_1_style_interface.html#a00f663696c05a7e00b19103ccf1fdd3e":[12,0,5,48,1],
 "struct_curve_1_1_style_interface.html#a925e0a5a625309ef1d1e3652b83abc6c":[12,0,5,48,0],
 "struct_curve_1_1_tool_palette___t.html":[12,0,5,50],
 "struct_curve_1_1_tool_palette___t.html#a4aa78152497ad941e54217373802e9bc":[12,0,5,50,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX51 =
 "struct_execution_1_1_settings_1_1_commit_policies.html#aa4186857b39a9f84e481176cc7a740b7":[12,0,9,1,0,0],
 "struct_execution_1_1_settings_1_1_commit_policies.html#abc777bb8c08676f662db097aed0012de":[12,0,9,1,0,4],
 "struct_execution_1_1_settings_1_1_merging_policies.html":[12,0,9,1,1],
-"struct_execution_1_1_settings_1_1_merging_policies.html#a9baaf53d1574b2ab796789f2dfffa2a2":[12,0,9,1,1,3],
-"struct_execution_1_1_settings_1_1_merging_policies.html#abbfddb72b9a671d05426003f807d640e":[12,0,9,1,1,0]
+"struct_execution_1_1_settings_1_1_merging_policies.html#a9baaf53d1574b2ab796789f2dfffa2a2":[12,0,9,1,1,3]
 };

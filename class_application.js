@@ -9,5 +9,6 @@ var class_application =
     [ "exec", "class_application.html#a33bf2325ad043310bf5a448022b94840", null ],
     [ "init", "class_application.html#aebb6d1a7983d8d23368b5b34461111ee", null ],
     [ "operator=", "class_application.html#ae0294a5e63103980f4f57c7b104f5f6a", null ],
-    [ "ChildEventFilter", "class_application.html#ad4c67b13baca0d1929c81e0af9d5858e", null ]
+    [ "ChildEventFilter", "class_application.html#ad4c67b13baca0d1929c81e0af9d5858e", null ],
+    [ "appSettings", "class_application.html#ac698c0bde711ce5ba68b1f0f685821ca", null ]
 ];

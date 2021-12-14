@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"class_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i.html#a82eec029fbfdf3aec99496bbb3a9a778":[12,0,12,0,8],
 "class_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i.html#a88ce8dd41abafefe78d4054d728ffd84":[12,0,12,0,14],
 "class_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i.html#a8ace7a8305595fb3e0613f7ec14f8438":[12,0,12,0,12],
 "class_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i.html#a8d025418beb735ba587cad78b1eec2d5":[12,0,12,0,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "class_gfx_1_1_texture_outlet.html#a7dc44c682d094755880e974f33fd8586":[12,0,15,54,7],
 "class_gfx_1_1_texture_outlet.html#ab3603041d635ec7a1051ea0a516d242d":[12,0,15,54,0],
 "class_gfx_1_1_texture_outlet.html#ae96696a3cdb17dcf4558ac0735c55e3f":[12,0,15,54,5],
-"class_gfx_1_1_video_1_1_drop_handler.html":[12,0,15,4,0],
-"class_gfx_1_1_video_1_1_inspector_factory.html":[12,0,15,4,1]
+"class_gfx_1_1_video_1_1_drop_handler.html":[12,0,15,4,0]
 };
