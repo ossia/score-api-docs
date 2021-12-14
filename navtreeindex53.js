@@ -1,5 +1,11 @@
 var NAVTREEINDEX53 =
 {
+"struct_gfx_1_1camera__settings.html#a454c5fe4e003a7c1de69e9e9d43e9629":[12,0,15,10,2],
+"struct_gfx_1_1camera__settings.html#a459d3b32c8f2c6340adba33f5dd7827e":[12,0,15,10,1],
+"struct_gfx_1_1camera__settings.html#a7cd083460d532688776e41d5dba8f76a":[12,0,15,10,0],
+"struct_gfx_1_1camera__settings.html#af1fbb10b2899dc52727792b534bb73f1":[12,0,15,10,3],
+"struct_gfx_1_1con__unvalidated.html":[12,0,15,17],
+"struct_gfx_1_1con__unvalidated.html#a00538da346da971ac5db4a99c7a24c42":[12,0,15,17,4],
 "struct_gfx_1_1con__unvalidated.html#a8f41ef19169b53d523bf61098639df8d":[12,0,15,17,0],
 "struct_gfx_1_1con__unvalidated.html#aafb77818572030deca1c6925b4a94da5":[12,0,15,17,1],
 "struct_gfx_1_1con__unvalidated.html#acc5eb1a4c0783b7a0a3687650f021546":[12,0,15,17,3],
@@ -91,7 +97,7 @@ var NAVTREEINDEX53 =
 "struct_j_s_1_1_executor_1_1js__process.html#a858f2f65646df649e404e0f0863b6a9f":[12,0,22,0,2,0],
 "struct_j_s_1_1_executor_1_1js__process.html#ab12067305e7c7548465967a57c18cca9":[12,0,22,0,2,3],
 "struct_j_s_1_1_executor_1_1js__process.html#ace99a015bb99b84af0d5022e88fe6b98":[12,0,22,0,2,4],
-"struct_j_s_1_1_language_spec.html":[12,0,22,7],
+"struct_j_s_1_1_language_spec.html":[12,0,22,8],
 "struct_j_s_o_n_reader_1_1assigner.html":[12,0,145,0],
 "struct_j_s_o_n_reader_1_1assigner.html#a010bda03a031ec93e2920f304e73c21a":[12,0,145,0,4],
 "struct_j_s_o_n_reader_1_1assigner.html#a026a303a95c79840e28bc707875dcec1":[12,0,145,0,15],
@@ -243,11 +249,5 @@ var NAVTREEINDEX53 =
 "struct_l_v2_1_1_global_context.html#af1ea0c64739c3b201981411f98c5f222":[12,0,25,2,35],
 "struct_l_v2_1_1_global_context.html#af2b09ecfec380c1f5a1561250811597d":[12,0,25,2,8],
 "struct_l_v2_1_1_global_context.html#af71886c53db61ad8b5bb780d61688500":[12,0,25,2,4],
-"struct_l_v2_1_1_global_context.html#af991f9198976c6ae0aaad40f99ab3c74":[12,0,25,2,17],
-"struct_l_v2_1_1_global_context.html#af9bdec7593d34e635263e9ad0d6921ef":[12,0,25,2,29],
-"struct_l_v2_1_1_global_context.html#afe7f07edba90c0f50d307edadaca8d89":[12,0,25,2,18],
-"struct_l_v2_1_1_host_context.html":[12,0,25,3],
-"struct_l_v2_1_1_host_context.html#a0598dafaa7f0006bddb811a4ae985f32":[12,0,25,3,13],
-"struct_l_v2_1_1_host_context.html#a094304eab9dcf0ba51c0eb35e0bc0dba":[12,0,25,3,8],
-"struct_l_v2_1_1_host_context.html#a0964f807a1233cfaf20747958ff1c492":[12,0,25,3,47]
+"struct_l_v2_1_1_global_context.html#af991f9198976c6ae0aaad40f99ab3c74":[12,0,25,2,17]
 };

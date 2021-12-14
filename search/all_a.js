@@ -15,5 +15,6 @@ var searchData=
   ['jsonobject_1121',['JSONObject',['../class_j_s_o_n_object.html',1,'']]],
   ['jsonreader_1122',['JSONReader',['../class_j_s_o_n_reader.html',1,'']]],
   ['jsonvalue_1123',['JsonValue',['../struct_json_value.html',1,'']]],
-  ['jsonwriter_1124',['JSONWriter',['../class_j_s_o_n_writer.html',1,'']]]
+  ['jsonwriter_1124',['JSONWriter',['../class_j_s_o_n_writer.html',1,'']]],
+  ['jsutils_1125',['JsUtils',['../class_j_s_1_1_js_utils.html',1,'JS']]]
 ];

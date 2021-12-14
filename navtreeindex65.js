@@ -1,5 +1,11 @@
 var NAVTREEINDEX65 =
 {
+"structscore_1_1_menus.html":[12,0,43,149],
+"structscore_1_1_meta_action.html":[12,0,43,152],
+"structscore_1_1_modifier_1_1_click__tag.html":[12,0,43,3,0],
+"structscore_1_1_modifier_1_1_move__tag.html":[12,0,43,3,1],
+"structscore_1_1_modifier_1_1_release__tag.html":[12,0,43,3,2],
+"structscore_1_1_numbered_event.html":[12,0,43,157],
 "structscore_1_1_numbered_event.html#ab3416e423b95152c8a8fc86365334e3c":[12,0,43,157,0],
 "structscore_1_1_numbered_with_path___event.html":[12,0,43,158],
 "structscore_1_1_numbered_with_path___event.html#a17935f37bacab3b2e08ec61f6dd9a4f7":[12,0,43,158,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX65 =
 "structscore_1_1_string_constants.html#ab4f553c7e1415aeecdda08bd08c4250d":[12,0,43,246,7],
 "structscore_1_1_string_constants.html#ab54e4cefa91c25e7ec01ce7fb3f4daf6":[12,0,43,246,101],
 "structscore_1_1_string_constants.html#ab5584afda170cbfb872e957a80f33191":[12,0,43,246,32],
-"structscore_1_1_string_constants.html#ab9b2341885a438d254b46cd4d8038fff":[12,0,43,246,105],
-"structscore_1_1_string_constants.html#ab9c086c64bec74613275323443e88ae4":[12,0,43,246,41],
-"structscore_1_1_string_constants.html#abe7cff6de465ef6fa0fbe4762b0149b8":[12,0,43,246,106],
-"structscore_1_1_string_constants.html#abf6bfdaabd4a80e151f154b20bcf97b1":[12,0,43,246,44],
-"structscore_1_1_string_constants.html#ac1c01469a7970d2f9c40aedae2b46854":[12,0,43,246,36],
-"structscore_1_1_string_constants.html#ac1fc202f5f8fab85fd8852fb2769174f":[12,0,43,246,56],
-"structscore_1_1_string_constants.html#ac23c9a0edc0e4889539d5b0002cefa26":[12,0,43,246,30]
+"structscore_1_1_string_constants.html#ab9b2341885a438d254b46cd4d8038fff":[12,0,43,246,105]
 };

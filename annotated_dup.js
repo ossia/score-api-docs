@@ -301,6 +301,7 @@ var annotated_dup =
       [ "EditJSScript", "class_j_s_1_1_edit_j_s_script.html", null ],
       [ "ExecStateWrapper", "class_j_s_1_1_exec_state_wrapper.html", "class_j_s_1_1_exec_state_wrapper" ],
       [ "Inlet", "class_j_s_1_1_inlet.html", "class_j_s_1_1_inlet" ],
+      [ "JsUtils", "class_j_s_1_1_js_utils.html", "class_j_s_1_1_js_utils" ],
       [ "LanguageSpec", "struct_j_s_1_1_language_spec.html", null ],
       [ "LibraryHandler", "class_j_s_1_1_library_handler.html", null ],
       [ "PanelDelegate", "class_j_s_1_1_panel_delegate.html", "class_j_s_1_1_panel_delegate" ],
