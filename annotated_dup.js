@@ -455,6 +455,7 @@ var annotated_dup =
       [ "Note", "class_midi_1_1_note.html", "class_midi_1_1_note" ],
       [ "NoteComparator", "struct_midi_1_1_note_comparator.html", "struct_midi_1_1_note_comparator" ],
       [ "NoteData", "struct_midi_1_1_note_data.html", "struct_midi_1_1_note_data" ],
+      [ "NoteRemover", "class_midi_1_1_note_remover.html", null ],
       [ "NoteView", "class_midi_1_1_note_view.html", "class_midi_1_1_note_view" ],
       [ "Presenter", "class_midi_1_1_presenter.html", "class_midi_1_1_presenter" ],
       [ "ProcessModel", "class_midi_1_1_process_model.html", "class_midi_1_1_process_model" ],
