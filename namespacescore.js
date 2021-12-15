@@ -260,6 +260,8 @@ var namespacescore =
     [ "StaticPropertyCommand", "structscore_1_1_static_property_command.html", null ],
     [ "StaticPropertyCommand< Faust::FaustEffectModel::p_text >", "structscore_1_1_static_property_command_3_01_faust_1_1_faust_effect_model_1_1p__text_01_4.html", null ],
     [ "StaticPropertyCommand< Gfx::Filter::Model::p_program >", "structscore_1_1_static_property_command_3_01_gfx_1_1_filter_1_1_model_1_1p__program_01_4.html", null ],
+    [ "StaticPropertyCommand< Jit::BytebeatModel::p_script >", "structscore_1_1_static_property_command_3_01_jit_1_1_bytebeat_model_1_1p__script_01_4.html", null ],
+    [ "StaticPropertyCommand< Jit::JitEffectModel::p_script >", "structscore_1_1_static_property_command_3_01_jit_1_1_jit_effect_model_1_1p__script_01_4.html", null ],
     [ "StaticPropertyCommand< JS::ProcessModel::p_script >", "structscore_1_1_static_property_command_3_01_j_s_1_1_process_model_1_1p__script_01_4.html", null ],
     [ "StringConstants", "structscore_1_1_string_constants.html", "structscore_1_1_string_constants" ],
     [ "SubtypeVariant", "classscore_1_1_subtype_variant.html", "classscore_1_1_subtype_variant" ],

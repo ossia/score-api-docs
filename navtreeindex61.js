@@ -1,5 +1,7 @@
 var NAVTREEINDEX61 =
 {
+"struct_scenario_1_1_scenario_being_copied.html#abdc970bde7e730d0f22751b80c528a3c":[12,0,42,207,5],
+"struct_scenario_1_1_scenario_being_copied.html#ac96fab4a5a936432e656867bc5377cbd":[12,0,42,207,4],
 "struct_scenario_1_1_scenario_being_copied.html#adff8dea55fd3eebf72151a58361e7c45":[12,0,42,207,2],
 "struct_scenario_1_1_scenario_being_copied.html#af0870927feb0ef913621f7333bd52372":[12,0,42,207,9],
 "struct_scenario_1_1_scenario_record_init_data.html":[12,0,42,228],
@@ -247,7 +249,5 @@ var NAVTREEINDEX61 =
 "struct_state_1_1_relation.html#a21e3a646aff8cf67a35983ee8fa801eb":[12,0,47,24,9],
 "struct_state_1_1_relation.html#a4e4fc4de0cc0d32ebb948689cfc6b938":[12,0,47,24,2],
 "struct_state_1_1_relation.html#a559dcfadb4374fe18699299bf4de1ed1":[12,0,47,24,5],
-"struct_state_1_1_relation.html#a684bd49ab664e3badf45b2a35398aafc":[12,0,47,24,3],
-"struct_state_1_1_relation.html#acba187d0a70e9322388a51674ddec90b":[12,0,47,24,6],
-"struct_state_1_1_relation.html#ade39cb3b49c7cac2a4e0c3a0c4bf3aa5":[12,0,47,24,4]
+"struct_state_1_1_relation.html#a684bd49ab664e3badf45b2a35398aafc":[12,0,47,24,3]
 };

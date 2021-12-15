@@ -1,5 +1,7 @@
 var NAVTREEINDEX52 =
 {
+"struct_execution_1_1_scenario_component.html#aaac896f1dc74484bf321c055d419d9cc":[12,0,9,38,0],
+"struct_execution_1_1_settings_1_1_commit_policies.html":[12,0,9,1,0],
 "struct_execution_1_1_settings_1_1_commit_policies.html#a302078563919afaa574e4fe32a397dd8":[12,0,9,1,0,3],
 "struct_execution_1_1_settings_1_1_commit_policies.html#a5545217d2d6961cf2e907d05c79ac65f":[12,0,9,1,0,2],
 "struct_execution_1_1_settings_1_1_commit_policies.html#a87b999e3cb232b1ed59ba359ac9cc024":[12,0,9,1,0,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX52 =
 "struct_gfx_1_1_texture_outlet_factory.html#a8254da2396e83635f428ed0a8c2cff90":[12,0,15,55,3],
 "struct_gfx_1_1_video_1_1_presenter_1_1_port.html":[12,0,15,4,5,0],
 "struct_gfx_1_1_video_1_1_presenter_1_1_port.html#a0c02eb2940bce59a2f3d6ac2e2b6730d":[12,0,15,4,5,0,0],
-"struct_gfx_1_1_video_1_1_presenter_1_1_port.html#a2ceea7b131af2969f242aa07e9446667":[12,0,15,4,5,0,1],
-"struct_gfx_1_1_video_1_1_presenter_1_1_port.html#ae8b8848e0c01abec6b4ce2f7349a0658":[12,0,15,4,5,0,2],
-"struct_gfx_1_1camera__settings.html":[12,0,15,10]
+"struct_gfx_1_1_video_1_1_presenter_1_1_port.html#a2ceea7b131af2969f242aa07e9446667":[12,0,15,4,5,0,1]
 };

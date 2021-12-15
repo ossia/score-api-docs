@@ -1,5 +1,7 @@
 var NAVTREEINDEX51 =
 {
+"struct_curve_1_1_style.html#a96f3faca1948359d961109bb7198a4ba":[12,0,5,47,12],
+"struct_curve_1_1_style.html#a97e52865aef68eebf675eb78ba450be0":[12,0,5,47,8],
 "struct_curve_1_1_style.html#a9eea13bca928960229ac6231ca94bdf5":[12,0,5,47,3],
 "struct_curve_1_1_style.html#aa2e29d5d92431d5c619d3f6837d0be54":[12,0,5,47,1],
 "struct_curve_1_1_style.html#aa81590a2b9e3a246d97d56a6075c9a82":[12,0,5,47,9],
@@ -247,7 +249,5 @@ var NAVTREEINDEX51 =
 "struct_execution_1_1_reconnect_outlets.html#ae9a6a5217c809a6ab775f819a590ba57":[12,0,9,37,0],
 "struct_execution_1_1_scenario_component.html":[12,0,9,38],
 "struct_execution_1_1_scenario_component.html#a379841a9d98b9d3dd5fd6ad1e20854b2":[12,0,9,38,1],
-"struct_execution_1_1_scenario_component.html#aa135661651621d212e2c86c59f3af356":[12,0,9,38,2],
-"struct_execution_1_1_scenario_component.html#aaac896f1dc74484bf321c055d419d9cc":[12,0,9,38,0],
-"struct_execution_1_1_settings_1_1_commit_policies.html":[12,0,9,1,0]
+"struct_execution_1_1_scenario_component.html#aa135661651621d212e2c86c59f3af356":[12,0,9,38,2]
 };

@@ -122,14 +122,14 @@ $(document).ready(function(){initNavTree('_script_edit_command_8hpp_source.html'
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">using</span> param_type = <span class="keyword">typename</span> Property_T::param_type;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">using</span> score::Command::Command;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="class_scenario_1_1_edit_script.html">EditScript</a>(<span class="keyword">const</span> Process_T&amp; model, param_type newScript)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="class_scenario_1_1_edit_script.html">EditScript</a>(<span class="keyword">const</span> Process_T&amp; model, param_type newScript, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx)</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      : m_path{model}</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      , m_newScript{std::move(newScript)}</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      , m_oldScript{(model.*Property_T::get)()}</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  {</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    m_oldCables = Dataflow::saveCables(</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        {<span class="keyword">const_cast&lt;</span>Process_T*<span class="keyword">&gt;</span>(&amp;model)},</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        score::IDocument::documentContext(model));</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        ctx);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; port : model.inlets())</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      m_oldInlets.emplace_back(</div>

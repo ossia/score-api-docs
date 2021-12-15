@@ -1,5 +1,7 @@
 var NAVTREEINDEX25 =
 {
+"class_process_1_1_value_outlet.html#ac22eec74cfc0bd48ab01aecf52a2c1b9":[12,0,36,87,2],
+"class_process_1_1_value_outlet.html#ad13944411e287446161f5d757b358634":[12,0,36,87,7],
 "class_process_1_1_value_outlet.html#ad54251319bcffa36e55a3de7b25bf6fa":[12,0,36,87,6],
 "class_process_flags__k.html":[12,0,199],
 "class_process_panel_graphics_proxy.html":[12,0,200],
@@ -247,7 +249,5 @@ var NAVTREEINDEX25 =
 "class_protocols_1_1_unix_datagram_widget.html":[12,0,37,65],
 "class_protocols_1_1_unix_datagram_widget.html#a2f3196aafa58e5fbfda1d4a497a69a61":[12,0,37,65,1],
 "class_protocols_1_1_unix_datagram_widget.html#a3490642c14fd9ed9b4682edd48cd0998":[12,0,37,65,2],
-"class_protocols_1_1_unix_datagram_widget.html#a4d96ea862f5d99ca27a252ef6c8220af":[12,0,37,65,0],
-"class_protocols_1_1_unix_stream_widget.html":[12,0,37,66],
-"class_protocols_1_1_unix_stream_widget.html#a2ea7b74de2a8e4dd3f6111da61b71712":[12,0,37,66,1]
+"class_protocols_1_1_unix_datagram_widget.html#a4d96ea862f5d99ca27a252ef6c8220af":[12,0,37,65,0]
 };

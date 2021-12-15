@@ -1,5 +1,7 @@
 var NAVTREEINDEX56 =
 {
+"struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#a18535ab6e232643ffbc7565aba57ad7e":[12,0,31,1,0,1,2],
+"struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#a22aef452560963485d1079f5e661c6f1":[12,0,31,1,0,1,7],
 "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#a6e2222756fdebcbfc363372374ee1f79":[12,0,31,1,0,1,4],
 "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#ab30810f7c78f5e6d51fb0117c8a3bf58":[12,0,31,1,0,1,5],
 "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#aca3683f47f9a6689f2e14c24d5d5bdb4":[12,0,31,1,0,1,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX56 =
 "struct_nodes_1_1_value_filter_1_1_node_1_1_noise_filter.html#abe5a5af1919912e27ab172bd757decd1":[12,0,31,27,0,1,8],
 "struct_nodes_1_1_value_filter_1_1_node_1_1_noise_filter.html#ac7b152fc599e3d7788d12b3c40dfcad9":[12,0,31,27,0,1,4],
 "struct_nodes_1_1_value_filter_1_1_node_1_1_noise_filter.html#af782bb96cb72ecf57e2e818838ab4bdb":[12,0,31,27,0,1,2],
-"struct_nodes_1_1_value_filter_1_1_node_1_1_noise_filter.html#af92f10a26eea303d6565a62bbb2a0c1d":[12,0,31,27,0,1,3],
-"struct_optional_sentinel.html":[12,0,194],
-"struct_optional_sentinel.html#a4794e964613d8d1906daee8a639fc7e0":[12,0,194,1]
+"struct_nodes_1_1_value_filter_1_1_node_1_1_noise_filter.html#af92f10a26eea303d6565a62bbb2a0c1d":[12,0,31,27,0,1,3]
 };
