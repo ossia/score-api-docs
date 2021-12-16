@@ -1,5 +1,8 @@
 var NAVTREEINDEX49 =
 {
+"score-plugin-protocols_2_protocols_2_settings_2_model_8hpp_source.html":[13,0,733],
+"score-plugin-protocols_2_protocols_2_settings_2_view_8hpp_source.html":[13,0,1317],
+"score-plugin-recording_2_recording_2_application_plugin_8hpp_source.html":[13,0,55],
 "score-plugin-remotecontrol_2_remote_control_2_application_plugin_8hpp_source.html":[13,0,56],
 "score-plugin-remotecontrol_2_remote_control_2_scenario_2_process_8hpp_source.html":[13,0,895],
 "score-plugin-remotecontrol_2_remote_control_2_settings_2_factory_8hpp_source.html":[13,0,434],
@@ -246,8 +249,5 @@ var NAVTREEINDEX49 =
 "struct_control_1_1_float_display.html#a66fcebeb2328caa8eea63d44c5b3438b":[12,0,3,14,8],
 "struct_control_1_1_float_display.html#a6d6db4c53c4622c5ea544371f57bd01d":[12,0,3,14,11],
 "struct_control_1_1_float_display.html#a7d6b9bad9c39d35dd7df4ae194eac129":[12,0,3,14,3],
-"struct_control_1_1_float_display.html#a873afb42b28000072680d74fd31e1a00":[12,0,3,14,5],
-"struct_control_1_1_float_display.html#a9c6cb7fd901f0d8206eda20442a0637f":[12,0,3,14,7],
-"struct_control_1_1_float_display.html#ad39a3cf12bd086dc3c5c23b9e372b082":[12,0,3,14,12],
-"struct_control_1_1_float_display.html#adbd99f8e5bd95fa599c5463bf1fa6424":[12,0,3,14,10]
+"struct_control_1_1_float_display.html#a873afb42b28000072680d74fd31e1a00":[12,0,3,14,5]
 };

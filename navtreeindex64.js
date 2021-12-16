@@ -1,5 +1,8 @@
 var NAVTREEINDEX64 =
 {
+"structscore_1_1_application_context.html#a1d0d5666f102cde594272f595a8172f0":[12,0,43,19,4],
+"structscore_1_1_application_context.html#a2a667b5e7d6d1d55e8c602000db26fb3":[12,0,43,19,12],
+"structscore_1_1_application_context.html#a3c1ded2c0f350c1dad149237cad1b9db":[12,0,43,19,11],
 "structscore_1_1_application_context.html#a52826f47107359ea13fdf8aff61bea35":[12,0,43,19,1],
 "structscore_1_1_application_context.html#a63ad78c9bf47c24bb16edecf48eac2b3":[12,0,43,19,10],
 "structscore_1_1_application_context.html#a79943b6e9945748b1cad31369a630e92":[12,0,43,19,3],
@@ -16,9 +19,10 @@ var NAVTREEINDEX64 =
 "structscore_1_1_application_settings.html#a2ca3a0746bc5d3dd143ff71943607eba":[12,0,43,24,6],
 "structscore_1_1_application_settings.html#a4624f2eed8f8e9bacc8533cedff743c1":[12,0,43,24,5],
 "structscore_1_1_application_settings.html#a50b4c9cd2201282fc335bc4ca5f4a6c8":[12,0,43,24,1],
+"structscore_1_1_application_settings.html#a6ccaa699bec50370335dd173c0d8c55a":[12,0,43,24,8],
 "structscore_1_1_application_settings.html#a761ffb07905a9fa1234563f8bd559714":[12,0,43,24,7],
 "structscore_1_1_application_settings.html#ac4485606b08677be4115260f2e30b241":[12,0,43,24,4],
-"structscore_1_1_application_settings.html#adf1c9cd0f8980bf337fb2ba639553011":[12,0,43,24,8],
+"structscore_1_1_application_settings.html#adf1c9cd0f8980bf337fb2ba639553011":[12,0,43,24,9],
 "structscore_1_1_application_settings.html#ae2b0c986e978926b5acc72732490123d":[12,0,43,24,2],
 "structscore_1_1_bar_spin_box.html":[12,0,43,28],
 "structscore_1_1_bar_spin_box.html#a1632cc8850585626bda87bec604ca476":[12,0,43,28,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX64 =
 "structscore_1_1_hierarchical_member.html#acb359525555f83f75779444381383b31":[12,0,43,117,0],
 "structscore_1_1_id_gen.html":[12,0,43,123],
 "structscore_1_1_id_gen.html#a11260b8219cc0759e2d6258f27bbd478":[12,0,43,123,0],
-"structscore_1_1_id_gen.html#a4ccb2a88cd9e6cc1a0de88a1cb851549":[12,0,43,123,4],
-"structscore_1_1_id_gen.html#a6554c04f75ce6f890786e85b5392fab4":[12,0,43,123,2],
-"structscore_1_1_id_gen.html#a876e0e0ae51e08fbd4d7cb2f97a5917c":[12,0,43,123,3],
-"structscore_1_1_id_gen.html#ab8d6c7fa42ff4024cc388cc3e4c5ca5d":[12,0,43,123,1],
-"structscore_1_1_loaded_plugin_versions.html":[12,0,43,139]
+"structscore_1_1_id_gen.html#a4ccb2a88cd9e6cc1a0de88a1cb851549":[12,0,43,123,4]
 };

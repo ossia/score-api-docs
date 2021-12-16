@@ -18,6 +18,7 @@ var classscore_1_1_document =
     [ "saveDocumentModelAsByteArray", "classscore_1_1_document.html#a9fc96385aa99d0d44d0349aba156d752", null ],
     [ "saveDocumentModelAsJson", "classscore_1_1_document.html#aea78eafd4c3e243d91cf7931d2a14947", null ],
     [ "selectionStack", "classscore_1_1_document.html#a7f39b2512139999035e9db6dfbb28f6f", null ],
+    [ "updateTimers", "classscore_1_1_document.html#a02e9092cbef0832881a222295288d877", null ],
     [ "view", "classscore_1_1_document.html#a526a4ff7b4a3ee1ed9501089be719ad8", null ],
     [ "virgin", "classscore_1_1_document.html#ab468cdc0d9a73e9cb666770f410e0b5e", null ],
     [ "DocumentBuilder", "classscore_1_1_document.html#ae9e8269d4e911d05fa87684010e29b26", null ],

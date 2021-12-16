@@ -8,5 +8,6 @@ var structscore_1_1_application_settings =
     [ "opengl", "structscore_1_1_application_settings.html#a4624f2eed8f8e9bacc8533cedff743c1", null ],
     [ "saveFormatVersion", "structscore_1_1_application_settings.html#a2ca3a0746bc5d3dd143ff71943607eba", null ],
     [ "tryToRestore", "structscore_1_1_application_settings.html#a761ffb07905a9fa1234563f8bd559714", null ],
+    [ "uiEventRate", "structscore_1_1_application_settings.html#a6ccaa699bec50370335dd173c0d8c55a", null ],
     [ "waitAfterLoad", "structscore_1_1_application_settings.html#adf1c9cd0f8980bf337fb2ba639553011", null ]
 ];
