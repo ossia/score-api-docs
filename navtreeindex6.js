@@ -1,5 +1,9 @@
 var NAVTREEINDEX6 =
 {
+"class_automation_1_1_point_inspector_widget.html":[12,0,1,10],
+"class_automation_1_1_point_inspector_widget.html#a5bba7a9bdf5dcba2a5888ec3c77daadc":[12,0,1,10,0],
+"class_automation_1_1_process_model.html":[12,0,1,11],
+"class_automation_1_1_process_model.html#a0f8ba4b409a3b928c280051560874d43":[12,0,1,11,15],
 "class_automation_1_1_process_model.html#a19ddeffeab74bdc8db63e7a82f05d382":[12,0,1,11,2],
 "class_automation_1_1_process_model.html#a2156a864ecbd39fccc31fc37fa04103b":[12,0,1,11,9],
 "class_automation_1_1_process_model.html#a294bc4ab7eb042be1458fb5394c91242":[12,0,1,11,12],
@@ -245,9 +249,5 @@ var NAVTREEINDEX6 =
 "class_curve_1_1_curve_process_presenter.html#ac2e8ce3b70312c0ce1878cfe3f1e1bb3":[12,0,5,13,16],
 "class_curve_1_1_curve_process_presenter.html#ac4d9f89ecf48d704bc7faa2a0c160c2e":[12,0,5,13,3],
 "class_curve_1_1_curve_tool.html":[12,0,5,15],
-"class_curve_1_1_curve_tool.html#a456d8413701d559a06655af0152bc31a":[12,0,5,15,4],
-"class_curve_1_1_curve_tool.html#a4fb1432e0c6c95d5e9cec60bb785dc7c":[12,0,5,15,2],
-"class_curve_1_1_curve_tool.html#a7e4e6c6d3ba2d3cee4100332b6ee421a":[12,0,5,15,0],
-"class_curve_1_1_curve_tool.html#a8a0d6163140e4310f206af21e6fa4a38":[12,0,5,15,3],
-"class_curve_1_1_curve_tool.html#ae53a7638db7c18f64b7b27234599aa85":[12,0,5,15,1]
+"class_curve_1_1_curve_tool.html#a456d8413701d559a06655af0152bc31a":[12,0,5,15,4]
 };
