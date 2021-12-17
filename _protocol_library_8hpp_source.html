@@ -187,7 +187,7 @@ $(document).ready(function(){initNavTree('_protocol_library_8hpp_source.html',''
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    fact.<a class="code" href="classscore_1_1_interface_list.html#a9089a3c0c8fbff8015cd0d2bba50c8be">insert</a>(std::make_unique&lt;Protocols::OSCQueryProtocolFactory&gt;());</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">auto</span>&amp; devplug = ctx.plugin&lt;<a class="code" href="class_explorer_1_1_device_document_plugin.html">Explorer::DeviceDocumentPlugin</a>&gt;();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">auto</span>&amp; devplug = ctx.plugin&lt;Explorer::DeviceDocumentPlugin&gt;();</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">auto</span>&amp; model = devplug.explorer();</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; set = *n.target&lt;<a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&gt;();</div>
@@ -265,7 +265,7 @@ $(document).ready(function(){initNavTree('_protocol_library_8hpp_source.html',''
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">if</span> (set.protocol == <a class="code" href="class_uuid_key.html">UuidKey&lt;Device::ProtocolFactory&gt;</a>{})</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keyword">auto</span>&amp; devplug = ctx.plugin&lt;<a class="code" href="class_explorer_1_1_device_document_plugin.html">Explorer::DeviceDocumentPlugin</a>&gt;();</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keyword">auto</span>&amp; devplug = ctx.plugin&lt;Explorer::DeviceDocumentPlugin&gt;();</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keyword">auto</span>&amp; model = devplug.explorer();</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    model.checkAndLoadDevice(set);</div>
@@ -277,7 +277,6 @@ $(document).ready(function(){initNavTree('_protocol_library_8hpp_source.html',''
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_tree_node_html"><div class="ttname"><a href="class_tree_node.html">TreeNode&lt; DeviceExplorerNode &gt;</a></div></div>
-<div class="ttc" id="aclass_explorer_1_1_device_document_plugin_html"><div class="ttname"><a href="class_explorer_1_1_device_document_plugin.html">Explorer::DeviceDocumentPlugin</a></div><div class="ttdef"><b>Definition:</b> DeviceDocumentPlugin.hpp:23</div></div>
 <div class="ttc" id="anamespace_device_html_ae28e7db29ec71528be7138e7ff38e166"><div class="ttname"><a href="namespace_device.html#ae28e7db29ec71528be7138e7ff38e166">Device::loadDeviceFromXML</a></div><div class="ttdeci">bool loadDeviceFromXML(const QString &amp;filePath, Device::Node &amp;node)</div><div class="ttdoc">loadDeviceFromJamomaJSON Will load a device in a Jamoma-format XML file into the node.</div><div class="ttdef"><b>Definition:</b> JamomaDeviceLoader.cpp:250</div></div>
 <div class="ttc" id="astruct_protocols_1_1_h_t_t_p_specific_settings_html"><div class="ttname"><a href="struct_protocols_1_1_h_t_t_p_specific_settings.html">Protocols::HTTPSpecificSettings</a></div><div class="ttdef"><b>Definition:</b> HTTPSpecificSettings.hpp:8</div></div>
 <div class="ttc" id="aclass_protocols_1_1_o_s_c_library_handler_html"><div class="ttname"><a href="class_protocols_1_1_o_s_c_library_handler.html">Protocols::OSCLibraryHandler</a></div><div class="ttdef"><b>Definition:</b> ProtocolLibrary.hpp:56</div></div>

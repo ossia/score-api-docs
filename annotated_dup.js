@@ -186,7 +186,6 @@ var annotated_dup =
       [ "DefaultBounds< int >", "struct_explorer_1_1_default_bounds_3_01int_01_4.html", null ],
       [ "DefaultListeningHandler", "class_explorer_1_1_default_listening_handler.html", "class_explorer_1_1_default_listening_handler" ],
       [ "DefaultListeningHandlerFactory", "class_explorer_1_1_default_listening_handler_factory.html", "class_explorer_1_1_default_listening_handler_factory" ],
-      [ "DeviceDocumentPlugin", "class_explorer_1_1_device_document_plugin.html", "class_explorer_1_1_device_document_plugin" ],
       [ "DeviceEditDialog", "class_explorer_1_1_device_edit_dialog.html", "class_explorer_1_1_device_edit_dialog" ],
       [ "DeviceExplorerFilterProxyModel", "class_explorer_1_1_device_explorer_filter_proxy_model.html", "class_explorer_1_1_device_explorer_filter_proxy_model" ],
       [ "DeviceExplorerModel", "class_explorer_1_1_device_explorer_model.html", "class_explorer_1_1_device_explorer_model" ],

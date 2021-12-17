@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('_device_explorer_model_8hpp_source.htm
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">using</span> QAbstractItemModel::beginResetModel;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">using</span> QAbstractItemModel::endResetModel;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_explorer_1_1_device_explorer_model.html">DeviceExplorerModel</a>(<a class="code" href="class_explorer_1_1_device_document_plugin.html">DeviceDocumentPlugin</a>&amp;, QObject* parent);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_explorer_1_1_device_explorer_model.html">DeviceExplorerModel</a>(DeviceDocumentPlugin&amp;, QObject* parent);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  ~<a class="code" href="class_explorer_1_1_device_explorer_model.html">DeviceExplorerModel</a>();</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
@@ -165,7 +165,7 @@ $(document).ready(function(){initNavTree('_device_explorer_model_8hpp_source.htm
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="comment">// The class that does the link with the low-level implementation of the</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="comment">// devices. This is here so that commands don&#39;t need to save</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="comment">// at the same time a path to the device explorer, and the device doc plugin.</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="class_explorer_1_1_device_document_plugin.html">DeviceDocumentPlugin</a>&amp; deviceModel() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  DeviceDocumentPlugin&amp; deviceModel() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  QModelIndexList selectedIndexes() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">const</span> <a class="code" href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a>&amp; commandStack()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_cmdQ; }</div>
@@ -270,7 +270,7 @@ $(document).ready(function(){initNavTree('_device_explorer_model_8hpp_source.htm
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keywordtype">void</span> debug_printPath(<span class="keyword">const</span> <a class="code" href="class_tree_path.html">Device::NodePath</a>&amp; path);</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <a class="code" href="class_explorer_1_1_device_document_plugin.html">DeviceDocumentPlugin</a>&amp; m_devicePlugin;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  DeviceDocumentPlugin&amp; m_devicePlugin;</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  QModelIndex bottomIndex(<span class="keyword">const</span> QModelIndex&amp; index) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
@@ -309,7 +309,6 @@ $(document).ready(function(){initNavTree('_device_explorer_model_8hpp_source.htm
 <div class="ttc" id="aclass_explorer_1_1_device_explorer_model_html"><div class="ttname"><a href="class_explorer_1_1_device_explorer_model.html">Explorer::DeviceExplorerModel</a></div><div class="ttdef"><b>Definition:</b> DeviceExplorerModel.hpp:63</div></div>
 <div class="ttc" id="aclass_tree_node_html"><div class="ttname"><a href="class_tree_node.html">TreeNode&lt; DeviceExplorerNode &gt;</a></div></div>
 <div class="ttc" id="astruct_explorer_1_1_selected_nodes_html_ae290430e3602a169ce75d658819a3a87"><div class="ttname"><a href="struct_explorer_1_1_selected_nodes.html#ae290430e3602a169ce75d658819a3a87">Explorer::SelectedNodes::messages</a></div><div class="ttdeci">std::vector&lt; Device::Node * &gt; messages</div><div class="ttdoc">messages The selected messages</div><div class="ttdef"><b>Definition:</b> DeviceExplorerModel.hpp:60</div></div>
-<div class="ttc" id="aclass_explorer_1_1_device_document_plugin_html"><div class="ttname"><a href="class_explorer_1_1_device_document_plugin.html">Explorer::DeviceDocumentPlugin</a></div><div class="ttdef"><b>Definition:</b> DeviceDocumentPlugin.hpp:23</div></div>
 <div class="ttc" id="astruct_device_1_1_address_settings_html"><div class="ttname"><a href="struct_device_1_1_address_settings.html">Device::AddressSettings</a></div><div class="ttdef"><b>Definition:</b> AddressSettings.hpp:50</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:15</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:77</div></div>

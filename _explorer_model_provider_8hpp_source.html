@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('_explorer_model_provider_8hpp_source.h
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <a class="code" href="class_device_1_1_node_based_item_model.html">Device::NodeBasedItemModel</a>*</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  getNodeModel(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">auto</span> plug = ctx.findPlugin&lt;<a class="code" href="class_explorer_1_1_device_document_plugin.html">DeviceDocumentPlugin</a>&gt;();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">auto</span> plug = ctx.findPlugin&lt;DeviceDocumentPlugin&gt;();</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">if</span> (plug)</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <span class="keywordflow">return</span> &amp;plug-&gt;explorer();</div>
@@ -126,7 +126,6 @@ $(document).ready(function(){initNavTree('_explorer_model_provider_8hpp_source.h
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_explorer_1_1_device_document_plugin_html"><div class="ttname"><a href="class_explorer_1_1_device_document_plugin.html">Explorer::DeviceDocumentPlugin</a></div><div class="ttdef"><b>Definition:</b> DeviceDocumentPlugin.hpp:23</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:15</div></div>
 <div class="ttc" id="aclass_device_1_1_device_model_provider_html"><div class="ttname"><a href="class_device_1_1_device_model_provider.html">Device::DeviceModelProvider</a></div><div class="ttdef"><b>Definition:</b> DeviceModelProvider.hpp:14</div></div>
 <div class="ttc" id="aclass_explorer_1_1_model_provider_html"><div class="ttname"><a href="class_explorer_1_1_model_provider.html">Explorer::ModelProvider</a></div><div class="ttdef"><b>Definition:</b> ExplorerModelProvider.hpp:9</div></div>
