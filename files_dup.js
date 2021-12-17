@@ -565,6 +565,7 @@ var files_dup =
     [ "isf.hpp", "isf_8hpp_source.html", null ],
     [ "ISFNode.hpp", "_i_s_f_node_8hpp_source.html", null ],
     [ "IsTemplate.hpp", "_is_template_8hpp_source.html", null ],
+    [ "ItemBounder.hpp", "_item_bounder_8hpp_source.html", null ],
     [ "ItemModelFilterLineEdit.hpp", "_item_model_filter_line_edit_8hpp_source.html", null ],
     [ "JackInterface.hpp", "_jack_interface_8hpp_source.html", null ],
     [ "JackTransport.hpp", "_jack_transport_8hpp_source.html", null ],

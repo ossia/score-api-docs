@@ -152,6 +152,7 @@ var namespacescore =
     [ "InterfaceList", "classscore_1_1_interface_list.html", "classscore_1_1_interface_list" ],
     [ "InterfaceListBase", "classscore_1_1_interface_list_base.html", "classscore_1_1_interface_list_base" ],
     [ "IntSlider", "classscore_1_1_int_slider.html", "classscore_1_1_int_slider" ],
+    [ "ItemBounder", "classscore_1_1_item_bounder.html", "classscore_1_1_item_bounder" ],
     [ "lazy_init_t", "structscore_1_1lazy__init__t.html", null ],
     [ "linear_id_generator", "structscore_1_1linear__id__generator.html", null ],
     [ "LoadedPluginVersions", "structscore_1_1_loaded_plugin_versions.html", "structscore_1_1_loaded_plugin_versions" ],

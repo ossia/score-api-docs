@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"class_explorer_1_1_command_1_1_update_address_settings.html#a6beaf327a0df6121d9e2f2b2fe752b8a":[12,0,10,0,9,0],
 "class_explorer_1_1_command_1_1_update_and_reload_macro.html":[12,0,10,0,10],
 "class_explorer_1_1_command_1_1_update_device_settings.html":[12,0,10,0,11],
 "class_explorer_1_1_command_1_1_update_device_settings.html#a54d33b294cd79dda30ae3b095455cefc":[12,0,10,0,11,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "class_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i.html#ab21613a45cec414505e2789bcbd6abdf":[12,0,12,0,1],
 "class_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i.html#ab330dbcff11c9c1adb6d80a606a78d2f":[12,0,12,0,3],
 "class_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i.html#ad663d42141f5f3bb0f614672da2052f0":[12,0,12,0,4],
-"class_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i.html#afda8308ecd7c63a80961f2bafb784b10":[12,0,12,0,7],
-"class_factor_oracle2_m_i_d_i_1_1_notes.html":[12,0,12,1]
+"class_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i.html#afda8308ecd7c63a80961f2bafb784b10":[12,0,12,0,7]
 };

@@ -100,94 +100,96 @@ $(document).ready(function(){initNavTree('_temporal_interval_header_8hpp_source.
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;score/graphics/GraphicWidgets.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;score/widgets/MimeData.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/optional.hpp&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QRect&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;qnamespace.h&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;Scenario/Document/Interval/IntervalHeader.hpp&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;verdigris&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span>QGraphicsSceneMouseEvent;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span>QPainter;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span>QStyleOptionGraphicsItem;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span>QWidget;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_scenario.html">Scenario</a></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">class </span>TemporalIntervalPresenter;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_scenario_1_1_temporal_interval_header.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_scenario_1_1_temporal_interval_header.html">TemporalIntervalHeader</a> final : <span class="keyword">public</span> <a class="code" href="class_scenario_1_1_interval_header.html">IntervalHeader</a></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  W_OBJECT(<a class="code" href="class_scenario_1_1_temporal_interval_header.html">TemporalIntervalHeader</a>)</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="class_scenario_1_1_temporal_interval_header.html">TemporalIntervalHeader</a>(<a class="code" href="class_scenario_1_1_temporal_interval_presenter.html">TemporalIntervalPresenter</a>&amp; pres);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  QRectF boundingRect() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> paint(</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      QPainter* painter,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keyword">const</span> QStyleOptionGraphicsItem* option,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      QWidget* widget) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> updateButtons();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_scenario_1_1_temporal_interval_header.html#a8b1e65c6c9077eeea0ace48430e64b00">updateOverlay</a>();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">void</span> setSelected(<span class="keywordtype">bool</span> b);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">void</span> setExecuting(<span class="keywordtype">bool</span> b);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">void</span> setLabel(<span class="keyword">const</span> QString&amp; label);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> doubleClicked() W_SIGNAL(doubleClicked);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> intervalHoverEnter() W_SIGNAL(intervalHoverEnter);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> intervalHoverLeave() W_SIGNAL(intervalHoverLeave);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> dropReceived(<span class="keyword">const</span> QPointF&amp; pos, <span class="keyword">const</span> QMimeData&amp; arg_2)</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      W_SIGNAL(dropReceived, pos, arg_2);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> hoverEnterEvent(QGraphicsSceneHoverEvent* h) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> hoverLeaveEvent(QGraphicsSceneHoverEvent* h) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> dragEnterEvent(QGraphicsSceneDragDropEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> dragLeaveEvent(QGraphicsSceneDragDropEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> dropEvent(QGraphicsSceneDragDropEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> mouseDoubleClickEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">void</span> updateShape() noexcept;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> setState(IntervalHeader::State s) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> on_textChanged() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">bool</span> contains(<span class="keyword">const</span> QPointF&amp; point) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  QPainterPath shape() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  qreal m_previous_x{};</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  QRectF m_textRectCache;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  QPixmap m_line;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  QPolygonF m_poly;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="classscore_1_1_q_graphics_selectable_pixmap_toggle.html">score::QGraphicsSelectablePixmapToggle</a>* m_rackButton{};</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="classscore_1_1_q_graphics_pixmap_toggle.html">score::QGraphicsPixmapToggle</a>* m_mute{};</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="classscore_1_1_q_graphics_pixmap_button.html">score::QGraphicsPixmapButton</a>* m_play{};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <a class="code" href="classscore_1_1_q_graphics_pixmap_button.html">score::QGraphicsPixmapButton</a>* m_stop{};</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <a class="code" href="classscore_1_1_q_graphics_slider.html">score::QGraphicsSlider</a>* m_speed{};</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <a class="code" href="class_scenario_1_1_temporal_interval_presenter.html">TemporalIntervalPresenter</a>&amp; m_presenter;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">bool</span> m_selected : 1;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">bool</span> m_hovered : 1;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">bool</span> m_overlay : 1;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">bool</span> m_executing : 1;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;score/graphics/ItemBounder.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;score/widgets/MimeData.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/optional.hpp&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QRect&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;qnamespace.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;Scenario/Document/Interval/IntervalHeader.hpp&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;verdigris&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span>QGraphicsSceneMouseEvent;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span>QPainter;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span>QStyleOptionGraphicsItem;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span>QWidget;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_scenario.html">Scenario</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">class </span>TemporalIntervalPresenter;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_scenario_1_1_temporal_interval_header.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_scenario_1_1_temporal_interval_header.html">TemporalIntervalHeader</a> final : <span class="keyword">public</span> <a class="code" href="class_scenario_1_1_interval_header.html">IntervalHeader</a></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  W_OBJECT(<a class="code" href="class_scenario_1_1_temporal_interval_header.html">TemporalIntervalHeader</a>)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="class_scenario_1_1_temporal_interval_header.html">TemporalIntervalHeader</a>(<a class="code" href="class_scenario_1_1_temporal_interval_presenter.html">TemporalIntervalPresenter</a>&amp; pres);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  QRectF boundingRect() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> paint(</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      QPainter* painter,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <span class="keyword">const</span> QStyleOptionGraphicsItem* option,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      QWidget* widget) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">void</span> updateButtons();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_scenario_1_1_temporal_interval_header.html#a8b1e65c6c9077eeea0ace48430e64b00">updateOverlay</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">void</span> setSelected(<span class="keywordtype">bool</span> b);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">void</span> setExecuting(<span class="keywordtype">bool</span> b);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span> setLabel(<span class="keyword">const</span> QString&amp; label);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">void</span> doubleClicked() W_SIGNAL(doubleClicked);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> intervalHoverEnter() W_SIGNAL(intervalHoverEnter);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> intervalHoverLeave() W_SIGNAL(intervalHoverLeave);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> dropReceived(<span class="keyword">const</span> QPointF&amp; pos, <span class="keyword">const</span> QMimeData&amp; arg_2)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      W_SIGNAL(dropReceived, pos, arg_2);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> hoverEnterEvent(QGraphicsSceneHoverEvent* h) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> hoverLeaveEvent(QGraphicsSceneHoverEvent* h) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> dragEnterEvent(QGraphicsSceneDragDropEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> dragLeaveEvent(QGraphicsSceneDragDropEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> dropEvent(QGraphicsSceneDragDropEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> mouseDoubleClickEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> updateShape() noexcept;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> setState(IntervalHeader::State s) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">void</span> on_textChanged() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">bool</span> contains(<span class="keyword">const</span> QPointF&amp; point) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  QPainterPath shape() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="classscore_1_1_item_bounder.html">score::ItemBounder</a> m_bounder{};</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  QRectF m_textRectCache;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  QPixmap m_line;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  QPolygonF m_poly;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="classscore_1_1_q_graphics_selectable_pixmap_toggle.html">score::QGraphicsSelectablePixmapToggle</a>* m_rackButton{};</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="classscore_1_1_q_graphics_pixmap_toggle.html">score::QGraphicsPixmapToggle</a>* m_mute{};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <a class="code" href="classscore_1_1_q_graphics_pixmap_button.html">score::QGraphicsPixmapButton</a>* m_play{};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <a class="code" href="classscore_1_1_q_graphics_pixmap_button.html">score::QGraphicsPixmapButton</a>* m_stop{};</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <a class="code" href="classscore_1_1_q_graphics_slider.html">score::QGraphicsSlider</a>* m_speed{};</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="class_scenario_1_1_temporal_interval_presenter.html">TemporalIntervalPresenter</a>&amp; m_presenter;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">bool</span> m_selected : 1;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">bool</span> m_hovered : 1;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">bool</span> m_overlay : 1;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">bool</span> m_executing : 1;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_scenario_1_1_interval_header_html"><div class="ttname"><a href="class_scenario_1_1_interval_header.html">Scenario::IntervalHeader</a></div><div class="ttdef"><b>Definition:</b> IntervalHeader.hpp:11</div></div>
 <div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>
-<div class="ttc" id="aclass_scenario_1_1_temporal_interval_header_html"><div class="ttname"><a href="class_scenario_1_1_temporal_interval_header.html">Scenario::TemporalIntervalHeader</a></div><div class="ttdef"><b>Definition:</b> TemporalIntervalHeader.hpp:23</div></div>
+<div class="ttc" id="aclassscore_1_1_item_bounder_html"><div class="ttname"><a href="classscore_1_1_item_bounder.html">score::ItemBounder</a></div><div class="ttdef"><b>Definition:</b> ItemBounder.hpp:8</div></div>
+<div class="ttc" id="aclass_scenario_1_1_temporal_interval_header_html"><div class="ttname"><a href="class_scenario_1_1_temporal_interval_header.html">Scenario::TemporalIntervalHeader</a></div><div class="ttdef"><b>Definition:</b> TemporalIntervalHeader.hpp:24</div></div>
 <div class="ttc" id="aclassscore_1_1_q_graphics_slider_html"><div class="ttname"><a href="classscore_1_1_q_graphics_slider.html">score::QGraphicsSlider</a></div><div class="ttdef"><b>Definition:</b> QGraphicsSlider.hpp:14</div></div>
 <div class="ttc" id="aclassscore_1_1_q_graphics_pixmap_toggle_html"><div class="ttname"><a href="classscore_1_1_q_graphics_pixmap_toggle.html">score::QGraphicsPixmapToggle</a></div><div class="ttdef"><b>Definition:</b> QGraphicsPixmapToggle.hpp:15</div></div>
-<div class="ttc" id="aclass_scenario_1_1_temporal_interval_header_html_a8b1e65c6c9077eeea0ace48430e64b00"><div class="ttname"><a href="class_scenario_1_1_temporal_interval_header.html#a8b1e65c6c9077eeea0ace48430e64b00">Scenario::TemporalIntervalHeader::updateOverlay</a></div><div class="ttdeci">void updateOverlay()</div><div class="ttdef"><b>Definition:</b> TemporalIntervalHeader.cpp:177</div></div>
+<div class="ttc" id="aclass_scenario_1_1_temporal_interval_header_html_a8b1e65c6c9077eeea0ace48430e64b00"><div class="ttname"><a href="class_scenario_1_1_temporal_interval_header.html#a8b1e65c6c9077eeea0ace48430e64b00">Scenario::TemporalIntervalHeader::updateOverlay</a></div><div class="ttdeci">void updateOverlay()</div><div class="ttdef"><b>Definition:</b> TemporalIntervalHeader.cpp:154</div></div>
 <div class="ttc" id="aclassscore_1_1_q_graphics_pixmap_button_html"><div class="ttname"><a href="classscore_1_1_q_graphics_pixmap_button.html">score::QGraphicsPixmapButton</a></div><div class="ttdef"><b>Definition:</b> QGraphicsPixmapButton.hpp:14</div></div>
 <div class="ttc" id="aclassscore_1_1_q_graphics_selectable_pixmap_toggle_html"><div class="ttname"><a href="classscore_1_1_q_graphics_selectable_pixmap_toggle.html">score::QGraphicsSelectablePixmapToggle</a></div><div class="ttdef"><b>Definition:</b> QGraphicsSelectablePixmapToggle.hpp:17</div></div>
 <div class="ttc" id="aclass_scenario_1_1_temporal_interval_presenter_html"><div class="ttname"><a href="class_scenario_1_1_temporal_interval_presenter.html">Scenario::TemporalIntervalPresenter</a></div><div class="ttdef"><b>Definition:</b> TemporalIntervalPresenter.hpp:22</div></div>

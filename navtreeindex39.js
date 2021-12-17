@@ -1,5 +1,6 @@
 var NAVTREEINDEX39 =
 {
+"class_vec3f_value_type.html#ab2b1465e13666a6e3d0cae0950cda917":[12,0,500,2],
 "class_vec3f_value_type.html#ab8476ced48606b72eccd8008abcfabdf":[12,0,500,13],
 "class_vec3f_value_type.html#adc47f25340f9688fb08c760bf533dc92":[12,0,500,28],
 "class_vec3f_value_type.html#add5fabfce187161de13ea71f28090565":[12,0,500,31],
@@ -248,6 +249,5 @@ var NAVTREEINDEX39 =
 "classscore_1_1_aggregate_command.html#a6dc11b99830275d9d21956c68409b4e8":[12,0,43,14,10],
 "classscore_1_1_aggregate_command.html#a80af29ae389914f36e6a455c0064a434":[12,0,43,14,1],
 "classscore_1_1_aggregate_command.html#a8b590dc54fa1dd0cea4d5d28e410b08f":[12,0,43,14,0],
-"classscore_1_1_aggregate_command.html#ac1b0f58c71442f2aeda7d4e9643ca65d":[12,0,43,14,6],
-"classscore_1_1_aggregate_command.html#aca57e3e549fe938dd8a60447d0f70f85":[12,0,43,14,2]
+"classscore_1_1_aggregate_command.html#ac1b0f58c71442f2aeda7d4e9643ca65d":[12,0,43,14,6]
 };

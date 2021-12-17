@@ -1,5 +1,9 @@
 var NAVTREEINDEX56 =
 {
+"struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html#a19d482122a078b378b0bb674c7f0e98b":[12,0,31,0,0,1,3],
+"struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html#a1ec962371d6fef7b0b1af6c54d2c0eee":[12,0,31,0,0,1,4],
+"struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html#a444c9f7c86b8ae4c5fcae8c96b5f20f8":[12,0,31,0,0,1,5],
+"struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html#a69ed0de3c7b1f77a7b1fcd7c9701611a":[12,0,31,0,0,1,0],
 "struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html#a79306c30421b501a4b3e3777750c3fe7":[12,0,31,0,0,1,8],
 "struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html#ad4751baf7e954812d57189758e2054ce":[12,0,31,0,0,1,7],
 "struct_nodes_1_1_audio_looper_1_1_node.html":[12,0,31,1,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX56 =
 "struct_nodes_1_1_rate_limiter_1_1_node.html":[12,0,31,26,0],
 "struct_nodes_1_1_rate_limiter_1_1_node.html#a7f4b4cc558b3ac238f92efea34d89d94":[12,0,31,26,0,3],
 "struct_nodes_1_1_rate_limiter_1_1_node_1_1_metadata.html":[12,0,31,26,0,0],
-"struct_nodes_1_1_rate_limiter_1_1_node_1_1_rate_limiter.html":[12,0,31,26,0,1],
-"struct_nodes_1_1_value_filter_1_1_node.html":[12,0,31,27,0],
-"struct_nodes_1_1_value_filter_1_1_node.html#a2231deef34701b416608471a41beec4a":[12,0,31,27,0,3],
-"struct_nodes_1_1_value_filter_1_1_node_1_1_metadata.html":[12,0,31,27,0,0],
-"struct_nodes_1_1_value_filter_1_1_node_1_1_noise_filter.html":[12,0,31,27,0,1]
+"struct_nodes_1_1_rate_limiter_1_1_node_1_1_rate_limiter.html":[12,0,31,26,0,1]
 };
