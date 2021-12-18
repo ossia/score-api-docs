@@ -1,5 +1,7 @@
 var NAVTREEINDEX52 =
 {
+"struct_execution_1_1_recompute_propagate.html#aa8b7812fcd8cff9cb24296ba396edae6":[12,0,9,36,2],
+"struct_execution_1_1_recompute_propagate.html#aab36386827e2f7bd8425d6d24eea87a6":[12,0,9,36,0],
 "struct_execution_1_1_recompute_propagate.html#ad1f9336554f6121b7e759ea896155ff3":[12,0,9,36,6],
 "struct_execution_1_1_reconnect_outlets.html":[12,0,9,37],
 "struct_execution_1_1_reconnect_outlets.html#a05f7803e8836a537e831fdfd6e26bcf3":[12,0,9,37,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX52 =
 "struct_gfx_1_1_spout_node.html#aa446a1d4945be8e71d341593ede7ef71":[12,0,15,48,0],
 "struct_gfx_1_1_spout_node.html#abbf5495e8a36cabf51adcff90b3135f6":[12,0,15,48,18],
 "struct_gfx_1_1_spout_node.html#acfe533412037a316bfec27ae9fe6aa5b":[12,0,15,48,2],
-"struct_gfx_1_1_spout_node.html#af7e53ca4e609abe6409abad8d0fc8040":[12,0,15,48,12],
-"struct_gfx_1_1_texture_inlet_factory.html":[12,0,15,53],
-"struct_gfx_1_1_texture_inlet_factory.html#a614d6c82938820783e5254bfc8a0df2e":[12,0,15,53,0]
+"struct_gfx_1_1_spout_node.html#af7e53ca4e609abe6409abad8d0fc8040":[12,0,15,48,12]
 };
