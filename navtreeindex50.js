@@ -1,5 +1,6 @@
 var NAVTREEINDEX50 =
 {
+"struct_control_1_1_float_display.html":[12,0,3,14],
 "struct_control_1_1_float_display.html#a0336d6ea1f78dd78a05d297f75988ac3":[12,0,3,14,0],
 "struct_control_1_1_float_display.html#a22f8d8cce3612e096f925c12f61b6235":[12,0,3,14,9],
 "struct_control_1_1_float_display.html#a3849fd36086cdd72009fedc21a96e653":[12,0,3,14,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX50 =
 "struct_curve_1_1_segment_data.html#a73311837ea6dc90a093ca90f2e783ee4":[12,0,5,35,8],
 "struct_curve_1_1_segment_data.html#a8fd77b8dd63ae6c9fe0e41f8f36914c4":[12,0,5,35,4],
 "struct_curve_1_1_segment_data.html#aa22908da5a33718a287aeb911eb2fe81":[12,0,5,35,12],
-"struct_curve_1_1_segment_data.html#aadfd25beeb747d05cf1d64f3b3f81ddb":[12,0,5,35,10],
-"struct_curve_1_1_segment_data.html#abe85c5e4976e1699fba4ca69910158ec":[12,0,5,35,11]
+"struct_curve_1_1_segment_data.html#aadfd25beeb747d05cf1d64f3b3f81ddb":[12,0,5,35,10]
 };

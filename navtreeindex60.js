@@ -1,5 +1,6 @@
 var NAVTREEINDEX60 =
 {
+"struct_rendered_depth_node.html#ad187111259be61aa4022c5657eddf0f1":[12,0,318,20],
 "struct_rendered_depth_node.html#adef88fe5c9888a667a2b2dbe9d745f64":[12,0,318,11],
 "struct_rendered_depth_node_1_1_pass.html":[12,0,318,0],
 "struct_rendered_depth_node_1_1_pass.html#a0e68a6e26a2f423749743fba61846f91":[12,0,318,0,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX60 =
 "struct_scenario_1_1_positioned_scenario_event.html":[12,0,42,190],
 "struct_scenario_1_1_positioned_scenario_event.html#acc6c289e17ce1be77259b57aef37d080":[12,0,42,190,0],
 "struct_scenario_1_1_positioned_with_id___scenario_event.html":[12,0,42,191],
-"struct_scenario_1_1_positioned_with_id___scenario_event.html#a9bc62c8405f41376f394d3b1b2d6ff91":[12,0,42,191,0],
-"struct_scenario_1_1_positioned_with_id___scenario_event.html#aad9f9a3f4ad1fe5d6c9ca01a9633ae71":[12,0,42,191,1]
+"struct_scenario_1_1_positioned_with_id___scenario_event.html#a9bc62c8405f41376f394d3b1b2d6ff91":[12,0,42,191,0]
 };

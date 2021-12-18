@@ -1,5 +1,6 @@
 var NAVTREEINDEX48 =
 {
+"classvst_1_1vst__node.html#a01d70fb3593692add755c8ef4a1ce8ec":[12,0,52,16,9],
 "classvst_1_1vst__node.html#a354a831caf8d60318264918392f3b790":[12,0,52,16,8],
 "classvst_1_1vst__node.html#a4c67dc748a4fb9a03798f82daf124eb6":[12,0,52,16,7],
 "classvst_1_1vst__node.html#a64844530bdb81441a818e5dd8ac6688f":[12,0,52,16,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX48 =
 "score-plugin-media_2_media_2_step_2_inspector_8hpp_source.html":[13,0,513],
 "score-plugin-media_2_media_2_step_2_model_8hpp_source.html":[13,0,736],
 "score-plugin-media_2_media_2_step_2_view_8hpp_source.html":[13,0,1319],
-"score-plugin-midi_2_midi_2_commands_2_command_factory_8hpp_source.html":[13,0,156],
-"score-plugin-nodal_2_nodal_2_command_factory_8hpp_source.html":[13,0,157]
+"score-plugin-midi_2_midi_2_commands_2_command_factory_8hpp_source.html":[13,0,156]
 };
