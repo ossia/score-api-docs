@@ -106,7 +106,7 @@ var searchData=
   ['executionqueue_640',['executionQueue',['../struct_execution_1_1_context.html#a1a0fd8f494c0a427dc09b7da3e94bf36',1,'Execution::Context']]],
   ['executionstatevaluetype_641',['ExecutionStateValueType',['../class_execution_state_value_type.html',1,'']]],
   ['executionstatusproperty_642',['ExecutionStatusProperty',['../struct_scenario_1_1_execution_status_property.html',1,'Scenario']]],
-  ['executor_643',['Executor',['../class_control_1_1_executor.html',1,'Control::Executor&lt; Info &gt;'],['../class_faust_d_s_p_1_1_executor.html',1,'FaustDSP::Executor&lt; DSP &gt;'],['../classvst_1_1_executor.html',1,'vst::Executor'],['../classvst3_1_1_executor.html',1,'vst3::Executor'],['../class_patternist_1_1_executor.html',1,'Patternist::Executor']]],
+  ['executor_643',['Executor',['../class_patternist_1_1_executor.html',1,'Patternist::Executor'],['../class_control_1_1_executor.html',1,'Control::Executor&lt; Info &gt;'],['../class_faust_d_s_p_1_1_executor.html',1,'FaustDSP::Executor&lt; DSP &gt;'],['../classvst_1_1_executor.html',1,'vst::Executor'],['../classvst3_1_1_executor.html',1,'vst3::Executor']]],
   ['executorfactory_644',['ExecutorFactory',['../struct_control_1_1_executor_factory.html',1,'Control']]],
   ['executorguiupdate_645',['ExecutorGuiUpdate',['../struct_control_1_1_executor_gui_update.html',1,'Control']]],
   ['explorationworker_646',['ExplorationWorker',['../class_explorer_1_1_exploration_worker.html',1,'Explorer']]],
