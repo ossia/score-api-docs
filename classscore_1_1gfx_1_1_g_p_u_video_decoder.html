@@ -114,7 +114,7 @@ Inheritance diagram for score::gfx::GPUVideoDecoder:</div>
   <map id="score::gfx::GPUVideoDecoder_map" name="score::gfx::GPUVideoDecoder_map">
 <area href="structscore_1_1gfx_1_1_empty_decoder.html" title="Default decoder when we do not know what to render." alt="score::gfx::EmptyDecoder" shape="rect" coords="0,56,188,80"/>
 <area href="structscore_1_1gfx_1_1_h_a_p_decoder.html" title="Base class for HAP ((c) Vidvox) decoding." alt="score::gfx::HAPDecoder" shape="rect" coords="198,56,386,80"/>
-<area href="structscore_1_1gfx_1_1_r_g_b0_decoder.html" alt="score::gfx::RGB0Decoder" shape="rect" coords="396,56,584,80"/>
+<area href="structscore_1_1gfx_1_1_packed_decoder.html" alt="score::gfx::PackedDecoder" shape="rect" coords="396,56,584,80"/>
 <area href="structscore_1_1gfx_1_1_u_y_v_y422_decoder.html" title="Decodes UYVY422 video, mostly used for NDI." alt="score::gfx::UYVY422Decoder" shape="rect" coords="594,56,782,80"/>
 <area href="structscore_1_1gfx_1_1_y_u_v420_decoder.html" title="Decodes YUV420 videos." alt="score::gfx::YUV420Decoder" shape="rect" coords="792,56,980,80"/>
 <area href="structscore_1_1gfx_1_1_y_u_v422_decoder.html" title="Decodes YUV422 videos." alt="score::gfx::YUV422Decoder" shape="rect" coords="990,56,1178,80"/>
@@ -131,7 +131,7 @@ Inheritance diagram for score::gfx::GPUVideoDecoder:</div>
 <li>Create relevant shaders, samplers &amp; textures in the init method.</li>
 <li>When exec is called, copy the data from the AVFrame to the QRhiTextures.</li>
 </ul>
-<p>See <a class="el" href="structscore_1_1gfx_1_1_r_g_b0_decoder.html">RGB0Decoder</a> for an example with a single texture, <a class="el" href="structscore_1_1gfx_1_1_y_u_v420_decoder.html" title="Decodes YUV420 videos.">YUV420Decoder</a> for an example with multiple textures. </p>
+<p>See RGB0Decoder for an example with a single texture, <a class="el" href="structscore_1_1gfx_1_1_y_u_v420_decoder.html" title="Decodes YUV420 videos.">YUV420Decoder</a> for an example with multiple textures. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -248,7 +248,7 @@ std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_sampler.html">Sampler
 </ul>
 <p>It returns a {vertex, fragment} shader pair. </p>
 
-<p>Implemented in <a class="el" href="structscore_1_1gfx_1_1_h_a_p_m_decoder.html#aaae60f38a5688d00e11aa20830f24366">score::gfx::HAPMDecoder</a>, <a class="el" href="structscore_1_1gfx_1_1_h_a_p_default_decoder.html#a973d88ac3bfd22e71286b0a49e8cd039">score::gfx::HAPDefaultDecoder</a>, <a class="el" href="structscore_1_1gfx_1_1_u_y_v_y422_decoder.html#a87b12eb06fdcfd7d7fec3feceed88fe8">score::gfx::UYVY422Decoder</a>, <a class="el" href="structscore_1_1gfx_1_1_empty_decoder.html#a86db6656e9dd301083d1eb5484b0a603">score::gfx::EmptyDecoder</a>, <a class="el" href="structscore_1_1gfx_1_1_y_u_v420_decoder.html#a37696e496deb97cb9b07ef2814fe56db">score::gfx::YUV420Decoder</a>, <a class="el" href="structscore_1_1gfx_1_1_y_u_v422_decoder.html#a925599e8c758526409d18a6315fa1fae">score::gfx::YUV422Decoder</a>, <a class="el" href="structscore_1_1gfx_1_1_y_u_y_v422_decoder.html#af54dfa30fe7208e67d3fdaeb581c1b08">score::gfx::YUYV422Decoder</a>, and <a class="el" href="structscore_1_1gfx_1_1_r_g_b0_decoder.html#ab0682e00fec19f5a2999ef13dd2aeb49">score::gfx::RGB0Decoder</a>.</p>
+<p>Implemented in <a class="el" href="structscore_1_1gfx_1_1_h_a_p_m_decoder.html#aaae60f38a5688d00e11aa20830f24366">score::gfx::HAPMDecoder</a>, <a class="el" href="structscore_1_1gfx_1_1_h_a_p_default_decoder.html#a973d88ac3bfd22e71286b0a49e8cd039">score::gfx::HAPDefaultDecoder</a>, <a class="el" href="structscore_1_1gfx_1_1_u_y_v_y422_decoder.html#a87b12eb06fdcfd7d7fec3feceed88fe8">score::gfx::UYVY422Decoder</a>, <a class="el" href="structscore_1_1gfx_1_1_empty_decoder.html#a86db6656e9dd301083d1eb5484b0a603">score::gfx::EmptyDecoder</a>, <a class="el" href="structscore_1_1gfx_1_1_y_u_v420_decoder.html#a37696e496deb97cb9b07ef2814fe56db">score::gfx::YUV420Decoder</a>, <a class="el" href="structscore_1_1gfx_1_1_y_u_v422_decoder.html#a925599e8c758526409d18a6315fa1fae">score::gfx::YUV422Decoder</a>, <a class="el" href="structscore_1_1gfx_1_1_y_u_y_v422_decoder.html#af54dfa30fe7208e67d3fdaeb581c1b08">score::gfx::YUYV422Decoder</a>, and <a class="el" href="structscore_1_1gfx_1_1_packed_decoder.html#aa3f190469bd00f477dee1b6d04f1862c">score::gfx::PackedDecoder</a>.</p>
 
 </div>
 </div>

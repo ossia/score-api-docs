@@ -5,6 +5,6 @@ var class_video_1_1_camera_input =
     [ "dequeue_frame", "class_video_1_1_camera_input.html#a7162a9dd77051db57d6aee6a2a1c2ff5", null ],
     [ "load", "class_video_1_1_camera_input.html#a4e4034b8a35f54fc7d04bc1eebe04499", null ],
     [ "release_frame", "class_video_1_1_camera_input.html#a137f74d218dfd2bec0ef219412df15af", null ],
-    [ "start", "class_video_1_1_camera_input.html#a9a01a250291b821b82c629eb30e9a02f", null ],
-    [ "stop", "class_video_1_1_camera_input.html#a7bfc2d6bd6fff342edf99b48b817b404", null ]
+    [ "start", "class_video_1_1_camera_input.html#a4399d094afeb0e369c8afc44a8e31cae", null ],
+    [ "stop", "class_video_1_1_camera_input.html#adbf2c3c4f486eb0f5b200fb8beb68108", null ]
 ];

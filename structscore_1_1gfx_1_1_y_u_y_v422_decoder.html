@@ -237,12 +237,13 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="stringliteral"></span> </div>
 <div class="line"><span class="stringliteral">void main() {</span></div>
 <div class="line"><span class="stringliteral">  vec2 texcoord = vec2(v_texcoord.x, tbuf.texcoordAdjust.y + tbuf.texcoordAdjust.x * v_texcoord.y);</span></div>
-<div class="line"><span class="stringliteral">  vec3 tc = texture(u_tex, texcoord).rgb;</span></div>
-<div class="line"><span class="stringliteral">  vec3 yuv = vec3(tc.g, tc.b, tc.r);</span></div>
-<div class="line"><span class="stringliteral">  yuv += offset;</span></div>
-<div class="line"><span class="stringliteral">  fragColor.r = dot(yuv, R_cf);</span></div>
-<div class="line"><span class="stringliteral">  fragColor.g = dot(yuv, G_cf);</span></div>
-<div class="line"><span class="stringliteral">  fragColor.b = dot(yuv, B_cf);</span></div>
+<div class="line"><span class="stringliteral">  vec4 tex = texture(u_tex, texcoord);</span></div>
+<div class="line"><span class="stringliteral">  float y = tex.r;</span></div>
+<div class="line"><span class="stringliteral">  float u = tex.g - 0.5;</span></div>
+<div class="line"><span class="stringliteral">  float v = tex.a - 0.5;</span></div>
+<div class="line"><span class="stringliteral">  fragColor.r = y + 1.13983 * v;</span></div>
+<div class="line"><span class="stringliteral">  fragColor.g = y - 0.39465 * u - 0.58060 * v;</span></div>
+<div class="line"><span class="stringliteral">  fragColor.b = y + 2.03211 * u;</span></div>
 <div class="line"><span class="stringliteral">  fragColor.a = 1.0;</span></div>
 <div class="line"><span class="stringliteral">}</span></div>
 <div class="line"><span class="stringliteral">)_&quot;</span></div>

@@ -107,6 +107,7 @@ Inheritance diagram for Video::CameraInput:</div>
  <div class="center">
   <img src="class_video_1_1_camera_input.png" usemap="#Video::CameraInput_map" alt=""/>
   <map id="Video::CameraInput_map" name="Video::CameraInput_map">
+<area href="class_video_1_1_external_input.html" alt="Video::ExternalInput" shape="rect" coords="0,112,136,136"/>
 <area href="struct_video_1_1_video_interface.html" alt="Video::VideoInterface" shape="rect" coords="0,56,136,80"/>
 <area href="struct_video_1_1_video_metadata.html" alt="Video::VideoMetadata" shape="rect" coords="0,0,136,24"/>
   </map>
@@ -117,12 +118,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4e4034b8a35f54fc7d04bc1eebe04499"><td class="memItemLeft" align="right" valign="top"><a id="a4e4034b8a35f54fc7d04bc1eebe04499"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>load</b> (const std::string &amp;inputDevice, const std::string &amp;format, int w, int h, double fps) noexcept</td></tr>
 <tr class="separator:a4e4034b8a35f54fc7d04bc1eebe04499"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a01a250291b821b82c629eb30e9a02f"><td class="memItemLeft" align="right" valign="top"><a id="a9a01a250291b821b82c629eb30e9a02f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>start</b> () noexcept</td></tr>
-<tr class="separator:a9a01a250291b821b82c629eb30e9a02f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bfc2d6bd6fff342edf99b48b817b404"><td class="memItemLeft" align="right" valign="top"><a id="a7bfc2d6bd6fff342edf99b48b817b404"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> () noexcept</td></tr>
-<tr class="separator:a7bfc2d6bd6fff342edf99b48b817b404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4399d094afeb0e369c8afc44a8e31cae"><td class="memItemLeft" align="right" valign="top"><a id="a4399d094afeb0e369c8afc44a8e31cae"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>start</b> () noexcept override</td></tr>
+<tr class="separator:a4399d094afeb0e369c8afc44a8e31cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbf2c3c4f486eb0f5b200fb8beb68108"><td class="memItemLeft" align="right" valign="top"><a id="adbf2c3c4f486eb0f5b200fb8beb68108"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> () noexcept override</td></tr>
+<tr class="separator:adbf2c3c4f486eb0f5b200fb8beb68108"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7162a9dd77051db57d6aee6a2a1c2ff5"><td class="memItemLeft" align="right" valign="top"><a id="a7162a9dd77051db57d6aee6a2a1c2ff5"></a>
 AVFrame *&#160;</td><td class="memItemRight" valign="bottom"><b>dequeue_frame</b> () noexcept override</td></tr>
 <tr class="separator:a7162a9dd77051db57d6aee6a2a1c2ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>

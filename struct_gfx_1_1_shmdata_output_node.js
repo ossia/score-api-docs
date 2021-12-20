@@ -3,10 +3,12 @@ var struct_gfx_1_1_shmdata_output_node =
     [ "ShmdataOutputNode", "struct_gfx_1_1_shmdata_output_node.html#ae1207f902e714c29f232831ebdc8df77", null ],
     [ "~ShmdataOutputNode", "struct_gfx_1_1_shmdata_output_node.html#a37b3c1e9b8aa26d2274c5d8e7888b1a5", null ],
     [ "canRender", "struct_gfx_1_1_shmdata_output_node.html#a9d4c58f17aea1aa54923f6732ee53b86", null ],
+    [ "configuration", "struct_gfx_1_1_shmdata_output_node.html#a778b8270757404e350d76df95e29f4b3", null ],
     [ "createOutput", "struct_gfx_1_1_shmdata_output_node.html#a5d7285af8d2cb9009f737401a6a0e4d8", null ],
     [ "createRenderer", "struct_gfx_1_1_shmdata_output_node.html#af6b92929fd31630ac657dca9c682bb96", null ],
     [ "destroyOutput", "struct_gfx_1_1_shmdata_output_node.html#aeb1bccb13d253a6f948a14fb810bc93a", null ],
     [ "onRendererChange", "struct_gfx_1_1_shmdata_output_node.html#a895ef3505d704801e0b83323b00e0ba8", null ],
+    [ "render", "struct_gfx_1_1_shmdata_output_node.html#a5e4997231caf604f42e8d87717e2ccea", null ],
     [ "renderer", "struct_gfx_1_1_shmdata_output_node.html#a526d22cfbc520f98d2571732367e5756", null ],
     [ "renderState", "struct_gfx_1_1_shmdata_output_node.html#af1e620862f4d8e024b6ca173cfca1f83", null ],
     [ "setRenderer", "struct_gfx_1_1_shmdata_output_node.html#a066dc6c67f9f3f673c51328893560a44", null ],
@@ -19,8 +21,7 @@ var struct_gfx_1_1_shmdata_output_node =
     [ "m_renderState", "struct_gfx_1_1_shmdata_output_node.html#acddd8a075247eb575246cbe4ec032787", null ],
     [ "m_renderTarget", "struct_gfx_1_1_shmdata_output_node.html#a463b90e04b9506c0e2ec959837507f64", null ],
     [ "m_settings", "struct_gfx_1_1_shmdata_output_node.html#a950eebab8746d2e9c471f810e2667ca1", null ],
-    [ "m_ShmdataOutput", "struct_gfx_1_1_shmdata_output_node.html#ad413a41e81d970c40518bf31439ac004", null ],
     [ "m_texture", "struct_gfx_1_1_shmdata_output_node.html#a6456f699456cf5edebf82db3c562e160", null ],
-    [ "m_timer", "struct_gfx_1_1_shmdata_output_node.html#a04b5dc6176ba9dfc83378aec4935c1a0", null ],
-    [ "m_update", "struct_gfx_1_1_shmdata_output_node.html#af71acfa4179fdbea1f2995d1d07ae0d9", null ]
+    [ "m_update", "struct_gfx_1_1_shmdata_output_node.html#af71acfa4179fdbea1f2995d1d07ae0d9", null ],
+    [ "m_writer", "struct_gfx_1_1_shmdata_output_node.html#a1b59a65a8b0156d28d5f5b091f6cf16a", null ]
 ];

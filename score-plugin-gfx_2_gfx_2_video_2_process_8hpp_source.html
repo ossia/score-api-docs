@@ -182,36 +182,37 @@ $(document).ready(function(){initNavTree('score-plugin-gfx_2_gfx_2_video_2_proce
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;12d1ed39-0fac-43da-8520-b7e32f9fad7d&quot;</span>)</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  QSet&lt;QString&gt; mimeTypes() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  QSet&lt;QString&gt; fileExtensions() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  std::vector&lt;ProcessDrop&gt; dropData(</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keyword">const</span> std::vector&lt;DroppedFile&gt;&amp; data,</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;PROPERTY_COMMAND_T(<a class="code" href="namespace_gfx.html">Gfx</a>, ChangeVideo, Video::Model::p_path, <span class="stringliteral">&quot;Change video&quot;</span>)</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_gfx.html">Gfx</a>::ChangeVideo)</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;PROPERTY_COMMAND_T(</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="namespace_gfx.html">Gfx</a>,</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    ChangeTempo,</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    Video::Model::p_nativeTempo,</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    &quot;Change video tempo&quot;)</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_gfx.html">Gfx</a>::ChangeTempo)</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;PROPERTY_COMMAND_T(</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="code" href="namespace_gfx.html">Gfx</a>,</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    ChangeIgnoreTempo,</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    Video::Model::p_ignoreTempo,</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    &quot;Ignore video tempo&quot;)</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_gfx.html">Gfx</a>::ChangeIgnoreTempo)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  QSet&lt;QString&gt; mimeTypes() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  QSet&lt;QString&gt; fileExtensions() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  std::vector&lt;ProcessDrop&gt; dropPaths(</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="keyword">const</span> std::vector&lt;QString&gt;&amp; data,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;PROPERTY_COMMAND_T(<a class="code" href="namespace_gfx.html">Gfx</a>, ChangeVideo, Video::Model::p_path, <span class="stringliteral">&quot;Change video&quot;</span>)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_gfx.html">Gfx</a>::ChangeVideo)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;PROPERTY_COMMAND_T(</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="namespace_gfx.html">Gfx</a>,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    ChangeTempo,</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    Video::Model::p_nativeTempo,</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    &quot;Change video tempo&quot;)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_gfx.html">Gfx</a>::ChangeTempo)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;PROPERTY_COMMAND_T(</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="namespace_gfx.html">Gfx</a>,</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    ChangeIgnoreTempo,</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    Video::Model::p_ignoreTempo,</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    &quot;Ignore video tempo&quot;)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_gfx.html">Gfx</a>::ChangeIgnoreTempo)</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition:</b> TimeValue.hpp:19</div></div>
 <div class="ttc" id="aclass_gfx_1_1_video_1_1_model_html"><div class="ttname"><a href="class_gfx_1_1_video_1_1_model.html">Gfx::Video::Model</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Video/Process.hpp:14</div></div>
 <div class="ttc" id="aclass_library_1_1_library_interface_html"><div class="ttname"><a href="class_library_1_1_library_interface.html">Library::LibraryInterface</a></div><div class="ttdef"><b>Definition:</b> LibraryInterface.hpp:20</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:15</div></div>
-<div class="ttc" id="aclass_video_1_1_video_decoder_html"><div class="ttname"><a href="class_video_1_1_video_decoder.html">Video::VideoDecoder</a></div><div class="ttdef"><b>Definition:</b> VideoDecoder.hpp:26</div></div>
+<div class="ttc" id="aclass_video_1_1_video_decoder_html"><div class="ttname"><a href="class_video_1_1_video_decoder.html">Video::VideoDecoder</a></div><div class="ttdef"><b>Definition:</b> VideoDecoder.hpp:27</div></div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition:</b> Identifier.hpp:56</div></div>
 <div class="ttc" id="aclass_gfx_1_1_video_1_1_library_handler_html"><div class="ttname"><a href="class_gfx_1_1_video_1_1_library_handler.html">Gfx::Video::LibraryHandler</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Video/Process.hpp:74</div></div>
 <div class="ttc" id="aclass_process_1_1_process_drop_handler_html"><div class="ttname"><a href="class_process_1_1_process_drop_handler.html">Process::ProcessDropHandler</a></div><div class="ttdef"><b>Definition:</b> ProcessDropHandler.hpp:19</div></div>

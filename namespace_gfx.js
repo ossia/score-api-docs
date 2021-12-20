@@ -21,13 +21,20 @@ var namespace_gfx =
       [ "Presenter", "class_gfx_1_1_settings_1_1_presenter.html", "class_gfx_1_1_settings_1_1_presenter" ],
       [ "View", "class_gfx_1_1_settings_1_1_view.html", "class_gfx_1_1_settings_1_1_view" ]
     ] ],
+    [ "Shmdata", null, [
+      [ "InputDevice", "class_gfx_1_1_shmdata_1_1_input_device.html", "class_gfx_1_1_shmdata_1_1_input_device" ],
+      [ "InputFactory", "class_gfx_1_1_shmdata_1_1_input_factory.html", "class_gfx_1_1_shmdata_1_1_input_factory" ],
+      [ "InputSettings", "struct_gfx_1_1_shmdata_1_1_input_settings.html", "struct_gfx_1_1_shmdata_1_1_input_settings" ],
+      [ "InputSettingsWidget", "class_gfx_1_1_shmdata_1_1_input_settings_widget.html", "class_gfx_1_1_shmdata_1_1_input_settings_widget" ],
+      [ "InputStream", "class_gfx_1_1_shmdata_1_1_input_stream.html", "class_gfx_1_1_shmdata_1_1_input_stream" ]
+    ] ],
     [ "Text", null, [
       [ "Model", "class_gfx_1_1_text_1_1_model.html", "class_gfx_1_1_text_1_1_model" ],
       [ "ProcessExecutorComponent", "class_gfx_1_1_text_1_1_process_executor_component.html", "class_gfx_1_1_text_1_1_process_executor_component" ],
       [ "text_node", "class_gfx_1_1_text_1_1text__node.html", "class_gfx_1_1_text_1_1text__node" ]
     ] ],
     [ "Video", null, [
-      [ "DropHandler", "class_gfx_1_1_video_1_1_drop_handler.html", null ],
+      [ "DropHandler", "class_gfx_1_1_video_1_1_drop_handler.html", "class_gfx_1_1_video_1_1_drop_handler" ],
       [ "InspectorFactory", "class_gfx_1_1_video_1_1_inspector_factory.html", null ],
       [ "InspectorWidget", "class_gfx_1_1_video_1_1_inspector_widget.html", "class_gfx_1_1_video_1_1_inspector_widget" ],
       [ "LibraryHandler", "class_gfx_1_1_video_1_1_library_handler.html", null ],
@@ -39,11 +46,6 @@ var namespace_gfx =
       [ "View", "class_gfx_1_1_video_1_1_view.html", "class_gfx_1_1_video_1_1_view" ]
     ] ],
     [ "ApplicationPlugin", "class_gfx_1_1_application_plugin.html", "class_gfx_1_1_application_plugin" ],
-    [ "camera_device", "class_gfx_1_1camera__device.html", "class_gfx_1_1camera__device" ],
-    [ "camera_node", "class_gfx_1_1camera__node.html", "class_gfx_1_1camera__node" ],
-    [ "camera_parameter", "class_gfx_1_1camera__parameter.html", "class_gfx_1_1camera__parameter" ],
-    [ "camera_protocol", "class_gfx_1_1camera__protocol.html", "class_gfx_1_1camera__protocol" ],
-    [ "camera_settings", "struct_gfx_1_1camera__settings.html", "struct_gfx_1_1camera__settings" ],
     [ "CameraDevice", "class_gfx_1_1_camera_device.html", "class_gfx_1_1_camera_device" ],
     [ "CameraEnumerator", "class_gfx_1_1_camera_enumerator.html", "class_gfx_1_1_camera_enumerator" ],
     [ "CameraProtocolFactory", "class_gfx_1_1_camera_protocol_factory.html", null ],
@@ -80,7 +82,7 @@ var namespace_gfx =
     [ "ProgramCache", "struct_gfx_1_1_program_cache.html", "struct_gfx_1_1_program_cache" ],
     [ "ShaderPreviewWidget", "class_gfx_1_1_shader_preview_widget.html", "class_gfx_1_1_shader_preview_widget" ],
     [ "ShaderSource", "struct_gfx_1_1_shader_source.html", "struct_gfx_1_1_shader_source" ],
-    [ "ShmdataOutput_device", "class_gfx_1_1_shmdata_output__device.html", "class_gfx_1_1_shmdata_output__device" ],
+    [ "shmdata_output_device", "class_gfx_1_1shmdata__output__device.html", "class_gfx_1_1shmdata__output__device" ],
     [ "ShmdataOutputDevice", "class_gfx_1_1_shmdata_output_device.html", "class_gfx_1_1_shmdata_output_device" ],
     [ "ShmdataOutputNode", "struct_gfx_1_1_shmdata_output_node.html", "struct_gfx_1_1_shmdata_output_node" ],
     [ "ShmdataOutputProtocolFactory", "class_gfx_1_1_shmdata_output_protocol_factory.html", "class_gfx_1_1_shmdata_output_protocol_factory" ],
@@ -96,6 +98,10 @@ var namespace_gfx =
     [ "TextureInletFactory", "struct_gfx_1_1_texture_inlet_factory.html", "struct_gfx_1_1_texture_inlet_factory" ],
     [ "TextureOutlet", "class_gfx_1_1_texture_outlet.html", "class_gfx_1_1_texture_outlet" ],
     [ "TextureOutletFactory", "struct_gfx_1_1_texture_outlet_factory.html", "struct_gfx_1_1_texture_outlet_factory" ],
+    [ "video_texture_input_device", "class_gfx_1_1video__texture__input__device.html", "class_gfx_1_1video__texture__input__device" ],
+    [ "video_texture_input_node", "class_gfx_1_1video__texture__input__node.html", "class_gfx_1_1video__texture__input__node" ],
+    [ "video_texture_input_parameter", "class_gfx_1_1video__texture__input__parameter.html", "class_gfx_1_1video__texture__input__parameter" ],
+    [ "video_texture_input_protocol", "class_gfx_1_1video__texture__input__protocol.html", "class_gfx_1_1video__texture__input__protocol" ],
     [ "window_device", "class_gfx_1_1window__device.html", "class_gfx_1_1window__device" ],
     [ "WindowDevice", "class_gfx_1_1_window_device.html", "class_gfx_1_1_window_device" ],
     [ "WindowProtocolFactory", "class_gfx_1_1_window_protocol_factory.html", null ],

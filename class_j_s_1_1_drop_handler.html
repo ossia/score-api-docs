@@ -114,9 +114,15 @@ Inheritance diagram for JS::DropHandler:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_methods_class_process_1_1_process_drop_handler"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_process_1_1_process_drop_handler')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_process_1_1_process_drop_handler.html">Process::ProcessDropHandler</a></td></tr>
-<tr class="memitem:a84e376b44a7822b8d871a56d1e5d7405 inherit pub_methods_class_process_1_1_process_drop_handler"><td class="memItemLeft" align="right" valign="top"><a id="a84e376b44a7822b8d871a56d1e5d7405"></a>
+<tr class="memitem:a0f834d4c8f59bc046760fd1d78b2afe1 inherit pub_methods_class_process_1_1_process_drop_handler"><td class="memItemLeft" align="right" valign="top"><a id="a0f834d4c8f59bc046760fd1d78b2afe1"></a>
+std::vector&lt; <a class="el" href="struct_process_1_1_process_drop_handler_1_1_process_drop.html">ProcessDrop</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getMimeDrops</b> (const QMimeData &amp;mime, const QString &amp;fmt, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx) const noexcept</td></tr>
+<tr class="separator:a0f834d4c8f59bc046760fd1d78b2afe1 inherit pub_methods_class_process_1_1_process_drop_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6788d2d954b7d4c58877e3a7e159f2c inherit pub_methods_class_process_1_1_process_drop_handler"><td class="memItemLeft" align="right" valign="top"><a id="ad6788d2d954b7d4c58877e3a7e159f2c"></a>
+std::vector&lt; <a class="el" href="struct_process_1_1_process_drop_handler_1_1_process_drop.html">ProcessDrop</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getFileDrops</b> (const QMimeData &amp;mime, const QString &amp;path, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx) const noexcept</td></tr>
+<tr class="separator:ad6788d2d954b7d4c58877e3a7e159f2c inherit pub_methods_class_process_1_1_process_drop_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96b88d5528ce35c765197cb127346624 inherit pub_methods_class_process_1_1_process_drop_handler"><td class="memItemLeft" align="right" valign="top"><a id="a96b88d5528ce35c765197cb127346624"></a>
 std::vector&lt; <a class="el" href="struct_process_1_1_process_drop_handler_1_1_process_drop.html">ProcessDrop</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getDrops</b> (const QMimeData &amp;mime, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx) const noexcept</td></tr>
-<tr class="separator:a84e376b44a7822b8d871a56d1e5d7405 inherit pub_methods_class_process_1_1_process_drop_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a96b88d5528ce35c765197cb127346624 inherit pub_methods_class_process_1_1_process_drop_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af354f5ef73bcc516aa7c5a622d931515 inherit pub_methods_class_process_1_1_process_drop_handler"><td class="memItemLeft" align="right" valign="top"><a id="af354f5ef73bcc516aa7c5a622d931515"></a>
 virtual QSet&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mimeTypes</b> () const noexcept</td></tr>
 <tr class="separator:af354f5ef73bcc516aa7c5a622d931515 inherit pub_methods_class_process_1_1_process_drop_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,6 +135,9 @@ virtual <a class="el" href="class_uuid_key.html">InterfaceKey</a>&#160;</td><td 
 <tr class="memitem:a819aad9a67e5bbffecc7906503c2bc76 inherit pro_methods_class_process_1_1_process_drop_handler"><td class="memItemLeft" align="right" valign="top"><a id="a819aad9a67e5bbffecc7906503c2bc76"></a>
 virtual std::vector&lt; <a class="el" href="struct_process_1_1_process_drop_handler_1_1_process_drop.html">ProcessDrop</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>drop</b> (const QMimeData &amp;mime, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx) const noexcept</td></tr>
 <tr class="separator:a819aad9a67e5bbffecc7906503c2bc76 inherit pro_methods_class_process_1_1_process_drop_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e6108e59265be0967243896dde0eaae inherit pro_methods_class_process_1_1_process_drop_handler"><td class="memItemLeft" align="right" valign="top"><a id="a3e6108e59265be0967243896dde0eaae"></a>
+virtual std::vector&lt; <a class="el" href="struct_process_1_1_process_drop_handler_1_1_process_drop.html">ProcessDrop</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>dropPaths</b> (const std::vector&lt; QString &gt; &amp;data, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx) const noexcept</td></tr>
+<tr class="separator:a3e6108e59265be0967243896dde0eaae inherit pro_methods_class_process_1_1_process_drop_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>score_plugin_js.cpp</li>

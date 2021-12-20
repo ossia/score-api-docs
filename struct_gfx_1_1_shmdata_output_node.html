@@ -124,6 +124,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>startRendering</b> ()
 <tr class="memitem:a895ef3505d704801e0b83323b00e0ba8"><td class="memItemLeft" align="right" valign="top"><a id="a895ef3505d704801e0b83323b00e0ba8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>onRendererChange</b> () override</td></tr>
 <tr class="separator:a895ef3505d704801e0b83323b00e0ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e4997231caf604f42e8d87717e2ccea"><td class="memItemLeft" align="right" valign="top"><a id="a5e4997231caf604f42e8d87717e2ccea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>render</b> () override</td></tr>
+<tr class="separator:a5e4997231caf604f42e8d87717e2ccea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d4c58f17aea1aa54923f6732ee53b86"><td class="memItemLeft" align="right" valign="top"><a id="a9d4c58f17aea1aa54923f6732ee53b86"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>canRender</b> () const override</td></tr>
 <tr class="separator:a9d4c58f17aea1aa54923f6732ee53b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,6 +152,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>destroyOutput</b> () 
 <a class="el" href="classscore_1_1gfx_1_1_output_node_renderer.html">score::gfx::OutputNodeRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gfx_1_1_shmdata_output_node.html#af6b92929fd31630ac657dca9c682bb96">createRenderer</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a> &amp;r) const noexcept override</td></tr>
 <tr class="memdesc:af6b92929fd31630ac657dca9c682bb96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a renderer in a given context for this node. <br /></td></tr>
 <tr class="separator:af6b92929fd31630ac657dca9c682bb96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a778b8270757404e350d76df95e29f4b3"><td class="memItemLeft" align="right" valign="top"><a id="a778b8270757404e350d76df95e29f4b3"></a>
+<a class="el" href="structscore_1_1gfx_1_1_output_node_1_1_configuration.html">Configuration</a>&#160;</td><td class="memItemRight" valign="bottom"><b>configuration</b> () const noexcept override</td></tr>
+<tr class="separator:a778b8270757404e350d76df95e29f4b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1gfx_1_1_output_node"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1gfx_1_1_output_node')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a></td></tr>
 <tr class="memitem:aced0563f2ef5b827e0af7ab971e69062 inherit pub_methods_classscore_1_1gfx_1_1_output_node"><td class="memItemLeft" align="right" valign="top"><a id="aced0563f2ef5b827e0af7ab971e69062"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>updateGraphicsAPI</b> (<a class="el" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a>)</td></tr>
@@ -176,9 +182,9 @@ std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom">
 <tr class="memitem:acddd8a075247eb575246cbe4ec032787"><td class="memItemLeft" align="right" valign="top"><a id="acddd8a075247eb575246cbe4ec032787"></a>
 std::shared_ptr&lt; <a class="el" href="structscore_1_1gfx_1_1_render_state.html">score::gfx::RenderState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_renderState</b> {}</td></tr>
 <tr class="separator:acddd8a075247eb575246cbe4ec032787"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad413a41e81d970c40518bf31439ac004"><td class="memItemLeft" align="right" valign="top"><a id="ad413a41e81d970c40518bf31439ac004"></a>
-std::shared_ptr&lt; shmdata::Writer &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_ShmdataOutput</b> {}</td></tr>
-<tr class="separator:ad413a41e81d970c40518bf31439ac004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b59a65a8b0156d28d5f5b091f6cf16a"><td class="memItemLeft" align="right" valign="top"><a id="a1b59a65a8b0156d28d5f5b091f6cf16a"></a>
+std::shared_ptr&lt; shmdata::Writer &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_writer</b> {}</td></tr>
+<tr class="separator:a1b59a65a8b0156d28d5f5b091f6cf16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adab386d12ce4920ef445e9509d166b93"><td class="memItemLeft" align="right" valign="top"><a id="adab386d12ce4920ef445e9509d166b93"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_hasSender</b> {}</td></tr>
 <tr class="separator:adab386d12ce4920ef445e9509d166b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,9 +197,6 @@ QRhiReadbackResult&#160;</td><td class="memItemRight" valign="bottom"><b>m_readb
 <tr class="memitem:ad6eb1cbb81d20419107cb389c82e21d2"><td class="memItemLeft" align="right" valign="top"><a id="ad6eb1cbb81d20419107cb389c82e21d2"></a>
 shmdata::ConsoleLogger&#160;</td><td class="memItemRight" valign="bottom"><b>m_logger</b></td></tr>
 <tr class="separator:ad6eb1cbb81d20419107cb389c82e21d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04b5dc6176ba9dfc83378aec4935c1a0"><td class="memItemLeft" align="right" valign="top"><a id="a04b5dc6176ba9dfc83378aec4935c1a0"></a>
-QTimer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_timer</b> {}</td></tr>
-<tr class="separator:a04b5dc6176ba9dfc83378aec4935c1a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classscore_1_1gfx_1_1_node"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classscore_1_1gfx_1_1_node')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a></td></tr>
 <tr class="memitem:a32f530890af66e0ecee6c66cdf430146 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a32f530890af66e0ecee6c66cdf430146"></a>
 std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node.html#a32f530890af66e0ecee6c66cdf430146">input</a></td></tr>
