@@ -170,65 +170,66 @@ $(document).ready(function(){initNavTree('_processes_item_model_8hpp_source.html
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span> on_newPlugin(<span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model_factory.html">Process::ProcessModelFactory</a>&amp; fact);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; context;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <a class="code" href="class_tree_node.html">ProcessNode</a> m_root;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="struct_library_1_1_subcategories.html">   81</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_library_1_1_subcategories.html">Subcategories</a></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="class_tree_node.html">Library::ProcessNode</a>* parent{};</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  QDir libraryFolder;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  std::unordered_map&lt;QString, Library::ProcessNode*&gt; categories;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">void</span> init(<span class="keyword">const</span> QModelIndex&amp; idx, <span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp; ctx)</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    categories.clear();</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    parent</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        = <span class="keyword">reinterpret_cast&lt;</span><a class="code" href="class_tree_node.html">Library::ProcessNode</a>*<span class="keyword">&gt;</span>(idx.internalPointer());</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// We use the parent folder as category...</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    libraryFolder.setPath(</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        ctx.<a class="code" href="structscore_1_1_application_context.html#ae71a4a7f56ab86bfdb5308ed0bae8d00">settings</a>&lt;<a class="code" href="class_library_1_1_settings_1_1_model.html">Library::Settings::Model</a>&gt;().getPackagesPath());</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">void</span> add(<span class="keyword">const</span> QFileInfo&amp; file, <a class="code" href="struct_library_1_1_process_data.html">Library::ProcessData</a>&amp;&amp; pdata)</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">auto</span> parentFolder = file.dir().dirName();</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">auto</span> it = categories.find(parentFolder); it != categories.end())</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      Library::addToLibrary(*it-&gt;second, std::move(pdata));</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      <span class="keywordflow">if</span> (file.dir() == libraryFolder)</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        Library::addToLibrary(*parent, std::move(pdata));</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      }</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keyword">auto</span>&amp; category = Library::addToLibrary(</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            *parent, <a class="code" href="struct_library_1_1_process_data.html">Library::ProcessData</a>{{{}, parentFolder, {}}, {}, {}, {}});</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        Library::addToLibrary(category, std::move(pdata));</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        categories[parentFolder] = &amp;category;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      }</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  }</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;};</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keyword">inline</span> QDataStream&amp; operator&lt;&lt;(QDataStream&amp; i, <span class="keyword">const</span> <a class="code" href="struct_library_1_1_process_data.html">Library::ProcessData</a>&amp; sel)</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;{</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordflow">return</span> i;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keyword">inline</span> QDataStream&amp; operator&gt;&gt;(QDataStream&amp; i, <a class="code" href="struct_library_1_1_process_data.html">Library::ProcessData</a>&amp; sel)</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordflow">return</span> i;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="struct_library_1_1_process_data.html">Library::ProcessData</a>)</div>
-<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_library_1_1_process_data_01_4.html">  134</a></span>&#160;Q_DECLARE_METATYPE(Library::ProcessData)</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;W_REGISTER_ARGTYPE(std::optional&lt;Library::ProcessData&gt;)</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <a class="code" href="class_tree_node.html">ProcessNode</a>&amp; addCategory(<span class="keyword">const</span> QString&amp; cat);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; context;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <a class="code" href="class_tree_node.html">ProcessNode</a> m_root;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="struct_library_1_1_subcategories.html">   82</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_library_1_1_subcategories.html">Subcategories</a></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="class_tree_node.html">Library::ProcessNode</a>* parent{};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  QDir libraryFolder;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  std::unordered_map&lt;QString, Library::ProcessNode*&gt; categories;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">void</span> init(<span class="keyword">const</span> QModelIndex&amp; idx, <span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp; ctx)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    categories.clear();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    parent</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        = <span class="keyword">reinterpret_cast&lt;</span><a class="code" href="class_tree_node.html">Library::ProcessNode</a>*<span class="keyword">&gt;</span>(idx.internalPointer());</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">// We use the parent folder as category...</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    libraryFolder.setPath(</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        ctx.<a class="code" href="structscore_1_1_application_context.html#ae71a4a7f56ab86bfdb5308ed0bae8d00">settings</a>&lt;<a class="code" href="class_library_1_1_settings_1_1_model.html">Library::Settings::Model</a>&gt;().getPackagesPath());</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">void</span> add(<span class="keyword">const</span> QFileInfo&amp; file, <a class="code" href="struct_library_1_1_process_data.html">Library::ProcessData</a>&amp;&amp; pdata)</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">auto</span> parentFolder = file.dir().dirName();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">auto</span> it = categories.find(parentFolder); it != categories.end())</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      Library::addToLibrary(*it-&gt;second, std::move(pdata));</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      <span class="keywordflow">if</span> (file.dir() == libraryFolder)</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        Library::addToLibrary(*parent, std::move(pdata));</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keyword">auto</span>&amp; category = Library::addToLibrary(</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            *parent, <a class="code" href="struct_library_1_1_process_data.html">Library::ProcessData</a>{{{}, parentFolder, {}}, {}, {}, {}});</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        Library::addToLibrary(category, std::move(pdata));</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        categories[parentFolder] = &amp;category;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;};</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">inline</span> QDataStream&amp; operator&lt;&lt;(QDataStream&amp; i, <span class="keyword">const</span> <a class="code" href="struct_library_1_1_process_data.html">Library::ProcessData</a>&amp; sel)</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;{</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordflow">return</span> i;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keyword">inline</span> QDataStream&amp; operator&gt;&gt;(QDataStream&amp; i, <a class="code" href="struct_library_1_1_process_data.html">Library::ProcessData</a>&amp; sel)</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;{</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordflow">return</span> i;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="struct_library_1_1_process_data.html">Library::ProcessData</a>)</div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_library_1_1_process_data_01_4.html">  135</a></span>&#160;Q_DECLARE_METATYPE(Library::ProcessData)</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;W_REGISTER_ARGTYPE(std::optional&lt;Library::ProcessData&gt;)</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_tree_node_html"><div class="ttname"><a href="class_tree_node.html">TreeNode&lt; ProcessData &gt;</a></div></div>
@@ -241,7 +242,7 @@ $(document).ready(function(){initNavTree('_processes_item_model_8hpp_source.html
 <div class="ttc" id="astruct_process_1_1_process_data_html"><div class="ttname"><a href="struct_process_1_1_process_data.html">Process::ProcessData</a></div><div class="ttdef"><b>Definition:</b> ProcessMimeSerialization.hpp:37</div></div>
 <div class="ttc" id="astructscore_1_1_application_context_html"><div class="ttname"><a href="structscore_1_1_application_context.html">score::ApplicationContext</a></div><div class="ttdoc">Used to access all the application-wide state and structures.</div><div class="ttdef"><b>Definition:</b> ApplicationContext.hpp:23</div></div>
 <div class="ttc" id="aclass_library_1_1_settings_1_1_model_html"><div class="ttname"><a href="class_library_1_1_settings_1_1_model.html">Library::Settings::Model</a></div><div class="ttdef"><b>Definition:</b> LibrarySettings.hpp:45</div></div>
-<div class="ttc" id="astruct_library_1_1_subcategories_html"><div class="ttname"><a href="struct_library_1_1_subcategories.html">Library::Subcategories</a></div><div class="ttdef"><b>Definition:</b> ProcessesItemModel.hpp:81</div></div>
+<div class="ttc" id="astruct_library_1_1_subcategories_html"><div class="ttname"><a href="struct_library_1_1_subcategories.html">Library::Subcategories</a></div><div class="ttdef"><b>Definition:</b> ProcessesItemModel.hpp:82</div></div>
 <div class="ttc" id="astructscore_1_1_application_context_html_ae71a4a7f56ab86bfdb5308ed0bae8d00"><div class="ttname"><a href="structscore_1_1_application_context.html#ae71a4a7f56ab86bfdb5308ed0bae8d00">score::ApplicationContext::settings</a></div><div class="ttdeci">T &amp; settings() const</div><div class="ttdoc">Access a specific Settings model instance.</div><div class="ttdef"><b>Definition:</b> ApplicationContext.hpp:42</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

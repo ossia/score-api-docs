@@ -1,5 +1,25 @@
 var annotated_dup =
 [
+    [ "Analysis", null, [
+      [ "Centroid", "struct_analysis_1_1_centroid.html", "struct_analysis_1_1_centroid" ],
+      [ "Crest", "struct_analysis_1_1_crest.html", "struct_analysis_1_1_crest" ],
+      [ "CSD", "struct_analysis_1_1_c_s_d.html", "struct_analysis_1_1_c_s_d" ],
+      [ "EnergyDifference", "struct_analysis_1_1_energy_difference.html", "struct_analysis_1_1_energy_difference" ],
+      [ "Flatness", "struct_analysis_1_1_flatness.html", "struct_analysis_1_1_flatness" ],
+      [ "GistState", "struct_analysis_1_1_gist_state.html", "struct_analysis_1_1_gist_state" ],
+      [ "Hfq", "struct_analysis_1_1_hfq.html", "struct_analysis_1_1_hfq" ],
+      [ "Kurtosis", "struct_analysis_1_1_kurtosis.html", "struct_analysis_1_1_kurtosis" ],
+      [ "MelSpectrum", "struct_analysis_1_1_mel_spectrum.html", "struct_analysis_1_1_mel_spectrum" ],
+      [ "MFCC", "struct_analysis_1_1_m_f_c_c.html", "struct_analysis_1_1_m_f_c_c" ],
+      [ "Peak", "struct_analysis_1_1_peak.html", "struct_analysis_1_1_peak" ],
+      [ "Pitch", "struct_analysis_1_1_pitch.html", "struct_analysis_1_1_pitch" ],
+      [ "RMS", "struct_analysis_1_1_r_m_s.html", "struct_analysis_1_1_r_m_s" ],
+      [ "Rolloff", "struct_analysis_1_1_rolloff.html", "struct_analysis_1_1_rolloff" ],
+      [ "SpectralDiff", "struct_analysis_1_1_spectral_diff.html", "struct_analysis_1_1_spectral_diff" ],
+      [ "SpectralDiffHWR", "struct_analysis_1_1_spectral_diff_h_w_r.html", "struct_analysis_1_1_spectral_diff_h_w_r" ],
+      [ "Spectrum", "struct_analysis_1_1_spectrum.html", "struct_analysis_1_1_spectrum" ],
+      [ "ZeroCrossing", "struct_analysis_1_1_zero_crossing.html", "struct_analysis_1_1_zero_crossing" ]
+    ] ],
     [ "Audio", null, [
       [ "Settings", null, [
         [ "Model", "class_audio_1_1_settings_1_1_model.html", "class_audio_1_1_settings_1_1_model" ],
@@ -1217,6 +1237,7 @@ var annotated_dup =
     [ "SafeQApplication", "class_safe_q_application.html", "class_safe_q_application" ],
     [ "ScenarioRollbackStrategy", "struct_scenario_rollback_strategy.html", null ],
     [ "score_lib_process", "classscore__lib__process.html", "classscore__lib__process" ],
+    [ "score_plugin_analysis", "classscore__plugin__analysis.html", "classscore__plugin__analysis" ],
     [ "score_plugin_audio", "classscore__plugin__audio.html", "classscore__plugin__audio" ],
     [ "score_plugin_automation", "classscore__plugin__automation.html", "classscore__plugin__automation" ],
     [ "score_plugin_controlsurface", "classscore__plugin__controlsurface.html", "classscore__plugin__controlsurface" ],
