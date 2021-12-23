@@ -131,20 +131,20 @@ $(document).ready(function(){initNavTree('_automation_drop_handler_8hpp_source.h
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> {score::mime::processdata()};</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  }</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  std::vector&lt;ProcessDrop&gt; drop(</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keyword">const</span> QMimeData&amp; mime,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="struct_mime_writer_3_01_process_1_1_process_data_01_4.html">Mime&lt;Process::ProcessData&gt;::Deserializer</a> des{mime};</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="struct_process_1_1_process_drop_handler_1_1_process_drop.html">ProcessDrop</a> p;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    p.creation = des.deserialize();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> {p};</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordflow">catch</span> (...)</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> {};</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> dropCustom(</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      std::vector&lt;ProcessDrop&gt;&amp; vec,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="keyword">const</span> QMimeData&amp; mime,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="struct_mime_writer_3_01_process_1_1_process_data_01_4.html">Mime&lt;Process::ProcessData&gt;::Deserializer</a> des{mime};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="struct_process_1_1_process_drop_handler_1_1_process_drop.html">ProcessDrop</a> p;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    p.creation = des.deserialize();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    vec.push_back(p);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  {</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  }</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
