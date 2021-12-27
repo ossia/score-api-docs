@@ -1,5 +1,13 @@
 var NAVTREEINDEX41 =
 {
+"classscore_1_1_command_stack.html#abe423a8e50bb494bab24955302f9d779":[12,0,44,42,23],
+"classscore_1_1_command_stack.html#abe423a8e50bb494bab24955302f9d779":[12,0,44,42,24],
+"classscore_1_1_command_stack.html#aca82bc449af903ef00024db0fc412c3c":[12,0,44,42,22],
+"classscore_1_1_command_stack.html#acd1bd407f63a31a546c030cbed9ad3c1":[12,0,44,42,54],
+"classscore_1_1_command_stack.html#acdba23171ccd21b6035cec9b6de3bfdf":[12,0,44,42,35],
+"classscore_1_1_command_stack.html#acee7aa1350c4d1025828d1f6a5b518fd":[12,0,44,42,48],
+"classscore_1_1_command_stack.html#ae66880148e02188d5d8fe437218427c3":[12,0,44,42,58],
+"classscore_1_1_command_stack.html#ae674d24e7ab7e814ed7d31fe16b2fa84":[12,0,44,42,28],
 "classscore_1_1_command_stack.html#ae6f98e13ff5f2a79d7018c3e926ac84a":[12,0,44,42,47],
 "classscore_1_1_command_stack.html#ae8f126b7cbcfe8b7bd3fcad4e4ff6fa5":[12,0,44,42,15],
 "classscore_1_1_command_stack.html#aea50f1de30a11a6241ffa4f2c8b64f84":[12,0,44,42,52],
@@ -241,13 +249,5 @@ var NAVTREEINDEX41 =
 "classscore_1_1_entity_map.html#a8f68b40de5c4a4cc8a1b4fe59e6fe461":[12,0,44,92,7],
 "classscore_1_1_entity_map.html#aa46e1d09a46d389686cc8b6044b4cf6f":[12,0,44,92,21],
 "classscore_1_1_entity_map.html#aaa2eeba42bdbbb46b68342650863ebb1":[12,0,44,92,6],
-"classscore_1_1_entity_map.html#ad501c0df68b653e01b70934019d8af9c":[12,0,44,92,20],
-"classscore_1_1_entity_map.html#ad73473e9c2626abbb0892a3ba9900fb5":[12,0,44,92,12],
-"classscore_1_1_entity_map.html#adc12aed4372ad9a79266c9d81388bf90":[12,0,44,92,15],
-"classscore_1_1_entity_map.html#ae5b0195edecb71443fb97da7b2992ac8":[12,0,44,92,18],
-"classscore_1_1_entity_map.html#ae9bea7ea458a7a5fbbd51cd779524198":[12,0,44,92,3],
-"classscore_1_1_entity_map.html#aed115ef68929ad06da60483e214532c3":[12,0,44,92,19],
-"classscore_1_1_entity_map.html#aee5f24bd610a438b205ace37b774dc89":[12,0,44,92,5],
-"classscore_1_1_entity_map.html#af87fdf0e2b4771d468e67212202c3fd7":[12,0,44,92,9],
-"classscore_1_1_entity_map_inserter.html":[12,0,44,93]
+"classscore_1_1_entity_map.html#ad501c0df68b653e01b70934019d8af9c":[12,0,44,92,20]
 };

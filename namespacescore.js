@@ -147,6 +147,7 @@ var namespacescore =
     [ "IndirectContainerWrapper", "classscore_1_1_indirect_container_wrapper.html", "classscore_1_1_indirect_container_wrapper" ],
     [ "IndirectMap", "classscore_1_1_indirect_map.html", "classscore_1_1_indirect_map" ],
     [ "IndirectUnorderedMap", "classscore_1_1_indirect_unordered_map.html", "classscore_1_1_indirect_unordered_map" ],
+    [ "InfiniteScroller", "structscore_1_1_infinite_scroller.html", null ],
     [ "InteractiveLabel", "classscore_1_1_interactive_label.html", "classscore_1_1_interactive_label" ],
     [ "InterfaceBase", "classscore_1_1_interface_base.html", "classscore_1_1_interface_base" ],
     [ "InterfaceList", "classscore_1_1_interface_list.html", "classscore_1_1_interface_list" ],

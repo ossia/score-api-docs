@@ -310,6 +310,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>VertexMap</b> = std:
 <tr class="memitem:aca5f6171db4f1a43264850d5925376b7"><td class="memItemLeft" align="right" valign="top"><a id="aca5f6171db4f1a43264850d5925376b7"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>gfx_input</b> = std::variant&lt; std::monostate, ossia::value, ossia::audio_vector &gt;</td></tr>
 <tr class="separator:aca5f6171db4f1a43264850d5925376b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7d09e369dac94fa9ff1bba162bba575"><td class="memItemLeft" align="right" valign="top"><a id="aa7d09e369dac94fa9ff1bba162bba575"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>PassMap</b> = ossia::small_vector&lt; std::pair&lt; <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> *, <a class="el" href="structscore_1_1gfx_1_1_pipeline.html">Pipeline</a> &gt;, 2 &gt;</td></tr>
+<tr class="separator:aa7d09e369dac94fa9ff1bba162bba575"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d76695282728f9a95057bd6b18deccf"><td class="memItemLeft" align="right" valign="top"><a id="a9d76695282728f9a95057bd6b18deccf"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>PassOutput</b> = std::variant&lt; <a class="el" href="structscore_1_1gfx_1_1_persist_sampler.html">PersistSampler</a>, <a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a> &gt;</td></tr>
 <tr class="separator:a9d76695282728f9a95057bd6b18deccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -319,6 +322,12 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>ValueVariant</b> = s
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:add5f72745723b9cdbc8038d333a059dc"><td class="memItemLeft" align="right" valign="top"><a id="add5f72745723b9cdbc8038d333a059dc"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ImageMode</b> { <b>Single</b>, 
+<b>Clamped</b>, 
+<b>Tiled</b>, 
+<b>Mirrored</b>
+ }</td></tr>
+<tr class="separator:add5f72745723b9cdbc8038d333a059dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b6a96306e1a02ccc56d8bb785bc6734"><td class="memItemLeft" align="right" valign="top"><a id="a5b6a96306e1a02ccc56d8bb785bc6734"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a> { <br />
 &#160;&#160;<b>Null</b>, 
 <b>OpenGL</b>, 
@@ -365,6 +374,10 @@ template&lt;typename Graph_T , typename IO &gt; </td></tr>
 <tr class="memitem:a0092fb509db323bc846a47e79bbd6a0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#a0092fb509db323bc846a47e79bbd6a0e">createRenderTarget</a> (const <a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> &amp;state, QRhiTexture::Format fmt, QSize sz)</td></tr>
 <tr class="memdesc:a0092fb509db323bc846a47e79bbd6a0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a render target from a texture format and size.  <a href="namespacescore_1_1gfx.html#a0092fb509db323bc846a47e79bbd6a0e">More...</a><br /></td></tr>
 <tr class="separator:a0092fb509db323bc846a47e79bbd6a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64b7d6c1d8b23ae672b17d89275575de"><td class="memItemLeft" align="right" valign="top"><a id="a64b7d6c1d8b23ae672b17d89275575de"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#a64b7d6c1d8b23ae672b17d89275575de">replaceSampler</a> (QRhiShaderResourceBindings &amp;, QRhiSampler *oldSampler, QRhiSampler *newSampler)</td></tr>
+<tr class="memdesc:a64b7d6c1d8b23ae672b17d89275575de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace a sampler. <br /></td></tr>
+<tr class="separator:a64b7d6c1d8b23ae672b17d89275575de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b178205d9b5f7a8b713bf052e4d3ba1"><td class="memItemLeft" align="right" valign="top"><a id="a9b178205d9b5f7a8b713bf052e4d3ba1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#a9b178205d9b5f7a8b713bf052e4d3ba1">replaceTexture</a> (QRhiShaderResourceBindings &amp;, QRhiSampler *sampler, QRhiTexture *newTexture)</td></tr>
 <tr class="memdesc:a9b178205d9b5f7a8b713bf052e4d3ba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace the texture currently bound to a sampler. <br /></td></tr>

@@ -1,5 +1,13 @@
 var NAVTREEINDEX26 =
 {
+"class_protocols_1_1_m_i_d_i_input_protocol_factory.html":[12,0,38,37],
+"class_protocols_1_1_m_i_d_i_input_settings_widget.html":[12,0,38,38],
+"class_protocols_1_1_m_i_d_i_input_settings_widget.html#a12ad8203868b2108f4232a2b8073bdac":[12,0,38,38,0],
+"class_protocols_1_1_m_i_d_i_output_protocol_factory.html":[12,0,38,39],
+"class_protocols_1_1_m_i_d_i_output_settings_widget.html":[12,0,38,40],
+"class_protocols_1_1_m_i_d_i_output_settings_widget.html#a62e8ebad421d2096325a4108a42d8b88":[12,0,38,40,0],
+"class_protocols_1_1_midi_enumerator.html":[12,0,38,36],
+"class_protocols_1_1_minuit_device.html":[12,0,38,42],
 "class_protocols_1_1_minuit_device.html#a08a97c84d0748d48a4dc030e9c1f737c":[12,0,38,42,0],
 "class_protocols_1_1_minuit_device.html#a1c33a62ed55f33cc1e3b9f60fd681ef1":[12,0,38,42,1],
 "class_protocols_1_1_minuit_device.html#ae0039820369a702d8539dbe0b8e2351c":[12,0,38,42,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX26 =
 "class_remote_control_1_1_process_component_factory.html#a97471388a71c53c6f8f5f6de83548216":[12,0,41,10,1],
 "class_remote_control_1_1_process_component_factory.html#aecaa409b4d3cb859d1383cba3db917e2":[12,0,41,10,0],
 "class_remote_control_1_1_process_component_factory___t.html":[12,0,41,11],
-"class_remote_control_1_1_process_component_factory___t.html#abcfca578346a18ec8bfa41d9c1b68356":[12,0,41,11,1],
-"class_remote_control_1_1_process_component_factory___t.html#ad0409753fb66c37d3061ab7ce6c79603":[12,0,41,11,0],
-"class_remote_control_1_1_scenario_base.html":[12,0,41,14],
-"class_remote_control_1_1_scenario_base.html#a2ec60af23ccd61c5e81b27a230180e2a":[12,0,41,14,0],
-"class_remote_control_1_1_scenario_base.html#a9b29f81f1bafa8b1cbff24d5f62bd316":[12,0,41,14,3],
-"class_remote_control_1_1_scenario_base.html#ae6ff36862a4908e803b53dc41628f79f":[12,0,41,14,1],
-"class_remote_control_1_1_scenario_base.html#af505c8f5261cf3723dea5a5681c40303":[12,0,41,14,2],
-"class_remote_control_1_1_settings_1_1_model.html":[12,0,41,0,0],
-"class_remote_control_1_1_settings_1_1_model.html#a831c000f8768512055314f7805580aa1":[12,0,41,0,0,0]
+"class_remote_control_1_1_process_component_factory___t.html#abcfca578346a18ec8bfa41d9c1b68356":[12,0,41,11,1]
 };

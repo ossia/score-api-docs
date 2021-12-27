@@ -1,5 +1,13 @@
 var NAVTREEINDEX34 =
 {
+"class_scenario_1_1_right_brace_view.html":[12,0,43,204],
+"class_scenario_1_1_right_brace_view.html#a2b02b5b2c77cde2cf153768c66a8b436":[12,0,43,204,1],
+"class_scenario_1_1_right_brace_view.html#a401b9076ec71c3fff1cb3ed223d7404c":[12,0,43,204,2],
+"class_scenario_1_1_right_brace_view.html#ad8b01d9919afc5dd0fae1baf2813c87a":[12,0,43,204,0],
+"class_scenario_1_1_scenario_application_plugin.html":[12,0,43,206],
+"class_scenario_1_1_scenario_application_plugin.html#a20f0e95a76e829ab7f987d4f39cb7569":[12,0,43,206,10],
+"class_scenario_1_1_scenario_application_plugin.html#a294a7dcbba49620c6eb4cd367f0aa1ac":[12,0,43,206,5],
+"class_scenario_1_1_scenario_application_plugin.html#a38a6d2b06dd55347fa4ee8cca58275ff":[12,0,43,206,0],
 "class_scenario_1_1_scenario_application_plugin.html#a528cb81a9040a64d77006ba8de13f8e6":[12,0,43,206,4],
 "class_scenario_1_1_scenario_application_plugin.html#a5416c9661488a020703675d1a822a916":[12,0,43,206,3],
 "class_scenario_1_1_scenario_application_plugin.html#a6423d63edf24fa7a51292c531b41bc35":[12,0,43,206,7],
@@ -241,13 +249,5 @@ var NAVTREEINDEX34 =
 "class_scenario_1_1_scenario_view_interface.html#abf394b45979dbed5950d373e8bca42b2":[12,0,43,235,2],
 "class_scenario_1_1_search_widget.html":[12,0,43,236],
 "class_scenario_1_1_search_widget.html#a263fb81e20c4622cfb4f488c1667f9ba":[12,0,43,236,0],
-"class_scenario_1_1_search_widget.html#a771916b1dc33695393b339723a1205a4":[12,0,43,236,1],
-"class_scenario_1_1_selection_stack_widget.html":[12,0,43,238],
-"class_scenario_1_1_selection_stack_widget.html#af3e452d57b628be270ff4a4e2d0f9371":[12,0,43,238,0],
-"class_scenario_1_1_selection_state.html":[12,0,43,239],
-"class_scenario_1_1_selection_state.html#a0269215042b684d82c2e9d8158624ba5":[12,0,43,239,0],
-"class_scenario_1_1_selection_state.html#a0e9eb9bfceab549ec08f9f5853830ae6":[12,0,43,239,2],
-"class_scenario_1_1_selection_state.html#a21dea18edaec892f03b97a2e1f602573":[12,0,43,239,3],
-"class_scenario_1_1_selection_state.html#a332820e6d51810a6058766adf50ab5f4":[12,0,43,239,5],
-"class_scenario_1_1_selection_state.html#a510b8aa6bcbfa75062548529ccd296c6":[12,0,43,239,4]
+"class_scenario_1_1_search_widget.html#a771916b1dc33695393b339723a1205a4":[12,0,43,236,1]
 };

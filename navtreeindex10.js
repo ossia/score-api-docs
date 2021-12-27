@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"class_dataflow_1_1_cable_inspector_factory.html":[12,0,7,11],
 "class_dataflow_1_1_cable_inspector_factory.html#a64e83b69e2a32eb6d67e8079bd25d238":[12,0,7,11,0],
 "class_dataflow_1_1_cable_inspector_factory.html#a72d66247119a4a1f2f2402d5b8441b17":[12,0,7,11,2],
 "class_dataflow_1_1_cable_inspector_factory.html#ae9936673f6b3a734d154c59ef0aad91f":[12,0,7,11,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "class_device_1_1_protocol_factory.html#af2ce8aea8a61af9dfd523e3c4191bea7":[12,0,8,17,14],
 "class_device_1_1_protocol_factory.html#afe23713305124395ecc5291ab89aeac9":[12,0,8,17,5],
 "class_device_1_1_protocol_factory_list.html":[12,0,8,18],
-"class_device_1_1_protocol_settings_widget.html":[12,0,8,19],
-"class_device_1_1_protocol_settings_widget.html#a10af70d307d243634e0ba2e9e1e90509":[12,0,8,19,2]
+"class_device_1_1_protocol_settings_widget.html":[12,0,8,19]
 };

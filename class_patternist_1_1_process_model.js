@@ -8,6 +8,7 @@ var class_patternist_1_1_process_model =
     [ "channelChanged", "class_patternist_1_1_process_model.html#a53edfe90c66a0f4892315f0865a518b7", null ],
     [ "currentPattern", "class_patternist_1_1_process_model.html#a00433277c1c95442a49740099cce757e", null ],
     [ "currentPatternChanged", "class_patternist_1_1_process_model.html#a685fcf13ad4872093bba0b4dee92e3f6", null ],
+    [ "execPosition", "class_patternist_1_1_process_model.html#a1793b688d1e4485fe2f1a124a4a39c10", null ],
     [ "init", "class_patternist_1_1_process_model.html#a59aaa760db18d9fe7a3980729f76e4fc", null ],
     [ "patterns", "class_patternist_1_1_process_model.html#a6e04e4406f3e803f772af6764c025577", null ],
     [ "patternsChanged", "class_patternist_1_1_process_model.html#af80ee62a315e143898cf7b3a17c58746", null ],

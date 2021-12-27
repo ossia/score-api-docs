@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"class_automation_1_1_init_automation.html#a14c8edaaa40bbb94c2b1abe2caaf6d09":[12,0,2,3,5],
 "class_automation_1_1_init_automation.html#a255604d12c5d9f6e1acd94a216c8d090":[12,0,2,3,2],
 "class_automation_1_1_init_automation.html#a4f4b4823003320d64465aa0899a9e8cd":[12,0,2,3,4],
 "class_automation_1_1_init_automation.html#abfa992f95bfc63f122e3632c83aafda8":[12,0,2,3,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "class_curve_1_1_curve_process_model.html#a50e0540e0250e9bdef3280fe8e45d482":[12,0,6,12,1],
 "class_curve_1_1_curve_process_model.html#a6acc23f0604770b1fc655adf634a4870":[12,0,6,12,3],
 "class_curve_1_1_curve_process_model.html#a794dbe7905b68dff5df408d2c82d5525":[12,0,6,12,2],
-"class_curve_1_1_curve_process_model.html#a7c956454403368a42a7b7a399a0f7c43":[12,0,6,12,7],
-"class_curve_1_1_curve_process_model.html#a83899e2e39ba65036bfac84b91177581":[12,0,6,12,0]
+"class_curve_1_1_curve_process_model.html#a7c956454403368a42a7b7a399a0f7c43":[12,0,6,12,7]
 };

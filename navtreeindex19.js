@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"class_library_1_1_process_widget.html#aa07fac732ef976949e2f9132e8cb7390":[12,0,24,16,4],
 "class_library_1_1_process_widget.html#aba6fc80de137b65074db350814c57cbe":[12,0,24,16,0],
 "class_library_1_1_processes_item_model.html":[12,0,24,12],
 "class_library_1_1_processes_item_model.html#a0c193e28725d726622fe48061eead11c":[12,0,24,12,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "class_media_1_1_set_merge_in_count.html":[12,0,28,18],
 "class_media_1_1_set_min.html":[12,0,28,19],
 "class_media_1_1_set_min.html#a798f21d65c93f01f2ae2c58ac5011a2c":[12,0,28,19,0],
-"class_media_1_1_set_step_count.html":[12,0,28,20],
-"class_media_1_1_set_step_duration.html":[12,0,28,21]
+"class_media_1_1_set_step_count.html":[12,0,28,20]
 };

@@ -140,6 +140,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>processUBOInit</b> (<
 <tr class="memitem:ad99161ccbb625d01cf8c941e84d1f9bc"><td class="memItemLeft" align="right" valign="top"><a id="ad99161ccbb625d01cf8c941e84d1f9bc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>defaultPassesInit</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a> &amp;mesh)</td></tr>
 <tr class="separator:ad99161ccbb625d01cf8c941e84d1f9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dc3ed3a16f84658560fd15a0605893d"><td class="memItemLeft" align="right" valign="top"><a id="a8dc3ed3a16f84658560fd15a0605893d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>defaultPassesInit</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a> &amp;mesh, const QShader &amp;v, const QShader &amp;f)</td></tr>
+<tr class="separator:a8dc3ed3a16f84658560fd15a0605893d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a004e72a4b29a4714d51606bfcfe850b5"><td class="memItemLeft" align="right" valign="top"><a id="a004e72a4b29a4714d51606bfcfe850b5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer) override</td></tr>
 <tr class="separator:a004e72a4b29a4714d51606bfcfe850b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,6 +161,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> (<a class
 <tr class="memitem:a4542fdece0191686165f8c0bcc3abd35"><td class="memItemLeft" align="right" valign="top"><a id="a4542fdece0191686165f8c0bcc3abd35"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>defaultRenderPass</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;, const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a> &amp;mesh, QRhiCommandBuffer &amp;commands, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge)</td></tr>
 <tr class="separator:a4542fdece0191686165f8c0bcc3abd35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf095a8f02f7d7138a7e8bac55fb74fd"><td class="memItemLeft" align="right" valign="top"><a id="adf095a8f02f7d7138a7e8bac55fb74fd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>defaultRenderPass</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;, const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a> &amp;mesh, QRhiCommandBuffer &amp;commands, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge, PassMap &amp;passes)</td></tr>
+<tr class="separator:adf095a8f02f7d7138a7e8bac55fb74fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a2af09c25bf87da90d755a024915efb"><td class="memItemLeft" align="right" valign="top"><a id="a9a2af09c25bf87da90d755a024915efb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>runRenderPass</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;, QRhiCommandBuffer &amp;commands, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge) override</td></tr>
 <tr class="separator:a9a2af09c25bf87da90d755a024915efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,9 +182,9 @@ const <a class="el" href="classscore_1_1gfx_1_1_node_model.html">NodeModel</a> &
 <tr class="memitem:a8ec58cd930f710f0b66ee0207a53e035"><td class="memItemLeft" align="right" valign="top"><a id="a8ec58cd930f710f0b66ee0207a53e035"></a>
 std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_sampler.html">Sampler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_samplers</b></td></tr>
 <tr class="separator:a8ec58cd930f710f0b66ee0207a53e035"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9ff92416d7d087cad439b8021edd330"><td class="memItemLeft" align="right" valign="top"><a id="aa9ff92416d7d087cad439b8021edd330"></a>
-ossia::small_vector&lt; std::pair&lt; <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> *, <a class="el" href="structscore_1_1gfx_1_1_pipeline.html">Pipeline</a> &gt;, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_p</b></td></tr>
-<tr class="separator:aa9ff92416d7d087cad439b8021edd330"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fca596faef22d6638d7cc98ec9fff38"><td class="memItemLeft" align="right" valign="top"><a id="a0fca596faef22d6638d7cc98ec9fff38"></a>
+PassMap&#160;</td><td class="memItemRight" valign="bottom"><b>m_p</b></td></tr>
+<tr class="separator:a0fca596faef22d6638d7cc98ec9fff38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5824c93460cdbcdda454303f49a192a4"><td class="memItemLeft" align="right" valign="top"><a id="a5824c93460cdbcdda454303f49a192a4"></a>
 QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_meshBuffer</b> {}</td></tr>
 <tr class="separator:a5824c93460cdbcdda454303f49a192a4"><td class="memSeparator" colspan="2">&#160;</td></tr>

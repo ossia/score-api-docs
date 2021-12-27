@@ -376,9 +376,12 @@ Enumerations</h2></td></tr>
 <a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a04d62df558a1f3d140a99921aadbd254">ControlSurface</a> = (1 &lt;&lt; 6 ), 
 <a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1aa9c81d4f02379ef379045345e2c35c1e">FullyCustomItem</a> = (1 &lt;&lt; 7 ), 
 <br />
-&#160;&#160;<b>SupportsLasting</b> = SupportsTemporal | TimeIndependent, 
+&#160;&#160;<a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a7fcd7392ee5bf4d95598ea56d587561b">CanCreateControls</a> = (1 &lt;&lt; 8 ), 
+<a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a38523301770f54c3e6f8daa92606322d">CreateControls</a> = (1 &lt;&lt; 9 ), 
+<b>SupportsLasting</b> = SupportsTemporal | TimeIndependent, 
 <b>ExternalEffect</b> = SupportsTemporal | TimeIndependent | RequiresCustomData | ControlSurface, 
-<b>SupportsAll</b> = SupportsTemporal | TimeIndependent | SupportsState
+<br />
+&#160;&#160;<b>SupportsAll</b> = SupportsTemporal | TimeIndependent | SupportsState
 <br />
  }</td></tr>
 <tr class="memdesc:a592bb361ebf8fbc09c929c93208c71f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Various settings for processes.  <a href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">More...</a><br /></td></tr>
@@ -586,6 +589,12 @@ const QIcon &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getCateg
 <tr class="memitem:a1410ea4c1c3e482407168928fb7c7de0"><td class="memItemLeft" align="right" valign="top"><a id="a1410ea4c1c3e482407168928fb7c7de0"></a>
 const <a class="el" href="class_process_1_1_process_model.html">ProcessModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>parentProcess</b> (const QObject *obj) noexcept</td></tr>
 <tr class="separator:a1410ea4c1c3e482407168928fb7c7de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad749c710ee9e8f372c68512bc2f8d77f"><td class="memItemLeft" align="right" valign="top"><a id="ad749c710ee9e8f372c68512bc2f8d77f"></a>
+constexpr <a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">ProcessFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator|</b> (<a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">ProcessFlags</a> a, <a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">ProcessFlags</a> b) noexcept</td></tr>
+<tr class="separator:ad749c710ee9e8f372c68512bc2f8d77f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad62b60dfb3092f17a003484a7dcc4dea"><td class="memItemLeft" align="right" valign="top"><a id="ad62b60dfb3092f17a003484a7dcc4dea"></a>
+constexpr <a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">ProcessFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator|=</b> (<a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">ProcessFlags</a> &amp;a, <a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">ProcessFlags</a> b) noexcept</td></tr>
+<tr class="separator:ad62b60dfb3092f17a003484a7dcc4dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5be9a0d7a99646cc73b990d1f298e69b"><td class="memItemLeft" align="right" valign="top"><a id="a5be9a0d7a99646cc73b990d1f298e69b"></a>
 QTextEdit *&#160;</td><td class="memItemRight" valign="bottom"><b>createScriptWidget</b> (const std::string_view language)</td></tr>
 <tr class="separator:a5be9a0d7a99646cc73b990d1f298e69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -653,6 +662,10 @@ QDebug&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b
 <tr><td class="fieldname"><a id="a592bb361ebf8fbc09c929c93208c71f1a04d62df558a1f3d140a99921aadbd254"></a>ControlSurface&#160;</td><td class="fielddoc"><p>The process supports being exposed to the ControlSurface. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a592bb361ebf8fbc09c929c93208c71f1aa9c81d4f02379ef379045345e2c35c1e"></a>FullyCustomItem&#160;</td><td class="fielddoc"><p>The process's item handles all the decoration (won't be title, etc) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a592bb361ebf8fbc09c929c93208c71f1a7fcd7392ee5bf4d95598ea56d587561b"></a>CanCreateControls&#160;</td><td class="fielddoc"><p>The process supports adding new controls (for audio plug-ins, LV2 etc): this will show the UI in the inspector </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a592bb361ebf8fbc09c929c93208c71f1a38523301770f54c3e6f8daa92606322d"></a>CreateControls&#160;</td><td class="fielddoc"><p>The process is currently creating new controls (the runtime state changed by the user) </p>
 </td></tr>
 </table>
 

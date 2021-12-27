@@ -1,5 +1,13 @@
 var NAVTREEINDEX35 =
 {
+"class_scenario_1_1_selection_stack_widget.html":[12,0,43,238],
+"class_scenario_1_1_selection_stack_widget.html#af3e452d57b628be270ff4a4e2d0f9371":[12,0,43,238,0],
+"class_scenario_1_1_selection_state.html":[12,0,43,239],
+"class_scenario_1_1_selection_state.html#a0269215042b684d82c2e9d8158624ba5":[12,0,43,239,0],
+"class_scenario_1_1_selection_state.html#a0e9eb9bfceab549ec08f9f5853830ae6":[12,0,43,239,2],
+"class_scenario_1_1_selection_state.html#a21dea18edaec892f03b97a2e1f602573":[12,0,43,239,3],
+"class_scenario_1_1_selection_state.html#a332820e6d51810a6058766adf50ab5f4":[12,0,43,239,5],
+"class_scenario_1_1_selection_state.html#a510b8aa6bcbfa75062548529ccd296c6":[12,0,43,239,4],
 "class_scenario_1_1_selection_state.html#a73bfb6eb0950eba1cd8238271cbfee8d":[12,0,43,239,7],
 "class_scenario_1_1_selection_state.html#a8735ce212094391cb47c8e0168d6fc45":[12,0,43,239,1],
 "class_scenario_1_1_selection_state.html#a8cf0a7d0a3468ae7b5ec3aefe2077fe1":[12,0,43,239,6],
@@ -241,13 +249,5 @@ var NAVTREEINDEX35 =
 "class_scenario_1_1_temporal_interval_header.html#ab7b4678e010a5eed307322a6c2d8cf41":[12,0,43,270,8],
 "class_scenario_1_1_temporal_interval_header.html#ac41541de82d8361ce69fb9c4d3dcd502":[12,0,43,270,3],
 "class_scenario_1_1_temporal_interval_header.html#ad55ff4ea11878d0bc816ab49bb492c4d":[12,0,43,270,0],
-"class_scenario_1_1_temporal_interval_header.html#ae75ce93bdc32fc56c16616ec879c2b74":[12,0,43,270,5],
-"class_scenario_1_1_temporal_interval_header.html#af016fb22edf1417377069fb043b79627":[12,0,43,270,15],
-"class_scenario_1_1_temporal_interval_presenter.html":[12,0,43,271],
-"class_scenario_1_1_temporal_interval_presenter.html#a1c480d1b2823950252f38eee0afbb983":[12,0,43,271,7],
-"class_scenario_1_1_temporal_interval_presenter.html#a32520d52d5058d692e2df9369d480a6e":[12,0,43,271,2],
-"class_scenario_1_1_temporal_interval_presenter.html#a4179967ad0525c2e46768f7b5ea8719e":[12,0,43,271,6],
-"class_scenario_1_1_temporal_interval_presenter.html#a5642aaaa01c9cd706764756c81fce9cf":[12,0,43,271,11],
-"class_scenario_1_1_temporal_interval_presenter.html#a58dbf1d86700e0ddeb14e08bac266970":[12,0,43,271,9],
-"class_scenario_1_1_temporal_interval_presenter.html#a5a6d9f48db28c2e49cca94be68465708":[12,0,43,271,0]
+"class_scenario_1_1_temporal_interval_header.html#ae75ce93bdc32fc56c16616ec879c2b74":[12,0,43,270,5]
 };

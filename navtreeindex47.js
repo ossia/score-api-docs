@@ -1,5 +1,15 @@
 var NAVTREEINDEX47 =
 {
+"classscore__plugin__fx.html#aeafeaf8c823b2fc067ab32f36702cd6e":[12,0,335,0],
+"classscore__plugin__gfx.html":[12,0,336],
+"classscore__plugin__gfx.html#a916cb1a6328fa1a7f57385ba9143cf5e":[12,0,336,1],
+"classscore__plugin__gfx.html#ad41d961aa4eea0b7e82f3284c584ce8e":[12,0,336,0],
+"classscore__plugin__inspector.html":[12,0,337],
+"classscore__plugin__inspector.html#a1eec94c22774bc41303f0bae2c7bc251":[12,0,337,1],
+"classscore__plugin__inspector.html#a5c6f09628e3a286763625a3d376994b1":[12,0,337,0],
+"classscore__plugin__inspector.html#a6483a4f19dfbeda0cf49775c2a1b7ab3":[12,0,337,3],
+"classscore__plugin__inspector.html#accdbd904cf5f5bdc669ddbbf88dbcc2d":[12,0,337,2],
+"classscore__plugin__jit.html":[12,0,338],
 "classscore__plugin__jit.html#a72cd9602b7f1a84b62158a6fa00a1737":[12,0,338,0],
 "classscore__plugin__jit.html#a7e8f4774a6e88c8ae15a3fd6bcc7a1cb":[12,0,338,1],
 "classscore__plugin__js.html":[12,0,339],
@@ -239,15 +249,5 @@ var NAVTREEINDEX47 =
 "classvst3_1_1vst__node__base.html#a31baafe88bcce7ed13db2a70b938c281":[12,0,54,18,24],
 "classvst3_1_1vst__node__base.html#a4431096f4dbd723e3e068220232c668e":[12,0,54,18,13],
 "classvst3_1_1vst__node__base.html#a487e7887b95d1b0c1df691d617554825":[12,0,54,18,5],
-"classvst3_1_1vst__node__base.html#a4ddd5653ff47dbc96e175f2224d45430":[12,0,54,18,12],
-"classvst3_1_1vst__node__base.html#a4e16edd359cdb96ee21232964b179438":[12,0,54,18,18],
-"classvst3_1_1vst__node__base.html#a50603a6d896fe06631035f146f701bea":[12,0,54,18,2],
-"classvst3_1_1vst__node__base.html#a6656e2a17178db46d0dcf0befaffc520":[12,0,54,18,23],
-"classvst3_1_1vst__node__base.html#a6b52cdec60800f8ec995db959fed9121":[12,0,54,18,6],
-"classvst3_1_1vst__node__base.html#a8a8da367dcb1ea32493b9b23710e8627":[12,0,54,18,9],
-"classvst3_1_1vst__node__base.html#a9050ceb060ec2032494f0bd02b4f493c":[12,0,54,18,19],
-"classvst3_1_1vst__node__base.html#a981daa19d476927047c418dfd9dcc682":[12,0,54,18,15],
-"classvst3_1_1vst__node__base.html#ab604dd9431d84146f8cda4814158c037":[12,0,54,18,16],
-"classvst3_1_1vst__node__base.html#ab68159875a9d2c2f3c2c3a6cd4c8acc3":[12,0,54,18,26],
-"classvst3_1_1vst__node__base.html#ab8e15c9c77d23a3170037b4fe4fdfc11":[12,0,54,18,4]
+"classvst3_1_1vst__node__base.html#a4ddd5653ff47dbc96e175f2224d45430":[12,0,54,18,12]
 };

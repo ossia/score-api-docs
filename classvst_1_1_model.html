@@ -127,6 +127,21 @@ Public Member Functions</h2></td></tr>
 template&lt;typename Impl &gt; </td></tr>
 <tr class="memitem:a040142fa4552178093aa3da6f0a28378"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Model</b> (Impl &amp;vis, QObject *parent)</td></tr>
 <tr class="separator:a040142fa4552178093aa3da6f0a28378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97107d611cd018f54ef5b4d0ff6081be"><td class="memItemLeft" align="right" valign="top"><a id="a97107d611cd018f54ef5b4d0ff6081be"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>prettyShortName</b> () const noexcept override</td></tr>
+<tr class="separator:a97107d611cd018f54ef5b4d0ff6081be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d027bbd131c51d6b31b8e1e8cb64d16"><td class="memItemLeft" align="right" valign="top"><a id="a0d027bbd131c51d6b31b8e1e8cb64d16"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>category</b> () const noexcept override</td></tr>
+<tr class="separator:a0d027bbd131c51d6b31b8e1e8cb64d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a814865f385d91c882cc3aa48a08e62a6"><td class="memItemLeft" align="right" valign="top"><a id="a814865f385d91c882cc3aa48a08e62a6"></a>
+QStringList&#160;</td><td class="memItemRight" valign="bottom"><b>tags</b> () const noexcept override</td></tr>
+<tr class="separator:a814865f385d91c882cc3aa48a08e62a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35884beda7fa4fa16b15b4a4f57abdbc"><td class="memItemLeft" align="right" valign="top"><a id="a35884beda7fa4fa16b15b4a4f57abdbc"></a>
+<a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">Process::ProcessFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><b>flags</b> () const noexcept override</td></tr>
+<tr class="separator:a35884beda7fa4fa16b15b4a4f57abdbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2913b2aa197daec2f86ab01df97b910e"><td class="memItemLeft" align="right" valign="top"><a id="a2913b2aa197daec2f86ab01df97b910e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCreatingControls</b> (bool ok) override</td></tr>
+<tr class="separator:a2913b2aa197daec2f86ab01df97b910e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdf4ef3f57556a8ab6e72390863f0b5b"><td class="memItemLeft" align="right" valign="top"><a id="acdf4ef3f57556a8ab6e72390863f0b5b"></a>
 <a class="el" href="classvst_1_1_control_inlet.html">ControlInlet</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getControl</b> (const <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="class_process_1_1_port.html">Process::Port</a> &gt; &amp;p) const</td></tr>
 <tr class="separator:acdf4ef3f57556a8ab6e72390863f0b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,18 +185,6 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>dispatch</b> (int32_t
 <tr class="memitem:a13b685b27b02822d4002b7cd193621a9 inherit pub_methods_class_process_1_1_process_model"><td class="memItemLeft" align="right" valign="top"><a id="a13b685b27b02822d4002b7cd193621a9"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ProcessModel</b> (<a class="el" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a> &amp;vis, QObject *parent)</td></tr>
 <tr class="separator:a13b685b27b02822d4002b7cd193621a9 inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8823df987f8f59f0d6fab3e7598f80dc inherit pub_methods_class_process_1_1_process_model"><td class="memItemLeft" align="right" valign="top"><a id="a8823df987f8f59f0d6fab3e7598f80dc"></a>
-virtual QString&#160;</td><td class="memItemRight" valign="bottom"><b>prettyShortName</b> () const noexcept=0</td></tr>
-<tr class="separator:a8823df987f8f59f0d6fab3e7598f80dc inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43a41a4f2cc17bec8e66ec4b634ea220 inherit pub_methods_class_process_1_1_process_model"><td class="memItemLeft" align="right" valign="top"><a id="a43a41a4f2cc17bec8e66ec4b634ea220"></a>
-virtual QString&#160;</td><td class="memItemRight" valign="bottom"><b>category</b> () const noexcept=0</td></tr>
-<tr class="separator:a43a41a4f2cc17bec8e66ec4b634ea220 inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bf11caad01ef77a945a828e79c13c52 inherit pub_methods_class_process_1_1_process_model"><td class="memItemLeft" align="right" valign="top"><a id="a7bf11caad01ef77a945a828e79c13c52"></a>
-virtual QStringList&#160;</td><td class="memItemRight" valign="bottom"><b>tags</b> () const noexcept=0</td></tr>
-<tr class="separator:a7bf11caad01ef77a945a828e79c13c52 inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a868ffa760b7923b685308572d81bed01 inherit pub_methods_class_process_1_1_process_model"><td class="memItemLeft" align="right" valign="top"><a id="a868ffa760b7923b685308572d81bed01"></a>
-virtual <a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">ProcessFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><b>flags</b> () const noexcept=0</td></tr>
-<tr class="separator:a868ffa760b7923b685308572d81bed01 inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca261d66704364d06318dce734933b71 inherit pub_methods_class_process_1_1_process_model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_process_model.html#aca261d66704364d06318dce734933b71">setParentDuration</a> (ExpandMode mode, const <a class="el" href="struct_time_val.html">TimeVal</a> &amp;t) noexcept</td></tr>
 <tr class="separator:aca261d66704364d06318dce734933b71 inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbca0c06f06584b2c3a02150fde6b4a8 inherit pub_methods_class_process_1_1_process_model"><td class="memItemLeft" align="right" valign="top"><a id="afbca0c06f06584b2c3a02150fde6b4a8"></a>
@@ -283,6 +286,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setLoopDuration</b> (
 <tr class="memitem:a8777b763fe33b8ee258f4e1051b0becc inherit pub_methods_class_process_1_1_process_model"><td class="memItemLeft" align="right" valign="top"><a id="a8777b763fe33b8ee258f4e1051b0becc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>loopDurationChanged</b> (<a class="el" href="struct_time_val.html">TimeVal</a> b)</td></tr>
 <tr class="separator:a8777b763fe33b8ee258f4e1051b0becc inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51921b6c6fdc27c55d323003d34a2405 inherit pub_methods_class_process_1_1_process_model"><td class="memItemLeft" align="right" valign="top"><a id="a51921b6c6fdc27c55d323003d34a2405"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>creatingControls</b> () const noexcept</td></tr>
+<tr class="separator:a51921b6c6fdc27c55d323003d34a2405 inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76f4da6b547d61e88da4165ced7c8095 inherit pub_methods_class_process_1_1_process_model"><td class="memItemLeft" align="right" valign="top"><a id="a76f4da6b547d61e88da4165ced7c8095"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>creatingControlsChanged</b> (bool b)</td></tr>
+<tr class="separator:a76f4da6b547d61e88da4165ced7c8095 inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0b622083ce132f6a5fae0659c815184 inherit pub_methods_class_process_1_1_process_model"><td class="memItemLeft" align="right" valign="top"><a id="ad0b622083ce132f6a5fae0659c815184"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_process_model.html#ad0b622083ce132f6a5fae0659c815184">startExecution</a> ()</td></tr>
 <tr class="memdesc:ad0b622083ce132f6a5fae0659c815184 inherit pub_methods_class_process_1_1_process_model"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_execution.html" title="Components used for the execution of a score.">Execution</a>. <br /></td></tr>

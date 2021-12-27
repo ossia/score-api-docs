@@ -518,6 +518,7 @@ var files_dup =
     [ "ImageNode.hpp", "_image_node_8hpp_source.html", null ],
     [ "IncludeLibpd.hpp", "_include_libpd_8hpp_source.html", null ],
     [ "IndirectContainer.hpp", "_indirect_container_8hpp_source.html", null ],
+    [ "InfiniteScroller.hpp", "_infinite_scroller_8hpp_source.html", null ],
     [ "InitAutomation.hpp", "_init_automation_8hpp_source.html", null ],
     [ "InsertContentInInterval.hpp", "_insert_content_in_interval_8hpp_source.html", null ],
     [ "InsertContentInState.hpp", "_insert_content_in_state_8hpp_source.html", null ],
