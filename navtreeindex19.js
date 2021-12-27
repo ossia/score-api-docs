@@ -1,5 +1,8 @@
 var NAVTREEINDEX19 =
 {
+"class_library_1_1_process_widget.html#aba6fc80de137b65074db350814c57cbe":[12,0,24,16,0],
+"class_library_1_1_processes_item_model.html":[12,0,24,12],
+"class_library_1_1_processes_item_model.html#a0c193e28725d726622fe48061eead11c":[12,0,24,12,1],
 "class_library_1_1_processes_item_model.html#a24c36f09abff1600b8e8731a7ca842e2":[12,0,24,12,3],
 "class_library_1_1_processes_item_model.html#a26216bdca63e484f3328f05795204315":[12,0,24,12,0],
 "class_library_1_1_processes_item_model.html#a3766f5dc2c124d59ba924ceb867de2d7":[12,0,24,12,4],
@@ -246,8 +249,5 @@ var NAVTREEINDEX19 =
 "class_media_1_1_set_min.html":[12,0,28,19],
 "class_media_1_1_set_min.html#a798f21d65c93f01f2ae2c58ac5011a2c":[12,0,28,19,0],
 "class_media_1_1_set_step_count.html":[12,0,28,20],
-"class_media_1_1_set_step_duration.html":[12,0,28,21],
-"class_media_1_1_settings_1_1_model.html":[12,0,28,2,0],
-"class_media_1_1_settings_1_1_model.html#a831c000f8768512055314f7805580aa1":[12,0,28,2,0,0],
-"class_media_1_1_settings_1_1_plugin_settings_factory_list.html":[12,0,28,2,1]
+"class_media_1_1_set_step_duration.html":[12,0,28,21]
 };

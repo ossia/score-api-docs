@@ -125,39 +125,39 @@ $(document).ready(function(){initNavTree('_image_node_8hpp_source.html',''); ini
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  } ubo;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  std::atomic_int imagesChanged{};</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">void</span> process(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_message.html">Message</a>&amp; msg) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  std::vector&lt;score::gfx::Image&gt; images;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  std::vector&lt;QImage*&gt; linearImages;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_full_screen_image_node.html">   38</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structscore_1_1gfx_1_1_full_screen_image_node.html">FullScreenImageNode</a> : <a class="code" href="classscore_1_1gfx_1_1_node_model.html">NodeModel</a></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="structscore_1_1gfx_1_1_full_screen_image_node.html">FullScreenImageNode</a>(QImage dec);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="structscore_1_1gfx_1_1_full_screen_image_node.html">FullScreenImageNode</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>*</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_full_screen_image_node.html#a27e4621131c903fc28a566e1aa3d6faf">createRenderer</a>(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r) <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">class </span><a class="code" href="classscore_1_1gfx_1_1_full_screen_image_node_1_1_renderer.html">Renderer</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  QImage m_image;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  std::atomic_bool tile{};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> process(<span class="keyword">const</span> Message&amp; msg) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  std::vector&lt;score::gfx::Image&gt; images;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  std::vector&lt;QImage*&gt; linearImages;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_full_screen_image_node.html">   39</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structscore_1_1gfx_1_1_full_screen_image_node.html">FullScreenImageNode</a> : <a class="code" href="classscore_1_1gfx_1_1_node_model.html">NodeModel</a></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="structscore_1_1gfx_1_1_full_screen_image_node.html">FullScreenImageNode</a>(QImage dec);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="structscore_1_1gfx_1_1_full_screen_image_node.html">FullScreenImageNode</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>*</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_full_screen_image_node.html#a27e4621131c903fc28a566e1aa3d6faf">createRenderer</a>(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r) <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">class </span><a class="code" href="classscore_1_1gfx_1_1_full_screen_image_node_1_1_renderer.html">Renderer</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  QImage m_image;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astructscore_1_1gfx_1_1_images_node_html_a86843d7e93758a0a52464ca108d5386c"><div class="ttname"><a href="structscore_1_1gfx_1_1_images_node.html#a86843d7e93758a0a52464ca108d5386c">score::gfx::ImagesNode::createRenderer</a></div><div class="ttdeci">score::gfx::NodeRenderer * createRenderer(RenderList &amp;r) const noexcept override</div><div class="ttdoc">Create a renderer in a given context for this node.</div><div class="ttdef"><b>Definition:</b> ImageNode.cpp:372</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_images_node_html_a86843d7e93758a0a52464ca108d5386c"><div class="ttname"><a href="structscore_1_1gfx_1_1_images_node.html#a86843d7e93758a0a52464ca108d5386c">score::gfx::ImagesNode::createRenderer</a></div><div class="ttdeci">score::gfx::NodeRenderer * createRenderer(RenderList &amp;r) const noexcept override</div><div class="ttdoc">Create a renderer in a given context for this node.</div><div class="ttdef"><b>Definition:</b> ImageNode.cpp:432</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdoc">Renderer for a given node.</div><div class="ttdef"><b>Definition:</b> NodeRenderer.hpp:10</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_model_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_model.html">score::gfx::NodeModel</a></div><div class="ttdoc">Common base class for most single-pass, simple nodes.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Node.hpp:109</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_full_screen_image_node_1_1_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_full_screen_image_node_1_1_renderer.html">score::gfx::FullScreenImageNode::Renderer</a></div><div class="ttdef"><b>Definition:</b> ImageNode.cpp:438</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_full_screen_image_node_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_full_screen_image_node.html">score::gfx::FullScreenImageNode</a></div><div class="ttdef"><b>Definition:</b> ImageNode.hpp:38</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_images_node_1_1_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_images_node_1_1_renderer.html">score::gfx::ImagesNode::Renderer</a></div><div class="ttdef"><b>Definition:</b> ImageNode.cpp:218</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_full_screen_image_node_1_1_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_full_screen_image_node_1_1_renderer.html">score::gfx::FullScreenImageNode::Renderer</a></div><div class="ttdef"><b>Definition:</b> ImageNode.cpp:498</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_full_screen_image_node_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_full_screen_image_node.html">score::gfx::FullScreenImageNode</a></div><div class="ttdef"><b>Definition:</b> ImageNode.hpp:39</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_images_node_1_1_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_images_node_1_1_renderer.html">score::gfx::ImagesNode::Renderer</a></div><div class="ttdef"><b>Definition:</b> ImageNode.cpp:264</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_images_node_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_images_node.html">score::gfx::ImagesNode</a></div><div class="ttdoc">A node that renders an image to screen.</div><div class="ttdef"><b>Definition:</b> ImageNode.hpp:11</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition:</b> Vulkan.hpp:9</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_full_screen_image_node_html_a27e4621131c903fc28a566e1aa3d6faf"><div class="ttname"><a href="structscore_1_1gfx_1_1_full_screen_image_node.html#a27e4621131c903fc28a566e1aa3d6faf">score::gfx::FullScreenImageNode::createRenderer</a></div><div class="ttdeci">score::gfx::NodeRenderer * createRenderer(RenderList &amp;r) const noexcept override</div><div class="ttdoc">Create a renderer in a given context for this node.</div><div class="ttdef"><b>Definition:</b> ImageNode.cpp:521</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_message_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_message.html">score::gfx::Message</a></div><div class="ttdoc">Messages sent from the execution thread to the rendering thread.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Node.hpp:35</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_full_screen_image_node_html_a27e4621131c903fc28a566e1aa3d6faf"><div class="ttname"><a href="structscore_1_1gfx_1_1_full_screen_image_node.html#a27e4621131c903fc28a566e1aa3d6faf">score::gfx::FullScreenImageNode::createRenderer</a></div><div class="ttdeci">score::gfx::NodeRenderer * createRenderer(RenderList &amp;r) const noexcept override</div><div class="ttdoc">Create a renderer in a given context for this node.</div><div class="ttdef"><b>Definition:</b> ImageNode.cpp:581</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition:</b> RenderList.hpp:18</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_images_node_1_1_u_b_o_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_images_node_1_1_u_b_o.html">score::gfx::ImagesNode::UBO</a></div><div class="ttdef"><b>Definition:</b> ImageNode.hpp:21</div></div>
 <!-- HTML footer for doxygen 1.8.8-->

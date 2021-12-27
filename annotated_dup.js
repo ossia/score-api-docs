@@ -317,6 +317,7 @@ var annotated_dup =
         [ "js_process", "struct_j_s_1_1_executor_1_1js__process.html", "struct_j_s_1_1_executor_1_1js__process" ]
       ] ],
       [ "ComponentCache", "struct_j_s_1_1_component_cache.html", "struct_j_s_1_1_component_cache" ],
+      [ "ConsoleLibraryHandler", "class_j_s_1_1_console_library_handler.html", null ],
       [ "DropHandler", "class_j_s_1_1_drop_handler.html", null ],
       [ "EditJsContext", "class_j_s_1_1_edit_js_context.html", "class_j_s_1_1_edit_js_context" ],
       [ "EditJSScript", "class_j_s_1_1_edit_j_s_script.html", null ],
