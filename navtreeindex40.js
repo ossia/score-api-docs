@@ -1,5 +1,8 @@
 var NAVTREEINDEX40 =
 {
+"class_y_s_f_x_1_1_window.html":[12,0,57,7],
+"class_y_s_f_x_1_1_window.html#a04350d38402cc002d43a9bf4720a3b07":[12,0,57,7,3],
+"class_y_s_f_x_1_1_window.html#a4ea836d85712637aec28eda45f78f18b":[12,0,57,7,4],
 "class_y_s_f_x_1_1_window.html#a87b234c6539d55497c36c47544bf7152":[12,0,57,7,2],
 "class_y_s_f_x_1_1_window.html#aa8b174cb3883d33bcbab56c5d3dc112d":[12,0,57,7,0],
 "class_y_s_f_x_1_1_window.html#ad1f8ddb06d1f8fbc227ad48a4b1ecfe2":[12,0,57,7,1],
@@ -90,11 +93,11 @@ var NAVTREEINDEX40 =
 "classscore_1_1_action_manager.html":[12,0,44,12],
 "classscore_1_1_action_manager.html#a4fc6032382d50fe4217f6ad4b7503377":[12,0,44,12,15],
 "classscore_1_1_action_manager.html#a552f6e078a05b767fddf7801c3e360f9":[12,0,44,12,16],
-"classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,44,12,8],
 "classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,44,12,4],
 "classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,44,12,5],
 "classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,44,12,6],
 "classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,44,12,7],
+"classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,44,12,8],
 "classscore_1_1_action_manager.html#a61deeb8b2ebd9442678d3573e00a2bf6":[12,0,44,12,20],
 "classscore_1_1_action_manager.html#a63a3b17b4bd8968eb3bec2c6712ad90b":[12,0,44,12,10],
 "classscore_1_1_action_manager.html#a6e37deb4b2f791fd5f2347e081a01a4d":[12,0,44,12,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX40 =
 "classscore_1_1_command_stack.html#a95fd301f2b254a874323b211684f6281":[12,0,44,42,56],
 "classscore_1_1_command_stack.html#a98fd07ba06348fbef5d8ae045af2672e":[12,0,44,42,36],
 "classscore_1_1_command_stack.html#a99f584413a0d1ad62bfb644fc289c854":[12,0,44,42,53],
-"classscore_1_1_command_stack.html#aa6264bf1c14fcd9fcb52c4471d38fe48":[12,0,44,42,13],
-"classscore_1_1_command_stack.html#aa645e2776e8d795cf3a37e3468c182f0":[12,0,44,42,14],
-"classscore_1_1_command_stack.html#aab71abfc223787a585b570a7ecabc255":[12,0,44,42,5],
-"classscore_1_1_command_stack.html#ababfab6f54f868929e7c72ff3ae8c21a":[12,0,44,42,29]
+"classscore_1_1_command_stack.html#aa6264bf1c14fcd9fcb52c4471d38fe48":[12,0,44,42,13]
 };

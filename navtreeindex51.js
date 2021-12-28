@@ -1,5 +1,8 @@
 var NAVTREEINDEX51 =
 {
+"struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_audio_generator_1_1_node_01_4.html":[12,0,4,19],
+"struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_generator_1_1_node_01_4.html":[12,0,4,20],
+"struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_mapping_1_1_node_01_4.html":[12,0,4,21],
 "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_micro_mapping_1_1_node_01_4.html":[12,0,4,22],
 "struct_control_1_1_has_custom_u_i_3_01_t_00_01std_1_1void__t_3_01decltype_07_6_t_1_1item_08_4_01_4.html":[12,0,4,23],
 "struct_control_1_1_impulse_button.html":[12,0,4,25],
@@ -246,8 +249,5 @@ var NAVTREEINDEX51 =
 "struct_curve_1_1_style_interface.html#a925e0a5a625309ef1d1e3652b83abc6c":[12,0,6,48,0],
 "struct_curve_1_1_tool_palette___t.html":[12,0,6,50],
 "struct_curve_1_1_tool_palette___t.html#a4aa78152497ad941e54217373802e9bc":[12,0,6,50,0],
-"struct_curve_1_1_tool_palette___t.html#afd07b9093bf2d55d8937ea3cbf22ac1a":[12,0,6,50,1],
-"struct_curve_1_1point__array__executor.html":[12,0,6,28],
-"struct_curve_1_1point__array__executor.html#a017570d8c6a0ac5af784ddef14e2ba41":[12,0,6,28,1],
-"struct_curve_1_1point__array__executor.html#a4b0548fe72b8b3e16f8932e2f368dc5a":[12,0,6,28,0]
+"struct_curve_1_1_tool_palette___t.html#afd07b9093bf2d55d8937ea3cbf22ac1a":[12,0,6,50,1]
 };
