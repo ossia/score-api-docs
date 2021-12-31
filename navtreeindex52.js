@@ -1,5 +1,8 @@
 var NAVTREEINDEX52 =
 {
+"struct_curve_1_1_tool_palette___t.html":[12,0,6,50],
+"struct_curve_1_1_tool_palette___t.html#a4aa78152497ad941e54217373802e9bc":[12,0,6,50,0],
+"struct_curve_1_1_tool_palette___t.html#afd07b9093bf2d55d8937ea3cbf22ac1a":[12,0,6,50,1],
 "struct_curve_1_1point__array__executor.html":[12,0,6,28],
 "struct_curve_1_1point__array__executor.html#a017570d8c6a0ac5af784ddef14e2ba41":[12,0,6,28,1],
 "struct_curve_1_1point__array__executor.html#a4b0548fe72b8b3e16f8932e2f368dc5a":[12,0,6,28,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX52 =
 "struct_execution_1_1_settings_1_1_merging_policies.html":[12,0,10,1,1],
 "struct_execution_1_1_settings_1_1_merging_policies.html#a9baaf53d1574b2ab796789f2dfffa2a2":[12,0,10,1,1,3],
 "struct_execution_1_1_settings_1_1_merging_policies.html#abbfddb72b9a671d05426003f807d640e":[12,0,10,1,1,0],
-"struct_execution_1_1_settings_1_1_merging_policies.html#ad27b8a093f61662a732749d0d0afea16":[12,0,10,1,1,1],
-"struct_execution_1_1_settings_1_1_merging_policies.html#af15f8931630e7e619e5329a683f15215":[12,0,10,1,1,2],
-"struct_execution_1_1_settings_1_1_ordering_policies.html":[12,0,10,1,3],
-"struct_execution_1_1_settings_1_1_ordering_policies.html#a9f4cfc3df9473e938fde99af861fc92e":[12,0,10,1,3,2]
+"struct_execution_1_1_settings_1_1_merging_policies.html#ad27b8a093f61662a732749d0d0afea16":[12,0,10,1,1,1]
 };

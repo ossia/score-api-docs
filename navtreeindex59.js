@@ -1,5 +1,17 @@
 var NAVTREEINDEX59 =
 {
+"struct_process_1_1_style.html#a4409c2f9734680e169b0c2f0f42ce71f":[12,0,37,85,3],
+"struct_process_1_1_style.html#a447b3ce83b96f4ab44f11ebbb3261161":[12,0,37,85,46],
+"struct_process_1_1_style.html#a49a114725dc727ac02b731b718e15da4":[12,0,37,85,13],
+"struct_process_1_1_style.html#a54bd8e79c89a83adc6c33872ba69accf":[12,0,37,85,10],
+"struct_process_1_1_style.html#a57afa669489d63f99a788f782b6998e5":[12,0,37,85,34],
+"struct_process_1_1_style.html#a5b2dfc19242820a3b72d0e211e834d73":[12,0,37,85,42],
+"struct_process_1_1_style.html#a5f7a51c28e6a257bcecbe0a5ba6605b6":[12,0,37,85,85],
+"struct_process_1_1_style.html#a60103626c0e693009fe575816d5f9909":[12,0,37,85,83],
+"struct_process_1_1_style.html#a62d9452ae0cb837133b0cf5a155fca58":[12,0,37,85,21],
+"struct_process_1_1_style.html#a6368149125c0823b7b4005cd6e01e1a3":[12,0,37,85,40],
+"struct_process_1_1_style.html#a6ae78406414cd09c653fb8edc0a6daf2":[12,0,37,85,1],
+"struct_process_1_1_style.html#a6ee04b038bd811076d8cdf3e42862528":[12,0,37,85,24],
 "struct_process_1_1_style.html#a6fe3b8fcfb5d89af934092f195179967":[12,0,37,85,30],
 "struct_process_1_1_style.html#a7528aff5709097447ec75c5a097da999":[12,0,37,85,4],
 "struct_process_1_1_style.html#a7acba46d858541c3ed32d77c6b79fb92":[12,0,37,85,88],
@@ -237,17 +249,5 @@ var NAVTREEINDEX59 =
 "struct_q_meta_type_id_3_01_protocols_1_1_h_t_t_p_specific_settings_01_4.html":[12,0,258],
 "struct_q_meta_type_id_3_01_protocols_1_1_h_t_t_p_specific_settings_01_4.html#a8f2d17dd6621a3f242e404dabd920103a96349c6f276f8b5f41c9e22450592c92":[12,0,258,0],
 "struct_q_meta_type_id_3_01_protocols_1_1_joystick_specific_settings_01_4.html":[12,0,259],
-"struct_q_meta_type_id_3_01_protocols_1_1_joystick_specific_settings_01_4.html#aabde519c639ccf4bc0148c822fb718dea411d22e89f1d141cd1008c07ce77348d":[12,0,259,0],
-"struct_q_meta_type_id_3_01_protocols_1_1_leapmotion_specific_settings_01_4.html":[12,0,260],
-"struct_q_meta_type_id_3_01_protocols_1_1_leapmotion_specific_settings_01_4.html#a2e1c9c6e5898fe389a62a5e352e013e7af683881efcaf5541ae1348d45c3178a6":[12,0,260,0],
-"struct_q_meta_type_id_3_01_protocols_1_1_local_specific_settings_01_4.html":[12,0,261],
-"struct_q_meta_type_id_3_01_protocols_1_1_local_specific_settings_01_4.html#a8b268e8ebb71ddcec1e9839f996fd6c4adc36ee430db28f8c9fe95e8a230efa18":[12,0,261,0],
-"struct_q_meta_type_id_3_01_protocols_1_1_m_i_d_i_specific_settings_01_4.html":[12,0,262],
-"struct_q_meta_type_id_3_01_protocols_1_1_m_i_d_i_specific_settings_01_4.html#ac33d27e8bf957244e089bc33f36951f0a3b4a530be1470216d000dc8883352a74":[12,0,262,0],
-"struct_q_meta_type_id_3_01_protocols_1_1_minuit_specific_settings_01_4.html":[12,0,263],
-"struct_q_meta_type_id_3_01_protocols_1_1_minuit_specific_settings_01_4.html#a59860e339c65b503baa49bb3aa55cd94a3ba492db67eb79e5e771618d95cb5409":[12,0,263,0],
-"struct_q_meta_type_id_3_01_protocols_1_1_o_s_c_query_specific_settings_01_4.html":[12,0,264],
-"struct_q_meta_type_id_3_01_protocols_1_1_o_s_c_query_specific_settings_01_4.html#acec5fe3dbc33e30dcff38753bebc2fafaefcab8e2ac80187f4520a1a21ee8e02c":[12,0,264,0],
-"struct_q_meta_type_id_3_01_protocols_1_1_o_s_c_specific_settings_01_4.html":[12,0,265],
-"struct_q_meta_type_id_3_01_protocols_1_1_o_s_c_specific_settings_01_4.html#a099e91c0f83636405073566884928271a9b7571c4d19bc07f98a7e3a403957283":[12,0,265,0]
+"struct_q_meta_type_id_3_01_protocols_1_1_joystick_specific_settings_01_4.html#aabde519c639ccf4bc0148c822fb718dea411d22e89f1d141cd1008c07ce77348d":[12,0,259,0]
 };

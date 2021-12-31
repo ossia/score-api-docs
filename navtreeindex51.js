@@ -1,5 +1,8 @@
 var NAVTREEINDEX51 =
 {
+"struct_control_1_1_has_custom_layer_3_01_t_00_01std_1_1void__t_3_01typename_01_t_1_1_layer_01_4_01_4.html":[12,0,4,16],
+"struct_control_1_1_has_custom_u_i.html":[12,0,4,17],
+"struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_audio_filter_1_1_node_01_4.html":[12,0,4,18],
 "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_audio_generator_1_1_node_01_4.html":[12,0,4,19],
 "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_generator_1_1_node_01_4.html":[12,0,4,20],
 "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_mapping_1_1_node_01_4.html":[12,0,4,21],
@@ -246,8 +249,5 @@ var NAVTREEINDEX51 =
 "struct_curve_1_1_style.html#ae8a0ab419093057f8af324abfce97b40":[12,0,6,47,15],
 "struct_curve_1_1_style_interface.html":[12,0,6,48],
 "struct_curve_1_1_style_interface.html#a00f663696c05a7e00b19103ccf1fdd3e":[12,0,6,48,1],
-"struct_curve_1_1_style_interface.html#a925e0a5a625309ef1d1e3652b83abc6c":[12,0,6,48,0],
-"struct_curve_1_1_tool_palette___t.html":[12,0,6,50],
-"struct_curve_1_1_tool_palette___t.html#a4aa78152497ad941e54217373802e9bc":[12,0,6,50,0],
-"struct_curve_1_1_tool_palette___t.html#afd07b9093bf2d55d8937ea3cbf22ac1a":[12,0,6,50,1]
+"struct_curve_1_1_style_interface.html#a925e0a5a625309ef1d1e3652b83abc6c":[12,0,6,48,0]
 };
