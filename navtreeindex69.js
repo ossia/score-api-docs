@@ -1,8 +1,5 @@
 var NAVTREEINDEX69 =
 {
-"structscore_1_1indirect__ptr__iterator.html#a35ae9d498216c6654765dcb6c609dd1a":[12,0,44,126,8],
-"structscore_1_1indirect__ptr__iterator.html#a62644e81b467d8f266045b73542cd261":[12,0,44,126,1],
-"structscore_1_1indirect__ptr__iterator.html#a6423135f1b4fac2dfa664bd7173c2665":[12,0,44,126,3],
 "structscore_1_1indirect__ptr__iterator.html#a6497249741b7a9fef785bd17b185896f":[12,0,44,126,11],
 "structscore_1_1indirect__ptr__iterator.html#a7516003efdb2282cd9dc42eb5808b580":[12,0,44,126,10],
 "structscore_1_1indirect__ptr__iterator.html#a94e63e445e9cbd8d9fa4339112cc36f2":[12,0,44,126,13],
