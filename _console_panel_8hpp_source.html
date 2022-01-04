@@ -552,7 +552,7 @@ $(document).ready(function(){initNavTree('_console_panel_8hpp_source.html',''); 
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160; </div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    QString ret;</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    ossia::apply_nonnull([&amp;] (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; t) {</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;      <span class="keyword">using</span> type = std::remove_cvref_t&lt;decltype(t)&gt;;</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;      <span class="keyword">using</span> type = std::decay_t&lt;decltype(t)&gt;;</div>
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;      ret = <a class="code" href="struct_metadata.html">Metadata&lt;Json_k, type&gt;::get</a>();</div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    }, v);</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    <span class="keywordflow">return</span> ret;</div>
