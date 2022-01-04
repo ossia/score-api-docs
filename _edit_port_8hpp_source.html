@@ -148,11 +148,15 @@ $(document).ready(function(){initNavTree('_edit_port_8hpp_source.html',''); init
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;PROPERTY_COMMAND_T(<a class="code" href="namespace_process.html">Process</a>, ChangePortAddress, Port::p_address, &quot;Set port address&quot;)</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_process.html">Process</a>::ChangePortAddress)</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;PROPERTY_COMMAND_T(<a class="code" href="namespace_process.html">Process</a>, SetGain, <a class="code" href="class_audio_outlet.html">AudioOutlet</a>::p_gain, &quot;Set port gain&quot;)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_process.html">Process</a>::SetGain)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;PROPERTY_COMMAND_T(<a class="code" href="namespace_process.html">Process</a>, SetValue, <a class="code" href="class_control_inlet.html">ControlInlet</a>::p_value, &quot;Set port value&quot;)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_process.html">Process</a>::SetValue)</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;PROPERTY_COMMAND_T(<a class="code" href="namespace_process.html">Process</a>, SetPan, <a class="code" href="class_audio_outlet.html">AudioOutlet</a>::p_pan, &quot;Set port pan&quot;)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_process.html">Process</a>::SetPan)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;PROPERTY_COMMAND_T(<a class="code" href="namespace_process.html">Process</a>, SetGain, <a class="code" href="class_audio_outlet.html">AudioOutlet</a>::p_gain, &quot;Set port gain&quot;)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_process.html">Process</a>::SetGain)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;PROPERTY_COMMAND_T(<a class="code" href="namespace_process.html">Process</a>, SetPan, <a class="code" href="class_audio_outlet.html">AudioOutlet</a>::p_pan, &quot;Set port pan&quot;)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_process.html">Process</a>::SetPan)</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1366</div></div>
@@ -160,6 +164,7 @@ $(document).ready(function(){initNavTree('_edit_port_8hpp_source.html',''); init
 <div class="ttc" id="aclass_process_1_1_change_port_settings_html"><div class="ttname"><a href="class_process_1_1_change_port_settings.html">Process::ChangePortSettings</a></div><div class="ttdef"><b>Definition:</b> EditPort.hpp:17</div></div>
 <div class="ttc" id="aclass_audio_outlet_html"><div class="ttname"><a href="class_audio_outlet.html">AudioOutlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:277</div></div>
 <div class="ttc" id="aclassscore_1_1_command_html"><div class="ttname"><a href="classscore_1_1_command.html">score::Command</a></div><div class="ttdoc">The Command class.</div><div class="ttdef"><b>Definition:</b> Command.hpp:33</div></div>
+<div class="ttc" id="aclass_control_inlet_html"><div class="ttname"><a href="class_control_inlet.html">ControlInlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:92</div></div>
 <div class="ttc" id="astruct_data_stream_output_html"><div class="ttname"><a href="struct_data_stream_output.html">DataStreamOutput</a></div><div class="ttdef"><b>Definition:</b> DataStreamHelpers.hpp:137</div></div>
 <div class="ttc" id="aclass_process_1_1_port_html"><div class="ttname"><a href="class_process_1_1_port.html">Process::Port</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:102</div></div>
 <div class="ttc" id="aclass_path_html"><div class="ttname"><a href="class_path.html">Path&lt; Process::Port &gt;</a></div></div>

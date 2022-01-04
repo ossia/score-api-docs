@@ -35,7 +35,7 @@ var searchData=
   ['oscspecificsettings_4237',['OSCSpecificSettings',['../struct_protocols_1_1_o_s_c_specific_settings.html',1,'Protocols']]],
   ['ossia_5fto_5fpd_5fvalue_4238',['ossia_to_pd_value',['../struct_pd_1_1ossia__to__pd__value.html',1,'Pd']]],
   ['outcontrol_4239',['OutControl',['../struct_control_1_1_out_control.html',1,'Control']]],
-  ['outlet_4240',['Outlet',['../class_process_1_1_outlet.html',1,'Process::Outlet'],['../class_outlet.html',1,'Outlet']]],
+  ['outlet_4240',['Outlet',['../class_outlet.html',1,'Outlet'],['../class_process_1_1_outlet.html',1,'Process::Outlet']]],
   ['outlet_5fvis_4241',['outlet_vis',['../struct_jit_1_1outlet__vis.html',1,'Jit']]],
   ['outletinspectorfactory_4242',['OutletInspectorFactory',['../class_dataflow_1_1_outlet_inspector_factory.html',1,'Dataflow']]],
   ['output_4243',['Output',['../struct_nodes_1_1_midi_hi_res_1_1_output.html',1,'Nodes::MidiHiRes']]],
