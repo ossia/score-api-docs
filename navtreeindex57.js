@@ -1,5 +1,6 @@
 var NAVTREEINDEX57 =
 {
+"struct_mime_writer_3_01_state_1_1_message_list_01_4.html":[12,0,184],
 "struct_mime_writer_3_01_state_1_1_message_list_01_4.html#a18de9611d179e8edadc36967524a38eb":[12,0,184,0],
 "struct_mime_writer_3_01_state_1_1_message_list_01_4.html#a99a8cb91a1ba635c91a4f2b1e34443d9":[12,0,184,1],
 "struct_nodal_1_1_add_node.html":[12,0,31,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX57 =
 "struct_nodes_1_1_pulse_to_note_1_1_node.html":[12,0,32,24,0],
 "struct_nodes_1_1_pulse_to_note_1_1_node.html#a0cf7e037e837ae8104422dec7885d7cd":[12,0,32,24,0,4],
 "struct_nodes_1_1_pulse_to_note_1_1_node.html#ac17d9d5786db61a044111ca1a8165c2b":[12,0,32,24,0,5],
-"struct_nodes_1_1_pulse_to_note_1_1_node_1_1_metadata.html":[12,0,32,24,0,0],
-"struct_nodes_1_1_pulse_to_note_1_1_node_1_1_note_in.html":[12,0,32,24,0,1]
+"struct_nodes_1_1_pulse_to_note_1_1_node_1_1_metadata.html":[12,0,32,24,0,0]
 };

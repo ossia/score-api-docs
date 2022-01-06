@@ -1,5 +1,6 @@
 var NAVTREEINDEX60 =
 {
+"struct_q_meta_type_id_3_01_media_1_1_sound_1_1_computed_waveform_01_4.html#abf1681035da0437ebea651126ff5ec7bac4c330ebcc0f57a4846b68454b727b7e":[12,0,246,0],
 "struct_q_meta_type_id_3_01_media_1_1_sound_1_1_waveform_request_01_4.html":[12,0,247],
 "struct_q_meta_type_id_3_01_media_1_1_sound_1_1_waveform_request_01_4.html#a41b1fba8d75e7fc8292c0eca4505e101a3ec114666a50c0c4dfdd0a419d79debc":[12,0,247,0],
 "struct_q_meta_type_id_3_01_media_1_1audio__handle_01_4.html":[12,0,245],
@@ -248,6 +249,5 @@ var NAVTREEINDEX60 =
 "struct_remote_control_1_1_receiver.html#a9790c165e79f219dc53ff53c850f3698":[12,0,41,12,4],
 "struct_remote_control_1_1_receiver.html#aa226c11b04084d2081d8c9eb679035b7":[12,0,41,12,5],
 "struct_remote_control_1_1_receiver.html#ab13a951d47c290ebaae2a852acf15e8c":[12,0,41,12,10],
-"struct_remote_control_1_1_receiver.html#ad5f235838679e7f7c92d0f04822ae427":[12,0,41,12,7],
-"struct_remote_control_1_1_receiver.html#af657b2308dc881724d9de068a52bdd1c":[12,0,41,12,11]
+"struct_remote_control_1_1_receiver.html#ad5f235838679e7f7c92d0f04822ae427":[12,0,41,12,7]
 };

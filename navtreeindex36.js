@@ -1,5 +1,6 @@
 var NAVTREEINDEX36 =
 {
+"class_scenario_1_1_tempo_presenter.html":[12,0,43,269],
 "class_scenario_1_1_tempo_presenter.html#a9dc1d2c52b06437df8cac0d948b02d42":[12,0,43,269,0],
 "class_scenario_1_1_tempo_presenter.html#aa2ba5d804a333aeecbc0209cb098a0d2":[12,0,43,269,1],
 "class_scenario_1_1_tempo_view.html":[12,0,43,273],
@@ -248,6 +249,5 @@ var NAVTREEINDEX36 =
 "class_scenario_1_1_transport_actions.html#af379edeb67686acd3f9827ffbb33daaf":[12,0,43,310,3],
 "class_scenario_1_1_trigger_inspector_widget.html":[12,0,43,311],
 "class_scenario_1_1_trigger_inspector_widget.html#a13d85f29fdc20a0604cc40cbf3dea2d2":[12,0,43,311,0],
-"class_scenario_1_1_trigger_inspector_widget.html#a16a94c235490adb5c37fbda69666805e":[12,0,43,311,2],
-"class_scenario_1_1_trigger_inspector_widget.html#a24bf20a2f033f9e1de43cf5489de5a34":[12,0,43,311,1]
+"class_scenario_1_1_trigger_inspector_widget.html#a16a94c235490adb5c37fbda69666805e":[12,0,43,311,2]
 };

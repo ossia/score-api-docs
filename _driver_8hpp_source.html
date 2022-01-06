@@ -130,30 +130,38 @@ $(document).ready(function(){initNavTree('_driver_8hpp_source.html',''); initRes
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    std::string cpp = *sourceFileName;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">auto</span> filename = QFileInfo(QString::fromStdString(cpp)).fileName();</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    jit.compile(cpp, flags, opts, ts_ctx);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">auto</span> t1 = std::chrono::high_resolution_clock::now();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">auto</span> jitedFn = jit.getFunction&lt;Fun_T&gt;(factory_name);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span> (!jitedFn)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keywordflow">throw</span> <a class="code" href="struct_jit_1_1_exception.html">Exception</a>{jitedFn.takeError()};</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    llvm::outs().flush();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    std::cerr &lt;&lt; <span class="stringliteral">&quot;\n\nADDON BUILD DURATION: &quot;</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;              &lt;&lt; std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(t1 - t0)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                     .count()</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;              &lt;&lt; <span class="stringliteral">&quot; ms \n\n&quot;</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> *jitedFn;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  llvm::PrettyStackTraceProgram X;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  llvm::LLVMContext context;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  llvm::orc::ThreadSafeContext ts_ctx;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="class_jit_1_1_jit_compiler.html">JitCompiler</a> jit;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  std::string factory_name;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    qDebug(<span class="stringliteral">&quot;Compiling...&quot;</span>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    jit.compile(cpp, flags, opts, ts_ctx);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">auto</span> t1 = std::chrono::high_resolution_clock::now();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span>(!jit.errors().isEmpty())</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keywordflow">throw</span> std::runtime_error{jit.errors().toStdString()};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">auto</span> jitedFn = jit.getFunction&lt;Fun_T&gt;(factory_name);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">if</span> (!jitedFn)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keywordflow">throw</span> <a class="code" href="struct_jit_1_1_exception.html">Exception</a>{jitedFn.takeError()};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    llvm::outs().flush();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    std::cerr &lt;&lt; <span class="stringliteral">&quot;\n\nADDON BUILD DURATION: &quot;</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;              &lt;&lt; std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(t1 - t0)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                     .count()</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;              &lt;&lt; <span class="stringliteral">&quot; ms \n\n&quot;</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> *jitedFn;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  llvm::PrettyStackTraceProgram X;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  llvm::LLVMContext context;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  llvm::orc::ThreadSafeContext ts_ctx;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="class_jit_1_1_jit_compiler.html">JitCompiler</a> jit;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  std::string factory_name;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astruct_jit_1_1_driver_html"><div class="ttname"><a href="struct_jit_1_1_driver.html">Jit::Driver</a></div><div class="ttdef"><b>Definition:</b> Driver.hpp:10</div></div>

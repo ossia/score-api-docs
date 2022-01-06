@@ -191,7 +191,8 @@ var NAVTREEINDEX18 =
 "class_jit_1_1_edit_script.html":[12,0,22,9],
 "class_jit_1_1_jit_compiler.html":[12,0,22,13],
 "class_jit_1_1_jit_compiler.html#a38886b40a5cb4eb7e33b8f3b8127090f":[12,0,22,13,0],
-"class_jit_1_1_jit_compiler.html#a3cbc433cd214d404411d3e0b8418577c":[12,0,22,13,3],
+"class_jit_1_1_jit_compiler.html#a3cbc433cd214d404411d3e0b8418577c":[12,0,22,13,4],
+"class_jit_1_1_jit_compiler.html#a4a97450145dfd734deb173a2d27318e7":[12,0,22,13,3],
 "class_jit_1_1_jit_compiler.html#a6cbe07927ac9c84e1b3789df0c058e98":[12,0,22,13,2],
 "class_jit_1_1_jit_compiler.html#ad7ac9643f9f314eeb953e78eafb1b0eb":[12,0,22,13,1],
 "class_jit_1_1bytebeat__node.html":[12,0,22,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "class_library_1_1_library_interface.html#a455be7b1597cb898e74192515db8584d":[12,0,24,5,0],
 "class_library_1_1_library_interface.html#ad4dca4cda932461ef5750dece185322e":[12,0,24,5,3],
 "class_library_1_1_library_interface.html#ad69a80074d63446e00f9c7ff181657a8":[12,0,24,5,4],
-"class_library_1_1_library_interface.html#ae19f3411affc282e71c3103c88eee1d7":[12,0,24,5,6],
-"class_library_1_1_library_interface.html#afd4ca148bc062a06e9512bcd597bf2df":[12,0,24,5,2]
+"class_library_1_1_library_interface.html#ae19f3411affc282e71c3103c88eee1d7":[12,0,24,5,6]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX64 =
 {
+"struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1pair_3_01_t_00_01_u_01_4_01_4.html#af11d07ae984dab2d81d0b68c5d9b00d3":[12,0,481,0],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1unordered__map_3_01_t_00_01_u_01_4_01_4.html":[12,0,482],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1variant_3_01_args_8_8_8_01_4_01_4.html":[12,0,483],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1variant_3_01_args_8_8_8_01_4_01_4.html#a7d9619e0879150ebb279e6f5bb4fc278":[12,0,483,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX64 =
 "structossia_1_1node__graph__process.html#af8d05b8110b2d5d02e9b629cca6737dc":[12,0,33,2,3],
 "structossia_1_1nodes_1_1audio__metronome_1_1played__sound.html":[12,0,33,0,0,0],
 "structossia_1_1nodes_1_1audio__metronome_1_1played__sound.html#a631462606716f27bb2c3794b33b9928d":[12,0,33,0,0,0,3],
-"structossia_1_1nodes_1_1audio__metronome_1_1played__sound.html#ab722aa8b7f5e42d6f02d6fcf569ee931":[12,0,33,0,0,0,1],
-"structossia_1_1nodes_1_1audio__metronome_1_1played__sound.html#acbf62e345dd923196980fc3d0617159d":[12,0,33,0,0,0,5]
+"structossia_1_1nodes_1_1audio__metronome_1_1played__sound.html#ab722aa8b7f5e42d6f02d6fcf569ee931":[12,0,33,0,0,0,1]
 };

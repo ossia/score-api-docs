@@ -1,5 +1,6 @@
 var NAVTREEINDEX63 =
 {
+"struct_state_1_1_destination_qualifiers.html#a6ed863b439fa9afedc81be449c918afd":[12,0,48,14,14],
 "struct_state_1_1_destination_qualifiers.html#a7a8fd5be625d3d07bacf4beff33c97c7":[12,0,48,14,0],
 "struct_state_1_1_destination_qualifiers.html#a7ad3c5633309e8ba63216d9aae9686d4":[12,0,48,14,2],
 "struct_state_1_1_destination_qualifiers.html#a9cdb9c87a5aa0158ca5fb041886acb95":[12,0,48,14,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX63 =
 "struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1array_3_01float_00_01_n_01_4_01_4.html":[12,0,477],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1list_3_01_args_8_8_8_01_4_01_4.html":[12,0,479],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1optional_3_01_t_01_4_01_4.html":[12,0,480],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1pair_3_01_t_00_01_u_01_4_01_4.html":[12,0,481],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1pair_3_01_t_00_01_u_01_4_01_4.html#af11d07ae984dab2d81d0b68c5d9b00d3":[12,0,481,0]
+"struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1pair_3_01_t_00_01_u_01_4_01_4.html":[12,0,481]
 };

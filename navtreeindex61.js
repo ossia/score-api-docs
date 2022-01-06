@@ -1,5 +1,6 @@
 var NAVTREEINDEX61 =
 {
+"struct_remote_control_1_1_receiver.html#af657b2308dc881724d9de068a52bdd1c":[12,0,41,12,11],
 "struct_remote_control_1_1_receiver.html#afec0a10b245bc26eb1c668b0f32124d4":[12,0,41,12,0],
 "struct_remote_control_1_1_remote_messages.html":[12,0,41,13],
 "struct_remote_control_1_1_remote_messages.html#a2f24eaa7cfd96044817aaf9288bfc5fb":[12,0,41,13,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX61 =
 "struct_scenario_1_1_layer_slot_presenter.html#a557b1f8ecc55fe292ca0baae89a9e387":[12,0,43,137,6],
 "struct_scenario_1_1_layer_slot_presenter.html#a66bdc3a4334531fb2b7dc8a84b914fdb":[12,0,43,137,1],
 "struct_scenario_1_1_layer_slot_presenter.html#ac62b47d5b1d9316af2a2da4694a2b616":[12,0,43,137,2],
-"struct_scenario_1_1_magnetic_states.html":[12,0,43,142],
-"struct_scenario_1_1_magnetic_states.html#a198ac21579a7ee4dca3160d596bdca83":[12,0,43,142,2]
+"struct_scenario_1_1_magnetic_states.html":[12,0,43,142]
 };
