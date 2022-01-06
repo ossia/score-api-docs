@@ -344,7 +344,7 @@ $(document).ready(function(){initNavTree('_math_generator_8hpp_source.html','');
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;      expr.add_vector(<span class="stringliteral">&quot;m1&quot;</span>, m1);</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;      expr.add_vector(<span class="stringliteral">&quot;m2&quot;</span>, m2);</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;      expr.add_vector(<span class="stringliteral">&quot;m3&quot;</span>, m3);</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;      expr.add_constant(<span class="stringliteral">&quot;fs&quot;</span>, fs);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;      expr.add_variable(<span class="stringliteral">&quot;fs&quot;</span>, fs);</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;      expr.add_constants();</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;      expr.register_symbol_table();</div>
@@ -393,25 +393,25 @@ $(document).ready(function(){initNavTree('_math_generator_8hpp_source.html','');
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  {</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordflow">if</span> (tk.forward())</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    {</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;      <span class="keywordflow">if</span> (!<span class="keyword">self</span>.expr.set_expression(expr))</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span> samplesRatio = st.modelToSamples();</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span> [tick_start, count] = st.timings(tk);</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160; </div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">int</span> chans = 2;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;      <span class="keyword">self</span>.reset_symbols(chans);</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;      output.set_channels(chans);</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; chans; j++)</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;      {</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <span class="keyword">auto</span>&amp; out = output.channel(j);</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        out.resize(st.bufferSize());</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;      }</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      <span class="keyword">self</span>.p1 = a;</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;      <span class="keyword">self</span>.p2 = b;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      <span class="keyword">self</span>.p3 = c;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;      <span class="keyword">self</span>.fs = st.sampleRate();</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;      <span class="keyword">self</span>.fs = st.sampleRate();</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;      <span class="keywordflow">if</span> (!<span class="keyword">self</span>.expr.set_expression(expr))</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span> samplesRatio = st.modelToSamples();</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span> [tick_start, count] = st.timings(tk);</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">int</span> chans = 2;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;      <span class="keyword">self</span>.reset_symbols(chans);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;      output.set_channels(chans);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; chans; j++)</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      {</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <span class="keyword">auto</span>&amp; out = output.channel(j);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        out.resize(st.bufferSize());</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      }</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160; </div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;      <span class="keyword">self</span>.p1 = a;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      <span class="keyword">self</span>.p2 = b;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;      <span class="keyword">self</span>.p3 = c;</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span> start_sample = (tk.prev_date * samplesRatio).impl;</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;      <span class="keywordflow">for</span> (int64_t i = 0; i &lt; count; i++)</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;      {</div>
