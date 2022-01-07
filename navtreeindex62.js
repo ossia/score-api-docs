@@ -1,5 +1,8 @@
 var NAVTREEINDEX62 =
 {
+"struct_scenario_1_1_layer_slot_presenter.html#a66bdc3a4334531fb2b7dc8a84b914fdb":[12,0,43,137,1],
+"struct_scenario_1_1_layer_slot_presenter.html#ac62b47d5b1d9316af2a2da4694a2b616":[12,0,43,137,2],
+"struct_scenario_1_1_magnetic_states.html":[12,0,43,142],
 "struct_scenario_1_1_magnetic_states.html#a198ac21579a7ee4dca3160d596bdca83":[12,0,43,142,2],
 "struct_scenario_1_1_magnetic_states.html#a205681e720e13901ef2d50ae77d0bf47":[12,0,43,142,1],
 "struct_scenario_1_1_magnetic_states.html#a98252e6e234880e87aaf65dd71002eff":[12,0,43,142,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX62 =
 "struct_state_1_1_destination_qualifiers.html#a3dff15969413ab1857da9898df7461fa":[12,0,48,14,16],
 "struct_state_1_1_destination_qualifiers.html#a48da0102990e88acbe0c3df1612f9bd9":[12,0,48,14,4],
 "struct_state_1_1_destination_qualifiers.html#a4ae717faf3cd39fd045540f08b07e00b":[12,0,48,14,15],
-"struct_state_1_1_destination_qualifiers.html#a50a77d3a6483900f07ebaeddbb1a7fbb":[12,0,48,14,6],
-"struct_state_1_1_destination_qualifiers.html#a5142178470e55a662926b778d407d5a8":[12,0,48,14,1],
-"struct_state_1_1_destination_qualifiers.html#a6cff8bf3ac18ea74dafbd750703a1bef":[12,0,48,14,13],
-"struct_state_1_1_destination_qualifiers.html#a6dcf695f0a5de6689de7eb11607f3194":[12,0,48,14,12]
+"struct_state_1_1_destination_qualifiers.html#a50a77d3a6483900f07ebaeddbb1a7fbb":[12,0,48,14,6]
 };
