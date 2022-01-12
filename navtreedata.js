@@ -178,7 +178,7 @@ var NAVTREEINDEX =
 "structscore_1_1_string_constants.html#a306f2d1274816cbf4ef41b6a4bad6a7b",
 "structscore_1_1gfx_1_1_image.html#aabd3f7f67653c35f8fc5390e01f5a042",
 "structscore_1_1indirect__iterator.html#aa73c3d916aff1ba1e9f7e3824c008952",
-"structvst_1_1_module.html#ae7a43f5b118c451185bbc091c3c9f58f"
+"structvst_1_1_module.html#a79f3ec52e9010e673d18a1b275b31acb"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
