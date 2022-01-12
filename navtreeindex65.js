@@ -1,5 +1,12 @@
 var NAVTREEINDEX65 =
 {
+"structossia_1_1node__graph__process.html#a6fc20a3bc33e0cfc65f802820821d287":[12,0,33,2,6],
+"structossia_1_1node__graph__process.html#a8f9ced34b3041f8df4a259f3e6513016":[12,0,33,2,11],
+"structossia_1_1node__graph__process.html#a9803653ca4f5ef5d4772499b521840ff":[12,0,33,2,4],
+"structossia_1_1node__graph__process.html#a997e61f651050a2488c8447abd962fab":[12,0,33,2,2],
+"structossia_1_1node__graph__process.html#a9bfb1d71c5324fdfe12a82ca008fdb5f":[12,0,33,2,5],
+"structossia_1_1node__graph__process.html#abf8e7656fdc3e4394792cf2f8dea954f":[12,0,33,2,0],
+"structossia_1_1node__graph__process.html#af8d05b8110b2d5d02e9b629cca6737dc":[12,0,33,2,3],
 "structossia_1_1nodes_1_1audio__metronome_1_1played__sound.html":[12,0,33,0,0,0],
 "structossia_1_1nodes_1_1audio__metronome_1_1played__sound.html#a631462606716f27bb2c3794b33b9928d":[12,0,33,0,0,0,3],
 "structossia_1_1nodes_1_1audio__metronome_1_1played__sound.html#ab722aa8b7f5e42d6f02d6fcf569ee931":[12,0,33,0,0,0,1],
@@ -242,12 +249,5 @@ var NAVTREEINDEX65 =
 "structscore_1_1_event_visitor.html#a92383937fce4208ec702d25583e83642":[12,0,44,95,5],
 "structscore_1_1_event_visitor.html#ab50587023848d802bbd646ecd575e306":[12,0,44,95,3],
 "structscore_1_1_event_visitor.html#acf6e23d060aff643c6ee16a4d7fc06db":[12,0,44,95,0],
-"structscore_1_1_event_visitor.html#af06753c4b3a0028cce2525e8630169c4":[12,0,44,95,7],
-"structscore_1_1_event_visitor.html#afa90f68deb6415628e011341dddbb38c":[12,0,44,95,2],
-"structscore_1_1_flicks_spin_box.html":[12,0,44,100],
-"structscore_1_1_flicks_spin_box.html#a31bb0762ce691167d3e89576d489ef01":[12,0,44,100,5],
-"structscore_1_1_flicks_spin_box.html#a4a085917ecf3a5340f50e071e6689a6e":[12,0,44,100,2],
-"structscore_1_1_flicks_spin_box.html#ad7a450e66cbc848f388a4b73ffe41ca3":[12,0,44,100,4],
-"structscore_1_1_flicks_spin_box.html#ae7ae54506e6480a345003eddf253adeb":[12,0,44,100,0],
-"structscore_1_1_flicks_spin_box.html#af4ba72846762a08741ca1c07608ba7f5":[12,0,44,100,1]
+"structscore_1_1_event_visitor.html#af06753c4b3a0028cce2525e8630169c4":[12,0,44,95,7]
 };

@@ -1,5 +1,12 @@
 var NAVTREEINDEX59 =
 {
+"struct_process_1_1_state_node_values.html#ad681e156ad5e1557ca1ce236e9e24610":[12,0,37,84,6],
+"struct_process_1_1_state_node_values.html#ae5570d12dfe8efdd65f86461ee6c3282":[12,0,37,84,3],
+"struct_process_1_1_style.html":[12,0,37,85],
+"struct_process_1_1_style.html#a0197decabf92b5b04303b4657765dce9":[12,0,37,85,48],
+"struct_process_1_1_style.html#a06b3c09406da02481154be6007df879d":[12,0,37,85,71],
+"struct_process_1_1_style.html#a06d4976cdfef6d383cb595f2a494910b":[12,0,37,85,68],
+"struct_process_1_1_style.html#a09b7f70c3533e55a100f0a8e41f039be":[12,0,37,85,78],
 "struct_process_1_1_style.html#a0bbdeb5701834cd996f55adc47eb5ec1":[12,0,37,85,80],
 "struct_process_1_1_style.html#a0fd888c1ec7c1fbf71aab956022dd50f":[12,0,37,85,19],
 "struct_process_1_1_style.html#a10aff9e050d97c51e444e55485afc384":[12,0,37,85,55],
@@ -242,12 +249,5 @@ var NAVTREEINDEX59 =
 "struct_q_meta_type_id_3_01_j_s_1_1_value_inlet_01_5_01_4.html#a28d3e56ccc923212fbbedc59d5596d71a43031649c5c174f7aae6164b6df0a4fe":[12,0,239,0],
 "struct_q_meta_type_id_3_01_j_s_1_1_value_outlet_01_5_01_4.html":[12,0,240],
 "struct_q_meta_type_id_3_01_j_s_1_1_value_outlet_01_5_01_4.html#a7f6c4920f4c44d9e528612cf59c68ec6ad3f78da2203ef53de5b4a9cc93da74e3":[12,0,240,0],
-"struct_q_meta_type_id_3_01_j_s_o_n_reader_01_5_01_4.html":[12,0,241],
-"struct_q_meta_type_id_3_01_j_s_o_n_reader_01_5_01_4.html#a5c0b6b8a577c1f032bef734990f6e9d4ae50fb36f507a34bd24007871106e29ba":[12,0,241,0],
-"struct_q_meta_type_id_3_01_j_s_o_n_writer_01_5_01_4.html":[12,0,242],
-"struct_q_meta_type_id_3_01_j_s_o_n_writer_01_5_01_4.html#a3f513fa02cba9f036fd1bf855be646f3afe78a9736ab5d30a557350dac35e14b4":[12,0,242,0],
-"struct_q_meta_type_id_3_01_jit_1_1_compiler_options_01_4.html":[12,0,233],
-"struct_q_meta_type_id_3_01_jit_1_1_compiler_options_01_4.html#a21a28679c9704f6b4d227fb10314e269a0d5319c0287f1ae52e49bb70f664479c":[12,0,233,0],
-"struct_q_meta_type_id_3_01_library_1_1_process_data_01_4.html":[12,0,243],
-"struct_q_meta_type_id_3_01_library_1_1_process_data_01_4.html#ace0d8c277eb0742518da5a74e73ab65bafb06330d8ee5c721f5769cdff826621b":[12,0,243,0]
+"struct_q_meta_type_id_3_01_j_s_o_n_reader_01_5_01_4.html":[12,0,241]
 };

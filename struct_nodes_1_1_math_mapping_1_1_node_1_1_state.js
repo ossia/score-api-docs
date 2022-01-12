@@ -1,8 +1,10 @@
 var struct_nodes_1_1_math_mapping_1_1_node_1_1_state =
 [
     [ "State", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#af9c38a555564d97b138c47479163b359", null ],
+    [ "a", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#aa42ea988b94c50075f9bdef246062802", null ],
+    [ "b", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a78ad84a87a0bd155e88f54a2d6b0ae34", null ],
+    [ "c", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#ae33a507e9e089ac1c88711806cebbd25", null ],
     [ "cur_deltatime", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a5f1fda76df26355ff198147f5e92977a", null ],
-    [ "cur_input", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a3653837babbea0795479c66fd7b75af1", null ],
     [ "cur_pos", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a3eff08be70cdcde292ac99fed89028f4", null ],
     [ "cur_time", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a34ec48bb141684cc27e57083fb95c394", null ],
     [ "expr", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a8b42c34dfc582fb9b93bca70ecc3adaf", null ],
@@ -11,9 +13,13 @@ var struct_nodes_1_1_math_mapping_1_1_node_1_1_state =
     [ "m2", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#ace9fdc9e40f96e98db7789bea262b079", null ],
     [ "m3", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a832c91d7848f3079e1b88d822ff7db15", null ],
     [ "ok", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a366ab921af397fc87068a4a2b38b94a8", null ],
-    [ "p1", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a55025143f83a0950a45fec796b42380e", null ],
-    [ "p2", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a040966f95fce5c773df13f5017fffa62", null ],
-    [ "p3", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a412af015e599f3cbf88853c5d6ec039a", null ],
-    [ "prev_input", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a4e856cc6872183159474a32622d54f20", null ],
-    [ "prev_output", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a6be1f474d62fad9f8b182223a988c8c8", null ]
+    [ "pa", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a0f8d739b9b15dd290623fed73e28b3f8", null ],
+    [ "pb", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a15404b7783b2da5f6ac829e916168054", null ],
+    [ "pc", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a37b018f8247d98c780b704c5a8abf78a", null ],
+    [ "po", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#abd9fba4b3c15a307a9f174a034600906", null ],
+    [ "pov", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#aca49c4a1d1ed20e297f8d322edcc3c35", null ],
+    [ "px", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#aa29937a118c17bd9f2e59bd4520c7d59", null ],
+    [ "pxv", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#aebcabf3de5e06efb114bb51eb0fab982", null ],
+    [ "x", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a8782dcd030612cb2b607f2ce417b56c7", null ],
+    [ "xv", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#a4558c42ca0e2a27a453f547223317c87", null ]
 ];

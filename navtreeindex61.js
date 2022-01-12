@@ -1,5 +1,12 @@
 var NAVTREEINDEX61 =
 {
+"struct_remote_control_1_1_receiver.html#a1459b8585c394ca21e9f09867025faa6":[12,0,41,12,6],
+"struct_remote_control_1_1_receiver.html#a18765fc41c73f96ebdb95b28c3042839":[12,0,41,12,3],
+"struct_remote_control_1_1_receiver.html#a28a3e83893ab9947e803665d2aaa1b4c":[12,0,41,12,9],
+"struct_remote_control_1_1_receiver.html#a34de03fe17bb5d3f78bb0038f89fd791":[12,0,41,12,1],
+"struct_remote_control_1_1_receiver.html#a6c1e43c6df68b8466ca47e6e449ed765":[12,0,41,12,2],
+"struct_remote_control_1_1_receiver.html#a7310e3f8c1a78a09fc94fb5f151298dd":[12,0,41,12,8],
+"struct_remote_control_1_1_receiver.html#a9790c165e79f219dc53ff53c850f3698":[12,0,41,12,4],
 "struct_remote_control_1_1_receiver.html#aa226c11b04084d2081d8c9eb679035b7":[12,0,41,12,5],
 "struct_remote_control_1_1_receiver.html#ab13a951d47c290ebaae2a852acf15e8c":[12,0,41,12,10],
 "struct_remote_control_1_1_receiver.html#ad5f235838679e7f7c92d0f04822ae427":[12,0,41,12,7],
@@ -242,12 +249,5 @@ var NAVTREEINDEX61 =
 "struct_scenario_1_1_layer_data_1_1_layer.html#a6ff449260b975128a08334cc64275ea5":[12,0,43,135,0,0],
 "struct_scenario_1_1_layer_data_1_1_layer.html#ad0136e248c3a5881a1b37f25b53207d4":[12,0,43,135,0,1],
 "struct_scenario_1_1_layer_slot_presenter.html":[12,0,43,137],
-"struct_scenario_1_1_layer_slot_presenter.html#a0fa95c88dfcf1b5c8f91a4518960d0f6":[12,0,43,137,7],
-"struct_scenario_1_1_layer_slot_presenter.html#a1d32988efa543b99c6423caf5dfb5d84":[12,0,43,137,4],
-"struct_scenario_1_1_layer_slot_presenter.html#a25ea50e0fb33a5ad83bb05eb8a8ee3f8":[12,0,43,137,5],
-"struct_scenario_1_1_layer_slot_presenter.html#a434d3797013ec41e8acf545b0430ce50":[12,0,43,137,9],
-"struct_scenario_1_1_layer_slot_presenter.html#a43a74ae988afb50dc3971f2b5353c4db":[12,0,43,137,8],
-"struct_scenario_1_1_layer_slot_presenter.html#a4a412b22af1a9ca58dacc17a651f3d55":[12,0,43,137,3],
-"struct_scenario_1_1_layer_slot_presenter.html#a4e7afb8fffd885c9d12f691a83729e7e":[12,0,43,137,0],
-"struct_scenario_1_1_layer_slot_presenter.html#a557b1f8ecc55fe292ca0baae89a9e387":[12,0,43,137,6]
+"struct_scenario_1_1_layer_slot_presenter.html#a0fa95c88dfcf1b5c8f91a4518960d0f6":[12,0,43,137,7]
 };

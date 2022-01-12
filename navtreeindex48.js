@@ -249,5 +249,5 @@ var NAVTREEINDEX48 =
 "mvp_8hpp_source.html":[13,0,784],
 "namespace_automation.html":[11,0,0],
 "namespace_automation.html":[12,0,2],
-"namespace_curve.html":[11,0,1]
+"namespace_curve.html":[12,0,6]
 };

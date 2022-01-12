@@ -604,7 +604,8 @@ var annotated_dup =
       ] ],
       [ "ValueFilter", null, [
         [ "Node", "struct_nodes_1_1_value_filter_1_1_node.html", "struct_nodes_1_1_value_filter_1_1_node" ]
-      ] ]
+      ] ],
+      [ "GenericMathMapping", "struct_nodes_1_1_generic_math_mapping.html", null ]
     ] ],
     [ "ossia", null, [
       [ "nodes", null, [

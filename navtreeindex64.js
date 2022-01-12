@@ -1,5 +1,12 @@
 var NAVTREEINDEX64 =
 {
+"struct_t_serializer_3_01_j_s_o_n_object_00_01score_1_1_entity_map_3_01_t_01_4_01_4.html":[12,0,474],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01score_1_1any__map_01_4.html":[12,0,471],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01score_1_1uuid__t_01_4.html":[12,0,475],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01score_1_1uuid__t_01_4.html#a052030d7277686512ce0efa2154add80":[12,0,475,0],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ska_1_1flat__hash__map_3_01_t_00_01_u_01_4_01_4.html":[12,0,476],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html":[12,0,478],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1array_3_01float_00_01_n_01_4_01_4.html":[12,0,477],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1list_3_01_args_8_8_8_01_4_01_4.html":[12,0,479],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1optional_3_01_t_01_4_01_4.html":[12,0,480],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1pair_3_01_t_00_01_u_01_4_01_4.html":[12,0,481],
@@ -242,12 +249,5 @@ var NAVTREEINDEX64 =
 "structossia_1_1node__graph__process.html#a4ab304cba3f5c3aa41c487dcf5c14e07":[12,0,33,2,7],
 "structossia_1_1node__graph__process.html#a66f02c8c5e11eb05e46a2c672a4d29ae":[12,0,33,2,12],
 "structossia_1_1node__graph__process.html#a6815307d840af00e3278b310cc7b3b2a":[12,0,33,2,10],
-"structossia_1_1node__graph__process.html#a6dbee735e5912ae87a9e7e7ee8d81ff4":[12,0,33,2,8],
-"structossia_1_1node__graph__process.html#a6fc20a3bc33e0cfc65f802820821d287":[12,0,33,2,6],
-"structossia_1_1node__graph__process.html#a8f9ced34b3041f8df4a259f3e6513016":[12,0,33,2,11],
-"structossia_1_1node__graph__process.html#a9803653ca4f5ef5d4772499b521840ff":[12,0,33,2,4],
-"structossia_1_1node__graph__process.html#a997e61f651050a2488c8447abd962fab":[12,0,33,2,2],
-"structossia_1_1node__graph__process.html#a9bfb1d71c5324fdfe12a82ca008fdb5f":[12,0,33,2,5],
-"structossia_1_1node__graph__process.html#abf8e7656fdc3e4394792cf2f8dea954f":[12,0,33,2,0],
-"structossia_1_1node__graph__process.html#af8d05b8110b2d5d02e9b629cca6737dc":[12,0,33,2,3]
+"structossia_1_1node__graph__process.html#a6dbee735e5912ae87a9e7e7ee8d81ff4":[12,0,33,2,8]
 };
