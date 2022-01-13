@@ -1,5 +1,6 @@
 var NAVTREEINDEX48 =
 {
+"classvst3_1_1param__queue.html#afe54b144be879add15af00b29cdfb6ad":[12,0,54,11,10],
 "classvst3_1_1param__queue.html#aff49391ce7dfb4f1ba7574fb1de4874c":[12,0,54,11,4],
 "classvst3_1_1vst__node.html":[12,0,54,17],
 "classvst3_1_1vst__node.html#a27a44805b02dd9736380791aa4e4afac":[12,0,54,17,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX48 =
 "models_8hpp_source.html":[13,0,760],
 "mvp_8hpp_source.html":[13,0,784],
 "namespace_automation.html":[11,0,0],
-"namespace_automation.html":[12,0,2],
-"namespace_curve.html":[12,0,6]
+"namespace_automation.html":[12,0,2]
 };

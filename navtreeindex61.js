@@ -1,5 +1,6 @@
 var NAVTREEINDEX61 =
 {
+"struct_remote_control_1_1_receiver.html":[12,0,41,12],
 "struct_remote_control_1_1_receiver.html#a1459b8585c394ca21e9f09867025faa6":[12,0,41,12,6],
 "struct_remote_control_1_1_receiver.html#a18765fc41c73f96ebdb95b28c3042839":[12,0,41,12,3],
 "struct_remote_control_1_1_receiver.html#a28a3e83893ab9947e803665d2aaa1b4c":[12,0,41,12,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX61 =
 "struct_scenario_1_1_layer_data_1_1_layer.html#a6cf49cdaf4ba785ff89ac5c5f7f57c60":[12,0,43,135,0,2],
 "struct_scenario_1_1_layer_data_1_1_layer.html#a6ff449260b975128a08334cc64275ea5":[12,0,43,135,0,0],
 "struct_scenario_1_1_layer_data_1_1_layer.html#ad0136e248c3a5881a1b37f25b53207d4":[12,0,43,135,0,1],
-"struct_scenario_1_1_layer_slot_presenter.html":[12,0,43,137],
-"struct_scenario_1_1_layer_slot_presenter.html#a0fa95c88dfcf1b5c8f91a4518960d0f6":[12,0,43,137,7]
+"struct_scenario_1_1_layer_slot_presenter.html":[12,0,43,137]
 };

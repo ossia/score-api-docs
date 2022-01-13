@@ -1,5 +1,6 @@
 var NAVTREEINDEX57 =
 {
+"struct_mime_writer_3_01_process_1_1_process_data_01_4.html#a99a8cb91a1ba635c91a4f2b1e34443d9":[12,0,183,1],
 "struct_mime_writer_3_01_state_1_1_message_list_01_4.html":[12,0,184],
 "struct_mime_writer_3_01_state_1_1_message_list_01_4.html#a18de9611d179e8edadc36967524a38eb":[12,0,184,0],
 "struct_mime_writer_3_01_state_1_1_message_list_01_4.html#a99a8cb91a1ba635c91a4f2b1e34443d9":[12,0,184,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX57 =
 "struct_nodes_1_1_midi_util_1_1_node.html":[12,0,32,22,0],
 "struct_nodes_1_1_midi_util_1_1_node.html#a11cac1032856a782f1d8dd6ac0aefabc":[12,0,32,22,0,2],
 "struct_nodes_1_1_midi_util_1_1_node_1_1_metadata.html":[12,0,32,22,0,0],
-"struct_nodes_1_1_midi_util_1_1_node_1_1_state.html":[12,0,32,22,0,1],
-"struct_nodes_1_1_midi_util_1_1_node_1_1_state.html#a21555f4b6b2c9fcd12ac4d53052a8949":[12,0,32,22,0,1,1]
+"struct_nodes_1_1_midi_util_1_1_node_1_1_state.html":[12,0,32,22,0,1]
 };

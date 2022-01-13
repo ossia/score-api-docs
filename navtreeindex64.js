@@ -1,5 +1,6 @@
 var NAVTREEINDEX64 =
 {
+"struct_t_serializer_3_01_j_s_o_n_object_00_01score_1_1_entity_list_3_01_t_01_4_01_4.html":[12,0,473],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01score_1_1_entity_map_3_01_t_01_4_01_4.html":[12,0,474],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01score_1_1any__map_01_4.html":[12,0,471],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01score_1_1uuid__t_01_4.html":[12,0,475],
@@ -248,6 +249,5 @@ var NAVTREEINDEX64 =
 "structossia_1_1node__graph__process.html#a1e0999accf1c0e3482d15ad7dd353082":[12,0,33,2,9],
 "structossia_1_1node__graph__process.html#a4ab304cba3f5c3aa41c487dcf5c14e07":[12,0,33,2,7],
 "structossia_1_1node__graph__process.html#a66f02c8c5e11eb05e46a2c672a4d29ae":[12,0,33,2,12],
-"structossia_1_1node__graph__process.html#a6815307d840af00e3278b310cc7b3b2a":[12,0,33,2,10],
-"structossia_1_1node__graph__process.html#a6dbee735e5912ae87a9e7e7ee8d81ff4":[12,0,33,2,8]
+"structossia_1_1node__graph__process.html#a6815307d840af00e3278b310cc7b3b2a":[12,0,33,2,10]
 };

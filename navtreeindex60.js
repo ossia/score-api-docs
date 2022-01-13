@@ -1,5 +1,6 @@
 var NAVTREEINDEX60 =
 {
+"struct_q_meta_type_id_3_01_j_s_o_n_reader_01_5_01_4.html":[12,0,241],
 "struct_q_meta_type_id_3_01_j_s_o_n_reader_01_5_01_4.html#a5c0b6b8a577c1f032bef734990f6e9d4ae50fb36f507a34bd24007871106e29ba":[12,0,241,0],
 "struct_q_meta_type_id_3_01_j_s_o_n_writer_01_5_01_4.html":[12,0,242],
 "struct_q_meta_type_id_3_01_j_s_o_n_writer_01_5_01_4.html#a3f513fa02cba9f036fd1bf855be646f3afe78a9736ab5d30a557350dac35e14b4":[12,0,242,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX60 =
 "struct_remote_control_1_1_interval_messages.html#a0e4c57686a543734dc83c989119c883f":[12,0,41,8,2],
 "struct_remote_control_1_1_interval_messages.html#a4f8c728d49c43fd6318aad3b7dd7eb44":[12,0,41,8,3],
 "struct_remote_control_1_1_interval_messages.html#a980f8351462a1f20553d685777ed5393":[12,0,41,8,1],
-"struct_remote_control_1_1_interval_messages.html#a9efcaaaa1161c19c6abf3d5714c1300b":[12,0,41,8,0],
-"struct_remote_control_1_1_receiver.html":[12,0,41,12]
+"struct_remote_control_1_1_interval_messages.html#a9efcaaaa1161c19c6abf3d5714c1300b":[12,0,41,8,0]
 };

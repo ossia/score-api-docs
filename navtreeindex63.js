@@ -1,5 +1,6 @@
 var NAVTREEINDEX63 =
 {
+"struct_state_1_1_address_accessor_head.html#aa5db970c3c26f84f18dab4f25bccf3c5":[12,0,48,2,1],
 "struct_state_1_1_address_accessor_head.html#ae03ebc732fea6c5251f4846efbb45515":[12,0,48,2,0],
 "struct_state_1_1_destination_qualifiers.html":[12,0,48,14],
 "struct_state_1_1_destination_qualifiers.html#a3d0364442e454a35bd9d5e73bc7e0390":[12,0,48,14,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX63 =
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1vecf__domain_3_01_n_01_4_01_4.html#ae1041c93dde387c95bb63059ccceb090":[12,0,459,0],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1vector__domain_01_4.html":[12,0,460],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1vector__domain_01_4.html#a40886e9bda31caba11e047756a1d0b58":[12,0,460,0],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01score_1_1_entity_3_01_t_01_4_01_4.html":[12,0,472],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01score_1_1_entity_list_3_01_t_01_4_01_4.html":[12,0,473]
+"struct_t_serializer_3_01_j_s_o_n_object_00_01score_1_1_entity_3_01_t_01_4_01_4.html":[12,0,472]
 };

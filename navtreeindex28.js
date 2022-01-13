@@ -1,5 +1,6 @@
 var NAVTREEINDEX28 =
 {
+"class_scenario_1_1_command_1_1_change_element_comments.html#a0a29692eabfc037cbac5c52343483721":[12,0,43,0,15,8],
 "class_scenario_1_1_command_1_1_change_element_comments.html#a0e09880198f3841c0d1d10168904ecc8":[12,0,43,0,15,0],
 "class_scenario_1_1_command_1_1_change_element_comments.html#a43292335872dc2e7c69169ba3e01cd08":[12,0,43,0,15,4],
 "class_scenario_1_1_command_1_1_change_element_comments.html#a555e3ddd2a32eb635ba8406c2ec52020":[12,0,43,0,15,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX28 =
 "class_scenario_1_1_command_1_1_move_interval.html#ab5748d75303158196bfae02d86ba57d5":[12,0,43,0,65,4],
 "class_scenario_1_1_command_1_1_move_interval.html#acb7b43b3bc85e3413b4338c5eacd40e4":[12,0,43,0,65,0],
 "class_scenario_1_1_command_1_1_move_interval.html#add602c9fd75ba3ab316863a682f2824e":[12,0,43,0,65,5],
-"class_scenario_1_1_command_1_1_move_interval_macro.html":[12,0,43,0,66],
-"class_scenario_1_1_command_1_1_move_layer_in_new_slot.html":[12,0,43,0,67]
+"class_scenario_1_1_command_1_1_move_interval_macro.html":[12,0,43,0,66]
 };
