@@ -1,5 +1,9 @@
 var NAVTREEINDEX36 =
 {
+"class_scenario_1_1_strong_q_state.html#a792b5804ae3a0283dc6fc873557da1a9":[12,0,43,267,0],
+"class_scenario_1_1_summary_inspector_widget.html":[12,0,43,268],
+"class_scenario_1_1_summary_inspector_widget.html#a99687105e6e55aef398634d8a343976c":[12,0,43,268,0],
+"class_scenario_1_1_summary_inspector_widget.html#aa7b2b07e84651acda3404805274638f7":[12,0,43,268,2],
 "class_scenario_1_1_summary_inspector_widget.html#ada90c5549b2909082dc31dfef630a34c":[12,0,43,268,1],
 "class_scenario_1_1_tempo_presenter.html":[12,0,43,269],
 "class_scenario_1_1_tempo_presenter.html#a9dc1d2c52b06437df8cac0d948b02d42":[12,0,43,269,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX36 =
 "class_scenario_1_1_transport_actions.html#a93f540e700646476c8a5944e14a1bab3":[12,0,43,310,4],
 "class_scenario_1_1_transport_actions.html#a9405b3f9270eef277550aaf1b3181949":[12,0,43,310,2],
 "class_scenario_1_1_transport_actions.html#ab818f2fde8644fd881302991f5187b88":[12,0,43,310,5],
-"class_scenario_1_1_transport_actions.html#ae3b97b7ba941a3200236ced0c55d1bf0":[12,0,43,310,0],
-"class_scenario_1_1_transport_actions.html#af00b2a720d4c6d8ac88c974534fb8728":[12,0,43,310,6],
-"class_scenario_1_1_transport_actions.html#af379edeb67686acd3f9827ffbb33daaf":[12,0,43,310,3],
-"class_scenario_1_1_trigger_inspector_widget.html":[12,0,43,311],
-"class_scenario_1_1_trigger_inspector_widget.html#a13d85f29fdc20a0604cc40cbf3dea2d2":[12,0,43,311,0]
+"class_scenario_1_1_transport_actions.html#ae3b97b7ba941a3200236ced0c55d1bf0":[12,0,43,310,0]
 };

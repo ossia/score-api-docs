@@ -110,62 +110,74 @@ $(document).ready(function(){initNavTree('_video_node_renderer_8hpp_source.html'
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">NodeRenderer</a></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_video_node_renderer.html">VideoNodeRenderer</a>(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_video_node.html">VideoNode</a>&amp; node) noexcept;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  ~<a class="code" href="classscore_1_1gfx_1_1_video_node_renderer.html">VideoNodeRenderer</a>();</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a> renderTargetForInput(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_port.html">Port</a>&amp; input) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordtype">void</span> createGpuDecoder();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">void</span> setupGpuDecoder(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordtype">void</span> checkFormat(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r, AVPixelFormat fmt, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classscore_1_1gfx_1_1_video_node_renderer.html">VideoNodeRenderer</a>(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_video_node.html">VideoNode</a>&amp; node) noexcept;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  ~<a class="code" href="classscore_1_1gfx_1_1_video_node_renderer.html">VideoNodeRenderer</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_video_node_renderer.html">VideoNodeRenderer</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_video_node_renderer.html">VideoNodeRenderer</a>(<span class="keyword">const</span> <a class="code" href="classscore_1_1gfx_1_1_video_node_renderer.html">VideoNodeRenderer</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_video_node_renderer.html">VideoNodeRenderer</a>(<a class="code" href="classscore_1_1gfx_1_1_video_node_renderer.html">VideoNodeRenderer</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_video_node_renderer.html">VideoNodeRenderer</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classscore_1_1gfx_1_1_video_node_renderer.html">VideoNodeRenderer</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_video_node_renderer.html">VideoNodeRenderer</a>&amp; operator=(<a class="code" href="classscore_1_1gfx_1_1_video_node_renderer.html">VideoNodeRenderer</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a> renderTargetForInput(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_port.html">Port</a>&amp; input) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordtype">void</span> init(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">void</span> runRenderPass(</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      QRhiCommandBuffer&amp; commands,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      <a class="code" href="structscore_1_1gfx_1_1_edge.html">Edge</a>&amp; edge) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> update(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, QRhiResourceUpdateBatch&amp; res) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> release(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordtype">void</span> createGpuDecoder();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">void</span> setupGpuDecoder(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">void</span> checkFormat(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r, AVPixelFormat fmt, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">void</span> init(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">void</span> runRenderPass(</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      QRhiCommandBuffer&amp; commands,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <a class="code" href="structscore_1_1gfx_1_1_edge.html">Edge</a>&amp; edge) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">void</span> displayRealTimeFrame(AVFrame&amp; frame, <a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, QRhiResourceUpdateBatch&amp; res);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">void</span> displayVideoFrame(AVFrame&amp; frame, <a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, QRhiResourceUpdateBatch&amp; res);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">bool</span> mustReadVideoFrame();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  AVFrame* nextFrame();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_video_node.html">VideoNode</a>&amp; node;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  std::vector&lt;std::pair&lt;Edge*, Pipeline&gt;&gt; m_p;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  QRhiBuffer* m_meshBuffer{};</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  QRhiBuffer* m_idxBuffer{};</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  QRhiBuffer* m_processUBO{};</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  std::unique_ptr&lt;GPUVideoDecoder&gt; m_gpu;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  std::shared_ptr&lt;Video::VideoInterface&gt; m_decoder;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  std::vector&lt;AVFrame*&gt; m_framesToFree;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  AVPixelFormat m_currentFormat = AVPixelFormat(-1);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">int</span> m_currentWidth = 0;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">int</span> m_currentHeight = 0;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  QElapsedTimer m_timer;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  AVFrame* m_nextFrame{};</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">double</span> m_lastFrameTime{};</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">double</span> m_lastPlaybackTime{-1.};</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">bool</span> m_readFrame{};</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> update(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, QRhiResourceUpdateBatch&amp; res) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">void</span> release(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">void</span> createPipelines(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span> displayRealTimeFrame(AVFrame&amp; frame, <a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, QRhiResourceUpdateBatch&amp; res);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">void</span> displayVideoFrame(AVFrame&amp; frame, <a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, QRhiResourceUpdateBatch&amp; res);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">bool</span> mustReadVideoFrame();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  AVFrame* nextFrame();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_video_node.html">VideoNode</a>&amp; node;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  std::vector&lt;std::pair&lt;Edge*, Pipeline&gt;&gt; m_p;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  QRhiBuffer* m_meshBuffer{};</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  QRhiBuffer* m_idxBuffer{};</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  QRhiBuffer* m_processUBO{};</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  QRhiBuffer* m_materialUBO{};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">struct </span>Material {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">float</span> scale_w{}, scale_h{};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  };</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  std::unique_ptr&lt;GPUVideoDecoder&gt; m_gpu;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  std::shared_ptr&lt;Video::VideoInterface&gt; m_decoder;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  std::vector&lt;AVFrame*&gt; m_framesToFree;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  AVPixelFormat m_currentFormat = AVPixelFormat(-1);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">int</span> m_currentWidth = 0;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">int</span> m_currentHeight = 0;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58">score::gfx::ScaleMode</a> m_currentScaleMode{};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  QElapsedTimer m_timer;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  AVFrame* m_nextFrame{};</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">double</span> m_lastFrameTime{};</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">double</span> m_lastPlaybackTime{-1.};</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">bool</span> m_readFrame{};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">bool</span> m_recomputeScale{};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astructscore_1_1gfx_1_1_texture_render_target_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_texture_render_target.html">score::gfx::TextureRenderTarget</a></div><div class="ttdoc">Useful abstraction for storing all the data related to a render target.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:106</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_texture_render_target_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_texture_render_target.html">score::gfx::TextureRenderTarget</a></div><div class="ttdoc">Useful abstraction for storing all the data related to a render target.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:107</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdoc">Renderer for a given node.</div><div class="ttdef"><b>Definition:</b> NodeRenderer.hpp:10</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_edge_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a></div><div class="ttdoc">Connection between two score::gfx::Port.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:61</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_ac7b0a6847f2f616b12a8fe08a1229b58"><div class="ttname"><a href="namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58">score::gfx::ScaleMode</a></div><div class="ttdeci">ScaleMode</div><div class="ttdoc">How to resize a texture to adapt it to a viewport.</div><div class="ttdef"><b>Definition:</b> Scale.hpp:9</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_edge_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a></div><div class="ttdoc">Connection between two score::gfx::Port.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:62</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition:</b> Vulkan.hpp:9</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_port_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a></div><div class="ttdoc">Port of a score::gfx::Node.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:43</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_port_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a></div><div class="ttdoc">Port of a score::gfx::Node.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:44</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_video_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_video_node_renderer.html">score::gfx::VideoNodeRenderer</a></div><div class="ttdef"><b>Definition:</b> VideoNodeRenderer.hpp:9</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition:</b> RenderList.hpp:18</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_video_node_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_video_node.html">score::gfx::VideoNode</a></div><div class="ttdoc">Model for rendering a video.</div><div class="ttdef"><b>Definition:</b> VideoNode.hpp:14</div></div>

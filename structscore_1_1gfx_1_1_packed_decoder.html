@@ -164,6 +164,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a70bc09ac7a5e91b4b26530851893ec7f inherit pub_static_methods_classscore_1_1gfx_1_1_g_p_u_video_decoder"><td class="memItemLeft" align="right" valign="top">static QRhiTextureSubresourceUploadDescription&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a70bc09ac7a5e91b4b26530851893ec7f">createTextureUpload</a> (uint8_t *pixels, int w, int h, int bytesPerPixel, int stride)</td></tr>
 <tr class="memdesc:a70bc09ac7a5e91b4b26530851893ec7f inherit pub_static_methods_classscore_1_1gfx_1_1_g_p_u_video_decoder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility method to create a QRhiTextureSubresourceUploadDescription.  <a href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a70bc09ac7a5e91b4b26530851893ec7f">More...</a><br /></td></tr>
 <tr class="separator:a70bc09ac7a5e91b4b26530851893ec7f inherit pub_static_methods_classscore_1_1gfx_1_1_g_p_u_video_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02c037dec626bb7c91dda1a54d7f135a inherit pub_static_methods_classscore_1_1gfx_1_1_g_p_u_video_decoder"><td class="memItemLeft" align="right" valign="top"><a id="a02c037dec626bb7c91dda1a54d7f135a"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><b>vertexShader</b> () noexcept</td></tr>
+<tr class="separator:a02c037dec626bb7c91dda1a54d7f135a inherit pub_static_methods_classscore_1_1gfx_1_1_g_p_u_video_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa3f190469bd00f477dee1b6d04f1862c"></a>
@@ -222,10 +225,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= R<span class="stringliteral">&quot;_(#version 450</span></div>
-<div class="line"><span class="stringliteral">    layout(std140, binding = 0) uniform buf {</span></div>
+<div class="line"><span class="stringliteral">    layout(std140, binding = 0) uniform renderer_t {</span></div>
 <div class="line"><span class="stringliteral">    mat4 clipSpaceCorrMatrix;</span></div>
 <div class="line"><span class="stringliteral">    vec2 texcoordAdjust;</span></div>
-<div class="line"><span class="stringliteral">    } tbuf;</span></div>
+<div class="line"><span class="stringliteral"></span> </div>
+<div class="line"><span class="stringliteral">    vec2 renderSize;</span></div>
+<div class="line"><span class="stringliteral">    } renderer;</span></div>
 <div class="line"><span class="stringliteral"></span> </div>
 <div class="line"><span class="stringliteral">    layout(binding=3) uniform sampler2D y_tex;</span></div>
 <div class="line"><span class="stringliteral"></span> </div>
@@ -240,7 +245,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="stringliteral"></span> </div>
 <div class="line"><span class="stringliteral">    void main ()</span></div>
 <div class="line"><span class="stringliteral">    {</span></div>
-<div class="line"><span class="stringliteral">      vec2 texcoord = vec2(v_texcoord.x, tbuf.texcoordAdjust.y + tbuf.texcoordAdjust.x * v_texcoord.y);</span></div>
+<div class="line"><span class="stringliteral">      vec2 texcoord = vec2(v_texcoord.x, renderer.texcoordAdjust.y + renderer.texcoordAdjust.x * v_texcoord.y);</span></div>
 <div class="line"><span class="stringliteral">      fragColor = processTexture(texture(y_tex, texcoord));</span></div>
 <div class="line"><span class="stringliteral">    })_&quot;</span></div>
 </div><!-- fragment -->

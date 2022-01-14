@@ -1027,6 +1027,7 @@ var files_dup =
     [ "RuntimeDispatcher.hpp", "_runtime_dispatcher_8hpp_source.html", null ],
     [ "SafeCast.hpp", "_safe_cast_8hpp_source.html", null ],
     [ "SafeQApplication.hpp", "_safe_q_application_8hpp_source.html", null ],
+    [ "Scale.hpp", "_scale_8hpp_source.html", null ],
     [ "ScaleNotes.hpp", "_scale_notes_8hpp_source.html", null ],
     [ "Scenario.hpp", "_scenario_8hpp_source.html", null ],
     [ "ScenarioActions.hpp", "_scenario_actions_8hpp_source.html", null ],

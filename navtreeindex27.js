@@ -1,5 +1,9 @@
 var NAVTREEINDEX27 =
 {
+"class_remote_control_1_1_document_plugin.html#a997ef81f45032c1469152263d815e63e":[12,0,41,3,6],
+"class_remote_control_1_1_document_plugin.html#adc32e2e41a41d0152d909a7fcbcafbb3":[12,0,41,3,3],
+"class_remote_control_1_1_document_plugin.html#ae0833185d17ba2656a51e2a3dae37072":[12,0,41,3,0],
+"class_remote_control_1_1_document_plugin.html#af34b8c6232ecb4454e29813776cc164a":[12,0,41,3,5],
 "class_remote_control_1_1_document_plugin.html#aff595c63ea7f8bef3659baf8b6ff5329":[12,0,41,3,1],
 "class_remote_control_1_1_event.html":[12,0,41,4],
 "class_remote_control_1_1_event.html#aafa1620b655e0b28f6b4e3007a77ceea":[12,0,41,4,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX27 =
 "class_scenario_1_1_command_1_1_change_element_color.html#a2263d2408192c4662d4a434ba5e46843":[12,0,43,0,14,7],
 "class_scenario_1_1_command_1_1_change_element_color.html#a8846f28202c6290be786f337870dc9ca":[12,0,43,0,14,4],
 "class_scenario_1_1_command_1_1_change_element_color.html#a96e319b8c1215d47686dda13a269edb3":[12,0,43,0,14,8],
-"class_scenario_1_1_command_1_1_change_element_color.html#ab0fd69f9ce887cc96b7d46d55b8440ba":[12,0,43,0,14,6],
-"class_scenario_1_1_command_1_1_change_element_color.html#ab984f266e75c4690ebb2e59de95710a5":[12,0,43,0,14,3],
-"class_scenario_1_1_command_1_1_change_element_color.html#af0849e7c944b6cbb587d3552504bfb9a":[12,0,43,0,14,5],
-"class_scenario_1_1_command_1_1_change_element_color.html#af25fada868161d4a545c24f5371f8f9f":[12,0,43,0,14,1],
-"class_scenario_1_1_command_1_1_change_element_comments.html":[12,0,43,0,15]
+"class_scenario_1_1_command_1_1_change_element_color.html#ab0fd69f9ce887cc96b7d46d55b8440ba":[12,0,43,0,14,6]
 };

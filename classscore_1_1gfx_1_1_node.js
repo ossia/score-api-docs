@@ -2,7 +2,11 @@ var classscore_1_1gfx_1_1_node =
 [
     [ "Node", "classscore_1_1gfx_1_1_node.html#abe3e5324b8df85751b01d0d02fbe49dd", null ],
     [ "~Node", "classscore_1_1gfx_1_1_node.html#ae0507cfcc9689ba35c8fee6df2324c2d", null ],
+    [ "Node", "classscore_1_1gfx_1_1_node.html#a5eefadb34fb1f4cc12c50952550c7708", null ],
+    [ "Node", "classscore_1_1gfx_1_1_node.html#ac6e578b8679824c63eec08e754abc01b", null ],
     [ "createRenderer", "classscore_1_1gfx_1_1_node.html#a929921dfd819c153d1d008a80f8fa9f8", null ],
+    [ "operator=", "classscore_1_1gfx_1_1_node.html#aefb015e0ae9aa94af70005325ed2197a", null ],
+    [ "operator=", "classscore_1_1gfx_1_1_node.html#a65d2ccc474739f97cc4475100bb510d5", null ],
     [ "process", "classscore_1_1gfx_1_1_node.html#a77ba2c8b929537e064becf63a416a377", null ],
     [ "addedToGraph", "classscore_1_1gfx_1_1_node.html#a2c822b931b169c3225586c6c90150855", null ],
     [ "input", "classscore_1_1gfx_1_1_node.html#a32f530890af66e0ecee6c66cdf430146", null ],

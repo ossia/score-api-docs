@@ -1,5 +1,9 @@
 var NAVTREEINDEX26 =
 {
+"class_protocols_1_1_libmapper_client_protocol_settings_widget.html#ac2a0a23145fde9b466da2b116668bff0":[12,0,38,28,0],
+"class_protocols_1_1_libmapper_client_protocol_settings_widget.html#ad499717b47af1ced44ad62e6f22df138":[12,0,38,28,4],
+"class_protocols_1_1_library_device_enumerator.html":[12,0,38,30],
+"class_protocols_1_1_library_device_enumerator.html#a0122ae8f415b51e34d6a6baf9eb62b47":[12,0,38,30,4],
 "class_protocols_1_1_library_device_enumerator.html#a08faeb7f2f5fe064d3cfd254ce1df49f":[12,0,38,30,2],
 "class_protocols_1_1_library_device_enumerator.html#a1d668baf9e9714751ee831dfa2bb1f6f":[12,0,38,30,1],
 "class_protocols_1_1_library_device_enumerator.html#a4070fdbd0627dcc21d95f1867b611bbc":[12,0,38,30,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX26 =
 "class_remote_control_1_1_default_process_component.html#ae5cfa228e298c4c31e32f60b85323501":[12,0,41,2,0],
 "class_remote_control_1_1_document_plugin.html":[12,0,41,3],
 "class_remote_control_1_1_document_plugin.html#a59b224a3712f49d75ac33ab40a976fa3":[12,0,41,3,4],
-"class_remote_control_1_1_document_plugin.html#a8092a28dc442461086fff2111321171a":[12,0,41,3,2],
-"class_remote_control_1_1_document_plugin.html#a997ef81f45032c1469152263d815e63e":[12,0,41,3,6],
-"class_remote_control_1_1_document_plugin.html#adc32e2e41a41d0152d909a7fcbcafbb3":[12,0,41,3,3],
-"class_remote_control_1_1_document_plugin.html#ae0833185d17ba2656a51e2a3dae37072":[12,0,41,3,0],
-"class_remote_control_1_1_document_plugin.html#af34b8c6232ecb4454e29813776cc164a":[12,0,41,3,5]
+"class_remote_control_1_1_document_plugin.html#a8092a28dc442461086fff2111321171a":[12,0,41,3,2]
 };

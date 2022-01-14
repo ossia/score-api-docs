@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"class_explorer_1_1_bounding_mode_combo_box.html#ae3d84cc99b2609541bd406f8ca0229ce":[12,0,11,20,1],
 "class_explorer_1_1_command_1_1_add_address.html":[12,0,11,0,0],
 "class_explorer_1_1_command_1_1_add_address.html#a77659f2784a2b94d98c24f9dac02be70":[12,0,11,0,0,0],
 "class_explorer_1_1_command_1_1_add_address.html#ac6811d5d0db10c2b05384db98ff14f04":[12,0,11,0,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "class_factor_1_1_factor_oracle.html#a934a91f25fad3e3020041f04c94b700e":[12,0,12,0,3],
 "class_factor_1_1_factor_oracle.html#aa69f286af5c3a679aa598d81c6366138":[12,0,12,0,5],
 "class_factor_1_1_factor_oracle.html#ab1d5cdcd2aec2096bda02a7d0f915141":[12,0,12,0,9],
-"class_factor_1_1_factor_oracle.html#af87de45fb7c00d78502a68aa9a53b2f4":[12,0,12,0,11],
-"class_factor_1_1_factor_oracle.html#af882cae024cfe3c3e59ac6c9a177a2c4":[12,0,12,0,8]
+"class_factor_1_1_factor_oracle.html#af87de45fb7c00d78502a68aa9a53b2f4":[12,0,12,0,11]
 };

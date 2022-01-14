@@ -1,5 +1,9 @@
 var NAVTREEINDEX25 =
 {
+"class_process_1_1_process_focus_manager.html#a4f698394a2f30ef3d01da05fce977487":[12,0,37,73,11],
+"class_process_1_1_process_focus_manager.html#a843d3b294d21bd4be29e8204239587c6":[12,0,37,73,5],
+"class_process_1_1_process_focus_manager.html#a9a63b1ad57c6e8eb4c8b73eae22fc9aa":[12,0,37,73,9],
+"class_process_1_1_process_focus_manager.html#a9bd990c60af86b62af09b3f093adbdbd":[12,0,37,73,6],
 "class_process_1_1_process_focus_manager.html#aa01a68ad7736c610a0a645c37b9fe2ec":[12,0,37,73,3],
 "class_process_1_1_process_focus_manager.html#acaa897cea4ee0a5845a9f68f25f7d5fb":[12,0,37,73,7],
 "class_process_1_1_process_focus_manager.html#adf2005d095c945fd9af7e64d985dfeb4":[12,0,37,73,8],
@@ -245,9 +249,5 @@ var NAVTREEINDEX25 =
 "class_protocols_1_1_libmapper_client_protocol_settings_widget.html#a611e9f4eb814878f9c29ab5341f41b7b":[12,0,38,28,2],
 "class_protocols_1_1_libmapper_client_protocol_settings_widget.html#a689747e64fd09495aa6cb08dca23db4d":[12,0,38,28,3],
 "class_protocols_1_1_libmapper_client_protocol_settings_widget.html#a734a9bedd9da9b4ce8f5a29b7e3f5437":[12,0,38,28,5],
-"class_protocols_1_1_libmapper_client_protocol_settings_widget.html#a8ab7cbfc348211d758343103b381f736":[12,0,38,28,1],
-"class_protocols_1_1_libmapper_client_protocol_settings_widget.html#ac2a0a23145fde9b466da2b116668bff0":[12,0,38,28,0],
-"class_protocols_1_1_libmapper_client_protocol_settings_widget.html#ad499717b47af1ced44ad62e6f22df138":[12,0,38,28,4],
-"class_protocols_1_1_library_device_enumerator.html":[12,0,38,30],
-"class_protocols_1_1_library_device_enumerator.html#a0122ae8f415b51e34d6a6baf9eb62b47":[12,0,38,30,4]
+"class_protocols_1_1_libmapper_client_protocol_settings_widget.html#a8ab7cbfc348211d758343103b381f736":[12,0,38,28,1]
 };

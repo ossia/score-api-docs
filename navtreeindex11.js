@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"class_device_1_1_protocol_settings_widget.html":[12,0,8,19],
 "class_device_1_1_protocol_settings_widget.html#a10af70d307d243634e0ba2e9e1e90509":[12,0,8,19,2],
 "class_device_1_1_protocol_settings_widget.html#a151327426ba65a73766e5e043c8b29a0":[12,0,8,19,5],
 "class_device_1_1_protocol_settings_widget.html#a19b0364e9d2ec8f0bead9adf0e286755":[12,0,8,19,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "class_execution_1_1_scenario_component_base.html":[12,0,10,39],
 "class_execution_1_1_scenario_component_base.html#a02c08f19ede2a90f84fd5ec12df28013":[12,0,10,39,14],
 "class_execution_1_1_scenario_component_base.html#a07c4e84a469e34074352451e0da5ea10":[12,0,10,39,6],
-"class_execution_1_1_scenario_component_base.html#a0b545409b45ded4a6b90778f3e259da0":[12,0,10,39,29],
-"class_execution_1_1_scenario_component_base.html#a10a4573a0e6552dde317c60a15c6fa89":[12,0,10,39,20]
+"class_execution_1_1_scenario_component_base.html#a0b545409b45ded4a6b90778f3e259da0":[12,0,10,39,29]
 };
