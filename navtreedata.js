@@ -177,8 +177,8 @@ var NAVTREEINDEX =
 "structscore_1_1_document_metadata.html#adc64ccbfd5c349dd221d95f68ba58e30",
 "structscore_1_1_string_constants.html#a0b770472b75e7025c17dcf3993cabdd9",
 "structscore_1_1gfx_1_1_h_a_p_decoder_1_1_h_a_p_section.html#af417dbbecbedba8c56e004a30e33d984",
-"structscore_1_1gfx_1_1isf__input__size__vis.html#a97f6cdcf26ea5da1079db598fad8ee96",
-"structvst_1_1_a_effect_wrapper.html#aa57a8821dedfe10eac134dac36748ad4"
+"structscore_1_1gfx_1_1isf__input__port__vis.html#a552c62ef8c7c27e726a57b5da0f8c345",
+"structvst3_1_1vst__node_1_1dummy__t.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
