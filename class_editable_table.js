@@ -1,6 +1,7 @@
 var class_editable_table =
 [
     [ "EditableTable", "class_editable_table.html#af30c478b3ff5e2875dbdf0700b556c94", null ],
+    [ "addCheckedItem", "class_editable_table.html#a22726a53609a1219acf155cfb3169ce2", null ],
     [ "addItem", "class_editable_table.html#ae73ca47d7ea6fa879eea6faa79aa8f93", null ],
     [ "clear", "class_editable_table.html#ac8ccffb0701b1cf1875a1660f165c6d4", null ],
     [ "itemsChanged", "class_editable_table.html#a1f93bf02f8bec847d13848f3cf8cc51e", null ],

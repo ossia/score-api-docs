@@ -1,5 +1,6 @@
 var NAVTREEINDEX64 =
 {
+"struct_t_serializer_3_01_j_s_o_n_object_00_01eggs_1_1variant_3_01_args_8_8_8_01_4_01_4.html#a6527bc244f938431c836426807fae5a2":[12,0,445,0],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01_t_01_4_01_4.html":[12,0,454],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01_t_01_4_01_4.html#a2139b55b481216c4ff11701049447bdd":[12,0,454,0],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01bool_01_4_01_4.html":[12,0,451],
@@ -248,6 +249,5 @@ var NAVTREEINDEX64 =
 "structgraphics__item__ptr.html#acbb10cc36f6e6e96faf5783f0fb23e74":[12,0,116,4],
 "structgraphics__item__ptr.html#ade6ff9ec1494df963b43696e1eff038d":[12,0,116,0],
 "structgraphics__item__ptr.html#ae6f6290c904be30bff59cd2da372964d":[12,0,116,12],
-"structgraphics__item__ptr.html#afb8afe679462f7262069841b6e44287b":[12,0,116,6],
-"structhas__base.html":[12,0,119]
+"structgraphics__item__ptr.html#afb8afe679462f7262069841b6e44287b":[12,0,116,6]
 };
