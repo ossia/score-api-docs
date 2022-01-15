@@ -266,8 +266,7 @@ QShader&#160;</td><td class="memItemRight" valign="bottom"><b>m_fragmentS</b></t
 <div class="line"><span class="stringliteral"></span> </div>
 <div class="line"><span class="stringliteral">  void main ()</span></div>
 <div class="line"><span class="stringliteral">  {</span></div>
-<div class="line"><span class="stringliteral">    vec2 texcoord = vec2(v_texcoord.x, texcoordAdjust.y + texcoordAdjust.x * v_texcoord.y);</span></div>
-<div class="line"><span class="stringliteral">    fragColor = texture(y_tex, texcoord);</span></div>
+<div class="line"><span class="stringliteral">    fragColor = texture(y_tex, v_texcoord);</span></div>
 <div class="line"><span class="stringliteral">  }</span></div>
 <div class="line"><span class="stringliteral">  )_&quot;</span></div>
 </div><!-- fragment -->
