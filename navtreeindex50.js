@@ -1,5 +1,7 @@
 var NAVTREEINDEX50 =
 {
+"score__plugin__mapping_8hpp_source.html":[13,0,1108],
+"score__plugin__media_8hpp_source.html":[13,0,1109],
 "score__plugin__midi_8hpp_source.html":[13,0,1110],
 "score__plugin__nodal_8hpp_source.html":[13,0,1111],
 "score__plugin__packagemanager_8hpp_source.html":[13,0,1112],
@@ -247,7 +249,5 @@ var NAVTREEINDEX50 =
 "struct_control_1_1_enum_base.html#aaecd6b141cfd8955349501786cffa9b8":[12,0,4,9,9],
 "struct_control_1_1_enum_base.html#ab23e0cea935a1d72716cac1af335236a":[12,0,4,9,7],
 "struct_control_1_1_enum_base.html#adbf9f5de8587c1185f54fc72f79c04ff":[12,0,4,9,13],
-"struct_control_1_1_enum_base.html#add06808544a18d98038b272e14b1a030":[12,0,4,9,0],
-"struct_control_1_1_executor_factory.html":[12,0,4,11],
-"struct_control_1_1_executor_gui_update.html":[12,0,4,12]
+"struct_control_1_1_enum_base.html#add06808544a18d98038b272e14b1a030":[12,0,4,9,0]
 };

@@ -96,7 +96,6 @@ $(document).ready(function(){initNavTree('structscore_1_1gfx_1_1_textured_triang
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="structscore_1_1gfx_1_1_textured_triangle-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -122,6 +121,9 @@ Inheritance diagram for score::gfx::TexturedTriangle:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a58b83005c5867c1f678843352a08f0fc"><td class="memItemLeft" align="right" valign="top"><a id="a58b83005c5867c1f678843352a08f0fc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TexturedTriangle</b> (bool flipped=false)</td></tr>
+<tr class="separator:a58b83005c5867c1f678843352a08f0fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8429d2a526df442d12a1fae206769d9b"><td class="memItemLeft" align="right" valign="top"><a id="a8429d2a526df442d12a1fae206769d9b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_textured_triangle.html#a8429d2a526df442d12a1fae206769d9b">setupBindings</a> (QRhiBuffer &amp;vtxData, QRhiBuffer *idxData, QRhiCommandBuffer &amp;cb) const noexcept override</td></tr>
 <tr class="memdesc:a8429d2a526df442d12a1fae206769d9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup bindings according to the input triangle data. <br /></td></tr>
@@ -135,16 +137,12 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:acbcbf92d0d4b9a568b85d0124df4220e inherit pub_methods_structscore_1_1gfx_1_1_textured_mesh"><td class="mdescLeft">&#160;</td><td class="mdescRight">A basic vertex shader that is going to work with this mesh. <br /></td></tr>
 <tr class="separator:acbcbf92d0d4b9a568b85d0124df4220e inherit pub_methods_structscore_1_1gfx_1_1_textured_mesh"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a442067fcfbe9c107446f5f043a12ed21"><td class="memItemLeft" align="right" valign="top"><a id="a442067fcfbe9c107446f5f043a12ed21"></a>
-static const <a class="el" href="structscore_1_1gfx_1_1_textured_triangle.html">TexturedTriangle</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>instance</b> () noexcept</td></tr>
-<tr class="separator:a442067fcfbe9c107446f5f043a12ed21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a7f3c5007279abe4171f63c8ee039d4f7"><td class="memItemLeft" align="right" valign="top">static const constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> []</td></tr>
 <tr class="separator:a7f3c5007279abe4171f63c8ee039d4f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80907ab5c0fe42dcd38568983a49ea93"><td class="memItemLeft" align="right" valign="top">static const constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>flipped_y_data</b> []</td></tr>
+<tr class="separator:a80907ab5c0fe42dcd38568983a49ea93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -197,6 +195,38 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>indexCount</b> {}</td>
 <div class="line">      0, 0,</div>
 <div class="line">      2, 0,</div>
 <div class="line">      0, 2</div>
+<div class="line">  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a80907ab5c0fe42dcd38568983a49ea93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80907ab5c0fe42dcd38568983a49ea93">&#9670;&nbsp;</a></span>flipped_y_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const constexpr float score::gfx::TexturedTriangle::flipped_y_data[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">      </div>
+<div class="line">      -1, -1,</div>
+<div class="line">      3,  -1,</div>
+<div class="line">      -1, 3,</div>
+<div class="line">      </div>
+<div class="line">      0, 2,</div>
+<div class="line">      2, 2,</div>
+<div class="line">      0, 0</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
 </div>

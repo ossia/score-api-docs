@@ -158,8 +158,7 @@ std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_sampler.html">Sampler
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a0d8b8d95c75eb61946e03dd22e3747c9"><td class="memItemLeft" align="right" valign="top"><a id="a0d8b8d95c75eb61946e03dd22e3747c9"></a>
-static const constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>yuv420_filter</b></td></tr>
+<tr class="memitem:a0d8b8d95c75eb61946e03dd22e3747c9"><td class="memItemLeft" align="right" valign="top">static const constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>yuv420_filter</b></td></tr>
 <tr class="separator:a0d8b8d95c75eb61946e03dd22e3747c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -206,6 +205,59 @@ static QString&#160;</td><td class="memItemRight" valign="bottom"><b>vertexShade
 
 <p>Implements <a class="el" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a80723548c505023ec398a58148c230f0">score::gfx::GPUVideoDecoder</a>.</p>
 
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a0d8b8d95c75eb61946e03dd22e3747c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d8b8d95c75eb61946e03dd22e3747c9">&#9670;&nbsp;</a></span>yuv420_filter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const constexpr auto score::gfx::YUV422Decoder::yuv420_filter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= R<span class="stringliteral">&quot;_(#version 450</span></div>
+<div class="line"><span class="stringliteral"></span> </div>
+<div class="line"><span class="stringliteral">layout(std140, binding = 0) uniform renderer_t {</span></div>
+<div class="line"><span class="stringliteral">mat4 clipSpaceCorrMatrix;</span></div>
+<div class="line"><span class="stringliteral">vec2 texcoordAdjust;</span></div>
+<div class="line"><span class="stringliteral"></span> </div>
+<div class="line"><span class="stringliteral">vec2 renderSize;</span></div>
+<div class="line"><span class="stringliteral">} renderer;</span></div>
+<div class="line"><span class="stringliteral"></span> </div>
+<div class="line"><span class="stringliteral">layout(binding=3) uniform sampler2D y_tex;</span></div>
+<div class="line"><span class="stringliteral">layout(binding=4) uniform sampler2D u_tex;</span></div>
+<div class="line"><span class="stringliteral">layout(binding=5) uniform sampler2D v_tex;</span></div>
+<div class="line"><span class="stringliteral"></span> </div>
+<div class="line"><span class="stringliteral">layout(location = 0) in vec2 v_texcoord;</span></div>
+<div class="line"><span class="stringliteral">layout(location = 0) out vec4 fragColor;</span></div>
+<div class="line"><span class="stringliteral"></span> </div>
+<div class="line"><span class="stringliteral">// See softpixel.com/~cwright/programming/colorspace/yuv</span></div>
+<div class="line"><span class="stringliteral">const vec3 offset = vec3(0., -0.5, -0.5);</span></div>
+<div class="line"><span class="stringliteral">const mat3 coeff = mat3(1.0   ,  1.0   , 1.0,</span></div>
+<div class="line"><span class="stringliteral">                        0.0   , -0.3455, 1.7790,</span></div>
+<div class="line"><span class="stringliteral">                        1.4075, -0.7169, 0.);</span></div>
+<div class="line"><span class="stringliteral">void main()</span></div>
+<div class="line"><span class="stringliteral">{</span></div>
+<div class="line"><span class="stringliteral">    float y = texture(y_tex, v_texcoord).r;</span></div>
+<div class="line"><span class="stringliteral">    float u = texture(u_tex, v_texcoord).r;</span></div>
+<div class="line"><span class="stringliteral">    float v = texture(v_tex, v_texcoord).r;</span></div>
+<div class="line"><span class="stringliteral"></span> </div>
+<div class="line"><span class="stringliteral">    fragColor = vec4(coeff * (vec3(y,u,v) + offset), 1);</span></div>
+<div class="line"><span class="stringliteral">}</span></div>
+<div class="line"><span class="stringliteral">)_&quot;</span></div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>

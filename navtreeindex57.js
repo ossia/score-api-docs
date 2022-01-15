@@ -1,5 +1,7 @@
 var NAVTREEINDEX57 =
 {
+"struct_midi_1_1_note_data.html#af922edac7c8f019ff57260ec00f194ee":[12,0,29,11,11],
+"struct_mime.html":[12,0,174],
 "struct_mime.html#a50d190e914d9e05548ea4e0d5b6b5404":[12,0,174,1],
 "struct_mime.html#a6ac56ce9068e29e16617a270f8de54f5":[12,0,174,0],
 "struct_mime_data_reader.html":[12,0,175],
@@ -247,7 +249,5 @@ var NAVTREEINDEX57 =
 "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html#af9c38a555564d97b138c47479163b359":[12,0,32,18,0,1,0],
 "struct_nodes_1_1_metro_1_1_node.html":[12,0,32,19,0],
 "struct_nodes_1_1_metro_1_1_node.html#ab79dbff5c443412dbfc0c6c1b7614703":[12,0,32,19,0,1],
-"struct_nodes_1_1_metro_1_1_node_1_1_metadata.html":[12,0,32,19,0,0],
-"struct_nodes_1_1_micro_mapping_1_1_node.html":[12,0,32,20,0],
-"struct_nodes_1_1_micro_mapping_1_1_node.html#a75d7825b462d09d3ffac484ce8ee7b7b":[12,0,32,20,0,2]
+"struct_nodes_1_1_metro_1_1_node_1_1_metadata.html":[12,0,32,19,0,0]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX52 =
 {
+"struct_curve_1_1_curve_event.html":[12,0,6,10],
+"struct_curve_1_1_curve_event.html#a0db7364eba88e6ac2df38eca64f0ac29":[12,0,6,10,0],
 "struct_curve_1_1_curve_event.html#a449e8c5e9040b6c5b5707cceba9b4c47":[12,0,6,10,1],
 "struct_curve_1_1_curve_segment_map.html":[12,0,6,14],
 "struct_curve_1_1_easing_data.html":[12,0,6,16],
@@ -247,7 +249,5 @@ var NAVTREEINDEX52 =
 "struct_execution_1_1_handle_node_change.html#a1171a43f3fa599145aa4b0ecf373c971":[12,0,10,17,1],
 "struct_execution_1_1_handle_node_change.html#a705ee5b1d71bcf1fea0aa428827c7ab9":[12,0,10,17,0],
 "struct_execution_1_1_handle_node_change.html#a852bce08f1ec33dcc9f625efebd2cbf9":[12,0,10,17,3],
-"struct_execution_1_1_handle_node_change.html#a9199173f10cd0fcd400c2e517a479e20":[12,0,10,17,4],
-"struct_execution_1_1_handle_node_change.html#aa2c1b517621ab95bfd51a49a45128dc3":[12,0,10,17,2],
-"struct_execution_1_1_metronome_sounds.html":[12,0,10,26]
+"struct_execution_1_1_handle_node_change.html#a9199173f10cd0fcd400c2e517a479e20":[12,0,10,17,4]
 };

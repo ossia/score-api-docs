@@ -1,5 +1,7 @@
 var NAVTREEINDEX51 =
 {
+"struct_control_1_1_executor_factory.html":[12,0,4,11],
+"struct_control_1_1_executor_gui_update.html":[12,0,4,12],
 "struct_control_1_1_executor_gui_update.html#a78c4ecd9ec518b56b94006d03bdf8e9e":[12,0,4,12,3],
 "struct_control_1_1_executor_gui_update.html#ab1a8dd645e2eb89c8e1c6c5d091ae48c":[12,0,4,12,4],
 "struct_control_1_1_executor_gui_update.html#abf6a7be9adfbbed22cc1491ffc0a6d7a":[12,0,4,12,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX51 =
 "struct_curve_1_1_curve_domain.html#aa7b89a9bc3ee6da633383ea04cd05650":[12,0,6,9,0],
 "struct_curve_1_1_curve_domain.html#ac986ffbfbafe52c462b6b6c4dfb68003":[12,0,6,9,13],
 "struct_curve_1_1_curve_domain.html#ace87e30be20f6ea1eaa97d3b4ca4e4d1":[12,0,6,9,10],
-"struct_curve_1_1_curve_domain.html#ae24aa7619910c9e248eaa76592ce40a7":[12,0,6,9,5],
-"struct_curve_1_1_curve_event.html":[12,0,6,10],
-"struct_curve_1_1_curve_event.html#a0db7364eba88e6ac2df38eca64f0ac29":[12,0,6,10,0]
+"struct_curve_1_1_curve_domain.html#ae24aa7619910c9e248eaa76592ce40a7":[12,0,6,9,5]
 };

@@ -1,6 +1,7 @@
 var structscore_1_1gfx_1_1_images_node =
 [
-    [ "Renderer", "classscore_1_1gfx_1_1_images_node_1_1_renderer.html", "classscore_1_1gfx_1_1_images_node_1_1_renderer" ],
+    [ "OnTheFlyRenderer", "classscore_1_1gfx_1_1_images_node_1_1_on_the_fly_renderer.html", "classscore_1_1gfx_1_1_images_node_1_1_on_the_fly_renderer" ],
+    [ "PreloadedRenderer", "classscore_1_1gfx_1_1_images_node_1_1_preloaded_renderer.html", "classscore_1_1gfx_1_1_images_node_1_1_preloaded_renderer" ],
     [ "UBO", "structscore_1_1gfx_1_1_images_node_1_1_u_b_o.html", "structscore_1_1gfx_1_1_images_node_1_1_u_b_o" ],
     [ "ImagesNode", "structscore_1_1gfx_1_1_images_node.html#a199f24d73ffce89bdcb16ec03868f0e7", null ],
     [ "~ImagesNode", "structscore_1_1gfx_1_1_images_node.html#af9e3671510fe9f2bbda7e3e14c6ffa8a", null ],

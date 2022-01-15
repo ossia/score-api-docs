@@ -148,6 +148,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:aca38b48fa763dfd0aaf75f28f7a3ad60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#aca38b48fa763dfd0aaf75f28f7a3ad60">renderTargetForOutput</a> (const <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge) noexcept</td></tr>
 <tr class="memdesc:aca38b48fa763dfd0aaf75f28f7a3ad60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the texture corresponding to an output port.  <a href="classscore_1_1gfx_1_1_render_list.html#aca38b48fa763dfd0aaf75f28f7a3ad60">More...</a><br /></td></tr>
 <tr class="separator:aca38b48fa763dfd0aaf75f28f7a3ad60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c05c20017599d13e6c64415ab6f5cb4"><td class="memItemLeft" align="right" valign="top">QImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a4c05c20017599d13e6c64415ab6f5cb4">adaptImage</a> (const QImage &amp;in)</td></tr>
+<tr class="memdesc:a4c05c20017599d13e6c64415ab6f5cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adapts an image to the GPU limits / format.  <a href="classscore_1_1gfx_1_1_render_list.html#a4c05c20017599d13e6c64415ab6f5cb4">More...</a><br /></td></tr>
+<tr class="separator:a4c05c20017599d13e6c64415ab6f5cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af37102d6b29a5dd122a7aa022e3b6f66"><td class="memItemLeft" align="right" valign="top"><a id="af37102d6b29a5dd122a7aa022e3b6f66"></a>
 QRhiTexture &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#af37102d6b29a5dd122a7aa022e3b6f66">emptyTexture</a> () const noexcept</td></tr>
 <tr class="memdesc:af37102d6b29a5dd122a7aa022e3b6f66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Texture to use when a texture is missing. <br /></td></tr>
@@ -155,6 +158,14 @@ QRhiTexture &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="e
 <tr class="memitem:acb4d286db246a8e40fc56b54fd419484"><td class="memItemLeft" align="right" valign="top">QRhiBuffer &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#acb4d286db246a8e40fc56b54fd419484">outputUBO</a> () const noexcept</td></tr>
 <tr class="memdesc:acb4d286db246a8e40fc56b54fd419484"><td class="mdescLeft">&#160;</td><td class="mdescRight">UBO corresponding to the output parameters:  <a href="classscore_1_1gfx_1_1_render_list.html#acb4d286db246a8e40fc56b54fd419484">More...</a><br /></td></tr>
 <tr class="separator:acb4d286db246a8e40fc56b54fd419484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6b0114789dc5aa29351866fb724fa95"><td class="memItemLeft" align="right" valign="top"><a id="af6b0114789dc5aa29351866fb724fa95"></a>
+const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">score::gfx::Mesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#af6b0114789dc5aa29351866fb724fa95">defaultQuad</a> () const noexcept</td></tr>
+<tr class="memdesc:af6b0114789dc5aa29351866fb724fa95"><td class="mdescLeft">&#160;</td><td class="mdescRight">A quad mesh correct for this API. <br /></td></tr>
+<tr class="separator:af6b0114789dc5aa29351866fb724fa95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a907a2553f670adbc76fe64bb4ac7f37a"><td class="memItemLeft" align="right" valign="top"><a id="a907a2553f670adbc76fe64bb4ac7f37a"></a>
+const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">score::gfx::Mesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a907a2553f670adbc76fe64bb4ac7f37a">defaultTriangle</a> () const noexcept</td></tr>
+<tr class="memdesc:a907a2553f670adbc76fe64bb4ac7f37a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A triangle mesh correct for this API. <br /></td></tr>
+<tr class="separator:a907a2553f670adbc76fe64bb4ac7f37a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -180,6 +191,27 @@ std::vector&lt; <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">sc
 <tr class="separator:a73bb243161c6a3a62aa9216748d4c110"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4c05c20017599d13e6c64415ab6f5cb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c05c20017599d13e6c64415ab6f5cb4">&#9670;&nbsp;</a></span>adaptImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QImage score::gfx::RenderList::adaptImage </td>
+          <td>(</td>
+          <td class="paramtype">const QImage &amp;&#160;</td>
+          <td class="paramname"><em>in</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adapts an image to the GPU limits / format. </p>
+<p>e.g. Y direction, texture size limits... </p>
+
+</div>
+</div>
 <a id="a8ce1357933a6f40b19e664902110474b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8ce1357933a6f40b19e664902110474b">&#9670;&nbsp;</a></span>initMeshBuffer()</h2>
 

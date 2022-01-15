@@ -1,5 +1,7 @@
 var NAVTREEINDEX58 =
 {
+"struct_nodes_1_1_micro_mapping_1_1_node.html":[12,0,32,20,0],
+"struct_nodes_1_1_micro_mapping_1_1_node.html#a75d7825b462d09d3ffac484ce8ee7b7b":[12,0,32,20,0,2],
 "struct_nodes_1_1_micro_mapping_1_1_node_1_1_metadata.html":[12,0,32,20,0,0],
 "struct_nodes_1_1_micro_mapping_1_1_node_1_1_state.html":[12,0,32,20,0,1],
 "struct_nodes_1_1_micro_mapping_1_1_node_1_1_state.html#a20abf75a6ef1ff0d5a7d164d24b0dc29":[12,0,32,20,0,1,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX58 =
 "struct_process_1_1_process_data.html#a40c60b115e1e25e543b16e13616ca376":[12,0,37,68,0],
 "struct_process_1_1_process_data.html#a40cb27dbec9510069d7b61dbf1a220a5":[12,0,37,68,2],
 "struct_process_1_1_process_drop_handler_1_1_dropped_file.html":[12,0,37,69,0],
-"struct_process_1_1_process_drop_handler_1_1_dropped_file.html#a5801d3f0fd47bb820d1e5421e0730b80":[12,0,37,69,0,1],
-"struct_process_1_1_process_drop_handler_1_1_dropped_file.html#ae552298de488af818099227b4be24bcf":[12,0,37,69,0,0],
-"struct_process_1_1_process_drop_handler_1_1_process_drop.html":[12,0,37,69,1]
+"struct_process_1_1_process_drop_handler_1_1_dropped_file.html#a5801d3f0fd47bb820d1e5421e0730b80":[12,0,37,69,0,1]
 };

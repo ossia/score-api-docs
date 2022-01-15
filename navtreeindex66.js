@@ -1,5 +1,7 @@
 var NAVTREEINDEX66 =
 {
+"structscore_1_1_document_metadata.html#a7fe69d656c1aba02db283d14eaf44ad7":[12,0,44,71,6],
+"structscore_1_1_document_metadata.html#a80ad66303e2f329fc6294157e9d85f67":[12,0,44,71,14],
 "structscore_1_1_document_metadata.html#a85634c539c2fadb2fae05ceefa2f6ee9":[12,0,44,71,19],
 "structscore_1_1_document_metadata.html#a8c871f312ee1e1feff359cf853154310":[12,0,44,71,15],
 "structscore_1_1_document_metadata.html#a8fae7e45081dc66d51581fd50e7ed328":[12,0,44,71,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX66 =
 "structscore_1_1_start_screen_link.html#a40c125be54bb8a2845d5775c31e5a8bd":[12,0,44,242,2],
 "structscore_1_1_start_screen_link.html#a4b0b8ee9b144cd4733573e1cb83971f6":[12,0,44,242,3],
 "structscore_1_1_start_screen_link.html#a578ab78d445fdcea5b261c82029fe6b6":[12,0,44,242,1],
-"structscore_1_1_start_screen_link.html#a59505def6f9583ead25a547e8987bb23":[12,0,44,242,0],
-"structscore_1_1_static_property_command.html":[12,0,44,244],
-"structscore_1_1_static_property_command_3_01_faust_1_1_faust_effect_model_1_1p__text_01_4.html":[12,0,44,245]
+"structscore_1_1_start_screen_link.html#a59505def6f9583ead25a547e8987bb23":[12,0,44,242,0]
 };
