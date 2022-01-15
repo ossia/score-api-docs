@@ -1,5 +1,13 @@
 var NAVTREEINDEX65 =
 {
+"structhas__no__base.html":[12,0,120],
+"structhas__ui.html":[12,0,121],
+"structhas__ui_3_01_t_00_01std_1_1enable__if__t_3_01_t_1_1ui__interface_01_4_01_4.html":[12,0,122],
+"structin__relationship.html":[12,0,133],
+"structincrease__timer__precision.html":[12,0,134],
+"structincrease__timer__precision.html#a236fddd81b22153d330b0aefdc061e50":[12,0,134,1],
+"structincrease__timer__precision.html#ad1d3c260fe9c0e5705958cf0b5e63331":[12,0,134,0],
+"structis___q_data_stream_serializable.html":[12,0,139],
 "structis___q_data_stream_serializable_3_01_t_00_01enable__if___q_data_stream_serializable_3_01ty7af32fa90288391deda099428bb0c0e7.html":[12,0,140],
 "structis__shared__ptr.html":[12,0,141],
 "structis__shared__ptr_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html":[12,0,142],
@@ -241,13 +249,5 @@ var NAVTREEINDEX65 =
 "structscore_1_1_document_metadata.html#a56d9216c28f23b0732db1287769fb3f3":[12,0,44,71,4],
 "structscore_1_1_document_metadata.html#a7fe69d656c1aba02db283d14eaf44ad7":[12,0,44,71,6],
 "structscore_1_1_document_metadata.html#a80ad66303e2f329fc6294157e9d85f67":[12,0,44,71,14],
-"structscore_1_1_document_metadata.html#a85634c539c2fadb2fae05ceefa2f6ee9":[12,0,44,71,19],
-"structscore_1_1_document_metadata.html#a8c871f312ee1e1feff359cf853154310":[12,0,44,71,15],
-"structscore_1_1_document_metadata.html#a8fae7e45081dc66d51581fd50e7ed328":[12,0,44,71,5],
-"structscore_1_1_document_metadata.html#a948fa37fbe0c1ebce64043f53831cbdb":[12,0,44,71,10],
-"structscore_1_1_document_metadata.html#aa747ca5e5879d846abed13160af289fa":[12,0,44,71,3],
-"structscore_1_1_document_metadata.html#abc7ab9c602708cb47c86d04a40a79630":[12,0,44,71,7],
-"structscore_1_1_document_metadata.html#ac138442546b8e940fece54726b7d6f3c":[12,0,44,71,0],
-"structscore_1_1_document_metadata.html#acad73b68c88fd2a9ac8b847880ca60ca":[12,0,44,71,20],
-"structscore_1_1_document_metadata.html#ad83282bd91474aef29da17881996c3ff":[12,0,44,71,11]
+"structscore_1_1_document_metadata.html#a85634c539c2fadb2fae05ceefa2f6ee9":[12,0,44,71,19]
 };

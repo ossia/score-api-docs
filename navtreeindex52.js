@@ -1,5 +1,13 @@
 var NAVTREEINDEX52 =
 {
+"struct_curve_1_1_curve_segment_map.html":[12,0,6,14],
+"struct_curve_1_1_easing_data.html":[12,0,6,16],
+"struct_curve_1_1_element_1_1_nothing__tag.html":[12,0,6,0,0],
+"struct_curve_1_1_element_1_1_point__tag.html":[12,0,6,0,1],
+"struct_curve_1_1_element_1_1_segment__tag.html":[12,0,6,0,2],
+"struct_curve_1_1_point_id.html":[12,0,6,29],
+"struct_curve_1_1_point_id.html#a0092d249b97b957c826c8c33cc5e660e":[12,0,6,29,0],
+"struct_curve_1_1_point_id.html#ad555fddd580909741fecdef261765544":[12,0,6,29,1],
 "struct_curve_1_1_segment_data.html":[12,0,6,35],
 "struct_curve_1_1_segment_data.html#a19516992543de4f5bf01c8280a9b8093":[12,0,6,35,0],
 "struct_curve_1_1_segment_data.html#a2a1bdf6f352132329c0948777023a03c":[12,0,6,35,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX52 =
 "struct_execution_1_1_handle_node_change.html#a9199173f10cd0fcd400c2e517a479e20":[12,0,10,17,4],
 "struct_execution_1_1_handle_node_change.html#aa2c1b517621ab95bfd51a49a45128dc3":[12,0,10,17,2],
 "struct_execution_1_1_metronome_sounds.html":[12,0,10,26],
-"struct_execution_1_1_metronome_sounds.html#a07abd69b8ba2bbc6f69b3670cd215671":[12,0,10,26,3],
-"struct_execution_1_1_metronome_sounds.html#a19e4e2630eec55f7eea9e8c7fa9647f7":[12,0,10,26,4],
-"struct_execution_1_1_metronome_sounds.html#a5ffa466d6352007db327115a105a344f":[12,0,10,26,0],
-"struct_execution_1_1_metronome_sounds.html#a858ba4c5ce9d3eaa5b0b4931b9f154d4":[12,0,10,26,2],
-"struct_execution_1_1_metronome_sounds.html#ac91fc97a2a970c3703978d7e1b6fe930":[12,0,10,26,1],
-"struct_execution_1_1_metronome_sounds.html#ae0299bcfc834063b1bd4d60c36298f10":[12,0,10,26,5],
-"struct_execution_1_1_play_from_interval_scenario_pruner.html":[12,0,10,28],
-"struct_execution_1_1_play_from_interval_scenario_pruner.html#a18be4d36bfc04a5fb403dfe4df941686":[12,0,10,28,0],
-"struct_execution_1_1_play_from_interval_scenario_pruner.html#a3214bbdd184db27aa701a9e6a12512ea":[12,0,10,28,2]
+"struct_execution_1_1_metronome_sounds.html#a07abd69b8ba2bbc6f69b3670cd215671":[12,0,10,26,3]
 };

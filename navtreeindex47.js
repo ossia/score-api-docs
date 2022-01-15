@@ -1,5 +1,13 @@
 var NAVTREEINDEX47 =
 {
+"classscore_1_1gfx_1_1_window.html#a199eb355addda6e5b406dfef63568562":[12,0,44,2,56,8],
+"classscore_1_1gfx_1_1_window.html#a1d89b43c62afe241ae25d21f20d77395":[12,0,44,2,56,13],
+"classscore_1_1gfx_1_1_window.html#a3078cf8113885ae346158787d893c8f6":[12,0,44,2,56,10],
+"classscore_1_1gfx_1_1_window.html#a53ccfda007318f07be2e93d3a631280c":[12,0,44,2,56,3],
+"classscore_1_1gfx_1_1_window.html#a5ee23a99d7a24a449848749d7e6a7a4b":[12,0,44,2,56,7],
+"classscore_1_1gfx_1_1_window.html#a6cdeb0bcbbe92b541f23300633f8abb1":[12,0,44,2,56,2],
+"classscore_1_1gfx_1_1_window.html#a7b36bcfd44911b83a2924f1ec4877f92":[12,0,44,2,56,6],
+"classscore_1_1gfx_1_1_window.html#a84f2e78a7c99e63f43fc8d914145850a":[12,0,44,2,56,11],
 "classscore_1_1gfx_1_1_window.html#a869e0d6ba62673de5ea8df059de827d3":[12,0,44,2,56,1],
 "classscore_1_1gfx_1_1_window.html#ad4b830c6e090e1cd39b53ebe8f09b631":[12,0,44,2,56,4],
 "classscore_1_1gfx_1_1_window.html#adb7bcdd3cb1f33ec8dda6f51777dd3b4":[12,0,44,2,56,5],
@@ -241,13 +249,5 @@ var NAVTREEINDEX47 =
 "classvst3_1_1_v_s_t_graphics_slider.html#adb48b189409b752428a0524ef4b92531":[12,0,54,23,2],
 "classvst3_1_1_v_s_t_graphics_slider.html#af2b6fcebb61629e23d2c5fc399980320":[12,0,54,23,3],
 "classvst3_1_1_v_s_t_graphics_slider.html#afd0df6f536c68a96a976fbfa2cd208c7":[12,0,54,23,6],
-"classvst3_1_1_window.html":[12,0,54,24],
-"classvst3_1_1_window.html#a1aa6d16a180698067605c2c777fedffa":[12,0,54,24,3],
-"classvst3_1_1_window.html#a41b74bfb042ff45c50c1e6cdb4fb4ef2":[12,0,54,24,2],
-"classvst3_1_1_window.html#ae2d3498b276424a42747196f2138f19b":[12,0,54,24,0],
-"classvst3_1_1_window.html#aeee348cc6c162ad81ea46b406ddf490b":[12,0,54,24,1],
-"classvst3_1_1param__changes.html":[12,0,54,10],
-"classvst3_1_1param__changes.html#a127330b6af778b47c4129bd14977453e":[12,0,54,10,5],
-"classvst3_1_1param__changes.html#a28bbf9cc9d4553a7dbe1268d81391314":[12,0,54,10,4],
-"classvst3_1_1param__changes.html#a5104bd84ebf440090ec29d7b91742d68":[12,0,54,10,0]
+"classvst3_1_1_window.html":[12,0,54,24]
 };

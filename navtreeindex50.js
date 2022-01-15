@@ -1,5 +1,13 @@
 var NAVTREEINDEX50 =
 {
+"score__plugin__nodal_8hpp_source.html":[13,0,1111],
+"score__plugin__packagemanager_8hpp_source.html":[13,0,1112],
+"score__plugin__pd_8hpp_source.html":[13,0,1113],
+"score__plugin__protocols_8hpp_source.html":[13,0,1114],
+"score__plugin__recording_8hpp_source.html":[13,0,1115],
+"score__plugin__remotecontrol_8hpp_source.html":[13,0,1116],
+"score__plugin__scenario_8hpp_source.html":[13,0,1117],
+"score__plugin__spline3d_8hpp_source.html":[13,0,1119],
 "score__plugin__spline_8hpp_source.html":[13,0,1118],
 "score__plugin__transport_8hpp_source.html":[13,0,1120],
 "score__plugin__ui_8hpp_source.html":[13,0,1121],
@@ -241,13 +249,5 @@ var NAVTREEINDEX50 =
 "struct_control_1_1_enum_base.html#add06808544a18d98038b272e14b1a030":[12,0,4,9,0],
 "struct_control_1_1_executor_factory.html":[12,0,4,11],
 "struct_control_1_1_executor_gui_update.html":[12,0,4,12],
-"struct_control_1_1_executor_gui_update.html#a78c4ecd9ec518b56b94006d03bdf8e9e":[12,0,4,12,3],
-"struct_control_1_1_executor_gui_update.html#ab1a8dd645e2eb89c8e1c6c5d091ae48c":[12,0,4,12,4],
-"struct_control_1_1_executor_gui_update.html#abf6a7be9adfbbed22cc1491ffc0a6d7a":[12,0,4,12,1],
-"struct_control_1_1_executor_gui_update.html#ac67de09649b5ad256f7a22eebbad691c":[12,0,4,12,2],
-"struct_control_1_1_executor_gui_update.html#af512470c1b86b17f7e3a2d9e7a69679f":[12,0,4,12,0],
-"struct_control_1_1_float_control.html":[12,0,4,13],
-"struct_control_1_1_float_control.html#a17eea5e39dc4a28667b9a062530e6e91":[12,0,4,13,11],
-"struct_control_1_1_float_control.html#a27aa9f9ab1e3c32dd9a5959fd906bbdc":[12,0,4,13,7],
-"struct_control_1_1_float_control.html#a28e3b81eae912e12e19ea0aacf85408a":[12,0,4,13,5]
+"struct_control_1_1_executor_gui_update.html#a78c4ecd9ec518b56b94006d03bdf8e9e":[12,0,4,12,3]
 };

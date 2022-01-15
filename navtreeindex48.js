@@ -1,5 +1,13 @@
 var NAVTREEINDEX48 =
 {
+"classvst3_1_1_window.html#a1aa6d16a180698067605c2c777fedffa":[12,0,54,24,3],
+"classvst3_1_1_window.html#a41b74bfb042ff45c50c1e6cdb4fb4ef2":[12,0,54,24,2],
+"classvst3_1_1_window.html#ae2d3498b276424a42747196f2138f19b":[12,0,54,24,0],
+"classvst3_1_1_window.html#aeee348cc6c162ad81ea46b406ddf490b":[12,0,54,24,1],
+"classvst3_1_1param__changes.html":[12,0,54,10],
+"classvst3_1_1param__changes.html#a127330b6af778b47c4129bd14977453e":[12,0,54,10,5],
+"classvst3_1_1param__changes.html#a28bbf9cc9d4553a7dbe1268d81391314":[12,0,54,10,4],
+"classvst3_1_1param__changes.html#a5104bd84ebf440090ec29d7b91742d68":[12,0,54,10,0],
 "classvst3_1_1param__changes.html#a76cb40743881be6b16985a1df4a400d5":[12,0,54,10,6],
 "classvst3_1_1param__changes.html#a9a2894084ff1101aa20b0e4345c68895":[12,0,54,10,1],
 "classvst3_1_1param__changes.html#aa23c7c0b3845473947168160d055def1":[12,0,54,10,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX48 =
 "functions_t.html":[12,3,0,16],
 "functions_u.html":[12,3,0,17],
 "functions_v.html":[12,3,0,18],
-"functions_vars.html":[12,3,2],
-"functions_w.html":[12,3,0,19],
-"functions_~.html":[12,3,0,20],
-"gfxplugins_8hpp_source.html":[13,0,472],
-"globals.html":[13,1,0],
-"globals_defs.html":[13,1,2],
-"globals_type.html":[13,1,1],
-"hierarchy.html":[12,2],
-"index.html":[]
+"functions_vars.html":[12,3,2]
 };

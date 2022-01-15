@@ -1,5 +1,13 @@
 var NAVTREEINDEX49 =
 {
+"functions_w.html":[12,3,0,19],
+"functions_~.html":[12,3,0,20],
+"gfxplugins_8hpp_source.html":[13,0,472],
+"globals.html":[13,1,0],
+"globals_defs.html":[13,1,2],
+"globals_type.html":[13,1,1],
+"hierarchy.html":[12,2],
+"index.html":[],
 "intro_8hpp_source.html":[13,0,569],
 "isf_8hpp_source.html":[13,0,575],
 "lib_2core_2documentation_2commands_8hpp_source.html":[13,0,163],
@@ -241,13 +249,5 @@ var NAVTREEINDEX49 =
 "score__plugin__lv2_8hpp_source.html":[13,0,1107],
 "score__plugin__mapping_8hpp_source.html":[13,0,1108],
 "score__plugin__media_8hpp_source.html":[13,0,1109],
-"score__plugin__midi_8hpp_source.html":[13,0,1110],
-"score__plugin__nodal_8hpp_source.html":[13,0,1111],
-"score__plugin__packagemanager_8hpp_source.html":[13,0,1112],
-"score__plugin__pd_8hpp_source.html":[13,0,1113],
-"score__plugin__protocols_8hpp_source.html":[13,0,1114],
-"score__plugin__recording_8hpp_source.html":[13,0,1115],
-"score__plugin__remotecontrol_8hpp_source.html":[13,0,1116],
-"score__plugin__scenario_8hpp_source.html":[13,0,1117],
-"score__plugin__spline3d_8hpp_source.html":[13,0,1119]
+"score__plugin__midi_8hpp_source.html":[13,0,1110]
 };

@@ -54,7 +54,7 @@ var namespacescore_1_1gfx =
     [ "TextureRenderTarget", "structscore_1_1gfx_1_1_texture_render_target.html", "structscore_1_1gfx_1_1_texture_render_target" ],
     [ "UYVY422Decoder", "structscore_1_1gfx_1_1_u_y_v_y422_decoder.html", "structscore_1_1gfx_1_1_u_y_v_y422_decoder" ],
     [ "VideoFrameReader", "structscore_1_1gfx_1_1_video_frame_reader.html", "structscore_1_1gfx_1_1_video_frame_reader" ],
-    [ "VideoNode", "structscore_1_1gfx_1_1_video_node.html", "structscore_1_1gfx_1_1_video_node" ],
+    [ "VideoNode", "classscore_1_1gfx_1_1_video_node.html", "classscore_1_1gfx_1_1_video_node" ],
     [ "VideoNodeRenderer", "classscore_1_1gfx_1_1_video_node_renderer.html", "classscore_1_1gfx_1_1_video_node_renderer" ],
     [ "Window", "classscore_1_1gfx_1_1_window.html", "classscore_1_1gfx_1_1_window" ],
     [ "YUV420Decoder", "structscore_1_1gfx_1_1_y_u_v420_decoder.html", "structscore_1_1gfx_1_1_y_u_v420_decoder" ],

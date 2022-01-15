@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('_video_node_renderer_8hpp_source.html'
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">NodeRenderer</a></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classscore_1_1gfx_1_1_video_node_renderer.html">VideoNodeRenderer</a>(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_video_node.html">VideoNode</a>&amp; node) noexcept;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classscore_1_1gfx_1_1_video_node_renderer.html">VideoNodeRenderer</a>(<span class="keyword">const</span> <a class="code" href="classscore_1_1gfx_1_1_video_node.html">VideoNode</a>&amp; node) noexcept;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  ~<a class="code" href="classscore_1_1gfx_1_1_video_node_renderer.html">VideoNodeRenderer</a>();</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_video_node_renderer.html">VideoNodeRenderer</a>() = <span class="keyword">delete</span>;</div>
@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('_video_node_renderer_8hpp_source.html'
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span> createPipelines(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">void</span> displayFrame(AVFrame&amp; frame, <a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, QRhiResourceUpdateBatch&amp; res);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_video_node.html">VideoNode</a>&amp; node;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">const</span> <a class="code" href="classscore_1_1gfx_1_1_video_node.html">VideoNode</a>&amp; node;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  std::vector&lt;std::pair&lt;Edge*, Pipeline&gt;&gt; m_p;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  QRhiBuffer* m_meshBuffer{};</div>
@@ -172,9 +172,9 @@ $(document).ready(function(){initNavTree('_video_node_renderer_8hpp_source.html'
 <div class="ttc" id="astructscore_1_1gfx_1_1_edge_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a></div><div class="ttdoc">Connection between two score::gfx::Port.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:62</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition:</b> Vulkan.hpp:9</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_port_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a></div><div class="ttdoc">Port of a score::gfx::Node.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:44</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_video_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_video_node.html">score::gfx::VideoNode</a></div><div class="ttdoc">Model for rendering a video.</div><div class="ttdef"><b>Definition:</b> VideoNode.hpp:59</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_video_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_video_node_renderer.html">score::gfx::VideoNodeRenderer</a></div><div class="ttdef"><b>Definition:</b> VideoNodeRenderer.hpp:10</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition:</b> RenderList.hpp:18</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_video_node_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_video_node.html">score::gfx::VideoNode</a></div><div class="ttdoc">Model for rendering a video.</div><div class="ttdef"><b>Definition:</b> VideoNode.hpp:59</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -1,5 +1,13 @@
 var NAVTREEINDEX61 =
 {
+"struct_recording_1_1_record_data.html#aee0eaa11154a2a39d49c948412baf643":[12,0,39,11,4],
+"struct_recording_1_1_record_provider.html":[12,0,39,15],
+"struct_recording_1_1_record_provider.html#a3905de9061fea1749ed3bf74b3eb1fae":[12,0,39,15,1],
+"struct_recording_1_1_record_provider.html#a6d2f967e5e7f5c59ce65d4375353c709":[12,0,39,15,0],
+"struct_recording_1_1_record_provider.html#aec6b0da991f520726c5e8b05a7ffc510":[12,0,39,15,2],
+"struct_recording_1_1_recorded_message.html":[12,0,39,12],
+"struct_recording_1_1_recorded_message.html#a035817c2b42975b30a667a72a424785a":[12,0,39,12,0],
+"struct_recording_1_1_recorded_message.html#a813e8172e393fa8dfec0c0f9630cfa42":[12,0,39,12,1],
 "struct_redo_strategy_1_1_quiet.html":[12,0,40,0],
 "struct_redo_strategy_1_1_redo.html":[12,0,40,1],
 "struct_remote_control_1_1_handler.html":[12,0,41,5],
@@ -241,13 +249,5 @@ var NAVTREEINDEX61 =
 "struct_scenario_1_1_interval_pixmaps.html#a56690a20cd8af7cd17157cfe0a9687a9":[12,0,43,126,5],
 "struct_scenario_1_1_interval_pixmaps.html#a7b9ff2b933a2bbd303a1adfd33105055":[12,0,43,126,0],
 "struct_scenario_1_1_interval_pixmaps.html#a9a7175706e8248d71b760a5c498811d1":[12,0,43,126,7],
-"struct_scenario_1_1_interval_pixmaps.html#ac7dd4a54fefc0670e3b48303b5671ca1":[12,0,43,126,8],
-"struct_scenario_1_1_interval_pixmaps.html#adaa9d4efe9a1ce94a454eec5e1aa80b2":[12,0,43,126,1],
-"struct_scenario_1_1_interval_properties.html":[12,0,43,128],
-"struct_scenario_1_1_interval_properties.html#a3f15f5012193bdea00efbdec1bdd785a":[12,0,43,128,3],
-"struct_scenario_1_1_interval_properties.html#a4710d77b7ee37141a2d047c426c4235d":[12,0,43,128,2],
-"struct_scenario_1_1_interval_properties.html#a48c9524e17c57a53a8bc6f4bb40e12a0":[12,0,43,128,5],
-"struct_scenario_1_1_interval_properties.html#a6745babe551a9150a953a9f3ff0c18af":[12,0,43,128,6],
-"struct_scenario_1_1_interval_properties.html#a7be68a645c18ad03e322c05396270c66":[12,0,43,128,8],
-"struct_scenario_1_1_interval_properties.html#a8f766b8e3eeb222aa3c3f97c63c073d5":[12,0,43,128,4]
+"struct_scenario_1_1_interval_pixmaps.html#ac7dd4a54fefc0670e3b48303b5671ca1":[12,0,43,126,8]
 };

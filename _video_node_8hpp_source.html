@@ -126,12 +126,12 @@ $(document).ready(function(){initNavTree('_video_node_8hpp_source.html',''); ini
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  ~<a class="code" href="structscore_1_1gfx_1_1_video_frame_reader.html">VideoFrameReader</a>();</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">void</span> releaseFramesToFree();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">static</span> AVFrame* nextFrame(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_video_node.html">VideoNode</a>&amp; node, <a class="code" href="struct_video_1_1_video_interface.html">Video::VideoInterface</a>&amp; decoder, std::vector&lt;AVFrame*&gt;&amp; framesToFree, AVFrame*&amp; nextFrame);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">static</span> AVFrame* nextFrame(<span class="keyword">const</span> <a class="code" href="classscore_1_1gfx_1_1_video_node.html">VideoNode</a>&amp; node, <a class="code" href="struct_video_1_1_video_interface.html">Video::VideoInterface</a>&amp; decoder, std::vector&lt;AVFrame*&gt;&amp; framesToFree, AVFrame*&amp; nextFrame);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  std::shared_ptr&lt;RefcountedFrame&gt; currentFrame() <span class="keyword">const</span> noexcept;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">bool</span> mustReadVideoFrame(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_video_node.html">VideoNode</a>&amp; node);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">void</span> readNextFrame(<a class="code" href="structscore_1_1gfx_1_1_video_node.html">VideoNode</a>&amp; node);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> updateCurrentFrame(<a class="code" href="structscore_1_1gfx_1_1_video_node.html">VideoNode</a>&amp; node, AVFrame* frame);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">bool</span> mustReadVideoFrame(<span class="keyword">const</span> <a class="code" href="classscore_1_1gfx_1_1_video_node.html">VideoNode</a>&amp; node);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">void</span> readNextFrame(<a class="code" href="classscore_1_1gfx_1_1_video_node.html">VideoNode</a>&amp; node);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> updateCurrentFrame(<a class="code" href="classscore_1_1gfx_1_1_video_node.html">VideoNode</a>&amp; node, AVFrame* frame);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  std::shared_ptr&lt;Video::VideoInterface&gt; m_decoder;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  int64_t m_currentFrameIdx{};</div>
@@ -153,35 +153,36 @@ $(document).ready(function(){initNavTree('_video_node_8hpp_source.html',''); ini
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">bool</span> m_readFrame{};</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_video_node.html">   59</a></span>&#160;<span class="keyword">struct </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="structscore_1_1gfx_1_1_video_node.html">VideoNode</a> : <a class="code" href="classscore_1_1gfx_1_1_process_node.html">ProcessNode</a></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_video_node.html">VideoNode</a>(</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      std::shared_ptr&lt;Video::VideoInterface&gt; dec,</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      std::optional&lt;double&gt; nativeTempo,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      QString f = {});</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="structscore_1_1gfx_1_1_video_node.html">VideoNode</a>();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>*</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  createRenderer(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r) <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">void</span> seeked();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> setScaleMode(<a class="code" href="namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58">score::gfx::ScaleMode</a> s);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span> process(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_message.html">Message</a>&amp; msg) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_video_frame_reader.html">VideoFrameReader</a> reader;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">friend</span> <a class="code" href="structscore_1_1gfx_1_1_video_frame_reader.html">VideoFrameReader</a>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">friend</span> <a class="code" href="classscore_1_1gfx_1_1_video_node_renderer.html">VideoNodeRenderer</a>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  QString m_filter;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  std::optional&lt;double&gt; m_nativeTempo;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58">score::gfx::ScaleMode</a> m_scaleMode{};</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_video_node.html">   59</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="classscore_1_1gfx_1_1_video_node.html">VideoNode</a></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classscore_1_1gfx_1_1_process_node.html">ProcessNode</a></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_video_node.html">VideoNode</a>(</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      std::shared_ptr&lt;Video::VideoInterface&gt; dec,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      std::optional&lt;double&gt; nativeTempo,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      QString f = {});</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classscore_1_1gfx_1_1_video_node.html">VideoNode</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>*</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  createRenderer(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r) <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> seeked();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span> setScaleMode(<a class="code" href="namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58">score::gfx::ScaleMode</a> s);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">void</span> process(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_message.html">Message</a>&amp; msg) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_video_frame_reader.html">VideoFrameReader</a> reader;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">friend</span> <a class="code" href="structscore_1_1gfx_1_1_video_frame_reader.html">VideoFrameReader</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">friend</span> <a class="code" href="classscore_1_1gfx_1_1_video_node_renderer.html">VideoNodeRenderer</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  QString m_filter;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  std::optional&lt;double&gt; m_nativeTempo;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58">score::gfx::ScaleMode</a> m_scaleMode{};</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdoc">Renderer for a given node.</div><div class="ttdef"><b>Definition:</b> NodeRenderer.hpp:10</div></div>
@@ -189,11 +190,11 @@ $(document).ready(function(){initNavTree('_video_node_8hpp_source.html',''); ini
 <div class="ttc" id="astruct_video_1_1_video_interface_html"><div class="ttname"><a href="struct_video_1_1_video_interface.html">Video::VideoInterface</a></div><div class="ttdef"><b>Definition:</b> VideoInterface.hpp:27</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition:</b> Vulkan.hpp:9</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_process_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_process_node.html">score::gfx::ProcessNode</a></div><div class="ttdoc">Common base class for nodes that map to score processes.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Node.hpp:87</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_video_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_video_node.html">score::gfx::VideoNode</a></div><div class="ttdoc">Model for rendering a video.</div><div class="ttdef"><b>Definition:</b> VideoNode.hpp:59</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_video_frame_reader_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_video_frame_reader.html">score::gfx::VideoFrameReader</a></div><div class="ttdef"><b>Definition:</b> VideoNode.hpp:24</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_video_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_video_node_renderer.html">score::gfx::VideoNodeRenderer</a></div><div class="ttdef"><b>Definition:</b> VideoNodeRenderer.hpp:10</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_message_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_message.html">score::gfx::Message</a></div><div class="ttdoc">Messages sent from the execution thread to the rendering thread.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Node.hpp:35</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition:</b> RenderList.hpp:18</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_video_node_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_video_node.html">score::gfx::VideoNode</a></div><div class="ttdoc">Model for rendering a video.</div><div class="ttdef"><b>Definition:</b> VideoNode.hpp:59</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_refcounted_frame_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_refcounted_frame.html">score::gfx::RefcountedFrame</a></div><div class="ttdef"><b>Definition:</b> VideoNode.hpp:19</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

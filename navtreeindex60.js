@@ -1,5 +1,13 @@
 var NAVTREEINDEX60 =
 {
+"struct_q_meta_type_id_3_01_id_3_01_scenario_1_1_event_model_01_4_01_4.html#adc1727825800c6fa32ec9fc0d9437353a9a6e5c4260b67c7ae421921ea544c21b":[12,0,228,0],
+"struct_q_meta_type_id_3_01_id_3_01_scenario_1_1_interval_model_01_4_01_4.html":[12,0,229],
+"struct_q_meta_type_id_3_01_id_3_01_scenario_1_1_interval_model_01_4_01_4.html#ae93331c018dc3741297acc5e23ffcfa7aad05dc39b089ca79946aa07f61b4e82d":[12,0,229,0],
+"struct_q_meta_type_id_3_01_id_3_01_scenario_1_1_state_model_01_4_01_4.html":[12,0,230],
+"struct_q_meta_type_id_3_01_id_3_01_scenario_1_1_state_model_01_4_01_4.html#a0d316be3f4e676ae0e804620720be44aa28387026863ef30719a4cd01de93bec5":[12,0,230,0],
+"struct_q_meta_type_id_3_01_id_3_01_scenario_1_1_time_sync_model_01_4_01_4.html":[12,0,231],
+"struct_q_meta_type_id_3_01_id_3_01_scenario_1_1_time_sync_model_01_4_01_4.html#a8ed3eb1954891d63f6e47a07183cd906a95c11e85452ee3d2f047e723151ec384":[12,0,231,0],
+"struct_q_meta_type_id_3_01_id_3_01score_1_1_document_model_01_4_01_4.html":[12,0,232],
 "struct_q_meta_type_id_3_01_id_3_01score_1_1_document_model_01_4_01_4.html#a1888c1efd4e4651e2e8a6e080aeac428a128d1d3531193d61d4c4cd6bebbdfb3a":[12,0,232,0],
 "struct_q_meta_type_id_3_01_j_s_1_1_audio_inlet_01_5_01_4.html":[12,0,234],
 "struct_q_meta_type_id_3_01_j_s_1_1_audio_inlet_01_5_01_4.html#a54044a9e93a3c59e0898251e1449dcb4a56c9800272bd8ba49ceeb8372b965a99":[12,0,234,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX60 =
 "struct_recording_1_1_record_data.html#a62e5880289dbd7c4943848bbe7f33f54":[12,0,39,11,2],
 "struct_recording_1_1_record_data.html#a92db3d417eb998f0d76cfd7f503cd853":[12,0,39,11,5],
 "struct_recording_1_1_record_data.html#abe5600104b054ef1a5eec8d9c72fe5f0":[12,0,39,11,3],
-"struct_recording_1_1_record_data.html#ac20f1fd3d8a43c6fd52b576bbb27874e":[12,0,39,11,0],
-"struct_recording_1_1_record_data.html#aee0eaa11154a2a39d49c948412baf643":[12,0,39,11,4],
-"struct_recording_1_1_record_provider.html":[12,0,39,15],
-"struct_recording_1_1_record_provider.html#a3905de9061fea1749ed3bf74b3eb1fae":[12,0,39,15,1],
-"struct_recording_1_1_record_provider.html#a6d2f967e5e7f5c59ce65d4375353c709":[12,0,39,15,0],
-"struct_recording_1_1_record_provider.html#aec6b0da991f520726c5e8b05a7ffc510":[12,0,39,15,2],
-"struct_recording_1_1_recorded_message.html":[12,0,39,12],
-"struct_recording_1_1_recorded_message.html#a035817c2b42975b30a667a72a424785a":[12,0,39,12,0],
-"struct_recording_1_1_recorded_message.html#a813e8172e393fa8dfec0c0f9630cfa42":[12,0,39,12,1]
+"struct_recording_1_1_record_data.html#ac20f1fd3d8a43c6fd52b576bbb27874e":[12,0,39,11,0]
 };

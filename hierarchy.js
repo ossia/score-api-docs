@@ -1739,7 +1739,7 @@ var hierarchy =
           [ "score::gfx::TexgenNode", "structscore_1_1gfx_1_1_texgen_node.html", null ],
           [ "score::gfx::TextNode", "structscore_1_1gfx_1_1_text_node.html", null ]
         ] ],
-        [ "score::gfx::VideoNode", "structscore_1_1gfx_1_1_video_node.html", null ]
+        [ "score::gfx::VideoNode", "classscore_1_1gfx_1_1_video_node.html", null ]
       ] ]
     ] ],
     [ "Nodes::AudioLooper::Node", "struct_nodes_1_1_audio_looper_1_1_node.html", null ],

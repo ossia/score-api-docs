@@ -1,5 +1,13 @@
 var NAVTREEINDEX64 =
 {
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01_t_01_4_01_4.html":[12,0,454],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01_t_01_4_01_4.html#a2139b55b481216c4ff11701049447bdd":[12,0,454,0],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01bool_01_4_01_4.html":[12,0,451],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01bool_01_4_01_4.html#aa59b32d76f3d932165d2d62ed0c445e7":[12,0,451,0],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01ossia_1_1impulse_01_4_01_4.html":[12,0,452],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01ossia_1_1impulse_01_4_01_4.html#ad64b3bc0cfecd1c9d1f5f56f07e89149":[12,0,452,0],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01std_1_1string_01_4_01_4.html":[12,0,453],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01std_1_1string_01_4_01_4.html#a03c1e5381b5977a18bf88832bb6cc406":[12,0,453,0],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base__variant_01_4.html":[12,0,455],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base__variant_01_4.html#ace5e4cd3b09e34a010cfbf15410732d9":[12,0,455,0],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base__variant_01_4.html#afd80d9b439c3c7a066c79b557935cc9b":[12,0,455,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX64 =
 "structgraphics__item__ptr.html#ade6ff9ec1494df963b43696e1eff038d":[12,0,116,0],
 "structgraphics__item__ptr.html#ae6f6290c904be30bff59cd2da372964d":[12,0,116,12],
 "structgraphics__item__ptr.html#afb8afe679462f7262069841b6e44287b":[12,0,116,6],
-"structhas__base.html":[12,0,119],
-"structhas__no__base.html":[12,0,120],
-"structhas__ui.html":[12,0,121],
-"structhas__ui_3_01_t_00_01std_1_1enable__if__t_3_01_t_1_1ui__interface_01_4_01_4.html":[12,0,122],
-"structin__relationship.html":[12,0,133],
-"structincrease__timer__precision.html":[12,0,134],
-"structincrease__timer__precision.html#a236fddd81b22153d330b0aefdc061e50":[12,0,134,1],
-"structincrease__timer__precision.html#ad1d3c260fe9c0e5705958cf0b5e63331":[12,0,134,0],
-"structis___q_data_stream_serializable.html":[12,0,139]
+"structhas__base.html":[12,0,119]
 };

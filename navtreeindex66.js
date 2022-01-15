@@ -1,5 +1,13 @@
 var NAVTREEINDEX66 =
 {
+"structscore_1_1_document_metadata.html#a8c871f312ee1e1feff359cf853154310":[12,0,44,71,15],
+"structscore_1_1_document_metadata.html#a8fae7e45081dc66d51581fd50e7ed328":[12,0,44,71,5],
+"structscore_1_1_document_metadata.html#a948fa37fbe0c1ebce64043f53831cbdb":[12,0,44,71,10],
+"structscore_1_1_document_metadata.html#aa747ca5e5879d846abed13160af289fa":[12,0,44,71,3],
+"structscore_1_1_document_metadata.html#abc7ab9c602708cb47c86d04a40a79630":[12,0,44,71,7],
+"structscore_1_1_document_metadata.html#ac138442546b8e940fece54726b7d6f3c":[12,0,44,71,0],
+"structscore_1_1_document_metadata.html#acad73b68c88fd2a9ac8b847880ca60ca":[12,0,44,71,20],
+"structscore_1_1_document_metadata.html#ad83282bd91474aef29da17881996c3ff":[12,0,44,71,11],
 "structscore_1_1_document_metadata.html#adc64ccbfd5c349dd221d95f68ba58e30":[12,0,44,71,12],
 "structscore_1_1_document_metadata.html#ae98b7f69535dee3dafec59c525b7403e":[12,0,44,71,1],
 "structscore_1_1_document_metadata.html#afd7e85720f326cbc930c4d15a5ac1db6":[12,0,44,71,16],
@@ -241,13 +249,5 @@ var NAVTREEINDEX66 =
 "structscore_1_1_start_screen_link.html#a59505def6f9583ead25a547e8987bb23":[12,0,44,242,0],
 "structscore_1_1_static_property_command.html":[12,0,44,244],
 "structscore_1_1_static_property_command_3_01_faust_1_1_faust_effect_model_1_1p__text_01_4.html":[12,0,44,245],
-"structscore_1_1_static_property_command_3_01_gfx_1_1_filter_1_1_model_1_1p__program_01_4.html":[12,0,44,246],
-"structscore_1_1_static_property_command_3_01_j_s_1_1_process_model_1_1p__script_01_4.html":[12,0,44,249],
-"structscore_1_1_static_property_command_3_01_jit_1_1_bytebeat_model_1_1p__script_01_4.html":[12,0,44,247],
-"structscore_1_1_static_property_command_3_01_jit_1_1_jit_effect_model_1_1p__script_01_4.html":[12,0,44,248],
-"structscore_1_1_string_constants.html":[12,0,44,250],
-"structscore_1_1_string_constants.html#a0248522f7cf75c6aface73324f152665":[12,0,44,250,6],
-"structscore_1_1_string_constants.html#a027010f46526660e3cb948ea85b7cd71":[12,0,44,250,46],
-"structscore_1_1_string_constants.html#a089846db946aef0b7bc2437a297a4233":[12,0,44,250,75],
-"structscore_1_1_string_constants.html#a0aff8ac9fd4b5ed86853cb679d478a4d":[12,0,44,250,5]
+"structscore_1_1_static_property_command_3_01_gfx_1_1_filter_1_1_model_1_1p__program_01_4.html":[12,0,44,246]
 };
