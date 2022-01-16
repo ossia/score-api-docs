@@ -1,5 +1,9 @@
 var NAVTREEINDEX22 =
 {
+"class_opaque_string.html#a18ac98f7c6364576dc01b65659a7719f":[12,0,194,4],
+"class_opaque_string.html#a3f10db7efa332fa587349f7ffc411321":[12,0,194,7],
+"class_opaque_string.html#a414c6bbeaeaa47a5e76dc53ee04e3b56":[12,0,194,1],
+"class_opaque_string.html#a745040d259b1e1b49727b4b3f1a516d2":[12,0,194,0],
 "class_opaque_string.html#a74b4ffc772d4c180734a7ba05a0039f3":[12,0,194,9],
 "class_opaque_string.html#a7aaffc54ed5df2f76afa2ddfab2584ba":[12,0,194,5],
 "class_opaque_string.html#a9fa67d4b90ea1a64375da0c33ded8a7e":[12,0,194,11],
@@ -245,9 +249,5 @@ var NAVTREEINDEX22 =
 "class_process_1_1_audio_port_combo_box.html#aefb3132f5cb7bb541c909b6c343e604a":[12,0,37,3,0],
 "class_process_1_1_automatable_factory.html":[12,0,37,4],
 "class_process_1_1_automatable_factory.html#a322b9704a70a4e4410824b1551457773":[12,0,37,4,1],
-"class_process_1_1_automatable_factory.html#a4861a6e5b7b7ca7f3c3a75eb14e44e25":[12,0,37,4,4],
-"class_process_1_1_automatable_factory.html#a652bf94417bf5b741d76cc12f757b44d":[12,0,37,4,2],
-"class_process_1_1_automatable_factory.html#a974fee374455f052741b469685fad8b8":[12,0,37,4,3],
-"class_process_1_1_automatable_factory.html#aa93d75bce2d1bd87976aa76aa9f6c2e4":[12,0,37,4,0],
-"class_process_1_1_cable.html":[12,0,37,6]
+"class_process_1_1_automatable_factory.html#a4861a6e5b7b7ca7f3c3a75eb14e44e25":[12,0,37,4,4]
 };

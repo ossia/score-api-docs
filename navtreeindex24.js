@@ -1,5 +1,9 @@
 var NAVTREEINDEX24 =
 {
+"class_process_1_1_layer_factory_list.html":[12,0,37,44],
+"class_process_1_1_layer_factory_list.html#a1eda9ff56425cb1b1b6a509192d20a27":[12,0,37,44,2],
+"class_process_1_1_layer_factory_list.html#a931524be7f6ff7c99bf11d48e5049ffd":[12,0,37,44,1],
+"class_process_1_1_layer_factory_list.html#aa9283cb1ae1eb7074dd3bca3fca4e0b8":[12,0,37,44,0],
 "class_process_1_1_layer_factory_list.html#ae1daa58d935f73d496a0169990e58a9c":[12,0,37,44,3],
 "class_process_1_1_layer_presenter.html":[12,0,37,45],
 "class_process_1_1_layer_presenter.html#a0aaaeeb27dfc9028fcf4433ed2c07b6b":[12,0,37,45,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX24 =
 "class_process_1_1_process_factory_list.html":[12,0,37,72],
 "class_process_1_1_process_factory_list.html#a30f7a1d81a5bdb54c15c3436969f7118":[12,0,37,72,1],
 "class_process_1_1_process_factory_list.html#a9b55aee9cf7c3afeca395d96d92da19d":[12,0,37,72,0],
-"class_process_1_1_process_factory_list.html#ab6662d504907d12836d2d0201450f442":[12,0,37,72,2],
-"class_process_1_1_process_focus_manager.html":[12,0,37,73],
-"class_process_1_1_process_focus_manager.html#a0e5035e72a61e333bf9ca75c0a1dd7fb":[12,0,37,73,0],
-"class_process_1_1_process_focus_manager.html#a155759758ede88e51568a67acdffd3a4":[12,0,37,73,4],
-"class_process_1_1_process_focus_manager.html#a21046da2fce9aac633095f1ece14cbe3":[12,0,37,73,2]
+"class_process_1_1_process_factory_list.html#ab6662d504907d12836d2d0201450f442":[12,0,37,72,2]
 };

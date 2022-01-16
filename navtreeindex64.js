@@ -1,5 +1,11 @@
 var NAVTREEINDEX64 =
 {
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_tree_path_01_4.html":[12,0,488],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_uuid_key_3_01_u_01_4_01_4.html":[12,0,490],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01boost_1_1container_1_1small__vector_3_01_t_00_01_n_00_01_alloc_01_4_01_4.html":[12,0,442],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01boost_1_1container_1_1small__vector_3_01_t_01_5_00_01_n_01_4_01_4.html":[12,0,441],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01boost_1_1container_1_1static__vector_3_01_t_00_01_n_01_4_01_4.html":[12,0,443],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01boost_1_1variant2_1_1variant_3_01_args_8_8_8_01_4_01_4.html":[12,0,444],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01boost_1_1variant2_1_1variant_3_01_args_8_8_8_01_4_01_4.html#aeca8063c00b4abc266564210f3f68324":[12,0,444,0],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01eggs_1_1variant_3_01_args_8_8_8_01_4_01_4.html":[12,0,445],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01eggs_1_1variant_3_01_args_8_8_8_01_4_01_4.html#a6527bc244f938431c836426807fae5a2":[12,0,445,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX64 =
 "structgraphics__item__ptr.html#a272774f66d42794d06e9e64f39440bd2":[12,0,116,11],
 "structgraphics__item__ptr.html#a2f94081f23d8e7da0e862dbb41266bdd":[12,0,116,2],
 "structgraphics__item__ptr.html#a63956906ecb59abd706f228683660bd1":[12,0,116,8],
-"structgraphics__item__ptr.html#a802bde56fa9314417568f740ddc4148c":[12,0,116,3],
-"structgraphics__item__ptr.html#a832908ac7b14d1317ab911b5eb1f0f93":[12,0,116,5],
-"structgraphics__item__ptr.html#aaf0261053d0acc8293feb1b9175ed47a":[12,0,116,9],
-"structgraphics__item__ptr.html#abebaeaaa39fb6bc347fc1fca58be1aab":[12,0,116,10],
-"structgraphics__item__ptr.html#ac62a43da815aa46133369f7beda95ff3":[12,0,116,7],
-"structgraphics__item__ptr.html#acbb10cc36f6e6e96faf5783f0fb23e74":[12,0,116,4],
-"structgraphics__item__ptr.html#ade6ff9ec1494df963b43696e1eff038d":[12,0,116,0]
+"structgraphics__item__ptr.html#a802bde56fa9314417568f740ddc4148c":[12,0,116,3]
 };

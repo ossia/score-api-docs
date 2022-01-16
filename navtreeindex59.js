@@ -1,5 +1,11 @@
 var NAVTREEINDEX59 =
 {
+"struct_process_1_1_process_data.html":[12,0,37,68],
+"struct_process_1_1_process_data.html#a3ec7898480945fc173f7cd261f5c71a4":[12,0,37,68,1],
+"struct_process_1_1_process_data.html#a40c60b115e1e25e543b16e13616ca376":[12,0,37,68,0],
+"struct_process_1_1_process_data.html#a40cb27dbec9510069d7b61dbf1a220a5":[12,0,37,68,2],
+"struct_process_1_1_process_drop_handler_1_1_dropped_file.html":[12,0,37,69,0],
+"struct_process_1_1_process_drop_handler_1_1_dropped_file.html#a5801d3f0fd47bb820d1e5421e0730b80":[12,0,37,69,0,1],
 "struct_process_1_1_process_drop_handler_1_1_dropped_file.html#ae552298de488af818099227b4be24bcf":[12,0,37,69,0,0],
 "struct_process_1_1_process_drop_handler_1_1_process_drop.html":[12,0,37,69,1],
 "struct_process_1_1_process_drop_handler_1_1_process_drop.html#ab5b8620cf7320c0e445bb41681f71422":[12,0,37,69,1,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX59 =
 "struct_q_meta_type_id_3_01_gfx_1_1_kinect2_settings_01_4.html":[12,0,222],
 "struct_q_meta_type_id_3_01_gfx_1_1_kinect2_settings_01_4.html#a4898fab040652cc7dfb711ec42509ba2a2eb66fbab8f0b0ffd864808589458638":[12,0,222,0],
 "struct_q_meta_type_id_3_01_gfx_1_1_processed_program_01_4.html":[12,0,223],
-"struct_q_meta_type_id_3_01_gfx_1_1_processed_program_01_4.html#a4ec714b1e566e841cb9b95d623db12caad5e3df4f4ec4781ac301a1cb17166536":[12,0,223,0],
-"struct_q_meta_type_id_3_01_gfx_1_1_shader_source_01_4.html":[12,0,224],
-"struct_q_meta_type_id_3_01_gfx_1_1_shader_source_01_4.html#a10e156f79ef967f9e8a1d1662e55156fa15308597c83a20c45eacaaa607dbc6c4":[12,0,224,0],
-"struct_q_meta_type_id_3_01_gfx_1_1_shm_settings_01_4.html":[12,0,226],
-"struct_q_meta_type_id_3_01_gfx_1_1_shm_settings_01_4.html#ab24454eb18e8833021e9c62993b31c7fa8f0e42d9f2d4d2b86d025581309218f2":[12,0,226,0],
-"struct_q_meta_type_id_3_01_gfx_1_1_shmdata_1_1_input_settings_01_4.html":[12,0,225],
-"struct_q_meta_type_id_3_01_gfx_1_1_shmdata_1_1_input_settings_01_4.html#a72ac348c00fa87859e57ad1c700b1ff7a45818709114bfbcb654d0716a2a52b29":[12,0,225,0]
+"struct_q_meta_type_id_3_01_gfx_1_1_processed_program_01_4.html#a4ec714b1e566e841cb9b95d623db12caad5e3df4f4ec4781ac301a1cb17166536":[12,0,223,0]
 };
