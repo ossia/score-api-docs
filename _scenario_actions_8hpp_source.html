@@ -325,29 +325,35 @@ $(document).ready(function(){initNavTree('_scenario_actions_8hpp_source.html',''
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    Dataflow,</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    QKeySequence(QObject::tr(&quot;Alt+Shift+G&quot;)))</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment">// Navigation</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;SCORE_DECLARE_ACTION(MoveUp, &quot;&amp;Move up&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::UpArrow)</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;SCORE_DECLARE_ACTION(MoveDown, &quot;&amp;Move down&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::DownArrow)</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;SCORE_DECLARE_ACTION(MoveLeft, &quot;&amp;Move left&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::LeftArrow)</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;SCORE_DECLARE_ACTION(MoveRight, &quot;&amp;Move right&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::RightArrow)</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;SCORE_DECLARE_ACTION(</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    GoToParent,</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    &quot;&amp;Go to parent&quot;,</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <a class="code" href="namespace_scenario.html">Scenario</a>,</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    QKeySequence(QObject::tr(&quot;Ctrl+Up&quot;)))</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;SCORE_PROCESS_DECLARE_CONTEXT_MENU(</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    SCORE_PLUGIN_SCENARIO_EXPORT,</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    ScenarioObjectContextMenu)</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;SCORE_PROCESS_DECLARE_CONTEXT_MENU(</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    SCORE_PLUGIN_SCENARIO_EXPORT,</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    ScenarioModelContextMenu)</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;SCORE_DECLARE_ACTION(</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    AutoScroll,</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    &quot;&amp;Auto-scroll&quot;,</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    Dataflow,</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    QKeySequence(QObject::tr(&quot;Alt+Shift+A&quot;)))</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="comment">// Navigation</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;SCORE_DECLARE_ACTION(MoveUp, &quot;&amp;Move up&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::UpArrow)</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;SCORE_DECLARE_ACTION(MoveDown, &quot;&amp;Move down&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::DownArrow)</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;SCORE_DECLARE_ACTION(MoveLeft, &quot;&amp;Move left&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::LeftArrow)</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;SCORE_DECLARE_ACTION(MoveRight, &quot;&amp;Move right&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::RightArrow)</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;SCORE_DECLARE_ACTION(</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    GoToParent,</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    &quot;&amp;Go to parent&quot;,</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <a class="code" href="namespace_scenario.html">Scenario</a>,</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    QKeySequence(QObject::tr(&quot;Ctrl+Up&quot;)))</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;SCORE_PROCESS_DECLARE_CONTEXT_MENU(</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    SCORE_PLUGIN_SCENARIO_EXPORT,</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    IntervalContextMenu)</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    ScenarioObjectContextMenu)</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;SCORE_PROCESS_DECLARE_CONTEXT_MENU(</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    SCORE_PLUGIN_SCENARIO_EXPORT,</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    EventContextMenu)</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    ScenarioModelContextMenu)</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;SCORE_PROCESS_DECLARE_CONTEXT_MENU(</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    SCORE_PLUGIN_SCENARIO_EXPORT,</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    IntervalContextMenu)</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;SCORE_PROCESS_DECLARE_CONTEXT_MENU(</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    SCORE_PLUGIN_SCENARIO_EXPORT,</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    EventContextMenu)</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>

@@ -19,6 +19,7 @@ var class_scenario_1_1_scenario_document_presenter =
     [ "released", "class_scenario_1_1_scenario_document_presenter.html#a7ba3d0cb568cd2c22b818cffb2fa1dc8", null ],
     [ "selectAll", "class_scenario_1_1_scenario_document_presenter.html#af30fe4c25e16bc2568b7457b9d6bb778", null ],
     [ "selectTop", "class_scenario_1_1_scenario_document_presenter.html#af019b16a91eba8f1f035db5e681b3828", null ],
+    [ "setAutoScroll", "class_scenario_1_1_scenario_document_presenter.html#a4e15243665424ab89e4c4f6b245f369d", null ],
     [ "setDisplayedInterval", "class_scenario_1_1_scenario_document_presenter.html#a3946a7967bbc406775e9ed991e58791d", null ],
     [ "setFocusedPresenter", "class_scenario_1_1_scenario_document_presenter.html#ae0c0dc0fdaf12b20d7a07e349d2add01", null ],
     [ "setLargeView", "class_scenario_1_1_scenario_document_presenter.html#a35c5e83c6aff9cea606b04c18a095630", null ],

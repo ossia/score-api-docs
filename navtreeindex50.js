@@ -1,5 +1,6 @@
 var NAVTREEINDEX50 =
 {
+"score__plugin__fx_8hpp_source.html":[13,0,1101],
 "score__plugin__gfx_8hpp_source.html":[13,0,1102],
 "score__plugin__inspector_8hpp_source.html":[13,0,1103],
 "score__plugin__jit_8hpp_source.html":[13,0,1104],
@@ -248,6 +249,5 @@ var NAVTREEINDEX50 =
 "struct_control_1_1_enum_base.html#a32d1bea10423f7f7190493282e5228a4":[12,0,4,9,1],
 "struct_control_1_1_enum_base.html#a3cb4e294442dbd6db4768b903324678d":[12,0,4,9,2],
 "struct_control_1_1_enum_base.html#a4d73d64e9bca972e25cf7fba152d757c":[12,0,4,9,3],
-"struct_control_1_1_enum_base.html#a506f0c4c7fdb1c844191f616c1e8d45a":[12,0,4,9,11],
-"struct_control_1_1_enum_base.html#a7913b0cd97d104bbf729c746d351e42e":[12,0,4,9,10]
+"struct_control_1_1_enum_base.html#a506f0c4c7fdb1c844191f616c1e8d45a":[12,0,4,9,11]
 };

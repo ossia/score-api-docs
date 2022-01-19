@@ -1,5 +1,6 @@
 var NAVTREEINDEX64 =
 {
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_tree_node_3_01_t_01_4_01_4.html":[12,0,487],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_tree_path_01_4.html":[12,0,488],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_uuid_key_3_01_u_01_4_01_4.html":[12,0,490],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01boost_1_1container_1_1small__vector_3_01_t_00_01_n_00_01_alloc_01_4_01_4.html":[12,0,442],
@@ -248,6 +249,5 @@ var NAVTREEINDEX64 =
 "structgraphics__item__ptr.html#a10e6a4ba1c430fb49c89597e5a22c0ed":[12,0,116,1],
 "structgraphics__item__ptr.html#a272774f66d42794d06e9e64f39440bd2":[12,0,116,11],
 "structgraphics__item__ptr.html#a2f94081f23d8e7da0e862dbb41266bdd":[12,0,116,2],
-"structgraphics__item__ptr.html#a63956906ecb59abd706f228683660bd1":[12,0,116,8],
-"structgraphics__item__ptr.html#a802bde56fa9314417568f740ddc4148c":[12,0,116,3]
+"structgraphics__item__ptr.html#a63956906ecb59abd706f228683660bd1":[12,0,116,8]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX54 =
 {
+"struct_gfx_1_1_shader_source.html#a78d310257a84061a72630e17ff900e48":[12,0,16,42,7],
 "struct_gfx_1_1_shader_source.html#a9a26dd9a7a815c4de8c717c9f6c78735":[12,0,16,42,1],
 "struct_gfx_1_1_shader_source.html#ab7a09e6580ddc10fa2c8092ef77eb5cf":[12,0,16,42,10],
 "struct_gfx_1_1_shader_source.html#abc0857787ee1fd3b9f65c9d136a8fdfd":[12,0,16,42,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX54 =
 "struct_jit_1_1inlet__vis.html#a178239c782c3ce95feb75158e79a8763":[12,0,22,12,3],
 "struct_jit_1_1inlet__vis.html#a4599690bf60ae881a23b30b0cf48c819":[12,0,22,12,4],
 "struct_jit_1_1inlet__vis.html#a532e87919cdbc3fb12af44c3b40d7afc":[12,0,22,12,1],
-"struct_jit_1_1inlet__vis.html#ade0c78a74e115647e0ae2fc1218a804f":[12,0,22,12,2],
-"struct_jit_1_1inlet__vis.html#ae045a365719d51dbc988886bf48e125f":[12,0,22,12,0]
+"struct_jit_1_1inlet__vis.html#ade0c78a74e115647e0ae2fc1218a804f":[12,0,22,12,2]
 };
