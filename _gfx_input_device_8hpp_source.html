@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('_gfx_input_device_8hpp_source.html',''
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  std::shared_ptr&lt;::Video::ExternalInput&gt; camera;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  int32_t node_id{};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_video_node.html">score::gfx::VideoNode</a>* node{};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_camera_node.html">score::gfx::CameraNode</a>* node{};</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="class_gfx_1_1video__texture__input__parameter.html">video_texture_input_parameter</a>(</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      ossia::net::node_base&amp; n,</div>
@@ -158,8 +158,8 @@ $(document).ready(function(){initNavTree('_gfx_input_device_8hpp_source.html',''
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">auto</span>&amp; proto = <span class="keyword">static_cast&lt;</span><a class="code" href="class_gfx_1_1video__texture__input__protocol.html">video_texture_input_protocol</a>&amp;<span class="keyword">&gt;</span>(n.get_device().get_protocol());</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    camera = proto.camera;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    node = <span class="keyword">new</span> <a class="code" href="classscore_1_1gfx_1_1_video_node.html">score::gfx::VideoNode</a>(proto.camera, {});</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    node_id = context-&gt;ui-&gt;register_node(std::unique_ptr&lt;score::gfx::VideoNode&gt;{node});</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    node = <span class="keyword">new</span> <a class="code" href="classscore_1_1gfx_1_1_camera_node.html">score::gfx::CameraNode</a>(proto.camera, {});</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    node_id = context-&gt;ui-&gt;register_node(std::unique_ptr&lt;score::gfx::CameraNode&gt;{node});</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> pull_texture(ossia::gfx::port_index idx)<span class="keyword"> override</span></div>
@@ -241,8 +241,8 @@ $(document).ready(function(){initNavTree('_gfx_input_device_8hpp_source.html',''
 <div class="ttc" id="aclass_gfx_1_1video__texture__input__parameter_html"><div class="ttname"><a href="class_gfx_1_1video__texture__input__parameter.html">Gfx::video_texture_input_parameter</a></div><div class="ttdef"><b>Definition:</b> GfxInputDevice.hpp:43</div></div>
 <div class="ttc" id="aclass_gfx_1_1video__texture__input__device_html"><div class="ttname"><a href="class_gfx_1_1video__texture__input__device.html">Gfx::video_texture_input_device</a></div><div class="ttdef"><b>Definition:</b> GfxInputDevice.hpp:122</div></div>
 <div class="ttc" id="aclass_gfx_1_1_gfx_execution_action_html"><div class="ttname"><a href="class_gfx_1_1_gfx_execution_action.html">Gfx::GfxExecutionAction</a></div><div class="ttdef"><b>Definition:</b> GfxExecContext.hpp:14</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_camera_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_camera_node.html">score::gfx::CameraNode</a></div><div class="ttdoc">Model for rendering a camera feed.</div><div class="ttdef"><b>Definition:</b> VideoNode.hpp:106</div></div>
 <div class="ttc" id="aclass_gfx_1_1video__texture__input__protocol_html"><div class="ttname"><a href="class_gfx_1_1video__texture__input__protocol.html">Gfx::video_texture_input_protocol</a></div><div class="ttdef"><b>Definition:</b> GfxInputDevice.hpp:13</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_video_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_video_node.html">score::gfx::VideoNode</a></div><div class="ttdoc">Model for rendering a video.</div><div class="ttdef"><b>Definition:</b> VideoNode.hpp:59</div></div>
 <div class="ttc" id="anamespace_gfx_html"><div class="ttname"><a href="namespace_gfx.html">Gfx</a></div><div class="ttdoc">Binds the rendering pipeline to ossia processes.</div><div class="ttdef"><b>Definition:</b> CameraDevice.cpp:29</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_message_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_message.html">score::gfx::Message</a></div><div class="ttdoc">Messages sent from the execution thread to the rendering thread.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Node.hpp:35</div></div>
 <div class="ttc" id="aclass_gfx_1_1video__texture__input__node_html"><div class="ttname"><a href="class_gfx_1_1video__texture__input__node.html">Gfx::video_texture_input_node</a></div><div class="ttdef"><b>Definition:</b> GfxInputDevice.hpp:81</div></div>

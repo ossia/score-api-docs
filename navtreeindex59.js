@@ -1,5 +1,15 @@
 var NAVTREEINDEX59 =
 {
+"struct_process_1_1_pixmaps.html#adfdeccbe785bce7bdfb6e70a0af2ac18":[12,0,37,59,24],
+"struct_process_1_1_pixmaps.html#ae66f8d42941885c70e0b77ca7de8e78a":[12,0,37,59,18],
+"struct_process_1_1_pixmaps.html#afd4a3097be0e4290339412abf8c399c2":[12,0,37,59,0],
+"struct_process_1_1_preset.html":[12,0,37,66],
+"struct_process_1_1_preset.html#a11f061c7edc9899ebb87047403152ded":[12,0,37,66,5],
+"struct_process_1_1_preset.html#a2367da0742ecd708e065167d27aafa5c":[12,0,37,66,0],
+"struct_process_1_1_preset.html#a2f9d666d988d3c411fe83aeb495af1c4":[12,0,37,66,1],
+"struct_process_1_1_preset.html#a79456f2ea80d5390280a5c9987cdd29c":[12,0,37,66,2],
+"struct_process_1_1_preset.html#abdc49021c07a7ce419c5cc0a5f6e00e8":[12,0,37,66,3],
+"struct_process_1_1_preset.html#ae771902c5c222db7f3d9562fe5ccc935":[12,0,37,66,6],
 "struct_process_1_1_preset.html#ae9b0b98d749ac68f73034c6e0d096f1f":[12,0,37,66,4],
 "struct_process_1_1_process_data.html":[12,0,37,68],
 "struct_process_1_1_process_data.html#a3ec7898480945fc173f7cd261f5c71a4":[12,0,37,68,1],
@@ -239,15 +249,5 @@ var NAVTREEINDEX59 =
 "struct_q_meta_type_id_3_01_curve_1_1_tool_01_4.html#acfa8181c357a551a67e366962cbee248a2d1f094ef9f925fcbb941c779cbedb16":[12,0,216,0],
 "struct_q_meta_type_id_3_01_data_stream_reader_01_5_01_4.html":[12,0,217],
 "struct_q_meta_type_id_3_01_data_stream_reader_01_5_01_4.html#aa489b659ac00418327dfb0fceeb9f4d0aa98ede8726a1165f1d2bdfed0b6da256":[12,0,217,0],
-"struct_q_meta_type_id_3_01_data_stream_writer_01_5_01_4.html":[12,0,218],
-"struct_q_meta_type_id_3_01_data_stream_writer_01_5_01_4.html#a3089c34349591c359d41ed4b1961c720a4416ccb2172621afe016c9b1fbeca2c5":[12,0,218,0],
-"struct_q_meta_type_id_3_01_device_1_1_device_settings_01_4.html":[12,0,219],
-"struct_q_meta_type_id_3_01_device_1_1_device_settings_01_4.html#a0b6e456eb904275be6d9e2f166f32a19adc154c18f9ba20f72b75f2342114437b":[12,0,219,0],
-"struct_q_meta_type_id_3_01_expand_mode_01_4.html":[12,0,220],
-"struct_q_meta_type_id_3_01_expand_mode_01_4.html#acf4392ad7eee4b2b77ffd78cbd5f5e05a35f3e6f63f5b182e2c2da321467b17a0":[12,0,220,0],
-"struct_q_meta_type_id_3_01_gfx_1_1_camera_settings_01_4.html":[12,0,221],
-"struct_q_meta_type_id_3_01_gfx_1_1_camera_settings_01_4.html#ade01c81852d97bb5477e030e1546ca24aaddf49cfd01e45c6d75b7397581f5789":[12,0,221,0],
-"struct_q_meta_type_id_3_01_gfx_1_1_kinect2_settings_01_4.html":[12,0,222],
-"struct_q_meta_type_id_3_01_gfx_1_1_kinect2_settings_01_4.html#a4898fab040652cc7dfb711ec42509ba2a2eb66fbab8f0b0ffd864808589458638":[12,0,222,0],
-"struct_q_meta_type_id_3_01_gfx_1_1_processed_program_01_4.html":[12,0,223]
+"struct_q_meta_type_id_3_01_data_stream_writer_01_5_01_4.html":[12,0,218]
 };

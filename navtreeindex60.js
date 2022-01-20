@@ -1,5 +1,15 @@
 var NAVTREEINDEX60 =
 {
+"struct_q_meta_type_id_3_01_data_stream_writer_01_5_01_4.html#a3089c34349591c359d41ed4b1961c720a4416ccb2172621afe016c9b1fbeca2c5":[12,0,218,0],
+"struct_q_meta_type_id_3_01_device_1_1_device_settings_01_4.html":[12,0,219],
+"struct_q_meta_type_id_3_01_device_1_1_device_settings_01_4.html#a0b6e456eb904275be6d9e2f166f32a19adc154c18f9ba20f72b75f2342114437b":[12,0,219,0],
+"struct_q_meta_type_id_3_01_expand_mode_01_4.html":[12,0,220],
+"struct_q_meta_type_id_3_01_expand_mode_01_4.html#acf4392ad7eee4b2b77ffd78cbd5f5e05a35f3e6f63f5b182e2c2da321467b17a0":[12,0,220,0],
+"struct_q_meta_type_id_3_01_gfx_1_1_camera_settings_01_4.html":[12,0,221],
+"struct_q_meta_type_id_3_01_gfx_1_1_camera_settings_01_4.html#ade01c81852d97bb5477e030e1546ca24aaddf49cfd01e45c6d75b7397581f5789":[12,0,221,0],
+"struct_q_meta_type_id_3_01_gfx_1_1_kinect2_settings_01_4.html":[12,0,222],
+"struct_q_meta_type_id_3_01_gfx_1_1_kinect2_settings_01_4.html#a4898fab040652cc7dfb711ec42509ba2a2eb66fbab8f0b0ffd864808589458638":[12,0,222,0],
+"struct_q_meta_type_id_3_01_gfx_1_1_processed_program_01_4.html":[12,0,223],
 "struct_q_meta_type_id_3_01_gfx_1_1_processed_program_01_4.html#a4ec714b1e566e841cb9b95d623db12caad5e3df4f4ec4781ac301a1cb17166536":[12,0,223,0],
 "struct_q_meta_type_id_3_01_gfx_1_1_shader_source_01_4.html":[12,0,224],
 "struct_q_meta_type_id_3_01_gfx_1_1_shader_source_01_4.html#a10e156f79ef967f9e8a1d1662e55156fa15308597c83a20c45eacaaa607dbc6c4":[12,0,224,0],
@@ -239,15 +249,5 @@ var NAVTREEINDEX60 =
 "struct_recording_1_1_record_context.html#a1ca64957cbe478eacec8f881645b2d58":[12,0,39,10,7],
 "struct_recording_1_1_record_context.html#a2432e34376aebd06de65d0bfbb34afd5":[12,0,39,10,12],
 "struct_recording_1_1_record_context.html#a2f5e3ece7f16a34058da9d1877c6d17b":[12,0,39,10,10],
-"struct_recording_1_1_record_context.html#a34610e6493dc6638c480147e2f95cba1":[12,0,39,10,5],
-"struct_recording_1_1_record_context.html#a3705afe4e64f37de901990e6de9568cc":[12,0,39,10,13],
-"struct_recording_1_1_record_context.html#a3757e32f7bee52910724cc99a770e4e5":[12,0,39,10,6],
-"struct_recording_1_1_record_context.html#a433ea37ae707cb4aaff0a1b6128039cd":[12,0,39,10,17],
-"struct_recording_1_1_record_context.html#a4c20afc238267eda00fa4a0fad8a7c61":[12,0,39,10,4],
-"struct_recording_1_1_record_context.html#a509bf112604fc2a80f3f4ad767a5b309":[12,0,39,10,14],
-"struct_recording_1_1_record_context.html#a521eb901906f3a52c5c621685225596f":[12,0,39,10,1],
-"struct_recording_1_1_record_context.html#a787c69ca7fecfe27f5c33dfb4b1a349e":[12,0,39,10,9],
-"struct_recording_1_1_record_context.html#aa060b7dcf25b5abf2211a74da07dc6c5":[12,0,39,10,11],
-"struct_recording_1_1_record_context.html#aa22b4a445b15c03e375d3aa13e93463d":[12,0,39,10,3],
-"struct_recording_1_1_record_context.html#ab1be896cc24afbde3a1192c23a34fdf9":[12,0,39,10,18]
+"struct_recording_1_1_record_context.html#a34610e6493dc6638c480147e2f95cba1":[12,0,39,10,5]
 };

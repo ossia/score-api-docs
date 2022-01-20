@@ -2,6 +2,7 @@ var namespacescore_1_1gfx =
 [
     [ "AudioTexture", "structscore_1_1gfx_1_1_audio_texture.html", "structscore_1_1gfx_1_1_audio_texture" ],
     [ "AudioTextureUpload", "structscore_1_1gfx_1_1_audio_texture_upload.html", "structscore_1_1gfx_1_1_audio_texture_upload" ],
+    [ "CameraNode", "classscore_1_1gfx_1_1_camera_node.html", "classscore_1_1gfx_1_1_camera_node" ],
     [ "DefaultShaderMaterial", "structscore_1_1gfx_1_1_default_shader_material.html", "structscore_1_1gfx_1_1_default_shader_material" ],
     [ "DepthNode", "structscore_1_1gfx_1_1_depth_node.html", "structscore_1_1gfx_1_1_depth_node" ],
     [ "Edge", "structscore_1_1gfx_1_1_edge.html", "structscore_1_1gfx_1_1_edge" ],
@@ -54,7 +55,9 @@ var namespacescore_1_1gfx =
     [ "TextureRenderTarget", "structscore_1_1gfx_1_1_texture_render_target.html", "structscore_1_1gfx_1_1_texture_render_target" ],
     [ "UYVY422Decoder", "structscore_1_1gfx_1_1_u_y_v_y422_decoder.html", "structscore_1_1gfx_1_1_u_y_v_y422_decoder" ],
     [ "VideoFrameReader", "structscore_1_1gfx_1_1_video_frame_reader.html", "structscore_1_1gfx_1_1_video_frame_reader" ],
+    [ "VideoFrameShare", "structscore_1_1gfx_1_1_video_frame_share.html", "structscore_1_1gfx_1_1_video_frame_share" ],
     [ "VideoNode", "classscore_1_1gfx_1_1_video_node.html", "classscore_1_1gfx_1_1_video_node" ],
+    [ "VideoNodeBase", "classscore_1_1gfx_1_1_video_node_base.html", "classscore_1_1gfx_1_1_video_node_base" ],
     [ "VideoNodeRenderer", "classscore_1_1gfx_1_1_video_node_renderer.html", "classscore_1_1gfx_1_1_video_node_renderer" ],
     [ "Window", "classscore_1_1gfx_1_1_window.html", "classscore_1_1gfx_1_1_window" ],
     [ "YUV420Decoder", "structscore_1_1gfx_1_1_y_u_v420_decoder.html", "structscore_1_1gfx_1_1_y_u_v420_decoder" ],

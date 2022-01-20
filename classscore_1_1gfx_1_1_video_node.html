@@ -111,8 +111,9 @@ Inheritance diagram for score::gfx::VideoNode:</div>
  <div class="center">
   <img src="classscore_1_1gfx_1_1_video_node.png" usemap="#score::gfx::VideoNode_map" alt=""/>
   <map id="score::gfx::VideoNode_map" name="score::gfx::VideoNode_map">
-<area href="classscore_1_1gfx_1_1_process_node.html" title="Common base class for nodes that map to score processes." alt="score::gfx::ProcessNode" shape="rect" coords="0,56,149,80"/>
-<area href="classscore_1_1gfx_1_1_node.html" title="Root data model for visual nodes." alt="score::gfx::Node" shape="rect" coords="0,0,149,24"/>
+<area href="classscore_1_1gfx_1_1_video_node_base.html" alt="score::gfx::VideoNodeBase" shape="rect" coords="0,112,164,136"/>
+<area href="classscore_1_1gfx_1_1_process_node.html" title="Common base class for nodes that map to score processes." alt="score::gfx::ProcessNode" shape="rect" coords="0,56,164,80"/>
+<area href="classscore_1_1gfx_1_1_node.html" title="Root data model for visual nodes." alt="score::gfx::Node" shape="rect" coords="0,0,164,24"/>
   </map>
 </div></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -130,13 +131,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5f2c43e3e854dcbe4b3e96c689154d7c"><td class="memItemLeft" align="right" valign="top"><a id="a5f2c43e3e854dcbe4b3e96c689154d7c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>seeked</b> ()</td></tr>
 <tr class="separator:a5f2c43e3e854dcbe4b3e96c689154d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cc151064ae6d6d03a4eededf40ff878"><td class="memItemLeft" align="right" valign="top"><a id="a9cc151064ae6d6d03a4eededf40ff878"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setScaleMode</b> (<a class="el" href="namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58">score::gfx::ScaleMode</a> s)</td></tr>
-<tr class="separator:a9cc151064ae6d6d03a4eededf40ff878"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bb33ce689a157748ab0d4c698229144"><td class="memItemLeft" align="right" valign="top"><a id="a5bb33ce689a157748ab0d4c698229144"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_video_node.html#a5bb33ce689a157748ab0d4c698229144">process</a> (const <a class="el" href="structscore_1_1gfx_1_1_message.html">Message</a> &amp;msg) override</td></tr>
 <tr class="memdesc:a5bb33ce689a157748ab0d4c698229144"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_process.html" title="Base classes and tools to implement processes and layers.">Process</a> a message from the execution engine. <br /></td></tr>
 <tr class="separator:a5bb33ce689a157748ab0d4c698229144"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classscore_1_1gfx_1_1_video_node_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1gfx_1_1_video_node_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1gfx_1_1_video_node_base.html">score::gfx::VideoNodeBase</a></td></tr>
+<tr class="memitem:ae2f38cebe09f0cd5bb63eb3d89088692 inherit pub_methods_classscore_1_1gfx_1_1_video_node_base"><td class="memItemLeft" align="right" valign="top"><a id="ae2f38cebe09f0cd5bb63eb3d89088692"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setScaleMode</b> (<a class="el" href="namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58">score::gfx::ScaleMode</a> s)</td></tr>
+<tr class="separator:ae2f38cebe09f0cd5bb63eb3d89088692 inherit pub_methods_classscore_1_1gfx_1_1_video_node_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1gfx_1_1_process_node"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1gfx_1_1_process_node')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1gfx_1_1_process_node.html">score::gfx::ProcessNode</a></td></tr>
 <tr class="memitem:a792b44a914901a8db7e76dd339775057 inherit pub_methods_classscore_1_1gfx_1_1_process_node"><td class="memItemLeft" align="right" valign="top"><a id="a792b44a914901a8db7e76dd339775057"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (const ossia::token_request &amp;tk)</td></tr>
@@ -178,6 +180,10 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a838f4083f3d572f2b1c832ff94fe6320"><td class="memItemLeft" align="right" valign="top"><a id="a838f4083f3d572f2b1c832ff94fe6320"></a>
 <a class="el" href="structscore_1_1gfx_1_1_video_frame_reader.html">VideoFrameReader</a>&#160;</td><td class="memItemRight" valign="bottom"><b>reader</b></td></tr>
 <tr class="separator:a838f4083f3d572f2b1c832ff94fe6320"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classscore_1_1gfx_1_1_video_node_base"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classscore_1_1gfx_1_1_video_node_base')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classscore_1_1gfx_1_1_video_node_base.html">score::gfx::VideoNodeBase</a></td></tr>
+<tr class="memitem:aa501ef1478508634a0aee20cf1abe578 inherit pub_attribs_classscore_1_1gfx_1_1_video_node_base"><td class="memItemLeft" align="right" valign="top"><a id="aa501ef1478508634a0aee20cf1abe578"></a>
+friend&#160;</td><td class="memItemRight" valign="bottom"><b>VideoNodeRenderer</b></td></tr>
+<tr class="separator:aa501ef1478508634a0aee20cf1abe578 inherit pub_attribs_classscore_1_1gfx_1_1_video_node_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classscore_1_1gfx_1_1_process_node"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classscore_1_1gfx_1_1_process_node')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classscore_1_1gfx_1_1_process_node.html">score::gfx::ProcessNode</a></td></tr>
 <tr class="memitem:a18bc0ee788516342e3151760b670fdb2 inherit pub_attribs_classscore_1_1gfx_1_1_process_node"><td class="memItemLeft" align="right" valign="top"><a id="a18bc0ee788516342e3151760b670fdb2"></a>
 std::atomic_int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_process_node.html#a18bc0ee788516342e3151760b670fdb2">materialChanged</a> {0}</td></tr>
@@ -201,6 +207,16 @@ ossia::flat_map&lt; <a class="el" href="classscore_1_1gfx_1_1_render_list.html">
 <tr class="memitem:a2c822b931b169c3225586c6c90150855 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a2c822b931b169c3225586c6c90150855"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>addedToGraph</b> {}</td></tr>
 <tr class="separator:a2c822b931b169c3225586c6c90150855 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_classscore_1_1gfx_1_1_video_node_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classscore_1_1gfx_1_1_video_node_base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classscore_1_1gfx_1_1_video_node_base.html">score::gfx::VideoNodeBase</a></td></tr>
+<tr class="memitem:abf59e6a5c42ddd029d9003b898a7ab68 inherit pro_attribs_classscore_1_1gfx_1_1_video_node_base"><td class="memItemLeft" align="right" valign="top"><a id="abf59e6a5c42ddd029d9003b898a7ab68"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_filter</b></td></tr>
+<tr class="separator:abf59e6a5c42ddd029d9003b898a7ab68 inherit pro_attribs_classscore_1_1gfx_1_1_video_node_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60f87b080e28b33d2fae14154ad6ace7 inherit pro_attribs_classscore_1_1gfx_1_1_video_node_base"><td class="memItemLeft" align="right" valign="top"><a id="a60f87b080e28b33d2fae14154ad6ace7"></a>
+<a class="el" href="namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58">score::gfx::ScaleMode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_scaleMode</b> {}</td></tr>
+<tr class="separator:a60f87b080e28b33d2fae14154ad6ace7 inherit pro_attribs_classscore_1_1gfx_1_1_video_node_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_video_node_8hpp_source.html">VideoNode.hpp</a></li>

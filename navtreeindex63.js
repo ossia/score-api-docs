@@ -1,5 +1,15 @@
 var NAVTREEINDEX63 =
 {
+"struct_scenario_rollback_strategy.html":[12,0,324],
+"struct_send_strategy_1_1_quiet.html":[12,0,45,0],
+"struct_send_strategy_1_1_simple.html":[12,0,45,1],
+"struct_send_strategy_1_1_undo_redo.html":[12,0,45,2],
+"struct_signal_utils.html":[12,0,368],
+"struct_simple_hierarchical_scenario_component_1_1_interval_pair.html":[12,0,369,0],
+"struct_simple_hierarchical_scenario_component_1_1_interval_pair.html#a282f9c9d9b517804972b2dd3722ce187":[12,0,369,0,0],
+"struct_simple_hierarchical_scenario_component_1_1_interval_pair.html#a4d336bdacd4867d7f8a2a32a0ebfefe3":[12,0,369,0,2],
+"struct_simple_hierarchical_scenario_component_1_1_interval_pair.html#a9e39eb9c7666dae23f1e80e0f7b5763e":[12,0,369,0,1],
+"struct_state_1_1_address.html":[12,0,48,0],
 "struct_state_1_1_address.html#a1b61ddb60d70f09235a3e6818a5736e4":[12,0,48,0,7],
 "struct_state_1_1_address.html#a34c7a546a6cc7db03f9ad21cb93767dc":[12,0,48,0,5],
 "struct_state_1_1_address.html#a3643901a5d5ff226143bbdc901d4ab21":[12,0,48,0,6],
@@ -239,15 +249,5 @@ var NAVTREEINDEX63 =
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_model_3_01_info_00_01_control_1_1is__control_01_4_01_4.html":[12,0,450],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_model_3_01_info_00_01_control_1_1is__control_01_4_01_4.html#ab991fdc5e4c3259c48446220f7f0c535":[12,0,450,0],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_path_3_01_t_01_4_01_4.html":[12,0,461],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_q_color_01_4.html":[12,0,462],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_q_list_3_01_args_8_8_8_01_4_01_4.html":[12,0,463],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_q_point_01_4.html":[12,0,464],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_q_point_f_01_4.html":[12,0,465],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_q_rect_01_4.html":[12,0,466],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_q_rect_f_01_4.html":[12,0,467],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_q_size_01_4.html":[12,0,468],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_q_size_f_01_4.html":[12,0,469],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_q_variant_map_01_4.html":[12,0,470],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_q_variant_map_01_4.html#affde4a7f5ee85fb56aca9ed9e27ec667":[12,0,470,0],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_time_val_01_4.html":[12,0,486]
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_q_color_01_4.html":[12,0,462]
 };

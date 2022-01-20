@@ -1,5 +1,15 @@
 var NAVTREEINDEX50 =
 {
+"score__lib__state_8hpp_source.html":[13,0,1091],
+"score__plugin__analysis_8hpp_source.html":[13,0,1092],
+"score__plugin__audio_8hpp_source.html":[13,0,1093],
+"score__plugin__automation_8hpp_source.html":[13,0,1094],
+"score__plugin__controlsurface_8hpp_source.html":[13,0,1095],
+"score__plugin__curve_8hpp_source.html":[13,0,1096],
+"score__plugin__dataflow_8hpp_source.html":[13,0,1097],
+"score__plugin__deviceexplorer_8hpp_source.html":[13,0,1098],
+"score__plugin__engine_8hpp_source.html":[13,0,1099],
+"score__plugin__faust_8hpp_source.html":[13,0,1100],
 "score__plugin__fx_8hpp_source.html":[13,0,1101],
 "score__plugin__gfx_8hpp_source.html":[13,0,1102],
 "score__plugin__inspector_8hpp_source.html":[13,0,1103],
@@ -239,15 +249,5 @@ var NAVTREEINDEX50 =
 "struct_control_1_1_enum.html#a291383a5802ef45f3b934d535fa007ab":[12,0,4,8,2],
 "struct_control_1_1_enum.html#a2fbce06399ee6fd4c2c3325a6ed563f5":[12,0,4,8,4],
 "struct_control_1_1_enum.html#a54d79bbd830dc11c4246d263994c15b5":[12,0,4,8,5],
-"struct_control_1_1_enum.html#a5c96568b56c5194ca89b0a176ee3f48c":[12,0,4,8,6],
-"struct_control_1_1_enum.html#a7d3cb0f499c9f6821499fb31c6c330df":[12,0,4,8,3],
-"struct_control_1_1_enum.html#abd99de8a096df55036957c4030117f0d":[12,0,4,8,1],
-"struct_control_1_1_enum_base.html":[12,0,4,9],
-"struct_control_1_1_enum_base.html#a1103d83ff0306e027680e769a1c66cf2":[12,0,4,9,8],
-"struct_control_1_1_enum_base.html#a13fef1e20e538000950fec8833380672":[12,0,4,9,5],
-"struct_control_1_1_enum_base.html#a1d65933552f03d31a99a12074f4bc32b":[12,0,4,9,12],
-"struct_control_1_1_enum_base.html#a32d1bea10423f7f7190493282e5228a4":[12,0,4,9,1],
-"struct_control_1_1_enum_base.html#a3cb4e294442dbd6db4768b903324678d":[12,0,4,9,2],
-"struct_control_1_1_enum_base.html#a4d73d64e9bca972e25cf7fba152d757c":[12,0,4,9,3],
-"struct_control_1_1_enum_base.html#a506f0c4c7fdb1c844191f616c1e8d45a":[12,0,4,9,11]
+"struct_control_1_1_enum.html#a5c96568b56c5194ca89b0a176ee3f48c":[12,0,4,8,6]
 };

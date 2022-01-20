@@ -1,5 +1,15 @@
 var NAVTREEINDEX48 =
 {
+"classvst3_1_1_v_s_t_control_port_factory.html#a5af98724fcb4fe384821baec49a8e13d":[12,0,54,19,4],
+"classvst3_1_1_v_s_t_control_port_factory.html#a7b2edef54746849a2372e50b5fa9be7a":[12,0,54,19,2],
+"classvst3_1_1_v_s_t_control_port_factory.html#aa9efe1274249b8e951eca203dcb70256":[12,0,54,19,5],
+"classvst3_1_1_v_s_t_control_port_factory.html#aca5a09c3214d85a4523f9219f4d15842":[12,0,54,19,1],
+"classvst3_1_1_v_s_t_effect_item.html":[12,0,54,21],
+"classvst3_1_1_v_s_t_effect_item.html#aa2def84df48dc246cade00dc0c6fb370":[12,0,54,21,1],
+"classvst3_1_1_v_s_t_effect_item.html#ad5898861ac0878bf44d57f28c6837295":[12,0,54,21,0],
+"classvst3_1_1_v_s_t_graphics_slider.html":[12,0,54,23],
+"classvst3_1_1_v_s_t_graphics_slider.html#a2721215d3d25187e2c1bf521eec308f3":[12,0,54,23,5],
+"classvst3_1_1_v_s_t_graphics_slider.html#a2fe9f8798906e2b3dcba6b112804068e":[12,0,54,23,8],
 "classvst3_1_1_v_s_t_graphics_slider.html#a3c8163ea53bb3a1bf7ca50fec2c7a96c":[12,0,54,23,4],
 "classvst3_1_1_v_s_t_graphics_slider.html#a622b9fefb026fad682e625a506d6b3a5":[12,0,54,23,0],
 "classvst3_1_1_v_s_t_graphics_slider.html#a83c5452eecbdb79f848d3cc86aeffda5":[12,0,54,23,1],
@@ -225,8 +235,8 @@ var NAVTREEINDEX48 =
 "functions_d.html":[12,3,0,3],
 "functions_e.html":[12,3,0,4],
 "functions_f.html":[12,3,0,5],
-"functions_func.html":[12,3,1],
 "functions_func.html":[12,3,1,0],
+"functions_func.html":[12,3,1],
 "functions_func_c.html":[12,3,1,1],
 "functions_func_d.html":[12,3,1,2],
 "functions_func_e.html":[12,3,1,3],
@@ -239,15 +249,5 @@ var NAVTREEINDEX48 =
 "functions_func_n.html":[12,3,1,10],
 "functions_func_o.html":[12,3,1,11],
 "functions_func_p.html":[12,3,1,12],
-"functions_func_r.html":[12,3,1,13],
-"functions_func_s.html":[12,3,1,14],
-"functions_func_t.html":[12,3,1,15],
-"functions_func_u.html":[12,3,1,16],
-"functions_func_v.html":[12,3,1,17],
-"functions_func_w.html":[12,3,1,18],
-"functions_func_~.html":[12,3,1,19],
-"functions_g.html":[12,3,0,6],
-"functions_h.html":[12,3,0,7],
-"functions_i.html":[12,3,0,8],
-"functions_l.html":[12,3,0,9]
+"functions_func_r.html":[12,3,1,13]
 };
