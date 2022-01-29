@@ -1,5 +1,7 @@
 var NAVTREEINDEX70 =
 {
+"structvst3_1_1_plugin.html#aca2b3cc2f82061b379842d87e9445d5d":[12,0,54,12,2],
+"structvst3_1_1_plugin.html#acdee8b5b460865f74580a106940a3789":[12,0,54,12,8],
 "structvst3_1_1_plugin.html#add4dbf724b439c5f420ed6e6b036d07b":[12,0,54,12,21],
 "structvst3_1_1_plugin.html#aeffdad7e7d52ca33f1a6d2b329329f18":[12,0,54,12,25],
 "structvst3_1_1_plugin.html#af848fc32b259c8a8ecac391f5cb36dbf":[12,0,54,12,7],

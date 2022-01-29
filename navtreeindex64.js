@@ -1,5 +1,7 @@
 var NAVTREEINDEX64 =
 {
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_path_3_01_t_01_4_01_4.html":[12,0,461],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_q_color_01_4.html":[12,0,462],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_q_list_3_01_args_8_8_8_01_4_01_4.html":[12,0,463],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_q_point_01_4.html":[12,0,464],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_q_point_f_01_4.html":[12,0,465],
@@ -247,7 +249,5 @@ var NAVTREEINDEX64 =
 "structaudio__channels__attr.html#a3ab256c1b414e037a4b9f0981cf588dc":[12,0,67,0],
 "structaudio__kind__attr.html":[12,0,68],
 "structaudio__kind__attr.html#aee5a5247969c6d4b2bd4d3631cce57d0":[12,0,68,0],
-"structaudio__mapping__attr.html":[12,0,69],
-"structaudio__mapping__attr.html#a3d421057f96c240c9e01b363280cbc24":[12,0,69,0],
-"structbase__kind.html":[12,0,72]
+"structaudio__mapping__attr.html":[12,0,69]
 };
