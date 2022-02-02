@@ -1,5 +1,6 @@
 var NAVTREEINDEX51 =
 {
+"struct_control_1_1_enum.html#a5c96568b56c5194ca89b0a176ee3f48c":[12,0,4,8,6],
 "struct_control_1_1_enum.html#a7d3cb0f499c9f6821499fb31c6c330df":[12,0,4,8,3],
 "struct_control_1_1_enum.html#abd99de8a096df55036957c4030117f0d":[12,0,4,8,1],
 "struct_control_1_1_enum_base.html":[12,0,4,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX51 =
 "struct_control_surface_1_1_presenter_1_1_port.html#af14a789fbec3649a922b50149185c9e8":[12,0,5,6,0,2],
 "struct_control_surface_1_1con__unvalidated.html":[12,0,5,2],
 "struct_control_surface_1_1con__unvalidated.html#a0a1754b2f891fef83475006614619bcc":[12,0,5,2,3],
-"struct_control_surface_1_1con__unvalidated.html#a0ea977105fbc44896c84986013127509":[12,0,5,2,0],
-"struct_control_surface_1_1con__unvalidated.html#a39a26e59f471ae406875aa3fed356477":[12,0,5,2,1]
+"struct_control_surface_1_1con__unvalidated.html#a0ea977105fbc44896c84986013127509":[12,0,5,2,0]
 };

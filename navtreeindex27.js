@@ -1,5 +1,6 @@
 var NAVTREEINDEX27 =
 {
+"class_remote_control_1_1_default_process_component.html":[12,0,41,2],
 "class_remote_control_1_1_default_process_component.html#ab06a1039dcf2c36bcecbdf96dbfc7aef":[12,0,41,2,1],
 "class_remote_control_1_1_default_process_component.html#ae5cfa228e298c4c31e32f60b85323501":[12,0,41,2,0],
 "class_remote_control_1_1_document_plugin.html":[12,0,41,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX27 =
 "class_scenario_1_1_command_1_1_base_scenario_trigger_command_factory.html#a05b678063524687e88019c5a462ae01d":[12,0,43,0,13,2],
 "class_scenario_1_1_command_1_1_base_scenario_trigger_command_factory.html#a6f76d5709bfcfd8c5bb6b8b9e60aac85":[12,0,43,0,13,1],
 "class_scenario_1_1_command_1_1_base_scenario_trigger_command_factory.html#a99434bc067d803c418677009245665e1":[12,0,43,0,13,0],
-"class_scenario_1_1_command_1_1_change_element_color.html":[12,0,43,0,14],
-"class_scenario_1_1_command_1_1_change_element_color.html#a0091764c1422a4f6048e9eeedd5894f7":[12,0,43,0,14,2]
+"class_scenario_1_1_command_1_1_change_element_color.html":[12,0,43,0,14]
 };

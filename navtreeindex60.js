@@ -1,5 +1,11 @@
 var NAVTREEINDEX60 =
 {
+"struct_q_meta_type_id_3_01_curve_1_1_settings_1_1_mode_01_4.html#a57507e90133133ce75d06aa0f6709221a334329f07d49b150d07f106adabfacd1":[12,0,215,0],
+"struct_q_meta_type_id_3_01_curve_1_1_tool_01_4.html":[12,0,216],
+"struct_q_meta_type_id_3_01_curve_1_1_tool_01_4.html#acfa8181c357a551a67e366962cbee248a2d1f094ef9f925fcbb941c779cbedb16":[12,0,216,0],
+"struct_q_meta_type_id_3_01_data_stream_reader_01_5_01_4.html":[12,0,217],
+"struct_q_meta_type_id_3_01_data_stream_reader_01_5_01_4.html#aa489b659ac00418327dfb0fceeb9f4d0aa98ede8726a1165f1d2bdfed0b6da256":[12,0,217,0],
+"struct_q_meta_type_id_3_01_data_stream_writer_01_5_01_4.html":[12,0,218],
 "struct_q_meta_type_id_3_01_data_stream_writer_01_5_01_4.html#a3089c34349591c359d41ed4b1961c720a4416ccb2172621afe016c9b1fbeca2c5":[12,0,218,0],
 "struct_q_meta_type_id_3_01_device_1_1_device_settings_01_4.html":[12,0,219],
 "struct_q_meta_type_id_3_01_device_1_1_device_settings_01_4.html#a0b6e456eb904275be6d9e2f166f32a19adc154c18f9ba20f72b75f2342114437b":[12,0,219,0],
@@ -59,8 +65,8 @@ var NAVTREEINDEX60 =
 "struct_q_meta_type_id_3_01_media_1_1_sound_1_1_waveform_request_01_4.html#a41b1fba8d75e7fc8292c0eca4505e101a3ec114666a50c0c4dfdd0a419d79debc":[12,0,247,0],
 "struct_q_meta_type_id_3_01_media_1_1audio__handle_01_4.html":[12,0,245],
 "struct_q_meta_type_id_3_01_media_1_1audio__handle_01_4.html#a52c95362a83411f6cb13a67835186970a6b6cd181a966bc3a72df393602367d7e":[12,0,245,0],
-"struct_q_meta_type_id_3_01_p_m_1_1_remote_package_01_4.html":[12,0,254],
-"struct_q_meta_type_id_3_01_p_m_1_1_remote_package_01_4.html#aa21f71d7480e0d5a6229b92eaa655814a73ba84649588f5248de85ac3aeed2c6d":[12,0,254,0],
+"struct_q_meta_type_id_3_01_p_m_1_1_package_01_4.html":[12,0,254],
+"struct_q_meta_type_id_3_01_p_m_1_1_package_01_4.html#a84cc2f98ae04af5611ac695bf98cc796a7e06ae9d2dac28d83f863ea0bbbe13c9":[12,0,254,0],
 "struct_q_meta_type_id_3_01_path_3_01_scenario_1_1_interval_model_01_4_01_4.html":[12,0,253],
 "struct_q_meta_type_id_3_01_path_3_01_scenario_1_1_interval_model_01_4_01_4.html#af87383114f95b6ec0a5df3a30de19eeba82222c8a2683552cea92e7cc0201315d":[12,0,253,0],
 "struct_q_meta_type_id_3_01_process_1_1_process_model_01_5_01_4.html":[12,0,256],
@@ -243,11 +249,5 @@ var NAVTREEINDEX60 =
 "struct_recording_1_1_record_automation_subsequent_callback_visitor.html#abfd704c4a2a9be48170ae37aedf05434":[12,0,39,9,1],
 "struct_recording_1_1_record_automation_subsequent_callback_visitor.html#ad07d71c39b8aeaf2f668ce8028eb66ce":[12,0,39,9,2],
 "struct_recording_1_1_record_automation_subsequent_callback_visitor.html#adb013a29c90cd04db1b6bb10247fc24b":[12,0,39,9,11],
-"struct_recording_1_1_record_automation_subsequent_callback_visitor.html#afc3c1ab32f9b17a5bf9b5e8374512e26":[12,0,39,9,0],
-"struct_recording_1_1_record_context.html":[12,0,39,10],
-"struct_recording_1_1_record_context.html#a1c1a5107642e9e82f97597cdc8071d95":[12,0,39,10,0],
-"struct_recording_1_1_record_context.html#a1ca64957cbe478eacec8f881645b2d58":[12,0,39,10,7],
-"struct_recording_1_1_record_context.html#a2432e34376aebd06de65d0bfbb34afd5":[12,0,39,10,12],
-"struct_recording_1_1_record_context.html#a2f5e3ece7f16a34058da9d1877c6d17b":[12,0,39,10,10],
-"struct_recording_1_1_record_context.html#a34610e6493dc6638c480147e2f95cba1":[12,0,39,10,5]
+"struct_recording_1_1_record_automation_subsequent_callback_visitor.html#afc3c1ab32f9b17a5bf9b5e8374512e26":[12,0,39,9,0]
 };

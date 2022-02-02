@@ -653,11 +653,12 @@ var annotated_dup =
       [ "UiWrapper", "struct_pd_1_1_ui_wrapper.html", "struct_pd_1_1_ui_wrapper" ]
     ] ],
     [ "PM", null, [
-      [ "LocalPackagesModel", "class_p_m_1_1_local_packages_model.html", "class_p_m_1_1_local_packages_model" ],
+      [ "LocalPackagesModel", "struct_p_m_1_1_local_packages_model.html", "struct_p_m_1_1_local_packages_model" ],
+      [ "Package", "struct_p_m_1_1_package.html", "struct_p_m_1_1_package" ],
+      [ "PackagesModel", "class_p_m_1_1_packages_model.html", "class_p_m_1_1_packages_model" ],
       [ "PluginSettingsModel", "class_p_m_1_1_plugin_settings_model.html", "class_p_m_1_1_plugin_settings_model" ],
       [ "PluginSettingsPresenter", "class_p_m_1_1_plugin_settings_presenter.html", "class_p_m_1_1_plugin_settings_presenter" ],
       [ "PluginSettingsView", "class_p_m_1_1_plugin_settings_view.html", "class_p_m_1_1_plugin_settings_view" ],
-      [ "RemotePackage", "struct_p_m_1_1_remote_package.html", "struct_p_m_1_1_remote_package" ],
       [ "RemotePackagesModel", "class_p_m_1_1_remote_packages_model.html", "class_p_m_1_1_remote_packages_model" ]
     ] ],
     [ "Process", "namespace_process.html", "namespace_process" ],
@@ -1168,7 +1169,7 @@ var annotated_dup =
     [ "QMetaTypeId< ossia::net::tags >", "struct_q_meta_type_id_3_01ossia_1_1net_1_1tags_01_4.html", "struct_q_meta_type_id_3_01ossia_1_1net_1_1tags_01_4" ],
     [ "QMetaTypeId< ossia::time_event::status >", "struct_q_meta_type_id_3_01ossia_1_1time__event_1_1status_01_4.html", "struct_q_meta_type_id_3_01ossia_1_1time__event_1_1status_01_4" ],
     [ "QMetaTypeId< Path< Scenario::IntervalModel > >", "struct_q_meta_type_id_3_01_path_3_01_scenario_1_1_interval_model_01_4_01_4.html", "struct_q_meta_type_id_3_01_path_3_01_scenario_1_1_interval_model_01_4_01_4" ],
-    [ "QMetaTypeId< PM::RemotePackage >", "struct_q_meta_type_id_3_01_p_m_1_1_remote_package_01_4.html", "struct_q_meta_type_id_3_01_p_m_1_1_remote_package_01_4" ],
+    [ "QMetaTypeId< PM::Package >", "struct_q_meta_type_id_3_01_p_m_1_1_package_01_4.html", "struct_q_meta_type_id_3_01_p_m_1_1_package_01_4" ],
     [ "QMetaTypeId< Process::pan_weight >", "struct_q_meta_type_id_3_01_process_1_1pan__weight_01_4.html", "struct_q_meta_type_id_3_01_process_1_1pan__weight_01_4" ],
     [ "QMetaTypeId< Process::ProcessModel * >", "struct_q_meta_type_id_3_01_process_1_1_process_model_01_5_01_4.html", "struct_q_meta_type_id_3_01_process_1_1_process_model_01_5_01_4" ],
     [ "QMetaTypeId< Protocols::ArtnetSpecificSettings >", "struct_q_meta_type_id_3_01_protocols_1_1_artnet_specific_settings_01_4.html", "struct_q_meta_type_id_3_01_protocols_1_1_artnet_specific_settings_01_4" ],

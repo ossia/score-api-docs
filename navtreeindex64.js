@@ -1,5 +1,11 @@
 var NAVTREEINDEX64 =
 {
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_id_3_01_t_01_4_01_4.html":[12,0,447],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_id_3_01_t_01_4_01_4.html#a46e65e694ab43e40c6c72ed2ba262901":[12,0,447,0],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_id_container_3_01_t_00_01_u_00_01_v_01_4_01_4.html":[12,0,448],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_identified_object_3_01_t_01_4_01_4.html":[12,0,449],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_model_3_01_info_00_01_control_1_1is__control_01_4_01_4.html":[12,0,450],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_model_3_01_info_00_01_control_1_1is__control_01_4_01_4.html#ab991fdc5e4c3259c48446220f7f0c535":[12,0,450,0],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_path_3_01_t_01_4_01_4.html":[12,0,461],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_q_color_01_4.html":[12,0,462],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_q_list_3_01_args_8_8_8_01_4_01_4.html":[12,0,463],
@@ -243,11 +249,5 @@ var NAVTREEINDEX64 =
 "struct_widget_factory_1_1_x_y_slider.html":[12,0,55,18],
 "struct_widget_factory_1_1_x_y_z_slider.html":[12,0,55,19],
 "struct_word_list.html":[12,0,518],
-"struct_word_list.html#a2ca0188e8ea194f6d84afdd943f14823":[12,0,518,0],
-"struct_y_s_f_x_1_1_language_spec.html":[12,0,57,3],
-"structaudio__channels__attr.html":[12,0,67],
-"structaudio__channels__attr.html#a3ab256c1b414e037a4b9f0981cf588dc":[12,0,67,0],
-"structaudio__kind__attr.html":[12,0,68],
-"structaudio__kind__attr.html#aee5a5247969c6d4b2bd4d3631cce57d0":[12,0,68,0],
-"structaudio__mapping__attr.html":[12,0,69]
+"struct_word_list.html#a2ca0188e8ea194f6d84afdd943f14823":[12,0,518,0]
 };

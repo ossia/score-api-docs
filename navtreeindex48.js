@@ -1,5 +1,6 @@
 var NAVTREEINDEX48 =
 {
+"classvst3_1_1_v_s_t_control_port_factory.html#a4918760df1340b9bd90ea06d5f4b09a3":[12,0,54,19,3],
 "classvst3_1_1_v_s_t_control_port_factory.html#a5af98724fcb4fe384821baec49a8e13d":[12,0,54,19,4],
 "classvst3_1_1_v_s_t_control_port_factory.html#a7b2edef54746849a2372e50b5fa9be7a":[12,0,54,19,2],
 "classvst3_1_1_v_s_t_control_port_factory.html#aa9efe1274249b8e951eca203dcb70256":[12,0,54,19,5],
@@ -228,15 +229,15 @@ var NAVTREEINDEX48 =
 "data_structures_8hpp_source.html":[13,0,271],
 "element_finding_helper_8hpp_source.html":[13,0,366],
 "files.html":[13,0],
-"functions.html":[12,3,0,0],
 "functions.html":[12,3,0],
+"functions.html":[12,3,0,0],
 "functions_b.html":[12,3,0,1],
 "functions_c.html":[12,3,0,2],
 "functions_d.html":[12,3,0,3],
 "functions_e.html":[12,3,0,4],
 "functions_f.html":[12,3,0,5],
-"functions_func.html":[12,3,1,0],
 "functions_func.html":[12,3,1],
+"functions_func.html":[12,3,1,0],
 "functions_func_c.html":[12,3,1,1],
 "functions_func_d.html":[12,3,1,2],
 "functions_func_e.html":[12,3,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX48 =
 "functions_func_m.html":[12,3,1,9],
 "functions_func_n.html":[12,3,1,10],
 "functions_func_o.html":[12,3,1,11],
-"functions_func_p.html":[12,3,1,12],
-"functions_func_r.html":[12,3,1,13]
+"functions_func_p.html":[12,3,1,12]
 };
