@@ -1,5 +1,7 @@
 var NAVTREEINDEX54 =
 {
+"struct_gfx_1_1_settings_1_1_graphics_apis.html#a8406c9f323bb052091fb7dfbd413ca65":[12,0,16,2,0,3],
+"struct_gfx_1_1_shader_source.html":[12,0,16,42],
 "struct_gfx_1_1_shader_source.html#a07923f9dd253d54b4a222e8fef078c89":[12,0,16,42,12],
 "struct_gfx_1_1_shader_source.html#a0ff7b020926bd5c57ec80fce82104f6c":[12,0,16,42,5],
 "struct_gfx_1_1_shader_source.html#a24d69597743b70d3a2398ad7f818400a":[12,0,16,42,9],
@@ -247,7 +249,5 @@ var NAVTREEINDEX54 =
 "struct_jit_1_1_driver.html#afbe703bee64d9459e94c9f8277ec4245":[12,0,22,7,1],
 "struct_jit_1_1_exception.html":[12,0,22,10],
 "struct_jit_1_1_exception.html#a5a9cc74682f828f79b078b152303b23e":[12,0,22,10,0],
-"struct_jit_1_1_exception.html#ae2da1d781e821c11c4ba876236acb2d6":[12,0,22,10,1],
-"struct_jit_1_1_global_at_exit.html":[12,0,22,11],
-"struct_jit_1_1_global_at_exit.html#a9ba923665d834093bbc9a615dec288dd":[12,0,22,11,2]
+"struct_jit_1_1_exception.html#ae2da1d781e821c11c4ba876236acb2d6":[12,0,22,10,1]
 };

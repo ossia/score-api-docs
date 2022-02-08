@@ -1,5 +1,7 @@
 var NAVTREEINDEX51 =
 {
+"struct_control_1_1_enum.html#a2fbce06399ee6fd4c2c3325a6ed563f5":[12,0,4,8,4],
+"struct_control_1_1_enum.html#a54d79bbd830dc11c4246d263994c15b5":[12,0,4,8,5],
 "struct_control_1_1_enum.html#a5c96568b56c5194ca89b0a176ee3f48c":[12,0,4,8,6],
 "struct_control_1_1_enum.html#a7d3cb0f499c9f6821499fb31c6c330df":[12,0,4,8,3],
 "struct_control_1_1_enum.html#abd99de8a096df55036957c4030117f0d":[12,0,4,8,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX51 =
 "struct_control_surface_1_1_presenter_1_1_port.html#a9e3c0cf7401c35c93ec33a6d82f87163":[12,0,5,6,0,0],
 "struct_control_surface_1_1_presenter_1_1_port.html#ab05f9598fe024ce7e8d83d3de5a10306":[12,0,5,6,0,1],
 "struct_control_surface_1_1_presenter_1_1_port.html#af14a789fbec3649a922b50149185c9e8":[12,0,5,6,0,2],
-"struct_control_surface_1_1con__unvalidated.html":[12,0,5,2],
-"struct_control_surface_1_1con__unvalidated.html#a0a1754b2f891fef83475006614619bcc":[12,0,5,2,3],
-"struct_control_surface_1_1con__unvalidated.html#a0ea977105fbc44896c84986013127509":[12,0,5,2,0]
+"struct_control_surface_1_1con__unvalidated.html":[12,0,5,2]
 };

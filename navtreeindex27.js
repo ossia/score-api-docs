@@ -1,5 +1,7 @@
 var NAVTREEINDEX27 =
 {
+"class_remote_control_1_1_application_plugin.html#a8dfe399fd80103abd9aa82dc1988b2e3":[12,0,41,1,0],
+"class_remote_control_1_1_application_plugin.html#ac099c0849d21a61f9166c76cfb908695":[12,0,41,1,1],
 "class_remote_control_1_1_default_process_component.html":[12,0,41,2],
 "class_remote_control_1_1_default_process_component.html#ab06a1039dcf2c36bcecbdf96dbfc7aef":[12,0,41,2,1],
 "class_remote_control_1_1_default_process_component.html#ae5cfa228e298c4c31e32f60b85323501":[12,0,41,2,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX27 =
 "class_scenario_1_1_command_1_1_add_trigger.html#af4d540eb9e71162dde82eb3ab5447c45":[12,0,43,0,12,4],
 "class_scenario_1_1_command_1_1_base_scenario_trigger_command_factory.html":[12,0,43,0,13],
 "class_scenario_1_1_command_1_1_base_scenario_trigger_command_factory.html#a05b678063524687e88019c5a462ae01d":[12,0,43,0,13,2],
-"class_scenario_1_1_command_1_1_base_scenario_trigger_command_factory.html#a6f76d5709bfcfd8c5bb6b8b9e60aac85":[12,0,43,0,13,1],
-"class_scenario_1_1_command_1_1_base_scenario_trigger_command_factory.html#a99434bc067d803c418677009245665e1":[12,0,43,0,13,0],
-"class_scenario_1_1_command_1_1_change_element_color.html":[12,0,43,0,14]
+"class_scenario_1_1_command_1_1_base_scenario_trigger_command_factory.html#a6f76d5709bfcfd8c5bb6b8b9e60aac85":[12,0,43,0,13,1]
 };

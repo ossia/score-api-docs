@@ -1,5 +1,7 @@
 var NAVTREEINDEX59 =
 {
+"struct_process_1_1_pixmaps.html#aac83ff4ce5016f31629b203d3f2f28df":[12,0,37,59,5],
+"struct_process_1_1_pixmaps.html#ab8de745c2973cbf08c9ec13f2288811d":[12,0,37,59,23],
 "struct_process_1_1_pixmaps.html#ac6e126103c6ea5a8c4148c2d3037f1ad":[12,0,37,59,6],
 "struct_process_1_1_pixmaps.html#ac85aa7409bcb0da28d068124db441c2a":[12,0,37,59,14],
 "struct_process_1_1_pixmaps.html#acafefb0ce32383be9fda8de20fa34637":[12,0,37,59,21],
@@ -247,7 +249,5 @@ var NAVTREEINDEX59 =
 "struct_q_meta_type_id_3_01_audio_1_1_settings_1_1_external_transport_01_4.html#a9fb0eb1836e5718c8b9c62daf0836158a0695457de9a6e17ec9b6ec05f15dd4db":[12,0,207,0],
 "struct_q_meta_type_id_3_01_curve_1_1_power_segment_data_01_4.html":[12,0,213],
 "struct_q_meta_type_id_3_01_curve_1_1_power_segment_data_01_4.html#a00f8986c49ce3d24fc8f202dc58635e1abb072179b4230610ae951cd100c9ac09":[12,0,213,0],
-"struct_q_meta_type_id_3_01_curve_1_1_segment_data_01_4.html":[12,0,214],
-"struct_q_meta_type_id_3_01_curve_1_1_segment_data_01_4.html#a483b8b54a50099ea64c220ef4db998f4a8b9d3504567a1dc15da2168f9cced21c":[12,0,214,0],
-"struct_q_meta_type_id_3_01_curve_1_1_settings_1_1_mode_01_4.html":[12,0,215]
+"struct_q_meta_type_id_3_01_curve_1_1_segment_data_01_4.html":[12,0,214]
 };

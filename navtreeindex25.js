@@ -1,5 +1,7 @@
 var NAVTREEINDEX25 =
 {
+"class_process_1_1_process_factory_list.html#a30f7a1d81a5bdb54c15c3436969f7118":[12,0,37,72,1],
+"class_process_1_1_process_factory_list.html#a9b55aee9cf7c3afeca395d96d92da19d":[12,0,37,72,0],
 "class_process_1_1_process_factory_list.html#ab6662d504907d12836d2d0201450f442":[12,0,37,72,2],
 "class_process_1_1_process_focus_manager.html":[12,0,37,73],
 "class_process_1_1_process_focus_manager.html#a0e5035e72a61e333bf9ca75c0a1dd7fb":[12,0,37,73,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX25 =
 "class_protocols_1_1_libmapper_client_enumerator.html#a2b151e676127b6b18e0478068dcc4360":[12,0,38,26,2],
 "class_protocols_1_1_libmapper_client_enumerator.html#a57aec86e2acddf9abf2474fdc93ee828":[12,0,38,26,4],
 "class_protocols_1_1_libmapper_client_enumerator.html#a5d78c9f49062d8217921bae0fa35e662":[12,0,38,26,3],
-"class_protocols_1_1_libmapper_client_enumerator.html#a724d2c69314c4562774c0938c21b2393":[12,0,38,26,1],
-"class_protocols_1_1_libmapper_client_enumerator.html#a8215838b069dc5901317d8cd6625f687":[12,0,38,26,5],
-"class_protocols_1_1_libmapper_client_enumerator.html#aaebf0f57ed5b92dc790bb621292f1606":[12,0,38,26,0]
+"class_protocols_1_1_libmapper_client_enumerator.html#a724d2c69314c4562774c0938c21b2393":[12,0,38,26,1]
 };

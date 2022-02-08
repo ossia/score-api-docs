@@ -1,5 +1,6 @@
 var NAVTREEINDEX22 =
 {
+"class_opaque_string.html#a1754956baf067934b4ae5dc45147e540":[12,0,194,8],
 "class_opaque_string.html#a18ac98f7c6364576dc01b65659a7719f":[12,0,194,4],
 "class_opaque_string.html#a3f10db7efa332fa587349f7ffc411321":[12,0,194,7],
 "class_opaque_string.html#a414c6bbeaeaa47a5e76dc53ee04e3b56":[12,0,194,1],
@@ -205,7 +206,8 @@ var NAVTREEINDEX22 =
 "class_pretty_name__k.html":[12,0,199],
 "class_process_1_1_application_plugin.html":[12,0,37,0],
 "class_process_1_1_application_plugin.html#a13b59213b336824cd254bc609d026685":[12,0,37,0,1],
-"class_process_1_1_application_plugin.html#a314056d8c79ed7c43f743f7f311bdfdd":[12,0,37,0,3],
+"class_process_1_1_application_plugin.html#a17b0d1461259d2ff8dbff19a3bb00dc3":[12,0,37,0,3],
+"class_process_1_1_application_plugin.html#a314056d8c79ed7c43f743f7f311bdfdd":[12,0,37,0,4],
 "class_process_1_1_application_plugin.html#a83a6991afe3e275edb13c5b1478831a2":[12,0,37,0,0],
 "class_process_1_1_application_plugin.html#aff62c9731aaa711c1a2e0b3de8cd6b5e":[12,0,37,0,2],
 "class_process_1_1_audio_inlet.html":[12,0,37,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX22 =
 "class_process_1_1_audio_port_combo_box.html#a2042f0c72c10a0dee386b91ea12e3e9a":[12,0,37,3,1],
 "class_process_1_1_audio_port_combo_box.html#a82f2a7880c41d44f30ba3e27a49d9a9a":[12,0,37,3,2],
 "class_process_1_1_audio_port_combo_box.html#a8d7f0abfbceb06589456b2197c5fa1d1":[12,0,37,3,3],
-"class_process_1_1_audio_port_combo_box.html#aefb3132f5cb7bb541c909b6c343e604a":[12,0,37,3,0],
-"class_process_1_1_automatable_factory.html":[12,0,37,4],
-"class_process_1_1_automatable_factory.html#a322b9704a70a4e4410824b1551457773":[12,0,37,4,1]
+"class_process_1_1_audio_port_combo_box.html#aefb3132f5cb7bb541c909b6c343e604a":[12,0,37,3,0]
 };

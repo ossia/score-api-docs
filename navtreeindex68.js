@@ -1,5 +1,7 @@
 var NAVTREEINDEX68 =
 {
+"structscore_1_1gfx_1_1_audio_texture_upload.html#aa084db6dff3ba2d2c9724b92028a6e4b":[12,0,44,2,1,3],
+"structscore_1_1gfx_1_1_audio_texture_upload.html#adafa4daafa85c0005414ffba92967643":[12,0,44,2,1,0],
 "structscore_1_1gfx_1_1_default_shader_material.html":[12,0,44,2,3],
 "structscore_1_1gfx_1_1_default_shader_material.html#a3765edc802e3a69e0dbe9990740e09da":[12,0,44,2,3,1],
 "structscore_1_1gfx_1_1_default_shader_material.html#acc985788c23294febbc7876a63c1df5b":[12,0,44,2,3,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX68 =
 "structscore_1_1gfx_1_1_u_y_v_y422_decoder.html#a87b12eb06fdcfd7d7fec3feceed88fe8":[12,0,44,2,53,2],
 "structscore_1_1gfx_1_1_video_frame_reader.html":[12,0,44,2,54],
 "structscore_1_1gfx_1_1_video_frame_reader.html#a18871a80854a5b348c1f2d51f7d95e19":[12,0,44,2,54,0],
-"structscore_1_1gfx_1_1_video_frame_reader.html#a397ce834d39952b08371d223a65fa00e":[12,0,44,2,54,2],
-"structscore_1_1gfx_1_1_video_frame_reader.html#a55c26f51d6739bba61b8753353a413c2":[12,0,44,2,54,3],
-"structscore_1_1gfx_1_1_video_frame_reader.html#a6858671fd0b7e21b56204e65765e1270":[12,0,44,2,54,1]
+"structscore_1_1gfx_1_1_video_frame_reader.html#a397ce834d39952b08371d223a65fa00e":[12,0,44,2,54,2]
 };

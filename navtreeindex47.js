@@ -1,5 +1,7 @@
 var NAVTREEINDEX47 =
 {
+"classscore_1_1gfx_1_1_video_node_base.html#a60f87b080e28b33d2fae14154ad6ace7":[12,0,44,2,57,2],
+"classscore_1_1gfx_1_1_video_node_base.html#aa501ef1478508634a0aee20cf1abe578":[12,0,44,2,57,3],
 "classscore_1_1gfx_1_1_video_node_base.html#abf59e6a5c42ddd029d9003b898a7ab68":[12,0,44,2,57,1],
 "classscore_1_1gfx_1_1_video_node_base.html#ae2f38cebe09f0cd5bb63eb3d89088692":[12,0,44,2,57,0],
 "classscore_1_1gfx_1_1_video_node_renderer.html":[12,0,44,2,58],
@@ -247,7 +249,5 @@ var NAVTREEINDEX47 =
 "classvst3_1_1_set_control.html#a934c4bab05a4fb2bb2527160d0d378e2":[12,0,54,15,0],
 "classvst3_1_1_set_control.html#a9e0916fc447158c957e0d445a8d41d2f":[12,0,54,15,3],
 "classvst3_1_1_set_control.html#ad02262f43cf2770350554931a6dbb178":[12,0,54,15,2],
-"classvst3_1_1_set_control.html#ad6738aa102aac53de4dc8b1730670228":[12,0,54,15,5],
-"classvst3_1_1_v_s_t_control_port_factory.html":[12,0,54,19],
-"classvst3_1_1_v_s_t_control_port_factory.html#a1a8f5946f3579e95867b60db0e392de3":[12,0,54,19,0]
+"classvst3_1_1_set_control.html#ad6738aa102aac53de4dc8b1730670228":[12,0,54,15,5]
 };

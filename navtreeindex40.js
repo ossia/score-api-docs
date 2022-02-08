@@ -1,5 +1,7 @@
 var NAVTREEINDEX40 =
 {
+"class_widget_layer_1_1_presenter.html#ae50b1d8a291a616a7d211c51a0ddd240":[12,0,56,1,2],
+"class_widget_layer_1_1_presenter.html#afe0e0b3d09b388b22a208dd7cff82bef":[12,0,56,1,0],
 "class_widget_layer_1_1_view.html":[12,0,56,2],
 "class_widget_layer_1_1_view.html#a6d8f3b78c6dac53ac0b0376c3e1e3dda":[12,0,56,2,1],
 "class_widget_layer_1_1_view.html#ace7e7f70c59676da8f470dcc3c228f90":[12,0,56,2,0],
@@ -129,10 +131,10 @@ var NAVTREEINDEX40 =
 "classscore_1_1_action_manager.html":[12,0,44,12],
 "classscore_1_1_action_manager.html#a4fc6032382d50fe4217f6ad4b7503377":[12,0,44,12,15],
 "classscore_1_1_action_manager.html#a552f6e078a05b767fddf7801c3e360f9":[12,0,44,12,16],
+"classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,44,12,7],
 "classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,44,12,4],
 "classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,44,12,5],
 "classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,44,12,6],
-"classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,44,12,7],
 "classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,44,12,8],
 "classscore_1_1_action_manager.html#a61deeb8b2ebd9442678d3573e00a2bf6":[12,0,44,12,20],
 "classscore_1_1_action_manager.html#a63a3b17b4bd8968eb3bec2c6712ad90b":[12,0,44,12,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX40 =
 "classscore_1_1_command_stack.html#a195ae2f8e2575f2d00496a650b9804cb":[12,0,44,42,12],
 "classscore_1_1_command_stack.html#a1a0f5fe49597aa5ed16030991a99df40":[12,0,44,42,34],
 "classscore_1_1_command_stack.html#a1cc9909bbf0a1721a80849791638ccc8":[12,0,44,42,16],
-"classscore_1_1_command_stack.html#a2102a026e08a4e5b8712f7e3bc49c4d7":[12,0,44,42,30],
-"classscore_1_1_command_stack.html#a265d01c3caba9b294170b342245b48a9":[12,0,44,42,60],
-"classscore_1_1_command_stack.html#a2aaeadbf6957fe9ce12043f1489c1bcd":[12,0,44,42,4]
+"classscore_1_1_command_stack.html#a2102a026e08a4e5b8712f7e3bc49c4d7":[12,0,44,42,30]
 };

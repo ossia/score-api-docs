@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"class_media_1_1_merger_1_1_inspector_widget.html":[12,0,28,0,1],
 "class_media_1_1_merger_1_1_inspector_widget.html#a41b86d8c563edec70f79fb941709991f":[12,0,28,0,1,0],
 "class_media_1_1_merger_1_1_model.html":[12,0,28,0,2],
 "class_media_1_1_merger_1_1_model.html#a050aff1970771813bd70f8d40fe2fee3":[12,0,28,0,2,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "class_midi_1_1_remove_notes.html#af2a5708dea2afeea1cea56a03fd8268c":[12,0,29,16,2],
 "class_midi_1_1_replace_notes.html":[12,0,29,17],
 "class_midi_1_1_replace_notes.html#a2191e41d85004b794a873d4b1c09c74e":[12,0,29,17,0],
-"class_midi_1_1_replace_notes.html#a303baa3ab0c138ce9d210f68b975042c":[12,0,29,17,2],
-"class_midi_1_1_replace_notes.html#ad9e33e8842114ed37deb22df795752ad":[12,0,29,17,1]
+"class_midi_1_1_replace_notes.html#a303baa3ab0c138ce9d210f68b975042c":[12,0,29,17,2]
 };

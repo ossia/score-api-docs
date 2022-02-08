@@ -1,5 +1,7 @@
 var NAVTREEINDEX63 =
 {
+"struct_scenario_1_1get__start__end.html#a8f44c867f88d0fca7670faf15f08048f":[12,0,43,112,6],
+"struct_scenario_1_1get__start__end.html#aa08ae25111ce84d49be7e816ab606433":[12,0,43,112,1],
 "struct_scenario_1_1get__start__end.html#ac1f9a44dcf8aa1067f68ef0d09ed4f48":[12,0,43,112,0],
 "struct_scenario_1_1value__size.html":[12,0,43,313],
 "struct_scenario_1_1value__size.html#a14224f71dbbd24cbe4c2b6125e19cd47":[12,0,43,313,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX63 =
 "struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01_t_00_01_alloc_01_4_00_01std_1_1enabe39984c95d0489c1ceb4104524c4ac76.html":[12,0,433],
 "struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01_t_01_5_00_01_alloc_01_4_01_4.html":[12,0,432],
 "struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01bool_01_4_01_4.html":[12,0,431],
-"struct_t_serializer_3_01_data_stream_00_01tsl_1_1hopscotch__map_3_01_t_00_01_u_01_4_01_4.html":[12,0,439],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[12,0,446],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html#a7582390e1429d056f975b2261f99d1dd":[12,0,446,0]
+"struct_t_serializer_3_01_data_stream_00_01tsl_1_1hopscotch__map_3_01_t_00_01_u_01_4_01_4.html":[12,0,439]
 };

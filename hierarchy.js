@@ -2866,6 +2866,7 @@ var hierarchy =
       ] ],
       [ "Patternist::LibraryHandler", "class_patternist_1_1_library_handler.html", null ],
       [ "Pd::LibraryHandler", "class_pd_1_1_library_handler.html", null ],
+      [ "Process::ApplicationPlugin", "class_process_1_1_application_plugin.html", null ],
       [ "Process::DataflowManager", "class_process_1_1_dataflow_manager.html", null ],
       [ "Process::FooterDelegate", "class_process_1_1_footer_delegate.html", null ],
       [ "Process::HeaderDelegate", "class_process_1_1_header_delegate.html", null ],

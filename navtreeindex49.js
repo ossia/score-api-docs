@@ -1,5 +1,7 @@
 var NAVTREEINDEX49 =
 {
+"functions_func_o.html":[12,3,1,11],
+"functions_func_p.html":[12,3,1,12],
 "functions_func_r.html":[12,3,1,13],
 "functions_func_s.html":[12,3,1,14],
 "functions_func_t.html":[12,3,1,15],
@@ -44,15 +46,15 @@ var NAVTREEINDEX49 =
 "mvp_8hpp_source.html":[13,0,784],
 "namespace_automation.html":[12,0,2],
 "namespace_automation.html":[11,0,0],
-"namespace_curve.html":[11,0,1],
 "namespace_curve.html":[12,0,6],
+"namespace_curve.html":[11,0,1],
 "namespace_device.html":[11,0,2],
 "namespace_device.html":[12,0,8],
-"namespace_engine.html":[12,0,9],
 "namespace_engine.html":[11,0,3],
+"namespace_engine.html":[12,0,9],
 "namespace_engine_1_1_network.html":[11,0,3,0],
-"namespace_execution.html":[11,0,4],
 "namespace_execution.html":[12,0,10],
+"namespace_execution.html":[11,0,4],
 "namespace_gfx.html":[11,0,5],
 "namespace_gfx.html":[12,0,16],
 "namespace_inspector.html":[12,0,18],
@@ -247,7 +249,5 @@ var NAVTREEINDEX49 =
 "score-plugin-ysfx_2_y_s_f_x_2_commands_2_script_macro_8hpp_source.html":[13,0,1131],
 "score-plugin-ysfx_2_y_s_f_x_2_process_factory_8hpp_source.html":[13,0,926],
 "score-plugin-ysfx_2_y_s_f_x_2_process_metadata_8hpp_source.html":[13,0,933],
-"score2_o_s_s_i_a_8hpp_source.html":[13,0,1087],
-"score__lib__device_8hpp_source.html":[13,0,1088],
-"score__lib__inspector_8hpp_source.html":[13,0,1089]
+"score2_o_s_s_i_a_8hpp_source.html":[13,0,1087]
 };

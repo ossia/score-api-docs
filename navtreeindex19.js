@@ -16,8 +16,9 @@ var NAVTREEINDEX19 =
 "class_library_1_1_preset_filter_proxy.html":[12,0,24,7],
 "class_library_1_1_preset_filter_proxy.html#aa1210c285339ab8dc6f13fb44894614a":[12,0,24,7,0],
 "class_library_1_1_preset_item_model.html":[12,0,24,8],
-"class_library_1_1_preset_item_model.html#a0cb3d7a096929b39a4f342971fe42d34":[12,0,24,8,2],
-"class_library_1_1_preset_item_model.html#a376f42b4781e2a2bbbb0f6b7da83d6ca":[12,0,24,8,1],
+"class_library_1_1_preset_item_model.html#a0cb3d7a096929b39a4f342971fe42d34":[12,0,24,8,3],
+"class_library_1_1_preset_item_model.html#a27e4e9f31f1294078633cf8be8d1539f":[12,0,24,8,1],
+"class_library_1_1_preset_item_model.html#a376f42b4781e2a2bbbb0f6b7da83d6ca":[12,0,24,8,2],
 "class_library_1_1_preset_item_model.html#a7c95d6c7f84dbf6d30c9b4063094d359":[12,0,24,8,0],
 "class_library_1_1_preset_library_handler.html":[12,0,24,9],
 "class_library_1_1_preset_list_view.html":[12,0,24,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "class_media_1_1_load_processed_audio_file.html":[12,0,28,15],
 "class_media_1_1_load_processed_audio_file.html#a16550795d256dbfa15a9b04f19982973":[12,0,28,15,0],
 "class_media_1_1_load_processed_audio_file.html#a30288f7c53e7a2bdb876926955bb96be":[12,0,28,15,1],
-"class_media_1_1_merger_1_1_inspector_factory.html":[12,0,28,0,0],
-"class_media_1_1_merger_1_1_inspector_widget.html":[12,0,28,0,1]
+"class_media_1_1_merger_1_1_inspector_factory.html":[12,0,28,0,0]
 };
