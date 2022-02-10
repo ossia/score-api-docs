@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('_model_view_presenter.html',''); initR
 <p><a href="http://www.planetgeek.ch/2009/04/08/passive-view-command-pvc-pattern/">http://www.planetgeek.ch/2009/04/08/passive-view-command-pvc-pattern/</a></p>
 <p>We try to build score in such a way that the Model and the View of each element are both entirely unaware of any other class than themselves and the elements they respectively contain. They only send signals, and the Presenter's task is to connect the signals to relevant slots.</p>
 <p>More precisely :</p><ul>
-<li>When the user realizes a <em>semantic</em> action, like creating a new event+interval, the View sends a signal with the relevant informations (where will the new event be created).</li>
+<li>When the user realizes a <em>semantic</em> action, like creating a new event+interval, the View sends a signal with the relevant information (where will the new event be created).</li>
 <li>The element Presenter catches the signal, creates a relevant Command object and submits it.</li>
 <li>The Command object is forwarded to the network via the network plug-in.</li>
 <li>The Command object's redo() method is called. The Command <em>must</em> find the object on which it applies by itself, using ModelPath and identifiers, but not pointers (else it would not work through the network).</li>

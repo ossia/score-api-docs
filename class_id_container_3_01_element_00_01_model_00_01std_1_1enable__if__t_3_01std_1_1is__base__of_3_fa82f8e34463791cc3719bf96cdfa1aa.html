@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('class_id_container_3_01_element_00_01_
 class IdContainer&lt; Element, Model, std::enable_if_t&lt; std::is_base_of&lt; IdentifiedObject&lt; Model &gt;, Element &gt;::value &gt; &gt;</h3>
 
 <p>This map is for classes which inherit from <a class="el" href="class_identified_object.html">IdentifiedObject&lt;T&gt;</a> and don't have an id() method by themselves, e.g. all the model objects.</p>
-<p>Additionnally, items are ordered; iteration occurs on the ordered iterators.</p>
+<p>Additionally, items are ordered; iteration occurs on the ordered iterators.</p>
 <p>In the implementation :</p><ul>
 <li><code>get&lt;0&gt;()</code> gets the hashed (like std::unordered_map) iterator.</li>
 <li><code>get&lt;1&gt;()</code> gets the ordered (like std::vector) iterator. </li>

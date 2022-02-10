@@ -109,10 +109,10 @@ $(document).ready(function(){initNavTree('namespace_device.html',''); initResiza
 <a href="namespace_device.html#details">More...</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Manipulation of Devices from Qt. </p>
-<p>These functions allow to display the informations in <a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a>'s friendly in QAbstractItemModel derivatives.</p>
+<p>These functions allow to display the information in <a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a>'s friendly in QAbstractItemModel derivatives.</p>
 <p>This namespace contains tools to work with the score node tree.</p>
 <p>The problem is as follows : We want to display the nodes defined in the OSSIA API (ossia::net::node_base) in a QTreeView.</p>
-<p>QTreeView's model must inherit from QAbstractItemModel. The Qt documentation explains how to build such a model. The idea is that the model requires a data structure that it will control entirely : one cannot change the data structure from the outisde, edition has to go through the QAbstractItemModel class to notify the view of changes of the model.</p>
+<p>QTreeView's model must inherit from QAbstractItemModel. The Qt documentation explains how to build such a model. The idea is that the model requires a data structure that it will control entirely : one cannot change the data structure from the outside, edition has to go through the QAbstractItemModel class to notify the view of changes of the model.</p>
 <p>The QAbstractItemModel is implemented in <a class="el" href="class_explorer_1_1_device_explorer_model.html">Explorer::DeviceExplorerModel</a>.</p>
 <p>But since we do not control the network messages that change the OSSIA nodes automatically, we have to create another set of classes that will mirror them and be used solely for displaying and editing by the QAbstractItemModel.</p>
 <p>This is the role of the class <a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a>.</p>

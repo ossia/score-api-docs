@@ -130,16 +130,16 @@ Anatomy of a plug-in</h1>
 <p>Each interface will be registered in the relevant list of interfaces; else there is no point in using a plug-in system.</p>
 <p>For instance, let's take the UI panels, such as history, device explorer, etc.</p>
 <ul>
-<li>The application registers a list of factories: <a class="el" href="classscore_1_1_panel_delegate_factory_list.html" title="All the panels are registerd in this interface list.">score::PanelDelegateFactoryList</a>.</li>
+<li>The application registers a list of factories: <a class="el" href="classscore_1_1_panel_delegate_factory_list.html" title="All the panels are registered in this interface list.">score::PanelDelegateFactoryList</a>.</li>
 <li>For each kind of panel, a factory will be registered in this list.</li>
-<li>When creating the actual panels, <a class="el" href="classscore_1_1_panel_delegate_factory_list.html" title="All the panels are registerd in this interface list.">score::PanelDelegateFactoryList</a> is iterated:</li>
+<li>When creating the actual panels, <a class="el" href="classscore_1_1_panel_delegate_factory_list.html" title="All the panels are registered in this interface list.">score::PanelDelegateFactoryList</a> is iterated:</li>
 <li>Each factory's <a class="el" href="classscore_1_1_panel_delegate_factory.html#ac906ecd5a5ebf5d57f14893223a6198d" title="Create an instance of a PanelDelegate. Will only be called once.">score::PanelDelegateFactory::make</a> function is called and the panel is shown.</li>
 </ul>
 <p>When loading a new document, many classes will depend on plug-in interfaces for loading. For instance, when loading a <a class="el" href="class_process_1_1_process_model.html" title="The Process class.">Process::ProcessModel</a>, one has to find the right factory to use to create the correct instance of the <a class="el" href="class_process_1_1_process_model.html" title="The Process class.">Process::ProcessModel</a>.</p>
 <p>This is achieved by adding an unique identifier to each plug-in class, through the macros SCORE_INTERFACE and SCORE_CONCRETE. Such identifiers can be generated through the <code>uuidgen</code> command on Linux, macOS and Windows.</p>
 <h1><a class="anchor" id="NewClass"></a>
 Adding a new component</h1>
-<p>Adding a new class that matches an exisiting interface, for instance for providing a new settings panel, is straightforward:</p>
+<p>Adding a new class that matches an existing interface, for instance for providing a new settings panel, is straightforward:</p>
 <ul>
 <li>Inherit from the base classes required for this component. The classes to reimplement to provide a custom settings panel are <a class="el" href="classscore_1_1_settings_delegate_model.html">score::SettingsDelegateModel</a>, <a class="el" href="classscore_1_1_settings_delegate_presenter.html">score::SettingsDelegatePresenter</a>, <a class="el" href="classscore_1_1_settings_delegate_view.html">score::SettingsDelegateView</a>.</li>
 <li>Inherit from the corresponding factory : in this case <a class="el" href="classscore_1_1_settings_delegate_factory.html" title="The SettingsDelegateFactory class.">score::SettingsDelegateFactory</a>. In many cases, the factories are very simple code that only does <code>new MyImplementationOfTheClass</code>. Hence, to simplify the user code and minimize the amount of code, template overloads and macros are provided. In the case of the settings, one could either :<ul>
