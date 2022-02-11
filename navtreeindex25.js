@@ -1,5 +1,12 @@
 var NAVTREEINDEX25 =
 {
+"class_process_1_1_process_factory___t.html#a27e2022fc692305c9881d6c54e319d73":[12,0,37,71,0],
+"class_process_1_1_process_factory___t.html#a8fa4ce6cfa8b4b484d7233232910d0e5":[12,0,37,71,4],
+"class_process_1_1_process_factory___t.html#aa073f5e804fcbf1b0b24ba7a3355632c":[12,0,37,71,6],
+"class_process_1_1_process_factory___t.html#ab3321d70673822668938f158fc3a427b":[12,0,37,71,2],
+"class_process_1_1_process_factory___t.html#abaed947f97fdc180ed963ee2203ccd77":[12,0,37,71,7],
+"class_process_1_1_process_factory___t.html#adcff6d4e716fb041f78266c4ec23e6b2":[12,0,37,71,3],
+"class_process_1_1_process_factory_list.html":[12,0,37,72],
 "class_process_1_1_process_factory_list.html#a30f7a1d81a5bdb54c15c3436969f7118":[12,0,37,72,1],
 "class_process_1_1_process_factory_list.html#a9b55aee9cf7c3afeca395d96d92da19d":[12,0,37,72,0],
 "class_process_1_1_process_factory_list.html#ab6662d504907d12836d2d0201450f442":[12,0,37,72,2],
@@ -242,12 +249,5 @@ var NAVTREEINDEX25 =
 "class_protocols_1_1_leapmotion_protocol_settings_widget.html#ae5fb901e4d57efde4c0853ff8616a4d7":[12,0,38,23,0],
 "class_protocols_1_1_libmapper_client_device.html":[12,0,38,25],
 "class_protocols_1_1_libmapper_client_device.html#a2b38c36a674773d87809e78e60d43979":[12,0,38,25,0],
-"class_protocols_1_1_libmapper_client_device.html#a3aff0efe21769a8e2818301a9611285a":[12,0,38,25,3],
-"class_protocols_1_1_libmapper_client_device.html#a71c356d0a608eecb4631babc28ad3a2a":[12,0,38,25,2],
-"class_protocols_1_1_libmapper_client_device.html#acebd08aa0c198225c44eef87891dfbf4":[12,0,38,25,1],
-"class_protocols_1_1_libmapper_client_enumerator.html":[12,0,38,26],
-"class_protocols_1_1_libmapper_client_enumerator.html#a2b151e676127b6b18e0478068dcc4360":[12,0,38,26,2],
-"class_protocols_1_1_libmapper_client_enumerator.html#a57aec86e2acddf9abf2474fdc93ee828":[12,0,38,26,4],
-"class_protocols_1_1_libmapper_client_enumerator.html#a5d78c9f49062d8217921bae0fa35e662":[12,0,38,26,3],
-"class_protocols_1_1_libmapper_client_enumerator.html#a724d2c69314c4562774c0938c21b2393":[12,0,38,26,1]
+"class_protocols_1_1_libmapper_client_device.html#a3aff0efe21769a8e2818301a9611285a":[12,0,38,25,3]
 };

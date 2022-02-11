@@ -38,6 +38,7 @@ var namespace_curve =
     [ "PenCommandObject", "class_curve_1_1_pen_command_object.html", "class_curve_1_1_pen_command_object" ],
     [ "point_array_executor", "struct_curve_1_1point__array__executor.html", "struct_curve_1_1point__array__executor" ],
     [ "PointId", "struct_curve_1_1_point_id.html", "struct_curve_1_1_point_id" ],
+    [ "PointInspectorWidget", "class_curve_1_1_point_inspector_widget.html", "class_curve_1_1_point_inspector_widget" ],
     [ "PointModel", "class_curve_1_1_point_model.html", "class_curve_1_1_point_model" ],
     [ "PointView", "class_curve_1_1_point_view.html", "class_curve_1_1_point_view" ],
     [ "PositionedCurveTransition", "class_curve_1_1_positioned_curve_transition.html", "class_curve_1_1_positioned_curve_transition" ],

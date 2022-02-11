@@ -1,5 +1,12 @@
 var NAVTREEINDEX26 =
 {
+"class_protocols_1_1_libmapper_client_device.html#a71c356d0a608eecb4631babc28ad3a2a":[12,0,38,25,2],
+"class_protocols_1_1_libmapper_client_device.html#acebd08aa0c198225c44eef87891dfbf4":[12,0,38,25,1],
+"class_protocols_1_1_libmapper_client_enumerator.html":[12,0,38,26],
+"class_protocols_1_1_libmapper_client_enumerator.html#a2b151e676127b6b18e0478068dcc4360":[12,0,38,26,2],
+"class_protocols_1_1_libmapper_client_enumerator.html#a57aec86e2acddf9abf2474fdc93ee828":[12,0,38,26,4],
+"class_protocols_1_1_libmapper_client_enumerator.html#a5d78c9f49062d8217921bae0fa35e662":[12,0,38,26,3],
+"class_protocols_1_1_libmapper_client_enumerator.html#a724d2c69314c4562774c0938c21b2393":[12,0,38,26,1],
 "class_protocols_1_1_libmapper_client_enumerator.html#a8215838b069dc5901317d8cd6625f687":[12,0,38,26,5],
 "class_protocols_1_1_libmapper_client_enumerator.html#aaebf0f57ed5b92dc790bb621292f1606":[12,0,38,26,0],
 "class_protocols_1_1_libmapper_client_protocol_factory.html":[12,0,38,27],
@@ -242,12 +249,5 @@ var NAVTREEINDEX26 =
 "class_recording_1_1_single_recorder.html#a512be0ae07bc0ad954d488229d217065":[12,0,39,16,2],
 "class_recording_1_1_single_recorder.html#a724e5b695990d3a4158adb228baaf2cb":[12,0,39,16,1],
 "class_recording_1_1_single_recorder.html#aa8e247ee763fa13b9bdfc09b19f394d3":[12,0,39,16,3],
-"class_remote_application.html":[12,0,314],
-"class_remote_application.html#a0bdbfa18ac37339d0d94acf7affe45e5":[12,0,314,5],
-"class_remote_application.html#a1b6376ef2facc53c693fd5cf180a687d":[12,0,314,3],
-"class_remote_application.html#a419ee5fc214b3b76940ea6808b84026d":[12,0,314,2],
-"class_remote_application.html#a951a4d02b982ee92f0788b08de6b93f4":[12,0,314,0],
-"class_remote_application.html#ae08f2a9f09c9c9bdfd6a4d865dde9038":[12,0,314,1],
-"class_remote_application.html#aeb14d1361331286a0e98e4533289a999":[12,0,314,4],
-"class_remote_control_1_1_application_plugin.html":[12,0,41,1]
+"class_remote_application.html":[12,0,314]
 };

@@ -1248,6 +1248,7 @@ var files_dup =
     [ "SystemLibraryWidget.hpp", "_system_library_widget_8hpp_source.html", null ],
     [ "Tempo.hpp", "_tempo_8hpp_source.html", null ],
     [ "TempoFactory.hpp", "_tempo_factory_8hpp_source.html", null ],
+    [ "TempoInspector.hpp", "_tempo_inspector_8hpp_source.html", null ],
     [ "TempoProcess.hpp", "_tempo_process_8hpp_source.html", null ],
     [ "TemporalIntervalHeader.hpp", "_temporal_interval_header_8hpp_source.html", null ],
     [ "TemporalIntervalPresenter.hpp", "_temporal_interval_presenter_8hpp_source.html", null ],

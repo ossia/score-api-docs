@@ -1,5 +1,12 @@
 var NAVTREEINDEX13 =
 {
+"class_explorer_1_1_address_vec_settings_widget.html#adc7af85425d004086016ea33ea6b7bdf":[12,0,11,18,8],
+"class_explorer_1_1_application_plugin.html":[12,0,11,19],
+"class_explorer_1_1_application_plugin.html#a3b275e621d9fa5f44e7d25fea00d88bf":[12,0,11,19,0],
+"class_explorer_1_1_bounding_mode_combo_box.html":[12,0,11,20],
+"class_explorer_1_1_bounding_mode_combo_box.html#a1b176441e0ce0badcd2b53a130f90138":[12,0,11,20,4],
+"class_explorer_1_1_bounding_mode_combo_box.html#a4b7b883ffacbf9e0054e3b4f782b8ff6":[12,0,11,20,3],
+"class_explorer_1_1_bounding_mode_combo_box.html#a5b9acfa92efc20b156ee78304725c054":[12,0,11,20,0],
 "class_explorer_1_1_bounding_mode_combo_box.html#aac912d0eaac4e82d7a0c571863850900":[12,0,11,20,2],
 "class_explorer_1_1_bounding_mode_combo_box.html#ae3d84cc99b2609541bd406f8ca0229ce":[12,0,11,20,1],
 "class_explorer_1_1_command_1_1_add_address.html":[12,0,11,0,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX13 =
 "class_factor_1_1_factor_oracle.html#a24738a1163741adb0a7e3e6217bd6a72":[12,0,12,0,2],
 "class_factor_1_1_factor_oracle.html#a273b75dbcb0df98ab4c0ac8afa5bb4a1":[12,0,12,0,4],
 "class_factor_1_1_factor_oracle.html#a2a930407a6f1329509500f53c2d60321":[12,0,12,0,12],
-"class_factor_1_1_factor_oracle.html#a385f3abbac1c57ae78c0374cd7c0b4dc":[12,0,12,0,15],
-"class_factor_1_1_factor_oracle.html#a583fdfd2ceec9cea70bb1fe067b1053a":[12,0,12,0,13],
-"class_factor_1_1_factor_oracle.html#a81c8070f2810479ab715dad6f483b0c6":[12,0,12,0,7],
-"class_factor_1_1_factor_oracle.html#a846c834eefa2f11c10c17533dd486dfb":[12,0,12,0,1],
-"class_factor_1_1_factor_oracle.html#a9336e7fe8af0f2a21e1b17ac1a42e0ce":[12,0,12,0,10],
-"class_factor_1_1_factor_oracle.html#a934a91f25fad3e3020041f04c94b700e":[12,0,12,0,3],
-"class_factor_1_1_factor_oracle.html#aa69f286af5c3a679aa598d81c6366138":[12,0,12,0,5],
-"class_factor_1_1_factor_oracle.html#ab1d5cdcd2aec2096bda02a7d0f915141":[12,0,12,0,9]
+"class_factor_1_1_factor_oracle.html#a385f3abbac1c57ae78c0374cd7c0b4dc":[12,0,12,0,15]
 };

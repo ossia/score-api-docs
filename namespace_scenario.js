@@ -384,6 +384,8 @@ var namespace_scenario =
     [ "StateView", "class_scenario_1_1_state_view.html", "class_scenario_1_1_state_view" ],
     [ "StrongQState", "class_scenario_1_1_strong_q_state.html", "class_scenario_1_1_strong_q_state" ],
     [ "SummaryInspectorWidget", "class_scenario_1_1_summary_inspector_widget.html", "class_scenario_1_1_summary_inspector_widget" ],
+    [ "TempoPointInspectorFactory", "class_scenario_1_1_tempo_point_inspector_factory.html", "class_scenario_1_1_tempo_point_inspector_factory" ],
+    [ "TempoPointInspectorWidget", "class_scenario_1_1_tempo_point_inspector_widget.html", "class_scenario_1_1_tempo_point_inspector_widget" ],
     [ "TempoPresenter", "class_scenario_1_1_tempo_presenter.html", "class_scenario_1_1_tempo_presenter" ],
     [ "TemporalIntervalHeader", "class_scenario_1_1_temporal_interval_header.html", "class_scenario_1_1_temporal_interval_header" ],
     [ "TemporalIntervalPresenter", "class_scenario_1_1_temporal_interval_presenter.html", "class_scenario_1_1_temporal_interval_presenter" ],

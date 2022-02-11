@@ -1,5 +1,12 @@
 var NAVTREEINDEX22 =
 {
+"class_object_path.html#ae25c22e11f9de7baca3bb5b5f3cbb1bd":[12,0,192,12],
+"class_ongoing_command_dispatcher.html":[12,0,193],
+"class_ongoing_command_dispatcher.html#a025496b513fab9cdaabbff6b75f4e74b":[12,0,193,3],
+"class_ongoing_command_dispatcher.html#a98c51c70b84cb27505120b707bbe9b5e":[12,0,193,1],
+"class_ongoing_command_dispatcher.html#ac7d20a23177cc9acf50aabbbbf44b75f":[12,0,193,2],
+"class_ongoing_command_dispatcher.html#adbede1f1f2b21ed97f57d307708d5d75":[12,0,193,0],
+"class_opaque_string.html":[12,0,194],
 "class_opaque_string.html#a1754956baf067934b4ae5dc45147e540":[12,0,194,8],
 "class_opaque_string.html#a18ac98f7c6364576dc01b65659a7719f":[12,0,194,4],
 "class_opaque_string.html#a3f10db7efa332fa587349f7ffc411321":[12,0,194,7],
@@ -242,12 +249,5 @@ var NAVTREEINDEX22 =
 "class_process_1_1_audio_outlet.html#abb6531a7a155246be037742435454d50":[12,0,37,2,15],
 "class_process_1_1_audio_outlet.html#ac2cf496d717b18d1fbee523723a01259":[12,0,37,2,2],
 "class_process_1_1_audio_outlet.html#ae0b1854a13ebde506758a5d4c834f05e":[12,0,37,2,11],
-"class_process_1_1_audio_outlet.html#af33eaf132ad4c62440957e13e4589c69":[12,0,37,2,1],
-"class_process_1_1_audio_outlet.html#af5b5f2679d83124f23a574299c75796e":[12,0,37,2,6],
-"class_process_1_1_audio_outlet.html#afcfbf9805bec255e24aa3d06a1f59de8":[12,0,37,2,13],
-"class_process_1_1_audio_port_combo_box.html":[12,0,37,3],
-"class_process_1_1_audio_port_combo_box.html#a2042f0c72c10a0dee386b91ea12e3e9a":[12,0,37,3,1],
-"class_process_1_1_audio_port_combo_box.html#a82f2a7880c41d44f30ba3e27a49d9a9a":[12,0,37,3,2],
-"class_process_1_1_audio_port_combo_box.html#a8d7f0abfbceb06589456b2197c5fa1d1":[12,0,37,3,3],
-"class_process_1_1_audio_port_combo_box.html#aefb3132f5cb7bb541c909b6c343e604a":[12,0,37,3,0]
+"class_process_1_1_audio_outlet.html#af33eaf132ad4c62440957e13e4589c69":[12,0,37,2,1]
 };
