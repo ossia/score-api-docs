@@ -1,5 +1,6 @@
 var NAVTREEINDEX63 =
 {
+"struct_scenario_1_1_vertical_extent.html#a8f2b3c8c07a1dfef90ffcea376e7eada":[12,0,43,316,4],
 "struct_scenario_1_1_vertical_extent.html#aa7090dc2bc87a1102e40a2341882af39":[12,0,43,316,8],
 "struct_scenario_1_1_vertical_extent.html#aafe527e836378e62b7fd7725ae706d3c":[12,0,43,316,5],
 "struct_scenario_1_1_vertical_extent.html#ad3ee386840b7c8b9e0d4d1b7cc08c5a1":[12,0,43,316,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX63 =
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1vector__domain_01_4.html":[12,0,414],
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1vector__domain_01_4.html#addf34a4c456b22cc4c216e3d168b2e42":[12,0,414,0],
 "struct_t_serializer_3_01_data_stream_00_01rapidjson_1_1_document_01_4.html":[12,0,417],
-"struct_t_serializer_3_01_data_stream_00_01rapidjson_1_1_value_01_4.html":[12,0,418],
-"struct_t_serializer_3_01_data_stream_00_01score_1_1_entity_3_01_t_01_4_01_4.html":[12,0,421]
+"struct_t_serializer_3_01_data_stream_00_01rapidjson_1_1_value_01_4.html":[12,0,418]
 };

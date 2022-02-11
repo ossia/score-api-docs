@@ -1,5 +1,6 @@
 var NAVTREEINDEX64 =
 {
+"struct_t_serializer_3_01_data_stream_00_01score_1_1_entity_3_01_t_01_4_01_4.html":[12,0,421],
 "struct_t_serializer_3_01_data_stream_00_01score_1_1_entity_list_3_01_t_01_4_01_4.html":[12,0,422],
 "struct_t_serializer_3_01_data_stream_00_01score_1_1_entity_map_3_01_t_01_4_01_4.html":[12,0,423],
 "struct_t_serializer_3_01_data_stream_00_01score_1_1any__map_01_4.html":[12,0,420],
@@ -248,6 +249,5 @@ var NAVTREEINDEX64 =
 "struct_widget_factory_1_1_fixed_normalizer.html#ab8b4dc54e73ae5b17ba5c5d3d6ffca7c":[12,0,55,4,2],
 "struct_widget_factory_1_1_fixed_normalizer.html#ae57ca7e8819d3d971510901319be02f2":[12,0,55,4,3],
 "struct_widget_factory_1_1_float_control.html":[12,0,55,5],
-"struct_widget_factory_1_1_h_s_v_slider.html":[12,0,55,6],
-"struct_widget_factory_1_1_impulse_button.html":[12,0,55,7]
+"struct_widget_factory_1_1_h_s_v_slider.html":[12,0,55,6]
 };
