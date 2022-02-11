@@ -1,5 +1,6 @@
 var NAVTREEINDEX61 =
 {
+"struct_recording_1_1_record_automation_first_callback_visitor.html#a1cb24be0d58160936e3c7f91b4d9ae58":[12,0,39,8,2],
 "struct_recording_1_1_record_automation_first_callback_visitor.html#a2113e09c1695a50a7f0419b097b4fdc0":[12,0,39,8,5],
 "struct_recording_1_1_record_automation_first_callback_visitor.html#a35fb166b1a363a9b2f1beb4e1a959776":[12,0,39,8,4],
 "struct_recording_1_1_record_automation_first_callback_visitor.html#a4405f7c541a3d59b83c30a4236d56348":[12,0,39,8,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX61 =
 "struct_scenario_1_1_displayed_elements_presenter_container.html":[12,0,43,51],
 "struct_scenario_1_1_displayed_elements_presenter_container.html#a03c0a790047f6fff9a323ad7cf30c4b7":[12,0,43,51,0],
 "struct_scenario_1_1_displayed_elements_presenter_container.html#a0e65213a2aff3c1cd482bb64839da497":[12,0,43,51,7],
-"struct_scenario_1_1_displayed_elements_presenter_container.html#a1e4f2105d418f8ca6f35307706380b06":[12,0,43,51,5],
-"struct_scenario_1_1_displayed_elements_presenter_container.html#a5ac115771196b00ad24750ba23fd7ec9":[12,0,43,51,1]
+"struct_scenario_1_1_displayed_elements_presenter_container.html#a1e4f2105d418f8ca6f35307706380b06":[12,0,43,51,5]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX50 =
 {
+"score-plugin-spline_2_spline_2_view_8hpp_source.html":[13,0,1349],
 "score-plugin-transport_2_transport_2_application_plugin_8hpp_source.html":[13,0,57],
 "score-plugin-vst3_2_vst3_2_application_plugin_8hpp_source.html":[13,0,59],
 "score-plugin-vst3_2_vst3_2_effect_model_8hpp_source.html":[13,0,364],
@@ -248,6 +249,5 @@ var NAVTREEINDEX50 =
 "struct_control_1_1_combo_box.html#a0b8384a89fd1a0231cc68935b302f008":[12,0,4,3,9],
 "struct_control_1_1_combo_box.html#a1e11dc79987cfab1340377cc8c663111":[12,0,4,3,1],
 "struct_control_1_1_combo_box.html#a4b9004ccfbe4482a7c3c6238fb570ac8":[12,0,4,3,2],
-"struct_control_1_1_combo_box.html#a54095cdb27223fc477df58e62adec8cc":[12,0,4,3,5],
-"struct_control_1_1_combo_box.html#a66f1b2ca09e0df45430f1428322df2fd":[12,0,4,3,0]
+"struct_control_1_1_combo_box.html#a54095cdb27223fc477df58e62adec8cc":[12,0,4,3,5]
 };
