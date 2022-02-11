@@ -1,5 +1,11 @@
 var NAVTREEINDEX65 =
 {
+"struct_widget_factory_1_1_int_slider.html":[12,0,55,8],
+"struct_widget_factory_1_1_int_spin_box.html":[12,0,55,9],
+"struct_widget_factory_1_1_line_edit.html":[12,0,55,11],
+"struct_widget_factory_1_1_line_edit_1_1_line_edit_item.html":[12,0,55,11,0],
+"struct_widget_factory_1_1_line_edit_1_1_line_edit_item.html#ae4e55808d7ffb4b40e41e8034986f889":[12,0,55,11,0,0],
+"struct_widget_factory_1_1_linear_normalizer.html":[12,0,55,10],
 "struct_widget_factory_1_1_log_normalizer.html":[12,0,55,12],
 "struct_widget_factory_1_1_multi_slider.html":[12,0,55,13],
 "struct_widget_factory_1_1_r_g_b_a_edit.html":[12,0,55,14],
@@ -13,8 +19,8 @@ var NAVTREEINDEX65 =
 "struct_widget_factory_1_1_updating_normalizer.html#afb2bfb4949dd56ef874d8dce796c767f":[12,0,55,17,0],
 "struct_widget_factory_1_1_x_y_slider.html":[12,0,55,18],
 "struct_widget_factory_1_1_x_y_z_slider.html":[12,0,55,19],
-"struct_word_list.html":[12,0,518],
-"struct_word_list.html#a2ca0188e8ea194f6d84afdd943f14823":[12,0,518,0],
+"struct_word_list.html":[12,0,520],
+"struct_word_list.html#a2ca0188e8ea194f6d84afdd943f14823":[12,0,520,0],
 "struct_y_s_f_x_1_1_language_spec.html":[12,0,57,3],
 "structaudio__channels__attr.html":[12,0,67],
 "structaudio__channels__attr.html#a3ab256c1b414e037a4b9f0981cf588dc":[12,0,67,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX65 =
 "structscore_1_1_components.html#a72edfdb32251f327e5b29f55dbb7a303":[12,0,44,48,1],
 "structscore_1_1_components.html#ae1cd1b636e454fad05e767b1c6b2c4b3":[12,0,44,48,2],
 "structscore_1_1_components.html#afa06036d45b8f914165e3769e975e79c":[12,0,44,48,3],
-"structscore_1_1_custom_action_condition.html":[12,0,44,50],
-"structscore_1_1_custom_action_condition.html#a01fccf2025d985ac562a16012825c53a":[12,0,44,50,0],
-"structscore_1_1_custom_action_condition.html#a0454efef51f22afada3e52d538ec6e5b":[12,0,44,50,2],
-"structscore_1_1_custom_action_condition.html#a34f49cef0d19a0d7df8f522e4e86b864":[12,0,44,50,1],
-"structscore_1_1_default_combo_impl.html":[12,0,44,51],
-"structscore_1_1_default_graphics_knob_impl.html":[12,0,44,53],
-"structscore_1_1_default_graphics_slider_impl.html":[12,0,44,54]
+"structscore_1_1_custom_action_condition.html":[12,0,44,50]
 };

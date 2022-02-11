@@ -1,5 +1,11 @@
 var NAVTREEINDEX52 =
 {
+"struct_control_1_1setup___impl1___out.html#a0809c266974028942d064d5d9d674279":[12,0,4,41,1],
+"struct_control_1_1setup___impl1___out.html#a28a14a9ab22232277d4858da8f094a41":[12,0,4,41,0],
+"struct_control_1_1setup___impl1___out.html#a728890d7d6591a9eded817f76e102e12":[12,0,4,41,2],
+"struct_control_surface_1_1_node_observer.html":[12,0,5,5],
+"struct_control_surface_1_1_node_observer.html#a27a37403182977d60df45928bc3dd336":[12,0,5,5,3],
+"struct_control_surface_1_1_node_observer.html#a4a1288597dc0668e2139ac0263ec98d9":[12,0,5,5,6],
 "struct_control_surface_1_1_node_observer.html#a54bf83a0f3669ff435088972596f0ebb":[12,0,5,5,5],
 "struct_control_surface_1_1_node_observer.html#a6b47b4d719bdb4e140dd6421425ce9e4":[12,0,5,5,1],
 "struct_control_surface_1_1_node_observer.html#abffc7f4eff0c24126d6f19168e838d17":[12,0,5,5,4],
@@ -243,11 +249,5 @@ var NAVTREEINDEX52 =
 "struct_e_h_exception_record.html#a5b92e07b5d6d4d5bba6b2091dc0cd67b":[12,0,101,6],
 "struct_e_h_exception_record.html#a88b520ec7b300a5468ac5c905e39a21b":[12,0,101,4],
 "struct_e_h_exception_record.html#a8f193b378bfd9557db9cf6f82197412d":[12,0,101,2],
-"struct_e_h_exception_record.html#acf3c94d6c056003c5002af6383ae058f":[12,0,101,3],
-"struct_e_h_exception_record.html#addfef9e882ed22dd7f1162abbbd4d3ee":[12,0,101,5],
-"struct_e_h_exception_record_1_1_e_h_parameters.html":[12,0,101,0],
-"struct_e_h_exception_record_1_1_e_h_parameters.html#a62879f7994971a7cfe8aedb8ce678a0e":[12,0,101,0,0],
-"struct_e_h_exception_record_1_1_e_h_parameters.html#a7603fc1d3a5587bf8f8af4be9174446b":[12,0,101,0,2],
-"struct_e_h_exception_record_1_1_e_h_parameters.html#a91a822a9ae7298e12392c0ce261c116f":[12,0,101,0,1],
-"struct_engine_1_1score__to__ossia_1_1_curve_traits.html":[12,0,9,0,0]
+"struct_e_h_exception_record.html#acf3c94d6c056003c5002af6383ae058f":[12,0,101,3]
 };

@@ -1,5 +1,11 @@
 var NAVTREEINDEX56 =
 {
+"struct_local_tree_1_1_get_property_wrapper.html#a8456ded8107d1ac3353dd32a4586ebd7":[12,0,25,7,0],
+"struct_local_tree_1_1_get_property_wrapper.html#a91d99b997323f5e995ab104bc9a88c09":[12,0,25,7,2],
+"struct_local_tree_1_1_get_property_wrapper.html#adc2de4217504a80633413394d49316c4":[12,0,25,7,4],
+"struct_local_tree_1_1_property_wrapper.html":[12,0,25,16],
+"struct_local_tree_1_1_property_wrapper.html#a0cdd9b67ed3094618f4ae078c9b9c65d":[12,0,25,16,2],
+"struct_local_tree_1_1_property_wrapper.html#a144bb06e8068f6208e8b714c7a623428":[12,0,25,16,4],
 "struct_local_tree_1_1_property_wrapper.html#a711895fa988744fce99e96b79a12f76f":[12,0,25,16,0],
 "struct_local_tree_1_1_property_wrapper.html#aca6011ee524f2c86cb96aeea32048156":[12,0,25,16,1],
 "struct_local_tree_1_1_property_wrapper.html#afbf70b86bbc09ba3459dba84f38df589":[12,0,25,16,3],
@@ -243,11 +249,5 @@ var NAVTREEINDEX56 =
 "struct_metadata_3_01_process_1_1_process_flags__k_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[12,0,168],
 "struct_metadata_3_01_tags__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html":[12,0,169],
 "struct_metadata_3_01_tags__k_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[12,0,170],
-"struct_midi_1_1_midi_style.html":[12,0,29,6],
-"struct_midi_1_1_midi_style.html#a122486ab7c8003571b8f76f1d392e96e":[12,0,29,6,0],
-"struct_midi_1_1_midi_style.html#a29d59aeac066eedd40324bed009b876c":[12,0,29,6,6],
-"struct_midi_1_1_midi_style.html#a35edc943b7bac03d4117626a2b3c7c72":[12,0,29,6,3],
-"struct_midi_1_1_midi_style.html#a3d506335822b4e143fcf3f5d4fa9109d":[12,0,29,6,5],
-"struct_midi_1_1_midi_style.html#a5a92b37e1f7d5cfc57005bbd30d383f1":[12,0,29,6,1],
-"struct_midi_1_1_midi_style.html#a7365edc1312294ec20f67fd62628a59c":[12,0,29,6,8]
+"struct_midi_1_1_midi_style.html":[12,0,29,6]
 };

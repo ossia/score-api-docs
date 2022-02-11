@@ -1,5 +1,11 @@
 var NAVTREEINDEX48 =
 {
+"classvst3_1_1_model.html#ae575404b3f0780b5cea0638a9f79bd3f":[12,0,54,9,0],
+"classvst3_1_1_model.html#aee21a74555cdd4eda94459ffba09a209":[12,0,54,9,7],
+"classvst3_1_1_model.html#afa447e4d7989990e49645f3e4bff6dce":[12,0,54,9,9],
+"classvst3_1_1_model.html#afdcf45b0259149771778ab30e950025f":[12,0,54,9,15],
+"classvst3_1_1_remove_control.html":[12,0,54,14],
+"classvst3_1_1_remove_control.html#a06d48686c07c39d6b8a944efde0ccc4f":[12,0,54,14,1],
 "classvst3_1_1_remove_control.html#a79f1655f020b9efb673e4a01d75d30b7":[12,0,54,14,0],
 "classvst3_1_1_remove_control.html#a830089f80756173aed3b7e9dbfd0e2ed":[12,0,54,14,4],
 "classvst3_1_1_remove_control.html#ab5f60fe2926b5aacccba9424dddedcfd":[12,0,54,14,5],
@@ -243,11 +249,5 @@ var NAVTREEINDEX48 =
 "d_2_spline3_d_2_generator_dialog_8hpp_source.html":[13,0,461],
 "data_structures_8hpp_source.html":[13,0,271],
 "element_finding_helper_8hpp_source.html":[13,0,366],
-"files.html":[13,0],
-"functions.html":[12,3,0],
-"functions.html":[12,3,0,0],
-"functions_b.html":[12,3,0,1],
-"functions_c.html":[12,3,0,2],
-"functions_d.html":[12,3,0,3],
-"functions_e.html":[12,3,0,4]
+"files.html":[13,0]
 };
