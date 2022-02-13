@@ -18,6 +18,7 @@ var namespace_curve =
     [ "CreateTool", "class_curve_1_1_create_tool.html", "class_curve_1_1_create_tool" ],
     [ "CurveDataHash", "class_curve_1_1_curve_data_hash.html", "class_curve_1_1_curve_data_hash" ],
     [ "CurveDomain", "struct_curve_1_1_curve_domain.html", "struct_curve_1_1_curve_domain" ],
+    [ "CurveEditor", "class_curve_1_1_curve_editor.html", null ],
     [ "CurveEvent", "struct_curve_1_1_curve_event.html", "struct_curve_1_1_curve_event" ],
     [ "CurveLayerFactory_T", "class_curve_1_1_curve_layer_factory___t.html", "class_curve_1_1_curve_layer_factory___t" ],
     [ "CurveProcessModel", "class_curve_1_1_curve_process_model.html", "class_curve_1_1_curve_process_model" ],

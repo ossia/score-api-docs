@@ -1,5 +1,7 @@
 var NAVTREEINDEX59 =
 {
+"struct_process_1_1_magnetic_info.html#a5dc297e0f55d4bbfab3c92aee7346e93":[12,0,37,48,0],
+"struct_process_1_1_magnetic_info.html#a77d6bf73b8fd25e3d44ded1c6c1cd9e6":[12,0,37,48,2],
 "struct_process_1_1_magnetic_info.html#a8150ac3d0a59d9a38182095611e8caa3":[12,0,37,48,3],
 "struct_process_1_1_magnetic_info.html#a96f31e2800f223f03e5043439aa899c4":[12,0,37,48,1],
 "struct_process_1_1_multi_script_dialog_1_1_editor_tab.html":[12,0,37,54,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX59 =
 "struct_protocols_1_1_o_s_c_query_specific_settings.html#ae363910c82c3309055357376008dd8cc":[12,0,38,55,0],
 "struct_protocols_1_1_o_s_c_specific_settings.html":[12,0,38,56],
 "struct_protocols_1_1_o_s_c_specific_settings.html#a01e5f5b65a36bb5d390be771dd74ee43":[12,0,38,56,1],
-"struct_protocols_1_1_o_s_c_specific_settings.html#a06a5e8556a4a2cb8d1b07db59a24305e":[12,0,38,56,0],
-"struct_protocols_1_1_o_s_c_specific_settings.html#aa41952fc4b9597254466ef68e8acb947":[12,0,38,56,2],
-"struct_protocols_1_1_phidget_specific_settings.html":[12,0,38,60]
+"struct_protocols_1_1_o_s_c_specific_settings.html#a06a5e8556a4a2cb8d1b07db59a24305e":[12,0,38,56,0]
 };

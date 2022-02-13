@@ -505,7 +505,7 @@ var annotated_dup =
       [ "Model", "class_nodal_1_1_model.html", "class_nodal_1_1_model" ],
       [ "NodalExecutor", "class_nodal_1_1_nodal_executor.html", "class_nodal_1_1_nodal_executor" ],
       [ "NodalExecutorBase", "class_nodal_1_1_nodal_executor_base.html", "class_nodal_1_1_nodal_executor_base" ],
-      [ "NodeRemover", "class_nodal_1_1_node_remover.html", null ],
+      [ "NodeEditor", "class_nodal_1_1_node_editor.html", null ],
       [ "Presenter", "class_nodal_1_1_presenter.html", "class_nodal_1_1_presenter" ],
       [ "RemoveNode", "class_nodal_1_1_remove_node.html", "class_nodal_1_1_remove_node" ],
       [ "ReplaceAllNodes", "class_nodal_1_1_replace_all_nodes.html", "class_nodal_1_1_replace_all_nodes" ],

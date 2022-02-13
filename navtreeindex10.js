@@ -1,5 +1,7 @@
 var NAVTREEINDEX10 =
 {
+"class_dataflow_1_1_automatable_port_factory___t.html":[12,0,7,9],
+"class_dataflow_1_1_automatable_port_factory___t.html#afd5285c9995243d0864b4c5edb64d8be":[12,0,7,9,0],
 "class_dataflow_1_1_automatable_port_item.html":[12,0,7,10],
 "class_dataflow_1_1_automatable_port_item.html#a2591d602403f7ba51e756f357e2f36ce":[12,0,7,10,1],
 "class_dataflow_1_1_automatable_port_item.html#a2cb7abbc70b3af0384a1faab879b5bc5":[12,0,7,10,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX10 =
 "class_device_1_1_protocol_factory.html#a3beacbc0a9fc610cd33a7ef77d1f645f":[12,0,8,17,1],
 "class_device_1_1_protocol_factory.html#a3beacbc0a9fc610cd33a7ef77d1f645fa0a7fd80fc7f24ae423403f1b26828415":[12,0,8,17,1,0],
 "class_device_1_1_protocol_factory.html#a412f5c064b2743919ddc3ddbec5f6afc":[12,0,8,17,3],
-"class_device_1_1_protocol_factory.html#a79dba0f28e50772c340e3395a8aba839":[12,0,8,17,13],
-"class_device_1_1_protocol_factory.html#aa51421cfa1e8424d692449a5ad59baee":[12,0,8,17,7],
-"class_device_1_1_protocol_factory.html#aaa1f7f37f2c1374858b972d191e71aea":[12,0,8,17,15]
+"class_device_1_1_protocol_factory.html#a79dba0f28e50772c340e3395a8aba839":[12,0,8,17,13]
 };

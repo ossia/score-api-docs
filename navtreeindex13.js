@@ -1,5 +1,7 @@
 var NAVTREEINDEX13 =
 {
+"class_explorer_1_1_address_vec_settings_widget.html#ac5ae103aa638bdf762db71a7431f98c3":[12,0,11,18,7],
+"class_explorer_1_1_address_vec_settings_widget.html#ad6e6f0f175c22ee64df753be245a92e7":[12,0,11,18,4],
 "class_explorer_1_1_address_vec_settings_widget.html#adc7af85425d004086016ea33ea6b7bdf":[12,0,11,18,8],
 "class_explorer_1_1_application_plugin.html":[12,0,11,19],
 "class_explorer_1_1_application_plugin.html#a3b275e621d9fa5f44e7d25fea00d88bf":[12,0,11,19,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX13 =
 "class_factor_1_1_factor_oracle.html#a0c8087389175332cb57cb425fb2aa9d0":[12,0,12,0,14],
 "class_factor_1_1_factor_oracle.html#a1e2258789171dfd9512967d53292001d":[12,0,12,0,0],
 "class_factor_1_1_factor_oracle.html#a24738a1163741adb0a7e3e6217bd6a72":[12,0,12,0,2],
-"class_factor_1_1_factor_oracle.html#a273b75dbcb0df98ab4c0ac8afa5bb4a1":[12,0,12,0,4],
-"class_factor_1_1_factor_oracle.html#a2a930407a6f1329509500f53c2d60321":[12,0,12,0,12],
-"class_factor_1_1_factor_oracle.html#a385f3abbac1c57ae78c0374cd7c0b4dc":[12,0,12,0,15]
+"class_factor_1_1_factor_oracle.html#a273b75dbcb0df98ab4c0ac8afa5bb4a1":[12,0,12,0,4]
 };

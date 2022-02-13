@@ -239,6 +239,7 @@ var files_dup =
     [ "CurveCommandObjectBase.hpp", "_curve_command_object_base_8hpp_source.html", null ],
     [ "CurveConversion.hpp", "_curve_conversion_8hpp_source.html", null ],
     [ "CurveEditionSettings.hpp", "_curve_edition_settings_8hpp_source.html", null ],
+    [ "CurveEditor.hpp", "_curve_editor_8hpp_source.html", null ],
     [ "CurveModel.hpp", "_curve_model_8hpp_source.html", null ],
     [ "CurvePalette.hpp", "_curve_palette_8hpp_source.html", null ],
     [ "CurvePaletteBaseEvents.hpp", "_curve_palette_base_events_8hpp_source.html", null ],
