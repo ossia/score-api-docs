@@ -134,46 +134,49 @@ $(document).ready(function(){initNavTree('_process_focus_manager_8hpp_source.htm
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  W_OBJECT(<a class="code" href="class_process_1_1_process_focus_manager.html">ProcessFocusManager</a>)</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="class_process_1_1_process_focus_manager.html">ProcessFocusManager</a>(<a class="code" href="structscore_1_1_focus_manager.html">score::FocusManager</a>&amp; fmgr);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  ~<a class="code" href="class_process_1_1_process_focus_manager.html">ProcessFocusManager</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="class_process_1_1_process_model.html">ProcessModel</a>* focusedModel() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="class_process_1_1_layer_presenter.html">LayerPresenter</a>* focusedPresenter() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> focus(QPointer&lt;Process::LayerPresenter&gt;);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> focus(<a class="code" href="class_scenario_1_1_scenario_document_presenter.html">Scenario::ScenarioDocumentPresenter</a>*);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> focusNothing();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">static</span> <a class="code" href="class_process_1_1_process_focus_manager.html">ProcessFocusManager</a>* get(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_process_1_1_process_focus_manager.html">ProcessFocusManager</a>(<a class="code" href="structscore_1_1_focus_manager.html">score::FocusManager</a>&amp; fmgr);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  ~<a class="code" href="class_process_1_1_process_focus_manager.html">ProcessFocusManager</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="class_process_1_1_process_model.html">ProcessModel</a>* focusedModel() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="class_process_1_1_layer_presenter.html">LayerPresenter</a>* focusedPresenter() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> focus(QPointer&lt;Process::LayerPresenter&gt;);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> focus(<a class="code" href="class_scenario_1_1_scenario_document_presenter.html">Scenario::ScenarioDocumentPresenter</a>*);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> sig_focusedPresenter(<a class="code" href="class_process_1_1_layer_presenter.html">LayerPresenter</a>* arg_1)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      W_SIGNAL(sig_focusedPresenter, arg_1);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> sig_defocusedPresenter(<a class="code" href="class_process_1_1_layer_presenter.html">LayerPresenter</a>* arg_1)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      W_SIGNAL(sig_defocusedPresenter, arg_1);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> sig_defocusedViewModel(<span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">ProcessModel</a>* arg_1)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      W_SIGNAL(sig_defocusedViewModel, arg_1);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> sig_focusedViewModel(<span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">ProcessModel</a>* arg_1)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      W_SIGNAL(sig_focusedViewModel, arg_1);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> sig_focusedRoot() W_SIGNAL(sig_focusedRoot);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> focusNothing();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> sig_focusedPresenter(<a class="code" href="class_process_1_1_layer_presenter.html">LayerPresenter</a>* arg_1)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      W_SIGNAL(sig_focusedPresenter, arg_1);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> sig_defocusedPresenter(<a class="code" href="class_process_1_1_layer_presenter.html">LayerPresenter</a>* arg_1)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      W_SIGNAL(sig_defocusedPresenter, arg_1);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> sig_defocusedViewModel(<span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">ProcessModel</a>* arg_1)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      W_SIGNAL(sig_defocusedViewModel, arg_1);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">void</span> sig_focusedViewModel(<span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">ProcessModel</a>* arg_1)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      W_SIGNAL(sig_focusedViewModel, arg_1);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> focusPresenter(<a class="code" href="class_process_1_1_layer_presenter.html">LayerPresenter</a>*);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">void</span> defocusPresenter(<a class="code" href="class_process_1_1_layer_presenter.html">LayerPresenter</a>*);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="structscore_1_1_focus_manager.html">score::FocusManager</a>&amp; m_mgr;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">void</span> sig_focusedRoot() W_SIGNAL(sig_focusedRoot);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> focusPresenter(<a class="code" href="class_process_1_1_layer_presenter.html">LayerPresenter</a>*);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> defocusPresenter(<a class="code" href="class_process_1_1_layer_presenter.html">LayerPresenter</a>*);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  QPointer&lt;ProcessModel&gt; m_currentModel{};</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  QPointer&lt;LayerPresenter&gt; m_currentPresenter{};</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  QMetaObject::Connection m_deathConnection{};</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="structscore_1_1_focus_manager.html">score::FocusManager</a>&amp; m_mgr;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  QPointer&lt;ProcessModel&gt; m_currentModel{};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  QPointer&lt;LayerPresenter&gt; m_currentPresenter{};</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  QMetaObject::Connection m_deathConnection{};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1366</div></div>
 <div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>
+<div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:15</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:146</div></div>
 <div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Process.hpp:55</div></div>
 <div class="ttc" id="aclass_process_1_1_layer_presenter_html"><div class="ttname"><a href="class_process_1_1_layer_presenter.html">Process::LayerPresenter</a></div><div class="ttdef"><b>Definition:</b> LayerPresenter.hpp:33</div></div>

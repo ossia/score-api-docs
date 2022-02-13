@@ -1,6 +1,5 @@
 var NAVTREEINDEX66 =
 {
-"structscore_1_1_components.html#afa06036d45b8f914165e3769e975e79c":[12,0,44,48,3],
 "structscore_1_1_custom_action_condition.html":[12,0,44,50],
 "structscore_1_1_custom_action_condition.html#a01fccf2025d985ac562a16012825c53a":[12,0,44,50,0],
 "structscore_1_1_custom_action_condition.html#a0454efef51f22afada3e52d538ec6e5b":[12,0,44,50,2],
@@ -160,9 +159,11 @@ var NAVTREEINDEX66 =
 "structscore_1_1_numbered_with_path___event.html#a17935f37bacab3b2e08ec61f6dd9a4f7":[12,0,44,160,1],
 "structscore_1_1_numbered_with_path___event.html#adcc131ac4f01babb3d7491c1210ef8f9":[12,0,44,160,2],
 "structscore_1_1_numbered_with_path___event.html#aec89919e43783cde3392bc2d65f79c4a":[12,0,44,160,0],
-"structscore_1_1_object_remover.html":[12,0,44,162],
-"structscore_1_1_object_remover.html#a01648904803d79c14206476b886277ce":[12,0,44,162,1],
-"structscore_1_1_object_remover.html#a4e7a1d2a9ce10218b66fcf758c29a8fa":[12,0,44,162,0],
+"structscore_1_1_object_editor.html":[12,0,44,161],
+"structscore_1_1_object_editor.html#a1f91fe429eea8e88829d10058c3652ac":[12,0,44,161,1],
+"structscore_1_1_object_editor.html#a342b1849f676df3efa22810de4a05121":[12,0,44,161,2],
+"structscore_1_1_object_editor.html#a368093a42d504cb59f15a354e872c666":[12,0,44,161,0],
+"structscore_1_1_object_editor.html#a6282c5ebb1be61f5e6b94e5353062f7d":[12,0,44,161,3],
 "structscore_1_1_open_documents_file.html":[12,0,44,164],
 "structscore_1_1_paint_visitor.html":[12,0,44,165],
 "structscore_1_1_paint_visitor.html#a0635ebf32d19d110ea8a2a9291e04b85":[12,0,44,165,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX66 =
 "structscore_1_1_settings_parameter_metadata.html#a0b8c2550d83a978ce144735167a79b12":[12,0,44,230,5],
 "structscore_1_1_settings_parameter_metadata.html#a2174d54a642f0d5cfdcfa43437a8e9d3":[12,0,44,230,1],
 "structscore_1_1_settings_parameter_metadata.html#a620afa2af232b1edf8df5c52d0f56447":[12,0,44,230,4],
-"structscore_1_1_settings_parameter_metadata.html#ac52b9edddc59ed4cc4fb94c11bb825a5":[12,0,44,230,0],
-"structscore_1_1_settings_parameter_metadata.html#ae2c05283c6ffb397c199e92ff1e47363":[12,0,44,230,3]
+"structscore_1_1_settings_parameter_metadata.html#ac52b9edddc59ed4cc4fb94c11bb825a5":[12,0,44,230,0]
 };

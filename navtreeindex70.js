@@ -1,5 +1,6 @@
 var NAVTREEINDEX70 =
 {
+"structvst3_1_1_host_app.html#a442287b0bd51ae00b8bfff5f0f882d5e":[12,0,54,7,6],
 "structvst3_1_1_host_app.html#a613aaa9853807e0131aebdc910d860cf":[12,0,54,7,2],
 "structvst3_1_1_host_app.html#a9018ce11253c32752016029ec4100eae":[12,0,54,7,0],
 "structvst3_1_1_host_app.html#aa67efe959ede78bdde2e94e5f81768e7":[12,0,54,7,5],

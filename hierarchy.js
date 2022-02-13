@@ -1365,10 +1365,10 @@ var hierarchy =
         ] ]
       ] ],
       [ "score::GenericComponentFactory< Model_T, System_T, ComponentFactory_T >", "classscore_1_1_generic_component_factory.html", null ],
-      [ "score::ObjectRemover", "structscore_1_1_object_remover.html", [
-        [ "Midi::NoteRemover", "class_midi_1_1_note_remover.html", null ],
+      [ "score::ObjectEditor", "structscore_1_1_object_editor.html", [
+        [ "Midi::NoteEditor", "class_midi_1_1_note_editor.html", null ],
         [ "Nodal::NodeRemover", "class_nodal_1_1_node_remover.html", null ],
-        [ "Scenario::ScenarioRemover", "class_scenario_1_1_scenario_remover.html", null ]
+        [ "Scenario::ScenarioEditor", "class_scenario_1_1_scenario_editor.html", null ]
       ] ],
       [ "score::PanelDelegateFactory", "classscore_1_1_panel_delegate_factory.html", [
         [ "Explorer::PanelDelegateFactory", "class_explorer_1_1_panel_delegate_factory.html", null ],
@@ -1462,8 +1462,8 @@ var hierarchy =
       [ "score::InterfaceList< MoveEventFactoryInterface >", "classscore_1_1_interface_list.html", [
         [ "Scenario::Command::MoveEventList", "class_scenario_1_1_command_1_1_move_event_list.html", null ]
       ] ],
-      [ "score::InterfaceList< ObjectRemover >", "classscore_1_1_interface_list.html", [
-        [ "score::ObjectRemoverList", "classscore_1_1_object_remover_list.html", null ]
+      [ "score::InterfaceList< ObjectEditor >", "classscore_1_1_interface_list.html", [
+        [ "score::ObjectEditorList", "classscore_1_1_object_editor_list.html", null ]
       ] ],
       [ "score::InterfaceList< PluginSettingsTab >", "classscore_1_1_interface_list.html", [
         [ "Media::Settings::PluginSettingsFactoryList", "class_media_1_1_settings_1_1_plugin_settings_factory_list.html", null ]
@@ -3837,8 +3837,8 @@ var hierarchy =
       [ "score::IndirectContainer< MoveEventFactoryInterface >", "classscore_1_1_indirect_container.html", [
         [ "score::InterfaceList< MoveEventFactoryInterface >", "classscore_1_1_interface_list.html", null ]
       ] ],
-      [ "score::IndirectContainer< ObjectRemover >", "classscore_1_1_indirect_container.html", [
-        [ "score::InterfaceList< ObjectRemover >", "classscore_1_1_interface_list.html", null ]
+      [ "score::IndirectContainer< ObjectEditor >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< ObjectEditor >", "classscore_1_1_interface_list.html", null ]
       ] ],
       [ "score::IndirectContainer< OfflineAction >", "classscore_1_1_indirect_container.html", [
         [ "Process::OfflineActionList", "class_process_1_1_offline_action_list.html", null ]

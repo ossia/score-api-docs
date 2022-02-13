@@ -1,6 +1,5 @@
 var NAVTREEINDEX52 =
 {
-"struct_control_1_1setup___impl1.html#adcdf8207a545e54d54c2503ab96fb500":[12,0,4,40,2],
 "struct_control_1_1setup___impl1___out.html":[12,0,4,41],
 "struct_control_1_1setup___impl1___out.html#a0809c266974028942d064d5d9d674279":[12,0,4,41,1],
 "struct_control_1_1setup___impl1___out.html#a28a14a9ab22232277d4858da8f094a41":[12,0,4,41,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX52 =
 "struct_e_h_exception_record.html":[12,0,101],
 "struct_e_h_exception_record.html#a2a29f5ac9e6c985abedd21342b09ae44":[12,0,101,1],
 "struct_e_h_exception_record.html#a5b92e07b5d6d4d5bba6b2091dc0cd67b":[12,0,101,6],
-"struct_e_h_exception_record.html#a88b520ec7b300a5468ac5c905e39a21b":[12,0,101,4]
+"struct_e_h_exception_record.html#a88b520ec7b300a5468ac5c905e39a21b":[12,0,101,4],
+"struct_e_h_exception_record.html#a8f193b378bfd9557db9cf6f82197412d":[12,0,101,2]
 };

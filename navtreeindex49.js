@@ -1,9 +1,8 @@
 var NAVTREEINDEX49 =
 {
-"element_finding_helper_8hpp_source.html":[13,0,366],
 "files.html":[13,0],
-"functions.html":[12,3,0],
 "functions.html":[12,3,0,0],
+"functions.html":[12,3,0],
 "functions_b.html":[12,3,0,1],
 "functions_c.html":[12,3,0,2],
 "functions_d.html":[12,3,0,3],
@@ -85,10 +84,10 @@ var NAVTREEINDEX49 =
 "namespace_plugin_loader.html":[11,0,8],
 "namespace_process.html":[11,0,9],
 "namespace_process.html":[12,0,37],
-"namespace_scenario.html":[11,0,10],
 "namespace_scenario.html":[12,0,43],
-"namespace_state.html":[12,0,48],
+"namespace_scenario.html":[11,0,10],
 "namespace_state.html":[11,0,12],
+"namespace_state.html":[12,0,48],
 "namespacemembers.html":[11,1,0],
 "namespacemembers_enum.html":[11,1,3],
 "namespacemembers_eval.html":[11,1,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX49 =
 "score-plugin-scenario_2_scenario_2_instantiations_8hpp_source.html":[13,0,535],
 "score-plugin-scenario_2_scenario_2_palette_2_tools_2_smart_tool_8hpp_source.html":[13,0,1196],
 "score-plugin-spline3d_2_spline3_d_2_model_8hpp_source.html":[13,0,756],
-"score-plugin-spline_2_spline_2_model_8hpp_source.html":[13,0,755]
+"score-plugin-spline_2_spline_2_model_8hpp_source.html":[13,0,755],
+"score-plugin-spline_2_spline_2_view_8hpp_source.html":[13,0,1349]
 };

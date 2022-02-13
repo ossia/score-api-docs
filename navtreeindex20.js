@@ -206,7 +206,7 @@ var NAVTREEINDEX20 =
 "class_midi_1_1_note.html#af76e48cf3b4687973e0d80fdbed0355c":[12,0,29,9,9],
 "class_midi_1_1_note.html#af877ab3da0625bff054066667d9978a1":[12,0,29,9,0],
 "class_midi_1_1_note.html#afbf7cb8bb1345717416645e8399a9476":[12,0,29,9,3],
-"class_midi_1_1_note_remover.html":[12,0,29,12],
+"class_midi_1_1_note_editor.html":[12,0,29,12],
 "class_midi_1_1_note_view.html":[12,0,29,13],
 "class_midi_1_1_note_view.html#a04f0ffaeb00ab7f3a4f5854c0add764c":[12,0,29,13,6],
 "class_midi_1_1_note_view.html#a0e903b987d1281bc63dfae79d48d053f":[12,0,29,13,1],

@@ -1,6 +1,5 @@
 var NAVTREEINDEX58 =
 {
-"struct_nodes_1_1_math_generator_1_1_node_1_1_state.html#a185a9632d03ebb90bb5e10bbe9d3a850":[12,0,32,17,0,1,11],
 "struct_nodes_1_1_math_generator_1_1_node_1_1_state.html#a210418314a334bc71159dfaf4d846946":[12,0,32,17,0,1,1],
 "struct_nodes_1_1_math_generator_1_1_node_1_1_state.html#a29d01c9c60fa8696198fa10e5fca695a":[12,0,32,17,0,1,7],
 "struct_nodes_1_1_math_generator_1_1_node_1_1_state.html#a6fc907995acb22514c2a7caa4883710f":[12,0,32,17,0,1,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX58 =
 "struct_process_1_1_layer_context.html#a3b4287209f68957bd8d3ce2423b12893":[12,0,37,38,0],
 "struct_process_1_1_layer_context.html#a8fc5a6bb773b67a2e114b868baa1148d":[12,0,37,38,1],
 "struct_process_1_1_magnetic_info.html":[12,0,37,48],
-"struct_process_1_1_magnetic_info.html#a5dc297e0f55d4bbfab3c92aee7346e93":[12,0,37,48,0]
+"struct_process_1_1_magnetic_info.html#a5dc297e0f55d4bbfab3c92aee7346e93":[12,0,37,48,0],
+"struct_process_1_1_magnetic_info.html#a77d6bf73b8fd25e3d44ded1c6c1cd9e6":[12,0,37,48,2]
 };

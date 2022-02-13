@@ -1,6 +1,5 @@
 var NAVTREEINDEX51 =
 {
-"struct_control_1_1_combo_box.html#a66f1b2ca09e0df45430f1428322df2fd":[12,0,4,3,0],
 "struct_control_1_1_combo_box.html#a74790fcb3ef352a892441ca040d1a6fd":[12,0,4,3,7],
 "struct_control_1_1_combo_box.html#a8ef4dae2c0931b77a25a19b9dde1de12":[12,0,4,3,6],
 "struct_control_1_1_combo_box.html#aa505ddacf7a0560e256c9faa77360644":[12,0,4,3,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX51 =
 "struct_control_1_1setup___impl0_1_1con__validated.html#adb31e1465214a4b4f70730cb074e0076":[12,0,4,39,1,0],
 "struct_control_1_1setup___impl1.html":[12,0,4,40],
 "struct_control_1_1setup___impl1.html#a2c6ed1774ecbe6f94504b5445cacc10d":[12,0,4,40,0],
-"struct_control_1_1setup___impl1.html#acd05336febec5ef7ab0e390c51529997":[12,0,4,40,1]
+"struct_control_1_1setup___impl1.html#acd05336febec5ef7ab0e390c51529997":[12,0,4,40,1],
+"struct_control_1_1setup___impl1.html#adcdf8207a545e54d54c2503ab96fb500":[12,0,4,40,2]
 };
