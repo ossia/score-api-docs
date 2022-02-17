@@ -1,5 +1,12 @@
 var NAVTREEINDEX64 =
 {
+"struct_t_serializer_3_01_data_stream_00_01ossia_1_1unit__t_01_4.html":[12,0,411],
+"struct_t_serializer_3_01_data_stream_00_01ossia_1_1value__variant__type_01_4.html":[12,0,412],
+"struct_t_serializer_3_01_data_stream_00_01ossia_1_1value__variant__type_01_4.html#a63e8cc86bbec8eca0dddaa5e89d21173":[12,0,412,0],
+"struct_t_serializer_3_01_data_stream_00_01ossia_1_1vecf__domain_3_01_n_01_4_01_4.html":[12,0,413],
+"struct_t_serializer_3_01_data_stream_00_01ossia_1_1vecf__domain_3_01_n_01_4_01_4.html#a71be25ca378c27dd925db07035d8c65e":[12,0,413,0],
+"struct_t_serializer_3_01_data_stream_00_01ossia_1_1vector__domain_01_4.html":[12,0,414],
+"struct_t_serializer_3_01_data_stream_00_01ossia_1_1vector__domain_01_4.html#addf34a4c456b22cc4c216e3d168b2e42":[12,0,414,0],
 "struct_t_serializer_3_01_data_stream_00_01rapidjson_1_1_document_01_4.html":[12,0,417],
 "struct_t_serializer_3_01_data_stream_00_01rapidjson_1_1_value_01_4.html":[12,0,418],
 "struct_t_serializer_3_01_data_stream_00_01score_1_1_entity_3_01_t_01_4_01_4.html":[12,0,421],
@@ -242,12 +249,5 @@ var NAVTREEINDEX64 =
 "struct_web_socket_handler.html#ae8e5e2da551316f9bd55a72c16f69c6e":[12,0,517,2],
 "struct_widget_factory_1_1_button.html":[12,0,55,0],
 "struct_widget_factory_1_1_chooser_toggle.html":[12,0,55,1],
-"struct_widget_factory_1_1_combo_box.html":[12,0,55,2],
-"struct_widget_factory_1_1_enum.html":[12,0,55,3],
-"struct_widget_factory_1_1_fixed_normalizer.html":[12,0,55,4],
-"struct_widget_factory_1_1_fixed_normalizer.html#a0871b4945188662de99a967ab91e6609":[12,0,55,4,1],
-"struct_widget_factory_1_1_fixed_normalizer.html#a42a7d2e9b00ab4d2aa43768cbeaa205b":[12,0,55,4,4],
-"struct_widget_factory_1_1_fixed_normalizer.html#a4648423d7be561bd4f08d26aad1f4c22":[12,0,55,4,0],
-"struct_widget_factory_1_1_fixed_normalizer.html#ab8b4dc54e73ae5b17ba5c5d3d6ffca7c":[12,0,55,4,2],
-"struct_widget_factory_1_1_fixed_normalizer.html#ae57ca7e8819d3d971510901319be02f2":[12,0,55,4,3]
+"struct_widget_factory_1_1_combo_box.html":[12,0,55,2]
 };

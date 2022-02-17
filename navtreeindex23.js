@@ -1,5 +1,7 @@
 var NAVTREEINDEX23 =
 {
+"class_process_1_1_audio_outlet.html#a8a614f35cb9275e188025acaf15fa545":[12,0,37,2,9],
+"class_process_1_1_audio_outlet.html#a8a9a0d38bcaf6ca1abd1bdfb5b83562e":[12,0,37,2,19],
 "class_process_1_1_audio_outlet.html#a9a2aeeefce193b35c1f4d368cd347d8f":[12,0,37,2,8],
 "class_process_1_1_audio_outlet.html#aa20707a95693a43a7e79be3e2fb88e3e":[12,0,37,2,4],
 "class_process_1_1_audio_outlet.html#ab3559678a81f183a36ed349157b8c651":[12,0,37,2,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX23 =
 "class_process_1_1_layer_context_menu_manager.html":[12,0,37,40],
 "class_process_1_1_layer_context_menu_manager.html#a2065c24c25bff317163a51fed5472232":[12,0,37,40,2],
 "class_process_1_1_layer_context_menu_manager.html#a33a950bdd25f6e5fffaa98562431a32f":[12,0,37,40,3],
-"class_process_1_1_layer_context_menu_manager.html#a3a65a23be1b6827a3b8ea8c966b56bd4":[12,0,37,40,4],
-"class_process_1_1_layer_context_menu_manager.html#a3f06937208fc460b7380a47a7d759619":[12,0,37,40,1],
-"class_process_1_1_layer_context_menu_manager.html#a54e9b717ae04fffcc60035ad12669d70":[12,0,37,40,0]
+"class_process_1_1_layer_context_menu_manager.html#a3a65a23be1b6827a3b8ea8c966b56bd4":[12,0,37,40,4]
 };

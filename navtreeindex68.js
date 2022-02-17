@@ -1,5 +1,12 @@
 var NAVTREEINDEX68 =
 {
+"structscore_1_1any__serializer.html#a1626a1365dedaf15b2f0721cf970b409":[12,0,44,15,3],
+"structscore_1_1any__serializer.html#a65758442e6aae24babb28564054bdfb9":[12,0,44,15,2],
+"structscore_1_1any__serializer.html#a77da8710f078fce8b7c453bc041ac58b":[12,0,44,15,5],
+"structscore_1_1any__serializer.html#aa35454c334a7b89452e73bfddf72429e":[12,0,44,15,1],
+"structscore_1_1any__serializer.html#aafafa1e6f82d5cbb96bc6886fc9181b4":[12,0,44,15,4],
+"structscore_1_1any__serializer.html#ab7e07f61483e17f6322816c899e2a92c":[12,0,44,15,0],
+"structscore_1_1any__serializer__t.html":[12,0,44,16],
 "structscore_1_1any__serializer__t.html#a95f9bde3e4ec79452c93a38590dfe692":[12,0,44,16,0],
 "structscore_1_1any__serializer__t.html#ad415efc6198b146dd42d1eefafbb6ff1":[12,0,44,16,2],
 "structscore_1_1any__serializer__t.html#afd8833734535b70bac7949be777d622b":[12,0,44,16,1],
@@ -242,12 +249,5 @@ var NAVTREEINDEX68 =
 "structscore_1_1gfx_1_1_text_node.html#ab8878c63651194158cc3c4befeb76b68":[12,0,44,2,47,5],
 "structscore_1_1gfx_1_1_text_node.html#abf9b6520789b21285045d33c11bb4d86":[12,0,44,2,47,7],
 "structscore_1_1gfx_1_1_text_node_1_1_u_b_o.html":[12,0,44,2,47,1],
-"structscore_1_1gfx_1_1_text_node_1_1_u_b_o.html#a351d15deb15acb933f8cb6767c0d4184":[12,0,44,2,47,1,0],
-"structscore_1_1gfx_1_1_text_node_1_1_u_b_o.html#aaa49ceb16eb256934e840e2c19df857e":[12,0,44,2,47,1,1],
-"structscore_1_1gfx_1_1_text_node_1_1_u_b_o.html#ac18f776c9d77eea4eab61713935d75cd":[12,0,44,2,47,1,2],
-"structscore_1_1gfx_1_1_text_node_1_1_u_b_o.html#aca3a3377dfa74bbfe6f2792d6a36bd48":[12,0,44,2,47,1,3],
-"structscore_1_1gfx_1_1_texture_normal_mesh.html":[12,0,44,2,51],
-"structscore_1_1gfx_1_1_texture_normal_mesh.html#a225567796888c0e894f73b609eaa78f9":[12,0,44,2,51,0],
-"structscore_1_1gfx_1_1_texture_normal_mesh.html#a5c71e45024d6457adc1c8f2ac1876015":[12,0,44,2,51,2],
-"structscore_1_1gfx_1_1_texture_normal_mesh.html#ac2f02c4296e1ff883ffd3253893770c4":[12,0,44,2,51,1]
+"structscore_1_1gfx_1_1_text_node_1_1_u_b_o.html#a351d15deb15acb933f8cb6767c0d4184":[12,0,44,2,47,1,0]
 };

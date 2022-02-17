@@ -1,5 +1,12 @@
 var NAVTREEINDEX61 =
 {
+"struct_recording_1_1_record_automation_creation_visitor.html#ac06186985a5d907fb90a9e2a5167a837":[12,0,39,7,9],
+"struct_recording_1_1_record_automation_creation_visitor.html#ac76b4309cca741e15ad07f9062c2a80b":[12,0,39,7,14],
+"struct_recording_1_1_record_automation_creation_visitor.html#acc874adfe419651a4c8093ebb8818058":[12,0,39,7,12],
+"struct_recording_1_1_record_automation_creation_visitor.html#ae22cdbe630f48b38e54ba7ed95fb5d11":[12,0,39,7,6],
+"struct_recording_1_1_record_automation_creation_visitor.html#afac94b9257fad22bd54631b15d3240de":[12,0,39,7,1],
+"struct_recording_1_1_record_automation_creation_visitor.html#afc135f2bad48d95fcb21f1ccffd31c7d":[12,0,39,7,8],
+"struct_recording_1_1_record_automation_first_callback_visitor.html":[12,0,39,8],
 "struct_recording_1_1_record_automation_first_callback_visitor.html#a0f49c60dae0c9915e4c185b3763c4044":[12,0,39,8,0],
 "struct_recording_1_1_record_automation_first_callback_visitor.html#a1cb24be0d58160936e3c7f91b4d9ae58":[12,0,39,8,2],
 "struct_recording_1_1_record_automation_first_callback_visitor.html#a2113e09c1695a50a7f0419b097b4fdc0":[12,0,39,8,5],
@@ -242,12 +249,5 @@ var NAVTREEINDEX61 =
 "struct_scenario_1_1_displayed_elements_container.html#a600d0fd10a5f5017ebf1512a0765b1e7":[12,0,43,48,3],
 "struct_scenario_1_1_displayed_elements_container.html#a675d30139969f9461bb91386ed0e6d1a":[12,0,43,48,2],
 "struct_scenario_1_1_displayed_elements_container.html#a7da71cbe0bdb2baceaf4d0398b69f93d":[12,0,43,48,0],
-"struct_scenario_1_1_displayed_elements_container.html#a814fbfac3e767c7f6942bafa1ca3a3ee":[12,0,43,48,8],
-"struct_scenario_1_1_displayed_elements_container.html#aade9498a54b4ae6d37bba5752911c687":[12,0,43,48,4],
-"struct_scenario_1_1_displayed_elements_container.html#ab61a8de2c40a5760ec9bf2c57c505ac6":[12,0,43,48,7],
-"struct_scenario_1_1_displayed_elements_container.html#af5f6ae0db08c581340d3cc5e9a0d1029":[12,0,43,48,5],
-"struct_scenario_1_1_displayed_elements_container.html#afd99b6c4e881fa400ea2c8f0808676f3":[12,0,43,48,1],
-"struct_scenario_1_1_displayed_elements_presenter_container.html":[12,0,43,51],
-"struct_scenario_1_1_displayed_elements_presenter_container.html#a03c0a790047f6fff9a323ad7cf30c4b7":[12,0,43,51,0],
-"struct_scenario_1_1_displayed_elements_presenter_container.html#a0e65213a2aff3c1cd482bb64839da497":[12,0,43,51,7]
+"struct_scenario_1_1_displayed_elements_container.html#a814fbfac3e767c7f6942bafa1ca3a3ee":[12,0,43,48,8]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"class_gradient_1_1_inspector_widget.html":[12,0,17,3],
 "class_gradient_1_1_inspector_widget.html#a11e540ef67ca7fc37381ae1c8ffb01b0":[12,0,17,3,0],
 "class_gradient_1_1_presenter.html":[12,0,17,4],
 "class_gradient_1_1_presenter.html#a0516e0413c7cc3245d5a809d48ea31ce":[12,0,17,4,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "class_j_s_1_1_edit_js_context.html#a19ebaa5bd1adbe5d7bd74c2aa4728252":[12,0,23,4,11],
 "class_j_s_1_1_edit_js_context.html#a1d6911e26171d0ea39743046694ffc62":[12,0,23,4,10],
 "class_j_s_1_1_edit_js_context.html#a1ecc569ef0031eb4a9cee83278e93543":[12,0,23,4,25],
-"class_j_s_1_1_edit_js_context.html#a20c246b639fbee1dc5d184691a444df1":[12,0,23,4,30],
-"class_j_s_1_1_edit_js_context.html#a234371d9374da2b0a60fda55c1d7cf64":[12,0,23,4,23]
+"class_j_s_1_1_edit_js_context.html#a20c246b639fbee1dc5d184691a444df1":[12,0,23,4,30]
 };

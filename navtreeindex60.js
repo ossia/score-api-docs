@@ -1,5 +1,12 @@
 var NAVTREEINDEX60 =
 {
+"struct_protocols_1_1_o_s_c_compatible_check.html#add0e95dc9f7c550f042c7033c7f99712":[12,0,38,46,7],
+"struct_protocols_1_1_o_s_c_query_specific_settings.html":[12,0,38,55],
+"struct_protocols_1_1_o_s_c_query_specific_settings.html#aabc9d9431d38e1b5e0cc2d46db747e0e":[12,0,38,55,1],
+"struct_protocols_1_1_o_s_c_query_specific_settings.html#ae363910c82c3309055357376008dd8cc":[12,0,38,55,0],
+"struct_protocols_1_1_o_s_c_specific_settings.html":[12,0,38,56],
+"struct_protocols_1_1_o_s_c_specific_settings.html#a01e5f5b65a36bb5d390be771dd74ee43":[12,0,38,56,1],
+"struct_protocols_1_1_o_s_c_specific_settings.html#a06a5e8556a4a2cb8d1b07db59a24305e":[12,0,38,56,0],
 "struct_protocols_1_1_o_s_c_specific_settings.html#aa41952fc4b9597254466ef68e8acb947":[12,0,38,56,2],
 "struct_protocols_1_1_phidget_specific_settings.html":[12,0,38,60],
 "struct_protocols_1_1_serial_specific_settings.html":[12,0,38,65],
@@ -242,12 +249,5 @@ var NAVTREEINDEX60 =
 "struct_recording_1_1_record_automation_creation_visitor.html#a75694eb91057fe534ed8ef8f13889c69":[12,0,39,7,7],
 "struct_recording_1_1_record_automation_creation_visitor.html#a91ccdd056e62fff64c5d292ffa85a989":[12,0,39,7,5],
 "struct_recording_1_1_record_automation_creation_visitor.html#a9c755124889decd4151ecadb899c4ad8":[12,0,39,7,2],
-"struct_recording_1_1_record_automation_creation_visitor.html#aacb033a614e483fb52299dc091e1b317":[12,0,39,7,13],
-"struct_recording_1_1_record_automation_creation_visitor.html#ac06186985a5d907fb90a9e2a5167a837":[12,0,39,7,9],
-"struct_recording_1_1_record_automation_creation_visitor.html#ac76b4309cca741e15ad07f9062c2a80b":[12,0,39,7,14],
-"struct_recording_1_1_record_automation_creation_visitor.html#acc874adfe419651a4c8093ebb8818058":[12,0,39,7,12],
-"struct_recording_1_1_record_automation_creation_visitor.html#ae22cdbe630f48b38e54ba7ed95fb5d11":[12,0,39,7,6],
-"struct_recording_1_1_record_automation_creation_visitor.html#afac94b9257fad22bd54631b15d3240de":[12,0,39,7,1],
-"struct_recording_1_1_record_automation_creation_visitor.html#afc135f2bad48d95fcb21f1ccffd31c7d":[12,0,39,7,8],
-"struct_recording_1_1_record_automation_first_callback_visitor.html":[12,0,39,8]
+"struct_recording_1_1_record_automation_creation_visitor.html#aacb033a614e483fb52299dc091e1b317":[12,0,39,7,13]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX28 =
 {
+"class_scenario_1_1_command_1_1_add_state_process_to_state.html#a96a7556eaa87d04af222437bd4ee7123":[12,0,43,0,10,0],
+"class_scenario_1_1_command_1_1_add_state_with_data.html":[12,0,43,0,11],
 "class_scenario_1_1_command_1_1_add_trigger.html":[12,0,43,0,12],
 "class_scenario_1_1_command_1_1_add_trigger.html#a291d45d1cb63efed306fdf6b9abe01f6":[12,0,43,0,12,7],
 "class_scenario_1_1_command_1_1_add_trigger.html#a2ee5b6d01c8b0000afef6a4eebda91c5":[12,0,43,0,12,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX28 =
 "class_scenario_1_1_command_1_1_move_event.html#a83c4652605a4f0c4fbc03663dbb91226":[12,0,43,0,59,9],
 "class_scenario_1_1_command_1_1_move_event.html#a930614e3328e9b1539e17d81a36e02d8":[12,0,43,0,59,2],
 "class_scenario_1_1_command_1_1_move_event.html#aa429d3fe376c487bc1e336eef9cc5533":[12,0,43,0,59,8],
-"class_scenario_1_1_command_1_1_move_event.html#ab518ae676ab20f39df78f71767adc61f":[12,0,43,0,59,1],
-"class_scenario_1_1_command_1_1_move_event.html#ac37315a3f818d38dd6801dfad1115051":[12,0,43,0,59,5],
-"class_scenario_1_1_command_1_1_move_event.html#ad80701f04341f5dcfdf51b52f75e81eb":[12,0,43,0,59,4]
+"class_scenario_1_1_command_1_1_move_event.html#ab518ae676ab20f39df78f71767adc61f":[12,0,43,0,59,1]
 };

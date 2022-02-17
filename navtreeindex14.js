@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"class_factor_1_1_factor_oracle.html#a273b75dbcb0df98ab4c0ac8afa5bb4a1":[12,0,12,0,4],
 "class_factor_1_1_factor_oracle.html#a2a930407a6f1329509500f53c2d60321":[12,0,12,0,12],
 "class_factor_1_1_factor_oracle.html#a385f3abbac1c57ae78c0374cd7c0b4dc":[12,0,12,0,15],
 "class_factor_1_1_factor_oracle.html#a583fdfd2ceec9cea70bb1fe067b1053a":[12,0,12,0,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "class_gfx_1_1_settings_1_1_view.html#abd8c4d1659062be759e05f5a3839ee16":[12,0,16,2,3,0],
 "class_gfx_1_1_shader_preview_widget.html":[12,0,16,41],
 "class_gfx_1_1_shader_preview_widget.html#a02a3a9befa0849be67ad9babdda1a7ca":[12,0,16,41,0],
-"class_gfx_1_1_shader_preview_widget.html#af5dbd5014b0fa0ce224edb61e1d0b11b":[12,0,16,41,1],
-"class_gfx_1_1_shmdata_1_1_input_device.html":[12,0,16,3,0]
+"class_gfx_1_1_shader_preview_widget.html#af5dbd5014b0fa0ce224edb61e1d0b11b":[12,0,16,41,1]
 };

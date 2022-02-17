@@ -509,6 +509,7 @@ var files_dup =
     [ "HTTPProtocolSettingsWidget.hpp", "_h_t_t_p_protocol_settings_widget_8hpp_source.html", null ],
     [ "HTTPSpecificSettings.hpp", "_h_t_t_p_specific_settings_8hpp_source.html", null ],
     [ "ICommandDispatcher.hpp", "_i_command_dispatcher_8hpp_source.html", null ],
+    [ "IconProvider.hpp", "_icon_provider_8hpp_source.html", null ],
     [ "IdentifiedObject.hpp", "_identified_object_8hpp_source.html", null ],
     [ "IdentifiedObjectAbstract.hpp", "_identified_object_abstract_8hpp_source.html", null ],
     [ "IdentifiedObjectMap.hpp", "_identified_object_map_8hpp_source.html", null ],

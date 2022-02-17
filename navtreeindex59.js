@@ -1,5 +1,12 @@
 var NAVTREEINDEX59 =
 {
+"struct_process_1_1_descriptor.html#acae18507eabcbdb8a8cf9359f3ed668c":[12,0,37,22,7],
+"struct_process_1_1_descriptor.html#ae87308063eebc830edf49eca8f0e2365":[12,0,37,22,6],
+"struct_process_1_1_enable_when_focused_process_is.html":[12,0,37,27],
+"struct_process_1_1_layer_context.html":[12,0,37,38],
+"struct_process_1_1_layer_context.html#a3b4287209f68957bd8d3ce2423b12893":[12,0,37,38,0],
+"struct_process_1_1_layer_context.html#a8fc5a6bb773b67a2e114b868baa1148d":[12,0,37,38,1],
+"struct_process_1_1_magnetic_info.html":[12,0,37,48],
 "struct_process_1_1_magnetic_info.html#a5dc297e0f55d4bbfab3c92aee7346e93":[12,0,37,48,0],
 "struct_process_1_1_magnetic_info.html#a77d6bf73b8fd25e3d44ded1c6c1cd9e6":[12,0,37,48,2],
 "struct_process_1_1_magnetic_info.html#a8150ac3d0a59d9a38182095611e8caa3":[12,0,37,48,3],
@@ -242,12 +249,5 @@ var NAVTREEINDEX59 =
 "struct_protocols_1_1_o_s_c_compatible_check.html#a86f8600cee0ea29cabea2915695e9a5a":[12,0,38,46,4],
 "struct_protocols_1_1_o_s_c_compatible_check.html#ac493aa836f42729673e543c7d8ff7c4d":[12,0,38,46,1],
 "struct_protocols_1_1_o_s_c_compatible_check.html#ac5202e8a572016c38d62e9e0c295cb77":[12,0,38,46,6],
-"struct_protocols_1_1_o_s_c_compatible_check.html#acb623ed209b7cc2637a58e51ad56d993":[12,0,38,46,8],
-"struct_protocols_1_1_o_s_c_compatible_check.html#add0e95dc9f7c550f042c7033c7f99712":[12,0,38,46,7],
-"struct_protocols_1_1_o_s_c_query_specific_settings.html":[12,0,38,55],
-"struct_protocols_1_1_o_s_c_query_specific_settings.html#aabc9d9431d38e1b5e0cc2d46db747e0e":[12,0,38,55,1],
-"struct_protocols_1_1_o_s_c_query_specific_settings.html#ae363910c82c3309055357376008dd8cc":[12,0,38,55,0],
-"struct_protocols_1_1_o_s_c_specific_settings.html":[12,0,38,56],
-"struct_protocols_1_1_o_s_c_specific_settings.html#a01e5f5b65a36bb5d390be771dd74ee43":[12,0,38,56,1],
-"struct_protocols_1_1_o_s_c_specific_settings.html#a06a5e8556a4a2cb8d1b07db59a24305e":[12,0,38,56,0]
+"struct_protocols_1_1_o_s_c_compatible_check.html#acb623ed209b7cc2637a58e51ad56d993":[12,0,38,46,8]
 };

@@ -1,5 +1,12 @@
 var NAVTREEINDEX53 =
 {
+"struct_device_1_1_full_address_settings.html#a98eff79b32e9b60830c9e3ab01fff221":[12,0,8,14,2],
+"struct_device_1_1_full_address_settings.html#aa2257e41e7f1e9ec5d162ea5edfb267c":[12,0,8,14,5],
+"struct_device_1_1_full_address_settings.html#ac1d4278b25b3cc1602192062af913965":[12,0,8,14,4],
+"struct_device_1_1_protocol_factory_1_1_standard_categories.html":[12,0,8,17,0],
+"struct_e_h_exception_record.html":[12,0,101],
+"struct_e_h_exception_record.html#a2a29f5ac9e6c985abedd21342b09ae44":[12,0,101,1],
+"struct_e_h_exception_record.html#a5b92e07b5d6d4d5bba6b2091dc0cd67b":[12,0,101,6],
 "struct_e_h_exception_record.html#a88b520ec7b300a5468ac5c905e39a21b":[12,0,101,4],
 "struct_e_h_exception_record.html#a8f193b378bfd9557db9cf6f82197412d":[12,0,101,2],
 "struct_e_h_exception_record.html#acf3c94d6c056003c5002af6383ae058f":[12,0,101,3],
@@ -242,12 +249,5 @@ var NAVTREEINDEX53 =
 "struct_faust_d_s_p_1_1_wrap.html#af001e196b8860f222fa05f4b4d9190b3":[12,0,15,2,0],
 "struct_faust_d_s_p_1_1_wrap.html#af71e42279369b3e755ce2475e0bdd865":[12,0,15,2,5],
 "struct_gfx_1_1_camera_settings.html":[12,0,16,10],
-"struct_gfx_1_1_camera_settings.html#a25551c9b0211e5d371f9248be832ae03":[12,0,16,10,0],
-"struct_gfx_1_1_camera_settings.html#a395e703271b5c76ceee531202ae66bae":[12,0,16,10,1],
-"struct_gfx_1_1_camera_settings.html#a707454a6640caa086c6743527c6a500a":[12,0,16,10,3],
-"struct_gfx_1_1_camera_settings.html#ab159a0fda2c0408710f13d608d930d22":[12,0,16,10,2],
-"struct_gfx_1_1_image_cache.html":[12,0,16,24],
-"struct_gfx_1_1_image_cache.html#aabefcacc51a291abe8160f26cc6e8e26":[12,0,16,24,0],
-"struct_gfx_1_1_image_cache.html#ac6afdae01b0279d5562feae9390912d3":[12,0,16,24,1],
-"struct_gfx_1_1_images_1_1_image_list_chooser.html":[12,0,16,1,2]
+"struct_gfx_1_1_camera_settings.html#a25551c9b0211e5d371f9248be832ae03":[12,0,16,10,0]
 };

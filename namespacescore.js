@@ -138,6 +138,7 @@ var namespacescore =
     [ "HierarchicModel< Model, Arg, Args... >", "structscore_1_1_hierarchic_model_3_01_model_00_01_arg_00_01_args_8_8_8_01_4.html", "structscore_1_1_hierarchic_model_3_01_model_00_01_arg_00_01_args_8_8_8_01_4" ],
     [ "HSeparator", "classscore_1_1_h_separator.html", "classscore_1_1_h_separator" ],
     [ "HTTPGet", "classscore_1_1_h_t_t_p_get.html", "classscore_1_1_h_t_t_p_get" ],
+    [ "IconProvider", "classscore_1_1_icon_provider.html", "classscore_1_1_icon_provider" ],
     [ "IdGen", "structscore_1_1_id_gen.html", "structscore_1_1_id_gen" ],
     [ "indirect_iterator", "structscore_1_1indirect__iterator.html", "structscore_1_1indirect__iterator" ],
     [ "indirect_map_iterator", "structscore_1_1indirect__map__iterator.html", "structscore_1_1indirect__map__iterator" ],

@@ -1,5 +1,12 @@
 var NAVTREEINDEX57 =
 {
+"struct_metadata_3_01_object_key__k_00_01_faust_d_s_p_1_1_fx_3_01mydsp_01_4_01_4.html":[12,0,162],
+"struct_metadata_3_01_pretty_name__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html":[12,0,163],
+"struct_metadata_3_01_pretty_name__k_00_01_faust_d_s_p_1_1_fx_3_01mydsp_01_4_01_4.html":[12,0,164],
+"struct_metadata_3_01_process_1_1_descriptor__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html":[12,0,165],
+"struct_metadata_3_01_process_1_1_descriptor__k_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[12,0,166],
+"struct_metadata_3_01_process_1_1_process_flags__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html":[12,0,167],
+"struct_metadata_3_01_process_1_1_process_flags__k_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[12,0,168],
 "struct_metadata_3_01_tags__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html":[12,0,169],
 "struct_metadata_3_01_tags__k_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[12,0,170],
 "struct_midi_1_1_midi_style.html":[12,0,29,6],
@@ -242,12 +249,5 @@ var NAVTREEINDEX57 =
 "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a63c4cdabbe50eaaf1d07fe137994e8b6":[12,0,32,16,0,1,9],
 "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a7ec0709fcfa0c0ada73da5ca9afc4d89":[12,0,32,16,0,1,10],
 "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a9be26f6347fc818f9f27be0f4c8e5391":[12,0,32,16,0,1,4],
-"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a9e54f4f70e4dbd66306e0ec92c5436ca":[12,0,32,16,0,1,5],
-"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#aa952716083920e7367e6e8464504a9a9":[12,0,32,16,0,1,1],
-"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#abeec5675edf233c6d96512a609c483ca":[12,0,32,16,0,1,8],
-"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#ac4b7da53fad1563be1fad60dd044a5d7":[12,0,32,16,0,1,2],
-"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#ac52b77d9357b0cee675c484476185615":[12,0,32,16,0,1,7],
-"struct_nodes_1_1_math_generator_1_1_node.html":[12,0,32,17,0],
-"struct_nodes_1_1_math_generator_1_1_node.html#a1ff66824002fce7562ff7d8b9f562610":[12,0,32,17,0,2],
-"struct_nodes_1_1_math_generator_1_1_node_1_1_metadata.html":[12,0,32,17,0,0]
+"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a9e54f4f70e4dbd66306e0ec92c5436ca":[12,0,32,16,0,1,5]
 };

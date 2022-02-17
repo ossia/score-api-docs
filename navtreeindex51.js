@@ -1,5 +1,12 @@
 var NAVTREEINDEX51 =
 {
+"struct_control_1_1_chooser_toggle.html#abf555eda1fa02b4ccefe8df5d347ced5":[12,0,4,2,0],
+"struct_control_1_1_chooser_toggle.html#accbbc253632967e73a107db3ed162986":[12,0,4,2,3],
+"struct_control_1_1_chooser_toggle.html#ae889e557d079b849b6278798c71fc804":[12,0,4,2,4],
+"struct_control_1_1_combo_box.html":[12,0,4,3],
+"struct_control_1_1_combo_box.html#a0b8384a89fd1a0231cc68935b302f008":[12,0,4,3,9],
+"struct_control_1_1_combo_box.html#a1e11dc79987cfab1340377cc8c663111":[12,0,4,3,1],
+"struct_control_1_1_combo_box.html#a4b9004ccfbe4482a7c3c6238fb570ac8":[12,0,4,3,2],
 "struct_control_1_1_combo_box.html#a54095cdb27223fc477df58e62adec8cc":[12,0,4,3,5],
 "struct_control_1_1_combo_box.html#a66f1b2ca09e0df45430f1428322df2fd":[12,0,4,3,0],
 "struct_control_1_1_combo_box.html#a74790fcb3ef352a892441ca040d1a6fd":[12,0,4,3,7],
@@ -242,12 +249,5 @@ var NAVTREEINDEX51 =
 "struct_control_1_1setup___impl0.html#af4414cfcb500984034d87973d624a38d":[12,0,4,39,5],
 "struct_control_1_1setup___impl0_1_1con__unvalidated.html":[12,0,4,39,0],
 "struct_control_1_1setup___impl0_1_1con__unvalidated.html#a056ccf93dc400eb349129699e9290d12":[12,0,4,39,0,1],
-"struct_control_1_1setup___impl0_1_1con__unvalidated.html#a218202e751d80c63a52ed2e74810784b":[12,0,4,39,0,0],
-"struct_control_1_1setup___impl0_1_1con__unvalidated.html#a50135261bf55c41720eb0994ec945aab":[12,0,4,39,0,2],
-"struct_control_1_1setup___impl0_1_1con__validated.html":[12,0,4,39,1],
-"struct_control_1_1setup___impl0_1_1con__validated.html#a22a0775fd28ea82dac68d66d94963652":[12,0,4,39,1,1],
-"struct_control_1_1setup___impl0_1_1con__validated.html#abc6fbc0e50d0ccea721ce238ca42c2b8":[12,0,4,39,1,2],
-"struct_control_1_1setup___impl0_1_1con__validated.html#adb31e1465214a4b4f70730cb074e0076":[12,0,4,39,1,0],
-"struct_control_1_1setup___impl1.html":[12,0,4,40],
-"struct_control_1_1setup___impl1.html#a2c6ed1774ecbe6f94504b5445cacc10d":[12,0,4,40,0]
+"struct_control_1_1setup___impl0_1_1con__unvalidated.html#a218202e751d80c63a52ed2e74810784b":[12,0,4,39,0,0]
 };

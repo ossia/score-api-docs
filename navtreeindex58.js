@@ -1,5 +1,12 @@
 var NAVTREEINDEX58 =
 {
+"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#aa952716083920e7367e6e8464504a9a9":[12,0,32,16,0,1,1],
+"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#abeec5675edf233c6d96512a609c483ca":[12,0,32,16,0,1,8],
+"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#ac4b7da53fad1563be1fad60dd044a5d7":[12,0,32,16,0,1,2],
+"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#ac52b77d9357b0cee675c484476185615":[12,0,32,16,0,1,7],
+"struct_nodes_1_1_math_generator_1_1_node.html":[12,0,32,17,0],
+"struct_nodes_1_1_math_generator_1_1_node.html#a1ff66824002fce7562ff7d8b9f562610":[12,0,32,17,0,2],
+"struct_nodes_1_1_math_generator_1_1_node_1_1_metadata.html":[12,0,32,17,0,0],
 "struct_nodes_1_1_math_generator_1_1_node_1_1_state.html":[12,0,32,17,0,1],
 "struct_nodes_1_1_math_generator_1_1_node_1_1_state.html#a185a9632d03ebb90bb5e10bbe9d3a850":[12,0,32,17,0,1,11],
 "struct_nodes_1_1_math_generator_1_1_node_1_1_state.html#a210418314a334bc71159dfaf4d846946":[12,0,32,17,0,1,1],
@@ -242,12 +249,5 @@ var NAVTREEINDEX58 =
 "struct_process_1_1_descriptor.html#a1cba9d9fcf76f2d62f98afeeaa10257b":[12,0,37,22,0],
 "struct_process_1_1_descriptor.html#a22855c811355234c2a1d0b778cfe5146":[12,0,37,22,5],
 "struct_process_1_1_descriptor.html#a622e29f9a44fba78ca625f7ea630ed51":[12,0,37,22,4],
-"struct_process_1_1_descriptor.html#ac6b597116df073c1d78a84544d61da8a":[12,0,37,22,2],
-"struct_process_1_1_descriptor.html#acae18507eabcbdb8a8cf9359f3ed668c":[12,0,37,22,7],
-"struct_process_1_1_descriptor.html#ae87308063eebc830edf49eca8f0e2365":[12,0,37,22,6],
-"struct_process_1_1_enable_when_focused_process_is.html":[12,0,37,27],
-"struct_process_1_1_layer_context.html":[12,0,37,38],
-"struct_process_1_1_layer_context.html#a3b4287209f68957bd8d3ce2423b12893":[12,0,37,38,0],
-"struct_process_1_1_layer_context.html#a8fc5a6bb773b67a2e114b868baa1148d":[12,0,37,38,1],
-"struct_process_1_1_magnetic_info.html":[12,0,37,48]
+"struct_process_1_1_descriptor.html#ac6b597116df073c1d78a84544d61da8a":[12,0,37,22,2]
 };
