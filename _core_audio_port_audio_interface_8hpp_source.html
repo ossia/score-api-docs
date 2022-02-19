@@ -226,11 +226,11 @@ $(document).ready(function(){initNavTree('_core_audio_port_audio_interface_8hpp_
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  }</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  QString prettyName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> QObject::tr(<span class="stringliteral">&quot;CoreAudio&quot;</span>); }</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  std::unique_ptr&lt;ossia::audio_engine&gt; make_engine(</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  std::shared_ptr&lt;ossia::audio_engine&gt; make_engine(</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_audio_1_1_settings_1_1_model.html">Audio::Settings::Model</a>&amp; set,</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp; ctx)<span class="keyword"> override</span></div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">return</span> std::make_unique&lt;ossia::portaudio_engine&gt;(</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">return</span> std::make_shared&lt;ossia::portaudio_engine&gt;(</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="stringliteral">&quot;ossia score&quot;</span>,</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        set.getCardIn().toStdString(),</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        set.getCardOut().toStdString(),</div>

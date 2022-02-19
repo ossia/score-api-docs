@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('_audio_application_plugin_8hpp_source.
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="structscore_1_1_g_u_i_elements.html">score::GUIElements</a> makeGUIElements() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  std::unique_ptr&lt;ossia::audio_engine&gt; audio;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  std::shared_ptr&lt;ossia::audio_engine&gt; audio;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">void</span> restart_engine();</div>
@@ -139,9 +139,11 @@ $(document).ready(function(){initNavTree('_audio_application_plugin_8hpp_source.
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> timerEvent(QTimerEvent*) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  std::vector&lt;std::shared_ptr&lt;ossia::audio_engine&gt;&gt; previous_audio;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructscore_1_1_g_u_i_elements_html"><div class="ttname"><a href="structscore_1_1_g_u_i_elements.html">score::GUIElements</a></div><div class="ttdef"><b>Definition:</b> GUIApplicationPlugin.hpp:23</div></div>

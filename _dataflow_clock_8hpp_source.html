@@ -125,37 +125,36 @@ $(document).ready(function(){initNavTree('_dataflow_clock_8hpp_source.html','');
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="comment">// Clock interface</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">void</span> play_impl(<span class="keyword">const</span> <a class="code" href="struct_time_val.html">TimeVal</a>&amp; t, <a class="code" href="class_execution_1_1_base_scenario_element.html">Execution::BaseScenarioElement</a>&amp;) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">void</span> pause_impl(<a class="code" href="class_execution_1_1_base_scenario_element.html">Execution::BaseScenarioElement</a>&amp;) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> resume_impl(<a class="code" href="class_execution_1_1_base_scenario_element.html">Execution::BaseScenarioElement</a>&amp;) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> stop_impl(<a class="code" href="class_execution_1_1_base_scenario_element.html">Execution::BaseScenarioElement</a>&amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">void</span> play_impl(<span class="keyword">const</span> <a class="code" href="struct_time_val.html">TimeVal</a>&amp; t) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">void</span> pause_impl() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> resume_impl() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> stop_impl() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">bool</span> paused() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="class_execution_1_1_default_clock.html">Execution::DefaultClock</a> m_default;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="class_audio_1_1_application_plugin.html">Audio::ApplicationPlugin</a>&amp; m_audio;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="class_execution_1_1_document_plugin.html">Execution::DocumentPlugin</a>&amp; m_plug;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="class_execution_1_1_base_scenario_element.html">Execution::BaseScenarioElement</a>* m_cur{};</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">bool</span> m_paused{};</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  ossia::audio_engine::fun_type m_play_tick{};</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  ossia::audio_engine::fun_type m_pause_tick{};</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_dataflow_1_1_clock_factory.html">   44</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_dataflow_1_1_clock_factory.html">ClockFactory</a> final : <span class="keyword">public</span> <a class="code" href="class_execution_1_1_clock_factory.html">Execution::ClockFactory</a></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;e9ae6dec-a10f-414f-9060-b21d15b5d58d&quot;</span>)</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  QString prettyName() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  std::unique_ptr&lt;Execution::Clock&gt;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  make(<span class="keyword">const</span> <a class="code" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="namespace_execution.html#aa65c041c9e6cd2071fd9f337e843f81d">Execution::time_function</a></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  makeTimeFunction(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  Execution::reverse_time_function</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  makeReverseTimeFunction(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">bool</span> m_paused{};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  ossia::audio_engine::fun_type m_play_tick{};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  ossia::audio_engine::fun_type m_pause_tick{};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_dataflow_1_1_clock_factory.html">   43</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_dataflow_1_1_clock_factory.html">ClockFactory</a> final : <span class="keyword">public</span> <a class="code" href="class_execution_1_1_clock_factory.html">Execution::ClockFactory</a></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;e9ae6dec-a10f-414f-9060-b21d15b5d58d&quot;</span>)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  QString prettyName() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  std::unique_ptr&lt;Execution::Clock&gt;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  make(<span class="keyword">const</span> <a class="code" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="namespace_execution.html#aa65c041c9e6cd2071fd9f337e843f81d">Execution::time_function</a></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  makeTimeFunction(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  Execution::reverse_time_function</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  makeReverseTimeFunction(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1366</div></div>
@@ -164,13 +163,12 @@ $(document).ready(function(){initNavTree('_dataflow_clock_8hpp_source.html','');
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:15</div></div>
 <div class="ttc" id="aclass_audio_1_1_application_plugin_html"><div class="ttname"><a href="class_audio_1_1_application_plugin.html">Audio::ApplicationPlugin</a></div><div class="ttdef"><b>Definition:</b> AudioApplicationPlugin.hpp:16</div></div>
 <div class="ttc" id="aclass_execution_1_1_clock_factory_html"><div class="ttname"><a href="class_execution_1_1_clock_factory.html">Execution::ClockFactory</a></div><div class="ttdef"><b>Definition:</b> ClockFactory.hpp:63</div></div>
-<div class="ttc" id="aclass_execution_1_1_document_plugin_html"><div class="ttname"><a href="class_execution_1_1_document_plugin.html">Execution::DocumentPlugin</a></div><div class="ttdef"><b>Definition:</b> plugins/score-plugin-engine/Execution/DocumentPlugin.hpp:56</div></div>
-<div class="ttc" id="aclass_execution_1_1_base_scenario_element_html"><div class="ttname"><a href="class_execution_1_1_base_scenario_element.html">Execution::BaseScenarioElement</a></div><div class="ttdef"><b>Definition:</b> BaseScenarioComponent.hpp:86</div></div>
+<div class="ttc" id="aclass_execution_1_1_document_plugin_html"><div class="ttname"><a href="class_execution_1_1_document_plugin.html">Execution::DocumentPlugin</a></div><div class="ttdef"><b>Definition:</b> plugins/score-plugin-engine/Execution/DocumentPlugin.hpp:58</div></div>
 <div class="ttc" id="aclass_execution_1_1_clock_html"><div class="ttname"><a href="class_execution_1_1_clock.html">Execution::Clock</a></div><div class="ttdef"><b>Definition:</b> ClockFactory.hpp:41</div></div>
 <div class="ttc" id="anamespace_execution_html_aa65c041c9e6cd2071fd9f337e843f81d"><div class="ttname"><a href="namespace_execution.html#aa65c041c9e6cd2071fd9f337e843f81d">Execution::time_function</a></div><div class="ttdeci">smallfun::function&lt; ossia::time_value(const TimeVal &amp;)&gt; time_function</div><div class="ttdoc">Sets-up and manages the main execution clock.</div><div class="ttdef"><b>Definition:</b> ExecutionContext.hpp:65</div></div>
 <div class="ttc" id="astruct_execution_1_1_context_html"><div class="ttname"><a href="struct_execution_1_1_context.html">Execution::Context</a></div><div class="ttdef"><b>Definition:</b> ExecutionContext.hpp:89</div></div>
 <div class="ttc" id="aclass_dataflow_1_1_clock_html"><div class="ttname"><a href="class_dataflow_1_1_clock.html">Dataflow::Clock</a></div><div class="ttdef"><b>Definition:</b> DataflowClock.hpp:17</div></div>
-<div class="ttc" id="aclass_dataflow_1_1_clock_factory_html"><div class="ttname"><a href="class_dataflow_1_1_clock_factory.html">Dataflow::ClockFactory</a></div><div class="ttdef"><b>Definition:</b> DataflowClock.hpp:44</div></div>
+<div class="ttc" id="aclass_dataflow_1_1_clock_factory_html"><div class="ttname"><a href="class_dataflow_1_1_clock_factory.html">Dataflow::ClockFactory</a></div><div class="ttdef"><b>Definition:</b> DataflowClock.hpp:43</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

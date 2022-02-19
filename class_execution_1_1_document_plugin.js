@@ -1,13 +1,14 @@
 var class_execution_1_1_document_plugin =
 [
+    [ "ContextData", "struct_execution_1_1_document_plugin_1_1_context_data.html", "struct_execution_1_1_document_plugin_1_1_context_data" ],
     [ "DocumentPlugin", "class_execution_1_1_document_plugin.html#ade94efa2af7c59bdfb993bfe6957c3fb", null ],
     [ "~DocumentPlugin", "class_execution_1_1_document_plugin.html#afe8fc0f92e478a99303a172af8bbd2fc", null ],
     [ "actions", "class_execution_1_1_document_plugin.html#a3e3487172963806ec897c466de349d0d", null ],
-    [ "audioProto", "class_execution_1_1_document_plugin.html#ac1ba48f11886af2fea78c0e05eb39eaf", null ],
-    [ "baseScenario", "class_execution_1_1_document_plugin.html#a60721ea78b918da206dcfeef6e917c49", null ],
-    [ "baseScenario", "class_execution_1_1_document_plugin.html#a9ffeba722ffea9856df0d59dd786877e", null ],
+    [ "audioProto", "class_execution_1_1_document_plugin.html#a0defe0c2fd23e433c52ff49085a6002f", null ],
+    [ "baseScenario", "class_execution_1_1_document_plugin.html#a8aead00a59ac2ccf24aa9e387c69104e", null ],
     [ "clear", "class_execution_1_1_document_plugin.html#a69d3f871e36166342c60045c95a0dd49", null ],
     [ "context", "class_execution_1_1_document_plugin.html#af2e5a79fe6046a5b9c5c0ce19600bed9", null ],
+    [ "contextData", "class_execution_1_1_document_plugin.html#aee2779bc29cdb2ee3b6fe1dea9921c46", null ],
     [ "executionController", "class_execution_1_1_document_plugin.html#af4dba5704c86e2bc77a78bdeb00cb3ed", null ],
     [ "finished", "class_execution_1_1_document_plugin.html#af656fb9df4d2bf34a129c1c6edff7b22", null ],
     [ "isPlaying", "class_execution_1_1_document_plugin.html#aeabe575ad5ff698daca2c6c699cfe53e", null ],
@@ -20,9 +21,6 @@ var class_execution_1_1_document_plugin =
     [ "sig_bench", "class_execution_1_1_document_plugin.html#adf132d389f04599a7c1841574e28641a", null ],
     [ "slot_bench", "class_execution_1_1_document_plugin.html#a99b946df6c0c682902ce0ef2ae559988", null ],
     [ "audio_device", "class_execution_1_1_document_plugin.html#a4031ee9584d23ceffeb49723c2e47f27", null ],
-    [ "bench", "class_execution_1_1_document_plugin.html#a943049e69bd228a948b99a3c73ed37a1", null ],
-    [ "execGraph", "class_execution_1_1_document_plugin.html#a1e0ab6bf5ee539e28eda992144b83ae6", null ],
-    [ "execState", "class_execution_1_1_document_plugin.html#a9678f99a89f870d3d9672a93f99e6fa2", null ],
     [ "local_device", "class_execution_1_1_document_plugin.html#a2669e9e755c91987326a9baf97a024c5", null ],
     [ "settings", "class_execution_1_1_document_plugin.html#a4ced36ce308e7d09f57e3d4199696a83", null ]
 ];

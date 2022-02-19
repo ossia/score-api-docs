@@ -1,5 +1,8 @@
 var NAVTREEINDEX52 =
 {
+"struct_control_1_1setup___impl0_1_1con__unvalidated.html":[12,0,4,39,0],
+"struct_control_1_1setup___impl0_1_1con__unvalidated.html#a056ccf93dc400eb349129699e9290d12":[12,0,4,39,0,1],
+"struct_control_1_1setup___impl0_1_1con__unvalidated.html#a218202e751d80c63a52ed2e74810784b":[12,0,4,39,0,0],
 "struct_control_1_1setup___impl0_1_1con__unvalidated.html#a50135261bf55c41720eb0994ec945aab":[12,0,4,39,0,2],
 "struct_control_1_1setup___impl0_1_1con__validated.html":[12,0,4,39,1],
 "struct_control_1_1setup___impl0_1_1con__validated.html#a22a0775fd28ea82dac68d66d94963652":[12,0,4,39,1,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX52 =
 "struct_device_1_1_full_address_accessor_settings.html#ad6cdeefcfaf9bc1b56aa64062937575e":[12,0,8,13,15],
 "struct_device_1_1_full_address_accessor_settings.html#ad8af91e7d2ce33d06d6f886a5694de8b":[12,0,8,13,10],
 "struct_device_1_1_full_address_settings.html":[12,0,8,14],
-"struct_device_1_1_full_address_settings.html#a064f6c035b18b8313213987d486b2680":[12,0,8,14,1],
-"struct_device_1_1_full_address_settings.html#a1fb27dcb332f21009e86dbb4831ace56":[12,0,8,14,3],
-"struct_device_1_1_full_address_settings.html#a517c85482f399e51fb95e96df6c1ee28":[12,0,8,14,6],
-"struct_device_1_1_full_address_settings.html#a8ff06a465d639d9b4fc83d05c53878d5":[12,0,8,14,0]
+"struct_device_1_1_full_address_settings.html#a064f6c035b18b8313213987d486b2680":[12,0,8,14,1]
 };

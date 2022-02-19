@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('_audio_device_8hpp_source.html',''); i
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  W_OBJECT(<a class="code" href="class_dataflow_1_1_audio_device.html">AudioDevice</a>)</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="class_dataflow_1_1_audio_device.html">AudioDevice</a>(<span class="keyword">const</span> <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; settings);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_dataflow_1_1_audio_device.html">AudioDevice</a>(<span class="keyword">const</span> <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; settings);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  ~<a class="code" href="class_dataflow_1_1_audio_device.html">AudioDevice</a>();</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> addAddress(<span class="keyword">const</span> <a class="code" href="struct_device_1_1_full_address_settings.html">Device::FullAddressSettings</a>&amp; settings) <span class="keyword">override</span>;</div>
@@ -169,35 +169,37 @@ $(document).ready(function(){initNavTree('_audio_device_8hpp_source.html',''); i
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_device_1_1_full_address_settings.html">Device::FullAddressSettings</a>&amp; settings) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">bool</span> reconnect() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">void</span> recreate(<span class="keyword">const</span> <a class="code" href="class_tree_node.html">Device::Node</a>&amp; n) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  ossia::net::device_base* getDevice()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> &amp;m_dev; }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  ossia::audio_protocol* getProtocol()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_protocol; }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span> changed() E_SIGNAL(SCORE_PLUGIN_AUDIO_EXPORT, changed)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">const</span> std::shared_ptr&lt;ossia::net::generic_device&gt;&amp; sharedDevice() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> m_dev; }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  ossia::net::device_base* getDevice()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> m_dev.get(); }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  ossia::audio_protocol* getProtocol()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_protocol; }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">using</span> Device::DeviceInterface::refresh;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  setupNode(ossia::net::node_base&amp;, <span class="keyword">const</span> ossia::extended_attributes&amp; attr);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="class_tree_node.html">Device::Node</a> refresh() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">void</span> disconnect() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  ossia::audio_protocol* m_protocol{};</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keyword">mutable</span> ossia::net::generic_device m_dev;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_dataflow_1_1_audio_settings_widget.html">   87</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_dataflow_1_1_audio_settings_widget.html">AudioSettingsWidget</a> final : <span class="keyword">public</span> <a class="code" href="class_device_1_1_protocol_settings_widget.html">Device::ProtocolSettingsWidget</a></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="code" href="class_dataflow_1_1_audio_settings_widget.html">AudioSettingsWidget</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> getSettings() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> changed() E_SIGNAL(SCORE_PLUGIN_AUDIO_EXPORT, changed)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">using</span> Device::DeviceInterface::refresh;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  setupNode(ossia::net::node_base&amp;, <span class="keyword">const</span> ossia::extended_attributes&amp; attr);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="class_tree_node.html">Device::Node</a> refresh() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">void</span> disconnect() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  ossia::audio_protocol* m_protocol{};</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  std::shared_ptr&lt;ossia::net::generic_device&gt; m_dev;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="class_dataflow_1_1_audio_settings_widget.html">   89</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_dataflow_1_1_audio_settings_widget.html">AudioSettingsWidget</a> final : <span class="keyword">public</span> <a class="code" href="class_device_1_1_protocol_settings_widget.html">Device::ProtocolSettingsWidget</a></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <a class="code" href="class_dataflow_1_1_audio_settings_widget.html">AudioSettingsWidget</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">void</span> setSettings(<span class="keyword">const</span> <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; settings) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> getSettings() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">void</span> setDefaults();</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  QLineEdit* m_deviceNameEdit{};</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;};</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">void</span> setSettings(<span class="keyword">const</span> <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; settings) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">void</span> setDefaults();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  QLineEdit* m_deviceNameEdit{};</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astruct_state_1_1_address_html"><div class="ttname"><a href="struct_state_1_1_address.html">State::Address</a></div><div class="ttdoc">The Address struct.</div><div class="ttdef"><b>Definition:</b> Address.hpp:57</div></div>
@@ -209,7 +211,7 @@ $(document).ready(function(){initNavTree('_audio_device_8hpp_source.html',''); i
 <div class="ttc" id="aclass_device_1_1_protocol_settings_widget_html"><div class="ttname"><a href="class_device_1_1_protocol_settings_widget.html">Device::ProtocolSettingsWidget</a></div><div class="ttdef"><b>Definition:</b> ProtocolSettingsWidget.hpp:21</div></div>
 <div class="ttc" id="aclass_device_1_1_protocol_factory_html"><div class="ttname"><a href="class_device_1_1_protocol_factory.html">Device::ProtocolFactory</a></div><div class="ttdef"><b>Definition:</b> ProtocolFactoryInterface.hpp:42</div></div>
 <div class="ttc" id="aclass_device_1_1_address_dialog_html"><div class="ttname"><a href="class_device_1_1_address_dialog.html">Device::AddressDialog</a></div><div class="ttdef"><b>Definition:</b> ProtocolSettingsWidget.hpp:40</div></div>
-<div class="ttc" id="aclass_dataflow_1_1_audio_settings_widget_html"><div class="ttname"><a href="class_dataflow_1_1_audio_settings_widget.html">Dataflow::AudioSettingsWidget</a></div><div class="ttdef"><b>Definition:</b> AudioDevice.hpp:87</div></div>
+<div class="ttc" id="aclass_dataflow_1_1_audio_settings_widget_html"><div class="ttname"><a href="class_dataflow_1_1_audio_settings_widget.html">Dataflow::AudioSettingsWidget</a></div><div class="ttdef"><b>Definition:</b> AudioDevice.hpp:89</div></div>
 <div class="ttc" id="astruct_visitor_variant_html"><div class="ttname"><a href="struct_visitor_variant.html">VisitorVariant</a></div><div class="ttdoc">The VisitorVariant struct.</div><div class="ttdef"><b>Definition:</b> VisitorInterface.hpp:25</div></div>
 <div class="ttc" id="aclass_dataflow_1_1_audio_device_html"><div class="ttname"><a href="class_dataflow_1_1_audio_device.html">Dataflow::AudioDevice</a></div><div class="ttdef"><b>Definition:</b> AudioDevice.hpp:57</div></div>
 <div class="ttc" id="aclass_device_1_1_device_enumerator_html"><div class="ttname"><a href="class_device_1_1_device_enumerator.html">Device::DeviceEnumerator</a></div><div class="ttdef"><b>Definition:</b> ProtocolFactoryInterface.hpp:27</div></div>

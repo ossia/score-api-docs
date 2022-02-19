@@ -1,14 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"class_data_stream_reader.html#ab35b50a83f75ec62b422279258029fd3":[12,0,95,31],
-"class_data_stream_reader.html#ab6d7e154119caf3a0b12b643fe924d20":[12,0,95,18],
-"class_data_stream_reader.html#ab734debb01dd5ec1fd631032192bc1d6":[12,0,95,3],
-"class_data_stream_reader.html#ab77933b021b6df1831aa395989f32f1a":[12,0,95,59],
-"class_data_stream_reader.html#ab988a0c9f79b99e1f3539bcf637408ea":[12,0,95,38],
-"class_data_stream_reader.html#aba85ef9e409b085255c363ba989b4c1b":[12,0,95,94],
-"class_data_stream_reader.html#abbe411337cb51e7553976389b623150f":[12,0,95,14],
-"class_data_stream_reader.html#abca0e3f408938850fa889a33dc644ce5":[12,0,95,29],
-"class_data_stream_reader.html#abcdb54f52acf9628cf04df1c6b487151":[12,0,95,23],
 "class_data_stream_reader.html#abf1eceda24b6d306af12b910dd2ea3d0":[12,0,95,82],
 "class_data_stream_reader.html#abffec5d199f39856530b8cb707483b3a":[12,0,95,22],
 "class_data_stream_reader.html#ac0eb5c043b33cc07de11c45edd22db1b":[12,0,95,6],
@@ -230,7 +221,8 @@ var NAVTREEINDEX9 =
 "class_dataflow_1_1_audio_device.html#a8feeb8352177206c7100324cc34bc3ef":[12,0,7,1,2],
 "class_dataflow_1_1_audio_device.html#a9689328b72ad2e370fd1882ccd358bdb":[12,0,7,1,4],
 "class_dataflow_1_1_audio_device.html#aace9fa3b0d6c8b9101416bbe2b3068cd":[12,0,7,1,3],
-"class_dataflow_1_1_audio_device.html#ac6728d3d590cf35fb357be8474541561":[12,0,7,1,8],
+"class_dataflow_1_1_audio_device.html#ac6728d3d590cf35fb357be8474541561":[12,0,7,1,9],
+"class_dataflow_1_1_audio_device.html#aef615532e7051145bb2ee9b339992e36":[12,0,7,1,8],
 "class_dataflow_1_1_audio_device.html#afdbe18a0b9ce43465d9fa264669b9aff":[12,0,7,1,1],
 "class_dataflow_1_1_audio_outlet_item.html":[12,0,7,4],
 "class_dataflow_1_1_audio_outlet_item.html#a36bbe002818231b791749244daeb1ede":[12,0,7,4,6],
@@ -249,5 +241,13 @@ var NAVTREEINDEX9 =
 "class_dataflow_1_1_audio_settings_widget.html#a95cf99b56a0cee5dc90fc2fb28cfe04b":[12,0,7,7,0],
 "class_dataflow_1_1_audio_settings_widget.html#acd9e8df28e5cc72b9a84aa40680525ff":[12,0,7,7,1],
 "class_dataflow_1_1_audio_settings_widget.html#ae2911f58b0ec82135a040c0ff7bb5f10":[12,0,7,7,2],
-"class_dataflow_1_1_automatable_port_factory.html":[12,0,7,8]
+"class_dataflow_1_1_automatable_port_factory.html":[12,0,7,8],
+"class_dataflow_1_1_automatable_port_factory.html#a8d7147ed4da05e16bd834f94253bbb88":[12,0,7,8,0],
+"class_dataflow_1_1_automatable_port_factory___t.html":[12,0,7,9],
+"class_dataflow_1_1_automatable_port_factory___t.html#afd5285c9995243d0864b4c5edb64d8be":[12,0,7,9,0],
+"class_dataflow_1_1_automatable_port_item.html":[12,0,7,10],
+"class_dataflow_1_1_automatable_port_item.html#a2591d602403f7ba51e756f357e2f36ce":[12,0,7,10,1],
+"class_dataflow_1_1_automatable_port_item.html#a2cb7abbc70b3af0384a1faab879b5bc5":[12,0,7,10,2],
+"class_dataflow_1_1_automatable_port_item.html#a3694c949dc05a5dd2ad9e34d3aaab6a2":[12,0,7,10,5],
+"class_dataflow_1_1_automatable_port_item.html#a39ddc2983b8060db9690b46cc444eba2":[12,0,7,10,0]
 };

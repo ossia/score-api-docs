@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('_s_d_l_interface_8hpp_source.html','')
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  }</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  QString prettyName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> QObject::tr(<span class="stringliteral">&quot;SDL&quot;</span>); };</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  std::unique_ptr&lt;ossia::audio_engine&gt; make_engine(</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  std::shared_ptr&lt;ossia::audio_engine&gt; make_engine(</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_audio_1_1_settings_1_1_model.html">Audio::Settings::Model</a>&amp; set,</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp; ctx)<span class="keyword"> override</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">  </span>{</div>
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('_s_d_l_interface_8hpp_source.html','')
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    rate = 48000;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    bs = 1024;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span> std::make_unique&lt;ossia::sdl_protocol&gt;(rate, bs);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span> std::make_shared&lt;ossia::sdl_protocol&gt;(rate, bs);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  }</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  QWidget* make_settings(</div>

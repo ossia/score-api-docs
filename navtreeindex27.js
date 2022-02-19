@@ -1,16 +1,5 @@
 var NAVTREEINDEX27 =
 {
-"class_recording_1_1_recorder_factory.html#a88af36eead2990b6fa8ac7a2b1e5effb":[12,0,39,14,1],
-"class_recording_1_1_recorder_factory.html#a9d42d8b152c54293fc70b734064914ea":[12,0,39,14,0],
-"class_recording_1_1_single_recorder.html":[12,0,39,16],
-"class_recording_1_1_single_recorder.html#a3a3d331c583c2a5f816c4758b66d0bf2":[12,0,39,16,0],
-"class_recording_1_1_single_recorder.html#a512be0ae07bc0ad954d488229d217065":[12,0,39,16,2],
-"class_recording_1_1_single_recorder.html#a724e5b695990d3a4158adb228baaf2cb":[12,0,39,16,1],
-"class_recording_1_1_single_recorder.html#aa8e247ee763fa13b9bdfc09b19f394d3":[12,0,39,16,3],
-"class_remote_application.html":[12,0,315],
-"class_remote_application.html#a0bdbfa18ac37339d0d94acf7affe45e5":[12,0,315,5],
-"class_remote_application.html#a1b6376ef2facc53c693fd5cf180a687d":[12,0,315,3],
-"class_remote_application.html#a419ee5fc214b3b76940ea6808b84026d":[12,0,315,2],
 "class_remote_application.html#a951a4d02b982ee92f0788b08de6b93f4":[12,0,315,0],
 "class_remote_application.html#ae08f2a9f09c9c9bdfd6a4d865dde9038":[12,0,315,1],
 "class_remote_application.html#aeb14d1361331286a0e98e4533289a999":[12,0,315,4],
@@ -249,5 +238,16 @@ var NAVTREEINDEX27 =
 "class_scenario_1_1_command_1_1_add_slot_to_rack.html#aa4902503aa55b47bae8f32dd23944fe7":[12,0,43,0,9,3],
 "class_scenario_1_1_command_1_1_add_slot_to_rack.html#ad1aefec969f871d6f2b91146bb13e6ac":[12,0,43,0,9,0],
 "class_scenario_1_1_command_1_1_add_state_process_to_state.html":[12,0,43,0,10],
-"class_scenario_1_1_command_1_1_add_state_process_to_state.html#a20dc6b1d7f72646b405ac4fe9c38df7f":[12,0,43,0,10,1]
+"class_scenario_1_1_command_1_1_add_state_process_to_state.html#a20dc6b1d7f72646b405ac4fe9c38df7f":[12,0,43,0,10,1],
+"class_scenario_1_1_command_1_1_add_state_process_to_state.html#a96a7556eaa87d04af222437bd4ee7123":[12,0,43,0,10,0],
+"class_scenario_1_1_command_1_1_add_state_with_data.html":[12,0,43,0,11],
+"class_scenario_1_1_command_1_1_add_trigger.html":[12,0,43,0,12],
+"class_scenario_1_1_command_1_1_add_trigger.html#a291d45d1cb63efed306fdf6b9abe01f6":[12,0,43,0,12,7],
+"class_scenario_1_1_command_1_1_add_trigger.html#a2ee5b6d01c8b0000afef6a4eebda91c5":[12,0,43,0,12,2],
+"class_scenario_1_1_command_1_1_add_trigger.html#a746fba4fa1c8e2d658daad496923d212":[12,0,43,0,12,6],
+"class_scenario_1_1_command_1_1_add_trigger.html#a9ffc3b4783e0cf6c959f64daffa47efe":[12,0,43,0,12,0],
+"class_scenario_1_1_command_1_1_add_trigger.html#aa0bacb6f5f73ecf0fe29723d77f1e9d8":[12,0,43,0,12,1],
+"class_scenario_1_1_command_1_1_add_trigger.html#ab55d066d39610fd72fddf9530db9bb41":[12,0,43,0,12,5],
+"class_scenario_1_1_command_1_1_add_trigger.html#abe464ca238158110b409f05d7d4c89c3":[12,0,43,0,12,8],
+"class_scenario_1_1_command_1_1_add_trigger.html#ae9dae866ea926d3e4ee67a4c5308ff42":[12,0,43,0,12,3]
 };

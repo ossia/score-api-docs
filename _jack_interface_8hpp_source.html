@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('_jack_interface_8hpp_source.html','');
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  QString prettyName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> QObject::tr(<span class="stringliteral">&quot;JACK&quot;</span>); }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  std::unique_ptr&lt;ossia::audio_engine&gt; make_engine(</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  std::shared_ptr&lt;ossia::audio_engine&gt; make_engine(</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_audio_1_1_settings_1_1_model.html">Audio::Settings::Model</a>&amp; set,</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp; ctx) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
@@ -170,6 +170,8 @@ $(document).ready(function(){initNavTree('_jack_interface_8hpp_source.html','');
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_audio_1_1_jack_factory_html"><div class="ttname"><a href="class_audio_1_1_jack_factory.html">Audio::JackFactory</a></div><div class="ttdef"><b>Definition:</b> JackInterface.hpp:25</div></div>

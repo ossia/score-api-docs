@@ -29,6 +29,7 @@ var namespacescore =
     [ "ActionGroup", "classscore_1_1_action_group.html", "classscore_1_1_action_group" ],
     [ "ActionManager", "classscore_1_1_action_manager.html", "classscore_1_1_action_manager" ],
     [ "Addon", "structscore_1_1_addon.html", "structscore_1_1_addon" ],
+    [ "AddRemoveList", "classscore_1_1_add_remove_list.html", "classscore_1_1_add_remove_list" ],
     [ "AggregateCommand", "classscore_1_1_aggregate_command.html", "classscore_1_1_aggregate_command" ],
     [ "any_serializer", "structscore_1_1any__serializer.html", "structscore_1_1any__serializer" ],
     [ "any_serializer_t", "structscore_1_1any__serializer__t.html", "structscore_1_1any__serializer__t" ],

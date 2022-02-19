@@ -8,5 +8,6 @@ var class_dataflow_1_1_audio_device =
     [ "getProtocol", "class_dataflow_1_1_audio_device.html#a399c6a431c0c6a1422b53770adbb2289", null ],
     [ "reconnect", "class_dataflow_1_1_audio_device.html#a02d065336b5e63abc2a3caed545946bd", null ],
     [ "recreate", "class_dataflow_1_1_audio_device.html#a36e2463925ebd2387a2f34ea979bd52c", null ],
+    [ "sharedDevice", "class_dataflow_1_1_audio_device.html#aef615532e7051145bb2ee9b339992e36", null ],
     [ "updateAddress", "class_dataflow_1_1_audio_device.html#ac6728d3d590cf35fb357be8474541561", null ]
 ];

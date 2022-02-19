@@ -4,7 +4,7 @@ var class_audio_1_1_port_audio_factory =
     [ "~PortAudioFactory", "class_audio_1_1_port_audio_factory.html#aa156f19305a23c9f793e4078fc5beb0a", null ],
     [ "available", "class_audio_1_1_port_audio_factory.html#a78cb87255bd50d2fff34c0246365892a", null ],
     [ "initialize", "class_audio_1_1_port_audio_factory.html#af39994411afceed480c7a9d259f17adb", null ],
-    [ "make_engine", "class_audio_1_1_port_audio_factory.html#a50bb77ebb2cddbb08abd33b47f1cbd2b", null ],
+    [ "make_engine", "class_audio_1_1_port_audio_factory.html#a620b82622386a86b442942eb1f444c8d", null ],
     [ "make_settings", "class_audio_1_1_port_audio_factory.html#a24d238a9163e7989033061e03482cd31", null ],
     [ "prettyName", "class_audio_1_1_port_audio_factory.html#a2d920b312c5e6725f00095cfe4c8a4b0", null ],
     [ "rescan", "class_audio_1_1_port_audio_factory.html#a2e452c4e7a228dbf441e2362d3c47091", null ],

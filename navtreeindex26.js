@@ -1,16 +1,5 @@
 var NAVTREEINDEX26 =
 {
-"class_protocols_1_1_leapmotion_protocol_settings_widget.html#a05703dc70192f57151c6f9d9f4dc1bf4":[12,0,38,23,2],
-"class_protocols_1_1_leapmotion_protocol_settings_widget.html#a323028a52a7923c70f1c457536a9ef55":[12,0,38,23,4],
-"class_protocols_1_1_leapmotion_protocol_settings_widget.html#a3e2d1a957b333bb8ede25b4faf615c59":[12,0,38,23,3],
-"class_protocols_1_1_leapmotion_protocol_settings_widget.html#a78578a053278b595f5d43c55e0488151":[12,0,38,23,1],
-"class_protocols_1_1_leapmotion_protocol_settings_widget.html#ae5fb901e4d57efde4c0853ff8616a4d7":[12,0,38,23,0],
-"class_protocols_1_1_libmapper_client_device.html":[12,0,38,25],
-"class_protocols_1_1_libmapper_client_device.html#a2b38c36a674773d87809e78e60d43979":[12,0,38,25,0],
-"class_protocols_1_1_libmapper_client_device.html#a3aff0efe21769a8e2818301a9611285a":[12,0,38,25,3],
-"class_protocols_1_1_libmapper_client_device.html#a71c356d0a608eecb4631babc28ad3a2a":[12,0,38,25,2],
-"class_protocols_1_1_libmapper_client_device.html#acebd08aa0c198225c44eef87891dfbf4":[12,0,38,25,1],
-"class_protocols_1_1_libmapper_client_enumerator.html":[12,0,38,26],
 "class_protocols_1_1_libmapper_client_enumerator.html#a2b151e676127b6b18e0478068dcc4360":[12,0,38,26,2],
 "class_protocols_1_1_libmapper_client_enumerator.html#a57aec86e2acddf9abf2474fdc93ee828":[12,0,38,26,4],
 "class_protocols_1_1_libmapper_client_enumerator.html#a5d78c9f49062d8217921bae0fa35e662":[12,0,38,26,3],
@@ -249,5 +238,16 @@ var NAVTREEINDEX26 =
 "class_recording_1_1_recorder.html#a99461a7d0b5365317636773739114238":[12,0,39,13,0],
 "class_recording_1_1_recorder.html#af76af7844ed74f567385b25e534fa361":[12,0,39,13,1],
 "class_recording_1_1_recorder_factory.html":[12,0,39,14],
-"class_recording_1_1_recorder_factory.html#a703e6bf2d45a884d3c4f19754a805895":[12,0,39,14,2]
+"class_recording_1_1_recorder_factory.html#a703e6bf2d45a884d3c4f19754a805895":[12,0,39,14,2],
+"class_recording_1_1_recorder_factory.html#a88af36eead2990b6fa8ac7a2b1e5effb":[12,0,39,14,1],
+"class_recording_1_1_recorder_factory.html#a9d42d8b152c54293fc70b734064914ea":[12,0,39,14,0],
+"class_recording_1_1_single_recorder.html":[12,0,39,16],
+"class_recording_1_1_single_recorder.html#a3a3d331c583c2a5f816c4758b66d0bf2":[12,0,39,16,0],
+"class_recording_1_1_single_recorder.html#a512be0ae07bc0ad954d488229d217065":[12,0,39,16,2],
+"class_recording_1_1_single_recorder.html#a724e5b695990d3a4158adb228baaf2cb":[12,0,39,16,1],
+"class_recording_1_1_single_recorder.html#aa8e247ee763fa13b9bdfc09b19f394d3":[12,0,39,16,3],
+"class_remote_application.html":[12,0,315],
+"class_remote_application.html#a0bdbfa18ac37339d0d94acf7affe45e5":[12,0,315,5],
+"class_remote_application.html#a1b6376ef2facc53c693fd5cf180a687d":[12,0,315,3],
+"class_remote_application.html#a419ee5fc214b3b76940ea6808b84026d":[12,0,315,2]
 };

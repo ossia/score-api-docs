@@ -26,7 +26,6 @@ var annotated_dup =
         [ "Presenter", "class_audio_1_1_settings_1_1_presenter.html", "class_audio_1_1_settings_1_1_presenter" ],
         [ "View", "class_audio_1_1_settings_1_1_view.html", "class_audio_1_1_settings_1_1_view" ]
       ] ],
-      [ "AddRemoveList", "class_audio_1_1_add_remove_list.html", "class_audio_1_1_add_remove_list" ],
       [ "ApplicationPlugin", "class_audio_1_1_application_plugin.html", "class_audio_1_1_application_plugin" ],
       [ "AudioFactory", "class_audio_1_1_audio_factory.html", "class_audio_1_1_audio_factory" ],
       [ "AudioFactoryList", "class_audio_1_1_audio_factory_list.html", null ],

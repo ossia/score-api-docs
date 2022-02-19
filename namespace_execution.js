@@ -48,6 +48,7 @@ var namespace_execution =
     [ "ProcessComponentFactory", "class_execution_1_1_process_component_factory.html", "class_execution_1_1_process_component_factory" ],
     [ "ProcessComponentFactory_T", "class_execution_1_1_process_component_factory___t.html", "class_execution_1_1_process_component_factory___t" ],
     [ "ProcessComponentFactoryList", "class_execution_1_1_process_component_factory_list.html", "class_execution_1_1_process_component_factory_list" ],
+    [ "Queues", "struct_execution_1_1_queues.html", null ],
     [ "RecomputePropagate", "struct_execution_1_1_recompute_propagate.html", "struct_execution_1_1_recompute_propagate" ],
     [ "ReconnectOutlets", "struct_execution_1_1_reconnect_outlets.html", "struct_execution_1_1_reconnect_outlets" ],
     [ "ScenarioComponent", "struct_execution_1_1_scenario_component.html", "struct_execution_1_1_scenario_component" ],

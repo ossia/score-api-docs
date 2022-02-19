@@ -95,6 +95,7 @@ $(document).ready(function(){initNavTree('class_execution_1_1_document_plugin.ht
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_execution_1_1_document_plugin-members.html">List of all members</a>  </div>
@@ -112,6 +113,11 @@ Inheritance diagram for Execution::DocumentPlugin:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_execution_1_1_document_plugin_1_1_context_data.html">ContextData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ade94efa2af7c59bdfb993bfe6957c3fb"><td class="memItemLeft" align="right" valign="top"><a id="ade94efa2af7c59bdfb993bfe6957c3fb"></a>
@@ -126,12 +132,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr
 <tr class="memitem:a1b87e00b84199fec8346fc078e012f32"><td class="memItemLeft" align="right" valign="top"><a id="a1b87e00b84199fec8346fc078e012f32"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>on_documentClosing</b> () override</td></tr>
 <tr class="separator:a1b87e00b84199fec8346fc078e012f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ffeba722ffea9856df0d59dd786877e"><td class="memItemLeft" align="right" valign="top"><a id="a9ffeba722ffea9856df0d59dd786877e"></a>
-const <a class="el" href="class_execution_1_1_base_scenario_element.html">BaseScenarioElement</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>baseScenario</b> () const</td></tr>
-<tr class="separator:a9ffeba722ffea9856df0d59dd786877e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60721ea78b918da206dcfeef6e917c49"><td class="memItemLeft" align="right" valign="top"><a id="a60721ea78b918da206dcfeef6e917c49"></a>
-<a class="el" href="class_execution_1_1_base_scenario_element.html">BaseScenarioElement</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>baseScenario</b> ()</td></tr>
-<tr class="separator:a60721ea78b918da206dcfeef6e917c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aead00a59ac2ccf24aa9e387c69104e"><td class="memItemLeft" align="right" valign="top"><a id="a8aead00a59ac2ccf24aa9e387c69104e"></a>
+const std::shared_ptr&lt; <a class="el" href="class_execution_1_1_base_scenario_element.html">BaseScenarioElement</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>baseScenario</b> () const noexcept</td></tr>
+<tr class="separator:a8aead00a59ac2ccf24aa9e387c69104e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa357d5bc7b9a259a8df6c97f086c093"><td class="memItemLeft" align="right" valign="top"><a id="afa357d5bc7b9a259a8df6c97f086c093"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>playStartState</b> ()</td></tr>
 <tr class="separator:afa357d5bc7b9a259a8df6c97f086c093"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,15 +144,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>playStopState</b> ()<
 <tr class="memitem:aeabe575ad5ff698daca2c6c699cfe53e"><td class="memItemLeft" align="right" valign="top"><a id="aeabe575ad5ff698daca2c6c699cfe53e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isPlaying</b> () const</td></tr>
 <tr class="separator:aeabe575ad5ff698daca2c6c699cfe53e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee2779bc29cdb2ee3b6fe1dea9921c46"><td class="memItemLeft" align="right" valign="top"><a id="aee2779bc29cdb2ee3b6fe1dea9921c46"></a>
+const std::shared_ptr&lt; <a class="el" href="struct_execution_1_1_document_plugin_1_1_context_data.html">ContextData</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>contextData</b> () const noexcept</td></tr>
+<tr class="separator:aee2779bc29cdb2ee3b6fe1dea9921c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2e5a79fe6046a5b9c5c0ce19600bed9"><td class="memItemLeft" align="right" valign="top"><a id="af2e5a79fe6046a5b9c5c0ce19600bed9"></a>
 const <a class="el" href="struct_execution_1_1_context.html">Context</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>context</b> () const noexcept</td></tr>
 <tr class="separator:af2e5a79fe6046a5b9c5c0ce19600bed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4dba5704c86e2bc77a78bdeb00cb3ed"><td class="memItemLeft" align="right" valign="top"><a id="af4dba5704c86e2bc77a78bdeb00cb3ed"></a>
 const <a class="el" href="class_execution_1_1_execution_controller.html">ExecutionController</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>executionController</b> () const noexcept</td></tr>
 <tr class="separator:af4dba5704c86e2bc77a78bdeb00cb3ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1ba48f11886af2fea78c0e05eb39eaf"><td class="memItemLeft" align="right" valign="top"><a id="ac1ba48f11886af2fea78c0e05eb39eaf"></a>
-ossia::audio_protocol &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>audioProto</b> ()</td></tr>
-<tr class="separator:ac1ba48f11886af2fea78c0e05eb39eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0defe0c2fd23e433c52ff49085a6002f"><td class="memItemLeft" align="right" valign="top"><a id="a0defe0c2fd23e433c52ff49085a6002f"></a>
+std::shared_ptr&lt; ossia::audio_protocol &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>audioProto</b> ()</td></tr>
+<tr class="separator:a0defe0c2fd23e433c52ff49085a6002f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a719926f4523402b4e88c6890e0a4890d"><td class="memItemLeft" align="right" valign="top"><a id="a719926f4523402b4e88c6890e0a4890d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>runAllCommands</b> () const</td></tr>
 <tr class="separator:a719926f4523402b4e88c6890e0a4890d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,15 +191,6 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a4ced36ce308e7d09f57e3d4199696a83"><td class="memItemLeft" align="right" valign="top"><a id="a4ced36ce308e7d09f57e3d4199696a83"></a>
 const <a class="el" href="class_execution_1_1_settings_1_1_model.html">Execution::Settings::Model</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>settings</b></td></tr>
 <tr class="separator:a4ced36ce308e7d09f57e3d4199696a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e0ab6bf5ee539e28eda992144b83ae6"><td class="memItemLeft" align="right" valign="top"><a id="a1e0ab6bf5ee539e28eda992144b83ae6"></a>
-std::shared_ptr&lt; ossia::graph_interface &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>execGraph</b></td></tr>
-<tr class="separator:a1e0ab6bf5ee539e28eda992144b83ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9678f99a89f870d3d9672a93f99e6fa2"><td class="memItemLeft" align="right" valign="top"><a id="a9678f99a89f870d3d9672a93f99e6fa2"></a>
-std::shared_ptr&lt; ossia::execution_state &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>execState</b></td></tr>
-<tr class="separator:a9678f99a89f870d3d9672a93f99e6fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a943049e69bd228a948b99a3c73ed37a1"><td class="memItemLeft" align="right" valign="top"><a id="a943049e69bd228a948b99a3c73ed37a1"></a>
-std::shared_ptr&lt; ossia::bench_map &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>bench</b></td></tr>
-<tr class="separator:a943049e69bd228a948b99a3c73ed37a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4031ee9584d23ceffeb49723c2e47f27"><td class="memItemLeft" align="right" valign="top"><a id="a4031ee9584d23ceffeb49723c2e47f27"></a>
 QPointer&lt; <a class="el" href="class_dataflow_1_1_audio_device.html">Dataflow::AudioDevice</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>audio_device</b> {}</td></tr>
 <tr class="separator:a4031ee9584d23ceffeb49723c2e47f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
