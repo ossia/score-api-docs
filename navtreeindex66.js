@@ -1,5 +1,15 @@
 var NAVTREEINDEX66 =
 {
+"structscore_1_1_combo_slider.html#a167ed39f8dcd7d80fe9ace0407c7eee1":[12,0,44,36,5],
+"structscore_1_1_combo_slider.html#a57668b126d487439e60e81ac59f65c95":[12,0,44,36,2],
+"structscore_1_1_combo_slider.html#a59be30710e937df63e28648732be1ff4":[12,0,44,36,4],
+"structscore_1_1_combo_slider.html#aa3d2ab5958db2977e4d1c9a271086579":[12,0,44,36,3],
+"structscore_1_1_combo_slider.html#acd3a4dcc4a634294a6ce8cb0c8bf5cde":[12,0,44,36,0],
+"structscore_1_1_combo_slider.html#ad0095e0ec43cc419f77b8a074f601fcb":[12,0,44,36,1],
+"structscore_1_1_command_data.html":[12,0,44,39],
+"structscore_1_1_command_data.html#a85d47906690ba43b4f590a39e7fb676f":[12,0,44,39,1],
+"structscore_1_1_command_data.html#a8c0c7f7c221156255de262cc8620f61c":[12,0,44,39,4],
+"structscore_1_1_command_data.html#abe2509cf153b8be73742960b16295f09":[12,0,44,39,2],
 "structscore_1_1_command_data.html#ac93845d82d1ec51170c29ced6afefb7d":[12,0,44,39,3],
 "structscore_1_1_command_data.html#ad0cec5f5132041f92a4794ff54cc9d9f":[12,0,44,39,0],
 "structscore_1_1_command_key_hash.html":[12,0,44,41],
@@ -239,15 +249,5 @@ var NAVTREEINDEX66 =
 "structscore_1_1_q_graphics_slider_base.html#a9915634c9061dafe86b9c2ba6105ff9c":[12,0,44,201,9],
 "structscore_1_1_q_graphics_slider_base.html#aa2b664661e1710b848f61b004da779db":[12,0,44,201,2],
 "structscore_1_1_q_graphics_slider_base.html#aabb2cbb0002f1b024d463350c3e24076":[12,0,44,201,3],
-"structscore_1_1_q_graphics_slider_base.html#ab42e33d13e71bc82289dbbd81c19d513":[12,0,44,201,4],
-"structscore_1_1_q_graphics_slider_base.html#ae59d43ab8abe43d912f3e1e17b636f18":[12,0,44,201,6],
-"structscore_1_1_q_graphics_slider_base.html#ae71362560edbe716a22e68cb55c2986c":[12,0,44,201,10],
-"structscore_1_1_q_graphics_slider_base.html#aea26176148e6fafffb79bb85cf6de35d":[12,0,44,201,1],
-"structscore_1_1_q_graphics_slider_base.html#aed765ee805d9a160d0ccd2d7aad72122":[12,0,44,201,7],
-"structscore_1_1_recursive_watch_1_1_callbacks.html":[12,0,44,212,0],
-"structscore_1_1_recursive_watch_1_1_callbacks.html#ab67e7f5735255af6f490c848ee9a9a69":[12,0,44,212,0,0],
-"structscore_1_1_recursive_watch_1_1_callbacks.html#acc5e35ca9a0dc833cd4af29a3a379563":[12,0,44,212,0,1],
-"structscore_1_1_recursive_watch_1_1_watched.html":[12,0,44,212,1],
-"structscore_1_1_recursive_watch_1_1_watched.html#a14c56c722a7785ab5914288f87f6329d":[12,0,44,212,1,1],
-"structscore_1_1_recursive_watch_1_1_watched.html#a5b7c39d96d2ef4ff79764fc96fd4c60f":[12,0,44,212,1,0]
+"structscore_1_1_q_graphics_slider_base.html#ab42e33d13e71bc82289dbbd81c19d513":[12,0,44,201,4]
 };

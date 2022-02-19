@@ -1,5 +1,16 @@
 var NAVTREEINDEX69 =
 {
+"structscore_1_1gfx_1_1_texgen_node.html#ad6f3463ec5e3ead40089e313dbcdb93b":[12,0,44,2,46,7],
+"structscore_1_1gfx_1_1_texgen_node.html#adcd9238ddc52cd6be838bd28a4f2c5b1":[12,0,44,2,46,4],
+"structscore_1_1gfx_1_1_texgen_node_1_1_rendered.html":[12,0,44,2,46,0],
+"structscore_1_1gfx_1_1_texgen_node_1_1_rendered.html#a2627b851d9733c4a44c42e82e0b3af55":[12,0,44,2,46,0,2],
+"structscore_1_1gfx_1_1_texgen_node_1_1_rendered.html#a3f66431fd20fbe3a214181d9a8fb4e09":[12,0,44,2,46,0,4],
+"structscore_1_1gfx_1_1_texgen_node_1_1_rendered.html#a612e042513ce990dfa01ce5ac8170a05":[12,0,44,2,46,0,5],
+"structscore_1_1gfx_1_1_texgen_node_1_1_rendered.html#a6fb6b8b534b838fcdb31ff7c64ead3f1":[12,0,44,2,46,0,1],
+"structscore_1_1gfx_1_1_texgen_node_1_1_rendered.html#aa7ab81dd5f7c4a78d114bec23a006a07":[12,0,44,2,46,0,0],
+"structscore_1_1gfx_1_1_texgen_node_1_1_rendered.html#ac12f290bef9948a59037737dfc26bcc9":[12,0,44,2,46,0,3],
+"structscore_1_1gfx_1_1_texgen_node_1_1_rendered.html#ad88de17ff08565b8e3edea4afa08fad6":[12,0,44,2,46,0,6],
+"structscore_1_1gfx_1_1_texgen_node_1_1ubo.html":[12,0,44,2,46,1],
 "structscore_1_1gfx_1_1_texgen_node_1_1ubo.html#a36a5986782b17c9cb4bca766b1a54077":[12,0,44,2,46,1,0],
 "structscore_1_1gfx_1_1_texgen_node_1_1ubo.html#a9b16fd8dd4fd3b5e31bb8c3010a16f2b":[12,0,44,2,46,1,2],
 "structscore_1_1gfx_1_1_texgen_node_1_1ubo.html#ac7f1c062e1051d2bfdea8230c3483062":[12,0,44,2,46,1,1],
@@ -238,16 +249,5 @@ var NAVTREEINDEX69 =
 "structstd_1_1hash_3_01score_1_1_loaded_plugin_versions_01_4.html#ad43efeb7e54a352cdc1e6cee5218debe":[12,0,49,9,0],
 "structstd_1_1hash_3_01score_1_1_version_01_4.html":[12,0,49,10],
 "structstd_1_1hash_3_01score_1_1_version_01_4.html#a7b62bbe7b1622fa6d269069864ad917c":[12,0,49,10,0],
-"structstd_1_1hash_3_01std_1_1pair_3_01_q_string_00_01_q_string_01_4_01_4.html":[12,0,49,15],
-"structstd_1_1hash_3_01std_1_1pair_3_01_q_string_00_01_q_string_01_4_01_4.html#a1546f4d48b32268ffa7c1cced3ba8e60":[12,0,49,15,0],
-"structstd_1_1hash_3_01std_1_1pair_3_01_q_string_00_01const_01_q_pen_01_5_01_4_01_4.html":[12,0,49,14],
-"structstd_1_1hash_3_01std_1_1pair_3_01_q_string_00_01const_01_q_pen_01_5_01_4_01_4.html#a420076dfb82890a40e2153446431767d":[12,0,49,14,0],
-"structstd_1_1hash_3_01std_1_1tuple_3_01_q_string_00_01_q_string_00_01_q_string_00_01_q_string_01_4_01_4.html":[12,0,49,16],
-"structstd_1_1hash_3_01std_1_1tuple_3_01_q_string_00_01_q_string_00_01_q_string_00_01_q_string_01_4_01_4.html#a9586ce1d4cf8fb69a4f6fe6db0206dd9":[12,0,49,16,0],
-"structtypeholder.html":[12,0,493],
-"structtypeholder.html#ad854b9fd41051635ddc80fbf28286dc7":[12,0,493,0],
-"structunused__t.html":[12,0,496],
-"structunused__t.html#a471b44a30e3890fddbf892692408c744":[12,0,496,0],
-"structvisitor__abstract__entity__tag.html":[12,0,508],
-"structvisitor__abstract__object__tag.html":[12,0,509]
+"structstd_1_1hash_3_01std_1_1pair_3_01_q_string_00_01_q_string_01_4_01_4.html":[12,0,49,15]
 };

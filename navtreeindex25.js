@@ -1,5 +1,15 @@
 var NAVTREEINDEX25 =
 {
+"class_process_1_1_process_drop_handler.html#af354f5ef73bcc516aa7c5a622d931515":[12,0,37,69,11],
+"class_process_1_1_process_drop_handler_list.html":[12,0,37,70],
+"class_process_1_1_process_drop_handler_list.html#a772dc16d626da6fc51059101b2167512":[12,0,37,70,0],
+"class_process_1_1_process_drop_handler_list.html#a8560fee3d8a346f0453446eb1ce4c912":[12,0,37,70,1],
+"class_process_1_1_process_factory___t.html":[12,0,37,71],
+"class_process_1_1_process_factory___t.html#a0e2a8c69d25e2244812cba63c71ba540":[12,0,37,71,5],
+"class_process_1_1_process_factory___t.html#a20c021f07a21d1c78aa69bbaae4f4728":[12,0,37,71,1],
+"class_process_1_1_process_factory___t.html#a27e2022fc692305c9881d6c54e319d73":[12,0,37,71,0],
+"class_process_1_1_process_factory___t.html#a8fa4ce6cfa8b4b484d7233232910d0e5":[12,0,37,71,4],
+"class_process_1_1_process_factory___t.html#aa073f5e804fcbf1b0b24ba7a3355632c":[12,0,37,71,6],
 "class_process_1_1_process_factory___t.html#ab3321d70673822668938f158fc3a427b":[12,0,37,71,2],
 "class_process_1_1_process_factory___t.html#abaed947f97fdc180ed963ee2203ccd77":[12,0,37,71,7],
 "class_process_1_1_process_factory___t.html#adcff6d4e716fb041f78266c4ec23e6b2":[12,0,37,71,3],
@@ -239,15 +249,5 @@ var NAVTREEINDEX25 =
 "class_protocols_1_1_leapmotion_device.html#ac95ec165f86ebdaa9081a0348da355a5":[12,0,38,21,3],
 "class_protocols_1_1_leapmotion_protocol_factory.html":[12,0,38,22],
 "class_protocols_1_1_leapmotion_protocol_settings_widget.html":[12,0,38,23],
-"class_protocols_1_1_leapmotion_protocol_settings_widget.html#a05703dc70192f57151c6f9d9f4dc1bf4":[12,0,38,23,2],
-"class_protocols_1_1_leapmotion_protocol_settings_widget.html#a323028a52a7923c70f1c457536a9ef55":[12,0,38,23,4],
-"class_protocols_1_1_leapmotion_protocol_settings_widget.html#a3e2d1a957b333bb8ede25b4faf615c59":[12,0,38,23,3],
-"class_protocols_1_1_leapmotion_protocol_settings_widget.html#a78578a053278b595f5d43c55e0488151":[12,0,38,23,1],
-"class_protocols_1_1_leapmotion_protocol_settings_widget.html#ae5fb901e4d57efde4c0853ff8616a4d7":[12,0,38,23,0],
-"class_protocols_1_1_libmapper_client_device.html":[12,0,38,25],
-"class_protocols_1_1_libmapper_client_device.html#a2b38c36a674773d87809e78e60d43979":[12,0,38,25,0],
-"class_protocols_1_1_libmapper_client_device.html#a3aff0efe21769a8e2818301a9611285a":[12,0,38,25,3],
-"class_protocols_1_1_libmapper_client_device.html#a71c356d0a608eecb4631babc28ad3a2a":[12,0,38,25,2],
-"class_protocols_1_1_libmapper_client_device.html#acebd08aa0c198225c44eef87891dfbf4":[12,0,38,25,1],
-"class_protocols_1_1_libmapper_client_enumerator.html":[12,0,38,26]
+"class_protocols_1_1_leapmotion_protocol_settings_widget.html#a05703dc70192f57151c6f9d9f4dc1bf4":[12,0,38,23,2]
 };

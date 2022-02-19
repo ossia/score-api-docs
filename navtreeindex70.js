@@ -1,5 +1,16 @@
 var NAVTREEINDEX70 =
 {
+"structstd_1_1hash_3_01std_1_1pair_3_01_q_string_00_01_q_string_01_4_01_4.html#a1546f4d48b32268ffa7c1cced3ba8e60":[12,0,49,15,0],
+"structstd_1_1hash_3_01std_1_1pair_3_01_q_string_00_01const_01_q_pen_01_5_01_4_01_4.html":[12,0,49,14],
+"structstd_1_1hash_3_01std_1_1pair_3_01_q_string_00_01const_01_q_pen_01_5_01_4_01_4.html#a420076dfb82890a40e2153446431767d":[12,0,49,14,0],
+"structstd_1_1hash_3_01std_1_1tuple_3_01_q_string_00_01_q_string_00_01_q_string_00_01_q_string_01_4_01_4.html":[12,0,49,16],
+"structstd_1_1hash_3_01std_1_1tuple_3_01_q_string_00_01_q_string_00_01_q_string_00_01_q_string_01_4_01_4.html#a9586ce1d4cf8fb69a4f6fe6db0206dd9":[12,0,49,16,0],
+"structtypeholder.html":[12,0,493],
+"structtypeholder.html#ad854b9fd41051635ddc80fbf28286dc7":[12,0,493,0],
+"structunused__t.html":[12,0,496],
+"structunused__t.html#a471b44a30e3890fddbf892692408c744":[12,0,496,0],
+"structvisitor__abstract__entity__tag.html":[12,0,508],
+"structvisitor__abstract__object__tag.html":[12,0,509],
 "structvisitor__abstract__tag.html":[12,0,510],
 "structvisitor__default__tag.html":[12,0,511],
 "structvisitor__entity__tag.html":[12,0,512],

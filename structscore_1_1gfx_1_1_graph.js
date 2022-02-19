@@ -7,6 +7,7 @@ var structscore_1_1gfx_1_1_graph =
     [ "canDoVSync", "structscore_1_1gfx_1_1_graph.html#a956b5fda40333edffaa3655bbf18f4c6", null ],
     [ "clearEdges", "structscore_1_1gfx_1_1_graph.html#a1c3b40f6e90a21e4fb0636257f7bc975", null ],
     [ "createAllRenderLists", "structscore_1_1gfx_1_1_graph.html#a40ef061c5ac78aaa6243723c1cd95154", null ],
+    [ "createSingleRenderList", "structscore_1_1gfx_1_1_graph.html#a3603dc4ae5e632c8348d11b42916f6bb", null ],
     [ "relinkGraph", "structscore_1_1gfx_1_1_graph.html#a2053b9d1b4c0466c9cc5fe87be8cb5a5", null ],
     [ "removeNode", "structscore_1_1gfx_1_1_graph.html#a1693837e0d684408bb84af3f619cfc8a", null ],
     [ "renderLists", "structscore_1_1gfx_1_1_graph.html#a8a3a244d4b543fc342abfb53b78896cf", null ],

@@ -1,5 +1,15 @@
 var NAVTREEINDEX65 =
 {
+"struct_video_1_1_video_metadata.html":[12,0,52,8],
+"struct_video_1_1_video_metadata.html#a295120d81ca1eeaa2a7e0b8fe91c8ef0":[12,0,52,8,6],
+"struct_video_1_1_video_metadata.html#a5c61acc36f71dd4ceded70e96905a568":[12,0,52,8,1],
+"struct_video_1_1_video_metadata.html#a741acf3d405eb10f32a1b432be6edf15":[12,0,52,8,2],
+"struct_video_1_1_video_metadata.html#a83f8ae62a202fe01125c83dd0ae13736":[12,0,52,8,0],
+"struct_video_1_1_video_metadata.html#abaeb53df502481263ef2a38eba4b6f2a":[12,0,52,8,4],
+"struct_video_1_1_video_metadata.html#ace3e9803d7fa25b8e27d2d0f8a0e974e":[12,0,52,8,5],
+"struct_video_1_1_video_metadata.html#af92dae4346ca3c6ad2ddb8b8ed243ff4":[12,0,52,8,3],
+"struct_visitor_variant.html":[12,0,516],
+"struct_visitor_variant.html#ad643fb66a60259f0dd724e5218ade7e7":[12,0,516,1],
 "struct_visitor_variant.html#affaae1b6f6b802e8dc59c683f555732b":[12,0,516,0],
 "struct_web_socket_handler.html":[12,0,517],
 "struct_web_socket_handler.html#a18479a69a03eeed897c4334543023724":[12,0,517,1],
@@ -239,15 +249,5 @@ var NAVTREEINDEX65 =
 "structscore_1_1_color_ref.html#aa199449d79485e7782687cdbe5fc73ca":[12,0,44,34,0],
 "structscore_1_1_color_ref.html#ad07c4288d72a7baad4c6ef040b2740e7":[12,0,44,34,4],
 "structscore_1_1_color_ref.html#aee915d53978eb93a442fa426da79c02c":[12,0,44,34,11],
-"structscore_1_1_combo_slider.html":[12,0,44,36],
-"structscore_1_1_combo_slider.html#a167ed39f8dcd7d80fe9ace0407c7eee1":[12,0,44,36,5],
-"structscore_1_1_combo_slider.html#a57668b126d487439e60e81ac59f65c95":[12,0,44,36,2],
-"structscore_1_1_combo_slider.html#a59be30710e937df63e28648732be1ff4":[12,0,44,36,4],
-"structscore_1_1_combo_slider.html#aa3d2ab5958db2977e4d1c9a271086579":[12,0,44,36,3],
-"structscore_1_1_combo_slider.html#acd3a4dcc4a634294a6ce8cb0c8bf5cde":[12,0,44,36,0],
-"structscore_1_1_combo_slider.html#ad0095e0ec43cc419f77b8a074f601fcb":[12,0,44,36,1],
-"structscore_1_1_command_data.html":[12,0,44,39],
-"structscore_1_1_command_data.html#a85d47906690ba43b4f590a39e7fb676f":[12,0,44,39,1],
-"structscore_1_1_command_data.html#a8c0c7f7c221156255de262cc8620f61c":[12,0,44,39,4],
-"structscore_1_1_command_data.html#abe2509cf153b8be73742960b16295f09":[12,0,44,39,2]
+"structscore_1_1_combo_slider.html":[12,0,44,36]
 };

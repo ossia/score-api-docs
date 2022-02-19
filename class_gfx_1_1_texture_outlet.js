@@ -8,5 +8,6 @@ var class_gfx_1_1_texture_outlet =
     [ "TextureOutlet", "class_gfx_1_1_texture_outlet.html#ae96696a3cdb17dcf4558ac0735c55e3f", null ],
     [ "TextureOutlet", "class_gfx_1_1_texture_outlet.html#a0c93a8af518a785faaa819ea743bdef0", null ],
     [ "TextureOutlet", "class_gfx_1_1_texture_outlet.html#a7dc44c682d094755880e974f33fd8586", null ],
-    [ "type", "class_gfx_1_1_texture_outlet.html#a689b9c4056dc4433b1e26a5852abf29e", null ]
+    [ "type", "class_gfx_1_1_texture_outlet.html#a689b9c4056dc4433b1e26a5852abf29e", null ],
+    [ "nodeId", "class_gfx_1_1_texture_outlet.html#ae392c701347def088c09e788bdfc984b", null ]
 ];

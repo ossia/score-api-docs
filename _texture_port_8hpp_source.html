@@ -166,58 +166,60 @@ $(document).ready(function(){initNavTree('_texture_port_8hpp_source.html',''); i
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  {</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> Process::PortType::Texture;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="struct_gfx_1_1_texture_inlet_factory.html">   71</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_gfx_1_1_texture_inlet_factory.html">TextureInletFactory</a> final : <span class="keyword">public</span> <a class="code" href="class_dataflow_1_1_automatable_port_factory.html">Dataflow::AutomatablePortFactory</a></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">using</span> <a class="code" href="class_gfx_1_1_texture_inlet.html">Model_T</a> = <a class="code" href="class_gfx_1_1_texture_inlet.html">TextureInlet</a>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <a class="code" href="class_uuid_key.html">UuidKey&lt;Process::Port&gt;</a> concreteKey() <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="struct_metadata.html">Metadata&lt;ConcreteKey_k, Model_T&gt;::get</a>();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="class_gfx_1_1_texture_inlet.html">Model_T</a>* load(<span class="keyword">const</span> <a class="code" href="struct_visitor_variant.html">VisitorVariant</a>&amp; vis, QObject* parent)<span class="keyword"> override</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> score::deserialize_dyn(vis, [&amp;](<span class="keyword">auto</span>&amp;&amp; deserializer) {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_gfx_1_1_texture_inlet.html">Model_T</a>{deserializer, parent};</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    });</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">void</span> setupInletInspector(</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_inlet.html">Process::Inlet</a>&amp; port,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      QWidget* parent,</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <a class="code" href="class_inspector_1_1_layout.html">Inspector::Layout</a>&amp; lay,</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      QObject* context) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="struct_gfx_1_1_texture_outlet_factory.html">   94</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_gfx_1_1_texture_outlet_factory.html">TextureOutletFactory</a> final : <span class="keyword">public</span> <a class="code" href="class_dataflow_1_1_automatable_port_factory.html">Dataflow::AutomatablePortFactory</a></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keyword">using</span> <a class="code" href="class_gfx_1_1_texture_outlet.html">Model_T</a> = <a class="code" href="class_gfx_1_1_texture_outlet.html">TextureOutlet</a>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <a class="code" href="class_uuid_key.html">UuidKey&lt;Process::Port&gt;</a> concreteKey() <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="struct_metadata.html">Metadata&lt;ConcreteKey_k, Model_T&gt;::get</a>();</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <a class="code" href="class_gfx_1_1_texture_outlet.html">Model_T</a>* load(<span class="keyword">const</span> <a class="code" href="struct_visitor_variant.html">VisitorVariant</a>&amp; vis, QObject* parent)<span class="keyword"> override</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">return</span> score::deserialize_dyn(vis, [&amp;](<span class="keyword">auto</span>&amp;&amp; deserializer) {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_gfx_1_1_texture_outlet.html">Model_T</a>{deserializer, parent};</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    });</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  }</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordtype">void</span> setupOutletInspector(</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_outlet.html">Process::Outlet</a>&amp; port,</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      QWidget* parent,</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      <a class="code" href="class_inspector_1_1_layout.html">Inspector::Layout</a>&amp; lay,</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      QObject* context) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;};</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">int</span> nodeId{-1};</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="struct_gfx_1_1_texture_inlet_factory.html">   73</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_gfx_1_1_texture_inlet_factory.html">TextureInletFactory</a> final : <span class="keyword">public</span> <a class="code" href="class_dataflow_1_1_automatable_port_factory.html">Dataflow::AutomatablePortFactory</a></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">using</span> <a class="code" href="class_gfx_1_1_texture_inlet.html">Model_T</a> = <a class="code" href="class_gfx_1_1_texture_inlet.html">TextureInlet</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="class_uuid_key.html">UuidKey&lt;Process::Port&gt;</a> concreteKey() <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="struct_metadata.html">Metadata&lt;ConcreteKey_k, Model_T&gt;::get</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="class_gfx_1_1_texture_inlet.html">Model_T</a>* load(<span class="keyword">const</span> <a class="code" href="struct_visitor_variant.html">VisitorVariant</a>&amp; vis, QObject* parent)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> score::deserialize_dyn(vis, [&amp;](<span class="keyword">auto</span>&amp;&amp; deserializer) {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_gfx_1_1_texture_inlet.html">Model_T</a>{deserializer, parent};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    });</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">void</span> setupInletInspector(</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_inlet.html">Process::Inlet</a>&amp; port,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      QWidget* parent,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <a class="code" href="class_inspector_1_1_layout.html">Inspector::Layout</a>&amp; lay,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      QObject* context) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;};</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="struct_gfx_1_1_texture_outlet_factory.html">   96</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_gfx_1_1_texture_outlet_factory.html">TextureOutletFactory</a> final : <span class="keyword">public</span> <a class="code" href="class_dataflow_1_1_automatable_port_factory.html">Dataflow::AutomatablePortFactory</a></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;{</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keyword">using</span> <a class="code" href="class_gfx_1_1_texture_outlet.html">Model_T</a> = <a class="code" href="class_gfx_1_1_texture_outlet.html">TextureOutlet</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <a class="code" href="class_uuid_key.html">UuidKey&lt;Process::Port&gt;</a> concreteKey() <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="struct_metadata.html">Metadata&lt;ConcreteKey_k, Model_T&gt;::get</a>();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <a class="code" href="class_gfx_1_1_texture_outlet.html">Model_T</a>* load(<span class="keyword">const</span> <a class="code" href="struct_visitor_variant.html">VisitorVariant</a>&amp; vis, QObject* parent)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">return</span> score::deserialize_dyn(vis, [&amp;](<span class="keyword">auto</span>&amp;&amp; deserializer) {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_gfx_1_1_texture_outlet.html">Model_T</a>{deserializer, parent};</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    });</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">void</span> setupOutletInspector(</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_outlet.html">Process::Outlet</a>&amp; port,</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      QWidget* parent,</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <a class="code" href="class_inspector_1_1_layout.html">Inspector::Layout</a>&amp; lay,</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      QObject* context) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;};</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1366</div></div>
-<div class="ttc" id="astruct_gfx_1_1_texture_outlet_factory_html"><div class="ttname"><a href="struct_gfx_1_1_texture_outlet_factory.html">Gfx::TextureOutletFactory</a></div><div class="ttdef"><b>Definition:</b> TexturePort.hpp:94</div></div>
+<div class="ttc" id="astruct_gfx_1_1_texture_outlet_factory_html"><div class="ttname"><a href="struct_gfx_1_1_texture_outlet_factory.html">Gfx::TextureOutletFactory</a></div><div class="ttdef"><b>Definition:</b> TexturePort.hpp:96</div></div>
 <div class="ttc" id="aclass_process_1_1_outlet_html"><div class="ttname"><a href="class_process_1_1_outlet.html">Process::Outlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:267</div></div>
 <div class="ttc" id="astruct_metadata_html"><div class="ttname"><a href="struct_metadata.html">Metadata</a></div><div class="ttdoc">Static metadata implementation.</div><div class="ttdef"><b>Definition:</b> lib/score/tools/Metadata.hpp:36</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:15</div></div>
@@ -231,7 +233,7 @@ $(document).ready(function(){initNavTree('_texture_port_8hpp_source.html',''); i
 <div class="ttc" id="aclass_inspector_1_1_layout_html"><div class="ttname"><a href="class_inspector_1_1_layout.html">Inspector::Layout</a></div><div class="ttdef"><b>Definition:</b> Layout.hpp:33</div></div>
 <div class="ttc" id="anamespace_gfx_html"><div class="ttname"><a href="namespace_gfx.html">Gfx</a></div><div class="ttdoc">Binds the rendering pipeline to ossia processes.</div><div class="ttdef"><b>Definition:</b> CameraDevice.cpp:29</div></div>
 <div class="ttc" id="aclass_j_s_o_n_writer_html"><div class="ttname"><a href="class_j_s_o_n_writer.html">JSONWriter</a></div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:432</div></div>
-<div class="ttc" id="astruct_gfx_1_1_texture_inlet_factory_html"><div class="ttname"><a href="struct_gfx_1_1_texture_inlet_factory.html">Gfx::TextureInletFactory</a></div><div class="ttdef"><b>Definition:</b> TexturePort.hpp:71</div></div>
+<div class="ttc" id="astruct_gfx_1_1_texture_inlet_factory_html"><div class="ttname"><a href="struct_gfx_1_1_texture_inlet_factory.html">Gfx::TextureInletFactory</a></div><div class="ttdef"><b>Definition:</b> TexturePort.hpp:73</div></div>
 <div class="ttc" id="aclass_process_1_1_inlet_html"><div class="ttname"><a href="class_process_1_1_inlet.html">Process::Inlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:179</div></div>
 <div class="ttc" id="aclass_dataflow_1_1_automatable_port_factory_html"><div class="ttname"><a href="class_dataflow_1_1_automatable_port_factory.html">Dataflow::AutomatablePortFactory</a></div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:36</div></div>
 <!-- HTML footer for doxygen 1.8.8-->

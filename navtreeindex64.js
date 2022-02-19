@@ -1,5 +1,15 @@
 var NAVTREEINDEX64 =
 {
+"struct_t_serializer_3_01_data_stream_00_01_tree_node_3_01_t_01_4_01_4.html":[12,0,439],
+"struct_t_serializer_3_01_data_stream_00_01_tree_path_01_4.html":[12,0,440],
+"struct_t_serializer_3_01_data_stream_00_01_uuid_key_3_01_u_01_4_01_4.html":[12,0,442],
+"struct_t_serializer_3_01_data_stream_00_01boost_1_1container_1_1small__vector_3_01_t_01_5_00_01_n_01_4_01_4.html":[12,0,395],
+"struct_t_serializer_3_01_data_stream_00_01boost_1_1variant2_1_1variant_3_01_args_8_8_8_01_4_01_4.html":[12,0,396],
+"struct_t_serializer_3_01_data_stream_00_01boost_1_1variant2_1_1variant_3_01_args_8_8_8_01_4_01_4.html#a4971267c54a038d34d65afd57e6cef3d":[12,0,396,0],
+"struct_t_serializer_3_01_data_stream_00_01eggs_1_1variant_3_01_args_8_8_8_01_4_01_4.html":[12,0,397],
+"struct_t_serializer_3_01_data_stream_00_01eggs_1_1variant_3_01_args_8_8_8_01_4_01_4.html#a50b62abc88c92424effe821b9085f4d7":[12,0,397,0],
+"struct_t_serializer_3_01_data_stream_00_01ossia_1_1domain__base_3_01_t_01_4_01_4.html":[12,0,405],
+"struct_t_serializer_3_01_data_stream_00_01ossia_1_1domain__base_3_01_t_01_4_01_4.html#adcebf55c429c1777d63c484413f96f01":[12,0,405,0],
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1domain__base_3_01bool_01_4_01_4.html":[12,0,402],
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1domain__base_3_01bool_01_4_01_4.html#a3b5bbda5835d30e590b8f53675df832d":[12,0,402,0],
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1domain__base_3_01ossia_1_1impulse_01_4_01_4.html":[12,0,403],
@@ -239,15 +249,5 @@ var NAVTREEINDEX64 =
 "struct_video_1_1_video_interface.html":[12,0,52,7],
 "struct_video_1_1_video_interface.html#a574fe3e5f0576c2332f84939be6b9cbc":[12,0,52,7,2],
 "struct_video_1_1_video_interface.html#a654c89747de3bd51f51c8c0b4614350a":[12,0,52,7,1],
-"struct_video_1_1_video_interface.html#a6ddd60cf77f0fade1865660febc5e022":[12,0,52,7,0],
-"struct_video_1_1_video_metadata.html":[12,0,52,8],
-"struct_video_1_1_video_metadata.html#a295120d81ca1eeaa2a7e0b8fe91c8ef0":[12,0,52,8,6],
-"struct_video_1_1_video_metadata.html#a5c61acc36f71dd4ceded70e96905a568":[12,0,52,8,1],
-"struct_video_1_1_video_metadata.html#a741acf3d405eb10f32a1b432be6edf15":[12,0,52,8,2],
-"struct_video_1_1_video_metadata.html#a83f8ae62a202fe01125c83dd0ae13736":[12,0,52,8,0],
-"struct_video_1_1_video_metadata.html#abaeb53df502481263ef2a38eba4b6f2a":[12,0,52,8,4],
-"struct_video_1_1_video_metadata.html#ace3e9803d7fa25b8e27d2d0f8a0e974e":[12,0,52,8,5],
-"struct_video_1_1_video_metadata.html#af92dae4346ca3c6ad2ddb8b8ed243ff4":[12,0,52,8,3],
-"struct_visitor_variant.html":[12,0,516],
-"struct_visitor_variant.html#ad643fb66a60259f0dd724e5218ade7e7":[12,0,516,1]
+"struct_video_1_1_video_interface.html#a6ddd60cf77f0fade1865660febc5e022":[12,0,52,7,0]
 };

@@ -1,5 +1,15 @@
 var NAVTREEINDEX61 =
 {
+"struct_q_meta_type_id_3_01std_1_1vector_3_01vst3_1_1_available_plugin_01_4_01_4.html#abb7e1125bb978c455433841977c425e8af56b5bb9e7e7a8732e06b33c2af343f4":[12,0,305,0],
+"struct_q_meta_type_id_3_01std_1_1vector_3_01vst_1_1_v_s_t_info_01_4_01_4.html":[12,0,306],
+"struct_q_meta_type_id_3_01std_1_1vector_3_01vst_1_1_v_s_t_info_01_4_01_4.html#a10a06a685d082670aaf6f821258289e3a1845177fe42235ad3fa71602f6ffdd85":[12,0,306,0],
+"struct_q_meta_type_id_3_01vst3_1_1_available_plugin_01_4.html":[12,0,310],
+"struct_q_meta_type_id_3_01vst3_1_1_available_plugin_01_4.html#a248c1ce7be9c4ca800d1c1b24fd28627a0cd0179607479748c7063a885e59f9b6":[12,0,310,0],
+"struct_q_meta_type_id_3_01vst_1_1_v_s_t_info_01_4.html":[12,0,311],
+"struct_q_meta_type_id_3_01vst_1_1_v_s_t_info_01_4.html#a3b184334734443a366ebf6148253fd39adbbca8998069c0f239f669c0bc5e13f0":[12,0,311,0],
+"struct_recording_1_1_box.html":[12,0,39,2],
+"struct_recording_1_1_box.html#a721abe014117ce48acbc6449f0666db3":[12,0,39,2,0],
+"struct_recording_1_1_box.html#a8067c433c341792f1434368b960c7c6a":[12,0,39,2,1],
 "struct_recording_1_1_box.html#aab18663f6165896706ac1cf7c6827657":[12,0,39,2,2],
 "struct_recording_1_1_message_policy.html":[12,0,39,3],
 "struct_recording_1_1_message_policy.html#ab2f6b3b8b5ab68696b52c1160c76ffe0":[12,0,39,3,0],
@@ -239,15 +249,5 @@ var NAVTREEINDEX61 =
 "struct_scenario_1_1_curve_creator.html#a40719bc013ba6de055834ebaf6015c49":[12,0,43,45,12],
 "struct_scenario_1_1_curve_creator.html#a68627cfcb077bc63fc2b807d6199323b":[12,0,43,45,2],
 "struct_scenario_1_1_curve_creator.html#a6896d4fe71f7db9d9d1a6ef8cb68dacd":[12,0,43,45,6],
-"struct_scenario_1_1_curve_creator.html#a7637f1d4b97831309894d5546b988c48":[12,0,43,45,3],
-"struct_scenario_1_1_curve_creator.html#a81ca26b23a3283fd9c1600c42069b1c8":[12,0,43,45,7],
-"struct_scenario_1_1_curve_creator.html#a84d2b900a9a30c1164a127eee9dc6d36":[12,0,43,45,14],
-"struct_scenario_1_1_curve_creator.html#ab2d6865da3f3fdf2715d6de30ca8e49b":[12,0,43,45,11],
-"struct_scenario_1_1_curve_creator.html#abd024c5653b3817111d28e34bcabdbce":[12,0,43,45,9],
-"struct_scenario_1_1_curve_creator.html#ac0fdeda4e8bd58fc2156243ddd61e5c8":[12,0,43,45,1],
-"struct_scenario_1_1_curve_creator.html#acf51094b5a495835c38871676f8f2318":[12,0,43,45,10],
-"struct_scenario_1_1_curve_creator.html#ade3a799f9ed8c254553951f3caa8b118":[12,0,43,45,15],
-"struct_scenario_1_1_curve_creator.html#adf3e665d6cda553b31f64ae5562978b4":[12,0,43,45,5],
-"struct_scenario_1_1_curve_creator.html#ae741a91406d9c9ae2aabea8368775328":[12,0,43,45,16],
-"struct_scenario_1_1_cycle_detector.html":[12,0,43,46]
+"struct_scenario_1_1_curve_creator.html#a7637f1d4b97831309894d5546b988c48":[12,0,43,45,3]
 };

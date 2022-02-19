@@ -1,5 +1,15 @@
 var NAVTREEINDEX59 =
 {
+"struct_process_1_1_context.html#a406b0e32dda131c34a49e09814789b3c":[12,0,37,9,2],
+"struct_process_1_1_context.html#a4363068d20d3716d38dc9918f636e21f":[12,0,37,9,0],
+"struct_process_1_1_context.html#a58dd39a6e6eeb0e2d45436630ddeef15":[12,0,37,9,3],
+"struct_process_1_1_context.html#ab99ea45db27659fdfdca64907fe75931":[12,0,37,9,1],
+"struct_process_1_1_control_message.html":[12,0,37,11],
+"struct_process_1_1_control_message.html#a88feb3aadc5557e2adc7ea6d7f50edb7":[12,0,37,11,0],
+"struct_process_1_1_control_message.html#a9a83dfd80878bd603e2f9b7a789d59ac":[12,0,37,11,1],
+"struct_process_1_1_control_message.html#aa6cb328892e65910050436469c198eea":[12,0,37,11,2],
+"struct_process_1_1_control_setup.html":[12,0,37,13],
+"struct_process_1_1_control_setup.html#a20cf97ff1ab576747d5c504cc5356062":[12,0,37,13,4],
 "struct_process_1_1_control_setup.html#a94bab3be048d189a89fb2dc93c96f763":[12,0,37,13,0],
 "struct_process_1_1_control_setup.html#a9bf51d3923572302660538704dd042ad":[12,0,37,13,3],
 "struct_process_1_1_control_setup.html#abe02bbfcefe5836cafdd4d46d65c7f12":[12,0,37,13,2],
@@ -239,15 +249,5 @@ var NAVTREEINDEX59 =
 "struct_protocols_1_1_local_specific_settings.html#a37aaba774200b1304aef82c0d5983dc4":[12,0,38,34,1],
 "struct_protocols_1_1_local_specific_settings.html#a98eec5a96da486f31f6b80d2a41856e6":[12,0,38,34,0],
 "struct_protocols_1_1_m_i_d_i_specific_settings.html":[12,0,38,41],
-"struct_protocols_1_1_m_i_d_i_specific_settings.html#a45d0b66099e23983018916be08499b2f":[12,0,38,41,4],
-"struct_protocols_1_1_m_i_d_i_specific_settings.html#a96edc66808394ecd36565c282ed78a4f":[12,0,38,41,3],
-"struct_protocols_1_1_m_i_d_i_specific_settings.html#abf02cc93a9b4d649449462339194e5a2":[12,0,38,41,2],
-"struct_protocols_1_1_m_i_d_i_specific_settings.html#ac5393555c2e6eda810e8d69e1cd5c1c0":[12,0,38,41,5],
-"struct_protocols_1_1_m_i_d_i_specific_settings.html#ad7f2505ac8519745180bff227d4c839c":[12,0,38,41,1],
-"struct_protocols_1_1_m_i_d_i_specific_settings.html#aee788304e939cdee1ebb1876af1d3aa3":[12,0,38,41,0],
-"struct_protocols_1_1_m_i_d_i_specific_settings.html#aee788304e939cdee1ebb1876af1d3aa3a7c147cda9e49590f6abe83d118b7353b":[12,0,38,41,0,1],
-"struct_protocols_1_1_m_i_d_i_specific_settings.html#aee788304e939cdee1ebb1876af1d3aa3aefeb369cccbd560588a756610865664c":[12,0,38,41,0,0],
-"struct_protocols_1_1_minuit_specific_settings.html":[12,0,38,45],
-"struct_protocols_1_1_minuit_specific_settings.html#a0cc7cf9446f9dd2f2b42e973c60cb50b":[12,0,38,45,2],
-"struct_protocols_1_1_minuit_specific_settings.html#a6f5cf61aeea82ab89aa291a557b14094":[12,0,38,45,1]
+"struct_protocols_1_1_m_i_d_i_specific_settings.html#a45d0b66099e23983018916be08499b2f":[12,0,38,41,4]
 };

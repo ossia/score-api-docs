@@ -1,5 +1,15 @@
 var NAVTREEINDEX19 =
 {
+"class_library_1_1_info_widget.html#a2065ddae22ca759433d483406fe61e4d":[12,0,24,2,2],
+"class_library_1_1_info_widget.html#a31a810e5bb52f97101c204ffcae6049a":[12,0,24,2,1],
+"class_library_1_1_info_widget.html#a3bae075e99a53a8b20aa28a049b917d3":[12,0,24,2,4],
+"class_library_1_1_info_widget.html#a7f0cdef698c0dcca21c916656278844b":[12,0,24,2,3],
+"class_library_1_1_info_widget.html#a960346c72a0d3a907ab5824b47c592f0":[12,0,24,2,0],
+"class_library_1_1_info_widget.html#aade90e3e10c17784fafaecc21ff7057d":[12,0,24,2,6],
+"class_library_1_1_info_widget.html#ace853154a506da24e1ebe5fb64ab3720":[12,0,24,2,5],
+"class_library_1_1_library_document_loader.html":[12,0,24,4],
+"class_library_1_1_library_document_loader.html#a0f61c69b41d0873570eefbe9fd0af2f3":[12,0,24,4,0],
+"class_library_1_1_library_document_loader.html#a16a9734f2f151df020e382c48415b7b3":[12,0,24,4,2],
 "class_library_1_1_library_document_loader.html#ac40f7129547187641db37b0d259ae87e":[12,0,24,4,1],
 "class_library_1_1_library_interface.html":[12,0,24,5],
 "class_library_1_1_library_interface.html#a1001dc33631018a66785f4bcc5a417f2":[12,0,24,5,9],
@@ -239,15 +249,5 @@ var NAVTREEINDEX19 =
 "class_media_1_1_audio_file_manager.html#ae396b3636acf835d229fefe3a44bf29b":[12,0,28,7,1],
 "class_media_1_1_change_audio_file.html":[12,0,28,12],
 "class_media_1_1_change_audio_file.html#a75cfece53fefc7eabf29cac5d3310f24":[12,0,28,12,1],
-"class_media_1_1_change_audio_file.html#ab566718b80fbef7c2febe23f4f16657a":[12,0,28,12,0],
-"class_media_1_1_change_steps.html":[12,0,28,13],
-"class_media_1_1_change_steps.html#a232557bbc59fd26c324ed73aa72865f9":[12,0,28,13,1],
-"class_media_1_1_change_steps.html#a33c9d3295b176d21e4e0fc10a78b7237":[12,0,28,13,4],
-"class_media_1_1_change_steps.html#a4e371d361622264453acb7d8ef56d9c9":[12,0,28,13,3],
-"class_media_1_1_change_steps.html#a55e41665c13d06ae321cc611d7e5da07":[12,0,28,13,2],
-"class_media_1_1_change_steps.html#a8ffc3193526bd819a2935799ba12d692":[12,0,28,13,0],
-"class_media_1_1_change_steps.html#ae7f74fb8cd788fda29ec17044c4cae3a":[12,0,28,13,5],
-"class_media_1_1_load_processed_audio_file.html":[12,0,28,15],
-"class_media_1_1_load_processed_audio_file.html#a16550795d256dbfa15a9b04f19982973":[12,0,28,15,0],
-"class_media_1_1_load_processed_audio_file.html#a30288f7c53e7a2bdb876926955bb96be":[12,0,28,15,1]
+"class_media_1_1_change_audio_file.html#ab566718b80fbef7c2febe23f4f16657a":[12,0,28,12,0]
 };

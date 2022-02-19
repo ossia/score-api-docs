@@ -1,5 +1,15 @@
 var NAVTREEINDEX50 =
 {
+"score-plugin-nodal_2_nodal_2_process_8hpp_source.html":[13,0,919],
+"score-plugin-nodal_2_nodal_2_view_8hpp_source.html":[13,0,1349],
+"score-plugin-packagemanager_2_package_manager_2_factory_8hpp_source.html":[13,0,439],
+"score-plugin-packagemanager_2_package_manager_2_model_8hpp_source.html":[13,0,755],
+"score-plugin-packagemanager_2_package_manager_2_view_8hpp_source.html":[13,0,1350],
+"score-plugin-protocols_2_protocols_2_settings_2_factory_8hpp_source.html":[13,0,440],
+"score-plugin-protocols_2_protocols_2_settings_2_model_8hpp_source.html":[13,0,756],
+"score-plugin-protocols_2_protocols_2_settings_2_view_8hpp_source.html":[13,0,1351],
+"score-plugin-recording_2_recording_2_application_plugin_8hpp_source.html":[13,0,56],
+"score-plugin-remotecontrol_2_remote_control_2_application_plugin_8hpp_source.html":[13,0,57],
 "score-plugin-remotecontrol_2_remote_control_2_scenario_2_process_8hpp_source.html":[13,0,920],
 "score-plugin-remotecontrol_2_remote_control_2_settings_2_factory_8hpp_source.html":[13,0,441],
 "score-plugin-remotecontrol_2_remote_control_2_settings_2_model_8hpp_source.html":[13,0,757],
@@ -239,15 +249,5 @@ var NAVTREEINDEX50 =
 "struct_control_1_1_button.html":[12,0,4,1],
 "struct_control_1_1_button.html#a2d29692df8c941b67f9355a8ade9a64d":[12,0,4,1,6],
 "struct_control_1_1_button.html#a3dc04378419702cd709bd6b640be5093":[12,0,4,1,7],
-"struct_control_1_1_button.html#a4cf5e2b46d7f025ed6842bb488775c78":[12,0,4,1,5],
-"struct_control_1_1_button.html#a52c0a4498cd909d447935d062df1b980":[12,0,4,1,3],
-"struct_control_1_1_button.html#a63e5c8c0ef1442bad5dfd03a8b393e2c":[12,0,4,1,4],
-"struct_control_1_1_button.html#acea2931e183db113cb3d1a84429df07b":[12,0,4,1,2],
-"struct_control_1_1_button.html#ad8647dbbbb2d19101fd9c314c9c0b85b":[12,0,4,1,0],
-"struct_control_1_1_button.html#af8731514ec7adc2becad0d2793e9ee4f":[12,0,4,1,1],
-"struct_control_1_1_chooser_toggle.html":[12,0,4,2],
-"struct_control_1_1_chooser_toggle.html#a0a2a18a01602facbcf58e0f120517723":[12,0,4,2,9],
-"struct_control_1_1_chooser_toggle.html#a155240fb5092539f2d9f95fef8f8774e":[12,0,4,2,5],
-"struct_control_1_1_chooser_toggle.html#a470a9ae9c580aecc71cdf898abf1f21b":[12,0,4,2,6],
-"struct_control_1_1_chooser_toggle.html#a67b3b2a089203207be636e90374e8350":[12,0,4,2,8]
+"struct_control_1_1_button.html#a4cf5e2b46d7f025ed6842bb488775c78":[12,0,4,1,5]
 };

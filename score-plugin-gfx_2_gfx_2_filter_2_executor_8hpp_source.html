@@ -117,16 +117,18 @@ $(document).ready(function(){initNavTree('score-plugin-gfx_2_gfx_2_filter_2_exec
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx,</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      QObject* parent);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">void</span> on_shaderChanged();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  std::pair&lt;ossia::inlets, ossia::outlets&gt; <a class="code" href="class_gfx_1_1_filter_1_1_process_executor_component.html#a23f35045760185cf569aff947104a8c2">setup_node</a>(<a class="code" href="struct_execution_1_1_transaction.html">Execution::Transaction</a>&amp; transact);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  Process::Inlets m_oldInlets;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  Process::Outlets m_oldOutlets;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">using</span> <a class="code" href="class_execution_1_1_process_component_factory___t.html">ProcessExecutorComponentFactory</a></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    = <a class="code" href="class_execution_1_1_process_component_factory___t.html">Execution::ProcessComponentFactory_T&lt;ProcessExecutorComponent&gt;</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">void</span> cleanup() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordtype">void</span> on_shaderChanged();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  std::pair&lt;ossia::inlets, ossia::outlets&gt; <a class="code" href="class_gfx_1_1_filter_1_1_process_executor_component.html#a23f35045760185cf569aff947104a8c2">setup_node</a>(<a class="code" href="struct_execution_1_1_transaction.html">Execution::Transaction</a>&amp; transact);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  Process::Inlets m_oldInlets;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  Process::Outlets m_oldOutlets;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">using</span> <a class="code" href="class_execution_1_1_process_component_factory___t.html">ProcessExecutorComponentFactory</a></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    = <a class="code" href="class_execution_1_1_process_component_factory___t.html">Execution::ProcessComponentFactory_T&lt;ProcessExecutorComponent&gt;</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_execution_1_1_process_component_factory___t_html"><div class="ttname"><a href="class_execution_1_1_process_component_factory___t.html">Execution::ProcessComponentFactory_T</a></div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:127</div></div>
@@ -134,7 +136,7 @@ $(document).ready(function(){initNavTree('score-plugin-gfx_2_gfx_2_filter_2_exec
 <div class="ttc" id="anamespace_execution_html"><div class="ttname"><a href="namespace_execution.html">Execution</a></div><div class="ttdoc">Components used for the execution of a score.</div><div class="ttdef"><b>Definition:</b> ProcessComponent.cpp:11</div></div>
 <div class="ttc" id="aclass_gfx_1_1_filter_1_1_process_executor_component_html"><div class="ttname"><a href="class_gfx_1_1_filter_1_1_process_executor_component.html">Gfx::Filter::ProcessExecutorComponent</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Filter/Executor.hpp:9</div></div>
 <div class="ttc" id="astruct_execution_1_1_context_html"><div class="ttname"><a href="struct_execution_1_1_context.html">Execution::Context</a></div><div class="ttdef"><b>Definition:</b> ExecutionContext.hpp:89</div></div>
-<div class="ttc" id="aclass_gfx_1_1_filter_1_1_process_executor_component_html_a23f35045760185cf569aff947104a8c2"><div class="ttname"><a href="class_gfx_1_1_filter_1_1_process_executor_component.html#a23f35045760185cf569aff947104a8c2">Gfx::Filter::ProcessExecutorComponent::setup_node</a></div><div class="ttdeci">std::pair&lt; ossia::inlets, ossia::outlets &gt; setup_node(Execution::Transaction &amp;transact)</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Filter/Executor.cpp:122</div></div>
+<div class="ttc" id="aclass_gfx_1_1_filter_1_1_process_executor_component_html_a23f35045760185cf569aff947104a8c2"><div class="ttname"><a href="class_gfx_1_1_filter_1_1_process_executor_component.html#a23f35045760185cf569aff947104a8c2">Gfx::Filter::ProcessExecutorComponent::setup_node</a></div><div class="ttdeci">std::pair&lt; ossia::inlets, ossia::outlets &gt; setup_node(Execution::Transaction &amp;transact)</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Filter/Executor.cpp:142</div></div>
 <div class="ttc" id="astruct_execution_1_1_transaction_html"><div class="ttname"><a href="struct_execution_1_1_transaction.html">Execution::Transaction</a></div><div class="ttdef"><b>Definition:</b> ExecutionSetup.hpp:44</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
