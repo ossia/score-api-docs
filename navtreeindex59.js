@@ -1,5 +1,6 @@
 var NAVTREEINDEX59 =
 {
+"struct_process_1_1_context.html":[12,0,37,9],
 "struct_process_1_1_context.html#a406b0e32dda131c34a49e09814789b3c":[12,0,37,9,2],
 "struct_process_1_1_context.html#a4363068d20d3716d38dc9918f636e21f":[12,0,37,9,0],
 "struct_process_1_1_context.html#a58dd39a6e6eeb0e2d45436630ddeef15":[12,0,37,9,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX59 =
 "struct_protocols_1_1_local_specific_settings.html":[12,0,38,34],
 "struct_protocols_1_1_local_specific_settings.html#a37aaba774200b1304aef82c0d5983dc4":[12,0,38,34,1],
 "struct_protocols_1_1_local_specific_settings.html#a98eec5a96da486f31f6b80d2a41856e6":[12,0,38,34,0],
-"struct_protocols_1_1_m_i_d_i_specific_settings.html":[12,0,38,41],
-"struct_protocols_1_1_m_i_d_i_specific_settings.html#a45d0b66099e23983018916be08499b2f":[12,0,38,41,4]
+"struct_protocols_1_1_m_i_d_i_specific_settings.html":[12,0,38,41]
 };

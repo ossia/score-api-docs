@@ -1,7 +1,8 @@
 var struct_execution_1_1_setup_context =
 [
     [ "RegisteredPorts", "struct_execution_1_1_setup_context_1_1_registered_ports.html", "struct_execution_1_1_setup_context_1_1_registered_ports" ],
-    [ "SetupContext", "struct_execution_1_1_setup_context.html#a4fc898c0f2618eaeaacab752d97e70ff", null ],
+    [ "SetupContext", "struct_execution_1_1_setup_context.html#a4421ae0e2758bcff6e8a8e65c487b03f", null ],
+    [ "~SetupContext", "struct_execution_1_1_setup_context.html#ac8617b62613464d03702f35766a19f1e", null ],
     [ "connectCable", "struct_execution_1_1_setup_context.html#aca50f72b15029e50d33847ba55fe8559", null ],
     [ "on_cableCreated", "struct_execution_1_1_setup_context.html#a2bc92ffd800d4c880ce60e2313b3d272", null ],
     [ "on_cableRemoved", "struct_execution_1_1_setup_context.html#a8dded15744ba050cefdc510aa4cedd1c", null ],

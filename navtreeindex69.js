@@ -1,5 +1,6 @@
 var NAVTREEINDEX69 =
 {
+"structscore_1_1gfx_1_1_texgen_node.html#aa099fc44c6644699fd3bd0f99a14aaa0":[12,0,44,2,46,6],
 "structscore_1_1gfx_1_1_texgen_node.html#ad6f3463ec5e3ead40089e313dbcdb93b":[12,0,44,2,46,7],
 "structscore_1_1gfx_1_1_texgen_node.html#adcd9238ddc52cd6be838bd28a4f2c5b1":[12,0,44,2,46,4],
 "structscore_1_1gfx_1_1_texgen_node_1_1_rendered.html":[12,0,44,2,46,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX69 =
 "structstd_1_1hash_3_01score_1_1_loaded_plugin_versions_01_4.html":[12,0,49,9],
 "structstd_1_1hash_3_01score_1_1_loaded_plugin_versions_01_4.html#ad43efeb7e54a352cdc1e6cee5218debe":[12,0,49,9,0],
 "structstd_1_1hash_3_01score_1_1_version_01_4.html":[12,0,49,10],
-"structstd_1_1hash_3_01score_1_1_version_01_4.html#a7b62bbe7b1622fa6d269069864ad917c":[12,0,49,10,0],
-"structstd_1_1hash_3_01std_1_1pair_3_01_q_string_00_01_q_string_01_4_01_4.html":[12,0,49,15]
+"structstd_1_1hash_3_01score_1_1_version_01_4.html#a7b62bbe7b1622fa6d269069864ad917c":[12,0,49,10,0]
 };
