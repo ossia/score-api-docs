@@ -28,6 +28,13 @@ var namespace_gfx =
       [ "InputSettingsWidget", "class_gfx_1_1_shmdata_1_1_input_settings_widget.html", "class_gfx_1_1_shmdata_1_1_input_settings_widget" ],
       [ "InputStream", "class_gfx_1_1_shmdata_1_1_input_stream.html", "class_gfx_1_1_shmdata_1_1_input_stream" ]
     ] ],
+    [ "Spout", null, [
+      [ "InputDevice", "class_gfx_1_1_spout_1_1_input_device.html", "class_gfx_1_1_spout_1_1_input_device" ],
+      [ "InputFactory", "class_gfx_1_1_spout_1_1_input_factory.html", "class_gfx_1_1_spout_1_1_input_factory" ],
+      [ "InputSettings", "struct_gfx_1_1_spout_1_1_input_settings.html", "struct_gfx_1_1_spout_1_1_input_settings" ],
+      [ "InputSettingsWidget", "class_gfx_1_1_spout_1_1_input_settings_widget.html", "class_gfx_1_1_spout_1_1_input_settings_widget" ],
+      [ "SpoutInputNode", "struct_gfx_1_1_spout_1_1_spout_input_node.html", "struct_gfx_1_1_spout_1_1_spout_input_node" ]
+    ] ],
     [ "Text", null, [
       [ "Model", "class_gfx_1_1_text_1_1_model.html", "class_gfx_1_1_text_1_1_model" ],
       [ "ProcessExecutorComponent", "class_gfx_1_1_text_1_1_process_executor_component.html", "class_gfx_1_1_text_1_1_process_executor_component" ],
@@ -91,6 +98,10 @@ var namespace_gfx =
     [ "ShmdataOutputProtocolFactory", "class_gfx_1_1_shmdata_output_protocol_factory.html", "class_gfx_1_1_shmdata_output_protocol_factory" ],
     [ "ShmdataOutputSettingsWidget", "class_gfx_1_1_shmdata_output_settings_widget.html", "class_gfx_1_1_shmdata_output_settings_widget" ],
     [ "ShmSettings", "struct_gfx_1_1_shm_settings.html", "struct_gfx_1_1_shm_settings" ],
+    [ "simple_texture_input_device", "class_gfx_1_1simple__texture__input__device.html", "class_gfx_1_1simple__texture__input__device" ],
+    [ "simple_texture_input_node", "class_gfx_1_1simple__texture__input__node.html", "class_gfx_1_1simple__texture__input__node" ],
+    [ "simple_texture_input_parameter", "class_gfx_1_1simple__texture__input__parameter.html", "class_gfx_1_1simple__texture__input__parameter" ],
+    [ "simple_texture_input_protocol", "class_gfx_1_1simple__texture__input__protocol.html", "class_gfx_1_1simple__texture__input__protocol" ],
     [ "SpoutDevice", "class_gfx_1_1_spout_device.html", "class_gfx_1_1_spout_device" ],
     [ "SpoutNode", "struct_gfx_1_1_spout_node.html", "struct_gfx_1_1_spout_node" ],
     [ "SpoutProtocolFactory", "class_gfx_1_1_spout_protocol_factory.html", "class_gfx_1_1_spout_protocol_factory" ],

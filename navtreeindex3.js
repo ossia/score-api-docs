@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"_message_box_8hpp_source.html":[13,0,683],
 "_message_drop_handler_8hpp_source.html":[13,0,684],
 "_message_item_model_8hpp_source.html":[13,0,685],
 "_message_item_model_algorithms_8hpp_source.html":[13,0,686],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "_q_map_helper_8hpp_source.html":[13,0,980],
 "_qml_objects_8hpp_source.html":[13,0,981],
 "_quantification_widget_8hpp_source.html":[13,0,982],
-"_quantifier_8hpp_source.html":[13,0,983],
-"_r_g_b_a_8hpp_source.html":[13,0,1025]
+"_quantifier_8hpp_source.html":[13,0,983]
 };
