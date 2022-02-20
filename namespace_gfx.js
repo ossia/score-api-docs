@@ -31,7 +31,6 @@ var namespace_gfx =
     [ "Spout", null, [
       [ "InputDevice", "class_gfx_1_1_spout_1_1_input_device.html", "class_gfx_1_1_spout_1_1_input_device" ],
       [ "InputFactory", "class_gfx_1_1_spout_1_1_input_factory.html", "class_gfx_1_1_spout_1_1_input_factory" ],
-      [ "InputSettings", "struct_gfx_1_1_spout_1_1_input_settings.html", "struct_gfx_1_1_spout_1_1_input_settings" ],
       [ "InputSettingsWidget", "class_gfx_1_1_spout_1_1_input_settings_widget.html", "class_gfx_1_1_spout_1_1_input_settings_widget" ],
       [ "SpoutInputNode", "struct_gfx_1_1_spout_1_1_spout_input_node.html", "struct_gfx_1_1_spout_1_1_spout_input_node" ]
     ] ],
@@ -89,6 +88,9 @@ var namespace_gfx =
     [ "ProgramCache", "struct_gfx_1_1_program_cache.html", "struct_gfx_1_1_program_cache" ],
     [ "ShaderPreviewWidget", "class_gfx_1_1_shader_preview_widget.html", "class_gfx_1_1_shader_preview_widget" ],
     [ "ShaderSource", "struct_gfx_1_1_shader_source.html", "struct_gfx_1_1_shader_source" ],
+    [ "SharedInputProtocolFactory", "class_gfx_1_1_shared_input_protocol_factory.html", "class_gfx_1_1_shared_input_protocol_factory" ],
+    [ "SharedInputSettings", "struct_gfx_1_1_shared_input_settings.html", "struct_gfx_1_1_shared_input_settings" ],
+    [ "SharedInputSettingsWidget", "class_gfx_1_1_shared_input_settings_widget.html", "class_gfx_1_1_shared_input_settings_widget" ],
     [ "SharedOutputProtocolFactory", "class_gfx_1_1_shared_output_protocol_factory.html", "class_gfx_1_1_shared_output_protocol_factory" ],
     [ "SharedOutputSettings", "struct_gfx_1_1_shared_output_settings.html", "struct_gfx_1_1_shared_output_settings" ],
     [ "SharedOutputSettingsWidget", "class_gfx_1_1_shared_output_settings_widget.html", "class_gfx_1_1_shared_output_settings_widget" ],

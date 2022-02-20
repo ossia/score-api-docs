@@ -1,5 +1,16 @@
 var NAVTREEINDEX48 =
 {
+"classscore__plugin__remotecontrol.html#aac39a40947863a1a41fb5a0ea6a98150":[12,0,353,0],
+"classscore__plugin__scenario.html":[12,0,354],
+"classscore__plugin__scenario.html#a7b27edcd83fe718f313b68e85e8ad8ae":[12,0,354,0],
+"classscore__plugin__scenario.html#a97aab07367443c69db678569fe4e5203":[12,0,354,1],
+"classscore__plugin__spline.html":[12,0,355],
+"classscore__plugin__spline.html#a30d776179e41944af2883d8c90b825b4":[12,0,355,0],
+"classscore__plugin__spline.html#a63ec814e3529b18b6b03573095dedcdb":[12,0,355,1],
+"classscore__plugin__spline3d.html":[12,0,356],
+"classscore__plugin__spline3d.html#a8a27e2726e77ec939b0d8e6a9e272dd5":[12,0,356,0],
+"classscore__plugin__spline3d.html#abe67cbbcc69ee4c6886916447f89751e":[12,0,356,1],
+"classscore__plugin__transport.html":[12,0,357],
 "classscore__plugin__transport.html#a5fbb4498fc83f1b68795a75e67812ca1":[12,0,357,1],
 "classscore__plugin__transport.html#a7a660325f3e9f9a8e9afba303078dd20":[12,0,357,0],
 "classscore__plugin__ui.html":[12,0,358],
@@ -238,16 +249,5 @@ var NAVTREEINDEX48 =
 "classvst_1_1_create_control.html#a34005e90b2bf8276e8babba24a2ecc99":[12,0,53,5,1],
 "classvst_1_1_create_control.html#a3e0ebdc0eca876b6a72a5b5624e3bd7c":[12,0,53,5,3],
 "classvst_1_1_create_control.html#a4597b71b20a632d72c9182db0a299b0f":[12,0,53,5,5],
-"classvst_1_1_create_control.html#a4a1ffdf38f241815cdc232fad01ed52a":[12,0,53,5,2],
-"classvst_1_1_create_control.html#af5a0b3b06bb66f50cd076969eb55289a":[12,0,53,5,4],
-"classvst_1_1_effect_item.html":[12,0,53,6],
-"classvst_1_1_effect_item.html#a117a3225aa243e9652d707ae657a7937":[12,0,53,6,0],
-"classvst_1_1_effect_item.html#aa0988678596d7346c592bb0bd6e9cc5d":[12,0,53,6,1],
-"classvst_1_1_executor.html":[12,0,53,7],
-"classvst_1_1_executor.html#ac2cc69e2c6b3799ec6bc1255dba392b1":[12,0,53,7,0],
-"classvst_1_1_g_u_i_application_plugin.html":[12,0,53,9],
-"classvst_1_1_g_u_i_application_plugin.html#a38429b08aad71a1c4b6cfdbf68162194":[12,0,53,9,1],
-"classvst_1_1_g_u_i_application_plugin.html#af7b8de2c53e433cbe00a51159f34c7e7":[12,0,53,9,0],
-"classvst_1_1_graphics_slider.html":[12,0,53,8],
-"classvst_1_1_graphics_slider.html#a04946e8d73edfeceaa94e360d692ce31":[12,0,53,8,1]
+"classvst_1_1_create_control.html#a4a1ffdf38f241815cdc232fad01ed52a":[12,0,53,5,2]
 };

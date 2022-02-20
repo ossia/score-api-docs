@@ -1,5 +1,16 @@
 var NAVTREEINDEX42 =
 {
+"classscore_1_1_document_delegate_presenter.html#a6a7f9f5861c6bbd9cf91619c4881d20f":[12,0,44,68,4],
+"classscore_1_1_document_delegate_presenter.html#a7ea84970664e357e9d047c832c80c3d3":[12,0,44,68,0],
+"classscore_1_1_document_delegate_presenter.html#ab3c791b62ec39865b6009963a9223425":[12,0,44,68,1],
+"classscore_1_1_document_delegate_presenter.html#ab73f61b50b76944486cb030ad7e77187":[12,0,44,68,3],
+"classscore_1_1_document_delegate_view.html":[12,0,44,69],
+"classscore_1_1_document_delegate_view.html#a4a22cb44eaf68d7d017c852df5767e40":[12,0,44,69,0],
+"classscore_1_1_document_delegate_view.html#a84a1fe6b09304ebb94f6a976ac0b2ed1":[12,0,44,69,2],
+"classscore_1_1_document_delegate_view.html#aef0d878238acd1a027fcdc5fef7547cb":[12,0,44,69,1],
+"classscore_1_1_document_manager.html":[12,0,44,71],
+"classscore_1_1_document_manager.html#a0b6356281904a36fc898d320c49cae7f":[12,0,44,71,2],
+"classscore_1_1_document_manager.html#a0c9ec2a39ffcc486523978d55f234025":[12,0,44,71,4],
 "classscore_1_1_document_manager.html#a400441871dd59090d7455d0b15e713c1":[12,0,44,71,13],
 "classscore_1_1_document_manager.html#a42cd542de448af7c9d8700ee5abddfea":[12,0,44,71,11],
 "classscore_1_1_document_manager.html#a4309053f22247171eaa5f5689e2d9671":[12,0,44,71,20],
@@ -238,16 +249,5 @@ var NAVTREEINDEX42 =
 "classscore_1_1_helper_panel_delegate.html#a172092ff6976b3c67776eb581c424e37":[12,0,44,117,0],
 "classscore_1_1_helper_panel_delegate.html#a3d8bf8e9a33c24000a9a2cdc0fd2b96e":[12,0,44,117,1],
 "classscore_1_1_helper_panel_delegate.html#a745229a63929b39091a195e33a438e21":[12,0,44,117,2],
-"classscore_1_1_helper_panel_delegate.html#ad930a0f31525392b836c7f73b483dd5b":[12,0,44,117,3],
-"classscore_1_1_icon_provider.html":[12,0,44,124],
-"classscore_1_1_icon_provider.html#a1d8659d53f694384bbc910abb075766b":[12,0,44,124,1],
-"classscore_1_1_icon_provider.html#adfb5481527e9f72fe1139af2d8099a50":[12,0,44,124,3],
-"classscore_1_1_icon_provider.html#ae643ee9578a0677f40e5b399f789f909":[12,0,44,124,0],
-"classscore_1_1_icon_provider.html#af086197eb1840dd83bf9e95f0aa9ace1":[12,0,44,124,2],
-"classscore_1_1_indirect_array.html":[12,0,44,129],
-"classscore_1_1_indirect_array.html#a19d02053596c4f4047eaa3cf1713ee7a":[12,0,44,129,8],
-"classscore_1_1_indirect_array.html#a2dfa68682b22ea82f329b769ac26c929":[12,0,44,129,7],
-"classscore_1_1_indirect_array.html#a3d889e7a6372323cbc37f888e93c88a2":[12,0,44,129,0],
-"classscore_1_1_indirect_array.html#a5572be64b8193e841e749c9bc2fe584c":[12,0,44,129,6],
-"classscore_1_1_indirect_array.html#ab13ca6d17202f51c66bff8d0fd093b83":[12,0,44,129,4]
+"classscore_1_1_helper_panel_delegate.html#ad930a0f31525392b836c7f73b483dd5b":[12,0,44,117,3]
 };

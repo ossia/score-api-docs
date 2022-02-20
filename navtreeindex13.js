@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"class_explorer_1_1_address_vec_settings_widget.html#adc7af85425d004086016ea33ea6b7bdf":[12,0,11,18,8],
 "class_explorer_1_1_application_plugin.html":[12,0,11,19],
 "class_explorer_1_1_application_plugin.html#a3b275e621d9fa5f44e7d25fea00d88bf":[12,0,11,19,0],
 "class_explorer_1_1_bounding_mode_combo_box.html":[12,0,11,20],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "class_factor_1_1_factor_oracle.html#a24738a1163741adb0a7e3e6217bd6a72":[12,0,12,0,2],
 "class_factor_1_1_factor_oracle.html#a273b75dbcb0df98ab4c0ac8afa5bb4a1":[12,0,12,0,4],
 "class_factor_1_1_factor_oracle.html#a2a930407a6f1329509500f53c2d60321":[12,0,12,0,12],
-"class_factor_1_1_factor_oracle.html#a385f3abbac1c57ae78c0374cd7c0b4dc":[12,0,12,0,15],
-"class_factor_1_1_factor_oracle.html#a583fdfd2ceec9cea70bb1fe067b1053a":[12,0,12,0,13]
+"class_factor_1_1_factor_oracle.html#a385f3abbac1c57ae78c0374cd7c0b4dc":[12,0,12,0,15]
 };

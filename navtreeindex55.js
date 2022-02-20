@@ -1,5 +1,16 @@
 var NAVTREEINDEX55 =
 {
+"struct_gfx_1_1kinect2__camera.html#a8d23395af4ef0d7a54eecd9062e65b03":[12,0,16,27,0],
+"struct_gfx_1_1kinect2__camera.html#ad4b543f2ccdef64bea86d62dfb43f951":[12,0,16,27,3],
+"struct_gfx_1_1kinect2__settings.html":[12,0,16,33],
+"struct_gfx_1_1kinect2__settings.html#a597c9700c432543513c48ad2502ec922":[12,0,16,33,1],
+"struct_gfx_1_1kinect2__settings.html#a65dba340152ec9f643b7bf7fbd3c27dc":[12,0,16,33,3],
+"struct_gfx_1_1kinect2__settings.html#a7c202404994d7ff221862eedd45572fa":[12,0,16,33,0],
+"struct_gfx_1_1kinect2__settings.html#ac3b4c4036345e9785b97c4e421c4b7a0":[12,0,16,33,2],
+"struct_hierarchical_base_scenario_1_1_event_pair.html":[12,0,124,0],
+"struct_hierarchical_base_scenario_1_1_event_pair.html#a19b75ca38839b31fc6b0a1f7f8eb7901":[12,0,124,0,0],
+"struct_hierarchical_base_scenario_1_1_event_pair.html#acc4319a0677e64fd1804004436ec2519":[12,0,124,0,2],
+"struct_hierarchical_base_scenario_1_1_event_pair.html#af8a2d7bbac3f165b3bdd6e189f2b7ab4":[12,0,124,0,1],
 "struct_hierarchical_base_scenario_1_1_interval_pair.html":[12,0,124,1],
 "struct_hierarchical_base_scenario_1_1_interval_pair.html#a1ebd785619e1a32bedc057c146fbdf22":[12,0,124,1,1],
 "struct_hierarchical_base_scenario_1_1_interval_pair.html#a2b47e5106120df2a1de1270fd2dfcf24":[12,0,124,1,2],
@@ -238,16 +249,5 @@ var NAVTREEINDEX55 =
 "struct_l_v2_1_1_host_context.html#a41566a0988560a92a4c493511e447eaf":[12,0,26,3,22],
 "struct_l_v2_1_1_host_context.html#a438b27394c70f8c29d07066d5987b6e3":[12,0,26,3,43],
 "struct_l_v2_1_1_host_context.html#a4bf5f060890c7ffdb08cd124744adc29":[12,0,26,3,19],
-"struct_l_v2_1_1_host_context.html#a4f4a348ee30a84a035e8fd4401c7d699":[12,0,26,3,6],
-"struct_l_v2_1_1_host_context.html#a506f50ccd8a9d405d905e075a44f9510":[12,0,26,3,42],
-"struct_l_v2_1_1_host_context.html#a55efbdaa002c679bd6439eae296a3cb3":[12,0,26,3,7],
-"struct_l_v2_1_1_host_context.html#a5965f192169030eeef18a86ace8d07d4":[12,0,26,3,17],
-"struct_l_v2_1_1_host_context.html#a61d2919b8daae9bfed660a48f3214118":[12,0,26,3,14],
-"struct_l_v2_1_1_host_context.html#a621888723592aacd1bf897795c73b7d4":[12,0,26,3,0],
-"struct_l_v2_1_1_host_context.html#a62de526b6bd6973083dde79fd4fd1675":[12,0,26,3,16],
-"struct_l_v2_1_1_host_context.html#a6a338853fa0e0a4a9147cb48451e52d0":[12,0,26,3,33],
-"struct_l_v2_1_1_host_context.html#a6a86a5b7c77e528ca8758a15502d559f":[12,0,26,3,30],
-"struct_l_v2_1_1_host_context.html#a8d58f5887205ff23d4dfac45d025bd97":[12,0,26,3,27],
-"struct_l_v2_1_1_host_context.html#a8ed5ae707b8faf4518f66b7c2a272aa7":[12,0,26,3,46],
-"struct_l_v2_1_1_host_context.html#a8fc61470e59403781ac69ad64d21b94e":[12,0,26,3,1]
+"struct_l_v2_1_1_host_context.html#a4f4a348ee30a84a035e8fd4401c7d699":[12,0,26,3,6]
 };

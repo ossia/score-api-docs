@@ -1,5 +1,16 @@
 var NAVTREEINDEX51 =
 {
+"struct_atom_buffer.html#a22ce175aec4abbc2be02031212ba3814":[12,0,66,2],
+"struct_atom_buffer.html#a4b235ae85d608b8f7a0cd74c7e15afdd":[12,0,66,4],
+"struct_atom_buffer.html#a56d0fa21194799d09277c4ec05ac2b30":[12,0,66,7],
+"struct_atom_buffer.html#a56d985b3af09bbe4f5b083676b8cde7e":[12,0,66,5],
+"struct_atom_buffer.html#a825c90bc1f9a1cf027dc2e9c0352ff1f":[12,0,66,3],
+"struct_atom_buffer.html#a83672d9abb1cb3cf352dbf62aa69e139":[12,0,66,0],
+"struct_atom_buffer.html#af2e5947c5458b4b8184c3becc05d238b":[12,0,66,6],
+"struct_audio_1_1_audio_preview_executor_1_1sound.html":[12,0,1,4,0],
+"struct_audio_1_1_audio_preview_executor_1_1sound.html#a000ad74d686baff6dc6dacfb8f3ab75f":[12,0,1,4,0,1],
+"struct_audio_1_1_audio_preview_executor_1_1sound.html#a1e62f5df8f131127966ecdcf709fd3d1":[12,0,1,4,0,2],
+"struct_audio_1_1_audio_preview_executor_1_1sound.html#ad6c589f3e84110b16ede0b9bef319f6b":[12,0,1,4,0,0],
 "struct_audio_1_1_port_audio_card.html":[12,0,1,7],
 "struct_audio_1_1_port_audio_card.html#a09af1e30d4505e5307c80c7e7d29ac81":[12,0,1,7,9],
 "struct_audio_1_1_port_audio_card.html#a1cd1c603bb38bbac0653a9d30cb761e5":[12,0,1,7,5],
@@ -238,16 +249,5 @@ var NAVTREEINDEX51 =
 "struct_control_1_1_line_edit.html#a5484079215c4cbcea34dfca93446f81f":[12,0,4,31,2],
 "struct_control_1_1_line_edit.html#a6bf14447b1bc0439e50dbbff2c334865":[12,0,4,31,7],
 "struct_control_1_1_line_edit.html#aa37a2ab02c7dbe5152abffee6869abe1":[12,0,4,31,1],
-"struct_control_1_1_line_edit.html#aebeec8740ee25631dc2f8e66d3ab6610":[12,0,4,31,3],
-"struct_control_1_1_line_edit.html#aee73611eea60f7688c27dfcb0a140be9":[12,0,4,31,8],
-"struct_control_1_1_log_float_control.html":[12,0,4,32],
-"struct_control_1_1_log_float_control.html#a0440b8eb7a996a5a37a355e0e0370994":[12,0,4,32,4],
-"struct_control_1_1_log_float_control.html#a113ad6ad01e1629da55e8e05839ed379":[12,0,4,32,5],
-"struct_control_1_1_log_float_control.html#a3faeb1eb292e6d9cf6d212a7f7bbba11":[12,0,4,32,12],
-"struct_control_1_1_log_float_control.html#a427338719bcca38ed0a50454752dcf99":[12,0,4,32,6],
-"struct_control_1_1_log_float_control.html#a42b2b0d770d16faf7aa6849ff8102eae":[12,0,4,32,2],
-"struct_control_1_1_log_float_control.html#a4d9b0e9a9176b91f1ef109a74b73a391":[12,0,4,32,0],
-"struct_control_1_1_log_float_control.html#a5c08ddc06f6becbbac2148000e88986d":[12,0,4,32,7],
-"struct_control_1_1_log_float_control.html#a6b1f5ff7f9b1efc3d241f2eac3a75cdb":[12,0,4,32,8],
-"struct_control_1_1_log_float_control.html#aa63c13cd3e1251288feea317dd0156b9":[12,0,4,32,11]
+"struct_control_1_1_line_edit.html#aebeec8740ee25631dc2f8e66d3ab6610":[12,0,4,31,3]
 };

@@ -1184,6 +1184,7 @@ var files_dup =
     [ "SetTrigger.hpp", "_set_trigger_8hpp_source.html", null ],
     [ "ShaderCache.hpp", "_shader_cache_8hpp_source.html", null ],
     [ "ShaderProgram.hpp", "_shader_program_8hpp_source.html", null ],
+    [ "SharedInputSettings.hpp", "_shared_input_settings_8hpp_source.html", null ],
     [ "SharedOutputSettings.hpp", "_shared_output_settings_8hpp_source.html", null ],
     [ "ShmdataInputDevice.hpp", "_shmdata_input_device_8hpp_source.html", null ],
     [ "ShmdataOutputDevice.hpp", "_shmdata_output_device_8hpp_source.html", null ],

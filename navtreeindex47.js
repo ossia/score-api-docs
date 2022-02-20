@@ -1,5 +1,16 @@
 var NAVTREEINDEX47 =
 {
+"classscore_1_1gfx_1_1_generic_node_renderer.html#af2217ea7bc68b9b567eb2059ecdaf3df":[12,0,44,2,8,10],
+"classscore_1_1gfx_1_1_i_s_f_node.html":[12,0,44,2,19],
+"classscore_1_1gfx_1_1_i_s_f_node.html#a3b494693f4f4731ca08895903e4190ff":[12,0,44,2,19,9],
+"classscore_1_1gfx_1_1_i_s_f_node.html#a41aaf79d5d674732a25eeb45eefb5fe9":[12,0,44,2,19,7],
+"classscore_1_1gfx_1_1_i_s_f_node.html#a578cb6a279ad4c2498352b54bf3c5cdc":[12,0,44,2,19,8],
+"classscore_1_1gfx_1_1_i_s_f_node.html#a5a7fd2886dc8fe9e8eb1c4ca0fec94c1":[12,0,44,2,19,2],
+"classscore_1_1gfx_1_1_i_s_f_node.html#a64d863ccf1afbd92d6ea3a3833625607":[12,0,44,2,19,4],
+"classscore_1_1gfx_1_1_i_s_f_node.html#a98bf7a5e56c046b38668a148868c03d1":[12,0,44,2,19,3],
+"classscore_1_1gfx_1_1_i_s_f_node.html#a9af86aff5e6164e790abd16f871bc789":[12,0,44,2,19,5],
+"classscore_1_1gfx_1_1_i_s_f_node.html#aa9aadbf54153e52423101af05d1eb212":[12,0,44,2,19,0],
+"classscore_1_1gfx_1_1_i_s_f_node.html#ab64d91ec253896697ea66af00e39c9aa":[12,0,44,2,19,13],
 "classscore_1_1gfx_1_1_i_s_f_node.html#ac3792292ab735432912b144e21e612fa":[12,0,44,2,19,11],
 "classscore_1_1gfx_1_1_i_s_f_node.html#acda0ab9f96928f56a5bf82c8d4e3c506":[12,0,44,2,19,1],
 "classscore_1_1gfx_1_1_i_s_f_node.html#adc620ff4dae08e6c44a7c0fdaee162ca":[12,0,44,2,19,12],
@@ -238,16 +249,5 @@ var NAVTREEINDEX47 =
 "classscore__plugin__recording.html#a3f63afc4ad5bb6c84e93d7357e4afac0":[12,0,352,1],
 "classscore__plugin__recording.html#af44e59042634edd38e21281e6fc84116":[12,0,352,0],
 "classscore__plugin__remotecontrol.html":[12,0,353],
-"classscore__plugin__remotecontrol.html#a8cb6871e867c80d463dd503c3be14b97":[12,0,353,1],
-"classscore__plugin__remotecontrol.html#aac39a40947863a1a41fb5a0ea6a98150":[12,0,353,0],
-"classscore__plugin__scenario.html":[12,0,354],
-"classscore__plugin__scenario.html#a7b27edcd83fe718f313b68e85e8ad8ae":[12,0,354,0],
-"classscore__plugin__scenario.html#a97aab07367443c69db678569fe4e5203":[12,0,354,1],
-"classscore__plugin__spline.html":[12,0,355],
-"classscore__plugin__spline.html#a30d776179e41944af2883d8c90b825b4":[12,0,355,0],
-"classscore__plugin__spline.html#a63ec814e3529b18b6b03573095dedcdb":[12,0,355,1],
-"classscore__plugin__spline3d.html":[12,0,356],
-"classscore__plugin__spline3d.html#a8a27e2726e77ec939b0d8e6a9e272dd5":[12,0,356,0],
-"classscore__plugin__spline3d.html#abe67cbbcc69ee4c6886916447f89751e":[12,0,356,1],
-"classscore__plugin__transport.html":[12,0,357]
+"classscore__plugin__remotecontrol.html#a8cb6871e867c80d463dd503c3be14b97":[12,0,353,1]
 };

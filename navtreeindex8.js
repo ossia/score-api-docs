@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"class_curve_1_1_segment_model.html#ad54de18ce92509b2ca5b5e22727c48df":[12,0,6,41,8],
 "class_curve_1_1_segment_model.html#ad6b3f83715664e98dfe9c994e7e9aac3":[12,0,6,41,35],
 "class_curve_1_1_segment_model.html#ae9711573ba8e91ffe3d56ccfd18748dc":[12,0,6,41,24],
 "class_curve_1_1_segment_model.html#ae99e1f61fca6568506213b6f2e85191c":[12,0,6,41,9],
@@ -161,7 +162,7 @@ var NAVTREEINDEX8 =
 "class_data_stream_reader.html#a38a33e62aa921843fdb76ba7429b21a9":[12,0,95,21],
 "class_data_stream_reader.html#a39359869264effdee1d0a2f2a9b3a807":[12,0,95,93],
 "class_data_stream_reader.html#a3bfea87fd2a0c74004a5f183c01812f5":[12,0,95,158],
-"class_data_stream_reader.html#a3d39da3ce9ccdc98c7c09e82fe4b5e92":[12,0,95,37],
+"class_data_stream_reader.html#a3d39da3ce9ccdc98c7c09e82fe4b5e92":[12,0,95,38],
 "class_data_stream_reader.html#a3eb9d12c9619a8e31b1203f1e9ef7145":[12,0,95,164],
 "class_data_stream_reader.html#a3f38bf3ab54e53a00d7a43e6343f91c4":[12,0,95,128],
 "class_data_stream_reader.html#a3f50c67ec4fdb80c346b6c8bfc76501a":[12,0,95,123],
@@ -176,7 +177,6 @@ var NAVTREEINDEX8 =
 "class_data_stream_reader.html#a48a5109a225b0db91ab2339b1521c230":[12,0,95,4],
 "class_data_stream_reader.html#a48e6d858c48d36a4d18987ce59fb0f6f":[12,0,95,79],
 "class_data_stream_reader.html#a4a7a33e56944d91049256badde09eecd":[12,0,95,78],
-"class_data_stream_reader.html#a4ad10f58248b964360f218336217ad2d":[12,0,95,38],
 "class_data_stream_reader.html#a4f58ef6aec2af2d3eeb68da834177886":[12,0,95,159],
 "class_data_stream_reader.html#a501507892bfcf2f328d85c260894ffa1":[12,0,95,147],
 "class_data_stream_reader.html#a507be89847029d6d15d8aabde0f030e9":[12,0,95,72],
@@ -245,7 +245,7 @@ var NAVTREEINDEX8 =
 "class_data_stream_reader.html#aaaaef303cb00ffa30873585424c8dc8f":[12,0,95,117],
 "class_data_stream_reader.html#aaaec64f77d32b86e9d883ac21039a791":[12,0,95,126],
 "class_data_stream_reader.html#aafeded5b30680bab88cde14cfde059ef":[12,0,95,65],
-"class_data_stream_reader.html#ab0ab75ca89545fae346cd1acfe7349a9":[12,0,95,35],
+"class_data_stream_reader.html#ab0ab75ca89545fae346cd1acfe7349a9":[12,0,95,36],
 "class_data_stream_reader.html#ab35b50a83f75ec62b422279258029fd3":[12,0,95,31],
 "class_data_stream_reader.html#ab6d7e154119caf3a0b12b643fe924d20":[12,0,95,18],
 "class_data_stream_reader.html#ab734debb01dd5ec1fd631032192bc1d6":[12,0,95,3],
