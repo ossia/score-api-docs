@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"class_automation_1_1_init_automation.html#ac3a4d5dac514c99bf254634191707e1a":[12,0,2,3,3],
 "class_automation_1_1_init_automation.html#ac9680091907325dc05ae208cbf2d859e":[12,0,2,3,1],
 "class_automation_1_1_init_automation.html#aef7409705e6a94dffd6ae8ef2ea1bcfb":[12,0,2,3,0],
 "class_automation_1_1_inspector_factory.html":[12,0,2,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "class_curve_1_1_curve_process_model.html#a7c956454403368a42a7b7a399a0f7c43":[12,0,6,13,7],
 "class_curve_1_1_curve_process_model.html#a83899e2e39ba65036bfac84b91177581":[12,0,6,13,0],
 "class_curve_1_1_curve_process_model.html#a87bc481be645a3ed5fedeff769c063c9":[12,0,6,13,11],
-"class_curve_1_1_curve_process_model.html#a9cd5cb453ffea62373ff25976b247c5e":[12,0,6,13,13],
-"class_curve_1_1_curve_process_model.html#afbd042ad3e19082d5f9185762babbb79":[12,0,6,13,10]
+"class_curve_1_1_curve_process_model.html#a9cd5cb453ffea62373ff25976b247c5e":[12,0,6,13,13]
 };

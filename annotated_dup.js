@@ -1140,6 +1140,7 @@ var annotated_dup =
     [ "QMetaTypeId< Gfx::Kinect2Settings >", "struct_q_meta_type_id_3_01_gfx_1_1_kinect2_settings_01_4.html", "struct_q_meta_type_id_3_01_gfx_1_1_kinect2_settings_01_4" ],
     [ "QMetaTypeId< Gfx::ProcessedProgram >", "struct_q_meta_type_id_3_01_gfx_1_1_processed_program_01_4.html", "struct_q_meta_type_id_3_01_gfx_1_1_processed_program_01_4" ],
     [ "QMetaTypeId< Gfx::ShaderSource >", "struct_q_meta_type_id_3_01_gfx_1_1_shader_source_01_4.html", "struct_q_meta_type_id_3_01_gfx_1_1_shader_source_01_4" ],
+    [ "QMetaTypeId< Gfx::SharedOutputSettings >", "struct_q_meta_type_id_3_01_gfx_1_1_shared_output_settings_01_4.html", "struct_q_meta_type_id_3_01_gfx_1_1_shared_output_settings_01_4" ],
     [ "QMetaTypeId< Gfx::Shmdata::InputSettings >", "struct_q_meta_type_id_3_01_gfx_1_1_shmdata_1_1_input_settings_01_4.html", "struct_q_meta_type_id_3_01_gfx_1_1_shmdata_1_1_input_settings_01_4" ],
     [ "QMetaTypeId< Gfx::ShmSettings >", "struct_q_meta_type_id_3_01_gfx_1_1_shm_settings_01_4.html", "struct_q_meta_type_id_3_01_gfx_1_1_shm_settings_01_4" ],
     [ "QMetaTypeId< Id< Process::ProcessModel > >", "struct_q_meta_type_id_3_01_id_3_01_process_1_1_process_model_01_4_01_4.html", "struct_q_meta_type_id_3_01_id_3_01_process_1_1_process_model_01_4_01_4" ],

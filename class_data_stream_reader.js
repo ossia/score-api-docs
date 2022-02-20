@@ -35,6 +35,7 @@ var class_data_stream_reader =
     [ "read", "class_data_stream_reader.html#aa76546f84a00198edbc732f6ed8b71f0", null ],
     [ "read", "class_data_stream_reader.html#aedc8cae02a107db0de3c36259d4c4796", null ],
     [ "read", "class_data_stream_reader.html#a0f25c682566355b9f857d81e5a8be69b", null ],
+    [ "read", "class_data_stream_reader.html#ab0ab75ca89545fae346cd1acfe7349a9", null ],
     [ "read", "class_data_stream_reader.html#af9e4eed4ab0c8e2d29bcbc559adcf247", null ],
     [ "read", "class_data_stream_reader.html#a3d39da3ce9ccdc98c7c09e82fe4b5e92", null ],
     [ "read", "class_data_stream_reader.html#acd2d0778cf804496787619c13c1ffc6c", null ],
