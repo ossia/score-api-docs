@@ -29,6 +29,7 @@ var namespacescore_1_1gfx =
     [ "OutputNode", "classscore_1_1gfx_1_1_output_node.html", "classscore_1_1gfx_1_1_output_node" ],
     [ "OutputNodeRenderer", "classscore_1_1gfx_1_1_output_node_renderer.html", "classscore_1_1gfx_1_1_output_node_renderer" ],
     [ "PackedDecoder", "structscore_1_1gfx_1_1_packed_decoder.html", "structscore_1_1gfx_1_1_packed_decoder" ],
+    [ "PackedRectDecoder", "structscore_1_1gfx_1_1_packed_rect_decoder.html", "structscore_1_1gfx_1_1_packed_rect_decoder" ],
     [ "Pass", "structscore_1_1gfx_1_1_pass.html", "structscore_1_1gfx_1_1_pass" ],
     [ "PersistSampler", "structscore_1_1gfx_1_1_persist_sampler.html", "structscore_1_1gfx_1_1_persist_sampler" ],
     [ "PhongNode", "structscore_1_1gfx_1_1_phong_node.html", "structscore_1_1gfx_1_1_phong_node" ],

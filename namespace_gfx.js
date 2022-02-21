@@ -34,6 +34,10 @@ var namespace_gfx =
       [ "InputSettingsWidget", "class_gfx_1_1_spout_1_1_input_settings_widget.html", "class_gfx_1_1_spout_1_1_input_settings_widget" ],
       [ "SpoutInputNode", "struct_gfx_1_1_spout_1_1_spout_input_node.html", "struct_gfx_1_1_spout_1_1_spout_input_node" ]
     ] ],
+    [ "Syphon", null, [
+      [ "InputFactory", "class_gfx_1_1_syphon_1_1_input_factory.html", "class_gfx_1_1_syphon_1_1_input_factory" ],
+      [ "InputSettingsWidget", "class_gfx_1_1_syphon_1_1_input_settings_widget.html", "class_gfx_1_1_syphon_1_1_input_settings_widget" ]
+    ] ],
     [ "Text", null, [
       [ "Model", "class_gfx_1_1_text_1_1_model.html", "class_gfx_1_1_text_1_1_model" ],
       [ "ProcessExecutorComponent", "class_gfx_1_1_text_1_1_process_executor_component.html", "class_gfx_1_1_text_1_1_process_executor_component" ],
@@ -108,6 +112,9 @@ var namespace_gfx =
     [ "SpoutNode", "struct_gfx_1_1_spout_node.html", "struct_gfx_1_1_spout_node" ],
     [ "SpoutProtocolFactory", "class_gfx_1_1_spout_protocol_factory.html", "class_gfx_1_1_spout_protocol_factory" ],
     [ "SpoutSettingsWidget", "class_gfx_1_1_spout_settings_widget.html", "class_gfx_1_1_spout_settings_widget" ],
+    [ "SyphonDevice", "class_gfx_1_1_syphon_device.html", "class_gfx_1_1_syphon_device" ],
+    [ "SyphonProtocolFactory", "class_gfx_1_1_syphon_protocol_factory.html", "class_gfx_1_1_syphon_protocol_factory" ],
+    [ "SyphonSettingsWidget", "class_gfx_1_1_syphon_settings_widget.html", "class_gfx_1_1_syphon_settings_widget" ],
     [ "TextureInlet", "class_gfx_1_1_texture_inlet.html", "class_gfx_1_1_texture_inlet" ],
     [ "TextureInletFactory", "struct_gfx_1_1_texture_inlet_factory.html", "struct_gfx_1_1_texture_inlet_factory" ],
     [ "TextureOutlet", "class_gfx_1_1_texture_outlet.html", "class_gfx_1_1_texture_outlet" ],
