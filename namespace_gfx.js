@@ -24,7 +24,6 @@ var namespace_gfx =
     [ "Shmdata", null, [
       [ "InputDevice", "class_gfx_1_1_shmdata_1_1_input_device.html", "class_gfx_1_1_shmdata_1_1_input_device" ],
       [ "InputFactory", "class_gfx_1_1_shmdata_1_1_input_factory.html", "class_gfx_1_1_shmdata_1_1_input_factory" ],
-      [ "InputSettings", "struct_gfx_1_1_shmdata_1_1_input_settings.html", "struct_gfx_1_1_shmdata_1_1_input_settings" ],
       [ "InputSettingsWidget", "class_gfx_1_1_shmdata_1_1_input_settings_widget.html", "class_gfx_1_1_shmdata_1_1_input_settings_widget" ],
       [ "InputStream", "class_gfx_1_1_shmdata_1_1_input_stream.html", "class_gfx_1_1_shmdata_1_1_input_stream" ]
     ] ],
@@ -103,7 +102,6 @@ var namespace_gfx =
     [ "ShmdataOutputNode", "struct_gfx_1_1_shmdata_output_node.html", "struct_gfx_1_1_shmdata_output_node" ],
     [ "ShmdataOutputProtocolFactory", "class_gfx_1_1_shmdata_output_protocol_factory.html", "class_gfx_1_1_shmdata_output_protocol_factory" ],
     [ "ShmdataOutputSettingsWidget", "class_gfx_1_1_shmdata_output_settings_widget.html", "class_gfx_1_1_shmdata_output_settings_widget" ],
-    [ "ShmSettings", "struct_gfx_1_1_shm_settings.html", "struct_gfx_1_1_shm_settings" ],
     [ "simple_texture_input_device", "class_gfx_1_1simple__texture__input__device.html", "class_gfx_1_1simple__texture__input__device" ],
     [ "simple_texture_input_node", "class_gfx_1_1simple__texture__input__node.html", "class_gfx_1_1simple__texture__input__node" ],
     [ "simple_texture_input_parameter", "class_gfx_1_1simple__texture__input__parameter.html", "class_gfx_1_1simple__texture__input__parameter" ],

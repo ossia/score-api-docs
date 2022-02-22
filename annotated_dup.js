@@ -1142,8 +1142,6 @@ var annotated_dup =
     [ "QMetaTypeId< Gfx::ShaderSource >", "struct_q_meta_type_id_3_01_gfx_1_1_shader_source_01_4.html", "struct_q_meta_type_id_3_01_gfx_1_1_shader_source_01_4" ],
     [ "QMetaTypeId< Gfx::SharedInputSettings >", "struct_q_meta_type_id_3_01_gfx_1_1_shared_input_settings_01_4.html", "struct_q_meta_type_id_3_01_gfx_1_1_shared_input_settings_01_4" ],
     [ "QMetaTypeId< Gfx::SharedOutputSettings >", "struct_q_meta_type_id_3_01_gfx_1_1_shared_output_settings_01_4.html", "struct_q_meta_type_id_3_01_gfx_1_1_shared_output_settings_01_4" ],
-    [ "QMetaTypeId< Gfx::Shmdata::InputSettings >", "struct_q_meta_type_id_3_01_gfx_1_1_shmdata_1_1_input_settings_01_4.html", "struct_q_meta_type_id_3_01_gfx_1_1_shmdata_1_1_input_settings_01_4" ],
-    [ "QMetaTypeId< Gfx::ShmSettings >", "struct_q_meta_type_id_3_01_gfx_1_1_shm_settings_01_4.html", "struct_q_meta_type_id_3_01_gfx_1_1_shm_settings_01_4" ],
     [ "QMetaTypeId< Id< Process::ProcessModel > >", "struct_q_meta_type_id_3_01_id_3_01_process_1_1_process_model_01_4_01_4.html", "struct_q_meta_type_id_3_01_id_3_01_process_1_1_process_model_01_4_01_4" ],
     [ "QMetaTypeId< Id< Scenario::EventModel > >", "struct_q_meta_type_id_3_01_id_3_01_scenario_1_1_event_model_01_4_01_4.html", "struct_q_meta_type_id_3_01_id_3_01_scenario_1_1_event_model_01_4_01_4" ],
     [ "QMetaTypeId< Id< Scenario::IntervalModel > >", "struct_q_meta_type_id_3_01_id_3_01_scenario_1_1_interval_model_01_4_01_4.html", "struct_q_meta_type_id_3_01_id_3_01_scenario_1_1_interval_model_01_4_01_4" ],

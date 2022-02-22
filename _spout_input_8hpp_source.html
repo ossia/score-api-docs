@@ -120,35 +120,34 @@ $(document).ready(function(){initNavTree('_spout_input_8hpp_source.html',''); in
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;3c995cb6-052b-4c52-a8fd-841b33b81b29&quot;</span>)</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  QString prettyName() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  QString category() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="class_device_1_1_device_enumerator.html">Device::DeviceEnumerator</a>* getEnumerator(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>*</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  makeDevice(<span class="keyword">const</span> <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; settings, <span class="keyword">const</span> Explorer::DeviceDocumentPlugin&amp; plugin, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; defaultSettings() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="class_device_1_1_protocol_settings_widget.html">Device::ProtocolSettingsWidget</a>* makeSettingsWidget() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_gfx_1_1_spout_1_1_input_settings_widget.html">   33</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_gfx_1_1_spout_1_1_input_settings_widget.html">InputSettingsWidget</a> final : <span class="keyword">public</span> <a class="code" href="class_gfx_1_1_shared_input_settings_widget.html">SharedInputSettingsWidget</a></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="class_gfx_1_1_spout_1_1_input_settings_widget.html">InputSettingsWidget</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> getSettings() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <a class="code" href="class_device_1_1_device_enumerator.html">Device::DeviceEnumerator</a>* getEnumerator(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>*</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  makeDevice(<span class="keyword">const</span> <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; settings, <span class="keyword">const</span> Explorer::DeviceDocumentPlugin&amp; plugin, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; defaultSettings() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="class_device_1_1_protocol_settings_widget.html">Device::ProtocolSettingsWidget</a>* makeSettingsWidget() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_gfx_1_1_spout_1_1_input_settings_widget.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_gfx_1_1_spout_1_1_input_settings_widget.html">InputSettingsWidget</a> final : <span class="keyword">public</span> <a class="code" href="class_gfx_1_1_shared_input_settings_widget.html">SharedInputSettingsWidget</a></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="class_gfx_1_1_spout_1_1_input_settings_widget.html">InputSettingsWidget</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> getSettings() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_gfx_1_1_spout_1_1_input_settings_widget_html"><div class="ttname"><a href="class_gfx_1_1_spout_1_1_input_settings_widget.html">Gfx::Spout::InputSettingsWidget</a></div><div class="ttdef"><b>Definition:</b> SpoutInput.hpp:33</div></div>
+<div class="ttc" id="aclass_gfx_1_1_spout_1_1_input_settings_widget_html"><div class="ttname"><a href="class_gfx_1_1_spout_1_1_input_settings_widget.html">Gfx::Spout::InputSettingsWidget</a></div><div class="ttdef"><b>Definition:</b> SpoutInput.hpp:32</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:15</div></div>
 <div class="ttc" id="aclass_device_1_1_device_interface_html"><div class="ttname"><a href="class_device_1_1_device_interface.html">Device::DeviceInterface</a></div><div class="ttdef"><b>Definition:</b> DeviceInterface.hpp:62</div></div>
 <div class="ttc" id="aclass_device_1_1_protocol_settings_widget_html"><div class="ttname"><a href="class_device_1_1_protocol_settings_widget.html">Device::ProtocolSettingsWidget</a></div><div class="ttdef"><b>Definition:</b> ProtocolSettingsWidget.hpp:21</div></div>
 <div class="ttc" id="aclass_gfx_1_1_spout_1_1_input_factory_html"><div class="ttname"><a href="class_gfx_1_1_spout_1_1_input_factory.html">Gfx::Spout::InputFactory</a></div><div class="ttdef"><b>Definition:</b> SpoutInput.hpp:18</div></div>
-<div class="ttc" id="aclass_gfx_1_1_shared_input_settings_widget_html"><div class="ttname"><a href="class_gfx_1_1_shared_input_settings_widget.html">Gfx::SharedInputSettingsWidget</a></div><div class="ttdef"><b>Definition:</b> SharedInputSettings.hpp:47</div></div>
+<div class="ttc" id="aclass_gfx_1_1_shared_input_settings_widget_html"><div class="ttname"><a href="class_gfx_1_1_shared_input_settings_widget.html">Gfx::SharedInputSettingsWidget</a></div><div class="ttdef"><b>Definition:</b> SharedInputSettings.hpp:51</div></div>
 <div class="ttc" id="aclass_device_1_1_device_enumerator_html"><div class="ttname"><a href="class_device_1_1_device_enumerator.html">Device::DeviceEnumerator</a></div><div class="ttdef"><b>Definition:</b> ProtocolFactoryInterface.hpp:27</div></div>
-<div class="ttc" id="astruct_gfx_1_1_shared_input_settings_html"><div class="ttname"><a href="struct_gfx_1_1_shared_input_settings.html">Gfx::SharedInputSettings</a></div><div class="ttdef"><b>Definition:</b> SharedInputSettings.hpp:16</div></div>
-<div class="ttc" id="aclass_gfx_1_1_shared_input_protocol_factory_html"><div class="ttname"><a href="class_gfx_1_1_shared_input_protocol_factory.html">Gfx::SharedInputProtocolFactory</a></div><div class="ttdef"><b>Definition:</b> SharedInputSettings.hpp:20</div></div>
+<div class="ttc" id="astruct_gfx_1_1_shared_input_settings_html"><div class="ttname"><a href="struct_gfx_1_1_shared_input_settings.html">Gfx::SharedInputSettings</a></div><div class="ttdef"><b>Definition:</b> SharedInputSettings.hpp:17</div></div>
+<div class="ttc" id="aclass_gfx_1_1_shared_input_protocol_factory_html"><div class="ttname"><a href="class_gfx_1_1_shared_input_protocol_factory.html">Gfx::SharedInputProtocolFactory</a></div><div class="ttdef"><b>Definition:</b> SharedInputSettings.hpp:21</div></div>
 <div class="ttc" id="astruct_device_1_1_device_settings_html"><div class="ttname"><a href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a></div><div class="ttdef"><b>Definition:</b> DeviceSettings.hpp:15</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
