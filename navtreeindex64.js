@@ -1,5 +1,7 @@
 var NAVTREEINDEX64 =
 {
+"struct_state_1_1_message.html#a6c1a5b8741c55c71d22c6c08a1f45bfb":[12,0,48,19,3],
+"struct_state_1_1_message.html#aca67cdb0a258194f5e3fee282ef8fb10":[12,0,48,19,1],
 "struct_state_1_1_pulse.html":[12,0,48,23],
 "struct_state_1_1_pulse.html#a828a6f385ea298ee2da8802a29c6005f":[12,0,48,23,1],
 "struct_state_1_1_pulse.html#a8de2d510c5fa6085ef71cd3f040a583d":[12,0,48,23,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX64 =
 "struct_time_val.html#aacd9e7ea21965045ef7eb6c57c3efdbe":[12,0,384,20],
 "struct_time_val.html#aad950b2cc47d29930a8db56187c7d890":[12,0,384,14],
 "struct_time_val.html#aaec83f42d06ee268a80c1a91d25d4a19":[12,0,384,22],
-"struct_time_val.html#ab7d17f93b395e5422675c4131fea60ed":[12,0,384,40],
-"struct_time_val.html#abb63b164208c7718d995e8595fbe2bda":[12,0,384,17],
-"struct_time_val.html#ac35f227dab2f36d7cef87a37968e3eb4":[12,0,384,12]
+"struct_time_val.html#ab7d17f93b395e5422675c4131fea60ed":[12,0,384,40]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX52 =
 {
+"struct_control_1_1_int_spin_box.html#ad888efdae1ac1c36bff9bf56effbbb08":[12,0,4,29,9],
+"struct_control_1_1_int_spin_box.html#aeb5cdeed683b8f1336ef0ed234a1eabc":[12,0,4,29,7],
 "struct_control_1_1_line_edit.html":[12,0,4,31],
 "struct_control_1_1_line_edit.html#a0941a6f5dea584138215690014eb823f":[12,0,4,31,6],
 "struct_control_1_1_line_edit.html#a157a25b6b1488d2c3838aa38279b72c1":[12,0,4,31,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX52 =
 "struct_dataflow_1_1_midi_outlet_factory.html#ae7bc957a58b861d69866769dee974b0b":[12,0,7,28,1],
 "struct_dataflow_1_1_min_max_float_outlet_factory.html":[12,0,7,30],
 "struct_dataflow_1_1_min_max_float_outlet_factory.html#a02b2fb0dd1cd5bef187d4980e3fc82f5":[12,0,7,30,4],
-"struct_dataflow_1_1_min_max_float_outlet_factory.html#a1315f6f92e44a53b0ef3f665d6610c95":[12,0,7,30,2],
-"struct_dataflow_1_1_min_max_float_outlet_factory.html#a5c9887b53eb9f91a64832cbce358ff8c":[12,0,7,30,1],
-"struct_dataflow_1_1_min_max_float_outlet_factory.html#a6084688fc48bafbc98c57e32c8a542f5":[12,0,7,30,3]
+"struct_dataflow_1_1_min_max_float_outlet_factory.html#a1315f6f92e44a53b0ef3f665d6610c95":[12,0,7,30,2]
 };

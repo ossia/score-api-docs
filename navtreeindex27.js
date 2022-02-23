@@ -1,5 +1,7 @@
 var NAVTREEINDEX27 =
 {
+"class_protocols_1_1_unix_stream_widget.html#a2ea7b74de2a8e4dd3f6111da61b71712":[12,0,38,70,1],
+"class_protocols_1_1_unix_stream_widget.html#a9b5dd2d32ead77cbab6ff0ba13241544":[12,0,38,70,2],
 "class_protocols_1_1_unix_stream_widget.html#ad0fca9b946aa12e943435be6768632f0":[12,0,38,70,3],
 "class_protocols_1_1_unix_stream_widget.html#af05c24b4a88880d227aad7e5176f2545":[12,0,38,70,0],
 "class_protocols_1_1_w_s_device.html":[12,0,38,77],
@@ -247,7 +249,5 @@ var NAVTREEINDEX27 =
 "class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#a2c48f03a830c1471c7e524fa8c4fff47":[12,0,43,11,2],
 "class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#a2f56ef2e466cd6c563293bdc9053057f":[12,0,43,11,11],
 "class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#a4ab198d4c5e22723ab6f56b74c66d16f":[12,0,43,11,12],
-"class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#a5e5a2fd1d2ec7e93b596799c451d1837":[12,0,43,11,10],
-"class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#a8995ae1891d97db397d09d46ef7136fc":[12,0,43,11,8],
-"class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#a8c6e18f53f5b99009920fc18a62986cf":[12,0,43,11,0]
+"class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#a5e5a2fd1d2ec7e93b596799c451d1837":[12,0,43,11,10]
 };
