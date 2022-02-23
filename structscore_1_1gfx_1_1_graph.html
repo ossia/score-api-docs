@@ -125,6 +125,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_graph.html#a27b1df43407c54984e12e5717382c983">addEdge</a> (<a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *source, <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *sink)</td></tr>
 <tr class="memdesc:a27b1df43407c54984e12e5717382c983"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an edge between two nodes. <br /></td></tr>
 <tr class="separator:a27b1df43407c54984e12e5717382c983"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a502b4abc23e8335948bec9e052ddef1c"><td class="memItemLeft" align="right" valign="top"><a id="a502b4abc23e8335948bec9e052ddef1c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_graph.html#a502b4abc23e8335948bec9e052ddef1c">removeEdge</a> (<a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *source, <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *sink)</td></tr>
+<tr class="memdesc:a502b4abc23e8335948bec9e052ddef1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an edge between two nodes. <br /></td></tr>
+<tr class="separator:a502b4abc23e8335948bec9e052ddef1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30516df5d2ae6aa857533489e7e34c19"><td class="memItemLeft" align="right" valign="top"><a id="a30516df5d2ae6aa857533489e7e34c19"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_graph.html#a30516df5d2ae6aa857533489e7e34c19">addAndLinkEdge</a> (<a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *source, <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *sink)</td></tr>
+<tr class="memdesc:a30516df5d2ae6aa857533489e7e34c19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an edge between two nodes and creates relevant pipelines. <br /></td></tr>
+<tr class="separator:a30516df5d2ae6aa857533489e7e34c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe3ddb004ee53340f68c7eb87fd8ec5e"><td class="memItemLeft" align="right" valign="top"><a id="abe3ddb004ee53340f68c7eb87fd8ec5e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_graph.html#abe3ddb004ee53340f68c7eb87fd8ec5e">unlinkAndRemoveEdge</a> (<a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *source, <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *sink)</td></tr>
+<tr class="memdesc:abe3ddb004ee53340f68c7eb87fd8ec5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an edge between two nodes and free the pipelines. <br /></td></tr>
+<tr class="separator:abe3ddb004ee53340f68c7eb87fd8ec5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c3b40f6e90a21e4fb0636257f7bc975"><td class="memItemLeft" align="right" valign="top"><a id="a1c3b40f6e90a21e4fb0636257f7bc975"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_graph.html#a1c3b40f6e90a21e4fb0636257f7bc975">clearEdges</a> ()</td></tr>
 <tr class="memdesc:a1c3b40f6e90a21e4fb0636257f7bc975"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all edges. <br /></td></tr>
@@ -137,6 +149,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_graph.html#a3603dc4ae5e632c8348d11b42916f6bb">createSingleRenderList</a> (<a class="el" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a> &amp;node, <a class="el" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a> graphicsApi)</td></tr>
 <tr class="memdesc:a3603dc4ae5e632c8348d11b42916f6bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a sequence of render events for a single output node. <br /></td></tr>
 <tr class="separator:a3603dc4ae5e632c8348d11b42916f6bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17a55c3427949d59d752108e3da2f0f3"><td class="memItemLeft" align="right" valign="top"><a id="a17a55c3427949d59d752108e3da2f0f3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_graph.html#a17a55c3427949d59d752108e3da2f0f3">destroyOutputRenderList</a> (<a class="el" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a> &amp;node)</td></tr>
+<tr class="memdesc:a17a55c3427949d59d752108e3da2f0f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the render list of an output node if any. <br /></td></tr>
+<tr class="separator:a17a55c3427949d59d752108e3da2f0f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2053b9d1b4c0466c9cc5fe87be8cb5a5"><td class="memItemLeft" align="right" valign="top"><a id="a2053b9d1b4c0466c9cc5fe87be8cb5a5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_graph.html#a2053b9d1b4c0466c9cc5fe87be8cb5a5">relinkGraph</a> ()</td></tr>
 <tr class="memdesc:a2053b9d1b4c0466c9cc5fe87be8cb5a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recreate the connections between renderers when edges changed. <br /></td></tr>

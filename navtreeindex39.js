@@ -1,5 +1,7 @@
 var NAVTREEINDEX39 =
 {
+"class_token_request_value_type.html#a20546b4d31aee3ec056c934d966a5749":[12,0,386,30],
+"class_token_request_value_type.html#a234a8f64ef0d04f74511bcb81e8c2975":[12,0,386,35],
 "class_token_request_value_type.html#a290d9a061bcf33eb727a434ee6dcf277":[12,0,386,25],
 "class_token_request_value_type.html#a3407ca91ae5f1c67430727de07c9b5b7":[12,0,386,23],
 "class_token_request_value_type.html#a346546389e15239e5eee93e5b22291ad":[12,0,386,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX39 =
 "class_vec3f_value_type.html#a7de5f7e0d9043bf2eaa61fe8dcbd870b":[12,0,506,26],
 "class_vec3f_value_type.html#a7ed42548472d1a0318f94a23c85b2f6f":[12,0,506,12],
 "class_vec3f_value_type.html#a82bb7a688be77b56e3326fe4da914f0c":[12,0,506,5],
-"class_vec3f_value_type.html#a83a303c5789ff29daf011d47dc06d68e":[12,0,506,36],
-"class_vec3f_value_type.html#a863e2d4726701a44bbc12507eb7cb8bd":[12,0,506,11],
-"class_vec3f_value_type.html#a8f6176337632d5aebd21e3667c62f71a":[12,0,506,10]
+"class_vec3f_value_type.html#a83a303c5789ff29daf011d47dc06d68e":[12,0,506,36]
 };

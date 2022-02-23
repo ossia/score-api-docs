@@ -119,26 +119,22 @@ $(document).ready(function(){initNavTree('_gfx_exec_context_8hpp_source.html',''
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">void</span> startTick(<span class="keyword">const</span> ossia::audio_tick_state&amp; st) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordtype">void</span> setEdge(port_index source, port_index sink);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordtype">void</span> setFixedEdge(port_index source, port_index sink);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordtype">void</span> unsetFixedEdge(port_index source, port_index sink);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordtype">void</span> endTick(<span class="keyword">const</span> ossia::audio_tick_state&amp; st) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">using</span> edge = std::pair&lt;port_index, port_index&gt;;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="class_gfx_1_1_gfx_context.html">GfxContext</a>* ui{};</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  std::vector&lt;edge&gt; prev_edges;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  std::vector&lt;edge&gt; fixed_edges;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  std::vector&lt;edge&gt; edges_cache;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">using</span> edge_queue = moodycamel::ConcurrentQueue&lt;edge&gt;;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  edge_queue incoming_edges;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordtype">void</span> endTick(<span class="keyword">const</span> ossia::audio_tick_state&amp; st) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="class_gfx_1_1_gfx_context.html">GfxContext</a>* ui{};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  std::vector&lt;Edge&gt; prev_edges;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  std::vector&lt;Edge&gt; edges_cache;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">using</span> edge_queue = moodycamel::ConcurrentQueue&lt;Edge&gt;;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  edge_queue incoming_edges;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_execution_1_1_execution_action_html"><div class="ttname"><a href="class_execution_1_1_execution_action.html">Execution::ExecutionAction</a></div><div class="ttdef"><b>Definition:</b> ExecutionAction.hpp:11</div></div>
 <div class="ttc" id="aclass_gfx_1_1_gfx_execution_action_html"><div class="ttname"><a href="class_gfx_1_1_gfx_execution_action.html">Gfx::GfxExecutionAction</a></div><div class="ttdef"><b>Definition:</b> GfxExecContext.hpp:14</div></div>
-<div class="ttc" id="aclass_gfx_1_1_gfx_context_html"><div class="ttname"><a href="class_gfx_1_1_gfx_context.html">Gfx::GfxContext</a></div><div class="ttdef"><b>Definition:</b> GfxContext.hpp:27</div></div>
+<div class="ttc" id="aclass_gfx_1_1_gfx_context_html"><div class="ttname"><a href="class_gfx_1_1_gfx_context.html">Gfx::GfxContext</a></div><div class="ttdef"><b>Definition:</b> GfxContext.hpp:28</div></div>
 <div class="ttc" id="anamespace_gfx_html"><div class="ttname"><a href="namespace_gfx.html">Gfx</a></div><div class="ttdoc">Binds the rendering pipeline to ossia processes.</div><div class="ttdef"><b>Definition:</b> CameraDevice.cpp:29</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

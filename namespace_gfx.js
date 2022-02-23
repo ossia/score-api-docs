@@ -72,6 +72,7 @@ var namespace_gfx =
     [ "GfxExecutionAction", "class_gfx_1_1_gfx_execution_action.html", "class_gfx_1_1_gfx_execution_action" ],
     [ "GfxInputDevice", "class_gfx_1_1_gfx_input_device.html", "class_gfx_1_1_gfx_input_device" ],
     [ "GfxOutputDevice", "class_gfx_1_1_gfx_output_device.html", "class_gfx_1_1_gfx_output_device" ],
+    [ "GraphPreviewWidget", "class_gfx_1_1_graph_preview_widget.html", "class_gfx_1_1_graph_preview_widget" ],
     [ "ImageCache", "struct_gfx_1_1_image_cache.html", "struct_gfx_1_1_image_cache" ],
     [ "InvertYRenderer", "class_gfx_1_1_invert_y_renderer.html", "class_gfx_1_1_invert_y_renderer" ],
     [ "kinect2_camera", "struct_gfx_1_1kinect2__camera.html", "struct_gfx_1_1kinect2__camera" ],

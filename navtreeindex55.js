@@ -1,6 +1,8 @@
 var NAVTREEINDEX55 =
 {
-"struct_gfx_1_1kinect2__settings.html#ac3b4c4036345e9785b97c4e421c4b7a0":[12,0,16,34,2],
+"struct_gfx_1_1kinect2__settings.html#a65dba340152ec9f643b7bf7fbd3c27dc":[12,0,16,35,3],
+"struct_gfx_1_1kinect2__settings.html#a7c202404994d7ff221862eedd45572fa":[12,0,16,35,0],
+"struct_gfx_1_1kinect2__settings.html#ac3b4c4036345e9785b97c4e421c4b7a0":[12,0,16,35,2],
 "struct_hierarchical_base_scenario_1_1_event_pair.html":[12,0,124,0],
 "struct_hierarchical_base_scenario_1_1_event_pair.html#a19b75ca38839b31fc6b0a1f7f8eb7901":[12,0,124,0,0],
 "struct_hierarchical_base_scenario_1_1_event_pair.html#acc4319a0677e64fd1804004436ec2519":[12,0,124,0,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX55 =
 "struct_l_v2_1_1_host_context.html#a506f50ccd8a9d405d905e075a44f9510":[12,0,26,3,42],
 "struct_l_v2_1_1_host_context.html#a55efbdaa002c679bd6439eae296a3cb3":[12,0,26,3,7],
 "struct_l_v2_1_1_host_context.html#a5965f192169030eeef18a86ace8d07d4":[12,0,26,3,17],
-"struct_l_v2_1_1_host_context.html#a61d2919b8daae9bfed660a48f3214118":[12,0,26,3,14],
-"struct_l_v2_1_1_host_context.html#a621888723592aacd1bf897795c73b7d4":[12,0,26,3,0],
-"struct_l_v2_1_1_host_context.html#a62de526b6bd6973083dde79fd4fd1675":[12,0,26,3,16]
+"struct_l_v2_1_1_host_context.html#a61d2919b8daae9bfed660a48f3214118":[12,0,26,3,14]
 };

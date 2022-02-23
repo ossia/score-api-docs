@@ -1,5 +1,7 @@
 var NAVTREEINDEX47 =
 {
+"classscore_1_1gfx_1_1_generic_node_renderer.html#add37f93d2c7e111e38e2481c302337c2":[12,0,44,2,8,16],
+"classscore_1_1gfx_1_1_generic_node_renderer.html#adf095a8f02f7d7138a7e8bac55fb74fd":[12,0,44,2,8,7],
 "classscore_1_1gfx_1_1_generic_node_renderer.html#ae891b06113797ee322f1d8bdba024572":[12,0,44,2,8,14],
 "classscore_1_1gfx_1_1_generic_node_renderer.html#af2217ea7bc68b9b567eb2059ecdaf3df":[12,0,44,2,8,10],
 "classscore_1_1gfx_1_1_i_s_f_node.html":[12,0,44,2,19],
@@ -247,7 +249,5 @@ var NAVTREEINDEX47 =
 "classscore__plugin__protocols.html#a2e4840fa250d18a403dc09993769592e":[12,0,349,0],
 "classscore__plugin__protocols.html#acad07c1145855294abde99c89d27cf42":[12,0,349,1],
 "classscore__plugin__recording.html":[12,0,350],
-"classscore__plugin__recording.html#a3f63afc4ad5bb6c84e93d7357e4afac0":[12,0,350,1],
-"classscore__plugin__recording.html#af44e59042634edd38e21281e6fc84116":[12,0,350,0],
-"classscore__plugin__remotecontrol.html":[12,0,351]
+"classscore__plugin__recording.html#a3f63afc4ad5bb6c84e93d7357e4afac0":[12,0,350,1]
 };

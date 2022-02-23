@@ -1,5 +1,7 @@
 var NAVTREEINDEX50 =
 {
+"score-lib-process_2_process_2_dataflow_2_port_item_8hpp_source.html":[13,0,886],
+"score-lib-process_2_process_2_instantiations_8hpp_source.html":[13,0,537],
 "score-lib-process_2_process_2_process_8hpp_source.html":[13,0,912],
 "score-lib-process_2_process_2_process_factory_8hpp_source.html":[13,0,929],
 "score-lib-process_2_process_2_process_metadata_8hpp_source.html":[13,0,936],
@@ -247,7 +249,5 @@ var NAVTREEINDEX50 =
 "struct_analysis_1_1_zero_crossing.html#a911e7c478431e8c274b9ee7e3dc3e792":[12,0,0,17,1],
 "struct_analysis_1_1_zero_crossing.html#acafdfb90106bec368b64794359b1ad60":[12,0,0,17,2],
 "struct_analysis_1_1_zero_crossing_1_1_metadata.html":[12,0,0,17,0],
-"struct_array_entity_serializer.html":[12,0,64],
-"struct_array_serializer.html":[12,0,65],
-"struct_atom_buffer.html":[12,0,66]
+"struct_array_entity_serializer.html":[12,0,64]
 };

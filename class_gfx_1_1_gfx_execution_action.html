@@ -116,12 +116,9 @@ Inheritance diagram for Gfx::GfxExecutionAction:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a66eb0f88c06be1e55b922bde70793f1a"><td class="memItemLeft" align="right" valign="top"><a id="a66eb0f88c06be1e55b922bde70793f1a"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>edge</b> = std::pair&lt; port_index, port_index &gt;</td></tr>
-<tr class="separator:a66eb0f88c06be1e55b922bde70793f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1908afb7006b9f1bdb6d7ff41660e7d9"><td class="memItemLeft" align="right" valign="top"><a id="a1908afb7006b9f1bdb6d7ff41660e7d9"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>edge_queue</b> = moodycamel::ConcurrentQueue&lt; edge &gt;</td></tr>
-<tr class="separator:a1908afb7006b9f1bdb6d7ff41660e7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab02f189e3d529aac8998eb726064e41e"><td class="memItemLeft" align="right" valign="top"><a id="ab02f189e3d529aac8998eb726064e41e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>edge_queue</b> = moodycamel::ConcurrentQueue&lt; Edge &gt;</td></tr>
+<tr class="separator:ab02f189e3d529aac8998eb726064e41e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -134,12 +131,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>startTick</b> (const 
 <tr class="memitem:a85e01bf0df06ea988a47fb0c7127783a"><td class="memItemLeft" align="right" valign="top"><a id="a85e01bf0df06ea988a47fb0c7127783a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setEdge</b> (port_index source, port_index sink)</td></tr>
 <tr class="separator:a85e01bf0df06ea988a47fb0c7127783a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdbbd459edee640086a0aee55145a58d"><td class="memItemLeft" align="right" valign="top"><a id="afdbbd459edee640086a0aee55145a58d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setFixedEdge</b> (port_index source, port_index sink)</td></tr>
-<tr class="separator:afdbbd459edee640086a0aee55145a58d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dbf0f31ff1e08190458466b0bfdf658"><td class="memItemLeft" align="right" valign="top"><a id="a2dbf0f31ff1e08190458466b0bfdf658"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>unsetFixedEdge</b> (port_index source, port_index sink)</td></tr>
-<tr class="separator:a2dbf0f31ff1e08190458466b0bfdf658"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7dc49620226e4f02b9eb0dbcd1e4d3d"><td class="memItemLeft" align="right" valign="top"><a id="aa7dc49620226e4f02b9eb0dbcd1e4d3d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>endTick</b> (const ossia::audio_tick_state &amp;st) override</td></tr>
 <tr class="separator:aa7dc49620226e4f02b9eb0dbcd1e4d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,15 +145,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a9d493b637b092309db06f0c39f562b5f"><td class="memItemLeft" align="right" valign="top"><a id="a9d493b637b092309db06f0c39f562b5f"></a>
 <a class="el" href="class_gfx_1_1_gfx_context.html">GfxContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>ui</b> {}</td></tr>
 <tr class="separator:a9d493b637b092309db06f0c39f562b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30daa4c7c4a0e66d8bf5fbd1957b1976"><td class="memItemLeft" align="right" valign="top"><a id="a30daa4c7c4a0e66d8bf5fbd1957b1976"></a>
-std::vector&lt; edge &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>prev_edges</b></td></tr>
-<tr class="separator:a30daa4c7c4a0e66d8bf5fbd1957b1976"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f260bddbfa0a96d9579fc332ea81827"><td class="memItemLeft" align="right" valign="top"><a id="a3f260bddbfa0a96d9579fc332ea81827"></a>
-std::vector&lt; edge &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fixed_edges</b></td></tr>
-<tr class="separator:a3f260bddbfa0a96d9579fc332ea81827"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecafc045ddaddb5db438cb8fd0a1f865"><td class="memItemLeft" align="right" valign="top"><a id="aecafc045ddaddb5db438cb8fd0a1f865"></a>
-std::vector&lt; edge &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>edges_cache</b></td></tr>
-<tr class="separator:aecafc045ddaddb5db438cb8fd0a1f865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ceeca19d9320e24f72f39cac832eb97"><td class="memItemLeft" align="right" valign="top"><a id="a2ceeca19d9320e24f72f39cac832eb97"></a>
+std::vector&lt; Edge &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>prev_edges</b></td></tr>
+<tr class="separator:a2ceeca19d9320e24f72f39cac832eb97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a244ee0cca5133f426c33408233849b29"><td class="memItemLeft" align="right" valign="top"><a id="a244ee0cca5133f426c33408233849b29"></a>
+std::vector&lt; Edge &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>edges_cache</b></td></tr>
+<tr class="separator:a244ee0cca5133f426c33408233849b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5197234019f84664e49b27dac7cb2b5f"><td class="memItemLeft" align="right" valign="top"><a id="a5197234019f84664e49b27dac7cb2b5f"></a>
 edge_queue&#160;</td><td class="memItemRight" valign="bottom"><b>incoming_edges</b></td></tr>
 <tr class="separator:a5197234019f84664e49b27dac7cb2b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>

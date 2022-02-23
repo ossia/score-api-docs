@@ -1,5 +1,12 @@
 var NAVTREEINDEX70 =
 {
+"structscore_1_1indirect__map__iterator.html#aee822a61ebb0bdb0f69f3606a655d3c8":[12,0,44,127,3],
+"structscore_1_1indirect__ptr__iterator.html":[12,0,44,128],
+"structscore_1_1indirect__ptr__iterator.html#a008b461670a040f69f06431eaf4e02dc":[12,0,44,128,4],
+"structscore_1_1indirect__ptr__iterator.html#a035b15ac1bb3ac4495a38dd50076160f":[12,0,44,128,7],
+"structscore_1_1indirect__ptr__iterator.html#a11ec1b4ab9eade63120854e24e173f46":[12,0,44,128,15],
+"structscore_1_1indirect__ptr__iterator.html#a12d31b08149f3f31e18206f3015beb11":[12,0,44,128,0],
+"structscore_1_1indirect__ptr__iterator.html#a1aca5d5d65acaaa0d7d39389830b7772":[12,0,44,128,2],
 "structscore_1_1indirect__ptr__iterator.html#a28150384272b1030a9fd1deddb2aad0a":[12,0,44,128,6],
 "structscore_1_1indirect__ptr__iterator.html#a35ae9d498216c6654765dcb6c609dd1a":[12,0,44,128,8],
 "structscore_1_1indirect__ptr__iterator.html#a62644e81b467d8f266045b73542cd261":[12,0,44,128,1],
@@ -242,6 +249,5 @@ var NAVTREEINDEX70 =
 "structvst_1_1vst__node__base_1_1vst__control.html":[12,0,53,17,0],
 "structvst_1_1vst__node__base_1_1vst__control.html#a941a103e838cd796ef58965650bc9ca6":[12,0,53,17,0,1],
 "structvst_1_1vst__node__base_1_1vst__control.html#ac2ed257249b196072c159591509205bb":[12,0,53,17,0,2],
-"structvst_1_1vst__node__base_1_1vst__control.html#ac5cb8799293d4c342ef758549d932512":[12,0,53,17,0,0],
-"todo.html":[10]
+"structvst_1_1vst__node__base_1_1vst__control.html#ac5cb8799293d4c342ef758549d932512":[12,0,53,17,0,0]
 };
