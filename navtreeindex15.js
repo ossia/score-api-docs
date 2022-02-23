@@ -5,6 +5,7 @@ var NAVTREEINDEX15 =
 "class_gfx_1_1_settings_1_1_view.html#abd8c4d1659062be759e05f5a3839ee16":[12,0,16,2,3,0],
 "class_gfx_1_1_shader_preview_widget.html":[12,0,16,44],
 "class_gfx_1_1_shader_preview_widget.html#a02a3a9befa0849be67ad9babdda1a7ca":[12,0,16,44,0],
+"class_gfx_1_1_shader_preview_widget.html#a092a6fd11e78beb7b0c670fa9e297476":[12,0,16,44,2],
 "class_gfx_1_1_shader_preview_widget.html#af5dbd5014b0fa0ce224edb61e1d0b11b":[12,0,16,44,1],
 "class_gfx_1_1_shared_input_protocol_factory.html":[12,0,16,46],
 "class_gfx_1_1_shared_input_protocol_factory.html#a2db9e1de996580bc7267081cc0022400":[12,0,16,46,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "class_gfx_1_1kinect2__decoder.html#adf0d6e9f684cb116a66fb9dad4879138":[12,0,16,30,1],
 "class_gfx_1_1kinect2__decoder.html#af90612f9e25a27542220a2488c4a1799":[12,0,16,30,3],
 "class_gfx_1_1kinect2__device.html":[12,0,16,31],
-"class_gfx_1_1kinect2__device.html#ac561bb2e6648192619216615b66747de":[12,0,16,31,0],
-"class_gfx_1_1kinect2__node.html":[12,0,16,32]
+"class_gfx_1_1kinect2__device.html#ac561bb2e6648192619216615b66747de":[12,0,16,31,0]
 };

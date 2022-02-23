@@ -1,5 +1,6 @@
 var NAVTREEINDEX48 =
 {
+"classscore__plugin__recording.html#a3f63afc4ad5bb6c84e93d7357e4afac0":[12,0,350,1],
 "classscore__plugin__recording.html#af44e59042634edd38e21281e6fc84116":[12,0,350,0],
 "classscore__plugin__remotecontrol.html":[12,0,351],
 "classscore__plugin__remotecontrol.html#a8cb6871e867c80d463dd503c3be14b97":[12,0,351,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX48 =
 "classvst_1_1_control_port_factory.html#adf7b65d32bfe3affc2e534a8ce9bb1e7":[12,0,53,3,0],
 "classvst_1_1_control_port_factory.html#aef395542708c84ad84fd32665b96ebf1":[12,0,53,3,2],
 "classvst_1_1_create_control.html":[12,0,53,5],
-"classvst_1_1_create_control.html#a1a86182b016bc4c318475688a1962c58":[12,0,53,5,0],
-"classvst_1_1_create_control.html#a34005e90b2bf8276e8babba24a2ecc99":[12,0,53,5,1]
+"classvst_1_1_create_control.html#a1a86182b016bc4c318475688a1962c58":[12,0,53,5,0]
 };

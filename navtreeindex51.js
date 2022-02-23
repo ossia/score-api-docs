@@ -1,5 +1,6 @@
 var NAVTREEINDEX51 =
 {
+"struct_array_entity_serializer.html":[12,0,64],
 "struct_array_serializer.html":[12,0,65],
 "struct_atom_buffer.html":[12,0,66],
 "struct_atom_buffer.html#a21269819a0af1cda603c0bd57403b197":[12,0,66,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX51 =
 "struct_control_1_1_line_edit.html#a0941a6f5dea584138215690014eb823f":[12,0,4,31,6],
 "struct_control_1_1_line_edit.html#a157a25b6b1488d2c3838aa38279b72c1":[12,0,4,31,5],
 "struct_control_1_1_line_edit.html#a2354173a4e7f1f899f018b90d3dd728c":[12,0,4,31,0],
-"struct_control_1_1_line_edit.html#a32e8aa535f778068f9e8cee2400dcf80":[12,0,4,31,4],
-"struct_control_1_1_line_edit.html#a5484079215c4cbcea34dfca93446f81f":[12,0,4,31,2]
+"struct_control_1_1_line_edit.html#a32e8aa535f778068f9e8cee2400dcf80":[12,0,4,31,4]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX55 =
 {
+"struct_gfx_1_1kinect2__settings.html#a597c9700c432543513c48ad2502ec922":[12,0,16,35,1],
 "struct_gfx_1_1kinect2__settings.html#a65dba340152ec9f643b7bf7fbd3c27dc":[12,0,16,35,3],
 "struct_gfx_1_1kinect2__settings.html#a7c202404994d7ff221862eedd45572fa":[12,0,16,35,0],
 "struct_gfx_1_1kinect2__settings.html#ac3b4c4036345e9785b97c4e421c4b7a0":[12,0,16,35,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX55 =
 "struct_l_v2_1_1_host_context.html#a4f4a348ee30a84a035e8fd4401c7d699":[12,0,26,3,6],
 "struct_l_v2_1_1_host_context.html#a506f50ccd8a9d405d905e075a44f9510":[12,0,26,3,42],
 "struct_l_v2_1_1_host_context.html#a55efbdaa002c679bd6439eae296a3cb3":[12,0,26,3,7],
-"struct_l_v2_1_1_host_context.html#a5965f192169030eeef18a86ace8d07d4":[12,0,26,3,17],
-"struct_l_v2_1_1_host_context.html#a61d2919b8daae9bfed660a48f3214118":[12,0,26,3,14]
+"struct_l_v2_1_1_host_context.html#a5965f192169030eeef18a86ace8d07d4":[12,0,26,3,17]
 };
