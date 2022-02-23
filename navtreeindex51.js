@@ -1,5 +1,10 @@
 var NAVTREEINDEX51 =
 {
+"struct_analysis_1_1_spectrum_1_1_metadata.html":[12,0,0,16,0],
+"struct_analysis_1_1_zero_crossing.html":[12,0,0,17],
+"struct_analysis_1_1_zero_crossing.html#a911e7c478431e8c274b9ee7e3dc3e792":[12,0,0,17,1],
+"struct_analysis_1_1_zero_crossing.html#acafdfb90106bec368b64794359b1ad60":[12,0,0,17,2],
+"struct_analysis_1_1_zero_crossing_1_1_metadata.html":[12,0,0,17,0],
 "struct_array_entity_serializer.html":[12,0,64],
 "struct_array_serializer.html":[12,0,65],
 "struct_atom_buffer.html":[12,0,66],
@@ -244,10 +249,5 @@ var NAVTREEINDEX51 =
 "struct_control_1_1_int_spin_box.html#ac9990880a691fe17f10071e2369e6e3a":[12,0,4,29,4],
 "struct_control_1_1_int_spin_box.html#acb5bb491781079e91de329d9d272fad2":[12,0,4,29,8],
 "struct_control_1_1_int_spin_box.html#ad888efdae1ac1c36bff9bf56effbbb08":[12,0,4,29,9],
-"struct_control_1_1_int_spin_box.html#aeb5cdeed683b8f1336ef0ed234a1eabc":[12,0,4,29,7],
-"struct_control_1_1_line_edit.html":[12,0,4,31],
-"struct_control_1_1_line_edit.html#a0941a6f5dea584138215690014eb823f":[12,0,4,31,6],
-"struct_control_1_1_line_edit.html#a157a25b6b1488d2c3838aa38279b72c1":[12,0,4,31,5],
-"struct_control_1_1_line_edit.html#a2354173a4e7f1f899f018b90d3dd728c":[12,0,4,31,0],
-"struct_control_1_1_line_edit.html#a32e8aa535f778068f9e8cee2400dcf80":[12,0,4,31,4]
+"struct_control_1_1_int_spin_box.html#aeb5cdeed683b8f1336ef0ed234a1eabc":[12,0,4,29,7]
 };

@@ -1,5 +1,10 @@
 var NAVTREEINDEX48 =
 {
+"classscore__plugin__pd.html#acf39b09fd960c35234b8778a397ae9df":[12,0,348,0],
+"classscore__plugin__protocols.html":[12,0,349],
+"classscore__plugin__protocols.html#a2e4840fa250d18a403dc09993769592e":[12,0,349,0],
+"classscore__plugin__protocols.html#acad07c1145855294abde99c89d27cf42":[12,0,349,1],
+"classscore__plugin__recording.html":[12,0,350],
 "classscore__plugin__recording.html#a3f63afc4ad5bb6c84e93d7357e4afac0":[12,0,350,1],
 "classscore__plugin__recording.html#af44e59042634edd38e21281e6fc84116":[12,0,350,0],
 "classscore__plugin__remotecontrol.html":[12,0,351],
@@ -244,10 +249,5 @@ var NAVTREEINDEX48 =
 "classvst_1_1_control_port_factory.html":[12,0,53,3],
 "classvst_1_1_control_port_factory.html#a0330ebd54fa5008b6deb7af497c83d20":[12,0,53,3,3],
 "classvst_1_1_control_port_factory.html#a35e0e4f3e8893d4361ca5148c29c36ff":[12,0,53,3,1],
-"classvst_1_1_control_port_factory.html#aa24117af20faf5a6e47f63b1a1badbe2":[12,0,53,3,5],
-"classvst_1_1_control_port_factory.html#aab57b1f2f06b40118aabaebe32f69b39":[12,0,53,3,4],
-"classvst_1_1_control_port_factory.html#adf7b65d32bfe3affc2e534a8ce9bb1e7":[12,0,53,3,0],
-"classvst_1_1_control_port_factory.html#aef395542708c84ad84fd32665b96ebf1":[12,0,53,3,2],
-"classvst_1_1_create_control.html":[12,0,53,5],
-"classvst_1_1_create_control.html#a1a86182b016bc4c318475688a1962c58":[12,0,53,5,0]
+"classvst_1_1_control_port_factory.html#aa24117af20faf5a6e47f63b1a1badbe2":[12,0,53,3,5]
 };

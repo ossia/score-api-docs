@@ -1,5 +1,10 @@
 var NAVTREEINDEX50 =
 {
+"plugins_2score-plugin-vst_2_vst_2commands_8hpp_source.html":[13,0,172],
+"plugins_2score-plugin-ysfx_2_y_s_f_x_2_executor_2_component_8hpp_source.html":[13,0,190],
+"prefix_8hpp_source.html":[13,0,892],
+"score-lib-process_2_control_2_widgets_8hpp_source.html":[13,0,1374],
+"score-lib-process_2_process_2_application_plugin_8hpp_source.html":[13,0,50],
 "score-lib-process_2_process_2_dataflow_2_port_8hpp_source.html":[13,0,881],
 "score-lib-process_2_process_2_dataflow_2_port_item_8hpp_source.html":[13,0,886],
 "score-lib-process_2_process_2_instantiations_8hpp_source.html":[13,0,537],
@@ -244,10 +249,5 @@ var NAVTREEINDEX50 =
 "struct_analysis_1_1_spectral_diff_h_w_r_1_1_metadata.html":[12,0,0,15,0],
 "struct_analysis_1_1_spectrum.html":[12,0,0,16],
 "struct_analysis_1_1_spectrum.html#a16fee01b243a089af32ca710eede2e2a":[12,0,0,16,2],
-"struct_analysis_1_1_spectrum.html#a953fd4fae873b10faf1e6378bc7fdc84":[12,0,0,16,1],
-"struct_analysis_1_1_spectrum_1_1_metadata.html":[12,0,0,16,0],
-"struct_analysis_1_1_zero_crossing.html":[12,0,0,17],
-"struct_analysis_1_1_zero_crossing.html#a911e7c478431e8c274b9ee7e3dc3e792":[12,0,0,17,1],
-"struct_analysis_1_1_zero_crossing.html#acafdfb90106bec368b64794359b1ad60":[12,0,0,17,2],
-"struct_analysis_1_1_zero_crossing_1_1_metadata.html":[12,0,0,17,0]
+"struct_analysis_1_1_spectrum.html#a953fd4fae873b10faf1e6378bc7fdc84":[12,0,0,16,1]
 };

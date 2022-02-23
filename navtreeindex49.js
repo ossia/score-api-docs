@@ -1,5 +1,10 @@
 var NAVTREEINDEX49 =
 {
+"classvst_1_1_control_port_factory.html#aab57b1f2f06b40118aabaebe32f69b39":[12,0,53,3,4],
+"classvst_1_1_control_port_factory.html#adf7b65d32bfe3affc2e534a8ce9bb1e7":[12,0,53,3,0],
+"classvst_1_1_control_port_factory.html#aef395542708c84ad84fd32665b96ebf1":[12,0,53,3,2],
+"classvst_1_1_create_control.html":[12,0,53,5],
+"classvst_1_1_create_control.html#a1a86182b016bc4c318475688a1962c58":[12,0,53,5,0],
 "classvst_1_1_create_control.html#a34005e90b2bf8276e8babba24a2ecc99":[12,0,53,5,1],
 "classvst_1_1_create_control.html#a3e0ebdc0eca876b6a72a5b5624e3bd7c":[12,0,53,5,3],
 "classvst_1_1_create_control.html#a4597b71b20a632d72c9182db0a299b0f":[12,0,53,5,5],
@@ -244,10 +249,5 @@ var NAVTREEINDEX49 =
 "plugins_2score-plugin-vst3_2_vst3_2_u_i_2_window_8hpp_source.html":[13,0,1386],
 "plugins_2score-plugin-vst3_2_vst3_2commands_8hpp_source.html":[13,0,173],
 "plugins_2score-plugin-vst_2_vst_2_settings_8hpp_source.html":[13,0,1172],
-"plugins_2score-plugin-vst_2_vst_2_window_8hpp_source.html":[13,0,1385],
-"plugins_2score-plugin-vst_2_vst_2commands_8hpp_source.html":[13,0,172],
-"plugins_2score-plugin-ysfx_2_y_s_f_x_2_executor_2_component_8hpp_source.html":[13,0,190],
-"prefix_8hpp_source.html":[13,0,892],
-"score-lib-process_2_control_2_widgets_8hpp_source.html":[13,0,1374],
-"score-lib-process_2_process_2_application_plugin_8hpp_source.html":[13,0,50]
+"plugins_2score-plugin-vst_2_vst_2_window_8hpp_source.html":[13,0,1385]
 };

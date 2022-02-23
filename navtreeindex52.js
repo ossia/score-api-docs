@@ -1,5 +1,10 @@
 var NAVTREEINDEX52 =
 {
+"struct_control_1_1_line_edit.html":[12,0,4,31],
+"struct_control_1_1_line_edit.html#a0941a6f5dea584138215690014eb823f":[12,0,4,31,6],
+"struct_control_1_1_line_edit.html#a157a25b6b1488d2c3838aa38279b72c1":[12,0,4,31,5],
+"struct_control_1_1_line_edit.html#a2354173a4e7f1f899f018b90d3dd728c":[12,0,4,31,0],
+"struct_control_1_1_line_edit.html#a32e8aa535f778068f9e8cee2400dcf80":[12,0,4,31,4],
 "struct_control_1_1_line_edit.html#a5484079215c4cbcea34dfca93446f81f":[12,0,4,31,2],
 "struct_control_1_1_line_edit.html#a6bf14447b1bc0439e50dbbff2c334865":[12,0,4,31,7],
 "struct_control_1_1_line_edit.html#aa37a2ab02c7dbe5152abffee6869abe1":[12,0,4,31,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX52 =
 "struct_dataflow_1_1_min_max_float_outlet_factory.html#a02b2fb0dd1cd5bef187d4980e3fc82f5":[12,0,7,30,4],
 "struct_dataflow_1_1_min_max_float_outlet_factory.html#a1315f6f92e44a53b0ef3f665d6610c95":[12,0,7,30,2],
 "struct_dataflow_1_1_min_max_float_outlet_factory.html#a5c9887b53eb9f91a64832cbce358ff8c":[12,0,7,30,1],
-"struct_dataflow_1_1_min_max_float_outlet_factory.html#a6084688fc48bafbc98c57e32c8a542f5":[12,0,7,30,3],
-"struct_dataflow_1_1_min_max_float_outlet_factory.html#a8b598f6f080bfd3305fefcf7b3236a26":[12,0,7,30,0],
-"struct_dataflow_1_1_value_inlet_factory.html":[12,0,7,38],
-"struct_dataflow_1_1_value_inlet_factory.html#aa9feaa427f9083b2272c7c1e2866bbcb":[12,0,7,38,1],
-"struct_dataflow_1_1_value_inlet_factory.html#ad4b4ae153b181906053e65a660ef64e1":[12,0,7,38,2],
-"struct_dataflow_1_1_value_inlet_factory.html#adeab2870351efefc93527f9d6e759b5b":[12,0,7,38,0]
+"struct_dataflow_1_1_min_max_float_outlet_factory.html#a6084688fc48bafbc98c57e32c8a542f5":[12,0,7,30,3]
 };

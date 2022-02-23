@@ -74,6 +74,7 @@ var namespace_scenario =
       [ "MoveProcess", "class_scenario_1_1_command_1_1_move_process.html", "class_scenario_1_1_command_1_1_move_process" ],
       [ "MoveStateMacro", "class_scenario_1_1_command_1_1_move_state_macro.html", null ],
       [ "MoveTopEventMeta", "class_scenario_1_1_command_1_1_move_top_event_meta.html", "class_scenario_1_1_command_1_1_move_top_event_meta" ],
+      [ "PasteProcessesInInterval", "class_scenario_1_1_command_1_1_paste_processes_in_interval.html", "class_scenario_1_1_command_1_1_paste_processes_in_interval" ],
       [ "PutProcessBefore", "class_scenario_1_1_command_1_1_put_process_before.html", "class_scenario_1_1_command_1_1_put_process_before" ],
       [ "PutStateProcessBefore", "class_scenario_1_1_command_1_1_put_state_process_before.html", "class_scenario_1_1_command_1_1_put_state_process_before" ],
       [ "RefreshStatesMacro", "class_scenario_1_1_command_1_1_refresh_states_macro.html", null ],
