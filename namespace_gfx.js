@@ -31,6 +31,7 @@ var namespace_gfx =
       [ "InputDevice", "class_gfx_1_1_spout_1_1_input_device.html", "class_gfx_1_1_spout_1_1_input_device" ],
       [ "InputFactory", "class_gfx_1_1_spout_1_1_input_factory.html", "class_gfx_1_1_spout_1_1_input_factory" ],
       [ "InputSettingsWidget", "class_gfx_1_1_spout_1_1_input_settings_widget.html", "class_gfx_1_1_spout_1_1_input_settings_widget" ],
+      [ "SpoutEnumerator", "class_gfx_1_1_spout_1_1_spout_enumerator.html", "class_gfx_1_1_spout_1_1_spout_enumerator" ],
       [ "SpoutInputNode", "struct_gfx_1_1_spout_1_1_spout_input_node.html", "struct_gfx_1_1_spout_1_1_spout_input_node" ]
     ] ],
     [ "Syphon", null, [

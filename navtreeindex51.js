@@ -1,5 +1,8 @@
 var NAVTREEINDEX51 =
 {
+"struct_analysis_1_1_spectral_diff_h_w_r.html#a4ba984be25915c74eb67bb6fd2dc4bbc":[12,0,0,15,2],
+"struct_analysis_1_1_spectral_diff_h_w_r_1_1_metadata.html":[12,0,0,15,0],
+"struct_analysis_1_1_spectrum.html":[12,0,0,16],
 "struct_analysis_1_1_spectrum.html#a16fee01b243a089af32ca710eede2e2a":[12,0,0,16,2],
 "struct_analysis_1_1_spectrum.html#a953fd4fae873b10faf1e6378bc7fdc84":[12,0,0,16,1],
 "struct_analysis_1_1_spectrum_1_1_metadata.html":[12,0,0,16,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX51 =
 "struct_control_1_1_int_spin_box.html#a672c03664bf22f259e12053340b9b4c3":[12,0,4,29,6],
 "struct_control_1_1_int_spin_box.html#a737daf1ff7bb4358c19869b81ae708a5":[12,0,4,29,12],
 "struct_control_1_1_int_spin_box.html#a826bc093193e5311c3b1ae92f6378c6c":[12,0,4,29,3],
-"struct_control_1_1_int_spin_box.html#aa3605203d0ce7c400d5946bf4e6412eb":[12,0,4,29,1],
-"struct_control_1_1_int_spin_box.html#ab5162ba187c9510c3ada24c7a9aa71ad":[12,0,4,29,10],
-"struct_control_1_1_int_spin_box.html#ac9990880a691fe17f10071e2369e6e3a":[12,0,4,29,4],
-"struct_control_1_1_int_spin_box.html#acb5bb491781079e91de329d9d272fad2":[12,0,4,29,8]
+"struct_control_1_1_int_spin_box.html#aa3605203d0ce7c400d5946bf4e6412eb":[12,0,4,29,1]
 };
