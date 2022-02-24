@@ -187,6 +187,7 @@ var namespacescore =
     [ "PanelDelegateFactory", "classscore_1_1_panel_delegate_factory.html", "classscore_1_1_panel_delegate_factory" ],
     [ "PanelDelegateFactoryList", "classscore_1_1_panel_delegate_factory_list.html", "classscore_1_1_panel_delegate_factory_list" ],
     [ "PanelStatus", "structscore_1_1_panel_status.html", "structscore_1_1_panel_status" ],
+    [ "PathInfo", "structscore_1_1_path_info.html", "structscore_1_1_path_info" ],
     [ "Plugin", "structscore_1_1_plugin.html", null ],
     [ "Plugin_QtInterface", "classscore_1_1_plugin___qt_interface.html", "classscore_1_1_plugin___qt_interface" ],
     [ "PolymorphicComponentHierarchyManager", "classscore_1_1_polymorphic_component_hierarchy_manager.html", "classscore_1_1_polymorphic_component_hierarchy_manager" ],

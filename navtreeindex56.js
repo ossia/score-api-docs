@@ -117,11 +117,13 @@ var NAVTREEINDEX56 =
 "struct_library_1_1_process_data.html#a2fb669fe52503bd4c772bb2d6108804f":[12,0,24,11,1],
 "struct_library_1_1_process_data.html#a7fdf03a7f549515ba2fd4e6231e7328e":[12,0,24,11,0],
 "struct_library_1_1_subcategories.html":[12,0,24,21],
-"struct_library_1_1_subcategories.html#a11fd10f4b5ec7c1411a63e9a545b26ed":[12,0,24,21,4],
+"struct_library_1_1_subcategories.html#a11fd10f4b5ec7c1411a63e9a545b26ed":[12,0,24,21,6],
+"struct_library_1_1_subcategories.html#a27bf004f5cbb21db8bef3269d5b4d852":[12,0,24,21,1],
 "struct_library_1_1_subcategories.html#a38abc7e3f7b6771acba3f546143bc864":[12,0,24,21,0],
-"struct_library_1_1_subcategories.html#a3fbaf50b9d1e21af51469494a78402cb":[12,0,24,21,2],
-"struct_library_1_1_subcategories.html#a73e0b24aa0f70667807f881fee9fa21f":[12,0,24,21,1],
-"struct_library_1_1_subcategories.html#af951ffdf31b3bcdce2e74ba2dd87ecbd":[12,0,24,21,3],
+"struct_library_1_1_subcategories.html#a3fbaf50b9d1e21af51469494a78402cb":[12,0,24,21,3],
+"struct_library_1_1_subcategories.html#a73e0b24aa0f70667807f881fee9fa21f":[12,0,24,21,2],
+"struct_library_1_1_subcategories.html#acd2d854637aaa188e81f40bf49237c0b":[12,0,24,21,5],
+"struct_library_1_1_subcategories.html#af951ffdf31b3bcdce2e74ba2dd87ecbd":[12,0,24,21,4],
 "struct_local_tree_1_1_base_property.html":[12,0,25,2],
 "struct_local_tree_1_1_base_property.html#a0b3ec7813b43734d4fb3af21de017c55":[12,0,25,2,2],
 "struct_local_tree_1_1_base_property.html#a5c22125e022121885c53f70e82e37576":[12,0,25,2,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX56 =
 "struct_media_1_1_single_frame_computer.html#a51a8813c8c2103e90209f40f80640af7":[12,0,28,22,3],
 "struct_media_1_1_single_frame_computer.html#aa7503bfb3f78ad8ee8ab6fefb388c300":[12,0,28,22,0],
 "struct_media_1_1_single_frame_computer.html#ac990889c398bae7edde3cf5dc87bb678":[12,0,28,22,2],
-"struct_media_1_1_single_frame_computer.html#af610cea963c319d5db99197c926f162f":[12,0,28,22,1],
-"struct_media_1_1_sound_1_1_computed_waveform.html":[12,0,28,3,1],
-"struct_media_1_1_sound_1_1_computed_waveform.html#a207c6820221fc49d3ccfb2f1c1192eea":[12,0,28,3,1,1]
+"struct_media_1_1_single_frame_computer.html#af610cea963c319d5db99197c926f162f":[12,0,28,22,1]
 };
