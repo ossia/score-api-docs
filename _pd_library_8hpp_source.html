@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('_pd_library_8hpp_source.html',''); ini
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">  </span>{</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    QFileInfo file{QString::fromUtf8(path.data(), path.length())};</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="struct_library_1_1_process_data.html">Library::ProcessData</a> pdata;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    pdata.prettyName = file.baseName();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    pdata.prettyName = file.completeBaseName();</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    pdata.key = <a class="code" href="struct_metadata.html">Metadata&lt;ConcreteKey_k, Pd::ProcessModel&gt;::get</a>();</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    pdata.customData = [&amp;] { <span class="keywordflow">return</span> file.absoluteFilePath(); }();</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>

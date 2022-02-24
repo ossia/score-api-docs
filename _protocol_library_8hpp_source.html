@@ -191,7 +191,7 @@ $(document).ready(function(){initNavTree('_protocol_library_8hpp_source.html',''
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">auto</span>&amp; model = devplug.explorer();</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; set = *n.target&lt;<a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&gt;();</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    set.name = QFileInfo(path).baseName();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    set.name = QFileInfo(path).completeBaseName();</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    set.protocol = Protocols::OSCProtocolFactory::static_concreteKey();</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    model.checkAndLoadDevice(std::move(n));</div>

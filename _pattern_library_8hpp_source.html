@@ -143,7 +143,7 @@ $(document).ready(function(){initNavTree('_pattern_library_8hpp_source.html','')
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">  </span>{</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    QFileInfo file{QString::fromUtf8(path.data(), path.length())};</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="struct_library_1_1_process_data.html">Library::ProcessData</a> pdata;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    pdata.prettyName = file.baseName();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    pdata.prettyName = file.completeBaseName();</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    pdata.key = <a class="code" href="struct_metadata.html">Metadata&lt;ConcreteKey_k, Patternist::ProcessModel&gt;::get</a>();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    pdata.author = <span class="stringliteral">&quot;Drum Patterns&quot;</span>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    pdata.customData = file.absoluteFilePath();</div>
