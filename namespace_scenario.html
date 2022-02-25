@@ -201,6 +201,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scenario_1_1_control_item_model.html">ControlItemModel</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_scenario_1_1_copied_cables.html">CopiedCables</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scenario_1_1_creation___from_event.html">Creation_FromEvent</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scenario_1_1_creation___from_nothing.html">Creation_FromNothing</a></td></tr>
@@ -524,6 +526,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_scenario_1_1_positioned_with_id___scenario_event.html">PositionedWithId_ScenarioEvent</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scenario_1_1_process_data_drop_handler.html">ProcessDataDropHandler</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_scenario_1_1_processes_being_copied.html">ProcessesBeingCopied</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scenario_1_1_process_graphics_view.html">ProcessGraphicsView</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1136,6 +1140,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Duplicate</b> (const 
 <tr class="memitem:a5f05cfb55d9af7669ec9de15475c997e"><td class="memItemLeft" align="right" valign="top"><a id="a5f05cfb55d9af7669ec9de15475c997e"></a>
 std::vector&lt; <a class="el" href="struct_process_1_1_cable_data.html">Process::CableData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>cableDataFromCablesJson</b> (const rapidjson::Document::ConstArray &amp;arr)</td></tr>
 <tr class="separator:a5f05cfb55d9af7669ec9de15475c997e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa83c288cb5a4ff78561c27763139d799"><td class="memItemLeft" align="right" valign="top"><a id="aa83c288cb5a4ff78561c27763139d799"></a>
+std::vector&lt; <a class="el" href="struct_process_1_1_cable_data.html">Process::CableData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>cableDataFromCablesJson</b> (const rapidjson::Document::Array &amp;arr)</td></tr>
+<tr class="separator:aa83c288cb5a4ff78561c27763139d799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abff660ecf0ab4c50e9c652f22885ee3f"><td class="memTemplParams" colspan="2"><a id="abff660ecf0ab4c50e9c652f22885ee3f"></a>
+template&lt;typename CopiedObjects , typename ParentObject &gt; </td></tr>
+<tr class="memitem:abff660ecf0ab4c50e9c652f22885ee3f"><td class="memTemplItemLeft" align="right" valign="top">ossia::flat_map&lt; <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="class_process_1_1_cable.html">Process::Cable</a> &gt;, <a class="el" href="struct_process_1_1_cable_data.html">Process::CableData</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>mapCopiedCables</b> (const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, std::vector&lt; <a class="el" href="struct_process_1_1_cable_data.html">Process::CableData</a> &gt; &amp;cables, std::vector&lt; CopiedObjects * &gt; &amp;intervals, const std::vector&lt; <a class="el" href="classid__base__t.html">Id</a>&lt; CopiedObjects &gt;&gt; &amp;interval_ids, const ParentObject &amp;scenario)</td></tr>
+<tr class="separator:abff660ecf0ab4c50e9c652f22885ee3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77915306f151d8cb1192ab3eb38f5a27"><td class="memItemLeft" align="right" valign="top"><a id="a77915306f151d8cb1192ab3eb38f5a27"></a>
 const QVector&lt; <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="class_scenario_1_1_interval_model.html">IntervalModel</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>intervalsBeforeTimeSync</b> (const <a class="el" href="class_scenario_1_1_base_scenario.html">BaseScenario</a> &amp;scen, const <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="class_scenario_1_1_time_sync_model.html">TimeSyncModel</a> &gt; &amp;timeSyncId)</td></tr>
 <tr class="separator:a77915306f151d8cb1192ab3eb38f5a27"><td class="memSeparator" colspan="2">&#160;</td></tr>

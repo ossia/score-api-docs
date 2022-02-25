@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"class_gfx_1_1kinect2__decoder.html#adf0d6e9f684cb116a66fb9dad4879138":[12,0,16,30,1],
 "class_gfx_1_1kinect2__decoder.html#af90612f9e25a27542220a2488c4a1799":[12,0,16,30,3],
 "class_gfx_1_1kinect2__device.html":[12,0,16,31],
 "class_gfx_1_1kinect2__device.html#ac561bb2e6648192619216615b66747de":[12,0,16,31,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "class_inspector_1_1_inspector_widget_base.html#a294e1ccf9eb5abf238a1d06d4e5a4a46":[12,0,18,1,9],
 "class_inspector_1_1_inspector_widget_base.html#a3237ba08dab159aab062a40ff5e263a6":[12,0,18,1,4],
 "class_inspector_1_1_inspector_widget_base.html#a4c8f2be8e5651eab836ca22071200e58":[12,0,18,1,3],
-"class_inspector_1_1_inspector_widget_base.html#a8d5b6e6468f3abe11bb8812609415c24":[12,0,18,1,8],
-"class_inspector_1_1_inspector_widget_base.html#a95138d46cc4f798391d29cf8faf44857":[12,0,18,1,1]
+"class_inspector_1_1_inspector_widget_base.html#a8d5b6e6468f3abe11bb8812609415c24":[12,0,18,1,8]
 };

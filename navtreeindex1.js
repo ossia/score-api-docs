@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"_cable_item_8hpp_source.html":[13,0,118],
 "_camera_device_8hpp_source.html":[13,0,119],
 "_camera_input_8hpp_source.html":[13,0,120],
 "_central_interval_display_8hpp_source.html":[13,0,121],
@@ -55,6 +56,7 @@ var NAVTREEINDEX1 =
 "_commands.html#Dispatchers":[1,2,0],
 "_commands.html#LaunchingCommands":[1,1],
 "_commands.html#SpecialCommands":[1,2],
+"_commands_2_scenario_2_scenario_paste_8hpp_source.html":[13,0,1070],
 "_comment_block_model_8hpp_source.html":[13,0,178],
 "_comment_block_presenter_8hpp_source.html":[13,0,179],
 "_comment_block_view_8hpp_source.html":[13,0,180],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "_event_presenter_8hpp_source.html":[13,0,387],
 "_event_shortcut_8hpp_source.html":[13,0,388],
 "_event_summary_widget_8hpp_source.html":[13,0,389],
-"_event_transitions_8hpp_source.html":[13,0,390],
-"_event_view_8hpp_source.html":[13,0,391],
-"_execution_2_scenario_execution_8hpp_source.html":[13,0,1057]
+"_event_transitions_8hpp_source.html":[13,0,390]
 };

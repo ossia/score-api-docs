@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"class_gfx_1_1_settings_1_1_presenter.html#a7572d48e2939dc025a8a0bd7bf1a8c40":[12,0,16,2,2,1],
 "class_gfx_1_1_settings_1_1_presenter.html#ad831066b1508b6f13aaa3fb55f4f45eb":[12,0,16,2,2,0],
 "class_gfx_1_1_settings_1_1_view.html":[12,0,16,2,3],
 "class_gfx_1_1_settings_1_1_view.html#abd8c4d1659062be759e05f5a3839ee16":[12,0,16,2,3,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "class_gfx_1_1kinect2__decoder.html":[12,0,16,30],
 "class_gfx_1_1kinect2__decoder.html#a7daae830b60015f820572a2253b65fa1":[12,0,16,30,4],
 "class_gfx_1_1kinect2__decoder.html#a91b132a792054370238b847b1b6447ce":[12,0,16,30,2],
-"class_gfx_1_1kinect2__decoder.html#ad178a9d5c90be4d2a893be2fc979c8c9":[12,0,16,30,0],
-"class_gfx_1_1kinect2__decoder.html#adf0d6e9f684cb116a66fb9dad4879138":[12,0,16,30,1]
+"class_gfx_1_1kinect2__decoder.html#ad178a9d5c90be4d2a893be2fc979c8c9":[12,0,16,30,0]
 };
