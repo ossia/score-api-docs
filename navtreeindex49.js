@@ -1,5 +1,7 @@
 var NAVTREEINDEX49 =
 {
+"classvst_1_1_control_inlet.html#a6e7fd2554d8632d19999cd32bb972d1f":[12,0,53,2,10],
+"classvst_1_1_control_inlet.html#a789d223e0d2a269502a44469dd9f8ec9":[12,0,53,2,1],
 "classvst_1_1_control_inlet.html#a7e1d478ae7144cd36a5685baba452052":[12,0,53,2,5],
 "classvst_1_1_control_inlet.html#aaba2dd9a0fc89076285eb176016fe4a7":[12,0,53,2,7],
 "classvst_1_1_control_inlet.html#aba78c9b3ba6d127d3ace848324ca19d8":[12,0,53,2,0],
@@ -196,8 +198,8 @@ var NAVTREEINDEX49 =
 "namespace_execution.html":[11,0,4],
 "namespace_gfx.html":[12,0,16],
 "namespace_gfx.html":[11,0,5],
-"namespace_inspector.html":[12,0,18],
 "namespace_inspector.html":[11,0,6],
+"namespace_inspector.html":[12,0,18],
 "namespace_local_tree.html":[11,0,7],
 "namespace_local_tree.html":[12,0,25],
 "namespace_plugin_loader.html":[11,0,8],
@@ -205,16 +207,16 @@ var NAVTREEINDEX49 =
 "namespace_process.html":[12,0,37],
 "namespace_scenario.html":[12,0,43],
 "namespace_scenario.html":[11,0,10],
-"namespace_state.html":[11,0,12],
 "namespace_state.html":[12,0,48],
+"namespace_state.html":[11,0,12],
 "namespacemembers.html":[11,1,0],
 "namespacemembers_enum.html":[11,1,3],
 "namespacemembers_eval.html":[11,1,4],
 "namespacemembers_func.html":[11,1,1],
 "namespacemembers_type.html":[11,1,2],
 "namespaces.html":[11,0],
-"namespacescore.html":[12,0,44],
 "namespacescore.html":[11,0,11],
+"namespacescore.html":[12,0,44],
 "namespacescore_1_1gfx.html":[12,0,44,2],
 "namespacescore_1_1gfx.html":[11,0,11,0],
 "pages.html":[],
@@ -247,7 +249,5 @@ var NAVTREEINDEX49 =
 "plugins_2score-plugin-nodal_2_nodal_2commands_8hpp_source.html":[13,0,169],
 "plugins_2score-plugin-packagemanager_2_package_manager_2_presenter_8hpp_source.html":[13,0,901],
 "plugins_2score-plugin-protocols_2_protocols_2_settings_2_presenter_8hpp_source.html":[13,0,902],
-"plugins_2score-plugin-remotecontrol_2_remote_control_2_document_plugin_8hpp_source.html":[13,0,328],
-"plugins_2score-plugin-remotecontrol_2_remote_control_2_settings_2_presenter_8hpp_source.html":[13,0,903],
-"plugins_2score-plugin-spline3d_2_spline3_d_2_metadata_8hpp_source.html":[13,0,701]
+"plugins_2score-plugin-remotecontrol_2_remote_control_2_document_plugin_8hpp_source.html":[13,0,328]
 };

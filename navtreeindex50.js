@@ -1,5 +1,7 @@
 var NAVTREEINDEX50 =
 {
+"plugins_2score-plugin-remotecontrol_2_remote_control_2_settings_2_presenter_8hpp_source.html":[13,0,903],
+"plugins_2score-plugin-spline3d_2_spline3_d_2_metadata_8hpp_source.html":[13,0,701],
 "plugins_2score-plugin-spline3d_2_spline3_d_2commands_8hpp_source.html":[13,0,171],
 "plugins_2score-plugin-spline_2_spline_2_metadata_8hpp_source.html":[13,0,700],
 "plugins_2score-plugin-spline_2_spline_2_presenter_8hpp_source.html":[13,0,904],
@@ -247,7 +249,5 @@ var NAVTREEINDEX50 =
 "struct_analysis_1_1_rolloff.html":[12,0,0,13],
 "struct_analysis_1_1_rolloff.html#a31e0e334d23baa085894385e89554585":[12,0,0,13,1],
 "struct_analysis_1_1_rolloff.html#a85387632c67f843f4a1652180966e304":[12,0,0,13,2],
-"struct_analysis_1_1_rolloff_1_1_metadata.html":[12,0,0,13,0],
-"struct_analysis_1_1_spectral_diff.html":[12,0,0,14],
-"struct_analysis_1_1_spectral_diff.html#a23542401f0ee28b688669f7e630e623c":[12,0,0,14,2]
+"struct_analysis_1_1_rolloff_1_1_metadata.html":[12,0,0,13,0]
 };

@@ -221,8 +221,10 @@ var NAVTREEINDEX26 =
 "class_protocols_1_1_rate_widget.html#a8a6575cd0ee9c73a4adedd1ff8a7c441":[12,0,38,61,1],
 "class_protocols_1_1_rate_widget.html#af0681baa178277786f6da74d680bced4":[12,0,38,61,2],
 "class_protocols_1_1_serial_device.html":[12,0,38,62],
+"class_protocols_1_1_serial_device.html#a90f0d3db61d7f68bf8008143409d1f08":[12,0,38,62,1],
 "class_protocols_1_1_serial_device.html#ac8ea6dce63d440140c31dd5bc029a041":[12,0,38,62,0],
-"class_protocols_1_1_serial_device.html#ad170920dc8c631b10d9a5c295ccc0b1b":[12,0,38,62,1],
+"class_protocols_1_1_serial_device.html#ad170920dc8c631b10d9a5c295ccc0b1b":[12,0,38,62,3],
+"class_protocols_1_1_serial_device.html#ad7de496e9880e48f412bf851bd38bfd9":[12,0,38,62,2],
 "class_protocols_1_1_serial_protocol_factory.html":[12,0,38,63],
 "class_protocols_1_1_serial_protocol_settings_widget.html":[12,0,38,64],
 "class_protocols_1_1_serial_protocol_settings_widget.html#a049f17d2a844ba380e1f13e6a0364a34":[12,0,38,64,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX26 =
 "class_protocols_1_1_settings_1_1_presenter.html#a7e0a566d121b4faf4a34c6023185e0b9":[12,0,38,1,2,1],
 "class_protocols_1_1_settings_1_1_view.html":[12,0,38,1,3],
 "class_protocols_1_1_settings_1_1_view.html#abc0beb3fe0e330cc6a0ae7858913bac4":[12,0,38,1,3,0],
-"class_protocols_1_1_t_c_p_widget.html":[12,0,38,67],
-"class_protocols_1_1_t_c_p_widget.html#a045bf741ba43962e5106fb4f089439cf":[12,0,38,67,2],
-"class_protocols_1_1_t_c_p_widget.html#a123511d5774d3c08a4e976a96b309f54":[12,0,38,67,1]
+"class_protocols_1_1_t_c_p_widget.html":[12,0,38,67]
 };

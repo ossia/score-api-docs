@@ -1,5 +1,7 @@
 var NAVTREEINDEX29 =
 {
+"class_scenario_1_1_command_1_1_macro.html#a0e9f0fd27fbec5f4b9d1f885136b7777":[12,0,43,0,49,18],
+"class_scenario_1_1_command_1_1_macro.html#a164d5520f459ae7af51c14a1b8ccfd21":[12,0,43,0,49,11],
 "class_scenario_1_1_command_1_1_macro.html#a171ef18cf13c2abe8f5c58b445cf00bf":[12,0,43,0,49,33],
 "class_scenario_1_1_command_1_1_macro.html#a177018ff49f0798e78597af1cb8b23d6":[12,0,43,0,49,4],
 "class_scenario_1_1_command_1_1_macro.html#a18288e7c5b70015bc3757fe78579fe25":[12,0,43,0,49,30],
@@ -247,7 +249,5 @@ var NAVTREEINDEX29 =
 "class_scenario_1_1_command_1_1_set_rigidity.html#ada6fcddb0992c8d00505be5ec4355c09":[12,0,43,0,97,1],
 "class_scenario_1_1_command_1_1_set_time_signatures.html":[12,0,43,0,98],
 "class_scenario_1_1_command_1_1_set_time_signatures.html#a96ad1f4c6fcd5fca4a2b5aacd3017d5e":[12,0,43,0,98,1],
-"class_scenario_1_1_command_1_1_set_time_signatures.html#ac18d5c835de6e873cdd0bc28e2c79433":[12,0,43,0,98,0],
-"class_scenario_1_1_command_1_1_set_trigger.html":[12,0,43,0,99],
-"class_scenario_1_1_command_1_1_set_trigger.html#a786e9d485b6cbbeffdf45c3780593313":[12,0,43,0,99,4]
+"class_scenario_1_1_command_1_1_set_time_signatures.html#ac18d5c835de6e873cdd0bc28e2c79433":[12,0,43,0,98,0]
 };

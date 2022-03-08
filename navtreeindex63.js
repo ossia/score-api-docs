@@ -1,5 +1,7 @@
 var NAVTREEINDEX63 =
 {
+"struct_scenario_1_1_point.html#a734f4c8f394b2a80b9ec6a3b43b24208":[12,0,43,190,0],
+"struct_scenario_1_1_point.html#a7567abdbc320349c76d3c4d508b5e9c2":[12,0,43,190,1],
 "struct_scenario_1_1_positioned_scenario_event.html":[12,0,43,191],
 "struct_scenario_1_1_positioned_scenario_event.html#acc6c289e17ce1be77259b57aef37d080":[12,0,43,191,0],
 "struct_scenario_1_1_positioned_with_id___scenario_event.html":[12,0,43,192],
@@ -247,7 +249,5 @@ var NAVTREEINDEX63 =
 "struct_state_1_1_domain.html#a6a039d04b9c027066194826a94bb7634":[12,0,48,16,4],
 "struct_state_1_1_domain.html#aba945f829b00ba0e5e041fa9c2bee5fb":[12,0,48,16,8],
 "struct_state_1_1_domain.html#addc03afaae0bfb407ea154a7f640eefb":[12,0,48,16,5],
-"struct_state_1_1_domain.html#aea074ff2f4dcdc69533c7835fead86fc":[12,0,48,16,10],
-"struct_state_1_1_domain.html#af10391c41fc0a6e257ea924f1acf3eb8":[12,0,48,16,13],
-"struct_state_1_1_domain.html#af3dee8b908d2aa32b9d8545965162038":[12,0,48,16,9]
+"struct_state_1_1_domain.html#aea074ff2f4dcdc69533c7835fead86fc":[12,0,48,16,10]
 };

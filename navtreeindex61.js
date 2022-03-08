@@ -1,5 +1,7 @@
 var NAVTREEINDEX61 =
 {
+"struct_q_meta_type_id_3_01_protocols_1_1_serial_specific_settings_01_4.html#af050f62b24fb5447fb55f20cba38fc1aa40c28a787f40291662104b914a39eb51":[12,0,267,0],
+"struct_q_meta_type_id_3_01_protocols_1_1_w_s_specific_settings_01_4.html":[12,0,269],
 "struct_q_meta_type_id_3_01_protocols_1_1_w_s_specific_settings_01_4.html#a417060cd5f7a2202fbc520e0648ca9fba68cc95248c31f8fee3fd40929acd8fbd":[12,0,269,0],
 "struct_q_meta_type_id_3_01_protocols_1_1_wiimote_specific_settings_01_4.html":[12,0,268],
 "struct_q_meta_type_id_3_01_protocols_1_1_wiimote_specific_settings_01_4.html#a96cb4b9537268240d7f82440dd209e95aa130101d7ea688d14a1cdde9e788d274":[12,0,268,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX61 =
 "struct_rendered_depth_node.html#a981084d2513cfb28ccca9dcbb3493b6d":[12,0,322,12],
 "struct_rendered_depth_node.html#a98f5c958f9fb141a4221d807c8380fb8":[12,0,322,23],
 "struct_rendered_depth_node.html#a9cc045401b47fe60dd771a0ce8793d11":[12,0,322,6],
-"struct_rendered_depth_node.html#ab9936c5d3616eb78da614c5017721453":[12,0,322,21],
-"struct_rendered_depth_node.html#ab999a87cebb49e4e465052abba465384":[12,0,322,16],
-"struct_rendered_depth_node.html#ac40159b6ac6157cdc7310d28702f555a":[12,0,322,13]
+"struct_rendered_depth_node.html#ab9936c5d3616eb78da614c5017721453":[12,0,322,21]
 };
