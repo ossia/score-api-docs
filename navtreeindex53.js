@@ -1,5 +1,12 @@
 var NAVTREEINDEX53 =
 {
+"struct_dataflow_1_1_midi_outlet_factory.html#a0c1f7d393017070b78750f67f017563b":[12,0,7,28,2],
+"struct_dataflow_1_1_midi_outlet_factory.html#a5a7ff4fc4387388445bff04bfc794d57":[12,0,7,28,3],
+"struct_dataflow_1_1_midi_outlet_factory.html#a936dbca13a2f4734998cea765e4d12a7":[12,0,7,28,0],
+"struct_dataflow_1_1_midi_outlet_factory.html#ae7bc957a58b861d69866769dee974b0b":[12,0,7,28,1],
+"struct_dataflow_1_1_min_max_float_outlet_factory.html":[12,0,7,30],
+"struct_dataflow_1_1_min_max_float_outlet_factory.html#a02b2fb0dd1cd5bef187d4980e3fc82f5":[12,0,7,30,4],
+"struct_dataflow_1_1_min_max_float_outlet_factory.html#a1315f6f92e44a53b0ef3f665d6610c95":[12,0,7,30,2],
 "struct_dataflow_1_1_min_max_float_outlet_factory.html#a5c9887b53eb9f91a64832cbce358ff8c":[12,0,7,30,1],
 "struct_dataflow_1_1_min_max_float_outlet_factory.html#a6084688fc48bafbc98c57e32c8a542f5":[12,0,7,30,3],
 "struct_dataflow_1_1_min_max_float_outlet_factory.html#a8b598f6f080bfd3305fefcf7b3236a26":[12,0,7,30,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX53 =
 "struct_execution_1_1_setup_context.html#a38f73bbb296e8af379dd4d23ee0e0e3e":[12,0,10,41,11],
 "struct_execution_1_1_setup_context.html#a3bd15520bd171fee7bb81845848fa14c":[12,0,10,41,28],
 "struct_execution_1_1_setup_context.html#a4421ae0e2758bcff6e8a8e65c487b03f":[12,0,10,41,1],
-"struct_execution_1_1_setup_context.html#a47e77a0aa56b5fadb1b929b5cb586e19":[12,0,10,41,9],
-"struct_execution_1_1_setup_context.html#a59297fbdf0a2d2c25eb3ef4a64f2472d":[12,0,10,41,14],
-"struct_execution_1_1_setup_context.html#a6b7198e6d5f2a5c3aef1a2da1e04b1d4":[12,0,10,41,20],
-"struct_execution_1_1_setup_context.html#a7a956fdda513ef4a1f7cf121f6683343":[12,0,10,41,16],
-"struct_execution_1_1_setup_context.html#a81e4b92d4deaf33be67c43c971c3f252":[12,0,10,41,13],
-"struct_execution_1_1_setup_context.html#a8dded15744ba050cefdc510aa4cedd1c":[12,0,10,41,5],
-"struct_execution_1_1_setup_context.html#a93b268f1d9f7513efdba5d8bc09b77c4":[12,0,10,41,23],
-"struct_execution_1_1_setup_context.html#a959aa3cc51a2cc4456bbba09753e9bed":[12,0,10,41,12]
+"struct_execution_1_1_setup_context.html#a47e77a0aa56b5fadb1b929b5cb586e19":[12,0,10,41,9]
 };

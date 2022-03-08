@@ -16,5 +16,6 @@ var class_midi_1_1_presenter =
     [ "putBehind", "class_midi_1_1_presenter.html#a5f6db8aebffe593aee64eadcd032821f", null ],
     [ "putToFront", "class_midi_1_1_presenter.html#a5006520d6f0e6d96423ee25caf119e26", null ],
     [ "setHeight", "class_midi_1_1_presenter.html#a366115c48c8b4466aa2cbaa8b800e2ce", null ],
-    [ "setWidth", "class_midi_1_1_presenter.html#a3aedbcb08e7aa8dcf5af51a7a53b312e", null ]
+    [ "setWidth", "class_midi_1_1_presenter.html#a3aedbcb08e7aa8dcf5af51a7a53b312e", null ],
+    [ "view", "class_midi_1_1_presenter.html#adf5c94146db0110a15830da3cdd76a78", null ]
 ];

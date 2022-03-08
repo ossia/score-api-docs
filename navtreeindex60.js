@@ -1,5 +1,12 @@
 var NAVTREEINDEX60 =
 {
+"struct_process_1_1_style.html#a7bfa29e79684d4806f4b9c998b54c5a5":[12,0,37,85,75],
+"struct_process_1_1_style.html#a7c1ae4de11aa00616342146afcb65016":[12,0,37,85,6],
+"struct_process_1_1_style.html#a7cacb11d41f3538ab38d939107fc13af":[12,0,37,85,90],
+"struct_process_1_1_style.html#a7e4ef407c284b062772733a956e6c596":[12,0,37,85,8],
+"struct_process_1_1_style.html#a89e6d28ce279696c5051a69e4a915bd4":[12,0,37,85,20],
+"struct_process_1_1_style.html#a8a47f27e3d1976dd2bba4fd3908f2363":[12,0,37,85,52],
+"struct_process_1_1_style.html#a8dd956a305878150e73786e9a4c2c389":[12,0,37,85,29],
 "struct_process_1_1_style.html#a8e7586adb50ac033ac3fe2c55e74b19e":[12,0,37,85,57],
 "struct_process_1_1_style.html#a9045d5ba8297035b0da980bf5d0e2e35":[12,0,37,85,35],
 "struct_process_1_1_style.html#a99d6f6d0fb951ff793189046a5137691":[12,0,37,85,89],
@@ -242,12 +249,5 @@ var NAVTREEINDEX60 =
 "struct_q_meta_type_id_3_01_protocols_1_1_o_s_c_specific_settings_01_4.html#a7ff8d63c11f23f2d4de985a3d6cbe6f9a9b7571c4d19bc07f98a7e3a403957283":[12,0,266,0],
 "struct_q_meta_type_id_3_01_protocols_1_1_serial_specific_settings_01_4.html":[12,0,267],
 "struct_q_meta_type_id_3_01_protocols_1_1_serial_specific_settings_01_4.html#af050f62b24fb5447fb55f20cba38fc1aa40c28a787f40291662104b914a39eb51":[12,0,267,0],
-"struct_q_meta_type_id_3_01_protocols_1_1_w_s_specific_settings_01_4.html":[12,0,269],
-"struct_q_meta_type_id_3_01_protocols_1_1_w_s_specific_settings_01_4.html#a417060cd5f7a2202fbc520e0648ca9fba68cc95248c31f8fee3fd40929acd8fbd":[12,0,269,0],
-"struct_q_meta_type_id_3_01_protocols_1_1_wiimote_specific_settings_01_4.html":[12,0,268],
-"struct_q_meta_type_id_3_01_protocols_1_1_wiimote_specific_settings_01_4.html#a96cb4b9537268240d7f82440dd209e95aa130101d7ea688d14a1cdde9e788d274":[12,0,268,0],
-"struct_q_meta_type_id_3_01_q_pointer_3_01_process_1_1_layer_presenter_01_4_01_4.html":[12,0,270],
-"struct_q_meta_type_id_3_01_q_pointer_3_01_process_1_1_layer_presenter_01_4_01_4.html#ac4c7dc56e1862681ffba3f8b07ad6823a20982cba4d72782ecebcbf3d2498fe4a":[12,0,270,0],
-"struct_q_meta_type_id_3_01_q_pointer_3_01_scenario_1_1_interval_model_01_4_01_4.html":[12,0,271],
-"struct_q_meta_type_id_3_01_q_pointer_3_01_scenario_1_1_interval_model_01_4_01_4.html#afbc287a709834a4ab3908fb00ce2d79ea248977316a22a5ad7cd9ab51e58ea5f5":[12,0,271,0]
+"struct_q_meta_type_id_3_01_protocols_1_1_w_s_specific_settings_01_4.html":[12,0,269]
 };

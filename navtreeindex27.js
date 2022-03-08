@@ -1,5 +1,12 @@
 var NAVTREEINDEX27 =
 {
+"class_protocols_1_1_t_c_p_widget.html#a3fc3e7d091eed5c16088a880f016d4f0":[12,0,38,67,3],
+"class_protocols_1_1_t_c_p_widget.html#aac9b56a00bb6a79b910b2d1a40efe3f5":[12,0,38,67,0],
+"class_protocols_1_1_u_d_p_widget.html":[12,0,38,68],
+"class_protocols_1_1_u_d_p_widget.html#a098c08e2d02d83ca0474cd3249159db5":[12,0,38,68,0],
+"class_protocols_1_1_u_d_p_widget.html#a6c2ea70306cf06638a806cc8f99b9625":[12,0,38,68,1],
+"class_protocols_1_1_u_d_p_widget.html#ac663320e7f1cc87010cafe9aa2502e10":[12,0,38,68,2],
+"class_protocols_1_1_unix_datagram_widget.html":[12,0,38,69],
 "class_protocols_1_1_unix_datagram_widget.html#a2f3196aafa58e5fbfda1d4a497a69a61":[12,0,38,69,1],
 "class_protocols_1_1_unix_datagram_widget.html#a3490642c14fd9ed9b4682edd48cd0998":[12,0,38,69,2],
 "class_protocols_1_1_unix_datagram_widget.html#a4d96ea862f5d99ca27a252ef6c8220af":[12,0,38,69,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX27 =
 "class_scenario_1_1_base_scenario_container.html#adb8b1929288635c0bcd7a458a00f8026":[12,0,43,9,8],
 "class_scenario_1_1_base_scenario_container.html#ae67ce60bff33cbac83fbde20410aefeb":[12,0,43,9,5],
 "class_scenario_1_1_base_scenario_container.html#af654a6fdcbc887d15cba28c778d6973d":[12,0,43,9,13],
-"class_scenario_1_1_base_scenario_container.html#af69fa9fc16a2e7f627bfb08143fa07fb":[12,0,43,9,1],
-"class_scenario_1_1_base_scenario_displayed_elements_provider.html":[12,0,43,10],
-"class_scenario_1_1_base_scenario_displayed_elements_provider.html#a19e16333946d29610459f5ea269a49d5":[12,0,43,10,0],
-"class_scenario_1_1_base_scenario_displayed_elements_provider.html#a1fa6152fe72fcb50f8e7dedd37695cf8":[12,0,43,10,1],
-"class_scenario_1_1_base_scenario_displayed_elements_provider.html#a76be1ecd4e82fadef9f5467a4da48cc7":[12,0,43,10,2],
-"class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html":[12,0,43,11],
-"class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#a06a70f1c4a8c19b8dba446eb34b14fd8":[12,0,43,11,3],
-"class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html#a17f03dd06408f4aecc185354a1a92ba3":[12,0,43,11,9]
+"class_scenario_1_1_base_scenario_container.html#af69fa9fc16a2e7f627bfb08143fa07fb":[12,0,43,9,1]
 };

@@ -1,5 +1,12 @@
 var NAVTREEINDEX26 =
 {
+"class_process_1_1_value_outlet.html#ad54251319bcffa36e55a3de7b25bf6fa":[12,0,37,87,6],
+"class_process_flags__k.html":[12,0,201],
+"class_process_panel_graphics_proxy.html":[12,0,202],
+"class_process_panel_graphics_proxy.html#a38fd83ea6e4d4e648850f6628218624c":[12,0,202,1],
+"class_process_panel_graphics_proxy.html#a4358ca15d098605e3091cd6bf7fbeb01":[12,0,202,0],
+"class_process_panel_graphics_proxy.html#a7c6eaadd3e9fde5754bc7baeda37a0b9":[12,0,202,2],
+"class_process_panel_graphics_proxy.html#ae37889335d4ffadbbd84117fcbfa5603":[12,0,202,3],
 "class_process_state_data_interface.html":[12,0,203],
 "class_process_state_data_interface.html#a130965b1c91a2757acc54e4f5576f24f":[12,0,203,1],
 "class_process_state_data_interface.html#a46ec9c95a84b86047bb478231300da8f":[12,0,203,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX26 =
 "class_protocols_1_1_settings_1_1_view.html#abc0beb3fe0e330cc6a0ae7858913bac4":[12,0,38,1,3,0],
 "class_protocols_1_1_t_c_p_widget.html":[12,0,38,67],
 "class_protocols_1_1_t_c_p_widget.html#a045bf741ba43962e5106fb4f089439cf":[12,0,38,67,2],
-"class_protocols_1_1_t_c_p_widget.html#a123511d5774d3c08a4e976a96b309f54":[12,0,38,67,1],
-"class_protocols_1_1_t_c_p_widget.html#a3fc3e7d091eed5c16088a880f016d4f0":[12,0,38,67,3],
-"class_protocols_1_1_t_c_p_widget.html#aac9b56a00bb6a79b910b2d1a40efe3f5":[12,0,38,67,0],
-"class_protocols_1_1_u_d_p_widget.html":[12,0,38,68],
-"class_protocols_1_1_u_d_p_widget.html#a098c08e2d02d83ca0474cd3249159db5":[12,0,38,68,0],
-"class_protocols_1_1_u_d_p_widget.html#a6c2ea70306cf06638a806cc8f99b9625":[12,0,38,68,1],
-"class_protocols_1_1_u_d_p_widget.html#ac663320e7f1cc87010cafe9aa2502e10":[12,0,38,68,2],
-"class_protocols_1_1_unix_datagram_widget.html":[12,0,38,69]
+"class_protocols_1_1_t_c_p_widget.html#a123511d5774d3c08a4e976a96b309f54":[12,0,38,67,1]
 };

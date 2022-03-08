@@ -464,6 +464,7 @@ var annotated_dup =
         [ "Component", "class_midi_1_1_executor_1_1_component.html", "class_midi_1_1_executor_1_1_component" ]
       ] ],
       [ "AddNote", "class_midi_1_1_add_note.html", "class_midi_1_1_add_note" ],
+      [ "AddNotes", "class_midi_1_1_add_notes.html", "class_midi_1_1_add_notes" ],
       [ "ChangeNotesVelocity", "class_midi_1_1_change_notes_velocity.html", "class_midi_1_1_change_notes_velocity" ],
       [ "DropHandler", "class_midi_1_1_drop_handler.html", "class_midi_1_1_drop_handler" ],
       [ "InspectorFactory", "class_midi_1_1_inspector_factory.html", null ],
