@@ -221,7 +221,7 @@ var NAVTREEINDEX26 =
 "class_protocols_1_1_rate_widget.html#a8a6575cd0ee9c73a4adedd1ff8a7c441":[12,0,38,61,1],
 "class_protocols_1_1_rate_widget.html#af0681baa178277786f6da74d680bced4":[12,0,38,61,2],
 "class_protocols_1_1_serial_device.html":[12,0,38,62],
-"class_protocols_1_1_serial_device.html#a06ac0bc33994de583cb6d61259009bea":[12,0,38,62,0],
+"class_protocols_1_1_serial_device.html#ac8ea6dce63d440140c31dd5bc029a041":[12,0,38,62,0],
 "class_protocols_1_1_serial_device.html#ad170920dc8c631b10d9a5c295ccc0b1b":[12,0,38,62,1],
 "class_protocols_1_1_serial_protocol_factory.html":[12,0,38,63],
 "class_protocols_1_1_serial_protocol_settings_widget.html":[12,0,38,64],
