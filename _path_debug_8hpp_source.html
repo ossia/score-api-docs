@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('_path_debug_8hpp_source.html',''); ini
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;QDebug operator&lt;&lt;(QDebug d, <a class="code" href="class_path.html">Path&lt;T&gt;</a> path)</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;QDebug&amp; operator&lt;&lt;(QDebug&amp; d, <span class="keyword">const</span> <a class="code" href="class_path.html">Path&lt;T&gt;</a>&amp; path)</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="keyword">auto</span>&amp; unsafe = path.unsafePath();</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  d &lt;&lt; unsafe.toString();</div>

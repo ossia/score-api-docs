@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('_scenario_settings_model_8hpp_source.h
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  QString m_DefaultEditor;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordtype">double</span> m_GraphicZoom{};</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  qreal m_SlotHeight{};</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="struct_time_val.html">TimeVal</a> m_DefaultDuration{std::chrono::seconds{30}};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="struct_time_val.html">TimeVal</a> m_DefaultDuration{TimeVal::fromMsecs(30000)};</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordtype">int</span> m_UpdateRate{60};</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">int</span> m_ExecutionRefreshRate{60};</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">bool</span> m_SnapshotOnCreate{};</div>
@@ -206,7 +206,7 @@ $(document).ready(function(){initNavTree('_scenario_settings_model_8hpp_source.h
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1366</div></div>
 <div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>
 <div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition:</b> TimeValue.hpp:19</div></div>
-<div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Process.hpp:55</div></div>
+<div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Process.hpp:54</div></div>
 <div class="ttc" id="aclass_scenario_1_1_settings_1_1_model_html"><div class="ttname"><a href="class_scenario_1_1_settings_1_1_model.html">Scenario::Settings::Model</a></div><div class="ttdef"><b>Definition:</b> ScenarioSettingsModel.hpp:18</div></div>
 <div class="ttc" id="astructscore_1_1_application_context_html"><div class="ttname"><a href="structscore_1_1_application_context.html">score::ApplicationContext</a></div><div class="ttdoc">Used to access all the application-wide state and structures.</div><div class="ttdef"><b>Definition:</b> ApplicationContext.hpp:23</div></div>
 <div class="ttc" id="aclassscore_1_1_settings_delegate_model_html"><div class="ttname"><a href="classscore_1_1_settings_delegate_model.html">score::SettingsDelegateModel</a></div><div class="ttdef"><b>Definition:</b> SettingsDelegateModel.hpp:15</div></div>

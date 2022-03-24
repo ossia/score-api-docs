@@ -404,6 +404,7 @@ var namespace_scenario =
     [ "TimeRulerGraphicsView", "class_scenario_1_1_time_ruler_graphics_view.html", "class_scenario_1_1_time_ruler_graphics_view" ],
     [ "TimeSignatureHandle", "class_scenario_1_1_time_signature_handle.html", "class_scenario_1_1_time_signature_handle" ],
     [ "TimeSignatureItem", "class_scenario_1_1_time_signature_item.html", "class_scenario_1_1_time_signature_item" ],
+    [ "TimeSignatureMap", "struct_scenario_1_1_time_signature_map.html", "struct_scenario_1_1_time_signature_map" ],
     [ "TimeSyncInspectorWidget", "class_scenario_1_1_time_sync_inspector_widget.html", "class_scenario_1_1_time_sync_inspector_widget" ],
     [ "TimeSyncModel", "class_scenario_1_1_time_sync_model.html", "class_scenario_1_1_time_sync_model" ],
     [ "TimeSyncPresenter", "class_scenario_1_1_time_sync_presenter.html", "class_scenario_1_1_time_sync_presenter" ],

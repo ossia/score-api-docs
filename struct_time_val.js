@@ -7,7 +7,6 @@ var struct_time_val =
     [ "TimeVal", "struct_time_val.html#a19d13b1bea8c48c59acacc4df83a7070", null ],
     [ "TimeVal", "struct_time_val.html#aff43e925cc9376eabb7bd38303136cad", null ],
     [ "TimeVal", "struct_time_val.html#af4b5f09f4b892839c5cfe224856b01c8", null ],
-    [ "TimeVal", "struct_time_val.html#aa04bd963516ad303c88840b4e444ac7d", null ],
     [ "msec", "struct_time_val.html#a4e45184dc33ce58a34e17d6170b0c515", null ],
     [ "operator bool", "struct_time_val.html#a5758112d15c2de58f009bb18b3a91960", null ],
     [ "operator!=", "struct_time_val.html#af7150b82f6c4435aa29291f365b2c9af", null ],

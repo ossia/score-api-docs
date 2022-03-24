@@ -39,6 +39,12 @@ var annotated_dup =
       [ "SDLFactory", "class_audio_1_1_s_d_l_factory.html", "class_audio_1_1_s_d_l_factory" ]
     ] ],
     [ "Automation", "namespace_automation.html", "namespace_automation" ],
+    [ "AvndJit", null, [
+      [ "EditAvndScript", "class_avnd_jit_1_1_edit_avnd_script.html", null ],
+      [ "Executor", "class_avnd_jit_1_1_executor.html", "class_avnd_jit_1_1_executor" ],
+      [ "inlet_vis", "struct_avnd_jit_1_1inlet__vis.html", "struct_avnd_jit_1_1inlet__vis" ],
+      [ "outlet_vis", "struct_avnd_jit_1_1outlet__vis.html", "struct_avnd_jit_1_1outlet__vis" ]
+    ] ],
     [ "boost", null, [
       [ "spirit", null, [
         [ "traits", null, [
@@ -607,6 +613,7 @@ var annotated_dup =
       ] ],
       [ "GenericMathMapping", "struct_nodes_1_1_generic_math_mapping.html", null ]
     ] ],
+    [ "oscr", "namespaceoscr.html", "namespaceoscr" ],
     [ "ossia", null, [
       [ "nodes", null, [
         [ "audio_metronome", "classossia_1_1nodes_1_1audio__metronome.html", "classossia_1_1nodes_1_1audio__metronome" ],
@@ -1074,18 +1081,25 @@ var annotated_dup =
     [ "Metadata", "struct_metadata.html", null ],
     [ "Metadata< Category_k, Control::ControlProcess< Info > >", "struct_metadata_3_01_category__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html", null ],
     [ "Metadata< Category_k, FaustDSP::Fx< DSP > >", "struct_metadata_3_01_category__k_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html", null ],
+    [ "Metadata< Category_k, oscr::ProcessModel< Info > >", "struct_metadata_3_01_category__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html", null ],
     [ "Metadata< ConcreteKey_k, Control::ControlProcess< Info > >", "struct_metadata_3_01_concrete_key__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html", null ],
     [ "Metadata< ConcreteKey_k, FaustDSP::Fx< mydsp > >", "struct_metadata_3_01_concrete_key__k_00_01_faust_d_s_p_1_1_fx_3_01mydsp_01_4_01_4.html", null ],
+    [ "Metadata< ConcreteKey_k, oscr::ProcessModel< Info > >", "struct_metadata_3_01_concrete_key__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html", null ],
     [ "Metadata< ObjectKey_k, Control::ControlProcess< Info > >", "struct_metadata_3_01_object_key__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html", null ],
     [ "Metadata< ObjectKey_k, FaustDSP::Fx< mydsp > >", "struct_metadata_3_01_object_key__k_00_01_faust_d_s_p_1_1_fx_3_01mydsp_01_4_01_4.html", null ],
+    [ "Metadata< ObjectKey_k, oscr::ProcessModel< Info > >", "struct_metadata_3_01_object_key__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html", null ],
     [ "Metadata< PrettyName_k, Control::ControlProcess< Info > >", "struct_metadata_3_01_pretty_name__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html", null ],
     [ "Metadata< PrettyName_k, FaustDSP::Fx< mydsp > >", "struct_metadata_3_01_pretty_name__k_00_01_faust_d_s_p_1_1_fx_3_01mydsp_01_4_01_4.html", null ],
+    [ "Metadata< PrettyName_k, oscr::ProcessModel< Info > >", "struct_metadata_3_01_pretty_name__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html", null ],
     [ "Metadata< Process::Descriptor_k, Control::ControlProcess< Info > >", "struct_metadata_3_01_process_1_1_descriptor__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html", null ],
     [ "Metadata< Process::Descriptor_k, FaustDSP::Fx< DSP > >", "struct_metadata_3_01_process_1_1_descriptor__k_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html", null ],
+    [ "Metadata< Process::Descriptor_k, oscr::ProcessModel< Info > >", "struct_metadata_3_01_process_1_1_descriptor__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html", null ],
     [ "Metadata< Process::ProcessFlags_k, Control::ControlProcess< Info > >", "struct_metadata_3_01_process_1_1_process_flags__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html", null ],
     [ "Metadata< Process::ProcessFlags_k, FaustDSP::Fx< DSP > >", "struct_metadata_3_01_process_1_1_process_flags__k_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html", null ],
+    [ "Metadata< Process::ProcessFlags_k, oscr::ProcessModel< Info > >", "struct_metadata_3_01_process_1_1_process_flags__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html", null ],
     [ "Metadata< Tags_k, Control::ControlProcess< Info > >", "struct_metadata_3_01_tags__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html", null ],
     [ "Metadata< Tags_k, FaustDSP::Fx< DSP > >", "struct_metadata_3_01_tags__k_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html", null ],
+    [ "Metadata< Tags_k, oscr::ProcessModel< Info > >", "struct_metadata_3_01_tags__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html", null ],
     [ "MidiInlet", "class_midi_inlet.html", "class_midi_inlet" ],
     [ "MidiMessage", "class_midi_message.html", "class_midi_message" ],
     [ "MidiOutlet", "class_midi_outlet.html", "class_midi_outlet" ],
@@ -1245,6 +1259,7 @@ var annotated_dup =
     [ "score_plugin_analysis", "classscore__plugin__analysis.html", "classscore__plugin__analysis" ],
     [ "score_plugin_audio", "classscore__plugin__audio.html", "classscore__plugin__audio" ],
     [ "score_plugin_automation", "classscore__plugin__automation.html", "classscore__plugin__automation" ],
+    [ "score_plugin_avnd", "classscore__plugin__avnd.html", "classscore__plugin__avnd" ],
     [ "score_plugin_controlsurface", "classscore__plugin__controlsurface.html", "classscore__plugin__controlsurface" ],
     [ "score_plugin_curve", "classscore__plugin__curve.html", "classscore__plugin__curve" ],
     [ "score_plugin_dataflow", "classscore__plugin__dataflow.html", "classscore__plugin__dataflow" ],
@@ -1317,6 +1332,8 @@ var annotated_dup =
     [ "TSerializer< DataStream, Id< U > >", "struct_t_serializer_3_01_data_stream_00_01_id_3_01_u_01_4_01_4.html", null ],
     [ "TSerializer< DataStream, IdentifiedObject< T > >", "struct_t_serializer_3_01_data_stream_00_01_identified_object_3_01_t_01_4_01_4.html", null ],
     [ "TSerializer< DataStream, Model< Info, Control::is_control > >", "struct_t_serializer_3_01_data_stream_00_01_model_3_01_info_00_01_control_1_1is__control_01_4_01_4.html", "struct_t_serializer_3_01_data_stream_00_01_model_3_01_info_00_01_control_1_1is__control_01_4_01_4" ],
+    [ "TSerializer< DataStream, Model< Info, oscr::is_control > >", "struct_t_serializer_3_01_data_stream_00_01_model_3_01_info_00_01oscr_1_1is__control_01_4_01_4.html", "struct_t_serializer_3_01_data_stream_00_01_model_3_01_info_00_01oscr_1_1is__control_01_4_01_4" ],
+    [ "TSerializer< DataStream, oscr::ProcessModel< Info > >", "struct_t_serializer_3_01_data_stream_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html", "struct_t_serializer_3_01_data_stream_00_01oscr_1_1_process_model_3_01_info_01_4_01_4" ],
     [ "TSerializer< DataStream, ossia::domain_base< bool > >", "struct_t_serializer_3_01_data_stream_00_01ossia_1_1domain__base_3_01bool_01_4_01_4.html", "struct_t_serializer_3_01_data_stream_00_01ossia_1_1domain__base_3_01bool_01_4_01_4" ],
     [ "TSerializer< DataStream, ossia::domain_base< ossia::impulse > >", "struct_t_serializer_3_01_data_stream_00_01ossia_1_1domain__base_3_01ossia_1_1impulse_01_4_01_4.html", "struct_t_serializer_3_01_data_stream_00_01ossia_1_1domain__base_3_01ossia_1_1impulse_01_4_01_4" ],
     [ "TSerializer< DataStream, ossia::domain_base< std::string > >", "struct_t_serializer_3_01_data_stream_00_01ossia_1_1domain__base_3_01std_1_1string_01_4_01_4.html", "struct_t_serializer_3_01_data_stream_00_01ossia_1_1domain__base_3_01std_1_1string_01_4_01_4" ],
@@ -1335,6 +1352,7 @@ var annotated_dup =
     [ "TSerializer< DataStream, rapidjson::Document >", "struct_t_serializer_3_01_data_stream_00_01rapidjson_1_1_document_01_4.html", null ],
     [ "TSerializer< DataStream, rapidjson::Value >", "struct_t_serializer_3_01_data_stream_00_01rapidjson_1_1_value_01_4.html", null ],
     [ "TSerializer< DataStream, Scenario::SavedPort >", "struct_t_serializer_3_01_data_stream_00_01_scenario_1_1_saved_port_01_4.html", null ],
+    [ "TSerializer< DataStream, Scenario::TimeSignatureMap >", "struct_t_serializer_3_01_data_stream_00_01_scenario_1_1_time_signature_map_01_4.html", null ],
     [ "TSerializer< DataStream, score::any_map >", "struct_t_serializer_3_01_data_stream_00_01score_1_1any__map_01_4.html", null ],
     [ "TSerializer< DataStream, score::Entity< T > >", "struct_t_serializer_3_01_data_stream_00_01score_1_1_entity_3_01_t_01_4_01_4.html", null ],
     [ "TSerializer< DataStream, score::EntityList< T > >", "struct_t_serializer_3_01_data_stream_00_01score_1_1_entity_list_3_01_t_01_4_01_4.html", null ],
@@ -1368,6 +1386,8 @@ var annotated_dup =
     [ "TSerializer< JSONObject, IdContainer< T, U, V > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01_id_container_3_01_t_00_01_u_00_01_v_01_4_01_4.html", null ],
     [ "TSerializer< JSONObject, IdentifiedObject< T > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01_identified_object_3_01_t_01_4_01_4.html", null ],
     [ "TSerializer< JSONObject, Model< Info, Control::is_control > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01_model_3_01_info_00_01_control_1_1is__control_01_4_01_4.html", "struct_t_serializer_3_01_j_s_o_n_object_00_01_model_3_01_info_00_01_control_1_1is__control_01_4_01_4" ],
+    [ "TSerializer< JSONObject, Model< Info, oscr::is_control > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01_model_3_01_info_00_01oscr_1_1is__control_01_4_01_4.html", "struct_t_serializer_3_01_j_s_o_n_object_00_01_model_3_01_info_00_01oscr_1_1is__control_01_4_01_4" ],
+    [ "TSerializer< JSONObject, oscr::ProcessModel< Info > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html", "struct_t_serializer_3_01_j_s_o_n_object_00_01oscr_1_1_process_model_3_01_info_01_4_01_4" ],
     [ "TSerializer< JSONObject, ossia::domain_base< bool > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01bool_01_4_01_4.html", "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01bool_01_4_01_4" ],
     [ "TSerializer< JSONObject, ossia::domain_base< ossia::impulse > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01ossia_1_1impulse_01_4_01_4.html", "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01ossia_1_1impulse_01_4_01_4" ],
     [ "TSerializer< JSONObject, ossia::domain_base< std::string > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01std_1_1string_01_4_01_4.html", "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01std_1_1string_01_4_01_4" ],
@@ -1388,6 +1408,7 @@ var annotated_dup =
     [ "TSerializer< JSONObject, QSize >", "struct_t_serializer_3_01_j_s_o_n_object_00_01_q_size_01_4.html", null ],
     [ "TSerializer< JSONObject, QSizeF >", "struct_t_serializer_3_01_j_s_o_n_object_00_01_q_size_f_01_4.html", null ],
     [ "TSerializer< JSONObject, QVariantMap >", "struct_t_serializer_3_01_j_s_o_n_object_00_01_q_variant_map_01_4.html", "struct_t_serializer_3_01_j_s_o_n_object_00_01_q_variant_map_01_4" ],
+    [ "TSerializer< JSONObject, Scenario::TimeSignatureMap >", "struct_t_serializer_3_01_j_s_o_n_object_00_01_scenario_1_1_time_signature_map_01_4.html", null ],
     [ "TSerializer< JSONObject, score::any_map >", "struct_t_serializer_3_01_j_s_o_n_object_00_01score_1_1any__map_01_4.html", null ],
     [ "TSerializer< JSONObject, score::Entity< T > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01score_1_1_entity_3_01_t_01_4_01_4.html", null ],
     [ "TSerializer< JSONObject, score::EntityList< T > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01score_1_1_entity_list_3_01_t_01_4_01_4.html", null ],

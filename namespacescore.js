@@ -263,6 +263,7 @@ var namespacescore =
     [ "StartScreenLink", "structscore_1_1_start_screen_link.html", "structscore_1_1_start_screen_link" ],
     [ "StateAwareTransition", "classscore_1_1_state_aware_transition.html", "classscore_1_1_state_aware_transition" ],
     [ "StaticPropertyCommand", "structscore_1_1_static_property_command.html", null ],
+    [ "StaticPropertyCommand< AvndJit::Model::p_script >", "structscore_1_1_static_property_command_3_01_avnd_jit_1_1_model_1_1p__script_01_4.html", null ],
     [ "StaticPropertyCommand< Faust::FaustEffectModel::p_text >", "structscore_1_1_static_property_command_3_01_faust_1_1_faust_effect_model_1_1p__text_01_4.html", null ],
     [ "StaticPropertyCommand< Gfx::Filter::Model::p_program >", "structscore_1_1_static_property_command_3_01_gfx_1_1_filter_1_1_model_1_1p__program_01_4.html", null ],
     [ "StaticPropertyCommand< Jit::BytebeatModel::p_script >", "structscore_1_1_static_property_command_3_01_jit_1_1_bytebeat_model_1_1p__script_01_4.html", null ],

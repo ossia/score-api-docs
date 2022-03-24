@@ -6,7 +6,7 @@ var classscore_1_1gfx_1_1_output_node =
     [ "canRender", "classscore_1_1gfx_1_1_output_node.html#ad4dcdec8c56f35a1feb75e2612718591", null ],
     [ "configuration", "classscore_1_1gfx_1_1_output_node.html#a2fda79789335d4a863e95539b73b0721", null ],
     [ "createOutput", "classscore_1_1gfx_1_1_output_node.html#a27d9eb167f211318d4205bc15bc193b1", null ],
-    [ "createRenderer", "classscore_1_1gfx_1_1_output_node.html#ab6091e6549834caaeb2f789e9da1a7f5", null ],
+    [ "createRenderer", "classscore_1_1gfx_1_1_output_node.html#adfe3ee3faa6fac0a79881dee476cf54b", null ],
     [ "destroyOutput", "classscore_1_1gfx_1_1_output_node.html#a64827181b78520818e4394443642aa9f", null ],
     [ "onRendererChange", "classscore_1_1gfx_1_1_output_node.html#aaf2e4b540c4e95cb891b4764efeaed2d", null ],
     [ "render", "classscore_1_1gfx_1_1_output_node.html#af6eef39613bf544ace160d4660ecadba", null ],

@@ -9,6 +9,7 @@ var class_data_stream_reader =
     [ "insertDelimiter", "class_data_stream_reader.html#ac0eb5c043b33cc07de11c45edd22db1b", null ],
     [ "operator=", "class_data_stream_reader.html#aa63f329e12f7a6894ed14896519bf6eb", null ],
     [ "read", "class_data_stream_reader.html#a9fb720c922d7bd92469ea617e84b29e5", null ],
+    [ "read", "class_data_stream_reader.html#a60f6cd406253761b2f50129c937d6729", null ],
     [ "read", "class_data_stream_reader.html#ae195837a61b784e5118215b0d7f03849", null ],
     [ "read", "class_data_stream_reader.html#aa5114a23ff0625cb8fd25397f1170375", null ],
     [ "read", "class_data_stream_reader.html#aa9c83f39c9fc143db52946f9e13810d1", null ],

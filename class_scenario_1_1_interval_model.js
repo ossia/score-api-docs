@@ -93,7 +93,7 @@ var class_scenario_1_1_interval_model =
     [ "stopExecution", "class_scenario_1_1_interval_model.html#af0afa882ba675ee7a4c159275e7758d0", null ],
     [ "swapSlots", "class_scenario_1_1_interval_model.html#a2b43da621e6c2c60c60c233973ca97cf", null ],
     [ "tempoCurve", "class_scenario_1_1_interval_model.html#a49ac39b2550206e1e959c10409be6aa3", null ],
-    [ "timeSignatureMap", "class_scenario_1_1_interval_model.html#af8e17ebd5ce7b3050cb8ea3ad5770d8b", null ],
+    [ "timeSignatureMap", "class_scenario_1_1_interval_model.html#a6b1beb914763a715a463ada6ea979dd4", null ],
     [ "timeSignaturesChanged", "class_scenario_1_1_interval_model.html#ae54c821754bf287f1750e1a8e0c75f02", null ],
     [ "translate", "class_scenario_1_1_interval_model.html#a6fa34ac91ac01e1bda71fb7dc61188aa", null ],
     [ "viewMode", "class_scenario_1_1_interval_model.html#a020cc98f6d347ce22e70aeebe58ed51f", null ],
