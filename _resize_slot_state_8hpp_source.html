@@ -187,28 +187,28 @@ $(document).ready(function(){initNavTree('_resize_slot_state_8hpp_source.html','
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    score::make_transition&lt;Scenario::ReleaseOnAnything_SlotTransition&gt;(</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        move, release);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    connect(press, &amp;QAbstractState::entered, [=]() {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    connect(press, &amp;QAbstractState::entered, [<span class="keyword">this</span>, &amp;ctx=stack.context()] {</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      m_originalPoint = m_sm.scenePoint;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&amp; cst</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;          = this-&gt;currentSlot.interval.find(stack.context());</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      const IntervalModel&amp; cst</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;          = this-&gt;currentSlot.interval.find(ctx);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      m_originalHeight = cst.getSlotHeight(this-&gt;currentSlot);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    });</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    connect(move, &amp;QAbstractState::entered, [=]() {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      <span class="keyword">auto</span> val = std::max(</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    connect(move, &amp;QAbstractState::entered, [<span class="keyword">this</span>, &amp;ctx=stack.context()] {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      auto val = std::max(</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;          20.0,</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;          m_originalHeight + (m_sm.scenePoint.y() - m_originalPoint.y()));</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&amp; cst</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;          = this-&gt;currentSlot.interval.find(stack.context());</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      const IntervalModel&amp; cst</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;          = this-&gt;currentSlot.interval.find(ctx);</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      m_ongoingDispatcher.submit(cst, this-&gt;currentSlot, val);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    });</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    connect(release, &amp;QAbstractState::entered, [=]() {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    connect(release, &amp;QAbstractState::entered, [<span class="keyword">this</span>, &amp;ctx=stack.context()] {</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      m_ongoingDispatcher.commit();</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&amp; cst = this-&gt;currentSlot.interval.find(stack.context());</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      IntervalModel&amp; cst = this-&gt;currentSlot.interval.find(ctx);</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      cst.heightFinishedChanging();</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    });</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  }</div>
@@ -228,7 +228,6 @@ $(document).ready(function(){initNavTree('_resize_slot_state_8hpp_source.html','
 <div class="ttc" id="aclass_scenario_1_1_resize_slot_state_html"><div class="ttname"><a href="class_scenario_1_1_resize_slot_state.html">Scenario::ResizeSlotState</a></div><div class="ttdef"><b>Definition:</b> ResizeSlotState.hpp:65</div></div>
 <div class="ttc" id="aclass_single_ongoing_command_dispatcher_html"><div class="ttname"><a href="class_single_ongoing_command_dispatcher.html">SingleOngoingCommandDispatcher&lt; Scenario::Command::ResizeSlotVertically &gt;</a></div></div>
 <div class="ttc" id="aclass_scenario_1_1_release_on_anything___slot_transition_html"><div class="ttname"><a href="class_scenario_1_1_release_on_anything___slot_transition.html">Scenario::ReleaseOnAnything_SlotTransition</a></div><div class="ttdef"><b>Definition:</b> ResizeSlotState.hpp:41</div></div>
-<div class="ttc" id="aclass_scenario_1_1_interval_model_html"><div class="ttname"><a href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a></div><div class="ttdef"><b>Definition:</b> IntervalModel.hpp:50</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -6,6 +6,6 @@ var struct_control_1_1_impulse_button =
     [ "create_inlet", "struct_control_1_1_impulse_button.html#a4a62dd95b2acadf469b5861cdc5e98ae", null ],
     [ "create_inlet", "struct_control_1_1_impulse_button.html#a5da9103ea1f6072342bf2871c7389f9f", null ],
     [ "fromValue", "struct_control_1_1_impulse_button.html#a87e577b514e02e8e9b7d23fa6b809b7a", null ],
-    [ "setup_exec", "struct_control_1_1_impulse_button.html#a5d23c73e5b567ca8fdb4a77f8a641aaf", null ],
+    [ "setup_exec", "struct_control_1_1_impulse_button.html#a34c86cf94f3fea9276e20f173f246da2", null ],
     [ "toValue", "struct_control_1_1_impulse_button.html#acacdfd96cc588d498cc00267ca038cdf", null ]
 ];

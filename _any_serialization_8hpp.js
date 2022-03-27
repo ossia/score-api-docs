@@ -7,8 +7,8 @@ var _any_serialization_8hpp =
     [ "any_map", "_any_serialization_8hpp.html#a6b24998a24169ebc6085435364e3ff91", null ],
     [ "any_serializer_map", "_any_serialization_8hpp.html#ac97f9174e9ad78a338ea579b0670face", null ],
     [ "anySerializers", "_any_serialization_8hpp.html#a0b6720796cb590c0cd175f0f5b83d981", null ],
-    [ "apply", "_any_serialization_8hpp.html#a319e79e6b81d5765fd629d7b6abc6bef", null ],
-    [ "apply", "_any_serialization_8hpp.html#ada52ecee82d0179fd93b5919776ef219", null ],
-    [ "apply", "_any_serialization_8hpp.html#a56dc4bd8902ecd5468cab5898ea24adc", null ],
-    [ "apply", "_any_serialization_8hpp.html#ab04f83b9c8879863844797863924d01e", null ]
+    [ "apply", "_any_serialization_8hpp.html#a36b5c37a3e88c0ceffd9987577c44972", null ],
+    [ "apply", "_any_serialization_8hpp.html#a06f7a9574acf3f83da56c0f0e25b30f1", null ],
+    [ "apply", "_any_serialization_8hpp.html#a405e3ac81128199126101309b49b358c", null ],
+    [ "apply", "_any_serialization_8hpp.html#a5aafc07edb02feff24c200c5f30e6f73", null ]
 ];

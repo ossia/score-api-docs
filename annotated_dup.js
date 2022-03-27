@@ -63,7 +63,6 @@ var annotated_dup =
       [ "ComboBox", "struct_control_1_1_combo_box.html", "struct_control_1_1_combo_box" ],
       [ "ControlLayerFactory", "class_control_1_1_control_layer_factory.html", "class_control_1_1_control_layer_factory" ],
       [ "ControlProcess", "class_control_1_1_control_process.html", "class_control_1_1_control_process" ],
-      [ "create_types", "struct_control_1_1create__types.html", "struct_control_1_1create__types" ],
       [ "CustomUISetup", "struct_control_1_1_custom_u_i_setup.html", "struct_control_1_1_custom_u_i_setup" ],
       [ "Enum", "struct_control_1_1_enum.html", "struct_control_1_1_enum" ],
       [ "EnumBase", "struct_control_1_1_enum_base.html", "struct_control_1_1_enum_base" ],

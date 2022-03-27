@@ -22,7 +22,6 @@ var struct_scenario_1_1_time_signature_map =
     [ "operator[]", "struct_scenario_1_1_time_signature_map.html#acdcbc2e79c8e15593184aa3eac4dceb4", null ],
     [ "size", "struct_scenario_1_1_time_signature_map.html#a1910f3bc5c94951704785c80e0354061", null ],
     [ "upper_bound", "struct_scenario_1_1_time_signature_map.html#a4204f333626036819373d678e04682e9", null ],
-    [ "TimeSignatureMap", "struct_scenario_1_1_time_signature_map.html#a434f53d2fd85e90dcb789fee4a66df4e", null ],
     [ "TSerializer< DataStream, TimeSignatureMap >", "struct_scenario_1_1_time_signature_map.html#ad2fe8d84d7db760b040b4a75db2aba81", null ],
     [ "TSerializer< JSONObject, TimeSignatureMap >", "struct_scenario_1_1_time_signature_map.html#a2d33951cbcb0449c9736cab127e570c6", null ]
 ];

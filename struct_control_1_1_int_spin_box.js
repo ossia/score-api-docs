@@ -8,7 +8,7 @@ var struct_control_1_1_int_spin_box =
     [ "fromValue", "struct_control_1_1_int_spin_box.html#a4f934d716d40b2c77cbfc2ea95d75226", null ],
     [ "getMax", "struct_control_1_1_int_spin_box.html#a672c03664bf22f259e12053340b9b4c3", null ],
     [ "getMin", "struct_control_1_1_int_spin_box.html#aeb5cdeed683b8f1336ef0ed234a1eabc", null ],
-    [ "setup_exec", "struct_control_1_1_int_spin_box.html#acb5bb491781079e91de329d9d272fad2", null ],
+    [ "setup_exec", "struct_control_1_1_int_spin_box.html#aa3bde129e38e468d628dc151e4ea3b0f", null ],
     [ "toValue", "struct_control_1_1_int_spin_box.html#ad888efdae1ac1c36bff9bf56effbbb08", null ],
     [ "init", "struct_control_1_1_int_spin_box.html#ab5162ba187c9510c3ada24c7a9aa71ad", null ],
     [ "max", "struct_control_1_1_int_spin_box.html#a07e36ca4881d928caa56795f3fbd8926", null ],

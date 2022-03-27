@@ -432,7 +432,7 @@ $(document).ready(function(){initNavTree('_time_signature_item_8hpp_source.html'
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;      <span class="comment">// Other handles are free</span></div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;      handle = <span class="keyword">new</span> <a class="code" href="class_scenario_1_1_movable_handle.html">MovableHandle</a>{*m_model, <span class="keyword">this</span>};</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160; </div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;      con(*handle, &amp;TimeSignatureHandle::press, <span class="keyword">this</span>, [=] {</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;      con(*handle, &amp;TimeSignatureHandle::press, <span class="keyword">this</span>, [<span class="keyword">this</span>, handle] {</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        assert(m_model);</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        m_origHandles = m_model-&gt;timeSignatureMap();</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        m_origTime = handle-&gt;time();</div>
@@ -441,12 +441,12 @@ $(document).ready(function(){initNavTree('_time_signature_item_8hpp_source.html'
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;      con(*handle,</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;          &amp;TimeSignatureHandle::move,</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;          <span class="keyword">this</span>,</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;          [=](<span class="keywordtype">double</span> originalPos, <span class="keywordtype">double</span> delta) {</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;          [<span class="keyword">this</span>, handle](<span class="keywordtype">double</span> originalPos, <span class="keywordtype">double</span> delta) {</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            assert(m_model);</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;            <span class="keywordflow">if</span> (handle-&gt;m_visible)</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;              moveHandle(*handle, originalPos, delta);</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;          });</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;      con(*handle, &amp;TimeSignatureHandle::release, <span class="keyword">this</span>, [=] {</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;      con(*handle, &amp;TimeSignatureHandle::release, <span class="keyword">this</span>, [<span class="keyword">this</span>, handle] {</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        assert(m_model);</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        <span class="keywordflow">if</span> (handle-&gt;m_visible)</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        {</div>
@@ -458,7 +458,7 @@ $(document).ready(function(){initNavTree('_time_signature_item_8hpp_source.html'
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;          *handle,</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;          &amp;TimeSignatureHandle::remove,</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;          <span class="keyword">this</span>,</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;          [=] {</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;          [<span class="keyword">this</span>, handle] {</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;            assert(m_model);</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;            <span class="keywordflow">if</span> (handle-&gt;m_visible)</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;              removeHandle(*handle);</div>
@@ -473,7 +473,7 @@ $(document).ready(function(){initNavTree('_time_signature_item_8hpp_source.html'
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        *handle,</div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        &amp;TimeSignatureHandle::signatureChange,</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        <span class="keyword">this</span>,</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        [=](ossia::time_signature sig) {</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        [<span class="keyword">this</span>, handle](ossia::time_signature sig) {</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;          assert(m_model);</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;          <span class="keyword">auto</span> signatures = m_model-&gt;timeSignatureMap();</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160; </div>

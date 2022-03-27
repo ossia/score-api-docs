@@ -1,5 +1,11 @@
 var NAVTREEINDEX36 =
 {
+"class_scenario_1_1_simple_expression_editor_widget.html#a6f7d1e2b67ca412e877f28f22a0f48e6":[12,0,45,244,10],
+"class_scenario_1_1_simple_expression_editor_widget.html#a86c664f3325e5c881a5e4ba01a89c3e9":[12,0,45,244,12],
+"class_scenario_1_1_simple_expression_editor_widget.html#a99b670ba28dbb7d4a1c0b20c20d1c16d":[12,0,45,244,11],
+"class_scenario_1_1_simple_expression_editor_widget.html#a99cf9aacd9f6065a03ee024278f3d660":[12,0,45,244,9],
+"class_scenario_1_1_simple_expression_editor_widget.html#a9b868e1566bd10a63f2a53c4d9f859c1":[12,0,45,244,0],
+"class_scenario_1_1_simple_expression_editor_widget.html#aa893f2a4b282455abdb4833df17510f3":[12,0,45,244,14],
 "class_scenario_1_1_simple_expression_editor_widget.html#abdbdadb2fb7b387b57be5c5437e51a7b":[12,0,45,244,4],
 "class_scenario_1_1_simple_expression_editor_widget.html#af1d3fb486c10212de8655434b55420da":[12,0,45,244,13],
 "class_scenario_1_1_simple_expression_editor_widget.html#afb7df0e3a19b15058ed7e9749eee3fe2":[12,0,45,244,5],
@@ -243,11 +249,5 @@ var NAVTREEINDEX36 =
 "class_scenario_1_1_time_signature_handle.html#a2840e51f84fa2e0d163b88b35cd3f048":[12,0,45,287,8],
 "class_scenario_1_1_time_signature_handle.html#a37a4a530aa96a42c228992cc7255df50":[12,0,45,287,3],
 "class_scenario_1_1_time_signature_handle.html#a43550249dd7f25ecd0ba3e469b06b308":[12,0,45,287,19],
-"class_scenario_1_1_time_signature_handle.html#a5f8ca2eff8f2f895834d5d93e6a888a2":[12,0,45,287,1],
-"class_scenario_1_1_time_signature_handle.html#a701e3d8ce72ee3e29bec1419c578e216":[12,0,45,287,18],
-"class_scenario_1_1_time_signature_handle.html#a7de5de4e4b89f942ab43fe0245a1f948":[12,0,45,287,7],
-"class_scenario_1_1_time_signature_handle.html#a811b06d65d7ec82e1b48466a92fe4d6e":[12,0,45,287,11],
-"class_scenario_1_1_time_signature_handle.html#a87e4d5d78f6937d8e64753325cfab206":[12,0,45,287,17],
-"class_scenario_1_1_time_signature_handle.html#a8c124b154ca5ab69597a8481d4e3a6bf":[12,0,45,287,12],
-"class_scenario_1_1_time_signature_handle.html#a9b71b68f40184ad6c77bcc9763e8f69b":[12,0,45,287,0]
+"class_scenario_1_1_time_signature_handle.html#a5f8ca2eff8f2f895834d5d93e6a888a2":[12,0,45,287,1]
 };

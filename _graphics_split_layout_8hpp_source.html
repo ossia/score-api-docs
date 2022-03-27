@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.8.17"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>score: Member List</title>
+        <title>score: GraphicsSplitLayout.hpp Source File</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -75,7 +75,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('struct_control_1_1create__types.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('_graphics_split_layout_8hpp_source.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -95,15 +95,38 @@ $(document).ready(function(){initNavTree('struct_control_1_1create__types.html',
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Control::create_types&lt; Args &gt; Member List</div>  </div>
+<div class="title">GraphicsSplitLayout.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>This is the complete list of members for <a class="el" href="struct_control_1_1create__types.html">Control::create_types&lt; Args &gt;</a>, including all inherited members.</p>
-<table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>perform</b>() (defined in <a class="el" href="struct_control_1_1create__types.html">Control::create_types&lt; Args &gt;</a>)</td><td class="entry"><a class="el" href="struct_control_1_1create__types.html">Control::create_types&lt; Args &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-</table></div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;score/graphics/GraphicsLayout.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore.html">score</a></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classscore_1_1_graphics_split_layout.html">    9</a></span>&#160;<span class="keyword">class </span>SCORE_LIB_BASE_EXPORT <a class="code" href="classscore_1_1_graphics_split_layout.html">GraphicsSplitLayout</a> : <span class="keyword">public</span> <a class="code" href="classscore_1_1_graphics_layout.html">GraphicsLayout</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">using</span> GraphicsLayout::GraphicsLayout;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    ~<a class="code" href="classscore_1_1_graphics_split_layout.html">GraphicsSplitLayout</a>();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> layout() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> paint(</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        QPainter* painter,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">const</span> QStyleOptionGraphicsItem* option,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        QWidget* widget) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    std::vector&lt;QGraphicsItem*&gt; m_splits;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassscore_1_1_graphics_layout_html"><div class="ttname"><a href="classscore_1_1_graphics_layout.html">score::GraphicsLayout</a></div><div class="ttdef"><b>Definition:</b> GraphicsLayout.hpp:8</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:146</div></div>
+<div class="ttc" id="aclassscore_1_1_graphics_split_layout_html"><div class="ttname"><a href="classscore_1_1_graphics_split_layout.html">score::GraphicsSplitLayout</a></div><div class="ttdef"><b>Definition:</b> GraphicsSplitLayout.hpp:9</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

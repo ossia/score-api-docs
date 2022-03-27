@@ -95,19 +95,34 @@ $(document).ready(function(){initNavTree('classscore_1_1_background_item.html','
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classscore_1_1_background_item-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">score::BackgroundItem Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">score::BackgroundItem Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
 Inheritance diagram for score::BackgroundItem:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="classscore_1_1_background_item.png" alt=""/>
- </div></div>
+  <img src="classscore_1_1_background_item.png" usemap="#score::BackgroundItem_map" alt=""/>
+  <map id="score::BackgroundItem_map" name="score::BackgroundItem_map">
+<area href="classscore_1_1_graphics_layout.html" alt="score::GraphicsLayout" shape="rect" coords="358,112,527,136"/>
+<area href="classscore_1_1_graphics_grid_layout.html" alt="score::GraphicsGridLayout" shape="rect" coords="0,168,169,192"/>
+<area href="classscore_1_1_graphics_h_box_layout.html" alt="score::GraphicsHBoxLayout" shape="rect" coords="179,168,348,192"/>
+<area href="classscore_1_1_graphics_split_layout.html" alt="score::GraphicsSplitLayout" shape="rect" coords="358,168,527,192"/>
+<area href="classscore_1_1_graphics_tab_layout.html" alt="score::GraphicsTabLayout" shape="rect" coords="537,168,706,192"/>
+<area href="classscore_1_1_graphics_v_box_layout.html" alt="score::GraphicsVBoxLayout" shape="rect" coords="716,168,885,192"/>
+  </map>
+</div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ae2b2e57c7adf072fe725049b6f3fb365"><td class="memItemLeft" align="right" valign="top"><a id="ae2b2e57c7adf072fe725049b6f3fb365"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>Type</b> = UserType + 80003
+ }</td></tr>
+<tr class="separator:ae2b2e57c7adf072fe725049b6f3fb365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a896a6097fa206ff79feb4098adba0222"><td class="memItemLeft" align="right" valign="top"><a id="a896a6097fa206ff79feb4098adba0222"></a>
@@ -119,9 +134,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>paint</b> (QPainter *
 <tr class="memitem:a892003a2cc2876eaa8f48ee8b7be1703"><td class="memItemLeft" align="right" valign="top"><a id="a892003a2cc2876eaa8f48ee8b7be1703"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setRect</b> (const QRectF &amp;r)</td></tr>
 <tr class="separator:a892003a2cc2876eaa8f48ee8b7be1703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a628b50b08a4c06451b9b1678d1ce3267"><td class="memItemLeft" align="right" valign="top"><a id="a628b50b08a4c06451b9b1678d1ce3267"></a>
+const QRectF &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>rect</b> () const noexcept</td></tr>
+<tr class="separator:a628b50b08a4c06451b9b1678d1ce3267"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11ad2b1351e3fbe77bb99d6b96fe2849"><td class="memItemLeft" align="right" valign="top"><a id="a11ad2b1351e3fbe77bb99d6b96fe2849"></a>
 QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>boundingRect</b> () const final override</td></tr>
 <tr class="separator:a11ad2b1351e3fbe77bb99d6b96fe2849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c5f01f64ec9ac95759bc70f9bca6aa4"><td class="memItemLeft" align="right" valign="top"><a id="a3c5f01f64ec9ac95759bc70f9bca6aa4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const override</td></tr>
+<tr class="separator:a3c5f01f64ec9ac95759bc70f9bca6aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_rect_item_8hpp_source.html">RectItem.hpp</a></li>

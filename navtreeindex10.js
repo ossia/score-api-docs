@@ -1,5 +1,9 @@
 var NAVTREEINDEX10 =
 {
+"class_dataflow_1_1_audio_device.html#afdbe18a0b9ce43465d9fa264669b9aff":[12,0,8,1,1],
+"class_dataflow_1_1_audio_outlet_item.html":[12,0,8,4],
+"class_dataflow_1_1_audio_outlet_item.html#a36bbe002818231b791749244daeb1ede":[12,0,8,4,6],
+"class_dataflow_1_1_audio_outlet_item.html#a38100a00ad114966c2b3734297951b7b":[12,0,8,4,3],
 "class_dataflow_1_1_audio_outlet_item.html#a3f3a9caedc09287ebbd4ffc44507d203":[12,0,8,4,4],
 "class_dataflow_1_1_audio_outlet_item.html#a5cd88531db769721e99a19317a5fd458":[12,0,8,4,0],
 "class_dataflow_1_1_audio_outlet_item.html#aa040ea76c62dfc2085c4eb60d6af2e32":[12,0,8,4,5],
@@ -245,9 +249,5 @@ var NAVTREEINDEX10 =
 "class_device_1_1_node_based_item_model.html#a31f226fe430670ecc9a036ca130d2889":[12,0,9,15,3],
 "class_device_1_1_node_based_item_model.html#aad05bb46c7360d6351953501d7156353":[12,0,9,15,2],
 "class_device_1_1_node_based_item_model.html#aba717820747c4d174c131c98924c9c60":[12,0,9,15,0],
-"class_device_1_1_node_based_item_model.html#ae7d841a5e89e23e9768d45d706cd568f":[12,0,9,15,1],
-"class_device_1_1_owning_device_interface.html":[12,0,9,16],
-"class_device_1_1_owning_device_interface.html#a189da0c0647a076b261f9c44828b84de":[12,0,9,16,3],
-"class_device_1_1_owning_device_interface.html#a39893903aab76d31b79e2a90c3ddc6a6":[12,0,9,16,6],
-"class_device_1_1_owning_device_interface.html#a4da414e7bda52648811006f71244bfcf":[12,0,9,16,7]
+"class_device_1_1_node_based_item_model.html#ae7d841a5e89e23e9768d45d706cd568f":[12,0,9,15,1]
 };

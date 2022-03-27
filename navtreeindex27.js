@@ -1,5 +1,11 @@
 var NAVTREEINDEX27 =
 {
+"class_protocols_1_1_serial_device.html#ad7de496e9880e48f412bf851bd38bfd9":[12,0,40,62,2],
+"class_protocols_1_1_serial_protocol_factory.html":[12,0,40,63],
+"class_protocols_1_1_serial_protocol_settings_widget.html":[12,0,40,64],
+"class_protocols_1_1_serial_protocol_settings_widget.html#a049f17d2a844ba380e1f13e6a0364a34":[12,0,40,64,3],
+"class_protocols_1_1_serial_protocol_settings_widget.html#a1b2f50292d5a4e1f0e7b8e07ba97f41c":[12,0,40,64,2],
+"class_protocols_1_1_serial_protocol_settings_widget.html#a6c5156b46a65086c463c1d7ec867be88":[12,0,40,64,4],
 "class_protocols_1_1_serial_protocol_settings_widget.html#a6d5be3af1e2b8b89c5cc2b920c3cc07f":[12,0,40,64,7],
 "class_protocols_1_1_serial_protocol_settings_widget.html#a7035e05518fa5724fa0daef65ec1cb7c":[12,0,40,64,1],
 "class_protocols_1_1_serial_protocol_settings_widget.html#a8799c2e0a6982e42f3dac75fb3d27637":[12,0,40,64,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX27 =
 "class_scenario_1_1_base_scenario_container.html#a2bfc608d88e9fc579918cc76f88e22b8":[12,0,45,9,18],
 "class_scenario_1_1_base_scenario_container.html#a38316a99a3fa8705512017f0a3aab4b3":[12,0,45,9,6],
 "class_scenario_1_1_base_scenario_container.html#a3faf736e2116d3f8cff1e3273928586b":[12,0,45,9,25],
-"class_scenario_1_1_base_scenario_container.html#a415c833fc65262db33930ba2a9074f16":[12,0,45,9,33],
-"class_scenario_1_1_base_scenario_container.html#a4650e1e882a9d1da574e3d7c44ffff3d":[12,0,45,9,36],
-"class_scenario_1_1_base_scenario_container.html#a5bd06d29b64877c1a90ec8205674e353":[12,0,45,9,21],
-"class_scenario_1_1_base_scenario_container.html#a6ef0a858813bc8d4053e16ee35196851":[12,0,45,9,37],
-"class_scenario_1_1_base_scenario_container.html#a772a6b6cca2758deb7e8968ed27bedcb":[12,0,45,9,32],
-"class_scenario_1_1_base_scenario_container.html#a79b59ccb38d624a0ea3991b8f39fb4e2":[12,0,45,9,22],
-"class_scenario_1_1_base_scenario_container.html#a7cfb1c65578ec7c528b5f366cf00f4c2":[12,0,45,9,17]
+"class_scenario_1_1_base_scenario_container.html#a415c833fc65262db33930ba2a9074f16":[12,0,45,9,33]
 };

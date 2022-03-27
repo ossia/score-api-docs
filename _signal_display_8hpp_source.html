@@ -193,7 +193,7 @@ $(document).ready(function(){initNavTree('_signal_display_8hpp_source.html','');
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            m_interval,</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            &amp;Scenario::IntervalModel::executionEvent,</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keyword">this</span>,</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            [=](Scenario::IntervalExecutionEvent ev) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            [<span class="keyword">this</span>](Scenario::IntervalExecutionEvent ev) {</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;              <span class="keywordflow">switch</span> (ev)</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;              {</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                <span class="keywordflow">case</span> Scenario::IntervalExecutionEvent::Playing:</div>
@@ -319,7 +319,7 @@ $(document).ready(function(){initNavTree('_signal_display_8hpp_source.html','');
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;          = <span class="keyword">static_cast&lt;</span><a class="code" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a>*<span class="keyword">&gt;</span>(process.inlets().front());</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;      <span class="keyword">auto</span> fact = portFactory.get(inl-&gt;concreteKey());</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;      <span class="keyword">auto</span> port = fact-&gt;makeItem(*inl, doc, <span class="keyword">this</span>, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;      <span class="keyword">auto</span> port = fact-&gt;makePortItem(*inl, doc, <span class="keyword">this</span>, <span class="keyword">this</span>);</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;      port-&gt;setPos(0, 5);</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;      connect(</div>
@@ -368,11 +368,11 @@ $(document).ready(function(){initNavTree('_signal_display_8hpp_source.html','');
 <div class="ttc" id="astruct_ui_1_1_display_1_1_node_1_1_layer_html"><div class="ttname"><a href="struct_ui_1_1_display_1_1_node_1_1_layer.html">Ui::Display::Node::Layer</a></div><div class="ttdef"><b>Definition:</b> SignalDisplay.hpp:202</div></div>
 <div class="ttc" id="aclass_process_1_1_effect_layer_view_html"><div class="ttname"><a href="class_process_1_1_effect_layer_view.html">Process::EffectLayerView</a></div><div class="ttdef"><b>Definition:</b> EffectLayer.hpp:15</div></div>
 <div class="ttc" id="astruct_ui_1_1_signal_display_1_1_node_1_1_layer_html"><div class="ttname"><a href="struct_ui_1_1_signal_display_1_1_node_1_1_layer.html">Ui::SignalDisplay::Node::Layer</a></div><div class="ttdef"><b>Definition:</b> SignalDisplay.hpp:75</div></div>
-<div class="ttc" id="aclass_process_1_1_port_factory_list_html"><div class="ttname"><a href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a></div><div class="ttdef"><b>Definition:</b> PortFactory.hpp:68</div></div>
-<div class="ttc" id="aclass_process_1_1_control_inlet_html"><div class="ttname"><a href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:206</div></div>
+<div class="ttc" id="aclass_process_1_1_port_factory_list_html"><div class="ttname"><a href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a></div><div class="ttdef"><b>Definition:</b> PortFactory.hpp:81</div></div>
+<div class="ttc" id="aclass_process_1_1_control_inlet_html"><div class="ttname"><a href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:221</div></div>
 <div class="ttc" id="aclass_scenario_1_1_interval_model_html"><div class="ttname"><a href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a></div><div class="ttdef"><b>Definition:</b> IntervalModel.hpp:50</div></div>
 <div class="ttc" id="astruct_ui_1_1_display_1_1_node_1_1_metadata_html"><div class="ttname"><a href="struct_ui_1_1_display_1_1_node_1_1_metadata.html">Ui::Display::Node::Metadata</a></div><div class="ttdef"><b>Definition:</b> SignalDisplay.hpp:176</div></div>
-<div class="ttc" id="aclass_process_1_1_control_outlet_html"><div class="ttname"><a href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:423</div></div>
+<div class="ttc" id="aclass_process_1_1_control_outlet_html"><div class="ttname"><a href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:438</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

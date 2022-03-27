@@ -95,6 +95,7 @@ $(document).ready(function(){initNavTree('classscore_1_1_rect_item.html',''); in
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classscore_1_1_rect_item-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -111,11 +112,24 @@ Inheritance diagram for score::RectItem:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a01b99e0003ce1e54819c23aeed9bcaed"><td class="memItemLeft" align="right" valign="top"><a id="a01b99e0003ce1e54819c23aeed9bcaed"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>Type</b> = UserType + 80001
+ }</td></tr>
+<tr class="separator:a01b99e0003ce1e54819c23aeed9bcaed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classscore_1_1_resizeable_item"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classscore_1_1_resizeable_item')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classscore_1_1_resizeable_item.html">score::ResizeableItem</a></td></tr>
+<tr class="memitem:a16dff2f15cb4dfbf3771b61726bf3bf8 inherit pub_types_classscore_1_1_resizeable_item"><td class="memItemLeft" align="right" valign="top"><a id="a16dff2f15cb4dfbf3771b61726bf3bf8"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>Type</b> = UserType + 80000
+ }</td></tr>
+<tr class="separator:a16dff2f15cb4dfbf3771b61726bf3bf8 inherit pub_types_classscore_1_1_resizeable_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aeda893c262b9ddfb6df5b8a026a6ea77"><td class="memItemLeft" align="right" valign="top"><a id="aeda893c262b9ddfb6df5b8a026a6ea77"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setRect</b> (const QRectF &amp;r)</td></tr>
 <tr class="separator:aeda893c262b9ddfb6df5b8a026a6ea77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5194a2103ed7044993bf910f17c175c1"><td class="memItemLeft" align="right" valign="top"><a id="a5194a2103ed7044993bf910f17c175c1"></a>
+const QRectF &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>rect</b> () const noexcept</td></tr>
+<tr class="separator:a5194a2103ed7044993bf910f17c175c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5681a9fae1ac61ad1f08e3759644cac"><td class="memItemLeft" align="right" valign="top"><a id="ac5681a9fae1ac61ad1f08e3759644cac"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setHighlight</b> (bool)</td></tr>
 <tr class="separator:ac5681a9fae1ac61ad1f08e3759644cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,6 +139,9 @@ QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>boundingRect</b> ()
 <tr class="memitem:a0f8e9522abd9ca06979bb8649993cf92"><td class="memItemLeft" align="right" valign="top"><a id="a0f8e9522abd9ca06979bb8649993cf92"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>paint</b> (QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) final override</td></tr>
 <tr class="separator:a0f8e9522abd9ca06979bb8649993cf92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4331267c177e156afdd2d076f0fc644"><td class="memItemLeft" align="right" valign="top"><a id="aa4331267c177e156afdd2d076f0fc644"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const override</td></tr>
+<tr class="separator:aa4331267c177e156afdd2d076f0fc644"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00d33024e8d2359a16b9a26abb80ad7f"><td class="memItemLeft" align="right" valign="top"><a id="a00d33024e8d2359a16b9a26abb80ad7f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clicked</b> ()</td></tr>
 <tr class="separator:a00d33024e8d2359a16b9a26abb80ad7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,6 +155,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>clicked</b> ()</td></
 <tr class="memitem:a036417bf54386533a0b3d9ee04de0720 inherit pub_methods_classscore_1_1_resizeable_item"><td class="memItemLeft" align="right" valign="top"><a id="a036417bf54386533a0b3d9ee04de0720"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>sizeChanged</b> (QSizeF sz)</td></tr>
 <tr class="separator:a036417bf54386533a0b3d9ee04de0720 inherit pub_methods_classscore_1_1_resizeable_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbae571957b56fe74c2c3b0242a9b78c inherit pub_methods_classscore_1_1_resizeable_item"><td class="memItemLeft" align="right" valign="top"><a id="adbae571957b56fe74c2c3b0242a9b78c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const override</td></tr>
+<tr class="separator:adbae571957b56fe74c2c3b0242a9b78c inherit pub_methods_classscore_1_1_resizeable_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_rect_item_8hpp_source.html">RectItem.hpp</a></li>

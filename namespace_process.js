@@ -64,6 +64,7 @@ var namespace_process =
     [ "PortFactory", "class_process_1_1_port_factory.html", "class_process_1_1_port_factory" ],
     [ "PortFactory_T", "class_process_1_1_port_factory___t.html", "class_process_1_1_port_factory___t" ],
     [ "PortFactoryList", "class_process_1_1_port_factory_list.html", "class_process_1_1_port_factory_list" ],
+    [ "PortItemLayout", "struct_process_1_1_port_item_layout.html", "struct_process_1_1_port_item_layout" ],
     [ "PortListWidget", "class_process_1_1_port_list_widget.html", "class_process_1_1_port_list_widget" ],
     [ "PortWidgetSetup", "class_process_1_1_port_widget_setup.html", null ],
     [ "Preset", "struct_process_1_1_preset.html", "struct_process_1_1_preset" ],

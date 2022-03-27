@@ -191,13 +191,13 @@ $(document).ready(function(){initNavTree('_2_vst3_2_control_8hpp_source.html',''
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <a class="code" href="class_process_1_1_port.html">Process::Port</a>* load(<span class="keyword">const</span> <a class="code" href="struct_visitor_variant.html">VisitorVariant</a>&amp; vis, QObject* parent) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="class_dataflow_1_1_port_item.html">Dataflow::PortItem</a>* makeItem(</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="class_dataflow_1_1_port_item.html">Dataflow::PortItem</a>* makePortItem(</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <a class="code" href="class_process_1_1_inlet.html">Process::Inlet</a>&amp; port,</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; ctx,</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      QGraphicsItem* parent,</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      QObject* context) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <a class="code" href="class_dataflow_1_1_port_item.html">Dataflow::PortItem</a>* makeItem(</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <a class="code" href="class_dataflow_1_1_port_item.html">Dataflow::PortItem</a>* makePortItem(</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <a class="code" href="class_process_1_1_outlet.html">Process::Outlet</a>&amp; port,</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; ctx,</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      QGraphicsItem* parent,</div>
@@ -215,7 +215,7 @@ $(document).ready(function(){initNavTree('_2_vst3_2_control_8hpp_source.html',''
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1366</div></div>
 <div class="ttc" id="aclass_dataflow_1_1_port_item_html"><div class="ttname"><a href="class_dataflow_1_1_port_item.html">Dataflow::PortItem</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/PortItem.hpp:37</div></div>
-<div class="ttc" id="aclass_process_1_1_outlet_html"><div class="ttname"><a href="class_process_1_1_outlet.html">Process::Outlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:267</div></div>
+<div class="ttc" id="aclass_process_1_1_outlet_html"><div class="ttname"><a href="class_process_1_1_outlet.html">Process::Outlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:282</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
 <div class="ttc" id="aclassscore_1_1_command_html"><div class="ttname"><a href="classscore_1_1_command.html">score::Command</a></div><div class="ttdoc">The Command class.</div><div class="ttdef"><b>Definition:</b> Command.hpp:33</div></div>
 <div class="ttc" id="aclass_uuid_key_html"><div class="ttname"><a href="class_uuid_key.html">UuidKey</a></div><div class="ttdef"><b>Definition:</b> UuidKey.hpp:377</div></div>
@@ -224,14 +224,14 @@ $(document).ready(function(){initNavTree('_2_vst3_2_control_8hpp_source.html',''
 <div class="ttc" id="aclassvst3_1_1_control_inlet_html"><div class="ttname"><a href="classvst3_1_1_control_inlet.html">vst3::ControlInlet</a></div><div class="ttdef"><b>Definition:</b> /Vst3/Control.hpp:14</div></div>
 <div class="ttc" id="aclass_data_stream_writer_html"><div class="ttname"><a href="class_data_stream_writer.html">DataStreamWriter</a></div><div class="ttdef"><b>Definition:</b> DataStreamVisitor.hpp:207</div></div>
 <div class="ttc" id="astruct_process_1_1_context_html"><div class="ttname"><a href="struct_process_1_1_context.html">Process::Context</a></div><div class="ttdef"><b>Definition:</b> ProcessContext.hpp:11</div></div>
-<div class="ttc" id="aclass_process_1_1_port_html"><div class="ttname"><a href="class_process_1_1_port.html">Process::Port</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:102</div></div>
+<div class="ttc" id="aclass_process_1_1_port_html"><div class="ttname"><a href="class_process_1_1_port.html">Process::Port</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:117</div></div>
 <div class="ttc" id="astruct_visitor_variant_html"><div class="ttname"><a href="struct_visitor_variant.html">VisitorVariant</a></div><div class="ttdoc">The VisitorVariant struct.</div><div class="ttdef"><b>Definition:</b> VisitorInterface.hpp:25</div></div>
-<div class="ttc" id="aclass_inspector_1_1_layout_html"><div class="ttname"><a href="class_inspector_1_1_layout.html">Inspector::Layout</a></div><div class="ttdef"><b>Definition:</b> Layout.hpp:33</div></div>
-<div class="ttc" id="aclass_process_1_1_port_factory_html"><div class="ttname"><a href="class_process_1_1_port_factory.html">Process::PortFactory</a></div><div class="ttdef"><b>Definition:</b> PortFactory.hpp:19</div></div>
+<div class="ttc" id="aclass_inspector_1_1_layout_html"><div class="ttname"><a href="class_inspector_1_1_layout.html">Inspector::Layout</a></div><div class="ttdef"><b>Definition:</b> lib/score/widgets/Layout.hpp:33</div></div>
+<div class="ttc" id="aclass_process_1_1_port_factory_html"><div class="ttname"><a href="class_process_1_1_port_factory.html">Process::PortFactory</a></div><div class="ttdef"><b>Definition:</b> PortFactory.hpp:20</div></div>
 <div class="ttc" id="astructvst3_1_1_v_s_t_control_port_item_html"><div class="ttname"><a href="structvst3_1_1_v_s_t_control_port_item.html">vst3::VSTControlPortItem</a></div><div class="ttdef"><b>Definition:</b> /Vst3/Control.hpp:73</div></div>
 <div class="ttc" id="aclass_j_s_o_n_writer_html"><div class="ttname"><a href="class_j_s_o_n_writer.html">JSONWriter</a></div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:432</div></div>
 <div class="ttc" id="aclass_scenario_1_1_interval_model_html"><div class="ttname"><a href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a></div><div class="ttdef"><b>Definition:</b> IntervalModel.hpp:50</div></div>
-<div class="ttc" id="aclass_process_1_1_inlet_html"><div class="ttname"><a href="class_process_1_1_inlet.html">Process::Inlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:179</div></div>
+<div class="ttc" id="aclass_process_1_1_inlet_html"><div class="ttname"><a href="class_process_1_1_inlet.html">Process::Inlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:194</div></div>
 <div class="ttc" id="aclass_dataflow_1_1_automatable_port_item_html"><div class="ttname"><a href="class_dataflow_1_1_automatable_port_item.html">Dataflow::AutomatablePortItem</a></div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:19</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
