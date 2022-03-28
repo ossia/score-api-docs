@@ -1,6 +1,5 @@
 var NAVTREEINDEX58 =
 {
-"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a768c145e626f9876e84c3fce96cfc5ca":[12,0,29,3,12,2,4],
 "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a7ce489429f2d3f94c1804b4224a09514":[12,0,29,3,12,2,24],
 "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a83122c383b16739edcff86ac607386ad":[12,0,29,3,12,2,0],
 "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a8e21881720d6a00fbd2c7b22ab486cfe":[12,0,29,3,12,2,23],
@@ -249,5 +248,6 @@ var NAVTREEINDEX58 =
 "struct_nodes_1_1_gain_1_1_node.html":[12,0,33,13,0],
 "struct_nodes_1_1_gain_1_1_node.html#a0bb00d61911e143eebff333ec930c9ba":[12,0,33,13,0,1],
 "struct_nodes_1_1_gain_1_1_node_1_1_metadata.html":[12,0,33,13,0,0],
-"struct_nodes_1_1_generic_math_mapping.html":[12,0,33,28]
+"struct_nodes_1_1_generic_math_mapping.html":[12,0,33,28],
+"struct_nodes_1_1_l_f_o_1_1v1_1_1_node.html":[12,0,33,14,0,0]
 };

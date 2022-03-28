@@ -1,6 +1,5 @@
 var NAVTREEINDEX61 =
 {
-"struct_protocols_1_1_artnet_specific_settings.html#a4d06303be75d3e9c621899e5135d8239":[12,0,40,6,5],
 "struct_protocols_1_1_artnet_specific_settings.html#a77b6e21f64d9ce28f5af1710ec4b10df":[12,0,40,6,6],
 "struct_protocols_1_1_artnet_specific_settings.html#af633c42f6e9ab57071377281ee0bd583":[12,0,40,6,4],
 "struct_protocols_1_1_fixture_database_1_1_scan.html":[12,0,40,9,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX61 =
 "struct_q_meta_type_id_3_01ossia_1_1net_1_1tags_01_4.html":[12,0,261],
 "struct_q_meta_type_id_3_01ossia_1_1net_1_1tags_01_4.html#a3192df48170bd141228b8005aa853e97a75844400202c69eef656d54da358dfb4":[12,0,261,0],
 "struct_q_meta_type_id_3_01ossia_1_1time__event_1_1status_01_4.html":[12,0,262],
-"struct_q_meta_type_id_3_01ossia_1_1time__event_1_1status_01_4.html#a2217186cf7a95467bed934164f2f5828acf5bffca265a52da1f55c706f4821573":[12,0,262,0]
+"struct_q_meta_type_id_3_01ossia_1_1time__event_1_1status_01_4.html#a2217186cf7a95467bed934164f2f5828acf5bffca265a52da1f55c706f4821573":[12,0,262,0],
+"struct_q_meta_type_id_3_01rapidjson_1_1_value_01_5_01_4.html":[12,0,282]
 };

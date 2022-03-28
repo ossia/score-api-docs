@@ -1,6 +1,5 @@
 var NAVTREEINDEX62 =
 {
-"struct_q_meta_type_id_3_01rapidjson_1_1_value_01_5_01_4.html":[12,0,282],
 "struct_q_meta_type_id_3_01rapidjson_1_1_value_01_5_01_4.html#a5545fd2f07f90d585249524658b1317aa1281f274c4c3837ff6a74369d36380a6":[12,0,282,0],
 "struct_q_meta_type_id_3_01score_1_1_document_01_5_01_4.html":[12,0,297],
 "struct_q_meta_type_id_3_01score_1_1_document_01_5_01_4.html#a3b2ccc0d594f168d9cd42da033ff2a7fa1d7faff897bd79bc6bd5bc9e570558d5":[12,0,297,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX62 =
 "struct_scenario_1_1_categorized_addresses.html#ac19938102b60421c565a6dc97796346f":[12,0,45,16,3],
 "struct_scenario_1_1_categorized_addresses.html#ae4574f54daee6196cdfcf5eb4547e00f":[12,0,45,16,17],
 "struct_scenario_1_1_categorized_addresses.html#ae9484aaf61d46f566643ac3fd9374365":[12,0,45,16,9],
-"struct_scenario_1_1_click_on_slot_handle___event.html":[12,0,45,23]
+"struct_scenario_1_1_click_on_slot_handle___event.html":[12,0,45,23],
+"struct_scenario_1_1_click_on_slot_handle___event.html#a125f220bc37f8ce0aace2160539a32a6":[12,0,45,23,0]
 };

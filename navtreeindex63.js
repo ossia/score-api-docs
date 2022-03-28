@@ -1,6 +1,5 @@
 var NAVTREEINDEX63 =
 {
-"struct_scenario_1_1_click_on_slot_handle___event.html#a125f220bc37f8ce0aace2160539a32a6":[12,0,45,23,0],
 "struct_scenario_1_1_click_on_slot_handle___event.html#aaa85b06f506aa6bce91ef83a968ebf5c":[12,0,45,23,1],
 "struct_scenario_1_1_click_on_slot_handle___event.html#afcbf16c0b521f0e665d088ea5a22263e":[12,0,45,23,2],
 "struct_scenario_1_1_command_1_1_message_pairs.html":[12,0,45,0,55],
@@ -249,5 +248,6 @@ var NAVTREEINDEX63 =
 "struct_scenario_1_1_slot_path.html#a258cf8a4ef5337bc693cd05d35ba5a41":[12,0,45,252,5],
 "struct_scenario_1_1_slot_path.html#a291974864420e956a9288d7878036117":[12,0,45,252,4],
 "struct_scenario_1_1_slot_path.html#a37d9da2e8b3c8b9f6533f573e9df59ee":[12,0,45,252,12],
-"struct_scenario_1_1_slot_path.html#a917a863a1aa2dfcf6efea3a3042277c3":[12,0,45,252,8]
+"struct_scenario_1_1_slot_path.html#a917a863a1aa2dfcf6efea3a3042277c3":[12,0,45,252,8],
+"struct_scenario_1_1_slot_path.html#aaadaf840dafb8b78b644c249c58e67f9":[12,0,45,252,1]
 };

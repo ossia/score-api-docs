@@ -1,6 +1,5 @@
 var NAVTREEINDEX51 =
 {
-"score-plugin-protocols_2_protocols_2_settings_2_factory_8hpp_source.html":[13,0,449],
 "score-plugin-protocols_2_protocols_2_settings_2_model_8hpp_source.html":[13,0,777],
 "score-plugin-protocols_2_protocols_2_settings_2_view_8hpp_source.html":[13,0,1383],
 "score-plugin-recording_2_recording_2_application_plugin_8hpp_source.html":[13,0,56],
@@ -249,5 +248,6 @@ var NAVTREEINDEX51 =
 "struct_control_1_1_auto_u_i_setup.html#a0eb025c2b87da9f013bb0287cbac228c":[12,0,5,0,5],
 "struct_control_1_1_auto_u_i_setup.html#a2e9236ede5211b04b540dd9c36721aa4":[12,0,5,0,1],
 "struct_control_1_1_auto_u_i_setup.html#a49931d0e2dee59ebf98097d2a43e8737":[12,0,5,0,2],
-"struct_control_1_1_auto_u_i_setup.html#a8014a5c63dd6975b23430a842113b5ee":[12,0,5,0,0]
+"struct_control_1_1_auto_u_i_setup.html#a8014a5c63dd6975b23430a842113b5ee":[12,0,5,0,0],
+"struct_control_1_1_auto_u_i_setup.html#aa8a6b3d9b78df60bb7698b1e34be8e5e":[12,0,5,0,3]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX55 =
 {
-"struct_faust_1_1_update_u_i.html#a0c9a1f58eb1bfb25a7d345966b737d99":[12,0,15,5,1],
 "struct_faust_1_1_update_u_i.html#a120ad5a2ffa58de4deafe5351ab1f736":[12,0,15,5,15],
 "struct_faust_1_1_update_u_i.html#a1cb0cefccf15bb25f8da078251175fec":[12,0,15,5,11],
 "struct_faust_1_1_update_u_i.html#a33114b1d398c9f65a7952ff5b3cd8163":[12,0,15,5,7],
@@ -249,5 +248,6 @@ var NAVTREEINDEX55 =
 "struct_j_s_o_n_reader_1_1assigner.html":[12,0,148,0],
 "struct_j_s_o_n_reader_1_1assigner.html#a010bda03a031ec93e2920f304e73c21a":[12,0,148,0,4],
 "struct_j_s_o_n_reader_1_1assigner.html#a026a303a95c79840e28bc707875dcec1":[12,0,148,0,15],
-"struct_j_s_o_n_reader_1_1assigner.html#a112b1164dca8bc6aadd1b4ec06ce3fc5":[12,0,148,0,17]
+"struct_j_s_o_n_reader_1_1assigner.html#a112b1164dca8bc6aadd1b4ec06ce3fc5":[12,0,148,0,17],
+"struct_j_s_o_n_reader_1_1assigner.html#a1913c48d1a6a183b7027a6f014257d7e":[12,0,148,0,11]
 };

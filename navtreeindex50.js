@@ -1,16 +1,15 @@
 var NAVTREEINDEX50 =
 {
-"element_finding_helper_8hpp_source.html":[13,0,374],
 "files.html":[13,0],
-"functions.html":[12,3,0,0],
 "functions.html":[12,3,0],
+"functions.html":[12,3,0,0],
 "functions_b.html":[12,3,0,1],
 "functions_c.html":[12,3,0,2],
 "functions_d.html":[12,3,0,3],
 "functions_e.html":[12,3,0,4],
 "functions_f.html":[12,3,0,5],
-"functions_func.html":[12,3,1,0],
 "functions_func.html":[12,3,1],
+"functions_func.html":[12,3,1,0],
 "functions_func_c.html":[12,3,1,1],
 "functions_func_d.html":[12,3,1,2],
 "functions_func_e.html":[12,3,1,3],
@@ -68,8 +67,8 @@ var NAVTREEINDEX50 =
 "mvp_8hpp_source.html":[13,0,808],
 "namespace_automation.html":[11,0,0],
 "namespace_automation.html":[12,0,2],
-"namespace_curve.html":[12,0,7],
 "namespace_curve.html":[11,0,1],
+"namespace_curve.html":[12,0,7],
 "namespace_device.html":[11,0,2],
 "namespace_device.html":[12,0,9],
 "namespace_engine.html":[11,0,3],
@@ -95,8 +94,8 @@ var NAVTREEINDEX50 =
 "namespacemembers_eval.html":[11,1,4],
 "namespacemembers_func.html":[11,1,1],
 "namespacemembers_type.html":[11,1,2],
-"namespaceoscr.html":[11,0,8],
 "namespaceoscr.html":[12,0,34],
+"namespaceoscr.html":[11,0,8],
 "namespaces.html":[11,0],
 "namespacescore.html":[11,0,12],
 "namespacescore.html":[12,0,46],
@@ -249,5 +248,6 @@ var NAVTREEINDEX50 =
 "score-plugin-nodal_2_nodal_2_view_8hpp_source.html":[13,0,1381],
 "score-plugin-packagemanager_2_package_manager_2_factory_8hpp_source.html":[13,0,448],
 "score-plugin-packagemanager_2_package_manager_2_model_8hpp_source.html":[13,0,776],
-"score-plugin-packagemanager_2_package_manager_2_view_8hpp_source.html":[13,0,1382]
+"score-plugin-packagemanager_2_package_manager_2_view_8hpp_source.html":[13,0,1382],
+"score-plugin-protocols_2_protocols_2_settings_2_factory_8hpp_source.html":[13,0,449]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX73 =
 {
-"structvst3_1_1_plugin.html#af848fc32b259c8a8ecac391f5cb36dbf":[12,0,56,12,7],
 "structvst3_1_1_port_creation_visitor.html":[12,0,56,13],
 "structvst3_1_1_port_creation_visitor.html#a19d9df47df1c0a565e50ac8487a22f87":[12,0,56,13,5],
 "structvst3_1_1_port_creation_visitor.html#a1e6d98ce78cdb0cf1e7ad075822559ce":[12,0,56,13,0],
