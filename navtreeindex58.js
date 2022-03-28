@@ -1,5 +1,13 @@
 var NAVTREEINDEX58 =
 {
+"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a3b382caf6a43eea6b8ad0c4d2c6f18bc":[12,0,29,3,12,2,10],
+"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a3f524b64abd40b10f496a5f10c7458b2":[12,0,29,3,12,2,12],
+"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a43aa5f92eadb4c55f03a71ecd61a7174":[12,0,29,3,12,2,6],
+"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a57229e47661f1c18bcc735886aca5152":[12,0,29,3,12,2,27],
+"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a5aac08cc6a93e5b36a882356083b481a":[12,0,29,3,12,2,9],
+"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a61d294ba9c52068f3e327163324e4cdb":[12,0,29,3,12,2,20],
+"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a709effb1c7e47693a2442fe084f0dd0e":[12,0,29,3,12,2,22],
+"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a768c145e626f9876e84c3fce96cfc5ca":[12,0,29,3,12,2,4],
 "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a7ce489429f2d3f94c1804b4224a09514":[12,0,29,3,12,2,24],
 "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a83122c383b16739edcff86ac607386ad":[12,0,29,3,12,2,0],
 "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html#a8e21881720d6a00fbd2c7b22ab486cfe":[12,0,29,3,12,2,23],
@@ -241,13 +249,5 @@ var NAVTREEINDEX58 =
 "struct_nodes_1_1_factor_oracle_1_1safe__vector.html#a3908d6b0b77c3a9008399ccfb66e5433":[12,0,33,10,2,1],
 "struct_nodes_1_1_factor_oracle_1_1safe__vector.html#a4cb7c5383a08e4fea2d5111ad8cdc540":[12,0,33,10,2,2],
 "struct_nodes_1_1_factor_oracle_1_1safe__vector.html#afd1515b84f940dfdb788f2413e911424":[12,0,33,10,2,0],
-"struct_nodes_1_1_factor_oracle_1_1safe__vector__simple.html":[12,0,33,10,3],
-"struct_nodes_1_1_factor_oracle_1_1safe__vector__simple.html#a8f09d39e1eed55066bad28ca68543099":[12,0,33,10,3,2],
-"struct_nodes_1_1_factor_oracle_1_1safe__vector__simple.html#ad05672a9714cfd35b57a638b749ce708":[12,0,33,10,3,1],
-"struct_nodes_1_1_factor_oracle_1_1safe__vector__simple.html#af875c410096ac782fa0239e0f13721fa":[12,0,33,10,3,0],
-"struct_nodes_1_1_gain_1_1_node.html":[12,0,33,13,0],
-"struct_nodes_1_1_gain_1_1_node.html#a0bb00d61911e143eebff333ec930c9ba":[12,0,33,13,0,1],
-"struct_nodes_1_1_gain_1_1_node_1_1_metadata.html":[12,0,33,13,0,0],
-"struct_nodes_1_1_generic_math_mapping.html":[12,0,33,28],
-"struct_nodes_1_1_l_f_o_1_1v1_1_1_node.html":[12,0,33,14,0,0]
+"struct_nodes_1_1_factor_oracle_1_1safe__vector__simple.html":[12,0,33,10,3]
 };

@@ -633,6 +633,7 @@ var files_dup =
     [ "LayerPresenter.hpp", "_layer_presenter_8hpp_source.html", null ],
     [ "LayerView.hpp", "_layer_view_8hpp_source.html", null ],
     [ "lib/score/widgets/Layout.hpp", "lib_2score_2widgets_2_layout_8hpp_source.html", null ],
+    [ "plugins/score-lib-process/Control/Layout.hpp", "plugins_2score-lib-process_2_control_2_layout_8hpp_source.html", null ],
     [ "plugins/score-plugin-avnd/Crousti/Layout.hpp", "plugins_2score-plugin-avnd_2_crousti_2_layout_8hpp_source.html", null ],
     [ "LeapmotionDevice.hpp", "_leapmotion_device_8hpp_source.html", null ],
     [ "LeapmotionProtocolFactory.hpp", "_leapmotion_protocol_factory_8hpp_source.html", null ],

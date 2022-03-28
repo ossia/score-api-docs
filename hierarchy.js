@@ -570,7 +570,6 @@ var hierarchy =
         [ "Process::GenericProcessComponent_T< ProcessComponent, Process_T >", "class_process_1_1_generic_process_component___t.html", [
           [ "ControlSurface::LocalTreeProcessComponent", "class_control_surface_1_1_local_tree_process_component.html", null ],
           [ "Execution::ProcessComponent_T< Process_T, OSSIA_Process_T >", "struct_execution_1_1_process_component___t.html", null ],
-          [ "LocalTree::AutomationComponent", "class_local_tree_1_1_automation_component.html", null ],
           [ "LocalTree::ScenarioComponentBase", "class_local_tree_1_1_scenario_component_base.html", null ],
           [ "RemoteControl::ScenarioBase", "class_remote_control_1_1_scenario_base.html", null ]
         ] ],
@@ -642,7 +641,6 @@ var hierarchy =
       [ "Control::IntSpinBox", "struct_control_1_1_int_spin_box.html", null ],
       [ "Control::LineEdit", "struct_control_1_1_line_edit.html", null ],
       [ "Control::LogFloatControl< Model_T, T >", "struct_control_1_1_log_float_control.html", null ],
-      [ "Control::RGBAEdit", "struct_control_1_1_r_g_b_a_edit.html", null ],
       [ "Control::Toggle", "struct_control_1_1_toggle.html", null ],
       [ "Control::XYSlider", "struct_control_1_1_x_y_slider.html", null ],
       [ "vst3::VSTFloatSlider", "structvst3_1_1_v_s_t_float_slider.html", null ],
@@ -688,6 +686,7 @@ var hierarchy =
     [ "Explorer::DefaultBounds< int >", "struct_explorer_1_1_default_bounds_3_01int_01_4.html", null ],
     [ "Execution::DefaultClock", "class_execution_1_1_default_clock.html", null ],
     [ "score::DefaultComboImpl", "structscore_1_1_default_combo_impl.html", null ],
+    [ "Process::DefaultControlLayouts", "struct_process_1_1_default_control_layouts.html", null ],
     [ "score::DefaultGraphicsKnobImpl", "structscore_1_1_default_graphics_knob_impl.html", null ],
     [ "score::DefaultGraphicsSliderImpl", "structscore_1_1_default_graphics_slider_impl.html", null ],
     [ "DefaultRollbackStrategy", "struct_default_rollback_strategy.html", null ],
@@ -1628,7 +1627,7 @@ var hierarchy =
     [ "Layout", null, [
       [ "score::MarginLess< Layout >", "classscore_1_1_margin_less.html", null ]
     ] ],
-    [ "oscr::LayoutBuilderBase", "structoscr_1_1_layout_builder_base.html", [
+    [ "Process::LayoutBuilderBase", "struct_process_1_1_layout_builder_base.html", [
       [ "oscr::LayoutBuilder< Info >", "structoscr_1_1_layout_builder.html", null ]
     ] ],
     [ "score::lazy_init_t", "structscore_1_1lazy__init__t.html", null ],
@@ -1775,35 +1774,35 @@ var hierarchy =
     [ "Scenario::BaseScenarioContainer::no_init", "struct_scenario_1_1_base_scenario_container_1_1no__init.html", null ],
     [ "Explorer::AddressSettingsWidget::no_widgets_t", "struct_explorer_1_1_address_settings_widget_1_1no__widgets__t.html", null ],
     [ "Scenario::NodalSlotPresenter", "struct_scenario_1_1_nodal_slot_presenter.html", null ],
+    [ "Nodes::FactorOracle2MIDI::Node", "struct_nodes_1_1_factor_oracle2_m_i_d_i_1_1_node.html", null ],
     [ "Nodes::LFO::v1::Node", "struct_nodes_1_1_l_f_o_1_1v1_1_1_node.html", null ],
-    [ "Nodes::EmptyValueMapping::Node", "struct_nodes_1_1_empty_value_mapping_1_1_node.html", null ],
-    [ "Nodes::Envelope::Node", "struct_nodes_1_1_envelope_1_1_node.html", null ],
+    [ "Nodes::Debug::Node", "struct_nodes_1_1_debug_1_1_node.html", null ],
     [ "Nodes::EmptyAudioMapping::Node", "struct_nodes_1_1_empty_audio_mapping_1_1_node.html", null ],
     [ "Nodes::EmptyMidiMapping::Node", "struct_nodes_1_1_empty_midi_mapping_1_1_node.html", null ],
-    [ "Nodes::MicroMapping::Node", "struct_nodes_1_1_micro_mapping_1_1_node.html", null ],
-    [ "Nodes::MidiUtil::Node", "struct_nodes_1_1_midi_util_1_1_node.html", null ],
+    [ "Nodes::Quantifier::Node", "struct_nodes_1_1_quantifier_1_1_node.html", null ],
     [ "Nodes::PitchToValue::Node", "struct_nodes_1_1_pitch_to_value_1_1_node.html", null ],
     [ "Ui::SignalDisplay::Node", "struct_ui_1_1_signal_display_1_1_node.html", null ],
-    [ "Ui::Display::Node", "struct_ui_1_1_display_1_1_node.html", null ],
-    [ "Nodes::LFO::v2::Node", "struct_nodes_1_1_l_f_o_1_1v2_1_1_node.html", null ],
+    [ "Nodes::MathMapping::Node", "struct_nodes_1_1_math_mapping_1_1_node.html", null ],
+    [ "Nodes::MidiUtil::Node", "struct_nodes_1_1_midi_util_1_1_node.html", null ],
     [ "Nodes::Direction::Node", "struct_nodes_1_1_direction_1_1_node.html", null ],
     [ "Nodes::Arpeggiator::Node", "struct_nodes_1_1_arpeggiator_1_1_node.html", null ],
     [ "Nodes::Chord::Node", "struct_nodes_1_1_chord_1_1_node.html", null ],
     [ "Nodes::ClassicalBeat::Node", "struct_nodes_1_1_classical_beat_1_1_node.html", null ],
-    [ "Nodes::Debug::Node", "struct_nodes_1_1_debug_1_1_node.html", null ],
+    [ "Nodes::EmptyValueMapping::Node", "struct_nodes_1_1_empty_value_mapping_1_1_node.html", null ],
+    [ "Nodes::FactorOracle::Node", "struct_nodes_1_1_factor_oracle_1_1_node.html", null ],
     [ "Nodes::Gain::Node", "struct_nodes_1_1_gain_1_1_node.html", null ],
     [ "Nodes::AudioLooper::Node", "struct_nodes_1_1_audio_looper_1_1_node.html", null ],
     [ "Nodes::MathGenerator::Node", "struct_nodes_1_1_math_generator_1_1_node.html", null ],
-    [ "Nodes::MathMapping::Node", "struct_nodes_1_1_math_mapping_1_1_node.html", null ],
-    [ "Nodes::MathAudioFilter::Node", "struct_nodes_1_1_math_audio_filter_1_1_node.html", null ],
+    [ "Nodes::LFO::v2::Node", "struct_nodes_1_1_l_f_o_1_1v2_1_1_node.html", null ],
     [ "Nodes::FactorOracle2::Node", "struct_nodes_1_1_factor_oracle2_1_1_node.html", null ],
+    [ "Nodes::MathAudioFilter::Node", "struct_nodes_1_1_math_audio_filter_1_1_node.html", null ],
+    [ "Nodes::MicroMapping::Node", "struct_nodes_1_1_micro_mapping_1_1_node.html", null ],
     [ "Nodes::Metro::Node", "struct_nodes_1_1_metro_1_1_node.html", null ],
-    [ "Nodes::Quantifier::Node", "struct_nodes_1_1_quantifier_1_1_node.html", null ],
     [ "Nodes::RateLimiter::Node", "struct_nodes_1_1_rate_limiter_1_1_node.html", null ],
     [ "Nodes::ValueFilter::Node", "struct_nodes_1_1_value_filter_1_1_node.html", null ],
     [ "Nodes::PulseToNote::Node", "struct_nodes_1_1_pulse_to_note_1_1_node.html", null ],
-    [ "Nodes::FactorOracle::Node", "struct_nodes_1_1_factor_oracle_1_1_node.html", null ],
-    [ "Nodes::FactorOracle2MIDI::Node", "struct_nodes_1_1_factor_oracle2_m_i_d_i_1_1_node.html", null ],
+    [ "Nodes::Envelope::Node", "struct_nodes_1_1_envelope_1_1_node.html", null ],
+    [ "Nodes::MathAudioGenerator::Node", "struct_nodes_1_1_math_audio_generator_1_1_node.html", null ],
     [ "score::gfx::Node", "classscore_1_1gfx_1_1_node.html", [
       [ "score::gfx::OutputNode", "classscore_1_1gfx_1_1_output_node.html", [
         [ "Gfx::ShmdataOutputNode", "struct_gfx_1_1_shmdata_output_node.html", null ],
@@ -1827,7 +1826,7 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
-    [ "Nodes::MathAudioGenerator::Node", "struct_nodes_1_1_math_audio_generator_1_1_node.html", null ],
+    [ "Ui::Display::Node", "struct_ui_1_1_display_1_1_node.html", null ],
     [ "node_base", null, [
       [ "Gfx::gfx_node_base", "class_gfx_1_1gfx__node__base.html", null ],
       [ "Gfx::kinect2_node", "class_gfx_1_1kinect2__node.html", null ],
@@ -1870,8 +1869,8 @@ var hierarchy =
     [ "Control::Note", "struct_control_1_1_note.html", null ],
     [ "Midi::NoteComparator", "struct_midi_1_1_note_comparator.html", null ],
     [ "Midi::NoteData", "struct_midi_1_1_note_data.html", null ],
-    [ "Nodes::Quantifier::Node::NoteIn", "struct_nodes_1_1_quantifier_1_1_node_1_1_note_in.html", null ],
     [ "Nodes::PulseToNote::Node::NoteIn", "struct_nodes_1_1_pulse_to_note_1_1_node_1_1_note_in.html", null ],
+    [ "Nodes::Quantifier::Node::NoteIn", "struct_nodes_1_1_quantifier_1_1_node_1_1_note_in.html", null ],
     [ "FactorOracle2MIDI::Notes", "class_factor_oracle2_m_i_d_i_1_1_notes.html", null ],
     [ "Curve::Element::Nothing_tag", "struct_curve_1_1_element_1_1_nothing__tag.html", null ],
     [ "ObjectIdentifier", "class_object_identifier.html", null ],
@@ -2132,6 +2131,7 @@ var hierarchy =
     [ "Explorer::print_node_rec", "struct_explorer_1_1print__node__rec.html", null ],
     [ "ProcessComponentBase_T", null, [
       [ "Process::GenericProcessComponent_T< ProcessComponentBase_T, Process_T >", "class_process_1_1_generic_process_component___t.html", [
+        [ "LocalTree::AutomationComponent", "class_local_tree_1_1_automation_component.html", null ],
         [ "LocalTree::MappingComponent", "class_local_tree_1_1_mapping_component.html", null ]
       ] ]
     ] ],
@@ -2549,7 +2549,9 @@ var hierarchy =
       ] ],
       [ "score::BackgroundItem", "classscore_1_1_background_item.html", [
         [ "score::GraphicsLayout", "classscore_1_1_graphics_layout.html", [
-          [ "score::GraphicsGridLayout", "classscore_1_1_graphics_grid_layout.html", null ],
+          [ "score::GraphicsDefaultLayout", "classscore_1_1_graphics_default_layout.html", null ],
+          [ "score::GraphicsGridColumnsLayout", "classscore_1_1_graphics_grid_columns_layout.html", null ],
+          [ "score::GraphicsGridRowsLayout", "classscore_1_1_graphics_grid_rows_layout.html", null ],
           [ "score::GraphicsHBoxLayout", "classscore_1_1_graphics_h_box_layout.html", null ],
           [ "score::GraphicsSplitLayout", "classscore_1_1_graphics_split_layout.html", null ],
           [ "score::GraphicsTabLayout", "classscore_1_1_graphics_tab_layout.html", null ],
@@ -3501,9 +3503,6 @@ var hierarchy =
     [ "Video::Rescale", "class_video_1_1_rescale.html", null ],
     [ "score::RestorableDocument", "structscore_1_1_restorable_document.html", null ],
     [ "oscr::rgba_texture", "structoscr_1_1rgba__texture.html", null ],
-    [ "WidgetFactory::RGBAEdit", "struct_widget_factory_1_1_r_g_b_a_edit.html", [
-      [ "Control::RGBAEdit", "struct_control_1_1_r_g_b_a_edit.html", null ]
-    ] ],
     [ "score::RightClickImpl", "structscore_1_1_right_click_impl.html", null ],
     [ "Analysis::RMS", "struct_analysis_1_1_r_m_s.html", null ],
     [ "Analysis::Rolloff", "struct_analysis_1_1_rolloff.html", null ],
@@ -3522,8 +3521,8 @@ var hierarchy =
     [ "score::gfx::Sampler", "structscore_1_1gfx_1_1_sampler.html", null ],
     [ "Scenario::SavedPort", "struct_scenario_1_1_saved_port.html", null ],
     [ "Protocols::FixtureDatabase::Scan", "struct_protocols_1_1_fixture_database_1_1_scan.html", null ],
-    [ "vst::ApplicationPlugin::ScanningProcess", "structvst_1_1_application_plugin_1_1_scanning_process.html", null ],
     [ "vst3::ApplicationPlugin::ScanningProcess", "structvst3_1_1_application_plugin_1_1_scanning_process.html", null ],
+    [ "vst::ApplicationPlugin::ScanningProcess", "structvst_1_1_application_plugin_1_1_scanning_process.html", null ],
     [ "Scenario::ScenarioBeingCopied", "struct_scenario_1_1_scenario_being_copied.html", null ],
     [ "Scenario::ScenarioCreate< T >", "class_scenario_1_1_scenario_create.html", null ],
     [ "Scenario::ScenarioCreate< CommentBlockModel >", "class_scenario_1_1_scenario_create_3_01_comment_block_model_01_4.html", null ],
@@ -3646,6 +3645,9 @@ var hierarchy =
     [ "Analysis::SpectralDiffHWR", "struct_analysis_1_1_spectral_diff_h_w_r.html", null ],
     [ "Analysis::Spectrum", "struct_analysis_1_1_spectrum.html", null ],
     [ "spinbox_type", null, [
+      [ "score::MaxRangeSpinBox< SpinBox >", "classscore_1_1_max_range_spin_box.html", null ]
+    ] ],
+    [ "spinbox_type", null, [
       [ "score::MaxRangeSpinBox< TemplatedSpinBox< double > >", "classscore_1_1_max_range_spin_box.html", [
         [ "score::SpinBox< double >", "classscore_1_1_spin_box_3_01double_01_4.html", null ]
       ] ],
@@ -3656,43 +3658,40 @@ var hierarchy =
         [ "score::SpinBox< T >", "classscore_1_1_spin_box.html", null ]
       ] ]
     ] ],
-    [ "spinbox_type", null, [
-      [ "score::MaxRangeSpinBox< SpinBox >", "classscore_1_1_max_range_spin_box.html", null ]
-    ] ],
     [ "Device::ProtocolFactory::StandardCategories", "struct_device_1_1_protocol_factory_1_1_standard_categories.html", null ],
     [ "Scenario::StartDateComparator< T >", "struct_scenario_1_1_start_date_comparator.html", null ],
     [ "score::StartScreenLink", "structscore_1_1_start_screen_link.html", null ],
-    [ "Nodes::Chord::Node::State", "struct_nodes_1_1_chord_1_1_node_1_1_state.html", null ],
-    [ "Nodes::MathMapping::Node::State", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html", null ],
-    [ "Nodes::FactorOracle2MIDI::Node::State", "struct_nodes_1_1_factor_oracle2_m_i_d_i_1_1_node_1_1_state.html", null ],
-    [ "Nodes::ValueFilter::Node::State", "class_nodes_1_1_value_filter_1_1_node_1_1_state.html", null ],
-    [ "Nodes::LFO::v1::Node::State", "struct_nodes_1_1_l_f_o_1_1v1_1_1_node_1_1_state.html", null ],
-    [ "Nodes::Direction::Node::State", "struct_nodes_1_1_direction_1_1_node_1_1_state.html", null ],
     [ "Nodes::FactorOracle2::Node::State", "struct_nodes_1_1_factor_oracle2_1_1_node_1_1_state.html", null ],
-    [ "Nodes::MathAudioGenerator::Node::State", "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html", null ],
-    [ "FactorOracle2MIDI::State< T >", "class_factor_oracle2_m_i_d_i_1_1_state.html", null ],
-    [ "Nodes::AudioLooper::Node::State", "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html", null ],
-    [ "Nodes::MathGenerator::Node::State", "struct_nodes_1_1_math_generator_1_1_node_1_1_state.html", null ],
-    [ "Nodes::LFO::v2::Node::State", "struct_nodes_1_1_l_f_o_1_1v2_1_1_node_1_1_state.html", null ],
-    [ "Nodes::FactorOracle::Node::State", "struct_nodes_1_1_factor_oracle_1_1_node_1_1_state.html", null ],
-    [ "Factor::State< T >", "class_factor_1_1_state.html", null ],
-    [ "Nodes::MidiUtil::Node::State", "struct_nodes_1_1_midi_util_1_1_node_1_1_state.html", null ],
-    [ "Nodes::RateLimiter::Node::State", "class_nodes_1_1_rate_limiter_1_1_node_1_1_state.html", null ],
-    [ "Nodes::PulseToNote::Node::State", "struct_nodes_1_1_pulse_to_note_1_1_node_1_1_state.html", null ],
-    [ "Nodes::Quantifier::Node::State", "struct_nodes_1_1_quantifier_1_1_node_1_1_state.html", null ],
     [ "Nodes::Arpeggiator::Node::State", "struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html", null ],
     [ "Nodes::MathAudioFilter::Node::State", "struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html", null ],
+    [ "Factor::State< T >", "class_factor_1_1_state.html", null ],
+    [ "Nodes::AudioLooper::Node::State", "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html", null ],
+    [ "Nodes::FactorOracle::Node::State", "struct_nodes_1_1_factor_oracle_1_1_node_1_1_state.html", null ],
+    [ "Nodes::MathGenerator::Node::State", "struct_nodes_1_1_math_generator_1_1_node_1_1_state.html", null ],
+    [ "Nodes::MidiUtil::Node::State", "struct_nodes_1_1_midi_util_1_1_node_1_1_state.html", null ],
+    [ "Nodes::Quantifier::Node::State", "struct_nodes_1_1_quantifier_1_1_node_1_1_state.html", null ],
+    [ "Nodes::RateLimiter::Node::State", "class_nodes_1_1_rate_limiter_1_1_node_1_1_state.html", null ],
+    [ "Nodes::ValueFilter::Node::State", "class_nodes_1_1_value_filter_1_1_node_1_1_state.html", null ],
+    [ "Nodes::MathAudioGenerator::Node::State", "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html", null ],
+    [ "Nodes::Chord::Node::State", "struct_nodes_1_1_chord_1_1_node_1_1_state.html", null ],
+    [ "Nodes::FactorOracle2MIDI::Node::State", "struct_nodes_1_1_factor_oracle2_m_i_d_i_1_1_node_1_1_state.html", null ],
+    [ "FactorOracle2MIDI::State< T >", "class_factor_oracle2_m_i_d_i_1_1_state.html", null ],
+    [ "Nodes::PulseToNote::Node::State", "struct_nodes_1_1_pulse_to_note_1_1_node_1_1_state.html", null ],
+    [ "Nodes::LFO::v1::Node::State", "struct_nodes_1_1_l_f_o_1_1v1_1_1_node_1_1_state.html", null ],
     [ "Nodes::MicroMapping::Node::State", "struct_nodes_1_1_micro_mapping_1_1_node_1_1_state.html", null ],
+    [ "Nodes::Direction::Node::State", "struct_nodes_1_1_direction_1_1_node_1_1_state.html", null ],
+    [ "Nodes::LFO::v2::Node::State", "struct_nodes_1_1_l_f_o_1_1v2_1_1_node_1_1_state.html", null ],
+    [ "Nodes::MathMapping::Node::State", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html", null ],
     [ "FactorOracle2MIDI::State< int >", "class_factor_oracle2_m_i_d_i_1_1_state.html", null ],
     [ "Factor::State< ossia::value >", "class_factor_1_1_state.html", null ],
+    [ "Process::StateNodeData", "struct_process_1_1_state_node_data.html", null ],
     [ "StateNodeData", null, [
       [ "TreeNode< StateNodeData >", "class_tree_node.html", null ]
     ] ],
-    [ "Process::StateNodeData", "struct_process_1_1_state_node_data.html", null ],
     [ "Process::StateNodeValues", "struct_process_1_1_state_node_values.html", null ],
     [ "Scenario::StateOverlays", "struct_scenario_1_1_state_overlays.html", null ],
-    [ "HierarchicalBaseScenario< Component_T, BaseScenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T >::StatePair", "struct_hierarchical_base_scenario_1_1_state_pair.html", null ],
     [ "HierarchicalScenarioComponent< Component_T, Scenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T, HasOwnership >::StatePair", "struct_hierarchical_scenario_component_1_1_state_pair.html", null ],
+    [ "HierarchicalBaseScenario< Component_T, BaseScenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T >::StatePair", "struct_hierarchical_base_scenario_1_1_state_pair.html", null ],
     [ "StaticPhantomStylePluginPluginInstance", "class_static_phantom_style_plugin_plugin_instance.html", null ],
     [ "StdVariantDataStreamDeserializer< T >", "struct_std_variant_data_stream_deserializer.html", null ],
     [ "StdVariantDataStreamSerializer< T >", "struct_std_variant_data_stream_serializer.html", null ],
@@ -3757,8 +3756,8 @@ var hierarchy =
     [ "Scenario::TimenodeProperties", "struct_scenario_1_1_timenode_properties.html", null ],
     [ "Jit::Timer", "struct_jit_1_1_timer.html", null ],
     [ "Scenario::TimeSignatureMap", "struct_scenario_1_1_time_signature_map.html", null ],
-    [ "HierarchicalScenarioComponent< Component_T, Scenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T, HasOwnership >::TimeSyncPair", "struct_hierarchical_scenario_component_1_1_time_sync_pair.html", null ],
     [ "HierarchicalBaseScenario< Component_T, BaseScenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T >::TimeSyncPair", "struct_hierarchical_base_scenario_1_1_time_sync_pair.html", null ],
+    [ "HierarchicalScenarioComponent< Component_T, Scenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T, HasOwnership >::TimeSyncPair", "struct_hierarchical_scenario_component_1_1_time_sync_pair.html", null ],
     [ "Scenario::MusicalGrid::timings", "struct_scenario_1_1_musical_grid_1_1timings.html", null ],
     [ "WidgetFactory::Toggle", "struct_widget_factory_1_1_toggle.html", [
       [ "Control::Toggle", "struct_control_1_1_toggle.html", null ]
@@ -3887,9 +3886,9 @@ var hierarchy =
     [ "oscr::type_if< T, false >", "structoscr_1_1type__if_3_01_t_00_01false_01_4.html", null ],
     [ "oscr::type_if< T, true >", "structoscr_1_1type__if_3_01_t_00_01true_01_4.html", null ],
     [ "typeholder< T >", "structtypeholder.html", null ],
-    [ "score::gfx::TexgenNode::ubo", "structscore_1_1gfx_1_1_texgen_node_1_1ubo.html", null ],
-    [ "score::gfx::ImagesNode::UBO", "structscore_1_1gfx_1_1_images_node_1_1_u_b_o.html", null ],
     [ "score::gfx::TextNode::UBO", "structscore_1_1gfx_1_1_text_node_1_1_u_b_o.html", null ],
+    [ "score::gfx::ImagesNode::UBO", "structscore_1_1gfx_1_1_images_node_1_1_u_b_o.html", null ],
+    [ "score::gfx::TexgenNode::ubo", "structscore_1_1gfx_1_1_texgen_node_1_1ubo.html", null ],
     [ "UI", null, [
       [ "Faust::UI< Proc, Synth >", "struct_faust_1_1_u_i.html", null ],
       [ "FaustDSP::Wrap< T >", "struct_faust_d_s_p_1_1_wrap.html", null ]

@@ -1,5 +1,13 @@
 var NAVTREEINDEX54 =
 {
+"struct_device_1_1_device_capas.html#acf997aca6ea39b2e3ec46a5dea5b3c32":[12,0,9,4,2],
+"struct_device_1_1_device_capas.html#af7176d2ffc6913791a02ff5a32190f4c":[12,0,9,4,10],
+"struct_device_1_1_device_settings.html":[12,0,9,12],
+"struct_device_1_1_device_settings.html#a528a2f43c3c42b447743897f63b1dc81":[12,0,9,12,0],
+"struct_device_1_1_device_settings.html#a659a11edbd51488c9f248bb2b19a97ab":[12,0,9,12,2],
+"struct_device_1_1_device_settings.html#a864c07b4632e64a07eb7b3129a843f44":[12,0,9,12,1],
+"struct_device_1_1_full_address_accessor_settings.html":[12,0,9,13],
+"struct_device_1_1_full_address_accessor_settings.html#a0e708e419c6fba28ebb5918f076cedce":[12,0,9,13,12],
 "struct_device_1_1_full_address_accessor_settings.html#a157e12e61f5805930cb5ae2ab067ccd1":[12,0,9,13,9],
 "struct_device_1_1_full_address_accessor_settings.html#a1e614a6373f8a3dd9a3229fdf3b70e62":[12,0,9,13,5],
 "struct_device_1_1_full_address_accessor_settings.html#a265b18ba70ac6529d8f0ff79a4d15287":[12,0,9,13,13],
@@ -241,13 +249,5 @@ var NAVTREEINDEX54 =
 "struct_faust_1_1_u_i.html#a51dbb56919e13dae4ad21358092cf88f":[12,0,15,4,11],
 "struct_faust_1_1_u_i.html#a7886bbaf97dddef72eaedcd1f3bc0f86":[12,0,15,4,0],
 "struct_faust_1_1_u_i.html#a8f457e5faf933dd8bc04baf25c1f1818":[12,0,15,4,12],
-"struct_faust_1_1_u_i.html#ab2b22ef424fcd20870200561efa1316c":[12,0,15,4,4],
-"struct_faust_1_1_u_i.html#ab7a56606a2a1fbfb7bec5ec57de50489":[12,0,15,4,1],
-"struct_faust_1_1_u_i.html#ac33f8629b4d5dfbdcc4e829c47693939":[12,0,15,4,5],
-"struct_faust_1_1_u_i.html#ad506b37df796526d1061c3e5970766c0":[12,0,15,4,7],
-"struct_faust_1_1_u_i.html#ad5d18c5d9101816842863b1de2b1437f":[12,0,15,4,6],
-"struct_faust_1_1_u_i.html#ae74896631b74936bc044fe9bc5381d36":[12,0,15,4,9],
-"struct_faust_1_1_u_i.html#af67384bb2a355fc3be5475128a48b3f9":[12,0,15,4,10],
-"struct_faust_1_1_update_u_i.html":[12,0,15,5],
-"struct_faust_1_1_update_u_i.html#a0c9a1f58eb1bfb25a7d345966b737d99":[12,0,15,5,1]
+"struct_faust_1_1_u_i.html#ab2b22ef424fcd20870200561efa1316c":[12,0,15,4,4]
 };

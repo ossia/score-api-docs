@@ -41,7 +41,6 @@ var namespaceoscr =
     [ "is_control_output< T >", "structoscr_1_1is__control__output_3_01_t_01_4.html", null ],
     [ "LayerFactory", "classoscr_1_1_layer_factory.html", "classoscr_1_1_layer_factory" ],
     [ "LayoutBuilder", "structoscr_1_1_layout_builder.html", "structoscr_1_1_layout_builder" ],
-    [ "LayoutBuilderBase", "structoscr_1_1_layout_builder_base.html", "structoscr_1_1_layout_builder_base" ],
     [ "multichannel_audio", "structoscr_1_1multichannel__audio.html", "structoscr_1_1multichannel__audio" ],
     [ "multichannel_audio_view", "structoscr_1_1multichannel__audio__view.html", "structoscr_1_1multichannel__audio__view" ],
     [ "outlet_reflection", "structoscr_1_1outlet__reflection.html", "structoscr_1_1outlet__reflection" ],

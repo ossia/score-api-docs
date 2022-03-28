@@ -1,5 +1,13 @@
 var NAVTREEINDEX59 =
 {
+"struct_nodes_1_1_factor_oracle_1_1safe__vector__simple.html#a8f09d39e1eed55066bad28ca68543099":[12,0,33,10,3,2],
+"struct_nodes_1_1_factor_oracle_1_1safe__vector__simple.html#ad05672a9714cfd35b57a638b749ce708":[12,0,33,10,3,1],
+"struct_nodes_1_1_factor_oracle_1_1safe__vector__simple.html#af875c410096ac782fa0239e0f13721fa":[12,0,33,10,3,0],
+"struct_nodes_1_1_gain_1_1_node.html":[12,0,33,13,0],
+"struct_nodes_1_1_gain_1_1_node.html#a0bb00d61911e143eebff333ec930c9ba":[12,0,33,13,0,1],
+"struct_nodes_1_1_gain_1_1_node_1_1_metadata.html":[12,0,33,13,0,0],
+"struct_nodes_1_1_generic_math_mapping.html":[12,0,33,28],
+"struct_nodes_1_1_l_f_o_1_1v1_1_1_node.html":[12,0,33,14,0,0],
 "struct_nodes_1_1_l_f_o_1_1v1_1_1_node.html#af3db601ae0a8267a5ce614d2bd9bcd02":[12,0,33,14,0,0,2],
 "struct_nodes_1_1_l_f_o_1_1v1_1_1_node_1_1_metadata.html":[12,0,33,14,0,0,0],
 "struct_nodes_1_1_l_f_o_1_1v1_1_1_node_1_1_state.html":[12,0,33,14,0,0,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX59 =
 "struct_pd_1_1libpd__list__wrapper.html":[12,0,37,5],
 "struct_pd_1_1libpd__list__wrapper.html#a04944f7753cc17cc88ab0564c0dc2523":[12,0,37,5,1],
 "struct_pd_1_1libpd__list__wrapper.html#a5ed914ce492933b80aed6c7081d1a7ed":[12,0,37,5,4],
-"struct_pd_1_1libpd__list__wrapper.html#ae210f8d6861bfaf77b2f9e2dfff4b057":[12,0,37,5,3],
-"struct_pd_1_1libpd__list__wrapper.html#afaec0746775cd7f5c791ce7dba7cff41":[12,0,37,5,2],
-"struct_pd_1_1libpd__list__wrapper_1_1value__visitor.html":[12,0,37,5,0],
-"struct_pd_1_1libpd__list__wrapper_1_1value__visitor.html#a02bd435331b3a944c5b85190e4f82ca3":[12,0,37,5,0,1],
-"struct_pd_1_1libpd__list__wrapper_1_1value__visitor.html#a0c7bd0b63ff4ed6b00ae79160e1e5b79":[12,0,37,5,0,2],
-"struct_pd_1_1libpd__list__wrapper_1_1value__visitor.html#a4b6f3af68260d133a5af323f2692b660":[12,0,37,5,0,0],
-"struct_pd_1_1ossia__to__pd__value.html":[12,0,37,7],
-"struct_pd_1_1ossia__to__pd__value.html#a23eaf0a78091715fd9600f1cf1e99d55":[12,0,37,7,2],
-"struct_pd_1_1ossia__to__pd__value.html#a34c4639ddb53ec619f1a6e56faf68e4c":[12,0,37,7,5]
+"struct_pd_1_1libpd__list__wrapper.html#ae210f8d6861bfaf77b2f9e2dfff4b057":[12,0,37,5,3]
 };

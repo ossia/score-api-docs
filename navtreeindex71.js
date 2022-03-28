@@ -1,5 +1,13 @@
 var NAVTREEINDEX71 =
 {
+"structscore_1_1gfx_1_1_full_screen_image_node.html":[12,0,46,2,7],
+"structscore_1_1gfx_1_1_full_screen_image_node.html#a23f66b912112f7a226e560fd6465694c":[12,0,46,2,7,2],
+"structscore_1_1gfx_1_1_full_screen_image_node.html#a27e4621131c903fc28a566e1aa3d6faf":[12,0,46,2,7,3],
+"structscore_1_1gfx_1_1_full_screen_image_node.html#abd94073fc5b310dbd057d80222a882b3":[12,0,46,2,7,1],
+"structscore_1_1gfx_1_1_graph.html":[12,0,46,2,10],
+"structscore_1_1gfx_1_1_graph.html#a1693837e0d684408bb84af3f619cfc8a":[12,0,46,2,10,12],
+"structscore_1_1gfx_1_1_graph.html#a17a55c3427949d59d752108e3da2f0f3":[12,0,46,2,10,9],
+"structscore_1_1gfx_1_1_graph.html#a1c3b40f6e90a21e4fb0636257f7bc975":[12,0,46,2,10,6],
 "structscore_1_1gfx_1_1_graph.html#a2053b9d1b4c0466c9cc5fe87be8cb5a5":[12,0,46,2,10,10],
 "structscore_1_1gfx_1_1_graph.html#a27b1df43407c54984e12e5717382c983":[12,0,46,2,10,3],
 "structscore_1_1gfx_1_1_graph.html#a30516df5d2ae6aa857533489e7e34c19":[12,0,46,2,10,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX71 =
 "structscore_1_1gfx_1_1_video_frame_reader.html#a6858671fd0b7e21b56204e65765e1270":[12,0,46,2,55,1],
 "structscore_1_1gfx_1_1_video_frame_share.html":[12,0,46,2,56],
 "structscore_1_1gfx_1_1_video_frame_share.html#a0d08938ba7e2d78b96eae5797d6ef3ec":[12,0,46,2,56,0],
-"structscore_1_1gfx_1_1_video_frame_share.html#a20ba6fc5418cf4b98f09bc9eddea9343":[12,0,46,2,56,8],
-"structscore_1_1gfx_1_1_video_frame_share.html#a30d2e0809d1bd862c2821a9104384783":[12,0,46,2,56,10],
-"structscore_1_1gfx_1_1_video_frame_share.html#a61337675e0012eff200bea6f543f5019":[12,0,46,2,56,2],
-"structscore_1_1gfx_1_1_video_frame_share.html#a78aa1f03e1d12200a714850209586079":[12,0,46,2,56,7],
-"structscore_1_1gfx_1_1_video_frame_share.html#a7ce03c5d12a0e0b78c892017aefa0e5e":[12,0,46,2,56,1],
-"structscore_1_1gfx_1_1_video_frame_share.html#a8238b0e37d3175a3726e3767ff64556c":[12,0,46,2,56,6],
-"structscore_1_1gfx_1_1_video_frame_share.html#a9463f7130a4b84e2aec0f7d0f9a1641b":[12,0,46,2,56,4],
-"structscore_1_1gfx_1_1_video_frame_share.html#a964328dc65aa90fb79ea9e5f96c1570c":[12,0,46,2,56,3],
-"structscore_1_1gfx_1_1_video_frame_share.html#a9c7b72d17e34e8560382e6a286bf3a8c":[12,0,46,2,56,5]
+"structscore_1_1gfx_1_1_video_frame_share.html#a20ba6fc5418cf4b98f09bc9eddea9343":[12,0,46,2,56,8]
 };

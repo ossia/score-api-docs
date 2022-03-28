@@ -1,5 +1,13 @@
 var NAVTREEINDEX73 =
 {
+"structvst3_1_1_plugin.html#ab17c9f57743111f148fbb6751388a2c3":[12,0,56,12,15],
+"structvst3_1_1_plugin.html#ab44b5d43f69005212f9522bd2b152c72":[12,0,56,12,12],
+"structvst3_1_1_plugin.html#ab83f861834cbe2da0887702d9d74919b":[12,0,56,12,3],
+"structvst3_1_1_plugin.html#aca2b3cc2f82061b379842d87e9445d5d":[12,0,56,12,2],
+"structvst3_1_1_plugin.html#acdee8b5b460865f74580a106940a3789":[12,0,56,12,8],
+"structvst3_1_1_plugin.html#add4dbf724b439c5f420ed6e6b036d07b":[12,0,56,12,21],
+"structvst3_1_1_plugin.html#aeffdad7e7d52ca33f1a6d2b329329f18":[12,0,56,12,25],
+"structvst3_1_1_plugin.html#af848fc32b259c8a8ecac391f5cb36dbf":[12,0,56,12,7],
 "structvst3_1_1_port_creation_visitor.html":[12,0,56,13],
 "structvst3_1_1_port_creation_visitor.html#a19d9df47df1c0a565e50ac8487a22f87":[12,0,56,13,5],
 "structvst3_1_1_port_creation_visitor.html#a1e6d98ce78cdb0cf1e7ad075822559ce":[12,0,56,13,0],

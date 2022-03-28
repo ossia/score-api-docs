@@ -1,5 +1,13 @@
 var NAVTREEINDEX55 =
 {
+"struct_faust_1_1_u_i.html#ab7a56606a2a1fbfb7bec5ec57de50489":[12,0,15,4,1],
+"struct_faust_1_1_u_i.html#ac33f8629b4d5dfbdcc4e829c47693939":[12,0,15,4,5],
+"struct_faust_1_1_u_i.html#ad506b37df796526d1061c3e5970766c0":[12,0,15,4,7],
+"struct_faust_1_1_u_i.html#ad5d18c5d9101816842863b1de2b1437f":[12,0,15,4,6],
+"struct_faust_1_1_u_i.html#ae74896631b74936bc044fe9bc5381d36":[12,0,15,4,9],
+"struct_faust_1_1_u_i.html#af67384bb2a355fc3be5475128a48b3f9":[12,0,15,4,10],
+"struct_faust_1_1_update_u_i.html":[12,0,15,5],
+"struct_faust_1_1_update_u_i.html#a0c9a1f58eb1bfb25a7d345966b737d99":[12,0,15,5,1],
 "struct_faust_1_1_update_u_i.html#a120ad5a2ffa58de4deafe5351ab1f736":[12,0,15,5,15],
 "struct_faust_1_1_update_u_i.html#a1cb0cefccf15bb25f8da078251175fec":[12,0,15,5,11],
 "struct_faust_1_1_update_u_i.html#a33114b1d398c9f65a7952ff5b3cd8163":[12,0,15,5,7],
@@ -241,13 +249,5 @@ var NAVTREEINDEX55 =
 "struct_j_s_1_1_executor_1_1js__process.html#a481d06f6b0b9462bb4817f9d5af364f0":[12,0,24,0,2,6],
 "struct_j_s_1_1_executor_1_1js__process.html#a640bc919c89401bc0f028323d9305034":[12,0,24,0,2,1],
 "struct_j_s_1_1_executor_1_1js__process.html#a7578a5939272421fb06889d043fff9d3":[12,0,24,0,2,2],
-"struct_j_s_1_1_executor_1_1js__process.html#a858f2f65646df649e404e0f0863b6a9f":[12,0,24,0,2,0],
-"struct_j_s_1_1_executor_1_1js__process.html#ab12067305e7c7548465967a57c18cca9":[12,0,24,0,2,3],
-"struct_j_s_1_1_executor_1_1js__process.html#ace99a015bb99b84af0d5022e88fe6b98":[12,0,24,0,2,4],
-"struct_j_s_1_1_language_spec.html":[12,0,24,9],
-"struct_j_s_o_n_reader_1_1assigner.html":[12,0,148,0],
-"struct_j_s_o_n_reader_1_1assigner.html#a010bda03a031ec93e2920f304e73c21a":[12,0,148,0,4],
-"struct_j_s_o_n_reader_1_1assigner.html#a026a303a95c79840e28bc707875dcec1":[12,0,148,0,15],
-"struct_j_s_o_n_reader_1_1assigner.html#a112b1164dca8bc6aadd1b4ec06ce3fc5":[12,0,148,0,17],
-"struct_j_s_o_n_reader_1_1assigner.html#a1913c48d1a6a183b7027a6f014257d7e":[12,0,148,0,11]
+"struct_j_s_1_1_executor_1_1js__process.html#a858f2f65646df649e404e0f0863b6a9f":[12,0,24,0,2,0]
 };
