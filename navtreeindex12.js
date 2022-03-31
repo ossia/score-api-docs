@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"class_execution_1_1_merger_component.html#a9100782b57d36a87208eaa8172bac44f":[12,0,11,24,0],
 "class_execution_1_1_metro_component.html":[12,0,11,25],
 "class_execution_1_1_metro_component.html#a5ea71c2027863c7810c6d8c113be7530":[12,0,11,25,2],
 "class_execution_1_1_metro_component.html#a8c733d29313cd5196950f5c54d11af63":[12,0,11,25,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "class_explorer_1_1_address_settings_widget.html#acf13c0cd7d1ffbfb7e954fd30ccf837a":[12,0,12,15,12],
 "class_explorer_1_1_address_settings_widget.html#ad6ecd6a81e9ed2a9157d68cc99775c72":[12,0,12,15,1],
 "class_explorer_1_1_address_string_settings_widget.html":[12,0,12,16],
-"class_explorer_1_1_address_string_settings_widget.html#a153f868f40b37af9cae36b6759048afc":[12,0,12,16,2],
-"class_explorer_1_1_address_string_settings_widget.html#a28339ffd3df5425a5cc27c6e8a26fecc":[12,0,12,16,5]
+"class_explorer_1_1_address_string_settings_widget.html#a153f868f40b37af9cae36b6759048afc":[12,0,12,16,2]
 };

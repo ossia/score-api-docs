@@ -1,5 +1,6 @@
 var NAVTREEINDEX27 =
 {
+"class_protocols_1_1_serial_device.html#ad170920dc8c631b10d9a5c295ccc0b1b":[12,0,40,62,3],
 "class_protocols_1_1_serial_device.html#ad7de496e9880e48f412bf851bd38bfd9":[12,0,40,62,2],
 "class_protocols_1_1_serial_protocol_factory.html":[12,0,40,63],
 "class_protocols_1_1_serial_protocol_settings_widget.html":[12,0,40,64],
@@ -248,6 +249,5 @@ var NAVTREEINDEX27 =
 "class_scenario_1_1_base_scenario_container.html#a27d07f5621088bf3c484cf4374617117":[12,0,45,9,2],
 "class_scenario_1_1_base_scenario_container.html#a2bfc608d88e9fc579918cc76f88e22b8":[12,0,45,9,18],
 "class_scenario_1_1_base_scenario_container.html#a38316a99a3fa8705512017f0a3aab4b3":[12,0,45,9,6],
-"class_scenario_1_1_base_scenario_container.html#a3faf736e2116d3f8cff1e3273928586b":[12,0,45,9,25],
-"class_scenario_1_1_base_scenario_container.html#a415c833fc65262db33930ba2a9074f16":[12,0,45,9,33]
+"class_scenario_1_1_base_scenario_container.html#a3faf736e2116d3f8cff1e3273928586b":[12,0,45,9,25]
 };

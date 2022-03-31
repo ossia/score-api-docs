@@ -215,6 +215,7 @@ var searchData=
   ['curvetraits_3c_20float_20_3e_414',['CurveTraits&lt; float &gt;',['../struct_engine_1_1score__to__ossia_1_1_curve_traits_3_01float_01_4.html',1,'Engine::score_to_ossia']]],
   ['curvetraits_3c_20int_20_3e_415',['CurveTraits&lt; int &gt;',['../struct_engine_1_1score__to__ossia_1_1_curve_traits_3_01int_01_4.html',1,'Engine::score_to_ossia']]],
   ['customactioncondition_416',['CustomActionCondition',['../structscore_1_1_custom_action_condition.html',1,'score']]],
-  ['customuisetup_417',['CustomUISetup',['../struct_control_1_1_custom_u_i_setup.html',1,'Control']]],
-  ['cycledetector_418',['CycleDetector',['../struct_scenario_1_1_cycle_detector.html',1,'Scenario']]]
+  ['customitem_417',['CustomItem',['../classoscr_1_1_custom_item.html',1,'oscr']]],
+  ['customuisetup_418',['CustomUISetup',['../struct_control_1_1_custom_u_i_setup.html',1,'Control']]],
+  ['cycledetector_419',['CycleDetector',['../struct_scenario_1_1_cycle_detector.html',1,'Scenario']]]
 ];

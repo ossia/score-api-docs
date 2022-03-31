@@ -1,5 +1,15 @@
 var NAVTREEINDEX54 =
 {
+"struct_device_1_1_device_capas.html#a1555745c761eb83fd3cd8ad81875ceff":[12,0,9,4,11],
+"struct_device_1_1_device_capas.html#a167332699993ab146aeff2f5e01b064a":[12,0,9,4,9],
+"struct_device_1_1_device_capas.html#a4b116ab304b6d2173151ced60fd7dc88":[12,0,9,4,3],
+"struct_device_1_1_device_capas.html#a698891cc2710a29bfee4f1d7565c47cc":[12,0,9,4,7],
+"struct_device_1_1_device_capas.html#a710292898e5d995648d267f7a52aed08":[12,0,9,4,1],
+"struct_device_1_1_device_capas.html#a7ccc940f9c5f380e1b714b340b90a56b":[12,0,9,4,6],
+"struct_device_1_1_device_capas.html#a9f74797342058ac2e733ba2c66bc7312":[12,0,9,4,4],
+"struct_device_1_1_device_capas.html#aa98e9a83cbd265b4e5bec71c7fbf49ea":[12,0,9,4,0],
+"struct_device_1_1_device_capas.html#aba9b355994eaa9b8e6db11efac1a60dc":[12,0,9,4,5],
+"struct_device_1_1_device_capas.html#acf38dd0aee5d086ff89a822c8c5d8a28":[12,0,9,4,8],
 "struct_device_1_1_device_capas.html#acf997aca6ea39b2e3ec46a5dea5b3c32":[12,0,9,4,2],
 "struct_device_1_1_device_capas.html#af7176d2ffc6913791a02ff5a32190f4c":[12,0,9,4,10],
 "struct_device_1_1_device_settings.html":[12,0,9,12],
@@ -239,15 +249,5 @@ var NAVTREEINDEX54 =
 "struct_f_w___t.html#a0c4bda63e69d61b6f79ffc9768c4a91d":[12,0,116,0],
 "struct_factory_builder.html":[12,0,111],
 "struct_factory_builder_3_01score_1_1_g_u_i_application_context_00_01_scenario_1_1_scenario_temporal_layer_factory_01_4.html":[12,0,112],
-"struct_faust_1_1_language_spec.html":[12,0,15,2],
-"struct_faust_1_1_u_i.html":[12,0,15,4],
-"struct_faust_1_1_u_i.html#a1318a0d649e6677004b57bded89fa4c0":[12,0,15,4,14],
-"struct_faust_1_1_u_i.html#a1f3b161b727d3cc073da7902634d24b0":[12,0,15,4,13],
-"struct_faust_1_1_u_i.html#a2b8113563faa4f0704850085cf25ad0e":[12,0,15,4,2],
-"struct_faust_1_1_u_i.html#a2cc9d4f149ab68ff80bd77c92ac201fc":[12,0,15,4,8],
-"struct_faust_1_1_u_i.html#a5174db91581304782358db84ba716574":[12,0,15,4,3],
-"struct_faust_1_1_u_i.html#a51dbb56919e13dae4ad21358092cf88f":[12,0,15,4,11],
-"struct_faust_1_1_u_i.html#a7886bbaf97dddef72eaedcd1f3bc0f86":[12,0,15,4,0],
-"struct_faust_1_1_u_i.html#a8f457e5faf933dd8bc04baf25c1f1818":[12,0,15,4,12],
-"struct_faust_1_1_u_i.html#ab2b22ef424fcd20870200561efa1316c":[12,0,15,4,4]
+"struct_faust_1_1_language_spec.html":[12,0,15,2]
 };

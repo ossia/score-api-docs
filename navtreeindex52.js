@@ -1,5 +1,15 @@
 var NAVTREEINDEX52 =
 {
+"struct_boost_variant2_data_stream_serializer.html#aa261438bcab2a836ba71219d75617d03":[12,0,80,0],
+"struct_boost_variant2_data_stream_serializer.html#ae4e1017a92ef9690a7851ffc27cf828c":[12,0,80,1],
+"struct_boost_variant2_data_stream_serializer.html#af136c5961159060d702d9a38bb0cca08":[12,0,80,4],
+"struct_boost_variant2_j_s_o_n_deserializer.html":[12,0,81],
+"struct_boost_variant2_j_s_o_n_deserializer.html#a5cbdd00ea344991b2c79656b6add988c":[12,0,81,4],
+"struct_boost_variant2_j_s_o_n_deserializer.html#a6eec60ff63398e7bb486b3db43a0ea07":[12,0,81,0],
+"struct_boost_variant2_j_s_o_n_deserializer.html#ad1005a5cb57ea0b32a3fb89d04e32297":[12,0,81,1],
+"struct_boost_variant2_j_s_o_n_deserializer.html#ad34743e628d010284c342c22c98da2bc":[12,0,81,2],
+"struct_boost_variant2_j_s_o_n_deserializer.html#adccc0f2b08416b1e9d19e55540087e6f":[12,0,81,3],
+"struct_boost_variant2_j_s_o_n_serializer.html":[12,0,82],
 "struct_boost_variant2_j_s_o_n_serializer.html#a0a3af01bee0bb835a7731433b61fafc1":[12,0,82,3],
 "struct_boost_variant2_j_s_o_n_serializer.html#a491feef33ad649d773cd2228145ee398":[12,0,82,1],
 "struct_boost_variant2_j_s_o_n_serializer.html#a4d013af9d19a040bee555764aa2aa5c0":[12,0,82,0],
@@ -239,15 +249,5 @@ var NAVTREEINDEX52 =
 "struct_control_1_1_x_y_slider.html#a3d84bf42046490f9a3e66f2ad2677ef3":[12,0,5,42,4],
 "struct_control_1_1_x_y_slider.html#a53e063b55c3c4f66ef7013f5eed3ca1f":[12,0,5,42,0],
 "struct_control_1_1_x_y_slider.html#a57a337a4a468e7a8a5b3acce05f907a7":[12,0,5,42,9],
-"struct_control_1_1_x_y_slider.html#a5ed3ffb84f7d5fbca933d1304d995a27":[12,0,5,42,8],
-"struct_control_1_1_x_y_slider.html#a74c4c8f19e9d14a017d53709baec03bd":[12,0,5,42,5],
-"struct_control_1_1_x_y_slider.html#a92b957d40a0e9d6f74fe502d598306b0":[12,0,5,42,10],
-"struct_control_1_1_x_y_slider.html#a9935a102dba80e9bbb834c7947227f23":[12,0,5,42,2],
-"struct_control_1_1_x_y_slider.html#a9ca6175a57b20bfdf186064c5a404821":[12,0,5,42,1],
-"struct_control_1_1_x_y_slider.html#aac4703400822b3e8d17b1b50d9fb1ec4":[12,0,5,42,3],
-"struct_control_1_1_x_y_slider.html#ac64b0e4ac97b4dd1e47c7940bc0ecbb0":[12,0,5,42,6],
-"struct_control_1_1_x_y_slider.html#aca3c2ed1b51e880871cd4dcadfc071cb":[12,0,5,42,11],
-"struct_control_1_1inlet__visitor.html":[12,0,5,26],
-"struct_control_1_1inlet__visitor.html#a2ccf53b233dd0fc70d8f59240c7df8df":[12,0,5,26,7],
-"struct_control_1_1inlet__visitor.html#a48a398abc3fa7b8967bdc3fb4197db53":[12,0,5,26,5]
+"struct_control_1_1_x_y_slider.html#a5ed3ffb84f7d5fbca933d1304d995a27":[12,0,5,42,8]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX42 =
 {
+"classscore_1_1_command_stack.html#a95fd301f2b254a874323b211684f6281":[12,0,46,43,56],
+"classscore_1_1_command_stack.html#a98fd07ba06348fbef5d8ae045af2672e":[12,0,46,43,36],
+"classscore_1_1_command_stack.html#a99f584413a0d1ad62bfb644fc289c854":[12,0,46,43,53],
+"classscore_1_1_command_stack.html#aa6264bf1c14fcd9fcb52c4471d38fe48":[12,0,46,43,13],
+"classscore_1_1_command_stack.html#aa645e2776e8d795cf3a37e3468c182f0":[12,0,46,43,14],
+"classscore_1_1_command_stack.html#aab71abfc223787a585b570a7ecabc255":[12,0,46,43,5],
+"classscore_1_1_command_stack.html#ababfab6f54f868929e7c72ff3ae8c21a":[12,0,46,43,29],
+"classscore_1_1_command_stack.html#abe423a8e50bb494bab24955302f9d779":[12,0,46,43,23],
 "classscore_1_1_command_stack.html#abe423a8e50bb494bab24955302f9d779":[12,0,46,43,24],
 "classscore_1_1_command_stack.html#aca82bc449af903ef00024db0fc412c3c":[12,0,46,43,22],
 "classscore_1_1_command_stack.html#acd1bd407f63a31a546c030cbed9ad3c1":[12,0,46,43,54],
@@ -241,13 +249,5 @@ var NAVTREEINDEX42 =
 "classscore_1_1_entity_list.html#aff10874decc93129b02c5209ab7a2c0c":[12,0,46,92,7],
 "classscore_1_1_entity_map.html":[12,0,46,93],
 "classscore_1_1_entity_map.html#a1bdccc4be1f6b21aec5483cff5598ba8":[12,0,46,93,11],
-"classscore_1_1_entity_map.html#a1fe0f931c20fcd936489d5d60b53e478":[12,0,46,93,13],
-"classscore_1_1_entity_map.html#a33360edf33f9951dd302cc1ac98e1bfb":[12,0,46,93,24],
-"classscore_1_1_entity_map.html#a384f5e1317c16f0616ec6b5e46f1386e":[12,0,46,93,22],
-"classscore_1_1_entity_map.html#a40e82a799538fd0a416b8cfdc3af4805":[12,0,46,93,0],
-"classscore_1_1_entity_map.html#a41efcae08bb1093a92965a8f6917e9c9":[12,0,46,93,14],
-"classscore_1_1_entity_map.html#a531e8db4ac6a3e9fecd3df18805e35a6":[12,0,46,93,25],
-"classscore_1_1_entity_map.html#a565f5c7d1f693eeb21a07d4b29ab10bf":[12,0,46,93,23],
-"classscore_1_1_entity_map.html#a5d77dbfa699de3d510813a255a06b357":[12,0,46,93,2],
-"classscore_1_1_entity_map.html#a5e193c861f4f7aa48361c2688f63a9ba":[12,0,46,93,1]
+"classscore_1_1_entity_map.html#a1fe0f931c20fcd936489d5d60b53e478":[12,0,46,93,13]
 };

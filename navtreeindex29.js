@@ -1,5 +1,6 @@
 var NAVTREEINDEX29 =
 {
+"class_scenario_1_1_command_1_1_create_time_sync___event___state.html":[12,0,45,0,37],
 "class_scenario_1_1_command_1_1_create_time_sync___event___state.html#a93bc3dbdd04c43c1a68b9d027296a616":[12,0,45,0,37,1],
 "class_scenario_1_1_command_1_1_create_time_sync___event___state.html#ab12d85c33a040b399a71abae1761f60d":[12,0,45,0,37,0],
 "class_scenario_1_1_command_1_1_creation_meta_command.html":[12,0,45,0,38],
@@ -248,6 +249,5 @@ var NAVTREEINDEX29 =
 "class_scenario_1_1_command_1_1_serializable_move_event.html#a069cfbfa1d74e429bb3964a73fc6cedd":[12,0,45,0,89,1],
 "class_scenario_1_1_command_1_1_serializable_move_event.html#a2dcae9c126610bd2427fe2175611a894":[12,0,45,0,89,0],
 "class_scenario_1_1_command_1_1_serializable_move_event.html#a43d34e4bba2eecf0bc8cd35cb3458b13":[12,0,45,0,89,2],
-"class_scenario_1_1_command_1_1_set_auto_trigger.html":[12,0,45,0,90],
-"class_scenario_1_1_command_1_1_set_auto_trigger.html#a3445c3173d43f323b0de6b776dc66ca1":[12,0,45,0,90,1]
+"class_scenario_1_1_command_1_1_set_auto_trigger.html":[12,0,45,0,90]
 };

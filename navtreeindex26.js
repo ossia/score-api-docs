@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"class_process_1_1_script_dialog.html#aa9fb90f1300726d1694e99d773de3f24":[12,0,39,83,2],
 "class_process_1_1_script_dialog.html#af349e6231806aff8aa0fa0dd04dea363":[12,0,39,83,5],
 "class_process_1_1_set_control_outlet_value.html":[12,0,39,84],
 "class_process_1_1_set_control_outlet_value.html#a0f9dad46b4b513d3185c50c5cf1e1a43":[12,0,39,84,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "class_protocols_1_1_rate_widget.html#af0681baa178277786f6da74d680bced4":[12,0,40,61,2],
 "class_protocols_1_1_serial_device.html":[12,0,40,62],
 "class_protocols_1_1_serial_device.html#a90f0d3db61d7f68bf8008143409d1f08":[12,0,40,62,1],
-"class_protocols_1_1_serial_device.html#ac8ea6dce63d440140c31dd5bc029a041":[12,0,40,62,0],
-"class_protocols_1_1_serial_device.html#ad170920dc8c631b10d9a5c295ccc0b1b":[12,0,40,62,3]
+"class_protocols_1_1_serial_device.html#ac8ea6dce63d440140c31dd5bc029a041":[12,0,40,62,0]
 };

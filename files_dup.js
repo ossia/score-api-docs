@@ -851,6 +851,7 @@ var files_dup =
     [ "OSSIASerializationImpl.hpp", "_o_s_s_i_a_serialization_impl_8hpp_source.html", null ],
     [ "OutputNode.hpp", "_output_node_8hpp_source.html", null ],
     [ "OwningVector.hpp", "_owning_vector_8hpp_source.html", null ],
+    [ "Painter.hpp", "_painter_8hpp_source.html", null ],
     [ "PainterPath.hpp", "_painter_path_8hpp_source.html", null ],
     [ "PanelDelegate.hpp", "_panel_delegate_8hpp_source.html", null ],
     [ "PanelDelegateFactory.hpp", "_panel_delegate_factory_8hpp_source.html", null ],
