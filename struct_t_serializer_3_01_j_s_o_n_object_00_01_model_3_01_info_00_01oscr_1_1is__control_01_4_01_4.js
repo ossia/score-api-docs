@@ -1,4 +1,0 @@
-var struct_t_serializer_3_01_j_s_o_n_object_00_01_model_3_01_info_00_01oscr_1_1is__control_01_4_01_4 =
-[
-    [ "model_type", "struct_t_serializer_3_01_j_s_o_n_object_00_01_model_3_01_info_00_01oscr_1_1is__control_01_4_01_4.html#a2c3901527ec7f83ae8f80c2bcded9745", null ]
-];

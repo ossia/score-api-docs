@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['oscr_5669',['oscr',['../namespaceoscr.html',1,'']]]
+  ['pluginloader_5594',['PluginLoader',['../namespace_plugin_loader.html',1,'']]],
+  ['process_5595',['Process',['../namespace_process.html',1,'']]]
 ];

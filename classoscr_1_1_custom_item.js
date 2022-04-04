@@ -1,6 +1,8 @@
 var classoscr_1_1_custom_item =
 [
+    [ "item_type", "classoscr_1_1_custom_item.html#a9c30511b3c7036664a0220dfe8d3631b", null ],
     [ "CustomItem", "classoscr_1_1_custom_item.html#ae1d9731103f314e6cee098a676bf9111", null ],
+    [ "CustomItem", "classoscr_1_1_custom_item.html#a133b1631c4dc7c21ca6154952ea2520e", null ],
     [ "boundingRect", "classoscr_1_1_custom_item.html#a27d49d3a55c7c85884958883045ab92f", null ],
     [ "mouseMoveEvent", "classoscr_1_1_custom_item.html#ab4da94367b803fac167a5fb1f46fb0e1", null ],
     [ "mousePressEvent", "classoscr_1_1_custom_item.html#ac586f24f930a019b401d95e1686ba46e", null ],

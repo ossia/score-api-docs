@@ -1,5 +1,6 @@
 var NAVTREEINDEX23 =
 {
+"class_patternist_1_1pattern__node.html#a56a0a511de64e0a0df9857568679699a":[12,0,36,7,2],
 "class_patternist_1_1pattern__node.html#a8d0f22a8ea0f553e8cd3533338e0f54e":[12,0,36,7,7],
 "class_patternist_1_1pattern__node.html#a969830b30c429a69fd7b75aef1ca501e":[12,0,36,7,4],
 "class_patternist_1_1pattern__node.html#ad3b6820b5357f5a9a4fd597913041823":[12,0,36,7,0],
@@ -79,13 +80,13 @@ var NAVTREEINDEX23 =
 "class_pd_1_1_set_midi_out.html#a0094c9f4ff007a0d9cafe451e10b5bbc":[12,0,37,16,0],
 "class_pd_1_1pd__process.html":[12,0,37,9],
 "class_pd_1_1pd__process.html#a5610828e5bbabe85b52f2fe2cfad9cfd":[12,0,37,9,0],
-"class_pd_dataflow_test.html":[12,0,207],
-"class_pd_dataflow_test.html#af1f825d9d7bf0fc973ba031f35e67501":[12,0,207,0],
-"class_phantom_style_plugin.html":[12,0,208],
-"class_phantom_style_plugin.html#a72424cd01eae7889ed524c8edd0e4bfb":[12,0,208,1],
-"class_phantom_style_plugin.html#ab2123f8bbd420715a2155d14b73ec5c1":[12,0,208,2],
-"class_phantom_style_plugin.html#af756b7da50b496674d33deed111a69c7":[12,0,208,0],
-"class_pretty_name__k.html":[12,0,209],
+"class_pd_dataflow_test.html":[12,0,208],
+"class_pd_dataflow_test.html#af1f825d9d7bf0fc973ba031f35e67501":[12,0,208,0],
+"class_phantom_style_plugin.html":[12,0,209],
+"class_phantom_style_plugin.html#a72424cd01eae7889ed524c8edd0e4bfb":[12,0,209,1],
+"class_phantom_style_plugin.html#ab2123f8bbd420715a2155d14b73ec5c1":[12,0,209,2],
+"class_phantom_style_plugin.html#af756b7da50b496674d33deed111a69c7":[12,0,209,0],
+"class_pretty_name__k.html":[12,0,210],
 "class_process_1_1_application_plugin.html":[12,0,39,0],
 "class_process_1_1_application_plugin.html#a13b59213b336824cd254bc609d026685":[12,0,39,0,1],
 "class_process_1_1_application_plugin.html#a17b0d1461259d2ff8dbff19a3bb00dc3":[12,0,39,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX23 =
 "class_process_1_1_default_layer_presenter.html#aefb143f9eda31394535e0a0024bf49ef":[12,0,39,21,3],
 "class_process_1_1_default_layer_presenter.html#af808f5b907ba9cda2775d2fd2e1021fd":[12,0,39,21,6],
 "class_process_1_1_default_layer_view.html":[12,0,39,22],
-"class_process_1_1_default_layer_view.html#a2f8b7682dcb4d0b5f3bc38092eaad3cc":[12,0,39,22,1],
-"class_process_1_1_default_layer_view.html#a9c40bd6a8ad0cbc459d9c8a4317482e5":[12,0,39,22,0]
+"class_process_1_1_default_layer_view.html#a2f8b7682dcb4d0b5f3bc38092eaad3cc":[12,0,39,22,1]
 };

@@ -8,7 +8,6 @@ var namespaces_dup =
     [ "Gfx", "namespace_gfx.html", null ],
     [ "Inspector", "namespace_inspector.html", null ],
     [ "LocalTree", "namespace_local_tree.html", null ],
-    [ "oscr", "namespaceoscr.html", null ],
     [ "PluginLoader", "namespace_plugin_loader.html", null ],
     [ "Process", "namespace_process.html", null ],
     [ "Scenario", "namespace_scenario.html", null ],

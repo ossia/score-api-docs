@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"class_dataflow_1_1_audio_device.html#ac6728d3d590cf35fb357be8474541561":[12,0,8,1,9],
 "class_dataflow_1_1_audio_device.html#aef615532e7051145bb2ee9b339992e36":[12,0,8,1,8],
 "class_dataflow_1_1_audio_device.html#afdbe18a0b9ce43465d9fa264669b9aff":[12,0,8,1,1],
 "class_dataflow_1_1_audio_outlet_item.html":[12,0,8,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "class_device_1_1_device_model_provider_list.html#adda113fe0f9edabee1b9943525afb119":[12,0,9,11,1],
 "class_device_1_1_node_based_item_model.html":[12,0,9,15],
 "class_device_1_1_node_based_item_model.html#a31f226fe430670ecc9a036ca130d2889":[12,0,9,15,3],
-"class_device_1_1_node_based_item_model.html#aad05bb46c7360d6351953501d7156353":[12,0,9,15,2],
-"class_device_1_1_node_based_item_model.html#aba717820747c4d174c131c98924c9c60":[12,0,9,15,0]
+"class_device_1_1_node_based_item_model.html#aad05bb46c7360d6351953501d7156353":[12,0,9,15,2]
 };
