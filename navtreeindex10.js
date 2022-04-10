@@ -1,5 +1,10 @@
 var NAVTREEINDEX10 =
 {
+"class_dataflow_1_1_audio_device.html#a36e2463925ebd2387a2f34ea979bd52c":[12,0,8,1,7],
+"class_dataflow_1_1_audio_device.html#a399c6a431c0c6a1422b53770adbb2289":[12,0,8,1,5],
+"class_dataflow_1_1_audio_device.html#a8feeb8352177206c7100324cc34bc3ef":[12,0,8,1,2],
+"class_dataflow_1_1_audio_device.html#a9689328b72ad2e370fd1882ccd358bdb":[12,0,8,1,4],
+"class_dataflow_1_1_audio_device.html#aace9fa3b0d6c8b9101416bbe2b3068cd":[12,0,8,1,3],
 "class_dataflow_1_1_audio_device.html#ac6728d3d590cf35fb357be8474541561":[12,0,8,1,9],
 "class_dataflow_1_1_audio_device.html#aef615532e7051145bb2ee9b339992e36":[12,0,8,1,8],
 "class_dataflow_1_1_audio_device.html#afdbe18a0b9ce43465d9fa264669b9aff":[12,0,8,1,1],
@@ -129,7 +134,7 @@ var NAVTREEINDEX10 =
 "class_dataflow_1_1_update_cable.html":[12,0,8,37],
 "class_dataflow_1_1_update_cable.html#ab3bf9f35aa646f5720ec90dd56123c90":[12,0,8,37,0],
 "class_dataflow_1_1_update_cable.html#affef06d97c1da7378c95c404347b564d":[12,0,8,37,1],
-"class_description__k.html":[12,0,100],
+"class_description__k.html":[12,0,101],
 "class_device_1_1_address_accessor_edit_widget.html":[12,0,9,0],
 "class_device_1_1_address_accessor_edit_widget.html#a62ec079d54349865097ae754899f3edb":[12,0,9,0,5],
 "class_device_1_1_address_accessor_edit_widget.html#a678314b7ed17221698160a6a20ff9672":[12,0,9,0,7],
@@ -244,10 +249,5 @@ var NAVTREEINDEX10 =
 "class_device_1_1_device_model_provider.html":[12,0,9,10],
 "class_device_1_1_device_model_provider.html#a42395fb8edf7c09ed222310ee6c3490b":[12,0,9,10,0],
 "class_device_1_1_device_model_provider.html#afc49f6e27b36fe090561b6659ebe8ac5":[12,0,9,10,1],
-"class_device_1_1_device_model_provider_list.html":[12,0,9,11],
-"class_device_1_1_device_model_provider_list.html#ab3036836bf6b15879700fea4aee302de":[12,0,9,11,0],
-"class_device_1_1_device_model_provider_list.html#adda113fe0f9edabee1b9943525afb119":[12,0,9,11,1],
-"class_device_1_1_node_based_item_model.html":[12,0,9,15],
-"class_device_1_1_node_based_item_model.html#a31f226fe430670ecc9a036ca130d2889":[12,0,9,15,3],
-"class_device_1_1_node_based_item_model.html#aad05bb46c7360d6351953501d7156353":[12,0,9,15,2]
+"class_device_1_1_device_model_provider_list.html":[12,0,9,11]
 };

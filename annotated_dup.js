@@ -259,6 +259,15 @@ var annotated_dup =
       [ "Wrap", "struct_faust_d_s_p_1_1_wrap.html", "struct_faust_d_s_p_1_1_wrap" ]
     ] ],
     [ "Gfx", "namespace_gfx.html", "namespace_gfx" ],
+    [ "gpp", null, [
+      [ "qrhi", null, [
+        [ "DefaultPipeline", "structgpp_1_1qrhi_1_1_default_pipeline.html", "structgpp_1_1qrhi_1_1_default_pipeline" ],
+        [ "generate_shaders", "structgpp_1_1qrhi_1_1generate__shaders.html", "structgpp_1_1qrhi_1_1generate__shaders" ],
+        [ "handle_dispatch", "structgpp_1_1qrhi_1_1handle__dispatch.html", "structgpp_1_1qrhi_1_1handle__dispatch" ],
+        [ "handle_release", "structgpp_1_1qrhi_1_1handle__release.html", "structgpp_1_1qrhi_1_1handle__release" ],
+        [ "handle_update", "structgpp_1_1qrhi_1_1handle__update.html", "structgpp_1_1qrhi_1_1handle__update" ]
+      ] ]
+    ] ],
     [ "Gradient", null, [
       [ "RecreateOnPlay", null, [
         [ "Component", "class_gradient_1_1_recreate_on_play_1_1_component.html", "class_gradient_1_1_recreate_on_play_1_1_component" ]
@@ -614,6 +623,8 @@ var annotated_dup =
     [ "oscr", null, [
       [ "ApplyEngineControlChangeToUI", "structoscr_1_1_apply_engine_control_change_to_u_i.html", "structoscr_1_1_apply_engine_control_change_to_u_i" ],
       [ "control_updater", "structoscr_1_1control__updater.html", "structoscr_1_1control__updater" ],
+      [ "CustomGpuNodeBase", "structoscr_1_1_custom_gpu_node_base.html", "structoscr_1_1_custom_gpu_node_base" ],
+      [ "CustomGpuOutputNodeBase", "structoscr_1_1_custom_gpu_output_node_base.html", "structoscr_1_1_custom_gpu_output_node_base" ],
       [ "CustomItem", "classoscr_1_1_custom_item.html", "classoscr_1_1_custom_item" ],
       [ "Deserializer", "structoscr_1_1_deserializer.html", "structoscr_1_1_deserializer" ],
       [ "Executor", "classoscr_1_1_executor.html", "classoscr_1_1_executor" ],
