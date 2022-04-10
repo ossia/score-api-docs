@@ -1,5 +1,6 @@
 var NAVTREEINDEX55 =
 {
+"struct_faust_1_1_update_u_i.html#a99f8947df88bce9a34fe93bdd7deaeff":[12,0,15,5,12],
 "struct_faust_1_1_update_u_i.html#aa9d7c83076b5b14776466ac6adfc93aa":[12,0,15,5,16],
 "struct_faust_1_1_update_u_i.html#aaec93ac2b5d65a682203b91fda2f5ffd":[12,0,15,5,6],
 "struct_faust_1_1_update_u_i.html#ab902bb6fecdf139985bc4b8e2b48dc05":[12,0,15,5,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX55 =
 "struct_j_s_o_n_reader_1_1assigner.html#a4a690a0d87f11702ae5c9d3d36fc1a86":[12,0,149,0,6],
 "struct_j_s_o_n_reader_1_1assigner.html#a5832487b97f27d2faefc94fbe995018b":[12,0,149,0,20],
 "struct_j_s_o_n_reader_1_1assigner.html#a5b2ca650877349547b57f34f7468394a":[12,0,149,0,16],
-"struct_j_s_o_n_reader_1_1assigner.html#a61217a653a75393d2bb2ce0fe835acdd":[12,0,149,0,3],
-"struct_j_s_o_n_reader_1_1assigner.html#a6cd5b3f7090c30ad14c3c1fcb028a757":[12,0,149,0,22]
+"struct_j_s_o_n_reader_1_1assigner.html#a61217a653a75393d2bb2ce0fe835acdd":[12,0,149,0,3]
 };

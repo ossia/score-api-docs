@@ -1,6 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"_swap_slots_8hpp_source.html":[13,0,1273],
 "_sync_8hpp_source.html":[13,0,1274],
 "_syphon_helpers_8hpp_source.html":[13,0,1275],
 "_syphon_input_8hpp_source.html":[13,0,1276],
@@ -249,5 +248,6 @@ var NAVTREEINDEX5 =
 "class_audio_inlet.html#a633d76a24e376ce3cc9300a2c0af27ab":[12,0,73,1],
 "class_audio_inlet.html#aa83567e650f85670733f760a259066d9":[12,0,73,4],
 "class_audio_inlet.html#abb6ad0c5606bc623364353357a01895d":[12,0,73,5],
-"class_audio_inlet.html#aec43a6bc9b152c36269e8aab4f505b88":[12,0,73,0]
+"class_audio_inlet.html#aec43a6bc9b152c36269e8aab4f505b88":[12,0,73,0],
+"class_audio_inlet.html#aef43a68067ec032a0eeaee907bada96b":[12,0,73,6]
 };

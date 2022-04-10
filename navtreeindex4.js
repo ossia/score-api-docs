@@ -1,6 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"_q_graphics_log_knob_8hpp_source.html":[13,0,987],
 "_q_graphics_log_slider_8hpp_source.html":[13,0,988],
 "_q_graphics_multi_slider_8hpp_source.html":[13,0,989],
 "_q_graphics_note_chooser_8hpp_source.html":[13,0,990],
@@ -249,5 +248,6 @@ var NAVTREEINDEX4 =
 "_style_sheets_8hpp_source.html":[13,0,1269],
 "_subtype_variant_8hpp_source.html":[13,0,1270],
 "_suil_8hpp_source.html":[13,0,1271],
-"_summary_inspector_widget_8hpp_source.html":[13,0,1272]
+"_summary_inspector_widget_8hpp_source.html":[13,0,1272],
+"_swap_slots_8hpp_source.html":[13,0,1273]
 };

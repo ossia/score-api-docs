@@ -1,6 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"class_device_1_1_device_model_provider_list.html#ab3036836bf6b15879700fea4aee302de":[12,0,9,11,0],
 "class_device_1_1_device_model_provider_list.html#adda113fe0f9edabee1b9943525afb119":[12,0,9,11,1],
 "class_device_1_1_node_based_item_model.html":[12,0,9,15],
 "class_device_1_1_node_based_item_model.html#a31f226fe430670ecc9a036ca130d2889":[12,0,9,15,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX11 =
 "class_execution_1_1_jit_effect_component.html#aa1d8659c065c0143fdfc409de2ad4a38":[12,0,11,23,1],
 "class_execution_1_1_manual_clock_1_1_clock.html":[12,0,11,0,0],
 "class_execution_1_1_manual_clock_1_1_clock.html#a9964eb2222d879d6e247987e979acbdb":[12,0,11,0,0,1],
-"class_execution_1_1_manual_clock_1_1_clock.html#af910d4b7a36410020a518b0f01ca50b9":[12,0,11,0,0,0]
+"class_execution_1_1_manual_clock_1_1_clock.html#af910d4b7a36410020a518b0f01ca50b9":[12,0,11,0,0,0],
+"class_execution_1_1_manual_clock_1_1_time_widget.html":[12,0,11,0,1]
 };

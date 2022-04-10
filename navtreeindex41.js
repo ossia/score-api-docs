@@ -1,6 +1,5 @@
 var NAVTREEINDEX41 =
 {
-"classoscr_1_1_custom_item.html#a133b1631c4dc7c21ca6154952ea2520e":[12,0,35,4,2],
 "classoscr_1_1_custom_item.html#a160937fef15de81dd0ef19c6ebdd1767":[12,0,35,4,6],
 "classoscr_1_1_custom_item.html#a27d49d3a55c7c85884958883045ab92f":[12,0,35,4,3],
 "classoscr_1_1_custom_item.html#a9c30511b3c7036664a0220dfe8d3631b":[12,0,35,4,0],
@@ -65,11 +64,11 @@ var NAVTREEINDEX41 =
 "classscore_1_1_action_manager.html":[12,0,47,12],
 "classscore_1_1_action_manager.html#a4fc6032382d50fe4217f6ad4b7503377":[12,0,47,12,15],
 "classscore_1_1_action_manager.html#a552f6e078a05b767fddf7801c3e360f9":[12,0,47,12,16],
-"classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,47,12,7],
 "classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,47,12,4],
 "classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,47,12,5],
-"classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,47,12,6],
+"classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,47,12,7],
 "classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,47,12,8],
+"classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,47,12,6],
 "classscore_1_1_action_manager.html#a61deeb8b2ebd9442678d3573e00a2bf6":[12,0,47,12,20],
 "classscore_1_1_action_manager.html#a63a3b17b4bd8968eb3bec2c6712ad90b":[12,0,47,12,10],
 "classscore_1_1_action_manager.html#a6e37deb4b2f791fd5f2347e081a01a4d":[12,0,47,12,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX41 =
 "classscore_1_1_command_stack.html#ae66880148e02188d5d8fe437218427c3":[12,0,47,43,58],
 "classscore_1_1_command_stack.html#ae674d24e7ab7e814ed7d31fe16b2fa84":[12,0,47,43,28],
 "classscore_1_1_command_stack.html#ae6f98e13ff5f2a79d7018c3e926ac84a":[12,0,47,43,47],
-"classscore_1_1_command_stack.html#ae8f126b7cbcfe8b7bd3fcad4e4ff6fa5":[12,0,47,43,15]
+"classscore_1_1_command_stack.html#ae8f126b7cbcfe8b7bd3fcad4e4ff6fa5":[12,0,47,43,15],
+"classscore_1_1_command_stack.html#aea50f1de30a11a6241ffa4f2c8b64f84":[12,0,47,43,52]
 };
