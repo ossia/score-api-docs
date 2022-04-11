@@ -259,15 +259,6 @@ var annotated_dup =
       [ "Wrap", "struct_faust_d_s_p_1_1_wrap.html", "struct_faust_d_s_p_1_1_wrap" ]
     ] ],
     [ "Gfx", "namespace_gfx.html", "namespace_gfx" ],
-    [ "gpp", null, [
-      [ "qrhi", null, [
-        [ "DefaultPipeline", "structgpp_1_1qrhi_1_1_default_pipeline.html", "structgpp_1_1qrhi_1_1_default_pipeline" ],
-        [ "generate_shaders", "structgpp_1_1qrhi_1_1generate__shaders.html", "structgpp_1_1qrhi_1_1generate__shaders" ],
-        [ "handle_dispatch", "structgpp_1_1qrhi_1_1handle__dispatch.html", "structgpp_1_1qrhi_1_1handle__dispatch" ],
-        [ "handle_release", "structgpp_1_1qrhi_1_1handle__release.html", "structgpp_1_1qrhi_1_1handle__release" ],
-        [ "handle_update", "structgpp_1_1qrhi_1_1handle__update.html", "structgpp_1_1qrhi_1_1handle__update" ]
-      ] ]
-    ] ],
     [ "Gradient", null, [
       [ "RecreateOnPlay", null, [
         [ "Component", "class_gradient_1_1_recreate_on_play_1_1_component.html", "class_gradient_1_1_recreate_on_play_1_1_component" ]

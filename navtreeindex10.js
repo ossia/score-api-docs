@@ -1,7 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"class_dataflow_1_1_audio_device.html#a399c6a431c0c6a1422b53770adbb2289":[12,0,8,1,5],
-"class_dataflow_1_1_audio_device.html#a8feeb8352177206c7100324cc34bc3ef":[12,0,8,1,2],
 "class_dataflow_1_1_audio_device.html#a9689328b72ad2e370fd1882ccd358bdb":[12,0,8,1,4],
 "class_dataflow_1_1_audio_device.html#aace9fa3b0d6c8b9101416bbe2b3068cd":[12,0,8,1,3],
 "class_dataflow_1_1_audio_device.html#ac6728d3d590cf35fb357be8474541561":[12,0,8,1,9],
@@ -133,7 +131,7 @@ var NAVTREEINDEX10 =
 "class_dataflow_1_1_update_cable.html":[12,0,8,37],
 "class_dataflow_1_1_update_cable.html#ab3bf9f35aa646f5720ec90dd56123c90":[12,0,8,37,0],
 "class_dataflow_1_1_update_cable.html#affef06d97c1da7378c95c404347b564d":[12,0,8,37,1],
-"class_description__k.html":[12,0,101],
+"class_description__k.html":[12,0,100],
 "class_device_1_1_address_accessor_edit_widget.html":[12,0,9,0],
 "class_device_1_1_address_accessor_edit_widget.html#a62ec079d54349865097ae754899f3edb":[12,0,9,0,5],
 "class_device_1_1_address_accessor_edit_widget.html#a678314b7ed17221698160a6a20ff9672":[12,0,9,0,7],
@@ -249,5 +247,7 @@ var NAVTREEINDEX10 =
 "class_device_1_1_device_model_provider.html#a42395fb8edf7c09ed222310ee6c3490b":[12,0,9,10,0],
 "class_device_1_1_device_model_provider.html#afc49f6e27b36fe090561b6659ebe8ac5":[12,0,9,10,1],
 "class_device_1_1_device_model_provider_list.html":[12,0,9,11],
-"class_device_1_1_device_model_provider_list.html#ab3036836bf6b15879700fea4aee302de":[12,0,9,11,0]
+"class_device_1_1_device_model_provider_list.html#ab3036836bf6b15879700fea4aee302de":[12,0,9,11,0],
+"class_device_1_1_device_model_provider_list.html#adda113fe0f9edabee1b9943525afb119":[12,0,9,11,1],
+"class_device_1_1_node_based_item_model.html":[12,0,9,15]
 };

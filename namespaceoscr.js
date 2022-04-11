@@ -2,8 +2,6 @@ var namespaceoscr =
 [
     [ "ApplyEngineControlChangeToUI", "structoscr_1_1_apply_engine_control_change_to_u_i.html", "structoscr_1_1_apply_engine_control_change_to_u_i" ],
     [ "control_updater", "structoscr_1_1control__updater.html", "structoscr_1_1control__updater" ],
-    [ "CustomGpuNodeBase", "structoscr_1_1_custom_gpu_node_base.html", "structoscr_1_1_custom_gpu_node_base" ],
-    [ "CustomGpuOutputNodeBase", "structoscr_1_1_custom_gpu_output_node_base.html", "structoscr_1_1_custom_gpu_output_node_base" ],
     [ "CustomItem", "classoscr_1_1_custom_item.html", "classoscr_1_1_custom_item" ],
     [ "Deserializer", "structoscr_1_1_deserializer.html", "structoscr_1_1_deserializer" ],
     [ "Executor", "classoscr_1_1_executor.html", "classoscr_1_1_executor" ],
