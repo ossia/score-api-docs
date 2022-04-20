@@ -1,5 +1,14 @@
 var NAVTREEINDEX54 =
 {
+"struct_device_1_1_full_address_accessor_settings.html#a1e614a6373f8a3dd9a3229fdf3b70e62":[12,0,9,13,5],
+"struct_device_1_1_full_address_accessor_settings.html#a265b18ba70ac6529d8f0ff79a4d15287":[12,0,9,13,13],
+"struct_device_1_1_full_address_accessor_settings.html#a2e030b3545dc59da4fd7725816d0a623":[12,0,9,13,2],
+"struct_device_1_1_full_address_accessor_settings.html#a4465e5c35d5fe43112f64a2fd9e915f0":[12,0,9,13,7],
+"struct_device_1_1_full_address_accessor_settings.html#a49dc79f93e2555c28d84ac40e8358610":[12,0,9,13,6],
+"struct_device_1_1_full_address_accessor_settings.html#a4fbd6c99bd1bf5cc7fdc21ddd59fffbc":[12,0,9,13,11],
+"struct_device_1_1_full_address_accessor_settings.html#a5fd6e18ef617c537ae2df4d1d04522a8":[12,0,9,13,1],
+"struct_device_1_1_full_address_accessor_settings.html#a7161829c7c2816a959168230ac87a184":[12,0,9,13,0],
+"struct_device_1_1_full_address_accessor_settings.html#a75376c37748f9e658caa55311b4eef1f":[12,0,9,13,14],
 "struct_device_1_1_full_address_accessor_settings.html#a871aaa96f7b51e799252a384fcbdd60c":[12,0,9,13,3],
 "struct_device_1_1_full_address_accessor_settings.html#a8bcce80621991615738c5185f46dff54":[12,0,9,13,16],
 "struct_device_1_1_full_address_accessor_settings.html#aba2e5f9473f627e0e0fd4c7817e4ee65":[12,0,9,13,4],
@@ -240,14 +249,5 @@ var NAVTREEINDEX54 =
 "struct_faust_1_1_u_i.html#af67384bb2a355fc3be5475128a48b3f9":[12,0,15,4,10],
 "struct_faust_1_1_update_u_i.html":[12,0,15,5],
 "struct_faust_1_1_update_u_i.html#a0c9a1f58eb1bfb25a7d345966b737d99":[12,0,15,5,1],
-"struct_faust_1_1_update_u_i.html#a120ad5a2ffa58de4deafe5351ab1f736":[12,0,15,5,15],
-"struct_faust_1_1_update_u_i.html#a1cb0cefccf15bb25f8da078251175fec":[12,0,15,5,11],
-"struct_faust_1_1_update_u_i.html#a33114b1d398c9f65a7952ff5b3cd8163":[12,0,15,5,7],
-"struct_faust_1_1_update_u_i.html#a34cc2541c329ec6d3edd55e25e487a83":[12,0,15,5,0],
-"struct_faust_1_1_update_u_i.html#a391d4fd5e34fe12fd86aade18623a795":[12,0,15,5,8],
-"struct_faust_1_1_update_u_i.html#a407fd5c3ed21d4c110b271358805fee1":[12,0,15,5,3],
-"struct_faust_1_1_update_u_i.html#a71d4275a33e541f1a90941f4dbb146b6":[12,0,15,5,9],
-"struct_faust_1_1_update_u_i.html#a74b9146cd8f91a4a634dc7c8c09f941f":[12,0,15,5,5],
-"struct_faust_1_1_update_u_i.html#a99f8947df88bce9a34fe93bdd7deaeff":[12,0,15,5,12],
-"struct_faust_1_1_update_u_i.html#aa9d7c83076b5b14776466ac6adfc93aa":[12,0,15,5,16]
+"struct_faust_1_1_update_u_i.html#a120ad5a2ffa58de4deafe5351ab1f736":[12,0,15,5,15]
 };

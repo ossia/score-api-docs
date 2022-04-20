@@ -97,6 +97,7 @@ var annotated_dup =
       [ "setup_Impl0", "struct_control_1_1setup___impl0.html", "struct_control_1_1setup___impl0" ],
       [ "setup_Impl1", "struct_control_1_1setup___impl1.html", "struct_control_1_1setup___impl1" ],
       [ "setup_Impl1_Out", "struct_control_1_1setup___impl1___out.html", "struct_control_1_1setup___impl1___out" ],
+      [ "Soundfile", "struct_control_1_1_soundfile.html", "struct_control_1_1_soundfile" ],
       [ "Toggle", "struct_control_1_1_toggle.html", "struct_control_1_1_toggle" ],
       [ "UnvalidatedEnum", "struct_control_1_1_unvalidated_enum.html", "struct_control_1_1_unvalidated_enum" ],
       [ "XYSlider", "struct_control_1_1_x_y_slider.html", "struct_control_1_1_x_y_slider" ]
