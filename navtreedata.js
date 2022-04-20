@@ -113,7 +113,7 @@ var NAVTREEINDEX =
 "_event_presenter_8hpp_source.html",
 "_mapping_model_8hpp_source.html",
 "_q_graphics_note_chooser_8hpp_source.html",
-"_syphon_input_8hpp_source.html",
+"_syphon_helpers_8hpp_source.html",
 "class_audio_outlet.html#a4bf1a71573adb2a314f1a4134b44597e",
 "class_curve_1_1_create_point_command_object.html#ad75abf1919d89bf3070675e7baba85e2",
 "class_curve_1_1_segment_model.html#a4799c85b6e201c7d921f733e56858a8c",
