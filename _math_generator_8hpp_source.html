@@ -406,7 +406,7 @@ $(document).ready(function(){initNavTree('_math_generator_8hpp_source.html','');
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; chans; j++)</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      {</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <span class="keyword">auto</span>&amp; out = output.channel(j);</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        out.resize(st.bufferSize());</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        out.resize(st.bufferSize(), boost::container::default_init);</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      }</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160; </div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;      <span class="keyword">self</span>.p1 = a;</div>

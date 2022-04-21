@@ -616,7 +616,7 @@ $(document).ready(function(){initNavTree('_math_mapping_8hpp_source.html',''); i
 <div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; chans; j++)</div>
 <div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;      {</div>
 <div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;        <span class="keyword">auto</span>&amp; out = output.channel(j);</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        out.resize(st.bufferSize());</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        out.resize(st.bufferSize(), boost::container::default_init);</div>
 <div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;      }</div>
 <div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160; </div>
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;      <span class="keyword">self</span>.p1 = a;</div>

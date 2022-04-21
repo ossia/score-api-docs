@@ -195,7 +195,7 @@ $(document).ready(function(){initNavTree('score-plugin-vst_2_vst_2_node_8hpp_sou
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">auto</span>&amp; p = *m_outlets[0]-&gt;template target&lt;ossia::audio_port&gt;();</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    p.set_channels(2);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; chan : p)</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      chan.resize(bs);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      chan.resize(bs, boost::container::default_init);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> p.get();</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  }</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
