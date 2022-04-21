@@ -174,13 +174,13 @@ var NAVTREEINDEX =
 "struct_scenario_1_1_categorized_addresses.html#a52ea8cf59307696ce15409898f730e1e",
 "struct_scenario_1_1_slot_id.html#a020477d28b07726ab6d3f85f17a8bb6f",
 "struct_state_1_1_unit.html#a1d619786a4845e7d91be12ccf02ee7f0",
-"struct_ui_1_1_display_1_1_node_1_1_layer.html",
-"structoscr_1_1_q_painter_adapter.html#a6a78527ce8bc5057200c99c209f624a6",
-"structscore_1_1_command_data.html",
-"structscore_1_1_q_graphics_slider_base.html#aabb2cbb0002f1b024d463350c3e24076",
-"structscore_1_1_value_assigner_3_01ossia_1_1value_01_4.html#a73c90613f2026a95f69e155316f0a17a",
-"structscore_1_1gfx_1_1_screen_node.html#ae667b2474fd6abf834b472716226c2f5",
-"structstd_1_1hash_3_01_q_string_01_4.html#a141b209db1df0a11c4cd1eaca52c304d"
+"struct_time_val.html#aff43e925cc9376eabb7bd38303136cad",
+"structoscr_1_1_q_painter_adapter.html#a410f732b01ffb8fb33629ebe7010a087",
+"structscore_1_1_combo_slider.html#aa3d2ab5958db2977e4d1c9a271086579",
+"structscore_1_1_q_graphics_slider_base.html#a541d352f2d205f9b53231af2ddca6839",
+"structscore_1_1_value_assigner_3_01ossia_1_1value_01_4.html",
+"structscore_1_1gfx_1_1_screen_node.html#ad332ca2296069f67278e71743c10746f",
+"structstd_1_1hash_3_01_q_byte_array_01_4.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
