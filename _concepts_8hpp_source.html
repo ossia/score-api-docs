@@ -270,7 +270,7 @@ $(document).ready(function(){initNavTree('_concepts_8hpp_source.html',''); initR
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordflow">if</span> constexpr(std::is_enum_v&lt;value_type&gt;) {</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;      <span class="comment">// List of string, values will be the strings themselves or 0, 1...</span></div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      <span class="comment">// Convert from std::string_view to const char* until we migrate everything here</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="struct_control_1_1_combo_box.html">Control::ComboBox</a>{name, c.init, to_const_char_array(T::choices())};</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="struct_control_1_1_combo_box.html">Control::ComboBox</a>{name, c.init, to_const_char_array(c.values)};</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    }</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> constexpr(requires { std::string_view{c.values[0].first}; }) {</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      <span class="comment">// Pair of string &lt;-&gt; values</span></div>
