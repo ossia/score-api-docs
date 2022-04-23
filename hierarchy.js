@@ -3578,8 +3578,8 @@ var hierarchy =
     [ "oscr::setup_Impl0< Node >", "structoscr_1_1setup___impl0.html", null ],
     [ "Control::setup_Impl0< Info_T, Node_T, Element >", "struct_control_1_1setup___impl0.html", null ],
     [ "Control::setup_Impl1< Info, Element, Node_T >", "struct_control_1_1setup___impl1.html", null ],
-    [ "Control::setup_Impl1_Out< Info, Element, Node_T >", "struct_control_1_1setup___impl1___out.html", null ],
     [ "oscr::setup_Impl1_Out< Node >", "structoscr_1_1setup___impl1___out.html", null ],
+    [ "Control::setup_Impl1_Out< Info, Element, Node_T >", "struct_control_1_1setup___impl1___out.html", null ],
     [ "score::gfx::ShaderCache", "structscore_1_1gfx_1_1_shader_cache.html", null ],
     [ "Gfx::ShaderSource", "struct_gfx_1_1_shader_source.html", [
       [ "Gfx::ProcessedProgram", "struct_gfx_1_1_processed_program.html", null ]
@@ -3626,7 +3626,6 @@ var hierarchy =
     [ "score::StartScreenLink", "structscore_1_1_start_screen_link.html", null ],
     [ "Nodes::FactorOracle::Node::State", "struct_nodes_1_1_factor_oracle_1_1_node_1_1_state.html", null ],
     [ "Nodes::MathMapping::Node::State", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html", null ],
-    [ "Nodes::FactorOracle2::Node::State", "struct_nodes_1_1_factor_oracle2_1_1_node_1_1_state.html", null ],
     [ "Nodes::ValueFilter::Node::State", "class_nodes_1_1_value_filter_1_1_node_1_1_state.html", null ],
     [ "Nodes::MathGenerator::Node::State", "struct_nodes_1_1_math_generator_1_1_node_1_1_state.html", null ],
     [ "Nodes::LFO::v2::Node::State", "struct_nodes_1_1_l_f_o_1_1v2_1_1_node_1_1_state.html", null ],
@@ -3635,6 +3634,7 @@ var hierarchy =
     [ "Nodes::MicroMapping::Node::State", "struct_nodes_1_1_micro_mapping_1_1_node_1_1_state.html", null ],
     [ "Nodes::Chord::Node::State", "struct_nodes_1_1_chord_1_1_node_1_1_state.html", null ],
     [ "Nodes::AudioLooper::Node::State", "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html", null ],
+    [ "Nodes::FactorOracle2::Node::State", "struct_nodes_1_1_factor_oracle2_1_1_node_1_1_state.html", null ],
     [ "Nodes::FactorOracle2MIDI::Node::State", "struct_nodes_1_1_factor_oracle2_m_i_d_i_1_1_node_1_1_state.html", null ],
     [ "FactorOracle2MIDI::State< T >", "class_factor_oracle2_m_i_d_i_1_1_state.html", null ],
     [ "Nodes::PulseToNote::Node::State", "struct_nodes_1_1_pulse_to_note_1_1_node_1_1_state.html", null ],
@@ -3719,8 +3719,8 @@ var hierarchy =
     [ "Scenario::TimenodeProperties", "struct_scenario_1_1_timenode_properties.html", null ],
     [ "Jit::Timer", "struct_jit_1_1_timer.html", null ],
     [ "Scenario::TimeSignatureMap", "struct_scenario_1_1_time_signature_map.html", null ],
-    [ "HierarchicalBaseScenario< Component_T, BaseScenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T >::TimeSyncPair", "struct_hierarchical_base_scenario_1_1_time_sync_pair.html", null ],
     [ "HierarchicalScenarioComponent< Component_T, Scenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T, HasOwnership >::TimeSyncPair", "struct_hierarchical_scenario_component_1_1_time_sync_pair.html", null ],
+    [ "HierarchicalBaseScenario< Component_T, BaseScenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T >::TimeSyncPair", "struct_hierarchical_base_scenario_1_1_time_sync_pair.html", null ],
     [ "Scenario::MusicalGrid::timings", "struct_scenario_1_1_musical_grid_1_1timings.html", null ],
     [ "WidgetFactory::Toggle", "struct_widget_factory_1_1_toggle.html", [
       [ "Control::Toggle", "struct_control_1_1_toggle.html", null ]
@@ -4022,8 +4022,8 @@ var hierarchy =
     [ "visitor_object_tag", "structvisitor__object__tag.html", null ],
     [ "visitor_template_tag", "structvisitor__template__tag.html", null ],
     [ "VisitorVariant", "struct_visitor_variant.html", null ],
-    [ "vst3::vst_node_base::vst_control", "structvst3_1_1vst__node__base_1_1vst__control.html", null ],
     [ "vst::vst_node_base::vst_control", "structvst_1_1vst__node__base_1_1vst__control.html", null ],
+    [ "vst3::vst_node_base::vst_control", "structvst3_1_1vst__node__base_1_1vst__control.html", null ],
     [ "vst::VSTInfo", "structvst_1_1_v_s_t_info.html", null ],
     [ "score::RecursiveWatch::Watched", "structscore_1_1_recursive_watch_1_1_watched.html", null ],
     [ "Media::Sound::WaveformComputerImpl", "struct_media_1_1_sound_1_1_waveform_computer_impl.html", null ],

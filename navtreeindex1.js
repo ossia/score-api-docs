@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"_cable_8hpp_source.html":[13,0,116],
 "_cable_copy_8hpp_source.html":[13,0,117],
 "_cable_helpers_8hpp_source.html":[13,0,118],
 "_cable_inspector_8hpp_source.html":[13,0,119],
@@ -59,7 +60,7 @@ var NAVTREEINDEX1 =
 "_commands.html#Dispatchers":[1,2,0],
 "_commands.html#LaunchingCommands":[1,1],
 "_commands.html#SpecialCommands":[1,2],
-"_commands_2_scenario_2_scenario_paste_8hpp_source.html":[13,0,1091],
+"_commands_2_scenario_2_scenario_paste_8hpp_source.html":[13,0,1092],
 "_comment_block_model_8hpp_source.html":[13,0,180],
 "_comment_block_presenter_8hpp_source.html":[13,0,181],
 "_comment_block_view_8hpp_source.html":[13,0,182],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "_event_actions_8hpp_source.html":[13,0,386],
 "_event_component_8hpp_source.html":[13,0,387],
 "_event_execution_8hpp_source.html":[13,0,388],
-"_event_inspector_widget_8hpp_source.html":[13,0,389],
-"_event_model_8hpp_source.html":[13,0,390]
+"_event_inspector_widget_8hpp_source.html":[13,0,389]
 };

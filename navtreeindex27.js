@@ -1,5 +1,7 @@
 var NAVTREEINDEX27 =
 {
+"class_protocols_1_1_phidget_protocol_settings_widget.html#adaa64e613429fbbcd4242beff35c54ac":[12,0,40,59,1],
+"class_protocols_1_1_rate_widget.html":[12,0,40,61],
 "class_protocols_1_1_rate_widget.html#a65c5143bc60caf1341145f3dd310e324":[12,0,40,61,0],
 "class_protocols_1_1_rate_widget.html#a65e02d2b613adc4c87ffc4b5196d1c1b":[12,0,40,61,3],
 "class_protocols_1_1_rate_widget.html#a8a6575cd0ee9c73a4adedd1ff8a7c441":[12,0,40,61,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX27 =
 "class_scenario_1_1_base_scenario.html#a85bf185aa65ed1c98fd410474ac9e69e":[12,0,45,8,4],
 "class_scenario_1_1_base_scenario.html#ac62396f200262a0bba3795dbc858d427":[12,0,45,8,5],
 "class_scenario_1_1_base_scenario.html#ad7bfe17398874acd1447802636f68972":[12,0,45,8,3],
-"class_scenario_1_1_base_scenario.html#ade53e15423f13aa68cfbb7a96be4a6bb":[12,0,45,8,2],
-"class_scenario_1_1_base_scenario_container.html":[12,0,45,9],
-"class_scenario_1_1_base_scenario_container.html#a0639342653b9ac1febc011882fa2d7e4":[12,0,45,9,26]
+"class_scenario_1_1_base_scenario.html#ade53e15423f13aa68cfbb7a96be4a6bb":[12,0,45,8,2]
 };

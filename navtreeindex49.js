@@ -1,5 +1,7 @@
 var NAVTREEINDEX49 =
 {
+"classvst3_1_1_model.html#adbd71f4715f62f77642c87918594504c":[12,0,56,9,10],
+"classvst3_1_1_model.html#aded538a46c018a02a1f5fc202ac61e1e":[12,0,56,9,4],
 "classvst3_1_1_model.html#ae30dfe2e738eca3842123b76317e5d08":[12,0,56,9,11],
 "classvst3_1_1_model.html#ae575404b3f0780b5cea0638a9f79bd3f":[12,0,56,9,0],
 "classvst3_1_1_model.html#aee21a74555cdd4eda94459ffba09a209":[12,0,56,9,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX49 =
 "codingstyle_8hpp_source.html":[13,0,147],
 "config_8hpp_source.html":[13,0,199],
 "contexts_8hpp_source.html":[13,0,205],
-"d_2_spline3_d_2_execution_8hpp_source.html":[13,0,397],
-"d_2_spline3_d_2_generator_dialog_8hpp_source.html":[13,0,468],
-"data_structures_8hpp_source.html":[13,0,277]
+"d_2_spline3_d_2_execution_8hpp_source.html":[13,0,397]
 };
