@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('_m_i_d_i_protocol_factory_8hpp_source.
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_protocols_1_1_m_i_d_i_input_protocol_factory.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_protocols_1_1_m_i_d_i_input_protocol_factory.html">MIDIInputProtocolFactory</a> final : <span class="keyword">public</span> <a class="code" href="class_device_1_1_protocol_factory.html">Device::ProtocolFactory</a></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;f5e04ef0-16dd-4997-8f81-f5a04b8702bc&quot;</span>)</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="comment">// Implement with OSSIA::Device</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  Device::ProtocolFactory::Flags flags() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  QString prettyName() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
@@ -161,7 +161,7 @@ $(document).ready(function(){initNavTree('_m_i_d_i_protocol_factory_8hpp_source.
 <div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_protocols_1_1_m_i_d_i_output_protocol_factory.html">   61</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_protocols_1_1_m_i_d_i_output_protocol_factory.html">MIDIOutputProtocolFactory</a> final : <span class="keyword">public</span> <a class="code" href="class_device_1_1_protocol_factory.html">Device::ProtocolFactory</a></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;d5a4a701-d152-4b3b-be05-4d847b623451&quot;</span>)</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="comment">// Implement with OSSIA::Device</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  QString prettyName() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  QString category() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
