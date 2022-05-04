@@ -1,6 +1,7 @@
 var structscore_1_1gfx_1_1_screen_node =
 [
-    [ "Renderer", "classscore_1_1gfx_1_1_screen_node_1_1_renderer.html", "classscore_1_1gfx_1_1_screen_node_1_1_renderer" ],
+    [ "BasicRenderer", "classscore_1_1gfx_1_1_screen_node_1_1_basic_renderer.html", "classscore_1_1gfx_1_1_screen_node_1_1_basic_renderer" ],
+    [ "ScaledRenderer", "classscore_1_1gfx_1_1_screen_node_1_1_scaled_renderer.html", "classscore_1_1gfx_1_1_screen_node_1_1_scaled_renderer" ],
     [ "ScreenNode", "structscore_1_1gfx_1_1_screen_node.html#a27f9cf297cda4d7d1714ddea06aedc20", null ],
     [ "ScreenNode", "structscore_1_1gfx_1_1_screen_node.html#a8386d3dd3f55dc3b6808457a289f844c", null ],
     [ "~ScreenNode", "structscore_1_1gfx_1_1_screen_node.html#a25db3e70ab28a8eef11f35e376375223", null ],

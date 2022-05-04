@@ -706,47 +706,49 @@ $(document).ready(function(){initNavTree('_gpu_utils_8hpp_source.html',''); init
 <div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;  CustomGpuNodeBase() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;  <span class="keyword">virtual</span> ~CustomGpuNodeBase() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160; </div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_message.html">score::gfx::Message</a> last_message;</div>
-<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;  <span class="keywordtype">void</span> process(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_message.html">score::gfx::Message</a>&amp; msg) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;};</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160; </div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;<span class="keyword">struct </span>CustomGpuOutputNodeBase</div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;    : <a class="code" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a></div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;{</div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;    CustomGpuOutputNodeBase();</div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;    <span class="keyword">virtual</span> ~CustomGpuOutputNodeBase() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160; </div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;    std::weak_ptr&lt;score::gfx::RenderList&gt; m_renderer{};</div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;    std::shared_ptr&lt;score::gfx::RenderState&gt; m_renderState{};</div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;    std::function&lt;void()&gt; m_update;</div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160; </div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;    <a class="code" href="structscore_1_1gfx_1_1_message.html">score::gfx::Message</a> last_message;</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;    <span class="keywordtype">void</span> process(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_message.html">score::gfx::Message</a>&amp; msg) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160; </div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;    <span class="keywordtype">void</span> setRenderer(std::shared_ptr&lt;score::gfx::RenderList&gt;) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    <a class="code" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>* renderer() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160; </div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;    <span class="keywordtype">void</span> startRendering() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;    <span class="keywordtype">void</span> render() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;    <span class="keywordtype">void</span> stopRendering() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;    <span class="keywordtype">bool</span> canRender() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;    <span class="keywordtype">void</span> onRendererChange() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160; </div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    <span class="keywordtype">void</span> createOutput(</div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;        <a class="code" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">score::gfx::GraphicsApi</a> graphicsApi,</div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;        std::function&lt;<span class="keywordtype">void</span>()&gt; onReady,</div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;        std::function&lt;<span class="keywordtype">void</span>()&gt; onUpdate,</div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;        std::function&lt;<span class="keywordtype">void</span>()&gt; onResize) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160; </div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    <span class="keywordtype">void</span> destroyOutput() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;    <a class="code" href="structscore_1_1gfx_1_1_render_state.html">score::gfx::RenderState</a>* renderState() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160; </div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;    Configuration configuration() const noexcept override;</div>
-<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;};</div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160; </div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;}</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;  QString vertex, fragment, compute;</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_message.html">score::gfx::Message</a> last_message;</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;  <span class="keywordtype">void</span> process(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_message.html">score::gfx::Message</a>&amp; msg) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;};</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160; </div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;<span class="keyword">struct </span>CustomGpuOutputNodeBase</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;    : <a class="code" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a></div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;{</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;    CustomGpuOutputNodeBase();</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    <span class="keyword">virtual</span> ~CustomGpuOutputNodeBase() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160; </div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;    std::weak_ptr&lt;score::gfx::RenderList&gt; m_renderer{};</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;    std::shared_ptr&lt;score::gfx::RenderState&gt; m_renderState{};</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;    std::function&lt;void()&gt; m_update;</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160; </div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;    QString vertex, fragment, compute;</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;    <a class="code" href="structscore_1_1gfx_1_1_message.html">score::gfx::Message</a> last_message;</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;    <span class="keywordtype">void</span> process(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_message.html">score::gfx::Message</a>&amp; msg) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160; </div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    <span class="keywordtype">void</span> setRenderer(std::shared_ptr&lt;score::gfx::RenderList&gt;) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;    <a class="code" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>* renderer() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160; </div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;    <span class="keywordtype">void</span> startRendering() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;    <span class="keywordtype">void</span> render() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;    <span class="keywordtype">void</span> stopRendering() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;    <span class="keywordtype">bool</span> canRender() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    <span class="keywordtype">void</span> onRendererChange() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160; </div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;    <span class="keywordtype">void</span> createOutput(</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;        <a class="code" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">score::gfx::GraphicsApi</a> graphicsApi,</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;        std::function&lt;<span class="keywordtype">void</span>()&gt; onReady,</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;        std::function&lt;<span class="keywordtype">void</span>()&gt; onUpdate,</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;        std::function&lt;<span class="keywordtype">void</span>()&gt; onResize) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160; </div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;    <span class="keywordtype">void</span> destroyOutput() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;    <a class="code" href="structscore_1_1gfx_1_1_render_state.html">score::gfx::RenderState</a>* renderState() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160; </div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;    Configuration configuration() const noexcept override;</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;};</div>
 <div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160; </div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;}</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160; </div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a></div><div class="ttdoc">Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)</div><div class="ttdef"><b>Definition:</b> OutputNode.hpp:23</div></div>
