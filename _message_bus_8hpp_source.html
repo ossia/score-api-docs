@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('_message_bus_8hpp_source.html',''); in
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span>... Args&gt;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> std::variant&lt;Args...&gt;&amp; f) {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      r.stream() &lt;&lt; (std::size_t)f.index();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      r.stream() &lt;&lt; (int)f.index();</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      std::visit([&amp;] (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;arg) { r.stream() &lt;&lt; arg; }, f);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
@@ -179,7 +179,7 @@ $(document).ready(function(){initNavTree('_message_bus_8hpp_source.html',''); in
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span>... Args&gt;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> operator()(std::variant&lt;Args...&gt;&amp; f) {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      std::size_t index{};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keywordtype">int</span> index{};</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      r.stream() &gt;&gt; index;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      [&amp;] &lt;std::size_t... I&gt; (std::index_sequence&lt;I...&gt;) {</div>
