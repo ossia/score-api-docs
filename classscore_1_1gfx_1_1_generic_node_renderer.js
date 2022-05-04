@@ -15,12 +15,14 @@ var classscore_1_1gfx_1_1_generic_node_renderer =
     [ "renderTargetForInput", "classscore_1_1gfx_1_1_generic_node_renderer.html#a68093ad474e3611308426b51c4893acc", null ],
     [ "runRenderPass", "classscore_1_1gfx_1_1_generic_node_renderer.html#a9a2af09c25bf87da90d755a024915efb", null ],
     [ "update", "classscore_1_1gfx_1_1_generic_node_renderer.html#ae891b06113797ee322f1d8bdba024572", null ],
+    [ "m_fragmentS", "classscore_1_1gfx_1_1_generic_node_renderer.html#a8cfa936d8a5750d5cd49ba7be2cd988a", null ],
     [ "m_idxBuffer", "classscore_1_1gfx_1_1_generic_node_renderer.html#a5c71b179eed2776d67eab07d1e334941", null ],
     [ "m_material", "classscore_1_1gfx_1_1_generic_node_renderer.html#add37f93d2c7e111e38e2481c302337c2", null ],
     [ "m_meshBuffer", "classscore_1_1gfx_1_1_generic_node_renderer.html#a5824c93460cdbcdda454303f49a192a4", null ],
     [ "m_p", "classscore_1_1gfx_1_1_generic_node_renderer.html#a0fca596faef22d6638d7cc98ec9fff38", null ],
     [ "m_processUBO", "classscore_1_1gfx_1_1_generic_node_renderer.html#ad3f3bcf2cf1dcedc4ab5d92e35a25696", null ],
     [ "m_samplers", "classscore_1_1gfx_1_1_generic_node_renderer.html#a8ec58cd930f710f0b66ee0207a53e035", null ],
+    [ "m_vertexS", "classscore_1_1gfx_1_1_generic_node_renderer.html#a60e0650f23d5f7c07cc4c771bf35f602", null ],
     [ "materialChangedIndex", "classscore_1_1gfx_1_1_generic_node_renderer.html#a0171a726574c55cc38b347d71903e246", null ],
     [ "node", "classscore_1_1gfx_1_1_generic_node_renderer.html#ab58c9814b6de55b6ab24d3afaceca53e", null ]
 ];

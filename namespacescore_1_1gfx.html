@@ -444,12 +444,12 @@ QRhiShaderResourceBindings *&#160;</td><td class="memItemRight" valign="bottom">
 <a class="el" href="structscore_1_1gfx_1_1_pipeline.html">Pipeline</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#a1cee3a6e153623e3259a1b88ffcafa44">buildPipeline</a> (const <a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a> &amp;mesh, const QShader &amp;vertexS, const QShader &amp;fragmentS, const <a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a> &amp;rt, QRhiBuffer *processUBO, QRhiBuffer *materialUBO, const std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_sampler.html">Sampler</a> &gt; &amp;samplers)</td></tr>
 <tr class="memdesc:a1cee3a6e153623e3259a1b88ffcafa44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a render pipeline following the score conventions for shaders and materials. <br /></td></tr>
 <tr class="separator:a1cee3a6e153623e3259a1b88ffcafa44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0480b60a305df61d27a6953097584582"><td class="memItemLeft" align="right" valign="top">std::pair&lt; QShader, QShader &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#a0480b60a305df61d27a6953097584582">makeShaders</a> (QString vert, QString frag)</td></tr>
-<tr class="memdesc:a0480b60a305df61d27a6953097584582"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pair of compiled vertex / fragment shaders from GLSL 4.5 sources.  <a href="namespacescore_1_1gfx.html#a0480b60a305df61d27a6953097584582">More...</a><br /></td></tr>
-<tr class="separator:a0480b60a305df61d27a6953097584582"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a149915dafb47e82c0aaa177396e537"><td class="memItemLeft" align="right" valign="top">QShader&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#a5a149915dafb47e82c0aaa177396e537">makeCompute</a> (QString compt)</td></tr>
-<tr class="memdesc:a5a149915dafb47e82c0aaa177396e537"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile a compute shader.  <a href="namespacescore_1_1gfx.html#a5a149915dafb47e82c0aaa177396e537">More...</a><br /></td></tr>
-<tr class="separator:a5a149915dafb47e82c0aaa177396e537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac36c19f883f361de43e1d6e1eee7ce3d"><td class="memItemLeft" align="right" valign="top">std::pair&lt; QShader, QShader &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#ac36c19f883f361de43e1d6e1eee7ce3d">makeShaders</a> (const <a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> &amp;v, QString vert, QString frag)</td></tr>
+<tr class="memdesc:ac36c19f883f361de43e1d6e1eee7ce3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pair of compiled vertex / fragment shaders from GLSL 4.5 sources.  <a href="namespacescore_1_1gfx.html#ac36c19f883f361de43e1d6e1eee7ce3d">More...</a><br /></td></tr>
+<tr class="separator:ac36c19f883f361de43e1d6e1eee7ce3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad528ce932ef3a9bbbae90dd43035270e"><td class="memItemLeft" align="right" valign="top">QShader&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#ad528ce932ef3a9bbbae90dd43035270e">makeCompute</a> (const <a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> &amp;v, QString compt)</td></tr>
+<tr class="memdesc:ad528ce932ef3a9bbbae90dd43035270e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile a compute shader.  <a href="namespacescore_1_1gfx.html#ad528ce932ef3a9bbbae90dd43035270e">More...</a><br /></td></tr>
+<tr class="separator:ad528ce932ef3a9bbbae90dd43035270e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4492c024019592e9c74e2eaa88d6282c"><td class="memItemLeft" align="right" valign="top"><a id="a4492c024019592e9c74e2eaa88d6282c"></a>
 QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#a4492c024019592e9c74e2eaa88d6282c">resizeTextureSize</a> (QSize img, int min, int max) noexcept</td></tr>
 <tr class="memdesc:a4492c024019592e9c74e2eaa88d6282c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize the size of a texture to fit within GPU limits. <br /></td></tr>
@@ -535,8 +535,8 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>frag</b></td>
 
 </div>
 </div>
-<a id="a5a149915dafb47e82c0aaa177396e537"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a149915dafb47e82c0aaa177396e537">&#9670;&nbsp;</a></span>makeCompute()</h2>
+<a id="ad528ce932ef3a9bbbae90dd43035270e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad528ce932ef3a9bbbae90dd43035270e">&#9670;&nbsp;</a></span>makeCompute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -544,9 +544,19 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>frag</b></td>
         <tr>
           <td class="memname">SCORE_PLUGIN_GFX_EXPORT QShader score::gfx::makeCompute </td>
           <td>(</td>
-          <td class="paramtype">QString&#160;</td>
-          <td class="paramname"><em>compt</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>compt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -556,8 +566,8 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>frag</b></td>
 
 </div>
 </div>
-<a id="a0480b60a305df61d27a6953097584582"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0480b60a305df61d27a6953097584582">&#9670;&nbsp;</a></span>makeShaders()</h2>
+<a id="ac36c19f883f361de43e1d6e1eee7ce3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac36c19f883f361de43e1d6e1eee7ce3d">&#9670;&nbsp;</a></span>makeShaders()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -565,6 +575,12 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>frag</b></td>
         <tr>
           <td class="memname">SCORE_PLUGIN_GFX_EXPORT std::pair&lt; QShader, QShader &gt; score::gfx::makeShaders </td>
           <td>(</td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">QString&#160;</td>
           <td class="paramname"><em>vert</em>, </td>
         </tr>

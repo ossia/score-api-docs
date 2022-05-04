@@ -5,5 +5,6 @@ var structscore_1_1gfx_1_1_render_state =
     [ "renderPassDescriptor", "structscore_1_1gfx_1_1_render_state.html#a74409f949882a5207413610a97aeb48d", null ],
     [ "rhi", "structscore_1_1gfx_1_1_render_state.html#a7adb91001fda0dbd0ba17641105f13a6", null ],
     [ "size", "structscore_1_1gfx_1_1_render_state.html#aa20c8a583d6dc9d8196144cd812c31ef", null ],
-    [ "surface", "structscore_1_1gfx_1_1_render_state.html#ab191a407711967c72d0d75ca4466300d", null ]
+    [ "surface", "structscore_1_1gfx_1_1_render_state.html#ab191a407711967c72d0d75ca4466300d", null ],
+    [ "version", "structscore_1_1gfx_1_1_render_state.html#ac8f3bbf5a5ea2d6f1e78e886aa947053", null ]
 ];
