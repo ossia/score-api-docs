@@ -1,5 +1,6 @@
 var classscore_1_1_variant_based_node =
 [
+    [ "variant_type", "classscore_1_1_variant_based_node.html#a0dd2caaef39edbb83521aa12cc3576d0", null ],
     [ "VariantBasedNode", "classscore_1_1_variant_based_node.html#a5f1ca827524626ffbcf0b6f681f59f36", null ],
     [ "VariantBasedNode", "classscore_1_1_variant_based_node.html#a6295fdd9751f2f50bc2a3b2167eb418e", null ],
     [ "VariantBasedNode", "classscore_1_1_variant_based_node.html#a675d12e1fbbe80d1c67297c14b1df1b6", null ],
@@ -15,5 +16,5 @@ var classscore_1_1_variant_based_node =
     [ "target", "classscore_1_1_variant_based_node.html#a1697082d618e8ee86158f2725e20c2e5", null ],
     [ "target", "classscore_1_1_variant_based_node.html#a28b7f070b615225e8f4da12a78a4ee0f", null ],
     [ "which", "classscore_1_1_variant_based_node.html#ac3f80b1aad3de29cfc7d90b6e7aa1045", null ],
-    [ "m_data", "classscore_1_1_variant_based_node.html#afcd213cb01024c4c8a2bb951dbb56b24", null ]
+    [ "m_data", "classscore_1_1_variant_based_node.html#ad8a61293b652127681bd39480b4db4bf", null ]
 ];

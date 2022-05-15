@@ -469,7 +469,7 @@ $(document).ready(function(){initNavTree('_gpu_compute_node_8hpp_source.html',''
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;              <span class="keyword">auto</span>&amp; mess = this-&gt;parent.last_message;</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;              <span class="keywordflow">if</span>(mess.input.size() &gt; field_index)</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;              {</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                if(auto val = std::get_if&lt;ossia::value&gt;(&amp;mess.input[field_index]))</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                if(auto val = ossia::get_if&lt;ossia::value&gt;(&amp;mess.input[field_index]))</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;                {</div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                  oscr::from_ossia_value(t, *val, t.value);</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                }</div>

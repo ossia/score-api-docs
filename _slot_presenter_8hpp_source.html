@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('_slot_presenter_8hpp_source.html','');
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Scenario/Document/Interval/SlotHeader.hpp&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;Scenario/Document/Interval/LayerData.hpp&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;variant&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/variant.hpp&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_scenario.html">Scenario</a></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
@@ -148,17 +148,17 @@ $(document).ready(function(){initNavTree('_slot_presenter_8hpp_source.html','');
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> cleanup();</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="struct_scenario_1_1_slot_presenter.html">   51</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_scenario_1_1_slot_presenter.html">SlotPresenter</a> : std::variant&lt;LayerSlotPresenter, NodalSlotPresenter&gt;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="struct_scenario_1_1_slot_presenter.html">   51</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_scenario_1_1_slot_presenter.html">SlotPresenter</a> : ossia::variant&lt;LayerSlotPresenter, NodalSlotPresenter&gt;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">using</span> variant::variant;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="struct_scenario_1_1_layer_slot_presenter.html">LayerSlotPresenter</a>* getLayerSlot() <span class="keyword">const</span> noexcept</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> std::get_if&lt;LayerSlotPresenter&gt;((variant*)<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> ossia::get_if&lt;LayerSlotPresenter&gt;((variant*)<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="struct_scenario_1_1_nodal_slot_presenter.html">NodalSlotPresenter</a>* getNodalSlot() <span class="keyword">const</span> noexcept</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> std::get_if&lt;NodalSlotPresenter&gt;((variant*)<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> ossia::get_if&lt;NodalSlotPresenter&gt;((variant*)<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Layer, <span class="keyword">typename</span> Nodal&gt;</div>
@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('_slot_presenter_8hpp_source.html','');
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keywordtype">void</span> operator()(<a class="code" href="struct_scenario_1_1_layer_slot_presenter.html">LayerSlotPresenter</a>&amp; pres)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> lfun(pres); }</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keywordtype">void</span> operator()(<a class="code" href="struct_scenario_1_1_nodal_slot_presenter.html">NodalSlotPresenter</a>&amp; pres)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> nfun(pres); }</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    } visitor{lfun, nfun};</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">return</span> std::visit(visitor, (variant&amp;)*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">return</span> ossia::visit(visitor, (variant&amp;)*<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Layer, <span class="keyword">typename</span> Nodal&gt;</div>
@@ -190,19 +190,19 @@ $(document).ready(function(){initNavTree('_slot_presenter_8hpp_source.html','');
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">return</span> nfun(pres);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      }</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    } visitor{lfun, nfun};</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">return</span> std::visit(visitor, (<span class="keyword">const</span> variant&amp;)*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">return</span> ossia::visit(visitor, (<span class="keyword">const</span> variant&amp;)*<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  }</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> F&gt;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keyword">auto</span> visit(<span class="keyword">const</span> F&amp; fun)</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> std::visit(fun, (variant&amp;)*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> ossia::visit(fun, (variant&amp;)*<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  }</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> F&gt;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keyword">auto</span> visit(<span class="keyword">const</span> F&amp; fun)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">return</span> std::visit(fun, (<span class="keyword">const</span> variant&amp;)*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">return</span> ossia::visit(fun, (<span class="keyword">const</span> variant&amp;)*<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  }</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">void</span> cleanup(QGraphicsScene* sc)</div>

@@ -95,6 +95,7 @@ $(document).ready(function(){initNavTree('classscore_1_1_variant_based_node.html
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classscore_1_1_variant_based_node-members.html">List of all members</a>  </div>
@@ -114,6 +115,12 @@ class score::VariantBasedNode&lt; Args &gt;</h3>
 <p>Additionally, a special tag InvisibleRootNodeTag is added to serve as root element, since this is necessary in the case of QAbstractItemModel.</p>
 <p>For instance, VariantBasedNode&lt;int, QString&gt; will have three possible data types: <a class="el" href="struct_invisible_root_node.html" title="The InvisibleRootNodeTag struct.">InvisibleRootNode</a>, int, QString. </p>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a0dd2caaef39edbb83521aa12cc3576d0"><td class="memItemLeft" align="right" valign="top"><a id="a0dd2caaef39edbb83521aa12cc3576d0"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>variant_type</b> = ossia::nullable_variant&lt; <a class="el" href="struct_invisible_root_node.html">InvisibleRootNode</a>, Args... &gt;</td></tr>
+<tr class="separator:a0dd2caaef39edbb83521aa12cc3576d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5f1ca827524626ffbcf0b6f681f59f36"><td class="memItemLeft" align="right" valign="top"><a id="a5f1ca827524626ffbcf0b6f681f59f36"></a>
@@ -168,9 +175,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:afcd213cb01024c4c8a2bb951dbb56b24"><td class="memItemLeft" align="right" valign="top"><a id="afcd213cb01024c4c8a2bb951dbb56b24"></a>
-eggs::variant&lt; <a class="el" href="struct_invisible_root_node.html">InvisibleRootNode</a>, Args... &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_data</b></td></tr>
-<tr class="separator:afcd213cb01024c4c8a2bb951dbb56b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8a61293b652127681bd39480b4db4bf"><td class="memItemLeft" align="right" valign="top"><a id="ad8a61293b652127681bd39480b4db4bf"></a>
+ossia::nullable_variant&lt; <a class="el" href="struct_invisible_root_node.html">InvisibleRootNode</a>, Args... &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_data</b></td></tr>
+<tr class="separator:ad8a61293b652127681bd39480b4db4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a34342ffeb8eb27b29fa1998448de4544"></a>

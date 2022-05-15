@@ -463,7 +463,7 @@ $(document).ready(function(){initNavTree('_gfx_node_8hpp_source.html',''); initR
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160; </div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;            <span class="keywordflow">if</span>(mess.input.size() &gt; field_index)</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;            {</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;              if(auto val = std::get_if&lt;ossia::value&gt;(&amp;mess.input[field_index]))</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;              if(auto val = ossia::get_if&lt;ossia::value&gt;(&amp;mess.input[field_index]))</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;              {</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                oscr::from_ossia_value(t, *val, t.value);</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;              }</div>

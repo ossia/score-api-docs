@@ -1350,6 +1350,8 @@ var files_dup =
     [ "UpdateAddressSettings.hpp", "_update_address_settings_8hpp_source.html", null ],
     [ "UpdateCurve.hpp", "_update_curve_8hpp_source.html", null ],
     [ "UpdateDeviceSettings.hpp", "_update_device_settings_8hpp_source.html", null ],
+    [ "score-lib-device/Tests/Utils.hpp", "score-lib-device_2_tests_2_utils_8hpp_source.html", null ],
+    [ "score-lib-state/Tests/Utils.hpp", "score-lib-state_2_tests_2_utils_8hpp_source.html", null ],
     [ "score-plugin-faust/Faust/Utils.hpp", "score-plugin-faust_2_faust_2_utils_8hpp_source.html", null ],
     [ "score-plugin-gfx/Gfx/Graph/Utils.hpp", "score-plugin-gfx_2_gfx_2_graph_2_utils_8hpp_source.html", null ],
     [ "UuidKey.hpp", "_uuid_key_8hpp_source.html", null ],

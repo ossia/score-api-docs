@@ -1,13 +1,5 @@
 var NAVTREEINDEX36 =
 {
-"class_scenario_1_1_settings_1_1_theme_dialog.html#a4c427cf1587c36da62a4dbaca705b202":[12,0,45,1,2,7],
-"class_scenario_1_1_settings_1_1_theme_dialog.html#a4eb66383c04ec93d0ceacb984f6e1048":[12,0,45,1,2,8],
-"class_scenario_1_1_settings_1_1_theme_dialog.html#a7040c99a16afce913c336798dc776c64":[12,0,45,1,2,1],
-"class_scenario_1_1_settings_1_1_theme_dialog.html#a9208a2b29ed87cbc1c4d1b1abc17fd56":[12,0,45,1,2,2],
-"class_scenario_1_1_settings_1_1_theme_dialog.html#ab19c636c54a7e4dc6aca8e4feba58efb":[12,0,45,1,2,5],
-"class_scenario_1_1_settings_1_1_theme_dialog.html#add11e9419c3180c763b97d61e9d172e6":[12,0,45,1,2,6],
-"class_scenario_1_1_settings_1_1_theme_dialog.html#ae5ee19dcde409a06e27ce22b4b1ff61d":[12,0,45,1,2,4],
-"class_scenario_1_1_settings_1_1_view.html":[12,0,45,1,3],
 "class_scenario_1_1_settings_1_1_view.html#a0cf1ffdcfa0169beb82f814883ae986d":[12,0,45,1,3,2],
 "class_scenario_1_1_settings_1_1_view.html#a16e83f0697b0ee3531f505dfa908ada0":[12,0,45,1,3,9],
 "class_scenario_1_1_settings_1_1_view.html#a19d4c28c3d190300f2a6ef2f64bc0de1":[12,0,45,1,3,6],
@@ -249,5 +241,13 @@ var NAVTREEINDEX36 =
 "class_scenario_1_1_temporal_interval_view.html#aba95d036f408d248ec96cad9eb9db98e":[12,0,45,276,0],
 "class_scenario_1_1_temporal_interval_view.html#ac958270edafd3b03649f7db38db29238":[12,0,45,276,3],
 "class_scenario_1_1_temporal_interval_view.html#aefba7a3f9cee7c93c512c6fac7a489e3":[12,0,45,276,1],
-"class_scenario_1_1_text_dialog.html":[12,0,45,278]
+"class_scenario_1_1_text_dialog.html":[12,0,45,278],
+"class_scenario_1_1_text_dialog.html#a8f906d9a06b0772eda9f596b376a5781":[12,0,45,278,0],
+"class_scenario_1_1_time_ruler.html":[12,0,45,284],
+"class_scenario_1_1_time_ruler.html#a02bead6543c092e7b0070abb66d05ae1":[12,0,45,284,0],
+"class_scenario_1_1_time_ruler.html#a02bead6543c092e7b0070abb66d05ae1a38f246763036ccaeba7db6d563c4d821":[12,0,45,284,0,2],
+"class_scenario_1_1_time_ruler.html#a02bead6543c092e7b0070abb66d05ae1a64068ed47d979c5efa036f027d656433":[12,0,45,284,0,3],
+"class_scenario_1_1_time_ruler.html#a02bead6543c092e7b0070abb66d05ae1a6a7e73161603d87b26a8eac49dab0a9c":[12,0,45,284,0,0],
+"class_scenario_1_1_time_ruler.html#a02bead6543c092e7b0070abb66d05ae1a8f19a8c7566af54ea8981029730e5465":[12,0,45,284,0,1],
+"class_scenario_1_1_time_ruler.html#a616cf21e3eab32647404b37bb896646a":[12,0,45,284,1]
 };

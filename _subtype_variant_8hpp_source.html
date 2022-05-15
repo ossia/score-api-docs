@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('_subtype_variant_8hpp_source.html','')
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;brigand/algorithms/transform.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;eggs/variant.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/variant.hpp&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;type_traits&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('_subtype_variant_8hpp_source.html','')
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Base, <span class="keyword">typename</span>... Args&gt;</div>
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classscore_1_1_subtype_variant.html">   59</a></span>&#160;<span class="keyword">class </span><a class="code" href="classscore_1_1_subtype_variant.html">SubtypeVariant</a></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">using</span> arg_list = eggs::variant&lt;Args...&gt;;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">using</span> arg_list = ossia::variant&lt;Args...&gt;;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">using</span> ptr_list = brigand::transform&lt;arg_list, std::add_pointer&lt;brigand::_1&gt;&gt;;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  ptr_list m_impl;</div>
@@ -161,7 +161,7 @@ $(document).ready(function(){initNavTree('_subtype_variant_8hpp_source.html','')
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  {</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">if</span> (m_impl)</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keywordflow">return</span> eggs::variants::apply(<a class="code" href="structscore_1_1detail_1_1dereference__visitor.html">detail::dereference_visitor&lt;F&gt;</a>{f}, m_impl);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keywordflow">return</span> ossia::visit(<a class="code" href="structscore_1_1detail_1_1dereference__visitor.html">detail::dereference_visitor&lt;F&gt;</a>{f}, m_impl);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>

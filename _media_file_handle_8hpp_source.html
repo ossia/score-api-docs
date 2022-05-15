@@ -107,10 +107,10 @@ $(document).ready(function(){initNavTree('_media_file_handle_8hpp_source.html','
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;ossia/audio/drwav_handle.hpp&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/hash_map.hpp&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/small_vector.hpp&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;QFile&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;eggs/variant.hpp&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/nullable_variant.hpp&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QFile&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;nano_signal_slot.hpp&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;score_plugin_media_export.h&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
@@ -215,7 +215,7 @@ $(document).ready(function(){initNavTree('_media_file_handle_8hpp_source.html','
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keyword">using</span> libav_ptr = std::shared_ptr&lt;LibavReader&gt;;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keyword">using</span> <a class="code" href="struct_media_1_1_audio_file_1_1_mmap_reader.html">mmap_ptr</a> = <a class="code" href="struct_media_1_1_audio_file_1_1_mmap_reader.html">MmapReader</a>;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keyword">using</span> <a class="code" href="struct_media_1_1_audio_file_1_1_sndfile_reader.html">sndfile_ptr</a> = <a class="code" href="struct_media_1_1_audio_file_1_1_sndfile_reader.html">SndfileReader</a>;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keyword">using</span> impl_t = eggs::variant&lt;mmap_ptr, libav_ptr, sndfile_ptr&gt;;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keyword">using</span> impl_t = ossia::nullable_variant&lt;mmap_ptr, libav_ptr, sndfile_ptr&gt;;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
 <div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="struct_media_1_1_audio_file_1_1_mmap_view.html">  124</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="struct_media_1_1_audio_file_1_1_mmap_view.html">MmapView</a></div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  {</div>
@@ -260,7 +260,7 @@ $(document).ready(function(){initNavTree('_media_file_handle_8hpp_source.html','
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    }</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  };</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keyword">using</span> view_impl_t = eggs::variant&lt;MmapView, RAMView&gt;;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keyword">using</span> view_impl_t = ossia::nullable_variant&lt;MmapView, RAMView&gt;;</div>
 <div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="struct_media_1_1_audio_file_1_1_view_handle.html">  168</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="struct_media_1_1_audio_file_1_1_view_handle.html">ViewHandle</a> : view_impl_t</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  {</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keyword">using</span> view_impl_t::view_impl_t;</div>

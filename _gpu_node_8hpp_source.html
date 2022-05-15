@@ -214,7 +214,7 @@ $(document).ready(function(){initNavTree('_gpu_node_8hpp_source.html',''); initR
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        bindings.push_back(initBinding(renderer, f));</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      });</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> constexpr(requires { <span class="keyword">typename</span> Node_T::layout::bindings{}; })</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> constexpr(requires { <span class="keyword">sizeof</span>(<span class="keyword">typename</span> Node_T::layout::bindings); })</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    {</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      <span class="keyword">using</span> bindings_type = <span class="keyword">typename</span> Node_T::layout::bindings;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      boost::pfr::for_each_field(bindings_type{}, [&amp;] (<span class="keyword">auto</span> f) {</div>
@@ -485,7 +485,7 @@ $(document).ready(function(){initNavTree('_gpu_node_8hpp_source.html',''); initR
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;              <span class="keyword">auto</span>&amp; mess = this-&gt;parent.last_message;</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;              <span class="keywordflow">if</span>(mess.input.size() &gt; field_index)</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;              {</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;                if(auto val = std::get_if&lt;ossia::value&gt;(&amp;mess.input[field_index]))</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;                if(auto val = ossia::get_if&lt;ossia::value&gt;(&amp;mess.input[field_index]))</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                {</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                  oscr::from_ossia_value(t, *val, t.value);</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                }</div>
