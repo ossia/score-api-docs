@@ -27,6 +27,8 @@ var class_j_s_1_1_edit_js_context =
     [ "readFile", "class_j_s_1_1_edit_js_context.html#a7b334117851665666423d7fb848bc338", null ],
     [ "redo", "class_j_s_1_1_edit_js_context.html#a1ecc569ef0031eb4a9cee83278e93543", null ],
     [ "remove", "class_j_s_1_1_edit_js_context.html#ab2c3f87889f9241844002c377918195f", null ],
+    [ "selectedObject", "class_j_s_1_1_edit_js_context.html#a58e454a2b8338d3179ef885847ffafc9", null ],
+    [ "selectedObjects", "class_j_s_1_1_edit_js_context.html#a6d26b233588ac942bc388dfb9c48435e", null ],
     [ "setAddress", "class_j_s_1_1_edit_js_context.html#ab1d0632a4ed58f2dfee6b36bbea3cb03", null ],
     [ "setCurvePoints", "class_j_s_1_1_edit_js_context.html#a8b0e2eac58e00fde37a40a909cf4ced7", null ],
     [ "setName", "class_j_s_1_1_edit_js_context.html#a9bcfb5e3e11f68ba578c46a8e67cb7f4", null ],

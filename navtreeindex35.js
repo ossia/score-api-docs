@@ -1,5 +1,7 @@
 var NAVTREEINDEX35 =
 {
+"class_scenario_1_1_scenario_displayed_elements_tool_palette.html#af590198fa75393ee7ab8d57ad4814de0":[12,0,45,218,12],
+"class_scenario_1_1_scenario_displayed_elements_tool_palette_factory.html":[12,0,45,219],
 "class_scenario_1_1_scenario_displayed_elements_tool_palette_factory.html#a4bdb0f9ddf47b6284409aecd9482acc2":[12,0,45,219,0],
 "class_scenario_1_1_scenario_displayed_elements_tool_palette_factory.html#aff8e50bf25b3f647db1d6897dd1ae0cf":[12,0,45,219,1],
 "class_scenario_1_1_scenario_document_factory.html":[12,0,45,220],
@@ -247,7 +249,5 @@ var NAVTREEINDEX35 =
 "class_scenario_1_1_settings_1_1_theme_dialog.html#a7040c99a16afce913c336798dc776c64":[12,0,45,1,2,1],
 "class_scenario_1_1_settings_1_1_theme_dialog.html#a9208a2b29ed87cbc1c4d1b1abc17fd56":[12,0,45,1,2,2],
 "class_scenario_1_1_settings_1_1_theme_dialog.html#ab19c636c54a7e4dc6aca8e4feba58efb":[12,0,45,1,2,5],
-"class_scenario_1_1_settings_1_1_theme_dialog.html#add11e9419c3180c763b97d61e9d172e6":[12,0,45,1,2,6],
-"class_scenario_1_1_settings_1_1_theme_dialog.html#ae5ee19dcde409a06e27ce22b4b1ff61d":[12,0,45,1,2,4],
-"class_scenario_1_1_settings_1_1_view.html":[12,0,45,1,3]
+"class_scenario_1_1_settings_1_1_theme_dialog.html#add11e9419c3180c763b97d61e9d172e6":[12,0,45,1,2,6]
 };

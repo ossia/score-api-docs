@@ -346,7 +346,7 @@ $(document).ready(function(){initNavTree('_signal_display_8hpp_source.html','');
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;      p-&gt;setRenderHint(QPainter::Antialiasing, <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;      p-&gt;setPen(score::Skin::instance().Light.main.pen1_solid_flat_miter);</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;      p-&gt;drawText(QPoint(15, 15), QString::fromStdString(fmt::format(<span class="stringliteral">&quot;{}&quot;</span>, m_value)));</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;      p-&gt;drawText(boundingRect(), QString::fromStdString(fmt::format(<span class="stringliteral">&quot;{}&quot;</span>, m_value)));</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      p-&gt;setRenderHint(QPainter::Antialiasing, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    }</div>

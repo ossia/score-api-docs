@@ -110,7 +110,7 @@ var searchData=
   ['transportinterface_2609',['TransportInterface',['../class_transport_1_1_transport_interface.html',1,'Transport']]],
   ['transportinterfacelist_2610',['TransportInterfaceList',['../class_transport_1_1_transport_interface_list.html',1,'Transport']]],
   ['treemodel_2611',['TreeModel',['../class_tree_model.html',1,'']]],
-  ['treenode_2612',['TreeNode',['../class_tree_node.html',1,'TreeNode&lt; DataType &gt;'],['../struct_state_1_1_unit_model_1_1_tree_node.html',1,'State::UnitModel::TreeNode']]],
+  ['treenode_2612',['TreeNode',['../struct_state_1_1_unit_model_1_1_tree_node.html',1,'State::UnitModel::TreeNode'],['../class_tree_node.html',1,'TreeNode&lt; DataType &gt;']]],
   ['treenode_3c_20deviceexplorernode_20_3e_2613',['TreeNode&lt; DeviceExplorerNode &gt;',['../class_tree_node.html',1,'']]],
   ['treenode_3c_20exprdata_20_3e_2614',['TreeNode&lt; ExprData &gt;',['../class_tree_node.html',1,'']]],
   ['treenode_3c_20fixturedata_20_3e_2615',['TreeNode&lt; FixtureData &gt;',['../class_tree_node.html',1,'']]],

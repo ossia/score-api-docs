@@ -1,5 +1,7 @@
 var NAVTREEINDEX51 =
 {
+"score-plugin-js_2_j_s_2_qml_2_metatypes_8hpp_source.html":[13,0,724],
+"score-plugin-lv2_2_l_v2_2_application_plugin_8hpp_source.html":[13,0,55],
 "score-plugin-lv2_2_l_v2_2_effect_model_8hpp_source.html":[13,0,368],
 "score-plugin-lv2_2_l_v2_2_library_8hpp_source.html":[13,0,643],
 "score-plugin-lv2_2_l_v2_2_node_8hpp_source.html":[13,0,811],
@@ -247,7 +249,5 @@ var NAVTREEINDEX51 =
 "struct_avnd_jit_1_1outlet__vis.html#a70e906b64d461eb8dbfd93c6a6eeffc2":[12,0,3,3,2],
 "struct_control_1_1_auto_u_i_setup.html":[12,0,5,0],
 "struct_control_1_1_auto_u_i_setup.html#a0d61ef9789dc8200e2b559ca13b69b85":[12,0,5,0,7],
-"struct_control_1_1_auto_u_i_setup.html#a0eb025c2b87da9f013bb0287cbac228c":[12,0,5,0,5],
-"struct_control_1_1_auto_u_i_setup.html#a2e9236ede5211b04b540dd9c36721aa4":[12,0,5,0,1],
-"struct_control_1_1_auto_u_i_setup.html#a49931d0e2dee59ebf98097d2a43e8737":[12,0,5,0,2]
+"struct_control_1_1_auto_u_i_setup.html#a0eb025c2b87da9f013bb0287cbac228c":[12,0,5,0,5]
 };

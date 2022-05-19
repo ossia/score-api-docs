@@ -1,5 +1,7 @@
 var NAVTREEINDEX26 =
 {
+"class_process_1_1_script_dialog.html#a706834f7b56f5ecebf8b9aaf94b29eeb":[12,0,39,83,6],
+"class_process_1_1_script_dialog.html#a7845708fed0ea7c6200b99d9a0be1582":[12,0,39,83,8],
 "class_process_1_1_script_dialog.html#a8c2a5b38f731fe12e0dfaeef1a07b482":[12,0,39,83,4],
 "class_process_1_1_script_dialog.html#aa9fb90f1300726d1694e99d773de3f24":[12,0,39,83,2],
 "class_process_1_1_script_dialog.html#af349e6231806aff8aa0fa0dd04dea363":[12,0,39,83,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX26 =
 "class_protocols_1_1_o_s_c_query_enumerator.html#a193621de35319e280b139f0bc4db8971":[12,0,40,52,0],
 "class_protocols_1_1_o_s_c_query_enumerator.html#a940c6faa0111d23a70e82d0e11ee1460":[12,0,40,52,1],
 "class_protocols_1_1_o_s_c_query_protocol_factory.html":[12,0,40,53],
-"class_protocols_1_1_o_s_c_query_protocol_settings_widget.html":[12,0,40,54],
-"class_protocols_1_1_o_s_c_query_protocol_settings_widget.html#a130105deea125493915fa629dfd92966":[12,0,40,54,5],
-"class_protocols_1_1_o_s_c_query_protocol_settings_widget.html#a152db9f1e1b2b22119b0ae6777676b9a":[12,0,40,54,3]
+"class_protocols_1_1_o_s_c_query_protocol_settings_widget.html":[12,0,40,54]
 };
