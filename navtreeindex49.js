@@ -1,5 +1,13 @@
 var NAVTREEINDEX49 =
 {
+"classvst3_1_1_component_handler.html#ace7fbaa2a5fdce421746d42bfcac8403":[12,0,56,3,0],
+"classvst3_1_1_component_handler.html#ae846d464d97016e8c4a3affa8eb105c8":[12,0,56,3,12],
+"classvst3_1_1_component_handler.html#af43f205c7e521161d07aedf5ff449285":[12,0,56,3,6],
+"classvst3_1_1_component_handler.html#af5fb88f80275aa70a31c34050b03f159":[12,0,56,3,4],
+"classvst3_1_1_component_handler.html#af705eb01afc06b4090a145a760f076f3":[12,0,56,3,9],
+"classvst3_1_1_control_inlet.html":[12,0,56,4],
+"classvst3_1_1_control_inlet.html#a2470001645613d17a713c7a21da7ec54":[12,0,56,4,6],
+"classvst3_1_1_control_inlet.html#a6a172b89940290dac2fdc06e18d7a25d":[12,0,56,4,11],
 "classvst3_1_1_control_inlet.html#a74bd2711b6714cd568e87f73b9c56be6":[12,0,56,4,1],
 "classvst3_1_1_control_inlet.html#a773425cd187a79df0280675857bc41a6":[12,0,56,4,3],
 "classvst3_1_1_control_inlet.html#a799b9837ffefc320cb54d05ccb38605c":[12,0,56,4,9],
@@ -241,13 +249,5 @@ var NAVTREEINDEX49 =
 "classvst_1_1_set_control.html#a6e1ecd766fe20bf4b395a8d95c2b07e9":[12,0,55,14,3],
 "classvst_1_1_set_control.html#a70ad539fd5d521b36b33c220bd0a43d1":[12,0,55,14,4],
 "classvst_1_1_set_control.html#a74c71483cb6cfd0edbb594bee1e5b962":[12,0,55,14,2],
-"classvst_1_1_set_control.html#a8b74524fd6ba8f604675ff2d55d0c23d":[12,0,55,14,1],
-"classvst_1_1_set_control.html#a90326538c2efcdfaa84678a3c4da94b7":[12,0,55,14,0],
-"classvst_1_1_set_control.html#a96be35c48d7cf3161212da60b967c493":[12,0,55,14,5],
-"classvst_1_1_set_control.html#afbd725195573108f2284fb029dbeed90":[12,0,55,14,6],
-"classvst_1_1_settings_widget.html":[12,0,55,15],
-"classvst_1_1_settings_widget.html#a1972be9fc61d10c5364ecf006611018e":[12,0,55,15,6],
-"classvst_1_1_settings_widget.html#a42dede08be79600bc5f96ff57a483c2b":[12,0,55,15,2],
-"classvst_1_1_settings_widget.html#a680a2c3c6d9b9066190db6dd7ddad5fa":[12,0,55,15,0],
-"classvst_1_1_settings_widget.html#a831cb3b7c72554be08d8a0ad97a40e61":[12,0,55,15,4]
+"classvst_1_1_set_control.html#a8b74524fd6ba8f604675ff2d55d0c23d":[12,0,55,14,1]
 };

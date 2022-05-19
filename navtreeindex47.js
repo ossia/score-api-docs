@@ -1,5 +1,13 @@
 var NAVTREEINDEX47 =
 {
+"classscore_1_1_time_spin_box.html#ac42eb93965940a9943e2e033b9e18ff6":[12,0,46,271,3],
+"classscore_1_1_time_spin_box.html#ac7e1c180ec84a59d5f9fa8a3fe252ae2":[12,0,46,271,14],
+"classscore_1_1_time_spin_box.html#aca08c6109008e3f869253205d91445d5":[12,0,46,271,5],
+"classscore_1_1_time_spin_box.html#adf76ad42c99134fc2b25ff9ec7544e8f":[12,0,46,271,1],
+"classscore_1_1_time_spin_box.html#afc29a62983f31c83043de16484a51c9d":[12,0,46,271,16],
+"classscore_1_1_title_bar.html":[12,0,46,272],
+"classscore_1_1_title_bar.html#a027d64644c3fc7c70cdf0e315d21b72b":[12,0,46,272,2],
+"classscore_1_1_title_bar.html#a573ab12ab108becb4023a88ad4fd0d25":[12,0,46,272,3],
 "classscore_1_1_title_bar.html#abed664a5c10ac418cc9583e43ccfeb90":[12,0,46,272,0],
 "classscore_1_1_title_bar.html#ae31508fdd32034f241db876fea1ce5cb":[12,0,46,272,1],
 "classscore_1_1_toolbar.html":[12,0,46,274],
@@ -241,13 +249,5 @@ var NAVTREEINDEX47 =
 "classscore_1_1gfx_1_1_process_node.html#a4461f30294e2664993ae76b47caf0ac9":[12,0,46,2,37,5],
 "classscore_1_1gfx_1_1_process_node.html#a5eefadb34fb1f4cc12c50952550c7708":[12,0,46,2,37,1],
 "classscore_1_1gfx_1_1_process_node.html#a6be2e4bb46e6af46b569c62ef8e949c7":[12,0,46,2,37,7],
-"classscore_1_1gfx_1_1_process_node.html#a792b44a914901a8db7e76dd339775057":[12,0,46,2,37,4],
-"classscore_1_1gfx_1_1_process_node.html#abe3e5324b8df85751b01d0d02fbe49dd":[12,0,46,2,37,0],
-"classscore_1_1gfx_1_1_process_node.html#ac6e578b8679824c63eec08e754abc01b":[12,0,46,2,37,2],
-"classscore_1_1gfx_1_1_process_node.html#acb04418b3cfa2ba79d9789c4d8e913e1":[12,0,46,2,37,6],
-"classscore_1_1gfx_1_1_render_list.html":[12,0,46,2,41],
-"classscore_1_1gfx_1_1_render_list.html#a0185f40e450af9a59c9e1ac96b2c8e26":[12,0,46,2,41,1],
-"classscore_1_1gfx_1_1_render_list.html#a0b6c7af89c427d4d6d651558a636bc94":[12,0,46,2,41,0],
-"classscore_1_1gfx_1_1_render_list.html#a1be674c6e8c42ce80724f3a1ff3a9bd6":[12,0,46,2,41,7],
-"classscore_1_1gfx_1_1_render_list.html#a37cde7b19c5eee5009f717644af96ffd":[12,0,46,2,41,11]
+"classscore_1_1gfx_1_1_process_node.html#a792b44a914901a8db7e76dd339775057":[12,0,46,2,37,4]
 };

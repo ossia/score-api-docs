@@ -1,5 +1,13 @@
 var NAVTREEINDEX52 =
 {
+"struct_avnd_jit_1_1outlet__vis.html#a1e4b7cc17ef3b0e66114ebda713afbbf":[12,0,3,3,3],
+"struct_avnd_jit_1_1outlet__vis.html#a2977d32e5df06c9966539377dd78bd4c":[12,0,3,3,1],
+"struct_avnd_jit_1_1outlet__vis.html#a497ae6961a7d3febb47d04c4cf39bc0c":[12,0,3,3,0],
+"struct_avnd_jit_1_1outlet__vis.html#a56cb071bc93267f677d3969ae242a53f":[12,0,3,3,4],
+"struct_avnd_jit_1_1outlet__vis.html#a70e906b64d461eb8dbfd93c6a6eeffc2":[12,0,3,3,2],
+"struct_control_1_1_auto_u_i_setup.html":[12,0,5,0],
+"struct_control_1_1_auto_u_i_setup.html#a0d61ef9789dc8200e2b559ca13b69b85":[12,0,5,0,7],
+"struct_control_1_1_auto_u_i_setup.html#a0eb025c2b87da9f013bb0287cbac228c":[12,0,5,0,5],
 "struct_control_1_1_auto_u_i_setup.html#a2e9236ede5211b04b540dd9c36721aa4":[12,0,5,0,1],
 "struct_control_1_1_auto_u_i_setup.html#a49931d0e2dee59ebf98097d2a43e8737":[12,0,5,0,2],
 "struct_control_1_1_auto_u_i_setup.html#a8014a5c63dd6975b23430a842113b5ee":[12,0,5,0,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX52 =
 "struct_control_1_1_x_y_slider.html#a53e063b55c3c4f66ef7013f5eed3ca1f":[12,0,5,43,0],
 "struct_control_1_1_x_y_slider.html#a57a337a4a468e7a8a5b3acce05f907a7":[12,0,5,43,9],
 "struct_control_1_1_x_y_slider.html#a5ed3ffb84f7d5fbca933d1304d995a27":[12,0,5,43,8],
-"struct_control_1_1_x_y_slider.html#a74c4c8f19e9d14a017d53709baec03bd":[12,0,5,43,5],
-"struct_control_1_1_x_y_slider.html#a92b957d40a0e9d6f74fe502d598306b0":[12,0,5,43,10],
-"struct_control_1_1_x_y_slider.html#a9935a102dba80e9bbb834c7947227f23":[12,0,5,43,2],
-"struct_control_1_1_x_y_slider.html#a9ca6175a57b20bfdf186064c5a404821":[12,0,5,43,1],
-"struct_control_1_1_x_y_slider.html#aac4703400822b3e8d17b1b50d9fb1ec4":[12,0,5,43,3],
-"struct_control_1_1_x_y_slider.html#ac64b0e4ac97b4dd1e47c7940bc0ecbb0":[12,0,5,43,6],
-"struct_control_1_1_x_y_slider.html#aca3c2ed1b51e880871cd4dcadfc071cb":[12,0,5,43,11],
-"struct_control_1_1inlet__visitor.html":[12,0,5,26],
-"struct_control_1_1inlet__visitor.html#a2ccf53b233dd0fc70d8f59240c7df8df":[12,0,5,26,7]
+"struct_control_1_1_x_y_slider.html#a74c4c8f19e9d14a017d53709baec03bd":[12,0,5,43,5]
 };
