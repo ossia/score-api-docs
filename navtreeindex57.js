@@ -1,5 +1,11 @@
 var NAVTREEINDEX57 =
 {
+"struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html#a69f9ddbd93fc2eec98bdd2f216c03ca2":[12,0,27,7,2],
+"struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html#a92f812fc226511f8e1032f23355a6d1a":[12,0,27,7,6],
+"struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html#ad3494f8b517f23709c2ded5eda07704a":[12,0,27,7,5],
+"struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html#aedee1181654fe765f3525b494ead1960":[12,0,27,7,3],
+"struct_l_v2_1_1_message.html":[12,0,27,8],
+"struct_l_v2_1_1_message.html#a62798ec298e9e87562329f0208696072":[12,0,27,8,2],
 "struct_l_v2_1_1_message.html#ab67e17a4294a678ec3cf73a0d1f53199":[12,0,27,8,1],
 "struct_l_v2_1_1_message.html#aef053fceebc24fa4be2201b24d2ef49b":[12,0,27,8,0],
 "struct_l_v2_1_1lv2__node.html":[12,0,27,5],
@@ -243,11 +249,5 @@ var NAVTREEINDEX57 =
 "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a100540fdb72e407e5835ad25992539a3":[12,0,29,3,12,0,0],
 "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a2ac8e9f8a434af49d65a9dc80ba7adc0":[12,0,29,3,12,0,9],
 "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a46cec68e3ff3b7ce200cb14f063dc821":[12,0,29,3,12,0,5],
-"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a498ca509857b4167250a2d6eef408518":[12,0,29,3,12,0,1],
-"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a4b2846ec31239949cab9a4437a666e88":[12,0,29,3,12,0,12],
-"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a4c6e1711e6c00d58238b88e3460ab5ff":[12,0,29,3,12,0,7],
-"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a5269849f2664a7ac24a711ac3bd1a75c":[12,0,29,3,12,0,3],
-"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a57a9d270e570bf3e996a66582630c539":[12,0,29,3,12,0,2],
-"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a6b46f905186cd97b3ebcbab8d5c287a8":[12,0,29,3,12,0,4],
-"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a7d14f121f35402db544ff12527e9f297":[12,0,29,3,12,0,6]
+"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a498ca509857b4167250a2d6eef408518":[12,0,29,3,12,0,1]
 };

@@ -1,5 +1,11 @@
 var NAVTREEINDEX54 =
 {
+"struct_device_1_1_address_settings_common.html#a63d79491eed338e66f26f1d6c55a01b0":[12,0,9,3,3],
+"struct_device_1_1_address_settings_common.html#a6d753213a5ba8714fba47eee0285c7ed":[12,0,9,3,11],
+"struct_device_1_1_address_settings_common.html#a8f80c9aebe241c5335622dad8e78217f":[12,0,9,3,6],
+"struct_device_1_1_address_settings_common.html#a925d8dde6e147495c14972a3a771e7e3":[12,0,9,3,8],
+"struct_device_1_1_address_settings_common.html#a92d44e9fd0118a29ed2af623429649c9":[12,0,9,3,4],
+"struct_device_1_1_address_settings_common.html#aa40ccac530fd924f74b4b4b206547891":[12,0,9,3,12],
 "struct_device_1_1_address_settings_common.html#ad93ef2485152f7ccf888462db053e873":[12,0,9,3,14],
 "struct_device_1_1_address_settings_common.html#ae2e6593bd13675bb6dfcc47e68bedb81":[12,0,9,3,7],
 "struct_device_1_1_address_settings_common.html#af4e74a3362672d6a7b29fd1ee9d84e20":[12,0,9,3,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX54 =
 "struct_explorer_1_1make__dataspace.html#a186042e23c167f558fa0f5cc8e2179d1":[12,0,12,41,2],
 "struct_explorer_1_1make__dataspace.html#a73883926ef49386a8bed5a982e8ce0ae":[12,0,12,41,3],
 "struct_explorer_1_1make__dataspace.html#abfc7f9e815a1a9f00b77363007e2f151":[12,0,12,41,1],
-"struct_explorer_1_1make__dataspace.html#aff8bbc877049ee414d0d819bf194df2f":[12,0,12,41,0],
-"struct_explorer_1_1make__unit.html":[12,0,12,42],
-"struct_explorer_1_1make__unit.html#a8e3594ff27b8034620986805c5bf6d99":[12,0,12,42,0],
-"struct_explorer_1_1make__unit.html#aae09056d9e19924857b4e91137b1c81c":[12,0,12,42,1],
-"struct_explorer_1_1print__node__rec.html":[12,0,12,47],
-"struct_explorer_1_1print__node__rec.html#adfd3bfea9e906736d440abe2f447e71d":[12,0,12,47,0],
-"struct_f_w___t.html":[12,0,111]
+"struct_explorer_1_1make__dataspace.html#aff8bbc877049ee414d0d819bf194df2f":[12,0,12,41,0]
 };

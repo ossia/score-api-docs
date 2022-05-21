@@ -1,5 +1,11 @@
 var NAVTREEINDEX61 =
 {
+"struct_process_1_1_style.html#a89e6d28ce279696c5051a69e4a915bd4":[12,0,39,88,20],
+"struct_process_1_1_style.html#a8a47f27e3d1976dd2bba4fd3908f2363":[12,0,39,88,52],
+"struct_process_1_1_style.html#a8dd956a305878150e73786e9a4c2c389":[12,0,39,88,29],
+"struct_process_1_1_style.html#a8e7586adb50ac033ac3fe2c55e74b19e":[12,0,39,88,57],
+"struct_process_1_1_style.html#a9045d5ba8297035b0da980bf5d0e2e35":[12,0,39,88,35],
+"struct_process_1_1_style.html#a99d6f6d0fb951ff793189046a5137691":[12,0,39,88,89],
 "struct_process_1_1_style.html#a9c10804f5146da09ac7131c81a2922ce":[12,0,39,88,50],
 "struct_process_1_1_style.html#a9c452c6e168be5aa566f8dd2c0d3931b":[12,0,39,88,7],
 "struct_process_1_1_style.html#a9c9998cd841d00d30fe05528e10886c7":[12,0,39,88,22],
@@ -243,11 +249,5 @@ var NAVTREEINDEX61 =
 "struct_q_meta_type_id_3_01_protocols_1_1_serial_specific_settings_01_4.html#a6a085d933ae79f43497d654e914a8feda40c28a787f40291662104b914a39eb51":[12,0,277,0],
 "struct_q_meta_type_id_3_01_protocols_1_1_w_s_specific_settings_01_4.html":[12,0,279],
 "struct_q_meta_type_id_3_01_protocols_1_1_w_s_specific_settings_01_4.html#a341374336d2c496b9336ea05fb0a42bca68cc95248c31f8fee3fd40929acd8fbd":[12,0,279,0],
-"struct_q_meta_type_id_3_01_protocols_1_1_wiimote_specific_settings_01_4.html":[12,0,278],
-"struct_q_meta_type_id_3_01_protocols_1_1_wiimote_specific_settings_01_4.html#a3fc13c03397df2b433a74f069109ff72aa130101d7ea688d14a1cdde9e788d274":[12,0,278,0],
-"struct_q_meta_type_id_3_01_q_pointer_3_01_process_1_1_layer_presenter_01_4_01_4.html":[12,0,280],
-"struct_q_meta_type_id_3_01_q_pointer_3_01_process_1_1_layer_presenter_01_4_01_4.html#a307b41c875ba625e779bd3d3d54694b2a20982cba4d72782ecebcbf3d2498fe4a":[12,0,280,0],
-"struct_q_meta_type_id_3_01_q_pointer_3_01_scenario_1_1_interval_model_01_4_01_4.html":[12,0,281],
-"struct_q_meta_type_id_3_01_q_pointer_3_01_scenario_1_1_interval_model_01_4_01_4.html#a9824946b1a8a436e2185c7355098850ca248977316a22a5ad7cd9ab51e58ea5f5":[12,0,281,0],
-"struct_q_meta_type_id_3_01_q_vector_3_01_q_image_01_5_01_4_01_4.html":[12,0,282]
+"struct_q_meta_type_id_3_01_protocols_1_1_wiimote_specific_settings_01_4.html":[12,0,278]
 };
