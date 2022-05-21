@@ -130,8 +130,8 @@ var NAVTREEINDEX19 =
 "class_library_1_1_library_interface.html#a16c71b1485387ab19b5be57ab4721836":[12,0,25,5,1],
 "class_library_1_1_library_interface.html#a1e216231ba9d432e2bd82b3ec7480916":[12,0,25,5,8],
 "class_library_1_1_library_interface.html#a1eccb9dba1be448ba90a4fc2c8abb0fa":[12,0,25,5,7],
-"class_library_1_1_library_interface.html#a2c6577b43766a9afe7b839f255152718":[12,0,25,5,5],
 "class_library_1_1_library_interface.html#a455be7b1597cb898e74192515db8584d":[12,0,25,5,0],
+"class_library_1_1_library_interface.html#a811b0e0c4fe06b9e1daecbc50d48cfdb":[12,0,25,5,5],
 "class_library_1_1_library_interface.html#ad4dca4cda932461ef5750dece185322e":[12,0,25,5,3],
 "class_library_1_1_library_interface.html#ad69a80074d63446e00f9c7ff181657a8":[12,0,25,5,4],
 "class_library_1_1_library_interface.html#ae19f3411affc282e71c3103c88eee1d7":[12,0,25,5,6],
@@ -146,6 +146,11 @@ var NAVTREEINDEX19 =
 "class_library_1_1_preset_item_model.html#a376f42b4781e2a2bbbb0f6b7da83d6ca":[12,0,25,8,2],
 "class_library_1_1_preset_item_model.html#a7c95d6c7f84dbf6d30c9b4063094d359":[12,0,25,8,0],
 "class_library_1_1_preset_library_handler.html":[12,0,25,9],
+"class_library_1_1_preset_library_handler.html#a2aaee7359e4018fe5b9da3d2e4afe423":[12,0,25,9,1],
+"class_library_1_1_preset_library_handler.html#a2c6958768c50ada586769da67b6a8587":[12,0,25,9,0],
+"class_library_1_1_preset_library_handler.html#a38d63f7900949e74bca1416df17e65b6":[12,0,25,9,2],
+"class_library_1_1_preset_library_handler.html#a635af835e7873d36573945da2c2755f1":[12,0,25,9,4],
+"class_library_1_1_preset_library_handler.html#afe73231be9a7cf1d3d2bc5662deebd10":[12,0,25,9,3],
 "class_library_1_1_preset_list_view.html":[12,0,25,10],
 "class_library_1_1_process_panel.html":[12,0,25,13],
 "class_library_1_1_process_panel.html#a8a710bd2d01ec1c9611e8a0a9086ea72":[12,0,25,13,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX19 =
 "class_local_tree_1_1_event.html#aa8402341556fa766731acc3d310ceb0c":[12,0,26,6,1],
 "class_local_tree_1_1_interval.html":[12,0,26,8],
 "class_local_tree_1_1_interval.html#aac54b04f8db392b114c6a84bfc7c0371":[12,0,26,8,1],
-"class_local_tree_1_1_interval.html#af2c0bae580847e6c51cbae605ee1471e":[12,0,26,8,0],
-"class_local_tree_1_1_interval_base.html":[12,0,26,9],
-"class_local_tree_1_1_interval_base.html#a19a19a5f9f50dc68bd8aa6f245c3f2f0":[12,0,26,9,5],
-"class_local_tree_1_1_interval_base.html#a681d06fb16340dba3fbb0c2b1fb6367a":[12,0,26,9,1],
-"class_local_tree_1_1_interval_base.html#a7bff80bd93105bf7dc6f03ea5cac83a9":[12,0,26,9,8],
-"class_local_tree_1_1_interval_base.html#a9185d7633abe7631ffcedbe2c1e1d50f":[12,0,26,9,3]
+"class_local_tree_1_1_interval.html#af2c0bae580847e6c51cbae605ee1471e":[12,0,26,8,0]
 };

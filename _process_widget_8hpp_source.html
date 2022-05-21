@@ -130,44 +130,53 @@ $(document).ready(function(){initNavTree('_process_widget_8hpp_source.html','');
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;7fc3a366-7792-489f-aca9-79d9f6d4415d&quot;</span>)</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  QSet&lt;QString&gt; acceptedFiles() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">void</span> setup(</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <a class="code" href="class_library_1_1_processes_item_model.html">Library::ProcessesItemModel</a>&amp; model,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; ctx) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span> addPath(std::string_view path) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  QSet&lt;QString&gt; acceptedFiles() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  QSet&lt;QString&gt; acceptedMimeTypes() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">void</span> setup(</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <a class="code" href="class_library_1_1_processes_item_model.html">Library::ProcessesItemModel</a>&amp; model,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; ctx) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="class_process_1_1_application_plugin.html">Process::ApplicationPlugin</a>* presetLib{};</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_factory_list.html">Process::ProcessFactoryList</a>* processes{};</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_library_1_1_process_widget.html">   45</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_LIBRARY_EXPORT <a class="code" href="class_library_1_1_process_widget.html">ProcessWidget</a> : <span class="keyword">public</span> QWidget</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="class_library_1_1_process_widget.html">ProcessWidget</a>(<span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; ctx, QWidget* parent);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  ~<a class="code" href="class_library_1_1_process_widget.html">ProcessWidget</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="class_library_1_1_processes_item_model.html">ProcessesItemModel</a>&amp; processModel() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> *m_processModel; }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_library_1_1_process_tree_view.html">ProcessTreeView</a>&amp; processView() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> m_tv; }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="class_library_1_1_process_tree_view.html">ProcessTreeView</a>&amp; processView() noexcept { <span class="keywordflow">return</span> m_tv; }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="class_library_1_1_processes_item_model.html">ProcessesItemModel</a>* m_processModel{};</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="class_library_1_1_preset_item_model.html">PresetItemModel</a>* m_presetModel{};</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="class_library_1_1_process_tree_view.html">ProcessTreeView</a> m_tv;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="class_library_1_1_preset_list_view.html">PresetListView</a> m_lv;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  QWidget m_preview;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  QWidget* m_previewChild{};</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> addPath(std::string_view path) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">bool</span> onDrop(</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <span class="keyword">const</span> QMimeData&amp; mime,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keywordtype">int</span> row,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keywordtype">int</span> column,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keyword">const</span> QDir&amp; parent) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="class_process_1_1_application_plugin.html">Process::ApplicationPlugin</a>* presetLib{};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_factory_list.html">Process::ProcessFactoryList</a>* processes{};</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_library_1_1_process_widget.html">   54</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_LIBRARY_EXPORT <a class="code" href="class_library_1_1_process_widget.html">ProcessWidget</a> : <span class="keyword">public</span> QWidget</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="class_library_1_1_process_widget.html">ProcessWidget</a>(<span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; ctx, QWidget* parent);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  ~<a class="code" href="class_library_1_1_process_widget.html">ProcessWidget</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="class_library_1_1_processes_item_model.html">ProcessesItemModel</a>&amp; processModel() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> *m_processModel; }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_library_1_1_process_tree_view.html">ProcessTreeView</a>&amp; processView() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> m_tv; }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="class_library_1_1_process_tree_view.html">ProcessTreeView</a>&amp; processView() noexcept { <span class="keywordflow">return</span> m_tv; }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="class_library_1_1_processes_item_model.html">ProcessesItemModel</a>* m_processModel{};</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="class_library_1_1_preset_item_model.html">PresetItemModel</a>* m_presetModel{};</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="class_library_1_1_process_tree_view.html">ProcessTreeView</a> m_tv;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="class_library_1_1_preset_list_view.html">PresetListView</a> m_lv;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  QWidget m_preview;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  QWidget* m_previewChild{};</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1371</div></div>
 <div class="ttc" id="aclass_library_1_1_processes_item_model_html"><div class="ttname"><a href="class_library_1_1_processes_item_model.html">Library::ProcessesItemModel</a></div><div class="ttdef"><b>Definition:</b> ProcessesItemModel.hpp:42</div></div>
 <div class="ttc" id="aclass_library_1_1_preset_library_handler_html"><div class="ttname"><a href="class_library_1_1_preset_library_handler.html">Library::PresetLibraryHandler</a></div><div class="ttdef"><b>Definition:</b> ProcessWidget.hpp:27</div></div>
-<div class="ttc" id="aclass_library_1_1_library_interface_html"><div class="ttname"><a href="class_library_1_1_library_interface.html">Library::LibraryInterface</a></div><div class="ttdef"><b>Definition:</b> LibraryInterface.hpp:20</div></div>
+<div class="ttc" id="aclass_library_1_1_library_interface_html"><div class="ttname"><a href="class_library_1_1_library_interface.html">Library::LibraryInterface</a></div><div class="ttdef"><b>Definition:</b> LibraryInterface.hpp:21</div></div>
 <div class="ttc" id="aclass_library_1_1_preset_list_view_html"><div class="ttname"><a href="class_library_1_1_preset_list_view.html">Library::PresetListView</a></div><div class="ttdef"><b>Definition:</b> PresetListView.hpp:8</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:146</div></div>
 <div class="ttc" id="astructscore_1_1_g_u_i_application_context_html"><div class="ttname"><a href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a></div><div class="ttdoc">Specializes ApplicationContext with the QMainWindow.</div><div class="ttdef"><b>Definition:</b> GUIApplicationContext.hpp:14</div></div>
@@ -175,7 +184,7 @@ $(document).ready(function(){initNavTree('_process_widget_8hpp_source.html','');
 <div class="ttc" id="aclass_library_1_1_preset_item_model_html"><div class="ttname"><a href="class_library_1_1_preset_item_model.html">Library::PresetItemModel</a></div><div class="ttdef"><b>Definition:</b> PresetItemModel.hpp:17</div></div>
 <div class="ttc" id="aclass_library_1_1_process_tree_view_html"><div class="ttname"><a href="class_library_1_1_process_tree_view.html">Library::ProcessTreeView</a></div><div class="ttdef"><b>Definition:</b> ProcessTreeView.hpp:13</div></div>
 <div class="ttc" id="aclass_process_1_1_application_plugin_html"><div class="ttname"><a href="class_process_1_1_application_plugin.html">Process::ApplicationPlugin</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/ApplicationPlugin.hpp:9</div></div>
-<div class="ttc" id="aclass_library_1_1_process_widget_html"><div class="ttname"><a href="class_library_1_1_process_widget.html">Library::ProcessWidget</a></div><div class="ttdef"><b>Definition:</b> ProcessWidget.hpp:45</div></div>
+<div class="ttc" id="aclass_library_1_1_process_widget_html"><div class="ttname"><a href="class_library_1_1_process_widget.html">Library::ProcessWidget</a></div><div class="ttdef"><b>Definition:</b> ProcessWidget.hpp:54</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

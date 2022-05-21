@@ -1,5 +1,10 @@
 var NAVTREEINDEX54 =
 {
+"struct_device_1_1_address_settings_common.html#ad93ef2485152f7ccf888462db053e873":[12,0,9,3,14],
+"struct_device_1_1_address_settings_common.html#ae2e6593bd13675bb6dfcc47e68bedb81":[12,0,9,3,7],
+"struct_device_1_1_address_settings_common.html#af4e74a3362672d6a7b29fd1ee9d84e20":[12,0,9,3,0],
+"struct_device_1_1_device_capas.html":[12,0,9,4],
+"struct_device_1_1_device_capas.html#a1555745c761eb83fd3cd8ad81875ceff":[12,0,9,4,11],
 "struct_device_1_1_device_capas.html#a167332699993ab146aeff2f5e01b064a":[12,0,9,4,9],
 "struct_device_1_1_device_capas.html#a4b116ab304b6d2173151ced60fd7dc88":[12,0,9,4,3],
 "struct_device_1_1_device_capas.html#a698891cc2710a29bfee4f1d7565c47cc":[12,0,9,4,7],
@@ -244,10 +249,5 @@ var NAVTREEINDEX54 =
 "struct_explorer_1_1make__unit.html#aae09056d9e19924857b4e91137b1c81c":[12,0,12,42,1],
 "struct_explorer_1_1print__node__rec.html":[12,0,12,47],
 "struct_explorer_1_1print__node__rec.html#adfd3bfea9e906736d440abe2f447e71d":[12,0,12,47,0],
-"struct_f_w___t.html":[12,0,111],
-"struct_f_w___t.html#a0c4bda63e69d61b6f79ffc9768c4a91d":[12,0,111,0],
-"struct_factory_builder.html":[12,0,106],
-"struct_factory_builder_3_01score_1_1_g_u_i_application_context_00_01_scenario_1_1_scenario_temporal_layer_factory_01_4.html":[12,0,107],
-"struct_faust_1_1_language_spec.html":[12,0,15,2],
-"struct_faust_1_1_u_i.html":[12,0,15,4]
+"struct_f_w___t.html":[12,0,111]
 };

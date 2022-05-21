@@ -1,5 +1,10 @@
 var NAVTREEINDEX64 =
 {
+"struct_scenario_1_1_processes_being_copied.html#a507827481255a06dd6d5c233038b28d9":[12,0,45,194,2],
+"struct_scenario_1_1_release_on_slot_handle___event.html":[12,0,45,202],
+"struct_scenario_1_1_release_on_slot_handle___event.html#a4b4c87673b6020f56753ed074b2ae501":[12,0,45,202,2],
+"struct_scenario_1_1_release_on_slot_handle___event.html#ab4e6ca69c4800da5447c3122a94a004e":[12,0,45,202,0],
+"struct_scenario_1_1_release_on_slot_handle___event.html#ab6dac17db753bf341a8a2774c3b5fe94":[12,0,45,202,1],
 "struct_scenario_1_1_request_overlay_menu_callback.html":[12,0,45,204],
 "struct_scenario_1_1_request_overlay_menu_callback.html#a54bb32dd9633e148e2a27d9db62e80d2":[12,0,45,204,2],
 "struct_scenario_1_1_request_overlay_menu_callback.html#a7013fcb93cb63a7a0d4f6e2bbde1a6e0":[12,0,45,204,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX64 =
 "struct_state_1_1_destination_qualifiers.html#a9cdb9c87a5aa0158ca5fb041886acb95":[12,0,50,14,5],
 "struct_state_1_1_destination_qualifiers.html#aa90428d016c808e57ff72a80fffab409":[12,0,50,14,9],
 "struct_state_1_1_destination_qualifiers.html#ab6dab9bf66b778a2ad7cdb098169baea":[12,0,50,14,10],
-"struct_state_1_1_destination_qualifiers.html#ac9c97185a053de0727405508d569ed89":[12,0,50,14,11],
-"struct_state_1_1_destination_qualifiers.html#ad2a9c604966454cc748fc8698e7611e9":[12,0,50,14,3],
-"struct_state_1_1_destination_qualifiers.html#aebc9bf16775ac6f45e415f0c8ff0fa22":[12,0,50,14,7],
-"struct_state_1_1_domain.html":[12,0,50,16],
-"struct_state_1_1_domain.html#a0f9f01cd833a0dd44e6893cb6677c7a9":[12,0,50,16,1],
-"struct_state_1_1_domain.html#a294edc07406f70672c3e08c6219b6746":[12,0,50,16,7]
+"struct_state_1_1_destination_qualifiers.html#ac9c97185a053de0727405508d569ed89":[12,0,50,14,11]
 };

@@ -1,5 +1,10 @@
 var NAVTREEINDEX58 =
 {
+"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a826da189cb3f15cdaeae01c17128c2fd":[12,0,29,3,12,0,10],
+"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#aab8888ee6fa10a9ed0ebdcc19f3c4c24":[12,0,29,3,12,0,8],
+"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_q_painter_cleanup.html":[12,0,29,3,12,1],
+"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_q_painter_cleanup.html#a1836516eb4ffffc64f1162d865448e04":[12,0,29,3,12,1,1],
+"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_q_painter_cleanup.html#a5bce0d50bcf1b9c22d99acaa2acd8b7b":[12,0,29,3,12,1,4],
 "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_q_painter_cleanup.html#a8c1c9ad1c869b8e652733958e30f3376":[12,0,29,3,12,1,0],
 "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_q_painter_cleanup.html#a96335364c4a1cb827c0b089ce339973e":[12,0,29,3,12,1,2],
 "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_q_painter_cleanup.html#ac3e78bc35455885ea8648454d74f3ef4":[12,0,29,3,12,1,3],
@@ -244,10 +249,5 @@ var NAVTREEINDEX58 =
 "struct_nodes_1_1_factor_oracle2_m_i_d_i_1_1_node_1_1_state.html#a08aae0a8c5e2f979375362ab2871abfd":[12,0,33,12,0,1,2],
 "struct_nodes_1_1_factor_oracle2_m_i_d_i_1_1_node_1_1_state.html#a2e7db6244f30281dda4b9be72280603b":[12,0,33,12,0,1,3],
 "struct_nodes_1_1_factor_oracle2_m_i_d_i_1_1_node_1_1_state.html#a9ee9073fda527b7cb854015cc5a1f2a4":[12,0,33,12,0,1,4],
-"struct_nodes_1_1_factor_oracle2_m_i_d_i_1_1_node_1_1_state.html#ac15f2524c0f6da7d4ce6ea3ac150eba3":[12,0,33,12,0,1,0],
-"struct_nodes_1_1_factor_oracle2_m_i_d_i_1_1_node_1_1_state.html#ae6703f1f87307fb640b6d8261f1079e9":[12,0,33,12,0,1,1],
-"struct_nodes_1_1_factor_oracle_1_1_node.html":[12,0,33,10,1],
-"struct_nodes_1_1_factor_oracle_1_1_node.html#a75632f522ba757348f89d0c70ce6988f":[12,0,33,10,1,2],
-"struct_nodes_1_1_factor_oracle_1_1_node_1_1_metadata.html":[12,0,33,10,1,0],
-"struct_nodes_1_1_factor_oracle_1_1_node_1_1_state.html":[12,0,33,10,1,1]
+"struct_nodes_1_1_factor_oracle2_m_i_d_i_1_1_node_1_1_state.html#ac15f2524c0f6da7d4ce6ea3ac150eba3":[12,0,33,12,0,1,0]
 };

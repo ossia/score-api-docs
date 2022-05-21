@@ -95,6 +95,7 @@ $(document).ready(function(){initNavTree('class_library_1_1_preset_library_handl
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_library_1_1_preset_library_handler-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Library::PresetLibraryHandler Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -111,12 +112,24 @@ Inheritance diagram for Library::PresetLibraryHandler:</div>
   </map>
 </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a2c6958768c50ada586769da67b6a8587"><td class="memItemLeft" align="right" valign="top"><a id="a2c6958768c50ada586769da67b6a8587"></a>
+QSet&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>acceptedFiles</b> () const noexcept override</td></tr>
+<tr class="separator:a2c6958768c50ada586769da67b6a8587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aaee7359e4018fe5b9da3d2e4afe423"><td class="memItemLeft" align="right" valign="top"><a id="a2aaee7359e4018fe5b9da3d2e4afe423"></a>
+QSet&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>acceptedMimeTypes</b> () const noexcept override</td></tr>
+<tr class="separator:a2aaee7359e4018fe5b9da3d2e4afe423"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a635af835e7873d36573945da2c2755f1"><td class="memItemLeft" align="right" valign="top"><a id="a635af835e7873d36573945da2c2755f1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setup</b> (<a class="el" href="class_library_1_1_processes_item_model.html">Library::ProcessesItemModel</a> &amp;model, const <a class="el" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a> &amp;ctx) override</td></tr>
+<tr class="separator:a635af835e7873d36573945da2c2755f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d63f7900949e74bca1416df17e65b6"><td class="memItemLeft" align="right" valign="top"><a id="a38d63f7900949e74bca1416df17e65b6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addPath</b> (std::string_view path) override</td></tr>
+<tr class="separator:a38d63f7900949e74bca1416df17e65b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe73231be9a7cf1d3d2bc5662deebd10"><td class="memItemLeft" align="right" valign="top"><a id="afe73231be9a7cf1d3d2bc5662deebd10"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>onDrop</b> (const QMimeData &amp;mime, int row, int column, const QDir &amp;parent) override</td></tr>
+<tr class="separator:afe73231be9a7cf1d3d2bc5662deebd10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_library_1_1_library_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_library_1_1_library_interface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_library_1_1_library_interface.html">Library::LibraryInterface</a></td></tr>
-<tr class="memitem:afd4ca148bc062a06e9512bcd597bf2df inherit pub_methods_class_library_1_1_library_interface"><td class="memItemLeft" align="right" valign="top"><a id="afd4ca148bc062a06e9512bcd597bf2df"></a>
-virtual QSet&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>acceptedMimeTypes</b> () const noexcept</td></tr>
-<tr class="separator:afd4ca148bc062a06e9512bcd597bf2df inherit pub_methods_class_library_1_1_library_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1eccb9dba1be448ba90a4fc2c8abb0fa inherit pub_methods_class_library_1_1_library_interface"><td class="memItemLeft" align="right" valign="top"><a id="a1eccb9dba1be448ba90a4fc2c8abb0fa"></a>
 virtual QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>previewWidget</b> (const QString &amp;path, QWidget *parent) const noexcept</td></tr>
 <tr class="separator:a1eccb9dba1be448ba90a4fc2c8abb0fa inherit pub_methods_class_library_1_1_library_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,9 +139,6 @@ virtual QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>previewW
 <tr class="memitem:a1e216231ba9d432e2bd82b3ec7480916 inherit pub_methods_class_library_1_1_library_interface"><td class="memItemLeft" align="right" valign="top"><a id="a1e216231ba9d432e2bd82b3ec7480916"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>removePath</b> (std::string_view)</td></tr>
 <tr class="separator:a1e216231ba9d432e2bd82b3ec7480916 inherit pub_methods_class_library_1_1_library_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c6577b43766a9afe7b839f255152718 inherit pub_methods_class_library_1_1_library_interface"><td class="memItemLeft" align="right" valign="top"><a id="a2c6577b43766a9afe7b839f255152718"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>onDrop</b> (<a class="el" href="class_library_1_1_file_system_model.html">FileSystemModel</a> &amp;model, const QMimeData &amp;mime, int row, int column, const QModelIndex &amp;parent)</td></tr>
-<tr class="separator:a2c6577b43766a9afe7b839f255152718 inherit pub_methods_class_library_1_1_library_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad69a80074d63446e00f9c7ff181657a8 inherit pub_methods_class_library_1_1_library_interface"><td class="memItemLeft" align="right" valign="top"><a id="ad69a80074d63446e00f9c7ff181657a8"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>onDoubleClick</b> (const QString &amp;path, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx)</td></tr>
 <tr class="separator:ad69a80074d63446e00f9c7ff181657a8 inherit pub_methods_class_library_1_1_library_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
