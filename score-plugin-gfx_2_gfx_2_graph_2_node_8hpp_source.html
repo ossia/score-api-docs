@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('score-plugin-gfx_2_gfx_2_graph_2_node_
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">class </span>GenericNodeRenderer;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">class </span>NodeRenderer;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">using</span> gfx_input = ossia::variant&lt;std::monostate, ossia::value, ossia::audio_vector&gt;;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">using</span> gfx_input = ossia::variant&lt;ossia::monostate, ossia::value, ossia::audio_vector&gt;;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_message.html">   35</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structscore_1_1gfx_1_1_message.html">Message</a></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
@@ -169,7 +169,7 @@ $(document).ready(function(){initNavTree('score-plugin-gfx_2_gfx_2_graph_2_node_
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">void</span> process(<span class="keyword">const</span> ossia::token_request&amp; tk);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordtype">void</span> process(int32_t port, <span class="keyword">const</span> ossia::value&amp; v);</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordtype">void</span> process(int32_t port, <span class="keyword">const</span> ossia::audio_vector&amp; v);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">void</span> process(int32_t port, std::monostate) <span class="keyword">const</span> noexcept { }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">void</span> process(int32_t port, ossia::monostate) <span class="keyword">const</span> noexcept { }</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;};</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
 <div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_node_model.html">  114</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="classscore_1_1gfx_1_1_node_model.html">NodeModel</a> : <span class="keyword">public</span> <a class="code" href="classscore_1_1gfx_1_1_process_node.html">score::gfx::ProcessNode</a></div>
