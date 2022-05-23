@@ -1,5 +1,6 @@
 var NAVTREEINDEX50 =
 {
+"classvst_1_1_remove_control.html#af3931d58aa59990c75c43bb208ac5e38":[12,0,55,13,0],
 "classvst_1_1_set_control.html":[12,0,55,14],
 "classvst_1_1_set_control.html#a6e1ecd766fe20bf4b395a8d95c2b07e9":[12,0,55,14,3],
 "classvst_1_1_set_control.html#a70ad539fd5d521b36b33c220bd0a43d1":[12,0,55,14,4],
@@ -118,8 +119,8 @@ var NAVTREEINDEX50 =
 "namespace_automation.html":[11,0,0],
 "namespace_curve.html":[12,0,7],
 "namespace_curve.html":[11,0,1],
-"namespace_device.html":[12,0,9],
 "namespace_device.html":[11,0,2],
+"namespace_device.html":[12,0,9],
 "namespace_engine.html":[11,0,3],
 "namespace_engine.html":[12,0,10],
 "namespace_engine_1_1_network.html":[11,0,3,0],
@@ -129,15 +130,15 @@ var NAVTREEINDEX50 =
 "namespace_gfx.html":[11,0,5],
 "namespace_inspector.html":[11,0,6],
 "namespace_inspector.html":[12,0,19],
-"namespace_local_tree.html":[11,0,7],
 "namespace_local_tree.html":[12,0,26],
+"namespace_local_tree.html":[11,0,7],
 "namespace_plugin_loader.html":[11,0,8],
 "namespace_process.html":[11,0,9],
 "namespace_process.html":[12,0,39],
 "namespace_scenario.html":[12,0,45],
 "namespace_scenario.html":[11,0,10],
-"namespace_state.html":[11,0,12],
 "namespace_state.html":[12,0,50],
+"namespace_state.html":[11,0,12],
 "namespacemembers.html":[11,1,0],
 "namespacemembers_enum.html":[11,1,3],
 "namespacemembers_eval.html":[11,1,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX50 =
 "score-plugin-gfx_2_gfx_2_images_2_layer_8hpp_source.html":[13,0,622],
 "score-plugin-gfx_2_gfx_2_images_2_process_8hpp_source.html":[13,0,937],
 "score-plugin-gfx_2_gfx_2_settings_2_factory_8hpp_source.html":[13,0,440],
-"score-plugin-gfx_2_gfx_2_settings_2_model_8hpp_source.html":[13,0,771],
-"score-plugin-gfx_2_gfx_2_settings_2_view_8hpp_source.html":[13,0,1378]
+"score-plugin-gfx_2_gfx_2_settings_2_model_8hpp_source.html":[13,0,771]
 };

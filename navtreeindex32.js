@@ -1,5 +1,6 @@
 var NAVTREEINDEX32 =
 {
+"class_scenario_1_1_ghost_interval_drop_handler.html":[12,0,45,114],
 "class_scenario_1_1_ghost_interval_drop_handler.html#a4c6dc1da1e6d5d0e5aceaa1e9da9e1b3":[12,0,45,114,1],
 "class_scenario_1_1_ghost_interval_drop_handler.html#a6169d179f25ec4ce0e05e75d115db623":[12,0,45,114,0],
 "class_scenario_1_1_ghost_interval_drop_handler.html#aabd8a141409574227500d672f3044306":[12,0,45,114,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX32 =
 "class_scenario_1_1_interval_presenter.html#aca27a638f18e326167ace0bab02fe32e":[12,0,45,128,25],
 "class_scenario_1_1_interval_presenter.html#ad6238ebc2065777e5098ed8ce3db4dcf":[12,0,45,128,7],
 "class_scenario_1_1_interval_presenter.html#ae27b2b3680818637f6c2c8036540bb36":[12,0,45,128,21],
-"class_scenario_1_1_interval_presenter.html#ae7c82d0b6a2de1216b85be68070c12a7":[12,0,45,128,32],
-"class_scenario_1_1_interval_presenter.html#aedb063e1110dbc9d4fc0100632663775":[12,0,45,128,13]
+"class_scenario_1_1_interval_presenter.html#ae7c82d0b6a2de1216b85be68070c12a7":[12,0,45,128,32]
 };

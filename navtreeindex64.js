@@ -1,5 +1,6 @@
 var NAVTREEINDEX64 =
 {
+"struct_scenario_1_1_positioned_scenario_event.html#acc6c289e17ce1be77259b57aef37d080":[12,0,45,191,0],
 "struct_scenario_1_1_positioned_with_id___scenario_event.html":[12,0,45,192],
 "struct_scenario_1_1_positioned_with_id___scenario_event.html#a9bc62c8405f41376f394d3b1b2d6ff91":[12,0,45,192,0],
 "struct_scenario_1_1_positioned_with_id___scenario_event.html#aad9f9a3f4ad1fe5d6c9ca01a9633ae71":[12,0,45,192,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX64 =
 "struct_state_1_1_destination_qualifiers.html#a50a77d3a6483900f07ebaeddbb1a7fbb":[12,0,50,14,6],
 "struct_state_1_1_destination_qualifiers.html#a5142178470e55a662926b778d407d5a8":[12,0,50,14,1],
 "struct_state_1_1_destination_qualifiers.html#a6cff8bf3ac18ea74dafbd750703a1bef":[12,0,50,14,13],
-"struct_state_1_1_destination_qualifiers.html#a6dcf695f0a5de6689de7eb11607f3194":[12,0,50,14,12],
-"struct_state_1_1_destination_qualifiers.html#a6ed863b439fa9afedc81be449c918afd":[12,0,50,14,14]
+"struct_state_1_1_destination_qualifiers.html#a6dcf695f0a5de6689de7eb11607f3194":[12,0,50,14,12]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX51 =
 {
+"score-plugin-gfx_2_gfx_2_settings_2_view_8hpp_source.html":[13,0,1378],
 "score-plugin-gfx_2_gfx_2_text_2_executor_8hpp_source.html":[13,0,412],
 "score-plugin-gfx_2_gfx_2_text_2_layer_8hpp_source.html":[13,0,623],
 "score-plugin-gfx_2_gfx_2_text_2_process_8hpp_source.html":[13,0,938],
@@ -248,6 +249,5 @@ var NAVTREEINDEX51 =
 "struct_automation_1_1_recreate_on_play_1_1modvalue.html#a8a46ef5fbfb771b2973100744163b529":[12,0,2,0,1,5],
 "struct_automation_1_1_recreate_on_play_1_1modvalue.html#a8baf02a0757bc6630ef7ceaa785d3949":[12,0,2,0,1,1],
 "struct_automation_1_1_recreate_on_play_1_1modvalue.html#a9d438749acd7611390616a8ff6d8cefe":[12,0,2,0,1,0],
-"struct_automation_1_1_recreate_on_play_1_1modvalue.html#aabd90fd2d5019bbe9d24114cd97b7b03":[12,0,2,0,1,6],
-"struct_automation_1_1_recreate_on_play_1_1modvalue.html#abe4b45593e49eea475bc3fee458cb008":[12,0,2,0,1,9]
+"struct_automation_1_1_recreate_on_play_1_1modvalue.html#aabd90fd2d5019bbe9d24114cd97b7b03":[12,0,2,0,1,6]
 };

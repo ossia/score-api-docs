@@ -1,5 +1,6 @@
 var NAVTREEINDEX55 =
 {
+"struct_explorer_1_1make__dataspace.html#aff8bbc877049ee414d0d819bf194df2f":[12,0,12,41,0],
 "struct_explorer_1_1make__unit.html":[12,0,12,42],
 "struct_explorer_1_1make__unit.html#a8e3594ff27b8034620986805c5bf6d99":[12,0,12,42,0],
 "struct_explorer_1_1make__unit.html#aae09056d9e19924857b4e91137b1c81c":[12,0,12,42,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX55 =
 "struct_invisible_root_node.html":[12,0,135],
 "struct_invisible_root_node.html#a8f7d6114ef2a75e0db32d9aa877aa4e7":[12,0,135,0],
 "struct_iterator.html":[12,0,140],
-"struct_iterator.html#a008a6bbd0714953e20b1ee968e79941f":[12,0,140,3],
-"struct_iterator.html#a05f2d8a510c1e44660d5a6f3afa5a42e":[12,0,140,8]
+"struct_iterator.html#a008a6bbd0714953e20b1ee968e79941f":[12,0,140,3]
 };

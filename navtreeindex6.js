@@ -198,6 +198,7 @@ var NAVTREEINDEX6 =
 "class_control_surface_1_1_presenter.html#abf9bcda05b508961daf9db8fb94d03bd":[12,0,6,6,4],
 "class_control_surface_1_1_presenter.html#ad7cbc5db7cceafc292206333cff8f951":[12,0,6,6,1],
 "class_control_surface_1_1_process_executor_component.html":[12,0,6,7],
+"class_control_surface_1_1_process_executor_component.html#a21a10cce9a77e9d1d427587a5b7df8ac":[12,0,6,7,2],
 "class_control_surface_1_1_process_executor_component.html#a5ed6d60b8e14ad179864bf74efdb4237":[12,0,6,7,0],
 "class_control_surface_1_1_process_executor_component.html#ac3842d584e5b9f3c3f2a656f48f15802":[12,0,6,7,1],
 "class_control_surface_1_1_remove_control.html":[12,0,6,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "class_curve_1_1_create_pen_tool.html#adebf0104be4978ad187596fbdeb201b0":[12,0,7,5,0],
 "class_curve_1_1_create_point_command_object.html":[12,0,7,6],
 "class_curve_1_1_create_point_command_object.html#a3f230fe01503f6d133688cd13d57b3ac":[12,0,7,6,2],
-"class_curve_1_1_create_point_command_object.html#a5a99531be9547997a6620947be749bcf":[12,0,7,6,4],
-"class_curve_1_1_create_point_command_object.html#a678931c6c3776758af6da58f9d45fa13":[12,0,7,6,1]
+"class_curve_1_1_create_point_command_object.html#a5a99531be9547997a6620947be749bcf":[12,0,7,6,4]
 };

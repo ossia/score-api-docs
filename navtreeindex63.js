@@ -1,5 +1,6 @@
 var NAVTREEINDEX63 =
 {
+"struct_rendered_depth_node.html#adef88fe5c9888a667a2b2dbe9d745f64":[12,0,332,11],
 "struct_rendered_depth_node_1_1_pass.html":[12,0,332,0],
 "struct_rendered_depth_node_1_1_pass.html#a0e68a6e26a2f423749743fba61846f91":[12,0,332,0,2],
 "struct_rendered_depth_node_1_1_pass.html#a1765965581f5020d790e67ab980abd2a":[12,0,332,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX63 =
 "struct_scenario_1_1_point.html":[12,0,45,190],
 "struct_scenario_1_1_point.html#a734f4c8f394b2a80b9ec6a3b43b24208":[12,0,45,190,0],
 "struct_scenario_1_1_point.html#a7567abdbc320349c76d3c4d508b5e9c2":[12,0,45,190,1],
-"struct_scenario_1_1_positioned_scenario_event.html":[12,0,45,191],
-"struct_scenario_1_1_positioned_scenario_event.html#acc6c289e17ce1be77259b57aef37d080":[12,0,45,191,0]
+"struct_scenario_1_1_positioned_scenario_event.html":[12,0,45,191]
 };
