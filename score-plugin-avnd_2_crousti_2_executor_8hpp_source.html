@@ -230,7 +230,7 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_executor
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="comment">// Initialize the control with the current value of the inlet</span></div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    oscr::from_ossia_value(param, inlet-&gt;value(), param.value);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    if_possible(param.update(element));</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    if_possible(param.update(node_ptr-&gt;impl.state));</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="comment">// Connect to changes</span></div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    std::weak_ptr&lt;ExecNode&gt; weak_node = node_ptr;</div>

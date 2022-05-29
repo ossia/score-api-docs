@@ -150,9 +150,9 @@ $(document).ready(function(){initNavTree('score-plugin-vst_2_vst_2_node_8hpp_sou
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; vec = p.port-&gt;get_data();</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keywordflow">if</span> (vec.empty())</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">auto</span> t = last(vec).<span class="keyword">template</span> target&lt;float&gt;())</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keyword">auto</span> t = ossia::convert&lt;float&gt;(last(vec));</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        p.value = ossia::clamp&lt;float&gt;(*t, 0.f, 1.f);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        p.value = ossia::clamp&lt;float&gt;(t, 0.f, 1.f);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        fx-&gt;fx-&gt;setParameter(fx-&gt;fx, p.idx, p.value);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>

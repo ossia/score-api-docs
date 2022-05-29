@@ -1,5 +1,13 @@
 var NAVTREEINDEX57 =
 {
+"struct_l_v2_1_1_l_v2_data.html#a86dddee0ed803cf9c391704621ca876e":[12,0,27,6,7],
+"struct_l_v2_1_1_l_v2_data.html#aa84ab2c300e71fc21652e996611aaaa9":[12,0,27,6,13],
+"struct_l_v2_1_1_l_v2_data.html#ac6884472f8ec420418605debe6f59c98":[12,0,27,6,9],
+"struct_l_v2_1_1_l_v2_data.html#ad4e4eed9b43ae496bdbccfd3fa5f7b1a":[12,0,27,6,8],
+"struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html":[12,0,27,7],
+"struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html#a2dfa0cbb8a0737c2bc3d77e49d775364":[12,0,27,7,1],
+"struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html#a36699ab96640179b1a3216abbdf760bf":[12,0,27,7,7],
+"struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html#a4d9aa8ef92555a59c7ddab8e3652b9d9":[12,0,27,7,0],
 "struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html#a66b7c92afd3697718332e87740d6c0eb":[12,0,27,7,4],
 "struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html#a69f9ddbd93fc2eec98bdd2f216c03ca2":[12,0,27,7,2],
 "struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html#a92f812fc226511f8e1032f23355a6d1a":[12,0,27,7,6],
@@ -241,13 +249,5 @@ var NAVTREEINDEX57 =
 "struct_media_1_1_sound_1_1_waveform_computer_impl.html#a98cbe7cb83aee57f83777d70ec90d262":[12,0,29,3,12,9],
 "struct_media_1_1_sound_1_1_waveform_computer_impl.html#aae73ae8d4333064505686e3429e560e8":[12,0,29,3,12,7],
 "struct_media_1_1_sound_1_1_waveform_computer_impl.html#ab0fe3a8b5b2e6254ee6a229c9d4ff27b":[12,0,29,3,12,10],
-"struct_media_1_1_sound_1_1_waveform_computer_impl.html#ab57285745f49c59fbe8aabb62ce24031":[12,0,29,3,12,3],
-"struct_media_1_1_sound_1_1_waveform_computer_impl.html#ac66b153f70b017ead9254eca216e1563":[12,0,29,3,12,16],
-"struct_media_1_1_sound_1_1_waveform_computer_impl.html#accfb5b5ee18df6beaa17b33627cd4660":[12,0,29,3,12,5],
-"struct_media_1_1_sound_1_1_waveform_computer_impl.html#acd6cae7ee45a191d440c24f524718efd":[12,0,29,3,12,17],
-"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html":[12,0,29,3,12,0],
-"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a0c55863b2aa52aa319f13b6719117ee7":[12,0,29,3,12,0,11],
-"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a100540fdb72e407e5835ad25992539a3":[12,0,29,3,12,0,0],
-"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a2ac8e9f8a434af49d65a9dc80ba7adc0":[12,0,29,3,12,0,9],
-"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a46cec68e3ff3b7ce200cb14f063dc821":[12,0,29,3,12,0,5]
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#ab57285745f49c59fbe8aabb62ce24031":[12,0,29,3,12,3]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX54 =
 {
+"struct_device_1_1_address_settings.html#af006b66f7269e6378cbc4b45f80c6b66":[12,0,9,2,5],
+"struct_device_1_1_address_settings.html#af3ffe1563a65ae9c2e4c740a178c4cb7":[12,0,9,2,0],
+"struct_device_1_1_address_settings_common.html":[12,0,9,3],
+"struct_device_1_1_address_settings_common.html#a044352467248e4629f0e35014d29295d":[12,0,9,3,10],
+"struct_device_1_1_address_settings_common.html#a170fa5d5fd9f607754e216d0f220b80a":[12,0,9,3,13],
+"struct_device_1_1_address_settings_common.html#a27a5afeee03c7642adbdf7d0137952f6":[12,0,9,3,5],
+"struct_device_1_1_address_settings_common.html#a296a1284cefa89c90ea0757c64a77e7c":[12,0,9,3,1],
+"struct_device_1_1_address_settings_common.html#a5aa04ba5ecce2ece6306d002a86bb35c":[12,0,9,3,2],
 "struct_device_1_1_address_settings_common.html#a5ac5f1a23adf8b6e50cfaeaa3b49d4fc":[12,0,9,3,9],
 "struct_device_1_1_address_settings_common.html#a63d79491eed338e66f26f1d6c55a01b0":[12,0,9,3,3],
 "struct_device_1_1_address_settings_common.html#a6d753213a5ba8714fba47eee0285c7ed":[12,0,9,3,11],
@@ -241,13 +249,5 @@ var NAVTREEINDEX54 =
 "struct_explorer_1_1_selected_nodes.html":[12,0,12,48],
 "struct_explorer_1_1_selected_nodes.html#a0015ee94bbf39be77cee2942759bcc15":[12,0,12,48,1],
 "struct_explorer_1_1_selected_nodes.html#ae290430e3602a169ce75d658819a3a87":[12,0,12,48,0],
-"struct_explorer_1_1_settings_1_1_device_log_level.html":[12,0,12,2,0],
-"struct_explorer_1_1_settings_1_1_device_log_level.html#a0a76f616bd01a706cf5854423ac49c08":[12,0,12,2,0,1],
-"struct_explorer_1_1_settings_1_1_device_log_level.html#a9735da91ea3ca65ce9a862e9ae2528e2":[12,0,12,2,0,2],
-"struct_explorer_1_1_settings_1_1_device_log_level.html#a9acdf32334b76523f4a92fb0f0a46991":[12,0,12,2,0,0],
-"struct_explorer_1_1_settings_1_1_device_log_level.html#af2c0672280b8aedfa8d1088f3a6a5580":[12,0,12,2,0,3],
-"struct_explorer_1_1make__dataspace.html":[12,0,12,41],
-"struct_explorer_1_1make__dataspace.html#a186042e23c167f558fa0f5cc8e2179d1":[12,0,12,41,2],
-"struct_explorer_1_1make__dataspace.html#a73883926ef49386a8bed5a982e8ce0ae":[12,0,12,41,3],
-"struct_explorer_1_1make__dataspace.html#abfc7f9e815a1a9f00b77363007e2f151":[12,0,12,41,1]
+"struct_explorer_1_1_settings_1_1_device_log_level.html":[12,0,12,2,0]
 };

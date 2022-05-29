@@ -1,5 +1,13 @@
 var NAVTREEINDEX52 =
 {
+"struct_automation_1_1_recreate_on_play_1_1modvalue.html":[12,0,2,0,1],
+"struct_automation_1_1_recreate_on_play_1_1modvalue.html#a7abdbf683fc9c88338d030eb716da12b":[12,0,2,0,1,8],
+"struct_automation_1_1_recreate_on_play_1_1modvalue.html#a845a2426a3bc64cb7552d95324c31c6e":[12,0,2,0,1,2],
+"struct_automation_1_1_recreate_on_play_1_1modvalue.html#a87acfe6c430cb95b2f3ba26919623ee3":[12,0,2,0,1,4],
+"struct_automation_1_1_recreate_on_play_1_1modvalue.html#a8a46ef5fbfb771b2973100744163b529":[12,0,2,0,1,5],
+"struct_automation_1_1_recreate_on_play_1_1modvalue.html#a8baf02a0757bc6630ef7ceaa785d3949":[12,0,2,0,1,1],
+"struct_automation_1_1_recreate_on_play_1_1modvalue.html#a9d438749acd7611390616a8ff6d8cefe":[12,0,2,0,1,0],
+"struct_automation_1_1_recreate_on_play_1_1modvalue.html#aabd90fd2d5019bbe9d24114cd97b7b03":[12,0,2,0,1,6],
 "struct_automation_1_1_recreate_on_play_1_1modvalue.html#abe4b45593e49eea475bc3fee458cb008":[12,0,2,0,1,9],
 "struct_automation_1_1_recreate_on_play_1_1modvalue.html#acb15b94e09b5238164608c109fe6146c":[12,0,2,0,1,7],
 "struct_automation_1_1_recreate_on_play_1_1modvalue.html#afbe48bcde81a868de34fefb12ff8d076":[12,0,2,0,1,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX52 =
 "struct_control_1_1_soundfile.html#a6f9c8d40f67c5551b341f79cadfa93bb":[12,0,5,40,1],
 "struct_control_1_1_soundfile.html#aa93220ceac3bf0026a1f9227229682ff":[12,0,5,40,4],
 "struct_control_1_1_soundfile.html#ad253efddd2680a5c0174fbea9ba530cd":[12,0,5,40,7],
-"struct_control_1_1_toggle.html":[12,0,5,41],
-"struct_control_1_1_toggle.html#a07b27ae348a6397e5766c084c716be33":[12,0,5,41,8],
-"struct_control_1_1_toggle.html#a1714131398ace3a5f7493d471a6f519a":[12,0,5,41,4],
-"struct_control_1_1_toggle.html#a1a1565192311afef0f7c365b2dd79b2d":[12,0,5,41,0],
-"struct_control_1_1_toggle.html#a2ec948809639afdcb4cdb8143b979f06":[12,0,5,41,7],
-"struct_control_1_1_toggle.html#a34b5cc11263bd1b60daa0d3accd5dc80":[12,0,5,41,6],
-"struct_control_1_1_toggle.html#a4dddb78487d562a5bc248258a0ec40c8":[12,0,5,41,1],
-"struct_control_1_1_toggle.html#a65c08638a82bd672aea528f3d6617e5b":[12,0,5,41,2],
-"struct_control_1_1_toggle.html#a90be6e2d7fa76a9389f146a703102890":[12,0,5,41,3]
+"struct_control_1_1_toggle.html":[12,0,5,41]
 };

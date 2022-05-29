@@ -1,5 +1,13 @@
 var NAVTREEINDEX55 =
 {
+"struct_explorer_1_1_settings_1_1_device_log_level.html#a0a76f616bd01a706cf5854423ac49c08":[12,0,12,2,0,1],
+"struct_explorer_1_1_settings_1_1_device_log_level.html#a9735da91ea3ca65ce9a862e9ae2528e2":[12,0,12,2,0,2],
+"struct_explorer_1_1_settings_1_1_device_log_level.html#a9acdf32334b76523f4a92fb0f0a46991":[12,0,12,2,0,0],
+"struct_explorer_1_1_settings_1_1_device_log_level.html#af2c0672280b8aedfa8d1088f3a6a5580":[12,0,12,2,0,3],
+"struct_explorer_1_1make__dataspace.html":[12,0,12,41],
+"struct_explorer_1_1make__dataspace.html#a186042e23c167f558fa0f5cc8e2179d1":[12,0,12,41,2],
+"struct_explorer_1_1make__dataspace.html#a73883926ef49386a8bed5a982e8ce0ae":[12,0,12,41,3],
+"struct_explorer_1_1make__dataspace.html#abfc7f9e815a1a9f00b77363007e2f151":[12,0,12,41,1],
 "struct_explorer_1_1make__dataspace.html#aff8bbc877049ee414d0d819bf194df2f":[12,0,12,41,0],
 "struct_explorer_1_1make__unit.html":[12,0,12,42],
 "struct_explorer_1_1make__unit.html#a8e3594ff27b8034620986805c5bf6d99":[12,0,12,42,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX55 =
 "struct_input_copier.html":[12,0,132],
 "struct_input_copier.html#a0d7fb945e6f99925681a4f82dd3c9da4":[12,0,132,4],
 "struct_input_copier.html#a1441381e1bf06b2477a7ad4fd988993a":[12,0,132,6],
-"struct_input_copier.html#a5196015e5df536a8f79395928911c370":[12,0,132,5],
-"struct_input_copier.html#a911b59c4270446cd7b5c4f94837b5d76":[12,0,132,3],
-"struct_input_copier.html#a97991e94a95d25b5119452e5f8f099e2":[12,0,132,0],
-"struct_input_copier.html#ab364c2d7f632d395651e583318b10393":[12,0,132,2],
-"struct_input_copier.html#ac8d076003618e53bddc8eecb7e3bc214":[12,0,132,1],
-"struct_invisible_root_node.html":[12,0,135],
-"struct_invisible_root_node.html#a8f7d6114ef2a75e0db32d9aa877aa4e7":[12,0,135,0],
-"struct_iterator.html":[12,0,140],
-"struct_iterator.html#a008a6bbd0714953e20b1ee968e79941f":[12,0,140,3]
+"struct_input_copier.html#a5196015e5df536a8f79395928911c370":[12,0,132,5]
 };

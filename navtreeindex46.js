@@ -1,5 +1,13 @@
 var NAVTREEINDEX46 =
 {
+"classscore_1_1_recursive_watch.html":[12,0,46,221],
+"classscore_1_1_recursive_watch.html#a8492198c3eb175031947b044f52fc486":[12,0,46,221,2],
+"classscore_1_1_recursive_watch.html#a9867bd37cc48043fdfdbe95d40bd5315":[12,0,46,221,5],
+"classscore_1_1_recursive_watch.html#ac991da96084522c87ed4538bb5115ff0":[12,0,46,221,4],
+"classscore_1_1_recursive_watch.html#af2f0d374e1ba0ac03f25a03d61a9dfd5":[12,0,46,221,3],
+"classscore_1_1_resizeable_item.html":[12,0,46,222],
+"classscore_1_1_resizeable_item.html#a036417bf54386533a0b3d9ee04de0720":[12,0,46,222,3],
+"classscore_1_1_resizeable_item.html#a16dff2f15cb4dfbf3771b61726bf3bf8a01fdb8b6408dfde309026c27c2ac0ac4":[12,0,46,222,0],
 "classscore_1_1_resizeable_item.html#ad38ac92fd7ee9801bb00ad05011b828e":[12,0,46,222,2],
 "classscore_1_1_resizeable_item.html#adbae571957b56fe74c2c3b0242a9b78c":[12,0,46,222,4],
 "classscore_1_1_resizeable_item.html#aebea1afeea2b50c3a76e531e4957734b":[12,0,46,222,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX46 =
 "classscore_1_1_time_signature_widget.html#a82b4de2f620ddf3ce8c71fbc42cee5f6":[12,0,46,270,1],
 "classscore_1_1_time_signature_widget.html#ad8f4ce29a963c4d0b3ff42f1608c2111":[12,0,46,270,0],
 "classscore_1_1_time_spin_box.html":[12,0,46,271],
-"classscore_1_1_time_spin_box.html#a09dcc5877abfbd51a5acead434499f88":[12,0,46,271,12],
-"classscore_1_1_time_spin_box.html#a16ee185261b34d13f1985f9f84258538":[12,0,46,271,7],
-"classscore_1_1_time_spin_box.html#a20f323ac8d5055986fe210d589cad873":[12,0,46,271,10],
-"classscore_1_1_time_spin_box.html#a29d0edf96935d1811c321b202f93f40b":[12,0,46,271,18],
-"classscore_1_1_time_spin_box.html#a31bdd9d4aa2638133ada6da8aba2d24b":[12,0,46,271,17],
-"classscore_1_1_time_spin_box.html#a4740f08944398363ac4f9b188ab05252":[12,0,46,271,11],
-"classscore_1_1_time_spin_box.html#a4ff4789ba31d4fe5a687b2dae8730085":[12,0,46,271,4],
-"classscore_1_1_time_spin_box.html#a504577acb9bf35f981439cdacf9d341f":[12,0,46,271,9],
-"classscore_1_1_time_spin_box.html#a527408efce7766a3f7374eaf892d8a42":[12,0,46,271,15]
+"classscore_1_1_time_spin_box.html#a09dcc5877abfbd51a5acead434499f88":[12,0,46,271,12]
 };

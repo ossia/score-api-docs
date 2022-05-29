@@ -158,26 +158,31 @@ $(document).ready(function(){initNavTree('_process_widget_8hpp_source.html','');
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  ~<a class="code" href="class_library_1_1_process_widget.html">ProcessWidget</a>();</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="class_library_1_1_processes_item_model.html">ProcessesItemModel</a>&amp; processModel() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> *m_processModel; }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_library_1_1_process_tree_view.html">ProcessTreeView</a>&amp; processView() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> m_tv; }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="class_library_1_1_process_tree_view.html">ProcessTreeView</a>&amp; processView() noexcept { <span class="keywordflow">return</span> m_tv; }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="class_library_1_1_processes_item_model.html">ProcessesItemModel</a>* m_processModel{};</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="class_library_1_1_preset_item_model.html">PresetItemModel</a>* m_presetModel{};</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="class_library_1_1_process_tree_view.html">ProcessTreeView</a> m_tv;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="class_library_1_1_preset_list_view.html">PresetListView</a> m_lv;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  QWidget m_preview;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  QWidget* m_previewChild{};</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="class_library_1_1_preset_item_model.html">PresetItemModel</a>&amp; presetModel() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> *m_presetModel; }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_library_1_1_process_tree_view.html">ProcessTreeView</a>&amp; processView() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> m_tv; }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="class_library_1_1_process_tree_view.html">ProcessTreeView</a>&amp; processView() noexcept { <span class="keywordflow">return</span> m_tv; }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_library_1_1_preset_list_view.html">PresetListView</a>&amp; presetView() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> m_lv; }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="class_library_1_1_preset_list_view.html">PresetListView</a>&amp; presetView() noexcept { <span class="keywordflow">return</span> m_lv; }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="class_library_1_1_processes_item_model.html">ProcessesItemModel</a>* m_processModel{};</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="class_library_1_1_preset_item_model.html">PresetItemModel</a>* m_presetModel{};</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="class_library_1_1_process_tree_view.html">ProcessTreeView</a> m_tv;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <a class="code" href="class_library_1_1_preset_list_view.html">PresetListView</a> m_lv;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  QWidget m_preview;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  QWidget* m_previewChild{};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1371</div></div>
 <div class="ttc" id="aclass_library_1_1_processes_item_model_html"><div class="ttname"><a href="class_library_1_1_processes_item_model.html">Library::ProcessesItemModel</a></div><div class="ttdef"><b>Definition:</b> ProcessesItemModel.hpp:42</div></div>
 <div class="ttc" id="aclass_library_1_1_preset_library_handler_html"><div class="ttname"><a href="class_library_1_1_preset_library_handler.html">Library::PresetLibraryHandler</a></div><div class="ttdef"><b>Definition:</b> ProcessWidget.hpp:27</div></div>
 <div class="ttc" id="aclass_library_1_1_library_interface_html"><div class="ttname"><a href="class_library_1_1_library_interface.html">Library::LibraryInterface</a></div><div class="ttdef"><b>Definition:</b> LibraryInterface.hpp:21</div></div>
-<div class="ttc" id="aclass_library_1_1_preset_list_view_html"><div class="ttname"><a href="class_library_1_1_preset_list_view.html">Library::PresetListView</a></div><div class="ttdef"><b>Definition:</b> PresetListView.hpp:8</div></div>
+<div class="ttc" id="aclass_library_1_1_preset_list_view_html"><div class="ttname"><a href="class_library_1_1_preset_list_view.html">Library::PresetListView</a></div><div class="ttdef"><b>Definition:</b> PresetListView.hpp:11</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:146</div></div>
 <div class="ttc" id="astructscore_1_1_g_u_i_application_context_html"><div class="ttname"><a href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a></div><div class="ttdoc">Specializes ApplicationContext with the QMainWindow.</div><div class="ttdef"><b>Definition:</b> GUIApplicationContext.hpp:14</div></div>
 <div class="ttc" id="aclass_process_1_1_process_factory_list_html"><div class="ttname"><a href="class_process_1_1_process_factory_list.html">Process::ProcessFactoryList</a></div><div class="ttdef"><b>Definition:</b> ProcessList.hpp:8</div></div>

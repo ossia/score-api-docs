@@ -1,5 +1,13 @@
 var NAVTREEINDEX51 =
 {
+"score-plugin-gfx_2_gfx_2_graph_2_graph_8hpp_source.html":[13,0,494],
+"score-plugin-gfx_2_gfx_2_graph_2_node_8hpp_source.html":[13,0,810],
+"score-plugin-gfx_2_gfx_2_graph_2_utils_8hpp_source.html":[13,0,1353],
+"score-plugin-gfx_2_gfx_2_images_2_executor_8hpp_source.html":[13,0,411],
+"score-plugin-gfx_2_gfx_2_images_2_layer_8hpp_source.html":[13,0,622],
+"score-plugin-gfx_2_gfx_2_images_2_process_8hpp_source.html":[13,0,937],
+"score-plugin-gfx_2_gfx_2_settings_2_factory_8hpp_source.html":[13,0,440],
+"score-plugin-gfx_2_gfx_2_settings_2_model_8hpp_source.html":[13,0,771],
 "score-plugin-gfx_2_gfx_2_settings_2_view_8hpp_source.html":[13,0,1378],
 "score-plugin-gfx_2_gfx_2_text_2_executor_8hpp_source.html":[13,0,412],
 "score-plugin-gfx_2_gfx_2_text_2_layer_8hpp_source.html":[13,0,623],
@@ -241,13 +249,5 @@ var NAVTREEINDEX51 =
 "struct_audio_1_1_port_audio_card.html#ae1d8ae142a54b8cca540f7137d4bf3e4":[12,0,1,7,10],
 "struct_audio_1_1_port_audio_scope.html":[12,0,1,9],
 "struct_audio_1_1_port_audio_scope.html#a34e99eddd4bd69f07490f1ef43f0c33b":[12,0,1,9,1],
-"struct_audio_1_1_port_audio_scope.html#aea6b49537cfc54b1e36aaea5737020a5":[12,0,1,9,0],
-"struct_automation_1_1_recreate_on_play_1_1modvalue.html":[12,0,2,0,1],
-"struct_automation_1_1_recreate_on_play_1_1modvalue.html#a7abdbf683fc9c88338d030eb716da12b":[12,0,2,0,1,8],
-"struct_automation_1_1_recreate_on_play_1_1modvalue.html#a845a2426a3bc64cb7552d95324c31c6e":[12,0,2,0,1,2],
-"struct_automation_1_1_recreate_on_play_1_1modvalue.html#a87acfe6c430cb95b2f3ba26919623ee3":[12,0,2,0,1,4],
-"struct_automation_1_1_recreate_on_play_1_1modvalue.html#a8a46ef5fbfb771b2973100744163b529":[12,0,2,0,1,5],
-"struct_automation_1_1_recreate_on_play_1_1modvalue.html#a8baf02a0757bc6630ef7ceaa785d3949":[12,0,2,0,1,1],
-"struct_automation_1_1_recreate_on_play_1_1modvalue.html#a9d438749acd7611390616a8ff6d8cefe":[12,0,2,0,1,0],
-"struct_automation_1_1_recreate_on_play_1_1modvalue.html#aabd90fd2d5019bbe9d24114cd97b7b03":[12,0,2,0,1,6]
+"struct_audio_1_1_port_audio_scope.html#aea6b49537cfc54b1e36aaea5737020a5":[12,0,1,9,0]
 };

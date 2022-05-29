@@ -1,5 +1,13 @@
 var NAVTREEINDEX53 =
 {
+"struct_control_1_1_toggle.html#a07b27ae348a6397e5766c084c716be33":[12,0,5,41,8],
+"struct_control_1_1_toggle.html#a1714131398ace3a5f7493d471a6f519a":[12,0,5,41,4],
+"struct_control_1_1_toggle.html#a1a1565192311afef0f7c365b2dd79b2d":[12,0,5,41,0],
+"struct_control_1_1_toggle.html#a2ec948809639afdcb4cdb8143b979f06":[12,0,5,41,7],
+"struct_control_1_1_toggle.html#a34b5cc11263bd1b60daa0d3accd5dc80":[12,0,5,41,6],
+"struct_control_1_1_toggle.html#a4dddb78487d562a5bc248258a0ec40c8":[12,0,5,41,1],
+"struct_control_1_1_toggle.html#a65c08638a82bd672aea528f3d6617e5b":[12,0,5,41,2],
+"struct_control_1_1_toggle.html#a90be6e2d7fa76a9389f146a703102890":[12,0,5,41,3],
 "struct_control_1_1_toggle.html#ac7a57eccef4ce1c14357cfcea1f101ff":[12,0,5,41,5],
 "struct_control_1_1_unvalidated_enum.html":[12,0,5,42],
 "struct_control_1_1_unvalidated_enum.html#a13b335fcb92b98c4560cf5e452e2d30e":[12,0,5,42,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX53 =
 "struct_device_1_1_address_settings.html#a44dd657e0d8c54f272694d96387a5495":[12,0,9,2,1],
 "struct_device_1_1_address_settings.html#a632a7b20e731db05ed2dbbd89931b631":[12,0,9,2,4],
 "struct_device_1_1_address_settings.html#aa9c99cad0f055ab210970b80e1930b0a":[12,0,9,2,6],
-"struct_device_1_1_address_settings.html#aba34b517c41c63c45d0d9ac831dd24b2":[12,0,9,2,3],
-"struct_device_1_1_address_settings.html#af006b66f7269e6378cbc4b45f80c6b66":[12,0,9,2,5],
-"struct_device_1_1_address_settings.html#af3ffe1563a65ae9c2e4c740a178c4cb7":[12,0,9,2,0],
-"struct_device_1_1_address_settings_common.html":[12,0,9,3],
-"struct_device_1_1_address_settings_common.html#a044352467248e4629f0e35014d29295d":[12,0,9,3,10],
-"struct_device_1_1_address_settings_common.html#a170fa5d5fd9f607754e216d0f220b80a":[12,0,9,3,13],
-"struct_device_1_1_address_settings_common.html#a27a5afeee03c7642adbdf7d0137952f6":[12,0,9,3,5],
-"struct_device_1_1_address_settings_common.html#a296a1284cefa89c90ea0757c64a77e7c":[12,0,9,3,1],
-"struct_device_1_1_address_settings_common.html#a5aa04ba5ecce2ece6306d002a86bb35c":[12,0,9,3,2]
+"struct_device_1_1_address_settings.html#aba34b517c41c63c45d0d9ac831dd24b2":[12,0,9,2,3]
 };
