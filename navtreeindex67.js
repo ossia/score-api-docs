@@ -1,14 +1,15 @@
 var NAVTREEINDEX67 =
 {
-"structoscr_1_1_inlet_init_func.html#a4091bdce5d84b38a7d196eafc0211739":[12,0,34,7,9],
-"structoscr_1_1_inlet_init_func.html#a4fbc28bffdc5fa7332e7e7bf7c8514f8":[12,0,34,7,5],
+"structoscr_1_1_inlet_init_func.html#a4091bdce5d84b38a7d196eafc0211739":[12,0,34,7,10],
 "structoscr_1_1_inlet_init_func.html#a4fbc28bffdc5fa7332e7e7bf7c8514f8":[12,0,34,7,6],
-"structoscr_1_1_inlet_init_func.html#a51cbc9ae6a7b91a63ed92b85207b9480":[12,0,34,7,1],
-"structoscr_1_1_inlet_init_func.html#acf66680961da3f67b4008fa7b6828ee2":[12,0,34,7,0],
-"structoscr_1_1_inlet_init_func.html#ada8cf79a7abb51031b6c4e3af0dfea5d":[12,0,34,7,4],
-"structoscr_1_1_inlet_init_func.html#adbdeca136a43c358156a238bfbafa0ee":[12,0,34,7,7],
+"structoscr_1_1_inlet_init_func.html#a4fbc28bffdc5fa7332e7e7bf7c8514f8":[12,0,34,7,7],
+"structoscr_1_1_inlet_init_func.html#a51cbc9ae6a7b91a63ed92b85207b9480":[12,0,34,7,2],
+"structoscr_1_1_inlet_init_func.html#acf66680961da3f67b4008fa7b6828ee2":[12,0,34,7,1],
+"structoscr_1_1_inlet_init_func.html#ad30a0cdbf67e6b4db44b1e646e46858e":[12,0,34,7,0],
+"structoscr_1_1_inlet_init_func.html#ada8cf79a7abb51031b6c4e3af0dfea5d":[12,0,34,7,5],
+"structoscr_1_1_inlet_init_func.html#adbdeca136a43c358156a238bfbafa0ee":[12,0,34,7,8],
 "structoscr_1_1_inlet_init_func.html#ae55b129569d7cc8ceca9c4ca6e0a3462":[12,0,34,7,3],
-"structoscr_1_1_inlet_init_func.html#ae55b129569d7cc8ceca9c4ca6e0a3462":[12,0,34,7,2],
+"structoscr_1_1_inlet_init_func.html#ae55b129569d7cc8ceca9c4ca6e0a3462":[12,0,34,7,4],
 "structoscr_1_1_layout_builder.html":[12,0,34,9],
 "structoscr_1_1_layout_builder.html#a2a3bfa52cc203a18b79dab6ee8bb1ca2":[12,0,34,9,5],
 "structoscr_1_1_layout_builder.html#a5e0dd309631716d9ebafcc743519870f":[12,0,34,9,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX67 =
 "structscore_1_1_bar_spin_box.html#a1632cc8850585626bda87bec604ca476":[12,0,46,29,2],
 "structscore_1_1_bar_spin_box.html#a22bec27d743859a26278003864ad1759":[12,0,46,29,0],
 "structscore_1_1_bar_spin_box.html#a59bcd499b18d9a4017e9d88dea533fa9":[12,0,46,29,3],
-"structscore_1_1_bar_spin_box.html#a5f160f80cc5b716a926a41432d8bbba5":[12,0,46,29,4],
-"structscore_1_1_bar_spin_box.html#a6f2c89e928645836abeeddceaebbdb66":[12,0,46,29,1]
+"structscore_1_1_bar_spin_box.html#a5f160f80cc5b716a926a41432d8bbba5":[12,0,46,29,4]
 };

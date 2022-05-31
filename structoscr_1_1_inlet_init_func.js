@@ -1,5 +1,6 @@
 var structoscr_1_1_inlet_init_func =
 [
+    [ "make_value_inlet", "structoscr_1_1_inlet_init_func.html#ad30a0cdbf67e6b4db44b1e646e46858e", null ],
     [ "operator()", "structoscr_1_1_inlet_init_func.html#acf66680961da3f67b4008fa7b6828ee2", null ],
     [ "operator()", "structoscr_1_1_inlet_init_func.html#a51cbc9ae6a7b91a63ed92b85207b9480", null ],
     [ "operator()", "structoscr_1_1_inlet_init_func.html#ae55b129569d7cc8ceca9c4ca6e0a3462", null ],
