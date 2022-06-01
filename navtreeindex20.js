@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"class_local_tree_1_1_document_plugin.html#af8585c55df0c0dd6f7b15f6399db7a4d":[12,0,26,5,0],
 "class_local_tree_1_1_document_plugin.html#afda5f4de332573e13a7d34cf8c38fe02":[12,0,26,5,3],
 "class_local_tree_1_1_event.html":[12,0,26,6],
 "class_local_tree_1_1_event.html#a13c15ed7c43cd23b131a749832072135":[12,0,26,6,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "class_media_1_1_sound_1_1_process_model.html#af443386df78200acc92accc296863c06":[12,0,29,3,9,4],
 "class_media_1_1_sound_component_setup.html":[12,0,29,25],
 "class_media_1_1_step_1_1_inspector_factory.html":[12,0,29,4,0],
-"class_media_1_1_step_1_1_inspector_widget.html":[12,0,29,4,1],
-"class_media_1_1_step_1_1_inspector_widget.html#a81a4451194dd3fb9baaf467b8c1b94b9":[12,0,29,4,1,0]
+"class_media_1_1_step_1_1_inspector_widget.html":[12,0,29,4,1]
 };

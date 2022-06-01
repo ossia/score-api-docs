@@ -13,6 +13,9 @@ var classscore_1_1_q_graphics_knob =
     [ "unmap", "classscore_1_1_q_graphics_knob.html#a315f6801d26ed1a16f3896325d4151e7", null ],
     [ "value", "classscore_1_1_q_graphics_knob.html#a1026e5dddf8d9033f81f1c2b2492e572", null ],
     [ "DefaultGraphicsKnobImpl", "classscore_1_1_q_graphics_knob.html#aa36395e04be7d6f7171dcd890c1f691c", null ],
+    [ "m_execValue", "classscore_1_1_q_graphics_knob.html#aebf8225a8d0bd1b3a0a5118d0a9a67d2", null ],
+    [ "m_rect", "classscore_1_1_q_graphics_knob.html#adadd774c896b4edd90ecda661f0e33af", null ],
+    [ "m_value", "classscore_1_1_q_graphics_knob.html#a8703972918460640afc355bb446c452d", null ],
     [ "max", "classscore_1_1_q_graphics_knob.html#aeba76c310bd1aeb37732274bf2eced36", null ],
     [ "min", "classscore_1_1_q_graphics_knob.html#a8b679e54dfd536a31b26a7f9713bc241", null ],
     [ "moving", "classscore_1_1_q_graphics_knob.html#a866b3f3cedde51fa8b3fcdcd1dee1087", null ]

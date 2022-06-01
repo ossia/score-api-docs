@@ -12,6 +12,8 @@ var classscore_1_1_q_graphics_slider =
     [ "value", "classscore_1_1_q_graphics_slider.html#aeb1c97e35c15e74dbbc40955ffa13d57", null ],
     [ "DefaultGraphicsSliderImpl", "classscore_1_1_q_graphics_slider.html#a0e890602be5f200389ae33729a1c79b3", null ],
     [ "QGraphicsSliderBase< QGraphicsSlider >", "classscore_1_1_q_graphics_slider.html#acb56aa4ad74c85a2d54ac786e6f3c1d0", null ],
+    [ "m_execValue", "classscore_1_1_q_graphics_slider.html#a4c2b4fa4b170e5128d81b8aa9f44d2e4", null ],
+    [ "m_value", "classscore_1_1_q_graphics_slider.html#ae4ba327778135b21a7bb3dd820930856", null ],
     [ "max", "classscore_1_1_q_graphics_slider.html#ad12c44bb1800fef6a570ff6902446fa4", null ],
     [ "min", "classscore_1_1_q_graphics_slider.html#a764e2f6eba6c3b47ddac01b28b27def8", null ],
     [ "moving", "classscore_1_1_q_graphics_slider.html#aef02da39cd3361f8d2f680d98282325b", null ]

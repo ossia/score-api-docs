@@ -1,5 +1,6 @@
 var NAVTREEINDEX61 =
 {
+"struct_process_1_1_style.html#a62d9452ae0cb837133b0cf5a155fca58":[12,0,39,88,21],
 "struct_process_1_1_style.html#a6368149125c0823b7b4005cd6e01e1a3":[12,0,39,88,40],
 "struct_process_1_1_style.html#a6ae78406414cd09c653fb8edc0a6daf2":[12,0,39,88,1],
 "struct_process_1_1_style.html#a6ee04b038bd811076d8cdf3e42862528":[12,0,39,88,24],
@@ -248,6 +249,5 @@ var NAVTREEINDEX61 =
 "struct_q_meta_type_id_3_01_protocols_1_1_leapmotion_specific_settings_01_4.html":[12,0,272],
 "struct_q_meta_type_id_3_01_protocols_1_1_leapmotion_specific_settings_01_4.html#a37c5c4fa0d49244177025b582b983896af683881efcaf5541ae1348d45c3178a6":[12,0,272,0],
 "struct_q_meta_type_id_3_01_protocols_1_1_local_specific_settings_01_4.html":[12,0,273],
-"struct_q_meta_type_id_3_01_protocols_1_1_local_specific_settings_01_4.html#a652fd36d526df4e01e628df90db326d5adc36ee430db28f8c9fe95e8a230efa18":[12,0,273,0],
-"struct_q_meta_type_id_3_01_protocols_1_1_m_i_d_i_specific_settings_01_4.html":[12,0,274]
+"struct_q_meta_type_id_3_01_protocols_1_1_local_specific_settings_01_4.html#a652fd36d526df4e01e628df90db326d5adc36ee430db28f8c9fe95e8a230efa18":[12,0,273,0]
 };

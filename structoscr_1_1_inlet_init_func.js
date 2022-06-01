@@ -1,14 +1,13 @@
 var structoscr_1_1_inlet_init_func =
 [
-    [ "make_value_inlet", "structoscr_1_1_inlet_init_func.html#ad30a0cdbf67e6b4db44b1e646e46858e", null ],
-    [ "operator()", "structoscr_1_1_inlet_init_func.html#acf66680961da3f67b4008fa7b6828ee2", null ],
-    [ "operator()", "structoscr_1_1_inlet_init_func.html#a51cbc9ae6a7b91a63ed92b85207b9480", null ],
-    [ "operator()", "structoscr_1_1_inlet_init_func.html#ae55b129569d7cc8ceca9c4ca6e0a3462", null ],
-    [ "operator()", "structoscr_1_1_inlet_init_func.html#ae55b129569d7cc8ceca9c4ca6e0a3462", null ],
-    [ "operator()", "structoscr_1_1_inlet_init_func.html#ada8cf79a7abb51031b6c4e3af0dfea5d", null ],
-    [ "operator()", "structoscr_1_1_inlet_init_func.html#a4fbc28bffdc5fa7332e7e7bf7c8514f8", null ],
-    [ "operator()", "structoscr_1_1_inlet_init_func.html#a4fbc28bffdc5fa7332e7e7bf7c8514f8", null ],
-    [ "inlet", "structoscr_1_1_inlet_init_func.html#adbdeca136a43c358156a238bfbafa0ee", null ],
-    [ "ins", "structoscr_1_1_inlet_init_func.html#a1dd902e4a364c0aeae15aa78270ad006", null ],
-    [ "self", "structoscr_1_1_inlet_init_func.html#a4091bdce5d84b38a7d196eafc0211739", null ]
+    [ "operator()", "structoscr_1_1_inlet_init_func.html#afa4d475c6adea73a084803c2ebfedc39", null ],
+    [ "operator()", "structoscr_1_1_inlet_init_func.html#ace7897bd30ea620f3b89ed0d9d7f40e9", null ],
+    [ "operator()", "structoscr_1_1_inlet_init_func.html#a3fe66fd8146371ec86505ce8a99a7c6c", null ],
+    [ "operator()", "structoscr_1_1_inlet_init_func.html#a3fe66fd8146371ec86505ce8a99a7c6c", null ],
+    [ "operator()", "structoscr_1_1_inlet_init_func.html#abb4cabdfafbc76baa70e60ae3f998bea", null ],
+    [ "operator()", "structoscr_1_1_inlet_init_func.html#a0ff4debc5f861f23489460856df2727e", null ],
+    [ "operator()", "structoscr_1_1_inlet_init_func.html#a245ccc5eaa53e8f1281657af9bfb0523", null ],
+    [ "inlet", "structoscr_1_1_inlet_init_func.html#a26d3210108ad9780d409b1d83fea759b", null ],
+    [ "ins", "structoscr_1_1_inlet_init_func.html#ad44f36dfbcfeea53fd7b706d8a200495", null ],
+    [ "self", "structoscr_1_1_inlet_init_func.html#a00061a4355a850dfe44bdc6e5d2c13a3", null ]
 ];

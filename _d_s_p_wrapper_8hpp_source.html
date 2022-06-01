@@ -439,27 +439,19 @@ $(document).ready(function(){initNavTree('_d_s_p_wrapper_8hpp_source.html',''); 
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;  }</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;};</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160; </div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore.html">score</a></div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;{</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Vis, <span class="keyword">typename</span> DSP&gt;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="keywordtype">void</span> serialize_dyn_impl(Vis&amp; v, <span class="keyword">const</span> <a class="code" href="class_faust_d_s_p_1_1_fx.html">FaustDSP::Fx&lt;DSP&gt;</a>&amp; t)</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;{</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  <a class="code" href="struct_t_serializer.html">TSerializer&lt;typename Vis::type, FaustDSP::Fx&lt;DSP&gt;</a>&gt;::readFrom(v, t);</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;}</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;}</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="keyword">namespace </span>FaustDSP</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;{</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> DSP&gt;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="keyword">using</span> ProcessFactory = <a class="code" href="class_process_1_1_process_factory___t.html">Process::ProcessFactory_T&lt;Fx&lt;DSP&gt;</a>&gt;;</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160; </div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> DSP&gt;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="keyword">using</span> LayerFactory</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    = <a class="code" href="class_process_1_1_effect_layer_factory___t.html">Process::EffectLayerFactory_T&lt;Fx&lt;DSP&gt;</a>, <a class="code" href="class_process_1_1_default_effect_item.html">Process::DefaultEffectItem</a>&gt;;</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160; </div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> DSP&gt;</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="keyword">using</span> ExecutorFactory = <a class="code" href="class_execution_1_1_process_component_factory___t.html">Execution::ProcessComponentFactory_T&lt;Executor&lt;DSP&gt;</a>&gt;;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;}</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="keyword">namespace </span>FaustDSP</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;{</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> DSP&gt;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="keyword">using</span> ProcessFactory = <a class="code" href="class_process_1_1_process_factory___t.html">Process::ProcessFactory_T&lt;Fx&lt;DSP&gt;</a>&gt;;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> DSP&gt;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="keyword">using</span> LayerFactory</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    = <a class="code" href="class_process_1_1_effect_layer_factory___t.html">Process::EffectLayerFactory_T&lt;Fx&lt;DSP&gt;</a>, <a class="code" href="class_process_1_1_default_effect_item.html">Process::DefaultEffectItem</a>&gt;;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160; </div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> DSP&gt;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="keyword">using</span> ExecutorFactory = <a class="code" href="class_execution_1_1_process_component_factory___t.html">Execution::ProcessComponentFactory_T&lt;Executor&lt;DSP&gt;</a>&gt;;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1371</div></div>
@@ -471,7 +463,6 @@ $(document).ready(function(){initNavTree('_d_s_p_wrapper_8hpp_source.html',''); 
 <div class="ttc" id="anamespace_process_html_a592bb361ebf8fbc09c929c93208c71f1"><div class="ttname"><a href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">Process::ProcessFlags</a></div><div class="ttdeci">ProcessFlags</div><div class="ttdoc">Various settings for processes.</div><div class="ttdef"><b>Definition:</b> ProcessFlags.hpp:16</div></div>
 <div class="ttc" id="aclass_data_stream_writer_html_ae5394117c6269533c28737b5092138a9"><div class="ttname"><a href="class_data_stream_writer.html#ae5394117c6269533c28737b5092138a9">DataStreamWriter::checkDelimiter</a></div><div class="ttdeci">void checkDelimiter()</div><div class="ttdoc">checkDelimiter</div><div class="ttdef"><b>Definition:</b> DataStreamVisitor.cpp:47</div></div>
 <div class="ttc" id="aclass_process_1_1_default_effect_item_html"><div class="ttname"><a href="class_process_1_1_default_effect_item.html">Process::DefaultEffectItem</a></div><div class="ttdef"><b>Definition:</b> DefaultEffectItem.hpp:24</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:146</div></div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition:</b> Identifier.hpp:56</div></div>
 <div class="ttc" id="anamespace_execution_html"><div class="ttname"><a href="namespace_execution.html">Execution</a></div><div class="ttdoc">Components used for the execution of a score.</div><div class="ttdef"><b>Definition:</b> ProcessComponent.cpp:11</div></div>
 <div class="ttc" id="aclass_data_stream_html"><div class="ttname"><a href="class_data_stream.html">DataStream</a></div><div class="ttdef"><b>Definition:</b> VisitorInterface.hpp:53</div></div>

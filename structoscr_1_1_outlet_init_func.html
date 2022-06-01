@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.8.17"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>score: oscr::OutletInitFunc Struct Reference</title>
+        <title>score: oscr::OutletInitFunc&lt; Node &gt; Struct Template Reference</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -99,40 +99,40 @@ $(document).ready(function(){initNavTree('structoscr_1_1_outlet_init_func.html',
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structoscr_1_1_outlet_init_func-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">oscr::OutletInitFunc Struct Reference</div>  </div>
+<div class="title">oscr::OutletInitFunc&lt; Node &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a02337062c9819aa3d5ac6caae83452f7"><td class="memItemLeft" align="right" valign="top"><a id="a02337062c9819aa3d5ac6caae83452f7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const avnd::audio_port auto &amp;out)</td></tr>
-<tr class="separator:a02337062c9819aa3d5ac6caae83452f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03a2fedbb02a7f39053052b100ba08c4"><td class="memItemLeft" align="right" valign="top"><a id="a03a2fedbb02a7f39053052b100ba08c4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const avnd::midi_port auto &amp;out)</td></tr>
-<tr class="separator:a03a2fedbb02a7f39053052b100ba08c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a072407a323daa2fe7663bc862ac7fc83"><td class="memTemplParams" colspan="2"><a id="a072407a323daa2fe7663bc862ac7fc83"></a>
-template&lt;avnd::parameter T&gt; </td></tr>
-<tr class="memitem:a072407a323daa2fe7663bc862ac7fc83"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (const T &amp;out)</td></tr>
-<tr class="separator:a072407a323daa2fe7663bc862ac7fc83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95e6aeec1159186563a5d73dc232072a"><td class="memItemLeft" align="right" valign="top"><a id="a95e6aeec1159186563a5d73dc232072a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const avnd::callback auto &amp;out)</td></tr>
-<tr class="separator:a95e6aeec1159186563a5d73dc232072a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35e18de2b4740c35f48b3f8974285e79"><td class="memItemLeft" align="right" valign="top"><a id="a35e18de2b4740c35f48b3f8974285e79"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const auto &amp;ctrl)</td></tr>
-<tr class="separator:a35e18de2b4740c35f48b3f8974285e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a527bfeb664ed01791a00930f987ae2ac"><td class="memItemLeft" align="right" valign="top"><a id="a527bfeb664ed01791a00930f987ae2ac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const avnd::audio_port auto &amp;out, auto idx)</td></tr>
+<tr class="separator:a527bfeb664ed01791a00930f987ae2ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a472d268d46595f98c0ffb94b4cb1bccc"><td class="memItemLeft" align="right" valign="top"><a id="a472d268d46595f98c0ffb94b4cb1bccc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const avnd::midi_port auto &amp;out, auto idx)</td></tr>
+<tr class="separator:a472d268d46595f98c0ffb94b4cb1bccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a972b39a26efd4d6ec734f6c62728e199"><td class="memTemplParams" colspan="2"><a id="a972b39a26efd4d6ec734f6c62728e199"></a>
+template&lt;avnd::parameter T, std::size_t N&gt; </td></tr>
+<tr class="memitem:a972b39a26efd4d6ec734f6c62728e199"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (const T &amp;out, avnd::field_index&lt; N &gt;)</td></tr>
+<tr class="separator:a972b39a26efd4d6ec734f6c62728e199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ddb4da360f674dfbc55919aa016e80e"><td class="memItemLeft" align="right" valign="top"><a id="a2ddb4da360f674dfbc55919aa016e80e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const avnd::callback auto &amp;out, auto idx)</td></tr>
+<tr class="separator:a2ddb4da360f674dfbc55919aa016e80e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2d348e9b72000d5ac55073009764f96"><td class="memItemLeft" align="right" valign="top"><a id="aa2d348e9b72000d5ac55073009764f96"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const auto &amp;ctrl, auto idx)</td></tr>
+<tr class="separator:aa2d348e9b72000d5ac55073009764f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a5f6661276199379cd8e2ebd45365be4f"><td class="memItemLeft" align="right" valign="top"><a id="a5f6661276199379cd8e2ebd45365be4f"></a>
+<tr class="memitem:a4489e8acaecb8b1ebb79516d59f94776"><td class="memItemLeft" align="right" valign="top"><a id="a4489e8acaecb8b1ebb79516d59f94776"></a>
 <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>self</b></td></tr>
-<tr class="separator:a5f6661276199379cd8e2ebd45365be4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b8a13ffaf632e434772032b6e486465"><td class="memItemLeft" align="right" valign="top"><a id="a7b8a13ffaf632e434772032b6e486465"></a>
+<tr class="separator:a4489e8acaecb8b1ebb79516d59f94776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a394e4319b34a869bf9d047cb2d5599"><td class="memItemLeft" align="right" valign="top"><a id="a4a394e4319b34a869bf9d047cb2d5599"></a>
 Process::Outlets &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>outs</b></td></tr>
-<tr class="separator:a7b8a13ffaf632e434772032b6e486465"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0702996f57ee8e839fd1263fa0d11687"><td class="memItemLeft" align="right" valign="top"><a id="a0702996f57ee8e839fd1263fa0d11687"></a>
+<tr class="separator:a4a394e4319b34a869bf9d047cb2d5599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a265088b8d9bf03d47b48abec0962d9f3"><td class="memItemLeft" align="right" valign="top"><a id="a265088b8d9bf03d47b48abec0962d9f3"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>outlet</b> = 0</td></tr>
-<tr class="separator:a0702996f57ee8e839fd1263fa0d11687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a265088b8d9bf03d47b48abec0962d9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="score-plugin-avnd_2_crousti_2_process_model_8hpp_source.html">score-plugin-avnd/Crousti/ProcessModel.hpp</a></li>

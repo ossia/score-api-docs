@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"class_data_stream_reader.html#a9189c8785980e9bab9df00157667ef47":[12,0,93,81],
 "class_data_stream_reader.html#a92ce101a0eb90f6d372f3ddc09fdfebc":[12,0,93,5],
 "class_data_stream_reader.html#a939ebaf71f0663f6b3056cb5d5bd7db0":[12,0,93,29],
 "class_data_stream_reader.html#a93ed54b77522b7f10eccb0f7eafbeea4":[12,0,93,54],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "class_dataflow_1_1_audio_address_dialog.html#aeb5804aec333625c7f3269ce72fb66b9":[12,0,8,0,4],
 "class_dataflow_1_1_audio_address_dialog.html#afd2a7cef282adddd04b9fc2ebef03388":[12,0,8,0,13],
 "class_dataflow_1_1_audio_device.html":[12,0,8,1],
-"class_dataflow_1_1_audio_device.html#a02d065336b5e63abc2a3caed545946bd":[12,0,8,1,6],
-"class_dataflow_1_1_audio_device.html#a15d879169811a3d85cf0cbb1e63ba969":[12,0,8,1,0]
+"class_dataflow_1_1_audio_device.html#a02d065336b5e63abc2a3caed545946bd":[12,0,8,1,6]
 };

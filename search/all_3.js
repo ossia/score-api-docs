@@ -69,7 +69,7 @@ var searchData=
   ['color_5fmap_262',['color_map',['../structscore_1_1_skin_1_1color__map.html',1,'score::Skin']]],
   ['colorbang_263',['ColorBang',['../classscore_1_1_color_bang.html',1,'score']]],
   ['colorref_264',['ColorRef',['../structscore_1_1_color_ref.html',1,'score']]],
-  ['colors_265',['Colors',['../class_automation_1_1_colors.html',1,'Automation::Colors'],['../class_interpolation_1_1_colors.html',1,'Interpolation::Colors'],['../class_interp_state_1_1_colors.html',1,'InterpState::Colors'],['../class_mapping_1_1_colors.html',1,'Mapping::Colors']]],
+  ['colors_265',['Colors',['../class_mapping_1_1_colors.html',1,'Mapping::Colors'],['../class_automation_1_1_colors.html',1,'Automation::Colors'],['../class_interpolation_1_1_colors.html',1,'Interpolation::Colors'],['../class_interp_state_1_1_colors.html',1,'InterpState::Colors']]],
   ['combobox_266',['ComboBox',['../classscore_1_1_combo_box.html',1,'score::ComboBox'],['../struct_control_1_1_combo_box.html',1,'Control::ComboBox&lt; T, N &gt;'],['../struct_widget_factory_1_1_combo_box.html',1,'WidgetFactory::ComboBox']]],
   ['comboslider_267',['ComboSlider',['../structscore_1_1_combo_slider.html',1,'score']]],
   ['command_268',['Command',['../classscore_1_1_command.html',1,'score::Command'],['../structscore_1_1_property_command___t_1_1command.html',1,'score::PropertyCommand_T&lt; T &gt;::command&lt; U &gt;']]],
@@ -100,7 +100,7 @@ var searchData=
   ['commondisplacementpolicy_293',['CommonDisplacementPolicy',['../class_scenario_1_1_common_displacement_policy.html',1,'Scenario']]],
   ['commonselectionstate_294',['CommonSelectionState',['../class_common_selection_state.html',1,'']]],
   ['compileroptions_295',['CompilerOptions',['../struct_jit_1_1_compiler_options.html',1,'Jit']]],
-  ['component_296',['Component',['../class_midi_1_1_executor_1_1_component.html',1,'Midi::Executor::Component'],['../class_pd_1_1_component.html',1,'Pd::Component'],['../class_automation_1_1_recreate_on_play_1_1_component.html',1,'Automation::RecreateOnPlay::Component'],['../class_gradient_1_1_recreate_on_play_1_1_component.html',1,'Gradient::RecreateOnPlay::Component'],['../class_spline_1_1_recreate_on_play_1_1_component.html',1,'Spline::RecreateOnPlay::Component'],['../class_spline3_d_1_1_recreate_on_play_1_1_component.html',1,'Spline3D::RecreateOnPlay::Component'],['../class_y_s_f_x_1_1_executor_1_1_component.html',1,'YSFX::Executor::Component'],['../classscore_1_1_component.html',1,'score::Component'],['../class_local_tree_1_1_component.html',1,'LocalTree::Component&lt; Component_T &gt;'],['../class_j_s_1_1_executor_1_1_component.html',1,'JS::Executor::Component'],['../class_mapping_1_1_recreate_on_play_1_1_component.html',1,'Mapping::RecreateOnPlay::Component'],['../namespacescore.html#af6add989b19b668a4387c1cbc8131d2c',1,'score::component()']]],
+  ['component_296',['Component',['../class_mapping_1_1_recreate_on_play_1_1_component.html',1,'Mapping::RecreateOnPlay::Component'],['../class_midi_1_1_executor_1_1_component.html',1,'Midi::Executor::Component'],['../class_pd_1_1_component.html',1,'Pd::Component'],['../class_automation_1_1_recreate_on_play_1_1_component.html',1,'Automation::RecreateOnPlay::Component'],['../class_gradient_1_1_recreate_on_play_1_1_component.html',1,'Gradient::RecreateOnPlay::Component'],['../class_spline_1_1_recreate_on_play_1_1_component.html',1,'Spline::RecreateOnPlay::Component'],['../class_spline3_d_1_1_recreate_on_play_1_1_component.html',1,'Spline3D::RecreateOnPlay::Component'],['../class_y_s_f_x_1_1_executor_1_1_component.html',1,'YSFX::Executor::Component'],['../classscore_1_1_component.html',1,'score::Component'],['../class_local_tree_1_1_component.html',1,'LocalTree::Component&lt; Component_T &gt;'],['../class_j_s_1_1_executor_1_1_component.html',1,'JS::Executor::Component'],['../namespacescore.html#af6add989b19b668a4387c1cbc8131d2c',1,'score::component()']]],
   ['component_3c_20process_3a_3agenericprocesscomponent_3c_20const_20score_3a_3adocumentcontext_20_3e_20_3e_297',['Component&lt; Process::GenericProcessComponent&lt; const score::DocumentContext &gt; &gt;',['../class_local_tree_1_1_component.html',1,'LocalTree']]],
   ['component_3c_20scenario_3a_3agenericintervalcomponent_3c_20const_20score_3a_3adocumentcontext_20_3e_20_3e_298',['Component&lt; Scenario::GenericIntervalComponent&lt; const score::DocumentContext &gt; &gt;',['../class_local_tree_1_1_component.html',1,'LocalTree']]],
   ['componentcache_299',['ComponentCache',['../struct_j_s_1_1_component_cache.html',1,'JS']]],
@@ -215,7 +215,12 @@ var searchData=
   ['curvetraits_3c_20float_20_3e_408',['CurveTraits&lt; float &gt;',['../struct_engine_1_1score__to__ossia_1_1_curve_traits_3_01float_01_4.html',1,'Engine::score_to_ossia']]],
   ['curvetraits_3c_20int_20_3e_409',['CurveTraits&lt; int &gt;',['../struct_engine_1_1score__to__ossia_1_1_curve_traits_3_01int_01_4.html',1,'Engine::score_to_ossia']]],
   ['customactioncondition_410',['CustomActionCondition',['../structscore_1_1_custom_action_condition.html',1,'score']]],
-  ['customitem_411',['CustomItem',['../classoscr_1_1_custom_item.html',1,'oscr']]],
-  ['customuisetup_412',['CustomUISetup',['../struct_control_1_1_custom_u_i_setup.html',1,'Control']]],
-  ['cycledetector_413',['CycleDetector',['../struct_scenario_1_1_cycle_detector.html',1,'Scenario']]]
+  ['customcontrolfactory_411',['CustomControlFactory',['../structoscr_1_1_custom_control_factory.html',1,'oscr']]],
+  ['customcontrolfactory_3c_20node_2c_20avnd_3a_3afield_5freflection_3c_20n_2c_20field_20_3e_20_3e_412',['CustomControlFactory&lt; Node, avnd::field_reflection&lt; N, Field &gt; &gt;',['../structoscr_1_1_custom_control_factory_3_01_node_00_01avnd_1_1field__reflection_3_01_n_00_01_field_01_4_01_4.html',1,'oscr']]],
+  ['customfloatcontrol_413',['CustomFloatControl',['../structoscr_1_1_custom_float_control.html',1,'oscr']]],
+  ['customitem_414',['CustomItem',['../classoscr_1_1_custom_item.html',1,'oscr']]],
+  ['customtextgraphicsknob_415',['CustomTextGraphicsKnob',['../classoscr_1_1_custom_text_graphics_knob.html',1,'oscr']]],
+  ['customtextgraphicsslider_416',['CustomTextGraphicsSlider',['../classoscr_1_1_custom_text_graphics_slider.html',1,'oscr']]],
+  ['customuisetup_417',['CustomUISetup',['../struct_control_1_1_custom_u_i_setup.html',1,'Control']]],
+  ['cycledetector_418',['CycleDetector',['../struct_scenario_1_1_cycle_detector.html',1,'Scenario']]]
 ];
