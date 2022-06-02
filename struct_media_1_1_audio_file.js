@@ -31,7 +31,6 @@ var struct_media_1_1_audio_file =
     [ "sampleRate", "struct_media_1_1_audio_file.html#a5411faed409d7ccbe92ec947a303a934", null ],
     [ "samples", "struct_media_1_1_audio_file.html#ae7ed5b2efb7d95c5e1c818a96c191b29", null ],
     [ "unsafe_handle", "struct_media_1_1_audio_file.html#a098a67d82903006b0d77154243ff2166", null ],
-    [ "updateSampleRate", "struct_media_1_1_audio_file.html#a7cb06c5f0c10dc006d170b3ee5d60f38", null ],
     [ "SoundComponentSetup", "struct_media_1_1_audio_file.html#a6bfa5df17a99adc9106b2376def1d1db", null ],
     [ "on_finishedDecoding", "struct_media_1_1_audio_file.html#a6a3e510fb42a1ee9ceb5bbc4599dc1e6", null ],
     [ "on_mediaChanged", "struct_media_1_1_audio_file.html#ac5a70b02f74b55c94e4eb8a8d6036d9e", null ],

@@ -1,6 +1,5 @@
 var NAVTREEINDEX72 =
 {
-"structscore_1_1indirect__ptr__iterator.html":[12,0,46,136],
 "structscore_1_1indirect__ptr__iterator.html#a008b461670a040f69f06431eaf4e02dc":[12,0,46,136,4],
 "structscore_1_1indirect__ptr__iterator.html#a035b15ac1bb3ac4495a38dd50076160f":[12,0,46,136,7],
 "structscore_1_1indirect__ptr__iterator.html#a11ec1b4ab9eade63120854e24e173f46":[12,0,46,136,15],
