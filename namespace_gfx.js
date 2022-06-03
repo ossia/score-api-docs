@@ -126,6 +126,7 @@ var namespace_gfx =
     [ "video_texture_input_protocol", "class_gfx_1_1video__texture__input__protocol.html", "class_gfx_1_1video__texture__input__protocol" ],
     [ "window_device", "class_gfx_1_1window__device.html", "class_gfx_1_1window__device" ],
     [ "WindowDevice", "class_gfx_1_1_window_device.html", "class_gfx_1_1_window_device" ],
+    [ "WindowOutputSettings", "struct_gfx_1_1_window_output_settings.html", "struct_gfx_1_1_window_output_settings" ],
     [ "WindowProtocolFactory", "class_gfx_1_1_window_protocol_factory.html", null ],
     [ "WindowSettingsWidget", "class_gfx_1_1_window_settings_widget.html", "class_gfx_1_1_window_settings_widget" ]
 ];

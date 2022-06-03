@@ -118,17 +118,23 @@ $(document).ready(function(){initNavTree('_render_state_8hpp_source.html',''); i
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_render_state.html">   25</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  QRhi* rhi{};</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  QRhiRenderPassDescriptor* renderPassDescriptor{};</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  std::weak_ptr&lt;RenderList&gt; renderer{};</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  QOffscreenSurface* surface{};</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  QSize renderSize{};</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  QSize outputSize{};</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a> api{};</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  QShaderVersion version{};</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a>(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a>(<a class="code" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a>&amp; operator=(<a class="code" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  QRhi* rhi{};</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  QRhiRenderPassDescriptor* renderPassDescriptor{};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  std::weak_ptr&lt;RenderList&gt; renderer{};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  QOffscreenSurface* surface{};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  QSize renderSize{};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  QSize outputSize{};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a> api{};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  QShaderVersion version{};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition:</b> Vulkan.hpp:9</div></div>

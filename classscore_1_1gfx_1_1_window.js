@@ -15,6 +15,5 @@ var classscore_1_1gfx_1_1_window =
     [ "onRender", "classscore_1_1gfx_1_1_window.html#ae08ff883b7ffe38447a4371307db178a", null ],
     [ "onResize", "classscore_1_1gfx_1_1_window.html#a1d89b43c62afe241ae25d21f20d77395", null ],
     [ "onUpdate", "classscore_1_1gfx_1_1_window.html#adddf837fcd179b3383d7b869d548bdd3", null ],
-    [ "onWindowReady", "classscore_1_1gfx_1_1_window.html#a0c5699c5c4707e9eca42bb067f2e52e1", null ],
-    [ "state", "classscore_1_1gfx_1_1_window.html#ae10aeeace348312a98823692c137cc7f", null ]
+    [ "onWindowReady", "classscore_1_1gfx_1_1_window.html#a0c5699c5c4707e9eca42bb067f2e52e1", null ]
 ];

@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('score-plugin-gfx_2_gfx_2_graph_2_graph
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">void</span> initializeOutput(OutputNode* output, <a class="code" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a> graphicsApi);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">void</span> createOutputRenderList(OutputNode&amp; output);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">void</span> recreateOutputRenderList(OutputNode&amp; output);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  std::shared_ptr&lt;RenderList&gt; createRenderList(OutputNode*, RenderState state);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  std::shared_ptr&lt;RenderList&gt; createRenderList(OutputNode*, std::shared_ptr&lt;RenderState&gt; state);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  std::vector&lt;std::shared_ptr&lt;RenderList&gt;&gt; m_renderers;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  std::vector&lt;std::shared_ptr&lt;Window&gt;&gt; m_unused_windows;</div>

@@ -134,13 +134,13 @@ $(document).ready(function(){initNavTree('plugins_2score-plugin-gfx_2_gfx_2_grap
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  std::function&lt;void(QRhiCommandBuffer&amp;)&gt; onRender;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  std::function&lt;void()&gt; onResize;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> state;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> mouseMove(QPointF screen, QPointF win)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      W_SIGNAL(mouseMove, screen, win);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> key(<span class="keywordtype">int</span> key, <span class="keyword">const</span> QString&amp; t)</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      W_SIGNAL(key, key, t);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> mouseMove(QPointF screen, QPointF win)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      W_SIGNAL(mouseMove, screen, win);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> key(<span class="keywordtype">int</span> key, <span class="keyword">const</span> QString&amp; t)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      W_SIGNAL(key, key, t);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  std::shared_ptr&lt;RenderState&gt; state;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a> m_api{};</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  QRhiSwapChain* m_swapChain{};</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
@@ -156,7 +156,6 @@ $(document).ready(function(){initNavTree('plugins_2score-plugin-gfx_2_gfx_2_grap
 <div class="ttc" id="aclassscore_1_1gfx_1_1_window_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_window.html">score::gfx::Window</a></div><div class="ttdoc">A platform window in which the content is going to be rendered.</div><div class="ttdef"><b>Definition:</b> plugins/score-plugin-gfx/Gfx/Graph/Window.hpp:15</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition:</b> Vulkan.hpp:9</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html_a5b6a96306e1a02ccc56d8bb785bc6734"><div class="ttname"><a href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">score::gfx::GraphicsApi</a></div><div class="ttdeci">GraphicsApi</div><div class="ttdoc">Available graphics APIs to use.</div><div class="ttdef"><b>Definition:</b> RenderState.hpp:11</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_render_state_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_render_state.html">score::gfx::RenderState</a></div><div class="ttdoc">Global state associated to a rendering context.</div><div class="ttdef"><b>Definition:</b> RenderState.hpp:25</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_screen_node_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_screen_node.html">score::gfx::ScreenNode</a></div><div class="ttdoc">This node is used for rendering to a score::gfx::Window.</div><div class="ttdef"><b>Definition:</b> ScreenNode.hpp:10</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

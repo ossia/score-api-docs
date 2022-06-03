@@ -74,7 +74,7 @@ var searchData=
   ['toolbase_3c_20scenario_3a_3ascenariodisplayedelementstoolpalette_20_3e_2586',['ToolBase&lt; Scenario::ScenarioDisplayedElementsToolPalette &gt;',['../class_scenario_1_1_tool_base.html',1,'Scenario']]],
   ['toolbase_3c_20scenario_3a_3atoolpalette_20_3e_2587',['ToolBase&lt; Scenario::ToolPalette &gt;',['../class_scenario_1_1_tool_base.html',1,'Scenario']]],
   ['toolmenuactions_2588',['ToolMenuActions',['../class_scenario_1_1_tool_menu_actions.html',1,'Scenario']]],
-  ['toolpalette_2589',['ToolPalette',['../class_scenario_1_1_tool_palette.html',1,'Scenario::ToolPalette'],['../class_curve_1_1_tool_palette.html',1,'Curve::ToolPalette']]],
+  ['toolpalette_2589',['ToolPalette',['../class_curve_1_1_tool_palette.html',1,'Curve::ToolPalette'],['../class_scenario_1_1_tool_palette.html',1,'Scenario::ToolPalette']]],
   ['toolpalette_5ft_2590',['ToolPalette_T',['../struct_curve_1_1_tool_palette___t.html',1,'Curve']]],
   ['toolpalette_5ft_3c_20process_3a_3alayercontext_20_3e_2591',['ToolPalette_T&lt; Process::LayerContext &gt;',['../struct_curve_1_1_tool_palette___t.html',1,'Curve']]],
   ['toolpaletteinputdispatcher_2592',['ToolPaletteInputDispatcher',['../class_tool_palette_input_dispatcher.html',1,'']]],

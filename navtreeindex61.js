@@ -1,5 +1,10 @@
 var NAVTREEINDEX61 =
 {
+"struct_process_1_1_style.html#a57afa669489d63f99a788f782b6998e5":[12,0,39,88,34],
+"struct_process_1_1_style.html#a5b2dfc19242820a3b72d0e211e834d73":[12,0,39,88,42],
+"struct_process_1_1_style.html#a5f7a51c28e6a257bcecbe0a5ba6605b6":[12,0,39,88,85],
+"struct_process_1_1_style.html#a60103626c0e693009fe575816d5f9909":[12,0,39,88,83],
+"struct_process_1_1_style.html#a62d9452ae0cb837133b0cf5a155fca58":[12,0,39,88,21],
 "struct_process_1_1_style.html#a6368149125c0823b7b4005cd6e01e1a3":[12,0,39,88,40],
 "struct_process_1_1_style.html#a6ae78406414cd09c653fb8edc0a6daf2":[12,0,39,88,1],
 "struct_process_1_1_style.html#a6ee04b038bd811076d8cdf3e42862528":[12,0,39,88,24],
@@ -244,10 +249,5 @@ var NAVTREEINDEX61 =
 "struct_q_meta_type_id_3_01_protocols_1_1_h_t_t_p_specific_settings_01_4.html":[12,0,270],
 "struct_q_meta_type_id_3_01_protocols_1_1_h_t_t_p_specific_settings_01_4.html#a8aaae2c1af8e58776583891b64b961eca96349c6f276f8b5f41c9e22450592c92":[12,0,270,0],
 "struct_q_meta_type_id_3_01_protocols_1_1_joystick_specific_settings_01_4.html":[12,0,271],
-"struct_q_meta_type_id_3_01_protocols_1_1_joystick_specific_settings_01_4.html#abc5cce4d051dde8091adb430deddbd39a411d22e89f1d141cd1008c07ce77348d":[12,0,271,0],
-"struct_q_meta_type_id_3_01_protocols_1_1_leapmotion_specific_settings_01_4.html":[12,0,272],
-"struct_q_meta_type_id_3_01_protocols_1_1_leapmotion_specific_settings_01_4.html#a37c5c4fa0d49244177025b582b983896af683881efcaf5541ae1348d45c3178a6":[12,0,272,0],
-"struct_q_meta_type_id_3_01_protocols_1_1_local_specific_settings_01_4.html":[12,0,273],
-"struct_q_meta_type_id_3_01_protocols_1_1_local_specific_settings_01_4.html#a652fd36d526df4e01e628df90db326d5adc36ee430db28f8c9fe95e8a230efa18":[12,0,273,0],
-"struct_q_meta_type_id_3_01_protocols_1_1_m_i_d_i_specific_settings_01_4.html":[12,0,274]
+"struct_q_meta_type_id_3_01_protocols_1_1_joystick_specific_settings_01_4.html#abc5cce4d051dde8091adb430deddbd39a411d22e89f1d141cd1008c07ce77348d":[12,0,271,0]
 };
