@@ -1,6 +1,5 @@
 var NAVTREEINDEX34 =
 {
-"class_scenario_1_1_minimap.html#a468f7b7c19c9c03b909ad886ee673144":[12,0,45,150,7],
 "class_scenario_1_1_minimap.html#aacf6ce0d80f328c083fd703c28b9ccb8":[12,0,45,150,10],
 "class_scenario_1_1_minimap.html#aad309017ec1ecb703455e2c3940bdf73":[12,0,45,150,14],
 "class_scenario_1_1_minimap.html#aaeae0fec1c7710da7ebee23aac4ff4f7":[12,0,45,150,13],
@@ -249,5 +248,6 @@ var NAVTREEINDEX34 =
 "class_scenario_1_1_scenario_application_plugin.html#aedb27eed51d7eb12036c8ca3eb5b48d6":[12,0,45,208,2],
 "class_scenario_1_1_scenario_application_plugin.html#afa3747065da11502511a93acea1cb1b4":[12,0,45,208,9],
 "class_scenario_1_1_scenario_application_plugin.html#afc621ae7c52e77e02577bdb6f54955f7":[12,0,45,208,8],
-"class_scenario_1_1_scenario_context_menu_manager.html":[12,0,45,210]
+"class_scenario_1_1_scenario_context_menu_manager.html":[12,0,45,210],
+"class_scenario_1_1_scenario_create.html":[12,0,45,211]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX38 =
 {
-"class_script.html#a5368f77b0b91a5d06210475c87d9abcd":[12,0,373,18],
 "class_script.html#a538ee4168f79d3a0f2882bdd8c0c89ff":[12,0,373,19],
 "class_script.html#a616569793d06a02b0e99a4fb14a3a299":[12,0,373,20],
 "class_script.html#a6813f2d3c41c40be3f4e6c512f2d8598":[12,0,373,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX38 =
 "class_state_1_1_numeric_domain_widget.html#a4684d625be79407d4b40d55b80ff1292":[12,0,50,20,4],
 "class_state_1_1_numeric_domain_widget.html#a7c0b68f5ba0d301a35ec66eac54cd83c":[12,0,50,20,0],
 "class_state_1_1_numeric_domain_widget.html#aabaee2190aa0c3101bc0e7c4b746a281":[12,0,50,20,3],
-"class_state_1_1_numeric_value_set_dialog.html":[12,0,50,21]
+"class_state_1_1_numeric_value_set_dialog.html":[12,0,50,21],
+"class_state_1_1_numeric_value_set_dialog.html#a23b63d8738a6c5bcf80399eed955df4f":[12,0,50,21,3]
 };

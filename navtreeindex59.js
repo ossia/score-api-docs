@@ -1,6 +1,5 @@
 var NAVTREEINDEX59 =
 {
-"struct_nodes_1_1_direction_1_1_node_1_1_state.html#aeff7aa7c23657886edd8d767089af950":[12,0,33,5,0,1,0],
 "struct_nodes_1_1_empty_audio_mapping_1_1_node.html":[12,0,33,6,0],
 "struct_nodes_1_1_empty_audio_mapping_1_1_node.html#a490db3f5270a4fc48818da52959744fc":[12,0,33,6,0,1],
 "struct_nodes_1_1_empty_audio_mapping_1_1_node_1_1_metadata.html":[12,0,33,6,0,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX59 =
 "struct_ossia_variant_j_s_o_n_deserializer.html#a02b2c10dfd40c3945cc38ed2cb4d5bba":[12,0,202,1],
 "struct_ossia_variant_j_s_o_n_deserializer.html#a0e5763963cf7b1556c1a333dfb07155e":[12,0,202,3],
 "struct_ossia_variant_j_s_o_n_deserializer.html#a365b082e93f00efa8a66829b95c30416":[12,0,202,4],
-"struct_ossia_variant_j_s_o_n_deserializer.html#a3fefc21ccd22842473e892e19f110d23":[12,0,202,2]
+"struct_ossia_variant_j_s_o_n_deserializer.html#a3fefc21ccd22842473e892e19f110d23":[12,0,202,2],
+"struct_ossia_variant_j_s_o_n_deserializer.html#a6ab46cfd7ef8485fc5ef15f57aebdf2c":[12,0,202,0]
 };
