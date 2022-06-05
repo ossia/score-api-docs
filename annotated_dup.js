@@ -511,6 +511,7 @@ var annotated_dup =
       [ "NodeEditor", "class_nodal_1_1_node_editor.html", null ],
       [ "Presenter", "class_nodal_1_1_presenter.html", "class_nodal_1_1_presenter" ],
       [ "RemoveNode", "class_nodal_1_1_remove_node.html", "class_nodal_1_1_remove_node" ],
+      [ "RemoveNodes", "class_nodal_1_1_remove_nodes.html", null ],
       [ "ReplaceAllNodes", "class_nodal_1_1_replace_all_nodes.html", "class_nodal_1_1_replace_all_nodes" ],
       [ "View", "class_nodal_1_1_view.html", "class_nodal_1_1_view" ]
     ] ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX27 =
 {
+"class_protocols_1_1_o_s_c_protocol_factory.html":[12,0,40,49],
 "class_protocols_1_1_o_s_c_protocol_settings_widget.html":[12,0,40,50],
 "class_protocols_1_1_o_s_c_protocol_settings_widget.html#a2f273fefc605131c9f9874f5f92ebd4e":[12,0,40,50,1],
 "class_protocols_1_1_o_s_c_protocol_settings_widget.html#a61dcc9cc127037e3a8613df5eec448ac":[12,0,40,50,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX27 =
 "class_remove_layer_model_from_slot_test.html":[12,0,330],
 "class_remove_process_from_interval_test.html":[12,0,331],
 "class_remove_rack_from_interval_test.html":[12,0,332],
-"class_remove_slot_from_rack_test.html":[12,0,333],
-"class_resize_slot_vertically_test.html":[12,0,335]
+"class_remove_slot_from_rack_test.html":[12,0,333]
 };

@@ -61,7 +61,7 @@ var searchData=
   ['removelayermodelfromslottest_2071',['RemoveLayerModelFromSlotTest',['../class_remove_layer_model_from_slot_test.html',1,'']]],
   ['removemessagenodes_2072',['RemoveMessageNodes',['../class_scenario_1_1_command_1_1_remove_message_nodes.html',1,'Scenario::Command']]],
   ['removenode_2073',['RemoveNode',['../class_nodal_1_1_remove_node.html',1,'Nodal::RemoveNode'],['../structscore_1_1gfx_1_1_graph.html#a1693837e0d684408bb84af3f619cfc8a',1,'score::gfx::Graph::removeNode()']]],
-  ['removenodes_2074',['RemoveNodes',['../class_explorer_1_1_command_1_1_remove_nodes.html',1,'Explorer::Command']]],
+  ['removenodes_2074',['RemoveNodes',['../class_nodal_1_1_remove_nodes.html',1,'Nodal::RemoveNodes'],['../class_explorer_1_1_command_1_1_remove_nodes.html',1,'Explorer::Command::RemoveNodes']]],
   ['removenotes_2075',['RemoveNotes',['../class_midi_1_1_remove_notes.html',1,'Midi']]],
   ['removeprocessfrominterval_2076',['RemoveProcessFromInterval',['../class_scenario_1_1_command_1_1_remove_process_from_interval.html',1,'Scenario::Command']]],
   ['removeprocessfromintervaltest_2077',['RemoveProcessFromIntervalTest',['../class_remove_process_from_interval_test.html',1,'']]],

@@ -54,7 +54,7 @@ var searchData=
   ['removelayermodelfromslottest_4824',['RemoveLayerModelFromSlotTest',['../class_remove_layer_model_from_slot_test.html',1,'']]],
   ['removemessagenodes_4825',['RemoveMessageNodes',['../class_scenario_1_1_command_1_1_remove_message_nodes.html',1,'Scenario::Command']]],
   ['removenode_4826',['RemoveNode',['../class_nodal_1_1_remove_node.html',1,'Nodal']]],
-  ['removenodes_4827',['RemoveNodes',['../class_explorer_1_1_command_1_1_remove_nodes.html',1,'Explorer::Command']]],
+  ['removenodes_4827',['RemoveNodes',['../class_nodal_1_1_remove_nodes.html',1,'Nodal::RemoveNodes'],['../class_explorer_1_1_command_1_1_remove_nodes.html',1,'Explorer::Command::RemoveNodes']]],
   ['removenotes_4828',['RemoveNotes',['../class_midi_1_1_remove_notes.html',1,'Midi']]],
   ['removeprocessfrominterval_4829',['RemoveProcessFromInterval',['../class_scenario_1_1_command_1_1_remove_process_from_interval.html',1,'Scenario::Command']]],
   ['removeprocessfromintervaltest_4830',['RemoveProcessFromIntervalTest',['../class_remove_process_from_interval_test.html',1,'']]],
