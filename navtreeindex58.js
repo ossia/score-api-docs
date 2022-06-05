@@ -1,5 +1,15 @@
 var NAVTREEINDEX58 =
 {
+"struct_media_1_1_sound_1_1_waveform_computer.html#aaba8e1fbd485e17cedfe212afb826e22":[12,0,29,3,11,4],
+"struct_media_1_1_sound_1_1_waveform_computer.html#af984907c7530bb9297c3f1c2952d9cef":[12,0,29,3,11,0],
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html":[12,0,29,3,12],
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#a15ecef6e14460ba11ad2e6975c9f2d8b":[12,0,29,3,12,15],
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#a19939614e102947eab4648d5bc8ccb6b":[12,0,29,3,12,14],
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#a37e2f149793996b10ce9f144a47a9dc4":[12,0,29,3,12,11],
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#a4736679a06f59f880b7ac1c1f568b072":[12,0,29,3,12,6],
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#a4b0211f06fb73562840f78a94f75ee05":[12,0,29,3,12,8],
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#a52654a48b3b8df1a791393e1439946ea":[12,0,29,3,12,13],
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#a6bddae0e109eb92e1f3f45eba1623a3b":[12,0,29,3,12,4],
 "struct_media_1_1_sound_1_1_waveform_computer_impl.html#a773e85bd25945d6447fb5f0dcbdc113a":[12,0,29,3,12,12],
 "struct_media_1_1_sound_1_1_waveform_computer_impl.html#a98cbe7cb83aee57f83777d70ec90d262":[12,0,29,3,12,9],
 "struct_media_1_1_sound_1_1_waveform_computer_impl.html#aae73ae8d4333064505686e3429e560e8":[12,0,29,3,12,7],
@@ -239,15 +249,5 @@ var NAVTREEINDEX58 =
 "struct_nodes_1_1_direction_1_1_node.html":[12,0,33,5,0],
 "struct_nodes_1_1_direction_1_1_node.html#aa4b81f34c0001a71c4230aa0d0cf2bea":[12,0,33,5,0,2],
 "struct_nodes_1_1_direction_1_1_node_1_1_metadata.html":[12,0,33,5,0,0],
-"struct_nodes_1_1_direction_1_1_node_1_1_state.html":[12,0,33,5,0,1],
-"struct_nodes_1_1_direction_1_1_node_1_1_state.html#aeff7aa7c23657886edd8d767089af950":[12,0,33,5,0,1,0],
-"struct_nodes_1_1_empty_audio_mapping_1_1_node.html":[12,0,33,6,0],
-"struct_nodes_1_1_empty_audio_mapping_1_1_node.html#a490db3f5270a4fc48818da52959744fc":[12,0,33,6,0,1],
-"struct_nodes_1_1_empty_audio_mapping_1_1_node_1_1_metadata.html":[12,0,33,6,0,0],
-"struct_nodes_1_1_empty_midi_mapping_1_1_node.html":[12,0,33,7,0],
-"struct_nodes_1_1_empty_midi_mapping_1_1_node.html#a695a2cd08191651118f67f1c76ab4b87":[12,0,33,7,0,1],
-"struct_nodes_1_1_empty_midi_mapping_1_1_node_1_1_metadata.html":[12,0,33,7,0,0],
-"struct_nodes_1_1_empty_value_mapping_1_1_node.html":[12,0,33,8,0],
-"struct_nodes_1_1_empty_value_mapping_1_1_node.html#a3818d4afb3d142b593c891c29d4b4477":[12,0,33,8,0,1],
-"struct_nodes_1_1_empty_value_mapping_1_1_node_1_1_metadata.html":[12,0,33,8,0,0]
+"struct_nodes_1_1_direction_1_1_node_1_1_state.html":[12,0,33,5,0,1]
 };

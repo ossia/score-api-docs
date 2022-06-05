@@ -29,6 +29,7 @@ var namespace_execution =
     [ "ExecutionActionList", "class_execution_1_1_execution_action_list.html", "class_execution_1_1_execution_action_list" ],
     [ "ExecutionController", "class_execution_1_1_execution_controller.html", "class_execution_1_1_execution_controller" ],
     [ "FaustEffectComponent", "class_execution_1_1_faust_effect_component.html", "class_execution_1_1_faust_effect_component" ],
+    [ "FinishCallback", "struct_execution_1_1_finish_callback.html", "struct_execution_1_1_finish_callback" ],
     [ "HandleNodeChange", "struct_execution_1_1_handle_node_change.html", "struct_execution_1_1_handle_node_change" ],
     [ "interval_duration_data", "struct_execution_1_1interval__duration__data.html", "struct_execution_1_1interval__duration__data" ],
     [ "IntervalComponent", "class_execution_1_1_interval_component.html", "class_execution_1_1_interval_component" ],
@@ -59,5 +60,6 @@ var namespace_execution =
     [ "StateComponentBase", "class_execution_1_1_state_component_base.html", "class_execution_1_1_state_component_base" ],
     [ "StepComponent", "class_execution_1_1_step_component.html", "class_execution_1_1_step_component" ],
     [ "TimeSyncComponent", "class_execution_1_1_time_sync_component.html", "class_execution_1_1_time_sync_component" ],
+    [ "TimeSyncExecutionCallbacks", "struct_execution_1_1_time_sync_execution_callbacks.html", "struct_execution_1_1_time_sync_execution_callbacks" ],
     [ "Transaction", "struct_execution_1_1_transaction.html", "struct_execution_1_1_transaction" ]
 ];

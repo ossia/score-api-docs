@@ -1,5 +1,15 @@
 var NAVTREEINDEX59 =
 {
+"struct_nodes_1_1_direction_1_1_node_1_1_state.html#aeff7aa7c23657886edd8d767089af950":[12,0,33,5,0,1,0],
+"struct_nodes_1_1_empty_audio_mapping_1_1_node.html":[12,0,33,6,0],
+"struct_nodes_1_1_empty_audio_mapping_1_1_node.html#a490db3f5270a4fc48818da52959744fc":[12,0,33,6,0,1],
+"struct_nodes_1_1_empty_audio_mapping_1_1_node_1_1_metadata.html":[12,0,33,6,0,0],
+"struct_nodes_1_1_empty_midi_mapping_1_1_node.html":[12,0,33,7,0],
+"struct_nodes_1_1_empty_midi_mapping_1_1_node.html#a695a2cd08191651118f67f1c76ab4b87":[12,0,33,7,0,1],
+"struct_nodes_1_1_empty_midi_mapping_1_1_node_1_1_metadata.html":[12,0,33,7,0,0],
+"struct_nodes_1_1_empty_value_mapping_1_1_node.html":[12,0,33,8,0],
+"struct_nodes_1_1_empty_value_mapping_1_1_node.html#a3818d4afb3d142b593c891c29d4b4477":[12,0,33,8,0,1],
+"struct_nodes_1_1_empty_value_mapping_1_1_node_1_1_metadata.html":[12,0,33,8,0,0],
 "struct_nodes_1_1_envelope_1_1_node.html":[12,0,33,9,0],
 "struct_nodes_1_1_envelope_1_1_node.html#ade4a8bf5adeb23ac6993c3015fd3627c":[12,0,33,9,0,1],
 "struct_nodes_1_1_envelope_1_1_node_1_1_metadata.html":[12,0,33,9,0,0],
@@ -239,15 +249,5 @@ var NAVTREEINDEX59 =
 "struct_ossia_variant_j_s_o_n_deserializer.html#a02b2c10dfd40c3945cc38ed2cb4d5bba":[12,0,202,1],
 "struct_ossia_variant_j_s_o_n_deserializer.html#a0e5763963cf7b1556c1a333dfb07155e":[12,0,202,3],
 "struct_ossia_variant_j_s_o_n_deserializer.html#a365b082e93f00efa8a66829b95c30416":[12,0,202,4],
-"struct_ossia_variant_j_s_o_n_deserializer.html#a3fefc21ccd22842473e892e19f110d23":[12,0,202,2],
-"struct_ossia_variant_j_s_o_n_deserializer.html#a6ab46cfd7ef8485fc5ef15f57aebdf2c":[12,0,202,0],
-"struct_ossia_variant_j_s_o_n_serializer.html":[12,0,203],
-"struct_ossia_variant_j_s_o_n_serializer.html#a1650e9f61641fe2e88cd073ecc2f19b6":[12,0,203,3],
-"struct_ossia_variant_j_s_o_n_serializer.html#a4a1925be992f97fb8a3a07d1bf73caca":[12,0,203,4],
-"struct_ossia_variant_j_s_o_n_serializer.html#a692e1efc72915b946107a4ea09b263e5":[12,0,203,1],
-"struct_ossia_variant_j_s_o_n_serializer.html#ac11ba4c69caa67a0ac75153aae7f1cb3":[12,0,203,2],
-"struct_ossia_variant_j_s_o_n_serializer.html#ac99c0b03fd47896847d5d257c53e0f66":[12,0,203,0],
-"struct_p_m_1_1_local_packages_model.html":[12,0,38,0],
-"struct_p_m_1_1_local_packages_model.html#a375151d61c18f17b021aef4b4bbdcf2b":[12,0,38,0,0],
-"struct_p_m_1_1_local_packages_model.html#a9efc3e5386fc8272d06b39794aa50fbd":[12,0,38,0,1]
+"struct_ossia_variant_j_s_o_n_deserializer.html#a3fefc21ccd22842473e892e19f110d23":[12,0,202,2]
 };

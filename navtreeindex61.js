@@ -1,5 +1,15 @@
 var NAVTREEINDEX61 =
 {
+"struct_process_1_1_style.html#a31b3efefd051024a16830a1d3b0c2f0c":[12,0,39,88,70],
+"struct_process_1_1_style.html#a33e3b1818fefc383aec67f3603ef4165":[12,0,39,88,51],
+"struct_process_1_1_style.html#a34d021c0eb9864c90ac131d60bb0d1af":[12,0,39,88,41],
+"struct_process_1_1_style.html#a3898c85ea91eb09165a3d9d4d8278dfd":[12,0,39,88,65],
+"struct_process_1_1_style.html#a3d1a0ca19e1851c8a497e644496990fe":[12,0,39,88,59],
+"struct_process_1_1_style.html#a3ff36f18c0cd8f79467bc571ea07d8b8":[12,0,39,88,60],
+"struct_process_1_1_style.html#a4409c2f9734680e169b0c2f0f42ce71f":[12,0,39,88,3],
+"struct_process_1_1_style.html#a447b3ce83b96f4ab44f11ebbb3261161":[12,0,39,88,46],
+"struct_process_1_1_style.html#a49a114725dc727ac02b731b718e15da4":[12,0,39,88,13],
+"struct_process_1_1_style.html#a54bd8e79c89a83adc6c33872ba69accf":[12,0,39,88,10],
 "struct_process_1_1_style.html#a57afa669489d63f99a788f782b6998e5":[12,0,39,88,34],
 "struct_process_1_1_style.html#a5b2dfc19242820a3b72d0e211e834d73":[12,0,39,88,42],
 "struct_process_1_1_style.html#a5f7a51c28e6a257bcecbe0a5ba6605b6":[12,0,39,88,85],
@@ -239,15 +249,5 @@ var NAVTREEINDEX61 =
 "struct_q_meta_type_id_3_01_path_3_01_scenario_1_1_interval_model_01_4_01_4.html":[12,0,264],
 "struct_q_meta_type_id_3_01_path_3_01_scenario_1_1_interval_model_01_4_01_4.html#aeb871caf2945dc19b7a72ee389906479a82222c8a2683552cea92e7cc0201315d":[12,0,264,0],
 "struct_q_meta_type_id_3_01_process_1_1_preset_01_4.html":[12,0,267],
-"struct_q_meta_type_id_3_01_process_1_1_preset_01_4.html#a45d9fa88ea6acfe5428a2ceaccc30d8fafada9077339c198d66425ed06501a954":[12,0,267,0],
-"struct_q_meta_type_id_3_01_process_1_1_process_model_01_5_01_4.html":[12,0,268],
-"struct_q_meta_type_id_3_01_process_1_1_process_model_01_5_01_4.html#a01ada0fd8de81e0b8312b076e834f8eaa52781b8262dd441c07e687fd026c4e44":[12,0,268,0],
-"struct_q_meta_type_id_3_01_process_1_1pan__weight_01_4.html":[12,0,266],
-"struct_q_meta_type_id_3_01_process_1_1pan__weight_01_4.html#acccbd78032a8fc47d1d0d30e82ec9fe4accb66bd43c5228c56e3b0d49cfd100ff":[12,0,266,0],
-"struct_q_meta_type_id_3_01_protocols_1_1_artnet_specific_settings_01_4.html":[12,0,269],
-"struct_q_meta_type_id_3_01_protocols_1_1_artnet_specific_settings_01_4.html#a27cf9cd29264adde776741aa1b527301aa8f17b474189bb3d67953296850a927e":[12,0,269,0],
-"struct_q_meta_type_id_3_01_protocols_1_1_h_t_t_p_specific_settings_01_4.html":[12,0,270],
-"struct_q_meta_type_id_3_01_protocols_1_1_h_t_t_p_specific_settings_01_4.html#a8aaae2c1af8e58776583891b64b961eca96349c6f276f8b5f41c9e22450592c92":[12,0,270,0],
-"struct_q_meta_type_id_3_01_protocols_1_1_joystick_specific_settings_01_4.html":[12,0,271],
-"struct_q_meta_type_id_3_01_protocols_1_1_joystick_specific_settings_01_4.html#abc5cce4d051dde8091adb430deddbd39a411d22e89f1d141cd1008c07ce77348d":[12,0,271,0]
+"struct_q_meta_type_id_3_01_process_1_1_preset_01_4.html#a45d9fa88ea6acfe5428a2ceaccc30d8fafada9077339c198d66425ed06501a954":[12,0,267,0]
 };
