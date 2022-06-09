@@ -375,6 +375,7 @@ var namespace_scenario =
     [ "SnapshotStatesMacro", "class_scenario_1_1_snapshot_states_macro.html", null ],
     [ "SpeedWidget", "class_scenario_1_1_speed_widget.html", "class_scenario_1_1_speed_widget" ],
     [ "StartDateComparator", "struct_scenario_1_1_start_date_comparator.html", "struct_scenario_1_1_start_date_comparator" ],
+    [ "StartMarker", "class_scenario_1_1_start_marker.html", "class_scenario_1_1_start_marker" ],
     [ "StateBase", "class_scenario_1_1_state_base.html", "class_scenario_1_1_state_base" ],
     [ "StateGraphPlusOverlay", "class_scenario_1_1_state_graph_plus_overlay.html", "class_scenario_1_1_state_graph_plus_overlay" ],
     [ "StateInspectorWidget", "class_scenario_1_1_state_inspector_widget.html", "class_scenario_1_1_state_inspector_widget" ],

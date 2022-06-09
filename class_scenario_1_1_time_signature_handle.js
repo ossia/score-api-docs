@@ -1,6 +1,6 @@
 var class_scenario_1_1_time_signature_handle =
 [
-    [ "TimeSignatureHandle", "class_scenario_1_1_time_signature_handle.html#a9b71b68f40184ad6c77bcc9763e8f69b", null ],
+    [ "TimeSignatureHandle", "class_scenario_1_1_time_signature_handle.html#a5109cb6df62e178c0542881b78ec8abf", null ],
     [ "~TimeSignatureHandle", "class_scenario_1_1_time_signature_handle.html#a5f8ca2eff8f2f895834d5d93e6a888a2", null ],
     [ "boundingRect", "class_scenario_1_1_time_signature_handle.html#af565524530311306b66d734b0935ddf7", null ],
     [ "mouseDoubleClickEvent", "class_scenario_1_1_time_signature_handle.html#a37a4a530aa96a42c228992cc7255df50", null ],
@@ -10,9 +10,9 @@ var class_scenario_1_1_time_signature_handle =
     [ "release", "class_scenario_1_1_time_signature_handle.html#a7de5de4e4b89f942ab43fe0245a1f948", null ],
     [ "remove", "class_scenario_1_1_time_signature_handle.html#a2840e51f84fa2e0d163b88b35cd3f048", null ],
     [ "setSignature", "class_scenario_1_1_time_signature_handle.html#ae04e5442eff3affa9c064609cd4896dd", null ],
-    [ "signature", "class_scenario_1_1_time_signature_handle.html#acf09c35bf0c239c39acf1eac93c5fae8", null ],
+    [ "signature", "class_scenario_1_1_time_signature_handle.html#a3cb4fe735d62bb6799e138ff7bb6f356", null ],
     [ "signatureChange", "class_scenario_1_1_time_signature_handle.html#a811b06d65d7ec82e1b48466a92fe4d6e", null ],
-    [ "time", "class_scenario_1_1_time_signature_handle.html#a8c124b154ca5ab69597a8481d4e3a6bf", null ],
+    [ "time", "class_scenario_1_1_time_signature_handle.html#af815d95b48f175639e648880ee838a05", null ],
     [ "updateImpl", "class_scenario_1_1_time_signature_handle.html#ab5221dc1fae42357018dd60d9a3b38ac", null ],
     [ "m_rect", "class_scenario_1_1_time_signature_handle.html#a058bc28e91e4947eddc2d16f0867b6c5", null ],
     [ "m_sig", "class_scenario_1_1_time_signature_handle.html#ab94eea4faf90b3b2b51b07a0643fefd7", null ],
