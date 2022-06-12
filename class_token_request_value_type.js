@@ -52,5 +52,6 @@ var class_token_request_value_type =
     [ "w_state", "class_token_request_value_type.html#af79ff3736297ff3c3040ecc307fb8377", null ],
     [ "w_state", "class_token_request_value_type.html#a039c94d8c101d2dd6bbaaed2df635061", null ],
     [ "w_state", "class_token_request_value_type.html#a9d3ba3d68d7a2241b1e6401557691a1c", null ],
-    [ "w_state", "class_token_request_value_type.html#a0fbb39d40cdd3a98fce7f57f3ff5754d", null ]
+    [ "w_state", "class_token_request_value_type.html#a0fbb39d40cdd3a98fce7f57f3ff5754d", null ],
+    [ "req", "class_token_request_value_type.html#a186fb5cdcfe111503f15b73c34cd5f0f", null ]
 ];

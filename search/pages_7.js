@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['useful_20score_20interfaces_5907',['Useful score interfaces',['../_score_interfaces.html',1,'']]]
+  ['useful_20score_20interfaces_5913',['Useful score interfaces',['../_score_interfaces.html',1,'']]]
 ];

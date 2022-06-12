@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gui_5848',['gui',['../structscore_1_1_application_settings.html#a0a48ca49dc5cfd09a2534d2f3168c192',1,'score::ApplicationSettings']]]
+  ['gui_5854',['gui',['../structscore_1_1_application_settings.html#a0a48ca49dc5cfd09a2534d2f3168c192',1,'score::ApplicationSettings']]]
 ];

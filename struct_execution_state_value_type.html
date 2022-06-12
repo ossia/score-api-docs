@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.8.17"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>score: ExecutionStateValueType Class Reference</title>
+        <title>score: ExecutionStateValueType Struct Reference</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -75,7 +75,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('class_execution_state_value_type.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('struct_execution_state_value_type.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -97,16 +97,21 @@ $(document).ready(function(){initNavTree('class_execution_state_value_type.html'
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
-<a href="class_execution_state_value_type-members.html">List of all members</a>  </div>
+<a href="struct_execution_state_value_type-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ExecutionStateValueType Class Reference</div>  </div>
+<div class="title">ExecutionStateValueType Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:a615117fb067add71a593f726d310d601"><td class="memItemLeft" align="right" valign="top"><a id="a615117fb067add71a593f726d310d601"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>W_ThisType</b> = <a class="el" href="struct_execution_state_value_type.html">ExecutionStateValueType</a></td></tr>
+<tr class="separator:a615117fb067add71a593f726d310d601"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f299fe27d715856ca4b1ee14194ee2c"><td class="memItemLeft" align="right" valign="top"><a id="a2f299fe27d715856ca4b1ee14194ee2c"></a>
 typedef void&#160;</td><td class="memItemRight" valign="bottom"><b>QtGadgetHelper</b></td></tr>
 <tr class="separator:a2f299fe27d715856ca4b1ee14194ee2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,29 +142,51 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>start_date_ns</b> (
 <tr class="memitem:a0bb1b4942488fddb9c1a66bbd907e8de"><td class="memItemLeft" align="right" valign="top"><a id="a0bb1b4942488fddb9c1a66bbd907e8de"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>current_date_ns</b> () const noexcept</td></tr>
 <tr class="separator:a0bb1b4942488fddb9c1a66bbd907e8de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab35c859daec8d67244ca2a2eb032cb61"><td class="memItemLeft" align="right" valign="top"><a id="ab35c859daec8d67244ca2a2eb032cb61"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>WWW_PROPERTY</b> (int, buffer_size, &amp;W_ThisType::buffer_size, W_Final) friend const expr auto w_state(w_internal</td></tr>
-<tr class="separator:ab35c859daec8d67244ca2a2eb032cb61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac68a2f961f5ee1953858d59e48a1156e"><td class="memItemLeft" align="right" valign="top"><a id="ac68a2f961f5ee1953858d59e48a1156e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>WWW_PROPERTY</b> (double, physical_to_model, &amp;W_ThisType::physical_to_model, W_Final) friend const expr auto w_state(w_internal</td></tr>
-<tr class="separator:ac68a2f961f5ee1953858d59e48a1156e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21fa289f4736da8432ea91d488630970"><td class="memItemLeft" align="right" valign="top"><a id="a21fa289f4736da8432ea91d488630970"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>WWW_PROPERTY</b> (double, start_date_ns, &amp;W_ThisType::start_date_ns, W_Final) friend const expr auto w_state(w_internal</td></tr>
-<tr class="separator:a21fa289f4736da8432ea91d488630970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f6df739377c08cdf6c7760a4ca026e8"><td class="memItemLeft" align="right" valign="top"><a id="a7f6df739377c08cdf6c7760a4ca026e8"></a>
+<a class="el" href="struct_sample_timings.html">SampleTimings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>timings</b> (ossia::token_request tk) const noexcept</td></tr>
+<tr class="separator:a7f6df739377c08cdf6c7760a4ca026e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a208674f4515a030a2646980c2c60aca4"><td class="memItemLeft" align="right" valign="top"><a id="a208674f4515a030a2646980c2c60aca4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>WWWWWWWW_PROPERTY</b> (int, sample_rate, &amp;W_ThisType::sample_rate, W_Final) friend const expr auto w_state(w_internal</td></tr>
+<tr class="separator:a208674f4515a030a2646980c2c60aca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4378de25a319c83258a0dba397e79aef"><td class="memItemLeft" align="right" valign="top"><a id="a4378de25a319c83258a0dba397e79aef"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>WWW_PROPERTY</b> (double, model_to_physical, &amp;W_ThisType::model_to_physical, W_Final) friend const expr auto w_state(w_internal</td></tr>
+<tr class="separator:a4378de25a319c83258a0dba397e79aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8024879ef79990f630fb47cdd2add892"><td class="memItemLeft" align="right" valign="top"><a id="a8024879ef79990f630fb47cdd2add892"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>WWW_PROPERTY</b> (double, physical_date, &amp;W_ThisType::physical_date, W_Final) friend const expr auto w_state(w_internal</td></tr>
+<tr class="separator:a8024879ef79990f630fb47cdd2add892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:adad272a0552838ec4f202ac9da7520d7"><td class="memTemplParams" colspan="2"><a id="adad272a0552838ec4f202ac9da7520d7"></a>
+template&lt;typename W_Flag &gt; </td></tr>
+<tr class="memitem:adad272a0552838ec4f202ac9da7520d7"><td class="memTemplItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memTemplItemRight" valign="bottom"><b>w_flagAlias</b> (W_Flag)</td></tr>
+<tr class="separator:adad272a0552838ec4f202ac9da7520d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fca17b67a76600b7f0e0dcfa2015446"><td class="memItemLeft" align="right" valign="top"><a id="a2fca17b67a76600b7f0e0dcfa2015446"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>w_GetAccessSpecifierHelper</b> (W_INTEGRAL_CONSTANT_HELPER(timings, w_internal::W_EmptyFlag))</td></tr>
+<tr class="separator:a2fca17b67a76600b7f0e0dcfa2015446"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a74902009094daff81d5033098fc6edb3"><td class="memItemLeft" align="right" valign="top"><a id="a74902009094daff81d5033098fc6edb3"></a>
+ossia::exec_state_facade&#160;</td><td class="memItemRight" valign="bottom"><b>req</b></td></tr>
+<tr class="separator:a74902009094daff81d5033098fc6edb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
+<tr class="memitem:a3b063edfa89432ec7999318348c566f5"><td class="memItemLeft" align="right" valign="top"><a id="a3b063edfa89432ec7999318348c566f5"></a>
+static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>W_UnscopedName</b> = w_internal::viewLiteral(&quot;ExecutionStateValueType&quot;)</td></tr>
+<tr class="separator:a3b063edfa89432ec7999318348c566f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a2b2a118bd8c248f602f7cf1ecd3572"><td class="memItemLeft" align="right" valign="top"><a id="a3a2b2a118bd8c248f602f7cf1ecd3572"></a>
 static const QMetaObject&#160;</td><td class="memItemRight" valign="bottom"><b>staticMetaObject</b></td></tr>
 <tr class="separator:a3a2b2a118bd8c248f602f7cf1ecd3572"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:ade9cb03596e72a038457867decb24053"><td class="memItemLeft" align="right" valign="top"><a id="ade9cb03596e72a038457867decb24053"></a>
-constexpr friend auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::PropertyStateTag, <a class="el" href="class_execution_state_value_type.html">W_ThisType</a> ** &gt;&gt;, w_internal::PropertyStateTag, <a class="el" href="class_execution_state_value_type.html">W_ThisType</a> **) -&gt; decltype((w_internal::makeMetaPropertyInfo&lt; int &gt;(w_internal::viewLiteral(&quot;sample_rate&quot;), w_internal::viewLiteral(&quot;@-W_MACRO_REMOVEPAREN( int )&quot;), &amp;W_ThisType::sample_rate, W_Final)))</td></tr>
-<tr class="separator:ade9cb03596e72a038457867decb24053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a188287b0ed7bcb901356a38fd73a847e"><td class="memItemLeft" align="right" valign="top"><a id="a188287b0ed7bcb901356a38fd73a847e"></a>
+constexpr friend auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::MethodStateTag, <a class="el" href="struct_execution_state_value_type.html">W_ThisType</a> ** &gt;&gt;, w_internal::MethodStateTag, <a class="el" href="struct_execution_state_value_type.html">W_ThisType</a> **) -&gt; decltype((w_internal::makeMetaMethodInfo((&amp;W_ThisType::timings), w_internal::viewLiteral(&quot;timings&quot;), std::integral_constant&lt; decltype(W_OVERLOAD_RESOLVE(w_internal::W_EmptyFlag)(&amp;W_ThisType::timings)), &amp;W_ThisType::timings &gt;(), W_MACRO_MSVC_EMPTY w_internal::viewParsedLiterals&lt; w_internal::countParsedLiterals(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;)&gt;(&quot;&quot; &quot;@-W_MACRO_EVAL  ()&quot;), W_MACRO_MSVC_EXPAND())))</td></tr>
+<tr class="separator:a188287b0ed7bcb901356a38fd73a847e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_value_types_8hpp_source.html">ValueTypes.hpp</a></li>
 </ul>
 </div><!-- contents -->
