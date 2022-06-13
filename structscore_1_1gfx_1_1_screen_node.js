@@ -25,5 +25,6 @@ var structscore_1_1gfx_1_1_screen_node =
     [ "updateGraphicsAPI", "structscore_1_1gfx_1_1_screen_node.html#af7775e9d498f2d918ebfb7025ffcb4e7", null ],
     [ "window", "structscore_1_1gfx_1_1_screen_node.html#a28decf58fb769ba14e693680b80fda72", null ],
     [ "onKey", "structscore_1_1gfx_1_1_screen_node.html#ae667b2474fd6abf834b472716226c2f5", null ],
-    [ "onMouseMove", "structscore_1_1gfx_1_1_screen_node.html#a86bebfd13f0ae52a572f9b50c4d44170", null ]
+    [ "onMouseMove", "structscore_1_1gfx_1_1_screen_node.html#a86bebfd13f0ae52a572f9b50c4d44170", null ],
+    [ "onTabletMove", "structscore_1_1gfx_1_1_screen_node.html#a1c165b0493bb77ebaf2f8cb29cc2c7ca", null ]
 ];

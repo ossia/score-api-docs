@@ -1,5 +1,6 @@
 var NAVTREEINDEX66 =
 {
+"struct_t_serializer_3_01_j_s_o_n_object_00_01boost_1_1container_1_1small__vector_3_01_t_00_01_n_00_01_alloc_01_4_01_4.html":[12,0,459],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01boost_1_1container_1_1small__vector_3_01_t_01_5_00_01_n_01_4_01_4.html":[12,0,458],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01boost_1_1container_1_1static__vector_3_01_t_00_01_n_01_4_01_4.html":[12,0,460],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01boost_1_1container_1_1vector_3_01_args_8_8_8_01_4_01_4.html":[12,0,461],
@@ -248,6 +249,5 @@ var NAVTREEINDEX66 =
 "structcheck__enum__size.html":[12,0,80],
 "structcheck__enum__size.html#a69d42c71821f006d9da8a72667c66d77":[12,0,80,1],
 "structcheck__enum__size.html#aa46156a807d6802915d68e602a90dca3":[12,0,80,0],
-"structgraphics__item__ptr.html":[12,0,113],
-"structgraphics__item__ptr.html#a10e6a4ba1c430fb49c89597e5a22c0ed":[12,0,113,1]
+"structgraphics__item__ptr.html":[12,0,113]
 };

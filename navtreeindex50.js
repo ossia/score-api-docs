@@ -1,5 +1,6 @@
 var NAVTREEINDEX50 =
 {
+"classvst_1_1_model.html#a0d027bbd131c51d6b31b8e1e8cb64d16":[12,0,55,11,3],
 "classvst_1_1_model.html#a19deda650935110b07deaaa8c6fb928c":[12,0,55,11,15],
 "classvst_1_1_model.html#a2913b2aa197daec2f86ab01df97b910e":[12,0,55,11,17],
 "classvst_1_1_model.html#a2bcc7c2e3527bbb71306bc83f58fd80a":[12,0,55,11,16],
@@ -146,8 +147,8 @@ var NAVTREEINDEX50 =
 "namespace_automation.html":[11,0,0],
 "namespace_curve.html":[11,0,1],
 "namespace_curve.html":[12,0,7],
-"namespace_device.html":[12,0,9],
 "namespace_device.html":[11,0,2],
+"namespace_device.html":[12,0,9],
 "namespace_engine.html":[12,0,10],
 "namespace_engine.html":[11,0,3],
 "namespace_engine_1_1_network.html":[11,0,3,0],
@@ -162,10 +163,10 @@ var NAVTREEINDEX50 =
 "namespace_plugin_loader.html":[11,0,8],
 "namespace_process.html":[12,0,39],
 "namespace_process.html":[11,0,9],
-"namespace_scenario.html":[11,0,10],
 "namespace_scenario.html":[12,0,45],
-"namespace_state.html":[12,0,50],
+"namespace_scenario.html":[11,0,10],
 "namespace_state.html":[11,0,12],
+"namespace_state.html":[12,0,50],
 "namespacemembers.html":[11,1,0],
 "namespacemembers_enum.html":[11,1,3],
 "namespacemembers_eval.html":[11,1,4],
@@ -174,8 +175,8 @@ var NAVTREEINDEX50 =
 "namespaces.html":[11,0],
 "namespacescore.html":[12,0,46],
 "namespacescore.html":[11,0,11],
-"namespacescore_1_1gfx.html":[11,0,11,0],
 "namespacescore_1_1gfx.html":[12,0,46,2],
+"namespacescore_1_1gfx.html":[11,0,11,0],
 "pages.html":[],
 "pluginfactories_8hpp_source.html":[13,0,895],
 "plugins_2score-lib-process_2_control_2_layout_8hpp_source.html":[13,0,631],
@@ -248,6 +249,5 @@ var NAVTREEINDEX50 =
 "score-plugin-controlsurface_2_control_surface_2_layer_8hpp_source.html":[13,0,619],
 "score-plugin-controlsurface_2_control_surface_2_local_tree_8hpp_source.html":[13,0,667],
 "score-plugin-controlsurface_2_control_surface_2_process_8hpp_source.html":[13,0,934],
-"score-plugin-controlsurface_2_control_surface_2_view_8hpp_source.html":[13,0,1377],
-"score-plugin-curve_2_curve_2_application_plugin_8hpp_source.html":[13,0,51]
+"score-plugin-controlsurface_2_control_surface_2_view_8hpp_source.html":[13,0,1377]
 };

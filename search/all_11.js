@@ -148,5 +148,5 @@ var searchData=
   ['qtdiagnosticconsumer_2011',['QtDiagnosticConsumer',['../class_qt_diagnostic_consumer.html',1,'']]],
   ['quantificationwidget_2012',['QuantificationWidget',['../classscore_1_1_quantification_widget.html',1,'score']]],
   ['queues_2013',['Queues',['../struct_execution_1_1_queues.html',1,'Execution']]],
-  ['quiet_2014',['Quiet',['../struct_redo_strategy_1_1_quiet.html',1,'RedoStrategy::Quiet'],['../struct_send_strategy_1_1_quiet.html',1,'SendStrategy::Quiet']]]
+  ['quiet_2014',['Quiet',['../struct_send_strategy_1_1_quiet.html',1,'SendStrategy::Quiet'],['../struct_redo_strategy_1_1_quiet.html',1,'RedoStrategy::Quiet']]]
 ];

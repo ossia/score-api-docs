@@ -1,5 +1,6 @@
 var NAVTREEINDEX53 =
 {
+"struct_control_1_1_soundfile.html#a42a92e5373421b156997425d7409f49a":[12,0,5,39,2],
 "struct_control_1_1_soundfile.html#a458d4ab2d791cffdd5fdc11c5a8f5004":[12,0,5,39,5],
 "struct_control_1_1_soundfile.html#a6f9c8d40f67c5551b341f79cadfa93bb":[12,0,5,39,1],
 "struct_control_1_1_soundfile.html#aa93220ceac3bf0026a1f9227229682ff":[12,0,5,39,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX53 =
 "struct_dataflow_1_1minmax.html#a328c0479ae3a8e32ec1def6f41004afa":[12,0,8,29,2],
 "struct_dataflow_1_1minmax.html#a872de9cb46bd314494fb5aa5982f5412":[12,0,8,29,0],
 "struct_dataflow_1_1minmax.html#a9e0b9dc2c741acb132ff922d16fb562a":[12,0,8,29,1],
-"struct_default_rollback_strategy.html":[12,0,95],
-"struct_device_1_1_address_settings.html":[12,0,9,2]
+"struct_default_rollback_strategy.html":[12,0,95]
 };

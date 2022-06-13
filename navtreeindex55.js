@@ -1,5 +1,6 @@
 var NAVTREEINDEX55 =
 {
+"struct_execution_1_1dfs__visitor__state.html":[12,0,11,10],
 "struct_execution_1_1dfs__visitor__state.html#aa8afc92816a8183e09490ff9a4da1bf6":[12,0,11,10,0],
 "struct_execution_1_1dfs__visitor__state.html#ad2168a6b3c5ce2e85ed44ea0cfd2a96e":[12,0,11,10,1],
 "struct_execution_1_1interval__duration__data.html":[12,0,11,19],
@@ -248,6 +249,5 @@ var NAVTREEINDEX55 =
 "struct_gfx_1_1kinect2__camera.html#ad4b543f2ccdef64bea86d62dfb43f951":[12,0,17,30,3],
 "struct_gfx_1_1kinect2__settings.html":[12,0,17,36],
 "struct_gfx_1_1kinect2__settings.html#a597c9700c432543513c48ad2502ec922":[12,0,17,36,1],
-"struct_gfx_1_1kinect2__settings.html#a65dba340152ec9f643b7bf7fbd3c27dc":[12,0,17,36,3],
-"struct_gfx_1_1kinect2__settings.html#a7c202404994d7ff221862eedd45572fa":[12,0,17,36,0]
+"struct_gfx_1_1kinect2__settings.html#a65dba340152ec9f643b7bf7fbd3c27dc":[12,0,17,36,3]
 };

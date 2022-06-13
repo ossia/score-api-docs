@@ -1,5 +1,6 @@
 var NAVTREEINDEX51 =
 {
+"score-plugin-curve_2_curve_2_application_plugin_8hpp_source.html":[13,0,51],
 "score-plugin-curve_2_curve_2_palette_2_tools_2_smart_tool_8hpp_source.html":[13,0,1225],
 "score-plugin-dataflow_2_dataflow_2_port_item_8hpp_source.html":[13,0,908],
 "score-plugin-deviceexplorer_2_explorer_2_application_plugin_8hpp_source.html":[13,0,52],
@@ -248,6 +249,5 @@ var NAVTREEINDEX51 =
 "struct_atom_buffer.html#a56d0fa21194799d09277c4ec05ac2b30":[12,0,68,7],
 "struct_atom_buffer.html#a56d985b3af09bbe4f5b083676b8cde7e":[12,0,68,5],
 "struct_atom_buffer.html#a825c90bc1f9a1cf027dc2e9c0352ff1f":[12,0,68,3],
-"struct_atom_buffer.html#a83672d9abb1cb3cf352dbf62aa69e139":[12,0,68,0],
-"struct_atom_buffer.html#af2e5947c5458b4b8184c3becc05d238b":[12,0,68,6]
+"struct_atom_buffer.html#a83672d9abb1cb3cf352dbf62aa69e139":[12,0,68,0]
 };
