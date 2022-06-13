@@ -1,7 +1,5 @@
 var NAVTREEINDEX60 =
 {
-"struct_optional_sentinel.html":[12,0,199],
-"struct_optional_sentinel.html#a4794e964613d8d1906daee8a639fc7e0":[12,0,199,1],
 "struct_optional_sentinel.html#a92757c49e21ba9282ac18a7699be1e02":[12,0,199,0],
 "struct_ossia_variant_data_stream_deserializer.html":[12,0,200],
 "struct_ossia_variant_data_stream_deserializer.html#a403a500c7f1b2e3487b993e715a5f613":[12,0,200,4],
@@ -249,5 +247,7 @@ var NAVTREEINDEX60 =
 "struct_process_1_1_state_node_values.html#a9aede2ddcc7b879cbbc601bf8b3f5c89":[12,0,39,87,4],
 "struct_process_1_1_state_node_values.html#ad62f1b83e2cd614eb4f4dd04dac2a52a":[12,0,39,87,1],
 "struct_process_1_1_state_node_values.html#ad681e156ad5e1557ca1ce236e9e24610":[12,0,39,87,6],
-"struct_process_1_1_state_node_values.html#ae5570d12dfe8efdd65f86461ee6c3282":[12,0,39,87,3]
+"struct_process_1_1_state_node_values.html#ae5570d12dfe8efdd65f86461ee6c3282":[12,0,39,87,3],
+"struct_process_1_1_style.html":[12,0,39,88],
+"struct_process_1_1_style.html#a0197decabf92b5b04303b4657765dce9":[12,0,39,88,48]
 };

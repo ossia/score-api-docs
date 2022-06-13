@@ -1,7 +1,5 @@
 var NAVTREEINDEX65 =
 {
-"struct_scenario_1_1value__size.html":[12,0,45,319],
-"struct_scenario_1_1value__size.html#a14224f71dbbd24cbe4c2b6125e19cd47":[12,0,45,319,0],
 "struct_scenario_1_1value__size.html#a7d499a3a42f8bfbd4eaae529a2d0c6e3":[12,0,45,319,2],
 "struct_scenario_1_1value__size.html#ab8d223cbbee2e96b39a519d6cfd4029a":[12,0,45,319,1],
 "struct_scenario_1_1value__size.html#ad6f71b6e1c9e8515f388663fc8a6b1b2":[12,0,45,319,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX65 =
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_scenario_1_1_time_signature_map_01_4.html":[12,0,491],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_time_val_01_4.html":[12,0,506],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_tree_node_3_01_t_01_4_01_4.html":[12,0,507],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_tree_path_01_4.html":[12,0,508]
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_tree_path_01_4.html":[12,0,508],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_uuid_key_3_01_u_01_4_01_4.html":[12,0,510],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01boost_1_1container_1_1small__vector_3_01_t_00_01_n_00_01_alloc_01_4_01_4.html":[12,0,459]
 };

@@ -458,7 +458,6 @@ var annotated_dup =
       [ "SetStepCount", "class_media_1_1_set_step_count.html", null ],
       [ "SetStepDuration", "class_media_1_1_set_step_duration.html", null ],
       [ "SingleFrameComputer", "struct_media_1_1_single_frame_computer.html", "struct_media_1_1_single_frame_computer" ],
-      [ "sndfile_deleter", "struct_media_1_1sndfile__deleter.html", "struct_media_1_1sndfile__deleter" ],
       [ "SndfileDecoder", "class_media_1_1_sndfile_decoder.html", "class_media_1_1_sndfile_decoder" ],
       [ "SoundComponentSetup", "class_media_1_1_sound_component_setup.html", null ]
     ] ],
