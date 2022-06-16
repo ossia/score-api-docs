@@ -1,5 +1,13 @@
 var NAVTREEINDEX61 =
 {
+"struct_process_1_1_state_node_values.html#a2eb6cfaad9b8b5344aa3e5456650f0bd":[12,0,39,87,5],
+"struct_process_1_1_state_node_values.html#a2f8073892d6fd76361de484583a5771e":[12,0,39,87,2],
+"struct_process_1_1_state_node_values.html#a30c3307f44b8269907b6d0c5aac45533":[12,0,39,87,0],
+"struct_process_1_1_state_node_values.html#a9aede2ddcc7b879cbbc601bf8b3f5c89":[12,0,39,87,4],
+"struct_process_1_1_state_node_values.html#ad62f1b83e2cd614eb4f4dd04dac2a52a":[12,0,39,87,1],
+"struct_process_1_1_state_node_values.html#ad681e156ad5e1557ca1ce236e9e24610":[12,0,39,87,6],
+"struct_process_1_1_state_node_values.html#ae5570d12dfe8efdd65f86461ee6c3282":[12,0,39,87,3],
+"struct_process_1_1_style.html":[12,0,39,88],
 "struct_process_1_1_style.html#a0197decabf92b5b04303b4657765dce9":[12,0,39,88,48],
 "struct_process_1_1_style.html#a06b3c09406da02481154be6007df879d":[12,0,39,88,71],
 "struct_process_1_1_style.html#a06d4976cdfef6d383cb595f2a494910b":[12,0,39,88,68],
@@ -241,13 +249,5 @@ var NAVTREEINDEX61 =
 "struct_q_meta_type_id_3_01_j_s_1_1_midi_inlet_01_5_01_4.html":[12,0,247],
 "struct_q_meta_type_id_3_01_j_s_1_1_midi_inlet_01_5_01_4.html#ae1cdd85534384d3178a58546dcc429a4a4f009d71e68398c6fc7b6018f5bc333b":[12,0,247,0],
 "struct_q_meta_type_id_3_01_j_s_1_1_midi_message_01_4.html":[12,0,248],
-"struct_q_meta_type_id_3_01_j_s_1_1_midi_message_01_4.html#a4d0e6f7ad0cd182ea638c55205c3b104a0dc27343fee03ba64adf7cbffc126ba7":[12,0,248,0],
-"struct_q_meta_type_id_3_01_j_s_1_1_midi_outlet_01_5_01_4.html":[12,0,249],
-"struct_q_meta_type_id_3_01_j_s_1_1_midi_outlet_01_5_01_4.html#a77fb5de87fd5e199626cf0dace8817b0a0bd4f980ba5fd221d5367e38c40f713f":[12,0,249,0],
-"struct_q_meta_type_id_3_01_j_s_1_1_sample_timings_01_4.html":[12,0,250],
-"struct_q_meta_type_id_3_01_j_s_1_1_sample_timings_01_4.html#afb2a1ac0e2235ba115f50084de549b75ae29f39456f63201aad4a6a67750e49d2":[12,0,250,0],
-"struct_q_meta_type_id_3_01_j_s_1_1_token_request_value_type_01_4.html":[12,0,251],
-"struct_q_meta_type_id_3_01_j_s_1_1_token_request_value_type_01_4.html#ae873ebe36e37378ea79b85c644297b03ab04161db623bd7680abe7c456753d2ed":[12,0,251,0],
-"struct_q_meta_type_id_3_01_j_s_1_1_value_inlet_01_5_01_4.html":[12,0,252],
-"struct_q_meta_type_id_3_01_j_s_1_1_value_inlet_01_5_01_4.html#a0ee621192884547ef329c137c6582ddda43031649c5c174f7aae6164b6df0a4fe":[12,0,252,0]
+"struct_q_meta_type_id_3_01_j_s_1_1_midi_message_01_4.html#a4d0e6f7ad0cd182ea638c55205c3b104a0dc27343fee03ba64adf7cbffc126ba7":[12,0,248,0]
 };

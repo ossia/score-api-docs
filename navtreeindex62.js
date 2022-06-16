@@ -1,5 +1,13 @@
 var NAVTREEINDEX62 =
 {
+"struct_q_meta_type_id_3_01_j_s_1_1_midi_outlet_01_5_01_4.html":[12,0,249],
+"struct_q_meta_type_id_3_01_j_s_1_1_midi_outlet_01_5_01_4.html#a77fb5de87fd5e199626cf0dace8817b0a0bd4f980ba5fd221d5367e38c40f713f":[12,0,249,0],
+"struct_q_meta_type_id_3_01_j_s_1_1_sample_timings_01_4.html":[12,0,250],
+"struct_q_meta_type_id_3_01_j_s_1_1_sample_timings_01_4.html#afb2a1ac0e2235ba115f50084de549b75ae29f39456f63201aad4a6a67750e49d2":[12,0,250,0],
+"struct_q_meta_type_id_3_01_j_s_1_1_token_request_value_type_01_4.html":[12,0,251],
+"struct_q_meta_type_id_3_01_j_s_1_1_token_request_value_type_01_4.html#ae873ebe36e37378ea79b85c644297b03ab04161db623bd7680abe7c456753d2ed":[12,0,251,0],
+"struct_q_meta_type_id_3_01_j_s_1_1_value_inlet_01_5_01_4.html":[12,0,252],
+"struct_q_meta_type_id_3_01_j_s_1_1_value_inlet_01_5_01_4.html#a0ee621192884547ef329c137c6582ddda43031649c5c174f7aae6164b6df0a4fe":[12,0,252,0],
 "struct_q_meta_type_id_3_01_j_s_1_1_value_outlet_01_5_01_4.html":[12,0,253],
 "struct_q_meta_type_id_3_01_j_s_1_1_value_outlet_01_5_01_4.html#a63d326e9f5d7e4725523289061cafd76ad3f78da2203ef53de5b4a9cc93da74e3":[12,0,253,0],
 "struct_q_meta_type_id_3_01_j_s_o_n_reader_01_5_01_4.html":[12,0,254],
@@ -241,13 +249,5 @@ var NAVTREEINDEX62 =
 "struct_recording_1_1_recorded_message.html":[12,0,41,12],
 "struct_recording_1_1_recorded_message.html#a035817c2b42975b30a667a72a424785a":[12,0,41,12,0],
 "struct_recording_1_1_recorded_message.html#a813e8172e393fa8dfec0c0f9630cfa42":[12,0,41,12,1],
-"struct_redo_strategy_1_1_quiet.html":[12,0,42,0],
-"struct_redo_strategy_1_1_redo.html":[12,0,42,1],
-"struct_remote_control_1_1_handler.html":[12,0,43,5],
-"struct_remote_control_1_1_handler.html#a4312bf627bd1d96f50d022b9bf74bb63":[12,0,43,5,2],
-"struct_remote_control_1_1_handler.html#a586e2e6b4ebea7183b6790086a8b5160":[12,0,43,5,4],
-"struct_remote_control_1_1_handler.html#a6118074f96d3ae9673fa16ddad211f55":[12,0,43,5,3],
-"struct_remote_control_1_1_handler.html#a66b94f0a7af5d39dcd92b168d0a6d047":[12,0,43,5,1],
-"struct_remote_control_1_1_handler.html#a6ef6ed429ab58f16b329c7501a0bca14":[12,0,43,5,5],
-"struct_remote_control_1_1_handler.html#ac54b733901b3f1e6b532129869fbb17e":[12,0,43,5,0]
+"struct_redo_strategy_1_1_quiet.html":[12,0,42,0]
 };

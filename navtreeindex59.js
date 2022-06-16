@@ -1,5 +1,13 @@
 var NAVTREEINDEX59 =
 {
+"struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#af346a9a6502fb18e39e8c4d678e63e7b":[12,0,33,1,0,1,0],
+"struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#af550b1eadd180d5cd915348620df20ff":[12,0,33,1,0,1,5],
+"struct_nodes_1_1_chord_1_1_node.html":[12,0,33,2,0],
+"struct_nodes_1_1_chord_1_1_node.html#a0b50bcf687d0ade81f68280c7a37a929":[12,0,33,2,0,2],
+"struct_nodes_1_1_chord_1_1_node.html#a6eef3e58c4e0de5c3ed01d38bb3e2ec6":[12,0,33,2,0,3],
+"struct_nodes_1_1_chord_1_1_node.html#a6eef3e58c4e0de5c3ed01d38bb3e2ec6a1a7fe5974cea1ec7b77d2fad65e9c88d":[12,0,33,2,0,3,2],
+"struct_nodes_1_1_chord_1_1_node.html#a6eef3e58c4e0de5c3ed01d38bb3e2ec6a2378f4ba45458bfc2d6108375ca71ac8":[12,0,33,2,0,3,5],
+"struct_nodes_1_1_chord_1_1_node.html#a6eef3e58c4e0de5c3ed01d38bb3e2ec6a30da02dc67fbea62380baa939375d2fb":[12,0,33,2,0,3,1],
 "struct_nodes_1_1_chord_1_1_node.html#a6eef3e58c4e0de5c3ed01d38bb3e2ec6a32a86694b87d6363880387b482a62667":[12,0,33,2,0,3,3],
 "struct_nodes_1_1_chord_1_1_node.html#a6eef3e58c4e0de5c3ed01d38bb3e2ec6a551b5b9d96eef8c1e41df4c35ba060fc":[12,0,33,2,0,3,0],
 "struct_nodes_1_1_chord_1_1_node.html#a6eef3e58c4e0de5c3ed01d38bb3e2ec6a76c46af0fce744c23aa10abaed49d040":[12,0,33,2,0,3,4],
@@ -241,13 +249,5 @@ var NAVTREEINDEX59 =
 "struct_nodes_1_1_value_filter_1_1_node_1_1_metadata.html":[12,0,33,27,0,0],
 "struct_nodes_1_1_value_filter_1_1_node_1_1_noise_filter.html":[12,0,33,27,0,1],
 "struct_nodes_1_1_value_filter_1_1_node_1_1_noise_filter.html#a18710a74042e2f3745df5ac1862cf9e5":[12,0,33,27,0,1,7],
-"struct_nodes_1_1_value_filter_1_1_node_1_1_noise_filter.html#a1b509a0d43b68a260d16f1a6f32430a4":[12,0,33,27,0,1,6],
-"struct_nodes_1_1_value_filter_1_1_node_1_1_noise_filter.html#a2746ae228cc99c215493d8618b466d1d":[12,0,33,27,0,1,1],
-"struct_nodes_1_1_value_filter_1_1_node_1_1_noise_filter.html#a4fe3969ab1f14a95ba8120b893ffad84":[12,0,33,27,0,1,0],
-"struct_nodes_1_1_value_filter_1_1_node_1_1_noise_filter.html#abc31f61f0da1e85df6f678dfc005d9e0":[12,0,33,27,0,1,5],
-"struct_nodes_1_1_value_filter_1_1_node_1_1_noise_filter.html#abe5a5af1919912e27ab172bd757decd1":[12,0,33,27,0,1,8],
-"struct_nodes_1_1_value_filter_1_1_node_1_1_noise_filter.html#ac7b152fc599e3d7788d12b3c40dfcad9":[12,0,33,27,0,1,4],
-"struct_nodes_1_1_value_filter_1_1_node_1_1_noise_filter.html#af782bb96cb72ecf57e2e818838ab4bdb":[12,0,33,27,0,1,2],
-"struct_nodes_1_1_value_filter_1_1_node_1_1_noise_filter.html#af92f10a26eea303d6565a62bbb2a0c1d":[12,0,33,27,0,1,3],
-"struct_optional_sentinel.html":[12,0,199]
+"struct_nodes_1_1_value_filter_1_1_node_1_1_noise_filter.html#a1b509a0d43b68a260d16f1a6f32430a4":[12,0,33,27,0,1,6]
 };

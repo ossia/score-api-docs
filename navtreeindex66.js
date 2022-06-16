@@ -1,5 +1,13 @@
 var NAVTREEINDEX66 =
 {
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_q_size_f_01_4.html":[12,0,489],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_q_variant_map_01_4.html":[12,0,490],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_q_variant_map_01_4.html#affde4a7f5ee85fb56aca9ed9e27ec667":[12,0,490,0],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_scenario_1_1_time_signature_map_01_4.html":[12,0,491],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_time_val_01_4.html":[12,0,506],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_tree_node_3_01_t_01_4_01_4.html":[12,0,507],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_tree_path_01_4.html":[12,0,508],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_uuid_key_3_01_u_01_4_01_4.html":[12,0,510],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01boost_1_1container_1_1small__vector_3_01_t_00_01_n_00_01_alloc_01_4_01_4.html":[12,0,459],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01boost_1_1container_1_1small__vector_3_01_t_01_5_00_01_n_01_4_01_4.html":[12,0,458],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01boost_1_1container_1_1static__vector_3_01_t_00_01_n_01_4_01_4.html":[12,0,460],
@@ -241,13 +249,5 @@ var NAVTREEINDEX66 =
 "structbase__kind.html#a190e88c248421bde71bb91b258363581":[12,0,74,0],
 "structbase__kind_3_01_t_00_01std_1_1enable__if__t_3_9std_1_1is__same__v_3_01_t_00_01typename_01_t_1_1base__type_01_4_01_4_01_4.html":[12,0,75],
 "structbase__kind_3_01_t_00_01std_1_1enable__if__t_3_9std_1_1is__same__v_3_01_t_00_01typename_01_t_1_1base__type_01_4_01_4_01_4.html#a7773f27f0c255682a9cba71884da2ea5":[12,0,75,0],
-"structboost_1_1spirit_1_1traits_1_1container__value_3_01_q_string_01_4.html":[12,0,4,0,0,0],
-"structboost_1_1spirit_1_1traits_1_1is__container_3_01_q_string_01_4.html":[12,0,4,0,0,1],
-"structboost_1_1spirit_1_1traits_1_1is__empty__container_3_01_q_string_01_4.html":[12,0,4,0,0,2],
-"structboost_1_1spirit_1_1traits_1_1print__attribute__debug_3_01_out_00_01_q_string_00_01_enable_01_4.html":[12,0,4,0,0,3],
-"structboost_1_1spirit_1_1traits_1_1push__back__container_3_01_q_string_00_01_q_char_01_4.html":[12,0,4,0,0,4],
-"structcheck__enum__size.html":[12,0,80],
-"structcheck__enum__size.html#a69d42c71821f006d9da8a72667c66d77":[12,0,80,1],
-"structcheck__enum__size.html#aa46156a807d6802915d68e602a90dca3":[12,0,80,0],
-"structgraphics__item__ptr.html":[12,0,113]
+"structboost_1_1spirit_1_1traits_1_1container__value_3_01_q_string_01_4.html":[12,0,4,0,0,0]
 };

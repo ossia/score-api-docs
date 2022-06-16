@@ -1,5 +1,13 @@
 var NAVTREEINDEX54 =
 {
+"struct_dataflow_1_1control__visitor.html#aa8baa16dec7d75f4deea228cd142c58d":[12,0,8,16,0],
+"struct_dataflow_1_1control__visitor.html#ab54a9769842607236d071ee3544d67a4":[12,0,8,16,1],
+"struct_dataflow_1_1control__visitor.html#af4990d652cb3a84c5519cefa2daf77c3":[12,0,8,16,6],
+"struct_dataflow_1_1minmax.html":[12,0,8,29],
+"struct_dataflow_1_1minmax.html#a328c0479ae3a8e32ec1def6f41004afa":[12,0,8,29,2],
+"struct_dataflow_1_1minmax.html#a872de9cb46bd314494fb5aa5982f5412":[12,0,8,29,0],
+"struct_dataflow_1_1minmax.html#a9e0b9dc2c741acb132ff922d16fb562a":[12,0,8,29,1],
+"struct_default_rollback_strategy.html":[12,0,95],
 "struct_device_1_1_address_settings.html":[12,0,9,2],
 "struct_device_1_1_address_settings.html#a28e4d844260dec015feb7885e662f3b2":[12,0,9,2,2],
 "struct_device_1_1_address_settings.html#a44dd657e0d8c54f272694d96387a5495":[12,0,9,2,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX54 =
 "struct_execution_1_1_transaction.html#a3db98fb55a2bbd3f0635cbed1a2e192c":[12,0,11,49,3],
 "struct_execution_1_1_transaction.html#a52e7fc76ff38c7d4ccdf5405ee552046":[12,0,11,49,2],
 "struct_execution_1_1_transaction.html#a84d5a7e84c31542b426268fbc87adbea":[12,0,11,49,1],
-"struct_execution_1_1_transaction.html#a92078cb8713037a236619ec3869e9e45":[12,0,11,49,8],
-"struct_execution_1_1_transaction.html#a9988405ab79715be3cc08c42c6998ee7":[12,0,11,49,7],
-"struct_execution_1_1_transaction.html#aa281e98aadd1cda05ce55e324b395744":[12,0,11,49,0],
-"struct_execution_1_1_transaction.html#acdf251a74490b64ab0e06911426db5e3":[12,0,11,49,4],
-"struct_execution_1_1_transaction.html#af696becd09ab573ec666e1517c2a27e0":[12,0,11,49,5],
-"struct_execution_1_1dfs__visitor.html":[12,0,11,9],
-"struct_execution_1_1dfs__visitor.html#a84bb939dba42b4a21e3851d7af760351":[12,0,11,9,2],
-"struct_execution_1_1dfs__visitor.html#a95cac90ad07794a0227576d82c202f85":[12,0,11,9,0],
-"struct_execution_1_1dfs__visitor.html#afd930d36458cf13f7b0b09f886185a44":[12,0,11,9,1]
+"struct_execution_1_1_transaction.html#a92078cb8713037a236619ec3869e9e45":[12,0,11,49,8]
 };

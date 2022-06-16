@@ -3,6 +3,7 @@ var classscore_1_1_int_slider =
     [ "IntSlider", "classscore_1_1_int_slider.html#a7acc2fac5ccd74485aabafe7da3a5092", null ],
     [ "IntSlider", "classscore_1_1_int_slider.html#a97c21f979c9307a971a36f061b57fe5f", null ],
     [ "~IntSlider", "classscore_1_1_int_slider.html#a6abc89f434b5998c8ff995a0d8f3060c", null ],
+    [ "createPopup", "classscore_1_1_int_slider.html#a56598cd4e44c4b2aa88c5d8969437d41", null ],
     [ "maximum", "classscore_1_1_int_slider.html#a3b7473018157398277abd7ee2ba42232", null ],
     [ "minimum", "classscore_1_1_int_slider.html#a67410c14ad237fe350b34e43891cd628", null ],
     [ "mouseMoveEvent", "classscore_1_1_int_slider.html#a3f8ff38e5d0a3cf1ae4422c4c918bdda", null ],

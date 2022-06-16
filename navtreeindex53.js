@@ -1,5 +1,13 @@
 var NAVTREEINDEX53 =
 {
+"struct_control_1_1_out_control.html#a422de713dcffdb4a2d9cd6ea98bd8426":[12,0,5,33,0],
+"struct_control_1_1_out_control.html#aaa15707b5c252ab787d7e9e68f6deac6":[12,0,5,33,6],
+"struct_control_1_1_out_control.html#ae8ab7d5c5f83f521d29e309afb4b4b91":[12,0,5,33,2],
+"struct_control_1_1_port_setup.html":[12,0,5,34],
+"struct_control_1_1_soundfile.html":[12,0,5,39],
+"struct_control_1_1_soundfile.html#a240063c1f24c2dac9d567c1bd8be105f":[12,0,5,39,0],
+"struct_control_1_1_soundfile.html#a40061471809de6376271bc3531d7d2d4":[12,0,5,39,6],
+"struct_control_1_1_soundfile.html#a40fcbbc95719d1adae7a5e2c88846a7e":[12,0,5,39,3],
 "struct_control_1_1_soundfile.html#a42a92e5373421b156997425d7409f49a":[12,0,5,39,2],
 "struct_control_1_1_soundfile.html#a458d4ab2d791cffdd5fdc11c5a8f5004":[12,0,5,39,5],
 "struct_control_1_1_soundfile.html#a6f9c8d40f67c5551b341f79cadfa93bb":[12,0,5,39,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX53 =
 "struct_dataflow_1_1control__visitor.html#a700eaf2b9518454601f815613993163a":[12,0,8,16,3],
 "struct_dataflow_1_1control__visitor.html#a7570a2af76ef85e92ee34b552768cae9":[12,0,8,16,5],
 "struct_dataflow_1_1control__visitor.html#a7b971c6a76abbc22542fa98024f84982":[12,0,8,16,4],
-"struct_dataflow_1_1control__visitor.html#a90c7e42ae9ba3fd63740a8ee12dd8b97":[12,0,8,16,7],
-"struct_dataflow_1_1control__visitor.html#aa8baa16dec7d75f4deea228cd142c58d":[12,0,8,16,0],
-"struct_dataflow_1_1control__visitor.html#ab54a9769842607236d071ee3544d67a4":[12,0,8,16,1],
-"struct_dataflow_1_1control__visitor.html#af4990d652cb3a84c5519cefa2daf77c3":[12,0,8,16,6],
-"struct_dataflow_1_1minmax.html":[12,0,8,29],
-"struct_dataflow_1_1minmax.html#a328c0479ae3a8e32ec1def6f41004afa":[12,0,8,29,2],
-"struct_dataflow_1_1minmax.html#a872de9cb46bd314494fb5aa5982f5412":[12,0,8,29,0],
-"struct_dataflow_1_1minmax.html#a9e0b9dc2c741acb132ff922d16fb562a":[12,0,8,29,1],
-"struct_default_rollback_strategy.html":[12,0,95]
+"struct_dataflow_1_1control__visitor.html#a90c7e42ae9ba3fd63740a8ee12dd8b97":[12,0,8,16,7]
 };

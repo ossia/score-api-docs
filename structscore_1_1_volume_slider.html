@@ -96,7 +96,6 @@ $(document).ready(function(){initNavTree('structscore_1_1_volume_slider.html',''
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="structscore_1_1_volume_slider-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -115,6 +114,12 @@ Inheritance diagram for score::VolumeSlider:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a9db6a29403b1c1048228c08527ce9fe5"><td class="memItemLeft" align="right" valign="top"><a id="a9db6a29403b1c1048228c08527ce9fe5"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>map</b> (double v) const override</td></tr>
+<tr class="separator:a9db6a29403b1c1048228c08527ce9fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a00307a92134ba1516a15fb32e5e137"><td class="memItemLeft" align="right" valign="top"><a id="a1a00307a92134ba1516a15fb32e5e137"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>unmap</b> (double v) const override</td></tr>
+<tr class="separator:a1a00307a92134ba1516a15fb32e5e137"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a350322bc8c19995c2f699f51b6f31e0e"><td class="memItemLeft" align="right" valign="top"><a id="a350322bc8c19995c2f699f51b6f31e0e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>DoubleSlider</b> (Qt::Orientation ort, QWidget *widg)</td></tr>
 <tr class="separator:a350322bc8c19995c2f699f51b6f31e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,12 +163,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (Q
 <tr class="memitem:aebf3a9178c3649f60eab30b438ff3af9 inherit pub_methods_classscore_1_1_double_slider"><td class="memItemLeft" align="right" valign="top"><a id="aebf3a9178c3649f60eab30b438ff3af9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseReleaseEvent</b> (QMouseEvent *event) override</td></tr>
 <tr class="separator:aebf3a9178c3649f60eab30b438ff3af9 inherit pub_methods_classscore_1_1_double_slider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a2f5047a123f553a04f7747ee60bff234"><td class="memItemLeft" align="right" valign="top"><a id="a2f5047a123f553a04f7747ee60bff234"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>moving</b> = false</td></tr>
-<tr class="separator:a2f5047a123f553a04f7747ee60bff234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3395200d96ea853ec023ccde01090d76 inherit pub_methods_classscore_1_1_double_slider"><td class="memItemLeft" align="right" valign="top"><a id="a3395200d96ea853ec023ccde01090d76"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>createPopup</b> (QPoint pos)</td></tr>
+<tr class="separator:a3395200d96ea853ec023ccde01090d76 inherit pub_methods_classscore_1_1_double_slider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36b6e0947532ba434cc097c04fb051ed inherit pub_methods_classscore_1_1_double_slider"><td class="memItemLeft" align="right" valign="top"><a id="a36b6e0947532ba434cc097c04fb051ed"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setRange</b> (double min, double max) noexcept</td></tr>
+<tr class="separator:a36b6e0947532ba434cc097c04fb051ed inherit pub_methods_classscore_1_1_double_slider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -180,6 +185,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>paint</b> (QPainter &
 <tr class="memitem:a49028030fd386fc2a82c2117c540b22d inherit pro_methods_classscore_1_1_double_slider"><td class="memItemLeft" align="right" valign="top"><a id="a49028030fd386fc2a82c2117c540b22d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>paintWithText</b> (const QString &amp;s)</td></tr>
 <tr class="separator:a49028030fd386fc2a82c2117c540b22d inherit pro_methods_classscore_1_1_double_slider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_classscore_1_1_double_slider"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classscore_1_1_double_slider')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classscore_1_1_double_slider.html">score::DoubleSlider</a></td></tr>
+<tr class="memitem:a881d53118e3bfd7e28f93f877e497b6c inherit pub_attribs_classscore_1_1_double_slider"><td class="memItemLeft" align="right" valign="top"><a id="a881d53118e3bfd7e28f93f877e497b6c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>moving</b> = false</td></tr>
+<tr class="separator:a881d53118e3bfd7e28f93f877e497b6c inherit pub_attribs_classscore_1_1_double_slider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb7502ae5123c83365513314e5f0d09e inherit pub_attribs_classscore_1_1_double_slider"><td class="memItemLeft" align="right" valign="top"><a id="abb7502ae5123c83365513314e5f0d09e"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>min</b> {}</td></tr>
+<tr class="separator:abb7502ae5123c83365513314e5f0d09e inherit pub_attribs_classscore_1_1_double_slider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b40bd16e5da4c93939f5256919d1ba8 inherit pub_attribs_classscore_1_1_double_slider"><td class="memItemLeft" align="right" valign="top"><a id="a8b40bd16e5da4c93939f5256919d1ba8"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>max</b> {}</td></tr>
+<tr class="separator:a8b40bd16e5da4c93939f5256919d1ba8 inherit pub_attribs_classscore_1_1_double_slider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="lib_2score_2widgets_2_control_widgets_8hpp_source.html">lib/score/widgets/ControlWidgets.hpp</a></li>
