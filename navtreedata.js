@@ -176,12 +176,12 @@ var NAVTREEINDEX =
 "struct_scenario_1_1get__start__end.html#a3df7b8e469d15d5d2076ab5d4baea4ca",
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_q_size_f_01_4.html",
 "structboost_1_1spirit_1_1traits_1_1is__container_3_01_q_string_01_4.html",
-"structossia_1_1qt__property__converter_3_01_state_1_1_address_accessor_01_4.html",
-"structscore_1_1_focus_manager.html",
-"structscore_1_1_string_constants.html#a39149e7187283cfa8c1b7ffbbc18ef7d",
-"structscore_1_1gfx_1_1_images_node.html#a199f24d73ffce89bdcb16ec03868f0e7",
-"structscore_1_1gfx_1_1isf__input__port__vis.html#a40d74d93e991340bc0a93774caf9a06e",
-"structvst3_1_1_window_container.html#ac615d7747caa33c42e94615ee1353019"
+"structossia_1_1nodes_1_1audio__metronome_1_1played__sound.html#ae7efca1b11dba39ba5f16c92847abaed",
+"structscore_1_1_focus_facade.html#a7e698836529cff47bb4056eaad90e9d7",
+"structscore_1_1_string_constants.html#a358b30c0af3a891ab7fcc473fe97c47e",
+"structscore_1_1gfx_1_1_images_node.html",
+"structscore_1_1gfx_1_1isf__input__port__vis.html#a2e5554a4b3766a3fec6eb7debef3289b",
+"structvst3_1_1_window_container.html#a6e7395c9189c5acdd6ca8db915cb27c9"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

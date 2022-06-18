@@ -111,10 +111,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const
 <tr class="memitem:abb4cabdfafbc76baa70e60ae3f998bea"><td class="memItemLeft" align="right" valign="top"><a id="abb4cabdfafbc76baa70e60ae3f998bea"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const avnd::midi_port auto &amp;in, auto idx)</td></tr>
 <tr class="separator:abb4cabdfafbc76baa70e60ae3f998bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ff4debc5f861f23489460856df2727e"><td class="memTemplParams" colspan="2"><a id="a0ff4debc5f861f23489460856df2727e"></a>
-template&lt;avnd::soundfile_port T&gt; </td></tr>
-<tr class="memitem:a0ff4debc5f861f23489460856df2727e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (const T &amp;in, auto idx)</td></tr>
-<tr class="separator:a0ff4debc5f861f23489460856df2727e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab36f11f1e90c2adb84073e27bc7825c2"><td class="memTemplParams" colspan="2"><a id="ab36f11f1e90c2adb84073e27bc7825c2"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ab36f11f1e90c2adb84073e27bc7825c2"><td class="memTemplItemLeft" align="right" valign="top">requires avnd::soundfile_port&lt; T &gt; avnd::midifile_port&lt; T &gt; avnd::raw_file_port&lt; T &gt; void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (const T &amp;in, auto idx)</td></tr>
+<tr class="separator:ab36f11f1e90c2adb84073e27bc7825c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a245ccc5eaa53e8f1281657af9bfb0523"><td class="memTemplParams" colspan="2"><a id="a245ccc5eaa53e8f1281657af9bfb0523"></a>
 template&lt;avnd::parameter T, std::size_t N&gt; </td></tr>
 <tr class="memitem:a245ccc5eaa53e8f1281657af9bfb0523"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (const T &amp;in, avnd::field_index&lt; N &gt;)</td></tr>
