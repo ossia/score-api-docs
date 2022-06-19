@@ -1,5 +1,9 @@
 var NAVTREEINDEX61 =
 {
+"struct_process_1_1_state_node_data.html#a8e459e02d91d0f6a453050ad819b1163":[12,0,39,86,3],
+"struct_process_1_1_state_node_data.html#ac3abd24ff98df1cbc536926cb34d7bed":[12,0,39,86,4],
+"struct_process_1_1_state_node_values.html":[12,0,39,87],
+"struct_process_1_1_state_node_values.html#a138e3589899026625bc0be0ca610514c":[12,0,39,87,7],
 "struct_process_1_1_state_node_values.html#a2eb6cfaad9b8b5344aa3e5456650f0bd":[12,0,39,87,5],
 "struct_process_1_1_state_node_values.html#a2f8073892d6fd76361de484583a5771e":[12,0,39,87,2],
 "struct_process_1_1_state_node_values.html#a30c3307f44b8269907b6d0c5aac45533":[12,0,39,87,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX61 =
 "struct_q_meta_type_id_3_01_j_s_1_1_audio_inlet_01_5_01_4.html":[12,0,245],
 "struct_q_meta_type_id_3_01_j_s_1_1_audio_inlet_01_5_01_4.html#a933a8e15ea9b78f227820db16be4d76ba56c9800272bd8ba49ceeb8372b965a99":[12,0,245,0],
 "struct_q_meta_type_id_3_01_j_s_1_1_audio_outlet_01_5_01_4.html":[12,0,246],
-"struct_q_meta_type_id_3_01_j_s_1_1_audio_outlet_01_5_01_4.html#ae8c36e89b5e6fbb31258f1bb7c370e07a5cee577d92176812066ddb2f47081af5":[12,0,246,0],
-"struct_q_meta_type_id_3_01_j_s_1_1_midi_inlet_01_5_01_4.html":[12,0,247],
-"struct_q_meta_type_id_3_01_j_s_1_1_midi_inlet_01_5_01_4.html#ae1cdd85534384d3178a58546dcc429a4a4f009d71e68398c6fc7b6018f5bc333b":[12,0,247,0],
-"struct_q_meta_type_id_3_01_j_s_1_1_midi_message_01_4.html":[12,0,248],
-"struct_q_meta_type_id_3_01_j_s_1_1_midi_message_01_4.html#a4d0e6f7ad0cd182ea638c55205c3b104a0dc27343fee03ba64adf7cbffc126ba7":[12,0,248,0]
+"struct_q_meta_type_id_3_01_j_s_1_1_audio_outlet_01_5_01_4.html#ae8c36e89b5e6fbb31258f1bb7c370e07a5cee577d92176812066ddb2f47081af5":[12,0,246,0]
 };

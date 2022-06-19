@@ -948,6 +948,7 @@ var files_dup =
     [ "Process/Execution/ProcessComponent.hpp", "_process_2_execution_2_process_component_8hpp_source.html", null ],
     [ "Process/ProcessComponent.hpp", "_process_2_process_component_8hpp_source.html", null ],
     [ "ProcessContext.hpp", "_process_context_8hpp_source.html", null ],
+    [ "ProcessCreation.hpp", "_process_creation_8hpp_source.html", null ],
     [ "ProcessDropHandler.hpp", "_process_drop_handler_8hpp_source.html", null ],
     [ "ProcessesItemModel.hpp", "_processes_item_model_8hpp_source.html", null ],
     [ "score-lib-process/Process/ProcessFactory.hpp", "score-lib-process_2_process_2_process_factory_8hpp_source.html", null ],

@@ -38,7 +38,7 @@ var class_scenario_1_1_command_1_1_macro =
     [ "moveSlot", "class_scenario_1_1_command_1_1_macro.html#aa741df67aa3f42b2feb8f93411fff3ea", null ],
     [ "pasteElements", "class_scenario_1_1_command_1_1_macro.html#af24af2b63fcf2dc5c2f3c73728f4574d", null ],
     [ "pasteElementsAfter", "class_scenario_1_1_command_1_1_macro.html#a7077b4a2a02a0c49fbf208adfa8e2914", null ],
-    [ "removeCable", "class_scenario_1_1_command_1_1_macro.html#a79e13f5ffa4abc67805581985cf2c1de", null ],
+    [ "removeCable", "class_scenario_1_1_command_1_1_macro.html#a83f3c058967570476a6853b98ba5fb14", null ],
     [ "removeElements", "class_scenario_1_1_command_1_1_macro.html#aa4a71c1b1f31c7758f64467ca240885c", null ],
     [ "removeProcess", "class_scenario_1_1_command_1_1_macro.html#a40af3bddf36e4bfd4a7921b9c71d2125", null ],
     [ "resizeInterval", "class_scenario_1_1_command_1_1_macro.html#a4577851c1f12a637727b337a66dcd293", null ],

@@ -12,6 +12,8 @@ var class_dataflow_1_1_port_item =
     [ "hoverLeaveEvent", "class_dataflow_1_1_port_item.html#a63912ae262e9f0e7fd5a182d74a113d0", null ],
     [ "hoverMoveEvent", "class_dataflow_1_1_port_item.html#aa56c49e6374ac46f94a95dd43bc06958", null ],
     [ "itemChange", "class_dataflow_1_1_port_item.html#aeb31eea0f58b0a695572afad711ed30d", null ],
+    [ "keyPressEvent", "class_dataflow_1_1_port_item.html#a8ae4c0a871dbd35b0da6f89cd71828a0", null ],
+    [ "keyReleaseEvent", "class_dataflow_1_1_port_item.html#a5f9f691b23cd4c31173bcd6778483fda", null ],
     [ "mouseMoveEvent", "class_dataflow_1_1_port_item.html#ac4ab6d73b20683f10b9bc436c510a61e", null ],
     [ "mousePressEvent", "class_dataflow_1_1_port_item.html#a94fac5cf3d7c8b27bb9038c23fdd6c7e", null ],
     [ "mouseReleaseEvent", "class_dataflow_1_1_port_item.html#aa8523784ad9fb822fca2231c1097f53b", null ],

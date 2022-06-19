@@ -1,5 +1,9 @@
 var NAVTREEINDEX62 =
 {
+"struct_q_meta_type_id_3_01_j_s_1_1_midi_inlet_01_5_01_4.html":[12,0,247],
+"struct_q_meta_type_id_3_01_j_s_1_1_midi_inlet_01_5_01_4.html#ae1cdd85534384d3178a58546dcc429a4a4f009d71e68398c6fc7b6018f5bc333b":[12,0,247,0],
+"struct_q_meta_type_id_3_01_j_s_1_1_midi_message_01_4.html":[12,0,248],
+"struct_q_meta_type_id_3_01_j_s_1_1_midi_message_01_4.html#a4d0e6f7ad0cd182ea638c55205c3b104a0dc27343fee03ba64adf7cbffc126ba7":[12,0,248,0],
 "struct_q_meta_type_id_3_01_j_s_1_1_midi_outlet_01_5_01_4.html":[12,0,249],
 "struct_q_meta_type_id_3_01_j_s_1_1_midi_outlet_01_5_01_4.html#a77fb5de87fd5e199626cf0dace8817b0a0bd4f980ba5fd221d5367e38c40f713f":[12,0,249,0],
 "struct_q_meta_type_id_3_01_j_s_1_1_sample_timings_01_4.html":[12,0,250],
@@ -245,9 +249,5 @@ var NAVTREEINDEX62 =
 "struct_recording_1_1_record_provider.html":[12,0,41,15],
 "struct_recording_1_1_record_provider.html#a3905de9061fea1749ed3bf74b3eb1fae":[12,0,41,15,1],
 "struct_recording_1_1_record_provider.html#a6d2f967e5e7f5c59ce65d4375353c709":[12,0,41,15,0],
-"struct_recording_1_1_record_provider.html#aec6b0da991f520726c5e8b05a7ffc510":[12,0,41,15,2],
-"struct_recording_1_1_recorded_message.html":[12,0,41,12],
-"struct_recording_1_1_recorded_message.html#a035817c2b42975b30a667a72a424785a":[12,0,41,12,0],
-"struct_recording_1_1_recorded_message.html#a813e8172e393fa8dfec0c0f9630cfa42":[12,0,41,12,1],
-"struct_redo_strategy_1_1_quiet.html":[12,0,42,0]
+"struct_recording_1_1_record_provider.html#aec6b0da991f520726c5e8b05a7ffc510":[12,0,41,15,2]
 };
