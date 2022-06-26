@@ -7,7 +7,7 @@ var structoscr_1_1_q_painter_adapter =
     [ "draw_circle", "structoscr_1_1_q_painter_adapter.html#a3c39ed60074eef631c0b69bdd21dbd53", null ],
     [ "draw_ellipse", "structoscr_1_1_q_painter_adapter.html#ad5f6ca6ec980a157d2523d8f4f0fd143", null ],
     [ "draw_line", "structoscr_1_1_q_painter_adapter.html#a9cf96ce7d363b0098c137776b24ec7ff", null ],
-    [ "draw_pixmap", "structoscr_1_1_q_painter_adapter.html#a410f732b01ffb8fb33629ebe7010a087", null ],
+    [ "draw_pixmap", "structoscr_1_1_q_painter_adapter.html#a7af4c6c43a46ae75222f0944e901f963", null ],
     [ "draw_polygon", "structoscr_1_1_q_painter_adapter.html#a706b04e6895dae427d63778487817da8", null ],
     [ "draw_rect", "structoscr_1_1_q_painter_adapter.html#af368458c6d2e1228c4145f666dc53b6f", null ],
     [ "draw_rounded_rect", "structoscr_1_1_q_painter_adapter.html#ad0b92d64e0a6e1d9bb07d9dd471cce35", null ],
