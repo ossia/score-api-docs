@@ -1,5 +1,6 @@
 var NAVTREEINDEX58 =
 {
+"struct_media_1_1_single_frame_computer.html":[12,0,29,22],
 "struct_media_1_1_single_frame_computer.html#a1b310b54ba4aecf3369f02a170929d9d":[12,0,29,22,4],
 "struct_media_1_1_single_frame_computer.html#a51a8813c8c2103e90209f40f80640af7":[12,0,29,22,3],
 "struct_media_1_1_single_frame_computer.html#a5a5c27f8a6ef1d89ba65a7c5459f15a2":[12,0,29,22,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX58 =
 "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#a40649cf7c2f109f1ac514cfd05aa3cb0":[12,0,33,1,0,1,6],
 "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#a5097b8ca68fe6b3e362fec20174e582e":[12,0,33,1,0,1,4],
 "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#a6e2222756fdebcbfc363372374ee1f79":[12,0,33,1,0,1,8],
-"struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#aa8ddd9f5efaccc2566fc80611453e209":[12,0,33,1,0,1,2],
-"struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#aba5beba264acf1329a8b8d100165a757":[12,0,33,1,0,1,1]
+"struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#aa8ddd9f5efaccc2566fc80611453e209":[12,0,33,1,0,1,2]
 };

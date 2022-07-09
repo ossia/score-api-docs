@@ -9,6 +9,7 @@ var class_scenario_1_1_scenario_document_model =
     [ "busDeleted", "class_scenario_1_1_scenario_document_model.html#af7492717835016115b3643982873816c", null ],
     [ "busesChanged", "class_scenario_1_1_scenario_document_model.html#a51cdbf07ed03c6ab93404c71b2eee5e5", null ],
     [ "close", "class_scenario_1_1_scenario_document_model.html#a1ae9cd2bd90829b772802493e75d5691", null ],
+    [ "closing", "class_scenario_1_1_scenario_document_model.html#ace9056f95dd49b8a2efdff5ee577debe", null ],
     [ "context", "class_scenario_1_1_scenario_document_model.html#abde11dd1b2f3d5a590f2a8b6e47e7b4f", null ],
     [ "finishLoading", "class_scenario_1_1_scenario_document_model.html#a2175c859be33c53d28f093d5b4645d79", null ],
     [ "removeBus", "class_scenario_1_1_scenario_document_model.html#a423e9b8b790ff782829c48c2bf77855e", null ],

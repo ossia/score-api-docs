@@ -1,5 +1,6 @@
 var NAVTREEINDEX51 =
 {
+"score-plugin-analysis_2_analysis_2_envelope_8hpp_source.html":[13,0,383],
 "score-plugin-audio_2_audio_2_settings_2_factory_8hpp_source.html":[13,0,439],
 "score-plugin-audio_2_audio_2_settings_2_model_8hpp_source.html":[13,0,770],
 "score-plugin-audio_2_audio_2_settings_2_view_8hpp_source.html":[13,0,1377],
@@ -248,6 +249,5 @@ var NAVTREEINDEX51 =
 "struct_analysis_1_1_spectral_diff_h_w_r.html#a4ba984be25915c74eb67bb6fd2dc4bbc":[12,0,0,15,2],
 "struct_analysis_1_1_spectral_diff_h_w_r_1_1_metadata.html":[12,0,0,15,0],
 "struct_analysis_1_1_spectrum.html":[12,0,0,16],
-"struct_analysis_1_1_spectrum.html#a16fee01b243a089af32ca710eede2e2a":[12,0,0,16,2],
-"struct_analysis_1_1_spectrum.html#a953fd4fae873b10faf1e6378bc7fdc84":[12,0,0,16,1]
+"struct_analysis_1_1_spectrum.html#a16fee01b243a089af32ca710eede2e2a":[12,0,0,16,2]
 };

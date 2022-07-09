@@ -144,36 +144,37 @@ $(document).ready(function(){initNavTree('_scenario_document_model_8hpp_source.h
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  }</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> finishLoading();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  ~<a class="code" href="class_scenario_1_1_scenario_document_model.html">ScenarioDocumentModel</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="class_scenario_1_1_base_scenario.html">BaseScenario</a>&amp; baseScenario()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> *m_baseScenario; }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&amp; baseInterval() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> serialize(<span class="keyword">const</span> <a class="code" href="struct_visitor_variant.html">VisitorVariant</a>&amp;) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> close() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="classscore_1_1_entity_map.html">score::EntityMap&lt;Process::Cable&gt;</a> cables;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">void</span> addBus(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>*);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> removeBus(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>*);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> busDeleted(<span class="keyword">const</span> <a class="code" href="class_identified_object_abstract.html">IdentifiedObjectAbstract</a>* itv);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  std::vector&lt;const IntervalModel*&gt; busIntervals;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  std::vector&lt;const StateModel*&gt; statesWithControls;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> busesChanged() E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, busesChanged)</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; context() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> m_context; }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span> init();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; m_context;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="class_scenario_1_1_base_scenario.html">BaseScenario</a>* m_baseScenario{};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  std::vector&lt;QByteArray&gt; m_savedCables;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  rapidjson::Document m_savedCablesJson;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">bool</span> closing() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> !m_baseScenario; }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  ~<a class="code" href="class_scenario_1_1_scenario_document_model.html">ScenarioDocumentModel</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="class_scenario_1_1_base_scenario.html">BaseScenario</a>&amp; baseScenario()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> *m_baseScenario; }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&amp; baseInterval() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> serialize(<span class="keyword">const</span> <a class="code" href="struct_visitor_variant.html">VisitorVariant</a>&amp;) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> close() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="classscore_1_1_entity_map.html">score::EntityMap&lt;Process::Cable&gt;</a> cables;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> addBus(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>*);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> removeBus(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>*);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">void</span> busDeleted(<span class="keyword">const</span> <a class="code" href="class_identified_object_abstract.html">IdentifiedObjectAbstract</a>* itv);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  std::vector&lt;const IntervalModel*&gt; busIntervals;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  std::vector&lt;const StateModel*&gt; statesWithControls;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> busesChanged() E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, busesChanged)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; context() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> m_context; }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">void</span> init();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; m_context;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <a class="code" href="class_scenario_1_1_base_scenario.html">BaseScenario</a>* m_baseScenario{};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  std::vector&lt;QByteArray&gt; m_savedCables;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  rapidjson::Document m_savedCablesJson;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1371</div></div>

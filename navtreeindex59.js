@@ -1,5 +1,6 @@
 var NAVTREEINDEX59 =
 {
+"struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#aba5beba264acf1329a8b8d100165a757":[12,0,33,1,0,1,1],
 "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#abecbb00438fe7161968914ae53a61dd4":[12,0,33,1,0,1,16],
 "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#ac7dadd5810f546962fc0714cab568f17":[12,0,33,1,0,1,9],
 "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#aca3683f47f9a6689f2e14c24d5d5bdb4":[12,0,33,1,0,1,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX59 =
 "struct_nodes_1_1_quantifier_1_1_node_1_1_state.html#a41e88c5bb68d82cdc35734f0a1d7374f":[12,0,33,25,0,2,1],
 "struct_nodes_1_1_quantifier_1_1_node_1_1_state.html#a95a4eafc8c4aa23191bc64750f4b5232":[12,0,33,25,0,2,0],
 "struct_nodes_1_1_rate_limiter_1_1_node.html":[12,0,33,26,0],
-"struct_nodes_1_1_rate_limiter_1_1_node.html#a7f4b4cc558b3ac238f92efea34d89d94":[12,0,33,26,0,3],
-"struct_nodes_1_1_rate_limiter_1_1_node_1_1_metadata.html":[12,0,33,26,0,0]
+"struct_nodes_1_1_rate_limiter_1_1_node.html#a7f4b4cc558b3ac238f92efea34d89d94":[12,0,33,26,0,3]
 };

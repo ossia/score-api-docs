@@ -1,5 +1,6 @@
 var NAVTREEINDEX67 =
 {
+"structaudio__kind__attr.html#aee5a5247969c6d4b2bd4d3631cce57d0":[12,0,70,0],
 "structaudio__mapping__attr.html":[12,0,71],
 "structaudio__mapping__attr.html#a3d421057f96c240c9e01b363280cbc24":[12,0,71,0],
 "structbase__kind.html":[12,0,74],
@@ -78,8 +79,8 @@ var NAVTREEINDEX67 =
 "structoscr_1_1_inlet_init_func.html#a00061a4355a850dfe44bdc6e5d2c13a3":[12,0,34,12,9],
 "structoscr_1_1_inlet_init_func.html#a245ccc5eaa53e8f1281657af9bfb0523":[12,0,34,12,6],
 "structoscr_1_1_inlet_init_func.html#a26d3210108ad9780d409b1d83fea759b":[12,0,34,12,7],
-"structoscr_1_1_inlet_init_func.html#a3fe66fd8146371ec86505ce8a99a7c6c":[12,0,34,12,3],
 "structoscr_1_1_inlet_init_func.html#a3fe66fd8146371ec86505ce8a99a7c6c":[12,0,34,12,2],
+"structoscr_1_1_inlet_init_func.html#a3fe66fd8146371ec86505ce8a99a7c6c":[12,0,34,12,3],
 "structoscr_1_1_inlet_init_func.html#ab36f11f1e90c2adb84073e27bc7825c2":[12,0,34,12,5],
 "structoscr_1_1_inlet_init_func.html#abb4cabdfafbc76baa70e60ae3f998bea":[12,0,34,12,4],
 "structoscr_1_1_inlet_init_func.html#ace7897bd30ea620f3b89ed0d9d7f40e9":[12,0,34,12,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX67 =
 "structossia_1_1node__graph__process.html#a6fc20a3bc33e0cfc65f802820821d287":[12,0,35,2,6],
 "structossia_1_1node__graph__process.html#a8f9ced34b3041f8df4a259f3e6513016":[12,0,35,2,11],
 "structossia_1_1node__graph__process.html#a9803653ca4f5ef5d4772499b521840ff":[12,0,35,2,4],
-"structossia_1_1node__graph__process.html#a997e61f651050a2488c8447abd962fab":[12,0,35,2,2],
-"structossia_1_1node__graph__process.html#a9bfb1d71c5324fdfe12a82ca008fdb5f":[12,0,35,2,5]
+"structossia_1_1node__graph__process.html#a997e61f651050a2488c8447abd962fab":[12,0,35,2,2]
 };

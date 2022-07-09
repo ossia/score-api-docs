@@ -1,5 +1,6 @@
 var NAVTREEINDEX52 =
 {
+"struct_analysis_1_1_spectrum.html#a953fd4fae873b10faf1e6378bc7fdc84":[12,0,0,16,1],
 "struct_analysis_1_1_spectrum_1_1_metadata.html":[12,0,0,16,0],
 "struct_analysis_1_1_zero_crossing.html":[12,0,0,17],
 "struct_analysis_1_1_zero_crossing.html#a911e7c478431e8c274b9ee7e3dc3e792":[12,0,0,17,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX52 =
 "struct_control_1_1_line_edit.html#aebeec8740ee25631dc2f8e66d3ab6610":[12,0,5,30,3],
 "struct_control_1_1_line_edit.html#aee73611eea60f7688c27dfcb0a140be9":[12,0,5,30,8],
 "struct_control_1_1_meta__base.html":[12,0,5,31],
-"struct_control_1_1_note.html":[12,0,5,32],
-"struct_control_1_1_note.html#a200ce9685b1079a47460f946131b13ab":[12,0,5,32,1]
+"struct_control_1_1_note.html":[12,0,5,32]
 };
