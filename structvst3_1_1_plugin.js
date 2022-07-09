@@ -8,6 +8,7 @@ var structvst3_1_1_plugin =
     [ "loadAudioProcessor", "structvst3_1_1_plugin.html#a8098e53a1853cf81eba49924edb1a0fc", null ],
     [ "loadBuses", "structvst3_1_1_plugin.html#a8f0c0b17d50a9cc5f6a3518c9808282d", null ],
     [ "loadEditController", "structvst3_1_1_plugin.html#af848fc32b259c8a8ecac391f5cb36dbf", null ],
+    [ "loadPresets", "structvst3_1_1_plugin.html#a4c274d106d6dffb1e86ca8a4bf4ac2ae", null ],
     [ "loadProcessorStateToController", "structvst3_1_1_plugin.html#acdee8b5b460865f74580a106940a3789", null ],
     [ "operator bool", "structvst3_1_1_plugin.html#a0224ffb26b64d0a61c6afe8c847d7ec2", null ],
     [ "operator=", "structvst3_1_1_plugin.html#a0192a5996df478430d0cfab227d276f1", null ],
@@ -25,6 +26,8 @@ var structvst3_1_1_plugin =
     [ "midiControls", "structvst3_1_1_plugin.html#a57e3c2963cafe425bfafab1d8a4d928d", null ],
     [ "path", "structvst3_1_1_plugin.html#a0d8510a282e1b4d5c8e6743df5f152d0", null ],
     [ "processor", "structvst3_1_1_plugin.html#a6524f19aa74a519cbb1ba57cb69d0bac", null ],
+    [ "programs", "structvst3_1_1_plugin.html#af970182e5add1d88754b78fa8def0dff", null ],
     [ "supportsDouble", "structvst3_1_1_plugin.html#aeffdad7e7d52ca33f1a6d2b329329f18", null ],
+    [ "units", "structvst3_1_1_plugin.html#aecd611f1aee196d1e0ecb0dfe7ccbdf1", null ],
     [ "view", "structvst3_1_1_plugin.html#a35345088509cc98c0efa43e240c83758", null ]
 ];

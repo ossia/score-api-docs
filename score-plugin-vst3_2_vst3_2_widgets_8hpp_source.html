@@ -118,89 +118,81 @@ $(document).ready(function(){initNavTree('score-plugin-vst3_2_vst3_2_widgets_8hp
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  std::vector&lt;std::pair&lt;ControlInlet*, score::EmptyRectItem*&gt;&gt; controlItems;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <a class="code" href="classvst3_1_1_v_s_t_effect_item.html">VSTEffectItem</a>(</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <span class="keyword">const</span> <a class="code" href="classvst3_1_1_model.html">Model</a>&amp; effect,</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; doc,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      QGraphicsItem* root);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">void</span> setupInlet(</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      <span class="keyword">const</span> <a class="code" href="classvst3_1_1_model.html">Model</a>&amp; fx,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      <a class="code" href="classvst3_1_1_control_inlet.html">ControlInlet</a>&amp; inlet,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; doc);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">void</span> updateRect();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classvst3_1_1_v_s_t_graphics_slider.html">   35</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvst3_1_1_v_s_t_graphics_slider.html">VSTGraphicsSlider</a> final</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    : <span class="keyword">public</span> QObject</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    , <span class="keyword">public</span> <a class="code" href="structscore_1_1_q_graphics_slider_base.html">score::QGraphicsSliderBase</a>&lt;VSTGraphicsSlider&gt;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  W_OBJECT(<a class="code" href="classvst3_1_1_v_s_t_graphics_slider.html">VSTGraphicsSlider</a>)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  Q_INTERFACES(QGraphicsItem)</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">friend</span> <span class="keyword">struct </span>QGraphicsSliderBase&lt;<a class="code" href="classvst3_1_1_v_s_t_graphics_slider.html">VSTGraphicsSlider</a>&gt;;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">double</span> m_value{};</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">double</span> m_execValue{};</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  Steinberg::Vst::IEditController* fx{};</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  Steinberg::Vst::ParamID num{};</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">bool</span> m_grab{};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">bool</span> m_hasExec{};</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">double</span> min = 0.;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">double</span> max = 1.;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structscore_1_1_default_graphics_slider_impl.html">score::DefaultGraphicsSliderImpl</a>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="classvst3_1_1_v_s_t_graphics_slider.html">VSTGraphicsSlider</a>(</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      Steinberg::Vst::IEditController* fx,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      Steinberg::Vst::ParamID num,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      QGraphicsItem* parent);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">double</span> map(<span class="keywordtype">double</span> v) { <span class="keywordflow">return</span> v; }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">double</span> unmap(<span class="keywordtype">double</span> v) { <span class="keywordflow">return</span> v; }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> setValue(<span class="keywordtype">double</span> v);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">double</span> value() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> setExecutionValue(<span class="keywordtype">double</span> v);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> resetExecution();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">bool</span> moving = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">void</span> valueChanged(<span class="keywordtype">double</span> arg_1) W_SIGNAL(valueChanged, arg_1);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> sliderMoved() W_SIGNAL(sliderMoved);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> sliderReleased() W_SIGNAL(sliderReleased);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> mousePressEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">void</span> mouseMoveEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">void</span> mouseReleaseEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">void</span> mouseDoubleClickEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">void</span> paint(</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      QPainter* painter,</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="keyword">const</span> QStyleOptionGraphicsItem* option,</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      QWidget* widget) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="structvst3_1_1_v_s_t_float_slider.html">   87</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structvst3_1_1_v_s_t_float_slider.html">VSTFloatSlider</a> : ossia::safe_nodes::control_in</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">static</span> QWidget* make_widget(</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      Steinberg::Vst::IEditController* fx,</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <span class="keyword">const</span> <a class="code" href="classvst3_1_1_control_inlet.html">ControlInlet</a>&amp; inlet,</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      QWidget* parent,</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      QObject* context);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keyword">static</span> QGraphicsItem* make_item(</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      Steinberg::Vst::IEditController* fx,</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <a class="code" href="classvst3_1_1_control_inlet.html">ControlInlet</a>&amp; inlet,</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      QGraphicsItem* parent,</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      QObject* context);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <a class="code" href="classvst3_1_1_v_s_t_effect_item.html">VSTEffectItem</a>(<span class="keyword">const</span> <a class="code" href="classvst3_1_1_model.html">Model</a>&amp; effect, <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; doc, QGraphicsItem* root);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordtype">void</span> setupInlet(<span class="keyword">const</span> <a class="code" href="classvst3_1_1_model.html">Model</a>&amp; fx, <a class="code" href="classvst3_1_1_control_inlet.html">ControlInlet</a>&amp; inlet, <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; doc);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">void</span> updateRect();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classvst3_1_1_v_s_t_graphics_slider.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvst3_1_1_v_s_t_graphics_slider.html">VSTGraphicsSlider</a> final</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    , <span class="keyword">public</span> <a class="code" href="structscore_1_1_q_graphics_slider_base.html">score::QGraphicsSliderBase</a>&lt;VSTGraphicsSlider&gt;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  W_OBJECT(<a class="code" href="classvst3_1_1_v_s_t_graphics_slider.html">VSTGraphicsSlider</a>)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  Q_INTERFACES(QGraphicsItem)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">friend</span> <span class="keyword">struct </span>QGraphicsSliderBase&lt;<a class="code" href="classvst3_1_1_v_s_t_graphics_slider.html">VSTGraphicsSlider</a>&gt;;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">double</span> m_value{};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">double</span> m_execValue{};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  Steinberg::Vst::IEditController* fx{};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  Steinberg::Vst::ParamID num{};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">bool</span> m_grab{};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">bool</span> m_hasExec{};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">double</span> min = 0.;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">double</span> max = 1.;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structscore_1_1_default_graphics_slider_impl.html">score::DefaultGraphicsSliderImpl</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="classvst3_1_1_v_s_t_graphics_slider.html">VSTGraphicsSlider</a>(</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      Steinberg::Vst::IEditController* fx,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      Steinberg::Vst::ParamID num,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      QGraphicsItem* parent);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">double</span> map(<span class="keywordtype">double</span> v) { <span class="keywordflow">return</span> v; }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">double</span> unmap(<span class="keywordtype">double</span> v) { <span class="keywordflow">return</span> v; }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">void</span> setValue(<span class="keywordtype">double</span> v);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">double</span> value() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> setExecutionValue(<span class="keywordtype">double</span> v);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">void</span> resetExecution();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">bool</span> moving = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> valueChanged(<span class="keywordtype">double</span> arg_1) W_SIGNAL(valueChanged, arg_1);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> sliderMoved() W_SIGNAL(sliderMoved);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> sliderReleased() W_SIGNAL(sliderReleased);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">void</span> mousePressEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">void</span> mouseMoveEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> mouseReleaseEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> mouseDoubleClickEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span> paint(QPainter* painter, <span class="keyword">const</span> QStyleOptionGraphicsItem* option, QWidget* widget)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="structvst3_1_1_v_s_t_float_slider.html">   79</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structvst3_1_1_v_s_t_float_slider.html">VSTFloatSlider</a> : ossia::safe_nodes::control_in</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">static</span> QWidget* make_widget(</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      Steinberg::Vst::IEditController* fx,</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="keyword">const</span> <a class="code" href="classvst3_1_1_control_inlet.html">ControlInlet</a>&amp; inlet,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      QWidget* parent,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      QObject* context);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keyword">static</span> QGraphicsItem* make_item(</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      Steinberg::Vst::IEditController* fx,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <a class="code" href="classvst3_1_1_control_inlet.html">ControlInlet</a>&amp; inlet,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      QGraphicsItem* parent,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      QObject* context);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassscore_1_1_empty_rect_item_html"><div class="ttname"><a href="classscore_1_1_empty_rect_item.html">score::EmptyRectItem</a></div><div class="ttdef"><b>Definition:</b> RectItem.hpp:57</div></div>
@@ -208,11 +200,11 @@ $(document).ready(function(){initNavTree('score-plugin-vst3_2_vst3_2_widgets_8hp
 <div class="ttc" id="aclassvst3_1_1_control_inlet_html"><div class="ttname"><a href="classvst3_1_1_control_inlet.html">vst3::ControlInlet</a></div><div class="ttdef"><b>Definition:</b> /Vst3/Control.hpp:14</div></div>
 <div class="ttc" id="astruct_process_1_1_context_html"><div class="ttname"><a href="struct_process_1_1_context.html">Process::Context</a></div><div class="ttdef"><b>Definition:</b> ProcessContext.hpp:11</div></div>
 <div class="ttc" id="astructscore_1_1_default_graphics_slider_impl_html"><div class="ttname"><a href="structscore_1_1_default_graphics_slider_impl.html">score::DefaultGraphicsSliderImpl</a></div><div class="ttdef"><b>Definition:</b> DefaultGraphicsSliderImpl.hpp:28</div></div>
-<div class="ttc" id="aclassvst3_1_1_v_s_t_graphics_slider_html"><div class="ttname"><a href="classvst3_1_1_v_s_t_graphics_slider.html">vst3::VSTGraphicsSlider</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst3/Vst3/Widgets.hpp:35</div></div>
+<div class="ttc" id="aclassvst3_1_1_v_s_t_graphics_slider_html"><div class="ttname"><a href="classvst3_1_1_v_s_t_graphics_slider.html">vst3::VSTGraphicsSlider</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst3/Vst3/Widgets.hpp:29</div></div>
 <div class="ttc" id="astructscore_1_1_q_graphics_slider_base_html"><div class="ttname"><a href="structscore_1_1_q_graphics_slider_base.html">score::QGraphicsSliderBase</a></div><div class="ttdef"><b>Definition:</b> QGraphicsSliderBase.hpp:16</div></div>
 <div class="ttc" id="aclassvst3_1_1_v_s_t_effect_item_html"><div class="ttname"><a href="classvst3_1_1_v_s_t_effect_item.html">vst3::VSTEffectItem</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst3/Vst3/Widgets.hpp:15</div></div>
-<div class="ttc" id="astructvst3_1_1_v_s_t_float_slider_html"><div class="ttname"><a href="structvst3_1_1_v_s_t_float_slider.html">vst3::VSTFloatSlider</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst3/Vst3/Widgets.hpp:87</div></div>
-<div class="ttc" id="aclassvst3_1_1_model_html"><div class="ttname"><a href="classvst3_1_1_model.html">vst3::Model</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst3/Vst3/EffectModel.hpp:49</div></div>
+<div class="ttc" id="astructvst3_1_1_v_s_t_float_slider_html"><div class="ttname"><a href="structvst3_1_1_v_s_t_float_slider.html">vst3::VSTFloatSlider</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst3/Vst3/Widgets.hpp:79</div></div>
+<div class="ttc" id="aclassvst3_1_1_model_html"><div class="ttname"><a href="classvst3_1_1_model.html">vst3::Model</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst3/Vst3/EffectModel.hpp:50</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
