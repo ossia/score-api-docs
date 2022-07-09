@@ -61,7 +61,7 @@ var searchData=
   ['timewidget_5291',['TimeWidget',['../class_execution_1_1_manual_clock_1_1_time_widget.html',1,'Execution::ManualClock']]],
   ['timings_5292',['timings',['../struct_scenario_1_1_musical_grid_1_1timings.html',1,'Scenario::MusicalGrid']]],
   ['titlebar_5293',['TitleBar',['../classscore_1_1_title_bar.html',1,'score']]],
-  ['toggle_5294',['Toggle',['../struct_control_1_1_toggle.html',1,'Control::Toggle'],['../class_toggle.html',1,'Toggle'],['../struct_widget_factory_1_1_toggle.html',1,'WidgetFactory::Toggle']]],
+  ['toggle_5294',['Toggle',['../struct_control_1_1_toggle.html',1,'Control::Toggle'],['../struct_widget_factory_1_1_toggle.html',1,'WidgetFactory::Toggle'],['../class_toggle.html',1,'Toggle']]],
   ['togglebutton_5295',['ToggleButton',['../structscore_1_1_toggle_button.html',1,'score']]],
   ['tokenrequestvaluetype_5296',['TokenRequestValueType',['../class_token_request_value_type.html',1,'']]],
   ['toolbar_5297',['Toolbar',['../classscore_1_1_toolbar.html',1,'score']]],

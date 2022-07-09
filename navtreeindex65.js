@@ -1,5 +1,8 @@
 var NAVTREEINDEX65 =
 {
+"struct_scenario_1_1get__curve__domain.html#a67e16b522aba5d0f58f1c1b0611c2584":[12,0,45,112,7],
+"struct_scenario_1_1get__curve__domain.html#a7cb9457376050e58bada9731ea5069d1":[12,0,45,112,0],
+"struct_scenario_1_1get__curve__domain.html#a92924bcea05798b8ce0077478c4ab486":[12,0,45,112,1],
 "struct_scenario_1_1get__curve__domain.html#a9df64ca333f4a8060ca14e227db07853":[12,0,45,112,2],
 "struct_scenario_1_1get__curve__domain.html#afb3f2e1830d5700987585fc03b00caaa":[12,0,45,112,3],
 "struct_scenario_1_1get__curve__domain.html#afbdfce96c14a7256cae0bacbe77718c6":[12,0,45,112,6],
@@ -246,8 +249,5 @@ var NAVTREEINDEX65 =
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_identified_object_3_01_t_01_4_01_4.html":[12,0,465],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_model_3_01_info_00_01_control_1_1is__control_01_4_01_4.html":[12,0,466],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_model_3_01_info_00_01_control_1_1is__control_01_4_01_4.html#ab991fdc5e4c3259c48446220f7f0c535":[12,0,466,0],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_path_3_01_t_01_4_01_4.html":[12,0,481],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_q_color_01_4.html":[12,0,482],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_q_list_3_01_args_8_8_8_01_4_01_4.html":[12,0,483],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_q_point_01_4.html":[12,0,484]
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_path_3_01_t_01_4_01_4.html":[12,0,481]
 };

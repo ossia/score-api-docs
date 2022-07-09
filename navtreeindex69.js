@@ -1,5 +1,8 @@
 var NAVTREEINDEX69 =
 {
+"structscore_1_1_flicks_spin_box.html#ae7ae54506e6480a345003eddf253adeb":[12,0,46,101,0],
+"structscore_1_1_flicks_spin_box.html#af4ba72846762a08741ca1c07608ba7f5":[12,0,46,101,1],
+"structscore_1_1_flicks_spin_box.html#afd3cc51157a7085e6fc6a078966fee46":[12,0,46,101,3],
 "structscore_1_1_focus_action_condition.html":[12,0,46,102],
 "structscore_1_1_focus_action_condition.html#a03b88275bb632bf44bb28b9c5ebab537":[12,0,46,102,0],
 "structscore_1_1_focus_action_condition.html#a34f49cef0d19a0d7df8f522e4e86b864":[12,0,46,102,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX69 =
 "structscore_1_1_string_constants.html#a12fbabc6a3f9bc2ef0beed7c1a2d4e1f":[12,0,46,262,52],
 "structscore_1_1_string_constants.html#a1573de85c679e65471fee997b3f9ab98":[12,0,46,262,99],
 "structscore_1_1_string_constants.html#a1651b349c89d0db860c0ecc77f505fa2":[12,0,46,262,116],
-"structscore_1_1_string_constants.html#a16bb32a2b91d76b379bf6fbcd7f5bc5f":[12,0,46,262,54],
-"structscore_1_1_string_constants.html#a1852a9c46858f84b00b3392b4d18f6a7":[12,0,46,262,12],
-"structscore_1_1_string_constants.html#a1caea48de7dff3f1b808edc8457820e5":[12,0,46,262,28],
-"structscore_1_1_string_constants.html#a206eef6ec68be5a55a1d95a90e2061ed":[12,0,46,262,42]
+"structscore_1_1_string_constants.html#a16bb32a2b91d76b379bf6fbcd7f5bc5f":[12,0,46,262,54]
 };

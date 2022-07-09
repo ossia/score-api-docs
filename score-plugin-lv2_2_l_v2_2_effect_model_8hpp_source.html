@@ -212,10 +212,10 @@ $(document).ready(function(){initNavTree('score-plugin-lv2_2_l_v2_2_effect_model
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;namespace <a class="code" href="namespace_process.html">Process</a></div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;{</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;QString EffectProcessFactory_T&lt;LV2::Model&gt;::customConstructionData() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;QString EffectProcessFactory_T&lt;LV2::Model&gt;::customConstructionData() const noexcept;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">namespace </span>LV2</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;namespace LV2</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;{</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">using</span> ProcessFactory = <a class="code" href="class_process_1_1_effect_process_factory___t.html">Process::EffectProcessFactory_T&lt;Model&gt;</a>;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">using</span> ExecutorFactory</div>

@@ -123,21 +123,21 @@ Inheritance diagram for Process::ProcessModelFactory:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac364598c3d3de648efa9b23435e98fc6"><td class="memItemLeft" align="right" valign="top"><a id="ac364598c3d3de648efa9b23435e98fc6"></a>
-virtual QString&#160;</td><td class="memItemRight" valign="bottom"><b>prettyName</b> () const =0</td></tr>
-<tr class="separator:ac364598c3d3de648efa9b23435e98fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a256cb733bb17c079ef708bb435a0a925"><td class="memItemLeft" align="right" valign="top"><a id="a256cb733bb17c079ef708bb435a0a925"></a>
-virtual QString&#160;</td><td class="memItemRight" valign="bottom"><b>category</b> () const =0</td></tr>
-<tr class="separator:a256cb733bb17c079ef708bb435a0a925"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af90435a1b91d1db9ee2aef80e1d04d3d"><td class="memItemLeft" align="right" valign="top"><a id="af90435a1b91d1db9ee2aef80e1d04d3d"></a>
-virtual <a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">ProcessFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><b>flags</b> () const =0</td></tr>
-<tr class="separator:af90435a1b91d1db9ee2aef80e1d04d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8364b7f3d04ae07a0ded524c495f937"><td class="memItemLeft" align="right" valign="top"><a id="ab8364b7f3d04ae07a0ded524c495f937"></a>
-virtual <a class="el" href="struct_process_1_1_descriptor.html">Descriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>descriptor</b> (QString) const =0</td></tr>
-<tr class="separator:ab8364b7f3d04ae07a0ded524c495f937"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c0bb39fd9a80bc5adaf80004c7e918a"><td class="memItemLeft" align="right" valign="top"><a id="a0c0bb39fd9a80bc5adaf80004c7e918a"></a>
-virtual QString&#160;</td><td class="memItemRight" valign="bottom"><b>customConstructionData</b> () const</td></tr>
-<tr class="separator:a0c0bb39fd9a80bc5adaf80004c7e918a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77c72082a17cc393435bf0ce744e5a58"><td class="memItemLeft" align="right" valign="top"><a id="a77c72082a17cc393435bf0ce744e5a58"></a>
+virtual QString&#160;</td><td class="memItemRight" valign="bottom"><b>prettyName</b> () const noexcept=0</td></tr>
+<tr class="separator:a77c72082a17cc393435bf0ce744e5a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c6c022616a16e38a0a352d25ad08171"><td class="memItemLeft" align="right" valign="top"><a id="a1c6c022616a16e38a0a352d25ad08171"></a>
+virtual QString&#160;</td><td class="memItemRight" valign="bottom"><b>category</b> () const noexcept=0</td></tr>
+<tr class="separator:a1c6c022616a16e38a0a352d25ad08171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa88de473860fc95946e3d82ba9f882b9"><td class="memItemLeft" align="right" valign="top"><a id="aa88de473860fc95946e3d82ba9f882b9"></a>
+virtual <a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">ProcessFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><b>flags</b> () const noexcept=0</td></tr>
+<tr class="separator:aa88de473860fc95946e3d82ba9f882b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab929693ba0e7c1c2546531aa81b93b28"><td class="memItemLeft" align="right" valign="top"><a id="ab929693ba0e7c1c2546531aa81b93b28"></a>
+virtual <a class="el" href="struct_process_1_1_descriptor.html">Descriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>descriptor</b> (QString) const noexcept=0</td></tr>
+<tr class="separator:ab929693ba0e7c1c2546531aa81b93b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a089ddd0c4a68c4236cb80e1643d699ca"><td class="memItemLeft" align="right" valign="top"><a id="a089ddd0c4a68c4236cb80e1643d699ca"></a>
+virtual QString&#160;</td><td class="memItemRight" valign="bottom"><b>customConstructionData</b> () const noexcept</td></tr>
+<tr class="separator:a089ddd0c4a68c4236cb80e1643d699ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cc027a4de89c9987926e7c0a13113d5"><td class="memItemLeft" align="right" valign="top"><a id="a0cc027a4de89c9987926e7c0a13113d5"></a>
 virtual <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>make</b> (const <a class="el" href="struct_time_val.html">TimeVal</a> &amp;duration, const QString &amp;data, const <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="class_process_1_1_process_model.html">ProcessModel</a> &gt; &amp;id, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, QObject *parent)=0</td></tr>
 <tr class="separator:a0cc027a4de89c9987926e7c0a13113d5"><td class="memSeparator" colspan="2">&#160;</td></tr>

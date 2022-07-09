@@ -15,6 +15,7 @@ var classvst_1_1_model =
     [ "prettyName", "classvst_1_1_model.html#adbd71f4715f62f77642c87918594504c", null ],
     [ "prettyShortName", "classvst_1_1_model.html#a97107d611cd018f54ef5b4d0ff6081be", null ],
     [ "reloadControls", "classvst_1_1_model.html#ae30dfe2e738eca3842123b76317e5d08", null ],
+    [ "reloadPrograms", "classvst_1_1_model.html#a4901f7ae2ee7954a80ffd93555ea71b1", null ],
     [ "removeControl", "classvst_1_1_model.html#a19deda650935110b07deaaa8c6fb928c", null ],
     [ "removeControl", "classvst_1_1_model.html#a2bcc7c2e3527bbb71306bc83f58fd80a", null ],
     [ "setCreatingControls", "classvst_1_1_model.html#a2913b2aa197daec2f86ab01df97b910e", null ],

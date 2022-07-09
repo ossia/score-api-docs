@@ -7,6 +7,7 @@ var class_process_1_1_process_model =
     [ "ancestorStartDateChanged", "class_process_1_1_process_model.html#aefe5acde3d540a7f042229bf8d4acf35", null ],
     [ "ancestorTempoChanged", "class_process_1_1_process_model.html#ac997fd6fc747c01f9266add182eb3f74", null ],
     [ "benchmark", "class_process_1_1_process_model.html#ab56c4262a67fec228d9d5ac271da6a75", null ],
+    [ "builtinPresets", "class_process_1_1_process_model.html#a2259e9f8d397c3485d3e165b6b988738", null ],
     [ "category", "class_process_1_1_process_model.html#a43a41a4f2cc17bec8e66ec4b634ea220", null ],
     [ "contentDuration", "class_process_1_1_process_model.html#afbca0c06f06584b2c3a02150fde6b4a8", null ],
     [ "controlAdded", "class_process_1_1_process_model.html#abd7405544056186d5421de3773159ded", null ],

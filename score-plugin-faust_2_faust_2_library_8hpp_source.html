@@ -145,17 +145,17 @@ $(document).ready(function(){initNavTree('score-plugin-faust_2_faust_2_library_8
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> addPath(std::string_view path)<span class="keyword"> override</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    QFileInfo file{QString::fromUtf8(path.data(), path.length())};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span> (file.fileName() != <span class="stringliteral">&quot;layout.dsp&quot;</span>)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="structscore_1_1_path_info.html">score::PathInfo</a> file{path};</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span> (file.fileName != <span class="stringliteral">&quot;layout.dsp&quot;</span>)</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      registerDSP(file);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  }</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> registerDSP(<span class="keyword">const</span> QFileInfo&amp; file)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> registerDSP(<span class="keyword">const</span> <a class="code" href="structscore_1_1_path_info.html">score::PathInfo</a>&amp; file)</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="struct_library_1_1_process_data.html">Library::ProcessData</a> pdata;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    pdata.prettyName = file.completeBaseName();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    pdata.prettyName = QString::fromUtf8(file.completeBaseName.data(), file.completeBaseName.size());</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    pdata.key = <a class="code" href="struct_metadata.html">Metadata&lt;ConcreteKey_k, FaustEffectModel&gt;::get</a>();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    pdata.customData = [&amp;] { <span class="keywordflow">return</span> file.absoluteFilePath(); }();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    pdata.customData = QString::fromUtf8(file.absoluteFilePath.data(), file.absoluteFilePath.size());</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    pdata.author = <span class="stringliteral">&quot;Faust standard library&quot;</span>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
@@ -221,6 +221,7 @@ $(document).ready(function(){initNavTree('score-plugin-faust_2_faust_2_library_8
 <div class="ttc" id="aclass_process_1_1_process_drop_handler_html"><div class="ttname"><a href="class_process_1_1_process_drop_handler.html">Process::ProcessDropHandler</a></div><div class="ttdef"><b>Definition:</b> ProcessDropHandler.hpp:22</div></div>
 <div class="ttc" id="astruct_library_1_1_process_data_html"><div class="ttname"><a href="struct_library_1_1_process_data.html">Library::ProcessData</a></div><div class="ttdef"><b>Definition:</b> ProcessesItemModel.hpp:31</div></div>
 <div class="ttc" id="aclass_faust_1_1_drop_handler_html"><div class="ttname"><a href="class_faust_1_1_drop_handler.html">Faust::DropHandler</a></div><div class="ttdef"><b>Definition:</b> score-plugin-faust/Faust/Library.hpp:87</div></div>
+<div class="ttc" id="astructscore_1_1_path_info_html"><div class="ttname"><a href="structscore_1_1_path_info.html">score::PathInfo</a></div><div class="ttdef"><b>Definition:</b> File.hpp:28</div></div>
 <div class="ttc" id="astruct_library_1_1_subcategories_html"><div class="ttname"><a href="struct_library_1_1_subcategories.html">Library::Subcategories</a></div><div class="ttdef"><b>Definition:</b> ProcessesItemModel.hpp:83</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

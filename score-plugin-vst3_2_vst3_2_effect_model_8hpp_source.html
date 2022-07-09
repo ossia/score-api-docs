@@ -220,14 +220,14 @@ $(document).ready(function(){initNavTree('score-plugin-vst3_2_vst3_2_effect_mode
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_process.html">Process</a></div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;{</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;QString EffectProcessFactory_T&lt;vst3::Model&gt;::customConstructionData() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;QString EffectProcessFactory_T&lt;vst3::Model&gt;::customConstructionData() const noexcept;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<a class="code" href="struct_process_1_1_descriptor.html">Process::Descriptor</a></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;EffectProcessFactory_T&lt;vst3::Model&gt;::descriptor(QString d) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;template &lt;&gt;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<a class="code" href="namespace_process.html">Process</a>::Descriptor</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;EffectProcessFactory_T&lt;vst3::Model&gt;::descriptor(QString d) const noexcept;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keyword">namespace </span>vst3</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;namespace vst3</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;{</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keyword">using</span> VSTEffectFactory = <a class="code" href="class_process_1_1_effect_process_factory___t.html">Process::EffectProcessFactory_T&lt;Model&gt;</a>;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
@@ -243,7 +243,6 @@ $(document).ready(function(){initNavTree('score-plugin-vst3_2_vst3_2_effect_mode
 <div class="ttc" id="aclassvst3_1_1_control_inlet_html"><div class="ttname"><a href="classvst3_1_1_control_inlet.html">vst3::ControlInlet</a></div><div class="ttdef"><b>Definition:</b> /Vst3/Control.hpp:14</div></div>
 <div class="ttc" id="aclass_process_1_1_port_html"><div class="ttname"><a href="class_process_1_1_port.html">Process::Port</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:117</div></div>
 <div class="ttc" id="astruct_process_1_1_preset_html"><div class="ttname"><a href="struct_process_1_1_preset.html">Process::Preset</a></div><div class="ttdef"><b>Definition:</b> Preset.hpp:35</div></div>
-<div class="ttc" id="astruct_process_1_1_descriptor_html"><div class="ttname"><a href="struct_process_1_1_descriptor.html">Process::Descriptor</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/ProcessMetadata.hpp:35</div></div>
 <div class="ttc" id="astructvst3_1_1_port_creation_visitor_html"><div class="ttname"><a href="structvst3_1_1_port_creation_visitor.html">vst3::PortCreationVisitor</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst3/Vst3/EffectModel.cpp:392</div></div>
 <div class="ttc" id="aclassvst3_1_1_model_html"><div class="ttname"><a href="classvst3_1_1_model.html">vst3::Model</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst3/Vst3/EffectModel.hpp:49</div></div>
 <!-- HTML footer for doxygen 1.8.8-->

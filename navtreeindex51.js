@@ -1,5 +1,8 @@
 var NAVTREEINDEX51 =
 {
+"score-plugin-audio_2_audio_2_settings_2_factory_8hpp_source.html":[13,0,439],
+"score-plugin-audio_2_audio_2_settings_2_model_8hpp_source.html":[13,0,770],
+"score-plugin-audio_2_audio_2_settings_2_view_8hpp_source.html":[13,0,1377],
 "score-plugin-automation_2_automation_2_commands_2_change_address_8hpp_source.html":[13,0,126],
 "score-plugin-automation_2_automation_2_local_tree_8hpp_source.html":[13,0,666],
 "score-plugin-avnd_2_crousti_2_executor_8hpp_source.html":[13,0,407],
@@ -246,8 +249,5 @@ var NAVTREEINDEX51 =
 "struct_analysis_1_1_spectral_diff_h_w_r_1_1_metadata.html":[12,0,0,15,0],
 "struct_analysis_1_1_spectrum.html":[12,0,0,16],
 "struct_analysis_1_1_spectrum.html#a16fee01b243a089af32ca710eede2e2a":[12,0,0,16,2],
-"struct_analysis_1_1_spectrum.html#a953fd4fae873b10faf1e6378bc7fdc84":[12,0,0,16,1],
-"struct_analysis_1_1_spectrum_1_1_metadata.html":[12,0,0,16,0],
-"struct_analysis_1_1_zero_crossing.html":[12,0,0,17],
-"struct_analysis_1_1_zero_crossing.html#a911e7c478431e8c274b9ee7e3dc3e792":[12,0,0,17,1]
+"struct_analysis_1_1_spectrum.html#a953fd4fae873b10faf1e6378bc7fdc84":[12,0,0,16,1]
 };

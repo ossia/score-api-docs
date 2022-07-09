@@ -143,41 +143,44 @@ $(document).ready(function(){initNavTree('score-plugin-ysfx_2_y_s_f_x_2_process_
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  std::shared_ptr&lt;ysfx_t&gt; fx;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  QString m_script;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_y_s_f_x_1_1_window.html">   50</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_y_s_f_x_1_1_window.html">Window</a> : <span class="keyword">public</span> QDialog</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="class_y_s_f_x_1_1_window.html">Window</a>(<span class="keyword">const</span> <a class="code" href="class_y_s_f_x_1_1_process_model.html">ProcessModel</a>&amp; e, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx, QWidget* parent);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  ~<a class="code" href="class_y_s_f_x_1_1_window.html">Window</a>();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_y_s_f_x_1_1_process_model.html">ProcessModel</a>&amp; m_model;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  std::shared_ptr&lt;ysfx_t&gt; fx;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  ysfx_gfx_config_t conf{};</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  QImage m_frame;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> resizeEvent(QResizeEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">void</span> closeEvent(QCloseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> mousePressEvent(QMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> mouseReleaseEvent(QMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> mouseMoveEvent(QMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> wheelEvent(QWheelEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> keyPressEvent(QKeyEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span> keyReleaseEvent(QKeyEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">void</span> paintEvent(QPaintEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">void</span> timerEvent(QTimerEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">using</span> <a class="code" href="class_process_1_1_effect_layer_factory___t.html">LayerFactory</a> = <a class="code" href="class_process_1_1_effect_layer_factory___t.html">Process::EffectLayerFactory_T</a>&lt;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="class_y_s_f_x_1_1_process_model.html">ProcessModel</a>,</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="class_process_1_1_default_effect_item.html">Process::DefaultEffectItem</a>,</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="class_y_s_f_x_1_1_window.html">Window</a>&gt;;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  std::vector&lt;Process::Preset&gt; builtinPresets() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> loadPreset(<span class="keyword">const</span> <a class="code" href="struct_process_1_1_preset.html">Process::Preset</a>&amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  ysfx_bank_t* m_bank{};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  QString m_script;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_y_s_f_x_1_1_window.html">   53</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_y_s_f_x_1_1_window.html">Window</a> : <span class="keyword">public</span> QDialog</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="class_y_s_f_x_1_1_window.html">Window</a>(<span class="keyword">const</span> <a class="code" href="class_y_s_f_x_1_1_process_model.html">ProcessModel</a>&amp; e, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx, QWidget* parent);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  ~<a class="code" href="class_y_s_f_x_1_1_window.html">Window</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_y_s_f_x_1_1_process_model.html">ProcessModel</a>&amp; m_model;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  std::shared_ptr&lt;ysfx_t&gt; fx;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  ysfx_gfx_config_t conf{};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  QImage m_frame;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> resizeEvent(QResizeEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> closeEvent(QCloseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> mousePressEvent(QMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> mouseReleaseEvent(QMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span> mouseMoveEvent(QMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">void</span> wheelEvent(QWheelEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">void</span> keyPressEvent(QKeyEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> keyReleaseEvent(QKeyEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> paintEvent(QPaintEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span> timerEvent(QTimerEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">using</span> <a class="code" href="class_process_1_1_effect_layer_factory___t.html">LayerFactory</a> = <a class="code" href="class_process_1_1_effect_layer_factory___t.html">Process::EffectLayerFactory_T</a>&lt;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="class_y_s_f_x_1_1_process_model.html">ProcessModel</a>,</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="class_process_1_1_default_effect_item.html">Process::DefaultEffectItem</a>,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="class_y_s_f_x_1_1_window.html">Window</a>&gt;;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_y_s_f_x_1_1_process_model_html"><div class="ttname"><a href="class_y_s_f_x_1_1_process_model.html">YSFX::ProcessModel</a></div><div class="ttdef"><b>Definition:</b> score-plugin-ysfx/YSFX/ProcessModel.hpp:18</div></div>
@@ -186,7 +189,8 @@ $(document).ready(function(){initNavTree('score-plugin-ysfx_2_y_s_f_x_2_process_
 <div class="ttc" id="aclass_process_1_1_default_effect_item_html"><div class="ttname"><a href="class_process_1_1_default_effect_item.html">Process::DefaultEffectItem</a></div><div class="ttdef"><b>Definition:</b> DefaultEffectItem.hpp:24</div></div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition:</b> Identifier.hpp:56</div></div>
 <div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Process.hpp:54</div></div>
-<div class="ttc" id="aclass_y_s_f_x_1_1_window_html"><div class="ttname"><a href="class_y_s_f_x_1_1_window.html">YSFX::Window</a></div><div class="ttdef"><b>Definition:</b> score-plugin-ysfx/YSFX/ProcessModel.hpp:50</div></div>
+<div class="ttc" id="astruct_process_1_1_preset_html"><div class="ttname"><a href="struct_process_1_1_preset.html">Process::Preset</a></div><div class="ttdef"><b>Definition:</b> Preset.hpp:35</div></div>
+<div class="ttc" id="aclass_y_s_f_x_1_1_window_html"><div class="ttname"><a href="class_y_s_f_x_1_1_window.html">YSFX::Window</a></div><div class="ttdef"><b>Definition:</b> score-plugin-ysfx/YSFX/ProcessModel.hpp:53</div></div>
 <div class="ttc" id="aclass_process_1_1_effect_layer_factory___t_html"><div class="ttname"><a href="class_process_1_1_effect_layer_factory___t.html">Process::EffectLayerFactory_T</a></div><div class="ttdef"><b>Definition:</b> EffectFactory.hpp:68</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

@@ -1,5 +1,7 @@
 var NAVTREEINDEX41 =
 {
+"class_zeroconf_browser.html#a1c18faff4960966cb647648e6a34707a":[12,0,539,4],
+"class_zeroconf_browser.html#a72259e2a35487d7724350d71e6ca27ac":[12,0,539,1],
 "class_zeroconf_browser.html#a85f20085916d5ad44ab65fda8f416831":[12,0,539,5],
 "class_zeroconf_browser.html#a9d7076fb9ca497e0d0e516b06c68e9e1":[12,0,539,3],
 "class_zeroconf_browser.html#ac243222561847cb0265029b0c7183c23":[12,0,539,2],
@@ -117,10 +119,10 @@ var NAVTREEINDEX41 =
 "classscore_1_1_action_manager.html":[12,0,46,12],
 "classscore_1_1_action_manager.html#a4fc6032382d50fe4217f6ad4b7503377":[12,0,46,12,15],
 "classscore_1_1_action_manager.html#a552f6e078a05b767fddf7801c3e360f9":[12,0,46,12,16],
-"classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,46,12,7],
 "classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,46,12,4],
 "classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,46,12,5],
 "classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,46,12,6],
+"classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,46,12,7],
 "classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,46,12,8],
 "classscore_1_1_action_manager.html#a61deeb8b2ebd9442678d3573e00a2bf6":[12,0,46,12,20],
 "classscore_1_1_action_manager.html#a63a3b17b4bd8968eb3bec2c6712ad90b":[12,0,46,12,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX41 =
 "classscore_1_1_command_factory___qt_interface.html#a633984ee163924776501af406940b457":[12,0,46,40,1],
 "classscore_1_1_command_factory___qt_interface.html#aef9052fe49f611d3c687e61a2b7c07ef":[12,0,46,40,0],
 "classscore_1_1_command_stack.html":[12,0,46,43],
-"classscore_1_1_command_stack.html#a195ae2f8e2575f2d00496a650b9804cb":[12,0,46,43,12],
-"classscore_1_1_command_stack.html#a1a0f5fe49597aa5ed16030991a99df40":[12,0,46,43,34],
-"classscore_1_1_command_stack.html#a1cc9909bbf0a1721a80849791638ccc8":[12,0,46,43,16]
+"classscore_1_1_command_stack.html#a195ae2f8e2575f2d00496a650b9804cb":[12,0,46,43,12]
 };

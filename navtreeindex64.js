@@ -1,5 +1,8 @@
 var NAVTREEINDEX64 =
 {
+"struct_scenario_1_1_full_slot.html#aeb981f2030ac2353f248b7f59227dcae":[12,0,45,108,0],
+"struct_scenario_1_1_interval_pixmaps.html":[12,0,45,127],
+"struct_scenario_1_1_interval_pixmaps.html#a1ad3578ed6537c23cc1509306cef7b39":[12,0,45,127,6],
 "struct_scenario_1_1_interval_pixmaps.html#a25b92700249773a45a407846b5959f33":[12,0,45,127,3],
 "struct_scenario_1_1_interval_pixmaps.html#a37515718c9713ac036c6daa1a96b7bb4":[12,0,45,127,4],
 "struct_scenario_1_1_interval_pixmaps.html#a38ff541ed57b9bd5b7644541f6b58e42":[12,0,45,127,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX64 =
 "struct_scenario_1_1get__curve__domain.html":[12,0,45,112],
 "struct_scenario_1_1get__curve__domain.html#a050c712a369bc5b096670e8e84385e3f":[12,0,45,112,8],
 "struct_scenario_1_1get__curve__domain.html#a2521112216b9ffdf2872f12cfa56908b":[12,0,45,112,4],
-"struct_scenario_1_1get__curve__domain.html#a4d6420d86b3548d151db8aa6b3505f75":[12,0,45,112,5],
-"struct_scenario_1_1get__curve__domain.html#a67e16b522aba5d0f58f1c1b0611c2584":[12,0,45,112,7],
-"struct_scenario_1_1get__curve__domain.html#a7cb9457376050e58bada9731ea5069d1":[12,0,45,112,0],
-"struct_scenario_1_1get__curve__domain.html#a92924bcea05798b8ce0077478c4ab486":[12,0,45,112,1]
+"struct_scenario_1_1get__curve__domain.html#a4d6420d86b3548d151db8aa6b3505f75":[12,0,45,112,5]
 };

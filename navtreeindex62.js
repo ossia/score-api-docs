@@ -1,5 +1,8 @@
 var NAVTREEINDEX62 =
 {
+"struct_q_meta_type_id_3_01_j_s_1_1_audio_inlet_01_5_01_4.html#a933a8e15ea9b78f227820db16be4d76ba56c9800272bd8ba49ceeb8372b965a99":[12,0,245,0],
+"struct_q_meta_type_id_3_01_j_s_1_1_audio_outlet_01_5_01_4.html":[12,0,246],
+"struct_q_meta_type_id_3_01_j_s_1_1_audio_outlet_01_5_01_4.html#ae8c36e89b5e6fbb31258f1bb7c370e07a5cee577d92176812066ddb2f47081af5":[12,0,246,0],
 "struct_q_meta_type_id_3_01_j_s_1_1_midi_inlet_01_5_01_4.html":[12,0,247],
 "struct_q_meta_type_id_3_01_j_s_1_1_midi_inlet_01_5_01_4.html#ae1cdd85534384d3178a58546dcc429a4a4f009d71e68398c6fc7b6018f5bc333b":[12,0,247,0],
 "struct_q_meta_type_id_3_01_j_s_1_1_midi_message_01_4.html":[12,0,248],
@@ -246,8 +249,5 @@ var NAVTREEINDEX62 =
 "struct_recording_1_1_record_data.html#abe5600104b054ef1a5eec8d9c72fe5f0":[12,0,41,11,3],
 "struct_recording_1_1_record_data.html#ac20f1fd3d8a43c6fd52b576bbb27874e":[12,0,41,11,0],
 "struct_recording_1_1_record_data.html#aee0eaa11154a2a39d49c948412baf643":[12,0,41,11,4],
-"struct_recording_1_1_record_provider.html":[12,0,41,15],
-"struct_recording_1_1_record_provider.html#a3905de9061fea1749ed3bf74b3eb1fae":[12,0,41,15,1],
-"struct_recording_1_1_record_provider.html#a6d2f967e5e7f5c59ce65d4375353c709":[12,0,41,15,0],
-"struct_recording_1_1_record_provider.html#aec6b0da991f520726c5e8b05a7ffc510":[12,0,41,15,2]
+"struct_recording_1_1_record_provider.html":[12,0,41,15]
 };
