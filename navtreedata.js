@@ -177,11 +177,11 @@ var NAVTREEINDEX =
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_model_3_01_info_00_01_control_1_1is__control_01_4_01_4.html",
 "structaudio__channels__attr.html#a3ab256c1b414e037a4b9f0981cf588dc",
 "structossia_1_1node__graph__process.html#a9803653ca4f5ef5d4772499b521840ff",
-"structscore_1_1_flicks_spin_box.html#a31bb0762ce691167d3e89576d489ef01",
-"structscore_1_1_string_constants.html#a1573de85c679e65471fee997b3f9ab98",
-"structscore_1_1gfx_1_1_h_a_p_m_decoder.html",
-"structscore_1_1gfx_1_1_y_u_y_v422_decoder.html#a01290c71db7ca54c627f91984588d399",
-"structvst3_1_1_vst3_data_stream.html#a1be2c680233ff94c6c9c80b9877e873e"
+"structscore_1_1_event_visitor.html#a92383937fce4208ec702d25583e83642",
+"structscore_1_1_string_constants.html#a0d9e63b921aca4e00bc1ffc8c1520f3c",
+"structscore_1_1gfx_1_1_h_a_p_default_decoder.html",
+"structscore_1_1gfx_1_1_y_u_v422_decoder.html#a5ed6c4f94e3892453c7b17c74e87f87a",
+"structvst3_1_1_v_s_t_control_port_item.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

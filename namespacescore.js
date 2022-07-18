@@ -98,6 +98,7 @@ var namespacescore =
     [ "DocumentView", "classscore_1_1_document_view.html", "classscore_1_1_document_view" ],
     [ "DoubleSlider", "classscore_1_1_double_slider.html", "classscore_1_1_double_slider" ],
     [ "DoubleSpinboxWithEnter", "structscore_1_1_double_spinbox_with_enter.html", null ],
+    [ "DragOverToolButton", "structscore_1_1_drag_over_tool_button.html", "structscore_1_1_drag_over_tool_button" ],
     [ "dynarray_impl", "classscore_1_1dynarray__impl.html", "classscore_1_1dynarray__impl" ],
     [ "dynvector_impl", "classscore_1_1dynvector__impl.html", "classscore_1_1dynvector__impl" ],
     [ "EmptyItem", "classscore_1_1_empty_item.html", "classscore_1_1_empty_item" ],
