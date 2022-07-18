@@ -1,5 +1,7 @@
 var NAVTREEINDEX50 =
 {
+"classvst_1_1_g_u_i_application_plugin.html#a38429b08aad71a1c4b6cfdbf68162194":[12,0,55,9,1],
+"classvst_1_1_g_u_i_application_plugin.html#af7b8de2c53e433cbe00a51159f34c7e7":[12,0,55,9,0],
 "classvst_1_1_graphics_slider.html":[12,0,55,8],
 "classvst_1_1_graphics_slider.html#a04946e8d73edfeceaa94e360d692ce31":[12,0,55,8,1],
 "classvst_1_1_graphics_slider.html#a0c0fc64fbd99a6c1b7373982c29f30fc":[12,0,55,8,8],
@@ -174,15 +176,15 @@ var NAVTREEINDEX50 =
 "namespace_gfx.html":[11,0,5],
 "namespace_inspector.html":[11,0,6],
 "namespace_inspector.html":[12,0,19],
-"namespace_local_tree.html":[11,0,7],
 "namespace_local_tree.html":[12,0,26],
+"namespace_local_tree.html":[11,0,7],
 "namespace_plugin_loader.html":[11,0,8],
 "namespace_process.html":[11,0,9],
 "namespace_process.html":[12,0,39],
 "namespace_scenario.html":[11,0,10],
 "namespace_scenario.html":[12,0,45],
-"namespace_state.html":[11,0,12],
 "namespace_state.html":[12,0,50],
+"namespace_state.html":[11,0,12],
 "namespacemembers.html":[11,1,0],
 "namespacemembers_enum.html":[11,1,3],
 "namespacemembers_eval.html":[11,1,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX50 =
 "score-lib-process_2_process_2_dataflow_2_port_item_8hpp_source.html":[13,0,907],
 "score-lib-process_2_process_2_instantiations_8hpp_source.html":[13,0,552],
 "score-lib-process_2_process_2_process_8hpp_source.html":[13,0,933],
-"score-lib-process_2_process_2_process_factory_8hpp_source.html":[13,0,951],
-"score-lib-process_2_process_2_process_metadata_8hpp_source.html":[13,0,958],
-"score-lib-state_2_tests_2_utils_8hpp_source.html":[13,0,1352]
+"score-lib-process_2_process_2_process_factory_8hpp_source.html":[13,0,951]
 };

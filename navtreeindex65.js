@@ -1,5 +1,7 @@
 var NAVTREEINDEX65 =
 {
+"struct_scenario_1_1get__curve__domain.html#a050c712a369bc5b096670e8e84385e3f":[12,0,45,112,8],
+"struct_scenario_1_1get__curve__domain.html#a2521112216b9ffdf2872f12cfa56908b":[12,0,45,112,4],
 "struct_scenario_1_1get__curve__domain.html#a4d6420d86b3548d151db8aa6b3505f75":[12,0,45,112,5],
 "struct_scenario_1_1get__curve__domain.html#a67e16b522aba5d0f58f1c1b0611c2584":[12,0,45,112,7],
 "struct_scenario_1_1get__curve__domain.html#a7cb9457376050e58bada9731ea5069d1":[12,0,45,112,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX65 =
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_id_3_01_t_01_4_01_4.html":[12,0,463],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_id_3_01_t_01_4_01_4.html#a46e65e694ab43e40c6c72ed2ba262901":[12,0,463,0],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_id_container_3_01_t_00_01_u_00_01_v_01_4_01_4.html":[12,0,464],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_identified_object_3_01_t_01_4_01_4.html":[12,0,465],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_model_3_01_info_00_01_control_1_1is__control_01_4_01_4.html":[12,0,466],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_model_3_01_info_00_01_control_1_1is__control_01_4_01_4.html#ab991fdc5e4c3259c48446220f7f0c535":[12,0,466,0]
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_identified_object_3_01_t_01_4_01_4.html":[12,0,465]
 };

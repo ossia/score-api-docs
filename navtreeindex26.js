@@ -1,12 +1,14 @@
 var NAVTREEINDEX26 =
 {
 "class_process_1_1_process_multi_script_edit_dialog.html#a2ea14204cee711a5e929a01db9b53d85":[12,0,39,80,1],
-"class_process_1_1_process_multi_script_edit_dialog.html#a3d9f206b3c13f68dfd77582f3b199875":[12,0,39,80,2],
-"class_process_1_1_process_multi_script_edit_dialog.html#a85217463086f7905b5012971fdbc34bd":[12,0,39,80,3],
+"class_process_1_1_process_multi_script_edit_dialog.html#a3d9f206b3c13f68dfd77582f3b199875":[12,0,39,80,3],
+"class_process_1_1_process_multi_script_edit_dialog.html#a85217463086f7905b5012971fdbc34bd":[12,0,39,80,4],
+"class_process_1_1_process_multi_script_edit_dialog.html#ae0cef4a2158e075eec0add5cb37372ab":[12,0,39,80,2],
 "class_process_1_1_process_script_edit_dialog.html":[12,0,39,81],
-"class_process_1_1_process_script_edit_dialog.html#a67fcd57fd42bcb34db9032048c79f2a7":[12,0,39,81,2],
+"class_process_1_1_process_script_edit_dialog.html#a00c68096c9a28d4942ada8587ada0e20":[12,0,39,81,1],
+"class_process_1_1_process_script_edit_dialog.html#a67fcd57fd42bcb34db9032048c79f2a7":[12,0,39,81,3],
 "class_process_1_1_process_script_edit_dialog.html#a78301f0d0efb740d5835dc62def4873d":[12,0,39,81,0],
-"class_process_1_1_process_script_edit_dialog.html#aab4a3232346b790a2bff046a01a8cc82":[12,0,39,81,1],
+"class_process_1_1_process_script_edit_dialog.html#aab4a3232346b790a2bff046a01a8cc82":[12,0,39,81,2],
 "class_process_1_1_script_dialog.html":[12,0,39,83],
 "class_process_1_1_script_dialog.html#a46805dca1d8bcceff11901b2d5b03146":[12,0,39,83,3],
 "class_process_1_1_script_dialog.html#a4e5f4703a960457675c61d2221005346":[12,0,39,83,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX26 =
 "class_protocols_1_1_o_s_c_protocol_settings_widget.html#a61dcc9cc127037e3a8613df5eec448ac":[12,0,40,50,2],
 "class_protocols_1_1_o_s_c_protocol_settings_widget.html#a90be2fc676b8eb59a9ed7df3c3008e31":[12,0,40,50,3],
 "class_protocols_1_1_o_s_c_protocol_settings_widget.html#adb792e86a7126151570297f77474b0b2":[12,0,40,50,0],
-"class_protocols_1_1_o_s_c_query_device.html":[12,0,40,51],
-"class_protocols_1_1_o_s_c_query_device.html#a1b1f5c2e8b1a038137a21ad059d11b7a":[12,0,40,51,4],
-"class_protocols_1_1_o_s_c_query_device.html#a4423bced84a6ed4e54bfd13361b080bc":[12,0,40,51,3]
+"class_protocols_1_1_o_s_c_query_device.html":[12,0,40,51]
 };

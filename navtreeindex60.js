@@ -1,5 +1,7 @@
 var NAVTREEINDEX60 =
 {
+"struct_nodes_1_1_rate_limiter_1_1_node.html":[12,0,33,26,0],
+"struct_nodes_1_1_rate_limiter_1_1_node.html#a7f4b4cc558b3ac238f92efea34d89d94":[12,0,33,26,0,3],
 "struct_nodes_1_1_rate_limiter_1_1_node_1_1_metadata.html":[12,0,33,26,0,0],
 "struct_nodes_1_1_rate_limiter_1_1_node_1_1_rate_limiter.html":[12,0,33,26,0,1],
 "struct_nodes_1_1_value_filter_1_1_node.html":[12,0,33,27,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX60 =
 "struct_process_1_1_process_identifier.html#a7f73f03e7a349a1a2b103ad9a71cc28c":[12,0,39,77,2],
 "struct_process_1_1_process_identifier.html#a854a9823a7b27246dc7c23e1a655e2a0":[12,0,39,77,4],
 "struct_process_1_1_process_identifier.html#af892a2e223c3030c1216863db6e2fcd3":[12,0,39,77,3],
-"struct_process_1_1_process_state_data.html":[12,0,39,82],
-"struct_process_1_1_process_state_data.html#a438743446d0d3abfbab7f9e378835bbc":[12,0,39,82,1],
-"struct_process_1_1_process_state_data.html#ac67cf43ab0f0fa3ad3ada5545069b394":[12,0,39,82,0]
+"struct_process_1_1_process_state_data.html":[12,0,39,82]
 };
