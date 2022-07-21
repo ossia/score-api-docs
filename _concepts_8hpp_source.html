@@ -105,24 +105,24 @@ $(document).ready(function(){initNavTree('_concepts_8hpp_source.html',''); initR
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;score/plugins/UuidKey.hpp&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;ossia/dataflow/audio_port.hpp&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;ossia/dataflow/port.hpp&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;ossia/dataflow/safe_nodes/tick_policies.hpp&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;boost/container/vector.hpp&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;avnd/common/concepts_polyfill.hpp&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;avnd/common/struct_reflection.hpp&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;avnd/concepts/audio_port.hpp&gt;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;avnd/concepts/channels.hpp&gt;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;avnd/concepts/gfx.hpp&gt;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;avnd/concepts/midi_port.hpp&gt;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;avnd/concepts/parameter.hpp&gt;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;avnd/wrappers/metadatas.hpp&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;avnd/wrappers/widgets.hpp&gt;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;gsl/span&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/span.hpp&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;ossia/dataflow/audio_port.hpp&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;ossia/dataflow/port.hpp&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;ossia/dataflow/safe_nodes/tick_policies.hpp&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;boost/container/vector.hpp&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;avnd/common/concepts_polyfill.hpp&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;avnd/common/struct_reflection.hpp&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;avnd/concepts/audio_port.hpp&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;avnd/concepts/channels.hpp&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;avnd/concepts/gfx.hpp&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;avnd/concepts/midi_port.hpp&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;avnd/concepts/parameter.hpp&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;avnd/wrappers/metadatas.hpp&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;avnd/wrappers/widgets.hpp&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;type_traits&gt;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define make_uuid(text) score::uuids::string_generator::compute((text))</span></div>
@@ -488,14 +488,14 @@ $(document).ready(function(){initNavTree('_concepts_8hpp_source.html',''); initR
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;  int64_t offset{};</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;  int64_t duration{};</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160; </div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  gsl::span&lt;const double&gt; operator[](std::size_t i) <span class="keyword">const</span> noexcept</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  tcb::span&lt;const double&gt; operator[](std::size_t i) <span class="keyword">const</span> noexcept</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;  {</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <span class="keyword">auto</span>&amp; chan = (*buffer)[i];</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    int64_t min_dur = std::min(int64_t(chan.size()) - offset, duration);</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="keywordflow">if</span> (min_dur &lt; 0)</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;      min_dur = 0;</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160; </div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="keywordflow">return</span> gsl::span&lt;const double&gt;{chan.data() + offset, std::size_t(min_dur)};</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="keywordflow">return</span> tcb::span&lt;const double&gt;{chan.data() + offset, std::size_t(min_dur)};</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;  }</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160; </div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;  std::size_t channels() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> buffer-&gt;size(); }</div>
@@ -514,14 +514,14 @@ $(document).ready(function(){initNavTree('_concepts_8hpp_source.html',''); initR
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;  int64_t offset{};</div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;  int64_t duration{};</div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160; </div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  gsl::span&lt;double&gt; operator[](std::size_t i) <span class="keyword">const</span> noexcept</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  tcb::span&lt;double&gt; operator[](std::size_t i) <span class="keyword">const</span> noexcept</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  {</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    <span class="keyword">auto</span>&amp; chan = (*buffer)[i];</div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    int64_t min_dur = std::min(int64_t(chan.size()) - offset, duration);</div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    <span class="keywordflow">if</span> (min_dur &lt; 0)</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;      min_dur = 0;</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160; </div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <span class="keywordflow">return</span> gsl::span&lt;double&gt;{chan.data() + offset, std::size_t(min_dur)};</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <span class="keywordflow">return</span> tcb::span&lt;double&gt;{chan.data() + offset, std::size_t(min_dur)};</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;  }</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160; </div>
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;  std::size_t channels() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> buffer-&gt;size(); }</div>
