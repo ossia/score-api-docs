@@ -162,51 +162,50 @@ $(document).ready(function(){initNavTree('_library_settings_8hpp_source.html',''
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_LIBRARY_EXPORT, QString, RootPath)</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> firstTimeLibraryDownload();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_library_1_1_settings_1_1_model.html">Model</a>, RootPath)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_library_1_1_settings_1_1_view.html">   70</a></span>&#160;class <a class="code" href="class_library_1_1_settings_1_1_view.html">View</a> : public <a class="code" href="namespacescore.html">score</a>::GlobalSettingsView</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  W_OBJECT(<a class="code" href="class_library_1_1_settings_1_1_view.html">View</a>)</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <a class="code" href="class_library_1_1_settings_1_1_view.html">View</a>();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  SETTINGS_UI_PATH_HPP(RootPath)</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  QWidget* getWidget() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="classscore_1_1_form_widget.html">score::FormWidget</a>* m_widg{};</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="class_library_1_1_settings_1_1_presenter.html">   83</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_library_1_1_settings_1_1_presenter.html">Presenter</a> : <span class="keyword">public</span> <a class="code" href="classscore_1_1_settings_delegate_presenter.html">score::GlobalSettingsPresenter</a></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keyword">using</span> <a class="code" href="class_library_1_1_settings_1_1_model.html">model_type</a> = <a class="code" href="class_library_1_1_settings_1_1_model.html">Model</a>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keyword">using</span> <a class="code" href="class_library_1_1_settings_1_1_view.html">view_type</a> = <a class="code" href="class_library_1_1_settings_1_1_view.html">View</a>;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <a class="code" href="class_library_1_1_settings_1_1_presenter.html">Presenter</a>(<a class="code" href="class_library_1_1_settings_1_1_model.html">Model</a>&amp;, <a class="code" href="class_library_1_1_settings_1_1_view.html">View</a>&amp;, QObject* parent);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  QString settingsName() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  QIcon settingsIcon() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;SCORE_DECLARE_SETTINGS_FACTORY(</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    Factory,</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="class_library_1_1_settings_1_1_model.html">Model</a>,</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="class_library_1_1_settings_1_1_presenter.html">Presenter</a>,</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="class_library_1_1_settings_1_1_view.html">View</a>,</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="stringliteral">&quot;d6966670-f69f-48d0-96f6-72a5e2190cbc&quot;</span>)</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_library_1_1_settings_1_1_model.html">Model</a>, RootPath)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_library_1_1_settings_1_1_view.html">   69</a></span>&#160;class <a class="code" href="class_library_1_1_settings_1_1_view.html">View</a> : public <a class="code" href="namespacescore.html">score</a>::GlobalSettingsView</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  W_OBJECT(<a class="code" href="class_library_1_1_settings_1_1_view.html">View</a>)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <a class="code" href="class_library_1_1_settings_1_1_view.html">View</a>();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  SETTINGS_UI_PATH_HPP(RootPath)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  QWidget* getWidget() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="classscore_1_1_form_widget.html">score::FormWidget</a>* m_widg{};</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="class_library_1_1_settings_1_1_presenter.html">   82</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_library_1_1_settings_1_1_presenter.html">Presenter</a> : <span class="keyword">public</span> <a class="code" href="classscore_1_1_settings_delegate_presenter.html">score::GlobalSettingsPresenter</a></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keyword">using</span> <a class="code" href="class_library_1_1_settings_1_1_model.html">model_type</a> = <a class="code" href="class_library_1_1_settings_1_1_model.html">Model</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keyword">using</span> <a class="code" href="class_library_1_1_settings_1_1_view.html">view_type</a> = <a class="code" href="class_library_1_1_settings_1_1_view.html">View</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="class_library_1_1_settings_1_1_presenter.html">Presenter</a>(<a class="code" href="class_library_1_1_settings_1_1_model.html">Model</a>&amp;, <a class="code" href="class_library_1_1_settings_1_1_view.html">View</a>&amp;, QObject* parent);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  QString settingsName() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  QIcon settingsIcon() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;SCORE_DECLARE_SETTINGS_FACTORY(</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    Factory,</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="class_library_1_1_settings_1_1_model.html">Model</a>,</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="class_library_1_1_settings_1_1_presenter.html">Presenter</a>,</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="class_library_1_1_settings_1_1_view.html">View</a>,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="stringliteral">&quot;d6966670-f69f-48d0-96f6-72a5e2190cbc&quot;</span>)</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassscore_1_1_form_widget_html"><div class="ttname"><a href="classscore_1_1_form_widget.html">score::FormWidget</a></div><div class="ttdef"><b>Definition:</b> FormWidget.hpp:10</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:146</div></div>
-<div class="ttc" id="aclass_library_1_1_settings_1_1_presenter_html"><div class="ttname"><a href="class_library_1_1_settings_1_1_presenter.html">Library::Settings::Presenter</a></div><div class="ttdef"><b>Definition:</b> LibrarySettings.hpp:83</div></div>
+<div class="ttc" id="aclass_library_1_1_settings_1_1_presenter_html"><div class="ttname"><a href="class_library_1_1_settings_1_1_presenter.html">Library::Settings::Presenter</a></div><div class="ttdef"><b>Definition:</b> LibrarySettings.hpp:82</div></div>
 <div class="ttc" id="astructscore_1_1_application_context_html"><div class="ttname"><a href="structscore_1_1_application_context.html">score::ApplicationContext</a></div><div class="ttdoc">Used to access all the application-wide state and structures.</div><div class="ttdef"><b>Definition:</b> ApplicationContext.hpp:23</div></div>
 <div class="ttc" id="aclass_library_1_1_settings_1_1_model_html"><div class="ttname"><a href="class_library_1_1_settings_1_1_model.html">Library::Settings::Model</a></div><div class="ttdef"><b>Definition:</b> LibrarySettings.hpp:45</div></div>
-<div class="ttc" id="aclass_library_1_1_settings_1_1_view_html"><div class="ttname"><a href="class_library_1_1_settings_1_1_view.html">Library::Settings::View</a></div><div class="ttdef"><b>Definition:</b> LibrarySettings.hpp:70</div></div>
+<div class="ttc" id="aclass_library_1_1_settings_1_1_view_html"><div class="ttname"><a href="class_library_1_1_settings_1_1_view.html">Library::Settings::View</a></div><div class="ttdef"><b>Definition:</b> LibrarySettings.hpp:69</div></div>
 <div class="ttc" id="aclassscore_1_1_settings_delegate_model_html"><div class="ttname"><a href="classscore_1_1_settings_delegate_model.html">score::SettingsDelegateModel</a></div><div class="ttdef"><b>Definition:</b> SettingsDelegateModel.hpp:15</div></div>
 <div class="ttc" id="aclassscore_1_1_settings_delegate_presenter_html"><div class="ttname"><a href="classscore_1_1_settings_delegate_presenter.html">score::SettingsDelegatePresenter</a></div><div class="ttdef"><b>Definition:</b> SettingsPresenter.hpp:14</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
