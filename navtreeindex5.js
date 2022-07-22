@@ -1,5 +1,7 @@
 var NAVTREEINDEX5 =
 {
+"_subtype_variant_8hpp_source.html":[13,0,1273],
+"_suil_8hpp_source.html":[13,0,1274],
 "_summary_inspector_widget_8hpp_source.html":[13,0,1275],
 "_swap_slots_8hpp_source.html":[13,0,1276],
 "_sync_8hpp_source.html":[13,0,1277],
@@ -247,7 +249,5 @@ var NAVTREEINDEX5 =
 "class_audio_1_1_settings_1_1_view.html#af6dc6bee3b47b3669f2014813dcc60e8":[12,0,1,0,2,2],
 "class_audio_inlet.html":[12,0,72],
 "class_audio_inlet.html#a3a2c70792a6421aaf7551843e7791479":[12,0,72,3],
-"class_audio_inlet.html#a633d76a24e376ce3cc9300a2c0af27ab":[12,0,72,1],
-"class_audio_inlet.html#aa83567e650f85670733f760a259066d9":[12,0,72,4],
-"class_audio_inlet.html#abb6ad0c5606bc623364353357a01895d":[12,0,72,5]
+"class_audio_inlet.html#a633d76a24e376ce3cc9300a2c0af27ab":[12,0,72,1]
 };

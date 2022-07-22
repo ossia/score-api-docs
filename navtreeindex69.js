@@ -1,5 +1,12 @@
 var NAVTREEINDEX69 =
 {
+"structscore_1_1_enable_action_if_document.html#a2cbc84ad12455c68f53c63ace18d551c":[12,0,46,88,1],
+"structscore_1_1_enable_action_if_document.html#a3de6278c77505f8d1ad13e67dbe807e3":[12,0,46,88,2],
+"structscore_1_1_enable_action_if_document.html#ac96656195303f9910ab053d8ad15406e":[12,0,46,88,0],
+"structscore_1_1_event_visitor.html":[12,0,46,97],
+"structscore_1_1_event_visitor.html#a2af6880e07b293278a2e21c7a4a154b3":[12,0,46,97,1],
+"structscore_1_1_event_visitor.html#a5d55db5f0d0d6fec0d9fd3b319cd676f":[12,0,46,97,4],
+"structscore_1_1_event_visitor.html#a8ecd2dc1e3b035ab68fdccb7edb0326b":[12,0,46,97,6],
 "structscore_1_1_event_visitor.html#a92383937fce4208ec702d25583e83642":[12,0,46,97,5],
 "structscore_1_1_event_visitor.html#ab50587023848d802bbd646ecd575e306":[12,0,46,97,3],
 "structscore_1_1_event_visitor.html#acf6e23d060aff643c6ee16a4d7fc06db":[12,0,46,97,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX69 =
 "structscore_1_1_static_property_command_3_01_faust_1_1_faust_effect_model_1_1p__text_01_4.html":[12,0,46,258],
 "structscore_1_1_static_property_command_3_01_gfx_1_1_filter_1_1_model_1_1p__program_01_4.html":[12,0,46,259],
 "structscore_1_1_static_property_command_3_01_j_s_1_1_process_model_1_1p__script_01_4.html":[12,0,46,262],
-"structscore_1_1_static_property_command_3_01_jit_1_1_bytebeat_model_1_1p__script_01_4.html":[12,0,46,260],
-"structscore_1_1_static_property_command_3_01_jit_1_1_jit_effect_model_1_1p__script_01_4.html":[12,0,46,261],
-"structscore_1_1_string_constants.html":[12,0,46,263],
-"structscore_1_1_string_constants.html#a0248522f7cf75c6aface73324f152665":[12,0,46,263,6],
-"structscore_1_1_string_constants.html#a027010f46526660e3cb948ea85b7cd71":[12,0,46,263,46],
-"structscore_1_1_string_constants.html#a089846db946aef0b7bc2437a297a4233":[12,0,46,263,75],
-"structscore_1_1_string_constants.html#a0aff8ac9fd4b5ed86853cb679d478a4d":[12,0,46,263,5],
-"structscore_1_1_string_constants.html#a0b770472b75e7025c17dcf3993cabdd9":[12,0,46,263,33]
+"structscore_1_1_static_property_command_3_01_jit_1_1_bytebeat_model_1_1p__script_01_4.html":[12,0,46,260]
 };

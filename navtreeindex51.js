@@ -1,5 +1,7 @@
 var NAVTREEINDEX51 =
 {
+"score-lib-process_2_process_2_process_8hpp_source.html":[13,0,933],
+"score-lib-process_2_process_2_process_factory_8hpp_source.html":[13,0,951],
 "score-lib-process_2_process_2_process_metadata_8hpp_source.html":[13,0,958],
 "score-lib-state_2_tests_2_utils_8hpp_source.html":[13,0,1352],
 "score-plugin-analysis_2_analysis_2_envelope_8hpp_source.html":[13,0,383],
@@ -247,7 +249,5 @@ var NAVTREEINDEX51 =
 "struct_analysis_1_1_spectral_diff.html#acba214d30f4546865cc2e278b3cc0183":[12,0,0,14,1],
 "struct_analysis_1_1_spectral_diff_1_1_metadata.html":[12,0,0,14,0],
 "struct_analysis_1_1_spectral_diff_h_w_r.html":[12,0,0,15],
-"struct_analysis_1_1_spectral_diff_h_w_r.html#a2b7895a7c79a8ebe0af2beee8736850a":[12,0,0,15,1],
-"struct_analysis_1_1_spectral_diff_h_w_r.html#a4ba984be25915c74eb67bb6fd2dc4bbc":[12,0,0,15,2],
-"struct_analysis_1_1_spectral_diff_h_w_r_1_1_metadata.html":[12,0,0,15,0]
+"struct_analysis_1_1_spectral_diff_h_w_r.html#a2b7895a7c79a8ebe0af2beee8736850a":[12,0,0,15,1]
 };

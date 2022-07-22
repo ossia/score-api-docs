@@ -1,5 +1,7 @@
 var NAVTREEINDEX52 =
 {
+"struct_analysis_1_1_spectral_diff_h_w_r.html#a4ba984be25915c74eb67bb6fd2dc4bbc":[12,0,0,15,2],
+"struct_analysis_1_1_spectral_diff_h_w_r_1_1_metadata.html":[12,0,0,15,0],
 "struct_analysis_1_1_spectrum.html":[12,0,0,16],
 "struct_analysis_1_1_spectrum.html#a16fee01b243a089af32ca710eede2e2a":[12,0,0,16,2],
 "struct_analysis_1_1_spectrum.html#a953fd4fae873b10faf1e6378bc7fdc84":[12,0,0,16,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX52 =
 "struct_control_1_1_line_edit.html#a5484079215c4cbcea34dfca93446f81f":[12,0,5,30,2],
 "struct_control_1_1_line_edit.html#a6bf14447b1bc0439e50dbbff2c334865":[12,0,5,30,7],
 "struct_control_1_1_line_edit.html#a84add055c2ea8b1cd474e70950f12bb3":[12,0,5,30,6],
-"struct_control_1_1_line_edit.html#aa37a2ab02c7dbe5152abffee6869abe1":[12,0,5,30,1],
-"struct_control_1_1_line_edit.html#aebeec8740ee25631dc2f8e66d3ab6610":[12,0,5,30,3],
-"struct_control_1_1_line_edit.html#aee73611eea60f7688c27dfcb0a140be9":[12,0,5,30,8]
+"struct_control_1_1_line_edit.html#aa37a2ab02c7dbe5152abffee6869abe1":[12,0,5,30,1]
 };

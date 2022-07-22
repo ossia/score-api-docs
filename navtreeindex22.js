@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"class_multi_ongoing_command_dispatcher.html#a0ebb143f6f1aaa0359a1c3f8e9fb49f6":[12,0,191,3],
+"class_multi_ongoing_command_dispatcher.html#a1d9ed8182576f0a7f87d06297da276d5":[12,0,191,1],
 "class_multi_ongoing_command_dispatcher.html#a5544ad9cacd230d9139cef52e45c8b06":[12,0,191,2],
 "class_multi_ongoing_command_dispatcher.html#a871e77c3e0971ed1a39fa95678b7d96c":[12,0,191,4],
 "class_multi_ongoing_command_dispatcher.html#aa1e2f50c7be8d3993623807c265e223d":[12,0,191,0],
@@ -98,9 +100,9 @@ var NAVTREEINDEX22 =
 "class_nodes_1_1_factor_oracle_1_1_factor_oracle.html#aeeb12b57203783a1ac4886f52f2ced0f":[12,0,33,10,0,2],
 "class_nodes_1_1_rate_limiter_1_1_node_1_1_state.html":[12,0,33,26,0,2],
 "class_nodes_1_1_rate_limiter_1_1_node_1_1_state.html#a42836d18e516ae032477b3b3a7e25d2f":[12,0,33,26,0,2,0],
-"class_nodes_1_1_value_filter_1_1_node_1_1_state.html":[12,0,33,27,0,2],
-"class_nodes_1_1_value_filter_1_1_node_1_1_state.html#a08e8b917a583fbc3f5521f4ec06aed76":[12,0,33,27,0,2,0],
-"class_nodes_1_1_value_filter_1_1_node_1_1_state.html#ab325dfb30455630efe9ffed911260ed6":[12,0,33,27,0,2,1],
+"class_nodes_1_1_value_filter_1_1_noise_state.html":[12,0,33,27,3],
+"class_nodes_1_1_value_filter_1_1_noise_state.html#a295fca82b092908fa0298edb62e05b0b":[12,0,33,27,3,0],
+"class_nodes_1_1_value_filter_1_1_noise_state.html#ad92e69d68b7ad49ed423609f70e82d62":[12,0,33,27,3,1],
 "class_object_identifier.html":[12,0,194],
 "class_object_identifier.html#a05a64cd53863e1c465037d3e6a0f6313":[12,0,194,3],
 "class_object_identifier.html#a3f0c78734a8bbfd1135e6f084c393f14":[12,0,194,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX22 =
 "class_patternist_1_1_process_model.html#a5f0a1fcb16fbe4eb9ac10f7a918a2fa0":[12,0,36,9,0],
 "class_patternist_1_1_process_model.html#a6534cb3c2d4e71a0eb6c2e5e39e39363":[12,0,36,9,16],
 "class_patternist_1_1_process_model.html#a685fcf13ad4872093bba0b4dee92e3f6":[12,0,36,9,7],
-"class_patternist_1_1_process_model.html#a6e04e4406f3e803f772af6764c025577":[12,0,36,9,10],
-"class_patternist_1_1_process_model.html#abe4f3b294d212a4a21968f93d19534dc":[12,0,36,9,12],
-"class_patternist_1_1_process_model.html#abf6ac26215d48db1b1f880a4e5d59846":[12,0,36,9,1]
+"class_patternist_1_1_process_model.html#a6e04e4406f3e803f772af6764c025577":[12,0,36,9,10]
 };

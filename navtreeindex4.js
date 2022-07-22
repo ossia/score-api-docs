@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"_q_graphics_int_slider_8hpp_source.html":[13,0,987],
+"_q_graphics_knob_8hpp_source.html":[13,0,988],
 "_q_graphics_log_knob_8hpp_source.html":[13,0,989],
 "_q_graphics_log_slider_8hpp_source.html":[13,0,990],
 "_q_graphics_multi_slider_8hpp_source.html":[13,0,991],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "_string_factory_key_serialization_8hpp_source.html":[13,0,1269],
 "_string_hash_8hpp_source.html":[13,0,1270],
 "_string_value_widget_8hpp_source.html":[13,0,1271],
-"_style_sheets_8hpp_source.html":[13,0,1272],
-"_subtype_variant_8hpp_source.html":[13,0,1273],
-"_suil_8hpp_source.html":[13,0,1274]
+"_style_sheets_8hpp_source.html":[13,0,1272]
 };

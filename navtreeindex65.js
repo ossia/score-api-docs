@@ -1,5 +1,12 @@
 var NAVTREEINDEX65 =
 {
+"struct_scenario_1_1_vertical_extent.html#a69112944c8e4e4da20d920ee143b3165":[12,0,45,320,1],
+"struct_scenario_1_1_vertical_extent.html#a8f2b3c8c07a1dfef90ffcea376e7eada":[12,0,45,320,4],
+"struct_scenario_1_1_vertical_extent.html#aa7090dc2bc87a1102e40a2341882af39":[12,0,45,320,8],
+"struct_scenario_1_1_vertical_extent.html#aafe527e836378e62b7fd7725ae706d3c":[12,0,45,320,5],
+"struct_scenario_1_1_vertical_extent.html#ad3ee386840b7c8b9e0d4d1b7cc08c5a1":[12,0,45,320,2],
+"struct_scenario_1_1_vertical_extent.html#ae1cac154aaf41ea551cf04ddfbc86812":[12,0,45,320,3],
+"struct_scenario_1_1get__curve__domain.html":[12,0,45,112],
 "struct_scenario_1_1get__curve__domain.html#a050c712a369bc5b096670e8e84385e3f":[12,0,45,112,8],
 "struct_scenario_1_1get__curve__domain.html#a2521112216b9ffdf2872f12cfa56908b":[12,0,45,112,4],
 "struct_scenario_1_1get__curve__domain.html#a4d6420d86b3548d151db8aa6b3505f75":[12,0,45,112,5],
@@ -242,12 +249,5 @@ var NAVTREEINDEX65 =
 "struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01_t_00_01_alloc_01_4_00_01std_1_1enab3605288434eb5962fb34730a4a06e332.html":[12,0,451],
 "struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01_t_00_01_alloc_01_4_00_01std_1_1enabe39984c95d0489c1ceb4104524c4ac76.html":[12,0,450],
 "struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01_t_01_5_00_01_alloc_01_4_01_4.html":[12,0,449],
-"struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01bool_01_4_01_4.html":[12,0,448],
-"struct_t_serializer_3_01_data_stream_00_01tsl_1_1hopscotch__map_3_01_t_00_01_u_01_4_01_4.html":[12,0,456],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[12,0,462],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html#a7582390e1429d056f975b2261f99d1dd":[12,0,462,0],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_id_3_01_t_01_4_01_4.html":[12,0,463],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_id_3_01_t_01_4_01_4.html#a46e65e694ab43e40c6c72ed2ba262901":[12,0,463,0],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_id_container_3_01_t_00_01_u_00_01_v_01_4_01_4.html":[12,0,464],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_identified_object_3_01_t_01_4_01_4.html":[12,0,465]
+"struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01bool_01_4_01_4.html":[12,0,448]
 };

@@ -606,7 +606,14 @@ var annotated_dup =
         [ "Node", "struct_nodes_1_1_rate_limiter_1_1_node.html", "struct_nodes_1_1_rate_limiter_1_1_node" ]
       ] ],
       [ "ValueFilter", null, [
-        [ "Node", "struct_nodes_1_1_value_filter_1_1_node.html", "struct_nodes_1_1_value_filter_1_1_node" ]
+        [ "v1", null, [
+          [ "Node", "struct_nodes_1_1_value_filter_1_1v1_1_1_node.html", "struct_nodes_1_1_value_filter_1_1v1_1_1_node" ]
+        ] ],
+        [ "v2", null, [
+          [ "Node", "struct_nodes_1_1_value_filter_1_1v2_1_1_node.html", "struct_nodes_1_1_value_filter_1_1v2_1_1_node" ]
+        ] ],
+        [ "NoiseFilter", "struct_nodes_1_1_value_filter_1_1_noise_filter.html", "struct_nodes_1_1_value_filter_1_1_noise_filter" ],
+        [ "NoiseState", "class_nodes_1_1_value_filter_1_1_noise_state.html", "class_nodes_1_1_value_filter_1_1_noise_state" ]
       ] ],
       [ "GenericMathMapping", "struct_nodes_1_1_generic_math_mapping.html", null ]
     ] ],
