@@ -106,95 +106,99 @@ $(document).ready(function(){initNavTree('score-plugin-vst_2_vst_2_application_p
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/hash_map.hpp&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QElapsedTimer&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QProcess&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;QWebSocketServer&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;verdigris&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>vst</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structvst_1_1_v_s_t_info.html">   16</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structvst_1_1_v_s_t_info.html">VSTInfo</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#if QT_CONFIG(process)</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;QProcess&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QWebSocketServer&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;verdigris&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>vst</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  QString path;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  QString prettyName;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  QString displayName;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  QString author;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  int32_t uniqueID{};</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  int32_t controls{};</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordtype">bool</span> isSynth{};</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">bool</span> isValid{};</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">class </span><a class="code" href="classvst_1_1_model.html">Model</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classvst_1_1_application_plugin.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvst_1_1_application_plugin.html">ApplicationPlugin</a></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    : <span class="keyword">public</span> QObject</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    , <span class="keyword">public</span> <a class="code" href="classscore_1_1_application_plugin.html">score::ApplicationPlugin</a></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  W_OBJECT(<a class="code" href="classvst_1_1_application_plugin.html">ApplicationPlugin</a>)</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="classvst_1_1_application_plugin.html">ApplicationPlugin</a>(<span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp; app);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classvst_1_1_application_plugin.html#a15cfa781b8b2423c4d4e24b9b6eac901">initialize</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  ~<a class="code" href="classvst_1_1_application_plugin.html">ApplicationPlugin</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span> rescanVSTs(<span class="keyword">const</span> QStringList&amp;);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">void</span> processIncomingMessage(<span class="keyword">const</span> QString&amp; txt);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> addInvalidVST(<span class="keyword">const</span> QString&amp; path);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">void</span> addVST(<span class="keyword">const</span> QString&amp; path, <span class="keyword">const</span> QJsonObject&amp; json);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="comment">// Used for idle timers</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> registerRunningVST(<a class="code" href="classvst_1_1_model.html">vst::Model</a>*);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> unregisterRunningVST(<a class="code" href="classvst_1_1_model.html">vst::Model</a>*);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> scanVSTsEvent();</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structvst_1_1_v_s_t_info.html">   18</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structvst_1_1_v_s_t_info.html">VSTInfo</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  QString path;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  QString prettyName;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  QString displayName;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  QString author;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  int32_t uniqueID{};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  int32_t controls{};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">bool</span> isSynth{};</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordtype">bool</span> isValid{};</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">class </span><a class="code" href="classvst_1_1_model.html">Model</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classvst_1_1_application_plugin.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvst_1_1_application_plugin.html">ApplicationPlugin</a></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    , <span class="keyword">public</span> <a class="code" href="classscore_1_1_application_plugin.html">score::ApplicationPlugin</a></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  W_OBJECT(<a class="code" href="classvst_1_1_application_plugin.html">ApplicationPlugin</a>)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="classvst_1_1_application_plugin.html">ApplicationPlugin</a>(<span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp; app);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classvst_1_1_application_plugin.html#a15cfa781b8b2423c4d4e24b9b6eac901">initialize</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  ~<a class="code" href="classvst_1_1_application_plugin.html">ApplicationPlugin</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> rescanVSTs(<span class="keyword">const</span> QStringList&amp;);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">void</span> processIncomingMessage(<span class="keyword">const</span> QString&amp; txt);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> addInvalidVST(<span class="keyword">const</span> QString&amp; path);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> addVST(<span class="keyword">const</span> QString&amp; path, <span class="keyword">const</span> QJsonObject&amp; json);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="comment">// Used for idle timers</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">void</span> registerRunningVST(<a class="code" href="classvst_1_1_model.html">vst::Model</a>*);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> unregisterRunningVST(<a class="code" href="classvst_1_1_model.html">vst::Model</a>*);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> vstChanged() W_SIGNAL(vstChanged)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> scanVSTsEvent();</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  std::vector&lt;VSTInfo&gt; vst_infos;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  ossia::fast_hash_map&lt;int32_t, vst::Module*&gt; vst_modules;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">const</span> std::thread::id m_tid{std::this_thread::get_id()};</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">auto</span> mainThreadId() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> m_tid; }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="structvst_1_1_application_plugin_1_1_scanning_process.html">   58</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structvst_1_1_application_plugin_1_1_scanning_process.html">ScanningProcess</a></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    QString path;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    std::unique_ptr&lt;QProcess&gt; process;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">bool</span> scanning{};</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    QElapsedTimer timer;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  };</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  std::vector&lt;ScanningProcess&gt; m_processes;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  std::vector&lt;vst::Model*&gt; m_runningVSTs;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> vstChanged() W_SIGNAL(vstChanged)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  std::vector&lt;VSTInfo&gt; vst_infos;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  ossia::fast_hash_map&lt;int32_t, vst::Module*&gt; vst_modules;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">const</span> std::thread::id m_tid{std::this_thread::get_id()};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">auto</span> mainThreadId() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> m_tid; }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  std::vector&lt;vst::Model*&gt; m_runningVSTs;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#if QT_CONFIG(process)</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="structvst_1_1_application_plugin_1_1_scanning_process.html">   62</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structvst_1_1_application_plugin_1_1_scanning_process.html">ScanningProcess</a></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    QString path;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    std::unique_ptr&lt;QProcess&gt; process;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">bool</span> scanning{};</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    QElapsedTimer timer;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  };</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  QWebSocketServer m_wsServer;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  std::vector&lt;ScanningProcess&gt; m_processes;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> timerEvent(QTimerEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classvst_1_1_g_u_i_application_plugin.html">   76</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvst_1_1_g_u_i_application_plugin.html">GUIApplicationPlugin</a></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    : <span class="keyword">public</span> QObject</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    , <span class="keyword">public</span> <a class="code" href="classscore_1_1_g_u_i_application_plugin.html">score::GUIApplicationPlugin</a></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="classvst_1_1_g_u_i_application_plugin.html">GUIApplicationPlugin</a>(<span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; app);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classvst_1_1_g_u_i_application_plugin.html#a38429b08aad71a1c4b6cfdbf68162194">initialize</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  QWebSocketServer m_wsServer;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> timerEvent(QTimerEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classvst_1_1_g_u_i_application_plugin.html">   80</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvst_1_1_g_u_i_application_plugin.html">GUIApplicationPlugin</a></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    , <span class="keyword">public</span> <a class="code" href="classscore_1_1_g_u_i_application_plugin.html">score::GUIApplicationPlugin</a></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="classvst_1_1_g_u_i_application_plugin.html">GUIApplicationPlugin</a>(<span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; app);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classvst_1_1_g_u_i_application_plugin.html#a38429b08aad71a1c4b6cfdbf68162194">initialize</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassvst_1_1_application_plugin_html_a15cfa781b8b2423c4d4e24b9b6eac901"><div class="ttname"><a href="classvst_1_1_application_plugin.html#a15cfa781b8b2423c4d4e24b9b6eac901">vst::ApplicationPlugin::initialize</a></div><div class="ttdeci">void initialize() override</div><div class="ttdoc">initialize</div><div class="ttdef"><b>Definition:</b> score-plugin-vst/Vst/ApplicationPlugin.cpp:81</div></div>
+<div class="ttc" id="aclassvst_1_1_application_plugin_html_a15cfa781b8b2423c4d4e24b9b6eac901"><div class="ttname"><a href="classvst_1_1_application_plugin.html#a15cfa781b8b2423c4d4e24b9b6eac901">vst::ApplicationPlugin::initialize</a></div><div class="ttdeci">void initialize() override</div><div class="ttdoc">initialize</div><div class="ttdef"><b>Definition:</b> score-plugin-vst/Vst/ApplicationPlugin.cpp:85</div></div>
 <div class="ttc" id="aclassscore_1_1_application_plugin_html"><div class="ttname"><a href="classscore_1_1_application_plugin.html">score::ApplicationPlugin</a></div><div class="ttdef"><b>Definition:</b> GUIApplicationPlugin.hpp:30</div></div>
 <div class="ttc" id="astructscore_1_1_g_u_i_application_context_html"><div class="ttname"><a href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a></div><div class="ttdoc">Specializes ApplicationContext with the QMainWindow.</div><div class="ttdef"><b>Definition:</b> GUIApplicationContext.hpp:14</div></div>
-<div class="ttc" id="aclassvst_1_1_g_u_i_application_plugin_html"><div class="ttname"><a href="classvst_1_1_g_u_i_application_plugin.html">vst::GUIApplicationPlugin</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst/Vst/ApplicationPlugin.hpp:76</div></div>
+<div class="ttc" id="aclassvst_1_1_g_u_i_application_plugin_html"><div class="ttname"><a href="classvst_1_1_g_u_i_application_plugin.html">vst::GUIApplicationPlugin</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst/Vst/ApplicationPlugin.hpp:80</div></div>
 <div class="ttc" id="astructscore_1_1_application_context_html"><div class="ttname"><a href="structscore_1_1_application_context.html">score::ApplicationContext</a></div><div class="ttdoc">Used to access all the application-wide state and structures.</div><div class="ttdef"><b>Definition:</b> ApplicationContext.hpp:23</div></div>
-<div class="ttc" id="astructvst_1_1_v_s_t_info_html"><div class="ttname"><a href="structvst_1_1_v_s_t_info.html">vst::VSTInfo</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst/Vst/ApplicationPlugin.hpp:16</div></div>
-<div class="ttc" id="astructvst_1_1_application_plugin_1_1_scanning_process_html"><div class="ttname"><a href="structvst_1_1_application_plugin_1_1_scanning_process.html">vst::ApplicationPlugin::ScanningProcess</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst/Vst/ApplicationPlugin.hpp:58</div></div>
-<div class="ttc" id="aclassvst_1_1_application_plugin_html"><div class="ttname"><a href="classvst_1_1_application_plugin.html">vst::ApplicationPlugin</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst/Vst/ApplicationPlugin.hpp:29</div></div>
+<div class="ttc" id="astructvst_1_1_v_s_t_info_html"><div class="ttname"><a href="structvst_1_1_v_s_t_info.html">vst::VSTInfo</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst/Vst/ApplicationPlugin.hpp:18</div></div>
+<div class="ttc" id="astructvst_1_1_application_plugin_1_1_scanning_process_html"><div class="ttname"><a href="structvst_1_1_application_plugin_1_1_scanning_process.html">vst::ApplicationPlugin::ScanningProcess</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst/Vst/ApplicationPlugin.hpp:62</div></div>
+<div class="ttc" id="aclassvst_1_1_application_plugin_html"><div class="ttname"><a href="classvst_1_1_application_plugin.html">vst::ApplicationPlugin</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst/Vst/ApplicationPlugin.hpp:31</div></div>
 <div class="ttc" id="aclassvst_1_1_model_html"><div class="ttname"><a href="classvst_1_1_model.html">vst::Model</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst/Vst/EffectModel.hpp:77</div></div>
 <div class="ttc" id="aclassscore_1_1_g_u_i_application_plugin_html"><div class="ttname"><a href="classscore_1_1_g_u_i_application_plugin.html">score::GUIApplicationPlugin</a></div><div class="ttdoc">Used to extend the software with application-wide data.</div><div class="ttdef"><b>Definition:</b> GUIApplicationPlugin.hpp:88</div></div>
-<div class="ttc" id="aclassvst_1_1_g_u_i_application_plugin_html_a38429b08aad71a1c4b6cfdbf68162194"><div class="ttname"><a href="classvst_1_1_g_u_i_application_plugin.html#a38429b08aad71a1c4b6cfdbf68162194">vst::GUIApplicationPlugin::initialize</a></div><div class="ttdeci">void initialize() override</div><div class="ttdoc">initialize</div><div class="ttdef"><b>Definition:</b> score-plugin-vst/Vst/ApplicationPlugin.cpp:363</div></div>
+<div class="ttc" id="aclassvst_1_1_g_u_i_application_plugin_html_a38429b08aad71a1c4b6cfdbf68162194"><div class="ttname"><a href="classvst_1_1_g_u_i_application_plugin.html#a38429b08aad71a1c4b6cfdbf68162194">vst::GUIApplicationPlugin::initialize</a></div><div class="ttdeci">void initialize() override</div><div class="ttdoc">initialize</div><div class="ttdef"><b>Definition:</b> score-plugin-vst/Vst/ApplicationPlugin.cpp:373</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
