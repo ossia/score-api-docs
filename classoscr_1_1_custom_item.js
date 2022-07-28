@@ -1,5 +1,6 @@
 var classoscr_1_1_custom_item =
 [
+    [ "custom_mouse_event", "structoscr_1_1_custom_item_1_1custom__mouse__event.html", "structoscr_1_1_custom_item_1_1custom__mouse__event" ],
     [ "item_type", "classoscr_1_1_custom_item.html#a9c30511b3c7036664a0220dfe8d3631b", null ],
     [ "CustomItem", "classoscr_1_1_custom_item.html#ae1d9731103f314e6cee098a676bf9111", null ],
     [ "CustomItem", "classoscr_1_1_custom_item.html#a133b1631c4dc7c21ca6154952ea2520e", null ],

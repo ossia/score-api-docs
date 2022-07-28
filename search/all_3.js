@@ -214,13 +214,14 @@ var searchData=
   ['curvetraits_3c_20double_20_3e_407',['CurveTraits&lt; double &gt;',['../struct_engine_1_1score__to__ossia_1_1_curve_traits_3_01double_01_4.html',1,'Engine::score_to_ossia']]],
   ['curvetraits_3c_20float_20_3e_408',['CurveTraits&lt; float &gt;',['../struct_engine_1_1score__to__ossia_1_1_curve_traits_3_01float_01_4.html',1,'Engine::score_to_ossia']]],
   ['curvetraits_3c_20int_20_3e_409',['CurveTraits&lt; int &gt;',['../struct_engine_1_1score__to__ossia_1_1_curve_traits_3_01int_01_4.html',1,'Engine::score_to_ossia']]],
-  ['customactioncondition_410',['CustomActionCondition',['../structscore_1_1_custom_action_condition.html',1,'score']]],
-  ['customcontrolfactory_411',['CustomControlFactory',['../structoscr_1_1_custom_control_factory.html',1,'oscr']]],
-  ['customcontrolfactory_3c_20node_2c_20avnd_3a_3afield_5freflection_3c_20n_2c_20field_20_3e_20_3e_412',['CustomControlFactory&lt; Node, avnd::field_reflection&lt; N, Field &gt; &gt;',['../structoscr_1_1_custom_control_factory_3_01_node_00_01avnd_1_1field__reflection_3_01_n_00_01_field_01_4_01_4.html',1,'oscr']]],
-  ['customfloatcontrol_413',['CustomFloatControl',['../structoscr_1_1_custom_float_control.html',1,'oscr']]],
-  ['customitem_414',['CustomItem',['../classoscr_1_1_custom_item.html',1,'oscr']]],
-  ['customtextgraphicsknob_415',['CustomTextGraphicsKnob',['../classoscr_1_1_custom_text_graphics_knob.html',1,'oscr']]],
-  ['customtextgraphicsslider_416',['CustomTextGraphicsSlider',['../classoscr_1_1_custom_text_graphics_slider.html',1,'oscr']]],
-  ['customuisetup_417',['CustomUISetup',['../struct_control_1_1_custom_u_i_setup.html',1,'Control']]],
-  ['cycledetector_418',['CycleDetector',['../struct_scenario_1_1_cycle_detector.html',1,'Scenario']]]
+  ['custom_5fmouse_5fevent_410',['custom_mouse_event',['../structoscr_1_1_custom_item_1_1custom__mouse__event.html',1,'oscr::CustomItem']]],
+  ['customactioncondition_411',['CustomActionCondition',['../structscore_1_1_custom_action_condition.html',1,'score']]],
+  ['customcontrolfactory_412',['CustomControlFactory',['../structoscr_1_1_custom_control_factory.html',1,'oscr']]],
+  ['customcontrolfactory_3c_20node_2c_20avnd_3a_3afield_5freflection_3c_20n_2c_20field_20_3e_20_3e_413',['CustomControlFactory&lt; Node, avnd::field_reflection&lt; N, Field &gt; &gt;',['../structoscr_1_1_custom_control_factory_3_01_node_00_01avnd_1_1field__reflection_3_01_n_00_01_field_01_4_01_4.html',1,'oscr']]],
+  ['customfloatcontrol_414',['CustomFloatControl',['../structoscr_1_1_custom_float_control.html',1,'oscr']]],
+  ['customitem_415',['CustomItem',['../classoscr_1_1_custom_item.html',1,'oscr']]],
+  ['customtextgraphicsknob_416',['CustomTextGraphicsKnob',['../classoscr_1_1_custom_text_graphics_knob.html',1,'oscr']]],
+  ['customtextgraphicsslider_417',['CustomTextGraphicsSlider',['../classoscr_1_1_custom_text_graphics_slider.html',1,'oscr']]],
+  ['customuisetup_418',['CustomUISetup',['../struct_control_1_1_custom_u_i_setup.html',1,'Control']]],
+  ['cycledetector_419',['CycleDetector',['../struct_scenario_1_1_cycle_detector.html',1,'Scenario']]]
 ];

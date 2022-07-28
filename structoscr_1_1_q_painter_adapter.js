@@ -1,6 +1,6 @@
 var structoscr_1_1_q_painter_adapter =
 [
-    [ "arc_to", "structoscr_1_1_q_painter_adapter.html#aaf47051776762ee92e12cf4a8c7d415d", null ],
+    [ "arc_to", "structoscr_1_1_q_painter_adapter.html#ac033c05a8d7ee07d8b3d1945a582a843", null ],
     [ "begin_path", "structoscr_1_1_q_painter_adapter.html#a1686420bc18b620880070c01680f5836", null ],
     [ "close_path", "structoscr_1_1_q_painter_adapter.html#ae2e203887dc956f92005904b887d0196", null ],
     [ "cubic_to", "structoscr_1_1_q_painter_adapter.html#a4aa4cae761ad9469368020abd4375d38", null ],
