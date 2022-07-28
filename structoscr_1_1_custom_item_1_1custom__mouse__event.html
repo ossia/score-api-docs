@@ -97,6 +97,7 @@ $(document).ready(function(){initNavTree('structoscr_1_1_custom_item_1_1custom__
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="structoscr_1_1_custom_item_1_1custom__mouse__event-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">oscr::CustomItem&lt; Item, Control &gt;::custom_mouse_event Struct Reference</div>  </div>
@@ -105,12 +106,12 @@ $(document).ready(function(){initNavTree('structoscr_1_1_custom_item_1_1custom__
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a91322d140aa9b0da48b40c177d842011"><td class="memItemLeft" align="right" valign="top"><a id="a91322d140aa9b0da48b40c177d842011"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>button</b> { <b>no_button</b>, 
+<tr class="memitem:af343999edb57148976ca7bef2d626eb2"><td class="memItemLeft" align="right" valign="top"><a id="af343999edb57148976ca7bef2d626eb2"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>button</b> { <b>no_button</b>, 
 <b>left</b> = (1 &lt;&lt; 1), 
 <b>right</b> = (1 &lt;&lt; 2), 
 <b>middle</b> = (1 &lt;&lt; 3)
  }</td></tr>
-<tr class="separator:a91322d140aa9b0da48b40c177d842011"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:af343999edb57148976ca7bef2d626eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2de79040b087f8cad99eef06c1c7d9fe"><td class="memItemLeft" align="right" valign="top"><a id="a2de79040b087f8cad99eef06c1c7d9fe"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>modifier</b> { <br />
 &#160;&#160;<b>no_modifier</b>, 
 <b>shift</b> = (1 &lt;&lt; 1), 
@@ -130,6 +131,24 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>x</b></td></tr>
 <tr class="memitem:a5133b2babccddf7d046dbab5ad132b9c"><td class="memItemLeft" align="right" valign="top"><a id="a5133b2babccddf7d046dbab5ad132b9c"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>y</b></td></tr>
 <tr class="separator:a5133b2babccddf7d046dbab5ad132b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91322d140aa9b0da48b40c177d842011"><td class="memItemLeft" align="right" valign="top"><a id="a91322d140aa9b0da48b40c177d842011"></a>
+enum button&#160;</td><td class="memItemRight" valign="bottom"><b>button</b> = {}</td></tr>
+<tr class="separator:a91322d140aa9b0da48b40c177d842011"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5969c8aef0308d6333f6f7a4309cd3ca"><td class="memItemLeft" align="right" valign="top"><a id="a5969c8aef0308d6333f6f7a4309cd3ca"></a>
+enum button&#160;</td><td class="memItemRight" valign="bottom"><b>held_buttons</b> = {}</td></tr>
+<tr class="separator:a5969c8aef0308d6333f6f7a4309cd3ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bb6e67366b498e0e0f9705041a7923f"><td class="memItemLeft" align="right" valign="top"><a id="a8bb6e67366b498e0e0f9705041a7923f"></a>
+enum modifier&#160;</td><td class="memItemRight" valign="bottom"><b>modifiers</b> = {}</td></tr>
+<tr class="separator:a8bb6e67366b498e0e0f9705041a7923f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a2a5ed081a39e5ac4de97d7ba09d7a60f"><td class="memItemLeft" align="right" valign="top"><a id="a2a5ed081a39e5ac4de97d7ba09d7a60f"></a>
+button &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator|=</b> (button &amp;lhs, button rhs) noexcept</td></tr>
+<tr class="separator:a2a5ed081a39e5ac4de97d7ba09d7a60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab70e6427005759273a34491599b0d7e8"><td class="memItemLeft" align="right" valign="top"><a id="ab70e6427005759273a34491599b0d7e8"></a>
+modifier &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator|=</b> (modifier &amp;lhs, modifier rhs) noexcept</td></tr>
+<tr class="separator:ab70e6427005759273a34491599b0d7e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_painter_8hpp_source.html">Painter.hpp</a></li>
