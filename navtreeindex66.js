@@ -1,5 +1,14 @@
 var NAVTREEINDEX66 =
 {
+"struct_t_serializer_3_01_data_stream_00_01std_1_1pair_3_01_t_00_01_u_01_4_01_4.html":[12,0,445],
+"struct_t_serializer_3_01_data_stream_00_01std_1_1pair_3_01_t_00_01_u_01_4_01_4.html#a19bb4157ce772d90814448ae2010c6bd":[12,0,445,0],
+"struct_t_serializer_3_01_data_stream_00_01std_1_1shared__ptr_3_01_t_01_4_01_4.html":[12,0,446],
+"struct_t_serializer_3_01_data_stream_00_01std_1_1shared__ptr_3_01_t_01_4_01_4.html#a8c85331a7317f8c0dc65f4c398898235":[12,0,446,0],
+"struct_t_serializer_3_01_data_stream_00_01std_1_1unordered__map_3_01_t_00_01_u_01_4_01_4.html":[12,0,447],
+"struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01_t_00_01_alloc_01_4_00_01std_1_1enab3605288434eb5962fb34730a4a06e332.html":[12,0,451],
+"struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01_t_00_01_alloc_01_4_00_01std_1_1enabe39984c95d0489c1ceb4104524c4ac76.html":[12,0,450],
+"struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01_t_01_5_00_01_alloc_01_4_01_4.html":[12,0,449],
+"struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01bool_01_4_01_4.html":[12,0,448],
 "struct_t_serializer_3_01_data_stream_00_01tsl_1_1hopscotch__map_3_01_t_00_01_u_01_4_01_4.html":[12,0,456],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[12,0,462],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html#a7582390e1429d056f975b2261f99d1dd":[12,0,462,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX66 =
 "struct_widget_factory_1_1_line_edit.html":[12,0,57,11],
 "struct_widget_factory_1_1_line_edit_1_1_line_edit_item.html":[12,0,57,11,0],
 "struct_widget_factory_1_1_line_edit_1_1_line_edit_item.html#ae4e55808d7ffb4b40e41e8034986f889":[12,0,57,11,0,0],
-"struct_widget_factory_1_1_linear_normalizer.html":[12,0,57,10],
-"struct_widget_factory_1_1_log_normalizer.html":[12,0,57,12],
-"struct_widget_factory_1_1_multi_slider.html":[12,0,57,13],
-"struct_widget_factory_1_1_time_signature_validator.html":[12,0,57,14],
-"struct_widget_factory_1_1_time_signature_validator.html#aab475262fac0f425378e02aed8122074":[12,0,57,14,0],
-"struct_widget_factory_1_1_toggle.html":[12,0,57,15],
-"struct_widget_factory_1_1_updating_normalizer.html":[12,0,57,16],
-"struct_widget_factory_1_1_updating_normalizer.html#a4155ac8579d934eccc94d57fdaecd73b":[12,0,57,16,2],
-"struct_widget_factory_1_1_updating_normalizer.html#a6ece945900451306fa162608c95f0f2d":[12,0,57,16,3],
-"struct_widget_factory_1_1_updating_normalizer.html#ab8de89ebca368d6e6b6e772251b67dcd":[12,0,57,16,1]
+"struct_widget_factory_1_1_linear_normalizer.html":[12,0,57,10]
 };

@@ -1,5 +1,14 @@
 var NAVTREEINDEX69 =
 {
+"structscore_1_1_document_metadata.html#a19d2cb2e4242197e327a9913eb8204b8":[12,0,46,72,9],
+"structscore_1_1_document_metadata.html#a1ea482395562765109e21b491fd5d709":[12,0,46,72,13],
+"structscore_1_1_document_metadata.html#a22a428af396c67709d4dafd61f1ff447":[12,0,46,72,8],
+"structscore_1_1_document_metadata.html#a27954b53b65d6fc96cd75acfb5eb7c85":[12,0,46,72,18],
+"structscore_1_1_document_metadata.html#a52e746a60d8485c38ff1a1233955aa89":[12,0,46,72,17],
+"structscore_1_1_document_metadata.html#a56d9216c28f23b0732db1287769fb3f3":[12,0,46,72,4],
+"structscore_1_1_document_metadata.html#a7fe69d656c1aba02db283d14eaf44ad7":[12,0,46,72,6],
+"structscore_1_1_document_metadata.html#a80ad66303e2f329fc6294157e9d85f67":[12,0,46,72,14],
+"structscore_1_1_document_metadata.html#a85634c539c2fadb2fae05ceefa2f6ee9":[12,0,46,72,19],
 "structscore_1_1_document_metadata.html#a8c871f312ee1e1feff359cf853154310":[12,0,46,72,15],
 "structscore_1_1_document_metadata.html#a8fae7e45081dc66d51581fd50e7ed328":[12,0,46,72,5],
 "structscore_1_1_document_metadata.html#a948fa37fbe0c1ebce64043f53831cbdb":[12,0,46,72,10],
@@ -240,14 +249,5 @@ var NAVTREEINDEX69 =
 "structscore_1_1_slider_wrapper.html#a6a9b3adcf718cf1c98fe1520f16504c4":[12,0,46,248,8],
 "structscore_1_1_slider_wrapper.html#a766869fe9b1089200b9b1434bd8cd550":[12,0,46,248,21],
 "structscore_1_1_slider_wrapper.html#a8047fdd6a92d8c4893982080ea448a4b":[12,0,46,248,6],
-"structscore_1_1_slider_wrapper.html#a82bac1d9d7c421cca80d9877efe591fd":[12,0,46,248,11],
-"structscore_1_1_slider_wrapper.html#a8386ade49a5ce64d9d812b2353b09c93":[12,0,46,248,19],
-"structscore_1_1_slider_wrapper.html#a8551ebd2d7db1299074c66937dc49f38":[12,0,46,248,7],
-"structscore_1_1_slider_wrapper.html#a909cc181f52dd38c547c4b7656f83106":[12,0,46,248,5],
-"structscore_1_1_slider_wrapper.html#ab2fc19395a953e05a7756665e1e9df56":[12,0,46,248,14],
-"structscore_1_1_slider_wrapper.html#ad4c20128ac25750b075e3dc4151a7150":[12,0,46,248,17],
-"structscore_1_1_slider_wrapper.html#add3d777db62f3f074aafb0e6c8a314b0":[12,0,46,248,4],
-"structscore_1_1_speed_slider.html":[12,0,46,249],
-"structscore_1_1_speed_slider.html#a143584fa0f8ec0035440a3d01675eded":[12,0,46,249,7],
-"structscore_1_1_speed_slider.html#a412cc08b8b1d6ca2c380863c30d4b3f7":[12,0,46,249,4]
+"structscore_1_1_slider_wrapper.html#a82bac1d9d7c421cca80d9877efe591fd":[12,0,46,248,11]
 };
