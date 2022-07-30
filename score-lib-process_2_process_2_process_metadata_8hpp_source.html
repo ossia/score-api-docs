@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('score-lib-process_2_process_2_process_
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;SCORE_LIB_PROCESS_EXPORT</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">const</span> QIcon&amp; getCategoryIcon(<span class="keyword">const</span> QString&amp; category) noexcept;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">enum</span> ProcessCategory</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">enum</span> ProcessCategory : uint64_t</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  Other,</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <a class="code" href="namespace_automation.html">Automation</a>,</div>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('score-lib-process_2_process_2_process_
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="class_script.html">Script</a>,      <span class="comment">// JS, PD, etc</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  Structure,   <span class="comment">// scenario, loop, etc</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  Visual,      <span class="comment">// gfx processes</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  Deprecated = (1LL &lt;&lt; 63),      <span class="comment">// gfx processes</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  Deprecated = (1ULL &lt;&lt; 63),      <span class="comment">// gfx processes</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="struct_process_1_1_descriptor.html">   35</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_process_1_1_descriptor.html">Descriptor</a></div>
