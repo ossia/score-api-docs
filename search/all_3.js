@@ -69,7 +69,7 @@ var searchData=
   ['color_5fmap_262',['color_map',['../structscore_1_1_skin_1_1color__map.html',1,'score::Skin']]],
   ['colorbang_263',['ColorBang',['../classscore_1_1_color_bang.html',1,'score']]],
   ['colorref_264',['ColorRef',['../structscore_1_1_color_ref.html',1,'score']]],
-  ['colors_265',['Colors',['../class_mapping_1_1_colors.html',1,'Mapping::Colors'],['../class_automation_1_1_colors.html',1,'Automation::Colors'],['../class_interpolation_1_1_colors.html',1,'Interpolation::Colors'],['../class_interp_state_1_1_colors.html',1,'InterpState::Colors']]],
+  ['colors_265',['Colors',['../class_mapping_1_1_colors.html',1,'Mapping::Colors'],['../class_automation_1_1_colors.html',1,'Automation::Colors'],['../class_interp_state_1_1_colors.html',1,'InterpState::Colors'],['../class_interpolation_1_1_colors.html',1,'Interpolation::Colors']]],
   ['combobox_266',['ComboBox',['../classscore_1_1_combo_box.html',1,'score::ComboBox'],['../struct_control_1_1_combo_box.html',1,'Control::ComboBox&lt; T, N &gt;'],['../struct_widget_factory_1_1_combo_box.html',1,'WidgetFactory::ComboBox']]],
   ['comboslider_267',['ComboSlider',['../structscore_1_1_combo_slider.html',1,'score']]],
   ['command_268',['Command',['../classscore_1_1_command.html',1,'score::Command'],['../structscore_1_1_property_command___t_1_1command.html',1,'score::PropertyCommand_T&lt; T &gt;::command&lt; U &gt;']]],

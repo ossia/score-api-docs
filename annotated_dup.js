@@ -341,6 +341,7 @@ var annotated_dup =
         [ "View", "class_library_1_1_settings_1_1_view.html", "class_library_1_1_settings_1_1_view" ]
       ] ],
       [ "FileSystemModel", "class_library_1_1_file_system_model.html", "class_library_1_1_file_system_model" ],
+      [ "FileSystemRecursiveFilterProxy", "class_library_1_1_file_system_recursive_filter_proxy.html", "class_library_1_1_file_system_recursive_filter_proxy" ],
       [ "InfoWidget", "class_library_1_1_info_widget.html", "class_library_1_1_info_widget" ],
       [ "ItemModelFilterLineEdit", "struct_library_1_1_item_model_filter_line_edit.html", "struct_library_1_1_item_model_filter_line_edit" ],
       [ "LibraryDocumentLoader", "class_library_1_1_library_document_loader.html", "class_library_1_1_library_document_loader" ],
@@ -359,7 +360,7 @@ var annotated_dup =
       [ "ProjectLibraryWidget", "class_library_1_1_project_library_widget.html", "class_library_1_1_project_library_widget" ],
       [ "ProjectPanel", "class_library_1_1_project_panel.html", "class_library_1_1_project_panel" ],
       [ "ProjectPanelFactory", "class_library_1_1_project_panel_factory.html", null ],
-      [ "RecursiveFilterProxy", "class_library_1_1_recursive_filter_proxy.html", null ],
+      [ "RecursiveFilterProxy", "class_library_1_1_recursive_filter_proxy.html", "class_library_1_1_recursive_filter_proxy" ],
       [ "Subcategories", "struct_library_1_1_subcategories.html", "struct_library_1_1_subcategories" ],
       [ "SystemLibraryWidget", "class_library_1_1_system_library_widget.html", "class_library_1_1_system_library_widget" ],
       [ "UserPanel", "class_library_1_1_user_panel.html", "class_library_1_1_user_panel" ],

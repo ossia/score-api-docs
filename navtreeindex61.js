@@ -1,5 +1,10 @@
 var NAVTREEINDEX61 =
 {
+"struct_process_1_1_process_drop_handler_1_1_dropped_file.html#ae552298de488af818099227b4be24bcf":[12,0,39,72,0,0],
+"struct_process_1_1_process_drop_handler_1_1_process_drop.html":[12,0,39,72,1],
+"struct_process_1_1_process_drop_handler_1_1_process_drop.html#ab5b8620cf7320c0e445bb41681f71422":[12,0,39,72,1,1],
+"struct_process_1_1_process_drop_handler_1_1_process_drop.html#abefaf9ea2f7694525e4a7390b17429ce":[12,0,39,72,1,0],
+"struct_process_1_1_process_drop_handler_1_1_process_drop.html#adab8afe2ed378e4985c90567d92cfef8":[12,0,39,72,1,2],
 "struct_process_1_1_process_identifier.html":[12,0,39,77],
 "struct_process_1_1_process_identifier.html#a3e7a4ac46a5006ed5f26da74d68844ba":[12,0,39,77,0],
 "struct_process_1_1_process_identifier.html#a4167484ff5a72d84599ff5d3868b1af2":[12,0,39,77,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX61 =
 "struct_q_meta_type_id_3_01_gfx_1_1_shader_source_01_4.html":[12,0,235],
 "struct_q_meta_type_id_3_01_gfx_1_1_shader_source_01_4.html#a23a11ba8b585210409e2cb524ed4e487a15308597c83a20c45eacaaa607dbc6c4":[12,0,235,0],
 "struct_q_meta_type_id_3_01_gfx_1_1_shared_input_settings_01_4.html":[12,0,236],
-"struct_q_meta_type_id_3_01_gfx_1_1_shared_input_settings_01_4.html#a12911d55c4951993ed182cb97eebb102ac505ba2c633e1ed494744ec45c015ed6":[12,0,236,0],
-"struct_q_meta_type_id_3_01_gfx_1_1_shared_output_settings_01_4.html":[12,0,237],
-"struct_q_meta_type_id_3_01_gfx_1_1_shared_output_settings_01_4.html#ab17f436231bbcffce4f4d6bc6b41ee02ac755ed9842aa3af133ae12190add3362":[12,0,237,0],
-"struct_q_meta_type_id_3_01_id_3_01_process_1_1_process_model_01_4_01_4.html":[12,0,238],
-"struct_q_meta_type_id_3_01_id_3_01_process_1_1_process_model_01_4_01_4.html#aeb76acaa9b68bae14e336a0417b8f867a3cd029606057d16689a549a866b773b1":[12,0,238,0],
-"struct_q_meta_type_id_3_01_id_3_01_scenario_1_1_event_model_01_4_01_4.html":[12,0,239]
+"struct_q_meta_type_id_3_01_gfx_1_1_shared_input_settings_01_4.html#a12911d55c4951993ed182cb97eebb102ac505ba2c633e1ed494744ec45c015ed6":[12,0,236,0]
 };

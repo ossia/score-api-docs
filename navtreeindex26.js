@@ -1,5 +1,10 @@
 var NAVTREEINDEX26 =
 {
+"class_process_1_1_process_model_factory.html#a77c72082a17cc393435bf0ce744e5a58":[12,0,39,79,7],
+"class_process_1_1_process_model_factory.html#aa1d907098c4af1a2bf89347f0855273d":[12,0,39,79,0],
+"class_process_1_1_process_model_factory.html#aa88de473860fc95946e3d82ba9f882b9":[12,0,39,79,4],
+"class_process_1_1_process_model_factory.html#ab871e62055902582151e64b29ebfd07f":[12,0,39,79,5],
+"class_process_1_1_process_model_factory.html#ab929693ba0e7c1c2546531aa81b93b28":[12,0,39,79,3],
 "class_process_1_1_process_multi_script_edit_dialog.html":[12,0,39,80],
 "class_process_1_1_process_multi_script_edit_dialog.html#a0073c0177b6940cc00c1d1693186a3d7":[12,0,39,80,0],
 "class_process_1_1_process_multi_script_edit_dialog.html#a2ea14204cee711a5e929a01db9b53d85":[12,0,39,80,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX26 =
 "class_protocols_1_1_o_s_c_device.html#a301b7593ce1c20d7dfe99640e6a94932":[12,0,40,47,4],
 "class_protocols_1_1_o_s_c_device.html#a7258af10e4efb66fd06f8fc378fe09e8":[12,0,40,47,2],
 "class_protocols_1_1_o_s_c_device.html#ab192ce89d52f9b79aa1fdb7a155b75b1":[12,0,40,47,0],
-"class_protocols_1_1_o_s_c_library_handler.html":[12,0,40,48],
-"class_protocols_1_1_o_s_c_protocol_factory.html":[12,0,40,49],
-"class_protocols_1_1_o_s_c_protocol_settings_widget.html":[12,0,40,50],
-"class_protocols_1_1_o_s_c_protocol_settings_widget.html#a2f273fefc605131c9f9874f5f92ebd4e":[12,0,40,50,1],
-"class_protocols_1_1_o_s_c_protocol_settings_widget.html#a61dcc9cc127037e3a8613df5eec448ac":[12,0,40,50,2],
-"class_protocols_1_1_o_s_c_protocol_settings_widget.html#a90be2fc676b8eb59a9ed7df3c3008e31":[12,0,40,50,3]
+"class_protocols_1_1_o_s_c_library_handler.html":[12,0,40,48]
 };
