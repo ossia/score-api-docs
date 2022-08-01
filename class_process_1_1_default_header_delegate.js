@@ -15,6 +15,9 @@ var class_process_1_1_default_header_delegate =
     [ "m_lastText", "class_process_1_1_default_header_delegate.html#ae136291104e53423e2d686c6251c6242", null ],
     [ "m_line", "class_process_1_1_default_header_delegate.html#a5f993b37ac4f80666dc029c49cb149ae", null ],
     [ "m_portEndX", "class_process_1_1_default_header_delegate.html#a2ee9e1f59077bd79940acf42612bf476", null ],
+    [ "m_portStartX", "class_process_1_1_default_header_delegate.html#a46ffca3d279ca35370b67a4a56b49a55", null ],
+    [ "m_record", "class_process_1_1_default_header_delegate.html#ad39106d247989c131e26dd71fb08fadd", null ],
     [ "m_sel", "class_process_1_1_default_header_delegate.html#af293162682f8f5da61232d4f916c534a", null ],
+    [ "m_snapshot", "class_process_1_1_default_header_delegate.html#a31159e7ad28ac1c4120d34ecaa094e10", null ],
     [ "m_ui", "class_process_1_1_default_header_delegate.html#ae08611e0ea85f0207fb246787de3636e", null ]
 ];

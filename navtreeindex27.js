@@ -1,5 +1,8 @@
 var NAVTREEINDEX27 =
 {
+"class_protocols_1_1_o_s_c_device.html#a7258af10e4efb66fd06f8fc378fe09e8":[12,0,40,47,2],
+"class_protocols_1_1_o_s_c_device.html#ab192ce89d52f9b79aa1fdb7a155b75b1":[12,0,40,47,0],
+"class_protocols_1_1_o_s_c_library_handler.html":[12,0,40,48],
 "class_protocols_1_1_o_s_c_protocol_factory.html":[12,0,40,49],
 "class_protocols_1_1_o_s_c_protocol_settings_widget.html":[12,0,40,50],
 "class_protocols_1_1_o_s_c_protocol_settings_widget.html#a2f273fefc605131c9f9874f5f92ebd4e":[12,0,40,50,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX27 =
 "class_remove_interval_test.html#a32ab6c9fc39624f55bdef5d6b6489d55":[12,0,331,0],
 "class_remove_interval_test.html#aa02dc1f63719293271d6595469aabe71":[12,0,331,1],
 "class_remove_interval_test.html#aa0fe48f8ff0d7bbc93891ec3c2d81ad1":[12,0,331,2],
-"class_remove_layer_model_from_slot_test.html":[12,0,332],
-"class_remove_process_from_interval_test.html":[12,0,333],
-"class_remove_rack_from_interval_test.html":[12,0,334],
-"class_remove_slot_from_rack_test.html":[12,0,335]
+"class_remove_layer_model_from_slot_test.html":[12,0,332]
 };

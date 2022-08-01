@@ -1,5 +1,12 @@
 var NAVTREEINDEX66 =
 {
+"struct_t_serializer_3_01_data_stream_00_01ossia_1_1vector__domain_01_4.html":[12,0,429],
+"struct_t_serializer_3_01_data_stream_00_01ossia_1_1vector__domain_01_4.html#addf34a4c456b22cc4c216e3d168b2e42":[12,0,429,0],
+"struct_t_serializer_3_01_data_stream_00_01rapidjson_1_1_document_01_4.html":[12,0,432],
+"struct_t_serializer_3_01_data_stream_00_01rapidjson_1_1_value_01_4.html":[12,0,433],
+"struct_t_serializer_3_01_data_stream_00_01score_1_1_entity_3_01_t_01_4_01_4.html":[12,0,437],
+"struct_t_serializer_3_01_data_stream_00_01score_1_1_entity_list_3_01_t_01_4_01_4.html":[12,0,438],
+"struct_t_serializer_3_01_data_stream_00_01score_1_1_entity_map_3_01_t_01_4_01_4.html":[12,0,439],
 "struct_t_serializer_3_01_data_stream_00_01score_1_1any__map_01_4.html":[12,0,436],
 "struct_t_serializer_3_01_data_stream_00_01score_1_1uuid__t_01_4.html":[12,0,440],
 "struct_t_serializer_3_01_data_stream_00_01ska_1_1flat__hash__map_3_01_t_00_01_u_01_4_01_4.html":[12,0,441],
@@ -242,12 +249,5 @@ var NAVTREEINDEX66 =
 "struct_widget_factory_1_1_enum.html":[12,0,57,3],
 "struct_widget_factory_1_1_fixed_normalizer.html":[12,0,57,4],
 "struct_widget_factory_1_1_fixed_normalizer.html#a0871b4945188662de99a967ab91e6609":[12,0,57,4,1],
-"struct_widget_factory_1_1_fixed_normalizer.html#a42a7d2e9b00ab4d2aa43768cbeaa205b":[12,0,57,4,4],
-"struct_widget_factory_1_1_fixed_normalizer.html#a4648423d7be561bd4f08d26aad1f4c22":[12,0,57,4,0],
-"struct_widget_factory_1_1_fixed_normalizer.html#ab8b4dc54e73ae5b17ba5c5d3d6ffca7c":[12,0,57,4,2],
-"struct_widget_factory_1_1_fixed_normalizer.html#ae57ca7e8819d3d971510901319be02f2":[12,0,57,4,3],
-"struct_widget_factory_1_1_float_control.html":[12,0,57,5],
-"struct_widget_factory_1_1_h_s_v_slider.html":[12,0,57,6],
-"struct_widget_factory_1_1_impulse_button.html":[12,0,57,7],
-"struct_widget_factory_1_1_int_slider.html":[12,0,57,8]
+"struct_widget_factory_1_1_fixed_normalizer.html#a42a7d2e9b00ab4d2aa43768cbeaa205b":[12,0,57,4,4]
 };

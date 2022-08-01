@@ -1,5 +1,12 @@
 var NAVTREEINDEX61 =
 {
+"struct_process_1_1_preset.html#ae9b0b98d749ac68f73034c6e0d096f1f":[12,0,39,69,4],
+"struct_process_1_1_process_data.html":[12,0,39,71],
+"struct_process_1_1_process_data.html#a3ec7898480945fc173f7cd261f5c71a4":[12,0,39,71,1],
+"struct_process_1_1_process_data.html#a40c60b115e1e25e543b16e13616ca376":[12,0,39,71,0],
+"struct_process_1_1_process_data.html#a40cb27dbec9510069d7b61dbf1a220a5":[12,0,39,71,2],
+"struct_process_1_1_process_drop_handler_1_1_dropped_file.html":[12,0,39,72,0],
+"struct_process_1_1_process_drop_handler_1_1_dropped_file.html#a5801d3f0fd47bb820d1e5421e0730b80":[12,0,39,72,0,1],
 "struct_process_1_1_process_drop_handler_1_1_dropped_file.html#ae552298de488af818099227b4be24bcf":[12,0,39,72,0,0],
 "struct_process_1_1_process_drop_handler_1_1_process_drop.html":[12,0,39,72,1],
 "struct_process_1_1_process_drop_handler_1_1_process_drop.html#ab5b8620cf7320c0e445bb41681f71422":[12,0,39,72,1,1],
@@ -242,12 +249,5 @@ var NAVTREEINDEX61 =
 "struct_q_meta_type_id_3_01_expand_mode_01_4.html#ad2c343c418b5989de5ee261878af7895a35f3e6f63f5b182e2c2da321467b17a0":[12,0,231,0],
 "struct_q_meta_type_id_3_01_gfx_1_1_camera_settings_01_4.html":[12,0,232],
 "struct_q_meta_type_id_3_01_gfx_1_1_camera_settings_01_4.html#afc81beb4ed5229f9ed3d997b25074583aaddf49cfd01e45c6d75b7397581f5789":[12,0,232,0],
-"struct_q_meta_type_id_3_01_gfx_1_1_kinect2_settings_01_4.html":[12,0,233],
-"struct_q_meta_type_id_3_01_gfx_1_1_kinect2_settings_01_4.html#af1bcc241ba125a011bf8425a14aa701aa2eb66fbab8f0b0ffd864808589458638":[12,0,233,0],
-"struct_q_meta_type_id_3_01_gfx_1_1_processed_program_01_4.html":[12,0,234],
-"struct_q_meta_type_id_3_01_gfx_1_1_processed_program_01_4.html#a3d1f5025a7758992533bf32e5644602ead5e3df4f4ec4781ac301a1cb17166536":[12,0,234,0],
-"struct_q_meta_type_id_3_01_gfx_1_1_shader_source_01_4.html":[12,0,235],
-"struct_q_meta_type_id_3_01_gfx_1_1_shader_source_01_4.html#a23a11ba8b585210409e2cb524ed4e487a15308597c83a20c45eacaaa607dbc6c4":[12,0,235,0],
-"struct_q_meta_type_id_3_01_gfx_1_1_shared_input_settings_01_4.html":[12,0,236],
-"struct_q_meta_type_id_3_01_gfx_1_1_shared_input_settings_01_4.html#a12911d55c4951993ed182cb97eebb102ac505ba2c633e1ed494744ec45c015ed6":[12,0,236,0]
+"struct_q_meta_type_id_3_01_gfx_1_1_kinect2_settings_01_4.html":[12,0,233]
 };

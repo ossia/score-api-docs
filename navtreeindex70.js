@@ -1,5 +1,12 @@
 var NAVTREEINDEX70 =
 {
+"structscore_1_1_slider_wrapper.html#a17a375a37ef4a1b8feccee348c1badf6":[12,0,46,248,2],
+"structscore_1_1_slider_wrapper.html#a1e36f9fd727047c1a1b030c8a26893e2":[12,0,46,248,10],
+"structscore_1_1_slider_wrapper.html#a32885fea8cf3d3fdf381cbb669d54793":[12,0,46,248,3],
+"structscore_1_1_slider_wrapper.html#a363800decfa8d84a891a485c0636f119":[12,0,46,248,0],
+"structscore_1_1_slider_wrapper.html#a475751c1f54bb3b4d8902fe2a0830cc6":[12,0,46,248,20],
+"structscore_1_1_slider_wrapper.html#a4fac67ceae81ed271e009e8257664c0a":[12,0,46,248,9],
+"structscore_1_1_slider_wrapper.html#a54e11fc05f6390b5397a3dd4f5ec09aa":[12,0,46,248,15],
 "structscore_1_1_slider_wrapper.html#a5b468dd171aaa61bfd9424fc91a34495":[12,0,46,248,22],
 "structscore_1_1_slider_wrapper.html#a6a9b3adcf718cf1c98fe1520f16504c4":[12,0,46,248,8],
 "structscore_1_1_slider_wrapper.html#a766869fe9b1089200b9b1434bd8cd550":[12,0,46,248,21],
@@ -242,12 +249,5 @@ var NAVTREEINDEX70 =
 "structscore_1_1gfx_1_1_audio_texture_upload.html#a71fb8c5e731f9751309fe14f030f62bb":[12,0,46,2,1,1],
 "structscore_1_1gfx_1_1_audio_texture_upload.html#aa084db6dff3ba2d2c9724b92028a6e4b":[12,0,46,2,1,3],
 "structscore_1_1gfx_1_1_audio_texture_upload.html#adafa4daafa85c0005414ffba92967643":[12,0,46,2,1,0],
-"structscore_1_1gfx_1_1_default_shader_material.html":[12,0,46,2,3],
-"structscore_1_1gfx_1_1_default_shader_material.html#a3765edc802e3a69e0dbe9990740e09da":[12,0,46,2,3,1],
-"structscore_1_1gfx_1_1_default_shader_material.html#acc985788c23294febbc7876a63c1df5b":[12,0,46,2,3,2],
-"structscore_1_1gfx_1_1_default_shader_material.html#ad0fc59d72fbb432352cac0304bbea819":[12,0,46,2,3,0],
-"structscore_1_1gfx_1_1_depth_node.html":[12,0,46,2,4],
-"structscore_1_1gfx_1_1_depth_node.html#a188470c2b013a84f06fc6c071e8ea29a":[12,0,46,2,4,0],
-"structscore_1_1gfx_1_1_depth_node.html#a890a089125aa82cddf2f9f71713044b9":[12,0,46,2,4,1],
-"structscore_1_1gfx_1_1_depth_node.html#a9e6884f55624ab97cc7eb8b5d62866ae":[12,0,46,2,4,2]
+"structscore_1_1gfx_1_1_default_shader_material.html":[12,0,46,2,3]
 };

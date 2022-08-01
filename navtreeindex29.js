@@ -1,5 +1,8 @@
 var NAVTREEINDEX29 =
 {
+"class_scenario_1_1_command_1_1_create_automation_from_states.html#a50162129e9c7c3f76b5a8738fa0e21e4":[12,0,45,0,23,0],
+"class_scenario_1_1_command_1_1_create_comment_block.html":[12,0,45,0,24],
+"class_scenario_1_1_command_1_1_create_comment_block.html#ab9974229ddac225277897fb2862be807":[12,0,45,0,24,0],
 "class_scenario_1_1_command_1_1_create_comment_block.html#af0d26ae7da05214d50fe830e660ea160":[12,0,45,0,24,1],
 "class_scenario_1_1_command_1_1_create_event___state.html":[12,0,45,0,25],
 "class_scenario_1_1_command_1_1_create_event___state.html#a365023eea2a37d86f7539ffce6c55a34":[12,0,45,0,25,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX29 =
 "class_scenario_1_1_command_1_1_put_process_before.html#aed716c91df71eab3191d1ded2b17b3ee":[12,0,45,0,73,1],
 "class_scenario_1_1_command_1_1_put_state_process_before.html":[12,0,45,0,74],
 "class_scenario_1_1_command_1_1_put_state_process_before.html#a3419e1c73ed4630a6f9e7cb8953018eb":[12,0,45,0,74,1],
-"class_scenario_1_1_command_1_1_put_state_process_before.html#af930ddfe287966bdb6cb9ae7317364bb":[12,0,45,0,74,0],
-"class_scenario_1_1_command_1_1_refresh_states_macro.html":[12,0,45,0,75],
-"class_scenario_1_1_command_1_1_remove_comment_block.html":[12,0,45,0,76],
-"class_scenario_1_1_command_1_1_remove_comment_block.html#ac3e708665fd148722b78b54dccd03b1a":[12,0,45,0,76,0]
+"class_scenario_1_1_command_1_1_put_state_process_before.html#af930ddfe287966bdb6cb9ae7317364bb":[12,0,45,0,74,0]
 };

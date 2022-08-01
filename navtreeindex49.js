@@ -1,5 +1,8 @@
 var NAVTREEINDEX49 =
 {
+"classscore__plugin__recording.html#af44e59042634edd38e21281e6fc84116":[12,0,366,0],
+"classscore__plugin__remotecontrol.html":[12,0,367],
+"classscore__plugin__remotecontrol.html#a8cb6871e867c80d463dd503c3be14b97":[12,0,367,1],
 "classscore__plugin__remotecontrol.html#aac39a40947863a1a41fb5a0ea6a98150":[12,0,367,0],
 "classscore__plugin__scenario.html":[12,0,368],
 "classscore__plugin__scenario.html#a7b27edcd83fe718f313b68e85e8ad8ae":[12,0,368,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX49 =
 "classvst_1_1_control_port_factory.html#aef395542708c84ad84fd32665b96ebf1":[12,0,55,3,2],
 "classvst_1_1_create_control.html":[12,0,55,5],
 "classvst_1_1_create_control.html#a1a86182b016bc4c318475688a1962c58":[12,0,55,5,0],
-"classvst_1_1_create_control.html#a34005e90b2bf8276e8babba24a2ecc99":[12,0,55,5,1],
-"classvst_1_1_create_control.html#a3e0ebdc0eca876b6a72a5b5624e3bd7c":[12,0,55,5,3],
-"classvst_1_1_create_control.html#a4597b71b20a632d72c9182db0a299b0f":[12,0,55,5,5],
-"classvst_1_1_create_control.html#a4a1ffdf38f241815cdc232fad01ed52a":[12,0,55,5,2]
+"classvst_1_1_create_control.html#a34005e90b2bf8276e8babba24a2ecc99":[12,0,55,5,1]
 };

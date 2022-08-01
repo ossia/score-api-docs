@@ -1,5 +1,12 @@
 var NAVTREEINDEX71 =
 {
+"structscore_1_1gfx_1_1_default_shader_material.html#a3765edc802e3a69e0dbe9990740e09da":[12,0,46,2,3,1],
+"structscore_1_1gfx_1_1_default_shader_material.html#acc985788c23294febbc7876a63c1df5b":[12,0,46,2,3,2],
+"structscore_1_1gfx_1_1_default_shader_material.html#ad0fc59d72fbb432352cac0304bbea819":[12,0,46,2,3,0],
+"structscore_1_1gfx_1_1_depth_node.html":[12,0,46,2,4],
+"structscore_1_1gfx_1_1_depth_node.html#a188470c2b013a84f06fc6c071e8ea29a":[12,0,46,2,4,0],
+"structscore_1_1gfx_1_1_depth_node.html#a890a089125aa82cddf2f9f71713044b9":[12,0,46,2,4,1],
+"structscore_1_1gfx_1_1_depth_node.html#a9e6884f55624ab97cc7eb8b5d62866ae":[12,0,46,2,4,2],
 "structscore_1_1gfx_1_1_depth_node.html#ae46bacf5fe757134561ecdc167a36fa2":[12,0,46,2,4,3],
 "structscore_1_1gfx_1_1_edge.html":[12,0,46,2,5],
 "structscore_1_1gfx_1_1_edge.html#a8b956dc0706102c6c87734b303fe0e3e":[12,0,46,2,5,3],
@@ -242,12 +249,5 @@ var NAVTREEINDEX71 =
 "structscore_1_1gfx_1_1_texture_normal_mesh.html#a5c71e45024d6457adc1c8f2ac1876015":[12,0,46,2,52,2],
 "structscore_1_1gfx_1_1_texture_normal_mesh.html#ac2f02c4296e1ff883ffd3253893770c4":[12,0,46,2,52,1],
 "structscore_1_1gfx_1_1_texture_render_target.html":[12,0,46,2,53],
-"structscore_1_1gfx_1_1_texture_render_target.html#a0aca7e827e4bbaf25cd10bc37ccca524":[12,0,46,2,53,5],
-"structscore_1_1gfx_1_1_texture_render_target.html#a37d7728b0d7222c68fa1e70581d6e79c":[12,0,46,2,53,1],
-"structscore_1_1gfx_1_1_texture_render_target.html#a4957b19dcad73c927b9e3ee39991f473":[12,0,46,2,53,3],
-"structscore_1_1gfx_1_1_texture_render_target.html#a650b5aafcaa65b8231858dfeb490354e":[12,0,46,2,53,2],
-"structscore_1_1gfx_1_1_texture_render_target.html#a7c68fec5b45cf4b88f262bed320b1dd0":[12,0,46,2,53,0],
-"structscore_1_1gfx_1_1_texture_render_target.html#aa087f6181e5b0fd91a6caed1f0693b5a":[12,0,46,2,53,4],
-"structscore_1_1gfx_1_1_textured_mesh.html":[12,0,46,2,49],
-"structscore_1_1gfx_1_1_textured_mesh.html#aa4a23108071ee7745ae6e10722880375":[12,0,46,2,49,0]
+"structscore_1_1gfx_1_1_texture_render_target.html#a0aca7e827e4bbaf25cd10bc37ccca524":[12,0,46,2,53,5]
 };
