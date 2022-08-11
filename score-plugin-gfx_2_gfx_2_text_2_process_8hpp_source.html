@@ -99,50 +99,48 @@ $(document).ready(function(){initNavTree('score-plugin-gfx_2_gfx_2_text_2_proces
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Gfx/CommandFactory.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Gfx/Graph/ImageNode.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Gfx/Text/Metadata.hpp&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Library/LibraryInterface.hpp&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Process/Drop/ProcessDropHandler.hpp&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;Process/GenericProcessFactory.hpp&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;Process/Process.hpp&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;score/command/PropertyCommand.hpp&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>Gfx::Text</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_gfx_1_1_text_1_1_model.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_gfx_1_1_text_1_1_model.html">Model</a> final : <span class="keyword">public</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  SCORE_SERIALIZE_FRIENDS</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  PROCESS_METADATA_IMPL(<a class="code" href="class_gfx_1_1_text_1_1_model.html">Gfx::Text::Model</a>)</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  W_OBJECT(<a class="code" href="class_gfx_1_1_text_1_1_model.html">Model</a>)</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  constexpr <span class="keywordtype">bool</span> hasExternalUI() { <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <a class="code" href="class_gfx_1_1_text_1_1_model.html">Model</a>(</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_time_val.html">TimeVal</a>&amp; duration,</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      <span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Process::ProcessModel&gt;</a>&amp; <span class="keywordtype">id</span>,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      QObject* parent);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Impl&gt;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="class_gfx_1_1_text_1_1_model.html">Model</a>(Impl&amp; vis, QObject* parent)</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      : <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>{vis, parent}</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    vis.writeTo(*<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  }</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Process/Drop/ProcessDropHandler.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Process/GenericProcessFactory.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Process/Process.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Gfx/CommandFactory.hpp&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;Gfx/Graph/ImageNode.hpp&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;Gfx/Text/Metadata.hpp&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;Library/LibraryInterface.hpp&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;score/command/PropertyCommand.hpp&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>Gfx::Text</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_gfx_1_1_text_1_1_model.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_gfx_1_1_text_1_1_model.html">Model</a> final : <span class="keyword">public</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  SCORE_SERIALIZE_FRIENDS</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  PROCESS_METADATA_IMPL(<a class="code" href="class_gfx_1_1_text_1_1_model.html">Gfx::Text::Model</a>)</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  W_OBJECT(<a class="code" href="class_gfx_1_1_text_1_1_model.html">Model</a>)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  constexpr <span class="keywordtype">bool</span> hasExternalUI() { <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <a class="code" href="class_gfx_1_1_text_1_1_model.html">Model</a>(<span class="keyword">const</span> <a class="code" href="struct_time_val.html">TimeVal</a>&amp; duration, <span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Process::ProcessModel&gt;</a>&amp; <span class="keywordtype">id</span>, QObject* parent);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Impl&gt;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="class_gfx_1_1_text_1_1_model.html">Model</a>(Impl&amp; vis, QObject* parent)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      : <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>{vis, parent}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    vis.writeTo(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  ~<a class="code" href="class_gfx_1_1_text_1_1_model.html">Model</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  ~<a class="code" href="class_gfx_1_1_text_1_1_model.html">Model</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  QString prettyName() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  QString prettyName() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">using</span> <a class="code" href="class_process_1_1_process_factory___t.html">ProcessFactory</a> = <a class="code" href="class_process_1_1_process_factory___t.html">Process::ProcessFactory_T&lt;Gfx::Text::Model&gt;</a>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">using</span> <a class="code" href="class_process_1_1_process_factory___t.html">ProcessFactory</a> = <a class="code" href="class_process_1_1_process_factory___t.html">Process::ProcessFactory_T&lt;Gfx::Text::Model&gt;</a>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition:</b> TimeValue.hpp:19</div></div>
-<div class="ttc" id="aclass_gfx_1_1_text_1_1_model_html"><div class="ttname"><a href="class_gfx_1_1_text_1_1_model.html">Gfx::Text::Model</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Text/Process.hpp:13</div></div>
+<div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition:</b> TimeValue.hpp:20</div></div>
+<div class="ttc" id="aclass_gfx_1_1_text_1_1_model_html"><div class="ttname"><a href="class_gfx_1_1_text_1_1_model.html">Gfx::Text::Model</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Text/Process.hpp:14</div></div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition:</b> Identifier.hpp:56</div></div>
 <div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Process.hpp:54</div></div>
 <div class="ttc" id="aclass_process_1_1_process_factory___t_html"><div class="ttname"><a href="class_process_1_1_process_factory___t.html">Process::ProcessFactory_T</a></div><div class="ttdef"><b>Definition:</b> GenericProcessFactory.hpp:14</div></div>

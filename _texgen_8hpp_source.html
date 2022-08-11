@@ -101,21 +101,21 @@ $(document).ready(function(){initNavTree('_texgen_8hpp_source.html',''); initRes
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#if __has_include(&lt;score_plugin_gfx.hpp&gt;)</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define SCORE_JIT_HAS_TEXGEN 1</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Control/DefaultEffectItem.hpp&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Effect/EffectFactory.hpp&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Process/Execution/ProcessComponent.hpp&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;Process/GenericProcessFactory.hpp&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;Process/Process.hpp&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;Process/ProcessMetadata.hpp&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;Process/Script/ScriptEditor.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Process/Execution/ProcessComponent.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Process/GenericProcessFactory.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Process/Process.hpp&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;Process/ProcessMetadata.hpp&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;Process/Script/ScriptEditor.hpp&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;Scenario/Commands/ScriptEditCommand.hpp&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;Scenario/Commands/ScriptEditCommand.hpp&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;ossia/dataflow/execution_state.hpp&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;ossia/dataflow/graph_node.hpp&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;ossia/dataflow/node_process.hpp&gt;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;JitCpp/EditScript.hpp&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;Control/DefaultEffectItem.hpp&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;Effect/EffectFactory.hpp&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;JitCpp/EditScript.hpp&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;ossia/dataflow/execution_state.hpp&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;ossia/dataflow/graph_node.hpp&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;ossia/dataflow/node_process.hpp&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;verdigris&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
@@ -124,162 +124,139 @@ $(document).ready(function(){initNavTree('_texgen_8hpp_source.html',''); initRes
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">class </span>TexgenModel;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;PROCESS_METADATA(</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    ,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    Jit::TexgenModel,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="stringliteral">&quot;b9a20181-2925-4ade-925e-a2fd05fcbf9b&quot;</span>,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="stringliteral">&quot;Jit&quot;</span>,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="stringliteral">&quot;Texture generator&quot;</span>,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    Process::ProcessCategory::Script,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="stringliteral">&quot;Visuals&quot;</span>,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="stringliteral">&quot;Generate a texture&quot;</span>,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="stringliteral">&quot;ossia score&quot;</span>,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    QStringList{},</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {},</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {},</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    Process::ProcessFlags::SupportsAll)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace</span> Jit</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Fun_T&gt;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">struct </span>Driver;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">using</span> TexgenFunction = void(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* rgb, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">int</span> t);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">using</span> TexgenCompiler = Driver&lt;TexgenFunction&gt;;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">using</span> TexgenFactory = std::function&lt;TexgenFunction&gt;;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">class </span>TexgenModel : <span class="keyword">public</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span>JitUI;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span>JitUpdateUI;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  SCORE_SERIALIZE_FRIENDS</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  PROCESS_METADATA_IMPL(TexgenModel)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  W_OBJECT(TexgenModel)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  TexgenModel(</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <a class="code" href="struct_time_val.html">TimeVal</a> t,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keyword">const</span> QString&amp; jitProgram,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Process::ProcessModel&gt;</a>&amp;,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      QObject* parent);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  ~TexgenModel() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  TexgenModel(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  TexgenModel(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  TexgenModel(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  TexgenModel(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">bool</span> validate(<span class="keyword">const</span> QString&amp; txt) <span class="keyword">const</span> noexcept;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">const</span> QString&amp; script() const noexcept { <span class="keywordflow">return</span> m_text; }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span> setScript(<span class="keyword">const</span> QString&amp; txt);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">void</span> scriptChanged(<span class="keyword">const</span> QString&amp; txt) W_SIGNAL(scriptChanged, txt);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> hasExternalUI() noexcept { <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  QString prettyName() const noexcept override;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">void</span> changed() W_SIGNAL(changed);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  TexgenFactory factory;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">void</span> errorMessage(<span class="keywordtype">int</span> line, const QString&amp; e)</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      W_SIGNAL(errorMessage, line, e);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    , Jit::TexgenModel, <span class="stringliteral">&quot;b9a20181-2925-4ade-925e-a2fd05fcbf9b&quot;</span>, <span class="stringliteral">&quot;Jit&quot;</span>,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="stringliteral">&quot;Texture generator&quot;</span>, Process::ProcessCategory::Script, <span class="stringliteral">&quot;Visuals&quot;</span>,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="stringliteral">&quot;Generate a texture&quot;</span>, <span class="stringliteral">&quot;ossia score&quot;</span>, QStringList{}, {}, {},</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    Process::ProcessFlags::SupportsAll)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace</span> Jit</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Fun_T&gt;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">struct </span>Driver;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">using</span> TexgenFunction = void(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* rgb, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">int</span> t);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">using</span> TexgenCompiler = Driver&lt;TexgenFunction&gt;;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">using</span> TexgenFactory = std::function&lt;TexgenFunction&gt;;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">class </span>TexgenModel : <span class="keyword">public</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span>JitUI;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span>JitUpdateUI;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  SCORE_SERIALIZE_FRIENDS</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  PROCESS_METADATA_IMPL(TexgenModel)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  W_OBJECT(TexgenModel)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  TexgenModel(</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <a class="code" href="struct_time_val.html">TimeVal</a> t, <span class="keyword">const</span> QString&amp; jitProgram, <span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Process::ProcessModel&gt;</a>&amp;,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      QObject* parent);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  ~TexgenModel() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  TexgenModel(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  TexgenModel(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  TexgenModel(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  TexgenModel(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">bool</span> validate(<span class="keyword">const</span> QString&amp; txt) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">const</span> QString&amp; script() const noexcept { <span class="keywordflow">return</span> m_text; }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> setScript(<span class="keyword">const</span> QString&amp; txt);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> scriptChanged(<span class="keyword">const</span> QString&amp; txt) W_SIGNAL(scriptChanged, txt);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> hasExternalUI() noexcept { <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  QString prettyName() const noexcept override;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> changed() W_SIGNAL(changed);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  TexgenFactory factory;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> errorMessage(<span class="keywordtype">int</span> line, const QString&amp; e) W_SIGNAL(errorMessage, line, e);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  PROPERTY(QString, script READ script WRITE setScript NOTIFY scriptChanged)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;private:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  QString effect() const noexcept override;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> loadPreset(const <a class="code" href="namespace_process.html">Process</a>::Preset&amp; preset) override;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <a class="code" href="namespace_process.html">Process</a>::Preset savePreset() const noexcept override;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">void</span> init();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> reload();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  QString m_text;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  std::unique_ptr&lt;TexgenCompiler&gt; m_compiler;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  PROPERTY(QString, script READ script WRITE setScript NOTIFY scriptChanged)</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;private:</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  QString effect() const noexcept override;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">void</span> loadPreset(const <a class="code" href="namespace_process.html">Process</a>::Preset&amp; preset) override;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="namespace_process.html">Process</a>::Preset savePreset() const noexcept override;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">void</span> init();</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">void</span> reload();</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  QString m_text;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  std::unique_ptr&lt;TexgenCompiler&gt; m_compiler;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;namespace <a class="code" href="namespace_process.html">Process</a></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;QString</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;EffectProcessFactory_T&lt;Jit::TexgenModel&gt;::customConstructionData() const noexcept;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;template &lt;&gt;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<a class="code" href="namespace_process.html">Process</a>::Descriptor</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;EffectProcessFactory_T&lt;Jit::TexgenModel&gt;::descriptor(QString d) const noexcept;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;class QPlainTextEdit;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;namespace Jit</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">struct </span>TexgenLanguageSpec</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;namespace <a class="code" href="namespace_process.html">Process</a></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;QString</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;EffectProcessFactory_T&lt;Jit::TexgenModel&gt;::customConstructionData() const noexcept;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;template &lt;&gt;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<a class="code" href="namespace_process.html">Process</a>::Descriptor</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;EffectProcessFactory_T&lt;Jit::TexgenModel&gt;::descriptor(QString d) const noexcept;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;class QPlainTextEdit;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;namespace Jit</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">struct </span>TexgenLanguageSpec</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keyword">static</span> constexpr <span class="keyword">const</span> <span class="keywordtype">char</span>* language = <span class="stringliteral">&quot;C++&quot;</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;};</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">using</span> TexgenEffectFactory = <a class="code" href="class_process_1_1_effect_process_factory___t.html">Process::EffectProcessFactory_T&lt;TexgenModel&gt;</a>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">using</span> TexgenLayerFactory = <a class="code" href="class_process_1_1_effect_layer_factory___t.html">Process::EffectLayerFactory_T</a>&lt;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    TexgenModel, <a class="code" href="class_process_1_1_default_effect_item.html">Process::DefaultEffectItem</a>,</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="class_process_1_1_process_script_edit_dialog.html">Process::ProcessScriptEditDialog</a>&lt;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        TexgenModel, TexgenModel::p_script, TexgenLanguageSpec&gt;&gt;;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">class </span>TexgenExecutor final</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    : <span class="keyword">public</span> <a class="code" href="struct_execution_1_1_process_component___t.html">Execution::ProcessComponent_T</a>&lt;Jit::TexgenModel, ossia::node_process&gt;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;{</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keyword">static</span> constexpr <span class="keyword">const</span> <span class="keywordtype">char</span>* language = <span class="stringliteral">&quot;C++&quot;</span>;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;};</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">using</span> TexgenEffectFactory = <a class="code" href="class_process_1_1_effect_process_factory___t.html">Process::EffectProcessFactory_T&lt;TexgenModel&gt;</a>;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">using</span> TexgenLayerFactory = <a class="code" href="class_process_1_1_effect_layer_factory___t.html">Process::EffectLayerFactory_T</a>&lt;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    TexgenModel,</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="class_process_1_1_default_effect_item.html">Process::DefaultEffectItem</a>,</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="code" href="class_process_1_1_process_script_edit_dialog.html">Process::ProcessScriptEditDialog</a>&lt;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        TexgenModel,</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        TexgenModel::p_script,</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        TexgenLanguageSpec&gt;&gt;;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keyword">class </span>TexgenExecutor final</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    : <span class="keyword">public</span> <a class="code" href="namespace_execution.html">Execution</a>::</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;          ProcessComponent_T&lt;Jit::TexgenModel, ossia::node_process&gt;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;{</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  COMPONENT_METADATA(<span class="stringliteral">&quot;ec4bd3af-8d81-4d92-9b53-86a34d8108f8&quot;</span>)</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;public:</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  static constexpr <span class="keywordtype">bool</span> is_unique = true;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  TexgenExecutor(</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      Jit::TexgenModel&amp; proc,</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;      const <a class="code" href="namespace_execution.html">Execution</a>::Context&amp; ctx,</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;      QObject* parent);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  ~TexgenExecutor() override;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;};</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;using TexgenExecutorFactory</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    = <a class="code" href="namespace_execution.html">Execution</a>::ProcessComponentFactory_T&lt;TexgenExecutor&gt;;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  COMPONENT_METADATA(<span class="stringliteral">&quot;ec4bd3af-8d81-4d92-9b53-86a34d8108f8&quot;</span>)</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;public:</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  static constexpr <span class="keywordtype">bool</span> is_unique = true;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  TexgenExecutor(Jit::TexgenModel&amp; proc, const <a class="code" href="namespace_execution.html">Execution</a>::Context&amp; ctx, QObject* parent);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  ~TexgenExecutor() override;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;};</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;using TexgenExecutorFactory = <a class="code" href="namespace_execution.html">Execution</a>::ProcessComponentFactory_T&lt;TexgenExecutor&gt;;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;namespace Jit</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;{</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keyword">class </span>EditTexgen : <span class="keyword">public</span> <a class="code" href="class_scenario_1_1_edit_script.html">Scenario::EditScript</a>&lt;TexgenModel, TexgenModel::p_script&gt;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;{</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  SCORE_COMMAND_DECL(CommandFactoryName(), EditTexgen, <span class="stringliteral">&quot;Edit a texture script&quot;</span>)</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;public:</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  using <a class="code" href="namespace_scenario.html">Scenario</a>::EditScript&lt;TexgenModel, TexgenModel::p_script&gt;::EditScript;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;};</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;namespace <a class="code" href="namespacescore.html">score</a></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;{</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="keyword">struct </span>StaticPropertyCommand&lt;Jit::TexgenModel::p_script&gt; : Jit::EditTexgen</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;{</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="keyword">using</span> Jit::EditTexgen::EditTexgen;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;};</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;}</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;namespace Jit</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;{</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keyword">class </span>EditTexgen</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    : <span class="keyword">public</span> <a class="code" href="class_scenario_1_1_edit_script.html">Scenario::EditScript</a>&lt;TexgenModel, TexgenModel::p_script&gt;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;{</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  SCORE_COMMAND_DECL(CommandFactoryName(), EditTexgen, <span class="stringliteral">&quot;Edit a texture script&quot;</span>)</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;public:</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  using <a class="code" href="namespace_scenario.html">Scenario</a>::EditScript&lt;TexgenModel, TexgenModel::p_script&gt;::</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      EditScript;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;};</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;namespace <a class="code" href="namespacescore.html">score</a></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;{</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="keyword">struct </span>StaticPropertyCommand&lt;Jit::TexgenModel::p_script&gt;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    : Jit::EditTexgen</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;{</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keyword">using</span> Jit::EditTexgen::EditTexgen;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;};</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1371</div></div>
-<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>
-<div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition:</b> TimeValue.hpp:19</div></div>
-<div class="ttc" id="aclass_process_1_1_effect_process_factory___t_html"><div class="ttname"><a href="class_process_1_1_effect_process_factory___t.html">Process::EffectProcessFactory_T</a></div><div class="ttdef"><b>Definition:</b> EffectFactory.hpp:12</div></div>
-<div class="ttc" id="aclass_scenario_1_1_edit_script_html"><div class="ttname"><a href="class_scenario_1_1_edit_script.html">Scenario::EditScript</a></div><div class="ttdef"><b>Definition:</b> ScriptEditCommand.hpp:20</div></div>
-<div class="ttc" id="aclass_process_1_1_default_effect_item_html"><div class="ttname"><a href="class_process_1_1_default_effect_item.html">Process::DefaultEffectItem</a></div><div class="ttdef"><b>Definition:</b> DefaultEffectItem.hpp:24</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:146</div></div>
+<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1326</div></div>
+<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:13</div></div>
+<div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition:</b> TimeValue.hpp:20</div></div>
+<div class="ttc" id="aclass_process_1_1_effect_process_factory___t_html"><div class="ttname"><a href="class_process_1_1_effect_process_factory___t.html">Process::EffectProcessFactory_T</a></div><div class="ttdef"><b>Definition:</b> EffectFactory.hpp:13</div></div>
+<div class="ttc" id="aclass_scenario_1_1_edit_script_html"><div class="ttname"><a href="class_scenario_1_1_edit_script.html">Scenario::EditScript</a></div><div class="ttdef"><b>Definition:</b> ScriptEditCommand.hpp:21</div></div>
+<div class="ttc" id="aclass_process_1_1_default_effect_item_html"><div class="ttname"><a href="class_process_1_1_default_effect_item.html">Process::DefaultEffectItem</a></div><div class="ttdef"><b>Definition:</b> DefaultEffectItem.hpp:25</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:160</div></div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition:</b> Identifier.hpp:56</div></div>
 <div class="ttc" id="anamespace_execution_html"><div class="ttname"><a href="namespace_execution.html">Execution</a></div><div class="ttdoc">Components used for the execution of a score.</div><div class="ttdef"><b>Definition:</b> ProcessComponent.cpp:11</div></div>
 <div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Process.hpp:54</div></div>
-<div class="ttc" id="aclass_process_1_1_process_script_edit_dialog_html"><div class="ttname"><a href="class_process_1_1_process_script_edit_dialog.html">Process::ProcessScriptEditDialog</a></div><div class="ttdef"><b>Definition:</b> ScriptEditor.hpp:41</div></div>
-<div class="ttc" id="aclass_data_stream_writer_html"><div class="ttname"><a href="class_data_stream_writer.html">DataStreamWriter</a></div><div class="ttdef"><b>Definition:</b> DataStreamVisitor.hpp:207</div></div>
-<div class="ttc" id="aclass_j_s_o_n_writer_html"><div class="ttname"><a href="class_j_s_o_n_writer.html">JSONWriter</a></div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:432</div></div>
-<div class="ttc" id="aclass_process_1_1_effect_layer_factory___t_html"><div class="ttname"><a href="class_process_1_1_effect_layer_factory___t.html">Process::EffectLayerFactory_T</a></div><div class="ttdef"><b>Definition:</b> EffectFactory.hpp:68</div></div>
+<div class="ttc" id="aclass_process_1_1_process_script_edit_dialog_html"><div class="ttname"><a href="class_process_1_1_process_script_edit_dialog.html">Process::ProcessScriptEditDialog</a></div><div class="ttdef"><b>Definition:</b> ScriptEditor.hpp:40</div></div>
+<div class="ttc" id="aclass_data_stream_writer_html"><div class="ttname"><a href="class_data_stream_writer.html">DataStreamWriter</a></div><div class="ttdef"><b>Definition:</b> DataStreamVisitor.hpp:205</div></div>
+<div class="ttc" id="aclass_j_s_o_n_writer_html"><div class="ttname"><a href="class_j_s_o_n_writer.html">JSONWriter</a></div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:424</div></div>
+<div class="ttc" id="aclass_process_1_1_effect_layer_factory___t_html"><div class="ttname"><a href="class_process_1_1_effect_layer_factory___t.html">Process::EffectLayerFactory_T</a></div><div class="ttdef"><b>Definition:</b> EffectFactory.hpp:65</div></div>
+<div class="ttc" id="astruct_execution_1_1_process_component___t_html"><div class="ttname"><a href="struct_execution_1_1_process_component___t.html">Execution::ProcessComponent_T</a></div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:86</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

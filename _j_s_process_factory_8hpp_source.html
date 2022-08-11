@@ -99,39 +99,37 @@ $(document).ready(function(){initNavTree('_j_s_process_factory_8hpp_source.html'
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Control/DefaultEffectItem.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Effect/EffectFactory.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;JS/JSProcessMetadata.hpp&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;JS/JSProcessModel.hpp&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Process/GenericProcessFactory.hpp&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;Process/ProcessFactory.hpp&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;Process/Script/ScriptEditor.hpp&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;Process/WidgetLayer/WidgetProcessFactory.hpp&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>JS</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="struct_j_s_1_1_language_spec.html">   13</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_j_s_1_1_language_spec.html">LanguageSpec</a></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">static</span> constexpr <span class="keyword">const</span> <span class="keywordtype">char</span>* language = <span class="stringliteral">&quot;JS&quot;</span>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;};</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">using</span> <a class="code" href="class_process_1_1_process_factory___t.html">ProcessFactory</a> = <a class="code" href="class_process_1_1_process_factory___t.html">Process::ProcessFactory_T&lt;JS::ProcessModel&gt;</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">using</span> <a class="code" href="class_process_1_1_effect_layer_factory___t.html">LayerFactory</a> = <a class="code" href="class_process_1_1_effect_layer_factory___t.html">Process::EffectLayerFactory_T</a>&lt;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_j_s_1_1_process_model.html">ProcessModel</a>,</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_process_1_1_default_effect_item.html">Process::DefaultEffectItem</a>,</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Process/GenericProcessFactory.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Process/ProcessFactory.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Process/Script/ScriptEditor.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Process/WidgetLayer/WidgetProcessFactory.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;Control/DefaultEffectItem.hpp&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;Effect/EffectFactory.hpp&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;JS/JSProcessMetadata.hpp&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;JS/JSProcessModel.hpp&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>JS</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="struct_j_s_1_1_language_spec.html">   14</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_j_s_1_1_language_spec.html">LanguageSpec</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">static</span> constexpr <span class="keyword">const</span> <span class="keywordtype">char</span>* language = <span class="stringliteral">&quot;JS&quot;</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">using</span> <a class="code" href="class_process_1_1_process_factory___t.html">ProcessFactory</a> = <a class="code" href="class_process_1_1_process_factory___t.html">Process::ProcessFactory_T&lt;JS::ProcessModel&gt;</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">using</span> <a class="code" href="class_process_1_1_effect_layer_factory___t.html">LayerFactory</a> = <a class="code" href="class_process_1_1_effect_layer_factory___t.html">Process::EffectLayerFactory_T</a>&lt;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_j_s_1_1_process_model.html">ProcessModel</a>, <a class="code" href="class_process_1_1_default_effect_item.html">Process::DefaultEffectItem</a>,</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_process_1_1_process_script_edit_dialog.html">Process::ProcessScriptEditDialog</a>&lt;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="class_j_s_1_1_process_model.html">ProcessModel</a>,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        ProcessModel::p_script,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="struct_j_s_1_1_language_spec.html">LanguageSpec</a>&gt;&gt;;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="class_j_s_1_1_process_model.html">ProcessModel</a>, ProcessModel::p_script, <a class="code" href="struct_j_s_1_1_language_spec.html">LanguageSpec</a>&gt;&gt;;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_process_1_1_default_effect_item_html"><div class="ttname"><a href="class_process_1_1_default_effect_item.html">Process::DefaultEffectItem</a></div><div class="ttdef"><b>Definition:</b> DefaultEffectItem.hpp:24</div></div>
+<div class="ttc" id="aclass_process_1_1_default_effect_item_html"><div class="ttname"><a href="class_process_1_1_default_effect_item.html">Process::DefaultEffectItem</a></div><div class="ttdef"><b>Definition:</b> DefaultEffectItem.hpp:25</div></div>
 <div class="ttc" id="aclass_process_1_1_process_factory___t_html"><div class="ttname"><a href="class_process_1_1_process_factory___t.html">Process::ProcessFactory_T</a></div><div class="ttdef"><b>Definition:</b> GenericProcessFactory.hpp:14</div></div>
-<div class="ttc" id="astruct_j_s_1_1_language_spec_html"><div class="ttname"><a href="struct_j_s_1_1_language_spec.html">JS::LanguageSpec</a></div><div class="ttdef"><b>Definition:</b> JSProcessFactory.hpp:13</div></div>
-<div class="ttc" id="aclass_process_1_1_process_script_edit_dialog_html"><div class="ttname"><a href="class_process_1_1_process_script_edit_dialog.html">Process::ProcessScriptEditDialog</a></div><div class="ttdef"><b>Definition:</b> ScriptEditor.hpp:41</div></div>
-<div class="ttc" id="aclass_process_1_1_effect_layer_factory___t_html"><div class="ttname"><a href="class_process_1_1_effect_layer_factory___t.html">Process::EffectLayerFactory_T</a></div><div class="ttdef"><b>Definition:</b> EffectFactory.hpp:68</div></div>
-<div class="ttc" id="aclass_j_s_1_1_process_model_html"><div class="ttname"><a href="class_j_s_1_1_process_model.html">JS::ProcessModel</a></div><div class="ttdef"><b>Definition:</b> JSProcessModel.hpp:39</div></div>
+<div class="ttc" id="astruct_j_s_1_1_language_spec_html"><div class="ttname"><a href="struct_j_s_1_1_language_spec.html">JS::LanguageSpec</a></div><div class="ttdef"><b>Definition:</b> JSProcessFactory.hpp:14</div></div>
+<div class="ttc" id="aclass_process_1_1_process_script_edit_dialog_html"><div class="ttname"><a href="class_process_1_1_process_script_edit_dialog.html">Process::ProcessScriptEditDialog</a></div><div class="ttdef"><b>Definition:</b> ScriptEditor.hpp:40</div></div>
+<div class="ttc" id="aclass_process_1_1_effect_layer_factory___t_html"><div class="ttname"><a href="class_process_1_1_effect_layer_factory___t.html">Process::EffectLayerFactory_T</a></div><div class="ttdef"><b>Definition:</b> EffectFactory.hpp:65</div></div>
+<div class="ttc" id="aclass_j_s_1_1_process_model_html"><div class="ttname"><a href="class_j_s_1_1_process_model.html">JS::ProcessModel</a></div><div class="ttdef"><b>Definition:</b> JSProcessModel.hpp:38</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

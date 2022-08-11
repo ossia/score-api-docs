@@ -95,6 +95,7 @@ $(document).ready(function(){initNavTree('classscore_1_1_settings_delegate_facto
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classscore_1_1_settings_delegate_factory-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -118,22 +119,32 @@ Inheritance diagram for score::SettingsDelegateFactory:</div>
 <div class="textblock"><p>The <a class="el" href="classscore_1_1_settings_delegate_factory.html" title="The SettingsDelegateFactory class.">SettingsDelegateFactory</a> class. </p>
 <p>Reimplement in order to provide custom user settings for the plug-in. </p>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:aedb5060af04ce9c1271133a5a62101b4"><td class="memItemLeft" align="right" valign="top"><a id="aedb5060af04ce9c1271133a5a62101b4"></a>
-virtual <a class="el" href="classscore_1_1_settings_delegate_presenter.html">GlobalSettingsPresenter</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>makePresenter_impl</b> (<a class="el" href="classscore_1_1_settings_delegate_model.html">score::SettingsDelegateModel</a> &amp;m, <a class="el" href="classscore_1_1_settings_delegate_view.html">score::GlobalSettingsView</a> &amp;v, QObject *parent)=0</td></tr>
-<tr class="separator:aedb5060af04ce9c1271133a5a62101b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a8c50928412385e28b243218be41b84e4"><td class="memItemLeft" align="right" valign="top"><a id="a8c50928412385e28b243218be41b84e4"></a>
+<a class="el" href="classscore_1_1_settings_delegate_presenter.html">GlobalSettingsPresenter</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>makePresenter</b> (<a class="el" href="classscore_1_1_settings_delegate_model.html">score::SettingsDelegateModel</a> &amp;m, <a class="el" href="classscore_1_1_settings_delegate_view.html">score::GlobalSettingsView</a> &amp;v, QObject *parent)</td></tr>
+<tr class="separator:a8c50928412385e28b243218be41b84e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f631a1e17daf26049b1d22f537bafd"><td class="memItemLeft" align="right" valign="top"><a id="ae8f631a1e17daf26049b1d22f537bafd"></a>
+virtual <a class="el" href="classscore_1_1_settings_delegate_view.html">GlobalSettingsView</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>makeView</b> ()=0</td></tr>
+<tr class="separator:ae8f631a1e17daf26049b1d22f537bafd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f9aa5ec073522c988d624eefebd8364"><td class="memItemLeft" align="right" valign="top"><a id="a5f9aa5ec073522c988d624eefebd8364"></a>
+virtual std::unique_ptr&lt; <a class="el" href="classscore_1_1_settings_delegate_model.html">SettingsDelegateModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>makeModel</b> (QSettings &amp;settings, const <a class="el" href="structscore_1_1_application_context.html">score::ApplicationContext</a> &amp;ctx)=0</td></tr>
+<tr class="separator:a5f9aa5ec073522c988d624eefebd8364"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1_interface_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1_interface_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1_interface_base.html">score::InterfaceBase</a></td></tr>
 <tr class="memitem:a993744914ec2a9cdf05f07f6f1643d55 inherit pub_methods_classscore_1_1_interface_base"><td class="memItemLeft" align="right" valign="top"><a id="a993744914ec2a9cdf05f07f6f1643d55"></a>
 virtual <a class="el" href="class_uuid_key.html">InterfaceKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_interface_base.html#a993744914ec2a9cdf05f07f6f1643d55">interfaceKey</a> () const noexcept=0</td></tr>
 <tr class="memdesc:a993744914ec2a9cdf05f07f6f1643d55 inherit pub_methods_classscore_1_1_interface_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifies an interface uniquely. <br /></td></tr>
 <tr class="separator:a993744914ec2a9cdf05f07f6f1643d55 inherit pub_methods_classscore_1_1_interface_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aedb5060af04ce9c1271133a5a62101b4"><td class="memItemLeft" align="right" valign="top"><a id="aedb5060af04ce9c1271133a5a62101b4"></a>
+virtual <a class="el" href="classscore_1_1_settings_delegate_presenter.html">GlobalSettingsPresenter</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>makePresenter_impl</b> (<a class="el" href="classscore_1_1_settings_delegate_model.html">score::SettingsDelegateModel</a> &amp;m, <a class="el" href="classscore_1_1_settings_delegate_view.html">score::GlobalSettingsView</a> &amp;v, QObject *parent)=0</td></tr>
+<tr class="separator:aedb5060af04ce9c1271133a5a62101b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_settings_delegate_factory_8hpp_source.html">SettingsDelegateFactory.hpp</a></li>
+<li>SettingsDelegateFactory.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('_node_list_mime_serialization_8hpp_sou
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_j_s_o_n_reader.html">JSONReader</a> r;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    r.stream.StartArray();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; elt : lst)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; elt : lst)</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      r.stream.StartObject();</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      r.obj[<span class="stringliteral">&quot;Node&quot;</span>] = *elt;</div>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('_node_list_mime_serialization_8hpp_sou
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; arr = json.GetArray();</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">auto</span>&amp; strings = score::StringConstant();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> rapidjson::Value&amp; elt : arr)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> rapidjson::Value&amp; elt : arr)</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a> des{elt};</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      Device::FreeNode n;</div>
@@ -164,8 +164,8 @@ $(document).ready(function(){initNavTree('_node_list_mime_serialization_8hpp_sou
 <div class="ttc" id="astruct_mime_data_writer_html"><div class="ttname"><a href="struct_mime_data_writer.html">MimeDataWriter</a></div><div class="ttdef"><b>Definition:</b> MimeVisitor.hpp:31</div></div>
 <div class="ttc" id="astruct_mime_writer_html"><div class="ttname"><a href="struct_mime_writer.html">MimeWriter</a></div><div class="ttdef"><b>Definition:</b> MimeVisitor.hpp:9</div></div>
 <div class="ttc" id="astruct_mime_reader_html"><div class="ttname"><a href="struct_mime_reader.html">MimeReader</a></div><div class="ttdef"><b>Definition:</b> MimeVisitor.hpp:7</div></div>
-<div class="ttc" id="aclass_j_s_o_n_writer_html"><div class="ttname"><a href="class_j_s_o_n_writer.html">JSONWriter</a></div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:432</div></div>
-<div class="ttc" id="anamespace_device_html"><div class="ttname"><a href="namespace_device.html">Device</a></div><div class="ttdoc">Manipulation of Devices from Qt.</div><div class="ttdef"><b>Definition:</b> AddressSettings.cpp:12</div></div>
+<div class="ttc" id="aclass_j_s_o_n_writer_html"><div class="ttname"><a href="class_j_s_o_n_writer.html">JSONWriter</a></div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:424</div></div>
+<div class="ttc" id="anamespace_device_html"><div class="ttname"><a href="namespace_device.html">Device</a></div><div class="ttdoc">Manipulation of Devices from Qt.</div><div class="ttdef"><b>Definition:</b> AddressSettings.cpp:13</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

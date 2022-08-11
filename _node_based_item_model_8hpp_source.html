@@ -122,11 +122,11 @@ $(document).ready(function(){initNavTree('_node_based_item_model_8hpp_source.htm
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  QModelIndex modelIndexFromNode(<a class="code" href="class_tree_node.html">node_type</a>&amp; n, <span class="keywordtype">int</span> column)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">if</span> (n.is&lt;<a class="code" href="struct_invisible_root_node.html">InvisibleRootNode</a>&gt;())</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">if</span>(n.is&lt;<a class="code" href="struct_invisible_root_node.html">InvisibleRootNode</a>&gt;())</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      <span class="keywordflow">return</span> QModelIndex();</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (n.is&lt;<a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&gt;())</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(n.is&lt;<a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&gt;())</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    {</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      SCORE_ASSERT(n.parent());</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keywordflow">return</span> createIndex(n.parent()-&gt;indexOfChild(&amp;n), 0, &amp;n);</div>
@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('_node_based_item_model_8hpp_source.htm
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  {</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    SCORE_ASSERT(!node-&gt;is&lt;<a class="code" href="struct_invisible_root_node.html">InvisibleRootNode</a>&gt;());</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span> (node-&gt;is&lt;<a class="code" href="struct_device_1_1_address_settings.html">Device::AddressSettings</a>&gt;())</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span>(node-&gt;is&lt;<a class="code" href="struct_device_1_1_address_settings.html">Device::AddressSettings</a>&gt;())</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    {</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <a class="code" href="class_tree_node.html">node_type</a>* parent = node-&gt;parent();</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      SCORE_ASSERT(parent);</div>
@@ -190,23 +190,20 @@ $(document).ready(function(){initNavTree('_node_based_item_model_8hpp_source.htm
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;SCORE_LIB_DEVICE_EXPORT <a class="code" href="struct_device_1_1_full_address_accessor_settings.html">Device::FullAddressAccessorSettings</a></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;makeFullAddressAccessorSettings(</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">const</span> <a class="code" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a>&amp; mess,</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_device_1_1_node_based_item_model.html">Device::NodeBasedItemModel</a>&amp; ctx,</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    ossia::value min,</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    ossia::value max,</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    ossia::value val);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;SCORE_LIB_DEVICE_EXPORT <a class="code" href="struct_device_1_1_full_address_accessor_settings.html">Device::FullAddressAccessorSettings</a></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;makeFullAddressAccessorSettings(<span class="keyword">const</span> <a class="code" href="class_tree_node.html">Device::Node</a>&amp; mess);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">const</span> <a class="code" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a>&amp; mess, <span class="keyword">const</span> <a class="code" href="class_device_1_1_node_based_item_model.html">Device::NodeBasedItemModel</a>&amp; ctx,</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    ossia::value min, ossia::value max, ossia::value val);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;SCORE_LIB_DEVICE_EXPORT <a class="code" href="struct_device_1_1_full_address_accessor_settings.html">Device::FullAddressAccessorSettings</a></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;makeFullAddressAccessorSettings(<span class="keyword">const</span> <a class="code" href="class_tree_node.html">Device::Node</a>&amp; mess);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_tree_node_html"><div class="ttname"><a href="class_tree_node.html">TreeNode&lt; DeviceExplorerNode &gt;</a></div></div>
 <div class="ttc" id="aclass_tree_node_based_item_model_html"><div class="ttname"><a href="class_tree_node_based_item_model.html">TreeNodeBasedItemModel</a></div><div class="ttdef"><b>Definition:</b> TreeNodeItemModel.hpp:37</div></div>
-<div class="ttc" id="astruct_device_1_1_address_settings_html"><div class="ttname"><a href="struct_device_1_1_address_settings.html">Device::AddressSettings</a></div><div class="ttdef"><b>Definition:</b> AddressSettings.hpp:50</div></div>
+<div class="ttc" id="astruct_device_1_1_address_settings_html"><div class="ttname"><a href="struct_device_1_1_address_settings.html">Device::AddressSettings</a></div><div class="ttdef"><b>Definition:</b> AddressSettings.hpp:48</div></div>
 <div class="ttc" id="astruct_invisible_root_node_html"><div class="ttname"><a href="struct_invisible_root_node.html">InvisibleRootNode</a></div><div class="ttdoc">The InvisibleRootNodeTag struct.</div><div class="ttdef"><b>Definition:</b> InvisibleRootNode.hpp:10</div></div>
-<div class="ttc" id="astruct_device_1_1_full_address_accessor_settings_html"><div class="ttname"><a href="struct_device_1_1_full_address_accessor_settings.html">Device::FullAddressAccessorSettings</a></div><div class="ttdef"><b>Definition:</b> AddressSettings.hpp:138</div></div>
+<div class="ttc" id="astruct_device_1_1_full_address_accessor_settings_html"><div class="ttname"><a href="struct_device_1_1_full_address_accessor_settings.html">Device::FullAddressAccessorSettings</a></div><div class="ttdef"><b>Definition:</b> AddressSettings.hpp:130</div></div>
 <div class="ttc" id="aclass_device_1_1_node_based_item_model_html"><div class="ttname"><a href="class_device_1_1_node_based_item_model.html">Device::NodeBasedItemModel</a></div><div class="ttdef"><b>Definition:</b> NodeBasedItemModel.hpp:16</div></div>
-<div class="ttc" id="anamespace_device_html"><div class="ttname"><a href="namespace_device.html">Device</a></div><div class="ttdoc">Manipulation of Devices from Qt.</div><div class="ttdef"><b>Definition:</b> AddressSettings.cpp:12</div></div>
+<div class="ttc" id="anamespace_device_html"><div class="ttname"><a href="namespace_device.html">Device</a></div><div class="ttdoc">Manipulation of Devices from Qt.</div><div class="ttdef"><b>Definition:</b> AddressSettings.cpp:13</div></div>
 <div class="ttc" id="astruct_device_1_1_device_settings_html"><div class="ttname"><a href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a></div><div class="ttdef"><b>Definition:</b> DeviceSettings.hpp:15</div></div>
 <div class="ttc" id="astruct_state_1_1_address_accessor_html"><div class="ttname"><a href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a></div><div class="ttdef"><b>Definition:</b> Address.hpp:107</div></div>
 <!-- HTML footer for doxygen 1.8.8-->

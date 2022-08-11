@@ -118,77 +118,72 @@ $(document).ready(function(){initNavTree('_jit_utils_8hpp_source.html',''); init
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <a class="code" href="struct_jit_1_1_exception.html">Exception</a>(llvm::Error E)</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      : std::runtime_error{<span class="stringliteral">&quot;JIT error&quot;</span>}</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    llvm::handleAllErrors(std::move(E), [&amp;](<span class="keyword">const</span> llvm::ErrorInfoBase&amp; EI) {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      m_err = EI.message();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    });</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span>* what() <span class="keyword">const</span> noexcept <span class="keyword">override</span> { <span class="keywordflow">return</span> m_err.c_str(); }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  std::string m_err;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="struct_jit_1_1_timer.html">   32</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_jit_1_1_timer.html">Timer</a></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  std::chrono::high_resolution_clock::time_point t0;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="struct_jit_1_1_timer.html">Timer</a>() { t0 = decltype(t0)::clock::now(); }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  ~<a class="code" href="struct_jit_1_1_timer.html">Timer</a>()</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">auto</span> t1 = decltype(t0)::clock::now();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    std::cerr &lt;&lt; <span class="stringliteral">&quot;Took time: &quot;</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;              &lt;&lt; std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(t1 - t0)</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                     .count()</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;              &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">inline</span> llvm::Expected&lt;std::unique_ptr&lt;llvm::Module&gt;&gt;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;readModuleFromBitcodeFile(llvm::StringRef bc, llvm::LLVMContext&amp; context)</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  llvm::ErrorOr&lt;std::unique_ptr&lt;llvm::MemoryBuffer&gt;&gt; buffer</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      = llvm::MemoryBuffer::getFile(bc);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordflow">if</span> (!buffer)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> llvm::errorCodeToError(buffer.getError());</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordflow">return</span> llvm::parseBitcodeFile(buffer.get()-&gt;getMemBufferRef(), context);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> std::string</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;replaceExtension(llvm::StringRef name, llvm::StringRef ext)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordflow">return</span> name.substr(0, name.find_last_of(<span class="charliteral">&#39;.&#39;</span>) + 1).str() + ext.str();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> llvm::Error</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;return_code_error(llvm::StringRef message, <span class="keywordtype">int</span> returnCode)</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordflow">return</span> llvm::make_error&lt;llvm::StringError&gt;(</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      message, std::error_code(returnCode, std::system_category()));</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    llvm::handleAllErrors(</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        std::move(E), [&amp;](<span class="keyword">const</span> llvm::ErrorInfoBase&amp; EI) { m_err = EI.message(); });</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span>* what() <span class="keyword">const</span> noexcept <span class="keyword">override</span> { <span class="keywordflow">return</span> m_err.c_str(); }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  std::string m_err;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_jit_1_1_timer.html">   31</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_jit_1_1_timer.html">Timer</a></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  std::chrono::high_resolution_clock::time_point t0;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="struct_jit_1_1_timer.html">Timer</a>() { t0 = decltype(t0)::clock::now(); }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  ~<a class="code" href="struct_jit_1_1_timer.html">Timer</a>()</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">auto</span> t1 = decltype(t0)::clock::now();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    std::cerr &lt;&lt; <span class="stringliteral">&quot;Took time: &quot;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;              &lt;&lt; std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(t1 - t0).count()</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;              &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">inline</span> llvm::Expected&lt;std::unique_ptr&lt;llvm::Module&gt;&gt;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;readModuleFromBitcodeFile(llvm::StringRef bc, llvm::LLVMContext&amp; context)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  llvm::ErrorOr&lt;std::unique_ptr&lt;llvm::MemoryBuffer&gt;&gt; buffer</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      = llvm::MemoryBuffer::getFile(bc);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordflow">if</span>(!buffer)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> llvm::errorCodeToError(buffer.getError());</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">return</span> llvm::parseBitcodeFile(buffer.get()-&gt;getMemBufferRef(), context);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> std::string replaceExtension(llvm::StringRef name, llvm::StringRef ext)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordflow">return</span> name.substr(0, name.find_last_of(<span class="charliteral">&#39;.&#39;</span>) + 1).str() + ext.str();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> llvm::Error return_code_error(llvm::StringRef message, <span class="keywordtype">int</span> returnCode)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">return</span> llvm::make_error&lt;llvm::StringError&gt;(</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      message, std::error_code(returnCode, std::system_category()));</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> llvm::Expected&lt;std::string&gt; saveSourceFile(<span class="keyword">const</span> std::string&amp; content)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">using</span> llvm::sys::fs::createTemporaryFile;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> llvm::Expected&lt;std::string&gt;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;saveSourceFile(<span class="keyword">const</span> std::string&amp; content)</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">using</span> llvm::sys::fs::createTemporaryFile;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">int</span> fd;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  llvm::SmallString&lt;128&gt; name;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordflow">if</span>(<span class="keyword">auto</span> ec = createTemporaryFile(<span class="stringliteral">&quot;score-addon-cpp&quot;</span>, <span class="stringliteral">&quot;cpp&quot;</span>, fd, name))</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> llvm::errorCodeToError(ec);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">int</span> fd;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  llvm::SmallString&lt;128&gt; name;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">auto</span> ec = createTemporaryFile(<span class="stringliteral">&quot;score-addon-cpp&quot;</span>, <span class="stringliteral">&quot;cpp&quot;</span>, fd, name))</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> llvm::errorCodeToError(ec);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  constexpr <span class="keywordtype">bool</span> shouldClose = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  constexpr <span class="keywordtype">bool</span> unbuffered = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  llvm::raw_fd_ostream os(fd, shouldClose, unbuffered);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  os &lt;&lt; content;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  constexpr <span class="keywordtype">bool</span> shouldClose = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  constexpr <span class="keywordtype">bool</span> unbuffered = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  llvm::raw_fd_ostream os(fd, shouldClose, unbuffered);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  os &lt;&lt; content;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordflow">return</span> name.str().str();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordflow">return</span> name.str().str();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astruct_jit_1_1_timer_html"><div class="ttname"><a href="struct_jit_1_1_timer.html">Jit::Timer</a></div><div class="ttdef"><b>Definition:</b> JitUtils.hpp:32</div></div>
+<div class="ttc" id="astruct_jit_1_1_timer_html"><div class="ttname"><a href="struct_jit_1_1_timer.html">Jit::Timer</a></div><div class="ttdef"><b>Definition:</b> JitUtils.hpp:31</div></div>
 <div class="ttc" id="astruct_jit_1_1_exception_html"><div class="ttname"><a href="struct_jit_1_1_exception.html">Jit::Exception</a></div><div class="ttdef"><b>Definition:</b> JitUtils.hpp:15</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

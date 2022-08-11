@@ -105,34 +105,33 @@ $(document).ready(function(){initNavTree('_pointer_8hpp_source.html',''); initRe
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifdef SCORE_DEBUG</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Derived, <span class="keyword">typename</span> Base, <span class="keyword">typename</span> Del&gt;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;std::unique_ptr&lt;Derived&gt;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;dynamic_unique_ptr_cast(std::unique_ptr&lt;Base, Del&gt;&amp;&amp; p)</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <span class="keywordflow">if</span> (Derived* result = <span class="keyword">dynamic_cast&lt;</span>Derived*<span class="keyword">&gt;</span>(p.get()))</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    p.release();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">return</span> std::unique_ptr&lt;Derived&gt;(result);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  }</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">auto</span> safe_unique_ptr_cast(std::unique_ptr&lt;U&gt; other)</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">auto</span> res = dynamic_unique_ptr_cast&lt;T&gt;(other);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  SCORE_ASSERT(res);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordflow">return</span> res;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">// http://stackoverflow.com/a/21174979/1495627</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Derived, <span class="keyword">typename</span> Base, <span class="keyword">typename</span> Del&gt;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;std::unique_ptr&lt;Derived&gt; static_unique_ptr_cast(std::unique_ptr&lt;Base, Del&gt;&amp;&amp; p)</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordflow">return</span> std::unique_ptr&lt;Derived&gt;(<span class="keyword">static_cast&lt;</span>Derived*<span class="keyword">&gt;</span>(p.release()));</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define safe_unique_ptr_cast static_unique_ptr_cast</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;std::unique_ptr&lt;Derived&gt; dynamic_unique_ptr_cast(std::unique_ptr&lt;Base, Del&gt;&amp;&amp; p)</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <span class="keywordflow">if</span>(Derived* result = <span class="keyword">dynamic_cast&lt;</span>Derived*<span class="keyword">&gt;</span>(p.get()))</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    p.release();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">return</span> std::unique_ptr&lt;Derived&gt;(result);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  }</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">auto</span> safe_unique_ptr_cast(std::unique_ptr&lt;U&gt; other)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">auto</span> res = dynamic_unique_ptr_cast&lt;T&gt;(other);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  SCORE_ASSERT(res);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// http://stackoverflow.com/a/21174979/1495627</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Derived, <span class="keyword">typename</span> Base, <span class="keyword">typename</span> Del&gt;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;std::unique_ptr&lt;Derived&gt; static_unique_ptr_cast(std::unique_ptr&lt;Base, Del&gt;&amp;&amp; p)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordflow">return</span> std::unique_ptr&lt;Derived&gt;(<span class="keyword">static_cast&lt;</span>Derived*<span class="keyword">&gt;</span>(p.release()));</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#define safe_unique_ptr_cast static_unique_ptr_cast</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

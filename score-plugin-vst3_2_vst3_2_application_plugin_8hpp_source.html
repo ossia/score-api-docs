@@ -146,12 +146,12 @@ $(document).ready(function(){initNavTree('score-plugin-vst3_2_vst3_2_application
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">using namespace </span>Steinberg::Vst;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    FUID classID(FUID::fromTUID(cid));</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    FUID interfaceID(FUID::fromTUID(_iid));</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span> (classID == Vst::IMessage::iid &amp;&amp; interfaceID == Vst::IMessage::iid)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span>(classID == Vst::IMessage::iid &amp;&amp; interfaceID == Vst::IMessage::iid)</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      *obj = <span class="keyword">new</span> HostMessage;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keywordflow">return</span> kResultTrue;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        classID == Vst::IAttributeList::iid &amp;&amp; interfaceID == Vst::IAttributeList::iid)</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      *obj = Vst::HostAttributeList::make();</div>
@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('score-plugin-vst3_2_vst3_2_application
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    QUERY_INTERFACE(_iid, obj, FUnknown::iid, IHostApplication)</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    QUERY_INTERFACE(_iid, obj, IHostApplication::iid, IHostApplication)</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">if</span> (m_support.isPlugInterfaceSupported(_iid) == kResultTrue)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">if</span>(m_support.isPlugInterfaceSupported(_iid) == kResultTrue)</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keywordflow">return</span> kResultOk;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    *obj = <span class="keyword">nullptr</span>;</div>

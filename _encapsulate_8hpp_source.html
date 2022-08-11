@@ -99,12 +99,12 @@ $(document).ready(function(){initNavTree('_encapsulate_8hpp_source.html',''); in
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;score/command/AggregateCommand.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Scenario/Application/Menus/ScenarioCopy.hpp&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;Scenario/Commands/ScenarioCommandFactory.hpp&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Scenario/Application/Menus/ScenarioCopy.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Scenario/Commands/ScenarioCommandFactory.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;score/command/AggregateCommand.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore.html">score</a></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span>CommandStackFacade;</div>
@@ -118,58 +118,51 @@ $(document).ready(function(){initNavTree('_encapsulate_8hpp_source.html',''); in
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span>IntervalModel;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span>Command</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_scenario_1_1_command_1_1_encapsulate.html">   21</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_SCENARIO_EXPORT <a class="code" href="class_scenario_1_1_command_1_1_encapsulate.html">Encapsulate</a> final</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classscore_1_1_aggregate_command.html">score::AggregateCommand</a></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  SCORE_COMMAND_DECL(CommandFactoryName(), <a class="code" href="class_scenario_1_1_command_1_1_encapsulate.html">Encapsulate</a>, <span class="stringliteral">&quot;Encapsulate&quot;</span>)</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_scenario_1_1_command_1_1_decapsulate.html">   26</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_SCENARIO_EXPORT <a class="code" href="class_scenario_1_1_command_1_1_decapsulate.html">Decapsulate</a> final</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classscore_1_1_aggregate_command.html">score::AggregateCommand</a></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  SCORE_COMMAND_DECL(CommandFactoryName(), <a class="code" href="class_scenario_1_1_command_1_1_decapsulate.html">Decapsulate</a>, <span class="stringliteral">&quot;Decapsulate&quot;</span>)</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_scenario_1_1_encaps_data.html">   33</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_scenario_1_1_encaps_data.html">EncapsData</a></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">double</span> topY{}, bottomY{};</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>* interval{};</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;SCORE_PLUGIN_SCENARIO_EXPORT</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<a class="code" href="struct_scenario_1_1_encaps_data.html">EncapsData</a> EncapsulateElements(</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_scenario_1_1_command_1_1_macro.html">Scenario::Command::Macro</a>&amp; disp,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="struct_scenario_1_1_categorised_scenario.html">CategorisedScenario</a>&amp; cat,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">ProcessModel</a>&amp; scenar);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">// Encapsulate the selected elements of scenar in a new sub-scenario</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">void</span> EncapsulateInScenario(</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">ProcessModel</a>&amp; scenar,</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">const</span> <a class="code" href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a>&amp; stack);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">// Decpasulate a sub-scenar passed in argument in its parent scenario if</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">// possible</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">void</span> DecapsulateScenario(</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">ProcessModel</a>&amp; scenar,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">const</span> <a class="code" href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a>&amp; stack);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">void</span> Duplicate(</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">ProcessModel</a>&amp; scenar,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">const</span> <a class="code" href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a>&amp; stack);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_scenario_1_1_command_1_1_encapsulate.html">   21</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_SCENARIO_EXPORT <a class="code" href="class_scenario_1_1_command_1_1_encapsulate.html">Encapsulate</a> final : <span class="keyword">public</span> <a class="code" href="classscore_1_1_aggregate_command.html">score::AggregateCommand</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  SCORE_COMMAND_DECL(CommandFactoryName(), <a class="code" href="class_scenario_1_1_command_1_1_encapsulate.html">Encapsulate</a>, <span class="stringliteral">&quot;Encapsulate&quot;</span>)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_scenario_1_1_command_1_1_decapsulate.html">   25</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_SCENARIO_EXPORT <a class="code" href="class_scenario_1_1_command_1_1_decapsulate.html">Decapsulate</a> final : <span class="keyword">public</span> <a class="code" href="classscore_1_1_aggregate_command.html">score::AggregateCommand</a></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  SCORE_COMMAND_DECL(CommandFactoryName(), <a class="code" href="class_scenario_1_1_command_1_1_decapsulate.html">Decapsulate</a>, <span class="stringliteral">&quot;Decapsulate&quot;</span>)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_scenario_1_1_encaps_data.html">   31</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_scenario_1_1_encaps_data.html">EncapsData</a></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">double</span> topY{}, bottomY{};</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>* interval{};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;SCORE_PLUGIN_SCENARIO_EXPORT</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<a class="code" href="struct_scenario_1_1_encaps_data.html">EncapsData</a> EncapsulateElements(</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_scenario_1_1_command_1_1_macro.html">Scenario::Command::Macro</a>&amp; disp, <a class="code" href="struct_scenario_1_1_categorised_scenario.html">CategorisedScenario</a>&amp; cat,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">ProcessModel</a>&amp; scenar);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">// Encapsulate the selected elements of scenar in a new sub-scenario</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span> EncapsulateInScenario(</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">ProcessModel</a>&amp; scenar, <span class="keyword">const</span> <a class="code" href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a>&amp; stack);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">// Decpasulate a sub-scenar passed in argument in its parent scenario if</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">// possible</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">void</span> DecapsulateScenario(</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">ProcessModel</a>&amp; scenar, <span class="keyword">const</span> <a class="code" href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a>&amp; stack);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> Duplicate(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">ProcessModel</a>&amp; scenar, <span class="keyword">const</span> <a class="code" href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a>&amp; stack);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>
+<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:13</div></div>
 <div class="ttc" id="aclassscore_1_1_aggregate_command_html"><div class="ttname"><a href="classscore_1_1_aggregate_command.html">score::AggregateCommand</a></div><div class="ttdoc">Allows for grouping of multiple commands in a single one.</div><div class="ttdef"><b>Definition:</b> AggregateCommand.hpp:14</div></div>
-<div class="ttc" id="astruct_scenario_1_1_categorised_scenario_html"><div class="ttname"><a href="struct_scenario_1_1_categorised_scenario.html">Scenario::CategorisedScenario</a></div><div class="ttdef"><b>Definition:</b> ScenarioCopy.hpp:37</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:146</div></div>
+<div class="ttc" id="astruct_scenario_1_1_categorised_scenario_html"><div class="ttname"><a href="struct_scenario_1_1_categorised_scenario.html">Scenario::CategorisedScenario</a></div><div class="ttdef"><b>Definition:</b> ScenarioCopy.hpp:36</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:160</div></div>
 <div class="ttc" id="aclassscore_1_1_command_stack_facade_html"><div class="ttname"><a href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a></div><div class="ttdoc">A small abstraction layer over the score::CommandStack.</div><div class="ttdef"><b>Definition:</b> CommandStackFacade.hpp:19</div></div>
 <div class="ttc" id="aclass_scenario_1_1_process_model_html"><div class="ttname"><a href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a></div><div class="ttdoc">The core hierarchical and temporal process of score.</div><div class="ttdef"><b>Definition:</b> ScenarioModel.hpp:34</div></div>
-<div class="ttc" id="astruct_scenario_1_1_encaps_data_html"><div class="ttname"><a href="struct_scenario_1_1_encaps_data.html">Scenario::EncapsData</a></div><div class="ttdef"><b>Definition:</b> Encapsulate.hpp:33</div></div>
-<div class="ttc" id="aclass_scenario_1_1_command_1_1_macro_html"><div class="ttname"><a href="class_scenario_1_1_command_1_1_macro.html">Scenario::Command::Macro</a></div><div class="ttdef"><b>Definition:</b> CommandAPI.hpp:24</div></div>
-<div class="ttc" id="aclass_scenario_1_1_command_1_1_decapsulate_html"><div class="ttname"><a href="class_scenario_1_1_command_1_1_decapsulate.html">Scenario::Command::Decapsulate</a></div><div class="ttdef"><b>Definition:</b> Encapsulate.hpp:26</div></div>
+<div class="ttc" id="astruct_scenario_1_1_encaps_data_html"><div class="ttname"><a href="struct_scenario_1_1_encaps_data.html">Scenario::EncapsData</a></div><div class="ttdef"><b>Definition:</b> Encapsulate.hpp:31</div></div>
+<div class="ttc" id="aclass_scenario_1_1_command_1_1_macro_html"><div class="ttname"><a href="class_scenario_1_1_command_1_1_macro.html">Scenario::Command::Macro</a></div><div class="ttdef"><b>Definition:</b> CommandAPI.hpp:25</div></div>
+<div class="ttc" id="aclass_scenario_1_1_command_1_1_decapsulate_html"><div class="ttname"><a href="class_scenario_1_1_command_1_1_decapsulate.html">Scenario::Command::Decapsulate</a></div><div class="ttdef"><b>Definition:</b> Encapsulate.hpp:25</div></div>
 <div class="ttc" id="aclass_scenario_1_1_command_1_1_encapsulate_html"><div class="ttname"><a href="class_scenario_1_1_command_1_1_encapsulate.html">Scenario::Command::Encapsulate</a></div><div class="ttdef"><b>Definition:</b> Encapsulate.hpp:21</div></div>
-<div class="ttc" id="aclass_scenario_1_1_interval_model_html"><div class="ttname"><a href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a></div><div class="ttdef"><b>Definition:</b> IntervalModel.hpp:50</div></div>
+<div class="ttc" id="aclass_scenario_1_1_interval_model_html"><div class="ttname"><a href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a></div><div class="ttdef"><b>Definition:</b> IntervalModel.hpp:49</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

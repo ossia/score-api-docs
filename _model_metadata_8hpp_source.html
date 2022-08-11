@@ -132,52 +132,47 @@ $(document).ready(function(){initNavTree('_model_metadata_8hpp_source.html','');
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">void</span> setInstanceName(<span class="keyword">const</span> T&amp; t) noexcept</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    setName(QString(<span class="stringliteral">&quot;%1.%2&quot;</span>)</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                .arg(<a class="code" href="struct_metadata.html">Metadata&lt;PrettyName_k, T&gt;::get</a>())</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                .arg(t.id().val()));</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    m_touchedName = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">bool</span> touchedName() <span class="keyword">const</span> noexcept;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> setName(<span class="keyword">const</span> QString&amp;) noexcept;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> setComment(<span class="keyword">const</span> QString&amp;) noexcept;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">void</span> setColor(<a class="code" href="structscore_1_1_color_ref.html">ColorRef</a>) noexcept;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> setLabel(<span class="keyword">const</span> QString&amp;) noexcept;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> NameChanged(<span class="keyword">const</span> QString&amp; arg)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      E_SIGNAL(SCORE_LIB_BASE_EXPORT, NameChanged, arg)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> CommentChanged(<span class="keyword">const</span> QString&amp; arg)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      E_SIGNAL(SCORE_LIB_BASE_EXPORT, CommentChanged, arg)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> ColorChanged(<a class="code" href="structscore_1_1_color_ref.html">score::ColorRef</a> arg)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      E_SIGNAL(SCORE_LIB_BASE_EXPORT, ColorChanged, arg)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> LabelChanged(<span class="keyword">const</span> QString&amp; arg)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      E_SIGNAL(SCORE_LIB_BASE_EXPORT, LabelChanged, arg)</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">void</span> metadataChanged() E_SIGNAL(SCORE_LIB_BASE_EXPORT, metadataChanged)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  PROPERTY(QString, name READ getName WRITE setName NOTIFY NameChanged)</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  PROPERTY(</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      QString,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      comment READ getComment WRITE setComment NOTIFY CommentChanged)</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  PROPERTY(<a class="code" href="structscore_1_1_color_ref.html">ColorRef</a>, color READ getColor WRITE setColor NOTIFY ColorChanged)</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  PROPERTY(QString, label READ getLabel WRITE setLabel NOTIFY LabelChanged)</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  QString m_scriptingName;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  QString m_comment;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="structscore_1_1_color_ref.html">ColorRef</a> m_color;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  QString m_label;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">bool</span> m_touchedName{};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01score_1_1_model_metadata_01_5_01_4.html">   76</a></span>&#160;Q_DECLARE_METATYPE(<a class="code" href="classscore_1_1_model_metadata.html">score::ModelMetadata</a>*)</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="classscore_1_1_model_metadata.html">score::ModelMetadata</a>*)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    setName(QString(<span class="stringliteral">&quot;%1.%2&quot;</span>).arg(<a class="code" href="struct_metadata.html">Metadata&lt;PrettyName_k, T&gt;::get</a>()).arg(t.id().val()));</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    m_touchedName = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">bool</span> touchedName() <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> setName(<span class="keyword">const</span> QString&amp;) noexcept;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> setComment(<span class="keyword">const</span> QString&amp;) noexcept;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> setColor(<a class="code" href="structscore_1_1_color_ref.html">ColorRef</a>) noexcept;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> setLabel(<span class="keyword">const</span> QString&amp;) noexcept;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> NameChanged(<span class="keyword">const</span> QString&amp; arg) E_SIGNAL(SCORE_LIB_BASE_EXPORT, NameChanged, arg)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> CommentChanged(<span class="keyword">const</span> QString&amp; arg)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      E_SIGNAL(SCORE_LIB_BASE_EXPORT, CommentChanged, arg)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> ColorChanged(<a class="code" href="structscore_1_1_color_ref.html">score::ColorRef</a> arg)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      E_SIGNAL(SCORE_LIB_BASE_EXPORT, ColorChanged, arg)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> LabelChanged(<span class="keyword">const</span> QString&amp; arg)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      E_SIGNAL(SCORE_LIB_BASE_EXPORT, LabelChanged, arg)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> metadataChanged() E_SIGNAL(SCORE_LIB_BASE_EXPORT, metadataChanged)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  PROPERTY(QString, name READ getName WRITE setName NOTIFY NameChanged)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  PROPERTY(QString, comment READ getComment WRITE setComment NOTIFY CommentChanged)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  PROPERTY(<a class="code" href="structscore_1_1_color_ref.html">ColorRef</a>, color READ getColor WRITE setColor NOTIFY ColorChanged)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  PROPERTY(QString, label READ getLabel WRITE setLabel NOTIFY LabelChanged)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  QString m_scriptingName;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  QString m_comment;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="structscore_1_1_color_ref.html">ColorRef</a> m_color;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  QString m_label;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">bool</span> m_touchedName{};</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01score_1_1_model_metadata_01_5_01_4.html">   71</a></span>&#160;Q_DECLARE_METATYPE(<a class="code" href="classscore_1_1_model_metadata.html">score::ModelMetadata</a>*)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="classscore_1_1_model_metadata.html">score::ModelMetadata</a>*)</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astruct_metadata_html"><div class="ttname"><a href="struct_metadata.html">Metadata</a></div><div class="ttdoc">Static metadata implementation.</div><div class="ttdef"><b>Definition:</b> lib/score/tools/Metadata.hpp:36</div></div>
 <div class="ttc" id="aclassscore_1_1_model_metadata_html"><div class="ttname"><a href="classscore_1_1_model_metadata.html">score::ModelMetadata</a></div><div class="ttdoc">The ModelMetadata class.</div><div class="ttdef"><b>Definition:</b> ModelMetadata.hpp:21</div></div>
 <div class="ttc" id="astructscore_1_1_color_ref_html"><div class="ttname"><a href="structscore_1_1_color_ref.html">score::ColorRef</a></div><div class="ttdoc">A reference to a color. Used for skinning.</div><div class="ttdef"><b>Definition:</b> ColorReference.hpp:20</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:146</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:160</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

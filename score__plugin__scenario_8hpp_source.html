@@ -137,28 +137,26 @@ $(document).ready(function(){initNavTree('score__plugin__scenario_8hpp_source.ht
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="classscore_1_1_g_u_i_application_plugin.html">score::GUIApplicationPlugin</a>*</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  make_guiApplicationPlugin(<span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; app) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  std::pair&lt;const CommandGroupKey, CommandGeneratorMap&gt;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  make_commands() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  std::vector&lt;std::unique_ptr&lt;score::InterfaceListBase&gt;&gt;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  factoryFamilies() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  std::vector&lt;std::unique_ptr&lt;score::InterfaceBase&gt;&gt; factories(</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp;,</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_uuid_key.html">score::InterfaceKey</a>&amp; factoryName) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  std::vector&lt;std::unique_ptr&lt;score::InterfaceBase&gt;&gt; guiFactories(</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp;,</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_uuid_key.html">score::InterfaceKey</a>&amp; factoryName) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  std::vector&lt;score::PluginKey&gt; required() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  std::pair&lt;const CommandGroupKey, CommandGeneratorMap&gt; make_commands() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  std::vector&lt;std::unique_ptr&lt;score::InterfaceListBase&gt;&gt; factoryFamilies() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  std::vector&lt;std::unique_ptr&lt;score::InterfaceBase&gt;&gt; factories(</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp;,</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_uuid_key.html">score::InterfaceKey</a>&amp; factoryName) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  std::vector&lt;std::unique_ptr&lt;score::InterfaceBase&gt;&gt; guiFactories(</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp;,</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_uuid_key.html">score::InterfaceKey</a>&amp; factoryName) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  std::vector&lt;score::PluginKey&gt; required() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassscore_1_1_factory_interface___qt_interface_html"><div class="ttname"><a href="classscore_1_1_factory_interface___qt_interface.html">score::FactoryInterface_QtInterface</a></div><div class="ttdef"><b>Definition:</b> FactoryInterface_QtInterface.hpp:18</div></div>
 <div class="ttc" id="aclassscore_1_1_application_plugin___qt_interface_html"><div class="ttname"><a href="classscore_1_1_application_plugin___qt_interface.html">score::ApplicationPlugin_QtInterface</a></div><div class="ttdef"><b>Definition:</b> GUIApplicationPlugin_QtInterface.hpp:11</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:146</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:160</div></div>
 <div class="ttc" id="astructscore_1_1_g_u_i_application_context_html"><div class="ttname"><a href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a></div><div class="ttdoc">Specializes ApplicationContext with the QMainWindow.</div><div class="ttdef"><b>Definition:</b> GUIApplicationContext.hpp:14</div></div>
-<div class="ttc" id="aclass_uuid_key_html"><div class="ttname"><a href="class_uuid_key.html">UuidKey</a></div><div class="ttdef"><b>Definition:</b> UuidKey.hpp:380</div></div>
+<div class="ttc" id="aclass_uuid_key_html"><div class="ttname"><a href="class_uuid_key.html">UuidKey</a></div><div class="ttdef"><b>Definition:</b> UuidKey.hpp:349</div></div>
 <div class="ttc" id="aclassscore_1_1_command_factory___qt_interface_html"><div class="ttname"><a href="classscore_1_1_command_factory___qt_interface.html">score::CommandFactory_QtInterface</a></div><div class="ttdef"><b>Definition:</b> CommandFactory_QtInterface.hpp:11</div></div>
 <div class="ttc" id="a_command_generator_map_8hpp_html"><div class="ttname"><a href="_command_generator_map_8hpp.html">CommandGeneratorMap.hpp</a></div></div>
 <div class="ttc" id="aclassscore_1_1_plugin___qt_interface_html"><div class="ttname"><a href="classscore_1_1_plugin___qt_interface.html">score::Plugin_QtInterface</a></div><div class="ttdef"><b>Definition:</b> PluginRequirements_QtInterface.hpp:17</div></div>

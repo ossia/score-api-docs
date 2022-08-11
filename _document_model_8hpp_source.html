@@ -119,53 +119,45 @@ $(document).ready(function(){initNavTree('_document_model_8hpp_source.html','');
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span>Document;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">struct </span>ApplicationContext;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classscore_1_1_document_model.html">   28</a></span>&#160;<span class="keyword">class </span>SCORE_LIB_BASE_EXPORT <a class="code" href="classscore_1_1_document_model.html">DocumentModel</a> final</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    : <span class="keyword">public</span> <a class="code" href="class_identified_object.html">IdentifiedObject</a>&lt;DocumentModel&gt;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  W_OBJECT(<a class="code" href="classscore_1_1_document_model.html">DocumentModel</a>)</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classscore_1_1_document.html">Document</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="classscore_1_1_document_model.html">DocumentModel</a>(</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;DocumentModel&gt;</a>&amp; <span class="keywordtype">id</span>,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <a class="code" href="classscore_1_1_document_delegate_factory.html">DocumentDelegateFactory</a>&amp; fact,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      QObject* parent);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="classscore_1_1_document_model.html">DocumentModel</a>(QObject* parent);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  ~<a class="code" href="classscore_1_1_document_model.html">DocumentModel</a>();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="classscore_1_1_document_delegate_model.html">DocumentDelegateModel</a>&amp; modelDelegate()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> *m_model; }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> on_documentClosing();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="comment">// Plugin models</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> addPluginModel(<a class="code" href="classscore_1_1_document_plugin.html">DocumentPlugin</a>* m);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">const</span> std::vector&lt;DocumentPlugin*&gt;&amp; pluginModels() { <span class="keywordflow">return</span> m_pluginModels; }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> pluginModelsChanged()</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      E_SIGNAL(SCORE_LIB_BASE_EXPORT, pluginModelsChanged)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> loadDocumentAsJson(</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keyword">const</span> rapidjson::Value&amp;,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <a class="code" href="classscore_1_1_document_delegate_factory.html">DocumentDelegateFactory</a>&amp; fact);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> loadDocumentAsByteArray(</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keyword">const</span> QByteArray&amp;,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <a class="code" href="classscore_1_1_document_delegate_factory.html">DocumentDelegateFactory</a>&amp; fact);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  std::vector&lt;DocumentPlugin*&gt; m_pluginModels;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="classscore_1_1_document_delegate_model.html">DocumentDelegateModel</a>*</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      m_model{}; <span class="comment">// note : this *has* to be last due to init order</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classscore_1_1_document_model.html">   28</a></span>&#160;<span class="keyword">class </span>SCORE_LIB_BASE_EXPORT <a class="code" href="classscore_1_1_document_model.html">DocumentModel</a> final : <span class="keyword">public</span> <a class="code" href="class_identified_object.html">IdentifiedObject</a>&lt;DocumentModel&gt;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  W_OBJECT(<a class="code" href="classscore_1_1_document_model.html">DocumentModel</a>)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classscore_1_1_document.html">Document</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="classscore_1_1_document_model.html">DocumentModel</a>(</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;DocumentModel&gt;</a>&amp; <span class="keywordtype">id</span>, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <a class="code" href="classscore_1_1_document_delegate_factory.html">DocumentDelegateFactory</a>&amp; fact, QObject* parent);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="classscore_1_1_document_model.html">DocumentModel</a>(QObject* parent);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  ~<a class="code" href="classscore_1_1_document_model.html">DocumentModel</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="classscore_1_1_document_delegate_model.html">DocumentDelegateModel</a>&amp; modelDelegate()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> *m_model; }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">void</span> on_documentClosing();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="comment">// Plugin models</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> addPluginModel(<a class="code" href="classscore_1_1_document_plugin.html">DocumentPlugin</a>* m);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">const</span> std::vector&lt;DocumentPlugin*&gt;&amp; pluginModels() { <span class="keywordflow">return</span> m_pluginModels; }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> pluginModelsChanged() E_SIGNAL(SCORE_LIB_BASE_EXPORT, pluginModelsChanged)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> loadDocumentAsJson(</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx, <span class="keyword">const</span> rapidjson::Value&amp;,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <a class="code" href="classscore_1_1_document_delegate_factory.html">DocumentDelegateFactory</a>&amp; fact);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> loadDocumentAsByteArray(</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx, <span class="keyword">const</span> QByteArray&amp;, <a class="code" href="classscore_1_1_document_delegate_factory.html">DocumentDelegateFactory</a>&amp; fact);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  std::vector&lt;DocumentPlugin*&gt; m_pluginModels;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="classscore_1_1_document_delegate_model.html">DocumentDelegateModel</a>* m_model{}; <span class="comment">// note : this *has* to be last due to init order</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_identified_object_html"><div class="ttname"><a href="class_identified_object.html">IdentifiedObject</a></div><div class="ttdoc">The IdentifiedObject class.</div><div class="ttdef"><b>Definition:</b> IdentifiedObject.hpp:18</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
 <div class="ttc" id="aclassscore_1_1_document_html"><div class="ttname"><a href="classscore_1_1_document.html">score::Document</a></div><div class="ttdoc">The Document class is the central part of the software.</div><div class="ttdef"><b>Definition:</b> Document.hpp:50</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:146</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:160</div></div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition:</b> Identifier.hpp:56</div></div>
 <div class="ttc" id="aclassscore_1_1_document_plugin_html"><div class="ttname"><a href="classscore_1_1_document_plugin.html">score::DocumentPlugin</a></div><div class="ttdoc">Extend a document with custom data and systems.</div><div class="ttdef"><b>Definition:</b> DocumentPluginBase.hpp:23</div></div>
 <div class="ttc" id="aclassscore_1_1_document_delegate_model_html"><div class="ttname"><a href="classscore_1_1_document_delegate_model.html">score::DocumentDelegateModel</a></div><div class="ttdef"><b>Definition:</b> DocumentDelegateModel.hpp:9</div></div>

@@ -99,31 +99,31 @@ $(document).ready(function(){initNavTree('_pd_inspector_widget_8hpp_source.html'
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Explorer/Explorer/DeviceExplorerModel.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Pd/Commands/EditPd.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Pd/PdProcess.hpp&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Process/Inspector/ProcessInspectorWidgetDelegate.hpp&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Process/Inspector/ProcessInspectorWidgetDelegateFactory.hpp&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;score/command/Dispatchers/CommandDispatcher.hpp&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;score/widgets/MarginLess.hpp&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;QCheckBox&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QFormLayout&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QLineEdit&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;QSpinBox&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;QVBoxLayout&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>Pd</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_pd_1_1_pd_widget.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_pd_1_1_pd_widget.html">PdWidget</a> final</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    : <span class="keyword">public</span> <a class="code" href="class_process_1_1_inspector_widget_delegate___t.html">Process::InspectorWidgetDelegate_T</a>&lt;Pd::ProcessModel&gt;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  W_OBJECT(<a class="code" href="class_pd_1_1_pd_widget.html">PdWidget</a>)</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_pd_1_1_pd_widget.html">PdWidget</a>(</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_pd_1_1_process_model.html">Pd::ProcessModel</a>&amp; <span class="keywordtype">object</span>,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; context,</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Process/Inspector/ProcessInspectorWidgetDelegate.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Process/Inspector/ProcessInspectorWidgetDelegateFactory.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Explorer/Explorer/DeviceExplorerModel.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;Pd/Commands/EditPd.hpp&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;Pd/PdProcess.hpp&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;score/command/Dispatchers/CommandDispatcher.hpp&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;score/widgets/MarginLess.hpp&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QCheckBox&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;QFormLayout&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;QLineEdit&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;QSpinBox&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;QVBoxLayout&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>Pd</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_pd_1_1_pd_widget.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_pd_1_1_pd_widget.html">PdWidget</a> final : <span class="keyword">public</span> <a class="code" href="class_process_1_1_inspector_widget_delegate___t.html">Process::InspectorWidgetDelegate_T</a>&lt;Pd::ProcessModel&gt;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  W_OBJECT(<a class="code" href="class_pd_1_1_pd_widget.html">PdWidget</a>)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_pd_1_1_pd_widget.html">PdWidget</a>(</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_pd_1_1_process_model.html">Pd::ProcessModel</a>&amp; <span class="keywordtype">object</span>, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; context,</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      QWidget* parent);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">void</span> pressed() W_SIGNAL(pressed);</div>
@@ -154,15 +154,15 @@ $(document).ready(function(){initNavTree('_pd_inspector_widget_8hpp_source.html'
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_explorer_1_1_device_explorer_model_html"><div class="ttname"><a href="class_explorer_1_1_device_explorer_model.html">Explorer::DeviceExplorerModel</a></div><div class="ttdef"><b>Definition:</b> DeviceExplorerModel.hpp:63</div></div>
-<div class="ttc" id="aclass_pd_1_1_pd_widget_html"><div class="ttname"><a href="class_pd_1_1_pd_widget.html">Pd::PdWidget</a></div><div class="ttdef"><b>Definition:</b> PdInspectorWidget.hpp:19</div></div>
+<div class="ttc" id="aclass_explorer_1_1_device_explorer_model_html"><div class="ttname"><a href="class_explorer_1_1_device_explorer_model.html">Explorer::DeviceExplorerModel</a></div><div class="ttdef"><b>Definition:</b> DeviceExplorerModel.hpp:65</div></div>
+<div class="ttc" id="aclass_pd_1_1_pd_widget_html"><div class="ttname"><a href="class_pd_1_1_pd_widget.html">Pd::PdWidget</a></div><div class="ttdef"><b>Definition:</b> PdInspectorWidget.hpp:21</div></div>
 <div class="ttc" id="aclass_process_1_1_inspector_widget_delegate___t_html"><div class="ttname"><a href="class_process_1_1_inspector_widget_delegate___t.html">Process::InspectorWidgetDelegate_T</a></div><div class="ttdef"><b>Definition:</b> ProcessInspectorWidgetDelegate.hpp:16</div></div>
 <div class="ttc" id="aclassscore_1_1_margin_less_html"><div class="ttname"><a href="classscore_1_1_margin_less.html">score::MarginLess&lt; QVBoxLayout &gt;</a></div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
 <div class="ttc" id="aclass_pd_1_1_inspector_factory_html"><div class="ttname"><a href="class_pd_1_1_inspector_factory.html">Pd::InspectorFactory</a></div><div class="ttdef"><b>Definition:</b> PdInspectorWidget.hpp:49</div></div>
 <div class="ttc" id="aclass_command_dispatcher_html"><div class="ttname"><a href="class_command_dispatcher.html">CommandDispatcher&lt;&gt;</a></div></div>
-<div class="ttc" id="aclass_process_1_1_inspector_widget_delegate_factory___t_html"><div class="ttname"><a href="class_process_1_1_inspector_widget_delegate_factory___t.html">Process::InspectorWidgetDelegateFactory_T</a></div><div class="ttdef"><b>Definition:</b> ProcessInspectorWidgetDelegateFactory.hpp:54</div></div>
-<div class="ttc" id="aclass_pd_1_1_process_model_html"><div class="ttname"><a href="class_pd_1_1_process_model.html">Pd::ProcessModel</a></div><div class="ttdef"><b>Definition:</b> PdProcess.hpp:37</div></div>
+<div class="ttc" id="aclass_process_1_1_inspector_widget_delegate_factory___t_html"><div class="ttname"><a href="class_process_1_1_inspector_widget_delegate_factory___t.html">Process::InspectorWidgetDelegateFactory_T</a></div><div class="ttdef"><b>Definition:</b> ProcessInspectorWidgetDelegateFactory.hpp:49</div></div>
+<div class="ttc" id="aclass_pd_1_1_process_model_html"><div class="ttname"><a href="class_pd_1_1_process_model.html">Pd::ProcessModel</a></div><div class="ttdef"><b>Definition:</b> PdProcess.hpp:38</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

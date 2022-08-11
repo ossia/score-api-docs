@@ -125,36 +125,35 @@ $(document).ready(function(){initNavTree('_local_device_8hpp_source.html',''); i
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="class_protocols_1_1_local_device.html">LocalDevice</a>(</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      ossia::net::device_base&amp; dev,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; settings);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  ~<a class="code" href="class_protocols_1_1_local_device.html">LocalDevice</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> init();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  ossia::net::device_base* getDevice()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> &amp;m_dev; }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  ossia::oscquery::oscquery_server_protocol* oscqProto() { <span class="keywordflow">return</span> m_oscqProto; }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">void</span> disconnect() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">bool</span> reconnect() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="class_tree_node.html">Device::Node</a> refresh() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; m_ctx;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  ossia::net::device_base&amp; m_dev;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  ossia::net::multiplex_protocol* m_proto{};</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  ossia::oscquery::oscquery_server_protocol* m_oscqProto{};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">using</span> DeviceInterface::refresh;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      ossia::net::device_base&amp; dev, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; settings);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  ~<a class="code" href="class_protocols_1_1_local_device.html">LocalDevice</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">void</span> init();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  ossia::net::device_base* getDevice()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> &amp;m_dev; }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  ossia::oscquery::oscquery_server_protocol* oscqProto() { <span class="keywordflow">return</span> m_oscqProto; }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span> disconnect() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">bool</span> reconnect() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="class_tree_node.html">Device::Node</a> refresh() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; m_ctx;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  ossia::net::device_base&amp; m_dev;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  ossia::net::multiplex_protocol* m_proto{};</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  ossia::oscquery::oscquery_server_protocol* m_oscqProto{};</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">using</span> DeviceInterface::refresh;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_tree_node_html"><div class="ttname"><a href="class_tree_node.html">TreeNode&lt; DeviceExplorerNode &gt;</a></div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
-<div class="ttc" id="aclass_device_1_1_device_interface_html"><div class="ttname"><a href="class_device_1_1_device_interface.html">Device::DeviceInterface</a></div><div class="ttdef"><b>Definition:</b> DeviceInterface.hpp:62</div></div>
+<div class="ttc" id="aclass_device_1_1_device_interface_html"><div class="ttname"><a href="class_device_1_1_device_interface.html">Device::DeviceInterface</a></div><div class="ttdef"><b>Definition:</b> DeviceInterface.hpp:63</div></div>
 <div class="ttc" id="aclass_protocols_1_1_local_device_html"><div class="ttname"><a href="class_protocols_1_1_local_device.html">Protocols::LocalDevice</a></div><div class="ttdef"><b>Definition:</b> LocalDevice.hpp:24</div></div>
 <div class="ttc" id="astruct_device_1_1_device_settings_html"><div class="ttname"><a href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a></div><div class="ttdef"><b>Definition:</b> DeviceSettings.hpp:15</div></div>
 <!-- HTML footer for doxygen 1.8.8-->

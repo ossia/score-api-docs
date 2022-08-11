@@ -100,37 +100,36 @@ $(document).ready(function(){initNavTree('_drop_process_in_scenario_8hpp_source.
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Process/Drop/ProcessDropHandler.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Scenario/Application/Drops/ScenarioDropHandler.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_scenario.html">Scenario</a></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>Command</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span>Macro;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_scenario_1_1_drop_process_in_scenario.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_scenario_1_1_drop_process_in_scenario.html">DropProcessInScenario</a> final : <span class="keyword">public</span> <a class="code" href="class_scenario_1_1_ghost_interval_drop_handler.html">GhostIntervalDropHandler</a></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;9a094988-b05f-4e10-8e0d-56e8d46e084d&quot;</span>)</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <a class="code" href="class_scenario_1_1_drop_process_in_scenario.html">DropProcessInScenario</a>();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordtype">void</span> init();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordtype">bool</span> drop(</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_scenario_presenter.html">Scenario::ScenarioPresenter</a>&amp;,</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      QPointF pos,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      <span class="keyword">const</span> QMimeData&amp; mime) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Scenario/Application/Drops/ScenarioDropHandler.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_scenario.html">Scenario</a></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>Command</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span>Macro;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_scenario_1_1_drop_process_in_scenario.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_scenario_1_1_drop_process_in_scenario.html">DropProcessInScenario</a> final : <span class="keyword">public</span> <a class="code" href="class_scenario_1_1_ghost_interval_drop_handler.html">GhostIntervalDropHandler</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;9a094988-b05f-4e10-8e0d-56e8d46e084d&quot;</span>)</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <a class="code" href="class_scenario_1_1_drop_process_in_scenario.html">DropProcessInScenario</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordtype">void</span> init();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  drop(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_scenario_presenter.html">Scenario::ScenarioPresenter</a>&amp;, QPointF pos, <span class="keyword">const</span> QMimeData&amp; mime) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>
-<div class="ttc" id="aclass_scenario_1_1_ghost_interval_drop_handler_html"><div class="ttname"><a href="class_scenario_1_1_ghost_interval_drop_handler.html">Scenario::GhostIntervalDropHandler</a></div><div class="ttdef"><b>Definition:</b> ScenarioDropHandler.hpp:64</div></div>
+<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:13</div></div>
+<div class="ttc" id="aclass_scenario_1_1_ghost_interval_drop_handler_html"><div class="ttname"><a href="class_scenario_1_1_ghost_interval_drop_handler.html">Scenario::GhostIntervalDropHandler</a></div><div class="ttdef"><b>Definition:</b> ScenarioDropHandler.hpp:57</div></div>
 <div class="ttc" id="aclass_scenario_1_1_scenario_presenter_html"><div class="ttname"><a href="class_scenario_1_1_scenario_presenter.html">Scenario::ScenarioPresenter</a></div><div class="ttdef"><b>Definition:</b> ScenarioPresenter.hpp:26</div></div>
-<div class="ttc" id="aclass_scenario_1_1_drop_process_in_scenario_html"><div class="ttname"><a href="class_scenario_1_1_drop_process_in_scenario.html">Scenario::DropProcessInScenario</a></div><div class="ttdef"><b>Definition:</b> DropProcessInScenario.hpp:12</div></div>
+<div class="ttc" id="aclass_scenario_1_1_drop_process_in_scenario_html"><div class="ttname"><a href="class_scenario_1_1_drop_process_in_scenario.html">Scenario::DropProcessInScenario</a></div><div class="ttdef"><b>Definition:</b> DropProcessInScenario.hpp:13</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

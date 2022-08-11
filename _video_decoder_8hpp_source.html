@@ -101,92 +101,90 @@ $(document).ready(function(){initNavTree('_video_decoder_8hpp_source.html',''); 
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Media/Libav.hpp&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#if SCORE_HAS_LIBAV</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Video/VideoInterface.hpp&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Video/FrameQueue.hpp&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Video/Rescale.hpp&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;libavformat/avformat.h&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;libswscale/swscale.h&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/lockfree_queue.hpp&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;score_plugin_media_export.h&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;atomic&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Video/FrameQueue.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Video/Rescale.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Video/VideoInterface.hpp&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;libavformat/avformat.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;libswscale/swscale.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/lockfree_queue.hpp&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;score_plugin_media_export.h&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;atomic&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;condition_variable&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;mutex&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;condition_variable&gt;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>Video</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>Video</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_video_1_1_video_decoder.html">   25</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_MEDIA_EXPORT <a class="code" href="class_video_1_1_video_decoder.html">VideoDecoder</a> final : <span class="keyword">public</span> <a class="code" href="struct_video_1_1_video_interface.html">VideoInterface</a></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_video_1_1_video_decoder.html">   27</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_MEDIA_EXPORT <a class="code" href="class_video_1_1_video_decoder.html">VideoDecoder</a> final : <span class="keyword">public</span> <a class="code" href="struct_video_1_1_video_interface.html">VideoInterface</a></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="class_video_1_1_video_decoder.html">VideoDecoder</a>() noexcept;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  ~<a class="code" href="class_video_1_1_video_decoder.html">VideoDecoder</a>() noexcept;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  std::shared_ptr&lt;VideoDecoder&gt; clone() <span class="keyword">const</span> noexcept;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">bool</span> load(<span class="keyword">const</span> std::string&amp; inputFile, <span class="keywordtype">double</span> fps_unused) noexcept;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="class_video_1_1_video_decoder.html">VideoDecoder</a>() noexcept;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  ~<a class="code" href="class_video_1_1_video_decoder.html">VideoDecoder</a>() noexcept;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  std::shared_ptr&lt;VideoDecoder&gt; clone() <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">bool</span> load(<span class="keyword">const</span> std::string&amp; inputFile, <span class="keywordtype">double</span> fps_unused) noexcept;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  int64_t duration() <span class="keyword">const</span> noexcept;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  int64_t duration() <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">void</span> seek(int64_t flicks);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">void</span> seek(int64_t flicks);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  AVFrame* dequeue_frame() noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> release_frame(AVFrame*) noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> buffer_thread() noexcept;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> close_file() noexcept;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">bool</span> seek_impl(int64_t dts) noexcept;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  AVFrame* read_frame_impl() noexcept;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">bool</span> open_stream() noexcept;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> close_video() noexcept;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="struct_video_1_1_read_frame.html">ReadFrame</a> enqueue_frame(<span class="keyword">const</span> AVPacket* pkt, AVFramePointer frame) noexcept;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="struct_video_1_1_read_frame.html">ReadFrame</a> read_one_frame(AVFramePointer frame, AVPacket&amp; packet);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> init_scaler() noexcept;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  AVFrame* dequeue_frame() noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span> release_frame(AVFrame*) noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">void</span> buffer_thread() noexcept;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> close_file() noexcept;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">bool</span> seek_impl(int64_t dts) noexcept;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  AVFrame* read_frame_impl() noexcept;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">bool</span> open_stream() noexcept;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">void</span> close_video() noexcept;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="struct_video_1_1_read_frame.html">ReadFrame</a> enqueue_frame(<span class="keyword">const</span> AVPacket* pkt, AVFramePointer frame) noexcept;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="struct_video_1_1_read_frame.html">ReadFrame</a> read_one_frame(AVFramePointer frame, AVPacket&amp; packet);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> init_scaler() noexcept;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">int</span> frames_to_buffer = 16;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">int</span> frames_to_buffer = 16;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  std::string m_inputFile;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  std::string m_inputFile;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  std::thread m_thread;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  std::mutex m_condMut;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  std::condition_variable m_condVar;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  std::thread m_thread;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  std::mutex m_condMut;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  std::condition_variable m_condVar;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="struct_video_1_1_frame_queue.html">FrameQueue</a> m_frames;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="struct_video_1_1_frame_queue.html">FrameQueue</a> m_frames;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  AVFormatContext* m_formatContext{};</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  AVCodecContext* m_codecContext{};</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  AVStream* m_avstream{};</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">const</span> AVCodec* m_codec{};</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="class_video_1_1_rescale.html">Rescale</a> m_rescale;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">int</span> m_stream{-1};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  AVFormatContext* m_formatContext{};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  AVCodecContext* m_codecContext{};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  AVStream* m_avstream{};</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">const</span> AVCodec* m_codec{};</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="class_video_1_1_rescale.html">Rescale</a> m_rescale;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">int</span> m_stream{-1};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  int64_t m_duration{}; <span class="comment">// in flicks</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  int64_t m_duration{}; <span class="comment">// in flicks</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  std::atomic_int64_t m_seekTo = -1;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  std::atomic_int64_t m_last_dequeued_dts = 0;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  std::atomic_int64_t m_dequeued = 0;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  std::atomic_bool m_running{};</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  std::atomic_int64_t m_seekTo = -1;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  std::atomic_int64_t m_last_dequeued_dts = 0;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  std::atomic_int64_t m_dequeued = 0;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  std::atomic_bool m_running{};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astruct_video_1_1_video_interface_html"><div class="ttname"><a href="struct_video_1_1_video_interface.html">Video::VideoInterface</a></div><div class="ttdef"><b>Definition:</b> VideoInterface.hpp:27</div></div>
-<div class="ttc" id="aclass_video_1_1_video_decoder_html"><div class="ttname"><a href="class_video_1_1_video_decoder.html">Video::VideoDecoder</a></div><div class="ttdef"><b>Definition:</b> VideoDecoder.hpp:27</div></div>
-<div class="ttc" id="astruct_video_1_1_frame_queue_html"><div class="ttname"><a href="struct_video_1_1_frame_queue.html">Video::FrameQueue</a></div><div class="ttdef"><b>Definition:</b> FrameQueue.hpp:17</div></div>
+<div class="ttc" id="astruct_video_1_1_video_interface_html"><div class="ttname"><a href="struct_video_1_1_video_interface.html">Video::VideoInterface</a></div><div class="ttdef"><b>Definition:</b> VideoInterface.hpp:26</div></div>
+<div class="ttc" id="aclass_video_1_1_video_decoder_html"><div class="ttname"><a href="class_video_1_1_video_decoder.html">Video::VideoDecoder</a></div><div class="ttdef"><b>Definition:</b> VideoDecoder.hpp:25</div></div>
+<div class="ttc" id="astruct_video_1_1_frame_queue_html"><div class="ttname"><a href="struct_video_1_1_frame_queue.html">Video::FrameQueue</a></div><div class="ttdef"><b>Definition:</b> FrameQueue.hpp:18</div></div>
 <div class="ttc" id="aclass_video_1_1_rescale_html"><div class="ttname"><a href="class_video_1_1_rescale.html">Video::Rescale</a></div><div class="ttdef"><b>Definition:</b> Rescale.hpp:18</div></div>
-<div class="ttc" id="astruct_video_1_1_read_frame_html"><div class="ttname"><a href="struct_video_1_1_read_frame.html">Video::ReadFrame</a></div><div class="ttdef"><b>Definition:</b> VideoInterface.hpp:34</div></div>
+<div class="ttc" id="astruct_video_1_1_read_frame_html"><div class="ttname"><a href="struct_video_1_1_read_frame.html">Video::ReadFrame</a></div><div class="ttdef"><b>Definition:</b> VideoInterface.hpp:33</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

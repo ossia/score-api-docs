@@ -99,35 +99,35 @@ $(document).ready(function(){initNavTree('_mapping_execution_8hpp_source.html','
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Mapping/MappingModel.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Process/Execution/ProcessComponent.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;State/Address.hpp&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;State/Address.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Process/Execution/ProcessComponent.hpp&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;ossia/dataflow/node_process.hpp&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;ossia/network/value/value.hpp&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>ossia</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span>curve_abstract;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_device.html">Device</a></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span>DeviceList;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>Mapping</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>RecreateOnPlay</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Mapping/MappingModel.hpp&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;ossia/dataflow/node_process.hpp&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;ossia/network/value/value.hpp&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>ossia</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>curve_abstract;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_device.html">Device</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span>DeviceList;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>Mapping</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_mapping_1_1_recreate_on_play_1_1_component.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_mapping_1_1_recreate_on_play_1_1_component.html">Component</a> final</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    : <span class="keyword">public</span> ::Execution::</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;          ProcessComponent_T&lt;Mapping::ProcessModel, ossia::node_process&gt;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  COMPONENT_METADATA(<span class="stringliteral">&quot;da360b58-9885-4106-be54-8e272ed45dbe&quot;</span>)</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="class_mapping_1_1_recreate_on_play_1_1_component.html">Component</a>(</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      ::<a class="code" href="class_mapping_1_1_process_model.html">Mapping::ProcessModel</a>&amp; element,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      const ::Execution::Context&amp; ctx,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span>RecreateOnPlay</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_mapping_1_1_recreate_on_play_1_1_component.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_mapping_1_1_recreate_on_play_1_1_component.html">Component</a> final</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    : <span class="keyword">public</span> <a class="code" href="struct_execution_1_1_process_component___t.html">::Execution::ProcessComponent_T</a>&lt;Mapping::ProcessModel, ossia::node_process&gt;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  COMPONENT_METADATA(<span class="stringliteral">&quot;da360b58-9885-4106-be54-8e272ed45dbe&quot;</span>)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="class_mapping_1_1_recreate_on_play_1_1_component.html">Component</a>(</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      ::<a class="code" href="class_mapping_1_1_process_model.html">Mapping::ProcessModel</a>&amp; element, const ::Execution::Context&amp; ctx,</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      QObject* parent);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  ~<a class="code" href="class_mapping_1_1_recreate_on_play_1_1_component.html">Component</a>();</div>
@@ -138,27 +138,26 @@ $(document).ready(function(){initNavTree('_mapping_execution_8hpp_source.html','
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  rebuildCurve(ossia::val_type source, ossia::val_type target);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  std::shared_ptr&lt;ossia::curve_abstract&gt;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  on_curveChanged_impl(ossia::val_type target);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> X_T, <span class="keyword">typename</span> Y_T&gt;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  std::shared_ptr&lt;ossia::curve_abstract&gt; on_curveChanged_impl2();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">using</span> <a class="code" href="class_execution_1_1_process_component_factory___t.html">ComponentFactory</a> = <a class="code" href="class_execution_1_1_process_component_factory___t.html">::Execution::ProcessComponentFactory_T&lt;Component&gt;</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  std::shared_ptr&lt;ossia::curve_abstract&gt; on_curveChanged_impl(ossia::val_type target);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> X_T, <span class="keyword">typename</span> Y_T&gt;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  std::shared_ptr&lt;ossia::curve_abstract&gt; on_curveChanged_impl2();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">using</span> <a class="code" href="class_execution_1_1_process_component_factory___t.html">ComponentFactory</a> = <a class="code" href="class_execution_1_1_process_component_factory___t.html">::Execution::ProcessComponentFactory_T&lt;Component&gt;</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;SCORE_CONCRETE_COMPONENT_FACTORY(</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_execution_1_1_process_component_factory.html">Execution::ProcessComponentFactory</a>,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="class_execution_1_1_process_component_factory___t.html">Mapping::RecreateOnPlay::ComponentFactory</a>)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;SCORE_CONCRETE_COMPONENT_FACTORY(</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_execution_1_1_process_component_factory.html">Execution::ProcessComponentFactory</a>, <a class="code" href="class_execution_1_1_process_component_factory___t.html">Mapping::RecreateOnPlay::ComponentFactory</a>)</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_mapping_1_1_process_model_html"><div class="ttname"><a href="class_mapping_1_1_process_model.html">Mapping::ProcessModel</a></div><div class="ttdef"><b>Definition:</b> MappingModel.hpp:23</div></div>
-<div class="ttc" id="aclass_execution_1_1_process_component_factory___t_html"><div class="ttname"><a href="class_execution_1_1_process_component_factory___t.html">Execution::ProcessComponentFactory_T</a></div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:127</div></div>
-<div class="ttc" id="aclass_execution_1_1_process_component_factory_html"><div class="ttname"><a href="class_execution_1_1_process_component_factory.html">Execution::ProcessComponentFactory</a></div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:108</div></div>
-<div class="ttc" id="aclass_mapping_1_1_recreate_on_play_1_1_component_html"><div class="ttname"><a href="class_mapping_1_1_recreate_on_play_1_1_component.html">Mapping::RecreateOnPlay::Component</a></div><div class="ttdef"><b>Definition:</b> MappingExecution.hpp:22</div></div>
-<div class="ttc" id="anamespace_device_html"><div class="ttname"><a href="namespace_device.html">Device</a></div><div class="ttdoc">Manipulation of Devices from Qt.</div><div class="ttdef"><b>Definition:</b> AddressSettings.cpp:12</div></div>
+<div class="ttc" id="aclass_mapping_1_1_process_model_html"><div class="ttname"><a href="class_mapping_1_1_process_model.html">Mapping::ProcessModel</a></div><div class="ttdef"><b>Definition:</b> MappingModel.hpp:26</div></div>
+<div class="ttc" id="aclass_execution_1_1_process_component_factory___t_html"><div class="ttname"><a href="class_execution_1_1_process_component_factory___t.html">Execution::ProcessComponentFactory_T</a></div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:115</div></div>
+<div class="ttc" id="aclass_execution_1_1_process_component_factory_html"><div class="ttname"><a href="class_execution_1_1_process_component_factory.html">Execution::ProcessComponentFactory</a></div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:98</div></div>
+<div class="ttc" id="aclass_mapping_1_1_recreate_on_play_1_1_component_html"><div class="ttname"><a href="class_mapping_1_1_recreate_on_play_1_1_component.html">Mapping::RecreateOnPlay::Component</a></div><div class="ttdef"><b>Definition:</b> MappingExecution.hpp:24</div></div>
+<div class="ttc" id="anamespace_device_html"><div class="ttname"><a href="namespace_device.html">Device</a></div><div class="ttdoc">Manipulation of Devices from Qt.</div><div class="ttdef"><b>Definition:</b> AddressSettings.cpp:13</div></div>
+<div class="ttc" id="astruct_execution_1_1_process_component___t_html"><div class="ttname"><a href="struct_execution_1_1_process_component___t.html">Execution::ProcessComponent_T</a></div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:86</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

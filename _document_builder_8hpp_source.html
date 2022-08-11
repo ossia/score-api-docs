@@ -120,36 +120,30 @@ $(document).ready(function(){initNavTree('_document_builder_8hpp_source.html',''
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classscore_1_1_document_builder.html">DocumentBuilder</a>(QObject* parentPresenter, QWidget* parentView);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <a class="code" href="classscore_1_1_document.html">Document</a>* newDocument(</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; ctx,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;DocumentModel&gt;</a>&amp; <span class="keywordtype">id</span>,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <a class="code" href="classscore_1_1_document_delegate_factory.html">score::DocumentDelegateFactory</a>&amp; doctype);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="classscore_1_1_document.html">Document</a>* loadDocument(</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; ctx,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      QString filename,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <a class="code" href="classscore_1_1_document_delegate_factory.html">score::DocumentDelegateFactory</a>&amp; doctype);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="classscore_1_1_document.html">Document</a>* loadDocument(</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; ctx,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      QString filename,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      QByteArray data,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      SerializationIdentifier format,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <a class="code" href="classscore_1_1_document_delegate_factory.html">score::DocumentDelegateFactory</a>&amp; doctype);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="classscore_1_1_document.html">Document</a>* restoreDocument(</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; ctx,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_restorable_document.html">score::RestorableDocument</a>&amp; doc,</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <a class="code" href="classscore_1_1_document_delegate_factory.html">score::DocumentDelegateFactory</a>&amp; doctype);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> setBackupManager(<a class="code" href="classscore_1_1_document.html">Document</a>* doc);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  QObject* m_parentPresenter{};</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  QWidget* m_parentView{};</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; ctx, <span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;DocumentModel&gt;</a>&amp; <span class="keywordtype">id</span>,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <a class="code" href="classscore_1_1_document_delegate_factory.html">score::DocumentDelegateFactory</a>&amp; doctype);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="classscore_1_1_document.html">Document</a>* loadDocument(</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; ctx, QString filename,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <a class="code" href="classscore_1_1_document_delegate_factory.html">score::DocumentDelegateFactory</a>&amp; doctype);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="classscore_1_1_document.html">Document</a>* loadDocument(</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; ctx, QString filename, QByteArray data,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      SerializationIdentifier format, <a class="code" href="classscore_1_1_document_delegate_factory.html">score::DocumentDelegateFactory</a>&amp; doctype);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="classscore_1_1_document.html">Document</a>* restoreDocument(</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; ctx, <span class="keyword">const</span> <a class="code" href="structscore_1_1_restorable_document.html">score::RestorableDocument</a>&amp; doc,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <a class="code" href="classscore_1_1_document_delegate_factory.html">score::DocumentDelegateFactory</a>&amp; doctype);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> setBackupManager(<a class="code" href="classscore_1_1_document.html">Document</a>* doc);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  QObject* m_parentPresenter{};</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  QWidget* m_parentView{};</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructscore_1_1_restorable_document_html"><div class="ttname"><a href="structscore_1_1_restorable_document.html">score::RestorableDocument</a></div><div class="ttdef"><b>Definition:</b> DocumentBackups.hpp:13</div></div>
 <div class="ttc" id="aclassscore_1_1_document_html"><div class="ttname"><a href="classscore_1_1_document.html">score::Document</a></div><div class="ttdoc">The Document class is the central part of the software.</div><div class="ttdef"><b>Definition:</b> Document.hpp:50</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:146</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:160</div></div>
 <div class="ttc" id="astructscore_1_1_g_u_i_application_context_html"><div class="ttname"><a href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a></div><div class="ttdoc">Specializes ApplicationContext with the QMainWindow.</div><div class="ttdef"><b>Definition:</b> GUIApplicationContext.hpp:14</div></div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition:</b> Identifier.hpp:56</div></div>
 <div class="ttc" id="aclassscore_1_1_document_builder_html"><div class="ttname"><a href="classscore_1_1_document_builder.html">score::DocumentBuilder</a></div><div class="ttdoc">Methods to set-up documents.</div><div class="ttdef"><b>Definition:</b> DocumentBuilder.hpp:26</div></div>

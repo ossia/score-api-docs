@@ -100,13 +100,13 @@ $(document).ready(function(){initNavTree('_base_scenario_presenter_8hpp_source.h
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;score/tools/std/IndirectContainer.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Scenario/Document/Event/EventPresenter.hpp&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Scenario/Document/Interval/FullView/FullViewIntervalPresenter.hpp&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;Scenario/Document/Interval/IntervalModel.hpp&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;Scenario/Document/State/StatePresenter.hpp&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;Scenario/Document/TimeSync/TimeSyncPresenter.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Scenario/Document/Event/EventPresenter.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Scenario/Document/Interval/FullView/FullViewIntervalPresenter.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Scenario/Document/Interval/IntervalModel.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Scenario/Document/State/StatePresenter.hpp&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;Scenario/Document/TimeSync/TimeSyncPresenter.hpp&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;score/tools/std/IndirectContainer.hpp&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Model_T, <span class="keyword">typename</span> IntervalPresenter_T&gt;</div>
 <div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_base_scenario_presenter.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_base_scenario_presenter.html">BaseScenarioPresenter</a></div>
@@ -139,71 +139,65 @@ $(document).ready(function(){initNavTree('_base_scenario_presenter_8hpp_source.h
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> {m_startNodePresenter, m_endNodePresenter};</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  }</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_event_presenter.html">Scenario::EventPresenter</a>&amp;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  event(<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Scenario::EventModel&gt;</a>&amp; <span class="keywordtype">id</span>)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == m_model.startEvent().id())</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keywordflow">return</span> *m_startEventPresenter;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == m_model.endEvent().id())</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keywordflow">return</span> *m_endEventPresenter;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    SCORE_ABORT;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_time_sync_presenter.html">Scenario::TimeSyncPresenter</a>&amp;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  timeSync(<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Scenario::TimeSyncModel&gt;</a>&amp; <span class="keywordtype">id</span>)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == m_model.startTimeSync().id())</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keywordflow">return</span> *m_startNodePresenter;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == m_model.endTimeSync().id())</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keywordflow">return</span> *m_endNodePresenter;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    SCORE_ABORT;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">const</span> IntervalPresenter_T&amp;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  interval(<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Scenario::IntervalModel&gt;</a>&amp; <span class="keywordtype">id</span>)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == m_model.interval().id())</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="keywordflow">return</span> *m_intervalPresenter;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    SCORE_ABORT;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_state_presenter.html">Scenario::StatePresenter</a>&amp;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  state(<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Scenario::StateModel&gt;</a>&amp; <span class="keywordtype">id</span>)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == m_model.startState().id())</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keywordflow">return</span> *m_startStatePresenter;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == m_model.endState().id())</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="keywordflow">return</span> *m_endStatePresenter;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    SCORE_ABORT;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_time_sync_model.html">Scenario::TimeSyncModel</a>&amp; startTimeSync()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> m_startNodePresenter-&gt;model();</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  IntervalPresenter_T* intervalPresenter()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> m_intervalPresenter;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">const</span> Model_T&amp; m_model;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  IntervalPresenter_T* m_intervalPresenter{};</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <a class="code" href="class_scenario_1_1_state_presenter.html">Scenario::StatePresenter</a>* m_startStatePresenter{};</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <a class="code" href="class_scenario_1_1_state_presenter.html">Scenario::StatePresenter</a>* m_endStatePresenter{};</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <a class="code" href="class_scenario_1_1_event_presenter.html">Scenario::EventPresenter</a>* m_startEventPresenter{};</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="class_scenario_1_1_event_presenter.html">Scenario::EventPresenter</a>* m_endEventPresenter{};</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="class_scenario_1_1_time_sync_presenter.html">Scenario::TimeSyncPresenter</a>* m_startNodePresenter{};</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="class_scenario_1_1_time_sync_presenter.html">Scenario::TimeSyncPresenter</a>* m_endNodePresenter{};</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_event_presenter.html">Scenario::EventPresenter</a>&amp; event(<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Scenario::EventModel&gt;</a>&amp; <span class="keywordtype">id</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span>(<span class="keywordtype">id</span> == m_model.startEvent().id())</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keywordflow">return</span> *m_startEventPresenter;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<span class="keywordtype">id</span> == m_model.endEvent().id())</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keywordflow">return</span> *m_endEventPresenter;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    SCORE_ABORT;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_time_sync_presenter.html">Scenario::TimeSyncPresenter</a>&amp;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  timeSync(<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Scenario::TimeSyncModel&gt;</a>&amp; <span class="keywordtype">id</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">if</span>(<span class="keywordtype">id</span> == m_model.startTimeSync().id())</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="keywordflow">return</span> *m_startNodePresenter;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<span class="keywordtype">id</span> == m_model.endTimeSync().id())</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keywordflow">return</span> *m_endNodePresenter;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    SCORE_ABORT;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">const</span> IntervalPresenter_T&amp; interval(<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Scenario::IntervalModel&gt;</a>&amp; <span class="keywordtype">id</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span>(<span class="keywordtype">id</span> == m_model.interval().id())</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keywordflow">return</span> *m_intervalPresenter;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    SCORE_ABORT;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_state_presenter.html">Scenario::StatePresenter</a>&amp; state(<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Scenario::StateModel&gt;</a>&amp; <span class="keywordtype">id</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">if</span>(<span class="keywordtype">id</span> == m_model.startState().id())</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keywordflow">return</span> *m_startStatePresenter;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<span class="keywordtype">id</span> == m_model.endState().id())</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordflow">return</span> *m_endStatePresenter;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    SCORE_ABORT;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_time_sync_model.html">Scenario::TimeSyncModel</a>&amp; startTimeSync()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> m_startNodePresenter-&gt;model();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  IntervalPresenter_T* intervalPresenter()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_intervalPresenter; }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">const</span> Model_T&amp; m_model;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  IntervalPresenter_T* m_intervalPresenter{};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="class_scenario_1_1_state_presenter.html">Scenario::StatePresenter</a>* m_startStatePresenter{};</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="class_scenario_1_1_state_presenter.html">Scenario::StatePresenter</a>* m_endStatePresenter{};</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="class_scenario_1_1_event_presenter.html">Scenario::EventPresenter</a>* m_startEventPresenter{};</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <a class="code" href="class_scenario_1_1_event_presenter.html">Scenario::EventPresenter</a>* m_endEventPresenter{};</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="class_scenario_1_1_time_sync_presenter.html">Scenario::TimeSyncPresenter</a>* m_startNodePresenter{};</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="code" href="class_scenario_1_1_time_sync_presenter.html">Scenario::TimeSyncPresenter</a>* m_endNodePresenter{};</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_scenario_1_1_time_sync_model_html"><div class="ttname"><a href="class_scenario_1_1_time_sync_model.html">Scenario::TimeSyncModel</a></div><div class="ttdef"><b>Definition:</b> TimeSyncModel.hpp:31</div></div>
-<div class="ttc" id="aclass_scenario_1_1_event_presenter_html"><div class="ttname"><a href="class_scenario_1_1_event_presenter.html">Scenario::EventPresenter</a></div><div class="ttdef"><b>Definition:</b> EventPresenter.hpp:22</div></div>
-<div class="ttc" id="aclassscore_1_1_indirect_container_html"><div class="ttname"><a href="classscore_1_1_indirect_container.html">score::IndirectContainer</a></div><div class="ttdef"><b>Definition:</b> IndirectContainer.hpp:129</div></div>
+<div class="ttc" id="aclass_scenario_1_1_time_sync_model_html"><div class="ttname"><a href="class_scenario_1_1_time_sync_model.html">Scenario::TimeSyncModel</a></div><div class="ttdef"><b>Definition:</b> TimeSyncModel.hpp:33</div></div>
+<div class="ttc" id="aclass_scenario_1_1_event_presenter_html"><div class="ttname"><a href="class_scenario_1_1_event_presenter.html">Scenario::EventPresenter</a></div><div class="ttdef"><b>Definition:</b> EventPresenter.hpp:23</div></div>
+<div class="ttc" id="aclassscore_1_1_indirect_container_html"><div class="ttname"><a href="classscore_1_1_indirect_container.html">score::IndirectContainer</a></div><div class="ttdef"><b>Definition:</b> IndirectContainer.hpp:128</div></div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition:</b> Identifier.hpp:56</div></div>
 <div class="ttc" id="aclass_base_scenario_presenter_html"><div class="ttname"><a href="class_base_scenario_presenter.html">BaseScenarioPresenter</a></div><div class="ttdef"><b>Definition:</b> BaseScenarioPresenter.hpp:12</div></div>
-<div class="ttc" id="aclass_scenario_1_1_state_presenter_html"><div class="ttname"><a href="class_scenario_1_1_state_presenter.html">Scenario::StatePresenter</a></div><div class="ttdef"><b>Definition:</b> StatePresenter.hpp:14</div></div>
-<div class="ttc" id="aclass_scenario_1_1_time_sync_presenter_html"><div class="ttname"><a href="class_scenario_1_1_time_sync_presenter.html">Scenario::TimeSyncPresenter</a></div><div class="ttdef"><b>Definition:</b> TimeSyncPresenter.hpp:26</div></div>
+<div class="ttc" id="aclass_scenario_1_1_state_presenter_html"><div class="ttname"><a href="class_scenario_1_1_state_presenter.html">Scenario::StatePresenter</a></div><div class="ttdef"><b>Definition:</b> StatePresenter.hpp:15</div></div>
+<div class="ttc" id="aclass_scenario_1_1_time_sync_presenter_html"><div class="ttname"><a href="class_scenario_1_1_time_sync_presenter.html">Scenario::TimeSyncPresenter</a></div><div class="ttdef"><b>Definition:</b> TimeSyncPresenter.hpp:28</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -173,8 +173,8 @@ Macros</h2></td></tr>
 <tr class="separator:a3545013abd611231a3fd12761826e3c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9887ed2002865cba1349cf8742c72292"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCORE_DECLARE_ACTION</b>(ActionName,  Text,  Group,  Shortcut)</td></tr>
 <tr class="separator:a9887ed2002865cba1349cf8742c72292"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cc05ddfae66a6e0d3939067489d30c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCORE_DECLARE_ACTION_2S</b>( ActionName,  Text,  Group,  Shortcut1,  Shortcut2)</td></tr>
-<tr class="separator:a8cc05ddfae66a6e0d3939067489d30c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d4b184798883cb3d2db151139f9dfe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCORE_DECLARE_ACTION_2S</b>(ActionName,  Text,  Group,  Shortcut1,  Shortcut2)</td></tr>
+<tr class="separator:af1d4b184798883cb3d2db151139f9dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -226,33 +226,29 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>score::ActionConditi
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">namespace </span>Actions                                                         \</div>
-<div class="line">  {                                                                         \</div>
-<div class="line">  struct ActionName;                                                        \</div>
-<div class="line">  }                                                                         \</div>
-<div class="line">  namespace <a class="code" href="namespacescore.html">score</a>                                                           \</div>
-<div class="line">  {                                                                         \</div>
-<div class="line">  template &lt;&gt;                                                               \</div>
-<div class="line">  struct MetaAction&lt;Actions::ActionName&gt;                                    \</div>
-<div class="line">  {                                                                         \</div>
-<div class="line">    static <a class="code" href="classscore_1_1_action.html">score::Action</a> make(QAction* ptr)                                 \</div>
-<div class="line">    {                                                                       \</div>
-<div class="line">      return <a class="code" href="classscore_1_1_action.html">score::Action</a>{                                                 \</div>
-<div class="line">          ptr,                                                              \</div>
-<div class="line">          QObject::tr(Text),                                                \</div>
-<div class="line">          key(),                                                            \</div>
-<div class="line">          score::ActionGroupKey{#Group},                                    \</div>
-<div class="line">          Shortcut};                                                        \</div>
-<div class="line">    }                                                                       \</div>
-<div class="line">                                                                            \</div>
-<div class="line">    static <a class="code" href="class_string_key.html">score::ActionKey</a> key() { <span class="keywordflow">return</span> <a class="code" href="class_string_key.html">score::ActionKey</a>{#ActionName}; } \</div>
-<div class="line">  };                                                                        \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">namespace </span>Actions                                                                \</div>
+<div class="line">  {                                                                                \</div>
+<div class="line">  struct ActionName;                                                               \</div>
+<div class="line">  }                                                                                \</div>
+<div class="line">  namespace <a class="code" href="namespacescore.html">score</a>                                                                  \</div>
+<div class="line">  {                                                                                \</div>
+<div class="line">  template &lt;&gt;                                                                      \</div>
+<div class="line">  struct MetaAction&lt;Actions::ActionName&gt;                                           \</div>
+<div class="line">  {                                                                                \</div>
+<div class="line">    static <a class="code" href="classscore_1_1_action.html">score::Action</a> make(QAction* ptr)                                        \</div>
+<div class="line">    {                                                                              \</div>
+<div class="line">      return <a class="code" href="classscore_1_1_action.html">score::Action</a>{                                                        \</div>
+<div class="line">          ptr, QObject::tr(Text), key(), <a class="code" href="class_string_key.html">score::ActionGroupKey</a>{#Group}, Shortcut}; \</div>
+<div class="line">    }                                                                              \</div>
+<div class="line">                                                                                   \</div>
+<div class="line">    static <a class="code" href="class_string_key.html">score::ActionKey</a> key() { <span class="keywordflow">return</span> <a class="code" href="class_string_key.html">score::ActionKey</a>{#ActionName}; }        \</div>
+<div class="line">  };                                                                               \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a8cc05ddfae66a6e0d3939067489d30c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8cc05ddfae66a6e0d3939067489d30c4">&#9670;&nbsp;</a></span>SCORE_DECLARE_ACTION_2S</h2>
+<a id="af1d4b184798883cb3d2db151139f9dfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1d4b184798883cb3d2db151139f9dfe">&#9670;&nbsp;</a></span>SCORE_DECLARE_ACTION_2S</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -294,28 +290,24 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>score::ActionConditi
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">namespace </span>Actions                                                         \</div>
-<div class="line">  {                                                                         \</div>
-<div class="line">  struct ActionName;                                                        \</div>
-<div class="line">  }                                                                         \</div>
-<div class="line">  namespace <a class="code" href="namespacescore.html">score</a>                                                           \</div>
-<div class="line">  {                                                                         \</div>
-<div class="line">  template &lt;&gt;                                                               \</div>
-<div class="line">  struct MetaAction&lt;Actions::ActionName&gt;                                    \</div>
-<div class="line">  {                                                                         \</div>
-<div class="line">    static <a class="code" href="classscore_1_1_action.html">score::Action</a> make(QAction* ptr)                                 \</div>
-<div class="line">    {                                                                       \</div>
-<div class="line">      return <a class="code" href="classscore_1_1_action.html">score::Action</a>{                                                 \</div>
-<div class="line">          ptr,                                                              \</div>
-<div class="line">          QObject::tr(Text),                                                \</div>
-<div class="line">          key(),                                                            \</div>
-<div class="line">          score::ActionGroupKey{#Group},                                    \</div>
-<div class="line">          Shortcut1,                                                        \</div>
-<div class="line">          Shortcut2};                                                       \</div>
-<div class="line">    }                                                                       \</div>
-<div class="line">                                                                            \</div>
-<div class="line">    static <a class="code" href="class_string_key.html">score::ActionKey</a> key() { <span class="keywordflow">return</span> <a class="code" href="class_string_key.html">score::ActionKey</a>{#ActionName}; } \</div>
-<div class="line">  };                                                                        \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">namespace </span>Actions                                                            \</div>
+<div class="line">  {                                                                            \</div>
+<div class="line">  struct ActionName;                                                           \</div>
+<div class="line">  }                                                                            \</div>
+<div class="line">  namespace <a class="code" href="namespacescore.html">score</a>                                                              \</div>
+<div class="line">  {                                                                            \</div>
+<div class="line">  template &lt;&gt;                                                                  \</div>
+<div class="line">  struct MetaAction&lt;Actions::ActionName&gt;                                       \</div>
+<div class="line">  {                                                                            \</div>
+<div class="line">    static <a class="code" href="classscore_1_1_action.html">score::Action</a> make(QAction* ptr)                                    \</div>
+<div class="line">    {                                                                          \</div>
+<div class="line">      return <a class="code" href="classscore_1_1_action.html">score::Action</a>{ptr,       QObject::tr(Text),                       \</div>
+<div class="line">                           key(),     <a class="code" href="class_string_key.html">score::ActionGroupKey</a>{#Group},           \</div>
+<div class="line">                           Shortcut1, Shortcut2};                              \</div>
+<div class="line">    }                                                                          \</div>
+<div class="line">                                                                               \</div>
+<div class="line">    static <a class="code" href="class_string_key.html">score::ActionKey</a> key() { <span class="keywordflow">return</span> <a class="code" href="class_string_key.html">score::ActionKey</a>{#ActionName}; }    \</div>
+<div class="line">  };                                                                           \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
 </div>
@@ -335,34 +327,33 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>score::ActionConditi
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">namespace </span><a class="code" href="namespacescore.html">score</a>                                                             \</div>
-<div class="line">  {                                                                           \</div>
-<div class="line">  template &lt;&gt;                                                                 \</div>
-<div class="line">  class EnableWhenDocumentIs&lt;Type&gt; <span class="keyword">final</span>                                      \</div>
-<div class="line">      : <span class="keyword">public</span> <a class="code" href="structscore_1_1_document_action_condition.html">score::DocumentActionCondition</a>                                 \</div>
-<div class="line">  {                                                                           \</div>
-<div class="line">  public:                                                                     \</div>
-<div class="line">    static <a class="code" href="class_string_key.html">score::ActionConditionKey</a> static_key()                             \</div>
-<div class="line">    {                                                                         \</div>
-<div class="line">      return <a class="code" href="class_string_key.html">score::ActionConditionKey</a>{<span class="stringliteral">&quot;DocumentIs&quot;</span> #Type};                   \</div>
-<div class="line">    }                                                                         \</div>
-<div class="line">    EnableWhenDocumentIs()                                                    \</div>
-<div class="line">        : <a class="code" href="structscore_1_1_document_action_condition.html">score::DocumentActionCondition</a>{static_key()}                        \</div>
-<div class="line">    {                                                                         \</div>
-<div class="line">    }                                                                         \</div>
-<div class="line">                                                                              \</div>
-<div class="line">  private:                                                                    \</div>
-<div class="line">    void action(<a class="code" href="classscore_1_1_action_manager.html">score::ActionManager</a>&amp; mgr, <a class="code" href="structscore_1_1_document_context.html">score::MaybeDocument</a> doc) <span class="keyword">override</span> \</div>
-<div class="line">    {                                                                         \</div>
-<div class="line">      if (!doc)                                                               \</div>
-<div class="line">      {                                                                       \</div>
-<div class="line">        setEnabled(mgr, <span class="keyword">false</span>);                                               \</div>
-<div class="line">        return;                                                               \</div>
-<div class="line">      }                                                                       \</div>
-<div class="line">      auto model = score::IDocument::try_get&lt;Type&gt;(doc-&gt;document);            \</div>
-<div class="line">      setEnabled(mgr, <span class="keywordtype">bool</span>(model));                                           \</div>
-<div class="line">    }                                                                         \</div>
-<div class="line">  };                                                                          \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">namespace </span><a class="code" href="namespacescore.html">score</a>                                                                \</div>
+<div class="line">  {                                                                              \</div>
+<div class="line">  template &lt;&gt;                                                                    \</div>
+<div class="line">  class EnableWhenDocumentIs&lt;Type&gt; final : <span class="keyword">public</span> <a class="code" href="structscore_1_1_document_action_condition.html">score::DocumentActionCondition</a> \</div>
+<div class="line">  {                                                                              \</div>
+<div class="line">  public:                                                                        \</div>
+<div class="line">    static <a class="code" href="class_string_key.html">score::ActionConditionKey</a> static_key()                                \</div>
+<div class="line">    {                                                                            \</div>
+<div class="line">      return <a class="code" href="class_string_key.html">score::ActionConditionKey</a>{<span class="stringliteral">&quot;DocumentIs&quot;</span> #Type};                      \</div>
+<div class="line">    }                                                                            \</div>
+<div class="line">    EnableWhenDocumentIs()                                                       \</div>
+<div class="line">        : <a class="code" href="structscore_1_1_document_action_condition.html">score::DocumentActionCondition</a>{static_key()}                           \</div>
+<div class="line">    {                                                                            \</div>
+<div class="line">    }                                                                            \</div>
+<div class="line">                                                                                 \</div>
+<div class="line">  private:                                                                       \</div>
+<div class="line">    void action(<a class="code" href="classscore_1_1_action_manager.html">score::ActionManager</a>&amp; mgr, <a class="code" href="structscore_1_1_document_context.html">score::MaybeDocument</a> doc) <span class="keyword">override</span>    \</div>
+<div class="line">    {                                                                            \</div>
+<div class="line">      if(!doc)                                                                   \</div>
+<div class="line">      {                                                                          \</div>
+<div class="line">        setEnabled(mgr, <span class="keyword">false</span>);                                                  \</div>
+<div class="line">        return;                                                                  \</div>
+<div class="line">      }                                                                          \</div>
+<div class="line">      auto model = score::IDocument::try_get&lt;Type&gt;(doc-&gt;document);               \</div>
+<div class="line">      setEnabled(mgr, <span class="keywordtype">bool</span>(model));                                              \</div>
+<div class="line">    }                                                                            \</div>
+<div class="line">  };                                                                             \</div>
 <div class="line">  }</div>
 </div><!-- fragment --><p>\macro SCORE_DECLARE_DOCUMENT_CONDITION</p>
 <p>Use this macro to declare a new condition that will be enabled whenever a document of the given type is brought forward, or open.</p>
@@ -417,12 +408,12 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>score::ActionConditi
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_string_key_html"><div class="ttname"><a href="class_string_key.html">StringKey&lt; Action &gt;</a></div></div>
+<div class="ttc" id="aclass_string_key_html"><div class="ttname"><a href="class_string_key.html">StringKey&lt; ActionGroup &gt;</a></div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:146</div></div>
-<div class="ttc" id="astructscore_1_1_document_action_condition_html"><div class="ttname"><a href="structscore_1_1_document_action_condition.html">score::DocumentActionCondition</a></div><div class="ttdoc">The DocumentActionCondition struct.</div><div class="ttdef"><b>Definition:</b> Action.hpp:230</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:160</div></div>
+<div class="ttc" id="astructscore_1_1_document_action_condition_html"><div class="ttname"><a href="structscore_1_1_document_action_condition.html">score::DocumentActionCondition</a></div><div class="ttdoc">The DocumentActionCondition struct.</div><div class="ttdef"><b>Definition:</b> Action.hpp:220</div></div>
 <div class="ttc" id="aclassscore_1_1_action_html"><div class="ttname"><a href="classscore_1_1_action.html">score::Action</a></div><div class="ttdoc">The Action class.</div><div class="ttdef"><b>Definition:</b> Action.hpp:78</div></div>
-<div class="ttc" id="aclassscore_1_1_action_manager_html"><div class="ttname"><a href="classscore_1_1_action_manager.html">score::ActionManager</a></div><div class="ttdoc">The ActionManager class.</div><div class="ttdef"><b>Definition:</b> ActionManager.hpp:19</div></div>
+<div class="ttc" id="aclassscore_1_1_action_manager_html"><div class="ttname"><a href="classscore_1_1_action_manager.html">score::ActionManager</a></div><div class="ttdoc">The ActionManager class.</div><div class="ttdef"><b>Definition:</b> ActionManager.hpp:18</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

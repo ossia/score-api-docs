@@ -109,58 +109,56 @@ $(document).ready(function(){initNavTree('_command_stack_serialization_8hpp_sour
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> RedoFun&gt;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keywordtype">void</span> loadCommandStack(</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">const</span> <a class="code" href="classscore_1_1_application_components.html">score::ApplicationComponents</a>&amp; components,</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_data_stream_writer.html">DataStreamWriter</a>&amp; writer,</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="classscore_1_1_command_stack.html">score::CommandStack</a>&amp; stack,</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    RedoFun redo_fun)</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  std::vector&lt;score::CommandData&gt; undoStack, redoStack;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  writer.writeTo(undoStack);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  writer.writeTo(redoStack);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">const</span> <a class="code" href="classscore_1_1_application_components.html">score::ApplicationComponents</a>&amp; components, <a class="code" href="class_data_stream_writer.html">DataStreamWriter</a>&amp; writer,</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="classscore_1_1_command_stack.html">score::CommandStack</a>&amp; stack, RedoFun redo_fun)</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  std::vector&lt;score::CommandData&gt; undoStack, redoStack;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  writer.writeTo(undoStack);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  writer.writeTo(redoStack);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  writer.<a class="code" href="class_data_stream_writer.html#ae5394117c6269533c28737b5092138a9">checkDelimiter</a>();</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  writer.<a class="code" href="class_data_stream_writer.html#ae5394117c6269533c28737b5092138a9">checkDelimiter</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  stack.undoable().clear();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  stack.redoable().clear();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  stack.updateStack([&amp;]() {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    stack.setSavedIndex(-1);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">bool</span> ok = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; elt : undoStack)</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keyword">auto</span> cmd = components.instantiateUndoCommand(elt);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <span class="keywordflow">if</span> (redo_fun(cmd))</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        stack.undoable().push(cmd);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        ok = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">if</span> (ok)</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; elt : redoStack)</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">auto</span> cmd = components.instantiateUndoCommand(elt);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        stack.redoable().push(cmd);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  });</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  stack.undoable().clear();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  stack.redoable().clear();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  stack.updateStack([&amp;]() {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    stack.setSavedIndex(-1);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">bool</span> ok = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; elt : undoStack)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <span class="keyword">auto</span> cmd = components.instantiateUndoCommand(elt);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keywordflow">if</span>(redo_fun(cmd))</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        stack.undoable().push(cmd);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        ok = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">if</span>(ok)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; elt : redoStack)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">auto</span> cmd = components.instantiateUndoCommand(elt);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        stack.redoable().push(cmd);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  });</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_data_stream_writer_html_ae5394117c6269533c28737b5092138a9"><div class="ttname"><a href="class_data_stream_writer.html#ae5394117c6269533c28737b5092138a9">DataStreamWriter::checkDelimiter</a></div><div class="ttdeci">void checkDelimiter()</div><div class="ttdoc">checkDelimiter</div><div class="ttdef"><b>Definition:</b> DataStreamVisitor.cpp:47</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:146</div></div>
-<div class="ttc" id="aclass_data_stream_writer_html"><div class="ttname"><a href="class_data_stream_writer.html">DataStreamWriter</a></div><div class="ttdef"><b>Definition:</b> DataStreamVisitor.hpp:207</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:160</div></div>
+<div class="ttc" id="aclass_data_stream_writer_html"><div class="ttname"><a href="class_data_stream_writer.html">DataStreamWriter</a></div><div class="ttdef"><b>Definition:</b> DataStreamVisitor.hpp:205</div></div>
 <div class="ttc" id="aclassscore_1_1_command_stack_html"><div class="ttname"><a href="classscore_1_1_command_stack.html">score::CommandStack</a></div><div class="ttdef"><b>Definition:</b> CommandStack.hpp:25</div></div>
-<div class="ttc" id="aclassscore_1_1_application_components_html"><div class="ttname"><a href="classscore_1_1_application_components.html">score::ApplicationComponents</a></div><div class="ttdef"><b>Definition:</b> ApplicationComponents.hpp:68</div></div>
+<div class="ttc" id="aclassscore_1_1_application_components_html"><div class="ttname"><a href="classscore_1_1_application_components.html">score::ApplicationComponents</a></div><div class="ttdef"><b>Definition:</b> ApplicationComponents.hpp:67</div></div>
 <div class="ttc" id="a_data_stream_visitor_8hpp_html"><div class="ttname"><a href="_data_stream_visitor_8hpp.html">DataStreamVisitor.hpp</a></div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

@@ -143,103 +143,98 @@ $(document).ready(function(){initNavTree('score-lib-process_2_process_2_dataflow
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  W_OBJECT(<a class="code" href="class_dataflow_1_1_port_item.html">PortItem</a>)</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  Q_INTERFACES(QGraphicsItem)</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="class_dataflow_1_1_port_item.html">PortItem</a>(</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_port.html">Process::Port</a>&amp; p,</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; ctx,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      QGraphicsItem* parent);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  ~<a class="code" href="class_dataflow_1_1_port_item.html">PortItem</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_process_1_1_port.html">Process::Port</a>&amp; port()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_port; }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">static</span> <a class="code" href="class_dataflow_1_1_port_item.html">PortItem</a>* clickedPort;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> setupMenu(QMenu&amp;, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> setPortVisible(<span class="keywordtype">bool</span> b);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">void</span> resetPortVisible();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> setHighlight(<span class="keywordtype">bool</span> b);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">using</span> QGraphicsItem::dropEvent;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">int</span> Type = QGraphicsItem::UserType + 700;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">int</span> type() <span class="keyword">const</span> <span class="keyword">final</span> <span class="keyword">override</span> { <span class="keywordflow">return</span> Type; }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> createCable(<a class="code" href="class_dataflow_1_1_port_item.html">PortItem</a>* src, <a class="code" href="class_dataflow_1_1_port_item.html">PortItem</a>* snk)</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, createCable, src, snk)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> contextMenuRequested(QPointF scenepos, QPoint pos)</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, contextMenuRequested, scenepos, pos)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  QRectF boundingRect() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">void</span> paint(</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      QPainter* painter,</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="keyword">const</span> QStyleOptionGraphicsItem* option,</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      QWidget* widget) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> mousePressEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">void</span> mouseMoveEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">void</span> mouseReleaseEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">void</span> hoverEnterEvent(QGraphicsSceneHoverEvent* event) <span class="keyword">final</span> <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">void</span> hoverMoveEvent(QGraphicsSceneHoverEvent* event) <span class="keyword">final</span> <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">void</span> hoverLeaveEvent(QGraphicsSceneHoverEvent* event) <span class="keyword">final</span> <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">void</span> dragEnterEvent(QGraphicsSceneDragDropEvent* event) <span class="keyword">final</span> <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">void</span> dragMoveEvent(QGraphicsSceneDragDropEvent* event) <span class="keyword">final</span> <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">void</span> dragLeaveEvent(QGraphicsSceneDragDropEvent* event) <span class="keyword">final</span> <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="class_dataflow_1_1_port_item.html">PortItem</a>(<span class="keyword">const</span> <a class="code" href="class_process_1_1_port.html">Process::Port</a>&amp; p, <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; ctx, QGraphicsItem* parent);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  ~<a class="code" href="class_dataflow_1_1_port_item.html">PortItem</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_process_1_1_port.html">Process::Port</a>&amp; port()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_port; }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">static</span> <a class="code" href="class_dataflow_1_1_port_item.html">PortItem</a>* clickedPort;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> setupMenu(QMenu&amp;, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> setPortVisible(<span class="keywordtype">bool</span> b);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> resetPortVisible();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> setHighlight(<span class="keywordtype">bool</span> b);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">using</span> QGraphicsItem::dropEvent;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">int</span> Type = QGraphicsItem::UserType + 700;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">int</span> type() <span class="keyword">const</span> <span class="keyword">final</span> <span class="keyword">override</span> { <span class="keywordflow">return</span> Type; }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> createCable(<a class="code" href="class_dataflow_1_1_port_item.html">PortItem</a>* src, <a class="code" href="class_dataflow_1_1_port_item.html">PortItem</a>* snk)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, createCable, src, snk)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> contextMenuRequested(QPointF scenepos, QPoint pos)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, contextMenuRequested, scenepos, pos)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  QRectF boundingRect() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> paint(QPainter* painter, <span class="keyword">const</span> QStyleOptionGraphicsItem* option, QWidget* widget)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">void</span> mousePressEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> mouseMoveEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> mouseReleaseEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span> hoverEnterEvent(QGraphicsSceneHoverEvent* event) <span class="keyword">final</span> <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">void</span> hoverMoveEvent(QGraphicsSceneHoverEvent* event) <span class="keyword">final</span> <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> hoverLeaveEvent(QGraphicsSceneHoverEvent* event) <span class="keyword">final</span> <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">void</span> dragEnterEvent(QGraphicsSceneDragDropEvent* event) <span class="keyword">final</span> <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">void</span> dragMoveEvent(QGraphicsSceneDragDropEvent* event) <span class="keyword">final</span> <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">void</span> dragLeaveEvent(QGraphicsSceneDragDropEvent* event) <span class="keyword">final</span> <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">void</span> keyPressEvent(QKeyEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">void</span> keyReleaseEvent(QKeyEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  QVariant itemChange(GraphicsItemChange change, <span class="keyword">const</span> QVariant&amp; value) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">void</span> keyPressEvent(QKeyEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">void</span> keyReleaseEvent(QKeyEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  QVariant</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  itemChange(GraphicsItemChange change, <span class="keyword">const</span> QVariant&amp; value) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; m_context;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  std::vector&lt;QPointer&lt;CableItem&gt;&gt; cables;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_process_1_1_port.html">Process::Port</a>&amp; m_port;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">double</span> m_diam = 8.;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">bool</span> m_visible{<span class="keyword">true</span>};</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">bool</span> m_inlet{<span class="keyword">true</span>};</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">bool</span> m_highlight{<span class="keyword">true</span>};</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; m_context;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  std::vector&lt;QPointer&lt;CableItem&gt;&gt; cables;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_process_1_1_port.html">Process::Port</a>&amp; m_port;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">double</span> m_diam = 8.;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">bool</span> m_visible{<span class="keyword">true</span>};</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">bool</span> m_inlet{<span class="keyword">true</span>};</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">bool</span> m_highlight{<span class="keyword">true</span>};</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_dataflow_1_1_cable_item.html">Dataflow::CableItem</a>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> QPixmap&amp;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  portImage(Process::PortType t, <span class="keywordtype">bool</span> inlet, <span class="keywordtype">bool</span> small, <span class="keywordtype">bool</span> light) noexcept;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;};</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_dataflow_1_1_cable_item.html">Dataflow::CableItem</a>;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> QPixmap&amp;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  portImage(Process::PortType t, <span class="keywordtype">bool</span> inlet, <span class="keywordtype">bool</span> small, <span class="keywordtype">bool</span> light) noexcept;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;};</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;SCORE_LIB_PROCESS_EXPORT</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<a class="code" href="classscore_1_1_simple_text_item.html">score::SimpleTextItem</a>* makePortLabel(<span class="keyword">const</span> <a class="code" href="class_process_1_1_port.html">Process::Port</a>&amp; port, QGraphicsItem* parent);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;ossia::small_vector&lt;const Process::Port*, 16&gt; getProcessPorts(<span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; proc);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore.html">score</a></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;{</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">namespace </span>mime</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;{</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> constexpr <span class="keywordtype">char</span>* port()</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;{</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordflow">return</span> <span class="stringliteral">&quot;application/x-score-port&quot;</span>;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="class_dataflow_1_1_port_item.html">Dataflow::PortItem</a>*)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;SCORE_LIB_PROCESS_EXPORT</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<a class="code" href="classscore_1_1_simple_text_item.html">score::SimpleTextItem</a>* makePortLabel(<span class="keyword">const</span> <a class="code" href="class_process_1_1_port.html">Process::Port</a>&amp; port, QGraphicsItem* parent);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;ossia::small_vector&lt;const Process::Port*, 16&gt;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;getProcessPorts(<span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; proc);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore.html">score</a></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;{</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">namespace </span>mime</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;{</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> constexpr <span class="keywordtype">char</span>* port()</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;{</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordflow">return</span> <span class="stringliteral">&quot;application/x-score-port&quot;</span>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="class_dataflow_1_1_port_item.html">Dataflow::PortItem</a>*)</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1371</div></div>
+<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1326</div></div>
 <div class="ttc" id="aclass_dataflow_1_1_port_item_html"><div class="ttname"><a href="class_dataflow_1_1_port_item.html">Dataflow::PortItem</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/PortItem.hpp:39</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:146</div></div>
-<div class="ttc" id="aclass_control_inlet_html"><div class="ttname"><a href="class_control_inlet.html">ControlInlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:92</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:160</div></div>
+<div class="ttc" id="aclass_control_inlet_html"><div class="ttname"><a href="class_control_inlet.html">ControlInlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:82</div></div>
 <div class="ttc" id="aclassscore_1_1_simple_text_item_html"><div class="ttname"><a href="classscore_1_1_simple_text_item.html">score::SimpleTextItem</a></div><div class="ttdef"><b>Definition:</b> TextItem.hpp:25</div></div>
 <div class="ttc" id="aclass_dataflow_1_1_cable_item_html"><div class="ttname"><a href="class_dataflow_1_1_cable_item.html">Dataflow::CableItem</a></div><div class="ttdef"><b>Definition:</b> CableItem.hpp:23</div></div>
 <div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Process.hpp:54</div></div>
 <div class="ttc" id="astruct_process_1_1_context_html"><div class="ttname"><a href="struct_process_1_1_context.html">Process::Context</a></div><div class="ttdef"><b>Definition:</b> ProcessContext.hpp:11</div></div>
-<div class="ttc" id="aclass_process_1_1_port_html"><div class="ttname"><a href="class_process_1_1_port.html">Process::Port</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:117</div></div>
-<div class="ttc" id="aclass_outlet_html"><div class="ttname"><a href="class_outlet.html">Outlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:41</div></div>
+<div class="ttc" id="aclass_process_1_1_port_html"><div class="ttname"><a href="class_process_1_1_port.html">Process::Port</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:101</div></div>
+<div class="ttc" id="aclass_outlet_html"><div class="ttname"><a href="class_outlet.html">Outlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:37</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

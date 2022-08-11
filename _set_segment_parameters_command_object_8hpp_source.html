@@ -121,36 +121,33 @@ $(document).ready(function(){initNavTree('_set_segment_parameters_command_object
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_curve_1_1_set_segment_parameters_command_object.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_curve_1_1_set_segment_parameters_command_object.html">SetSegmentParametersCommandObject</a></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="class_curve_1_1_set_segment_parameters_command_object.html">SetSegmentParametersCommandObject</a>(</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_curve_1_1_model.html">Model</a>&amp;,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <span class="keyword">const</span> <a class="code" href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a>&amp;);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="class_curve_1_1_set_segment_parameters_command_object.html">SetSegmentParametersCommandObject</a>(<span class="keyword">const</span> <a class="code" href="class_curve_1_1_model.html">Model</a>&amp;, <span class="keyword">const</span> <a class="code" href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a>&amp;);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">void</span> setCurveState(<a class="code" href="class_curve_1_1_state_base.html">Curve::StateBase</a>* stateBase) { m_state = stateBase; }</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">void</span> setCurveState(<a class="code" href="class_curve_1_1_state_base.html">Curve::StateBase</a>* stateBase) { m_state = stateBase; }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">void</span> press();</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> press();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> move();</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">void</span> move();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">void</span> release();</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> release();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> cancel();</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">void</span> cancel();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_curve_1_1_model.html">Model</a>&amp; m_model;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="class_single_ongoing_command_dispatcher.html">SingleOngoingCommandDispatcher&lt;SetSegmentParameters&gt;</a> m_dispatcher;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="class_curve_1_1_state_base.html">Curve::StateBase</a>* m_state{};</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  QPointF m_originalPress;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  ossia::flat_map&lt;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <a class="code" href="classid__base__t.html">Id&lt;Curve::SegmentModel&gt;</a>,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      std::pair&lt;std::optional&lt;double&gt;, std::optional&lt;double&gt;&gt;&gt;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      m_orig;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_curve_1_1_model.html">Model</a>&amp; m_model;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="class_single_ongoing_command_dispatcher.html">SingleOngoingCommandDispatcher&lt;SetSegmentParameters&gt;</a> m_dispatcher;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="class_curve_1_1_state_base.html">Curve::StateBase</a>* m_state{};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  QPointF m_originalPress;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  ossia::flat_map&lt;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <a class="code" href="classid__base__t.html">Id&lt;Curve::SegmentModel&gt;</a>, std::pair&lt;std::optional&lt;double&gt;, std::optional&lt;double&gt;&gt;&gt;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      m_orig;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_curve_1_1_state_base_html"><div class="ttname"><a href="class_curve_1_1_state_base.html">Curve::StateBase</a></div><div class="ttdef"><b>Definition:</b> CurvePaletteBaseStates.hpp:19</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:146</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:160</div></div>
 <div class="ttc" id="aclass_curve_1_1_set_segment_parameters_command_object_html"><div class="ttname"><a href="class_curve_1_1_set_segment_parameters_command_object.html">Curve::SetSegmentParametersCommandObject</a></div><div class="ttdef"><b>Definition:</b> SetSegmentParametersCommandObject.hpp:21</div></div>
 <div class="ttc" id="aclassscore_1_1_command_stack_facade_html"><div class="ttname"><a href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a></div><div class="ttdoc">A small abstraction layer over the score::CommandStack.</div><div class="ttdef"><b>Definition:</b> CommandStackFacade.hpp:19</div></div>
 <div class="ttc" id="anamespace_curve_html"><div class="ttname"><a href="namespace_curve.html">Curve</a></div><div class="ttdoc">Utilities and base classes for 1D curves.</div><div class="ttdef"><b>Definition:</b> FocusDispatcher.hpp:11</div></div>

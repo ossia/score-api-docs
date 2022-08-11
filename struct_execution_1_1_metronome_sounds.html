@@ -155,11 +155,10 @@ const <a class="el" href="struct_media_1_1_audio_file_1_1_view_handle.html">Medi
 <b>Initial value:</b><div class="fragment"><div class="line">{[<span class="keyword">this</span>] {</div>
 <div class="line">    <span class="keyword">auto</span> f = std::make_unique&lt;Media::AudioFile&gt;();</div>
 <div class="line">    f-&gt;load(</div>
-<div class="line">        root + <span class="stringliteral">&quot;/metro_tick.wav&quot;</span>,</div>
-<div class="line">        root + <span class="stringliteral">&quot;/metro_tick.wav&quot;</span>,</div>
+<div class="line">        root + <span class="stringliteral">&quot;/metro_tick.wav&quot;</span>, root + <span class="stringliteral">&quot;/metro_tick.wav&quot;</span>,</div>
 <div class="line">        Media::DecodingMethod::Libav);</div>
 <div class="line"> </div>
-<div class="line">    <span class="keywordflow">while</span> (f-&gt;samples() != f-&gt;decodedSamples())</div>
+<div class="line">    <span class="keywordflow">while</span>(f-&gt;samples() != f-&gt;decodedSamples())</div>
 <div class="line">    {</div>
 <div class="line">      std::this_thread::sleep_for(std::chrono::milliseconds(1));</div>
 <div class="line">       (<span class="keyword">static_cast&lt;</span>QApplication *<span class="keyword">&gt;</span>(QCoreApplication::instance())) -&gt;processEvents();</div>
@@ -183,11 +182,10 @@ const <a class="el" href="struct_media_1_1_audio_file_1_1_view_handle.html">Medi
 <b>Initial value:</b><div class="fragment"><div class="line">{[<span class="keyword">this</span>] {</div>
 <div class="line">    <span class="keyword">auto</span> f = std::make_unique&lt;Media::AudioFile&gt;();</div>
 <div class="line">    f-&gt;load(</div>
-<div class="line">        root + <span class="stringliteral">&quot;/metro_tock.wav&quot;</span>,</div>
-<div class="line">        root + <span class="stringliteral">&quot;/metro_tock.wav&quot;</span>,</div>
+<div class="line">        root + <span class="stringliteral">&quot;/metro_tock.wav&quot;</span>, root + <span class="stringliteral">&quot;/metro_tock.wav&quot;</span>,</div>
 <div class="line">        Media::DecodingMethod::Libav);</div>
 <div class="line"> </div>
-<div class="line">    <span class="keywordflow">while</span> (f-&gt;samples() != f-&gt;decodedSamples())</div>
+<div class="line">    <span class="keywordflow">while</span>(f-&gt;samples() != f-&gt;decodedSamples())</div>
 <div class="line">    {</div>
 <div class="line">      std::this_thread::sleep_for(std::chrono::milliseconds(1));</div>
 <div class="line">       (<span class="keyword">static_cast&lt;</span>QApplication *<span class="keyword">&gt;</span>(QCoreApplication::instance())) -&gt;processEvents();</div>
@@ -203,7 +201,7 @@ const <a class="el" href="struct_media_1_1_audio_file_1_1_view_handle.html">Medi
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_library_1_1_settings_1_1_model_html"><div class="ttname"><a href="class_library_1_1_settings_1_1_model.html">Library::Settings::Model</a></div><div class="ttdef"><b>Definition:</b> LibrarySettings.hpp:45</div></div>
-<div class="ttc" id="astructscore_1_1_application_context_html_ae71a4a7f56ab86bfdb5308ed0bae8d00"><div class="ttname"><a href="structscore_1_1_application_context.html#ae71a4a7f56ab86bfdb5308ed0bae8d00">score::ApplicationContext::settings</a></div><div class="ttdeci">T &amp; settings() const</div><div class="ttdoc">Access a specific Settings model instance.</div><div class="ttdef"><b>Definition:</b> ApplicationContext.hpp:42</div></div>
+<div class="ttc" id="astructscore_1_1_application_context_html_ae71a4a7f56ab86bfdb5308ed0bae8d00"><div class="ttname"><a href="structscore_1_1_application_context.html#ae71a4a7f56ab86bfdb5308ed0bae8d00">score::ApplicationContext::settings</a></div><div class="ttdeci">T &amp; settings() const</div><div class="ttdoc">Access a specific Settings model instance.</div><div class="ttdef"><b>Definition:</b> ApplicationContext.hpp:40</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

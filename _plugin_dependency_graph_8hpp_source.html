@@ -134,33 +134,33 @@ $(document).ready(function(){initNavTree('_plugin_dependency_graph_8hpp_source.h
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">const</span> <a class="code" href="structscore_1_1_addon.html">score::Addon</a>* addon{};</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  };</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">using</span> Graph = boost::</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      adjacency_list&lt;boost::vecS, boost::vecS, boost::directedS, GraphVertex&gt;;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">using</span> Graph</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      = boost::adjacency_list&lt;boost::vecS, boost::vecS, boost::directedS, GraphVertex&gt;;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="structscore_1_1_plugin_loader_1_1_plugin_dependency_graph.html">PluginDependencyGraph</a>(<span class="keyword">const</span> std::vector&lt;score::Addon&gt;&amp; addons)</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span> (addons.empty())</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span>(addons.empty())</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    score::hash_map&lt;PluginKey, int64_t&gt; keys;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    std::vector&lt;const score::Addon*&gt; not_loaded;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// First add all the vertices to the graph</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="structscore_1_1_addon.html">score::Addon</a>&amp; addon : addons)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <a class="code" href="structscore_1_1_addon.html">score::Addon</a>&amp; addon : addons)</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keyword">auto</span> vx = boost::add_vertex(<a class="code" href="structscore_1_1_plugin_loader_1_1_plugin_dependency_graph_1_1_graph_vertex.html">GraphVertex</a>{&amp;addon}, m_graph);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      keys[addon.key] = vx;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// If A depends on B, then there is an edge from B to A.</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="structscore_1_1_addon.html">score::Addon</a>&amp; addon : addons)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <a class="code" href="structscore_1_1_addon.html">score::Addon</a>&amp; addon : addons)</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="keyword">auto</span> addon_k = keys[addon.key];</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; k : addon.plugin-&gt;required())</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; k : addon.plugin-&gt;required())</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      {</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keyword">auto</span> it = keys.find(k);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">if</span> (it != keys.end())</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">if</span>(it != keys.end())</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        {</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;          boost::add_edge(addon_k, it-&gt;second, m_graph);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
@@ -174,7 +174,7 @@ $(document).ready(function(){initNavTree('_plugin_dependency_graph_8hpp_source.h
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      }</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">if</span> (!not_loaded.empty())</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">if</span>(!not_loaded.empty())</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      qDebug() &lt;&lt; not_loaded.size()</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;               &lt;&lt; <span class="stringliteral">&quot;plugins were not loaded due to a dependency problem.&quot;</span>;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
@@ -186,13 +186,13 @@ $(document).ready(function(){initNavTree('_plugin_dependency_graph_8hpp_source.h
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">try</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    {</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      boost::topological_sort(m_graph, std::back_inserter(topo_order));</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> e : topo_order)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> e : topo_order)</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">if</span> (m_graph[e].addon)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">if</span>(m_graph[e].addon)</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;          m_sorted.push_back(*m_graph[e].addon);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      }</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">catch</span>(<span class="keyword">const</span> std::exception&amp; e)</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    {</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      qDebug() &lt;&lt; <span class="stringliteral">&quot;Invalid plug-in graph: &quot;</span> &lt;&lt; e.what();</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      m_graph.clear();</div>
@@ -210,7 +210,7 @@ $(document).ready(function(){initNavTree('_plugin_dependency_graph_8hpp_source.h
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructscore_1_1_plugin_loader_1_1_plugin_dependency_graph_1_1_graph_vertex_html"><div class="ttname"><a href="structscore_1_1_plugin_loader_1_1_plugin_dependency_graph_1_1_graph_vertex.html">score::PluginLoader::PluginDependencyGraph::GraphVertex</a></div><div class="ttdef"><b>Definition:</b> PluginDependencyGraph.hpp:30</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:146</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:160</div></div>
 <div class="ttc" id="astructscore_1_1_addon_html"><div class="ttname"><a href="structscore_1_1_addon.html">score::Addon</a></div><div class="ttdoc">The Addon struct.</div><div class="ttdef"><b>Definition:</b> Addon.hpp:15</div></div>
 <div class="ttc" id="astructscore_1_1_plugin_loader_1_1_plugin_dependency_graph_html"><div class="ttname"><a href="structscore_1_1_plugin_loader_1_1_plugin_dependency_graph.html">score::PluginLoader::PluginDependencyGraph</a></div><div class="ttdoc">Allows to load plug-ins in the order they all require each other.</div><div class="ttdef"><b>Definition:</b> PluginDependencyGraph.hpp:28</div></div>
 <div class="ttc" id="anamespace_plugin_loader_html"><div class="ttname"><a href="namespace_plugin_loader.html">PluginLoader</a></div><div class="ttdoc">Classes and functions used at the plug-in loading step.</div><div class="ttdef"><b>Definition:</b> PluginManager.hpp:26</div></div>

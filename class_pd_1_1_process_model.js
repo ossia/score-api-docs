@@ -21,8 +21,7 @@ var class_pd_1_1_process_model =
     [ "setMidiInput", "class_pd_1_1_process_model.html#a94e2e02cdeb5f587d409326a119fc630", null ],
     [ "setMidiOutput", "class_pd_1_1_process_model.html#a03c16fd7fee082f1e6d6fa0f727b2852", null ],
     [ "setScript", "class_pd_1_1_process_model.html#a22750587129d752043d941e0a3af508a", null ],
-    [ "W_PROPERTY", "class_pd_1_1_process_model.html#af184a9e1d29a2f4b7d5f642dba51e0c7", null ],
+    [ "W_PROPERTY", "class_pd_1_1_process_model.html#a4716cc93cf00de259c35718ddbc748fa", null ],
     [ "W_PROPERTY", "class_pd_1_1_process_model.html#a9695c175d56c239b84361eae92d65bf5", null ],
-    [ "m_instance", "class_pd_1_1_process_model.html#a8b8b8d4c371b1d92d6242eb5087c32ec", null ],
-    [ "midiOutputChanged", "class_pd_1_1_process_model.html#a35d2dd9b4e7adf5b4d5b2c0a28833e0a", null ]
+    [ "m_instance", "class_pd_1_1_process_model.html#a8b8b8d4c371b1d92d6242eb5087c32ec", null ]
 ];

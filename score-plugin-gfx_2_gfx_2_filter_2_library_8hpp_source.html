@@ -99,54 +99,52 @@ $(document).ready(function(){initNavTree('score-plugin-gfx_2_gfx_2_filter_2_libr
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Library/LibraryInterface.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Library/ProcessesItemModel.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Process/Drop/ProcessDropHandler.hpp&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>Gfx::Filter</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_gfx_1_1_filter_1_1_library_handler.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_gfx_1_1_filter_1_1_library_handler.html">LibraryHandler</a> final : <span class="keyword">public</span> <a class="code" href="class_library_1_1_library_interface.html">Library::LibraryInterface</a></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;e62ed6f6-a2c1-4d27-a9c3-1c3bc576bfeb&quot;</span>)</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  QSet&lt;QString&gt; acceptedFiles() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordtype">void</span> setup(</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;      <a class="code" href="class_library_1_1_processes_item_model.html">Library::ProcessesItemModel</a>&amp; model,</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; ctx) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Process/Drop/ProcessDropHandler.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Library/LibraryInterface.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Library/ProcessesItemModel.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>Gfx::Filter</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_gfx_1_1_filter_1_1_library_handler.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_gfx_1_1_filter_1_1_library_handler.html">LibraryHandler</a> final : <span class="keyword">public</span> <a class="code" href="class_library_1_1_library_interface.html">Library::LibraryInterface</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;e62ed6f6-a2c1-4d27-a9c3-1c3bc576bfeb&quot;</span>)</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  QSet&lt;QString&gt; acceptedFiles() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keywordtype">void</span> setup(<a class="code" href="class_library_1_1_processes_item_model.html">Library::ProcessesItemModel</a>&amp; model, <span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; ctx)</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordtype">void</span> addPath(std::string_view path) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  QWidget*</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  previewWidget(<span class="keyword">const</span> QString&amp; path, QWidget* parent) <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  QWidget*</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  previewWidget(<span class="keyword">const</span> <a class="code" href="struct_process_1_1_preset.html">Process::Preset</a>&amp; path, QWidget* parent) <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="struct_library_1_1_subcategories.html">Library::Subcategories</a> categories;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_gfx_1_1_filter_1_1_drop_handler.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_gfx_1_1_filter_1_1_drop_handler.html">DropHandler</a> final : <span class="keyword">public</span> <a class="code" href="class_process_1_1_process_drop_handler.html">Process::ProcessDropHandler</a></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;d1e16bba-4c53-4d24-8b6b-71b94daef68d&quot;</span>)</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  QSet&lt;QString&gt; mimeTypes() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  QSet&lt;QString&gt; fileExtensions() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">void</span> dropPath(</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      std::vector&lt;ProcessDrop&gt;&amp;,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keyword">const</span> QString&amp; data,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  QWidget* previewWidget(<span class="keyword">const</span> QString&amp; path, QWidget* parent) <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  QWidget*</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  previewWidget(<span class="keyword">const</span> <a class="code" href="struct_process_1_1_preset.html">Process::Preset</a>&amp; path, QWidget* parent) <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <a class="code" href="struct_library_1_1_subcategories.html">Library::Subcategories</a> categories;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_gfx_1_1_filter_1_1_drop_handler.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_gfx_1_1_filter_1_1_drop_handler.html">DropHandler</a> final : <span class="keyword">public</span> <a class="code" href="class_process_1_1_process_drop_handler.html">Process::ProcessDropHandler</a></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;d1e16bba-4c53-4d24-8b6b-71b94daef68d&quot;</span>)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  QSet&lt;QString&gt; mimeTypes() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  QSet&lt;QString&gt; fileExtensions() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">void</span> dropPath(</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      std::vector&lt;ProcessDrop&gt;&amp;, <span class="keyword">const</span> QString&amp; data,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_library_1_1_processes_item_model_html"><div class="ttname"><a href="class_library_1_1_processes_item_model.html">Library::ProcessesItemModel</a></div><div class="ttdef"><b>Definition:</b> ProcessesItemModel.hpp:42</div></div>
+<div class="ttc" id="aclass_library_1_1_processes_item_model_html"><div class="ttname"><a href="class_library_1_1_processes_item_model.html">Library::ProcessesItemModel</a></div><div class="ttdef"><b>Definition:</b> ProcessesItemModel.hpp:41</div></div>
 <div class="ttc" id="aclass_library_1_1_library_interface_html"><div class="ttname"><a href="class_library_1_1_library_interface.html">Library::LibraryInterface</a></div><div class="ttdef"><b>Definition:</b> LibraryInterface.hpp:21</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
-<div class="ttc" id="aclass_gfx_1_1_filter_1_1_drop_handler_html"><div class="ttname"><a href="class_gfx_1_1_filter_1_1_drop_handler.html">Gfx::Filter::DropHandler</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Filter/Library.hpp:27</div></div>
+<div class="ttc" id="aclass_gfx_1_1_filter_1_1_drop_handler_html"><div class="ttname"><a href="class_gfx_1_1_filter_1_1_drop_handler.html">Gfx::Filter::DropHandler</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Filter/Library.hpp:26</div></div>
 <div class="ttc" id="astructscore_1_1_g_u_i_application_context_html"><div class="ttname"><a href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a></div><div class="ttdoc">Specializes ApplicationContext with the QMainWindow.</div><div class="ttdef"><b>Definition:</b> GUIApplicationContext.hpp:14</div></div>
 <div class="ttc" id="aclass_process_1_1_process_drop_handler_html"><div class="ttname"><a href="class_process_1_1_process_drop_handler.html">Process::ProcessDropHandler</a></div><div class="ttdef"><b>Definition:</b> ProcessDropHandler.hpp:22</div></div>
-<div class="ttc" id="astruct_process_1_1_preset_html"><div class="ttname"><a href="struct_process_1_1_preset.html">Process::Preset</a></div><div class="ttdef"><b>Definition:</b> Preset.hpp:35</div></div>
-<div class="ttc" id="astruct_library_1_1_subcategories_html"><div class="ttname"><a href="struct_library_1_1_subcategories.html">Library::Subcategories</a></div><div class="ttdef"><b>Definition:</b> ProcessesItemModel.hpp:83</div></div>
-<div class="ttc" id="aclass_gfx_1_1_filter_1_1_library_handler_html"><div class="ttname"><a href="class_gfx_1_1_filter_1_1_library_handler.html">Gfx::Filter::LibraryHandler</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Filter/Library.hpp:8</div></div>
+<div class="ttc" id="astruct_process_1_1_preset_html"><div class="ttname"><a href="struct_process_1_1_preset.html">Process::Preset</a></div><div class="ttdef"><b>Definition:</b> Preset.hpp:31</div></div>
+<div class="ttc" id="astruct_library_1_1_subcategories_html"><div class="ttname"><a href="struct_library_1_1_subcategories.html">Library::Subcategories</a></div><div class="ttdef"><b>Definition:</b> ProcessesItemModel.hpp:81</div></div>
+<div class="ttc" id="aclass_gfx_1_1_filter_1_1_library_handler_html"><div class="ttname"><a href="class_gfx_1_1_filter_1_1_library_handler.html">Gfx::Filter::LibraryHandler</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Filter/Library.hpp:9</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

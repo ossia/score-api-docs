@@ -100,63 +100,64 @@ $(document).ready(function(){initNavTree('_curve_point_inspector_widget_8hpp_sou
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Inspector/InspectorWidgetBase.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Curve/Palette/CommandObjects/MovePointCommandObject.hpp&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Curve/Palette/CommandObjects/MovePointCommandObject.hpp&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;score/command/Dispatchers/OngoingCommandDispatcher.hpp&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;score_plugin_automation_export.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Inspector/InspectorWidgetBase.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;score/command/Dispatchers/OngoingCommandDispatcher.hpp&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span>QDoubleSpinBox;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span>QWidget;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_inspector.html">Inspector</a> {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span>Layout;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_curve.html">Curve</a></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span>PointModel;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_curve_1_1_point_inspector_widget.html">   17</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_AUTOMATION_EXPORT <a class="code" href="class_curve_1_1_point_inspector_widget.html">PointInspectorWidget</a></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    : <span class="keyword">public</span> <a class="code" href="class_inspector_1_1_inspector_widget_base.html">Inspector::InspectorWidgetBase</a></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_curve_1_1_point_inspector_widget.html">PointInspectorWidget</a>(</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_curve_1_1_point_model.html">Curve::PointModel</a>&amp; model,</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; context,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      QWidget* parent);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  QPointer&lt;const Curve::PointModel&gt; m_model;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="class_inspector_1_1_layout.html">Inspector::Layout</a>* m_layout{};</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  QDoubleSpinBox* m_XBox{};</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">double</span> m_xFactor{};</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_automation.html">Automation</a></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_automation_1_1_point_inspector_widget.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_automation_1_1_point_inspector_widget.html">PointInspectorWidget</a> final : <span class="keyword">public</span> <a class="code" href="class_curve_1_1_point_inspector_widget.html">Curve::PointInspectorWidget</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;score_plugin_automation_export.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span>QDoubleSpinBox;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span>QWidget;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_inspector.html">Inspector</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span>Layout;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_curve.html">Curve</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span>PointModel;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_curve_1_1_point_inspector_widget.html">   20</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_AUTOMATION_EXPORT <a class="code" href="class_curve_1_1_point_inspector_widget.html">PointInspectorWidget</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    : <span class="keyword">public</span> <a class="code" href="class_inspector_1_1_inspector_widget_base.html">Inspector::InspectorWidgetBase</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_curve_1_1_point_inspector_widget.html">PointInspectorWidget</a>(</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_curve_1_1_point_model.html">Curve::PointModel</a>&amp; model, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; context,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      QWidget* parent);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  QPointer&lt;const Curve::PointModel&gt; m_model;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <a class="code" href="class_inspector_1_1_layout.html">Inspector::Layout</a>* m_layout{};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  QDoubleSpinBox* m_XBox{};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">double</span> m_xFactor{};</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_automation.html">Automation</a></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_automation_1_1_point_inspector_widget.html">PointInspectorWidget</a>(</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_curve_1_1_point_model.html">Curve::PointModel</a>&amp; model,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; context,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      QWidget* parent);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> on_pointXChanged(<span class="keywordtype">double</span>);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">void</span> on_pointYChanged(<span class="keywordtype">double</span>);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> on_editXFinished();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> on_editYFinished();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="class_curve_1_1_state_base.html">Curve::StateBase</a>* m_moveState{};</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="class_curve_1_1_move_point_command_object.html">Curve::MovePointCommandObject</a> m_moveX;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="class_ongoing_command_dispatcher.html">OngoingCommandDispatcher</a>&amp; m_dispatcher;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  QDoubleSpinBox* m_YBox{};</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">double</span> m_yFactor{};</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">double</span> m_Ymin{};</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">bool</span> m_startedEditing{};</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_automation_1_1_point_inspector_widget.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_automation_1_1_point_inspector_widget.html">PointInspectorWidget</a> final : <span class="keyword">public</span> <a class="code" href="class_curve_1_1_point_inspector_widget.html">Curve::PointInspectorWidget</a></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_automation_1_1_point_inspector_widget.html">PointInspectorWidget</a>(</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_curve_1_1_point_model.html">Curve::PointModel</a>&amp; model, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; context,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      QWidget* parent);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">void</span> on_pointXChanged(<span class="keywordtype">double</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> on_pointYChanged(<span class="keywordtype">double</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> on_editXFinished();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> on_editYFinished();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="class_curve_1_1_state_base.html">Curve::StateBase</a>* m_moveState{};</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="class_curve_1_1_move_point_command_object.html">Curve::MovePointCommandObject</a> m_moveX;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="class_ongoing_command_dispatcher.html">OngoingCommandDispatcher</a>&amp; m_dispatcher;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  QDoubleSpinBox* m_YBox{};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">double</span> m_yFactor{};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">double</span> m_Ymin{};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">bool</span> m_startedEditing{};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
@@ -164,13 +165,13 @@ $(document).ready(function(){initNavTree('_curve_point_inspector_widget_8hpp_sou
 <div class="ttc" id="aclass_ongoing_command_dispatcher_html"><div class="ttname"><a href="class_ongoing_command_dispatcher.html">OngoingCommandDispatcher</a></div><div class="ttdoc">The OngoingCommandDispatcher class.</div><div class="ttdef"><b>Definition:</b> OngoingCommandDispatcher.hpp:26</div></div>
 <div class="ttc" id="anamespace_curve_html"><div class="ttname"><a href="namespace_curve.html">Curve</a></div><div class="ttdoc">Utilities and base classes for 1D curves.</div><div class="ttdef"><b>Definition:</b> FocusDispatcher.hpp:11</div></div>
 <div class="ttc" id="aclass_inspector_1_1_inspector_widget_base_html"><div class="ttname"><a href="class_inspector_1_1_inspector_widget_base.html">Inspector::InspectorWidgetBase</a></div><div class="ttdoc">The InspectorWidgetBase class Set the global structuration for an inspected element.</div><div class="ttdef"><b>Definition:</b> InspectorWidgetBase.hpp:36</div></div>
-<div class="ttc" id="aclass_automation_1_1_point_inspector_widget_html"><div class="ttname"><a href="class_automation_1_1_point_inspector_widget.html">Automation::PointInspectorWidget</a></div><div class="ttdef"><b>Definition:</b> CurvePointInspectorWidget.hpp:37</div></div>
-<div class="ttc" id="aclass_curve_1_1_point_inspector_widget_html"><div class="ttname"><a href="class_curve_1_1_point_inspector_widget.html">Curve::PointInspectorWidget</a></div><div class="ttdef"><b>Definition:</b> CurvePointInspectorWidget.hpp:17</div></div>
+<div class="ttc" id="aclass_automation_1_1_point_inspector_widget_html"><div class="ttname"><a href="class_automation_1_1_point_inspector_widget.html">Automation::PointInspectorWidget</a></div><div class="ttdef"><b>Definition:</b> CurvePointInspectorWidget.hpp:39</div></div>
+<div class="ttc" id="aclass_curve_1_1_point_inspector_widget_html"><div class="ttname"><a href="class_curve_1_1_point_inspector_widget.html">Curve::PointInspectorWidget</a></div><div class="ttdef"><b>Definition:</b> CurvePointInspectorWidget.hpp:20</div></div>
 <div class="ttc" id="aclass_curve_1_1_point_model_html"><div class="ttname"><a href="class_curve_1_1_point_model.html">Curve::PointModel</a></div><div class="ttdef"><b>Definition:</b> CurvePointModel.hpp:17</div></div>
-<div class="ttc" id="aclass_inspector_1_1_layout_html"><div class="ttname"><a href="class_inspector_1_1_layout.html">Inspector::Layout</a></div><div class="ttdef"><b>Definition:</b> lib/score/widgets/Layout.hpp:33</div></div>
+<div class="ttc" id="aclass_inspector_1_1_layout_html"><div class="ttname"><a href="class_inspector_1_1_layout.html">Inspector::Layout</a></div><div class="ttdef"><b>Definition:</b> lib/score/widgets/Layout.hpp:28</div></div>
 <div class="ttc" id="aclass_curve_1_1_move_point_command_object_html"><div class="ttname"><a href="class_curve_1_1_move_point_command_object.html">Curve::MovePointCommandObject</a></div><div class="ttdef"><b>Definition:</b> MovePointCommandObject.hpp:11</div></div>
 <div class="ttc" id="anamespace_automation_html"><div class="ttname"><a href="namespace_automation.html">Automation</a></div><div class="ttdoc">Namespace related to the Automation process.</div><div class="ttdef"><b>Definition:</b> AutomationColors.cpp:7</div></div>
-<div class="ttc" id="anamespace_inspector_html"><div class="ttname"><a href="namespace_inspector.html">Inspector</a></div><div class="ttdoc">Classes used for making and extending the inspector (default right panel).</div><div class="ttdef"><b>Definition:</b> lib/score/widgets/Layout.hpp:31</div></div>
+<div class="ttc" id="anamespace_inspector_html"><div class="ttname"><a href="namespace_inspector.html">Inspector</a></div><div class="ttdoc">Classes used for making and extending the inspector (default right panel).</div><div class="ttdef"><b>Definition:</b> lib/score/widgets/Layout.hpp:26</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -114,40 +114,37 @@ $(document).ready(function(){initNavTree('_i_s_f_node_8hpp_source.html',''); ini
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_i_s_f_node.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classscore_1_1gfx_1_1_i_s_f_node.html">ISFNode</a> : <span class="keyword">public</span> <a class="code" href="classscore_1_1gfx_1_1_process_node.html">score::gfx::ProcessNode</a></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_i_s_f_node.html">ISFNode</a>(</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      <span class="keyword">const</span> isf::descriptor&amp; desc,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      <span class="keyword">const</span> QString&amp; vert,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      <span class="keyword">const</span> QString&amp; frag);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_i_s_f_node.html">ISFNode</a>(<span class="keyword">const</span> isf::descriptor&amp; desc, <span class="keyword">const</span> QString&amp; vert, <span class="keyword">const</span> QString&amp; frag);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classscore_1_1gfx_1_1_i_s_f_node.html">ISFNode</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  QSize computeTextureSize(<span class="keyword">const</span> isf::pass&amp; pass, QSize origSize);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classscore_1_1gfx_1_1_i_s_f_node.html">ISFNode</a>();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  QSize computeTextureSize(<span class="keyword">const</span> isf::pass&amp; pass, QSize origSize);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>* <a class="code" href="classscore_1_1gfx_1_1_i_s_f_node.html#aa5d60b1d44019095612f67cdc2f11bbe">createRenderer</a>(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r) <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">const</span> isf::descriptor&amp; descriptor() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> m_descriptor; }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">friend</span> SinglePassISFNode;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">friend</span> <a class="code" href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html">RenderedISFNode</a>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">friend</span> <a class="code" href="structscore_1_1gfx_1_1isf__input__port__vis.html">isf_input_port_vis</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  isf::descriptor m_descriptor;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="comment">// Texture format: 1 row = 1 channel of N samples</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  std::list&lt;AudioTexture&gt; m_audio_textures;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  std::unique_ptr&lt;char[]&gt; m_material_data;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  QString m_vertexS;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  QString m_fragmentS;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">int</span> m_materialSize{};</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>* <a class="code" href="classscore_1_1gfx_1_1_i_s_f_node.html#aa5d60b1d44019095612f67cdc2f11bbe">createRenderer</a>(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r) <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">const</span> isf::descriptor&amp; descriptor() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> m_descriptor; }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">friend</span> SinglePassISFNode;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">friend</span> <a class="code" href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html">RenderedISFNode</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">friend</span> <a class="code" href="structscore_1_1gfx_1_1isf__input__port__vis.html">isf_input_port_vis</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  isf::descriptor m_descriptor;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="comment">// Texture format: 1 row = 1 channel of N samples</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  std::list&lt;AudioTexture&gt; m_audio_textures;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  std::unique_ptr&lt;char[]&gt; m_material_data;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  QString m_vertexS;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  QString m_fragmentS;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">int</span> m_materialSize{};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astructscore_1_1gfx_1_1_rendered_i_s_f_node_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html">score::gfx::RenderedISFNode</a></div><div class="ttdef"><b>Definition:</b> RenderedISFNode.hpp:56</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_rendered_i_s_f_node_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html">score::gfx::RenderedISFNode</a></div><div class="ttdef"><b>Definition:</b> RenderedISFNode.hpp:47</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdoc">Renderer for a given node.</div><div class="ttdef"><b>Definition:</b> NodeRenderer.hpp:10</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1isf__input__port__vis_html"><div class="ttname"><a href="structscore_1_1gfx_1_1isf__input__port__vis.html">score::gfx::isf_input_port_vis</a></div><div class="ttdef"><b>Definition:</b> ISFNode.cpp:62</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_i_s_f_node_html_aa5d60b1d44019095612f67cdc2f11bbe"><div class="ttname"><a href="classscore_1_1gfx_1_1_i_s_f_node.html#aa5d60b1d44019095612f67cdc2f11bbe">score::gfx::ISFNode::createRenderer</a></div><div class="ttdeci">score::gfx::NodeRenderer * createRenderer(RenderList &amp;r) const noexcept override</div><div class="ttdoc">Create a renderer in a given context for this node.</div><div class="ttdef"><b>Definition:</b> ISFNode.cpp:309</div></div>
-<div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition:</b> Vulkan.hpp:9</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1isf__input__port__vis_html"><div class="ttname"><a href="structscore_1_1gfx_1_1isf__input__port__vis.html">score::gfx::isf_input_port_vis</a></div><div class="ttdef"><b>Definition:</b> ISFNode.cpp:59</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_i_s_f_node_html_aa5d60b1d44019095612f67cdc2f11bbe"><div class="ttname"><a href="classscore_1_1gfx_1_1_i_s_f_node.html#aa5d60b1d44019095612f67cdc2f11bbe">score::gfx::ISFNode::createRenderer</a></div><div class="ttdeci">score::gfx::NodeRenderer * createRenderer(RenderList &amp;r) const noexcept override</div><div class="ttdoc">Create a renderer in a given context for this node.</div><div class="ttdef"><b>Definition:</b> ISFNode.cpp:299</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition:</b> Vulkan.hpp:10</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_i_s_f_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_i_s_f_node.html">score::gfx::ISFNode</a></div><div class="ttdoc">Data model for Interactive Shader Format filters.</div><div class="ttdef"><b>Definition:</b> ISFNode.hpp:19</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_process_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_process_node.html">score::gfx::ProcessNode</a></div><div class="ttdoc">Common base class for nodes that map to score processes.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Node.hpp:87</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition:</b> RenderList.hpp:18</div></div>

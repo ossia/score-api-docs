@@ -99,65 +99,59 @@ $(document).ready(function(){initNavTree('_scenario_8hpp_source.html',''); initR
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;QMetaObject&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Scenario/Document/Components/ScenarioComponent.hpp&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;RemoteControl/Scenario/Event.hpp&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;RemoteControl/Scenario/Interval.hpp&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;RemoteControl/Scenario/State.hpp&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;RemoteControl/Scenario/Sync.hpp&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;Scenario/Document/Components/ScenarioComponent.hpp&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>RemoteControl</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_remote_control_1_1_scenario_base.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_remote_control_1_1_scenario_base.html">ScenarioBase</a> : <span class="keyword">public</span> <a class="code" href="class_process_1_1_generic_process_component___t.html">ProcessComponent_T</a>&lt;Scenario::ProcessModel&gt;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  COMPONENT_METADATA(<span class="stringliteral">&quot;fce752e0-e37a-4b71-bc2a-65366ec87152&quot;</span>)</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <a class="code" href="class_remote_control_1_1_scenario_base.html">ScenarioBase</a>(</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp; scenario,</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      <a class="code" href="class_remote_control_1_1_document_plugin.html">DocumentPlugin</a>&amp; doc,</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      QObject* parent_obj);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Component_T, <span class="keyword">typename</span> Element&gt;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  Component_T* make(Element&amp; elt)</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> Component_T{elt, system(), <span class="keyword">this</span>};</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">bool</span> removing(Args&amp;&amp;...)</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> removed(Args&amp;&amp;...)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">using</span> <a class="code" href="class_hierarchical_scenario_component.html">ScenarioComponent</a> = <a class="code" href="class_hierarchical_scenario_component.html">HierarchicalScenarioComponent</a>&lt;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="class_remote_control_1_1_scenario_base.html">ScenarioBase</a>,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_remote_control_1_1_interval.html">Interval</a>,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_remote_control_1_1_event.html">Event</a>,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_remote_control_1_1_sync.html">Sync</a>,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="namespace_state.html">State</a>&gt;;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">using</span> <a class="code" href="class_remote_control_1_1_process_component_factory___t.html">ScenarioComponentFactory</a> = <a class="code" href="class_remote_control_1_1_process_component_factory___t.html">ProcessComponentFactory_T&lt;ScenarioComponent&gt;</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QMetaObject&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;RemoteControl/Scenario/Event.hpp&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;RemoteControl/Scenario/Interval.hpp&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;RemoteControl/Scenario/State.hpp&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;RemoteControl/Scenario/Sync.hpp&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>RemoteControl</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_remote_control_1_1_scenario_base.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_remote_control_1_1_scenario_base.html">ScenarioBase</a> : <span class="keyword">public</span> <a class="code" href="class_process_1_1_generic_process_component___t.html">ProcessComponent_T</a>&lt;Scenario::ProcessModel&gt;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  COMPONENT_METADATA(<span class="stringliteral">&quot;fce752e0-e37a-4b71-bc2a-65366ec87152&quot;</span>)</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <a class="code" href="class_remote_control_1_1_scenario_base.html">ScenarioBase</a>(</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp; scenario, <a class="code" href="class_remote_control_1_1_document_plugin.html">DocumentPlugin</a>&amp; doc, QObject* parent_obj);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Component_T, <span class="keyword">typename</span> Element&gt;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  Component_T* make(Element&amp; elt)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> Component_T{elt, system(), <span class="keyword">this</span>};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">bool</span> removing(Args&amp;&amp;...)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">void</span> removed(Args&amp;&amp;...)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">using</span> <a class="code" href="class_hierarchical_scenario_component.html">ScenarioComponent</a> = <a class="code" href="class_hierarchical_scenario_component.html">HierarchicalScenarioComponent</a>&lt;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_remote_control_1_1_scenario_base.html">ScenarioBase</a>, <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>, <a class="code" href="class_remote_control_1_1_interval.html">Interval</a>, <a class="code" href="class_remote_control_1_1_event.html">Event</a>, <a class="code" href="class_remote_control_1_1_sync.html">Sync</a>, <a class="code" href="namespace_state.html">State</a>&gt;;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">using</span> <a class="code" href="class_remote_control_1_1_process_component_factory___t.html">ScenarioComponentFactory</a> = <a class="code" href="class_remote_control_1_1_process_component_factory___t.html">ProcessComponentFactory_T&lt;ScenarioComponent&gt;</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_remote_control_1_1_event_html"><div class="ttname"><a href="class_remote_control_1_1_event.html">RemoteControl::Event</a></div><div class="ttdef"><b>Definition:</b> Event.hpp:7</div></div>
-<div class="ttc" id="aclass_remote_control_1_1_process_component_factory___t_html"><div class="ttname"><a href="class_remote_control_1_1_process_component_factory___t.html">RemoteControl::ProcessComponentFactory_T</a></div><div class="ttdef"><b>Definition:</b> score-plugin-remotecontrol/RemoteControl/Scenario/Process.hpp:50</div></div>
-<div class="ttc" id="anamespace_state_html"><div class="ttname"><a href="namespace_state.html">State</a></div><div class="ttdoc">Utilities for OSSIA data structures.</div><div class="ttdef"><b>Definition:</b> DeviceInterface.hpp:31</div></div>
-<div class="ttc" id="aclass_remote_control_1_1_interval_html"><div class="ttname"><a href="class_remote_control_1_1_interval.html">RemoteControl::Interval</a></div><div class="ttdef"><b>Definition:</b> Interval.hpp:48</div></div>
-<div class="ttc" id="aclass_remote_control_1_1_scenario_base_html"><div class="ttname"><a href="class_remote_control_1_1_scenario_base.html">RemoteControl::ScenarioBase</a></div><div class="ttdef"><b>Definition:</b> Scenario.hpp:12</div></div>
-<div class="ttc" id="aclass_remote_control_1_1_document_plugin_html"><div class="ttname"><a href="class_remote_control_1_1_document_plugin.html">RemoteControl::DocumentPlugin</a></div><div class="ttdef"><b>Definition:</b> plugins/score-plugin-remotecontrol/RemoteControl/DocumentPlugin.hpp:128</div></div>
+<div class="ttc" id="aclass_remote_control_1_1_event_html"><div class="ttname"><a href="class_remote_control_1_1_event.html">RemoteControl::Event</a></div><div class="ttdef"><b>Definition:</b> Event.hpp:8</div></div>
+<div class="ttc" id="aclass_remote_control_1_1_process_component_factory___t_html"><div class="ttname"><a href="class_remote_control_1_1_process_component_factory___t.html">RemoteControl::ProcessComponentFactory_T</a></div><div class="ttdef"><b>Definition:</b> score-plugin-remotecontrol/RemoteControl/Scenario/Process.hpp:44</div></div>
+<div class="ttc" id="anamespace_state_html"><div class="ttname"><a href="namespace_state.html">State</a></div><div class="ttdoc">Utilities for OSSIA data structures.</div><div class="ttdef"><b>Definition:</b> DeviceInterface.hpp:32</div></div>
+<div class="ttc" id="aclass_remote_control_1_1_interval_html"><div class="ttname"><a href="class_remote_control_1_1_interval.html">RemoteControl::Interval</a></div><div class="ttdef"><b>Definition:</b> Interval.hpp:43</div></div>
+<div class="ttc" id="aclass_remote_control_1_1_scenario_base_html"><div class="ttname"><a href="class_remote_control_1_1_scenario_base.html">RemoteControl::ScenarioBase</a></div><div class="ttdef"><b>Definition:</b> Scenario.hpp:13</div></div>
+<div class="ttc" id="aclass_remote_control_1_1_document_plugin_html"><div class="ttname"><a href="class_remote_control_1_1_document_plugin.html">RemoteControl::DocumentPlugin</a></div><div class="ttdef"><b>Definition:</b> plugins/score-plugin-remotecontrol/RemoteControl/DocumentPlugin.hpp:124</div></div>
 <div class="ttc" id="aclass_scenario_1_1_process_model_html"><div class="ttname"><a href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a></div><div class="ttdoc">The core hierarchical and temporal process of score.</div><div class="ttdef"><b>Definition:</b> ScenarioModel.hpp:34</div></div>
 <div class="ttc" id="aclass_process_1_1_generic_process_component___t_html"><div class="ttname"><a href="class_process_1_1_generic_process_component___t.html">Process::GenericProcessComponent_T&lt; ProcessComponent, Process_T &gt;</a></div></div>
-<div class="ttc" id="aclass_remote_control_1_1_sync_html"><div class="ttname"><a href="class_remote_control_1_1_sync.html">RemoteControl::Sync</a></div><div class="ttdef"><b>Definition:</b> Sync.hpp:7</div></div>
-<div class="ttc" id="aclass_hierarchical_scenario_component_html"><div class="ttname"><a href="class_hierarchical_scenario_component.html">HierarchicalScenarioComponent</a></div><div class="ttdef"><b>Definition:</b> Scenario/Document/Components/ScenarioComponent.hpp:205</div></div>
+<div class="ttc" id="aclass_remote_control_1_1_sync_html"><div class="ttname"><a href="class_remote_control_1_1_sync.html">RemoteControl::Sync</a></div><div class="ttdef"><b>Definition:</b> Sync.hpp:8</div></div>
+<div class="ttc" id="aclass_hierarchical_scenario_component_html"><div class="ttname"><a href="class_hierarchical_scenario_component.html">HierarchicalScenarioComponent</a></div><div class="ttdef"><b>Definition:</b> Scenario/Document/Components/ScenarioComponent.hpp:195</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

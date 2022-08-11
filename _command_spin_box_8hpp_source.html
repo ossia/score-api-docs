@@ -110,49 +110,45 @@ $(document).ready(function(){initNavTree('_command_spin_box_8hpp_source.html',''
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">using</span> model_type = <span class="keyword">typename</span> Property::model_type;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <a class="code" href="structscore_1_1_command_spinbox.html">CommandSpinbox</a>(</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      <span class="keyword">const</span> model_type&amp; model,</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      <span class="keyword">const</span> <a class="code" href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a>&amp; stck,</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      QWidget* parent)</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      : m_sb{<span class="keyword">new</span> <a class="code" href="classscore_1_1_spin_box.html">SpinBox</a>{parent}}</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      , m_slotDisp{stck}</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    m_sb-&gt;setMinimum(20);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    m_sb-&gt;setMaximum(20000);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    connect(</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        m_sb, SignalUtils::SpinBox_valueChanged&lt;SpinBox&gt;(), <span class="keyword">this</span>, [&amp;](<span class="keywordtype">int</span> h) {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;          <span class="keywordflow">if</span> (h != (model.*Property::get())())</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;          {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            m_slotDisp.submit(model, h);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;          }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        });</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    connect(</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        m_sb, &amp;SpinBox::editingFinished, <span class="keyword">this</span>, [=] { m_slotDisp.commit(); });</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    con(model, Property::notify(), <span class="keyword">this</span>, [=](<span class="keyword">auto</span> val) {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keywordflow">if</span> (val != m_sb-&gt;value())</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        m_sb-&gt;setValue(val);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    });</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    m_sb-&gt;setValue((model.*Property::get())());</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">auto</span> widget()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_sb; }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="classscore_1_1_spin_box.html">SpinBox</a>* m_sb{};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="class_single_ongoing_command_dispatcher.html">SingleOngoingCommandDispatcher&lt;Command&gt;</a> m_slotDisp;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      <span class="keyword">const</span> model_type&amp; model, <span class="keyword">const</span> <a class="code" href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a>&amp; stck, QWidget* parent)</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      : m_sb{<span class="keyword">new</span> <a class="code" href="classscore_1_1_spin_box.html">SpinBox</a>{parent}}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      , m_slotDisp{stck}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    m_sb-&gt;setMinimum(20);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    m_sb-&gt;setMaximum(20000);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    connect(m_sb, SignalUtils::SpinBox_valueChanged&lt;SpinBox&gt;(), <span class="keyword">this</span>, [&amp;](<span class="keywordtype">int</span> h) {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      <span class="keywordflow">if</span>(h != (model.*Property::get())())</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        m_slotDisp.submit(model, h);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    });</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    connect(m_sb, &amp;SpinBox::editingFinished, <span class="keyword">this</span>, [=] { m_slotDisp.commit(); });</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    con(model, Property::notify(), <span class="keyword">this</span>, [=](<span class="keyword">auto</span> val) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <span class="keywordflow">if</span>(val != m_sb-&gt;value())</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        m_sb-&gt;setValue(val);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    });</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    m_sb-&gt;setValue((model.*Property::get())());</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">auto</span> widget()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_sb; }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="classscore_1_1_spin_box.html">SpinBox</a>* m_sb{};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="class_single_ongoing_command_dispatcher.html">SingleOngoingCommandDispatcher&lt;Command&gt;</a> m_slotDisp;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:146</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:160</div></div>
 <div class="ttc" id="aclassscore_1_1_command_stack_facade_html"><div class="ttname"><a href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a></div><div class="ttdoc">A small abstraction layer over the score::CommandStack.</div><div class="ttdef"><b>Definition:</b> CommandStackFacade.hpp:19</div></div>
 <div class="ttc" id="astructscore_1_1_command_spinbox_html"><div class="ttname"><a href="structscore_1_1_command_spinbox.html">score::CommandSpinbox</a></div><div class="ttdoc">CommandSpinbox Will update a value of the model according to the spinbox.</div><div class="ttdef"><b>Definition:</b> CommandSpinBox.hpp:13</div></div>
 <div class="ttc" id="aclass_single_ongoing_command_dispatcher_html"><div class="ttname"><a href="class_single_ongoing_command_dispatcher.html">SingleOngoingCommandDispatcher</a></div><div class="ttdoc">The SingleOngoingCommandDispatcher class.</div><div class="ttdef"><b>Definition:</b> SingleOngoingCommandDispatcher.hpp:16</div></div>
-<div class="ttc" id="aclassscore_1_1_spin_box_html"><div class="ttname"><a href="classscore_1_1_spin_box.html">score::SpinBox</a></div><div class="ttdoc">The SpinBox class.</div><div class="ttdef"><b>Definition:</b> SpinBoxes.hpp:68</div></div>
+<div class="ttc" id="aclassscore_1_1_spin_box_html"><div class="ttname"><a href="classscore_1_1_spin_box.html">score::SpinBox</a></div><div class="ttdoc">The SpinBox class.</div><div class="ttdef"><b>Definition:</b> SpinBoxes.hpp:67</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

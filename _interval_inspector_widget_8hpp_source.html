@@ -130,28 +130,26 @@ $(document).ready(function(){initNavTree('_interval_inspector_widget_8hpp_source
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_scenario_1_1_interval_inspector_widget.html">IntervalInspectorWidget</a>(</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_inspector_1_1_inspector_widget_list.html">Inspector::InspectorWidgetList</a>&amp; list,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&amp; <span class="keywordtype">object</span>,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; context,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_inspector_1_1_inspector_widget_list.html">Inspector::InspectorWidgetList</a>&amp; list, <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&amp; <span class="keywordtype">object</span>,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; context, QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  ~<a class="code" href="class_scenario_1_1_interval_inspector_widget.html">IntervalInspectorWidget</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  ~<a class="code" href="class_scenario_1_1_interval_inspector_widget.html">IntervalInspectorWidget</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&amp; model() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&amp; model() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&amp; m_model;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&amp; m_model;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>
+<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:13</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
 <div class="ttc" id="aclass_inspector_1_1_inspector_widget_base_html"><div class="ttname"><a href="class_inspector_1_1_inspector_widget_base.html">Inspector::InspectorWidgetBase</a></div><div class="ttdoc">The InspectorWidgetBase class Set the global structuration for an inspected element.</div><div class="ttdef"><b>Definition:</b> InspectorWidgetBase.hpp:36</div></div>
 <div class="ttc" id="aclass_inspector_1_1_inspector_widget_list_html"><div class="ttname"><a href="class_inspector_1_1_inspector_widget_list.html">Inspector::InspectorWidgetList</a></div><div class="ttdef"><b>Definition:</b> InspectorWidgetList.hpp:16</div></div>
-<div class="ttc" id="aclass_scenario_1_1_interval_model_html"><div class="ttname"><a href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a></div><div class="ttdef"><b>Definition:</b> IntervalModel.hpp:50</div></div>
+<div class="ttc" id="aclass_scenario_1_1_interval_model_html"><div class="ttname"><a href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a></div><div class="ttdef"><b>Definition:</b> IntervalModel.hpp:49</div></div>
 <div class="ttc" id="aclass_scenario_1_1_interval_inspector_widget_html"><div class="ttname"><a href="class_scenario_1_1_interval_inspector_widget.html">Scenario::IntervalInspectorWidget</a></div><div class="ttdoc">The IntervalInspectorWidget class.</div><div class="ttdef"><b>Definition:</b> IntervalInspectorWidget.hpp:34</div></div>
-<div class="ttc" id="anamespace_inspector_html"><div class="ttname"><a href="namespace_inspector.html">Inspector</a></div><div class="ttdoc">Classes used for making and extending the inspector (default right panel).</div><div class="ttdef"><b>Definition:</b> lib/score/widgets/Layout.hpp:31</div></div>
+<div class="ttc" id="anamespace_inspector_html"><div class="ttname"><a href="namespace_inspector.html">Inspector</a></div><div class="ttdoc">Classes used for making and extending the inspector (default right panel).</div><div class="ttdef"><b>Definition:</b> lib/score/widgets/Layout.hpp:26</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

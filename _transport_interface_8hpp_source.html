@@ -102,78 +102,77 @@ $(document).ready(function(){initNavTree('_transport_interface_8hpp_source.html'
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;score/plugins/Interface.hpp&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;score/plugins/InterfaceList.hpp&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;ossia-qt/time_value.hpp&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;ossia/dataflow/transport.hpp&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;verdigris&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;ossia/dataflow/transport.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;ossia-qt/time_value.hpp&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;score_plugin_transport_export.h&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>Transport</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_transport_1_1_transport_interface.html">   15</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_TRANSPORT_EXPORT <a class="code" href="class_transport_1_1_transport_interface.html">TransportInterface</a></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    : <span class="keyword">public</span> QObject</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    , <span class="keyword">public</span> <a class="code" href="classscore_1_1_interface_base.html">score::InterfaceBase</a></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  W_OBJECT(<a class="code" href="class_transport_1_1_transport_interface.html">TransportInterface</a>)</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  SCORE_INTERFACE(<a class="code" href="class_transport_1_1_transport_interface.html">TransportInterface</a>, <span class="stringliteral">&quot;2f5845f1-548e-4729-86b7-4ae919b8e7e3&quot;</span>)</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_transport_1_1_transport_interface.html">TransportInterface</a>();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="class_transport_1_1_transport_interface.html">TransportInterface</a>();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">virtual</span> ossia::transport_info_fun transportUpdateFunction() = 0;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;verdigris&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>Transport</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_transport_1_1_transport_interface.html">   17</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_TRANSPORT_EXPORT <a class="code" href="class_transport_1_1_transport_interface.html">TransportInterface</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    , <span class="keyword">public</span> <a class="code" href="classscore_1_1_interface_base.html">score::InterfaceBase</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  W_OBJECT(<a class="code" href="class_transport_1_1_transport_interface.html">TransportInterface</a>)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  SCORE_INTERFACE(<a class="code" href="class_transport_1_1_transport_interface.html">TransportInterface</a>, <span class="stringliteral">&quot;2f5845f1-548e-4729-86b7-4ae919b8e7e3&quot;</span>)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_transport_1_1_transport_interface.html">TransportInterface</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="class_transport_1_1_transport_interface.html">TransportInterface</a>();</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> setup() = 0;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> teardown() = 0;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> requestPlay() = 0;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> requestPause() = 0;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> requestStop() = 0;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> requestTransport(ossia::time_value t) = 0;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">void</span> play()</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      E_SIGNAL(SCORE_PLUGIN_TRANSPORT_EXPORT, play)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">void</span> pause()</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      E_SIGNAL(SCORE_PLUGIN_TRANSPORT_EXPORT, pause)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">void</span> stop()</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      E_SIGNAL(SCORE_PLUGIN_TRANSPORT_EXPORT, stop)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">void</span> transport(ossia::time_value t)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      E_SIGNAL(SCORE_PLUGIN_TRANSPORT_EXPORT, transport, t)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_transport_1_1_transport_interface_list.html">   46</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_TRANSPORT_EXPORT <a class="code" href="class_transport_1_1_transport_interface_list.html">TransportInterfaceList</a> final</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classscore_1_1_interface_list.html">score::InterfaceList</a>&lt;TransportInterface&gt;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_transport_1_1_direct_transport.html">   51</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_transport_1_1_direct_transport.html">DirectTransport</a> : <span class="keyword">public</span> <a class="code" href="class_transport_1_1_transport_interface.html">TransportInterface</a></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;73453569-b453-4cad-b12b-4b71c61cf9a7&quot;</span>)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="class_transport_1_1_direct_transport.html">DirectTransport</a>();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  ~<a class="code" href="class_transport_1_1_direct_transport.html">DirectTransport</a>();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  ossia::transport_info_fun transportUpdateFunction() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">void</span> setup() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> teardown() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> requestPlay() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> requestPause() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> requestStop() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> requestTransport(ossia::time_value t) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">virtual</span> ossia::transport_info_fun transportUpdateFunction() = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> setup() = 0;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> teardown() = 0;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> requestPlay() = 0;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> requestPause() = 0;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> requestStop() = 0;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> requestTransport(ossia::time_value t) = 0;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">void</span> play() E_SIGNAL(SCORE_PLUGIN_TRANSPORT_EXPORT, play)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span> pause() E_SIGNAL(SCORE_PLUGIN_TRANSPORT_EXPORT, pause)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">void</span> stop() E_SIGNAL(SCORE_PLUGIN_TRANSPORT_EXPORT, stop)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> transport(ossia::time_value t)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      E_SIGNAL(SCORE_PLUGIN_TRANSPORT_EXPORT, transport, t)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_transport_1_1_transport_interface_list.html">   45</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_TRANSPORT_EXPORT <a class="code" href="class_transport_1_1_transport_interface_list.html">TransportInterfaceList</a> final</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classscore_1_1_interface_list.html">score::InterfaceList</a>&lt;TransportInterface&gt;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_transport_1_1_direct_transport.html">   50</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_transport_1_1_direct_transport.html">DirectTransport</a> : <span class="keyword">public</span> <a class="code" href="class_transport_1_1_transport_interface.html">TransportInterface</a></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;73453569-b453-4cad-b12b-4b71c61cf9a7&quot;</span>)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="class_transport_1_1_direct_transport.html">DirectTransport</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  ~<a class="code" href="class_transport_1_1_direct_transport.html">DirectTransport</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  ossia::transport_info_fun transportUpdateFunction() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> setup() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">void</span> teardown() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">void</span> requestPlay() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> requestPause() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> requestStop() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> requestTransport(ossia::time_value t) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassscore_1_1_interface_base_html"><div class="ttname"><a href="classscore_1_1_interface_base.html">score::InterfaceBase</a></div><div class="ttdoc">Base class for plug-in interfaces.</div><div class="ttdef"><b>Definition:</b> Interface.hpp:51</div></div>
-<div class="ttc" id="aclass_transport_1_1_transport_interface_html"><div class="ttname"><a href="class_transport_1_1_transport_interface.html">Transport::TransportInterface</a></div><div class="ttdef"><b>Definition:</b> TransportInterface.hpp:15</div></div>
-<div class="ttc" id="aclassscore_1_1_interface_list_html"><div class="ttname"><a href="classscore_1_1_interface_list.html">score::InterfaceList</a></div><div class="ttdoc">InterfaceList Default implementation of InterfaceListBase.</div><div class="ttdef"><b>Definition:</b> InterfaceList.hpp:78</div></div>
-<div class="ttc" id="aclass_transport_1_1_transport_interface_list_html"><div class="ttname"><a href="class_transport_1_1_transport_interface_list.html">Transport::TransportInterfaceList</a></div><div class="ttdef"><b>Definition:</b> TransportInterface.hpp:46</div></div>
-<div class="ttc" id="aclass_transport_1_1_direct_transport_html"><div class="ttname"><a href="class_transport_1_1_direct_transport.html">Transport::DirectTransport</a></div><div class="ttdef"><b>Definition:</b> TransportInterface.hpp:51</div></div>
+<div class="ttc" id="aclass_transport_1_1_transport_interface_html"><div class="ttname"><a href="class_transport_1_1_transport_interface.html">Transport::TransportInterface</a></div><div class="ttdef"><b>Definition:</b> TransportInterface.hpp:17</div></div>
+<div class="ttc" id="aclassscore_1_1_interface_list_html"><div class="ttname"><a href="classscore_1_1_interface_list.html">score::InterfaceList</a></div><div class="ttdoc">InterfaceList Default implementation of InterfaceListBase.</div><div class="ttdef"><b>Definition:</b> InterfaceList.hpp:77</div></div>
+<div class="ttc" id="aclass_transport_1_1_transport_interface_list_html"><div class="ttname"><a href="class_transport_1_1_transport_interface_list.html">Transport::TransportInterfaceList</a></div><div class="ttdef"><b>Definition:</b> TransportInterface.hpp:45</div></div>
+<div class="ttc" id="aclass_transport_1_1_direct_transport_html"><div class="ttname"><a href="class_transport_1_1_direct_transport.html">Transport::DirectTransport</a></div><div class="ttdef"><b>Definition:</b> TransportInterface.hpp:50</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

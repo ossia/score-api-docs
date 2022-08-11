@@ -110,30 +110,27 @@ $(document).ready(function(){initNavTree('_process_context_8hpp_source.html','')
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="struct_process_1_1_context.html">   11</a></span>&#160;<span class="keyword">struct </span>SCORE_LIB_PROCESS_EXPORT <a class="code" href="struct_process_1_1_context.html">Context</a> : <span class="keyword">public</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <a class="code" href="struct_process_1_1_context.html">Context</a>(</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; doc,</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;      <a class="code" href="class_process_1_1_dataflow_manager.html">DataflowManager</a>&amp; dfm,</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      <a class="code" href="class_focus_dispatcher.html">FocusDispatcher</a>&amp; d);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <a class="code" href="class_process_1_1_dataflow_manager.html">DataflowManager</a>&amp; dataflow;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <a class="code" href="class_focus_dispatcher.html">FocusDispatcher</a>&amp; focusDispatcher;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_process_1_1_layer_factory_list.html">Process::LayerFactoryList</a>&amp; processList;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="struct_process_1_1_layer_context.html">   23</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_process_1_1_layer_context.html">LayerContext</a></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Context</a>&amp; context;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="class_process_1_1_layer_presenter.html">Process::LayerPresenter</a>&amp; presenter;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <a class="code" href="struct_process_1_1_context.html">Context</a>(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; doc, <a class="code" href="class_process_1_1_dataflow_manager.html">DataflowManager</a>&amp; dfm, <a class="code" href="class_focus_dispatcher.html">FocusDispatcher</a>&amp; d);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <a class="code" href="class_process_1_1_dataflow_manager.html">DataflowManager</a>&amp; dataflow;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <a class="code" href="class_focus_dispatcher.html">FocusDispatcher</a>&amp; focusDispatcher;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_process_1_1_layer_factory_list.html">Process::LayerFactoryList</a>&amp; processList;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="struct_process_1_1_layer_context.html">   20</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_process_1_1_layer_context.html">LayerContext</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Context</a>&amp; context;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <a class="code" href="class_process_1_1_layer_presenter.html">Process::LayerPresenter</a>&amp; presenter;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1371</div></div>
-<div class="ttc" id="aclass_process_1_1_layer_factory_list_html"><div class="ttname"><a href="class_process_1_1_layer_factory_list.html">Process::LayerFactoryList</a></div><div class="ttdef"><b>Definition:</b> ProcessList.hpp:21</div></div>
+<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1326</div></div>
+<div class="ttc" id="aclass_process_1_1_layer_factory_list_html"><div class="ttname"><a href="class_process_1_1_layer_factory_list.html">Process::LayerFactoryList</a></div><div class="ttdef"><b>Definition:</b> ProcessList.hpp:20</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
 <div class="ttc" id="aclass_focus_dispatcher_html"><div class="ttname"><a href="class_focus_dispatcher.html">FocusDispatcher</a></div><div class="ttdef"><b>Definition:</b> FocusDispatcher.hpp:16</div></div>
-<div class="ttc" id="astruct_process_1_1_layer_context_html"><div class="ttname"><a href="struct_process_1_1_layer_context.html">Process::LayerContext</a></div><div class="ttdef"><b>Definition:</b> ProcessContext.hpp:23</div></div>
+<div class="ttc" id="astruct_process_1_1_layer_context_html"><div class="ttname"><a href="struct_process_1_1_layer_context.html">Process::LayerContext</a></div><div class="ttdef"><b>Definition:</b> ProcessContext.hpp:20</div></div>
 <div class="ttc" id="astruct_process_1_1_context_html"><div class="ttname"><a href="struct_process_1_1_context.html">Process::Context</a></div><div class="ttdef"><b>Definition:</b> ProcessContext.hpp:11</div></div>
 <div class="ttc" id="aclass_process_1_1_layer_presenter_html"><div class="ttname"><a href="class_process_1_1_layer_presenter.html">Process::LayerPresenter</a></div><div class="ttdef"><b>Definition:</b> LayerPresenter.hpp:33</div></div>
 <div class="ttc" id="aclass_process_1_1_dataflow_manager_html"><div class="ttname"><a href="class_process_1_1_dataflow_manager.html">Process::DataflowManager</a></div><div class="ttdef"><b>Definition:</b> plugins/score-lib-process/Process/DocumentPlugin.hpp:11</div></div>

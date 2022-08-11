@@ -99,56 +99,52 @@ $(document).ready(function(){initNavTree('_metro_presenter_8hpp_source.html','')
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Media/Metro/MetroCommands.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Media/Metro/MetroView.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Process/Focus/FocusDispatcher.hpp&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Process/LayerPresenter.hpp&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>Media</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>Metro</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span>Model;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_media_1_1_metro_1_1_presenter.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_media_1_1_metro_1_1_presenter.html">Presenter</a> final : <span class="keyword">public</span> <a class="code" href="class_process_1_1_layer_presenter.html">Process::LayerPresenter</a></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_media_1_1_metro_1_1_presenter.html">Presenter</a>(</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; model,</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      <a class="code" href="class_media_1_1_metro_1_1_view.html">View</a>* view,</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; ctx,</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      QObject* parent)</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      : LayerPresenter{model, view, ctx, parent}</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      , m_view{view}</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    putToFront();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">void</span> setWidth(qreal width, qreal defaultWidth)<span class="keyword"> override</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    m_view-&gt;setWidth(width);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  }</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> setHeight(qreal val)<span class="keyword"> override </span>{ m_view-&gt;setHeight(val); }</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Process/Focus/FocusDispatcher.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Process/LayerPresenter.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Media/Metro/MetroCommands.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Media/Metro/MetroView.hpp&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>Media</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>Metro</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span>Model;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_media_1_1_metro_1_1_presenter.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_media_1_1_metro_1_1_presenter.html">Presenter</a> final : <span class="keyword">public</span> <a class="code" href="class_process_1_1_layer_presenter.html">Process::LayerPresenter</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_media_1_1_metro_1_1_presenter.html">Presenter</a>(</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; model, <a class="code" href="class_media_1_1_metro_1_1_view.html">View</a>* view, <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; ctx,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      QObject* parent)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      : LayerPresenter{model, view, ctx, parent}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      , m_view{view}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    putToFront();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">void</span> setWidth(qreal width, qreal defaultWidth)<span class="keyword"> override </span>{ m_view-&gt;setWidth(width); }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">void</span> setHeight(qreal val)<span class="keyword"> override </span>{ m_view-&gt;setHeight(val); }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">void</span> putToFront()<span class="keyword"> override </span>{ m_view-&gt;setVisible(<span class="keyword">true</span>); }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> putBehind()<span class="keyword"> override </span>{ m_view-&gt;setVisible(<span class="keyword">false</span>); }</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">void</span> putToFront()<span class="keyword"> override </span>{ m_view-&gt;setVisible(<span class="keyword">true</span>); }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">void</span> on_zoomRatioChanged(ZoomRatio r)<span class="keyword"> override </span>{ }</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> putBehind()<span class="keyword"> override </span>{ m_view-&gt;setVisible(<span class="keyword">false</span>); }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> parentGeometryChanged()<span class="keyword"> override </span>{ }</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">void</span> on_zoomRatioChanged(ZoomRatio r)<span class="keyword"> override </span>{ }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">void</span> parentGeometryChanged()<span class="keyword"> override </span>{ }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="class_media_1_1_metro_1_1_view.html">View</a>* m_view{};</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="class_media_1_1_metro_1_1_view.html">View</a>* m_view{};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_media_1_1_metro_1_1_presenter_html"><div class="ttname"><a href="class_media_1_1_metro_1_1_presenter.html">Media::Metro::Presenter</a></div><div class="ttdef"><b>Definition:</b> MetroPresenter.hpp:12</div></div>
+<div class="ttc" id="aclass_media_1_1_metro_1_1_presenter_html"><div class="ttname"><a href="class_media_1_1_metro_1_1_presenter.html">Media::Metro::Presenter</a></div><div class="ttdef"><b>Definition:</b> MetroPresenter.hpp:13</div></div>
 <div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Process.hpp:54</div></div>
 <div class="ttc" id="astruct_process_1_1_context_html"><div class="ttname"><a href="struct_process_1_1_context.html">Process::Context</a></div><div class="ttdef"><b>Definition:</b> ProcessContext.hpp:11</div></div>
 <div class="ttc" id="aclass_process_1_1_layer_presenter_html"><div class="ttname"><a href="class_process_1_1_layer_presenter.html">Process::LayerPresenter</a></div><div class="ttdef"><b>Definition:</b> LayerPresenter.hpp:33</div></div>
-<div class="ttc" id="aclass_media_1_1_metro_1_1_view_html"><div class="ttname"><a href="class_media_1_1_metro_1_1_view.html">Media::Metro::View</a></div><div class="ttdef"><b>Definition:</b> MetroView.hpp:14</div></div>
+<div class="ttc" id="aclass_media_1_1_metro_1_1_view_html"><div class="ttname"><a href="class_media_1_1_metro_1_1_view.html">Media::Metro::View</a></div><div class="ttdef"><b>Definition:</b> MetroView.hpp:15</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -126,30 +126,26 @@ $(document).ready(function(){initNavTree('_scenario_document_factory_8hpp_source
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  makeView(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx, QObject* parent) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="classscore_1_1_document_delegate_presenter.html">score::DocumentDelegatePresenter</a>* makePresenter(</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <a class="code" href="classscore_1_1_document_presenter.html">score::DocumentPresenter</a>* parent_presenter,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <span class="keyword">const</span> <a class="code" href="classscore_1_1_document_delegate_model.html">score::DocumentDelegateModel</a>&amp; model,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <a class="code" href="classscore_1_1_document_delegate_view.html">score::DocumentDelegateView</a>&amp; view) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> make(</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <a class="code" href="classscore_1_1_document_delegate_model.html">score::DocumentDelegateModel</a>*&amp; ptr,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <a class="code" href="classscore_1_1_document_model.html">score::DocumentModel</a>* parent) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span> load(</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_visitor_variant.html">VisitorVariant</a>&amp;,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <a class="code" href="classscore_1_1_document_delegate_model.html">score::DocumentDelegateModel</a>*&amp; ptr,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <a class="code" href="classscore_1_1_document_model.html">score::DocumentModel</a>* parent) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx, <a class="code" href="classscore_1_1_document_presenter.html">score::DocumentPresenter</a>* parent_presenter,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <span class="keyword">const</span> <a class="code" href="classscore_1_1_document_delegate_model.html">score::DocumentDelegateModel</a>&amp; model,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <a class="code" href="classscore_1_1_document_delegate_view.html">score::DocumentDelegateView</a>&amp; view) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">void</span> make(</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx, <a class="code" href="classscore_1_1_document_delegate_model.html">score::DocumentDelegateModel</a>*&amp; ptr,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <a class="code" href="classscore_1_1_document_model.html">score::DocumentModel</a>* parent) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">void</span> load(</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_visitor_variant.html">VisitorVariant</a>&amp;, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <a class="code" href="classscore_1_1_document_delegate_model.html">score::DocumentDelegateModel</a>*&amp; ptr, <a class="code" href="classscore_1_1_document_model.html">score::DocumentModel</a>* parent) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>
+<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:13</div></div>
 <div class="ttc" id="aclassscore_1_1_document_delegate_presenter_html"><div class="ttname"><a href="classscore_1_1_document_delegate_presenter.html">score::DocumentDelegatePresenter</a></div><div class="ttdef"><b>Definition:</b> DocumentDelegatePresenter.hpp:15</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
 <div class="ttc" id="aclassscore_1_1_document_delegate_view_html"><div class="ttname"><a href="classscore_1_1_document_delegate_view.html">score::DocumentDelegateView</a></div><div class="ttdef"><b>Definition:</b> DocumentDelegateView.hpp:9</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:146</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:160</div></div>
 <div class="ttc" id="aclassscore_1_1_document_presenter_html"><div class="ttname"><a href="classscore_1_1_document_presenter.html">score::DocumentPresenter</a></div><div class="ttdoc">Interface between the DocumentModel and the DocumentView.</div><div class="ttdef"><b>Definition:</b> DocumentPresenter.hpp:19</div></div>
 <div class="ttc" id="astruct_visitor_variant_html"><div class="ttname"><a href="struct_visitor_variant.html">VisitorVariant</a></div><div class="ttdoc">The VisitorVariant struct.</div><div class="ttdef"><b>Definition:</b> VisitorInterface.hpp:25</div></div>
 <div class="ttc" id="aclassscore_1_1_document_delegate_model_html"><div class="ttname"><a href="classscore_1_1_document_delegate_model.html">score::DocumentDelegateModel</a></div><div class="ttdef"><b>Definition:</b> DocumentDelegateModel.hpp:9</div></div>

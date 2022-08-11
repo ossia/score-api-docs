@@ -125,61 +125,54 @@ $(document).ready(function(){initNavTree('_metro_8hpp_source.html',''); initResi
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr value_out value_outs[]{<span class="stringliteral">&quot;out&quot;</span>};</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> controls = tuplet::make_tuple(</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        Control::Widgets::MusicalDurationChooser(),</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        Control::Widgets::LFOFreqSlider(),</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="struct_control_1_1_chooser_toggle.html">Control::ChooserToggle</a>{<span class="stringliteral">&quot;Quantify&quot;</span>, {<span class="stringliteral">&quot;Free&quot;</span>, <span class="stringliteral">&quot;Sync&quot;</span>}, <span class="keyword">false</span>});</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  };</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">static</span> constexpr int64_t</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  get_period(<span class="keywordtype">bool</span> use_tempo, <span class="keywordtype">double</span> quantif, <span class="keywordtype">double</span> freq, <span class="keywordtype">double</span> tempo, <span class="keywordtype">int</span> sr)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">if</span> (use_tempo)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span> whole_dur = 240. / tempo;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span> whole_samples = whole_dur * sr;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keywordflow">return</span> quantif * whole_samples;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <span class="keywordflow">return</span> sr / freq;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">static</span> constexpr ossia::time_value</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  next_date(ossia::time_value cur_date, int64_t period)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> ossia::time_value{(int64_t)(period * (1 + cur_date.impl / period))};</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">using</span> control_policy = ossia::safe_nodes::last_tick;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  run(<span class="keywordtype">float</span> quantif,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keywordtype">float</span> freq,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keywordtype">bool</span> val,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      ossia::value_port&amp; res,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      ossia::token_request tk,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      ossia::exec_state_facade st)</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">if</span> (tk.date &gt; tk.prev_date)</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span> period</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;          = get_period(val, quantif, freq, tk.tempo, st.sampleRate());</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span> next = next_date(tk.prev_date, period * st.samplesToModel());</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keywordflow">if</span> (tk.in_range(next))</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        res.write_value(</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            ossia::impulse{},</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            tk.to_physical_time_in_tick(next, st.modelToSamples()));</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        Control::Widgets::MusicalDurationChooser(), Control::Widgets::LFOFreqSlider(),</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="struct_control_1_1_chooser_toggle.html">Control::ChooserToggle</a>{<span class="stringliteral">&quot;Quantify&quot;</span>, {<span class="stringliteral">&quot;Free&quot;</span>, <span class="stringliteral">&quot;Sync&quot;</span>}, <span class="keyword">false</span>});</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  };</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">static</span> constexpr int64_t</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  get_period(<span class="keywordtype">bool</span> use_tempo, <span class="keywordtype">double</span> quantif, <span class="keywordtype">double</span> freq, <span class="keywordtype">double</span> tempo, <span class="keywordtype">int</span> sr)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">if</span>(use_tempo)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span> whole_dur = 240. / tempo;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span> whole_samples = whole_dur * sr;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keywordflow">return</span> quantif * whole_samples;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keywordflow">return</span> sr / freq;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">static</span> constexpr ossia::time_value</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  next_date(ossia::time_value cur_date, int64_t period)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> ossia::time_value{(int64_t)(period * (1 + cur_date.impl / period))};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">using</span> control_policy = ossia::safe_nodes::last_tick;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  run(<span class="keywordtype">float</span> quantif, <span class="keywordtype">float</span> freq, <span class="keywordtype">bool</span> val, ossia::value_port&amp; res,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      ossia::token_request tk, ossia::exec_state_facade st)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span>(tk.date &gt; tk.prev_date)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span> period = get_period(val, quantif, freq, tk.tempo, st.sampleRate());</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span> next = next_date(tk.prev_date, period * st.samplesToModel());</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keywordflow">if</span>(tk.in_range(next))</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        res.write_value(</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            ossia::impulse{}, tk.to_physical_time_in_tick(next, st.modelToSamples()));</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astruct_control_1_1_meta__base_html"><div class="ttname"><a href="struct_control_1_1_meta__base.html">Control::Meta_base</a></div><div class="ttdef"><b>Definition:</b> SimpleApi.hpp:33</div></div>
-<div class="ttc" id="astruct_control_1_1_chooser_toggle_html"><div class="ttname"><a href="struct_control_1_1_chooser_toggle.html">Control::ChooserToggle</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Control/Widgets.hpp:406</div></div>
+<div class="ttc" id="astruct_control_1_1_meta__base_html"><div class="ttname"><a href="struct_control_1_1_meta__base.html">Control::Meta_base</a></div><div class="ttdef"><b>Definition:</b> SimpleApi.hpp:41</div></div>
+<div class="ttc" id="astruct_control_1_1_chooser_toggle_html"><div class="ttname"><a href="struct_control_1_1_chooser_toggle.html">Control::ChooserToggle</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Control/Widgets.hpp:371</div></div>
 <div class="ttc" id="astruct_nodes_1_1_metro_1_1_node_1_1_metadata_html"><div class="ttname"><a href="struct_nodes_1_1_metro_1_1_node_1_1_metadata.html">Nodes::Metro::Node::Metadata</a></div><div class="ttdef"><b>Definition:</b> Metro.hpp:11</div></div>
 <div class="ttc" id="astruct_nodes_1_1_metro_1_1_node_html"><div class="ttname"><a href="struct_nodes_1_1_metro_1_1_node.html">Nodes::Metro::Node</a></div><div class="ttdef"><b>Definition:</b> Metro.hpp:9</div></div>
 <!-- HTML footer for doxygen 1.8.8-->

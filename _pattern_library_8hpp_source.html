@@ -99,41 +99,41 @@ $(document).ready(function(){initNavTree('_pattern_library_8hpp_source.html','')
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Patternist/PatternModel.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Patternist/PatternFactory.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Patternist/PatternParsing.hpp&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Patternist/Commands/PatternProperties.hpp&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;Library/LibraryInterface.hpp&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;Library/LibrarySettings.hpp&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;Library/ProcessesItemModel.hpp&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;Process/Drop/ProcessDropHandler.hpp&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QFileInfo&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QTimer&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>Patternist</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_patternist_1_1_library_handler.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_patternist_1_1_library_handler.html">LibraryHandler</a> final</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    : <span class="keyword">public</span> QObject</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    , <span class="keyword">public</span> <a class="code" href="class_library_1_1_library_interface.html">Library::LibraryInterface</a></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;81375b6a-2172-49e5-bbf9-0d2eecc30677&quot;</span>)</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  QSet&lt;QString&gt; acceptedFiles() <span class="keyword">const</span> noexcept <span class="keyword">override</span> { <span class="keywordflow">return</span> {<span class="stringliteral">&quot;pat&quot;</span>}; }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="struct_library_1_1_subcategories.html">Library::Subcategories</a> categories;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">void</span> setup(</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <a class="code" href="class_library_1_1_processes_item_model.html">Library::ProcessesItemModel</a>&amp; model,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; ctx)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Process/Drop/ProcessDropHandler.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Library/LibraryInterface.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Library/LibrarySettings.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Library/ProcessesItemModel.hpp&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QFileInfo&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QTimer&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;Patternist/Commands/PatternProperties.hpp&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;Patternist/PatternFactory.hpp&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;Patternist/PatternModel.hpp&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;Patternist/PatternParsing.hpp&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>Patternist</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_patternist_1_1_library_handler.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_patternist_1_1_library_handler.html">LibraryHandler</a> final</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    , <span class="keyword">public</span> <a class="code" href="class_library_1_1_library_interface.html">Library::LibraryInterface</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;81375b6a-2172-49e5-bbf9-0d2eecc30677&quot;</span>)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  QSet&lt;QString&gt; acceptedFiles() <span class="keyword">const</span> noexcept <span class="keyword">override</span> { <span class="keywordflow">return</span> {<span class="stringliteral">&quot;pat&quot;</span>}; }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="struct_library_1_1_subcategories.html">Library::Subcategories</a> categories;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> setup(<a class="code" href="class_library_1_1_processes_item_model.html">Library::ProcessesItemModel</a>&amp; model, <span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; ctx)<span class="keyword"></span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">      override</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">  </span>{</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// TODO relaunch whenever library path changes...</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; key = <a class="code" href="struct_metadata.html">Metadata&lt;ConcreteKey_k, Patternist::ProcessModel&gt;::get</a>();</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    QModelIndex node = model.find(key);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">if</span> (node == QModelIndex{})</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">if</span>(node == QModelIndex{})</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    categories.init(node, ctx);</div>
@@ -158,33 +158,32 @@ $(document).ready(function(){initNavTree('_pattern_library_8hpp_source.html','')
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  QSet&lt;QString&gt; fileExtensions() <span class="keyword">const</span> noexcept <span class="keyword">override</span> { <span class="keywordflow">return</span> {<span class="stringliteral">&quot;pat&quot;</span>}; }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> dropData(</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      std::vector&lt;ProcessDrop&gt;&amp; vec,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_process_1_1_process_drop_handler_1_1_dropped_file.html">DroppedFile</a>&amp; data,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; [filename, content] = data;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">auto</span> pat = parsePattern(content);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span>(pat.lanes.size() &gt; 0) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      std::vector&lt;ProcessDrop&gt;&amp; vec, <span class="keyword">const</span> <a class="code" href="struct_process_1_1_process_drop_handler_1_1_dropped_file.html">DroppedFile</a>&amp; data,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; [filename, content] = data;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">auto</span> pat = parsePattern(content);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">if</span>(pat.lanes.size() &gt; 0)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    {</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <a class="code" href="struct_process_1_1_process_drop_handler_1_1_process_drop.html">Process::ProcessDropHandler::ProcessDrop</a> p;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      p.creation.key = <a class="code" href="struct_metadata.html">Metadata&lt;ConcreteKey_k, Patternist::ProcessModel&gt;::get</a>();</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      p.creation.prettyName = QFileInfo{filename}.baseName();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      p.setup = [pat = std::move(pat)] (</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;          <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; m,</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;          <a class="code" href="structscore_1_1_dispatcher.html">score::Dispatcher</a>&amp; disp) <span class="keyword">mutable</span> {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keyword">auto</span>&amp; proc = <span class="keyword">static_cast&lt;</span><a class="code" href="class_patternist_1_1_process_model.html">Patternist::ProcessModel</a>&amp;<span class="keyword">&gt;</span>(m);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        disp.submit(<span class="keyword">new</span> <a class="code" href="class_patternist_1_1_update_pattern.html">Patternist::UpdatePattern</a>{proc, 0, std::move(pat)});</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      };</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      vec.push_back(std::move(p));</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      p.setup = [pat = std::move(pat)](</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                    <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; m, <a class="code" href="structscore_1_1_dispatcher.html">score::Dispatcher</a>&amp; disp) <span class="keyword">mutable</span> {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keyword">auto</span>&amp; proc = <span class="keyword">static_cast&lt;</span><a class="code" href="class_patternist_1_1_process_model.html">Patternist::ProcessModel</a>&amp;<span class="keyword">&gt;</span>(m);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        disp.submit(<span class="keyword">new</span> <a class="code" href="class_patternist_1_1_update_pattern.html">Patternist::UpdatePattern</a>{proc, 0, std::move(pat)});</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      };</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      vec.push_back(std::move(p));</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_library_1_1_processes_item_model_html"><div class="ttname"><a href="class_library_1_1_processes_item_model.html">Library::ProcessesItemModel</a></div><div class="ttdef"><b>Definition:</b> ProcessesItemModel.hpp:42</div></div>
+<div class="ttc" id="aclass_library_1_1_processes_item_model_html"><div class="ttname"><a href="class_library_1_1_processes_item_model.html">Library::ProcessesItemModel</a></div><div class="ttdef"><b>Definition:</b> ProcessesItemModel.hpp:41</div></div>
 <div class="ttc" id="aclass_patternist_1_1_process_model_html"><div class="ttname"><a href="class_patternist_1_1_process_model.html">Patternist::ProcessModel</a></div><div class="ttdef"><b>Definition:</b> PatternModel.hpp:35</div></div>
 <div class="ttc" id="astruct_metadata_html"><div class="ttname"><a href="struct_metadata.html">Metadata</a></div><div class="ttdoc">Static metadata implementation.</div><div class="ttdef"><b>Definition:</b> lib/score/tools/Metadata.hpp:36</div></div>
 <div class="ttc" id="aclass_library_1_1_library_interface_html"><div class="ttname"><a href="class_library_1_1_library_interface.html">Library::LibraryInterface</a></div><div class="ttdef"><b>Definition:</b> LibraryInterface.hpp:21</div></div>
@@ -194,11 +193,11 @@ $(document).ready(function(){initNavTree('_pattern_library_8hpp_source.html','')
 <div class="ttc" id="astruct_process_1_1_process_drop_handler_1_1_process_drop_html"><div class="ttname"><a href="struct_process_1_1_process_drop_handler_1_1_process_drop.html">Process::ProcessDropHandler::ProcessDrop</a></div><div class="ttdef"><b>Definition:</b> ProcessDropHandler.hpp:26</div></div>
 <div class="ttc" id="aclass_process_1_1_process_drop_handler_html"><div class="ttname"><a href="class_process_1_1_process_drop_handler.html">Process::ProcessDropHandler</a></div><div class="ttdef"><b>Definition:</b> ProcessDropHandler.hpp:22</div></div>
 <div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Process.hpp:54</div></div>
-<div class="ttc" id="astruct_library_1_1_process_data_html"><div class="ttname"><a href="struct_library_1_1_process_data.html">Library::ProcessData</a></div><div class="ttdef"><b>Definition:</b> ProcessesItemModel.hpp:31</div></div>
+<div class="ttc" id="astruct_library_1_1_process_data_html"><div class="ttname"><a href="struct_library_1_1_process_data.html">Library::ProcessData</a></div><div class="ttdef"><b>Definition:</b> ProcessesItemModel.hpp:30</div></div>
 <div class="ttc" id="aclass_patternist_1_1_drop_handler_html"><div class="ttname"><a href="class_patternist_1_1_drop_handler.html">Patternist::DropHandler</a></div><div class="ttdef"><b>Definition:</b> PatternLibrary.hpp:54</div></div>
 <div class="ttc" id="astruct_process_1_1_process_drop_handler_1_1_dropped_file_html"><div class="ttname"><a href="struct_process_1_1_process_drop_handler_1_1_dropped_file.html">Process::ProcessDropHandler::DroppedFile</a></div><div class="ttdef"><b>Definition:</b> ProcessDropHandler.hpp:33</div></div>
-<div class="ttc" id="aclass_patternist_1_1_library_handler_html"><div class="ttname"><a href="class_patternist_1_1_library_handler.html">Patternist::LibraryHandler</a></div><div class="ttdef"><b>Definition:</b> PatternLibrary.hpp:19</div></div>
-<div class="ttc" id="astruct_library_1_1_subcategories_html"><div class="ttname"><a href="struct_library_1_1_subcategories.html">Library::Subcategories</a></div><div class="ttdef"><b>Definition:</b> ProcessesItemModel.hpp:83</div></div>
+<div class="ttc" id="aclass_patternist_1_1_library_handler_html"><div class="ttname"><a href="class_patternist_1_1_library_handler.html">Patternist::LibraryHandler</a></div><div class="ttdef"><b>Definition:</b> PatternLibrary.hpp:20</div></div>
+<div class="ttc" id="astruct_library_1_1_subcategories_html"><div class="ttname"><a href="struct_library_1_1_subcategories.html">Library::Subcategories</a></div><div class="ttdef"><b>Definition:</b> ProcessesItemModel.hpp:81</div></div>
 <div class="ttc" id="aclass_patternist_1_1_update_pattern_html"><div class="ttname"><a href="class_patternist_1_1_update_pattern.html">Patternist::UpdatePattern</a></div><div class="ttdef"><b>Definition:</b> PatternProperties.hpp:15</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

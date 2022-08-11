@@ -104,13 +104,13 @@ $(document).ready(function(){initNavTree('_create_sequence_8hpp_source.html','')
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Process/State/MessageNode.hpp&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Process/TimeValue.hpp&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;score/command/Command.hpp&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;score/command/CommandStackFacade.hpp&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;score/model/Identifier.hpp&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;score/model/path/Path.hpp&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;Scenario/Commands/Cohesion/InterpolateMacro.hpp&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;Scenario/Commands/ScenarioCommandFactory.hpp&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;Scenario/Commands/Cohesion/InterpolateMacro.hpp&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;Scenario/Commands/ScenarioCommandFactory.hpp&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;score/command/Command.hpp&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;score/command/CommandStackFacade.hpp&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;score/model/Identifier.hpp&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;score/model/path/Path.hpp&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">struct </span><a class="code" href="struct_data_stream_input.html">DataStreamInput</a>;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">struct </span><a class="code" href="struct_data_stream_output.html">DataStreamOutput</a>;</div>
@@ -131,79 +131,72 @@ $(document).ready(function(){initNavTree('_create_sequence_8hpp_source.html','')
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">static</span> <a class="code" href="class_scenario_1_1_command_1_1_create_sequence.html">CreateSequence</a>* make(</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp; scenario,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;StateModel&gt;</a>&amp; start,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_time_val.html">TimeVal</a>&amp; date,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keywordtype">double</span> endStateY);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">void</span> undo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx)<span class="keyword"> const override</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    m_cmds.front()-&gt;undo(ctx);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;IntervalModel&gt;</a>&amp; createdInterval()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_newInterval; }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;StateModel&gt;</a>&amp; createdState()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_newState; }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;EventModel&gt;</a>&amp; createdEvent()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_newEvent; }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;TimeSyncModel&gt;</a>&amp; createdTimeSync()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_newTimeSync; }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="classid__base__t.html">Id&lt;IntervalModel&gt;</a> m_newInterval;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="classid__base__t.html">Id&lt;StateModel&gt;</a> m_newState;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="classid__base__t.html">Id&lt;EventModel&gt;</a> m_newEvent;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="classid__base__t.html">Id&lt;TimeSyncModel&gt;</a> m_newTimeSync;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_scenario_1_1_command_1_1_create_sequence_processes.html">   60</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_scenario_1_1_command_1_1_create_sequence_processes.html">CreateSequenceProcesses</a> final : <span class="keyword">public</span> <a class="code" href="classscore_1_1_command.html">score::Command</a></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  SCORE_COMMAND_DECL(</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      CommandFactoryName(),</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <a class="code" href="class_scenario_1_1_command_1_1_create_sequence_processes.html">CreateSequenceProcesses</a>,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="stringliteral">&quot;CreateSequenceData&quot;</span>)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx, <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp; scenario,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;StateModel&gt;</a>&amp; start, <span class="keyword">const</span> <a class="code" href="struct_time_val.html">TimeVal</a>&amp; date, <span class="keywordtype">double</span> endStateY);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">void</span> undo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx)<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    m_cmds.front()-&gt;undo(ctx);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;IntervalModel&gt;</a>&amp; createdInterval()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_newInterval; }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;StateModel&gt;</a>&amp; createdState()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_newState; }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;EventModel&gt;</a>&amp; createdEvent()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_newEvent; }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;TimeSyncModel&gt;</a>&amp; createdTimeSync()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_newTimeSync; }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="classid__base__t.html">Id&lt;IntervalModel&gt;</a> m_newInterval;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="classid__base__t.html">Id&lt;StateModel&gt;</a> m_newState;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="classid__base__t.html">Id&lt;EventModel&gt;</a> m_newEvent;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="classid__base__t.html">Id&lt;TimeSyncModel&gt;</a> m_newTimeSync;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_scenario_1_1_command_1_1_create_sequence_processes.html">   57</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_scenario_1_1_command_1_1_create_sequence_processes.html">CreateSequenceProcesses</a> final : <span class="keyword">public</span> <a class="code" href="classscore_1_1_command.html">score::Command</a></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  SCORE_COMMAND_DECL(CommandFactoryName(), <a class="code" href="class_scenario_1_1_command_1_1_create_sequence_processes.html">CreateSequenceProcesses</a>, <span class="stringliteral">&quot;CreateSequenceData&quot;</span>)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="class_scenario_1_1_command_1_1_create_sequence_processes.html">CreateSequenceProcesses</a>(</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp; scenario, <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a>&amp; interval);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">int</span> addedProcessCount()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_addedProcessCount; }</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="class_scenario_1_1_command_1_1_create_sequence_processes.html">CreateSequenceProcesses</a>(</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp; scenario,</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a>&amp; interval);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">int</span> addedProcessCount()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_addedProcessCount; }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> undo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> redo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">void</span> serializeImpl(<a class="code" href="struct_data_stream_input.html">DataStreamInput</a>&amp;) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">void</span> deserializeImpl(<a class="code" href="struct_data_stream_output.html">DataStreamOutput</a>&amp;) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> undo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span> redo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">void</span> serializeImpl(<a class="code" href="struct_data_stream_input.html">DataStreamInput</a>&amp;) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">void</span> deserializeImpl(<a class="code" href="struct_data_stream_output.html">DataStreamOutput</a>&amp;) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <a class="code" href="class_path.html">Path&lt;Scenario::ProcessModel&gt;</a> m_scenario;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="class_scenario_1_1_command_1_1_add_multiple_processes_to_interval_macro.html">AddMultipleProcessesToIntervalMacro</a> m_interpolations;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="class_tree_node.html">Process::MessageNode</a> m_stateData;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="classid__base__t.html">Id&lt;StateModel&gt;</a> m_endState;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">int</span> m_addedProcessCount{};</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <a class="code" href="class_path.html">Path&lt;Scenario::ProcessModel&gt;</a> m_scenario;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="class_scenario_1_1_command_1_1_add_multiple_processes_to_interval_macro.html">AddMultipleProcessesToIntervalMacro</a> m_interpolations;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="class_tree_node.html">Process::MessageNode</a> m_stateData;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="classid__base__t.html">Id&lt;StateModel&gt;</a> m_endState;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">int</span> m_addedProcessCount{};</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_tree_node_html"><div class="ttname"><a href="class_tree_node.html">TreeNode&lt; StateNodeData &gt;</a></div></div>
-<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>
+<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:13</div></div>
 <div class="ttc" id="aclassscore_1_1_aggregate_command_html"><div class="ttname"><a href="classscore_1_1_aggregate_command.html">score::AggregateCommand</a></div><div class="ttdoc">Allows for grouping of multiple commands in a single one.</div><div class="ttdef"><b>Definition:</b> AggregateCommand.hpp:14</div></div>
-<div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition:</b> TimeValue.hpp:19</div></div>
+<div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition:</b> TimeValue.hpp:20</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
 <div class="ttc" id="aclassscore_1_1_command_html"><div class="ttname"><a href="classscore_1_1_command.html">score::Command</a></div><div class="ttdoc">The Command class.</div><div class="ttdef"><b>Definition:</b> Command.hpp:33</div></div>
 <div class="ttc" id="aclass_scenario_1_1_command_1_1_create_sequence_html"><div class="ttname"><a href="class_scenario_1_1_command_1_1_create_sequence.html">Scenario::Command::CreateSequence</a></div><div class="ttdef"><b>Definition:</b> CreateSequence.hpp:28</div></div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition:</b> Identifier.hpp:56</div></div>
-<div class="ttc" id="astruct_data_stream_output_html"><div class="ttname"><a href="struct_data_stream_output.html">DataStreamOutput</a></div><div class="ttdef"><b>Definition:</b> DataStreamHelpers.hpp:137</div></div>
-<div class="ttc" id="aclass_scenario_1_1_command_1_1_add_multiple_processes_to_interval_macro_html"><div class="ttname"><a href="class_scenario_1_1_command_1_1_add_multiple_processes_to_interval_macro.html">Scenario::Command::AddMultipleProcessesToIntervalMacro</a></div><div class="ttdef"><b>Definition:</b> InterpolateMacro.hpp:27</div></div>
+<div class="ttc" id="astruct_data_stream_output_html"><div class="ttname"><a href="struct_data_stream_output.html">DataStreamOutput</a></div><div class="ttdef"><b>Definition:</b> DataStreamHelpers.hpp:134</div></div>
+<div class="ttc" id="aclass_scenario_1_1_command_1_1_add_multiple_processes_to_interval_macro_html"><div class="ttname"><a href="class_scenario_1_1_command_1_1_add_multiple_processes_to_interval_macro.html">Scenario::Command::AddMultipleProcessesToIntervalMacro</a></div><div class="ttdef"><b>Definition:</b> InterpolateMacro.hpp:25</div></div>
 <div class="ttc" id="aclass_scenario_1_1_process_model_html"><div class="ttname"><a href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a></div><div class="ttdoc">The core hierarchical and temporal process of score.</div><div class="ttdef"><b>Definition:</b> ScenarioModel.hpp:34</div></div>
 <div class="ttc" id="aclass_path_html"><div class="ttname"><a href="class_path.html">Path&lt; Scenario::ProcessModel &gt;</a></div></div>
-<div class="ttc" id="aclass_scenario_1_1_interval_model_html"><div class="ttname"><a href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a></div><div class="ttdef"><b>Definition:</b> IntervalModel.hpp:50</div></div>
-<div class="ttc" id="astruct_data_stream_input_html"><div class="ttname"><a href="struct_data_stream_input.html">DataStreamInput</a></div><div class="ttdef"><b>Definition:</b> DataStreamHelpers.hpp:133</div></div>
-<div class="ttc" id="aclass_scenario_1_1_command_1_1_create_sequence_processes_html"><div class="ttname"><a href="class_scenario_1_1_command_1_1_create_sequence_processes.html">Scenario::Command::CreateSequenceProcesses</a></div><div class="ttdef"><b>Definition:</b> CreateSequence.hpp:60</div></div>
+<div class="ttc" id="aclass_scenario_1_1_interval_model_html"><div class="ttname"><a href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a></div><div class="ttdef"><b>Definition:</b> IntervalModel.hpp:49</div></div>
+<div class="ttc" id="astruct_data_stream_input_html"><div class="ttname"><a href="struct_data_stream_input.html">DataStreamInput</a></div><div class="ttdef"><b>Definition:</b> DataStreamHelpers.hpp:130</div></div>
+<div class="ttc" id="aclass_scenario_1_1_command_1_1_create_sequence_processes_html"><div class="ttname"><a href="class_scenario_1_1_command_1_1_create_sequence_processes.html">Scenario::Command::CreateSequenceProcesses</a></div><div class="ttdef"><b>Definition:</b> CreateSequence.hpp:57</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

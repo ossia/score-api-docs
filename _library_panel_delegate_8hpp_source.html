@@ -129,36 +129,34 @@ $(document).ready(function(){initNavTree('_library_panel_delegate_8hpp_source.ht
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  QWidget* widget() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1_panel_status.html">score::PanelStatus</a>&amp; defaultPanelStatus() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">void</span> on_modelChanged(<a class="code" href="structscore_1_1_document_context.html">score::MaybeDocument</a> oldm, <a class="code" href="structscore_1_1_document_context.html">score::MaybeDocument</a> newm)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="class_library_1_1_project_library_widget.html">ProjectLibraryWidget</a>* m_widget{};</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_library_1_1_process_panel.html">   38</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_LIBRARY_EXPORT <a class="code" href="class_library_1_1_process_panel.html">ProcessPanel</a> final</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classscore_1_1_panel_delegate.html">score::PanelDelegate</a></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="class_library_1_1_process_panel.html">ProcessPanel</a>(<span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; ctx);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="class_library_1_1_process_widget.html">ProcessWidget</a>&amp; processWidget() <span class="keyword">const</span> noexcept;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  QWidget* widget() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1_panel_status.html">score::PanelStatus</a>&amp; defaultPanelStatus() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  QWidget* m_widget{};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">void</span> on_modelChanged(<a class="code" href="structscore_1_1_document_context.html">score::MaybeDocument</a> oldm, <a class="code" href="structscore_1_1_document_context.html">score::MaybeDocument</a> newm) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="class_library_1_1_project_library_widget.html">ProjectLibraryWidget</a>* m_widget{};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_library_1_1_process_panel.html">   37</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_LIBRARY_EXPORT <a class="code" href="class_library_1_1_process_panel.html">ProcessPanel</a> final : <span class="keyword">public</span> <a class="code" href="classscore_1_1_panel_delegate.html">score::PanelDelegate</a></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="class_library_1_1_process_panel.html">ProcessPanel</a>(<span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; ctx);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="class_library_1_1_process_widget.html">ProcessWidget</a>&amp; processWidget() <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  QWidget* widget() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1_panel_status.html">score::PanelStatus</a>&amp; defaultPanelStatus() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  QWidget* m_widget{};</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_library_1_1_project_panel_html"><div class="ttname"><a href="class_library_1_1_project_panel.html">Library::ProjectPanel</a></div><div class="ttdef"><b>Definition:</b> LibraryPanelDelegate.hpp:24</div></div>
 <div class="ttc" id="aclass_library_1_1_project_library_widget_html"><div class="ttname"><a href="class_library_1_1_project_library_widget.html">Library::ProjectLibraryWidget</a></div><div class="ttdef"><b>Definition:</b> ProjectLibraryWidget.hpp:15</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
 <div class="ttc" id="astructscore_1_1_g_u_i_application_context_html"><div class="ttname"><a href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a></div><div class="ttdoc">Specializes ApplicationContext with the QMainWindow.</div><div class="ttdef"><b>Definition:</b> GUIApplicationContext.hpp:14</div></div>
-<div class="ttc" id="aclass_library_1_1_process_panel_html"><div class="ttname"><a href="class_library_1_1_process_panel.html">Library::ProcessPanel</a></div><div class="ttdef"><b>Definition:</b> LibraryPanelDelegate.hpp:38</div></div>
-<div class="ttc" id="aclassscore_1_1_panel_delegate_html"><div class="ttname"><a href="classscore_1_1_panel_delegate.html">score::PanelDelegate</a></div><div class="ttdoc">The PanelDelegate class.</div><div class="ttdef"><b>Definition:</b> PanelDelegate.hpp:54</div></div>
+<div class="ttc" id="aclass_library_1_1_process_panel_html"><div class="ttname"><a href="class_library_1_1_process_panel.html">Library::ProcessPanel</a></div><div class="ttdef"><b>Definition:</b> LibraryPanelDelegate.hpp:37</div></div>
+<div class="ttc" id="aclassscore_1_1_panel_delegate_html"><div class="ttname"><a href="classscore_1_1_panel_delegate.html">score::PanelDelegate</a></div><div class="ttdoc">The PanelDelegate class.</div><div class="ttdef"><b>Definition:</b> PanelDelegate.hpp:49</div></div>
 <div class="ttc" id="aclass_library_1_1_user_panel_html"><div class="ttname"><a href="class_library_1_1_user_panel.html">Library::UserPanel</a></div><div class="ttdef"><b>Definition:</b> LibraryPanelDelegate.hpp:12</div></div>
-<div class="ttc" id="aclass_library_1_1_process_widget_html"><div class="ttname"><a href="class_library_1_1_process_widget.html">Library::ProcessWidget</a></div><div class="ttdef"><b>Definition:</b> ProcessWidget.hpp:54</div></div>
+<div class="ttc" id="aclass_library_1_1_process_widget_html"><div class="ttname"><a href="class_library_1_1_process_widget.html">Library::ProcessWidget</a></div><div class="ttdef"><b>Definition:</b> ProcessWidget.hpp:49</div></div>
 <div class="ttc" id="astructscore_1_1_panel_status_html"><div class="ttname"><a href="structscore_1_1_panel_status.html">score::PanelStatus</a></div><div class="ttdoc">The PanelStatus struct.</div><div class="ttdef"><b>Definition:</b> PanelDelegate.hpp:23</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

@@ -102,14 +102,14 @@ $(document).ready(function(){initNavTree('_add_trigger_8hpp_source.html',''); in
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;State/Expression.hpp&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;score/command/Command.hpp&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;score/document/DocumentInterface.hpp&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;score/model/path/Path.hpp&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_data_stream_visitor_8hpp.html">score/serialization/DataStreamVisitor.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;Scenario/Commands/Interval/SetRigidity.hpp&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;Scenario/Commands/ScenarioCommandFactory.hpp&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;Scenario/Document/TimeSync/TimeSyncModel.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Scenario/Commands/Interval/SetRigidity.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Scenario/Commands/ScenarioCommandFactory.hpp&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;Scenario/Document/TimeSync/TimeSyncModel.hpp&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;score/command/Command.hpp&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;score/document/DocumentInterface.hpp&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;score/model/path/Path.hpp&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_data_stream_visitor_8hpp.html">score/serialization/DataStreamVisitor.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_scenario.html">Scenario</a></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('_add_trigger_8hpp_source.html',''); in
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      : m_path{tn}</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    Scenario_T* scenar = safe_cast&lt;Scenario_T*&gt;(tn.parent());</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; cstrId : intervalsBeforeTimeSync(*scenar, tn.id()))</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; cstrId : intervalsBeforeTimeSync(*scenar, tn.id()))</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      m_cmds.emplace_back(scenar-&gt;interval(cstrId), <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('_add_trigger_8hpp_source.html',''); in
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">auto</span>&amp; tn = m_path.find(ctx);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    tn.setActive(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; cmd : m_cmds)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; cmd : m_cmds)</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      cmd.undo(ctx);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
@@ -161,7 +161,7 @@ $(document).ready(function(){initNavTree('_add_trigger_8hpp_source.html',''); in
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">auto</span>&amp; tn = m_path.find(ctx);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    tn.setActive(<span class="keyword">true</span>);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; cmd : m_cmds)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; cmd : m_cmds)</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      cmd.redo(ctx);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
@@ -173,7 +173,7 @@ $(document).ready(function(){initNavTree('_add_trigger_8hpp_source.html',''); in
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    s &lt;&lt; m_path;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    s &lt;&lt; (int32_t)m_cmds.size();</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; cmd : m_cmds)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; cmd : m_cmds)</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    {</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      s &lt;&lt; cmd.serialize();</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('_add_trigger_8hpp_source.html',''); in
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    s &gt;&gt; m_path;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    s &gt;&gt; n;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    m_cmds.resize(n);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; n; i++)</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    {</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      QByteArray a;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      s &gt;&gt; a;</div>
@@ -207,16 +207,16 @@ $(document).ready(function(){initNavTree('_add_trigger_8hpp_source.html',''); in
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="class_scenario_1_1_command_1_1_add_trigger.html">Scenario::Command::AddTrigger&lt;Scenario::BaseScenario&gt;</a>)</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>
+<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:13</div></div>
 <div class="ttc" id="aclass_string_key_html"><div class="ttname"><a href="class_string_key.html">StringKey&lt; CommandParentTag &gt;</a></div></div>
 <div class="ttc" id="astruct_metadata_html"><div class="ttname"><a href="struct_metadata.html">Metadata</a></div><div class="ttdoc">Static metadata implementation.</div><div class="ttdef"><b>Definition:</b> lib/score/tools/Metadata.hpp:36</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
-<div class="ttc" id="aclass_scenario_1_1_time_sync_model_html"><div class="ttname"><a href="class_scenario_1_1_time_sync_model.html">Scenario::TimeSyncModel</a></div><div class="ttdef"><b>Definition:</b> TimeSyncModel.hpp:31</div></div>
+<div class="ttc" id="aclass_scenario_1_1_time_sync_model_html"><div class="ttname"><a href="class_scenario_1_1_time_sync_model.html">Scenario::TimeSyncModel</a></div><div class="ttdef"><b>Definition:</b> TimeSyncModel.hpp:33</div></div>
 <div class="ttc" id="aclassscore_1_1_command_html"><div class="ttname"><a href="classscore_1_1_command.html">score::Command</a></div><div class="ttdoc">The Command class.</div><div class="ttdef"><b>Definition:</b> Command.hpp:33</div></div>
-<div class="ttc" id="astruct_data_stream_output_html"><div class="ttname"><a href="struct_data_stream_output.html">DataStreamOutput</a></div><div class="ttdef"><b>Definition:</b> DataStreamHelpers.hpp:137</div></div>
+<div class="ttc" id="astruct_data_stream_output_html"><div class="ttname"><a href="struct_data_stream_output.html">DataStreamOutput</a></div><div class="ttdef"><b>Definition:</b> DataStreamHelpers.hpp:134</div></div>
 <div class="ttc" id="aclass_scenario_1_1_command_1_1_add_trigger_html"><div class="ttname"><a href="class_scenario_1_1_command_1_1_add_trigger.html">Scenario::Command::AddTrigger</a></div><div class="ttdef"><b>Definition:</b> AddTrigger.hpp:20</div></div>
 <div class="ttc" id="aclass_path_html"><div class="ttname"><a href="class_path.html">Path&lt; TimeSyncModel &gt;</a></div></div>
-<div class="ttc" id="astruct_data_stream_input_html"><div class="ttname"><a href="struct_data_stream_input.html">DataStreamInput</a></div><div class="ttdef"><b>Definition:</b> DataStreamHelpers.hpp:133</div></div>
+<div class="ttc" id="astruct_data_stream_input_html"><div class="ttname"><a href="struct_data_stream_input.html">DataStreamInput</a></div><div class="ttdef"><b>Definition:</b> DataStreamHelpers.hpp:130</div></div>
 <div class="ttc" id="a_data_stream_visitor_8hpp_html"><div class="ttname"><a href="_data_stream_visitor_8hpp.html">DataStreamVisitor.hpp</a></div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

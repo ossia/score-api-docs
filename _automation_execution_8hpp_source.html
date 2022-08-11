@@ -99,32 +99,32 @@ $(document).ready(function(){initNavTree('_automation_execution_8hpp_source.html
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Automation/AutomationModel.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Process/Execution/ProcessComponent.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;ossia/dataflow/node_process.hpp&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;ossia/network/value/destination.hpp&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;ossia/network/value/value.hpp&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>ossia</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span>curve_abstract;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_automation.html">Automation</a></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>RecreateOnPlay</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_automation_1_1_recreate_on_play_1_1_component.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_automation_1_1_recreate_on_play_1_1_component.html">Component</a> final</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    : <span class="keyword">public</span> ::Execution::</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;          ProcessComponent_T&lt;Automation::ProcessModel, ossia::node_process&gt;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  COMPONENT_METADATA(<span class="stringliteral">&quot;f759eacd-5a67-4627-bbe8-c649e0f9b6c5&quot;</span>)</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="class_automation_1_1_recreate_on_play_1_1_component.html">Component</a>(</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <a class="code" href="class_automation_1_1_process_model.html">Automation::ProcessModel</a>&amp; element,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      const ::Execution::Context&amp; ctx,</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Process/Execution/ProcessComponent.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Automation/AutomationModel.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;ossia/dataflow/node_process.hpp&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;ossia/network/value/destination.hpp&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;ossia/network/value/value.hpp&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>ossia</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>curve_abstract;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_automation.html">Automation</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>RecreateOnPlay</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_automation_1_1_recreate_on_play_1_1_component.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_automation_1_1_recreate_on_play_1_1_component.html">Component</a> final</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    : <span class="keyword">public</span> <a class="code" href="struct_execution_1_1_process_component___t.html">::Execution::ProcessComponent_T</a>&lt;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;          Automation::ProcessModel, ossia::node_process&gt;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  COMPONENT_METADATA(<span class="stringliteral">&quot;f759eacd-5a67-4627-bbe8-c649e0f9b6c5&quot;</span>)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="class_automation_1_1_recreate_on_play_1_1_component.html">Component</a>(</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      <a class="code" href="class_automation_1_1_process_model.html">Automation::ProcessModel</a>&amp; element, const ::Execution::Context&amp; ctx,</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      QObject* parent);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  ~<a class="code" href="class_automation_1_1_recreate_on_play_1_1_component.html">Component</a>() <span class="keyword">override</span>;</div>
@@ -144,15 +144,15 @@ $(document).ready(function(){initNavTree('_automation_execution_8hpp_source.html
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;SCORE_CONCRETE_COMPONENT_FACTORY(</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_execution_1_1_process_component_factory.html">Execution::ProcessComponentFactory</a>,</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="class_execution_1_1_process_component_factory___t.html">Automation::RecreateOnPlay::ComponentFactory</a>)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_execution_1_1_process_component_factory.html">Execution::ProcessComponentFactory</a>, <a class="code" href="class_execution_1_1_process_component_factory___t.html">Automation::RecreateOnPlay::ComponentFactory</a>)</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_execution_1_1_process_component_factory___t_html"><div class="ttname"><a href="class_execution_1_1_process_component_factory___t.html">Execution::ProcessComponentFactory_T</a></div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:127</div></div>
-<div class="ttc" id="aclass_execution_1_1_process_component_factory_html"><div class="ttname"><a href="class_execution_1_1_process_component_factory.html">Execution::ProcessComponentFactory</a></div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:108</div></div>
-<div class="ttc" id="aclass_automation_1_1_process_model_html"><div class="ttname"><a href="class_automation_1_1_process_model.html">Automation::ProcessModel</a></div><div class="ttdef"><b>Definition:</b> AutomationModel.hpp:32</div></div>
-<div class="ttc" id="aclass_automation_1_1_recreate_on_play_1_1_component_html"><div class="ttname"><a href="class_automation_1_1_recreate_on_play_1_1_component.html">Automation::RecreateOnPlay::Component</a></div><div class="ttdef"><b>Definition:</b> AutomationExecution.hpp:19</div></div>
+<div class="ttc" id="aclass_execution_1_1_process_component_factory___t_html"><div class="ttname"><a href="class_execution_1_1_process_component_factory___t.html">Execution::ProcessComponentFactory_T</a></div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:115</div></div>
+<div class="ttc" id="aclass_execution_1_1_process_component_factory_html"><div class="ttname"><a href="class_execution_1_1_process_component_factory.html">Execution::ProcessComponentFactory</a></div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:98</div></div>
+<div class="ttc" id="aclass_automation_1_1_process_model_html"><div class="ttname"><a href="class_automation_1_1_process_model.html">Automation::ProcessModel</a></div><div class="ttdef"><b>Definition:</b> AutomationModel.hpp:35</div></div>
+<div class="ttc" id="aclass_automation_1_1_recreate_on_play_1_1_component_html"><div class="ttname"><a href="class_automation_1_1_recreate_on_play_1_1_component.html">Automation::RecreateOnPlay::Component</a></div><div class="ttdef"><b>Definition:</b> AutomationExecution.hpp:20</div></div>
 <div class="ttc" id="anamespace_automation_html"><div class="ttname"><a href="namespace_automation.html">Automation</a></div><div class="ttdoc">Namespace related to the Automation process.</div><div class="ttdef"><b>Definition:</b> AutomationColors.cpp:7</div></div>
+<div class="ttc" id="astruct_execution_1_1_process_component___t_html"><div class="ttname"><a href="struct_execution_1_1_process_component___t.html">Execution::ProcessComponent_T</a></div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:86</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

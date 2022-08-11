@@ -99,69 +99,66 @@ $(document).ready(function(){initNavTree('_process_state_data_interface_8hpp_sou
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Process/State/MessageNode.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;State/Address.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;State/Message.hpp&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;score/model/IdentifiedObject.hpp&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;score/model/Identifier.hpp&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;score/tools/std/Optional.hpp&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;score_lib_process_export.h&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;verdigris&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_process.html">Process</a></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span>ProcessModel;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span>QObject;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_process_state_data_interface.html">   21</a></span>&#160;<span class="keyword">class </span>SCORE_LIB_PROCESS_EXPORT <a class="code" href="class_process_state_data_interface.html">ProcessStateDataInterface</a></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    : <span class="keyword">public</span> <a class="code" href="class_identified_object.html">IdentifiedObject</a>&lt;ProcessStateDataInterface&gt;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  W_OBJECT(<a class="code" href="class_process_state_data_interface.html">ProcessStateDataInterface</a>)</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="class_process_state_data_interface.html">ProcessStateDataInterface</a>(<a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; model, QObject* parent);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="class_process_state_data_interface.html">ProcessStateDataInterface</a>();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_process_state_data_interface.html#a6680a70b488cf5282f33d0f74eb8140c">   36</a></span>&#160;  <span class="keyword">virtual</span> std::vector&lt;State::AddressAccessor&gt; <a class="code" href="class_process_state_data_interface.html#a6680a70b488cf5282f33d0f74eb8140c">matchingAddresses</a>()</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> {};</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_process_state_data_interface.html#a4efb71b7d91fe681fd2769663ed50ab2">   44</a></span>&#160;  <span class="keyword">virtual</span> State::MessageList <a class="code" href="class_process_state_data_interface.html#a4efb71b7d91fe681fd2769663ed50ab2">messages</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> {}; }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_process_state_data_interface.html#ab0ace2ff661ff029fa7e5b1a0f594b25">   52</a></span>&#160;  <span class="keyword">virtual</span> State::MessageList <a class="code" href="class_process_state_data_interface.html#ab0ace2ff661ff029fa7e5b1a0f594b25">setMessages</a>(</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keyword">const</span> State::MessageList&amp; newMessages,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_tree_node.html">Process::MessageNode</a>&amp; currentState)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> messages();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; process()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_model; }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> stateChanged() E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, stateChanged)</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> messagesChanged(const <a class="code" href="namespace_state.html">State</a>::MessageList&amp; arg_1)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, messagesChanged, arg_1)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;private:</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="namespace_process.html">Process</a>::ProcessModel&amp; m_model;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;State/Address.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;State/Message.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Process/State/MessageNode.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;score/model/IdentifiedObject.hpp&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;score/model/Identifier.hpp&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;score/tools/std/Optional.hpp&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;score_lib_process_export.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;verdigris&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_process.html">Process</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span>ProcessModel;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span>QObject;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_process_state_data_interface.html">   22</a></span>&#160;<span class="keyword">class </span>SCORE_LIB_PROCESS_EXPORT <a class="code" href="class_process_state_data_interface.html">ProcessStateDataInterface</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    : <span class="keyword">public</span> <a class="code" href="class_identified_object.html">IdentifiedObject</a>&lt;ProcessStateDataInterface&gt;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  W_OBJECT(<a class="code" href="class_process_state_data_interface.html">ProcessStateDataInterface</a>)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="class_process_state_data_interface.html">ProcessStateDataInterface</a>(<a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; model, QObject* parent);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="class_process_state_data_interface.html">ProcessStateDataInterface</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_process_state_data_interface.html#a6680a70b488cf5282f33d0f74eb8140c">   37</a></span>&#160;  <span class="keyword">virtual</span> std::vector&lt;State::AddressAccessor&gt; <a class="code" href="class_process_state_data_interface.html#a6680a70b488cf5282f33d0f74eb8140c">matchingAddresses</a>() { <span class="keywordflow">return</span> {}; }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_process_state_data_interface.html#a4efb71b7d91fe681fd2769663ed50ab2">   42</a></span>&#160;  <span class="keyword">virtual</span> State::MessageList <a class="code" href="class_process_state_data_interface.html#a4efb71b7d91fe681fd2769663ed50ab2">messages</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> {}; }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_process_state_data_interface.html#ab0ace2ff661ff029fa7e5b1a0f594b25">   50</a></span>&#160;  <span class="keyword">virtual</span> State::MessageList <a class="code" href="class_process_state_data_interface.html#ab0ace2ff661ff029fa7e5b1a0f594b25">setMessages</a>(</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keyword">const</span> State::MessageList&amp; newMessages, <span class="keyword">const</span> <a class="code" href="class_tree_node.html">Process::MessageNode</a>&amp; currentState)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> messages();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; process()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_model; }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> stateChanged() E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, stateChanged)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> messagesChanged(const <a class="code" href="namespace_state.html">State</a>::MessageList&amp; arg_1)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, messagesChanged, arg_1)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;private:</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="namespace_process.html">Process</a>::ProcessModel&amp; m_model;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1371</div></div>
+<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1326</div></div>
 <div class="ttc" id="aclass_identified_object_html"><div class="ttname"><a href="class_identified_object.html">IdentifiedObject</a></div><div class="ttdoc">The IdentifiedObject class.</div><div class="ttdef"><b>Definition:</b> IdentifiedObject.hpp:18</div></div>
 <div class="ttc" id="aclass_tree_node_html"><div class="ttname"><a href="class_tree_node.html">TreeNode&lt; StateNodeData &gt;</a></div></div>
-<div class="ttc" id="aclass_process_state_data_interface_html"><div class="ttname"><a href="class_process_state_data_interface.html">ProcessStateDataInterface</a></div><div class="ttdef"><b>Definition:</b> ProcessStateDataInterface.hpp:21</div></div>
-<div class="ttc" id="anamespace_state_html"><div class="ttname"><a href="namespace_state.html">State</a></div><div class="ttdoc">Utilities for OSSIA data structures.</div><div class="ttdef"><b>Definition:</b> DeviceInterface.hpp:31</div></div>
+<div class="ttc" id="aclass_process_state_data_interface_html"><div class="ttname"><a href="class_process_state_data_interface.html">ProcessStateDataInterface</a></div><div class="ttdef"><b>Definition:</b> ProcessStateDataInterface.hpp:22</div></div>
+<div class="ttc" id="anamespace_state_html"><div class="ttname"><a href="namespace_state.html">State</a></div><div class="ttdoc">Utilities for OSSIA data structures.</div><div class="ttdef"><b>Definition:</b> DeviceInterface.hpp:32</div></div>
 <div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Process.hpp:54</div></div>
-<div class="ttc" id="aclass_process_state_data_interface_html_a6680a70b488cf5282f33d0f74eb8140c"><div class="ttname"><a href="class_process_state_data_interface.html#a6680a70b488cf5282f33d0f74eb8140c">ProcessStateDataInterface::matchingAddresses</a></div><div class="ttdeci">virtual std::vector&lt; State::AddressAccessor &gt; matchingAddresses()</div><div class="ttdoc">matchingAddresses The addresses that correspond to this state.</div><div class="ttdef"><b>Definition:</b> ProcessStateDataInterface.hpp:36</div></div>
-<div class="ttc" id="aclass_process_state_data_interface_html_ab0ace2ff661ff029fa7e5b1a0f594b25"><div class="ttname"><a href="class_process_state_data_interface.html#ab0ace2ff661ff029fa7e5b1a0f594b25">ProcessStateDataInterface::setMessages</a></div><div class="ttdeci">virtual State::MessageList setMessages(const State::MessageList &amp;newMessages, const Process::MessageNode &amp;currentState)</div><div class="ttdoc">setMessages Request a message change on behalf of the process.</div><div class="ttdef"><b>Definition:</b> ProcessStateDataInterface.hpp:52</div></div>
-<div class="ttc" id="aclass_process_state_data_interface_html_a4efb71b7d91fe681fd2769663ed50ab2"><div class="ttname"><a href="class_process_state_data_interface.html#a4efb71b7d91fe681fd2769663ed50ab2">ProcessStateDataInterface::messages</a></div><div class="ttdeci">virtual State::MessageList messages() const</div><div class="ttdoc">messages The current messages in this point of the process.</div><div class="ttdef"><b>Definition:</b> ProcessStateDataInterface.hpp:44</div></div>
+<div class="ttc" id="aclass_process_state_data_interface_html_a6680a70b488cf5282f33d0f74eb8140c"><div class="ttname"><a href="class_process_state_data_interface.html#a6680a70b488cf5282f33d0f74eb8140c">ProcessStateDataInterface::matchingAddresses</a></div><div class="ttdeci">virtual std::vector&lt; State::AddressAccessor &gt; matchingAddresses()</div><div class="ttdoc">matchingAddresses The addresses that correspond to this state.</div><div class="ttdef"><b>Definition:</b> ProcessStateDataInterface.hpp:37</div></div>
+<div class="ttc" id="aclass_process_state_data_interface_html_ab0ace2ff661ff029fa7e5b1a0f594b25"><div class="ttname"><a href="class_process_state_data_interface.html#ab0ace2ff661ff029fa7e5b1a0f594b25">ProcessStateDataInterface::setMessages</a></div><div class="ttdeci">virtual State::MessageList setMessages(const State::MessageList &amp;newMessages, const Process::MessageNode &amp;currentState)</div><div class="ttdoc">setMessages Request a message change on behalf of the process.</div><div class="ttdef"><b>Definition:</b> ProcessStateDataInterface.hpp:50</div></div>
+<div class="ttc" id="aclass_process_state_data_interface_html_a4efb71b7d91fe681fd2769663ed50ab2"><div class="ttname"><a href="class_process_state_data_interface.html#a4efb71b7d91fe681fd2769663ed50ab2">ProcessStateDataInterface::messages</a></div><div class="ttdeci">virtual State::MessageList messages() const</div><div class="ttdoc">messages The current messages in this point of the process.</div><div class="ttdef"><b>Definition:</b> ProcessStateDataInterface.hpp:42</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

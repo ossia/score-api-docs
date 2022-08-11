@@ -100,33 +100,33 @@ $(document).ready(function(){initNavTree('_time_spin_box_8hpp_source.html',''); 
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;score/widgets/TimeMode.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;ossia-qt/time.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QWidget&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;score_lib_base_export.h&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span>QStyleOptionFrame;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore.html">score</a></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">struct </span>BarSpinBox;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">struct </span>SecondSpinBox;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">struct </span>FlicksSpinBox;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classscore_1_1_time_spin_box.html">   23</a></span>&#160;<span class="keyword">class </span>SCORE_LIB_BASE_EXPORT <a class="code" href="classscore_1_1_time_spin_box.html">TimeSpinBox</a> final : <span class="keyword">public</span> QWidget</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  W_OBJECT(<a class="code" href="classscore_1_1_time_spin_box.html">TimeSpinBox</a>)</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="classscore_1_1_time_spin_box.html">TimeSpinBox</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  ~<a class="code" href="classscore_1_1_time_spin_box.html">TimeSpinBox</a>();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> setMinimumTime(ossia::time_value t);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> setMaximumTime(ossia::time_value t);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">void</span> setTime(ossia::time_value t);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  ossia::time_value time() <span class="keyword">const</span> noexcept;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> timeChanged(ossia::time_value t)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      E_SIGNAL(SCORE_LIB_BASE_EXPORT, timeChanged, t)</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;ossia-qt/time.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QWidget&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;score_lib_base_export.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span>QStyleOptionFrame;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore.html">score</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">struct </span>BarSpinBox;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">struct </span>SecondSpinBox;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">struct </span>FlicksSpinBox;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classscore_1_1_time_spin_box.html">   24</a></span>&#160;<span class="keyword">class </span>SCORE_LIB_BASE_EXPORT <a class="code" href="classscore_1_1_time_spin_box.html">TimeSpinBox</a> final : <span class="keyword">public</span> QWidget</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  W_OBJECT(<a class="code" href="classscore_1_1_time_spin_box.html">TimeSpinBox</a>)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="classscore_1_1_time_spin_box.html">TimeSpinBox</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  ~<a class="code" href="classscore_1_1_time_spin_box.html">TimeSpinBox</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> setMinimumTime(ossia::time_value t);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">void</span> setMaximumTime(ossia::time_value t);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">void</span> setTime(ossia::time_value t);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  ossia::time_value time() <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">void</span> timeChanged(ossia::time_value t) E_SIGNAL(SCORE_LIB_BASE_EXPORT, timeChanged, t)</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">void</span> editingFinished() E_SIGNAL(SCORE_LIB_BASE_EXPORT, editingFinished)</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">void</span> wheelEvent(QWheelEvent* event) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
@@ -166,11 +166,11 @@ $(document).ready(function(){initNavTree('_time_spin_box_8hpp_source.html',''); 
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astructscore_1_1_bar_spin_box_html"><div class="ttname"><a href="structscore_1_1_bar_spin_box.html">score::BarSpinBox</a></div><div class="ttdef"><b>Definition:</b> SpinBoxes.cpp:41</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:146</div></div>
-<div class="ttc" id="astructscore_1_1_second_spin_box_html"><div class="ttname"><a href="structscore_1_1_second_spin_box.html">score::SecondSpinBox</a></div><div class="ttdef"><b>Definition:</b> SpinBoxes.cpp:214</div></div>
-<div class="ttc" id="aclassscore_1_1_time_spin_box_html"><div class="ttname"><a href="classscore_1_1_time_spin_box.html">score::TimeSpinBox</a></div><div class="ttdef"><b>Definition:</b> TimeSpinBox.hpp:23</div></div>
-<div class="ttc" id="astructscore_1_1_flicks_spin_box_html"><div class="ttname"><a href="structscore_1_1_flicks_spin_box.html">score::FlicksSpinBox</a></div><div class="ttdef"><b>Definition:</b> SpinBoxes.cpp:360</div></div>
+<div class="ttc" id="astructscore_1_1_bar_spin_box_html"><div class="ttname"><a href="structscore_1_1_bar_spin_box.html">score::BarSpinBox</a></div><div class="ttdef"><b>Definition:</b> SpinBoxes.cpp:39</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:160</div></div>
+<div class="ttc" id="astructscore_1_1_second_spin_box_html"><div class="ttname"><a href="structscore_1_1_second_spin_box.html">score::SecondSpinBox</a></div><div class="ttdef"><b>Definition:</b> SpinBoxes.cpp:209</div></div>
+<div class="ttc" id="aclassscore_1_1_time_spin_box_html"><div class="ttname"><a href="classscore_1_1_time_spin_box.html">score::TimeSpinBox</a></div><div class="ttdef"><b>Definition:</b> TimeSpinBox.hpp:24</div></div>
+<div class="ttc" id="astructscore_1_1_flicks_spin_box_html"><div class="ttname"><a href="structscore_1_1_flicks_spin_box.html">score::FlicksSpinBox</a></div><div class="ttdef"><b>Definition:</b> SpinBoxes.cpp:347</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

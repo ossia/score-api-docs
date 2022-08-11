@@ -115,39 +115,35 @@ $(document).ready(function(){initNavTree('_scenario_point_8hpp_source.html','');
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keywordtype">double</span> y;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;};</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">inline</span> <a class="code" href="struct_scenario_1_1_point.html">Point</a> ConvertToScenarioPoint(</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">const</span> QPointF&amp; point,</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    ZoomRatio zoom,</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">double</span> height) noexcept</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordflow">return</span> {TimeVal::fromPixels(point.x(), zoom), point.y() / height};</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">inline</span> QPointF ConvertFromScenarioPoint(</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">const</span> Point&amp; point,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    ZoomRatio zoom,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">double</span> height) noexcept</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordflow">return</span> {point.date.toPixels(zoom), point.y * height};</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">inline</span> QDataStream&amp; operator&lt;&lt;(QDataStream&amp; i, <span class="keyword">const</span> <a class="code" href="struct_scenario_1_1_point.html">Scenario::Point</a>&amp; sel)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  SCORE_ABORT;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">return</span> i;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">inline</span> QDataStream&amp; operator&gt;&gt;(QDataStream&amp; i, <a class="code" href="struct_scenario_1_1_point.html">Scenario::Point</a>&amp; sel)</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  SCORE_ABORT;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordflow">return</span> i;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_scenario_1_1_point_01_4.html">   45</a></span>&#160;Q_DECLARE_METATYPE(<a class="code" href="struct_scenario_1_1_point.html">Scenario::Point</a>)</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="struct_scenario_1_1_point.html">Scenario::Point</a>)</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">inline</span> <a class="code" href="struct_scenario_1_1_point.html">Point</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;ConvertToScenarioPoint(<span class="keyword">const</span> QPointF&amp; point, ZoomRatio zoom, <span class="keywordtype">double</span> height) noexcept</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordflow">return</span> {TimeVal::fromPixels(point.x(), zoom), point.y() / height};</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">inline</span> QPointF</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;ConvertFromScenarioPoint(<span class="keyword">const</span> Point&amp; point, ZoomRatio zoom, <span class="keywordtype">double</span> height) noexcept</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordflow">return</span> {point.date.toPixels(zoom), point.y * height};</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">inline</span> QDataStream&amp; operator&lt;&lt;(QDataStream&amp; i, <span class="keyword">const</span> <a class="code" href="struct_scenario_1_1_point.html">Scenario::Point</a>&amp; sel)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  SCORE_ABORT;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordflow">return</span> i;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">inline</span> QDataStream&amp; operator&gt;&gt;(QDataStream&amp; i, <a class="code" href="struct_scenario_1_1_point.html">Scenario::Point</a>&amp; sel)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  SCORE_ABORT;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordflow">return</span> i;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_scenario_1_1_point_01_4.html">   41</a></span>&#160;Q_DECLARE_METATYPE(<a class="code" href="struct_scenario_1_1_point.html">Scenario::Point</a>)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="struct_scenario_1_1_point.html">Scenario::Point</a>)</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>
-<div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition:</b> TimeValue.hpp:19</div></div>
+<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:13</div></div>
+<div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition:</b> TimeValue.hpp:20</div></div>
 <div class="ttc" id="astruct_scenario_1_1_point_html"><div class="ttname"><a href="struct_scenario_1_1_point.html">Scenario::Point</a></div><div class="ttdef"><b>Definition:</b> ScenarioPoint.hpp:12</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

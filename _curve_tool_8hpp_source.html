@@ -123,60 +123,53 @@ $(document).ready(function(){initNavTree('_curve_tool_8hpp_source.html',''); ini
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>Fun, <span class="keyword">typename</span> SegmentFun, <span class="keyword">typename</span> NothingFun&gt;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">void</span> mapTopItem(</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      QPointF scenePoint,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      <span class="keyword">const</span> QGraphicsItem* pressedItem,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      PointFun pt_fun,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      SegmentFun seg_fun,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      NothingFun nothing_fun)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">if</span> (!pressedItem)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      nothing_fun();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">switch</span> (pressedItem-&gt;type())</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keywordflow">case</span> PointView::Type:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">auto</span> pt = safe_cast&lt;const PointView*&gt;(pressedItem);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">if</span> (pt-&gt;contains(pt-&gt;mapFromScene(scenePoint)))</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;          pt_fun(pt);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keywordflow">case</span> SegmentView::Type:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">auto</span> segt = safe_cast&lt;const SegmentView*&gt;(pressedItem);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">if</span> (segt-&gt;contains(segt-&gt;mapFromScene(scenePoint)))</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;          seg_fun(segt);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      QPointF scenePoint, <span class="keyword">const</span> QGraphicsItem* pressedItem, PointFun pt_fun,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      SegmentFun seg_fun, NothingFun nothing_fun)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">if</span>(!pressedItem)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      nothing_fun();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">switch</span>(pressedItem-&gt;type())</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keywordflow">case</span> PointView::Type: {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">auto</span> pt = safe_cast&lt;const PointView*&gt;(pressedItem);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">if</span>(pt-&gt;contains(pt-&gt;mapFromScene(scenePoint)))</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;          pt_fun(pt);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <span class="keywordflow">case</span> SegmentView::Type: {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">auto</span> segt = safe_cast&lt;const SegmentView*&gt;(pressedItem);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">if</span>(segt-&gt;contains(segt-&gt;mapFromScene(scenePoint)))</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;          seg_fun(segt);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keywordflow">default</span>: {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        nothing_fun();</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        nothing_fun();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Model&gt;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> select(</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_curve_1_1_model.html">Model</a>&amp; model,</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_selection.html">Selection</a>&amp; selected,</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordtype">bool</span> multi = CommonSelectionState::multiSelection())</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="classscore_1_1_selection_dispatcher.html">score::SelectionDispatcher</a>{context().selectionStack}.select(</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        filterSelections(&amp;model, selected, multi));</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_curve_1_1_tool_palette.html">Curve::ToolPalette</a>&amp; m_parentSM;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; context() <span class="keyword">const</span> noexcept;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Model&gt;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">void</span> select(</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_curve_1_1_model.html">Model</a>&amp; model, <span class="keyword">const</span> <a class="code" href="class_selection.html">Selection</a>&amp; selected,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keywordtype">bool</span> multi = CommonSelectionState::multiSelection())</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="classscore_1_1_selection_dispatcher.html">score::SelectionDispatcher</a>{context().selectionStack}.select(</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        filterSelections(&amp;model, selected, multi));</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_curve_1_1_tool_palette.html">Curve::ToolPalette</a>&amp; m_parentSM;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; context() <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassscore_1_1_selection_dispatcher_html"><div class="ttname"><a href="classscore_1_1_selection_dispatcher.html">score::SelectionDispatcher</a></div><div class="ttdoc">The SelectionDispatcher class.</div><div class="ttdef"><b>Definition:</b> SelectionDispatcher.hpp:14</div></div>
@@ -184,7 +177,7 @@ $(document).ready(function(){initNavTree('_curve_tool_8hpp_source.html',''); ini
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
 <div class="ttc" id="aclass_graphics_scene_tool_html"><div class="ttname"><a href="class_graphics_scene_tool.html">GraphicsSceneTool</a></div><div class="ttdef"><b>Definition:</b> GraphicsSceneTool.hpp:10</div></div>
 <div class="ttc" id="anamespace_curve_html"><div class="ttname"><a href="namespace_curve.html">Curve</a></div><div class="ttdoc">Utilities and base classes for 1D curves.</div><div class="ttdef"><b>Definition:</b> FocusDispatcher.hpp:11</div></div>
-<div class="ttc" id="aclass_curve_1_1_tool_palette_html"><div class="ttname"><a href="class_curve_1_1_tool_palette.html">Curve::ToolPalette</a></div><div class="ttdef"><b>Definition:</b> CurvePalette.hpp:31</div></div>
+<div class="ttc" id="aclass_curve_1_1_tool_palette_html"><div class="ttname"><a href="class_curve_1_1_tool_palette.html">Curve::ToolPalette</a></div><div class="ttdef"><b>Definition:</b> CurvePalette.hpp:32</div></div>
 <div class="ttc" id="aclass_curve_1_1_model_html"><div class="ttname"><a href="class_curve_1_1_model.html">Curve::Model</a></div><div class="ttdef"><b>Definition:</b> CurveModel.hpp:24</div></div>
 <div class="ttc" id="aclass_curve_1_1_curve_tool_html"><div class="ttname"><a href="class_curve_1_1_curve_tool.html">Curve::CurveTool</a></div><div class="ttdef"><b>Definition:</b> CurveTool.hpp:18</div></div>
 <!-- HTML footer for doxygen 1.8.8-->

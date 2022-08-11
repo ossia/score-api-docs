@@ -99,21 +99,21 @@ $(document).ready(function(){initNavTree('_preset_helpers_8hpp_source.html','');
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Process/Process.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/algorithms.hpp&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Process/Dataflow/Port.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Process/Process.hpp&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Process/Dataflow/Port.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/algorithms.hpp&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_process.html">Process</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T = Process::ControlInlet&gt;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T = Process::ControlInlet&gt;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keywordtype">void</span> saveFixedControls(<a class="code" href="class_j_s_o_n_reader.html">JSONReader</a>&amp; r, <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; proc)</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  r.stream.StartArray();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; inlet : proc.inlets())</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; inlet : proc.inlets())</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">auto</span> ctrl = qobject_cast&lt;Process::ControlInlet*&gt;(inlet))</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">if</span>(<span class="keyword">auto</span> ctrl = qobject_cast&lt;Process::ControlInlet*&gt;(inlet))</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      r.stream.StartArray();</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      r.stream.Int(ctrl-&gt;id().val());</div>
@@ -124,61 +124,62 @@ $(document).ready(function(){initNavTree('_preset_helpers_8hpp_source.html','');
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  r.stream.EndArray();</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T = Process::ControlInlet&gt;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">void</span> loadFixedControls(<span class="keyword">const</span> rapidjson::Document::ConstArray&amp; ctrls, <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; proc)</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; arr : ctrls)</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; <span class="keywordtype">id</span> = arr[0].GetInt();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    ossia::value val = <a class="code" href="struct_json_value.html">JsonValue</a>{arr[1]}.to&lt;ossia::value&gt;();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">auto</span> it = ossia::find_if(</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        proc.inlets(), [&amp;](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; inl) { return inl-&gt;id().val() == id; });</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span> (it != proc.inlets().end())</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <a class="code" href="class_process_1_1_inlet.html">Process::Inlet</a>&amp; inlet = **it;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">auto</span> ctrl = qobject_cast&lt;T*&gt;(&amp;inlet))</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        ctrl-&gt;setValue(val);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<a class="code" href="struct_process_1_1_preset.html">Process::Preset</a> saveScriptProcessPreset(<span class="keyword">const</span> T&amp; process, <span class="keyword">const</span> QString&amp; data)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="struct_process_1_1_preset.html">Process::Preset</a> p;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  p.name = process.metadata().getName();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  p.key.key = <a class="code" href="struct_metadata.html">Metadata&lt;ConcreteKey_k, T&gt;::get</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  p.key.effect = data;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="class_j_s_o_n_reader.html">JSONReader</a> r;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  Process::saveFixedControls(r, process);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  p.data = r.toByteArray();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordflow">return</span> p;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> ScriptProperty, <span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">void</span> loadScriptProcessPreset(T&amp; process, <span class="keyword">const</span> <a class="code" href="struct_process_1_1_preset.html">Process::Preset</a>&amp; preset)</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">const</span> rapidjson::Document doc = readJson(preset.data);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordflow">if</span>(!doc.IsArray())</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  Process::loadFixedControls(doc.GetArray(), process);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T = Process::ControlInlet&gt;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">void</span> loadFixedControls(</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">const</span> rapidjson::Document::ConstArray&amp; ctrls, <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; proc)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; arr : ctrls)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; <span class="keywordtype">id</span> = arr[0].GetInt();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    ossia::value val = <a class="code" href="struct_json_value.html">JsonValue</a>{arr[1]}.to&lt;ossia::value&gt;();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">auto</span> it = ossia::find_if(</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        proc.inlets(), [&amp;](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; inl) { return inl-&gt;id().val() == id; });</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">if</span>(it != proc.inlets().end())</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <a class="code" href="class_process_1_1_inlet.html">Process::Inlet</a>&amp; inlet = **it;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">auto</span> ctrl = qobject_cast&lt;T*&gt;(&amp;inlet))</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        ctrl-&gt;setValue(val);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<a class="code" href="struct_process_1_1_preset.html">Process::Preset</a> saveScriptProcessPreset(<span class="keyword">const</span> T&amp; process, <span class="keyword">const</span> QString&amp; data)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="struct_process_1_1_preset.html">Process::Preset</a> p;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  p.name = process.metadata().getName();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  p.key.key = <a class="code" href="struct_metadata.html">Metadata&lt;ConcreteKey_k, T&gt;::get</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  p.key.effect = data;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="class_j_s_o_n_reader.html">JSONReader</a> r;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  Process::saveFixedControls(r, process);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  p.data = r.toByteArray();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">return</span> p;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ScriptProperty, <span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">void</span> loadScriptProcessPreset(T&amp; process, <span class="keyword">const</span> <a class="code" href="struct_process_1_1_preset.html">Process::Preset</a>&amp; preset)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">const</span> rapidjson::Document doc = readJson(preset.data);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordflow">if</span>(!doc.IsArray())</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  Process::loadFixedControls(doc.GetArray(), process);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1371</div></div>
-<div class="ttc" id="astruct_json_value_html"><div class="ttname"><a href="struct_json_value.html">JsonValue</a></div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:383</div></div>
+<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1326</div></div>
+<div class="ttc" id="astruct_json_value_html"><div class="ttname"><a href="struct_json_value.html">JsonValue</a></div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:375</div></div>
 <div class="ttc" id="aclass_j_s_o_n_reader_html"><div class="ttname"><a href="class_j_s_o_n_reader.html">JSONReader</a></div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:51</div></div>
 <div class="ttc" id="astruct_metadata_html"><div class="ttname"><a href="struct_metadata.html">Metadata</a></div><div class="ttdoc">Static metadata implementation.</div><div class="ttdef"><b>Definition:</b> lib/score/tools/Metadata.hpp:36</div></div>
 <div class="ttc" id="aclass_j_s_o_n_reader_html_a97ad23366c9ed5dc863982deb9de199c"><div class="ttname"><a href="class_j_s_o_n_reader.html#a97ad23366c9ed5dc863982deb9de199c">JSONReader::readFrom</a></div><div class="ttdeci">void readFrom(const score::Entity&lt; T &gt; &amp;obj)</div><div class="ttdef"><b>Definition:</b> EntitySerialization.hpp:7</div></div>
 <div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Process.hpp:54</div></div>
-<div class="ttc" id="astruct_process_1_1_preset_html"><div class="ttname"><a href="struct_process_1_1_preset.html">Process::Preset</a></div><div class="ttdef"><b>Definition:</b> Preset.hpp:35</div></div>
-<div class="ttc" id="aclass_process_1_1_inlet_html"><div class="ttname"><a href="class_process_1_1_inlet.html">Process::Inlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:194</div></div>
+<div class="ttc" id="astruct_process_1_1_preset_html"><div class="ttname"><a href="struct_process_1_1_preset.html">Process::Preset</a></div><div class="ttdef"><b>Definition:</b> Preset.hpp:31</div></div>
+<div class="ttc" id="aclass_process_1_1_inlet_html"><div class="ttname"><a href="class_process_1_1_inlet.html">Process::Inlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:177</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

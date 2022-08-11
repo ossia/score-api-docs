@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('_single_ongoing_command_dispatcher_8hp
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">void</span> submit(Args&amp;&amp;... args)</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">if</span> (!m_cmd)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">if</span>(!m_cmd)</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      stack().disableActions();</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      m_cmd = std::make_unique&lt;TheCommand&gt;(std::forward&lt;Args&gt;(args)...);</div>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('_single_ongoing_command_dispatcher_8hp
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">void</span> commit()</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">if</span> (m_cmd)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">if</span>(m_cmd)</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      SendStrategy::Quiet::send(stack(), m_cmd.release());</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      stack().enableActions();</div>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('_single_ongoing_command_dispatcher_8hp
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> rollback()</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">if</span> (m_cmd)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">if</span>(m_cmd)</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      m_cmd-&gt;undo(stack().context());</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      stack().enableActions();</div>

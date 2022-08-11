@@ -100,38 +100,39 @@ $(document).ready(function(){initNavTree('score-plugin-vst3_2_vst3_2_executor_8h
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Process/Execution/ProcessComponent.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Vst3/EffectModel.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;ossia/dataflow/node_process.hpp&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;verdigris&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>vst3</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classvst3_1_1_executor.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvst3_1_1_executor.html">Executor</a> final</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    : <span class="keyword">public</span> <a class="code" href="struct_execution_1_1_process_component___t.html">Execution::ProcessComponent_T</a>&lt;vst3::Model, ossia::node_process&gt;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  W_OBJECT(<a class="code" href="classvst3_1_1_executor.html">Executor</a>)</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  COMPONENT_METADATA(<span class="stringliteral">&quot;a9f2c738-d22b-4654-9f58-25f25f099d79&quot;</span>)</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> is_unique = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="classvst3_1_1_executor.html">Executor</a>(<a class="code" href="classvst3_1_1_model.html">vst3::Model</a>&amp; proc, <span class="keyword">const</span> <a class="code" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx, QObject* parent);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node_T&gt;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordtype">void</span> setupNode(Node_T&amp; node);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">using</span> <a class="code" href="class_execution_1_1_process_component_factory___t.html">ExecutorFactory</a> = <a class="code" href="class_execution_1_1_process_component_factory___t.html">Execution::ProcessComponentFactory_T&lt;Executor&gt;</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Vst3/EffectModel.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;ossia/dataflow/node_process.hpp&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;verdigris&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>vst3</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classvst3_1_1_executor.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvst3_1_1_executor.html">Executor</a> final</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    : <span class="keyword">public</span> <a class="code" href="struct_execution_1_1_process_component___t.html">Execution::ProcessComponent_T</a>&lt;vst3::Model, ossia::node_process&gt;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  W_OBJECT(<a class="code" href="classvst3_1_1_executor.html">Executor</a>)</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  COMPONENT_METADATA(<span class="stringliteral">&quot;a9f2c738-d22b-4654-9f58-25f25f099d79&quot;</span>)</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> is_unique = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <a class="code" href="classvst3_1_1_executor.html">Executor</a>(<a class="code" href="classvst3_1_1_model.html">vst3::Model</a>&amp; proc, <span class="keyword">const</span> <a class="code" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx, QObject* parent);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node_T&gt;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">void</span> setupNode(Node_T&amp; node);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">using</span> <a class="code" href="class_execution_1_1_process_component_factory___t.html">ExecutorFactory</a> = <a class="code" href="class_execution_1_1_process_component_factory___t.html">Execution::ProcessComponentFactory_T&lt;Executor&gt;</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_execution_1_1_process_component_factory___t_html"><div class="ttname"><a href="class_execution_1_1_process_component_factory___t.html">Execution::ProcessComponentFactory_T</a></div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:127</div></div>
-<div class="ttc" id="astruct_execution_1_1_context_html"><div class="ttname"><a href="struct_execution_1_1_context.html">Execution::Context</a></div><div class="ttdef"><b>Definition:</b> ExecutionContext.hpp:97</div></div>
-<div class="ttc" id="aclassvst3_1_1_executor_html"><div class="ttname"><a href="classvst3_1_1_executor.html">vst3::Executor</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst3/Vst3/Executor.hpp:11</div></div>
-<div class="ttc" id="astruct_execution_1_1_process_component___t_html"><div class="ttname"><a href="struct_execution_1_1_process_component___t.html">Execution::ProcessComponent_T</a></div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:96</div></div>
-<div class="ttc" id="aclassvst3_1_1_model_html"><div class="ttname"><a href="classvst3_1_1_model.html">vst3::Model</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst3/Vst3/EffectModel.hpp:50</div></div>
+<div class="ttc" id="aclass_execution_1_1_process_component_factory___t_html"><div class="ttname"><a href="class_execution_1_1_process_component_factory___t.html">Execution::ProcessComponentFactory_T</a></div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:115</div></div>
+<div class="ttc" id="astruct_execution_1_1_context_html"><div class="ttname"><a href="struct_execution_1_1_context.html">Execution::Context</a></div><div class="ttdef"><b>Definition:</b> ExecutionContext.hpp:92</div></div>
+<div class="ttc" id="aclassvst3_1_1_executor_html"><div class="ttname"><a href="classvst3_1_1_executor.html">vst3::Executor</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst3/Vst3/Executor.hpp:12</div></div>
+<div class="ttc" id="astruct_execution_1_1_process_component___t_html"><div class="ttname"><a href="struct_execution_1_1_process_component___t.html">Execution::ProcessComponent_T</a></div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:86</div></div>
+<div class="ttc" id="aclassvst3_1_1_model_html"><div class="ttname"><a href="classvst3_1_1_model.html">vst3::Model</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst3/Vst3/EffectModel.hpp:39</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

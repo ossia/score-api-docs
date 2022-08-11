@@ -101,38 +101,35 @@ $(document).ready(function(){initNavTree('_i_o_type_8hpp_source.html',''); initR
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;score/tools/std/Optional.hpp&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;ossia/network/common/parameter_properties.hpp&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/enum_map.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/enum_map.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;ossia/network/common/parameter_properties.hpp&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;score_lib_device_export.h&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span>QString;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_device.html">Device</a></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;SCORE_LIB_DEVICE_EXPORT</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">const</span> ossia::enum_map&lt;ossia::access_mode, QString, 3&gt;&amp;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<a class="code" href="namespace_device.html#a90b6372360427200d5581942af7a7426">AccessModeText</a>();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;SCORE_LIB_DEVICE_EXPORT</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">const</span> ossia::enum_map&lt;ossia::access_mode, QString, 3&gt;&amp;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<a class="code" href="namespace_device.html#ae65099905f3608fe0ceba75eee07de0a">AccessModePrettyText</a>();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> hasInput(<span class="keyword">const</span> std::optional&lt;ossia::access_mode&gt;&amp; t)</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordflow">return</span> t &amp;&amp; (*t == ossia::access_mode::BI || *t == ossia::access_mode::GET);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> hasOutput(<span class="keyword">const</span> std::optional&lt;ossia::access_mode&gt;&amp; t)</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordflow">return</span> t &amp;&amp; (*t == ossia::access_mode::BI || *t == ossia::access_mode::SET);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span>QString;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_device.html">Device</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;SCORE_LIB_DEVICE_EXPORT</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">const</span> ossia::enum_map&lt;ossia::access_mode, QString, 3&gt;&amp; <a class="code" href="namespace_device.html#a90b6372360427200d5581942af7a7426">AccessModeText</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;SCORE_LIB_DEVICE_EXPORT</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">const</span> ossia::enum_map&lt;ossia::access_mode, QString, 3&gt;&amp; <a class="code" href="namespace_device.html#ae65099905f3608fe0ceba75eee07de0a">AccessModePrettyText</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> hasInput(<span class="keyword">const</span> std::optional&lt;ossia::access_mode&gt;&amp; t)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordflow">return</span> t &amp;&amp; (*t == ossia::access_mode::BI || *t == ossia::access_mode::GET);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> hasOutput(<span class="keyword">const</span> std::optional&lt;ossia::access_mode&gt;&amp; t)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordflow">return</span> t &amp;&amp; (*t == ossia::access_mode::BI || *t == ossia::access_mode::SET);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_device_html_a90b6372360427200d5581942af7a7426"><div class="ttname"><a href="namespace_device.html#a90b6372360427200d5581942af7a7426">Device::AccessModeText</a></div><div class="ttdeci">const ossia::enum_map&lt; ossia::access_mode, QString, 3 &gt; &amp; AccessModeText()</div><div class="ttdoc">To save / reload in JSON.</div><div class="ttdef"><b>Definition:</b> IOType.cpp:11</div></div>
-<div class="ttc" id="anamespace_device_html_ae65099905f3608fe0ceba75eee07de0a"><div class="ttname"><a href="namespace_device.html#ae65099905f3608fe0ceba75eee07de0a">Device::AccessModePrettyText</a></div><div class="ttdeci">const ossia::enum_map&lt; ossia::access_mode, QString, 3 &gt; &amp; AccessModePrettyText()</div><div class="ttdoc">To show to the user.</div><div class="ttdef"><b>Definition:</b> IOType.cpp:19</div></div>
-<div class="ttc" id="anamespace_device_html"><div class="ttname"><a href="namespace_device.html">Device</a></div><div class="ttdoc">Manipulation of Devices from Qt.</div><div class="ttdef"><b>Definition:</b> AddressSettings.cpp:12</div></div>
+<div class="ttc" id="anamespace_device_html_a90b6372360427200d5581942af7a7426"><div class="ttname"><a href="namespace_device.html#a90b6372360427200d5581942af7a7426">Device::AccessModeText</a></div><div class="ttdeci">const ossia::enum_map&lt; ossia::access_mode, QString, 3 &gt; &amp; AccessModeText()</div><div class="ttdoc">To save / reload in JSON.</div><div class="ttdef"><b>Definition:</b> IOType.cpp:12</div></div>
+<div class="ttc" id="anamespace_device_html_ae65099905f3608fe0ceba75eee07de0a"><div class="ttname"><a href="namespace_device.html#ae65099905f3608fe0ceba75eee07de0a">Device::AccessModePrettyText</a></div><div class="ttdeci">const ossia::enum_map&lt; ossia::access_mode, QString, 3 &gt; &amp; AccessModePrettyText()</div><div class="ttdoc">To show to the user.</div><div class="ttdef"><b>Definition:</b> IOType.cpp:20</div></div>
+<div class="ttc" id="anamespace_device_html"><div class="ttname"><a href="namespace_device.html">Device</a></div><div class="ttdoc">Manipulation of Devices from Qt.</div><div class="ttdef"><b>Definition:</b> AddressSettings.cpp:13</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

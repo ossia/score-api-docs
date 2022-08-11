@@ -125,30 +125,29 @@ $(document).ready(function(){initNavTree('score-plugin-audio_2_audio_2_settings_
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">void</span> setDriver(AudioFactory::ConcreteKey k);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordtype">void</span> setDriverWidget(QWidget* w);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">void</span> DriverChanged(AudioFactory::ConcreteKey arg_1)</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      W_SIGNAL(DriverChanged, arg_1);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> setBufferSize(<span class="keywordtype">int</span>);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">void</span> BufferSizeChanged(<span class="keywordtype">int</span> arg) W_SIGNAL(BufferSizeChanged, arg)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">void</span> setRate(<span class="keywordtype">int</span>);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> RateChanged(<span class="keywordtype">int</span> arg) W_SIGNAL(RateChanged, arg)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  SETTINGS_UI_TOGGLE_HPP(AutoStereo)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  QWidget* getWidget() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="classscore_1_1_form_widget.html">score::FormWidget</a>* m_widg{};</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  QWidget* m_sw{};</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  QComboBox* m_Driver{};</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  QWidget* m_curDriver{};</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">void</span> DriverChanged(AudioFactory::ConcreteKey arg_1) W_SIGNAL(DriverChanged, arg_1);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> setBufferSize(<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> BufferSizeChanged(<span class="keywordtype">int</span> arg) W_SIGNAL(BufferSizeChanged, arg)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">void</span> setRate(<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">void</span> RateChanged(<span class="keywordtype">int</span> arg) W_SIGNAL(RateChanged, arg)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  SETTINGS_UI_TOGGLE_HPP(AutoStereo)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  QWidget* getWidget() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="classscore_1_1_form_widget.html">score::FormWidget</a>* m_widg{};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  QWidget* m_sw{};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  QComboBox* m_Driver{};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  QWidget* m_curDriver{};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_audio_1_1_settings_1_1_view_html"><div class="ttname"><a href="class_audio_1_1_settings_1_1_view.html">Audio::Settings::View</a></div><div class="ttdef"><b>Definition:</b> score-plugin-audio/Audio/Settings/View.hpp:18</div></div>
 <div class="ttc" id="aclassscore_1_1_form_widget_html"><div class="ttname"><a href="classscore_1_1_form_widget.html">score::FormWidget</a></div><div class="ttdef"><b>Definition:</b> FormWidget.hpp:10</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:146</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:160</div></div>
 <div class="ttc" id="aclassscore_1_1_settings_delegate_view_html"><div class="ttname"><a href="classscore_1_1_settings_delegate_view.html">score::SettingsDelegateView</a></div><div class="ttdef"><b>Definition:</b> ProjectSettingsFactory.hpp:14</div></div>
 <div class="ttc" id="aclass_audio_1_1_audio_factory_html"><div class="ttname"><a href="class_audio_1_1_audio_factory.html">Audio::AudioFactory</a></div><div class="ttdef"><b>Definition:</b> AudioInterface.hpp:27</div></div>
 <!-- HTML footer for doxygen 1.8.8-->

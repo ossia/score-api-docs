@@ -95,6 +95,8 @@ $(document).ready(function(){initNavTree('class_scenario_1_1_command_1_1_move_ev
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_scenario_1_1_command_1_1_move_event_factory_interface-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Scenario::Command::MoveEventFactoryInterface Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -111,14 +113,76 @@ Inheritance diagram for Scenario::Command::MoveEventFactoryInterface:</div>
   </map>
 </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a4e199c922833770ddc77a5d4bd1c88f0"><td class="memItemLeft" align="right" valign="top"><a id="a4e199c922833770ddc77a5d4bd1c88f0"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Strategy</b> { <b>CREATION</b>, 
+<b>MOVE</b>
+ }</td></tr>
+<tr class="separator:a4e199c922833770ddc77a5d4bd1c88f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a1e6a619055f7cfc40abf98d97dc704e1"><td class="memItemLeft" align="right" valign="top"><a id="a1e6a619055f7cfc40abf98d97dc704e1"></a>
+virtual std::unique_ptr&lt; <a class="el" href="class_scenario_1_1_command_1_1_serializable_move_event.html">SerializableMoveEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>make</b> (const <a class="el" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a> &amp;, <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="class_scenario_1_1_event_model.html">EventModel</a> &gt; eventId, <a class="el" href="struct_time_val.html">TimeVal</a> newDate, ExpandMode mode, LockMode lm)=0</td></tr>
+<tr class="separator:a1e6a619055f7cfc40abf98d97dc704e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4698a97bb0bc8ed1eb478e66e2257cf2"><td class="memItemLeft" align="right" valign="top"><a id="a4698a97bb0bc8ed1eb478e66e2257cf2"></a>
+virtual std::unique_ptr&lt; <a class="el" href="class_scenario_1_1_command_1_1_serializable_move_event.html">SerializableMoveEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>make</b> (LockMode)=0</td></tr>
+<tr class="separator:a4698a97bb0bc8ed1eb478e66e2257cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9456b14173d2375e15e504854b202b1d"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scenario_1_1_command_1_1_move_event_factory_interface.html#a9456b14173d2375e15e504854b202b1d">priority</a> (const <a class="el" href="structscore_1_1_application_context.html">score::ApplicationContext</a> &amp;ctx, Strategy strategy) const =0</td></tr>
+<tr class="memdesc:a9456b14173d2375e15e504854b202b1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">priority the highest priority will be default move behavior for the indicated strategy Basically, we want to know how well the policy is suited for the desired strategy.  <a href="class_scenario_1_1_command_1_1_move_event_factory_interface.html#a9456b14173d2375e15e504854b202b1d">More...</a><br /></td></tr>
+<tr class="separator:a9456b14173d2375e15e504854b202b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1_interface_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1_interface_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1_interface_base.html">score::InterfaceBase</a></td></tr>
 <tr class="memitem:a993744914ec2a9cdf05f07f6f1643d55 inherit pub_methods_classscore_1_1_interface_base"><td class="memItemLeft" align="right" valign="top"><a id="a993744914ec2a9cdf05f07f6f1643d55"></a>
 virtual <a class="el" href="class_uuid_key.html">InterfaceKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_interface_base.html#a993744914ec2a9cdf05f07f6f1643d55">interfaceKey</a> () const noexcept=0</td></tr>
 <tr class="memdesc:a993744914ec2a9cdf05f07f6f1643d55 inherit pub_methods_classscore_1_1_interface_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifies an interface uniquely. <br /></td></tr>
 <tr class="separator:a993744914ec2a9cdf05f07f6f1643d55 inherit pub_methods_classscore_1_1_interface_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9456b14173d2375e15e504854b202b1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9456b14173d2375e15e504854b202b1d">&#9670;&nbsp;</a></span>priority()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int Scenario::Command::MoveEventFactoryInterface::priority </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1_application_context.html">score::ApplicationContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Strategy&#160;</td>
+          <td class="paramname"><em>strategy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>priority the highest priority will be default move behavior for the indicated strategy Basically, we want to know how well the policy is suited for the desired strategy. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strategy</td><td>the strategy for which we need a displacement policy; </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_move_event_factory_interface_8hpp_source.html">MoveEventFactoryInterface.hpp</a></li>
 <li>MoveEventFactoryInterface.cpp</li>

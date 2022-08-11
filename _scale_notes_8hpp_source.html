@@ -114,51 +114,46 @@ $(document).ready(function(){initNavTree('_scale_notes_8hpp_source.html',''); in
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  SCORE_COMMAND_DECL(Midi::CommandFactoryName(), <a class="code" href="class_midi_1_1_scale_notes.html">ScaleNotes</a>, <span class="stringliteral">&quot;Scale notes&quot;</span>)</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <a class="code" href="class_midi_1_1_scale_notes.html">ScaleNotes</a>(</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_midi_1_1_process_model.html">ProcessModel</a>&amp; model,</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      <span class="keyword">const</span> std::vector&lt;<a class="code" href="classid__base__t.html">Id&lt;Note&gt;</a>&gt;&amp; to_move,</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      <span class="keywordtype">double</span> delta);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordtype">void</span> undo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordtype">void</span> redo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">void</span> serializeImpl(<a class="code" href="struct_data_stream_input.html">DataStreamInput</a>&amp; s) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">void</span> deserializeImpl(<a class="code" href="struct_data_stream_output.html">DataStreamOutput</a>&amp; s) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="class_path.html">Path&lt;ProcessModel&gt;</a> m_model;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  std::vector&lt;Id&lt;Note&gt;&gt; m_toScale;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">double</span> m_delta{};</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">// sclaes the whole process</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_midi_1_1_rescale_midi.html">   35</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_midi_1_1_rescale_midi.html">RescaleMidi</a> final : <span class="keyword">public</span> <a class="code" href="classscore_1_1_command.html">score::Command</a></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  SCORE_COMMAND_DECL(Midi::CommandFactoryName(), <a class="code" href="class_midi_1_1_rescale_midi.html">RescaleMidi</a>, <span class="stringliteral">&quot;Rescale midi&quot;</span>)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="class_midi_1_1_rescale_midi.html">RescaleMidi</a>(<span class="keyword">const</span> <a class="code" href="class_midi_1_1_process_model.html">ProcessModel</a>&amp; model, <span class="keywordtype">double</span> delta);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> undo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">void</span> redo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> serializeImpl(<a class="code" href="struct_data_stream_input.html">DataStreamInput</a>&amp; s) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> deserializeImpl(<a class="code" href="struct_data_stream_output.html">DataStreamOutput</a>&amp; s) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="class_path.html">Path&lt;ProcessModel&gt;</a> m_model;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  std::vector&lt;std::pair&lt;Id&lt;Note&gt;, <a class="code" href="struct_midi_1_1_note_data.html">NoteData</a>&gt;&gt; m_old;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">double</span> m_delta{};</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_midi_1_1_rescale_all_midi.html">   53</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_midi_1_1_rescale_all_midi.html">RescaleAllMidi</a> final : <span class="keyword">public</span> <a class="code" href="classscore_1_1_aggregate_command.html">score::AggregateCommand</a></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  SCORE_COMMAND_DECL(</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      Midi::CommandFactoryName(),</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <a class="code" href="class_midi_1_1_rescale_all_midi.html">RescaleAllMidi</a>,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="stringliteral">&quot;Rescale all midi&quot;</span>)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_midi_1_1_process_model.html">ProcessModel</a>&amp; model, <span class="keyword">const</span> std::vector&lt;<a class="code" href="classid__base__t.html">Id&lt;Note&gt;</a>&gt;&amp; to_move, <span class="keywordtype">double</span> delta);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordtype">void</span> undo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">void</span> redo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordtype">void</span> serializeImpl(<a class="code" href="struct_data_stream_input.html">DataStreamInput</a>&amp; s) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordtype">void</span> deserializeImpl(<a class="code" href="struct_data_stream_output.html">DataStreamOutput</a>&amp; s) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="class_path.html">Path&lt;ProcessModel&gt;</a> m_model;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  std::vector&lt;Id&lt;Note&gt;&gt; m_toScale;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">double</span> m_delta{};</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">// sclaes the whole process</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_midi_1_1_rescale_midi.html">   33</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_midi_1_1_rescale_midi.html">RescaleMidi</a> final : <span class="keyword">public</span> <a class="code" href="classscore_1_1_command.html">score::Command</a></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  SCORE_COMMAND_DECL(Midi::CommandFactoryName(), <a class="code" href="class_midi_1_1_rescale_midi.html">RescaleMidi</a>, <span class="stringliteral">&quot;Rescale midi&quot;</span>)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="class_midi_1_1_rescale_midi.html">RescaleMidi</a>(<span class="keyword">const</span> <a class="code" href="class_midi_1_1_process_model.html">ProcessModel</a>&amp; model, <span class="keywordtype">double</span> delta);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span> undo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">void</span> redo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> serializeImpl(<a class="code" href="struct_data_stream_input.html">DataStreamInput</a>&amp; s) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> deserializeImpl(<a class="code" href="struct_data_stream_output.html">DataStreamOutput</a>&amp; s) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="class_path.html">Path&lt;ProcessModel&gt;</a> m_model;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  std::vector&lt;std::pair&lt;Id&lt;Note&gt;, <a class="code" href="struct_midi_1_1_note_data.html">NoteData</a>&gt;&gt; m_old;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">double</span> m_delta{};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_midi_1_1_rescale_all_midi.html">   51</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_midi_1_1_rescale_all_midi.html">RescaleAllMidi</a> final : <span class="keyword">public</span> <a class="code" href="classscore_1_1_aggregate_command.html">score::AggregateCommand</a></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  SCORE_COMMAND_DECL(Midi::CommandFactoryName(), <a class="code" href="class_midi_1_1_rescale_all_midi.html">RescaleAllMidi</a>, <span class="stringliteral">&quot;Rescale all midi&quot;</span>)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassscore_1_1_aggregate_command_html"><div class="ttname"><a href="classscore_1_1_aggregate_command.html">score::AggregateCommand</a></div><div class="ttdoc">Allows for grouping of multiple commands in a single one.</div><div class="ttdef"><b>Definition:</b> AggregateCommand.hpp:14</div></div>
@@ -166,13 +161,13 @@ $(document).ready(function(){initNavTree('_scale_notes_8hpp_source.html',''); in
 <div class="ttc" id="aclassscore_1_1_command_html"><div class="ttname"><a href="classscore_1_1_command.html">score::Command</a></div><div class="ttdoc">The Command class.</div><div class="ttdef"><b>Definition:</b> Command.hpp:33</div></div>
 <div class="ttc" id="astruct_midi_1_1_note_data_html"><div class="ttname"><a href="struct_midi_1_1_note_data.html">Midi::NoteData</a></div><div class="ttdef"><b>Definition:</b> MidiNote.hpp:10</div></div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition:</b> Identifier.hpp:56</div></div>
-<div class="ttc" id="astruct_data_stream_output_html"><div class="ttname"><a href="struct_data_stream_output.html">DataStreamOutput</a></div><div class="ttdef"><b>Definition:</b> DataStreamHelpers.hpp:137</div></div>
-<div class="ttc" id="aclass_midi_1_1_process_model_html"><div class="ttname"><a href="class_midi_1_1_process_model.html">Midi::ProcessModel</a></div><div class="ttdef"><b>Definition:</b> MidiProcess.hpp:13</div></div>
-<div class="ttc" id="aclass_midi_1_1_rescale_midi_html"><div class="ttname"><a href="class_midi_1_1_rescale_midi.html">Midi::RescaleMidi</a></div><div class="ttdef"><b>Definition:</b> ScaleNotes.hpp:35</div></div>
+<div class="ttc" id="astruct_data_stream_output_html"><div class="ttname"><a href="struct_data_stream_output.html">DataStreamOutput</a></div><div class="ttdef"><b>Definition:</b> DataStreamHelpers.hpp:134</div></div>
+<div class="ttc" id="aclass_midi_1_1_process_model_html"><div class="ttname"><a href="class_midi_1_1_process_model.html">Midi::ProcessModel</a></div><div class="ttdef"><b>Definition:</b> MidiProcess.hpp:14</div></div>
+<div class="ttc" id="aclass_midi_1_1_rescale_midi_html"><div class="ttname"><a href="class_midi_1_1_rescale_midi.html">Midi::RescaleMidi</a></div><div class="ttdef"><b>Definition:</b> ScaleNotes.hpp:33</div></div>
 <div class="ttc" id="aclass_path_html"><div class="ttname"><a href="class_path.html">Path&lt; ProcessModel &gt;</a></div></div>
-<div class="ttc" id="aclass_midi_1_1_rescale_all_midi_html"><div class="ttname"><a href="class_midi_1_1_rescale_all_midi.html">Midi::RescaleAllMidi</a></div><div class="ttdef"><b>Definition:</b> ScaleNotes.hpp:53</div></div>
+<div class="ttc" id="aclass_midi_1_1_rescale_all_midi_html"><div class="ttname"><a href="class_midi_1_1_rescale_all_midi.html">Midi::RescaleAllMidi</a></div><div class="ttdef"><b>Definition:</b> ScaleNotes.hpp:51</div></div>
 <div class="ttc" id="aclass_midi_1_1_scale_notes_html"><div class="ttname"><a href="class_midi_1_1_scale_notes.html">Midi::ScaleNotes</a></div><div class="ttdef"><b>Definition:</b> ScaleNotes.hpp:12</div></div>
-<div class="ttc" id="astruct_data_stream_input_html"><div class="ttname"><a href="struct_data_stream_input.html">DataStreamInput</a></div><div class="ttdef"><b>Definition:</b> DataStreamHelpers.hpp:133</div></div>
+<div class="ttc" id="astruct_data_stream_input_html"><div class="ttname"><a href="struct_data_stream_input.html">DataStreamInput</a></div><div class="ttdef"><b>Definition:</b> DataStreamHelpers.hpp:130</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

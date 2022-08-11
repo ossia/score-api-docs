@@ -126,106 +126,93 @@ $(document).ready(function(){initNavTree('score-lib-process_2_process_2_process_
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">struct </span>Preset;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">struct </span>Context;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_process_1_1_process_model_factory.html">   34</a></span>&#160;<span class="keyword">class </span>SCORE_LIB_PROCESS_EXPORT <a class="code" href="class_process_1_1_process_model_factory.html">ProcessModelFactory</a></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classscore_1_1_interface_base.html">score::InterfaceBase</a></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  SCORE_INTERFACE(<a class="code" href="class_process_1_1_process_model.html">ProcessModel</a>, <span class="stringliteral">&quot;507ae654-f3b8-4aae-afc3-7ab8e1a3a86f&quot;</span>)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  ~<a class="code" href="class_process_1_1_process_model_factory.html">ProcessModelFactory</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">virtual</span> QString prettyName() <span class="keyword">const</span> noexcept = 0;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">virtual</span> QString category() <span class="keyword">const</span> noexcept = 0;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">ProcessFlags</a> flags() <span class="keyword">const</span> noexcept = 0;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="struct_process_1_1_descriptor.html">Descriptor</a> descriptor(QString) <span class="keyword">const</span> noexcept = 0;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">virtual</span> QString customConstructionData() <span class="keyword">const</span> noexcept;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>* make(</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_time_val.html">TimeVal</a>&amp; duration,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keyword">const</span> QString&amp; data,</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;ProcessModel&gt;</a>&amp; <span class="keywordtype">id</span>,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      QObject* parent)</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_process_1_1_process_model_factory.html">   34</a></span>&#160;<span class="keyword">class </span>SCORE_LIB_PROCESS_EXPORT <a class="code" href="class_process_1_1_process_model_factory.html">ProcessModelFactory</a> : <span class="keyword">public</span> <a class="code" href="classscore_1_1_interface_base.html">score::InterfaceBase</a></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  SCORE_INTERFACE(<a class="code" href="class_process_1_1_process_model.html">ProcessModel</a>, <span class="stringliteral">&quot;507ae654-f3b8-4aae-afc3-7ab8e1a3a86f&quot;</span>)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  ~<a class="code" href="class_process_1_1_process_model_factory.html">ProcessModelFactory</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">virtual</span> QString prettyName() <span class="keyword">const</span> noexcept = 0;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">virtual</span> QString category() <span class="keyword">const</span> noexcept = 0;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">ProcessFlags</a> flags() <span class="keyword">const</span> noexcept = 0;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="struct_process_1_1_descriptor.html">Descriptor</a> descriptor(QString) <span class="keyword">const</span> noexcept = 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">virtual</span> QString customConstructionData() <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>* make(</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_time_val.html">TimeVal</a>&amp; duration, <span class="keyword">const</span> QString&amp; data, <span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;ProcessModel&gt;</a>&amp; <span class="keywordtype">id</span>,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx, QObject* parent)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      = 0;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>*</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  load(<span class="keyword">const</span> <a class="code" href="struct_visitor_variant.html">VisitorVariant</a>&amp;, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx, QObject* parent)</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      = 0;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>* load(</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_visitor_variant.html">VisitorVariant</a>&amp;,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      QObject* parent)</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      = 0;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_process_1_1_layer_factory.html">   63</a></span>&#160;<span class="keyword">class </span>SCORE_LIB_PROCESS_EXPORT <a class="code" href="class_process_1_1_layer_factory.html">LayerFactory</a> : <span class="keyword">public</span> <a class="code" href="classscore_1_1_interface_base.html">score::InterfaceBase</a></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  SCORE_INTERFACE(<a class="code" href="class_process_1_1_process_model.html">ProcessModel</a>, <span class="stringliteral">&quot;aeee61e4-89aa-42ec-aa33-bf4522ed710b&quot;</span>)</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">bool</span> ui_interface = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  ~<a class="code" href="class_process_1_1_layer_factory.html">LayerFactory</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_process_1_1_layer_factory.html">   57</a></span>&#160;<span class="keyword">class </span>SCORE_LIB_PROCESS_EXPORT <a class="code" href="class_process_1_1_layer_factory.html">LayerFactory</a> : <span class="keyword">public</span> <a class="code" href="classscore_1_1_interface_base.html">score::InterfaceBase</a></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  SCORE_INTERFACE(<a class="code" href="class_process_1_1_process_model.html">ProcessModel</a>, <span class="stringliteral">&quot;aeee61e4-89aa-42ec-aa33-bf4522ed710b&quot;</span>)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">bool</span> ui_interface = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  ~<a class="code" href="class_process_1_1_layer_factory.html">LayerFactory</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">virtual</span> std::optional&lt;double&gt; recommendedHeight() <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="class_process_1_1_layer_presenter.html">Process::LayerPresenter</a>* makeLayerPresenter(</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp;, <a class="code" href="class_process_1_1_layer_view.html">Process::LayerView</a>*, <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; context,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      QObject* parent) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">virtual</span> std::optional&lt;double&gt; recommendedHeight() <span class="keyword">const</span> noexcept;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="class_process_1_1_layer_presenter.html">Process::LayerPresenter</a>* makeLayerPresenter(</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp;,</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <a class="code" href="class_process_1_1_layer_view.html">Process::LayerView</a>*,</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; context,</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      QObject* parent) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="class_process_1_1_layer_view.html">Process::LayerView</a>* makeLayerView(</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp;,</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; context,</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      QGraphicsItem* parent) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="class_process_1_1_mini_layer.html">Process::MiniLayer</a>*</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  makeMiniLayer(<span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp;, QGraphicsItem* parent) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classscore_1_1_resizeable_item.html">score::ResizeableItem</a>* makeItem(</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp;,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; ctx,</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      QGraphicsItem* parent) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> hasExternalUI(</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; proc,</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const</span> noexcept;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keyword">virtual</span> QWidget* makeExternalUI(</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp;,</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      QWidget* parent) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="class_process_1_1_header_delegate.html">HeaderDelegate</a>* makeHeaderDelegate(</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">ProcessModel</a>&amp; model,</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; ctx,</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      QGraphicsItem* parent) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="class_process_1_1_footer_delegate.html">FooterDelegate</a>* makeFooterDelegate(</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">ProcessModel</a>&amp; model,</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; ctx) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="structmatches.html">matches</a>(<span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; p) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="structmatches.html">matches</a>(<span class="keyword">const</span> <a class="code" href="class_uuid_key.html">UuidKey&lt;Process::ProcessModel&gt;</a>&amp;) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;};</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="class_process_1_1_layer_view.html">Process::LayerView</a>* makeLayerView(</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp;, <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; context,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      QGraphicsItem* parent) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="class_process_1_1_mini_layer.html">Process::MiniLayer</a>*</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  makeMiniLayer(<span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp;, QGraphicsItem* parent) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classscore_1_1_resizeable_item.html">score::ResizeableItem</a>* makeItem(</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp;, <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; ctx,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      QGraphicsItem* parent) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> hasExternalUI(</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; proc,</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keyword">virtual</span> QWidget* makeExternalUI(</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp;, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      QWidget* parent) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="class_process_1_1_header_delegate.html">HeaderDelegate</a>* makeHeaderDelegate(</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">ProcessModel</a>&amp; model, <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; ctx,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      QGraphicsItem* parent) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="class_process_1_1_footer_delegate.html">FooterDelegate</a>*</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  makeFooterDelegate(<span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">ProcessModel</a>&amp; model, <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; ctx) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="structmatches.html">matches</a>(<span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; p) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="structmatches.html">matches</a>(<span class="keyword">const</span> <a class="code" href="class_uuid_key.html">UuidKey&lt;Process::ProcessModel&gt;</a>&amp;) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1371</div></div>
+<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1326</div></div>
 <div class="ttc" id="aclassscore_1_1_interface_base_html"><div class="ttname"><a href="classscore_1_1_interface_base.html">score::InterfaceBase</a></div><div class="ttdoc">Base class for plug-in interfaces.</div><div class="ttdef"><b>Definition:</b> Interface.hpp:51</div></div>
-<div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition:</b> TimeValue.hpp:19</div></div>
+<div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition:</b> TimeValue.hpp:20</div></div>
 <div class="ttc" id="aclass_process_1_1_layer_view_html"><div class="ttname"><a href="class_process_1_1_layer_view.html">Process::LayerView</a></div><div class="ttdef"><b>Definition:</b> LayerView.hpp:18</div></div>
 <div class="ttc" id="aclass_process_1_1_header_delegate_html"><div class="ttname"><a href="class_process_1_1_header_delegate.html">Process::HeaderDelegate</a></div><div class="ttdef"><b>Definition:</b> HeaderDelegate.hpp:13</div></div>
 <div class="ttc" id="astructmatches_html"><div class="ttname"><a href="structmatches.html">matches</a></div><div class="ttdef"><b>Definition:</b> ObjectMatches.hpp:5</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
 <div class="ttc" id="anamespace_process_html_a592bb361ebf8fbc09c929c93208c71f1"><div class="ttname"><a href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">Process::ProcessFlags</a></div><div class="ttdeci">ProcessFlags</div><div class="ttdoc">Various settings for processes.</div><div class="ttdef"><b>Definition:</b> ProcessFlags.hpp:16</div></div>
-<div class="ttc" id="aclass_process_1_1_layer_factory_html"><div class="ttname"><a href="class_process_1_1_layer_factory.html">Process::LayerFactory</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/ProcessFactory.hpp:63</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:146</div></div>
+<div class="ttc" id="aclass_process_1_1_layer_factory_html"><div class="ttname"><a href="class_process_1_1_layer_factory.html">Process::LayerFactory</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/ProcessFactory.hpp:57</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:160</div></div>
 <div class="ttc" id="aclass_process_1_1_process_model_factory_html"><div class="ttname"><a href="class_process_1_1_process_model_factory.html">Process::ProcessModelFactory</a></div><div class="ttdoc">The ProcessFactory class.</div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/ProcessFactory.hpp:34</div></div>
 <div class="ttc" id="aclass_uuid_key_html"><div class="ttname"><a href="class_uuid_key.html">UuidKey&lt; Process::ProcessModel &gt;</a></div></div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition:</b> Identifier.hpp:56</div></div>
 <div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Process.hpp:54</div></div>
 <div class="ttc" id="astruct_process_1_1_context_html"><div class="ttname"><a href="struct_process_1_1_context.html">Process::Context</a></div><div class="ttdef"><b>Definition:</b> ProcessContext.hpp:11</div></div>
 <div class="ttc" id="aclass_process_1_1_layer_presenter_html"><div class="ttname"><a href="class_process_1_1_layer_presenter.html">Process::LayerPresenter</a></div><div class="ttdef"><b>Definition:</b> LayerPresenter.hpp:33</div></div>
-<div class="ttc" id="aclass_process_1_1_mini_layer_html"><div class="ttname"><a href="class_process_1_1_mini_layer.html">Process::MiniLayer</a></div><div class="ttdef"><b>Definition:</b> LayerView.hpp:100</div></div>
+<div class="ttc" id="aclass_process_1_1_mini_layer_html"><div class="ttname"><a href="class_process_1_1_mini_layer.html">Process::MiniLayer</a></div><div class="ttdef"><b>Definition:</b> LayerView.hpp:94</div></div>
 <div class="ttc" id="aclassscore_1_1_resizeable_item_html"><div class="ttname"><a href="classscore_1_1_resizeable_item.html">score::ResizeableItem</a></div><div class="ttdef"><b>Definition:</b> RectItem.hpp:9</div></div>
 <div class="ttc" id="astruct_visitor_variant_html"><div class="ttname"><a href="struct_visitor_variant.html">VisitorVariant</a></div><div class="ttdoc">The VisitorVariant struct.</div><div class="ttdef"><b>Definition:</b> VisitorInterface.hpp:25</div></div>
 <div class="ttc" id="astruct_process_1_1_descriptor_html"><div class="ttname"><a href="struct_process_1_1_descriptor.html">Process::Descriptor</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/ProcessMetadata.hpp:35</div></div>
-<div class="ttc" id="aclass_process_1_1_footer_delegate_html"><div class="ttname"><a href="class_process_1_1_footer_delegate.html">Process::FooterDelegate</a></div><div class="ttdef"><b>Definition:</b> HeaderDelegate.hpp:69</div></div>
+<div class="ttc" id="aclass_process_1_1_footer_delegate_html"><div class="ttname"><a href="class_process_1_1_footer_delegate.html">Process::FooterDelegate</a></div><div class="ttdef"><b>Definition:</b> HeaderDelegate.hpp:64</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

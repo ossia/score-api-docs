@@ -99,93 +99,85 @@ $(document).ready(function(){initNavTree('_automation_presenter_8hpp_source.html
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Automation/AutomationModel.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Automation/AutomationView.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Automation/Commands/ChangeAddress.hpp&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Curve/Process/CurveProcessPresenter.hpp&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Device/Node/NodeListMimeSerialization.hpp&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;Process/ProcessContext.hpp&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;Process/ProcessMimeSerialization.hpp&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;State/UpdateAddress.hpp&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;State/UpdateAddress.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Device/Node/NodeListMimeSerialization.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Process/ProcessContext.hpp&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;Process/ProcessMimeSerialization.hpp&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;Curve/Process/CurveProcessPresenter.hpp&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;verdigris&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_automation.html">Automation</a></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_automation_1_1_layer_presenter.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_automation_1_1_layer_presenter.html">LayerPresenter</a> final</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    : <span class="keyword">public</span> <a class="code" href="class_curve_1_1_curve_process_presenter.html">Curve::CurveProcessPresenter</a>&lt;ProcessModel, LayerView&gt;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  W_OBJECT(<a class="code" href="class_automation_1_1_layer_presenter.html">LayerPresenter</a>)</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="class_automation_1_1_layer_presenter.html">LayerPresenter</a>(</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_curve_1_1_style.html">Curve::Style</a>&amp; style,</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_automation_1_1_process_model.html">Automation::ProcessModel</a>&amp; layer,</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      <a class="code" href="class_automation_1_1_layer_view.html">LayerView</a>* view,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; context,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      QObject* parent)</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;Automation/AutomationModel.hpp&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;Automation/AutomationView.hpp&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;Automation/Commands/ChangeAddress.hpp&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;verdigris&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_automation.html">Automation</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_automation_1_1_layer_presenter.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_automation_1_1_layer_presenter.html">LayerPresenter</a> final : <span class="keyword">public</span> <a class="code" href="class_curve_1_1_curve_process_presenter.html">Curve::CurveProcessPresenter</a>&lt;ProcessModel, LayerView&gt;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  W_OBJECT(<a class="code" href="class_automation_1_1_layer_presenter.html">LayerPresenter</a>)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <a class="code" href="class_automation_1_1_layer_presenter.html">LayerPresenter</a>(</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_curve_1_1_style.html">Curve::Style</a>&amp; style, <span class="keyword">const</span> <a class="code" href="class_automation_1_1_process_model.html">Automation::ProcessModel</a>&amp; layer, <a class="code" href="class_automation_1_1_layer_view.html">LayerView</a>* view,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; context, QObject* parent)</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      : CurveProcessPresenter{style, layer, view, context, parent}</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  {</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// TODO instead have a prettyNameChanged signal.</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    con(layer,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        &amp;ProcessModel::tweenChanged,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">this</span>,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        &amp;LayerPresenter::on_tweenChanges);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    connect(</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        m_view,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        &amp;LayerView::dropReceived,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">this</span>,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        &amp;LayerPresenter::on_dropReceived);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    on_tweenChanges(layer.tween());</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    con(layer.curve(), &amp;Curve::Model::curveReset, <span class="keyword">this</span>, [&amp;] {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      on_tweenChanges(layer.tween());</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    });</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">void</span> setFullView()<span class="keyword"> override </span>{ m_curve.setBoundedMove(<span class="keyword">false</span>); }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> on_tweenChanges(<span class="keywordtype">bool</span> b)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="class_curve_1_1_segment_view.html">Curve::SegmentView</a>&amp; seg : m_curve.segments())</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keywordflow">if</span> (seg.model().start().x() != 0.)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        seg.setTween(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        seg.setTween(b);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> on_dropReceived(<span class="keyword">const</span> QPointF&amp; pos, <span class="keyword">const</span> QMimeData&amp; mime)</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">auto</span> addr = State::onUpdatableAddress(model().address(), mime))</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <a class="code" href="class_command_dispatcher.html">CommandDispatcher&lt;&gt;</a>{context().context.commandStack}.submit(</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;          <span class="keyword">new</span> <a class="code" href="class_automation_1_1_change_address.html">ChangeAddress</a>{model(), *addr});</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mime.formats().contains(score::mime::processpreset()))</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      handlePresetDrop(pos, mime);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    con(layer, &amp;ProcessModel::tweenChanged, <span class="keyword">this</span>, &amp;LayerPresenter::on_tweenChanges);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    connect(m_view, &amp;LayerView::dropReceived, <span class="keyword">this</span>, &amp;LayerPresenter::on_dropReceived);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    on_tweenChanges(layer.tween());</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    con(layer.curve(), &amp;Curve::Model::curveReset, <span class="keyword">this</span>,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        [&amp;] { on_tweenChanges(layer.tween()); });</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span> setFullView()<span class="keyword"> override </span>{ m_curve.setBoundedMove(<span class="keyword">false</span>); }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> on_tweenChanges(<span class="keywordtype">bool</span> b)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">for</span>(<a class="code" href="class_curve_1_1_segment_view.html">Curve::SegmentView</a>&amp; seg : m_curve.segments())</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keywordflow">if</span>(seg.model().start().x() != 0.)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        seg.setTween(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        seg.setTween(b);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> on_dropReceived(<span class="keyword">const</span> QPointF&amp; pos, <span class="keyword">const</span> QMimeData&amp; mime)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span>(<span class="keyword">auto</span> addr = State::onUpdatableAddress(model().address(), mime))</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <a class="code" href="class_command_dispatcher.html">CommandDispatcher&lt;&gt;</a>{context().context.commandStack}.submit(</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;          <span class="keyword">new</span> <a class="code" href="class_automation_1_1_change_address.html">ChangeAddress</a>{model(), *addr});</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(mime.formats().contains(score::mime::processpreset()))</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      handlePresetDrop(pos, mime);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_automation_1_1_layer_view_html"><div class="ttname"><a href="class_automation_1_1_layer_view.html">Automation::LayerView</a></div><div class="ttdef"><b>Definition:</b> AutomationView.hpp:14</div></div>
-<div class="ttc" id="aclass_automation_1_1_process_model_html"><div class="ttname"><a href="class_automation_1_1_process_model.html">Automation::ProcessModel</a></div><div class="ttdef"><b>Definition:</b> AutomationModel.hpp:32</div></div>
+<div class="ttc" id="aclass_automation_1_1_layer_view_html"><div class="ttname"><a href="class_automation_1_1_layer_view.html">Automation::LayerView</a></div><div class="ttdef"><b>Definition:</b> AutomationView.hpp:15</div></div>
+<div class="ttc" id="aclass_automation_1_1_process_model_html"><div class="ttname"><a href="class_automation_1_1_process_model.html">Automation::ProcessModel</a></div><div class="ttdef"><b>Definition:</b> AutomationModel.hpp:35</div></div>
 <div class="ttc" id="astruct_curve_1_1_style_html"><div class="ttname"><a href="struct_curve_1_1_style.html">Curve::Style</a></div><div class="ttdef"><b>Definition:</b> CurveStyle.hpp:12</div></div>
-<div class="ttc" id="aclass_automation_1_1_change_address_html"><div class="ttname"><a href="class_automation_1_1_change_address.html">Automation::ChangeAddress</a></div><div class="ttdef"><b>Definition:</b> score-plugin-automation/Automation/Commands/ChangeAddress.hpp:19</div></div>
+<div class="ttc" id="aclass_automation_1_1_change_address_html"><div class="ttname"><a href="class_automation_1_1_change_address.html">Automation::ChangeAddress</a></div><div class="ttdef"><b>Definition:</b> score-plugin-automation/Automation/Commands/ChangeAddress.hpp:21</div></div>
 <div class="ttc" id="aclass_curve_1_1_segment_view_html"><div class="ttname"><a href="class_curve_1_1_segment_view.html">Curve::SegmentView</a></div><div class="ttdef"><b>Definition:</b> CurveSegmentView.hpp:23</div></div>
 <div class="ttc" id="aclass_command_dispatcher_html"><div class="ttname"><a href="class_command_dispatcher.html">CommandDispatcher&lt;&gt;</a></div></div>
 <div class="ttc" id="astruct_process_1_1_context_html"><div class="ttname"><a href="struct_process_1_1_context.html">Process::Context</a></div><div class="ttdef"><b>Definition:</b> ProcessContext.hpp:11</div></div>
-<div class="ttc" id="aclass_curve_1_1_curve_process_presenter_html"><div class="ttname"><a href="class_curve_1_1_curve_process_presenter.html">Curve::CurveProcessPresenter</a></div><div class="ttdef"><b>Definition:</b> CurveProcessPresenter.hpp:26</div></div>
-<div class="ttc" id="aclass_automation_1_1_layer_presenter_html"><div class="ttname"><a href="class_automation_1_1_layer_presenter.html">Automation::LayerPresenter</a></div><div class="ttdef"><b>Definition:</b> AutomationPresenter.hpp:15</div></div>
+<div class="ttc" id="aclass_curve_1_1_curve_process_presenter_html"><div class="ttname"><a href="class_curve_1_1_curve_process_presenter.html">Curve::CurveProcessPresenter</a></div><div class="ttdef"><b>Definition:</b> CurveProcessPresenter.hpp:27</div></div>
+<div class="ttc" id="aclass_automation_1_1_layer_presenter_html"><div class="ttname"><a href="class_automation_1_1_layer_presenter.html">Automation::LayerPresenter</a></div><div class="ttdef"><b>Definition:</b> AutomationPresenter.hpp:19</div></div>
 <div class="ttc" id="anamespace_automation_html"><div class="ttname"><a href="namespace_automation.html">Automation</a></div><div class="ttdoc">Namespace related to the Automation process.</div><div class="ttdef"><b>Definition:</b> AutomationColors.cpp:7</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

@@ -99,10 +99,10 @@ $(document).ready(function(){initNavTree('_dataflow_clock_8hpp_source.html','');
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Execution/Clock/ClockFactory.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Execution/Clock/DefaultClock.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Execution/DocumentPlugin.hpp&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Audio/AudioTick.hpp&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Audio/AudioTick.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Execution/Clock/ClockFactory.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Execution/Clock/DefaultClock.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Execution/DocumentPlugin.hpp&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>Audio</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span>ApplicationPlugin;</div>
@@ -146,27 +146,26 @@ $(document).ready(function(){initNavTree('_dataflow_clock_8hpp_source.html','');
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  QString prettyName() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  std::unique_ptr&lt;Execution::Clock&gt;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  make(<span class="keyword">const</span> <a class="code" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="namespace_execution.html#aa65c041c9e6cd2071fd9f337e843f81d">Execution::time_function</a></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  makeTimeFunction(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  Execution::reverse_time_function</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  makeReverseTimeFunction(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  std::unique_ptr&lt;Execution::Clock&gt; make(<span class="keyword">const</span> <a class="code" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="namespace_execution.html#aa65c041c9e6cd2071fd9f337e843f81d">Execution::time_function</a></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  makeTimeFunction(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  Execution::reverse_time_function</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  makeReverseTimeFunction(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1371</div></div>
-<div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition:</b> TimeValue.hpp:19</div></div>
+<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1326</div></div>
+<div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition:</b> TimeValue.hpp:20</div></div>
 <div class="ttc" id="aclass_execution_1_1_default_clock_html"><div class="ttname"><a href="class_execution_1_1_default_clock.html">Execution::DefaultClock</a></div><div class="ttdef"><b>Definition:</b> DefaultClock.hpp:13</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
 <div class="ttc" id="aclass_audio_1_1_application_plugin_html"><div class="ttname"><a href="class_audio_1_1_application_plugin.html">Audio::ApplicationPlugin</a></div><div class="ttdef"><b>Definition:</b> AudioApplicationPlugin.hpp:16</div></div>
-<div class="ttc" id="aclass_execution_1_1_clock_factory_html"><div class="ttname"><a href="class_execution_1_1_clock_factory.html">Execution::ClockFactory</a></div><div class="ttdef"><b>Definition:</b> ClockFactory.hpp:63</div></div>
-<div class="ttc" id="aclass_execution_1_1_document_plugin_html"><div class="ttname"><a href="class_execution_1_1_document_plugin.html">Execution::DocumentPlugin</a></div><div class="ttdef"><b>Definition:</b> plugins/score-plugin-engine/Execution/DocumentPlugin.hpp:58</div></div>
-<div class="ttc" id="aclass_execution_1_1_clock_html"><div class="ttname"><a href="class_execution_1_1_clock.html">Execution::Clock</a></div><div class="ttdef"><b>Definition:</b> ClockFactory.hpp:41</div></div>
+<div class="ttc" id="aclass_execution_1_1_clock_factory_html"><div class="ttname"><a href="class_execution_1_1_clock_factory.html">Execution::ClockFactory</a></div><div class="ttdef"><b>Definition:</b> ClockFactory.hpp:62</div></div>
+<div class="ttc" id="aclass_execution_1_1_document_plugin_html"><div class="ttname"><a href="class_execution_1_1_document_plugin.html">Execution::DocumentPlugin</a></div><div class="ttdef"><b>Definition:</b> plugins/score-plugin-engine/Execution/DocumentPlugin.hpp:59</div></div>
+<div class="ttc" id="aclass_execution_1_1_clock_html"><div class="ttname"><a href="class_execution_1_1_clock.html">Execution::Clock</a></div><div class="ttdef"><b>Definition:</b> ClockFactory.hpp:40</div></div>
 <div class="ttc" id="anamespace_execution_html_aa65c041c9e6cd2071fd9f337e843f81d"><div class="ttname"><a href="namespace_execution.html#aa65c041c9e6cd2071fd9f337e843f81d">Execution::time_function</a></div><div class="ttdeci">smallfun::function&lt; ossia::time_value(const TimeVal &amp;)&gt; time_function</div><div class="ttdoc">Sets-up and manages the main execution clock.</div><div class="ttdef"><b>Definition:</b> ExecutionContext.hpp:65</div></div>
-<div class="ttc" id="astruct_execution_1_1_context_html"><div class="ttname"><a href="struct_execution_1_1_context.html">Execution::Context</a></div><div class="ttdef"><b>Definition:</b> ExecutionContext.hpp:97</div></div>
+<div class="ttc" id="astruct_execution_1_1_context_html"><div class="ttname"><a href="struct_execution_1_1_context.html">Execution::Context</a></div><div class="ttdef"><b>Definition:</b> ExecutionContext.hpp:92</div></div>
 <div class="ttc" id="aclass_dataflow_1_1_clock_html"><div class="ttname"><a href="class_dataflow_1_1_clock.html">Dataflow::Clock</a></div><div class="ttdef"><b>Definition:</b> DataflowClock.hpp:17</div></div>
 <div class="ttc" id="aclass_dataflow_1_1_clock_factory_html"><div class="ttname"><a href="class_dataflow_1_1_clock_factory.html">Dataflow::ClockFactory</a></div><div class="ttdef"><b>Definition:</b> DataflowClock.hpp:43</div></div>
 <!-- HTML footer for doxygen 1.8.8-->

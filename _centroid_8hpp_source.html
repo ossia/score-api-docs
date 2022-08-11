@@ -100,55 +100,52 @@ $(document).ready(function(){initNavTree('_centroid_8hpp_source.html',''); initR
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Engine/Node/SimpleApi.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Analysis/GistState.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;numeric&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>Analysis</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="struct_analysis_1_1_centroid.html">    7</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_analysis_1_1_centroid.html">Centroid</a></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Analysis/GistState.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;numeric&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>Analysis</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="struct_analysis_1_1_centroid_1_1_metadata.html">    9</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="struct_analysis_1_1_centroid_1_1_metadata.html">Metadata</a> : <a class="code" href="struct_control_1_1_meta__base.html">Control::Meta_base</a></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> prettyName = <span class="stringliteral">&quot;Centroid&quot;</span>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> objectKey = <span class="stringliteral">&quot;Centroid&quot;</span>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> category = <span class="stringliteral">&quot;Analysis/Spectrum&quot;</span>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> author = <span class="stringliteral">&quot;ossia score, Gist library&quot;</span>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> kind = Process::ProcessCategory::Analyzer;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> description = <span class="stringliteral">&quot;Get the centroid of a signal&quot;</span>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> tags = std::array&lt;const char*, 0&gt;{};</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> uuid_constexpr <span class="keyword">auto</span> uuid = make_uuid(<span class="stringliteral">&quot;9d26b429-a417-4c98-a4c6-70af90a5c4ab&quot;</span>);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr audio_in audio_ins[]{<span class="stringliteral">&quot;in&quot;</span>};</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr value_out value_outs[]{<span class="stringliteral">&quot;out&quot;</span>};</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> controls = tuplet::make_tuple(</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;          <a class="code" href="struct_control_1_1_float_control.html">Control::LogFloatSlider</a>{<span class="stringliteral">&quot;Gain&quot;</span>, 0., 100., 1.},</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;          <a class="code" href="struct_control_1_1_float_control.html">Control::FloatSlider</a>{<span class="stringliteral">&quot;Gate&quot;</span>, 0., 1., 0.}</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    );</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  };</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">using</span> <a class="code" href="namespace_state.html">State</a> = <a class="code" href="struct_analysis_1_1_gist_state.html">GistState</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">using</span> control_policy = ossia::safe_nodes::last_tick;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  run(<span class="keyword">const</span> ossia::audio_port&amp; in,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <span class="keywordtype">float</span> gain,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <span class="keywordtype">float</span> gate,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      ossia::value_port&amp; out,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      ossia::token_request tk,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      ossia::exec_state_facade e,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <a class="code" href="namespace_state.html">State</a>&amp; st)</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    st.process&lt;&amp;Gist&lt;double&gt;::spectralCentroid&gt;(in, gain, gate, out, tk, e);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="struct_analysis_1_1_centroid.html">    9</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_analysis_1_1_centroid.html">Centroid</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="struct_analysis_1_1_centroid_1_1_metadata.html">   11</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="struct_analysis_1_1_centroid_1_1_metadata.html">Metadata</a> : <a class="code" href="struct_control_1_1_meta__base.html">Control::Meta_base</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> prettyName = <span class="stringliteral">&quot;Centroid&quot;</span>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> objectKey = <span class="stringliteral">&quot;Centroid&quot;</span>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> category = <span class="stringliteral">&quot;Analysis/Spectrum&quot;</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> author = <span class="stringliteral">&quot;ossia score, Gist library&quot;</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> kind = Process::ProcessCategory::Analyzer;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> description = <span class="stringliteral">&quot;Get the centroid of a signal&quot;</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> tags = std::array&lt;const char*, 0&gt;{};</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> uuid_constexpr <span class="keyword">auto</span> uuid</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        = make_uuid(<span class="stringliteral">&quot;9d26b429-a417-4c98-a4c6-70af90a5c4ab&quot;</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr audio_in audio_ins[]{<span class="stringliteral">&quot;in&quot;</span>};</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr value_out value_outs[]{<span class="stringliteral">&quot;out&quot;</span>};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> controls = tuplet::make_tuple(</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="struct_control_1_1_float_control.html">Control::LogFloatSlider</a>{<span class="stringliteral">&quot;Gain&quot;</span>, 0., 100., 1.},</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="struct_control_1_1_float_control.html">Control::FloatSlider</a>{<span class="stringliteral">&quot;Gate&quot;</span>, 0., 1., 0.});</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  };</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">using</span> <a class="code" href="namespace_state.html">State</a> = <a class="code" href="struct_analysis_1_1_gist_state.html">GistState</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">using</span> control_policy = ossia::safe_nodes::last_tick;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  run(<span class="keyword">const</span> ossia::audio_port&amp; in, <span class="keywordtype">float</span> gain, <span class="keywordtype">float</span> gate, ossia::value_port&amp; out,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      ossia::token_request tk, ossia::exec_state_facade e, <a class="code" href="namespace_state.html">State</a>&amp; st)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    st.process&lt;&amp;Gist&lt;double&gt;::spectralCentroid&gt;(in, gain, gate, out, tk, e);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astruct_control_1_1_meta__base_html"><div class="ttname"><a href="struct_control_1_1_meta__base.html">Control::Meta_base</a></div><div class="ttdef"><b>Definition:</b> SimpleApi.hpp:33</div></div>
-<div class="ttc" id="astruct_analysis_1_1_centroid_html"><div class="ttname"><a href="struct_analysis_1_1_centroid.html">Analysis::Centroid</a></div><div class="ttdef"><b>Definition:</b> Centroid.hpp:7</div></div>
-<div class="ttc" id="anamespace_state_html"><div class="ttname"><a href="namespace_state.html">State</a></div><div class="ttdoc">Utilities for OSSIA data structures.</div><div class="ttdef"><b>Definition:</b> DeviceInterface.hpp:31</div></div>
-<div class="ttc" id="astruct_control_1_1_float_control_html"><div class="ttname"><a href="struct_control_1_1_float_control.html">Control::FloatControl</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Control/Widgets.hpp:75</div></div>
-<div class="ttc" id="astruct_analysis_1_1_gist_state_html"><div class="ttname"><a href="struct_analysis_1_1_gist_state.html">Analysis::GistState</a></div><div class="ttdef"><b>Definition:</b> GistState.hpp:20</div></div>
-<div class="ttc" id="astruct_analysis_1_1_centroid_1_1_metadata_html"><div class="ttname"><a href="struct_analysis_1_1_centroid_1_1_metadata.html">Analysis::Centroid::Metadata</a></div><div class="ttdef"><b>Definition:</b> Centroid.hpp:9</div></div>
+<div class="ttc" id="astruct_control_1_1_meta__base_html"><div class="ttname"><a href="struct_control_1_1_meta__base.html">Control::Meta_base</a></div><div class="ttdef"><b>Definition:</b> SimpleApi.hpp:41</div></div>
+<div class="ttc" id="astruct_analysis_1_1_centroid_html"><div class="ttname"><a href="struct_analysis_1_1_centroid.html">Analysis::Centroid</a></div><div class="ttdef"><b>Definition:</b> Centroid.hpp:9</div></div>
+<div class="ttc" id="anamespace_state_html"><div class="ttname"><a href="namespace_state.html">State</a></div><div class="ttdoc">Utilities for OSSIA data structures.</div><div class="ttdef"><b>Definition:</b> DeviceInterface.hpp:32</div></div>
+<div class="ttc" id="astruct_control_1_1_float_control_html"><div class="ttname"><a href="struct_control_1_1_float_control.html">Control::FloatControl</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Control/Widgets.hpp:74</div></div>
+<div class="ttc" id="astruct_analysis_1_1_gist_state_html"><div class="ttname"><a href="struct_analysis_1_1_gist_state.html">Analysis::GistState</a></div><div class="ttdef"><b>Definition:</b> GistState.hpp:23</div></div>
+<div class="ttc" id="astruct_analysis_1_1_centroid_1_1_metadata_html"><div class="ttname"><a href="struct_analysis_1_1_centroid_1_1_metadata.html">Analysis::Centroid::Metadata</a></div><div class="ttdef"><b>Definition:</b> Centroid.hpp:11</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

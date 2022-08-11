@@ -105,33 +105,28 @@ $(document).ready(function(){initNavTree('_owning_vector_8hpp_source.html',''); 
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">template</span> &lt;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span>, <span class="keyword">class</span>&gt;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">class </span>Container,</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">typename</span> T,</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">typename</span> U = std::allocator&lt;std::unique_ptr&lt;T&gt;&gt;&gt;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_ptr_container.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_ptr_container.html">PtrContainer</a> : Container&lt;std::unique_ptr&lt;T&gt;, U&gt;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">using</span> ctnr_t = Container&lt;std::unique_ptr&lt;T&gt;, U&gt;;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">using</span> ctnr_t::ctnr_t;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">using</span> ctnr_t::emplace_back;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">auto</span> begin() { <span class="keywordflow">return</span> score::make_indirect_iterator(ctnr_t::begin()); }</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">auto</span> end() { <span class="keywordflow">return</span> score::make_indirect_iterator(ctnr_t::end()); }</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">auto</span> begin()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> score::make_indirect_iterator(ctnr_t::begin()); }</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">auto</span> end()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> score::make_indirect_iterator(ctnr_t::end()); }</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">auto</span> cbegin()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> score::make_indirect_iterator(ctnr_t::cbegin());</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">auto</span> cend()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> score::make_indirect_iterator(ctnr_t::cend()); }</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">using</span> <a class="code" href="class_ptr_container.html">OwningVector</a> = <a class="code" href="class_ptr_container.html">PtrContainer&lt;std::vector, T&gt;</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span>, <span class="keyword">class</span>&gt; <span class="keyword">class </span>Container, <span class="keyword">typename</span> T,</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">typename</span> U = std::allocator&lt;std::unique_ptr&lt;T&gt;&gt;&gt;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_ptr_container.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_ptr_container.html">PtrContainer</a> : Container&lt;std::unique_ptr&lt;T&gt;, U&gt;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keyword">using</span> ctnr_t = Container&lt;std::unique_ptr&lt;T&gt;, U&gt;;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">using</span> ctnr_t::ctnr_t;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">using</span> ctnr_t::emplace_back;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">auto</span> begin() { <span class="keywordflow">return</span> score::make_indirect_iterator(ctnr_t::begin()); }</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">auto</span> end() { <span class="keywordflow">return</span> score::make_indirect_iterator(ctnr_t::end()); }</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">auto</span> begin()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> score::make_indirect_iterator(ctnr_t::begin()); }</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">auto</span> end()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> score::make_indirect_iterator(ctnr_t::end()); }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">auto</span> cbegin()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> score::make_indirect_iterator(ctnr_t::cbegin()); }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">auto</span> cend()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> score::make_indirect_iterator(ctnr_t::cend()); }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">using</span> <a class="code" href="class_ptr_container.html">OwningVector</a> = <a class="code" href="class_ptr_container.html">PtrContainer&lt;std::vector, T&gt;</a>;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_ptr_container_html"><div class="ttname"><a href="class_ptr_container.html">PtrContainer</a></div><div class="ttdef"><b>Definition:</b> OwningVector.hpp:12</div></div>
+<div class="ttc" id="aclass_ptr_container_html"><div class="ttname"><a href="class_ptr_container.html">PtrContainer</a></div><div class="ttdef"><b>Definition:</b> OwningVector.hpp:10</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

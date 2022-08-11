@@ -1,6 +1,6 @@
 var class_curve_1_1_segment_model =
 [
-    [ "data_vector", "class_curve_1_1_segment_model.html#a46ff0428df77399f61ae88a0579134c4", null ],
+    [ "data_vector", "class_curve_1_1_segment_model.html#abdcda62ba57825a5380f3df6df1f2577", null ],
     [ "SegmentModel", "class_curve_1_1_segment_model.html#a8f78788032a7fa671135112c8d9e7044", null ],
     [ "SegmentModel", "class_curve_1_1_segment_model.html#a53a80eb540f4262e254ae78554ee8231", null ],
     [ "SegmentModel", "class_curve_1_1_segment_model.html#a1aba993b9bcdbbc3c3ec47daf0846673", null ],

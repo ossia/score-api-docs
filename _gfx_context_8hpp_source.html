@@ -151,72 +151,75 @@ $(document).ready(function(){initNavTree('_gfx_context_8hpp_source.html',''); in
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> update_inputs();</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> updateGraph();</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> send_message(<a class="code" href="structscore_1_1gfx_1_1_message.html">score::gfx::Message</a>&amp;&amp; msg) noexcept {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    tick_messages.enqueue(std::move(msg));</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> run_commands();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> add_preview_output(<a class="code" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a>&amp; out);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">void</span> remove_preview_output();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> add_edge(Edge e);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">void</span> remove_edge(Edge e);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> remove_node(</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      std::vector&lt;std::unique_ptr&lt;score::gfx::Node&gt;&gt;&amp; nursery,</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      int32_t <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> timerEvent(QTimerEvent*) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; m_context;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  int32_t index{};</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  ossia::fast_hash_map&lt;int32_t, NodePtr&gt; nodes;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_graph.html">score::gfx::Graph</a>* m_graph{};</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  QThread m_thread;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">struct </span>NodeCommand {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        ADD_NODE</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      , ADD_PREVIEW_NODE</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      , REMOVE_NODE</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      , REMOVE_PREVIEW_NODE</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      , RELINK</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    } cmd{};</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    int32_t index{};</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    std::unique_ptr&lt;score::gfx::Node&gt; node;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  };</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">struct </span>EdgeCommand {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      CONNECT_PREVIEW_NODE</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    , DISCONNECT_PREVIEW_NODE</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    } cmd{};</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    Edge edge;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  };</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keyword">using</span> Command = ossia::variant&lt;NodeCommand, EdgeCommand&gt;;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  moodycamel::ConcurrentQueue&lt;Command&gt; tick_commands;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  moodycamel::ConcurrentQueue&lt;score::gfx::Message&gt; tick_messages;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  std::mutex edges_lock;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  ossia::flat_set&lt;Edge&gt; new_edges TS_GUARDED_BY(edges_lock);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  ossia::flat_set&lt;Edge&gt; edges;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  ossia::flat_set&lt;Edge&gt; preview_edges;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  std::atomic_bool edges_changed{};</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordtype">int</span> m_timer{-1};</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  ossia::flat_map&lt;int, score::gfx::OutputNode*&gt; m_manualTimers;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> send_message(<a class="code" href="structscore_1_1gfx_1_1_message.html">score::gfx::Message</a>&amp;&amp; msg) noexcept</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    tick_messages.enqueue(std::move(msg));</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> run_commands();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">void</span> add_preview_output(<a class="code" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a>&amp; out);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> remove_preview_output();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">void</span> add_edge(Edge e);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> remove_edge(Edge e);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> remove_node(std::vector&lt;std::unique_ptr&lt;score::gfx::Node&gt;&gt;&amp; nursery, int32_t <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> timerEvent(QTimerEvent*) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; m_context;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  int32_t index{};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  ossia::fast_hash_map&lt;int32_t, NodePtr&gt; nodes;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_graph.html">score::gfx::Graph</a>* m_graph{};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  QThread m_thread;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">struct </span>NodeCommand</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">enum</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      ADD_NODE,</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      ADD_PREVIEW_NODE,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      REMOVE_NODE,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      REMOVE_PREVIEW_NODE,</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      RELINK</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    } cmd{};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    int32_t index{};</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    std::unique_ptr&lt;score::gfx::Node&gt; node;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  };</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">struct </span>EdgeCommand</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">enum</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      CONNECT_PREVIEW_NODE,</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      DISCONNECT_PREVIEW_NODE</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    } cmd{};</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    Edge edge;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  };</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keyword">using</span> Command = ossia::variant&lt;NodeCommand, EdgeCommand&gt;;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  moodycamel::ConcurrentQueue&lt;Command&gt; tick_commands;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  moodycamel::ConcurrentQueue&lt;score::gfx::Message&gt; tick_messages;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  std::mutex edges_lock;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  ossia::flat_set&lt;Edge&gt; new_edges TS_GUARDED_BY(edges_lock);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  ossia::flat_set&lt;Edge&gt; edges;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  ossia::flat_set&lt;Edge&gt; preview_edges;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  std::atomic_bool edges_changed{};</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordtype">int</span> m_timer{-1};</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  ossia::flat_map&lt;int, score::gfx::OutputNode*&gt; m_manualTimers;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;};</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a></div><div class="ttdoc">Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)</div><div class="ttdef"><b>Definition:</b> OutputNode.hpp:23</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a></div><div class="ttdoc">Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)</div><div class="ttdef"><b>Definition:</b> OutputNode.hpp:21</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_graph_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_graph.html">score::gfx::Graph</a></div><div class="ttdoc">Represents a graph of renderers.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Graph.hpp:15</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:146</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:160</div></div>
 <div class="ttc" id="aclass_gfx_1_1_gfx_execution_action_html"><div class="ttname"><a href="class_gfx_1_1_gfx_execution_action.html">Gfx::GfxExecutionAction</a></div><div class="ttdef"><b>Definition:</b> GfxExecContext.hpp:14</div></div>
-<div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition:</b> Vulkan.hpp:9</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition:</b> Vulkan.hpp:10</div></div>
 <div class="ttc" id="aclass_gfx_1_1_gfx_context_html"><div class="ttname"><a href="class_gfx_1_1_gfx_context.html">Gfx::GfxContext</a></div><div class="ttdef"><b>Definition:</b> GfxContext.hpp:30</div></div>
 <div class="ttc" id="anamespace_gfx_html"><div class="ttname"><a href="namespace_gfx.html">Gfx</a></div><div class="ttdoc">Binds the rendering pipeline to ossia processes.</div><div class="ttdef"><b>Definition:</b> CameraDevice.cpp:29</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_message_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_message.html">score::gfx::Message</a></div><div class="ttdoc">Messages sent from the execution thread to the rendering thread.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Node.hpp:35</div></div>

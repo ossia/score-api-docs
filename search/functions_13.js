@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['virgin_5853',['virgin',['../classscore_1_1_document.html#ab468cdc0d9a73e9cb666770f410e0b5e',1,'score::Document']]],
-  ['visualpriority_5854',['visualPriority',['../class_device_1_1_protocol_factory.html#ad5810a19e266a8ab9804f127cfebd0f3',1,'Device::ProtocolFactory']]]
+  ['virgin_5949',['virgin',['../classscore_1_1_document.html#ab468cdc0d9a73e9cb666770f410e0b5e',1,'score::Document']]],
+  ['visualpriority_5950',['visualPriority',['../class_device_1_1_protocol_factory.html#ad5810a19e266a8ab9804f127cfebd0f3',1,'Device::ProtocolFactory']]]
 ];

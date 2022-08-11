@@ -114,33 +114,29 @@ $(document).ready(function(){initNavTree('_drop_port_in_scenario_8hpp_source.htm
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keywordtype">bool</span> canDrop(<span class="keyword">const</span> QMimeData&amp; mime) <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordtype">bool</span> drop(</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_scenario_presenter.html">Scenario::ScenarioPresenter</a>&amp;,</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      QPointF pos,</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      <span class="keyword">const</span> QMimeData&amp; mime) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_dataflow_1_1_drop_port_in_interval.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_dataflow_1_1_drop_port_in_interval.html">DropPortInInterval</a> final : <span class="keyword">public</span> <a class="code" href="class_scenario_1_1_interval_drop_handler.html">Scenario::IntervalDropHandler</a></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;30147c87-2dfb-458d-9474-b0ee46897b51&quot;</span>)</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">bool</span> drop(</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a>&amp;,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      QPointF p,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <span class="keyword">const</span> QMimeData&amp; mime) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  drop(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_scenario_presenter.html">Scenario::ScenarioPresenter</a>&amp;, QPointF pos, <span class="keyword">const</span> QMimeData&amp; mime) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_dataflow_1_1_drop_port_in_interval.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_dataflow_1_1_drop_port_in_interval.html">DropPortInInterval</a> final : <span class="keyword">public</span> <a class="code" href="class_scenario_1_1_interval_drop_handler.html">Scenario::IntervalDropHandler</a></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;30147c87-2dfb-458d-9474-b0ee46897b51&quot;</span>)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">bool</span> drop(</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx, <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a>&amp;, QPointF p,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <span class="keyword">const</span> QMimeData&amp; mime) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_scenario_1_1_interval_drop_handler_html"><div class="ttname"><a href="class_scenario_1_1_interval_drop_handler.html">Scenario::IntervalDropHandler</a></div><div class="ttdef"><b>Definition:</b> ScenarioDropHandler.hpp:111</div></div>
-<div class="ttc" id="aclass_scenario_1_1_ghost_interval_drop_handler_html"><div class="ttname"><a href="class_scenario_1_1_ghost_interval_drop_handler.html">Scenario::GhostIntervalDropHandler</a></div><div class="ttdef"><b>Definition:</b> ScenarioDropHandler.hpp:64</div></div>
+<div class="ttc" id="aclass_scenario_1_1_interval_drop_handler_html"><div class="ttname"><a href="class_scenario_1_1_interval_drop_handler.html">Scenario::IntervalDropHandler</a></div><div class="ttdef"><b>Definition:</b> ScenarioDropHandler.hpp:90</div></div>
+<div class="ttc" id="aclass_scenario_1_1_ghost_interval_drop_handler_html"><div class="ttname"><a href="class_scenario_1_1_ghost_interval_drop_handler.html">Scenario::GhostIntervalDropHandler</a></div><div class="ttdef"><b>Definition:</b> ScenarioDropHandler.hpp:57</div></div>
 <div class="ttc" id="aclass_dataflow_1_1_drop_port_in_scenario_html"><div class="ttname"><a href="class_dataflow_1_1_drop_port_in_scenario.html">Dataflow::DropPortInScenario</a></div><div class="ttdef"><b>Definition:</b> DropPortInScenario.hpp:8</div></div>
 <div class="ttc" id="aclass_scenario_1_1_scenario_presenter_html"><div class="ttname"><a href="class_scenario_1_1_scenario_presenter.html">Scenario::ScenarioPresenter</a></div><div class="ttdef"><b>Definition:</b> ScenarioPresenter.hpp:26</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
-<div class="ttc" id="aclass_dataflow_1_1_drop_port_in_interval_html"><div class="ttname"><a href="class_dataflow_1_1_drop_port_in_interval.html">Dataflow::DropPortInInterval</a></div><div class="ttdoc">What happens when a port is dropped to an interval.</div><div class="ttdef"><b>Definition:</b> DropPortInScenario.hpp:26</div></div>
-<div class="ttc" id="aclass_scenario_1_1_interval_model_html"><div class="ttname"><a href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a></div><div class="ttdef"><b>Definition:</b> IntervalModel.hpp:50</div></div>
+<div class="ttc" id="aclass_dataflow_1_1_drop_port_in_interval_html"><div class="ttname"><a href="class_dataflow_1_1_drop_port_in_interval.html">Dataflow::DropPortInInterval</a></div><div class="ttdoc">What happens when a port is dropped to an interval.</div><div class="ttdef"><b>Definition:</b> DropPortInScenario.hpp:24</div></div>
+<div class="ttc" id="aclass_scenario_1_1_interval_model_html"><div class="ttname"><a href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a></div><div class="ttdef"><b>Definition:</b> IntervalModel.hpp:49</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

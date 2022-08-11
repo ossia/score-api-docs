@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('_containers_accessors_8hpp_source.html
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">using</span> type = <a class="code" href="struct_scenario_1_1_element_traits.html">Scenario::ElementTraits&lt;Scenario::ScenarioInterface, T&gt;</a>;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; sc = (s.*type::accessor)();</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    elements.reserve(elements.size() + sc.size());</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; e : sc)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; e : sc)</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    {</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      elements.push_back(&amp;e);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      visit(e);</div>
@@ -165,9 +165,9 @@ $(document).ready(function(){initNavTree('_containers_accessors_8hpp_source.html
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> visit(<a class="code" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a>&amp; c)</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; proc : c.<a class="code" href="class_scenario_1_1_interval_model.html#af5235bf42e20b416c7b1e6356f6622e8">processes</a>)</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; proc : c.<a class="code" href="class_scenario_1_1_interval_model.html#af5235bf42e20b416c7b1e6356f6622e8">processes</a>)</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">auto</span> scenario = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_scenario_1_1_scenario_interface.html">Scenario::ScenarioInterface</a>*<span class="keyword">&gt;</span>(&amp;proc))</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">auto</span> scenario = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_scenario_1_1_scenario_interface.html">Scenario::ScenarioInterface</a>*<span class="keyword">&gt;</span>(&amp;proc))</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      {</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        visit(*scenario);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      }</div>
@@ -177,12 +177,12 @@ $(document).ready(function(){initNavTree('_containers_accessors_8hpp_source.html
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>
+<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:13</div></div>
 <div class="ttc" id="aclass_scenario_1_1_scenario_interface_html"><div class="ttname"><a href="class_scenario_1_1_scenario_interface.html">Scenario::ScenarioInterface</a></div><div class="ttdef"><b>Definition:</b> ScenarioInterface.hpp:19</div></div>
-<div class="ttc" id="astruct_scenario_1_1_element_traits_html"><div class="ttname"><a href="struct_scenario_1_1_element_traits.html">Scenario::ElementTraits</a></div><div class="ttdef"><b>Definition:</b> ScenarioInterface.hpp:59</div></div>
-<div class="ttc" id="aclass_scenario_1_1_interval_model_html_af5235bf42e20b416c7b1e6356f6622e8"><div class="ttname"><a href="class_scenario_1_1_interval_model.html#af5235bf42e20b416c7b1e6356f6622e8">Scenario::IntervalModel::processes</a></div><div class="ttdeci">score::EntityMap&lt; Process::ProcessModel &gt; processes</div><div class="ttdef"><b>Definition:</b> IntervalModel.hpp:65</div></div>
+<div class="ttc" id="astruct_scenario_1_1_element_traits_html"><div class="ttname"><a href="struct_scenario_1_1_element_traits.html">Scenario::ElementTraits</a></div><div class="ttdef"><b>Definition:</b> ScenarioInterface.hpp:55</div></div>
+<div class="ttc" id="aclass_scenario_1_1_interval_model_html_af5235bf42e20b416c7b1e6356f6622e8"><div class="ttname"><a href="class_scenario_1_1_interval_model.html#af5235bf42e20b416c7b1e6356f6622e8">Scenario::IntervalModel::processes</a></div><div class="ttdeci">score::EntityMap&lt; Process::ProcessModel &gt; processes</div><div class="ttdef"><b>Definition:</b> IntervalModel.hpp:64</div></div>
 <div class="ttc" id="aclass_scenario_1_1_scenario_recursive_find_html"><div class="ttname"><a href="class_scenario_1_1_scenario_recursive_find.html">Scenario::ScenarioRecursiveFind</a></div><div class="ttdef"><b>Definition:</b> ContainersAccessors.hpp:56</div></div>
-<div class="ttc" id="aclass_scenario_1_1_interval_model_html"><div class="ttname"><a href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a></div><div class="ttdef"><b>Definition:</b> IntervalModel.hpp:50</div></div>
+<div class="ttc" id="aclass_scenario_1_1_interval_model_html"><div class="ttname"><a href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a></div><div class="ttdef"><b>Definition:</b> IntervalModel.hpp:49</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

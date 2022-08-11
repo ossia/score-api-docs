@@ -127,48 +127,51 @@ $(document).ready(function(){initNavTree('score-plugin-gfx_2_gfx_2_graph_2_graph
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> unlinkAndRemoveEdge(<a class="code" href="structscore_1_1gfx_1_1_port.html">Port</a>* source, <a class="code" href="structscore_1_1gfx_1_1_port.html">Port</a>* sink);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">void</span> clearEdges();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">void</span> createAllRenderLists(<a class="code" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a> graphicsApi);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> createSingleRenderList(<a class="code" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a>&amp; node, <a class="code" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a> graphicsApi);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> destroyOutputRenderList(<a class="code" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a>&amp; node);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">void</span> relinkGraph();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">void</span> setVSyncCallback(std::function&lt;<span class="keywordtype">void</span>()&gt;);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_graph.html#a956b5fda40333edffaa3655bbf18f4c6">   91</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="structscore_1_1gfx_1_1_graph.html#a956b5fda40333edffaa3655bbf18f4c6">canDoVSync</a>() const noexcept { <span class="keywordflow">return</span> m_outputs.size() == 1; }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keyword">const</span> std::vector&lt;std::shared_ptr&lt;RenderList&gt;&gt;&amp; renderLists() const noexcept</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  { <span class="keywordflow">return</span> m_renderers; }</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">void</span> initializeOutput(OutputNode* output, <a class="code" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a> graphicsApi);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">void</span> createOutputRenderList(OutputNode&amp; output);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">void</span> recreateOutputRenderList(OutputNode&amp; output);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  std::shared_ptr&lt;RenderList&gt; createRenderList(OutputNode*, std::shared_ptr&lt;RenderState&gt; state);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  std::vector&lt;std::shared_ptr&lt;RenderList&gt;&gt; m_renderers;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  std::vector&lt;std::shared_ptr&lt;Window&gt;&gt; m_unused_windows;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  std::function&lt;void()&gt; m_vsync_callback;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  std::vector&lt;score::gfx::Node*&gt; m_nodes;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  std::vector&lt;Edge*&gt; m_edges;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">void</span> clearEdges();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> createAllRenderLists(<a class="code" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a> graphicsApi);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> createSingleRenderList(<a class="code" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a>&amp; node, <a class="code" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a> graphicsApi);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">void</span> destroyOutputRenderList(<a class="code" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a>&amp; node);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> relinkGraph();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">void</span> setVSyncCallback(std::function&lt;<span class="keywordtype">void</span>()&gt;);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_graph.html#a956b5fda40333edffaa3655bbf18f4c6">   90</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="structscore_1_1gfx_1_1_graph.html#a956b5fda40333edffaa3655bbf18f4c6">canDoVSync</a>() const noexcept { <span class="keywordflow">return</span> m_outputs.size() == 1; }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keyword">const</span> std::vector&lt;std::shared_ptr&lt;RenderList&gt;&gt;&amp; renderLists() const noexcept</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">return</span> m_renderers;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">void</span> initializeOutput(OutputNode* output, <a class="code" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a> graphicsApi);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">void</span> createOutputRenderList(OutputNode&amp; output);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">void</span> recreateOutputRenderList(OutputNode&amp; output);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  std::shared_ptr&lt;RenderList&gt;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  createRenderList(OutputNode*, std::shared_ptr&lt;RenderState&gt; state);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  std::vector&lt;std::shared_ptr&lt;RenderList&gt;&gt; m_renderers;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  std::vector&lt;std::shared_ptr&lt;Window&gt;&gt; m_unused_windows;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  std::function&lt;void()&gt; m_vsync_callback;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  std::vector&lt;OutputNode*&gt; m_outputs;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;};</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  std::vector&lt;score::gfx::Node*&gt; m_nodes;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  std::vector&lt;Edge*&gt; m_edges;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  std::vector&lt;OutputNode*&gt; m_outputs;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;};</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a></div><div class="ttdoc">Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)</div><div class="ttdef"><b>Definition:</b> OutputNode.hpp:23</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a></div><div class="ttdoc">Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)</div><div class="ttdef"><b>Definition:</b> OutputNode.hpp:21</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_graph_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_graph.html">score::gfx::Graph</a></div><div class="ttdoc">Represents a graph of renderers.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Graph.hpp:15</div></div>
-<div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition:</b> Vulkan.hpp:9</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition:</b> Vulkan.hpp:10</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_port_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a></div><div class="ttdoc">Port of a score::gfx::Node.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:44</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a></div><div class="ttdoc">Root data model for visual nodes.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Node.hpp:44</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html_a5b6a96306e1a02ccc56d8bb785bc6734"><div class="ttname"><a href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">score::gfx::GraphicsApi</a></div><div class="ttdeci">GraphicsApi</div><div class="ttdoc">Available graphics APIs to use.</div><div class="ttdef"><b>Definition:</b> RenderState.hpp:11</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_graph_html_a956b5fda40333edffaa3655bbf18f4c6"><div class="ttname"><a href="structscore_1_1gfx_1_1_graph.html#a956b5fda40333edffaa3655bbf18f4c6">score::gfx::Graph::canDoVSync</a></div><div class="ttdeci">bool canDoVSync() const noexcept</div><div class="ttdoc">True if the graph supports being driven by the screen vertical synchronization.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Graph.hpp:91</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_graph_html_a956b5fda40333edffaa3655bbf18f4c6"><div class="ttname"><a href="structscore_1_1gfx_1_1_graph.html#a956b5fda40333edffaa3655bbf18f4c6">score::gfx::Graph::canDoVSync</a></div><div class="ttdeci">bool canDoVSync() const noexcept</div><div class="ttdoc">True if the graph supports being driven by the screen vertical synchronization.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Graph.hpp:90</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

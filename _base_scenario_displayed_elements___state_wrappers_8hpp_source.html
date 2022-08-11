@@ -129,59 +129,47 @@ $(document).ready(function(){initNavTree('_base_scenario_displayed_elements___st
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_scenario_1_1_move_event_in_base_scenario___state_wrapper.html#a6f112d5c5b0233900dbcc0be58300789">   29</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code" href="class_scenario_1_1_move_event_in_base_scenario___state_wrapper.html#a6f112d5c5b0233900dbcc0be58300789">make</a>(<span class="keyword">const</span> ToolPalette_T&amp; palette, QState* waitState, QState&amp; sm)</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">auto</span> moveEvent = <span class="keyword">new</span> <a class="code" href="class_scenario_1_1_move_event_state.html">Scenario::MoveEventState</a>&lt;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="class_scenario_1_1_command_1_1_move_base_event.html">Command::MoveBaseEvent&lt;Scenario_T&gt;</a>,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        Scenario_T,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        ToolPalette_T&gt;{</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        palette,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        palette.model(),</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        palette.context().context.commandStack,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        palette.context().context.objectLocker,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        &amp;sm};</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    score::make_transition&lt;Scenario::ClickOnEndState_Transition&lt;Scenario_T&gt;&gt;(</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        waitState, moveEvent, *moveEvent);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    score::make_transition&lt;Scenario::ClickOnEndEvent_Transition&lt;Scenario_T&gt;&gt;(</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        waitState, moveEvent, *moveEvent);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    moveEvent-&gt;addTransition(moveEvent, finishedState(), waitState);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> moveEvent;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_scenario_1_1_move_time_sync_in_base_scenario___state_wrapper.html">   52</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_scenario_1_1_move_time_sync_in_base_scenario___state_wrapper.html">MoveTimeSyncInBaseScenario_StateWrapper</a></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Scenario_T, <span class="keyword">typename</span> ToolPalette_T&gt;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_scenario_1_1_move_time_sync_in_base_scenario___state_wrapper.html#aa4f2b17dd2219e0256e85a321d9136e6">   56</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code" href="class_scenario_1_1_move_time_sync_in_base_scenario___state_wrapper.html#aa4f2b17dd2219e0256e85a321d9136e6">make</a>(<span class="keyword">const</span> ToolPalette_T&amp; palette, QState* waitState, QState&amp; sm)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">auto</span> moveTimeSync = <span class="keyword">new</span> <a class="code" href="class_scenario_1_1_move_time_sync_state.html">Scenario::MoveTimeSyncState</a>&lt;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="class_scenario_1_1_command_1_1_move_base_event.html">Command::MoveBaseEvent&lt;Scenario_T&gt;</a>,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        Scenario_T,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        ToolPalette_T&gt;{</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        palette,</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        palette.model(),</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        palette.context().context.commandStack,</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        palette.context().context.objectLocker,</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        &amp;sm};</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    score::make_transition&lt;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="class_scenario_1_1_click_on_end_time_sync___transition.html">Scenario::ClickOnEndTimeSync_Transition&lt;Scenario_T&gt;</a>&gt;(</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        waitState, moveTimeSync, *moveTimeSync);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    moveTimeSync-&gt;addTransition(moveTimeSync, finishedState(), waitState);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> moveTimeSync;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="class_scenario_1_1_command_1_1_move_base_event.html">Command::MoveBaseEvent&lt;Scenario_T&gt;</a>, Scenario_T, ToolPalette_T&gt;{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        palette, palette.model(), palette.context().context.commandStack,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        palette.context().context.objectLocker, &amp;sm};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    score::make_transition&lt;Scenario::ClickOnEndState_Transition&lt;Scenario_T&gt;&gt;(</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        waitState, moveEvent, *moveEvent);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    score::make_transition&lt;Scenario::ClickOnEndEvent_Transition&lt;Scenario_T&gt;&gt;(</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        waitState, moveEvent, *moveEvent);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    moveEvent-&gt;addTransition(moveEvent, finishedState(), waitState);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> moveEvent;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_scenario_1_1_move_time_sync_in_base_scenario___state_wrapper.html">   47</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_scenario_1_1_move_time_sync_in_base_scenario___state_wrapper.html">MoveTimeSyncInBaseScenario_StateWrapper</a></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Scenario_T, <span class="keyword">typename</span> ToolPalette_T&gt;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_scenario_1_1_move_time_sync_in_base_scenario___state_wrapper.html#aa4f2b17dd2219e0256e85a321d9136e6">   51</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code" href="class_scenario_1_1_move_time_sync_in_base_scenario___state_wrapper.html#aa4f2b17dd2219e0256e85a321d9136e6">make</a>(<span class="keyword">const</span> ToolPalette_T&amp; palette, QState* waitState, QState&amp; sm)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">auto</span> moveTimeSync = <span class="keyword">new</span> <a class="code" href="class_scenario_1_1_move_time_sync_state.html">Scenario::MoveTimeSyncState</a>&lt;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="class_scenario_1_1_command_1_1_move_base_event.html">Command::MoveBaseEvent&lt;Scenario_T&gt;</a>, Scenario_T, ToolPalette_T&gt;{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        palette, palette.model(), palette.context().context.commandStack,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        palette.context().context.objectLocker, &amp;sm};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    score::make_transition&lt;Scenario::ClickOnEndTimeSync_Transition&lt;Scenario_T&gt;&gt;(</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        waitState, moveTimeSync, *moveTimeSync);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    moveTimeSync-&gt;addTransition(moveTimeSync, finishedState(), waitState);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> moveTimeSync;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>
-<div class="ttc" id="aclass_scenario_1_1_move_time_sync_state_html"><div class="ttname"><a href="class_scenario_1_1_move_time_sync_state.html">Scenario::MoveTimeSyncState</a></div><div class="ttdef"><b>Definition:</b> MoveStates.hpp:122</div></div>
+<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:13</div></div>
+<div class="ttc" id="aclass_scenario_1_1_move_time_sync_state_html"><div class="ttname"><a href="class_scenario_1_1_move_time_sync_state.html">Scenario::MoveTimeSyncState</a></div><div class="ttdef"><b>Definition:</b> MoveStates.hpp:115</div></div>
 <div class="ttc" id="aclass_scenario_1_1_move_event_in_base_scenario___state_wrapper_html_a6f112d5c5b0233900dbcc0be58300789"><div class="ttname"><a href="class_scenario_1_1_move_event_in_base_scenario___state_wrapper.html#a6f112d5c5b0233900dbcc0be58300789">Scenario::MoveEventInBaseScenario_StateWrapper::make</a></div><div class="ttdeci">static auto make(const ToolPalette_T &amp;palette, QState *waitState, QState &amp;sm)</div><div class="ttdef"><b>Definition:</b> BaseScenarioDisplayedElements_StateWrappers.hpp:29</div></div>
-<div class="ttc" id="aclass_scenario_1_1_move_event_state_html"><div class="ttname"><a href="class_scenario_1_1_move_event_state.html">Scenario::MoveEventState</a></div><div class="ttdef"><b>Definition:</b> MoveAndMergeState.hpp:95</div></div>
+<div class="ttc" id="aclass_scenario_1_1_move_event_state_html"><div class="ttname"><a href="class_scenario_1_1_move_event_state.html">Scenario::MoveEventState</a></div><div class="ttdef"><b>Definition:</b> MoveAndMergeState.hpp:94</div></div>
 <div class="ttc" id="aclass_scenario_1_1_move_event_in_base_scenario___state_wrapper_html"><div class="ttname"><a href="class_scenario_1_1_move_event_in_base_scenario___state_wrapper.html">Scenario::MoveEventInBaseScenario_StateWrapper</a></div><div class="ttdef"><b>Definition:</b> BaseScenarioDisplayedElements_StateWrappers.hpp:25</div></div>
-<div class="ttc" id="aclass_scenario_1_1_move_time_sync_in_base_scenario___state_wrapper_html_aa4f2b17dd2219e0256e85a321d9136e6"><div class="ttname"><a href="class_scenario_1_1_move_time_sync_in_base_scenario___state_wrapper.html#aa4f2b17dd2219e0256e85a321d9136e6">Scenario::MoveTimeSyncInBaseScenario_StateWrapper::make</a></div><div class="ttdeci">static auto make(const ToolPalette_T &amp;palette, QState *waitState, QState &amp;sm)</div><div class="ttdef"><b>Definition:</b> BaseScenarioDisplayedElements_StateWrappers.hpp:56</div></div>
-<div class="ttc" id="aclass_scenario_1_1_move_time_sync_in_base_scenario___state_wrapper_html"><div class="ttname"><a href="class_scenario_1_1_move_time_sync_in_base_scenario___state_wrapper.html">Scenario::MoveTimeSyncInBaseScenario_StateWrapper</a></div><div class="ttdef"><b>Definition:</b> BaseScenarioDisplayedElements_StateWrappers.hpp:52</div></div>
-<div class="ttc" id="aclass_scenario_1_1_click_on_end_time_sync___transition_html"><div class="ttname"><a href="class_scenario_1_1_click_on_end_time_sync___transition.html">Scenario::ClickOnEndTimeSync_Transition</a></div><div class="ttdef"><b>Definition:</b> TimeSyncTransitions.hpp:28</div></div>
+<div class="ttc" id="aclass_scenario_1_1_move_time_sync_in_base_scenario___state_wrapper_html_aa4f2b17dd2219e0256e85a321d9136e6"><div class="ttname"><a href="class_scenario_1_1_move_time_sync_in_base_scenario___state_wrapper.html#aa4f2b17dd2219e0256e85a321d9136e6">Scenario::MoveTimeSyncInBaseScenario_StateWrapper::make</a></div><div class="ttdeci">static auto make(const ToolPalette_T &amp;palette, QState *waitState, QState &amp;sm)</div><div class="ttdef"><b>Definition:</b> BaseScenarioDisplayedElements_StateWrappers.hpp:51</div></div>
+<div class="ttc" id="aclass_scenario_1_1_move_time_sync_in_base_scenario___state_wrapper_html"><div class="ttname"><a href="class_scenario_1_1_move_time_sync_in_base_scenario___state_wrapper.html">Scenario::MoveTimeSyncInBaseScenario_StateWrapper</a></div><div class="ttdef"><b>Definition:</b> BaseScenarioDisplayedElements_StateWrappers.hpp:47</div></div>
 <div class="ttc" id="aclass_scenario_1_1_command_1_1_move_base_event_html"><div class="ttname"><a href="class_scenario_1_1_command_1_1_move_base_event.html">Scenario::Command::MoveBaseEvent</a></div><div class="ttdef"><b>Definition:</b> MoveBaseEvent.hpp:29</div></div>
 <div class="ttc" id="aclass_scenario_1_1_do_not_move_interval___state_wrapper_html"><div class="ttname"><a href="class_scenario_1_1_do_not_move_interval___state_wrapper.html">Scenario::DoNotMoveInterval_StateWrapper</a></div><div class="ttdef"><b>Definition:</b> BaseScenarioDisplayedElements_StateWrappers.hpp:14</div></div>
 <!-- HTML footer for doxygen 1.8.8-->

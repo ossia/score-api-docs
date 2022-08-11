@@ -99,9 +99,9 @@ $(document).ready(function(){initNavTree('_event_component_8hpp_source.html','')
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;LocalTree/LocalTreeComponent.hpp&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Scenario/Document/Event/EventModel.hpp&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Scenario/Document/Event/EventModel.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;LocalTree/LocalTreeComponent.hpp&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_local_tree.html">LocalTree</a></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
@@ -110,22 +110,20 @@ $(document).ready(function(){initNavTree('_event_component_8hpp_source.html','')
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  COMMON_COMPONENT_METADATA(<span class="stringliteral">&quot;918b757d-d304-4362-bbd3-120f84e229fe&quot;</span>)</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <a class="code" href="class_local_tree_1_1_event.html">Event</a>(</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;      ossia::net::node_base&amp; parent,</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;      <a class="code" href="class_scenario_1_1_event_model.html">Scenario::EventModel</a>&amp; event,</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; doc,</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      QObject* parent_comp);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  ~<a class="code" href="class_local_tree_1_1_event.html">Event</a>();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">bool</span> m_setting{};</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;      ossia::net::node_base&amp; parent, <a class="code" href="class_scenario_1_1_event_model.html">Scenario::EventModel</a>&amp; event,</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; doc, QObject* parent_comp);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  ~<a class="code" href="class_local_tree_1_1_event.html">Event</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordtype">bool</span> m_setting{};</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_local_tree_1_1_event_html"><div class="ttname"><a href="class_local_tree_1_1_event.html">LocalTree::Event</a></div><div class="ttdef"><b>Definition:</b> EventComponent.hpp:8</div></div>
 <div class="ttc" id="anamespace_local_tree_html"><div class="ttname"><a href="namespace_local_tree.html">LocalTree</a></div><div class="ttdoc">Local tree provides a way to extend the tree given through the Engine::Network::LocalDevice.</div><div class="ttdef"><b>Definition:</b> BaseCallbackWrapper.hpp:8</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
-<div class="ttc" id="aclass_scenario_1_1_event_model_html"><div class="ttname"><a href="class_scenario_1_1_event_model.html">Scenario::EventModel</a></div><div class="ttdef"><b>Definition:</b> EventModel.hpp:33</div></div>
+<div class="ttc" id="aclass_scenario_1_1_event_model_html"><div class="ttname"><a href="class_scenario_1_1_event_model.html">Scenario::EventModel</a></div><div class="ttdef"><b>Definition:</b> EventModel.hpp:35</div></div>
 <div class="ttc" id="aclass_local_tree_1_1_component_html"><div class="ttname"><a href="class_local_tree_1_1_component.html">LocalTree::Component</a></div><div class="ttdef"><b>Definition:</b> LocalTreeComponent.hpp:11</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

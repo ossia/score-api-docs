@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('plugins_2score-plugin-vst_2_vst_2_wind
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">static</span> ERect getRect(AEffect&amp; e);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <a class="code" href="classvst_1_1_window.html">Window</a>(<span class="keyword">const</span> <a class="code" href="classvst_1_1_model.html">Model</a>&amp; e, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx, QWidget* parent);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <a class="code" href="classvst_1_1_window.html">Window</a>(<span class="keyword">const</span> Model&amp; e, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx, QWidget* parent);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  ~<a class="code" href="classvst_1_1_window.html">Window</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">void</span> resize(<span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h);</div>
@@ -123,13 +123,13 @@ $(document).ready(function(){initNavTree('plugins_2score-plugin-vst_2_vst_2_wind
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> setup_rect(QWidget* container, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordtype">void</span> refreshTimer();</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="classvst_1_1_window.html">Window</a>(<span class="keyword">const</span> <a class="code" href="classvst_1_1_model.html">Model</a>&amp; e, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="classvst_1_1_window.html">Window</a>(<span class="keyword">const</span> Model&amp; e, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">void</span> resizeEvent(QResizeEvent* event) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">void</span> closeEvent(QCloseEvent* event) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  std::weak_ptr&lt;AEffectWrapper&gt; effect;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">const</span> <a class="code" href="classvst_1_1_model.html">Model</a>&amp; m_model;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">const</span> Model&amp; m_model;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
@@ -137,7 +137,6 @@ $(document).ready(function(){initNavTree('plugins_2score-plugin-vst_2_vst_2_wind
 </div><!-- doc-content -->
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
 <div class="ttc" id="aclassvst_1_1_window_html"><div class="ttname"><a href="classvst_1_1_window.html">vst::Window</a></div><div class="ttdef"><b>Definition:</b> plugins/score-plugin-vst/Vst/Window.hpp:12</div></div>
-<div class="ttc" id="aclassvst_1_1_model_html"><div class="ttname"><a href="classvst_1_1_model.html">vst::Model</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst/Vst/EffectModel.hpp:77</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

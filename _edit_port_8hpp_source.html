@@ -99,13 +99,13 @@ $(document).ready(function(){initNavTree('_edit_port_8hpp_source.html',''); init
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Process/Commands/ProcessCommandFactory.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Process/Dataflow/Port.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Process/Process.hpp&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;State/Address.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Device/Address/AddressSettings.hpp&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Device/Address/AddressSettings.hpp&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;State/Address.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Process/Commands/ProcessCommandFactory.hpp&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;Process/Dataflow/Port.hpp&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;Process/Process.hpp&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;score/command/Command.hpp&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;score/command/PropertyCommand.hpp&gt;</span></div>
@@ -117,59 +117,53 @@ $(document).ready(function(){initNavTree('_edit_port_8hpp_source.html',''); init
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_process_1_1_change_port_settings.html">   17</a></span>&#160;<span class="keyword">class </span>SCORE_LIB_PROCESS_EXPORT <a class="code" href="class_process_1_1_change_port_settings.html">ChangePortSettings</a> final : <span class="keyword">public</span> <a class="code" href="classscore_1_1_command.html">score::Command</a></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  SCORE_COMMAND_DECL(</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      Process::CommandFactoryName(),</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <a class="code" href="class_process_1_1_change_port_settings.html">ChangePortSettings</a>,</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <span class="stringliteral">&quot;Edit a node port&quot;</span>)</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="class_process_1_1_change_port_settings.html">ChangePortSettings</a>(<span class="keyword">const</span> <a class="code" href="class_process_1_1_port.html">Process::Port</a>&amp; p, <a class="code" href="struct_device_1_1_full_address_accessor_settings.html">Device::FullAddressAccessorSettings</a> stgs);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">void</span> undo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordtype">void</span> redo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> serializeImpl(<a class="code" href="struct_data_stream_input.html">DataStreamInput</a>&amp; s) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> deserializeImpl(<a class="code" href="struct_data_stream_output.html">DataStreamOutput</a>&amp; s) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="class_path.html">Path&lt;Process::Port&gt;</a> m_model;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="struct_device_1_1_full_address_accessor_settings.html">Device::FullAddressAccessorSettings</a> m_old, m_new;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      Process::CommandFactoryName(), <a class="code" href="class_process_1_1_change_port_settings.html">ChangePortSettings</a>, <span class="stringliteral">&quot;Edit a node port&quot;</span>)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <a class="code" href="class_process_1_1_change_port_settings.html">ChangePortSettings</a>(<span class="keyword">const</span> <a class="code" href="class_process_1_1_port.html">Process::Port</a>&amp; p, <a class="code" href="struct_device_1_1_full_address_accessor_settings.html">Device::FullAddressAccessorSettings</a> stgs);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordtype">void</span> undo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">void</span> redo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">void</span> serializeImpl(<a class="code" href="struct_data_stream_input.html">DataStreamInput</a>&amp; s) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">void</span> deserializeImpl(<a class="code" href="struct_data_stream_output.html">DataStreamOutput</a>&amp; s) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <a class="code" href="class_path.html">Path&lt;Process::Port&gt;</a> m_model;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="struct_device_1_1_full_address_accessor_settings.html">Device::FullAddressAccessorSettings</a> m_old, m_new;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;PROPERTY_COMMAND_T(</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="namespace_process.html">Process</a>,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    SetPropagate,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    AudioOutlet::p_propagate,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="stringliteral">&quot;Set port propagation&quot;</span>)</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_process.html">Process</a>::SetPropagate)</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;PROPERTY_COMMAND_T(<a class="code" href="namespace_process.html">Process</a>, ChangePortAddress, Port::p_address, &quot;Set port address&quot;)</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_process.html">Process</a>::ChangePortAddress)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;PROPERTY_COMMAND_T(<a class="code" href="namespace_process.html">Process</a>, SetValue, <a class="code" href="class_control_inlet.html">ControlInlet</a>::p_value, &quot;Set port value&quot;)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_process.html">Process</a>::SetValue)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;PROPERTY_COMMAND_T(<a class="code" href="namespace_process.html">Process</a>, SetGain, <a class="code" href="class_audio_outlet.html">AudioOutlet</a>::p_gain, &quot;Set port gain&quot;)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_process.html">Process</a>::SetGain)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;PROPERTY_COMMAND_T(<a class="code" href="namespace_process.html">Process</a>, SetPan, <a class="code" href="class_audio_outlet.html">AudioOutlet</a>::p_pan, &quot;Set port pan&quot;)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_process.html">Process</a>::SetPan)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;PROPERTY_COMMAND_T(</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="namespace_process.html">Process</a>, SetPropagate, AudioOutlet::p_propagate, <span class="stringliteral">&quot;Set port propagation&quot;</span>)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_process.html">Process</a>::SetPropagate)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;PROPERTY_COMMAND_T(<a class="code" href="namespace_process.html">Process</a>, ChangePortAddress, Port::p_address, &quot;Set port address&quot;)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_process.html">Process</a>::ChangePortAddress)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;PROPERTY_COMMAND_T(<a class="code" href="namespace_process.html">Process</a>, SetValue, <a class="code" href="class_control_inlet.html">ControlInlet</a>::p_value, &quot;Set port value&quot;)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_process.html">Process</a>::SetValue)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;PROPERTY_COMMAND_T(<a class="code" href="namespace_process.html">Process</a>, SetGain, <a class="code" href="class_audio_outlet.html">AudioOutlet</a>::p_gain, &quot;Set port gain&quot;)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_process.html">Process</a>::SetGain)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;PROPERTY_COMMAND_T(<a class="code" href="namespace_process.html">Process</a>, SetPan, <a class="code" href="class_audio_outlet.html">AudioOutlet</a>::p_pan, &quot;Set port pan&quot;)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;SCORE_COMMAND_DECL_T(<a class="code" href="namespace_process.html">Process</a>::SetPan)</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1371</div></div>
+<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1326</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
 <div class="ttc" id="aclass_process_1_1_change_port_settings_html"><div class="ttname"><a href="class_process_1_1_change_port_settings.html">Process::ChangePortSettings</a></div><div class="ttdef"><b>Definition:</b> EditPort.hpp:17</div></div>
-<div class="ttc" id="aclass_audio_outlet_html"><div class="ttname"><a href="class_audio_outlet.html">AudioOutlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:277</div></div>
+<div class="ttc" id="aclass_audio_outlet_html"><div class="ttname"><a href="class_audio_outlet.html">AudioOutlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:253</div></div>
 <div class="ttc" id="aclassscore_1_1_command_html"><div class="ttname"><a href="classscore_1_1_command.html">score::Command</a></div><div class="ttdoc">The Command class.</div><div class="ttdef"><b>Definition:</b> Command.hpp:33</div></div>
-<div class="ttc" id="aclass_control_inlet_html"><div class="ttname"><a href="class_control_inlet.html">ControlInlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:92</div></div>
-<div class="ttc" id="astruct_data_stream_output_html"><div class="ttname"><a href="struct_data_stream_output.html">DataStreamOutput</a></div><div class="ttdef"><b>Definition:</b> DataStreamHelpers.hpp:137</div></div>
-<div class="ttc" id="aclass_process_1_1_port_html"><div class="ttname"><a href="class_process_1_1_port.html">Process::Port</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:117</div></div>
+<div class="ttc" id="aclass_control_inlet_html"><div class="ttname"><a href="class_control_inlet.html">ControlInlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:82</div></div>
+<div class="ttc" id="astruct_data_stream_output_html"><div class="ttname"><a href="struct_data_stream_output.html">DataStreamOutput</a></div><div class="ttdef"><b>Definition:</b> DataStreamHelpers.hpp:134</div></div>
+<div class="ttc" id="aclass_process_1_1_port_html"><div class="ttname"><a href="class_process_1_1_port.html">Process::Port</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:101</div></div>
 <div class="ttc" id="aclass_path_html"><div class="ttname"><a href="class_path.html">Path&lt; Process::Port &gt;</a></div></div>
-<div class="ttc" id="astruct_device_1_1_full_address_accessor_settings_html"><div class="ttname"><a href="struct_device_1_1_full_address_accessor_settings.html">Device::FullAddressAccessorSettings</a></div><div class="ttdef"><b>Definition:</b> AddressSettings.hpp:138</div></div>
-<div class="ttc" id="astruct_data_stream_input_html"><div class="ttname"><a href="struct_data_stream_input.html">DataStreamInput</a></div><div class="ttdef"><b>Definition:</b> DataStreamHelpers.hpp:133</div></div>
+<div class="ttc" id="astruct_device_1_1_full_address_accessor_settings_html"><div class="ttname"><a href="struct_device_1_1_full_address_accessor_settings.html">Device::FullAddressAccessorSettings</a></div><div class="ttdef"><b>Definition:</b> AddressSettings.hpp:130</div></div>
+<div class="ttc" id="astruct_data_stream_input_html"><div class="ttname"><a href="struct_data_stream_input.html">DataStreamInput</a></div><div class="ttdef"><b>Definition:</b> DataStreamHelpers.hpp:130</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

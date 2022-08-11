@@ -102,11 +102,11 @@ $(document).ready(function(){initNavTree('_scenario_actions_8hpp_source.html',''
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Process/Actions/ProcessActions.hpp&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Process/Layer/LayerContextMenu.hpp&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;score/selection/SelectionStack.hpp&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_action_8hpp.html">score/actions/Action.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Scenario/Document/ScenarioDocument/ScenarioDocumentModel.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Scenario/Process/ScenarioModel.hpp&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;Scenario/Document/ScenarioDocument/ScenarioDocumentModel.hpp&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;Scenario/Process/ScenarioModel.hpp&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_action_8hpp.html">score/actions/Action.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;score/selection/SelectionStack.hpp&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_scenario.html">Scenario</a></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
@@ -130,250 +130,153 @@ $(document).ready(function(){initNavTree('_scenario_actions_8hpp_source.html',''
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> action(<a class="code" href="classscore_1_1_action_manager.html">score::ActionManager</a>&amp; mgr, <a class="code" href="structscore_1_1_document_context.html">score::MaybeDocument</a> doc) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_scenario_1_1_enable_when_scenario_interface_instant_object.html">   35</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_scenario_1_1_enable_when_scenario_interface_instant_object.html">EnableWhenScenarioInterfaceInstantObject</a> final</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    : <span class="keyword">public</span> <a class="code" href="structscore_1_1_action_condition.html">score::ActionCondition</a></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="class_scenario_1_1_enable_when_scenario_interface_instant_object.html">EnableWhenScenarioInterfaceInstantObject</a>();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">static</span> <a class="code" href="class_string_key.html">score::ActionConditionKey</a> static_key();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> action(<a class="code" href="classscore_1_1_action_manager.html">score::ActionManager</a>&amp; mgr, <a class="code" href="structscore_1_1_document_context.html">score::MaybeDocument</a> doc) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_scenario_1_1_enable_when_scenario_interface_object.html">   48</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_scenario_1_1_enable_when_scenario_interface_object.html">EnableWhenScenarioInterfaceObject</a> final : <span class="keyword">public</span> <a class="code" href="structscore_1_1_action_condition.html">score::ActionCondition</a></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="class_scenario_1_1_enable_when_scenario_interface_object.html">EnableWhenScenarioInterfaceObject</a>();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">static</span> <a class="code" href="class_string_key.html">score::ActionConditionKey</a> static_key();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> action(<a class="code" href="classscore_1_1_action_manager.html">score::ActionManager</a>&amp; mgr, <a class="code" href="structscore_1_1_document_context.html">score::MaybeDocument</a> doc) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<a class="code" href="_action_8hpp.html#a3545013abd611231a3fd12761826e3c9">SCORE_DECLARE_DOCUMENT_CONDITION</a>(<a class="code" href="class_scenario_1_1_scenario_document_model.html">Scenario::ScenarioDocumentModel</a>)</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;SCORE_DECLARE_FOCUSED_PROCESS_CONDITION(<a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>)</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;SCORE_DECLARE_FOCUSED_PROCESS_CONDITION(<a class="code" href="class_scenario_1_1_scenario_interface.html">Scenario::ScenarioInterface</a>)</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<a class="code" href="_action_8hpp.html#a721a700c0245029b9eb7c39c18275a3c">SCORE_DECLARE_SELECTED_OBJECT_CONDITION</a>(<a class="code" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a>)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<a class="code" href="_action_8hpp.html#a721a700c0245029b9eb7c39c18275a3c">SCORE_DECLARE_SELECTED_OBJECT_CONDITION</a>(<a class="code" href="class_scenario_1_1_event_model.html">Scenario::EventModel</a>)</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<a class="code" href="_action_8hpp.html#a721a700c0245029b9eb7c39c18275a3c">SCORE_DECLARE_SELECTED_OBJECT_CONDITION</a>(<a class="code" href="class_scenario_1_1_state_model.html">Scenario::StateModel</a>)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<a class="code" href="_action_8hpp.html#a721a700c0245029b9eb7c39c18275a3c">SCORE_DECLARE_SELECTED_OBJECT_CONDITION</a>(<a class="code" href="class_scenario_1_1_time_sync_model.html">Scenario::TimeSyncModel</a>)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">// View</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;SCORE_DECLARE_ACTION(</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    SelectAll,</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="stringliteral">&quot;&amp;Select All&quot;</span>,</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="namespace_scenario.html">Scenario</a>,</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    QKeySequence::SelectAll)</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;SCORE_DECLARE_ACTION(</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    DeselectAll,</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="stringliteral">&quot;&amp;Deselect All&quot;</span>,</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="namespace_scenario.html">Scenario</a>,</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    QKeySequence::Deselect)</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_scenario_1_1_enable_when_scenario_interface_instant_object.html">   35</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_scenario_1_1_enable_when_scenario_interface_instant_object.html">EnableWhenScenarioInterfaceInstantObject</a> final : <span class="keyword">public</span> <a class="code" href="structscore_1_1_action_condition.html">score::ActionCondition</a></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="class_scenario_1_1_enable_when_scenario_interface_instant_object.html">EnableWhenScenarioInterfaceInstantObject</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">static</span> <a class="code" href="class_string_key.html">score::ActionConditionKey</a> static_key();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> action(<a class="code" href="classscore_1_1_action_manager.html">score::ActionManager</a>&amp; mgr, <a class="code" href="structscore_1_1_document_context.html">score::MaybeDocument</a> doc) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_scenario_1_1_enable_when_scenario_interface_object.html">   47</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_scenario_1_1_enable_when_scenario_interface_object.html">EnableWhenScenarioInterfaceObject</a> final : <span class="keyword">public</span> <a class="code" href="structscore_1_1_action_condition.html">score::ActionCondition</a></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="class_scenario_1_1_enable_when_scenario_interface_object.html">EnableWhenScenarioInterfaceObject</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">static</span> <a class="code" href="class_string_key.html">score::ActionConditionKey</a> static_key();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> action(<a class="code" href="classscore_1_1_action_manager.html">score::ActionManager</a>&amp; mgr, <a class="code" href="structscore_1_1_document_context.html">score::MaybeDocument</a> doc) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<a class="code" href="_action_8hpp.html#a3545013abd611231a3fd12761826e3c9">SCORE_DECLARE_DOCUMENT_CONDITION</a>(<a class="code" href="class_scenario_1_1_scenario_document_model.html">Scenario::ScenarioDocumentModel</a>)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;SCORE_DECLARE_FOCUSED_PROCESS_CONDITION(<a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;SCORE_DECLARE_FOCUSED_PROCESS_CONDITION(<a class="code" href="class_scenario_1_1_scenario_interface.html">Scenario::ScenarioInterface</a>)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<a class="code" href="_action_8hpp.html#a721a700c0245029b9eb7c39c18275a3c">SCORE_DECLARE_SELECTED_OBJECT_CONDITION</a>(<a class="code" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a>)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<a class="code" href="_action_8hpp.html#a721a700c0245029b9eb7c39c18275a3c">SCORE_DECLARE_SELECTED_OBJECT_CONDITION</a>(<a class="code" href="class_scenario_1_1_event_model.html">Scenario::EventModel</a>)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<a class="code" href="_action_8hpp.html#a721a700c0245029b9eb7c39c18275a3c">SCORE_DECLARE_SELECTED_OBJECT_CONDITION</a>(<a class="code" href="class_scenario_1_1_state_model.html">Scenario::StateModel</a>)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<a class="code" href="_action_8hpp.html#a721a700c0245029b9eb7c39c18275a3c">SCORE_DECLARE_SELECTED_OBJECT_CONDITION</a>(<a class="code" href="class_scenario_1_1_time_sync_model.html">Scenario::TimeSyncModel</a>)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">// View</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;SCORE_DECLARE_ACTION(SelectAll, <span class="stringliteral">&quot;&amp;Select All&quot;</span>, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence::SelectAll)</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;SCORE_DECLARE_ACTION(DeselectAll, <span class="stringliteral">&quot;&amp;Deselect All&quot;</span>, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence::Deselect)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;SCORE_DECLARE_ACTION(</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    SelectTop, <span class="stringliteral">&quot;Select &amp;Top&quot;</span>, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence{QObject::tr(<span class="stringliteral">&quot;Ctrl+Shift+T&quot;</span>)})</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">// Transport</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;SCORE_DECLARE_ACTION(Play, <span class="stringliteral">&quot;&amp;Play&quot;</span>, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::Key_Space)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;SCORE_DECLARE_ACTION(PlayGlobal, <span class="stringliteral">&quot;&amp;Play Root&quot;</span>, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence(<span class="stringliteral">&quot;Shift+Space&quot;</span>))</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;SCORE_DECLARE_ACTION(Stop, &quot;&amp;Stop&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::Key_Return)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;SCORE_DECLARE_ACTION(GoToStart, &quot;&amp;Go to Start&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::Key_Back)</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;SCORE_DECLARE_ACTION(GoToEnd, &quot;Go to &amp;End&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::Key_Forward)</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;SCORE_DECLARE_ACTION(</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    SelectTop,</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="stringliteral">&quot;Select &amp;Top&quot;</span>,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="namespace_scenario.html">Scenario</a>,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    QKeySequence{QObject::tr(<span class="stringliteral">&quot;Ctrl+Shift+T&quot;</span>)})</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">// Transport</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;SCORE_DECLARE_ACTION(Play, <span class="stringliteral">&quot;&amp;Play&quot;</span>, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::Key_Space)</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;SCORE_DECLARE_ACTION(</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    PlayGlobal,</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="stringliteral">&quot;&amp;Play Root&quot;</span>,</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="namespace_scenario.html">Scenario</a>,</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    QKeySequence(<span class="stringliteral">&quot;Shift+Space&quot;</span>))</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;SCORE_DECLARE_ACTION(Stop, &quot;&amp;Stop&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::Key_Return)</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;SCORE_DECLARE_ACTION(GoToStart, &quot;&amp;Go to Start&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::Key_Back)</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;SCORE_DECLARE_ACTION(GoToEnd, &quot;Go to &amp;End&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::Key_Forward)</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;SCORE_DECLARE_ACTION(</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    Reinitialize,</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    &quot;&amp;Reinitialize&quot;,</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="namespace_scenario.html">Scenario</a>,</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    QKeySequence(QObject::tr(&quot;Ctrl+Return&quot;)))</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;SCORE_DECLARE_ACTION(Record, &quot;&amp;Record&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence::UnknownKey)</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">// Edit</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;SCORE_DECLARE_ACTION(SelectTool, &quot;Tool &amp;Select&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::Key_S)</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;SCORE_DECLARE_ACTION_2S(</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    CreateTool,</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    &quot;Tool &amp;Create&quot;,</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="namespace_scenario.html">Scenario</a>,</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    QKeySequence{QObject::tr(<span class="stringliteral">&quot;A&quot;</span>)},</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    QKeySequence{QObject::tr(<span class="stringliteral">&quot;Shift+A&quot;</span>)})</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;SCORE_DECLARE_ACTION(PlayTool, <span class="stringliteral">&quot;Tool &amp;Play&quot;</span>, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::Key_P)</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">// For those two the &quot;shortcuts&quot; are just shift and alt, but this is not supported</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">// by QKeySequence. See ToolMenuActions.cpp</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;SCORE_DECLARE_ACTION(LockMode, <span class="stringliteral">&quot;&amp;Lock&quot;</span>, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence{})</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;SCORE_DECLARE_ACTION(Scale, <span class="stringliteral">&quot;&amp;Scale mode&quot;</span>, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence{})</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">// Object</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;#<span class="keywordflow">if</span> defined(__APPLE__)</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;SCORE_DECLARE_ACTION(</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    RemoveElements,</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="stringliteral">&quot;&amp;Remove elements&quot;</span>,</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <a class="code" href="namespace_scenario.html">Scenario</a>,</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    Qt::Key_Backspace)</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;SCORE_DECLARE_ACTION(</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    RemoveElements,</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="stringliteral">&quot;&amp;Remove elements&quot;</span>,</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="namespace_scenario.html">Scenario</a>,</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    Qt::Key_Delete)</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;SCORE_DECLARE_ACTION(CopyContent, <span class="stringliteral">&quot;C&amp;opy&quot;</span>, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence::Copy)</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;SCORE_DECLARE_ACTION(CutContent, <span class="stringliteral">&quot;C&amp;ut&quot;</span>, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence::Cut)</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;SCORE_DECLARE_ACTION(</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    PasteElements,</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="stringliteral">&quot;&amp;Paste (elements)&quot;</span>,</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <a class="code" href="namespace_scenario.html">Scenario</a>,</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    QKeySequence::Paste)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    Reinitialize, &quot;&amp;Reinitialize&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence(QObject::tr(&quot;Ctrl+Return&quot;)))</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;SCORE_DECLARE_ACTION(Record, &quot;&amp;Record&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence::UnknownKey)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">// Edit</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;SCORE_DECLARE_ACTION(SelectTool, &quot;Tool &amp;Select&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::Key_S)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;SCORE_DECLARE_ACTION_2S(</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    CreateTool, &quot;Tool &amp;Create&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence{QObject::tr(<span class="stringliteral">&quot;A&quot;</span>)},</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    QKeySequence{QObject::tr(<span class="stringliteral">&quot;Shift+A&quot;</span>)})</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;SCORE_DECLARE_ACTION(PlayTool, <span class="stringliteral">&quot;Tool &amp;Play&quot;</span>, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::Key_P)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">// For those two the &quot;shortcuts&quot; are just shift and alt, but this is not supported</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">// by QKeySequence. See ToolMenuActions.cpp</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;SCORE_DECLARE_ACTION(LockMode, <span class="stringliteral">&quot;&amp;Lock&quot;</span>, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence{})</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;SCORE_DECLARE_ACTION(Scale, <span class="stringliteral">&quot;&amp;Scale mode&quot;</span>, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence{})</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">// Object</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;#<span class="keywordflow">if</span> defined(__APPLE__)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;SCORE_DECLARE_ACTION(RemoveElements, <span class="stringliteral">&quot;&amp;Remove elements&quot;</span>, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::Key_Backspace)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;SCORE_DECLARE_ACTION(RemoveElements, <span class="stringliteral">&quot;&amp;Remove elements&quot;</span>, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::Key_Delete)</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;SCORE_DECLARE_ACTION(CopyContent, <span class="stringliteral">&quot;C&amp;opy&quot;</span>, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence::Copy)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;SCORE_DECLARE_ACTION(CutContent, <span class="stringliteral">&quot;C&amp;ut&quot;</span>, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence::Cut)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;SCORE_DECLARE_ACTION(PasteElements, <span class="stringliteral">&quot;&amp;Paste (elements)&quot;</span>, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence::Paste)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;SCORE_DECLARE_ACTION(</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    PasteElementsAfter, <span class="stringliteral">&quot;&amp;Paste (after)&quot;</span>, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence::UnknownKey)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;SCORE_DECLARE_ACTION(</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    ElementsToJson, <span class="stringliteral">&quot;Convert to &amp;JSON&quot;</span>, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence::UnknownKey)</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">// Event</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;SCORE_DECLARE_ACTION(MergeEvents, <span class="stringliteral">&quot;Merge events&quot;</span>, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence::UnknownKey)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;SCORE_DECLARE_ACTION(AddTrigger, <span class="stringliteral">&quot;&amp;Enable Trigger&quot;</span>, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::Key_T)</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;SCORE_DECLARE_ACTION(</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    RemoveTrigger, <span class="stringliteral">&quot;&amp;Disable Trigger&quot;</span>, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence(QObject::tr(<span class="stringliteral">&quot;Shift+T&quot;</span>)))</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;SCORE_DECLARE_ACTION(AddCondition, &quot;&amp;Add Condition&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::Key_C)</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;SCORE_DECLARE_ACTION(</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    RemoveCondition, &quot;&amp;Remove Condition&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence(QObject::tr(&quot;Shift+C&quot;)))</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">// Interval</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;SCORE_DECLARE_ACTION(AddProcess, &quot;&amp;Add a process&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence::UnknownKey)</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;SCORE_DECLARE_ACTION(</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    MergeTimeSyncs, &quot;&amp;Synchronize&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence(QObject::tr(&quot;Shift+M&quot;)))</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;SCORE_DECLARE_ACTION(ShowRacks, &quot;&amp;Show processes&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence::UnknownKey)</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;SCORE_DECLARE_ACTION(HideRacks, &quot;&amp;Hide processes&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence::UnknownKey)</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;SCORE_DECLARE_ACTION(</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    Encapsulate, &quot;&amp;Encapsulate&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence(QObject::tr(&quot;Ctrl+Alt+E&quot;)))</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;SCORE_DECLARE_ACTION(</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    Decapsulate, &quot;&amp;Decapsulate&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence(QObject::tr(&quot;Ctrl+Alt+D&quot;)))</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;SCORE_DECLARE_ACTION(</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    FoldIntervals, &quot;Fold intervals&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence(QObject::tr(&quot;Ctrl+Alt+F&quot;)))</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;SCORE_DECLARE_ACTION(</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    UnfoldIntervals, &quot;Unfold intervals&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>,</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    QKeySequence(QObject::tr(&quot;Ctrl+Alt+U&quot;)))</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;SCORE_DECLARE_ACTION(</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    LevelUp, &quot;Go to parent interval&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence(QObject::tr(&quot;Ctrl+Alt+Up&quot;)))</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;SCORE_DECLARE_ACTION(</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    PasteElementsAfter,</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="stringliteral">&quot;&amp;Paste (after)&quot;</span>,</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <a class="code" href="namespace_scenario.html">Scenario</a>,</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    QKeySequence::UnknownKey)</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;SCORE_DECLARE_ACTION(</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    ElementsToJson,</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="stringliteral">&quot;Convert to &amp;JSON&quot;</span>,</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <a class="code" href="namespace_scenario.html">Scenario</a>,</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    QKeySequence::UnknownKey)</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment">// Event</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;SCORE_DECLARE_ACTION(</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    MergeEvents,</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="stringliteral">&quot;Merge events&quot;</span>,</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <a class="code" href="namespace_scenario.html">Scenario</a>,</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    QKeySequence::UnknownKey)</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;SCORE_DECLARE_ACTION(AddTrigger, <span class="stringliteral">&quot;&amp;Enable Trigger&quot;</span>, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::Key_T)</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;SCORE_DECLARE_ACTION(</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    RemoveTrigger,</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="stringliteral">&quot;&amp;Disable Trigger&quot;</span>,</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <a class="code" href="namespace_scenario.html">Scenario</a>,</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    QKeySequence(QObject::tr(<span class="stringliteral">&quot;Shift+T&quot;</span>)))</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;SCORE_DECLARE_ACTION(AddCondition, &quot;&amp;Add Condition&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::Key_C)</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;SCORE_DECLARE_ACTION(</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    RemoveCondition,</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    &quot;&amp;Remove Condition&quot;,</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <a class="code" href="namespace_scenario.html">Scenario</a>,</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    QKeySequence(QObject::tr(&quot;Shift+C&quot;)))</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment">// Interval</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;SCORE_DECLARE_ACTION(</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    AddProcess,</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    &quot;&amp;Add a process&quot;,</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <a class="code" href="namespace_scenario.html">Scenario</a>,</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    QKeySequence::UnknownKey)</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;SCORE_DECLARE_ACTION(</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    MergeTimeSyncs,</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    &quot;&amp;Synchronize&quot;,</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <a class="code" href="namespace_scenario.html">Scenario</a>,</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    QKeySequence(QObject::tr(&quot;Shift+M&quot;)))</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;SCORE_DECLARE_ACTION(</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    ShowRacks,</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    &quot;&amp;Show processes&quot;,</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <a class="code" href="namespace_scenario.html">Scenario</a>,</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    QKeySequence::UnknownKey)</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;SCORE_DECLARE_ACTION(</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    HideRacks,</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    &quot;&amp;Hide processes&quot;,</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <a class="code" href="namespace_scenario.html">Scenario</a>,</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    QKeySequence::UnknownKey)</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;SCORE_DECLARE_ACTION(</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    Encapsulate,</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    &quot;&amp;Encapsulate&quot;,</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <a class="code" href="namespace_scenario.html">Scenario</a>,</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    QKeySequence(QObject::tr(&quot;Ctrl+Alt+E&quot;)))</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;SCORE_DECLARE_ACTION(</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    Decapsulate,</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    &quot;&amp;Decapsulate&quot;,</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <a class="code" href="namespace_scenario.html">Scenario</a>,</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    QKeySequence(QObject::tr(&quot;Ctrl+Alt+D&quot;)))</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;SCORE_DECLARE_ACTION(</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    FoldIntervals,</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    &quot;Fold intervals&quot;,</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <a class="code" href="namespace_scenario.html">Scenario</a>,</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    QKeySequence(QObject::tr(&quot;Ctrl+Alt+F&quot;)))</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;SCORE_DECLARE_ACTION(</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    UnfoldIntervals,</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    &quot;Unfold intervals&quot;,</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <a class="code" href="namespace_scenario.html">Scenario</a>,</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    QKeySequence(QObject::tr(&quot;Ctrl+Alt+U&quot;)))</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;SCORE_DECLARE_ACTION(</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    LevelUp,</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    &quot;Go to parent interval&quot;,</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <a class="code" href="namespace_scenario.html">Scenario</a>,</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    QKeySequence(QObject::tr(&quot;Ctrl+Alt+Up&quot;)))</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;SCORE_DECLARE_ACTION(</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    Duplicate,</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    &quot;&amp;Duplicate&quot;,</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <a class="code" href="namespace_scenario.html">Scenario</a>,</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    QKeySequence(QObject::tr(&quot;Alt+D&quot;)))</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;SCORE_DECLARE_ACTION(</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    ShowCables,</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    &quot;&amp;Show cables&quot;,</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    Dataflow,</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    QKeySequence(QObject::tr(&quot;Alt+Shift+G&quot;)))</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;SCORE_DECLARE_ACTION(</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    AutoScroll,</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    &quot;&amp;Auto-scroll&quot;,</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    Dataflow,</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    QKeySequence(QObject::tr(&quot;Alt+Shift+A&quot;)))</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="comment">// Navigation</span></div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;SCORE_DECLARE_ACTION(MoveUp, &quot;&amp;Move up&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::UpArrow)</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;SCORE_DECLARE_ACTION(MoveDown, &quot;&amp;Move down&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::DownArrow)</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;SCORE_DECLARE_ACTION(MoveLeft, &quot;&amp;Move left&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::LeftArrow)</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;SCORE_DECLARE_ACTION(MoveRight, &quot;&amp;Move right&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::RightArrow)</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;SCORE_DECLARE_ACTION(</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    GoToParent,</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    &quot;&amp;Go to parent&quot;,</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <a class="code" href="namespace_scenario.html">Scenario</a>,</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    QKeySequence(QObject::tr(&quot;Ctrl+Up&quot;)))</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;SCORE_PROCESS_DECLARE_CONTEXT_MENU(</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    SCORE_PLUGIN_SCENARIO_EXPORT,</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    ScenarioObjectContextMenu)</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;SCORE_PROCESS_DECLARE_CONTEXT_MENU(</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    SCORE_PLUGIN_SCENARIO_EXPORT,</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    ScenarioModelContextMenu)</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;SCORE_PROCESS_DECLARE_CONTEXT_MENU(</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    SCORE_PLUGIN_SCENARIO_EXPORT,</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    IntervalContextMenu)</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;SCORE_PROCESS_DECLARE_CONTEXT_MENU(</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    SCORE_PLUGIN_SCENARIO_EXPORT,</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    EventContextMenu)</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    Duplicate, &quot;&amp;Duplicate&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence(QObject::tr(&quot;Alt+D&quot;)))</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;SCORE_DECLARE_ACTION(</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    ShowCables, &quot;&amp;Show cables&quot;, Dataflow, QKeySequence(QObject::tr(&quot;Alt+Shift+G&quot;)))</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;SCORE_DECLARE_ACTION(</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    AutoScroll, &quot;&amp;Auto-scroll&quot;, Dataflow, QKeySequence(QObject::tr(&quot;Alt+Shift+A&quot;)))</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment">// Navigation</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;SCORE_DECLARE_ACTION(MoveUp, &quot;&amp;Move up&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::UpArrow)</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;SCORE_DECLARE_ACTION(MoveDown, &quot;&amp;Move down&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::DownArrow)</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;SCORE_DECLARE_ACTION(MoveLeft, &quot;&amp;Move left&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::LeftArrow)</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;SCORE_DECLARE_ACTION(MoveRight, &quot;&amp;Move right&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, Qt::RightArrow)</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;SCORE_DECLARE_ACTION(</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    GoToParent, &quot;&amp;Go to parent&quot;, <a class="code" href="namespace_scenario.html">Scenario</a>, QKeySequence(QObject::tr(&quot;Ctrl+Up&quot;)))</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;SCORE_PROCESS_DECLARE_CONTEXT_MENU(</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    SCORE_PLUGIN_SCENARIO_EXPORT, ScenarioObjectContextMenu)</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;SCORE_PROCESS_DECLARE_CONTEXT_MENU(</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    SCORE_PLUGIN_SCENARIO_EXPORT, ScenarioModelContextMenu)</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;SCORE_PROCESS_DECLARE_CONTEXT_MENU(SCORE_PLUGIN_SCENARIO_EXPORT, IntervalContextMenu)</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;SCORE_PROCESS_DECLARE_CONTEXT_MENU(SCORE_PLUGIN_SCENARIO_EXPORT, EventContextMenu)</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>
+<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:13</div></div>
 <div class="ttc" id="aclass_string_key_html"><div class="ttname"><a href="class_string_key.html">StringKey&lt; score::ActionCondition &gt;</a></div></div>
 <div class="ttc" id="a_action_8hpp_html"><div class="ttname"><a href="_action_8hpp.html">Action.hpp</a></div></div>
 <div class="ttc" id="aclass_scenario_1_1_scenario_interface_html"><div class="ttname"><a href="class_scenario_1_1_scenario_interface.html">Scenario::ScenarioInterface</a></div><div class="ttdef"><b>Definition:</b> ScenarioInterface.hpp:19</div></div>
-<div class="ttc" id="aclass_scenario_1_1_state_model_html"><div class="ttname"><a href="class_scenario_1_1_state_model.html">Scenario::StateModel</a></div><div class="ttdef"><b>Definition:</b> StateModel.hpp:59</div></div>
+<div class="ttc" id="aclass_scenario_1_1_state_model_html"><div class="ttname"><a href="class_scenario_1_1_state_model.html">Scenario::StateModel</a></div><div class="ttdef"><b>Definition:</b> StateModel.hpp:60</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
-<div class="ttc" id="aclass_scenario_1_1_time_sync_model_html"><div class="ttname"><a href="class_scenario_1_1_time_sync_model.html">Scenario::TimeSyncModel</a></div><div class="ttdef"><b>Definition:</b> TimeSyncModel.hpp:31</div></div>
+<div class="ttc" id="aclass_scenario_1_1_time_sync_model_html"><div class="ttname"><a href="class_scenario_1_1_time_sync_model.html">Scenario::TimeSyncModel</a></div><div class="ttdef"><b>Definition:</b> TimeSyncModel.hpp:33</div></div>
 <div class="ttc" id="aclass_scenario_1_1_enable_when_scenario_model_object_html"><div class="ttname"><a href="class_scenario_1_1_enable_when_scenario_model_object.html">Scenario::EnableWhenScenarioModelObject</a></div><div class="ttdoc">Anything in a scenario model.</div><div class="ttdef"><b>Definition:</b> ScenarioActions.hpp:22</div></div>
-<div class="ttc" id="a_action_8hpp_html_a3545013abd611231a3fd12761826e3c9"><div class="ttname"><a href="_action_8hpp.html#a3545013abd611231a3fd12761826e3c9">SCORE_DECLARE_DOCUMENT_CONDITION</a></div><div class="ttdeci">#define SCORE_DECLARE_DOCUMENT_CONDITION(Type)</div><div class="ttdef"><b>Definition:</b> Action.hpp:427</div></div>
-<div class="ttc" id="aclass_scenario_1_1_scenario_document_model_html"><div class="ttname"><a href="class_scenario_1_1_scenario_document_model.html">Scenario::ScenarioDocumentModel</a></div><div class="ttdef"><b>Definition:</b> ScenarioDocumentModel.hpp:25</div></div>
-<div class="ttc" id="a_action_8hpp_html_a721a700c0245029b9eb7c39c18275a3c"><div class="ttname"><a href="_action_8hpp.html#a721a700c0245029b9eb7c39c18275a3c">SCORE_DECLARE_SELECTED_OBJECT_CONDITION</a></div><div class="ttdeci">#define SCORE_DECLARE_SELECTED_OBJECT_CONDITION(Type)</div><div class="ttdef"><b>Definition:</b> Action.hpp:322</div></div>
-<div class="ttc" id="aclass_scenario_1_1_enable_when_scenario_interface_object_html"><div class="ttname"><a href="class_scenario_1_1_enable_when_scenario_interface_object.html">Scenario::EnableWhenScenarioInterfaceObject</a></div><div class="ttdoc">Anything in a scenario interface.</div><div class="ttdef"><b>Definition:</b> ScenarioActions.hpp:48</div></div>
-<div class="ttc" id="aclass_scenario_1_1_event_model_html"><div class="ttname"><a href="class_scenario_1_1_event_model.html">Scenario::EventModel</a></div><div class="ttdef"><b>Definition:</b> EventModel.hpp:33</div></div>
+<div class="ttc" id="a_action_8hpp_html_a3545013abd611231a3fd12761826e3c9"><div class="ttname"><a href="_action_8hpp.html#a3545013abd611231a3fd12761826e3c9">SCORE_DECLARE_DOCUMENT_CONDITION</a></div><div class="ttdeci">#define SCORE_DECLARE_DOCUMENT_CONDITION(Type)</div><div class="ttdef"><b>Definition:</b> Action.hpp:415</div></div>
+<div class="ttc" id="aclass_scenario_1_1_scenario_document_model_html"><div class="ttname"><a href="class_scenario_1_1_scenario_document_model.html">Scenario::ScenarioDocumentModel</a></div><div class="ttdef"><b>Definition:</b> ScenarioDocumentModel.hpp:26</div></div>
+<div class="ttc" id="a_action_8hpp_html_a721a700c0245029b9eb7c39c18275a3c"><div class="ttname"><a href="_action_8hpp.html#a721a700c0245029b9eb7c39c18275a3c">SCORE_DECLARE_SELECTED_OBJECT_CONDITION</a></div><div class="ttdeci">#define SCORE_DECLARE_SELECTED_OBJECT_CONDITION(Type)</div><div class="ttdef"><b>Definition:</b> Action.hpp:312</div></div>
+<div class="ttc" id="aclass_scenario_1_1_enable_when_scenario_interface_object_html"><div class="ttname"><a href="class_scenario_1_1_enable_when_scenario_interface_object.html">Scenario::EnableWhenScenarioInterfaceObject</a></div><div class="ttdoc">Anything in a scenario interface.</div><div class="ttdef"><b>Definition:</b> ScenarioActions.hpp:47</div></div>
+<div class="ttc" id="aclass_scenario_1_1_event_model_html"><div class="ttname"><a href="class_scenario_1_1_event_model.html">Scenario::EventModel</a></div><div class="ttdef"><b>Definition:</b> EventModel.hpp:35</div></div>
 <div class="ttc" id="aclass_scenario_1_1_process_model_html"><div class="ttname"><a href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a></div><div class="ttdoc">The core hierarchical and temporal process of score.</div><div class="ttdef"><b>Definition:</b> ScenarioModel.hpp:34</div></div>
 <div class="ttc" id="aclass_scenario_1_1_enable_when_scenario_interface_instant_object_html"><div class="ttname"><a href="class_scenario_1_1_enable_when_scenario_interface_instant_object.html">Scenario::EnableWhenScenarioInterfaceInstantObject</a></div><div class="ttdoc">Only events, nodes, states.</div><div class="ttdef"><b>Definition:</b> ScenarioActions.hpp:35</div></div>
-<div class="ttc" id="aclassscore_1_1_action_manager_html"><div class="ttname"><a href="classscore_1_1_action_manager.html">score::ActionManager</a></div><div class="ttdoc">The ActionManager class.</div><div class="ttdef"><b>Definition:</b> ActionManager.hpp:19</div></div>
-<div class="ttc" id="aclass_scenario_1_1_interval_model_html"><div class="ttname"><a href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a></div><div class="ttdef"><b>Definition:</b> IntervalModel.hpp:50</div></div>
-<div class="ttc" id="astructscore_1_1_action_condition_html"><div class="ttname"><a href="structscore_1_1_action_condition.html">score::ActionCondition</a></div><div class="ttdoc">The ActionCondition struct.</div><div class="ttdef"><b>Definition:</b> Action.hpp:175</div></div>
+<div class="ttc" id="aclassscore_1_1_action_manager_html"><div class="ttname"><a href="classscore_1_1_action_manager.html">score::ActionManager</a></div><div class="ttdoc">The ActionManager class.</div><div class="ttdef"><b>Definition:</b> ActionManager.hpp:18</div></div>
+<div class="ttc" id="aclass_scenario_1_1_interval_model_html"><div class="ttname"><a href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a></div><div class="ttdef"><b>Definition:</b> IntervalModel.hpp:49</div></div>
+<div class="ttc" id="astructscore_1_1_action_condition_html"><div class="ttname"><a href="structscore_1_1_action_condition.html">score::ActionCondition</a></div><div class="ttdoc">The ActionCondition struct.</div><div class="ttdef"><b>Definition:</b> Action.hpp:165</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

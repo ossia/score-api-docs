@@ -114,26 +114,24 @@ $(document).ready(function(){initNavTree('plugins_2score-lib-process_2_process_2
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <a class="code" href="class_process_1_1_dataflow_manager.html">DataflowManager</a>();</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  ~<a class="code" href="class_process_1_1_dataflow_manager.html">DataflowManager</a>();</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">using</span> cable_map</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      = ossia::ptr_map&lt;const Process::Cable*, Dataflow::CableItem*&gt;;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">using</span> port_map = ossia::ptr_map&lt;const Process::Port*, Dataflow::PortItem*&gt;;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <a class="code" href="class_dataflow_1_1_cable_item.html">Dataflow::CableItem</a>* createCable(</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_cable.html">Process::Cable</a>&amp; cable,</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; context,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      QGraphicsScene* scene);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  cable_map&amp; cables() noexcept { <span class="keywordflow">return</span> m_cableMap; }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  port_map&amp; ports() noexcept { <span class="keywordflow">return</span> m_portMap; }</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  cable_map m_cableMap;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  port_map m_portMap;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">using</span> cable_map = ossia::ptr_map&lt;const Process::Cable*, Dataflow::CableItem*&gt;;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">using</span> port_map = ossia::ptr_map&lt;const Process::Port*, Dataflow::PortItem*&gt;;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="class_dataflow_1_1_cable_item.html">Dataflow::CableItem</a>* createCable(</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_cable.html">Process::Cable</a>&amp; cable, <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; context,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      QGraphicsScene* scene);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  cable_map&amp; cables() noexcept { <span class="keywordflow">return</span> m_cableMap; }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  port_map&amp; ports() noexcept { <span class="keywordflow">return</span> m_portMap; }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  cable_map m_cableMap;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  port_map m_portMap;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1371</div></div>
+<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1326</div></div>
 <div class="ttc" id="aclass_process_1_1_cable_html"><div class="ttname"><a href="class_process_1_1_cable.html">Process::Cable</a></div><div class="ttdef"><b>Definition:</b> Cable.hpp:53</div></div>
 <div class="ttc" id="aclass_dataflow_1_1_cable_item_html"><div class="ttname"><a href="class_dataflow_1_1_cable_item.html">Dataflow::CableItem</a></div><div class="ttdef"><b>Definition:</b> CableItem.hpp:23</div></div>
 <div class="ttc" id="astruct_process_1_1_context_html"><div class="ttname"><a href="struct_process_1_1_context.html">Process::Context</a></div><div class="ttdef"><b>Definition:</b> ProcessContext.hpp:11</div></div>

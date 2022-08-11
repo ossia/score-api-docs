@@ -119,31 +119,30 @@ $(document).ready(function(){initNavTree('_mixer_panel_8hpp_source.html',''); in
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1_panel_status.html">score::PanelStatus</a>&amp; defaultPanelStatus() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordtype">void</span> on_modelChanged(<a class="code" href="structscore_1_1_document_context.html">score::MaybeDocument</a> oldm, <a class="code" href="structscore_1_1_document_context.html">score::MaybeDocument</a> newm)</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  QWidget* m_widget{};</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="class_mixer_1_1_mixer_panel.html">MixerPanel</a>* m_cur{};</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_mixer_1_1_panel_delegate_factory.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_mixer_1_1_panel_delegate_factory.html">PanelDelegateFactory</a> final : <span class="keyword">public</span> <a class="code" href="classscore_1_1_panel_delegate_factory.html">score::PanelDelegateFactory</a></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;b7f7bf9f-3742-4c52-a6aa-41511a09e4a5&quot;</span>)</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  std::unique_ptr&lt;score::PanelDelegate&gt;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  make(<span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; ctx) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordtype">void</span> on_modelChanged(<a class="code" href="structscore_1_1_document_context.html">score::MaybeDocument</a> oldm, <a class="code" href="structscore_1_1_document_context.html">score::MaybeDocument</a> newm) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  QWidget* m_widget{};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="class_mixer_1_1_mixer_panel.html">MixerPanel</a>* m_cur{};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_mixer_1_1_panel_delegate_factory.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_mixer_1_1_panel_delegate_factory.html">PanelDelegateFactory</a> final : <span class="keyword">public</span> <a class="code" href="classscore_1_1_panel_delegate_factory.html">score::PanelDelegateFactory</a></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;b7f7bf9f-3742-4c52-a6aa-41511a09e4a5&quot;</span>)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  std::unique_ptr&lt;score::PanelDelegate&gt;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  make(<span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; ctx) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
 <div class="ttc" id="astructscore_1_1_g_u_i_application_context_html"><div class="ttname"><a href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a></div><div class="ttdoc">Specializes ApplicationContext with the QMainWindow.</div><div class="ttdef"><b>Definition:</b> GUIApplicationContext.hpp:14</div></div>
 <div class="ttc" id="aclassscore_1_1_panel_delegate_factory_html"><div class="ttname"><a href="classscore_1_1_panel_delegate_factory.html">score::PanelDelegateFactory</a></div><div class="ttdoc">Reimplement this interface to register new panels.</div><div class="ttdef"><b>Definition:</b> PanelDelegateFactory.hpp:9</div></div>
-<div class="ttc" id="aclass_mixer_1_1_panel_delegate_html_aa3159ac31204cb4ff6e9ab91dd091008"><div class="ttname"><a href="class_mixer_1_1_panel_delegate.html#aa3159ac31204cb4ff6e9ab91dd091008">Mixer::PanelDelegate::widget</a></div><div class="ttdeci">QWidget * widget() override</div><div class="ttdoc">widget The widget of the panel.</div><div class="ttdef"><b>Definition:</b> MixerPanel.cpp:541</div></div>
-<div class="ttc" id="aclassscore_1_1_panel_delegate_html"><div class="ttname"><a href="classscore_1_1_panel_delegate.html">score::PanelDelegate</a></div><div class="ttdoc">The PanelDelegate class.</div><div class="ttdef"><b>Definition:</b> PanelDelegate.hpp:54</div></div>
+<div class="ttc" id="aclass_mixer_1_1_panel_delegate_html_aa3159ac31204cb4ff6e9ab91dd091008"><div class="ttname"><a href="class_mixer_1_1_panel_delegate.html#aa3159ac31204cb4ff6e9ab91dd091008">Mixer::PanelDelegate::widget</a></div><div class="ttdeci">QWidget * widget() override</div><div class="ttdoc">widget The widget of the panel.</div><div class="ttdef"><b>Definition:</b> MixerPanel.cpp:523</div></div>
+<div class="ttc" id="aclassscore_1_1_panel_delegate_html"><div class="ttname"><a href="classscore_1_1_panel_delegate.html">score::PanelDelegate</a></div><div class="ttdoc">The PanelDelegate class.</div><div class="ttdef"><b>Definition:</b> PanelDelegate.hpp:49</div></div>
 <div class="ttc" id="aclass_mixer_1_1_panel_delegate_html"><div class="ttname"><a href="class_mixer_1_1_panel_delegate.html">Mixer::PanelDelegate</a></div><div class="ttdef"><b>Definition:</b> MixerPanel.hpp:12</div></div>
-<div class="ttc" id="aclass_mixer_1_1_panel_delegate_factory_html"><div class="ttname"><a href="class_mixer_1_1_panel_delegate_factory.html">Mixer::PanelDelegateFactory</a></div><div class="ttdef"><b>Definition:</b> MixerPanel.hpp:29</div></div>
-<div class="ttc" id="aclass_mixer_1_1_mixer_panel_html"><div class="ttname"><a href="class_mixer_1_1_mixer_panel.html">Mixer::MixerPanel</a></div><div class="ttdef"><b>Definition:</b> MixerPanel.cpp:298</div></div>
+<div class="ttc" id="aclass_mixer_1_1_panel_delegate_factory_html"><div class="ttname"><a href="class_mixer_1_1_panel_delegate_factory.html">Mixer::PanelDelegateFactory</a></div><div class="ttdef"><b>Definition:</b> MixerPanel.hpp:28</div></div>
+<div class="ttc" id="aclass_mixer_1_1_mixer_panel_html"><div class="ttname"><a href="class_mixer_1_1_mixer_panel.html">Mixer::MixerPanel</a></div><div class="ttdef"><b>Definition:</b> MixerPanel.cpp:289</div></div>
 <div class="ttc" id="astructscore_1_1_panel_status_html"><div class="ttname"><a href="structscore_1_1_panel_status.html">score::PanelStatus</a></div><div class="ttdoc">The PanelStatus struct.</div><div class="ttdef"><b>Definition:</b> PanelDelegate.hpp:23</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

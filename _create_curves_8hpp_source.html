@@ -123,31 +123,29 @@ $(document).ready(function(){initNavTree('_create_curves_8hpp_source.html',''); 
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;std::vector&lt;Process::ProcessModel*&gt; CreateCurvesFromAddress(</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a>&amp; interval,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">const</span> <a class="code" href="struct_device_1_1_full_address_accessor_settings.html">Device::FullAddressAccessorSettings</a>&amp; as,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_scenario_1_1_command_1_1_macro.html">Scenario::Command::Macro</a>&amp; m);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;std::vector&lt;Process::ProcessModel*&gt; CreateCurvesFromAddresses(</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a>&amp; interval,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">const</span> std::vector&lt;Device::FullAddressSettings&gt;&amp; a,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_scenario_1_1_command_1_1_macro.html">Scenario::Command::Macro</a>&amp; m);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> CreateCurves(</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">const</span> std::vector&lt;const Scenario::IntervalModel*&gt;&amp; selected_intervals,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">const</span> <a class="code" href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a>&amp; stack);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> CreateCurvesFromAddresses(</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">const</span> std::vector&lt;const Scenario::IntervalModel*&gt;&amp; selected_intervals,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">const</span> std::vector&lt;Device::FullAddressSettings&gt;&amp; addresses,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">const</span> <a class="code" href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a>&amp; stack);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">const</span> <a class="code" href="struct_device_1_1_full_address_accessor_settings.html">Device::FullAddressAccessorSettings</a>&amp; as, <a class="code" href="class_scenario_1_1_command_1_1_macro.html">Scenario::Command::Macro</a>&amp; m);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;std::vector&lt;Process::ProcessModel*&gt; CreateCurvesFromAddresses(</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a>&amp; interval,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">const</span> std::vector&lt;Device::FullAddressSettings&gt;&amp; a, <a class="code" href="class_scenario_1_1_command_1_1_macro.html">Scenario::Command::Macro</a>&amp; m);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">void</span> CreateCurves(</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">const</span> std::vector&lt;const Scenario::IntervalModel*&gt;&amp; selected_intervals,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">const</span> <a class="code" href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a>&amp; stack);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> CreateCurvesFromAddresses(</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">const</span> std::vector&lt;const Scenario::IntervalModel*&gt;&amp; selected_intervals,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">const</span> std::vector&lt;Device::FullAddressSettings&gt;&amp; addresses,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">const</span> <a class="code" href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a>&amp; stack);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1371</div></div>
-<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:146</div></div>
+<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1326</div></div>
+<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:13</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:160</div></div>
 <div class="ttc" id="aclassscore_1_1_command_stack_facade_html"><div class="ttname"><a href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a></div><div class="ttdoc">A small abstraction layer over the score::CommandStack.</div><div class="ttdef"><b>Definition:</b> CommandStackFacade.hpp:19</div></div>
-<div class="ttc" id="aclass_scenario_1_1_command_1_1_macro_html"><div class="ttname"><a href="class_scenario_1_1_command_1_1_macro.html">Scenario::Command::Macro</a></div><div class="ttdef"><b>Definition:</b> CommandAPI.hpp:24</div></div>
-<div class="ttc" id="astruct_device_1_1_full_address_accessor_settings_html"><div class="ttname"><a href="struct_device_1_1_full_address_accessor_settings.html">Device::FullAddressAccessorSettings</a></div><div class="ttdef"><b>Definition:</b> AddressSettings.hpp:138</div></div>
-<div class="ttc" id="aclass_scenario_1_1_interval_model_html"><div class="ttname"><a href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a></div><div class="ttdef"><b>Definition:</b> IntervalModel.hpp:50</div></div>
+<div class="ttc" id="aclass_scenario_1_1_command_1_1_macro_html"><div class="ttname"><a href="class_scenario_1_1_command_1_1_macro.html">Scenario::Command::Macro</a></div><div class="ttdef"><b>Definition:</b> CommandAPI.hpp:25</div></div>
+<div class="ttc" id="astruct_device_1_1_full_address_accessor_settings_html"><div class="ttname"><a href="struct_device_1_1_full_address_accessor_settings.html">Device::FullAddressAccessorSettings</a></div><div class="ttdef"><b>Definition:</b> AddressSettings.hpp:130</div></div>
+<div class="ttc" id="aclass_scenario_1_1_interval_model_html"><div class="ttname"><a href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a></div><div class="ttdef"><b>Definition:</b> IntervalModel.hpp:49</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

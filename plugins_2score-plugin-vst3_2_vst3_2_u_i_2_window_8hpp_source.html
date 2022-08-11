@@ -115,29 +115,27 @@ $(document).ready(function(){initNavTree('plugins_2score-plugin-vst3_2_vst3_2_u_
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;WindowContainer createVstWindowContainer(</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Window&amp; parentWindow,</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">const</span> Model&amp; e,</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classvst3_1_1_window.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvst3_1_1_window.html">Window</a> : <span class="keyword">public</span> QDialog</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">const</span> <a class="code" href="classvst3_1_1_model.html">Model</a>&amp; m_model;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="structvst3_1_1_window_container.html">WindowContainer</a> container;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="classvst3_1_1_window.html">Window</a>(<span class="keyword">const</span> <a class="code" href="classvst3_1_1_model.html">Model</a>&amp; e, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx, QWidget* parent);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  ~<a class="code" href="classvst3_1_1_window.html">Window</a>();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> resizeEvent(QResizeEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">void</span> closeEvent(QCloseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Window&amp; parentWindow, <span class="keyword">const</span> Model&amp; e, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classvst3_1_1_window.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvst3_1_1_window.html">Window</a> : <span class="keyword">public</span> QDialog</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">const</span> <a class="code" href="classvst3_1_1_model.html">Model</a>&amp; m_model;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <a class="code" href="structvst3_1_1_window_container.html">WindowContainer</a> container;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="classvst3_1_1_window.html">Window</a>(<span class="keyword">const</span> <a class="code" href="classvst3_1_1_model.html">Model</a>&amp; e, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx, QWidget* parent);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  ~<a class="code" href="classvst3_1_1_window.html">Window</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">void</span> resizeEvent(QResizeEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> closeEvent(QCloseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassvst3_1_1_window_html"><div class="ttname"><a href="classvst3_1_1_window.html">vst3::Window</a></div><div class="ttdef"><b>Definition:</b> plugins/score-plugin-vst3/Vst3/UI/Window.hpp:22</div></div>
+<div class="ttc" id="aclassvst3_1_1_window_html"><div class="ttname"><a href="classvst3_1_1_window.html">vst3::Window</a></div><div class="ttdef"><b>Definition:</b> plugins/score-plugin-vst3/Vst3/UI/Window.hpp:20</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
-<div class="ttc" id="astructvst3_1_1_window_container_html"><div class="ttname"><a href="structvst3_1_1_window_container.html">vst3::WindowContainer</a></div><div class="ttdef"><b>Definition:</b> WindowContainer.hpp:24</div></div>
-<div class="ttc" id="aclassvst3_1_1_model_html"><div class="ttname"><a href="classvst3_1_1_model.html">vst3::Model</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst3/Vst3/EffectModel.hpp:50</div></div>
+<div class="ttc" id="astructvst3_1_1_window_container_html"><div class="ttname"><a href="structvst3_1_1_window_container.html">vst3::WindowContainer</a></div><div class="ttdef"><b>Definition:</b> WindowContainer.hpp:25</div></div>
+<div class="ttc" id="aclassvst3_1_1_model_html"><div class="ttname"><a href="classvst3_1_1_model.html">vst3::Model</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst3/Vst3/EffectModel.hpp:39</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

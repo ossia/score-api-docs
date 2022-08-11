@@ -116,35 +116,30 @@ $(document).ready(function(){initNavTree('_entity_8hpp_source.html',''); initRes
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    std::vector&lt;QString&gt; bros_names;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    bros_names.reserve(map.size());</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    std::transform(</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        map.begin(),</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        map.end(),</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        std::back_inserter(bros_names),</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        [&amp;](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; res) {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;          bros_names.push_back(res.metadata().getName());</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        });</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">auto</span> new_name</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        = ossia::net::sanitize_name(obj-&gt;metadata().getName(), bros_names);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    obj-&gt;metadata().setName(new_name);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        map.begin(), map.end(), std::back_inserter(bros_names),</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        [&amp;](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; res) { bros_names.push_back(res.metadata().getName()); });</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">auto</span> new_name = ossia::net::sanitize_name(obj-&gt;metadata().getName(), bros_names);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    obj-&gt;metadata().setName(new_name);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    map.unsafe_map().insert(obj);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    map.mutable_added(*obj);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    map.added(*obj);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    map.unsafe_map().insert(obj);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    map.mutable_added(*obj);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    map.added(*obj);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// If there are serialized components, we try to deserialize them</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="structscore_1_1_components.html">score::Components</a>&amp; comps = obj-&gt;components();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    deserializeRemainingComponents(comps, obj);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// If there are serialized components, we try to deserialize them</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="structscore_1_1_components.html">score::Components</a>&amp; comps = obj-&gt;components();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    deserializeRemainingComponents(comps, obj);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassscore_1_1_entity_map_html"><div class="ttname"><a href="classscore_1_1_entity_map.html">score::EntityMap</a></div><div class="ttdoc">The EntityMap class.</div><div class="ttdef"><b>Definition:</b> EntityMap.hpp:13</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:146</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:160</div></div>
 <div class="ttc" id="aclassscore_1_1_entity_html"><div class="ttname"><a href="classscore_1_1_entity.html">score::Entity</a></div><div class="ttdoc">Base for complex model objects.</div><div class="ttdef"><b>Definition:</b> EntityBase.hpp:26</div></div>
 <div class="ttc" id="aclassscore_1_1_entity_map_inserter_html"><div class="ttname"><a href="classscore_1_1_entity_map_inserter.html">score::EntityMapInserter</a></div><div class="ttdef"><b>Definition:</b> EntityMap.hpp:15</div></div>
-<div class="ttc" id="astructscore_1_1_components_html"><div class="ttname"><a href="structscore_1_1_components.html">score::Components</a></div><div class="ttdef"><b>Definition:</b> lib/score/model/Component.hpp:42</div></div>
+<div class="ttc" id="astructscore_1_1_components_html"><div class="ttname"><a href="structscore_1_1_components.html">score::Components</a></div><div class="ttdef"><b>Definition:</b> lib/score/model/Component.hpp:40</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

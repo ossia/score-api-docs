@@ -14,7 +14,7 @@ var _action_8hpp =
     [ "EnableWhenFocusedObjectIs", "classscore_1_1_enable_when_focused_object_is.html", null ],
     [ "EnableWhenDocumentIs", "classscore_1_1_enable_when_document_is.html", null ],
     [ "SCORE_DECLARE_ACTION", "_action_8hpp.html#a9887ed2002865cba1349cf8742c72292", null ],
-    [ "SCORE_DECLARE_ACTION_2S", "_action_8hpp.html#a8cc05ddfae66a6e0d3939067489d30c4", null ],
+    [ "SCORE_DECLARE_ACTION_2S", "_action_8hpp.html#af1d4b184798883cb3d2db151139f9dfe", null ],
     [ "SCORE_DECLARE_DOCUMENT_CONDITION", "_action_8hpp.html#a3545013abd611231a3fd12761826e3c9", null ],
     [ "SCORE_DECLARE_FOCUSED_OBJECT_CONDITION", "_action_8hpp.html#a7cb7c0cccf90a4adfbbf8658a655f9ce", null ],
     [ "SCORE_DECLARE_SELECTED_OBJECT_CONDITION", "_action_8hpp.html#a721a700c0245029b9eb7c39c18275a3c", null ],

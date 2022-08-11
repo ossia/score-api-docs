@@ -101,9 +101,9 @@ $(document).ready(function(){initNavTree('_musical_grid_8hpp_source.html',''); i
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Process/TimeValue.hpp&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;ossia-qt/time.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Scenario/Document/Interval/IntervalModel.hpp&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Scenario/Document/Interval/IntervalModel.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;ossia-qt/time.hpp&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_scenario.html">Scenario</a></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
@@ -136,24 +136,21 @@ $(document).ready(function(){initNavTree('_musical_grid_8hpp_source.html',''); i
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">void</span> changed() W_SIGNAL(changed);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span> compute(</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <a class="code" href="struct_time_val.html">TimeVal</a> timeDelta,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      ZoomRatio m_zoomRatio,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      QRectF sceneRect,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <a class="code" href="struct_time_val.html">TimeVal</a> x0_time);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  compute(<a class="code" href="struct_time_val.html">TimeVal</a> timeDelta, ZoomRatio m_zoomRatio, QRectF sceneRect, <a class="code" href="struct_time_val.html">TimeVal</a> x0_time);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  const <a class="code" href="struct_scenario_1_1_time_signature_map.html">TimeSignatureMap</a>* m_measures{};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  const <a class="code" href="struct_scenario_1_1_time_signature_map.html">TimeSignatureMap</a>* m_measures{};</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>
-<div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition:</b> TimeValue.hpp:19</div></div>
+<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:13</div></div>
+<div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition:</b> TimeValue.hpp:20</div></div>
 <div class="ttc" id="aclass_scenario_1_1_musical_grid_html"><div class="ttname"><a href="class_scenario_1_1_musical_grid.html">Scenario::MusicalGrid</a></div><div class="ttdef"><b>Definition:</b> MusicalGrid.hpp:15</div></div>
-<div class="ttc" id="astruct_scenario_1_1_time_signature_map_html"><div class="ttname"><a href="struct_scenario_1_1_time_signature_map.html">Scenario::TimeSignatureMap</a></div><div class="ttdef"><b>Definition:</b> TimeSignatureMap.hpp:22</div></div>
+<div class="ttc" id="astruct_scenario_1_1_time_signature_map_html"><div class="ttname"><a href="struct_scenario_1_1_time_signature_map.html">Scenario::TimeSignatureMap</a></div><div class="ttdef"><b>Definition:</b> TimeSignatureMap.hpp:25</div></div>
 <div class="ttc" id="astruct_scenario_1_1_musical_grid_1_1timings_html"><div class="ttname"><a href="struct_scenario_1_1_musical_grid_1_1timings.html">Scenario::MusicalGrid::timings</a></div><div class="ttdef"><b>Definition:</b> MusicalGrid.hpp:27</div></div>
-<div class="ttc" id="astruct_scenario_1_1_timebars_html"><div class="ttname"><a href="struct_scenario_1_1_timebars.html">Scenario::Timebars</a></div><div class="ttdef"><b>Definition:</b> TimeSignatureItem.hpp:182</div></div>
+<div class="ttc" id="astruct_scenario_1_1_timebars_html"><div class="ttname"><a href="struct_scenario_1_1_timebars.html">Scenario::Timebars</a></div><div class="ttdef"><b>Definition:</b> TimeSignatureItem.hpp:171</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

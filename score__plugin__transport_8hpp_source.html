@@ -101,8 +101,8 @@ $(document).ready(function(){initNavTree('score__plugin__transport_8hpp_source.h
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;score/plugins/qt_interfaces/FactoryFamily_QtInterface.hpp&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;score/plugins/qt_interfaces/FactoryInterface_QtInterface.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;score/plugins/qt_interfaces/PluginRequirements_QtInterface.hpp&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;score/plugins/qt_interfaces/GUIApplicationPlugin_QtInterface.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;score/plugins/qt_interfaces/GUIApplicationPlugin_QtInterface.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;score/plugins/qt_interfaces/PluginRequirements_QtInterface.hpp&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;verdigris&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
@@ -121,18 +121,17 @@ $(document).ready(function(){initNavTree('score__plugin__transport_8hpp_source.h
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  std::vector&lt;std::unique_ptr&lt;score::InterfaceBase&gt;&gt; guiFactories(</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp;,</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_uuid_key.html">score::InterfaceKey</a>&amp; factoryName) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  std::vector&lt;std::unique_ptr&lt;score::InterfaceListBase&gt;&gt;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  factoryFamilies() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="classscore_1_1_g_u_i_application_plugin.html">score::GUIApplicationPlugin</a>*</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  make_guiApplicationPlugin(<span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; app) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  std::vector&lt;std::unique_ptr&lt;score::InterfaceListBase&gt;&gt; factoryFamilies() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="classscore_1_1_g_u_i_application_plugin.html">score::GUIApplicationPlugin</a>*</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  make_guiApplicationPlugin(<span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; app) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassscore__plugin__transport_html"><div class="ttname"><a href="classscore__plugin__transport.html">score_plugin_transport</a></div><div class="ttdef"><b>Definition:</b> score_plugin_transport.hpp:9</div></div>
 <div class="ttc" id="aclassscore_1_1_factory_interface___qt_interface_html"><div class="ttname"><a href="classscore_1_1_factory_interface___qt_interface.html">score::FactoryInterface_QtInterface</a></div><div class="ttdef"><b>Definition:</b> FactoryInterface_QtInterface.hpp:18</div></div>
 <div class="ttc" id="aclassscore_1_1_application_plugin___qt_interface_html"><div class="ttname"><a href="classscore_1_1_application_plugin___qt_interface.html">score::ApplicationPlugin_QtInterface</a></div><div class="ttdef"><b>Definition:</b> GUIApplicationPlugin_QtInterface.hpp:11</div></div>
 <div class="ttc" id="astructscore_1_1_g_u_i_application_context_html"><div class="ttname"><a href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a></div><div class="ttdoc">Specializes ApplicationContext with the QMainWindow.</div><div class="ttdef"><b>Definition:</b> GUIApplicationContext.hpp:14</div></div>
-<div class="ttc" id="aclass_uuid_key_html"><div class="ttname"><a href="class_uuid_key.html">UuidKey</a></div><div class="ttdef"><b>Definition:</b> UuidKey.hpp:380</div></div>
+<div class="ttc" id="aclass_uuid_key_html"><div class="ttname"><a href="class_uuid_key.html">UuidKey</a></div><div class="ttdef"><b>Definition:</b> UuidKey.hpp:349</div></div>
 <div class="ttc" id="aclassscore_1_1_plugin___qt_interface_html"><div class="ttname"><a href="classscore_1_1_plugin___qt_interface.html">score::Plugin_QtInterface</a></div><div class="ttdef"><b>Definition:</b> PluginRequirements_QtInterface.hpp:17</div></div>
 <div class="ttc" id="aclassscore_1_1_g_u_i_application_plugin_html"><div class="ttname"><a href="classscore_1_1_g_u_i_application_plugin.html">score::GUIApplicationPlugin</a></div><div class="ttdoc">Used to extend the software with application-wide data.</div><div class="ttdef"><b>Definition:</b> GUIApplicationPlugin.hpp:88</div></div>
 <div class="ttc" id="aclassscore_1_1_factory_list___qt_interface_html"><div class="ttname"><a href="classscore_1_1_factory_list___qt_interface.html">score::FactoryList_QtInterface</a></div><div class="ttdef"><b>Definition:</b> FactoryFamily_QtInterface.hpp:13</div></div>

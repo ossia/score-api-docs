@@ -100,12 +100,12 @@ $(document).ready(function(){initNavTree('_event_inspector_widget_8hpp_source.ht
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Inspector/InspectorSectionWidget.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Inspector/InspectorWidgetBase.hpp&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;score/selection/SelectionDispatcher.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Scenario/Inspector/Expression/ExpressionMenu.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Inspector/InspectorSectionWidget.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Inspector/InspectorWidgetBase.hpp&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;Scenario/Inspector/Expression/ExpressionMenu.hpp&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;score/selection/SelectionDispatcher.hpp&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
@@ -125,43 +125,42 @@ $(document).ready(function(){initNavTree('_event_inspector_widget_8hpp_source.ht
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  W_OBJECT(<a class="code" href="class_scenario_1_1_event_inspector_widget.html">EventInspectorWidget</a>)</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_scenario_1_1_event_inspector_widget.html#a09e2f483ac50554936c3799b1f031188">EventInspectorWidget</a>(</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_event_model.html">EventModel</a>&amp; <span class="keywordtype">object</span>,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; context,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">void</span> expandEventSection(<span class="keywordtype">bool</span> b) W_SIGNAL(expandEventSection, b);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> updateDisplayedValues();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">void</span> on_conditionChanged();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> on_conditionReset();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  std::vector&lt;QWidget*&gt; m_properties;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  QPointer&lt;const EventModel&gt; m_model;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; m_context;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="class_command_dispatcher.html">CommandDispatcher&lt;&gt;</a> m_commandDispatcher;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="classscore_1_1_selection_dispatcher.html">score::SelectionDispatcher</a> m_selectionDispatcher;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="class_scenario_1_1_metadata_widget.html">MetadataWidget</a>* m_metadata{};</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="class_scenario_1_1_expression_menu.html">ExpressionMenu</a> m_menu;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="class_scenario_1_1_expression_editor_widget.html">ExpressionEditorWidget</a>* m_exprEditor{};</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  QComboBox* m_offsetBehavior{};</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_event_model.html">EventModel</a>&amp; <span class="keywordtype">object</span>, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; context,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">void</span> expandEventSection(<span class="keywordtype">bool</span> b) W_SIGNAL(expandEventSection, b);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">void</span> updateDisplayedValues();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> on_conditionChanged();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">void</span> on_conditionReset();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  std::vector&lt;QWidget*&gt; m_properties;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  QPointer&lt;const EventModel&gt; m_model;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; m_context;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="class_command_dispatcher.html">CommandDispatcher&lt;&gt;</a> m_commandDispatcher;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="classscore_1_1_selection_dispatcher.html">score::SelectionDispatcher</a> m_selectionDispatcher;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="class_scenario_1_1_metadata_widget.html">MetadataWidget</a>* m_metadata{};</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="class_scenario_1_1_expression_menu.html">ExpressionMenu</a> m_menu;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="class_scenario_1_1_expression_editor_widget.html">ExpressionEditorWidget</a>* m_exprEditor{};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  QComboBox* m_offsetBehavior{};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_scenario_1_1_expression_editor_widget_html"><div class="ttname"><a href="class_scenario_1_1_expression_editor_widget.html">Scenario::ExpressionEditorWidget</a></div><div class="ttdef"><b>Definition:</b> ExpressionEditorWidget.hpp:31</div></div>
-<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>
+<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:13</div></div>
 <div class="ttc" id="aclassscore_1_1_selection_dispatcher_html"><div class="ttname"><a href="classscore_1_1_selection_dispatcher.html">score::SelectionDispatcher</a></div><div class="ttdoc">The SelectionDispatcher class.</div><div class="ttdef"><b>Definition:</b> SelectionDispatcher.hpp:14</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
 <div class="ttc" id="aclass_scenario_1_1_event_inspector_widget_html"><div class="ttname"><a href="class_scenario_1_1_event_inspector_widget.html">Scenario::EventInspectorWidget</a></div><div class="ttdoc">The EventInspectorWidget class Inherits from InspectorWidgetInterface.</div><div class="ttdef"><b>Definition:</b> EventInspectorWidget.hpp:28</div></div>
 <div class="ttc" id="aclass_inspector_1_1_inspector_widget_base_html"><div class="ttname"><a href="class_inspector_1_1_inspector_widget_base.html">Inspector::InspectorWidgetBase</a></div><div class="ttdoc">The InspectorWidgetBase class Set the global structuration for an inspected element.</div><div class="ttdef"><b>Definition:</b> InspectorWidgetBase.hpp:36</div></div>
 <div class="ttc" id="aclass_command_dispatcher_html"><div class="ttname"><a href="class_command_dispatcher.html">CommandDispatcher&lt;&gt;</a></div></div>
-<div class="ttc" id="aclass_scenario_1_1_event_inspector_widget_html_a09e2f483ac50554936c3799b1f031188"><div class="ttname"><a href="class_scenario_1_1_event_inspector_widget.html#a09e2f483ac50554936c3799b1f031188">Scenario::EventInspectorWidget::EventInspectorWidget</a></div><div class="ttdeci">EventInspectorWidget(const EventModel &amp;object, const score::DocumentContext &amp;context, QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> EventInspectorWidget.cpp:47</div></div>
-<div class="ttc" id="aclass_scenario_1_1_event_model_html"><div class="ttname"><a href="class_scenario_1_1_event_model.html">Scenario::EventModel</a></div><div class="ttdef"><b>Definition:</b> EventModel.hpp:33</div></div>
+<div class="ttc" id="aclass_scenario_1_1_event_inspector_widget_html_a09e2f483ac50554936c3799b1f031188"><div class="ttname"><a href="class_scenario_1_1_event_inspector_widget.html#a09e2f483ac50554936c3799b1f031188">Scenario::EventInspectorWidget::EventInspectorWidget</a></div><div class="ttdeci">EventInspectorWidget(const EventModel &amp;object, const score::DocumentContext &amp;context, QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> EventInspectorWidget.cpp:50</div></div>
+<div class="ttc" id="aclass_scenario_1_1_event_model_html"><div class="ttname"><a href="class_scenario_1_1_event_model.html">Scenario::EventModel</a></div><div class="ttdef"><b>Definition:</b> EventModel.hpp:35</div></div>
 <div class="ttc" id="aclass_scenario_1_1_metadata_widget_html"><div class="ttname"><a href="class_scenario_1_1_metadata_widget.html">Scenario::MetadataWidget</a></div><div class="ttdef"><b>Definition:</b> MetadataWidget.hpp:46</div></div>
 <div class="ttc" id="aclass_scenario_1_1_expression_menu_html"><div class="ttname"><a href="class_scenario_1_1_expression_menu.html">Scenario::ExpressionMenu</a></div><div class="ttdef"><b>Definition:</b> ExpressionMenu.hpp:14</div></div>
 <!-- HTML footer for doxygen 1.8.8-->

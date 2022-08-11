@@ -102,10 +102,10 @@ $(document).ready(function(){initNavTree('_simple_expression_editor_widget_8hpp_
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;State/Expression.hpp&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QWidget&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;Scenario/Inspector/ExpressionValidator.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Scenario/Inspector/ExpressionValidator.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QWidget&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;verdigris&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
@@ -147,71 +147,69 @@ $(document).ready(function(){initNavTree('_simple_expression_editor_widget_8hpp_
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  W_OBJECT(<a class="code" href="class_scenario_1_1_simple_expression_editor_widget.html">SimpleExpressionEditorWidget</a>)</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="class_scenario_1_1_simple_expression_editor_widget.html#a9b868e1566bd10a63f2a53c4d9f859c1">SimpleExpressionEditorWidget</a>(</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp;,</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      int64_t index,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      QWidget* parent = <span class="keyword">nullptr</span>,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      QMenu* menu = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="class_tree_node.html">State::Expression</a> relation();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  std::optional&lt;State::BinaryOperator&gt; binOperator();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp;, int64_t index, QWidget* parent = <span class="keyword">nullptr</span>,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      QMenu* menu = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="class_tree_node.html">State::Expression</a> relation();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  std::optional&lt;State::BinaryOperator&gt; binOperator();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  int64_t <span class="keywordtype">id</span> = -1;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  int64_t <span class="keywordtype">id</span> = -1;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> setRelation(<span class="keyword">const</span> <a class="code" href="struct_state_1_1_relation.html">State::Relation</a>&amp; r);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">void</span> setPulse(<span class="keyword">const</span> <a class="code" href="struct_state_1_1_pulse.html">State::Pulse</a>&amp; r);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> setOperator(State::BinaryOperator o);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">void</span> setOperator(State::UnaryOperator u);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  QString currentRelation();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  QString currentOperator();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> enableRemoveButton(<span class="keywordtype">bool</span>);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> enableAddButton(<span class="keywordtype">bool</span>);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span> enableMenuButton(<span class="keywordtype">bool</span>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">void</span> setRelation(<span class="keyword">const</span> <a class="code" href="struct_state_1_1_relation.html">State::Relation</a>&amp; r);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> setPulse(<span class="keyword">const</span> <a class="code" href="struct_state_1_1_pulse.html">State::Pulse</a>&amp; r);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> setOperator(State::BinaryOperator o);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">void</span> setOperator(State::UnaryOperator u);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  QString currentRelation();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  QString currentOperator();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> enableRemoveButton(<span class="keywordtype">bool</span>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> enableAddButton(<span class="keywordtype">bool</span>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> enableMenuButton(<span class="keywordtype">bool</span>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span> decreaseId();</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">void</span> decreaseId();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span> editingFinished() W_SIGNAL(editingFinished);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">void</span> addTerm() W_SIGNAL(addTerm);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> removeTerm(<span class="keywordtype">int</span> index) W_SIGNAL(removeTerm, index);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">void</span> on_editFinished();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">void</span> on_comparatorChanged(<span class="keywordtype">int</span> i);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="comment">// TODO on_modelChanged() -&gt; done in parent inspector (i.e. event), no ?</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> editingFinished() W_SIGNAL(editingFinished);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> addTerm() W_SIGNAL(addTerm);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span> removeTerm(<span class="keywordtype">int</span> index) W_SIGNAL(removeTerm, index);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">void</span> on_editFinished();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">void</span> on_comparatorChanged(<span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="comment">// TODO on_modelChanged() -&gt; done in parent inspector (i.e. event), no ?</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  QLabel* m_ok{};</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  QLabel* m_ok{};</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="class_device_1_1_address_accessor_edit_widget.html">Device::AddressAccessorEditWidget</a>* m_address{};</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  QComboBox* m_comparator{};</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  QLineEdit* m_value{};</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  QComboBox* m_binOperator{};</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  QToolButton* m_rmBtn{};</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  QToolButton* m_addBtn{};</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  QToolButton* m_menuBtn{};</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="class_expression_validator.html">ExpressionValidator&lt;State::Expression&gt;</a> m_validator;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  QString m_relation{};</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  QString m_op{};</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_scenario_1_1_expression_editor_comparator_01_4.html">  100</a></span>&#160;Q_DECLARE_METATYPE(Scenario::ExpressionEditorComparator)</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;W_REGISTER_ARGTYPE(Scenario::ExpressionEditorComparator)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="class_device_1_1_address_accessor_edit_widget.html">Device::AddressAccessorEditWidget</a>* m_address{};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  QComboBox* m_comparator{};</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  QLineEdit* m_value{};</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  QComboBox* m_binOperator{};</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  QToolButton* m_rmBtn{};</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  QToolButton* m_addBtn{};</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  QToolButton* m_menuBtn{};</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <a class="code" href="class_expression_validator.html">ExpressionValidator&lt;State::Expression&gt;</a> m_validator;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  QString m_relation{};</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  QString m_op{};</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="struct_q_meta_type_id_3_01_scenario_1_1_expression_editor_comparator_01_4.html">   98</a></span>&#160;Q_DECLARE_METATYPE(Scenario::ExpressionEditorComparator)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;W_REGISTER_ARGTYPE(Scenario::ExpressionEditorComparator)</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_tree_node_html"><div class="ttname"><a href="class_tree_node.html">TreeNode&lt; ExprData &gt;</a></div></div>
-<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:11</div></div>
-<div class="ttc" id="astruct_state_1_1_pulse_html"><div class="ttname"><a href="struct_state_1_1_pulse.html">State::Pulse</a></div><div class="ttdef"><b>Definition:</b> Relation.hpp:74</div></div>
+<div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition:</b> score-plugin-dataflow/Dataflow/PortItem.hpp:13</div></div>
+<div class="ttc" id="astruct_state_1_1_pulse_html"><div class="ttname"><a href="struct_state_1_1_pulse.html">State::Pulse</a></div><div class="ttdef"><b>Definition:</b> Relation.hpp:70</div></div>
 <div class="ttc" id="aclass_device_1_1_address_accessor_edit_widget_html"><div class="ttname"><a href="class_device_1_1_address_accessor_edit_widget.html">Device::AddressAccessorEditWidget</a></div><div class="ttdef"><b>Definition:</b> AddressAccessorEditWidget.hpp:25</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
 <div class="ttc" id="aclass_scenario_1_1_simple_expression_editor_widget_html"><div class="ttname"><a href="class_scenario_1_1_simple_expression_editor_widget.html">Scenario::SimpleExpressionEditorWidget</a></div><div class="ttdef"><b>Definition:</b> SimpleExpressionEditorWidget.hpp:45</div></div>
-<div class="ttc" id="astruct_state_1_1_relation_html"><div class="ttname"><a href="struct_state_1_1_relation.html">State::Relation</a></div><div class="ttdef"><b>Definition:</b> Relation.hpp:19</div></div>
+<div class="ttc" id="astruct_state_1_1_relation_html"><div class="ttname"><a href="struct_state_1_1_relation.html">State::Relation</a></div><div class="ttdef"><b>Definition:</b> Relation.hpp:18</div></div>
 <div class="ttc" id="aclass_expression_validator_html"><div class="ttname"><a href="class_expression_validator.html">ExpressionValidator</a></div><div class="ttdef"><b>Definition:</b> ExpressionValidator.hpp:9</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:146</div></div>
-<div class="ttc" id="aclass_scenario_1_1_simple_expression_editor_widget_html_a9b868e1566bd10a63f2a53c4d9f859c1"><div class="ttname"><a href="class_scenario_1_1_simple_expression_editor_widget.html#a9b868e1566bd10a63f2a53c4d9f859c1">Scenario::SimpleExpressionEditorWidget::SimpleExpressionEditorWidget</a></div><div class="ttdeci">SimpleExpressionEditorWidget(const score::DocumentContext &amp;, int64_t index, QWidget *parent=nullptr, QMenu *menu=nullptr)</div><div class="ttdef"><b>Definition:</b> SimpleExpressionEditorWidget.cpp:74</div></div>
-<div class="ttc" id="anamespace_device_html"><div class="ttname"><a href="namespace_device.html">Device</a></div><div class="ttdoc">Manipulation of Devices from Qt.</div><div class="ttdef"><b>Definition:</b> AddressSettings.cpp:12</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:160</div></div>
+<div class="ttc" id="aclass_scenario_1_1_simple_expression_editor_widget_html_a9b868e1566bd10a63f2a53c4d9f859c1"><div class="ttname"><a href="class_scenario_1_1_simple_expression_editor_widget.html#a9b868e1566bd10a63f2a53c4d9f859c1">Scenario::SimpleExpressionEditorWidget::SimpleExpressionEditorWidget</a></div><div class="ttdeci">SimpleExpressionEditorWidget(const score::DocumentContext &amp;, int64_t index, QWidget *parent=nullptr, QMenu *menu=nullptr)</div><div class="ttdef"><b>Definition:</b> SimpleExpressionEditorWidget.cpp:77</div></div>
+<div class="ttc" id="anamespace_device_html"><div class="ttname"><a href="namespace_device.html">Device</a></div><div class="ttdoc">Manipulation of Devices from Qt.</div><div class="ttdef"><b>Definition:</b> AddressSettings.cpp:13</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

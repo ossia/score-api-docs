@@ -99,22 +99,22 @@ $(document).ready(function(){initNavTree('_midi_drop_8hpp_source.html',''); init
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Midi/MidiNote.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Process/Drop/ProcessDropHandler.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Process/TimeValue.hpp&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>Midi</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_midi_1_1_drop_handler.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_midi_1_1_drop_handler.html">DropHandler</a> final : <span class="keyword">public</span> <a class="code" href="class_process_1_1_process_drop_handler.html">Process::ProcessDropHandler</a></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;8F162598-9E4E-4865-A861-81DF01D2CDF0&quot;</span>)</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  QSet&lt;QString&gt; mimeTypes() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  QSet&lt;QString&gt; fileExtensions() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keywordtype">void</span> dropData(</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      std::vector&lt;ProcessDrop&gt;&amp; drops,</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_process_1_1_process_drop_handler_1_1_dropped_file.html">DroppedFile</a>&amp; data,</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Process/Drop/ProcessDropHandler.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Process/TimeValue.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Midi/MidiNote.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>Midi</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_midi_1_1_drop_handler.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_midi_1_1_drop_handler.html">DropHandler</a> final : <span class="keyword">public</span> <a class="code" href="class_process_1_1_process_drop_handler.html">Process::ProcessDropHandler</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  SCORE_CONCRETE(<span class="stringliteral">&quot;8F162598-9E4E-4865-A861-81DF01D2CDF0&quot;</span>)</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  QSet&lt;QString&gt; mimeTypes() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  QSet&lt;QString&gt; fileExtensions() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keywordtype">void</span> dropData(</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      std::vector&lt;ProcessDrop&gt;&amp; drops, <span class="keyword">const</span> <a class="code" href="struct_process_1_1_process_drop_handler_1_1_dropped_file.html">DroppedFile</a>&amp; data,</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
@@ -136,14 +136,13 @@ $(document).ready(function(){initNavTree('_midi_drop_8hpp_source.html',''); init
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  };</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">static</span> std::vector&lt;MidiTrack::MidiSong&gt;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  parse(<span class="keyword">const</span> QMimeData&amp; dat, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">static</span> <a class="code" href="struct_midi_1_1_midi_track_1_1_midi_song.html">MidiSong</a></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  parse(<span class="keyword">const</span> QByteArray&amp; dat, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">static</span> <a class="code" href="struct_midi_1_1_midi_track_1_1_midi_song.html">MidiSong</a> parse(<span class="keyword">const</span> QByteArray&amp; dat, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astruct_midi_1_1_midi_track_html"><div class="ttname"><a href="struct_midi_1_1_midi_track.html">Midi::MidiTrack</a></div><div class="ttdef"><b>Definition:</b> MidiDrop.hpp:21</div></div>
-<div class="ttc" id="aclass_midi_1_1_drop_handler_html"><div class="ttname"><a href="class_midi_1_1_drop_handler.html">Midi::DropHandler</a></div><div class="ttdef"><b>Definition:</b> MidiDrop.hpp:8</div></div>
+<div class="ttc" id="aclass_midi_1_1_drop_handler_html"><div class="ttname"><a href="class_midi_1_1_drop_handler.html">Midi::DropHandler</a></div><div class="ttdef"><b>Definition:</b> MidiDrop.hpp:9</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
 <div class="ttc" id="aclass_process_1_1_process_drop_handler_html"><div class="ttname"><a href="class_process_1_1_process_drop_handler.html">Process::ProcessDropHandler</a></div><div class="ttdef"><b>Definition:</b> ProcessDropHandler.hpp:22</div></div>
 <div class="ttc" id="astruct_midi_1_1_midi_track_1_1_midi_song_html"><div class="ttname"><a href="struct_midi_1_1_midi_track_1_1_midi_song.html">Midi::MidiTrack::MidiSong</a></div><div class="ttdef"><b>Definition:</b> MidiDrop.hpp:28</div></div>

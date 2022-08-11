@@ -107,28 +107,25 @@ $(document).ready(function(){initNavTree('score-plugin-gfx_2_gfx_2_text_2_execut
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span>Model;</div>
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_gfx_1_1_text_1_1_process_executor_component.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_gfx_1_1_text_1_1_process_executor_component.html">ProcessExecutorComponent</a> final</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    : <span class="keyword">public</span> <a class="code" href="namespace_execution.html">Execution</a>::</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;          ProcessComponent_T&lt;Gfx::Text::Model, ossia::node_process&gt;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  COMPONENT_METADATA(<span class="stringliteral">&quot;1af00601-84ad-49d7-a854-f1ea79c5c8a9&quot;</span>)</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <a class="code" href="class_gfx_1_1_text_1_1_process_executor_component.html">ProcessExecutorComponent</a>(</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      <a class="code" href="class_gfx_1_1_text_1_1_model.html">Model</a>&amp; element,</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx,</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      QObject* parent);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordtype">void</span> cleanup() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">using</span> <a class="code" href="class_execution_1_1_process_component_factory___t.html">ProcessExecutorComponentFactory</a></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    = <a class="code" href="class_execution_1_1_process_component_factory___t.html">Execution::ProcessComponentFactory_T&lt;ProcessExecutorComponent&gt;</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    : <span class="keyword">public</span> <a class="code" href="struct_execution_1_1_process_component___t.html">Execution::ProcessComponent_T</a>&lt;Gfx::Text::Model, ossia::node_process&gt;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  COMPONENT_METADATA(<span class="stringliteral">&quot;1af00601-84ad-49d7-a854-f1ea79c5c8a9&quot;</span>)</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <a class="code" href="class_gfx_1_1_text_1_1_process_executor_component.html">ProcessExecutorComponent</a>(</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;      <a class="code" href="class_gfx_1_1_text_1_1_model.html">Model</a>&amp; element, <span class="keyword">const</span> <a class="code" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx, QObject* parent);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keywordtype">void</span> cleanup() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">using</span> <a class="code" href="class_execution_1_1_process_component_factory___t.html">ProcessExecutorComponentFactory</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    = <a class="code" href="class_execution_1_1_process_component_factory___t.html">Execution::ProcessComponentFactory_T&lt;ProcessExecutorComponent&gt;</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_execution_1_1_process_component_factory___t_html"><div class="ttname"><a href="class_execution_1_1_process_component_factory___t.html">Execution::ProcessComponentFactory_T</a></div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:127</div></div>
-<div class="ttc" id="aclass_gfx_1_1_text_1_1_model_html"><div class="ttname"><a href="class_gfx_1_1_text_1_1_model.html">Gfx::Text::Model</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Text/Process.hpp:13</div></div>
+<div class="ttc" id="aclass_execution_1_1_process_component_factory___t_html"><div class="ttname"><a href="class_execution_1_1_process_component_factory___t.html">Execution::ProcessComponentFactory_T</a></div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:115</div></div>
+<div class="ttc" id="aclass_gfx_1_1_text_1_1_model_html"><div class="ttname"><a href="class_gfx_1_1_text_1_1_model.html">Gfx::Text::Model</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Text/Process.hpp:14</div></div>
 <div class="ttc" id="aclass_gfx_1_1_text_1_1_process_executor_component_html"><div class="ttname"><a href="class_gfx_1_1_text_1_1_process_executor_component.html">Gfx::Text::ProcessExecutorComponent</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Text/Executor.hpp:9</div></div>
-<div class="ttc" id="anamespace_execution_html"><div class="ttname"><a href="namespace_execution.html">Execution</a></div><div class="ttdoc">Components used for the execution of a score.</div><div class="ttdef"><b>Definition:</b> ProcessComponent.cpp:11</div></div>
-<div class="ttc" id="astruct_execution_1_1_context_html"><div class="ttname"><a href="struct_execution_1_1_context.html">Execution::Context</a></div><div class="ttdef"><b>Definition:</b> ExecutionContext.hpp:97</div></div>
+<div class="ttc" id="astruct_execution_1_1_context_html"><div class="ttname"><a href="struct_execution_1_1_context.html">Execution::Context</a></div><div class="ttdef"><b>Definition:</b> ExecutionContext.hpp:92</div></div>
+<div class="ttc" id="astruct_execution_1_1_process_component___t_html"><div class="ttname"><a href="struct_execution_1_1_process_component___t.html">Execution::ProcessComponent_T</a></div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:86</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

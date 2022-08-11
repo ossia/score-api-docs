@@ -142,44 +142,42 @@ $(document).ready(function(){initNavTree('_document_context_8hpp_source.html',''
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">  </span>{</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; pms = this-&gt;pluginModels();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">auto</span> it = find_if(begin(pms), end(pms), [&amp;](<a class="code" href="classscore_1_1_document_plugin.html">DocumentPlugin</a>* pm) {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>T*<span class="keyword">&gt;</span>(pm);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    });</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    SCORE_ASSERT(it != end(pms));</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> *safe_cast&lt;T*&gt;(*it);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  T* findPlugin()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; pms = this-&gt;pluginModels();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">auto</span> it = find_if(begin(pms), end(pms), [&amp;](<a class="code" href="classscore_1_1_document_plugin.html">DocumentPlugin</a>* pm) {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>T*<span class="keyword">&gt;</span>(pm);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    });</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">if</span> (it != end(pms))</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keywordflow">return</span> safe_cast&lt;T*&gt;(*it);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="structscore_1_1_document_context.html">DocumentContext</a>(<a class="code" href="classscore_1_1_document.html">score::Document</a>&amp; d);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="structscore_1_1_document_context.html">DocumentContext</a>(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">DocumentContext</a>&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="structscore_1_1_document_context.html">DocumentContext</a>(<a class="code" href="structscore_1_1_document_context.html">DocumentContext</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="structscore_1_1_document_context.html">DocumentContext</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">DocumentContext</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="structscore_1_1_document_context.html">DocumentContext</a>&amp; operator=(<a class="code" href="structscore_1_1_document_context.html">DocumentContext</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">using</span> <a class="code" href="structscore_1_1_document_context.html">MaybeDocument</a> = <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>*;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">auto</span> it = find_if(</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        begin(pms), end(pms), [&amp;](<a class="code" href="classscore_1_1_document_plugin.html">DocumentPlugin</a>* pm) { <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>T*<span class="keyword">&gt;</span>(pm); });</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    SCORE_ASSERT(it != end(pms));</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> *safe_cast&lt;T*&gt;(*it);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  T* findPlugin()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; pms = this-&gt;pluginModels();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">auto</span> it = find_if(</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        begin(pms), end(pms), [&amp;](<a class="code" href="classscore_1_1_document_plugin.html">DocumentPlugin</a>* pm) { <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>T*<span class="keyword">&gt;</span>(pm); });</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">if</span>(it != end(pms))</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keywordflow">return</span> safe_cast&lt;T*&gt;(*it);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="structscore_1_1_document_context.html">DocumentContext</a>(<a class="code" href="classscore_1_1_document.html">score::Document</a>&amp; d);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="structscore_1_1_document_context.html">DocumentContext</a>(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">DocumentContext</a>&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="structscore_1_1_document_context.html">DocumentContext</a>(<a class="code" href="structscore_1_1_document_context.html">DocumentContext</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="structscore_1_1_document_context.html">DocumentContext</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">DocumentContext</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="structscore_1_1_document_context.html">DocumentContext</a>&amp; operator=(<a class="code" href="structscore_1_1_document_context.html">DocumentContext</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">using</span> <a class="code" href="structscore_1_1_document_context.html">MaybeDocument</a> = <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>*;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
 <div class="ttc" id="aclassscore_1_1_document_html"><div class="ttname"><a href="classscore_1_1_document.html">score::Document</a></div><div class="ttdoc">The Document class is the central part of the software.</div><div class="ttdef"><b>Definition:</b> Document.hpp:50</div></div>
 <div class="ttc" id="aclass_ongoing_command_dispatcher_html"><div class="ttname"><a href="class_ongoing_command_dispatcher.html">OngoingCommandDispatcher</a></div><div class="ttdoc">The OngoingCommandDispatcher class.</div><div class="ttdef"><b>Definition:</b> OngoingCommandDispatcher.hpp:26</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:146</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:160</div></div>
 <div class="ttc" id="astructscore_1_1_g_u_i_application_context_html"><div class="ttname"><a href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a></div><div class="ttdoc">Specializes ApplicationContext with the QMainWindow.</div><div class="ttdef"><b>Definition:</b> GUIApplicationContext.hpp:14</div></div>
 <div class="ttc" id="aclassscore_1_1_command_stack_facade_html"><div class="ttname"><a href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a></div><div class="ttdoc">A small abstraction layer over the score::CommandStack.</div><div class="ttdef"><b>Definition:</b> CommandStackFacade.hpp:19</div></div>
 <div class="ttc" id="aclassscore_1_1_selection_stack_html"><div class="ttname"><a href="classscore_1_1_selection_stack.html">score::SelectionStack</a></div><div class="ttdoc">The SelectionStack class.</div><div class="ttdef"><b>Definition:</b> SelectionStack.hpp:23</div></div>
