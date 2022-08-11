@@ -1,5 +1,10 @@
 var NAVTREEINDEX20 =
 {
+"class_local_tree_1_1_document_plugin.html#af8585c55df0c0dd6f7b15f6399db7a4d":[12,0,26,5,0],
+"class_local_tree_1_1_document_plugin.html#afda5f4de332573e13a7d34cf8c38fe02":[12,0,26,5,3],
+"class_local_tree_1_1_event.html":[12,0,26,6],
+"class_local_tree_1_1_event.html#a13c15ed7c43cd23b131a749832072135":[12,0,26,6,0],
+"class_local_tree_1_1_event.html#aa8402341556fa766731acc3d310ceb0c":[12,0,26,6,1],
 "class_local_tree_1_1_interval.html":[12,0,26,8],
 "class_local_tree_1_1_interval.html#aac54b04f8db392b114c6a84bfc7c0371":[12,0,26,8,1],
 "class_local_tree_1_1_interval.html#af2c0bae580847e6c51cbae605ee1471e":[12,0,26,8,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX20 =
 "class_media_1_1_sound_1_1_process_model.html#af443386df78200acc92accc296863c06":[12,0,29,3,9,4],
 "class_media_1_1_sound_component_setup.html":[12,0,29,24],
 "class_media_1_1_step_1_1_inspector_factory.html":[12,0,29,4,0],
-"class_media_1_1_step_1_1_inspector_widget.html":[12,0,29,4,1],
-"class_media_1_1_step_1_1_inspector_widget.html#a81a4451194dd3fb9baaf467b8c1b94b9":[12,0,29,4,1,0],
-"class_media_1_1_step_1_1_item.html":[12,0,29,4,2],
-"class_media_1_1_step_1_1_item.html#a225fc3a0095fffa4114d454fc27ca052":[12,0,29,4,2,1],
-"class_media_1_1_step_1_1_item.html#a3e7e074c012e6d650983c83daee8c3b4":[12,0,29,4,2,2],
-"class_media_1_1_step_1_1_item.html#a81800f0ce3d68c36506564837ed430ee":[12,0,29,4,2,3]
+"class_media_1_1_step_1_1_inspector_widget.html":[12,0,29,4,1]
 };

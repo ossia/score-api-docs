@@ -1,5 +1,10 @@
 var NAVTREEINDEX27 =
 {
+"class_protocols_1_1_minuit_protocol_settings_widget.html#afda9add43da4cd6c3db32c9bad861f43":[12,0,40,44,9],
+"class_protocols_1_1_o_s_c_device.html":[12,0,40,47],
+"class_protocols_1_1_o_s_c_device.html#a1aa76db4faf9cfdccec33d8ac9fc0bfe":[12,0,40,47,1],
+"class_protocols_1_1_o_s_c_device.html#a2bef200279f30cbca38c5c3622c56fa8":[12,0,40,47,3],
+"class_protocols_1_1_o_s_c_device.html#a301b7593ce1c20d7dfe99640e6a94932":[12,0,40,47,4],
 "class_protocols_1_1_o_s_c_device.html#a7258af10e4efb66fd06f8fc378fe09e8":[12,0,40,47,2],
 "class_protocols_1_1_o_s_c_device.html#ab192ce89d52f9b79aa1fdb7a155b75b1":[12,0,40,47,0],
 "class_protocols_1_1_o_s_c_library_handler.html":[12,0,40,48],
@@ -244,10 +249,5 @@ var NAVTREEINDEX27 =
 "class_remote_control_1_1_state.html#ad2820793d675716d627ba2f0d5cca944":[12,0,43,15,0],
 "class_remote_control_1_1_sync.html":[12,0,43,16],
 "class_remote_control_1_1_sync.html#a0e1d508bdd3e73977cc90750566c8585":[12,0,43,16,0],
-"class_remove_event_test.html":[12,0,330],
-"class_remove_interval_test.html":[12,0,331],
-"class_remove_interval_test.html#a32ab6c9fc39624f55bdef5d6b6489d55":[12,0,331,0],
-"class_remove_interval_test.html#aa02dc1f63719293271d6595469aabe71":[12,0,331,1],
-"class_remove_interval_test.html#aa0fe48f8ff0d7bbc93891ec3c2d81ad1":[12,0,331,2],
-"class_remove_layer_model_from_slot_test.html":[12,0,332]
+"class_remove_event_test.html":[12,0,330]
 };

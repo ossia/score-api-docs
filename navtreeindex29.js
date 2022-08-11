@@ -1,5 +1,14 @@
 var NAVTREEINDEX29 =
 {
+"class_scenario_1_1_command_1_1_clear_selection.html":[12,0,45,0,20],
+"class_scenario_1_1_command_1_1_clear_state.html":[12,0,45,0,21],
+"class_scenario_1_1_command_1_1_clear_state.html#a09ff70fde6a400ddd907520f42d81908":[12,0,45,0,21,4],
+"class_scenario_1_1_command_1_1_clear_state.html#a1d871ca6f5552662fae3fcd841401d77":[12,0,45,0,21,1],
+"class_scenario_1_1_command_1_1_clear_state.html#a3fd12e0b2032f3a89388d00f87588121":[12,0,45,0,21,2],
+"class_scenario_1_1_command_1_1_clear_state.html#a831c6195453ce23bac8eaf2f86f937d1":[12,0,45,0,21,3],
+"class_scenario_1_1_command_1_1_clear_state.html#abeefa31df0d65ca715747b2352b495ca":[12,0,45,0,21,0],
+"class_scenario_1_1_command_1_1_create_automation_from_states.html":[12,0,45,0,23],
+"class_scenario_1_1_command_1_1_create_automation_from_states.html#a1a77e116a1e025d0ec4472e6e218e8ec":[12,0,45,0,23,1],
 "class_scenario_1_1_command_1_1_create_automation_from_states.html#a50162129e9c7c3f76b5a8738fa0e21e4":[12,0,45,0,23,0],
 "class_scenario_1_1_command_1_1_create_comment_block.html":[12,0,45,0,24],
 "class_scenario_1_1_command_1_1_create_comment_block.html#ab9974229ddac225277897fb2862be807":[12,0,45,0,24,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX29 =
 "class_scenario_1_1_command_1_1_move_top_event_meta.html#a63d822815ac57c0acee889446b47db51":[12,0,45,0,71,5],
 "class_scenario_1_1_command_1_1_move_top_event_meta.html#ab85d096307167989edf1df9f256a0bef":[12,0,45,0,71,6],
 "class_scenario_1_1_command_1_1_move_top_event_meta.html#adb6a8e5192d2630add0575faea7f8d77":[12,0,45,0,71,7],
-"class_scenario_1_1_command_1_1_move_top_event_meta.html#ae541d1ffefa5d3aae5516323e6860300":[12,0,45,0,71,3],
-"class_scenario_1_1_command_1_1_paste_processes_in_interval.html":[12,0,45,0,72],
-"class_scenario_1_1_command_1_1_paste_processes_in_interval.html#a58f4afe9061ab5ccb1bc4428d3859e4c":[12,0,45,0,72,0],
-"class_scenario_1_1_command_1_1_paste_processes_in_interval.html#ab15aa5d739dacbb17553c7515ec5c74d":[12,0,45,0,72,1],
-"class_scenario_1_1_command_1_1_put_process_before.html":[12,0,45,0,73],
-"class_scenario_1_1_command_1_1_put_process_before.html#ac90d0e505f07786ec8b5bd4882ff8a30":[12,0,45,0,73,0],
-"class_scenario_1_1_command_1_1_put_process_before.html#aed716c91df71eab3191d1ded2b17b3ee":[12,0,45,0,73,1],
-"class_scenario_1_1_command_1_1_put_state_process_before.html":[12,0,45,0,74],
-"class_scenario_1_1_command_1_1_put_state_process_before.html#a3419e1c73ed4630a6f9e7cb8953018eb":[12,0,45,0,74,1],
-"class_scenario_1_1_command_1_1_put_state_process_before.html#af930ddfe287966bdb6cb9ae7317364bb":[12,0,45,0,74,0]
+"class_scenario_1_1_command_1_1_move_top_event_meta.html#ae541d1ffefa5d3aae5516323e6860300":[12,0,45,0,71,3]
 };

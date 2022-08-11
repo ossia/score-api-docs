@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('_scenario_document_presenter_8hpp_sour
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">class </span>ScenarioDocumentView;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">class </span>TimeRulerPresenter;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">using</span> CentralDisplay = ossia::variant&lt;ossia::monostate, CentralIntervalDisplay, CentralNodalDisplay&gt;;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">using</span> CentralDisplay = ossia::slow_variant&lt;ossia::monostate, CentralIntervalDisplay, CentralNodalDisplay&gt;;</div>
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_scenario_1_1_scenario_document_presenter.html">   54</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_SCENARIO_EXPORT <a class="code" href="class_scenario_1_1_scenario_document_presenter.html">ScenarioDocumentPresenter</a> final</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classscore_1_1_document_delegate_presenter.html">score::DocumentDelegatePresenter</a></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    , <span class="keyword">public</span> Nano::Observer</div>

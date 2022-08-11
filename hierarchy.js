@@ -3054,6 +3054,7 @@ var hierarchy =
       [ "Scenario::StartMarker", "class_scenario_1_1_start_marker.html", null ],
       [ "Scenario::StatePresenter", "class_scenario_1_1_state_presenter.html", null ],
       [ "Scenario::StateView", "class_scenario_1_1_state_view.html", null ],
+      [ "Scenario::TimenodeGraph", "struct_scenario_1_1_timenode_graph.html", null ],
       [ "Scenario::TimeRulerBase", "class_scenario_1_1_time_ruler_base.html", null ],
       [ "Scenario::TimeSignatureHandle", "class_scenario_1_1_time_signature_handle.html", null ],
       [ "Scenario::TimeSignatureItem", "class_scenario_1_1_time_signature_item.html", null ],
