@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['parents_5972',['parents',['../struct_explorer_1_1_selected_nodes.html#a0015ee94bbf39be77cee2942759bcc15',1,'Explorer::SelectedNodes::parents()'],['../struct_scenario_1_1_selected_nodes.html#a619183b1416115fdeda3b645ab7b8831',1,'Scenario::SelectedNodes::parents()']]],
-  ['processes_5973',['processes',['../class_scenario_1_1_interval_model.html#af5235bf42e20b416c7b1e6356f6622e8',1,'Scenario::IntervalModel']]]
+  ['renderednodes_5997',['renderedNodes',['../classscore_1_1gfx_1_1_node.html#abbac77035201ad0586b55fb7f9075ea8',1,'score::gfx::Node']]],
+  ['renderers_5998',['renderers',['../classscore_1_1gfx_1_1_render_list.html#a73bb243161c6a3a62aa9216748d4c110',1,'score::gfx::RenderList']]],
+  ['revsuffix_5999',['RevSuffix',['../class_factor_1_1_factor_oracle.html#a0c8087389175332cb57cb425fb2aa9d0',1,'Factor::FactorOracle::RevSuffix()'],['../class_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i.html#a88ce8dd41abafefe78d4054d728ffd84',1,'FactorOracle2MIDI::FactorOracle2MIDI::RevSuffix()']]]
 ];

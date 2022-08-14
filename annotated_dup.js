@@ -996,11 +996,13 @@ var annotated_dup =
       [ "LineEdit", "struct_widget_factory_1_1_line_edit.html", "struct_widget_factory_1_1_line_edit" ],
       [ "LogNormalizer", "struct_widget_factory_1_1_log_normalizer.html", null ],
       [ "MultiSlider", "struct_widget_factory_1_1_multi_slider.html", null ],
+      [ "TimeChooser", "struct_widget_factory_1_1_time_chooser.html", null ],
       [ "TimeSignatureValidator", "struct_widget_factory_1_1_time_signature_validator.html", "struct_widget_factory_1_1_time_signature_validator" ],
       [ "Toggle", "struct_widget_factory_1_1_toggle.html", null ],
       [ "UpdatingNormalizer", "struct_widget_factory_1_1_updating_normalizer.html", "struct_widget_factory_1_1_updating_normalizer" ],
       [ "XYSlider", "struct_widget_factory_1_1_x_y_slider.html", null ],
-      [ "XYZSlider", "struct_widget_factory_1_1_x_y_z_slider.html", null ]
+      [ "XYZSlider", "struct_widget_factory_1_1_x_y_z_slider.html", null ],
+      [ "XYZSpinboxes", "struct_widget_factory_1_1_x_y_z_spinboxes.html", null ]
     ] ],
     [ "WidgetLayer", null, [
       [ "LayerFactory", "class_widget_layer_1_1_layer_factory.html", "class_widget_layer_1_1_layer_factory" ],

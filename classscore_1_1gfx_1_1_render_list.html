@@ -126,9 +126,12 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a1be674c6e8c42ce80724f3a1ff3a9bd6">init</a> ()</td></tr>
 <tr class="memdesc:a1be674c6e8c42ce80724f3a1ff3a9bd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize data for this renderer. <br /></td></tr>
 <tr class="separator:a1be674c6e8c42ce80724f3a1ff3a9bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ce1357933a6f40b19e664902110474b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a8ce1357933a6f40b19e664902110474b">initMeshBuffer</a> (const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a> &amp;mesh)</td></tr>
-<tr class="memdesc:a8ce1357933a6f40b19e664902110474b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create buffers for a mesh and mark them for upload.  <a href="classscore_1_1gfx_1_1_render_list.html#a8ce1357933a6f40b19e664902110474b">More...</a><br /></td></tr>
-<tr class="separator:a8ce1357933a6f40b19e664902110474b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21fe54e7bcbf8dd961d3c3da8c6b9fee"><td class="memItemLeft" align="right" valign="top">QRhiResourceUpdateBatch *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a21fe54e7bcbf8dd961d3c3da8c6b9fee">initialBatch</a> () const noexcept</td></tr>
+<tr class="memdesc:a21fe54e7bcbf8dd961d3c3da8c6b9fee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initial resource update batch.  <a href="classscore_1_1gfx_1_1_render_list.html#a21fe54e7bcbf8dd961d3c3da8c6b9fee">More...</a><br /></td></tr>
+<tr class="separator:a21fe54e7bcbf8dd961d3c3da8c6b9fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c3daff52bd2d2231609696d5a3c7cd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a1c3daff52bd2d2231609696d5a3c7cd5">initMeshBuffer</a> (const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a> &amp;mesh, QRhiResourceUpdateBatch &amp;res)</td></tr>
+<tr class="memdesc:a1c3daff52bd2d2231609696d5a3c7cd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create buffers for a mesh and mark them for upload.  <a href="classscore_1_1gfx_1_1_render_list.html#a1c3daff52bd2d2231609696d5a3c7cd5">More...</a><br /></td></tr>
+<tr class="separator:a1c3daff52bd2d2231609696d5a3c7cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cafe12f314b850ea4c9a3f2a7454987"><td class="memItemLeft" align="right" valign="top"><a id="a6cafe12f314b850ea4c9a3f2a7454987"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a6cafe12f314b850ea4c9a3f2a7454987">update</a> (QRhiResourceUpdateBatch &amp;res)</td></tr>
 <tr class="memdesc:a6cafe12f314b850ea4c9a3f2a7454987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update / upload this <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a>'s shared data. <br /></td></tr>
@@ -151,6 +154,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a4c05c20017599d13e6c64415ab6f5cb4"><td class="memItemLeft" align="right" valign="top">QImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a4c05c20017599d13e6c64415ab6f5cb4">adaptImage</a> (const QImage &amp;in)</td></tr>
 <tr class="memdesc:a4c05c20017599d13e6c64415ab6f5cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adapts an image to the GPU limits / format.  <a href="classscore_1_1gfx_1_1_render_list.html#a4c05c20017599d13e6c64415ab6f5cb4">More...</a><br /></td></tr>
 <tr class="separator:a4c05c20017599d13e6c64415ab6f5cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a576933e500bd9d6f77102ed2d3dd8153"><td class="memItemLeft" align="right" valign="top"><a id="a576933e500bd9d6f77102ed2d3dd8153"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a576933e500bd9d6f77102ed2d3dd8153">clearRenderers</a> ()</td></tr>
+<tr class="memdesc:a576933e500bd9d6f77102ed2d3dd8153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the renderers so that they get reinitialized on the next frame. <br /></td></tr>
+<tr class="separator:a576933e500bd9d6f77102ed2d3dd8153"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af37102d6b29a5dd122a7aa022e3b6f66"><td class="memItemLeft" align="right" valign="top"><a id="af37102d6b29a5dd122a7aa022e3b6f66"></a>
 QRhiTexture &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#af37102d6b29a5dd122a7aa022e3b6f66">emptyTexture</a> () const noexcept</td></tr>
 <tr class="memdesc:af37102d6b29a5dd122a7aa022e3b6f66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Texture to use when a texture is missing. <br /></td></tr>
@@ -177,10 +184,6 @@ Public Attributes</h2></td></tr>
 <a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">state</a></td></tr>
 <tr class="memdesc:ab9817d2afdcffb76ff503951907a4dd8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structscore_1_1gfx_1_1_render_state.html" title="Global state associated to a rendering context.">RenderState</a> corresponding to this <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a>. <br /></td></tr>
 <tr class="separator:ab9817d2afdcffb76ff503951907a4dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a38761f45d48905a911d3c2ceec5051"><td class="memItemLeft" align="right" valign="top"><a id="a3a38761f45d48905a911d3c2ceec5051"></a>
-ossia::small_vector&lt; Buffers, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a3a38761f45d48905a911d3c2ceec5051">buffersToUpload</a></td></tr>
-<tr class="memdesc:a3a38761f45d48905a911d3c2ceec5051"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffers corresponding to the meshes to upload before rendering starts. <br /></td></tr>
-<tr class="separator:a3a38761f45d48905a911d3c2ceec5051"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2cdbf0f3dba7154f6551d478eee31c4"><td class="memItemLeft" align="right" valign="top"><a id="ab2cdbf0f3dba7154f6551d478eee31c4"></a>
 std::vector&lt; <a class="el" href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#ab2cdbf0f3dba7154f6551d478eee31c4">nodes</a></td></tr>
 <tr class="memdesc:ab2cdbf0f3dba7154f6551d478eee31c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nodes present in this <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a>, in order. <br /></td></tr>
@@ -212,8 +215,36 @@ std::vector&lt; <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">sc
 
 </div>
 </div>
-<a id="a8ce1357933a6f40b19e664902110474b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ce1357933a6f40b19e664902110474b">&#9670;&nbsp;</a></span>initMeshBuffer()</h2>
+<a id="a21fe54e7bcbf8dd961d3c3da8c6b9fee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21fe54e7bcbf8dd961d3c3da8c6b9fee">&#9670;&nbsp;</a></span>initialBatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRhiResourceUpdateBatch * score::gfx::RenderList::initialBatch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initial resource update batch. </p>
+<p>See QRhiResourceUpdateBatch::merge for documentation on this </p>
+
+</div>
+</div>
+<a id="a1c3daff52bd2d2231609696d5a3c7cd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c3daff52bd2d2231609696d5a3c7cd5">&#9670;&nbsp;</a></span>initMeshBuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -222,8 +253,18 @@ std::vector&lt; <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">sc
           <td class="memname"><a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> score::gfx::RenderList::initMeshBuffer </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a> &amp;&#160;</td>
-          <td class="paramname"><em>mesh</em></td><td>)</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">QRhiResourceUpdateBatch &amp;&#160;</td>
+          <td class="paramname"><em>res</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

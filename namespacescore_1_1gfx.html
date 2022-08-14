@@ -143,8 +143,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_audio_texture_upload.html">AudioTextureUpload</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_basic_mesh.html">BasicMesh</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_camera_node.html">CameraNode</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Model for rendering a camera feed.  <a href="classscore_1_1gfx_1_1_camera_node.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_custom_mesh.html">CustomMesh</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_default_shader_material.html">DefaultShaderMaterial</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility to represent a shader material following score conventions.  <a href="structscore_1_1gfx_1_1_default_shader_material.html#details">More...</a><br /></td></tr>
@@ -161,6 +165,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_generic_node_renderer.html">GenericNodeRenderer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic renderer.  <a href="classscore_1_1gfx_1_1_generic_node_renderer.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1geometry.html">geometry</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html">GPUVideoDecoder</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes and renders a video frame on the GPU.  <a href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#details">More...</a><br /></td></tr>
@@ -276,9 +282,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_textured_triangle.html">TexturedTriangle</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A triangle mesh with positions and texture coordinates.  <a href="structscore_1_1gfx_1_1_textured_triangle.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_texture_normal_mesh.html">TextureNormalMesh</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A mesh with positions, texture coordinates, and normals.  <a href="structscore_1_1gfx_1_1_texture_normal_mesh.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Useful abstraction for storing all the data related to a render target.  <a href="structscore_1_1gfx_1_1_texture_render_target.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -320,18 +323,15 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>GraphImpl</b> = boos
 <tr class="memitem:a8184e9f9fef21824a3b281ffc644c6a5"><td class="memItemLeft" align="right" valign="top"><a id="a8184e9f9fef21824a3b281ffc644c6a5"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>VertexMap</b> = std::map&lt; <a class="el" href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a> *, GraphImpl::vertex_descriptor &gt;</td></tr>
 <tr class="separator:a8184e9f9fef21824a3b281ffc644c6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d0d2e07b36ec4c8975ae522b4f50361"><td class="memItemLeft" align="right" valign="top"><a id="a7d0d2e07b36ec4c8975ae522b4f50361"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>gfx_input</b> = ossia::variant&lt; ossia::monostate, ossia::value, ossia::audio_vector &gt;</td></tr>
-<tr class="separator:a7d0d2e07b36ec4c8975ae522b4f50361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fa5a134bcba62da4ab65d6014472051"><td class="memItemLeft" align="right" valign="top"><a id="a0fa5a134bcba62da4ab65d6014472051"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>gfx_input</b> = ossia::variant&lt; ossia::monostate, ossia::value, ossia::audio_vector, ossia::mesh_list &gt;</td></tr>
+<tr class="separator:a0fa5a134bcba62da4ab65d6014472051"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7d09e369dac94fa9ff1bba162bba575"><td class="memItemLeft" align="right" valign="top"><a id="aa7d09e369dac94fa9ff1bba162bba575"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>PassMap</b> = ossia::small_vector&lt; std::pair&lt; <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> *, <a class="el" href="structscore_1_1gfx_1_1_pipeline.html">Pipeline</a> &gt;, 2 &gt;</td></tr>
 <tr class="separator:aa7d09e369dac94fa9ff1bba162bba575"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6d4b2f8caa26e18682dfcbf59093844"><td class="memItemLeft" align="right" valign="top"><a id="aa6d4b2f8caa26e18682dfcbf59093844"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>PassOutput</b> = ossia::variant&lt; <a class="el" href="structscore_1_1gfx_1_1_persist_sampler.html">PersistSampler</a>, <a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a> &gt;</td></tr>
 <tr class="separator:aa6d4b2f8caa26e18682dfcbf59093844"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0693d19dd22fefad9c5bd610d02b8cf6"><td class="memItemLeft" align="right" valign="top"><a id="a0693d19dd22fefad9c5bd610d02b8cf6"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ValueVariant</b> = ossia::variant&lt; ossia::monostate, float, ossia::vec2f, ossia::vec3f, ossia::vec4f, <a class="el" href="structscore_1_1gfx_1_1image.html">image</a> &gt;</td></tr>
-<tr class="separator:a0693d19dd22fefad9c5bd610d02b8cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -370,7 +370,8 @@ Enumerations</h2></td></tr>
 <b>Image</b>, 
 <b>Audio</b>, 
 <br />
-&#160;&#160;<b>Camera</b>
+&#160;&#160;<b>Camera</b>, 
+<b>Geometry</b>
 <br />
  }</td></tr>
 <tr class="separator:aee3fecbd0a1860c0bef60edbfea54512"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -387,22 +388,25 @@ QVulkanInstance *&#160;</td><td class="memItemRight" valign="bottom"><b>staticVu
 template&lt;typename Graph_T , typename IO &gt; </td></tr>
 <tr class="memitem:a15a05763dd9e30cdb72f2c3183359da1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>print_graph</b> (Graph_T &amp;g, IO &amp;stream)</td></tr>
 <tr class="separator:a15a05763dd9e30cdb72f2c3183359da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3159812d1805bbff5c888b3e565338b2"><td class="memItemLeft" align="right" valign="top"><a id="a3159812d1805bbff5c888b3e565338b2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Q_DECLARE_OPERATORS_FOR_FLAGS</b> (Mesh::Flags)</td></tr>
+<tr class="separator:a3159812d1805bbff5c888b3e565338b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac61d745ab483c5aa3b5e3b39deae8036"><td class="memItemLeft" align="right" valign="top"><a id="ac61d745ab483c5aa3b5e3b39deae8036"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>defaultPassesInit</b> (PassMap &amp;passes, const std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> * &gt; &amp;edges, <a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a> &amp;mesh, const QShader &amp;v, const QShader &amp;f, QRhiBuffer *processUBO, QRhiBuffer *matUBO, const std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_sampler.html">Sampler</a> &gt; &amp;samplers)</td></tr>
 <tr class="separator:ac61d745ab483c5aa3b5e3b39deae8036"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaa97b3b0b4c2b8583ac64a78d759bb1"><td class="memItemLeft" align="right" valign="top"><a id="aaaa97b3b0b4c2b8583ac64a78d759bb1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>defaultRenderPass</b> (QRhiBuffer *m_meshBuffer, QRhiBuffer *m_idxBuffer, <a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a> &amp;mesh, QRhiCommandBuffer &amp;cb, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge, PassMap &amp;passes)</td></tr>
-<tr class="separator:aaaa97b3b0b4c2b8583ac64a78d759bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67cce84c88700ac34be9606bfd14aaf2"><td class="memItemLeft" align="right" valign="top"><a id="a67cce84c88700ac34be9606bfd14aaf2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>quadRenderPass</b> (QRhiBuffer *m_meshBuffer, QRhiBuffer *m_idxBuffer, <a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, QRhiCommandBuffer &amp;cb, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge, PassMap &amp;passes)</td></tr>
-<tr class="separator:a67cce84c88700ac34be9606bfd14aaf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab3ca5f0c2f34795e323fcb0275ee374"><td class="memItemLeft" align="right" valign="top"><a id="aab3ca5f0c2f34795e323fcb0275ee374"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>defaultRenderPass</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a> &amp;mesh, const <a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> &amp;bufs, QRhiCommandBuffer &amp;cb, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge, PassMap &amp;passes)</td></tr>
+<tr class="separator:aab3ca5f0c2f34795e323fcb0275ee374"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a58880047dd23a1e25e529168536d2b"><td class="memItemLeft" align="right" valign="top"><a id="a0a58880047dd23a1e25e529168536d2b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>quadRenderPass</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, const <a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> &amp;bufs, QRhiCommandBuffer &amp;cb, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge, PassMap &amp;passes)</td></tr>
+<tr class="separator:a0a58880047dd23a1e25e529168536d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93637639b98f42b59cd9bb0b140fb5ca"><td class="memItemLeft" align="right" valign="top"><a id="a93637639b98f42b59cd9bb0b140fb5ca"></a>
 <a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#a93637639b98f42b59cd9bb0b140fb5ca">createRenderTarget</a> (const <a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> &amp;state, QRhiTexture *tex)</td></tr>
 <tr class="memdesc:a93637639b98f42b59cd9bb0b140fb5ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a render target from a texture. <br /></td></tr>
 <tr class="separator:a93637639b98f42b59cd9bb0b140fb5ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0092fb509db323bc846a47e79bbd6a0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#a0092fb509db323bc846a47e79bbd6a0e">createRenderTarget</a> (const <a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> &amp;state, QRhiTexture::Format fmt, QSize sz)</td></tr>
-<tr class="memdesc:a0092fb509db323bc846a47e79bbd6a0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a render target from a texture format and size.  <a href="namespacescore_1_1gfx.html#a0092fb509db323bc846a47e79bbd6a0e">More...</a><br /></td></tr>
-<tr class="separator:a0092fb509db323bc846a47e79bbd6a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45544de5e0f0eb9bfe8400a220313638"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#a45544de5e0f0eb9bfe8400a220313638">createRenderTarget</a> (const <a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> &amp;state, QRhiTexture::Format fmt, QSize sz, QRhiTexture::Flags={})</td></tr>
+<tr class="memdesc:a45544de5e0f0eb9bfe8400a220313638"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a render target from a texture format and size.  <a href="namespacescore_1_1gfx.html#a45544de5e0f0eb9bfe8400a220313638">More...</a><br /></td></tr>
+<tr class="separator:a45544de5e0f0eb9bfe8400a220313638"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a379abf9c61f74027d371abe727f16d29"><td class="memItemLeft" align="right" valign="top"><a id="a379abf9c61f74027d371abe727f16d29"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>replaceBuffer</b> (std::vector&lt; QRhiShaderResourceBinding &gt; &amp;tmp, int binding, QRhiBuffer *newBuffer)</td></tr>
 <tr class="separator:a379abf9c61f74027d371abe727f16d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -498,8 +502,8 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>frag</b></td>
 
 </div>
 </div>
-<a id="a0092fb509db323bc846a47e79bbd6a0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0092fb509db323bc846a47e79bbd6a0e">&#9670;&nbsp;</a></span>createRenderTarget()</h2>
+<a id="a45544de5e0f0eb9bfe8400a220313638"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45544de5e0f0eb9bfe8400a220313638">&#9670;&nbsp;</a></span>createRenderTarget()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -520,7 +524,13 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>frag</b></td>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">QSize&#160;</td>
-          <td class="paramname"><em>sz</em>&#160;</td>
+          <td class="paramname"><em>sz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QRhiTexture::Flags&#160;</td>
+          <td class="paramname"> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>

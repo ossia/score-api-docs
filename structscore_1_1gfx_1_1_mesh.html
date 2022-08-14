@@ -95,8 +95,8 @@ $(document).ready(function(){initNavTree('structscore_1_1gfx_1_1_mesh.html','');
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structscore_1_1gfx_1_1_mesh-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">score::gfx::Mesh Struct Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -111,48 +111,55 @@ Inheritance diagram for score::gfx::Mesh:</div>
  <div class="center">
   <img src="structscore_1_1gfx_1_1_mesh.png" usemap="#score::gfx::Mesh_map" alt=""/>
   <map id="score::gfx::Mesh_map" name="score::gfx::Mesh_map">
-<area href="structscore_1_1gfx_1_1_plain_mesh.html" title="A mesh with only position attributes." alt="score::gfx::PlainMesh" shape="rect" coords="0,56,186,80"/>
-<area href="structscore_1_1gfx_1_1_textured_mesh.html" title="A mesh with positions and texture coordinates." alt="score::gfx::TexturedMesh" shape="rect" coords="294,56,480,80"/>
-<area href="structscore_1_1gfx_1_1_texture_normal_mesh.html" title="A mesh with positions, texture coordinates, and normals." alt="score::gfx::TextureNormalMesh" shape="rect" coords="490,56,676,80"/>
-<area href="structscore_1_1gfx_1_1_plain_triangle.html" title="A triangle mesh with only positions." alt="score::gfx::PlainTriangle" shape="rect" coords="0,112,186,136"/>
-<area href="structscore_1_1gfx_1_1_textured_quad.html" title="A quad mesh with positions and texture coordinates." alt="score::gfx::TexturedQuad" shape="rect" coords="196,112,382,136"/>
-<area href="structscore_1_1gfx_1_1_textured_triangle.html" title="A triangle mesh with positions and texture coordinates." alt="score::gfx::TexturedTriangle" shape="rect" coords="392,112,578,136"/>
+<area href="structscore_1_1gfx_1_1_basic_mesh.html" alt="score::gfx::BasicMesh" shape="rect" coords="133,56,301,80"/>
+<area href="classscore_1_1gfx_1_1_custom_mesh.html" alt="score::gfx::CustomMesh" shape="rect" coords="311,56,479,80"/>
+<area href="structscore_1_1gfx_1_1_plain_mesh.html" title="A mesh with only position attributes." alt="score::gfx::PlainMesh" shape="rect" coords="0,112,168,136"/>
+<area href="structscore_1_1gfx_1_1_textured_mesh.html" title="A mesh with positions and texture coordinates." alt="score::gfx::TexturedMesh" shape="rect" coords="267,112,435,136"/>
+<area href="structscore_1_1gfx_1_1_plain_triangle.html" title="A triangle mesh with only positions." alt="score::gfx::PlainTriangle" shape="rect" coords="0,168,168,192"/>
+<area href="structscore_1_1gfx_1_1_textured_quad.html" title="A quad mesh with positions and texture coordinates." alt="score::gfx::TexturedQuad" shape="rect" coords="178,168,346,192"/>
+<area href="structscore_1_1gfx_1_1_textured_triangle.html" title="A triangle mesh with positions and texture coordinates." alt="score::gfx::TexturedTriangle" shape="rect" coords="356,168,524,192"/>
   </map>
 </div></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Data model for meshes. </p>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a72e7dc86ad0ecc8372f481533873137c"><td class="memItemLeft" align="right" valign="top"><a id="a72e7dc86ad0ecc8372f481533873137c"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Flag</b> { <br />
+&#160;&#160;<b>HasPosition</b> = SCORE_FLAG(1), 
+<b>HasTexCoord</b> = SCORE_FLAG(2), 
+<b>HasColor</b> = SCORE_FLAG(3), 
+<b>HasNormals</b> = SCORE_FLAG(4), 
+<br />
+&#160;&#160;<b>HasTangents</b> = SCORE_FLAG(5)
+<br />
+ }</td></tr>
+<tr class="separator:a72e7dc86ad0ecc8372f481533873137c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebd9046370ad0f5fb03210410b9f71ed"><td class="memItemLeft" align="right" valign="top"><a id="aebd9046370ad0f5fb03210410b9f71ed"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Flags</b> = QFlags&lt; Flag &gt;</td></tr>
+<tr class="separator:aebd9046370ad0f5fb03210410b9f71ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3e860d96910c86a76fa30174250ddcf8"><td class="memItemLeft" align="right" valign="top"><a id="a3e860d96910c86a76fa30174250ddcf8"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_mesh.html#a3e860d96910c86a76fa30174250ddcf8">setupBindings</a> (QRhiBuffer &amp;vtxData, QRhiBuffer *idxData, QRhiCommandBuffer &amp;cb) const noexcept=0</td></tr>
-<tr class="memdesc:a3e860d96910c86a76fa30174250ddcf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup bindings according to the input triangle data. <br /></td></tr>
-<tr class="separator:a3e860d96910c86a76fa30174250ddcf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afefe012e5c583f9b39a960f448bb38b8"><td class="memItemLeft" align="right" valign="top"><a id="afefe012e5c583f9b39a960f448bb38b8"></a>
+virtual Flags&#160;</td><td class="memItemRight" valign="bottom"><b>flags</b> () const noexcept=0</td></tr>
+<tr class="separator:afefe012e5c583f9b39a960f448bb38b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcee88bb7e2645aa7e58bcebe0fe865a"><td class="memItemLeft" align="right" valign="top"><a id="abcee88bb7e2645aa7e58bcebe0fe865a"></a>
+virtual <a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a>&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (QRhi &amp;rhi) const noexcept=0</td></tr>
+<tr class="separator:abcee88bb7e2645aa7e58bcebe0fe865a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32ceb9506582c1d970c56fdb73282f6a"><td class="memItemLeft" align="right" valign="top"><a id="a32ceb9506582c1d970c56fdb73282f6a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (<a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> &amp;bufs, QRhiResourceUpdateBatch &amp;cb) const noexcept=0</td></tr>
+<tr class="separator:a32ceb9506582c1d970c56fdb73282f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6e8d1d92a37bc98af5bf7c748865d2b"><td class="memItemLeft" align="right" valign="top"><a id="ae6e8d1d92a37bc98af5bf7c748865d2b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>preparePipeline</b> (QRhiGraphicsPipeline &amp;pip) const noexcept=0</td></tr>
+<tr class="separator:ae6e8d1d92a37bc98af5bf7c748865d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ba2dc165b5361ef2ffce12f77f018be"><td class="memItemLeft" align="right" valign="top"><a id="a8ba2dc165b5361ef2ffce12f77f018be"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> (const <a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> &amp;bufs, QRhiCommandBuffer &amp;cb) const noexcept=0</td></tr>
+<tr class="separator:a8ba2dc165b5361ef2ffce12f77f018be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3f76147fad7cc5c8e314c8f651bf443"><td class="memItemLeft" align="right" valign="top"><a id="ac3f76147fad7cc5c8e314c8f651bf443"></a>
 virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_mesh.html#ac3f76147fad7cc5c8e314c8f651bf443">defaultVertexShader</a> () const noexcept=0</td></tr>
 <tr class="memdesc:ac3f76147fad7cc5c8e314c8f651bf443"><td class="mdescLeft">&#160;</td><td class="mdescRight">A basic vertex shader that is going to work with this mesh. <br /></td></tr>
 <tr class="separator:ac3f76147fad7cc5c8e314c8f651bf443"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:ae98dda8af0c817a8bd364fbe5f82d8bb"><td class="memItemLeft" align="right" valign="top"><a id="ae98dda8af0c817a8bd364fbe5f82d8bb"></a>
-ossia::small_vector&lt; QRhiVertexInputBinding, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>vertexInputBindings</b></td></tr>
-<tr class="separator:ae98dda8af0c817a8bd364fbe5f82d8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dd1b71866af59ddf6644ea594a93a83"><td class="memItemLeft" align="right" valign="top"><a id="a7dd1b71866af59ddf6644ea594a93a83"></a>
-ossia::small_vector&lt; QRhiVertexInputAttribute, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>vertexAttributeBindings</b></td></tr>
-<tr class="separator:a7dd1b71866af59ddf6644ea594a93a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac16ffc1257a195313017dfabbe041459"><td class="memItemLeft" align="right" valign="top"><a id="ac16ffc1257a195313017dfabbe041459"></a>
-tcb::span&lt; const float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>vertexArray</b></td></tr>
-<tr class="separator:ac16ffc1257a195313017dfabbe041459"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93138737fdd1aeeaf2aaea54c6ca15df"><td class="memItemLeft" align="right" valign="top"><a id="a93138737fdd1aeeaf2aaea54c6ca15df"></a>
-tcb::span&lt; const unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>indexArray</b></td></tr>
-<tr class="separator:a93138737fdd1aeeaf2aaea54c6ca15df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70a5717bf75b60538f12d67e994840e4"><td class="memItemLeft" align="right" valign="top"><a id="a70a5717bf75b60538f12d67e994840e4"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>vertexCount</b> {}</td></tr>
-<tr class="separator:a70a5717bf75b60538f12d67e994840e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bb98a946e670ecc653a105a6d0e3563"><td class="memItemLeft" align="right" valign="top"><a id="a8bb98a946e670ecc653a105a6d0e3563"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>indexCount</b> {}</td></tr>
-<tr class="separator:a8bb98a946e670ecc653a105a6d0e3563"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="_mesh_8hpp_source.html">Mesh.hpp</a></li>

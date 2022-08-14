@@ -99,129 +99,157 @@ $(document).ready(function(){initNavTree('_mesh_8hpp_source.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/small_vector.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/span.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;private/qrhi_p.h&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Process/ProcessFlags.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/small_vector.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/span.hpp&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;score_plugin_gfx_export.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;private/qrhi_p.h&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore_1_1gfx.html">score::gfx</a></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_mesh.html">   14</a></span>&#160;<span class="keyword">struct </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> setupBindings(</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      QRhiBuffer&amp; vtxData, QRhiBuffer* idxData,</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      QRhiCommandBuffer&amp; cb) <span class="keyword">const</span> noexcept = 0;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* defaultVertexShader() <span class="keyword">const</span> noexcept = 0;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;score_plugin_gfx_export.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore_1_1gfx.html">score::gfx</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_mesh_buffers.html">   13</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  QRhiBuffer* mesh{};</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  QRhiBuffer* index{};</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_mesh.html">   21</a></span>&#160;<span class="keyword">struct </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>();</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  ossia::small_vector&lt;QRhiVertexInputBinding, 2&gt; vertexInputBindings;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  ossia::small_vector&lt;QRhiVertexInputAttribute, 2&gt; vertexAttributeBindings;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  tcb::span&lt;const float&gt; vertexArray;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  tcb::span&lt;const unsigned int&gt; indexArray;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">int</span> vertexCount{};</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">int</span> indexCount{};</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>(<a class="code" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>&amp; operator=(<a class="code" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_plain_mesh.html">   45</a></span>&#160;<span class="keyword">struct </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="structscore_1_1gfx_1_1_plain_mesh.html">PlainMesh</a> : <a class="code" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="structscore_1_1gfx_1_1_plain_mesh.html">PlainMesh</a>(tcb::span&lt;const float&gt; vtx, <span class="keywordtype">int</span> count);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> setupBindings(QRhiBuffer&amp; vtxData, QRhiBuffer* idxData, QRhiCommandBuffer&amp; cb)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span>* defaultVertexShader() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_textured_mesh.html">   58</a></span>&#160;<span class="keyword">struct </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="structscore_1_1gfx_1_1_textured_mesh.html">TexturedMesh</a> : <a class="code" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="structscore_1_1gfx_1_1_textured_mesh.html">TexturedMesh</a>(tcb::span&lt;const float&gt; vtx, <span class="keywordtype">int</span> count);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span>* defaultVertexShader() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_texture_normal_mesh.html">   68</a></span>&#160;<span class="keyword">struct </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="structscore_1_1gfx_1_1_texture_normal_mesh.html">TextureNormalMesh</a> : <a class="code" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="structscore_1_1gfx_1_1_texture_normal_mesh.html">TextureNormalMesh</a>(</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      tcb::span&lt;const float&gt; vtx, tcb::span&lt;const unsigned int&gt; idx, <span class="keywordtype">int</span> count);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> setupBindings(QRhiBuffer&amp; vtxData, QRhiBuffer* idxData, QRhiCommandBuffer&amp; cb)</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span>* defaultVertexShader() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_plain_triangle.html">   82</a></span>&#160;<span class="keyword">struct </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="structscore_1_1gfx_1_1_plain_triangle.html">PlainTriangle</a> final : <a class="code" href="structscore_1_1gfx_1_1_plain_mesh.html">PlainMesh</a></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">float</span> data[] = {-1, -1, 3, -1, -1, 3};</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="structscore_1_1gfx_1_1_plain_triangle.html">PlainTriangle</a>();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_plain_triangle.html">PlainTriangle</a>&amp; instance() noexcept;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_textured_triangle.html">   95</a></span>&#160;<span class="keyword">struct </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="structscore_1_1gfx_1_1_textured_triangle.html">TexturedTriangle</a> final : <a class="code" href="structscore_1_1gfx_1_1_textured_mesh.html">TexturedMesh</a></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">float</span> data[] = {<span class="comment">// positions</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                         -1, -1, 3, -1, -1, 3,</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                                         <span class="comment">// tex coords</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                                         0, 0, 2, 0, 0, 2};</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">float</span> flipped_y_data[] = {<span class="comment">// positions</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                                                   -1, -1, 3, -1, -1, 3,</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                                                   <span class="comment">// tex coords</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                                   0, 2, 2, 2, 0, 0};</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="structscore_1_1gfx_1_1_textured_triangle.html">TexturedTriangle</a>(<span class="keywordtype">bool</span> flipped = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">enum</span> Flag</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    HasPosition = SCORE_FLAG(1),</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    HasTexCoord = SCORE_FLAG(2),</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    HasColor = SCORE_FLAG(3),</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    HasNormals = SCORE_FLAG(4),</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    HasTangents = SCORE_FLAG(5),</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  };</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">using</span> Flags = QFlags&lt;Flag&gt;;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  [[nodiscard]] <span class="keyword">virtual</span> Flags flags() <span class="keyword">const</span> noexcept = 0;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  [[nodiscard]] <span class="keyword">virtual</span> <a class="code" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> init(QRhi&amp; rhi) <span class="keyword">const</span> noexcept = 0;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> update(<a class="code" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a>&amp; bufs, QRhiResourceUpdateBatch&amp; cb) <span class="keyword">const</span> noexcept = 0;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> preparePipeline(QRhiGraphicsPipeline&amp; pip) <span class="keyword">const</span> noexcept = 0;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> draw(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a>&amp; bufs, QRhiCommandBuffer&amp; cb) <span class="keyword">const</span> noexcept = 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* defaultVertexShader() <span class="keyword">const</span> noexcept = 0;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="comment">/*</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>(<a class="code" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>&amp; operator=(<a class="code" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;Q_DECLARE_OPERATORS_FOR_FLAGS(Mesh::Flags);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_basic_mesh.html">   60</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structscore_1_1gfx_1_1_basic_mesh.html">BasicMesh</a> : <a class="code" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">using</span> Mesh::Mesh;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  [[nodiscard]] <span class="keyword">virtual</span> <a class="code" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> init(QRhi&amp; rhi) <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> update(<a class="code" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a>&amp; bufs, QRhiResourceUpdateBatch&amp; cb) <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> preparePipeline(QRhiGraphicsPipeline&amp; pip) <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> draw(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a>&amp; bufs, QRhiCommandBuffer&amp; cb) <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  setupBindings(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a>&amp; bufs, QRhiCommandBuffer&amp; cb) <span class="keyword">const</span> noexcept = 0;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">using</span> pip = QRhiGraphicsPipeline;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  pip::Topology topology = pip::Topology::TriangleStrip;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  pip::CullMode cullMode = pip::CullMode::None;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  pip::FrontFace frontFace = pip::FrontFace::CW;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  ossia::small_vector&lt;QRhiVertexInputBinding, 2&gt; vertexBindings;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  ossia::small_vector&lt;QRhiVertexInputAttribute, 2&gt; vertexAttributes;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  tcb::span&lt;const float&gt; vertexArray;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">int</span> vertexCount{};</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_plain_mesh.html">   85</a></span>&#160;<span class="keyword">struct </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="structscore_1_1gfx_1_1_plain_mesh.html">PlainMesh</a> : <a class="code" href="structscore_1_1gfx_1_1_basic_mesh.html">BasicMesh</a></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="structscore_1_1gfx_1_1_plain_mesh.html">PlainMesh</a>(tcb::span&lt;const float&gt; vtx, <span class="keywordtype">int</span> count);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  [[nodiscard]] Flags flags() <span class="keyword">const</span> noexcept <span class="keyword">override</span> { <span class="keywordflow">return</span> HasPosition; }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span>* defaultVertexShader() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  setupBindings(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a>&amp; bufs, QRhiCommandBuffer&amp; cb) <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_textured_mesh.html">   97</a></span>&#160;<span class="keyword">struct </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="structscore_1_1gfx_1_1_textured_mesh.html">TexturedMesh</a> : <a class="code" href="structscore_1_1gfx_1_1_basic_mesh.html">BasicMesh</a></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="structscore_1_1gfx_1_1_textured_mesh.html">TexturedMesh</a>(tcb::span&lt;const float&gt; vtx, <span class="keywordtype">int</span> count);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  [[nodiscard]] Flags flags() <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">return</span> HasPosition | HasTexCoord;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span>* defaultVertexShader() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;};</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">void</span> setupBindings(QRhiBuffer&amp; vtxData, QRhiBuffer* idxData, QRhiCommandBuffer&amp; cb)</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;};</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_textured_quad.html">  116</a></span>&#160;<span class="keyword">struct </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="structscore_1_1gfx_1_1_textured_quad.html">TexturedQuad</a> final : <a class="code" href="structscore_1_1gfx_1_1_textured_mesh.html">TexturedMesh</a></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">float</span> data[] = {<span class="comment">// positions</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                                         -1, -1, +1, -1, -1, +1, +1, +1,</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                                         <span class="comment">// tex coords</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                                         0, 0, 1, 0, 0, 1, 1, 1};</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">float</span> flipped_y_data[] = {<span class="comment">// positions</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                                                   -1, -1, +1, -1, -1, +1, +1, +1,</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                                                   <span class="comment">// tex coords</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                                                   0, 1, 1, 1, 0, 0, 1, 0};</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="structscore_1_1gfx_1_1_textured_quad.html">TexturedQuad</a>(<span class="keywordtype">bool</span> flipped = <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordtype">void</span> setupBindings(QRhiBuffer&amp; vtxData, QRhiBuffer* idxData, QRhiCommandBuffer&amp; cb)</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;};</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
-<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_mesh_buffers.html">  134</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;{</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  QRhiBuffer* mesh{};</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  QRhiBuffer* index{};</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;};</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_plain_triangle.html">  111</a></span>&#160;<span class="keyword">struct </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="structscore_1_1gfx_1_1_plain_triangle.html">PlainTriangle</a> final : <a class="code" href="structscore_1_1gfx_1_1_plain_mesh.html">PlainMesh</a></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">float</span> data[] = {-1, -1, 3, -1, -1, 3};</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="structscore_1_1gfx_1_1_plain_triangle.html">PlainTriangle</a>();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_plain_triangle.html">PlainTriangle</a>&amp; instance() noexcept;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;};</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_textured_triangle.html">  124</a></span>&#160;<span class="keyword">struct </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="structscore_1_1gfx_1_1_textured_triangle.html">TexturedTriangle</a> final : <a class="code" href="structscore_1_1gfx_1_1_textured_mesh.html">TexturedMesh</a></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;{</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">float</span> data[] = {<span class="comment">// positions</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                                         -1, -1, 3, -1, -1, 3,</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                                         <span class="comment">// tex coords</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                                         0, 0, 2, 0, 0, 2};</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">float</span> flipped_y_data[] = {<span class="comment">// positions</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                                                   -1, -1, 3, -1, -1, 3,</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                                                   <span class="comment">// tex coords</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                                                   0, 2, 2, 2, 0, 0};</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="structscore_1_1gfx_1_1_textured_triangle.html">TexturedTriangle</a>(<span class="keywordtype">bool</span> flipped = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  setupBindings(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a>&amp; bufs, QRhiCommandBuffer&amp; cb) <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;};</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_textured_quad.html">  145</a></span>&#160;<span class="keyword">struct </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="structscore_1_1gfx_1_1_textured_quad.html">TexturedQuad</a> final : <a class="code" href="structscore_1_1gfx_1_1_textured_mesh.html">TexturedMesh</a></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;{</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">float</span> data[] = {<span class="comment">// positions</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                                         -1, -1, +1, -1, -1, +1, +1, +1,</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                                         <span class="comment">// tex coords</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                                         0, 0, 1, 0, 0, 1, 1, 1};</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keywordtype">float</span> flipped_y_data[] = {<span class="comment">// positions</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                                                   -1, -1, +1, -1, -1, +1, +1, +1,</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                                                   <span class="comment">// tex coords</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                                                   0, 1, 1, 1, 0, 0, 1, 0};</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="structscore_1_1gfx_1_1_textured_quad.html">TexturedQuad</a>(<span class="keywordtype">bool</span> flipped = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  setupBindings(<span class="keyword">const</span> <a class="code" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a>&amp; bufs, QRhiCommandBuffer&amp; cb) <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;};</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astructscore_1_1gfx_1_1_textured_quad_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_textured_quad.html">score::gfx::TexturedQuad</a></div><div class="ttdoc">A quad mesh with positions and texture coordinates.</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:116</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_mesh_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_mesh.html">score::gfx::Mesh</a></div><div class="ttdoc">Data model for meshes.</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:14</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_textured_quad_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_textured_quad.html">score::gfx::TexturedQuad</a></div><div class="ttdoc">A quad mesh with positions and texture coordinates.</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:145</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_basic_mesh_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_basic_mesh.html">score::gfx::BasicMesh</a></div><div class="ttdef"><b>Definition:</b> Mesh.hpp:60</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_mesh_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_mesh.html">score::gfx::Mesh</a></div><div class="ttdoc">Data model for meshes.</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:21</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition:</b> Vulkan.hpp:10</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_mesh_buffers_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_mesh_buffers.html">score::gfx::MeshBuffers</a></div><div class="ttdef"><b>Definition:</b> Mesh.hpp:134</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_plain_mesh_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_plain_mesh.html">score::gfx::PlainMesh</a></div><div class="ttdoc">A mesh with only position attributes.</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:45</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_texture_normal_mesh_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_texture_normal_mesh.html">score::gfx::TextureNormalMesh</a></div><div class="ttdoc">A mesh with positions, texture coordinates, and normals.</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:68</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_textured_mesh_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_textured_mesh.html">score::gfx::TexturedMesh</a></div><div class="ttdoc">A mesh with positions and texture coordinates.</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:58</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_plain_triangle_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_plain_triangle.html">score::gfx::PlainTriangle</a></div><div class="ttdoc">A triangle mesh with only positions.</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:82</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_textured_triangle_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_textured_triangle.html">score::gfx::TexturedTriangle</a></div><div class="ttdoc">A triangle mesh with positions and texture coordinates.</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:95</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_mesh_buffers_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_mesh_buffers.html">score::gfx::MeshBuffers</a></div><div class="ttdef"><b>Definition:</b> Mesh.hpp:13</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_plain_mesh_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_plain_mesh.html">score::gfx::PlainMesh</a></div><div class="ttdoc">A mesh with only position attributes.</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:85</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_textured_mesh_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_textured_mesh.html">score::gfx::TexturedMesh</a></div><div class="ttdoc">A mesh with positions and texture coordinates.</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:97</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_plain_triangle_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_plain_triangle.html">score::gfx::PlainTriangle</a></div><div class="ttdoc">A triangle mesh with only positions.</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:111</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_textured_triangle_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_textured_triangle.html">score::gfx::TexturedTriangle</a></div><div class="ttdoc">A triangle mesh with positions and texture coordinates.</div><div class="ttdef"><b>Definition:</b> Mesh.hpp:124</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

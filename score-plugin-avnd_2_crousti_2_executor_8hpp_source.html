@@ -264,7 +264,7 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_executor
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keyword">const</span> std::shared_ptr&lt;ExecNode&gt;&amp; node_ptr;</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  QObject* parent;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Field, std::<span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Field, std::<span class="keywordtype">size_t</span> NPred, std::<span class="keywordtype">size_t</span> NField&gt;</div>
 <div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="structoscr_1_1setup___impl0_1_1con__unvalidated.html">  168</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structoscr_1_1setup___impl0_1_1con__unvalidated.html">con_unvalidated</a></div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  {</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keyword">const</span> <a class="code" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx;</div>
@@ -272,14 +272,14 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_executor
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    Field&amp; field;</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> ossia::value&amp; val)</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    {</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      constexpr <span class="keyword">auto</span> control_index = N;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      constexpr <span class="keyword">auto</span> control_index = NPred;</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      <span class="keyword">using</span> control_value_type = std::decay_t&lt;decltype(Field::value)&gt;;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">auto</span> node = weak_node.lock())</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      {</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        control_value_type v;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        oscr::from_ossia_value(field, val, v);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        node-&gt;from_ossia_value(field, val, v, avnd::field_index&lt;NField&gt;{});</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        ctx.<a class="code" href="struct_execution_1_1_context.html#a1a0fd8f494c0a427dc09b7da3e94bf36">executionQueue</a>.enqueue(</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            <a class="code" href="structoscr_1_1control__updater.html">control_updater&lt;ExecNode, control_value_type, control_index&gt;</a>{</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                weak_node, std::move(v)});</div>
@@ -289,14 +289,14 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_executor
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Field, std::<span class="keywordtype">size_t</span> N, std::<span class="keywordtype">size_t</span> NField&gt;</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  constexpr <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  operator()(Field&amp; param, avnd::predicate_index&lt;N&gt;, avnd::field_index&lt;NField&gt;)</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  operator()(Field&amp; param, avnd::predicate_index&lt;N&gt; np, avnd::field_index&lt;NField&gt; nf)</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  {</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordflow">if</span>(<span class="keyword">auto</span> inlet</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;       = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a>*<span class="keyword">&gt;</span>(modelPort&lt;Node&gt;(element.inlets(), NField)))</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    {</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;      <span class="comment">// Initialize the control with the current value of the inlet if it is not an optional</span></div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;      <span class="keywordflow">if</span> constexpr(!requires { param.value.reset(); })</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        oscr::from_ossia_value(param, inlet-&gt;value(), param.value);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        node_ptr-&gt;from_ossia_value(param, inlet-&gt;value(), param.value, nf);</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;      if_possible(param.update(node_ptr-&gt;impl.state));</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
@@ -304,7 +304,7 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_executor
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;      std::weak_ptr&lt;ExecNode&gt; weak_node = node_ptr;</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;      QObject::connect(</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;          inlet, &amp;Process::ControlInlet::valueChanged, parent,</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;          con_unvalidated&lt;Field, N&gt;{ctx, weak_node, param});</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;          con_unvalidated&lt;Field, N, NField&gt;{ctx, weak_node, param});</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    }</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="comment">// Else it&#39;s an unhandled value inlet</span></div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  }</div>
