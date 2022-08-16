@@ -1,5 +1,10 @@
 var NAVTREEINDEX68 =
 {
+"struct_widget_factory_1_1_x_y_z_slider.html":[12,0,57,19],
+"struct_widget_factory_1_1_x_y_z_spinboxes.html":[12,0,57,20],
+"struct_word_list.html":[12,0,538],
+"struct_word_list.html#a2ca0188e8ea194f6d84afdd943f14823":[12,0,538,0],
+"struct_y_s_f_x_1_1_language_spec.html":[12,0,59,3],
 "structaudio__channels__attr.html":[12,0,69],
 "structaudio__channels__attr.html#a3ab256c1b414e037a4b9f0981cf588dc":[12,0,69,0],
 "structaudio__kind__attr.html":[12,0,70],
@@ -101,8 +106,8 @@ var NAVTREEINDEX68 =
 "structoscr_1_1_inlet_init_func.html#a00061a4355a850dfe44bdc6e5d2c13a3":[12,0,34,12,9],
 "structoscr_1_1_inlet_init_func.html#a245ccc5eaa53e8f1281657af9bfb0523":[12,0,34,12,6],
 "structoscr_1_1_inlet_init_func.html#a26d3210108ad9780d409b1d83fea759b":[12,0,34,12,7],
-"structoscr_1_1_inlet_init_func.html#a3fe66fd8146371ec86505ce8a99a7c6c":[12,0,34,12,2],
 "structoscr_1_1_inlet_init_func.html#a3fe66fd8146371ec86505ce8a99a7c6c":[12,0,34,12,3],
+"structoscr_1_1_inlet_init_func.html#a3fe66fd8146371ec86505ce8a99a7c6c":[12,0,34,12,2],
 "structoscr_1_1_inlet_init_func.html#ab36f11f1e90c2adb84073e27bc7825c2":[12,0,34,12,5],
 "structoscr_1_1_inlet_init_func.html#abb4cabdfafbc76baa70e60ae3f998bea":[12,0,34,12,4],
 "structoscr_1_1_inlet_init_func.html#ace7897bd30ea620f3b89ed0d9d7f40e9":[12,0,34,12,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX68 =
 "structoscr_1_1type__if_3_01_t_00_01false_01_4.html#a9bc21c46ece08749fbfafd6d71febed7":[12,0,34,35,4],
 "structoscr_1_1type__if_3_01_t_00_01false_01_4.html#ae48c4638214f4244429b686d675ef718":[12,0,34,35,5],
 "structoscr_1_1type__if_3_01_t_00_01false_01_4.html#aef9ece8e4791f3aa8e1b8a06d5306499":[12,0,34,35,3],
-"structoscr_1_1type__if_3_01_t_00_01false_01_4.html#aeff0a289c80df277624d13348de950ea":[12,0,34,35,0],
-"structoscr_1_1type__if_3_01_t_00_01true_01_4.html":[12,0,34,36],
-"structoscr_1_1type__if_3_01_t_00_01true_01_4.html#a0050d7c45b7b4d6ad0c2d17d615563db":[12,0,34,36,10],
-"structoscr_1_1type__if_3_01_t_00_01true_01_4.html#a0beba77e10357311967578d67ee748f7":[12,0,34,36,5],
-"structoscr_1_1type__if_3_01_t_00_01true_01_4.html#a2858097897d35d047b302d916b0cf31c":[12,0,34,36,1],
-"structoscr_1_1type__if_3_01_t_00_01true_01_4.html#a90377cd9450bac275bd6ebd2067a6c6d":[12,0,34,36,4]
+"structoscr_1_1type__if_3_01_t_00_01false_01_4.html#aeff0a289c80df277624d13348de950ea":[12,0,34,35,0]
 };

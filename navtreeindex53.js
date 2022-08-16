@@ -1,5 +1,6 @@
 var NAVTREEINDEX53 =
 {
+"struct_audio_1_1_audio_preview_executor_1_1sound.html#ad6c589f3e84110b16ede0b9bef319f6b":[12,0,1,4,0,0],
 "struct_audio_1_1_port_audio_card.html":[12,0,1,7],
 "struct_audio_1_1_port_audio_card.html#a09af1e30d4505e5307c80c7e7d29ac81":[12,0,1,7,9],
 "struct_audio_1_1_port_audio_card.html#a1cd1c603bb38bbac0653a9d30cb761e5":[12,0,1,7,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX53 =
 "struct_control_1_1_soundfile.html#a40061471809de6376271bc3531d7d2d4":[12,0,5,39,6],
 "struct_control_1_1_soundfile.html#a40fcbbc95719d1adae7a5e2c88846a7e":[12,0,5,39,3],
 "struct_control_1_1_soundfile.html#a42a92e5373421b156997425d7409f49a":[12,0,5,39,2],
-"struct_control_1_1_soundfile.html#a458d4ab2d791cffdd5fdc11c5a8f5004":[12,0,5,39,5],
-"struct_control_1_1_soundfile.html#a6f9c8d40f67c5551b341f79cadfa93bb":[12,0,5,39,1]
+"struct_control_1_1_soundfile.html#a458d4ab2d791cffdd5fdc11c5a8f5004":[12,0,5,39,5]
 };

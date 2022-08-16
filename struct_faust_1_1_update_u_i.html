@@ -114,9 +114,9 @@ Inheritance diagram for Faust::UpdateUI&lt; Proc, SetInit &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a34cc2541c329ec6d3edd55e25e487a83"><td class="memItemLeft" align="right" valign="top"><a id="a34cc2541c329ec6d3edd55e25e487a83"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateUI</b> (Proc &amp;sfx)</td></tr>
-<tr class="separator:a34cc2541c329ec6d3edd55e25e487a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02b768aceb7c26a18a6d4cb5064bcc29"><td class="memItemLeft" align="right" valign="top"><a id="a02b768aceb7c26a18a6d4cb5064bcc29"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateUI</b> (Proc &amp;sfx, Process::Inlets &amp;toRemove, Process::Outlets &amp;toRemoveO)</td></tr>
+<tr class="separator:a02b768aceb7c26a18a6d4cb5064bcc29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99f8947df88bce9a34fe93bdd7deaeff"><td class="memItemLeft" align="right" valign="top"><a id="a99f8947df88bce9a34fe93bdd7deaeff"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>openTabBox</b> (const char *label) override</td></tr>
 <tr class="separator:a99f8947df88bce9a34fe93bdd7deaeff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,6 +135,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>declare</b> (float *z
 <tr class="memitem:aaec93ac2b5d65a682203b91fda2f5ffd"><td class="memItemLeft" align="right" valign="top"><a id="aaec93ac2b5d65a682203b91fda2f5ffd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>addSoundfile</b> (const char *label, const char *filename, Soundfile **sf_zone) override</td></tr>
 <tr class="separator:aaec93ac2b5d65a682203b91fda2f5ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17250e6976904b8558146c870c43ee56"><td class="memItemLeft" align="right" valign="top"><a id="a17250e6976904b8558146c870c43ee56"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>replace</b> (<a class="el" href="class_process_1_1_inlet.html">Process::Inlet</a> *&amp;oldinl, <a class="el" href="class_process_1_1_inlet.html">Process::Inlet</a> *newinl)</td></tr>
+<tr class="separator:a17250e6976904b8558146c870c43ee56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef15265de87ade4c8edf1af7b9cb0c07"><td class="memItemLeft" align="right" valign="top"><a id="aef15265de87ade4c8edf1af7b9cb0c07"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>replace</b> (<a class="el" href="class_process_1_1_outlet.html">Process::Outlet</a> *&amp;oldoutl, <a class="el" href="class_process_1_1_outlet.html">Process::Outlet</a> *newoutl)</td></tr>
+<tr class="separator:aef15265de87ade4c8edf1af7b9cb0c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c9a1f58eb1bfb25a7d345966b737d99"><td class="memItemLeft" align="right" valign="top"><a id="a0c9a1f58eb1bfb25a7d345966b737d99"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>addButton</b> (const char *label, float *zone) override</td></tr>
 <tr class="separator:a0c9a1f58eb1bfb25a7d345966b737d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -205,6 +211,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:aef22dc1a66af6174cdc23a547d84f5fb"><td class="memItemLeft" align="right" valign="top"><a id="aef22dc1a66af6174cdc23a547d84f5fb"></a>
 Proc &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>fx</b></td></tr>
 <tr class="separator:aef22dc1a66af6174cdc23a547d84f5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8279355d2c0998818b87a6397221010"><td class="memItemLeft" align="right" valign="top"><a id="ab8279355d2c0998818b87a6397221010"></a>
+Process::Inlets &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>toRemove</b></td></tr>
+<tr class="separator:ab8279355d2c0998818b87a6397221010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7cfc7234bd90610bc4bdfa2502eae3e"><td class="memItemLeft" align="right" valign="top"><a id="ae7cfc7234bd90610bc4bdfa2502eae3e"></a>
+Process::Outlets &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>toRemoveO</b></td></tr>
+<tr class="separator:ae7cfc7234bd90610bc4bdfa2502eae3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a120ad5a2ffa58de4deafe5351ab1f736"><td class="memItemLeft" align="right" valign="top"><a id="a120ad5a2ffa58de4deafe5351ab1f736"></a>
 std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>i</b> = 1</td></tr>
 <tr class="separator:a120ad5a2ffa58de4deafe5351ab1f736"><td class="memSeparator" colspan="2">&#160;</td></tr>
