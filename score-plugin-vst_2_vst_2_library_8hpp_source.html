@@ -130,13 +130,13 @@ $(document).ready(function(){initNavTree('score-plugin-vst_2_vst_2_library_8hpp_
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">auto</span>&amp; parent = *<span class="keyword">reinterpret_cast&lt;</span><a class="code" href="class_tree_node.html">Library::ProcessNode</a>*<span class="keyword">&gt;</span>(node.internalPointer());</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    parent.key = {};</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">auto</span>&amp; fx = parent.emplace_back(</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="struct_library_1_1_process_data.html">Library::ProcessData</a>{{{}, <span class="stringliteral">&quot;Effects&quot;</span>, {}}, {}, {}, {}}, &amp;parent);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">auto</span>&amp; inst = parent.emplace_back(</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="struct_library_1_1_process_data.html">Library::ProcessData</a>{{{}, <span class="stringliteral">&quot;Instruments&quot;</span>, {}}, {}, {}, {}}, &amp;parent);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">auto</span>&amp; plug = ctx.<a class="code" href="structscore_1_1_g_u_i_application_context.html#a009d1e53ac9b30fc0f4d787ea677ce2a">applicationPlugin</a>&lt;<a class="code" href="classvst_1_1_application_plugin.html">vst::ApplicationPlugin</a>&gt;();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">auto</span> reset_plugs = [=, &amp;plug, &amp;inst, &amp;fx] {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">auto</span>&amp; plug = ctx.<a class="code" href="structscore_1_1_g_u_i_application_context.html#a009d1e53ac9b30fc0f4d787ea677ce2a">applicationPlugin</a>&lt;<a class="code" href="classvst_1_1_application_plugin.html">vst::ApplicationPlugin</a>&gt;();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">auto</span> reset_plugs = [=, &amp;plug, &amp;parent] {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="keyword">auto</span>&amp; fx = parent.emplace_back(</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;          <a class="code" href="struct_library_1_1_process_data.html">Library::ProcessData</a>{{{}, <span class="stringliteral">&quot;Effects&quot;</span>, {}}, {}, {}, {}}, &amp;parent);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keyword">auto</span>&amp; inst = parent.emplace_back(</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;          <a class="code" href="struct_library_1_1_process_data.html">Library::ProcessData</a>{{{}, <span class="stringliteral">&quot;Instruments&quot;</span>, {}}, {}, {}, {}}, &amp;parent);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; vst : plug.vst_infos)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      {</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">if</span>(vst.isValid)</div>
@@ -159,16 +159,19 @@ $(document).ready(function(){initNavTree('score-plugin-vst_2_vst_2_library_8hpp_
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    reset_plugs();</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    con(plug, &amp;vst::ApplicationPlugin::vstChanged, <span class="keyword">this</span>, [=, &amp;model, &amp;fx, &amp;inst] {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      model.beginResetModel();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      fx.resize(0);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      inst.resize(0);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      reset_plugs();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      model.endResetModel();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    });</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    con(plug, &amp;vst::ApplicationPlugin::vstChanged, <span class="keyword">this</span>,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        [&amp;model, node, &amp;parent, reset_plugs] {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      model.beginRemoveRows(node, 0, 1);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      parent.resize(0);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      model.endRemoveRows();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      model.beginInsertRows(node, 0, 1);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      reset_plugs();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      model.endInsertRows();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    });</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_tree_node_html"><div class="ttname"><a href="class_tree_node.html">TreeNode&lt; ProcessData &gt;</a></div></div>
