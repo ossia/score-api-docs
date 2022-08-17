@@ -1,7 +1,5 @@
 var NAVTREEINDEX28 =
 {
-"class_remote_control_1_1_document_plugin.html#ae0833185d17ba2656a51e2a3dae37072":[12,0,43,3,0],
-"class_remote_control_1_1_document_plugin.html#af34b8c6232ecb4454e29813776cc164a":[12,0,43,3,5],
 "class_remote_control_1_1_document_plugin.html#aff595c63ea7f8bef3659baf8b6ff5329":[12,0,43,3,1],
 "class_remote_control_1_1_event.html":[12,0,43,4],
 "class_remote_control_1_1_event.html#aafa1620b655e0b28f6b4e3007a77ceea":[12,0,43,4,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX28 =
 "class_scenario_1_1_command_1_1_add_slot_to_rack.html#a9ad3ae18cdf1ca5b76dd71ea04319575":[12,0,45,0,9,5],
 "class_scenario_1_1_command_1_1_add_slot_to_rack.html#aa4902503aa55b47bae8f32dd23944fe7":[12,0,45,0,9,3],
 "class_scenario_1_1_command_1_1_add_slot_to_rack.html#ad1aefec969f871d6f2b91146bb13e6ac":[12,0,45,0,9,0],
-"class_scenario_1_1_command_1_1_add_state_process_to_state.html":[12,0,45,0,10]
+"class_scenario_1_1_command_1_1_add_state_process_to_state.html":[12,0,45,0,10],
+"class_scenario_1_1_command_1_1_add_state_process_to_state.html#a20dc6b1d7f72646b405ac4fe9c38df7f":[12,0,45,0,10,6],
+"class_scenario_1_1_command_1_1_add_state_process_to_state.html#a522a00d7e730e73d17b7e9aff395db6a":[12,0,45,0,10,5]
 };

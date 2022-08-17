@@ -1,12 +1,5 @@
 var NAVTREEINDEX67 =
 {
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_id_3_01_t_01_4_01_4.html":[12,0,464],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_id_3_01_t_01_4_01_4.html#a46e65e694ab43e40c6c72ed2ba262901":[12,0,464,0],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_id_container_3_01_t_00_01_u_00_01_v_01_4_01_4.html":[12,0,465],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_identified_object_3_01_t_01_4_01_4.html":[12,0,466],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_model_3_01_info_00_01_control_1_1is__control_01_4_01_4.html":[12,0,467],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_model_3_01_info_00_01_control_1_1is__control_01_4_01_4.html#ab991fdc5e4c3259c48446220f7f0c535":[12,0,467,0],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_path_3_01_t_01_4_01_4.html":[12,0,482],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_q_color_01_4.html":[12,0,483],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_q_list_3_01_args_8_8_8_01_4_01_4.html":[12,0,484],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_q_point_01_4.html":[12,0,485],
@@ -235,8 +228,6 @@ var NAVTREEINDEX67 =
 "struct_widget_factory_1_1_int_slider.html":[12,0,57,8],
 "struct_widget_factory_1_1_int_spin_box.html":[12,0,57,9],
 "struct_widget_factory_1_1_line_edit.html":[12,0,57,11],
-"struct_widget_factory_1_1_line_edit_1_1_line_edit_item.html":[12,0,57,11,0],
-"struct_widget_factory_1_1_line_edit_1_1_line_edit_item.html#ae4e55808d7ffb4b40e41e8034986f889":[12,0,57,11,0,0],
 "struct_widget_factory_1_1_linear_normalizer.html":[12,0,57,10],
 "struct_widget_factory_1_1_log_normalizer.html":[12,0,57,12],
 "struct_widget_factory_1_1_multi_slider.html":[12,0,57,13],
@@ -249,5 +240,14 @@ var NAVTREEINDEX67 =
 "struct_widget_factory_1_1_updating_normalizer.html#a6ece945900451306fa162608c95f0f2d":[12,0,57,17,3],
 "struct_widget_factory_1_1_updating_normalizer.html#ab8de89ebca368d6e6b6e772251b67dcd":[12,0,57,17,1],
 "struct_widget_factory_1_1_updating_normalizer.html#afb2bfb4949dd56ef874d8dce796c767f":[12,0,57,17,0],
-"struct_widget_factory_1_1_x_y_slider.html":[12,0,57,18]
+"struct_widget_factory_1_1_x_y_slider.html":[12,0,57,18],
+"struct_widget_factory_1_1_x_y_z_slider.html":[12,0,57,19],
+"struct_widget_factory_1_1_x_y_z_spinboxes.html":[12,0,57,20],
+"struct_word_list.html":[12,0,538],
+"struct_word_list.html#a2ca0188e8ea194f6d84afdd943f14823":[12,0,538,0],
+"struct_y_s_f_x_1_1_language_spec.html":[12,0,59,3],
+"structaudio__channels__attr.html":[12,0,69],
+"structaudio__channels__attr.html#a3ab256c1b414e037a4b9f0981cf588dc":[12,0,69,0],
+"structaudio__kind__attr.html":[12,0,70],
+"structaudio__kind__attr.html#aee5a5247969c6d4b2bd4d3631cce57d0":[12,0,70,0]
 };

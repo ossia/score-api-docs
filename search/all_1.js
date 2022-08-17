@@ -154,10 +154,9 @@ var searchData=
   ['automationdrophandler_152',['AutomationDropHandler',['../class_scenario_1_1_automation_drop_handler.html',1,'Scenario']]],
   ['automationrecorder_153',['AutomationRecorder',['../class_recording_1_1_automation_recorder.html',1,'Recording']]],
   ['autoplay_154',['autoplay',['../structscore_1_1_application_settings.html#ae2b0c986e978926b5acc72732490123d',1,'score::ApplicationSettings']]],
-  ['autouisetup_155',['AutoUISetup',['../struct_control_1_1_auto_u_i_setup.html',1,'Control']]],
-  ['availablenode_156',['AvailableNode',['../struct_control_surface_1_1_node_observer_1_1_available_node.html',1,'ControlSurface::NodeObserver']]],
-  ['availableplugin_157',['AvailablePlugin',['../structvst3_1_1_available_plugin.html',1,'vst3']]],
-  ['avcodeccontext_5ffree_158',['AVCodecContext_Free',['../struct_media_1_1_a_v_codec_context___free.html',1,'Media']]],
-  ['avformatcontext_5ffree_159',['AVFormatContext_Free',['../struct_media_1_1_a_v_format_context___free.html',1,'Media']]],
-  ['avframe_5ffree_160',['AVFrame_Free',['../struct_media_1_1_a_v_frame___free.html',1,'Media']]]
+  ['availablenode_155',['AvailableNode',['../struct_control_surface_1_1_node_observer_1_1_available_node.html',1,'ControlSurface::NodeObserver']]],
+  ['availableplugin_156',['AvailablePlugin',['../structvst3_1_1_available_plugin.html',1,'vst3']]],
+  ['avcodeccontext_5ffree_157',['AVCodecContext_Free',['../struct_media_1_1_a_v_codec_context___free.html',1,'Media']]],
+  ['avformatcontext_5ffree_158',['AVFormatContext_Free',['../struct_media_1_1_a_v_format_context___free.html',1,'Media']]],
+  ['avframe_5ffree_159',['AVFrame_Free',['../struct_media_1_1_a_v_frame___free.html',1,'Media']]]
 ];

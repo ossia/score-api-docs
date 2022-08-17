@@ -1,7 +1,5 @@
 var NAVTREEINDEX32 =
 {
-"class_scenario_1_1_duration_widget.html":[12,0,45,73],
-"class_scenario_1_1_duration_widget.html#a87f97b62e5fa8b8069ac1409ff575e8c":[12,0,45,73,0],
 "class_scenario_1_1_edit_script.html":[12,0,45,76],
 "class_scenario_1_1_edit_script.html#a4174b02e25fa234ab88da0278f521e21":[12,0,45,76,1],
 "class_scenario_1_1_edit_script.html#a9542b185e2f8c71fc5420417b451e7d9":[12,0,45,76,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX32 =
 "class_scenario_1_1_interval_drop_handler.html":[12,0,45,120],
 "class_scenario_1_1_interval_drop_handler.html#ade31304cf74d72aaceeeaa305ec43e33":[12,0,45,120,1],
 "class_scenario_1_1_interval_drop_handler.html#ae6b3108286e22919661290284e616cd0":[12,0,45,120,0],
-"class_scenario_1_1_interval_drop_handler_list.html":[12,0,45,121]
+"class_scenario_1_1_interval_drop_handler_list.html":[12,0,45,121],
+"class_scenario_1_1_interval_drop_handler_list.html#a554ef98a87c6f1eea626ac21c02a1ff6":[12,0,45,121,1],
+"class_scenario_1_1_interval_drop_handler_list.html#ac5a95b472003e21b26bdd261c352cad3":[12,0,45,121,0]
 };

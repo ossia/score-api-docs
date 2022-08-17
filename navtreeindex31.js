@@ -1,7 +1,5 @@
 var NAVTREEINDEX31 =
 {
-"class_scenario_1_1_command_1_1_set_time_signatures.html#ac18d5c835de6e873cdd0bc28e2c79433":[12,0,45,0,98,1],
-"class_scenario_1_1_command_1_1_set_trigger.html":[12,0,45,0,99],
 "class_scenario_1_1_command_1_1_set_trigger.html#a786e9d485b6cbbeffdf45c3780593313":[12,0,45,0,99,4],
 "class_scenario_1_1_command_1_1_set_trigger.html#a9c0bc41f6c13cc400363f7d39824836c":[12,0,45,0,99,2],
 "class_scenario_1_1_command_1_1_set_trigger.html#ada79cb6f78d0adec980d7ada0a9c6f12":[12,0,45,0,99,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX31 =
 "class_scenario_1_1_drop_scenario.html#ac062a7c1f4ad70d1c71aaf3117c58e05":[12,0,45,70,0],
 "class_scenario_1_1_drop_score_in_interval.html":[12,0,45,71],
 "class_scenario_1_1_drop_score_in_scenario.html":[12,0,45,72],
-"class_scenario_1_1_drop_score_in_scenario.html#a7bac3a4957f229aa759de62275cf28aa":[12,0,45,72,0]
+"class_scenario_1_1_drop_score_in_scenario.html#a7bac3a4957f229aa759de62275cf28aa":[12,0,45,72,0],
+"class_scenario_1_1_duration_widget.html":[12,0,45,73],
+"class_scenario_1_1_duration_widget.html#a87f97b62e5fa8b8069ac1409ff575e8c":[12,0,45,73,0]
 };

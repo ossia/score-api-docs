@@ -1,7 +1,5 @@
 var NAVTREEINDEX41 =
 {
-"class_value_inlet.html#a3078f9619507ac646dbf6e85d84f4015":[12,0,516,8],
-"class_value_inlet.html#a32340ab63c2e908f010e6fb77a56b7c0":[12,0,516,3],
 "class_value_inlet.html#a4777f0867edbcbd8cf3c3f271b4e75db":[12,0,516,2],
 "class_value_inlet.html#a6acd47afb5f1482885ef2f4c96e251b1":[12,0,516,7],
 "class_value_inlet.html#a8099d24402a191bdbac5df5b1d54cec9":[12,0,516,6],
@@ -249,5 +247,7 @@ var NAVTREEINDEX41 =
 "classoscr_1_1_custom_text_graphics_knob.html#aef3bb8a8142c623a4c290a55e91687f8":[12,0,34,6,0],
 "classoscr_1_1_custom_text_graphics_slider.html":[12,0,34,7],
 "classoscr_1_1_custom_text_graphics_slider.html#a0564c819e321e97e872ff8ad8b13be0e":[12,0,34,7,0],
-"classoscr_1_1_custom_text_graphics_slider.html#a8cedb147c07e7121189d43c5bd89822e":[12,0,34,7,3]
+"classoscr_1_1_custom_text_graphics_slider.html#a8cedb147c07e7121189d43c5bd89822e":[12,0,34,7,3],
+"classoscr_1_1_custom_text_graphics_slider.html#ad9d24a1f742211dc8a4e20b9745a6088":[12,0,34,7,2],
+"classoscr_1_1_custom_text_graphics_slider.html#ae28aa9493a27ad272624c576157fc15b":[12,0,34,7,1]
 };

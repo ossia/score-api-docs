@@ -1,5 +1,6 @@
 var NAVTREEINDEX49 =
 {
+"classscore_1_1gfx_1_1_node.html#ac6e578b8679824c63eec08e754abc01b":[12,0,46,2,26,3],
 "classscore_1_1gfx_1_1_node.html#acac03f2e76d8ab63548bab3fac5968a3":[12,0,46,2,26,7],
 "classscore_1_1gfx_1_1_node.html#ae0507cfcc9689ba35c8fee6df2324c2d":[12,0,46,2,26,1],
 "classscore_1_1gfx_1_1_node.html#aefb015e0ae9aa94af70005325ed2197a":[12,0,46,2,26,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX49 =
 "classscore__plugin__remotecontrol.html":[12,0,368],
 "classscore__plugin__remotecontrol.html#a8cb6871e867c80d463dd503c3be14b97":[12,0,368,1],
 "classscore__plugin__remotecontrol.html#aac39a40947863a1a41fb5a0ea6a98150":[12,0,368,0],
-"classscore__plugin__scenario.html":[12,0,369],
-"classscore__plugin__scenario.html#a7b27edcd83fe718f313b68e85e8ad8ae":[12,0,369,0]
+"classscore__plugin__scenario.html":[12,0,369]
 };

@@ -57,11 +57,9 @@ var annotated_dup =
       ] ]
     ] ],
     [ "Control", null, [
-      [ "AutoUISetup", "struct_control_1_1_auto_u_i_setup.html", "struct_control_1_1_auto_u_i_setup" ],
       [ "Button", "struct_control_1_1_button.html", "struct_control_1_1_button" ],
       [ "ChooserToggle", "struct_control_1_1_chooser_toggle.html", "struct_control_1_1_chooser_toggle" ],
       [ "ComboBox", "struct_control_1_1_combo_box.html", "struct_control_1_1_combo_box" ],
-      [ "ControlLayerFactory", "class_control_1_1_control_layer_factory.html", "class_control_1_1_control_layer_factory" ],
       [ "ControlProcess", "class_control_1_1_control_process.html", "class_control_1_1_control_process" ],
       [ "CustomUISetup", "struct_control_1_1_custom_u_i_setup.html", "struct_control_1_1_custom_u_i_setup" ],
       [ "Enum", "struct_control_1_1_enum.html", "struct_control_1_1_enum" ],
@@ -993,7 +991,7 @@ var annotated_dup =
       [ "IntSlider", "struct_widget_factory_1_1_int_slider.html", null ],
       [ "IntSpinBox", "struct_widget_factory_1_1_int_spin_box.html", null ],
       [ "LinearNormalizer", "struct_widget_factory_1_1_linear_normalizer.html", null ],
-      [ "LineEdit", "struct_widget_factory_1_1_line_edit.html", "struct_widget_factory_1_1_line_edit" ],
+      [ "LineEdit", "struct_widget_factory_1_1_line_edit.html", null ],
       [ "LogNormalizer", "struct_widget_factory_1_1_log_normalizer.html", null ],
       [ "MultiSlider", "struct_widget_factory_1_1_multi_slider.html", null ],
       [ "TimeChooser", "struct_widget_factory_1_1_time_chooser.html", null ],

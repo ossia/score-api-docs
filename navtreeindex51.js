@@ -1,5 +1,6 @@
 var NAVTREEINDEX51 =
 {
+"classvst_1_1_effect_item.html#a117a3225aa243e9652d707ae657a7937":[12,0,55,5,0],
 "classvst_1_1_effect_item.html#aa0988678596d7346c592bb0bd6e9cc5d":[12,0,55,5,1],
 "classvst_1_1_executor.html":[12,0,55,6],
 "classvst_1_1_executor.html#ac2cc69e2c6b3799ec6bc1255dba392b1":[12,0,55,6,0],
@@ -76,8 +77,8 @@ var NAVTREEINDEX51 =
 "data_structures_8hpp_source.html":[13,0,278],
 "element_finding_helper_8hpp_source.html":[13,0,373],
 "files.html":[13,0],
-"functions.html":[12,3,0,0],
 "functions.html":[12,3,0],
+"functions.html":[12,3,0,0],
 "functions_c.html":[12,3,0,1],
 "functions_d.html":[12,3,0,2],
 "functions_e.html":[12,3,0,3],
@@ -141,8 +142,8 @@ var NAVTREEINDEX51 =
 "mvp_8hpp_source.html":[13,0,809],
 "namespace_automation.html":[11,0,0],
 "namespace_automation.html":[12,0,2],
-"namespace_curve.html":[12,0,7],
 "namespace_curve.html":[11,0,1],
+"namespace_curve.html":[12,0,7],
 "namespace_device.html":[11,0,2],
 "namespace_device.html":[12,0,9],
 "namespace_engine.html":[11,0,3],
@@ -150,10 +151,10 @@ var NAVTREEINDEX51 =
 "namespace_engine_1_1_network.html":[11,0,3,0],
 "namespace_execution.html":[11,0,4],
 "namespace_execution.html":[12,0,11],
-"namespace_gfx.html":[11,0,5],
 "namespace_gfx.html":[12,0,17],
-"namespace_inspector.html":[11,0,6],
+"namespace_gfx.html":[11,0,5],
 "namespace_inspector.html":[12,0,19],
+"namespace_inspector.html":[11,0,6],
 "namespace_local_tree.html":[12,0,26],
 "namespace_local_tree.html":[11,0,7],
 "namespace_plugin_loader.html":[11,0,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX51 =
 "score-plugin-controlsurface_2_control_surface_2_view_8hpp_source.html":[13,0,1381],
 "score-plugin-curve_2_curve_2_application_plugin_8hpp_source.html":[13,0,51],
 "score-plugin-curve_2_curve_2_palette_2_tools_2_smart_tool_8hpp_source.html":[13,0,1229],
-"score-plugin-dataflow_2_dataflow_2_port_item_8hpp_source.html":[13,0,910],
-"score-plugin-deviceexplorer_2_explorer_2_application_plugin_8hpp_source.html":[13,0,52]
+"score-plugin-dataflow_2_dataflow_2_port_item_8hpp_source.html":[13,0,910]
 };
