@@ -1,5 +1,8 @@
 var NAVTREEINDEX52 =
 {
+"score-plugin-controlsurface_2_control_surface_2_local_tree_8hpp_source.html":[13,0,669],
+"score-plugin-controlsurface_2_control_surface_2_process_8hpp_source.html":[13,0,936],
+"score-plugin-controlsurface_2_control_surface_2_view_8hpp_source.html":[13,0,1382],
 "score-plugin-curve_2_curve_2_application_plugin_8hpp_source.html":[13,0,51],
 "score-plugin-curve_2_curve_2_palette_2_tools_2_smart_tool_8hpp_source.html":[13,0,1229],
 "score-plugin-dataflow_2_dataflow_2_port_item_8hpp_source.html":[13,0,910],
@@ -246,8 +249,5 @@ var NAVTREEINDEX52 =
 "struct_atom_buffer.html#a21269819a0af1cda603c0bd57403b197":[12,0,68,1],
 "struct_atom_buffer.html#a22ce175aec4abbc2be02031212ba3814":[12,0,68,2],
 "struct_atom_buffer.html#a4b235ae85d608b8f7a0cd74c7e15afdd":[12,0,68,4],
-"struct_atom_buffer.html#a56d0fa21194799d09277c4ec05ac2b30":[12,0,68,7],
-"struct_atom_buffer.html#a56d985b3af09bbe4f5b083676b8cde7e":[12,0,68,5],
-"struct_atom_buffer.html#a825c90bc1f9a1cf027dc2e9c0352ff1f":[12,0,68,3],
-"struct_atom_buffer.html#a83672d9abb1cb3cf352dbf62aa69e139":[12,0,68,0]
+"struct_atom_buffer.html#a56d0fa21194799d09277c4ec05ac2b30":[12,0,68,7]
 };

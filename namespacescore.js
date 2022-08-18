@@ -282,6 +282,7 @@ var namespacescore =
     [ "StaticPropertyCommand< JS::ProcessModel::p_script >", "structscore_1_1_static_property_command_3_01_j_s_1_1_process_model_1_1p__script_01_4.html", null ],
     [ "StringConstants", "structscore_1_1_string_constants.html", "structscore_1_1_string_constants" ],
     [ "SubtypeVariant", "classscore_1_1_subtype_variant.html", "classscore_1_1_subtype_variant" ],
+    [ "TaskPool", "classscore_1_1_task_pool.html", "classscore_1_1_task_pool" ],
     [ "TemplatedSpinBox", "structscore_1_1_templated_spin_box.html", null ],
     [ "TemplatedSpinBox< double >", "structscore_1_1_templated_spin_box_3_01double_01_4.html", "structscore_1_1_templated_spin_box_3_01double_01_4" ],
     [ "TemplatedSpinBox< float >", "structscore_1_1_templated_spin_box_3_01float_01_4.html", "structscore_1_1_templated_spin_box_3_01float_01_4" ],

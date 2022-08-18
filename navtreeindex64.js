@@ -1,5 +1,9 @@
 var NAVTREEINDEX64 =
 {
+"struct_recording_1_1_record_provider.html#aec6b0da991f520726c5e8b05a7ffc510":[12,0,41,15,2],
+"struct_recording_1_1_recorded_message.html":[12,0,41,12],
+"struct_recording_1_1_recorded_message.html#a035817c2b42975b30a667a72a424785a":[12,0,41,12,0],
+"struct_recording_1_1_recorded_message.html#a813e8172e393fa8dfec0c0f9630cfa42":[12,0,41,12,1],
 "struct_redo_strategy_1_1_quiet.html":[12,0,42,0],
 "struct_redo_strategy_1_1_redo.html":[12,0,42,1],
 "struct_remote_control_1_1_handler.html":[12,0,43,5],
@@ -245,9 +249,5 @@ var NAVTREEINDEX64 =
 "struct_scenario_1_1_full_slot.html":[12,0,45,108],
 "struct_scenario_1_1_full_slot.html#a5e9f9b2875e9eb1ba39d7ab867f7b727":[12,0,45,108,1],
 "struct_scenario_1_1_full_slot.html#aeb981f2030ac2353f248b7f59227dcae":[12,0,45,108,0],
-"struct_scenario_1_1_interval_pixmaps.html":[12,0,45,127],
-"struct_scenario_1_1_interval_pixmaps.html#a1ad3578ed6537c23cc1509306cef7b39":[12,0,45,127,6],
-"struct_scenario_1_1_interval_pixmaps.html#a25b92700249773a45a407846b5959f33":[12,0,45,127,3],
-"struct_scenario_1_1_interval_pixmaps.html#a37515718c9713ac036c6daa1a96b7bb4":[12,0,45,127,4],
-"struct_scenario_1_1_interval_pixmaps.html#a38ff541ed57b9bd5b7644541f6b58e42":[12,0,45,127,2]
+"struct_scenario_1_1_interval_pixmaps.html":[12,0,45,127]
 };

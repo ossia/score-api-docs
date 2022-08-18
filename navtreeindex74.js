@@ -1,5 +1,9 @@
 var NAVTREEINDEX74 =
 {
+"structvst3_1_1_host_app.html#abd3a6660fbcb3ed947b0b548641efc8e":[12,0,56,7,1],
+"structvst3_1_1_host_app.html#ad8398c42e0260f119f18f24e12db72a1":[12,0,56,7,3],
+"structvst3_1_1_plugin.html":[12,0,56,12],
+"structvst3_1_1_plugin.html#a0192a5996df478430d0cfab227d276f1":[12,0,56,12,11],
 "structvst3_1_1_plugin.html#a0224ffb26b64d0a61c6afe8c847d7ec2":[12,0,56,12,10],
 "structvst3_1_1_plugin.html#a04132ba864d0f961baa68ae49e9af43a":[12,0,56,12,0],
 "structvst3_1_1_plugin.html#a0d8510a282e1b4d5c8e6743df5f152d0":[12,0,56,12,24],

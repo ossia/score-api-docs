@@ -1,5 +1,8 @@
 var NAVTREEINDEX49 =
 {
+"classscore_1_1gfx_1_1_node.html#a32f530890af66e0ecee6c66cdf430146":[12,0,46,2,26,9],
+"classscore_1_1gfx_1_1_node.html#a5eefadb34fb1f4cc12c50952550c7708":[12,0,46,2,26,2],
+"classscore_1_1gfx_1_1_node.html#a65d2ccc474739f97cc4475100bb510d5":[12,0,46,2,26,6],
 "classscore_1_1gfx_1_1_node.html#a929921dfd819c153d1d008a80f8fa9f8":[12,0,46,2,26,4],
 "classscore_1_1gfx_1_1_node.html#abbac77035201ad0586b55fb7f9075ea8":[12,0,46,2,26,11],
 "classscore_1_1gfx_1_1_node.html#abe3e5324b8df85751b01d0d02fbe49dd":[12,0,46,2,26,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX49 =
 "classscore__plugin__protocols.html":[12,0,366],
 "classscore__plugin__protocols.html#a2e4840fa250d18a403dc09993769592e":[12,0,366,0],
 "classscore__plugin__protocols.html#acad07c1145855294abde99c89d27cf42":[12,0,366,1],
-"classscore__plugin__recording.html":[12,0,367],
-"classscore__plugin__recording.html#a3f63afc4ad5bb6c84e93d7357e4afac0":[12,0,367,1],
-"classscore__plugin__recording.html#af44e59042634edd38e21281e6fc84116":[12,0,367,0],
-"classscore__plugin__remotecontrol.html":[12,0,368]
+"classscore__plugin__recording.html":[12,0,367]
 };
