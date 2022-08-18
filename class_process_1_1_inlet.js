@@ -1,6 +1,6 @@
 var class_process_1_1_inlet =
 [
-    [ "base_type", "class_process_1_1_inlet.html#aa900f66f5a813657ee409dc6310abc3d", null ],
+    [ "score_base_type", "class_process_1_1_inlet.html#a926d31511a3d3717879e1e6c874aac91", null ],
     [ "~Inlet", "class_process_1_1_inlet.html#a09864dfa163233d0b32a586fc3b0bb35", null ],
     [ "Inlet", "class_process_1_1_inlet.html#a8ee740147e7dd04322015299f6a60b47", null ],
     [ "Inlet", "class_process_1_1_inlet.html#a2e7b37490f61532ee00b0d7d915ec06e", null ],

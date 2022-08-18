@@ -1035,7 +1035,7 @@ var annotated_dup =
     [ "AudioInlet", "class_audio_inlet.html", "class_audio_inlet" ],
     [ "AudioOutlet", "class_audio_outlet.html", "class_audio_outlet" ],
     [ "base_kind", "structbase__kind.html", "structbase__kind" ],
-    [ "base_kind< T, std::enable_if_t<!std::is_same_v< T, typename T::base_type > > >", "structbase__kind_3_01_t_00_01std_1_1enable__if__t_3_9std_1_1is__same__v_3_01_t_00_01typename_01_t_1_1base__type_01_4_01_4_01_4.html", "structbase__kind_3_01_t_00_01std_1_1enable__if__t_3_9std_1_1is__same__v_3_01_t_00_01typename_01_t_1_1base__type_01_4_01_4_01_4" ],
+    [ "base_kind< T, std::enable_if_t<!std::is_same_v< T, typename T::score_base_type > > >", "structbase__kind_3_01_t_00_01std_1_1enable__if__t_3_9std_1_1is__same__v_3_01_t_00_01typename_01_97048677e56782543c9f1d394cf20849.html", "structbase__kind_3_01_t_00_01std_1_1enable__if__t_3_9std_1_1is__same__v_3_01_t_00_01typename_01_97048677e56782543c9f1d394cf20849" ],
     [ "BaseGraphicsObject", "class_base_graphics_object.html", "class_base_graphics_object" ],
     [ "BaseScenarioPresenter", "class_base_scenario_presenter.html", "class_base_scenario_presenter" ],
     [ "BaseScenarioRefContainer", "class_base_scenario_ref_container.html", "class_base_scenario_ref_container" ],

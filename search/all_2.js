@@ -3,7 +3,7 @@ var searchData=
   ['backgrounditem_160',['BackgroundItem',['../classscore_1_1_background_item.html',1,'score']]],
   ['barspinbox_161',['BarSpinBox',['../structscore_1_1_bar_spin_box.html',1,'score']]],
   ['base_5fkind_162',['base_kind',['../structbase__kind.html',1,'']]],
-  ['base_5fkind_3c_20t_2c_20std_3a_3aenable_5fif_5ft_3c_21std_3a_3ais_5fsame_5fv_3c_20t_2c_20typename_20t_3a_3abase_5ftype_20_3e_20_3e_20_3e_163',['base_kind&lt; T, std::enable_if_t&lt;!std::is_same_v&lt; T, typename T::base_type &gt; &gt; &gt;',['../structbase__kind_3_01_t_00_01std_1_1enable__if__t_3_9std_1_1is__same__v_3_01_t_00_01typename_01_t_1_1base__type_01_4_01_4_01_4.html',1,'']]],
+  ['base_5fkind_3c_20t_2c_20std_3a_3aenable_5fif_5ft_3c_21std_3a_3ais_5fsame_5fv_3c_20t_2c_20typename_20t_3a_3ascore_5fbase_5ftype_20_3e_20_3e_20_3e_163',['base_kind&lt; T, std::enable_if_t&lt;!std::is_same_v&lt; T, typename T::score_base_type &gt; &gt; &gt;',['../structbase__kind_3_01_t_00_01std_1_1enable__if__t_3_9std_1_1is__same__v_3_01_t_00_01typename_01_97048677e56782543c9f1d394cf20849.html',1,'']]],
   ['basecallbackwrapper_164',['BaseCallbackWrapper',['../class_local_tree_1_1_base_callback_wrapper.html',1,'LocalTree']]],
   ['basecapability_165',['BaseCapability',['../struct_protocols_1_1_artnet_1_1_base_capability.html',1,'Protocols::Artnet']]],
   ['baseelementcontext_166',['BaseElementContext',['../class_scenario_1_1_base_element_context.html',1,'Scenario']]],

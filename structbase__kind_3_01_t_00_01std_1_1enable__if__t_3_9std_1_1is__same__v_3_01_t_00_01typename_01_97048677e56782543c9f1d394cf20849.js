@@ -1,0 +1,4 @@
+var structbase__kind_3_01_t_00_01std_1_1enable__if__t_3_9std_1_1is__same__v_3_01_t_00_01typename_01_97048677e56782543c9f1d394cf20849 =
+[
+    [ "type", "structbase__kind_3_01_t_00_01std_1_1enable__if__t_3_9std_1_1is__same__v_3_01_t_00_01typename_01_97048677e56782543c9f1d394cf20849.html#a1ccf1db42e3267f3fa1e628ef6110cc2", null ]
+];

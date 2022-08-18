@@ -109,7 +109,7 @@ var hierarchy =
     [ "Media::AVFrame_Free", "struct_media_1_1_a_v_frame___free.html", null ],
     [ "score::BarSpinBox", "structscore_1_1_bar_spin_box.html", null ],
     [ "base_kind< T, U >", "structbase__kind.html", null ],
-    [ "base_kind< T, std::enable_if_t<!std::is_same_v< T, typename T::base_type > > >", "structbase__kind_3_01_t_00_01std_1_1enable__if__t_3_9std_1_1is__same__v_3_01_t_00_01typename_01_t_1_1base__type_01_4_01_4_01_4.html", null ],
+    [ "base_kind< T, std::enable_if_t<!std::is_same_v< T, typename T::score_base_type > > >", "structbase__kind_3_01_t_00_01std_1_1enable__if__t_3_9std_1_1is__same__v_3_01_t_00_01typename_01_97048677e56782543c9f1d394cf20849.html", null ],
     [ "base_metadata", null, [
       [ "Control::Meta_base", "struct_control_1_1_meta__base.html", [
         [ "Analysis::Centroid::Metadata", "struct_analysis_1_1_centroid_1_1_metadata.html", null ],
