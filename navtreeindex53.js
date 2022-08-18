@@ -1,5 +1,8 @@
 var NAVTREEINDEX53 =
 {
+"struct_atom_buffer.html#af2e5947c5458b4b8184c3becc05d238b":[12,0,68,6],
+"struct_audio_1_1_audio_preview_executor_1_1sound.html":[12,0,1,4,0],
+"struct_audio_1_1_audio_preview_executor_1_1sound.html#a000ad74d686baff6dc6dacfb8f3ab75f":[12,0,1,4,0,1],
 "struct_audio_1_1_audio_preview_executor_1_1sound.html#a1e62f5df8f131127966ecdcf709fd3d1":[12,0,1,4,0,2],
 "struct_audio_1_1_audio_preview_executor_1_1sound.html#ad6c589f3e84110b16ede0b9bef319f6b":[12,0,1,4,0,0],
 "struct_audio_1_1_port_audio_card.html":[12,0,1,7],
@@ -246,8 +249,5 @@ var NAVTREEINDEX53 =
 "struct_control_1_1_toggle.html":[12,0,5,38],
 "struct_control_1_1_toggle.html#a07b27ae348a6397e5766c084c716be33":[12,0,5,38,8],
 "struct_control_1_1_toggle.html#a1714131398ace3a5f7493d471a6f519a":[12,0,5,38,4],
-"struct_control_1_1_toggle.html#a1a1565192311afef0f7c365b2dd79b2d":[12,0,5,38,0],
-"struct_control_1_1_toggle.html#a2ec948809639afdcb4cdb8143b979f06":[12,0,5,38,7],
-"struct_control_1_1_toggle.html#a34b5cc11263bd1b60daa0d3accd5dc80":[12,0,5,38,6],
-"struct_control_1_1_toggle.html#a4dddb78487d562a5bc248258a0ec40c8":[12,0,5,38,1]
+"struct_control_1_1_toggle.html#a1a1565192311afef0f7c365b2dd79b2d":[12,0,5,38,0]
 };

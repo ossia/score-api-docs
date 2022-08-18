@@ -1,5 +1,8 @@
 var NAVTREEINDEX31 =
 {
+"class_scenario_1_1_command_1_1_set_time_signatures.html#ab2031c65d713e8d10c7e58ba4a6aec65":[12,0,45,0,98,5],
+"class_scenario_1_1_command_1_1_set_time_signatures.html#ac18d5c835de6e873cdd0bc28e2c79433":[12,0,45,0,98,1],
+"class_scenario_1_1_command_1_1_set_trigger.html":[12,0,45,0,99],
 "class_scenario_1_1_command_1_1_set_trigger.html#a786e9d485b6cbbeffdf45c3780593313":[12,0,45,0,99,4],
 "class_scenario_1_1_command_1_1_set_trigger.html#a9c0bc41f6c13cc400363f7d39824836c":[12,0,45,0,99,2],
 "class_scenario_1_1_command_1_1_set_trigger.html#ada79cb6f78d0adec980d7ada0a9c6f12":[12,0,45,0,99,3],
@@ -94,9 +97,9 @@ var NAVTREEINDEX31 =
 "class_scenario_1_1_comment_block_view.html#aef1af0a933aa95db73d472f4d592acc4":[12,0,45,28,7],
 "class_scenario_1_1_comment_block_view.html#af4bbd384da91d27b6da987c7beb06db9":[12,0,45,28,8],
 "class_scenario_1_1_comment_edit.html":[12,0,45,29],
+"class_scenario_1_1_comment_edit.html#a0c254a17d2d2738afe6e476f577a3894":[12,0,45,29,0],
 "class_scenario_1_1_comment_edit.html#a2a4c2881d9271c90d97583ddac64d8ed":[12,0,45,29,2],
 "class_scenario_1_1_comment_edit.html#a7484c9c94ac95f23c21c68bab41a7d3d":[12,0,45,29,1],
-"class_scenario_1_1_comment_edit.html#ae3c6fe298937a22f02cbea74c98ee17e":[12,0,45,29,0],
 "class_scenario_1_1_common_displacement_policy.html":[12,0,45,30],
 "class_scenario_1_1_condition_view.html":[12,0,45,31],
 "class_scenario_1_1_condition_view.html#a0ced7692d0d52abb1302b7d8489c3663":[12,0,45,31,4],
@@ -246,8 +249,5 @@ var NAVTREEINDEX31 =
 "class_scenario_1_1_drop_scenario.html":[12,0,45,70],
 "class_scenario_1_1_drop_scenario.html#ac062a7c1f4ad70d1c71aaf3117c58e05":[12,0,45,70,0],
 "class_scenario_1_1_drop_score_in_interval.html":[12,0,45,71],
-"class_scenario_1_1_drop_score_in_scenario.html":[12,0,45,72],
-"class_scenario_1_1_drop_score_in_scenario.html#a7bac3a4957f229aa759de62275cf28aa":[12,0,45,72,0],
-"class_scenario_1_1_duration_widget.html":[12,0,45,73],
-"class_scenario_1_1_duration_widget.html#a87f97b62e5fa8b8069ac1409ff575e8c":[12,0,45,73,0]
+"class_scenario_1_1_drop_score_in_scenario.html":[12,0,45,72]
 };

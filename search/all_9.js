@@ -242,7 +242,7 @@ var searchData=
   ['intervalsavedata_1165',['IntervalSaveData',['../struct_scenario_1_1_interval_save_data.html',1,'Scenario']]],
   ['intervalsummarywidget_1166',['IntervalSummaryWidget',['../class_scenario_1_1_interval_summary_widget.html',1,'Scenario']]],
   ['intervalview_1167',['IntervalView',['../class_scenario_1_1_interval_view.html',1,'Scenario']]],
-  ['intslider_1168',['IntSlider',['../classscore_1_1_int_slider.html',1,'score::IntSlider'],['../struct_control_1_1_int_slider.html',1,'Control::IntSlider'],['../struct_widget_factory_1_1_int_slider.html',1,'WidgetFactory::IntSlider'],['../class_int_slider.html',1,'IntSlider']]],
+  ['intslider_1168',['IntSlider',['../struct_widget_factory_1_1_int_slider.html',1,'WidgetFactory::IntSlider'],['../classscore_1_1_int_slider.html',1,'score::IntSlider'],['../struct_control_1_1_int_slider.html',1,'Control::IntSlider'],['../class_int_slider.html',1,'IntSlider']]],
   ['intspinbox_1169',['IntSpinBox',['../struct_control_1_1_int_spin_box.html',1,'Control::IntSpinBox'],['../struct_widget_factory_1_1_int_spin_box.html',1,'WidgetFactory::IntSpinBox']]],
   ['invalidprocessexception_1170',['InvalidProcessException',['../class_execution_1_1_invalid_process_exception.html',1,'Execution']]],
   ['invertyrenderer_1171',['InvertYRenderer',['../class_gfx_1_1_invert_y_renderer.html',1,'Gfx']]],

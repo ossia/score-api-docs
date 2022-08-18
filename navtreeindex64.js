@@ -1,5 +1,8 @@
 var NAVTREEINDEX64 =
 {
+"struct_redo_strategy_1_1_quiet.html":[12,0,42,0],
+"struct_redo_strategy_1_1_redo.html":[12,0,42,1],
+"struct_remote_control_1_1_handler.html":[12,0,43,5],
 "struct_remote_control_1_1_handler.html#a4312bf627bd1d96f50d022b9bf74bb63":[12,0,43,5,2],
 "struct_remote_control_1_1_handler.html#a586e2e6b4ebea7183b6790086a8b5160":[12,0,43,5,4],
 "struct_remote_control_1_1_handler.html#a6118074f96d3ae9673fa16ddad211f55":[12,0,43,5,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX64 =
 "struct_scenario_1_1_interval_pixmaps.html#a1ad3578ed6537c23cc1509306cef7b39":[12,0,45,127,6],
 "struct_scenario_1_1_interval_pixmaps.html#a25b92700249773a45a407846b5959f33":[12,0,45,127,3],
 "struct_scenario_1_1_interval_pixmaps.html#a37515718c9713ac036c6daa1a96b7bb4":[12,0,45,127,4],
-"struct_scenario_1_1_interval_pixmaps.html#a38ff541ed57b9bd5b7644541f6b58e42":[12,0,45,127,2],
-"struct_scenario_1_1_interval_pixmaps.html#a56690a20cd8af7cd17157cfe0a9687a9":[12,0,45,127,5],
-"struct_scenario_1_1_interval_pixmaps.html#a7b9ff2b933a2bbd303a1adfd33105055":[12,0,45,127,0],
-"struct_scenario_1_1_interval_pixmaps.html#a9a7175706e8248d71b760a5c498811d1":[12,0,45,127,7]
+"struct_scenario_1_1_interval_pixmaps.html#a38ff541ed57b9bd5b7644541f6b58e42":[12,0,45,127,2]
 };
