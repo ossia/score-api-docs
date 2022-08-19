@@ -1,5 +1,10 @@
 var NAVTREEINDEX52 =
 {
+"score-plugin-avnd_2_crousti_2_process_model_8hpp_source.html":[13,0,963],
+"score-plugin-avnd_2_crousti_2_widgets_8hpp_source.html":[13,0,1407],
+"score-plugin-controlsurface_2_control_surface_2_command_factory_8hpp_source.html":[13,0,158],
+"score-plugin-controlsurface_2_control_surface_2_executor_8hpp_source.html":[13,0,409],
+"score-plugin-controlsurface_2_control_surface_2_layer_8hpp_source.html":[13,0,621],
 "score-plugin-controlsurface_2_control_surface_2_local_tree_8hpp_source.html":[13,0,669],
 "score-plugin-controlsurface_2_control_surface_2_process_8hpp_source.html":[13,0,936],
 "score-plugin-controlsurface_2_control_surface_2_view_8hpp_source.html":[13,0,1382],
@@ -244,10 +249,5 @@ var NAVTREEINDEX52 =
 "struct_analysis_1_1_zero_crossing.html#acafdfb90106bec368b64794359b1ad60":[12,0,0,17,2],
 "struct_analysis_1_1_zero_crossing_1_1_metadata.html":[12,0,0,17,0],
 "struct_array_entity_serializer.html":[12,0,66],
-"struct_array_serializer.html":[12,0,67],
-"struct_atom_buffer.html":[12,0,68],
-"struct_atom_buffer.html#a21269819a0af1cda603c0bd57403b197":[12,0,68,1],
-"struct_atom_buffer.html#a22ce175aec4abbc2be02031212ba3814":[12,0,68,2],
-"struct_atom_buffer.html#a4b235ae85d608b8f7a0cd74c7e15afdd":[12,0,68,4],
-"struct_atom_buffer.html#a56d0fa21194799d09277c4ec05ac2b30":[12,0,68,7]
+"struct_array_serializer.html":[12,0,67]
 };

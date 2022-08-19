@@ -1,5 +1,6 @@
 var classscore_1_1_task_pool =
 [
-    [ "init", "classscore_1_1_task_pool.html#aadb5d74c2087f6a761f9b900d55f1fde", null ],
-    [ "submit", "classscore_1_1_task_pool.html#a4386a8ec709cddf1d077036c7ee8ef4a", null ]
+    [ "TaskPool", "classscore_1_1_task_pool.html#ae0d181f75d323cf21d2e62f04c5908e8", null ],
+    [ "~TaskPool", "classscore_1_1_task_pool.html#af88cba4396868febd8bfa6f9f0981ca0", null ],
+    [ "post", "classscore_1_1_task_pool.html#ac87fb7f7938cd06557230ba7162115d8", null ]
 ];
