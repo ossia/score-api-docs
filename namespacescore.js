@@ -227,6 +227,7 @@ var namespacescore =
     [ "QGraphicsSelectablePixmapToggle", "classscore_1_1_q_graphics_selectable_pixmap_toggle.html", "classscore_1_1_q_graphics_selectable_pixmap_toggle" ],
     [ "QGraphicsSlider", "classscore_1_1_q_graphics_slider.html", "classscore_1_1_q_graphics_slider" ],
     [ "QGraphicsSliderBase", "structscore_1_1_q_graphics_slider_base.html", "structscore_1_1_q_graphics_slider_base" ],
+    [ "QGraphicsSpinbox", "classscore_1_1_q_graphics_spinbox.html", "classscore_1_1_q_graphics_spinbox" ],
     [ "QGraphicsTextButton", "classscore_1_1_q_graphics_text_button.html", "classscore_1_1_q_graphics_text_button" ],
     [ "QGraphicsTimeChooser", "classscore_1_1_q_graphics_time_chooser.html", "classscore_1_1_q_graphics_time_chooser" ],
     [ "QGraphicsToggle", "classscore_1_1_q_graphics_toggle.html", "classscore_1_1_q_graphics_toggle" ],

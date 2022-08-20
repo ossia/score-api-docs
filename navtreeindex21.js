@@ -1,5 +1,6 @@
 var NAVTREEINDEX21 =
 {
+"class_media_1_1_sound_1_1_process_model.html#a2322d5db912cda2331ce4a5e0d5c910f":[12,0,29,3,9,8],
 "class_media_1_1_sound_1_1_process_model.html#a26e4e406f21ac6691851899a2025d85e":[12,0,29,3,9,0],
 "class_media_1_1_sound_1_1_process_model.html#a4690c24c017f76612d65d74d7deef378":[12,0,29,3,9,12],
 "class_media_1_1_sound_1_1_process_model.html#a771251b7252a25f8cc5eaffba4d4ad27":[12,0,29,3,9,21],
@@ -248,6 +249,5 @@ var NAVTREEINDEX21 =
 "class_mixer_1_1_audio_slider_widget.html#a7c8c821294a3f75610e94bc9232e30b0":[12,0,31,2,1],
 "class_mixer_1_1_audio_slider_widget.html#ad61f3f74d21131a68e2bade54ab2e81f":[12,0,31,2,0],
 "class_mixer_1_1_mixer_panel.html":[12,0,31,3],
-"class_mixer_1_1_mixer_panel.html#a23f63ea83c7abd06c29c7433192ee5cf":[12,0,31,3,26],
-"class_mixer_1_1_mixer_panel.html#a258fb743db8ef5c73a1dd01f6933b878":[12,0,31,3,13]
+"class_mixer_1_1_mixer_panel.html#a23f63ea83c7abd06c29c7433192ee5cf":[12,0,31,3,26]
 };

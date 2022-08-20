@@ -1,6 +1,7 @@
 var classscore_1_1_q_graphics_x_y_z_chooser =
 [
     [ "QGraphicsXYZChooser", "classscore_1_1_q_graphics_x_y_z_chooser.html#a222be0f1ebfce50d3473a775a7d905f0", null ],
+    [ "~QGraphicsXYZChooser", "classscore_1_1_q_graphics_x_y_z_chooser.html#a3d2397cdf5ace270ae6d54690e10dff8", null ],
     [ "setPoint", "classscore_1_1_q_graphics_x_y_z_chooser.html#a283e9f9ca0ef5757d5d62e9cf2f824f1", null ],
     [ "setRange", "classscore_1_1_q_graphics_x_y_z_chooser.html#aa9ae0871d8c4040bb25d77365d19763c", null ],
     [ "setValue", "classscore_1_1_q_graphics_x_y_z_chooser.html#a0d369d3e32b8887f9d3927ac668b11dd", null ],

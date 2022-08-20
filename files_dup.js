@@ -1001,6 +1001,7 @@ var files_dup =
     [ "QGraphicsSelectablePixmapToggle.hpp", "_q_graphics_selectable_pixmap_toggle_8hpp_source.html", null ],
     [ "QGraphicsSlider.hpp", "_q_graphics_slider_8hpp_source.html", null ],
     [ "QGraphicsSliderBase.hpp", "_q_graphics_slider_base_8hpp_source.html", null ],
+    [ "QGraphicsSpinbox.hpp", "_q_graphics_spinbox_8hpp_source.html", null ],
     [ "QGraphicsTimeChooser.hpp", "_q_graphics_time_chooser_8hpp_source.html", null ],
     [ "QGraphicsToggle.hpp", "_q_graphics_toggle_8hpp_source.html", null ],
     [ "QGraphicsXYChooser.hpp", "_q_graphics_x_y_chooser_8hpp_source.html", null ],

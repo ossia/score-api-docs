@@ -1,5 +1,6 @@
 var NAVTREEINDEX31 =
 {
+"class_scenario_1_1_command_1_1_set_time_signatures.html#a96ad1f4c6fcd5fca4a2b5aacd3017d5e":[12,0,45,0,98,3],
 "class_scenario_1_1_command_1_1_set_time_signatures.html#ab2031c65d713e8d10c7e58ba4a6aec65":[12,0,45,0,98,5],
 "class_scenario_1_1_command_1_1_set_time_signatures.html#ac18d5c835de6e873cdd0bc28e2c79433":[12,0,45,0,98,1],
 "class_scenario_1_1_command_1_1_set_trigger.html":[12,0,45,0,99],
@@ -248,6 +249,5 @@ var NAVTREEINDEX31 =
 "class_scenario_1_1_drop_process_on_state_helper.html#aed1ae67f88caaaffd62d19f241dbcce6":[12,0,45,69,4],
 "class_scenario_1_1_drop_scenario.html":[12,0,45,70],
 "class_scenario_1_1_drop_scenario.html#ac062a7c1f4ad70d1c71aaf3117c58e05":[12,0,45,70,0],
-"class_scenario_1_1_drop_score_in_interval.html":[12,0,45,71],
-"class_scenario_1_1_drop_score_in_scenario.html":[12,0,45,72]
+"class_scenario_1_1_drop_score_in_interval.html":[12,0,45,71]
 };
