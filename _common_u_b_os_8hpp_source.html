@@ -99,58 +99,59 @@ $(document).ready(function(){initNavTree('_common_u_b_os_8hpp_source.html',''); 
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/packed_struct.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;cstdint&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore_1_1gfx.html">score::gfx</a></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore_1_1gfx.html">score::gfx</a></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma pack(push, 1)</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespacescore_1_1gfx.html#ade240faed5ca4c785087262e25bfe848">   12</a></span>&#160;packed_struct ProcessUBO</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordtype">float</span> time{};</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keywordtype">float</span> timeDelta{};</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keywordtype">float</span> progress{};</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  int32_t passIndex{};</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  int32_t frameIndex{};</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordtype">float</span> date[4]{0.f, 0.f, 0.f, 0.f};</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordtype">float</span> mouse[4]{0.5f, 0.5f, 0.5f, 0.5f};</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordtype">float</span> channelTime[4]{0.5f, 0.5f, 0.5f, 0.5f};</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">float</span> sampleRate{};</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;end_packed_struct</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    packed_struct ModelCameraUBO</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">float</span> mvp[16]{};</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">float</span> mv[16]{};</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">float</span> model[16]{};</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">float</span> view[16]{};</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">float</span> projection[16]{};</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">float</span> modelNormal[9]{};</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">float</span> padding[3]; <span class="comment">// Needed as a mat3 needs a bit more space...</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;end_packed_struct</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_process_u_b_o.html">   11</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structscore_1_1gfx_1_1_process_u_b_o.html">ProcessUBO</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keywordtype">float</span> time{};</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordtype">float</span> timeDelta{};</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keywordtype">float</span> progress{};</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  int32_t passIndex{};</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  int32_t frameIndex{};</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">float</span> date[4]{0.f, 0.f, 0.f, 0.f};</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordtype">float</span> mouse[4]{0.5f, 0.5f, 0.5f, 0.5f};</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordtype">float</span> channelTime[4]{0.5f, 0.5f, 0.5f, 0.5f};</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordtype">float</span> sampleRate{};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_model_camera_u_b_o.html">   30</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structscore_1_1gfx_1_1_model_camera_u_b_o.html">ModelCameraUBO</a></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">float</span> mvp[16]{};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">float</span> mv[16]{};</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">float</span> model[16]{};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">float</span> view[16]{};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">float</span> projection[16]{};</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">float</span> modelNormal[9]{};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">float</span> padding[3]; <span class="comment">// Needed as a mat3 needs a bit more space...</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    static_assert(</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">sizeof</span>(<a class="code" href="structscore_1_1gfx_1_1_model_camera_u_b_o.html">ModelCameraUBO</a>) == <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>) * (16 + 16 + 16 + 16 + 16 + 9 + 3));</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    static_assert(</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">sizeof</span>(ModelCameraUBO) == <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>) * (16 + 16 + 16 + 16 + 16 + 9 + 3));</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;packed_struct OutputUBO</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">float</span> clipSpaceCorrMatrix[16]{};</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">float</span> texcoordAdjust[2]{};</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_output_u_b_o.html">   47</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structscore_1_1gfx_1_1_output_u_b_o.html">OutputUBO</a></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">float</span> clipSpaceCorrMatrix[16]{};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">float</span> texcoordAdjust[2]{};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">float</span> renderSize[2]{};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">float</span> renderSize[2]{};</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;end_packed_struct</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#pragma pack(pop)</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="astructscore_1_1gfx_1_1_process_u_b_o_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_process_u_b_o.html">score::gfx::ProcessUBO</a></div><div class="ttdoc">UBO specific to individual processes / nodes.</div><div class="ttdef"><b>Definition:</b> CommonUBOs.hpp:11</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_model_camera_u_b_o_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_model_camera_u_b_o.html">score::gfx::ModelCameraUBO</a></div><div class="ttdoc">UBO shared across all entities shown with the same camera.</div><div class="ttdef"><b>Definition:</b> CommonUBOs.hpp:30</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition:</b> Vulkan.hpp:10</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_output_u_b_o_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_output_u_b_o.html">score::gfx::OutputUBO</a></div><div class="ttdoc">UBO shared across all entities shown on the same output.</div><div class="ttdef"><b>Definition:</b> CommonUBOs.hpp:47</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

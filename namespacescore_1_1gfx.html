@@ -206,6 +206,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_message.html">Message</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Messages sent from the execution thread to the rendering thread.  <a href="structscore_1_1gfx_1_1_message.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_model_camera_u_b_o.html">ModelCameraUBO</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">UBO shared across all entities shown with the same camera.  <a href="structscore_1_1gfx_1_1_model_camera_u_b_o.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node.html">Node</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Root data model for visual nodes.  <a href="classscore_1_1gfx_1_1_node.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,6 +222,9 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)  <a href="classscore_1_1gfx_1_1_output_node.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_output_node_renderer.html">OutputNodeRenderer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_output_u_b_o.html">OutputUBO</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">UBO shared across all entities shown on the same output.  <a href="structscore_1_1gfx_1_1_output_u_b_o.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_packed_decoder.html">PackedDecoder</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -244,6 +250,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_process_node.html">ProcessNode</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common base class for nodes that map to score processes.  <a href="classscore_1_1gfx_1_1_process_node.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_process_u_b_o.html">ProcessUBO</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">UBO specific to individual processes / nodes.  <a href="structscore_1_1gfx_1_1_process_u_b_o.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_refcounted_frame.html">RefcountedFrame</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -381,9 +390,6 @@ Functions</h2></td></tr>
 <tr class="memitem:aea6ff7bc9d36b438ec03fa9cc271e929"><td class="memItemLeft" align="right" valign="top"><a id="aea6ff7bc9d36b438ec03fa9cc271e929"></a>
 QVulkanInstance *&#160;</td><td class="memItemRight" valign="bottom"><b>staticVulkanInstance</b> ()</td></tr>
 <tr class="separator:aea6ff7bc9d36b438ec03fa9cc271e929"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade240faed5ca4c785087262e25bfe848"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#ade240faed5ca4c785087262e25bfe848">__attribute__</a> ((packed)) ProcessUBO</td></tr>
-<tr class="memdesc:ade240faed5ca4c785087262e25bfe848"><td class="mdescLeft">&#160;</td><td class="mdescRight">UBO specific to individual processes / nodes.  <a href="namespacescore_1_1gfx.html#ade240faed5ca4c785087262e25bfe848">More...</a><br /></td></tr>
-<tr class="separator:ade240faed5ca4c785087262e25bfe848"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15a05763dd9e30cdb72f2c3183359da1"><td class="memTemplParams" colspan="2"><a id="a15a05763dd9e30cdb72f2c3183359da1"></a>
 template&lt;typename Graph_T , typename IO &gt; </td></tr>
 <tr class="memitem:a15a05763dd9e30cdb72f2c3183359da1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>print_graph</b> (Graph_T &amp;g, IO &amp;stream)</td></tr>
@@ -480,28 +486,6 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>frag</b></td>
 <tr class="separator:a57170d1e694379b976b929a2b187558a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ade240faed5ca4c785087262e25bfe848"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade240faed5ca4c785087262e25bfe848">&#9670;&nbsp;</a></span>__attribute__()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct score::gfx::__attribute__ </td>
-          <td>(</td>
-          <td class="paramtype">(packed)&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>UBO specific to individual processes / nodes. </p>
-<p>UBO shared across all entities shown on the same output.</p>
-<p>UBO shared across all entities shown with the same camera. </p>
-
-</div>
-</div>
 <a id="a45544de5e0f0eb9bfe8400a220313638"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a45544de5e0f0eb9bfe8400a220313638">&#9670;&nbsp;</a></span>createRenderTarget()</h2>
 

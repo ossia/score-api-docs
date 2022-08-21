@@ -107,12 +107,13 @@ Creating a custom node</h1>
 <li>Define the material of the node in a struct:</li>
 </ul>
 <div class="fragment"><div class="line">⠀</div>
-</div><!-- fragment --><div class="fragment"><div class="line">packed_struct MyShaderParameters {</div>
+</div><!-- fragment --><div class="fragment"><div class="line"><span class="preprocessor">#pragma pack(push, 1)</span></div>
+<div class="line"><span class="keyword">struct </span>MyShaderParameters {</div>
 <div class="line">   <span class="keywordtype">int</span> <a class="code" href="classfoo.html">foo</a>;</div>
 <div class="line">   <span class="keywordtype">float</span> bar[2];</div>
 <div class="line">} my_params;</div>
-<div class="line">end_packed_struct</div>
-</div><!-- fragment --><p>The struct must respect GLSL std140 rules; helper macros are defined in &lt;ossia/detail/packed_struct.hpp&gt; (they are not sufficient ! sometimes additional padding is needed).</p>
+<div class="line"><span class="preprocessor">#pragma pack(pop)</span></div>
+</div><!-- fragment --><p>The struct must respect GLSL std140 rules; sometimes additional explicit padding is needed even with pragma pack.</p>
 <ul>
 <li>Add matching ports in the constructor:</li>
 </ul>

@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['undotext_5969',['undoText',['../classscore_1_1_command_stack.html#a42d0cd62248338b94579fc1c7e792d42',1,'score::CommandStack']]],
-  ['unlinkandremoveedge_5970',['unlinkAndRemoveEdge',['../structscore_1_1gfx_1_1_graph.html#abe3ddb004ee53340f68c7eb87fd8ec5e',1,'score::gfx::Graph']]],
-  ['update_5971',['update',['../classscore_1_1gfx_1_1_render_list.html#a6cafe12f314b850ea4c9a3f2a7454987',1,'score::gfx::RenderList']]],
-  ['updateoverlay_5972',['updateOverlay',['../class_scenario_1_1_temporal_interval_header.html#a8b1e65c6c9077eeea0ace48430e64b00',1,'Scenario::TemporalIntervalHeader']]]
+  ['virgin_5976',['virgin',['../classscore_1_1_document.html#ab468cdc0d9a73e9cb666770f410e0b5e',1,'score::Document']]],
+  ['visualpriority_5977',['visualPriority',['../class_device_1_1_protocol_factory.html#ad5810a19e266a8ab9804f127cfebd0f3',1,'Device::ProtocolFactory']]]
 ];
