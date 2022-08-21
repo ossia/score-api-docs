@@ -994,6 +994,8 @@ var annotated_dup =
       [ "LineEdit", "struct_widget_factory_1_1_line_edit.html", null ],
       [ "LogNormalizer", "struct_widget_factory_1_1_log_normalizer.html", null ],
       [ "MultiSlider", "struct_widget_factory_1_1_multi_slider.html", null ],
+      [ "ProgramEdit", "struct_widget_factory_1_1_program_edit.html", null ],
+      [ "ProgramPortScriptDialog", "struct_widget_factory_1_1_program_port_script_dialog.html", "struct_widget_factory_1_1_program_port_script_dialog" ],
       [ "TimeChooser", "struct_widget_factory_1_1_time_chooser.html", null ],
       [ "TimeSignatureValidator", "struct_widget_factory_1_1_time_signature_validator.html", "struct_widget_factory_1_1_time_signature_validator" ],
       [ "Toggle", "struct_widget_factory_1_1_toggle.html", null ],

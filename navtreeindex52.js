@@ -1,5 +1,9 @@
 var NAVTREEINDEX52 =
 {
+"plugins_2score-plugin-transport_2_transport_2_document_plugin_8hpp_source.html":[13,0,334],
+"plugins_2score-plugin-vst3_2_vst3_2_u_i_2_window_8hpp_source.html":[13,0,1420],
+"plugins_2score-plugin-vst3_2_vst3_2commands_8hpp_source.html":[13,0,175],
+"plugins_2score-plugin-vst_2_vst_2_settings_8hpp_source.html":[13,0,1201],
 "plugins_2score-plugin-vst_2_vst_2_window_8hpp_source.html":[13,0,1419],
 "plugins_2score-plugin-vst_2_vst_2commands_8hpp_source.html":[13,0,174],
 "plugins_2score-plugin-ysfx_2_y_s_f_x_2_executor_2_component_8hpp_source.html":[13,0,192],
@@ -245,9 +249,5 @@ var NAVTREEINDEX52 =
 "struct_analysis_1_1_pitch.html":[12,0,0,11],
 "struct_analysis_1_1_pitch.html#a6131e1342bff2ae749ebb938ec4aecda":[12,0,0,11,2],
 "struct_analysis_1_1_pitch.html#ab2d3dc8244f67f602b572fcdf8e00668":[12,0,0,11,1],
-"struct_analysis_1_1_pitch_1_1_metadata.html":[12,0,0,11,0],
-"struct_analysis_1_1_r_m_s.html":[12,0,0,12],
-"struct_analysis_1_1_r_m_s.html#a4aa476dd55483562891a8a9615ad98e8":[12,0,0,12,1],
-"struct_analysis_1_1_r_m_s.html#afdaacf4d5513e2fa0cb75c5f611ab2cd":[12,0,0,12,2],
-"struct_analysis_1_1_r_m_s_1_1_metadata.html":[12,0,0,12,0]
+"struct_analysis_1_1_pitch_1_1_metadata.html":[12,0,0,11,0]
 };

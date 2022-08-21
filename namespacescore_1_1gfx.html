@@ -406,13 +406,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>defaultRenderPass</b>
 <tr class="memitem:a0a58880047dd23a1e25e529168536d2b"><td class="memItemLeft" align="right" valign="top"><a id="a0a58880047dd23a1e25e529168536d2b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>quadRenderPass</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, const <a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> &amp;bufs, QRhiCommandBuffer &amp;cb, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge, PassMap &amp;passes)</td></tr>
 <tr class="separator:a0a58880047dd23a1e25e529168536d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93637639b98f42b59cd9bb0b140fb5ca"><td class="memItemLeft" align="right" valign="top"><a id="a93637639b98f42b59cd9bb0b140fb5ca"></a>
-<a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#a93637639b98f42b59cd9bb0b140fb5ca">createRenderTarget</a> (const <a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> &amp;state, QRhiTexture *tex)</td></tr>
-<tr class="memdesc:a93637639b98f42b59cd9bb0b140fb5ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a render target from a texture. <br /></td></tr>
-<tr class="separator:a93637639b98f42b59cd9bb0b140fb5ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45544de5e0f0eb9bfe8400a220313638"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#a45544de5e0f0eb9bfe8400a220313638">createRenderTarget</a> (const <a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> &amp;state, QRhiTexture::Format fmt, QSize sz, QRhiTexture::Flags={})</td></tr>
-<tr class="memdesc:a45544de5e0f0eb9bfe8400a220313638"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a render target from a texture format and size.  <a href="namespacescore_1_1gfx.html#a45544de5e0f0eb9bfe8400a220313638">More...</a><br /></td></tr>
-<tr class="separator:a45544de5e0f0eb9bfe8400a220313638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5a0eab143d60dc91cfad685092b50db"><td class="memItemLeft" align="right" valign="top"><a id="af5a0eab143d60dc91cfad685092b50db"></a>
+<a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#af5a0eab143d60dc91cfad685092b50db">createRenderTarget</a> (const <a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> &amp;state, QRhiTexture *tex, int samples)</td></tr>
+<tr class="memdesc:af5a0eab143d60dc91cfad685092b50db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a render target from a texture. <br /></td></tr>
+<tr class="separator:af5a0eab143d60dc91cfad685092b50db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9acb50cef2c6010dbee22bae8bad41b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#a9acb50cef2c6010dbee22bae8bad41b7">createRenderTarget</a> (const <a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> &amp;state, QRhiTexture::Format fmt, QSize sz, int samples, QRhiTexture::Flags={})</td></tr>
+<tr class="memdesc:a9acb50cef2c6010dbee22bae8bad41b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a render target from a texture format and size.  <a href="namespacescore_1_1gfx.html#a9acb50cef2c6010dbee22bae8bad41b7">More...</a><br /></td></tr>
+<tr class="separator:a9acb50cef2c6010dbee22bae8bad41b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a379abf9c61f74027d371abe727f16d29"><td class="memItemLeft" align="right" valign="top"><a id="a379abf9c61f74027d371abe727f16d29"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>replaceBuffer</b> (std::vector&lt; QRhiShaderResourceBinding &gt; &amp;tmp, int binding, QRhiBuffer *newBuffer)</td></tr>
 <tr class="separator:a379abf9c61f74027d371abe727f16d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -486,8 +486,8 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>frag</b></td>
 <tr class="separator:a57170d1e694379b976b929a2b187558a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a45544de5e0f0eb9bfe8400a220313638"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45544de5e0f0eb9bfe8400a220313638">&#9670;&nbsp;</a></span>createRenderTarget()</h2>
+<a id="a9acb50cef2c6010dbee22bae8bad41b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9acb50cef2c6010dbee22bae8bad41b7">&#9670;&nbsp;</a></span>createRenderTarget()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -509,6 +509,12 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>frag</b></td>
           <td></td>
           <td class="paramtype">QSize&#160;</td>
           <td class="paramname"><em>sz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>samples</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
