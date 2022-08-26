@@ -1,5 +1,7 @@
 var NAVTREEINDEX30 =
 {
+"class_scenario_1_1_command_1_1_merge_events.html#aa29dea4f57e47e0f99bc432f917aa626":[12,0,45,0,51,3],
+"class_scenario_1_1_command_1_1_merge_events.html#aae62933f1d770bb24b41b62be37d6c13":[12,0,45,0,51,1],
 "class_scenario_1_1_command_1_1_merge_layer_in_slot.html":[12,0,45,0,52],
 "class_scenario_1_1_command_1_1_merge_layer_in_slot.html#ab7a6af5450516cc45ff93e90f73d6028":[12,0,45,0,52,0],
 "class_scenario_1_1_command_1_1_merge_slots.html":[12,0,45,0,53],
@@ -247,7 +249,5 @@ var NAVTREEINDEX30 =
 "class_scenario_1_1_command_1_1_set_rigidity.html#a767c9b987cbbb826b4388baa0f46edbb":[12,0,45,0,97,4],
 "class_scenario_1_1_command_1_1_set_rigidity.html#ada6fcddb0992c8d00505be5ec4355c09":[12,0,45,0,97,3],
 "class_scenario_1_1_command_1_1_set_time_signatures.html":[12,0,45,0,98],
-"class_scenario_1_1_command_1_1_set_time_signatures.html#a31bdd1c69117fe48b1a208608358d763":[12,0,45,0,98,0],
-"class_scenario_1_1_command_1_1_set_time_signatures.html#a5201deb483cf31113f337e7a117f377b":[12,0,45,0,98,4],
-"class_scenario_1_1_command_1_1_set_time_signatures.html#a71c762bad2df4f99d7873d40c4bb9aaf":[12,0,45,0,98,2]
+"class_scenario_1_1_command_1_1_set_time_signatures.html#a31bdd1c69117fe48b1a208608358d763":[12,0,45,0,98,0]
 };

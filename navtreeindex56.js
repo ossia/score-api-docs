@@ -1,5 +1,8 @@
 var NAVTREEINDEX56 =
 {
+"struct_execution_1_1_setup_context.html#ac8617b62613464d03702f35766a19f1e":[12,0,11,42,2],
+"struct_execution_1_1_setup_context.html#aca50f72b15029e50d33847ba55fe8559":[12,0,11,42,3],
+"struct_execution_1_1_setup_context.html#add10550912599b7430b409e219263ee0":[12,0,11,42,6],
 "struct_execution_1_1_setup_context.html#af0f53687b3c1151a3cc681df131d596d":[12,0,11,42,8],
 "struct_execution_1_1_setup_context_1_1_registered_ports.html":[12,0,11,42,0],
 "struct_execution_1_1_setup_context_1_1_registered_ports.html#a4d9f676d5132b94237d26183d8ddeecf":[12,0,11,42,0,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX56 =
 "struct_gfx_1_1_video_1_1_presenter_1_1_port.html#a0c02eb2940bce59a2f3d6ac2e2b6730d":[12,0,17,7,5,0,0],
 "struct_gfx_1_1_video_1_1_presenter_1_1_port.html#a2ceea7b131af2969f242aa07e9446667":[12,0,17,7,5,0,1],
 "struct_gfx_1_1_video_1_1_presenter_1_1_port.html#ae8b8848e0c01abec6b4ce2f7349a0658":[12,0,17,7,5,0,2],
-"struct_gfx_1_1_window_output_settings.html":[12,0,17,79],
-"struct_gfx_1_1_window_output_settings.html#a640d6f3fcd5ac9b10aa85b6c087cd565":[12,0,17,79,4],
-"struct_gfx_1_1_window_output_settings.html#a7509c51d9a5d310d8dd996dd53074b4d":[12,0,17,79,2],
-"struct_gfx_1_1_window_output_settings.html#a97dbbe9d100b118690ed5b4d5ffd22ad":[12,0,17,79,1]
+"struct_gfx_1_1_window_output_settings.html":[12,0,17,79]
 };

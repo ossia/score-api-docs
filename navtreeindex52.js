@@ -1,5 +1,8 @@
 var NAVTREEINDEX52 =
 {
+"plugins_2score-plugin-spline_2_spline_2_metadata_8hpp_source.html":[13,0,721],
+"plugins_2score-plugin-spline_2_spline_2_presenter_8hpp_source.html":[13,0,927],
+"plugins_2score-plugin-spline_2_spline_2commands_8hpp_source.html":[13,0,172],
 "plugins_2score-plugin-transport_2_transport_2_document_plugin_8hpp_source.html":[13,0,334],
 "plugins_2score-plugin-vst3_2_vst3_2_u_i_2_window_8hpp_source.html":[13,0,1420],
 "plugins_2score-plugin-vst3_2_vst3_2commands_8hpp_source.html":[13,0,175],
@@ -246,8 +249,5 @@ var NAVTREEINDEX52 =
 "struct_analysis_1_1_peak.html#a843a2c42b800077f0b3787f20dd878af":[12,0,0,10,1],
 "struct_analysis_1_1_peak.html#ac0d9d21c59c0d6a883843c4e3982ebec":[12,0,0,10,2],
 "struct_analysis_1_1_peak_1_1_metadata.html":[12,0,0,10,0],
-"struct_analysis_1_1_pitch.html":[12,0,0,11],
-"struct_analysis_1_1_pitch.html#a6131e1342bff2ae749ebb938ec4aecda":[12,0,0,11,2],
-"struct_analysis_1_1_pitch.html#ab2d3dc8244f67f602b572fcdf8e00668":[12,0,0,11,1],
-"struct_analysis_1_1_pitch_1_1_metadata.html":[12,0,0,11,0]
+"struct_analysis_1_1_pitch.html":[12,0,0,11]
 };

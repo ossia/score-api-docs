@@ -1,5 +1,8 @@
 var NAVTREEINDEX51 =
 {
+"classvst_1_1_application_plugin.html#a6559e287cb70e1c140f27ee09e1c949b":[12,0,55,0,15],
+"classvst_1_1_application_plugin.html#a811bf1d388169a5acdd282bb250fb163":[12,0,55,0,16],
+"classvst_1_1_application_plugin.html#a8332bfec3efc032079355c12978b3720":[12,0,55,0,7],
 "classvst_1_1_application_plugin.html#a8b58e991041a983454a25dd798bbfa17":[12,0,55,0,4],
 "classvst_1_1_application_plugin.html#a9a2032a2da62e96a5950d4c8ffa924b5":[12,0,55,0,17],
 "classvst_1_1_application_plugin.html#a9efef5b50173febe54ca62f96d248354":[12,0,55,0,8],
@@ -114,8 +117,8 @@ var NAVTREEINDEX51 =
 "data_structures_8hpp_source.html":[13,0,278],
 "element_finding_helper_8hpp_source.html":[13,0,373],
 "files.html":[13,0],
-"functions.html":[12,3,0,0],
 "functions.html":[12,3,0],
+"functions.html":[12,3,0,0],
 "functions_c.html":[12,3,0,1],
 "functions_d.html":[12,3,0,2],
 "functions_e.html":[12,3,0,3],
@@ -183,8 +186,8 @@ var NAVTREEINDEX51 =
 "namespace_curve.html":[11,0,1],
 "namespace_device.html":[12,0,9],
 "namespace_device.html":[11,0,2],
-"namespace_engine.html":[11,0,3],
 "namespace_engine.html":[12,0,10],
+"namespace_engine.html":[11,0,3],
 "namespace_engine_1_1_network.html":[11,0,3,0],
 "namespace_execution.html":[12,0,11],
 "namespace_execution.html":[11,0,4],
@@ -192,8 +195,8 @@ var NAVTREEINDEX51 =
 "namespace_gfx.html":[11,0,5],
 "namespace_inspector.html":[11,0,6],
 "namespace_inspector.html":[12,0,19],
-"namespace_local_tree.html":[11,0,7],
 "namespace_local_tree.html":[12,0,26],
+"namespace_local_tree.html":[11,0,7],
 "namespace_plugin_loader.html":[11,0,8],
 "namespace_process.html":[12,0,39],
 "namespace_process.html":[11,0,9],
@@ -246,8 +249,5 @@ var NAVTREEINDEX51 =
 "plugins_2score-plugin-remotecontrol_2_remote_control_2_document_plugin_8hpp_source.html":[13,0,333],
 "plugins_2score-plugin-remotecontrol_2_remote_control_2_settings_2_presenter_8hpp_source.html":[13,0,926],
 "plugins_2score-plugin-spline3d_2_spline3_d_2_metadata_8hpp_source.html":[13,0,722],
-"plugins_2score-plugin-spline3d_2_spline3_d_2commands_8hpp_source.html":[13,0,173],
-"plugins_2score-plugin-spline_2_spline_2_metadata_8hpp_source.html":[13,0,721],
-"plugins_2score-plugin-spline_2_spline_2_presenter_8hpp_source.html":[13,0,927],
-"plugins_2score-plugin-spline_2_spline_2commands_8hpp_source.html":[13,0,172]
+"plugins_2score-plugin-spline3d_2_spline3_d_2commands_8hpp_source.html":[13,0,173]
 };

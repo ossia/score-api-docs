@@ -1,5 +1,8 @@
 var NAVTREEINDEX66 =
 {
+"struct_scenario_1_1_scenario_being_copied.html#a46c5d0d2548dab1ce1ecc2521bf7b648":[12,0,45,209,3],
+"struct_scenario_1_1_scenario_being_copied.html#a5c786c3f23f4c7f81ca8991dcbcb0dc1":[12,0,45,209,8],
+"struct_scenario_1_1_scenario_being_copied.html#a5f612164c73d9c87490f8b2998399d59":[12,0,45,209,7],
 "struct_scenario_1_1_scenario_being_copied.html#a698b67a22f78fd057a58bbbed1fd990b":[12,0,45,209,0],
 "struct_scenario_1_1_scenario_being_copied.html#ab100cf4e2924ac0c4b58f8594eecec77":[12,0,45,209,6],
 "struct_scenario_1_1_scenario_being_copied.html#ab5e6ea7982336fae622fe37e87a53733":[12,0,45,209,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX66 =
 "struct_state_1_1_destination_qualifiers.html#ad2a9c604966454cc748fc8698e7611e9":[12,0,50,14,3],
 "struct_state_1_1_domain.html":[12,0,50,16],
 "struct_state_1_1_domain.html#a0f9f01cd833a0dd44e6893cb6677c7a9":[12,0,50,16,1],
-"struct_state_1_1_domain.html#a294edc07406f70672c3e08c6219b6746":[12,0,50,16,7],
-"struct_state_1_1_domain.html#a2cd06b970bcf9b46c5cd95d6b6e4b3f6":[12,0,50,16,0],
-"struct_state_1_1_domain.html#a38fc6e387a56e6cdb81661e0f65bc058":[12,0,50,16,3],
-"struct_state_1_1_domain.html#a3b8ba8928bfdfc2dc93dfbb8d80a61e8":[12,0,50,16,12]
+"struct_state_1_1_domain.html#a294edc07406f70672c3e08c6219b6746":[12,0,50,16,7]
 };

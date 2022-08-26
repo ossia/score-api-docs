@@ -59,6 +59,7 @@ var namespacescore_1_1gfx =
     [ "TexturedQuad", "structscore_1_1gfx_1_1_textured_quad.html", "structscore_1_1gfx_1_1_textured_quad" ],
     [ "TexturedTriangle", "structscore_1_1gfx_1_1_textured_triangle.html", "structscore_1_1gfx_1_1_textured_triangle" ],
     [ "TextureRenderTarget", "structscore_1_1gfx_1_1_texture_render_target.html", "structscore_1_1gfx_1_1_texture_render_target" ],
+    [ "Timings", "structscore_1_1gfx_1_1_timings.html", "structscore_1_1gfx_1_1_timings" ],
     [ "UYVY422Decoder", "structscore_1_1gfx_1_1_u_y_v_y422_decoder.html", "structscore_1_1gfx_1_1_u_y_v_y422_decoder" ],
     [ "VideoFrameReader", "structscore_1_1gfx_1_1_video_frame_reader.html", "structscore_1_1gfx_1_1_video_frame_reader" ],
     [ "VideoFrameShare", "structscore_1_1gfx_1_1_video_frame_share.html", "structscore_1_1gfx_1_1_video_frame_share" ],

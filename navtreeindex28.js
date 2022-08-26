@@ -1,5 +1,7 @@
 var NAVTREEINDEX28 =
 {
+"class_remote_control_1_1_document_plugin.html#a59b224a3712f49d75ac33ab40a976fa3":[12,0,43,3,4],
+"class_remote_control_1_1_document_plugin.html#a8092a28dc442461086fff2111321171a":[12,0,43,3,2],
 "class_remote_control_1_1_document_plugin.html#a997ef81f45032c1469152263d815e63e":[12,0,43,3,6],
 "class_remote_control_1_1_document_plugin.html#adc32e2e41a41d0152d909a7fcbcafbb3":[12,0,43,3,3],
 "class_remote_control_1_1_document_plugin.html#ae0833185d17ba2656a51e2a3dae37072":[12,0,43,3,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX28 =
 "class_scenario_1_1_command_1_1_add_slot_to_rack.html":[12,0,45,0,9],
 "class_scenario_1_1_command_1_1_add_slot_to_rack.html#a13e28a2dbfa4c3e04444b973c1ce214e":[12,0,45,0,9,1],
 "class_scenario_1_1_command_1_1_add_slot_to_rack.html#a5b729d1426f38f6fe35cb98d8f46bfa9":[12,0,45,0,9,2],
-"class_scenario_1_1_command_1_1_add_slot_to_rack.html#a863ec4791d3d804f4391bcfd2f01a808":[12,0,45,0,9,4],
-"class_scenario_1_1_command_1_1_add_slot_to_rack.html#a9ad3ae18cdf1ca5b76dd71ea04319575":[12,0,45,0,9,5],
-"class_scenario_1_1_command_1_1_add_slot_to_rack.html#aa4902503aa55b47bae8f32dd23944fe7":[12,0,45,0,9,3]
+"class_scenario_1_1_command_1_1_add_slot_to_rack.html#a863ec4791d3d804f4391bcfd2f01a808":[12,0,45,0,9,4]
 };
