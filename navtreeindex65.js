@@ -1,5 +1,6 @@
 var NAVTREEINDEX65 =
 {
+"struct_scenario_1_1_address_accessor_curve_creator.html#ad36415faaa544da158bfd3f5829b3029":[12,0,45,3,12],
 "struct_scenario_1_1_address_accessor_curve_creator.html#aee6a212d35b20fde8ff9aeb6e8c511e1":[12,0,45,3,9],
 "struct_scenario_1_1_address_accessor_curve_creator.html#af577383796e5132e09659a4f0faf749f":[12,0,45,3,0],
 "struct_scenario_1_1_address_accessor_curve_creator.html#af98c78aa15b6197a0c5e1e6b8f77cc88":[12,0,45,3,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX65 =
 "struct_scenario_1_1_saved_port.html":[12,0,45,207],
 "struct_scenario_1_1_saved_port.html#a54c008b651fdac16231f74d17d49faf0":[12,0,45,207,2],
 "struct_scenario_1_1_saved_port.html#aa6d000c7aa50d61efcb55a1e50b75d96":[12,0,45,207,0],
-"struct_scenario_1_1_saved_port.html#abc1277ed17325a3a50426a8d96b4fb34":[12,0,45,207,1],
-"struct_scenario_1_1_scenario_being_copied.html":[12,0,45,209]
+"struct_scenario_1_1_saved_port.html#abc1277ed17325a3a50426a8d96b4fb34":[12,0,45,207,1]
 };

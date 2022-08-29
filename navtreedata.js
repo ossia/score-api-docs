@@ -171,19 +171,19 @@ var NAVTREEINDEX =
 "struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html#a1ec962371d6fef7b0b1af6c54d2c0eee",
 "struct_nodes_1_1_pulse_to_note_1_1_node_1_1val__visitor.html#ab41bf1b9a3d10ed0b1cf2c5439973db1",
 "struct_process_1_1_int_spin_box.html#a48b1e21e61ce44485b87831a05357cc6",
-"struct_process_1_1_x_y_z_slider.html#a2a0284c47909b9f572555f0d8a576aed",
-"struct_q_meta_type_id_3_01_scenario_1_1_tool_01_4.html#a6b8a58351a52cd7b18948572dce989b7af57e5c3eff1b3bfb8c9b870cb7dace4a",
-"struct_scenario_1_1_address_accessor_curve_creator.html#aee6a212d35b20fde8ff9aeb6e8c511e1",
-"struct_scenario_1_1_scenario_being_copied.html#a46c5d0d2548dab1ce1ecc2521bf7b648",
-"struct_state_1_1_domain.html#a2cd06b970bcf9b46c5cd95d6b6e4b3f6",
-"struct_time_val.html#a78ff0ddfb9d27c7c53c86b9a51c604ce",
-"structoscr_1_1_deserializer.html#aa70ffb4e06d5e7cfd8f9a98af19fb018",
-"structscore_1_1_application_context.html#ae9a5fb08fd24f276c868a77d7e6465be",
-"structscore_1_1_loaded_plugin_versions.html",
-"structscore_1_1_string_constants.html#a9f38f90c8835392fde27b4943da2d9eb",
-"structscore_1_1gfx_1_1_message.html#ae2bd3fd26629269a887b06a164db7a1b",
-"structscore_1_1gfx_1_1isf__input__port__vis.html#a7c1a48436f3cb73d21c31e81703c60ba",
-"structvst3_1_1_window_container.html#a87121fef9315c3725bd504aa267daf91"
+"struct_process_1_1_x_y_z_slider.html#a1c317afaffc101cf49ae9d17cdbb21a9",
+"struct_q_meta_type_id_3_01_scenario_1_1_tool_01_4.html",
+"struct_scenario_1_1_address_accessor_curve_creator.html#ad36415faaa544da158bfd3f5829b3029",
+"struct_scenario_1_1_scenario_being_copied.html",
+"struct_state_1_1_domain.html#a294edc07406f70672c3e08c6219b6746",
+"struct_time_val.html#a77289968c96057712a6ff2032f1c21df",
+"structoscr_1_1_deserializer.html#a994bec2277afd236890f79771c783c1b",
+"structscore_1_1_application_context.html#ae71a4a7f56ab86bfdb5308ed0bae8d00",
+"structscore_1_1_infinite_scroller.html",
+"structscore_1_1_string_constants.html#a9f00d4eae683d08719cd1d22c39745bd",
+"structscore_1_1gfx_1_1_message.html#a7b93fc408334cf04822ae3ffed7e82b4",
+"structscore_1_1gfx_1_1isf__input__port__vis.html#a552c62ef8c7c27e726a57b5da0f8c345",
+"structvst3_1_1_window_container.html#a6e7395c9189c5acdd6ca8db915cb27c9"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

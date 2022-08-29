@@ -1,5 +1,6 @@
 var NAVTREEINDEX66 =
 {
+"struct_scenario_1_1_scenario_being_copied.html":[12,0,45,209],
 "struct_scenario_1_1_scenario_being_copied.html#a46c5d0d2548dab1ce1ecc2521bf7b648":[12,0,45,209,3],
 "struct_scenario_1_1_scenario_being_copied.html#a5c786c3f23f4c7f81ca8991dcbcb0dc1":[12,0,45,209,8],
 "struct_scenario_1_1_scenario_being_copied.html#a5f612164c73d9c87490f8b2998399d59":[12,0,45,209,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX66 =
 "struct_state_1_1_destination_qualifiers.html#a9cdb9c87a5aa0158ca5fb041886acb95":[12,0,50,14,5],
 "struct_state_1_1_destination_qualifiers.html#ad2a9c604966454cc748fc8698e7611e9":[12,0,50,14,3],
 "struct_state_1_1_domain.html":[12,0,50,16],
-"struct_state_1_1_domain.html#a0f9f01cd833a0dd44e6893cb6677c7a9":[12,0,50,16,1],
-"struct_state_1_1_domain.html#a294edc07406f70672c3e08c6219b6746":[12,0,50,16,7]
+"struct_state_1_1_domain.html#a0f9f01cd833a0dd44e6893cb6677c7a9":[12,0,50,16,1]
 };
