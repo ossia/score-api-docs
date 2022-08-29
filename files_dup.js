@@ -902,6 +902,7 @@ var files_dup =
     [ "PluginItemModel.hpp", "_plugin_item_model_8hpp_source.html", null ],
     [ "PluginManager.hpp", "_plugin_manager_8hpp_source.html", null ],
     [ "PluginRequirements_QtInterface.hpp", "_plugin_requirements___qt_interface_8hpp_source.html", null ],
+    [ "PluginWindow.hpp", "_plugin_window_8hpp_source.html", null ],
     [ "PointArraySegment.hpp", "_point_array_segment_8hpp_source.html", null ],
     [ "Pointer.hpp", "_pointer_8hpp_source.html", null ],
     [ "score-lib-process/Process/Dataflow/Port.hpp", "score-lib-process_2_process_2_dataflow_2_port_8hpp_source.html", null ],

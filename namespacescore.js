@@ -199,6 +199,7 @@ var namespacescore =
     [ "PathInfo", "structscore_1_1_path_info.html", "structscore_1_1_path_info" ],
     [ "Plugin", "structscore_1_1_plugin.html", null ],
     [ "Plugin_QtInterface", "classscore_1_1_plugin___qt_interface.html", "classscore_1_1_plugin___qt_interface" ],
+    [ "PluginWindow", "classscore_1_1_plugin_window.html", "classscore_1_1_plugin_window" ],
     [ "PolymorphicComponentHierarchyManager", "classscore_1_1_polymorphic_component_hierarchy_manager.html", "classscore_1_1_polymorphic_component_hierarchy_manager" ],
     [ "PositionedEvent", "structscore_1_1_positioned_event.html", "structscore_1_1_positioned_event" ],
     [ "PositionedEvent< Scenario::Point >", "structscore_1_1_positioned_event_3_01_scenario_1_1_point_01_4.html", "structscore_1_1_positioned_event_3_01_scenario_1_1_point_01_4" ],

@@ -1,5 +1,13 @@
 var NAVTREEINDEX59 =
 {
+"struct_media_1_1_frame_computer.html#a4bb4fcc22249eb342dcff68282f74075":[12,0,29,14,6],
+"struct_media_1_1_frame_computer.html#a8e803d0d798559d7dc6e8019f30e7d21":[12,0,29,14,1],
+"struct_media_1_1_frame_computer.html#adeeb9a4b96ec8dd3c660d6e89c7cb3d0":[12,0,29,14,2],
+"struct_media_1_1_frame_computer.html#ae1e677f8966bdc5880342d4c2efdc55c":[12,0,29,14,3],
+"struct_media_1_1_frame_computer.html#af9326dfc3103436fcf645891a9e6f0a6":[12,0,29,14,5],
+"struct_media_1_1_r_m_s_data.html":[12,0,29,16],
+"struct_media_1_1_r_m_s_data.html#a1689646b80ca5aad92ee38529bda220c":[12,0,29,16,13],
+"struct_media_1_1_r_m_s_data.html#a2faa96880370d4c9e4e5f44556ea8ffe":[12,0,29,16,8],
 "struct_media_1_1_r_m_s_data.html#a348605bc57b0478d0affe504eb6888b0":[12,0,29,16,9],
 "struct_media_1_1_r_m_s_data.html#a3eff5121a57e3b03b86f56987d11f76b":[12,0,29,16,2],
 "struct_media_1_1_r_m_s_data.html#a475b629d05622c3cecd08f91477510bc":[12,0,29,16,7],
@@ -241,13 +249,5 @@ var NAVTREEINDEX59 =
 "struct_nodal_1_1_nodal_executor_base_1_1_registered_node.html":[12,0,32,6,0],
 "struct_nodal_1_1_nodal_executor_base_1_1_registered_node.html#a75d6c920fd0493d9388a36ba2e1b2f25":[12,0,32,6,0,0],
 "struct_nodes_1_1_arpeggiator_1_1_node.html":[12,0,33,0,0],
-"struct_nodes_1_1_arpeggiator_1_1_node.html#a5024d738a39e914a81d580a9be1b0c4b":[12,0,33,0,0,2],
-"struct_nodes_1_1_arpeggiator_1_1_node.html#ad4dce0e25db95343157ffaf4a86e0507":[12,0,33,0,0,3],
-"struct_nodes_1_1_arpeggiator_1_1_node.html#aeb2c6f15510b310d4c70bb985bf9ea0b":[12,0,33,0,0,4],
-"struct_nodes_1_1_arpeggiator_1_1_node_1_1_metadata.html":[12,0,33,0,0,0],
-"struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html":[12,0,33,0,0,1],
-"struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html#a0453ae6a552ff8339c687c4862cf9eac":[12,0,33,0,0,1,1],
-"struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html#a102c7bcc442b2f748b79fdcc39e6a4f9":[12,0,33,0,0,1,6],
-"struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html#a1640943ea4847e6de8c5d5a4c108b026":[12,0,33,0,0,1,2],
-"struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html#a19d482122a078b378b0bb674c7f0e98b":[12,0,33,0,0,1,3]
+"struct_nodes_1_1_arpeggiator_1_1_node.html#a5024d738a39e914a81d580a9be1b0c4b":[12,0,33,0,0,2]
 };

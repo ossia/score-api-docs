@@ -108,6 +108,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a621888723592aacd1bf897795c73b7d4"><td class="memItemLeft" align="right" valign="top"><a id="a621888723592aacd1bf897795c73b7d4"></a>
 Lilv::Node&#160;</td><td class="memItemRight" valign="bottom"><b>make_node</b> (const char *desc)</td></tr>
 <tr class="separator:a621888723592aacd1bf897795c73b7d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07d865f492b2845eb101d2318baef79d"><td class="memItemLeft" align="right" valign="top"><a id="a07d865f492b2845eb101d2318baef79d"></a>
+std::vector&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>acquire_worker_data</b> (const char *data, uint32_t s) noexcept</td></tr>
+<tr class="separator:a07d865f492b2845eb101d2318baef79d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8af1df6f437563d2deb6addf1b227dd9"><td class="memItemLeft" align="right" valign="top"><a id="a8af1df6f437563d2deb6addf1b227dd9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>release_worker_data</b> (std::vector&lt; char &gt; &amp;&amp;v) noexcept</td></tr>
+<tr class="separator:a8af1df6f437563d2deb6addf1b227dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -261,6 +267,9 @@ LV2_URID&#160;</td><td class="memItemRight" valign="bottom"><b>time_framesPerSec
 <tr class="memitem:a0a2a8ab2a9741a403829cc527ffd6747"><td class="memItemLeft" align="right" valign="top"><a id="a0a2a8ab2a9741a403829cc527ffd6747"></a>
 LV2_URID&#160;</td><td class="memItemRight" valign="bottom"><b>time_speed_id</b> {}</td></tr>
 <tr class="separator:a0a2a8ab2a9741a403829cc527ffd6747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b59ae85575a691d3a74596211604cad"><td class="memItemLeft" align="right" valign="top"><a id="a7b59ae85575a691d3a74596211604cad"></a>
+ossia::mpmc_queue&lt; std::vector&lt; char &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>worker_datas_pool</b> {}</td></tr>
+<tr class="separator:a7b59ae85575a691d3a74596211604cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_context_8hpp_source.html">Context.hpp</a></li>

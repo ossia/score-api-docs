@@ -104,8 +104,8 @@ $(document).ready(function(){initNavTree('plugins_2score-plugin-vst3_2_vst3_2_u_
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Vst3/UI/WindowContainer.hpp&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;score/application/ApplicationContext.hpp&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QDialog&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;score/widgets/PluginWindow.hpp&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QResizeEvent&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;QWindow&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('plugins_2score-plugin-vst3_2_vst3_2_u_
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;WindowContainer createVstWindowContainer(</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Window&amp; parentWindow, <span class="keyword">const</span> Model&amp; e, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classvst3_1_1_window.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvst3_1_1_window.html">Window</a> : <span class="keyword">public</span> QDialog</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classvst3_1_1_window.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvst3_1_1_window.html">Window</a> : <span class="keyword">public</span> <a class="code" href="classscore_1_1_plugin_window.html">score::PluginWindow</a></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">const</span> <a class="code" href="classvst3_1_1_model.html">Model</a>&amp; m_model;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <a class="code" href="structvst3_1_1_window_container.html">WindowContainer</a> container;</div>
@@ -135,6 +135,7 @@ $(document).ready(function(){initNavTree('plugins_2score-plugin-vst3_2_vst3_2_u_
 <div class="ttc" id="aclassvst3_1_1_window_html"><div class="ttname"><a href="classvst3_1_1_window.html">vst3::Window</a></div><div class="ttdef"><b>Definition:</b> plugins/score-plugin-vst3/Vst3/UI/Window.hpp:20</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
 <div class="ttc" id="astructvst3_1_1_window_container_html"><div class="ttname"><a href="structvst3_1_1_window_container.html">vst3::WindowContainer</a></div><div class="ttdef"><b>Definition:</b> WindowContainer.hpp:25</div></div>
+<div class="ttc" id="aclassscore_1_1_plugin_window_html"><div class="ttname"><a href="classscore_1_1_plugin_window.html">score::PluginWindow</a></div><div class="ttdef"><b>Definition:</b> PluginWindow.hpp:8</div></div>
 <div class="ttc" id="aclassvst3_1_1_model_html"><div class="ttname"><a href="classvst3_1_1_model.html">vst3::Model</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst3/Vst3/EffectModel.hpp:39</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

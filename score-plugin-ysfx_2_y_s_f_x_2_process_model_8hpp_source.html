@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('score-plugin-ysfx_2_y_s_f_x_2_process_
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;YSFX/ProcessMetadata.hpp&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;ysfx.h&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QDialog&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;score/widgets/PluginWindow.hpp&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;score_plugin_ysfx_export.h&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('score-plugin-ysfx_2_y_s_f_x_2_process_
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  QString m_script;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_y_s_f_x_1_1_window.html">   53</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_y_s_f_x_1_1_window.html">Window</a> : <span class="keyword">public</span> QDialog</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_y_s_f_x_1_1_window.html">   53</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_y_s_f_x_1_1_window.html">Window</a> : <span class="keyword">public</span> <a class="code" href="classscore_1_1_plugin_window.html">score::PluginWindow</a></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="class_y_s_f_x_1_1_window.html">Window</a>(<span class="keyword">const</span> <a class="code" href="class_y_s_f_x_1_1_process_model.html">ProcessModel</a>&amp; e, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx, QWidget* parent);</div>
@@ -173,7 +173,7 @@ $(document).ready(function(){initNavTree('score-plugin-ysfx_2_y_s_f_x_2_process_
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> keyPressEvent(QKeyEvent* event) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> keyReleaseEvent(QKeyEvent* event) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span> paintEvent(QPaintEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">void</span> timerEvent(QTimerEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">void</span> refreshTimer();</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">using</span> <a class="code" href="class_process_1_1_effect_layer_factory___t.html">LayerFactory</a></div>
@@ -187,6 +187,7 @@ $(document).ready(function(){initNavTree('score-plugin-ysfx_2_y_s_f_x_2_process_
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition:</b> Identifier.hpp:56</div></div>
 <div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Process.hpp:54</div></div>
+<div class="ttc" id="aclassscore_1_1_plugin_window_html"><div class="ttname"><a href="classscore_1_1_plugin_window.html">score::PluginWindow</a></div><div class="ttdef"><b>Definition:</b> PluginWindow.hpp:8</div></div>
 <div class="ttc" id="astruct_process_1_1_preset_html"><div class="ttname"><a href="struct_process_1_1_preset.html">Process::Preset</a></div><div class="ttdef"><b>Definition:</b> Preset.hpp:31</div></div>
 <div class="ttc" id="aclass_y_s_f_x_1_1_window_html"><div class="ttname"><a href="class_y_s_f_x_1_1_window.html">YSFX::Window</a></div><div class="ttdef"><b>Definition:</b> score-plugin-ysfx/YSFX/ProcessModel.hpp:53</div></div>
 <div class="ttc" id="aclass_process_1_1_effect_layer_factory___t_html"><div class="ttname"><a href="class_process_1_1_effect_layer_factory___t.html">Process::EffectLayerFactory_T</a></div><div class="ttdef"><b>Definition:</b> EffectFactory.hpp:65</div></div>

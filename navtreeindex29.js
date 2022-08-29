@@ -1,5 +1,6 @@
 var NAVTREEINDEX29 =
 {
+"class_scenario_1_1_command_1_1_add_slot_to_rack.html#a863ec4791d3d804f4391bcfd2f01a808":[12,0,45,0,9,4],
 "class_scenario_1_1_command_1_1_add_slot_to_rack.html#a9ad3ae18cdf1ca5b76dd71ea04319575":[12,0,45,0,9,5],
 "class_scenario_1_1_command_1_1_add_slot_to_rack.html#aa4902503aa55b47bae8f32dd23944fe7":[12,0,45,0,9,3],
 "class_scenario_1_1_command_1_1_add_slot_to_rack.html#ad1aefec969f871d6f2b91146bb13e6ac":[12,0,45,0,9,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX29 =
 "class_scenario_1_1_command_1_1_merge_events.html":[12,0,45,0,51],
 "class_scenario_1_1_command_1_1_merge_events.html#a322abc0c02d8276bc07fe2938b88b999":[12,0,45,0,51,4],
 "class_scenario_1_1_command_1_1_merge_events.html#a4503b1ea24e92864d1d239c68ad789e3":[12,0,45,0,51,2],
-"class_scenario_1_1_command_1_1_merge_events.html#a6a112452017060cbedd0fca1354f78d1":[12,0,45,0,51,0],
-"class_scenario_1_1_command_1_1_merge_events.html#a9f751bf73f532432e3a18d3e1aa308c7":[12,0,45,0,51,5]
+"class_scenario_1_1_command_1_1_merge_events.html#a6a112452017060cbedd0fca1354f78d1":[12,0,45,0,51,0]
 };

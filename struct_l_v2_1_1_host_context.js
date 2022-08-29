@@ -1,6 +1,8 @@
 var struct_l_v2_1_1_host_context =
 [
+    [ "acquire_worker_data", "struct_l_v2_1_1_host_context.html#a07d865f492b2845eb101d2318baef79d", null ],
     [ "make_node", "struct_l_v2_1_1_host_context.html#a621888723592aacd1bf897795c73b7d4", null ],
+    [ "release_worker_data", "struct_l_v2_1_1_host_context.html#a8af1df6f437563d2deb6addf1b227dd9", null ],
     [ "atom_chunk_id", "struct_l_v2_1_1_host_context.html#a8fc61470e59403781ac69ad64d21b94e", null ],
     [ "atom_class", "struct_l_v2_1_1_host_context.html#aaff7afb8756a734ca1282465c0a58113", null ],
     [ "atom_eventTransfer", "struct_l_v2_1_1_host_context.html#a3afd33d679e209a93b2e809539f16a82", null ],
@@ -50,5 +52,6 @@ var struct_l_v2_1_1_host_context =
     [ "time_Time_id", "struct_l_v2_1_1_host_context.html#a0964f807a1233cfaf20747958ff1c492", null ],
     [ "work_interface", "struct_l_v2_1_1_host_context.html#a0d0ea595684705aaa67e51d446191e27", null ],
     [ "work_schedule", "struct_l_v2_1_1_host_context.html#ae2a43e71c03c301a90a78d6acf903650", null ],
+    [ "worker_datas_pool", "struct_l_v2_1_1_host_context.html#a7b59ae85575a691d3a74596211604cad", null ],
     [ "world", "struct_l_v2_1_1_host_context.html#ac59e02dc9878eebce20d842e4108caaf", null ]
 ];

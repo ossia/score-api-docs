@@ -1,5 +1,6 @@
 var NAVTREEINDEX22 =
 {
+"class_mixer_1_1_audio_slider_widget.html#ad61f3f74d21131a68e2bade54ab2e81f":[12,0,31,2,0],
 "class_mixer_1_1_mixer_panel.html":[12,0,31,3],
 "class_mixer_1_1_mixer_panel.html#a23f63ea83c7abd06c29c7433192ee5cf":[12,0,31,3,26],
 "class_mixer_1_1_mixer_panel.html#a258fb743db8ef5c73a1dd01f6933b878":[12,0,31,3,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX22 =
 "class_path.html#a8714f126861b816502889d8d7b8dcfae":[12,0,207,26],
 "class_path.html#a88ea63a6e57757446d9fa2571bf90157":[12,0,207,30],
 "class_path.html#a8e73973c27d3cfdbd52fba03c2aa0caa":[12,0,207,23],
-"class_path.html#a984cfa446a0446f4ac7eafff20f151f8":[12,0,207,5],
-"class_path.html#a99e688aedc6e75169c3c5a3f96aca69b":[12,0,207,27]
+"class_path.html#a984cfa446a0446f4ac7eafff20f151f8":[12,0,207,5]
 };

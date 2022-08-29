@@ -1,5 +1,13 @@
 var NAVTREEINDEX61 =
 {
+"struct_nodes_1_1_pulse_to_note_1_1_node_1_1val__visitor.html":[12,0,33,24,0,3],
+"struct_nodes_1_1_pulse_to_note_1_1_node_1_1val__visitor.html#a055465d23fd7925166d74d3a0ddd9635":[12,0,33,24,0,3,4],
+"struct_nodes_1_1_pulse_to_note_1_1_node_1_1val__visitor.html#a4280345296ca4de2c22085895542af8d":[12,0,33,24,0,3,2],
+"struct_nodes_1_1_pulse_to_note_1_1_node_1_1val__visitor.html#a51e347ffab1d54415050cfd7fcc0a0d3":[12,0,33,24,0,3,9],
+"struct_nodes_1_1_pulse_to_note_1_1_node_1_1val__visitor.html#a7997806ecf8b1d098945de7f81ac891c":[12,0,33,24,0,3,1],
+"struct_nodes_1_1_pulse_to_note_1_1_node_1_1val__visitor.html#a7d1b63af8064de038678efde9159a3b3":[12,0,33,24,0,3,12],
+"struct_nodes_1_1_pulse_to_note_1_1_node_1_1val__visitor.html#a9f8dd760095960a5a054f3d943696530":[12,0,33,24,0,3,11],
+"struct_nodes_1_1_pulse_to_note_1_1_node_1_1val__visitor.html#aaec449445fd98a5133f87c4257509712":[12,0,33,24,0,3,10],
 "struct_nodes_1_1_pulse_to_note_1_1_node_1_1val__visitor.html#ab41bf1b9a3d10ed0b1cf2c5439973db1":[12,0,33,24,0,3,3],
 "struct_nodes_1_1_pulse_to_note_1_1_node_1_1val__visitor.html#ad27a78083d818145f9769d0da5855963":[12,0,33,24,0,3,5],
 "struct_nodes_1_1_pulse_to_note_1_1_node_1_1val__visitor.html#ad9d8ed10dcf4495360891fca618b9c52":[12,0,33,24,0,3,6],
@@ -241,13 +249,5 @@ var NAVTREEINDEX61 =
 "struct_process_1_1_h_s_v_slider.html#ac951dc0a7f3d209acc666e8f0bd5ca29":[12,0,39,40,0],
 "struct_process_1_1_impulse_button.html":[12,0,39,41],
 "struct_process_1_1_impulse_button.html#a04a715594d0809c9d6f1ead371a8c38a":[12,0,39,41,1],
-"struct_process_1_1_impulse_button.html#aa85dce555c44dbe473f99ce29dd6f4c3":[12,0,39,41,2],
-"struct_process_1_1_impulse_button.html#abc0820cfaad46c4b565091a5f3f00d38":[12,0,39,41,0],
-"struct_process_1_1_int_slider.html":[12,0,39,48],
-"struct_process_1_1_int_slider.html#a3185aa288f8120bb5e755a5bc39e6439":[12,0,39,48,0],
-"struct_process_1_1_int_slider.html#a3a0c527a34f88f8bf8e82e1f4410e176":[12,0,39,48,4],
-"struct_process_1_1_int_slider.html#a7c9aa76059f2e357a5618f194cf4e994":[12,0,39,48,2],
-"struct_process_1_1_int_slider.html#a95843b491b0baf029d5ec79168f74911":[12,0,39,48,1],
-"struct_process_1_1_int_slider.html#af6ef1475f32358548f2e2788461cfff8":[12,0,39,48,3],
-"struct_process_1_1_int_spin_box.html":[12,0,39,49]
+"struct_process_1_1_impulse_button.html#aa85dce555c44dbe473f99ce29dd6f4c3":[12,0,39,41,2]
 };
