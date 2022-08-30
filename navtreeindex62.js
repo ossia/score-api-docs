@@ -1,5 +1,6 @@
 var NAVTREEINDEX62 =
 {
+"struct_process_1_1_enum.html#af54c84714d812849d99501e98a6c726f":[12,0,39,33,4],
 "struct_process_1_1_float_knob.html":[12,0,39,34],
 "struct_process_1_1_float_knob.html#a47607e3ae279b4b91ebec9ec62b30a11":[12,0,39,34,1],
 "struct_process_1_1_float_knob.html#a4d03a4088f8b8af060457bb8c5faefbc":[12,0,39,34,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX62 =
 "struct_process_1_1_style.html#ad2f78e0b22290dc97144f5e338840716":[12,0,39,105,54],
 "struct_process_1_1_style.html#ad855db4a627df6774ab3963013cb55c0":[12,0,39,105,72],
 "struct_process_1_1_style.html#ad8e9901f5057b59f440894a6bd41cca2":[12,0,39,105,44],
-"struct_process_1_1_style.html#ada76c8cce956bf4d86ea9c16b0b66edd":[12,0,39,105,58],
-"struct_process_1_1_style.html#adda148d15b13820c80295820c434437d":[12,0,39,105,5]
+"struct_process_1_1_style.html#ada76c8cce956bf4d86ea9c16b0b66edd":[12,0,39,105,58]
 };

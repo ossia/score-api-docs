@@ -1,5 +1,6 @@
 var NAVTREEINDEX38 =
 {
+"class_scenario_1_1_time_ruler_base.html#a7b20776832220dcc3531c02f0710084b":[12,0,45,286,15],
 "class_scenario_1_1_time_ruler_base.html#a87ab69d0074140558b9ed2624c4c075b":[12,0,45,286,5],
 "class_scenario_1_1_time_ruler_base.html#a9db13575401a573ab1623fac99b51d87":[12,0,45,286,6],
 "class_scenario_1_1_time_ruler_base.html#ab10e8a5017edc6f9789f32223b1acf27":[12,0,45,286,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX38 =
 "class_selection.html#af4e5f9903ed90781fd5250f88caf8c72":[12,0,380,5],
 "class_selection_button.html":[12,0,381],
 "class_selection_button.html#ab97d340bcb1f522432ae3d89bfdcc4be":[12,0,381,0],
-"class_show_rack_in_view_model_test.html":[12,0,384],
-"class_simple_hierarchical_scenario_component.html":[12,0,386]
+"class_show_rack_in_view_model_test.html":[12,0,384]
 };

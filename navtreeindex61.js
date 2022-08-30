@@ -1,5 +1,6 @@
 var NAVTREEINDEX61 =
 {
+"struct_nodes_1_1_midi_hi_res_1_1_output_1_1_metadata.html":[12,0,33,21,1,0],
 "struct_nodes_1_1_midi_util_1_1_node.html":[12,0,33,22,0],
 "struct_nodes_1_1_midi_util_1_1_node.html#aed8866dc42a7184de254ae358cd9f3f0":[12,0,33,22,0,2],
 "struct_nodes_1_1_midi_util_1_1_node_1_1_metadata.html":[12,0,33,22,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX61 =
 "struct_process_1_1_enum.html#aa8da6534b07c9a5ee67e215fa5087b05":[12,0,39,33,2],
 "struct_process_1_1_enum.html#aad42fb0525905d5254edb1fec138e4c3":[12,0,39,33,10],
 "struct_process_1_1_enum.html#abef0274da8df8640da4de070d21f025a":[12,0,39,33,5],
-"struct_process_1_1_enum.html#ac97be1dba7aef64e93c1fd86a09f5975":[12,0,39,33,8],
-"struct_process_1_1_enum.html#af54c84714d812849d99501e98a6c726f":[12,0,39,33,4]
+"struct_process_1_1_enum.html#ac97be1dba7aef64e93c1fd86a09f5975":[12,0,39,33,8]
 };

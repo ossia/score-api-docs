@@ -1,5 +1,6 @@
 var NAVTREEINDEX21 =
 {
+"class_media_1_1_sound_1_1_layer_view.html#a48e1e7a06e2290c1bc5603d45e9b3f23":[12,0,29,3,7,5],
 "class_media_1_1_sound_1_1_layer_view.html#a515d76e2dbcd6c105c8a7d3cc41351dc":[12,0,29,3,7,1],
 "class_media_1_1_sound_1_1_layer_view.html#a5c17bc4bd2096b078e2cf1ad72d5bacc":[12,0,29,3,7,4],
 "class_media_1_1_sound_1_1_layer_view.html#a781adb4c2adf6bb7b6f10995cfee0ce0":[12,0,29,3,7,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX21 =
 "class_midi_outlet.html#acfc56d495efce6ae4d466808cb33382c":[12,0,177,8],
 "class_midi_outlet.html#ae264e89e6ce6be08a547d6fc6aa60bb9":[12,0,177,0],
 "class_midi_outlet.html#af3bbd7de1aa7b5b571bf1bdc40f7f9b1":[12,0,177,5],
-"class_mixer_1_1_audio_bus_widget.html":[12,0,31,0],
-"class_mixer_1_1_audio_bus_widget.html#ac1ba4642944eb98ded929fc8596acf1f":[12,0,31,0,1]
+"class_mixer_1_1_audio_bus_widget.html":[12,0,31,0]
 };

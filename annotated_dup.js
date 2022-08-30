@@ -632,6 +632,7 @@ var annotated_dup =
       [ "InletInitFunc", "structoscr_1_1_inlet_init_func.html", "structoscr_1_1_inlet_init_func" ],
       [ "LayerFactory", "classoscr_1_1_layer_factory.html", "classoscr_1_1_layer_factory" ],
       [ "LayoutBuilder", "structoscr_1_1_layout_builder.html", "structoscr_1_1_layout_builder" ],
+      [ "Logger", "structoscr_1_1_logger.html", "structoscr_1_1_logger" ],
       [ "MatchingWidget", "structoscr_1_1_matching_widget.html", "structoscr_1_1_matching_widget" ],
       [ "MatchingWidget< Field >", "structoscr_1_1_matching_widget_3_01_field_01_4.html", "structoscr_1_1_matching_widget_3_01_field_01_4" ],
       [ "MessageBusReader", "structoscr_1_1_message_bus_reader.html", "structoscr_1_1_message_bus_reader" ],

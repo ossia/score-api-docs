@@ -673,6 +673,7 @@ var files_dup =
     [ "score-plugin-mapping/Mapping/LocalTree.hpp", "score-plugin-mapping_2_mapping_2_local_tree_8hpp_source.html", null ],
     [ "LocalTreeComponent.hpp", "_local_tree_component_8hpp_source.html", null ],
     [ "LocalTreeDocumentPlugin.hpp", "_local_tree_document_plugin_8hpp_source.html", null ],
+    [ "Logger.hpp", "_logger_8hpp_source.html", null ],
     [ "Looper.hpp", "_looper_8hpp_source.html", null ],
     [ "lv2_atom_helpers.hpp", "lv2__atom__helpers_8hpp_source.html", null ],
     [ "MacroCommandDispatcher.hpp", "_macro_command_dispatcher_8hpp_source.html", null ],
