@@ -1196,7 +1196,7 @@ var annotated_dup =
     [ "QMetaTypeId< Device::DeviceSettings >", "struct_q_meta_type_id_3_01_device_1_1_device_settings_01_4.html", "struct_q_meta_type_id_3_01_device_1_1_device_settings_01_4" ],
     [ "QMetaTypeId< ExpandMode >", "struct_q_meta_type_id_3_01_expand_mode_01_4.html", "struct_q_meta_type_id_3_01_expand_mode_01_4" ],
     [ "QMetaTypeId< Gfx::CameraSettings >", "struct_q_meta_type_id_3_01_gfx_1_1_camera_settings_01_4.html", "struct_q_meta_type_id_3_01_gfx_1_1_camera_settings_01_4" ],
-    [ "QMetaTypeId< Gfx::Kinect2Settings >", "struct_q_meta_type_id_3_01_gfx_1_1_kinect2_settings_01_4.html", "struct_q_meta_type_id_3_01_gfx_1_1_kinect2_settings_01_4" ],
+    [ "QMetaTypeId< Gfx::Kinect2::Kinect2Settings >", "struct_q_meta_type_id_3_01_gfx_1_1_kinect2_1_1_kinect2_settings_01_4.html", "struct_q_meta_type_id_3_01_gfx_1_1_kinect2_1_1_kinect2_settings_01_4" ],
     [ "QMetaTypeId< Gfx::ProcessedProgram >", "struct_q_meta_type_id_3_01_gfx_1_1_processed_program_01_4.html", "struct_q_meta_type_id_3_01_gfx_1_1_processed_program_01_4" ],
     [ "QMetaTypeId< Gfx::ShaderSource >", "struct_q_meta_type_id_3_01_gfx_1_1_shader_source_01_4.html", "struct_q_meta_type_id_3_01_gfx_1_1_shader_source_01_4" ],
     [ "QMetaTypeId< Gfx::SharedInputSettings >", "struct_q_meta_type_id_3_01_gfx_1_1_shared_input_settings_01_4.html", "struct_q_meta_type_id_3_01_gfx_1_1_shared_input_settings_01_4" ],

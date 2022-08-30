@@ -1,5 +1,13 @@
 var NAVTREEINDEX49 =
 {
+"classscore_1_1gfx_1_1_g_p_u_video_decoder.html#ac798b702a346427f64cbe627bc71dd59":[12,0,46,2,12,5],
+"classscore_1_1gfx_1_1_generic_node_renderer.html":[12,0,46,2,10],
+"classscore_1_1gfx_1_1_generic_node_renderer.html#a0171a726574c55cc38b347d71903e246":[12,0,46,2,10,25],
+"classscore_1_1gfx_1_1_generic_node_renderer.html#a0cc07b50e3c6690a0251eb2e41339bac":[12,0,46,2,10,6],
+"classscore_1_1gfx_1_1_generic_node_renderer.html#a0fca596faef22d6638d7cc98ec9fff38":[12,0,46,2,10,21],
+"classscore_1_1gfx_1_1_generic_node_renderer.html#a1a82d36b735c7b8310c93e4115096e34":[12,0,46,2,10,9],
+"classscore_1_1gfx_1_1_generic_node_renderer.html#a4542fdece0191686165f8c0bcc3abd35":[12,0,46,2,10,7],
+"classscore_1_1gfx_1_1_generic_node_renderer.html#a5712f74739f5cdea3227cac749018c86":[12,0,46,2,10,1],
 "classscore_1_1gfx_1_1_generic_node_renderer.html#a60e0650f23d5f7c07cc4c771bf35f602":[12,0,46,2,10,24],
 "classscore_1_1gfx_1_1_generic_node_renderer.html#a68093ad474e3611308426b51c4893acc":[12,0,46,2,10,13],
 "classscore_1_1gfx_1_1_generic_node_renderer.html#a6fb6b8b534b838fcdb31ff7c64ead3f1":[12,0,46,2,10,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX49 =
 "classscore__plugin__faust.html#ac0d9e4dc580d655f354390f68b168d5e":[12,0,352,1],
 "classscore__plugin__fx.html":[12,0,353],
 "classscore__plugin__fx.html#a37257ff9b4548bc5ca906d80ed069ee9":[12,0,353,1],
-"classscore__plugin__fx.html#aeafeaf8c823b2fc067ab32f36702cd6e":[12,0,353,0],
-"classscore__plugin__gfx.html":[12,0,354],
-"classscore__plugin__gfx.html#a916cb1a6328fa1a7f57385ba9143cf5e":[12,0,354,1],
-"classscore__plugin__gfx.html#ad41d961aa4eea0b7e82f3284c584ce8e":[12,0,354,0],
-"classscore__plugin__inspector.html":[12,0,355],
-"classscore__plugin__inspector.html#a1eec94c22774bc41303f0bae2c7bc251":[12,0,355,1],
-"classscore__plugin__inspector.html#a5c6f09628e3a286763625a3d376994b1":[12,0,355,0],
-"classscore__plugin__inspector.html#a6483a4f19dfbeda0cf49775c2a1b7ab3":[12,0,355,3],
-"classscore__plugin__inspector.html#accdbd904cf5f5bdc669ddbbf88dbcc2d":[12,0,355,2]
+"classscore__plugin__fx.html#aeafeaf8c823b2fc067ab32f36702cd6e":[12,0,353,0]
 };

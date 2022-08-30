@@ -1,5 +1,13 @@
 var NAVTREEINDEX55 =
 {
+"struct_dataflow_1_1_midi_outlet_factory.html#a5a7ff4fc4387388445bff04bfc794d57":[12,0,8,28,3],
+"struct_dataflow_1_1_midi_outlet_factory.html#a936dbca13a2f4734998cea765e4d12a7":[12,0,8,28,0],
+"struct_dataflow_1_1_midi_outlet_factory.html#ae7bc957a58b861d69866769dee974b0b":[12,0,8,28,1],
+"struct_dataflow_1_1_min_max_float_outlet_factory.html":[12,0,8,30],
+"struct_dataflow_1_1_min_max_float_outlet_factory.html#a02b2fb0dd1cd5bef187d4980e3fc82f5":[12,0,8,30,4],
+"struct_dataflow_1_1_min_max_float_outlet_factory.html#a1315f6f92e44a53b0ef3f665d6610c95":[12,0,8,30,2],
+"struct_dataflow_1_1_min_max_float_outlet_factory.html#a5c9887b53eb9f91a64832cbce358ff8c":[12,0,8,30,1],
+"struct_dataflow_1_1_min_max_float_outlet_factory.html#a87ee86baf1384562796482abe3da076d":[12,0,8,30,3],
 "struct_dataflow_1_1_min_max_float_outlet_factory.html#a8b598f6f080bfd3305fefcf7b3236a26":[12,0,8,30,0],
 "struct_dataflow_1_1_value_inlet_factory.html":[12,0,8,38],
 "struct_dataflow_1_1_value_inlet_factory.html#aa9feaa427f9083b2272c7c1e2866bbcb":[12,0,8,38,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX55 =
 "struct_execution_1_1_setup_context.html#a15df825d2ca568606a6f9ecf7879d34f":[12,0,11,42,18],
 "struct_execution_1_1_setup_context.html#a172a266df452a2353e002840e5b62167":[12,0,11,42,25],
 "struct_execution_1_1_setup_context.html#a1b93cd9c25abaf647cecbb294e18b0ce":[12,0,11,42,22],
-"struct_execution_1_1_setup_context.html#a1d23ccc096f0e3086ecc04fa5f847f11":[12,0,11,42,29],
-"struct_execution_1_1_setup_context.html#a26bf73772c90a30b01f1bf8d2bfc5893":[12,0,11,42,24],
-"struct_execution_1_1_setup_context.html#a2bc92ffd800d4c880ce60e2313b3d272":[12,0,11,42,4],
-"struct_execution_1_1_setup_context.html#a38f73bbb296e8af379dd4d23ee0e0e3e":[12,0,11,42,11],
-"struct_execution_1_1_setup_context.html#a3bd15520bd171fee7bb81845848fa14c":[12,0,11,42,28],
-"struct_execution_1_1_setup_context.html#a4421ae0e2758bcff6e8a8e65c487b03f":[12,0,11,42,1],
-"struct_execution_1_1_setup_context.html#a47e77a0aa56b5fadb1b929b5cb586e19":[12,0,11,42,9],
-"struct_execution_1_1_setup_context.html#a59297fbdf0a2d2c25eb3ef4a64f2472d":[12,0,11,42,14],
-"struct_execution_1_1_setup_context.html#a6b7198e6d5f2a5c3aef1a2da1e04b1d4":[12,0,11,42,20]
+"struct_execution_1_1_setup_context.html#a1d23ccc096f0e3086ecc04fa5f847f11":[12,0,11,42,29]
 };

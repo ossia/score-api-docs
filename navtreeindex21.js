@@ -1,5 +1,13 @@
 var NAVTREEINDEX21 =
 {
+"class_media_1_1_sound_1_1_layer_view.html#a515d76e2dbcd6c105c8a7d3cc41351dc":[12,0,29,3,7,1],
+"class_media_1_1_sound_1_1_layer_view.html#a5c17bc4bd2096b078e2cf1ad72d5bacc":[12,0,29,3,7,4],
+"class_media_1_1_sound_1_1_layer_view.html#a781adb4c2adf6bb7b6f10995cfee0ce0":[12,0,29,3,7,7],
+"class_media_1_1_sound_1_1_layer_view.html#a92a9dca03c08bd3a41b9e955d3cd3424":[12,0,29,3,7,6],
+"class_media_1_1_sound_1_1_layer_view.html#ab5c730f68566b3e338aa29d3fdcaea52":[12,0,29,3,7,0],
+"class_media_1_1_sound_1_1_layer_view.html#ab62241be5f5784bce295334ff4dea8b8":[12,0,29,3,7,3],
+"class_media_1_1_sound_1_1_library_handler.html":[12,0,29,3,8],
+"class_media_1_1_sound_1_1_process_model.html":[12,0,29,3,9],
 "class_media_1_1_sound_1_1_process_model.html#a05624ecd9e5b9bf6c774840e94afd86b":[12,0,29,3,9,7],
 "class_media_1_1_sound_1_1_process_model.html#a0cb6f5d590f82113519edabee77a5621":[12,0,29,3,9,11],
 "class_media_1_1_sound_1_1_process_model.html#a1e3243f6bfa4f5d93e8c58ad3bae0028":[12,0,29,3,9,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX21 =
 "class_midi_outlet.html#ae264e89e6ce6be08a547d6fc6aa60bb9":[12,0,177,0],
 "class_midi_outlet.html#af3bbd7de1aa7b5b571bf1bdc40f7f9b1":[12,0,177,5],
 "class_mixer_1_1_audio_bus_widget.html":[12,0,31,0],
-"class_mixer_1_1_audio_bus_widget.html#ac1ba4642944eb98ded929fc8596acf1f":[12,0,31,0,1],
-"class_mixer_1_1_audio_bus_widget.html#ae2f3ddd46a3b24b705c2bab67f092116":[12,0,31,0,0],
-"class_mixer_1_1_audio_device_slider.html":[12,0,31,1],
-"class_mixer_1_1_audio_device_slider.html#a5c1c3c323caff1675e55abb667ee4680":[12,0,31,1,7],
-"class_mixer_1_1_audio_device_slider.html#a74278087ac96cb1e87c8d6b49112271b":[12,0,31,1,6],
-"class_mixer_1_1_audio_device_slider.html#a778cdb7ed94527e54d6b98420653f82b":[12,0,31,1,4],
-"class_mixer_1_1_audio_device_slider.html#a8269fba23c918a4be6427fa310c5e514":[12,0,31,1,3],
-"class_mixer_1_1_audio_device_slider.html#a8a4d34cd47a33b0ccf390ea0f999d356":[12,0,31,1,1],
-"class_mixer_1_1_audio_device_slider.html#a8b9b87a4efa540655e79feadeffb0f9b":[12,0,31,1,2]
+"class_mixer_1_1_audio_bus_widget.html#ac1ba4642944eb98ded929fc8596acf1f":[12,0,31,0,1]
 };

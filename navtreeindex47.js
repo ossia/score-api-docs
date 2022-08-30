@@ -1,5 +1,13 @@
 var NAVTREEINDEX47 =
 {
+"classscore_1_1_q_graphics_time_chooser.html#ac5eaf8e4f86409dc5e08c23e2cded28e":[12,0,46,215,7],
+"classscore_1_1_q_graphics_time_chooser.html#ace0c966736b71b1df216fce067df59a3":[12,0,46,215,5],
+"classscore_1_1_q_graphics_time_chooser.html#ada4aa9fd5cbb8e333ac7e07131cf164b":[12,0,46,215,2],
+"classscore_1_1_q_graphics_time_chooser.html#aebf3a833167824933757bbc3167b53fd":[12,0,46,215,0],
+"classscore_1_1_q_graphics_time_chooser.html#af997fd03b8cc6a590c76cd56ecfcdc7b":[12,0,46,215,13],
+"classscore_1_1_q_graphics_toggle.html":[12,0,46,216],
+"classscore_1_1_q_graphics_toggle.html#a35744702588c3b61f3471de6363ac174":[12,0,46,216,6],
+"classscore_1_1_q_graphics_toggle.html#a4b8fd99a30426c3eb12370f1268338ea":[12,0,46,216,5],
 "classscore_1_1_q_graphics_toggle.html#a5b30016278671315195f67998196c058":[12,0,46,216,3],
 "classscore_1_1_q_graphics_toggle.html#a7e9438de15110974c3fd4bbb0edc44d0":[12,0,46,216,0],
 "classscore_1_1_q_graphics_toggle.html#a8d78f693c48ccabd8000436f16407a88":[12,0,46,216,7],
@@ -241,13 +249,5 @@ var NAVTREEINDEX47 =
 "classscore_1_1_skin.html#a6a7b1280491ae3fe093418e7cb1f7150":[12,0,46,251,22],
 "classscore_1_1_skin.html#a6c3b6ad795aab9ed547d2992ca12a391":[12,0,46,251,41],
 "classscore_1_1_skin.html#a7034e39993dd3f897beb85db80549aa7":[12,0,46,251,56],
-"classscore_1_1_skin.html#a7118205c2dfbb4efaaf0edbb273492d2":[12,0,46,251,25],
-"classscore_1_1_skin.html#a7282431087640f3b286d86cbe75bd771":[12,0,46,251,82],
-"classscore_1_1_skin.html#a74d459ce7383e6f7a0bb848f9e4e6626":[12,0,46,251,57],
-"classscore_1_1_skin.html#a7ab5524a04d35aca53a1af8046f3e8ac":[12,0,46,251,24],
-"classscore_1_1_skin.html#a801184f737cb7339e2372dd773002e13":[12,0,46,251,46],
-"classscore_1_1_skin.html#a80e22ed90ff7994a8f08706a223314e0":[12,0,46,251,84],
-"classscore_1_1_skin.html#a8721b70fec05c843027b970ac968f90e":[12,0,46,251,4],
-"classscore_1_1_skin.html#a87310f1a26addd76fea2f9f388c3a2fa":[12,0,46,251,2],
-"classscore_1_1_skin.html#a88385794373e7800b7b28361de82f620":[12,0,46,251,30]
+"classscore_1_1_skin.html#a7118205c2dfbb4efaaf0edbb273492d2":[12,0,46,251,25]
 };

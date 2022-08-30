@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"_map_serialization_8hpp_source.html":[13,0,691],
 "_mapper_device_8hpp_source.html":[13,0,681],
 "_mapping_colors_8hpp_source.html":[13,0,682],
 "_mapping_command_factory_8hpp_source.html":[13,0,683],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "_protocol_list_8hpp_source.html":[13,0,982],
 "_protocol_settings_widget_8hpp_source.html":[13,0,983],
 "_put_layer_model_to_front_8hpp_source.html":[13,0,984],
-"_q_graphics_button_8hpp_source.html":[13,0,985],
-"_q_graphics_check_box_8hpp_source.html":[13,0,986]
+"_q_graphics_button_8hpp_source.html":[13,0,985]
 };

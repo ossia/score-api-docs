@@ -1,5 +1,13 @@
 var NAVTREEINDEX27 =
 {
+"class_protocols_1_1_local_device.html":[12,0,40,31],
+"class_protocols_1_1_local_device.html#a009e91a06150b3c2bae18a4297a48d95":[12,0,40,31,2],
+"class_protocols_1_1_local_device.html#a225ec2270e1cee3564e89d0795ab6054":[12,0,40,31,0],
+"class_protocols_1_1_local_device.html#a2959dd284a878ea54aac0e48629cfd02":[12,0,40,31,1],
+"class_protocols_1_1_local_device.html#a7b80f6aa990c0096df6306929386a933":[12,0,40,31,4],
+"class_protocols_1_1_local_device.html#aab526b61b34ffb1b48e7c2f04c49bb5a":[12,0,40,31,3],
+"class_protocols_1_1_local_protocol_factory.html":[12,0,40,32],
+"class_protocols_1_1_local_protocol_settings_widget.html":[12,0,40,33],
 "class_protocols_1_1_local_protocol_settings_widget.html#a794a47fe6b85c6d983ee0358385220e2":[12,0,40,33,0],
 "class_protocols_1_1_m_i_d_i_device.html":[12,0,40,35],
 "class_protocols_1_1_m_i_d_i_device.html#a07b78a0b8b3ee503cc525026b4035ba0":[12,0,40,35,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX27 =
 "class_recording_1_1_single_recorder.html#a512be0ae07bc0ad954d488229d217065":[12,0,41,16,2],
 "class_recording_1_1_single_recorder.html#a724e5b695990d3a4158adb228baaf2cb":[12,0,41,16,1],
 "class_recording_1_1_single_recorder.html#aa8e247ee763fa13b9bdfc09b19f394d3":[12,0,41,16,3],
-"class_remote_application.html":[12,0,330],
-"class_remote_application.html#a0bdbfa18ac37339d0d94acf7affe45e5":[12,0,330,5],
-"class_remote_application.html#a1b6376ef2facc53c693fd5cf180a687d":[12,0,330,3],
-"class_remote_application.html#a419ee5fc214b3b76940ea6808b84026d":[12,0,330,2],
-"class_remote_application.html#a951a4d02b982ee92f0788b08de6b93f4":[12,0,330,0],
-"class_remote_application.html#ae08f2a9f09c9c9bdfd6a4d865dde9038":[12,0,330,1],
-"class_remote_application.html#aeb14d1361331286a0e98e4533289a999":[12,0,330,4],
-"class_remote_control_1_1_application_plugin.html":[12,0,43,1],
-"class_remote_control_1_1_application_plugin.html#a8dfe399fd80103abd9aa82dc1988b2e3":[12,0,43,1,0]
+"class_remote_application.html":[12,0,330]
 };

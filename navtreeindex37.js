@@ -1,5 +1,13 @@
 var NAVTREEINDEX37 =
 {
+"class_scenario_1_1_simple_expression_editor_widget.html#a6f7d1e2b67ca412e877f28f22a0f48e6":[12,0,45,244,10],
+"class_scenario_1_1_simple_expression_editor_widget.html#a86c664f3325e5c881a5e4ba01a89c3e9":[12,0,45,244,12],
+"class_scenario_1_1_simple_expression_editor_widget.html#a99b670ba28dbb7d4a1c0b20c20d1c16d":[12,0,45,244,11],
+"class_scenario_1_1_simple_expression_editor_widget.html#a99cf9aacd9f6065a03ee024278f3d660":[12,0,45,244,9],
+"class_scenario_1_1_simple_expression_editor_widget.html#a9b868e1566bd10a63f2a53c4d9f859c1":[12,0,45,244,0],
+"class_scenario_1_1_simple_expression_editor_widget.html#aa893f2a4b282455abdb4833df17510f3":[12,0,45,244,14],
+"class_scenario_1_1_simple_expression_editor_widget.html#abdbdadb2fb7b387b57be5c5437e51a7b":[12,0,45,244,4],
+"class_scenario_1_1_simple_expression_editor_widget.html#af1d3fb486c10212de8655434b55420da":[12,0,45,244,13],
 "class_scenario_1_1_simple_expression_editor_widget.html#afb7df0e3a19b15058ed7e9749eee3fe2":[12,0,45,244,5],
 "class_scenario_1_1_size_policy_widget.html":[12,0,45,245],
 "class_scenario_1_1_size_policy_widget.html#a275a97aa71c72ab2cd9165ea892fc887":[12,0,45,245,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX37 =
 "class_scenario_1_1_time_ruler_base.html#a741509cf134408b287e2bdaf40798755":[12,0,45,286,8],
 "class_scenario_1_1_time_ruler_base.html#a7988251cbc1f3448f2d9b3e9be4fcf5a":[12,0,45,286,3],
 "class_scenario_1_1_time_ruler_base.html#a7adfbcc46c15dcd262d0541578d06352":[12,0,45,286,0],
-"class_scenario_1_1_time_ruler_base.html#a7b20776832220dcc3531c02f0710084b":[12,0,45,286,15],
-"class_scenario_1_1_time_ruler_base.html#a87ab69d0074140558b9ed2624c4c075b":[12,0,45,286,5],
-"class_scenario_1_1_time_ruler_base.html#a9db13575401a573ab1623fac99b51d87":[12,0,45,286,6],
-"class_scenario_1_1_time_ruler_base.html#ab10e8a5017edc6f9789f32223b1acf27":[12,0,45,286,11],
-"class_scenario_1_1_time_ruler_base.html#ac5caa36f3a1ce6f9baae02afecdfd873":[12,0,45,286,10],
-"class_scenario_1_1_time_ruler_base.html#adc3e1642a4bcfe51cfc5b66adfb14c77":[12,0,45,286,13],
-"class_scenario_1_1_time_ruler_graphics_view.html":[12,0,45,287],
-"class_scenario_1_1_time_ruler_graphics_view.html#ace0b5e7afbb05daa0e9c91a2a402c285":[12,0,45,287,0],
-"class_scenario_1_1_time_signature_handle.html":[12,0,45,288]
+"class_scenario_1_1_time_ruler_base.html#a7b20776832220dcc3531c02f0710084b":[12,0,45,286,15]
 };

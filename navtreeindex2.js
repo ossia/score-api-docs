@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"_event_actions_8hpp_source.html":[13,0,387],
 "_event_component_8hpp_source.html":[13,0,388],
 "_event_execution_8hpp_source.html":[13,0,389],
 "_event_inspector_widget_8hpp_source.html":[13,0,390],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "_magnetism_adjuster_8hpp_source.html":[13,0,677],
 "_make_bus_8hpp_source.html":[13,0,678],
 "_manual_clock_8hpp_source.html":[13,0,679],
-"_map_copy_8hpp_source.html":[13,0,680],
-"_map_serialization_8hpp_source.html":[13,0,691]
+"_map_copy_8hpp_source.html":[13,0,680]
 };

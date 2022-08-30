@@ -1,5 +1,13 @@
 var NAVTREEINDEX52 =
 {
+"plugins_2score-plugin-gfx_2_gfx_2_video_2_metadata_8hpp_source.html":[13,0,717],
+"plugins_2score-plugin-gfx_2_gfx_2_video_2_presenter_8hpp_source.html":[13,0,921],
+"plugins_2score-plugin-js_2_j_s_2_executor_2_component_8hpp_source.html":[13,0,191],
+"plugins_2score-plugin-lv2_2_l_v2_2_window_8hpp_source.html":[13,0,1419],
+"plugins_2score-plugin-media_2_media_2_effect_2_settings_2_presenter_8hpp_source.html":[13,0,922],
+"plugins_2score-plugin-media_2_media_2_merger_2_metadata_8hpp_source.html":[13,0,718],
+"plugins_2score-plugin-media_2_media_2_merger_2commands_8hpp_source.html":[13,0,169],
+"plugins_2score-plugin-media_2_media_2_step_2_metadata_8hpp_source.html":[13,0,719],
 "plugins_2score-plugin-media_2_media_2_step_2_presenter_8hpp_source.html":[13,0,923],
 "plugins_2score-plugin-media_2_media_2_step_2commands_8hpp_source.html":[13,0,170],
 "plugins_2score-plugin-nodal_2_nodal_2_metadata_8hpp_source.html":[13,0,720],
@@ -241,13 +249,5 @@ var NAVTREEINDEX52 =
 "struct_analysis_1_1_gist_state.html#ad9ac5f44712057e2a02e89f1cf6fd3ee":[12,0,0,5,17],
 "struct_analysis_1_1_gist_state.html#aeb5543a00a9a5fd7bde13a0cf5823a83":[12,0,0,5,7],
 "struct_analysis_1_1_hfq.html":[12,0,0,6],
-"struct_analysis_1_1_hfq.html#a5075e0c3468e6b0a2b09380a2decfc3d":[12,0,0,6,1],
-"struct_analysis_1_1_hfq.html#ad8673e2d318d4a6518e5b0291a2afa4f":[12,0,0,6,2],
-"struct_analysis_1_1_hfq_1_1_metadata.html":[12,0,0,6,0],
-"struct_analysis_1_1_kurtosis.html":[12,0,0,7],
-"struct_analysis_1_1_kurtosis.html#a5d2dd20a1b37f575c9e7a463f80a48d7":[12,0,0,7,1],
-"struct_analysis_1_1_kurtosis.html#ab27cf53010d5b0642f4ee4306c41ea0b":[12,0,0,7,2],
-"struct_analysis_1_1_kurtosis_1_1_metadata.html":[12,0,0,7,0],
-"struct_analysis_1_1_m_f_c_c.html":[12,0,0,9],
-"struct_analysis_1_1_m_f_c_c.html#a52aff028520aa803680298802d548905":[12,0,0,9,1]
+"struct_analysis_1_1_hfq.html#a5075e0c3468e6b0a2b09380a2decfc3d":[12,0,0,6,1]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX26 =
 {
+"class_process_1_1_process_model.html#a2259e9f8d397c3485d3e165b6b988738":[12,0,39,94,7],
+"class_process_1_1_process_model.html#a3077df173e9c90eee9e933b3095261cf":[12,0,39,94,17],
+"class_process_1_1_process_model.html#a308f3787f7042ffa777d12da4efe4049":[12,0,39,94,20],
+"class_process_1_1_process_model.html#a3429fdf0a147b5a2c1a200acabeab1a7":[12,0,39,94,63],
+"class_process_1_1_process_model.html#a348bd912133334cb0f4019efec96461c":[12,0,39,94,70],
+"class_process_1_1_process_model.html#a39f4b42f71d0a6701360630e93cd29d0":[12,0,39,94,28],
+"class_process_1_1_process_model.html#a3eb399504701b0088d1cc51a463873d5":[12,0,39,94,48],
+"class_process_1_1_process_model.html#a41b20d7a3edfc3f5969a3cf177c9fd5c":[12,0,39,94,35],
 "class_process_1_1_process_model.html#a43a41a4f2cc17bec8e66ec4b634ea220":[12,0,39,94,8],
 "class_process_1_1_process_model.html#a466df13266657b05f6815dfd354d89c7":[12,0,39,94,40],
 "class_process_1_1_process_model.html#a492e4ff09bb020871101ea4fbedb1f80":[12,0,39,94,69],
@@ -241,13 +249,5 @@ var NAVTREEINDEX26 =
 "class_protocols_1_1_library_device_enumerator.html#a4070fdbd0627dcc21d95f1867b611bbc":[12,0,40,30,3],
 "class_protocols_1_1_library_device_enumerator.html#a74226cc7a150a7ccbe8410ba9bef0170":[12,0,40,30,6],
 "class_protocols_1_1_library_device_enumerator.html#aa95b15b76048e1e56448d84ab664cda3":[12,0,40,30,5],
-"class_protocols_1_1_library_device_enumerator.html#af0e2063356274e716d383189367e414b":[12,0,40,30,0],
-"class_protocols_1_1_local_device.html":[12,0,40,31],
-"class_protocols_1_1_local_device.html#a009e91a06150b3c2bae18a4297a48d95":[12,0,40,31,2],
-"class_protocols_1_1_local_device.html#a225ec2270e1cee3564e89d0795ab6054":[12,0,40,31,0],
-"class_protocols_1_1_local_device.html#a2959dd284a878ea54aac0e48629cfd02":[12,0,40,31,1],
-"class_protocols_1_1_local_device.html#a7b80f6aa990c0096df6306929386a933":[12,0,40,31,4],
-"class_protocols_1_1_local_device.html#aab526b61b34ffb1b48e7c2f04c49bb5a":[12,0,40,31,3],
-"class_protocols_1_1_local_protocol_factory.html":[12,0,40,32],
-"class_protocols_1_1_local_protocol_settings_widget.html":[12,0,40,33]
+"class_protocols_1_1_library_device_enumerator.html#af0e2063356274e716d383189367e414b":[12,0,40,30,0]
 };

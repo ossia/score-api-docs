@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"_q_graphics_check_box_8hpp_source.html":[13,0,986],
 "_q_graphics_combo_8hpp_source.html":[13,0,987],
 "_q_graphics_enum_8hpp_source.html":[13,0,988],
 "_q_graphics_h_s_v_chooser_8hpp_source.html":[13,0,989],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "_state_transitions_8hpp_source.html":[13,0,1268],
 "_state_view_8hpp_source.html":[13,0,1269],
 "_std_variant_serialization_8hpp_source.html":[13,0,1270],
-"_string_8hpp_source.html":[13,0,1271],
-"_string_constants_8hpp_source.html":[13,0,1272]
+"_string_8hpp_source.html":[13,0,1271]
 };
