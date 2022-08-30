@@ -1,5 +1,9 @@
 var NAVTREEINDEX28 =
 {
+"class_remote_control_1_1_application_plugin.html#ac099c0849d21a61f9166c76cfb908695":[12,0,43,1,1],
+"class_remote_control_1_1_default_process_component.html":[12,0,43,2],
+"class_remote_control_1_1_default_process_component.html#ab06a1039dcf2c36bcecbdf96dbfc7aef":[12,0,43,2,1],
+"class_remote_control_1_1_default_process_component.html#ae5cfa228e298c4c31e32f60b85323501":[12,0,43,2,0],
 "class_remote_control_1_1_document_plugin.html":[12,0,43,3],
 "class_remote_control_1_1_document_plugin.html#a59b224a3712f49d75ac33ab40a976fa3":[12,0,43,3,4],
 "class_remote_control_1_1_document_plugin.html#a8092a28dc442461086fff2111321171a":[12,0,43,3,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX28 =
 "class_scenario_1_1_command_1_1_add_only_process_to_interval.html#ad5f486895bbddf4cd02d02307fc14b50":[12,0,45,0,6,10],
 "class_scenario_1_1_command_1_1_add_only_process_to_interval.html#af1212c85fc66b014f538ffd5f2a796bf":[12,0,45,0,6,2],
 "class_scenario_1_1_command_1_1_add_only_process_to_interval.html#af6ebf9e88cc7c9490fa34745e0c4193e":[12,0,45,0,6,9],
-"class_scenario_1_1_command_1_1_add_process_in_new_box_macro.html":[12,0,45,0,7],
-"class_scenario_1_1_command_1_1_add_process_in_new_slot.html":[12,0,45,0,8],
-"class_scenario_1_1_command_1_1_add_slot_to_rack.html":[12,0,45,0,9],
-"class_scenario_1_1_command_1_1_add_slot_to_rack.html#a13e28a2dbfa4c3e04444b973c1ce214e":[12,0,45,0,9,1],
-"class_scenario_1_1_command_1_1_add_slot_to_rack.html#a5b729d1426f38f6fe35cb98d8f46bfa9":[12,0,45,0,9,2]
+"class_scenario_1_1_command_1_1_add_process_in_new_box_macro.html":[12,0,45,0,7]
 };

@@ -1,5 +1,11 @@
 var NAVTREEINDEX63 =
 {
+"struct_process_1_1_time_chooser.html#af7f29ffb759b4df35e043b6a14e93bbf":[12,0,39,106,2],
+"struct_process_1_1_toggle.html":[12,0,39,107],
+"struct_process_1_1_toggle.html#a5f2928d0f2011a7d82131d9cd959d3ce":[12,0,39,107,2],
+"struct_process_1_1_toggle.html#aa41029b4542b8c7a476708c7eed3083c":[12,0,39,107,1],
+"struct_process_1_1_toggle.html#ab69922a0ec9ebf0dbcf07bbbbf074f54":[12,0,39,107,0],
+"struct_process_1_1_x_y_slider.html":[12,0,39,110],
 "struct_process_1_1_x_y_slider.html#a288f5215de52ee46e7ad8daaec4d2489":[12,0,39,110,5],
 "struct_process_1_1_x_y_slider.html#a324961d203c00b95a0623bbef61d5257":[12,0,39,110,2],
 "struct_process_1_1_x_y_slider.html#a6b62553a6e5edbed98f3c693def72b85":[12,0,39,110,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX63 =
 "struct_q_meta_type_id_3_01_scenario_1_1_interval_execution_state_01_4.html":[12,0,291],
 "struct_q_meta_type_id_3_01_scenario_1_1_interval_execution_state_01_4.html#a5e671cbe9ac4d3c4141504b0ab5f1634abcc09070db8bc666fd028af09a574d27":[12,0,291,0],
 "struct_q_meta_type_id_3_01_scenario_1_1_interval_model_01_5_01_4.html":[12,0,292],
-"struct_q_meta_type_id_3_01_scenario_1_1_interval_model_01_5_01_4.html#ad0af255031d83b49f3b12745ff3e2c18a8b5d10f7811fa083ee46bfe1cd2d3912":[12,0,292,0],
-"struct_q_meta_type_id_3_01_scenario_1_1_interval_model_1_1_view_mode_01_4.html":[12,0,293],
-"struct_q_meta_type_id_3_01_scenario_1_1_interval_model_1_1_view_mode_01_4.html#a8e96cd991e7158c930652b3c5e6f3c07a3bcbffd1fb39a702dab07f44e0a7206a":[12,0,293,0],
-"struct_q_meta_type_id_3_01_scenario_1_1_offset_behavior_01_4.html":[12,0,294],
-"struct_q_meta_type_id_3_01_scenario_1_1_offset_behavior_01_4.html#a80b835376168511d82149368531f5307adba5e410547c46efda61249ace791916":[12,0,294,0],
-"struct_q_meta_type_id_3_01_scenario_1_1_point_01_4.html":[12,0,295],
-"struct_q_meta_type_id_3_01_scenario_1_1_point_01_4.html#a42fc5f135c24bbcd38f4a7adde45bda3a42c3ffb2ab6c4c89ace18384570d3a5f":[12,0,295,0]
+"struct_q_meta_type_id_3_01_scenario_1_1_interval_model_01_5_01_4.html#ad0af255031d83b49f3b12745ff3e2c18a8b5d10f7811fa083ee46bfe1cd2d3912":[12,0,292,0]
 };

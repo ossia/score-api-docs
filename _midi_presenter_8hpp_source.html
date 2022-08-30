@@ -150,26 +150,27 @@ $(document).ready(function(){initNavTree('_midi_presenter_8hpp_source.html','');
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> updateNote(<a class="code" href="class_midi_1_1_note_view.html">NoteView</a>&amp;);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> on_noteAdded(<span class="keyword">const</span> <a class="code" href="class_midi_1_1_note.html">Note</a>&amp;);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> on_noteRemoving(<span class="keyword">const</span> <a class="code" href="class_midi_1_1_note.html">Note</a>&amp;);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> on_drop(<span class="keyword">const</span> QPointF&amp; pos, <span class="keyword">const</span> QMimeData&amp;);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  std::vector&lt;Id&lt;Note&gt;&gt; selectedNotes() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="class_midi_1_1_view.html">View</a>* m_view{};</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  std::vector&lt;NoteView*&gt; m_notes;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  std::vector&lt;NoteView*&gt; m_selectedNotes;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="class_single_ongoing_command_dispatcher.html">SingleOngoingCommandDispatcher&lt;MoveNotes&gt;</a> m_moveDispatcher;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="class_single_ongoing_command_dispatcher.html">SingleOngoingCommandDispatcher&lt;ChangeNotesVelocity&gt;</a> m_velocityDispatcher;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  std::optional&lt;int&gt; m_origMovePitch{};</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  std::optional&lt;double&gt; m_origMoveStart{};</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  ZoomRatio m_zr{};</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> fillContextMenu(</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      QMenu&amp; menu, QPoint pos, QPointF scenepos,</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_layer_context_menu_manager.html">Process::LayerContextMenuManager</a>&amp; cm) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> on_notesReplaced();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> on_drop(<span class="keyword">const</span> QPointF&amp; pos, <span class="keyword">const</span> QMimeData&amp;);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  std::vector&lt;Id&lt;Note&gt;&gt; selectedNotes() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="class_midi_1_1_view.html">View</a>* m_view{};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  std::vector&lt;NoteView*&gt; m_notes;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  std::vector&lt;NoteView*&gt; m_selectedNotes;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="class_single_ongoing_command_dispatcher.html">SingleOngoingCommandDispatcher&lt;MoveNotes&gt;</a> m_moveDispatcher;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="class_single_ongoing_command_dispatcher.html">SingleOngoingCommandDispatcher&lt;ChangeNotesVelocity&gt;</a> m_velocityDispatcher;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  std::optional&lt;int&gt; m_origMovePitch{};</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  std::optional&lt;double&gt; m_origMoveStart{};</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  ZoomRatio m_zr{};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> fillContextMenu(</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      QMenu&amp; menu, QPoint pos, QPointF scenepos,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_layer_context_menu_manager.html">Process::LayerContextMenuManager</a>&amp; cm) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_midi_1_1_note_html"><div class="ttname"><a href="class_midi_1_1_note.html">Midi::Note</a></div><div class="ttdoc">The Note class.</div><div class="ttdef"><b>Definition:</b> MidiNote.hpp:58</div></div>

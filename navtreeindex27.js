@@ -1,5 +1,9 @@
 var NAVTREEINDEX27 =
 {
+"class_protocols_1_1_local_protocol_settings_widget.html#a794a47fe6b85c6d983ee0358385220e2":[12,0,40,33,0],
+"class_protocols_1_1_m_i_d_i_device.html":[12,0,40,35],
+"class_protocols_1_1_m_i_d_i_device.html#a07b78a0b8b3ee503cc525026b4035ba0":[12,0,40,35,2],
+"class_protocols_1_1_m_i_d_i_device.html#a2e1030866713aa57a4ce14cfda3451c8":[12,0,40,35,0],
 "class_protocols_1_1_m_i_d_i_device.html#a43436cbd421864c6eaf91157a2cb7452":[12,0,40,35,1],
 "class_protocols_1_1_m_i_d_i_device.html#a66a3d873cfd1d98be35d1bbcb1235228":[12,0,40,35,6],
 "class_protocols_1_1_m_i_d_i_device.html#a805c56b7f85188055525ff5b0ab2d7a0":[12,0,40,35,4],
@@ -245,9 +249,5 @@ var NAVTREEINDEX27 =
 "class_remote_application.html#ae08f2a9f09c9c9bdfd6a4d865dde9038":[12,0,330,1],
 "class_remote_application.html#aeb14d1361331286a0e98e4533289a999":[12,0,330,4],
 "class_remote_control_1_1_application_plugin.html":[12,0,43,1],
-"class_remote_control_1_1_application_plugin.html#a8dfe399fd80103abd9aa82dc1988b2e3":[12,0,43,1,0],
-"class_remote_control_1_1_application_plugin.html#ac099c0849d21a61f9166c76cfb908695":[12,0,43,1,1],
-"class_remote_control_1_1_default_process_component.html":[12,0,43,2],
-"class_remote_control_1_1_default_process_component.html#ab06a1039dcf2c36bcecbdf96dbfc7aef":[12,0,43,2,1],
-"class_remote_control_1_1_default_process_component.html#ae5cfa228e298c4c31e32f60b85323501":[12,0,43,2,0]
+"class_remote_control_1_1_application_plugin.html#a8dfe399fd80103abd9aa82dc1988b2e3":[12,0,43,1,0]
 };

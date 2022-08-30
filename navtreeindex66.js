@@ -1,5 +1,11 @@
 var NAVTREEINDEX66 =
 {
+"struct_scenario_1_1_processes_being_copied.html#a452ba90fd954465602f3e7cde14f1211":[12,0,45,194,1],
+"struct_scenario_1_1_processes_being_copied.html#a507827481255a06dd6d5c233038b28d9":[12,0,45,194,2],
+"struct_scenario_1_1_release_on_slot_handle___event.html":[12,0,45,202],
+"struct_scenario_1_1_release_on_slot_handle___event.html#a4b4c87673b6020f56753ed074b2ae501":[12,0,45,202,2],
+"struct_scenario_1_1_release_on_slot_handle___event.html#ab4e6ca69c4800da5447c3122a94a004e":[12,0,45,202,0],
+"struct_scenario_1_1_release_on_slot_handle___event.html#ab6dac17db753bf341a8a2774c3b5fe94":[12,0,45,202,1],
 "struct_scenario_1_1_request_overlay_menu_callback.html":[12,0,45,204],
 "struct_scenario_1_1_request_overlay_menu_callback.html#a54bb32dd9633e148e2a27d9db62e80d2":[12,0,45,204,2],
 "struct_scenario_1_1_request_overlay_menu_callback.html#a7013fcb93cb63a7a0d4f6e2bbde1a6e0":[12,0,45,204,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX66 =
 "struct_state_1_1_destination_qualifiers.html#a219c6d49d887643f82ab0813f2819e83":[12,0,50,14,7],
 "struct_state_1_1_destination_qualifiers.html#a242d72c9c89b8458be35b05ca2a0d2d6":[12,0,50,14,10],
 "struct_state_1_1_destination_qualifiers.html#a3171986a573bac03b163a63dda126789":[12,0,50,14,14],
-"struct_state_1_1_destination_qualifiers.html#a36bdb9319e31d4aa46eb3cde09ed497f":[12,0,50,14,11],
-"struct_state_1_1_destination_qualifiers.html#a3dff15969413ab1857da9898df7461fa":[12,0,50,14,16],
-"struct_state_1_1_destination_qualifiers.html#a41f7e57cfdaeb5a2049b20c864933e5e":[12,0,50,14,2],
-"struct_state_1_1_destination_qualifiers.html#a50a77d3a6483900f07ebaeddbb1a7fbb":[12,0,50,14,6],
-"struct_state_1_1_destination_qualifiers.html#a5142178470e55a662926b778d407d5a8":[12,0,50,14,1],
-"struct_state_1_1_destination_qualifiers.html#a6cff8bf3ac18ea74dafbd750703a1bef":[12,0,50,14,13],
-"struct_state_1_1_destination_qualifiers.html#a6dcf695f0a5de6689de7eb11607f3194":[12,0,50,14,12]
+"struct_state_1_1_destination_qualifiers.html#a36bdb9319e31d4aa46eb3cde09ed497f":[12,0,50,14,11]
 };

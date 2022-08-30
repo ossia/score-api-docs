@@ -19,11 +19,13 @@ var classscore_1_1_entity_map =
     [ "remove", "classscore_1_1_entity_map.html#a7ee717fd540c1588ce2ba476c793853f", null ],
     [ "remove", "classscore_1_1_entity_map.html#a70ec89f8043f27778aab05757201bad5", null ],
     [ "rend", "classscore_1_1_entity_map.html#ae5b0195edecb71443fb97da7b2992ac8", null ],
+    [ "replace", "classscore_1_1_entity_map.html#a15f63c75e04b5dbc1b2a3beffb965413", null ],
     [ "size", "classscore_1_1_entity_map.html#aed115ef68929ad06da60483e214532c3", null ],
     [ "unsafe_map", "classscore_1_1_entity_map.html#ad501c0df68b653e01b70934019d8af9c", null ],
     [ "added", "classscore_1_1_entity_map.html#aa46e1d09a46d389686cc8b6044b4cf6f", null ],
     [ "mutable_added", "classscore_1_1_entity_map.html#a384f5e1317c16f0616ec6b5e46f1386e", null ],
     [ "orderChanged", "classscore_1_1_entity_map.html#a565f5c7d1f693eeb21a07d4b29ab10bf", null ],
     [ "removed", "classscore_1_1_entity_map.html#a33360edf33f9951dd302cc1ac98e1bfb", null ],
-    [ "removing", "classscore_1_1_entity_map.html#a531e8db4ac6a3e9fecd3df18805e35a6", null ]
+    [ "removing", "classscore_1_1_entity_map.html#a531e8db4ac6a3e9fecd3df18805e35a6", null ],
+    [ "replaced", "classscore_1_1_entity_map.html#a2ebb46df1623f67fa3675fd1a85dd025", null ]
 ];
