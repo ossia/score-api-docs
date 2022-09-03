@@ -119,7 +119,8 @@ var NAVTREEINDEX15 =
 "class_gfx_1_1_kinect2_1_1kinect2__protocol.html#aefec5134c1e3f99b194f2cae4cf3497a":[12,0,17,2,6,8],
 "class_gfx_1_1_settings_1_1_model.html":[12,0,17,3,1],
 "class_gfx_1_1_settings_1_1_model.html#a4007552ac171a589fdf8446d26eba32e":[12,0,17,3,1,1],
-"class_gfx_1_1_settings_1_1_model.html#a75cc5d67c1fafd90bae1d5402224e590":[12,0,17,3,1,4],
+"class_gfx_1_1_settings_1_1_model.html#a51c24d141e53487d0eaf2ee355afa0dd":[12,0,17,3,1,4],
+"class_gfx_1_1_settings_1_1_model.html#a75cc5d67c1fafd90bae1d5402224e590":[12,0,17,3,1,5],
 "class_gfx_1_1_settings_1_1_model.html#a831c000f8768512055314f7805580aa1":[12,0,17,3,1,0],
 "class_gfx_1_1_settings_1_1_model.html#aa613b8a8eb84220c56e96e8dc54b030e":[12,0,17,3,1,3],
 "class_gfx_1_1_settings_1_1_model.html#adbd3392319c610eb2350abb23796220a":[12,0,17,3,1,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "class_gfx_1_1_syphon_settings_widget.html#aa2dad11f965a05db73aac790e94ccbe9":[12,0,17,60,0],
 "class_gfx_1_1_text_1_1_model.html":[12,0,17,7,0],
 "class_gfx_1_1_text_1_1_model.html#a1187f1a55d7e3548d3e9feaf634cb7b7":[12,0,17,7,0,0],
-"class_gfx_1_1_text_1_1_model.html#a921c725a8715be834104388cd6dd7b9a":[12,0,17,7,0,3],
-"class_gfx_1_1_text_1_1_model.html#aad58f2326f6ea4e7e5fa4c26e114155d":[12,0,17,7,0,2]
+"class_gfx_1_1_text_1_1_model.html#a921c725a8715be834104388cd6dd7b9a":[12,0,17,7,0,3]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX22 =
 {
+"class_mixer_1_1_audio_bus_widget.html":[12,0,31,0],
 "class_mixer_1_1_audio_bus_widget.html#ac1ba4642944eb98ded929fc8596acf1f":[12,0,31,0,1],
 "class_mixer_1_1_audio_bus_widget.html#ae2f3ddd46a3b24b705c2bab67f092116":[12,0,31,0,0],
 "class_mixer_1_1_audio_device_slider.html":[12,0,31,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX22 =
 "class_path.html#a1da00c9ae70c14656e5696df60006435":[12,0,207,14],
 "class_path.html#a219dda4dc088d7e79e730e9c230a83d3":[12,0,207,1],
 "class_path.html#a25a77d2d1757af32ab8648ab4bf594f5":[12,0,207,6],
-"class_path.html#a29cc8284f912f06110ee8a9d09a84e9d":[12,0,207,12],
-"class_path.html#a534c2115cb18a0aec4ac4ab8488cb600":[12,0,207,19]
+"class_path.html#a29cc8284f912f06110ee8a9d09a84e9d":[12,0,207,12]
 };

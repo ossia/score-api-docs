@@ -6,6 +6,7 @@ var namespaces_dup =
     [ "Engine", "namespace_engine.html", "namespace_engine" ],
     [ "Execution", "namespace_execution.html", null ],
     [ "Gfx", "namespace_gfx.html", null ],
+    [ "grph", "namespacegrph.html", null ],
     [ "Inspector", "namespace_inspector.html", null ],
     [ "LocalTree", "namespace_local_tree.html", null ],
     [ "PluginLoader", "namespace_plugin_loader.html", null ],

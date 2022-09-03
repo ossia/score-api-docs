@@ -626,9 +626,11 @@ var annotated_dup =
       [ "CustomTextGraphicsKnob", "classoscr_1_1_custom_text_graphics_knob.html", "classoscr_1_1_custom_text_graphics_knob" ],
       [ "CustomTextGraphicsSlider", "classoscr_1_1_custom_text_graphics_slider.html", "classoscr_1_1_custom_text_graphics_slider" ],
       [ "Deserializer", "structoscr_1_1_deserializer.html", "structoscr_1_1_deserializer" ],
+      [ "EdgeItem", "structoscr_1_1_edge_item.html", "structoscr_1_1_edge_item" ],
       [ "Executor", "classoscr_1_1_executor.html", "classoscr_1_1_executor" ],
       [ "ExecutorFactory", "structoscr_1_1_executor_factory.html", null ],
       [ "ExecutorGuiUpdate", "structoscr_1_1_executor_gui_update.html", "structoscr_1_1_executor_gui_update" ],
+      [ "GraphWidget", "structoscr_1_1_graph_widget.html", "structoscr_1_1_graph_widget" ],
       [ "InletInitFunc", "structoscr_1_1_inlet_init_func.html", "structoscr_1_1_inlet_init_func" ],
       [ "LayerFactory", "classoscr_1_1_layer_factory.html", "classoscr_1_1_layer_factory" ],
       [ "LayoutBuilder", "structoscr_1_1_layout_builder.html", "structoscr_1_1_layout_builder" ],
@@ -641,10 +643,13 @@ var annotated_dup =
       [ "MessageBusWrapperFromUi< Info >", "structoscr_1_1_message_bus_wrapper_from_ui_3_01_info_01_4.html", "structoscr_1_1_message_bus_wrapper_from_ui_3_01_info_01_4" ],
       [ "MessageBusWrapperToUi", "structoscr_1_1_message_bus_wrapper_to_ui.html", null ],
       [ "MessageBusWrapperToUi< Info >", "structoscr_1_1_message_bus_wrapper_to_ui_3_01_info_01_4.html", "structoscr_1_1_message_bus_wrapper_to_ui_3_01_info_01_4" ],
+      [ "MidiFileOctaver", "structoscr_1_1_midi_file_octaver.html", "structoscr_1_1_midi_file_octaver" ],
       [ "multichannel_audio", "structoscr_1_1multichannel__audio.html", "structoscr_1_1multichannel__audio" ],
       [ "multichannel_audio_view", "structoscr_1_1multichannel__audio__view.html", "structoscr_1_1multichannel__audio__view" ],
+      [ "NodeItem", "structoscr_1_1_node_item.html", "structoscr_1_1_node_item" ],
       [ "NormalizerFromMapper", "structoscr_1_1_normalizer_from_mapper.html", null ],
       [ "OutletInitFunc", "structoscr_1_1_outlet_init_func.html", "structoscr_1_1_outlet_init_func" ],
+      [ "Port", "structoscr_1_1_port.html", "structoscr_1_1_port" ],
       [ "ProcessFactory", "structoscr_1_1_process_factory.html", null ],
       [ "ProcessModel", "classoscr_1_1_process_model.html", "classoscr_1_1_process_model" ],
       [ "QPainterAdapter", "structoscr_1_1_q_painter_adapter.html", "structoscr_1_1_q_painter_adapter" ],
@@ -654,7 +659,8 @@ var annotated_dup =
       [ "setup_Impl1_Out", "structoscr_1_1setup___impl1___out.html", "structoscr_1_1setup___impl1___out" ],
       [ "type_if", "structoscr_1_1type__if.html", null ],
       [ "type_if< T, false >", "structoscr_1_1type__if_3_01_t_00_01false_01_4.html", "structoscr_1_1type__if_3_01_t_00_01false_01_4" ],
-      [ "type_if< T, true >", "structoscr_1_1type__if_3_01_t_00_01true_01_4.html", "structoscr_1_1type__if_3_01_t_00_01true_01_4" ]
+      [ "type_if< T, true >", "structoscr_1_1type__if_3_01_t_00_01true_01_4.html", "structoscr_1_1type__if_3_01_t_00_01true_01_4" ],
+      [ "View", "structoscr_1_1_view.html", "structoscr_1_1_view" ]
     ] ],
     [ "ossia", null, [
       [ "nodes", null, [

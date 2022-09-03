@@ -1,5 +1,8 @@
 var NAVTREEINDEX61 =
 {
+"struct_nodes_1_1_midi_hi_res_1_1_input_1_1_metadata.html":[12,0,33,21,0,0],
+"struct_nodes_1_1_midi_hi_res_1_1_output.html":[12,0,33,21,1],
+"struct_nodes_1_1_midi_hi_res_1_1_output.html#a2594813c27cc5a09321f63d1a7390a0c":[12,0,33,21,1,1],
 "struct_nodes_1_1_midi_hi_res_1_1_output_1_1_metadata.html":[12,0,33,21,1,0],
 "struct_nodes_1_1_midi_util_1_1_node.html":[12,0,33,22,0],
 "struct_nodes_1_1_midi_util_1_1_node.html#aed8866dc42a7184de254ae358cd9f3f0":[12,0,33,22,0,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX61 =
 "struct_process_1_1_enum.html#a686f2f02a1ed8e339b7dcf94c4124dde":[12,0,39,33,7],
 "struct_process_1_1_enum.html#a806639e7db9bfbcf3ebc7f6b223f38ae":[12,0,39,33,0],
 "struct_process_1_1_enum.html#aa16474a05feb4c040f8aa4d70e23ed7f":[12,0,39,33,9],
-"struct_process_1_1_enum.html#aa8da6534b07c9a5ee67e215fa5087b05":[12,0,39,33,2],
-"struct_process_1_1_enum.html#aad42fb0525905d5254edb1fec138e4c3":[12,0,39,33,10],
-"struct_process_1_1_enum.html#abef0274da8df8640da4de070d21f025a":[12,0,39,33,5],
-"struct_process_1_1_enum.html#ac97be1dba7aef64e93c1fd86a09f5975":[12,0,39,33,8]
+"struct_process_1_1_enum.html#aa8da6534b07c9a5ee67e215fa5087b05":[12,0,39,33,2]
 };
