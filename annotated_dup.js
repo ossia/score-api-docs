@@ -417,7 +417,7 @@ var annotated_dup =
       [ "Sound", null, [
         [ "AudioPreviewWidget", "class_media_1_1_sound_1_1_audio_preview_widget.html", "class_media_1_1_sound_1_1_audio_preview_widget" ],
         [ "ComputedWaveform", "struct_media_1_1_sound_1_1_computed_waveform.html", "struct_media_1_1_sound_1_1_computed_waveform" ],
-        [ "DropHandler", "class_media_1_1_sound_1_1_drop_handler.html", null ],
+        [ "DropHandler", "class_media_1_1_sound_1_1_drop_handler.html", "class_media_1_1_sound_1_1_drop_handler" ],
         [ "DroppedAudioFiles", "struct_media_1_1_sound_1_1_dropped_audio_files.html", "struct_media_1_1_sound_1_1_dropped_audio_files" ],
         [ "InspectorFactory", "class_media_1_1_sound_1_1_inspector_factory.html", null ],
         [ "InspectorWidget", "class_media_1_1_sound_1_1_inspector_widget.html", "class_media_1_1_sound_1_1_inspector_widget" ],
@@ -991,6 +991,7 @@ var annotated_dup =
       [ "ChooserToggle", "struct_widget_factory_1_1_chooser_toggle.html", null ],
       [ "ComboBox", "struct_widget_factory_1_1_combo_box.html", null ],
       [ "Enum", "struct_widget_factory_1_1_enum.html", null ],
+      [ "FileChooser", "struct_widget_factory_1_1_file_chooser.html", null ],
       [ "FixedNormalizer", "struct_widget_factory_1_1_fixed_normalizer.html", "struct_widget_factory_1_1_fixed_normalizer" ],
       [ "FloatControl", "struct_widget_factory_1_1_float_control.html", null ],
       [ "HSVSlider", "struct_widget_factory_1_1_h_s_v_slider.html", null ],

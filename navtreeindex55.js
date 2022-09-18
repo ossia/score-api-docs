@@ -1,5 +1,15 @@
 var NAVTREEINDEX55 =
 {
+"struct_dataflow_1_1_drag_line.html#a16913b55a8ee79f8e700a0d1bf5066d9":[12,0,8,21,3],
+"struct_dataflow_1_1_drag_line.html#a50dabc25d13a839f715facf88e6f8d70":[12,0,8,21,2],
+"struct_dataflow_1_1_drag_line.html#a736015e1ed7e0ac70d47221ccee53c2c":[12,0,8,21,4],
+"struct_dataflow_1_1_drag_line.html#acdc7bbe7cf633443f31799dc84f76734":[12,0,8,21,0],
+"struct_dataflow_1_1_drag_line.html#afa81bb11922a656b6ee8d2b2df448054":[12,0,8,21,1],
+"struct_dataflow_1_1_drag_move_filter.html":[12,0,8,22],
+"struct_dataflow_1_1_drag_move_filter.html#ae242e3862fbe251aa39b57162f94fba0":[12,0,8,22,0],
+"struct_dataflow_1_1_midi_inlet_factory.html":[12,0,8,27],
+"struct_dataflow_1_1_midi_inlet_factory.html#a1da949041ce684afb0d7a925259ad444":[12,0,8,27,3],
+"struct_dataflow_1_1_midi_inlet_factory.html#a532df7ee48894507b2595efa96516610":[12,0,8,27,0],
 "struct_dataflow_1_1_midi_inlet_factory.html#aab8afef65c582e2045872a51c4ab226b":[12,0,8,27,2],
 "struct_dataflow_1_1_midi_inlet_factory.html#af90aadad8f440c697ccecea2ed4f257c":[12,0,8,27,1],
 "struct_dataflow_1_1_midi_outlet_factory.html":[12,0,8,28],
@@ -239,15 +249,5 @@ var NAVTREEINDEX55 =
 "struct_execution_1_1_settings_1_1_scheduling_policies.html#a2df3c78c2db9139339178032134d9e6f":[12,0,11,1,5,3],
 "struct_execution_1_1_settings_1_1_scheduling_policies.html#a3208c77b75f41029027f5ba6502e3a23":[12,0,11,1,5,1],
 "struct_execution_1_1_settings_1_1_scheduling_policies.html#a3889ead6bcb6807b8f71a8b19ac526ed":[12,0,11,1,5,4],
-"struct_execution_1_1_settings_1_1_scheduling_policies.html#a5fb726270e3952aa31524e6c1f9f63ec":[12,0,11,1,5,2],
-"struct_execution_1_1_settings_1_1_tick_policies.html":[12,0,11,1,6],
-"struct_execution_1_1_settings_1_1_tick_policies.html#a0d103375e8d0dadfa2c38644fe882872":[12,0,11,1,6,1],
-"struct_execution_1_1_settings_1_1_tick_policies.html#a421c38ccb9f1dd12a825f6bc78a590ba":[12,0,11,1,6,0],
-"struct_execution_1_1_settings_1_1_tick_policies.html#aaa5c7b594a6337793f3bc72032074320":[12,0,11,1,6,3],
-"struct_execution_1_1_settings_1_1_tick_policies.html#aca2b43e9147428c7d01383632340dcd4":[12,0,11,1,6,2],
-"struct_execution_1_1_setup_context.html":[12,0,11,42],
-"struct_execution_1_1_setup_context.html#a038bfa6e4a053e5f394a3dac5ade2ab9":[12,0,11,42,26],
-"struct_execution_1_1_setup_context.html#a050e9fa942a3472949b1820f8e4ce199":[12,0,11,42,17],
-"struct_execution_1_1_setup_context.html#a0659f8868cb350d1905029e570690430":[12,0,11,42,10],
-"struct_execution_1_1_setup_context.html#a0e5d2bb1fa0f3911b7d862b3b199cc36":[12,0,11,42,7]
+"struct_execution_1_1_settings_1_1_scheduling_policies.html#a5fb726270e3952aa31524e6c1f9f63ec":[12,0,11,1,5,2]
 };

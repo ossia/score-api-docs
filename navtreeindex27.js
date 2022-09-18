@@ -1,5 +1,10 @@
 var NAVTREEINDEX27 =
 {
+"class_protocols_1_1_library_device_enumerator.html#a0122ae8f415b51e34d6a6baf9eb62b47":[12,0,40,30,4],
+"class_protocols_1_1_library_device_enumerator.html#a08faeb7f2f5fe064d3cfd254ce1df49f":[12,0,40,30,2],
+"class_protocols_1_1_library_device_enumerator.html#a1d668baf9e9714751ee831dfa2bb1f6f":[12,0,40,30,1],
+"class_protocols_1_1_library_device_enumerator.html#a4070fdbd0627dcc21d95f1867b611bbc":[12,0,40,30,3],
+"class_protocols_1_1_library_device_enumerator.html#a74226cc7a150a7ccbe8410ba9bef0170":[12,0,40,30,6],
 "class_protocols_1_1_library_device_enumerator.html#aa95b15b76048e1e56448d84ab664cda3":[12,0,40,30,5],
 "class_protocols_1_1_library_device_enumerator.html#af0e2063356274e716d383189367e414b":[12,0,40,30,0],
 "class_protocols_1_1_local_device.html":[12,0,40,31],
@@ -244,10 +249,5 @@ var NAVTREEINDEX27 =
 "class_recording_1_1_recorder.html#af76af7844ed74f567385b25e534fa361":[12,0,41,13,1],
 "class_recording_1_1_recorder_factory.html":[12,0,41,14],
 "class_recording_1_1_recorder_factory.html#a703e6bf2d45a884d3c4f19754a805895":[12,0,41,14,2],
-"class_recording_1_1_recorder_factory.html#a88af36eead2990b6fa8ac7a2b1e5effb":[12,0,41,14,1],
-"class_recording_1_1_recorder_factory.html#a9d42d8b152c54293fc70b734064914ea":[12,0,41,14,0],
-"class_recording_1_1_single_recorder.html":[12,0,41,16],
-"class_recording_1_1_single_recorder.html#a3a3d331c583c2a5f816c4758b66d0bf2":[12,0,41,16,0],
-"class_recording_1_1_single_recorder.html#a512be0ae07bc0ad954d488229d217065":[12,0,41,16,2],
-"class_recording_1_1_single_recorder.html#a724e5b695990d3a4158adb228baaf2cb":[12,0,41,16,1]
+"class_recording_1_1_recorder_factory.html#a88af36eead2990b6fa8ac7a2b1e5effb":[12,0,41,14,1]
 };

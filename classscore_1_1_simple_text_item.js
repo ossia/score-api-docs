@@ -6,5 +6,6 @@ var classscore_1_1_simple_text_item =
     [ "setColor", "classscore_1_1_simple_text_item.html#ab718ad404ae4a5e0055d9dde275af5de", null ],
     [ "setFont", "classscore_1_1_simple_text_item.html#a609b657702873c3d42f1d1318f819842", null ],
     [ "setText", "classscore_1_1_simple_text_item.html#a5d80aa0a5e2cae92806822d6483f523b", null ],
-    [ "setText", "classscore_1_1_simple_text_item.html#ac3a39519ce04318f78ee53a2cef08106", null ]
+    [ "setText", "classscore_1_1_simple_text_item.html#ac3a39519ce04318f78ee53a2cef08106", null ],
+    [ "text", "classscore_1_1_simple_text_item.html#a491f2b7a7305a59999a6bf03d4fd9a06", null ]
 ];

@@ -1,5 +1,15 @@
 var NAVTREEINDEX50 =
 {
+"classscore__plugin__deviceexplorer.html#a3b2882452e13871231a9669f62757302":[12,0,350,1],
+"classscore__plugin__deviceexplorer.html#a891aac41a4f02664ba76299df18c804e":[12,0,350,0],
+"classscore__plugin__engine.html":[12,0,351],
+"classscore__plugin__engine.html#a343f110de48a63fd9d6e3cddfb752c78":[12,0,351,1],
+"classscore__plugin__engine.html#a79492e30c707dfd8a40bfca38b865d5f":[12,0,351,0],
+"classscore__plugin__faust.html":[12,0,352],
+"classscore__plugin__faust.html#a3e8212bd5e1d82208bd82bd161108bea":[12,0,352,2],
+"classscore__plugin__faust.html#a9237d78e766b2881a32c1204826fee1d":[12,0,352,0],
+"classscore__plugin__faust.html#a9b27a5f10a4d4f19e6aedfa6b540cc5c":[12,0,352,3],
+"classscore__plugin__faust.html#ac0d9e4dc580d655f354390f68b168d5e":[12,0,352,1],
 "classscore__plugin__fx.html":[12,0,353],
 "classscore__plugin__fx.html#a37257ff9b4548bc5ca906d80ed069ee9":[12,0,353,1],
 "classscore__plugin__fx.html#aeafeaf8c823b2fc067ab32f36702cd6e":[12,0,353,0],
@@ -239,15 +249,5 @@ var NAVTREEINDEX50 =
 "classvst3_1_1vst__node.html#af9ea573aa87a0fb324f535cb43e7bbf8":[12,0,56,17,2],
 "classvst3_1_1vst__node.html#afa2ee832672b9415beab079cbbdfc3a0":[12,0,56,17,3],
 "classvst3_1_1vst__node__base.html":[12,0,56,18],
-"classvst3_1_1vst__node__base.html#a0f211e7498c3e43b8ee950010d355838":[12,0,56,18,3],
-"classvst3_1_1vst__node__base.html#a1230500c860f97e88fb4c31ba6b6b288":[12,0,56,18,11],
-"classvst3_1_1vst__node__base.html#a125c35c0c8cf19be91f33d31a27d5a0f":[12,0,56,18,20],
-"classvst3_1_1vst__node__base.html#a12af35bdcb71e6418a006bf2d8993faa":[12,0,56,18,21],
-"classvst3_1_1vst__node__base.html#a14b402d3f0adc30af6a3b7aeeca70254":[12,0,56,18,25],
-"classvst3_1_1vst__node__base.html#a16746c89e01d5980d8f94d906851eac9":[12,0,56,18,8],
-"classvst3_1_1vst__node__base.html#a2030c56df4ea49d047c339a9a73dcf1b":[12,0,56,18,14],
-"classvst3_1_1vst__node__base.html#a2f15b1a83cda8e0197bd790ab0ac53a7":[12,0,56,18,10],
-"classvst3_1_1vst__node__base.html#a30fb6a5d4495a041e3f42ba547b56fb2":[12,0,56,18,7],
-"classvst3_1_1vst__node__base.html#a31baafe88bcce7ed13db2a70b938c281":[12,0,56,18,24],
-"classvst3_1_1vst__node__base.html#a4431096f4dbd723e3e068220232c668e":[12,0,56,18,13]
+"classvst3_1_1vst__node__base.html#a0f211e7498c3e43b8ee950010d355838":[12,0,56,18,3]
 };

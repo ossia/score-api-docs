@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['backgrounditem_3152',['BackgroundItem',['../classscore_1_1_background_item.html',1,'score']]],
-  ['bargraph_3153',['Bargraph',['../struct_process_1_1_bargraph.html',1,'Process']]],
+  ['backgrounditem_3153',['BackgroundItem',['../classscore_1_1_background_item.html',1,'score']]],
   ['barspinbox_3154',['BarSpinBox',['../structscore_1_1_bar_spin_box.html',1,'score']]],
   ['base_5fkind_3155',['base_kind',['../structbase__kind.html',1,'']]],
   ['base_5fkind_3c_20t_2c_20std_3a_3aenable_5fif_5ft_3c_21std_3a_3ais_5fsame_5fv_3c_20t_2c_20typename_20t_3a_3ascore_5fbase_5ftype_20_3e_20_3e_20_3e_3156',['base_kind&lt; T, std::enable_if_t&lt;!std::is_same_v&lt; T, typename T::score_base_type &gt; &gt; &gt;',['../structbase__kind_3_01_t_00_01std_1_1enable__if__t_3_9std_1_1is__same__v_3_01_t_00_01typename_01_97048677e56782543c9f1d394cf20849.html',1,'']]],
@@ -30,7 +29,7 @@ var searchData=
   ['brush_3179',['Brush',['../structscore_1_1_brush.html',1,'score']]],
   ['brushset_3180',['BrushSet',['../structscore_1_1_brush_set.html',1,'score']]],
   ['busactivationvisitor_3181',['BusActivationVisitor',['../structvst3_1_1_bus_activation_visitor.html',1,'vst3']]],
-  ['button_3182',['Button',['../struct_control_1_1_button.html',1,'Control::Button'],['../struct_widget_factory_1_1_button.html',1,'WidgetFactory::Button'],['../struct_process_1_1_button.html',1,'Process::Button']]],
+  ['button_3182',['Button',['../struct_control_1_1_button.html',1,'Control::Button'],['../struct_widget_factory_1_1_button.html',1,'WidgetFactory::Button']]],
   ['bytebeat_5fnode_3183',['bytebeat_node',['../class_jit_1_1bytebeat__node.html',1,'Jit']]],
   ['bytebeatexecutor_3184',['BytebeatExecutor',['../class_jit_1_1_bytebeat_executor.html',1,'Jit']]],
   ['bytebeatlanguagespec_3185',['BytebeatLanguageSpec',['../struct_jit_1_1_bytebeat_language_spec.html',1,'Jit']]]

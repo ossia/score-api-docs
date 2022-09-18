@@ -1,5 +1,8 @@
 var NAVTREEINDEX20 =
 {
+"class_library_1_1_user_panel.html#aa2945975f72ff3e5ca94f03e38b7cc42":[12,0,25,24,0],
+"class_library_1_1_user_panel_factory.html":[12,0,25,25],
+"class_line_edit.html":[12,0,147],
 "class_line_edit.html#a0974256c59078e94d18f850e5f6145c3":[12,0,147,2],
 "class_line_edit.html#a0a90b9d30bd842ed274ac7ac124aa22a":[12,0,147,4],
 "class_line_edit.html#a53e52e86430a6cfc798d62bc47bfcf5f":[12,0,147,3],
@@ -237,6 +240,8 @@ var NAVTREEINDEX20 =
 "class_media_1_1_sound_1_1_audio_preview_widget.html#a8f3a4b18192dc8a4027e0898d643ea9e":[12,0,29,3,0,2],
 "class_media_1_1_sound_1_1_audio_preview_widget.html#ad51fa06f5dcbc16cb1913bbd3b2ee633":[12,0,29,3,0,3],
 "class_media_1_1_sound_1_1_drop_handler.html":[12,0,29,3,2],
+"class_media_1_1_sound_1_1_drop_handler.html#a7a07996ffa5d30124db8563a342a0872":[12,0,29,3,2,0],
+"class_media_1_1_sound_1_1_drop_handler.html#ab173512fc0d85cd063083c0a6f144c14":[12,0,29,3,2,1],
 "class_media_1_1_sound_1_1_inspector_factory.html":[12,0,29,3,4],
 "class_media_1_1_sound_1_1_inspector_widget.html":[12,0,29,3,5],
 "class_media_1_1_sound_1_1_inspector_widget.html#ab9a5104ce7ef26855bdfe3b3805dabc6":[12,0,29,3,5,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX20 =
 "class_media_1_1_sound_1_1_layer_presenter.html#a189a65228b27aa1db328f08bfaadc3f3":[12,0,29,3,6,7],
 "class_media_1_1_sound_1_1_layer_presenter.html#a2103f56c6326114356f0b20f8d7a4207":[12,0,29,3,6,0],
 "class_media_1_1_sound_1_1_layer_presenter.html#a2d2fa9a641ab8b7935ce09ca2a8974d0":[12,0,29,3,6,6],
-"class_media_1_1_sound_1_1_layer_presenter.html#a2eb710092d123de3fcea28bda312ad66":[12,0,29,3,6,2],
-"class_media_1_1_sound_1_1_layer_presenter.html#a3e7aa04388b86b2e2e65d70e2be96e12":[12,0,29,3,6,1],
-"class_media_1_1_sound_1_1_layer_presenter.html#a56e3ca796ca8919da490c03c06d7f1c7":[12,0,29,3,6,5],
-"class_media_1_1_sound_1_1_layer_presenter.html#a95f79db0218bfef0303a37b7566f2a50":[12,0,29,3,6,3],
-"class_media_1_1_sound_1_1_layer_presenter.html#aba6ceb5f351689fd61ef4390dec659c7":[12,0,29,3,6,4],
-"class_media_1_1_sound_1_1_layer_view.html":[12,0,29,3,7]
+"class_media_1_1_sound_1_1_layer_presenter.html#a2eb710092d123de3fcea28bda312ad66":[12,0,29,3,6,2]
 };

@@ -95,6 +95,7 @@ $(document).ready(function(){initNavTree('class_media_1_1_sound_1_1_drop_handler
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_media_1_1_sound_1_1_drop_handler-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Media::Sound::DropHandler Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -116,8 +117,14 @@ Inheritance diagram for Media::Sound::DropHandler:</div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_media_1_1_sound_1_1_drop_handler.html" title="The DropHandler class If something with audio mime type is dropped, then we create a box with an audi...">DropHandler</a> class If something with audio mime type is dropped, then we create a box with an audio file loaded. </p>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ab173512fc0d85cd063083c0a6f144c14"><td class="memItemLeft" align="right" valign="top"><a id="ab173512fc0d85cd063083c0a6f144c14"></a>
+QSet&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mimeTypes</b> () const noexcept override</td></tr>
+<tr class="separator:ab173512fc0d85cd063083c0a6f144c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a07996ffa5d30124db8563a342a0872"><td class="memItemLeft" align="right" valign="top"><a id="a7a07996ffa5d30124db8563a342a0872"></a>
+QSet&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fileExtensions</b> () const noexcept override</td></tr>
+<tr class="separator:a7a07996ffa5d30124db8563a342a0872"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_process_1_1_process_drop_handler"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_process_1_1_process_drop_handler')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_process_1_1_process_drop_handler.html">Process::ProcessDropHandler</a></td></tr>
 <tr class="memitem:a5536dd7623593f26b84f0026fe5fd9fd inherit pub_methods_class_process_1_1_process_drop_handler"><td class="memItemLeft" align="right" valign="top"><a id="a5536dd7623593f26b84f0026fe5fd9fd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>getCustomDrops</b> (std::vector&lt; <a class="el" href="struct_process_1_1_process_drop_handler_1_1_process_drop.html">ProcessDrop</a> &gt; &amp;drops, const QMimeData &amp;mime, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx) const noexcept</td></tr>
@@ -133,6 +140,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>getFileDrops</b> (std
 virtual <a class="el" href="class_uuid_key.html">InterfaceKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_interface_base.html#a993744914ec2a9cdf05f07f6f1643d55">interfaceKey</a> () const noexcept=0</td></tr>
 <tr class="memdesc:a993744914ec2a9cdf05f07f6f1643d55 inherit pub_methods_classscore_1_1_interface_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifies an interface uniquely. <br /></td></tr>
 <tr class="separator:a993744914ec2a9cdf05f07f6f1643d55 inherit pub_methods_classscore_1_1_interface_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_class_process_1_1_process_drop_handler"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_process_1_1_process_drop_handler')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_process_1_1_process_drop_handler.html">Process::ProcessDropHandler</a></td></tr>
 <tr class="memitem:af0c7b418155a0ad3cc402f89149c9fae inherit pro_methods_class_process_1_1_process_drop_handler"><td class="memItemLeft" align="right" valign="top"><a id="af0c7b418155a0ad3cc402f89149c9fae"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>dropPath</b> (std::vector&lt; <a class="el" href="struct_process_1_1_process_drop_handler_1_1_process_drop.html">ProcessDrop</a> &gt; &amp;drops, const QString &amp;data, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx) const noexcept</td></tr>

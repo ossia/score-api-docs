@@ -1,5 +1,8 @@
 var NAVTREEINDEX6 =
 {
+"class_audio_1_1_settings_1_1_view.html#a95bdaa95883f1cb774f07ff3e6ee9e39":[12,0,1,0,2,4],
+"class_audio_1_1_settings_1_1_view.html#a9829ce08bd6d02869e9ce858b7377736":[12,0,1,0,2,1],
+"class_audio_1_1_settings_1_1_view.html#a9bf52b42cecb45aab63eccc86eec6595":[12,0,1,0,2,7],
 "class_audio_1_1_settings_1_1_view.html#ab9b7f4c4a41f999c55dfaa81c648b9a1":[12,0,1,0,2,5],
 "class_audio_1_1_settings_1_1_view.html#af3812834ff044201669e639fdf4a6cf3":[12,0,1,0,2,3],
 "class_audio_1_1_settings_1_1_view.html#af6dc6bee3b47b3669f2014813dcc60e8":[12,0,1,0,2,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX6 =
 "class_curve_1_1_command_object_base.html#a791e1127c044b554bc3379fdfe280de5":[12,0,7,4,18],
 "class_curve_1_1_command_object_base.html#a85df84473425fb57abe0a205b7998d1f":[12,0,7,4,0],
 "class_curve_1_1_command_object_base.html#abab874d828b91ac921f2a8fbd999d757":[12,0,7,4,11],
-"class_curve_1_1_command_object_base.html#ac5c7d8a2a4c76ff672c92104737f2a8d":[12,0,7,4,14],
-"class_curve_1_1_command_object_base.html#acc012b0672727a5134e0fa1954ff98a4":[12,0,7,4,3],
-"class_curve_1_1_command_object_base.html#ad93f8f237ad7afc3872a19d1b0684cd4":[12,0,7,4,9],
-"class_curve_1_1_command_object_base.html#addc6a8b112e5b00de7df28b9a58896e3":[12,0,7,4,13]
+"class_curve_1_1_command_object_base.html#ac5c7d8a2a4c76ff672c92104737f2a8d":[12,0,7,4,14]
 };
