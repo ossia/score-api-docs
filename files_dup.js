@@ -1002,6 +1002,7 @@ var files_dup =
     [ "QGraphicsPixmapButton.hpp", "_q_graphics_pixmap_button_8hpp_source.html", null ],
     [ "QGraphicsPixmapEnum.hpp", "_q_graphics_pixmap_enum_8hpp_source.html", null ],
     [ "QGraphicsPixmapToggle.hpp", "_q_graphics_pixmap_toggle_8hpp_source.html", null ],
+    [ "QGraphicsRangeSlider.hpp", "_q_graphics_range_slider_8hpp_source.html", null ],
     [ "QGraphicsSelectablePixmapToggle.hpp", "_q_graphics_selectable_pixmap_toggle_8hpp_source.html", null ],
     [ "QGraphicsSlider.hpp", "_q_graphics_slider_8hpp_source.html", null ],
     [ "QGraphicsSliderBase.hpp", "_q_graphics_slider_base_8hpp_source.html", null ],
