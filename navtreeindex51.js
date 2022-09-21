@@ -1,5 +1,6 @@
 var NAVTREEINDEX51 =
 {
+"classvst3_1_1param__queue.html#ad82e81ba3818ed89e52466c2d931d895":[12,0,56,11,9],
 "classvst3_1_1param__queue.html#aef76960c1ab5bbcb4601e69140c29666":[12,0,56,11,11],
 "classvst3_1_1param__queue.html#af4e624ef012102e1cd79750dcafd1878":[12,0,56,11,8],
 "classvst3_1_1param__queue.html#afe54b144be879add15af00b29cdfb6ad":[12,0,56,11,10],
@@ -219,7 +220,7 @@ var NAVTREEINDEX51 =
 "lib_2core_2documentation_2commands_8hpp_source.html":[13,0,167],
 "lib_2core_2presenter_2_presenter_8hpp_source.html":[13,0,920],
 "lib_2core_2settings_2_settings_8hpp_source.html":[13,0,1206],
-"lib_2core_2view_2_window_8hpp_source.html":[13,0,1422],
+"lib_2core_2view_2_window_8hpp_source.html":[13,0,1423],
 "lib_2score_2model_2_component_8hpp_source.html":[13,0,191],
 "lib_2score_2plugins_2documentdelegate_2plugin_2_document_plugin_8hpp_source.html":[13,0,331],
 "lib_2score_2tools_2_metadata_8hpp_source.html":[13,0,715],
@@ -248,6 +249,5 @@ var NAVTREEINDEX51 =
 "namespace_plugin_loader.html":[11,0,9],
 "namespace_process.html":[12,0,39],
 "namespace_process.html":[11,0,10],
-"namespace_scenario.html":[12,0,45],
 "namespace_scenario.html":[11,0,11]
 };

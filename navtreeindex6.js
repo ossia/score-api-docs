@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"class_audio_1_1_settings_1_1_view.html#a18a25fbffd0eabdca1509147a71ba436":[12,0,1,0,2,6],
 "class_audio_1_1_settings_1_1_view.html#a8343165425cf3d8cbd3ed618c4774dbd":[12,0,1,0,2,8],
 "class_audio_1_1_settings_1_1_view.html#a95bdaa95883f1cb774f07ff3e6ee9e39":[12,0,1,0,2,4],
 "class_audio_1_1_settings_1_1_view.html#a9829ce08bd6d02869e9ce858b7377736":[12,0,1,0,2,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "class_curve_1_1_command_object_base.html#a51446f1cec783d0b6a0e0fe91a4e7473":[12,0,7,4,8],
 "class_curve_1_1_command_object_base.html#a6628ea571682b6bac480fa533a7e6766":[12,0,7,4,10],
 "class_curve_1_1_command_object_base.html#a791e1127c044b554bc3379fdfe280de5":[12,0,7,4,18],
-"class_curve_1_1_command_object_base.html#a85df84473425fb57abe0a205b7998d1f":[12,0,7,4,0],
-"class_curve_1_1_command_object_base.html#abab874d828b91ac921f2a8fbd999d757":[12,0,7,4,11]
+"class_curve_1_1_command_object_base.html#a85df84473425fb57abe0a205b7998d1f":[12,0,7,4,0]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX53 =
 {
+"struct_analysis_1_1_energy_difference.html#af26417cbeadffabb337252ff87a2e759":[12,0,0,3,1],
 "struct_analysis_1_1_energy_difference_1_1_metadata.html":[12,0,0,3,0],
 "struct_analysis_1_1_flatness.html":[12,0,0,4],
 "struct_analysis_1_1_flatness.html#a8235660aa3a069b327a0e21b36eeb1ef":[12,0,0,4,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX53 =
 "struct_control_1_1_has_custom_layer_3_01_t_00_01std_1_1void__t_3_01typename_01_t_1_1_layer_01_4_01_4.html":[12,0,5,13],
 "struct_control_1_1_has_custom_u_i.html":[12,0,5,14],
 "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_audio_filter_1_1_node_01_4.html":[12,0,5,15],
-"struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_audio_generator_1_1_node_01_4.html":[12,0,5,16],
-"struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_generator_1_1_node_01_4.html":[12,0,5,17]
+"struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_audio_generator_1_1_node_01_4.html":[12,0,5,16]
 };

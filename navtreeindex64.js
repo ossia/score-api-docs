@@ -1,5 +1,6 @@
 var NAVTREEINDEX64 =
 {
+"struct_q_meta_type_id_3_01std_1_1shared__ptr_3_01_media_1_1_audio_file_01_4_01_4.html#a32d2e194db37a431222982bb30d625b9a7c83c4e02ec705b91265f5e313cdafa8":[12,0,315,0],
 "struct_q_meta_type_id_3_01std_1_1shared__ptr_3_01_process_1_1_preset_01_4_01_4.html":[12,0,316],
 "struct_q_meta_type_id_3_01std_1_1shared__ptr_3_01_process_1_1_preset_01_4_01_4.html#a72f92a1569895bfe74d56c493ad53a78a23bb287eef31d127afcd4d37b50565c5":[12,0,316,0],
 "struct_q_meta_type_id_3_01std_1_1size__t_01_4.html":[12,0,317],
@@ -248,6 +249,5 @@ var NAVTREEINDEX64 =
 "struct_scenario_1_1_command_1_1_message_pairs.html":[12,0,45,0,55],
 "struct_scenario_1_1_command_1_1_message_pairs.html#aa1a0fdfb87fd65157d3f3b466b3e119a":[12,0,45,0,55,3],
 "struct_scenario_1_1_command_1_1_message_pairs.html#aa6e428f45a6c3b8c50369c9c22b1d1fc":[12,0,45,0,55,4],
-"struct_scenario_1_1_command_1_1_message_pairs.html#ab674fee2531b2e688209def4a3c07789":[12,0,45,0,55,1],
-"struct_scenario_1_1_command_1_1_message_pairs.html#ac2e40743d906be50fa761b2eaf6403db":[12,0,45,0,55,0]
+"struct_scenario_1_1_command_1_1_message_pairs.html#ab674fee2531b2e688209def4a3c07789":[12,0,45,0,55,1]
 };

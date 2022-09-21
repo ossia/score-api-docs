@@ -99,7 +99,7 @@ var NAVTREEINDEX4 =
 "_scenario_displayed_elements_provider_8hpp_source.html":[13,0,1079],
 "_scenario_displayed_elements_tool_palette_8hpp_source.html":[13,0,1080],
 "_scenario_displayed_elements_tool_palette_factory_8hpp_source.html":[13,0,1081],
-"_scenario_document_2_timebar_8hpp_source.html":[13,0,1312],
+"_scenario_document_2_timebar_8hpp_source.html":[13,0,1313],
 "_scenario_document_factory_8hpp_source.html":[13,0,1082],
 "_scenario_document_model_8hpp_source.html":[13,0,1083],
 "_scenario_document_presenter_8hpp_source.html":[13,0,1084],

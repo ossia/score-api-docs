@@ -1273,6 +1273,7 @@ var files_dup =
     [ "StateMenuOverlay.hpp", "_state_menu_overlay_8hpp_source.html", null ],
     [ "StateModel.hpp", "_state_model_8hpp_source.html", null ],
     [ "StatePresenter.hpp", "_state_presenter_8hpp_source.html", null ],
+    [ "StateSelection.hpp", "_state_selection_8hpp_source.html", null ],
     [ "StateTransitions.hpp", "_state_transitions_8hpp_source.html", null ],
     [ "StateView.hpp", "_state_view_8hpp_source.html", null ],
     [ "StdVariantSerialization.hpp", "_std_variant_serialization_8hpp_source.html", null ],

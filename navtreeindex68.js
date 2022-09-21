@@ -1,5 +1,6 @@
 var NAVTREEINDEX68 =
 {
+"struct_variant_data_stream_serializer.html#a5da06c06a10b7d9284572d7100a2a026":[12,0,521,0],
 "struct_variant_data_stream_serializer.html#a69b84a1df54ad37fcb8e52ab24dea5ec":[12,0,521,3],
 "struct_variant_data_stream_serializer.html#a94629a13ad198c779d0c2bd0492cd082":[12,0,521,4],
 "struct_variant_data_stream_serializer.html#aefd13c19f0f144d913f5770777418498":[12,0,521,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX68 =
 "structoscr_1_1_message_bus_sender.html":[12,0,34,21],
 "structoscr_1_1_message_bus_sender.html#a18eda2ac821db0903f3667a73aa9db3d":[12,0,34,21,1],
 "structoscr_1_1_message_bus_sender.html#a809c3cac45e539fa3719280ec4503bbe":[12,0,34,21,0],
-"structoscr_1_1_message_bus_sender.html#ae7101c49467309364c5a10d7ea16d15a":[12,0,34,21,2],
-"structoscr_1_1_message_bus_wrapper_from_ui.html":[12,0,34,22]
+"structoscr_1_1_message_bus_sender.html#ae7101c49467309364c5a10d7ea16d15a":[12,0,34,21,2]
 };

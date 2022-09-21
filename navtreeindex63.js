@@ -1,5 +1,6 @@
 var NAVTREEINDEX63 =
 {
+"struct_protocols_1_1_m_i_d_i_specific_settings.html#ac5393555c2e6eda810e8d69e1cd5c1c0":[12,0,40,41,6],
 "struct_protocols_1_1_m_i_d_i_specific_settings.html#ad256b7fc3acf2b9248057e95cd1cba9c":[12,0,40,41,7],
 "struct_protocols_1_1_m_i_d_i_specific_settings.html#ad7f2505ac8519745180bff227d4c839c":[12,0,40,41,1],
 "struct_protocols_1_1_m_i_d_i_specific_settings.html#aed1c55ef6309a262de2cb4f6aea9ad8e":[12,0,40,41,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX63 =
 "struct_q_meta_type_id_3_01std_1_1shared__ptr_3_01_execution_1_1_event_component_01_4_01_4.html#afff6970005b147c6fc3cdbce39af9bdaac648ebc6f55692e458e30789c56b6629":[12,0,313,0],
 "struct_q_meta_type_id_3_01std_1_1shared__ptr_3_01_execution_1_1_process_component_01_4_01_4.html":[12,0,314],
 "struct_q_meta_type_id_3_01std_1_1shared__ptr_3_01_execution_1_1_process_component_01_4_01_4.html#aceaf58edf768e3108df649826b4e32faa8ff98b955dc781ed917ca5fc3da8f8bd":[12,0,314,0],
-"struct_q_meta_type_id_3_01std_1_1shared__ptr_3_01_media_1_1_audio_file_01_4_01_4.html":[12,0,315],
-"struct_q_meta_type_id_3_01std_1_1shared__ptr_3_01_media_1_1_audio_file_01_4_01_4.html#a32d2e194db37a431222982bb30d625b9a7c83c4e02ec705b91265f5e313cdafa8":[12,0,315,0]
+"struct_q_meta_type_id_3_01std_1_1shared__ptr_3_01_media_1_1_audio_file_01_4_01_4.html":[12,0,315]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX55 =
 {
+"struct_dataflow_1_1_audio_outlet_factory.html":[12,0,8,3],
 "struct_dataflow_1_1_audio_outlet_factory.html#a3feabdd35e60703bf3f81a4993c5fdad":[12,0,8,3,2],
 "struct_dataflow_1_1_audio_outlet_factory.html#a659aba4ae954fa7ea43ed3f318ca47b9":[12,0,8,3,3],
 "struct_dataflow_1_1_audio_outlet_factory.html#aae2e0d707d635ad26e99e94233a1beec":[12,0,8,3,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX55 =
 "struct_execution_1_1_settings_1_1_commit_policies.html#a5545217d2d6961cf2e907d05c79ac65f":[12,0,11,1,0,2],
 "struct_execution_1_1_settings_1_1_commit_policies.html#a87b999e3cb232b1ed59ba359ac9cc024":[12,0,11,1,0,1],
 "struct_execution_1_1_settings_1_1_commit_policies.html#aa4186857b39a9f84e481176cc7a740b7":[12,0,11,1,0,0],
-"struct_execution_1_1_settings_1_1_commit_policies.html#abc777bb8c08676f662db097aed0012de":[12,0,11,1,0,4],
-"struct_execution_1_1_settings_1_1_merging_policies.html":[12,0,11,1,1]
+"struct_execution_1_1_settings_1_1_commit_policies.html#abc777bb8c08676f662db097aed0012de":[12,0,11,1,0,4]
 };

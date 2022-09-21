@@ -1,5 +1,6 @@
 var NAVTREEINDEX37 =
 {
+"class_scenario_1_1_simple_combo_box.html#ae1a8faec69a086a7e1df1d6d97133ad1":[12,0,45,243,0],
 "class_scenario_1_1_simple_expression_editor_widget.html":[12,0,45,244],
 "class_scenario_1_1_simple_expression_editor_widget.html#a006411f07deabf9a8b9e5d2974057bdc":[12,0,45,244,2],
 "class_scenario_1_1_simple_expression_editor_widget.html#a1ed2cf6f8ede1347b15652006d67af0e":[12,0,45,244,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX37 =
 "class_scenario_1_1_time_ruler.html#a02bead6543c092e7b0070abb66d05ae1a8f19a8c7566af54ea8981029730e5465":[12,0,45,285,0,1],
 "class_scenario_1_1_time_ruler.html#a616cf21e3eab32647404b37bb896646a":[12,0,45,285,1],
 "class_scenario_1_1_time_ruler_base.html":[12,0,45,286],
-"class_scenario_1_1_time_ruler_base.html#a29f36e4d7c1b4511ce966f691f121352":[12,0,45,286,2],
-"class_scenario_1_1_time_ruler_base.html#a313dd915e9f89690b9fa4836eb77bfd9":[12,0,45,286,14]
+"class_scenario_1_1_time_ruler_base.html#a29f36e4d7c1b4511ce966f691f121352":[12,0,45,286,2]
 };

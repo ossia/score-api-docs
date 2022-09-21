@@ -1,5 +1,6 @@
 var NAVTREEINDEX50 =
 {
+"classscore__plugin__audio.html#ad9cb155f8438f2ebf60bc13dcbb81409":[12,0,344,0],
 "classscore__plugin__automation.html":[12,0,345],
 "classscore__plugin__automation.html#a4b42f5289a1054fb50f88277be0ac627":[12,0,345,1],
 "classscore__plugin__automation.html#a7c826fbdb58b6ced070fa513c178b05f":[12,0,345,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX50 =
 "classvst3_1_1param__queue.html#a30b80f22e052980b02e9d42c07a2cb6c":[12,0,56,11,2],
 "classvst3_1_1param__queue.html#a428c3fb257e2c7e9f5c2068391b2fcef":[12,0,56,11,7],
 "classvst3_1_1param__queue.html#a528c69f59c6fc83b66cfffe9a38ee1d0":[12,0,56,11,6],
-"classvst3_1_1param__queue.html#a7d43ca9d68626d4f1a74245c522f6981":[12,0,56,11,1],
-"classvst3_1_1param__queue.html#ad82e81ba3818ed89e52466c2d931d895":[12,0,56,11,9]
+"classvst3_1_1param__queue.html#a7d43ca9d68626d4f1a74245c522f6981":[12,0,56,11,1]
 };
