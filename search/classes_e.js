@@ -41,7 +41,7 @@ var searchData=
   ['ossiavariantjsonserializer_4526',['OssiaVariantJSONSerializer',['../struct_ossia_variant_j_s_o_n_serializer.html',1,'']]],
   ['outcontrol_4527',['OutControl',['../struct_control_1_1_out_control.html',1,'Control']]],
   ['outlet_4528',['Outlet',['../class_process_1_1_outlet.html',1,'Process::Outlet'],['../class_outlet.html',1,'Outlet']]],
-  ['outlet_5fvis_4529',['outlet_vis',['../struct_avnd_jit_1_1outlet__vis.html',1,'AvndJit::outlet_vis'],['../struct_jit_1_1outlet__vis.html',1,'Jit::outlet_vis']]],
+  ['outlet_5fvis_4529',['outlet_vis',['../struct_jit_1_1outlet__vis.html',1,'Jit::outlet_vis'],['../struct_avnd_jit_1_1outlet__vis.html',1,'AvndJit::outlet_vis']]],
   ['outletinitfunc_4530',['OutletInitFunc',['../structoscr_1_1_outlet_init_func.html',1,'oscr']]],
   ['outletinspectorfactory_4531',['OutletInspectorFactory',['../class_dataflow_1_1_outlet_inspector_factory.html',1,'Dataflow']]],
   ['output_4532',['Output',['../struct_nodes_1_1_midi_hi_res_1_1_output.html',1,'Nodes::MidiHiRes']]],
