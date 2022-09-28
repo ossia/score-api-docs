@@ -1,5 +1,8 @@
 var NAVTREEINDEX58 =
 {
+"struct_jit_1_1outlet__vis.html#a9749a49f286f4f3b0530a32ba4d3c18d":[12,0,23,14,2],
+"struct_jit_1_1outlet__vis.html#aa8242fae358f16f5e6ca8a7cdd2e0bbf":[12,0,23,14,0],
+"struct_json_value.html":[12,0,144],
 "struct_json_value.html#a2735d0690549321036090afa531330bc":[12,0,144,8],
 "struct_json_value.html#a28a6ac8a3ed30414da6903127d6cf96e":[12,0,144,9],
 "struct_json_value.html#a68390eb3fa2e062f1593e6e7e4310744":[12,0,144,15],
@@ -246,8 +249,5 @@ var NAVTREEINDEX58 =
 "struct_media_1_1_audio_file.html#a4ee4e1ac653d90ad68c4e01f2f8c573a":[12,0,29,6,18],
 "struct_media_1_1_audio_file.html#a5411faed409d7ccbe92ec947a303a934":[12,0,29,6,28],
 "struct_media_1_1_audio_file.html#a5aad30278bdc8b9f2641ad44b042c38d":[12,0,29,6,20],
-"struct_media_1_1_audio_file.html#a6a3e510fb42a1ee9ceb5bbc4599dc1e6":[12,0,29,6,32],
-"struct_media_1_1_audio_file.html#a6bfa5df17a99adc9106b2376def1d1db":[12,0,29,6,31],
-"struct_media_1_1_audio_file.html#a70346c66e6f5c939d53b1a9cff3ee71b":[12,0,29,6,11],
-"struct_media_1_1_audio_file.html#a92072c41c3f9d00edaa4d4d9902083aa":[12,0,29,6,25]
+"struct_media_1_1_audio_file.html#a6a3e510fb42a1ee9ceb5bbc4599dc1e6":[12,0,29,6,32]
 };

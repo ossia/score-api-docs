@@ -1,5 +1,8 @@
 var NAVTREEINDEX69 =
 {
+"structoscr_1_1_message_bus_wrapper_from_ui_3_01_info_01_4.html":[12,0,34,23],
+"structoscr_1_1_message_bus_wrapper_from_ui_3_01_info_01_4.html#a7acc4af0c0c0eb506a19e664f4e22e1a":[12,0,34,23,0],
+"structoscr_1_1_message_bus_wrapper_to_ui.html":[12,0,34,24],
 "structoscr_1_1_message_bus_wrapper_to_ui_3_01_info_01_4.html":[12,0,34,25],
 "structoscr_1_1_message_bus_wrapper_to_ui_3_01_info_01_4.html#a141faea657ef587aa71c80a2f16ac041":[12,0,34,25,0],
 "structoscr_1_1_midi_file_octaver.html":[12,0,34,26],
@@ -130,8 +133,8 @@ var NAVTREEINDEX69 =
 "structoscr_1_1setup___impl0.html#a2ad50f84e6eea6ac4a97c6483330c22d":[12,0,34,38,2],
 "structoscr_1_1setup___impl0.html#a475fec302bc8c4f7d8821ee592319084":[12,0,34,38,7],
 "structoscr_1_1setup___impl0.html#a61f8e7ead77c10b7719c85d0dcea206f":[12,0,34,38,9],
-"structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,34,38,5],
 "structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,34,38,6],
+"structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,34,38,5],
 "structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,34,38,4],
 "structoscr_1_1setup___impl0.html#ab0925cd37367396714b0651fb445ad3d":[12,0,34,38,10],
 "structoscr_1_1setup___impl0.html#ac697cbf094cf1842eb7949c2bae9439d":[12,0,34,38,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX69 =
 "structscore_1_1_application_context.html#a7de0ade3f09de9cf72ea5bad1256cdcc":[12,0,46,20,0],
 "structscore_1_1_application_context.html#aad836474a385889c0486ecfeeadb06df":[12,0,46,20,7],
 "structscore_1_1_application_context.html#ae40c943760793bab6015490e56a44d34":[12,0,46,20,6],
-"structscore_1_1_application_context.html#ae71a4a7f56ab86bfdb5308ed0bae8d00":[12,0,46,20,9],
-"structscore_1_1_application_context.html#ae9a5fb08fd24f276c868a77d7e6465be":[12,0,46,20,8],
-"structscore_1_1_application_context.html#aeb284339129087bc89d3cb9b26825a68":[12,0,46,20,2],
-"structscore_1_1_application_context.html#af71dfe5537d9ba73aad72e1a80ed8da2":[12,0,46,20,5]
+"structscore_1_1_application_context.html#ae71a4a7f56ab86bfdb5308ed0bae8d00":[12,0,46,20,9]
 };

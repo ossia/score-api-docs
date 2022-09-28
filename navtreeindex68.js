@@ -1,5 +1,8 @@
 var NAVTREEINDEX68 =
 {
+"struct_variant_data_stream_serializer.html#a69b84a1df54ad37fcb8e52ab24dea5ec":[12,0,521,3],
+"struct_variant_data_stream_serializer.html#a94629a13ad198c779d0c2bd0492cd082":[12,0,521,4],
+"struct_variant_data_stream_serializer.html#aefd13c19f0f144d913f5770777418498":[12,0,521,1],
 "struct_variant_j_s_o_n_deserializer.html":[12,0,522],
 "struct_variant_j_s_o_n_deserializer.html#a06e7f47c137541e4c5fb59764578cc65":[12,0,522,1],
 "struct_variant_j_s_o_n_deserializer.html#a0b71db249d4952bcf5e25f3e072cae2a":[12,0,522,3],
@@ -217,8 +220,8 @@ var NAVTREEINDEX68 =
 "structoscr_1_1_inlet_init_func.html#a00061a4355a850dfe44bdc6e5d2c13a3":[12,0,34,14,9],
 "structoscr_1_1_inlet_init_func.html#a245ccc5eaa53e8f1281657af9bfb0523":[12,0,34,14,6],
 "structoscr_1_1_inlet_init_func.html#a26d3210108ad9780d409b1d83fea759b":[12,0,34,14,7],
-"structoscr_1_1_inlet_init_func.html#a3fe66fd8146371ec86505ce8a99a7c6c":[12,0,34,14,2],
 "structoscr_1_1_inlet_init_func.html#a3fe66fd8146371ec86505ce8a99a7c6c":[12,0,34,14,3],
+"structoscr_1_1_inlet_init_func.html#a3fe66fd8146371ec86505ce8a99a7c6c":[12,0,34,14,2],
 "structoscr_1_1_inlet_init_func.html#ab36f11f1e90c2adb84073e27bc7825c2":[12,0,34,14,5],
 "structoscr_1_1_inlet_init_func.html#abb4cabdfafbc76baa70e60ae3f998bea":[12,0,34,14,4],
 "structoscr_1_1_inlet_init_func.html#ace7897bd30ea620f3b89ed0d9d7f40e9":[12,0,34,14,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX68 =
 "structoscr_1_1_message_bus_sender.html#a18eda2ac821db0903f3667a73aa9db3d":[12,0,34,21,1],
 "structoscr_1_1_message_bus_sender.html#a809c3cac45e539fa3719280ec4503bbe":[12,0,34,21,0],
 "structoscr_1_1_message_bus_sender.html#ae7101c49467309364c5a10d7ea16d15a":[12,0,34,21,2],
-"structoscr_1_1_message_bus_wrapper_from_ui.html":[12,0,34,22],
-"structoscr_1_1_message_bus_wrapper_from_ui_3_01_info_01_4.html":[12,0,34,23],
-"structoscr_1_1_message_bus_wrapper_from_ui_3_01_info_01_4.html#a7acc4af0c0c0eb506a19e664f4e22e1a":[12,0,34,23,0],
-"structoscr_1_1_message_bus_wrapper_to_ui.html":[12,0,34,24]
+"structoscr_1_1_message_bus_wrapper_from_ui.html":[12,0,34,22]
 };

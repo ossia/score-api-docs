@@ -1,5 +1,8 @@
 var NAVTREEINDEX53 =
 {
+"struct_analysis_1_1_crest_1_1_metadata.html":[12,0,0,1,0],
+"struct_analysis_1_1_energy_difference.html":[12,0,0,3],
+"struct_analysis_1_1_energy_difference.html#a896f3d2985c223dd28e1120071a9d471":[12,0,0,3,2],
 "struct_analysis_1_1_energy_difference.html#af26417cbeadffabb337252ff87a2e759":[12,0,0,3,1],
 "struct_analysis_1_1_energy_difference_1_1_metadata.html":[12,0,0,3,0],
 "struct_analysis_1_1_flatness.html":[12,0,0,4],
@@ -246,8 +249,5 @@ var NAVTREEINDEX53 =
 "struct_control_1_1_h_s_v_slider.html#aaaab0510b51f6730408804a1e20070be":[12,0,5,21,3],
 "struct_control_1_1_h_s_v_slider.html#aef5a413a93b027254a4e36bc69ab0bb6":[12,0,5,21,6],
 "struct_control_1_1_has_custom_layer.html":[12,0,5,12],
-"struct_control_1_1_has_custom_layer_3_01_t_00_01std_1_1void__t_3_01typename_01_t_1_1_layer_01_4_01_4.html":[12,0,5,13],
-"struct_control_1_1_has_custom_u_i.html":[12,0,5,14],
-"struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_audio_filter_1_1_node_01_4.html":[12,0,5,15],
-"struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_audio_generator_1_1_node_01_4.html":[12,0,5,16]
+"struct_control_1_1_has_custom_layer_3_01_t_00_01std_1_1void__t_3_01typename_01_t_1_1_layer_01_4_01_4.html":[12,0,5,13]
 };
