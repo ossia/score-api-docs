@@ -18,6 +18,7 @@ var struct_l_v2_1_1_host_context =
     [ "fixed_size", "struct_l_v2_1_1_host_context.html#a0598dafaa7f0006bddb811a4ae985f32", null ],
     [ "forge", "struct_l_v2_1_1_host_context.html#a61d2919b8daae9bfed660a48f3214118", null ],
     [ "global", "struct_l_v2_1_1_host_context.html#a156a28a6674d36d1e5346fe8d48d3775", null ],
+    [ "host_ui_type", "struct_l_v2_1_1_host_context.html#aed7fc8889411b98a6702164320888af1", null ],
     [ "input_class", "struct_l_v2_1_1_host_context.html#a62de526b6bd6973083dde79fd4fd1675", null ],
     [ "midi_buffer_size", "struct_l_v2_1_1_host_context.html#a5965f192169030eeef18a86ace8d07d4", null ],
     [ "midi_event_class", "struct_l_v2_1_1_host_context.html#acd2b634299e5a3e4d20c4f2af1dea4f0", null ],
