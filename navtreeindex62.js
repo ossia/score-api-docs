@@ -1,5 +1,10 @@
 var NAVTREEINDEX62 =
 {
+"struct_process_1_1_layer_context.html#a3b4287209f68957bd8d3ce2423b12893":[12,0,39,39,0],
+"struct_process_1_1_layer_context.html#a8fc5a6bb773b67a2e114b868baa1148d":[12,0,39,39,1],
+"struct_process_1_1_layout_builder_base.html":[12,0,39,48],
+"struct_process_1_1_layout_builder_base.html#a03187f3daf3fd303219ff76d72b1721b":[12,0,39,48,4],
+"struct_process_1_1_layout_builder_base.html#a1119573aae26656d8db8a38091c84281":[12,0,39,48,15],
 "struct_process_1_1_layout_builder_base.html#a145049cc33341cb017c5608e8d63e5fb":[12,0,39,48,9],
 "struct_process_1_1_layout_builder_base.html#a300e8637b0b309a62673c7d5c54763da":[12,0,39,48,14],
 "struct_process_1_1_layout_builder_base.html#a4e6178ad6882f0c279c1c2cd8aa72b0b":[12,0,39,48,13],
@@ -244,10 +249,5 @@ var NAVTREEINDEX62 =
 "struct_protocols_1_1_libmapper_client_specific_settings.html":[12,0,40,29],
 "struct_protocols_1_1_libmapper_client_specific_settings.html#a1454e1f53efd51b1da6684bd9f756f0f":[12,0,40,29,0],
 "struct_protocols_1_1_local_specific_settings.html":[12,0,40,34],
-"struct_protocols_1_1_local_specific_settings.html#a37aaba774200b1304aef82c0d5983dc4":[12,0,40,34,1],
-"struct_protocols_1_1_local_specific_settings.html#a98eec5a96da486f31f6b80d2a41856e6":[12,0,40,34,0],
-"struct_protocols_1_1_m_i_d_i_specific_settings.html":[12,0,40,41],
-"struct_protocols_1_1_m_i_d_i_specific_settings.html#a45d0b66099e23983018916be08499b2f":[12,0,40,41,4],
-"struct_protocols_1_1_m_i_d_i_specific_settings.html#a96edc66808394ecd36565c282ed78a4f":[12,0,40,41,3],
-"struct_protocols_1_1_m_i_d_i_specific_settings.html#abf02cc93a9b4d649449462339194e5a2":[12,0,40,41,2]
+"struct_protocols_1_1_local_specific_settings.html#a37aaba774200b1304aef82c0d5983dc4":[12,0,40,34,1]
 };

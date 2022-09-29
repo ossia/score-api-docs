@@ -1,5 +1,10 @@
 var NAVTREEINDEX65 =
 {
+"struct_scenario_1_1_click_on_slot_handle___event.html#afcbf16c0b521f0e665d088ea5a22263e":[12,0,45,23,2],
+"struct_scenario_1_1_command_1_1_message_pairs.html":[12,0,45,0,55],
+"struct_scenario_1_1_command_1_1_message_pairs.html#aa1a0fdfb87fd65157d3f3b466b3e119a":[12,0,45,0,55,3],
+"struct_scenario_1_1_command_1_1_message_pairs.html#aa6e428f45a6c3b8c50369c9c22b1d1fc":[12,0,45,0,55,4],
+"struct_scenario_1_1_command_1_1_message_pairs.html#ab674fee2531b2e688209def4a3c07789":[12,0,45,0,55,1],
 "struct_scenario_1_1_command_1_1_message_pairs.html#ac2e40743d906be50fa761b2eaf6403db":[12,0,45,0,55,0],
 "struct_scenario_1_1_command_1_1_message_pairs.html#aefe07c0b9d9fdb25401ec426ebbf0c91":[12,0,45,0,55,2],
 "struct_scenario_1_1_command_1_1color__converter.html":[12,0,45,0,22],
@@ -244,10 +249,5 @@ var NAVTREEINDEX65 =
 "struct_scenario_1_1_slot_path.html#a37d9da2e8b3c8b9f6533f573e9df59ee":[12,0,45,252,12],
 "struct_scenario_1_1_slot_path.html#a917a863a1aa2dfcf6efea3a3042277c3":[12,0,45,252,8],
 "struct_scenario_1_1_slot_path.html#aaadaf840dafb8b78b644c249c58e67f9":[12,0,45,252,1],
-"struct_scenario_1_1_slot_path.html#ac524cc32d87f2aaf83dea5c7f507fa48":[12,0,45,252,10],
-"struct_scenario_1_1_slot_path.html#ad565b6bb722d2d873c5d59ff4556821f":[12,0,45,252,2],
-"struct_scenario_1_1_slot_path.html#ad76142eb28b1b6ad71a4c04607575302":[12,0,45,252,3],
-"struct_scenario_1_1_slot_path.html#ae2d69df5750da8edc554f99c8203f504":[12,0,45,252,6],
-"struct_scenario_1_1_slot_path.html#ae5db15545aeb1661df399b3dd2a38c49":[12,0,45,252,9],
-"struct_scenario_1_1_slot_path.html#ae65d0c9bbc8d19a2505fa7a31d68614a":[12,0,45,252,11]
+"struct_scenario_1_1_slot_path.html#ac524cc32d87f2aaf83dea5c7f507fa48":[12,0,45,252,10]
 };

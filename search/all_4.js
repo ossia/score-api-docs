@@ -12,7 +12,7 @@ var searchData=
   ['editiongrid_567',['EditionGrid',['../class_scenario_1_1_edition_grid.html',1,'Scenario']]],
   ['editionsettings_568',['EditionSettings',['../class_scenario_1_1_edition_settings.html',1,'Scenario::EditionSettings'],['../class_curve_1_1_edition_settings.html',1,'Curve::EditionSettings']]],
   ['editiontoolforcreate_569',['EditionToolForCreate',['../class_curve_1_1_edition_tool_for_create.html',1,'Curve']]],
-  ['editjscontext_570',['EditJsContext',['../class_edit_js_context.html',1,'']]],
+  ['editjscontext_570',['EditJsContext',['../class_j_s_1_1_edit_js_context.html',1,'JS']]],
   ['editjsscript_571',['EditJSScript',['../class_j_s_1_1_edit_j_s_script.html',1,'JS']]],
   ['editortab_572',['EditorTab',['../struct_process_1_1_multi_script_dialog_1_1_editor_tab.html',1,'Process::MultiScriptDialog']]],
   ['editpdpath_573',['EditPdPath',['../class_pd_1_1_edit_pd_path.html',1,'Pd']]],
