@@ -1,6 +1,7 @@
 var class_j_s_1_1_executor_1_1js__node =
 [
     [ "js_node", "class_j_s_1_1_executor_1_1js__node.html#a85003bb4933295888b153c7071daf86b", null ],
+    [ "impulse", "class_j_s_1_1_executor_1_1js__node.html#a0942963219b005e4c2b090d6798ccd7a", null ],
     [ "run", "class_j_s_1_1_executor_1_1js__node.html#a2203e38719dc7c7cf527ff7216893f6a", null ],
     [ "setControl", "class_j_s_1_1_executor_1_1js__node.html#a1eeee2ab6382206501eba9dc9fe23394", null ],
     [ "setScript", "class_j_s_1_1_executor_1_1js__node.html#ade7777794565e1b02f0df15728ce9cbe", null ],

@@ -30,7 +30,7 @@ var searchData=
   ['brushset_187',['BrushSet',['../structscore_1_1_brush_set.html',1,'score']]],
   ['buildpipeline_188',['buildPipeline',['../namespacescore_1_1gfx.html#a1cee3a6e153623e3259a1b88ffcafa44',1,'score::gfx']]],
   ['busactivationvisitor_189',['BusActivationVisitor',['../structvst3_1_1_bus_activation_visitor.html',1,'vst3']]],
-  ['button_190',['Button',['../struct_control_1_1_button.html',1,'Control::Button'],['../struct_widget_factory_1_1_button.html',1,'WidgetFactory::Button']]],
+  ['button_190',['Button',['../struct_control_1_1_button.html',1,'Control::Button'],['../struct_widget_factory_1_1_button.html',1,'WidgetFactory::Button'],['../class_button.html',1,'Button']]],
   ['bytebeat_5fnode_191',['bytebeat_node',['../class_jit_1_1bytebeat__node.html',1,'Jit']]],
   ['bytebeatexecutor_192',['BytebeatExecutor',['../class_jit_1_1_bytebeat_executor.html',1,'Jit']]],
   ['bytebeatlanguagespec_193',['BytebeatLanguageSpec',['../struct_jit_1_1_bytebeat_language_spec.html',1,'Jit']]]

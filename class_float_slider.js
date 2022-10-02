@@ -4,7 +4,7 @@ var class_float_slider =
     [ "getMax", "class_float_slider.html#ac32b6e7d921eb58aae6fd20be60e2743", null ],
     [ "init", "class_float_slider.html#a5b8731825abd48d3f80b1e09bc068763", null ],
     [ "initChanged", "class_float_slider.html#ac528c86e558b53a81f38fc3a38e14ce7", null ],
-    [ "is_control", "class_float_slider.html#a3858619ac2d1523366093660cbc8615b", null ],
+    [ "isEvent", "class_float_slider.html#afbeb7c2edebec6c2162e85a43a7e40ce", null ],
     [ "make", "class_float_slider.html#a28c609540ef7d559f34acf4a622a4b57", null ],
     [ "maxChanged", "class_float_slider.html#acf9cfe30cf9c93578e508be22dc31b32", null ],
     [ "setInit", "class_float_slider.html#a481d000895a7628fa2afc6738eaa6d25", null ],
