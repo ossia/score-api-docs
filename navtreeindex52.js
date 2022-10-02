@@ -1,5 +1,6 @@
 var NAVTREEINDEX52 =
 {
+"lv2__atom__helpers_8hpp_source.html":[13,0,678],
 "models_8hpp_source.html":[13,0,789],
 "mvp_8hpp_source.html":[13,0,813],
 "namespace_automation.html":[12,0,2],
@@ -15,15 +16,15 @@ var NAVTREEINDEX52 =
 "namespace_execution.html":[12,0,11],
 "namespace_gfx.html":[12,0,17],
 "namespace_gfx.html":[11,0,5],
-"namespace_inspector.html":[11,0,7],
 "namespace_inspector.html":[12,0,19],
+"namespace_inspector.html":[11,0,7],
 "namespace_local_tree.html":[12,0,26],
 "namespace_local_tree.html":[11,0,8],
 "namespace_plugin_loader.html":[11,0,9],
 "namespace_process.html":[12,0,39],
 "namespace_process.html":[11,0,10],
-"namespace_scenario.html":[11,0,11],
 "namespace_scenario.html":[12,0,45],
+"namespace_scenario.html":[11,0,11],
 "namespace_state.html":[11,0,13],
 "namespace_state.html":[12,0,50],
 "namespacegrph.html":[11,0,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX52 =
 "score__plugin__pd_8hpp_source.html":[13,0,1154],
 "score__plugin__protocols_8hpp_source.html":[13,0,1155],
 "score__plugin__recording_8hpp_source.html":[13,0,1156],
-"score__plugin__remotecontrol_8hpp_source.html":[13,0,1157],
-"score__plugin__scenario_8hpp_source.html":[13,0,1158]
+"score__plugin__remotecontrol_8hpp_source.html":[13,0,1157]
 };

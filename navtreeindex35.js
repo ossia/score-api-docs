@@ -1,5 +1,6 @@
 var NAVTREEINDEX35 =
 {
+"class_scenario_1_1_minimap.html#aef5fd6a290d1e4b5e4aaa52676568c6c":[12,0,45,150,2],
 "class_scenario_1_1_minimap_graphics_view.html":[12,0,45,151],
 "class_scenario_1_1_minimap_graphics_view.html#a8006dda6175e221ece2ddc503ee2e39c":[12,0,45,151,1],
 "class_scenario_1_1_minimap_graphics_view.html#aee0badba0660a2e4127da0bdf682f11e":[12,0,45,151,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX35 =
 "class_scenario_1_1_scenario_displayed_elements_provider.html":[12,0,45,217],
 "class_scenario_1_1_scenario_displayed_elements_provider.html#a4ed1e9d8af1ef07c3e631cf66af08137":[12,0,45,217,1],
 "class_scenario_1_1_scenario_displayed_elements_provider.html#a67bdd2f7663a7ab226df06b44450ef2e":[12,0,45,217,0],
-"class_scenario_1_1_scenario_displayed_elements_provider.html#ad52ba79894f9ce65a8df430955642d6a":[12,0,45,217,2],
-"class_scenario_1_1_scenario_displayed_elements_tool_palette.html":[12,0,45,218]
+"class_scenario_1_1_scenario_displayed_elements_provider.html#ad52ba79894f9ce65a8df430955642d6a":[12,0,45,217,2]
 };

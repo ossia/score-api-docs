@@ -1,5 +1,6 @@
 var NAVTREEINDEX27 =
 {
+"class_protocols_1_1_leapmotion_protocol_settings_widget.html#a05703dc70192f57151c6f9d9f4dc1bf4":[12,0,40,23,2],
 "class_protocols_1_1_leapmotion_protocol_settings_widget.html#a323028a52a7923c70f1c457536a9ef55":[12,0,40,23,4],
 "class_protocols_1_1_leapmotion_protocol_settings_widget.html#a3e2d1a957b333bb8ede25b4faf615c59":[12,0,40,23,3],
 "class_protocols_1_1_leapmotion_protocol_settings_widget.html#a78578a053278b595f5d43c55e0488151":[12,0,40,23,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX27 =
 "class_recording_1_1_application_plugin.html#a9b4babbff89955688e358802f77da386":[12,0,41,0,0],
 "class_recording_1_1_automation_recorder.html":[12,0,41,1],
 "class_recording_1_1_automation_recorder.html#a1016ceea8f5845d2d6a9794f3f7e4064":[12,0,41,1,10],
-"class_recording_1_1_automation_recorder.html#a13f3a30f0842c2e55291dff53107bcdf":[12,0,41,1,1],
-"class_recording_1_1_automation_recorder.html#a19421cb430dc50779cdaac89a822c81f":[12,0,41,1,11]
+"class_recording_1_1_automation_recorder.html#a13f3a30f0842c2e55291dff53107bcdf":[12,0,41,1,1]
 };

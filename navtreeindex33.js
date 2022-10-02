@@ -1,5 +1,6 @@
 var NAVTREEINDEX33 =
 {
+"class_scenario_1_1_ghost_interval_drop_handler.html#adbc45b77b266d547d1255db1b8f897e6":[12,0,45,114,3],
 "class_scenario_1_1_good_old_displacement_policy.html":[12,0,45,115],
 "class_scenario_1_1_graphal_interval_presenter.html":[12,0,45,116],
 "class_scenario_1_1_graphal_interval_presenter.html#a1c8a678a6eadbadd06f0ea6f08213e8e":[12,0,45,116,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX33 =
 "class_scenario_1_1_interval_presenter.html#ad6238ebc2065777e5098ed8ce3db4dcf":[12,0,45,128,7],
 "class_scenario_1_1_interval_presenter.html#ae27b2b3680818637f6c2c8036540bb36":[12,0,45,128,21],
 "class_scenario_1_1_interval_presenter.html#ae7c82d0b6a2de1216b85be68070c12a7":[12,0,45,128,32],
-"class_scenario_1_1_interval_presenter.html#aedb063e1110dbc9d4fc0100632663775":[12,0,45,128,13],
-"class_scenario_1_1_interval_presenter.html#aefb7b10c7b9ed722b38b5d31a3b3ad2a":[12,0,45,128,19]
+"class_scenario_1_1_interval_presenter.html#aedb063e1110dbc9d4fc0100632663775":[12,0,45,128,13]
 };
