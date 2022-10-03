@@ -1,5 +1,8 @@
 var NAVTREEINDEX26 =
 {
+"class_process_1_1_process_factory___t.html":[12,0,39,76],
+"class_process_1_1_process_factory___t.html#a0e2a8c69d25e2244812cba63c71ba540":[12,0,39,76,5],
+"class_process_1_1_process_factory___t.html#a150d25aeedf555434ed7cacfd5b3ee9c":[12,0,39,76,3],
 "class_process_1_1_process_factory___t.html#a27e2022fc692305c9881d6c54e319d73":[12,0,39,76,0],
 "class_process_1_1_process_factory___t.html#a883afd1d523b6a6a09e83387c7104162":[12,0,39,76,4],
 "class_process_1_1_process_factory___t.html#aa073f5e804fcbf1b0b24ba7a3355632c":[12,0,39,76,6],
@@ -246,8 +249,5 @@ var NAVTREEINDEX26 =
 "class_protocols_1_1_leapmotion_device.html":[12,0,40,21],
 "class_protocols_1_1_leapmotion_device.html#a3deac6ac4792e92da4defa3cc722c952":[12,0,40,21,2],
 "class_protocols_1_1_leapmotion_device.html#a780a89d321b815e14f39552fa1d5cba5":[12,0,40,21,1],
-"class_protocols_1_1_leapmotion_device.html#ab951da385c1ea26541e1bdaa1efcd42d":[12,0,40,21,0],
-"class_protocols_1_1_leapmotion_device.html#ac95ec165f86ebdaa9081a0348da355a5":[12,0,40,21,3],
-"class_protocols_1_1_leapmotion_protocol_factory.html":[12,0,40,22],
-"class_protocols_1_1_leapmotion_protocol_settings_widget.html":[12,0,40,23]
+"class_protocols_1_1_leapmotion_device.html#ab951da385c1ea26541e1bdaa1efcd42d":[12,0,40,21,0]
 };

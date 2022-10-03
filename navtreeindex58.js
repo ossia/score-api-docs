@@ -1,5 +1,8 @@
 var NAVTREEINDEX58 =
 {
+"struct_jit_1_1_driver.html#ad2c38d5106349cb2e3a360654874be42":[12,0,23,7,1],
+"struct_jit_1_1_driver.html#adb16159d935326398d44b751624061f0":[12,0,23,7,3],
+"struct_jit_1_1_exception.html":[12,0,23,10],
 "struct_jit_1_1_exception.html#a5a9cc74682f828f79b078b152303b23e":[12,0,23,10,0],
 "struct_jit_1_1_exception.html#ae2da1d781e821c11c4ba876236acb2d6":[12,0,23,10,1],
 "struct_jit_1_1_global_at_exit.html":[12,0,23,11],
@@ -246,8 +249,5 @@ var NAVTREEINDEX58 =
 "struct_local_tree_1_1_get_property_wrapper.html#adc2de4217504a80633413394d49316c4":[12,0,26,7,4],
 "struct_local_tree_1_1_property_wrapper.html":[12,0,26,16],
 "struct_local_tree_1_1_property_wrapper.html#a0cdd9b67ed3094618f4ae078c9b9c65d":[12,0,26,16,2],
-"struct_local_tree_1_1_property_wrapper.html#a144bb06e8068f6208e8b714c7a623428":[12,0,26,16,4],
-"struct_local_tree_1_1_property_wrapper.html#a711895fa988744fce99e96b79a12f76f":[12,0,26,16,0],
-"struct_local_tree_1_1_property_wrapper.html#aca6011ee524f2c86cb96aeea32048156":[12,0,26,16,1],
-"struct_local_tree_1_1_property_wrapper.html#afbf70b86bbc09ba3459dba84f38df589":[12,0,26,16,3]
+"struct_local_tree_1_1_property_wrapper.html#a144bb06e8068f6208e8b714c7a623428":[12,0,26,16,4]
 };

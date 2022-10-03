@@ -1,5 +1,8 @@
 var NAVTREEINDEX52 =
 {
+"lib_2score_2tools_2_metadata_8hpp_source.html":[13,0,716],
+"lib_2score_2widgets_2_control_widgets_8hpp_source.html":[13,0,214],
+"lib_2score_2widgets_2_layout_8hpp_source.html":[13,0,635],
 "lv2__atom__helpers_8hpp_source.html":[13,0,678],
 "models_8hpp_source.html":[13,0,789],
 "mvp_8hpp_source.html":[13,0,813],
@@ -9,8 +12,8 @@ var NAVTREEINDEX52 =
 "namespace_curve.html":[11,0,1],
 "namespace_device.html":[11,0,2],
 "namespace_device.html":[12,0,9],
-"namespace_engine.html":[11,0,3],
 "namespace_engine.html":[12,0,10],
+"namespace_engine.html":[11,0,3],
 "namespace_engine_1_1_network.html":[11,0,3,0],
 "namespace_execution.html":[11,0,4],
 "namespace_execution.html":[12,0,11],
@@ -246,8 +249,5 @@ var NAVTREEINDEX52 =
 "score__plugin__midi_8hpp_source.html":[13,0,1151],
 "score__plugin__nodal_8hpp_source.html":[13,0,1152],
 "score__plugin__packagemanager_8hpp_source.html":[13,0,1153],
-"score__plugin__pd_8hpp_source.html":[13,0,1154],
-"score__plugin__protocols_8hpp_source.html":[13,0,1155],
-"score__plugin__recording_8hpp_source.html":[13,0,1156],
-"score__plugin__remotecontrol_8hpp_source.html":[13,0,1157]
+"score__plugin__pd_8hpp_source.html":[13,0,1154]
 };

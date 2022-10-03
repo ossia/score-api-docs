@@ -188,11 +188,12 @@ var NAVTREEINDEX6 =
 "class_control_1_1_executor.html#ad83bfc01fe047557fe546cd6c5817b0e":[12,0,5,7,2],
 "class_control_inlet.html":[12,0,86],
 "class_control_inlet.html#a3b3916e2d320b512490ed2cc49b2b7fb":[12,0,86,2],
-"class_control_inlet.html#a48b3f75d1d7c0a7e12e7ca89e1232933":[12,0,86,6],
 "class_control_inlet.html#a52e8455adec30bc38efdb33d0ec696cc":[12,0,86,3],
+"class_control_inlet.html#a642f1a99261f11ed0e7a7a7ab5b9c6a6":[12,0,86,6],
 "class_control_inlet.html#a71e97925e959f0a3e5f006263c39e51e":[12,0,86,4],
 "class_control_inlet.html#a743d3248cd1c8834deb6015b7c0bdfa6":[12,0,86,1],
 "class_control_inlet.html#a9d1e9e38b7bb7eee57a8cb05e3931b3f":[12,0,86,5],
+"class_control_inlet.html#ac12b3057183e44f9c26f8e9c258bdf5e":[12,0,86,7],
 "class_control_inlet.html#af2a40b5a257e42fda26bcf2673b25e58":[12,0,86,0],
 "class_control_surface_1_1_add_control.html":[12,0,6,0],
 "class_control_surface_1_1_add_control.html#a10c4c616677448f99e52aac88224004d":[12,0,6,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "class_curve_1_1_application_plugin.html#aecbf0f76d30f9a19346d5901e71d89c1":[12,0,7,2,2],
 "class_curve_1_1_click_on_anything___transition.html":[12,0,7,3],
 "class_curve_1_1_click_on_anything___transition.html#a8bc1c7d74e8415a77c6dc9be243afb08":[12,0,7,3,1],
-"class_curve_1_1_click_on_anything___transition.html#ac3ec5e807684c66471f74f9d8dec6065":[12,0,7,3,0],
-"class_curve_1_1_command_object_base.html":[12,0,7,4]
+"class_curve_1_1_click_on_anything___transition.html#ac3ec5e807684c66471f74f9d8dec6065":[12,0,7,3,0]
 };

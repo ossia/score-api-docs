@@ -1,5 +1,8 @@
 var NAVTREEINDEX62 =
 {
+"struct_process_1_1_control_message.html#a9a83dfd80878bd603e2f9b7a789d59ac":[12,0,39,11,1],
+"struct_process_1_1_control_message.html#aa6cb328892e65910050436469c198eea":[12,0,39,11,2],
+"struct_process_1_1_control_setup.html":[12,0,39,13],
 "struct_process_1_1_control_setup.html#a20cf97ff1ab576747d5c504cc5356062":[12,0,39,13,4],
 "struct_process_1_1_control_setup.html#a94bab3be048d189a89fb2dc93c96f763":[12,0,39,13,0],
 "struct_process_1_1_control_setup.html#a9bf51d3923572302660538704dd042ad":[12,0,39,13,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX62 =
 "struct_protocols_1_1_artnet_specific_settings.html#ac7f57c946a09ef1868357481125a497da13e00b5397e18f354080ef88192c24b2":[12,0,40,6,2],
 "struct_protocols_1_1_artnet_specific_settings.html#ac7f57c946a09ef1868357481125a497da8cec388504d10e2f062e946bfca4a82a":[12,0,40,6,1],
 "struct_protocols_1_1_artnet_specific_settings.html#ac7f57c946a09ef1868357481125a497da8f193d99261c886112a6e391c0393c71":[12,0,40,6,0],
-"struct_protocols_1_1_artnet_specific_settings.html#ae22cefef5ee498c0d3e052e81880b0a8":[12,0,40,6,3],
-"struct_protocols_1_1_artnet_specific_settings.html#af633c42f6e9ab57071377281ee0bd583":[12,0,40,6,5],
-"struct_protocols_1_1_fixture_database_1_1_scan.html":[12,0,40,9,0],
-"struct_protocols_1_1_fixture_database_1_1_scan.html#a3b7be4f9c56242d3fbf49533d137b9fe":[12,0,40,9,0,0]
+"struct_protocols_1_1_artnet_specific_settings.html#ae22cefef5ee498c0d3e052e81880b0a8":[12,0,40,6,3]
 };

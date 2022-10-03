@@ -1,5 +1,8 @@
 var NAVTREEINDEX51 =
 {
+"classvst3_1_1_v_s_t_graphics_slider.html#a9749139cbb6438f77dc6b6f3864caaa8":[12,0,56,23,10],
+"classvst3_1_1_v_s_t_graphics_slider.html#acb98149bedfa812f829568e528a24317":[12,0,56,23,7],
+"classvst3_1_1_v_s_t_graphics_slider.html#ad81706f73a8cea30c0a99259a1d3e8ee":[12,0,56,23,9],
 "classvst3_1_1_v_s_t_graphics_slider.html#adb48b189409b752428a0524ef4b92531":[12,0,56,23,2],
 "classvst3_1_1_v_s_t_graphics_slider.html#af2b6fcebb61629e23d2c5fc399980320":[12,0,56,23,3],
 "classvst3_1_1_v_s_t_graphics_slider.html#afd0df6f536c68a96a976fbfa2cd208c7":[12,0,56,23,6],
@@ -246,8 +249,5 @@ var NAVTREEINDEX51 =
 "lib_2core_2settings_2_settings_8hpp_source.html":[13,0,1208],
 "lib_2core_2view_2_window_8hpp_source.html":[13,0,1426],
 "lib_2score_2model_2_component_8hpp_source.html":[13,0,191],
-"lib_2score_2plugins_2documentdelegate_2plugin_2_document_plugin_8hpp_source.html":[13,0,331],
-"lib_2score_2tools_2_metadata_8hpp_source.html":[13,0,716],
-"lib_2score_2widgets_2_control_widgets_8hpp_source.html":[13,0,214],
-"lib_2score_2widgets_2_layout_8hpp_source.html":[13,0,635]
+"lib_2score_2plugins_2documentdelegate_2plugin_2_document_plugin_8hpp_source.html":[13,0,331]
 };
