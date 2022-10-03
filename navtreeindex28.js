@@ -1,5 +1,7 @@
 var NAVTREEINDEX28 =
 {
+"class_recording_1_1_application_plugin.html#a6cb01a0e446f1d277c7de85b91b0e0f1":[12,0,41,0,2],
+"class_recording_1_1_application_plugin.html#a9b4babbff89955688e358802f77da386":[12,0,41,0,0],
 "class_recording_1_1_automation_recorder.html":[12,0,41,1],
 "class_recording_1_1_automation_recorder.html#a1016ceea8f5845d2d6a9794f3f7e4064":[12,0,41,1,10],
 "class_recording_1_1_automation_recorder.html#a13f3a30f0842c2e55291dff53107bcdf":[12,0,41,1,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX28 =
 "class_scenario_1_1_click_on_slot_handle___transition.html":[12,0,45,24],
 "class_scenario_1_1_click_on_slot_handle___transition.html#a077e22b8cfd9596aeb9d9a4f02ea017f":[12,0,45,24,2],
 "class_scenario_1_1_click_on_slot_handle___transition.html#a31b4447ff56066db3045ddcd7a419c79":[12,0,45,24,0],
-"class_scenario_1_1_click_on_slot_handle___transition.html#a700fbf3a8bd3ce8923c61cbf3b0e8426":[12,0,45,24,1],
-"class_scenario_1_1_clickable_label_item.html":[12,0,45,19],
-"class_scenario_1_1_clickable_label_item.html#a10b031fe61836ce5478152b69da297d3":[12,0,45,19,6]
+"class_scenario_1_1_click_on_slot_handle___transition.html#a700fbf3a8bd3ce8923c61cbf3b0e8426":[12,0,45,24,1]
 };

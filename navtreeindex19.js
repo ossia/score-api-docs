@@ -1,5 +1,7 @@
 var NAVTREEINDEX19 =
 {
+"class_j_s_o_n_writer.html#a4b7eafc3cf9c91624bfaf6131435678b":[12,0,146,75],
+"class_j_s_o_n_writer.html#a4b8e6bebeacbd91d93fd4df6816445d4":[12,0,146,9],
 "class_j_s_o_n_writer.html#a4c123aaa1562aa4d8000ce822ee0779e":[12,0,146,116],
 "class_j_s_o_n_writer.html#a4c45959a61188e6bec39f46422798c8a":[12,0,146,131],
 "class_j_s_o_n_writer.html#a4c72426591d5184cbfa60d037f1734a0":[12,0,146,72],
@@ -247,7 +249,5 @@ var NAVTREEINDEX19 =
 "class_library_1_1_project_library_widget.html#a449bf63014586752b8a48941d43abb82":[12,0,25,18,2],
 "class_library_1_1_project_library_widget.html#a7ec8107d4a3da9dfb44e94adeb210450":[12,0,25,18,3],
 "class_library_1_1_project_library_widget.html#accf7d206976a90bd07ec8d5a17b6062c":[12,0,25,18,0],
-"class_library_1_1_project_panel.html":[12,0,25,19],
-"class_library_1_1_project_panel.html#a8f90931050c59c6cb7d54a9b346da76c":[12,0,25,19,0],
-"class_library_1_1_project_panel_factory.html":[12,0,25,20]
+"class_library_1_1_project_panel.html":[12,0,25,19]
 };

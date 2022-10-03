@@ -1,5 +1,7 @@
 var NAVTREEINDEX51 =
 {
+"classvst3_1_1_v_s_t_graphics_slider.html#a622b9fefb026fad682e625a506d6b3a5":[12,0,56,23,0],
+"classvst3_1_1_v_s_t_graphics_slider.html#a83c5452eecbdb79f848d3cc86aeffda5":[12,0,56,23,1],
 "classvst3_1_1_v_s_t_graphics_slider.html#a9749139cbb6438f77dc6b6f3864caaa8":[12,0,56,23,10],
 "classvst3_1_1_v_s_t_graphics_slider.html#acb98149bedfa812f829568e528a24317":[12,0,56,23,7],
 "classvst3_1_1_v_s_t_graphics_slider.html#ad81706f73a8cea30c0a99259a1d3e8ee":[12,0,56,23,9],
@@ -247,7 +249,5 @@ var NAVTREEINDEX51 =
 "lib_2core_2documentation_2commands_8hpp_source.html":[13,0,167],
 "lib_2core_2presenter_2_presenter_8hpp_source.html":[13,0,921],
 "lib_2core_2settings_2_settings_8hpp_source.html":[13,0,1208],
-"lib_2core_2view_2_window_8hpp_source.html":[13,0,1426],
-"lib_2score_2model_2_component_8hpp_source.html":[13,0,191],
-"lib_2score_2plugins_2documentdelegate_2plugin_2_document_plugin_8hpp_source.html":[13,0,331]
+"lib_2core_2view_2_window_8hpp_source.html":[13,0,1426]
 };

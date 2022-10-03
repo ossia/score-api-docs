@@ -1,5 +1,7 @@
 var NAVTREEINDEX42 =
 {
+"class_zeroconf_browser.html#a9d7076fb9ca497e0d0e516b06c68e9e1":[12,0,541,3],
+"class_zeroconf_browser.html#ac243222561847cb0265029b0c7183c23":[12,0,541,2],
 "classes.html":[12,1],
 "classfoo.html":[12,0,110],
 "classfoo.html#a905fd02ee1fc2fbf1c7474d913d588c8":[12,0,110,0],
@@ -120,11 +122,11 @@ var NAVTREEINDEX42 =
 "classscore_1_1_action_manager.html":[12,0,46,12],
 "classscore_1_1_action_manager.html#a4fc6032382d50fe4217f6ad4b7503377":[12,0,46,12,15],
 "classscore_1_1_action_manager.html#a552f6e078a05b767fddf7801c3e360f9":[12,0,46,12,16],
-"classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,46,12,8],
+"classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,46,12,6],
 "classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,46,12,4],
 "classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,46,12,5],
-"classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,46,12,6],
 "classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,46,12,7],
+"classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c":[12,0,46,12,8],
 "classscore_1_1_action_manager.html#a61deeb8b2ebd9442678d3573e00a2bf6":[12,0,46,12,20],
 "classscore_1_1_action_manager.html#a63a3b17b4bd8968eb3bec2c6712ad90b":[12,0,46,12,10],
 "classscore_1_1_action_manager.html#a6e37deb4b2f791fd5f2347e081a01a4d":[12,0,46,12,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX42 =
 "classscore_1_1_command_backup_file.html#a8dd7a71961dc4f56422ca92e2fbb09c6":[12,0,46,39,0],
 "classscore_1_1_command_backup_file.html#abb32e365ce1e4336878b906e1793f85f":[12,0,46,39,1],
 "classscore_1_1_command_factory___qt_interface.html":[12,0,46,41],
-"classscore_1_1_command_factory___qt_interface.html#a633984ee163924776501af406940b457":[12,0,46,41,1],
-"classscore_1_1_command_factory___qt_interface.html#aef9052fe49f611d3c687e61a2b7c07ef":[12,0,46,41,0],
-"classscore_1_1_command_stack.html":[12,0,46,44]
+"classscore_1_1_command_factory___qt_interface.html#a633984ee163924776501af406940b457":[12,0,46,41,1]
 };

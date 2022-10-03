@@ -1,5 +1,7 @@
 var NAVTREEINDEX63 =
 {
+"struct_protocols_1_1_artnet_specific_settings.html#ac7f57c946a09ef1868357481125a497da8f193d99261c886112a6e391c0393c71":[12,0,40,6,0],
+"struct_protocols_1_1_artnet_specific_settings.html#ae22cefef5ee498c0d3e052e81880b0a8":[12,0,40,6,3],
 "struct_protocols_1_1_artnet_specific_settings.html#af633c42f6e9ab57071377281ee0bd583":[12,0,40,6,5],
 "struct_protocols_1_1_fixture_database_1_1_scan.html":[12,0,40,9,0],
 "struct_protocols_1_1_fixture_database_1_1_scan.html#a3b7be4f9c56242d3fbf49533d137b9fe":[12,0,40,9,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX63 =
 "struct_q_meta_type_id_3_01const_01_scenario_1_1_process_model_01_5_01_4.html":[12,0,224],
 "struct_q_meta_type_id_3_01const_01_scenario_1_1_process_model_01_5_01_4.html#a1fcd278d8e37fda99cdb96ea2a84ac43aeb71a305893d4d9fd734e03e40bcc281":[12,0,224,0],
 "struct_q_meta_type_id_3_01const_01_scenario_1_1_scenario_interface_01_5_01_4.html":[12,0,225],
-"struct_q_meta_type_id_3_01const_01_scenario_1_1_scenario_interface_01_5_01_4.html#aed96221f832dc5eef08a3f8f37212358aab8a83fb4f6fe93674d8a7eebf0fe629":[12,0,225,0],
-"struct_q_meta_type_id_3_01ossia_1_1audio__stretch__mode_01_4.html":[12,0,263],
-"struct_q_meta_type_id_3_01ossia_1_1audio__stretch__mode_01_4.html#ab7d9a3de84d9ead1476fc1eb7f6b55cda82abd662d3d748dbb66e0e0da78a0ea7":[12,0,263,0]
+"struct_q_meta_type_id_3_01const_01_scenario_1_1_scenario_interface_01_5_01_4.html#aed96221f832dc5eef08a3f8f37212358aab8a83fb4f6fe93674d8a7eebf0fe629":[12,0,225,0]
 };

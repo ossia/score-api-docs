@@ -9,6 +9,8 @@ var class_j_s_1_1_edit_js_context =
     [ "createIntervalAfter", "class_j_s_1_1_edit_js_context.html#a82d72138ee4a9d4e15725b3ace2784ab", null ],
     [ "createOSCDevice", "class_j_s_1_1_edit_js_context.html#a44ef92fd0edb05317ef9ef0481c4834d", null ],
     [ "createProcess", "class_j_s_1_1_edit_js_context.html#a495d9d964742cdebe2e0c1cca3983e96", null ],
+    [ "createQMLSerialDevice", "class_j_s_1_1_edit_js_context.html#aa20782877eee07ba89e137741f76eabb", null ],
+    [ "createQMLWebSocketDevice", "class_j_s_1_1_edit_js_context.html#a641ce6638a976f4be9e785fee6544576", null ],
     [ "ctx", "class_j_s_1_1_edit_js_context.html#a36fb0ef6013c686caef397ce62d86d08", null ],
     [ "deviceToJson", "class_j_s_1_1_edit_js_context.html#a34ea4a9c9dadbaf059de294af51ba4a0", null ],
     [ "document", "class_j_s_1_1_edit_js_context.html#a507454e11df014f236610006083e2722", null ],

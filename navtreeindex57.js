@@ -1,5 +1,7 @@
 var NAVTREEINDEX57 =
 {
+"struct_gfx_1_1_kinect2_1_1kinect2__camera.html#aa4c5d05acf5b0c21585290ad617298f8":[12,0,17,2,1,8],
+"struct_gfx_1_1_kinect2_1_1kinect2__camera.html#ab37beefebe4bb4df03602839069b8206":[12,0,17,2,1,1],
 "struct_gfx_1_1_kinect2_1_1kinect2__camera.html#acec63ba0cc77391756d683ad7b7b89b1":[12,0,17,2,1,10],
 "struct_gfx_1_1_kinect2_1_1kinect2__camera.html#ad0b40fb290352c4e4c1faa9d9aff9918":[12,0,17,2,1,9],
 "struct_gfx_1_1_kinect2_1_1kinect2__camera.html#aec8ccbc5fb97c1f16228b8dae55705f6":[12,0,17,2,1,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX57 =
 "struct_jit_1_1_driver.html":[12,0,23,7],
 "struct_jit_1_1_driver.html#a2868003eed8124c81fc4213c9acb2a86":[12,0,23,7,4],
 "struct_jit_1_1_driver.html#a2d5d7cea6e603ac5d01e85e2ac994a89":[12,0,23,7,0],
-"struct_jit_1_1_driver.html#a6101a41527df994432557902dc98128c":[12,0,23,7,2],
-"struct_jit_1_1_driver.html#a820197a872383d9f765f6167d39bff57":[12,0,23,7,6],
-"struct_jit_1_1_driver.html#aa4588615803d7502a7ab765aa0958423":[12,0,23,7,5]
+"struct_jit_1_1_driver.html#a6101a41527df994432557902dc98128c":[12,0,23,7,2]
 };
