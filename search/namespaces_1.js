@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['curve_5780',['Curve',['../namespace_curve.html',1,'']]]
+  ['curve_5786',['Curve',['../namespace_curve.html',1,'']]]
 ];

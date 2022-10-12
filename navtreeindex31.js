@@ -1,11 +1,5 @@
 var NAVTREEINDEX31 =
 {
-"class_scenario_1_1_command_1_1_scenario_trigger_command_factory.html#a47ac7bb630743540105162767092bff5":[12,0,45,0,88,0],
-"class_scenario_1_1_command_1_1_scenario_trigger_command_factory.html#a59366b6c8e42c5db11ba599f9ebe5aee":[12,0,45,0,88,2],
-"class_scenario_1_1_command_1_1_scenario_trigger_command_factory.html#ab7b0376a4340472dfdcd2310d2f1367d":[12,0,45,0,88,1],
-"class_scenario_1_1_command_1_1_serializable_move_event.html":[12,0,45,0,89],
-"class_scenario_1_1_command_1_1_serializable_move_event.html#a069cfbfa1d74e429bb3964a73fc6cedd":[12,0,45,0,89,1],
-"class_scenario_1_1_command_1_1_serializable_move_event.html#a2dcae9c126610bd2427fe2175611a894":[12,0,45,0,89,0],
 "class_scenario_1_1_command_1_1_serializable_move_event.html#a43d34e4bba2eecf0bc8cd35cb3458b13":[12,0,45,0,89,2],
 "class_scenario_1_1_command_1_1_set_auto_trigger.html":[12,0,45,0,90],
 "class_scenario_1_1_command_1_1_set_auto_trigger.html#a3445c3173d43f323b0de6b776dc66ca1":[12,0,45,0,90,1],
@@ -249,5 +243,11 @@ var NAVTREEINDEX31 =
 "class_scenario_1_1_displayed_elements_presenter.html#adf53236b1e11b4aa553303bfd28d4933":[12,0,45,51,9],
 "class_scenario_1_1_displayed_elements_presenter.html#ae1e287adbcd0b45232c27d1637259ccb":[12,0,45,51,14],
 "class_scenario_1_1_displayed_elements_provider.html":[12,0,45,53],
-"class_scenario_1_1_displayed_elements_provider.html#a27635e0b273dc68b78fb69ec79d8fecc":[12,0,45,53,2]
+"class_scenario_1_1_displayed_elements_provider.html#a27635e0b273dc68b78fb69ec79d8fecc":[12,0,45,53,2],
+"class_scenario_1_1_displayed_elements_provider.html#a82927c99473581637e02eb8525a0d533":[12,0,45,53,3],
+"class_scenario_1_1_displayed_elements_provider.html#aa14f960710c9b89a693d9cb609226095":[12,0,45,53,4],
+"class_scenario_1_1_displayed_elements_provider.html#aba0ff75ddf87a520301c7a98b36a5a0d":[12,0,45,53,0],
+"class_scenario_1_1_displayed_elements_provider.html#ac73b648c8d3f13ee8c01c912a4dd1fbc":[12,0,45,53,1],
+"class_scenario_1_1_displayed_elements_provider_list.html":[12,0,45,54],
+"class_scenario_1_1_displayed_elements_tool_palette_factory.html":[12,0,45,55]
 };

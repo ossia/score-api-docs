@@ -1,13 +1,5 @@
 var NAVTREEINDEX15 =
 {
-"class_gfx_1_1_gfx_output_device.html#a2b7dcfdfe63c5928c0825ad8f1151ab7":[12,0,17,31,8],
-"class_gfx_1_1_gfx_output_device.html#a3b0a0da0b1abdd0d902d8e2d8a0859db":[12,0,17,31,1],
-"class_gfx_1_1_gfx_output_device.html#a70729d3f678028f672ca5e11cfe81c68":[12,0,17,31,2],
-"class_gfx_1_1_gfx_output_device.html#a9ab8a60f7f3d68f609cca423818dec44":[12,0,17,31,3],
-"class_gfx_1_1_gfx_output_device.html#aa4dcad3829b59f2f434fa28f2c651243":[12,0,17,31,7],
-"class_gfx_1_1_gfx_output_device.html#ab3509b9db476a3919f2ff22e3c9ad9a3":[12,0,17,31,0],
-"class_gfx_1_1_gfx_output_device.html#ae7866ba297c2c1ecbcc3d21499307808":[12,0,17,31,6],
-"class_gfx_1_1_gfx_output_device.html#afeb92edbb53c16f3e631b67b780d19ba":[12,0,17,31,5],
 "class_gfx_1_1_graph_preview_widget.html":[12,0,17,32],
 "class_gfx_1_1_graph_preview_widget.html#a7609b1da7f143d012ff8e7e4d210fbad":[12,0,17,32,1],
 "class_gfx_1_1_graph_preview_widget.html#a94f076abcce37647f140b1695657f1d2":[12,0,17,32,2],
@@ -249,5 +241,13 @@ var NAVTREEINDEX15 =
 "class_gfx_1_1_video_1_1_model.html#a422ec76ba1b332ae97dc5e10406a5ea1":[12,0,17,8,4,3],
 "class_gfx_1_1_video_1_1_model.html#a7600ebe90e9e0106f2dd5e11f4d0b92c":[12,0,17,8,4,5],
 "class_gfx_1_1_video_1_1_model.html#a7b8def72c07b65fc856262e9ed0ccb1d":[12,0,17,8,4,0],
-"class_gfx_1_1_video_1_1_model.html#a804ebbfe1d1633e857d60797a3db82bf":[12,0,17,8,4,14]
+"class_gfx_1_1_video_1_1_model.html#a804ebbfe1d1633e857d60797a3db82bf":[12,0,17,8,4,14],
+"class_gfx_1_1_video_1_1_model.html#a8a48be890b1e5460d3959c0804986531":[12,0,17,8,4,12],
+"class_gfx_1_1_video_1_1_model.html#a94842300382c36d1509146b8cd77b2eb":[12,0,17,8,4,15],
+"class_gfx_1_1_video_1_1_model.html#a9df04e87759f7e88723f8a6891d849bf":[12,0,17,8,4,10],
+"class_gfx_1_1_video_1_1_model.html#aad58f2326f6ea4e7e5fa4c26e114155d":[12,0,17,8,4,2],
+"class_gfx_1_1_video_1_1_model.html#ac89c9cb9e9b506d8bb2172882db23760":[12,0,17,8,4,13],
+"class_gfx_1_1_video_1_1_model.html#ae648c5932cd616c90bfb8c8a563a9034":[12,0,17,8,4,8],
+"class_gfx_1_1_video_1_1_model.html#afbf793ce945f75f835815efae6c061a2":[12,0,17,8,4,11],
+"class_gfx_1_1_video_1_1_presenter.html":[12,0,17,8,5]
 };

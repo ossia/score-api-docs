@@ -4,6 +4,7 @@ var struct_scenario_1_1_categorized_addresses =
     [ "automCount", "struct_scenario_1_1_categorized_addresses.html#a765efbefacfc30de96451109583cd761", null ],
     [ "operator()", "struct_scenario_1_1_categorized_addresses.html#a8816824905cd7edf750825102eb4250b", null ],
     [ "operator()", "struct_scenario_1_1_categorized_addresses.html#ac19938102b60421c565a6dc97796346f", null ],
+    [ "operator()", "struct_scenario_1_1_categorized_addresses.html#ab6642de1383987ec6c4c7e830acd60a8", null ],
     [ "operator()", "struct_scenario_1_1_categorized_addresses.html#aaa64234baeb23520205c39b755950924", null ],
     [ "operator()", "struct_scenario_1_1_categorized_addresses.html#a1acc9e4c0f14eceadbfdaf02feb01342", null ],
     [ "operator()", "struct_scenario_1_1_categorized_addresses.html#a4506010e9d82df23a6bc91b2a8c0b25e", null ],

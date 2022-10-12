@@ -7,6 +7,7 @@ var class_value_inlet =
     [ "make", "class_value_inlet.html#a8963b92fbb8b3ad1a951f1eb578a894c", null ],
     [ "setValue", "class_value_inlet.html#a166f5beed6708d8bbd12ef093da7d36f", null ],
     [ "value", "class_value_inlet.html#a8099d24402a191bdbac5df5b1d54cec9", null ],
+    [ "valueChanged", "class_value_inlet.html#a16fd80ad4b3c948cc9971810a80e9f11", null ],
     [ "values", "class_value_inlet.html#a6acd47afb5f1482885ef2f4c96e251b1", null ],
     [ "w_state", "class_value_inlet.html#a3078f9619507ac646dbf6e85d84f4015", null ]
 ];

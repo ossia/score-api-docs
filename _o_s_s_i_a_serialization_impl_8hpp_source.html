@@ -105,28 +105,28 @@ $(document).ready(function(){initNavTree('_o_s_s_i_a_serialization_impl_8hpp_sou
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;State/ValueSerialization.hpp&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_data_stream_visitor_8hpp.html">score/serialization/DataStreamVisitor.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;score/serialization/VariantSerialization.hpp&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_visitor_common_8hpp.html">score/serialization/VisitorCommon.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/for_each.hpp&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;ossia/network/base/node_attributes.hpp&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;ossia/network/dataspace/dataspace.hpp&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;ossia/network/domain/domain.hpp&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;score_lib_state_export.h&gt;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;JSON_METADATA(ossia::impulse, <span class="stringliteral">&quot;Impulse&quot;</span>)</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;JSON_METADATA(int32_t, &quot;Int&quot;)</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;JSON_METADATA(<span class="keywordtype">char</span>, &quot;Char&quot;)</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;JSON_METADATA(<span class="keywordtype">bool</span>, &quot;Bool&quot;)</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;JSON_METADATA(<span class="keywordtype">float</span>, &quot;Float&quot;)</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;JSON_METADATA(ossia::vec2f, &quot;Vec2f&quot;)</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;JSON_METADATA(ossia::vec3f, &quot;Vec3f&quot;)</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;JSON_METADATA(ossia::vec4f, &quot;Vec4f&quot;)</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;JSON_METADATA(std::vector&lt;ossia::value&gt;, &quot;Tuple&quot;)</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;JSON_METADATA(std::<span class="keywordtype">string</span>, &quot;String&quot;)</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;JSON_METADATA(ossia::domain_base&lt;ossia::impulse&gt;, &quot;<a class="code" href="class_impulse.html">Impulse</a>&quot;)</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;JSON_METADATA(ossia::domain_base&lt;int32_t&gt;, &quot;Int&quot;)</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;JSON_METADATA(ossia::domain_base&lt;<span class="keywordtype">char</span>&gt;, &quot;Char&quot;)</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;score/serialization/MapSerialization.hpp&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;score/serialization/VariantSerialization.hpp&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_visitor_common_8hpp.html">score/serialization/VisitorCommon.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/for_each.hpp&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;ossia/network/base/node_attributes.hpp&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;ossia/network/dataspace/dataspace.hpp&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;ossia/network/domain/domain.hpp&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;score_lib_state_export.h&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;JSON_METADATA(ossia::impulse, <span class="stringliteral">&quot;Impulse&quot;</span>)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;JSON_METADATA(int32_t, &quot;Int&quot;)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;JSON_METADATA(ossia::value_map_type, &quot;Map&quot;)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;JSON_METADATA(<span class="keywordtype">bool</span>, &quot;Bool&quot;)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;JSON_METADATA(<span class="keywordtype">float</span>, &quot;Float&quot;)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;JSON_METADATA(ossia::vec2f, &quot;Vec2f&quot;)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;JSON_METADATA(ossia::vec3f, &quot;Vec3f&quot;)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;JSON_METADATA(ossia::vec4f, &quot;Vec4f&quot;)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;JSON_METADATA(std::vector&lt;ossia::value&gt;, &quot;Tuple&quot;)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;JSON_METADATA(std::<span class="keywordtype">string</span>, &quot;String&quot;)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;JSON_METADATA(ossia::domain_base&lt;ossia::impulse&gt;, &quot;<a class="code" href="class_impulse.html">Impulse</a>&quot;)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;JSON_METADATA(ossia::domain_base&lt;int32_t&gt;, &quot;Int&quot;)</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;JSON_METADATA(ossia::domain_base&lt;<span class="keywordtype">bool</span>&gt;, &quot;Bool&quot;)</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;JSON_METADATA(ossia::domain_base&lt;<span class="keywordtype">float</span>&gt;, &quot;Float&quot;)</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;JSON_METADATA(ossia::vecf_domain&lt;2&gt;, &quot;Vec2f&quot;)</div>
@@ -150,25 +150,45 @@ $(document).ready(function(){initNavTree('_o_s_s_i_a_serialization_impl_8hpp_sou
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">struct </span>is_custom_serialized&lt;ossia::value_variant_type&gt; : <span class="keyword">public</span> std::true_type</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">struct </span>is_custom_serialized&lt;ossia::value_map_type&gt; : <span class="keyword">public</span> std::true_type</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">struct </span>is_custom_serialized&lt;ossia::domain_base_variant&gt; : <span class="keyword">public</span> std::true_type</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="structtypeholder.html">   63</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structtypeholder.html">typeholder</a></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">using</span> type = T;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="struct_t_serializer_3_01_data_stream_00_01ossia_1_1value__map__type_01_4.html">   58</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_t_serializer.html">TSerializer</a>&lt;<a class="code" href="class_data_stream.html">DataStream</a>, ossia::value_map_type&gt;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    : <a class="code" href="struct_t_serializer.html">TSerializer</a>&lt;DataStream, std::vector&lt;ossia::value_map_element&gt;&gt;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1value__map__type_01_4.html">   64</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_t_serializer.html">TSerializer</a>&lt;<a class="code" href="class_j_s_o_n_object.html">JSONObject</a>, ossia::value_map_type&gt;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    : <a class="code" href="struct_t_serializer.html">TSerializer</a>&lt;JSONObject, std::vector&lt;ossia::value_map_element&gt;&gt;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">struct </span>is_custom_serialized&lt;ossia::value_variant_type&gt; : <span class="keyword">public</span> std::true_type</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">struct </span>is_custom_serialized&lt;ossia::domain_base_variant&gt; : <span class="keyword">public</span> std::true_type</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="structtypeholder.html">   80</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structtypeholder.html">typeholder</a></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">using</span> type = T;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="a_visitor_common_8hpp_html"><div class="ttname"><a href="_visitor_common_8hpp.html">VisitorCommon.hpp</a></div></div>
-<div class="ttc" id="aclass_impulse_html"><div class="ttname"><a href="class_impulse.html">Impulse</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:197</div></div>
-<div class="ttc" id="astructtypeholder_html"><div class="ttname"><a href="structtypeholder.html">typeholder</a></div><div class="ttdef"><b>Definition:</b> OSSIASerializationImpl.hpp:63</div></div>
+<div class="ttc" id="aclass_impulse_html"><div class="ttname"><a href="class_impulse.html">Impulse</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:209</div></div>
+<div class="ttc" id="aclass_data_stream_html"><div class="ttname"><a href="class_data_stream.html">DataStream</a></div><div class="ttdef"><b>Definition:</b> VisitorInterface.hpp:53</div></div>
+<div class="ttc" id="aclass_j_s_o_n_object_html"><div class="ttname"><a href="class_j_s_o_n_object.html">JSONObject</a></div><div class="ttdef"><b>Definition:</b> VisitorInterface.hpp:61</div></div>
+<div class="ttc" id="astructtypeholder_html"><div class="ttname"><a href="structtypeholder.html">typeholder</a></div><div class="ttdef"><b>Definition:</b> OSSIASerializationImpl.hpp:80</div></div>
+<div class="ttc" id="astruct_t_serializer_html"><div class="ttname"><a href="struct_t_serializer.html">TSerializer</a></div><div class="ttdef"><b>Definition:</b> VisitorInterface.hpp:13</div></div>
 <div class="ttc" id="a_data_stream_visitor_8hpp_html"><div class="ttname"><a href="_data_stream_visitor_8hpp.html">DataStreamVisitor.hpp</a></div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

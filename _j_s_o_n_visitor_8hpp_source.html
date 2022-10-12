@@ -1201,26 +1201,26 @@ $(document).ready(function(){initNavTree('_j_s_o_n_visitor_8hpp_source.html','')
 <div class="line"><a name="l01111"></a><span class="lineno"><a class="line" href="struct_t_serializer_3_01_j_s_o_n_object_00_01_q_variant_map_01_4.html"> 1111</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_t_serializer.html">TSerializer</a>&lt;<a class="code" href="class_j_s_o_n_object.html">JSONObject</a>, QVariantMap&gt;</div>
 <div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;{</div>
 <div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;  <span class="keyword">using</span> type = QVariantMap;</div>
-<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> readFrom(<a class="code" href="class_j_s_o_n_reader.html">JSONObject::Serializer</a>&amp; s, <span class="keyword">const</span> type&amp; obj)</div>
-<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;  {</div>
-<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;    SCORE_ABORT;</div>
-<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;<span class="comment">    QJsonArray arr;</span></div>
-<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;<span class="comment">    arr.append(toJsonValue(obj.first));</span></div>
-<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;<span class="comment">    arr.append(toJsonValue(obj.second));</span></div>
-<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;<span class="comment">    s.val = std::move(arr);</span></div>
-<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;<span class="comment">    */</span></div>
-<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;  }</div>
+<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> readFrom(<a class="code" href="class_j_s_o_n_reader.html">JSONObject::Serializer</a>&amp; s, <span class="keyword">const</span> type&amp; obj) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;  <span class="comment">//   {</span></div>
+<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;  <span class="comment">//     SCORE_ABORT;</span></div>
+<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;  <span class="comment">//     /*</span></div>
+<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;  <span class="comment">//     QJsonArray arr;</span></div>
+<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;  <span class="comment">//     arr.append(toJsonValue(obj.first));</span></div>
+<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;  <span class="comment">//     arr.append(toJsonValue(obj.second));</span></div>
+<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;  <span class="comment">//     s.val = std::move(arr);</span></div>
+<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;  <span class="comment">//     */</span></div>
+<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;  <span class="comment">//   }</span></div>
 <div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160; </div>
-<div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> writeTo(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp; s, type&amp; obj)</div>
-<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;  {</div>
-<div class="line"><a name="l01127"></a><span class="lineno"> 1127</span>&#160;    SCORE_ABORT;</div>
-<div class="line"><a name="l01128"></a><span class="lineno"> 1128</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l01129"></a><span class="lineno"> 1129</span>&#160;<span class="comment">    const auto arr = s.val.toArray();</span></div>
-<div class="line"><a name="l01130"></a><span class="lineno"> 1130</span>&#160;<span class="comment">    obj.first = fromJsonValue&lt;T&gt;(arr[0]);</span></div>
-<div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160;<span class="comment">    obj.second = fromJsonValue&lt;U&gt;(arr[1]);</span></div>
-<div class="line"><a name="l01132"></a><span class="lineno"> 1132</span>&#160;<span class="comment">    */</span></div>
-<div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160;  }</div>
+<div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> writeTo(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp; s, type&amp; obj) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;  <span class="comment">//  {</span></div>
+<div class="line"><a name="l01127"></a><span class="lineno"> 1127</span>&#160;  <span class="comment">//    SCORE_ABORT;</span></div>
+<div class="line"><a name="l01128"></a><span class="lineno"> 1128</span>&#160;  <span class="comment">//    /*</span></div>
+<div class="line"><a name="l01129"></a><span class="lineno"> 1129</span>&#160;  <span class="comment">//    const auto arr = s.val.toArray();</span></div>
+<div class="line"><a name="l01130"></a><span class="lineno"> 1130</span>&#160;  <span class="comment">//    obj.first = fromJsonValue&lt;T&gt;(arr[0]);</span></div>
+<div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160;  <span class="comment">//    obj.second = fromJsonValue&lt;U&gt;(arr[1]);</span></div>
+<div class="line"><a name="l01132"></a><span class="lineno"> 1132</span>&#160;  <span class="comment">//    */</span></div>
+<div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160;  <span class="comment">//  }</span></div>
 <div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;};</div>
 <div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160; </div>
 <div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>

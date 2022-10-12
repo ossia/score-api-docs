@@ -1,11 +1,5 @@
 var NAVTREEINDEX21 =
 {
-"class_media_1_1_settings_1_1_presenter.html#a1f5bef033bcbeae4eed2064a843eef85":[12,0,29,2,3,2],
-"class_media_1_1_settings_1_1_presenter.html#a4e2e51426b1ad5aded618745318fa941":[12,0,29,2,3,0],
-"class_media_1_1_settings_1_1_presenter.html#a5ebdfa29da8f6e32ec5e605af0eb697b":[12,0,29,2,3,1],
-"class_media_1_1_settings_1_1_view.html":[12,0,29,2,4],
-"class_media_1_1_settings_1_1_view.html#aa304c00e45cdf2a9ea4582ae856df3e4":[12,0,29,2,4,0],
-"class_media_1_1_sndfile_decoder.html":[12,0,29,23],
 "class_media_1_1_sndfile_decoder.html#a061520890d2bc2ba9309b9c3a2955e83":[12,0,29,23,3],
 "class_media_1_1_sndfile_decoder.html#a24e97847a1822a0c3c317175d6e9e163":[12,0,29,23,4],
 "class_media_1_1_sndfile_decoder.html#a77e646395d8cd15c677b508d6846ef0a":[12,0,29,23,5],
@@ -113,7 +107,7 @@ var NAVTREEINDEX21 =
 "class_media_1_1_step_1_1_view.html#a52a3864c43b4e5492e547c81cfd81da5":[12,0,29,4,6,0],
 "class_media_1_1_step_1_1_view.html#a731842fe73469be9e759c2893f970144":[12,0,29,4,6,2],
 "class_media_1_1_step_1_1_view.html#ac06e594379be86a04356b435fc4b5c48":[12,0,29,4,6,3],
-"class_merge_time_syncs_test.html":[12,0,153],
+"class_merge_time_syncs_test.html":[12,0,154],
 "class_midi_1_1_add_note.html":[12,0,30,1],
 "class_midi_1_1_add_note.html#a221b9b4c2e763ec91a3f17c085eaec01":[12,0,30,1,4],
 "class_midi_1_1_add_note.html#a41ca1cb303c0ac87b057080363168581":[12,0,30,1,0],
@@ -249,5 +243,11 @@ var NAVTREEINDEX21 =
 "class_midi_1_1_set_channel.html#ab3f1f14a8857bede0b2abb8094a94dbd":[12,0,30,22,4],
 "class_midi_1_1_set_range.html":[12,0,30,23],
 "class_midi_1_1_set_range.html#a2fd5ca16898bdaa5ba0b8f5bee1ff831":[12,0,30,23,3],
-"class_midi_1_1_set_range.html#a483c8ac25562fd0ced4535c63eb0c9b1":[12,0,30,23,4]
+"class_midi_1_1_set_range.html#a483c8ac25562fd0ced4535c63eb0c9b1":[12,0,30,23,4],
+"class_midi_1_1_set_range.html#a5f85c0adcd3866552d2ae640060af11d":[12,0,30,23,2],
+"class_midi_1_1_set_range.html#aae866c601785eae01eb0efee346562ec":[12,0,30,23,0],
+"class_midi_1_1_set_range.html#ac79a3d82416b375fa7e7227837fcf59e":[12,0,30,23,1],
+"class_midi_1_1_view.html":[12,0,30,24],
+"class_midi_1_1_view.html#a065d1ec266f5210ef53e76de743af804":[12,0,30,24,2],
+"class_midi_1_1_view.html#a29e50dc74e49ca26316ccf6801f53414":[12,0,30,24,3]
 };

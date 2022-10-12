@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('_value_serialization_impl_8hpp_source.
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keyword">using</span> value_type_list = ossia::tl&lt;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;      float, int, ossia::vec2f, ossia::vec3f, ossia::vec4f, ossia::impulse, bool,</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;      std::string, std::vector&lt;ossia::value&gt;, <span class="keywordtype">char</span>&gt;;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;      std::string, std::vector&lt;ossia::value&gt;, ossia::value_map_type&gt;;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> readFrom(<a class="code" href="class_j_s_o_n_reader.html">JSONObject::Serializer</a>&amp; s, <span class="keyword">const</span> var_t&amp; var)</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  {</div>
@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('_value_serialization_impl_8hpp_source.
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">case</span> value_variant_type::Type::Type8:</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keywordflow">return</span> functor(<a class="code" href="structtypeholder.html">typeholder</a>&lt;std::vector&lt;ossia::value&gt;&gt;{}, var);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">case</span> value_variant_type::Type::Type9:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keywordflow">return</span> functor(<a class="code" href="structtypeholder.html">typeholder&lt;char&gt;</a>{}, var);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keywordflow">return</span> functor(<a class="code" href="structtypeholder.html">typeholder&lt;value_map_type&gt;</a>{}, var);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">default</span>:</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="keywordflow">throw</span>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div>
@@ -268,7 +268,7 @@ $(document).ready(function(){initNavTree('_value_serialization_impl_8hpp_source.
 <div class="ttc" id="aclass_j_s_o_n_object_html"><div class="ttname"><a href="class_j_s_o_n_object.html">JSONObject</a></div><div class="ttdef"><b>Definition:</b> VisitorInterface.hpp:61</div></div>
 <div class="ttc" id="aclass_data_stream_reader_html"><div class="ttname"><a href="class_data_stream_reader.html">DataStreamReader</a></div><div class="ttdef"><b>Definition:</b> DataStreamVisitor.hpp:26</div></div>
 <div class="ttc" id="aclass_j_s_o_n_writer_html"><div class="ttname"><a href="class_j_s_o_n_writer.html">JSONWriter</a></div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:424</div></div>
-<div class="ttc" id="astructtypeholder_html"><div class="ttname"><a href="structtypeholder.html">typeholder</a></div><div class="ttdef"><b>Definition:</b> OSSIASerializationImpl.hpp:63</div></div>
+<div class="ttc" id="astructtypeholder_html"><div class="ttname"><a href="structtypeholder.html">typeholder</a></div><div class="ttdef"><b>Definition:</b> OSSIASerializationImpl.hpp:80</div></div>
 <div class="ttc" id="aclass_data_stream_reader_html_ac0eb5c043b33cc07de11c45edd22db1b"><div class="ttname"><a href="class_data_stream_reader.html#ac0eb5c043b33cc07de11c45edd22db1b">DataStreamReader::insertDelimiter</a></div><div class="ttdeci">void insertDelimiter()</div><div class="ttdoc">insertDelimiter</div><div class="ttdef"><b>Definition:</b> DataStreamVisitor.hpp:160</div></div>
 <div class="ttc" id="aclass_data_stream_reader_html_a4f58ef6aec2af2d3eeb68da834177886"><div class="ttname"><a href="class_data_stream_reader.html#a4f58ef6aec2af2d3eeb68da834177886">DataStreamReader::readFrom</a></div><div class="ttdeci">void readFrom(const score::Entity&lt; T &gt; &amp;obj)</div><div class="ttdoc">Called by code that wants to serialize.</div><div class="ttdef"><b>Definition:</b> DataStreamVisitor.hpp:53</div></div>
 <div class="ttc" id="astruct_t_serializer_html"><div class="ttname"><a href="struct_t_serializer.html">TSerializer</a></div><div class="ttdef"><b>Definition:</b> VisitorInterface.hpp:13</div></div>

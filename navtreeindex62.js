@@ -1,8 +1,5 @@
 var NAVTREEINDEX62 =
 {
-"struct_process_1_1_control_message.html":[12,0,39,11],
-"struct_process_1_1_control_message.html#a88feb3aadc5557e2adc7ea6d7f50edb7":[12,0,39,11,0],
-"struct_process_1_1_control_message.html#a9a83dfd80878bd603e2f9b7a789d59ac":[12,0,39,11,1],
 "struct_process_1_1_control_message.html#aa6cb328892e65910050436469c198eea":[12,0,39,11,2],
 "struct_process_1_1_control_setup.html":[12,0,39,13],
 "struct_process_1_1_control_setup.html#a20cf97ff1ab576747d5c504cc5356062":[12,0,39,13,4],
@@ -248,6 +245,9 @@ var NAVTREEINDEX62 =
 "struct_protocols_1_1_artnet_specific_settings.html#a4751dce842318274b333b0d0e52d88a0":[12,0,40,6,4],
 "struct_protocols_1_1_artnet_specific_settings.html#a4d06303be75d3e9c621899e5135d8239":[12,0,40,6,6],
 "struct_protocols_1_1_artnet_specific_settings.html#a77b6e21f64d9ce28f5af1710ec4b10df":[12,0,40,6,7],
-"struct_protocols_1_1_artnet_specific_settings.html#ac7f57c946a09ef1868357481125a497da13e00b5397e18f354080ef88192c24b2":[12,0,40,6,2],
-"struct_protocols_1_1_artnet_specific_settings.html#ac7f57c946a09ef1868357481125a497da8cec388504d10e2f062e946bfca4a82a":[12,0,40,6,1]
+"struct_protocols_1_1_artnet_specific_settings.html#ac4a1c1d71e5d7671a6b7ce7e52db6037":[12,0,40,6,3],
+"struct_protocols_1_1_artnet_specific_settings.html#ae0ba04d62558b6c0f99f86c485807299a13e00b5397e18f354080ef88192c24b2":[12,0,40,6,2],
+"struct_protocols_1_1_artnet_specific_settings.html#ae0ba04d62558b6c0f99f86c485807299a8cec388504d10e2f062e946bfca4a82a":[12,0,40,6,1],
+"struct_protocols_1_1_artnet_specific_settings.html#ae0ba04d62558b6c0f99f86c485807299a8f193d99261c886112a6e391c0393c71":[12,0,40,6,0],
+"struct_protocols_1_1_artnet_specific_settings.html#af633c42f6e9ab57071377281ee0bd583":[12,0,40,6,5]
 };
