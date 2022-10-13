@@ -1,6 +1,5 @@
 var NAVTREEINDEX63 =
 {
-"struct_protocols_1_1_fixture_database_1_1_scan.html":[12,0,40,9,0],
 "struct_protocols_1_1_fixture_database_1_1_scan.html#a3b7be4f9c56242d3fbf49533d137b9fe":[12,0,40,9,0,0],
 "struct_protocols_1_1_fixture_database_1_1_scan.html#ac815fe8f651e19a94be9735711c8abfe":[12,0,40,9,0,2],
 "struct_protocols_1_1_fixture_database_1_1_scan.html#ad1b0903b5165797816bf08ada75f03da":[12,0,40,9,0,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX63 =
 "struct_q_meta_type_id_3_01const_01_scenario_1_1_scenario_interface_01_5_01_4.html#ae0b26b3b4d2f767db1af9396afcabfbeaab8a83fb4f6fe93674d8a7eebf0fe629":[12,0,227,0],
 "struct_q_meta_type_id_3_01ossia_1_1audio__stretch__mode_01_4.html":[12,0,265],
 "struct_q_meta_type_id_3_01ossia_1_1audio__stretch__mode_01_4.html#a1778c86aaf6292af20dec3cbf2cf0dc2a82abd662d3d748dbb66e0e0da78a0ea7":[12,0,265,0],
-"struct_q_meta_type_id_3_01ossia_1_1bench__map_01_4.html":[12,0,266]
+"struct_q_meta_type_id_3_01ossia_1_1bench__map_01_4.html":[12,0,266],
+"struct_q_meta_type_id_3_01ossia_1_1bench__map_01_4.html#aff7108af11796b89b6f8f91f1d7ff005a07a19c228c660c3666dabc3eaf7dc64a":[12,0,266,0]
 };

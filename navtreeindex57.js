@@ -1,6 +1,5 @@
 var NAVTREEINDEX57 =
 {
-"struct_gfx_1_1_settings_1_1_graphics_apis.html#a298d911444a06a5b6c6893b35e26a611":[12,0,17,3,0,1],
 "struct_gfx_1_1_settings_1_1_graphics_apis.html#a47ffb3b0fcba2a4ba725045596e66068":[12,0,17,3,0,4],
 "struct_gfx_1_1_settings_1_1_graphics_apis.html#a77fbcd528c1674ba951613a76b8badf1":[12,0,17,3,0,0],
 "struct_gfx_1_1_settings_1_1_graphics_apis.html#a7c78e9240a968fb5e3e9a53ddaad9bfa":[12,0,17,3,0,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX57 =
 "struct_jit_1_1_global_at_exit.html":[12,0,23,11],
 "struct_jit_1_1_global_at_exit.html#a1a107d2226e1022af3a5ce5ee3fc7e1b":[12,0,23,11,1],
 "struct_jit_1_1_global_at_exit.html#a9ba923665d834093bbc9a615dec288dd":[12,0,23,11,2],
-"struct_jit_1_1_global_at_exit.html#ac1b771652755b1091f2cc62ad2eea4cb":[12,0,23,11,0]
+"struct_jit_1_1_global_at_exit.html#ac1b771652755b1091f2cc62ad2eea4cb":[12,0,23,11,0],
+"struct_jit_1_1_timer.html":[12,0,23,16]
 };

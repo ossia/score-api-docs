@@ -113,12 +113,11 @@ var searchData=
   ['graphpreviewwidget_851',['GraphPreviewWidget',['../class_gfx_1_1_graph_preview_widget.html',1,'Gfx']]],
   ['graphvertex_852',['GraphVertex',['../structscore_1_1_plugin_loader_1_1_plugin_dependency_graph_1_1_graph_vertex.html',1,'score::PluginLoader::PluginDependencyGraph']]],
   ['graphwidget_853',['GraphWidget',['../structoscr_1_1_graph_widget.html',1,'oscr']]],
-  ['grph_854',['grph',['../namespacegrph.html',1,'']]],
-  ['gui_855',['gui',['../structscore_1_1_application_settings.html#a0a48ca49dc5cfd09a2534d2f3168c192',1,'score::ApplicationSettings']]],
-  ['guiapplicationcontext_856',['GUIApplicationContext',['../structscore_1_1_g_u_i_application_context.html',1,'score']]],
-  ['guiapplicationinterface_857',['GUIApplicationInterface',['../classscore_1_1_g_u_i_application_interface.html',1,'score']]],
-  ['guiapplicationplugin_858',['GUIApplicationPlugin',['../classvst_1_1_g_u_i_application_plugin.html',1,'vst::GUIApplicationPlugin'],['../classscore_1_1_g_u_i_application_plugin.html',1,'score::GUIApplicationPlugin'],['../structscore_1_1_g_u_i_application_context.html#a008b39560a3a96d564df13d2861d0c52',1,'score::GUIApplicationContext::guiApplicationPlugin()']]],
-  ['guiapplicationplugins_859',['guiApplicationPlugins',['../structscore_1_1_g_u_i_application_context.html#afadc813e4641d62321692cfddedd5590',1,'score::GUIApplicationContext']]],
-  ['guiapplicationregistrar_860',['GUIApplicationRegistrar',['../classscore_1_1_g_u_i_application_registrar.html',1,'score']]],
-  ['guielements_861',['GUIElements',['../structscore_1_1_g_u_i_elements.html',1,'score']]]
+  ['gui_854',['gui',['../structscore_1_1_application_settings.html#a0a48ca49dc5cfd09a2534d2f3168c192',1,'score::ApplicationSettings']]],
+  ['guiapplicationcontext_855',['GUIApplicationContext',['../structscore_1_1_g_u_i_application_context.html',1,'score']]],
+  ['guiapplicationinterface_856',['GUIApplicationInterface',['../classscore_1_1_g_u_i_application_interface.html',1,'score']]],
+  ['guiapplicationplugin_857',['GUIApplicationPlugin',['../classvst_1_1_g_u_i_application_plugin.html',1,'vst::GUIApplicationPlugin'],['../classscore_1_1_g_u_i_application_plugin.html',1,'score::GUIApplicationPlugin'],['../structscore_1_1_g_u_i_application_context.html#a008b39560a3a96d564df13d2861d0c52',1,'score::GUIApplicationContext::guiApplicationPlugin()']]],
+  ['guiapplicationplugins_858',['guiApplicationPlugins',['../structscore_1_1_g_u_i_application_context.html#afadc813e4641d62321692cfddedd5590',1,'score::GUIApplicationContext']]],
+  ['guiapplicationregistrar_859',['GUIApplicationRegistrar',['../classscore_1_1_g_u_i_application_registrar.html',1,'score']]],
+  ['guielements_860',['GUIElements',['../structscore_1_1_g_u_i_elements.html',1,'score']]]
 ];
