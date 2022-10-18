@@ -8,6 +8,7 @@ var classvst3_1_1vst__node__base =
     [ "dispatchMidi", "classvst3_1_1vst__node__base.html#a487e7887b95d1b0c1df691d617554825", null ],
     [ "dispatchMidi", "classvst3_1_1vst__node__base.html#a6b52cdec60800f8ec995db959fed9121", null ],
     [ "preparePort", "classvst3_1_1vst__node__base.html#a30fb6a5d4495a041e3f42ba547b56fb2", null ],
+    [ "readbackMidi", "classvst3_1_1vst__node__base.html#aacacfb18e922f4c8f01dcd75b57dfe62", null ],
     [ "set_control", "classvst3_1_1vst__node__base.html#a16746c89e01d5980d8f94d906851eac9", null ],
     [ "setControls", "classvst3_1_1vst__node__base.html#a8a8da367dcb1ea32493b9b23710e8627", null ],
     [ "setupTimeInfo", "classvst3_1_1vst__node__base.html#a2f15b1a83cda8e0197bd790ab0ac53a7", null ],

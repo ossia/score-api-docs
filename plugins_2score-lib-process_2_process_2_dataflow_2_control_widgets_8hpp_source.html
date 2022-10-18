@@ -532,17 +532,17 @@ $(document).ready(function(){initNavTree('plugins_2score-lib-process_2_process_2
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;      <span class="keyword">const</span> T&amp; slider, Control_T&amp; inlet, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;      QGraphicsItem* parent, QObject* context)</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;  {</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    <span class="keyword">auto</span> sl = <span class="keyword">new</span> <a class="code" href="classscore_1_1_q_graphics_int_slider.html">score::QGraphicsIntSlider</a>{<span class="keyword">nullptr</span>};</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    sl-&gt;setValue(ossia::convert&lt;int&gt;(inlet.value()));</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    bindIntDomain(slider, inlet, *sl);</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    <span class="keyword">auto</span> sl = <span class="keyword">new</span> <a class="code" href="classscore_1_1_q_graphics_int_spinbox.html">score::QGraphicsIntSpinbox</a>{<span class="keyword">nullptr</span>};</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    bindIntDomain(slider, inlet, *sl);</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    sl-&gt;setValue(ossia::convert&lt;int&gt;(inlet.value()));</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160; </div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    QObject::connect(</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        sl, &amp;score::QGraphicsIntSlider::sliderMoved, context, [=, &amp;inlet, &amp;ctx] {</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        sl, &amp;score::QGraphicsIntSpinbox::sliderMoved, context, [=, &amp;inlet, &amp;ctx] {</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;          sl-&gt;moving = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;          ctx.dispatcher.<a class="code" href="class_ongoing_command_dispatcher.html#a025496b513fab9cdaabbff6b75f4e74b">submit</a>&lt;SetControlValue&lt;Control_T&gt;&gt;(inlet, sl-&gt;value());</div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        });</div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    QObject::connect(</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        sl, &amp;score::QGraphicsIntSlider::sliderReleased, context, [&amp;ctx, sl]() {</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        sl, &amp;score::QGraphicsIntSpinbox::sliderReleased, context, [&amp;ctx, sl]() {</div>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;          ctx.dispatcher.<a class="code" href="class_ongoing_command_dispatcher.html#a98c51c70b84cb27505120b707bbe9b5e">commit</a>();</div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;          sl-&gt;moving = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        });</div>
@@ -559,7 +559,7 @@ $(document).ready(function(){initNavTree('plugins_2score-lib-process_2_process_2
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;        });</div>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    QObject::connect(</div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;        &amp;inlet, &amp;Control_T::executionReset, sl,</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;        &amp;score::QGraphicsIntSlider::resetExecution);</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;        &amp;score::QGraphicsIntSpinbox::resetExecution);</div>
 <div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160; </div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    <span class="keywordflow">return</span> sl;</div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;  }</div>
@@ -1522,6 +1522,7 @@ $(document).ready(function(){initNavTree('plugins_2score-lib-process_2_process_2
 <div class="ttc" id="astruct_process_1_1_default_control_layouts_html"><div class="ttname"><a href="struct_process_1_1_default_control_layouts.html">Process::DefaultControlLayouts</a></div><div class="ttdef"><b>Definition:</b> plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp:40</div></div>
 <div class="ttc" id="astruct_widget_factory_1_1_combo_box_html"><div class="ttname"><a href="struct_widget_factory_1_1_combo_box.html">WidgetFactory::ComboBox</a></div><div class="ttdef"><b>Definition:</b> plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp:1052</div></div>
 <div class="ttc" id="astruct_widget_factory_1_1_line_edit_html"><div class="ttname"><a href="struct_widget_factory_1_1_line_edit.html">WidgetFactory::LineEdit</a></div><div class="ttdef"><b>Definition:</b> plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp:745</div></div>
+<div class="ttc" id="aclassscore_1_1_q_graphics_int_spinbox_html"><div class="ttname"><a href="classscore_1_1_q_graphics_int_spinbox.html">score::QGraphicsIntSpinbox</a></div><div class="ttdef"><b>Definition:</b> QGraphicsSpinbox.hpp:58</div></div>
 <div class="ttc" id="aclassscore_1_1_q_graphics_text_button_html"><div class="ttname"><a href="classscore_1_1_q_graphics_text_button.html">score::QGraphicsTextButton</a></div><div class="ttdef"><b>Definition:</b> QGraphicsTextButton.hpp:13</div></div>
 <div class="ttc" id="aclassscore_1_1_q_graphics_x_y_z_chooser_html"><div class="ttname"><a href="classscore_1_1_q_graphics_x_y_z_chooser.html">score::QGraphicsXYZChooser</a></div><div class="ttdef"><b>Definition:</b> QGraphicsXYZChooser.hpp:16</div></div>
 <div class="ttc" id="astruct_widget_factory_1_1_float_range_slider_html"><div class="ttname"><a href="struct_widget_factory_1_1_float_range_slider.html">WidgetFactory::FloatRangeSlider</a></div><div class="ttdef"><b>Definition:</b> plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp:347</div></div>
