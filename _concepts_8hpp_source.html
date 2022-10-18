@@ -287,7 +287,7 @@ $(document).ready(function(){initNavTree('_concepts_8hpp_source.html',''); initR
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;}</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> N&gt;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;constexpr <span class="keyword">auto</span> to_combobox_range(<span class="keyword">const</span> std::string_view (&amp;val)[N])</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="keyword">auto</span> to_combobox_range(<span class="keyword">const</span> std::string_view (&amp;val)[N])</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;{</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  std::vector&lt;std::pair&lt;QString, ossia::value&gt;&gt; vec;</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; N; i++)</div>
@@ -296,7 +296,7 @@ $(document).ready(function(){initNavTree('_concepts_8hpp_source.html',''); initR
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;}</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> N&gt;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;constexpr <span class="keyword">auto</span> to_combobox_range(<span class="keyword">const</span> std::array&lt;std::string_view, N&gt;&amp; val)</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="keyword">auto</span> to_combobox_range(<span class="keyword">const</span> std::array&lt;std::string_view, N&gt;&amp; val)</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;{</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  std::vector&lt;std::pair&lt;QString, ossia::value&gt;&gt; vec;</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; N; i++)</div>
