@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"_entity_map_serialization_8hpp_source.html":[13,0,384],
 "_entity_serialization_8hpp_source.html":[13,0,385],
 "_event_8hpp_source.html":[13,0,388],
 "_event_actions_8hpp_source.html":[13,0,389],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "_m_i_d_i_protocol_settings_widget_8hpp_source.html":[13,0,756],
 "_m_i_d_i_specific_settings_8hpp_source.html":[13,0,757],
 "_m_m_e_port_audio_interface_8hpp_source.html":[13,0,774],
-"_macro_command_dispatcher_8hpp_source.html":[13,0,679],
-"_magnetic_info_8hpp_source.html":[13,0,680]
+"_macro_command_dispatcher_8hpp_source.html":[13,0,679]
 };

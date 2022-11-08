@@ -310,6 +310,9 @@ var annotated_dup =
       [ "texgen_node", "class_jit_1_1texgen__node.html", "class_jit_1_1texgen__node" ],
       [ "Timer", "struct_jit_1_1_timer.html", "struct_jit_1_1_timer" ]
     ] ],
+    [ "jk", null, [
+      [ "value", "structjk_1_1value.html", "structjk_1_1value" ]
+    ] ],
     [ "JS", null, [
       [ "Executor", null, [
         [ "Component", "class_j_s_1_1_executor_1_1_component.html", "class_j_s_1_1_executor_1_1_component" ],

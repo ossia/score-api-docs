@@ -409,7 +409,7 @@ $(document).ready(function(){initNavTree('_start_screen_8hpp_source.html',''); i
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  }</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;  { <span class="comment">// Load Examples</span></div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    QSettings settings;</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keyword">auto</span> library_path = settings.value(<span class="stringliteral">&quot;Library/Path&quot;</span>).toString();</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keyword">auto</span> library_path = settings.value(<span class="stringliteral">&quot;Library/RootPath&quot;</span>).toString();</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    InteractiveLabel* label = <span class="keyword">new</span> InteractiveLabel{</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        titleFont, qApp-&gt;tr(<span class="stringliteral">&quot;Examples&quot;</span>), <span class="stringliteral">&quot;file://&quot;</span> + library_path, <span class="keyword">this</span>};</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    label-&gt;setPixmaps(</div>

@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"_bool_value_widget_8hpp_source.html":[13,0,114],
 "_boost_variant2_serialization_8hpp_source.html":[13,0,115],
 "_bytebeat_8hpp_source.html":[13,0,116],
 "_c_s_p_coherency_checker_interface_8hpp_source.html":[13,0,238],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "_entity_base_8hpp_source.html":[13,0,380],
 "_entity_impl_8hpp_source.html":[13,0,381],
 "_entity_list_8hpp_source.html":[13,0,382],
-"_entity_map_8hpp_source.html":[13,0,383],
-"_entity_map_serialization_8hpp_source.html":[13,0,384]
+"_entity_map_8hpp_source.html":[13,0,383]
 };

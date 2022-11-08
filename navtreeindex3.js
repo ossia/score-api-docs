@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"_magnetic_info_8hpp_source.html":[13,0,680],
 "_magnetism_adjuster_8hpp_source.html":[13,0,681],
 "_make_bus_8hpp_source.html":[13,0,682],
 "_manual_clock_8hpp_source.html":[13,0,683],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "_properties_8hpp_source.html":[13,0,981],
 "_property_8hpp_source.html":[13,0,982],
 "_property_command_8hpp_source.html":[13,0,983],
-"_protocol_factory_interface_8hpp_source.html":[13,0,984],
-"_protocol_library_8hpp_source.html":[13,0,985]
+"_protocol_factory_interface_8hpp_source.html":[13,0,984]
 };
