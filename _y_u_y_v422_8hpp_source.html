@@ -216,7 +216,7 @@ $(document).ready(function(){initNavTree('_y_u_y_v422_8hpp_source.html',''); ini
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="stringliteral">   // the original texture x coord is even or odd.</span></div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="stringliteral">   vec4 uyvy = texture(u_tex, v_texcoord);</span></div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="stringliteral">   float Y;</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="stringliteral">   if (fract(floor(texcoord.x * renderer.renderSize.x + 0.5) / 2.0) &gt; 0.0)</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="stringliteral">   if (fract(floor(v_texcoord.x * renderer.renderSize.x + 0.5) / 2.0) &gt; 0.0)</span></div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="stringliteral">       Y = uyvy.a;       // odd so choose Y1</span></div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="stringliteral">   else</span></div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="stringliteral">       Y = uyvy.g;       // even so choose Y0</span></div>
