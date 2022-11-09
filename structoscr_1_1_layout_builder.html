@@ -123,26 +123,29 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>outputs_type</b> = t
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad4818134008d2a2d24633ccd9f3ec20f"><td class="memTemplParams" colspan="2"><a id="ad4818134008d2a2d24633ccd9f3ec20f"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ad4818134008d2a2d24633ccd9f3ec20f"><td class="memTemplItemLeft" align="right" valign="top">QGraphicsItem *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>createControl</b> (auto T::*member)</td></tr>
-<tr class="separator:ad4818134008d2a2d24633ccd9f3ec20f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a536f5d846d7e20d5352dbe5da6351740"><td class="memItemLeft" align="right" valign="top"><a id="a536f5d846d7e20d5352dbe5da6351740"></a>
+QGraphicsItem *&#160;</td><td class="memItemRight" valign="bottom"><b>createControl</b> (auto... member)</td></tr>
+<tr class="separator:a536f5d846d7e20d5352dbe5da6351740"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2969ebc8b7da07f77456b530c861f48"><td class="memTemplParams" colspan="2"><a id="ae2969ebc8b7da07f77456b530c861f48"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ae2969ebc8b7da07f77456b530c861f48"><td class="memTemplItemLeft" align="right" valign="top">QGraphicsItem *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>createWidget</b> (const T &amp;item)</td></tr>
 <tr class="separator:ae2969ebc8b7da07f77456b530c861f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92ca222ff55959a57235f5e3027bcf04"><td class="memTemplParams" colspan="2"><a id="a92ca222ff55959a57235f5e3027bcf04"></a>
+template&lt;typename... T&gt; </td></tr>
+<tr class="memitem:a92ca222ff55959a57235f5e3027bcf04"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>requires</b> (sizeof...(T) &gt; 1) QGraphicsItem *createWidget(T... recursive_members)</td></tr>
+<tr class="separator:a92ca222ff55959a57235f5e3027bcf04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8e4320618ce7edec7fdf18c7cec0e86"><td class="memTemplParams" colspan="2"><a id="aa8e4320618ce7edec7fdf18c7cec0e86"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aa8e4320618ce7edec7fdf18c7cec0e86"><td class="memTemplItemLeft" align="right" valign="top">QGraphicsItem *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>createCustom</b> (T &amp;item)</td></tr>
 <tr class="separator:aa8e4320618ce7edec7fdf18c7cec0e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a3bfa52cc203a18b79dab6ee8bb1ca2"><td class="memTemplParams" colspan="2"><a id="a2a3bfa52cc203a18b79dab6ee8bb1ca2"></a>
+<tr class="memitem:a327a621f23d9b4a4ee57b49ccf6da22b"><td class="memTemplParams" colspan="2"><a id="a327a621f23d9b4a4ee57b49ccf6da22b"></a>
 template&lt;typename Item &gt; </td></tr>
-<tr class="memitem:a2a3bfa52cc203a18b79dab6ee8bb1ca2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>subLayout</b> (Item &amp;item, <a class="el" href="classscore_1_1_graphics_layout.html">score::GraphicsLayout</a> *new_l)</td></tr>
-<tr class="separator:a2a3bfa52cc203a18b79dab6ee8bb1ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca4bcb44275416b8ca282d9e53afdca3"><td class="memTemplParams" colspan="2"><a id="aca4bcb44275416b8ca282d9e53afdca3"></a>
+<tr class="memitem:a327a621f23d9b4a4ee57b49ccf6da22b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>subLayout</b> (Item &amp;item, <a class="el" href="classscore_1_1_graphics_layout.html">score::GraphicsLayout</a> *new_l, auto... recursive_members)</td></tr>
+<tr class="separator:a327a621f23d9b4a4ee57b49ccf6da22b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b113133e6d4a7c19f3493c9010f8712"><td class="memTemplParams" colspan="2"><a id="a2b113133e6d4a7c19f3493c9010f8712"></a>
 template&lt;typename Item &gt; </td></tr>
-<tr class="memitem:aca4bcb44275416b8ca282d9e53afdca3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>walkLayout</b> (Item &amp;item)</td></tr>
-<tr class="separator:aca4bcb44275416b8ca282d9e53afdca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b113133e6d4a7c19f3493c9010f8712"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>walkLayout</b> (Item &amp;item, auto... recursive_members)</td></tr>
+<tr class="separator:a2b113133e6d4a7c19f3493c9010f8712"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_struct_process_1_1_layout_builder_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_process_1_1_layout_builder_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="struct_process_1_1_layout_builder_base.html">Process::LayoutBuilderBase</a></td></tr>
 <tr class="memitem:a58212c14c66609c2b749df114eee1a08 inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memItemLeft" align="right" valign="top"><a id="a58212c14c66609c2b749df114eee1a08"></a>
 QGraphicsItem *&#160;</td><td class="memItemRight" valign="bottom"><b>makePort</b> (<a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> &amp;portModel)</td></tr>
