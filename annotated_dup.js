@@ -39,6 +39,9 @@ var annotated_dup =
       [ "SDLFactory", "class_audio_1_1_s_d_l_factory.html", "class_audio_1_1_s_d_l_factory" ]
     ] ],
     [ "Automation", "namespace_automation.html", "namespace_automation" ],
+    [ "avnd_tools", null, [
+      [ "PatternUnfolder", "structavnd__tools_1_1_pattern_unfolder.html", "structavnd__tools_1_1_pattern_unfolder" ]
+    ] ],
     [ "AvndJit", null, [
       [ "EditAvndScript", "class_avnd_jit_1_1_edit_avnd_script.html", null ],
       [ "Executor", "class_avnd_jit_1_1_executor.html", "class_avnd_jit_1_1_executor" ],

@@ -33,6 +33,7 @@ var files_dup =
     [ "AddressSettingsFactory.hpp", "_address_settings_factory_8hpp_source.html", null ],
     [ "AddressSettingsWidget.hpp", "_address_settings_widget_8hpp_source.html", null ],
     [ "AddressStringSettingsWidget.hpp", "_address_string_settings_widget_8hpp_source.html", null ],
+    [ "AddressTools.hpp", "_address_tools_8hpp_source.html", null ],
     [ "AddressValidator.hpp", "_address_validator_8hpp_source.html", null ],
     [ "AddressVecSettingsWidget.hpp", "_address_vec_settings_widget_8hpp_source.html", null ],
     [ "AddSlotToRack.hpp", "_add_slot_to_rack_8hpp_source.html", null ],
