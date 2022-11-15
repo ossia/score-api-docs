@@ -1,5 +1,10 @@
 var NAVTREEINDEX51 =
 {
+"classvst3_1_1_v_s_t_effect_item.html#aa2def84df48dc246cade00dc0c6fb370":[12,0,58,21,1],
+"classvst3_1_1_v_s_t_effect_item.html#ad5898861ac0878bf44d57f28c6837295":[12,0,58,21,0],
+"classvst3_1_1_v_s_t_graphics_slider.html":[12,0,58,23],
+"classvst3_1_1_v_s_t_graphics_slider.html#a2721215d3d25187e2c1bf521eec308f3":[12,0,58,23,5],
+"classvst3_1_1_v_s_t_graphics_slider.html#a2fe9f8798906e2b3dcba6b112804068e":[12,0,58,23,8],
 "classvst3_1_1_v_s_t_graphics_slider.html#a3c8163ea53bb3a1bf7ca50fec2c7a96c":[12,0,58,23,4],
 "classvst3_1_1_v_s_t_graphics_slider.html#a622b9fefb026fad682e625a506d6b3a5":[12,0,58,23,0],
 "classvst3_1_1_v_s_t_graphics_slider.html#a83c5452eecbdb79f848d3cc86aeffda5":[12,0,58,23,1],
@@ -197,8 +202,8 @@ var NAVTREEINDEX51 =
 "data_structures_8hpp_source.html":[13,0,280],
 "element_finding_helper_8hpp_source.html":[13,0,376],
 "files.html":[13,0],
-"functions.html":[12,3,0,0],
 "functions.html":[12,3,0],
+"functions.html":[12,3,0,0],
 "functions_c.html":[12,3,0,1],
 "functions_d.html":[12,3,0,2],
 "functions_e.html":[12,3,0,3],
@@ -244,10 +249,5 @@ var NAVTREEINDEX51 =
 "globals.html":[13,1,0],
 "globals_defs.html":[13,1,2],
 "globals_type.html":[13,1,1],
-"hierarchy.html":[12,2],
-"index.html":[],
-"intro_8hpp_source.html":[13,0,593],
-"isf_8hpp_source.html":[13,0,599],
-"lib_2core_2documentation_2commands_8hpp_source.html":[13,0,168],
-"lib_2core_2presenter_2_presenter_8hpp_source.html":[13,0,922]
+"hierarchy.html":[12,2]
 };

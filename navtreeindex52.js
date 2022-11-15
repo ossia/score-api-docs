@@ -1,5 +1,10 @@
 var NAVTREEINDEX52 =
 {
+"index.html":[],
+"intro_8hpp_source.html":[13,0,593],
+"isf_8hpp_source.html":[13,0,599],
+"lib_2core_2documentation_2commands_8hpp_source.html":[13,0,168],
+"lib_2core_2presenter_2_presenter_8hpp_source.html":[13,0,922],
 "lib_2core_2settings_2_settings_8hpp_source.html":[13,0,1209],
 "lib_2core_2view_2_window_8hpp_source.html":[13,0,1427],
 "lib_2score_2model_2_component_8hpp_source.html":[13,0,192],
@@ -14,8 +19,8 @@ var NAVTREEINDEX52 =
 "namespace_automation.html":[12,0,2],
 "namespace_curve.html":[11,0,1],
 "namespace_curve.html":[12,0,8],
-"namespace_device.html":[11,0,2],
 "namespace_device.html":[12,0,10],
+"namespace_device.html":[11,0,2],
 "namespace_engine.html":[11,0,3],
 "namespace_engine.html":[12,0,11],
 "namespace_engine_1_1_network.html":[11,0,3,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX52 =
 "score__plugin__gfx_8hpp_source.html":[13,0,1144],
 "score__plugin__inspector_8hpp_source.html":[13,0,1145],
 "score__plugin__jit_8hpp_source.html":[13,0,1146],
-"score__plugin__js_8hpp_source.html":[13,0,1147],
-"score__plugin__library_8hpp_source.html":[13,0,1148],
-"score__plugin__lv2_8hpp_source.html":[13,0,1149],
-"score__plugin__mapping_8hpp_source.html":[13,0,1150],
-"score__plugin__media_8hpp_source.html":[13,0,1151],
-"score__plugin__midi_8hpp_source.html":[13,0,1152]
+"score__plugin__js_8hpp_source.html":[13,0,1147]
 };
