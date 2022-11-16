@@ -1,5 +1,7 @@
 var NAVTREEINDEX56 =
 {
+"struct_execution_1_1_metronome_sounds.html#a858ba4c5ce9d3eaa5b0b4931b9f154d4":[12,0,12,27,2],
+"struct_execution_1_1_metronome_sounds.html#ac91fc97a2a970c3703978d7e1b6fe930":[12,0,12,27,1],
 "struct_execution_1_1_metronome_sounds.html#ae0299bcfc834063b1bd4d60c36298f10":[12,0,12,27,5],
 "struct_execution_1_1_play_from_interval_scenario_pruner.html":[12,0,12,29],
 "struct_execution_1_1_play_from_interval_scenario_pruner.html#a18be4d36bfc04a5fb403dfe4df941686":[12,0,12,29,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX56 =
 "struct_gfx_1_1_kinect2_1_1_kinect2_settings.html#a4164086e6173f490fbf9040df3fea65b":[12,0,18,2,10,3],
 "struct_gfx_1_1_kinect2_1_1_kinect2_settings.html#a602b1747189f936097bd373c11dadd75":[12,0,18,2,10,1],
 "struct_gfx_1_1_kinect2_1_1_kinect2_settings.html#a7be495842a9fe24667d4be9485683044":[12,0,18,2,10,2],
-"struct_gfx_1_1_kinect2_1_1_listener.html":[12,0,18,2,12],
-"struct_gfx_1_1_kinect2_1_1_listener.html#a05ef6d14ad4b3397f98153a5e1c049b8":[12,0,18,2,12,1],
-"struct_gfx_1_1_kinect2_1_1_listener.html#a328267f41754de554c47c8045c4b5e4f":[12,0,18,2,12,0]
+"struct_gfx_1_1_kinect2_1_1_listener.html":[12,0,18,2,12]
 };

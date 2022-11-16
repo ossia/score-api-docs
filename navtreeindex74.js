@@ -1,5 +1,7 @@
 var NAVTREEINDEX74 =
 {
+"structscore_1_1gfx_1_1_screen_node.html#a98486d365fb8301dc7190b4ab82450b1":[12,0,48,2,50,20],
+"structscore_1_1gfx_1_1_screen_node.html#aaf790703629bbdc010160d6f4daf3bf1":[12,0,48,2,50,5],
 "structscore_1_1gfx_1_1_screen_node.html#ab4b8e660eb8074d0680b89ab062252f0":[12,0,48,2,50,21],
 "structscore_1_1gfx_1_1_screen_node.html#abf3a24b996ca9dc947bbd59a24d6a7f3":[12,0,48,2,50,19],
 "structscore_1_1gfx_1_1_screen_node.html#ac5e052ca484ba768c4f51f5fd6229221":[12,0,48,2,50,13],
@@ -247,7 +249,5 @@ var NAVTREEINDEX74 =
 "structstd_1_1hash_3_01_device_1_1_full_address_settings_01_4.html#a0d2972ddfb63ca49382b7baf94f184a5":[12,0,53,0,0],
 "structstd_1_1hash_3_01_gfx_1_1_shader_source_01_4.html":[12,0,53,1],
 "structstd_1_1hash_3_01_gfx_1_1_shader_source_01_4.html#a0880734b546ef52dad88196bac75d83e":[12,0,53,1,0],
-"structstd_1_1hash_3_01_id_3_01tag_01_4_01_4.html":[12,0,53,2],
-"structstd_1_1hash_3_01_id_3_01tag_01_4_01_4.html#ac90d6abf7262aba2a922f9c41a02a9c6":[12,0,53,2,0],
-"structstd_1_1hash_3_01_object_identifier_01_4.html":[12,0,53,3]
+"structstd_1_1hash_3_01_id_3_01tag_01_4_01_4.html":[12,0,53,2]
 };

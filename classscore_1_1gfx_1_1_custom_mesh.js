@@ -8,5 +8,6 @@ var classscore_1_1gfx_1_1_custom_mesh =
     [ "init", "classscore_1_1gfx_1_1_custom_mesh.html#aaa7be6422e7a2e83a71484658ab290dc", null ],
     [ "preparePipeline", "classscore_1_1gfx_1_1_custom_mesh.html#a11da4882aea59f0acc5bce3f916def6c", null ],
     [ "reload", "classscore_1_1gfx_1_1_custom_mesh.html#a0c284d3019b886ec99884ef0ce6c46e5", null ],
-    [ "update", "classscore_1_1gfx_1_1_custom_mesh.html#a4577ef14f7c3e50106c56b1e8eee8f5b", null ]
+    [ "update", "classscore_1_1gfx_1_1_custom_mesh.html#a4577ef14f7c3e50106c56b1e8eee8f5b", null ],
+    [ "dirtyGeometryIndex", "classscore_1_1gfx_1_1_custom_mesh.html#ab1000e70fc5ce2ad07a7f2acfbb27149", null ]
 ];

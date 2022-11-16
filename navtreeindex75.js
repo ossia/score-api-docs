@@ -1,5 +1,7 @@
 var NAVTREEINDEX75 =
 {
+"structstd_1_1hash_3_01_id_3_01tag_01_4_01_4.html#ac90d6abf7262aba2a922f9c41a02a9c6":[12,0,53,2,0],
+"structstd_1_1hash_3_01_object_identifier_01_4.html":[12,0,53,3],
 "structstd_1_1hash_3_01_object_identifier_01_4.html#a138f81a4cd7760734e9f48859e902cb6":[12,0,53,3,0],
 "structstd_1_1hash_3_01_object_path_01_4.html":[12,0,53,4],
 "structstd_1_1hash_3_01_object_path_01_4.html#a87194a04038ff95c5059d79e952c7a10":[12,0,53,4,0],

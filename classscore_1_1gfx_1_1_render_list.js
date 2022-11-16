@@ -3,6 +3,7 @@ var classscore_1_1gfx_1_1_render_list =
     [ "Buffers", "classscore_1_1gfx_1_1_render_list.html#a0b6c7af89c427d4d6d651558a636bc94", null ],
     [ "RenderList", "classscore_1_1gfx_1_1_render_list.html#a892cc48815051342c37e08828c4aae98", null ],
     [ "~RenderList", "classscore_1_1gfx_1_1_render_list.html#a999d40388d4a7c519151225335606b93", null ],
+    [ "acquireMesh", "classscore_1_1gfx_1_1_render_list.html#aca1336fe462a9a3f8a392fdc33295331", null ],
     [ "adaptImage", "classscore_1_1gfx_1_1_render_list.html#a4c05c20017599d13e6c64415ab6f5cb4", null ],
     [ "clearRenderers", "classscore_1_1gfx_1_1_render_list.html#a576933e500bd9d6f77102ed2d3dd8153", null ],
     [ "defaultQuad", "classscore_1_1gfx_1_1_render_list.html#af6b0114789dc5aa29351866fb724fa95", null ],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX52 =
 {
+"globals_type.html":[13,1,1],
+"hierarchy.html":[12,2],
 "index.html":[],
 "intro_8hpp_source.html":[13,0,593],
 "isf_8hpp_source.html":[13,0,599],
@@ -15,8 +17,8 @@ var NAVTREEINDEX52 =
 "lv2__atom__helpers_8hpp_source.html":[13,0,679],
 "models_8hpp_source.html":[13,0,790],
 "mvp_8hpp_source.html":[13,0,814],
-"namespace_automation.html":[11,0,0],
 "namespace_automation.html":[12,0,2],
+"namespace_automation.html":[11,0,0],
 "namespace_curve.html":[11,0,1],
 "namespace_curve.html":[12,0,8],
 "namespace_device.html":[12,0,10],
@@ -24,8 +26,8 @@ var NAVTREEINDEX52 =
 "namespace_engine.html":[11,0,3],
 "namespace_engine.html":[12,0,11],
 "namespace_engine_1_1_network.html":[11,0,3,0],
-"namespace_execution.html":[11,0,4],
 "namespace_execution.html":[12,0,12],
+"namespace_execution.html":[11,0,4],
 "namespace_gfx.html":[12,0,18],
 "namespace_gfx.html":[11,0,5],
 "namespace_inspector.html":[12,0,20],
@@ -35,8 +37,8 @@ var NAVTREEINDEX52 =
 "namespace_plugin_loader.html":[11,0,8],
 "namespace_process.html":[11,0,9],
 "namespace_process.html":[12,0,41],
-"namespace_scenario.html":[12,0,47],
 "namespace_scenario.html":[11,0,10],
+"namespace_scenario.html":[12,0,47],
 "namespace_state.html":[12,0,52],
 "namespace_state.html":[11,0,12],
 "namespacemembers.html":[11,1,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX52 =
 "score__plugin__faust_8hpp_source.html":[13,0,1142],
 "score__plugin__fx_8hpp_source.html":[13,0,1143],
 "score__plugin__gfx_8hpp_source.html":[13,0,1144],
-"score__plugin__inspector_8hpp_source.html":[13,0,1145],
-"score__plugin__jit_8hpp_source.html":[13,0,1146],
-"score__plugin__js_8hpp_source.html":[13,0,1147]
+"score__plugin__inspector_8hpp_source.html":[13,0,1145]
 };
