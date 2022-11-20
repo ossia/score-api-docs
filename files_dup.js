@@ -1291,6 +1291,7 @@ var files_dup =
     [ "Suil.hpp", "_suil_8hpp_source.html", null ],
     [ "SummaryInspectorWidget.hpp", "_summary_inspector_widget_8hpp_source.html", null ],
     [ "SwapSlots.hpp", "_swap_slots_8hpp_source.html", null ],
+    [ "Sweeper.hpp", "_sweeper_8hpp_source.html", null ],
     [ "Sync.hpp", "_sync_8hpp_source.html", null ],
     [ "SyphonHelpers.hpp", "_syphon_helpers_8hpp_source.html", null ],
     [ "SyphonInput.hpp", "_syphon_input_8hpp_source.html", null ],

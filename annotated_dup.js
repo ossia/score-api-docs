@@ -40,6 +40,9 @@ var annotated_dup =
     ] ],
     [ "Automation", "namespace_automation.html", "namespace_automation" ],
     [ "avnd_tools", null, [
+      [ "PatternObject", "structavnd__tools_1_1_pattern_object.html", "structavnd__tools_1_1_pattern_object" ],
+      [ "PatternSelector", "structavnd__tools_1_1_pattern_selector.html", "structavnd__tools_1_1_pattern_selector" ],
+      [ "PatternSweeper", "structavnd__tools_1_1_pattern_sweeper.html", "structavnd__tools_1_1_pattern_sweeper" ],
       [ "PatternUnfolder", "structavnd__tools_1_1_pattern_unfolder.html", "structavnd__tools_1_1_pattern_unfolder" ]
     ] ],
     [ "AvndJit", null, [

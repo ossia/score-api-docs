@@ -1,5 +1,6 @@
 var NAVTREEINDEX27 =
 {
+"class_protocols_1_1_joystick_protocol_settings_widget.html#af32992071fa9f2ef02f7e5730f8d28ed":[12,0,42,19,2],
 "class_protocols_1_1_leapmotion_device.html":[12,0,42,21],
 "class_protocols_1_1_leapmotion_device.html#a3deac6ac4792e92da4defa3cc722c952":[12,0,42,21,2],
 "class_protocols_1_1_leapmotion_device.html#a780a89d321b815e14f39552fa1d5cba5":[12,0,42,21,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX27 =
 "class_qt_diagnostic_consumer.html#a251fc75218cb12742cb3832de4cede64":[12,0,334,0],
 "class_qt_diagnostic_consumer.html#ab8a666f65c2592f5bebd5673a83a559a":[12,0,334,1],
 "class_random_name_provider.html":[12,0,335],
-"class_reader.html":[12,0,336],
-"class_recording_1_1_application_plugin.html":[12,0,43,0]
+"class_reader.html":[12,0,336]
 };

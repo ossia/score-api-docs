@@ -146,7 +146,7 @@ var searchData=
   ['input_1071',['Input',['../struct_nodes_1_1_midi_hi_res_1_1_input.html',1,'Nodes::MidiHiRes::Input'],['../classscore_1_1gfx_1_1_node.html#a32f530890af66e0ecee6c66cdf430146',1,'score::gfx::Node::input()']]],
   ['inputabouttofinish_1072',['inputAboutToFinish',['../classscore_1_1gfx_1_1_node_renderer.html#a0a2730bcef91168ca755cb5e8c6b6dc7',1,'score::gfx::NodeRenderer']]],
   ['inputcopier_1073',['InputCopier',['../struct_input_copier.html',1,'']]],
-  ['inputdevice_1074',['InputDevice',['../class_gfx_1_1_kinect2_1_1_input_device.html',1,'Gfx::Kinect2::InputDevice'],['../class_gfx_1_1_shmdata_1_1_input_device.html',1,'Gfx::Shmdata::InputDevice'],['../class_gfx_1_1_spout_1_1_input_device.html',1,'Gfx::Spout::InputDevice']]],
+  ['inputdevice_1074',['InputDevice',['../class_gfx_1_1_shmdata_1_1_input_device.html',1,'Gfx::Shmdata::InputDevice'],['../class_gfx_1_1_kinect2_1_1_input_device.html',1,'Gfx::Kinect2::InputDevice'],['../class_gfx_1_1_spout_1_1_input_device.html',1,'Gfx::Spout::InputDevice']]],
   ['inputfactory_1075',['InputFactory',['../class_gfx_1_1_shmdata_1_1_input_factory.html',1,'Gfx::Shmdata::InputFactory'],['../class_gfx_1_1_spout_1_1_input_factory.html',1,'Gfx::Spout::InputFactory'],['../class_gfx_1_1_syphon_1_1_input_factory.html',1,'Gfx::Syphon::InputFactory']]],
   ['inputsettingswidget_1076',['InputSettingsWidget',['../class_gfx_1_1_shmdata_1_1_input_settings_widget.html',1,'Gfx::Shmdata::InputSettingsWidget'],['../class_gfx_1_1_spout_1_1_input_settings_widget.html',1,'Gfx::Spout::InputSettingsWidget'],['../class_gfx_1_1_syphon_1_1_input_settings_widget.html',1,'Gfx::Syphon::InputSettingsWidget']]],
   ['inputstream_1077',['InputStream',['../class_gfx_1_1_shmdata_1_1_input_stream.html',1,'Gfx::Shmdata']]],
