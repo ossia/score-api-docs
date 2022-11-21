@@ -6,5 +6,5 @@ var structoscr_1_1_midi_file_octaver =
     [ "operator()", "structoscr_1_1_midi_file_octaver.html#a72692e28792bd421b7269eba93dfb85d", null ],
     [ "inputs", "structoscr_1_1_midi_file_octaver.html#a1cec9dbef78037935355b3a7a3ea5fcc", null ],
     [ "out", "structoscr_1_1_midi_file_octaver.html#a5cb13c23a1e80dec30ff24ea69f95c2c", null ],
-    [ "outputs", "structoscr_1_1_midi_file_octaver.html#ae24116495afa8c693a81a2f3c741ee41", null ]
+    [ "outputs", "structoscr_1_1_midi_file_octaver.html#ab33a239663604cf5555cda8c562899be", null ]
 ];

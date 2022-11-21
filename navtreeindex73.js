@@ -1,5 +1,12 @@
 var NAVTREEINDEX73 =
 {
+"structscore_1_1_value_slider.html#a97c21f979c9307a971a36f061b57fe5f":[12,0,48,300,2],
+"structscore_1_1_value_slider.html#aa2d4a0d40a23255d183b78c46bc71569":[12,0,48,300,4],
+"structscore_1_1_volume_slider.html":[12,0,48,305],
+"structscore_1_1_volume_slider.html#a0e9abcd3998943a60c4df7dc7c7d81ff":[12,0,48,305,0],
+"structscore_1_1_volume_slider.html#a1a00307a92134ba1516a15fb32e5e137":[12,0,48,305,5],
+"structscore_1_1_volume_slider.html#a350322bc8c19995c2f699f51b6f31e0e":[12,0,48,305,1],
+"structscore_1_1_volume_slider.html#a7399b613aad1e563b13a5c2422b3c04f":[12,0,48,305,4],
 "structscore_1_1_volume_slider.html#a9db6a29403b1c1048228c08527ce9fe5":[12,0,48,305,3],
 "structscore_1_1_volume_slider.html#afee1fccaf5fbfafe4aea5ee64d46861b":[12,0,48,305,2],
 "structscore_1_1any__serializer.html":[12,0,48,16],
@@ -242,12 +249,5 @@ var NAVTREEINDEX73 =
 "structscore_1_1gfx_1_1_render_state.html#ada0fe05163636ac3382e1f60999251ef":[12,0,48,2,48,0],
 "structscore_1_1gfx_1_1_rendered_i_s_f_node.html":[12,0,48,2,45],
 "structscore_1_1gfx_1_1_rendered_i_s_f_node.html#a10944658cf21adc861ad864fd9d44957":[12,0,48,2,45,5],
-"structscore_1_1gfx_1_1_rendered_i_s_f_node.html#a1d70a4180c71753fbb295dbf6a23e6ab":[12,0,48,2,45,4],
-"structscore_1_1gfx_1_1_rendered_i_s_f_node.html#a2e1cdea5adbc46b281024bda97a1c430":[12,0,48,2,45,2],
-"structscore_1_1gfx_1_1_rendered_i_s_f_node.html#a5c26c0477d810969726669a872fe356d":[12,0,48,2,45,0],
-"structscore_1_1gfx_1_1_rendered_i_s_f_node.html#a5f0b8f908cfa7866e62e127e11a7f70b":[12,0,48,2,45,1],
-"structscore_1_1gfx_1_1_rendered_i_s_f_node.html#ad9f49cf6238c24c06c618c8e0de3455a":[12,0,48,2,45,7],
-"structscore_1_1gfx_1_1_rendered_i_s_f_node.html#ae251267542155bd005dd8d1c6d9d87c2":[12,0,48,2,45,6],
-"structscore_1_1gfx_1_1_rendered_i_s_f_node.html#ae498906a7750ad7159e367fb6a3784f3":[12,0,48,2,45,3],
-"structscore_1_1gfx_1_1_rendered_phong_node.html":[12,0,48,2,46]
+"structscore_1_1gfx_1_1_rendered_i_s_f_node.html#a1d70a4180c71753fbb295dbf6a23e6ab":[12,0,48,2,45,4]
 };

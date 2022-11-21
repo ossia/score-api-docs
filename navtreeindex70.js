@@ -1,5 +1,12 @@
 var NAVTREEINDEX70 =
 {
+"structoscr_1_1_view.html#ab9d3c80c6bea380cc11dd7ff2c175c16":[12,0,36,43,5],
+"structoscr_1_1_view.html#acc63b7a5dbc22d5b1ac9446cc35285b6":[12,0,36,43,3],
+"structoscr_1_1control__updater.html":[12,0,36,1],
+"structoscr_1_1control__updater.html#a207e5f38557d698bfb16820e66d87834":[12,0,36,1,0],
+"structoscr_1_1control__updater.html#a533dde5daa268e2b4164b1a1b022fcd8":[12,0,36,1,1],
+"structoscr_1_1control__updater.html#adffd0fb0b0e4c9f1c1e51ca18d8a3682":[12,0,36,1,2],
+"structoscr_1_1multichannel__audio.html":[12,0,36,27],
 "structoscr_1_1multichannel__audio.html#a0a677c7dd0388fbd9dc2982ad71e16aa":[12,0,36,27,4],
 "structoscr_1_1multichannel__audio.html#a2785cc0831449bb4fb2e9ca35ddfa776":[12,0,36,27,1],
 "structoscr_1_1multichannel__audio.html#a9433ea2a7205b0e1ccbb65731e7ae2bb":[12,0,36,27,3],
@@ -28,9 +35,9 @@ var NAVTREEINDEX70 =
 "structoscr_1_1setup___impl0.html#a2ad50f84e6eea6ac4a97c6483330c22d":[12,0,36,38,2],
 "structoscr_1_1setup___impl0.html#a475fec302bc8c4f7d8821ee592319084":[12,0,36,38,7],
 "structoscr_1_1setup___impl0.html#a61f8e7ead77c10b7719c85d0dcea206f":[12,0,36,38,9],
+"structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,36,38,4],
 "structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,36,38,6],
 "structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,36,38,5],
-"structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,36,38,4],
 "structoscr_1_1setup___impl0.html#ab0925cd37367396714b0651fb445ad3d":[12,0,36,38,10],
 "structoscr_1_1setup___impl0.html#ac697cbf094cf1842eb7949c2bae9439d":[12,0,36,38,3],
 "structoscr_1_1setup___impl0.html#aced344fa4d64c5a68ac6e9227ebd6c95":[12,0,36,38,8],
@@ -242,12 +249,5 @@ var NAVTREEINDEX70 =
 "structscore_1_1_command_store.html":[12,0,48,47],
 "structscore_1_1_component_hierarchy_manager_1_1_child_pair.html":[12,0,48,49,0],
 "structscore_1_1_component_hierarchy_manager_1_1_child_pair.html#a4bba1bc8edbc6800935f6bf76b36bb29":[12,0,48,49,0,2],
-"structscore_1_1_component_hierarchy_manager_1_1_child_pair.html#a4e370ef1f26886718a0d22105a0cdd59":[12,0,48,49,0,0],
-"structscore_1_1_component_hierarchy_manager_1_1_child_pair.html#aa1010ba0e23e4c3cdaa1597bd15004e9":[12,0,48,49,0,1],
-"structscore_1_1_components.html":[12,0,48,50],
-"structscore_1_1_components.html#a0aefe66ef7121dcbc2079d8e2a1a49ac":[12,0,48,50,5],
-"structscore_1_1_components.html#a47a0379d77c7374c2c623dcacc48e5b0":[12,0,48,50,0],
-"structscore_1_1_components.html#a5ae20cd620dbbd3f7f687c7a6a066d79":[12,0,48,50,4],
-"structscore_1_1_components.html#a72edfdb32251f327e5b29f55dbb7a303":[12,0,48,50,1],
-"structscore_1_1_components.html#ae1cd1b636e454fad05e767b1c6b2c4b3":[12,0,48,50,2]
+"structscore_1_1_component_hierarchy_manager_1_1_child_pair.html#a4e370ef1f26886718a0d22105a0cdd59":[12,0,48,49,0,0]
 };

@@ -62,7 +62,7 @@ var searchData=
   ['timings_2666',['timings',['../struct_scenario_1_1_musical_grid_1_1timings.html',1,'Scenario::MusicalGrid::timings'],['../structscore_1_1gfx_1_1_timings.html',1,'score::gfx::Timings']]],
   ['titlebar_2667',['TitleBar',['../classscore_1_1_title_bar.html',1,'score']]],
   ['todo_20list_2668',['Todo List',['../todo.html',1,'']]],
-  ['toggle_2669',['Toggle',['../class_toggle.html',1,'Toggle'],['../struct_widget_factory_1_1_toggle.html',1,'WidgetFactory::Toggle'],['../struct_control_1_1_toggle.html',1,'Control::Toggle']]],
+  ['toggle_2669',['Toggle',['../struct_widget_factory_1_1_toggle.html',1,'WidgetFactory::Toggle'],['../class_toggle.html',1,'Toggle'],['../struct_control_1_1_toggle.html',1,'Control::Toggle']]],
   ['togglebutton_2670',['ToggleButton',['../structscore_1_1_toggle_button.html',1,'score']]],
   ['tokenrequestvaluetype_2671',['TokenRequestValueType',['../class_token_request_value_type.html',1,'']]],
   ['toolbar_2672',['Toolbar',['../classscore_1_1_toolbar.html',1,'score']]],
