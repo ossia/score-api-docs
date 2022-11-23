@@ -1,5 +1,6 @@
 var NAVTREEINDEX28 =
 {
+"class_reader.html":[12,0,336],
 "class_recording_1_1_application_plugin.html":[12,0,43,0],
 "class_recording_1_1_application_plugin.html#a4207bafdf2378184dc9231ba83cf3fce":[12,0,43,0,1],
 "class_recording_1_1_application_plugin.html#a47018781f710ba5f2a761bf1a3ccc760":[12,0,43,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX28 =
 "class_scenario_1_1_click_on_end_state___transition.html#ad4cca77b24cb1a2fcd6305a894c201e3":[12,0,47,21,0],
 "class_scenario_1_1_click_on_end_time_sync___transition.html":[12,0,47,22],
 "class_scenario_1_1_click_on_end_time_sync___transition.html#a2cbc99d68be271acbabbdc8d637c2e30":[12,0,47,22,1],
-"class_scenario_1_1_click_on_end_time_sync___transition.html#a8c95b8b1693240eadcb2578e6b60a920":[12,0,47,22,0],
-"class_scenario_1_1_click_on_slot_handle___transition.html":[12,0,47,24]
+"class_scenario_1_1_click_on_end_time_sync___transition.html#a8c95b8b1693240eadcb2578e6b60a920":[12,0,47,22,0]
 };

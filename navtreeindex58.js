@@ -1,5 +1,6 @@
 var NAVTREEINDEX58 =
 {
+"struct_jit_1_1_application_plugin.html#a65cd094615e3f03b430f1891cbe0ffb0":[12,0,24,1,9],
 "struct_jit_1_1_application_plugin.html#a84cb0c0dbb21dbe9d5b9c30aa7992f00":[12,0,24,1,8],
 "struct_jit_1_1_application_plugin.html#a9899dbd1ab99a7458865fd3da8d6726c":[12,0,24,1,10],
 "struct_jit_1_1_application_plugin.html#ab618ee6abde015a1ca7082eeb9266c6d":[12,0,24,1,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX58 =
 "struct_library_1_1_process_data.html#a2fb669fe52503bd4c772bb2d6108804f":[12,0,27,12,1],
 "struct_library_1_1_process_data.html#a7fdf03a7f549515ba2fd4e6231e7328e":[12,0,27,12,0],
 "struct_library_1_1_subcategories.html":[12,0,27,22],
-"struct_library_1_1_subcategories.html#a11fd10f4b5ec7c1411a63e9a545b26ed":[12,0,27,22,6],
-"struct_library_1_1_subcategories.html#a27bf004f5cbb21db8bef3269d5b4d852":[12,0,27,22,1]
+"struct_library_1_1_subcategories.html#a11fd10f4b5ec7c1411a63e9a545b26ed":[12,0,27,22,6]
 };

@@ -154,6 +154,7 @@ var files_dup =
     [ "ColorInterpolator.hpp", "_color_interpolator_8hpp_source.html", null ],
     [ "ColorReference.hpp", "_color_reference_8hpp_source.html", null ],
     [ "Column.hpp", "_column_8hpp_source.html", null ],
+    [ "Combiner.hpp", "_combiner_8hpp_source.html", null ],
     [ "ComboBox.hpp", "_combo_box_8hpp_source.html", null ],
     [ "Command.hpp", "_command_8hpp_source.html", null ],
     [ "CommandAPI.hpp", "_command_a_p_i_8hpp_source.html", null ],

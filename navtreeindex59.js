@@ -1,5 +1,6 @@
 var NAVTREEINDEX59 =
 {
+"struct_library_1_1_subcategories.html#a27bf004f5cbb21db8bef3269d5b4d852":[12,0,27,22,1],
 "struct_library_1_1_subcategories.html#a38abc7e3f7b6771acba3f546143bc864":[12,0,27,22,0],
 "struct_library_1_1_subcategories.html#a3fbaf50b9d1e21af51469494a78402cb":[12,0,27,22,3],
 "struct_library_1_1_subcategories.html#a73e0b24aa0f70667807f881fee9fa21f":[12,0,27,22,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX59 =
 "struct_metadata_3_01_category__k_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[12,0,160],
 "struct_metadata_3_01_category__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html":[12,0,161],
 "struct_metadata_3_01_concrete_key__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html":[12,0,162],
-"struct_metadata_3_01_concrete_key__k_00_01_faust_d_s_p_1_1_fx_3_01mydsp_01_4_01_4.html":[12,0,163],
-"struct_metadata_3_01_concrete_key__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html":[12,0,164]
+"struct_metadata_3_01_concrete_key__k_00_01_faust_d_s_p_1_1_fx_3_01mydsp_01_4_01_4.html":[12,0,163]
 };

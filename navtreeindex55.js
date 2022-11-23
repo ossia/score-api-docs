@@ -1,5 +1,6 @@
 var NAVTREEINDEX55 =
 {
+"struct_curve_1_1_segment_data.html#abe85c5e4976e1699fba4ca69910158ec":[12,0,8,37,11],
 "struct_curve_1_1_segment_data.html#ac90645ee720dc6c3914aa17dbbb81fe3":[12,0,8,37,2],
 "struct_curve_1_1_segment_data.html#ae777acdcabd505100f25987769254b41":[12,0,8,37,5],
 "struct_curve_1_1_segment_data.html#aea3c2b1abe95a88803324a1e6b1474ea":[12,0,8,37,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX55 =
 "struct_execution_1_1_handle_node_change.html#a9199173f10cd0fcd400c2e517a479e20":[12,0,12,18,4],
 "struct_execution_1_1_handle_node_change.html#aa2c1b517621ab95bfd51a49a45128dc3":[12,0,12,18,2],
 "struct_execution_1_1_metronome_sounds.html":[12,0,12,27],
-"struct_execution_1_1_metronome_sounds.html#a07abd69b8ba2bbc6f69b3670cd215671":[12,0,12,27,3],
-"struct_execution_1_1_metronome_sounds.html#a19e4e2630eec55f7eea9e8c7fa9647f7":[12,0,12,27,4]
+"struct_execution_1_1_metronome_sounds.html#a07abd69b8ba2bbc6f69b3670cd215671":[12,0,12,27,3]
 };

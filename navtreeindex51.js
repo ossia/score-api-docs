@@ -1,5 +1,6 @@
 var NAVTREEINDEX51 =
 {
+"classvst3_1_1_v_s_t_control_port_factory.html#a7b2edef54746849a2372e50b5fa9be7a":[12,0,58,19,2],
 "classvst3_1_1_v_s_t_control_port_factory.html#aa9efe1274249b8e951eca203dcb70256":[12,0,58,19,5],
 "classvst3_1_1_v_s_t_control_port_factory.html#aca5a09c3214d85a4523f9219f4d15842":[12,0,58,19,1],
 "classvst3_1_1_v_s_t_effect_item.html":[12,0,58,21],
@@ -198,15 +199,15 @@ var NAVTREEINDEX51 =
 "classvst_1_1vst__node__base.html#ac5e220bc708cd0e6c6aa61c01078761c":[12,0,57,15,4],
 "classvst_1_1vst__node__base.html#ae8555db49dbf264c3d5c166ac99212b0":[12,0,57,15,2],
 "codingstyle_8hpp_source.html":[13,0,149],
-"config_8hpp_source.html":[13,0,201],
-"contexts_8hpp_source.html":[13,0,207],
-"d_2_spline3_d_2_execution_8hpp_source.html":[13,0,401],
-"d_2_spline3_d_2_generator_dialog_8hpp_source.html":[13,0,474],
-"data_structures_8hpp_source.html":[13,0,280],
-"element_finding_helper_8hpp_source.html":[13,0,376],
+"config_8hpp_source.html":[13,0,202],
+"contexts_8hpp_source.html":[13,0,208],
+"d_2_spline3_d_2_execution_8hpp_source.html":[13,0,402],
+"d_2_spline3_d_2_generator_dialog_8hpp_source.html":[13,0,475],
+"data_structures_8hpp_source.html":[13,0,281],
+"element_finding_helper_8hpp_source.html":[13,0,377],
 "files.html":[13,0],
-"functions.html":[12,3,0,0],
 "functions.html":[12,3,0],
+"functions.html":[12,3,0,0],
 "functions_c.html":[12,3,0,1],
 "functions_d.html":[12,3,0,2],
 "functions_e.html":[12,3,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX51 =
 "functions_vars.html":[12,3,2],
 "functions_w.html":[12,3,0,18],
 "functions_~.html":[12,3,0,19],
-"gfxplugins_8hpp_source.html":[13,0,487],
-"globals.html":[13,1,0]
+"gfxplugins_8hpp_source.html":[13,0,488]
 };
