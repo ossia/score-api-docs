@@ -1240,8 +1240,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>loadPresetBeforePort<
 void&#160;</td><td class="memItemRight" valign="bottom"><b>loadPresetAfterPort</b> (<a class="el" href="class_scenario_1_1_scenario_document_presenter.html">Scenario::ScenarioDocumentPresenter</a> &amp;parent, const <a class="el" href="struct_process_1_1_preset.html">Process::Preset</a> &amp;dat, const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;parentProcess, const <a class="el" href="class_process_1_1_outlet.html">Process::Outlet</a> &amp;p)</td></tr>
 <tr class="separator:abec925ea441958113fa3a871a2775aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a753195e839fb587e93780b44560a4748"><td class="memItemLeft" align="right" valign="top"><a id="a753195e839fb587e93780b44560a4748"></a>
-QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>valueColumnData</b> (const <a class="el" href="class_tree_node.html">MessageItemModel::node_type</a> &amp;node, int role)</td></tr>
+QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>valueColumnData</b> (const MessageItemModel::node_type &amp;node, int role)</td></tr>
 <tr class="separator:a753195e839fb587e93780b44560a4748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cfae2a5f7c8e18d0938bced8b082d2e"><td class="memItemLeft" align="right" valign="top"><a id="a9cfae2a5f7c8e18d0938bced8b082d2e"></a>
+<a class="el" href="class_tree_node.html">Process::MessageNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getNodeFromString_impl</b> (<a class="el" href="class_tree_node.html">Process::MessageNode</a> &amp;n, QStringList::const_iterator begin, QStringList::const_iterator end)</td></tr>
+<tr class="separator:a9cfae2a5f7c8e18d0938bced8b082d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d20a68cd27e00eeafab44c775ddc0c9"><td class="memItemLeft" align="right" valign="top"><a id="a4d20a68cd27e00eeafab44c775ddc0c9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>updateTreeWithMessageList</b> (<a class="el" href="class_tree_node.html">Process::MessageNode</a> &amp;rootNode, State::MessageList lst)</td></tr>
 <tr class="separator:a4d20a68cd27e00eeafab44c775ddc0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1275,6 +1278,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>getChildIndex</b> (<a 
 <tr class="memitem:a0ddd48548c3e94da58980fabf1ad6d67"><td class="memItemLeft" align="right" valign="top"><a id="a0ddd48548c3e94da58980fabf1ad6d67"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>renameAddress</b> (<a class="el" href="class_tree_node.html">Process::MessageNode</a> &amp;rootNode, const <a class="el" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a> &amp;oldAddr, const <a class="el" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a> &amp;newAddr)</td></tr>
 <tr class="separator:a0ddd48548c3e94da58980fabf1ad6d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d474386679c917c90dea00098bc68b8"><td class="memItemLeft" align="right" valign="top"><a id="a0d474386679c917c90dea00098bc68b8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>findAndReplaceAddresses</b> (<a class="el" href="class_tree_node.html">Process::MessageNode</a> &amp;rootNode, const <a class="el" href="struct_state_1_1_address.html">State::Address</a> &amp;oldAddr, const <a class="el" href="struct_state_1_1_address.html">State::Address</a> &amp;newAddr)</td></tr>
+<tr class="separator:a0d474386679c917c90dea00098bc68b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9970088c05252c90613e790e8de5567b"><td class="memItemLeft" align="right" valign="top"><a id="a9970088c05252c90613e790e8de5567b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>updateModelWithMessageList</b> (<a class="el" href="class_scenario_1_1_message_item_model.html">MessageItemModel</a> &amp;model, State::MessageList lst)</td></tr>
 <tr class="separator:a9970088c05252c90613e790e8de5567b"><td class="memSeparator" colspan="2">&#160;</td></tr>

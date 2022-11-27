@@ -1,5 +1,17 @@
 var NAVTREEINDEX64 =
 {
+"struct_q_meta_type_id_3_01_scenario_1_1_interval_model_1_1_view_mode_01_4.html#ac523bdeeae4bdb232cac0baf7c34a036a3bcbffd1fb39a702dab07f44e0a7206a":[12,0,300,0],
+"struct_q_meta_type_id_3_01_scenario_1_1_offset_behavior_01_4.html":[12,0,301],
+"struct_q_meta_type_id_3_01_scenario_1_1_offset_behavior_01_4.html#a5dc832f58dcbe02865f8456eb2eff191adba5e410547c46efda61249ace791916":[12,0,301,0],
+"struct_q_meta_type_id_3_01_scenario_1_1_point_01_4.html":[12,0,302],
+"struct_q_meta_type_id_3_01_scenario_1_1_point_01_4.html#af219c4f4d5e43a38e933d5206339fedaa42c3ffb2ab6c4c89ace18384570d3a5f":[12,0,302,0],
+"struct_q_meta_type_id_3_01_scenario_1_1_process_model_01_5_01_4.html":[12,0,303],
+"struct_q_meta_type_id_3_01_scenario_1_1_process_model_01_5_01_4.html#a4634cedda05d5806d10c7f052e073e0baf56a655d34bbb6e00e0361d40fab2ed6":[12,0,303,0],
+"struct_q_meta_type_id_3_01_scenario_1_1_scenario_interface_01_5_01_4.html":[12,0,304],
+"struct_q_meta_type_id_3_01_scenario_1_1_scenario_interface_01_5_01_4.html#a38424936fea554e3db2bd80a7064a549a002dec7c2f4a7b997d65561b53ca7ecf":[12,0,304,0],
+"struct_q_meta_type_id_3_01_scenario_1_1_scenario_record_init_data_01_4.html":[12,0,305],
+"struct_q_meta_type_id_3_01_scenario_1_1_scenario_record_init_data_01_4.html#acb68a3ee729acc440f366627e7026184a3d653a2188bceeba532ae28730c7892e":[12,0,305,0],
+"struct_q_meta_type_id_3_01_scenario_1_1_time_signature_map_01_4.html":[12,0,306],
 "struct_q_meta_type_id_3_01_scenario_1_1_time_signature_map_01_4.html#a5a819fa38548d3dbdaa86a44504f12c8a0db25fe82d1aa54d42205761aded48b3":[12,0,306,0],
 "struct_q_meta_type_id_3_01_scenario_1_1_tool_01_4.html":[12,0,307],
 "struct_q_meta_type_id_3_01_scenario_1_1_tool_01_4.html#ad0065d00e2d3546951a17f6ee39700e3af57e5c3eff1b3bfb8c9b870cb7dace4a":[12,0,307,0],
@@ -237,17 +249,5 @@ var NAVTREEINDEX64 =
 "struct_sample_timings.html#aa2c9639fcfafe89053c87f41b54ea121":[12,0,347,2],
 "struct_sample_timings.html#ac526e8d2228e93d95f39c81e20275344":[12,0,347,3],
 "struct_sample_timings.html#ac6f89d952bf5b7f9170137a33f03410e":[12,0,347,6],
-"struct_sample_timings.html#af14575458bcfdbafaac3d6b8843b4933":[12,0,347,1],
-"struct_scenario_1_1_address_accessor_curve_creator.html":[12,0,47,3],
-"struct_scenario_1_1_address_accessor_curve_creator.html#a03482c9b0e24d012982f601990a43a0c":[12,0,47,3,8],
-"struct_scenario_1_1_address_accessor_curve_creator.html#a097a4fb921ef1db81901ff0a234cfbd6":[12,0,47,3,15],
-"struct_scenario_1_1_address_accessor_curve_creator.html#a5e3c847720febfcac07800d5f14ec44c":[12,0,47,3,11],
-"struct_scenario_1_1_address_accessor_curve_creator.html#a5f562a217be652ad42b3c6d7583fb575":[12,0,47,3,5],
-"struct_scenario_1_1_address_accessor_curve_creator.html#a6cfcd5b43fd2798f0ef74496298d2f15":[12,0,47,3,9],
-"struct_scenario_1_1_address_accessor_curve_creator.html#a6e28a58b827c55b41d5b8d59ad15ab2a":[12,0,47,3,17],
-"struct_scenario_1_1_address_accessor_curve_creator.html#a875fc92c10f55f29ad3d38971372fae8":[12,0,47,3,16],
-"struct_scenario_1_1_address_accessor_curve_creator.html#a9cc1dcc8df4173177203721a34f23049":[12,0,47,3,4],
-"struct_scenario_1_1_address_accessor_curve_creator.html#a9ea6c3f4dd8de90518756faba680918c":[12,0,47,3,7],
-"struct_scenario_1_1_address_accessor_curve_creator.html#a9eb534909d7607062c43a21c83c81802":[12,0,47,3,3],
-"struct_scenario_1_1_address_accessor_curve_creator.html#aa7ed6fd9929d02df95fcb8445c62cd8a":[12,0,47,3,12]
+"struct_sample_timings.html#af14575458bcfdbafaac3d6b8843b4933":[12,0,347,1]
 };

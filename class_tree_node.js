@@ -26,6 +26,7 @@ var class_tree_node =
     [ "indexOfChild", "class_tree_node.html#a7ca4cabeedf0aa2368fa721cf7a01fb3", null ],
     [ "insert", "class_tree_node.html#a3e0625c3c21ce12a19d5764d45349d81", null ],
     [ "iterOfChild", "class_tree_node.html#a76dcb962e4543c6b5e342fcc28881cd3", null ],
+    [ "moveChildren", "class_tree_node.html#a63d67db79be3e02f204e067dc4071161", null ],
     [ "operator=", "class_tree_node.html#adced853a107857b8171b72ba77946847", null ],
     [ "operator=", "class_tree_node.html#a8de01230def031fd1d859006d5f2f851", null ],
     [ "parent", "class_tree_node.html#ae0670aaa91a527b0e59b5cda906eb949", null ],
@@ -34,5 +35,6 @@ var class_tree_node =
     [ "reserve", "class_tree_node.html#a86d51c2d92507aaaa7f8bbe9525b2611", null ],
     [ "resize", "class_tree_node.html#ab3e47b45339a9e63fe703e5fbd54ddb1", null ],
     [ "setParent", "class_tree_node.html#ab3ad6ebeebe32f019639d20b0510409b", null ],
+    [ "takeChildren", "class_tree_node.html#a2b1616c8641db23f44dd0cf8c880db09", null ],
     [ "visit", "class_tree_node.html#a3eda5fc6f8703cf81fbb058a0783b3dc", null ]
 ];
