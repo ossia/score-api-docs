@@ -156,40 +156,43 @@ $(document).ready(function(){initNavTree('_add_messages_to_state_8hpp_source.htm
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="class_scenario_1_1_command_1_1_rename_address_in_state.html">RenameAddressInState</a>(</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_state_model.html">Scenario::StateModel</a>&amp; state, <span class="keyword">const</span> <a class="code" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a>&amp; old,</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_state_1_1_address_accessor_head.html">State::AddressAccessorHead</a>&amp; name);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> undo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">void</span> redo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="class_scenario_1_1_command_1_1_rename_address_in_state.html">RenameAddressInState</a>(</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_state_model.html">Scenario::StateModel</a>&amp; state, <span class="keyword">const</span> <a class="code" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a>&amp; old,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a>&amp; replacement);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> serializeImpl(<a class="code" href="struct_data_stream_input.html">DataStreamInput</a>&amp; s) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> deserializeImpl(<a class="code" href="struct_data_stream_output.html">DataStreamOutput</a>&amp; s) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="class_path.html">Path&lt;StateModel&gt;</a> m_state;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a> m_oldName, m_newName;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_scenario_1_1_command_1_1_add_control_messages_to_state.html">   71</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_SCENARIO_EXPORT <a class="code" href="class_scenario_1_1_command_1_1_add_control_messages_to_state.html">AddControlMessagesToState</a> final</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classscore_1_1_command.html">score::Command</a></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  SCORE_COMMAND_DECL(</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      CommandFactoryName(), <a class="code" href="class_scenario_1_1_command_1_1_add_control_messages_to_state.html">AddControlMessagesToState</a>, <span class="stringliteral">&quot;Add control messages to state&quot;</span>)</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="class_scenario_1_1_command_1_1_add_control_messages_to_state.html">AddControlMessagesToState</a>(</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_state_model.html">Scenario::StateModel</a>&amp; state,</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      std::vector&lt;Process::ControlMessage&gt;&amp;&amp; messages);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">void</span> undo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">void</span> redo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">void</span> undo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> redo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> serializeImpl(<a class="code" href="struct_data_stream_input.html">DataStreamInput</a>&amp; s) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> deserializeImpl(<a class="code" href="struct_data_stream_output.html">DataStreamOutput</a>&amp; s) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="class_path.html">Path&lt;StateModel&gt;</a> m_state;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a> m_oldName, m_newName;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="class_scenario_1_1_command_1_1_add_control_messages_to_state.html">   74</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_SCENARIO_EXPORT <a class="code" href="class_scenario_1_1_command_1_1_add_control_messages_to_state.html">AddControlMessagesToState</a> final</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classscore_1_1_command.html">score::Command</a></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  SCORE_COMMAND_DECL(</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      CommandFactoryName(), <a class="code" href="class_scenario_1_1_command_1_1_add_control_messages_to_state.html">AddControlMessagesToState</a>, <span class="stringliteral">&quot;Add control messages to state&quot;</span>)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="class_scenario_1_1_command_1_1_add_control_messages_to_state.html">AddControlMessagesToState</a>(</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_state_model.html">Scenario::StateModel</a>&amp; state,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      std::vector&lt;Process::ControlMessage&gt;&amp;&amp; messages);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">void</span> serializeImpl(<a class="code" href="struct_data_stream_input.html">DataStreamInput</a>&amp;) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">void</span> deserializeImpl(<a class="code" href="struct_data_stream_output.html">DataStreamOutput</a>&amp;) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="class_path.html">Path&lt;StateModel&gt;</a> m_path;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  std::vector&lt;Process::ControlMessage&gt; m_old, m_new;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">void</span> undo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">void</span> redo(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">void</span> serializeImpl(<a class="code" href="struct_data_stream_input.html">DataStreamInput</a>&amp;) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">void</span> deserializeImpl(<a class="code" href="struct_data_stream_output.html">DataStreamOutput</a>&amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="code" href="class_path.html">Path&lt;StateModel&gt;</a> m_path;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  std::vector&lt;Process::ControlMessage&gt; m_old, m_new;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1326</div></div>
@@ -199,7 +202,7 @@ $(document).ready(function(){initNavTree('_add_messages_to_state_8hpp_source.htm
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:17</div></div>
 <div class="ttc" id="aclassscore_1_1_command_html"><div class="ttname"><a href="classscore_1_1_command.html">score::Command</a></div><div class="ttdoc">The Command class.</div><div class="ttdef"><b>Definition:</b> Command.hpp:33</div></div>
 <div class="ttc" id="astruct_data_stream_output_html"><div class="ttname"><a href="struct_data_stream_output.html">DataStreamOutput</a></div><div class="ttdef"><b>Definition:</b> DataStreamHelpers.hpp:134</div></div>
-<div class="ttc" id="aclass_scenario_1_1_command_1_1_add_control_messages_to_state_html"><div class="ttname"><a href="class_scenario_1_1_command_1_1_add_control_messages_to_state.html">Scenario::Command::AddControlMessagesToState</a></div><div class="ttdef"><b>Definition:</b> AddMessagesToState.hpp:71</div></div>
+<div class="ttc" id="aclass_scenario_1_1_command_1_1_add_control_messages_to_state_html"><div class="ttname"><a href="class_scenario_1_1_command_1_1_add_control_messages_to_state.html">Scenario::Command::AddControlMessagesToState</a></div><div class="ttdef"><b>Definition:</b> AddMessagesToState.hpp:74</div></div>
 <div class="ttc" id="aclass_scenario_1_1_command_1_1_rename_address_in_state_html"><div class="ttname"><a href="class_scenario_1_1_command_1_1_rename_address_in_state.html">Scenario::Command::RenameAddressInState</a></div><div class="ttdef"><b>Definition:</b> AddMessagesToState.hpp:50</div></div>
 <div class="ttc" id="aclass_path_html"><div class="ttname"><a href="class_path.html">Path&lt; StateModel &gt;</a></div></div>
 <div class="ttc" id="aclass_scenario_1_1_command_1_1_add_messages_to_state_html"><div class="ttname"><a href="class_scenario_1_1_command_1_1_add_messages_to_state.html">Scenario::Command::AddMessagesToState</a></div><div class="ttdef"><b>Definition:</b> AddMessagesToState.hpp:27</div></div>
