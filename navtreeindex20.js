@@ -1,5 +1,8 @@
 var NAVTREEINDEX20 =
 {
+"class_library_1_1_project_panel.html":[12,0,27,19],
+"class_library_1_1_project_panel.html#a8f90931050c59c6cb7d54a9b346da76c":[12,0,27,19,0],
+"class_library_1_1_project_panel_factory.html":[12,0,27,20],
 "class_library_1_1_recursive_filter_proxy.html":[12,0,27,21],
 "class_library_1_1_recursive_filter_proxy.html#a028d5c1f8b0b92cc6d1639da71f34a39":[12,0,27,21,2],
 "class_library_1_1_recursive_filter_proxy.html#a4c58b751081a2d5684be146299e7d575":[12,0,27,21,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX20 =
 "class_media_1_1_settings_1_1_plugin_settings_factory_list.html":[12,0,31,2,1],
 "class_media_1_1_settings_1_1_plugin_settings_tab.html":[12,0,31,2,2],
 "class_media_1_1_settings_1_1_plugin_settings_tab.html#a92b5aa4d229966837bd92fd8baa9066f":[12,0,31,2,2,1],
-"class_media_1_1_settings_1_1_plugin_settings_tab.html#aa31d210f8fbfab19a2b72e2e25f4e71b":[12,0,31,2,2,2],
-"class_media_1_1_settings_1_1_plugin_settings_tab.html#ada6ded4284ee31f384985d1bf3bd39fb":[12,0,31,2,2,0],
-"class_media_1_1_settings_1_1_presenter.html":[12,0,31,2,3],
-"class_media_1_1_settings_1_1_presenter.html#a1f5bef033bcbeae4eed2064a843eef85":[12,0,31,2,3,2]
+"class_media_1_1_settings_1_1_plugin_settings_tab.html#aa31d210f8fbfab19a2b72e2e25f4e71b":[12,0,31,2,2,2]
 };

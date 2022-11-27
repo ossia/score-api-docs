@@ -1,5 +1,8 @@
 var NAVTREEINDEX27 =
 {
+"class_protocols_1_1_joystick_protocol_settings_widget.html#a7c21530dde506a8337bf9ad0f1fbf8db":[12,0,42,19,1],
+"class_protocols_1_1_joystick_protocol_settings_widget.html#a8c774dc9421e8d37f6fde9b4832243e6":[12,0,42,19,4],
+"class_protocols_1_1_joystick_protocol_settings_widget.html#ad8d15782d079e8f0fa0898997c345f06":[12,0,42,19,0],
 "class_protocols_1_1_joystick_protocol_settings_widget.html#ad9ef8d6cdf1d9e4b6d8abcedcde0f351":[12,0,42,19,3],
 "class_protocols_1_1_joystick_protocol_settings_widget.html#af32992071fa9f2ef02f7e5730f8d28ed":[12,0,42,19,2],
 "class_protocols_1_1_leapmotion_device.html":[12,0,42,21],
@@ -246,8 +249,5 @@ var NAVTREEINDEX27 =
 "class_ptr_container.html#aa58fcab28c00663fd83c2585856e0f56":[12,0,222,1],
 "class_ptr_container.html#af7b94a5cb432fc5843481c8d2876dce4":[12,0,222,5],
 "class_q_map.html":[12,0,223],
-"class_qt_diagnostic_consumer.html":[12,0,334],
-"class_qt_diagnostic_consumer.html#a251fc75218cb12742cb3832de4cede64":[12,0,334,0],
-"class_qt_diagnostic_consumer.html#ab8a666f65c2592f5bebd5673a83a559a":[12,0,334,1],
-"class_random_name_provider.html":[12,0,335]
+"class_qt_diagnostic_consumer.html":[12,0,334]
 };

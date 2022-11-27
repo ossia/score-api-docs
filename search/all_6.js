@@ -117,7 +117,7 @@ var searchData=
   ['gui_855',['gui',['../structscore_1_1_application_settings.html#a0a48ca49dc5cfd09a2534d2f3168c192',1,'score::ApplicationSettings']]],
   ['guiapplicationcontext_856',['GUIApplicationContext',['../structscore_1_1_g_u_i_application_context.html',1,'score']]],
   ['guiapplicationinterface_857',['GUIApplicationInterface',['../classscore_1_1_g_u_i_application_interface.html',1,'score']]],
-  ['guiapplicationplugin_858',['GUIApplicationPlugin',['../classscore_1_1_g_u_i_application_plugin.html',1,'score::GUIApplicationPlugin'],['../classvst_1_1_g_u_i_application_plugin.html',1,'vst::GUIApplicationPlugin'],['../structscore_1_1_g_u_i_application_context.html#a008b39560a3a96d564df13d2861d0c52',1,'score::GUIApplicationContext::guiApplicationPlugin()']]],
+  ['guiapplicationplugin_858',['GUIApplicationPlugin',['../classvst_1_1_g_u_i_application_plugin.html',1,'vst::GUIApplicationPlugin'],['../classscore_1_1_g_u_i_application_plugin.html',1,'score::GUIApplicationPlugin'],['../structscore_1_1_g_u_i_application_context.html#a008b39560a3a96d564df13d2861d0c52',1,'score::GUIApplicationContext::guiApplicationPlugin()']]],
   ['guiapplicationplugins_859',['guiApplicationPlugins',['../structscore_1_1_g_u_i_application_context.html#afadc813e4641d62321692cfddedd5590',1,'score::GUIApplicationContext']]],
   ['guiapplicationregistrar_860',['GUIApplicationRegistrar',['../classscore_1_1_g_u_i_application_registrar.html',1,'score']]],
   ['guielements_861',['GUIElements',['../structscore_1_1_g_u_i_elements.html',1,'score']]]

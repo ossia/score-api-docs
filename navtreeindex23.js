@@ -1,5 +1,8 @@
 var NAVTREEINDEX23 =
 {
+"class_outlet.html#a2a7c9459f4ee7d9e484eb587c30d5c0e":[12,0,210,4],
+"class_outlet.html#a44bcab947b6525ab560a159897ba5683":[12,0,210,0],
+"class_outlet.html#a53b4a604b944ce2504e0b01dc9ef53f6":[12,0,210,3],
 "class_outlet.html#a64e2c206c7cb59d0e09541e4990f73a2":[12,0,210,5],
 "class_outlet.html#aa4084bf9f6dd4d7b3e413898f80d4a81":[12,0,210,1],
 "class_outlet.html#ae656b595811d9364d76aec4ce2acf32d":[12,0,210,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX23 =
 "class_process_1_1_audio_outlet.html#afcfbf9805bec255e24aa3d06a1f59de8":[12,0,41,2,13],
 "class_process_1_1_audio_port_combo_box.html":[12,0,41,3],
 "class_process_1_1_audio_port_combo_box.html#a2042f0c72c10a0dee386b91ea12e3e9a":[12,0,41,3,1],
-"class_process_1_1_audio_port_combo_box.html#a82f2a7880c41d44f30ba3e27a49d9a9a":[12,0,41,3,2],
-"class_process_1_1_audio_port_combo_box.html#a8d7f0abfbceb06589456b2197c5fa1d1":[12,0,41,3,3],
-"class_process_1_1_audio_port_combo_box.html#aefb3132f5cb7bb541c909b6c343e604a":[12,0,41,3,0],
-"class_process_1_1_automatable_factory.html":[12,0,41,4]
+"class_process_1_1_audio_port_combo_box.html#a82f2a7880c41d44f30ba3e27a49d9a9a":[12,0,41,3,2]
 };

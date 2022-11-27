@@ -1,5 +1,15 @@
 var NAVTREEINDEX71 =
 {
+"structscore_1_1_combo_slider.html#acd3a4dcc4a634294a6ce8cb0c8bf5cde":[12,0,48,37,0],
+"structscore_1_1_combo_slider.html#ad0095e0ec43cc419f77b8a074f601fcb":[12,0,48,37,1],
+"structscore_1_1_command_data.html":[12,0,48,40],
+"structscore_1_1_command_data.html#a85d47906690ba43b4f590a39e7fb676f":[12,0,48,40,1],
+"structscore_1_1_command_data.html#a8c0c7f7c221156255de262cc8620f61c":[12,0,48,40,4],
+"structscore_1_1_command_data.html#abe2509cf153b8be73742960b16295f09":[12,0,48,40,2],
+"structscore_1_1_command_data.html#ac93845d82d1ec51170c29ced6afefb7d":[12,0,48,40,3],
+"structscore_1_1_command_data.html#ad0cec5f5132041f92a4794ff54cc9d9f":[12,0,48,40,0],
+"structscore_1_1_command_key_hash.html":[12,0,48,42],
+"structscore_1_1_command_key_hash.html#a4f5836447bff4e0b09a1ee08287d05be":[12,0,48,42,0],
 "structscore_1_1_command_spinbox.html":[12,0,48,43],
 "structscore_1_1_command_spinbox.html#a7194f1a127aaab44c14fa85b03d75a8a":[12,0,48,43,0],
 "structscore_1_1_command_spinbox.html#a9f2c39e6b87d31ffb32881a6babf1263":[12,0,48,43,2],
@@ -239,15 +249,5 @@ var NAVTREEINDEX71 =
 "structscore_1_1_positioned_event.html#abe68f0f917173943c2b6a9758fd96e99":[12,0,48,188,2],
 "structscore_1_1_positioned_event_3_01_scenario_1_1_point_01_4.html":[12,0,48,189],
 "structscore_1_1_positioned_event_3_01_scenario_1_1_point_01_4.html#a04e63bf3e5cb1cc42980f0b0f5fd275d":[12,0,48,189,0],
-"structscore_1_1_positioned_event_3_01_scenario_1_1_point_01_4.html#a3a11b959c5bb8036b312208b8281c586":[12,0,48,189,2],
-"structscore_1_1_positioned_event_3_01_scenario_1_1_point_01_4.html#a49c8b6820691d2d63559d81450023037":[12,0,48,189,1],
-"structscore_1_1_property_command___t_1_1command.html":[12,0,48,196,0],
-"structscore_1_1_q_graphics_slider_base.html":[12,0,48,216],
-"structscore_1_1_q_graphics_slider_base.html#a37e7765922857fe940820eb6669375f0":[12,0,48,216,8],
-"structscore_1_1_q_graphics_slider_base.html#a40f64695a5a7485e76930368dabc1249":[12,0,48,216,5],
-"structscore_1_1_q_graphics_slider_base.html#a488e774ea22684a91b58e9ecaddcb923":[12,0,48,216,11],
-"structscore_1_1_q_graphics_slider_base.html#a541d352f2d205f9b53231af2ddca6839":[12,0,48,216,0],
-"structscore_1_1_q_graphics_slider_base.html#a9915634c9061dafe86b9c2ba6105ff9c":[12,0,48,216,9],
-"structscore_1_1_q_graphics_slider_base.html#aa2b664661e1710b848f61b004da779db":[12,0,48,216,2],
-"structscore_1_1_q_graphics_slider_base.html#aabb2cbb0002f1b024d463350c3e24076":[12,0,48,216,3]
+"structscore_1_1_positioned_event_3_01_scenario_1_1_point_01_4.html#a3a11b959c5bb8036b312208b8281c586":[12,0,48,189,2]
 };

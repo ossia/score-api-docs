@@ -1,5 +1,15 @@
 var NAVTREEINDEX55 =
 {
+"struct_curve_1_1_segment_data.html":[12,0,8,37],
+"struct_curve_1_1_segment_data.html#a19516992543de4f5bf01c8280a9b8093":[12,0,8,37,0],
+"struct_curve_1_1_segment_data.html#a2a1bdf6f352132329c0948777023a03c":[12,0,8,37,3],
+"struct_curve_1_1_segment_data.html#a450f1b870034378143fb38e8f6d7ce9d":[12,0,8,37,6],
+"struct_curve_1_1_segment_data.html#a53f1819a00da9b693307201705e9fd99":[12,0,8,37,7],
+"struct_curve_1_1_segment_data.html#a6527d060235d65b1570c3a23f10fc29e":[12,0,8,37,1],
+"struct_curve_1_1_segment_data.html#a73311837ea6dc90a093ca90f2e783ee4":[12,0,8,37,8],
+"struct_curve_1_1_segment_data.html#a8fd77b8dd63ae6c9fe0e41f8f36914c4":[12,0,8,37,4],
+"struct_curve_1_1_segment_data.html#aa22908da5a33718a287aeb911eb2fe81":[12,0,8,37,12],
+"struct_curve_1_1_segment_data.html#aadfd25beeb747d05cf1d64f3b3f81ddb":[12,0,8,37,10],
 "struct_curve_1_1_segment_data.html#abe85c5e4976e1699fba4ca69910158ec":[12,0,8,37,11],
 "struct_curve_1_1_segment_data.html#ac90645ee720dc6c3914aa17dbbb81fe3":[12,0,8,37,2],
 "struct_curve_1_1_segment_data.html#ae777acdcabd505100f25987769254b41":[12,0,8,37,5],
@@ -239,15 +249,5 @@ var NAVTREEINDEX55 =
 "struct_execution_1_1_document_plugin_1_1_context_data.html#ad44f9d3210692a5bc1e47523fc73b630":[12,0,12,11,0,9],
 "struct_execution_1_1_document_plugin_1_1_context_data.html#ae94f0b71efe392eb2856f0ec5fb2a0f3":[12,0,12,11,0,8],
 "struct_execution_1_1_finish_callback.html":[12,0,12,17],
-"struct_execution_1_1_finish_callback.html#a9aecf9e2d4e767fba99fdf6a26471713":[12,0,12,17,2],
-"struct_execution_1_1_finish_callback.html#ab0077e1deeeea78fd45c556c65398e4c":[12,0,12,17,1],
-"struct_execution_1_1_finish_callback.html#aed28d2aef914acf9f2b6b4549e4c9f4f":[12,0,12,17,0],
-"struct_execution_1_1_handle_node_change.html":[12,0,12,18],
-"struct_execution_1_1_handle_node_change.html#a1171a43f3fa599145aa4b0ecf373c971":[12,0,12,18,1],
-"struct_execution_1_1_handle_node_change.html#a705ee5b1d71bcf1fea0aa428827c7ab9":[12,0,12,18,0],
-"struct_execution_1_1_handle_node_change.html#a852bce08f1ec33dcc9f625efebd2cbf9":[12,0,12,18,3],
-"struct_execution_1_1_handle_node_change.html#a9199173f10cd0fcd400c2e517a479e20":[12,0,12,18,4],
-"struct_execution_1_1_handle_node_change.html#aa2c1b517621ab95bfd51a49a45128dc3":[12,0,12,18,2],
-"struct_execution_1_1_metronome_sounds.html":[12,0,12,27],
-"struct_execution_1_1_metronome_sounds.html#a07abd69b8ba2bbc6f69b3670cd215671":[12,0,12,27,3]
+"struct_execution_1_1_finish_callback.html#a9aecf9e2d4e767fba99fdf6a26471713":[12,0,12,17,2]
 };

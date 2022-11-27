@@ -1,5 +1,8 @@
 var NAVTREEINDEX13 =
 {
+"class_explorer_1_1_address_settings_widget.html#a2fa685f5ef8eb62a6d216c7d14f7d6bc":[12,0,13,14,7],
+"class_explorer_1_1_address_settings_widget.html#a335c7346df52caf70487b9c0d853cb48":[12,0,13,14,17],
+"class_explorer_1_1_address_settings_widget.html#a336cdc0e6fff175f170bab8b2da0c1a1":[12,0,13,14,2],
 "class_explorer_1_1_address_settings_widget.html#a356453ba6ef4d5d79c07baededc22c29":[12,0,13,14,4],
 "class_explorer_1_1_address_settings_widget.html#a3ed2a306558dceb877477349e09ebea4":[12,0,13,14,11],
 "class_explorer_1_1_address_settings_widget.html#a3f4aff314570bd2f98dc0ef9aa6220ad":[12,0,13,14,5],
@@ -246,8 +249,5 @@ var NAVTREEINDEX13 =
 "class_explorer_1_1_node_update_proxy.html#ab2dda2f6838726b59c2dc253ffbcdb2b":[12,0,13,43,21],
 "class_explorer_1_1_node_update_proxy.html#abed9f21de67a595f4abe2e86a3db597a":[12,0,13,43,10],
 "class_explorer_1_1_node_update_proxy.html#ac4a9cee35cae53cf7a52d3afd5c639b9":[12,0,13,43,2],
-"class_explorer_1_1_node_update_proxy.html#acc225eeaeb1e34adc55755a6bc79cba1":[12,0,13,43,9],
-"class_explorer_1_1_node_update_proxy.html#acc771f8c761b38e7dae945c229e9bac1":[12,0,13,43,1],
-"class_explorer_1_1_node_update_proxy.html#ad8b7120287b3ab49c220dbc93d40c292":[12,0,13,43,15],
-"class_explorer_1_1_node_update_proxy.html#ae981dde5847e3b9b58b93883b2d7852e":[12,0,13,43,5]
+"class_explorer_1_1_node_update_proxy.html#acc225eeaeb1e34adc55755a6bc79cba1":[12,0,13,43,9]
 };

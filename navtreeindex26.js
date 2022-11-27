@@ -1,5 +1,8 @@
 var NAVTREEINDEX26 =
 {
+"class_process_1_1_process_drop_handler.html#a91e1d912e346cdb57b44cf09a89c2a5c":[12,0,41,74,2],
+"class_process_1_1_process_drop_handler.html#ab3dce3db4ef0c3b943eebc6eecf6d041":[12,0,41,74,7],
+"class_process_1_1_process_drop_handler.html#ad139e9fcdbdd13fca6346d9f12b94c48":[12,0,41,74,10],
 "class_process_1_1_process_drop_handler.html#ad9aef2e11623e2a9a3c180a5730bd0f7":[12,0,41,74,4],
 "class_process_1_1_process_drop_handler.html#af0c7b418155a0ad3cc402f89149c9fae":[12,0,41,74,6],
 "class_process_1_1_process_drop_handler.html#af354f5ef73bcc516aa7c5a622d931515":[12,0,41,74,11],
@@ -246,8 +249,5 @@ var NAVTREEINDEX26 =
 "class_protocols_1_1_joystick_enumerator.html#a83ed06eb83e30615250ab8fe33e6f7f3":[12,0,42,17,0],
 "class_protocols_1_1_joystick_protocol_factory.html":[12,0,42,18],
 "class_protocols_1_1_joystick_protocol_settings_widget.html":[12,0,42,19],
-"class_protocols_1_1_joystick_protocol_settings_widget.html#a5d5b765246cc2dae89a98171a29cba1c":[12,0,42,19,5],
-"class_protocols_1_1_joystick_protocol_settings_widget.html#a7c21530dde506a8337bf9ad0f1fbf8db":[12,0,42,19,1],
-"class_protocols_1_1_joystick_protocol_settings_widget.html#a8c774dc9421e8d37f6fde9b4832243e6":[12,0,42,19,4],
-"class_protocols_1_1_joystick_protocol_settings_widget.html#ad8d15782d079e8f0fa0898997c345f06":[12,0,42,19,0]
+"class_protocols_1_1_joystick_protocol_settings_widget.html#a5d5b765246cc2dae89a98171a29cba1c":[12,0,42,19,5]
 };
