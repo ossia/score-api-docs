@@ -1,5 +1,6 @@
 var NAVTREEINDEX53 =
 {
+"score-plugin-ysfx_2_y_s_f_x_2_application_plugin_8hpp_source.html":[13,0,62],
 "score-plugin-ysfx_2_y_s_f_x_2_commands_2_command_factory_8hpp_source.html":[13,0,165],
 "score-plugin-ysfx_2_y_s_f_x_2_commands_2_edit_script_8hpp_source.html":[13,0,368],
 "score-plugin-ysfx_2_y_s_f_x_2_commands_2_script_macro_8hpp_source.html":[13,0,1175],
@@ -248,6 +249,5 @@ var NAVTREEINDEX53 =
 "struct_control_1_1_enum.html#a7d3cb0f499c9f6821499fb31c6c330df":[12,0,6,5,3],
 "struct_control_1_1_enum.html#abd99de8a096df55036957c4030117f0d":[12,0,6,5,1],
 "struct_control_1_1_enum_base.html":[12,0,6,6],
-"struct_control_1_1_enum_base.html#a13fef1e20e538000950fec8833380672":[12,0,6,6,5],
-"struct_control_1_1_enum_base.html#a1d65933552f03d31a99a12074f4bc32b":[12,0,6,6,12]
+"struct_control_1_1_enum_base.html#a13fef1e20e538000950fec8833380672":[12,0,6,6,5]
 };

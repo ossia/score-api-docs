@@ -1,5 +1,6 @@
 var NAVTREEINDEX72 =
 {
+"structscore_1_1_plugin_loader_1_1_plugin_dependency_graph_1_1_graph_vertex.html#adcea79500f335a2d9066138b9b6c1d24":[12,0,48,4,0,0,1],
 "structscore_1_1_plugin_loader_1_1_plugin_dependency_graph_1_1_graph_vertex.html#aeffd9d5576cf31b1bc96442d547f12b6":[12,0,48,4,0,0,0],
 "structscore_1_1_polymorphic_component_hierarchy_manager_1_1_child_pair.html":[12,0,48,187,0],
 "structscore_1_1_polymorphic_component_hierarchy_manager_1_1_child_pair.html#a9486c82f2db160bbad4498a501e67db2":[12,0,48,187,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX72 =
 "structscore_1_1_templated_spin_box_3_01int_01_4.html":[12,0,48,278],
 "structscore_1_1_templated_spin_box_3_01int_01_4.html#a2e6b5788022a518b74ead22536c492e2":[12,0,48,278,1],
 "structscore_1_1_templated_spin_box_3_01int_01_4.html#ac632d8ad1cad093cfb6edd93116210b1":[12,0,48,278,0],
-"structscore_1_1_toggle_button.html":[12,0,48,284],
-"structscore_1_1_toggle_button.html#a046e571166f088ea801219fabd2950f3":[12,0,48,284,3]
+"structscore_1_1_toggle_button.html":[12,0,48,284]
 };

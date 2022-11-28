@@ -1,5 +1,6 @@
 var NAVTREEINDEX52 =
 {
+"functions_func_s.html":[12,3,1,14],
 "functions_func_t.html":[12,3,1,15],
 "functions_func_u.html":[12,3,1,16],
 "functions_func_v.html":[12,3,1,17],
@@ -45,13 +46,13 @@ var NAVTREEINDEX52 =
 "namespace_automation.html":[12,0,2],
 "namespace_curve.html":[12,0,8],
 "namespace_curve.html":[11,0,1],
-"namespace_device.html":[12,0,10],
 "namespace_device.html":[11,0,2],
+"namespace_device.html":[12,0,10],
 "namespace_engine.html":[11,0,3],
 "namespace_engine.html":[12,0,11],
 "namespace_engine_1_1_network.html":[11,0,3,0],
-"namespace_execution.html":[11,0,4],
 "namespace_execution.html":[12,0,12],
+"namespace_execution.html":[11,0,4],
 "namespace_gfx.html":[11,0,5],
 "namespace_gfx.html":[12,0,18],
 "namespace_inspector.html":[11,0,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX52 =
 "score-plugin-vst_2_vst_2_executor_8hpp_source.html":[13,0,422],
 "score-plugin-vst_2_vst_2_library_8hpp_source.html":[13,0,651],
 "score-plugin-vst_2_vst_2_node_8hpp_source.html":[13,0,820],
-"score-plugin-vst_2_vst_2_widgets_8hpp_source.html":[13,0,1425],
-"score-plugin-ysfx_2_y_s_f_x_2_application_plugin_8hpp_source.html":[13,0,62]
+"score-plugin-vst_2_vst_2_widgets_8hpp_source.html":[13,0,1425]
 };

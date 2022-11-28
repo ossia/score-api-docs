@@ -1,5 +1,6 @@
 var NAVTREEINDEX68 =
 {
+"struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1vector_3_01_t_01_5_00_01_alloc_01_4_01_4.html":[12,0,517],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01tsl_1_1hopscotch__map_3_01_t_00_01_u_01_4_01_4.html":[12,0,521],
 "struct_time_val.html":[12,0,403],
 "struct_time_val.html#a04a3a1f2add08c109879367c40b9d91e":[12,0,403,24],
@@ -248,6 +249,5 @@ var NAVTREEINDEX68 =
 "structcheck__enum__size.html#aa46156a807d6802915d68e602a90dca3":[12,0,83,0],
 "structgenerator.html":[12,0,114],
 "structgenerator.html#a023bd83249d33b785656769b439b05ed":[12,0,114,15],
-"structgenerator.html#a06be996d844a6b705b1a2666e01275d6":[12,0,114,26],
-"structgenerator.html#a182cf8b5419ace9c774f0c7cc9fd2ce0":[12,0,114,16]
+"structgenerator.html#a06be996d844a6b705b1a2666e01275d6":[12,0,114,26]
 };
