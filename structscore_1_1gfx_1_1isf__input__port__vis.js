@@ -1,5 +1,6 @@
 var structscore_1_1gfx_1_1isf__input__port__vis =
 [
+    [ "add_texture_imgrect", "structscore_1_1gfx_1_1isf__input__port__vis.html#ace1ea5ab8a5598acf3db4315df6ad022", null ],
     [ "operator()", "structscore_1_1gfx_1_1isf__input__port__vis.html#a90500a3f2c9031238756edc3145bdb1d", null ],
     [ "operator()", "structscore_1_1gfx_1_1isf__input__port__vis.html#a145151941322296b1636cbed221ae023", null ],
     [ "operator()", "structscore_1_1gfx_1_1isf__input__port__vis.html#a2e5554a4b3766a3fec6eb7debef3289b", null ],

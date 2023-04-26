@@ -1,6 +1,5 @@
 var classvst_1_1_application_plugin =
 [
-    [ "ScanningProcess", "structvst_1_1_application_plugin_1_1_scanning_process.html", "structvst_1_1_application_plugin_1_1_scanning_process" ],
     [ "ApplicationPlugin", "classvst_1_1_application_plugin.html#ac6daea4b5123f8c9ca5e0b6326ffaf59", null ],
     [ "~ApplicationPlugin", "classvst_1_1_application_plugin.html#a0e68b42dd42257c7b75698703be19fe5", null ],
     [ "addInvalidVST", "classvst_1_1_application_plugin.html#abc924c6ebc0e96b9bfc735e67bcccb51", null ],
@@ -11,11 +10,11 @@ var classvst_1_1_application_plugin =
     [ "registerRunningVST", "classvst_1_1_application_plugin.html#a9efef5b50173febe54ca62f96d248354", null ],
     [ "rescanVSTs", "classvst_1_1_application_plugin.html#afd9c6a814813b2d9899a8934ab55114a", null ],
     [ "scanVSTsEvent", "classvst_1_1_application_plugin.html#ab560b6e272a75443e9c673b7e3d1ebc7", null ],
+    [ "timerEvent", "classvst_1_1_application_plugin.html#ac43543a0324c7c9c9f32735037752763", null ],
     [ "unregisterRunningVST", "classvst_1_1_application_plugin.html#a4a08f7ffbd8de7e102028203147e2410", null ],
     [ "vstChanged", "classvst_1_1_application_plugin.html#a0034000f90989271dded29c5f4f99a8c", null ],
-    [ "m_processes", "classvst_1_1_application_plugin.html#a9f6025ad6cae48fc294fedf5cc0896f4", null ],
     [ "m_runningVSTs", "classvst_1_1_application_plugin.html#a36c08260bafe52dd2d7f50528495fbf4", null ],
     [ "m_tid", "classvst_1_1_application_plugin.html#a6559e287cb70e1c140f27ee09e1c949b", null ],
     [ "vst_infos", "classvst_1_1_application_plugin.html#a811bf1d388169a5acdd282bb250fb163", null ],
-    [ "vst_modules", "classvst_1_1_application_plugin.html#a9a2032a2da62e96a5950d4c8ffa924b5", null ]
+    [ "vst_modules", "classvst_1_1_application_plugin.html#a40ad2c8eb8d3bacc1cadbd2f1ac14dee", null ]
 ];

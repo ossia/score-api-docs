@@ -5,7 +5,7 @@ var struct_l_v2_1_1_l_v2_plugin_chooser_dialog =
     [ "m_accepted", "struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html#a69f9ddbd93fc2eec98bdd2f216c03ca2", null ],
     [ "m_buttons", "struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html#aedee1181654fe765f3525b494ead1960", null ],
     [ "m_categories", "struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html#a66b7c92afd3697718332e87740d6c0eb", null ],
-    [ "m_categories_map", "struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html#ad3494f8b517f23709c2ded5eda07704a", null ],
+    [ "m_categories_map", "struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html#a929a81319be4e4cfda92366a1c711fd7", null ],
     [ "m_lay", "struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html#a92f812fc226511f8e1032f23355a6d1a", null ],
     [ "m_plugins", "struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html#a36699ab96640179b1a3216abbdf760bf", null ]
 ];

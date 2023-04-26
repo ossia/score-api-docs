@@ -3,6 +3,7 @@ var structscore_1_1gfx_1_1_video_frame_share =
     [ "VideoFrameShare", "structscore_1_1gfx_1_1_video_frame_share.html#a0d08938ba7e2d78b96eae5797d6ef3ec", null ],
     [ "~VideoFrameShare", "structscore_1_1gfx_1_1_video_frame_share.html#a7ce03c5d12a0e0b78c892017aefa0e5e", null ],
     [ "currentFrame", "structscore_1_1gfx_1_1_video_frame_share.html#a61337675e0012eff200bea6f543f5019", null ],
+    [ "releaseAllFrames", "structscore_1_1gfx_1_1_video_frame_share.html#a314dbc7cd6c8ee81abb5d1ddb5681b80", null ],
     [ "releaseFramesToFree", "structscore_1_1gfx_1_1_video_frame_share.html#a964328dc65aa90fb79ea9e5f96c1570c", null ],
     [ "updateCurrentFrame", "structscore_1_1gfx_1_1_video_frame_share.html#a9463f7130a4b84e2aec0f7d0f9a1641b", null ],
     [ "m_currentFrame", "structscore_1_1gfx_1_1_video_frame_share.html#a9c7b72d17e34e8560382e6a286bf3a8c", null ],

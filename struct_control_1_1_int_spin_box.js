@@ -1,7 +1,7 @@
 var struct_control_1_1_int_spin_box =
 [
     [ "type", "struct_control_1_1_int_spin_box.html#a00cbc77ee92b3ce6b88e375a1b2b46a2", null ],
-    [ "IntSpinBox", "struct_control_1_1_int_spin_box.html#aa3605203d0ce7c400d5946bf4e6412eb", null ],
+    [ "IntSpinBox", "struct_control_1_1_int_spin_box.html#a7f7d8434f27e6f4cfe49012a03ef878a", null ],
     [ "create_inlet", "struct_control_1_1_int_spin_box.html#a4a9c1298100d8f015a419f5cb882bf24", null ],
     [ "create_inlet", "struct_control_1_1_int_spin_box.html#a826bc093193e5311c3b1ae92f6378c6c", null ],
     [ "create_inlet", "struct_control_1_1_int_spin_box.html#ac9990880a691fe17f10071e2369e6e3a", null ],

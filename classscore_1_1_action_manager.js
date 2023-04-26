@@ -4,11 +4,6 @@ var classscore_1_1_action_manager =
     [ "~ActionManager", "classscore_1_1_action_manager.html#a74b5499b44cc2e9cd1585a6a232fa29e", null ],
     [ "action", "classscore_1_1_action_manager.html#a6e37deb4b2f791fd5f2347e081a01a4d", null ],
     [ "action", "classscore_1_1_action_manager.html#a8bbcc0e8bba531fd964b831d81b12b18", null ],
-    [ "condition", "classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c", null ],
-    [ "condition", "classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c", null ],
-    [ "condition", "classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c", null ],
-    [ "condition", "classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c", null ],
-    [ "condition", "classscore_1_1_action_manager.html#a591686e2807ec3b9d04f5dd5accc6c8c", null ],
     [ "customConditions", "classscore_1_1_action_manager.html#afd9e08f4afeefca7cf5a34c26eaff00e", null ],
     [ "documentConditions", "classscore_1_1_action_manager.html#a63a3b17b4bd8968eb3bec2c6712ad90b", null ],
     [ "focusConditions", "classscore_1_1_action_manager.html#a85b9852261efcc2a4c57d6c452552f1e", null ],
@@ -20,6 +15,11 @@ var classscore_1_1_action_manager =
     [ "onDocumentChange", "classscore_1_1_action_manager.html#addea1f5f999d2f497644c01e7a8408a6", null ],
     [ "onFocusChange", "classscore_1_1_action_manager.html#ad063fac8ac69612af4b982be7b048f1c", null ],
     [ "onSelectionChange", "classscore_1_1_action_manager.html#a89e8a7b1f67a97a60482a862305e667f", null ],
+    [ "requires", "classscore_1_1_action_manager.html#a5d1328c0308f878cfde735a7d656efa5", null ],
+    [ "requires", "classscore_1_1_action_manager.html#ab12307d9cb4d97623c2c50a4f66314db", null ],
+    [ "requires", "classscore_1_1_action_manager.html#a8b1ee938dcfef8f4d4f133b4796f41fa", null ],
+    [ "requires", "classscore_1_1_action_manager.html#aa82b7ba3af440c2f6b698b2f16b855fd", null ],
+    [ "requires", "classscore_1_1_action_manager.html#a0cec6493dba6323795f0f0565b7dd55a", null ],
     [ "reset", "classscore_1_1_action_manager.html#a61deeb8b2ebd9442678d3573e00a2bf6", null ],
     [ "selectionConditions", "classscore_1_1_action_manager.html#a7828acbc61135b2b7e73b7772652fbe3", null ]
 ];

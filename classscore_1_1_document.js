@@ -3,6 +3,7 @@ var classscore_1_1_document =
     [ "~Document", "classscore_1_1_document.html#ae99f705e9501b32174310ca01025de35", null ],
     [ "Document", "classscore_1_1_document.html#af0057e5df836cd602faf84a23f8376a9", null ],
     [ "backupManager", "classscore_1_1_document.html#ab579f423567b348af63cc8b6342beefd", null ],
+    [ "blockAllSignals", "classscore_1_1_document.html#a996bd9a82250baf9635492370dfa620e", null ],
     [ "commandStack", "classscore_1_1_document.html#aa6d30f5621988f9b8b701264426218a6", null ],
     [ "context", "classscore_1_1_document.html#a412ae527567f2853f0d0f1c51004f734", null ],
     [ "focusManager", "classscore_1_1_document.html#aa5f8b21b216eb9b67f8c6280ab23d47a", null ],

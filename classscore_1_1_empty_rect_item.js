@@ -1,6 +1,5 @@
 var classscore_1_1_empty_rect_item =
 [
-    [ "Type", "classscore_1_1_empty_rect_item.html#af372efe4b37aa04428fee7373d1b10d3a308286ded27debe29fd9606cae60df3b", null ],
     [ "EmptyRectItem", "classscore_1_1_empty_rect_item.html#ab24d9e333679ca1e0f3d40141f52781a", null ],
     [ "~EmptyRectItem", "classscore_1_1_empty_rect_item.html#a69d52938208474e7bc4446a21ab8b046", null ],
     [ "boundingRect", "classscore_1_1_empty_rect_item.html#a4b8b1e58c30d4975cd7eaac0b9b1b069", null ],

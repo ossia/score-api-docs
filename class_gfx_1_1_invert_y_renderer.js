@@ -1,7 +1,7 @@
 var class_gfx_1_1_invert_y_renderer =
 [
     [ "InvertYRenderer", "class_gfx_1_1_invert_y_renderer.html#aed76b0f51d8197bf6409eb6c4d127675", null ],
-    [ "finishFrame", "class_gfx_1_1_invert_y_renderer.html#a599e890e5b292ae1d0eb5f315d22a01c", null ],
+    [ "finishFrame", "class_gfx_1_1_invert_y_renderer.html#ac7e465a7de72e502e87ea3f3f607ac04", null ],
     [ "init", "class_gfx_1_1_invert_y_renderer.html#aea97886acfc0309b4bdc892c4a2d7918", null ],
     [ "release", "class_gfx_1_1_invert_y_renderer.html#a78566870b0f25bd4bd08a9d3eeef5f4c", null ],
     [ "renderTargetForInput", "class_gfx_1_1_invert_y_renderer.html#acb264449fba0a5ead4b22ca5f903918c", null ],

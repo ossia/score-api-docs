@@ -1,6 +1,6 @@
 var class_web_socket_view =
 [
-    [ "WebSocketView", "class_web_socket_view.html#a42be4604d0485cae53687680b1f55778", null ],
+    [ "WebSocketView", "class_web_socket_view.html#a928f95be74beb0e89acf73aa4b2da612", null ],
     [ "~WebSocketView", "class_web_socket_view.html#a91316d6cbefb0c547549374404852f66", null ],
     [ "closed", "class_web_socket_view.html#a12b6bd6f285bec09427c45d15b9b292b", null ],
     [ "onNewConnection", "class_web_socket_view.html#a2761d03c37cabd0845acea85c7f8f4d3", null ],

@@ -1,4 +1,0 @@
-var struct_q_meta_type_id_3_01_q_pointer_3_01_process_1_1_layer_presenter_01_4_01_4 =
-[
-    [ "Defined", "struct_q_meta_type_id_3_01_q_pointer_3_01_process_1_1_layer_presenter_01_4_01_4.html#a307b41c875ba625e779bd3d3d54694b2a20982cba4d72782ecebcbf3d2498fe4a", null ]
-];

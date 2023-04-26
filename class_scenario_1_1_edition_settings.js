@@ -12,6 +12,6 @@ var class_scenario_1_1_edition_settings =
     [ "setTool", "class_scenario_1_1_edition_settings.html#a680174222b3b2e829a5721b6ad569e76", null ],
     [ "tool", "class_scenario_1_1_edition_settings.html#ab69e670f536445e32befbf9e4b71bb15", null ],
     [ "toolChanged", "class_scenario_1_1_edition_settings.html#a5c7401f1f766bba0bb9fa1125650e1ce", null ],
-    [ "WWW_PROPERTY", "class_scenario_1_1_edition_settings.html#a0a01b04ee9f02c12ec7db87622a15a7f", null ],
-    [ "w_state", "class_scenario_1_1_edition_settings.html#a63ec4683e310b2d260424e11179a2609", null ]
+    [ "WWWWW_PROPERTY", "class_scenario_1_1_edition_settings.html#ab5fa3bc0e56415d55de24e4f42c0f318", null ],
+    [ "w_state", "class_scenario_1_1_edition_settings.html#a2f6d1546538d25e4affaa254fd98c27e", null ]
 ];

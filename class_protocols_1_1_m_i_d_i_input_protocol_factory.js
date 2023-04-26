@@ -4,7 +4,7 @@ var class_protocols_1_1_m_i_d_i_input_protocol_factory =
     [ "checkCompatibility", "class_protocols_1_1_m_i_d_i_input_protocol_factory.html#aaf3b30d9bb182f1e038b73bf729275bb", null ],
     [ "defaultSettings", "class_protocols_1_1_m_i_d_i_input_protocol_factory.html#a77561d98e9880665a6fb2885f4b073c2", null ],
     [ "flags", "class_protocols_1_1_m_i_d_i_input_protocol_factory.html#a4fd23c80db38d233baa10261842e07dc", null ],
-    [ "getEnumerator", "class_protocols_1_1_m_i_d_i_input_protocol_factory.html#a8a8c22fc6e709a4db583502a8c6ff93e", null ],
+    [ "getEnumerators", "class_protocols_1_1_m_i_d_i_input_protocol_factory.html#a743ad0d9989009e07a3bfe2da993bb50", null ],
     [ "makeAddAddressDialog", "class_protocols_1_1_m_i_d_i_input_protocol_factory.html#aef9ed51b1a98c799e2bbc00f2fc24103", null ],
     [ "makeDevice", "class_protocols_1_1_m_i_d_i_input_protocol_factory.html#a41141b75426ae3dafbe86e00a77f6b75", null ],
     [ "makeEditAddressDialog", "class_protocols_1_1_m_i_d_i_input_protocol_factory.html#afdddd75152aa819eaaa777d12396bdac", null ],

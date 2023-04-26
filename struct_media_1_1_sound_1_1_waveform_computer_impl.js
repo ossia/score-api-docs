@@ -3,6 +3,7 @@ var struct_media_1_1_sound_1_1_waveform_computer_impl =
     [ "LoopWrapper", "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html", "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper" ],
     [ "QPainterCleanup", "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_q_painter_cleanup.html", "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_q_painter_cleanup" ],
     [ "SizeInfos", "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html", "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos" ],
+    [ "check_abort", "struct_media_1_1_sound_1_1_waveform_computer_impl.html#ab6319789e1cdc1f5b2748a1dea8088f4", null ],
     [ "compute", "struct_media_1_1_sound_1_1_waveform_computer_impl.html#ab57285745f49c59fbe8aabb62ce24031", null ],
     [ "compute_mean_absmax", "struct_media_1_1_sound_1_1_waveform_computer_impl.html#a6bddae0e109eb92e1f3f45eba1623a3b", null ],
     [ "compute_mean_minmax", "struct_media_1_1_sound_1_1_waveform_computer_impl.html#accfb5b5ee18df6beaa17b33627cd4660", null ],

@@ -1,0 +1,4 @@
+var struct_t_serializer_3_01_j_s_o_n_object_00_01boost_1_1container_1_1dtl_1_1pair_3_01_t_00_01_u_01_4_01_4 =
+[
+    [ "type", "struct_t_serializer_3_01_j_s_o_n_object_00_01boost_1_1container_1_1dtl_1_1pair_3_01_t_00_01_u_01_4_01_4.html#a92ec8e0dc8d0c1f71bbf4f8724914112", null ]
+];

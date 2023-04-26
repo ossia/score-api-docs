@@ -7,6 +7,6 @@ var class_midi_outlet =
     [ "make", "class_midi_outlet.html#a86bcbb882cbec144bf94f30f1fca91f0", null ],
     [ "midi", "class_midi_outlet.html#af3bbd7de1aa7b5b571bf1bdc40f7f9b1", null ],
     [ "setMessages", "class_midi_outlet.html#acb608ae12c8ac20b2006dfc8a3a85b3d", null ],
-    [ "w_state", "class_midi_outlet.html#a9deb3c79c79fb243d3b642753bd185c5", null ],
-    [ "w_state", "class_midi_outlet.html#acfc56d495efce6ae4d466808cb33382c", null ]
+    [ "w_state", "class_midi_outlet.html#a53d501c968db6128614608a074f8444d", null ],
+    [ "w_state", "class_midi_outlet.html#a2f9023c6cb215ff83f44946cf5188a5e", null ]
 ];

@@ -18,7 +18,7 @@ var class_curve_1_1_edition_settings =
     [ "suppressOnOverlapChanged", "class_curve_1_1_edition_settings.html#a16aaf4ee20b7eb6de78e364c775fe4a7", null ],
     [ "tool", "class_curve_1_1_edition_settings.html#aab3bc8bdb8d3d3f64b689e8c1de30827", null ],
     [ "toolChanged", "class_curve_1_1_edition_settings.html#a8072cc19d6b8dd14ab441d6032ec3516", null ],
-    [ "WWW_PROPERTY", "class_curve_1_1_edition_settings.html#a463f1fea4b934127225078e965d5307b", null ],
-    [ "WWW_PROPERTY", "class_curve_1_1_edition_settings.html#aac683f5665414f23f7bf4b069f132f1d", null ],
-    [ "w_state", "class_curve_1_1_edition_settings.html#a568c954a5d2d2ad9d859137ca8d83e05", null ]
+    [ "WWWWW_PROPERTY", "class_curve_1_1_edition_settings.html#a72b0f81175d25803904833da0f48fe74", null ],
+    [ "WWWWW_PROPERTY", "class_curve_1_1_edition_settings.html#a14f632ab2e3f6f0b1a3938a877327be8", null ],
+    [ "w_state", "class_curve_1_1_edition_settings.html#ae9a29b68aa5fe1ca6438899fb5090289", null ]
 ];

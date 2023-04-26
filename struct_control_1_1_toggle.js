@@ -1,7 +1,7 @@
 var struct_control_1_1_toggle =
 [
     [ "type", "struct_control_1_1_toggle.html#a1a1565192311afef0f7c365b2dd79b2d", null ],
-    [ "Toggle", "struct_control_1_1_toggle.html#a4dddb78487d562a5bc248258a0ec40c8", null ],
+    [ "Toggle", "struct_control_1_1_toggle.html#a3f69646eb62b1ade336e1b8f92bb7fac", null ],
     [ "create_inlet", "struct_control_1_1_toggle.html#a65c08638a82bd672aea528f3d6617e5b", null ],
     [ "create_inlet", "struct_control_1_1_toggle.html#a90be6e2d7fa76a9389f146a703102890", null ],
     [ "create_inlet", "struct_control_1_1_toggle.html#a1714131398ace3a5f7493d471a6f519a", null ],

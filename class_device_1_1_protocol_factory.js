@@ -9,7 +9,7 @@ var class_device_1_1_protocol_factory =
     [ "checkCompatibility", "class_device_1_1_protocol_factory.html#a234efca8b12f98a16a040b5108940110", null ],
     [ "defaultSettings", "class_device_1_1_protocol_factory.html#afe23713305124395ecc5291ab89aeac9", null ],
     [ "flags", "class_device_1_1_protocol_factory.html#abf6565df9ccb2268838e3e3f27aeb892", null ],
-    [ "getEnumerator", "class_device_1_1_protocol_factory.html#aa51421cfa1e8424d692449a5ad59baee", null ],
+    [ "getEnumerators", "class_device_1_1_protocol_factory.html#a39d81f042f0bccd5c2ef2cbf3befb71a", null ],
     [ "makeAddAddressDialog", "class_device_1_1_protocol_factory.html#a26aa44d24e2e97eb55d8db66be298f3b", null ],
     [ "makeDevice", "class_device_1_1_protocol_factory.html#a225718eba351e6e33215beffd3bd838f", null ],
     [ "makeEditAddressDialog", "class_device_1_1_protocol_factory.html#a37650590844ca4c1e9cb7372d8f966f4", null ],

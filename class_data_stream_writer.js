@@ -100,6 +100,7 @@ var class_data_stream_writer =
     [ "write", "class_data_stream_writer.html#a426787a06d6d20193a1de048eeb0e5c0", null ],
     [ "write", "class_data_stream_writer.html#af093abbc589d8a0942d776e7083a30f0", null ],
     [ "write", "class_data_stream_writer.html#a8e77fb8bdefe5430e27efcc38cbc9c94", null ],
+    [ "write", "class_data_stream_writer.html#aa18403ace4f3f4cd0d0496d50931c38e", null ],
     [ "write", "class_data_stream_writer.html#ae62f8c63ad22e3a0866b98a20769d89a", null ],
     [ "write", "class_data_stream_writer.html#a32c101dc012338080eb0734aa85df560", null ],
     [ "write", "class_data_stream_writer.html#a5a8fa6de81862324ad951d2e61b944e8", null ],

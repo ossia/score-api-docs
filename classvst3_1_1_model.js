@@ -17,6 +17,6 @@ var classvst3_1_1_model =
     [ "restartComponent", "classvst3_1_1_model.html#a2fd7c5776e5302512569065c1d2c0347", null ],
     [ "PortCreationVisitor", "classvst3_1_1_model.html#afdcf45b0259149771778ab30e950025f", null ],
     [ "vst3::CreateVSTControl", "classvst3_1_1_model.html#a60e9b4b06f36763b2023930f9e940eee", null ],
-    [ "controls", "classvst3_1_1_model.html#ad7f91c72f7f243963d8af81a7ca53a0a", null ],
+    [ "controls", "classvst3_1_1_model.html#a1684bc3538381719c9630384c39f876b", null ],
     [ "fx", "classvst3_1_1_model.html#a780f94e061df621073aee07adc526543", null ]
 ];

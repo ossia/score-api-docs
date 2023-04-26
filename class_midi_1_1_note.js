@@ -2,7 +2,7 @@ var class_midi_1_1_note =
 [
     [ "Note", "class_midi_1_1_note.html#af877ab3da0625bff054066667d9978a1", null ],
     [ "Note", "class_midi_1_1_note.html#ab1e7fd42cd3735d3366d01d6fc95592c", null ],
-    [ "Note", "class_midi_1_1_note.html#a1b09d5582a7e9a69aa6f1f2b9705854a", null ],
+    [ "Note", "class_midi_1_1_note.html#ad89f956cd3f15f7684a20d8c459b4bbe", null ],
     [ "duration", "class_midi_1_1_note.html#afbf7cb8bb1345717416645e8399a9476", null ],
     [ "end", "class_midi_1_1_note.html#aa7a2686ab4393a636283bfaa2d36334e", null ],
     [ "noteChanged", "class_midi_1_1_note.html#ad1f75ed5ed3c7aaa980b817107112b25", null ],

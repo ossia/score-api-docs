@@ -28,5 +28,5 @@ var classvst3_1_1vst__node__base =
     [ "m_vstData", "classvst3_1_1vst__node__base.html#a31baafe88bcce7ed13db2a70b938c281", null ],
     [ "m_vstInput", "classvst3_1_1vst__node__base.html#a14b402d3f0adc30af6a3b7aeeca70254", null ],
     [ "m_vstOutput", "classvst3_1_1vst__node__base.html#ab68159875a9d2c2f3c2c3a6cd4c8acc3", null ],
-    [ "queue_map", "classvst3_1_1vst__node__base.html#ac46bef6c9bd3f5b84e470e79486d1a45", null ]
+    [ "queue_map", "classvst3_1_1vst__node__base.html#a969bfef9d4f2a0b59810259f072f24cb", null ]
 ];

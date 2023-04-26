@@ -9,5 +9,6 @@ var classscore_1_1_settings =
     [ "settings", "classscore_1_1_settings.html#a14c6210a09467489d8fedd89532cfdeb", null ],
     [ "setupSettingsPlugin", "classscore_1_1_settings.html#aaba765bc7a996b3ee07ef4f153ab7bb6", null ],
     [ "setupView", "classscore_1_1_settings.html#aebbb40d3827bb489b7625050ae5f5ba9", null ],
+    [ "teardownView", "classscore_1_1_settings.html#ac01a106edffd1cce0f84c0fb35ac9cf0", null ],
     [ "view", "classscore_1_1_settings.html#a12e4fc37b6b3a2ce86e5e1e8967a1c5c", null ]
 ];

@@ -2,6 +2,7 @@ var structscore_1_1_slider_wrapper =
 [
     [ "boundingRect", "structscore_1_1_slider_wrapper.html#a363800decfa8d84a891a485c0636f119", null ],
     [ "execHandleRect", "structscore_1_1_slider_wrapper.html#a173ab2288c83816fbf68c5ae9d4be011", null ],
+    [ "from01", "structscore_1_1_slider_wrapper.html#a549f4b46e667a006069a0d435607f963", null ],
     [ "getExecHandleX", "structscore_1_1_slider_wrapper.html#a17a375a37ef4a1b8feccee348c1badf6", null ],
     [ "getHandleX", "structscore_1_1_slider_wrapper.html#a32885fea8cf3d3fdf381cbb669d54793", null ],
     [ "handleRect", "structscore_1_1_slider_wrapper.html#add3d777db62f3f074aafb0e6c8a314b0", null ],

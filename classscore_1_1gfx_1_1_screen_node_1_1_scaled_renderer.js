@@ -2,7 +2,7 @@ var classscore_1_1gfx_1_1_screen_node_1_1_scaled_renderer =
 [
     [ "ScaledRenderer", "classscore_1_1gfx_1_1_screen_node_1_1_scaled_renderer.html#a7f6cc1dc3289d6e1339431dcd7362616", null ],
     [ "~ScaledRenderer", "classscore_1_1gfx_1_1_screen_node_1_1_scaled_renderer.html#a703bf03bd0e425ef134e26bfd54e4078", null ],
-    [ "finishFrame", "classscore_1_1gfx_1_1_screen_node_1_1_scaled_renderer.html#a04265e660785426d49dd3cdcad5c97fc", null ],
+    [ "finishFrame", "classscore_1_1gfx_1_1_screen_node_1_1_scaled_renderer.html#aeb31ab6b2e3144d3ac09bbb189916d32", null ],
     [ "init", "classscore_1_1gfx_1_1_screen_node_1_1_scaled_renderer.html#a6de9c45cdec5facfd4b2cf3011c4a410", null ],
     [ "release", "classscore_1_1gfx_1_1_screen_node_1_1_scaled_renderer.html#abda4a2b943189b0c93c0878a2994ab7a", null ],
     [ "renderTargetForInput", "classscore_1_1gfx_1_1_screen_node_1_1_scaled_renderer.html#a5ec2e2257e6e54f7764ec19210a97230", null ],

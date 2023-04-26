@@ -1,6 +1,6 @@
 var class_tool_palette_input_dispatcher =
 [
-    [ "ToolPaletteInputDispatcher", "class_tool_palette_input_dispatcher.html#a66fe2da319fae7b6a640d3faf456474d", null ],
+    [ "ToolPaletteInputDispatcher", "class_tool_palette_input_dispatcher.html#a5e3f9d21ecd4ecf1dff214c6077289c7", null ],
     [ "on_cancel", "class_tool_palette_input_dispatcher.html#a430a9c5fb30b5e8ffab6a802733dd4a0", null ],
     [ "on_moved", "class_tool_palette_input_dispatcher.html#a9234d2d5246d9821d886efd4d17e3f06", null ],
     [ "on_pressed", "class_tool_palette_input_dispatcher.html#a8cd6f8c03b6bd541eeb70b6d7a4eb20c", null ],

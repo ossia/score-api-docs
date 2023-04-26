@@ -1,6 +1,5 @@
 var classscore_1_1_background_item =
 [
-    [ "Type", "classscore_1_1_background_item.html#ae2b2e57c7adf072fe725049b6f3fb365a2beb136c82b36b2b4427b1931cad36cd", null ],
     [ "BackgroundItem", "classscore_1_1_background_item.html#a896a6097fa206ff79feb4098adba0222", null ],
     [ "~BackgroundItem", "classscore_1_1_background_item.html#a7cccdcfbad5d705552ff558aebc6a65f", null ],
     [ "boundingRect", "classscore_1_1_background_item.html#a11ad2b1351e3fbe77bb99d6b96fe2849", null ],

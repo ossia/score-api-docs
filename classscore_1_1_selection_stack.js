@@ -16,10 +16,10 @@ var classscore_1_1_selection_stack =
     [ "pushNewSelection", "classscore_1_1_selection_stack.html#a5010f210b7a027e560236adba5d13016", null ],
     [ "reselect", "classscore_1_1_selection_stack.html#ac897033610da38463eefce20f0041c31", null ],
     [ "unselect", "classscore_1_1_selection_stack.html#a40d0292658ecc0755da04dc367fd810c", null ],
-    [ "w_state", "classscore_1_1_selection_stack.html#a69a7c303804b8d204fcec3df8d381015", null ],
-    [ "w_state", "classscore_1_1_selection_stack.html#a73d763a71de91500cb712328e12bb1ed", null ],
-    [ "__pad0__", "classscore_1_1_selection_stack.html#ab6d57b319a88aea8009d42af2421c38b", null ],
-    [ "m_connections", "classscore_1_1_selection_stack.html#ad369175bc720d1b87be9f0f66f1f1f9d", null ],
+    [ "w_state", "classscore_1_1_selection_stack.html#a226ab6eefba78377085e515410ef4018", null ],
+    [ "w_state", "classscore_1_1_selection_stack.html#a29e2622346a45b6f9dcd96fd1ad6d045", null ],
+    [ "__pad0__", "classscore_1_1_selection_stack.html#a42be137285965d084f372032034fbd8e", null ],
+    [ "m_connections", "classscore_1_1_selection_stack.html#a3fc1933d3974638cea20889d2c9f4926", null ],
     [ "m_reselectable", "classscore_1_1_selection_stack.html#a550ce29c88ceb06136145d57b7e9b7f8", null ],
     [ "m_unselectable", "classscore_1_1_selection_stack.html#a0034745cfa05737800949dfc2ce8e30a", null ]
 ];

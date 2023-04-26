@@ -7,6 +7,6 @@ var class_value_outlet =
     [ "make", "class_value_outlet.html#ae675590fe13bf214b274d08fbfcdab73", null ],
     [ "setValue", "class_value_outlet.html#a3a25e9c1b104699fca12a0ac16dc9b2a", null ],
     [ "value", "class_value_outlet.html#a2503809576fdeb8c5c4a3acc9ab3551c", null ],
-    [ "w_state", "class_value_outlet.html#a357f9b440366d3e1cf416f5012f70b0e", null ],
+    [ "w_state", "class_value_outlet.html#abb65d0b099f5593b273222dd7fac9c02", null ],
     [ "values", "class_value_outlet.html#ae7111320b9003e6313b72d895ac38b69", null ]
 ];

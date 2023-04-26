@@ -1,6 +1,7 @@
 var classscore_1_1_presenter =
 [
     [ "Presenter", "classscore_1_1_presenter.html#a7ba2b8566237ac09c12b7a37a6c96f88", null ],
+    [ "~Presenter", "classscore_1_1_presenter.html#a95768c3a549b75a4e0379a557f4c9dc8", null ],
     [ "actionManager", "classscore_1_1_presenter.html#aabe32366c30401f7f338bc035c6e9667", null ],
     [ "applicationComponents", "classscore_1_1_presenter.html#aff08784a825380d6d060345479525f1f", null ],
     [ "applicationContext", "classscore_1_1_presenter.html#a2aba9188c20ea509b3bc90f731269f91", null ],

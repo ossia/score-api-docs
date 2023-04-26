@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['graphicsapi_6084',['GraphicsApi',['../namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734',1,'score::gfx']]]
+  ['graphicsapi_5585',['GraphicsApi',['../namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734',1,'score::gfx']]]
 ];

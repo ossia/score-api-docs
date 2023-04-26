@@ -18,7 +18,6 @@ var class_execution_1_1_document_plugin =
     [ "registerAction", "class_execution_1_1_document_plugin.html#a76526644fb8ee49804d70b1aec00beb2", null ],
     [ "reload", "class_execution_1_1_document_plugin.html#a4d0219c39227247fbbb1851de4be2014", null ],
     [ "runAllCommands", "class_execution_1_1_document_plugin.html#a719926f4523402b4e88c6890e0a4890d", null ],
-    [ "sig_bench", "class_execution_1_1_document_plugin.html#adf132d389f04599a7c1841574e28641a", null ],
     [ "slot_bench", "class_execution_1_1_document_plugin.html#a99b946df6c0c682902ce0ef2ae559988", null ],
     [ "audio_device", "class_execution_1_1_document_plugin.html#a4031ee9584d23ceffeb49723c2e47f27", null ],
     [ "local_device", "class_execution_1_1_document_plugin.html#a2669e9e755c91987326a9baf97a024c5", null ],
