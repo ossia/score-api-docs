@@ -1,7 +1,6 @@
 var struct_dataflow_1_1_curve_inlet =
 [
     [ "CurveInlet", "struct_dataflow_1_1_curve_inlet.html#a2c77595d73a5afab90c25cef95e5a455", null ],
-    [ "CurveInlet", "struct_dataflow_1_1_curve_inlet.html#a5522f9bbcdd74c587ba0bebee2dd6065", null ],
     [ "~CurveInlet", "struct_dataflow_1_1_curve_inlet.html#a6160a3308a71f81648868b161d2a9e0b", null ],
     [ "CurveInlet", "struct_dataflow_1_1_curve_inlet.html#a0fc28fd2861bf12ada378618149127f1", null ],
     [ "CurveInlet", "struct_dataflow_1_1_curve_inlet.html#a446b119e84c32209baff8c2fe2ed17a2", null ],

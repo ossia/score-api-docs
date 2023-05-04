@@ -147,21 +147,18 @@ $(document).ready(function(){initNavTree('_curve_inlet_8hpp_source.html',''); in
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  MODEL_METADATA_IMPL(<a class="code" href="struct_dataflow_1_1_curve_inlet.html">CurveInlet</a>)</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="struct_dataflow_1_1_curve_inlet.html">CurveInlet</a>(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="struct_dataflow_1_1_curve_inlet.html">CurveInlet</a>(</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keyword">const</span> std::vector&lt;QString&gt;&amp; init, <span class="keyword">const</span> QString&amp; name, <a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      QObject* parent);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  ~<a class="code" href="struct_dataflow_1_1_curve_inlet.html">CurveInlet</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="struct_dataflow_1_1_curve_inlet.html">CurveInlet</a>(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="struct_dataflow_1_1_curve_inlet.html">CurveInlet</a>(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="struct_dataflow_1_1_curve_inlet.html">CurveInlet</a>(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="struct_dataflow_1_1_curve_inlet.html">CurveInlet</a>(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  ~<a class="code" href="struct_dataflow_1_1_curve_inlet.html">CurveInlet</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="struct_dataflow_1_1_curve_inlet.html">CurveInlet</a>(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="struct_dataflow_1_1_curve_inlet.html">CurveInlet</a>(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="struct_dataflow_1_1_curve_inlet.html">CurveInlet</a>(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="struct_dataflow_1_1_curve_inlet.html">CurveInlet</a>(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> init();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">void</span> on_curveChange();</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> init();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> on_curveChange();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="class_curve_1_1_model.html">Curve::Model</a>* m_curve{};</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="class_curve_1_1_model.html">Curve::Model</a>* m_curve{};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
 <div class="ttc" id="a_visitor_common_8hpp_html"><div class="ttname"><a href="_visitor_common_8hpp.html">VisitorCommon.hpp</a></div></div>
 <div class="ttc" id="aclass_curve_1_1_model_html"><div class="ttname"><a href="class_curve_1_1_model.html">Curve::Model</a></div><div class="ttdef"><b>Definition:</b> CurveModel.hpp:25</div></div>
 <div class="ttc" id="aclass_data_stream_writer_html"><div class="ttname"><a href="class_data_stream_writer.html">DataStreamWriter</a></div><div class="ttdef"><b>Definition:</b> DataStreamVisitor.hpp:202</div></div>

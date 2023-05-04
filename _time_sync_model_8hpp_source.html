@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('_time_sync_model_8hpp_source.html','')
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  SCORE_SERIALIZE_FRIENDS</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_scenario_1_1_time_sync_model.html#afcccb05caeade38c70231b4542857dad">   42</a></span>&#160;  <a class="code" href="class_selectable.html">Selectable</a> <a class="code" href="class_scenario_1_1_time_sync_model.html#afcccb05caeade38c70231b4542857dad">selection</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_scenario_1_1_time_sync_model.html#afcccb05caeade38c70231b4542857dad">   42</a></span>&#160;  <a class="code" href="class_selectable.html">Selectable</a> selection{<span class="keyword">this</span>};</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="class_scenario_1_1_time_sync_model.html">TimeSyncModel</a>(<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;TimeSyncModel&gt;</a>&amp; <span class="keywordtype">id</span>, <span class="keyword">const</span> <a class="code" href="struct_time_val.html">TimeVal</a>&amp; date, QObject* parent);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
@@ -153,13 +153,13 @@ $(document).ready(function(){initNavTree('_time_sync_model_8hpp_source.html','')
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_time_val.html">TimeVal</a>&amp; date() const noexcept;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> setDate(const <a class="code" href="struct_time_val.html">TimeVal</a>&amp;);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">void</span> addEvent(const <a class="code" href="classid__base__t.html">Id</a>&lt;<a class="code" href="class_scenario_1_1_event_model.html">EventModel</a>&gt;&amp;);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">bool</span> removeEvent(const <a class="code" href="classid__base__t.html">Id</a>&lt;<a class="code" href="class_scenario_1_1_event_model.html">EventModel</a>&gt;&amp;);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">void</span> addEvent(const <a class="code" href="classid__base__t.html">Id</a>&lt;EventModel&gt;&amp;);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">bool</span> removeEvent(const <a class="code" href="classid__base__t.html">Id</a>&lt;EventModel&gt;&amp;);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> clearEvents();</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  using EventIdVec = ossia::small_vector&lt;<a class="code" href="classid__base__t.html">Id</a>&lt;<a class="code" href="class_scenario_1_1_event_model.html">EventModel</a>&gt;, 2&gt;;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  using EventIdVec = ossia::small_vector&lt;<a class="code" href="classid__base__t.html">Id</a>&lt;EventModel&gt;, 2&gt;;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  const EventIdVec&amp; events() const noexcept;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> setEvents(const <a class="code" href="class_scenario_1_1_time_sync_model.html">TimeSyncModel</a>::EventIdVec&amp; events);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> setEvents(const TimeSyncModel::EventIdVec&amp; events);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="namespace_state.html">State</a>::Expression expression() const noexcept { <span class="keywordflow">return</span> m_expression; }</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> setExpression(<span class="keyword">const</span> <a class="code" href="class_tree_node.html">State::Expression</a>&amp; expression);</div>
@@ -229,9 +229,7 @@ $(document).ready(function(){initNavTree('_time_sync_model_8hpp_source.html','')
 <div class="ttc" id="aclass_data_stream_html"><div class="ttname"><a href="class_data_stream.html">DataStream</a></div><div class="ttdef"><b>Definition:</b> VisitorInterface.hpp:53</div></div>
 <div class="ttc" id="aclass_j_s_o_n_object_html"><div class="ttname"><a href="class_j_s_o_n_object.html">JSONObject</a></div><div class="ttdef"><b>Definition:</b> VisitorInterface.hpp:61</div></div>
 <div class="ttc" id="aclass_pretty_name__k_html"><div class="ttname"><a href="class_pretty_name__k.html">PrettyName_k</a></div><div class="ttdoc">Metadata to get the name that will be shown in the user interface.</div><div class="ttdef"><b>Definition:</b> lib/score/tools/Metadata.hpp:42</div></div>
-<div class="ttc" id="aclass_scenario_1_1_event_model_html"><div class="ttname"><a href="class_scenario_1_1_event_model.html">Scenario::EventModel</a></div><div class="ttdef"><b>Definition:</b> EventModel.hpp:36</div></div>
 <div class="ttc" id="aclass_scenario_1_1_time_sync_model_html"><div class="ttname"><a href="class_scenario_1_1_time_sync_model.html">Scenario::TimeSyncModel</a></div><div class="ttdef"><b>Definition:</b> TimeSyncModel.hpp:35</div></div>
-<div class="ttc" id="aclass_scenario_1_1_time_sync_model_html_afcccb05caeade38c70231b4542857dad"><div class="ttname"><a href="class_scenario_1_1_time_sync_model.html#afcccb05caeade38c70231b4542857dad">Scenario::TimeSyncModel::selection</a></div><div class="ttdeci">Selectable selection</div><div class="ttdef"><b>Definition:</b> TimeSyncModel.hpp:36</div></div>
 <div class="ttc" id="aclass_selectable_html"><div class="ttname"><a href="class_selectable.html">Selectable</a></div><div class="ttdoc">The Selectable class.</div><div class="ttdef"><b>Definition:</b> Selectable.hpp:14</div></div>
 <div class="ttc" id="aclass_tree_node_html"><div class="ttname"><a href="class_tree_node.html">TreeNode&lt; ExprData &gt;</a></div></div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition:</b> Identifier.hpp:57</div></div>
