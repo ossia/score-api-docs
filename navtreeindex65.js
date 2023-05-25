@@ -1,5 +1,16 @@
 var NAVTREEINDEX65 =
 {
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#a52654a48b3b8df1a791393e1439946ea":[12,0,31,3,10,14],
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#a6bddae0e109eb92e1f3f45eba1623a3b":[12,0,31,3,10,5],
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#a773e85bd25945d6447fb5f0dcbdc113a":[12,0,31,3,10,13],
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#a98cbe7cb83aee57f83777d70ec90d262":[12,0,31,3,10,10],
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#aae73ae8d4333064505686e3429e560e8":[12,0,31,3,10,8],
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#ab0fe3a8b5b2e6254ee6a229c9d4ff27b":[12,0,31,3,10,11],
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#ab57285745f49c59fbe8aabb62ce24031":[12,0,31,3,10,4],
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#ab6319789e1cdc1f5b2748a1dea8088f4":[12,0,31,3,10,3],
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#ac66b153f70b017ead9254eca216e1563":[12,0,31,3,10,17],
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#accfb5b5ee18df6beaa17b33627cd4660":[12,0,31,3,10,6],
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#acd6cae7ee45a191d440c24f524718efd":[12,0,31,3,10,18],
 "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html":[12,0,31,3,10,0],
 "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a0c55863b2aa52aa319f13b6719117ee7":[12,0,31,3,10,0,11],
 "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a100540fdb72e407e5835ad25992539a3":[12,0,31,3,10,0,0],
@@ -238,16 +249,5 @@ var NAVTREEINDEX65 =
 "struct_nodes_1_1_empty_midi_mapping_1_1_node.html#a695a2cd08191651118f67f1c76ab4b87":[12,0,35,7,0,1],
 "struct_nodes_1_1_empty_midi_mapping_1_1_node_1_1_metadata.html":[12,0,35,7,0,0],
 "struct_nodes_1_1_empty_value_mapping_1_1_node.html":[12,0,35,8,0],
-"struct_nodes_1_1_empty_value_mapping_1_1_node.html#a3818d4afb3d142b593c891c29d4b4477":[12,0,35,8,0,1],
-"struct_nodes_1_1_empty_value_mapping_1_1_node_1_1_metadata.html":[12,0,35,8,0,0],
-"struct_nodes_1_1_envelope_1_1_node.html":[12,0,35,9,0],
-"struct_nodes_1_1_envelope_1_1_node.html#ade4a8bf5adeb23ac6993c3015fd3627c":[12,0,35,9,0,1],
-"struct_nodes_1_1_envelope_1_1_node_1_1_metadata.html":[12,0,35,9,0,0],
-"struct_nodes_1_1_factor_oracle2_1_1_node.html":[12,0,35,11,0],
-"struct_nodes_1_1_factor_oracle2_1_1_node.html#a0efce3c2af9399d688cbfbae27785b72":[12,0,35,11,0,3],
-"struct_nodes_1_1_factor_oracle2_1_1_node.html#ab88c737108fae29a9803d2f50e81b55d":[12,0,35,11,0,2],
-"struct_nodes_1_1_factor_oracle2_1_1_node_1_1_metadata.html":[12,0,35,11,0,0],
-"struct_nodes_1_1_factor_oracle2_1_1_node_1_1_state.html":[12,0,35,11,0,1],
-"struct_nodes_1_1_factor_oracle2_1_1_node_1_1_state.html#a024c9520d9935e11c18639ca28572f27":[12,0,35,11,0,1,3],
-"struct_nodes_1_1_factor_oracle2_1_1_node_1_1_state.html#a34785f8422f07f8abd9732e0f74f1d56":[12,0,35,11,0,1,1]
+"struct_nodes_1_1_empty_value_mapping_1_1_node.html#a3818d4afb3d142b593c891c29d4b4477":[12,0,35,8,0,1]
 };

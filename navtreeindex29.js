@@ -1,9 +1,5 @@
 var NAVTREEINDEX29 =
 {
-"class_protocols_1_1_w_s_protocol_settings_widget.html#aa4b9ec2452f8ab8dda02c8c4365e93b0":[12,0,42,87,4],
-"class_protocols_1_1_w_s_protocol_settings_widget.html#af3ef13cd37a34a9e3c406242b0b54ce2":[12,0,42,87,7],
-"class_protocols_1_1_websocket_client_widget.html":[12,0,42,61],
-"class_protocols_1_1_websocket_client_widget.html#a43a39b558da096ae636c25bc44e9ce79":[12,0,42,61,1],
 "class_protocols_1_1_websocket_client_widget.html#ab552fa19082414b9c16eb945778eb42c":[12,0,42,61,2],
 "class_protocols_1_1_websocket_client_widget.html#adc5a45775f3ca39d3b6f00e7b90d46ff":[12,0,42,61,0],
 "class_protocols_1_1_websocket_server_widget.html":[12,0,42,62],
@@ -249,5 +245,9 @@ var NAVTREEINDEX29 =
 "class_scenario_1_1_c_s_p_coherency_checker_list.html":[12,0,47,190],
 "class_scenario_1_1_c_s_p_coherency_checker_list.html#a97c263dea263a1cb887f333774baafe5":[12,0,47,190,0],
 "class_scenario_1_1_central_interval_display.html":[12,0,47,148],
-"class_scenario_1_1_central_interval_display.html#a1fea0bbfb4264e7ac53fbdbd23eff53f":[12,0,47,148,0]
+"class_scenario_1_1_central_interval_display.html#a1fea0bbfb4264e7ac53fbdbd23eff53f":[12,0,47,148,0],
+"class_scenario_1_1_central_interval_display.html#a21070cf4dfd51b16e84128a539f1d566":[12,0,47,148,3],
+"class_scenario_1_1_central_interval_display.html#a3d82d1f634490c76b28df9766b41ec5c":[12,0,47,148,12],
+"class_scenario_1_1_central_interval_display.html#a4313ccdd57b9a0b7adf4c3f956136d4d":[12,0,47,148,9],
+"class_scenario_1_1_central_interval_display.html#a741266d2e937e7ee51e580d10a4d4f9c":[12,0,47,148,1]
 };

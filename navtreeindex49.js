@@ -1,5 +1,13 @@
 var NAVTREEINDEX49 =
 {
+"classscore_1_1_skin.html#a496fb190b894bb81a5eeb702dde962c0":[12,0,48,188,16],
+"classscore_1_1_skin.html#a4a77c5c5e70740792fbecbca94ec4e0d":[12,0,48,188,34],
+"classscore_1_1_skin.html#a4b650545f7e881823c4e3ffb438ee4a1":[12,0,48,188,83],
+"classscore_1_1_skin.html#a4c38ee6c9e33ab8b8eb2f90f93db5f75":[12,0,48,188,52],
+"classscore_1_1_skin.html#a4d75fc29253c11908e8e50a2e0e06cef":[12,0,48,188,1],
+"classscore_1_1_skin.html#a4ee95d8fd8d78ec328808095e3adc084":[12,0,48,188,31],
+"classscore_1_1_skin.html#a535427f749a529f9532338349cba6a3d":[12,0,48,188,26],
+"classscore_1_1_skin.html#a5663b052b3309193752e913e4160ca8b":[12,0,48,188,63],
 "classscore_1_1_skin.html#a58bf0e41d6e39bb00074c45f949828c0":[12,0,48,188,27],
 "classscore_1_1_skin.html#a59d492dd422abd52adf85274a18cee06":[12,0,48,188,32],
 "classscore_1_1_skin.html#a5a98612cbb0eaa27a713d592f58bd9e8":[12,0,48,188,71],
@@ -241,13 +249,5 @@ var NAVTREEINDEX49 =
 "classscore_1_1dynvector__impl.html#ad93baedb0e0aa1f104bf32be09db71aa":[12,0,48,251,12],
 "classscore_1_1dynvector__impl.html#ae8d4e1d6df1b92ca61335087bd5bf12f":[12,0,48,251,1],
 "classscore_1_1dynvector__impl.html#aefe3a49514a13898d4f7583f28a5b7e0":[12,0,48,251,4],
-"classscore_1_1gfx_1_1_camera_node.html":[12,0,48,2,69],
-"classscore_1_1gfx_1_1_camera_node.html#a076c167ada442598a0e0c6bfdf3f4b1c":[12,0,48,2,69,2],
-"classscore_1_1gfx_1_1_camera_node.html#a3d08fc1154072cbd13b8f885c41968ac":[12,0,48,2,69,5],
-"classscore_1_1gfx_1_1_camera_node.html#a6afa41d63b3683e323768c8b978ec65e":[12,0,48,2,69,3],
-"classscore_1_1gfx_1_1_camera_node.html#a7f012344e8ca01467bfc624f6cd75d84":[12,0,48,2,69,0],
-"classscore_1_1gfx_1_1_camera_node.html#a9f0217729e92e7ab108af0a0aa96579d":[12,0,48,2,69,1],
-"classscore_1_1gfx_1_1_camera_node.html#ade4dde1635ec25bca1ce491935626466":[12,0,48,2,69,6],
-"classscore_1_1gfx_1_1_camera_node.html#ae9fd49ae39b8e0a412de15212d6e18eb":[12,0,48,2,69,4],
-"classscore_1_1gfx_1_1_custom_mesh.html":[12,0,48,2,3]
+"classscore_1_1gfx_1_1_camera_node.html":[12,0,48,2,69]
 };

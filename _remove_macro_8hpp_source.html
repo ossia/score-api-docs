@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('_remove_macro_8hpp_source.html',''); i
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      }</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<span class="keyword">auto</span> ev = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code" href="class_scenario_1_1_event_model.html">Scenario::EventModel</a>*<span class="keyword">&gt;</span>(obj.data()))</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">if</span>(ev-&gt;condition().childCount() &gt; 0)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">if</span>(ev-&gt;active())</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        {</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;          macro.submit(<span class="keyword">new</span> SetCondition{*ev, <a class="code" href="class_tree_node.html">State::Expression</a>{}});</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>

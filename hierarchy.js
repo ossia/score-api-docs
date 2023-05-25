@@ -1200,8 +1200,8 @@ var hierarchy =
           [ "Process::InspectorWidgetDelegateFactory_T< ProcessModel, PdWidget >", "class_process_1_1_inspector_widget_delegate_factory___t.html", [
             [ "Pd::InspectorFactory", "class_pd_1_1_inspector_factory.html", null ]
           ] ],
-          [ "Process::DefaultInspectorWidgetDelegateFactory", "class_process_1_1_default_inspector_widget_delegate_factory.html", null ],
-          [ "Process::InspectorWidgetDelegateFactory_T< Process_T, Widget_T >", "class_process_1_1_inspector_widget_delegate_factory___t.html", null ]
+          [ "Process::InspectorWidgetDelegateFactory_T< Process_T, Widget_T >", "class_process_1_1_inspector_widget_delegate_factory___t.html", null ],
+          [ "Scenario::InspectorWidgetDelegateFactory", "class_scenario_1_1_inspector_widget_delegate_factory.html", null ]
         ] ],
         [ "Scenario::IntervalInspectorFactory", "class_scenario_1_1_interval_inspector_factory.html", null ],
         [ "Scenario::ScenarioInspectorWidgetFactoryWrapper", "class_scenario_1_1_scenario_inspector_widget_factory_wrapper.html", null ],
@@ -1958,8 +1958,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Patternist::ProcessModel >", "class_path.html", null ],
@@ -3173,6 +3173,35 @@ var hierarchy =
       [ "Inspector::VBoxLayout", "class_inspector_1_1_v_box_layout.html", null ]
     ] ],
     [ "QWidget", null, [
+      [ "Process::InspectorWidgetDelegate_T< Automation::ProcessModel >", "class_process_1_1_inspector_widget_delegate___t.html", [
+        [ "Automation::InspectorWidget", "class_automation_1_1_inspector_widget.html", null ]
+      ] ],
+      [ "Process::InspectorWidgetDelegate_T< Sound::ProcessModel >", "class_process_1_1_inspector_widget_delegate___t.html", [
+        [ "Media::Sound::InspectorWidget", "class_media_1_1_sound_1_1_inspector_widget.html", null ]
+      ] ],
+      [ "Process::InspectorWidgetDelegate_T< Model >", "class_process_1_1_inspector_widget_delegate___t.html", [
+        [ "Media::Merger::InspectorWidget", "class_media_1_1_merger_1_1_inspector_widget.html", null ],
+        [ "Media::Step::InspectorWidget", "class_media_1_1_step_1_1_inspector_widget.html", null ]
+      ] ],
+      [ "Process::InspectorWidgetDelegate_T< Interpolation::ProcessModel >", "class_process_1_1_inspector_widget_delegate___t.html", [
+        [ "Interpolation::InspectorWidget", "class_interpolation_1_1_inspector_widget.html", null ]
+      ] ],
+      [ "Process::InspectorWidgetDelegate_T< Pd::ProcessModel >", "class_process_1_1_inspector_widget_delegate___t.html", [
+        [ "Pd::PdWidget", "class_pd_1_1_pd_widget.html", null ]
+      ] ],
+      [ "Process::InspectorWidgetDelegate_T< Midi::ProcessModel >", "class_process_1_1_inspector_widget_delegate___t.html", [
+        [ "Midi::InspectorWidget", "class_midi_1_1_inspector_widget.html", null ]
+      ] ],
+      [ "Process::InspectorWidgetDelegate_T< ProcessModel >", "class_process_1_1_inspector_widget_delegate___t.html", [
+        [ "Mapping::InspectorWidget", "class_mapping_1_1_inspector_widget.html", null ],
+        [ "Patternist::InspectorWidget", "class_patternist_1_1_inspector_widget.html", null ]
+      ] ],
+      [ "Process::InspectorWidgetDelegate_T< Gradient::ProcessModel >", "class_process_1_1_inspector_widget_delegate___t.html", [
+        [ "Gradient::InspectorWidget", "class_gradient_1_1_inspector_widget.html", null ]
+      ] ],
+      [ "Process::InspectorWidgetDelegate_T< Gfx::Video::Model >", "class_process_1_1_inspector_widget_delegate___t.html", [
+        [ "Gfx::Video::InspectorWidget", "class_gfx_1_1_video_1_1_inspector_widget.html", null ]
+      ] ],
       [ "State::NumericDomainWidget< float >", "class_state_1_1_numeric_domain_widget.html", null ],
       [ "WidgetWrapper< Explorer::AddressSettingsWidget >", "class_widget_wrapper.html", null ],
       [ "Dataflow::PortTooltip", "class_dataflow_1_1_port_tooltip.html", null ],
@@ -3250,39 +3279,7 @@ var hierarchy =
       [ "Mixer::AudioBusWidget", "class_mixer_1_1_audio_bus_widget.html", null ],
       [ "Mixer::AudioDeviceSlider", "class_mixer_1_1_audio_device_slider.html", null ],
       [ "Pd::UiWrapper", "struct_pd_1_1_ui_wrapper.html", null ],
-      [ "Process::InspectorWidget", "class_process_1_1_inspector_widget.html", null ],
-      [ "Process::InspectorWidgetDelegate", "class_process_1_1_inspector_widget_delegate.html", [
-        [ "Process::InspectorWidgetDelegate_T< Automation::ProcessModel >", "class_process_1_1_inspector_widget_delegate___t.html", [
-          [ "Automation::InspectorWidget", "class_automation_1_1_inspector_widget.html", null ]
-        ] ],
-        [ "Process::InspectorWidgetDelegate_T< Sound::ProcessModel >", "class_process_1_1_inspector_widget_delegate___t.html", [
-          [ "Media::Sound::InspectorWidget", "class_media_1_1_sound_1_1_inspector_widget.html", null ]
-        ] ],
-        [ "Process::InspectorWidgetDelegate_T< Model >", "class_process_1_1_inspector_widget_delegate___t.html", [
-          [ "Media::Merger::InspectorWidget", "class_media_1_1_merger_1_1_inspector_widget.html", null ],
-          [ "Media::Step::InspectorWidget", "class_media_1_1_step_1_1_inspector_widget.html", null ]
-        ] ],
-        [ "Process::InspectorWidgetDelegate_T< Interpolation::ProcessModel >", "class_process_1_1_inspector_widget_delegate___t.html", [
-          [ "Interpolation::InspectorWidget", "class_interpolation_1_1_inspector_widget.html", null ]
-        ] ],
-        [ "Process::InspectorWidgetDelegate_T< Pd::ProcessModel >", "class_process_1_1_inspector_widget_delegate___t.html", [
-          [ "Pd::PdWidget", "class_pd_1_1_pd_widget.html", null ]
-        ] ],
-        [ "Process::InspectorWidgetDelegate_T< Midi::ProcessModel >", "class_process_1_1_inspector_widget_delegate___t.html", [
-          [ "Midi::InspectorWidget", "class_midi_1_1_inspector_widget.html", null ]
-        ] ],
-        [ "Process::InspectorWidgetDelegate_T< ProcessModel >", "class_process_1_1_inspector_widget_delegate___t.html", [
-          [ "Mapping::InspectorWidget", "class_mapping_1_1_inspector_widget.html", null ],
-          [ "Patternist::InspectorWidget", "class_patternist_1_1_inspector_widget.html", null ]
-        ] ],
-        [ "Process::InspectorWidgetDelegate_T< Gradient::ProcessModel >", "class_process_1_1_inspector_widget_delegate___t.html", [
-          [ "Gradient::InspectorWidget", "class_gradient_1_1_inspector_widget.html", null ]
-        ] ],
-        [ "Process::InspectorWidgetDelegate_T< Gfx::Video::Model >", "class_process_1_1_inspector_widget_delegate___t.html", [
-          [ "Gfx::Video::InspectorWidget", "class_gfx_1_1_video_1_1_inspector_widget.html", null ]
-        ] ],
-        [ "Process::InspectorWidgetDelegate_T< Process_T >", "class_process_1_1_inspector_widget_delegate___t.html", null ]
-      ] ],
+      [ "Process::InspectorWidgetDelegate_T< Process_T >", "class_process_1_1_inspector_widget_delegate___t.html", null ],
       [ "Process::PortListWidget", "class_process_1_1_port_list_widget.html", null ],
       [ "Protocols::RateWidget", "class_protocols_1_1_rate_widget.html", null ],
       [ "Protocols::SerialWidget", "class_protocols_1_1_serial_widget.html", null ],

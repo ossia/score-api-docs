@@ -3,6 +3,7 @@ var class_scenario_1_1_event_model =
     [ "StateIdVec", "class_scenario_1_1_event_model.html#a7a77597198e93e7f7ffe1bf0affab325", null ],
     [ "EventModel", "class_scenario_1_1_event_model.html#aaced3f26e0c68dc5590ecc01fcb90b39", null ],
     [ "EventModel", "class_scenario_1_1_event_model.html#af36f397021fccc84158762b609400320", null ],
+    [ "active", "class_scenario_1_1_event_model.html#a70365432fddb74c0bac37d3ba93305ae", null ],
     [ "addState", "class_scenario_1_1_event_model.html#acf7000b9fc442298fd2abbc77cffe70d", null ],
     [ "changeTimeSync", "class_scenario_1_1_event_model.html#a661c57928c2a31ff6450951b5dedebde", null ],
     [ "clearStates", "class_scenario_1_1_event_model.html#a7635288bb625bf68be7304b5c00a1fb2", null ],

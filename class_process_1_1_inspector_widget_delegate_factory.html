@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('class_process_1_1_inspector_widget_del
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_process_1_1_inspector_widget_delegate_factory-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Process::InspectorWidgetDelegateFactory Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -113,8 +113,8 @@ Inheritance diagram for Process::InspectorWidgetDelegateFactory:</div>
 <area href="class_process_1_1_inspector_widget_delegate_factory___t.html" alt="Process::InspectorWidgetDelegateFactory_T&lt; Model, InspectorWidget &gt;" shape="rect" coords="0,168,466,192"/>
 <area href="class_process_1_1_inspector_widget_delegate_factory___t.html" alt="Process::InspectorWidgetDelegateFactory_T&lt; ProcessModel, InspectorWidget &gt;" shape="rect" coords="952,168,1418,192"/>
 <area href="class_process_1_1_inspector_widget_delegate_factory___t.html" alt="Process::InspectorWidgetDelegateFactory_T&lt; ProcessModel, PdWidget &gt;" shape="rect" coords="1904,168,2370,192"/>
-<area href="class_process_1_1_default_inspector_widget_delegate_factory.html" alt="Process::DefaultInspectorWidgetDelegateFactory" shape="rect" coords="2380,168,2846,192"/>
-<area href="class_process_1_1_inspector_widget_delegate_factory___t.html" alt="Process::InspectorWidgetDelegateFactory_T&lt; Process_T, Widget_T &gt;" shape="rect" coords="2856,168,3322,192"/>
+<area href="class_process_1_1_inspector_widget_delegate_factory___t.html" alt="Process::InspectorWidgetDelegateFactory_T&lt; Process_T, Widget_T &gt;" shape="rect" coords="2380,168,2846,192"/>
+<area href="class_scenario_1_1_inspector_widget_delegate_factory.html" alt="Scenario::InspectorWidgetDelegateFactory" shape="rect" coords="2856,168,3322,192"/>
 <area href="class_gfx_1_1_video_1_1_inspector_factory.html" alt="Gfx::Video::InspectorFactory" shape="rect" coords="476,224,942,248"/>
 <area href="class_media_1_1_merger_1_1_inspector_factory.html" alt="Media::Merger::InspectorFactory" shape="rect" coords="476,280,942,304"/>
 <area href="class_media_1_1_step_1_1_inspector_factory.html" alt="Media::Step::InspectorFactory" shape="rect" coords="476,336,942,360"/>
@@ -131,15 +131,18 @@ Inheritance diagram for Process::InspectorWidgetDelegateFactory:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa9098cccb4c351454694228d5b2cdc08"><td class="memItemLeft" align="right" valign="top"><a id="aa9098cccb4c351454694228d5b2cdc08"></a>
-virtual QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>make_process</b> (const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;doc, QWidget *parent) const =0</td></tr>
-<tr class="separator:aa9098cccb4c351454694228d5b2cdc08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae77adb1324a469f417c50aea57eed014"><td class="memItemLeft" align="right" valign="top"><a id="ae77adb1324a469f417c50aea57eed014"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>matches_process</b> (const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;) const =0</td></tr>
-<tr class="separator:ae77adb1324a469f417c50aea57eed014"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfb15031d8e6a17a049fb964e70de003"><td class="memItemLeft" align="right" valign="top"><a id="acfb15031d8e6a17a049fb964e70de003"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>matches_process</b> (const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;proc, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;doc, QWidget *parent) const</td></tr>
-<tr class="separator:acfb15031d8e6a17a049fb964e70de003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f17e69206dc0c731af6c519aedb9d50"><td class="memItemLeft" align="right" valign="top"><a id="a5f17e69206dc0c731af6c519aedb9d50"></a>
+virtual QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>makeProcess</b> (const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;doc, QWidget *parent) const =0</td></tr>
+<tr class="separator:a5f17e69206dc0c731af6c519aedb9d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92ac8e79eabe56a38a1d00ff95ff960b"><td class="memItemLeft" align="right" valign="top"><a id="a92ac8e79eabe56a38a1d00ff95ff960b"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>matchesProcess</b> (const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;) const =0</td></tr>
+<tr class="separator:a92ac8e79eabe56a38a1d00ff95ff960b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc675a4224876b9b70df424c567678e3"><td class="memItemLeft" align="right" valign="top"><a id="afc675a4224876b9b70df424c567678e3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>addButtons</b> (const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;doc, QBoxLayout *layout, QWidget *parent) const</td></tr>
+<tr class="separator:afc675a4224876b9b70df424c567678e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a007dab656e722eb8d4c8821d4bf556a7"><td class="memItemLeft" align="right" valign="top"><a id="a007dab656e722eb8d4c8821d4bf556a7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>matchesProcess</b> (const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;proc, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;doc, QWidget *parent) const</td></tr>
+<tr class="separator:a007dab656e722eb8d4c8821d4bf556a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39b673d25042f60e7542a79fa28a05f9"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_inspector_widget_delegate_factory.html#a39b673d25042f60e7542a79fa28a05f9">make</a> (const InspectedObjects &amp;objects, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;doc, QWidget *parent) const final override</td></tr>
 <tr class="memdesc:a39b673d25042f60e7542a79fa28a05f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">makeWidget Makes a widget for the inspector from an object  <a href="class_process_1_1_inspector_widget_delegate_factory.html#a39b673d25042f60e7542a79fa28a05f9">More...</a><br /></td></tr>
 <tr class="separator:a39b673d25042f60e7542a79fa28a05f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,11 +159,11 @@ virtual <a class="el" href="class_uuid_key.html">InterfaceKey</a>&#160;</td><td 
 <tr class="memdesc:a993744914ec2a9cdf05f07f6f1643d55 inherit pub_methods_classscore_1_1_interface_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifies an interface uniquely. <br /></td></tr>
 <tr class="separator:a993744914ec2a9cdf05f07f6f1643d55 inherit pub_methods_classscore_1_1_interface_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
-Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:a898ee1f14a4022c762dec171a1bb81be"><td class="memItemLeft" align="right" valign="top"><a id="a898ee1f14a4022c762dec171a1bb81be"></a>
-static QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>wrap</b> (const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;process, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;doc, QWidget *widg, QWidget *parent)</td></tr>
-<tr class="separator:a898ee1f14a4022c762dec171a1bb81be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a651e75aa44fe33a5d034da8c596e1a99"><td class="memItemLeft" align="right" valign="top"><a id="a651e75aa44fe33a5d034da8c596e1a99"></a>
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>wrap</b> (const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;process, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;doc, QWidget *widg, QWidget *parent) const</td></tr>
+<tr class="separator:a651e75aa44fe33a5d034da8c596e1a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>

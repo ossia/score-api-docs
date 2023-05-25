@@ -1,5 +1,16 @@
 var NAVTREEINDEX61 =
 {
+"struct_execution_1_1_settings_1_1_commit_policies.html#a87b999e3cb232b1ed59ba359ac9cc024":[12,0,12,1,3,1],
+"struct_execution_1_1_settings_1_1_commit_policies.html#aa4186857b39a9f84e481176cc7a740b7":[12,0,12,1,3,0],
+"struct_execution_1_1_settings_1_1_commit_policies.html#abc777bb8c08676f662db097aed0012de":[12,0,12,1,3,4],
+"struct_execution_1_1_settings_1_1_merging_policies.html":[12,0,12,1,2],
+"struct_execution_1_1_settings_1_1_merging_policies.html#a9baaf53d1574b2ab796789f2dfffa2a2":[12,0,12,1,2,3],
+"struct_execution_1_1_settings_1_1_merging_policies.html#abbfddb72b9a671d05426003f807d640e":[12,0,12,1,2,0],
+"struct_execution_1_1_settings_1_1_merging_policies.html#ad27b8a093f61662a732749d0d0afea16":[12,0,12,1,2,1],
+"struct_execution_1_1_settings_1_1_merging_policies.html#af15f8931630e7e619e5329a683f15215":[12,0,12,1,2,2],
+"struct_execution_1_1_settings_1_1_ordering_policies.html":[12,0,12,1,1],
+"struct_execution_1_1_settings_1_1_ordering_policies.html#a9f4cfc3df9473e938fde99af861fc92e":[12,0,12,1,1,2],
+"struct_execution_1_1_settings_1_1_ordering_policies.html#aa78f827d0efc4eb167f4f307e2f9e4be":[12,0,12,1,1,0],
 "struct_execution_1_1_settings_1_1_ordering_policies.html#ad2478a2cc6646aca4318d98560047c0d":[12,0,12,1,1,1],
 "struct_execution_1_1_settings_1_1_ordering_policies.html#aedc6a5f5786d3c64950b556e8567b3e6":[12,0,12,1,1,3],
 "struct_execution_1_1_settings_1_1_ordering_policies.html#afccdaa11e11350698b89460f7d1510b0":[12,0,12,1,1,4],
@@ -238,16 +249,5 @@ var NAVTREEINDEX61 =
 "struct_gfx_1_1_shader_source.html":[12,0,18,39],
 "struct_gfx_1_1_shader_source.html#a07923f9dd253d54b4a222e8fef078c89":[12,0,18,39,12],
 "struct_gfx_1_1_shader_source.html#a0ff7b020926bd5c57ec80fce82104f6c":[12,0,18,39,5],
-"struct_gfx_1_1_shader_source.html#a24d69597743b70d3a2398ad7f818400a":[12,0,18,39,9],
-"struct_gfx_1_1_shader_source.html#a29fddbbfb5434dad6f420cf481a1531d":[12,0,18,39,15],
-"struct_gfx_1_1_shader_source.html#a2a50ab4b9c9a6b0f955036e811b13e5c":[12,0,18,39,8],
-"struct_gfx_1_1_shader_source.html#a2d35b8cc95cd2f502a5249f3fb85b469":[12,0,18,39,2],
-"struct_gfx_1_1_shader_source.html#a3ea804c1e0f81f62b9e60b7138fe201d":[12,0,18,39,13],
-"struct_gfx_1_1_shader_source.html#a4fd49f4b4b423b8f6bbefbb84d5adb97":[12,0,18,39,14],
-"struct_gfx_1_1_shader_source.html#a6ae4d546290a3d79ac44850c46a3e87e":[12,0,18,39,3],
-"struct_gfx_1_1_shader_source.html#a704f926487dfe237470cfd64f3e985a0":[12,0,18,39,11],
-"struct_gfx_1_1_shader_source.html#a729e290fbebbc5e5a8ac8402408541af":[12,0,18,39,16],
-"struct_gfx_1_1_shader_source.html#a78d310257a84061a72630e17ff900e48":[12,0,18,39,7],
-"struct_gfx_1_1_shader_source.html#a9a26dd9a7a815c4de8c717c9f6c78735":[12,0,18,39,1],
-"struct_gfx_1_1_shader_source.html#ab7a09e6580ddc10fa2c8092ef77eb5cf":[12,0,18,39,10]
+"struct_gfx_1_1_shader_source.html#a24d69597743b70d3a2398ad7f818400a":[12,0,18,39,9]
 };
