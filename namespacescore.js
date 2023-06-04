@@ -5,7 +5,8 @@ var namespacescore =
     ] ],
     [ "detail", null, [
       [ "dereference_visitor", "structscore_1_1detail_1_1dereference__visitor.html", "structscore_1_1detail_1_1dereference__visitor" ],
-      [ "make_subtype_variant", "_subtype_variant_8hpp.html#aee072980eca99fee981ca1df4a48ca29", null ],
+      [ "make_subtype_variant", "_subtype_variant_8hpp.html#acae589892f628ab02790624554453958", null ],
+      [ "make_subtype_variant", "_subtype_variant_8hpp.html#a2748317ddd4b2269387dddd0d031ab32", null ],
       [ "make_subtype_variant", "_subtype_variant_8hpp.html#affe933e4b12b32f227dbf0d28f415e9b", null ]
     ] ],
     [ "gfx", "namespacescore_1_1gfx.html", "namespacescore_1_1gfx" ],
