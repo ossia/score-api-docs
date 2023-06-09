@@ -617,7 +617,7 @@ $(document).ready(function(){initNavTree('_gpu_utils_8hpp_source.html',''); init
 <div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    {</div>
 <div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;      <span class="keywordflow">if</span> constexpr(requires { C::texture; })</div>
 <div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;      {</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        QRhiTextureSubresourceUploadDescription sub{command.data, command.size};</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        QRhiTextureSubresourceUploadDescription sub(command.data, command.size);</div>
 <div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;        res.uploadTexture(</div>
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;            <span class="keyword">reinterpret_cast&lt;</span>QRhiTexture*<span class="keyword">&gt;</span>(command.handle),</div>
 <div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;            QRhiTextureUploadDescription{{0, 0, sub}});</div>
