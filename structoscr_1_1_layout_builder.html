@@ -124,21 +124,30 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>outputs_type</b> = t
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a536f5d846d7e20d5352dbe5da6351740"><td class="memItemLeft" align="right" valign="top"><a id="a536f5d846d7e20d5352dbe5da6351740"></a>
-QGraphicsItem *&#160;</td><td class="memItemRight" valign="bottom"><b>createControl</b> (auto... member)</td></tr>
-<tr class="separator:a536f5d846d7e20d5352dbe5da6351740"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2969ebc8b7da07f77456b530c861f48"><td class="memTemplParams" colspan="2"><a id="ae2969ebc8b7da07f77456b530c861f48"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ae2969ebc8b7da07f77456b530c861f48"><td class="memTemplItemLeft" align="right" valign="top">QGraphicsItem *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>createWidget</b> (const T &amp;item)</td></tr>
-<tr class="separator:ae2969ebc8b7da07f77456b530c861f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92ca222ff55959a57235f5e3027bcf04"><td class="memTemplParams" colspan="2"><a id="a92ca222ff55959a57235f5e3027bcf04"></a>
-template&lt;typename... T&gt; </td></tr>
-<tr class="memitem:a92ca222ff55959a57235f5e3027bcf04"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>requires</b> (sizeof...(T) &gt; 1) QGraphicsItem *createWidget(T... recursive_members)</td></tr>
-<tr class="separator:a92ca222ff55959a57235f5e3027bcf04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8e4320618ce7edec7fdf18c7cec0e86"><td class="memTemplParams" colspan="2"><a id="aa8e4320618ce7edec7fdf18c7cec0e86"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aa8e4320618ce7edec7fdf18c7cec0e86"><td class="memTemplItemLeft" align="right" valign="top">QGraphicsItem *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>createCustom</b> (T &amp;item)</td></tr>
-<tr class="separator:aa8e4320618ce7edec7fdf18c7cec0e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b3df3d8b675ac6174b095e4f0a3d9b4"><td class="memTemplParams" colspan="2"><a id="a4b3df3d8b675ac6174b095e4f0a3d9b4"></a>
+template&lt;typename Item &gt; </td></tr>
+<tr class="memitem:a4b3df3d8b675ac6174b095e4f0a3d9b4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setupControl</b> (<a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> *inl, Item &amp;item)</td></tr>
+<tr class="separator:a4b3df3d8b675ac6174b095e4f0a3d9b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d45ddd4e056c7b2a1180356f660123b"><td class="memTemplParams" colspan="2"><a id="a6d45ddd4e056c7b2a1180356f660123b"></a>
+template&lt;typename Item &gt; </td></tr>
+<tr class="memitem:a6d45ddd4e056c7b2a1180356f660123b"><td class="memTemplItemLeft" align="right" valign="top">QGraphicsItem *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>createControl</b> (Item &amp;item, auto... member)</td></tr>
+<tr class="separator:a6d45ddd4e056c7b2a1180356f660123b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9c42e17f9f56830b7c47f876205f23d"><td class="memTemplParams" colspan="2"><a id="aa9c42e17f9f56830b7c47f876205f23d"></a>
+template&lt;typename Item , typename T &gt; </td></tr>
+<tr class="memitem:aa9c42e17f9f56830b7c47f876205f23d"><td class="memTemplItemLeft" align="right" valign="top">QGraphicsItem *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>createWidget</b> (Item &amp;it, const T &amp;member)</td></tr>
+<tr class="separator:aa9c42e17f9f56830b7c47f876205f23d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64754542820001cd88f91f32fd36403d"><td class="memTemplParams" colspan="2"><a id="a64754542820001cd88f91f32fd36403d"></a>
+template&lt;typename Item , typename... T&gt; </td></tr>
+<tr class="memitem:a64754542820001cd88f91f32fd36403d"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>requires</b> (sizeof...(T) &gt; 1) QGraphicsItem *createWidget(Item &amp;item</td></tr>
+<tr class="separator:a64754542820001cd88f91f32fd36403d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a805a7c6f5e13be6c07fdf6ac65e7ae93"><td class="memTemplParams" colspan="2"><a id="a805a7c6f5e13be6c07fdf6ac65e7ae93"></a>
+template&lt;typename Item &gt; </td></tr>
+<tr class="memitem:a805a7c6f5e13be6c07fdf6ac65e7ae93"><td class="memTemplItemLeft" align="right" valign="top">QGraphicsItem *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>createCustom</b> (Item &amp;item)</td></tr>
+<tr class="separator:a805a7c6f5e13be6c07fdf6ac65e7ae93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33be24866481f77379a2ea35ea0f988f"><td class="memTemplParams" colspan="2"><a id="a33be24866481f77379a2ea35ea0f988f"></a>
+template&lt;typename Item &gt; </td></tr>
+<tr class="memitem:a33be24866481f77379a2ea35ea0f988f"><td class="memTemplItemLeft" align="right" valign="top">QGraphicsItem *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>createCustomControl</b> (Item &amp;item, auto... member)</td></tr>
+<tr class="separator:a33be24866481f77379a2ea35ea0f988f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a327a621f23d9b4a4ee57b49ccf6da22b"><td class="memTemplParams" colspan="2"><a id="a327a621f23d9b4a4ee57b49ccf6da22b"></a>
 template&lt;typename Item &gt; </td></tr>
 <tr class="memitem:a327a621f23d9b4a4ee57b49ccf6da22b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>subLayout</b> (Item &amp;item, <a class="el" href="classscore_1_1_graphics_layout.html">score::GraphicsLayout</a> *new_l, auto... recursive_members)</td></tr>
@@ -154,12 +163,12 @@ QGraphicsItem *&#160;</td><td class="memItemRight" valign="bottom"><b>makePort</
 <tr class="memitem:ae0b00d1b1b060e9e8b5cd90b0bde3661 inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memItemLeft" align="right" valign="top"><a id="ae0b00d1b1b060e9e8b5cd90b0bde3661"></a>
 QGraphicsItem *&#160;</td><td class="memItemRight" valign="bottom"><b>makePort</b> (<a class="el" href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a> &amp;portModel)</td></tr>
 <tr class="separator:ae0b00d1b1b060e9e8b5cd90b0bde3661 inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c8a531fe85f3f7b0579f88ad816470d inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memItemLeft" align="right" valign="top"><a id="a7c8a531fe85f3f7b0579f88ad816470d"></a>
-QGraphicsItem *&#160;</td><td class="memItemRight" valign="bottom"><b>makeInlet</b> (int index)</td></tr>
-<tr class="separator:a7c8a531fe85f3f7b0579f88ad816470d inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03187f3daf3fd303219ff76d72b1721b inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memItemLeft" align="right" valign="top"><a id="a03187f3daf3fd303219ff76d72b1721b"></a>
-QGraphicsItem *&#160;</td><td class="memItemRight" valign="bottom"><b>makeOutlet</b> (int index)</td></tr>
-<tr class="separator:a03187f3daf3fd303219ff76d72b1721b inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdde739b34c4ed132de5e7961628bbc2 inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memItemLeft" align="right" valign="top"><a id="acdde739b34c4ed132de5e7961628bbc2"></a>
+std::pair&lt; <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> *, QGraphicsItem * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>makeInlet</b> (int index)</td></tr>
+<tr class="separator:acdde739b34c4ed132de5e7961628bbc2 inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefef28cc1814e9a4f511c589f7a5010d inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memItemLeft" align="right" valign="top"><a id="aefef28cc1814e9a4f511c589f7a5010d"></a>
+std::pair&lt; <a class="el" href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a> *, QGraphicsItem * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>makeOutlet</b> (int index)</td></tr>
+<tr class="separator:aefef28cc1814e9a4f511c589f7a5010d inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6cf7eb19c039a544a894ec871e3a3c5 inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memItemLeft" align="right" valign="top"><a id="ab6cf7eb19c039a544a894ec871e3a3c5"></a>
 QGraphicsItem *&#160;</td><td class="memItemRight" valign="bottom"><b>makeLabel</b> (std::string_view item)</td></tr>
 <tr class="separator:ab6cf7eb19c039a544a894ec871e3a3c5 inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,6 +196,11 @@ inputs_type&#160;</td><td class="memItemRight" valign="bottom"><b>temp_inputs</b
 <tr class="memitem:a86d20941681c5b2a3f2daa30cfc97470"><td class="memItemLeft" align="right" valign="top"><a id="a86d20941681c5b2a3f2daa30cfc97470"></a>
 outputs_type&#160;</td><td class="memItemRight" valign="bottom"><b>temp_outputs</b></td></tr>
 <tr class="separator:a86d20941681c5b2a3f2daa30cfc97470"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa434e4d301c8085e4a652c434dafb677"><td class="memItemLeft" align="right" valign="top"><a id="aa434e4d301c8085e4a652c434dafb677"></a>
+Info::ui *&#160;</td><td class="memItemRight" valign="bottom"><b>rootUi</b> {}</td></tr>
+<tr class="separator:aa434e4d301c8085e4a652c434dafb677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45a0c7e7548aaa84b35f3a2ea063a18b"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><b>recursive_members</b></td></tr>
+<tr class="separator:a45a0c7e7548aaa84b35f3a2ea063a18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_struct_process_1_1_layout_builder_base"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_process_1_1_layout_builder_base')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="struct_process_1_1_layout_builder_base.html">Process::LayoutBuilderBase</a></td></tr>
 <tr class="memitem:a145049cc33341cb017c5608e8d63e5fb inherit pub_attribs_struct_process_1_1_layout_builder_base"><td class="memItemLeft" align="right" valign="top"><a id="a145049cc33341cb017c5608e8d63e5fb"></a>
 QObject &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>context</b></td></tr>
@@ -210,6 +224,25 @@ const Process::Outlets &amp;&#160;</td><td class="memItemRight" valign="bottom">
 std::vector&lt; <a class="el" href="classscore_1_1_graphics_layout.html">score::GraphicsLayout</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createdLayouts</b> {}</td></tr>
 <tr class="separator:a88846a62cd4735ee29785f0d4228a1f6 inherit pub_attribs_struct_process_1_1_layout_builder_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a45a0c7e7548aaa84b35f3a2ea063a18b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45a0c7e7548aaa84b35f3a2ea063a18b">&#9670;&nbsp;</a></span>recursive_members</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Info &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="structoscr_1_1_layout_builder.html">oscr::LayoutBuilder</a>&lt; Info &gt;::recursive_members</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="keywordflow">return</span> createControl(item, recursive_members...)</div>
+</div><!-- fragment -->
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="score-plugin-avnd_2_crousti_2_layer_8hpp_source.html">score-plugin-avnd/Crousti/Layer.hpp</a></li>
 </ul>

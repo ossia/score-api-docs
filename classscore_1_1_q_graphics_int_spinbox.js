@@ -11,7 +11,7 @@ var classscore_1_1_q_graphics_int_spinbox =
     [ "sliderReleased", "classscore_1_1_q_graphics_int_spinbox.html#a27609c365ad6ff130765cfccd6436301", null ],
     [ "unmap", "classscore_1_1_q_graphics_int_spinbox.html#ac910ee33d093b8d8226aa99f59138823", null ],
     [ "value", "classscore_1_1_q_graphics_int_spinbox.html#ae06aff72a9fcc539583dce19cd2fb869", null ],
-    [ "DefaultGraphicsKnobImpl", "classscore_1_1_q_graphics_int_spinbox.html#aa36395e04be7d6f7171dcd890c1f691c", null ],
+    [ "DefaultGraphicsSpinboxImpl", "classscore_1_1_q_graphics_int_spinbox.html#a2c2f8d96b1501436d694dcf7c3436b62", null ],
     [ "max", "classscore_1_1_q_graphics_int_spinbox.html#ad78b27cb71f6b8c7c6831a3653a0ac6f", null ],
     [ "min", "classscore_1_1_q_graphics_int_spinbox.html#accc0458afe384b5e5f7d8ce9d5989ce6", null ],
     [ "moving", "classscore_1_1_q_graphics_int_spinbox.html#a1268dbb545d81a90f17d52d31428c5c9", null ]

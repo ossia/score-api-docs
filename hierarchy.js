@@ -627,6 +627,7 @@ var hierarchy =
     [ "Process::DefaultControlLayouts", "struct_process_1_1_default_control_layouts.html", null ],
     [ "score::DefaultGraphicsKnobImpl", "structscore_1_1_default_graphics_knob_impl.html", null ],
     [ "score::DefaultGraphicsSliderImpl", "structscore_1_1_default_graphics_slider_impl.html", null ],
+    [ "score::DefaultGraphicsSpinboxImpl", "structscore_1_1_default_graphics_spinbox_impl.html", null ],
     [ "DefaultRollbackStrategy", "struct_default_rollback_strategy.html", null ],
     [ "score::gfx::DefaultShaderMaterial", "structscore_1_1gfx_1_1_default_shader_material.html", null ],
     [ "score::delete_later< T >", "structscore_1_1delete__later.html", null ],
@@ -841,6 +842,7 @@ var hierarchy =
     ] ],
     [ "Media::FloatPair", "struct_media_1_1_float_pair.html", null ],
     [ "WidgetFactory::FloatRangeSlider", "struct_widget_factory_1_1_float_range_slider.html", null ],
+    [ "WidgetFactory::FloatRangeSpinBox", "struct_widget_factory_1_1_float_range_spin_box.html", null ],
     [ "WidgetFactory::FloatSpinBox", "struct_widget_factory_1_1_float_spin_box.html", null ],
     [ "score::FocusFacade", "structscore_1_1_focus_facade.html", null ],
     [ "foo", "classfoo.html", null ],
@@ -1054,8 +1056,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1958,8 +1960,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model >", "class_path.html", null ],
+    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Patternist::ProcessModel >", "class_path.html", null ],
@@ -2459,7 +2461,9 @@ var hierarchy =
       [ "Scenario::TimeSyncView", "class_scenario_1_1_time_sync_view.html", null ],
       [ "Scenario::TriggerView", "class_scenario_1_1_trigger_view.html", null ],
       [ "Spline::CurveItem", "class_spline_1_1_curve_item.html", null ],
-      [ "oscr::CustomItem< Item, Control >", "classoscr_1_1_custom_item.html", null ],
+      [ "oscr::CustomItem< Item, Control >", "classoscr_1_1_custom_item.html", [
+        [ "oscr::CustomControl< Item >", "classoscr_1_1_custom_control.html", null ]
+      ] ],
       [ "oscr::EdgeItem", "structoscr_1_1_edge_item.html", null ],
       [ "oscr::NodeItem", "structoscr_1_1_node_item.html", null ],
       [ "score::ArrowDialog", "classscore_1_1_arrow_dialog.html", [
@@ -2690,11 +2694,13 @@ var hierarchy =
                 ] ],
                 [ "Process::FloatKnob", "struct_process_1_1_float_knob.html", null ],
                 [ "Process::FloatRangeSlider", "struct_process_1_1_float_range_slider.html", null ],
+                [ "Process::FloatRangeSpinBox", "struct_process_1_1_float_range_spin_box.html", null ],
                 [ "Process::FloatSlider", "struct_process_1_1_float_slider.html", null ],
                 [ "Process::FloatSpinBox", "struct_process_1_1_float_spin_box.html", null ],
                 [ "Process::HSVSlider", "struct_process_1_1_h_s_v_slider.html", null ],
                 [ "Process::ImpulseButton", "struct_process_1_1_impulse_button.html", null ],
                 [ "Process::IntRangeSlider", "struct_process_1_1_int_range_slider.html", null ],
+                [ "Process::IntRangeSpinBox", "struct_process_1_1_int_range_spin_box.html", null ],
                 [ "Process::IntSlider", "struct_process_1_1_int_slider.html", null ],
                 [ "Process::IntSpinBox", "struct_process_1_1_int_spin_box.html", null ],
                 [ "Process::LineEdit", "struct_process_1_1_line_edit.html", null ],
@@ -2707,7 +2713,9 @@ var hierarchy =
                 [ "Process::XYSpinboxes", "struct_process_1_1_x_y_spinboxes.html", null ],
                 [ "Process::XYZSlider", "struct_process_1_1_x_y_z_slider.html", null ],
                 [ "Process::XYZSpinboxes", "struct_process_1_1_x_y_z_spinboxes.html", null ],
-                [ "oscr::CustomFloatControl< Node, FieldIndex >", "structoscr_1_1_custom_float_control.html", null ]
+                [ "oscr::CustomFloatControlBase", "structoscr_1_1_custom_float_control_base.html", [
+                  [ "oscr::CustomFloatControl< Node, FieldIndex >", "structoscr_1_1_custom_float_control.html", null ]
+                ] ]
               ] ],
               [ "Process::MidiInlet", "class_process_1_1_midi_inlet.html", null ],
               [ "Process::ValueInlet", "class_process_1_1_value_inlet.html", null ],

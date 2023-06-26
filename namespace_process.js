@@ -48,6 +48,8 @@ var namespace_process =
     [ "IntSlider", "struct_process_1_1_int_slider.html", "struct_process_1_1_int_slider" ],
     [ "IntRangeSlider", "struct_process_1_1_int_range_slider.html", "struct_process_1_1_int_range_slider" ],
     [ "FloatRangeSlider", "struct_process_1_1_float_range_slider.html", "struct_process_1_1_float_range_slider" ],
+    [ "IntRangeSpinBox", "struct_process_1_1_int_range_spin_box.html", "struct_process_1_1_int_range_spin_box" ],
+    [ "FloatRangeSpinBox", "struct_process_1_1_float_range_spin_box.html", "struct_process_1_1_float_range_spin_box" ],
     [ "IntSpinBox", "struct_process_1_1_int_spin_box.html", "struct_process_1_1_int_spin_box" ],
     [ "FloatSpinBox", "struct_process_1_1_float_spin_box.html", "struct_process_1_1_float_spin_box" ],
     [ "TimeChooser", "struct_process_1_1_time_chooser.html", "struct_process_1_1_time_chooser" ],
