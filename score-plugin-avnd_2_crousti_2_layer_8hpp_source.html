@@ -344,13 +344,13 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_layer_8h
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> constexpr(avnd::control_layout&lt;Item&gt;)</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    {</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;      <span class="comment">// Widget with some metadata.. FIXME</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">auto</span> widg = createWidget(item, recursive_members..., item.control))</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">auto</span> widg = createWidget(item, recursive_members..., item.model))</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        setupItem(item, *widg);</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    }</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> constexpr(avnd::custom_control_layout&lt;Item&gt;)</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    {</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;      <span class="comment">// Widget with some metadata.. FIXME</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">auto</span> widg = createCustomControl(item, recursive_members..., item.control))</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">auto</span> widg = createCustomControl(item, recursive_members..., item.model))</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        setupItem(item, *widg);</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    }</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> constexpr(avnd::custom_layout&lt;Item&gt;)</div>
