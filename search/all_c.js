@@ -90,7 +90,7 @@ var searchData=
   ['messagepolicy_1320',['MessagePolicy',['../struct_recording_1_1_message_policy.html',1,'Recording']]],
   ['messagerecorder_1321',['MessageRecorder',['../class_recording_1_1_message_recorder.html',1,'Recording']]],
   ['messages_1322',['messages',['../struct_explorer_1_1_selected_nodes.html#ae290430e3602a169ce75d658819a3a87',1,'Explorer::SelectedNodes::messages()'],['../class_automation_1_1_process_state.html#a8f13807af62d46f60b400caf2f1a94c9',1,'Automation::ProcessState::messages()'],['../struct_scenario_1_1_selected_nodes.html#a46bece1f2d2df2fb12699d6ae00d7e33',1,'Scenario::SelectedNodes::messages()'],['../class_process_state_data_interface.html#a4efb71b7d91fe681fd2769663ed50ab2',1,'ProcessStateDataInterface::messages() const']]],
-  ['messageschanged_1323',['messagesChanged',['../class_process_state_data_interface.html#a90b448c8b7009e11ad9a367340ffc08c',1,'ProcessStateDataInterface']]],
+  ['messageschanged_1323',['messagesChanged',['../class_process_state_data_interface.html#a70a9ce621a887c94096f610eaf8baa19',1,'ProcessStateDataInterface']]],
   ['messagespaneldelegate_1324',['MessagesPanelDelegate',['../classscore_1_1_messages_panel_delegate.html',1,'score']]],
   ['messagespaneldelegatefactory_1325',['MessagesPanelDelegateFactory',['../classscore_1_1_messages_panel_delegate_factory.html',1,'score']]],
   ['messagetreeview_1326',['MessageTreeView',['../class_scenario_1_1_message_tree_view.html',1,'Scenario']]],
