@@ -217,6 +217,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_port_factory___t.html">PortFactory_T</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_process_1_1_inlets.html">Inlets</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_process_1_1_outlets.html">Outlets</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_process_1_1pan__weight.html">pan_weight</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_port_widget_setup.html">PortWidgetSetup</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_port_list_widget.html">PortListWidget</a></td></tr>
@@ -385,15 +391,6 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a3efd145c8890b6d3bbe725a12b3ba946"><td class="memItemLeft" align="right" valign="top"><a id="a3efd145c8890b6d3bbe725a12b3ba946"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>MagnetismHandler</b> = std::function&lt; <a class="el" href="struct_process_1_1_magnetic_info.html">MagneticInfo</a>(const QObject *, <a class="el" href="struct_time_val.html">TimeVal</a>)&gt;</td></tr>
 <tr class="separator:a3efd145c8890b6d3bbe725a12b3ba946"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aced04ba1b8bd370b5cd81183b5b54f99"><td class="memItemLeft" align="right" valign="top"><a id="aced04ba1b8bd370b5cd81183b5b54f99"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>Inlets</b> = ossia::small_vector&lt; <a class="el" href="class_process_1_1_inlet.html">Process::Inlet</a> *, 4 &gt;</td></tr>
-<tr class="separator:aced04ba1b8bd370b5cd81183b5b54f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1fd4892932b11bcab9bb33976a6e626"><td class="memItemLeft" align="right" valign="top"><a id="aa1fd4892932b11bcab9bb33976a6e626"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>Outlets</b> = ossia::small_vector&lt; <a class="el" href="class_process_1_1_outlet.html">Process::Outlet</a> *, 4 &gt;</td></tr>
-<tr class="separator:aa1fd4892932b11bcab9bb33976a6e626"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7df8687df7e077c529bbefc1b5d86003"><td class="memItemLeft" align="right" valign="top"><a id="a7df8687df7e077c529bbefc1b5d86003"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>pan_weight</b> = ossia::small_vector&lt; double, 2 &gt;</td></tr>
-<tr class="separator:a7df8687df7e077c529bbefc1b5d86003"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81227ba0b6b371230862a35efac33ccf"><td class="memTemplParams" colspan="2"><a id="a81227ba0b6b371230862a35efac33ccf"></a>
 template&lt;typename Model_T &gt; </td></tr>
 <tr class="memitem:a81227ba0b6b371230862a35efac33ccf"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GenericDefaultLayerFactory</b> = <a class="el" href="class_process_1_1_layer_factory___t.html">LayerFactory_T</a>&lt; Model_T, <a class="el" href="struct_process_1_1default__t.html">default_t</a>, <a class="el" href="struct_process_1_1default__t.html">default_t</a>, <a class="el" href="struct_process_1_1default__t.html">default_t</a> &gt;</td></tr>
@@ -622,16 +619,16 @@ std::unique_ptr&lt; <a class="el" href="class_process_1_1_midi_outlet.html">Midi
 <tr class="memdesc:a535ae95f6170e17fce20ef59f292c707"><td class="mdescLeft">&#160;</td><td class="mdescRight">From a port, gives a name suitable for displaying in a process header.  <a href="namespace_process.html#a535ae95f6170e17fce20ef59f292c707">More...</a><br /></td></tr>
 <tr class="separator:a535ae95f6170e17fce20ef59f292c707"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a600ddde472c61ae519a0814382c3780b"><td class="memItemLeft" align="right" valign="top"><a id="a600ddde472c61ae519a0814382c3780b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>readPorts</b> (<a class="el" href="class_data_stream_reader.html">DataStreamReader</a> &amp;wr, const Process::Inlets &amp;ins, const Process::Outlets &amp;outs)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>readPorts</b> (<a class="el" href="class_data_stream_reader.html">DataStreamReader</a> &amp;wr, const <a class="el" href="struct_process_1_1_inlets.html">Process::Inlets</a> &amp;ins, const <a class="el" href="struct_process_1_1_outlets.html">Process::Outlets</a> &amp;outs)</td></tr>
 <tr class="separator:a600ddde472c61ae519a0814382c3780b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a937e35fe2e3d7f1aa9e2ee7c0764ee6c"><td class="memItemLeft" align="right" valign="top"><a id="a937e35fe2e3d7f1aa9e2ee7c0764ee6c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>writePorts</b> (<a class="el" href="class_data_stream_writer.html">DataStreamWriter</a> &amp;wr, const <a class="el" href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a> &amp;pl, Process::Inlets &amp;ins, Process::Outlets &amp;outs, QObject *parent)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>writePorts</b> (<a class="el" href="class_data_stream_writer.html">DataStreamWriter</a> &amp;wr, const <a class="el" href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a> &amp;pl, <a class="el" href="struct_process_1_1_inlets.html">Process::Inlets</a> &amp;ins, <a class="el" href="struct_process_1_1_outlets.html">Process::Outlets</a> &amp;outs, QObject *parent)</td></tr>
 <tr class="separator:a937e35fe2e3d7f1aa9e2ee7c0764ee6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5436a5a553584e083e0f75dc99319d1c"><td class="memItemLeft" align="right" valign="top"><a id="a5436a5a553584e083e0f75dc99319d1c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>readPorts</b> (<a class="el" href="class_j_s_o_n_reader.html">JSONReader</a> &amp;obj, const Process::Inlets &amp;ins, const Process::Outlets &amp;outs)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>readPorts</b> (<a class="el" href="class_j_s_o_n_reader.html">JSONReader</a> &amp;obj, const <a class="el" href="struct_process_1_1_inlets.html">Process::Inlets</a> &amp;ins, const <a class="el" href="struct_process_1_1_outlets.html">Process::Outlets</a> &amp;outs)</td></tr>
 <tr class="separator:a5436a5a553584e083e0f75dc99319d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b147f3962a1beaacd3896cccb9c0b50"><td class="memItemLeft" align="right" valign="top"><a id="a9b147f3962a1beaacd3896cccb9c0b50"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>writePorts</b> (const <a class="el" href="class_j_s_o_n_writer.html">JSONWriter</a> &amp;obj, const <a class="el" href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a> &amp;pl, Process::Inlets &amp;ins, Process::Outlets &amp;outs, QObject *parent)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>writePorts</b> (const <a class="el" href="class_j_s_o_n_writer.html">JSONWriter</a> &amp;obj, const <a class="el" href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a> &amp;pl, <a class="el" href="struct_process_1_1_inlets.html">Process::Inlets</a> &amp;ins, <a class="el" href="struct_process_1_1_outlets.html">Process::Outlets</a> &amp;outs, QObject *parent)</td></tr>
 <tr class="separator:a9b147f3962a1beaacd3896cccb9c0b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a950e99cc1331cd659205568412c89031"><td class="memItemLeft" align="right" valign="top"><a id="a950e99cc1331cd659205568412c89031"></a>
 const <a class="el" href="structscore_1_1_brush.html">score::Brush</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>portBrush</b> (Process::PortType type)</td></tr>

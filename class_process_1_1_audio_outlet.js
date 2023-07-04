@@ -13,7 +13,7 @@ var class_process_1_1_audio_outlet =
     [ "gainChanged", "class_process_1_1_audio_outlet.html#a68896cb84ef8f98f1c759b8a3e0dae6f", null ],
     [ "loadData", "class_process_1_1_audio_outlet.html#ae0b1854a13ebde506758a5d4c834f05e", null ],
     [ "mapExecution", "class_process_1_1_audio_outlet.html#a0cb813c844d65fff1e2d3eed1d23664c", null ],
-    [ "pan", "class_process_1_1_audio_outlet.html#afcfbf9805bec255e24aa3d06a1f59de8", null ],
+    [ "pan", "class_process_1_1_audio_outlet.html#a64c2d5b5da3b764d92e0a8193f93e265", null ],
     [ "panChanged", "class_process_1_1_audio_outlet.html#a0feb8c7b5a1d6e4cf242687b5957cf17", null ],
     [ "propagate", "class_process_1_1_audio_outlet.html#abb6531a7a155246be037742435454d50", null ],
     [ "propagateChanged", "class_process_1_1_audio_outlet.html#a7f43e975ed0abc694e7cf1935c428ccd", null ],

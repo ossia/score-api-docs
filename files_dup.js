@@ -925,6 +925,7 @@ var files_dup =
     [ "score-plugin-engine/Engine/Node/Port.hpp", "score-plugin-engine_2_engine_2_node_2_port_8hpp_source.html", null ],
     [ "PortAudioInterface.hpp", "_port_audio_interface_8hpp_source.html", null ],
     [ "PortFactory.hpp", "_port_factory_8hpp_source.html", null ],
+    [ "PortForward.hpp", "_port_forward_8hpp_source.html", null ],
     [ "PortInspectorFactory.hpp", "_port_inspector_factory_8hpp_source.html", null ],
     [ "score-lib-process/Process/Dataflow/PortItem.hpp", "score-lib-process_2_process_2_dataflow_2_port_item_8hpp_source.html", null ],
     [ "score-plugin-dataflow/Dataflow/PortItem.hpp", "score-plugin-dataflow_2_dataflow_2_port_item_8hpp_source.html", null ],

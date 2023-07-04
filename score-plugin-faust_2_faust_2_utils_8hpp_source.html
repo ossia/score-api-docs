@@ -224,12 +224,12 @@ $(document).ready(function(){initNavTree('score-plugin-faust_2_faust_2_utils_8hp
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    , MetaDataUI</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;{</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  Proc&amp; fx;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  Process::Inlets&amp; toRemove;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  Process::Outlets&amp; toRemoveO;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <a class="code" href="struct_process_1_1_inlets.html">Process::Inlets</a>&amp; toRemove;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <a class="code" href="struct_process_1_1_outlets.html">Process::Outlets</a>&amp; toRemoveO;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  std::size_t i = 1;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  std::size_t o = 1;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <a class="code" href="struct_faust_1_1_update_u_i.html">UpdateUI</a>(Proc&amp; sfx, Process::Inlets&amp; toRemove, Process::Outlets&amp; toRemoveO)</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <a class="code" href="struct_faust_1_1_update_u_i.html">UpdateUI</a>(Proc&amp; sfx, <a class="code" href="struct_process_1_1_inlets.html">Process::Inlets</a>&amp; toRemove, <a class="code" href="struct_process_1_1_outlets.html">Process::Outlets</a>&amp; toRemoveO)</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      : fx{sfx}</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;      , toRemove{toRemove}</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;      , toRemoveO{toRemoveO}</div>
@@ -438,14 +438,16 @@ $(document).ready(function(){initNavTree('score-plugin-faust_2_faust_2_utils_8hp
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;  }</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;};</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;}</div>
-<div class="ttc" id="aclass_process_1_1_inlet_html"><div class="ttname"><a href="class_process_1_1_inlet.html">Process::Inlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:178</div></div>
-<div class="ttc" id="aclass_process_1_1_outlet_html"><div class="ttname"><a href="class_process_1_1_outlet.html">Process::Outlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:266</div></div>
+<div class="ttc" id="aclass_process_1_1_inlet_html"><div class="ttname"><a href="class_process_1_1_inlet.html">Process::Inlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:176</div></div>
+<div class="ttc" id="aclass_process_1_1_outlet_html"><div class="ttname"><a href="class_process_1_1_outlet.html">Process::Outlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:264</div></div>
 <div class="ttc" id="astruct_faust_1_1_u_i_html"><div class="ttname"><a href="struct_faust_1_1_u_i.html">Faust::UI</a></div><div class="ttdef"><b>Definition:</b> score-plugin-faust/Faust/Utils.hpp:23</div></div>
 <div class="ttc" id="astruct_faust_1_1_update_u_i_html"><div class="ttname"><a href="struct_faust_1_1_update_u_i.html">Faust::UpdateUI</a></div><div class="ttdef"><b>Definition:</b> score-plugin-faust/Faust/Utils.hpp:125</div></div>
 <div class="ttc" id="astruct_process_1_1_bargraph_html"><div class="ttname"><a href="struct_process_1_1_bargraph.html">Process::Bargraph</a></div><div class="ttdef"><b>Definition:</b> WidgetInlets.hpp:558</div></div>
 <div class="ttc" id="astruct_process_1_1_button_html"><div class="ttname"><a href="struct_process_1_1_button.html">Process::Button</a></div><div class="ttdef"><b>Definition:</b> WidgetInlets.hpp:437</div></div>
 <div class="ttc" id="astruct_process_1_1_float_knob_html"><div class="ttname"><a href="struct_process_1_1_float_knob.html">Process::FloatKnob</a></div><div class="ttdef"><b>Definition:</b> WidgetInlets.hpp:154</div></div>
 <div class="ttc" id="astruct_process_1_1_float_slider_html"><div class="ttname"><a href="struct_process_1_1_float_slider.html">Process::FloatSlider</a></div><div class="ttdef"><b>Definition:</b> WidgetInlets.hpp:140</div></div>
+<div class="ttc" id="astruct_process_1_1_inlets_html"><div class="ttname"><a href="struct_process_1_1_inlets.html">Process::Inlets</a></div><div class="ttdef"><b>Definition:</b> PortForward.hpp:23</div></div>
+<div class="ttc" id="astruct_process_1_1_outlets_html"><div class="ttname"><a href="struct_process_1_1_outlets.html">Process::Outlets</a></div><div class="ttdef"><b>Definition:</b> PortForward.hpp:27</div></div>
 <div class="ttc" id="astruct_process_1_1_toggle_html"><div class="ttname"><a href="struct_process_1_1_toggle.html">Process::Toggle</a></div><div class="ttdef"><b>Definition:</b> WidgetInlets.hpp:302</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
