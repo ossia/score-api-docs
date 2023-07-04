@@ -977,7 +977,7 @@ var annotated_dup =
       ] ],
       [ "GenericMathMapping", "struct_nodes_1_1_generic_math_mapping.html", null ]
     ] ],
-    [ "oscr", null, [
+    [ "oscr", "namespaceoscr.html", [
       [ "ProcessFactory", "structoscr_1_1_process_factory.html", null ],
       [ "ExecutorFactory", "structoscr_1_1_executor_factory.html", null ],
       [ "NormalizerFromMapper", "structoscr_1_1_normalizer_from_mapper.html", null ],

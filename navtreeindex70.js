@@ -1,5 +1,9 @@
 var NAVTREEINDEX70 =
 {
+"struct_protocols_1_1_artnet_specific_settings.html#a4d06303be75d3e9c621899e5135d8239":[12,0,42,20,3],
+"struct_protocols_1_1_artnet_specific_settings.html#a77b6e21f64d9ce28f5af1710ec4b10df":[12,0,42,20,4],
+"struct_protocols_1_1_artnet_specific_settings.html#af633c42f6e9ab57071377281ee0bd583":[12,0,42,20,2],
+"struct_protocols_1_1_fixture_database_1_1_scan.html":[12,0,42,16,0],
 "struct_protocols_1_1_fixture_database_1_1_scan.html#a3b7be4f9c56242d3fbf49533d137b9fe":[12,0,42,16,0,0],
 "struct_protocols_1_1_fixture_database_1_1_scan.html#ac815fe8f651e19a94be9735711c8abfe":[12,0,42,16,0,2],
 "struct_protocols_1_1_fixture_database_1_1_scan.html#ad1b0903b5165797816bf08ada75f03da":[12,0,42,16,0,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX70 =
 "struct_rollback_strategy_1_1_simple.html":[12,0,46,0],
 "struct_scenario_1_1_address_accessor_curve_creator.html":[12,0,47,41],
 "struct_scenario_1_1_address_accessor_curve_creator.html#a03482c9b0e24d012982f601990a43a0c":[12,0,47,41,8],
-"struct_scenario_1_1_address_accessor_curve_creator.html#a097a4fb921ef1db81901ff0a234cfbd6":[12,0,47,41,15],
-"struct_scenario_1_1_address_accessor_curve_creator.html#a5e3c847720febfcac07800d5f14ec44c":[12,0,47,41,11],
-"struct_scenario_1_1_address_accessor_curve_creator.html#a5f562a217be652ad42b3c6d7583fb575":[12,0,47,41,5],
-"struct_scenario_1_1_address_accessor_curve_creator.html#a6cfcd5b43fd2798f0ef74496298d2f15":[12,0,47,41,9],
-"struct_scenario_1_1_address_accessor_curve_creator.html#a6e28a58b827c55b41d5b8d59ad15ab2a":[12,0,47,41,17]
+"struct_scenario_1_1_address_accessor_curve_creator.html#a097a4fb921ef1db81901ff0a234cfbd6":[12,0,47,41,15]
 };

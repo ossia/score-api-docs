@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('score__plugin__controlsurface_8hpp_sou
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  ~<a class="code" href="classscore__plugin__controlsurface.html">score_plugin_controlsurface</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  std::vector&lt;std::unique_ptr&lt;score::InterfaceBase&gt;&gt; factories(</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  std::vector&lt;score::InterfaceBase*&gt; factories(</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp; ctx,</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_uuid_key.html">score::InterfaceKey</a>&amp; key) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>

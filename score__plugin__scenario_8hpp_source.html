@@ -141,10 +141,10 @@ $(document).ready(function(){initNavTree('score__plugin__scenario_8hpp_source.ht
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  std::vector&lt;std::unique_ptr&lt;score::InterfaceListBase&gt;&gt; factoryFamilies() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  std::vector&lt;std::unique_ptr&lt;score::InterfaceBase&gt;&gt; factories(</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  std::vector&lt;score::InterfaceBase*&gt; factories(</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp;,</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_uuid_key.html">score::InterfaceKey</a>&amp; factoryName) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  std::vector&lt;std::unique_ptr&lt;score::InterfaceBase&gt;&gt; guiFactories(</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  std::vector&lt;score::InterfaceBase*&gt; guiFactories(</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp;,</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_uuid_key.html">score::InterfaceKey</a>&amp; factoryName) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>

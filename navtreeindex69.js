@@ -1,5 +1,9 @@
 var NAVTREEINDEX69 =
 {
+"struct_process_1_1_multi_script_dialog_1_1_editor_tab.html#aff1d3f9585e815f9d0a8a3d272993c97":[12,0,41,112,0,0],
+"struct_process_1_1_multi_slider.html":[12,0,41,72],
+"struct_process_1_1_multi_slider.html#a0d382066e24f6a7150758ce3296255f0":[12,0,41,72,1],
+"struct_process_1_1_multi_slider.html#a1647d6ee8ecbc1b60dafcc84c330d186":[12,0,41,72,2],
 "struct_process_1_1_multi_slider.html#a176823889b1e232ed5d6a5f48a7c96e9":[12,0,41,72,3],
 "struct_process_1_1_multi_slider.html#a3fa45d1c39545e50045680ef0a8de286":[12,0,41,72,4],
 "struct_process_1_1_multi_slider.html#a9f2b21932f49de26ae804394ae9b33f7":[12,0,41,72,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX69 =
 "struct_protocols_1_1_artnet_1_1_single_capability.html":[12,0,42,0,1],
 "struct_protocols_1_1_artnet_specific_settings.html":[12,0,42,20],
 "struct_protocols_1_1_artnet_specific_settings.html#a35cf3bc5d13a115d288cc049b2f60b7d":[12,0,42,20,0],
-"struct_protocols_1_1_artnet_specific_settings.html#a4751dce842318274b333b0d0e52d88a0":[12,0,42,20,1],
-"struct_protocols_1_1_artnet_specific_settings.html#a4d06303be75d3e9c621899e5135d8239":[12,0,42,20,3],
-"struct_protocols_1_1_artnet_specific_settings.html#a77b6e21f64d9ce28f5af1710ec4b10df":[12,0,42,20,4],
-"struct_protocols_1_1_artnet_specific_settings.html#af633c42f6e9ab57071377281ee0bd583":[12,0,42,20,2],
-"struct_protocols_1_1_fixture_database_1_1_scan.html":[12,0,42,16,0]
+"struct_protocols_1_1_artnet_specific_settings.html#a4751dce842318274b333b0d0e52d88a0":[12,0,42,20,1]
 };

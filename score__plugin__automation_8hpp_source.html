@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('score__plugin__automation_8hpp_source.
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  ~<a class="code" href="classscore__plugin__automation.html">score_plugin_automation</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  std::vector&lt;std::unique_ptr&lt;score::InterfaceBase&gt;&gt; factories(</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  std::vector&lt;score::InterfaceBase*&gt; factories(</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp; ctx,</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_uuid_key.html">score::InterfaceKey</a>&amp; factoryName) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  std::pair&lt;const CommandGroupKey, CommandGeneratorMap&gt; make_commands() <span class="keyword">override</span>;</div>

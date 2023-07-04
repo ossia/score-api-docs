@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['gfx_5334',['gfx',['../namespacescore_1_1gfx.html',1,'score']]],
-  ['scenario_5335',['Scenario',['../namespace_scenario.html',1,'']]],
-  ['score_5336',['score',['../namespacescore.html',1,'']]],
-  ['state_5337',['State',['../namespace_state.html',1,'']]]
+  ['pluginloader_5334',['PluginLoader',['../namespace_plugin_loader.html',1,'']]],
+  ['process_5335',['Process',['../namespace_process.html',1,'']]]
 ];

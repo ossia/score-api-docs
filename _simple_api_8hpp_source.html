@@ -148,10 +148,10 @@ $(document).ready(function(){initNavTree('_simple_api_8hpp_source.html',''); ini
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">using</span> LayerFactory = ControlLayerFactory&lt;Node&gt;;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Nodes&gt;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;std::vector&lt;std::unique_ptr&lt;score::InterfaceBase&gt;&gt;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;std::vector&lt;score::InterfaceBase*&gt;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;instantiate_fx(<span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp; ctx, <span class="keyword">const</span> <a class="code" href="class_uuid_key.html">score::InterfaceKey</a>&amp; key)</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  std::vector&lt;std::unique_ptr&lt;score::InterfaceBase&gt;&gt; vec;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  std::vector&lt;score::InterfaceBase*&gt; vec;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">if</span>(key == Execution::ProcessComponentFactory::static_interfaceKey())</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  {</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    (vec.emplace_back(</div>
@@ -198,7 +198,7 @@ $(document).ready(function(){initNavTree('_simple_api_8hpp_source.html',''); ini
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <a class="code" href="struct_control_1_1score__generic__plugin.html">score_generic_plugin</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  ~<a class="code" href="struct_control_1_1score__generic__plugin.html">score_generic_plugin</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  std::vector&lt;std::unique_ptr&lt;score::InterfaceBase&gt;&gt; factories(</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  std::vector&lt;score::InterfaceBase*&gt; factories(</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp; ctx,</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_uuid_key.html">score::InterfaceKey</a>&amp; key)<span class="keyword"> const override</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">  </span>{</div>

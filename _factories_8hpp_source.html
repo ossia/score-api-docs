@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('_factories_8hpp_source.html',''); init
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/for_each.hpp&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>oscr</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespaceoscr.html">   17</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceoscr.html">oscr</a></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node&gt;</div>
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structoscr_1_1_process_factory.html">   20</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structoscr_1_1_process_factory.html">ProcessFactory</a> final : <span class="keyword">public</span> <a class="code" href="class_process_1_1_process_factory___t.html">Process::ProcessFactory_T</a>&lt;oscr::ProcessModel&lt;Node&gt;&gt;</div>
@@ -293,7 +293,7 @@ $(document).ready(function(){initNavTree('_factories_8hpp_source.html',''); init
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Nodes&gt;</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> instantiate_fx(</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    std::vector&lt;std::unique_ptr&lt;score::InterfaceBase&gt;&gt;&amp; v,</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    std::vector&lt;score::InterfaceBase*&gt;&amp; v,</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp; ctx, <span class="keyword">const</span> <a class="code" href="class_uuid_key.html">score::InterfaceKey</a>&amp; key)</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;{</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keywordflow">if</span>(key == Execution::ProcessComponentFactory::static_interfaceKey())</div>
@@ -337,12 +337,12 @@ $(document).ready(function(){initNavTree('_factories_8hpp_source.html',''); init
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="keywordtype">void</span> custom_factories(</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    std::vector&lt;std::unique_ptr&lt;score::InterfaceBase&gt;&gt;&amp; fx,</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    std::vector&lt;score::InterfaceBase*&gt;&amp; fx,</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp; ctx, <span class="keyword">const</span> <a class="code" href="class_uuid_key.html">score::InterfaceKey</a>&amp; key);</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;}</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="keyword">namespace </span>Avnd = oscr;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceoscr.html">Avnd</a> = <a class="code" href="namespaceoscr.html">oscr</a>;</div>
 <div class="ttc" id="aclass_execution_1_1_process_component_factory___t_html"><div class="ttname"><a href="class_execution_1_1_process_component_factory___t.html">Execution::ProcessComponentFactory_T</a></div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:118</div></div>
 <div class="ttc" id="aclass_execution_1_1_process_component_factory_html"><div class="ttname"><a href="class_execution_1_1_process_component_factory.html">Execution::ProcessComponentFactory</a></div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:101</div></div>
 <div class="ttc" id="aclass_process_1_1_layer_factory_html"><div class="ttname"><a href="class_process_1_1_layer_factory.html">Process::LayerFactory</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/ProcessFactory.hpp:58</div></div>
@@ -356,6 +356,7 @@ $(document).ready(function(){initNavTree('_factories_8hpp_source.html',''); init
 <div class="ttc" id="aclassoscr_1_1_layer_factory_html"><div class="ttname"><a href="classoscr_1_1_layer_factory.html">oscr::LayerFactory</a></div><div class="ttdef"><b>Definition:</b> score-plugin-avnd/Crousti/Layer.hpp:282</div></div>
 <div class="ttc" id="aclassscore_1_1_q_graphics_knob_html"><div class="ttname"><a href="classscore_1_1_q_graphics_knob.html">score::QGraphicsKnob</a></div><div class="ttdef"><b>Definition:</b> QGraphicsKnob.hpp:16</div></div>
 <div class="ttc" id="aclassscore_1_1_q_graphics_slider_html"><div class="ttname"><a href="classscore_1_1_q_graphics_slider.html">score::QGraphicsSlider</a></div><div class="ttdef"><b>Definition:</b> QGraphicsSlider.hpp:17</div></div>
+<div class="ttc" id="anamespaceoscr_html"><div class="ttname"><a href="namespaceoscr.html">oscr</a></div><div class="ttdef"><b>Definition:</b> Factories.hpp:18</div></div>
 <div class="ttc" id="astruct_dataflow_1_1_widget_inlet_factory_html"><div class="ttname"><a href="struct_dataflow_1_1_widget_inlet_factory.html">Dataflow::WidgetInletFactory</a></div><div class="ttdef"><b>Definition:</b> WidgetInletFactory.hpp:12</div></div>
 <div class="ttc" id="astructoscr_1_1_custom_control_factory_html"><div class="ttname"><a href="structoscr_1_1_custom_control_factory.html">oscr::CustomControlFactory</a></div><div class="ttdef"><b>Definition:</b> Factories.hpp:184</div></div>
 <div class="ttc" id="astructoscr_1_1_executor_factory_html"><div class="ttname"><a href="structoscr_1_1_executor_factory.html">oscr::ExecutorFactory</a></div><div class="ttdef"><b>Definition:</b> Factories.hpp:28</div></div>

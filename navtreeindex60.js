@@ -1,5 +1,9 @@
 var NAVTREEINDEX60 =
 {
+"struct_control_1_1_int_spin_box.html#aeb5cdeed683b8f1336ef0ed234a1eabc":[12,0,6,5,7],
+"struct_control_1_1_line_edit.html":[12,0,6,10],
+"struct_control_1_1_line_edit.html#a157a25b6b1488d2c3838aa38279b72c1":[12,0,6,10,5],
+"struct_control_1_1_line_edit.html#a2354173a4e7f1f899f018b90d3dd728c":[12,0,6,10,0],
 "struct_control_1_1_line_edit.html#a32e8aa535f778068f9e8cee2400dcf80":[12,0,6,10,4],
 "struct_control_1_1_line_edit.html#a5484079215c4cbcea34dfca93446f81f":[12,0,6,10,2],
 "struct_control_1_1_line_edit.html#a6bf14447b1bc0439e50dbbff2c334865":[12,0,6,10,7],
@@ -72,9 +76,9 @@ var NAVTREEINDEX60 =
 "struct_control_1_1inlet__visitor.html#afdddfc70fea7fb7a4646229d20570d7b":[12,0,6,23,10],
 "struct_control_1_1is__control.html":[12,0,6,29],
 "struct_control_1_1score__generic__plugin.html":[12,0,6,35],
-"struct_control_1_1score__generic__plugin.html#a5605040863d1b074c8d03635a67be88f":[12,0,6,35,2],
 "struct_control_1_1score__generic__plugin.html#a7eb67f42224ccb5b8df8f6dff24e0cc9":[12,0,6,35,0],
 "struct_control_1_1score__generic__plugin.html#a9bc363348636fb93227687d4ed12d007":[12,0,6,35,3],
+"struct_control_1_1score__generic__plugin.html#aad59a64d872a1c2ad2d3aed9f4355702":[12,0,6,35,2],
 "struct_control_1_1score__generic__plugin.html#ad34531bd64343abe721937972dd94591":[12,0,6,35,1],
 "struct_control_1_1score__generic__plugin.html#ada657f31af6cbc5d808c8fe0d5322b01":[12,0,6,35,4],
 "struct_control_1_1score__generic__plugin.html#adb927fea43a207e45d02ae7b871a4878":[12,0,6,35,5],
@@ -245,9 +249,5 @@ var NAVTREEINDEX60 =
 "struct_dataflow_1_1_drag_move_filter.html#ae242e3862fbe251aa39b57162f94fba0":[12,0,9,2,0],
 "struct_dataflow_1_1_midi_inlet_factory.html":[12,0,9,26],
 "struct_dataflow_1_1_midi_inlet_factory.html#a1da949041ce684afb0d7a925259ad444":[12,0,9,26,3],
-"struct_dataflow_1_1_midi_inlet_factory.html#a532df7ee48894507b2595efa96516610":[12,0,9,26,0],
-"struct_dataflow_1_1_midi_inlet_factory.html#aab8afef65c582e2045872a51c4ab226b":[12,0,9,26,2],
-"struct_dataflow_1_1_midi_inlet_factory.html#af90aadad8f440c697ccecea2ed4f257c":[12,0,9,26,1],
-"struct_dataflow_1_1_midi_outlet_factory.html":[12,0,9,27],
-"struct_dataflow_1_1_midi_outlet_factory.html#a0c1f7d393017070b78750f67f017563b":[12,0,9,27,2]
+"struct_dataflow_1_1_midi_inlet_factory.html#a532df7ee48894507b2595efa96516610":[12,0,9,26,0]
 };
