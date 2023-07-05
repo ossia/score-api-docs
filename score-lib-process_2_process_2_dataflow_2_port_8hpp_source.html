@@ -247,8 +247,8 @@ $(document).ready(function(){initNavTree('score-lib-process_2_process_2_dataflow
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  PROPERTY(</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      <a class="code" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a>,</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      address READ address WRITE setAddress NOTIFY addressChanged)</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  PROPERTY(QString, name READ name WRITE setName NOTIFY nameChanged)</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      address W_READ address W_WRITE setAddress W_NOTIFY addressChanged)</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  PROPERTY(QString, name W_READ name W_WRITE setName W_NOTIFY nameChanged)</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keyword">virtual</span> QByteArray saveData() <span class="keyword">const</span> noexcept;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> loadData(<span class="keyword">const</span> QByteArray&amp; arr) noexcept;</div>
@@ -353,8 +353,8 @@ $(document).ready(function(){initNavTree('score-lib-process_2_process_2_dataflow
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  }</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  W_SLOT(setDomain)</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  PROPERTY(<a class="code" href="struct_state_1_1_domain.html">State::Domain</a>, domain READ domain WRITE setDomain NOTIFY domainChanged)</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  PROPERTY(ossia::value, value READ value WRITE setValue NOTIFY valueChanged)</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  PROPERTY(<a class="code" href="struct_state_1_1_domain.html">State::Domain</a>, domain W_READ domain W_WRITE setDomain W_NOTIFY domainChanged)</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  PROPERTY(ossia::value, value W_READ value W_WRITE setValue W_NOTIFY valueChanged)</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  ossia::value m_value;</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  <a class="code" href="struct_state_1_1_domain.html">State::Domain</a> m_domain;</div>
@@ -455,200 +455,201 @@ $(document).ready(function(){initNavTree('score-lib-process_2_process_2_dataflow
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;  std::unique_ptr&lt;Process::ControlInlet&gt; gainInlet;</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;  std::unique_ptr&lt;Process::ControlInlet&gt; panInlet;</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  PROPERTY(<span class="keywordtype">bool</span>, propagate READ propagate WRITE setPropagate NOTIFY propagateChanged)</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;  PROPERTY(<span class="keywordtype">double</span>, gain READ gain WRITE setGain NOTIFY gainChanged)</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  PROPERTY(<a class="code" href="struct_process_1_1pan__weight.html">pan_weight</a>, pan READ pan WRITE setPan NOTIFY panChanged)</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;  <span class="keywordtype">double</span> m_gain{};</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;  <a class="code" href="struct_process_1_1pan__weight.html">pan_weight</a> m_pan;</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;  <span class="keywordtype">bool</span> m_propagate{<span class="keyword">false</span>};</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;};</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160; </div>
-<div class="line"><a name="l00367"></a><span class="lineno"><a class="line" href="class_process_1_1_midi_inlet.html">  367</a></span>&#160;<span class="keyword">class </span>SCORE_LIB_PROCESS_EXPORT <a class="code" href="class_process_1_1_midi_inlet.html">MidiInlet</a> : <span class="keyword">public</span> <a class="code" href="class_process_1_1_inlet.html">Inlet</a></div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;{</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  W_OBJECT(<a class="code" href="class_process_1_1_midi_inlet.html">MidiInlet</a>)</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; </div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;  SCORE_SERIALIZE_FRIENDS</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  MODEL_METADATA_IMPL_HPP(<a class="code" href="class_process_1_1_midi_inlet.html">MidiInlet</a>)</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  <a class="code" href="class_process_1_1_midi_inlet.html">MidiInlet</a>() = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;  ~<a class="code" href="class_process_1_1_midi_inlet.html">MidiInlet</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;  <a class="code" href="class_process_1_1_midi_inlet.html">MidiInlet</a>(<span class="keyword">const</span> <a class="code" href="class_process_1_1_midi_inlet.html">MidiInlet</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  <a class="code" href="class_process_1_1_midi_inlet.html">MidiInlet</a>(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> c, QObject* parent);</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160; </div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  <a class="code" href="class_process_1_1_midi_inlet.html">MidiInlet</a>(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;  <a class="code" href="class_process_1_1_midi_inlet.html">MidiInlet</a>(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  <a class="code" href="class_process_1_1_midi_inlet.html">MidiInlet</a>(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;  <a class="code" href="class_process_1_1_midi_inlet.html">MidiInlet</a>(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160; </div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;  VIRTUAL_CONSTEXPR PortType type() <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  {</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="keywordflow">return</span> Process::PortType::Midi;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  }</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;};</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160; </div>
-<div class="line"><a name="l00390"></a><span class="lineno"><a class="line" href="class_process_1_1_midi_outlet.html">  390</a></span>&#160;<span class="keyword">class </span>SCORE_LIB_PROCESS_EXPORT <a class="code" href="class_process_1_1_midi_outlet.html">MidiOutlet</a> : <span class="keyword">public</span> <a class="code" href="class_process_1_1_outlet.html">Outlet</a></div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;{</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;  W_OBJECT(<a class="code" href="class_process_1_1_midi_outlet.html">MidiOutlet</a>)</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160; </div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;  SCORE_SERIALIZE_FRIENDS</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;  MODEL_METADATA_IMPL_HPP(<a class="code" href="class_process_1_1_midi_outlet.html">MidiOutlet</a>)</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;  <a class="code" href="class_process_1_1_midi_outlet.html">MidiOutlet</a>() = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  ~<a class="code" href="class_process_1_1_midi_outlet.html">MidiOutlet</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;  <a class="code" href="class_process_1_1_midi_outlet.html">MidiOutlet</a>(<span class="keyword">const</span> <a class="code" href="class_process_1_1_midi_outlet.html">MidiOutlet</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;  <a class="code" href="class_process_1_1_midi_outlet.html">MidiOutlet</a>(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> c, QObject* parent);</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160; </div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;  <a class="code" href="class_process_1_1_midi_outlet.html">MidiOutlet</a>(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;  <a class="code" href="class_process_1_1_midi_outlet.html">MidiOutlet</a>(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;  <a class="code" href="class_process_1_1_midi_outlet.html">MidiOutlet</a>(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;  <a class="code" href="class_process_1_1_midi_outlet.html">MidiOutlet</a>(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160; </div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;  VIRTUAL_CONSTEXPR PortType type() <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;  {</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="keywordflow">return</span> Process::PortType::Midi;</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;  }</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;};</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160; </div>
-<div class="line"><a name="l00413"></a><span class="lineno"><a class="line" href="class_process_1_1_control_outlet.html">  413</a></span>&#160;<span class="keyword">class </span>SCORE_LIB_PROCESS_EXPORT <a class="code" href="class_process_1_1_control_outlet.html">ControlOutlet</a> : <span class="keyword">public</span> <a class="code" href="class_process_1_1_outlet.html">Outlet</a></div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;{</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;  W_OBJECT(<a class="code" href="class_process_1_1_control_outlet.html">ControlOutlet</a>)</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160; </div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  SCORE_SERIALIZE_FRIENDS</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;  MODEL_METADATA_IMPL_HPP(<a class="code" href="class_process_1_1_control_outlet.html">ControlOutlet</a>)</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;  <a class="code" href="class_process_1_1_control_outlet.html">ControlOutlet</a>() = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;  <a class="code" href="class_process_1_1_control_outlet.html">ControlOutlet</a>(<span class="keyword">const</span> <a class="code" href="class_process_1_1_outlet.html">Outlet</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;  <a class="code" href="class_process_1_1_control_outlet.html">ControlOutlet</a>(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> c, QObject* parent);</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;  ~<a class="code" href="class_process_1_1_control_outlet.html">ControlOutlet</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160; </div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;  <a class="code" href="class_process_1_1_control_outlet.html">ControlOutlet</a>(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;  <a class="code" href="class_process_1_1_control_outlet.html">ControlOutlet</a>(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;  <a class="code" href="class_process_1_1_control_outlet.html">ControlOutlet</a>(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;  <a class="code" href="class_process_1_1_control_outlet.html">ControlOutlet</a>(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160; </div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;  VIRTUAL_CONSTEXPR PortType type() <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;  {</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <span class="keywordflow">return</span> Process::PortType::Message;</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;  }</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160; </div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;  QByteArray saveData() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;  <span class="keywordtype">void</span> loadData(<span class="keyword">const</span> QByteArray&amp; arr) noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160; </div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;  <span class="keyword">const</span> ossia::value&amp; value()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_value; }</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_state_1_1_domain.html">State::Domain</a>&amp; domain()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_domain; }</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160; </div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;  <span class="keywordtype">void</span> valueChanged(<span class="keyword">const</span> ossia::value&amp; v)</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, valueChanged, v)</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;  <span class="keywordtype">void</span> executionValueChanged(<span class="keyword">const</span> ossia::value&amp; v)</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, executionValueChanged, v)</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;  <span class="keywordtype">void</span> domainChanged(<span class="keyword">const</span> <a class="code" href="struct_state_1_1_domain.html">State::Domain</a>&amp; d)</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, domainChanged, d)</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160; </div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;  <span class="keywordtype">void</span> setExecutionValue(<span class="keyword">const</span> ossia::value&amp; value) { executionValueChanged(value); }</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160; </div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;  <span class="keywordtype">void</span> setValue(<span class="keyword">const</span> ossia::value&amp; value)</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;  {</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    <span class="keywordflow">if</span>(value != m_value)</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    {</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;      m_value = value;</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;      valueChanged(value);</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    }</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;  }</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;  W_SLOT(setValue)</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160; </div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;  <span class="keywordtype">void</span> setDomain(<span class="keyword">const</span> <a class="code" href="struct_state_1_1_domain.html">State::Domain</a>&amp; d)</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;  {</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    <span class="keywordflow">if</span>(m_domain != d)</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    {</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;      m_domain = d;</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;      domainChanged(d);</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    }</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;  }</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;  W_SLOT(setDomain)</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160; </div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;  PROPERTY(<a class="code" href="struct_state_1_1_domain.html">State::Domain</a>, domain READ domain WRITE setDomain NOTIFY domainChanged)</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;  PROPERTY(ossia::value, value READ value WRITE setValue NOTIFY valueChanged)</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;  ossia::value m_value;</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;  <a class="code" href="struct_state_1_1_domain.html">State::Domain</a> m_domain;</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;};</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160; </div>
-<div class="line"><a name="l00479"></a><span class="lineno"><a class="line" href="class_process_1_1_value_inlet.html">  479</a></span>&#160;<span class="keyword">class </span>SCORE_LIB_PROCESS_EXPORT <a class="code" href="class_process_1_1_value_inlet.html">ValueInlet</a> : <span class="keyword">public</span> <a class="code" href="class_process_1_1_inlet.html">Inlet</a></div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;{</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;  W_OBJECT(<a class="code" href="class_process_1_1_value_inlet.html">ValueInlet</a>)</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160; </div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;  SCORE_SERIALIZE_FRIENDS</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;  MODEL_METADATA_IMPL_HPP(<a class="code" href="class_process_1_1_value_inlet.html">ValueInlet</a>)</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;  <a class="code" href="class_process_1_1_value_inlet.html">ValueInlet</a>() = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;  ~<a class="code" href="class_process_1_1_value_inlet.html">ValueInlet</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;  <a class="code" href="class_process_1_1_value_inlet.html">ValueInlet</a>(<span class="keyword">const</span> <a class="code" href="class_process_1_1_value_inlet.html">ValueInlet</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;  <a class="code" href="class_process_1_1_value_inlet.html">ValueInlet</a>(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> c, QObject* parent);</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160; </div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;  <a class="code" href="class_process_1_1_value_inlet.html">ValueInlet</a>(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;  <a class="code" href="class_process_1_1_value_inlet.html">ValueInlet</a>(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;  <a class="code" href="class_process_1_1_value_inlet.html">ValueInlet</a>(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;  <a class="code" href="class_process_1_1_value_inlet.html">ValueInlet</a>(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160; </div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;  VIRTUAL_CONSTEXPR PortType type() <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;  {</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    <span class="keywordflow">return</span> Process::PortType::Message;</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;  }</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;};</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160; </div>
-<div class="line"><a name="l00502"></a><span class="lineno"><a class="line" href="class_process_1_1_value_outlet.html">  502</a></span>&#160;<span class="keyword">class </span>SCORE_LIB_PROCESS_EXPORT <a class="code" href="class_process_1_1_value_outlet.html">ValueOutlet</a> : <span class="keyword">public</span> <a class="code" href="class_process_1_1_outlet.html">Outlet</a></div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;{</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;  W_OBJECT(<a class="code" href="class_process_1_1_value_outlet.html">ValueOutlet</a>)</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160; </div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;  SCORE_SERIALIZE_FRIENDS</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;  MODEL_METADATA_IMPL_HPP(<a class="code" href="class_process_1_1_value_outlet.html">ValueOutlet</a>)</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;  <a class="code" href="class_process_1_1_value_outlet.html">ValueOutlet</a>() = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;  ~<a class="code" href="class_process_1_1_value_outlet.html">ValueOutlet</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;  <a class="code" href="class_process_1_1_value_outlet.html">ValueOutlet</a>(<span class="keyword">const</span> <a class="code" href="class_process_1_1_value_outlet.html">ValueOutlet</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;  <a class="code" href="class_process_1_1_value_outlet.html">ValueOutlet</a>(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> c, QObject* parent);</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160; </div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;  <a class="code" href="class_process_1_1_value_outlet.html">ValueOutlet</a>(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;  <a class="code" href="class_process_1_1_value_outlet.html">ValueOutlet</a>(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;  <a class="code" href="class_process_1_1_value_outlet.html">ValueOutlet</a>(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;  <a class="code" href="class_process_1_1_value_outlet.html">ValueOutlet</a>(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160; </div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;  VIRTUAL_CONSTEXPR PortType type() <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;  {</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    <span class="keywordflow">return</span> Process::PortType::Message;</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;  }</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;};</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160; </div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;SCORE_LIB_PROCESS_EXPORT</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;std::unique_ptr&lt;Inlet&gt; make_value_inlet(<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp; c, QObject* parent);</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;SCORE_LIB_PROCESS_EXPORT</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;std::unique_ptr&lt;Outlet&gt; make_value_outlet(<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp; c, QObject* parent);</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160; </div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;SCORE_LIB_PROCESS_EXPORT</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;std::unique_ptr&lt;MidiInlet&gt; make_midi_inlet(<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp; c, QObject* parent);</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;SCORE_LIB_PROCESS_EXPORT</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;std::unique_ptr&lt;MidiOutlet&gt;</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;make_midi_outlet(<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp; c, QObject* parent);</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160; </div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;SCORE_LIB_PROCESS_EXPORT</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;std::unique_ptr&lt;AudioInlet&gt;</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;make_audio_inlet(<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp; c, QObject* parent);</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;SCORE_LIB_PROCESS_EXPORT</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;std::unique_ptr&lt;AudioOutlet&gt;</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;make_audio_outlet(<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp; c, QObject* parent);</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160; </div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;}</div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160; </div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;DEFAULT_MODEL_METADATA(<a class="code" href="class_process_1_1_port.html">Process::Port</a>, <span class="stringliteral">&quot;Port&quot;</span>)</div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160; </div>
-<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="classid__base__t.html">Id</a>&lt;<a class="code" href="namespace_process.html">Process</a>::Port&gt;)</div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="namespace_process.html">Process</a>::Port)</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160; </div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;<span class="comment">// Q_DECLARE_METATYPE(Process::pan_weight)</span></div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="namespace_process.html">Process</a>::pan_weight)</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  PROPERTY(</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;      <span class="keywordtype">bool</span>, propagate W_READ propagate W_WRITE setPropagate W_NOTIFY propagateChanged)</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  PROPERTY(<span class="keywordtype">double</span>, gain W_READ gain W_WRITE setGain W_NOTIFY gainChanged)</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  PROPERTY(<a class="code" href="struct_process_1_1pan__weight.html">pan_weight</a>, pan W_READ pan W_WRITE setPan W_NOTIFY panChanged)</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;  <span class="keywordtype">double</span> m_gain{};</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;  <a class="code" href="struct_process_1_1pan__weight.html">pan_weight</a> m_pan;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;  <span class="keywordtype">bool</span> m_propagate{<span class="keyword">false</span>};</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;};</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160; </div>
+<div class="line"><a name="l00368"></a><span class="lineno"><a class="line" href="class_process_1_1_midi_inlet.html">  368</a></span>&#160;<span class="keyword">class </span>SCORE_LIB_PROCESS_EXPORT <a class="code" href="class_process_1_1_midi_inlet.html">MidiInlet</a> : <span class="keyword">public</span> <a class="code" href="class_process_1_1_inlet.html">Inlet</a></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;{</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  W_OBJECT(<a class="code" href="class_process_1_1_midi_inlet.html">MidiInlet</a>)</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160; </div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  SCORE_SERIALIZE_FRIENDS</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  MODEL_METADATA_IMPL_HPP(<a class="code" href="class_process_1_1_midi_inlet.html">MidiInlet</a>)</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;  <a class="code" href="class_process_1_1_midi_inlet.html">MidiInlet</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;  ~<a class="code" href="class_process_1_1_midi_inlet.html">MidiInlet</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  <a class="code" href="class_process_1_1_midi_inlet.html">MidiInlet</a>(<span class="keyword">const</span> <a class="code" href="class_process_1_1_midi_inlet.html">MidiInlet</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  <a class="code" href="class_process_1_1_midi_inlet.html">MidiInlet</a>(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> c, QObject* parent);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160; </div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;  <a class="code" href="class_process_1_1_midi_inlet.html">MidiInlet</a>(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  <a class="code" href="class_process_1_1_midi_inlet.html">MidiInlet</a>(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;  <a class="code" href="class_process_1_1_midi_inlet.html">MidiInlet</a>(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  <a class="code" href="class_process_1_1_midi_inlet.html">MidiInlet</a>(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  VIRTUAL_CONSTEXPR PortType type() <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  {</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <span class="keywordflow">return</span> Process::PortType::Midi;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;  }</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;};</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160; </div>
+<div class="line"><a name="l00391"></a><span class="lineno"><a class="line" href="class_process_1_1_midi_outlet.html">  391</a></span>&#160;<span class="keyword">class </span>SCORE_LIB_PROCESS_EXPORT <a class="code" href="class_process_1_1_midi_outlet.html">MidiOutlet</a> : <span class="keyword">public</span> <a class="code" href="class_process_1_1_outlet.html">Outlet</a></div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;{</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;  W_OBJECT(<a class="code" href="class_process_1_1_midi_outlet.html">MidiOutlet</a>)</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160; </div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;  SCORE_SERIALIZE_FRIENDS</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;  MODEL_METADATA_IMPL_HPP(<a class="code" href="class_process_1_1_midi_outlet.html">MidiOutlet</a>)</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  <a class="code" href="class_process_1_1_midi_outlet.html">MidiOutlet</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;  ~<a class="code" href="class_process_1_1_midi_outlet.html">MidiOutlet</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;  <a class="code" href="class_process_1_1_midi_outlet.html">MidiOutlet</a>(<span class="keyword">const</span> <a class="code" href="class_process_1_1_midi_outlet.html">MidiOutlet</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;  <a class="code" href="class_process_1_1_midi_outlet.html">MidiOutlet</a>(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> c, QObject* parent);</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160; </div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;  <a class="code" href="class_process_1_1_midi_outlet.html">MidiOutlet</a>(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;  <a class="code" href="class_process_1_1_midi_outlet.html">MidiOutlet</a>(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;  <a class="code" href="class_process_1_1_midi_outlet.html">MidiOutlet</a>(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;  <a class="code" href="class_process_1_1_midi_outlet.html">MidiOutlet</a>(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160; </div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;  VIRTUAL_CONSTEXPR PortType type() <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;  {</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="keywordflow">return</span> Process::PortType::Midi;</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;  }</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;};</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160; </div>
+<div class="line"><a name="l00414"></a><span class="lineno"><a class="line" href="class_process_1_1_control_outlet.html">  414</a></span>&#160;<span class="keyword">class </span>SCORE_LIB_PROCESS_EXPORT <a class="code" href="class_process_1_1_control_outlet.html">ControlOutlet</a> : <span class="keyword">public</span> <a class="code" href="class_process_1_1_outlet.html">Outlet</a></div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;{</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;  W_OBJECT(<a class="code" href="class_process_1_1_control_outlet.html">ControlOutlet</a>)</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160; </div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  SCORE_SERIALIZE_FRIENDS</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;  MODEL_METADATA_IMPL_HPP(<a class="code" href="class_process_1_1_control_outlet.html">ControlOutlet</a>)</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;  <a class="code" href="class_process_1_1_control_outlet.html">ControlOutlet</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;  <a class="code" href="class_process_1_1_control_outlet.html">ControlOutlet</a>(<span class="keyword">const</span> <a class="code" href="class_process_1_1_outlet.html">Outlet</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;  <a class="code" href="class_process_1_1_control_outlet.html">ControlOutlet</a>(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> c, QObject* parent);</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;  ~<a class="code" href="class_process_1_1_control_outlet.html">ControlOutlet</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160; </div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;  <a class="code" href="class_process_1_1_control_outlet.html">ControlOutlet</a>(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;  <a class="code" href="class_process_1_1_control_outlet.html">ControlOutlet</a>(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;  <a class="code" href="class_process_1_1_control_outlet.html">ControlOutlet</a>(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;  <a class="code" href="class_process_1_1_control_outlet.html">ControlOutlet</a>(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160; </div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;  VIRTUAL_CONSTEXPR PortType type() <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;  {</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="keywordflow">return</span> Process::PortType::Message;</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;  }</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160; </div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;  QByteArray saveData() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;  <span class="keywordtype">void</span> loadData(<span class="keyword">const</span> QByteArray&amp; arr) noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160; </div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;  <span class="keyword">const</span> ossia::value&amp; value()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_value; }</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_state_1_1_domain.html">State::Domain</a>&amp; domain()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_domain; }</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160; </div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;  <span class="keywordtype">void</span> valueChanged(<span class="keyword">const</span> ossia::value&amp; v)</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, valueChanged, v)</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;  <span class="keywordtype">void</span> executionValueChanged(<span class="keyword">const</span> ossia::value&amp; v)</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, executionValueChanged, v)</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;  <span class="keywordtype">void</span> domainChanged(<span class="keyword">const</span> <a class="code" href="struct_state_1_1_domain.html">State::Domain</a>&amp; d)</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, domainChanged, d)</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160; </div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;  <span class="keywordtype">void</span> setExecutionValue(<span class="keyword">const</span> ossia::value&amp; value) { executionValueChanged(value); }</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160; </div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;  <span class="keywordtype">void</span> setValue(<span class="keyword">const</span> ossia::value&amp; value)</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;  {</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    <span class="keywordflow">if</span>(value != m_value)</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    {</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;      m_value = value;</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;      valueChanged(value);</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    }</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;  }</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;  W_SLOT(setValue)</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160; </div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;  <span class="keywordtype">void</span> setDomain(<span class="keyword">const</span> <a class="code" href="struct_state_1_1_domain.html">State::Domain</a>&amp; d)</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;  {</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    <span class="keywordflow">if</span>(m_domain != d)</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    {</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;      m_domain = d;</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;      domainChanged(d);</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;    }</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;  }</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;  W_SLOT(setDomain)</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160; </div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;  PROPERTY(<a class="code" href="struct_state_1_1_domain.html">State::Domain</a>, domain W_READ domain W_WRITE setDomain W_NOTIFY domainChanged)</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;  PROPERTY(ossia::value, value W_READ value W_WRITE setValue W_NOTIFY valueChanged)</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;  ossia::value m_value;</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;  <a class="code" href="struct_state_1_1_domain.html">State::Domain</a> m_domain;</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;};</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160; </div>
+<div class="line"><a name="l00480"></a><span class="lineno"><a class="line" href="class_process_1_1_value_inlet.html">  480</a></span>&#160;<span class="keyword">class </span>SCORE_LIB_PROCESS_EXPORT <a class="code" href="class_process_1_1_value_inlet.html">ValueInlet</a> : <span class="keyword">public</span> <a class="code" href="class_process_1_1_inlet.html">Inlet</a></div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;{</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;  W_OBJECT(<a class="code" href="class_process_1_1_value_inlet.html">ValueInlet</a>)</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160; </div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;  SCORE_SERIALIZE_FRIENDS</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;  MODEL_METADATA_IMPL_HPP(<a class="code" href="class_process_1_1_value_inlet.html">ValueInlet</a>)</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;  <a class="code" href="class_process_1_1_value_inlet.html">ValueInlet</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;  ~<a class="code" href="class_process_1_1_value_inlet.html">ValueInlet</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;  <a class="code" href="class_process_1_1_value_inlet.html">ValueInlet</a>(<span class="keyword">const</span> <a class="code" href="class_process_1_1_value_inlet.html">ValueInlet</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;  <a class="code" href="class_process_1_1_value_inlet.html">ValueInlet</a>(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> c, QObject* parent);</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160; </div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;  <a class="code" href="class_process_1_1_value_inlet.html">ValueInlet</a>(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;  <a class="code" href="class_process_1_1_value_inlet.html">ValueInlet</a>(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;  <a class="code" href="class_process_1_1_value_inlet.html">ValueInlet</a>(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;  <a class="code" href="class_process_1_1_value_inlet.html">ValueInlet</a>(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160; </div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;  VIRTUAL_CONSTEXPR PortType type() <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;  {</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    <span class="keywordflow">return</span> Process::PortType::Message;</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;  }</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;};</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160; </div>
+<div class="line"><a name="l00503"></a><span class="lineno"><a class="line" href="class_process_1_1_value_outlet.html">  503</a></span>&#160;<span class="keyword">class </span>SCORE_LIB_PROCESS_EXPORT <a class="code" href="class_process_1_1_value_outlet.html">ValueOutlet</a> : <span class="keyword">public</span> <a class="code" href="class_process_1_1_outlet.html">Outlet</a></div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;{</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;  W_OBJECT(<a class="code" href="class_process_1_1_value_outlet.html">ValueOutlet</a>)</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160; </div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;  SCORE_SERIALIZE_FRIENDS</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;  MODEL_METADATA_IMPL_HPP(<a class="code" href="class_process_1_1_value_outlet.html">ValueOutlet</a>)</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;  <a class="code" href="class_process_1_1_value_outlet.html">ValueOutlet</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;  ~<a class="code" href="class_process_1_1_value_outlet.html">ValueOutlet</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;  <a class="code" href="class_process_1_1_value_outlet.html">ValueOutlet</a>(<span class="keyword">const</span> <a class="code" href="class_process_1_1_value_outlet.html">ValueOutlet</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;  <a class="code" href="class_process_1_1_value_outlet.html">ValueOutlet</a>(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> c, QObject* parent);</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160; </div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;  <a class="code" href="class_process_1_1_value_outlet.html">ValueOutlet</a>(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;  <a class="code" href="class_process_1_1_value_outlet.html">ValueOutlet</a>(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;  <a class="code" href="class_process_1_1_value_outlet.html">ValueOutlet</a>(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;  <a class="code" href="class_process_1_1_value_outlet.html">ValueOutlet</a>(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160; </div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;  VIRTUAL_CONSTEXPR PortType type() <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;  {</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    <span class="keywordflow">return</span> Process::PortType::Message;</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;  }</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;};</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160; </div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;SCORE_LIB_PROCESS_EXPORT</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;std::unique_ptr&lt;Inlet&gt; make_value_inlet(<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp; c, QObject* parent);</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;SCORE_LIB_PROCESS_EXPORT</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;std::unique_ptr&lt;Outlet&gt; make_value_outlet(<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp; c, QObject* parent);</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160; </div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;SCORE_LIB_PROCESS_EXPORT</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;std::unique_ptr&lt;MidiInlet&gt; make_midi_inlet(<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp; c, QObject* parent);</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;SCORE_LIB_PROCESS_EXPORT</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;std::unique_ptr&lt;MidiOutlet&gt;</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;make_midi_outlet(<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp; c, QObject* parent);</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160; </div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;SCORE_LIB_PROCESS_EXPORT</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;std::unique_ptr&lt;AudioInlet&gt;</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;make_audio_inlet(<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp; c, QObject* parent);</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;SCORE_LIB_PROCESS_EXPORT</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;std::unique_ptr&lt;AudioOutlet&gt;</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;make_audio_outlet(<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp; c, QObject* parent);</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160; </div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;}</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160; </div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;DEFAULT_MODEL_METADATA(<a class="code" href="class_process_1_1_port.html">Process::Port</a>, <span class="stringliteral">&quot;Port&quot;</span>)</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160; </div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="classid__base__t.html">Id</a>&lt;<a class="code" href="namespace_process.html">Process</a>::Port&gt;)</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="namespace_process.html">Process</a>::Port)</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160; </div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;<span class="comment">// Q_DECLARE_METATYPE(Process::pan_weight)</span></div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="namespace_process.html">Process</a>::pan_weight)</div>
 <div class="ttc" id="aclass_audio_inlet_html"><div class="ttname"><a href="class_audio_inlet.html">AudioInlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:277</div></div>
 <div class="ttc" id="aclass_audio_outlet_html"><div class="ttname"><a href="class_audio_outlet.html">AudioOutlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:304</div></div>
 <div class="ttc" id="aclass_control_inlet_html"><div class="ttname"><a href="class_control_inlet.html">ControlInlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:101</div></div>
@@ -663,14 +664,14 @@ $(document).ready(function(){initNavTree('score-lib-process_2_process_2_dataflow
 <div class="ttc" id="aclass_process_1_1_audio_outlet_html"><div class="ttname"><a href="class_process_1_1_audio_outlet.html">Process::AudioOutlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:313</div></div>
 <div class="ttc" id="aclass_process_1_1_cable_html"><div class="ttname"><a href="class_process_1_1_cable.html">Process::Cable</a></div><div class="ttdef"><b>Definition:</b> Cable.hpp:54</div></div>
 <div class="ttc" id="aclass_process_1_1_control_inlet_html"><div class="ttname"><a href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:202</div></div>
-<div class="ttc" id="aclass_process_1_1_control_outlet_html"><div class="ttname"><a href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:414</div></div>
+<div class="ttc" id="aclass_process_1_1_control_outlet_html"><div class="ttname"><a href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:415</div></div>
 <div class="ttc" id="aclass_process_1_1_inlet_html"><div class="ttname"><a href="class_process_1_1_inlet.html">Process::Inlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:176</div></div>
-<div class="ttc" id="aclass_process_1_1_midi_inlet_html"><div class="ttname"><a href="class_process_1_1_midi_inlet.html">Process::MidiInlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:368</div></div>
-<div class="ttc" id="aclass_process_1_1_midi_outlet_html"><div class="ttname"><a href="class_process_1_1_midi_outlet.html">Process::MidiOutlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:391</div></div>
+<div class="ttc" id="aclass_process_1_1_midi_inlet_html"><div class="ttname"><a href="class_process_1_1_midi_inlet.html">Process::MidiInlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:369</div></div>
+<div class="ttc" id="aclass_process_1_1_midi_outlet_html"><div class="ttname"><a href="class_process_1_1_midi_outlet.html">Process::MidiOutlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:392</div></div>
 <div class="ttc" id="aclass_process_1_1_outlet_html"><div class="ttname"><a href="class_process_1_1_outlet.html">Process::Outlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:264</div></div>
 <div class="ttc" id="aclass_process_1_1_port_html"><div class="ttname"><a href="class_process_1_1_port.html">Process::Port</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:102</div></div>
-<div class="ttc" id="aclass_process_1_1_value_inlet_html"><div class="ttname"><a href="class_process_1_1_value_inlet.html">Process::ValueInlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:480</div></div>
-<div class="ttc" id="aclass_process_1_1_value_outlet_html"><div class="ttname"><a href="class_process_1_1_value_outlet.html">Process::ValueOutlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:503</div></div>
+<div class="ttc" id="aclass_process_1_1_value_inlet_html"><div class="ttname"><a href="class_process_1_1_value_inlet.html">Process::ValueInlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:481</div></div>
+<div class="ttc" id="aclass_process_1_1_value_outlet_html"><div class="ttname"><a href="class_process_1_1_value_outlet.html">Process::ValueOutlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:504</div></div>
 <div class="ttc" id="aclass_selectable_html"><div class="ttname"><a href="class_selectable.html">Selectable</a></div><div class="ttdoc">The Selectable class.</div><div class="ttdef"><b>Definition:</b> Selectable.hpp:14</div></div>
 <div class="ttc" id="aclass_value_inlet_html"><div class="ttname"><a href="class_value_inlet.html">ValueInlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:69</div></div>
 <div class="ttc" id="aclass_value_outlet_html"><div class="ttname"><a href="class_value_outlet.html">ValueOutlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:247</div></div>
