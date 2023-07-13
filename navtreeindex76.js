@@ -1,6 +1,5 @@
 var NAVTREEINDEX76 =
 {
-"structoscr_1_1_node_item.html#af688eeaa2f9017027679080f523aa623":[12,0,36,41,15],
 "structoscr_1_1_normalizer_from_mapper.html":[12,0,36,2],
 "structoscr_1_1_outlet_init_func.html":[12,0,36,34],
 "structoscr_1_1_outlet_init_func.html#a0bf688481adf04f4c37f1324333ea602":[12,0,36,34,3],
@@ -91,8 +90,8 @@ var NAVTREEINDEX76 =
 "structoscr_1_1setup___impl0.html#a2ad50f84e6eea6ac4a97c6483330c22d":[12,0,36,15,2],
 "structoscr_1_1setup___impl0.html#a475fec302bc8c4f7d8821ee592319084":[12,0,36,15,7],
 "structoscr_1_1setup___impl0.html#a61f8e7ead77c10b7719c85d0dcea206f":[12,0,36,15,9],
-"structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,36,15,4],
 "structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,36,15,5],
+"structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,36,15,4],
 "structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,36,15,6],
 "structoscr_1_1setup___impl0.html#ab0925cd37367396714b0651fb445ad3d":[12,0,36,15,10],
 "structoscr_1_1setup___impl0.html#ac697cbf094cf1842eb7949c2bae9439d":[12,0,36,15,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX76 =
 "structscore_1_1_brush_1_1_pair.html#a993e12ee369f7d57d43997e3ce4a568b":[12,0,48,188,0,1],
 "structscore_1_1_brush_set.html":[12,0,48,187],
 "structscore_1_1_brush_set.html#a1be4bf768fe9a4582d0eea2146068e21":[12,0,48,187,16],
-"structscore_1_1_brush_set.html#a2fb5c1365dc1fcbe24b73faad1a3a7cb":[12,0,48,187,14]
+"structscore_1_1_brush_set.html#a2fb5c1365dc1fcbe24b73faad1a3a7cb":[12,0,48,187,14],
+"structscore_1_1_brush_set.html#a30c2fcee5e8152d46637d4f399539f66":[12,0,48,187,4]
 };

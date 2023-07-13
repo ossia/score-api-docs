@@ -1,6 +1,5 @@
 var NAVTREEINDEX70 =
 {
-"struct_protocols_1_1_artnet_specific_settings.html#a35cf3bc5d13a115d288cc049b2f60b7d":[12,0,42,20,0],
 "struct_protocols_1_1_artnet_specific_settings.html#a4751dce842318274b333b0d0e52d88a0":[12,0,42,20,1],
 "struct_protocols_1_1_artnet_specific_settings.html#a4d06303be75d3e9c621899e5135d8239":[12,0,42,20,3],
 "struct_protocols_1_1_artnet_specific_settings.html#a77b6e21f64d9ce28f5af1710ec4b10df":[12,0,42,20,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX70 =
 "struct_rendered_depth_node_1_1_pass.html#a6210137baab45ca7d4b61fe79d67d581":[12,0,229,0,0],
 "struct_rendered_depth_node_1_1_pass.html#aab507926703f183fc906362e4b121eee":[12,0,229,0,1],
 "struct_rollback_strategy_1_1_simple.html":[12,0,46,0],
-"struct_scenario_1_1_address_accessor_curve_creator.html":[12,0,47,41]
+"struct_scenario_1_1_address_accessor_curve_creator.html":[12,0,47,41],
+"struct_scenario_1_1_address_accessor_curve_creator.html#a03482c9b0e24d012982f601990a43a0c":[12,0,47,41,8]
 };

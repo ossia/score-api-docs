@@ -1,6 +1,5 @@
 var NAVTREEINDEX69 =
 {
-"struct_process_1_1_magnetic_info.html#a96f31e2800f223f03e5043439aa899c4":[12,0,41,7,1],
 "struct_process_1_1_multi_script_dialog_1_1_editor_tab.html":[12,0,41,112,0],
 "struct_process_1_1_multi_script_dialog_1_1_editor_tab.html#aff1d3f9585e815f9d0a8a3d272993c97":[12,0,41,112,0,0],
 "struct_process_1_1_multi_slider.html":[12,0,41,72],
@@ -249,5 +248,6 @@ var NAVTREEINDEX69 =
 "struct_protocols_1_1_artnet_1_1_range_capability.html":[12,0,42,0,2],
 "struct_protocols_1_1_artnet_1_1_range_capability.html#ac9ceade681882eab6953a7ccc54b1588":[12,0,42,0,2,0],
 "struct_protocols_1_1_artnet_1_1_single_capability.html":[12,0,42,0,1],
-"struct_protocols_1_1_artnet_specific_settings.html":[12,0,42,20]
+"struct_protocols_1_1_artnet_specific_settings.html":[12,0,42,20],
+"struct_protocols_1_1_artnet_specific_settings.html#a35cf3bc5d13a115d288cc049b2f60b7d":[12,0,42,20,0]
 };

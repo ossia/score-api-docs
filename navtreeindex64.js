@@ -1,6 +1,5 @@
 var NAVTREEINDEX64 =
 {
-"struct_j_s_1_1_vec4f_value_type.html#ae650c8f426ecbe5bd9dfb9cf9166d106":[12,0,26,13,21],
 "struct_j_s_1_1_vec4f_value_type.html#ae6ea682ca2afa1f71d0d696f1c6ff1b0":[12,0,26,13,19],
 "struct_j_s_1_1_vec4f_value_type.html#aede3cbf23a97b1da2bcaa938f7eb5730":[12,0,26,13,7],
 "struct_j_s_o_n_reader_1_1assigner.html":[12,0,143,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX64 =
 "struct_l_v2_1_1lv2__node.html#a566193105bccd1fd71ddcdfd6e29c6dd":[12,0,29,10,8],
 "struct_l_v2_1_1lv2__node.html#a62a641c57dcbb30fb650836026ab82fe":[12,0,29,10,24],
 "struct_l_v2_1_1lv2__node.html#a69429a150d30cf03bb55acc942e32001":[12,0,29,10,17],
-"struct_l_v2_1_1lv2__node.html#a7719f76c530ff259cb99974e7e9d5c4f":[12,0,29,10,22]
+"struct_l_v2_1_1lv2__node.html#a7719f76c530ff259cb99974e7e9d5c4f":[12,0,29,10,22],
+"struct_l_v2_1_1lv2__node.html#a77f5f3cfdd495d05639ffe2e6473b077":[12,0,29,10,3]
 };

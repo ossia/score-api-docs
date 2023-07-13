@@ -1,6 +1,5 @@
 var NAVTREEINDEX68 =
 {
-"struct_p_m_1_1_package.html#aded79ca64f28ad7630310220f38e693b":[12,0,40,1,0],
 "struct_p_m_1_1_package.html#af63827de50dd0dcd6e4de7f37a80b5c9":[12,0,40,1,4],
 "struct_path_1_1_unsafe_dynamic_creation.html":[12,0,209,0],
 "struct_path_1_1_unsafe_dynamic_creation.html#a1ae8ab891043801685a9cc56c6bf5897":[12,0,209,0,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX68 =
 "struct_process_1_1_magnetic_info.html":[12,0,41,7],
 "struct_process_1_1_magnetic_info.html#a5dc297e0f55d4bbfab3c92aee7346e93":[12,0,41,7,0],
 "struct_process_1_1_magnetic_info.html#a77d6bf73b8fd25e3d44ded1c6c1cd9e6":[12,0,41,7,2],
-"struct_process_1_1_magnetic_info.html#a8150ac3d0a59d9a38182095611e8caa3":[12,0,41,7,3]
+"struct_process_1_1_magnetic_info.html#a8150ac3d0a59d9a38182095611e8caa3":[12,0,41,7,3],
+"struct_process_1_1_magnetic_info.html#a96f31e2800f223f03e5043439aa899c4":[12,0,41,7,1]
 };

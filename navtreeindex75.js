@@ -1,6 +1,5 @@
 var NAVTREEINDEX75 =
 {
-"structavnd__tools_1_1_pattern_sweeper.html#abb402b8decddec07b09e110d9405b382":[12,0,3,4,10],
 "structavnd__tools_1_1_pattern_sweeper.html#ac7f1adf06bf139e5c6894685b041f797":[12,0,3,4,6],
 "structavnd__tools_1_1_pattern_unfolder.html":[12,0,3,2],
 "structavnd__tools_1_1_pattern_unfolder.html#a32ab76480644571ddc1d5203b99a6d4d":[12,0,3,2,7],
@@ -249,5 +248,6 @@ var NAVTREEINDEX75 =
 "structoscr_1_1_node_item.html#ac1bc4dccee36bdf32cc4cbe805b3553e":[12,0,36,41,4],
 "structoscr_1_1_node_item.html#ac47435bb5ec2e592b4ce4a2bad66adb3":[12,0,36,41,6],
 "structoscr_1_1_node_item.html#ad187846272df226559d3c36aab8d0015":[12,0,36,41,0],
-"structoscr_1_1_node_item.html#af5253160d95c33e8fd6e012a84fa2b72":[12,0,36,41,17]
+"structoscr_1_1_node_item.html#af5253160d95c33e8fd6e012a84fa2b72":[12,0,36,41,17],
+"structoscr_1_1_node_item.html#af688eeaa2f9017027679080f523aa623":[12,0,36,41,15]
 };

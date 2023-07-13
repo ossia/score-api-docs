@@ -147,7 +147,6 @@ var NAVTREEINDEX58 =
 "score__plugin__avnd_8graph_8cpp.html#a18b244ce2be8e952ff87f6d5d8a947a8":[11,0,38,47],
 "score__plugin__avnd_8graph_8cpp.html#a80e4a1cca07114f4e8cbaf8d6b7ba94e":[11,0,38,57],
 "score__plugin__avnd_8hpp_source.html":[13,0,1153],
-"score__plugin__avnd_8tests2_8cpp.html#a009a050bf2cd1fc54b83cedc19653ab1":[11,0,38,70],
 "score__plugin__controlsurface_8hpp_source.html":[13,0,1154],
 "score__plugin__curve_8hpp_source.html":[13,0,1155],
 "score__plugin__dataflow_8hpp_source.html":[13,0,1156],
@@ -249,5 +248,6 @@ var NAVTREEINDEX58 =
 "struct_analysis_1_1_mel_spectrum.html#a656b705d1a1e9d0d71acd4905795d257":[12,0,0,11,1],
 "struct_analysis_1_1_mel_spectrum_1_1_metadata.html":[12,0,0,11,0],
 "struct_analysis_1_1_peak.html":[12,0,0,5],
-"struct_analysis_1_1_peak.html#a843a2c42b800077f0b3787f20dd878af":[12,0,0,5,1]
+"struct_analysis_1_1_peak.html#a843a2c42b800077f0b3787f20dd878af":[12,0,0,5,1],
+"struct_analysis_1_1_peak.html#ac0d9d21c59c0d6a883843c4e3982ebec":[12,0,0,5,2]
 };

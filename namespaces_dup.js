@@ -971,7 +971,6 @@ var namespaces_dup =
       [ "to_const_char_array", "_concepts_8hpp.html#a470933d4aa0f26445688a075ae1a4580", null ],
       [ "to_const_char_array", "_concepts_8hpp.html#a077b98b776c76c8032719bd9a36df0d2", null ],
       [ "to_enum_range", "_concepts_8hpp.html#a3485f6ba44ea190b669be45a72a3ba31", null ],
-      [ "to_ossia_value", "score__plugin__avnd_8tests2_8cpp.html#a009a050bf2cd1fc54b83cedc19653ab1", null ],
       [ "uuid_from_string", "_concepts_8hpp.html#ade1b186372a47d2d96df038e29707761", null ],
       [ "GpuComputeNode2", "_metadatas_8hpp.html#a6d690fba293ecfe0eb33de946626567d", null ],
       [ "GpuGraphicsNode2", "_metadatas_8hpp.html#ab51e832f1b0ff30b6cc6f759b1674b43", null ],
