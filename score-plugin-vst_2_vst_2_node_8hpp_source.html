@@ -421,7 +421,7 @@ $(document).ready(function(){initNavTree('score-plugin-vst_2_vst_2_node_8hpp_sou
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;      {</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <span class="keywordflow">if</span> constexpr(IsSynth)</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        {</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;          dispatchMidi(timings.start_sample, [=] {</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;          dispatchMidi(timings.start_sample, [<span class="keyword">this</span>, timings] {</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;            processDouble(timings.start_sample, timings.length);</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;          });</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        }</div>
@@ -434,7 +434,7 @@ $(document).ready(function(){initNavTree('score-plugin-vst_2_vst_2_node_8hpp_sou
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;      {</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="keywordflow">if</span> constexpr(IsSynth)</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        {</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;          dispatchMidi(timings.start_sample, [=] {</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;          dispatchMidi(timings.start_sample, [<span class="keyword">this</span>, timings] {</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;            processFloat(timings.start_sample, timings.length);</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;          });</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        }</div>

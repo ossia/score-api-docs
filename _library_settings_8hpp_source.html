@@ -120,11 +120,11 @@ $(document).ready(function(){initNavTree('_library_settings_8hpp_source.html',''
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">private:                                                              \</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">  QLineEdit* m_##Control{};</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define SETTINGS_UI_PATH_SETUP(Text, Control)                   \</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">  m_##Control = new QLineEdit{m_widg};                          \</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">  lay-&gt;addRow(tr(Text), m_##Control);                           \</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">  connect(m_##Control, &amp;QLineEdit::editingFinished, this, [=] { \</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">    Control##Changed(m_##Control-&gt;text());                      \</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define SETTINGS_UI_PATH_SETUP(Text, Control)                      \</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">  m_##Control = new QLineEdit{m_widg};                             \</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">  lay-&gt;addRow(tr(Text), m_##Control);                              \</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">  connect(m_##Control, &amp;QLineEdit::editingFinished, this, [this] { \</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">    Control##Changed(m_##Control-&gt;text());                         \</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">  });</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define SETTINGS_UI_PATH_IMPL(Control) \</span></div>

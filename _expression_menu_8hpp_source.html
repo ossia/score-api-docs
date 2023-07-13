@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('_expression_menu_8hpp_source.html','')
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      , deleteAction{menu-&gt;addAction(QObject::tr(<span class="stringliteral">&quot;Disable&quot;</span>))}</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      , editAction{menu-&gt;addAction(QObject::tr(<span class="stringliteral">&quot;Edit&quot;</span>))}</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    connect(editAction, &amp;QAction::triggered, <span class="keyword">this</span>, [=] {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    connect(editAction, &amp;QAction::triggered, <span class="keyword">this</span>, [<span class="keyword">this</span>, f = std::move(f)] {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <span class="keywordtype">bool</span> ok = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      <span class="keyword">auto</span> str = QInputDialog::getText(</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;          <span class="keyword">nullptr</span>, tr(<span class="stringliteral">&quot;Edit expression&quot;</span>), tr(<span class="stringliteral">&quot;Edit expression&quot;</span>), QLineEdit::Normal,</div>

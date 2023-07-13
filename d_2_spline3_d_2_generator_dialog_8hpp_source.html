@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('d_2_spline3_d_2_generator_dialog_8hpp_
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    lay-&gt;insertLayout(2, controls);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    connect(</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        step, qOverload&lt;double&gt;(&amp;QDoubleSpinBox::valueChanged), <span class="keyword">this</span>,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        [=](<span class="keywordtype">double</span> step) { m_step = step; });</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        [<span class="keyword">this</span>](<span class="keywordtype">double</span> step) { m_step = step; });</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    expr.add_variable(<span class="stringliteral">&quot;t&quot;</span>, t);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    expr.add_variable(<span class="stringliteral">&quot;x&quot;</span>, x);</div>
