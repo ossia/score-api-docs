@@ -6,9 +6,7 @@ var struct_protocols_1_1_m_i_d_i_specific_settings =
     ] ],
     [ "api", "struct_protocols_1_1_m_i_d_i_specific_settings.html#ad7f2505ac8519745180bff227d4c839c", null ],
     [ "createWholeTree", "struct_protocols_1_1_m_i_d_i_specific_settings.html#abf02cc93a9b4d649449462339194e5a2", null ],
-    [ "endpoint", "struct_protocols_1_1_m_i_d_i_specific_settings.html#a96edc66808394ecd36565c282ed78a4f", null ],
+    [ "handle", "struct_protocols_1_1_m_i_d_i_specific_settings.html#a3f51d4bced12a9a01e63dabc5dcac178", null ],
     [ "io", "struct_protocols_1_1_m_i_d_i_specific_settings.html#a45d0b66099e23983018916be08499b2f", null ],
-    [ "name", "struct_protocols_1_1_m_i_d_i_specific_settings.html#aed1c55ef6309a262de2cb4f6aea9ad8e", null ],
-    [ "port", "struct_protocols_1_1_m_i_d_i_specific_settings.html#ac5393555c2e6eda810e8d69e1cd5c1c0", null ],
     [ "virtualPort", "struct_protocols_1_1_m_i_d_i_specific_settings.html#ad256b7fc3acf2b9248057e95cd1cba9c", null ]
 ];

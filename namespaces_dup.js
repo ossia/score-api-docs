@@ -1138,7 +1138,7 @@ var namespaces_dup =
       [ "LibmapperClientProtocolSettingsWidget", "class_protocols_1_1_libmapper_client_protocol_settings_widget.html", "class_protocols_1_1_libmapper_client_protocol_settings_widget" ],
       [ "LibraryDeviceEnumerator", "class_protocols_1_1_library_device_enumerator.html", "class_protocols_1_1_library_device_enumerator" ],
       [ "MIDIDevice", "class_protocols_1_1_m_i_d_i_device.html", "class_protocols_1_1_m_i_d_i_device" ],
-      [ "MidiEnumerator", "class_protocols_1_1_midi_enumerator.html", null ],
+      [ "MidiEnumerator", "class_protocols_1_1_midi_enumerator.html", "class_protocols_1_1_midi_enumerator" ],
       [ "MIDIInputProtocolFactory", "class_protocols_1_1_m_i_d_i_input_protocol_factory.html", "class_protocols_1_1_m_i_d_i_input_protocol_factory" ],
       [ "MIDIOutputProtocolFactory", "class_protocols_1_1_m_i_d_i_output_protocol_factory.html", "class_protocols_1_1_m_i_d_i_output_protocol_factory" ],
       [ "MIDIInputSettingsWidget", "class_protocols_1_1_m_i_d_i_input_settings_widget.html", "class_protocols_1_1_m_i_d_i_input_settings_widget" ],
