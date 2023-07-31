@@ -209,7 +209,7 @@ $(document).ready(function(){initNavTree('_default_graphics_spinbox_impl_8hpp_so
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  requires std::is_integral_v&lt;std::decay_t&lt;decltype(std::declval&lt;T&gt;().value())&gt;&gt;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> contextMenuEvent(T&amp; <span class="keyword">self</span>, QPointF pos)</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    QTimer::singleShot(0, [&amp;, self_p = &amp;<span class="keyword">self</span>, pos] {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    QTimer::singleShot(0, &amp;<span class="keyword">self</span>, [&amp;, self_p = &amp;<span class="keyword">self</span>, pos] {</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      <span class="keyword">auto</span> w = <span class="keyword">new</span> <a class="code" href="structscore_1_1_spinbox_with_enter.html">SpinboxWithEnter</a>;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      w-&gt;setRange(<span class="keyword">self</span>.min, <span class="keyword">self</span>.max);</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
@@ -247,7 +247,7 @@ $(document).ready(function(){initNavTree('_default_graphics_spinbox_impl_8hpp_so
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  requires std::is_floating_point_v&lt;std::decay_t&lt;decltype(std::declval&lt;T&gt;().value())&gt;&gt;</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> contextMenuEvent(T&amp; <span class="keyword">self</span>, QPointF pos)</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  {</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    QTimer::singleShot(0, [&amp;, self_p = &amp;<span class="keyword">self</span>, pos] {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    QTimer::singleShot(0, &amp;<span class="keyword">self</span>, [&amp;, self_p = &amp;<span class="keyword">self</span>, pos] {</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      <span class="keyword">auto</span> w = <span class="keyword">new</span> <a class="code" href="structscore_1_1_double_spinbox_with_enter.html">DoubleSpinboxWithEnter</a>;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      w-&gt;setRange(<span class="keyword">self</span>.min, <span class="keyword">self</span>.max);</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
