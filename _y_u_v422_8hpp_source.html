@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('_y_u_v422_8hpp_source.html',''); initR
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_y_u_v422_decoder.html">   17</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structscore_1_1gfx_1_1_y_u_v422_decoder.html">YUV422Decoder</a> : <a class="code" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html">GPUVideoDecoder</a></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> yuv420_filter = R<span class="stringliteral">&quot;_(#version 450</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> yuv422_filter = R<span class="stringliteral">&quot;_(#version 450</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="stringliteral"></span> </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="stringliteral">layout(std140, binding = 0) uniform renderer_t {</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="stringliteral">mat4 clipSpaceCorrMatrix;</span></div>
@@ -140,13 +140,13 @@ $(document).ready(function(){initNavTree('_y_u_v422_8hpp_source.html',''); initR
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="stringliteral">}</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="stringliteral">)_&quot;;</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="stringliteral"></span> </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="stringliteral">  <a class="code" href="structscore_1_1gfx_1_1_y_u_v422_decoder.html">YUV422Decoder</a>(<a class="code" href="struct_video_1_1_image_format.html">Video::ImageFormat</a>&amp; d)</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="stringliteral">      : decoder{d}</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="stringliteral">  {</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="stringliteral">  }</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="stringliteral"></span> </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="stringliteral">  <a class="code" href="struct_video_1_1_image_format.html">Video::ImageFormat</a>&amp; decoder;</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_y_u_v422_decoder.html#a925599e8c758526409d18a6315fa1fae">   56</a></span>&#160;<span class="stringliteral">  std::pair&lt;QShader, QShader&gt; <a class="code" href="structscore_1_1gfx_1_1_y_u_v422_decoder.html#a925599e8c758526409d18a6315fa1fae">init</a>(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r)</span><span class="keyword"> override</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="stringliteral">  </span><span class="keyword">explicit</span> <a class="code" href="structscore_1_1gfx_1_1_y_u_v422_decoder.html">YUV422Decoder</a>(<a class="code" href="struct_video_1_1_image_format.html">Video::ImageFormat</a>&amp; d)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      : decoder{d}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="struct_video_1_1_image_format.html">Video::ImageFormat</a>&amp; decoder;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_y_u_v422_decoder.html#a925599e8c758526409d18a6315fa1fae">   56</a></span>&#160;  std::pair&lt;QShader, QShader&gt; <a class="code" href="structscore_1_1gfx_1_1_y_u_v422_decoder.html#a925599e8c758526409d18a6315fa1fae">init</a>(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r)<span class="keyword"> override</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">  </span>{</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">auto</span>&amp; rhi = *r.<a class="code" href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">state</a>.rhi;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
@@ -187,7 +187,7 @@ $(document).ready(function(){initNavTree('_y_u_v422_8hpp_source.html',''); initR
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      samplers.push_back({sampler, tex});</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacescore_1_1gfx.html#ada75ef58fe373211a06093b50051b6e0">score::gfx::makeShaders</a>(r.<a class="code" href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">state</a>, vertexShader(), yuv420_filter);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacescore_1_1gfx.html#ada75ef58fe373211a06093b50051b6e0">score::gfx::makeShaders</a>(r.<a class="code" href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">state</a>, vertexShader(), yuv422_filter);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  }</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
 <div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_y_u_v422_decoder.html#a94950bc858149c7b3972087c4ede7fe2">  100</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="structscore_1_1gfx_1_1_y_u_v422_decoder.html#a94950bc858149c7b3972087c4ede7fe2">exec</a>(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;, QRhiResourceUpdateBatch&amp; res, AVFrame&amp; frame)<span class="keyword"> override</span></div>

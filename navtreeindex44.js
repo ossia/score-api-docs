@@ -1,5 +1,7 @@
 var NAVTREEINDEX44 =
 {
+"class_y_s_f_x_1_1_application_plugin.html":[12,0,61,3],
+"class_y_s_f_x_1_1_application_plugin.html#a4f7703101d1b4429b60d4fc2980b602c":[12,0,61,3,0],
 "class_y_s_f_x_1_1_application_plugin.html#a8d0f5d971abc2bcce86a356ef71e2b44":[12,0,61,3,2],
 "class_y_s_f_x_1_1_application_plugin.html#af300cde11530323ecdc62a580491934d":[12,0,61,3,1],
 "class_y_s_f_x_1_1_drop_handler.html":[12,0,61,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX44 =
 "classscore_1_1_application_registrar.html#a8fafc59ad722266bd6e6231dddea6e77":[12,0,48,13,5],
 "classscore_1_1_application_registrar.html#a9fb909db41db2c4aa64d4a42e5f15367":[12,0,48,13,2],
 "classscore_1_1_application_registrar.html#aa4266c4394056bb1b467cf5b23c9ec60":[12,0,48,13,3],
-"classscore_1_1_application_registrar.html#ab6bb8945df0d26eed0cebe6ec598d7aa":[12,0,48,13,0],
-"classscore_1_1_application_registrar.html#ac22e185bf2ad553c276cffbff3832c7c":[12,0,48,13,1],
-"classscore_1_1_arrow_button.html":[12,0,48,266]
+"classscore_1_1_application_registrar.html#ab6bb8945df0d26eed0cebe6ec598d7aa":[12,0,48,13,0]
 };

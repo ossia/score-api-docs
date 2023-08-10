@@ -1,5 +1,7 @@
 var NAVTREEINDEX60 =
 {
+"struct_control_1_1_button.html#aebd8ff2a1ff6a868a1f58119c3505b39":[12,0,6,6,6],
+"struct_control_1_1_chooser_toggle.html":[12,0,6,9],
 "struct_control_1_1_chooser_toggle.html#a0a2a18a01602facbcf58e0f120517723":[12,0,6,9,9],
 "struct_control_1_1_chooser_toggle.html#a148850699d520caa92bae3a0c071c805":[12,0,6,9,1],
 "struct_control_1_1_chooser_toggle.html#a155240fb5092539f2d9f95fef8f8774e":[12,0,6,9,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX60 =
 "struct_control_1_1setup___impl0_1_1con__unvalidated.html#a056ccf93dc400eb349129699e9290d12":[12,0,6,18,0,1],
 "struct_control_1_1setup___impl0_1_1con__unvalidated.html#a218202e751d80c63a52ed2e74810784b":[12,0,6,18,0,0],
 "struct_control_1_1setup___impl0_1_1con__unvalidated.html#a50135261bf55c41720eb0994ec945aab":[12,0,6,18,0,2],
-"struct_control_1_1setup___impl0_1_1con__validated.html":[12,0,6,18,1],
-"struct_control_1_1setup___impl0_1_1con__validated.html#a22a0775fd28ea82dac68d66d94963652":[12,0,6,18,1,1],
-"struct_control_1_1setup___impl0_1_1con__validated.html#abc6fbc0e50d0ccea721ce238ca42c2b8":[12,0,6,18,1,2]
+"struct_control_1_1setup___impl0_1_1con__validated.html":[12,0,6,18,1]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX59 =
 {
+"score-plugin-vst3_2_vst3_2_node_8hpp.html#af4813f030a272a187bc26050b4e088d5":[11,0,61,35],
+"score-plugin-vst3_2_vst3_2_node_8hpp_source.html":[13,0,830],
 "score-plugin-vst3_2_vst3_2_widgets_8hpp_source.html":[13,0,1441],
 "score-plugin-vst_2_vst_2_application_plugin_8hpp_source.html":[13,0,60],
 "score-plugin-vst_2_vst_2_commands_8cpp.html#a5b8b48626c47a95408f8dfe1b281ab3a":[11,0,60,23],
@@ -247,7 +249,5 @@ var NAVTREEINDEX59 =
 "struct_control_1_1_button.html#a63e5c8c0ef1442bad5dfd03a8b393e2c":[12,0,6,6,4],
 "struct_control_1_1_button.html#a84159c893b2c1c2a034f2a8d98b92311":[12,0,6,6,1],
 "struct_control_1_1_button.html#acea2931e183db113cb3d1a84429df07b":[12,0,6,6,2],
-"struct_control_1_1_button.html#ad8647dbbbb2d19101fd9c314c9c0b85b":[12,0,6,6,0],
-"struct_control_1_1_button.html#aebd8ff2a1ff6a868a1f58119c3505b39":[12,0,6,6,6],
-"struct_control_1_1_chooser_toggle.html":[12,0,6,9]
+"struct_control_1_1_button.html#ad8647dbbbb2d19101fd9c314c9c0b85b":[12,0,6,6,0]
 };

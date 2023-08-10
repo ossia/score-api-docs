@@ -1,5 +1,7 @@
 var NAVTREEINDEX41 =
 {
+"class_scenario_1_1_time_signature_item.html#a5157a96ca3203e82141b8ce8b6ff3c1a":[12,0,47,114,4],
+"class_scenario_1_1_time_signature_item.html#a9119634af40dffc58206de90a5040dbd":[12,0,47,114,1],
 "class_scenario_1_1_time_signature_item.html#a997b6ee5aac0403dec7d41bc18ae4666":[12,0,47,114,5],
 "class_scenario_1_1_time_signature_item.html#ab13b7d3f757f405b6b11b26f21e5a3bc":[12,0,47,114,3],
 "class_scenario_1_1_time_signature_item.html#af3e2e5c339f6c2455935ae6171b4cf1c":[12,0,47,114,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX41 =
 "class_spline3_d_1_1_change_spline.html#ac6371d26094d53e4fa7ee75de043f6b9":[12,0,51,1,0],
 "class_spline3_d_1_1_change_spline.html#accb6200b3b0d4f6c7bac9de3d1390487":[12,0,51,1,4],
 "class_spline3_d_1_1_generator_dialog.html":[12,0,51,2],
-"class_spline3_d_1_1_generator_dialog.html#a00937cc599c0ec3a5dea1d000941a04d":[12,0,51,2,2],
-"class_spline3_d_1_1_generator_dialog.html#a1b592f7e809ad2be88e577719d615e0c":[12,0,51,2,3],
-"class_spline3_d_1_1_generator_dialog.html#a25c7745bf9a008e38b201a351d926784":[12,0,51,2,5]
+"class_spline3_d_1_1_generator_dialog.html#a00937cc599c0ec3a5dea1d000941a04d":[12,0,51,2,2]
 };

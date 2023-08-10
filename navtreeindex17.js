@@ -1,5 +1,7 @@
 var NAVTREEINDEX17 =
 {
+"class_gfx_1_1_gfx_context.html#a27273530c8430156fa3fd63565226a42":[12,0,18,18,15],
+"class_gfx_1_1_gfx_context.html#a45d916f247c523eb14d2fa06201de5cd":[12,0,18,18,9],
 "class_gfx_1_1_gfx_context.html#a4fa73685b9410bcf6cfbbeb9e204bcb5":[12,0,18,18,6],
 "class_gfx_1_1_gfx_context.html#a57150adbe94edd25cd66707e8b8e57de":[12,0,18,18,13],
 "class_gfx_1_1_gfx_context.html#a6432f3e5a9bd6cccea3319ccc7111f2e":[12,0,18,18,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX17 =
 "class_gfx_1_1_syphon_device.html#ad38d5eab33f0cb5aa0935b62111501f6":[12,0,18,58,0],
 "class_gfx_1_1_syphon_protocol_factory.html":[12,0,18,57],
 "class_gfx_1_1_syphon_protocol_factory.html#a0888816ba81853fde8437ceba1b41d2f":[12,0,18,57,1],
-"class_gfx_1_1_syphon_protocol_factory.html#a3f01a75eea260187482578bebcbdf4ee":[12,0,18,57,2],
-"class_gfx_1_1_syphon_protocol_factory.html#a9201e9c35a537d68aaa529b9201b0242":[12,0,18,57,0],
-"class_gfx_1_1_syphon_protocol_factory.html#ad83e91bfc05d8a71832e12ca4418d859":[12,0,18,57,3]
+"class_gfx_1_1_syphon_protocol_factory.html#a3f01a75eea260187482578bebcbdf4ee":[12,0,18,57,2]
 };

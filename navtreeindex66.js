@@ -1,5 +1,7 @@
 var NAVTREEINDEX66 =
 {
+"struct_media_1_1_audio_file.html#a7db98341c7e88a05ee504e769a07c0fc":[12,0,31,15,12],
+"struct_media_1_1_audio_file.html#a82bc5f61c6c1eafff15f457ee7372dcf":[12,0,31,15,27],
 "struct_media_1_1_audio_file.html#aa65854a5b6329a4fa3c33f2becf11654":[12,0,31,15,11],
 "struct_media_1_1_audio_file.html#aacc732ca61c3fab580478bda39d0a028":[12,0,31,15,25],
 "struct_media_1_1_audio_file.html#ab48a43020ddf1c1a248dc1c566cbb8fd":[12,0,31,15,29],
@@ -247,7 +249,5 @@ var NAVTREEINDEX66 =
 "struct_midi_1_1_midi_track_1_1_midi_song.html#af1f59e30d3c0707d375eb0a7153d61ed":[12,0,32,15,0,4],
 "struct_midi_1_1_note_comparator.html":[12,0,32,17],
 "struct_midi_1_1_note_comparator.html#a711f2c6b750ec96e0af8968e4ccceaac":[12,0,32,17,1],
-"struct_midi_1_1_note_comparator.html#afdc60b73ffe5f4990828c5f4b90a2def":[12,0,32,17,0],
-"struct_midi_1_1_note_data.html":[12,0,32,16],
-"struct_midi_1_1_note_data.html#a01bf215d009b36f18527507d9e1550a0":[12,0,32,16,2]
+"struct_midi_1_1_note_comparator.html#afdc60b73ffe5f4990828c5f4b90a2def":[12,0,32,17,0]
 };

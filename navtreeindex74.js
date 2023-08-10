@@ -1,5 +1,7 @@
 var NAVTREEINDEX74 =
 {
+"struct_sync_info.html#a556d85711b4bf33522a7c9b53f6c1831":[12,0,281,1],
+"struct_sync_info.html#ae0523854c5dda0fac003c4d80c94ce4c":[12,0,281,3],
 "struct_t_serializer.html":[12,0,294],
 "struct_t_serializer_3_01_data_stream_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[12,0,299],
 "struct_t_serializer_3_01_data_stream_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html#a597e6880dbefd4291d7c4b4c536b89f9":[12,0,299,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX74 =
 "struct_video_1_1_decoder_configuration.html#a9fea70bd0cebc2d62b54d165ef9f9b11":[12,0,56,4,3],
 "struct_video_1_1_frame_queue.html":[12,0,56,2],
 "struct_video_1_1_frame_queue.html#a0c8aa97d7d6067602d4b6db96676e811":[12,0,56,2,14],
-"struct_video_1_1_frame_queue.html#a11081a717113677ae6586c09a291fa63":[12,0,56,2,4],
-"struct_video_1_1_frame_queue.html#a14fcc80f6c0124b4abfd87a500bae728":[12,0,56,2,0],
-"struct_video_1_1_frame_queue.html#a1ff601f6051c73bc6f5e9f49c6effc60":[12,0,56,2,16]
+"struct_video_1_1_frame_queue.html#a11081a717113677ae6586c09a291fa63":[12,0,56,2,4]
 };
