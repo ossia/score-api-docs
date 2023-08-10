@@ -1,5 +1,7 @@
 var NAVTREEINDEX25 =
 {
+"class_nodal_1_1_create_node.html#a7b07e7d8f0dfcc5e28139aee1a36bc07":[12,0,34,1,4],
+"class_nodal_1_1_create_node.html#ae24342875718254ef05e47cb67d3ca2b":[12,0,34,1,5],
 "class_nodal_1_1_drop_nodes_macro.html":[12,0,34,0],
 "class_nodal_1_1_hierarchy_manager.html":[12,0,34,7],
 "class_nodal_1_1_hierarchy_manager.html#a1ab04196478949e2240d0149676edc52":[12,0,34,7,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX25 =
 "class_patternist_1_1_view.html#a623bd161f85b99dce3bee4d78f6fa0f5":[12,0,38,11,4],
 "class_patternist_1_1_view.html#aac0b723fbbdc508fce3804b3b2bd8b57":[12,0,38,11,0],
 "class_patternist_1_1_view.html#ad290caec6c30ec266a9383a68860636b":[12,0,38,11,1],
-"class_patternist_1_1_view.html#af4dd69c354e36f01e4858545ac007d02":[12,0,38,11,2],
-"class_patternist_1_1pattern__node.html":[12,0,38,1],
-"class_patternist_1_1pattern__node.html#a46eb90d7b3380d415af0fc44b574a258":[12,0,38,1,3]
+"class_patternist_1_1_view.html#af4dd69c354e36f01e4858545ac007d02":[12,0,38,11,2]
 };

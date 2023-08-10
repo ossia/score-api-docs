@@ -1,5 +1,7 @@
 var NAVTREEINDEX70 =
 {
+"struct_process_1_1_state_node_values.html#ad62f1b83e2cd614eb4f4dd04dac2a52a":[12,0,41,117,1],
+"struct_process_1_1_state_node_values.html#ad681e156ad5e1557ca1ce236e9e24610":[12,0,41,117,6],
 "struct_process_1_1_state_node_values.html#ae5570d12dfe8efdd65f86461ee6c3282":[12,0,41,117,3],
 "struct_process_1_1_style.html":[12,0,41,120],
 "struct_process_1_1_style.html#a0197decabf92b5b04303b4657765dce9":[12,0,41,120,48],
@@ -247,7 +249,5 @@ var NAVTREEINDEX70 =
 "struct_protocols_1_1_wheel_slot.html":[12,0,42,13],
 "struct_protocols_1_1_wheel_slot.html#a5cb456edfe993a7654e5f675f7ee1af8":[12,0,42,13,0],
 "struct_protocols_1_1_wheel_slot.html#afaa1950d35fcf4ed4705e6f6a81f977b":[12,0,42,13,1],
-"struct_protocols_1_1_wiimote_specific_settings.html":[12,0,42,84],
-"struct_protocols_1_1_wiimote_specific_settings.html#a122bb1e9f70fcfd0037befffe76affc2":[12,0,42,84,0],
-"struct_q_map_key_adaptor.html":[12,0,218]
+"struct_protocols_1_1_wiimote_specific_settings.html":[12,0,42,84]
 };

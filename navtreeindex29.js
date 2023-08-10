@@ -1,5 +1,7 @@
 var NAVTREEINDEX29 =
 {
+"class_process_1_1_process_script_edit_dialog.html#a78301f0d0efb740d5835dc62def4873d":[12,0,41,115,0],
+"class_process_1_1_process_script_edit_dialog.html#aab4a3232346b790a2bff046a01a8cc82":[12,0,41,115,2],
 "class_process_1_1_script_dialog.html":[12,0,41,114],
 "class_process_1_1_script_dialog.html#a46805dca1d8bcceff11901b2d5b03146":[12,0,41,114,3],
 "class_process_1_1_script_dialog.html#a4e5f4703a960457675c61d2221005346":[12,0,41,114,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX29 =
 "class_protocols_1_1_minuit_protocol_settings_widget.html#a88342754b4c0db671c36c429516846b1":[12,0,42,50,7],
 "class_protocols_1_1_minuit_protocol_settings_widget.html#a93566f1a279caf38d4b64ae2d490ae1e":[12,0,42,50,2],
 "class_protocols_1_1_minuit_protocol_settings_widget.html#a98349cf151e2aa1e4d35c316ea952367":[12,0,42,50,8],
-"class_protocols_1_1_minuit_protocol_settings_widget.html#acab4278fc5edc9ca6e0a5eaa141b9533":[12,0,42,50,6],
-"class_protocols_1_1_minuit_protocol_settings_widget.html#aceb3a677e9f09f77bb854928af446dd2":[12,0,42,50,4],
-"class_protocols_1_1_minuit_protocol_settings_widget.html#adcdf81d4a96ed09bd7b0e10c398828d7":[12,0,42,50,0]
+"class_protocols_1_1_minuit_protocol_settings_widget.html#acab4278fc5edc9ca6e0a5eaa141b9533":[12,0,42,50,6]
 };

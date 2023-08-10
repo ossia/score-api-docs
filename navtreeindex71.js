@@ -1,5 +1,7 @@
 var NAVTREEINDEX71 =
 {
+"struct_protocols_1_1_wiimote_specific_settings.html#a122bb1e9f70fcfd0037befffe76affc2":[12,0,42,84,0],
+"struct_q_map_key_adaptor.html":[12,0,218],
 "struct_q_map_key_adaptor.html#a2d04c4beb09e6a21b14e03522698c229":[12,0,218,1],
 "struct_q_map_key_adaptor.html#aa37c93e953e29b4e8abbaba0dd83f4e2":[12,0,218,2],
 "struct_q_map_key_adaptor.html#ad89a272f642401011590109662f9856a":[12,0,218,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX71 =
 "struct_scenario_1_1_curve_creator.html":[12,0,47,43],
 "struct_scenario_1_1_curve_creator.html#a02c1941c4af80151f4a326873fb80c81":[12,0,47,43,4],
 "struct_scenario_1_1_curve_creator.html#a1b9eb0843ad1fe67c99e924ee709ee7e":[12,0,47,43,8],
-"struct_scenario_1_1_curve_creator.html#a2821a49ed7ff0ff5395e68dde319e97b":[12,0,47,43,13],
-"struct_scenario_1_1_curve_creator.html#a2cac7d6d95d1aa326e151072732eab49":[12,0,47,43,0],
-"struct_scenario_1_1_curve_creator.html#a40719bc013ba6de055834ebaf6015c49":[12,0,47,43,12]
+"struct_scenario_1_1_curve_creator.html#a2821a49ed7ff0ff5395e68dde319e97b":[12,0,47,43,13]
 };

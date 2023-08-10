@@ -1,5 +1,7 @@
 var NAVTREEINDEX18 =
 {
+"class_gfx_1_1_syphon_protocol_factory.html#a0888816ba81853fde8437ceba1b41d2f":[12,0,18,57,1],
+"class_gfx_1_1_syphon_protocol_factory.html#a3f01a75eea260187482578bebcbdf4ee":[12,0,18,57,2],
 "class_gfx_1_1_syphon_protocol_factory.html#a9201e9c35a537d68aaa529b9201b0242":[12,0,18,57,0],
 "class_gfx_1_1_syphon_protocol_factory.html#ad83e91bfc05d8a71832e12ca4418d859":[12,0,18,57,3],
 "class_gfx_1_1_syphon_settings_widget.html":[12,0,18,59],
@@ -247,7 +249,5 @@ var NAVTREEINDEX18 =
 "class_hierarchical_scenario_component.html#a16a75b3d886c22c1ccd2e39059d9f031":[12,0,122,6],
 "class_hierarchical_scenario_component.html#a2a2c4c29dfb322aecc3ef1785f2bc8ae":[12,0,122,10],
 "class_hierarchical_scenario_component.html#a426bce703a6724c23b9d12944b2c4513":[12,0,122,12],
-"class_hierarchical_scenario_component.html#a57823cee1afc751dbbf953dd94a0b602":[12,0,122,7],
-"class_hierarchical_scenario_component.html#a6458f41b3caf1a9b9d480564e4aea44a":[12,0,122,8],
-"class_hierarchical_scenario_component.html#a790566cb77ec6c3421418e8971c2299d":[12,0,122,4]
+"class_hierarchical_scenario_component.html#a57823cee1afc751dbbf953dd94a0b602":[12,0,122,7]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX63 =
 {
+"struct_faust_1_1_u_i.html#a331b8f0755fbf7a69e14c775aa01b5b1":[12,0,16,4,2],
+"struct_faust_1_1_u_i.html#a3eeb009669e50ed4b2822a3636a0110c":[12,0,16,4,5],
 "struct_faust_1_1_u_i.html#a51dbb56919e13dae4ad21358092cf88f":[12,0,16,4,11],
 "struct_faust_1_1_u_i.html#a5b0afa474a42b369d306a368d7163466":[12,0,16,4,3],
 "struct_faust_1_1_u_i.html#a7886bbaf97dddef72eaedcd1f3bc0f86":[12,0,16,4,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX63 =
 "struct_hierarchical_scenario_component_1_1_event_pair.html#a8d2e7c29f463e46116b8f63afe7d3fd8":[12,0,122,0,1],
 "struct_hierarchical_scenario_component_1_1_event_pair.html#af1d12626d4db4bb3785306edc46d0f90":[12,0,122,0,0],
 "struct_hierarchical_scenario_component_1_1_interval_pair.html":[12,0,122,1],
-"struct_hierarchical_scenario_component_1_1_interval_pair.html#a4cd040e3c56e8d7f43c39f46b7c8fe38":[12,0,122,1,2],
-"struct_hierarchical_scenario_component_1_1_interval_pair.html#a51f84a65f82f968580dc9a37f48c138c":[12,0,122,1,0],
-"struct_hierarchical_scenario_component_1_1_interval_pair.html#ae50583b727bb8bfca606a4eda8270129":[12,0,122,1,1]
+"struct_hierarchical_scenario_component_1_1_interval_pair.html#a4cd040e3c56e8d7f43c39f46b7c8fe38":[12,0,122,1,2]
 };

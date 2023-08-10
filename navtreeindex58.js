@@ -1,5 +1,7 @@
 var NAVTREEINDEX58 =
 {
+"plugins_2score-plugin-gfx_2_gfx_2_video_2_presenter_8hpp_source.html":[13,0,938],
+"plugins_2score-plugin-js_2_j_s_2_executor_2_component_8hpp.html#a37ab4463ab8244f5950df5a88a17b791":[11,0,27,0,3],
 "plugins_2score-plugin-js_2_j_s_2_executor_2_component_8hpp_source.html":[13,0,196],
 "plugins_2score-plugin-lv2_2_l_v2_2_window_8hpp.html#a658e291028936fa15da1fd68c8d7967a":[11,0,31,13],
 "plugins_2score-plugin-lv2_2_l_v2_2_window_8hpp_source.html":[13,0,1449],
@@ -247,7 +249,5 @@ var NAVTREEINDEX58 =
 "score-plugin-vst3_2_vst3_2_commands_8cpp.html#a70ef36e3eb9a9a564e9d11a8ed198e6d":[11,0,61,30],
 "score-plugin-vst3_2_vst3_2_effect_model_8hpp.html#aafc0be0f5a52d9087dfbccb22087e816":[11,0,61,29],
 "score-plugin-vst3_2_vst3_2_effect_model_8hpp_source.html":[13,0,383],
-"score-plugin-vst3_2_vst3_2_executor_8hpp.html#af7cdf107ed2903217fbb9ed3ae98b12b":[11,0,61,26],
-"score-plugin-vst3_2_vst3_2_executor_8hpp_source.html":[13,0,431],
-"score-plugin-vst3_2_vst3_2_library_8hpp_source.html":[13,0,661]
+"score-plugin-vst3_2_vst3_2_executor_8hpp.html#af7cdf107ed2903217fbb9ed3ae98b12b":[11,0,61,26]
 };

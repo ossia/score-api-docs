@@ -1,5 +1,7 @@
 var NAVTREEINDEX30 =
 {
+"class_protocols_1_1_minuit_protocol_settings_widget.html#aceb3a677e9f09f77bb854928af446dd2":[12,0,42,50,4],
+"class_protocols_1_1_minuit_protocol_settings_widget.html#adcdf81d4a96ed09bd7b0e10c398828d7":[12,0,42,50,0],
 "class_protocols_1_1_minuit_protocol_settings_widget.html#af1fd676a971a0be682d8a185487a2f54":[12,0,42,50,10],
 "class_protocols_1_1_minuit_protocol_settings_widget.html#afda9add43da4cd6c3db32c9bad861f43":[12,0,42,50,9],
 "class_protocols_1_1_o_s_c_device.html":[12,0,42,52],
@@ -247,7 +249,5 @@ var NAVTREEINDEX30 =
 "class_remote_control_1_1_settings_1_1_presenter.html#a323a8dcfc2ba3cf1975d026b95e93c9b":[12,0,45,0,1,0],
 "class_remote_control_1_1_settings_1_1_presenter.html#a3467b8216e540f59c90ea9ff10611b90":[12,0,45,0,1,2],
 "class_remote_control_1_1_settings_1_1_view.html":[12,0,45,0,2],
-"class_remote_control_1_1_settings_1_1_view.html#a32d7e9f1f52edde1337f442f8d91780d":[12,0,45,0,2,1],
-"class_remote_control_1_1_settings_1_1_view.html#a3e4c0f5d3c87eb80190acb5b73b226f1":[12,0,45,0,2,0],
-"class_remote_control_1_1_settings_1_1_view.html#a63098eec2882a6c539888473dba9678b":[12,0,45,0,2,2]
+"class_remote_control_1_1_settings_1_1_view.html#a32d7e9f1f52edde1337f442f8d91780d":[12,0,45,0,2,1]
 };
