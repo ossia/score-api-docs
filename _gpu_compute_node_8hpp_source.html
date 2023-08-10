@@ -181,7 +181,7 @@ $(document).ready(function(){initNavTree('_gpu_compute_node_8hpp_source.html',''
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  ossia::flat_map&lt;int, QRhiBuffer*&gt; createdUbos;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  ossia::flat_map&lt;int, QRhiTexture*&gt; createdTexs;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#if QT_VERSION &lt; QT_VERSION_CHECK(6, 7, 0)</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#if QT_VERSION &lt; QT_VERSION_CHECK(6, 6, 0)</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  std::vector&lt;QRhiBufferReadbackResult*&gt; bufReadbacks;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">void</span> addReadback(QRhiBufferReadbackResult* r) { bufReadbacks.push_back(r); }</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif</span></div>
