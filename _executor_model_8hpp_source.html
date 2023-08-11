@@ -146,88 +146,93 @@ $(document).ready(function(){initNavTree('_executor_model_8hpp_source.html','');
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">const</span> QString Ordered{<span class="stringliteral">&quot;Ordered&quot;</span>};</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">const</span> QString Priorized{<span class="stringliteral">&quot;Priorized&quot;</span>};</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">const</span> QString Merged{<span class="stringliteral">&quot;Merged&quot;</span>};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">operator</span> QStringList()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> {Default, Ordered, Priorized, Merged}; }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="struct_execution_1_1_settings_1_1_tick_policies.html">   51</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_execution_1_1_settings_1_1_tick_policies.html">TickPolicies</a></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">const</span> QString Buffer{<span class="stringliteral">&quot;Buffer-accurate&quot;</span>};</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">const</span> QString ScoreAccurate{<span class="stringliteral">&quot;Score-accurate&quot;</span>};</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">const</span> QString Precise{<span class="stringliteral">&quot;Precise&quot;</span>};</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">operator</span> QStringList()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> {Buffer, ScoreAccurate, Precise}; }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_execution_1_1_settings_1_1_model.html">   58</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_ENGINE_EXPORT <a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a> : <span class="keyword">public</span> <a class="code" href="classscore_1_1_settings_delegate_model.html">score::SettingsDelegateModel</a></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  W_OBJECT(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>)</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  ClockFactory::ConcreteKey m_Clock;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  QString m_Scheduling;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  QString m_Ordering;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  QString m_Merging;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  QString m_Commit;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  QString m_Tick;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">int</span> m_Rate{};</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">int</span> m_Threads{};</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">bool</span> m_Parallel{};</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">bool</span> m_ExecutionListening{};</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">bool</span> m_Logging{};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">bool</span> m_Bench{};</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">bool</span> m_ScoreOrder{};</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">bool</span> m_ValueCompilation{};</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">bool</span> m_TransportValueCompilation{};</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_execution_1_1_clock_factory_list.html">ClockFactoryList</a>&amp; m_clockFactories;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_transport_1_1_transport_interface_list.html">Transport::TransportInterfaceList</a>&amp; m_transportInterfaces;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>(QSettings&amp; set, <span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp; ctx);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_execution_1_1_clock_factory_list.html">ClockFactoryList</a>&amp; clockFactories()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_clockFactories; }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">const</span> QString MergedThreaded{<span class="stringliteral">&quot;MergedThreaded&quot;</span>};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">const</span> QString DirectThreaded{<span class="stringliteral">&quot;DirectThreaded&quot;</span>};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">operator</span> QStringList()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> {Default, Ordered, Priorized, Merged, MergedThreaded, DirectThreaded};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="struct_execution_1_1_settings_1_1_tick_policies.html">   56</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_execution_1_1_settings_1_1_tick_policies.html">TickPolicies</a></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">const</span> QString Buffer{<span class="stringliteral">&quot;Buffer-accurate&quot;</span>};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">const</span> QString ScoreAccurate{<span class="stringliteral">&quot;Score-accurate&quot;</span>};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">const</span> QString Precise{<span class="stringliteral">&quot;Precise&quot;</span>};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">operator</span> QStringList()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> {Buffer, ScoreAccurate, Precise}; }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_execution_1_1_settings_1_1_model.html">   63</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_ENGINE_EXPORT <a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a> : <span class="keyword">public</span> <a class="code" href="classscore_1_1_settings_delegate_model.html">score::SettingsDelegateModel</a></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  W_OBJECT(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  ClockFactory::ConcreteKey m_Clock;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  QString m_Scheduling;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  QString m_Ordering;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  QString m_Merging;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  QString m_Commit;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  QString m_Tick;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">int</span> m_Rate{};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">int</span> m_Threads{};</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">bool</span> m_Parallel{};</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">bool</span> m_ExecutionListening{};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">bool</span> m_Logging{};</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">bool</span> m_Bench{};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">bool</span> m_ScoreOrder{};</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">bool</span> m_ValueCompilation{};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">bool</span> m_TransportValueCompilation{};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_execution_1_1_clock_factory_list.html">ClockFactoryList</a>&amp; m_clockFactories;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_transport_1_1_transport_interface_list.html">Transport::TransportInterfaceList</a>&amp; m_transportInterfaces;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  std::unique_ptr&lt;Clock&gt; makeClock(<span class="keyword">const</span> <a class="code" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="namespace_execution.html#aa65c041c9e6cd2071fd9f337e843f81d">time_function</a> makeTimeFunction(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp;) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  reverse_time_function makeReverseTimeFunction(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp;) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="code" href="class_transport_1_1_transport_interface.html">Transport::TransportInterface</a>* getTransport() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      SCORE_PLUGIN_ENGINE_EXPORT, ClockFactory::ConcreteKey, <a class="code" href="class_execution_1_1_clock.html">Clock</a>)</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_ENGINE_EXPORT, QString, Scheduling)</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_ENGINE_EXPORT, QString, Ordering)</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_ENGINE_EXPORT, QString, Merging)</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_ENGINE_EXPORT, QString, Commit)</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_ENGINE_EXPORT, QString, Tick)</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_ENGINE_EXPORT, <span class="keywordtype">int</span>, Rate)</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_ENGINE_EXPORT, <span class="keywordtype">int</span>, Threads)</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_ENGINE_EXPORT, <span class="keywordtype">bool</span>, Parallel)</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_ENGINE_EXPORT, <span class="keywordtype">bool</span>, ExecutionListening)</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_ENGINE_EXPORT, <span class="keywordtype">bool</span>, Logging)</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_ENGINE_EXPORT, <span class="keywordtype">bool</span>, Bench)</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_ENGINE_EXPORT, <span class="keywordtype">bool</span>, ScoreOrder)</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_ENGINE_EXPORT, <span class="keywordtype">bool</span>, ValueCompilation)</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      SCORE_PLUGIN_ENGINE_EXPORT, <span class="keywordtype">bool</span>, TransportValueCompilation)</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;};</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, <a class="code" href="class_execution_1_1_clock.html">Clock</a>)</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, Scheduling)</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, Ordering)</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, Merging)</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, Commit)</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, Tick)</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, Rate)</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, Threads)</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, Parallel)</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, ExecutionListening)</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, Logging)</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, Bench)</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, ScoreOrder)</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, ValueCompilation)</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, TransportValueCompilation)</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>(QSettings&amp; set, <span class="keyword">const</span> <a class="code" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp; ctx);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_execution_1_1_clock_factory_list.html">ClockFactoryList</a>&amp; clockFactories()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_clockFactories; }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  std::unique_ptr&lt;Clock&gt; makeClock(<span class="keyword">const</span> <a class="code" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <a class="code" href="namespace_execution.html#aa65c041c9e6cd2071fd9f337e843f81d">time_function</a> makeTimeFunction(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp;) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  reverse_time_function makeReverseTimeFunction(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp;) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="class_transport_1_1_transport_interface.html">Transport::TransportInterface</a>* getTransport() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      SCORE_PLUGIN_ENGINE_EXPORT, ClockFactory::ConcreteKey, <a class="code" href="class_execution_1_1_clock.html">Clock</a>)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_ENGINE_EXPORT, QString, Scheduling)</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_ENGINE_EXPORT, QString, Ordering)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_ENGINE_EXPORT, QString, Merging)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_ENGINE_EXPORT, QString, Commit)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_ENGINE_EXPORT, QString, Tick)</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_ENGINE_EXPORT, <span class="keywordtype">int</span>, Rate)</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_ENGINE_EXPORT, <span class="keywordtype">int</span>, Threads)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_ENGINE_EXPORT, <span class="keywordtype">bool</span>, Parallel)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_ENGINE_EXPORT, <span class="keywordtype">bool</span>, ExecutionListening)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_ENGINE_EXPORT, <span class="keywordtype">bool</span>, Logging)</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_ENGINE_EXPORT, <span class="keywordtype">bool</span>, Bench)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_ENGINE_EXPORT, <span class="keywordtype">bool</span>, ScoreOrder)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_ENGINE_EXPORT, <span class="keywordtype">bool</span>, ValueCompilation)</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  SCORE_SETTINGS_PARAMETER_HPP(</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      SCORE_PLUGIN_ENGINE_EXPORT, <span class="keywordtype">bool</span>, TransportValueCompilation)</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;};</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, <a class="code" href="class_execution_1_1_clock.html">Clock</a>)</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, Scheduling)</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, Ordering)</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, Merging)</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, Commit)</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, Tick)</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, Rate)</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, Threads)</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, Parallel)</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, ExecutionListening)</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, Logging)</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, Bench)</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, ScoreOrder)</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, ValueCompilation)</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;SCORE_SETTINGS_PARAMETER(<a class="code" href="class_execution_1_1_settings_1_1_model.html">Model</a>, TransportValueCompilation)</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
 <div class="ttc" id="aclass_execution_1_1_clock_factory_list_html"><div class="ttname"><a href="class_execution_1_1_clock_factory_list.html">Execution::ClockFactoryList</a></div><div class="ttdef"><b>Definition:</b> ClockFactory.hpp:78</div></div>
 <div class="ttc" id="aclass_execution_1_1_clock_html"><div class="ttname"><a href="class_execution_1_1_clock.html">Execution::Clock</a></div><div class="ttdef"><b>Definition:</b> ClockFactory.hpp:41</div></div>
-<div class="ttc" id="aclass_execution_1_1_settings_1_1_model_html"><div class="ttname"><a href="class_execution_1_1_settings_1_1_model.html">Execution::Settings::Model</a></div><div class="ttdef"><b>Definition:</b> ExecutorModel.hpp:59</div></div>
+<div class="ttc" id="aclass_execution_1_1_settings_1_1_model_html"><div class="ttname"><a href="class_execution_1_1_settings_1_1_model.html">Execution::Settings::Model</a></div><div class="ttdef"><b>Definition:</b> ExecutorModel.hpp:64</div></div>
 <div class="ttc" id="aclass_transport_1_1_transport_interface_html"><div class="ttname"><a href="class_transport_1_1_transport_interface.html">Transport::TransportInterface</a></div><div class="ttdef"><b>Definition:</b> TransportInterface.hpp:20</div></div>
 <div class="ttc" id="aclass_transport_1_1_transport_interface_list_html"><div class="ttname"><a href="class_transport_1_1_transport_interface_list.html">Transport::TransportInterfaceList</a></div><div class="ttdef"><b>Definition:</b> TransportInterface.hpp:47</div></div>
 <div class="ttc" id="aclassscore_1_1_settings_delegate_model_html"><div class="ttname"><a href="classscore_1_1_settings_delegate_model.html">score::SettingsDelegateModel</a></div><div class="ttdef"><b>Definition:</b> SettingsDelegateModel.hpp:16</div></div>
@@ -238,7 +243,7 @@ $(document).ready(function(){initNavTree('_executor_model_8hpp_source.html','');
 <div class="ttc" id="astruct_execution_1_1_settings_1_1_merging_policies_html"><div class="ttname"><a href="struct_execution_1_1_settings_1_1_merging_policies.html">Execution::Settings::MergingPolicies</a></div><div class="ttdef"><b>Definition:</b> ExecutorModel.hpp:37</div></div>
 <div class="ttc" id="astruct_execution_1_1_settings_1_1_ordering_policies_html"><div class="ttname"><a href="struct_execution_1_1_settings_1_1_ordering_policies.html">Execution::Settings::OrderingPolicies</a></div><div class="ttdef"><b>Definition:</b> ExecutorModel.hpp:29</div></div>
 <div class="ttc" id="astruct_execution_1_1_settings_1_1_scheduling_policies_html"><div class="ttname"><a href="struct_execution_1_1_settings_1_1_scheduling_policies.html">Execution::Settings::SchedulingPolicies</a></div><div class="ttdef"><b>Definition:</b> ExecutorModel.hpp:21</div></div>
-<div class="ttc" id="astruct_execution_1_1_settings_1_1_tick_policies_html"><div class="ttname"><a href="struct_execution_1_1_settings_1_1_tick_policies.html">Execution::Settings::TickPolicies</a></div><div class="ttdef"><b>Definition:</b> ExecutorModel.hpp:52</div></div>
+<div class="ttc" id="astruct_execution_1_1_settings_1_1_tick_policies_html"><div class="ttname"><a href="struct_execution_1_1_settings_1_1_tick_policies.html">Execution::Settings::TickPolicies</a></div><div class="ttdef"><b>Definition:</b> ExecutorModel.hpp:57</div></div>
 <div class="ttc" id="astructscore_1_1_application_context_html"><div class="ttname"><a href="structscore_1_1_application_context.html">score::ApplicationContext</a></div><div class="ttdoc">Used to access all the application-wide state and structures.</div><div class="ttdef"><b>Definition:</b> ApplicationContext.hpp:24</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
