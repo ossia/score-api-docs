@@ -893,7 +893,7 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_executor
 <div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;            <span class="keywordflow">if</span>(!eff_ptr.lock())</div>
 <div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;              <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160; </div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;            <span class="keyword">auto</span> res = worker_type::work(std::forward&lt;Args&gt;(ff)...);</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;            <span class="keyword">auto</span> res = worker_type::work(std::forward&lt;decltype(ff)&gt;(ff)...);</div>
 <div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;            <span class="keywordflow">if</span>(!res)</div>
 <div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;              <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160; </div>
