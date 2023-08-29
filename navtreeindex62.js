@@ -1,5 +1,8 @@
 var NAVTREEINDEX62 =
 {
+"struct_execution_1_1_settings_1_1_scheduling_policies.html#a3889ead6bcb6807b8f71a8b19ac526ed":[12,0,12,1,0,4],
+"struct_execution_1_1_settings_1_1_scheduling_policies.html#a5fb726270e3952aa31524e6c1f9f63ec":[12,0,12,1,0,2],
+"struct_execution_1_1_settings_1_1_tick_policies.html":[12,0,12,1,4],
 "struct_execution_1_1_settings_1_1_tick_policies.html#a0d103375e8d0dadfa2c38644fe882872":[12,0,12,1,4,1],
 "struct_execution_1_1_settings_1_1_tick_policies.html#a421c38ccb9f1dd12a825f6bc78a590ba":[12,0,12,1,4,0],
 "struct_execution_1_1_settings_1_1_tick_policies.html#aaa5c7b594a6337793f3bc72032074320":[12,0,12,1,4,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX62 =
 "struct_gfx_1_1_shader_source_1_1_member_spec.html#a1598ef4c487f15bc566965929f7cf703":[12,0,18,39,0,0],
 "struct_gfx_1_1_shader_source_1_1_member_spec.html#a63f166fea651ace5cf4fbe95132e565e":[12,0,18,39,0,2],
 "struct_gfx_1_1_shader_source_1_1_member_spec.html#ac21204317608ec2e8f884d3adbbd993f":[12,0,18,39,0,1],
-"struct_gfx_1_1_shared_input_settings.html":[12,0,18,42],
-"struct_gfx_1_1_shared_input_settings.html#ac151cdfd0591bf0b1b95eac456fb7ab6":[12,0,18,42,0],
-"struct_gfx_1_1_shared_output_settings.html":[12,0,18,45],
-"struct_gfx_1_1_shared_output_settings.html#a3e926717c8177c4894ed0d4c638fa76d":[12,0,18,45,2]
+"struct_gfx_1_1_shared_input_settings.html":[12,0,18,42]
 };
