@@ -645,13 +645,16 @@ var annotated_dup =
     ] ],
     [ "JS", null, [
       [ "Executor", null, [
-        [ "js_node", "class_j_s_1_1_executor_1_1js__node.html", "class_j_s_1_1_executor_1_1js__node" ],
-        [ "js_process", "struct_j_s_1_1_executor_1_1js__process.html", "struct_j_s_1_1_executor_1_1js__process" ],
         [ "Component", "class_j_s_1_1_executor_1_1_component.html", "class_j_s_1_1_executor_1_1_component" ]
       ] ],
       [ "EditJSScript", "class_j_s_1_1_edit_j_s_script.html", null ],
       [ "ScriptMacro", "class_j_s_1_1_script_macro.html", null ],
       [ "ActionContext", "struct_j_s_1_1_action_context.html", "struct_j_s_1_1_action_context" ],
+      [ "js_node", "class_j_s_1_1js__node.html", "class_j_s_1_1js__node" ],
+      [ "js_process", "struct_j_s_1_1js__process.html", "struct_j_s_1_1js__process" ],
+      [ "GpuNode", "struct_j_s_1_1_gpu_node.html", "struct_j_s_1_1_gpu_node" ],
+      [ "GpuRenderer", "class_j_s_1_1_gpu_renderer.html", "class_j_s_1_1_gpu_renderer" ],
+      [ "gpu_exec_node", "class_j_s_1_1gpu__exec__node.html", "class_j_s_1_1gpu__exec__node" ],
       [ "ExecStateWrapper", "class_j_s_1_1_exec_state_wrapper.html", "class_j_s_1_1_exec_state_wrapper" ],
       [ "LanguageSpec", "struct_j_s_1_1_language_spec.html", null ],
       [ "ComponentCache", "struct_j_s_1_1_component_cache.html", "struct_j_s_1_1_component_cache" ],
@@ -2634,6 +2637,7 @@ var annotated_dup =
     [ "SyncInfo", "struct_sync_info.html", "struct_sync_info" ],
     [ "Tags_k", "class_tags__k.html", null ],
     [ "TextLabel", "class_text_label.html", "class_text_label" ],
+    [ "TextureOutlet", "class_texture_outlet.html", "class_texture_outlet" ],
     [ "TimeSyncModelTests", "class_time_sync_model_tests.html", null ],
     [ "TimeVal", "struct_time_val.html", "struct_time_val" ],
     [ "Toggle", "class_toggle.html", "class_toggle" ],

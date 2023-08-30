@@ -491,14 +491,17 @@ var namespaces_dup =
     ] ],
     [ "JS", null, [
       [ "Executor", null, [
-        [ "js_node", "class_j_s_1_1_executor_1_1js__node.html", "class_j_s_1_1_executor_1_1js__node" ],
-        [ "js_process", "struct_j_s_1_1_executor_1_1js__process.html", "struct_j_s_1_1_executor_1_1js__process" ],
         [ "Component", "class_j_s_1_1_executor_1_1_component.html", "class_j_s_1_1_executor_1_1_component" ],
         [ "ComponentFactory", "plugins_2score-plugin-js_2_j_s_2_executor_2_component_8hpp.html#a37ab4463ab8244f5950df5a88a17b791", null ]
       ] ],
       [ "EditJSScript", "class_j_s_1_1_edit_j_s_script.html", null ],
       [ "ScriptMacro", "class_j_s_1_1_script_macro.html", null ],
       [ "ActionContext", "struct_j_s_1_1_action_context.html", "struct_j_s_1_1_action_context" ],
+      [ "js_node", "class_j_s_1_1js__node.html", "class_j_s_1_1js__node" ],
+      [ "js_process", "struct_j_s_1_1js__process.html", "struct_j_s_1_1js__process" ],
+      [ "GpuNode", "struct_j_s_1_1_gpu_node.html", "struct_j_s_1_1_gpu_node" ],
+      [ "GpuRenderer", "class_j_s_1_1_gpu_renderer.html", "class_j_s_1_1_gpu_renderer" ],
+      [ "gpu_exec_node", "class_j_s_1_1gpu__exec__node.html", "class_j_s_1_1gpu__exec__node" ],
       [ "ExecStateWrapper", "class_j_s_1_1_exec_state_wrapper.html", "class_j_s_1_1_exec_state_wrapper" ],
       [ "LanguageSpec", "struct_j_s_1_1_language_spec.html", null ],
       [ "ComponentCache", "struct_j_s_1_1_component_cache.html", "struct_j_s_1_1_component_cache" ],
@@ -519,6 +522,7 @@ var namespaces_dup =
       [ "LayerFactory", "_j_s_process_factory_8hpp.html#ae1822fdb05fd917198fa38eb87497f2a", null ],
       [ "ProcessFactory", "_j_s_process_factory_8hpp.html#a2d029eb83c7bf5878ed8c64a0088e026", null ],
       [ "CommandFactoryName", "_j_s_command_factory_8hpp.html#a4fc9ec62b7ef23d7dcf74720ba587676", null ],
+      [ "createJSObject", "_execution_helpers_8hpp.html#a9b16902954c0f9e08653fb9c12c2cc24", null ],
       [ "setupEngineImportPaths", "_j_s_process_model_8cpp.html#a5ce6d5e1ff2f50680dfea0ffed01bc56", null ]
     ] ],
     [ "Library", null, [
