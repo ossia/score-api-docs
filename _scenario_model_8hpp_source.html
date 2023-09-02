@@ -299,100 +299,102 @@ $(document).ready(function(){initNavTree('_scenario_model_8hpp_source.html','');
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  std::unique_ptr&lt;TimenodeGraph&gt; m_graph;</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;};</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;}</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment">// TODO this ought to go in Selection.hpp ?</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Vector&gt;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;std::vector&lt;const typename Vector::value_type*&gt; selectedElements(<span class="keyword">const</span> Vector&amp; in)</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;{</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  std::vector&lt;const typename Vector::value_type*&gt; out;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; elt : in)</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  {</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordflow">if</span>(elt.selection.get())</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;      out.push_back(&amp;elt);</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  }</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <span class="keywordflow">return</span> out;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;}</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Container&gt;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;std::vector&lt;const T*&gt; filterSelectionByType(<span class="keyword">const</span> Container&amp; sel)</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;{</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  std::vector&lt;const T*&gt; selected_elements;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">auto</span> obj : sel)</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  {</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="comment">// TODO replace with a virtual Element::type() which will be faster.</span></div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordflow">if</span>(<span class="keyword">auto</span> casted_obj = qobject_cast&lt;const T*&gt;(obj.data()))</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    {</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;      <span class="keywordflow">if</span>(casted_obj-&gt;selection.get())</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;      {</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        selected_elements.push_back(casted_obj);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;      }</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    }</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  }</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="keywordflow">return</span> selected_elements;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;}</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_scenario.html">Scenario</a></div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;{</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;SCORE_PLUGIN_SCENARIO_EXPORT <span class="keyword">const</span> QVector&lt;Id&lt;IntervalModel&gt;&gt; intervalsBeforeTimeSync(</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp;, <span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;TimeSyncModel&gt;</a>&amp; timeSyncId);</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="keyword">inline</span> <span class="keyword">auto</span>&amp; intervals(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp; scenar)</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;{</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <span class="keywordflow">return</span> scenar.intervals;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;}</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="keyword">inline</span> <span class="keyword">auto</span>&amp; events(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp; scenar)</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;{</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  <span class="keywordflow">return</span> scenar.events;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;}</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="keyword">inline</span> <span class="keyword">auto</span>&amp; timeSyncs(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp; scenar)</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;{</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <span class="keywordflow">return</span> scenar.timeSyncs;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;}</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="keyword">inline</span> <span class="keyword">auto</span>&amp; states(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp; scenar)</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;{</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  <span class="keywordflow">return</span> scenar.states;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;}</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00263"></a><span class="lineno"><a class="line" href="struct_scenario_1_1_element_traits_3_01_scenario_1_1_process_model_00_01_interval_model_01_4.html">  263</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_scenario_1_1_element_traits.html">ElementTraits</a>&lt;<a class="code" href="namespace_scenario.html">Scenario</a>::<a class="code" href="class_scenario_1_1_process_model.html">ProcessModel</a>, <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&gt;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;{</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> accessor = <span class="keyword">static_cast&lt;</span></div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;      <span class="keyword">const </span><a class="code" href="classscore_1_1_entity_map.html">score::EntityMap&lt;IntervalModel&gt;</a>&amp; (*)(<span class="keyword">const </span><a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp;)<span class="keyword">&gt;</span>(</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;      &amp;intervals);</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;};</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00270"></a><span class="lineno"><a class="line" href="struct_scenario_1_1_element_traits_3_01_scenario_1_1_process_model_00_01_event_model_01_4.html">  270</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_scenario_1_1_element_traits.html">ElementTraits</a>&lt;<a class="code" href="namespace_scenario.html">Scenario</a>::<a class="code" href="class_scenario_1_1_process_model.html">ProcessModel</a>, <a class="code" href="class_scenario_1_1_event_model.html">EventModel</a>&gt;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;{</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> accessor = <span class="keyword">static_cast&lt;</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      <span class="keyword">const </span><a class="code" href="classscore_1_1_entity_map.html">score::EntityMap&lt;EventModel&gt;</a>&amp; (*)(<span class="keyword">const </span><a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp;)<span class="keyword">&gt;</span>(&amp;events);</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;};</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00276"></a><span class="lineno"><a class="line" href="struct_scenario_1_1_element_traits_3_01_scenario_1_1_process_model_00_01_time_sync_model_01_4.html">  276</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_scenario_1_1_element_traits.html">ElementTraits</a>&lt;<a class="code" href="namespace_scenario.html">Scenario</a>::<a class="code" href="class_scenario_1_1_process_model.html">ProcessModel</a>, <a class="code" href="class_scenario_1_1_time_sync_model.html">TimeSyncModel</a>&gt;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;{</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> accessor = <span class="keyword">static_cast&lt;</span></div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;      <span class="keyword">const </span><a class="code" href="classscore_1_1_entity_map.html">score::EntityMap&lt;TimeSyncModel&gt;</a>&amp; (*)(<span class="keyword">const </span><a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp;)<span class="keyword">&gt;</span>(</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;      &amp;timeSyncs);</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;};</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00283"></a><span class="lineno"><a class="line" href="struct_scenario_1_1_element_traits_3_01_scenario_1_1_process_model_00_01_state_model_01_4.html">  283</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_scenario_1_1_element_traits.html">ElementTraits</a>&lt;<a class="code" href="namespace_scenario.html">Scenario</a>::<a class="code" href="class_scenario_1_1_process_model.html">ProcessModel</a>, <a class="code" href="class_scenario_1_1_state_model.html">StateModel</a>&gt;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;{</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> accessor = <span class="keyword">static_cast&lt;</span></div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;      <span class="keyword">const </span><a class="code" href="classscore_1_1_entity_map.html">score::EntityMap&lt;StateModel&gt;</a>&amp; (*)(<span class="keyword">const </span><a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp;)<span class="keyword">&gt;</span>(&amp;states);</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;};</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;}</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;DESCRIPTION_METADATA(SCORE_PLUGIN_SCENARIO_EXPORT, <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>, <span class="stringliteral">&quot;Scenario&quot;</span>)</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;Q_DECLARE_METATYPE(const <a class="code" href="namespace_scenario.html">Scenario</a>::ProcessModel*)</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="namespace_scenario.html">Scenario</a>::ProcessModel*)</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;W_REGISTER_ARGTYPE(const <a class="code" href="namespace_scenario.html">Scenario</a>::ProcessModel*)</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="namespace_scenario.html">Scenario</a>::ProcessModel*)</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;W_REGISTER_ARGTYPE(const <a class="code" href="namespace_scenario.html">Scenario</a>::ProcessModel&amp;)</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="namespace_scenario.html">Scenario</a>::ProcessModel&amp;)</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="namespace_scenario.html">Scenario</a>::ProcessModel)</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>* closestParentScenario(<span class="keyword">const</span> QObject* parentObj) noexcept;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;}</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment">// TODO this ought to go in Selection.hpp ?</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Vector&gt;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;std::vector&lt;const typename Vector::value_type*&gt; selectedElements(<span class="keyword">const</span> Vector&amp; in)</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;{</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  std::vector&lt;const typename Vector::value_type*&gt; out;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; elt : in)</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  {</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keywordflow">if</span>(elt.selection.get())</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;      out.push_back(&amp;elt);</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  }</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="keywordflow">return</span> out;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;}</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Container&gt;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;std::vector&lt;const T*&gt; filterSelectionByType(<span class="keyword">const</span> Container&amp; sel)</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;{</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  std::vector&lt;const T*&gt; selected_elements;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">auto</span> obj : sel)</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  {</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="comment">// TODO replace with a virtual Element::type() which will be faster.</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordflow">if</span>(<span class="keyword">auto</span> casted_obj = qobject_cast&lt;const T*&gt;(obj.data()))</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    {</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      <span class="keywordflow">if</span>(casted_obj-&gt;selection.get())</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;      {</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        selected_elements.push_back(casted_obj);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;      }</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    }</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  }</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  <span class="keywordflow">return</span> selected_elements;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;}</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_scenario.html">Scenario</a></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;{</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;SCORE_PLUGIN_SCENARIO_EXPORT <span class="keyword">const</span> QVector&lt;Id&lt;IntervalModel&gt;&gt; intervalsBeforeTimeSync(</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp;, <span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;TimeSyncModel&gt;</a>&amp; timeSyncId);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="keyword">inline</span> <span class="keyword">auto</span>&amp; intervals(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp; scenar)</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;{</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="keywordflow">return</span> scenar.intervals;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;}</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="keyword">inline</span> <span class="keyword">auto</span>&amp; events(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp; scenar)</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;{</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  <span class="keywordflow">return</span> scenar.events;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;}</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="keyword">inline</span> <span class="keyword">auto</span>&amp; timeSyncs(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp; scenar)</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;{</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  <span class="keywordflow">return</span> scenar.timeSyncs;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;}</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="keyword">inline</span> <span class="keyword">auto</span>&amp; states(<span class="keyword">const</span> <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp; scenar)</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;{</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  <span class="keywordflow">return</span> scenar.states;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;}</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00265"></a><span class="lineno"><a class="line" href="struct_scenario_1_1_element_traits_3_01_scenario_1_1_process_model_00_01_interval_model_01_4.html">  265</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_scenario_1_1_element_traits.html">ElementTraits</a>&lt;<a class="code" href="namespace_scenario.html">Scenario</a>::<a class="code" href="class_scenario_1_1_process_model.html">ProcessModel</a>, <a class="code" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&gt;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;{</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> accessor = <span class="keyword">static_cast&lt;</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      <span class="keyword">const </span><a class="code" href="classscore_1_1_entity_map.html">score::EntityMap&lt;IntervalModel&gt;</a>&amp; (*)(<span class="keyword">const </span><a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp;)<span class="keyword">&gt;</span>(</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;      &amp;intervals);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;};</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00272"></a><span class="lineno"><a class="line" href="struct_scenario_1_1_element_traits_3_01_scenario_1_1_process_model_00_01_event_model_01_4.html">  272</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_scenario_1_1_element_traits.html">ElementTraits</a>&lt;<a class="code" href="namespace_scenario.html">Scenario</a>::<a class="code" href="class_scenario_1_1_process_model.html">ProcessModel</a>, <a class="code" href="class_scenario_1_1_event_model.html">EventModel</a>&gt;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;{</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> accessor = <span class="keyword">static_cast&lt;</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;      <span class="keyword">const </span><a class="code" href="classscore_1_1_entity_map.html">score::EntityMap&lt;EventModel&gt;</a>&amp; (*)(<span class="keyword">const </span><a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp;)<span class="keyword">&gt;</span>(&amp;events);</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;};</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00278"></a><span class="lineno"><a class="line" href="struct_scenario_1_1_element_traits_3_01_scenario_1_1_process_model_00_01_time_sync_model_01_4.html">  278</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_scenario_1_1_element_traits.html">ElementTraits</a>&lt;<a class="code" href="namespace_scenario.html">Scenario</a>::<a class="code" href="class_scenario_1_1_process_model.html">ProcessModel</a>, <a class="code" href="class_scenario_1_1_time_sync_model.html">TimeSyncModel</a>&gt;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;{</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> accessor = <span class="keyword">static_cast&lt;</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;      <span class="keyword">const </span><a class="code" href="classscore_1_1_entity_map.html">score::EntityMap&lt;TimeSyncModel&gt;</a>&amp; (*)(<span class="keyword">const </span><a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp;)<span class="keyword">&gt;</span>(</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;      &amp;timeSyncs);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;};</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00285"></a><span class="lineno"><a class="line" href="struct_scenario_1_1_element_traits_3_01_scenario_1_1_process_model_00_01_state_model_01_4.html">  285</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_scenario_1_1_element_traits.html">ElementTraits</a>&lt;<a class="code" href="namespace_scenario.html">Scenario</a>::<a class="code" href="class_scenario_1_1_process_model.html">ProcessModel</a>, <a class="code" href="class_scenario_1_1_state_model.html">StateModel</a>&gt;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;{</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> accessor = <span class="keyword">static_cast&lt;</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;      <span class="keyword">const </span><a class="code" href="classscore_1_1_entity_map.html">score::EntityMap&lt;StateModel&gt;</a>&amp; (*)(<span class="keyword">const </span><a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>&amp;)<span class="keyword">&gt;</span>(&amp;states);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;};</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;}</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;DESCRIPTION_METADATA(SCORE_PLUGIN_SCENARIO_EXPORT, <a class="code" href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a>, <span class="stringliteral">&quot;Scenario&quot;</span>)</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;Q_DECLARE_METATYPE(const <a class="code" href="namespace_scenario.html">Scenario</a>::ProcessModel*)</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="namespace_scenario.html">Scenario</a>::ProcessModel*)</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;W_REGISTER_ARGTYPE(const <a class="code" href="namespace_scenario.html">Scenario</a>::ProcessModel*)</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="namespace_scenario.html">Scenario</a>::ProcessModel*)</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;W_REGISTER_ARGTYPE(const <a class="code" href="namespace_scenario.html">Scenario</a>::ProcessModel&amp;)</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="namespace_scenario.html">Scenario</a>::ProcessModel&amp;)</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="namespace_scenario.html">Scenario</a>::ProcessModel)</div>
 <div class="ttc" id="a_visitor_common_8hpp_html"><div class="ttname"><a href="_visitor_common_8hpp.html">VisitorCommon.hpp</a></div></div>
-<div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Process.hpp:58</div></div>
+<div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Process.hpp:61</div></div>
 <div class="ttc" id="aclass_scenario_1_1_comment_block_model_html"><div class="ttname"><a href="class_scenario_1_1_comment_block_model.html">Scenario::CommentBlockModel</a></div><div class="ttdef"><b>Definition:</b> CommentBlockModel.hpp:25</div></div>
 <div class="ttc" id="aclass_scenario_1_1_event_model_html"><div class="ttname"><a href="class_scenario_1_1_event_model.html">Scenario::EventModel</a></div><div class="ttdef"><b>Definition:</b> EventModel.hpp:36</div></div>
 <div class="ttc" id="aclass_scenario_1_1_interval_model_html"><div class="ttname"><a href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a></div><div class="ttdef"><b>Definition:</b> IntervalModel.hpp:50</div></div>

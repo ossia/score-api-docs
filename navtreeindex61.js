@@ -1,5 +1,7 @@
 var NAVTREEINDEX61 =
 {
+"struct_dataflow_1_1_control_outlet_factory.html#aad145729f1945db907d3e28828c767c5":[12,0,9,20,1],
+"struct_dataflow_1_1_control_outlet_factory.html#ad1946424e0110b866fab27540b0452d2":[12,0,9,20,2],
 "struct_dataflow_1_1_curve_inlet.html":[12,0,9,23],
 "struct_dataflow_1_1_curve_inlet.html#a0fc28fd2861bf12ada378618149127f1":[12,0,9,23,2],
 "struct_dataflow_1_1_curve_inlet.html#a2c77595d73a5afab90c25cef95e5a455":[12,0,9,23,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX61 =
 "struct_execution_1_1_reconnect_outlets.html#ac9495c257ef7900700c17c5da0db2017":[12,0,12,42,5],
 "struct_execution_1_1_reconnect_outlets.html#ae9a6a5217c809a6ab775f819a590ba57":[12,0,12,42,0],
 "struct_execution_1_1_scenario_component.html":[12,0,12,49],
-"struct_execution_1_1_scenario_component.html#a379841a9d98b9d3dd5fd6ad1e20854b2":[12,0,12,49,1],
-"struct_execution_1_1_scenario_component.html#aa135661651621d212e2c86c59f3af356":[12,0,12,49,2],
-"struct_execution_1_1_scenario_component.html#aaac896f1dc74484bf321c055d419d9cc":[12,0,12,49,0]
+"struct_execution_1_1_scenario_component.html#a379841a9d98b9d3dd5fd6ad1e20854b2":[12,0,12,49,1]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX75 =
 {
+"structaudio__mapping__attr.html":[12,0,73],
+"structaudio__mapping__attr.html#a3d421057f96c240c9e01b363280cbc24":[12,0,73,0],
 "structavnd__tools_1_1_pattern_combiner.html":[12,0,3,3],
 "structavnd__tools_1_1_pattern_combiner.html#a01286d82214f5adac0ca1aed56b844de":[12,0,3,3,9],
 "structavnd__tools_1_1_pattern_combiner.html#a0d82e931e5719d651a624257caa17562":[12,0,3,3,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX75 =
 "structoscr_1_1_matching_widget.html#a2886a29d3a08c176b1d5ac0c8f73e683":[12,0,36,5,0],
 "structoscr_1_1_matching_widget_3_01_field_01_4.html":[12,0,36,6],
 "structoscr_1_1_matching_widget_3_01_field_01_4.html#ac20ea7ba5a6312fff914629d471a9a72":[12,0,36,6,0],
-"structoscr_1_1_message_bus_reader.html":[12,0,36,28],
-"structoscr_1_1_message_bus_reader.html#a11ede573ea2856d4f8897dd0f543696d":[12,0,36,28,0],
-"structoscr_1_1_message_bus_reader.html#a72840567942d92188daaa065c4ce5ac4":[12,0,36,28,2]
+"structoscr_1_1_message_bus_reader.html":[12,0,36,28]
 };

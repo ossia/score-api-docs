@@ -1,5 +1,7 @@
 var NAVTREEINDEX76 =
 {
+"structoscr_1_1_message_bus_reader.html#a11ede573ea2856d4f8897dd0f543696d":[12,0,36,28,0],
+"structoscr_1_1_message_bus_reader.html#a72840567942d92188daaa065c4ce5ac4":[12,0,36,28,2],
 "structoscr_1_1_message_bus_reader.html#a89511694c35af93ed98607c692144b29":[12,0,36,28,1],
 "structoscr_1_1_message_bus_sender.html":[12,0,36,26],
 "structoscr_1_1_message_bus_sender.html#a18eda2ac821db0903f3667a73aa9db3d":[12,0,36,26,1],
@@ -130,9 +132,9 @@ var NAVTREEINDEX76 =
 "structoscr_1_1setup___impl0.html#a2ad50f84e6eea6ac4a97c6483330c22d":[12,0,36,15,2],
 "structoscr_1_1setup___impl0.html#a475fec302bc8c4f7d8821ee592319084":[12,0,36,15,7],
 "structoscr_1_1setup___impl0.html#a61f8e7ead77c10b7719c85d0dcea206f":[12,0,36,15,9],
+"structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,36,15,4],
 "structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,36,15,5],
 "structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,36,15,6],
-"structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,36,15,4],
 "structoscr_1_1setup___impl0.html#ab0925cd37367396714b0651fb445ad3d":[12,0,36,15,10],
 "structoscr_1_1setup___impl0.html#ac697cbf094cf1842eb7949c2bae9439d":[12,0,36,15,3],
 "structoscr_1_1setup___impl0.html#aced344fa4d64c5a68ac6e9227ebd6c95":[12,0,36,15,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX76 =
 "structscore_1_1_application_context.html#aad836474a385889c0486ecfeeadb06df":[12,0,48,82,7],
 "structscore_1_1_application_context.html#ae40c943760793bab6015490e56a44d34":[12,0,48,82,6],
 "structscore_1_1_application_context.html#ae71a4a7f56ab86bfdb5308ed0bae8d00":[12,0,48,82,9],
-"structscore_1_1_application_context.html#ae9a5fb08fd24f276c868a77d7e6465be":[12,0,48,82,8],
-"structscore_1_1_application_context.html#aeb284339129087bc89d3cb9b26825a68":[12,0,48,82,2],
-"structscore_1_1_application_context.html#af71dfe5537d9ba73aad72e1a80ed8da2":[12,0,48,82,5]
+"structscore_1_1_application_context.html#ae9a5fb08fd24f276c868a77d7e6465be":[12,0,48,82,8]
 };

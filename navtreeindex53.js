@@ -1,5 +1,6 @@
 var NAVTREEINDEX53 =
 {
+"classvst3_1_1vst__node.html#a27a44805b02dd9736380791aa4e4afac":[12,0,58,19,8],
 "classvst3_1_1vst__node.html#a31e165e79a428a208be78d242f21d444":[12,0,58,19,6],
 "classvst3_1_1vst__node.html#a6ffe4770be0e8c4cab61b39bf65fca53":[12,0,58,19,7],
 "classvst3_1_1vst__node.html#a7094f023273c1b29c5031b33968e01cd":[12,0,58,19,1],
@@ -173,8 +174,8 @@ var NAVTREEINDEX53 =
 "from__ossia__value___test_8cpp.html#ace5917815291ace90f2a557c701ff7f8":[11,0,26,0,0],
 "from__ossia__value___test_8cpp.html#ae01d728e736f1c10f7d977cf76ce02cd":[11,0,39,13],
 "from__ossia__value___test_8cpp.html#afd529bc820aba7bf2b82279ef96090d0":[11,0,26,4],
-"functions.html":[12,3,0,0],
 "functions.html":[12,3,0],
+"functions.html":[12,3,0,0],
 "functions_c.html":[12,3,0,1],
 "functions_d.html":[12,3,0,2],
 "functions_e.html":[12,3,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX53 =
 "namespace_curve.html#a164d7a581b56711809f5da9345904ec2":[11,0,8,116],
 "namespace_curve.html#a175bdbda4a4c04913d3c4b067d21c3b9":[11,0,8,69],
 "namespace_curve.html#a17a66a0ad0d978cf350e875703037660":[11,0,8,70],
-"namespace_curve.html#a17d866ab134cf2563d29a56cbf973c92":[11,0,8,81],
-"namespace_curve.html#a1b3b82fa8f11cc567e6d6b5aa583f476":[11,0,8,110]
+"namespace_curve.html#a17d866ab134cf2563d29a56cbf973c92":[11,0,8,81]
 };

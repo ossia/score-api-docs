@@ -1,5 +1,7 @@
 var NAVTREEINDEX70 =
 {
+"struct_process_1_1_x_y_spinboxes.html#a9b03a44d5f5b94c09e5dbf069351b959":[12,0,41,70,5],
+"struct_process_1_1_x_y_spinboxes.html#a9fd24e061822c02eefd0c3e53e21fb67":[12,0,41,70,3],
 "struct_process_1_1_x_y_spinboxes.html#ab3d47406dfc46be506332a6d2bc831e7":[12,0,41,70,1],
 "struct_process_1_1_x_y_spinboxes.html#ad273d9a52dfc3c276692d989fe7bd828":[12,0,41,70,2],
 "struct_process_1_1_x_y_spinboxes.html#ae28774e9dc7705c0f913907594f3e87e":[12,0,41,70,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX70 =
 "struct_remote_control_1_1_receiver.html#ab13a951d47c290ebaae2a852acf15e8c":[12,0,45,4,10],
 "struct_remote_control_1_1_receiver.html#ad5f235838679e7f7c92d0f04822ae427":[12,0,45,4,7],
 "struct_remote_control_1_1_receiver.html#af657b2308dc881724d9de068a52bdd1c":[12,0,45,4,11],
-"struct_remote_control_1_1_receiver.html#afec0a10b245bc26eb1c668b0f32124d4":[12,0,45,4,0],
-"struct_remote_control_1_1_remote_messages.html":[12,0,45,8],
-"struct_remote_control_1_1_remote_messages.html#a2f24eaa7cfd96044817aaf9288bfc5fb":[12,0,45,8,3]
+"struct_remote_control_1_1_receiver.html#afec0a10b245bc26eb1c668b0f32124d4":[12,0,45,4,0]
 };

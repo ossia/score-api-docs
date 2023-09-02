@@ -1,5 +1,6 @@
 var NAVTREEINDEX29 =
 {
+"class_protocols_1_1_joystick_enumerator.html#a83ed06eb83e30615250ab8fe33e6f7f3":[12,0,42,27,0],
 "class_protocols_1_1_joystick_protocol_factory.html":[12,0,42,28],
 "class_protocols_1_1_joystick_protocol_settings_widget.html":[12,0,42,29],
 "class_protocols_1_1_joystick_protocol_settings_widget.html#a5d5b765246cc2dae89a98171a29cba1c":[12,0,42,29,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX29 =
 "class_protocols_1_1_wiimote_protocol_settings_widget.html#a4348a828a429c13f02afee27c4e3bae4":[12,0,42,83,1],
 "class_protocols_1_1_wiimote_protocol_settings_widget.html#a6966fc9763f6891f030368c5ab5f4e1a":[12,0,42,83,4],
 "class_protocols_1_1_wiimote_protocol_settings_widget.html#a86094c96ae52f666a3b6bc5e01164ecf":[12,0,42,83,2],
-"class_protocols_1_1_wiimote_protocol_settings_widget.html#aa999eb107961b7350c77b55304c1f32a":[12,0,42,83,3],
-"class_ptr_container.html":[12,0,216]
+"class_protocols_1_1_wiimote_protocol_settings_widget.html#aa999eb107961b7350c77b55304c1f32a":[12,0,42,83,3]
 };

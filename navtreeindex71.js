@@ -1,5 +1,7 @@
 var NAVTREEINDEX71 =
 {
+"struct_remote_control_1_1_remote_messages.html":[12,0,45,8],
+"struct_remote_control_1_1_remote_messages.html#a2f24eaa7cfd96044817aaf9288bfc5fb":[12,0,45,8,3],
 "struct_remote_control_1_1_remote_messages.html#a375568560411cbaa3485cda5a36fd23b":[12,0,45,8,2],
 "struct_remote_control_1_1_remote_messages.html#a5723b2e1b1e93787fae313f1e5d718cb":[12,0,45,8,1],
 "struct_remote_control_1_1_remote_messages.html#ad461ce317b82c813f9281c642208451d":[12,0,45,8,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX71 =
 "struct_scenario_1_1_layer_slot_presenter.html#a25ea50e0fb33a5ad83bb05eb8a8ee3f8":[12,0,47,135,5],
 "struct_scenario_1_1_layer_slot_presenter.html#a434d3797013ec41e8acf545b0430ce50":[12,0,47,135,9],
 "struct_scenario_1_1_layer_slot_presenter.html#a43a74ae988afb50dc3971f2b5353c4db":[12,0,47,135,8],
-"struct_scenario_1_1_layer_slot_presenter.html#a4a412b22af1a9ca58dacc17a651f3d55":[12,0,47,135,3],
-"struct_scenario_1_1_layer_slot_presenter.html#a4e7afb8fffd885c9d12f691a83729e7e":[12,0,47,135,0],
-"struct_scenario_1_1_layer_slot_presenter.html#a557b1f8ecc55fe292ca0baae89a9e387":[12,0,47,135,6]
+"struct_scenario_1_1_layer_slot_presenter.html#a4a412b22af1a9ca58dacc17a651f3d55":[12,0,47,135,3]
 };

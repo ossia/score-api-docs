@@ -1,5 +1,7 @@
 var NAVTREEINDEX80 =
 {
+"structscore_1_1gfx_1_1_mesh.html#a8ba2dc165b5361ef2ffce12f77f018be":[12,0,48,2,29,5],
+"structscore_1_1gfx_1_1_mesh.html#abcee88bb7e2645aa7e58bcebe0fe865a":[12,0,48,2,29,7],
 "structscore_1_1gfx_1_1_mesh.html#ac3f76147fad7cc5c8e314c8f651bf443":[12,0,48,2,29,4],
 "structscore_1_1gfx_1_1_mesh.html#ad1da264023a95c7617e09c8e9b148dd8":[12,0,48,2,29,2],
 "structscore_1_1gfx_1_1_mesh.html#ae6e8d1d92a37bc98af5bf7c748865d2b":[12,0,48,2,29,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX80 =
 "structscore_1_1gfx_1_1_video_frame_share.html#a8238b0e37d3175a3726e3767ff64556c":[12,0,48,2,69,7],
 "structscore_1_1gfx_1_1_video_frame_share.html#a9463f7130a4b84e2aec0f7d0f9a1641b":[12,0,48,2,69,5],
 "structscore_1_1gfx_1_1_video_frame_share.html#a964328dc65aa90fb79ea9e5f96c1570c":[12,0,48,2,69,4],
-"structscore_1_1gfx_1_1_video_frame_share.html#a9c7b72d17e34e8560382e6a286bf3a8c":[12,0,48,2,69,6],
-"structscore_1_1gfx_1_1_video_frame_share.html#af575db64a4031ebad3f67a5cf3c84310":[12,0,48,2,69,10],
-"structscore_1_1gfx_1_1_y_u_v420_decoder.html":[12,0,48,2,13]
+"structscore_1_1gfx_1_1_video_frame_share.html#a9c7b72d17e34e8560382e6a286bf3a8c":[12,0,48,2,69,6]
 };

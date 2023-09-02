@@ -32,6 +32,7 @@ var class_process_1_1_process_model =
     [ "loopDurationChanged", "class_process_1_1_process_model.html#a8777b763fe33b8ee258f4e1051b0becc", null ],
     [ "loops", "class_process_1_1_process_model.html#ab9f5c80dbbde5c054eb384367303106c", null ],
     [ "loopsChanged", "class_process_1_1_process_model.html#ab46f4b71fdb64cf3bcb79e4d6dcce12d", null ],
+    [ "magneticPosition", "class_process_1_1_process_model.html#afed1d6015e00065f9914edc79e13e9e3", null ],
     [ "outlet", "class_process_1_1_process_model.html#aca2fcdddb0d752517a172cdfdfae6814", null ],
     [ "outlets", "class_process_1_1_process_model.html#a70a26ff4fbd38ccdbad71e95544a91ba", null ],
     [ "outletsChanged", "class_process_1_1_process_model.html#a7dc85f0e90740c835587cf50d765f981", null ],

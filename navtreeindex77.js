@@ -1,5 +1,7 @@
 var NAVTREEINDEX77 =
 {
+"structscore_1_1_application_context.html#aeb284339129087bc89d3cb9b26825a68":[12,0,48,82,2],
+"structscore_1_1_application_context.html#af71dfe5537d9ba73aad72e1a80ed8da2":[12,0,48,82,5],
 "structscore_1_1_application_services.html":[12,0,48,83],
 "structscore_1_1_application_services.html#a1e3317c5fd02bdf1cc0ef2bfe08d6b02":[12,0,48,83,0],
 "structscore_1_1_application_services.html#a2b2845b380f1fd5d403d7be239f09691":[12,0,48,83,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX77 =
 "structscore_1_1_hierarchic_model_3_01_model_00_01_arg_00_01_args_8_8_8_01_4.html":[12,0,48,182],
 "structscore_1_1_hierarchic_model_3_01_model_00_01_arg_00_01_args_8_8_8_01_4.html#a4e64025ac15ca0819dff25f26e4a38c3":[12,0,48,182,0],
 "structscore_1_1_hierarchic_model_3_01_model_00_01_arg_01_4.html":[12,0,48,183],
-"structscore_1_1_hierarchic_model_3_01_model_00_01_arg_01_4.html#a36590ea144f2748954c1a892d8bbbcfe":[12,0,48,183,0],
-"structscore_1_1_hierarchical_member.html":[12,0,48,180],
-"structscore_1_1_hierarchical_member.html#a58395ed394a8009e45cbc032e751e920":[12,0,48,180,1]
+"structscore_1_1_hierarchic_model_3_01_model_00_01_arg_01_4.html#a36590ea144f2748954c1a892d8bbbcfe":[12,0,48,183,0]
 };

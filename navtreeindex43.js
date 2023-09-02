@@ -1,5 +1,6 @@
 var NAVTREEINDEX43 =
 {
+"class_tree_node_based_item_model.html#a582970ec35a6cec4fd58ca90af7e37d7":[12,0,292,0],
 "class_tree_node_based_item_model.html#a7bb1137f42e92dae8507b24b0da628d9":[12,0,292,7],
 "class_tree_node_based_item_model.html#aad2c6fa95d1f56e530a7aa4809728017":[12,0,292,6],
 "class_tree_node_based_item_model.html#abd6f26c105f670c513922b7eeeec94a0":[12,0,292,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX43 =
 "classossia_1_1control__surface__node.html#a2735d5c8dda2925934db3257c8b1a950":[12,0,37,2,2],
 "classossia_1_1control__surface__node.html#a7d238dec4734b511982b018038bf5754":[12,0,37,2,4],
 "classossia_1_1control__surface__node.html#af0412968962c43084239dd2d251eb662":[12,0,37,2,3],
-"classossia_1_1control__surface__node.html#af6d8f4fb282529de846f7a6d68f85d7e":[12,0,37,2,1],
-"classossia_1_1nodes_1_1audio__metronome.html":[12,0,37,0,1]
+"classossia_1_1control__surface__node.html#af6d8f4fb282529de846f7a6d68f85d7e":[12,0,37,2,1]
 };

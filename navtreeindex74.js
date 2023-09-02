@@ -1,5 +1,7 @@
 var NAVTREEINDEX74 =
 {
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01ossia_1_1impulse_01_4_01_4.html#ad64b3bc0cfecd1c9d1f5f56f07e89149":[12,0,361,0],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01std_1_1string_01_4_01_4.html":[12,0,362],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01std_1_1string_01_4_01_4.html#a03c1e5381b5977a18bf88832bb6cc406":[12,0,362,0],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base__variant_01_4.html":[12,0,364],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base__variant_01_4.html#a7465cf05bff2d91e99d6b0693bfc3474":[12,0,364,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX74 =
 "structaudio__channels__attr.html":[12,0,71],
 "structaudio__channels__attr.html#a3ab256c1b414e037a4b9f0981cf588dc":[12,0,71,0],
 "structaudio__kind__attr.html":[12,0,72],
-"structaudio__kind__attr.html#aee5a5247969c6d4b2bd4d3631cce57d0":[12,0,72,0],
-"structaudio__mapping__attr.html":[12,0,73],
-"structaudio__mapping__attr.html#a3d421057f96c240c9e01b363280cbc24":[12,0,73,0]
+"structaudio__kind__attr.html#aee5a5247969c6d4b2bd4d3631cce57d0":[12,0,72,0]
 };
