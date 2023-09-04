@@ -1,14 +1,5 @@
 var NAVTREEINDEX39 =
 {
-"class_scenario_1_1_scenario_view.html#ac4791a65f77479146ccd071e0561b29a":[12,0,47,317,4],
-"class_scenario_1_1_scenario_view.html#ad7525c0f903ccfbe6e15a6d5bfc7b9fd":[12,0,47,317,14],
-"class_scenario_1_1_scenario_view.html#adc880d406ff8db4f49a6a8567dd65e58":[12,0,47,317,7],
-"class_scenario_1_1_scenario_view.html#ae258749070e2b3c7692e9244fe84d99e":[12,0,47,317,11],
-"class_scenario_1_1_scenario_view.html#af05509cd1fdff59cd0d4d474cdb55c07":[12,0,47,317,1],
-"class_scenario_1_1_scenario_view.html#af21284a37fcf301786fa83bb04b911a2":[12,0,47,317,13],
-"class_scenario_1_1_scenario_view_interface.html":[12,0,47,318],
-"class_scenario_1_1_scenario_view_interface.html#a0ed63e1606789cb202c05d3aa1aae499":[12,0,47,318,4],
-"class_scenario_1_1_scenario_view_interface.html#a24d1cda8684d975fc0e77f0993639011":[12,0,47,318,1],
 "class_scenario_1_1_scenario_view_interface.html#a2a3dba2f0a45581188977e5d95449c98":[12,0,47,318,0],
 "class_scenario_1_1_scenario_view_interface.html#a4c3f0d1d67211edae601e53302ae233a":[12,0,47,318,5],
 "class_scenario_1_1_scenario_view_interface.html#a4f640bff04ad198d3098fc263aed9c8f":[12,0,47,318,3],
@@ -249,5 +240,14 @@ var NAVTREEINDEX39 =
 "class_scenario_1_1_state_view.html#af77857116494ecb21c3fc78673347bc3":[12,0,47,172,15],
 "class_scenario_1_1_strong_q_state.html":[12,0,47,253],
 "class_scenario_1_1_strong_q_state.html#a792b5804ae3a0283dc6fc873557da1a9":[12,0,47,253,0],
-"class_scenario_1_1_summary_inspector_widget.html":[12,0,47,220]
+"class_scenario_1_1_summary_inspector_widget.html":[12,0,47,220],
+"class_scenario_1_1_summary_inspector_widget.html#a1fe19286d952e32e3aaf299bcbfebfcb":[12,0,47,220,0],
+"class_scenario_1_1_summary_inspector_widget.html#aa7b2b07e84651acda3404805274638f7":[12,0,47,220,2],
+"class_scenario_1_1_summary_inspector_widget.html#ada90c5549b2909082dc31dfef630a34c":[12,0,47,220,1],
+"class_scenario_1_1_tempo_point_inspector_factory.html":[12,0,47,174],
+"class_scenario_1_1_tempo_point_inspector_factory.html#a41b1a8ee9e6290825536e9bd4caba4a0":[12,0,47,174,0],
+"class_scenario_1_1_tempo_point_inspector_factory.html#a91b4b51291b67204583d752685a363ce":[12,0,47,174,1],
+"class_scenario_1_1_tempo_point_inspector_factory.html#a984d69dc9015201976ea3b04ed773ccc":[12,0,47,174,2],
+"class_scenario_1_1_tempo_point_inspector_widget.html":[12,0,47,173],
+"class_scenario_1_1_tempo_point_inspector_widget.html#a6f2ef3c0d8676b61205c25816e8f45c9":[12,0,47,173,0]
 };

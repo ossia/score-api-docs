@@ -1,14 +1,5 @@
 var NAVTREEINDEX29 =
 {
-"class_protocols_1_1_joystick_enumerator.html#a83ed06eb83e30615250ab8fe33e6f7f3":[12,0,42,27,0],
-"class_protocols_1_1_joystick_protocol_factory.html":[12,0,42,28],
-"class_protocols_1_1_joystick_protocol_settings_widget.html":[12,0,42,29],
-"class_protocols_1_1_joystick_protocol_settings_widget.html#a5d5b765246cc2dae89a98171a29cba1c":[12,0,42,29,5],
-"class_protocols_1_1_joystick_protocol_settings_widget.html#a7c21530dde506a8337bf9ad0f1fbf8db":[12,0,42,29,1],
-"class_protocols_1_1_joystick_protocol_settings_widget.html#a8c774dc9421e8d37f6fde9b4832243e6":[12,0,42,29,4],
-"class_protocols_1_1_joystick_protocol_settings_widget.html#ad8d15782d079e8f0fa0898997c345f06":[12,0,42,29,0],
-"class_protocols_1_1_joystick_protocol_settings_widget.html#ad9ef8d6cdf1d9e4b6d8abcedcde0f351":[12,0,42,29,3],
-"class_protocols_1_1_joystick_protocol_settings_widget.html#af32992071fa9f2ef02f7e5730f8d28ed":[12,0,42,29,2],
 "class_protocols_1_1_leapmotion_device.html":[12,0,42,31],
 "class_protocols_1_1_leapmotion_device.html#a3deac6ac4792e92da4defa3cc722c952":[12,0,42,31,2],
 "class_protocols_1_1_leapmotion_device.html#a780a89d321b815e14f39552fa1d5cba5":[12,0,42,31,1],
@@ -249,5 +240,14 @@ var NAVTREEINDEX29 =
 "class_protocols_1_1_wiimote_protocol_settings_widget.html#a4348a828a429c13f02afee27c4e3bae4":[12,0,42,83,1],
 "class_protocols_1_1_wiimote_protocol_settings_widget.html#a6966fc9763f6891f030368c5ab5f4e1a":[12,0,42,83,4],
 "class_protocols_1_1_wiimote_protocol_settings_widget.html#a86094c96ae52f666a3b6bc5e01164ecf":[12,0,42,83,2],
-"class_protocols_1_1_wiimote_protocol_settings_widget.html#aa999eb107961b7350c77b55304c1f32a":[12,0,42,83,3]
+"class_protocols_1_1_wiimote_protocol_settings_widget.html#aa999eb107961b7350c77b55304c1f32a":[12,0,42,83,3],
+"class_ptr_container.html":[12,0,216],
+"class_ptr_container.html#a378d798d2ddcf48aed627defb116b545":[12,0,216,6],
+"class_ptr_container.html#a4e559886a569a2e53a7efd473a221e27":[12,0,216,4],
+"class_ptr_container.html#a6a54f210f07188f1fc84d00410585cf9":[12,0,216,3],
+"class_ptr_container.html#a6f5f5bb73318e6c5e86f0dc31a223a27":[12,0,216,2],
+"class_ptr_container.html#a73522dbc828f6c265a3bda8c53f19fe5":[12,0,216,0],
+"class_ptr_container.html#aa58fcab28c00663fd83c2585856e0f56":[12,0,216,1],
+"class_ptr_container.html#af7b94a5cb432fc5843481c8d2876dce4":[12,0,216,5],
+"class_q_map.html":[12,0,217]
 };

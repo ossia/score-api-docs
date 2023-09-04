@@ -1,14 +1,5 @@
 var NAVTREEINDEX28 =
 {
-"class_process_1_1_process_factory___t.html#ab3321d70673822668938f158fc3a427b":[12,0,41,78,2],
-"class_process_1_1_process_factory___t.html#abac7c4fe0020fc33755cf338ece28076":[12,0,41,78,1],
-"class_process_1_1_process_factory___t.html#aea71ff06bd8edfe8347d12c05a615731":[12,0,41,78,7],
-"class_process_1_1_process_factory_list.html":[12,0,41,108],
-"class_process_1_1_process_factory_list.html#a30f7a1d81a5bdb54c15c3436969f7118":[12,0,41,108,1],
-"class_process_1_1_process_factory_list.html#a9b55aee9cf7c3afeca395d96d92da19d":[12,0,41,108,0],
-"class_process_1_1_process_factory_list.html#ab6662d504907d12836d2d0201450f442":[12,0,41,108,2],
-"class_process_1_1_process_focus_manager.html":[12,0,41,121],
-"class_process_1_1_process_focus_manager.html#a0e5035e72a61e333bf9ca75c0a1dd7fb":[12,0,41,121,0],
 "class_process_1_1_process_focus_manager.html#a155759758ede88e51568a67acdffd3a4":[12,0,41,121,4],
 "class_process_1_1_process_focus_manager.html#a21046da2fce9aac633095f1ece14cbe3":[12,0,41,121,2],
 "class_process_1_1_process_focus_manager.html#a229ea2a2182f156aaee46af2ac9b1154":[12,0,41,121,1],
@@ -249,5 +240,14 @@ var NAVTREEINDEX28 =
 "class_protocols_1_1_joystick_device.html#aa8391c679638f620fc2379e029cc9415":[12,0,42,26,1],
 "class_protocols_1_1_joystick_device.html#ade854aa04fe470f6b616f6e7d1298ec7":[12,0,42,26,3],
 "class_protocols_1_1_joystick_device.html#ae8c8e65b7cbca478a93dc5d0b8eb0dc7":[12,0,42,26,2],
-"class_protocols_1_1_joystick_enumerator.html":[12,0,42,27]
+"class_protocols_1_1_joystick_enumerator.html":[12,0,42,27],
+"class_protocols_1_1_joystick_enumerator.html#a83ed06eb83e30615250ab8fe33e6f7f3":[12,0,42,27,0],
+"class_protocols_1_1_joystick_protocol_factory.html":[12,0,42,28],
+"class_protocols_1_1_joystick_protocol_settings_widget.html":[12,0,42,29],
+"class_protocols_1_1_joystick_protocol_settings_widget.html#a5d5b765246cc2dae89a98171a29cba1c":[12,0,42,29,5],
+"class_protocols_1_1_joystick_protocol_settings_widget.html#a7c21530dde506a8337bf9ad0f1fbf8db":[12,0,42,29,1],
+"class_protocols_1_1_joystick_protocol_settings_widget.html#a8c774dc9421e8d37f6fde9b4832243e6":[12,0,42,29,4],
+"class_protocols_1_1_joystick_protocol_settings_widget.html#ad8d15782d079e8f0fa0898997c345f06":[12,0,42,29,0],
+"class_protocols_1_1_joystick_protocol_settings_widget.html#ad9ef8d6cdf1d9e4b6d8abcedcde0f351":[12,0,42,29,3],
+"class_protocols_1_1_joystick_protocol_settings_widget.html#af32992071fa9f2ef02f7e5730f8d28ed":[12,0,42,29,2]
 };

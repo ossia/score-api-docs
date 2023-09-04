@@ -1,14 +1,5 @@
 var NAVTREEINDEX23 =
 {
-"class_media_1_1_settings_1_1_presenter.html#a5ebdfa29da8f6e32ec5e605af0eb697b":[12,0,31,2,1,1],
-"class_media_1_1_settings_1_1_view.html":[12,0,31,2,2],
-"class_media_1_1_settings_1_1_view.html#aa304c00e45cdf2a9ea4582ae856df3e4":[12,0,31,2,2,0],
-"class_media_1_1_sndfile_decoder.html":[12,0,31,19],
-"class_media_1_1_sndfile_decoder.html#a061520890d2bc2ba9309b9c3a2955e83":[12,0,31,19,3],
-"class_media_1_1_sndfile_decoder.html#a24e97847a1822a0c3c317175d6e9e163":[12,0,31,19,4],
-"class_media_1_1_sndfile_decoder.html#a77e646395d8cd15c677b508d6846ef0a":[12,0,31,19,5],
-"class_media_1_1_sndfile_decoder.html#a8035ed71c25631cbaa409bb3a0a6621c":[12,0,31,19,2],
-"class_media_1_1_sndfile_decoder.html#ac1bd956f533010cd996089d1fca8273b":[12,0,31,19,1],
 "class_media_1_1_sndfile_decoder.html#afb3cca86e512d8bb5ef29f826c712cf4":[12,0,31,19,0],
 "class_media_1_1_sound_1_1_audio_preview_widget.html":[12,0,31,3,5],
 "class_media_1_1_sound_1_1_audio_preview_widget.html#a0086dd3ef9db3a9d67df685a1b346741":[12,0,31,3,5,1],
@@ -249,5 +240,14 @@ var NAVTREEINDEX23 =
 "class_midi_1_1_scale_notes.html#aa2e97114a0933f1a2e54daa5f062f775":[12,0,32,7,2],
 "class_midi_1_1_scale_notes.html#ac1073a547dccc309e3331f7d77491831":[12,0,32,7,1],
 "class_midi_1_1_set_channel.html":[12,0,32,10],
-"class_midi_1_1_set_channel.html#a2a8add4c25b2cd907aac4a1533733c2a":[12,0,32,10,1]
+"class_midi_1_1_set_channel.html#a2a8add4c25b2cd907aac4a1533733c2a":[12,0,32,10,1],
+"class_midi_1_1_set_channel.html#a4753d38d3e4dcf2f27b79a9c7f058ba2":[12,0,32,10,3],
+"class_midi_1_1_set_channel.html#a4b19ccc804972125ff53a879dfe51eea":[12,0,32,10,2],
+"class_midi_1_1_set_channel.html#a6e372baa9bf6711f212260f3c742c288":[12,0,32,10,0],
+"class_midi_1_1_set_channel.html#ab3f1f14a8857bede0b2abb8094a94dbd":[12,0,32,10,4],
+"class_midi_1_1_set_range.html":[12,0,32,11],
+"class_midi_1_1_set_range.html#a2fd5ca16898bdaa5ba0b8f5bee1ff831":[12,0,32,11,3],
+"class_midi_1_1_set_range.html#a483c8ac25562fd0ced4535c63eb0c9b1":[12,0,32,11,4],
+"class_midi_1_1_set_range.html#a5f85c0adcd3866552d2ae640060af11d":[12,0,32,11,2],
+"class_midi_1_1_set_range.html#aae866c601785eae01eb0efee346562ec":[12,0,32,11,0]
 };

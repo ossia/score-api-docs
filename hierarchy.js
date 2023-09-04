@@ -894,7 +894,6 @@ var hierarchy =
         [ "Gfx::Images::image_node", "class_gfx_1_1_images_1_1image__node.html", null ],
         [ "Gfx::Text::text_node", "class_gfx_1_1_text_1_1text__node.html", null ],
         [ "Gfx::Video::video_node", "class_gfx_1_1_video_1_1video__node.html", null ],
-        [ "JS::gpu_exec_node", "class_j_s_1_1gpu__exec__node.html", null ],
         [ "Jit::texgen_node", "class_jit_1_1texgen__node.html", null ]
       ] ],
       [ "JS::js_node", "class_j_s_1_1js__node.html", null ],
@@ -1061,8 +1060,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1757,7 +1756,6 @@ var hierarchy =
         [ "score::gfx::DepthNode", "structscore_1_1gfx_1_1_depth_node.html", null ],
         [ "score::gfx::ISFNode", "classscore_1_1gfx_1_1_i_s_f_node.html", null ],
         [ "score::gfx::NodeModel", "classscore_1_1gfx_1_1_node_model.html", [
-          [ "JS::GpuNode", "struct_j_s_1_1_gpu_node.html", null ],
           [ "score::gfx::FullScreenImageNode", "structscore_1_1gfx_1_1_full_screen_image_node.html", null ],
           [ "score::gfx::ImagesNode", "structscore_1_1gfx_1_1_images_node.html", null ],
           [ "score::gfx::PhongNode", "structscore_1_1gfx_1_1_phong_node.html", null ],
@@ -1787,7 +1785,6 @@ var hierarchy =
       [ "Gfx::Spout::SpoutInputNode::Renderer", "class_gfx_1_1_spout_1_1_spout_input_node_1_1_renderer.html", null ],
       [ "RenderedDepthNode", "struct_rendered_depth_node.html", null ],
       [ "score::gfx::GenericNodeRenderer", "classscore_1_1gfx_1_1_generic_node_renderer.html", [
-        [ "JS::GpuRenderer", "class_j_s_1_1_gpu_renderer.html", null ],
         [ "score::gfx::FullScreenImageNode::Renderer", "classscore_1_1gfx_1_1_full_screen_image_node_1_1_renderer.html", null ],
         [ "score::gfx::ImagesNode::OnTheFlyRenderer", "classscore_1_1gfx_1_1_images_node_1_1_on_the_fly_renderer.html", null ],
         [ "score::gfx::ImagesNode::PreloadedRenderer", "classscore_1_1gfx_1_1_images_node_1_1_preloaded_renderer.html", null ],
@@ -1967,8 +1964,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Patternist::ProcessModel >", "class_path.html", null ],
@@ -2847,7 +2844,6 @@ var hierarchy =
       [ "Outlet", "class_outlet.html", [
         [ "AudioOutlet", "class_audio_outlet.html", null ],
         [ "MidiOutlet", "class_midi_outlet.html", null ],
-        [ "TextureOutlet", "class_texture_outlet.html", null ],
         [ "ValueOutlet", "class_value_outlet.html", null ]
       ] ],
       [ "PanelDelegate", "class_panel_delegate.html", null ],

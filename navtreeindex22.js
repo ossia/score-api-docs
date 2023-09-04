@@ -1,14 +1,5 @@
 var NAVTREEINDEX22 =
 {
-"class_library_1_1_recursive_filter_proxy.html#a50676aa2245702c107296060e62cd6e3":[12,0,27,23,0],
-"class_library_1_1_recursive_filter_proxy.html#a8516b47111928d86885d27effb0c4f38":[12,0,27,23,4],
-"class_library_1_1_recursive_filter_proxy.html#ac0175ff620a67a0aaf871862be8cfd5f":[12,0,27,23,1],
-"class_library_1_1_recursive_filter_proxy.html#ad35429aa72f6223914b089d7886415b7":[12,0,27,23,5],
-"class_library_1_1_settings_1_1_model.html":[12,0,27,0,0],
-"class_library_1_1_settings_1_1_model.html#a6453f1320661ab3b58987feacca8bf1e":[12,0,27,0,0,7],
-"class_library_1_1_settings_1_1_model.html#a6aac536bb47d90fad56e023fed8597fc":[12,0,27,0,0,5],
-"class_library_1_1_settings_1_1_model.html#a831c000f8768512055314f7805580aa1":[12,0,27,0,0,0],
-"class_library_1_1_settings_1_1_model.html#aa35ef27deadda40890a3d47d94d49a80":[12,0,27,0,0,4],
 "class_library_1_1_settings_1_1_model.html#aa5ba635dcc66a4dcfc9a8286aa34b754":[12,0,27,0,0,1],
 "class_library_1_1_settings_1_1_model.html#ab44c42deeb488249e959ce325a278434":[12,0,27,0,0,6],
 "class_library_1_1_settings_1_1_model.html#ac334311ac1d8dc403333f44bead2ef35":[12,0,27,0,0,3],
@@ -249,5 +240,14 @@ var NAVTREEINDEX22 =
 "class_media_1_1_settings_1_1_plugin_settings_tab.html#ada6ded4284ee31f384985d1bf3bd39fb":[12,0,31,2,3,0],
 "class_media_1_1_settings_1_1_presenter.html":[12,0,31,2,1],
 "class_media_1_1_settings_1_1_presenter.html#a1f5bef033bcbeae4eed2064a843eef85":[12,0,31,2,1,2],
-"class_media_1_1_settings_1_1_presenter.html#a4e2e51426b1ad5aded618745318fa941":[12,0,31,2,1,0]
+"class_media_1_1_settings_1_1_presenter.html#a4e2e51426b1ad5aded618745318fa941":[12,0,31,2,1,0],
+"class_media_1_1_settings_1_1_presenter.html#a5ebdfa29da8f6e32ec5e605af0eb697b":[12,0,31,2,1,1],
+"class_media_1_1_settings_1_1_view.html":[12,0,31,2,2],
+"class_media_1_1_settings_1_1_view.html#aa304c00e45cdf2a9ea4582ae856df3e4":[12,0,31,2,2,0],
+"class_media_1_1_sndfile_decoder.html":[12,0,31,19],
+"class_media_1_1_sndfile_decoder.html#a061520890d2bc2ba9309b9c3a2955e83":[12,0,31,19,3],
+"class_media_1_1_sndfile_decoder.html#a24e97847a1822a0c3c317175d6e9e163":[12,0,31,19,4],
+"class_media_1_1_sndfile_decoder.html#a77e646395d8cd15c677b508d6846ef0a":[12,0,31,19,5],
+"class_media_1_1_sndfile_decoder.html#a8035ed71c25631cbaa409bb3a0a6621c":[12,0,31,19,2],
+"class_media_1_1_sndfile_decoder.html#ac1bd956f533010cd996089d1fca8273b":[12,0,31,19,1]
 };

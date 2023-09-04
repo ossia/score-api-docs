@@ -108,11 +108,11 @@ $(document).ready(function(){initNavTree('_texture_port_8hpp_source.html',''); i
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_gfx.html">Gfx</a></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span>TextureInlet;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span><a class="code" href="class_texture_outlet.html">TextureOutlet</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span>TextureOutlet;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;UUID_METADATA(, <a class="code" href="class_process_1_1_port.html">Process::Port</a>, Gfx::TextureInlet, <span class="stringliteral">&quot;5ac86198-2d03-4830-9e41-a6d529922d29&quot;</span>)</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;UUID_METADATA(</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    , <a class="code" href="namespace_process.html">Process</a>::Port, <a class="code" href="namespace_gfx.html">Gfx</a>::<a class="code" href="class_texture_outlet.html">TextureOutlet</a>, &quot;f1c71046-b754-49a5-8e66-d01374773dfc&quot;)</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    , <a class="code" href="namespace_process.html">Process</a>::Port, <a class="code" href="namespace_gfx.html">Gfx</a>::TextureOutlet, &quot;f1c71046-b754-49a5-8e66-d01374773dfc&quot;)</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;namespace <a class="code" href="namespace_gfx.html">Gfx</a></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
@@ -139,22 +139,22 @@ $(document).ready(function(){initNavTree('_texture_port_8hpp_source.html',''); i
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  }</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="class_texture_outlet.html">TextureOutlet</a> : <span class="keyword">public</span> <a class="code" href="class_process_1_1_outlet.html">Process::Outlet</a></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT TextureOutlet : <span class="keyword">public</span> <a class="code" href="class_process_1_1_outlet.html">Process::Outlet</a></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  W_OBJECT(<a class="code" href="class_texture_outlet.html">TextureOutlet</a>)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  W_OBJECT(TextureOutlet)</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  SCORE_SERIALIZE_FRIENDS</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  MODEL_METADATA_IMPL_HPP(<a class="code" href="class_texture_outlet.html">TextureOutlet</a>)</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="class_texture_outlet.html">TextureOutlet</a>() = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  ~<a class="code" href="class_texture_outlet.html">TextureOutlet</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="class_texture_outlet.html">TextureOutlet</a>(<span class="keyword">const</span> <a class="code" href="class_texture_outlet.html">TextureOutlet</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="class_texture_outlet.html">TextureOutlet</a>(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> c, QObject* parent);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  MODEL_METADATA_IMPL_HPP(TextureOutlet)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  TextureOutlet() = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  ~TextureOutlet() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  TextureOutlet(<span class="keyword">const</span> TextureOutlet&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  TextureOutlet(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> c, QObject* parent);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="class_texture_outlet.html">TextureOutlet</a>(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="class_texture_outlet.html">TextureOutlet</a>(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="class_texture_outlet.html">TextureOutlet</a>(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="class_texture_outlet.html">TextureOutlet</a>(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  TextureOutlet(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  TextureOutlet(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  TextureOutlet(<a class="code" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  TextureOutlet(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  VIRTUAL_CONSTEXPR Process::PortType type() const noexcept<span class="keyword"> override</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">  </span>{</div>
@@ -186,7 +186,7 @@ $(document).ready(function(){initNavTree('_texture_port_8hpp_source.html',''); i
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">struct </span>TextureOutletFactory final : <span class="keyword">public</span> <a class="code" href="class_dataflow_1_1_automatable_port_factory.html">Dataflow::AutomatablePortFactory</a></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">using</span> Model_T = <a class="code" href="class_texture_outlet.html">TextureOutlet</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">using</span> Model_T = TextureOutlet;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="code" href="class_uuid_key.html">UuidKey&lt;Process::Port&gt;</a> concreteKey() const noexcept<span class="keyword"> override</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">  </span>{</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="struct_metadata.html">Metadata&lt;ConcreteKey_k, Model_T&gt;::get</a>();</div>
@@ -304,7 +304,6 @@ $(document).ready(function(){initNavTree('_texture_port_8hpp_source.html',''); i
 <div class="ttc" id="aclass_process_1_1_inlet_html"><div class="ttname"><a href="class_process_1_1_inlet.html">Process::Inlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:176</div></div>
 <div class="ttc" id="aclass_process_1_1_outlet_html"><div class="ttname"><a href="class_process_1_1_outlet.html">Process::Outlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:264</div></div>
 <div class="ttc" id="aclass_process_1_1_port_html"><div class="ttname"><a href="class_process_1_1_port.html">Process::Port</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:102</div></div>
-<div class="ttc" id="aclass_texture_outlet_html"><div class="ttname"><a href="class_texture_outlet.html">TextureOutlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:407</div></div>
 <div class="ttc" id="aclass_uuid_key_html"><div class="ttname"><a href="class_uuid_key.html">UuidKey</a></div><div class="ttdef"><b>Definition:</b> UuidKey.hpp:343</div></div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition:</b> Identifier.hpp:57</div></div>
 <div class="ttc" id="anamespace_gfx_html"><div class="ttname"><a href="namespace_gfx.html">Gfx</a></div><div class="ttdoc">Binds the rendering pipeline to ossia processes.</div><div class="ttdef"><b>Definition:</b> CameraDevice.cpp:23</div></div>
