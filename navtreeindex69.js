@@ -1,5 +1,6 @@
 var NAVTREEINDEX69 =
 {
+"struct_process_1_1_cable_data.html":[12,0,41,20],
 "struct_process_1_1_cable_data.html#a560c0d2ccb2c3e2856aaff4930c1bf09":[12,0,41,20,2],
 "struct_process_1_1_cable_data.html#a6fe83f7205e8e9266ac09264124929f6":[12,0,41,20,0],
 "struct_process_1_1_cable_data.html#a8584cd4eab64fc5c0b2f2585274bfbd5":[12,0,41,20,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX69 =
 "struct_process_1_1_process_state_data.html#a438743446d0d3abfbab7f9e378835bbc":[12,0,41,116,1],
 "struct_process_1_1_process_state_data.html#ac67cf43ab0f0fa3ad3ada5545069b394":[12,0,41,116,0],
 "struct_process_1_1_program_edit.html":[12,0,41,62],
-"struct_process_1_1_program_edit.html#a48ea91d0fab7d75610ca336a85e58aaa":[12,0,41,62,1],
-"struct_process_1_1_program_edit.html#a58a751a5e664d9737f6e5f13dad5e398":[12,0,41,62,2]
+"struct_process_1_1_program_edit.html#a48ea91d0fab7d75610ca336a85e58aaa":[12,0,41,62,1]
 };

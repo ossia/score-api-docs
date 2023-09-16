@@ -1036,6 +1036,7 @@ var files_dup =
     [ "QImagePool.hpp", "_q_image_pool_8hpp_source.html", null ],
     [ "QMapHelper.hpp", "_q_map_helper_8hpp.html", "_q_map_helper_8hpp" ],
     [ "QmlObjects.hpp", "_qml_objects_8hpp_source.html", null ],
+    [ "QRhiGles2.hpp", "_q_rhi_gles2_8hpp_source.html", null ],
     [ "QtMetatypes.hpp", "_qt_metatypes_8hpp_source.html", null ],
     [ "QuantificationWidget.hpp", "_quantification_widget_8hpp_source.html", null ],
     [ "Quantifier.hpp", "_quantifier_8hpp_source.html", null ],

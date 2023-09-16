@@ -1,5 +1,6 @@
 var NAVTREEINDEX30 =
 {
+"class_protocols_1_1_minuit_protocol_settings_widget.html#a5a60273441014bec990783ec62661c3d":[12,0,42,50,3],
 "class_protocols_1_1_minuit_protocol_settings_widget.html#a88342754b4c0db671c36c429516846b1":[12,0,42,50,7],
 "class_protocols_1_1_minuit_protocol_settings_widget.html#a93566f1a279caf38d4b64ae2d490ae1e":[12,0,42,50,2],
 "class_protocols_1_1_minuit_protocol_settings_widget.html#a98349cf151e2aa1e4d35c316ea952367":[12,0,42,50,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX30 =
 "class_remote_control_1_1_scenario_base.html#af505c8f5261cf3723dea5a5681c40303":[12,0,45,15,2],
 "class_remote_control_1_1_settings_1_1_model.html":[12,0,45,0,0],
 "class_remote_control_1_1_settings_1_1_model.html#a831c000f8768512055314f7805580aa1":[12,0,45,0,0,0],
-"class_remote_control_1_1_settings_1_1_presenter.html":[12,0,45,0,1],
-"class_remote_control_1_1_settings_1_1_presenter.html#a1615a36f468100042e273546a9980bd8":[12,0,45,0,1,1]
+"class_remote_control_1_1_settings_1_1_presenter.html":[12,0,45,0,1]
 };

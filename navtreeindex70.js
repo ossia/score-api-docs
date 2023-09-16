@@ -1,5 +1,6 @@
 var NAVTREEINDEX70 =
 {
+"struct_process_1_1_program_edit.html#a58a751a5e664d9737f6e5f13dad5e398":[12,0,41,62,2],
 "struct_process_1_1_program_edit.html#a723a68734b76afddf7259d19ac6ce937":[12,0,41,62,0],
 "struct_process_1_1_state_node_data.html":[12,0,41,118],
 "struct_process_1_1_state_node_data.html#a17f5eabca3a00a8f92c5b49eaf23f2e5":[12,0,41,118,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX70 =
 "struct_protocols_1_1_pixel_matrix.html#a949dbf30a2c1ef0e7f496b3d7a23b228":[12,0,42,11,0],
 "struct_protocols_1_1_pixel_matrix.html#a993c1c0befcf1798d65931a6b3a2d128":[12,0,42,11,1],
 "struct_protocols_1_1_serial_specific_settings.html":[12,0,42,80],
-"struct_protocols_1_1_serial_specific_settings.html#a0175d7cfa698fb7ed00b5380bdba05a6":[12,0,42,80,2],
-"struct_protocols_1_1_serial_specific_settings.html#a866b612d670d2f29003c9a4b9a93bfe1":[12,0,42,80,1]
+"struct_protocols_1_1_serial_specific_settings.html#a0175d7cfa698fb7ed00b5380bdba05a6":[12,0,42,80,2]
 };

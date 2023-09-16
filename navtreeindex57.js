@@ -1,5 +1,6 @@
 var NAVTREEINDEX57 =
 {
+"namespace_scenario.html#afa01e53a5f314deb32d51da19251b1f6":[11,0,50,420],
 "namespace_scenario.html#afa0a569a62ee5edc053adf145d6e61ce":[11,0,50,432],
 "namespace_scenario.html#afd58f4acbafb73863764704f7ea852a7":[11,0,50,340],
 "namespace_scenario.html#afdc29cd7024274dfa805365a08295800":[11,0,50,435],
@@ -248,6 +249,5 @@ var NAVTREEINDEX57 =
 "plugins_2score-plugin-avnd_2_crousti_2_layout_8hpp_source.html":[13,0,652],
 "plugins_2score-plugin-controlsurface_2_control_surface_2_metadata_8hpp_source.html":[13,0,732],
 "plugins_2score-plugin-controlsurface_2_control_surface_2_presenter_8hpp_source.html":[13,0,940],
-"plugins_2score-plugin-controlsurface_2_control_surface_2commands_8hpp_source.html":[13,0,172],
-"plugins_2score-plugin-engine_2_execution_2_document_plugin_8hpp_source.html":[13,0,344]
+"plugins_2score-plugin-controlsurface_2_control_surface_2commands_8hpp_source.html":[13,0,172]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX29 =
 {
+"class_process_1_1_process_multi_script_edit_dialog.html#a85217463086f7905b5012971fdbc34bd":[12,0,41,113,4],
 "class_process_1_1_process_multi_script_edit_dialog.html#ae0cef4a2158e075eec0add5cb37372ab":[12,0,41,113,2],
 "class_process_1_1_process_script_edit_dialog.html":[12,0,41,115],
 "class_process_1_1_process_script_edit_dialog.html#a00c68096c9a28d4942ada8587ada0e20":[12,0,41,115,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX29 =
 "class_protocols_1_1_minuit_protocol_factory.html":[12,0,42,49],
 "class_protocols_1_1_minuit_protocol_settings_widget.html":[12,0,42,50],
 "class_protocols_1_1_minuit_protocol_settings_widget.html#a35d71f346a997393fc1ee8f16ab62243":[12,0,42,50,5],
-"class_protocols_1_1_minuit_protocol_settings_widget.html#a54f4d232ea85d2deb45d06c97b381d77":[12,0,42,50,1],
-"class_protocols_1_1_minuit_protocol_settings_widget.html#a5a60273441014bec990783ec62661c3d":[12,0,42,50,3]
+"class_protocols_1_1_minuit_protocol_settings_widget.html#a54f4d232ea85d2deb45d06c97b381d77":[12,0,42,50,1]
 };

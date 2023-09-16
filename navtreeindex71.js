@@ -1,5 +1,6 @@
 var NAVTREEINDEX71 =
 {
+"struct_protocols_1_1_serial_specific_settings.html#a866b612d670d2f29003c9a4b9a93bfe1":[12,0,42,80,1],
 "struct_protocols_1_1_serial_specific_settings.html#ae724d472ff0bc96dbb35c7b0a3d12e05":[12,0,42,80,0],
 "struct_protocols_1_1_settings_1_1_midi_a_p_i.html":[12,0,42,1,0],
 "struct_protocols_1_1_settings_1_1_midi_a_p_i.html#a2f82e35ee43bedd9e16c7addc715c910":[12,0,42,1,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX71 =
 "struct_scenario_1_1_command_1_1_message_pairs.html#ab674fee2531b2e688209def4a3c07789":[12,0,47,0,6,1],
 "struct_scenario_1_1_command_1_1_message_pairs.html#ac2e40743d906be50fa761b2eaf6403db":[12,0,47,0,6,0],
 "struct_scenario_1_1_command_1_1_message_pairs.html#aefe07c0b9d9fdb25401ec426ebbf0c91":[12,0,47,0,6,2],
-"struct_scenario_1_1_command_1_1color__converter.html":[12,0,47,0,57],
-"struct_scenario_1_1_command_1_1color__converter.html#a0aeb950ec0f4631cb4531f4b9c85f726":[12,0,47,0,57,0]
+"struct_scenario_1_1_command_1_1color__converter.html":[12,0,47,0,57]
 };

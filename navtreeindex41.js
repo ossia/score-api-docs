@@ -1,5 +1,6 @@
 var NAVTREEINDEX41 =
 {
+"class_scenario_1_1_time_signature_handle.html#ab94eea4faf90b3b2b51b07a0643fefd7":[12,0,47,110,15],
 "class_scenario_1_1_time_signature_handle.html#ae04e5442eff3affa9c064609cd4896dd":[12,0,47,110,9],
 "class_scenario_1_1_time_signature_handle.html#af15d6f062517a89008e5bcd78fd4934f":[12,0,47,110,16],
 "class_scenario_1_1_time_signature_handle.html#af565524530311306b66d734b0935ddf7":[12,0,47,110,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX41 =
 "class_single_section_memory_manager.html#ad11ce5ae13cdef48a43b38472f3955af":[12,0,278,5],
 "class_spline3_d_1_1_change_spline.html":[12,0,51,1],
 "class_spline3_d_1_1_change_spline.html#a1ff21b76fca9233883760c4401ee31fa":[12,0,51,1,6],
-"class_spline3_d_1_1_change_spline.html#a286b449e816d9b7a419580b09edf1011":[12,0,51,1,5],
-"class_spline3_d_1_1_change_spline.html#a40156ff97a5664f36083aa5ece2f9b0f":[12,0,51,1,3]
+"class_spline3_d_1_1_change_spline.html#a286b449e816d9b7a419580b09edf1011":[12,0,51,1,5]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX65 =
 {
+"struct_jit_1_1inlet__vis.html":[12,0,24,10],
 "struct_jit_1_1inlet__vis.html#a178239c782c3ce95feb75158e79a8763":[12,0,24,10,4],
 "struct_jit_1_1inlet__vis.html#a4599690bf60ae881a23b30b0cf48c819":[12,0,24,10,5],
 "struct_jit_1_1inlet__vis.html#a532e87919cdbc3fb12af44c3b40d7afc":[12,0,24,10,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX65 =
 "struct_media_1_1_a_v_codec_context___free.html":[12,0,31,5],
 "struct_media_1_1_a_v_codec_context___free.html#a1a2e898aa1acccbfec4cbfe1cdc95b5d":[12,0,31,5,0],
 "struct_media_1_1_a_v_format_context___free.html":[12,0,31,6],
-"struct_media_1_1_a_v_format_context___free.html#a92ede1b6741ce03f082d0f5e4afd07b0":[12,0,31,6,0],
-"struct_media_1_1_a_v_frame___free.html":[12,0,31,7]
+"struct_media_1_1_a_v_format_context___free.html#a92ede1b6741ce03f082d0f5e4afd07b0":[12,0,31,6,0]
 };

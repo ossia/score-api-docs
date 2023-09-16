@@ -1,5 +1,6 @@
 var NAVTREEINDEX76 =
 {
+"structjk_1_1value.html#a3137e89b96b0ecacf2afd3ad60516f08":[12,0,25,0,18],
 "structjk_1_1value.html#a3942ca414cecdaccc43c79a3947d6829":[12,0,25,0,8],
 "structjk_1_1value.html#a41b21fe2762d442a51bdc3ba2f92bb72":[12,0,25,0,30],
 "structjk_1_1value.html#a5f268c1119245cd8faf7e142b3f3981e":[12,0,25,0,4],
@@ -99,8 +100,8 @@ var NAVTREEINDEX76 =
 "structoscr_1_1_inlet_init_func.html#a00061a4355a850dfe44bdc6e5d2c13a3":[12,0,36,33,10],
 "structoscr_1_1_inlet_init_func.html#a245ccc5eaa53e8f1281657af9bfb0523":[12,0,36,33,7],
 "structoscr_1_1_inlet_init_func.html#a26d3210108ad9780d409b1d83fea759b":[12,0,36,33,8],
-"structoscr_1_1_inlet_init_func.html#a3fe66fd8146371ec86505ce8a99a7c6c":[12,0,36,33,2],
 "structoscr_1_1_inlet_init_func.html#a3fe66fd8146371ec86505ce8a99a7c6c":[12,0,36,33,3],
+"structoscr_1_1_inlet_init_func.html#a3fe66fd8146371ec86505ce8a99a7c6c":[12,0,36,33,2],
 "structoscr_1_1_inlet_init_func.html#a680438ae2d5107e10e3bc4f41a5df5bb":[12,0,36,33,5],
 "structoscr_1_1_inlet_init_func.html#a6ad026f6baaaa59c21ea3ea22de4d616":[12,0,36,33,6],
 "structoscr_1_1_inlet_init_func.html#abb4cabdfafbc76baa70e60ae3f998bea":[12,0,36,33,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX76 =
 "structoscr_1_1multichannel__audio.html#acd084bed10c510a4d95267c6cf3d2767":[12,0,36,13,5],
 "structoscr_1_1multichannel__audio.html#ad721a26e1e4ac0caf15aca6200f41efc":[12,0,36,13,0],
 "structoscr_1_1multichannel__audio.html#af1eff68af0beee4f7e22b98b10bf6385":[12,0,36,13,6],
-"structoscr_1_1multichannel__audio__view.html":[12,0,36,12],
-"structoscr_1_1multichannel__audio__view.html#a083de696937b0a13b8c04e52bf53adbb":[12,0,36,12,6]
+"structoscr_1_1multichannel__audio__view.html":[12,0,36,12]
 };

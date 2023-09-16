@@ -1,5 +1,6 @@
 var NAVTREEINDEX62 =
 {
+"struct_device_1_1_device_capas.html#a698891cc2710a29bfee4f1d7565c47cc":[12,0,10,6,7],
 "struct_device_1_1_device_capas.html#a710292898e5d995648d267f7a52aed08":[12,0,10,6,1],
 "struct_device_1_1_device_capas.html#a7ccc940f9c5f380e1b714b340b90a56b":[12,0,10,6,6],
 "struct_device_1_1_device_capas.html#a9f74797342058ac2e733ba2c66bc7312":[12,0,10,6,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX62 =
 "struct_explorer_1_1make__dataspace.html#a186042e23c167f558fa0f5cc8e2179d1":[12,0,13,25,2],
 "struct_explorer_1_1make__dataspace.html#a73883926ef49386a8bed5a982e8ce0ae":[12,0,13,25,3],
 "struct_explorer_1_1make__dataspace.html#abfc7f9e815a1a9f00b77363007e2f151":[12,0,13,25,1],
-"struct_explorer_1_1make__dataspace.html#aff8bbc877049ee414d0d819bf194df2f":[12,0,13,25,0],
-"struct_explorer_1_1make__unit.html":[12,0,13,24]
+"struct_explorer_1_1make__dataspace.html#aff8bbc877049ee414d0d819bf194df2f":[12,0,13,25,0]
 };
