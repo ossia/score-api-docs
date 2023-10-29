@@ -1439,6 +1439,7 @@ var annotated_dup =
         [ "MoveNewState", "class_scenario_1_1_command_1_1_move_new_state.html", "class_scenario_1_1_command_1_1_move_new_state" ],
         [ "SerializableMoveEvent", "class_scenario_1_1_command_1_1_serializable_move_event.html", "class_scenario_1_1_command_1_1_serializable_move_event" ],
         [ "DuplicateInterval", "class_scenario_1_1_command_1_1_duplicate_interval.html", "class_scenario_1_1_command_1_1_duplicate_interval" ],
+        [ "ChangeStartState", "class_scenario_1_1_command_1_1_change_start_state.html", null ],
         [ "Encapsulate", "class_scenario_1_1_command_1_1_encapsulate.html", null ],
         [ "Decapsulate", "class_scenario_1_1_command_1_1_decapsulate.html", null ],
         [ "HideRack", "class_scenario_1_1_command_1_1_hide_rack.html", "class_scenario_1_1_command_1_1_hide_rack" ],

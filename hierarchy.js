@@ -319,6 +319,7 @@ var hierarchy =
       [ "Scenario::Command::ChangeElementLabel< T >", "class_scenario_1_1_command_1_1_change_element_label.html", null ],
       [ "Scenario::Command::ChangeElementName< T >", "class_scenario_1_1_command_1_1_change_element_name.html", null ],
       [ "Scenario::Command::ChangeSlotPosition", "class_scenario_1_1_command_1_1_change_slot_position.html", null ],
+      [ "Scenario::Command::ChangeStartState", "class_scenario_1_1_command_1_1_change_start_state.html", null ],
       [ "Scenario::Command::ClearInterval", "class_scenario_1_1_command_1_1_clear_interval.html", null ],
       [ "Scenario::Command::ClearState", "class_scenario_1_1_command_1_1_clear_state.html", null ],
       [ "Scenario::Command::CreateCommentBlock", "class_scenario_1_1_command_1_1_create_comment_block.html", null ],
@@ -1060,8 +1061,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
