@@ -4,6 +4,6 @@ var structoscr_1_1_view =
     [ "mousePressEvent", "structoscr_1_1_view.html#acc63b7a5dbc22d5b1ac9446cc35285b6", null ],
     [ "mouseReleaseEvent", "structoscr_1_1_view.html#a45687d2a9780d4b776ebbab77a00d148", null ],
     [ "drawnArc", "structoscr_1_1_view.html#ab9d3c80c6bea380cc11dd7ff2c175c16", null ],
-    [ "provenance", "structoscr_1_1_view.html#a6a1c502d28fc3120d52d4e2048dc6195", null ],
+    [ "provenance", "structoscr_1_1_view.html#a812ba02b8e1e1567ea97f69121199cea", null ],
     [ "sceneOrig", "structoscr_1_1_view.html#a90d72d4c22c458e82927014c1b5c9100", null ]
 ];
