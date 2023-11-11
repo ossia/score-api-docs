@@ -158,8 +158,7 @@ std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_sampler.html">Sampler
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a9a6212efd3eebcef6f6dda4ba4b8cca9"><td class="memItemLeft" align="right" valign="top"><a id="a9a6212efd3eebcef6f6dda4ba4b8cca9"></a>
-static constexpr const auto&#160;</td><td class="memItemRight" valign="bottom"><b>yuv420_filter</b></td></tr>
+<tr class="memitem:a9a6212efd3eebcef6f6dda4ba4b8cca9"><td class="memItemLeft" align="right" valign="top">static constexpr const auto&#160;</td><td class="memItemRight" valign="bottom"><b>yuv420_filter</b></td></tr>
 <tr class="separator:a9a6212efd3eebcef6f6dda4ba4b8cca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -206,6 +205,57 @@ static QString&#160;</td><td class="memItemRight" valign="bottom"><b>vertexShade
 
 <p>Implements <a class="el" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a80723548c505023ec398a58148c230f0">score::gfx::GPUVideoDecoder</a>.</p>
 
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a9a6212efd3eebcef6f6dda4ba4b8cca9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a6212efd3eebcef6f6dda4ba4b8cca9">&#9670;&nbsp;</a></span>yuv420_filter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const auto score::gfx::YUV420P12Decoder::yuv420_filter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= R<span class="stringliteral">&quot;_(#version 450</span></div>
+<div class="line"><span class="stringliteral"></span> </div>
+<div class="line"><span class="stringliteral">)_&quot; SCORE_GFX_VIDEO_UNIFORMS R</span><span class="stringliteral">&quot;_(</span></div>
+<div class="line"><span class="stringliteral"></span> </div>
+<div class="line"><span class="stringliteral">  layout(binding=3) uniform sampler2D y_tex;</span></div>
+<div class="line"><span class="stringliteral">  layout(binding=4) uniform sampler2D u_tex;</span></div>
+<div class="line"><span class="stringliteral">  layout(binding=5) uniform sampler2D v_tex;</span></div>
+<div class="line"><span class="stringliteral"></span> </div>
+<div class="line"><span class="stringliteral">  layout(location = 0) in vec2 v_texcoord;</span></div>
+<div class="line"><span class="stringliteral">  layout(location = 0) out vec4 fragColor;</span></div>
+<div class="line"><span class="stringliteral"></span> </div>
+<div class="line"><span class="stringliteral">  const vec3 R_cf = vec3(1.164383,  0.000000,  1.596027);</span></div>
+<div class="line"><span class="stringliteral">  const vec3 G_cf = vec3(1.164383, -0.391762, -0.812968);</span></div>
+<div class="line"><span class="stringliteral">  const vec3 B_cf = vec3(1.164383,  2.017232,  0.000000);</span></div>
+<div class="line"><span class="stringliteral">  const vec3 offset = vec3(-0.0625, -0.5, -0.5);</span></div>
+<div class="line"><span class="stringliteral"></span> </div>
+<div class="line"><span class="stringliteral">  void main ()</span></div>
+<div class="line"><span class="stringliteral">  {</span></div>
+<div class="line"><span class="stringliteral">    float y = 16. * texture(y_tex, v_texcoord).r;</span></div>
+<div class="line"><span class="stringliteral">    float u = 16. * texture(u_tex, v_texcoord).r;</span></div>
+<div class="line"><span class="stringliteral">    float v = 16. * texture(v_tex, v_texcoord).r;</span></div>
+<div class="line"><span class="stringliteral">    vec3 yuv = vec3(y,u,v);</span></div>
+<div class="line"><span class="stringliteral">    yuv += offset;</span></div>
+<div class="line"><span class="stringliteral">    fragColor = vec4(0.0, 0.0, 0.0, 1.0);</span></div>
+<div class="line"><span class="stringliteral">    fragColor.r = dot(yuv, R_cf);</span></div>
+<div class="line"><span class="stringliteral">    fragColor.g = dot(yuv, G_cf);</span></div>
+<div class="line"><span class="stringliteral">    fragColor.b = dot(yuv, B_cf);</span></div>
+<div class="line"><span class="stringliteral">  })_&quot;</span></div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>

@@ -283,9 +283,8 @@ std::unique_ptr&lt; char[]&gt;&#160;</td><td class="memItemRight" valign="bottom
 <div class="line"><span class="stringliteral"></span> </div>
 <div class="line"><span class="stringliteral">  layout(std140, binding = 0) uniform renderer_t {</span></div>
 <div class="line"><span class="stringliteral">  mat4 clipSpaceCorrMatrix;</span></div>
-<div class="line"><span class="stringliteral">  vec2 texcoordAdjust;</span></div>
 <div class="line"><span class="stringliteral">  vec2 renderSize;</span></div>
-<div class="line"><span class="stringliteral">  };</span></div>
+<div class="line"><span class="stringliteral">  } renderer;</span></div>
 <div class="line"><span class="stringliteral"></span> </div>
 <div class="line"><span class="stringliteral">  layout(binding=3) uniform sampler2D y_tex;</span></div>
 <div class="line"><span class="stringliteral"></span> </div>
@@ -321,21 +320,20 @@ std::unique_ptr&lt; char[]&gt;&#160;</td><td class="memItemRight" valign="bottom
 <div class="line"><span class="stringliteral">  layout(location = 0) in vec2 position;</span></div>
 <div class="line"><span class="stringliteral">  layout(location = 1) in vec2 texcoord;</span></div>
 <div class="line"><span class="stringliteral"></span> </div>
-<div class="line"><span class="stringliteral">  layout(binding=3) uniform sampler2D y_tex;</span></div>
+<div class="line"><span class="stringliteral">  layout(binding = 3) uniform sampler2D y_tex;</span></div>
 <div class="line"><span class="stringliteral">  layout(location = 0) out vec2 v_texcoord;</span></div>
 <div class="line"><span class="stringliteral"></span> </div>
 <div class="line"><span class="stringliteral">  layout(std140, binding = 0) uniform renderer_t {</span></div>
 <div class="line"><span class="stringliteral">    mat4 clipSpaceCorrMatrix;</span></div>
-<div class="line"><span class="stringliteral">    vec2 texcoordAdjust;</span></div>
 <div class="line"><span class="stringliteral">    vec2 renderSize;</span></div>
-<div class="line"><span class="stringliteral">  };</span></div>
+<div class="line"><span class="stringliteral">  } renderer;</span></div>
 <div class="line"><span class="stringliteral"></span> </div>
 <div class="line"><span class="stringliteral">  out gl_PerVertex { vec4 gl_Position; };</span></div>
 <div class="line"><span class="stringliteral"></span> </div>
 <div class="line"><span class="stringliteral">  void main()</span></div>
 <div class="line"><span class="stringliteral">  {</span></div>
 <div class="line"><span class="stringliteral">    v_texcoord = texcoord;</span></div>
-<div class="line"><span class="stringliteral">    gl_Position = clipSpaceCorrMatrix * vec4(position.xy, 0.0, 1.);</span></div>
+<div class="line"><span class="stringliteral">    gl_Position = renderer.clipSpaceCorrMatrix * vec4(position.xy, 0.0, 1.);</span></div>
 <div class="line"><span class="stringliteral">  }</span></div>
 <div class="line"><span class="stringliteral">  )_&quot;</span></div>
 </div><!-- fragment -->

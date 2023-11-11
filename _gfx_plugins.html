@@ -159,9 +159,8 @@ Shader conventions</h1>
 <div class="line">// - adjustment factors which depend on the graphics API used.</div>
 <div class="line">layout(std140, binding = 0) uniform renderer_t {</div>
 <div class="line">  mat4 clipSpaceCorrMatrix;</div>
-<div class="line">  vec2 texcoordAdjust;</div>
 <div class="line">  vec2 renderSize;</div>
-<div class="line">};</div>
+<div class="line">} renderer;</div>
 <div class="line"> </div>
 <div class="line">// Always present.</div>
 <div class="line">// Corresponds to the score process execution information.</div>
@@ -179,12 +178,12 @@ Shader conventions</h1>
 <div class="line">  vec4 channelTime;</div>
 <div class="line"> </div>
 <div class="line"> float sampleRate;</div>
-<div class="line">};</div>
+<div class="line">} process;</div>
 <div class="line"> </div>
 <div class="line">// This UBO is generated from the input ports of the score::gfx::Node</div>
 <div class="line">// when using a DefaultShaderMaterial.</div>
 <div class="line">layout(std140, binding = 2) uniform material_t {</div>
-<div class="line">}</div>
+<div class="line">} material;</div>
 <div class="line"> </div>
 <div class="line">// Samplers corresponding to input image ports</div>
 <div class="line">// are automatically added if using a DefaultShaderMaterial, starting from binding = 3</div>
@@ -196,7 +195,7 @@ Shader conventions</h1>
 <div class="line">void main()</div>
 <div class="line">{</div>
 <div class="line">  v_texcoord = texcoord;</div>
-<div class="line">  gl_Position = clipSpaceCorrMatrix * vec4(position.xy, 0.0, 1.);</div>
+<div class="line">  gl_Position = renderer.clipSpaceCorrMatrix * vec4(position.xy, 0.0, 1.);</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Fragment shaders shall follow this template:</p>
 <div class="fragment"><div class="line">#version 450</div>
@@ -206,6 +205,9 @@ Shader conventions</h1>
 <div class="line">// &lt;!&gt; insert here all the UBOs used in the vertex shader &lt;!&gt;</div>
 <div class="line">// NOTE : some APIs require the *exact* same variable names &amp; definitions to be used in</div>
 <div class="line">// all the pipeline stages so be careful with it.</div>
+<div class="line">// NOTE : it is NECESSARY to give a name to the UBO variables and access them through it.</div>
+<div class="line">// Otherwise, spirv-cross may generate different names between vertex &amp; fragment, which crashes</div>
+<div class="line">// on Apple&#39;s Metal API.</div>
 <div class="line"> </div>
 <div class="line">layout(location = 0) out vec4 fragColor;</div>
 <div class="line"> </div>
