@@ -3,6 +3,7 @@ var structscore_1_1gfx_1_1_render_state =
     [ "RenderState", "structscore_1_1gfx_1_1_render_state.html#ada0fe05163636ac3382e1f60999251ef", null ],
     [ "RenderState", "structscore_1_1gfx_1_1_render_state.html#a8fd89fedb65a4c623d22d6b284c36fa3", null ],
     [ "RenderState", "structscore_1_1gfx_1_1_render_state.html#ac5f793e7a86ca93dead567b101fd41ab", null ],
+    [ "destroy", "structscore_1_1gfx_1_1_render_state.html#a4f27f48a4c44a9f84f9be4ea3cd56db8", null ],
     [ "operator=", "structscore_1_1gfx_1_1_render_state.html#ad15454fbd8fa8b7f33c71b7d6cba9855", null ],
     [ "operator=", "structscore_1_1gfx_1_1_render_state.html#a8968c759a416c5b7e36a1111a380034e", null ],
     [ "api", "structscore_1_1gfx_1_1_render_state.html#ab070308fb998032a0ee4588d75cf4fc4", null ],

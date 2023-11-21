@@ -4,6 +4,7 @@ var structoscr_1_1_q_painter_adapter =
     [ "begin_path", "structoscr_1_1_q_painter_adapter.html#a1686420bc18b620880070c01680f5836", null ],
     [ "close_path", "structoscr_1_1_q_painter_adapter.html#ae2e203887dc956f92005904b887d0196", null ],
     [ "cubic_to", "structoscr_1_1_q_painter_adapter.html#a4aa4cae761ad9469368020abd4375d38", null ],
+    [ "draw_bytes", "structoscr_1_1_q_painter_adapter.html#a9a1fe671ebf68163855aeacb7738e633", null ],
     [ "draw_circle", "structoscr_1_1_q_painter_adapter.html#a3c39ed60074eef631c0b69bdd21dbd53", null ],
     [ "draw_ellipse", "structoscr_1_1_q_painter_adapter.html#ad5f6ca6ec980a157d2523d8f4f0fd143", null ],
     [ "draw_line", "structoscr_1_1_q_painter_adapter.html#a9cf96ce7d363b0098c137776b24ec7ff", null ],

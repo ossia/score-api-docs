@@ -109,16 +109,20 @@ Public Member Functions</h2></td></tr>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a11ede573ea2856d4f8897dd0f543696d"><td class="memTemplItemLeft" align="right" valign="top">requires std::is_trivial_v&lt; T &gt; void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (T &amp;msg)</td></tr>
 <tr class="separator:a11ede573ea2856d4f8897dd0f543696d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89511694c35af93ed98607c692144b29"><td class="memTemplParams" colspan="2"><a id="a89511694c35af93ed98607c692144b29"></a>
+<tr class="memitem:aeeae08d16c48e85f509fcf972dcc9d3f"><td class="memTemplParams" colspan="2"><a id="aeeae08d16c48e85f509fcf972dcc9d3f"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a89511694c35af93ed98607c692144b29"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>requires</b> (!std::is_trivial_v&lt; T &gt;) void operator()(T &amp;msg)</td></tr>
-<tr class="separator:a89511694c35af93ed98607c692144b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeae08d16c48e85f509fcf972dcc9d3f"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>requires</b> (!std::is_trivial_v&lt; T &gt; &amp;&amp;avnd::relocatable&lt; T &gt;) void operator()(T &amp;msg)</td></tr>
+<tr class="separator:aeeae08d16c48e85f509fcf972dcc9d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59c7b57d065ba861b03271334e5cf2d3"><td class="memTemplParams" colspan="2"><a id="a59c7b57d065ba861b03271334e5cf2d3"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a59c7b57d065ba861b03271334e5cf2d3"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>requires</b> (!std::is_trivial_v&lt; T &gt; &amp;&amp;!avnd::relocatable&lt; T &gt;) void operator()(T &amp;msg)</td></tr>
+<tr class="separator:a59c7b57d065ba861b03271334e5cf2d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a72840567942d92188daaa065c4ce5ac4"><td class="memItemLeft" align="right" valign="top"><a id="a72840567942d92188daaa065c4ce5ac4"></a>
-const QByteArray &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>mess</b></td></tr>
-<tr class="separator:a72840567942d92188daaa065c4ce5ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a67d30bcdeea1d6fb02c28faa6c4277"><td class="memItemLeft" align="right" valign="top"><a id="a6a67d30bcdeea1d6fb02c28faa6c4277"></a>
+QByteArray &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>mess</b></td></tr>
+<tr class="separator:a6a67d30bcdeea1d6fb02c28faa6c4277"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_message_bus_8hpp_source.html">MessageBus.hpp</a></li>

@@ -4,7 +4,7 @@ var classoscr_1_1_executor =
     [ "~Executor", "classoscr_1_1_executor.html#a2b46d0ee45b689840b91dece64a98196", null ],
     [ "cleanup", "classoscr_1_1_executor.html#a70b1232902d8e373566f231e7182f391", null ],
     [ "connect_controls", "classoscr_1_1_executor.html#add59df5ac564d7f16bd324da0a3a236d", null ],
-    [ "connect_message_bus", "classoscr_1_1_executor.html#a7b241c13155e1d4ecd3004ef297227ba", null ],
+    [ "connect_message_bus", "classoscr_1_1_executor.html#abc28b5588ae327515c87474760cc865b", null ],
     [ "connect_worker", "classoscr_1_1_executor.html#a16a4d6ecf4e896981b1f4fa0ebab94f7", null ],
     [ "key", "classoscr_1_1_executor.html#a0be3f8feb600d887c35bde499bd20a56", null ],
     [ "key_match", "classoscr_1_1_executor.html#a71b76f90c9cfd28e31daf3a131fdcf96", null ],

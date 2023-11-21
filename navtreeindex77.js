@@ -1,5 +1,9 @@
 var NAVTREEINDEX77 =
 {
+"structoscr_1_1multichannel__audio.html#a0a677c7dd0388fbd9dc2982ad71e16aa":[12,0,36,13,4],
+"structoscr_1_1multichannel__audio.html#a2785cc0831449bb4fb2e9ca35ddfa776":[12,0,36,13,1],
+"structoscr_1_1multichannel__audio.html#a9433ea2a7205b0e1ccbb65731e7ae2bb":[12,0,36,13,3],
+"structoscr_1_1multichannel__audio.html#aac3c080343b52004af0fa82f6530d215":[12,0,36,13,2],
 "structoscr_1_1multichannel__audio.html#acd084bed10c510a4d95267c6cf3d2767":[12,0,36,13,5],
 "structoscr_1_1multichannel__audio.html#ad721a26e1e4ac0caf15aca6200f41efc":[12,0,36,13,0],
 "structoscr_1_1multichannel__audio.html#af1eff68af0beee4f7e22b98b10bf6385":[12,0,36,13,6],
@@ -16,9 +20,9 @@ var NAVTREEINDEX77 =
 "structoscr_1_1setup___impl0.html#a2ad50f84e6eea6ac4a97c6483330c22d":[12,0,36,15,2],
 "structoscr_1_1setup___impl0.html#a475fec302bc8c4f7d8821ee592319084":[12,0,36,15,7],
 "structoscr_1_1setup___impl0.html#a61f8e7ead77c10b7719c85d0dcea206f":[12,0,36,15,9],
+"structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,36,15,4],
 "structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,36,15,5],
 "structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,36,15,6],
-"structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,36,15,4],
 "structoscr_1_1setup___impl0.html#ab0925cd37367396714b0651fb445ad3d":[12,0,36,15,10],
 "structoscr_1_1setup___impl0.html#ac697cbf094cf1842eb7949c2bae9439d":[12,0,36,15,3],
 "structoscr_1_1setup___impl0.html#aced344fa4d64c5a68ac6e9227ebd6c95":[12,0,36,15,8],
@@ -245,9 +249,5 @@ var NAVTREEINDEX77 =
 "structscore_1_1_custom_action_condition.html#a0454efef51f22afada3e52d538ec6e5b":[12,0,48,68,2],
 "structscore_1_1_custom_action_condition.html#a34f49cef0d19a0d7df8f522e4e86b864":[12,0,48,68,1],
 "structscore_1_1_default_combo_impl.html":[12,0,48,126],
-"structscore_1_1_default_graphics_knob_impl.html":[12,0,48,103],
-"structscore_1_1_default_graphics_slider_impl.html":[12,0,48,105],
-"structscore_1_1_default_graphics_spinbox_impl.html":[12,0,48,106],
-"structscore_1_1_dispatcher.html":[12,0,48,89],
-"structscore_1_1_dispatcher.html#a7697ebb807c161998676700386ee81cf":[12,0,48,89,0]
+"structscore_1_1_default_graphics_knob_impl.html":[12,0,48,103]
 };

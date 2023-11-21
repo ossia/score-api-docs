@@ -439,71 +439,75 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_layer_8h
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;      <span class="keywordflow">if</span> constexpr(avnd::has_processor_to_gui_bus&lt;Info&gt;)</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;      {</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <span class="comment">// engine -&gt; ui</span></div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        proc.to_ui = [ptr](QByteArray mess) {</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;          <span class="keywordflow">if</span> constexpr(requires { ptr-&gt;bus.process_message(); })</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;          {</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            ptr-&gt;bus.process_message();</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;          }</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;          <span class="keywordflow">else</span> <span class="keywordflow">if</span> constexpr(requires { ptr-&gt;bus.process_message(ptr-&gt;ui); })</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        proc.to_ui = [ptr = QPointer{ptr}](QByteArray mess) {</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;          <span class="comment">// FIXME this is not enough as the message may be sent from another thread?</span></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;          <span class="keywordflow">if</span>(!ptr)</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160; </div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;          <span class="keywordflow">if</span> constexpr(requires { ptr-&gt;bus.process_message(); })</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;          {</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;            ptr-&gt;bus.process_message(ptr-&gt;ui);</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;            ptr-&gt;bus.process_message();</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;          }</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;          <span class="keywordflow">else</span> <span class="keywordflow">if</span> constexpr(requires { ptr-&gt;bus.process_message(ptr-&gt;ui, {}); })</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;          <span class="keywordflow">else</span> <span class="keywordflow">if</span> constexpr(requires { ptr-&gt;bus.process_message(ptr-&gt;ui); })</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;          {</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            avnd::second_argument&lt;&amp;Info::ui::bus::process_message&gt; arg;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            <a class="code" href="structoscr_1_1_message_bus_reader.html">MessageBusReader</a> b{mess};</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;            b(arg);</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;            ptr-&gt;bus.process_message(ptr-&gt;ui, std::move(arg));</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;          }</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;          <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;          {</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;            ptr-&gt;bus.process_message(ptr-&gt;ui, {});</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            ptr-&gt;bus.process_message(ptr-&gt;ui);</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;          }</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;          <span class="keywordflow">else</span> <span class="keywordflow">if</span> constexpr(requires { ptr-&gt;bus.process_message(ptr-&gt;ui, {}); })</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;          {</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            std::decay_t&lt;avnd::second_argument&lt;&amp;Info::ui::bus::process_message&gt;&gt; arg;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            <a class="code" href="structoscr_1_1_message_bus_reader.html">MessageBusReader</a> b{mess};</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            b(arg);</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;            ptr-&gt;bus.process_message(ptr-&gt;ui, std::move(arg));</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;          }</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        };</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;      }</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160; </div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;      if_possible(ptr-&gt;bus.init(ptr-&gt;ui));</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;      <span class="keywordflow">return</span> ptr;</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    }</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    {</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;      <span class="keyword">struct </span>Item : <a class="code" href="classscore_1_1_empty_rect_item.html">score::EmptyRectItem</a></div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;      {</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        <span class="keyword">using</span> score::EmptyRectItem::EmptyRectItem;</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        <span class="keyword">typename</span> Info::ui ui;</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;      };</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> Item{parent};</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    }</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  }</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160; </div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  <a class="code" href="classscore_1_1_resizeable_item.html">score::ResizeableItem</a>* makeItem(</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; proc, <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; ctx,</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;      QGraphicsItem* parent) <span class="keyword">const</span> <span class="keyword">final</span> <span class="keyword">override</span></div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;  {</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="keyword">using namespace </span><a class="code" href="namespacescore.html">score</a>;</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <span class="keyword">auto</span> rootItem = makeItemImpl(</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        <span class="keyword">const_cast&lt;</span><a class="code" href="classoscr_1_1_process_model.html">ProcessModel&lt;Info&gt;</a>&amp;<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span><span class="keyword">const </span><a class="code" href="classoscr_1_1_process_model.html">ProcessModel&lt;Info&gt;</a>&amp;<span class="keyword">&gt;</span>(proc)),</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        parent);</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;          <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;          {</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;            ptr-&gt;bus.process_message(ptr-&gt;ui, {});</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;          }</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        };</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;      }</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160; </div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;      if_possible(ptr-&gt;bus.init(ptr-&gt;ui));</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;      <span class="keywordflow">return</span> ptr;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    }</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    {</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;      <span class="keyword">struct </span>Item : <a class="code" href="classscore_1_1_empty_rect_item.html">score::EmptyRectItem</a></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;      {</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        <span class="keyword">using</span> score::EmptyRectItem::EmptyRectItem;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="keyword">typename</span> Info::ui ui;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;      };</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> Item{parent};</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    }</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  }</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160; </div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  <a class="code" href="classscore_1_1_resizeable_item.html">score::ResizeableItem</a>* makeItem(</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; proc, <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; ctx,</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;      QGraphicsItem* parent) <span class="keyword">const</span> <span class="keyword">final</span> <span class="keyword">override</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  {</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <span class="keyword">using namespace </span><a class="code" href="namespacescore.html">score</a>;</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160; </div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <a class="code" href="structoscr_1_1_layout_builder.html">LayoutBuilder&lt;Info&gt;</a> b{</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        *rootItem, ctx, ctx.app.<a class="code" href="structscore_1_1_application_context.html#aad836474a385889c0486ecfeeadb06df">interfaces</a>&lt;<a class="code" href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a>&gt;(), proc.inlets(),</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        proc.outlets()};</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    b.rootUi = &amp;rootItem-&gt;ui;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160; </div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    b.walkLayout(rootItem-&gt;ui);</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160; </div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    b.finalizeLayout(rootItem);</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="keyword">auto</span> rootItem = makeItemImpl(</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        <span class="keyword">const_cast&lt;</span><a class="code" href="classoscr_1_1_process_model.html">ProcessModel&lt;Info&gt;</a>&amp;<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span><span class="keyword">const </span><a class="code" href="classoscr_1_1_process_model.html">ProcessModel&lt;Info&gt;</a>&amp;<span class="keyword">&gt;</span>(proc)),</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        parent);</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160; </div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <a class="code" href="structoscr_1_1_layout_builder.html">LayoutBuilder&lt;Info&gt;</a> b{</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        *rootItem, ctx, ctx.app.<a class="code" href="structscore_1_1_application_context.html#aad836474a385889c0486ecfeeadb06df">interfaces</a>&lt;<a class="code" href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a>&gt;(), proc.inlets(),</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        proc.outlets()};</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    b.rootUi = &amp;rootItem-&gt;ui;</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160; </div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    rootItem-&gt;fitChildrenRect();</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    b.walkLayout(rootItem-&gt;ui);</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160; </div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    if_possible(b.rootUi-&gt;on_control_update());</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    b.finalizeLayout(rootItem);</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160; </div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <span class="keywordflow">return</span> rootItem;</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;  }</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;};</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    rootItem-&gt;fitChildrenRect();</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160; </div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    if_possible(b.rootUi-&gt;on_control_update());</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160; </div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;}</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="keywordflow">return</span> rootItem;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;  }</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;};</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160; </div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;}</div>
 <div class="ttc" id="aclass_process_1_1_control_inlet_html"><div class="ttname"><a href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:202</div></div>
 <div class="ttc" id="aclass_process_1_1_layer_factory_html"><div class="ttname"><a href="class_process_1_1_layer_factory.html">Process::LayerFactory</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/ProcessFactory.hpp:58</div></div>
 <div class="ttc" id="aclass_process_1_1_layer_presenter_html"><div class="ttname"><a href="class_process_1_1_layer_presenter.html">Process::LayerPresenter</a></div><div class="ttdef"><b>Definition:</b> LayerPresenter.hpp:34</div></div>
@@ -511,8 +515,8 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_layer_8h
 <div class="ttc" id="aclass_process_1_1_port_factory_list_html"><div class="ttname"><a href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a></div><div class="ttdef"><b>Definition:</b> PortFactory.hpp:65</div></div>
 <div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Process.hpp:61</div></div>
 <div class="ttc" id="aclass_uuid_key_html"><div class="ttname"><a href="class_uuid_key.html">UuidKey&lt; Process::ProcessModel &gt;</a></div></div>
-<div class="ttc" id="aclassoscr_1_1_custom_control_html"><div class="ttname"><a href="classoscr_1_1_custom_control.html">oscr::CustomControl</a></div><div class="ttdef"><b>Definition:</b> Painter.hpp:338</div></div>
-<div class="ttc" id="aclassoscr_1_1_custom_item_html"><div class="ttname"><a href="classoscr_1_1_custom_item.html">oscr::CustomItem</a></div><div class="ttdef"><b>Definition:</b> Painter.hpp:182</div></div>
+<div class="ttc" id="aclassoscr_1_1_custom_control_html"><div class="ttname"><a href="classoscr_1_1_custom_control.html">oscr::CustomControl</a></div><div class="ttdef"><b>Definition:</b> Painter.hpp:344</div></div>
+<div class="ttc" id="aclassoscr_1_1_custom_item_html"><div class="ttname"><a href="classoscr_1_1_custom_item.html">oscr::CustomItem</a></div><div class="ttdef"><b>Definition:</b> Painter.hpp:188</div></div>
 <div class="ttc" id="aclassoscr_1_1_layer_factory_html"><div class="ttname"><a href="classoscr_1_1_layer_factory.html">oscr::LayerFactory</a></div><div class="ttdef"><b>Definition:</b> score-plugin-avnd/Crousti/Layer.hpp:282</div></div>
 <div class="ttc" id="aclassoscr_1_1_process_model_html"><div class="ttname"><a href="classoscr_1_1_process_model.html">oscr::ProcessModel</a></div><div class="ttdef"><b>Definition:</b> score-plugin-avnd/Crousti/ProcessModel.hpp:536</div></div>
 <div class="ttc" id="aclassscore_1_1_empty_rect_item_html"><div class="ttname"><a href="classscore_1_1_empty_rect_item.html">score::EmptyRectItem</a></div><div class="ttdef"><b>Definition:</b> RectItem.hpp:64</div></div>
@@ -530,8 +534,8 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_layer_8h
 <div class="ttc" id="astruct_process_1_1_layout_builder_base_html"><div class="ttname"><a href="struct_process_1_1_layout_builder_base.html">Process::LayoutBuilderBase</a></div><div class="ttdef"><b>Definition:</b> plugins/score-lib-process/Control/Layout.hpp:11</div></div>
 <div class="ttc" id="astructmatches_html"><div class="ttname"><a href="structmatches.html">matches</a></div><div class="ttdef"><b>Definition:</b> ObjectMatches.hpp:6</div></div>
 <div class="ttc" id="astructoscr_1_1_layout_builder_html"><div class="ttname"><a href="structoscr_1_1_layout_builder.html">oscr::LayoutBuilder</a></div><div class="ttdef"><b>Definition:</b> score-plugin-avnd/Crousti/Layer.hpp:22</div></div>
-<div class="ttc" id="astructoscr_1_1_message_bus_reader_html"><div class="ttname"><a href="structoscr_1_1_message_bus_reader.html">oscr::MessageBusReader</a></div><div class="ttdef"><b>Definition:</b> MessageBus.hpp:94</div></div>
-<div class="ttc" id="astructoscr_1_1_message_bus_sender_html"><div class="ttname"><a href="structoscr_1_1_message_bus_sender.html">oscr::MessageBusSender</a></div><div class="ttdef"><b>Definition:</b> MessageBus.hpp:34</div></div>
+<div class="ttc" id="astructoscr_1_1_message_bus_reader_html"><div class="ttname"><a href="structoscr_1_1_message_bus_reader.html">oscr::MessageBusReader</a></div><div class="ttdef"><b>Definition:</b> MessageBus.hpp:120</div></div>
+<div class="ttc" id="astructoscr_1_1_message_bus_sender_html"><div class="ttname"><a href="structoscr_1_1_message_bus_sender.html">oscr::MessageBusSender</a></div><div class="ttdef"><b>Definition:</b> MessageBus.hpp:37</div></div>
 <div class="ttc" id="astructscore_1_1_application_context_html_aad836474a385889c0486ecfeeadb06df"><div class="ttname"><a href="structscore_1_1_application_context.html#aad836474a385889c0486ecfeeadb06df">score::ApplicationContext::interfaces</a></div><div class="ttdeci">const T &amp; interfaces() const</div><div class="ttdoc">Access to a specific interface list.</div><div class="ttdef"><b>Definition:</b> ApplicationContext.hpp:67</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

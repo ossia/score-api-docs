@@ -187,12 +187,12 @@ var NAVTREEINDEX =
 "struct_state_1_1_unit_model_1_1_accessor_model.html",
 "struct_variant_j_s_o_n_deserializer.html#a06e7f47c137541e4c5fb59764578cc65",
 "structjk_1_1value.html#a00aa10552788b6f806841304b5543b64",
-"structoscr_1_1multichannel__audio.html#acd084bed10c510a4d95267c6cf3d2767",
-"structscore_1_1_dispatcher.html#ac607d244bc15a5ac6115cabf42bed536",
-"structscore_1_1_second_spin_box.html#ac37e0fbb2784c820f5668582a2d5be86",
-"structscore_1_1any__serializer.html#a65758442e6aae24babb28564054bdfb9",
-"structscore_1_1gfx_1_1_render_state.html#ac8f3bbf5a5ea2d6f1e78e886aa947053",
-"structscore_1_1indirect__map__iterator.html#aee822a61ebb0bdb0f69f3606a655d3c8"
+"structoscr_1_1multichannel__audio.html#a0a677c7dd0388fbd9dc2982ad71e16aa",
+"structscore_1_1_default_graphics_slider_impl.html",
+"structscore_1_1_second_spin_box.html",
+"structscore_1_1_volume_slider.html#a9db6a29403b1c1048228c08527ce9fe5",
+"structscore_1_1gfx_1_1_render_state.html#aa36a72c9f68f5a5bdc282fdb51f4e76e",
+"structscore_1_1indirect__map__iterator.html#ab5e244e066f8168bd7502860a70e1ab6"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
