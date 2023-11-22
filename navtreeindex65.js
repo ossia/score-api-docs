@@ -1,5 +1,6 @@
 var NAVTREEINDEX65 =
 {
+"struct_jit_1_1_global_at_exit.html#ac1b771652755b1091f2cc62ad2eea4cb":[12,0,24,7,0],
 "struct_jit_1_1_timer.html":[12,0,24,15],
 "struct_jit_1_1_timer.html#aa16ef49b3e4b13e0c3d97a3564ce7000":[12,0,24,15,1],
 "struct_jit_1_1_timer.html#aae6172af120660954579d746da3e36a7":[12,0,24,15,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX65 =
 "struct_local_tree_1_1_property_wrapper.html#afbf70b86bbc09ba3459dba84f38df589":[12,0,28,5,3],
 "struct_local_tree_1_1_set_property_wrapper.html":[12,0,28,6],
 "struct_local_tree_1_1_set_property_wrapper.html#a51d1dcce4807d8a18db17dff3ea44e7c":[12,0,28,6,0],
-"struct_local_tree_1_1_set_property_wrapper.html#af73c047f6c355df695c128484b60f096":[12,0,28,6,1],
-"struct_map_serializer.html":[12,0,150]
+"struct_local_tree_1_1_set_property_wrapper.html#af73c047f6c355df695c128484b60f096":[12,0,28,6,1]
 };

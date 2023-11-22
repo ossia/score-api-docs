@@ -1,5 +1,6 @@
 var NAVTREEINDEX62 =
 {
+"struct_device_1_1_address_settings_common.html#af4e74a3362672d6a7b29fd1ee9d84e20":[12,0,10,0,0],
 "struct_device_1_1_device_capas.html":[12,0,10,6],
 "struct_device_1_1_device_capas.html#a1555745c761eb83fd3cd8ad81875ceff":[12,0,10,6,11],
 "struct_device_1_1_device_capas.html#a167332699993ab146aeff2f5e01b064a":[12,0,10,6,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX62 =
 "struct_explorer_1_1_settings_1_1_device_log_level.html#a0a76f616bd01a706cf5854423ac49c08":[12,0,13,2,0,1],
 "struct_explorer_1_1_settings_1_1_device_log_level.html#a9735da91ea3ca65ce9a862e9ae2528e2":[12,0,13,2,0,2],
 "struct_explorer_1_1_settings_1_1_device_log_level.html#a9acdf32334b76523f4a92fb0f0a46991":[12,0,13,2,0,0],
-"struct_explorer_1_1_settings_1_1_device_log_level.html#af2c0672280b8aedfa8d1088f3a6a5580":[12,0,13,2,0,3],
-"struct_explorer_1_1make__dataspace.html":[12,0,13,25]
+"struct_explorer_1_1_settings_1_1_device_log_level.html#af2c0672280b8aedfa8d1088f3a6a5580":[12,0,13,2,0,3]
 };

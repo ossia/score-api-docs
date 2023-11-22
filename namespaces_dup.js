@@ -66,6 +66,7 @@ var namespaces_dup =
       [ "PatternSelector", "structavnd__tools_1_1_pattern_selector.html", "structavnd__tools_1_1_pattern_selector" ],
       [ "PatternUnfolder", "structavnd__tools_1_1_pattern_unfolder.html", "structavnd__tools_1_1_pattern_unfolder" ],
       [ "PatternCombiner", "structavnd__tools_1_1_pattern_combiner.html", "structavnd__tools_1_1_pattern_combiner" ],
+      [ "Spammer", "structavnd__tools_1_1_spammer.html", "structavnd__tools_1_1_spammer" ],
       [ "PatternSweeper", "structavnd__tools_1_1_pattern_sweeper.html", "structavnd__tools_1_1_pattern_sweeper" ]
     ] ],
     [ "AvndJit", null, [

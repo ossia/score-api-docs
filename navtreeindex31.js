@@ -1,5 +1,6 @@
 var NAVTREEINDEX31 =
 {
+"class_remote_control_1_1_settings_1_1_model.html#a831c000f8768512055314f7805580aa1":[12,0,45,0,0,0],
 "class_remote_control_1_1_settings_1_1_presenter.html":[12,0,45,0,1],
 "class_remote_control_1_1_settings_1_1_presenter.html#a1615a36f468100042e273546a9980bd8":[12,0,45,0,1,1],
 "class_remote_control_1_1_settings_1_1_presenter.html#a323a8dcfc2ba3cf1975d026b95e93c9b":[12,0,45,0,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX31 =
 "class_scenario_1_1_command_1_1_change_element_comments.html#a0e09880198f3841c0d1d10168904ecc8":[12,0,47,0,45,0],
 "class_scenario_1_1_command_1_1_change_element_comments.html#a43292335872dc2e7c69169ba3e01cd08":[12,0,47,0,45,4],
 "class_scenario_1_1_command_1_1_change_element_comments.html#a555e3ddd2a32eb635ba8406c2ec52020":[12,0,47,0,45,7],
-"class_scenario_1_1_command_1_1_change_element_comments.html#a65d4dee823abb46a4bf5a672435a5e37":[12,0,47,0,45,1],
-"class_scenario_1_1_command_1_1_change_element_comments.html#a6d7b9e54ad0dffbc541d338a4a3c7796":[12,0,47,0,45,3]
+"class_scenario_1_1_command_1_1_change_element_comments.html#a65d4dee823abb46a4bf5a672435a5e37":[12,0,47,0,45,1]
 };

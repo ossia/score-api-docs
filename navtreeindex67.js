@@ -1,5 +1,6 @@
 var NAVTREEINDEX67 =
 {
+"struct_midi_1_1_midi_style.html#a3d506335822b4e143fcf3f5d4fa9109d":[12,0,32,23,5],
 "struct_midi_1_1_midi_style.html#a5a92b37e1f7d5cfc57005bbd30d383f1":[12,0,32,23,1],
 "struct_midi_1_1_midi_style.html#a7365edc1312294ec20f67fd62628a59c":[12,0,32,23,8],
 "struct_midi_1_1_midi_style.html#a8c713ef1fcb9fc63ea40d70a68c888bd":[12,0,32,23,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX67 =
 "struct_nodes_1_1_math_generator_1_1_node_1_1_state.html#a210418314a334bc71159dfaf4d846946":[12,0,35,17,0,1,1],
 "struct_nodes_1_1_math_generator_1_1_node_1_1_state.html#a29d01c9c60fa8696198fa10e5fca695a":[12,0,35,17,0,1,7],
 "struct_nodes_1_1_math_generator_1_1_node_1_1_state.html#a6fc907995acb22514c2a7caa4883710f":[12,0,35,17,0,1,2],
-"struct_nodes_1_1_math_generator_1_1_node_1_1_state.html#a740f68838cbe9983da2e59e6034d2223":[12,0,35,17,0,1,3],
-"struct_nodes_1_1_math_generator_1_1_node_1_1_state.html#a8e211272c83bc7c6f78140a9f6c2238a":[12,0,35,17,0,1,6]
+"struct_nodes_1_1_math_generator_1_1_node_1_1_state.html#a740f68838cbe9983da2e59e6034d2223":[12,0,35,17,0,1,3]
 };

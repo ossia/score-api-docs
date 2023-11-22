@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"class_gfx_1_1_geometry_outlet.html#ac4069d837b9ec332de4c6892c5be3f7e":[12,0,18,62,6],
 "class_gfx_1_1_geometry_outlet.html#ac8a515326e49c5c50fe174727be14686":[12,0,18,62,5],
 "class_gfx_1_1_geometry_outlet.html#af36073df56f71821dd7ead8f6bad4c44":[12,0,18,62,2],
 "class_gfx_1_1_gfx_context.html":[12,0,18,18],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "class_gfx_1_1_syphon_1_1_input_factory.html#ad3304beac69ce23b6ebc9b605836f2e1":[12,0,18,6,0,3],
 "class_gfx_1_1_syphon_1_1_input_settings_widget.html":[12,0,18,6,1],
 "class_gfx_1_1_syphon_1_1_input_settings_widget.html#a6f0192fa0979b9cdedbe1637ca08b8c2":[12,0,18,6,1,0],
-"class_gfx_1_1_syphon_1_1_input_settings_widget.html#a89b4ddd9d7a185d7bddddeb3edbfd495":[12,0,18,6,1,1],
-"class_gfx_1_1_syphon_device.html":[12,0,18,58]
+"class_gfx_1_1_syphon_1_1_input_settings_widget.html#a89b4ddd9d7a185d7bddddeb3edbfd495":[12,0,18,6,1,1]
 };

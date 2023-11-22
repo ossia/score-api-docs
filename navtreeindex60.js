@@ -1,5 +1,6 @@
 var NAVTREEINDEX60 =
 {
+"struct_avnd_jit_1_1inlet__vis.html#aaa8ec3f66da690039dfd2f162b9c8a36":[12,0,4,0,0],
 "struct_avnd_jit_1_1inlet__vis.html#adb78f54c94d15d07e6cb73a292426aac":[12,0,4,0,5],
 "struct_avnd_jit_1_1inlet__vis.html#adc5d45c852dc29b9cd96f38fc6e9473a":[12,0,4,0,2],
 "struct_avnd_jit_1_1inlet__vis.html#ae48a4a8a41e81772cd2c712156e2d199":[12,0,4,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX60 =
 "struct_control_1_1inlet__visitor.html#aafe69ee2fff025b2c98b056e626152c5":[12,0,6,23,6],
 "struct_control_1_1inlet__visitor.html#ae79d6af79022805910460838fd177b23":[12,0,6,23,9],
 "struct_control_1_1inlet__visitor.html#ae8cd100eb17406b67e0993442a36a7f7":[12,0,6,23,8],
-"struct_control_1_1inlet__visitor.html#afdddfc70fea7fb7a4646229d20570d7b":[12,0,6,23,10],
-"struct_control_1_1is__control.html":[12,0,6,29]
+"struct_control_1_1inlet__visitor.html#afdddfc70fea7fb7a4646229d20570d7b":[12,0,6,23,10]
 };

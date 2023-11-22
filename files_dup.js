@@ -1278,6 +1278,7 @@ var files_dup =
     [ "SoundModel.hpp", "_sound_model_8hpp_source.html", null ],
     [ "SoundPresenter.hpp", "_sound_presenter_8hpp_source.html", null ],
     [ "SoundView.hpp", "_sound_view_8hpp_source.html", null ],
+    [ "Spammer.hpp", "_spammer_8hpp_source.html", null ],
     [ "SpectralDifference.hpp", "_spectral_difference_8hpp_source.html", null ],
     [ "SpectralDifference_HWR.hpp", "_spectral_difference___h_w_r_8hpp_source.html", null ],
     [ "SpeedSlider.hpp", "_speed_slider_8hpp_source.html", null ],

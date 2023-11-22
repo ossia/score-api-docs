@@ -1,5 +1,6 @@
 var NAVTREEINDEX64 =
 {
+"struct_hierarchical_base_scenario_1_1_event_pair.html#af8a2d7bbac3f165b3bdd6e189f2b7ab4":[12,0,121,0,1],
 "struct_hierarchical_base_scenario_1_1_interval_pair.html":[12,0,121,1],
 "struct_hierarchical_base_scenario_1_1_interval_pair.html#a1ebd785619e1a32bedc057c146fbdf22":[12,0,121,1,1],
 "struct_hierarchical_base_scenario_1_1_interval_pair.html#a2b47e5106120df2a1de1270fd2dfcf24":[12,0,121,1,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX64 =
 "struct_jit_1_1_exception.html#ae2da1d781e821c11c4ba876236acb2d6":[12,0,24,14,1],
 "struct_jit_1_1_global_at_exit.html":[12,0,24,7],
 "struct_jit_1_1_global_at_exit.html#a8d4875c68ffb39291bb292b07aa3483c":[12,0,24,7,1],
-"struct_jit_1_1_global_at_exit.html#a9ba923665d834093bbc9a615dec288dd":[12,0,24,7,2],
-"struct_jit_1_1_global_at_exit.html#ac1b771652755b1091f2cc62ad2eea4cb":[12,0,24,7,0]
+"struct_jit_1_1_global_at_exit.html#a9ba923665d834093bbc9a615dec288dd":[12,0,24,7,2]
 };

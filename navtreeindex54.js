@@ -1,5 +1,6 @@
 var NAVTREEINDEX54 =
 {
+"classvst_1_1_remove_control.html#af3931d58aa59990c75c43bb208ac5e38":[12,0,57,5,0],
 "classvst_1_1_set_control.html":[12,0,57,3],
 "classvst_1_1_set_control.html#a6e1ecd766fe20bf4b395a8d95c2b07e9":[12,0,57,3,3],
 "classvst_1_1_set_control.html#a70ad539fd5d521b36b33c220bd0a43d1":[12,0,57,3,4],
@@ -121,7 +122,7 @@ var NAVTREEINDEX54 =
 "lib_2core_2documentation_2commands_8hpp_source.html":[13,0,171],
 "lib_2core_2presenter_2_presenter_8hpp_source.html":[13,0,938],
 "lib_2core_2settings_2_settings_8hpp_source.html":[13,0,1233],
-"lib_2core_2view_2_window_8hpp_source.html":[13,0,1452],
+"lib_2core_2view_2_window_8hpp_source.html":[13,0,1453],
 "lib_2score_2model_2_component_8hpp_source.html":[13,0,195],
 "lib_2score_2plugins_2documentdelegate_2plugin_2_document_plugin_8hpp_source.html":[13,0,342],
 "lib_2score_2tools_2_metadata_8hpp_source.html":[13,0,731],
@@ -248,6 +249,5 @@ var NAVTREEINDEX54 =
 "namespace_device.html#a7082b693e3ee1f2380b515c4c1f479f3":[11,0,10,20],
 "namespace_device.html#a70c550e238f17ed071e8d4f44a9c654e":[11,0,10,70],
 "namespace_device.html#a728f478921baaf877226f6c89631c62f":[11,0,10,67],
-"namespace_device.html#a732e4ea123fb130447718b0c6cc0f3a1":[11,0,10,47],
-"namespace_device.html#a8486daadd10c504d5819d3762bad0ec6":[11,0,10,27]
+"namespace_device.html#a732e4ea123fb130447718b0c6cc0f3a1":[11,0,10,47]
 };

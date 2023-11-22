@@ -1,5 +1,6 @@
 var NAVTREEINDEX69 =
 {
+"struct_process_1_1_bargraph.html#aeea923a84095e128a9c77f5dff74095b":[12,0,41,73,0],
 "struct_process_1_1_button.html":[12,0,41,65],
 "struct_process_1_1_button.html#a1e9ad31403905f8c9250703cb1a5d4a2":[12,0,41,65,0],
 "struct_process_1_1_button.html#a2a001eb9c3cc8ae54768a850dd345002":[12,0,41,65,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX69 =
 "struct_process_1_1_process_identifier.html#a4167484ff5a72d84599ff5d3868b1af2":[12,0,41,97,1],
 "struct_process_1_1_process_identifier.html#a7f73f03e7a349a1a2b103ad9a71cc28c":[12,0,41,97,2],
 "struct_process_1_1_process_identifier.html#a854a9823a7b27246dc7c23e1a655e2a0":[12,0,41,97,4],
-"struct_process_1_1_process_identifier.html#af892a2e223c3030c1216863db6e2fcd3":[12,0,41,97,3],
-"struct_process_1_1_process_state_data.html":[12,0,41,116]
+"struct_process_1_1_process_identifier.html#af892a2e223c3030c1216863db6e2fcd3":[12,0,41,97,3]
 };
