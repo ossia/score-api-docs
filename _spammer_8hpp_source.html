@@ -242,18 +242,21 @@ $(document).ready(function(){initNavTree('_spammer_8hpp_source.html',''); initRe
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordflow">if</span>(prev.get_type() != next.get_type()) [[unlikely]]</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;      prev = next;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordflow">else</span> [[likely]]</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;      ossia::apply(<a class="code" href="structavnd__tools_1_1_spammer_1_1do__smooth.html">do_smooth</a>{alpha}, next, prev);</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  }</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  static_assert(std::atomic&lt;std::chrono::nanoseconds&gt;::is_always_lock_free);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  std::atomic&lt;std::chrono::nanoseconds&gt; m_delay{std::chrono::nanoseconds{100000}};</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  std::atomic&lt;float&gt; m_smooth{};</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  std::jthread m_thread;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  ossia::triple_buffer&lt;ossia::value&gt; m_buffer{ossia::value{}};</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  ossia::value m_prev;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;};</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;}</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;      <span class="keywordflow">if</span>(prev.valid() &amp;&amp; next.valid())</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        ossia::apply(<a class="code" href="structavnd__tools_1_1_spammer_1_1do__smooth.html">do_smooth</a>{alpha}, next, prev);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    }</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  static_assert(std::atomic&lt;std::chrono::nanoseconds&gt;::is_always_lock_free);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  std::atomic&lt;std::chrono::nanoseconds&gt; m_delay{std::chrono::nanoseconds{100000}};</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  std::atomic&lt;float&gt; m_smooth{};</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  std::jthread m_thread;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  ossia::triple_buffer&lt;ossia::value&gt; m_buffer{ossia::value{}};</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  ossia::value m_prev;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;};</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;}</div>
 <div class="ttc" id="astructavnd__tools_1_1_pattern_object_html"><div class="ttname"><a href="structavnd__tools_1_1_pattern_object.html">avnd_tools::PatternObject</a></div><div class="ttdef"><b>Definition:</b> AddressTools.hpp:20</div></div>
 <div class="ttc" id="astructavnd__tools_1_1_pattern_selector_html"><div class="ttname"><a href="structavnd__tools_1_1_pattern_selector.html">avnd_tools::PatternSelector</a></div><div class="ttdef"><b>Definition:</b> AddressTools.hpp:27</div></div>
 <div class="ttc" id="astructavnd__tools_1_1_spammer_1_1do__smooth_html"><div class="ttname"><a href="structavnd__tools_1_1_spammer_1_1do__smooth.html">avnd_tools::Spammer::do_smooth</a></div><div class="ttdef"><b>Definition:</b> Spammer.hpp:80</div></div>
