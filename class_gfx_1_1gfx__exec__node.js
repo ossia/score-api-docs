@@ -13,5 +13,6 @@ var class_gfx_1_1gfx__exec__node =
     [ "controls", "class_gfx_1_1gfx__exec__node.html#ada97d2ee84c679d448e2c9024a134860", null ],
     [ "exec_context", "class_gfx_1_1gfx__exec__node.html#a52f40e6553a5d5e06aaa3d2ed947bf98", null ],
     [ "id", "class_gfx_1_1gfx__exec__node.html#a579506f83b880f7b2efc1c926e0d3eed", null ],
+    [ "m_last_flicks", "class_gfx_1_1gfx__exec__node.html#a34a8ec9ce025767e5536ec45b28d0cb3", null ],
     [ "script_index", "class_gfx_1_1gfx__exec__node.html#a100a30e2d629adb2b94e5426f0fb3034", null ]
 ];
