@@ -1,5 +1,6 @@
 var NAVTREEINDEX66 =
 {
+"struct_media_1_1_sound_1_1_waveform_computer_impl.html#a4b0211f06fb73562840f78a94f75ee05":[12,0,31,3,10,9],
 "struct_media_1_1_sound_1_1_waveform_computer_impl.html#a52654a48b3b8df1a791393e1439946ea":[12,0,31,3,10,14],
 "struct_media_1_1_sound_1_1_waveform_computer_impl.html#a6bddae0e109eb92e1f3f45eba1623a3b":[12,0,31,3,10,5],
 "struct_media_1_1_sound_1_1_waveform_computer_impl.html#a773e85bd25945d6447fb5f0dcbdc113a":[12,0,31,3,10,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX66 =
 "struct_nodes_1_1_empty_midi_mapping_1_1_node.html":[12,0,35,7,0],
 "struct_nodes_1_1_empty_midi_mapping_1_1_node.html#a695a2cd08191651118f67f1c76ab4b87":[12,0,35,7,0,1],
 "struct_nodes_1_1_empty_midi_mapping_1_1_node_1_1_metadata.html":[12,0,35,7,0,0],
-"struct_nodes_1_1_empty_value_mapping_1_1_node.html":[12,0,35,8,0],
-"struct_nodes_1_1_empty_value_mapping_1_1_node.html#a3818d4afb3d142b593c891c29d4b4477":[12,0,35,8,0,1]
+"struct_nodes_1_1_empty_value_mapping_1_1_node.html":[12,0,35,8,0]
 };

@@ -1813,6 +1813,7 @@ var annotated_dup =
         [ "ProcessUBO", "structscore_1_1gfx_1_1_process_u_b_o.html", "structscore_1_1gfx_1_1_process_u_b_o" ],
         [ "ModelCameraUBO", "structscore_1_1gfx_1_1_model_camera_u_b_o.html", "structscore_1_1gfx_1_1_model_camera_u_b_o" ],
         [ "OutputUBO", "structscore_1_1gfx_1_1_output_u_b_o.html", "structscore_1_1gfx_1_1_output_u_b_o" ],
+        [ "VideoMaterialUBO", "structscore_1_1gfx_1_1_video_material_u_b_o.html", "structscore_1_1gfx_1_1_video_material_u_b_o" ],
         [ "CustomMesh", "classscore_1_1gfx_1_1_custom_mesh.html", "classscore_1_1gfx_1_1_custom_mesh" ],
         [ "GPUVideoDecoder", "classscore_1_1gfx_1_1_g_p_u_video_decoder.html", "classscore_1_1gfx_1_1_g_p_u_video_decoder" ],
         [ "EmptyDecoder", "structscore_1_1gfx_1_1_empty_decoder.html", "structscore_1_1gfx_1_1_empty_decoder" ],

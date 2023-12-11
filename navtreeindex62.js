@@ -1,5 +1,6 @@
 var NAVTREEINDEX62 =
 {
+"struct_execution_1_1_settings_1_1_commit_policies.html#abc777bb8c08676f662db097aed0012de":[12,0,12,1,3,6],
 "struct_execution_1_1_settings_1_1_commit_policies.html#ac648d9fe4dbd08588351359d72581b25":[12,0,12,1,3,4],
 "struct_execution_1_1_settings_1_1_merging_policies.html":[12,0,12,1,2],
 "struct_execution_1_1_settings_1_1_merging_policies.html#a9baaf53d1574b2ab796789f2dfffa2a2":[12,0,12,1,2,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX62 =
 "struct_gfx_1_1_shader_source.html#a07923f9dd253d54b4a222e8fef078c89":[12,0,18,39,12],
 "struct_gfx_1_1_shader_source.html#a0ff7b020926bd5c57ec80fce82104f6c":[12,0,18,39,5],
 "struct_gfx_1_1_shader_source.html#a24d69597743b70d3a2398ad7f818400a":[12,0,18,39,9],
-"struct_gfx_1_1_shader_source.html#a29fddbbfb5434dad6f420cf481a1531d":[12,0,18,39,15],
-"struct_gfx_1_1_shader_source.html#a2a50ab4b9c9a6b0f955036e811b13e5c":[12,0,18,39,8]
+"struct_gfx_1_1_shader_source.html#a29fddbbfb5434dad6f420cf481a1531d":[12,0,18,39,15]
 };

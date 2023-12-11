@@ -1,5 +1,6 @@
 var NAVTREEINDEX60 =
 {
+"struct_control_1_1_int_slider.html":[12,0,6,4],
 "struct_control_1_1_int_slider.html#a2180314cde750b282c81a1495d9c4312":[12,0,6,4,3],
 "struct_control_1_1_int_slider.html#a225dbfa504160253921efaa5daa43742":[12,0,6,4,2],
 "struct_control_1_1_int_slider.html#a2a475d03137ba0b294660f1d5984003f":[12,0,6,4,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX60 =
 "struct_dataflow_1_1_curve_inlet.html#a2c77595d73a5afab90c25cef95e5a455":[12,0,9,23,0],
 "struct_dataflow_1_1_curve_inlet.html#a33840a2a4a201f7248e706bbb6cc7439":[12,0,9,23,7],
 "struct_dataflow_1_1_curve_inlet.html#a446b119e84c32209baff8c2fe2ed17a2":[12,0,9,23,3],
-"struct_dataflow_1_1_curve_inlet.html#a45a08c2067c7890de852f154767affc3":[12,0,9,23,5],
-"struct_dataflow_1_1_curve_inlet.html#a6160a3308a71f81648868b161d2a9e0b":[12,0,9,23,1]
+"struct_dataflow_1_1_curve_inlet.html#a45a08c2067c7890de852f154767affc3":[12,0,9,23,5]
 };

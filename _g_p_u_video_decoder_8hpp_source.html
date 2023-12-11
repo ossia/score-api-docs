@@ -112,60 +112,59 @@ $(document).ready(function(){initNavTree('_g_p_u_video_decoder_8hpp_source.html'
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define SCORE_GFX_VIDEO_UNIFORMS \</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">&quot;layout(std140, binding = 0) uniform renderer_t {\n&quot;</span> \</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;&quot;  mat4 clipSpaceCorrMatrix;\n&quot; \</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;&quot;  \n&quot; \</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;&quot;  vec2 renderSize;\n&quot; \</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;&quot;} renderer;\n&quot; \</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;&quot;\n&quot; \</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;&quot;layout(std140, binding = 2) uniform material_t {\n&quot; \</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;&quot;  vec2 scale;\n&quot; \</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;&quot;  vec2 textureSize;\n&quot; \</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;&quot;} mat;\n&quot;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore_1_1gfx.html">score::gfx</a></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// TODO the &quot;model&quot; nodes should have a first update step so that they</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">// can share data across all renderers during a tick</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">class </span>VideoNode;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html">   43</a></span>&#160;<span class="keyword">class </span><a class="code" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html">GPUVideoDecoder</a></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html">GPUVideoDecoder</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html">GPUVideoDecoder</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a80723548c505023ec398a58148c230f0">   58</a></span>&#160;  [[nodiscard]] <span class="keyword">virtual</span> std::pair&lt;QShader, QShader&gt; <a class="code" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a80723548c505023ec398a58148c230f0">init</a>(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r) = 0;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a184c6222eacb33343d19ec1dd23a1c74">   63</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a184c6222eacb33343d19ec1dd23a1c74">exec</a>(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;, QRhiResourceUpdateBatch&amp; res, AVFrame&amp; frame) = 0;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#aa1e4ab512b307a792032e762aff3a572">release</a>(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">static</span> QRhiTextureSubresourceUploadDescription</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a70bc09ac7a5e91b4b26530851893ec7f">createTextureUpload</a>(uint8_t* pixels, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, <span class="keywordtype">int</span> bytesPerPixel, <span class="keywordtype">int</span> stride);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">static</span> QString vertexShader() noexcept;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  std::vector&lt;<a class="code" href="structscore_1_1gfx_1_1_sampler.html">Sampler</a>&gt; samplers;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_empty_decoder.html">   87</a></span>&#160;struct <a class="code" href="structscore_1_1gfx_1_1_empty_decoder.html">EmptyDecoder</a> : <a class="code" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html">GPUVideoDecoder</a></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> hashtag_no_filter = R<span class="stringliteral">&quot;_(#version 450</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="stringliteral">    void main ()</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="stringliteral">    {</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="stringliteral">    }</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="stringliteral">  )_&quot;;</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="stringliteral"></span> </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="stringliteral">  </span><span class="keyword">explicit</span> <a class="code" href="structscore_1_1gfx_1_1_empty_decoder.html">EmptyDecoder</a>() { }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_empty_decoder.html#a86db6656e9dd301083d1eb5484b0a603">   97</a></span>&#160;  std::pair&lt;QShader, QShader&gt; <a class="code" href="structscore_1_1gfx_1_1_empty_decoder.html#a86db6656e9dd301083d1eb5484b0a603">init</a>(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r)<span class="keyword"> override</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacescore_1_1gfx.html#ada75ef58fe373211a06093b50051b6e0">score::gfx::makeShaders</a>(r.<a class="code" href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">state</a>, vertexShader(), hashtag_no_filter);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_empty_decoder.html#a4f5315f335d7c856b4c31805aee95fa5">  102</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="structscore_1_1gfx_1_1_empty_decoder.html#a4f5315f335d7c856b4c31805aee95fa5">exec</a>(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;, QRhiResourceUpdateBatch&amp; res, AVFrame&amp; frame)<span class="keyword"> override </span>{ }</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_g_p_u_video_decoder_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html">score::gfx::GPUVideoDecoder</a></div><div class="ttdoc">Processes and renders a video frame on the GPU.</div><div class="ttdef"><b>Definition:</b> GPUVideoDecoder.hpp:44</div></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;&quot;  vec2 renderSize;\n&quot; \</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;&quot;} renderer;\n&quot; \</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;&quot;\n&quot; \</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;&quot;layout(std140, binding = 2) uniform material_t {\n&quot; \</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;&quot;  vec2 scale;\n&quot; \</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;&quot;  vec2 texSz;\n&quot; \</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;&quot;} mat;\n&quot;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore_1_1gfx.html">score::gfx</a></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">// TODO the &quot;model&quot; nodes should have a first update step so that they</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// can share data across all renderers during a tick</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">class </span>VideoNode;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html">   42</a></span>&#160;<span class="keyword">class </span><a class="code" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html">GPUVideoDecoder</a></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html">GPUVideoDecoder</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html">GPUVideoDecoder</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a80723548c505023ec398a58148c230f0">   57</a></span>&#160;  [[nodiscard]] <span class="keyword">virtual</span> std::pair&lt;QShader, QShader&gt; <a class="code" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a80723548c505023ec398a58148c230f0">init</a>(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r) = 0;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a184c6222eacb33343d19ec1dd23a1c74">   62</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a184c6222eacb33343d19ec1dd23a1c74">exec</a>(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;, QRhiResourceUpdateBatch&amp; res, AVFrame&amp; frame) = 0;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#aa1e4ab512b307a792032e762aff3a572">release</a>(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">static</span> QRhiTextureSubresourceUploadDescription</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a70bc09ac7a5e91b4b26530851893ec7f">createTextureUpload</a>(uint8_t* pixels, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, <span class="keywordtype">int</span> bytesPerPixel, <span class="keywordtype">int</span> stride);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">static</span> QString vertexShader() noexcept;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  std::vector&lt;<a class="code" href="structscore_1_1gfx_1_1_sampler.html">Sampler</a>&gt; samplers;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_empty_decoder.html">   86</a></span>&#160;struct <a class="code" href="structscore_1_1gfx_1_1_empty_decoder.html">EmptyDecoder</a> : <a class="code" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html">GPUVideoDecoder</a></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> hashtag_no_filter = R<span class="stringliteral">&quot;_(#version 450</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="stringliteral">    void main ()</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="stringliteral">    {</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="stringliteral">    }</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="stringliteral">  )_&quot;;</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="stringliteral"></span> </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="stringliteral">  </span><span class="keyword">explicit</span> <a class="code" href="structscore_1_1gfx_1_1_empty_decoder.html">EmptyDecoder</a>() { }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_empty_decoder.html#a86db6656e9dd301083d1eb5484b0a603">   96</a></span>&#160;  std::pair&lt;QShader, QShader&gt; <a class="code" href="structscore_1_1gfx_1_1_empty_decoder.html#a86db6656e9dd301083d1eb5484b0a603">init</a>(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacescore_1_1gfx.html#ada75ef58fe373211a06093b50051b6e0">score::gfx::makeShaders</a>(r.<a class="code" href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">state</a>, vertexShader(), hashtag_no_filter);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_empty_decoder.html#a4f5315f335d7c856b4c31805aee95fa5">  101</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="structscore_1_1gfx_1_1_empty_decoder.html#a4f5315f335d7c856b4c31805aee95fa5">exec</a>(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;, QRhiResourceUpdateBatch&amp; res, AVFrame&amp; frame)<span class="keyword"> override </span>{ }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;};</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_g_p_u_video_decoder_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html">score::gfx::GPUVideoDecoder</a></div><div class="ttdoc">Processes and renders a video frame on the GPU.</div><div class="ttdef"><b>Definition:</b> GPUVideoDecoder.hpp:43</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_g_p_u_video_decoder_html_a184c6222eacb33343d19ec1dd23a1c74"><div class="ttname"><a href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a184c6222eacb33343d19ec1dd23a1c74">score::gfx::GPUVideoDecoder::exec</a></div><div class="ttdeci">virtual void exec(RenderList &amp;, QRhiResourceUpdateBatch &amp;res, AVFrame &amp;frame)=0</div><div class="ttdoc">Decode and upload a video frame to the GPU.</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_g_p_u_video_decoder_html_a70bc09ac7a5e91b4b26530851893ec7f"><div class="ttname"><a href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a70bc09ac7a5e91b4b26530851893ec7f">score::gfx::GPUVideoDecoder::createTextureUpload</a></div><div class="ttdeci">static QRhiTextureSubresourceUploadDescription createTextureUpload(uint8_t *pixels, int w, int h, int bytesPerPixel, int stride)</div><div class="ttdoc">Utility method to create a QRhiTextureSubresourceUploadDescription.</div><div class="ttdef"><b>Definition:</b> GPUVideoDecoder.cpp:22</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_g_p_u_video_decoder_html_a80723548c505023ec398a58148c230f0"><div class="ttname"><a href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a80723548c505023ec398a58148c230f0">score::gfx::GPUVideoDecoder::init</a></div><div class="ttdeci">virtual std::pair&lt; QShader, QShader &gt; init(RenderList &amp;r)=0</div><div class="ttdoc">Initialize a GPUVideoDecoder.</div></div>
@@ -174,9 +173,9 @@ $(document).ready(function(){initNavTree('_g_p_u_video_decoder_8hpp_source.html'
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html_ab9817d2afdcffb76ff503951907a4dd8"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">score::gfx::RenderList::state</a></div><div class="ttdeci">RenderState &amp; state</div><div class="ttdoc">RenderState corresponding to this RenderList.</div><div class="ttdef"><b>Definition:</b> RenderList.hpp:89</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition:</b> PreviewWidget.hpp:12</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html_ada75ef58fe373211a06093b50051b6e0"><div class="ttname"><a href="namespacescore_1_1gfx.html#ada75ef58fe373211a06093b50051b6e0">score::gfx::makeShaders</a></div><div class="ttdeci">std::pair&lt; QShader, QShader &gt; makeShaders(const RenderState &amp;v, QString vert, QString frag)</div><div class="ttdoc">Get a pair of compiled vertex / fragment shaders from GLSL 4.5 sources.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Utils.cpp:334</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_empty_decoder_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_empty_decoder.html">score::gfx::EmptyDecoder</a></div><div class="ttdoc">Default decoder when we do not know what to render.</div><div class="ttdef"><b>Definition:</b> GPUVideoDecoder.hpp:88</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_empty_decoder_html_a4f5315f335d7c856b4c31805aee95fa5"><div class="ttname"><a href="structscore_1_1gfx_1_1_empty_decoder.html#a4f5315f335d7c856b4c31805aee95fa5">score::gfx::EmptyDecoder::exec</a></div><div class="ttdeci">void exec(RenderList &amp;, QRhiResourceUpdateBatch &amp;res, AVFrame &amp;frame) override</div><div class="ttdoc">Decode and upload a video frame to the GPU.</div><div class="ttdef"><b>Definition:</b> GPUVideoDecoder.hpp:102</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_empty_decoder_html_a86db6656e9dd301083d1eb5484b0a603"><div class="ttname"><a href="structscore_1_1gfx_1_1_empty_decoder.html#a86db6656e9dd301083d1eb5484b0a603">score::gfx::EmptyDecoder::init</a></div><div class="ttdeci">std::pair&lt; QShader, QShader &gt; init(RenderList &amp;r) override</div><div class="ttdoc">Initialize a GPUVideoDecoder.</div><div class="ttdef"><b>Definition:</b> GPUVideoDecoder.hpp:97</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_empty_decoder_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_empty_decoder.html">score::gfx::EmptyDecoder</a></div><div class="ttdoc">Default decoder when we do not know what to render.</div><div class="ttdef"><b>Definition:</b> GPUVideoDecoder.hpp:87</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_empty_decoder_html_a4f5315f335d7c856b4c31805aee95fa5"><div class="ttname"><a href="structscore_1_1gfx_1_1_empty_decoder.html#a4f5315f335d7c856b4c31805aee95fa5">score::gfx::EmptyDecoder::exec</a></div><div class="ttdeci">void exec(RenderList &amp;, QRhiResourceUpdateBatch &amp;res, AVFrame &amp;frame) override</div><div class="ttdoc">Decode and upload a video frame to the GPU.</div><div class="ttdef"><b>Definition:</b> GPUVideoDecoder.hpp:101</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_empty_decoder_html_a86db6656e9dd301083d1eb5484b0a603"><div class="ttname"><a href="structscore_1_1gfx_1_1_empty_decoder.html#a86db6656e9dd301083d1eb5484b0a603">score::gfx::EmptyDecoder::init</a></div><div class="ttdeci">std::pair&lt; QShader, QShader &gt; init(RenderList &amp;r) override</div><div class="ttdoc">Initialize a GPUVideoDecoder.</div><div class="ttdef"><b>Definition:</b> GPUVideoDecoder.hpp:96</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_sampler_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_sampler.html">score::gfx::Sampler</a></div><div class="ttdoc">Stores a sampler and the texture currently associated with it.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

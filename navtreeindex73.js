@@ -1,5 +1,6 @@
 var NAVTREEINDEX73 =
 {
+"struct_state_1_1_address_accessor.html":[12,0,52,2],
 "struct_state_1_1_address_accessor.html#a04279c8c5678ad0a76686d5a5ea8f3b5":[12,0,52,2,12],
 "struct_state_1_1_address_accessor.html#a21bdffd01c5a79f63107aeffd4398f49":[12,0,52,2,8],
 "struct_state_1_1_address_accessor.html#a40453755458853fbe66346d8d55ddf3c":[12,0,52,2,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX73 =
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1nullable__variant_3_01_args_8_8_8_01_4_01_4.html":[12,0,366],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1nullable__variant_3_01_args_8_8_8_01_4_01_4.html#a771b714d23f2c21bd6e3aa89e0cc9d4d":[12,0,366,0],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1value__map__type_01_4.html":[12,0,367],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1value__variant__type_01_4.html":[12,0,368],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1value__variant__type_01_4.html#a2183b0401c3e9b74047d27b362f6001d":[12,0,368,0]
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1value__variant__type_01_4.html":[12,0,368]
 };

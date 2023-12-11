@@ -1,5 +1,6 @@
 var NAVTREEINDEX59 =
 {
+"struct_analysis_1_1_gist_state.html#a92088912e6bc53d416c12525f36406f3":[12,0,0,7,20],
 "struct_analysis_1_1_gist_state.html#a94247a9c43db303844a58fdb85247aa3":[12,0,0,7,12],
 "struct_analysis_1_1_gist_state.html#aa3ba96ef8f7a0b7f366646ce3b45e39c":[12,0,0,7,1],
 "struct_analysis_1_1_gist_state.html#ad10a571c3ab408464274f7e016d3b218":[12,0,0,7,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX59 =
 "struct_control_1_1_in_control.html#a7618c8604f8a6dc3d22534eb1a7b333c":[12,0,6,1,2],
 "struct_control_1_1_in_control.html#a9ce0a87c0d777c9a90933c472156595b":[12,0,6,1,6],
 "struct_control_1_1_in_control.html#ab52ac1be07a12fa829e37eb22cc217ea":[12,0,6,1,5],
-"struct_control_1_1_in_control.html#ac01d4e9f09a35449728ed51122390712":[12,0,6,1,1],
-"struct_control_1_1_int_slider.html":[12,0,6,4]
+"struct_control_1_1_in_control.html#ac01d4e9f09a35449728ed51122390712":[12,0,6,1,1]
 };

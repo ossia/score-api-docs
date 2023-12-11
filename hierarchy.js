@@ -1062,8 +1062,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1966,8 +1966,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model >", "class_path.html", null ],
+    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Patternist::ProcessModel >", "class_path.html", null ],
@@ -3863,6 +3863,7 @@ var hierarchy =
     [ "score::gfx::VideoFrameShare", "structscore_1_1gfx_1_1_video_frame_share.html", [
       [ "score::gfx::VideoFrameReader", "structscore_1_1gfx_1_1_video_frame_reader.html", null ]
     ] ],
+    [ "score::gfx::VideoMaterialUBO", "structscore_1_1gfx_1_1_video_material_u_b_o.html", null ],
     [ "Gfx::Video::VideoProps", "struct_gfx_1_1_video_1_1_video_props.html", null ],
     [ "view_impl_t", null, [
       [ "Media::AudioFile::ViewHandle", "struct_media_1_1_audio_file_1_1_view_handle.html", null ]

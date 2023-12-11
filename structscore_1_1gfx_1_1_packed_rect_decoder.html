@@ -279,7 +279,7 @@ static QString&#160;</td><td class="memItemRight" valign="bottom"><b>vertexShade
 <div class="line"><span class="stringliteral"></span> </div>
 <div class="line"><span class="stringliteral">void main()</span></div>
 <div class="line"><span class="stringliteral">{</span></div>
-<div class="line"><span class="stringliteral">  v_texcoord = texcoord * mat.textureSize;</span></div>
+<div class="line"><span class="stringliteral">  v_texcoord = texcoord * mat.texSz.xy;</span></div>
 <div class="line"><span class="stringliteral">  gl_Position = renderer.clipSpaceCorrMatrix * vec4(position.x * mat.scale.x, position.y * mat.scale.y, 0.0, 1.);</span></div>
 <div class="line"><span class="stringliteral">}</span></div>
 <div class="line"><span class="stringliteral">)_&quot;</span></div>
