@@ -1,14 +1,11 @@
 var NAVTREEINDEX75 =
 {
-"structoscr_1_1_apply_engine_control_change_to_u_i.html#a9bf323896198792f8d962e109ecd9d5b":[12,0,36,16,1],
-"structoscr_1_1_apply_engine_control_change_to_u_i.html#ae1e927312fbd729d52dd0c1e9e71c7c6":[12,0,36,16,3],
 "structoscr_1_1_apply_engine_control_change_to_u_i.html#afc827e598638583fe639afac863ee58a":[12,0,36,16,0],
 "structoscr_1_1_custom_control_factory.html":[12,0,36,7],
 "structoscr_1_1_custom_control_factory_3_01_node_00_01avnd_1_1field__reflection_3_01_n_00_01_field_01_4_01_4.html":[12,0,36,8],
 "structoscr_1_1_custom_float_control.html":[12,0,36,10],
 "structoscr_1_1_custom_float_control.html#a1e0f0030f532b00d5d4a3853e2498274":[12,0,36,10,2],
 "structoscr_1_1_custom_float_control.html#a972909fe80536769e6a2874e5766ee7d":[12,0,36,10,3],
-"structoscr_1_1_custom_float_control.html#ae2fe5be07890e8265f756819a757a63a":[12,0,36,10,1],
 "structoscr_1_1_custom_float_control.html#aedac9f6284bed5d48bb81d1f2f6a5fc2":[12,0,36,10,0],
 "structoscr_1_1_custom_float_control_base.html":[12,0,36,11],
 "structoscr_1_1_custom_float_control_base.html#a1e0f0030f532b00d5d4a3853e2498274":[12,0,36,11,0],
@@ -112,6 +109,7 @@ var NAVTREEINDEX75 =
 "structoscr_1_1_message_bus_wrapper_from_ui_3_01_info_01_4.html#a7acc4af0c0c0eb506a19e664f4e22e1a":[12,0,36,38,0],
 "structoscr_1_1_message_bus_wrapper_to_ui.html":[12,0,36,35],
 "structoscr_1_1_message_bus_wrapper_to_ui_3_01_info_01_4.html":[12,0,36,37],
+"structavnd__tools_1_1_spammer.html#aadda99236a24d871a9267a6161c74086":[12,0,3,4,9],
 "structoscr_1_1_message_bus_wrapper_to_ui_3_01_info_01_4.html#a141faea657ef587aa71c80a2f16ac041":[12,0,36,37,0],
 "structoscr_1_1_midi_file_octaver.html":[12,0,36,44],
 "structoscr_1_1_midi_file_octaver.html#a1cec9dbef78037935355b3a7a3ea5fcc":[12,0,36,44,4],
@@ -249,5 +247,7 @@ var NAVTREEINDEX75 =
 "structoscr_1_1setup___impl1___out.html#a3c38796c644b4a2dcc55b738abb9f310":[12,0,36,17,3],
 "structoscr_1_1setup___impl1___out.html#a4e425edcfcfb0d480595f318b2f852a7":[12,0,36,17,4],
 "structoscr_1_1setup___impl1___out.html#a864711c3570060a1365323453762d922":[12,0,36,17,0],
-"structoscr_1_1setup___impl1___out.html#a929e10de753f29cb5102e4a87ada2324":[12,0,36,17,1]
+"structoscr_1_1setup___impl1___out.html#a929e10de753f29cb5102e4a87ada2324":[12,0,36,17,1],
+"structoscr_1_1type__if.html":[12,0,36,19],
+"structoscr_1_1type__if_3_01_t_00_01false_01_4.html":[12,0,36,20]
 };

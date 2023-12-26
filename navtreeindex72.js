@@ -60,7 +60,6 @@ var NAVTREEINDEX72 =
 "struct_scenario_rollback_strategy.html":[12,0,232],
 "struct_send_strategy_1_1_quiet.html":[12,0,49,1],
 "struct_send_strategy_1_1_simple.html":[12,0,49,0],
-"struct_send_strategy_1_1_undo_redo.html":[12,0,49,2],
 "struct_signal_utils.html":[12,0,275],
 "struct_simple_hierarchical_scenario_component_1_1_interval_pair.html":[12,0,276,0],
 "struct_simple_hierarchical_scenario_component_1_1_interval_pair.html#a282f9c9d9b517804972b2dd3722ce187":[12,0,276,0,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX72 =
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1nullable__variant_3_01_args_8_8_8_01_4_01_4.html":[12,0,312],
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1nullable__variant_3_01_args_8_8_8_01_4_01_4.html#a7083be497ff6f93cb1938e32b8039dd8":[12,0,312,0],
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1small__vector_3_01_t_00_01_n_01_4_01_4.html":[12,0,313],
-"struct_t_serializer_3_01_data_stream_00_01ossia_1_1static__vector_3_01_t_00_01_n_01_4_01_4.html":[12,0,314]
+"struct_t_serializer_3_01_data_stream_00_01ossia_1_1static__vector_3_01_t_00_01_n_01_4_01_4.html":[12,0,314],
+"struct_t_serializer_3_01_data_stream_00_01ossia_1_1unit__t_01_4.html":[12,0,315]
 };

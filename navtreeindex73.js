@@ -1,6 +1,5 @@
 var NAVTREEINDEX73 =
 {
-"struct_t_serializer_3_01_data_stream_00_01ossia_1_1unit__t_01_4.html":[12,0,315],
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1value__map__type_01_4.html":[12,0,316],
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1value__variant__type_01_4.html":[12,0,317],
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1value__variant__type_01_4.html#a63e8cc86bbec8eca0dddaa5e89d21173":[12,0,317,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX73 =
 "struct_video_1_1_video_interface.html#a574fe3e5f0576c2332f84939be6b9cbc":[12,0,56,10,2],
 "struct_video_1_1_video_interface.html#a654c89747de3bd51f51c8c0b4614350a":[12,0,56,10,1],
 "struct_video_1_1_video_interface.html#a6ddd60cf77f0fade1865660febc5e022":[12,0,56,10,0],
-"struct_video_1_1_video_metadata.html":[12,0,56,9]
+"struct_video_1_1_video_metadata.html":[12,0,56,9],
+"struct_video_1_1_video_metadata.html#a5c61acc36f71dd4ceded70e96905a568":[12,0,56,9,1]
 };
