@@ -410,16 +410,16 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_process_
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;  <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> T&amp; in, <span class="keyword">auto</span> idx)</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;  {</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    constexpr <span class="keyword">auto</span> name = avnd::get_name&lt;T&gt;();</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <a class="code" href="struct_process_1_1_file_chooser_base.html">Process::FileChooserBase</a>* p{};</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    Process::FileChooserBase* p{};</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="keywordflow">if</span> constexpr(requires { T::waveform; })</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    {</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;      p = <span class="keyword">new</span> <a class="code" href="struct_process_1_1_audio_file_chooser.html">Process::AudioFileChooser</a>{</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;      p = <span class="keyword">new</span> Process::AudioFileChooser{</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;          <span class="stringliteral">&quot;&quot;</span>, getFilters(in), QString::fromUtf8(name.data(), name.size()),</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;          <a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>(inlet++), &amp;<span class="keyword">self</span>};</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    }</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    {</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      p = <span class="keyword">new</span> <a class="code" href="struct_process_1_1_file_chooser.html">Process::FileChooser</a>{</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      p = <span class="keyword">new</span> Process::FileChooser{</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;          <span class="stringliteral">&quot;&quot;</span>, getFilters(in), QString::fromUtf8(name.data(), name.size()),</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;          <a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>(inlet++), &amp;<span class="keyword">self</span>};</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    }</div>
@@ -439,7 +439,7 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_process_
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;  {</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    constexpr <span class="keyword">auto</span> name = avnd::get_name&lt;T&gt;();</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160; </div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keyword">auto</span> p = <span class="keyword">new</span> <a class="code" href="struct_process_1_1_file_chooser.html">Process::FileChooser</a>{</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keyword">auto</span> p = <span class="keyword">new</span> Process::FileChooser{</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <span class="stringliteral">&quot;&quot;</span>, getFilters(in), QString::fromUtf8(name.data(), name.size()),</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        <a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>(inlet++), &amp;<span class="keyword">self</span>};</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    p-&gt;hidden = <span class="keyword">true</span>;</div>
@@ -782,10 +782,7 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_process_
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1324</div></div>
 <div class="ttc" id="anamespace_process_html_a592bb361ebf8fbc09c929c93208c71f1"><div class="ttname"><a href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">Process::ProcessFlags</a></div><div class="ttdeci">ProcessFlags</div><div class="ttdoc">Various settings for processes.</div><div class="ttdef"><b>Definition:</b> ProcessFlags.hpp:17</div></div>
 <div class="ttc" id="astruct_metadata_html"><div class="ttname"><a href="struct_metadata.html">Metadata</a></div><div class="ttdoc">Static metadata implementation.</div><div class="ttdef"><b>Definition:</b> lib/score/tools/Metadata.hpp:36</div></div>
-<div class="ttc" id="astruct_process_1_1_audio_file_chooser_html"><div class="ttname"><a href="struct_process_1_1_audio_file_chooser.html">Process::AudioFileChooser</a></div><div class="ttdef"><b>Definition:</b> WidgetInlets.hpp:370</div></div>
 <div class="ttc" id="astruct_process_1_1_descriptor_html"><div class="ttname"><a href="struct_process_1_1_descriptor.html">Process::Descriptor</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/ProcessMetadata.hpp:36</div></div>
-<div class="ttc" id="astruct_process_1_1_file_chooser_base_html"><div class="ttname"><a href="struct_process_1_1_file_chooser_base.html">Process::FileChooserBase</a></div><div class="ttdef"><b>Definition:</b> WidgetInlets.hpp:338</div></div>
-<div class="ttc" id="astruct_process_1_1_file_chooser_html"><div class="ttname"><a href="struct_process_1_1_file_chooser.html">Process::FileChooser</a></div><div class="ttdef"><b>Definition:</b> WidgetInlets.hpp:358</div></div>
 <div class="ttc" id="astruct_process_1_1_inlets_html"><div class="ttname"><a href="struct_process_1_1_inlets.html">Process::Inlets</a></div><div class="ttdef"><b>Definition:</b> PortForward.hpp:23</div></div>
 <div class="ttc" id="astruct_process_1_1_outlets_html"><div class="ttname"><a href="struct_process_1_1_outlets.html">Process::Outlets</a></div><div class="ttdef"><b>Definition:</b> PortForward.hpp:27</div></div>
 <div class="ttc" id="astruct_t_serializer_html"><div class="ttname"><a href="struct_t_serializer.html">TSerializer</a></div><div class="ttdef"><b>Definition:</b> VisitorInterface.hpp:13</div></div>

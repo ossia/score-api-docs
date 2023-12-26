@@ -133,7 +133,7 @@ var searchData=
   ['audiofactory_130',['AudioFactory',['../class_audio_1_1_audio_factory.html',1,'Audio']]],
   ['audiofactorylist_131',['AudioFactoryList',['../class_audio_1_1_audio_factory_list.html',1,'Audio']]],
   ['audiofile_132',['AudioFile',['../struct_media_1_1_audio_file.html',1,'Media']]],
-  ['audiofilechooser_133',['AudioFileChooser',['../struct_media_1_1_audio_file_chooser.html',1,'Media::AudioFileChooser'],['../struct_process_1_1_audio_file_chooser.html',1,'Process::AudioFileChooser']]],
+  ['audiofilechooser_133',['AudioFileChooser',['../struct_media_1_1_audio_file_chooser.html',1,'Media']]],
   ['audiofilemanager_134',['AudioFileManager',['../class_media_1_1_audio_file_manager.html',1,'Media']]],
   ['audioinfo_135',['AudioInfo',['../struct_media_1_1_audio_info.html',1,'Media']]],
   ['audioinlet_136',['AudioInlet',['../class_audio_inlet.html',1,'AudioInlet'],['../class_process_1_1_audio_inlet.html',1,'Process::AudioInlet']]],

@@ -1062,8 +1062,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -2691,35 +2691,6 @@ var hierarchy =
               [ "Process::ControlInlet", "class_process_1_1_control_inlet.html", [
                 [ "Dataflow::CurveInlet", "struct_dataflow_1_1_curve_inlet.html", null ],
                 [ "Gfx::Images::ImageListChooser", "struct_gfx_1_1_images_1_1_image_list_chooser.html", null ],
-                [ "Process::Button", "struct_process_1_1_button.html", null ],
-                [ "Process::ChooserToggle", "struct_process_1_1_chooser_toggle.html", null ],
-                [ "Process::ComboBox", "struct_process_1_1_combo_box.html", null ],
-                [ "Process::Enum", "struct_process_1_1_enum.html", null ],
-                [ "Process::FileChooserBase", "struct_process_1_1_file_chooser_base.html", [
-                  [ "Process::AudioFileChooser", "struct_process_1_1_audio_file_chooser.html", null ],
-                  [ "Process::FileChooser", "struct_process_1_1_file_chooser.html", null ]
-                ] ],
-                [ "Process::FloatKnob", "struct_process_1_1_float_knob.html", null ],
-                [ "Process::FloatRangeSlider", "struct_process_1_1_float_range_slider.html", null ],
-                [ "Process::FloatRangeSpinBox", "struct_process_1_1_float_range_spin_box.html", null ],
-                [ "Process::FloatSlider", "struct_process_1_1_float_slider.html", null ],
-                [ "Process::FloatSpinBox", "struct_process_1_1_float_spin_box.html", null ],
-                [ "Process::HSVSlider", "struct_process_1_1_h_s_v_slider.html", null ],
-                [ "Process::ImpulseButton", "struct_process_1_1_impulse_button.html", null ],
-                [ "Process::IntRangeSlider", "struct_process_1_1_int_range_slider.html", null ],
-                [ "Process::IntRangeSpinBox", "struct_process_1_1_int_range_spin_box.html", null ],
-                [ "Process::IntSlider", "struct_process_1_1_int_slider.html", null ],
-                [ "Process::IntSpinBox", "struct_process_1_1_int_spin_box.html", null ],
-                [ "Process::LineEdit", "struct_process_1_1_line_edit.html", null ],
-                [ "Process::LogFloatSlider", "struct_process_1_1_log_float_slider.html", null ],
-                [ "Process::MultiSlider", "struct_process_1_1_multi_slider.html", null ],
-                [ "Process::ProgramEdit", "struct_process_1_1_program_edit.html", null ],
-                [ "Process::TimeChooser", "struct_process_1_1_time_chooser.html", null ],
-                [ "Process::Toggle", "struct_process_1_1_toggle.html", null ],
-                [ "Process::XYSlider", "struct_process_1_1_x_y_slider.html", null ],
-                [ "Process::XYSpinboxes", "struct_process_1_1_x_y_spinboxes.html", null ],
-                [ "Process::XYZSlider", "struct_process_1_1_x_y_z_slider.html", null ],
-                [ "Process::XYZSpinboxes", "struct_process_1_1_x_y_z_spinboxes.html", null ],
                 [ "oscr::CustomFloatControlBase", "structoscr_1_1_custom_float_control_base.html", [
                   [ "oscr::CustomFloatControl< Node, FieldIndex >", "structoscr_1_1_custom_float_control.html", null ]
                 ] ]
@@ -2732,9 +2703,7 @@ var hierarchy =
             [ "Process::Outlet", "class_process_1_1_outlet.html", [
               [ "Gfx::GeometryOutlet", "class_gfx_1_1_geometry_outlet.html", null ],
               [ "Process::AudioOutlet", "class_process_1_1_audio_outlet.html", null ],
-              [ "Process::ControlOutlet", "class_process_1_1_control_outlet.html", [
-                [ "Process::Bargraph", "struct_process_1_1_bargraph.html", null ]
-              ] ],
+              [ "Process::ControlOutlet", "class_process_1_1_control_outlet.html", null ],
               [ "Process::MidiOutlet", "class_process_1_1_midi_outlet.html", null ],
               [ "Process::ValueOutlet", "class_process_1_1_value_outlet.html", null ]
             ] ]

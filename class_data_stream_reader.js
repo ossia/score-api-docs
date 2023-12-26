@@ -140,6 +140,7 @@ var class_data_stream_reader =
     [ "read", "class_data_stream_reader.html#a782f1ba3ae2ddbd7bf330df1f82f8ce6", null ],
     [ "read", "class_data_stream_reader.html#a19428df5962b9bbe302be9116eaa36c4", null ],
     [ "read", "class_data_stream_reader.html#ae34387d256ecc5370e59e5cc686dcc17", null ],
+    [ "read", "class_data_stream_reader.html#acf877d2f0376de95a8f8cfd5b16feecd", null ],
     [ "read", "class_data_stream_reader.html#a206e9b677422bf24b044ee76ba84d817", null ],
     [ "read", "class_data_stream_reader.html#a9154e8a773dcab7ce335373330f3ba22", null ],
     [ "read", "class_data_stream_reader.html#a81e2e87454e340bab25d1d3990d6e88c", null ],
