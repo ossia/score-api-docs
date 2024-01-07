@@ -8,6 +8,7 @@ var classvst3_1_1_application_plugin =
     [ "initialize", "classvst3_1_1_application_plugin.html#a6853897da3ff2bc9f8ce84e92a893a21", null ],
     [ "pathForClass", "classvst3_1_1_application_plugin.html#af21d5afc7261e5c33cdb749c34c363b1", null ],
     [ "processIncomingMessage", "classvst3_1_1_application_plugin.html#a81b19252232d410353d7f7e79f8b64eb", null ],
+    [ "rescan", "classvst3_1_1_application_plugin.html#acc639abbe7b721be6bda0ff75cadf79e", null ],
     [ "rescan", "classvst3_1_1_application_plugin.html#aa706ee824bb2f60c0dd53bc554d999c0", null ],
     [ "scanVSTsEvent", "classvst3_1_1_application_plugin.html#a6c468799dc82934a0974c44355c2d45e", null ],
     [ "uidForPathAndClassName", "classvst3_1_1_application_plugin.html#a874944505d2e01298fce53c6c7524880", null ],
