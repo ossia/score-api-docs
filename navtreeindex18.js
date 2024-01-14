@@ -1,5 +1,9 @@
 var NAVTREEINDEX18 =
 {
+"class_gfx_1_1simple__texture__input__protocol.html#a6460f04c6ad7bddaf2a193598f368ff2":[12,0,18,26,3],
+"class_gfx_1_1simple__texture__input__protocol.html#a80a49744dafce33d3d6aee98e97af3cd":[12,0,18,26,6],
+"class_gfx_1_1simple__texture__input__protocol.html#a83197dcd5b816f7bdaac5b11929b9e96":[12,0,18,26,0],
+"class_gfx_1_1simple__texture__input__protocol.html#aae75af30cca3eb54a76e175a38cce41a":[12,0,18,26,5],
 "class_gfx_1_1simple__texture__input__protocol.html#ab9ed28626684b34283481ef875cb894f":[12,0,18,26,1],
 "class_gfx_1_1simple__texture__input__protocol.html#abfbb2524da9dcbc295a36211c95d2f85":[12,0,18,26,2],
 "class_gfx_1_1video__texture__input__device.html":[12,0,18,33],
@@ -245,9 +249,5 @@ var NAVTREEINDEX18 =
 "class_inspector_1_1_inspector_widget_list.html#adaffcbe1cbff97345f198c85ce78ddaf":[12,0,20,6,1],
 "class_inspector_1_1_layout.html":[12,0,20,0],
 "class_inspector_1_1_layout.html#a630195c2e06680ffc792609e33fb1f9a":[12,0,20,0,0],
-"class_inspector_1_1_menu_button.html":[12,0,20,2],
-"class_inspector_1_1_menu_button.html#ae39a4ef60c0cf2600dd589a758f0ba8a":[12,0,20,2,0],
-"class_inspector_1_1_v_box_layout.html":[12,0,20,1],
-"class_inspector_1_1_v_box_layout.html#aa53843ce9ab93d8f89df9816e1f8c8f5":[12,0,20,1,0],
-"class_inspector_panel_1_1_inspector_panel_widget.html":[12,0,21,0]
+"class_inspector_1_1_menu_button.html":[12,0,20,2]
 };

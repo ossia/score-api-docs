@@ -1,5 +1,9 @@
 var NAVTREEINDEX30 =
 {
+"class_protocols_1_1_wiimote_device.html#aed0842356ecd92e92105a45e093bf53d":[12,0,42,81,2],
+"class_protocols_1_1_wiimote_protocol_factory.html":[12,0,42,82],
+"class_protocols_1_1_wiimote_protocol_settings_widget.html":[12,0,42,83],
+"class_protocols_1_1_wiimote_protocol_settings_widget.html#a0f04343b48f36594626f70f95cf0e6d4":[12,0,42,83,0],
 "class_protocols_1_1_wiimote_protocol_settings_widget.html#a4348a828a429c13f02afee27c4e3bae4":[12,0,42,83,1],
 "class_protocols_1_1_wiimote_protocol_settings_widget.html#a6966fc9763f6891f030368c5ab5f4e1a":[12,0,42,83,4],
 "class_protocols_1_1_wiimote_protocol_settings_widget.html#a86094c96ae52f666a3b6bc5e01164ecf":[12,0,42,83,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX30 =
 "class_scenario_1_1_central_interval_display.html#ae94078112f9f7e0ee290d430e81f780c":[12,0,47,148,8],
 "class_scenario_1_1_central_interval_display.html#aea7632fb18db9a3bb06b1f7412425273":[12,0,47,148,5],
 "class_scenario_1_1_central_nodal_display.html":[12,0,47,149],
-"class_scenario_1_1_central_nodal_display.html#a1a93b73dc4919e9529dda91a7fdfac90":[12,0,47,149,8],
-"class_scenario_1_1_central_nodal_display.html#a1e7987f31f1cb2b3fcf883e582cb99ee":[12,0,47,149,1],
-"class_scenario_1_1_central_nodal_display.html#a1f62d0adffe92ce70db83b3c9ec173f7":[12,0,47,149,7],
-"class_scenario_1_1_central_nodal_display.html#a2288b93c546e9881b191955c9830799f":[12,0,47,149,3],
-"class_scenario_1_1_central_nodal_display.html#a6001c0edeb4e0198da5d48fc1d607c7d":[12,0,47,149,5]
+"class_scenario_1_1_central_nodal_display.html#a1a93b73dc4919e9529dda91a7fdfac90":[12,0,47,149,8]
 };

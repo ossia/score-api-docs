@@ -1,5 +1,9 @@
 var NAVTREEINDEX17 =
 {
+"class_gfx_1_1_settings_1_1_presenter.html#a7572d48e2939dc025a8a0bd7bf1a8c40":[12,0,18,3,3,1],
+"class_gfx_1_1_settings_1_1_presenter.html#ad831066b1508b6f13aaa3fb55f4f45eb":[12,0,18,3,3,0],
+"class_gfx_1_1_settings_1_1_view.html":[12,0,18,3,4],
+"class_gfx_1_1_settings_1_1_view.html#abd8c4d1659062be759e05f5a3839ee16":[12,0,18,3,4,0],
 "class_gfx_1_1_shader_preview_widget.html":[12,0,18,14],
 "class_gfx_1_1_shader_preview_widget.html#a02a3a9befa0849be67ad9babdda1a7ca":[12,0,18,14,0],
 "class_gfx_1_1_shader_preview_widget.html#a092a6fd11e78beb7b0c670fa9e297476":[12,0,18,14,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX17 =
 "class_gfx_1_1simple__texture__input__parameter.html#afdb239c377992db0538b27d9ce6c7a9e":[12,0,18,27,2],
 "class_gfx_1_1simple__texture__input__protocol.html":[12,0,18,26],
 "class_gfx_1_1simple__texture__input__protocol.html#a152abe80c28d12f3931a427cf51bcd9b":[12,0,18,26,4],
-"class_gfx_1_1simple__texture__input__protocol.html#a44a6817d222726baf2396b05d5bd1c47":[12,0,18,26,7],
-"class_gfx_1_1simple__texture__input__protocol.html#a6460f04c6ad7bddaf2a193598f368ff2":[12,0,18,26,3],
-"class_gfx_1_1simple__texture__input__protocol.html#a80a49744dafce33d3d6aee98e97af3cd":[12,0,18,26,6],
-"class_gfx_1_1simple__texture__input__protocol.html#a83197dcd5b816f7bdaac5b11929b9e96":[12,0,18,26,0],
-"class_gfx_1_1simple__texture__input__protocol.html#aae75af30cca3eb54a76e175a38cce41a":[12,0,18,26,5]
+"class_gfx_1_1simple__texture__input__protocol.html#a44a6817d222726baf2396b05d5bd1c47":[12,0,18,26,7]
 };

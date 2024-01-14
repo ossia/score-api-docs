@@ -1,5 +1,9 @@
 var NAVTREEINDEX8 =
 {
+"class_control_surface_1_1_model.html#ae1b1af68a6d078d3976f05e65e51d2ea":[12,0,7,8,9],
+"class_control_surface_1_1_model.html#afb1987d36797dec6962ec5b5f928be07":[12,0,7,8,5],
+"class_control_surface_1_1_presenter.html":[12,0,7,6],
+"class_control_surface_1_1_presenter.html#a539b79b0af661641203b376a8c914444":[12,0,7,6,6],
 "class_control_surface_1_1_presenter.html#a7f1541f12e6cc059916988d7a3df58db":[12,0,7,6,2],
 "class_control_surface_1_1_presenter.html#a8a3cadb5e558d2dd9e0ad4ded4fd82ac":[12,0,7,6,5],
 "class_control_surface_1_1_presenter.html#a9162f5b328e0d85ee40bb1beabab2d94":[12,0,7,6,7],
@@ -245,9 +249,5 @@ var NAVTREEINDEX8 =
 "class_curve_1_1_point_view.html#a859888bcf03fed97df4599edf51f3367":[12,0,8,41,7],
 "class_curve_1_1_point_view.html#a8d1bcb6689f6bf12edf4da5877a8f3b3":[12,0,8,41,0],
 "class_curve_1_1_point_view.html#a9c08e505c61749de348b75e42ee70882":[12,0,8,41,8],
-"class_curve_1_1_point_view.html#ab50c2c5921fe2883a9a3f742a21594d2":[12,0,8,41,6],
-"class_curve_1_1_point_view.html#ac617adfd7ef3774692b58047069302e7":[12,0,8,41,9],
-"class_curve_1_1_point_view.html#acb810ee6acb0cd6fbcbb7122abb232d3":[12,0,8,41,3],
-"class_curve_1_1_point_view.html#aeaa5d2b93ba3053803b8d0f5ce0c06aa":[12,0,8,41,10],
-"class_curve_1_1_positioned_curve_transition.html":[12,0,8,28]
+"class_curve_1_1_point_view.html#ab50c2c5921fe2883a9a3f742a21594d2":[12,0,8,41,6]
 };

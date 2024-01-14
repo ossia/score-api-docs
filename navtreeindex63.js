@@ -1,5 +1,9 @@
 var NAVTREEINDEX63 =
 {
+"struct_gfx_1_1_settings_1_1_hardware_video_decoder.html#a381edb5ada48d36dd2807472026bdfb3":[12,0,18,3,1,2],
+"struct_gfx_1_1_settings_1_1_hardware_video_decoder.html#a39b2c6a0662df6473801c1bd0d543f04":[12,0,18,3,1,6],
+"struct_gfx_1_1_settings_1_1_hardware_video_decoder.html#a5a6bf8be202dde882a769259fd685ce7":[12,0,18,3,1,8],
+"struct_gfx_1_1_settings_1_1_hardware_video_decoder.html#a7ae4b36afd5bedf9fc12c63eb6017f25":[12,0,18,3,1,3],
 "struct_gfx_1_1_settings_1_1_hardware_video_decoder.html#aa0ecc7abdd05d40098d877b1b7f6849f":[12,0,18,3,1,4],
 "struct_gfx_1_1_settings_1_1_hardware_video_decoder.html#ac544795e2d2722bd09366cecd2d56907":[12,0,18,3,1,0],
 "struct_gfx_1_1_settings_1_1_hardware_video_decoder.html#ae9d54bced156abff4dfad9ec9f2748a8":[12,0,18,3,1,7],
@@ -245,9 +249,5 @@ var NAVTREEINDEX63 =
 "struct_j_s_1_1_vec3f_value_type.html#a30be08a475a5e7bbc788e9b16c3f2e59":[12,0,26,14,5],
 "struct_j_s_1_1_vec3f_value_type.html#a598299c88d8e0c281082cbb069d47556":[12,0,26,14,7],
 "struct_j_s_1_1_vec3f_value_type.html#a666adbed9b063b4ac6e0676858ff7687":[12,0,26,14,0],
-"struct_j_s_1_1_vec3f_value_type.html#a682e01752969510eb799af86c0e3e05d":[12,0,26,14,13],
-"struct_j_s_1_1_vec3f_value_type.html#a78b1ca70c0ca52fe44f707006eccd0b0":[12,0,26,14,6],
-"struct_j_s_1_1_vec3f_value_type.html#a8a717939de8df9b52a919ffcc1f1b379":[12,0,26,14,10],
-"struct_j_s_1_1_vec3f_value_type.html#a903c3df253bc060c21b9ff8ef0ea88f5":[12,0,26,14,20],
-"struct_j_s_1_1_vec3f_value_type.html#a90b7c677dd396a036929fec1ce58fbed":[12,0,26,14,14]
+"struct_j_s_1_1_vec3f_value_type.html#a682e01752969510eb799af86c0e3e05d":[12,0,26,14,13]
 };

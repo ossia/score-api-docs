@@ -1,5 +1,9 @@
 var NAVTREEINDEX29 =
 {
+"class_protocols_1_1_h_t_t_p_protocol_settings_widget.html#ae2f3fc099b7a92efd3caeb13e69bcd28":[12,0,42,24,0],
+"class_protocols_1_1_h_t_t_p_protocol_settings_widget.html#afd3e8675e2aafac6abb84aafcf765ee0":[12,0,42,24,1],
+"class_protocols_1_1_joystick_device.html":[12,0,42,26],
+"class_protocols_1_1_joystick_device.html#a27941c25db5c3228130b4b40acaa5bca":[12,0,42,26,0],
 "class_protocols_1_1_joystick_device.html#aa8391c679638f620fc2379e029cc9415":[12,0,42,26,1],
 "class_protocols_1_1_joystick_device.html#ade854aa04fe470f6b616f6e7d1298ec7":[12,0,42,26,3],
 "class_protocols_1_1_joystick_device.html#ae8c8e65b7cbca478a93dc5d0b8eb0dc7":[12,0,42,26,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX29 =
 "class_protocols_1_1_wiimote_device.html":[12,0,42,81],
 "class_protocols_1_1_wiimote_device.html#a2cef54517f18effb47e006e8f8fcbfb2":[12,0,42,81,0],
 "class_protocols_1_1_wiimote_device.html#a3c0a579e602687da923c4211e8926518":[12,0,42,81,1],
-"class_protocols_1_1_wiimote_device.html#aa5a79d0862d4d8b1b5ef0856ea55b6c7":[12,0,42,81,3],
-"class_protocols_1_1_wiimote_device.html#aed0842356ecd92e92105a45e093bf53d":[12,0,42,81,2],
-"class_protocols_1_1_wiimote_protocol_factory.html":[12,0,42,82],
-"class_protocols_1_1_wiimote_protocol_settings_widget.html":[12,0,42,83],
-"class_protocols_1_1_wiimote_protocol_settings_widget.html#a0f04343b48f36594626f70f95cf0e6d4":[12,0,42,83,0]
+"class_protocols_1_1_wiimote_device.html#aa5a79d0862d4d8b1b5ef0856ea55b6c7":[12,0,42,81,3]
 };

@@ -1,5 +1,9 @@
 var NAVTREEINDEX22 =
 {
+"class_library_1_1_project_library_widget.html#a7ec8107d4a3da9dfb44e94adeb210450":[12,0,27,22,3],
+"class_library_1_1_project_library_widget.html#accf7d206976a90bd07ec8d5a17b6062c":[12,0,27,22,0],
+"class_library_1_1_project_panel.html":[12,0,27,7],
+"class_library_1_1_project_panel.html#a8f90931050c59c6cb7d54a9b346da76c":[12,0,27,7,0],
 "class_library_1_1_project_panel_factory.html":[12,0,27,10],
 "class_library_1_1_recursive_filter_proxy.html":[12,0,27,23],
 "class_library_1_1_recursive_filter_proxy.html#a028d5c1f8b0b92cc6d1639da71f34a39":[12,0,27,23,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX22 =
 "class_media_1_1_set_step_duration.html":[12,0,31,23],
 "class_media_1_1_set_step_duration.html#a3f0113831e2098f7d2e017cf93545e22":[12,0,31,23,0],
 "class_media_1_1_settings_1_1_model.html":[12,0,31,2,0],
-"class_media_1_1_settings_1_1_model.html#a831c000f8768512055314f7805580aa1":[12,0,31,2,0,0],
-"class_media_1_1_settings_1_1_plugin_settings_factory_list.html":[12,0,31,2,4],
-"class_media_1_1_settings_1_1_plugin_settings_tab.html":[12,0,31,2,3],
-"class_media_1_1_settings_1_1_plugin_settings_tab.html#a92b5aa4d229966837bd92fd8baa9066f":[12,0,31,2,3,1],
-"class_media_1_1_settings_1_1_plugin_settings_tab.html#aa31d210f8fbfab19a2b72e2e25f4e71b":[12,0,31,2,3,2]
+"class_media_1_1_settings_1_1_model.html#a831c000f8768512055314f7805580aa1":[12,0,31,2,0,0]
 };

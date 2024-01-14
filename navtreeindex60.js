@@ -1,5 +1,9 @@
 var NAVTREEINDEX60 =
 {
+"struct_control_1_1_impulse_button.html#a5e6f2a50c564be68e2e694d5d3233e12":[12,0,6,7,0],
+"struct_control_1_1_impulse_button.html#a6a5cabaf15d3a95e7e17f910bc2c4190":[12,0,6,7,1],
+"struct_control_1_1_impulse_button.html#a87e577b514e02e8e9b7d23fa6b809b7a":[12,0,6,7,5],
+"struct_control_1_1_impulse_button.html#acacdfd96cc588d498cc00267ca038cdf":[12,0,6,7,7],
 "struct_control_1_1_in_control.html":[12,0,6,1],
 "struct_control_1_1_in_control.html#a11c4e4a7cb137ac5ad35d056a6f540cb":[12,0,6,1,3],
 "struct_control_1_1_in_control.html#a2b22e3c04ff6efab13bcd324683200ee":[12,0,6,1,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX60 =
 "struct_dataflow_1_1_audio_outlet_factory.html#afb35a22eb5a4114d71e2eafff972375e":[12,0,9,12,4],
 "struct_dataflow_1_1_control_inlet_factory.html":[12,0,9,19],
 "struct_dataflow_1_1_control_inlet_factory.html#a0e383477c95b660e863d11cbb01ebd34":[12,0,9,19,1],
-"struct_dataflow_1_1_control_inlet_factory.html#a6b341347b0c44315eb6ec0389b4c9716":[12,0,9,19,3],
-"struct_dataflow_1_1_control_inlet_factory.html#a9768f79a5adbf0ff05727777433d15d2":[12,0,9,19,0],
-"struct_dataflow_1_1_control_inlet_factory.html#af664d473e1a0e00001db9b997e427a54":[12,0,9,19,2],
-"struct_dataflow_1_1_control_outlet_factory.html":[12,0,9,20],
-"struct_dataflow_1_1_control_outlet_factory.html#a88bbc2154798a8eead8685138f8084d4":[12,0,9,20,0]
+"struct_dataflow_1_1_control_inlet_factory.html#a6b341347b0c44315eb6ec0389b4c9716":[12,0,9,19,3]
 };
