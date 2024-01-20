@@ -3587,12 +3587,12 @@ var hierarchy =
     [ "score::TemplatedSpinBox< float >", "structscore_1_1_templated_spin_box_3_01float_01_4.html", null ],
     [ "score::TemplatedSpinBox< int >", "structscore_1_1_templated_spin_box_3_01int_01_4.html", null ],
     [ "ossia::gfx::texture_input_parameter", null, [
-      [ "Gfx::Kinect2::kinect2_parameter", "class_gfx_1_1_kinect2_1_1kinect2__parameter.html", null ],
-      [ "Gfx::simple_texture_input_parameter", "class_gfx_1_1simple__texture__input__parameter.html", null ],
-      [ "Gfx::video_texture_input_parameter", "class_gfx_1_1video__texture__input__parameter.html", null ]
+      [ "Gfx::Kinect2::kinect2_parameter", "class_gfx_1_1_kinect2_1_1kinect2__parameter.html", null ]
     ] ],
     [ "ossia::gfx::texture_parameter", null, [
-      [ "Gfx::gfx_parameter_base", "class_gfx_1_1gfx__parameter__base.html", null ]
+      [ "Gfx::gfx_parameter_base", "class_gfx_1_1gfx__parameter__base.html", null ],
+      [ "Gfx::simple_texture_input_parameter", "class_gfx_1_1simple__texture__input__parameter.html", null ],
+      [ "Gfx::video_texture_input_parameter", "class_gfx_1_1video__texture__input__parameter.html", null ]
     ] ],
     [ "score::gfx::TextureRenderTarget", "structscore_1_1gfx_1_1_texture_render_target.html", null ],
     [ "score::ThreadPool", "classscore_1_1_thread_pool.html", null ],
