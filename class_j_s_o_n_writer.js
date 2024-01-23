@@ -43,6 +43,7 @@ var class_j_s_o_n_writer =
     [ "write", "class_j_s_o_n_writer.html#aa8a17a641f4121bd11b245ecf8abc5bb", null ],
     [ "write", "class_j_s_o_n_writer.html#ab0b48ae1fddfeefc51302575161a3064", null ],
     [ "write", "class_j_s_o_n_writer.html#a4d7e0b97040394e4e800c0eb26e9277a", null ],
+    [ "write", "class_j_s_o_n_writer.html#af30ce1c11ccf106efdc91216d28aac78", null ],
     [ "write", "class_j_s_o_n_writer.html#aab39f4ba7d8d3de0dfdfb63d88efef84", null ],
     [ "write", "class_j_s_o_n_writer.html#ac9c49906b6a2d5367f63dc819b32ff06", null ],
     [ "write", "class_j_s_o_n_writer.html#ae574cb199d6a97e4b031eeb8c001ccea", null ],

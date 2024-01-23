@@ -164,35 +164,34 @@ $(document).ready(function(){initNavTree('_gfx_parameter_8hpp_source.html',''); 
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="class_gfx_1_1gfx__node__base.html">gfx_node_base</a>(</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      ossia::net::device_base&amp; dev, <a class="code" href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a>* gfxmodel, std::string name)</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      : m_device{dev}</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      , m_parameter{std::make_unique&lt;gfx_parameter_base&gt;(</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            *<span class="keyword">this</span>, gfxmodel,</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_gfx_1_1gfx__protocol__base.html">gfx_protocol_base</a>&amp;<span class="keyword">&gt;</span>(dev.get_protocol()).context)}</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    m_name = std::move(name);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="class_gfx_1_1gfx__parameter__base.html">gfx_parameter_base</a>* get_parameter()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> m_parameter.get(); }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  ossia::net::device_base&amp; get_device()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> m_device; }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  ossia::net::node_base* get_parent()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> m_parent; }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  ossia::net::node_base&amp; set_name(std::string)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  ossia::net::parameter_base* create_parameter(ossia::val_type)<span class="keyword"> override</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> m_parameter.get();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">bool</span> remove_parameter()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  std::unique_ptr&lt;ossia::net::node_base&gt; make_child(<span class="keyword">const</span> std::string&amp; name)<span class="keyword"> override</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> {};</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">void</span> removing_child(ossia::net::node_base&amp; node_base)<span class="keyword"> override </span>{ }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      ossia::net::device_base&amp; dev, <a class="code" href="class_gfx_1_1gfx__protocol__base.html">gfx_protocol_base</a>&amp; proto, <a class="code" href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a>* gfxmodel,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      std::string name)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      : m_device{dev}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      , m_parameter{std::make_unique&lt;gfx_parameter_base&gt;(*<span class="keyword">this</span>, gfxmodel, proto.context)}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    m_name = std::move(name);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <a class="code" href="class_gfx_1_1gfx__parameter__base.html">gfx_parameter_base</a>* get_parameter()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> m_parameter.get(); }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  ossia::net::device_base&amp; get_device()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> m_device; }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  ossia::net::node_base* get_parent()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> m_parent; }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  ossia::net::node_base&amp; set_name(std::string)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  ossia::net::parameter_base* create_parameter(ossia::val_type)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> m_parameter.get();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">bool</span> remove_parameter()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  std::unique_ptr&lt;ossia::net::node_base&gt; make_child(<span class="keyword">const</span> std::string&amp; name)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">return</span> {};</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">void</span> removing_child(ossia::net::node_base&amp; node_base)<span class="keyword"> override </span>{ }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
 <div class="ttc" id="aclass_gfx_1_1_gfx_execution_action_html"><div class="ttname"><a href="class_gfx_1_1_gfx_execution_action.html">Gfx::GfxExecutionAction</a></div><div class="ttdef"><b>Definition:</b> GfxExecContext.hpp:16</div></div>
 <div class="ttc" id="aclass_gfx_1_1gfx__node__base_html"><div class="ttname"><a href="class_gfx_1_1gfx__node__base.html">Gfx::gfx_node_base</a></div><div class="ttdef"><b>Definition:</b> GfxParameter.hpp:60</div></div>
 <div class="ttc" id="aclass_gfx_1_1gfx__parameter__base_html"><div class="ttname"><a href="class_gfx_1_1gfx__parameter__base.html">Gfx::gfx_parameter_base</a></div><div class="ttdef"><b>Definition:</b> GfxParameter.hpp:13</div></div>
