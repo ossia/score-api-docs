@@ -1565,6 +1565,7 @@ var hierarchy =
     ] ],
     [ "Gfx::LibavEncoder", "struct_gfx_1_1_libav_encoder.html", null ],
     [ "Gfx::LibavIntrospection", "struct_gfx_1_1_libav_introspection.html", null ],
+    [ "Gfx::LibavOutputSettings", "struct_gfx_1_1_libav_output_settings.html", null ],
     [ "Media::AudioFile::LibavStreamReader", "struct_media_1_1_audio_file_1_1_libav_stream_reader.html", null ],
     [ "Protocols::LibmapperClientSpecificSettings", "struct_protocols_1_1_libmapper_client_specific_settings.html", null ],
     [ "Pd::libpd_list_wrapper", "struct_pd_1_1libpd__list__wrapper.html", null ],
@@ -3459,9 +3460,7 @@ var hierarchy =
       [ "Gfx::ProcessedProgram", "struct_gfx_1_1_processed_program.html", null ]
     ] ],
     [ "Gfx::SharedInputSettings", "struct_gfx_1_1_shared_input_settings.html", null ],
-    [ "Gfx::SharedOutputSettings", "struct_gfx_1_1_shared_output_settings.html", [
-      [ "Gfx::LibavOutputSettings", "struct_gfx_1_1_libav_output_settings.html", null ]
-    ] ],
+    [ "Gfx::SharedOutputSettings", "struct_gfx_1_1_shared_output_settings.html", null ],
     [ "SignalUtils", "struct_signal_utils.html", null ],
     [ "RollbackStrategy::Simple", "struct_rollback_strategy_1_1_simple.html", null ],
     [ "SendStrategy::Simple", "struct_send_strategy_1_1_simple.html", null ],
