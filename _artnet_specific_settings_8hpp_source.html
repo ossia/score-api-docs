@@ -170,12 +170,17 @@ $(document).ready(function(){initNavTree('_artnet_specific_settings_8hpp_source.
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    DMXUSBPRO,</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    ArtNetV2, <span class="comment">// Artnet:/{}</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  } transport{ArtNetV2};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="struct_protocols_1_1_artnet_specific_settings.html">Protocols::ArtnetSpecificSettings</a>)</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="struct_protocols_1_1_artnet_specific_settings.html">Protocols::ArtnetSpecificSettings</a>)</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">enum</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    Source, <span class="comment">// score sends DMX</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    Sink    <span class="comment">// score receives DMX</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  } mode;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="struct_protocols_1_1_artnet_specific_settings.html">Protocols::ArtnetSpecificSettings</a>)</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="struct_protocols_1_1_artnet_specific_settings.html">Protocols::ArtnetSpecificSettings</a>)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="astruct_protocols_1_1_artnet_1_1_base_capability_html"><div class="ttname"><a href="struct_protocols_1_1_artnet_1_1_base_capability.html">Protocols::Artnet::BaseCapability</a></div><div class="ttdef"><b>Definition:</b> ArtnetSpecificSettings.hpp:20</div></div>
 <div class="ttc" id="astruct_protocols_1_1_artnet_1_1_channel_html"><div class="ttname"><a href="struct_protocols_1_1_artnet_1_1_channel.html">Protocols::Artnet::Channel</a></div><div class="ttdef"><b>Definition:</b> ArtnetSpecificSettings.hpp:37</div></div>
 <div class="ttc" id="astruct_protocols_1_1_artnet_1_1_fixture_html"><div class="ttname"><a href="struct_protocols_1_1_artnet_1_1_fixture.html">Protocols::Artnet::Fixture</a></div><div class="ttdef"><b>Definition:</b> ArtnetSpecificSettings.hpp:50</div></div>
