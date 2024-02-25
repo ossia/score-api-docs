@@ -433,6 +433,7 @@ var hierarchy =
         [ "Scenario::Command::CreationMetaCommand", "class_scenario_1_1_command_1_1_creation_meta_command.html", null ],
         [ "Scenario::Command::Decapsulate", "class_scenario_1_1_command_1_1_decapsulate.html", null ],
         [ "Scenario::Command::DropProcessInIntervalMacro", "class_scenario_1_1_command_1_1_drop_process_in_interval_macro.html", null ],
+        [ "Scenario::Command::DropProcessInStateMacro", "class_scenario_1_1_command_1_1_drop_process_in_state_macro.html", null ],
         [ "Scenario::Command::DuplicateProcess", "class_scenario_1_1_command_1_1_duplicate_process.html", null ],
         [ "Scenario::Command::Encapsulate", "class_scenario_1_1_command_1_1_encapsulate.html", null ],
         [ "Scenario::Command::MergeEventMacro", "class_scenario_1_1_command_1_1_merge_event_macro.html", null ],
@@ -1075,8 +1076,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1911,6 +1912,7 @@ var hierarchy =
       [ "Scenario::ScenarioDocumentPresenter", "class_scenario_1_1_scenario_document_presenter.html", null ],
       [ "Scenario::ScenarioPresenter", "class_scenario_1_1_scenario_presenter.html", null ],
       [ "Scenario::StateModel", "class_scenario_1_1_state_model.html", null ],
+      [ "Scenario::StatePresenter", "class_scenario_1_1_state_presenter.html", null ],
       [ "Scenario::TimenodeGraph", "struct_scenario_1_1_timenode_graph.html", null ],
       [ "SimpleHierarchicalScenarioComponent< Component_T, Scenario_T, IntervalComponent_T, HasOwnership >", "class_simple_hierarchical_scenario_component.html", null ],
       [ "score::ComponentHierarchyManager< ParentComponent_T, ChildModel_T, ChildComponent_T >", "classscore_1_1_component_hierarchy_manager.html", null ],
@@ -1987,8 +1989,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model >", "class_path.html", null ],
+    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Patternist::ProcessModel >", "class_path.html", null ],

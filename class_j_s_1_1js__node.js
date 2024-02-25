@@ -21,5 +21,9 @@ var class_j_s_1_1js__node =
     [ "m_st", "class_j_s_1_1js__node.html#a3498dad2703c00a73fa5bc59d49b487a", null ],
     [ "m_tickCall", "class_j_s_1_1js__node.html#a48aec96a6e6ef03ca15640f7157b2d8b", null ],
     [ "m_valInlets", "class_j_s_1_1js__node.html#a6750c14c72337bb2c0787cd89308e9c6", null ],
-    [ "m_valOutlets", "class_j_s_1_1js__node.html#afdbe8d2489225ce0300941f51d5e2c44", null ]
+    [ "m_valOutlets", "class_j_s_1_1js__node.html#afdbe8d2489225ce0300941f51d5e2c44", null ],
+    [ "triggerPause", "class_j_s_1_1js__node.html#aa480b887019702b5821a33bc5bf528c6", null ],
+    [ "triggerResume", "class_j_s_1_1js__node.html#a6f75e244f2aa7020af236c8ab849b57d", null ],
+    [ "triggerStart", "class_j_s_1_1js__node.html#a3fba2e21567693e1c3b29e4fc1fe619e", null ],
+    [ "triggerStop", "class_j_s_1_1js__node.html#a484741a12a5efcefea4ec0e95eef10c9", null ]
 ];

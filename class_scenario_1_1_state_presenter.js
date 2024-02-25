@@ -9,6 +9,8 @@ var class_scenario_1_1_state_presenter =
     [ "isSelected", "class_scenario_1_1_state_presenter.html#ae1303fde0298b8dfaeb92bc4090fb1c0", null ],
     [ "model", "class_scenario_1_1_state_presenter.html#afdfca8ec7a597baecf647136e9845352", null ],
     [ "moved", "class_scenario_1_1_state_presenter.html#a36fb563423d1ff001199ad1dfdc48052", null ],
+    [ "on_processAdded", "class_scenario_1_1_state_presenter.html#ab75d92afb4724743f1aaeb2b246604e7", null ],
+    [ "on_processRemoved", "class_scenario_1_1_state_presenter.html#a5e91646741b857311b9780bfe622d666", null ],
     [ "pressed", "class_scenario_1_1_state_presenter.html#ab3990a8e5d0cc7b280d86dfdb405f298", null ],
     [ "released", "class_scenario_1_1_state_presenter.html#a058919755548e7b302e8bf2d6faa734d", null ],
     [ "select", "class_scenario_1_1_state_presenter.html#a93a9179401125f7d1cbe32edc5c028b6", null ],

@@ -16,6 +16,7 @@ var class_scenario_1_1_state_view =
     [ "paint", "class_scenario_1_1_state_view.html#a324d075eaf51c4eaca0eafab3d8dc09c", null ],
     [ "presenter", "class_scenario_1_1_state_view.html#a477342c344dfe755b614e5ea593f448f", null ],
     [ "setContainMessage", "class_scenario_1_1_state_view.html#af77857116494ecb21c3fc78673347bc3", null ],
+    [ "setContainProcess", "class_scenario_1_1_state_view.html#a4e9fd5a4790f87931b466a236573646c", null ],
     [ "setSelected", "class_scenario_1_1_state_view.html#a08804ed4e66b97523a627df1400df610", null ],
     [ "setStatus", "class_scenario_1_1_state_view.html#a287e8b0da61f98a185e62226bfeadea5", null ],
     [ "startCreateGraphalMode", "class_scenario_1_1_state_view.html#ae18f9d4d5186ebef075fb0f3aa84d65a", null ],

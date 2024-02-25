@@ -1374,6 +1374,7 @@ var annotated_dup =
         [ "LoadLayerInInterval", "class_scenario_1_1_command_1_1_load_layer_in_interval.html", null ],
         [ "AddProcessInNewBoxMacro", "class_scenario_1_1_command_1_1_add_process_in_new_box_macro.html", null ],
         [ "DropProcessInIntervalMacro", "class_scenario_1_1_command_1_1_drop_process_in_interval_macro.html", null ],
+        [ "DropProcessInStateMacro", "class_scenario_1_1_command_1_1_drop_process_in_state_macro.html", null ],
         [ "CreateProcessInExistingSlot", "class_scenario_1_1_command_1_1_create_process_in_existing_slot.html", null ],
         [ "AddProcessInNewSlot", "class_scenario_1_1_command_1_1_add_process_in_new_slot.html", null ],
         [ "DuplicateProcess", "class_scenario_1_1_command_1_1_duplicate_process.html", null ],

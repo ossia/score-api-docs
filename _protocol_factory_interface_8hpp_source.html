@@ -151,71 +151,72 @@ $(document).ready(function(){initNavTree('_protocol_factory_interface_8hpp_sourc
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> video = <span class="stringliteral">&quot;Video&quot;</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> web = <span class="stringliteral">&quot;Web&quot;</span>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> hardware = <span class="stringliteral">&quot;Hardware&quot;</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> lights = <span class="stringliteral">&quot;Lights&quot;</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> util = <span class="stringliteral">&quot;Utilities&quot;</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  };</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">enum</span> Flags</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    EditingReloadsEverything = (1 &lt;&lt; 0)</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  };</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">virtual</span> Flags flags() const noexcept;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  virtual QString prettyName() const noexcept = 0;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  virtual QString category() const noexcept = 0;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  virtual <span class="keywordtype">int</span> visualPriority() const noexcept;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  virtual DeviceEnumerators getEnumerators(const <a class="code" href="namespacescore.html">score</a>::DocumentContext&amp; ctx) const;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  virtual <a class="code" href="class_device_1_1_device_interface.html">DeviceInterface</a>* makeDevice(</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      const <a class="code" href="namespace_device.html">Device</a>::<a class="code" href="struct_device_1_1_device_settings.html">DeviceSettings</a>&amp; settings,</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      const Explorer::DeviceDocumentPlugin&amp; plugin, const <a class="code" href="namespacescore.html">score</a>::DocumentContext&amp; ctx)</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      = 0;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  virtual <a class="code" href="class_device_1_1_protocol_settings_widget.html">ProtocolSettingsWidget</a>* makeSettingsWidget() = 0;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  virtual <a class="code" href="class_device_1_1_address_dialog.html">AddressDialog</a>* makeAddAddressDialog(</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      const <a class="code" href="namespace_device.html">Device</a>::<a class="code" href="class_device_1_1_device_interface.html">DeviceInterface</a>&amp; dev, const <a class="code" href="namespacescore.html">score</a>::DocumentContext&amp; ctx, QWidget*)</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      = 0;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  virtual <a class="code" href="class_device_1_1_address_dialog.html">AddressDialog</a>* makeEditAddressDialog(</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      const <a class="code" href="namespace_device.html">Device</a>::<a class="code" href="struct_device_1_1_address_settings.html">AddressSettings</a>&amp;, const <a class="code" href="namespace_device.html">Device</a>::<a class="code" href="class_device_1_1_device_interface.html">DeviceInterface</a>&amp; dev,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      const <a class="code" href="namespacescore.html">score</a>::DocumentContext&amp; ctx, QWidget*)</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      = 0;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  virtual const <a class="code" href="namespace_device.html">Device</a>::<a class="code" href="struct_device_1_1_device_settings.html">DeviceSettings</a>&amp; defaultSettings() const noexcept = 0;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="comment">// Save</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  virtual <span class="keywordtype">void</span> serializeProtocolSpecificSettings(</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      const QVariant&amp; data, const <a class="code" href="struct_visitor_variant.html">VisitorVariant</a>&amp; visitor) const</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      = 0;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  template &lt;typename T&gt;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">void</span> serializeProtocolSpecificSettings_T(</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      const QVariant&amp; data, const <a class="code" href="struct_visitor_variant.html">VisitorVariant</a>&amp; visitor)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    score::serialize_dyn(visitor, data.value&lt;T&gt;());</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="comment">// Load</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keyword">virtual</span> QVariant makeProtocolSpecificSettings(<span class="keyword">const</span> <a class="code" href="struct_visitor_variant.html">VisitorVariant</a>&amp; visitor) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  QVariant makeProtocolSpecificSettings_T(<span class="keyword">const</span> <a class="code" href="struct_visitor_variant.html">VisitorVariant</a>&amp; vis)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">return</span> QVariant::fromValue(score::deserialize_dyn&lt;T&gt;(vis));</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  }</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="comment">// Returns true if the two devicesettings can coexist at the same time.</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> checkCompatibility(</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; a, <span class="keyword">const</span> <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; b) <span class="keyword">const</span> noexcept</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      = 0;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;};</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="class_uuid_key.html">UuidKey&lt;Device::ProtocolFactory&gt;</a>)</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="class_uuid_key.html">UuidKey&lt;Device::ProtocolFactory&gt;</a>)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> software = <span class="stringliteral">&quot;Software&quot;</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> lights = <span class="stringliteral">&quot;Lights&quot;</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> util = <span class="stringliteral">&quot;Utilities&quot;</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  };</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">enum</span> Flags</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    EditingReloadsEverything = (1 &lt;&lt; 0)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  };</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">virtual</span> Flags flags() const noexcept;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  virtual QString prettyName() const noexcept = 0;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  virtual QString category() const noexcept = 0;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  virtual <span class="keywordtype">int</span> visualPriority() const noexcept;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  virtual DeviceEnumerators getEnumerators(const <a class="code" href="namespacescore.html">score</a>::DocumentContext&amp; ctx) const;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  virtual <a class="code" href="class_device_1_1_device_interface.html">DeviceInterface</a>* makeDevice(</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      const <a class="code" href="namespace_device.html">Device</a>::<a class="code" href="struct_device_1_1_device_settings.html">DeviceSettings</a>&amp; settings,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      const Explorer::DeviceDocumentPlugin&amp; plugin, const <a class="code" href="namespacescore.html">score</a>::DocumentContext&amp; ctx)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      = 0;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  virtual <a class="code" href="class_device_1_1_protocol_settings_widget.html">ProtocolSettingsWidget</a>* makeSettingsWidget() = 0;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  virtual <a class="code" href="class_device_1_1_address_dialog.html">AddressDialog</a>* makeAddAddressDialog(</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      const <a class="code" href="namespace_device.html">Device</a>::<a class="code" href="class_device_1_1_device_interface.html">DeviceInterface</a>&amp; dev, const <a class="code" href="namespacescore.html">score</a>::DocumentContext&amp; ctx, QWidget*)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      = 0;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  virtual <a class="code" href="class_device_1_1_address_dialog.html">AddressDialog</a>* makeEditAddressDialog(</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      const <a class="code" href="namespace_device.html">Device</a>::<a class="code" href="struct_device_1_1_address_settings.html">AddressSettings</a>&amp;, const <a class="code" href="namespace_device.html">Device</a>::<a class="code" href="class_device_1_1_device_interface.html">DeviceInterface</a>&amp; dev,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      const <a class="code" href="namespacescore.html">score</a>::DocumentContext&amp; ctx, QWidget*)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      = 0;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  virtual const <a class="code" href="namespace_device.html">Device</a>::<a class="code" href="struct_device_1_1_device_settings.html">DeviceSettings</a>&amp; defaultSettings() const noexcept = 0;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="comment">// Save</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  virtual <span class="keywordtype">void</span> serializeProtocolSpecificSettings(</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      const QVariant&amp; data, const <a class="code" href="struct_visitor_variant.html">VisitorVariant</a>&amp; visitor) const</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      = 0;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  template &lt;typename T&gt;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">void</span> serializeProtocolSpecificSettings_T(</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      const QVariant&amp; data, const <a class="code" href="struct_visitor_variant.html">VisitorVariant</a>&amp; visitor)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    score::serialize_dyn(visitor, data.value&lt;T&gt;());</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="comment">// Load</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keyword">virtual</span> QVariant makeProtocolSpecificSettings(<span class="keyword">const</span> <a class="code" href="struct_visitor_variant.html">VisitorVariant</a>&amp; visitor) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  QVariant makeProtocolSpecificSettings_T(<span class="keyword">const</span> <a class="code" href="struct_visitor_variant.html">VisitorVariant</a>&amp; vis)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">return</span> QVariant::fromValue(score::deserialize_dyn&lt;T&gt;(vis));</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="comment">// Returns true if the two devicesettings can coexist at the same time.</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> checkCompatibility(</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; a, <span class="keyword">const</span> <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; b) <span class="keyword">const</span> noexcept</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      = 0;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;};</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="class_uuid_key.html">UuidKey&lt;Device::ProtocolFactory&gt;</a>)</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="class_uuid_key.html">UuidKey&lt;Device::ProtocolFactory&gt;</a>)</div>
 <div class="ttc" id="a_visitor_common_8hpp_html"><div class="ttname"><a href="_visitor_common_8hpp.html">VisitorCommon.hpp</a></div></div>
 <div class="ttc" id="aclass_device_1_1_address_dialog_html"><div class="ttname"><a href="class_device_1_1_address_dialog.html">Device::AddressDialog</a></div><div class="ttdef"><b>Definition:</b> ProtocolSettingsWidget.hpp:41</div></div>
 <div class="ttc" id="aclass_device_1_1_device_enumerator_html"><div class="ttname"><a href="class_device_1_1_device_enumerator.html">Device::DeviceEnumerator</a></div><div class="ttdef"><b>Definition:</b> ProtocolFactoryInterface.hpp:28</div></div>
