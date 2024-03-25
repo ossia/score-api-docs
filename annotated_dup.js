@@ -532,7 +532,6 @@ var annotated_dup =
       [ "GfxExecutionAction", "class_gfx_1_1_gfx_execution_action.html", "class_gfx_1_1_gfx_execution_action" ],
       [ "exec_control", "struct_gfx_1_1exec__control.html", "struct_gfx_1_1exec__control" ],
       [ "gfx_exec_node", "class_gfx_1_1gfx__exec__node.html", "class_gfx_1_1gfx__exec__node" ],
-      [ "control_updater", "struct_gfx_1_1control__updater.html", "struct_gfx_1_1control__updater" ],
       [ "con_unvalidated", "struct_gfx_1_1con__unvalidated.html", "struct_gfx_1_1con__unvalidated" ],
       [ "simple_texture_input_protocol", "class_gfx_1_1simple__texture__input__protocol.html", "class_gfx_1_1simple__texture__input__protocol" ],
       [ "simple_texture_input_parameter", "class_gfx_1_1simple__texture__input__parameter.html", "class_gfx_1_1simple__texture__input__parameter" ],

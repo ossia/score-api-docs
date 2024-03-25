@@ -599,7 +599,6 @@ var hierarchy =
       [ "Control::FloatDisplay< T >", "struct_control_1_1_float_display.html", null ],
       [ "Control::OutControl", "struct_control_1_1_out_control.html", null ]
     ] ],
-    [ "Gfx::control_updater", "struct_gfx_1_1control__updater.html", null ],
     [ "oscr::control_updater< ExecNode_T, T, ControlN >", "structoscr_1_1control__updater.html", null ],
     [ "ossia::control_surface_node::control_updater", "structossia_1_1control__surface__node_1_1control__updater.html", null ],
     [ "Dataflow::control_visitor", "struct_dataflow_1_1control__visitor.html", null ],
@@ -1111,9 +1110,7 @@ var hierarchy =
     [ "score::InfiniteScroller", "structscore_1_1_infinite_scroller.html", null ],
     [ "Inlet", null, [
       [ "AudioInlet", "class_audio_inlet.html", null ],
-      [ "ControlInlet", "class_control_inlet.html", null ],
-      [ "MidiInlet", "class_midi_inlet.html", null ],
-      [ "ValueInlet", "class_value_inlet.html", [
+      [ "ControlInlet", "class_control_inlet.html", [
         [ "Button", "class_button.html", null ],
         [ "Enum", "class_enum.html", null ],
         [ "FloatSlider", "class_float_slider.html", null ],
@@ -1121,7 +1118,9 @@ var hierarchy =
         [ "IntSlider", "class_int_slider.html", null ],
         [ "LineEdit", "class_line_edit.html", null ],
         [ "Toggle", "class_toggle.html", null ]
-      ] ]
+      ] ],
+      [ "MidiInlet", "class_midi_inlet.html", null ],
+      [ "ValueInlet", "class_value_inlet.html", null ]
     ] ],
     [ "AvndJit::inlet_vis", "struct_avnd_jit_1_1inlet__vis.html", null ],
     [ "Jit::inlet_vis", "struct_jit_1_1inlet__vis.html", null ],

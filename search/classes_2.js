@@ -108,7 +108,7 @@ var searchData=
   ['contextmenucallback_3109',['ContextMenuCallback',['../struct_scenario_1_1_context_menu_callback.html',1,'Scenario']]],
   ['control_3110',['Control',['../struct_pd_1_1_patch_spec_1_1_control.html',1,'Pd::PatchSpec']]],
   ['control_5fsurface_5fnode_3111',['control_surface_node',['../classossia_1_1control__surface__node.html',1,'ossia']]],
-  ['control_5fupdater_3112',['control_updater',['../struct_gfx_1_1control__updater.html',1,'Gfx::control_updater'],['../structoscr_1_1control__updater.html',1,'oscr::control_updater&lt; ExecNode_T, T, ControlN &gt;'],['../structossia_1_1control__surface__node_1_1control__updater.html',1,'ossia::control_surface_node::control_updater']]],
+  ['control_5fupdater_3112',['control_updater',['../structoscr_1_1control__updater.html',1,'oscr::control_updater&lt; ExecNode_T, T, ControlN &gt;'],['../structossia_1_1control__surface__node_1_1control__updater.html',1,'ossia::control_surface_node::control_updater']]],
   ['control_5fvisitor_3113',['control_visitor',['../struct_dataflow_1_1control__visitor.html',1,'Dataflow']]],
   ['controlinlet_3114',['ControlInlet',['../class_control_inlet.html',1,'ControlInlet'],['../class_process_1_1_control_inlet.html',1,'Process::ControlInlet'],['../classvst3_1_1_control_inlet.html',1,'vst3::ControlInlet'],['../classvst_1_1_control_inlet.html',1,'vst::ControlInlet']]],
   ['controlinletfactory_3115',['ControlInletFactory',['../struct_dataflow_1_1_control_inlet_factory.html',1,'Dataflow']]],
