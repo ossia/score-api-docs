@@ -462,83 +462,72 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_gpu_node
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="comment">// Apply the controls</span></div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; state : states)</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    {</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;      avnd::parameter_input_introspection&lt;Node_T&gt;::for_all_n2(</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;          avnd::get_inputs&lt;Node_T&gt;(state),</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;          [&amp;](avnd::parameter <span class="keyword">auto</span>&amp; t, <span class="keyword">auto</span> pred_index, <span class="keyword">auto</span> field_index) {</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        <span class="keyword">auto</span>&amp; mess = this-&gt;parent.last_message;</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        <span class="keywordflow">if</span>(mess.input.size() &gt; field_index)</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        {</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;          if(auto val = ossia::get_if&lt;ossia::value&gt;(&amp;mess.input[field_index]))</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;          {</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;            oscr::from_ossia_value(t, *val, t.value);</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;          }</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        }</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;          });</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    }</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  }</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160; </div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;  <span class="keywordtype">void</span> runRenderPass(</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;      <a class="code" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer, QRhiCommandBuffer&amp; commands,</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;      <a class="code" href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a>&amp; edge)<span class="keyword"> override</span></div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="keyword">auto</span>&amp; mesh = renderer.<a class="code" href="classscore_1_1gfx_1_1_render_list.html#a907a2553f670adbc76fe64bb4ac7f37a">defaultTriangle</a>();</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    score::gfx::defaultRenderPass(</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        renderer, mesh, {m_meshBuffer, m_idxBuffer}, commands, edge, m_p);</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160; </div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="comment">// Copy the data to the model node</span></div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="keywordflow">if</span>(!this-&gt;states.empty())</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;      parent.processControlOut(this-&gt;states[0]);</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  }</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;};</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160; </div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160; </div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node_T&gt;</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="keyword">struct </span>CustomGpuNode final : CustomGpuNodeBase</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;{</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  CustomGpuNode(</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;      std::weak_ptr&lt;Execution::ExecutionCommandQueue&gt; q, Gfx::exec_controls ctls, <span class="keywordtype">int</span> <span class="keywordtype">id</span>)</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;      : CustomGpuNodeBase{std::move(q), std::move(ctls)}</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;  {</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    this-&gt;instance = id;</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160; </div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <span class="keyword">using</span> texture_inputs = avnd::gpu_sampler_introspection&lt;Node_T&gt;;</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <span class="keyword">using</span> texture_outputs = avnd::gpu_attachment_introspection&lt;Node_T&gt;;</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160; </div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; texture_inputs::size; i++)</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    {</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;      input.push_back(<span class="keyword">new</span> <a class="code" href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a>{<span class="keyword">this</span>, {}, score::gfx::Types::Image, {}});</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    }</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; texture_outputs::size; i++)</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    {</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;      output.push_back(<span class="keyword">new</span> <a class="code" href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a>{<span class="keyword">this</span>, {}, score::gfx::Types::Image, {}});</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    }</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160; </div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <span class="keyword">using</span> layout = <span class="keyword">typename</span> Node_T::layout;</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    <span class="keyword">static</span> constexpr <span class="keyword">auto</span> lay = layout{};</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160; </div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    gpp::qrhi::generate_shaders gen;</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <span class="keywordflow">if</span> constexpr(requires { &amp;Node_T::vertex; })</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    {</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;      vertex = QString::fromStdString(gen.vertex_shader(lay) + Node_T{}.vertex().data());</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    }</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    {</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;      vertex = gpp::qrhi::DefaultPipeline::vertex();</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    }</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;      this-&gt;parent.processControlIn(state, this-&gt;parent.last_message);</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    }</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;  }</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160; </div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  <span class="keywordtype">void</span> runRenderPass(</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;      <a class="code" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer, QRhiCommandBuffer&amp; commands,</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;      <a class="code" href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a>&amp; edge)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="keyword">auto</span>&amp; mesh = renderer.<a class="code" href="classscore_1_1gfx_1_1_render_list.html#a907a2553f670adbc76fe64bb4ac7f37a">defaultTriangle</a>();</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    score::gfx::defaultRenderPass(</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        renderer, mesh, {m_meshBuffer, m_idxBuffer}, commands, edge, m_p);</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160; </div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <span class="comment">// Copy the data to the model node</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <span class="keywordflow">if</span>(!this-&gt;states.empty())</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;      parent.processControlOut(this-&gt;states[0]);</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;  }</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;};</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160; </div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160; </div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node_T&gt;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="keyword">struct </span>CustomGpuNode final : CustomGpuNodeBase</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;{</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  CustomGpuNode(</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;      std::weak_ptr&lt;Execution::ExecutionCommandQueue&gt; q, Gfx::exec_controls ctls, <span class="keywordtype">int</span> <span class="keywordtype">id</span>)</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;      : CustomGpuNodeBase{std::move(q), std::move(ctls)}</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;  {</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    this-&gt;instance = id;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160; </div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <span class="keyword">using</span> texture_inputs = avnd::gpu_sampler_introspection&lt;Node_T&gt;;</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="keyword">using</span> texture_outputs = avnd::gpu_attachment_introspection&lt;Node_T&gt;;</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160; </div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; texture_inputs::size; i++)</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    {</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;      input.push_back(<span class="keyword">new</span> <a class="code" href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a>{<span class="keyword">this</span>, {}, score::gfx::Types::Image, {}});</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    }</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; texture_outputs::size; i++)</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    {</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;      output.push_back(<span class="keyword">new</span> <a class="code" href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a>{<span class="keyword">this</span>, {}, score::gfx::Types::Image, {}});</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    }</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160; </div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <span class="keyword">using</span> layout = <span class="keyword">typename</span> Node_T::layout;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="keyword">static</span> constexpr <span class="keyword">auto</span> lay = layout{};</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160; </div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    gpp::qrhi::generate_shaders gen;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="keywordflow">if</span> constexpr(requires { &amp;Node_T::vertex; })</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    {</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;      vertex = QString::fromStdString(gen.vertex_shader(lay) + Node_T{}.vertex().data());</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    }</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    {</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;      vertex = gpp::qrhi::DefaultPipeline::vertex();</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    }</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160; </div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    fragment</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;        = QString::fromStdString(gen.fragment_shader(lay) + Node_T{}.fragment().data());</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;  }</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160; </div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>*</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;  createRenderer(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; r) <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;  {</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> CustomGpuRenderer&lt;Node_T&gt;{*<span class="keyword">this</span>};</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;  }</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;};</div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160; </div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    fragment</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;        = QString::fromStdString(gen.fragment_shader(lay) + Node_T{}.fragment().data());</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;  }</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160; </div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>*</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;  createRenderer(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; r) <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;  {</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> CustomGpuRenderer&lt;Node_T&gt;{*<span class="keyword">this</span>};</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;  }</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;};</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160; </div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;}</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;}</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdoc">Renderer for a given node.</div><div class="ttdef"><b>Definition:</b> NodeRenderer.hpp:11</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition:</b> RenderList.hpp:19</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html_a1c3daff52bd2d2231609696d5a3c7cd5"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html#a1c3daff52bd2d2231609696d5a3c7cd5">score::gfx::RenderList::initMeshBuffer</a></div><div class="ttdeci">MeshBuffers initMeshBuffer(const Mesh &amp;mesh, QRhiResourceUpdateBatch &amp;res)</div><div class="ttdoc">Create buffers for a mesh and mark them for upload.</div><div class="ttdef"><b>Definition:</b> RenderList.cpp:39</div></div>

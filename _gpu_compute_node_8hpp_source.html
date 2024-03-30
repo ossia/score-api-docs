@@ -479,71 +479,58 @@ $(document).ready(function(){initNavTree('_gpu_compute_node_8hpp_source.html',''
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <span class="comment">// m_last_time = parent.last_message.token.date;</span></div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160; </div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="comment">// Apply the controls</span></div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    {</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;      avnd::parameter_input_introspection&lt;Node_T&gt;::for_all_n2(</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;          avnd::get_inputs&lt;Node_T&gt;(state),</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;          [&amp;](avnd::parameter <span class="keyword">auto</span>&amp; t, <span class="keyword">auto</span> pred_index, <span class="keyword">auto</span> field_index) {</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        <span class="keyword">auto</span>&amp; mess = this-&gt;parent.last_message;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        <span class="keywordflow">if</span>(mess.input.size() &gt; field_index)</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        {</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;          if(auto val = ossia::get_if&lt;ossia::value&gt;(&amp;mess.input[field_index]))</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;          {</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;            oscr::from_ossia_value(t, *val, t.value);</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;          }</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        }</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;          });</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    parent.processControlIn(this-&gt;state, this-&gt;parent.last_message);</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160; </div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="comment">// Run the compute shader</span></div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    {</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;      SCORE_ASSERT(this-&gt;m_pipeline);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;      SCORE_ASSERT(this-&gt;m_pipeline-&gt;shaderResourceBindings());</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; promise : this-&gt;state.dispatch())</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;      {</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        <span class="keyword">using</span> ret_type = decltype(promise.feedback_value);</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        gpp::qrhi::handle_dispatch&lt;GpuComputeRenderer, ret_type&gt; handler{</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;            *<span class="keyword">this</span>, *renderer.<a class="code" href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">state</a>.rhi, cb, res, *this-&gt;m_pipeline};</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        promise.feedback_value = visit(handler, promise.current_command);</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;      }</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    }</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160; </div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <span class="comment">// Run the compute shader</span></div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    {</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;      SCORE_ASSERT(this-&gt;m_pipeline);</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;      SCORE_ASSERT(this-&gt;m_pipeline-&gt;shaderResourceBindings());</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; promise : this-&gt;state.dispatch())</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;      {</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        <span class="keyword">using</span> ret_type = decltype(promise.feedback_value);</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        gpp::qrhi::handle_dispatch&lt;GpuComputeRenderer, ret_type&gt; handler{</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;            *<span class="keyword">this</span>, *renderer.<a class="code" href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">state</a>.rhi, cb, res, *this-&gt;m_pipeline};</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        promise.feedback_value = visit(handler, promise.current_command);</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;      }</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    }</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160; </div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="comment">// Clear the readbacks</span></div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="preprocessor">#if QT_VERSION &lt; QT_VERSION_CHECK(6, 6, 0)</span></div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> rb : this-&gt;bufReadbacks)</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;      <span class="keyword">delete</span> rb;</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    this-&gt;bufReadbacks.clear();</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> rb : this-&gt;texReadbacks)</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;      <span class="keyword">delete</span> rb;</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    this-&gt;texReadbacks.clear();</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160; </div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <span class="comment">// Copy the data to the model node</span></div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    parent.processControlOut(this-&gt;state);</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <span class="comment">// Clear the readbacks</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="preprocessor">#if QT_VERSION &lt; QT_VERSION_CHECK(6, 6, 0)</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> rb : this-&gt;bufReadbacks)</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;      <span class="keyword">delete</span> rb;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    this-&gt;bufReadbacks.clear();</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> rb : this-&gt;texReadbacks)</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;      <span class="keyword">delete</span> rb;</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    this-&gt;texReadbacks.clear();</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160; </div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="comment">// Copy the data to the model node</span></div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    parent.processControlOut(this-&gt;state);</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;  }</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160; </div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;  <span class="keywordtype">void</span> runInitialPasses(</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;      <a class="code" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer, QRhiCommandBuffer&amp; cb,</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;      QRhiResourceUpdateBatch*&amp; res, <a class="code" href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a>&amp; edge)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    runCompute(renderer, cb, res);</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;  }</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160; </div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  <span class="keywordtype">void</span> runRenderPass(</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;      <a class="code" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer, QRhiCommandBuffer&amp; commands,</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;      <a class="code" href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a>&amp; edge)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="keyword">  </span>{</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;  }</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160; </div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;  <span class="keywordtype">void</span> runInitialPasses(</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;      <a class="code" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer, QRhiCommandBuffer&amp; cb,</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;      QRhiResourceUpdateBatch*&amp; res, <a class="code" href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a>&amp; edge)<span class="keyword"> override</span></div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    runCompute(renderer, cb, res);</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;  }</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160; </div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;  <span class="keywordtype">void</span> runRenderPass(</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;      <a class="code" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer, QRhiCommandBuffer&amp; commands,</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;      <a class="code" href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a>&amp; edge)<span class="keyword"> override</span></div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;  }</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;};</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160; </div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node_T&gt;</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="keyword">inline</span> <a class="code" href="classscore_1_1gfx_1_1_output_node_renderer.html">score::gfx::OutputNodeRenderer</a>*</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;GpuComputeNode&lt;Node_T&gt;::createRenderer(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; r) <span class="keyword">const</span> noexcept</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;{</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">new</span> GpuComputeRenderer&lt;Node_T&gt;{*<span class="keyword">this</span>};</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;};</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160; </div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;}</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;};</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160; </div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node_T&gt;</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="keyword">inline</span> <a class="code" href="classscore_1_1gfx_1_1_output_node_renderer.html">score::gfx::OutputNodeRenderer</a>*</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;GpuComputeNode&lt;Node_T&gt;::createRenderer(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; r) <span class="keyword">const</span> noexcept</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;{</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">new</span> GpuComputeRenderer&lt;Node_T&gt;{*<span class="keyword">this</span>};</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;};</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160; </div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;}</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdoc">Renderer for a given node.</div><div class="ttdef"><b>Definition:</b> NodeRenderer.hpp:11</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node_renderer.html">score::gfx::OutputNodeRenderer</a></div><div class="ttdef"><b>Definition:</b> OutputNode.hpp:11</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition:</b> RenderList.hpp:19</div></div>
