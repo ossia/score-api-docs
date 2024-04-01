@@ -644,6 +644,7 @@ var hierarchy =
     [ "DefaultRollbackStrategy", "struct_default_rollback_strategy.html", null ],
     [ "score::gfx::DefaultShaderMaterial", "structscore_1_1gfx_1_1_default_shader_material.html", null ],
     [ "score::delete_later< T >", "structscore_1_1delete__later.html", null ],
+    [ "Gfx::DemuxerInfo", "struct_gfx_1_1_demuxer_info.html", null ],
     [ "score::detail::dereference_visitor< T >", "structscore_1_1detail_1_1dereference__visitor.html", null ],
     [ "Description_k", "class_description__k.html", null ],
     [ "Process::Descriptor", "struct_process_1_1_descriptor.html", null ],
@@ -717,7 +718,10 @@ var hierarchy =
     [ "Scenario::ElementTraits< Scenario::ScenarioInterface, StateModel >", "struct_scenario_1_1_element_traits_3_01_scenario_1_1_scenario_interface_00_01_state_model_01_4.html", null ],
     [ "Scenario::ElementTraits< Scenario::ScenarioInterface, TimeSyncModel >", "struct_scenario_1_1_element_traits_3_01_scenario_1_1_scenario_interface_00_01_time_sync_model_01_4.html", null ],
     [ "std::enable_shared_from_this", null, [
-      [ "Execution::ProcessComponent", "class_execution_1_1_process_component.html", null ]
+      [ "Execution::ProcessComponent", "class_execution_1_1_process_component.html", null ],
+      [ "Gfx::CameraDeviceEnumerator", "struct_gfx_1_1_camera_device_enumerator.html", [
+        [ "Gfx::V4L2CameraDeviceEnumerator", "struct_gfx_1_1_v4_l2_camera_device_enumerator.html", null ]
+      ] ]
     ] ],
     [ "score::EnableWhenDocumentIs< T >", "classscore_1_1_enable_when_document_is.html", null ],
     [ "score::EnableWhenFocusedObjectIs< T >", "classscore_1_1_enable_when_focused_object_is.html", null ],
@@ -1075,8 +1079,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1988,8 +1992,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Patternist::ProcessModel >", "class_path.html", null ],
@@ -2665,8 +2669,10 @@ var hierarchy =
       [ "Dataflow::PortItem", "class_dataflow_1_1_port_item.html", null ],
       [ "Device::DeviceEnumerator", "class_device_1_1_device_enumerator.html", [
         [ "Gfx::CameraEnumerator", "class_gfx_1_1_camera_enumerator.html", null ],
+        [ "Gfx::CustomCameraEnumerator", "class_gfx_1_1_custom_camera_enumerator.html", null ],
         [ "Gfx::Kinect2::Kinect2Enumerator", "class_gfx_1_1_kinect2_1_1_kinect2_enumerator.html", null ],
         [ "Gfx::Spout::SpoutEnumerator", "class_gfx_1_1_spout_1_1_spout_enumerator.html", null ],
+        [ "Gfx::V4L2CameraEnumerator", "struct_gfx_1_1_v4_l2_camera_enumerator.html", null ],
         [ "Protocols::DNSSDEnumerator", "class_protocols_1_1_d_n_s_s_d_enumerator.html", null ],
         [ "Protocols::JoystickEnumerator", "class_protocols_1_1_joystick_enumerator.html", null ],
         [ "Protocols::LibmapperClientEnumerator", "class_protocols_1_1_libmapper_client_enumerator.html", null ],

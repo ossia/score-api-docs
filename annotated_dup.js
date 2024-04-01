@@ -518,9 +518,13 @@ var annotated_dup =
         [ "View", "class_gfx_1_1_video_1_1_view.html", "class_gfx_1_1_video_1_1_view" ]
       ] ],
       [ "CameraEnumerator", "class_gfx_1_1_camera_enumerator.html", "class_gfx_1_1_camera_enumerator" ],
+      [ "CustomCameraEnumerator", "class_gfx_1_1_custom_camera_enumerator.html", "class_gfx_1_1_custom_camera_enumerator" ],
+      [ "CameraSettingsWidget", "class_gfx_1_1_camera_settings_widget.html", "class_gfx_1_1_camera_settings_widget" ],
       [ "CameraProtocolFactory", "class_gfx_1_1_camera_protocol_factory.html", null ],
       [ "CameraDevice", "class_gfx_1_1_camera_device.html", "class_gfx_1_1_camera_device" ],
-      [ "CameraSettingsWidget", "class_gfx_1_1_camera_settings_widget.html", "class_gfx_1_1_camera_settings_widget" ],
+      [ "V4L2CameraEnumerator", "struct_gfx_1_1_v4_l2_camera_enumerator.html", "struct_gfx_1_1_v4_l2_camera_enumerator" ],
+      [ "V4L2CameraDeviceEnumerator", "struct_gfx_1_1_v4_l2_camera_device_enumerator.html", "struct_gfx_1_1_v4_l2_camera_device_enumerator" ],
+      [ "CameraDeviceEnumerator", "struct_gfx_1_1_camera_device_enumerator.html", "struct_gfx_1_1_camera_device_enumerator" ],
       [ "CameraSettings", "struct_gfx_1_1_camera_settings.html", "struct_gfx_1_1_camera_settings" ],
       [ "ShaderPreviewWidget", "class_gfx_1_1_shader_preview_widget.html", "class_gfx_1_1_shader_preview_widget" ],
       [ "ChangeShader", "class_gfx_1_1_change_shader.html", null ],
@@ -555,10 +559,6 @@ var annotated_dup =
       [ "FltPAudioFrameEncoder", "struct_gfx_1_1_flt_p_audio_frame_encoder.html", "struct_gfx_1_1_flt_p_audio_frame_encoder" ],
       [ "LibavEncoder", "struct_gfx_1_1_libav_encoder.html", "struct_gfx_1_1_libav_encoder" ],
       [ "LibavEncoderNode", "struct_gfx_1_1_libav_encoder_node.html", "struct_gfx_1_1_libav_encoder_node" ],
-      [ "ACodecInfo", "struct_gfx_1_1_a_codec_info.html", "struct_gfx_1_1_a_codec_info" ],
-      [ "VCodecInfo", "struct_gfx_1_1_v_codec_info.html", "struct_gfx_1_1_v_codec_info" ],
-      [ "MuxerInfo", "struct_gfx_1_1_muxer_info.html", "struct_gfx_1_1_muxer_info" ],
-      [ "LibavIntrospection", "struct_gfx_1_1_libav_introspection.html", "struct_gfx_1_1_libav_introspection" ],
       [ "record_audio_parameter", "class_gfx_1_1record__audio__parameter.html", "class_gfx_1_1record__audio__parameter" ],
       [ "libav_output_protocol", "class_gfx_1_1libav__output__protocol.html", "class_gfx_1_1libav__output__protocol" ],
       [ "libav_output_device", "class_gfx_1_1libav__output__device.html", "class_gfx_1_1libav__output__device" ],
@@ -598,7 +598,12 @@ var annotated_dup =
       [ "WindowOutputSettings", "struct_gfx_1_1_window_output_settings.html", "struct_gfx_1_1_window_output_settings" ],
       [ "WindowProtocolFactory", "class_gfx_1_1_window_protocol_factory.html", null ],
       [ "WindowDevice", "class_gfx_1_1_window_device.html", "class_gfx_1_1_window_device" ],
-      [ "WindowSettingsWidget", "class_gfx_1_1_window_settings_widget.html", "class_gfx_1_1_window_settings_widget" ]
+      [ "WindowSettingsWidget", "class_gfx_1_1_window_settings_widget.html", "class_gfx_1_1_window_settings_widget" ],
+      [ "ACodecInfo", "struct_gfx_1_1_a_codec_info.html", "struct_gfx_1_1_a_codec_info" ],
+      [ "VCodecInfo", "struct_gfx_1_1_v_codec_info.html", "struct_gfx_1_1_v_codec_info" ],
+      [ "DemuxerInfo", "struct_gfx_1_1_demuxer_info.html", "struct_gfx_1_1_demuxer_info" ],
+      [ "MuxerInfo", "struct_gfx_1_1_muxer_info.html", "struct_gfx_1_1_muxer_info" ],
+      [ "LibavIntrospection", "struct_gfx_1_1_libav_introspection.html", "struct_gfx_1_1_libav_introspection" ]
     ] ],
     [ "Gradient", null, [
       [ "RecreateOnPlay", null, [

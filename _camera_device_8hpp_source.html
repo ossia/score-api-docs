@@ -169,36 +169,20 @@ $(document).ready(function(){initNavTree('_camera_device_8hpp_source.html',''); 
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="class_gfx_1_1video__texture__input__protocol.html">Gfx::video_texture_input_protocol</a>* m_protocol{};</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">mutable</span> std::unique_ptr&lt;Gfx::video_texture_input_device&gt; m_dev;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_gfx_1_1_camera_settings_widget.html">   73</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_gfx_1_1_camera_settings_widget.html">CameraSettingsWidget</a> final : <span class="keyword">public</span> <a class="code" href="class_device_1_1_protocol_settings_widget.html">Device::ProtocolSettingsWidget</a></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="class_gfx_1_1_camera_settings_widget.html">CameraSettingsWidget</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> getSettings() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">void</span> setSettings(<span class="keyword">const</span> <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; settings) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">void</span> setDefaults();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  QLineEdit* m_deviceNameEdit{};</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> m_settings;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;SCORE_SERIALIZE_DATASTREAM_DECLARE(, <a class="code" href="struct_gfx_1_1_camera_settings.html">Gfx::CameraSettings</a>);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="struct_gfx_1_1_camera_settings.html">Gfx::CameraSettings</a>)</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="struct_gfx_1_1_camera_settings.html">Gfx::CameraSettings</a>)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;SCORE_SERIALIZE_DATASTREAM_DECLARE(, <a class="code" href="struct_gfx_1_1_camera_settings.html">Gfx::CameraSettings</a>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="struct_gfx_1_1_camera_settings.html">Gfx::CameraSettings</a>)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="struct_gfx_1_1_camera_settings.html">Gfx::CameraSettings</a>)</div>
 <div class="ttc" id="aclass_device_1_1_address_dialog_html"><div class="ttname"><a href="class_device_1_1_address_dialog.html">Device::AddressDialog</a></div><div class="ttdef"><b>Definition:</b> ProtocolSettingsWidget.hpp:41</div></div>
 <div class="ttc" id="aclass_device_1_1_device_interface_html"><div class="ttname"><a href="class_device_1_1_device_interface.html">Device::DeviceInterface</a></div><div class="ttdef"><b>Definition:</b> DeviceInterface.hpp:66</div></div>
-<div class="ttc" id="aclass_device_1_1_protocol_factory_html"><div class="ttname"><a href="class_device_1_1_protocol_factory.html">Device::ProtocolFactory</a></div><div class="ttdef"><b>Definition:</b> ProtocolFactoryInterface.hpp:42</div></div>
+<div class="ttc" id="aclass_device_1_1_protocol_factory_html"><div class="ttname"><a href="class_device_1_1_protocol_factory.html">Device::ProtocolFactory</a></div><div class="ttdef"><b>Definition:</b> ProtocolFactoryInterface.hpp:44</div></div>
 <div class="ttc" id="aclass_device_1_1_protocol_settings_widget_html"><div class="ttname"><a href="class_device_1_1_protocol_settings_widget.html">Device::ProtocolSettingsWidget</a></div><div class="ttdef"><b>Definition:</b> ProtocolSettingsWidget.hpp:22</div></div>
 <div class="ttc" id="aclass_gfx_1_1_camera_device_html"><div class="ttname"><a href="class_gfx_1_1_camera_device.html">Gfx::CameraDevice</a></div><div class="ttdef"><b>Definition:</b> CameraDevice.hpp:59</div></div>
 <div class="ttc" id="aclass_gfx_1_1_camera_protocol_factory_html"><div class="ttname"><a href="class_gfx_1_1_camera_protocol_factory.html">Gfx::CameraProtocolFactory</a></div><div class="ttdef"><b>Definition:</b> CameraDevice.hpp:27</div></div>
-<div class="ttc" id="aclass_gfx_1_1_camera_settings_widget_html"><div class="ttname"><a href="class_gfx_1_1_camera_settings_widget.html">Gfx::CameraSettingsWidget</a></div><div class="ttdef"><b>Definition:</b> CameraDevice.hpp:74</div></div>
 <div class="ttc" id="aclass_gfx_1_1_gfx_input_device_html"><div class="ttname"><a href="class_gfx_1_1_gfx_input_device.html">Gfx::GfxInputDevice</a></div><div class="ttdef"><b>Definition:</b> GfxDevice.hpp:14</div></div>
 <div class="ttc" id="aclass_gfx_1_1video__texture__input__protocol_html"><div class="ttname"><a href="class_gfx_1_1video__texture__input__protocol.html">Gfx::video_texture_input_protocol</a></div><div class="ttdef"><b>Definition:</b> GfxInputDevice.hpp:123</div></div>
-<div class="ttc" id="anamespace_gfx_html"><div class="ttname"><a href="namespace_gfx.html">Gfx</a></div><div class="ttdoc">Binds the rendering pipeline to ossia processes.</div><div class="ttdef"><b>Definition:</b> CameraDevice.cpp:23</div></div>
+<div class="ttc" id="anamespace_gfx_html"><div class="ttname"><a href="namespace_gfx.html">Gfx</a></div><div class="ttdoc">Binds the rendering pipeline to ossia processes.</div><div class="ttdef"><b>Definition:</b> CameraDevice.cpp:25</div></div>
 <div class="ttc" id="astruct_device_1_1_address_settings_html"><div class="ttname"><a href="struct_device_1_1_address_settings.html">Device::AddressSettings</a></div><div class="ttdef"><b>Definition:</b> AddressSettings.hpp:49</div></div>
 <div class="ttc" id="astruct_device_1_1_device_settings_html"><div class="ttname"><a href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a></div><div class="ttdef"><b>Definition:</b> DeviceSettings.hpp:16</div></div>
 <div class="ttc" id="astruct_gfx_1_1_camera_settings_html"><div class="ttname"><a href="struct_gfx_1_1_camera_settings.html">Gfx::CameraSettings</a></div><div class="ttdef"><b>Definition:</b> CameraSettings.hpp:8</div></div>

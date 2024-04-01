@@ -126,6 +126,7 @@ var files_dup =
     [ "CableInspector.hpp", "_cable_inspector_8hpp_source.html", null ],
     [ "CableItem.hpp", "_cable_item_8hpp_source.html", null ],
     [ "CameraDevice.hpp", "_camera_device_8hpp_source.html", null ],
+    [ "CameraDeviceEnumerator.hpp", "_camera_device_enumerator_8hpp_source.html", null ],
     [ "CameraInput.hpp", "_camera_input_8hpp_source.html", null ],
     [ "CameraSettings.hpp", "_camera_settings_8hpp_source.html", null ],
     [ "CentralIntervalDisplay.hpp", "_central_interval_display_8hpp_source.html", null ],
