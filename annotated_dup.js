@@ -64,6 +64,7 @@ var annotated_dup =
       [ "PatternSelector", "structavnd__tools_1_1_pattern_selector.html", "structavnd__tools_1_1_pattern_selector" ],
       [ "PatternUnfolder", "structavnd__tools_1_1_pattern_unfolder.html", "structavnd__tools_1_1_pattern_unfolder" ],
       [ "PatternCombiner", "structavnd__tools_1_1_pattern_combiner.html", "structavnd__tools_1_1_pattern_combiner" ],
+      [ "DeviceRecorder", "structavnd__tools_1_1_device_recorder.html", "structavnd__tools_1_1_device_recorder" ],
       [ "Spammer", "structavnd__tools_1_1_spammer.html", "structavnd__tools_1_1_spammer" ],
       [ "PatternSweeper", "structavnd__tools_1_1_pattern_sweeper.html", "structavnd__tools_1_1_pattern_sweeper" ]
     ] ],
@@ -1015,6 +1016,10 @@ var annotated_dup =
       [ "CustomControlFactory", "structoscr_1_1_custom_control_factory.html", null ],
       [ "CustomControlFactory< Node, avnd::field_reflection< N, Field > >", "structoscr_1_1_custom_control_factory_3_01_node_00_01avnd_1_1field__reflection_3_01_n_00_01_field_01_4_01_4.html", null ],
       [ "Logger", "structoscr_1_1_logger.html", "structoscr_1_1_logger" ],
+      [ "Protocol", "classoscr_1_1_protocol.html", "classoscr_1_1_protocol" ],
+      [ "DeviceImplementation", "classoscr_1_1_device_implementation.html", "classoscr_1_1_device_implementation" ],
+      [ "ProtocolSettingsWidget", "classoscr_1_1_protocol_settings_widget.html", "classoscr_1_1_protocol_settings_widget" ],
+      [ "ProtocolFactory", "classoscr_1_1_protocol_factory.html", null ],
       [ "CustomFloatControl", "structoscr_1_1_custom_float_control.html", "structoscr_1_1_custom_float_control" ],
       [ "CustomFloatControlBase", "structoscr_1_1_custom_float_control_base.html", "structoscr_1_1_custom_float_control_base" ],
       [ "multichannel_audio_view", "structoscr_1_1multichannel__audio__view.html", "structoscr_1_1multichannel__audio__view" ],

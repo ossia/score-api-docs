@@ -102,22 +102,29 @@ $(document).ready(function(){initNavTree('_library_widget_8hpp_source.html','');
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;QTreeView&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>Library</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span>LibraryInterface;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> setup_treeview(QTreeView&amp; tv)</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  tv.setHeaderHidden(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  tv.setDragEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  tv.setDropIndicatorShown(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  tv.setAlternatingRowColors(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  tv.setSelectionMode(QAbstractItemView::SingleSelection);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 1; i &lt; tv.model()-&gt;columnCount(); ++i)</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    tv.hideColumn(i);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;std::vector&lt;LibraryInterface*&gt; libraryInterface(<span class="keyword">const</span> QString&amp; path);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">class </span>QFileSystemModel;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>Library</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span>LibraryInterface;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span>FileSystemModel;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span>FileSystemRecursiveFilterProxy;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> setup_treeview(QTreeView&amp; tv)</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  tv.setHeaderHidden(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  tv.setDragEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  tv.setDropIndicatorShown(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  tv.setAlternatingRowColors(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  tv.setSelectionMode(QAbstractItemView::SingleSelection);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 1; i &lt; tv.model()-&gt;columnCount(); ++i)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    tv.hideColumn(i);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;std::vector&lt;LibraryInterface*&gt; libraryInterface(<span class="keyword">const</span> QString&amp; path);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">void</span> setupFilesystemContextMenu(</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    QTreeView&amp; m_tv, FileSystemModel&amp; model, FileSystemRecursiveFilterProxy&amp; proxy);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

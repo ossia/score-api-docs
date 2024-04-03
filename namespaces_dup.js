@@ -66,6 +66,7 @@ var namespaces_dup =
       [ "PatternSelector", "structavnd__tools_1_1_pattern_selector.html", "structavnd__tools_1_1_pattern_selector" ],
       [ "PatternUnfolder", "structavnd__tools_1_1_pattern_unfolder.html", "structavnd__tools_1_1_pattern_unfolder" ],
       [ "PatternCombiner", "structavnd__tools_1_1_pattern_combiner.html", "structavnd__tools_1_1_pattern_combiner" ],
+      [ "DeviceRecorder", "structavnd__tools_1_1_device_recorder.html", "structavnd__tools_1_1_device_recorder" ],
       [ "Spammer", "structavnd__tools_1_1_spammer.html", "structavnd__tools_1_1_spammer" ],
       [ "PatternSweeper", "structavnd__tools_1_1_pattern_sweeper.html", "structavnd__tools_1_1_pattern_sweeper" ]
     ] ],
@@ -560,7 +561,8 @@ var namespaces_dup =
       [ "ProcessNode", "_processes_item_model_8hpp.html#a24eb4ecfe3f0357840c616e47af767a9", null ],
       [ "addToLibrary", "_processes_item_model_8cpp.html#a889a2239e16fdf07682d3b3af3963937", null ],
       [ "libraryInterface", "_library_widget_8cpp.html#a6f0c52ecd9677003247e2affa40d1200", null ],
-      [ "setup_treeview", "_library_widget_8hpp.html#ad95479d228a82e2f120afa7c1d0f4ff8", null ]
+      [ "setup_treeview", "_library_widget_8hpp.html#ad95479d228a82e2f120afa7c1d0f4ff8", null ],
+      [ "setupFilesystemContextMenu", "_library_widget_8cpp.html#a7fad1036a585b6adb777150373ca9466", null ]
     ] ],
     [ "llvm_helper", null, [
       [ "Align", "_section_memory_manager_8hpp.html#a282efe648c69d4efa0d2018d6563cb0a", null ]
@@ -913,6 +915,10 @@ var namespaces_dup =
       [ "CustomControlFactory", "structoscr_1_1_custom_control_factory.html", null ],
       [ "CustomControlFactory< Node, avnd::field_reflection< N, Field > >", "structoscr_1_1_custom_control_factory_3_01_node_00_01avnd_1_1field__reflection_3_01_n_00_01_field_01_4_01_4.html", null ],
       [ "Logger", "structoscr_1_1_logger.html", "structoscr_1_1_logger" ],
+      [ "Protocol", "classoscr_1_1_protocol.html", "classoscr_1_1_protocol" ],
+      [ "DeviceImplementation", "classoscr_1_1_device_implementation.html", "classoscr_1_1_device_implementation" ],
+      [ "ProtocolSettingsWidget", "classoscr_1_1_protocol_settings_widget.html", "classoscr_1_1_protocol_settings_widget" ],
+      [ "ProtocolFactory", "classoscr_1_1_protocol_factory.html", null ],
       [ "CustomFloatControl", "structoscr_1_1_custom_float_control.html", "structoscr_1_1_custom_float_control" ],
       [ "CustomFloatControlBase", "structoscr_1_1_custom_float_control_base.html", "structoscr_1_1_custom_float_control_base" ],
       [ "multichannel_audio_view", "structoscr_1_1multichannel__audio__view.html", "structoscr_1_1multichannel__audio__view" ],

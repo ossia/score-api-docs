@@ -1079,8 +1079,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1184,7 +1184,8 @@ var hierarchy =
           [ "Protocols::OSCQueryProtocolFactory", "class_protocols_1_1_o_s_c_query_protocol_factory.html", null ],
           [ "Protocols::SerialProtocolFactory", "class_protocols_1_1_serial_protocol_factory.html", null ],
           [ "Protocols::WSProtocolFactory", "class_protocols_1_1_w_s_protocol_factory.html", null ],
-          [ "Protocols::WiimoteProtocolFactory", "class_protocols_1_1_wiimote_protocol_factory.html", null ]
+          [ "Protocols::WiimoteProtocolFactory", "class_protocols_1_1_wiimote_protocol_factory.html", null ],
+          [ "oscr::ProtocolFactory< Node >", "classoscr_1_1_protocol_factory.html", null ]
         ] ],
         [ "Protocols::MIDIInputProtocolFactory", "class_protocols_1_1_m_i_d_i_input_protocol_factory.html", null ],
         [ "Protocols::MIDIOutputProtocolFactory", "class_protocols_1_1_m_i_d_i_output_protocol_factory.html", null ],
@@ -1866,7 +1867,8 @@ var hierarchy =
           [ "Protocols::PhidgetDevice", "class_protocols_1_1_phidget_device.html", null ],
           [ "Protocols::SerialDevice", "class_protocols_1_1_serial_device.html", null ],
           [ "Protocols::WSDevice", "class_protocols_1_1_w_s_device.html", null ],
-          [ "Protocols::WiimoteDevice", "class_protocols_1_1_wiimote_device.html", null ]
+          [ "Protocols::WiimoteDevice", "class_protocols_1_1_wiimote_device.html", null ],
+          [ "oscr::DeviceImplementation< Node_T >", "classoscr_1_1_device_implementation.html", null ]
         ] ],
         [ "Gfx::GfxInputDevice", "class_gfx_1_1_gfx_input_device.html", [
           [ "Gfx::CameraDevice", "class_gfx_1_1_camera_device.html", null ],
@@ -2024,6 +2026,7 @@ var hierarchy =
     [ "score::PathInfo", "structscore_1_1_path_info.html", null ],
     [ "Patternist::Pattern", "struct_patternist_1_1_pattern.html", null ],
     [ "avnd_tools::PatternObject", "structavnd__tools_1_1_pattern_object.html", [
+      [ "avnd_tools::DeviceRecorder", "structavnd__tools_1_1_device_recorder.html", null ],
       [ "avnd_tools::PatternCombiner", "structavnd__tools_1_1_pattern_combiner.html", null ],
       [ "avnd_tools::PatternSweeper", "structavnd__tools_1_1_pattern_sweeper.html", null ],
       [ "avnd_tools::PatternUnfolder", "structavnd__tools_1_1_pattern_unfolder.html", null ],
@@ -2102,6 +2105,7 @@ var hierarchy =
     [ "PrettyName_k", "class_pretty_name__k.html", null ],
     [ "boost::spirit::traits::print_attribute_debug< Out, QString, Enable >", "structboost_1_1spirit_1_1traits_1_1print__attribute__debug_3_01_out_00_01_q_string_00_01_enable_01_4.html", null ],
     [ "Explorer::print_node_rec", "struct_explorer_1_1print__node__rec.html", null ],
+    [ "avnd_tools::DeviceRecorder::process_message", "structavnd__tools_1_1_device_recorder_1_1process__message.html", null ],
     [ "ProcessComponentBase_T", null, [
       [ "Process::GenericProcessComponent_T< ProcessComponentBase_T, Process_T >", "class_process_1_1_generic_process_component___t.html", [
         [ "Execution::ProcessComponent_T< vst::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
@@ -2226,7 +2230,8 @@ var hierarchy =
         [ "Gfx::libav_output_protocol", "class_gfx_1_1libav__output__protocol.html", null ]
       ] ],
       [ "Gfx::simple_texture_input_protocol", "class_gfx_1_1simple__texture__input__protocol.html", null ],
-      [ "Gfx::video_texture_input_protocol", "class_gfx_1_1video__texture__input__protocol.html", null ]
+      [ "Gfx::video_texture_input_protocol", "class_gfx_1_1video__texture__input__protocol.html", null ],
+      [ "oscr::Protocol< Node >", "classoscr_1_1_protocol.html", null ]
     ] ],
     [ "State::Pulse", "struct_state_1_1_pulse.html", null ],
     [ "boost::spirit::traits::push_back_container< QString, QChar >", "structboost_1_1spirit_1_1traits_1_1push__back__container_3_01_q_string_00_01_q_char_01_4.html", null ],
@@ -3250,7 +3255,8 @@ var hierarchy =
         [ "Protocols::PhidgetProtocolSettingsWidget", "class_protocols_1_1_phidget_protocol_settings_widget.html", null ],
         [ "Protocols::SerialProtocolSettingsWidget", "class_protocols_1_1_serial_protocol_settings_widget.html", null ],
         [ "Protocols::WSProtocolSettingsWidget", "class_protocols_1_1_w_s_protocol_settings_widget.html", null ],
-        [ "Protocols::WiimoteProtocolSettingsWidget", "class_protocols_1_1_wiimote_protocol_settings_widget.html", null ]
+        [ "Protocols::WiimoteProtocolSettingsWidget", "class_protocols_1_1_wiimote_protocol_settings_widget.html", null ],
+        [ "oscr::ProtocolSettingsWidget< Node >", "classoscr_1_1_protocol_settings_widget.html", null ]
       ] ],
       [ "EditableTable", "class_editable_table.html", null ],
       [ "Explorer::AddressSettingsWidget", "class_explorer_1_1_address_settings_widget.html", [
@@ -3375,6 +3381,7 @@ var hierarchy =
     [ "Recording::RecordData", "struct_recording_1_1_record_data.html", null ],
     [ "Recording::RecordedMessage", "struct_recording_1_1_recorded_message.html", null ],
     [ "Recording::Recorder", "class_recording_1_1_recorder.html", null ],
+    [ "avnd_tools::DeviceRecorder::recorder_thread", "structavnd__tools_1_1_device_recorder_1_1recorder__thread.html", null ],
     [ "Recording::RecordProvider", "struct_recording_1_1_record_provider.html", [
       [ "Recording::AutomationRecorder", "class_recording_1_1_automation_recorder.html", null ],
       [ "Recording::MessageRecorder", "class_recording_1_1_message_recorder.html", null ]
@@ -3391,6 +3398,8 @@ var hierarchy =
     [ "score::gfx::RenderState", "structscore_1_1gfx_1_1_render_state.html", null ],
     [ "Scenario::RequestOverlayMenuCallback", "struct_scenario_1_1_request_overlay_menu_callback.html", null ],
     [ "Video::Rescale", "class_video_1_1_rescale.html", null ],
+    [ "avnd_tools::DeviceRecorder::reset_message", "structavnd__tools_1_1_device_recorder_1_1reset__message.html", null ],
+    [ "avnd_tools::DeviceRecorder::reset_path_message", "structavnd__tools_1_1_device_recorder_1_1reset__path__message.html", null ],
     [ "score::RestorableDocument", "structscore_1_1_restorable_document.html", null ],
     [ "score::RightClickImpl", "structscore_1_1_right_click_impl.html", null ],
     [ "Analysis::RMS", "struct_analysis_1_1_r_m_s.html", null ],
