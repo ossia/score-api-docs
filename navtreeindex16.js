@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"class_faust_1_1_drop_handler.html":[12,0,16,3],
 "class_faust_1_1_edit_script.html":[12,0,16,0],
 "class_faust_1_1_library_handler.html":[12,0,16,2],
 "class_faust_d_s_p_1_1_executor.html":[12,0,17,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "class_gfx_1_1_kinect2_1_1kinect2__protocol.html#abfe420653a2a5e3caa0ee9e07de929e9":[12,0,18,2,3,0],
 "class_gfx_1_1_kinect2_1_1kinect2__protocol.html#ae02ddefad47f64947b2966b2e2427bea":[12,0,18,2,3,1],
 "class_gfx_1_1_kinect2_1_1kinect2__protocol.html#aefec5134c1e3f99b194f2cae4cf3497a":[12,0,18,2,3,8],
-"class_gfx_1_1_libav_output_device.html":[12,0,18,54],
-"class_gfx_1_1_libav_output_device.html#a4625168cb19aacc6687265205b343aad":[12,0,18,54,0]
+"class_gfx_1_1_libav_output_device.html":[12,0,18,54]
 };

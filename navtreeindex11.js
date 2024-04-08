@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"class_data_stream_writer.html#a416d1cfc5c9242c616ca99af46c00620":[12,0,97,172],
 "class_data_stream_writer.html#a41b90c5f0a82aafa0569a43ea26e46f8":[12,0,97,169],
 "class_data_stream_writer.html#a426787a06d6d20193a1de048eeb0e5c0":[12,0,97,139],
 "class_data_stream_writer.html#a450124ad4777ababfa29d276c5678094":[12,0,97,192],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "class_dataflow_1_1_clock_factory.html#a1ecfd8482c0dc69f1a4a6ce73c2ef4e4":[12,0,9,39,0],
 "class_dataflow_1_1_clock_factory.html#a8c77f7e6d3243d332cdd6af5ede385c8":[12,0,9,39,1],
 "class_dataflow_1_1_clock_factory.html#aaa4fd8a0c01841075a21244efe3806d0":[12,0,9,39,2],
-"class_dataflow_1_1_create_cable.html":[12,0,9,41],
-"class_dataflow_1_1_create_cable.html#a86004bab1cc3082e825e3716d3616123":[12,0,9,41,1]
+"class_dataflow_1_1_create_cable.html":[12,0,9,41]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"class_audio_1_1_jack_factory.html#aa005eb5c65effe1caab2d1042fd8f227":[12,0,1,8,9],
 "class_audio_1_1_jack_factory.html#ab72bcfe0137f11dc0d1aed7817f568a6":[12,0,1,8,1],
 "class_audio_1_1_jack_factory.html#acb984dea24cc861926e197ded7ddf5a8":[12,0,1,8,8],
 "class_audio_1_1_jack_factory.html#aeb4163ec2154ab04fd8d4233d6472af0":[12,0,1,8,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "class_control_surface_1_1_model.html#a0c1fca2f91600135b2d44951802d098e":[12,0,7,8,2],
 "class_control_surface_1_1_model.html#a1187f1a55d7e3548d3e9feaf634cb7b7":[12,0,7,8,1],
 "class_control_surface_1_1_model.html#a246434974cbeb5a9f106cd7dd5afe5a0":[12,0,7,8,8],
-"class_control_surface_1_1_model.html#a5325782dc9a98796821539eee2d35a64":[12,0,7,8,4],
-"class_control_surface_1_1_model.html#a53944595afdd61054cea3c9e681237be":[12,0,7,8,0]
+"class_control_surface_1_1_model.html#a5325782dc9a98796821539eee2d35a64":[12,0,7,8,4]
 };

@@ -88,6 +88,7 @@ var files_dup =
     [ "AudioOutletItem.hpp", "_audio_outlet_item_8hpp_source.html", null ],
     [ "AudioPortComboBox.hpp", "_audio_port_combo_box_8hpp_source.html", null ],
     [ "AudioPreviewExecutor.hpp", "_audio_preview_executor_8hpp_source.html", null ],
+    [ "AudioRecorder.hpp", "_audio_recorder_8hpp_source.html", null ],
     [ "AudioTick.hpp", "_audio_tick_8hpp_source.html", null ],
     [ "AutomatableFactory.hpp", "_automatable_factory_8hpp_source.html", null ],
     [ "AutomationColors.hpp", "_automation_colors_8hpp_source.html", null ],

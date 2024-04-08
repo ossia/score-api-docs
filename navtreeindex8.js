@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"class_control_surface_1_1_model.html#a53944595afdd61054cea3c9e681237be":[12,0,7,8,0],
 "class_control_surface_1_1_model.html#aad58f2326f6ea4e7e5fa4c26e114155d":[12,0,7,8,3],
 "class_control_surface_1_1_model.html#ac9eecf221cf8732d2de57d7e5d7c76d8":[12,0,7,8,6],
 "class_control_surface_1_1_model.html#ad74a0afebc21969741e25e94eec81ee1":[12,0,7,8,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "class_curve_1_1_point_view.html#a1fe8428e3e0abd500ebc2da003dac593":[12,0,8,41,4],
 "class_curve_1_1_point_view.html#a253123dedc5ad672106b695d69b1c330":[12,0,8,41,2],
 "class_curve_1_1_point_view.html#a5d56f5d8f347cbaa8f9f082b7228d8d0":[12,0,8,41,1],
-"class_curve_1_1_point_view.html#a6066e003771199320574fd37ac5c7e10":[12,0,8,41,11],
-"class_curve_1_1_point_view.html#a859888bcf03fed97df4599edf51f3367":[12,0,8,41,7]
+"class_curve_1_1_point_view.html#a6066e003771199320574fd37ac5c7e10":[12,0,8,41,11]
 };

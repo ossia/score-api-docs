@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"class_gfx_1_1_libav_output_device.html#a4625168cb19aacc6687265205b343aad":[12,0,18,54,0],
 "class_gfx_1_1_libav_output_device.html#ab3509b9db476a3919f2ff22e3c9ad9a3":[12,0,18,54,1],
 "class_gfx_1_1_libav_output_protocol_factory.html":[12,0,18,56],
 "class_gfx_1_1_libav_output_settings_widget.html":[12,0,18,55],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "class_gfx_1_1gfx__protocol__base.html#ae5caf39cba7bc45c0e0c61a1ab5458ec":[12,0,18,38,5],
 "class_gfx_1_1gfx__protocol__base.html#aebd07295d2dd2b2b227376f99b8535f7":[12,0,18,38,2],
 "class_gfx_1_1libav__output__device.html":[12,0,18,53],
-"class_gfx_1_1libav__output__device.html#a59ff227a30fd7bb99cf019e757f03afe":[12,0,18,53,2],
-"class_gfx_1_1libav__output__device.html#a76cd672528954335b44b70334a849f37":[12,0,18,53,0]
+"class_gfx_1_1libav__output__device.html#a59ff227a30fd7bb99cf019e757f03afe":[12,0,18,53,2]
 };

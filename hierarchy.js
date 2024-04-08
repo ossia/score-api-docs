@@ -113,6 +113,7 @@ var hierarchy =
       [ "Gfx::S32IAudioFrameEncoder", "struct_gfx_1_1_s32_i_audio_frame_encoder.html", null ]
     ] ],
     [ "Media::AudioInfo", "struct_media_1_1_audio_info.html", null ],
+    [ "avnd_tools::AudioRecorder", "structavnd__tools_1_1_audio_recorder.html", null ],
     [ "score::gfx::AudioTexture", "structscore_1_1gfx_1_1_audio_texture.html", null ],
     [ "score::gfx::AudioTextureUpload", "structscore_1_1gfx_1_1_audio_texture_upload.html", null ],
     [ "ControlSurface::NodeObserver< Identifier, Func >::AvailableNode", "struct_control_surface_1_1_node_observer_1_1_available_node.html", null ],
@@ -2105,6 +2106,7 @@ var hierarchy =
     [ "PrettyName_k", "class_pretty_name__k.html", null ],
     [ "boost::spirit::traits::print_attribute_debug< Out, QString, Enable >", "structboost_1_1spirit_1_1traits_1_1print__attribute__debug_3_01_out_00_01_q_string_00_01_enable_01_4.html", null ],
     [ "Explorer::print_node_rec", "struct_explorer_1_1print__node__rec.html", null ],
+    [ "avnd_tools::AudioRecorder::process_message", "structavnd__tools_1_1_audio_recorder_1_1process__message.html", null ],
     [ "avnd_tools::DeviceRecorder::process_message", "structavnd__tools_1_1_device_recorder_1_1process__message.html", null ],
     [ "ProcessComponentBase_T", null, [
       [ "Process::GenericProcessComponent_T< ProcessComponentBase_T, Process_T >", "class_process_1_1_generic_process_component___t.html", [
@@ -3381,6 +3383,7 @@ var hierarchy =
     [ "Recording::RecordData", "struct_recording_1_1_record_data.html", null ],
     [ "Recording::RecordedMessage", "struct_recording_1_1_recorded_message.html", null ],
     [ "Recording::Recorder", "class_recording_1_1_recorder.html", null ],
+    [ "avnd_tools::AudioRecorder::recorder_thread", "structavnd__tools_1_1_audio_recorder_1_1recorder__thread.html", null ],
     [ "avnd_tools::DeviceRecorder::recorder_thread", "structavnd__tools_1_1_device_recorder_1_1recorder__thread.html", null ],
     [ "Recording::RecordProvider", "struct_recording_1_1_record_provider.html", [
       [ "Recording::AutomationRecorder", "class_recording_1_1_automation_recorder.html", null ],
@@ -3398,6 +3401,7 @@ var hierarchy =
     [ "score::gfx::RenderState", "structscore_1_1gfx_1_1_render_state.html", null ],
     [ "Scenario::RequestOverlayMenuCallback", "struct_scenario_1_1_request_overlay_menu_callback.html", null ],
     [ "Video::Rescale", "class_video_1_1_rescale.html", null ],
+    [ "avnd_tools::AudioRecorder::reset_message", "structavnd__tools_1_1_audio_recorder_1_1reset__message.html", null ],
     [ "avnd_tools::DeviceRecorder::reset_message", "structavnd__tools_1_1_device_recorder_1_1reset__message.html", null ],
     [ "avnd_tools::DeviceRecorder::reset_path_message", "structavnd__tools_1_1_device_recorder_1_1reset__path__message.html", null ],
     [ "score::RestorableDocument", "structscore_1_1_restorable_document.html", null ],

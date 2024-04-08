@@ -1,5 +1,6 @@
 var NAVTREEINDEX74 =
 {
+"struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01_t_01_5_00_01_alloc_01_4_01_4.html":[12,0,339],
 "struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01bool_01_4_01_4.html":[12,0,338],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[12,0,352],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html#a7582390e1429d056f975b2261f99d1dd":[12,0,352,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX74 =
 "struct_widget_factory_1_1_combo_box.html":[12,0,59,21],
 "struct_widget_factory_1_1_enum.html":[12,0,59,20],
 "struct_widget_factory_1_1_file_chooser.html":[12,0,59,19],
-"struct_widget_factory_1_1_fixed_normalizer.html":[12,0,59,2],
-"struct_widget_factory_1_1_fixed_normalizer.html#a1323e7d345f4e34cc150d6f2fe1014cb":[12,0,59,2,1]
+"struct_widget_factory_1_1_fixed_normalizer.html":[12,0,59,2]
 };

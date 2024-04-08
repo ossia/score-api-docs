@@ -1,5 +1,6 @@
 var NAVTREEINDEX22 =
 {
+"class_library_1_1_preset_library_handler.html#a635af835e7873d36573945da2c2755f1":[12,0,27,20,4],
 "class_library_1_1_preset_library_handler.html#afe73231be9a7cf1d3d2bc5662deebd10":[12,0,27,20,3],
 "class_library_1_1_preset_list_view.html":[12,0,27,14],
 "class_library_1_1_preset_list_view.html#a3abafdac728241cf35e73ecf9e16ed5e":[12,0,27,14,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX22 =
 "class_media_1_1_load_processed_audio_file.html":[12,0,31,12],
 "class_media_1_1_load_processed_audio_file.html#a16550795d256dbfa15a9b04f19982973":[12,0,31,12,0],
 "class_media_1_1_load_processed_audio_file.html#a30288f7c53e7a2bdb876926955bb96be":[12,0,31,12,1],
-"class_media_1_1_merger_1_1_inspector_factory.html":[12,0,31,0,1],
-"class_media_1_1_merger_1_1_inspector_widget.html":[12,0,31,0,0]
+"class_media_1_1_merger_1_1_inspector_factory.html":[12,0,31,0,1]
 };

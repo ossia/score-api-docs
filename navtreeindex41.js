@@ -1,5 +1,6 @@
 var NAVTREEINDEX41 =
 {
+"class_scenario_1_1_tool_base.html#a1920e464b103c67ab685327fbb62f642":[12,0,47,240,1],
 "class_scenario_1_1_tool_base.html#a1d1c196538da97aa762f6715cbdf0365":[12,0,47,240,0],
 "class_scenario_1_1_tool_base.html#aa60fe330c1e1479e2b32c8560a2023d3":[12,0,47,240,2],
 "class_scenario_1_1_tool_menu_actions.html":[12,0,47,31],
@@ -248,6 +249,5 @@ var NAVTREEINDEX41 =
 "class_spline_1_1_curve_item.html#ac96be78927682ca9144fb91bc0191544":[12,0,50,5,39],
 "class_spline_1_1_curve_item.html#acb0c1ffd2c44e68e8ee3d2ab7a9c426b":[12,0,50,5,2],
 "class_spline_1_1_curve_item.html#ad62138b379369c408e201f23108b3c24":[12,0,50,5,6],
-"class_spline_1_1_curve_item.html#ae148f567a57e13e5c1da636dfdf71eab":[12,0,50,5,21],
-"class_spline_1_1_curve_item.html#ae6df2047ebc920b6ab5d239c1d509ef8":[12,0,50,5,35]
+"class_spline_1_1_curve_item.html#ae148f567a57e13e5c1da636dfdf71eab":[12,0,50,5,21]
 };

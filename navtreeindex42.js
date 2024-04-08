@@ -1,5 +1,6 @@
 var NAVTREEINDEX42 =
 {
+"class_spline_1_1_curve_item.html#ae6df2047ebc920b6ab5d239c1d509ef8":[12,0,50,5,35],
 "class_spline_1_1_curve_item.html#aeab7d5b0281a15bb642c23a81b575426":[12,0,50,5,17],
 "class_spline_1_1_curve_item.html#af411e10ca4e1a52d48fed9801777235a":[12,0,50,5,29],
 "class_spline_1_1_curve_item.html#af84e9d8fe398dacec9f2c4450107fb59":[12,0,50,5,40],
@@ -248,6 +249,5 @@ var NAVTREEINDEX42 =
 "class_tree_node.html#ab9925830e694379003f87d8b6748ce0a":[12,0,289,31],
 "class_tree_node.html#abaed2f54b37910f2ed382eb376a64de9":[12,0,289,2],
 "class_tree_node.html#ad026b43b7e4f24344ca376e5a4fb912d":[12,0,289,1],
-"class_tree_node.html#ad6c722ced03e5a342024541b767ac80e":[12,0,289,14],
-"class_tree_node.html#adb15ec48b45dff535c72af28ccbbc7f1":[12,0,289,20]
+"class_tree_node.html#ad6c722ced03e5a342024541b767ac80e":[12,0,289,14]
 };

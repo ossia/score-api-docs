@@ -1,5 +1,6 @@
 var NAVTREEINDEX70 =
 {
+"struct_process_1_1_style.html#a5f7a51c28e6a257bcecbe0a5ba6605b6":[12,0,41,91,85],
 "struct_process_1_1_style.html#a60103626c0e693009fe575816d5f9909":[12,0,41,91,83],
 "struct_process_1_1_style.html#a62d9452ae0cb837133b0cf5a155fca58":[12,0,41,91,21],
 "struct_process_1_1_style.html#a6368149125c0823b7b4005cd6e01e1a3":[12,0,41,91,40],
@@ -84,11 +85,11 @@ var NAVTREEINDEX70 =
 "struct_protocols_1_1_artnet_1_1_range_capability.html#ac9ceade681882eab6953a7ccc54b1588":[12,0,42,0,2,0],
 "struct_protocols_1_1_artnet_1_1_single_capability.html":[12,0,42,0,1],
 "struct_protocols_1_1_artnet_specific_settings.html":[12,0,42,20],
+"struct_protocols_1_1_artnet_specific_settings.html#a2d01f11f029f8a1195015fda37eca4f9":[12,0,42,20,3],
 "struct_protocols_1_1_artnet_specific_settings.html#a4751dce842318274b333b0d0e52d88a0":[12,0,42,20,1],
 "struct_protocols_1_1_artnet_specific_settings.html#a4d06303be75d3e9c621899e5135d8239":[12,0,42,20,4],
+"struct_protocols_1_1_artnet_specific_settings.html#a761cbceadf4e17b1de809f510784bdd8":[12,0,42,20,0],
 "struct_protocols_1_1_artnet_specific_settings.html#a77b6e21f64d9ce28f5af1710ec4b10df":[12,0,42,20,5],
-"struct_protocols_1_1_artnet_specific_settings.html#a873c310bd2bf189fad50827a1e91c123":[12,0,42,20,0],
-"struct_protocols_1_1_artnet_specific_settings.html#aa54c0c0a2a828f33c1b1a73f89c130d6":[12,0,42,20,3],
 "struct_protocols_1_1_artnet_specific_settings.html#af633c42f6e9ab57071377281ee0bd583":[12,0,42,20,2],
 "struct_protocols_1_1_fixture_database_1_1_scan.html":[12,0,42,16,0],
 "struct_protocols_1_1_fixture_database_1_1_scan.html#a3b7be4f9c56242d3fbf49533d137b9fe":[12,0,42,16,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX70 =
 "struct_recording_1_1_record_context.html#ab1be896cc24afbde3a1192c23a34fdf9":[12,0,43,11,18],
 "struct_recording_1_1_record_context.html#abc5396e8e5dfd3bc2a7e83a1a91a6738":[12,0,43,11,15],
 "struct_recording_1_1_record_context.html#ac51bad314dc39bacf4bdb63618a8a182":[12,0,43,11,16],
-"struct_recording_1_1_record_context.html#ad118e2ea74a2b2bde46c608911c4acfa":[12,0,43,11,2],
-"struct_recording_1_1_record_context.html#adec490953909955d399a6d059782c28d":[12,0,43,11,8]
+"struct_recording_1_1_record_context.html#ad118e2ea74a2b2bde46c608911c4acfa":[12,0,43,11,2]
 };

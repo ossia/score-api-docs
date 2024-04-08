@@ -63,6 +63,7 @@ var annotated_dup =
       [ "PatternObject", "structavnd__tools_1_1_pattern_object.html", "structavnd__tools_1_1_pattern_object" ],
       [ "PatternSelector", "structavnd__tools_1_1_pattern_selector.html", "structavnd__tools_1_1_pattern_selector" ],
       [ "PatternUnfolder", "structavnd__tools_1_1_pattern_unfolder.html", "structavnd__tools_1_1_pattern_unfolder" ],
+      [ "AudioRecorder", "structavnd__tools_1_1_audio_recorder.html", "structavnd__tools_1_1_audio_recorder" ],
       [ "PatternCombiner", "structavnd__tools_1_1_pattern_combiner.html", "structavnd__tools_1_1_pattern_combiner" ],
       [ "DeviceRecorder", "structavnd__tools_1_1_device_recorder.html", "structavnd__tools_1_1_device_recorder" ],
       [ "Spammer", "structavnd__tools_1_1_spammer.html", "structavnd__tools_1_1_spammer" ],
