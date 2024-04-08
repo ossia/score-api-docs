@@ -1,5 +1,10 @@
 var NAVTREEINDEX77 =
 {
+"structoscr_1_1_serializer.html#a072bd5f8b08aa06f54b32e0e34cf8d38":[12,0,36,29,1],
+"structoscr_1_1_serializer.html#a3e697166fba247f062e559f11f03f807":[12,0,36,29,0],
+"structoscr_1_1_serializer.html#a53c427ee8bf7cba802aa5690e5150a5c":[12,0,36,29,4],
+"structoscr_1_1_serializer.html#a6b5eb37e26ac1a4c0212004042b9f2ea":[12,0,36,29,2],
+"structoscr_1_1_serializer.html#a7d6b1eb449250971b877ededc786aad8":[12,0,36,29,3],
 "structoscr_1_1_view.html":[12,0,36,46],
 "structoscr_1_1_view.html#a45687d2a9780d4b776ebbab77a00d148":[12,0,36,46,2],
 "structoscr_1_1_view.html#a4e1b3e18f6e9be9aaef8ff81c34acc43":[12,0,36,46,0],
@@ -32,8 +37,8 @@ var NAVTREEINDEX77 =
 "structoscr_1_1setup___impl0.html#a2ad50f84e6eea6ac4a97c6483330c22d":[12,0,36,19,2],
 "structoscr_1_1setup___impl0.html#a475fec302bc8c4f7d8821ee592319084":[12,0,36,19,7],
 "structoscr_1_1setup___impl0.html#a61f8e7ead77c10b7719c85d0dcea206f":[12,0,36,19,9],
-"structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,36,19,6],
 "structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,36,19,5],
+"structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,36,19,6],
 "structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,36,19,4],
 "structoscr_1_1setup___impl0.html#ab0925cd37367396714b0651fb445ad3d":[12,0,36,19,10],
 "structoscr_1_1setup___impl0.html#ac697cbf094cf1842eb7949c2bae9439d":[12,0,36,19,3],
@@ -244,10 +249,5 @@ var NAVTREEINDEX77 =
 "structscore_1_1_command_stack_backup.html#a2a11052a8ce67b573e5fbeea6776a3d1":[12,0,48,16,2],
 "structscore_1_1_command_stack_backup.html#a6bdb36f7ea2a559d18f24d6e3bf10a8d":[12,0,48,16,1],
 "structscore_1_1_command_stack_backup.html#ad0398bde9140c4a27db24d5169f9c2ab":[12,0,48,16,0],
-"structscore_1_1_command_store.html":[12,0,48,79],
-"structscore_1_1_component_hierarchy_manager_1_1_child_pair.html":[12,0,48,173,0],
-"structscore_1_1_component_hierarchy_manager_1_1_child_pair.html#a4bba1bc8edbc6800935f6bf76b36bb29":[12,0,48,173,0,2],
-"structscore_1_1_component_hierarchy_manager_1_1_child_pair.html#a4e370ef1f26886718a0d22105a0cdd59":[12,0,48,173,0,0],
-"structscore_1_1_component_hierarchy_manager_1_1_child_pair.html#aa1010ba0e23e4c3cdaa1597bd15004e9":[12,0,48,173,0,1],
-"structscore_1_1_components.html":[12,0,48,168]
+"structscore_1_1_command_store.html":[12,0,48,79]
 };

@@ -105,9 +105,9 @@ $(document).ready(function(){initNavTree('structavnd__tools_1_1_audio_recorder_1
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2b684feff556d1744d20f6014c17d2f9"><td class="memItemLeft" align="right" valign="top"><a id="a2b684feff556d1744d20f6014c17d2f9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>reopen</b> ()</td></tr>
-<tr class="separator:a2b684feff556d1744d20f6014c17d2f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18a14b3ab16738525ca90bae5b97636d"><td class="memItemLeft" align="right" valign="top"><a id="a18a14b3ab16738525ca90bae5b97636d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>reopen</b> ()</td></tr>
+<tr class="separator:a18a14b3ab16738525ca90bae5b97636d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a9e4900a9ccd10d801b1d7c2a3058a4"><td class="memItemLeft" align="right" valign="top"><a id="a7a9e4900a9ccd10d801b1d7c2a3058a4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (int frames, audio_buffer &amp;data)</td></tr>
 <tr class="separator:a7a9e4900a9ccd10d801b1d7c2a3058a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,12 +120,18 @@ ossia::drwav_write_handle&#160;</td><td class="memItemRight" valign="bottom"><b>
 <tr class="memitem:a504d8a3af77502a2109223ccd4e2603c"><td class="memItemLeft" align="right" valign="top"><a id="a504d8a3af77502a2109223ccd4e2603c"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>filename</b></td></tr>
 <tr class="separator:a504d8a3af77502a2109223ccd4e2603c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac68176223a5db51b33a22deb5a395839"><td class="memItemLeft" align="right" valign="top"><a id="ac68176223a5db51b33a22deb5a395839"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>actual_filename</b></td></tr>
+<tr class="separator:ac68176223a5db51b33a22deb5a395839"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2404060baf736b4600b88cc9365c8847"><td class="memItemLeft" align="right" valign="top"><a id="a2404060baf736b4600b88cc9365c8847"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>channels</b> = 0</td></tr>
 <tr class="separator:a2404060baf736b4600b88cc9365c8847"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8afcfccbccaded785b64641478e12fb7"><td class="memItemLeft" align="right" valign="top"><a id="a8afcfccbccaded785b64641478e12fb7"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>rate</b> = 0</td></tr>
 <tr class="separator:a8afcfccbccaded785b64641478e12fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab28b1f9c3391748d6601c27fa6116f03"><td class="memItemLeft" align="right" valign="top"><a id="ab28b1f9c3391748d6601c27fa6116f03"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>must_record</b> = false</td></tr>
+<tr class="separator:ab28b1f9c3391748d6601c27fa6116f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_audio_recorder_8hpp_source.html">AudioRecorder.hpp</a></li>

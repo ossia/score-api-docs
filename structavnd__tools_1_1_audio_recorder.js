@@ -15,13 +15,15 @@ var structavnd__tools_1_1_audio_recorder =
     [ "current_rate", "structavnd__tools_1_1_audio_recorder.html#a9f2bbbf103273a7cad32b919b89f7108", null ],
     [ "data", "structavnd__tools_1_1_audio_recorder.html#a05a8f0251e152fdf48479e6d6d125ddd", null ],
     [ "filename", "structavnd__tools_1_1_audio_recorder.html#adb850245189da40091e3d8ec128ff6c5", null ],
+    [ "filename_to_output", "structavnd__tools_1_1_audio_recorder.html#a9ba1a7e7609dc651a98b45ef25d5f2a1", null ],
+    [ "finished", "structavnd__tools_1_1_audio_recorder.html#a8d14172f8569139d7fdc0d3be1c1523c", null ],
     [ "first_message_sent_pos", "structavnd__tools_1_1_audio_recorder.html#a6f0a1ca94518c7010789d528d489bf16", null ],
     [ "impl", "structavnd__tools_1_1_audio_recorder.html#a4db00810b34f873d49722ac2253866f6", null ],
     [ "inputs", "structavnd__tools_1_1_audio_recorder.html#aab664c8eefa98fb5284fa32648bfa3ab", null ],
     [ "last_message_sent_pos", "structavnd__tools_1_1_audio_recorder.html#a00bfdb3c81e598ff1bfceaac8e2484b0", null ],
     [ "outputs", "structavnd__tools_1_1_audio_recorder.html#a597cf08a68fe61399e66912671200630", null ],
+    [ "record", "structavnd__tools_1_1_audio_recorder.html#a648837c00337a8b747ac705c2f0c6131", null ],
     [ "request", "structavnd__tools_1_1_audio_recorder.html#a7a6c0da1293a5305a8f722250db55674", null ],
     [ "started", "structavnd__tools_1_1_audio_recorder.html#a27e40dc674f17c890b0fbceaf6201cff", null ],
-    [ "update", "structavnd__tools_1_1_audio_recorder.html#a57e22d643d68bcbe18df7d3078393cb1", null ],
     [ "worker", "structavnd__tools_1_1_audio_recorder.html#ae7d4d26f0596d57e2ca5319512c85522", null ]
 ];

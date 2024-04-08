@@ -186,14 +186,14 @@ var NAVTREEINDEX =
 "struct_scenario_1_1_vertical_extent.html#a4b1eba405bdde7888af5ba4c14230ed2",
 "struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01_t_01_5_00_01_alloc_01_4_01_4.html",
 "struct_widget_factory_1_1_fixed_normalizer.html#a1323e7d345f4e34cc150d6f2fe1014cb",
-"structgraphics__item__ptr.html#ae6f6290c904be30bff59cd2da372964d",
-"structoscr_1_1_view.html",
-"structscore_1_1_components.html#a0aefe66ef7121dcbc2079d8e2a1a49ac",
-"structscore_1_1_recursive_watch_1_1_watched.html",
-"structscore_1_1_value_log_double_slider.html#a7267a7c02ab763ab5632295b60631af4",
-"structscore_1_1gfx_1_1_process_u_b_o.html#ada14203748dae9c46e4c1ca8a0a862d6",
-"structscore_1_1indirect__iterator.html#aafad25eeada07824d278c50aa35dacb0",
-""
+"structgraphics__item__ptr.html#aaf0261053d0acc8293feb1b9175ed47a",
+"structoscr_1_1_serializer.html#a072bd5f8b08aa06f54b32e0e34cf8d38",
+"structscore_1_1_component_hierarchy_manager_1_1_child_pair.html",
+"structscore_1_1_q_graphics_slider_base.html#aea26176148e6fafffb79bb85cf6de35d",
+"structscore_1_1_value_double_slider.html#aee561b23bf65661f9db84a513fd86807",
+"structscore_1_1gfx_1_1_process_u_b_o.html#a55d717e319c607bce17b9d12bceb68ae",
+"structscore_1_1indirect__iterator.html#a73a64f25973e145a967ed0e728d7ba50",
+"structvst_1_1vst__node__base_1_1vst__control.html#a941a103e838cd796ef58965650bc9ca6"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
