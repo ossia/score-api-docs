@@ -129,9 +129,9 @@ $(document).ready(function(){initNavTree('_command_generator_map_8hpp_source.htm
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TheCommand&gt;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> operator()()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    SCORE_ASSERT(<span class="keywordtype">bool</span>(</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        ossia::find_if(fact, [](<span class="keyword">auto</span>&amp; e) { <span class="keywordflow">return</span> e.first == TheCommand::static_key(); })</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        == fact.end()));</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    SCORE_ASSERT(<span class="keywordtype">bool</span>(ossia::find_if(fact, [](<span class="keyword">auto</span>&amp; e) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keywordflow">return</span> e.first == TheCommand::static_key();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }) == fact.end()));</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    constexpr <a class="code" href="_command_generator_map_8hpp.html#ab8206af91c216c74ee90ce7aa6ba2331">CommandFactory</a> f = [](<span class="keyword">const</span> QByteArray&amp; data) -&gt; <a class="code" href="classscore_1_1_command.html">score::Command</a>* {</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keyword">auto</span> t = <span class="keyword">new</span> TheCommand;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      t-&gt;deserialize(data);</div>

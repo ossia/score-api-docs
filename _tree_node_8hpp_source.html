@@ -376,10 +376,10 @@ $(document).ready(function(){initNavTree('_tree_node_8hpp_source.html',''); init
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">auto</span> n : nodes)</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  {</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordflow">if</span>(ossia::any_of(nodes, [&amp;](Node_T* other) {</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;         <span class="keywordflow">if</span>(other == n)</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;           <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;         <span class="keywordflow">return</span> isAncestor(*other, n);</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;       }))</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      <span class="keywordflow">if</span>(other == n)</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;      <span class="keywordflow">return</span> isAncestor(*other, n);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    }))</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    {</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;      <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    }</div>

@@ -235,7 +235,10 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>score::ActionConditi
 <div class="line">          ptr, QObject::tr(Text), key(), <a class="code" href="class_string_key.html">score::ActionGroupKey</a>{#Group}, Shortcut}; \</div>
 <div class="line">    }                                                                              \</div>
 <div class="line">                                                                                   \</div>
-<div class="line">    static <a class="code" href="class_string_key.html">score::ActionKey</a> key() { <span class="keywordflow">return</span> <a class="code" href="class_string_key.html">score::ActionKey</a>{#ActionName}; }        \</div>
+<div class="line">    static <a class="code" href="class_string_key.html">score::ActionKey</a> key()                                                  \</div>
+<div class="line">    {                                                                              \</div>
+<div class="line">      return <a class="code" href="class_string_key.html">score::ActionKey</a>{#ActionName};                                        \</div>
+<div class="line">    }                                                                              \</div>
 <div class="line">  };                                                                               \</div>
 <div class="line">  }</div>
 <div class="ttc" id="aclass_string_key_html"><div class="ttname"><a href="class_string_key.html">StringKey&lt; ActionGroup &gt;</a></div></div>
@@ -303,7 +306,10 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>score::ActionConditi
 <div class="line">                           Shortcut1, Shortcut2};                              \</div>
 <div class="line">    }                                                                          \</div>
 <div class="line">                                                                               \</div>
-<div class="line">    static <a class="code" href="class_string_key.html">score::ActionKey</a> key() { <span class="keywordflow">return</span> <a class="code" href="class_string_key.html">score::ActionKey</a>{#ActionName}; }    \</div>
+<div class="line">    static <a class="code" href="class_string_key.html">score::ActionKey</a> key()                                              \</div>
+<div class="line">    {                                                                          \</div>
+<div class="line">      return <a class="code" href="class_string_key.html">score::ActionKey</a>{#ActionName};                                    \</div>
+<div class="line">    }                                                                          \</div>
 <div class="line">  };                                                                           \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
