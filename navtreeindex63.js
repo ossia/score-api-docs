@@ -13,12 +13,13 @@ var NAVTREEINDEX63 =
 "struct_gfx_1_1_camera_device_enumerator.html#a24cb1153827c7210e5cdb09b3aefaf07":[12,0,18,16,0],
 "struct_gfx_1_1_camera_device_enumerator.html#a53765f59d3120f0557fba81b48ac2b09":[12,0,18,16,1],
 "struct_gfx_1_1_camera_settings.html":[12,0,18,17],
-"struct_gfx_1_1_camera_settings.html#a25551c9b0211e5d371f9248be832ae03":[12,0,18,17,1],
-"struct_gfx_1_1_camera_settings.html#a395e703271b5c76ceee531202ae66bae":[12,0,18,17,2],
-"struct_gfx_1_1_camera_settings.html#a707454a6640caa086c6743527c6a500a":[12,0,18,17,5],
-"struct_gfx_1_1_camera_settings.html#a72fa333ba1bfb81653edecc33585c26f":[12,0,18,17,4],
+"struct_gfx_1_1_camera_settings.html#a25551c9b0211e5d371f9248be832ae03":[12,0,18,17,2],
+"struct_gfx_1_1_camera_settings.html#a395e703271b5c76ceee531202ae66bae":[12,0,18,17,3],
+"struct_gfx_1_1_camera_settings.html#a707454a6640caa086c6743527c6a500a":[12,0,18,17,6],
+"struct_gfx_1_1_camera_settings.html#a71b1bc3fd572fe7c3f0eca2a12d7ea02":[12,0,18,17,1],
+"struct_gfx_1_1_camera_settings.html#a72fa333ba1bfb81653edecc33585c26f":[12,0,18,17,5],
 "struct_gfx_1_1_camera_settings.html#a7b1db0f6e37e929617815f80611c9055":[12,0,18,17,0],
-"struct_gfx_1_1_camera_settings.html#ab159a0fda2c0408710f13d608d930d22":[12,0,18,17,3],
+"struct_gfx_1_1_camera_settings.html#ab159a0fda2c0408710f13d608d930d22":[12,0,18,17,4],
 "struct_gfx_1_1_dbl_i_audio_frame_encoder.html":[12,0,18,47],
 "struct_gfx_1_1_dbl_i_audio_frame_encoder.html#a02bbb807918a4d09c3c0f4167e654da6":[12,0,18,47,2],
 "struct_gfx_1_1_dbl_i_audio_frame_encoder.html#a888d6a709565d3f3bb20645884acfeb0":[12,0,18,47,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX63 =
 "struct_gfx_1_1_shmdata_output_node.html#a463b90e04b9506c0e2ec959837507f64":[12,0,18,71,19],
 "struct_gfx_1_1_shmdata_output_node.html#a526d22cfbc520f98d2571732367e5756":[12,0,18,71,9],
 "struct_gfx_1_1_shmdata_output_node.html#a5d7285af8d2cb9009f737401a6a0e4d8":[12,0,18,71,4],
-"struct_gfx_1_1_shmdata_output_node.html#a5e4997231caf604f42e8d87717e2ccea":[12,0,18,71,8],
-"struct_gfx_1_1_shmdata_output_node.html#a6456f699456cf5edebf82db3c562e160":[12,0,18,71,21]
+"struct_gfx_1_1_shmdata_output_node.html#a5e4997231caf604f42e8d87717e2ccea":[12,0,18,71,8]
 };
