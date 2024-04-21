@@ -124,16 +124,16 @@ $(document).ready(function(){initNavTree('score-plugin-gfx_2_gfx_2_graph_2_node_
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">struct </span>Graph;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">class </span>GenericNodeRenderer;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">class </span>NodeRenderer;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">using</span> FunctionMessage = std::function&lt;void(<a class="code" href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a>&amp;)&gt;;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#if BOOST_VERSION &lt; 107900</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// Old boost: small_vector was not nothrow-move-constructible so we remove the check there.</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">using</span> gfx_input = ossia::slow_variant&lt;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    ossia::monostate, ossia::value, ossia::audio_vector, ossia::mesh_list_ptr,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    ossia::transform3d&gt;;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    ossia::transform3d, FunctionMessage&gt;;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">using</span> gfx_input = ossia::variant&lt;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    ossia::monostate, ossia::value, ossia::audio_vector, ossia::mesh_list_ptr,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    ossia::transform3d&gt;;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    ossia::transform3d, FunctionMessage&gt;;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_timings.html">   44</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structscore_1_1gfx_1_1_timings.html">Timings</a></div>
@@ -222,33 +222,34 @@ $(document).ready(function(){initNavTree('score-plugin-gfx_2_gfx_2_graph_2_node_
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordtype">void</span> process(int32_t port, <span class="keyword">const</span> ossia::mesh_list_ptr&amp; v);</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="keywordtype">void</span> process(int32_t port, <span class="keyword">const</span> ossia::transform3d&amp; v);</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keywordtype">void</span> process(int32_t port, ossia::monostate) <span class="keyword">const</span> noexcept { }</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;};</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
-<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_node_model.html">  178</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="classscore_1_1gfx_1_1_node_model.html">NodeModel</a> : <span class="keyword">public</span> <a class="code" href="classscore_1_1gfx_1_1_process_node.html">score::gfx::ProcessNode</a></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;{</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classscore_1_1gfx_1_1_node_model.html">NodeModel</a>();</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classscore_1_1gfx_1_1_node_model.html">NodeModel</a>();</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>*</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  createRenderer(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r) <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  std::unique_ptr&lt;char[]&gt; m_materialData;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classscore_1_1gfx_1_1_generic_node_renderer.html">GenericNodeRenderer</a>;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;};</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;}</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment">// QDebug operator&lt;&lt;(QDebug, const score::gfx::gfx_input&amp;);</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;QDebug operator&lt;&lt;(QDebug, <span class="keyword">const</span> std::vector&lt;score::gfx::gfx_input&gt;&amp;);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keywordtype">void</span> process(int32_t port, <span class="keyword">const</span> FunctionMessage&amp;);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;};</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_node_model.html">  179</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="classscore_1_1gfx_1_1_node_model.html">NodeModel</a> : <span class="keyword">public</span> <a class="code" href="classscore_1_1gfx_1_1_process_node.html">score::gfx::ProcessNode</a></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;{</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classscore_1_1gfx_1_1_node_model.html">NodeModel</a>();</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classscore_1_1gfx_1_1_node_model.html">NodeModel</a>();</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>*</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  createRenderer(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r) <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  std::unique_ptr&lt;char[]&gt; m_materialData;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classscore_1_1gfx_1_1_generic_node_renderer.html">GenericNodeRenderer</a>;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;};</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;}</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="comment">// QDebug operator&lt;&lt;(QDebug, const score::gfx::gfx_input&amp;);</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;QDebug operator&lt;&lt;(QDebug, <span class="keyword">const</span> std::vector&lt;score::gfx::gfx_input&gt;&amp;);</div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_generic_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_generic_node_renderer.html">score::gfx::GenericNodeRenderer</a></div><div class="ttdoc">Generic renderer.</div><div class="ttdef"><b>Definition:</b> NodeRenderer.hpp:59</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a></div><div class="ttdoc">Root data model for visual nodes.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Node.hpp:60</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_html_a32f530890af66e0ecee6c66cdf430146"><div class="ttname"><a href="classscore_1_1gfx_1_1_node.html#a32f530890af66e0ecee6c66cdf430146">score::gfx::Node::input</a></div><div class="ttdeci">std::vector&lt; Port * &gt; input</div><div class="ttdoc">Input ports of that node.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Node.hpp:89</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_html_a929921dfd819c153d1d008a80f8fa9f8"><div class="ttname"><a href="classscore_1_1gfx_1_1_node.html#a929921dfd819c153d1d008a80f8fa9f8">score::gfx::Node::createRenderer</a></div><div class="ttdeci">virtual NodeRenderer * createRenderer(RenderList &amp;r) const noexcept=0</div><div class="ttdoc">Create a renderer in a given context for this node.</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_html_abbac77035201ad0586b55fb7f9075ea8"><div class="ttname"><a href="classscore_1_1gfx_1_1_node.html#abbac77035201ad0586b55fb7f9075ea8">score::gfx::Node::renderedNodes</a></div><div class="ttdeci">ossia::flat_map&lt; RenderList *, score::gfx::NodeRenderer * &gt; renderedNodes</div><div class="ttdoc">Map associating each RenderList to a Renderer for this model.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Node.hpp:100</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_html_afb7194d7e2605a0a39c17eb3ac3e2fa5"><div class="ttname"><a href="classscore_1_1gfx_1_1_node.html#afb7194d7e2605a0a39c17eb3ac3e2fa5">score::gfx::Node::output</a></div><div class="ttdeci">ossia::small_pod_vector&lt; Port *, 1 &gt; output</div><div class="ttdoc">Output ports of that node.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Node.hpp:95</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_node_model_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_model.html">score::gfx::NodeModel</a></div><div class="ttdoc">Common base class for most single-pass, simple nodes.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Node.hpp:179</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_node_model_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_model.html">score::gfx::NodeModel</a></div><div class="ttdoc">Common base class for most single-pass, simple nodes.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Node.hpp:180</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdoc">Renderer for a given node.</div><div class="ttdef"><b>Definition:</b> NodeRenderer.hpp:11</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_process_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_process_node.html">score::gfx::ProcessNode</a></div><div class="ttdoc">Common base class for nodes that map to score processes.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Node.hpp:109</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_process_node_html_a8611138aeb721fb4db2b44d5c38ae29a"><div class="ttname"><a href="classscore_1_1gfx_1_1_process_node.html#a8611138aeb721fb4db2b44d5c38ae29a">score::gfx::ProcessNode::geometryChange</a></div><div class="ttdeci">void geometryChange() noexcept</div><div class="ttdoc">Used to notify a geometry change from the model to the renderers.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Node.hpp:135</div></div>

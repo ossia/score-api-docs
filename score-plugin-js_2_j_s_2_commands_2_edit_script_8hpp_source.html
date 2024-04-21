@@ -105,25 +105,25 @@ $(document).ready(function(){initNavTree('score-plugin-js_2_j_s_2_commands_2_edi
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;JS/JSProcessModel.hpp&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>JS</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_j_s_1_1_edit_j_s_script.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_j_s_1_1_edit_j_s_script.html">EditJSScript</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_j_s_1_1_edit_script.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_j_s_1_1_edit_script.html">EditScript</a></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    : <span class="keyword">public</span> <a class="code" href="class_scenario_1_1_edit_script.html">Scenario::EditScript</a>&lt;JS::ProcessModel, JS::ProcessModel::p_script&gt;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  SCORE_COMMAND_DECL(CommandFactoryName(), <a class="code" href="class_j_s_1_1_edit_j_s_script.html">EditJSScript</a>, <span class="stringliteral">&quot;Edit a script&quot;</span>)</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  SCORE_COMMAND_DECL(CommandFactoryName(), <a class="code" href="class_j_s_1_1_edit_script.html">EditScript</a>, <span class="stringliteral">&quot;Edit a JS script&quot;</span>)</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keyword">using</span> EditScript::EditScript;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keyword">using</span> <a class="code" href="class_scenario_1_1_edit_script.html">Scenario::EditScript&lt;JS::ProcessModel, JS::ProcessModel::p_script&gt;::EditScript</a>;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;};</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore.html">score</a></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structscore_1_1_static_property_command_3_01_j_s_1_1_process_model_1_1p__script_01_4.html">   20</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structscore_1_1_static_property_command.html">StaticPropertyCommand</a>&lt;JS::ProcessModel::p_script&gt; : <a class="code" href="class_j_s_1_1_edit_j_s_script.html">JS::EditJSScript</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structscore_1_1_static_property_command_3_01_j_s_1_1_process_model_1_1p__script_01_4.html">   20</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structscore_1_1_static_property_command.html">StaticPropertyCommand</a>&lt;JS::ProcessModel::p_script&gt; : <a class="code" href="class_j_s_1_1_edit_script.html">JS::EditScript</a></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">using</span> EditJSScript::EditJSScript;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">using</span> EditScript::EditScript;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
-<div class="ttc" id="aclass_j_s_1_1_edit_j_s_script_html"><div class="ttname"><a href="class_j_s_1_1_edit_j_s_script.html">JS::EditJSScript</a></div><div class="ttdef"><b>Definition:</b> score-plugin-js/JS/Commands/EditScript.hpp:10</div></div>
-<div class="ttc" id="aclass_scenario_1_1_edit_script_html"><div class="ttname"><a href="class_scenario_1_1_edit_script.html">Scenario::EditScript</a></div><div class="ttdef"><b>Definition:</b> ScriptEditCommand.hpp:22</div></div>
+<div class="ttc" id="aclass_j_s_1_1_edit_script_html"><div class="ttname"><a href="class_j_s_1_1_edit_script.html">JS::EditScript</a></div><div class="ttdef"><b>Definition:</b> score-plugin-js/JS/Commands/EditScript.hpp:10</div></div>
+<div class="ttc" id="aclass_scenario_1_1_edit_script_html"><div class="ttname"><a href="class_scenario_1_1_edit_script.html">Scenario::EditScript</a></div><div class="ttdef"><b>Definition:</b> ScriptEditCommand.hpp:23</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:90</div></div>
 <div class="ttc" id="astructscore_1_1_static_property_command_html"><div class="ttname"><a href="structscore_1_1_static_property_command.html">score::StaticPropertyCommand</a></div><div class="ttdef"><b>Definition:</b> PropertyCommand.hpp:112</div></div>
 </div><!-- fragment --></div><!-- contents -->

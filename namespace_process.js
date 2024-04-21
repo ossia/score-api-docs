@@ -87,6 +87,7 @@ var namespace_process =
     [ "ProcessMultiScriptEditDialog", "class_process_1_1_process_multi_script_edit_dialog.html", "class_process_1_1_process_multi_script_edit_dialog" ],
     [ "ScriptDialog", "class_process_1_1_script_dialog.html", "class_process_1_1_script_dialog" ],
     [ "ProcessScriptEditDialog", "class_process_1_1_process_script_edit_dialog.html", "class_process_1_1_process_script_edit_dialog" ],
+    [ "ScriptChangeResult", "struct_process_1_1_script_change_result.html", "struct_process_1_1_script_change_result" ],
     [ "ProcessStateData", "struct_process_1_1_process_state_data.html", "struct_process_1_1_process_state_data" ],
     [ "StateNodeValues", "struct_process_1_1_state_node_values.html", "struct_process_1_1_state_node_values" ],
     [ "StateNodeData", "struct_process_1_1_state_node_data.html", "struct_process_1_1_state_node_data" ],

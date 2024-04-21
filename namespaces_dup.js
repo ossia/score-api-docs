@@ -384,7 +384,7 @@ var namespaces_dup =
       [ "UI", "struct_faust_1_1_u_i.html", "struct_faust_1_1_u_i" ],
       [ "UpdateUI", "struct_faust_1_1_update_u_i.html", "struct_faust_1_1_update_u_i" ],
       [ "FaustEffectFactory", "score-plugin-faust_2_faust_2_effect_model_8hpp.html#a05d990c93ece2803ad920a2ecae6d3fb", null ],
-      [ "LayerFactory", "score-plugin-faust_2_faust_2_effect_model_8hpp.html#a7fb4e61d2aa805de19b1472bab79ad77", null ],
+      [ "LayerFactory", "score-plugin-faust_2_faust_2_effect_model_8hpp.html#abfc8d09aba353f230f6ffdf20a2e52b6", null ],
       [ "CommandFactoryName", "plugins_2score-plugin-faust_2_faust_2commands_8hpp.html#afb359b1be025fc6f9107de269f7956f6", null ]
     ] ],
     [ "FaustDSP", null, [
@@ -497,7 +497,7 @@ var namespaces_dup =
         [ "Component", "class_j_s_1_1_executor_1_1_component.html", "class_j_s_1_1_executor_1_1_component" ],
         [ "ComponentFactory", "plugins_2score-plugin-js_2_j_s_2_executor_2_component_8hpp.html#a37ab4463ab8244f5950df5a88a17b791", null ]
       ] ],
-      [ "EditJSScript", "class_j_s_1_1_edit_j_s_script.html", null ],
+      [ "EditScript", "class_j_s_1_1_edit_script.html", null ],
       [ "ScriptMacro", "class_j_s_1_1_script_macro.html", null ],
       [ "ActionContext", "struct_j_s_1_1_action_context.html", "struct_j_s_1_1_action_context" ],
       [ "js_node", "class_j_s_1_1js__node.html", "class_j_s_1_1js__node" ],

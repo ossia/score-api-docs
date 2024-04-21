@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.9.1"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>score: Member List</title>
+        <title>score: ExecutionCommand.hpp Source File</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -75,7 +75,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('class_j_s_1_1_edit_j_s_script.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('_execution_command_8hpp_source.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -95,22 +95,40 @@ $(document).ready(function(){initNavTree('class_j_s_1_1_edit_j_s_script.html',''
 
 <div class="header">
   <div class="headertitle">
-<div class="title">JS::EditJSScript Member List</div>  </div>
+<div class="title">ExecutionCommand.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>This is the complete list of members for <a class="el" href="class_j_s_1_1_edit_j_s_script.html">JS::EditJSScript</a>, including all inherited members.</p>
-<table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Command</b>() (defined in <a class="el" href="classscore_1_1_command.html">score::Command</a>)</td><td class="entry"><a class="el" href="classscore_1_1_command.html">score::Command</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>description</b>() const =0 (defined in <a class="el" href="classscore_1_1_command.html">score::Command</a>)</td><td class="entry"><a class="el" href="classscore_1_1_command.html">score::Command</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>deserialize</b>(const QByteArray &amp;) (defined in <a class="el" href="classscore_1_1_command.html">score::Command</a>)</td><td class="entry"><a class="el" href="classscore_1_1_command.html">score::Command</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>EditScript</b>(const JS::ProcessModel &amp;model, param_type newScript, const score::DocumentContext &amp;ctx) (defined in <a class="el" href="class_scenario_1_1_edit_script.html">Scenario::EditScript&lt; JS::ProcessModel, JS::ProcessModel::p_script &gt;</a>)</td><td class="entry"><a class="el" href="class_scenario_1_1_edit_script.html">Scenario::EditScript&lt; JS::ProcessModel, JS::ProcessModel::p_script &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>key</b>() const noexcept=0 (defined in <a class="el" href="classscore_1_1_command.html">score::Command</a>)</td><td class="entry"><a class="el" href="classscore_1_1_command.html">score::Command</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>param_type</b> typedef (defined in <a class="el" href="class_scenario_1_1_edit_script.html">Scenario::EditScript&lt; JS::ProcessModel, JS::ProcessModel::p_script &gt;</a>)</td><td class="entry"><a class="el" href="class_scenario_1_1_edit_script.html">Scenario::EditScript&lt; JS::ProcessModel, JS::ProcessModel::p_script &gt;</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>parentKey</b>() const noexcept=0 (defined in <a class="el" href="classscore_1_1_command.html">score::Command</a>)</td><td class="entry"><a class="el" href="classscore_1_1_command.html">score::Command</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>serialize</b>() const (defined in <a class="el" href="classscore_1_1_command.html">score::Command</a>)</td><td class="entry"><a class="el" href="classscore_1_1_command.html">score::Command</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~Command</b>() (defined in <a class="el" href="classscore_1_1_command.html">score::Command</a>)</td><td class="entry"><a class="el" href="classscore_1_1_command.html">score::Command</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-</table></div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;smallfun.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;version&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_execution.html">Execution</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">using</span> ExecutionCommand = smallfun::function&lt;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    void(),</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; !defined(NDEBUG)</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    256,</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    128,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    std::max((<span class="keywordtype">int</span>)8, (<span class="keywordtype">int</span>)std::max(<span class="keyword">alignof</span>(std::function&lt;<span class="keywordtype">void</span>()&gt;), <span class="keyword">alignof</span>(<span class="keywordtype">double</span>))),</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    smallfun::Methods::Move&gt;;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">using</span> GCCommand = smallfun::function&lt;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    void(),</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; !defined(NDEBUG)</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    2 * (128 + 4 * 8),</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;#<span class="keywordflow">else</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    128 + 4 * 8,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;#endif</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    std::max((<span class="keywordtype">int</span>)8, (int)std::max(<span class="keyword">alignof</span>(std::function&lt;<span class="keywordtype">void</span>()&gt;), <span class="keyword">alignof</span>(double))),</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    smallfun::Methods::Move&gt;;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="ttc" id="anamespace_execution_html"><div class="ttname"><a href="namespace_execution.html">Execution</a></div><div class="ttdoc">Components used for the execution of a score.</div><div class="ttdef"><b>Definition:</b> ProcessComponent.cpp:12</div></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

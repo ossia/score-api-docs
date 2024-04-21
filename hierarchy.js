@@ -256,21 +256,21 @@ var hierarchy =
           [ "score::StaticPropertyCommand< Jit::JitEffectModel::p_script >", "structscore_1_1_static_property_command_3_01_jit_1_1_jit_effect_model_1_1p__script_01_4.html", null ]
         ] ]
       ] ],
+      [ "Scenario::EditScript< FaustEffectModel, FaustEffectModel::p_script >", "class_scenario_1_1_edit_script.html", [
+        [ "Faust::EditScript", "class_faust_1_1_edit_script.html", [
+          [ "score::StaticPropertyCommand< Faust::FaustEffectModel::p_script >", "structscore_1_1_static_property_command_3_01_faust_1_1_faust_effect_model_1_1p__script_01_4.html", null ]
+        ] ]
+      ] ],
       [ "Scenario::EditScript< Filter::Model, Filter::Model::p_program >", "class_scenario_1_1_edit_script.html", [
         [ "Gfx::ChangeShader", "class_gfx_1_1_change_shader.html", [
           [ "score::StaticPropertyCommand< Gfx::Filter::Model::p_program >", "structscore_1_1_static_property_command_3_01_gfx_1_1_filter_1_1_model_1_1p__program_01_4.html", null ]
-        ] ]
-      ] ],
-      [ "Scenario::EditScript< FaustEffectModel, FaustEffectModel::p_text >", "class_scenario_1_1_edit_script.html", [
-        [ "Faust::EditScript", "class_faust_1_1_edit_script.html", [
-          [ "score::StaticPropertyCommand< Faust::FaustEffectModel::p_text >", "structscore_1_1_static_property_command_3_01_faust_1_1_faust_effect_model_1_1p__text_01_4.html", null ]
         ] ]
       ] ],
       [ "Scenario::EditScript< Pd::ProcessModel, Pd::ProcessModel::p_script >", "class_scenario_1_1_edit_script.html", [
         [ "Pd::EditPdPath", "class_pd_1_1_edit_pd_path.html", null ]
       ] ],
       [ "Scenario::EditScript< JS::ProcessModel, JS::ProcessModel::p_script >", "class_scenario_1_1_edit_script.html", [
-        [ "JS::EditJSScript", "class_j_s_1_1_edit_j_s_script.html", [
+        [ "JS::EditScript", "class_j_s_1_1_edit_script.html", [
           [ "score::StaticPropertyCommand< JS::ProcessModel::p_script >", "structscore_1_1_static_property_command_3_01_j_s_1_1_process_model_1_1p__script_01_4.html", null ]
         ] ]
       ] ],
@@ -645,6 +645,8 @@ var hierarchy =
     [ "DefaultRollbackStrategy", "struct_default_rollback_strategy.html", null ],
     [ "score::gfx::DefaultShaderMaterial", "structscore_1_1gfx_1_1_default_shader_material.html", null ],
     [ "score::delete_later< T >", "structscore_1_1delete__later.html", null ],
+    [ "score::delete_later< Process::Inlets >", "structscore_1_1delete__later.html", null ],
+    [ "score::delete_later< Process::Outlets >", "structscore_1_1delete__later.html", null ],
     [ "Gfx::DemuxerInfo", "struct_gfx_1_1_demuxer_info.html", null ],
     [ "score::detail::dereference_visitor< T >", "structscore_1_1detail_1_1dereference__visitor.html", null ],
     [ "Description_k", "class_description__k.html", null ],
@@ -3434,6 +3436,7 @@ var hierarchy =
     [ "ScenarioRollbackStrategy", "struct_scenario_rollback_strategy.html", null ],
     [ "Scenario::ScenarioViewInterface", "class_scenario_1_1_scenario_view_interface.html", null ],
     [ "Execution::Settings::SchedulingPolicies", "struct_execution_1_1_settings_1_1_scheduling_policies.html", null ],
+    [ "Process::ScriptChangeResult", "struct_process_1_1_script_change_result.html", null ],
     [ "score::SecondSpinBox", "structscore_1_1_second_spin_box.html", null ],
     [ "llvm::SectionMemoryManager", null, [
       [ "SingleSectionMemoryManager", "class_single_section_memory_manager.html", null ]
