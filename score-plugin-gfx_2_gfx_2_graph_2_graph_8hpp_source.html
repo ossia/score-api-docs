@@ -139,19 +139,19 @@ $(document).ready(function(){initNavTree('score-plugin-gfx_2_gfx_2_graph_2_graph
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">void</span> setVSyncCallback(std::function&lt;<span class="keywordtype">void</span>()&gt;);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_graph.html#a956b5fda40333edffaa3655bbf18f4c6">   90</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="structscore_1_1gfx_1_1_graph.html#a956b5fda40333edffaa3655bbf18f4c6">canDoVSync</a>() const noexcept { <span class="keywordflow">return</span> m_outputs.size() == 1; }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">bool</span> canDoVSync() <span class="keyword">const</span> noexcept;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keyword">const</span> std::vector&lt;std::shared_ptr&lt;RenderList&gt;&gt;&amp; renderLists() const noexcept</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keyword">const</span> std::vector&lt;std::shared_ptr&lt;RenderList&gt;&gt;&amp; renderLists() <span class="keyword">const</span> noexcept</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  {</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">return</span> m_renderers;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  }</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">void</span> initializeOutput(OutputNode* output, <a class="code" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a> graphicsApi);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">void</span> createOutputRenderList(OutputNode&amp; output);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">void</span> recreateOutputRenderList(OutputNode&amp; output);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">void</span> initializeOutput(<a class="code" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a>* output, <a class="code" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a> graphicsApi);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">void</span> createOutputRenderList(<a class="code" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a>&amp; output);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">void</span> recreateOutputRenderList(<a class="code" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a>&amp; output);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  std::shared_ptr&lt;RenderList&gt;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  createRenderList(OutputNode*, std::shared_ptr&lt;RenderState&gt; state);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  createRenderList(<a class="code" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a>*, std::shared_ptr&lt;RenderState&gt; state);</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  std::vector&lt;std::shared_ptr&lt;RenderList&gt;&gt; m_renderers;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  std::vector&lt;std::shared_ptr&lt;Window&gt;&gt; m_unused_windows;</div>
@@ -168,7 +168,6 @@ $(document).ready(function(){initNavTree('score-plugin-gfx_2_gfx_2_graph_2_graph
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition:</b> PreviewWidget.hpp:12</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html_a5b6a96306e1a02ccc56d8bb785bc6734"><div class="ttname"><a href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">score::gfx::GraphicsApi</a></div><div class="ttdeci">GraphicsApi</div><div class="ttdoc">Available graphics APIs to use.</div><div class="ttdef"><b>Definition:</b> RenderState.hpp:17</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_graph_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_graph.html">score::gfx::Graph</a></div><div class="ttdoc">Represents a graph of renderers.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Graph.hpp:16</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_graph_html_a956b5fda40333edffaa3655bbf18f4c6"><div class="ttname"><a href="structscore_1_1gfx_1_1_graph.html#a956b5fda40333edffaa3655bbf18f4c6">score::gfx::Graph::canDoVSync</a></div><div class="ttdeci">bool canDoVSync() const noexcept</div><div class="ttdoc">True if the graph supports being driven by the screen vertical synchronization.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Graph.hpp:90</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_port_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a></div><div class="ttdoc">Port of a score::gfx::Node.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:46</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

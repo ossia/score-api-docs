@@ -1539,131 +1539,163 @@ $(document).ready(function(){initNavTree('plugins_2score-lib-process_2_process_2
 <div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; <span class="comment">// TODO</span></div>
 <div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;  }</div>
 <div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160; </div>
-<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Control_T&gt;</div>
-<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;  <span class="keyword">static</span> QGraphicsItem* make_item(</div>
-<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;      <span class="keyword">const</span> T&amp; slider, Control_T&amp; inlet, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
-<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;      QGraphicsItem* parent, QObject* context)</div>
-<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;  {</div>
-<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;    <span class="keyword">auto</span> sl = <span class="keyword">new</span> <a class="code" href="classscore_1_1_q_graphics_x_y_spinbox_chooser.html">score::QGraphicsXYSpinboxChooser</a>{<span class="keyword">false</span>, <span class="keyword">nullptr</span>};</div>
-<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;    bindVec2Domain(slider, inlet, *sl);</div>
-<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;    sl-&gt;setValue(</div>
-<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;        LinearNormalizer::to01(*sl, ossia::convert&lt;ossia::vec2f&gt;(inlet.value())));</div>
-<div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160; </div>
-<div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160;    QObject::connect(</div>
-<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;        sl, &amp;score::QGraphicsXYSpinboxChooser::sliderMoved, context, [=, &amp;inlet, &amp;ctx] {</div>
-<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;          sl-&gt;moving = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;          ctx.dispatcher.<a class="code" href="class_ongoing_command_dispatcher.html#a025496b513fab9cdaabbff6b75f4e74b">submit</a>&lt;SetControlValue&lt;Control_T&gt;&gt;(</div>
-<div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;              inlet, LinearNormalizer::from01(*sl, sl-&gt;value()));</div>
-<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;        });</div>
-<div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;    QObject::connect(</div>
-<div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;        sl, &amp;score::QGraphicsXYSpinboxChooser::sliderReleased, context, [&amp;ctx, sl]() {</div>
-<div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;          ctx.dispatcher.<a class="code" href="class_ongoing_command_dispatcher.html#a98c51c70b84cb27505120b707bbe9b5e">commit</a>();</div>
-<div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;          sl-&gt;moving = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;        });</div>
-<div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160; </div>
-<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;    QObject::connect(&amp;inlet, &amp;Control_T::valueChanged, sl, [=](<span class="keyword">const</span> ossia::value&amp; val) {</div>
-<div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;      <span class="keywordflow">if</span>(!sl-&gt;moving)</div>
-<div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;        sl-&gt;setValue(LinearNormalizer::to01(*sl, ossia::convert&lt;ossia::vec2f&gt;(val)));</div>
-<div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;    });</div>
-<div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160; </div>
-<div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;    <span class="keywordflow">return</span> sl;</div>
-<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;  }</div>
-<div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;};</div>
-<div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160; </div>
-<div class="line"><a name="l01473"></a><span class="lineno"><a class="line" href="struct_widget_factory_1_1_x_y_z_spinboxes.html"> 1473</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_widget_factory_1_1_x_y_z_spinboxes.html">XYZSpinboxes</a></div>
-<div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;{</div>
-<div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;  <span class="keyword">static</span> <a class="code" href="struct_process_1_1_port_item_layout.html">Process::PortItemLayout</a> layout() noexcept</div>
-<div class="line"><a name="l01476"></a><span class="lineno"> 1476</span>&#160;  {</div>
-<div class="line"><a name="l01477"></a><span class="lineno"> 1477</span>&#160;    <span class="keywordflow">return</span> Process::DefaultControlLayouts::pad();</div>
-<div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160;  }</div>
-<div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160; </div>
-<div class="line"><a name="l01480"></a><span class="lineno"> 1480</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Control_T&gt;</div>
-<div class="line"><a name="l01481"></a><span class="lineno"> 1481</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> make_widget(</div>
-<div class="line"><a name="l01482"></a><span class="lineno"> 1482</span>&#160;      <span class="keyword">const</span> T&amp; slider, Control_T&amp; inlet, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
-<div class="line"><a name="l01483"></a><span class="lineno"> 1483</span>&#160;      QWidget* parent, QObject* context)</div>
-<div class="line"><a name="l01484"></a><span class="lineno"> 1484</span>&#160;  {</div>
-<div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;    SCORE_TODO;</div>
-<div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; <span class="comment">// TODO</span></div>
-<div class="line"><a name="l01487"></a><span class="lineno"> 1487</span>&#160;  }</div>
-<div class="line"><a name="l01488"></a><span class="lineno"> 1488</span>&#160; </div>
-<div class="line"><a name="l01489"></a><span class="lineno"> 1489</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Control_T&gt;</div>
-<div class="line"><a name="l01490"></a><span class="lineno"> 1490</span>&#160;  <span class="keyword">static</span> QGraphicsItem* make_item(</div>
-<div class="line"><a name="l01491"></a><span class="lineno"> 1491</span>&#160;      <span class="keyword">const</span> T&amp; slider, Control_T&amp; inlet, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
-<div class="line"><a name="l01492"></a><span class="lineno"> 1492</span>&#160;      QGraphicsItem* parent, QObject* context)</div>
-<div class="line"><a name="l01493"></a><span class="lineno"> 1493</span>&#160;  {</div>
-<div class="line"><a name="l01494"></a><span class="lineno"> 1494</span>&#160;    <span class="keyword">auto</span> sl = <span class="keyword">new</span> <a class="code" href="classscore_1_1_q_graphics_x_y_z_spinbox_chooser.html">score::QGraphicsXYZSpinboxChooser</a>{<span class="keyword">nullptr</span>};</div>
-<div class="line"><a name="l01495"></a><span class="lineno"> 1495</span>&#160;    bindVec3Domain(slider, inlet, *sl);</div>
-<div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160;    sl-&gt;setValue(</div>
-<div class="line"><a name="l01497"></a><span class="lineno"> 1497</span>&#160;        LinearNormalizer::to01(*sl, ossia::convert&lt;ossia::vec3f&gt;(inlet.value())));</div>
-<div class="line"><a name="l01498"></a><span class="lineno"> 1498</span>&#160; </div>
-<div class="line"><a name="l01499"></a><span class="lineno"> 1499</span>&#160;    QObject::connect(</div>
-<div class="line"><a name="l01500"></a><span class="lineno"> 1500</span>&#160;        sl, &amp;score::QGraphicsXYZSpinboxChooser::sliderMoved, context, [=, &amp;inlet, &amp;ctx] {</div>
-<div class="line"><a name="l01501"></a><span class="lineno"> 1501</span>&#160;          sl-&gt;moving = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01502"></a><span class="lineno"> 1502</span>&#160;          ctx.dispatcher.<a class="code" href="class_ongoing_command_dispatcher.html#a025496b513fab9cdaabbff6b75f4e74b">submit</a>&lt;SetControlValue&lt;Control_T&gt;&gt;(</div>
-<div class="line"><a name="l01503"></a><span class="lineno"> 1503</span>&#160;              inlet, LinearNormalizer::from01(*sl, sl-&gt;value()));</div>
-<div class="line"><a name="l01504"></a><span class="lineno"> 1504</span>&#160;        });</div>
-<div class="line"><a name="l01505"></a><span class="lineno"> 1505</span>&#160;    QObject::connect(</div>
-<div class="line"><a name="l01506"></a><span class="lineno"> 1506</span>&#160;        sl, &amp;score::QGraphicsXYZSpinboxChooser::sliderReleased, context, [&amp;ctx, sl]() {</div>
-<div class="line"><a name="l01507"></a><span class="lineno"> 1507</span>&#160;          ctx.dispatcher.<a class="code" href="class_ongoing_command_dispatcher.html#a98c51c70b84cb27505120b707bbe9b5e">commit</a>();</div>
-<div class="line"><a name="l01508"></a><span class="lineno"> 1508</span>&#160;          sl-&gt;moving = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l01509"></a><span class="lineno"> 1509</span>&#160;        });</div>
-<div class="line"><a name="l01510"></a><span class="lineno"> 1510</span>&#160; </div>
-<div class="line"><a name="l01511"></a><span class="lineno"> 1511</span>&#160;    QObject::connect(&amp;inlet, &amp;Control_T::valueChanged, sl, [=](<span class="keyword">const</span> ossia::value&amp; val) {</div>
-<div class="line"><a name="l01512"></a><span class="lineno"> 1512</span>&#160;      <span class="keywordflow">if</span>(!sl-&gt;moving)</div>
-<div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160;        sl-&gt;setValue(LinearNormalizer::to01(*sl, ossia::convert&lt;ossia::vec3f&gt;(val)));</div>
-<div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;    });</div>
-<div class="line"><a name="l01515"></a><span class="lineno"> 1515</span>&#160; </div>
-<div class="line"><a name="l01516"></a><span class="lineno"> 1516</span>&#160;    <span class="keywordflow">return</span> sl;</div>
-<div class="line"><a name="l01517"></a><span class="lineno"> 1517</span>&#160;  }</div>
-<div class="line"><a name="l01518"></a><span class="lineno"> 1518</span>&#160;};</div>
-<div class="line"><a name="l01519"></a><span class="lineno"> 1519</span>&#160; </div>
-<div class="line"><a name="l01520"></a><span class="lineno"><a class="line" href="struct_widget_factory_1_1_multi_slider.html"> 1520</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_widget_factory_1_1_multi_slider.html">MultiSlider</a></div>
-<div class="line"><a name="l01521"></a><span class="lineno"> 1521</span>&#160;{</div>
-<div class="line"><a name="l01522"></a><span class="lineno"> 1522</span>&#160;  <span class="keyword">static</span> <a class="code" href="struct_process_1_1_port_item_layout.html">Process::PortItemLayout</a> layout() noexcept</div>
-<div class="line"><a name="l01523"></a><span class="lineno"> 1523</span>&#160;  {</div>
-<div class="line"><a name="l01524"></a><span class="lineno"> 1524</span>&#160;    <span class="keywordflow">return</span> Process::DefaultControlLayouts::slider();</div>
-<div class="line"><a name="l01525"></a><span class="lineno"> 1525</span>&#160;  }</div>
-<div class="line"><a name="l01526"></a><span class="lineno"> 1526</span>&#160; </div>
-<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Control_T&gt;</div>
-<div class="line"><a name="l01528"></a><span class="lineno"> 1528</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> make_widget(</div>
-<div class="line"><a name="l01529"></a><span class="lineno"> 1529</span>&#160;      <span class="keyword">const</span> T&amp; slider, Control_T&amp; inlet, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
-<div class="line"><a name="l01530"></a><span class="lineno"> 1530</span>&#160;      QWidget* parent, QObject* context)</div>
-<div class="line"><a name="l01531"></a><span class="lineno"> 1531</span>&#160;  {</div>
-<div class="line"><a name="l01532"></a><span class="lineno"> 1532</span>&#160;    SCORE_TODO;</div>
-<div class="line"><a name="l01533"></a><span class="lineno"> 1533</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; <span class="comment">// TODO</span></div>
-<div class="line"><a name="l01534"></a><span class="lineno"> 1534</span>&#160;  }</div>
-<div class="line"><a name="l01535"></a><span class="lineno"> 1535</span>&#160; </div>
-<div class="line"><a name="l01536"></a><span class="lineno"> 1536</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Control_T&gt;</div>
-<div class="line"><a name="l01537"></a><span class="lineno"> 1537</span>&#160;  <span class="keyword">static</span> QGraphicsItem* make_item(</div>
-<div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160;      <span class="keyword">const</span> T&amp; slider, Control_T&amp; inlet, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
-<div class="line"><a name="l01539"></a><span class="lineno"> 1539</span>&#160;      QGraphicsItem* parent, QObject* context)</div>
-<div class="line"><a name="l01540"></a><span class="lineno"> 1540</span>&#160;  {</div>
-<div class="line"><a name="l01541"></a><span class="lineno"> 1541</span>&#160;    <span class="keyword">auto</span> sl = <span class="keyword">new</span> <a class="code" href="classscore_1_1_q_graphics_multi_slider.html">score::QGraphicsMultiSlider</a>{<span class="keyword">nullptr</span>};</div>
-<div class="line"><a name="l01542"></a><span class="lineno"> 1542</span>&#160;    sl-&gt;setValue(inlet.value());</div>
-<div class="line"><a name="l01543"></a><span class="lineno"> 1543</span>&#160;    sl-&gt;setRange(inlet.domain());</div>
-<div class="line"><a name="l01544"></a><span class="lineno"> 1544</span>&#160; </div>
-<div class="line"><a name="l01545"></a><span class="lineno"> 1545</span>&#160;    QObject::connect(</div>
-<div class="line"><a name="l01546"></a><span class="lineno"> 1546</span>&#160;        sl, &amp;score::QGraphicsMultiSlider::sliderMoved, context, [=, &amp;inlet, &amp;ctx] {</div>
-<div class="line"><a name="l01547"></a><span class="lineno"> 1547</span>&#160;          sl-&gt;moving = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01548"></a><span class="lineno"> 1548</span>&#160;          ctx.dispatcher.<a class="code" href="class_ongoing_command_dispatcher.html#a025496b513fab9cdaabbff6b75f4e74b">submit</a>&lt;SetControlValue&lt;Control_T&gt;&gt;(inlet, sl-&gt;value());</div>
-<div class="line"><a name="l01549"></a><span class="lineno"> 1549</span>&#160;        });</div>
-<div class="line"><a name="l01550"></a><span class="lineno"> 1550</span>&#160;    QObject::connect(</div>
-<div class="line"><a name="l01551"></a><span class="lineno"> 1551</span>&#160;        sl, &amp;score::QGraphicsMultiSlider::sliderReleased, context, [&amp;ctx, sl]() {</div>
-<div class="line"><a name="l01552"></a><span class="lineno"> 1552</span>&#160;          ctx.dispatcher.<a class="code" href="class_ongoing_command_dispatcher.html#a98c51c70b84cb27505120b707bbe9b5e">commit</a>();</div>
-<div class="line"><a name="l01553"></a><span class="lineno"> 1553</span>&#160;          sl-&gt;moving = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l01554"></a><span class="lineno"> 1554</span>&#160;        });</div>
-<div class="line"><a name="l01555"></a><span class="lineno"> 1555</span>&#160; </div>
-<div class="line"><a name="l01556"></a><span class="lineno"> 1556</span>&#160;    QObject::connect(&amp;inlet, &amp;Control_T::valueChanged, sl, [=](<span class="keyword">const</span> ossia::value&amp; val) {</div>
-<div class="line"><a name="l01557"></a><span class="lineno"> 1557</span>&#160;      <span class="keywordflow">if</span>(!sl-&gt;moving)</div>
-<div class="line"><a name="l01558"></a><span class="lineno"> 1558</span>&#160;        sl-&gt;setValue(std::move(val));</div>
-<div class="line"><a name="l01559"></a><span class="lineno"> 1559</span>&#160;    });</div>
-<div class="line"><a name="l01560"></a><span class="lineno"> 1560</span>&#160; </div>
-<div class="line"><a name="l01561"></a><span class="lineno"> 1561</span>&#160;    <span class="keywordflow">return</span> sl;</div>
-<div class="line"><a name="l01562"></a><span class="lineno"> 1562</span>&#160;  }</div>
-<div class="line"><a name="l01563"></a><span class="lineno"> 1563</span>&#160;};</div>
-<div class="line"><a name="l01564"></a><span class="lineno"> 1564</span>&#160; </div>
-<div class="line"><a name="l01566"></a><span class="lineno"> 1566</span>&#160;<span class="keyword">using</span> <a class="code" href="struct_widget_factory_1_1_float_control.html">Bargraph</a> = <a class="code" href="struct_widget_factory_1_1_float_control.html">FloatDisplay</a>;</div>
-<div class="line"><a name="l01567"></a><span class="lineno"> 1567</span>&#160;}</div>
+<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;  <span class="keyword">static</span> QGraphicsItem* make_item(</div>
+<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;      <span class="keyword">const</span> Process::XYSpinboxes&amp; slider, Process::XYSpinboxes&amp; inlet,</div>
+<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;      <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx, QGraphicsItem* parent, QObject* context)</div>
+<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;  {</div>
+<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;    <span class="keyword">using</span> Control_T = Process::XYSpinboxes;</div>
+<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;    <span class="keywordflow">if</span>(slider.integral)</div>
+<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;    {</div>
+<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;      <span class="keyword">auto</span> sl = <span class="keyword">new</span> <a class="code" href="classscore_1_1_q_graphics_int_x_y_spinbox_chooser.html">score::QGraphicsIntXYSpinboxChooser</a>{<span class="keyword">false</span>, <span class="keyword">nullptr</span>};</div>
+<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;      bindVec2Domain(slider, inlet, *sl);</div>
+<div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;      sl-&gt;setValue(ossia::convert&lt;ossia::vec2f&gt;(inlet.value()));</div>
+<div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160; </div>
+<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;      QObject::connect(</div>
+<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;          sl, &amp;score::QGraphicsIntXYSpinboxChooser::sliderMoved, context,</div>
+<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;          [=, &amp;inlet, &amp;ctx] {</div>
+<div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;        sl-&gt;moving = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;        ctx.dispatcher.<a class="code" href="class_ongoing_command_dispatcher.html#a025496b513fab9cdaabbff6b75f4e74b">submit</a>&lt;SetControlValue&lt;Control_T&gt;&gt;(inlet, sl-&gt;value());</div>
+<div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;      });</div>
+<div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;      QObject::connect(</div>
+<div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;          sl, &amp;score::QGraphicsIntXYSpinboxChooser::sliderReleased, context,</div>
+<div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;          [&amp;ctx, sl]() {</div>
+<div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;        ctx.dispatcher.<a class="code" href="class_ongoing_command_dispatcher.html#a98c51c70b84cb27505120b707bbe9b5e">commit</a>();</div>
+<div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;        sl-&gt;moving = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;      });</div>
+<div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160; </div>
+<div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;      QObject::connect(</div>
+<div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;          &amp;inlet, &amp;Control_T::valueChanged, sl, [=](<span class="keyword">const</span> ossia::value&amp; val) {</div>
+<div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;        <span class="keywordflow">if</span>(!sl-&gt;moving)</div>
+<div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;          sl-&gt;setValue(ossia::convert&lt;ossia::vec2f&gt;(val));</div>
+<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;      });</div>
+<div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160; </div>
+<div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;      <span class="keywordflow">return</span> sl;</div>
+<div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;    }</div>
+<div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;    {</div>
+<div class="line"><a name="l01476"></a><span class="lineno"> 1476</span>&#160;      <span class="keyword">auto</span> sl = <span class="keyword">new</span> <a class="code" href="classscore_1_1_q_graphics_x_y_spinbox_chooser.html">score::QGraphicsXYSpinboxChooser</a>{<span class="keyword">false</span>, <span class="keyword">nullptr</span>};</div>
+<div class="line"><a name="l01477"></a><span class="lineno"> 1477</span>&#160;      bindVec2Domain(slider, inlet, *sl);</div>
+<div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160;      sl-&gt;setValue(</div>
+<div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160;          LinearNormalizer::to01(*sl, ossia::convert&lt;ossia::vec2f&gt;(inlet.value())));</div>
+<div class="line"><a name="l01480"></a><span class="lineno"> 1480</span>&#160; </div>
+<div class="line"><a name="l01481"></a><span class="lineno"> 1481</span>&#160;      QObject::connect(</div>
+<div class="line"><a name="l01482"></a><span class="lineno"> 1482</span>&#160;          sl, &amp;score::QGraphicsXYSpinboxChooser::sliderMoved, context,</div>
+<div class="line"><a name="l01483"></a><span class="lineno"> 1483</span>&#160;          [=, &amp;inlet, &amp;ctx] {</div>
+<div class="line"><a name="l01484"></a><span class="lineno"> 1484</span>&#160;        sl-&gt;moving = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;        ctx.dispatcher.<a class="code" href="class_ongoing_command_dispatcher.html#a025496b513fab9cdaabbff6b75f4e74b">submit</a>&lt;SetControlValue&lt;Control_T&gt;&gt;(</div>
+<div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160;            inlet, LinearNormalizer::from01(*sl, sl-&gt;value()));</div>
+<div class="line"><a name="l01487"></a><span class="lineno"> 1487</span>&#160;      });</div>
+<div class="line"><a name="l01488"></a><span class="lineno"> 1488</span>&#160;      QObject::connect(</div>
+<div class="line"><a name="l01489"></a><span class="lineno"> 1489</span>&#160;          sl, &amp;score::QGraphicsXYSpinboxChooser::sliderReleased, context, [&amp;ctx, sl]() {</div>
+<div class="line"><a name="l01490"></a><span class="lineno"> 1490</span>&#160;        ctx.dispatcher.<a class="code" href="class_ongoing_command_dispatcher.html#a98c51c70b84cb27505120b707bbe9b5e">commit</a>();</div>
+<div class="line"><a name="l01491"></a><span class="lineno"> 1491</span>&#160;        sl-&gt;moving = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01492"></a><span class="lineno"> 1492</span>&#160;      });</div>
+<div class="line"><a name="l01493"></a><span class="lineno"> 1493</span>&#160; </div>
+<div class="line"><a name="l01494"></a><span class="lineno"> 1494</span>&#160;      QObject::connect(</div>
+<div class="line"><a name="l01495"></a><span class="lineno"> 1495</span>&#160;          &amp;inlet, &amp;Control_T::valueChanged, sl, [=](<span class="keyword">const</span> ossia::value&amp; val) {</div>
+<div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160;        <span class="keywordflow">if</span>(!sl-&gt;moving)</div>
+<div class="line"><a name="l01497"></a><span class="lineno"> 1497</span>&#160;          sl-&gt;setValue(LinearNormalizer::to01(*sl, ossia::convert&lt;ossia::vec2f&gt;(val)));</div>
+<div class="line"><a name="l01498"></a><span class="lineno"> 1498</span>&#160;      });</div>
+<div class="line"><a name="l01499"></a><span class="lineno"> 1499</span>&#160; </div>
+<div class="line"><a name="l01500"></a><span class="lineno"> 1500</span>&#160;      <span class="keywordflow">return</span> sl;</div>
+<div class="line"><a name="l01501"></a><span class="lineno"> 1501</span>&#160;    }</div>
+<div class="line"><a name="l01502"></a><span class="lineno"> 1502</span>&#160;  }</div>
+<div class="line"><a name="l01503"></a><span class="lineno"> 1503</span>&#160;};</div>
+<div class="line"><a name="l01504"></a><span class="lineno"> 1504</span>&#160; </div>
+<div class="line"><a name="l01505"></a><span class="lineno"><a class="line" href="struct_widget_factory_1_1_x_y_z_spinboxes.html"> 1505</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_widget_factory_1_1_x_y_z_spinboxes.html">XYZSpinboxes</a></div>
+<div class="line"><a name="l01506"></a><span class="lineno"> 1506</span>&#160;{</div>
+<div class="line"><a name="l01507"></a><span class="lineno"> 1507</span>&#160;  <span class="keyword">static</span> <a class="code" href="struct_process_1_1_port_item_layout.html">Process::PortItemLayout</a> layout() noexcept</div>
+<div class="line"><a name="l01508"></a><span class="lineno"> 1508</span>&#160;  {</div>
+<div class="line"><a name="l01509"></a><span class="lineno"> 1509</span>&#160;    <span class="keywordflow">return</span> Process::DefaultControlLayouts::pad();</div>
+<div class="line"><a name="l01510"></a><span class="lineno"> 1510</span>&#160;  }</div>
+<div class="line"><a name="l01511"></a><span class="lineno"> 1511</span>&#160; </div>
+<div class="line"><a name="l01512"></a><span class="lineno"> 1512</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Control_T&gt;</div>
+<div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> make_widget(</div>
+<div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;      <span class="keyword">const</span> T&amp; slider, Control_T&amp; inlet, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
+<div class="line"><a name="l01515"></a><span class="lineno"> 1515</span>&#160;      QWidget* parent, QObject* context)</div>
+<div class="line"><a name="l01516"></a><span class="lineno"> 1516</span>&#160;  {</div>
+<div class="line"><a name="l01517"></a><span class="lineno"> 1517</span>&#160;    SCORE_TODO;</div>
+<div class="line"><a name="l01518"></a><span class="lineno"> 1518</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; <span class="comment">// TODO</span></div>
+<div class="line"><a name="l01519"></a><span class="lineno"> 1519</span>&#160;  }</div>
+<div class="line"><a name="l01520"></a><span class="lineno"> 1520</span>&#160; </div>
+<div class="line"><a name="l01521"></a><span class="lineno"> 1521</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Control_T&gt;</div>
+<div class="line"><a name="l01522"></a><span class="lineno"> 1522</span>&#160;  <span class="keyword">static</span> QGraphicsItem* make_item(</div>
+<div class="line"><a name="l01523"></a><span class="lineno"> 1523</span>&#160;      <span class="keyword">const</span> T&amp; slider, Control_T&amp; inlet, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
+<div class="line"><a name="l01524"></a><span class="lineno"> 1524</span>&#160;      QGraphicsItem* parent, QObject* context)</div>
+<div class="line"><a name="l01525"></a><span class="lineno"> 1525</span>&#160;  {</div>
+<div class="line"><a name="l01526"></a><span class="lineno"> 1526</span>&#160;    <span class="keyword">auto</span> sl = <span class="keyword">new</span> <a class="code" href="classscore_1_1_q_graphics_x_y_z_spinbox_chooser.html">score::QGraphicsXYZSpinboxChooser</a>{<span class="keyword">nullptr</span>};</div>
+<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160;    bindVec3Domain(slider, inlet, *sl);</div>
+<div class="line"><a name="l01528"></a><span class="lineno"> 1528</span>&#160;    sl-&gt;setValue(</div>
+<div class="line"><a name="l01529"></a><span class="lineno"> 1529</span>&#160;        LinearNormalizer::to01(*sl, ossia::convert&lt;ossia::vec3f&gt;(inlet.value())));</div>
+<div class="line"><a name="l01530"></a><span class="lineno"> 1530</span>&#160; </div>
+<div class="line"><a name="l01531"></a><span class="lineno"> 1531</span>&#160;    QObject::connect(</div>
+<div class="line"><a name="l01532"></a><span class="lineno"> 1532</span>&#160;        sl, &amp;score::QGraphicsXYZSpinboxChooser::sliderMoved, context, [=, &amp;inlet, &amp;ctx] {</div>
+<div class="line"><a name="l01533"></a><span class="lineno"> 1533</span>&#160;          sl-&gt;moving = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01534"></a><span class="lineno"> 1534</span>&#160;          ctx.dispatcher.<a class="code" href="class_ongoing_command_dispatcher.html#a025496b513fab9cdaabbff6b75f4e74b">submit</a>&lt;SetControlValue&lt;Control_T&gt;&gt;(</div>
+<div class="line"><a name="l01535"></a><span class="lineno"> 1535</span>&#160;              inlet, LinearNormalizer::from01(*sl, sl-&gt;value()));</div>
+<div class="line"><a name="l01536"></a><span class="lineno"> 1536</span>&#160;        });</div>
+<div class="line"><a name="l01537"></a><span class="lineno"> 1537</span>&#160;    QObject::connect(</div>
+<div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160;        sl, &amp;score::QGraphicsXYZSpinboxChooser::sliderReleased, context, [&amp;ctx, sl]() {</div>
+<div class="line"><a name="l01539"></a><span class="lineno"> 1539</span>&#160;          ctx.dispatcher.<a class="code" href="class_ongoing_command_dispatcher.html#a98c51c70b84cb27505120b707bbe9b5e">commit</a>();</div>
+<div class="line"><a name="l01540"></a><span class="lineno"> 1540</span>&#160;          sl-&gt;moving = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01541"></a><span class="lineno"> 1541</span>&#160;        });</div>
+<div class="line"><a name="l01542"></a><span class="lineno"> 1542</span>&#160; </div>
+<div class="line"><a name="l01543"></a><span class="lineno"> 1543</span>&#160;    QObject::connect(&amp;inlet, &amp;Control_T::valueChanged, sl, [=](<span class="keyword">const</span> ossia::value&amp; val) {</div>
+<div class="line"><a name="l01544"></a><span class="lineno"> 1544</span>&#160;      <span class="keywordflow">if</span>(!sl-&gt;moving)</div>
+<div class="line"><a name="l01545"></a><span class="lineno"> 1545</span>&#160;        sl-&gt;setValue(LinearNormalizer::to01(*sl, ossia::convert&lt;ossia::vec3f&gt;(val)));</div>
+<div class="line"><a name="l01546"></a><span class="lineno"> 1546</span>&#160;    });</div>
+<div class="line"><a name="l01547"></a><span class="lineno"> 1547</span>&#160; </div>
+<div class="line"><a name="l01548"></a><span class="lineno"> 1548</span>&#160;    <span class="keywordflow">return</span> sl;</div>
+<div class="line"><a name="l01549"></a><span class="lineno"> 1549</span>&#160;  }</div>
+<div class="line"><a name="l01550"></a><span class="lineno"> 1550</span>&#160;};</div>
+<div class="line"><a name="l01551"></a><span class="lineno"> 1551</span>&#160; </div>
+<div class="line"><a name="l01552"></a><span class="lineno"><a class="line" href="struct_widget_factory_1_1_multi_slider.html"> 1552</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_widget_factory_1_1_multi_slider.html">MultiSlider</a></div>
+<div class="line"><a name="l01553"></a><span class="lineno"> 1553</span>&#160;{</div>
+<div class="line"><a name="l01554"></a><span class="lineno"> 1554</span>&#160;  <span class="keyword">static</span> <a class="code" href="struct_process_1_1_port_item_layout.html">Process::PortItemLayout</a> layout() noexcept</div>
+<div class="line"><a name="l01555"></a><span class="lineno"> 1555</span>&#160;  {</div>
+<div class="line"><a name="l01556"></a><span class="lineno"> 1556</span>&#160;    <span class="keywordflow">return</span> Process::DefaultControlLayouts::slider();</div>
+<div class="line"><a name="l01557"></a><span class="lineno"> 1557</span>&#160;  }</div>
+<div class="line"><a name="l01558"></a><span class="lineno"> 1558</span>&#160; </div>
+<div class="line"><a name="l01559"></a><span class="lineno"> 1559</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Control_T&gt;</div>
+<div class="line"><a name="l01560"></a><span class="lineno"> 1560</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> make_widget(</div>
+<div class="line"><a name="l01561"></a><span class="lineno"> 1561</span>&#160;      <span class="keyword">const</span> T&amp; slider, Control_T&amp; inlet, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
+<div class="line"><a name="l01562"></a><span class="lineno"> 1562</span>&#160;      QWidget* parent, QObject* context)</div>
+<div class="line"><a name="l01563"></a><span class="lineno"> 1563</span>&#160;  {</div>
+<div class="line"><a name="l01564"></a><span class="lineno"> 1564</span>&#160;    SCORE_TODO;</div>
+<div class="line"><a name="l01565"></a><span class="lineno"> 1565</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; <span class="comment">// TODO</span></div>
+<div class="line"><a name="l01566"></a><span class="lineno"> 1566</span>&#160;  }</div>
+<div class="line"><a name="l01567"></a><span class="lineno"> 1567</span>&#160; </div>
+<div class="line"><a name="l01568"></a><span class="lineno"> 1568</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Control_T&gt;</div>
+<div class="line"><a name="l01569"></a><span class="lineno"> 1569</span>&#160;  <span class="keyword">static</span> QGraphicsItem* make_item(</div>
+<div class="line"><a name="l01570"></a><span class="lineno"> 1570</span>&#160;      <span class="keyword">const</span> T&amp; slider, Control_T&amp; inlet, <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
+<div class="line"><a name="l01571"></a><span class="lineno"> 1571</span>&#160;      QGraphicsItem* parent, QObject* context)</div>
+<div class="line"><a name="l01572"></a><span class="lineno"> 1572</span>&#160;  {</div>
+<div class="line"><a name="l01573"></a><span class="lineno"> 1573</span>&#160;    <span class="keyword">auto</span> sl = <span class="keyword">new</span> <a class="code" href="classscore_1_1_q_graphics_multi_slider.html">score::QGraphicsMultiSlider</a>{<span class="keyword">nullptr</span>};</div>
+<div class="line"><a name="l01574"></a><span class="lineno"> 1574</span>&#160;    sl-&gt;setValue(inlet.value());</div>
+<div class="line"><a name="l01575"></a><span class="lineno"> 1575</span>&#160;    sl-&gt;setRange(inlet.domain());</div>
+<div class="line"><a name="l01576"></a><span class="lineno"> 1576</span>&#160; </div>
+<div class="line"><a name="l01577"></a><span class="lineno"> 1577</span>&#160;    QObject::connect(</div>
+<div class="line"><a name="l01578"></a><span class="lineno"> 1578</span>&#160;        sl, &amp;score::QGraphicsMultiSlider::sliderMoved, context, [=, &amp;inlet, &amp;ctx] {</div>
+<div class="line"><a name="l01579"></a><span class="lineno"> 1579</span>&#160;          sl-&gt;moving = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01580"></a><span class="lineno"> 1580</span>&#160;          ctx.dispatcher.<a class="code" href="class_ongoing_command_dispatcher.html#a025496b513fab9cdaabbff6b75f4e74b">submit</a>&lt;SetControlValue&lt;Control_T&gt;&gt;(inlet, sl-&gt;value());</div>
+<div class="line"><a name="l01581"></a><span class="lineno"> 1581</span>&#160;        });</div>
+<div class="line"><a name="l01582"></a><span class="lineno"> 1582</span>&#160;    QObject::connect(</div>
+<div class="line"><a name="l01583"></a><span class="lineno"> 1583</span>&#160;        sl, &amp;score::QGraphicsMultiSlider::sliderReleased, context, [&amp;ctx, sl]() {</div>
+<div class="line"><a name="l01584"></a><span class="lineno"> 1584</span>&#160;          ctx.dispatcher.<a class="code" href="class_ongoing_command_dispatcher.html#a98c51c70b84cb27505120b707bbe9b5e">commit</a>();</div>
+<div class="line"><a name="l01585"></a><span class="lineno"> 1585</span>&#160;          sl-&gt;moving = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01586"></a><span class="lineno"> 1586</span>&#160;        });</div>
+<div class="line"><a name="l01587"></a><span class="lineno"> 1587</span>&#160; </div>
+<div class="line"><a name="l01588"></a><span class="lineno"> 1588</span>&#160;    QObject::connect(&amp;inlet, &amp;Control_T::valueChanged, sl, [=](<span class="keyword">const</span> ossia::value&amp; val) {</div>
+<div class="line"><a name="l01589"></a><span class="lineno"> 1589</span>&#160;      <span class="keywordflow">if</span>(!sl-&gt;moving)</div>
+<div class="line"><a name="l01590"></a><span class="lineno"> 1590</span>&#160;        sl-&gt;setValue(std::move(val));</div>
+<div class="line"><a name="l01591"></a><span class="lineno"> 1591</span>&#160;    });</div>
+<div class="line"><a name="l01592"></a><span class="lineno"> 1592</span>&#160; </div>
+<div class="line"><a name="l01593"></a><span class="lineno"> 1593</span>&#160;    <span class="keywordflow">return</span> sl;</div>
+<div class="line"><a name="l01594"></a><span class="lineno"> 1594</span>&#160;  }</div>
+<div class="line"><a name="l01595"></a><span class="lineno"> 1595</span>&#160;};</div>
+<div class="line"><a name="l01596"></a><span class="lineno"> 1596</span>&#160; </div>
+<div class="line"><a name="l01598"></a><span class="lineno"> 1598</span>&#160;<span class="keyword">using</span> <a class="code" href="struct_widget_factory_1_1_float_control.html">Bargraph</a> = <a class="code" href="struct_widget_factory_1_1_float_control.html">FloatDisplay</a>;</div>
+<div class="line"><a name="l01599"></a><span class="lineno"> 1599</span>&#160;}</div>
 <div class="ttc" id="aclass_command_dispatcher_html"><div class="ttname"><a href="class_command_dispatcher.html">CommandDispatcher</a></div><div class="ttdoc">The CommandDispatcher class.</div><div class="ttdef"><b>Definition:</b> CommandDispatcher.hpp:13</div></div>
 <div class="ttc" id="aclass_identified_object_abstract_html_a837d8cf72964d86c675a2aac0dba2761"><div class="ttname"><a href="class_identified_object_abstract.html#a837d8cf72964d86c675a2aac0dba2761">IdentifiedObjectAbstract::identified_object_destroying</a></div><div class="ttdeci">void identified_object_destroying(IdentifiedObjectAbstract *o)</div><div class="ttdoc">To be called by subclasses.</div></div>
 <div class="ttc" id="aclass_ongoing_command_dispatcher_html_a025496b513fab9cdaabbff6b75f4e74b"><div class="ttname"><a href="class_ongoing_command_dispatcher.html#a025496b513fab9cdaabbff6b75f4e74b">OngoingCommandDispatcher::submit</a></div><div class="ttdeci">void submit(Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition:</b> OngoingCommandDispatcher.hpp:37</div></div>
@@ -1680,6 +1712,7 @@ $(document).ready(function(){initNavTree('plugins_2score-lib-process_2_process_2
 <div class="ttc" id="aclassscore_1_1_q_graphics_h_s_v_chooser_html"><div class="ttname"><a href="classscore_1_1_q_graphics_h_s_v_chooser.html">score::QGraphicsHSVChooser</a></div><div class="ttdef"><b>Definition:</b> QGraphicsHSVChooser.hpp:18</div></div>
 <div class="ttc" id="aclassscore_1_1_q_graphics_int_slider_html"><div class="ttname"><a href="classscore_1_1_q_graphics_int_slider.html">score::QGraphicsIntSlider</a></div><div class="ttdef"><b>Definition:</b> QGraphicsIntSlider.hpp:17</div></div>
 <div class="ttc" id="aclassscore_1_1_q_graphics_int_spinbox_html"><div class="ttname"><a href="classscore_1_1_q_graphics_int_spinbox.html">score::QGraphicsIntSpinbox</a></div><div class="ttdef"><b>Definition:</b> QGraphicsSpinbox.hpp:62</div></div>
+<div class="ttc" id="aclassscore_1_1_q_graphics_int_x_y_spinbox_chooser_html"><div class="ttname"><a href="classscore_1_1_q_graphics_int_x_y_spinbox_chooser.html">score::QGraphicsIntXYSpinboxChooser</a></div><div class="ttdef"><b>Definition:</b> QGraphicsXYSpinbox.hpp:58</div></div>
 <div class="ttc" id="aclassscore_1_1_q_graphics_multi_slider_html"><div class="ttname"><a href="classscore_1_1_q_graphics_multi_slider.html">score::QGraphicsMultiSlider</a></div><div class="ttdef"><b>Definition:</b> QGraphicsMultiSlider.hpp:24</div></div>
 <div class="ttc" id="aclassscore_1_1_q_graphics_pixmap_enum_html"><div class="ttname"><a href="classscore_1_1_q_graphics_pixmap_enum.html">score::QGraphicsPixmapEnum</a></div><div class="ttdef"><b>Definition:</b> QGraphicsPixmapEnum.hpp:17</div></div>
 <div class="ttc" id="aclassscore_1_1_q_graphics_range_slider_html"><div class="ttname"><a href="classscore_1_1_q_graphics_range_slider.html">score::QGraphicsRangeSlider</a></div><div class="ttdef"><b>Definition:</b> QGraphicsRangeSlider.hpp:21</div></div>
@@ -1711,7 +1744,7 @@ $(document).ready(function(){initNavTree('plugins_2score-lib-process_2_process_2
 <div class="ttc" id="astruct_widget_factory_1_1_int_slider_html"><div class="ttname"><a href="struct_widget_factory_1_1_int_slider.html">WidgetFactory::IntSlider</a></div><div class="ttdef"><b>Definition:</b> plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp:224</div></div>
 <div class="ttc" id="astruct_widget_factory_1_1_int_spin_box_html"><div class="ttname"><a href="struct_widget_factory_1_1_int_spin_box.html">WidgetFactory::IntSpinBox</a></div><div class="ttdef"><b>Definition:</b> plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp:449</div></div>
 <div class="ttc" id="astruct_widget_factory_1_1_line_edit_html"><div class="ttname"><a href="struct_widget_factory_1_1_line_edit.html">WidgetFactory::LineEdit</a></div><div class="ttdef"><b>Definition:</b> plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp:866</div></div>
-<div class="ttc" id="astruct_widget_factory_1_1_multi_slider_html"><div class="ttname"><a href="struct_widget_factory_1_1_multi_slider.html">WidgetFactory::MultiSlider</a></div><div class="ttdef"><b>Definition:</b> plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp:1521</div></div>
+<div class="ttc" id="astruct_widget_factory_1_1_multi_slider_html"><div class="ttname"><a href="struct_widget_factory_1_1_multi_slider.html">WidgetFactory::MultiSlider</a></div><div class="ttdef"><b>Definition:</b> plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp:1553</div></div>
 <div class="ttc" id="astruct_widget_factory_1_1_program_edit_html"><div class="ttname"><a href="struct_widget_factory_1_1_program_edit.html">WidgetFactory::ProgramEdit</a></div><div class="ttdef"><b>Definition:</b> plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp:962</div></div>
 <div class="ttc" id="astruct_widget_factory_1_1_program_port_script_dialog_html"><div class="ttname"><a href="struct_widget_factory_1_1_program_port_script_dialog.html">WidgetFactory::ProgramPortScriptDialog</a></div><div class="ttdef"><b>Definition:</b> plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp:934</div></div>
 <div class="ttc" id="astruct_widget_factory_1_1_time_chooser_html"><div class="ttname"><a href="struct_widget_factory_1_1_time_chooser.html">WidgetFactory::TimeChooser</a></div><div class="ttdef"><b>Definition:</b> plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp:589</div></div>
@@ -1720,7 +1753,7 @@ $(document).ready(function(){initNavTree('plugins_2score-lib-process_2_process_2
 <div class="ttc" id="astruct_widget_factory_1_1_x_y_slider_html"><div class="ttname"><a href="struct_widget_factory_1_1_x_y_slider.html">WidgetFactory::XYSlider</a></div><div class="ttdef"><b>Definition:</b> plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp:1336</div></div>
 <div class="ttc" id="astruct_widget_factory_1_1_x_y_spinboxes_html"><div class="ttname"><a href="struct_widget_factory_1_1_x_y_spinboxes.html">WidgetFactory::XYSpinboxes</a></div><div class="ttdef"><b>Definition:</b> plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp:1427</div></div>
 <div class="ttc" id="astruct_widget_factory_1_1_x_y_z_slider_html"><div class="ttname"><a href="struct_widget_factory_1_1_x_y_z_slider.html">WidgetFactory::XYZSlider</a></div><div class="ttdef"><b>Definition:</b> plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp:1382</div></div>
-<div class="ttc" id="astruct_widget_factory_1_1_x_y_z_spinboxes_html"><div class="ttname"><a href="struct_widget_factory_1_1_x_y_z_spinboxes.html">WidgetFactory::XYZSpinboxes</a></div><div class="ttdef"><b>Definition:</b> plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp:1474</div></div>
+<div class="ttc" id="astruct_widget_factory_1_1_x_y_z_spinboxes_html"><div class="ttname"><a href="struct_widget_factory_1_1_x_y_z_spinboxes.html">WidgetFactory::XYZSpinboxes</a></div><div class="ttdef"><b>Definition:</b> plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp:1506</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:18</div></div>
 <div class="ttc" id="astructscore_1_1_toggle_button_html"><div class="ttname"><a href="structscore_1_1_toggle_button.html">score::ToggleButton</a></div><div class="ttdef"><b>Definition:</b> lib/score/widgets/ControlWidgets.hpp:13</div></div>
 <div class="ttc" id="astructscore_1_1_value_double_slider_html"><div class="ttname"><a href="structscore_1_1_value_double_slider.html">score::ValueDoubleSlider</a></div><div class="ttdef"><b>Definition:</b> lib/score/widgets/ControlWidgets.hpp:72</div></div>

@@ -1082,8 +1082,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -2534,6 +2534,7 @@ var hierarchy =
       ] ],
       [ "score::QGraphicsHSVChooser", "classscore_1_1_q_graphics_h_s_v_chooser.html", null ],
       [ "score::QGraphicsIntSpinbox", "classscore_1_1_q_graphics_int_spinbox.html", null ],
+      [ "score::QGraphicsIntXYSpinboxChooser", "classscore_1_1_q_graphics_int_x_y_spinbox_chooser.html", null ],
       [ "score::QGraphicsKnob", "classscore_1_1_q_graphics_knob.html", [
         [ "oscr::CustomTextGraphicsKnob< Field >", "classoscr_1_1_custom_text_graphics_knob.html", null ]
       ] ],
@@ -3020,6 +3021,7 @@ var hierarchy =
       [ "score::QGraphicsHSVChooser", "classscore_1_1_q_graphics_h_s_v_chooser.html", null ],
       [ "score::QGraphicsIntSlider", "classscore_1_1_q_graphics_int_slider.html", null ],
       [ "score::QGraphicsIntSpinbox", "classscore_1_1_q_graphics_int_spinbox.html", null ],
+      [ "score::QGraphicsIntXYSpinboxChooser", "classscore_1_1_q_graphics_int_x_y_spinbox_chooser.html", null ],
       [ "score::QGraphicsKnob", "classscore_1_1_q_graphics_knob.html", null ],
       [ "score::QGraphicsLogKnob", "classscore_1_1_q_graphics_log_knob.html", null ],
       [ "score::QGraphicsLogSlider", "classscore_1_1_q_graphics_log_slider.html", null ],

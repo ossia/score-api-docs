@@ -166,7 +166,7 @@ $(document).ready(function(){initNavTree('_default_graphics_spinbox_impl_8hpp_so
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;             - speed * InfiniteScroller::currentDelta</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                   / double(InfiniteScroller::currentGeometry.height());</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    v = (v - <span class="keyword">self</span>.min) / (<span class="keyword">self</span>.max - <span class="keyword">self</span>.min);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> v;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> std::clamp(v, 0., 1.);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>

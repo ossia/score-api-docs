@@ -2060,6 +2060,7 @@ var annotated_dup =
       [ "QGraphicsToggle", "classscore_1_1_q_graphics_toggle.html", "classscore_1_1_q_graphics_toggle" ],
       [ "QGraphicsXYChooser", "classscore_1_1_q_graphics_x_y_chooser.html", "classscore_1_1_q_graphics_x_y_chooser" ],
       [ "QGraphicsXYSpinboxChooser", "classscore_1_1_q_graphics_x_y_spinbox_chooser.html", "classscore_1_1_q_graphics_x_y_spinbox_chooser" ],
+      [ "QGraphicsIntXYSpinboxChooser", "classscore_1_1_q_graphics_int_x_y_spinbox_chooser.html", "classscore_1_1_q_graphics_int_x_y_spinbox_chooser" ],
       [ "QGraphicsXYZChooser", "classscore_1_1_q_graphics_x_y_z_chooser.html", "classscore_1_1_q_graphics_x_y_z_chooser" ],
       [ "QGraphicsXYZSpinboxChooser", "classscore_1_1_q_graphics_x_y_z_spinbox_chooser.html", "classscore_1_1_q_graphics_x_y_z_spinbox_chooser" ],
       [ "ZoomItem", "classscore_1_1_zoom_item.html", "classscore_1_1_zoom_item" ],
