@@ -1,5 +1,6 @@
 var NAVTREEINDEX64 =
 {
+"struct_gfx_1_1_kinect2_1_1kinect2__settings.html#a65b17edcc50d3ef07f528c604cd6ade1":[12,0,18,2,0,0],
 "struct_gfx_1_1_kinect2_1_1kinect2__settings.html#af9f3825a300b079ef3555ec62188500d":[12,0,18,2,0,1],
 "struct_gfx_1_1_libav_encoder.html":[12,0,18,49],
 "struct_gfx_1_1_libav_encoder.html#a0624640e113c37d0309159e50ad7e3b9":[12,0,18,49,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX64 =
 "struct_gfx_1_1exec__control.html":[12,0,18,26],
 "struct_gfx_1_1exec__control.html#a348a63b00b8e0a8db68972b65a3156b6":[12,0,18,26,1],
 "struct_gfx_1_1exec__control.html#af4c7ffae4065eece5b13d0a39ecc3850":[12,0,18,26,0],
-"struct_gfx_1_1exec__control.html#afd44814b4fed5389dca22c883eaef71c":[12,0,18,26,2],
-"struct_hierarchical_base_scenario_1_1_event_pair.html":[12,0,121,0]
+"struct_gfx_1_1exec__control.html#afd44814b4fed5389dca22c883eaef71c":[12,0,18,26,2]
 };

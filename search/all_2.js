@@ -221,8 +221,9 @@ var searchData=
   ['customfloatcontrolbase_422',['CustomFloatControlBase',['../structoscr_1_1_custom_float_control_base.html',1,'oscr']]],
   ['customitem_423',['CustomItem',['../classoscr_1_1_custom_item.html',1,'oscr']]],
   ['custommesh_424',['CustomMesh',['../classscore_1_1gfx_1_1_custom_mesh.html',1,'score::gfx']]],
-  ['customtextgraphicsknob_425',['CustomTextGraphicsKnob',['../classoscr_1_1_custom_text_graphics_knob.html',1,'oscr']]],
-  ['customtextgraphicsslider_426',['CustomTextGraphicsSlider',['../classoscr_1_1_custom_text_graphics_slider.html',1,'oscr']]],
-  ['customuisetup_427',['CustomUISetup',['../struct_control_1_1_custom_u_i_setup.html',1,'Control']]],
-  ['cycledetector_428',['CycleDetector',['../struct_scenario_1_1_cycle_detector.html',1,'Scenario']]]
+  ['customnodeprocess_425',['CustomNodeProcess',['../classoscr_1_1_custom_node_process.html',1,'oscr']]],
+  ['customtextgraphicsknob_426',['CustomTextGraphicsKnob',['../classoscr_1_1_custom_text_graphics_knob.html',1,'oscr']]],
+  ['customtextgraphicsslider_427',['CustomTextGraphicsSlider',['../classoscr_1_1_custom_text_graphics_slider.html',1,'oscr']]],
+  ['customuisetup_428',['CustomUISetup',['../struct_control_1_1_custom_u_i_setup.html',1,'Control']]],
+  ['cycledetector_429',['CycleDetector',['../struct_scenario_1_1_cycle_detector.html',1,'Scenario']]]
 ];

@@ -1808,7 +1808,8 @@ var hierarchy =
     [ "ossia::node_process", null, [
       [ "Gfx::Video::video_process", "class_gfx_1_1_video_1_1video__process.html", null ],
       [ "JS::js_process", "struct_j_s_1_1js__process.html", null ],
-      [ "Pd::pd_process", "class_pd_1_1pd__process.html", null ]
+      [ "Pd::pd_process", "class_pd_1_1pd__process.html", null ],
+      [ "oscr::CustomNodeProcess< Node >", "classoscr_1_1_custom_node_process.html", null ]
     ] ],
     [ "score::gfx::NodeRenderer", "classscore_1_1gfx_1_1_node_renderer.html", [
       [ "Gfx::Spout::SpoutInputNode::Renderer", "class_gfx_1_1_spout_1_1_spout_input_node_1_1_renderer.html", null ],

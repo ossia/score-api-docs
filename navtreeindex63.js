@@ -1,5 +1,6 @@
 var NAVTREEINDEX63 =
 {
+"struct_execution_1_1_settings_1_1_commit_policies.html#a5545217d2d6961cf2e907d05c79ac65f":[12,0,12,1,3,3],
 "struct_execution_1_1_settings_1_1_commit_policies.html#a7c121568446cd358555832f1ce10ee86":[12,0,12,1,3,2],
 "struct_execution_1_1_settings_1_1_commit_policies.html#a87b999e3cb232b1ed59ba359ac9cc024":[12,0,12,1,3,1],
 "struct_execution_1_1_settings_1_1_commit_policies.html#aa4186857b39a9f84e481176cc7a740b7":[12,0,12,1,3,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX63 =
 "struct_gfx_1_1_kinect2_1_1kinect2__camera.html#aff4c4c6d3d03fec1c32ba3198fa8ce4f":[12,0,18,2,1,6],
 "struct_gfx_1_1_kinect2_1_1kinect2__settings.html":[12,0,18,2,0],
 "struct_gfx_1_1_kinect2_1_1kinect2__settings.html#a036e51fd26e4100e86bcbf20edee5e72":[12,0,18,2,0,2],
-"struct_gfx_1_1_kinect2_1_1kinect2__settings.html#a1cd6a492151babb8e49ed7e740629389":[12,0,18,2,0,3],
-"struct_gfx_1_1_kinect2_1_1kinect2__settings.html#a65b17edcc50d3ef07f528c604cd6ade1":[12,0,18,2,0,0]
+"struct_gfx_1_1_kinect2_1_1kinect2__settings.html#a1cd6a492151babb8e49ed7e740629389":[12,0,18,2,0,3]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX71 =
 {
+"struct_protocols_1_1_artnet_1_1_fixture.html":[12,0,42,0,5],
 "struct_protocols_1_1_artnet_1_1_fixture.html#a1636355cdfffc0ad7acd4b6eeb5d0813":[12,0,42,0,5,1],
 "struct_protocols_1_1_artnet_1_1_fixture.html#a513cb61603bfdafcf749873104bb3391":[12,0,42,0,5,2],
 "struct_protocols_1_1_artnet_1_1_fixture.html#a61c53134ef99fe21cea272e2d492a849":[12,0,42,0,5,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX71 =
 "struct_rendered_depth_node.html#a981084d2513cfb28ccca9dcbb3493b6d":[12,0,229,12],
 "struct_rendered_depth_node.html#a98f5c958f9fb141a4221d807c8380fb8":[12,0,229,23],
 "struct_rendered_depth_node.html#a9cc045401b47fe60dd771a0ce8793d11":[12,0,229,6],
-"struct_rendered_depth_node.html#ab9936c5d3616eb78da614c5017721453":[12,0,229,21],
-"struct_rendered_depth_node.html#ab999a87cebb49e4e465052abba465384":[12,0,229,16]
+"struct_rendered_depth_node.html#ab9936c5d3616eb78da614c5017721453":[12,0,229,21]
 };

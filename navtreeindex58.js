@@ -1,5 +1,6 @@
 var NAVTREEINDEX58 =
 {
+"namespacescore.html#ac97f9174e9ad78a338ea579b0670face":[11,0,51,319],
 "namespacescore.html#aca6862630c46ab26a87f077e2041c8ba":[11,0,51,341],
 "namespacescore.html#acb4f4252a37850a0064862d0b343998e":[11,0,51,366],
 "namespacescore.html#acb53af97b5a6913f84ba55cd0b600995":[11,0,51,358],
@@ -200,10 +201,10 @@ var NAVTREEINDEX58 =
 "score-plugin-avnd_2_crousti_2_executor_8hpp_source.html":[13,0,429],
 "score-plugin-avnd_2_crousti_2_gpu_node_8hpp_source.html":[13,0,516],
 "score-plugin-avnd_2_crousti_2_layer_8hpp_source.html":[13,0,649],
-"score-plugin-avnd_2_crousti_2_process_model_8hpp.html#a0222588719e76665f813ee5ab623e2a8":[11,0,38,62],
-"score-plugin-avnd_2_crousti_2_process_model_8hpp.html#a52ed3a5ade9361ba613045f8f37d5364":[11,0,38,64],
-"score-plugin-avnd_2_crousti_2_process_model_8hpp.html#a9a5a95fab3d88c3e4eb798105a82ef7a":[11,0,38,65],
-"score-plugin-avnd_2_crousti_2_process_model_8hpp.html#a9a7274461ac9ab4d316835ba0d3c748c":[11,0,38,63],
+"score-plugin-avnd_2_crousti_2_process_model_8hpp.html#a0222588719e76665f813ee5ab623e2a8":[11,0,38,63],
+"score-plugin-avnd_2_crousti_2_process_model_8hpp.html#a52ed3a5ade9361ba613045f8f37d5364":[11,0,38,65],
+"score-plugin-avnd_2_crousti_2_process_model_8hpp.html#a9a5a95fab3d88c3e4eb798105a82ef7a":[11,0,38,66],
+"score-plugin-avnd_2_crousti_2_process_model_8hpp.html#a9a7274461ac9ab4d316835ba0d3c748c":[11,0,38,64],
 "score-plugin-avnd_2_crousti_2_process_model_8hpp_source.html":[13,0,1002],
 "score-plugin-avnd_2_crousti_2_widgets_8hpp_source.html":[13,0,1467],
 "score-plugin-controlsurface_2_control_surface_2_command_factory_8hpp.html#a0920e7c1e4444ff9777ad992012df8b7":[11,0,7,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX58 =
 "score-plugin-gfx_2_gfx_2_filter_2_library_8hpp_source.html":[13,0,679],
 "score-plugin-gfx_2_gfx_2_filter_2_process_8hpp.html#af6ee4cb30d39392123335d4cd7de4f91":[11,0,18,0,7],
 "score-plugin-gfx_2_gfx_2_filter_2_process_8hpp_source.html":[13,0,977],
-"score-plugin-gfx_2_gfx_2_graph_2_graph_8hpp_source.html":[13,0,525],
-"score-plugin-gfx_2_gfx_2_graph_2_node_8hpp_source.html":[13,0,848]
+"score-plugin-gfx_2_gfx_2_graph_2_graph_8hpp_source.html":[13,0,525]
 };

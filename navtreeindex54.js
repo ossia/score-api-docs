@@ -1,5 +1,6 @@
 var NAVTREEINDEX54 =
 {
+"classvst3_1_1vst__node.html#af7c98c47e872bea1c640c78f5b336f48":[12,0,58,19,9],
 "classvst3_1_1vst__node.html#af9ea573aa87a0fb324f535cb43e7bbf8":[12,0,58,19,2],
 "classvst3_1_1vst__node.html#afa2ee832672b9415beab079cbbdfc3a0":[12,0,58,19,3],
 "classvst3_1_1vst__node__base.html":[12,0,58,18],
@@ -167,14 +168,14 @@ var NAVTREEINDEX54 =
 "from__ossia__value___test_8cpp.html#ace5917815291ace90f2a557c701ff7f8":[11,0,26,0,0],
 "from__ossia__value___test_8cpp.html#ae01d728e736f1c10f7d977cf76ce02cd":[11,0,39,13],
 "from__ossia__value___test_8cpp.html#afd529bc820aba7bf2b82279ef96090d0":[11,0,26,4],
-"functions.html":[12,3,0,0],
 "functions.html":[12,3,0],
+"functions.html":[12,3,0,0],
 "functions_c.html":[12,3,0,1],
 "functions_d.html":[12,3,0,2],
 "functions_e.html":[12,3,0,3],
 "functions_f.html":[12,3,0,4],
-"functions_func.html":[12,3,1,0],
 "functions_func.html":[12,3,1],
+"functions_func.html":[12,3,1,0],
 "functions_func_c.html":[12,3,1,1],
 "functions_func_d.html":[12,3,1,2],
 "functions_func_e.html":[12,3,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX54 =
 "namespace_curve.html#a22ad43d66df236f5d93b9dd85af275dc":[11,0,8,85],
 "namespace_curve.html#a23772336478b5ac03481f7b0614b94e3":[11,0,8,119],
 "namespace_curve.html#a2a7a2ab0d49e5bd77bb0b37528ad8569":[11,0,8,95],
-"namespace_curve.html#a2ab5ed6997696a2b341b286dd8f6fd80":[11,0,8,88],
-"namespace_curve.html#a2c1ee2264c6cac7a42ab1e60f607608b":[11,0,8,89]
+"namespace_curve.html#a2ab5ed6997696a2b341b286dd8f6fd80":[11,0,8,88]
 };

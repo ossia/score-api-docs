@@ -1,5 +1,6 @@
 var NAVTREEINDEX52 =
 {
+"classscore_1_1gfx_1_1_custom_mesh.html#aa05d34acc58ae0cc2cf209b0c5f302cf":[12,0,48,2,4,4],
 "classscore_1_1gfx_1_1_custom_mesh.html#aaa7be6422e7a2e83a71484658ab290dc":[12,0,48,2,4,5],
 "classscore_1_1gfx_1_1_custom_mesh.html#ab1000e70fc5ce2ad07a7f2acfbb27149":[12,0,48,2,4,9],
 "classscore_1_1gfx_1_1_custom_mesh.html#abc9d53c7a595f08c38a28343bd0a6f67":[12,0,48,2,4,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX52 =
 "classscore__plugin__controlsurface.html":[12,0,238],
 "classscore__plugin__controlsurface.html#a75d26a80aabb6a5ce24798ae88e55ca5":[12,0,238,1],
 "classscore__plugin__controlsurface.html#a7b5e253672c29df8a87d3c231d61ecca":[12,0,238,0],
-"classscore__plugin__curve.html":[12,0,239],
-"classscore__plugin__curve.html#a6879be1973497800d01ec63e91661529":[12,0,239,0]
+"classscore__plugin__curve.html":[12,0,239]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX70 =
 {
+"struct_process_1_1_cable_data.html#aaf8497cdde29d40029cb2b670da94c5b":[12,0,41,20,1],
 "struct_process_1_1_context.html":[12,0,41,73],
 "struct_process_1_1_context.html#a406b0e32dda131c34a49e09814789b3c":[12,0,41,73,2],
 "struct_process_1_1_context.html#a4363068d20d3716d38dc9918f636e21f":[12,0,41,73,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX70 =
 "struct_protocols_1_1_artnet_1_1_channel.html#a5a9f2aa4a5cad928312ba9eeefc9f2d8":[12,0,42,0,3,3],
 "struct_protocols_1_1_artnet_1_1_channel.html#abd1e0873f38f17a4bd4cb2ed24f2042e":[12,0,42,0,3,2],
 "struct_protocols_1_1_artnet_1_1_channel.html#acf8cd2e875d0364f0e7d172c11473bae":[12,0,42,0,3,0],
-"struct_protocols_1_1_artnet_1_1_channel.html#aed395b49751d3caa6c31e805cf0f0244":[12,0,42,0,3,1],
-"struct_protocols_1_1_artnet_1_1_fixture.html":[12,0,42,0,5]
+"struct_protocols_1_1_artnet_1_1_channel.html#aed395b49751d3caa6c31e805cf0f0244":[12,0,42,0,3,1]
 };

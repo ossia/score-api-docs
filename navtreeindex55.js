@@ -1,5 +1,6 @@
 var NAVTREEINDEX55 =
 {
+"namespace_curve.html#a2c1ee2264c6cac7a42ab1e60f607608b":[11,0,8,89],
 "namespace_curve.html#a2c662a5077de1e5a02e7a097a624894e":[11,0,8,91],
 "namespace_curve.html#a2f71e6debe6e0aef3286f8f9f2273d95":[11,0,8,120],
 "namespace_curve.html#a337f4d1257041166dd291f87e9a23761":[11,0,8,71],
@@ -248,6 +249,5 @@ var NAVTREEINDEX55 =
 "namespace_process.html#a558242e406d3ccd5071bdd861e7b5f0e":[11,0,44,123],
 "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1":[11,0,44,104],
 "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a04d62df558a1f3d140a99921aadbd254":[11,0,44,104,6],
-"namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a116a8cc93738260c508ea2e898df19fa":[11,0,44,104,2],
-"namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a28864adccb3f9149d5c1800509b4ef53":[11,0,44,104,5]
+"namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a116a8cc93738260c508ea2e898df19fa":[11,0,44,104,2]
 };

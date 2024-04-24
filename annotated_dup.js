@@ -1033,6 +1033,7 @@ var annotated_dup =
       [ "type_if", "structoscr_1_1type__if.html", null ],
       [ "type_if< T, false >", "structoscr_1_1type__if_3_01_t_00_01false_01_4.html", "structoscr_1_1type__if_3_01_t_00_01false_01_4" ],
       [ "type_if< T, true >", "structoscr_1_1type__if_3_01_t_00_01true_01_4.html", "structoscr_1_1type__if_3_01_t_00_01true_01_4" ],
+      [ "CustomNodeProcess", "classoscr_1_1_custom_node_process.html", null ],
       [ "Executor", "classoscr_1_1_executor.html", "classoscr_1_1_executor" ],
       [ "LayoutBuilder", "structoscr_1_1_layout_builder.html", "structoscr_1_1_layout_builder" ],
       [ "LayerFactory", "classoscr_1_1_layer_factory.html", "classoscr_1_1_layer_factory" ],
