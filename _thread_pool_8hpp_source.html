@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('_thread_pool_8hpp_source.html',''); in
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      std::max((<span class="keywordtype">int</span>)8, (<span class="keywordtype">int</span>)std::max(<span class="keyword">alignof</span>(std::function&lt;<span class="keywordtype">void</span>()&gt;), <span class="keyword">alignof</span>(<span class="keywordtype">double</span>))),</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      smallfun::Methods::Move&gt;;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  moodycamel::BlockingConcurrentQueue&lt;task&gt; m_queue;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  std::array&lt;std::thread, 2&gt; m_threads;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  std::array&lt;std::thread, 1&gt; m_threads;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  std::atomic_bool m_running{};</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>

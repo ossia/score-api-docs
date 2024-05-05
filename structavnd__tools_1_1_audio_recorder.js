@@ -22,6 +22,7 @@ var structavnd__tools_1_1_audio_recorder =
     [ "inputs", "structavnd__tools_1_1_audio_recorder.html#aab664c8eefa98fb5284fa32648bfa3ab", null ],
     [ "last_message_sent_pos", "structavnd__tools_1_1_audio_recorder.html#a00bfdb3c81e598ff1bfceaac8e2484b0", null ],
     [ "outputs", "structavnd__tools_1_1_audio_recorder.html#a597cf08a68fe61399e66912671200630", null ],
+    [ "prev", "structavnd__tools_1_1_audio_recorder.html#a49bbde465e277e707ad67bc48280734c", null ],
     [ "record", "structavnd__tools_1_1_audio_recorder.html#a648837c00337a8b747ac705c2f0c6131", null ],
     [ "request", "structavnd__tools_1_1_audio_recorder.html#a7a6c0da1293a5305a8f722250db55674", null ],
     [ "started", "structavnd__tools_1_1_audio_recorder.html#a27e40dc674f17c890b0fbceaf6201cff", null ],

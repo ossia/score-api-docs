@@ -1082,26 +1082,28 @@ $(document).ready(function(){initNavTree('_gpu_utils_8hpp_source.html',''); init
 <div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;    eff.send_message = [&amp;<a class="code" href="classscore_1_1gfx_1_1_process_node.html#a7c97ba4a1eb26e9ca18df2e4cb45453b">process</a>](<span class="keyword">auto</span>&amp;&amp; b) <span class="keyword">mutable</span> {</div>
 <div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;      <span class="comment">// FIXME right now all the rendering is done in the UI thread, which is very MEH</span></div>
 <div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;      <span class="comment">//    this-&gt;in_edit([&amp;process, bb = std::move(b)]() mutable {</span></div>
-<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;      MessageBusSender{process.to_ui}(std::move(b));</div>
-<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;      <span class="comment">//    });</span></div>
-<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;    };</div>
-<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160; </div>
-<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;    <span class="comment">// FIXME GUI -&gt; engine. See executor.hpp</span></div>
-<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;  }</div>
-<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160; </div>
-<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;  avnd::init_controls(eff);</div>
+<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160; </div>
+<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;      <span class="keywordflow">if</span>(process.to_ui)</div>
+<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;        MessageBusSender{process.to_ui}(std::move(b));</div>
+<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;      <span class="comment">//    });</span></div>
+<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;    };</div>
+<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160; </div>
+<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;    <span class="comment">// FIXME GUI -&gt; engine. See executor.hpp</span></div>
+<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;  }</div>
 <div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160; </div>
-<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;  <span class="keywordflow">if</span> constexpr(avnd::can_prepare&lt;Node_T&gt;)</div>
-<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;  {</div>
-<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;    <span class="keyword">using</span> prepare_type = avnd::first_argument&lt;&amp;Node_T::prepare&gt;;</div>
-<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;    prepare_type t;</div>
-<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;    if_possible(t.instance = parent.instance);</div>
-<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;    eff.prepare(t);</div>
-<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;  }</div>
-<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;}</div>
-<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;}</div>
-<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160; </div>
-<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;  avnd::init_controls(eff);</div>
+<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160; </div>
+<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;  <span class="keywordflow">if</span> constexpr(avnd::can_prepare&lt;Node_T&gt;)</div>
+<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;  {</div>
+<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;    <span class="keyword">using</span> prepare_type = avnd::first_argument&lt;&amp;Node_T::prepare&gt;;</div>
+<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;    prepare_type t;</div>
+<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;    if_possible(t.instance = parent.instance);</div>
+<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;    eff.prepare(t);</div>
+<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;  }</div>
+<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;}</div>
+<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;}</div>
+<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160; </div>
+<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a></div><div class="ttdoc">Root data model for visual nodes.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Node.hpp:60</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_html_acac03f2e76d8ab63548bab3fac5968a3"><div class="ttname"><a href="classscore_1_1gfx_1_1_node.html#acac03f2e76d8ab63548bab3fac5968a3">score::gfx::Node::process</a></div><div class="ttdeci">virtual void process(Message &amp;&amp;msg)</div><div class="ttdoc">Process a message from the execution engine.</div><div class="ttdef"><b>Definition:</b> Node.cpp:24</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_model_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_model.html">score::gfx::NodeModel</a></div><div class="ttdoc">Common base class for most single-pass, simple nodes.</div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Graph/Node.hpp:180</div></div>
