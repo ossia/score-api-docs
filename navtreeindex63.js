@@ -1,5 +1,7 @@
 var NAVTREEINDEX63 =
 {
+"struct_faust_1_1_update_u_i.html#aad58f91e53426f3adfa017d5e6d1140f":[12,0,16,5,7],
+"struct_faust_1_1_update_u_i.html#aaec93ac2b5d65a682203b91fda2f5ffd":[12,0,16,5,6],
 "struct_faust_1_1_update_u_i.html#ab8279355d2c0998818b87a6397221010":[12,0,16,5,19],
 "struct_faust_1_1_update_u_i.html#abed44c210617e9b03dd47aec350c77af":[12,0,16,5,13],
 "struct_faust_1_1_update_u_i.html#ae7cfc7234bd90610bc4bdfa2502eae3e":[12,0,16,5,20],
@@ -247,7 +249,5 @@ var NAVTREEINDEX63 =
 "struct_gfx_1_1_shader_source.html#a9a26dd9a7a815c4de8c717c9f6c78735":[12,0,18,60,1],
 "struct_gfx_1_1_shader_source.html#ab7a09e6580ddc10fa2c8092ef77eb5cf":[12,0,18,60,10],
 "struct_gfx_1_1_shader_source.html#abc0857787ee1fd3b9f65c9d136a8fdfd":[12,0,18,60,6],
-"struct_gfx_1_1_shader_source.html#abe0d989b4bb230654ac60063bf3d8d36":[12,0,18,60,4],
-"struct_gfx_1_1_shader_source_1_1_member_spec.html":[12,0,18,60,0],
-"struct_gfx_1_1_shader_source_1_1_member_spec.html#a1598ef4c487f15bc566965929f7cf703":[12,0,18,60,0,0]
+"struct_gfx_1_1_shader_source.html#abe0d989b4bb230654ac60063bf3d8d36":[12,0,18,60,4]
 };

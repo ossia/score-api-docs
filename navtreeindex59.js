@@ -1,5 +1,6 @@
 var NAVTREEINDEX59 =
 {
+"score2_o_s_s_i_a_8cpp.html#a0266b9f31c03952c21538f64b33e1876":[11,0,11,1,11],
 "score2_o_s_s_i_a_8cpp.html#a4fd234373c53268c5a385d2b8601ce6c":[11,0,11,1,7],
 "score2_o_s_s_i_a_8cpp.html#a5564a16675d1668701866e32e669ec4c":[11,0,11,1,4],
 "score2_o_s_s_i_a_8cpp.html#a71b8ad4d9fe2641013cac3e86bde5012":[11,0,11,1,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX59 =
 "struct_control_1_1_combo_box.html#ae5bc0ce55f29fc6daf1d8155825c2015":[12,0,6,12,3],
 "struct_control_1_1_custom_u_i_setup.html":[12,0,6,28],
 "struct_control_1_1_custom_u_i_setup.html#a1ec59ed8b27cdea17cfb4fef413161a9":[12,0,6,28,9],
-"struct_control_1_1_custom_u_i_setup.html#a1eed01131fe7c1fa36c68584903012e1":[12,0,6,28,6],
-"struct_control_1_1_custom_u_i_setup.html#a2737f785ce5717fdf701a66ac872e7c5":[12,0,6,28,1]
+"struct_control_1_1_custom_u_i_setup.html#a1eed01131fe7c1fa36c68584903012e1":[12,0,6,28,6]
 };

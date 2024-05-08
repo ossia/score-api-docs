@@ -239,7 +239,7 @@ var NAVTREEINDEX4 =
 "_qml_objects_8hpp_source.html":[13,0,1052],
 "_qt_metatypes_8hpp_source.html":[13,0,1054],
 "_quantification_widget_8hpp_source.html":[13,0,1055],
-"_quantifier_8hpp.html#a6611256190d47899de69bb6265565534":[11,0,37,25,1],
+"_quantifier_8hpp.html#a6611256190d47899de69bb6265565534":[11,0,37,26,1],
 "_quantifier_8hpp_source.html":[13,0,1056],
 "_r_g_b_a_8hpp_source.html":[13,0,1099],
 "_r_m_s_data_8hpp.html#a221dad337c1d1a770bad0457f11ad39c":[11,0,33,32],

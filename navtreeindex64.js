@@ -1,5 +1,7 @@
 var NAVTREEINDEX64 =
 {
+"struct_gfx_1_1_shader_source_1_1_member_spec.html":[12,0,18,60,0],
+"struct_gfx_1_1_shader_source_1_1_member_spec.html#a1598ef4c487f15bc566965929f7cf703":[12,0,18,60,0,0],
 "struct_gfx_1_1_shader_source_1_1_member_spec.html#a63f166fea651ace5cf4fbe95132e565e":[12,0,18,60,0,2],
 "struct_gfx_1_1_shader_source_1_1_member_spec.html#ac21204317608ec2e8f884d3adbbd993f":[12,0,18,60,0,1],
 "struct_gfx_1_1_shared_input_settings.html":[12,0,18,63],
@@ -247,7 +249,5 @@ var NAVTREEINDEX64 =
 "struct_j_s_1_1_vec3f_value_type.html#adae290a790bd1ddb7cfc218ccf294253":[12,0,26,14,3],
 "struct_j_s_1_1_vec3f_value_type.html#adf794b560a8329cfbe441768b95e8180":[12,0,26,14,18],
 "struct_j_s_1_1_vec3f_value_type.html#ae4b1111721afc97babedf1cfc04be2dd":[12,0,26,14,16],
-"struct_j_s_1_1_vec3f_value_type.html#ae4e2fd08c6186ba2693bf6c362502d7f":[12,0,26,14,1],
-"struct_j_s_1_1_vec3f_value_type.html#aeab4822cb2c9f3a197c584f17fef18cd":[12,0,26,14,12],
-"struct_j_s_1_1_vec4f_value_type.html":[12,0,26,15]
+"struct_j_s_1_1_vec3f_value_type.html#ae4e2fd08c6186ba2693bf6c362502d7f":[12,0,26,14,1]
 };

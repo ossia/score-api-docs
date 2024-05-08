@@ -1,5 +1,6 @@
 var NAVTREEINDEX60 =
 {
+"struct_control_1_1_custom_u_i_setup.html#a2737f785ce5717fdf701a66ac872e7c5":[12,0,6,28,1],
 "struct_control_1_1_custom_u_i_setup.html#a2c7a37125022a7c15e611cf85419f328":[12,0,6,28,2],
 "struct_control_1_1_custom_u_i_setup.html#a3682cb6fb50c1ade21bf48ea75373bea":[12,0,6,28,7],
 "struct_control_1_1_custom_u_i_setup.html#a3b17fc3555e6d65abe63cb2b1e4f0b28":[12,0,6,28,4],
@@ -78,9 +79,10 @@ var NAVTREEINDEX60 =
 "struct_control_1_1_has_custom_layer.html":[12,0,6,26],
 "struct_control_1_1_has_custom_layer_3_01_t_00_01std_1_1void__t_3_01typename_01_t_1_1_layer_01_4_01_4.html":[12,0,6,27],
 "struct_control_1_1_has_custom_u_i.html":[12,0,6,24],
+"struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_array_mapping_1_1_node_01_4.html":[12,0,6,40],
 "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_audio_filter_1_1_node_01_4.html":[12,0,6,36],
 "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_audio_generator_1_1_node_01_4.html":[12,0,6,37],
-"struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_generator_1_1_node_01_4.html":[12,0,6,40],
+"struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_generator_1_1_node_01_4.html":[12,0,6,41],
 "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_mapping_1_1_node_01_4.html":[12,0,6,38],
 "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_micro_mapping_1_1_node_01_4.html":[12,0,6,39],
 "struct_control_1_1_has_custom_u_i_3_01_t_00_01std_1_1void__t_3_01decltype_07_6_t_1_1item_08_4_01_4.html":[12,0,6,25],
@@ -247,7 +249,5 @@ var NAVTREEINDEX60 =
 "struct_control_surface_1_1_presenter_1_1_port.html":[12,0,7,6,0],
 "struct_control_surface_1_1_presenter_1_1_port.html#a9e3c0cf7401c35c93ec33a6d82f87163":[12,0,7,6,0,0],
 "struct_control_surface_1_1_presenter_1_1_port.html#ab05f9598fe024ce7e8d83d3de5a10306":[12,0,7,6,0,1],
-"struct_control_surface_1_1_presenter_1_1_port.html#af14a789fbec3649a922b50149185c9e8":[12,0,7,6,0,2],
-"struct_control_surface_1_1con__unvalidated.html":[12,0,7,3],
-"struct_control_surface_1_1con__unvalidated.html#a0a1754b2f891fef83475006614619bcc":[12,0,7,3,3]
+"struct_control_surface_1_1_presenter_1_1_port.html#af14a789fbec3649a922b50149185c9e8":[12,0,7,6,0,2]
 };

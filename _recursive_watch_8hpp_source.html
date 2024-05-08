@@ -146,7 +146,10 @@ $(document).ready(function(){initNavTree('_recursive_watch_8hpp_source.html','')
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  std::string m_root;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  ossia::string_map&lt;std::vector&lt;Callbacks&gt;&gt; m_watched;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;SCORE_LIB_BASE_EXPORT</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> for_all_files(std::string_view root, std::function&lt;<span class="keywordtype">void</span>(std::string_view)&gt; f);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
 <div class="ttc" id="aclassscore_1_1_recursive_watch_html"><div class="ttname"><a href="classscore_1_1_recursive_watch.html">score::RecursiveWatch</a></div><div class="ttdef"><b>Definition:</b> RecursiveWatch.hpp:16</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:90</div></div>
 <div class="ttc" id="astructscore_1_1_recursive_watch_1_1_callbacks_html"><div class="ttname"><a href="structscore_1_1_recursive_watch_1_1_callbacks.html">score::RecursiveWatch::Callbacks</a></div><div class="ttdef"><b>Definition:</b> RecursiveWatch.hpp:19</div></div>

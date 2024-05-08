@@ -446,6 +446,7 @@ var namespacescore =
     [ "deserialize_dyn", "namespacescore.html#af3195f0511ed9eae30a74f7c9534e96a", null ],
     [ "deserialize_dyn", "namespacescore.html#a8d559f67dc0ff9986a09c9ca82bdf8f9", null ],
     [ "findComponent", "namespacescore.html#a0f42b9c9bd3ccf240a7f6870ace105b6", null ],
+    [ "for_all_files", "namespacescore.html#aa0e4344403ea19654e21b5fd0a1599cf", null ],
     [ "get_image", "namespacescore.html#acb4f4252a37850a0064862d0b343998e", null ],
     [ "get_pixmap", "namespacescore.html#a9d423d32c56d6e50966e170cb47e4221", null ],
     [ "getStrongId", "namespacescore.html#a107d8f59cbc69eba3517c97f824ad87f", null ],

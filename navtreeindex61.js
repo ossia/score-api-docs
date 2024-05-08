@@ -1,5 +1,7 @@
 var NAVTREEINDEX61 =
 {
+"struct_control_surface_1_1con__unvalidated.html":[12,0,7,3],
+"struct_control_surface_1_1con__unvalidated.html#a0a1754b2f891fef83475006614619bcc":[12,0,7,3,3],
 "struct_control_surface_1_1con__unvalidated.html#a0ea977105fbc44896c84986013127509":[12,0,7,3,0],
 "struct_control_surface_1_1con__unvalidated.html#a39a26e59f471ae406875aa3fed356477":[12,0,7,3,1],
 "struct_control_surface_1_1con__unvalidated.html#ac0b1479e37d0424bcdeeeb9ce812d6b3":[12,0,7,3,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX61 =
 "struct_device_1_1_full_address_settings.html#a98eff79b32e9b60830c9e3ab01fff221":[12,0,10,2,2],
 "struct_device_1_1_full_address_settings.html#aa2257e41e7f1e9ec5d162ea5edfb267c":[12,0,10,2,5],
 "struct_device_1_1_full_address_settings.html#ac1d4278b25b3cc1602192062af913965":[12,0,10,2,4],
-"struct_device_1_1_protocol_factory_1_1_standard_categories.html":[12,0,10,11,0],
-"struct_e_h_exception_record.html":[12,0,102],
-"struct_e_h_exception_record.html#a2a29f5ac9e6c985abedd21342b09ae44":[12,0,102,1]
+"struct_device_1_1_protocol_factory_1_1_standard_categories.html":[12,0,10,11,0]
 };

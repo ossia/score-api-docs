@@ -144,6 +144,7 @@ var hierarchy =
         [ "Analysis::Spectrum::Metadata", "struct_analysis_1_1_spectrum_1_1_metadata.html", null ],
         [ "Analysis::ZeroCrossing::Metadata", "struct_analysis_1_1_zero_crossing_1_1_metadata.html", null ],
         [ "Nodes::Arpeggiator::Node::Metadata", "struct_nodes_1_1_arpeggiator_1_1_node_1_1_metadata.html", null ],
+        [ "Nodes::ArrayMapping::Node::Metadata", "struct_nodes_1_1_array_mapping_1_1_node_1_1_metadata.html", null ],
         [ "Nodes::AudioLooper::Node::Metadata", "struct_nodes_1_1_audio_looper_1_1_node_1_1_metadata.html", null ],
         [ "Nodes::Chord::Node::Metadata", "struct_nodes_1_1_chord_1_1_node_1_1_metadata.html", null ],
         [ "Nodes::ClassicalBeat::Node::Metadata", "struct_nodes_1_1_classical_beat_1_1_node_1_1_metadata.html", null ],
@@ -771,6 +772,7 @@ var hierarchy =
     [ "Scenario::ExecutionStatusProperty", "struct_scenario_1_1_execution_status_property.html", null ],
     [ "Control::ExecutorGuiUpdate< Info, Node_T, Element_T >", "struct_control_1_1_executor_gui_update.html", null ],
     [ "oscr::ExecutorGuiUpdate< Node >", "structoscr_1_1_executor_gui_update.html", null ],
+    [ "Nodes::ArrayMapping::Node::State::Expr", "struct_nodes_1_1_array_mapping_1_1_node_1_1_state_1_1_expr.html", null ],
     [ "ExprData", null, [
       [ "TreeNode< ExprData >", "class_tree_node.html", null ]
     ] ],
@@ -1745,6 +1747,7 @@ var hierarchy =
     [ "Explorer::AddressSettingsWidget::no_widgets_t", "struct_explorer_1_1_address_settings_widget_1_1no__widgets__t.html", null ],
     [ "Scenario::NodalSlotPresenter", "struct_scenario_1_1_nodal_slot_presenter.html", null ],
     [ "Nodes::Arpeggiator::Node", "struct_nodes_1_1_arpeggiator_1_1_node.html", null ],
+    [ "Nodes::ArrayMapping::Node", "struct_nodes_1_1_array_mapping_1_1_node.html", null ],
     [ "Nodes::AudioLooper::Node", "struct_nodes_1_1_audio_looper_1_1_node.html", null ],
     [ "Nodes::Chord::Node", "struct_nodes_1_1_chord_1_1_node.html", null ],
     [ "Nodes::ClassicalBeat::Node", "struct_nodes_1_1_classical_beat_1_1_node.html", null ],
@@ -3527,6 +3530,7 @@ var hierarchy =
     [ "Factor::State< T >", "class_factor_1_1_state.html", null ],
     [ "FactorOracle2MIDI::State< T >", "class_factor_oracle2_m_i_d_i_1_1_state.html", null ],
     [ "Nodes::Arpeggiator::Node::State", "struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html", null ],
+    [ "Nodes::ArrayMapping::Node::State", "struct_nodes_1_1_array_mapping_1_1_node_1_1_state.html", null ],
     [ "Nodes::AudioLooper::Node::State", "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html", null ],
     [ "Nodes::Chord::Node::State", "struct_nodes_1_1_chord_1_1_node_1_1_state.html", null ],
     [ "Nodes::Direction::Node::State", "struct_nodes_1_1_direction_1_1_node_1_1_state.html", null ],
@@ -3684,6 +3688,7 @@ var hierarchy =
     ] ],
     [ "std::true_type", null, [
       [ "Control::HasCustomLayer< T, std::void_t< typename T::Layer > >", "struct_control_1_1_has_custom_layer_3_01_t_00_01std_1_1void__t_3_01typename_01_t_1_1_layer_01_4_01_4.html", null ],
+      [ "Control::HasCustomUI< Nodes::ArrayMapping::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_array_mapping_1_1_node_01_4.html", null ],
       [ "Control::HasCustomUI< Nodes::MathAudioFilter::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_audio_filter_1_1_node_01_4.html", null ],
       [ "Control::HasCustomUI< Nodes::MathAudioGenerator::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_audio_generator_1_1_node_01_4.html", null ],
       [ "Control::HasCustomUI< Nodes::MathGenerator::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_generator_1_1_node_01_4.html", null ],
