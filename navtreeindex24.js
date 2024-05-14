@@ -1,13 +1,5 @@
 var NAVTREEINDEX24 =
 {
-"class_media_1_1_sound_1_1_process_model.html#a26e4e406f21ac6691851899a2025d85e":[12,0,31,3,7,0],
-"class_media_1_1_sound_1_1_process_model.html#a4e733ab4c30ca2ce040cded79d1ae1b4":[12,0,31,3,7,20],
-"class_media_1_1_sound_1_1_process_model.html#a58e03aeb919087530304cf6b7b4559e2":[12,0,31,3,7,3],
-"class_media_1_1_sound_1_1_process_model.html#a6badcccb860e4422098a0d78d3897600":[12,0,31,3,7,4],
-"class_media_1_1_sound_1_1_process_model.html#a771251b7252a25f8cc5eaffba4d4ad27":[12,0,31,3,7,24],
-"class_media_1_1_sound_1_1_process_model.html#a7caecc3a8abe15d1e3acc5c41ed74327":[12,0,31,3,7,12],
-"class_media_1_1_sound_1_1_process_model.html#a8b743ce139f9c41a60641c55f2af6d1c":[12,0,31,3,7,1],
-"class_media_1_1_sound_1_1_process_model.html#a8b79eb20f63669071a9af697886129fc":[12,0,31,3,7,27],
 "class_media_1_1_sound_1_1_process_model.html#a8e0805b96ff793cdd2eac0308366ee3b":[12,0,31,3,7,16],
 "class_media_1_1_sound_1_1_process_model.html#a8e43ece3fdfb7f8f37d6f2ccb5c2d4e8":[12,0,31,3,7,18],
 "class_media_1_1_sound_1_1_process_model.html#a94b110154a573cf95ee59872c0d88063":[12,0,31,3,7,17],
@@ -249,5 +241,13 @@ var NAVTREEINDEX24 =
 "class_mixer_1_1_audio_device_slider.html":[12,0,33,2],
 "class_mixer_1_1_audio_device_slider.html#a5c1c3c323caff1675e55abb667ee4680":[12,0,33,2,7],
 "class_mixer_1_1_audio_device_slider.html#a74278087ac96cb1e87c8d6b49112271b":[12,0,33,2,6],
-"class_mixer_1_1_audio_device_slider.html#a778cdb7ed94527e54d6b98420653f82b":[12,0,33,2,4]
+"class_mixer_1_1_audio_device_slider.html#a778cdb7ed94527e54d6b98420653f82b":[12,0,33,2,4],
+"class_mixer_1_1_audio_device_slider.html#a8269fba23c918a4be6427fa310c5e514":[12,0,33,2,3],
+"class_mixer_1_1_audio_device_slider.html#a8a4d34cd47a33b0ccf390ea0f999d356":[12,0,33,2,1],
+"class_mixer_1_1_audio_device_slider.html#a8b9b87a4efa540655e79feadeffb0f9b":[12,0,33,2,2],
+"class_mixer_1_1_audio_device_slider.html#a972ad31c16366637b3f880769dfc55d5":[12,0,33,2,5],
+"class_mixer_1_1_audio_device_slider.html#ab24e79b8f24f6fafe11139aebc121067":[12,0,33,2,0],
+"class_mixer_1_1_audio_slider_widget.html":[12,0,33,0],
+"class_mixer_1_1_audio_slider_widget.html#a7c8c821294a3f75610e94bc9232e30b0":[12,0,33,0,1],
+"class_mixer_1_1_audio_slider_widget.html#ad61f3f74d21131a68e2bade54ab2e81f":[12,0,33,0,0]
 };

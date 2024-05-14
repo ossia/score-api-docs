@@ -1084,8 +1084,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1181,7 +1181,6 @@ var hierarchy =
           [ "Protocols::ArtnetProtocolFactory", "class_protocols_1_1_artnet_protocol_factory.html", null ],
           [ "Protocols::HTTPProtocolFactory", "class_protocols_1_1_h_t_t_p_protocol_factory.html", null ],
           [ "Protocols::JoystickProtocolFactory", "class_protocols_1_1_joystick_protocol_factory.html", null ],
-          [ "Protocols::LeapmotionProtocolFactory", "class_protocols_1_1_leapmotion_protocol_factory.html", null ],
           [ "Protocols::LibmapperClientProtocolFactory", "class_protocols_1_1_libmapper_client_protocol_factory.html", null ],
           [ "Protocols::LocalProtocolFactory", "class_protocols_1_1_local_protocol_factory.html", null ],
           [ "Protocols::MinuitProtocolFactory", "class_protocols_1_1_minuit_protocol_factory.html", null ],
@@ -1568,7 +1567,6 @@ var hierarchy =
       [ "oscr::LayoutBuilder< Info >", "structoscr_1_1_layout_builder.html", null ]
     ] ],
     [ "score::lazy_init_t", "structscore_1_1lazy__init__t.html", null ],
-    [ "Protocols::LeapmotionSpecificSettings", "struct_protocols_1_1_leapmotion_specific_settings.html", null ],
     [ "Video::LibAVDecoder", "struct_video_1_1_lib_a_v_decoder.html", [
       [ "Video::CameraInput", "class_video_1_1_camera_input.html", null ],
       [ "Video::VideoDecoder", "class_video_1_1_video_decoder.html", null ]
@@ -1865,7 +1863,6 @@ var hierarchy =
           [ "Protocols::ArtnetDevice", "class_protocols_1_1_artnet_device.html", null ],
           [ "Protocols::HTTPDevice", "class_protocols_1_1_h_t_t_p_device.html", null ],
           [ "Protocols::JoystickDevice", "class_protocols_1_1_joystick_device.html", null ],
-          [ "Protocols::LeapmotionDevice", "class_protocols_1_1_leapmotion_device.html", null ],
           [ "Protocols::LibmapperClientDevice", "class_protocols_1_1_libmapper_client_device.html", null ],
           [ "Protocols::MIDIDevice", "class_protocols_1_1_m_i_d_i_device.html", null ],
           [ "Protocols::MinuitDevice", "class_protocols_1_1_minuit_device.html", null ],
@@ -3254,7 +3251,6 @@ var hierarchy =
         [ "Protocols::ArtnetProtocolSettingsWidget", "class_protocols_1_1_artnet_protocol_settings_widget.html", null ],
         [ "Protocols::HTTPProtocolSettingsWidget", "class_protocols_1_1_h_t_t_p_protocol_settings_widget.html", null ],
         [ "Protocols::JoystickProtocolSettingsWidget", "class_protocols_1_1_joystick_protocol_settings_widget.html", null ],
-        [ "Protocols::LeapmotionProtocolSettingsWidget", "class_protocols_1_1_leapmotion_protocol_settings_widget.html", null ],
         [ "Protocols::LibmapperClientProtocolSettingsWidget", "class_protocols_1_1_libmapper_client_protocol_settings_widget.html", null ],
         [ "Protocols::LocalProtocolSettingsWidget", "class_protocols_1_1_local_protocol_settings_widget.html", null ],
         [ "Protocols::MIDIInputSettingsWidget", "class_protocols_1_1_m_i_d_i_input_settings_widget.html", null ],

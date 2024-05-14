@@ -1,11 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"class_execution_1_1_event_component.html#a9f780eb3a465e90fb3e51028c3a1d62a":[12,0,12,36,5],
-"class_execution_1_1_event_component.html#ac15b4feef217ebe8eb2d21cd92095e04":[12,0,12,36,1],
-"class_execution_1_1_event_component.html#ac1b0a15ffe48af9cc98fe4000432dc79":[12,0,12,36,2],
-"class_execution_1_1_event_component.html#ac2929b6fae844c0db7acff9a8fd41f3e":[12,0,12,36,6],
-"class_execution_1_1_event_component.html#ac99265d0ad161e0180f9c87f28b67420":[12,0,12,36,4],
-"class_execution_1_1_event_component.html#af52f728966f787d557b275c6c131f59a":[12,0,12,36,3],
 "class_execution_1_1_execution_action.html":[12,0,12,8],
 "class_execution_1_1_execution_action.html#a4269bf5319455d92e6d111d938003bee":[12,0,12,8,0],
 "class_execution_1_1_execution_action.html#a63399b53e521d20be4121c5e9d65f0ef":[12,0,12,8,2],
@@ -249,5 +243,11 @@ var NAVTREEINDEX14 =
 "class_explorer_1_1_address_edit_dialog.html#aa4f0919f0fcec46651b9e36281cacca7":[12,0,13,41,9],
 "class_explorer_1_1_address_edit_dialog.html#aa9ce29e4e9ae6bc0216f58a0c1860796":[12,0,13,41,2],
 "class_explorer_1_1_address_edit_dialog.html#ac21662f00371121c747ea6523a2b7877":[12,0,13,41,7],
-"class_explorer_1_1_address_edit_dialog.html#ac4b62c88a8a3138eea8da5b9b4fc4379":[12,0,13,41,13]
+"class_explorer_1_1_address_edit_dialog.html#ac4b62c88a8a3138eea8da5b9b4fc4379":[12,0,13,41,13],
+"class_explorer_1_1_address_edit_dialog.html#acd8af61279246e05c2da172c402decf2":[12,0,13,41,6],
+"class_explorer_1_1_address_impulse_settings_widget.html":[12,0,13,6],
+"class_explorer_1_1_address_impulse_settings_widget.html#a2026e029882c5eae12f9bbf4c54e97c7":[12,0,13,6,4],
+"class_explorer_1_1_address_impulse_settings_widget.html#a5609de8787b291b1712849d54b626bf2":[12,0,13,6,0],
+"class_explorer_1_1_address_impulse_settings_widget.html#a5f11e730d80edacdec24ab9a125ae561":[12,0,13,6,1],
+"class_explorer_1_1_address_impulse_settings_widget.html#a60c45b987fe162c5366609362deb96c5":[12,0,13,6,2]
 };
