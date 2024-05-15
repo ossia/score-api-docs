@@ -166,6 +166,7 @@ var searchData=
   ['availablenode_163',['AvailableNode',['../struct_control_surface_1_1_node_observer_1_1_available_node.html',1,'ControlSurface::NodeObserver']]],
   ['availableplugin_164',['AvailablePlugin',['../structvst3_1_1_available_plugin.html',1,'vst3']]],
   ['avcodeccontext_5ffree_165',['AVCodecContext_Free',['../struct_media_1_1_a_v_codec_context___free.html',1,'Media']]],
-  ['avformatcontext_5ffree_166',['AVFormatContext_Free',['../struct_media_1_1_a_v_format_context___free.html',1,'Media']]],
-  ['avframe_5ffree_167',['AVFrame_Free',['../struct_media_1_1_a_v_frame___free.html',1,'Media']]]
+  ['average_166',['average',['../structavnd__tools_1_1_pattern_combiner_1_1average.html',1,'avnd_tools::PatternCombiner']]],
+  ['avformatcontext_5ffree_167',['AVFormatContext_Free',['../struct_media_1_1_a_v_format_context___free.html',1,'Media']]],
+  ['avframe_5ffree_168',['AVFrame_Free',['../struct_media_1_1_a_v_frame___free.html',1,'Media']]]
 ];
