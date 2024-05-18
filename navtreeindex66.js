@@ -1,5 +1,10 @@
 var NAVTREEINDEX66 =
 {
+"struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html#a66b7c92afd3697718332e87740d6c0eb":[12,0,29,6,4],
+"struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html#a69f9ddbd93fc2eec98bdd2f216c03ca2":[12,0,29,6,2],
+"struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html#a929a81319be4e4cfda92366a1c711fd7":[12,0,29,6,5],
+"struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html#a92f812fc226511f8e1032f23355a6d1a":[12,0,29,6,6],
+"struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html#aedee1181654fe765f3525b494ead1960":[12,0,29,6,3],
 "struct_l_v2_1_1_message.html":[12,0,29,5],
 "struct_l_v2_1_1_message.html#a62798ec298e9e87562329f0208696072":[12,0,29,5,2],
 "struct_l_v2_1_1_message.html#ab67e17a4294a678ec3cf73a0d1f53199":[12,0,29,5,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX66 =
 "struct_media_1_1_sound_1_1_waveform_computer_impl.html#ac66b153f70b017ead9254eca216e1563":[12,0,31,3,10,17],
 "struct_media_1_1_sound_1_1_waveform_computer_impl.html#accfb5b5ee18df6beaa17b33627cd4660":[12,0,31,3,10,6],
 "struct_media_1_1_sound_1_1_waveform_computer_impl.html#acd6cae7ee45a191d440c24f524718efd":[12,0,31,3,10,18],
-"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html":[12,0,31,3,10,0],
-"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a0c55863b2aa52aa319f13b6719117ee7":[12,0,31,3,10,0,11],
-"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a100540fdb72e407e5835ad25992539a3":[12,0,31,3,10,0,0],
-"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a2ac8e9f8a434af49d65a9dc80ba7adc0":[12,0,31,3,10,0,9],
-"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a3184dcefdb6e4db3b4955a8a1eb76672":[12,0,31,3,10,0,5],
-"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html#a498ca509857b4167250a2d6eef408518":[12,0,31,3,10,0,1]
+"struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html":[12,0,31,3,10,0]
 };

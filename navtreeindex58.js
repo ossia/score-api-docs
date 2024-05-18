@@ -1,5 +1,10 @@
 var NAVTREEINDEX58 =
 {
+"score-lib-process_2_process_2_dataflow_2_port_item_8cpp.html#a3f246743258220a1926f660668615b50":[11,0,9,52],
+"score-lib-process_2_process_2_dataflow_2_port_item_8cpp.html#abbec0b631570441cd01249479aefb131":[11,0,9,50],
+"score-lib-process_2_process_2_dataflow_2_port_item_8cpp.html#ac4e62f7254f4163dd1efb829a8341c28":[11,0,9,47],
+"score-lib-process_2_process_2_dataflow_2_port_item_8hpp.html#a9ee60f869775fc1f8a6e3052e8345fc7":[11,0,51,4,5],
+"score-lib-process_2_process_2_dataflow_2_port_item_8hpp_source.html":[13,0,944],
 "score-lib-process_2_process_2_instantiations_8hpp_source.html":[13,0,583],
 "score-lib-process_2_process_2_process_8hpp_source.html":[13,0,970],
 "score-lib-process_2_process_2_process_factory_8hpp_source.html":[13,0,988],
@@ -244,10 +249,5 @@ var NAVTREEINDEX58 =
 "score__lib__process_8hpp_source.html":[13,0,1166],
 "score__lib__state_8hpp_source.html":[13,0,1167],
 "score__plugin__analysis_8hpp_source.html":[13,0,1168],
-"score__plugin__audio_8hpp_source.html":[13,0,1169],
-"score__plugin__automation_8cpp.html#a7e1d0f08f785104055a0849949c016c7":[11,0,19,8],
-"score__plugin__automation_8cpp.html#ae7b98373dde3746d970e3ab6e84fc759":[11,0,19,7],
-"score__plugin__automation_8hpp_source.html":[13,0,1170],
-"score__plugin__avnd_8aether_8cpp.html#a444e0d1c61c7077f86b9da9f4c4f1ec4":[11,0,38,53],
-"score__plugin__avnd_8convolver_8cpp.html#a8e2330b5ca381302604995b58f82ed10":[11,0,38,55]
+"score__plugin__audio_8hpp_source.html":[13,0,1169]
 };

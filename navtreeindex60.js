@@ -1,5 +1,10 @@
 var NAVTREEINDEX60 =
 {
+"struct_control_1_1_enum.html#abd99de8a096df55036957c4030117f0d":[12,0,6,14,1],
+"struct_control_1_1_enum_base.html":[12,0,6,13],
+"struct_control_1_1_enum_base.html#a13fef1e20e538000950fec8833380672":[12,0,6,13,5],
+"struct_control_1_1_enum_base.html#a1d65933552f03d31a99a12074f4bc32b":[12,0,6,13,12],
+"struct_control_1_1_enum_base.html#a32d1bea10423f7f7190493282e5228a4":[12,0,6,13,1],
 "struct_control_1_1_enum_base.html#a3cb4e294442dbd6db4768b903324678d":[12,0,6,13,2],
 "struct_control_1_1_enum_base.html#a4d73d64e9bca972e25cf7fba152d757c":[12,0,6,13,3],
 "struct_control_1_1_enum_base.html#a506f0c4c7fdb1c844191f616c1e8d45a":[12,0,6,13,11],
@@ -244,10 +249,5 @@ var NAVTREEINDEX60 =
 "struct_curve_1_1_curve_domain.html#a64f7cf3858b2213fad3817a0104d48a8":[12,0,8,9,14],
 "struct_curve_1_1_curve_domain.html#a67181cac018932b4392cd465094325b7":[12,0,8,9,11],
 "struct_curve_1_1_curve_domain.html#a701d3db8b56494531e63805358548cbe":[12,0,8,9,6],
-"struct_curve_1_1_curve_domain.html#a86668b2190d8e440339943e4f9e5d73c":[12,0,8,9,8],
-"struct_curve_1_1_curve_domain.html#a8c16a67dfbc7b6552b7ff67409964a21":[12,0,8,9,9],
-"struct_curve_1_1_curve_domain.html#a8d6bfdee7acdf1028b812ab4ab6aae7b":[12,0,8,9,12],
-"struct_curve_1_1_curve_domain.html#aa7b89a9bc3ee6da633383ea04cd05650":[12,0,8,9,0],
-"struct_curve_1_1_curve_domain.html#ac986ffbfbafe52c462b6b6c4dfb68003":[12,0,8,9,13],
-"struct_curve_1_1_curve_domain.html#ace87e30be20f6ea1eaa97d3b4ca4e4d1":[12,0,8,9,10]
+"struct_curve_1_1_curve_domain.html#a86668b2190d8e440339943e4f9e5d73c":[12,0,8,9,8]
 };

@@ -1,5 +1,10 @@
 var NAVTREEINDEX45 =
 {
+"classscore_1_1_command_stack.html#a5ce482c5ea4d86f8350409275062255a":[12,0,48,21,33],
+"classscore_1_1_command_stack.html#a60e815e502731329d688e187a4534912":[12,0,48,21,40],
+"classscore_1_1_command_stack.html#a68a0acb0eb9421a93fb40d5aa0b930b7":[12,0,48,21,26],
+"classscore_1_1_command_stack.html#a6e09aedfd69279cc391e733cc6e2a358":[12,0,48,21,42],
+"classscore_1_1_command_stack.html#a6f3072471abd7527ac75427552713b6b":[12,0,48,21,6],
 "classscore_1_1_command_stack.html#a761f7a14cc9bacb68a43be36a1efeaec":[12,0,48,21,41],
 "classscore_1_1_command_stack.html#a7b88616dbfe711703dfaae6507470c7a":[12,0,48,21,7],
 "classscore_1_1_command_stack.html#a855a074c2a3a1f9ec47730b4c42bf42d":[12,0,48,21,0],
@@ -18,8 +23,8 @@ var NAVTREEINDEX45 =
 "classscore_1_1_command_stack.html#aab71abfc223787a585b570a7ecabc255":[12,0,48,21,5],
 "classscore_1_1_command_stack.html#ababfab6f54f868929e7c72ff3ae8c21a":[12,0,48,21,29],
 "classscore_1_1_command_stack.html#abc253116e9021c0907d8215de4999f67":[12,0,48,21,57],
-"classscore_1_1_command_stack.html#abe423a8e50bb494bab24955302f9d779":[12,0,48,21,24],
 "classscore_1_1_command_stack.html#abe423a8e50bb494bab24955302f9d779":[12,0,48,21,23],
+"classscore_1_1_command_stack.html#abe423a8e50bb494bab24955302f9d779":[12,0,48,21,24],
 "classscore_1_1_command_stack.html#ac200a1b0a99b4850751704b8b39fb5ab":[12,0,48,21,62],
 "classscore_1_1_command_stack.html#aca82bc449af903ef00024db0fc412c3c":[12,0,48,21,22],
 "classscore_1_1_command_stack.html#acbb9bf5f1e9e9df2a20a63d663f1bc34":[12,0,48,21,59],
@@ -244,10 +249,5 @@ var NAVTREEINDEX45 =
 "classscore_1_1_entity_list.html":[12,0,48,178],
 "classscore_1_1_entity_list.html#a00775827caef2ce0c9335d5ef1248bbc":[12,0,48,178,11],
 "classscore_1_1_entity_list.html#a0bebe847385e582f18a217566c68e5d4":[12,0,48,178,3],
-"classscore_1_1_entity_list.html#a1289d595575c6d392dbbf8a9f4683b94":[12,0,48,178,0],
-"classscore_1_1_entity_list.html#a19e4f7214ae122eeabd5ad3de5cb097f":[12,0,48,178,27],
-"classscore_1_1_entity_list.html#a2e77ea667795660d91d26963e706393e":[12,0,48,178,10],
-"classscore_1_1_entity_list.html#a5aef670954064a3fb3ae56ef5feaa081":[12,0,48,178,18],
-"classscore_1_1_entity_list.html#a5bfeef9519dcbf626fc579e3c4ddd551":[12,0,48,178,4],
-"classscore_1_1_entity_list.html#a5d983817dc0d7a7634edf6bb488af9fb":[12,0,48,178,22]
+"classscore_1_1_entity_list.html#a1289d595575c6d392dbbf8a9f4683b94":[12,0,48,178,0]
 };

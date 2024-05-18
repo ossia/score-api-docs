@@ -1285,6 +1285,7 @@ var annotated_dup =
       [ "WebsocketClientWidget", "class_protocols_1_1_websocket_client_widget.html", "class_protocols_1_1_websocket_client_widget" ],
       [ "WebsocketServerWidget", "class_protocols_1_1_websocket_server_widget.html", "class_protocols_1_1_websocket_server_widget" ],
       [ "SerialWidget", "class_protocols_1_1_serial_widget.html", "class_protocols_1_1_serial_widget" ],
+      [ "OSCTransportWidget", "class_protocols_1_1_o_s_c_transport_widget.html", "class_protocols_1_1_o_s_c_transport_widget" ],
       [ "OSCProtocolSettingsWidget", "class_protocols_1_1_o_s_c_protocol_settings_widget.html", "class_protocols_1_1_o_s_c_protocol_settings_widget" ],
       [ "OSCSpecificSettings", "struct_protocols_1_1_o_s_c_specific_settings.html", "struct_protocols_1_1_o_s_c_specific_settings" ],
       [ "OSCQueryDevice", "class_protocols_1_1_o_s_c_query_device.html", "class_protocols_1_1_o_s_c_query_device" ],

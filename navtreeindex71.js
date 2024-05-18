@@ -1,5 +1,10 @@
 var NAVTREEINDEX71 =
 {
+"struct_recording_1_1_record_automation_subsequent_callback_visitor.html#a931796c91c3dcff9a04e3d13384941c3":[12,0,43,6,10],
+"struct_recording_1_1_record_automation_subsequent_callback_visitor.html#aa7e74a1e57b0b3540094982284112786":[12,0,43,6,4],
+"struct_recording_1_1_record_automation_subsequent_callback_visitor.html#ab114672198e9b125378bbd802556a32a":[12,0,43,6,9],
+"struct_recording_1_1_record_automation_subsequent_callback_visitor.html#abfd704c4a2a9be48170ae37aedf05434":[12,0,43,6,1],
+"struct_recording_1_1_record_automation_subsequent_callback_visitor.html#ad07d71c39b8aeaf2f668ce8028eb66ce":[12,0,43,6,2],
 "struct_recording_1_1_record_automation_subsequent_callback_visitor.html#adb013a29c90cd04db1b6bb10247fc24b":[12,0,43,6,11],
 "struct_recording_1_1_record_automation_subsequent_callback_visitor.html#afc3c1ab32f9b17a5bf9b5e8374512e26":[12,0,43,6,0],
 "struct_recording_1_1_record_context.html":[12,0,43,11],
@@ -244,10 +249,5 @@ var NAVTREEINDEX71 =
 "struct_scenario_1_1_displayed_elements_presenter_container.html#aea4769915bc7761c5c5ec3aeab1625cc":[12,0,47,73,2],
 "struct_scenario_1_1_element_traits.html":[12,0,47,306],
 "struct_scenario_1_1_element_traits_3_01_base_scenario_container_00_01_event_model_01_4.html":[12,0,47,64],
-"struct_scenario_1_1_element_traits_3_01_base_scenario_container_00_01_interval_model_01_4.html":[12,0,47,63],
-"struct_scenario_1_1_element_traits_3_01_base_scenario_container_00_01_state_model_01_4.html":[12,0,47,66],
-"struct_scenario_1_1_element_traits_3_01_base_scenario_container_00_01_time_sync_model_01_4.html":[12,0,47,65],
-"struct_scenario_1_1_element_traits_3_01_scenario_1_1_process_model_00_01_event_model_01_4.html":[12,0,47,313],
-"struct_scenario_1_1_element_traits_3_01_scenario_1_1_process_model_00_01_interval_model_01_4.html":[12,0,47,312],
-"struct_scenario_1_1_element_traits_3_01_scenario_1_1_process_model_00_01_state_model_01_4.html":[12,0,47,315]
+"struct_scenario_1_1_element_traits_3_01_base_scenario_container_00_01_interval_model_01_4.html":[12,0,47,63]
 };

@@ -1,5 +1,10 @@
 var NAVTREEINDEX59 =
 {
+"score__plugin__automation_8cpp.html#a7e1d0f08f785104055a0849949c016c7":[11,0,19,8],
+"score__plugin__automation_8cpp.html#ae7b98373dde3746d970e3ab6e84fc759":[11,0,19,7],
+"score__plugin__automation_8hpp_source.html":[13,0,1170],
+"score__plugin__avnd_8aether_8cpp.html#a444e0d1c61c7077f86b9da9f4c4f1ec4":[11,0,38,53],
+"score__plugin__avnd_8convolver_8cpp.html#a8e2330b5ca381302604995b58f82ed10":[11,0,38,55],
 "score__plugin__avnd_8cpp.html#a2edcf62517990ac55add40293adc9ce8":[11,0,38,56],
 "score__plugin__avnd_8cpp.html#a31f10d4052c20ea6d482d579e9e541c9":[11,0,38,57],
 "score__plugin__avnd_8cpp.html#a88ec993499486f0cbdeb50927ce4e25e":[11,0,38,54],
@@ -244,10 +249,5 @@ var NAVTREEINDEX59 =
 "struct_control_1_1_enum.html#a2fbce06399ee6fd4c2c3325a6ed563f5":[12,0,6,14,4],
 "struct_control_1_1_enum.html#a54d79bbd830dc11c4246d263994c15b5":[12,0,6,14,5],
 "struct_control_1_1_enum.html#a5c96568b56c5194ca89b0a176ee3f48c":[12,0,6,14,6],
-"struct_control_1_1_enum.html#a7d3cb0f499c9f6821499fb31c6c330df":[12,0,6,14,3],
-"struct_control_1_1_enum.html#abd99de8a096df55036957c4030117f0d":[12,0,6,14,1],
-"struct_control_1_1_enum_base.html":[12,0,6,13],
-"struct_control_1_1_enum_base.html#a13fef1e20e538000950fec8833380672":[12,0,6,13,5],
-"struct_control_1_1_enum_base.html#a1d65933552f03d31a99a12074f4bc32b":[12,0,6,13,12],
-"struct_control_1_1_enum_base.html#a32d1bea10423f7f7190493282e5228a4":[12,0,6,13,1]
+"struct_control_1_1_enum.html#a7d3cb0f499c9f6821499fb31c6c330df":[12,0,6,14,3]
 };
