@@ -1086,8 +1086,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1185,6 +1185,7 @@ var hierarchy =
           [ "Protocols::JoystickProtocolFactory", "class_protocols_1_1_joystick_protocol_factory.html", null ],
           [ "Protocols::LibmapperClientProtocolFactory", "class_protocols_1_1_libmapper_client_protocol_factory.html", null ],
           [ "Protocols::LocalProtocolFactory", "class_protocols_1_1_local_protocol_factory.html", null ],
+          [ "Protocols::MQTTProtocolFactory", "class_protocols_1_1_m_q_t_t_protocol_factory.html", null ],
           [ "Protocols::MinuitProtocolFactory", "class_protocols_1_1_minuit_protocol_factory.html", null ],
           [ "Protocols::OSCProtocolFactory", "class_protocols_1_1_o_s_c_protocol_factory.html", null ],
           [ "Protocols::OSCQueryProtocolFactory", "class_protocols_1_1_o_s_c_query_protocol_factory.html", null ],
@@ -1591,6 +1592,7 @@ var hierarchy =
     ] ],
     [ "servus::Listener", null, [
       [ "Protocols::DNSSDEnumerator", "class_protocols_1_1_d_n_s_s_d_enumerator.html", [
+        [ "Protocols::MQTTTCPEnumerator", "class_protocols_1_1_m_q_t_t_t_c_p_enumerator.html", null ],
         [ "Protocols::OSCQueryEnumerator", "class_protocols_1_1_o_s_c_query_enumerator.html", null ],
         [ "Protocols::OSCTCPEnumerator", "class_protocols_1_1_o_s_c_t_c_p_enumerator.html", null ],
         [ "Protocols::OSCUDPEnumerator", "class_protocols_1_1_o_s_c_u_d_p_enumerator.html", null ]
@@ -1740,6 +1742,7 @@ var hierarchy =
     [ "Scenario::MoveTimeSyncInBaseScenario_StateWrapper", "class_scenario_1_1_move_time_sync_in_base_scenario___state_wrapper.html", null ],
     [ "Scenario::MoveTimeSyncInScenario_StateWrapper", "class_scenario_1_1_move_time_sync_in_scenario___state_wrapper.html", null ],
     [ "Scenario::MoveTimeSyncInTopScenario_StateWrapper", "class_scenario_1_1_move_time_sync_in_top_scenario___state_wrapper.html", null ],
+    [ "Protocols::MQTTSpecificSettings", "struct_protocols_1_1_m_q_t_t_specific_settings.html", null ],
     [ "oscr::multichannel_audio", "structoscr_1_1multichannel__audio.html", null ],
     [ "oscr::multichannel_audio_view", "structoscr_1_1multichannel__audio__view.html", null ],
     [ "WidgetFactory::MultiSlider", "struct_widget_factory_1_1_multi_slider.html", null ],
@@ -1869,6 +1872,7 @@ var hierarchy =
           [ "Protocols::JoystickDevice", "class_protocols_1_1_joystick_device.html", null ],
           [ "Protocols::LibmapperClientDevice", "class_protocols_1_1_libmapper_client_device.html", null ],
           [ "Protocols::MIDIDevice", "class_protocols_1_1_m_i_d_i_device.html", null ],
+          [ "Protocols::MQTTDevice", "class_protocols_1_1_m_q_t_t_device.html", null ],
           [ "Protocols::MinuitDevice", "class_protocols_1_1_minuit_device.html", null ],
           [ "Protocols::OSCDevice", "class_protocols_1_1_o_s_c_device.html", null ],
           [ "Protocols::OSCQueryDevice", "class_protocols_1_1_o_s_c_query_device.html", null ],
@@ -2002,8 +2006,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Patternist::ProcessModel >", "class_path.html", null ],
@@ -3259,6 +3263,7 @@ var hierarchy =
         [ "Protocols::LocalProtocolSettingsWidget", "class_protocols_1_1_local_protocol_settings_widget.html", null ],
         [ "Protocols::MIDIInputSettingsWidget", "class_protocols_1_1_m_i_d_i_input_settings_widget.html", null ],
         [ "Protocols::MIDIOutputSettingsWidget", "class_protocols_1_1_m_i_d_i_output_settings_widget.html", null ],
+        [ "Protocols::MQTTProtocolSettingsWidget", "class_protocols_1_1_m_q_t_t_protocol_settings_widget.html", null ],
         [ "Protocols::MinuitProtocolSettingsWidget", "class_protocols_1_1_minuit_protocol_settings_widget.html", null ],
         [ "Protocols::OSCProtocolSettingsWidget", "class_protocols_1_1_o_s_c_protocol_settings_widget.html", null ],
         [ "Protocols::OSCQueryProtocolSettingsWidget", "class_protocols_1_1_o_s_c_query_protocol_settings_widget.html", null ],
@@ -3312,6 +3317,8 @@ var hierarchy =
       [ "Pd::UiWrapper", "struct_pd_1_1_ui_wrapper.html", null ],
       [ "Process::InspectorWidgetDelegate_T< Process_T >", "class_process_1_1_inspector_widget_delegate___t.html", null ],
       [ "Process::PortListWidget", "class_process_1_1_port_list_widget.html", null ],
+      [ "Protocols::BasicTCPWidget", "class_protocols_1_1_basic_t_c_p_widget.html", null ],
+      [ "Protocols::MQTTTransportWidget", "class_protocols_1_1_m_q_t_t_transport_widget.html", null ],
       [ "Protocols::OSCTransportWidget", "class_protocols_1_1_o_s_c_transport_widget.html", null ],
       [ "Protocols::RateWidget", "class_protocols_1_1_rate_widget.html", null ],
       [ "Protocols::SerialWidget", "class_protocols_1_1_serial_widget.html", null ],
