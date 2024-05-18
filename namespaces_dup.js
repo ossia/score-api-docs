@@ -1198,17 +1198,17 @@ var namespaces_dup =
       [ "FixtureNode", "_artnet_protocol_settings_widget_8cpp.html#a15bc79aec2794fa4bba64664b871e0bc", null ],
       [ "framing_type", "_serial_widget_8hpp.html#a861c09d3cf7b1b06716c4346a090e4c2", null ],
       [ "MqttProtocol", "_m_q_t_t_protocol_settings_widget_8hpp.html#a7ce777560d2e06384b90c4ac89a6f230", [
-        [ "TCP", "_m_q_t_t_protocol_settings_widget_8hpp.html#a1e19812563413d85318de0ad7ffd7f6ca1eeabc5c5b2d3772da6c2aacb0d034b2", null ],
-        [ "WSClient", "_m_q_t_t_protocol_settings_widget_8hpp.html#a1e19812563413d85318de0ad7ffd7f6ca9a193a663b17af74db2f809c1375acc4", null ]
+        [ "TCP", "_m_q_t_t_protocol_settings_widget_8hpp.html#a7ce777560d2e06384b90c4ac89a6f230ab136ef5f6a01d816991fe3cf7a6ac763", null ],
+        [ "WSClient", "_m_q_t_t_protocol_settings_widget_8hpp.html#a7ce777560d2e06384b90c4ac89a6f230a01ab1656b05738d2205fcd154fde2e63", null ]
       ] ],
       [ "OscProtocol", "_o_s_c_protocol_settings_widget_8hpp.html#a1e19812563413d85318de0ad7ffd7f6c", [
-        [ "UDP", "_o_s_c_protocol_settings_widget_8hpp.html#a1e19812563413d85318de0ad7ffd7f6ca05f78dc44238846b137336915353fe9c", null ],
-        [ "TCP", "_m_q_t_t_protocol_settings_widget_8hpp.html#a1e19812563413d85318de0ad7ffd7f6ca1eeabc5c5b2d3772da6c2aacb0d034b2", null ],
-        [ "Serial", "_o_s_c_protocol_settings_widget_8hpp.html#a1e19812563413d85318de0ad7ffd7f6ca38991b1ed6cf89fbb13dc4bb80350e60", null ],
-        [ "UnixDatagram", "_o_s_c_protocol_settings_widget_8hpp.html#a1e19812563413d85318de0ad7ffd7f6caf6ab3b56b2b0c290d461544784d87e4f", null ],
-        [ "UnixStream", "_o_s_c_protocol_settings_widget_8hpp.html#a1e19812563413d85318de0ad7ffd7f6ca8e7fe36b7d3a6202da4cece3d47113d0", null ],
-        [ "WSClient", "_m_q_t_t_protocol_settings_widget_8hpp.html#a1e19812563413d85318de0ad7ffd7f6ca9a193a663b17af74db2f809c1375acc4", null ],
-        [ "WSServer", "_o_s_c_protocol_settings_widget_8hpp.html#a1e19812563413d85318de0ad7ffd7f6ca70a8cb2f9bf3e8f1fee8cfd50cb70018", null ]
+        [ "UDP", "_o_s_c_protocol_settings_widget_8hpp.html#a1e19812563413d85318de0ad7ffd7f6caf5ef036b4d8b630721e51fe23489fbc9", null ],
+        [ "TCP", "_o_s_c_protocol_settings_widget_8hpp.html#a1e19812563413d85318de0ad7ffd7f6cab136ef5f6a01d816991fe3cf7a6ac763", null ],
+        [ "Serial", "_o_s_c_protocol_settings_widget_8hpp.html#a1e19812563413d85318de0ad7ffd7f6ca5255d3daaa0a6276b844d61401e6f493", null ],
+        [ "UnixDatagram", "_o_s_c_protocol_settings_widget_8hpp.html#a1e19812563413d85318de0ad7ffd7f6caa66cce6841251223c5bd10e4ad28bda9", null ],
+        [ "UnixStream", "_o_s_c_protocol_settings_widget_8hpp.html#a1e19812563413d85318de0ad7ffd7f6caffa3fb6e4372aa28f67435722622a945", null ],
+        [ "WSClient", "_o_s_c_protocol_settings_widget_8hpp.html#a1e19812563413d85318de0ad7ffd7f6ca01ab1656b05738d2205fcd154fde2e63", null ],
+        [ "WSServer", "_o_s_c_protocol_settings_widget_8hpp.html#a1e19812563413d85318de0ad7ffd7f6ca67537f6eae2a706449f9023a62849c05", null ]
       ] ],
       [ "fixturesLibraryPaths", "_artnet_protocol_settings_widget_8cpp.html#ae99806a89cdff8cf5cca8c3982cc9be1", null ],
       [ "readManufacturers", "_artnet_protocol_settings_widget_8cpp.html#a7a5bcefe8d8e3ce435e3f08a74167af1", null ],
