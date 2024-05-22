@@ -1,5 +1,7 @@
 var structavnd__tools_1_1_device_recorder_1_1reset__path__message =
 [
-    [ "operator()", "structavnd__tools_1_1_device_recorder_1_1reset__path__message.html#a697e1f6e06a8d2a401b564d9e874d460", null ],
-    [ "path", "structavnd__tools_1_1_device_recorder_1_1reset__path__message.html#ac6a58d01961d1d2cd940ddfa624b6cfb", null ]
+    [ "operator()", "structavnd__tools_1_1_device_recorder_1_1reset__path__message.html#a6c162eb8b104fcc642623c0575c9f5c7", null ],
+    [ "path", "structavnd__tools_1_1_device_recorder_1_1reset__path__message.html#ac6a58d01961d1d2cd940ddfa624b6cfb", null ],
+    [ "player", "structavnd__tools_1_1_device_recorder_1_1reset__path__message.html#acfbe8c58d75ceb13c19eb0e57ad87c08", null ],
+    [ "recorder", "structavnd__tools_1_1_device_recorder_1_1reset__path__message.html#af352750dd5272748313e18e714060dde", null ]
 ];

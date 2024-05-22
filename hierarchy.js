@@ -21,6 +21,7 @@ var hierarchy =
     ] ],
     [ "score::ActionContainer", "structscore_1_1_action_container.html", null ],
     [ "score::ActionGroup", "classscore_1_1_action_group.html", null ],
+    [ "avnd_tools::DeviceRecorder::activate_message", "structavnd__tools_1_1_device_recorder_1_1activate__message.html", null ],
     [ "Nodal::AddNode", "struct_nodal_1_1_add_node.html", null ],
     [ "score::Addon", "structscore_1_1_addon.html", null ],
     [ "Execution::AddProcess", "struct_execution_1_1_add_process.html", null ],
@@ -212,6 +213,8 @@ var hierarchy =
     [ "Scenario::CategorizedAddress", "struct_scenario_1_1_categorized_address.html", null ],
     [ "Scenario::CategorizedAddresses", "struct_scenario_1_1_categorized_addresses.html", null ],
     [ "Category_k", "class_category__k.html", null ],
+    [ "csv2::Reader< delimiter, quote_character, first_row_is_header, trim_policy >::Cell", "classcsv2_1_1_reader_1_1_cell.html", null ],
+    [ "csv2::Reader< delimiter, quote_character, first_row_is_header, trim_policy >::Row::CellIterator", "classcsv2_1_1_reader_1_1_row_1_1_cell_iterator.html", null ],
     [ "Scenario::CentralIntervalDisplay", "class_scenario_1_1_central_interval_display.html", null ],
     [ "Scenario::CentralNodalDisplay", "class_scenario_1_1_central_nodal_display.html", null ],
     [ "Analysis::Centroid", "struct_analysis_1_1_centroid.html", null ],
@@ -649,6 +652,7 @@ var hierarchy =
     [ "score::delete_later< T >", "structscore_1_1delete__later.html", null ],
     [ "score::delete_later< Process::Inlets >", "structscore_1_1delete__later.html", null ],
     [ "score::delete_later< Process::Outlets >", "structscore_1_1delete__later.html", null ],
+    [ "csv2::delimiter< character >", "structcsv2_1_1delimiter.html", null ],
     [ "Gfx::DemuxerInfo", "struct_gfx_1_1_demuxer_info.html", null ],
     [ "score::detail::dereference_visitor< T >", "structscore_1_1detail_1_1dereference__visitor.html", null ],
     [ "Description_k", "class_description__k.html", null ],
@@ -847,6 +851,7 @@ var hierarchy =
       [ "Media::AudioFileChooser", "struct_media_1_1_audio_file_chooser.html", null ]
     ] ],
     [ "score::FilePath", "structscore_1_1_file_path.html", null ],
+    [ "csv2::first_row_is_header< flag >", "structcsv2_1_1first__row__is__header.html", null ],
     [ "WidgetFactory::FixedNormalizer< Norm_T >", "struct_widget_factory_1_1_fixed_normalizer.html", null ],
     [ "Protocols::Artnet::Fixture", "struct_protocols_1_1_artnet_1_1_fixture.html", null ],
     [ "FixtureData", null, [
@@ -1086,8 +1091,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1139,6 +1144,7 @@ var hierarchy =
     [ "oscr::InletInitFunc< Node >", "structoscr_1_1_inlet_init_func.html", null ],
     [ "Nodes::MidiHiRes::Input", "struct_nodes_1_1_midi_hi_res_1_1_input.html", null ],
     [ "InputCopier", "struct_input_copier.html", null ],
+    [ "avnd_tools::DeviceRecorder::inputs_t", "structavnd__tools_1_1_device_recorder_1_1inputs__t.html", null ],
     [ "Pd::Instance", "struct_pd_1_1_instance.html", null ],
     [ "score::InterfaceBase", "classscore_1_1_interface_base.html", [
       [ "score::GenericComponentFactory< Process::ProcessModel, Execution::Context, Execution::ProcessComponentFactory >", "classscore_1_1_generic_component_factory.html", [
@@ -1749,6 +1755,7 @@ var hierarchy =
     [ "Gfx::MuxerInfo", "struct_gfx_1_1_muxer_info.html", null ],
     [ "Scenario::NeighbourSelector", "class_scenario_1_1_neighbour_selector.html", null ],
     [ "Scenario::BaseScenarioContainer::no_init", "struct_scenario_1_1_base_scenario_container_1_1no__init.html", null ],
+    [ "csv2::trim_policy::no_trimming", "structcsv2_1_1trim__policy_1_1no__trimming.html", null ],
     [ "Explorer::AddressSettingsWidget::no_widgets_t", "struct_explorer_1_1_address_settings_widget_1_1no__widgets__t.html", null ],
     [ "Scenario::NodalSlotPresenter", "struct_scenario_1_1_nodal_slot_presenter.html", null ],
     [ "Nodes::Arpeggiator::Node", "struct_nodes_1_1_arpeggiator_1_1_node.html", null ],
@@ -2054,7 +2061,9 @@ var hierarchy =
     [ "Protocols::PixelGroup", "struct_protocols_1_1_pixel_group.html", null ],
     [ "Protocols::PixelMatrix", "struct_protocols_1_1_pixel_matrix.html", null ],
     [ "Process::Pixmaps", "struct_process_1_1_pixmaps.html", null ],
+    [ "avnd_tools::DeviceRecorder::playback_message", "structavnd__tools_1_1_device_recorder_1_1playback__message.html", null ],
     [ "ossia::nodes::audio_metronome::played_sound", "structossia_1_1nodes_1_1audio__metronome_1_1played__sound.html", null ],
+    [ "avnd_tools::DeviceRecorder::player_thread", "structavnd__tools_1_1_device_recorder_1_1player__thread.html", null ],
     [ "Execution::PlayFromIntervalScenarioPruner", "struct_execution_1_1_play_from_interval_scenario_pruner.html", null ],
     [ "Scenario::PlayToolState", "class_scenario_1_1_play_tool_state.html", null ],
     [ "score::Plugin", "structscore_1_1_plugin.html", null ],
@@ -3193,6 +3202,7 @@ var hierarchy =
     [ "Execution::Queues", "struct_execution_1_1_queues.html", null ],
     [ "RedoStrategy::Quiet", "struct_redo_strategy_1_1_quiet.html", null ],
     [ "SendStrategy::Quiet", "struct_send_strategy_1_1_quiet.html", null ],
+    [ "csv2::quote_character< character >", "structcsv2_1_1quote__character.html", null ],
     [ "QValidator", null, [
       [ "ExpressionValidator< TreeNode >", "class_expression_validator.html", null ],
       [ "Explorer::AddressBraceExpressionValidator", "class_explorer_1_1_address_brace_expression_validator.html", null ],
@@ -3389,6 +3399,7 @@ var hierarchy =
     [ "RandomNameProvider", "class_random_name_provider.html", null ],
     [ "Automation::RecreateOnPlay::range_position", "struct_automation_1_1_recreate_on_play_1_1range__position.html", null ],
     [ "Nodes::RateLimiter::Node::RateLimiter", "struct_nodes_1_1_rate_limiter_1_1_node_1_1_rate_limiter.html", null ],
+    [ "csv2::Reader< delimiter, quote_character, first_row_is_header, trim_policy >", "classcsv2_1_1_reader.html", null ],
     [ "Reader< T >", "class_reader.html", null ],
     [ "Video::ReadFrame", "struct_video_1_1_read_frame.html", null ],
     [ "Execution::RecomputePropagate", "struct_execution_1_1_recompute_propagate.html", null ],
@@ -3424,6 +3435,8 @@ var hierarchy =
     [ "score::RightClickImpl", "structscore_1_1_right_click_impl.html", null ],
     [ "Analysis::RMS", "struct_analysis_1_1_r_m_s.html", null ],
     [ "Analysis::Rolloff", "struct_analysis_1_1_rolloff.html", null ],
+    [ "csv2::Reader< delimiter, quote_character, first_row_is_header, trim_policy >::Row", "classcsv2_1_1_reader_1_1_row.html", null ],
+    [ "csv2::Reader< delimiter, quote_character, first_row_is_header, trim_policy >::RowIterator", "classcsv2_1_1_reader_1_1_row_iterator.html", null ],
     [ "Nodes::FactorOracle::safe_vector< T, default_value >", "struct_nodes_1_1_factor_oracle_1_1safe__vector.html", null ],
     [ "Nodes::FactorOracle::safe_vector< int, 0 >", "struct_nodes_1_1_factor_oracle_1_1safe__vector.html", null ],
     [ "Nodes::FactorOracle::safe_vector_simple< T >", "struct_nodes_1_1_factor_oracle_1_1safe__vector__simple.html", null ],
@@ -3692,6 +3705,7 @@ var hierarchy =
     ] ],
     [ "score::TreeViewExpandState< Node, NodePath >", "structscore_1_1_tree_view_expand_state.html", null ],
     [ "score::TreeViewExpandState< Device::Node, Device::NodePath >", "structscore_1_1_tree_view_expand_state.html", null ],
+    [ "csv2::trim_policy::trim_characters< character_list >", "structcsv2_1_1trim__policy_1_1trim__characters.html", null ],
     [ "mpl::true_", null, [
       [ "boost::spirit::traits::is_container< QString >", "structboost_1_1spirit_1_1traits_1_1is__container_3_01_q_string_01_4.html", null ]
     ] ],
