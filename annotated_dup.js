@@ -1927,7 +1927,6 @@ var annotated_dup =
         [ "uuid", "structscore_1_1uuids_1_1uuid.html", "structscore_1_1uuids_1_1uuid" ],
         [ "string_generator", "structscore_1_1uuids_1_1string__generator.html", "structscore_1_1uuids_1_1string__generator" ]
       ] ],
-      [ "HTTPGet", "classscore_1_1_h_t_t_p_get.html", "classscore_1_1_h_t_t_p_get" ],
       [ "InteractiveLabel", "classscore_1_1_interactive_label.html", "classscore_1_1_interactive_label" ],
       [ "StartScreen", "classscore_1_1_start_screen.html", "classscore_1_1_start_screen" ],
       [ "StartScreenLink", "structscore_1_1_start_screen_link.html", "structscore_1_1_start_screen_link" ],

@@ -2658,9 +2658,6 @@ var hierarchy =
     [ "QMap< Key, T >", "class_q_map.html", null ],
     [ "QMap< const QObject *, QPointer< const QObject > >", "class_q_map.html", null ],
     [ "QMapKeyAdaptor< T >", "struct_q_map_key_adaptor.html", null ],
-    [ "QNetworkAccessManager", null, [
-      [ "score::HTTPGet< OnSuccess, OnError >", "classscore_1_1_h_t_t_p_get.html", null ]
-    ] ],
     [ "QObject", null, [
       [ "ControlSurface::NodeObserver< int, Apply >", "struct_control_surface_1_1_node_observer.html", null ],
       [ "Dataflow::BasicToolPaletteInputDispatcher< Curve::Tool, Curve::ToolPalette, Curve::View >", "class_dataflow_1_1_basic_tool_palette_input_dispatcher.html", null ],
