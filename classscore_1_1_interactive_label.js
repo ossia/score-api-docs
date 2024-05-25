@@ -11,5 +11,6 @@ var classscore_1_1_interactive_label =
     [ "setInactiveColor", "classscore_1_1_interactive_label.html#a84eef180ce854b400cc096c15cacabe7", null ],
     [ "setOpenExternalLink", "classscore_1_1_interactive_label.html#a4d9943d2fe954556b0e36b21cdecf02e", null ],
     [ "setPixmaps", "classscore_1_1_interactive_label.html#a0b877ef996cf831f9393eeb8dc95ac83", null ],
-    [ "setTextOption", "classscore_1_1_interactive_label.html#adf5cbdc32e76fc662d49dfc98b17530e", null ]
+    [ "setTextOption", "classscore_1_1_interactive_label.html#adf5cbdc32e76fc662d49dfc98b17530e", null ],
+    [ "textBoundingBox", "classscore_1_1_interactive_label.html#adad50dc52ca3c1f01a23d690309b1b47", null ]
 ];
