@@ -1124,6 +1124,12 @@ var namespaces_dup =
       [ "AddFixtureDialog", "class_protocols_1_1_add_fixture_dialog.html", "class_protocols_1_1_add_fixture_dialog" ],
       [ "ArtnetProtocolSettingsWidget", "class_protocols_1_1_artnet_protocol_settings_widget.html", "class_protocols_1_1_artnet_protocol_settings_widget" ],
       [ "ArtnetSpecificSettings", "struct_protocols_1_1_artnet_specific_settings.html", "struct_protocols_1_1_artnet_specific_settings" ],
+      [ "CoAPDevice", "class_protocols_1_1_co_a_p_device.html", "class_protocols_1_1_co_a_p_device" ],
+      [ "CoAPTCPEnumerator", "class_protocols_1_1_co_a_p_t_c_p_enumerator.html", "class_protocols_1_1_co_a_p_t_c_p_enumerator" ],
+      [ "CoAPProtocolFactory", "class_protocols_1_1_co_a_p_protocol_factory.html", null ],
+      [ "CoAPTransportWidget", "class_protocols_1_1_co_a_p_transport_widget.html", "class_protocols_1_1_co_a_p_transport_widget" ],
+      [ "CoAPProtocolSettingsWidget", "class_protocols_1_1_co_a_p_protocol_settings_widget.html", "class_protocols_1_1_co_a_p_protocol_settings_widget" ],
+      [ "CoAPSpecificSettings", "struct_protocols_1_1_co_a_p_specific_settings.html", "struct_protocols_1_1_co_a_p_specific_settings" ],
       [ "DNSSDEnumerator", "class_protocols_1_1_d_n_s_s_d_enumerator.html", "class_protocols_1_1_d_n_s_s_d_enumerator" ],
       [ "HTTPDevice", "class_protocols_1_1_h_t_t_p_device.html", "class_protocols_1_1_h_t_t_p_device" ],
       [ "HTTPProtocolFactory", "class_protocols_1_1_h_t_t_p_protocol_factory.html", null ],
@@ -1198,6 +1204,11 @@ var namespaces_dup =
       [ "WSSpecificSettings", "struct_protocols_1_1_w_s_specific_settings.html", "struct_protocols_1_1_w_s_specific_settings" ],
       [ "FixtureNode", "_artnet_protocol_settings_widget_8cpp.html#a15bc79aec2794fa4bba64664b871e0bc", null ],
       [ "framing_type", "_serial_widget_8hpp.html#a861c09d3cf7b1b06716c4346a090e4c2", null ],
+      [ "CoapProtocol", "_co_a_p_protocol_settings_widget_8hpp.html#a34bfbb1e86dd361d60c4964ec96b1f70", [
+        [ "UDP", "_co_a_p_protocol_settings_widget_8hpp.html#a34bfbb1e86dd361d60c4964ec96b1f70af5ef036b4d8b630721e51fe23489fbc9", null ],
+        [ "TCP", "_co_a_p_protocol_settings_widget_8hpp.html#a34bfbb1e86dd361d60c4964ec96b1f70ab136ef5f6a01d816991fe3cf7a6ac763", null ],
+        [ "WSClient", "_co_a_p_protocol_settings_widget_8hpp.html#a34bfbb1e86dd361d60c4964ec96b1f70a01ab1656b05738d2205fcd154fde2e63", null ]
+      ] ],
       [ "MqttProtocol", "_m_q_t_t_protocol_settings_widget_8hpp.html#a7ce777560d2e06384b90c4ac89a6f230", [
         [ "TCP", "_m_q_t_t_protocol_settings_widget_8hpp.html#a7ce777560d2e06384b90c4ac89a6f230ab136ef5f6a01d816991fe3cf7a6ac763", null ],
         [ "WSClient", "_m_q_t_t_protocol_settings_widget_8hpp.html#a7ce777560d2e06384b90c4ac89a6f230a01ab1656b05738d2205fcd154fde2e63", null ]
@@ -1212,6 +1223,7 @@ var namespaces_dup =
         [ "WSServer", "_o_s_c_protocol_settings_widget_8hpp.html#a1e19812563413d85318de0ad7ffd7f6ca67537f6eae2a706449f9023a62849c05", null ]
       ] ],
       [ "fixturesLibraryPaths", "_artnet_protocol_settings_widget_8cpp.html#ae99806a89cdff8cf5cca8c3982cc9be1", null ],
+      [ "readCoAPConfig", "_co_a_p_protocol_factory_8cpp.html#a68651b6baf8a63f3f579eb2bbbf5b6df", null ],
       [ "readManufacturers", "_artnet_protocol_settings_widget_8cpp.html#a7a5bcefe8d8e3ce435e3f08a74167af1", null ],
       [ "readMQTTConfig", "_m_q_t_t_protocol_factory_8cpp.html#a023d2480df76f4984ba0bdf4146a89c4", null ],
       [ "readOSCConfig", "_o_s_c_protocol_factory_8cpp.html#a4d7021f16cd1442b4ed509c67c7a8f89", null ]

@@ -233,6 +233,7 @@ var hierarchy =
       [ "Dataflow::Clock", "class_dataflow_1_1_clock.html", null ],
       [ "Execution::ManualClock::Clock", "class_execution_1_1_manual_clock_1_1_clock.html", null ]
     ] ],
+    [ "Protocols::CoAPSpecificSettings", "struct_protocols_1_1_co_a_p_specific_settings.html", null ],
     [ "Scenario::Command::color_converter", "struct_scenario_1_1_command_1_1color__converter.html", null ],
     [ "score::Skin::color_map", "structscore_1_1_skin_1_1color__map.html", null ],
     [ "score::ColorBang", "classscore_1_1_color_bang.html", null ],
@@ -1187,6 +1188,7 @@ var hierarchy =
         [ "Gfx::WindowProtocolFactory", "class_gfx_1_1_window_protocol_factory.html", null ],
         [ "Protocols::DefaultProtocolFactory", "class_protocols_1_1_default_protocol_factory.html", [
           [ "Protocols::ArtnetProtocolFactory", "class_protocols_1_1_artnet_protocol_factory.html", null ],
+          [ "Protocols::CoAPProtocolFactory", "class_protocols_1_1_co_a_p_protocol_factory.html", null ],
           [ "Protocols::HTTPProtocolFactory", "class_protocols_1_1_h_t_t_p_protocol_factory.html", null ],
           [ "Protocols::JoystickProtocolFactory", "class_protocols_1_1_joystick_protocol_factory.html", null ],
           [ "Protocols::LibmapperClientProtocolFactory", "class_protocols_1_1_libmapper_client_protocol_factory.html", null ],
@@ -1598,6 +1600,7 @@ var hierarchy =
     ] ],
     [ "servus::Listener", null, [
       [ "Protocols::DNSSDEnumerator", "class_protocols_1_1_d_n_s_s_d_enumerator.html", [
+        [ "Protocols::CoAPTCPEnumerator", "class_protocols_1_1_co_a_p_t_c_p_enumerator.html", null ],
         [ "Protocols::MQTTTCPEnumerator", "class_protocols_1_1_m_q_t_t_t_c_p_enumerator.html", null ],
         [ "Protocols::OSCQueryEnumerator", "class_protocols_1_1_o_s_c_query_enumerator.html", null ],
         [ "Protocols::OSCTCPEnumerator", "class_protocols_1_1_o_s_c_t_c_p_enumerator.html", null ],
@@ -1875,6 +1878,7 @@ var hierarchy =
         [ "Dataflow::AudioDevice", "class_dataflow_1_1_audio_device.html", null ],
         [ "Device::OwningDeviceInterface", "class_device_1_1_owning_device_interface.html", [
           [ "Protocols::ArtnetDevice", "class_protocols_1_1_artnet_device.html", null ],
+          [ "Protocols::CoAPDevice", "class_protocols_1_1_co_a_p_device.html", null ],
           [ "Protocols::HTTPDevice", "class_protocols_1_1_h_t_t_p_device.html", null ],
           [ "Protocols::JoystickDevice", "class_protocols_1_1_joystick_device.html", null ],
           [ "Protocols::LibmapperClientDevice", "class_protocols_1_1_libmapper_client_device.html", null ],
@@ -2013,8 +2017,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model >", "class_path.html", null ],
+    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Patternist::ProcessModel >", "class_path.html", null ],
@@ -3264,6 +3268,7 @@ var hierarchy =
         ] ],
         [ "Gfx::WindowSettingsWidget", "class_gfx_1_1_window_settings_widget.html", null ],
         [ "Protocols::ArtnetProtocolSettingsWidget", "class_protocols_1_1_artnet_protocol_settings_widget.html", null ],
+        [ "Protocols::CoAPProtocolSettingsWidget", "class_protocols_1_1_co_a_p_protocol_settings_widget.html", null ],
         [ "Protocols::HTTPProtocolSettingsWidget", "class_protocols_1_1_h_t_t_p_protocol_settings_widget.html", null ],
         [ "Protocols::JoystickProtocolSettingsWidget", "class_protocols_1_1_joystick_protocol_settings_widget.html", null ],
         [ "Protocols::LibmapperClientProtocolSettingsWidget", "class_protocols_1_1_libmapper_client_protocol_settings_widget.html", null ],
@@ -3325,6 +3330,7 @@ var hierarchy =
       [ "Process::InspectorWidgetDelegate_T< Process_T >", "class_process_1_1_inspector_widget_delegate___t.html", null ],
       [ "Process::PortListWidget", "class_process_1_1_port_list_widget.html", null ],
       [ "Protocols::BasicTCPWidget", "class_protocols_1_1_basic_t_c_p_widget.html", null ],
+      [ "Protocols::CoAPTransportWidget", "class_protocols_1_1_co_a_p_transport_widget.html", null ],
       [ "Protocols::MQTTTransportWidget", "class_protocols_1_1_m_q_t_t_transport_widget.html", null ],
       [ "Protocols::OSCTransportWidget", "class_protocols_1_1_o_s_c_transport_widget.html", null ],
       [ "Protocols::RateWidget", "class_protocols_1_1_rate_widget.html", null ],
