@@ -1,5 +1,6 @@
 var NAVTREEINDEX65 =
 {
+"struct_gfx_1_1_settings_1_1_hardware_video_decoder.html#ac544795e2d2722bd09366cecd2d56907":[12,0,19,3,1,0],
 "struct_gfx_1_1_settings_1_1_hardware_video_decoder.html#ae9d54bced156abff4dfad9ec9f2748a8":[12,0,19,3,1,7],
 "struct_gfx_1_1_settings_1_1_hardware_video_decoder.html#af53db0998a59d8988ef1af3d58b59c53":[12,0,19,3,1,5],
 "struct_gfx_1_1_shader_source.html":[12,0,19,60],
@@ -248,6 +249,5 @@ var NAVTREEINDEX65 =
 "struct_j_s_1_1_vec2f_value_type.html#ab5e6e433f60bcb5b48d0b6a8840cf1bd":[12,0,27,13,1],
 "struct_j_s_1_1_vec2f_value_type.html#ad4c71f4528a06283532caaf7fc901915":[12,0,27,13,13],
 "struct_j_s_1_1_vec2f_value_type.html#ad6e62082569860c843d04364817e8c43":[12,0,27,13,7],
-"struct_j_s_1_1_vec2f_value_type.html#adbd855f7643a83bb848a0d2c57d9571b":[12,0,27,13,12],
-"struct_j_s_1_1_vec2f_value_type.html#ade1846df3aedd5a232f28eaf385e793e":[12,0,27,13,0]
+"struct_j_s_1_1_vec2f_value_type.html#adbd855f7643a83bb848a0d2c57d9571b":[12,0,27,13,12]
 };

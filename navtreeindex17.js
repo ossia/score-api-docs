@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"class_gfx_1_1_camera_protocol_factory.html":[12,0,19,12],
 "class_gfx_1_1_camera_settings_widget.html":[12,0,19,11],
 "class_gfx_1_1_camera_settings_widget.html#a421fd2b3ff291cbedb48176d6acefb7a":[12,0,19,11,2],
 "class_gfx_1_1_camera_settings_widget.html#a531f18ea51076833043db267cc20edeb":[12,0,19,11,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "class_gfx_1_1_shared_output_settings_widget.html#a21ec7cc7f456687f82590af0d31e2197":[12,0,19,68,8],
 "class_gfx_1_1_shared_output_settings_widget.html#a5303c853d9b322886c7100063ae90b70":[12,0,19,68,2],
 "class_gfx_1_1_shared_output_settings_widget.html#a65dfac2913d5f3b833e53b48f120a2f9":[12,0,19,68,7],
-"class_gfx_1_1_shared_output_settings_widget.html#a93a97e58d1d1ee4bd45843eabced5ecd":[12,0,19,68,1],
-"class_gfx_1_1_shared_output_settings_widget.html#aacd3dceab45ecc0c3f704ba97e36c21c":[12,0,19,68,3]
+"class_gfx_1_1_shared_output_settings_widget.html#a93a97e58d1d1ee4bd45843eabced5ecd":[12,0,19,68,1]
 };

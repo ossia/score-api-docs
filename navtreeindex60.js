@@ -1,12 +1,13 @@
 var NAVTREEINDEX60 =
 {
+"score-plugin-vst_2_vst_2_effect_model_8hpp.html#a7c96721428ebd6321536feaaac2a8e25":[11,0,61,22],
 "score-plugin-vst_2_vst_2_effect_model_8hpp_source.html":[13,0,392],
 "score-plugin-vst_2_vst_2_executor_8hpp.html#ad205a957b53b854ced6c2687ed95c8f5":[11,0,61,19],
 "score-plugin-vst_2_vst_2_executor_8hpp_source.html":[13,0,443],
 "score-plugin-vst_2_vst_2_library_8hpp_source.html":[13,0,681],
 "score-plugin-vst_2_vst_2_node_8hpp.html#a8ff405e06d14a5b8ff7808f6b5982715":[11,0,61,26],
 "score-plugin-vst_2_vst_2_node_8hpp_source.html":[13,0,854],
-"score-plugin-vst_2_vst_2_widgets_8hpp_source.html":[13,0,1480],
+"score-plugin-vst_2_vst_2_widgets_8hpp_source.html":[13,0,1481],
 "score-plugin-ysfx_2_y_s_f_x_2_application_plugin_8hpp_source.html":[13,0,62],
 "score-plugin-ysfx_2_y_s_f_x_2_commands_2_command_factory_8hpp.html#aa9e3b44cfa70305875420ce7274d7412":[11,0,65,10],
 "score-plugin-ysfx_2_y_s_f_x_2_commands_2_command_factory_8hpp_source.html":[13,0,175],
@@ -248,6 +249,5 @@ var NAVTREEINDEX60 =
 "struct_control_1_1_chooser_toggle.html#a84cb1e21edc70d2134f8aae99847f4af":[12,0,6,9,1],
 "struct_control_1_1_chooser_toggle.html#a93a7f61366f90aa4067b41efea235661":[12,0,6,9,2],
 "struct_control_1_1_chooser_toggle.html#a9ac0da563466a76b7da697a78aeb4409":[12,0,6,9,6],
-"struct_control_1_1_chooser_toggle.html#aa815dca99f3be5bb82f7b9c88d6c5518":[12,0,6,9,7],
-"struct_control_1_1_chooser_toggle.html#abf555eda1fa02b4ccefe8df5d347ced5":[12,0,6,9,0]
+"struct_control_1_1_chooser_toggle.html#aa815dca99f3be5bb82f7b9c88d6c5518":[12,0,6,9,7]
 };

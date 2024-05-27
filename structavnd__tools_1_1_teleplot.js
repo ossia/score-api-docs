@@ -1,0 +1,16 @@
+var structavnd__tools_1_1_teleplot =
+[
+    [ "inputs_t", "structavnd__tools_1_1_teleplot_1_1inputs__t.html", "structavnd__tools_1_1_teleplot_1_1inputs__t" ],
+    [ "tick", "structavnd__tools_1_1_teleplot.html#a05bd449fc7025893eaee9812ffd6e8bb", null ],
+    [ "halp_meta", "structavnd__tools_1_1_teleplot.html#a26131ffa1d832b0b296496c2ceb2e5b6", null ],
+    [ "halp_meta", "structavnd__tools_1_1_teleplot.html#ac8020c47bb9ad755f58a2f4eb75a24a5", null ],
+    [ "halp_meta", "structavnd__tools_1_1_teleplot.html#a8f09e65056e7cd769b597783c970caf1", null ],
+    [ "operator()", "structavnd__tools_1_1_teleplot.html#ab29d202146ec58e29fb0761e89a2efe3", null ],
+    [ "resolve_ip", "structavnd__tools_1_1_teleplot.html#a1e28da987e6deb92878ceb34995e9557", null ],
+    [ "update", "structavnd__tools_1_1_teleplot.html#a5546d4a1a358cc1cfa72036e012664b1", null ],
+    [ "inputs", "structavnd__tools_1_1_teleplot.html#a106be3af6e0793cf997b6af9630ccfa9", null ],
+    [ "io_context", "structavnd__tools_1_1_teleplot.html#a42ba4e80b40cd5c716805afedd578949", null ],
+    [ "outputs", "structavnd__tools_1_1_teleplot.html#a56fbfb7fead937dea04ded6765b2f1bf", null ],
+    [ "params", "structavnd__tools_1_1_teleplot.html#a55c0ff8220c2343a3098f89ee34b789d", null ],
+    [ "socket", "structavnd__tools_1_1_teleplot.html#a8fd74c87b9a3487cbd628c39bfd336cb", null ]
+];

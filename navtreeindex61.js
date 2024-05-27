@@ -1,5 +1,6 @@
 var NAVTREEINDEX61 =
 {
+"struct_control_1_1_chooser_toggle.html#abf555eda1fa02b4ccefe8df5d347ced5":[12,0,6,9,0],
 "struct_control_1_1_chooser_toggle.html#accbbc253632967e73a107db3ed162986":[12,0,6,9,3],
 "struct_control_1_1_chooser_toggle.html#ae889e557d079b849b6278798c71fc804":[12,0,6,9,4],
 "struct_control_1_1_combo_box.html":[12,0,6,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX61 =
 "struct_control_1_1setup___impl1.html#a2c6ed1774ecbe6f94504b5445cacc10d":[12,0,6,19,0],
 "struct_control_1_1setup___impl1.html#acd05336febec5ef7ab0e390c51529997":[12,0,6,19,1],
 "struct_control_1_1setup___impl1.html#adcdf8207a545e54d54c2503ab96fb500":[12,0,6,19,2],
-"struct_control_1_1setup___impl1___out.html":[12,0,6,20],
-"struct_control_1_1setup___impl1___out.html#a0809c266974028942d064d5d9d674279":[12,0,6,20,1]
+"struct_control_1_1setup___impl1___out.html":[12,0,6,20]
 };

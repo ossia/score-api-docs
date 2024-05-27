@@ -1106,8 +1106,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1161,6 +1161,7 @@ var hierarchy =
     [ "Nodes::MidiHiRes::Input", "struct_nodes_1_1_midi_hi_res_1_1_input.html", null ],
     [ "InputCopier", "struct_input_copier.html", null ],
     [ "avnd_tools::DeviceRecorder::inputs_t", "structavnd__tools_1_1_device_recorder_1_1inputs__t.html", null ],
+    [ "avnd_tools::Teleplot::inputs_t", "structavnd__tools_1_1_teleplot_1_1inputs__t.html", null ],
     [ "Pd::Instance", "struct_pd_1_1_instance.html", null ],
     [ "score::InterfaceBase", "classscore_1_1_interface_base.html", [
       [ "score::GenericComponentFactory< Process::ProcessModel, Execution::Context, Execution::ProcessComponentFactory >", "classscore_1_1_generic_component_factory.html", [
@@ -2032,8 +2033,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Patternist::ProcessModel >", "class_path.html", null ],
@@ -2068,7 +2069,8 @@ var hierarchy =
       [ "avnd_tools::PatternCombiner", "structavnd__tools_1_1_pattern_combiner.html", null ],
       [ "avnd_tools::PatternSweeper", "structavnd__tools_1_1_pattern_sweeper.html", null ],
       [ "avnd_tools::PatternUnfolder", "structavnd__tools_1_1_pattern_unfolder.html", null ],
-      [ "avnd_tools::Spammer", "structavnd__tools_1_1_spammer.html", null ]
+      [ "avnd_tools::Spammer", "structavnd__tools_1_1_spammer.html", null ],
+      [ "avnd_tools::Teleplot", "structavnd__tools_1_1_teleplot.html", null ]
     ] ],
     [ "PdDataflowTest", "class_pd_dataflow_test.html", null ],
     [ "Analysis::Peak", "struct_analysis_1_1_peak.html", null ],

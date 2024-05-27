@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"class_explorer_1_1_device_explorer_view.html#a8f024b00cf2eb9fe6c0cf87ba9c44a76":[12,0,14,32,8],
 "class_explorer_1_1_device_explorer_view.html#a91e5077aa5b80101336597c681dfc648":[12,0,14,32,5],
 "class_explorer_1_1_device_explorer_view.html#a963ba513e8543bd90b0b61316b33637a":[12,0,14,32,3],
 "class_explorer_1_1_device_explorer_view.html#a9978229a077743a2676b19a3a778cc37":[12,0,14,32,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "class_gfx_1_1_camera_device.html#a8bc834b3a428c47c5403b4124caacdeb":[12,0,19,13,0],
 "class_gfx_1_1_camera_device.html#ac7bda7fb1f1777b5ff06d243f7815f60":[12,0,19,13,1],
 "class_gfx_1_1_camera_enumerator.html":[12,0,19,9],
-"class_gfx_1_1_camera_enumerator.html#a1032d424f528dc7957f72bee330884e8":[12,0,19,9,0],
-"class_gfx_1_1_camera_protocol_factory.html":[12,0,19,12]
+"class_gfx_1_1_camera_enumerator.html#a1032d424f528dc7957f72bee330884e8":[12,0,19,9,0]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"class_int_slider.html#af55585543188e5ee47b9093639b2d728":[12,0,143,6],
 "class_interp_state_1_1_colors.html":[12,0,24,1],
 "class_interp_state_1_1_colors.html#a347f24f3d43233f9dab0c4b33a9a9498":[12,0,24,1,1],
 "class_interp_state_1_1_colors.html#aaa78efe1aa6c5a065996cabb4b4a01fb":[12,0,24,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "class_j_s_o_n_reader.html#a52cccd4ba370bb685e3b1b901b221810":[12,0,151,29],
 "class_j_s_o_n_reader.html#a55f4889e17dc7fabe257587baa26f050":[12,0,151,66],
 "class_j_s_o_n_reader.html#a56e4efe887985c58da4125ff70f591d2":[12,0,151,177],
-"class_j_s_o_n_reader.html#a572b829e6bc49b4c771b6d97fcecc24d":[12,0,151,18],
-"class_j_s_o_n_reader.html#a5753e9f1c326c403d6dd97611a3ac7c0":[12,0,151,226]
+"class_j_s_o_n_reader.html#a572b829e6bc49b4c771b6d97fcecc24d":[12,0,151,18]
 };

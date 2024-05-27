@@ -1,5 +1,6 @@
 var NAVTREEINDEX48 =
 {
+"classscore_1_1_indirect_container.html#a8cc4525569cf77bb7bea9a6a94a04bed":[12,0,49,256,0],
 "classscore_1_1_indirect_container.html#a91ce2893422f4a1ae696bede030eddc6":[12,0,49,256,1],
 "classscore_1_1_indirect_container.html#aa064c6c8e1c953461695cf79149f20d6":[12,0,49,256,13],
 "classscore_1_1_indirect_container.html#ab68319dc4ce8c2491e87abebd330516e":[12,0,49,256,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX48 =
 "classscore_1_1_polymorphic_component_hierarchy_manager.html#a093fc2e090483fcb68005dc88f0051b1":[12,0,49,174,8],
 "classscore_1_1_polymorphic_component_hierarchy_manager.html#a22326e66f8e81d1bce53da9fd9288133":[12,0,49,174,7],
 "classscore_1_1_polymorphic_component_hierarchy_manager.html#a498ea7756d2a22c73bc71f62f8069c8a":[12,0,49,174,2],
-"classscore_1_1_polymorphic_component_hierarchy_manager.html#a4e2b5bd238ad1c46b239212e3a1f2879":[12,0,49,174,5],
-"classscore_1_1_polymorphic_component_hierarchy_manager.html#a7a865ac6d10f6cb8aa6a60bb83583a49":[12,0,49,174,9]
+"classscore_1_1_polymorphic_component_hierarchy_manager.html#a4e2b5bd238ad1c46b239212e3a1f2879":[12,0,49,174,5]
 };

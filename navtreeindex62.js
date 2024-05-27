@@ -1,5 +1,6 @@
 var NAVTREEINDEX62 =
 {
+"struct_control_1_1setup___impl1___out.html#a0809c266974028942d064d5d9d674279":[12,0,6,20,1],
 "struct_control_1_1setup___impl1___out.html#a28a14a9ab22232277d4858da8f094a41":[12,0,6,20,0],
 "struct_control_1_1setup___impl1___out.html#a728890d7d6591a9eded817f76e102e12":[12,0,6,20,2],
 "struct_control_surface_1_1_node_observer.html":[12,0,7,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX62 =
 "struct_device_1_1_full_address_accessor_settings.html#a2e030b3545dc59da4fd7725816d0a623":[12,0,11,3,2],
 "struct_device_1_1_full_address_accessor_settings.html#a4465e5c35d5fe43112f64a2fd9e915f0":[12,0,11,3,7],
 "struct_device_1_1_full_address_accessor_settings.html#a49dc79f93e2555c28d84ac40e8358610":[12,0,11,3,6],
-"struct_device_1_1_full_address_accessor_settings.html#a4fbd6c99bd1bf5cc7fdc21ddd59fffbc":[12,0,11,3,11],
-"struct_device_1_1_full_address_accessor_settings.html#a5fd6e18ef617c537ae2df4d1d04522a8":[12,0,11,3,1]
+"struct_device_1_1_full_address_accessor_settings.html#a4fbd6c99bd1bf5cc7fdc21ddd59fffbc":[12,0,11,3,11]
 };

@@ -69,7 +69,8 @@ var namespaces_dup =
       [ "PatternCombiner", "structavnd__tools_1_1_pattern_combiner.html", "structavnd__tools_1_1_pattern_combiner" ],
       [ "DeviceRecorder", "structavnd__tools_1_1_device_recorder.html", "structavnd__tools_1_1_device_recorder" ],
       [ "Spammer", "structavnd__tools_1_1_spammer.html", "structavnd__tools_1_1_spammer" ],
-      [ "PatternSweeper", "structavnd__tools_1_1_pattern_sweeper.html", "structavnd__tools_1_1_pattern_sweeper" ]
+      [ "PatternSweeper", "structavnd__tools_1_1_pattern_sweeper.html", "structavnd__tools_1_1_pattern_sweeper" ],
+      [ "Teleplot", "structavnd__tools_1_1_teleplot.html", "structavnd__tools_1_1_teleplot" ]
     ] ],
     [ "AvndJit", null, [
       [ "inlet_vis", "struct_avnd_jit_1_1inlet__vis.html", "struct_avnd_jit_1_1inlet__vis" ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX64 =
 {
+"struct_faust_1_1_u_i.html#ad5d18c5d9101816842863b1de2b1437f":[12,0,17,4,6],
 "struct_faust_1_1_u_i.html#adb0a7f6b9473cafd6b136a8112813255":[12,0,17,4,1],
 "struct_faust_1_1_u_i.html#ae3fc33751e87cdec39d03fe6692accf8":[12,0,17,4,4],
 "struct_faust_1_1_u_i.html#ae74896631b74936bc044fe9bc5381d36":[12,0,17,4,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX64 =
 "struct_gfx_1_1_settings_1_1_hardware_video_decoder.html#a39b2c6a0662df6473801c1bd0d543f04":[12,0,19,3,1,6],
 "struct_gfx_1_1_settings_1_1_hardware_video_decoder.html#a5a6bf8be202dde882a769259fd685ce7":[12,0,19,3,1,8],
 "struct_gfx_1_1_settings_1_1_hardware_video_decoder.html#a7ae4b36afd5bedf9fc12c63eb6017f25":[12,0,19,3,1,3],
-"struct_gfx_1_1_settings_1_1_hardware_video_decoder.html#aa0ecc7abdd05d40098d877b1b7f6849f":[12,0,19,3,1,4],
-"struct_gfx_1_1_settings_1_1_hardware_video_decoder.html#ac544795e2d2722bd09366cecd2d56907":[12,0,19,3,1,0]
+"struct_gfx_1_1_settings_1_1_hardware_video_decoder.html#aa0ecc7abdd05d40098d877b1b7f6849f":[12,0,19,3,1,4]
 };

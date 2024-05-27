@@ -1,5 +1,6 @@
 var NAVTREEINDEX55 =
 {
+"classvst_1_1vst__node.html#afdc12b1970e549cb06965e7db60cb61e":[12,0,58,13,10],
 "classvst_1_1vst__node__base.html":[12,0,58,12],
 "classvst_1_1vst__node__base.html#a20b7b890ab32880630d91f1d0f12cfce":[12,0,58,12,7],
 "classvst_1_1vst__node__base.html#a3394e443f1c905739e264f8661bd65e2":[12,0,58,12,5],
@@ -36,8 +37,8 @@ var NAVTREEINDEX55 =
 "functions_d.html":[12,3,0,2],
 "functions_e.html":[12,3,0,3],
 "functions_f.html":[12,3,0,4],
-"functions_func.html":[12,3,1,0],
 "functions_func.html":[12,3,1],
+"functions_func.html":[12,3,1,0],
 "functions_func_c.html":[12,3,1,1],
 "functions_func_d.html":[12,3,1,2],
 "functions_func_e.html":[12,3,1,3],
@@ -88,7 +89,7 @@ var NAVTREEINDEX55 =
 "lib_2core_2documentation_2serialization_8hpp_source.html":[13,0,1237],
 "lib_2core_2presenter_2_presenter_8hpp_source.html":[13,0,959],
 "lib_2core_2settings_2_settings_8hpp_source.html":[13,0,1257],
-"lib_2core_2view_2_window_8hpp_source.html":[13,0,1487],
+"lib_2core_2view_2_window_8hpp_source.html":[13,0,1488],
 "lib_2score_2model_2_component_8hpp_source.html":[13,0,203],
 "lib_2score_2plugins_2documentdelegate_2plugin_2_document_plugin_8hpp_source.html":[13,0,351],
 "lib_2score_2tools_2_metadata_8hpp_source.html":[13,0,748],
@@ -248,6 +249,5 @@ var NAVTREEINDEX55 =
 "namespace_device.html#ae28e7db29ec71528be7138e7ff38e166":[11,0,11,56],
 "namespace_device.html#ae4615dc095ad4b39db20d4a69480de82":[11,0,11,25],
 "namespace_device.html#ae65099905f3608fe0ceba75eee07de0a":[11,0,11,29],
-"namespace_device.html#aeb95dcc618e911f877bfbcc705f31b26":[11,0,11,32],
-"namespace_device.html#aec26bc425aa11b817ff7da7353875d9d":[11,0,11,55]
+"namespace_device.html#aeb95dcc618e911f877bfbcc705f31b26":[11,0,11,32]
 };

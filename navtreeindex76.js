@@ -1,5 +1,6 @@
 var NAVTREEINDEX76 =
 {
+"struct_video_1_1_frame_queue.html#a14fcc80f6c0124b4abfd87a500bae728":[12,0,57,2,0],
 "struct_video_1_1_frame_queue.html#a1ff601f6051c73bc6f5e9f49c6effc60":[12,0,57,2,16],
 "struct_video_1_1_frame_queue.html#a241e628548228ad9a16c578304440e36":[12,0,57,2,9],
 "struct_video_1_1_frame_queue.html#a30524f31f44fd3b0924aae9bb42455e2":[12,0,57,2,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX76 =
 "structavnd__tools_1_1_pattern_combiner.html#af1d51599a6d60f36c5ac4cff996693a2":[12,0,3,4,7],
 "structavnd__tools_1_1_pattern_combiner.html#afeb492cc928b7e0819cdf3666275350a":[12,0,3,4,12],
 "structavnd__tools_1_1_pattern_combiner_1_1average.html":[12,0,3,4,0],
-"structavnd__tools_1_1_pattern_combiner_1_1average.html#a8edfef41d7089af804b2b9ad6d046dbd":[12,0,3,4,0,0],
-"structavnd__tools_1_1_pattern_combiner_1_1average.html#a9f16e1b70aaf4851704374b08d23a579":[12,0,3,4,0,1]
+"structavnd__tools_1_1_pattern_combiner_1_1average.html#a8edfef41d7089af804b2b9ad6d046dbd":[12,0,3,4,0,0]
 };

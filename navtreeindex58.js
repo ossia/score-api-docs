@@ -1,5 +1,6 @@
 var NAVTREEINDEX58 =
 {
+"namespace_state.html#a73280e4d47b8db30ebd7aa66faf4c29a":[11,0,56,52],
 "namespace_state.html#a78347118a8b5c3f965d1f35583195d35":[11,0,56,49],
 "namespace_state.html#a7ad9adbcea8ff9f99b577eda599fdf9d":[11,0,56,43],
 "namespace_state.html#a7eb76205b173e613ac2cc0db249ccd89":[11,0,56,37],
@@ -229,7 +230,7 @@ var NAVTREEINDEX58 =
 "plugins_2score-plugin-faust_2_faust_2commands_8hpp.html#afb359b1be025fc6f9107de269f7956f6":[11,0,17,8],
 "plugins_2score-plugin-faust_2_faust_2commands_8hpp_source.html":[13,0,181],
 "plugins_2score-plugin-gfx_2_gfx_2_filter_2_metadata_8hpp_source.html":[13,0,750],
-"plugins_2score-plugin-gfx_2_gfx_2_graph_2_window_8hpp_source.html":[13,0,1488],
+"plugins_2score-plugin-gfx_2_gfx_2_graph_2_window_8hpp_source.html":[13,0,1489],
 "plugins_2score-plugin-gfx_2_gfx_2_images_2_metadata_8hpp_source.html":[13,0,751],
 "plugins_2score-plugin-gfx_2_gfx_2_settings_2_presenter_8hpp_source.html":[13,0,962],
 "plugins_2score-plugin-gfx_2_gfx_2_text_2_metadata_8hpp_source.html":[13,0,752],
@@ -238,7 +239,7 @@ var NAVTREEINDEX58 =
 "plugins_2score-plugin-js_2_j_s_2_executor_2_component_8hpp.html#a37ab4463ab8244f5950df5a88a17b791":[11,0,28,0,1],
 "plugins_2score-plugin-js_2_j_s_2_executor_2_component_8hpp_source.html":[13,0,204],
 "plugins_2score-plugin-lv2_2_l_v2_2_window_8hpp.html#a658e291028936fa15da1fd68c8d7967a":[11,0,32,13],
-"plugins_2score-plugin-lv2_2_l_v2_2_window_8hpp_source.html":[13,0,1489],
+"plugins_2score-plugin-lv2_2_l_v2_2_window_8hpp_source.html":[13,0,1490],
 "plugins_2score-plugin-media_2_media_2_effect_2_settings_2_presenter_8hpp_source.html":[13,0,964],
 "plugins_2score-plugin-media_2_media_2_merger_2_metadata_8hpp_source.html":[13,0,754],
 "plugins_2score-plugin-media_2_media_2_merger_2commands_8hpp_source.html":[13,0,182],
@@ -248,6 +249,5 @@ var NAVTREEINDEX58 =
 "plugins_2score-plugin-nodal_2_nodal_2_metadata_8hpp_source.html":[13,0,756],
 "plugins_2score-plugin-nodal_2_nodal_2_presenter_8hpp_source.html":[13,0,966],
 "plugins_2score-plugin-nodal_2_nodal_2commands_8hpp_source.html":[13,0,184],
-"plugins_2score-plugin-packagemanager_2_package_manager_2_presenter_8hpp_source.html":[13,0,967],
-"plugins_2score-plugin-protocols_2_protocols_2_network_widgets_2serialization_8hpp_source.html":[13,0,1238]
+"plugins_2score-plugin-packagemanager_2_package_manager_2_presenter_8hpp_source.html":[13,0,967]
 };

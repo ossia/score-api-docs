@@ -1,5 +1,6 @@
 var NAVTREEINDEX49 =
 {
+"classscore_1_1_polymorphic_component_hierarchy_manager.html#a7a865ac6d10f6cb8aa6a60bb83583a49":[12,0,49,174,9],
 "classscore_1_1_polymorphic_component_hierarchy_manager.html#a7f825e7a5be31112bf5a17313ea6e771":[12,0,49,174,6],
 "classscore_1_1_polymorphic_component_hierarchy_manager.html#ab69d2c3ce7751de10ca7d24edeafe8f0":[12,0,49,174,3],
 "classscore_1_1_polymorphic_component_hierarchy_manager.html#add7bc4e90af5d4dedd1591ffc3af23c7":[12,0,49,174,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX49 =
 "classscore_1_1_q_graphics_note_chooser.html#aadcda07fd054c84e1c01dece6d77d025":[12,0,49,142,2],
 "classscore_1_1_q_graphics_note_chooser.html#ab9b21e874585e5d92081e0d84e026485":[12,0,49,142,5],
 "classscore_1_1_q_graphics_note_chooser.html#afb3cb35996ca261cf3a60370173c3b0a":[12,0,49,142,3],
-"classscore_1_1_q_graphics_pixmap_button.html":[12,0,49,143],
-"classscore_1_1_q_graphics_pixmap_button.html#a3524c8efa4d33ca6ee67aaadc9f5ea69":[12,0,49,143,3]
+"classscore_1_1_q_graphics_pixmap_button.html":[12,0,49,143]
 };
