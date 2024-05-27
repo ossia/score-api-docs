@@ -96,7 +96,6 @@ $(document).ready(function(){initNavTree('class_control_inlet.html',''); initRes
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="class_control_inlet-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ControlInlet Class Reference</div>  </div>
@@ -108,13 +107,14 @@ Inheritance diagram for ControlInlet:</div>
  <div class="center">
   <img src="class_control_inlet.png" usemap="#ControlInlet_map" alt=""/>
   <map id="ControlInlet_map" name="ControlInlet_map">
-<area href="class_button.html" alt="Button" shape="rect" coords="0,112,76,136"/>
-<area href="class_enum.html" alt="Enum" shape="rect" coords="86,112,162,136"/>
-<area href="class_float_slider.html" alt="FloatSlider" shape="rect" coords="172,112,248,136"/>
-<area href="class_impulse.html" alt="Impulse" shape="rect" coords="258,112,334,136"/>
-<area href="class_int_slider.html" alt="IntSlider" shape="rect" coords="344,112,420,136"/>
-<area href="class_line_edit.html" alt="LineEdit" shape="rect" coords="430,112,506,136"/>
-<area href="class_toggle.html" alt="Toggle" shape="rect" coords="516,112,592,136"/>
+<area href="class_button.html" alt="Button" shape="rect" coords="247,112,484,136"/>
+<area href="class_enum.html" alt="Enum" shape="rect" coords="247,168,484,192"/>
+<area href="class_float_slider.html" alt="FloatSlider&lt; Impl &gt;" shape="rect" coords="247,224,484,248"/>
+<area href="class_generic_control_inlet.html" alt="GenericControlInlet&lt; Impl, ValueType &gt;" shape="rect" coords="247,280,484,304"/>
+<area href="class_impulse.html" alt="Impulse" shape="rect" coords="247,336,484,360"/>
+<area href="class_int_slider.html" alt="IntSlider&lt; Impl &gt;" shape="rect" coords="247,392,484,416"/>
+<area href="class_line_edit.html" alt="LineEdit" shape="rect" coords="247,448,484,472"/>
+<area href="class_toggle.html" alt="Toggle" shape="rect" coords="247,504,484,528"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -133,17 +133,11 @@ QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>value</b> () cons
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
 <tr class="separator:a3b3916e2d320b512490ed2cc49b2b7fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71e97925e959f0a3e5f006263c39e51e"><td class="memItemLeft" align="right" valign="top"><a id="a71e97925e959f0a3e5f006263c39e51e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setValue</b> (QVariant value)</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setValue</b> (QVariant value)</td></tr>
 <tr class="separator:a71e97925e959f0a3e5f006263c39e51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a642f1a99261f11ed0e7a7a7ab5b9c6a6"><td class="memItemLeft" align="right" valign="top"><a id="a642f1a99261f11ed0e7a7a7ab5b9c6a6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>valueChanged</b> (QVariant value)</td></tr>
 <tr class="separator:a642f1a99261f11ed0e7a7a7ab5b9c6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:a9950ff7e1b3639781978f61c60674858"><td class="memItemLeft" align="right" valign="top"><a id="a9950ff7e1b3639781978f61c60674858"></a>
-constexpr friend auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::PropertyStateTag, W_ThisType ** &gt;&gt;, w_internal::PropertyStateTag, W_ThisType **) -&gt; decltype((w_internal::makeMetaPropertyInfo&lt; QVariant &gt;(w_internal::viewLiteral(&quot;value&quot;), w_internal::viewLiteral(&quot;QVariant&quot;), &amp;W_ThisType::value, W_Notify, &amp;W_ThisType::valueChanged)))</td></tr>
-<tr class="separator:a9950ff7e1b3639781978f61c60674858"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_qml_objects_8hpp_source.html">QmlObjects.hpp</a></li>

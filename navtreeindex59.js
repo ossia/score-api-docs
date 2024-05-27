@@ -1,5 +1,15 @@
 var NAVTREEINDEX59 =
 {
+"plugins_2score-plugin-protocols_2_protocols_2_settings_2_presenter_8hpp_source.html":[13,0,968],
+"plugins_2score-plugin-remotecontrol_2_remote_control_2_document_plugin_8cpp.html#a4373a4cd88a6520c49677dfe166b94ab":[11,0,49,22],
+"plugins_2score-plugin-remotecontrol_2_remote_control_2_document_plugin_8hpp_source.html":[13,0,354],
+"plugins_2score-plugin-remotecontrol_2_remote_control_2_settings_2_presenter_8hpp_source.html":[13,0,969],
+"plugins_2score-plugin-spline3d_2_spline3_d_2_metadata_8hpp_source.html":[13,0,758],
+"plugins_2score-plugin-spline3d_2_spline3_d_2commands_8hpp_source.html":[13,0,186],
+"plugins_2score-plugin-spline_2_spline_2_metadata_8hpp_source.html":[13,0,757],
+"plugins_2score-plugin-spline_2_spline_2_presenter_8hpp_source.html":[13,0,970],
+"plugins_2score-plugin-spline_2_spline_2commands_8hpp_source.html":[13,0,185],
+"plugins_2score-plugin-transport_2_transport_2_document_plugin_8hpp_source.html":[13,0,355],
 "plugins_2score-plugin-vst3_2_vst3_2_u_i_2_window_8cpp.html#aac444e736c433bc7864afb6cd166aff5":[11,0,62,31],
 "plugins_2score-plugin-vst3_2_vst3_2_u_i_2_window_8hpp_source.html":[13,0,1491],
 "plugins_2score-plugin-vst3_2_vst3_2commands_8hpp_source.html":[13,0,188],
@@ -239,15 +249,5 @@ var NAVTREEINDEX59 =
 "score-plugin-vst_2_vst_2_effect_model_8cpp.html#a8186d1f0fab3ee01e9fd65faba1da9d2":[11,0,61,25],
 "score-plugin-vst_2_vst_2_effect_model_8cpp.html#a86ac7e949e74741f9a6e06b56046d8fd":[11,0,61,27],
 "score-plugin-vst_2_vst_2_effect_model_8cpp.html#ab4639e5a834358fd17f3661edd497b4f":[11,0,61,28],
-"score-plugin-vst_2_vst_2_effect_model_8hpp.html#a7c96721428ebd6321536feaaac2a8e25":[11,0,61,22],
-"score-plugin-vst_2_vst_2_effect_model_8hpp_source.html":[13,0,392],
-"score-plugin-vst_2_vst_2_executor_8hpp.html#ad205a957b53b854ced6c2687ed95c8f5":[11,0,61,19],
-"score-plugin-vst_2_vst_2_executor_8hpp_source.html":[13,0,443],
-"score-plugin-vst_2_vst_2_library_8hpp_source.html":[13,0,681],
-"score-plugin-vst_2_vst_2_node_8hpp.html#a8ff405e06d14a5b8ff7808f6b5982715":[11,0,61,26],
-"score-plugin-vst_2_vst_2_node_8hpp_source.html":[13,0,854],
-"score-plugin-vst_2_vst_2_widgets_8hpp_source.html":[13,0,1480],
-"score-plugin-ysfx_2_y_s_f_x_2_application_plugin_8hpp_source.html":[13,0,62],
-"score-plugin-ysfx_2_y_s_f_x_2_commands_2_command_factory_8hpp.html#aa9e3b44cfa70305875420ce7274d7412":[11,0,65,10],
-"score-plugin-ysfx_2_y_s_f_x_2_commands_2_command_factory_8hpp_source.html":[13,0,175]
+"score-plugin-vst_2_vst_2_effect_model_8hpp.html#a7c96721428ebd6321536feaaac2a8e25":[11,0,61,22]
 };

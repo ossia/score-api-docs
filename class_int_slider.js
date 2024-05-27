@@ -1,15 +1,15 @@
 var class_int_slider =
 [
-    [ "~IntSlider", "class_int_slider.html#a6abc89f434b5998c8ff995a0d8f3060c", null ],
+    [ "~IntSlider", "class_int_slider.html#aee0377d288b40d765fe73ce4a2c4a227", null ],
     [ "ControlInlet", "class_int_slider.html#af2a40b5a257e42fda26bcf2673b25e58", null ],
-    [ "getMax", "class_int_slider.html#af9bbac6b57db7b8ba3b6fc44febddd83", null ],
-    [ "init", "class_int_slider.html#a74c91632e1daaac04a8e132fed2662d7", null ],
-    [ "initChanged", "class_int_slider.html#a56dbe73def8fea1fb5ebca56290c9a0e", null ],
-    [ "isEvent", "class_int_slider.html#aad571fe67d6d8333457b2081564eacf7", null ],
-    [ "make", "class_int_slider.html#af06a7a62ff9f4a6920fe9502c9789d42", null ],
-    [ "maxChanged", "class_int_slider.html#ae606c5daa3ef7aa6b0504d82886fcdb4", null ],
-    [ "setInit", "class_int_slider.html#aa3d1347bcc533133b55504c3cfe5a3c2", null ],
-    [ "setMax", "class_int_slider.html#ab4935923317ece468b2a1c6f0935afc2", null ],
+    [ "getMax", "class_int_slider.html#a7f006160387b01bf695a27fe0317d459", null ],
+    [ "init", "class_int_slider.html#ae5828ae280505fb81d77e90f5d8fb440", null ],
+    [ "initChanged", "class_int_slider.html#a708bf1efbda5fa130a7f6e748bf0f29d", null ],
+    [ "isEvent", "class_int_slider.html#a10a7b3d39e1c2869cd70afd97bf517cc", null ],
+    [ "make", "class_int_slider.html#af55585543188e5ee47b9093639b2d728", null ],
+    [ "maxChanged", "class_int_slider.html#a77fe841d54fc2a2469cc61d8a80df6f1", null ],
+    [ "setInit", "class_int_slider.html#a26793dc351d8a18368874ce8bdad0f2d", null ],
+    [ "setMax", "class_int_slider.html#ac2be0c059b243f108be629dd7ecb4866", null ],
     [ "w_state", "class_int_slider.html#a73424e70bf3cbce717cf1d88722d51ca", null ],
     [ "w_state", "class_int_slider.html#a1838b1bf5fb378b21d0e6ec8954d92ef", null ]
 ];

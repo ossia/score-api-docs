@@ -1,5 +1,15 @@
 var NAVTREEINDEX18 =
 {
+"class_gfx_1_1_shared_output_settings_widget.html#ab22c4a5daea5ced9bb305faf6fbac216":[12,0,19,68,0],
+"class_gfx_1_1_shared_output_settings_widget.html#ac921b632d091336db8cac648eb7c5ec4":[12,0,19,68,6],
+"class_gfx_1_1_shared_output_settings_widget.html#afd9e3fb76aab3163628f8fae657cbed0":[12,0,19,68,4],
+"class_gfx_1_1_shmdata_1_1_input_device.html":[12,0,19,4,0],
+"class_gfx_1_1_shmdata_1_1_input_device.html#ac7bda7fb1f1777b5ff06d243f7815f60":[12,0,19,4,0,1],
+"class_gfx_1_1_shmdata_1_1_input_device.html#accb5687c8190bc8c8ae9e8dca6d5bb7a":[12,0,19,4,0,0],
+"class_gfx_1_1_shmdata_1_1_input_factory.html":[12,0,19,4,2],
+"class_gfx_1_1_shmdata_1_1_input_factory.html#a033f49512e72bf152320ec98898f1108":[12,0,19,4,2,2],
+"class_gfx_1_1_shmdata_1_1_input_factory.html#a2bcd772a41f737194ddf080504574088":[12,0,19,4,2,1],
+"class_gfx_1_1_shmdata_1_1_input_factory.html#a8c73abfd94d2474278185148717421c1":[12,0,19,4,2,0],
 "class_gfx_1_1_shmdata_1_1_input_factory.html#ad75847555b60d6df3369a770ff9e8f85":[12,0,19,4,2,3],
 "class_gfx_1_1_shmdata_1_1_input_settings_widget.html":[12,0,19,4,3],
 "class_gfx_1_1_shmdata_1_1_input_settings_widget.html#a1c2e08856cb3d53e5e440c274cd25c47":[12,0,19,4,3,1],
@@ -239,15 +249,5 @@ var NAVTREEINDEX18 =
 "class_gfx_1_1video__texture__input__parameter.html#a6cc9bb558ae9554bd8404e6a4c88da53":[12,0,19,34,1],
 "class_gfx_1_1video__texture__input__parameter.html#ad0652163498556dcf301ef498e693397":[12,0,19,34,2],
 "class_gfx_1_1video__texture__input__parameter.html#ae352dcedca7864f63662b5962c20e651":[12,0,19,34,5],
-"class_gfx_1_1video__texture__input__protocol.html":[12,0,19,33],
-"class_gfx_1_1video__texture__input__protocol.html#a06cf20f48369e4220ef5e8e6bcf4eeb1":[12,0,19,33,3],
-"class_gfx_1_1video__texture__input__protocol.html#a15cfaea9f2af791038e98b6c8e44b888":[12,0,19,33,4],
-"class_gfx_1_1video__texture__input__protocol.html#a324ce25e2d133b302b1f997b8baf97a8":[12,0,19,33,5],
-"class_gfx_1_1video__texture__input__protocol.html#a3df37c9fff2479fdc28f2d443a269866":[12,0,19,33,10],
-"class_gfx_1_1video__texture__input__protocol.html#a4e5ed81e71f809dbfc30117d02212291":[12,0,19,33,2],
-"class_gfx_1_1video__texture__input__protocol.html#a889be9f39522e09a8a1dba31e077cc3f":[12,0,19,33,6],
-"class_gfx_1_1video__texture__input__protocol.html#a95da59b1f54bc6b83ba3629b9551bbc2":[12,0,19,33,8],
-"class_gfx_1_1video__texture__input__protocol.html#a9a2f44a10a1d7e60a3e1f592ea00a64b":[12,0,19,33,11],
-"class_gfx_1_1video__texture__input__protocol.html#ac9835e7ef7532e107da72a6ab9692628":[12,0,19,33,9],
-"class_gfx_1_1video__texture__input__protocol.html#ad10ee55f203c53feda02b70286a81426":[12,0,19,33,0]
+"class_gfx_1_1video__texture__input__protocol.html":[12,0,19,33]
 };

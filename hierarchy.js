@@ -890,6 +890,20 @@ var hierarchy =
     [ "ossia::net::generic_device", null, [
       [ "Gfx::Kinect2::kinect2_device", "class_gfx_1_1_kinect2_1_1kinect2__device.html", null ]
     ] ],
+    [ "JS::GenericControlInlet", null, [
+      [ "AudioFileChooser", "struct_audio_file_chooser.html", null ],
+      [ "FileChooser", "struct_file_chooser.html", null ],
+      [ "FloatRangeSpinBox", "struct_float_range_spin_box.html", null ],
+      [ "HSVSlider", "struct_h_s_v_slider.html", null ],
+      [ "IntRangeSlider", "struct_int_range_slider.html", null ],
+      [ "IntRangeSpinBox", "struct_int_range_spin_box.html", null ],
+      [ "MultiSlider", "struct_multi_slider.html", null ],
+      [ "VideoFileChooser", "struct_video_file_chooser.html", null ],
+      [ "XYSlider", "struct_x_y_slider.html", null ],
+      [ "XYSpinboxes", "struct_x_y_spinboxes.html", null ],
+      [ "XYZSlider", "struct_x_y_z_slider.html", null ],
+      [ "XYZSpinboxes", "struct_x_y_z_spinboxes.html", null ]
+    ] ],
     [ "Nodes::GenericMathMapping< State >", "struct_nodes_1_1_generic_math_mapping.html", null ],
     [ "score::gfx::geometry", "structscore_1_1gfx_1_1geometry.html", null ],
     [ "Scenario::get_curve_domain", "struct_scenario_1_1get__curve__domain.html", null ],
@@ -1092,8 +1106,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1130,9 +1144,10 @@ var hierarchy =
       [ "ControlInlet", "class_control_inlet.html", [
         [ "Button", "class_button.html", null ],
         [ "Enum", "class_enum.html", null ],
-        [ "FloatSlider", "class_float_slider.html", null ],
+        [ "FloatSlider< Impl >", "class_float_slider.html", null ],
+        [ "GenericControlInlet< Impl, ValueType >", "class_generic_control_inlet.html", null ],
         [ "Impulse", "class_impulse.html", null ],
-        [ "IntSlider", "class_int_slider.html", null ],
+        [ "IntSlider< Impl >", "class_int_slider.html", null ],
         [ "LineEdit", "class_line_edit.html", null ],
         [ "Toggle", "class_toggle.html", null ]
       ] ],

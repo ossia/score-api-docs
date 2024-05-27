@@ -1,5 +1,15 @@
 var NAVTREEINDEX60 =
 {
+"score-plugin-vst_2_vst_2_effect_model_8hpp_source.html":[13,0,392],
+"score-plugin-vst_2_vst_2_executor_8hpp.html#ad205a957b53b854ced6c2687ed95c8f5":[11,0,61,19],
+"score-plugin-vst_2_vst_2_executor_8hpp_source.html":[13,0,443],
+"score-plugin-vst_2_vst_2_library_8hpp_source.html":[13,0,681],
+"score-plugin-vst_2_vst_2_node_8hpp.html#a8ff405e06d14a5b8ff7808f6b5982715":[11,0,61,26],
+"score-plugin-vst_2_vst_2_node_8hpp_source.html":[13,0,854],
+"score-plugin-vst_2_vst_2_widgets_8hpp_source.html":[13,0,1480],
+"score-plugin-ysfx_2_y_s_f_x_2_application_plugin_8hpp_source.html":[13,0,62],
+"score-plugin-ysfx_2_y_s_f_x_2_commands_2_command_factory_8hpp.html#aa9e3b44cfa70305875420ce7274d7412":[11,0,65,10],
+"score-plugin-ysfx_2_y_s_f_x_2_commands_2_command_factory_8hpp_source.html":[13,0,175],
 "score-plugin-ysfx_2_y_s_f_x_2_commands_2_edit_script_8hpp_source.html":[13,0,386],
 "score-plugin-ysfx_2_y_s_f_x_2_commands_2_script_macro_8hpp_source.html":[13,0,1216],
 "score-plugin-ysfx_2_y_s_f_x_2_process_factory_8hpp.html#ac214dfd75de5886e29f8d1f9e17faf97":[11,0,65,9],
@@ -194,6 +204,7 @@ var NAVTREEINDEX60 =
 "struct_audio_1_1_port_audio_scope.html":[12,0,1,9],
 "struct_audio_1_1_port_audio_scope.html#a34e99eddd4bd69f07490f1ef43f0c33b":[12,0,1,9,1],
 "struct_audio_1_1_port_audio_scope.html#aea6b49537cfc54b1e36aaea5737020a5":[12,0,1,9,0],
+"struct_audio_file_chooser.html":[12,0,75],
 "struct_automation_1_1_recreate_on_play_1_1modvalue.html":[12,0,2,0,0],
 "struct_automation_1_1_recreate_on_play_1_1modvalue.html#a7abdbf683fc9c88338d030eb716da12b":[12,0,2,0,0,8],
 "struct_automation_1_1_recreate_on_play_1_1modvalue.html#a845a2426a3bc64cb7552d95324c31c6e":[12,0,2,0,0,2],
@@ -238,16 +249,5 @@ var NAVTREEINDEX60 =
 "struct_control_1_1_chooser_toggle.html#a93a7f61366f90aa4067b41efea235661":[12,0,6,9,2],
 "struct_control_1_1_chooser_toggle.html#a9ac0da563466a76b7da697a78aeb4409":[12,0,6,9,6],
 "struct_control_1_1_chooser_toggle.html#aa815dca99f3be5bb82f7b9c88d6c5518":[12,0,6,9,7],
-"struct_control_1_1_chooser_toggle.html#abf555eda1fa02b4ccefe8df5d347ced5":[12,0,6,9,0],
-"struct_control_1_1_chooser_toggle.html#accbbc253632967e73a107db3ed162986":[12,0,6,9,3],
-"struct_control_1_1_chooser_toggle.html#ae889e557d079b849b6278798c71fc804":[12,0,6,9,4],
-"struct_control_1_1_combo_box.html":[12,0,6,12],
-"struct_control_1_1_combo_box.html#a0b8384a89fd1a0231cc68935b302f008":[12,0,6,12,9],
-"struct_control_1_1_combo_box.html#a1e11dc79987cfab1340377cc8c663111":[12,0,6,12,1],
-"struct_control_1_1_combo_box.html#a4b9004ccfbe4482a7c3c6238fb570ac8":[12,0,6,12,2],
-"struct_control_1_1_combo_box.html#a4eccdb0958f5e887fa00c5040d1a1af3":[12,0,6,12,7],
-"struct_control_1_1_combo_box.html#a54095cdb27223fc477df58e62adec8cc":[12,0,6,12,5],
-"struct_control_1_1_combo_box.html#a66f1b2ca09e0df45430f1428322df2fd":[12,0,6,12,0],
-"struct_control_1_1_combo_box.html#a8ef4dae2c0931b77a25a19b9dde1de12":[12,0,6,12,6],
-"struct_control_1_1_combo_box.html#aa505ddacf7a0560e256c9faa77360644":[12,0,6,12,4]
+"struct_control_1_1_chooser_toggle.html#abf555eda1fa02b4ccefe8df5d347ced5":[12,0,6,9,0]
 };

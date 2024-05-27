@@ -1,5 +1,15 @@
 var NAVTREEINDEX51 =
 {
+"classscore_1_1_settings.html#aad50b4799a22b426a0140f0eb7b23091":[12,0,49,43,1],
+"classscore_1_1_settings.html#aad60157d925d57ac46e844a5f3204f26":[12,0,49,43,5],
+"classscore_1_1_settings.html#abb0a9c9b3a6ebf5f64199e729b435d26":[12,0,49,43,0],
+"classscore_1_1_settings.html#ac01a106edffd1cce0f84c0fb35ac9cf0":[12,0,49,43,9],
+"classscore_1_1_settings.html#ae12ecf00f7e9dba0f3204c133b99efce":[12,0,49,43,4],
+"classscore_1_1_settings.html#aebbb40d3827bb489b7625050ae5f5ba9":[12,0,49,43,8],
+"classscore_1_1_settings_command.html":[12,0,49,95],
+"classscore_1_1_settings_command.html#a1e20c6527116bee4318b9084044806f3":[12,0,49,95,6],
+"classscore_1_1_settings_command.html#a21185fd6568b697aa6f0e8b25cd00ebe":[12,0,49,95,5],
+"classscore_1_1_settings_command.html#a4f557b67b60b9bd3119d9c1f43fd8cab":[12,0,49,95,7],
 "classscore_1_1_settings_command.html#a613b66811a4cb3fe89a2ba535d12e4cc":[12,0,49,95,3],
 "classscore_1_1_settings_command.html#a931076863d9150cedf281992a63cae16":[12,0,49,95,2],
 "classscore_1_1_settings_command.html#a9d3a5eb1dcd8d9df3dfee4437bb3ee34":[12,0,49,95,8],
@@ -239,15 +249,5 @@ var NAVTREEINDEX51 =
 "classscore_1_1_v_separator.html#a744b26a9793f84b7f94bc74368486701":[12,0,49,290,0],
 "classscore_1_1_v_separator.html#a76f263a9518f56ee0aae6ab8f92836c5":[12,0,49,290,1],
 "classscore_1_1_validity_checker.html":[12,0,49,96],
-"classscore_1_1_validity_checker.html#a3d7c351a3f8d7f74a4f03df35c69e38e":[12,0,49,96,0],
-"classscore_1_1_validity_checker.html#ab9179da24f950d4d9b30f5104f961b2c":[12,0,49,96,1],
-"classscore_1_1_validity_checker_list.html":[12,0,49,98],
-"classscore_1_1_validity_checker_list.html#a73210d9d6260b33c8605ff3633b26d81":[12,0,49,98,0],
-"classscore_1_1_validity_checker_list.html#a8e030356b787c12a811c89e0a67b1206":[12,0,49,98,1],
-"classscore_1_1_variant_based_node.html":[12,0,49,191],
-"classscore_1_1_variant_based_node.html#a0dd2caaef39edbb83521aa12cc3576d0":[12,0,49,191,0],
-"classscore_1_1_variant_based_node.html#a1697082d618e8ee86158f2725e20c2e5":[12,0,49,191,13],
-"classscore_1_1_variant_based_node.html#a28b7f070b615225e8f4da12a78a4ee0f":[12,0,49,191,14],
-"classscore_1_1_variant_based_node.html#a2f1c163c3247279c826e0316f22ec74a":[12,0,49,191,6],
-"classscore_1_1_variant_based_node.html#a34342ffeb8eb27b29fa1998448de4544":[12,0,49,191,9]
+"classscore_1_1_validity_checker.html#a3d7c351a3f8d7f74a4f03df35c69e38e":[12,0,49,96,0]
 };

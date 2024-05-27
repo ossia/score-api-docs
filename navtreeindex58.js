@@ -1,5 +1,15 @@
 var NAVTREEINDEX58 =
 {
+"namespace_state.html#a78347118a8b5c3f965d1f35583195d35":[11,0,56,49],
+"namespace_state.html#a7ad9adbcea8ff9f99b577eda599fdf9d":[11,0,56,43],
+"namespace_state.html#a7eb76205b173e613ac2cc0db249ccd89":[11,0,56,37],
+"namespace_state.html#a83320614d9868dadc311ee9225f61981":[11,0,56,68],
+"namespace_state.html#a839a275c64295fa96bdbd93b281637f1":[11,0,56,76],
+"namespace_state.html#a8c4af5344035c317a96b58e23d826518":[11,0,56,63],
+"namespace_state.html#a8debde34d13fe5b6f1cedcf968ff083d":[11,0,56,73],
+"namespace_state.html#a9389ee7e598795cfa8589a8b71f9d62f":[11,0,56,58],
+"namespace_state.html#a964d4877c6f19d8e11c0fb9d525a1462":[11,0,56,34],
+"namespace_state.html#a969251fcdd77ab7f884eeccdec435088":[11,0,56,45],
 "namespace_state.html#a9d76dccf7be454147527af43b87cd136":[11,0,56,39],
 "namespace_state.html#a9ec181f717756ed52eedb16de5998e3a":[11,0,56,59],
 "namespace_state.html#ab2bc791a1fb659049a11782eaf2aeb8a":[11,0,56,72],
@@ -239,15 +249,5 @@ var NAVTREEINDEX58 =
 "plugins_2score-plugin-nodal_2_nodal_2_presenter_8hpp_source.html":[13,0,966],
 "plugins_2score-plugin-nodal_2_nodal_2commands_8hpp_source.html":[13,0,184],
 "plugins_2score-plugin-packagemanager_2_package_manager_2_presenter_8hpp_source.html":[13,0,967],
-"plugins_2score-plugin-protocols_2_protocols_2_network_widgets_2serialization_8hpp_source.html":[13,0,1238],
-"plugins_2score-plugin-protocols_2_protocols_2_settings_2_presenter_8hpp_source.html":[13,0,968],
-"plugins_2score-plugin-remotecontrol_2_remote_control_2_document_plugin_8cpp.html#a4373a4cd88a6520c49677dfe166b94ab":[11,0,49,22],
-"plugins_2score-plugin-remotecontrol_2_remote_control_2_document_plugin_8hpp_source.html":[13,0,354],
-"plugins_2score-plugin-remotecontrol_2_remote_control_2_settings_2_presenter_8hpp_source.html":[13,0,969],
-"plugins_2score-plugin-spline3d_2_spline3_d_2_metadata_8hpp_source.html":[13,0,758],
-"plugins_2score-plugin-spline3d_2_spline3_d_2commands_8hpp_source.html":[13,0,186],
-"plugins_2score-plugin-spline_2_spline_2_metadata_8hpp_source.html":[13,0,757],
-"plugins_2score-plugin-spline_2_spline_2_presenter_8hpp_source.html":[13,0,970],
-"plugins_2score-plugin-spline_2_spline_2commands_8hpp_source.html":[13,0,185],
-"plugins_2score-plugin-transport_2_transport_2_document_plugin_8hpp_source.html":[13,0,355]
+"plugins_2score-plugin-protocols_2_protocols_2_network_widgets_2serialization_8hpp_source.html":[13,0,1238]
 };

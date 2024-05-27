@@ -6,6 +6,5 @@ var class_control_inlet =
     [ "make", "class_control_inlet.html#a52e8455adec30bc38efdb33d0ec696cc", null ],
     [ "setValue", "class_control_inlet.html#a71e97925e959f0a3e5f006263c39e51e", null ],
     [ "value", "class_control_inlet.html#a9d1e9e38b7bb7eee57a8cb05e3931b3f", null ],
-    [ "valueChanged", "class_control_inlet.html#a642f1a99261f11ed0e7a7a7ab5b9c6a6", null ],
-    [ "w_state", "class_control_inlet.html#a9950ff7e1b3639781978f61c60674858", null ]
+    [ "valueChanged", "class_control_inlet.html#a642f1a99261f11ed0e7a7a7ab5b9c6a6", null ]
 ];

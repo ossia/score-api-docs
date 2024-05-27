@@ -1,15 +1,15 @@
 var class_float_slider =
 [
-    [ "~FloatSlider", "class_float_slider.html#a319c739c17af9f20030a955d46d5e5d8", null ],
+    [ "~FloatSlider", "class_float_slider.html#afd5706f53873af23685e9c632c97cb8e", null ],
     [ "ControlInlet", "class_float_slider.html#af2a40b5a257e42fda26bcf2673b25e58", null ],
-    [ "getMax", "class_float_slider.html#ac32b6e7d921eb58aae6fd20be60e2743", null ],
-    [ "init", "class_float_slider.html#a5b8731825abd48d3f80b1e09bc068763", null ],
-    [ "initChanged", "class_float_slider.html#a8b06a14eb5c639c1b2efe5752f72905f", null ],
-    [ "isEvent", "class_float_slider.html#afbeb7c2edebec6c2162e85a43a7e40ce", null ],
-    [ "make", "class_float_slider.html#a28c609540ef7d559f34acf4a622a4b57", null ],
-    [ "maxChanged", "class_float_slider.html#a1765734b659ac0c0fe36bfa051fc4a85", null ],
-    [ "setInit", "class_float_slider.html#a481d000895a7628fa2afc6738eaa6d25", null ],
-    [ "setMax", "class_float_slider.html#adf39f0366ebb66d2d57772f045c1fe4a", null ],
+    [ "getMax", "class_float_slider.html#abd4f135b10b1967ffe6d9e8aa0e6d756", null ],
+    [ "init", "class_float_slider.html#af960b9b06edc555180f06198564f4604", null ],
+    [ "initChanged", "class_float_slider.html#a5a7488508e066358221df2106ccbf99d", null ],
+    [ "isEvent", "class_float_slider.html#abeb28cf13dbe92f85b3dd32d963c759c", null ],
+    [ "make", "class_float_slider.html#a0e05f627db09295e399a1b6b6cdc002a", null ],
+    [ "maxChanged", "class_float_slider.html#a961b81e30b1e69e3a3f2075b220cd05e", null ],
+    [ "setInit", "class_float_slider.html#a4d772c223c7448628095fca18e6fb6cb", null ],
+    [ "setMax", "class_float_slider.html#a460af67bd819a00a0ea0bc71d310426c", null ],
     [ "w_state", "class_float_slider.html#a7858d805f9ce1fc224d5947b150dabaa", null ],
     [ "w_state", "class_float_slider.html#ab9b0f137a290dda8d526ae4c911ec403", null ]
 ];
