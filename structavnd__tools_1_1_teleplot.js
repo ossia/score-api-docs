@@ -1,11 +1,10 @@
 var structavnd__tools_1_1_teleplot =
 [
     [ "inputs_t", "structavnd__tools_1_1_teleplot_1_1inputs__t.html", "structavnd__tools_1_1_teleplot_1_1inputs__t" ],
-    [ "tick", "structavnd__tools_1_1_teleplot.html#a05bd449fc7025893eaee9812ffd6e8bb", null ],
     [ "halp_meta", "structavnd__tools_1_1_teleplot.html#a26131ffa1d832b0b296496c2ceb2e5b6", null ],
     [ "halp_meta", "structavnd__tools_1_1_teleplot.html#ac8020c47bb9ad755f58a2f4eb75a24a5", null ],
     [ "halp_meta", "structavnd__tools_1_1_teleplot.html#a8f09e65056e7cd769b597783c970caf1", null ],
-    [ "operator()", "structavnd__tools_1_1_teleplot.html#ab29d202146ec58e29fb0761e89a2efe3", null ],
+    [ "operator()", "structavnd__tools_1_1_teleplot.html#a6a542e9d3d5594d6456d29c2e1c8b8c8", null ],
     [ "resolve_ip", "structavnd__tools_1_1_teleplot.html#a1e28da987e6deb92878ceb34995e9557", null ],
     [ "update", "structavnd__tools_1_1_teleplot.html#a5546d4a1a358cc1cfa72036e012664b1", null ],
     [ "inputs", "structavnd__tools_1_1_teleplot.html#a106be3af6e0793cf997b6af9630ccfa9", null ],

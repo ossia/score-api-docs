@@ -188,13 +188,13 @@ var NAVTREEINDEX =
 "struct_sync_info.html#a556d85711b4bf33522a7c9b53f6c1831",
 "struct_video_1_1_frame_queue.html#a14fcc80f6c0124b4abfd87a500bae728",
 "structavnd__tools_1_1_pattern_combiner_1_1average.html#a9f16e1b70aaf4851704374b08d23a579",
-"structoscr_1_1_custom_item_1_1custom__mouse__event.html#a8bb6e67366b498e0e0f9705041a7923f",
-"structossia_1_1node__graph__process.html#a135220c9c031a860a1dbd7c7ca27e88e",
-"structscore_1_1_drag_over_tool_button.html",
-"structscore_1_1_speed_slider.html#a9bec98499ac4893367cdb76fd38f006f",
-"structscore_1_1gfx_1_1_edge.html#aa473c2a5995d8a2547847f4b6b759a4f",
-"structscore_1_1gfx_1_1_texgen_node.html#a9cf81e68af66f6ee30b8dc122313f66b",
-"structscore_1_1uuids_1_1uuid.html#acc03d3d961affde20fe2c57a8546745a"
+"structoscr_1_1_custom_item_1_1custom__mouse__event.html#a91322d140aa9b0da48b40c177d842011",
+"structossia_1_1node__graph__process.html#a1e0999accf1c0e3482d15ad7dd353082",
+"structscore_1_1_drag_over_tool_button.html#a10e29bc609648766839142dafa8c8ecb",
+"structscore_1_1_spinbox_with_enter.html",
+"structscore_1_1gfx_1_1_edge.html#abfae64188afcfd04f80c26e5bea88f54",
+"structscore_1_1gfx_1_1_texgen_node.html#aa099fc44c6644699fd3bd0f99a14aaa0",
+"structscore_1_1uuids_1_1uuid.html#ae227b7eea38c628332dbd301457304c1"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
