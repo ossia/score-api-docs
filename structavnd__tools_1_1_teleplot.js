@@ -1,6 +1,8 @@
 var structavnd__tools_1_1_teleplot =
 [
     [ "inputs_t", "structavnd__tools_1_1_teleplot_1_1inputs__t.html", "structavnd__tools_1_1_teleplot_1_1inputs__t" ],
+    [ "~Teleplot", "structavnd__tools_1_1_teleplot.html#a74a68ed1e346278bab5ce44de241adaf", null ],
+    [ "clear", "structavnd__tools_1_1_teleplot.html#a42deaf30bd7cf0fa8703d7ce0794b23e", null ],
     [ "halp_meta", "structavnd__tools_1_1_teleplot.html#a26131ffa1d832b0b296496c2ceb2e5b6", null ],
     [ "halp_meta", "structavnd__tools_1_1_teleplot.html#ac8020c47bb9ad755f58a2f4eb75a24a5", null ],
     [ "halp_meta", "structavnd__tools_1_1_teleplot.html#a8f09e65056e7cd769b597783c970caf1", null ],
