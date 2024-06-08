@@ -18,10 +18,6 @@ var NAVTREEINDEX0 =
 "":[11,0,34,0],
 "":[11,0,34,1],
 "":[11,0,34,2],
-"":[11,0,34,2,0],
-"":[11,0,9,1,0],
-"":[11,0,34,3],
-"":[11,0,34,4],
 "":[11,0,3],
 "":[11,0,35],
 "":[11,0,35,0],
@@ -249,5 +245,9 @@ var NAVTREEINDEX0 =
 "_artnet_specific_settings_8hpp.html#a8c37dfce4d5f0e6dbeb8a6d79baff713":[11,0,46,0,6],
 "_artnet_specific_settings_8hpp_source.html":[13,0,73],
 "_attributes_8hpp_source.html":[13,0,75],
-"_audio_application_plugin_8hpp_source.html":[13,0,76]
+"_audio_application_plugin_8hpp_source.html":[13,0,76],
+"_audio_array_8hpp.html#a47d3d512c44eb833f7022cdb1bc51798":[11,0,34,28],
+"_audio_array_8hpp.html#a5dda4aaa5ee88a9d18bd754ba7ae4ac5":[11,0,34,26],
+"_audio_array_8hpp.html#a650b3592fb366e30b5385050625a52b0":[11,0,34,27],
+"_audio_array_8hpp_source.html":[13,0,77]
 };

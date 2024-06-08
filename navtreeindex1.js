@@ -1,9 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"_audio_array_8hpp.html#a47d3d512c44eb833f7022cdb1bc51798":[11,0,34,28],
-"_audio_array_8hpp.html#a5dda4aaa5ee88a9d18bd754ba7ae4ac5":[11,0,34,26],
-"_audio_array_8hpp.html#a650b3592fb366e30b5385050625a52b0":[11,0,34,27],
-"_audio_array_8hpp_source.html":[13,0,77],
 "_audio_decoder_8cpp.html#a4b8d363d25754bb8eb26db07c1404511":[11,0,34,30],
 "_audio_decoder_8cpp.html#a65a60098ca7fd3735053f0c512f0e0be":[11,0,34,38],
 "_audio_decoder_8cpp.html#a6f01d43e079df7cd8907c01cdf535188":[11,0,34,29],
@@ -22,13 +18,11 @@ var NAVTREEINDEX1 =
 "_audio_recorder_8hpp_source.html":[13,0,88],
 "_audio_tick_8cpp.html#a03c00b2782a339c00db60f9b32c8d461":[11,0,1,14],
 "_audio_tick_8cpp.html#a1f807d8eaaf2a212a42a96337e6213a2":[11,0,1,13],
-"_audio_tick_8hpp.html#a0c22ff4d97d81507c7e93335c650d3c4":[11,0,1,12],
 "_audio_tick_8hpp_source.html":[13,0,89],
 "_automatable_factory_8hpp_source.html":[13,0,90],
 "_automation_colors_8hpp_source.html":[13,0,91],
 "_automation_command_factory_8hpp_source.html":[13,0,92],
 "_automation_drop_handler_8hpp_source.html":[13,0,93],
-"_automation_execution_8hpp.html#a7dd1aa018ccb392279402c5086cb9395":[11,0,2,0,3],
 "_automation_execution_8hpp_source.html":[13,0,94],
 "_automation_inspector_factory_8hpp_source.html":[13,0,95],
 "_automation_inspector_widget_8hpp_source.html":[13,0,96],
@@ -249,5 +243,11 @@ var NAVTREEINDEX1 =
 "_crest_8hpp_source.html":[13,0,253],
 "_cursor_8hpp_source.html":[13,0,256],
 "_curve_command_factory_8hpp_source.html":[13,0,257],
-"_curve_command_object_base_8hpp_source.html":[13,0,258]
+"_curve_command_object_base_8hpp_source.html":[13,0,258],
+"_curve_conversion_8hpp.html#a2740c1f7979af09ae01a0f74f0ae3685":[11,0,12,1,8],
+"_curve_conversion_8hpp.html#a801eea1ad194a60ee5f5056f4f62d54c":[11,0,12,1,6],
+"_curve_conversion_8hpp_source.html":[13,0,259],
+"_curve_edition_settings_8hpp_source.html":[13,0,260],
+"_curve_editor_8hpp_source.html":[13,0,261],
+"_curve_inlet_8hpp_source.html":[13,0,262]
 };

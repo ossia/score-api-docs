@@ -1,12 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"_factory_family___qt_interface_8hpp_source.html":[13,0,475],
-"_factory_interface___qt_interface_8hpp_source.html":[13,0,476],
-"_factory_setup_8hpp_source.html":[13,0,477],
-"_file_8hpp_source.html":[13,0,478],
-"_file_downloader_8hpp_source.html":[13,0,479],
-"_file_path_8hpp_source.html":[13,0,480],
-"_file_system_model_8hpp_source.html":[13,0,481],
 "_file_watch_8hpp_source.html":[13,0,482],
 "_find_string_in_file_8hpp_source.html":[13,0,483],
 "_fixed_tab_widget_8hpp_source.html":[13,0,484],
@@ -249,5 +242,12 @@ var NAVTREEINDEX3 =
 "_m_q_t_t_protocol_settings_widget_8hpp.html#a7ce777560d2e06384b90c4ac89a6f230":[11,0,46,102],
 "_m_q_t_t_protocol_settings_widget_8hpp.html#a7ce777560d2e06384b90c4ac89a6f230a01ab1656b05738d2205fcd154fde2e63":[11,0,46,102,1],
 "_m_q_t_t_protocol_settings_widget_8hpp.html#a7ce777560d2e06384b90c4ac89a6f230ab136ef5f6a01d816991fe3cf7a6ac763":[11,0,46,102,0],
-"_m_q_t_t_protocol_settings_widget_8hpp_source.html":[13,0,844]
+"_m_q_t_t_protocol_settings_widget_8hpp_source.html":[13,0,844],
+"_m_q_t_t_specific_settings_8hpp_source.html":[13,0,845],
+"_macro_command_dispatcher_8hpp_source.html":[13,0,711],
+"_magnetic_info_8hpp_source.html":[13,0,712],
+"_magnetism_adjuster_8hpp_source.html":[13,0,713],
+"_make_bus_8hpp_source.html":[13,0,714],
+"_manual_clock_8hpp_source.html":[13,0,715],
+"_map_copy_8hpp_source.html":[13,0,716]
 };
