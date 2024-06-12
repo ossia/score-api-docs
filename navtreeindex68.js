@@ -1,5 +1,8 @@
 var NAVTREEINDEX68 =
 {
+"struct_media_1_1_sound_1_1_dropped_audio_files.html#a2c8a115c186dd723f979d4c36c163430":[12,0,32,3,2,0],
+"struct_media_1_1_sound_1_1_dropped_audio_files.html#a302af4a8cebba2f38bc3deeb5bdd1ad7":[12,0,32,3,2,2],
+"struct_media_1_1_sound_1_1_dropped_audio_files.html#a9e94ba45c659928211ee85f983aefc33":[12,0,32,3,2,4],
 "struct_media_1_1_sound_1_1_dropped_audio_files.html#acabb2fe1bcff720990cc166c8e49d20e":[12,0,32,3,2,3],
 "struct_media_1_1_sound_1_1_q_image_pool.html":[12,0,32,3,4],
 "struct_media_1_1_sound_1_1_q_image_pool.html#a32bbd5941f5b34228070e26b296132e8":[12,0,32,3,4,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX68 =
 "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#a364bfde1c03c7eb1ad3c62548063e791":[12,0,36,2,0,1,3],
 "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#a40649cf7c2f109f1ac514cfd05aa3cb0":[12,0,36,2,0,1,6],
 "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#a5097b8ca68fe6b3e362fec20174e582e":[12,0,36,2,0,1,4],
-"struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#a6e2222756fdebcbfc363372374ee1f79":[12,0,36,2,0,1,8],
-"struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#aa8ddd9f5efaccc2566fc80611453e209":[12,0,36,2,0,1,2],
-"struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#aba5beba264acf1329a8b8d100165a757":[12,0,36,2,0,1,1],
-"struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#abecbb00438fe7161968914ae53a61dd4":[12,0,36,2,0,1,16]
+"struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#a6e2222756fdebcbfc363372374ee1f79":[12,0,36,2,0,1,8]
 };

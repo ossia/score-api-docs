@@ -228,6 +228,7 @@ var hierarchy =
     ] ],
     [ "Nodes::Chord::Node::State::chord", "struct_nodes_1_1_chord_1_1_node_1_1_state_1_1chord.html", null ],
     [ "Jit::ClangCC1Driver", "class_jit_1_1_clang_c_c1_driver.html", null ],
+    [ "Gfx::clear_msg_visitor", "struct_gfx_1_1clear__msg__visitor.html", null ],
     [ "score::Modifier::Click_tag", "structscore_1_1_modifier_1_1_click__tag.html", null ],
     [ "Execution::Clock", "class_execution_1_1_clock.html", [
       [ "Dataflow::Clock", "class_dataflow_1_1_clock.html", null ],
@@ -1106,8 +1107,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [

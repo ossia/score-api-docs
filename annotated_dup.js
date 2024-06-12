@@ -551,6 +551,7 @@ var annotated_dup =
       [ "exec_control", "struct_gfx_1_1exec__control.html", "struct_gfx_1_1exec__control" ],
       [ "gfx_exec_node", "class_gfx_1_1gfx__exec__node.html", "class_gfx_1_1gfx__exec__node" ],
       [ "con_unvalidated", "struct_gfx_1_1con__unvalidated.html", "struct_gfx_1_1con__unvalidated" ],
+      [ "clear_msg_visitor", "struct_gfx_1_1clear__msg__visitor.html", "struct_gfx_1_1clear__msg__visitor" ],
       [ "simple_texture_input_protocol", "class_gfx_1_1simple__texture__input__protocol.html", "class_gfx_1_1simple__texture__input__protocol" ],
       [ "simple_texture_input_parameter", "class_gfx_1_1simple__texture__input__parameter.html", "class_gfx_1_1simple__texture__input__parameter" ],
       [ "simple_texture_input_node", "class_gfx_1_1simple__texture__input__node.html", "class_gfx_1_1simple__texture__input__node" ],
