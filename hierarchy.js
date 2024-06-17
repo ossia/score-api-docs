@@ -1143,12 +1143,16 @@ var hierarchy =
     [ "Inlet", null, [
       [ "AudioInlet", "class_audio_inlet.html", null ],
       [ "ControlInlet", "class_control_inlet.html", [
+        [ "GenericControlInlet< Process::IntSlider, int >", "class_generic_control_inlet.html", [
+          [ "IntSlider< Impl >", "class_int_slider.html", null ]
+        ] ],
+        [ "GenericControlInlet< Process::FloatSlider, float >", "class_generic_control_inlet.html", [
+          [ "FloatSlider< Impl >", "class_float_slider.html", null ]
+        ] ],
         [ "Button", "class_button.html", null ],
         [ "Enum", "class_enum.html", null ],
-        [ "FloatSlider< Impl >", "class_float_slider.html", null ],
         [ "GenericControlInlet< Impl, ValueType >", "class_generic_control_inlet.html", null ],
         [ "Impulse", "class_impulse.html", null ],
-        [ "IntSlider< Impl >", "class_int_slider.html", null ],
         [ "LineEdit", "class_line_edit.html", null ],
         [ "Toggle", "class_toggle.html", null ]
       ] ],

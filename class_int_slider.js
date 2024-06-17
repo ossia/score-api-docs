@@ -1,7 +1,6 @@
 var class_int_slider =
 [
     [ "~IntSlider", "class_int_slider.html#aee0377d288b40d765fe73ce4a2c4a227", null ],
-    [ "ControlInlet", "class_int_slider.html#af2a40b5a257e42fda26bcf2673b25e58", null ],
     [ "getMax", "class_int_slider.html#a7f006160387b01bf695a27fe0317d459", null ],
     [ "init", "class_int_slider.html#ae5828ae280505fb81d77e90f5d8fb440", null ],
     [ "initChanged", "class_int_slider.html#a708bf1efbda5fa130a7f6e748bf0f29d", null ],

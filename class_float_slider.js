@@ -1,7 +1,6 @@
 var class_float_slider =
 [
     [ "~FloatSlider", "class_float_slider.html#afd5706f53873af23685e9c632c97cb8e", null ],
-    [ "ControlInlet", "class_float_slider.html#af2a40b5a257e42fda26bcf2673b25e58", null ],
     [ "getMax", "class_float_slider.html#abd4f135b10b1967ffe6d9e8aa0e6d756", null ],
     [ "init", "class_float_slider.html#af960b9b06edc555180f06198564f4604", null ],
     [ "initChanged", "class_float_slider.html#a5a7488508e066358221df2106ccbf99d", null ],
