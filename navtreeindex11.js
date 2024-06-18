@@ -1,5 +1,7 @@
 var NAVTREEINDEX11 =
 {
+"class_data_stream_writer.html#a1d0fd90ea1f24193a33c5974ad9635d7":[12,0,99,41],
+"class_data_stream_writer.html#a1dcb32d48062fcb5bf11ff76f1691b93":[12,0,99,29],
 "class_data_stream_writer.html#a1e2d53854c18a8acf4da040a388524d8":[12,0,99,71],
 "class_data_stream_writer.html#a1fa8a02ca5a0269e0a5cd4baee80cfef":[12,0,99,9],
 "class_data_stream_writer.html#a2228754207c39fab70f59493425797b7":[12,0,99,12],
@@ -247,7 +249,5 @@ var NAVTREEINDEX11 =
 "class_dataflow_1_1_automatable_port_item.html#a96ee2011cd276aa9276e90101ae01795":[12,0,10,31,6],
 "class_dataflow_1_1_automatable_port_item.html#af499f79686403bbbe27ab9c90f2ad5ce":[12,0,10,31,4],
 "class_dataflow_1_1_basic_tool_palette_input_dispatcher.html":[12,0,10,21],
-"class_dataflow_1_1_basic_tool_palette_input_dispatcher.html#a2f7e635e9129ce3ca2d4aaad332b4204":[12,0,10,21,4],
-"class_dataflow_1_1_basic_tool_palette_input_dispatcher.html#a30c25ae01166a3b15b4ea454583c6879":[12,0,10,21,3],
-"class_dataflow_1_1_basic_tool_palette_input_dispatcher.html#a3be2a806245186a557a16244f01b41e2":[12,0,10,21,1]
+"class_dataflow_1_1_basic_tool_palette_input_dispatcher.html#a2f7e635e9129ce3ca2d4aaad332b4204":[12,0,10,21,4]
 };

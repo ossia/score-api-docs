@@ -11,7 +11,7 @@ var searchData=
   ['safeqapplication_2082',['SafeQApplication',['../class_safe_q_application.html',1,'']]],
   ['sampler_2083',['Sampler',['../structscore_1_1gfx_1_1_sampler.html',1,'score::gfx']]],
   ['sampletimings_2084',['SampleTimings',['../struct_j_s_1_1_sample_timings.html',1,'JS']]],
-  ['savedport_2085',['SavedPort',['../struct_scenario_1_1_saved_port.html',1,'Scenario']]],
+  ['savedport_2085',['SavedPort',['../struct_dataflow_1_1_saved_port.html',1,'Dataflow']]],
   ['saveformatversion_2086',['saveFormatVersion',['../structscore_1_1_application_settings.html#a2ca3a0746bc5d3dd143ff71943607eba',1,'score::ApplicationSettings']]],
   ['scaledrenderer_2087',['ScaledRenderer',['../classscore_1_1gfx_1_1_screen_node_1_1_scaled_renderer.html',1,'score::gfx::ScreenNode']]],
   ['scalemode_2088',['ScaleMode',['../namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58',1,'score::gfx']]],

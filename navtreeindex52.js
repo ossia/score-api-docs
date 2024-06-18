@@ -1,5 +1,7 @@
 var NAVTREEINDEX52 =
 {
+"classscore_1_1gfx_1_1_generic_node_renderer.html#af2217ea7bc68b9b567eb2059ecdaf3df":[12,0,49,2,43,11],
+"classscore_1_1gfx_1_1_generic_node_renderer.html#af88c7cfaba2a206266c878bf39bc6b08":[12,0,49,2,43,20],
 "classscore_1_1gfx_1_1_i_s_f_node.html":[12,0,49,2,28],
 "classscore_1_1gfx_1_1_i_s_f_node.html#a3b494693f4f4731ca08895903e4190ff":[12,0,49,2,28,9],
 "classscore_1_1gfx_1_1_i_s_f_node.html#a41aaf79d5d674732a25eeb45eefb5fe9":[12,0,49,2,28,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX52 =
 "classscore__plugin__library.html#a4dc641ccc94b5948239e78677f170757":[12,0,258,0],
 "classscore__plugin__lv2.html":[12,0,259],
 "classscore__plugin__lv2.html#a0b0c8d562a32e33e26786fd4d93c414b":[12,0,259,3],
-"classscore__plugin__lv2.html#a496e8540b36e3fcdda84a2e29507c636":[12,0,259,1],
-"classscore__plugin__lv2.html#a855e9286c662ead531e1b956a8c5b457":[12,0,259,0],
-"classscore__plugin__lv2.html#aca85907544e5f716850137f21bb57719":[12,0,259,2]
+"classscore__plugin__lv2.html#a496e8540b36e3fcdda84a2e29507c636":[12,0,259,1]
 };

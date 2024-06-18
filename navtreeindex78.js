@@ -1,5 +1,8 @@
 var NAVTREEINDEX78 =
 {
+"structoscr_1_1_q_painter_adapter.html#a6a78527ce8bc5057200c99c209f624a6":[12,0,37,34,17],
+"structoscr_1_1_q_painter_adapter.html#a6bea756196e8ec8618f6a1b2a65b7820":[12,0,37,34,18],
+"structoscr_1_1_q_painter_adapter.html#a72b6958452d1c45743fdabe477ee8539":[12,0,37,34,15],
 "structoscr_1_1_q_painter_adapter.html#a7af4c6c43a46ae75222f0944e901f963":[12,0,37,34,8],
 "structoscr_1_1_q_painter_adapter.html#a7e0343733f347c05d6f037bb82d8602e":[12,0,37,34,32],
 "structoscr_1_1_q_painter_adapter.html#a9cf96ce7d363b0098c137776b24ec7ff":[12,0,37,34,7],
@@ -62,8 +65,8 @@ var NAVTREEINDEX78 =
 "structoscr_1_1setup___impl0.html#a475fec302bc8c4f7d8821ee592319084":[12,0,37,19,7],
 "structoscr_1_1setup___impl0.html#a61f8e7ead77c10b7719c85d0dcea206f":[12,0,37,19,9],
 "structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,37,19,5],
-"structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,37,19,4],
 "structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,37,19,6],
+"structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,37,19,4],
 "structoscr_1_1setup___impl0.html#ab0925cd37367396714b0651fb445ad3d":[12,0,37,19,10],
 "structoscr_1_1setup___impl0.html#ac697cbf094cf1842eb7949c2bae9439d":[12,0,37,19,3],
 "structoscr_1_1setup___impl0.html#aced344fa4d64c5a68ac6e9227ebd6c95":[12,0,37,19,8],
@@ -246,8 +249,5 @@ var NAVTREEINDEX78 =
 "structscore_1_1_color_ref.html#a6efcdabe8c103756d152568fe4f7241f":[12,0,49,165,2],
 "structscore_1_1_color_ref.html#a6ff4b165466ab61fa5705cf625e1026e":[12,0,49,165,5],
 "structscore_1_1_color_ref.html#a75eb041c0b56e02d1fedb93db4d08b48":[12,0,49,165,1],
-"structscore_1_1_color_ref.html#a7895da458d949a20f6ef920605cb178d":[12,0,49,165,7],
-"structscore_1_1_color_ref.html#a95957bde59aca463ba0078e84bbf4d6b":[12,0,49,165,10],
-"structscore_1_1_color_ref.html#aa199449d79485e7782687cdbe5fc73ca":[12,0,49,165,0],
-"structscore_1_1_color_ref.html#ad07c4288d72a7baad4c6ef040b2740e7":[12,0,49,165,4]
+"structscore_1_1_color_ref.html#a7895da458d949a20f6ef920605cb178d":[12,0,49,165,7]
 };

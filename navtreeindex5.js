@@ -1,5 +1,7 @@
 var NAVTREEINDEX5 =
 {
+"_q_rhi_gles2_8hpp_source.html":[13,0,1057],
+"_qml_objects_8hpp_source.html":[13,0,1056],
 "_qt_metatypes_8hpp_source.html":[13,0,1058],
 "_quantification_widget_8hpp_source.html":[13,0,1059],
 "_quantifier_8hpp.html#a6611256190d47899de69bb6265565534":[11,0,38,26,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX5 =
 "_sound_view_8hpp_source.html":[13,0,1305],
 "_spammer_8hpp_source.html":[13,0,1306],
 "_spectral_difference_8hpp_source.html":[13,0,1307],
-"_spectral_difference___h_w_r_8hpp_source.html":[13,0,1308],
-"_speed_slider_8hpp_source.html":[13,0,1309],
-"_spin_boxes_8hpp_source.html":[13,0,1310]
+"_spectral_difference___h_w_r_8hpp_source.html":[13,0,1308]
 };

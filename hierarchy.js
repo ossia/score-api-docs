@@ -1107,8 +1107,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -3468,7 +3468,7 @@ var hierarchy =
     [ "Nodes::FactorOracle::safe_vector_simple< Nodes::FactorOracle::safe_vector< int, -1 > >", "struct_nodes_1_1_factor_oracle_1_1safe__vector__simple.html", null ],
     [ "score::gfx::Sampler", "structscore_1_1gfx_1_1_sampler.html", null ],
     [ "JS::SampleTimings", "struct_j_s_1_1_sample_timings.html", null ],
-    [ "Scenario::SavedPort", "struct_scenario_1_1_saved_port.html", null ],
+    [ "Dataflow::SavedPort", "struct_dataflow_1_1_saved_port.html", null ],
     [ "Protocols::FixtureDatabase::Scan", "struct_protocols_1_1_fixture_database_1_1_scan.html", null ],
     [ "Scenario::ScenarioBeingCopied", "struct_scenario_1_1_scenario_being_copied.html", null ],
     [ "Scenario::ScenarioCreate< T >", "class_scenario_1_1_scenario_create.html", null ],

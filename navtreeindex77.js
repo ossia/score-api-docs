@@ -1,5 +1,8 @@
 var NAVTREEINDEX77 =
 {
+"structgenerator.html#a3a5a31fa73ac5d0ba05b3db93094a592":[12,0,116,14],
+"structgenerator.html#a499a53cded5ab4be02366092636a2622":[12,0,116,0],
+"structgenerator.html#a53c8ca179ccb99b8254ea4ab309ec9a7":[12,0,116,3],
 "structgenerator.html#a54e240738314f7bad0996a727e6414bd":[12,0,116,10],
 "structgenerator.html#a608ae6e5b086086a6a722853e4aa79a9":[12,0,116,25],
 "structgenerator.html#a622f3d2fdb31f5def8629cad891d71c0":[12,0,116,19],
@@ -246,8 +249,5 @@ var NAVTREEINDEX77 =
 "structoscr_1_1_q_painter_adapter.html#a4aa4cae761ad9469368020abd4375d38":[12,0,37,34,3],
 "structoscr_1_1_q_painter_adapter.html#a52b7593376645903fe1d7f18fdaa35ce":[12,0,37,34,4],
 "structoscr_1_1_q_painter_adapter.html#a564e6d75fb120def9bc538c2ac821114":[12,0,37,34,34],
-"structoscr_1_1_q_painter_adapter.html#a58ce619accb24c7adf23120ee9685547":[12,0,37,34,26],
-"structoscr_1_1_q_painter_adapter.html#a6a78527ce8bc5057200c99c209f624a6":[12,0,37,34,17],
-"structoscr_1_1_q_painter_adapter.html#a6bea756196e8ec8618f6a1b2a65b7820":[12,0,37,34,18],
-"structoscr_1_1_q_painter_adapter.html#a72b6958452d1c45743fdabe477ee8539":[12,0,37,34,15]
+"structoscr_1_1_q_painter_adapter.html#a58ce619accb24c7adf23120ee9685547":[12,0,37,34,26]
 };
