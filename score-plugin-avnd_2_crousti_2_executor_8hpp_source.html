@@ -916,126 +916,137 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_executor
 <div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160; </div>
 <div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;    <span class="keywordflow">if</span> constexpr(avnd::has_processor_to_gui_bus&lt;Node&gt;)</div>
 <div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;    {</div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;      eff.send_message = [<span class="keyword">this</span>](<span class="keyword">auto</span> b) <span class="keyword">mutable</span> {</div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;        this-&gt;in_edit([<span class="keyword">this</span>, bb = std::move(b)]() <span class="keyword">mutable</span> {</div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;          <span class="keywordflow">if</span>(this-&gt;process().to_ui)</div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;            <a class="code" href="structoscr_1_1_message_bus_sender.html">MessageBusSender</a>{this-&gt;process().to_ui}(std::move(bb));</div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;        });</div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;      };</div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;    }</div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;  }</div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160; </div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;  <span class="keywordtype">void</span> connect_worker(const ::Execution::Context&amp; ctx, avnd::effect_container&lt;Node&gt;&amp; eff)</div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;  {</div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;    <span class="keywordflow">if</span> constexpr(avnd::has_worker&lt;Node&gt;)</div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;    {</div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;      <span class="comment">// Initialize the thread pool beforehand</span></div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;      <span class="keyword">auto</span>&amp; tq = score::TaskPool::instance();</div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;      <span class="keyword">using</span> worker_type = decltype(eff.effect.worker);</div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; eff : eff.effects())</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;      {</div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;        std::weak_ptr eff_ptr = std::shared_ptr&lt;Node&gt;(this-&gt;node, &amp;eff);</div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;        std::weak_ptr qex_ptr = std::shared_ptr&lt;Execution::ExecutionCommandQueue&gt;(</div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;            ctx.alias.lock(), &amp;ctx.executionQueue);</div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160; </div>
-<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;        eff.worker.request</div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;            = [&amp;tq, qex_ptr = std::move(qex_ptr),</div>
-<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;               eff_ptr = std::move(eff_ptr)]&lt;<span class="keyword">typename</span>... Args&gt;(Args&amp;&amp;... f) {</div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;          <span class="comment">// request() is invoked in the DSP / processor thread</span></div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;          <span class="comment">// and just posts the task to the thread pool</span></div>
-<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;          tq.post([eff_ptr = std::move(eff_ptr), qex_ptr = std::move(qex_ptr),</div>
-<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;                   ... ff = std::forward&lt;Args&gt;(f)]() <span class="keyword">mutable</span> {</div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;            <span class="comment">// This happens in the worker thread</span></div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;            <span class="comment">// If for some reason the object has already been removed, not much</span></div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;            <span class="comment">// reason to perform the work</span></div>
-<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;            <span class="keywordflow">if</span>(!eff_ptr.lock())</div>
-<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;              <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160; </div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;            <span class="keyword">using</span> type_of_result</div>
-<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;                = decltype(worker_type::work(std::forward&lt;decltype(ff)&gt;(ff)...));</div>
-<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;            <span class="keywordflow">if</span> constexpr(std::is_void_v&lt;type_of_result&gt;)</div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;            {</div>
-<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;              worker_type::work(std::forward&lt;decltype(ff)&gt;(ff)...);</div>
-<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;            }</div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;            {</div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;              <span class="comment">// If the worker returns a std::function, it</span></div>
-<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;              <span class="comment">// is to be invoked back in the processor DSP thread</span></div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;              <span class="keyword">auto</span> res = worker_type::work(std::forward&lt;decltype(ff)&gt;(ff)...);</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;              <span class="keywordflow">if</span>(!res)</div>
-<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160; </div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;              <span class="comment">// Execution queue is currently spsc from main thread to an exec thread,</span></div>
-<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;              <span class="comment">// we cannot just yeet the result back from the thread-pool</span></div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;              ossia::qt::run_async(</div>
-<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;                  qApp, [eff_ptr = std::move(eff_ptr), qex_ptr = std::move(qex_ptr),</div>
-<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;                         res = std::move(res)]() <span class="keyword">mutable</span> {</div>
-<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;                    <span class="comment">// Main thread</span></div>
-<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;                    std::shared_ptr qex = qex_ptr.lock();</div>
-<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;                    <span class="keywordflow">if</span>(!qex)</div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;                      <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160; </div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;                    qex-&gt;enqueue(</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;                        [eff_ptr = std::move(eff_ptr), res = std::move(res)]() <span class="keyword">mutable</span> {</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;                  <span class="comment">// DSP / processor thread</span></div>
-<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;                  <span class="comment">// We need res to be mutable so that the worker can use it to e.g. store</span></div>
-<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;                  <span class="comment">// old data which will be freed back in the main thread</span></div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;                  <span class="keywordflow">if</span>(<span class="keyword">auto</span> p = eff_ptr.lock())</div>
-<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;                    res(*p);</div>
-<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;                    });</div>
-<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;                  });</div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;            }</div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;          });</div>
-<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;        };</div>
-<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;      }</div>
-<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;    }</div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;  }</div>
-<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160; </div>
-<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;  <span class="comment">// Update everything</span></div>
-<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;  <span class="keywordtype">void</span> update_controls(std::shared_ptr&lt;safe_node&lt;Node&gt;&gt;&amp; ptr)</div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;  {</div>
-<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;    avnd::effect_container&lt;Node&gt;&amp; eff = ptr-&gt;impl;</div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;    {</div>
-<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; state : eff.full_state())</div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;      {</div>
-<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;        avnd::input_introspection&lt;Node&gt;::for_all(</div>
-<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;            state.inputs, [&amp;](<span class="keyword">auto</span>&amp; field) { if_possible(field.update(state.effect)); });</div>
-<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;      }</div>
-<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;    }</div>
-<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;  }</div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160; </div>
-<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;  <span class="keywordtype">void</span> cleanup()<span class="keyword"> override</span></div>
-<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;    <span class="keywordflow">if</span> constexpr(requires { this-&gt;process().from_ui; })</div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;    {</div>
-<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;      this-&gt;process().from_ui = [](QByteArray arr) {};</div>
-<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;    }</div>
-<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;    <span class="comment">// FIXME cleanup eff.effect.send_message too ?</span></div>
-<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160; </div>
-<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;<span class="preprocessor">#if SCORE_PLUGIN_GFX</span></div>
-<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;    <span class="keywordflow">if</span> constexpr(is_gpu&lt;Node&gt;)</div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;    {</div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;      <span class="comment">// FIXME this must move in the Node dtor. See video_node</span></div>
-<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;      <span class="keyword">auto</span>&amp; gfx_exec = this-&gt;system().doc.template plugin&lt;Gfx::DocumentPlugin&gt;().exec;</div>
-<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;      <span class="keywordflow">if</span>(node_id &gt;= 0)</div>
-<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;        gfx_exec.ui-&gt;unregister_node(node_id);</div>
-<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;    }</div>
-<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160; </div>
-<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;    <span class="comment">// FIXME refactor this with other GFX processes</span></div>
-<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>* outlet : this-&gt;process().outlets())</div>
-<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;    {</div>
-<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">auto</span> out = qobject_cast&lt;Gfx::TextureOutlet*&gt;(outlet))</div>
-<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;      {</div>
-<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;        out-&gt;nodeId = -1;</div>
-<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;      }</div>
-<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;    }</div>
-<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;    ::Execution::ProcessComponent::cleanup();</div>
-<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;  }</div>
-<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160; </div>
-<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;  ~<a class="code" href="classoscr_1_1_executor.html">Executor</a>() { }</div>
-<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;};</div>
-<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;}</div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;      eff.send_message = [<span class="keyword">this</span>]&lt;<span class="keyword">typename</span> T&gt;(T&amp;&amp; b) <span class="keyword">mutable</span> {</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;        <span class="keywordflow">if</span> constexpr(<span class="keyword">sizeof</span>(<span class="keyword">this</span>) + <span class="keyword">sizeof</span>(b) &lt; Execution::ExecutionCommand::max_storage)</div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;        {</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;          this-&gt;in_edit([<span class="keyword">this</span>, bb = std::move(b)]() <span class="keyword">mutable</span> {</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;            <span class="keywordflow">if</span>(this-&gt;process().to_ui)</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;              <a class="code" href="structoscr_1_1_message_bus_sender.html">MessageBusSender</a>{this-&gt;process().to_ui}(std::move(bb));</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;          });</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;        }</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;        {</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;          this-&gt;in_edit(</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;              [<span class="keyword">this</span>, bb = std::make_unique&lt;std::decay_t&lt;T&gt;&gt;(std::move(b))]() <span class="keyword">mutable</span> {</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;            <span class="keywordflow">if</span>(this-&gt;process().to_ui)</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;              <a class="code" href="structoscr_1_1_message_bus_sender.html">MessageBusSender</a>{this-&gt;process().to_ui}(*std::move(bb));</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;          });</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;        }</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;      };</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;    }</div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;  }</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160; </div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;  <span class="keywordtype">void</span> connect_worker(const ::Execution::Context&amp; ctx, avnd::effect_container&lt;Node&gt;&amp; eff)</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;  {</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;    <span class="keywordflow">if</span> constexpr(avnd::has_worker&lt;Node&gt;)</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;    {</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;      <span class="comment">// Initialize the thread pool beforehand</span></div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;      <span class="keyword">auto</span>&amp; tq = score::TaskPool::instance();</div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;      <span class="keyword">using</span> worker_type = decltype(eff.effect.worker);</div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; eff : eff.effects())</div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;      {</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;        std::weak_ptr eff_ptr = std::shared_ptr&lt;Node&gt;(this-&gt;node, &amp;eff);</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;        std::weak_ptr qex_ptr = std::shared_ptr&lt;Execution::ExecutionCommandQueue&gt;(</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;            ctx.alias.lock(), &amp;ctx.executionQueue);</div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160; </div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;        eff.worker.request</div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;            = [&amp;tq, qex_ptr = std::move(qex_ptr),</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;               eff_ptr = std::move(eff_ptr)]&lt;<span class="keyword">typename</span>... Args&gt;(Args&amp;&amp;... f) {</div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;          <span class="comment">// request() is invoked in the DSP / processor thread</span></div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;          <span class="comment">// and just posts the task to the thread pool</span></div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;          tq.post([eff_ptr = std::move(eff_ptr), qex_ptr = std::move(qex_ptr),</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;                   ... ff = std::forward&lt;Args&gt;(f)]() <span class="keyword">mutable</span> {</div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;            <span class="comment">// This happens in the worker thread</span></div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;            <span class="comment">// If for some reason the object has already been removed, not much</span></div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;            <span class="comment">// reason to perform the work</span></div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;            <span class="keywordflow">if</span>(!eff_ptr.lock())</div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;              <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160; </div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;            <span class="keyword">using</span> type_of_result</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;                = decltype(worker_type::work(std::forward&lt;decltype(ff)&gt;(ff)...));</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;            <span class="keywordflow">if</span> constexpr(std::is_void_v&lt;type_of_result&gt;)</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;            {</div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;              worker_type::work(std::forward&lt;decltype(ff)&gt;(ff)...);</div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;            }</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;            {</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;              <span class="comment">// If the worker returns a std::function, it</span></div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;              <span class="comment">// is to be invoked back in the processor DSP thread</span></div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;              <span class="keyword">auto</span> res = worker_type::work(std::forward&lt;decltype(ff)&gt;(ff)...);</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;              <span class="keywordflow">if</span>(!res)</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160; </div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;              <span class="comment">// Execution queue is currently spsc from main thread to an exec thread,</span></div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;              <span class="comment">// we cannot just yeet the result back from the thread-pool</span></div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;              ossia::qt::run_async(</div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;                  qApp, [eff_ptr = std::move(eff_ptr), qex_ptr = std::move(qex_ptr),</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;                         res = std::move(res)]() <span class="keyword">mutable</span> {</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;                    <span class="comment">// Main thread</span></div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;                    std::shared_ptr qex = qex_ptr.lock();</div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;                    <span class="keywordflow">if</span>(!qex)</div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;                      <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160; </div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;                    qex-&gt;enqueue(</div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;                        [eff_ptr = std::move(eff_ptr), res = std::move(res)]() <span class="keyword">mutable</span> {</div>
+<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;                  <span class="comment">// DSP / processor thread</span></div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;                  <span class="comment">// We need res to be mutable so that the worker can use it to e.g. store</span></div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;                  <span class="comment">// old data which will be freed back in the main thread</span></div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;                  <span class="keywordflow">if</span>(<span class="keyword">auto</span> p = eff_ptr.lock())</div>
+<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;                    res(*p);</div>
+<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;                    });</div>
+<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;                  });</div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;            }</div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;          });</div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;        };</div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;      }</div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;    }</div>
+<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;  }</div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160; </div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;  <span class="comment">// Update everything</span></div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;  <span class="keywordtype">void</span> update_controls(std::shared_ptr&lt;safe_node&lt;Node&gt;&gt;&amp; ptr)</div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;  {</div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;    avnd::effect_container&lt;Node&gt;&amp; eff = ptr-&gt;impl;</div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;    {</div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; state : eff.full_state())</div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;      {</div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;        avnd::input_introspection&lt;Node&gt;::for_all(</div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;            state.inputs, [&amp;](<span class="keyword">auto</span>&amp; field) { if_possible(field.update(state.effect)); });</div>
+<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;      }</div>
+<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;    }</div>
+<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;  }</div>
+<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160; </div>
+<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;  <span class="keywordtype">void</span> cleanup()<span class="keyword"> override</span></div>
+<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;    <span class="keywordflow">if</span> constexpr(requires { this-&gt;process().from_ui; })</div>
+<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;    {</div>
+<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;      this-&gt;process().from_ui = [](QByteArray arr) {};</div>
+<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;    }</div>
+<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;    <span class="comment">// FIXME cleanup eff.effect.send_message too ?</span></div>
+<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160; </div>
+<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;<span class="preprocessor">#if SCORE_PLUGIN_GFX</span></div>
+<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;    <span class="keywordflow">if</span> constexpr(is_gpu&lt;Node&gt;)</div>
+<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;    {</div>
+<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;      <span class="comment">// FIXME this must move in the Node dtor. See video_node</span></div>
+<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;      <span class="keyword">auto</span>&amp; gfx_exec = this-&gt;system().doc.template plugin&lt;Gfx::DocumentPlugin&gt;().exec;</div>
+<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;      <span class="keywordflow">if</span>(node_id &gt;= 0)</div>
+<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;        gfx_exec.ui-&gt;unregister_node(node_id);</div>
+<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;    }</div>
+<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160; </div>
+<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;    <span class="comment">// FIXME refactor this with other GFX processes</span></div>
+<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>* outlet : this-&gt;process().outlets())</div>
+<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;    {</div>
+<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">auto</span> out = qobject_cast&lt;Gfx::TextureOutlet*&gt;(outlet))</div>
+<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;      {</div>
+<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;        out-&gt;nodeId = -1;</div>
+<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;      }</div>
+<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;    }</div>
+<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;    ::Execution::ProcessComponent::cleanup();</div>
+<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;  }</div>
+<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160; </div>
+<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;  ~<a class="code" href="classoscr_1_1_executor.html">Executor</a>() { }</div>
+<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;};</div>
+<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;}</div>
 <div class="ttc" id="aclass_gfx_1_1_document_plugin_html"><div class="ttname"><a href="class_gfx_1_1_document_plugin.html">Gfx::DocumentPlugin</a></div><div class="ttdef"><b>Definition:</b> GfxApplicationPlugin.hpp:13</div></div>
 <div class="ttc" id="aclass_path_html"><div class="ttname"><a href="class_path.html">Path&lt; Process::ProcessModel &gt;</a></div></div>
 <div class="ttc" id="aclass_process_1_1_control_inlet_html"><div class="ttname"><a href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:202</div></div>
@@ -1050,7 +1061,7 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_executor
 <div class="ttc" id="astruct_gfx_1_1con__unvalidated_html"><div class="ttname"><a href="struct_gfx_1_1con__unvalidated.html">Gfx::con_unvalidated</a></div><div class="ttdef"><b>Definition:</b> GfxExecNode.hpp:113</div></div>
 <div class="ttc" id="astructoscr_1_1_apply_engine_control_change_to_u_i_html"><div class="ttname"><a href="structoscr_1_1_apply_engine_control_change_to_u_i.html">oscr::ApplyEngineControlChangeToUI</a></div><div class="ttdef"><b>Definition:</b> score-plugin-avnd/Crousti/Executor.hpp:379</div></div>
 <div class="ttc" id="astructoscr_1_1_executor_gui_update_html"><div class="ttname"><a href="structoscr_1_1_executor_gui_update.html">oscr::ExecutorGuiUpdate</a></div><div class="ttdef"><b>Definition:</b> score-plugin-avnd/Crousti/Executor.hpp:414</div></div>
-<div class="ttc" id="astructoscr_1_1_message_bus_reader_html"><div class="ttname"><a href="structoscr_1_1_message_bus_reader.html">oscr::MessageBusReader</a></div><div class="ttdef"><b>Definition:</b> MessageBus.hpp:120</div></div>
+<div class="ttc" id="astructoscr_1_1_message_bus_reader_html"><div class="ttname"><a href="structoscr_1_1_message_bus_reader.html">oscr::MessageBusReader</a></div><div class="ttdef"><b>Definition:</b> MessageBus.hpp:133</div></div>
 <div class="ttc" id="astructoscr_1_1_message_bus_sender_html"><div class="ttname"><a href="structoscr_1_1_message_bus_sender.html">oscr::MessageBusSender</a></div><div class="ttdef"><b>Definition:</b> MessageBus.hpp:37</div></div>
 <div class="ttc" id="astructoscr_1_1control__updater_html"><div class="ttname"><a href="structoscr_1_1control__updater.html">oscr::control_updater</a></div><div class="ttdef"><b>Definition:</b> score-plugin-avnd/Crousti/Executor.hpp:148</div></div>
 <div class="ttc" id="astructoscr_1_1setup___impl0_1_1con__unvalidated_html"><div class="ttname"><a href="structoscr_1_1setup___impl0_1_1con__unvalidated.html">oscr::setup_Impl0::con_unvalidated</a></div><div class="ttdef"><b>Definition:</b> score-plugin-avnd/Crousti/Executor.hpp:173</div></div>

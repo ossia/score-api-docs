@@ -178,11 +178,13 @@ var NAVTREEINDEX77 =
 "structoscr_1_1_message_bus_reader.html#a6a67d30bcdeea1d6fb02c28faa6c4277":[12,0,37,33,3],
 "structoscr_1_1_message_bus_reader.html#aeeae08d16c48e85f509fcf972dcc9d3f":[12,0,37,33,2],
 "structoscr_1_1_message_bus_sender.html":[12,0,37,31],
-"structoscr_1_1_message_bus_sender.html#a063d44f0e2b92c924b10f6359ba70cfe":[12,0,37,31,3],
-"structoscr_1_1_message_bus_sender.html#a7dd0887ca6ff37cfcba5bcd78b874244":[12,0,37,31,2],
-"structoscr_1_1_message_bus_sender.html#a809c3cac45e539fa3719280ec4503bbe":[12,0,37,31,0],
-"structoscr_1_1_message_bus_sender.html#aca79916f06abe9e7f6a8abb1eb61baec":[12,0,37,31,1],
-"structoscr_1_1_message_bus_sender.html#ae7101c49467309364c5a10d7ea16d15a":[12,0,37,31,4],
+"structoscr_1_1_message_bus_sender.html#a063d44f0e2b92c924b10f6359ba70cfe":[12,0,37,31,5],
+"structoscr_1_1_message_bus_sender.html#a4204c95f767a7bf70dda3e6475f67df3":[12,0,37,31,0],
+"structoscr_1_1_message_bus_sender.html#a7dd0887ca6ff37cfcba5bcd78b874244":[12,0,37,31,4],
+"structoscr_1_1_message_bus_sender.html#a809c3cac45e539fa3719280ec4503bbe":[12,0,37,31,1],
+"structoscr_1_1_message_bus_sender.html#aca79916f06abe9e7f6a8abb1eb61baec":[12,0,37,31,3],
+"structoscr_1_1_message_bus_sender.html#addda0f995d008d4d9c2a32ef96b8f482":[12,0,37,31,2],
+"structoscr_1_1_message_bus_sender.html#ae7101c49467309364c5a10d7ea16d15a":[12,0,37,31,6],
 "structoscr_1_1_message_bus_wrapper_from_ui.html":[12,0,37,41],
 "structoscr_1_1_message_bus_wrapper_from_ui_3_01_info_01_4.html":[12,0,37,43],
 "structoscr_1_1_message_bus_wrapper_from_ui_3_01_info_01_4.html#a7acc4af0c0c0eb506a19e664f4e22e1a":[12,0,37,43,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX77 =
 "structoscr_1_1_q_painter_adapter.html#a58ce619accb24c7adf23120ee9685547":[12,0,37,34,26],
 "structoscr_1_1_q_painter_adapter.html#a6a78527ce8bc5057200c99c209f624a6":[12,0,37,34,17],
 "structoscr_1_1_q_painter_adapter.html#a6bea756196e8ec8618f6a1b2a65b7820":[12,0,37,34,18],
-"structoscr_1_1_q_painter_adapter.html#a72b6958452d1c45743fdabe477ee8539":[12,0,37,34,15],
-"structoscr_1_1_q_painter_adapter.html#a7af4c6c43a46ae75222f0944e901f963":[12,0,37,34,8],
-"structoscr_1_1_q_painter_adapter.html#a7e0343733f347c05d6f037bb82d8602e":[12,0,37,34,32]
+"structoscr_1_1_q_painter_adapter.html#a72b6958452d1c45743fdabe477ee8539":[12,0,37,34,15]
 };

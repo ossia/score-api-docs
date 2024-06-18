@@ -1,5 +1,7 @@
 var NAVTREEINDEX78 =
 {
+"structoscr_1_1_q_painter_adapter.html#a7af4c6c43a46ae75222f0944e901f963":[12,0,37,34,8],
+"structoscr_1_1_q_painter_adapter.html#a7e0343733f347c05d6f037bb82d8602e":[12,0,37,34,32],
 "structoscr_1_1_q_painter_adapter.html#a9cf96ce7d363b0098c137776b24ec7ff":[12,0,37,34,7],
 "structoscr_1_1_q_painter_adapter.html#a9e91b0285a5dc5d7011ca5aa8085bd31":[12,0,37,34,13],
 "structoscr_1_1_q_painter_adapter.html#aa9762421319a26e4e0b4c6c4581c7bb1":[12,0,37,34,25],
@@ -59,9 +61,9 @@ var NAVTREEINDEX78 =
 "structoscr_1_1setup___impl0.html#a2ad50f84e6eea6ac4a97c6483330c22d":[12,0,37,19,2],
 "structoscr_1_1setup___impl0.html#a475fec302bc8c4f7d8821ee592319084":[12,0,37,19,7],
 "structoscr_1_1setup___impl0.html#a61f8e7ead77c10b7719c85d0dcea206f":[12,0,37,19,9],
-"structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,37,19,6],
-"structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,37,19,4],
 "structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,37,19,5],
+"structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,37,19,4],
+"structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,37,19,6],
 "structoscr_1_1setup___impl0.html#ab0925cd37367396714b0651fb445ad3d":[12,0,37,19,10],
 "structoscr_1_1setup___impl0.html#ac697cbf094cf1842eb7949c2bae9439d":[12,0,37,19,3],
 "structoscr_1_1setup___impl0.html#aced344fa4d64c5a68ac6e9227ebd6c95":[12,0,37,19,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX78 =
 "structscore_1_1_color_ref.html#a7895da458d949a20f6ef920605cb178d":[12,0,49,165,7],
 "structscore_1_1_color_ref.html#a95957bde59aca463ba0078e84bbf4d6b":[12,0,49,165,10],
 "structscore_1_1_color_ref.html#aa199449d79485e7782687cdbe5fc73ca":[12,0,49,165,0],
-"structscore_1_1_color_ref.html#ad07c4288d72a7baad4c6ef040b2740e7":[12,0,49,165,4],
-"structscore_1_1_color_ref.html#aee915d53978eb93a442fa426da79c02c":[12,0,49,165,11],
-"structscore_1_1_combo_slider.html":[12,0,49,275]
+"structscore_1_1_color_ref.html#ad07c4288d72a7baad4c6ef040b2740e7":[12,0,49,165,4]
 };

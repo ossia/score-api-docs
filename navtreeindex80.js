@@ -1,5 +1,7 @@
 var NAVTREEINDEX80 =
 {
+"structscore_1_1_polymorphic_component_hierarchy_manager_1_1_child_pair.html":[12,0,49,174,0],
+"structscore_1_1_polymorphic_component_hierarchy_manager_1_1_child_pair.html#a9486c82f2db160bbad4498a501e67db2":[12,0,49,174,0,1],
 "structscore_1_1_polymorphic_component_hierarchy_manager_1_1_child_pair.html#ad571a5e92b8dc556563a2e49dcae6999":[12,0,49,174,0,0],
 "structscore_1_1_polymorphic_component_hierarchy_manager_1_1_child_pair.html#aefc4fdc71204481e3333f5e271797a07":[12,0,49,174,0,2],
 "structscore_1_1_positioned_event.html":[12,0,49,239],
@@ -247,7 +249,5 @@ var NAVTREEINDEX80 =
 "structscore_1_1_templated_spin_box_3_01int_01_4.html#a2e6b5788022a518b74ead22536c492e2":[12,0,49,295,1],
 "structscore_1_1_templated_spin_box_3_01int_01_4.html#ac632d8ad1cad093cfb6edd93116210b1":[12,0,49,295,0],
 "structscore_1_1_toggle_button.html":[12,0,49,269],
-"structscore_1_1_toggle_button.html#a046e571166f088ea801219fabd2950f3":[12,0,49,269,3],
-"structscore_1_1_toggle_button.html#a2c5b6007c80b8ba501e97a9864c82a3f":[12,0,49,269,2],
-"structscore_1_1_toggle_button.html#a5bd7dc0958070557fd1f6ff5eed22f95":[12,0,49,269,5]
+"structscore_1_1_toggle_button.html#a046e571166f088ea801219fabd2950f3":[12,0,49,269,3]
 };
