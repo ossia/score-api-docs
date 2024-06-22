@@ -124,6 +124,7 @@ var files_dup =
     [ "Bytebeat.hpp", "_bytebeat_8hpp_source.html", null ],
     [ "Cable.hpp", "_cable_8hpp_source.html", null ],
     [ "CableCopy.hpp", "_cable_copy_8hpp_source.html", null ],
+    [ "CableData.hpp", "_cable_data_8hpp_source.html", null ],
     [ "CableHelpers.hpp", "_cable_helpers_8hpp_source.html", null ],
     [ "CableInspector.hpp", "_cable_inspector_8hpp_source.html", null ],
     [ "CableItem.hpp", "_cable_item_8hpp_source.html", null ],

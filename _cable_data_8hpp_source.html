@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.9.1"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>score: DocumentPlugin.hpp Source File</title>
+        <title>score: CableData.hpp Source File</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -75,7 +75,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('plugins_2score-lib-process_2_process_2_document_plugin_8hpp_source.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('_cable_data_8hpp_source.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -95,45 +95,37 @@ $(document).ready(function(){initNavTree('plugins_2score-lib-process_2_process_2
 
 <div class="header">
   <div class="headertitle">
-<div class="title">plugins/score-lib-process/Process/DocumentPlugin.hpp</div>  </div>
+<div class="title">CableData.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Process/Dataflow/CableItem.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Process/Dataflow/PortItem.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;score/plugins/documentdelegate/plugin/DocumentPlugin.hpp&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;ossia/detail/ptr_set.hpp&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_process.html">Process</a></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;score/model/path/Path.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;score_lib_process_export.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_process.html">Process</a></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span>Port;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">enum class</span> CableType</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_process_1_1_dataflow_manager.html">   11</a></span>&#160;<span class="keyword">class </span>SCORE_LIB_PROCESS_EXPORT <a class="code" href="class_process_1_1_dataflow_manager.html">DataflowManager</a> final : <span class="keyword">public</span> QObject</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <a class="code" href="class_process_1_1_dataflow_manager.html">DataflowManager</a>();</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  ~<a class="code" href="class_process_1_1_dataflow_manager.html">DataflowManager</a>();</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  ImmediateGlutton,</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  ImmediateStrict,</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  DelayedGlutton,</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  DelayedStrict</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;};</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">using</span> cable_map = ossia::ptr_map&lt;const Process::Cable*, Dataflow::CableItem*&gt;;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">using</span> port_map = ossia::ptr_map&lt;const Process::Port*, Dataflow::PortItem*&gt;;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="class_dataflow_1_1_cable_item.html">Dataflow::CableItem</a>* createCable(</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_cable.html">Process::Cable</a>&amp; cable, <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; context,</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      QGraphicsScene* scene);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  cable_map&amp; cables() noexcept { <span class="keywordflow">return</span> m_cableMap; }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  port_map&amp; ports() noexcept { <span class="keywordflow">return</span> m_portMap; }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  cable_map m_cableMap;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  port_map m_portMap;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
-<div class="ttc" id="aclass_dataflow_1_1_cable_item_html"><div class="ttname"><a href="class_dataflow_1_1_cable_item.html">Dataflow::CableItem</a></div><div class="ttdef"><b>Definition:</b> CableItem.hpp:26</div></div>
-<div class="ttc" id="aclass_process_1_1_cable_html"><div class="ttname"><a href="class_process_1_1_cable.html">Process::Cable</a></div><div class="ttdef"><b>Definition:</b> Cable.hpp:38</div></div>
-<div class="ttc" id="aclass_process_1_1_dataflow_manager_html"><div class="ttname"><a href="class_process_1_1_dataflow_manager.html">Process::DataflowManager</a></div><div class="ttdef"><b>Definition:</b> plugins/score-lib-process/Process/DocumentPlugin.hpp:12</div></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="struct_process_1_1_cable_data.html">   17</a></span>&#160;<span class="keyword">struct </span>SCORE_LIB_PROCESS_EXPORT <a class="code" href="struct_process_1_1_cable_data.html">CableData</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  CableType type{};</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="class_path.html">Path&lt;Process::Port&gt;</a> source, sink;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  SCORE_LIB_PROCESS_EXPORT</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">friend</span> <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="struct_process_1_1_cable_data.html">CableData</a>&amp; lhs, <span class="keyword">const</span> <a class="code" href="struct_process_1_1_cable_data.html">CableData</a>&amp; rhs);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="ttc" id="aclass_path_html"><div class="ttname"><a href="class_path.html">Path&lt; Process::Port &gt;</a></div></div>
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1324</div></div>
-<div class="ttc" id="astruct_process_1_1_context_html"><div class="ttname"><a href="struct_process_1_1_context.html">Process::Context</a></div><div class="ttdef"><b>Definition:</b> ProcessContext.hpp:12</div></div>
+<div class="ttc" id="astruct_process_1_1_cable_data_html"><div class="ttname"><a href="struct_process_1_1_cable_data.html">Process::CableData</a></div><div class="ttdef"><b>Definition:</b> CableData.hpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
