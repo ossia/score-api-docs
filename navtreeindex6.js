@@ -69,7 +69,7 @@ var NAVTREEINDEX6 =
 "_serial_protocol_factory_8hpp_source.html":[13,0,1240],
 "_serial_protocol_settings_widget_8hpp_source.html":[13,0,1241],
 "_serial_specific_settings_8hpp_source.html":[13,0,1242],
-"_serial_widget_8hpp.html#a861c09d3cf7b1b06716c4346a090e4c2":[11,0,46,100],
+"_serial_widget_8hpp.html#a861c09d3cf7b1b06716c4346a090e4c2":[11,0,46,101],
 "_serial_widget_8hpp_source.html":[13,0,1243],
 "_serializable_document_plugin_8hpp_source.html":[13,0,1234],
 "_serializable_helpers_8hpp_source.html":[13,0,1235],

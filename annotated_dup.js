@@ -1265,6 +1265,7 @@ var annotated_dup =
       [ "CoAPTransportWidget", "class_protocols_1_1_co_a_p_transport_widget.html", "class_protocols_1_1_co_a_p_transport_widget" ],
       [ "CoAPProtocolSettingsWidget", "class_protocols_1_1_co_a_p_protocol_settings_widget.html", "class_protocols_1_1_co_a_p_protocol_settings_widget" ],
       [ "CoAPSpecificSettings", "struct_protocols_1_1_co_a_p_specific_settings.html", "struct_protocols_1_1_co_a_p_specific_settings" ],
+      [ "DNSSDWorker", "class_protocols_1_1_d_n_s_s_d_worker.html", "class_protocols_1_1_d_n_s_s_d_worker" ],
       [ "DNSSDEnumerator", "class_protocols_1_1_d_n_s_s_d_enumerator.html", "class_protocols_1_1_d_n_s_s_d_enumerator" ],
       [ "HTTPDevice", "class_protocols_1_1_h_t_t_p_device.html", "class_protocols_1_1_h_t_t_p_device" ],
       [ "HTTPProtocolFactory", "class_protocols_1_1_h_t_t_p_protocol_factory.html", null ],

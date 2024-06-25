@@ -247,7 +247,7 @@ var NAVTREEINDEX3 =
 "_m_i_d_i_specific_settings_8hpp_source.html":[13,0,790],
 "_m_m_e_port_audio_interface_8hpp_source.html":[13,0,807],
 "_m_q_t_t_device_8hpp_source.html":[13,0,843],
-"_m_q_t_t_protocol_factory_8cpp.html#a023d2480df76f4984ba0bdf4146a89c4":[11,0,46,107],
+"_m_q_t_t_protocol_factory_8cpp.html#a023d2480df76f4984ba0bdf4146a89c4":[11,0,46,108],
 "_m_q_t_t_protocol_factory_8hpp_source.html":[13,0,844],
-"_m_q_t_t_protocol_settings_widget_8hpp.html#a7ce777560d2e06384b90c4ac89a6f230":[11,0,46,102]
+"_m_q_t_t_protocol_settings_widget_8hpp.html#a7ce777560d2e06384b90c4ac89a6f230":[11,0,46,103]
 };

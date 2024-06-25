@@ -1620,13 +1620,7 @@ var hierarchy =
       [ "Control::Soundfile", "struct_control_1_1_soundfile.html", null ]
     ] ],
     [ "servus::Listener", null, [
-      [ "Protocols::DNSSDEnumerator", "class_protocols_1_1_d_n_s_s_d_enumerator.html", [
-        [ "Protocols::CoAPTCPEnumerator", "class_protocols_1_1_co_a_p_t_c_p_enumerator.html", null ],
-        [ "Protocols::MQTTTCPEnumerator", "class_protocols_1_1_m_q_t_t_t_c_p_enumerator.html", null ],
-        [ "Protocols::OSCQueryEnumerator", "class_protocols_1_1_o_s_c_query_enumerator.html", null ],
-        [ "Protocols::OSCTCPEnumerator", "class_protocols_1_1_o_s_c_t_c_p_enumerator.html", null ],
-        [ "Protocols::OSCUDPEnumerator", "class_protocols_1_1_o_s_c_u_d_p_enumerator.html", null ]
-      ] ]
+      [ "Protocols::DNSSDWorker", "class_protocols_1_1_d_n_s_s_d_worker.html", null ]
     ] ],
     [ "score::LoadedPluginVersions", "structscore_1_1_loaded_plugin_versions.html", null ],
     [ "Protocols::LocalSpecificSettings", "struct_protocols_1_1_local_specific_settings.html", null ],
@@ -2724,7 +2718,13 @@ var hierarchy =
         [ "Gfx::Kinect2::Kinect2Enumerator", "class_gfx_1_1_kinect2_1_1_kinect2_enumerator.html", null ],
         [ "Gfx::Spout::SpoutEnumerator", "class_gfx_1_1_spout_1_1_spout_enumerator.html", null ],
         [ "Gfx::V4L2CameraEnumerator", "struct_gfx_1_1_v4_l2_camera_enumerator.html", null ],
-        [ "Protocols::DNSSDEnumerator", "class_protocols_1_1_d_n_s_s_d_enumerator.html", null ],
+        [ "Protocols::DNSSDEnumerator", "class_protocols_1_1_d_n_s_s_d_enumerator.html", [
+          [ "Protocols::CoAPTCPEnumerator", "class_protocols_1_1_co_a_p_t_c_p_enumerator.html", null ],
+          [ "Protocols::MQTTTCPEnumerator", "class_protocols_1_1_m_q_t_t_t_c_p_enumerator.html", null ],
+          [ "Protocols::OSCQueryEnumerator", "class_protocols_1_1_o_s_c_query_enumerator.html", null ],
+          [ "Protocols::OSCTCPEnumerator", "class_protocols_1_1_o_s_c_t_c_p_enumerator.html", null ],
+          [ "Protocols::OSCUDPEnumerator", "class_protocols_1_1_o_s_c_u_d_p_enumerator.html", null ]
+        ] ],
         [ "Protocols::JoystickEnumerator", "class_protocols_1_1_joystick_enumerator.html", null ],
         [ "Protocols::LibmapperClientEnumerator", "class_protocols_1_1_libmapper_client_enumerator.html", null ],
         [ "Protocols::LibraryDeviceEnumerator", "class_protocols_1_1_library_device_enumerator.html", null ],
@@ -2938,6 +2938,7 @@ var hierarchy =
       [ "Process::MagnetismAdjuster", "class_process_1_1_magnetism_adjuster.html", null ],
       [ "Process::NodeItem", "class_process_1_1_node_item.html", null ],
       [ "Process::ProcessFocusManager", "class_process_1_1_process_focus_manager.html", null ],
+      [ "Protocols::DNSSDWorker", "class_protocols_1_1_d_n_s_s_d_worker.html", null ],
       [ "Recording::ApplicationPlugin", "class_recording_1_1_application_plugin.html", null ],
       [ "Recording::AutomationRecorder", "class_recording_1_1_automation_recorder.html", null ],
       [ "Recording::MessageRecorder", "class_recording_1_1_message_recorder.html", null ],

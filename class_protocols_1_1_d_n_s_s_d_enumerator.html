@@ -96,7 +96,6 @@ $(document).ready(function(){initNavTree('class_protocols_1_1_d_n_s_s_d_enumerat
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_protocols_1_1_d_n_s_s_d_enumerator-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Protocols::DNSSDEnumerator Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -108,7 +107,7 @@ Inheritance diagram for Protocols::DNSSDEnumerator:</div>
  <div class="center">
   <img src="class_protocols_1_1_d_n_s_s_d_enumerator.png" usemap="#Protocols::DNSSDEnumerator_map" alt=""/>
   <map id="Protocols::DNSSDEnumerator_map" name="Protocols::DNSSDEnumerator_map">
-<area href="class_device_1_1_device_enumerator.html" alt="Device::DeviceEnumerator" shape="rect" coords="313,56,512,80"/>
+<area href="class_device_1_1_device_enumerator.html" alt="Device::DeviceEnumerator" shape="rect" coords="418,56,617,80"/>
 <area href="class_protocols_1_1_co_a_p_t_c_p_enumerator.html" alt="Protocols::CoAPTCPEnumerator" shape="rect" coords="0,168,199,192"/>
 <area href="class_protocols_1_1_m_q_t_t_t_c_p_enumerator.html" alt="Protocols::MQTTTCPEnumerator" shape="rect" coords="209,168,408,192"/>
 <area href="class_protocols_1_1_o_s_c_query_enumerator.html" alt="Protocols::OSCQueryEnumerator" shape="rect" coords="418,168,617,192"/>
@@ -125,21 +124,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a07849209799c8c39a91da0645d2f6d83"><td class="memItemLeft" align="right" valign="top"><a id="a07849209799c8c39a91da0645d2f6d83"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>start</b> ()</td></tr>
 <tr class="separator:a07849209799c8c39a91da0645d2f6d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b3ec9eacc9b1b7d244f87e5409bade5"><td class="memItemLeft" align="right" valign="top"><a id="a4b3ec9eacc9b1b7d244f87e5409bade5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
+<tr class="separator:a4b3ec9eacc9b1b7d244f87e5409bade5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10d17993b886706b09df7e07da7f6708"><td class="memItemLeft" align="right" valign="top"><a id="a10d17993b886706b09df7e07da7f6708"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>enumerate</b> (std::function&lt; void(const QString &amp;, const <a class="el" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> &amp;)&gt; f) const override</td></tr>
 <tr class="separator:a10d17993b886706b09df7e07da7f6708"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a960636f9ea116185c392afaa5e4fd93f"><td class="memItemLeft" align="right" valign="top"><a id="a960636f9ea116185c392afaa5e4fd93f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>timerEvent</b> (QTimerEvent *ev) override</td></tr>
-<tr class="separator:a960636f9ea116185c392afaa5e4fd93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e37a262b1ddbe9cddff89dcf8c38d71"><td class="memItemLeft" align="right" valign="top"><a id="a6e37a262b1ddbe9cddff89dcf8c38d71"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>instanceAdded</b> (const std::string &amp;instance) override</td></tr>
-<tr class="separator:a6e37a262b1ddbe9cddff89dcf8c38d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6681a21793bfa96da3b8d0cb0d8dcd2"><td class="memItemLeft" align="right" valign="top"><a id="aa6681a21793bfa96da3b8d0cb0d8dcd2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>instanceRemoved</b> (const std::string &amp;instance) override</td></tr>
-<tr class="separator:aa6681a21793bfa96da3b8d0cb0d8dcd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2cc091c5c127b1e4e062627cbb1c650"><td class="memItemLeft" align="right" valign="top"><a id="ab2cc091c5c127b1e4e062627cbb1c650"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>addNewDevice</b> (const std::string &amp;instance, const std::string &amp;ip, const std::string &amp;port) noexcept=0</td></tr>
-<tr class="separator:ab2cc091c5c127b1e4e062627cbb1c650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d279ac04dcc2f0a066323e213cc6321"><td class="memItemLeft" align="right" valign="top"><a id="a2d279ac04dcc2f0a066323e213cc6321"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>addNewDevice</b> (const QString &amp;instance, const QString &amp;ip, const QString &amp;port, const <a class="el" href="class_q_map.html">QMap</a>&lt; QString, QString &gt; &amp;keys) noexcept=0</td></tr>
+<tr class="separator:a2d279ac04dcc2f0a066323e213cc6321"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_device_1_1_device_enumerator"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_device_1_1_device_enumerator')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_device_1_1_device_enumerator.html">Device::DeviceEnumerator</a></td></tr>
 <tr class="memitem:ab1aae8fe2e6a6ca72e8394db592d68a0 inherit pub_methods_class_device_1_1_device_enumerator"><td class="memItemLeft" align="right" valign="top"><a id="ab1aae8fe2e6a6ca72e8394db592d68a0"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>enumerate</b> (std::function&lt; void(const QString &amp;, const <a class="el" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> &amp;)&gt;) const =0</td></tr>
@@ -150,15 +143,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>deviceAdded</b> (cons
 <tr class="memitem:ad94a37cd1b59b1e0e65f3bc00d0609b5 inherit pub_methods_class_device_1_1_device_enumerator"><td class="memItemLeft" align="right" valign="top"><a id="ad94a37cd1b59b1e0e65f3bc00d0609b5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>deviceRemoved</b> (const QString &amp;s)</td></tr>
 <tr class="separator:ad94a37cd1b59b1e0e65f3bc00d0609b5 inherit pub_methods_class_device_1_1_device_enumerator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a339f699ffcbb473e509290744b90956b"><td class="memItemLeft" align="right" valign="top"><a id="a339f699ffcbb473e509290744b90956b"></a>
-servus::Servus&#160;</td><td class="memItemRight" valign="bottom"><b>m_serv</b></td></tr>
-<tr class="separator:a339f699ffcbb473e509290744b90956b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb43972b40fc17a2a506986e1001b35c"><td class="memItemLeft" align="right" valign="top"><a id="afb43972b40fc17a2a506986e1001b35c"></a>
-ossia::flat_set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_instances</b></td></tr>
-<tr class="separator:afb43972b40fc17a2a506986e1001b35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_d_n_s_s_d_device_enumerator_8hpp_source.html">DNSSDDeviceEnumerator.hpp</a></li>
