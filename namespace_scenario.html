@@ -816,12 +816,18 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>Rack</b> = std::vect
 <tr class="memitem:ac7936a793366f2b8dfb41fe5531ac858"><td class="memItemLeft" align="right" valign="top"><a id="ac7936a793366f2b8dfb41fe5531ac858"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>FullRack</b> = std::vector&lt; <a class="el" href="struct_scenario_1_1_full_slot.html">FullSlot</a> &gt;</td></tr>
 <tr class="separator:ac7936a793366f2b8dfb41fe5531ac858"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6551547596a057b2216bcf39f099ef57"><td class="memItemLeft" align="right" valign="top"><a id="a6551547596a057b2216bcf39f099ef57"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>TimeSignatureMapVector</b> = std::vector&lt; boost::container::dtl::pair&lt; <a class="el" href="struct_time_val.html">TimeVal</a>, ossia::time_signature &gt; &gt;</td></tr>
-<tr class="separator:a6551547596a057b2216bcf39f099ef57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d732a616f9aa608f922d437c77df70e"><td class="memItemLeft" align="right" valign="top"><a id="a6d732a616f9aa608f922d437c77df70e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>TimeSignatureMapDtlVector</b> = std::vector&lt; boost::container::dtl::pair&lt; <a class="el" href="struct_time_val.html">TimeVal</a>, ossia::time_signature &gt; &gt;</td></tr>
+<tr class="separator:a6d732a616f9aa608f922d437c77df70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97787c0b401ce8564edf75494d5b587b"><td class="memItemLeft" align="right" valign="top"><a id="a97787c0b401ce8564edf75494d5b587b"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>TimeSignatureMapStdVector</b> = std::vector&lt; std::pair&lt; <a class="el" href="struct_time_val.html">TimeVal</a>, ossia::time_signature &gt; &gt;</td></tr>
 <tr class="separator:a97787c0b401ce8564edf75494d5b587b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85249f0e4baef0cf233fc709c8eed806"><td class="memItemLeft" align="right" valign="top"><a id="a85249f0e4baef0cf233fc709c8eed806"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>TimeSignatureFlatMap</b> = boost::container::flat_map&lt; <a class="el" href="struct_time_val.html">TimeVal</a>, ossia::time_signature, std::less&lt; <a class="el" href="struct_time_val.html">TimeVal</a> &gt;, TimeSignatureMapStdVector &gt;</td></tr>
+<tr class="separator:a85249f0e4baef0cf233fc709c8eed806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae585261d6977b5d73fd219b1290be729"><td class="memItemLeft" align="right" valign="top"><a id="ae585261d6977b5d73fd219b1290be729"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>TimeSignatureFlatMapImpl</b> = std::remove_cvref_t&lt; decltype(TimeSignatureFlatMap{}.tree().get_sequence_cref())&gt;</td></tr>
+<tr class="separator:ae585261d6977b5d73fd219b1290be729"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97c1bd33c61cb397608a3e3120273268"><td class="memItemLeft" align="right" valign="top"><a id="a97c1bd33c61cb397608a3e3120273268"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>CentralDisplay</b> = ossia::slow_variant&lt; ossia::monostate, <a class="el" href="class_scenario_1_1_central_interval_display.html">CentralIntervalDisplay</a>, <a class="el" href="class_scenario_1_1_central_nodal_display.html">CentralNodalDisplay</a> &gt;</td></tr>
 <tr class="separator:a97c1bd33c61cb397608a3e3120273268"><td class="memSeparator" colspan="2">&#160;</td></tr>

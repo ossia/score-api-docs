@@ -1,5 +1,7 @@
 var NAVTREEINDEX76 =
 {
+"structavnd__tools_1_1_audio_recorder.html#a4db00810b34f873d49722ac2253866f6":[12,0,3,3,18],
+"structavnd__tools_1_1_audio_recorder.html#a4ef5fdea5eb6c35c2c40ecf37dbc722a":[12,0,3,3,3],
 "structavnd__tools_1_1_audio_recorder.html#a597cf08a68fe61399e66912671200630":[12,0,3,3,21],
 "structavnd__tools_1_1_audio_recorder.html#a648837c00337a8b747ac705c2f0c6131":[12,0,3,3,23],
 "structavnd__tools_1_1_audio_recorder.html#a6f0a1ca94518c7010789d528d489bf16":[12,0,3,3,17],
@@ -247,7 +249,5 @@ var NAVTREEINDEX76 =
 "structboost_1_1spirit_1_1traits_1_1print__attribute__debug_3_01_out_00_01_q_string_00_01_enable_01_4.html":[12,0,5,0,0,4],
 "structboost_1_1spirit_1_1traits_1_1push__back__container_3_01_q_string_00_01_q_char_01_4.html":[12,0,5,0,0,2],
 "structcheck__enum__size.html":[12,0,85],
-"structcheck__enum__size.html#a69d42c71821f006d9da8a72667c66d77":[12,0,85,1],
-"structcheck__enum__size.html#aa46156a807d6802915d68e602a90dca3":[12,0,85,0],
-"structcsv2_1_1delimiter.html":[12,0,8,1]
+"structcheck__enum__size.html#a69d42c71821f006d9da8a72667c66d77":[12,0,85,1]
 };

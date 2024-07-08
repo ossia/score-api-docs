@@ -1,5 +1,7 @@
 var NAVTREEINDEX69 =
 {
+"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a9be26f6347fc818f9f27be0f4c8e5391":[12,0,36,17,0,1,4],
+"struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a9e54f4f70e4dbd66306e0ec92c5436ca":[12,0,36,17,0,1,5],
 "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#aa952716083920e7367e6e8464504a9a9":[12,0,36,17,0,1,1],
 "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#abeec5675edf233c6d96512a609c483ca":[12,0,36,17,0,1,8],
 "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#ac4b7da53fad1563be1fad60dd044a5d7":[12,0,36,17,0,1,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX69 =
 "struct_pd_1_1ossia__to__pd__value.html#a7dea85d88c009b174b22cce567b36fdb":[12,0,40,5,10],
 "struct_pd_1_1ossia__to__pd__value.html#aa59e89842f8d8cd64bc2d0a3a8e087ae":[12,0,40,5,4],
 "struct_pd_1_1ossia__to__pd__value.html#abc244cca18af25c778bc7bbe1e35c6d6":[12,0,40,5,3],
-"struct_pd_1_1ossia__to__pd__value.html#abe033ebeb41f87ac339837711cea62e6":[12,0,40,5,7],
-"struct_pd_1_1ossia__to__pd__value.html#ac84cde5b7b4c861a6e1e6945c8754403":[12,0,40,5,0],
-"struct_pd_1_1ossia__to__pd__value.html#acb26c1f38f193caf54ab7a95354a0b35":[12,0,40,5,1]
+"struct_pd_1_1ossia__to__pd__value.html#abe033ebeb41f87ac339837711cea62e6":[12,0,40,5,7]
 };

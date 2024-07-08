@@ -1,5 +1,7 @@
 var NAVTREEINDEX63 =
 {
+"struct_execution_1_1_settings_1_1_ordering_policies.html#aa78f827d0efc4eb167f4f307e2f9e4be":[12,0,13,1,1,0],
+"struct_execution_1_1_settings_1_1_ordering_policies.html#ad2478a2cc6646aca4318d98560047c0d":[12,0,13,1,1,1],
 "struct_execution_1_1_settings_1_1_ordering_policies.html#aedc6a5f5786d3c64950b556e8567b3e6":[12,0,13,1,1,3],
 "struct_execution_1_1_settings_1_1_ordering_policies.html#afccdaa11e11350698b89460f7d1510b0":[12,0,13,1,1,4],
 "struct_execution_1_1_settings_1_1_scheduling_policies.html":[12,0,13,1,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX63 =
 "struct_gfx_1_1_libav_encoder.html#a6ae5d8edfa7f644c88f0ca1b2e0b37fd":[12,0,19,50,10],
 "struct_gfx_1_1_libav_encoder.html#a983ccfe4a6c4d609dcdc5acd2fceaa92":[12,0,19,50,8],
 "struct_gfx_1_1_libav_encoder.html#aa668f634980d39ecdc932fcc02fbb8ce":[12,0,19,50,3],
-"struct_gfx_1_1_libav_encoder.html#aadced8c8cb511cacb7aeaf9c3ab5a90f":[12,0,19,50,7],
-"struct_gfx_1_1_libav_encoder.html#ab7c20931f0e769ffb6e18c2efeaba65d":[12,0,19,50,9],
-"struct_gfx_1_1_libav_encoder.html#ac25d1d35b853ccf1376ef834a01cc8c1":[12,0,19,50,1]
+"struct_gfx_1_1_libav_encoder.html#aadced8c8cb511cacb7aeaf9c3ab5a90f":[12,0,19,50,7]
 };

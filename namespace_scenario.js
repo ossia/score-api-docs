@@ -526,8 +526,10 @@ var namespace_scenario =
     [ "ScenarioFactory", "namespace_scenario.html#a6b414bdf0529dc60f6e6e42acd1a0410", null ],
     [ "TempoFactory", "namespace_scenario.html#a23a8de8a3db21cf7f42c5b4b357b1cf5", null ],
     [ "TempoLayerFactory", "namespace_scenario.html#a8c22ce44542c1f95ced419663109f8f5", null ],
+    [ "TimeSignatureFlatMap", "namespace_scenario.html#a85249f0e4baef0cf233fc709c8eed806", null ],
+    [ "TimeSignatureFlatMapImpl", "namespace_scenario.html#ae585261d6977b5d73fd219b1290be729", null ],
+    [ "TimeSignatureMapDtlVector", "namespace_scenario.html#a6d732a616f9aa608f922d437c77df70e", null ],
     [ "TimeSignatureMapStdVector", "namespace_scenario.html#a97787c0b401ce8564edf75494d5b587b", null ],
-    [ "TimeSignatureMapVector", "namespace_scenario.html#a6551547596a057b2216bcf39f099ef57", null ],
     [ "ExecutionStatus", "namespace_scenario.html#ab1a58c444607933b89ce4ec048f56397", [
       [ "Waiting", "namespace_scenario.html#ab1a58c444607933b89ce4ec048f56397a5706de961fb376d701be6e7762d8b09c", null ],
       [ "Pending", "namespace_scenario.html#ab1a58c444607933b89ce4ec048f56397a2d13df6f8b5e4c5af9f87e0dc39df69d", null ],

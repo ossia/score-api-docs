@@ -1,5 +1,7 @@
 var NAVTREEINDEX59 =
 {
+"score-plugin-gfx_2_gfx_2_text_2_layer_8hpp_source.html":[13,0,659],
+"score-plugin-gfx_2_gfx_2_text_2_process_8hpp.html#a73b8f5944f0cc748cae0c59421088e11":[11,0,19,7,4],
 "score-plugin-gfx_2_gfx_2_text_2_process_8hpp_source.html":[13,0,984],
 "score-plugin-gfx_2_gfx_2_video_2_executor_8hpp.html#acdb15a293b49b5ab0b68a9af6cda2209":[11,0,19,8,12],
 "score-plugin-gfx_2_gfx_2_video_2_executor_8hpp_source.html":[13,0,440],
@@ -247,7 +249,5 @@ var NAVTREEINDEX59 =
 "struct_analysis_1_1_kurtosis.html":[12,0,0,9],
 "struct_analysis_1_1_kurtosis.html#a5d2dd20a1b37f575c9e7a463f80a48d7":[12,0,0,9,1],
 "struct_analysis_1_1_kurtosis.html#ab27cf53010d5b0642f4ee4306c41ea0b":[12,0,0,9,2],
-"struct_analysis_1_1_kurtosis_1_1_metadata.html":[12,0,0,9,0],
-"struct_analysis_1_1_m_f_c_c.html":[12,0,0,12],
-"struct_analysis_1_1_m_f_c_c.html#a52aff028520aa803680298802d548905":[12,0,0,12,1]
+"struct_analysis_1_1_kurtosis_1_1_metadata.html":[12,0,0,9,0]
 };

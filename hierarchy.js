@@ -861,9 +861,6 @@ var hierarchy =
     ] ],
     [ "Protocols::FixtureData", "class_protocols_1_1_fixture_data.html", null ],
     [ "Protocols::FixtureMode", "struct_protocols_1_1_fixture_mode.html", null ],
-    [ "boost::container::flat_map", null, [
-      [ "Scenario::TimeSignatureMap::impl", "struct_scenario_1_1_time_signature_map_1_1impl.html", null ]
-    ] ],
     [ "Analysis::Flatness", "struct_analysis_1_1_flatness.html", null ],
     [ "score::FlicksSpinBox", "structscore_1_1_flicks_spin_box.html", null ],
     [ "WidgetFactory::FloatControl< ControlUI, Normalizer, Control >", "struct_widget_factory_1_1_float_control.html", null ],
@@ -1107,8 +1104,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -3711,6 +3708,9 @@ var hierarchy =
     [ "Scenario::TimenodeGraphConnectedComponent", "struct_scenario_1_1_timenode_graph_connected_component.html", null ],
     [ "Scenario::TimenodeProperties", "struct_scenario_1_1_timenode_properties.html", null ],
     [ "Jit::Timer", "struct_jit_1_1_timer.html", null ],
+    [ "TimeSignatureFlatMap", null, [
+      [ "Scenario::TimeSignatureMap::impl", "struct_scenario_1_1_time_signature_map_1_1impl.html", null ]
+    ] ],
     [ "Scenario::TimeSignatureMap", "struct_scenario_1_1_time_signature_map.html", null ],
     [ "HierarchicalBaseScenario< Component_T, BaseScenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T >::TimeSyncPair", "struct_hierarchical_base_scenario_1_1_time_sync_pair.html", null ],
     [ "HierarchicalScenarioComponent< Component_T, Scenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T, HasOwnership >::TimeSyncPair", "struct_hierarchical_scenario_component_1_1_time_sync_pair.html", null ],

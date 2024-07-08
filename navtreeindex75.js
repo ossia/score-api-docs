@@ -1,5 +1,7 @@
 var NAVTREEINDEX75 =
 {
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1vecf__domain_3_01_n_01_4_01_4.html":[12,0,379],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1vecf__domain_3_01_n_01_4_01_4.html#ae1041c93dde387c95bb63059ccceb090":[12,0,379,0],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1vector__domain_01_4.html":[12,0,380],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1vector__domain_01_4.html#a40886e9bda31caba11e047756a1d0b58":[12,0,380,0],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01score_1_1_entity_3_01_t_01_4_01_4.html":[12,0,393],
@@ -247,7 +249,5 @@ var NAVTREEINDEX75 =
 "structavnd__tools_1_1_audio_recorder.html#a27e40dc674f17c890b0fbceaf6201cff":[12,0,3,3,25],
 "structavnd__tools_1_1_audio_recorder.html#a3c3fc9b0d3557cae533292e7cf43fc49":[12,0,3,3,5],
 "structavnd__tools_1_1_audio_recorder.html#a49bbde465e277e707ad67bc48280734c":[12,0,3,3,22],
-"structavnd__tools_1_1_audio_recorder.html#a4d175bb5255526b211b6c4cba83cf80e":[12,0,3,3,10],
-"structavnd__tools_1_1_audio_recorder.html#a4db00810b34f873d49722ac2253866f6":[12,0,3,3,18],
-"structavnd__tools_1_1_audio_recorder.html#a4ef5fdea5eb6c35c2c40ecf37dbc722a":[12,0,3,3,3]
+"structavnd__tools_1_1_audio_recorder.html#a4d175bb5255526b211b6c4cba83cf80e":[12,0,3,3,10]
 };
