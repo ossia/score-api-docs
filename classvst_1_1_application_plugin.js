@@ -8,7 +8,7 @@ var classvst_1_1_application_plugin =
     [ "mainThreadId", "classvst_1_1_application_plugin.html#aeb4cdd861015090c41bf30e1701abe17", null ],
     [ "processIncomingMessage", "classvst_1_1_application_plugin.html#a8332bfec3efc032079355c12978b3720", null ],
     [ "registerRunningVST", "classvst_1_1_application_plugin.html#a9efef5b50173febe54ca62f96d248354", null ],
-    [ "rescanVSTs", "classvst_1_1_application_plugin.html#afd9c6a814813b2d9899a8934ab55114a", null ],
+    [ "rescanVSTs", "classvst_1_1_application_plugin.html#ac4d5eee9c4327cc834a3a34991d8f620", null ],
     [ "scanVSTsEvent", "classvst_1_1_application_plugin.html#ab560b6e272a75443e9c673b7e3d1ebc7", null ],
     [ "timerEvent", "classvst_1_1_application_plugin.html#ac43543a0324c7c9c9f32735037752763", null ],
     [ "unregisterRunningVST", "classvst_1_1_application_plugin.html#a4a08f7ffbd8de7e102028203147e2410", null ],
