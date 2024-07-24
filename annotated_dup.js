@@ -693,12 +693,16 @@ var annotated_dup =
       [ "EditScript", "class_j_s_1_1_edit_script.html", null ],
       [ "ScriptMacro", "class_j_s_1_1_script_macro.html", null ],
       [ "ActionContext", "struct_j_s_1_1_action_context.html", "struct_j_s_1_1_action_context" ],
+      [ "DropHandler", "class_j_s_1_1_drop_handler.html", null ],
       [ "js_node", "class_j_s_1_1js__node.html", "class_j_s_1_1js__node" ],
       [ "js_process", "struct_j_s_1_1js__process.html", "struct_j_s_1_1js__process" ],
       [ "ExecStateWrapper", "class_j_s_1_1_exec_state_wrapper.html", "class_j_s_1_1_exec_state_wrapper" ],
       [ "LanguageSpec", "struct_j_s_1_1_language_spec.html", null ],
       [ "ComponentCache", "struct_j_s_1_1_component_cache.html", "struct_j_s_1_1_component_cache" ],
       [ "ProcessModel", "class_j_s_1_1_process_model.html", "class_j_s_1_1_process_model" ],
+      [ "ModuleLibraryHandler", "class_j_s_1_1_module_library_handler.html", "class_j_s_1_1_module_library_handler" ],
+      [ "ConsoleLibraryHandler", "class_j_s_1_1_console_library_handler.html", null ],
+      [ "LibraryHandler", "class_j_s_1_1_library_handler.html", null ],
       [ "EditJsContext", "class_j_s_1_1_edit_js_context.html", "class_j_s_1_1_edit_js_context" ],
       [ "Inlet", "class_j_s_1_1_inlet.html", "class_j_s_1_1_inlet" ],
       [ "JsUtils", "class_j_s_1_1_js_utils.html", "class_j_s_1_1_js_utils" ],
@@ -707,11 +711,7 @@ var annotated_dup =
       [ "Vec4fValueType", "struct_j_s_1_1_vec4f_value_type.html", "struct_j_s_1_1_vec4f_value_type" ],
       [ "TokenRequestValueType", "struct_j_s_1_1_token_request_value_type.html", "struct_j_s_1_1_token_request_value_type" ],
       [ "SampleTimings", "struct_j_s_1_1_sample_timings.html", "struct_j_s_1_1_sample_timings" ],
-      [ "ExecutionStateValueType", "struct_j_s_1_1_execution_state_value_type.html", "struct_j_s_1_1_execution_state_value_type" ],
-      [ "ModuleLibraryHandler", "class_j_s_1_1_module_library_handler.html", "class_j_s_1_1_module_library_handler" ],
-      [ "ConsoleLibraryHandler", "class_j_s_1_1_console_library_handler.html", null ],
-      [ "LibraryHandler", "class_j_s_1_1_library_handler.html", null ],
-      [ "DropHandler", "class_j_s_1_1_drop_handler.html", null ]
+      [ "ExecutionStateValueType", "struct_j_s_1_1_execution_state_value_type.html", "struct_j_s_1_1_execution_state_value_type" ]
     ] ],
     [ "Library", null, [
       [ "Settings", null, [
