@@ -176,6 +176,7 @@ var namespacescore =
     [ "DocumentContext", "structscore_1_1_document_context.html", "structscore_1_1_document_context" ],
     [ "GLCapabilities", "structscore_1_1_g_l_capabilities.html", "structscore_1_1_g_l_capabilities" ],
     [ "ArrowDialog", "classscore_1_1_arrow_dialog.html", "classscore_1_1_arrow_dialog" ],
+    [ "DefaultControlImpl", "structscore_1_1_default_control_impl.html", null ],
     [ "DefaultGraphicsKnobImpl", "structscore_1_1_default_graphics_knob_impl.html", null ],
     [ "RightClickImpl", "structscore_1_1_right_click_impl.html", "structscore_1_1_right_click_impl" ],
     [ "DefaultGraphicsSliderImpl", "structscore_1_1_default_graphics_slider_impl.html", null ],

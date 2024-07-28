@@ -571,7 +571,8 @@ var hierarchy =
     [ "Control::setup_Impl0< Info_T, Node_T, Element >::con_unvalidated< Idx_T >", "struct_control_1_1setup___impl0_1_1con__unvalidated.html", null ],
     [ "ControlSurface::con_unvalidated", "struct_control_surface_1_1con__unvalidated.html", null ],
     [ "Gfx::con_unvalidated", "struct_gfx_1_1con__unvalidated.html", null ],
-    [ "oscr::setup_Impl0< Node >::con_unvalidated< Field, NPred, NField >", "structoscr_1_1setup___impl0_1_1con__unvalidated.html", null ],
+    [ "oscr::con_unvalidated< Node, Field, NPred, NField >", "structoscr_1_1con__unvalidated.html", null ],
+    [ "oscr::con_unvalidated_dynamic_port< Node, Field, NPred, NField >", "structoscr_1_1con__unvalidated__dynamic__port.html", null ],
     [ "Control::setup_Impl0< Info_T, Node_T, Element >::con_validated< Idx_T >", "struct_control_1_1setup___impl0_1_1con__validated.html", null ],
     [ "score::gfx::OutputNode::Configuration", "structscore_1_1gfx_1_1_output_node_1_1_configuration.html", null ],
     [ "Scenario::ConstrainedDisplacementPolicy", "class_scenario_1_1_constrained_displacement_policy.html", null ],
@@ -609,6 +610,7 @@ var hierarchy =
     ] ],
     [ "oscr::control_updater< ExecNode_T, T, ControlN >", "structoscr_1_1control__updater.html", null ],
     [ "ossia::control_surface_node::control_updater", "structossia_1_1control__surface__node_1_1control__updater.html", null ],
+    [ "oscr::control_updater_dynamic_port< ExecNode_T, T, ControlN >", "structoscr_1_1control__updater__dynamic__port.html", null ],
     [ "Dataflow::control_visitor", "struct_dataflow_1_1control__visitor.html", null ],
     [ "Process::ControlMessage", "struct_process_1_1_control_message.html", null ],
     [ "Process::ControlSetup< CreatePort, CreateControl, GetControlSize, GetName, GetFactory >", "struct_process_1_1_control_setup.html", null ],
@@ -645,6 +647,7 @@ var hierarchy =
     [ "Explorer::DefaultBounds< int >", "struct_explorer_1_1_default_bounds_3_01int_01_4.html", null ],
     [ "Execution::DefaultClock", "class_execution_1_1_default_clock.html", null ],
     [ "score::DefaultComboImpl", "structscore_1_1_default_combo_impl.html", null ],
+    [ "score::DefaultControlImpl", "structscore_1_1_default_control_impl.html", null ],
     [ "Process::DefaultControlLayouts", "struct_process_1_1_default_control_layouts.html", null ],
     [ "score::DefaultGraphicsKnobImpl", "structscore_1_1_default_graphics_knob_impl.html", null ],
     [ "score::DefaultGraphicsSliderImpl", "structscore_1_1_default_graphics_slider_impl.html", null ],
@@ -1104,8 +1107,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1158,7 +1161,6 @@ var hierarchy =
     ] ],
     [ "AvndJit::inlet_vis", "struct_avnd_jit_1_1inlet__vis.html", null ],
     [ "Jit::inlet_vis", "struct_jit_1_1inlet__vis.html", null ],
-    [ "Control::inlet_visitor< Proc >", "struct_control_1_1inlet__visitor.html", null ],
     [ "oscr::InletInitFunc< Node >", "structoscr_1_1_inlet_init_func.html", null ],
     [ "Nodes::MidiHiRes::Input", "struct_nodes_1_1_midi_hi_res_1_1_input.html", null ],
     [ "InputCopier", "struct_input_copier.html", null ],
@@ -2029,8 +2031,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Patternist::ProcessModel >", "class_path.html", null ],

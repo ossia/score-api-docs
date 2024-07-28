@@ -301,6 +301,7 @@ var files_dup =
     [ "Debug.hpp", "_debug_8hpp_source.html", null ],
     [ "DebugFx.hpp", "_debug_fx_8hpp_source.html", null ],
     [ "DefaultClock.hpp", "_default_clock_8hpp_source.html", null ],
+    [ "DefaultControlImpl.hpp", "_default_control_impl_8hpp_source.html", null ],
     [ "DefaultEffectItem.hpp", "_default_effect_item_8hpp_source.html", null ],
     [ "DefaultGraphicsKnobImpl.hpp", "_default_graphics_knob_impl_8hpp_source.html", null ],
     [ "DefaultGraphicsSliderImpl.hpp", "_default_graphics_slider_impl_8hpp_source.html", null ],

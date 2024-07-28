@@ -1,6 +1,7 @@
 var classscore_1_1_q_graphics_knob =
 [
     [ "QGraphicsKnob", "classscore_1_1_q_graphics_knob.html#a1d3b243853a0eefa7eb796311b49178a", null ],
+    [ "~QGraphicsKnob", "classscore_1_1_q_graphics_knob.html#a962fd552bf6938022cfd7ff81c028f3f", null ],
     [ "boundingRect", "classscore_1_1_q_graphics_knob.html#acf9482de1494d6c88048d2634db7c98b", null ],
     [ "map", "classscore_1_1_q_graphics_knob.html#a5119dd48c9cd88c33b3af8c35886d3be", null ],
     [ "resetExecution", "classscore_1_1_q_graphics_knob.html#a6bd51c0046c73c90552f5d05a1c0fb13", null ],
@@ -12,6 +13,7 @@ var classscore_1_1_q_graphics_knob =
     [ "sliderReleased", "classscore_1_1_q_graphics_knob.html#a99bbef6b010d28c6723cca6083f6a601", null ],
     [ "unmap", "classscore_1_1_q_graphics_knob.html#a315f6801d26ed1a16f3896325d4151e7", null ],
     [ "value", "classscore_1_1_q_graphics_knob.html#a1026e5dddf8d9033f81f1c2b2492e572", null ],
+    [ "DefaultControlImpl", "classscore_1_1_q_graphics_knob.html#a6e0d6b6ab122f73db82bb906b678fb61", null ],
     [ "DefaultGraphicsKnobImpl", "classscore_1_1_q_graphics_knob.html#aa36395e04be7d6f7171dcd890c1f691c", null ],
     [ "m_execValue", "classscore_1_1_q_graphics_knob.html#aebf8225a8d0bd1b3a0a5118d0a9a67d2", null ],
     [ "m_rect", "classscore_1_1_q_graphics_knob.html#adadd774c896b4edd90ecda661f0e33af", null ],

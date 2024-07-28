@@ -1,6 +1,7 @@
 var classscore_1_1_q_graphics_int_slider =
 [
     [ "QGraphicsIntSlider", "classscore_1_1_q_graphics_int_slider.html#ac3aa9b6a9bbdafcfc996f8306f8a4b9e", null ],
+    [ "~QGraphicsIntSlider", "classscore_1_1_q_graphics_int_slider.html#ae226c9835e2e6a84b8b1382bbb8cd148", null ],
     [ "from01", "classscore_1_1_q_graphics_int_slider.html#a29ce989d549af70134d5b28026d3d2ec", null ],
     [ "map", "classscore_1_1_q_graphics_int_slider.html#ae66f673d774f628767f26d0b8e53c4e9", null ],
     [ "resetExecution", "classscore_1_1_q_graphics_int_slider.html#a8a539496c1f3be39ec8a34e63aa718f0", null ],
@@ -11,6 +12,7 @@ var classscore_1_1_q_graphics_int_slider =
     [ "sliderReleased", "classscore_1_1_q_graphics_int_slider.html#adcd6f675e03c304499f81555e5be96b3", null ],
     [ "unmap", "classscore_1_1_q_graphics_int_slider.html#a74538e77e2013896d53c9b6f87179ccb", null ],
     [ "value", "classscore_1_1_q_graphics_int_slider.html#abf598224c00e566c692b24a04794de92", null ],
+    [ "DefaultControlImpl", "classscore_1_1_q_graphics_int_slider.html#a6e0d6b6ab122f73db82bb906b678fb61", null ],
     [ "DefaultGraphicsSliderImpl", "classscore_1_1_q_graphics_int_slider.html#a0e890602be5f200389ae33729a1c79b3", null ],
     [ "QGraphicsSliderBase< QGraphicsIntSlider >", "classscore_1_1_q_graphics_int_slider.html#a7b14e19ff83b07d00107ddd6442ef0ef", null ],
     [ "max", "classscore_1_1_q_graphics_int_slider.html#a54018ba91c03de9b8b4a5225e1fea1d9", null ],

@@ -9,6 +9,7 @@ var classvst3_1_1_v_s_t_graphics_slider =
     [ "value", "classvst3_1_1_v_s_t_graphics_slider.html#afd0df6f536c68a96a976fbfa2cd208c7", null ],
     [ "valueChanged", "classvst3_1_1_v_s_t_graphics_slider.html#acb98149bedfa812f829568e528a24317", null ],
     [ "QGraphicsSliderBase< VSTGraphicsSlider >", "classvst3_1_1_v_s_t_graphics_slider.html#a2fe9f8798906e2b3dcba6b112804068e", null ],
+    [ "score::DefaultControlImpl", "classvst3_1_1_v_s_t_graphics_slider.html#ad3ba2ff44e13d0553524f29e7ad19d54", null ],
     [ "score::DefaultGraphicsSliderImpl", "classvst3_1_1_v_s_t_graphics_slider.html#ad81706f73a8cea30c0a99259a1d3e8ee", null ],
     [ "moving", "classvst3_1_1_v_s_t_graphics_slider.html#a9749139cbb6438f77dc6b6f3864caaa8", null ]
 ];

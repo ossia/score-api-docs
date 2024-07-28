@@ -8,6 +8,6 @@ var struct_dataflow_1_1control__visitor =
     [ "operator()", "struct_dataflow_1_1control__visitor.html#a7570a2af76ef85e92ee34b552768cae9", null ],
     [ "operator()", "struct_dataflow_1_1control__visitor.html#af4990d652cb3a84c5519cefa2daf77c3", null ],
     [ "ctx", "struct_dataflow_1_1control__visitor.html#a90c7e42ae9ba3fd63740a8ee12dd8b97", null ],
-    [ "inlet", "struct_dataflow_1_1control__visitor.html#a16bd4fa360f1d31ad4fd640741388643", null ],
+    [ "inlet", "struct_dataflow_1_1control__visitor.html#ac33997002bd45f3aa65f95cb232dd544", null ],
     [ "parent", "struct_dataflow_1_1control__visitor.html#a260589dce69f030281c8de8af24b392c", null ]
 ];

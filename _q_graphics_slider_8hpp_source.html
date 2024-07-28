@@ -116,53 +116,56 @@ $(document).ready(function(){initNavTree('_q_graphics_slider_8hpp_source.html','
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    , <span class="keyword">public</span> <a class="code" href="structscore_1_1_q_graphics_slider_base.html">QGraphicsSliderBase</a>&lt;QGraphicsSlider&gt;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  W_OBJECT(<a class="code" href="classscore_1_1_q_graphics_slider.html">QGraphicsSlider</a>)</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structscore_1_1_default_graphics_slider_impl.html">DefaultGraphicsSliderImpl</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structscore_1_1_q_graphics_slider_base.html">QGraphicsSliderBase</a>&lt;<a class="code" href="classscore_1_1_q_graphics_slider.html">QGraphicsSlider</a>&gt;;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordtype">double</span> m_value{};</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordtype">double</span> m_execValue{};</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordtype">double</span> min{}, max{};</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">bool</span> m_grab{};</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">bool</span> m_hasExec{};</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classscore_1_1_q_graphics_slider.html">QGraphicsSlider</a>(QGraphicsItem* parent);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">double</span> from01(<span class="keywordtype">double</span> v) <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> v; }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">double</span> unmap(<span class="keywordtype">double</span> v) <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> (v - min) / (max - min); }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">double</span> map(<span class="keywordtype">double</span> v) <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> (v * (max - min)) + min; }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">void</span> setRange(<span class="keywordtype">double</span> min, <span class="keywordtype">double</span> max);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> setValue(<span class="keywordtype">double</span> v);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">double</span> value() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> setExecutionValue(<span class="keywordtype">double</span> v);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> resetExecution();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">bool</span> moving = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structscore_1_1_default_control_impl.html">DefaultControlImpl</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structscore_1_1_default_graphics_slider_impl.html">DefaultGraphicsSliderImpl</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structscore_1_1_q_graphics_slider_base.html">QGraphicsSliderBase</a>&lt;<a class="code" href="classscore_1_1_q_graphics_slider.html">QGraphicsSlider</a>&gt;;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordtype">double</span> m_value{};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">double</span> m_execValue{};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">double</span> min{}, max{};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">bool</span> m_grab{};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">bool</span> m_hasExec{};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classscore_1_1_q_graphics_slider.html">QGraphicsSlider</a>(QGraphicsItem* parent);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  ~<a class="code" href="classscore_1_1_q_graphics_slider.html">QGraphicsSlider</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">double</span> from01(<span class="keywordtype">double</span> v) <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> v; }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">double</span> unmap(<span class="keywordtype">double</span> v) <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> (v - min) / (max - min); }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">double</span> map(<span class="keywordtype">double</span> v) <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> (v * (max - min)) + min; }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">void</span> setRange(<span class="keywordtype">double</span> min, <span class="keywordtype">double</span> max);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> setValue(<span class="keywordtype">double</span> v);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">double</span> value() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> setExecutionValue(<span class="keywordtype">double</span> v);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> resetExecution();</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> sliderMoved() E_SIGNAL(SCORE_LIB_BASE_EXPORT, sliderMoved)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> sliderReleased() E_SIGNAL(SCORE_LIB_BASE_EXPORT, sliderReleased)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> mousePressEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> mouseMoveEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> mouseReleaseEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> contextMenuEvent(QGraphicsSceneContextMenuEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">void</span> mouseDoubleClickEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> paint(QPainter* painter, <span class="keyword">const</span> QStyleOptionGraphicsItem* option, QWidget* widget)</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">bool</span> moving = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> sliderMoved() E_SIGNAL(SCORE_LIB_BASE_EXPORT, sliderMoved)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> sliderReleased() E_SIGNAL(SCORE_LIB_BASE_EXPORT, sliderReleased)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> mousePressEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> mouseMoveEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">void</span> mouseReleaseEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">void</span> contextMenuEvent(QGraphicsSceneContextMenuEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> mouseDoubleClickEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">void</span> paint(QPainter* painter, <span class="keyword">const</span> QStyleOptionGraphicsItem* option, QWidget* widget)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
 <div class="ttc" id="aclassscore_1_1_q_graphics_slider_html"><div class="ttname"><a href="classscore_1_1_q_graphics_slider.html">score::QGraphicsSlider</a></div><div class="ttdef"><b>Definition:</b> QGraphicsSlider.hpp:17</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:90</div></div>
-<div class="ttc" id="astructscore_1_1_default_graphics_slider_impl_html"><div class="ttname"><a href="structscore_1_1_default_graphics_slider_impl.html">score::DefaultGraphicsSliderImpl</a></div><div class="ttdef"><b>Definition:</b> DefaultGraphicsSliderImpl.hpp:29</div></div>
+<div class="ttc" id="astructscore_1_1_default_control_impl_html"><div class="ttname"><a href="structscore_1_1_default_control_impl.html">score::DefaultControlImpl</a></div><div class="ttdef"><b>Definition:</b> DefaultControlImpl.hpp:10</div></div>
+<div class="ttc" id="astructscore_1_1_default_graphics_slider_impl_html"><div class="ttname"><a href="structscore_1_1_default_graphics_slider_impl.html">score::DefaultGraphicsSliderImpl</a></div><div class="ttdef"><b>Definition:</b> DefaultGraphicsSliderImpl.hpp:30</div></div>
 <div class="ttc" id="astructscore_1_1_q_graphics_slider_base_html"><div class="ttname"><a href="structscore_1_1_q_graphics_slider_base.html">score::QGraphicsSliderBase</a></div><div class="ttdef"><b>Definition:</b> QGraphicsSliderBase.hpp:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

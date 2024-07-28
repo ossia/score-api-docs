@@ -34,5 +34,6 @@ var class_process_1_1_port =
     [ "visualDescription", "class_process_1_1_port.html#a54f4a74a9381a07efc6ed1a1c5885dac", null ],
     [ "visualName", "class_process_1_1_port.html#a606b951eba0500b101e40bb0be1b1912", null ],
     [ "hidden", "class_process_1_1_port.html#ae01be778c9caf0ae5e0bda9c6d22e512", null ],
+    [ "noValueChangeOnMove", "class_process_1_1_port.html#af2c73a572ddf5f681fb5c9f96395c4d4", null ],
     [ "selection", "class_process_1_1_port.html#a00897fdc9c42c2cee7416a3da07caa89", null ]
 ];
