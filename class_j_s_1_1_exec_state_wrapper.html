@@ -96,6 +96,8 @@ $(document).ready(function(){initNavTree('class_j_s_1_1_exec_state_wrapper.html'
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_j_s_1_1_exec_state_wrapper-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">JS::ExecStateWrapper Class Reference</div>  </div>
@@ -110,9 +112,9 @@ Inheritance diagram for JS::ExecStateWrapper:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adc5d9dafa4550f0a42034933f332b72d"><td class="memItemLeft" align="right" valign="top"><a id="adc5d9dafa4550f0a42034933f332b72d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ExecStateWrapper</b> (ossia::execution_state &amp;state, QObject *parent)</td></tr>
-<tr class="separator:adc5d9dafa4550f0a42034933f332b72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8241d304be67b41235b5a4dfa3fcb35a"><td class="memItemLeft" align="right" valign="top"><a id="a8241d304be67b41235b5a4dfa3fcb35a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ExecStateWrapper</b> (const DeviceCache &amp;state, DevicePushFunction push, QObject *parent)</td></tr>
+<tr class="separator:a8241d304be67b41235b5a4dfa3fcb35a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1fbd4afdd5421e08adb292dcbb2a4fa"><td class="memItemLeft" align="right" valign="top"><a id="ad1fbd4afdd5421e08adb292dcbb2a4fa"></a>
 QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (const QString &amp;address)</td></tr>
 <tr class="separator:ad1fbd4afdd5421e08adb292dcbb2a4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,6 +130,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>compute</b> (const QS
 <tr class="memitem:a86496eccc323eb4f10ce1cbc3518b652"><td class="memItemLeft" align="right" valign="top"><a id="a86496eccc323eb4f10ce1cbc3518b652"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>system</b> (const QString &amp;code)</td></tr>
 <tr class="separator:a86496eccc323eb4f10ce1cbc3518b652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa27b49f04dc37223fd9d1dc7fe8ca60"><td class="memItemLeft" align="right" valign="top"><a id="aaa27b49f04dc37223fd9d1dc7fe8ca60"></a>
+const ossia::destination_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>find_address</b> (const QString &amp;)</td></tr>
+<tr class="separator:aaa27b49f04dc37223fd9d1dc7fe8ca60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a6fa61ab2293b53c2d301b8e03ed05670"><td class="memItemLeft" align="right" valign="top"><a id="a6fa61ab2293b53c2d301b8e03ed05670"></a>
+static ossia::net::node_base *&#160;</td><td class="memItemRight" valign="bottom"><b>find_node</b> (DeviceCache &amp;devices, std::string_view name)</td></tr>
+<tr class="separator:a6fa61ab2293b53c2d301b8e03ed05670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a656e76e4102aae7bc75e02723be44e58"><td class="memItemLeft" align="right" valign="top"><a id="a656e76e4102aae7bc75e02723be44e58"></a>
+DeviceCache&#160;</td><td class="memItemRight" valign="bottom"><b>devices</b></td></tr>
+<tr class="separator:a656e76e4102aae7bc75e02723be44e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_j_s_a_p_i_wrapper_8hpp_source.html">JSAPIWrapper.hpp</a></li>

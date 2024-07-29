@@ -137,18 +137,18 @@ $(document).ready(function(){initNavTree('_concepts_8hpp_source.html',''); initR
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#define uuid_constexpr constexpr</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace </span>oscr</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceoscr.html">oscr</a></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node, <span class="keyword">typename</span> FieldIndex&gt;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">struct </span>CustomFloatControl;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node, <span class="keyword">typename</span> FieldIndex&gt;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">struct </span>is_custom_serialized&lt;oscr::CustomFloatControl&lt;Node, FieldIndex&gt;&gt; : std::true_type</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">struct </span>is_custom_serialized&lt;<a class="code" href="namespaceoscr.html">oscr</a>::CustomFloatControl&lt;Node, FieldIndex&gt;&gt; : std::true_type</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">namespace </span>oscr</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceoscr.html">oscr</a></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> N&gt;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;consteval <a class="code" href="structscore_1_1uuids_1_1uuid.html">score::uuid_t</a> uuid_from_string()</div>
@@ -231,7 +231,7 @@ $(document).ready(function(){initNavTree('_concepts_8hpp_source.html',''); initR
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node, <span class="keyword">typename</span> FieldIndex&gt;</div>
-<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="struct_t_serializer_3_01_data_stream_00_01oscr_1_1_custom_float_control_3_01_node_00_01_field_index_01_4_01_4.html">  134</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_t_serializer.html">TSerializer</a>&lt;<a class="code" href="class_data_stream.html">DataStream</a>, oscr::CustomFloatControl&lt;Node, FieldIndex&gt;&gt;</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="struct_t_serializer_3_01_data_stream_00_01oscr_1_1_custom_float_control_3_01_node_00_01_field_index_01_4_01_4.html">  134</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_t_serializer.html">TSerializer</a>&lt;<a class="code" href="class_data_stream.html">DataStream</a>, <a class="code" href="namespaceoscr.html">oscr</a>::CustomFloatControl&lt;Node, FieldIndex&gt;&gt;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;{</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keyword">using</span> <a class="code" href="structoscr_1_1_custom_float_control.html">model_type</a> = <a class="code" href="structoscr_1_1_custom_float_control.html">oscr::CustomFloatControl&lt;Node, FieldIndex&gt;</a>;</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> readFrom(<a class="code" href="class_data_stream_reader.html">DataStream::Serializer</a>&amp; s, <span class="keyword">const</span> <a class="code" href="structoscr_1_1_custom_float_control.html">model_type</a>&amp; p)</div>
@@ -243,7 +243,7 @@ $(document).ready(function(){initNavTree('_concepts_8hpp_source.html',''); initR
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;};</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node, <span class="keyword">typename</span> FieldIndex&gt;</div>
-<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="struct_t_serializer_3_01_j_s_o_n_object_00_01oscr_1_1_custom_float_control_3_01_node_00_01_field_index_01_4_01_4.html">  146</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_t_serializer.html">TSerializer</a>&lt;<a class="code" href="class_j_s_o_n_object.html">JSONObject</a>, oscr::CustomFloatControl&lt;Node, FieldIndex&gt;&gt;</div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="struct_t_serializer_3_01_j_s_o_n_object_00_01oscr_1_1_custom_float_control_3_01_node_00_01_field_index_01_4_01_4.html">  146</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_t_serializer.html">TSerializer</a>&lt;<a class="code" href="class_j_s_o_n_object.html">JSONObject</a>, <a class="code" href="namespaceoscr.html">oscr</a>::CustomFloatControl&lt;Node, FieldIndex&gt;&gt;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;{</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keyword">using</span> <a class="code" href="structoscr_1_1_custom_float_control.html">model_type</a> = <a class="code" href="structoscr_1_1_custom_float_control.html">oscr::CustomFloatControl&lt;Node, FieldIndex&gt;</a>;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> readFrom(<a class="code" href="class_j_s_o_n_reader.html">JSONObject::Serializer</a>&amp; s, <span class="keyword">const</span> <a class="code" href="structoscr_1_1_custom_float_control.html">model_type</a>&amp; p)</div>
@@ -254,7 +254,7 @@ $(document).ready(function(){initNavTree('_concepts_8hpp_source.html',''); initR
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> writeTo(<a class="code" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp; s, <a class="code" href="structoscr_1_1_custom_float_control.html">model_type</a>&amp; eff) { }</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;};</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="keyword">namespace </span>oscr</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceoscr.html">oscr</a></div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;{</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node, <span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> N&gt;</div>
@@ -575,7 +575,7 @@ $(document).ready(function(){initNavTree('_concepts_8hpp_source.html',''); initR
 <div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;}</div>
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;}</div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160; </div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;<span class="keyword">namespace </span>oscr</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceoscr.html">oscr</a></div>
 <div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;{</div>
 <div class="line"><a name="l00480"></a><span class="lineno"><a class="line" href="structoscr_1_1multichannel__audio__view.html">  480</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structoscr_1_1multichannel__audio__view.html">multichannel_audio_view</a></div>
 <div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;{</div>
@@ -646,6 +646,7 @@ $(document).ready(function(){initNavTree('_concepts_8hpp_source.html',''); initR
 <div class="ttc" id="aclass_process_1_1_control_inlet_html"><div class="ttname"><a href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:203</div></div>
 <div class="ttc" id="aclass_uuid_key_html"><div class="ttname"><a href="class_uuid_key.html">UuidKey</a></div><div class="ttdef"><b>Definition:</b> UuidKey.hpp:343</div></div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition:</b> Identifier.hpp:57</div></div>
+<div class="ttc" id="anamespaceoscr_html"><div class="ttname"><a href="namespaceoscr.html">oscr</a></div><div class="ttdef"><b>Definition:</b> Factories.hpp:18</div></div>
 <div class="ttc" id="astruct_dataflow_1_1_curve_inlet_html"><div class="ttname"><a href="struct_dataflow_1_1_curve_inlet.html">Dataflow::CurveInlet</a></div><div class="ttdef"><b>Definition:</b> CurveInlet.hpp:47</div></div>
 <div class="ttc" id="astruct_t_serializer_html"><div class="ttname"><a href="struct_t_serializer.html">TSerializer</a></div><div class="ttdef"><b>Definition:</b> VisitorInterface.hpp:13</div></div>
 <div class="ttc" id="astruct_visitor_variant_html"><div class="ttname"><a href="struct_visitor_variant.html">VisitorVariant</a></div><div class="ttdoc">The VisitorVariant struct.</div><div class="ttdef"><b>Definition:</b> VisitorInterface.hpp:26</div></div>

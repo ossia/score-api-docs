@@ -66,6 +66,7 @@ var hierarchy =
       [ "score_plugin_engine", "classscore__plugin__engine.html", null ],
       [ "score_plugin_gfx", "classscore__plugin__gfx.html", null ],
       [ "score_plugin_jit", "classscore__plugin__jit.html", null ],
+      [ "score_plugin_js", "classscore__plugin__js.html", null ],
       [ "score_plugin_lv2", "classscore__plugin__lv2.html", null ],
       [ "score_plugin_pd", "classscore__plugin__pd.html", null ],
       [ "score_plugin_recording", "classscore__plugin__recording.html", null ],
@@ -992,6 +993,7 @@ var hierarchy =
       [ "Engine::ApplicationPlugin", "class_engine_1_1_application_plugin.html", null ],
       [ "Explorer::ApplicationPlugin", "class_explorer_1_1_application_plugin.html", null ],
       [ "Gfx::ApplicationPlugin", "class_gfx_1_1_application_plugin.html", null ],
+      [ "JS::ApplicationPlugin", "class_j_s_1_1_application_plugin.html", null ],
       [ "Jit::ApplicationPlugin", "struct_jit_1_1_application_plugin.html", null ],
       [ "Recording::ApplicationPlugin", "class_recording_1_1_application_plugin.html", null ],
       [ "RemoteControl::ApplicationPlugin", "class_remote_control_1_1_application_plugin.html", null ],
@@ -1107,8 +1109,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1926,6 +1928,7 @@ var hierarchy =
       [ "Execution::SetupContext", "struct_execution_1_1_setup_context.html", null ],
       [ "HierarchicalBaseScenario< Component_T, BaseScenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T >", "class_hierarchical_base_scenario.html", null ],
       [ "HierarchicalScenarioComponent< Component_T, Scenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T, HasOwnership >", "class_hierarchical_scenario_component.html", null ],
+      [ "JS::AddressSource", "struct_j_s_1_1_address_source.html", null ],
       [ "Library::ProcessesItemModel", "class_library_1_1_processes_item_model.html", null ],
       [ "Media::Sound::AudioPreviewWidget", "class_media_1_1_sound_1_1_audio_preview_widget.html", null ],
       [ "Media::Sound::LayerView", "class_media_1_1_sound_1_1_layer_view.html", null ],
@@ -2872,13 +2875,17 @@ var hierarchy =
       [ "InspectorPanel::InspectorPanelWidget", "class_inspector_panel_1_1_inspector_panel_widget.html", null ],
       [ "IntervalModelTests", "class_interval_model_tests.html", null ],
       [ "JS::ActionContext", "struct_j_s_1_1_action_context.html", null ],
+      [ "JS::AddressSource", "struct_j_s_1_1_address_source.html", null ],
+      [ "JS::ApplicationPlugin", "class_j_s_1_1_application_plugin.html", null ],
       [ "JS::ConsoleLibraryHandler", "class_j_s_1_1_console_library_handler.html", null ],
+      [ "JS::DeviceContext", "class_j_s_1_1_device_context.html", null ],
       [ "JS::EditJsContext", "class_j_s_1_1_edit_js_context.html", null ],
       [ "JS::ExecStateWrapper", "class_j_s_1_1_exec_state_wrapper.html", null ],
       [ "JS::Inlet", "class_j_s_1_1_inlet.html", null ],
       [ "JS::JsUtils", "class_j_s_1_1_js_utils.html", null ],
       [ "JS::LibraryHandler", "class_j_s_1_1_library_handler.html", null ],
       [ "JS::ModuleLibraryHandler", "class_j_s_1_1_module_library_handler.html", null ],
+      [ "JS::PortSource", "struct_j_s_1_1_port_source.html", null ],
       [ "Jit::AddonCompiler", "class_jit_1_1_addon_compiler.html", null ],
       [ "Jit::ApplicationPlugin", "struct_jit_1_1_application_plugin.html", null ],
       [ "LV2::ApplicationPlugin", "class_l_v2_1_1_application_plugin.html", null ],
@@ -3144,6 +3151,13 @@ var hierarchy =
     ] ],
     [ "QPushButton", null, [
       [ "score::ToggleButton", "structscore_1_1_toggle_button.html", null ]
+    ] ],
+    [ "QQmlPropertyValueSource", null, [
+      [ "JS::AddressSource", "struct_j_s_1_1_address_source.html", null ],
+      [ "JS::PortSource", "struct_j_s_1_1_port_source.html", null ]
+    ] ],
+    [ "QQuickItem", null, [
+      [ "JS::AddressItem", "struct_j_s_1_1_address_item.html", null ]
     ] ],
     [ "QScrollArea", null, [
       [ "Library::InfoWidget", "class_library_1_1_info_widget.html", null ]

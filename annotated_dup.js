@@ -689,6 +689,7 @@ var annotated_dup =
       [ "Executor", null, [
         [ "Component", "class_j_s_1_1_executor_1_1_component.html", "class_j_s_1_1_executor_1_1_component" ]
       ] ],
+      [ "ApplicationPlugin", "class_j_s_1_1_application_plugin.html", "class_j_s_1_1_application_plugin" ],
       [ "EditScript", "class_j_s_1_1_edit_script.html", null ],
       [ "ScriptMacro", "class_j_s_1_1_script_macro.html", null ],
       [ "ActionContext", "struct_j_s_1_1_action_context.html", "struct_j_s_1_1_action_context" ],
@@ -702,7 +703,11 @@ var annotated_dup =
       [ "ModuleLibraryHandler", "class_j_s_1_1_module_library_handler.html", "class_j_s_1_1_module_library_handler" ],
       [ "ConsoleLibraryHandler", "class_j_s_1_1_console_library_handler.html", null ],
       [ "LibraryHandler", "class_j_s_1_1_library_handler.html", null ],
+      [ "AddressItem", "struct_j_s_1_1_address_item.html", "struct_j_s_1_1_address_item" ],
+      [ "AddressSource", "struct_j_s_1_1_address_source.html", "struct_j_s_1_1_address_source" ],
+      [ "DeviceContext", "class_j_s_1_1_device_context.html", "class_j_s_1_1_device_context" ],
       [ "EditJsContext", "class_j_s_1_1_edit_js_context.html", "class_j_s_1_1_edit_js_context" ],
+      [ "PortSource", "struct_j_s_1_1_port_source.html", "struct_j_s_1_1_port_source" ],
       [ "Inlet", "class_j_s_1_1_inlet.html", "class_j_s_1_1_inlet" ],
       [ "JsUtils", "class_j_s_1_1_js_utils.html", "class_j_s_1_1_js_utils" ],
       [ "Vec2fValueType", "struct_j_s_1_1_vec2f_value_type.html", "struct_j_s_1_1_vec2f_value_type" ],
@@ -1022,7 +1027,7 @@ var annotated_dup =
       ] ],
       [ "GenericMathMapping", "struct_nodes_1_1_generic_math_mapping.html", null ]
     ] ],
-    [ "oscr", null, [
+    [ "oscr", "namespaceoscr.html", [
       [ "ProcessFactory", "structoscr_1_1_process_factory.html", null ],
       [ "ExecutorFactory", "structoscr_1_1_executor_factory.html", null ],
       [ "NormalizerFromMapper", "structoscr_1_1_normalizer_from_mapper.html", null ],
@@ -1060,16 +1065,16 @@ var annotated_dup =
       [ "MessageBusSender", "structoscr_1_1_message_bus_sender.html", "structoscr_1_1_message_bus_sender" ],
       [ "Deserializer", "structoscr_1_1_deserializer.html", "structoscr_1_1_deserializer" ],
       [ "MessageBusReader", "structoscr_1_1_message_bus_reader.html", "structoscr_1_1_message_bus_reader" ],
+      [ "ProcessModel", "classoscr_1_1_process_model.html", "classoscr_1_1_process_model" ],
       [ "QPainterAdapter", "structoscr_1_1_q_painter_adapter.html", "structoscr_1_1_q_painter_adapter" ],
       [ "CustomItem", "classoscr_1_1_custom_item.html", "classoscr_1_1_custom_item" ],
       [ "CustomControl", "classoscr_1_1_custom_control.html", "classoscr_1_1_custom_control" ],
-      [ "ProcessModel", "classoscr_1_1_process_model.html", "classoscr_1_1_process_model" ],
-      [ "InletInitFunc", "structoscr_1_1_inlet_init_func.html", "structoscr_1_1_inlet_init_func" ],
-      [ "OutletInitFunc", "structoscr_1_1_outlet_init_func.html", "structoscr_1_1_outlet_init_func" ],
       [ "MessageBusWrapperToUi", "structoscr_1_1_message_bus_wrapper_to_ui.html", null ],
       [ "MessageBusWrapperFromUi", "structoscr_1_1_message_bus_wrapper_from_ui.html", null ],
       [ "MessageBusWrapperToUi< Info >", "structoscr_1_1_message_bus_wrapper_to_ui_3_01_info_01_4.html", "structoscr_1_1_message_bus_wrapper_to_ui_3_01_info_01_4" ],
       [ "MessageBusWrapperFromUi< Info >", "structoscr_1_1_message_bus_wrapper_from_ui_3_01_info_01_4.html", "structoscr_1_1_message_bus_wrapper_from_ui_3_01_info_01_4" ],
+      [ "InletInitFunc", "structoscr_1_1_inlet_init_func.html", "structoscr_1_1_inlet_init_func" ],
+      [ "OutletInitFunc", "structoscr_1_1_outlet_init_func.html", "structoscr_1_1_outlet_init_func" ],
       [ "Port", "structoscr_1_1_port.html", "structoscr_1_1_port" ],
       [ "EdgeItem", "structoscr_1_1_edge_item.html", "structoscr_1_1_edge_item" ],
       [ "NodeItem", "structoscr_1_1_node_item.html", "structoscr_1_1_node_item" ],
