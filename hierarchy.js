@@ -3156,9 +3156,6 @@ var hierarchy =
       [ "JS::AddressSource", "struct_j_s_1_1_address_source.html", null ],
       [ "JS::PortSource", "struct_j_s_1_1_port_source.html", null ]
     ] ],
-    [ "QQuickItem", null, [
-      [ "JS::AddressItem", "struct_j_s_1_1_address_item.html", null ]
-    ] ],
     [ "QScrollArea", null, [
       [ "Library::InfoWidget", "class_library_1_1_info_widget.html", null ]
     ] ],

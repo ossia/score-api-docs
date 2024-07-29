@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['xyslider_5484',['XYSlider',['../struct_control_1_1_x_y_slider.html',1,'Control::XYSlider'],['../struct_widget_factory_1_1_x_y_slider.html',1,'WidgetFactory::XYSlider'],['../struct_x_y_slider.html',1,'XYSlider']]],
-  ['xyspinboxes_5485',['XYSpinboxes',['../struct_widget_factory_1_1_x_y_spinboxes.html',1,'WidgetFactory::XYSpinboxes'],['../struct_x_y_spinboxes.html',1,'XYSpinboxes']]],
-  ['xyzslider_5486',['XYZSlider',['../struct_widget_factory_1_1_x_y_z_slider.html',1,'WidgetFactory::XYZSlider'],['../struct_x_y_z_slider.html',1,'XYZSlider']]],
-  ['xyzspinboxes_5487',['XYZSpinboxes',['../struct_widget_factory_1_1_x_y_z_spinboxes.html',1,'WidgetFactory::XYZSpinboxes'],['../struct_x_y_z_spinboxes.html',1,'XYZSpinboxes']]]
+  ['xyslider_5482',['XYSlider',['../struct_control_1_1_x_y_slider.html',1,'Control::XYSlider'],['../struct_widget_factory_1_1_x_y_slider.html',1,'WidgetFactory::XYSlider'],['../struct_x_y_slider.html',1,'XYSlider']]],
+  ['xyspinboxes_5483',['XYSpinboxes',['../struct_widget_factory_1_1_x_y_spinboxes.html',1,'WidgetFactory::XYSpinboxes'],['../struct_x_y_spinboxes.html',1,'XYSpinboxes']]],
+  ['xyzslider_5484',['XYZSlider',['../struct_widget_factory_1_1_x_y_z_slider.html',1,'WidgetFactory::XYZSlider'],['../struct_x_y_z_slider.html',1,'XYZSlider']]],
+  ['xyzspinboxes_5485',['XYZSpinboxes',['../struct_widget_factory_1_1_x_y_z_spinboxes.html',1,'WidgetFactory::XYZSpinboxes'],['../struct_x_y_z_spinboxes.html',1,'XYZSpinboxes']]]
 ];

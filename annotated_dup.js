@@ -703,7 +703,6 @@ var annotated_dup =
       [ "ModuleLibraryHandler", "class_j_s_1_1_module_library_handler.html", "class_j_s_1_1_module_library_handler" ],
       [ "ConsoleLibraryHandler", "class_j_s_1_1_console_library_handler.html", null ],
       [ "LibraryHandler", "class_j_s_1_1_library_handler.html", null ],
-      [ "AddressItem", "struct_j_s_1_1_address_item.html", "struct_j_s_1_1_address_item" ],
       [ "AddressSource", "struct_j_s_1_1_address_source.html", "struct_j_s_1_1_address_source" ],
       [ "DeviceContext", "class_j_s_1_1_device_context.html", "class_j_s_1_1_device_context" ],
       [ "EditJsContext", "class_j_s_1_1_edit_js_context.html", "class_j_s_1_1_edit_js_context" ],
