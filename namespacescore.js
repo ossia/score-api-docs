@@ -206,6 +206,7 @@ var namespacescore =
     [ "QGraphicsHSVChooser", "classscore_1_1_q_graphics_h_s_v_chooser.html", "classscore_1_1_q_graphics_h_s_v_chooser" ],
     [ "QGraphicsIntSlider", "classscore_1_1_q_graphics_int_slider.html", "classscore_1_1_q_graphics_int_slider" ],
     [ "QGraphicsKnob", "classscore_1_1_q_graphics_knob.html", "classscore_1_1_q_graphics_knob" ],
+    [ "QGraphicsLineEdit", "structscore_1_1_q_graphics_line_edit.html", "structscore_1_1_q_graphics_line_edit" ],
     [ "QGraphicsLogKnob", "classscore_1_1_q_graphics_log_knob.html", "classscore_1_1_q_graphics_log_knob" ],
     [ "QGraphicsLogSlider", "classscore_1_1_q_graphics_log_slider.html", "classscore_1_1_q_graphics_log_slider" ],
     [ "ValueAssigner", "structscore_1_1_value_assigner.html", null ],

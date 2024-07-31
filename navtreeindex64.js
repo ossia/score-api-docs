@@ -1,5 +1,7 @@
 var NAVTREEINDEX64 =
 {
+"struct_gfx_1_1_geometry_outlet_factory.html#a37e764907dd31953179579fce18c14ec":[12,0,19,86,2],
+"struct_gfx_1_1_geometry_outlet_factory.html#a89cc8463803ea06498ea047471fab605":[12,0,19,86,0],
 "struct_gfx_1_1_geometry_outlet_factory.html#a8b736ae56f0c0ac21e1b49ebd8d79589":[12,0,19,86,1],
 "struct_gfx_1_1_image_cache.html":[12,0,19,41],
 "struct_gfx_1_1_image_cache.html#aabefcacc51a291abe8160f26cc6e8e26":[12,0,19,41,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX64 =
 "struct_gfx_1_1_stream_options.html#a4fef19a58aef6f10cb764d3510596de0":[12,0,19,59,1],
 "struct_gfx_1_1_stream_options.html#add65b40d6a1a42d546e8a357a1f5dc79":[12,0,19,59,2],
 "struct_gfx_1_1_stream_options.html#ae9f560e9e12af2672b87cfaa8c5c550b":[12,0,19,59,0],
-"struct_gfx_1_1_v4_l2_camera_device_enumerator.html":[12,0,19,15],
-"struct_gfx_1_1_v4_l2_camera_device_enumerator.html#a6e6a81bdd4aaec6cf9849ee0c7b76e06":[12,0,19,15,3],
-"struct_gfx_1_1_v4_l2_camera_device_enumerator.html#aa5e88c91873ae94038ba07dd85fdda93":[12,0,19,15,1]
+"struct_gfx_1_1_v4_l2_camera_device_enumerator.html":[12,0,19,15]
 };

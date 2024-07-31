@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('_math_generator_8hpp_source.html','');
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordflow">if</span>(<span class="keyword">auto</span> obj = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="classscore_1_1_resizeable_item.html">score::ResizeableItem</a>*<span class="keyword">&gt;</span>(&amp;parent))</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    QObject::connect(</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        &amp;edit_item.control, &amp;Process::LineEditItem::sizeChanged, obj,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        &amp;edit_item.control, &amp;score::QGraphicsLineEdit::sizeChanged, obj,</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        &amp;score::ResizeableItem::childrenSizeChanged);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>

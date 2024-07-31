@@ -9,6 +9,7 @@ var classscore_1_1_graphics_layout =
     [ "setBrush", "classscore_1_1_graphics_layout.html#afa1cf231882572013521523b757b7804", null ],
     [ "setMargin", "classscore_1_1_graphics_layout.html#a387a6af6dcd2ffb061dfb8d30f5c7616", null ],
     [ "setPadding", "classscore_1_1_graphics_layout.html#a8fc5a37bf43ad970139dfe25641611cc", null ],
+    [ "updateChildrenRects", "classscore_1_1_graphics_layout.html#a464c9666613202148aa747b6ab1f84eb", null ],
     [ "m_bg", "classscore_1_1_graphics_layout.html#acd424fd74e3b0a7976e4b666f9df4596", null ],
     [ "m_margin", "classscore_1_1_graphics_layout.html#aef3c517c599dfbfc04df4e6f10515fc0", null ],
     [ "m_padding", "classscore_1_1_graphics_layout.html#a74aabf06525b39857a10d77e980d14f1", null ],

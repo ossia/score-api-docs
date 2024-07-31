@@ -1045,6 +1045,7 @@ var files_dup =
     [ "QGraphicsHSVChooser.hpp", "_q_graphics_h_s_v_chooser_8hpp_source.html", null ],
     [ "QGraphicsIntSlider.hpp", "_q_graphics_int_slider_8hpp_source.html", null ],
     [ "QGraphicsKnob.hpp", "_q_graphics_knob_8hpp_source.html", null ],
+    [ "QGraphicsLineEdit.hpp", "_q_graphics_line_edit_8hpp_source.html", null ],
     [ "QGraphicsLogKnob.hpp", "_q_graphics_log_knob_8hpp_source.html", null ],
     [ "QGraphicsLogSlider.hpp", "_q_graphics_log_slider_8hpp_source.html", null ],
     [ "QGraphicsMultiSlider.hpp", "_q_graphics_multi_slider_8hpp_source.html", null ],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX54 =
 {
+"classvst3_1_1param__changes.html#a76cb40743881be6b16985a1df4a400d5":[12,0,59,17,6],
+"classvst3_1_1param__changes.html#a9a2894084ff1101aa20b0e4345c68895":[12,0,59,17,1],
 "classvst3_1_1param__changes.html#aa23c7c0b3845473947168160d055def1":[12,0,59,17,2],
 "classvst3_1_1param__changes.html#ac146072da0abd9f4dba6d03e135784ef":[12,0,59,17,3],
 "classvst3_1_1param__queue.html":[12,0,59,16],
@@ -191,8 +193,8 @@ var NAVTREEINDEX54 =
 "from__ossia__value___test_8cpp.html#ace5917815291ace90f2a557c701ff7f8":[11,0,27,0,0],
 "from__ossia__value___test_8cpp.html#ae01d728e736f1c10f7d977cf76ce02cd":[11,0,40,13],
 "from__ossia__value___test_8cpp.html#afd529bc820aba7bf2b82279ef96090d0":[11,0,27,4],
-"functions.html":[12,3,0],
 "functions.html":[12,3,0,0],
+"functions.html":[12,3,0],
 "functions_c.html":[12,3,0,1],
 "functions_d.html":[12,3,0,2],
 "functions_e.html":[12,3,0,3],
@@ -246,8 +248,6 @@ var NAVTREEINDEX54 =
 "isf_8cpp.html#ac332893a3c8950b89a0e034cef4f9a06":[11,0,25,1],
 "isf_8hpp_source.html":[13,0,634],
 "lib_2core_2documentation_2commands_8hpp_source.html":[13,0,182],
-"lib_2core_2documentation_2serialization_8hpp_source.html":[13,0,1247],
-"lib_2core_2presenter_2_presenter_8hpp_source.html":[13,0,968],
-"lib_2core_2settings_2_settings_8hpp_source.html":[13,0,1267],
-"lib_2core_2view_2_window_8hpp_source.html":[13,0,1498]
+"lib_2core_2documentation_2serialization_8hpp_source.html":[13,0,1248],
+"lib_2core_2presenter_2_presenter_8hpp_source.html":[13,0,968]
 };

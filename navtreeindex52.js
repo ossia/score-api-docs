@@ -1,11 +1,13 @@
 var NAVTREEINDEX52 =
 {
-"classscore_1_1dynvector__impl.html#a9ac8d8671262f8b99f4e8742faa6308b":[12,0,49,253,10],
-"classscore_1_1dynvector__impl.html#a9b390c5768387c21ca5249161009b8ad":[12,0,49,253,9],
-"classscore_1_1dynvector__impl.html#ad6f52fc83e6bcc747e917aef89710051":[12,0,49,253,13],
-"classscore_1_1dynvector__impl.html#ad93baedb0e0aa1f104bf32be09db71aa":[12,0,49,253,12],
-"classscore_1_1dynvector__impl.html#ae8d4e1d6df1b92ca61335087bd5bf12f":[12,0,49,253,1],
-"classscore_1_1dynvector__impl.html#aefe3a49514a13898d4f7583f28a5b7e0":[12,0,49,253,4],
+"classscore_1_1dynvector__impl.html#a5a836eddc2bea306b9bdba78ee899e36":[12,0,49,254,3],
+"classscore_1_1dynvector__impl.html#a99e451d514cacd403107d868fe225b51":[12,0,49,254,6],
+"classscore_1_1dynvector__impl.html#a9ac8d8671262f8b99f4e8742faa6308b":[12,0,49,254,10],
+"classscore_1_1dynvector__impl.html#a9b390c5768387c21ca5249161009b8ad":[12,0,49,254,9],
+"classscore_1_1dynvector__impl.html#ad6f52fc83e6bcc747e917aef89710051":[12,0,49,254,13],
+"classscore_1_1dynvector__impl.html#ad93baedb0e0aa1f104bf32be09db71aa":[12,0,49,254,12],
+"classscore_1_1dynvector__impl.html#ae8d4e1d6df1b92ca61335087bd5bf12f":[12,0,49,254,1],
+"classscore_1_1dynvector__impl.html#aefe3a49514a13898d4f7583f28a5b7e0":[12,0,49,254,4],
 "classscore_1_1gfx_1_1_camera_node.html":[12,0,49,2,74],
 "classscore_1_1gfx_1_1_camera_node.html#a076c167ada442598a0e0c6bfdf3f4b1c":[12,0,49,2,74,2],
 "classscore_1_1gfx_1_1_camera_node.html#a3d08fc1154072cbd13b8f885c41968ac":[12,0,49,2,74,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX52 =
 "classscore_1_1gfx_1_1_window.html#a7b36bcfd44911b83a2924f1ec4877f92":[12,0,49,2,76,6],
 "classscore_1_1gfx_1_1_window.html#a84f2e78a7c99e63f43fc8d914145850a":[12,0,49,2,76,11],
 "classscore_1_1gfx_1_1_window.html#a869e0d6ba62673de5ea8df059de827d3":[12,0,49,2,76,1],
-"classscore_1_1gfx_1_1_window.html#ad4b830c6e090e1cd39b53ebe8f09b631":[12,0,49,2,76,4],
-"classscore_1_1gfx_1_1_window.html#adb7bcdd3cb1f33ec8dda6f51777dd3b4":[12,0,49,2,76,5],
-"classscore_1_1gfx_1_1_window.html#adddf837fcd179b3383d7b869d548bdd3":[12,0,49,2,76,15]
+"classscore_1_1gfx_1_1_window.html#ad4b830c6e090e1cd39b53ebe8f09b631":[12,0,49,2,76,4]
 };

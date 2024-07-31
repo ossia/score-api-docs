@@ -1,5 +1,7 @@
 var NAVTREEINDEX69 =
 {
+"struct_nodes_1_1_envelope_1_1_node.html#ade4a8bf5adeb23ac6993c3015fd3627c":[12,0,36,10,0,1],
+"struct_nodes_1_1_envelope_1_1_node_1_1_metadata.html":[12,0,36,10,0,0],
 "struct_nodes_1_1_factor_oracle2_1_1_node.html":[12,0,36,12,0],
 "struct_nodes_1_1_factor_oracle2_1_1_node.html#a0efce3c2af9399d688cbfbae27785b72":[12,0,36,12,0,3],
 "struct_nodes_1_1_factor_oracle2_1_1_node.html#ab88c737108fae29a9803d2f50e81b55d":[12,0,36,12,0,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX69 =
 "struct_ossia_variant_j_s_o_n_serializer.html#a1650e9f61641fe2e88cd073ecc2f19b6":[12,0,213,3],
 "struct_ossia_variant_j_s_o_n_serializer.html#a4a1925be992f97fb8a3a07d1bf73caca":[12,0,213,4],
 "struct_ossia_variant_j_s_o_n_serializer.html#a692e1efc72915b946107a4ea09b263e5":[12,0,213,1],
-"struct_ossia_variant_j_s_o_n_serializer.html#ac11ba4c69caa67a0ac75153aae7f1cb3":[12,0,213,2],
-"struct_ossia_variant_j_s_o_n_serializer.html#ac99c0b03fd47896847d5d257c53e0f66":[12,0,213,0],
-"struct_out_value_message.html":[12,0,215]
+"struct_ossia_variant_j_s_o_n_serializer.html#ac11ba4c69caa67a0ac75153aae7f1cb3":[12,0,213,2]
 };

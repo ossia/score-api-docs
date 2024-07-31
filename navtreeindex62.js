@@ -1,5 +1,7 @@
 var NAVTREEINDEX62 =
 {
+"struct_curve_1_1_tool_palette___t.html":[12,0,9,23],
+"struct_curve_1_1_tool_palette___t.html#ac84fb4fe917326d565a8683e11f3204b":[12,0,9,23,0],
 "struct_curve_1_1_tool_palette___t.html#afd07b9093bf2d55d8937ea3cbf22ac1a":[12,0,9,23,1],
 "struct_curve_1_1point__array__executor.html":[12,0,9,54],
 "struct_curve_1_1point__array__executor.html#a017570d8c6a0ac5af784ddef14e2ba41":[12,0,9,54,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX62 =
 "struct_execution_1_1_handle_node_change.html#a852bce08f1ec33dcc9f625efebd2cbf9":[12,0,13,43,3],
 "struct_execution_1_1_handle_node_change.html#a9199173f10cd0fcd400c2e517a479e20":[12,0,13,43,4],
 "struct_execution_1_1_handle_node_change.html#aa2c1b517621ab95bfd51a49a45128dc3":[12,0,13,43,2],
-"struct_execution_1_1_metronome_sounds.html":[12,0,13,32],
-"struct_execution_1_1_metronome_sounds.html#a07abd69b8ba2bbc6f69b3670cd215671":[12,0,13,32,3],
-"struct_execution_1_1_metronome_sounds.html#a19e4e2630eec55f7eea9e8c7fa9647f7":[12,0,13,32,4]
+"struct_execution_1_1_metronome_sounds.html":[12,0,13,32]
 };

@@ -23,7 +23,6 @@ var namespace_process =
     [ "Cable", "class_process_1_1_cable.html", "class_process_1_1_cable" ],
     [ "CableData", "struct_process_1_1_cable_data.html", "struct_process_1_1_cable_data" ],
     [ "DefaultControlLayouts", "struct_process_1_1_default_control_layouts.html", null ],
-    [ "LineEditItem", "struct_process_1_1_line_edit_item.html", "struct_process_1_1_line_edit_item" ],
     [ "NodeItem", "class_process_1_1_node_item.html", "class_process_1_1_node_item" ],
     [ "PortItemLayout", "struct_process_1_1_port_item_layout.html", "struct_process_1_1_port_item_layout" ],
     [ "Port", "class_process_1_1_port.html", "class_process_1_1_port" ],

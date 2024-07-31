@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"class_factor_1_1_state.html#ae768654d3b25982c959dd93426388bdd":[12,0,15,1,2],
 "class_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i.html":[12,0,16,3],
 "class_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i.html#a1aba170a9126a8a37b0dc29e960f505c":[12,0,16,3,15],
 "class_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i.html#a23ba22540c2000f23e8821e016607fba":[12,0,16,3,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "class_gfx_1_1_invert_y_renderer.html#aea97886acfc0309b4bdc892c4a2d7918":[12,0,19,42,2],
 "class_gfx_1_1_invert_y_renderer.html#aed76b0f51d8197bf6409eb6c4d127675":[12,0,19,42,0],
 "class_gfx_1_1_kinect2_1_1_input_device.html":[12,0,19,2,11],
-"class_gfx_1_1_kinect2_1_1_input_device.html#a518e921582eda77827cbfa692370a4a5":[12,0,19,2,11,0],
-"class_gfx_1_1_kinect2_1_1_input_device.html#ac7bda7fb1f1777b5ff06d243f7815f60":[12,0,19,2,11,1]
+"class_gfx_1_1_kinect2_1_1_input_device.html#a518e921582eda77827cbfa692370a4a5":[12,0,19,2,11,0]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX55 =
 {
+"lib_2core_2settings_2_settings_8hpp_source.html":[13,0,1268],
+"lib_2core_2view_2_window_8hpp_source.html":[13,0,1499],
 "lib_2score_2model_2_component_8hpp_source.html":[13,0,206],
 "lib_2score_2plugins_2documentdelegate_2plugin_2_document_plugin_8hpp_source.html":[13,0,356],
 "lib_2score_2tools_2_metadata_8hpp_source.html":[13,0,755],
@@ -237,17 +239,15 @@ var NAVTREEINDEX55 =
 "namespace_local_tree.html#af8e90b6a05b65459d869e4f469707da7":[11,0,31,36],
 "namespace_plugin_loader.html":[11,0,43],
 "namespace_process.html":[11,0,45],
-"namespace_process.html#a05ea65d3a780c967368f0031eb778f03":[11,0,45,111],
-"namespace_process.html#a06d21f2e810788e3332e5be37f7ee9ca":[11,0,45,148],
-"namespace_process.html#a091e3079dd365daa1e97e99a8a9e45e6":[11,0,45,113],
-"namespace_process.html#a0cba7e0f10bc86f4346f5837676a5055":[11,0,45,107],
-"namespace_process.html#a0e928c98a5b13bf4bbed84de9a253445":[11,0,45,170],
-"namespace_process.html#a10c3dd45d859f43675c26dc892578458":[11,0,45,100],
-"namespace_process.html#a10c3dd45d859f43675c26dc892578458a13138481aabc5cc1d80fcdc1c5ebeb17":[11,0,45,100,2],
-"namespace_process.html#a10c3dd45d859f43675c26dc892578458a7990cdc87b13cd739976400c03ed0285":[11,0,45,100,0],
-"namespace_process.html#a10c3dd45d859f43675c26dc892578458accf730ca8727e5f7c70167b9d6e08b98":[11,0,45,100,1],
-"namespace_process.html#a10c3dd45d859f43675c26dc892578458ae2790828194675151d018300271612be":[11,0,45,100,3],
-"namespace_process.html#a10f7f65c008925084229001cdcbc8c2c":[11,0,45,147],
-"namespace_process.html#a1410ea4c1c3e482407168928fb7c7de0":[11,0,45,164],
-"namespace_process.html#a158a4df924498865abc3244a9d078422":[11,0,45,117]
+"namespace_process.html#a05ea65d3a780c967368f0031eb778f03":[11,0,45,110],
+"namespace_process.html#a06d21f2e810788e3332e5be37f7ee9ca":[11,0,45,147],
+"namespace_process.html#a091e3079dd365daa1e97e99a8a9e45e6":[11,0,45,112],
+"namespace_process.html#a0cba7e0f10bc86f4346f5837676a5055":[11,0,45,106],
+"namespace_process.html#a0e928c98a5b13bf4bbed84de9a253445":[11,0,45,169],
+"namespace_process.html#a10c3dd45d859f43675c26dc892578458":[11,0,45,99],
+"namespace_process.html#a10c3dd45d859f43675c26dc892578458a13138481aabc5cc1d80fcdc1c5ebeb17":[11,0,45,99,2],
+"namespace_process.html#a10c3dd45d859f43675c26dc892578458a7990cdc87b13cd739976400c03ed0285":[11,0,45,99,0],
+"namespace_process.html#a10c3dd45d859f43675c26dc892578458accf730ca8727e5f7c70167b9d6e08b98":[11,0,45,99,1],
+"namespace_process.html#a10c3dd45d859f43675c26dc892578458ae2790828194675151d018300271612be":[11,0,45,99,3],
+"namespace_process.html#a10f7f65c008925084229001cdcbc8c2c":[11,0,45,146]
 };

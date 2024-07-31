@@ -2621,8 +2621,8 @@ var hierarchy =
       [ "Scenario::ScenarioScene", "class_scenario_1_1_scenario_scene.html", null ]
     ] ],
     [ "QGraphicsTextItem", null, [
-      [ "Process::LineEditItem", "struct_process_1_1_line_edit_item.html", null ],
       [ "Scenario::LineTextItem", "class_scenario_1_1_line_text_item.html", null ],
+      [ "score::QGraphicsLineEdit", "structscore_1_1_q_graphics_line_edit.html", null ],
       [ "score::TextItem", "classscore_1_1_text_item.html", null ]
     ] ],
     [ "QGraphicsView", null, [

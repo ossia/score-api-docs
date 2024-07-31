@@ -1,15 +1,17 @@
 var NAVTREEINDEX60 =
 {
-"score__plugin__spline_8hpp_source.html":[13,0,1213],
-"score__plugin__transport_8hpp_source.html":[13,0,1215],
-"score__plugin__ui_8hpp_source.html":[13,0,1216],
+"score__plugin__spline_8cpp.html#a44d9a3d62e3bcec2170be558b21d23c4":[11,0,54,8],
+"score__plugin__spline_8cpp.html#a74f83c85f0581f7e7d2795e299593963":[11,0,54,7],
+"score__plugin__spline_8hpp_source.html":[13,0,1214],
+"score__plugin__transport_8hpp_source.html":[13,0,1216],
+"score__plugin__ui_8hpp_source.html":[13,0,1217],
 "score__plugin__vst3_8cpp.html#a986662460fc1901fc65ff1153459e989":[11,0,62,27],
-"score__plugin__vst3_8hpp_source.html":[13,0,1218],
+"score__plugin__vst3_8hpp_source.html":[13,0,1219],
 "score__plugin__vst_8cpp.html#a8d3a79a7a5e3275ad7154b05e480150f":[11,0,61,20],
-"score__plugin__vst_8hpp_source.html":[13,0,1217],
-"score__plugin__ysfx_8hpp_source.html":[13,0,1219],
-"scoreinterfaces_8hpp_source.html":[13,0,1221],
-"statemachines_8hpp_source.html":[13,0,1333],
+"score__plugin__vst_8hpp_source.html":[13,0,1218],
+"score__plugin__ysfx_8hpp_source.html":[13,0,1220],
+"scoreinterfaces_8hpp_source.html":[13,0,1222],
+"statemachines_8hpp_source.html":[13,0,1334],
 "struct_analysis_1_1_c_s_d.html":[12,0,0,1],
 "struct_analysis_1_1_c_s_d.html#a146d88957b4850918eb26b78a4007ceb":[12,0,0,1,2],
 "struct_analysis_1_1_c_s_d.html#ac0dee8721587047ed8b5b28498f854da":[12,0,0,1,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX60 =
 "struct_control_1_1_float_control.html#aecfabad68c166c4be0d4f7b3dc0b1dac":[12,0,6,2,7],
 "struct_control_1_1_float_control.html#afd010bc05550f355620ddcf2ce15e170":[12,0,6,2,4],
 "struct_control_1_1_float_display.html":[12,0,6,3],
-"struct_control_1_1_float_display.html#a0336d6ea1f78dd78a05d297f75988ac3":[12,0,6,3,0],
-"struct_control_1_1_float_display.html#a22f8d8cce3612e096f925c12f61b6235":[12,0,6,3,9],
-"struct_control_1_1_float_display.html#a3849fd36086cdd72009fedc21a96e653":[12,0,6,3,1]
+"struct_control_1_1_float_display.html#a0336d6ea1f78dd78a05d297f75988ac3":[12,0,6,3,0]
 };

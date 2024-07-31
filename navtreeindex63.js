@@ -1,5 +1,7 @@
 var NAVTREEINDEX63 =
 {
+"struct_execution_1_1_metronome_sounds.html#a07abd69b8ba2bbc6f69b3670cd215671":[12,0,13,32,3],
+"struct_execution_1_1_metronome_sounds.html#a19e4e2630eec55f7eea9e8c7fa9647f7":[12,0,13,32,4],
 "struct_execution_1_1_metronome_sounds.html#a5ffa466d6352007db327115a105a344f":[12,0,13,32,0],
 "struct_execution_1_1_metronome_sounds.html#a858ba4c5ce9d3eaa5b0b4931b9f154d4":[12,0,13,32,2],
 "struct_execution_1_1_metronome_sounds.html#ac91fc97a2a970c3703978d7e1b6fe930":[12,0,13,32,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX63 =
 "struct_gfx_1_1_geometry_inlet_factory.html#ab1b1ecd895e23858d7e5a7fd7ffd8830":[12,0,19,85,1],
 "struct_gfx_1_1_geometry_inlet_factory.html#ab215245cf80efe526dbf542af352c645":[12,0,19,85,2],
 "struct_gfx_1_1_geometry_inlet_factory.html#aff51538ddd2631f95d982c05fedc2d37":[12,0,19,85,0],
-"struct_gfx_1_1_geometry_outlet_factory.html":[12,0,19,86],
-"struct_gfx_1_1_geometry_outlet_factory.html#a37e764907dd31953179579fce18c14ec":[12,0,19,86,2],
-"struct_gfx_1_1_geometry_outlet_factory.html#a89cc8463803ea06498ea047471fab605":[12,0,19,86,0]
+"struct_gfx_1_1_geometry_outlet_factory.html":[12,0,19,86]
 };

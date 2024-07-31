@@ -1,7 +1,5 @@
 var NAVTREEINDEX77 =
 {
-"structavnd__tools_1_1_pattern_sweeper.html#a16e0668da9b118646ee7a376e965d5e9":[12,0,3,7,9],
-"structavnd__tools_1_1_pattern_sweeper.html#a1b638b6c74e70e5689d2c3c22e4d5761":[12,0,3,7,8],
 "structavnd__tools_1_1_pattern_sweeper.html#a423896247f8e52aae2a06c3d895905bf":[12,0,3,7,3],
 "structavnd__tools_1_1_pattern_sweeper.html#a4432a591e5e8a34d61d47f5ea881d8f3":[12,0,3,7,4],
 "structavnd__tools_1_1_pattern_sweeper.html#a533c1263959d8c9f58dd0f2640e65a27":[12,0,3,7,7],
@@ -178,8 +176,8 @@ var NAVTREEINDEX77 =
 "structmatches.html#a9cdfdf88a59b5835ded36443f21de74b":[12,0,159,0],
 "structoscr_1_1_apply_engine_control_change_to_u_i.html":[12,0,37,23],
 "structoscr_1_1_apply_engine_control_change_to_u_i.html#a79f1e959b5894ae5f3e8ed02ccd628bf":[12,0,37,23,5],
-"structoscr_1_1_apply_engine_control_change_to_u_i.html#a8a0c8400aa3aa4a0fa24c61d9f301b2c":[12,0,37,23,2],
 "structoscr_1_1_apply_engine_control_change_to_u_i.html#a8a0c8400aa3aa4a0fa24c61d9f301b2c":[12,0,37,23,3],
+"structoscr_1_1_apply_engine_control_change_to_u_i.html#a8a0c8400aa3aa4a0fa24c61d9f301b2c":[12,0,37,23,2],
 "structoscr_1_1_apply_engine_control_change_to_u_i.html#a9bf323896198792f8d962e109ecd9d5b":[12,0,37,23,1],
 "structoscr_1_1_apply_engine_control_change_to_u_i.html#ae1e927312fbd729d52dd0c1e9e71c7c6":[12,0,37,23,4],
 "structoscr_1_1_apply_engine_control_change_to_u_i.html#afc827e598638583fe639afac863ee58a":[12,0,37,23,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX77 =
 "structoscr_1_1_inlet_init_func.html#a26d3210108ad9780d409b1d83fea759b":[12,0,37,45,9],
 "structoscr_1_1_inlet_init_func.html#a349d975a2c56ea9c3b65418b2382f9c3":[12,0,37,45,7],
 "structoscr_1_1_inlet_init_func.html#a680438ae2d5107e10e3bc4f41a5df5bb":[12,0,37,45,5],
-"structoscr_1_1_inlet_init_func.html#a6ad026f6baaaa59c21ea3ea22de4d616":[12,0,37,45,6]
+"structoscr_1_1_inlet_init_func.html#a6ad026f6baaaa59c21ea3ea22de4d616":[12,0,37,45,6],
+"structoscr_1_1_inlet_init_func.html#abb4cabdfafbc76baa70e60ae3f998bea":[12,0,37,45,4],
+"structoscr_1_1_inlet_init_func.html#ace7897bd30ea620f3b89ed0d9d7f40e9":[12,0,37,45,1]
 };

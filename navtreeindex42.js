@@ -1,5 +1,6 @@
 var NAVTREEINDEX42 =
 {
+"class_selection_button.html#ab97d340bcb1f522432ae3d89bfdcc4be":[12,0,281,0],
 "class_show_rack_in_view_model_test.html":[12,0,283],
 "class_simple_hierarchical_scenario_component.html":[12,0,285],
 "class_simple_hierarchical_scenario_component.html#a3ac0623fa5ab76faaca91683869e57f2":[12,0,285,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX42 =
 "class_state_1_1_vec_domain_widget.html":[12,0,53,31],
 "class_state_1_1_vec_domain_widget.html#a00e8c06d96a643787521c896c7e3835b":[12,0,53,31,0],
 "class_state_1_1_vec_domain_widget.html#a79df4f94cbfd661a226d9d1db00f4c57":[12,0,53,31,2],
-"class_state_1_1_vec_domain_widget.html#ad704ce58f83774eb598c0653a2e8f03c":[12,0,53,31,4],
-"class_state_1_1_vec_domain_widget.html#ae18cf8bb9fecd148671f8629208d4919":[12,0,53,31,1]
+"class_state_1_1_vec_domain_widget.html#ad704ce58f83774eb598c0653a2e8f03c":[12,0,53,31,4]
 };
