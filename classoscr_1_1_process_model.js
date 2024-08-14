@@ -14,5 +14,5 @@ var classoscr_1_1_process_model =
     [ "TSerializer< DataStream, oscr::ProcessModel< Info > >", "classoscr_1_1_process_model.html#a22631870b22944d5e1d10780cdc1c1ff", null ],
     [ "TSerializer< JSONObject, oscr::ProcessModel< Info > >", "classoscr_1_1_process_model.html#a627746c0dade6394abda4d80ff4a2015", null ],
     [ "dynamic_ports", "classoscr_1_1_process_model.html#aa86fa52accf0e24710770233d157b20d", null ],
-    [ "object_storage_for_ports_callbacks", "classoscr_1_1_process_model.html#ae9d618c7661c8c2f8264b17ef7e5eafe", null ]
+    [ "object_storage_for_ports_callbacks", "classoscr_1_1_process_model.html#a2b107d996ca9fd2b65a52b0e58f38347", null ]
 ];

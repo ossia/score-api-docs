@@ -166,6 +166,7 @@ var namespaces_dup =
       [ "HasCustomUI< Nodes::MathAudioGenerator::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_audio_generator_1_1_node_01_4.html", null ],
       [ "HasCustomUI< Nodes::MathMapping::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_mapping_1_1_node_01_4.html", null ],
       [ "HasCustomUI< Nodes::MicroMapping::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_micro_mapping_1_1_node_01_4.html", null ],
+      [ "HasCustomUI< Nodes::ArrayGenerator::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_array_generator_1_1_node_01_4.html", null ],
       [ "HasCustomUI< Nodes::ArrayMapping::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_array_mapping_1_1_node_01_4.html", null ],
       [ "HasCustomUI< Nodes::MathGenerator::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_generator_1_1_node_01_4.html", null ],
       [ "Bargraph", "score-lib-process_2_control_2_widgets_8hpp.html#a9682dcc8dd50d285284bdb6f6385ef45", null ],
@@ -788,6 +789,9 @@ var namespaces_dup =
     [ "Nodes", null, [
       [ "Arpeggiator", null, [
         [ "Node", "struct_nodes_1_1_arpeggiator_1_1_node.html", "struct_nodes_1_1_arpeggiator_1_1_node" ]
+      ] ],
+      [ "ArrayGenerator", null, [
+        [ "Node", "struct_nodes_1_1_array_generator_1_1_node.html", "struct_nodes_1_1_array_generator_1_1_node" ]
       ] ],
       [ "ArrayMapping", null, [
         [ "Node", "struct_nodes_1_1_array_mapping_1_1_node.html", "struct_nodes_1_1_array_mapping_1_1_node" ]

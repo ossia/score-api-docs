@@ -51,6 +51,12 @@ var namespace_gfx =
       [ "Presenter", "class_gfx_1_1_settings_1_1_presenter.html", "class_gfx_1_1_settings_1_1_presenter" ],
       [ "View", "class_gfx_1_1_settings_1_1_view.html", "class_gfx_1_1_settings_1_1_view" ]
     ] ],
+    [ "Sh4lt", null, [
+      [ "InputDevice", "class_gfx_1_1_sh4lt_1_1_input_device.html", "class_gfx_1_1_sh4lt_1_1_input_device" ],
+      [ "InputStream", "class_gfx_1_1_sh4lt_1_1_input_stream.html", "class_gfx_1_1_sh4lt_1_1_input_stream" ],
+      [ "InputFactory", "class_gfx_1_1_sh4lt_1_1_input_factory.html", "class_gfx_1_1_sh4lt_1_1_input_factory" ],
+      [ "InputSettingsWidget", "class_gfx_1_1_sh4lt_1_1_input_settings_widget.html", "class_gfx_1_1_sh4lt_1_1_input_settings_widget" ]
+    ] ],
     [ "Shmdata", null, [
       [ "InputDevice", "class_gfx_1_1_shmdata_1_1_input_device.html", "class_gfx_1_1_shmdata_1_1_input_device" ],
       [ "InputStream", "class_gfx_1_1_shmdata_1_1_input_stream.html", "class_gfx_1_1_shmdata_1_1_input_stream" ],
@@ -146,6 +152,11 @@ var namespace_gfx =
     [ "LibavOutputSettings", "struct_gfx_1_1_libav_output_settings.html", "struct_gfx_1_1_libav_output_settings" ],
     [ "StreamOptions", "struct_gfx_1_1_stream_options.html", "struct_gfx_1_1_stream_options" ],
     [ "OutputStream", "struct_gfx_1_1_output_stream.html", "struct_gfx_1_1_output_stream" ],
+    [ "Sh4ltOutputDevice", "class_gfx_1_1_sh4lt_output_device.html", "class_gfx_1_1_sh4lt_output_device" ],
+    [ "Sh4ltOutputSettingsWidget", "class_gfx_1_1_sh4lt_output_settings_widget.html", "class_gfx_1_1_sh4lt_output_settings_widget" ],
+    [ "Sh4ltOutputNode", "struct_gfx_1_1_sh4lt_output_node.html", "struct_gfx_1_1_sh4lt_output_node" ],
+    [ "sh4lt_output_device", "class_gfx_1_1sh4lt__output__device.html", "class_gfx_1_1sh4lt__output__device" ],
+    [ "Sh4ltOutputProtocolFactory", "class_gfx_1_1_sh4lt_output_protocol_factory.html", "class_gfx_1_1_sh4lt_output_protocol_factory" ],
     [ "ShaderSource", "struct_gfx_1_1_shader_source.html", "struct_gfx_1_1_shader_source" ],
     [ "ProcessedProgram", "struct_gfx_1_1_processed_program.html", "struct_gfx_1_1_processed_program" ],
     [ "ProgramCache", "struct_gfx_1_1_program_cache.html", "struct_gfx_1_1_program_cache" ],

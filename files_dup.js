@@ -1279,6 +1279,8 @@ var files_dup =
     [ "SettingsPresenter.hpp", "_settings_presenter_8hpp_source.html", null ],
     [ "SettingsView.hpp", "_settings_view_8hpp_source.html", null ],
     [ "SetTrigger.hpp", "_set_trigger_8hpp_source.html", null ],
+    [ "Sh4ltInputDevice.hpp", "_sh4lt_input_device_8hpp_source.html", null ],
+    [ "Sh4ltOutputDevice.hpp", "_sh4lt_output_device_8hpp_source.html", null ],
     [ "ShaderCache.hpp", "_shader_cache_8hpp_source.html", null ],
     [ "ShaderProgram.hpp", "_shader_program_8hpp_source.html", null ],
     [ "SharedInputSettings.hpp", "_shared_input_settings_8hpp_source.html", null ],

@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('_joystick_device_8hpp_source.html','')
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span>Protocols</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">struct </span>JoystickSpecificSettings;</div>
 <div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_protocols_1_1_joystick_device.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_protocols_1_1_joystick_device.html">JoystickDevice</a> final : <span class="keyword">public</span> <a class="code" href="class_device_1_1_owning_device_interface.html">Device::OwningDeviceInterface</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  W_OBJECT(<a class="code" href="class_protocols_1_1_joystick_device.html">JoystickDevice</a>)</div>
@@ -117,12 +117,15 @@ $(document).ready(function(){initNavTree('_joystick_device_8hpp_source.html','')
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordtype">void</span> disconnect() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">const</span> ossia::net::network_context_ptr&amp; m_ctx;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordtype">void</span> do_reconnect(<a class="code" href="struct_protocols_1_1_joystick_specific_settings.html">JoystickSpecificSettings</a>&amp; stgs);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">const</span> ossia::net::network_context_ptr&amp; m_ctx;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
 <div class="ttc" id="aclass_device_1_1_owning_device_interface_html"><div class="ttname"><a href="class_device_1_1_owning_device_interface.html">Device::OwningDeviceInterface</a></div><div class="ttdef"><b>Definition:</b> DeviceInterface.hpp:184</div></div>
 <div class="ttc" id="aclass_protocols_1_1_joystick_device_html"><div class="ttname"><a href="class_protocols_1_1_joystick_device.html">Protocols::JoystickDevice</a></div><div class="ttdef"><b>Definition:</b> JoystickDevice.hpp:8</div></div>
 <div class="ttc" id="astruct_device_1_1_device_settings_html"><div class="ttname"><a href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a></div><div class="ttdef"><b>Definition:</b> DeviceSettings.hpp:16</div></div>
+<div class="ttc" id="astruct_protocols_1_1_joystick_specific_settings_html"><div class="ttname"><a href="struct_protocols_1_1_joystick_specific_settings.html">Protocols::JoystickSpecificSettings</a></div><div class="ttdef"><b>Definition:</b> JoystickSpecificSettings.hpp:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

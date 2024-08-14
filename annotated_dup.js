@@ -127,6 +127,7 @@ var annotated_dup =
       [ "HasCustomUI< Nodes::MathAudioGenerator::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_audio_generator_1_1_node_01_4.html", null ],
       [ "HasCustomUI< Nodes::MathMapping::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_mapping_1_1_node_01_4.html", null ],
       [ "HasCustomUI< Nodes::MicroMapping::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_micro_mapping_1_1_node_01_4.html", null ],
+      [ "HasCustomUI< Nodes::ArrayGenerator::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_array_generator_1_1_node_01_4.html", null ],
       [ "HasCustomUI< Nodes::ArrayMapping::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_array_mapping_1_1_node_01_4.html", null ],
       [ "HasCustomUI< Nodes::MathGenerator::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_generator_1_1_node_01_4.html", null ]
     ] ],
@@ -496,6 +497,12 @@ var annotated_dup =
         [ "Presenter", "class_gfx_1_1_settings_1_1_presenter.html", "class_gfx_1_1_settings_1_1_presenter" ],
         [ "View", "class_gfx_1_1_settings_1_1_view.html", "class_gfx_1_1_settings_1_1_view" ]
       ] ],
+      [ "Sh4lt", null, [
+        [ "InputDevice", "class_gfx_1_1_sh4lt_1_1_input_device.html", "class_gfx_1_1_sh4lt_1_1_input_device" ],
+        [ "InputStream", "class_gfx_1_1_sh4lt_1_1_input_stream.html", "class_gfx_1_1_sh4lt_1_1_input_stream" ],
+        [ "InputFactory", "class_gfx_1_1_sh4lt_1_1_input_factory.html", "class_gfx_1_1_sh4lt_1_1_input_factory" ],
+        [ "InputSettingsWidget", "class_gfx_1_1_sh4lt_1_1_input_settings_widget.html", "class_gfx_1_1_sh4lt_1_1_input_settings_widget" ]
+      ] ],
       [ "Shmdata", null, [
         [ "InputDevice", "class_gfx_1_1_shmdata_1_1_input_device.html", "class_gfx_1_1_shmdata_1_1_input_device" ],
         [ "InputStream", "class_gfx_1_1_shmdata_1_1_input_stream.html", "class_gfx_1_1_shmdata_1_1_input_stream" ],
@@ -583,6 +590,11 @@ var annotated_dup =
       [ "LibavOutputSettings", "struct_gfx_1_1_libav_output_settings.html", "struct_gfx_1_1_libav_output_settings" ],
       [ "StreamOptions", "struct_gfx_1_1_stream_options.html", "struct_gfx_1_1_stream_options" ],
       [ "OutputStream", "struct_gfx_1_1_output_stream.html", "struct_gfx_1_1_output_stream" ],
+      [ "Sh4ltOutputDevice", "class_gfx_1_1_sh4lt_output_device.html", "class_gfx_1_1_sh4lt_output_device" ],
+      [ "Sh4ltOutputSettingsWidget", "class_gfx_1_1_sh4lt_output_settings_widget.html", "class_gfx_1_1_sh4lt_output_settings_widget" ],
+      [ "Sh4ltOutputNode", "struct_gfx_1_1_sh4lt_output_node.html", "struct_gfx_1_1_sh4lt_output_node" ],
+      [ "sh4lt_output_device", "class_gfx_1_1sh4lt__output__device.html", "class_gfx_1_1sh4lt__output__device" ],
+      [ "Sh4ltOutputProtocolFactory", "class_gfx_1_1_sh4lt_output_protocol_factory.html", "class_gfx_1_1_sh4lt_output_protocol_factory" ],
       [ "ShaderSource", "struct_gfx_1_1_shader_source.html", "struct_gfx_1_1_shader_source" ],
       [ "ProcessedProgram", "struct_gfx_1_1_processed_program.html", "struct_gfx_1_1_processed_program" ],
       [ "ProgramCache", "struct_gfx_1_1_program_cache.html", "struct_gfx_1_1_program_cache" ],
@@ -924,6 +936,9 @@ var annotated_dup =
       [ "Arpeggiator", null, [
         [ "Node", "struct_nodes_1_1_arpeggiator_1_1_node.html", "struct_nodes_1_1_arpeggiator_1_1_node" ]
       ] ],
+      [ "ArrayGenerator", null, [
+        [ "Node", "struct_nodes_1_1_array_generator_1_1_node.html", "struct_nodes_1_1_array_generator_1_1_node" ]
+      ] ],
       [ "ArrayMapping", null, [
         [ "Node", "struct_nodes_1_1_array_mapping_1_1_node.html", "struct_nodes_1_1_array_mapping_1_1_node" ]
       ] ],
@@ -1053,11 +1068,10 @@ var annotated_dup =
       [ "ApplyEngineControlChangeToUI", "structoscr_1_1_apply_engine_control_change_to_u_i.html", "structoscr_1_1_apply_engine_control_change_to_u_i" ],
       [ "setup_Impl1_Out", "structoscr_1_1setup___impl1___out.html", "structoscr_1_1setup___impl1___out" ],
       [ "ExecutorGuiUpdate", "structoscr_1_1_executor_gui_update.html", "structoscr_1_1_executor_gui_update" ],
-      [ "type_if", "structoscr_1_1type__if.html", null ],
-      [ "type_if< T, false >", "structoscr_1_1type__if_3_01_t_00_01false_01_4.html", "structoscr_1_1type__if_3_01_t_00_01false_01_4" ],
-      [ "type_if< T, true >", "structoscr_1_1type__if_3_01_t_00_01true_01_4.html", "structoscr_1_1type__if_3_01_t_00_01true_01_4" ],
       [ "CustomNodeProcess", "classoscr_1_1_custom_node_process.html", null ],
       [ "Executor", "classoscr_1_1_executor.html", "classoscr_1_1_executor" ],
+      [ "pmf_member_type", "structoscr_1_1pmf__member__type.html", null ],
+      [ "pmf_member_type< V T::* >", "structoscr_1_1pmf__member__type_3_01_v_01_t_1_1_5_01_4.html", "structoscr_1_1pmf__member__type_3_01_v_01_t_1_1_5_01_4" ],
       [ "LayoutBuilder", "structoscr_1_1_layout_builder.html", "structoscr_1_1_layout_builder" ],
       [ "LayerFactory", "classoscr_1_1_layer_factory.html", "classoscr_1_1_layer_factory" ],
       [ "Serializer", "structoscr_1_1_serializer.html", "structoscr_1_1_serializer" ],
