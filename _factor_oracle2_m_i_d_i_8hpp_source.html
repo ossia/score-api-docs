@@ -364,75 +364,76 @@ $(document).ready(function(){initNavTree('_factor_oracle2_m_i_d_i_8hpp_source.ht
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> prettyName = <span class="stringliteral">&quot;New Factor Oracle MIDI&quot;</span>;</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> objectKey = <span class="stringliteral">&quot;New Factor Oracle MIDI&quot;</span>;</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> category = <span class="stringliteral">&quot;Control/Impro&quot;</span>;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> author = <span class="stringliteral">&quot;Maria Paula Carrero Rivas&quot;</span>;</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> kind = Process::ProcessCategory::Mapping;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> description = <span class="stringliteral">&quot;Factor Oracle algorithm .&quot;</span>; <span class="comment">// TODO cite</span></div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> tags = std::array&lt;const char*, 0&gt;{};</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> uuid_constexpr <span class="keyword">auto</span> uuid</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        = make_uuid(<span class="stringliteral">&quot;C87B5326-56C2-4489-8E08-AA9E1EF27359&quot;</span>);</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> controls</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        = tuplet::make_tuple(<a class="code" href="struct_control_1_1_int_slider.html">Control::IntSlider</a>{<span class="stringliteral">&quot;Sequence length&quot;</span>, 1, 64, 8});</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr midi_in midi_ins[]{<span class="stringliteral">&quot;input_midi&quot;</span>};</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr midi_out midi_outs[]{<span class="stringliteral">&quot;output_midi&quot;</span>};</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr value_in value_ins[]{<span class="stringliteral">&quot;regen&quot;</span>, <span class="stringliteral">&quot;bang&quot;</span>};</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  };</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160; </div>
-<div class="line"><a name="l00352"></a><span class="lineno"><a class="line" href="struct_nodes_1_1_factor_oracle2_m_i_d_i_1_1_node_1_1_state.html">  352</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="namespace_state.html">State</a></div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;  {</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <a class="code" href="class_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i.html">::FactorOracle2MIDI::FactorOracle2MIDI&lt;int&gt;</a> oracle;</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="keywordtype">int</span> i = 0;</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    debug_vector_t&lt;libremidi::midi_bytes&gt; sequence;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    debug_vector_t&lt;libremidi::midi_bytes&gt; midi_bytes;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    std::size_t sequence_idx{};</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;  };</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  <span class="keyword">using</span> control_policy = ossia::safe_nodes::last_tick;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;  run(<span class="keyword">const</span> ossia::midi_port&amp; input_midi, <span class="keyword">const</span> ossia::value_port&amp; regen,</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;      <span class="keyword">const</span> ossia::value_port&amp; bangs, <span class="keywordtype">int</span> seq_len, ossia::midi_port&amp; output_midi,</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;      ossia::token_request, ossia::exec_state_facade, <a class="code" href="namespace_state.html">State</a>&amp; <span class="keyword">self</span>)</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;  {</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160; </div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="comment">// Entrées sont dans p1</span></div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> val : input_midi.messages)</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    {</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;      <a class="code" href="class_factor_oracle2_m_i_d_i_1_1_notes.html">::FactorOracle2MIDI::Notes</a> temp;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;      temp.pitch = val.bytes[1];</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;      <span class="keyword">self</span>.oracle.input_values.push_back(val.bytes[1]);</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;      <span class="keyword">self</span>.oracle.AddLetter(<span class="keyword">self</span>.oracle.current_state, <span class="keyword">self</span>.oracle.input_values);</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;      <span class="keyword">self</span>.oracle.current_state = <span class="keyword">self</span>.oracle.current_state + 1;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    }</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <span class="keywordflow">if</span>(!regen.get_data().empty())</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    {</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;      <span class="keywordflow">if</span>(!<span class="keyword">self</span>.oracle.input_values.empty())</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;      {</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        std::vector&lt;int&gt; temp_vec = <span class="keyword">self</span>.oracle.CallGenerate(seq_len, 0.6);</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="comment">//self.sequence = self.oracle.CallGenerate(seq_len, 0.6);</span></div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        <span class="keyword">self</span>.midi_bytes.push_back({144, 0, 40});</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        <span class="keyword">self</span>.midi_bytes[seq_len][1] = temp_vec[seq_len];</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        <span class="keyword">self</span>.sequence = <span class="keyword">self</span>.midi_bytes;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;      }</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    }</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160; </div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="keywordflow">if</span>(!<span class="keyword">self</span>.sequence.empty() &amp;&amp; !<span class="keyword">self</span>.oracle.input_values.empty())</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    {</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; bang : bangs.get_data())</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;      {</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        <span class="keyword">self</span>.sequence_idx = ossia::clamp&lt;int64_t&gt;(</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;            (int64_t)<span class="keyword">self</span>.sequence_idx, 0, (int64_t)<span class="keyword">self</span>.sequence.size() - 1);</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        libremidi::message tmp;</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        tmp.bytes = <span class="keyword">self</span>.sequence[<span class="keyword">self</span>.sequence_idx];</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        tmp.timestamp = bang.timestamp;</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        output_midi.messages.push_back(tmp);</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        <span class="keyword">self</span>.sequence_idx = (<span class="keyword">self</span>.sequence_idx + 1) % <span class="keyword">self</span>.sequence.size();</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;      }</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    }</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;  }</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;};</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="preprocessor">#undef debug_vector_t</span></div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;}</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> manual_url = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> author = <span class="stringliteral">&quot;Maria Paula Carrero Rivas&quot;</span>;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> kind = Process::ProcessCategory::Mapping;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> description = <span class="stringliteral">&quot;Factor Oracle algorithm .&quot;</span>; <span class="comment">// TODO cite</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> tags = std::array&lt;const char*, 0&gt;{};</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> uuid_constexpr <span class="keyword">auto</span> uuid</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        = make_uuid(<span class="stringliteral">&quot;C87B5326-56C2-4489-8E08-AA9E1EF27359&quot;</span>);</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160; </div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> controls</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        = tuplet::make_tuple(<a class="code" href="struct_control_1_1_int_slider.html">Control::IntSlider</a>{<span class="stringliteral">&quot;Sequence length&quot;</span>, 1, 64, 8});</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr midi_in midi_ins[]{<span class="stringliteral">&quot;input_midi&quot;</span>};</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr midi_out midi_outs[]{<span class="stringliteral">&quot;output_midi&quot;</span>};</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr value_in value_ins[]{<span class="stringliteral">&quot;regen&quot;</span>, <span class="stringliteral">&quot;bang&quot;</span>};</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;  };</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160; </div>
+<div class="line"><a name="l00353"></a><span class="lineno"><a class="line" href="struct_nodes_1_1_factor_oracle2_m_i_d_i_1_1_node_1_1_state.html">  353</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="namespace_state.html">State</a></div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;  {</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <a class="code" href="class_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i.html">::FactorOracle2MIDI::FactorOracle2MIDI&lt;int&gt;</a> oracle;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="keywordtype">int</span> i = 0;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    debug_vector_t&lt;libremidi::midi_bytes&gt; sequence;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    debug_vector_t&lt;libremidi::midi_bytes&gt; midi_bytes;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    std::size_t sequence_idx{};</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  };</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160; </div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;  <span class="keyword">using</span> control_policy = ossia::safe_nodes::last_tick;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;  run(<span class="keyword">const</span> ossia::midi_port&amp; input_midi, <span class="keyword">const</span> ossia::value_port&amp; regen,</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;      <span class="keyword">const</span> ossia::value_port&amp; bangs, <span class="keywordtype">int</span> seq_len, ossia::midi_port&amp; output_midi,</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;      ossia::token_request, ossia::exec_state_facade, <a class="code" href="namespace_state.html">State</a>&amp; <span class="keyword">self</span>)</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;  {</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160; </div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="comment">// Entrées sont dans p1</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> val : input_midi.messages)</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    {</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;      <a class="code" href="class_factor_oracle2_m_i_d_i_1_1_notes.html">::FactorOracle2MIDI::Notes</a> temp;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;      temp.pitch = val.bytes[1];</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;      <span class="keyword">self</span>.oracle.input_values.push_back(val.bytes[1]);</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;      <span class="keyword">self</span>.oracle.AddLetter(<span class="keyword">self</span>.oracle.current_state, <span class="keyword">self</span>.oracle.input_values);</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;      <span class="keyword">self</span>.oracle.current_state = <span class="keyword">self</span>.oracle.current_state + 1;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    }</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160; </div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <span class="keywordflow">if</span>(!regen.get_data().empty())</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    {</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;      <span class="keywordflow">if</span>(!<span class="keyword">self</span>.oracle.input_values.empty())</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;      {</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        std::vector&lt;int&gt; temp_vec = <span class="keyword">self</span>.oracle.CallGenerate(seq_len, 0.6);</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        <span class="comment">//self.sequence = self.oracle.CallGenerate(seq_len, 0.6);</span></div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        <span class="keyword">self</span>.midi_bytes.push_back({144, 0, 40});</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        <span class="keyword">self</span>.midi_bytes[seq_len][1] = temp_vec[seq_len];</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        <span class="keyword">self</span>.sequence = <span class="keyword">self</span>.midi_bytes;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;      }</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    }</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160; </div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <span class="keywordflow">if</span>(!<span class="keyword">self</span>.sequence.empty() &amp;&amp; !<span class="keyword">self</span>.oracle.input_values.empty())</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    {</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; bang : bangs.get_data())</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;      {</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        <span class="keyword">self</span>.sequence_idx = ossia::clamp&lt;int64_t&gt;(</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;            (int64_t)<span class="keyword">self</span>.sequence_idx, 0, (int64_t)<span class="keyword">self</span>.sequence.size() - 1);</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        libremidi::message tmp;</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        tmp.bytes = <span class="keyword">self</span>.sequence[<span class="keyword">self</span>.sequence_idx];</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        tmp.timestamp = bang.timestamp;</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        output_midi.messages.push_back(tmp);</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        <span class="keyword">self</span>.sequence_idx = (<span class="keyword">self</span>.sequence_idx + 1) % <span class="keyword">self</span>.sequence.size();</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;      }</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    }</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;  }</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;};</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="preprocessor">#undef debug_vector_t</span></div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;}</div>
 <div class="ttc" id="aclass_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i_html"><div class="ttname"><a href="class_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i.html">FactorOracle2MIDI::FactorOracle2MIDI</a></div><div class="ttdef"><b>Definition:</b> FactorOracle2MIDI.hpp:93</div></div>
 <div class="ttc" id="aclass_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i_html_a1aba170a9126a8a37b0dc29e960f505c"><div class="ttname"><a href="class_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i.html#a1aba170a9126a8a37b0dc29e960f505c">FactorOracle2MIDI::FactorOracle2MIDI::states_</a></div><div class="ttdeci">std::vector&lt; State&lt; T &gt; &gt; states_</div><div class="ttdef"><b>Definition:</b> FactorOracle2MIDI.hpp:97</div></div>
 <div class="ttc" id="aclass_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i_html_a23ba22540c2000f23e8821e016607fba"><div class="ttname"><a href="class_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i.html#a23ba22540c2000f23e8821e016607fba">FactorOracle2MIDI::FactorOracle2MIDI::FindBetter</a></div><div class="ttdeci">int FindBetter(int i, T alpha, std::vector&lt; T &gt; word)</div><div class="ttdef"><b>Definition:</b> FactorOracle2MIDI.hpp:211</div></div>

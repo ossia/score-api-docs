@@ -23,7 +23,7 @@ var searchData=
   ['recorddata_4684',['RecordData',['../struct_recording_1_1_record_data.html',1,'Recording']]],
   ['recordedmessage_4685',['RecordedMessage',['../struct_recording_1_1_recorded_message.html',1,'Recording']]],
   ['recorder_4686',['Recorder',['../class_recording_1_1_recorder.html',1,'Recording']]],
-  ['recorder_5fthread_4687',['recorder_thread',['../structavnd__tools_1_1_audio_recorder_1_1recorder__thread.html',1,'avnd_tools::AudioRecorder::recorder_thread'],['../structavnd__tools_1_1_device_recorder_1_1recorder__thread.html',1,'avnd_tools::DeviceRecorder::recorder_thread']]],
+  ['recorder_5fthread_4687',['recorder_thread',['../structavnd__tools_1_1_audio_recorder_1_1recorder__thread.html',1,'avnd_tools::AudioRecorder']]],
   ['recorderfactory_4688',['RecorderFactory',['../class_recording_1_1_recorder_factory.html',1,'Recording']]],
   ['recordprovider_4689',['RecordProvider',['../struct_recording_1_1_record_provider.html',1,'Recording']]],
   ['rectitem_4690',['RectItem',['../classscore_1_1_rect_item.html',1,'score']]],

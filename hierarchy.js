@@ -3461,7 +3461,6 @@ var hierarchy =
     [ "Recording::RecordedMessage", "struct_recording_1_1_recorded_message.html", null ],
     [ "Recording::Recorder", "class_recording_1_1_recorder.html", null ],
     [ "avnd_tools::AudioRecorder::recorder_thread", "structavnd__tools_1_1_audio_recorder_1_1recorder__thread.html", null ],
-    [ "avnd_tools::DeviceRecorder::recorder_thread", "structavnd__tools_1_1_device_recorder_1_1recorder__thread.html", null ],
     [ "Recording::RecordProvider", "struct_recording_1_1_record_provider.html", [
       [ "Recording::AutomationRecorder", "class_recording_1_1_automation_recorder.html", null ],
       [ "Recording::MessageRecorder", "class_recording_1_1_message_recorder.html", null ]

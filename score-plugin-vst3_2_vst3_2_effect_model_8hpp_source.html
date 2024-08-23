@@ -125,106 +125,107 @@ $(document).ready(function(){initNavTree('score-plugin-vst3_2_vst3_2_effect_mode
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    , <a class="code" href="classvst3_1_1_model.html">vst3::Model</a>, <span class="stringliteral">&quot;4cc30435-3237-4e94-a79e-1c2bd6b724a1&quot;</span>, <span class="stringliteral">&quot;VST 3&quot;</span>, <span class="stringliteral">&quot;VST 3&quot;</span>,</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    Process::ProcessCategory::Other, <span class="stringliteral">&quot;Plugins&quot;</span>, <span class="stringliteral">&quot;VST 3 plug-in&quot;</span>,</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="stringliteral">&quot;VST is a trademark of Steinberg Media Technologies GmbH&quot;</span>, {}, {}, {},</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    Process::ProcessFlags::ExternalEffect)</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;UUID_METADATA(</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    , <a class="code" href="class_process_1_1_port.html">Process::Port</a>, <a class="code" href="classvst3_1_1_control_inlet.html">vst3::ControlInlet</a>, <span class="stringliteral">&quot;82b24dd8-fbc0-43a6-adfa-7bb29ca48660&quot;</span>)</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;DESCRIPTION_METADATA(, vst3::Model, &quot;VST&quot;)</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;namespace vst3</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">class </span>CreateVSTControl;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">class </span><a class="code" href="class_control_inlet.html">ControlInlet</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">struct </span>PortCreationVisitor;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classvst3_1_1_model.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvst3_1_1_model.html">Model</a> final : <span class="keyword">public</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  W_OBJECT(<a class="code" href="classvst3_1_1_model.html">Model</a>)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  SCORE_SERIALIZE_FRIENDS</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span>vst3::CreateVSTControl;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  PROCESS_METADATA_IMPL(<a class="code" href="classvst3_1_1_model.html">Model</a>)</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="classvst3_1_1_model.html">Model</a>(</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <a class="code" href="struct_time_val.html">TimeVal</a> t, <span class="keyword">const</span> QString&amp; name, <span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Process::ProcessModel&gt;</a>&amp;, QObject* parent);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  ~<a class="code" href="classvst3_1_1_model.html">Model</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Impl&gt;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="classvst3_1_1_model.html">Model</a>(Impl&amp; vis, QObject* parent)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      : ProcessModel{vis, parent}</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    init();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    vis.writeTo(*<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="classvst3_1_1_control_inlet.html">ControlInlet</a>* getControl(<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp; p) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  QString effect() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  QString prettyName() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">bool</span> hasExternalUI() <span class="keyword">const</span> noexcept;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="structvst3_1_1_plugin.html">Plugin</a> fx{};</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  ossia::hash_map&lt;Steinberg::Vst::ParamID, ControlInlet*&gt; controls;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> removeControl(<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp;);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> removeControl(Steinberg::Vst::ParamID fxnum);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">void</span> addControlFromEditor(Steinberg::Vst::ParamID <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">void</span> on_addControl(<span class="keyword">const</span> Steinberg::Vst::ParameterInfo&amp; v);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> on_addControl_impl(<a class="code" href="classvst3_1_1_control_inlet.html">ControlInlet</a>* inl);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> initControl(<a class="code" href="classvst3_1_1_control_inlet.html">ControlInlet</a>* inl);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">void</span> reloadControls();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  Steinberg::tresult restartComponent(int32_t flags);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">void</span> loadPreset(<span class="keyword">const</span> <a class="code" href="struct_process_1_1_preset.html">Process::Preset</a>&amp; preset) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="struct_process_1_1_preset.html">Process::Preset</a> savePreset() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  std::vector&lt;Process::Preset&gt; builtinPresets() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">void</span> init();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">void</span> create();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">void</span> load();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">void</span> mapAllControls(<span class="keywordtype">int</span> numParams);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  QByteArray readProcessorState() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  QByteArray readControllerState() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">void</span> writeState();</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  QString m_vstPath;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  VST3::UID m_uid{};</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  QByteArray m_savedProcessorState;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  QByteArray m_savedControllerState;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  ossia::hash_map&lt;Steinberg::Vst::ParamID, int32_t&gt; m_paramToIndex;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">void</span> closePlugin();</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">void</span> initFx();</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structvst3_1_1_port_creation_visitor.html">PortCreationVisitor</a>;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;};</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_process.html">Process</a></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;QString EffectProcessFactory_T&lt;vst3::Model&gt;::customConstructionData() const noexcept;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;template &lt;&gt;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<a class="code" href="namespace_process.html">Process</a>::Descriptor</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;EffectProcessFactory_T&lt;vst3::Model&gt;::descriptor(QString d) const noexcept;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;namespace vst3</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;{</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keyword">using</span> VSTEffectFactory = <a class="code" href="class_process_1_1_effect_process_factory___t.html">Process::EffectProcessFactory_T&lt;Model&gt;</a>;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    QUrl(<span class="stringliteral">&quot;https://ossia.io/score-docs/processes/audio-plugins.html#common-formats-vst-vst3-lv2-jsfx&quot;</span>),</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    Process::ProcessFlags::ExternalEffect)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;UUID_METADATA(</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    , <a class="code" href="class_process_1_1_port.html">Process::Port</a>, <a class="code" href="classvst3_1_1_control_inlet.html">vst3::ControlInlet</a>, <span class="stringliteral">&quot;82b24dd8-fbc0-43a6-adfa-7bb29ca48660&quot;</span>)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;DESCRIPTION_METADATA(, vst3::Model, &quot;VST&quot;)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;namespace vst3</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">class </span>CreateVSTControl;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">class </span><a class="code" href="class_control_inlet.html">ControlInlet</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">struct </span>PortCreationVisitor;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classvst3_1_1_model.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvst3_1_1_model.html">Model</a> final : <span class="keyword">public</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  W_OBJECT(<a class="code" href="classvst3_1_1_model.html">Model</a>)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  SCORE_SERIALIZE_FRIENDS</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span>vst3::CreateVSTControl;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  PROCESS_METADATA_IMPL(<a class="code" href="classvst3_1_1_model.html">Model</a>)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="classvst3_1_1_model.html">Model</a>(</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <a class="code" href="struct_time_val.html">TimeVal</a> t, <span class="keyword">const</span> QString&amp; name, <span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Process::ProcessModel&gt;</a>&amp;, QObject* parent);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  ~<a class="code" href="classvst3_1_1_model.html">Model</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Impl&gt;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="classvst3_1_1_model.html">Model</a>(Impl&amp; vis, QObject* parent)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      : ProcessModel{vis, parent}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    init();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    vis.writeTo(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="classvst3_1_1_control_inlet.html">ControlInlet</a>* getControl(<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp; p) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  QString effect() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  QString prettyName() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">bool</span> hasExternalUI() <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="structvst3_1_1_plugin.html">Plugin</a> fx{};</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  ossia::hash_map&lt;Steinberg::Vst::ParamID, ControlInlet*&gt; controls;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> removeControl(<span class="keyword">const</span> <a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp;);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span> removeControl(Steinberg::Vst::ParamID fxnum);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">void</span> addControlFromEditor(Steinberg::Vst::ParamID <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> on_addControl(<span class="keyword">const</span> Steinberg::Vst::ParameterInfo&amp; v);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> on_addControl_impl(<a class="code" href="classvst3_1_1_control_inlet.html">ControlInlet</a>* inl);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span> initControl(<a class="code" href="classvst3_1_1_control_inlet.html">ControlInlet</a>* inl);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> reloadControls();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  Steinberg::tresult restartComponent(int32_t flags);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">void</span> loadPreset(<span class="keyword">const</span> <a class="code" href="struct_process_1_1_preset.html">Process::Preset</a>&amp; preset) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <a class="code" href="struct_process_1_1_preset.html">Process::Preset</a> savePreset() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  std::vector&lt;Process::Preset&gt; builtinPresets() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">void</span> init();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">void</span> create();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">void</span> load();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">void</span> mapAllControls(<span class="keywordtype">int</span> numParams);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  QByteArray readProcessorState() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  QByteArray readControllerState() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">void</span> writeState();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  QString m_vstPath;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  VST3::UID m_uid{};</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  QByteArray m_savedProcessorState;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  QByteArray m_savedControllerState;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  ossia::hash_map&lt;Steinberg::Vst::ParamID, int32_t&gt; m_paramToIndex;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">void</span> closePlugin();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">void</span> initFx();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="structvst3_1_1_port_creation_visitor.html">PortCreationVisitor</a>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_process.html">Process</a></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;{</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;QString EffectProcessFactory_T&lt;vst3::Model&gt;::customConstructionData() const noexcept;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;template &lt;&gt;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<a class="code" href="namespace_process.html">Process</a>::Descriptor</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;EffectProcessFactory_T&lt;vst3::Model&gt;::descriptor(QString d) const noexcept;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;namespace vst3</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;{</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">using</span> VSTEffectFactory = <a class="code" href="class_process_1_1_effect_process_factory___t.html">Process::EffectProcessFactory_T&lt;Model&gt;</a>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
 <div class="ttc" id="aclass_control_inlet_html"><div class="ttname"><a href="class_control_inlet.html">ControlInlet</a></div><div class="ttdef"><b>Definition:</b> QmlObjects.hpp:114</div></div>
 <div class="ttc" id="aclass_process_1_1_effect_process_factory___t_html"><div class="ttname"><a href="class_process_1_1_effect_process_factory___t.html">Process::EffectProcessFactory_T</a></div><div class="ttdef"><b>Definition:</b> EffectFactory.hpp:14</div></div>
 <div class="ttc" id="aclass_process_1_1_port_html"><div class="ttname"><a href="class_process_1_1_port.html">Process::Port</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Dataflow/Port.hpp:102</div></div>
 <div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Process.hpp:61</div></div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition:</b> Identifier.hpp:57</div></div>
 <div class="ttc" id="aclassvst3_1_1_control_inlet_html"><div class="ttname"><a href="classvst3_1_1_control_inlet.html">vst3::ControlInlet</a></div><div class="ttdef"><b>Definition:</b> /Vst3/Control.hpp:15</div></div>
-<div class="ttc" id="aclassvst3_1_1_model_html"><div class="ttname"><a href="classvst3_1_1_model.html">vst3::Model</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst3/Vst3/EffectModel.hpp:40</div></div>
+<div class="ttc" id="aclassvst3_1_1_model_html"><div class="ttname"><a href="classvst3_1_1_model.html">vst3::Model</a></div><div class="ttdef"><b>Definition:</b> score-plugin-vst3/Vst3/EffectModel.hpp:41</div></div>
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1324</div></div>
 <div class="ttc" id="astruct_process_1_1_preset_html"><div class="ttname"><a href="struct_process_1_1_preset.html">Process::Preset</a></div><div class="ttdef"><b>Definition:</b> Preset.hpp:32</div></div>
 <div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition:</b> TimeValue.hpp:21</div></div>

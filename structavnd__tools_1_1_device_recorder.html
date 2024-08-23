@@ -129,8 +129,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structavnd__tools_1_1_device_recorder_1_1process__message.html">process_message</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structavnd__tools_1_1_device_recorder_1_1recorder__thread.html">recorder_thread</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structavnd__tools_1_1_device_recorder_1_1reset__message.html">reset_message</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structavnd__tools_1_1_device_recorder_1_1reset__path__message.html">reset_path_message</a></td></tr>
@@ -156,6 +154,9 @@ ossia team&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (
 <tr class="memitem:aa4e8ed44c9576ed35d383be0084f7bb7"><td class="memItemLeft" align="right" valign="top"><a id="aa4e8ed44c9576ed35d383be0084f7bb7"></a>
 ossia team Record the messages of a device at regular interval&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (c_name, &quot;avnd_device_recorder&quot;) halp_meta(uuid</td></tr>
 <tr class="separator:aa4e8ed44c9576ed35d383be0084f7bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7212a56b662899b2f3e410808bc13bb8"><td class="memItemLeft" align="right" valign="top"><a id="a7212a56b662899b2f3e410808bc13bb8"></a>
+ossia team Record the messages of a device at regular interval bde7&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (manual_url, &quot;https://ossia.io/score-docs/processes/csv-recorder.html#csv-recorder&quot;) struct recorder_thread</td></tr>
+<tr class="separator:a7212a56b662899b2f3e410808bc13bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7b8bc4ca1a8523a1287902a3ff6d2bd"><td class="memItemLeft" align="right" valign="top"><a id="ab7b8bc4ca1a8523a1287902a3ff6d2bd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setMode</b> ()</td></tr>
 <tr class="separator:ab7b8bc4ca1a8523a1287902a3ff6d2bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,7 +170,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a5d9cf2af8d12765511c2cfa9b2ebc443"><td class="memItemLeft" align="right" valign="top"><a id="a5d9cf2af8d12765511c2cfa9b2ebc443"></a>
-std::shared_ptr&lt; <a class="el" href="structavnd__tools_1_1_device_recorder_1_1recorder__thread.html">recorder_thread</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>record_impl</b> = std::make_shared&lt;<a class="el" href="structavnd__tools_1_1_device_recorder_1_1recorder__thread.html">recorder_thread</a>&gt;()</td></tr>
+std::shared_ptr&lt; recorder_thread &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>record_impl</b> = std::make_shared&lt;recorder_thread&gt;()</td></tr>
 <tr class="separator:a5d9cf2af8d12765511c2cfa9b2ebc443"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71fc90b100034d0fc9922a90b1af5f1d"><td class="memItemLeft" align="right" valign="top"><a id="a71fc90b100034d0fc9922a90b1af5f1d"></a>
 std::shared_ptr&lt; <a class="el" href="structavnd__tools_1_1_device_recorder_1_1player__thread.html">player_thread</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>play_impl</b> = std::make_shared&lt;<a class="el" href="structavnd__tools_1_1_device_recorder_1_1player__thread.html">player_thread</a>&gt;()</td></tr>
@@ -177,17 +178,17 @@ std::shared_ptr&lt; <a class="el" href="structavnd__tools_1_1_device_recorder_1_
 <tr class="memitem:a1aa60196918af3a6f1ff30da4ce73fdd"><td class="memItemLeft" align="right" valign="top"><a id="a1aa60196918af3a6f1ff30da4ce73fdd"></a>
 struct <a class="el" href="structavnd__tools_1_1_device_recorder_1_1inputs__t.html">avnd_tools::DeviceRecorder::inputs_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
 <tr class="separator:a1aa60196918af3a6f1ff30da4ce73fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f7a61be15544f5112fc5f465b0ea3f1"><td class="memItemLeft" ><a id="a5f7a61be15544f5112fc5f465b0ea3f1"></a>
+<tr class="memitem:a1fe871aee7a86abf74170eeca91a574f"><td class="memItemLeft" ><a id="a1fe871aee7a86abf74170eeca91a574f"></a>
 struct {</td></tr>
-<tr class="memitem:a5f7a61be15544f5112fc5f465b0ea3f1"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b></td></tr>
-<tr class="separator:a5f7a61be15544f5112fc5f465b0ea3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93663af30197ee7dadce3984347ec559"><td class="memItemLeft" ><a id="a93663af30197ee7dadce3984347ec559"></a>
+<tr class="memitem:a1fe871aee7a86abf74170eeca91a574f"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b></td></tr>
+<tr class="separator:a1fe871aee7a86abf74170eeca91a574f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affcb598832b2e1ce5ff121dc1d163c0f"><td class="memItemLeft" ><a id="affcb598832b2e1ce5ff121dc1d163c0f"></a>
 struct {</td></tr>
-<tr class="memitem:a239116d4f56113c2b1dafaedd8a52060"><td class="memItemLeft" >
+<tr class="memitem:a42a2d687d4de9785900d6be7e50c0938"><td class="memItemLeft" >
 &#160;&#160;&#160;std::function&lt; void(worker_message)&gt;&#160;&#160;&#160;<b>request</b></td></tr>
-<tr class="separator:a239116d4f56113c2b1dafaedd8a52060"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93663af30197ee7dadce3984347ec559"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>worker</b></td></tr>
-<tr class="separator:a93663af30197ee7dadce3984347ec559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a42a2d687d4de9785900d6be7e50c0938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affcb598832b2e1ce5ff121dc1d163c0f"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>worker</b></td></tr>
+<tr class="separator:affcb598832b2e1ce5ff121dc1d163c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a117e4fee28e2e58e8b83af0401a19a88"><td class="memItemLeft" align="right" valign="top"><a id="a117e4fee28e2e58e8b83af0401a19a88"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>started</b> {}</td></tr>
 <tr class="separator:a117e4fee28e2e58e8b83af0401a19a88"><td class="memSeparator" colspan="2">&#160;</td></tr>

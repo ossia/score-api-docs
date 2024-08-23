@@ -357,61 +357,62 @@ $(document).ready(function(){initNavTree('_factor_oracle2_8hpp_source.html','');
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> prettyName = <span class="stringliteral">&quot;New Factor Oracle&quot;</span>;</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> objectKey = <span class="stringliteral">&quot;New Factor Oracle&quot;</span>;</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> category = <span class="stringliteral">&quot;Control/Impro&quot;</span>;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> author = <span class="stringliteral">&quot;Maria Paula Carrero Rivas&quot;</span>;</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> kind = Process::ProcessCategory::Mapping;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> description = <span class="stringliteral">&quot;Factor Oracle algorithm .&quot;</span>; <span class="comment">// TODO cite</span></div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> tags = std::array&lt;const char*, 0&gt;{};</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> uuid_constexpr <span class="keyword">auto</span> uuid</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        = make_uuid(<span class="stringliteral">&quot;66F1C352-C48F-40A2-9283-35C2CB376258&quot;</span>);</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160; </div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> controls</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        = tuplet::make_tuple(<a class="code" href="struct_control_1_1_int_slider.html">Control::IntSlider</a>{<span class="stringliteral">&quot;Sequence length&quot;</span>, 1, 64, 8});</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr value_in value_ins[]{<span class="stringliteral">&quot;in&quot;</span>, <span class="stringliteral">&quot;regen&quot;</span>, <span class="stringliteral">&quot;bang&quot;</span>};</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr value_out value_outs[]{<span class="stringliteral">&quot;out&quot;</span>};</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;  };</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
-<div class="line"><a name="l00344"></a><span class="lineno"><a class="line" href="struct_nodes_1_1_factor_oracle2_1_1_node_1_1_state.html">  344</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="namespace_state.html">State</a></div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;  {</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="keywordtype">int</span> i = 0;</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    std::size_t sequence_idx{};</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    debug_vector_t&lt;ossia::value&gt; sequence;</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <a class="code" href="class_factor_1_1_factor_oracle.html">Factor::FactorOracle&lt;ossia::value&gt;</a> oracle;</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  };</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;  ossia::value* buffer = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;  <span class="keyword">using</span> control_policy = ossia::safe_nodes::last_tick;</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;  run(<span class="keyword">const</span> ossia::value_port&amp; in, <span class="keyword">const</span> ossia::value_port&amp; regen,</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;      <span class="keyword">const</span> ossia::value_port&amp; bangs, <span class="keywordtype">int</span> seq_len, ossia::value_port&amp; out,</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;      ossia::token_request, ossia::exec_state_facade, <a class="code" href="namespace_state.html">State</a>&amp; <span class="keyword">self</span>)</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;  {</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160; </div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="comment">// Entrées sont dans p1</span></div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> val : in.get_data())</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    {</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;      <span class="keyword">self</span>.oracle.input_values.push_back(val.value);</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;      <span class="keyword">self</span>.oracle.AddLetter(<span class="keyword">self</span>.oracle.current_state, <span class="keyword">self</span>.oracle.input_values);</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;      <span class="keyword">self</span>.oracle.current_state = <span class="keyword">self</span>.oracle.current_state + 1;</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    }</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160; </div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <span class="keywordflow">if</span>(!regen.get_data().empty())</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    {</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;      <span class="keyword">self</span>.sequence = <span class="keyword">self</span>.oracle.CallGenerate(seq_len, 0.6);</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    }</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160; </div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <span class="keywordflow">if</span>(!<span class="keyword">self</span>.sequence.empty())</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    {</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; bang : bangs.get_data())</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;      {</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        <span class="keyword">self</span>.sequence_idx = ossia::clamp&lt;int64_t&gt;(</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;            (int64_t)<span class="keyword">self</span>.sequence_idx, 0, (int64_t)<span class="keyword">self</span>.sequence.size() - 1);</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        out.write_value(<span class="keyword">self</span>.sequence[<span class="keyword">self</span>.sequence_idx], bang.timestamp);</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <span class="keyword">self</span>.sequence_idx = (<span class="keyword">self</span>.sequence_idx + 1) % <span class="keyword">self</span>.sequence.size();</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;      }</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    }</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;  }</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;};</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="preprocessor">#undef debug_vector_t</span></div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;}</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> manual_url = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> author = <span class="stringliteral">&quot;Maria Paula Carrero Rivas&quot;</span>;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> kind = Process::ProcessCategory::Mapping;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> description = <span class="stringliteral">&quot;Factor Oracle algorithm .&quot;</span>; <span class="comment">// TODO cite</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> tags = std::array&lt;const char*, 0&gt;{};</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> uuid_constexpr <span class="keyword">auto</span> uuid</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        = make_uuid(<span class="stringliteral">&quot;66F1C352-C48F-40A2-9283-35C2CB376258&quot;</span>);</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> controls</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        = tuplet::make_tuple(<a class="code" href="struct_control_1_1_int_slider.html">Control::IntSlider</a>{<span class="stringliteral">&quot;Sequence length&quot;</span>, 1, 64, 8});</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr value_in value_ins[]{<span class="stringliteral">&quot;in&quot;</span>, <span class="stringliteral">&quot;regen&quot;</span>, <span class="stringliteral">&quot;bang&quot;</span>};</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr value_out value_outs[]{<span class="stringliteral">&quot;out&quot;</span>};</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;  };</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
+<div class="line"><a name="l00345"></a><span class="lineno"><a class="line" href="struct_nodes_1_1_factor_oracle2_1_1_node_1_1_state.html">  345</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="namespace_state.html">State</a></div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  {</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keywordtype">int</span> i = 0;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    std::size_t sequence_idx{};</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    debug_vector_t&lt;ossia::value&gt; sequence;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <a class="code" href="class_factor_1_1_factor_oracle.html">Factor::FactorOracle&lt;ossia::value&gt;</a> oracle;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;  };</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;  ossia::value* buffer = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;  <span class="keyword">using</span> control_policy = ossia::safe_nodes::last_tick;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;  run(<span class="keyword">const</span> ossia::value_port&amp; in, <span class="keyword">const</span> ossia::value_port&amp; regen,</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;      <span class="keyword">const</span> ossia::value_port&amp; bangs, <span class="keywordtype">int</span> seq_len, ossia::value_port&amp; out,</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;      ossia::token_request, ossia::exec_state_facade, <a class="code" href="namespace_state.html">State</a>&amp; <span class="keyword">self</span>)</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  {</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160; </div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <span class="comment">// Entrées sont dans p1</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> val : in.get_data())</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    {</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;      <span class="keyword">self</span>.oracle.input_values.push_back(val.value);</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;      <span class="keyword">self</span>.oracle.AddLetter(<span class="keyword">self</span>.oracle.current_state, <span class="keyword">self</span>.oracle.input_values);</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;      <span class="keyword">self</span>.oracle.current_state = <span class="keyword">self</span>.oracle.current_state + 1;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    }</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160; </div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keywordflow">if</span>(!regen.get_data().empty())</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    {</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;      <span class="keyword">self</span>.sequence = <span class="keyword">self</span>.oracle.CallGenerate(seq_len, 0.6);</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    }</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160; </div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="keywordflow">if</span>(!<span class="keyword">self</span>.sequence.empty())</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    {</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; bang : bangs.get_data())</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;      {</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="keyword">self</span>.sequence_idx = ossia::clamp&lt;int64_t&gt;(</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;            (int64_t)<span class="keyword">self</span>.sequence_idx, 0, (int64_t)<span class="keyword">self</span>.sequence.size() - 1);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        out.write_value(<span class="keyword">self</span>.sequence[<span class="keyword">self</span>.sequence_idx], bang.timestamp);</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <span class="keyword">self</span>.sequence_idx = (<span class="keyword">self</span>.sequence_idx + 1) % <span class="keyword">self</span>.sequence.size();</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;      }</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    }</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  }</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;};</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="preprocessor">#undef debug_vector_t</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;}</div>
 <div class="ttc" id="aclass_factor_1_1_factor_oracle_html"><div class="ttname"><a href="class_factor_1_1_factor_oracle.html">Factor::FactorOracle</a></div><div class="ttdef"><b>Definition:</b> FactorOracle2.hpp:85</div></div>
 <div class="ttc" id="aclass_factor_1_1_factor_oracle_html_a00629688b260aa99b8b20d3f97597309"><div class="ttname"><a href="class_factor_1_1_factor_oracle.html#a00629688b260aa99b8b20d3f97597309">Factor::FactorOracle::FindBetter</a></div><div class="ttdeci">int FindBetter(int i, T alpha, const std::vector&lt; T &gt; word)</div><div class="ttdef"><b>Definition:</b> FactorOracle2.hpp:203</div></div>
 <div class="ttc" id="aclass_factor_1_1_factor_oracle_html_a0c8087389175332cb57cb425fb2aa9d0"><div class="ttname"><a href="class_factor_1_1_factor_oracle.html#a0c8087389175332cb57cb425fb2aa9d0">Factor::FactorOracle::RevSuffix</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; int &gt; &gt; RevSuffix</div><div class="ttdef"><b>Definition:</b> FactorOracle2.hpp:91</div></div>

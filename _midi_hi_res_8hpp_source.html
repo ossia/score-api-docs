@@ -115,91 +115,93 @@ $(document).ready(function(){initNavTree('_midi_hi_res_8hpp_source.html',''); in
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> objectKey = <span class="stringliteral">&quot;MidiHiResIn&quot;</span>;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> category = <span class="stringliteral">&quot;Midi&quot;</span>;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> author = <span class="stringliteral">&quot;ossia score&quot;</span>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> kind = Process::ProcessCategory::MidiEffect;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> description = <span class="stringliteral">&quot;Creates a float from MSB/LSB CCs&quot;</span>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> tags = std::array&lt;const char*, 0&gt;{};</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> uuid_constexpr <span class="keyword">auto</span> uuid</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        = make_uuid(<span class="stringliteral">&quot;28ca746e-c304-4ba6-bd5b-78934a1dec55&quot;</span>);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr value_in value_ins[]{{<span class="stringliteral">&quot;msb&quot;</span>, <span class="keyword">false</span>}, {<span class="stringliteral">&quot;lsb&quot;</span>, <span class="keyword">false</span>}};</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr value_out value_outs[]{<span class="stringliteral">&quot;int&quot;</span>, <span class="stringliteral">&quot;float&quot;</span>};</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  };</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">using</span> control_policy = ossia::safe_nodes::default_tick;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  run(<span class="keyword">const</span> ossia::value_port&amp; msb, <span class="keyword">const</span> ossia::value_port&amp; lsb, ossia::value_port&amp; out,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      ossia::value_port&amp; out_f, <span class="keyword">const</span> ossia::token_request&amp; tk,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      ossia::exec_state_facade st)</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">auto</span>&amp; msbs = msb.get_data();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">auto</span>&amp; lsbs = lsb.get_data();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span>(msbs.empty() &amp;&amp; lsbs.empty())</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> m = msbs.empty() ? 0 : ossia::convert&lt;int&gt;(msbs.back().value);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> l = lsbs.empty() ? 0 : ossia::convert&lt;int&gt;(lsbs.back().value);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">auto</span> [start, dur] = st.timings(tk);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    out.write_value(m * 127 + l, start);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    out_f.write_value(<span class="keywordtype">double</span>(m * 127 + l) / (128. * 128.), start);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="struct_nodes_1_1_midi_hi_res_1_1_output.html">   49</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_nodes_1_1_midi_hi_res_1_1_output.html">Output</a></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="struct_nodes_1_1_midi_hi_res_1_1_output_1_1_metadata.html">   51</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="struct_nodes_1_1_midi_hi_res_1_1_output_1_1_metadata.html">Metadata</a> : <a class="code" href="struct_control_1_1_meta__base.html">Control::Meta_base</a></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> prettyName = <span class="stringliteral">&quot;Midi hi-res output&quot;</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> objectKey = <span class="stringliteral">&quot;MidiHiResOut&quot;</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> category = <span class="stringliteral">&quot;Midi&quot;</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> author = <span class="stringliteral">&quot;ossia score&quot;</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> kind = Process::ProcessCategory::MidiEffect;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> description</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        = <span class="stringliteral">&quot;Creates MIDI LSB/MSB from a 0-16384 or 0-1 value&quot;</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> tags = std::array&lt;const char*, 0&gt;{};</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> uuid_constexpr <span class="keyword">auto</span> uuid</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        = make_uuid(<span class="stringliteral">&quot;d6f5173b-b823-4571-b31f-660832b6132b&quot;</span>);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr value_in value_ins[]{<span class="stringliteral">&quot;int&quot;</span>, <span class="stringliteral">&quot;float&quot;</span>};</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr value_out value_outs[]{<span class="stringliteral">&quot;msb&quot;</span>, <span class="stringliteral">&quot;lsb&quot;</span>};</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  };</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">using</span> control_policy = ossia::safe_nodes::default_tick;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> manual_url = <span class="stringliteral">&quot;https://ossia.io/score-docs/processes/javascript.html#midi&quot;</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> kind = Process::ProcessCategory::MidiEffect;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> description = <span class="stringliteral">&quot;Creates a float from MSB/LSB CCs&quot;</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> tags = std::array&lt;const char*, 0&gt;{};</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> uuid_constexpr <span class="keyword">auto</span> uuid</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        = make_uuid(<span class="stringliteral">&quot;28ca746e-c304-4ba6-bd5b-78934a1dec55&quot;</span>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr value_in value_ins[]{{<span class="stringliteral">&quot;msb&quot;</span>, <span class="keyword">false</span>}, {<span class="stringliteral">&quot;lsb&quot;</span>, <span class="keyword">false</span>}};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr value_out value_outs[]{<span class="stringliteral">&quot;int&quot;</span>, <span class="stringliteral">&quot;float&quot;</span>};</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  };</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">using</span> control_policy = ossia::safe_nodes::default_tick;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  run(<span class="keyword">const</span> ossia::value_port&amp; msb, <span class="keyword">const</span> ossia::value_port&amp; lsb, ossia::value_port&amp; out,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      ossia::value_port&amp; out_f, <span class="keyword">const</span> ossia::token_request&amp; tk,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      ossia::exec_state_facade st)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">auto</span>&amp; msbs = msb.get_data();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">auto</span>&amp; lsbs = lsb.get_data();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">if</span>(msbs.empty() &amp;&amp; lsbs.empty())</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> m = msbs.empty() ? 0 : ossia::convert&lt;int&gt;(msbs.back().value);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> l = lsbs.empty() ? 0 : ossia::convert&lt;int&gt;(lsbs.back().value);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">auto</span> [start, dur] = st.timings(tk);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    out.write_value(m * 127 + l, start);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    out_f.write_value(<span class="keywordtype">double</span>(m * 127 + l) / (128. * 128.), start);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="struct_nodes_1_1_midi_hi_res_1_1_output.html">   50</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_nodes_1_1_midi_hi_res_1_1_output.html">Output</a></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="struct_nodes_1_1_midi_hi_res_1_1_output_1_1_metadata.html">   52</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="struct_nodes_1_1_midi_hi_res_1_1_output_1_1_metadata.html">Metadata</a> : <a class="code" href="struct_control_1_1_meta__base.html">Control::Meta_base</a></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> prettyName = <span class="stringliteral">&quot;Midi hi-res output&quot;</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> objectKey = <span class="stringliteral">&quot;MidiHiResOut&quot;</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> category = <span class="stringliteral">&quot;Midi&quot;</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> manual_url = <span class="stringliteral">&quot;https://ossia.io/score-docs/processes/javascript.html#midi&quot;</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> author = <span class="stringliteral">&quot;ossia score&quot;</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> kind = Process::ProcessCategory::MidiEffect;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> description</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        = <span class="stringliteral">&quot;Creates MIDI LSB/MSB from a 0-16384 or 0-1 value&quot;</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> tags = std::array&lt;const char*, 0&gt;{};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> uuid_constexpr <span class="keyword">auto</span> uuid</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        = make_uuid(<span class="stringliteral">&quot;d6f5173b-b823-4571-b31f-660832b6132b&quot;</span>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr value_in value_ins[]{<span class="stringliteral">&quot;int&quot;</span>, <span class="stringliteral">&quot;float&quot;</span>};</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr value_out value_outs[]{<span class="stringliteral">&quot;msb&quot;</span>, <span class="stringliteral">&quot;lsb&quot;</span>};</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  };</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  run(<span class="keyword">const</span> ossia::value_port&amp; in, <span class="keyword">const</span> ossia::value_port&amp; in_f, ossia::value_port&amp; msb,</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      ossia::value_port&amp; lsb, <span class="keyword">const</span> ossia::token_request&amp; tk,</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      ossia::exec_state_facade st)</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; [val, t] : in.get_data())</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keyword">const</span> int32_t v = ossia::convert&lt;int&gt;(val);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="keyword">const</span> int32_t m = ossia::clamp(int32_t(v / 127), 0, 127);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keyword">const</span> int32_t l = ossia::clamp(int32_t(v - m * 127), 0, 127);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      msb.write_value(m, t);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      lsb.write_value(l, t);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; [val, t] : in_f.get_data())</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">float</span> v = ossia::convert&lt;float&gt;(val) * (128. * 128.);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keyword">const</span> int32_t m = ossia::clamp(int32_t(v / 127.), 0, 127);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="keyword">const</span> int32_t l = ossia::clamp(int32_t(v - m * 127), 0, 127);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      msb.write_value(m, t);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      lsb.write_value(l, t);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  }</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">using</span> control_policy = ossia::safe_nodes::default_tick;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  run(<span class="keyword">const</span> ossia::value_port&amp; in, <span class="keyword">const</span> ossia::value_port&amp; in_f, ossia::value_port&amp; msb,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      ossia::value_port&amp; lsb, <span class="keyword">const</span> ossia::token_request&amp; tk,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      ossia::exec_state_facade st)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; [val, t] : in.get_data())</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keyword">const</span> int32_t v = ossia::convert&lt;int&gt;(val);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keyword">const</span> int32_t m = ossia::clamp(int32_t(v / 127), 0, 127);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keyword">const</span> int32_t l = ossia::clamp(int32_t(v - m * 127), 0, 127);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      msb.write_value(m, t);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      lsb.write_value(l, t);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; [val, t] : in_f.get_data())</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">float</span> v = ossia::convert&lt;float&gt;(val) * (128. * 128.);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="keyword">const</span> int32_t m = ossia::clamp(int32_t(v / 127.), 0, 127);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <span class="keyword">const</span> int32_t l = ossia::clamp(int32_t(v - m * 127), 0, 127);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      msb.write_value(m, t);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      lsb.write_value(l, t);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
 <div class="ttc" id="astruct_control_1_1_meta__base_html"><div class="ttname"><a href="struct_control_1_1_meta__base.html">Control::Meta_base</a></div><div class="ttdef"><b>Definition:</b> SimpleApi.hpp:32</div></div>
 <div class="ttc" id="astruct_nodes_1_1_midi_hi_res_1_1_input_1_1_metadata_html"><div class="ttname"><a href="struct_nodes_1_1_midi_hi_res_1_1_input_1_1_metadata.html">Nodes::MidiHiRes::Input::Metadata</a></div><div class="ttdef"><b>Definition:</b> MidiHiRes.hpp:13</div></div>
 <div class="ttc" id="astruct_nodes_1_1_midi_hi_res_1_1_input_html"><div class="ttname"><a href="struct_nodes_1_1_midi_hi_res_1_1_input.html">Nodes::MidiHiRes::Input</a></div><div class="ttdef"><b>Definition:</b> MidiHiRes.hpp:11</div></div>
-<div class="ttc" id="astruct_nodes_1_1_midi_hi_res_1_1_output_1_1_metadata_html"><div class="ttname"><a href="struct_nodes_1_1_midi_hi_res_1_1_output_1_1_metadata.html">Nodes::MidiHiRes::Output::Metadata</a></div><div class="ttdef"><b>Definition:</b> MidiHiRes.hpp:52</div></div>
-<div class="ttc" id="astruct_nodes_1_1_midi_hi_res_1_1_output_html"><div class="ttname"><a href="struct_nodes_1_1_midi_hi_res_1_1_output.html">Nodes::MidiHiRes::Output</a></div><div class="ttdef"><b>Definition:</b> MidiHiRes.hpp:50</div></div>
+<div class="ttc" id="astruct_nodes_1_1_midi_hi_res_1_1_output_1_1_metadata_html"><div class="ttname"><a href="struct_nodes_1_1_midi_hi_res_1_1_output_1_1_metadata.html">Nodes::MidiHiRes::Output::Metadata</a></div><div class="ttdef"><b>Definition:</b> MidiHiRes.hpp:53</div></div>
+<div class="ttc" id="astruct_nodes_1_1_midi_hi_res_1_1_output_html"><div class="ttname"><a href="struct_nodes_1_1_midi_hi_res_1_1_output.html">Nodes::MidiHiRes::Output</a></div><div class="ttdef"><b>Definition:</b> MidiHiRes.hpp:51</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

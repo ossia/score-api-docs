@@ -115,10 +115,10 @@ Inheritance diagram for avnd_tools::PatternSweeper:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a84e779b21c889f2e771013c7755b1b4e"><td class="memItemLeft" align="right" valign="top"><a id="a84e779b21c889f2e771013c7755b1b4e"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>up</b>
+<tr class="memitem:acfbbf0f5098e37a6f4a4af1732f17a1c"><td class="memItemLeft" align="right" valign="top"><a id="acfbbf0f5098e37a6f4a4af1732f17a1c"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>up</b>
 , <b>down</b>
  }</td></tr>
-<tr class="separator:a84e779b21c889f2e771013c7755b1b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:acfbbf0f5098e37a6f4a4af1732f17a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa25d77f35aecebf95f55ce0330f9c2ae"><td class="memItemLeft" align="right" valign="top"><a id="aa25d77f35aecebf95f55ce0330f9c2ae"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> = halp::tick_musical</td></tr>
 <tr class="separator:aa25d77f35aecebf95f55ce0330f9c2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,6 +134,9 @@ ossia team&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (
 <tr class="memitem:a8ebe3c60808849696365e38cb769d77c"><td class="memItemLeft" align="right" valign="top"><a id="a8ebe3c60808849696365e38cb769d77c"></a>
 ossia team Sweep a message to all nodes matching a pattern&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (c_name, &quot;avnd_pattern_sweep&quot;) halp_meta(uuid</td></tr>
 <tr class="separator:a8ebe3c60808849696365e38cb769d77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa0d26664f18122de5b489d0692333d3"><td class="memItemLeft" align="right" valign="top"><a id="aaa0d26664f18122de5b489d0692333d3"></a>
+ossia team Sweep a message to all nodes matching a pattern f71b ac32&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (manual_url, &quot;https://ossia.io/score-docs/processes/sweeper.html#sweeper&quot;) struct</td></tr>
+<tr class="separator:aaa0d26664f18122de5b489d0692333d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7f1adf06bf139e5c6894685b041f797"><td class="memItemLeft" align="right" valign="top"><a id="ac7f1adf06bf139e5c6894685b041f797"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>prepare</b> ()</td></tr>
 <tr class="separator:ac7f1adf06bf139e5c6894685b041f797"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,36 +149,22 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a16e0668da9b118646ee7a376e965d5e9"><td class="memItemLeft" ><a id="a16e0668da9b118646ee7a376e965d5e9"></a>
+<tr class="memitem:a3a59b06b9205497eeea439ca0711640f"><td class="memItemLeft" align="right" valign="top"><a id="a3a59b06b9205497eeea439ca0711640f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
+<tr class="separator:a3a59b06b9205497eeea439ca0711640f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bdb6294d8d78f499b11a6442d604d33"><td class="memItemLeft" ><a id="a0bdb6294d8d78f499b11a6442d604d33"></a>
 struct {</td></tr>
-<tr class="memitem:a06b1accde109b7473e262b3bedb66156"><td class="memItemLeft" >
-&#160;&#160;&#160;halp::val_port&lt;&quot;Input&quot;, ossia::value &gt;&#160;&#160;&#160;<b>input</b></td></tr>
-<tr class="separator:a06b1accde109b7473e262b3bedb66156"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e609a5eac1d241fbf3c58c72ed7cd33"><td class="memItemLeft" >
-&#160;&#160;&#160;<a class="el" href="structavnd__tools_1_1_pattern_selector.html">PatternSelector</a>&#160;&#160;&#160;<b>pattern</b></td></tr>
-<tr class="separator:a2e609a5eac1d241fbf3c58c72ed7cd33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ebb7345ea2672642f5272167ab665da"><td class="memItemLeft" >
-&#160;&#160;&#160;halp::time_chooser&lt;&quot;Interval&quot;&gt;&#160;&#160;&#160;<b>time</b></td></tr>
-<tr class="separator:a0ebb7345ea2672642f5272167ab665da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8943d0011553118daf6c25c280d8296"><td class="memItemLeft" >
-&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:ad8943d0011553118daf6c25c280d8296"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>mode</b></td></tr>
-<tr class="separator:ad8943d0011553118daf6c25c280d8296"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16e0668da9b118646ee7a376e965d5e9"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
-<tr class="separator:a16e0668da9b118646ee7a376e965d5e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6171c8cc54d8dad51e1cd190c8206887"><td class="memItemLeft" ><a id="a6171c8cc54d8dad51e1cd190c8206887"></a>
-struct {</td></tr>
-<tr class="memitem:a6171c8cc54d8dad51e1cd190c8206887"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b></td></tr>
-<tr class="separator:a6171c8cc54d8dad51e1cd190c8206887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bdb6294d8d78f499b11a6442d604d33"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b></td></tr>
+<tr class="separator:a0bdb6294d8d78f499b11a6442d604d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a533c1263959d8c9f58dd0f2640e65a27"><td class="memItemLeft" align="right" valign="top"><a id="a533c1263959d8c9f58dd0f2640e65a27"></a>
 std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>current_parameter</b> = 0</td></tr>
 <tr class="separator:a533c1263959d8c9f58dd0f2640e65a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb402b8decddec07b09e110d9405b382"><td class="memItemLeft" align="right" valign="top"><a id="abb402b8decddec07b09e110d9405b382"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>last_message_sent_pos</b> = std::numeric_limits&lt;double&gt;::lowest()</td></tr>
 <tr class="separator:abb402b8decddec07b09e110d9405b382"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f387779097560de9f402381cdc7d610"><td class="memItemLeft" align="right" valign="top"><a id="a5f387779097560de9f402381cdc7d610"></a>
+<tr class="memitem:aa6db4614b3ed5eb4ca418f0ccd4e5533"><td class="memItemLeft" align="right" valign="top"><a id="aa6db4614b3ed5eb4ca418f0ccd4e5533"></a>
 enum avnd_tools::PatternSweeper:: { ... } &#160;</td><td class="memItemRight" valign="bottom"><b>up</b></td></tr>
-<tr class="separator:a5f387779097560de9f402381cdc7d610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aa6db4614b3ed5eb4ca418f0ccd4e5533"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d8e980d838a575a194d1b025d8f3bc9"><td class="memItemLeft" align="right" valign="top"><a id="a7d8e980d838a575a194d1b025d8f3bc9"></a>
 rnd::pcg&#160;</td><td class="memItemRight" valign="bottom"><b>pcg_state</b></td></tr>
 <tr class="separator:a7d8e980d838a575a194d1b025d8f3bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
