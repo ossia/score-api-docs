@@ -1,5 +1,7 @@
 var NAVTREEINDEX78 =
 {
+"structoscr_1_1_custom_control_factory.html":[12,0,37,7],
+"structoscr_1_1_custom_control_factory_3_01_node_00_01avnd_1_1field__reflection_3_01_n_00_01_field_01_4_01_4.html":[12,0,37,8],
 "structoscr_1_1_custom_float_control.html":[12,0,37,14],
 "structoscr_1_1_custom_float_control.html#a1e0f0030f532b00d5d4a3853e2498274":[12,0,37,14,2],
 "structoscr_1_1_custom_float_control.html#a972909fe80536769e6a2874e5766ee7d":[12,0,37,14,3],
@@ -68,8 +70,8 @@ var NAVTREEINDEX78 =
 "structoscr_1_1_inlet_init_func.html#abb4cabdfafbc76baa70e60ae3f998bea":[12,0,37,44,4],
 "structoscr_1_1_inlet_init_func.html#ace7897bd30ea620f3b89ed0d9d7f40e9":[12,0,37,44,1],
 "structoscr_1_1_inlet_init_func.html#ad44f36dfbcfeea53fd7b706d8a200495":[12,0,37,44,10],
-"structoscr_1_1_inlet_init_func.html#af612c7474c3ee21491155ce56f6e9155":[12,0,37,44,2],
 "structoscr_1_1_inlet_init_func.html#af612c7474c3ee21491155ce56f6e9155":[12,0,37,44,3],
+"structoscr_1_1_inlet_init_func.html#af612c7474c3ee21491155ce56f6e9155":[12,0,37,44,2],
 "structoscr_1_1_inlet_init_func.html#afa4d475c6adea73a084803c2ebfedc39":[12,0,37,44,0],
 "structoscr_1_1_layout_builder.html":[12,0,37,30],
 "structoscr_1_1_layout_builder.html#a2b113133e6d4a7c19f3493c9010f8712":[12,0,37,30,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX78 =
 "structoscr_1_1multichannel__audio__view.html#aa0089240bde8b2475fc3840c4888d7d4":[12,0,37,16,0],
 "structoscr_1_1multichannel__audio__view.html#afae3cd46f461959ffe6fdf454b712101":[12,0,37,16,3],
 "structoscr_1_1pmf__member__type.html":[12,0,37,28],
-"structoscr_1_1pmf__member__type_3_01_v_01_t_1_1_5_01_4.html":[12,0,37,29],
-"structoscr_1_1pmf__member__type_3_01_v_01_t_1_1_5_01_4.html#a8c082d7b94c3ce3bb09c44e5bef6167e":[12,0,37,29,0],
-"structoscr_1_1setup___impl0.html":[12,0,37,22]
+"structoscr_1_1pmf__member__type_3_01_v_01_t_1_1_5_01_4.html":[12,0,37,29]
 };

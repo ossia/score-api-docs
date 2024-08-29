@@ -1,5 +1,7 @@
 var NAVTREEINDEX76 =
 {
+"struct_value_variant_datastream_serializer.html#a8c6ddf75c3ad11814028cc62fdb2e444":[12,0,415,1],
+"struct_variant_data_stream_deserializer.html":[12,0,416],
 "struct_variant_data_stream_deserializer.html#a621306b7287bdbfa4b4fdad38ede8978":[12,0,416,5],
 "struct_variant_data_stream_deserializer.html#a6b098a7c0eb67e64bbf7e579f49d33cf":[12,0,416,0],
 "struct_variant_data_stream_deserializer.html#a71064afb252df275b6dfce4bb90a8601":[12,0,416,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX76 =
 "structavnd__tools_1_1_device_recorder_1_1player__thread.html#ae83e8cac84a33f6e494a8d2f7a3941b8":[12,0,3,5,3,2],
 "structavnd__tools_1_1_device_recorder_1_1process__message.html":[12,0,3,5,4],
 "structavnd__tools_1_1_device_recorder_1_1process__message.html#a0771fa6331208ca050f4d38a61dbdf5f":[12,0,3,5,4,0],
-"structavnd__tools_1_1_device_recorder_1_1process__message.html#a0f8081a99c797582e519ed6c14cf9045":[12,0,3,5,4,1],
-"structavnd__tools_1_1_device_recorder_1_1reset__message.html":[12,0,3,5,5],
-"structavnd__tools_1_1_device_recorder_1_1reset__message.html#a0af402021715b4e925ff36426ba0d440":[12,0,3,5,5,3]
+"structavnd__tools_1_1_device_recorder_1_1process__message.html#a0f8081a99c797582e519ed6c14cf9045":[12,0,3,5,4,1]
 };

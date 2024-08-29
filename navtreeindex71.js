@@ -1,5 +1,7 @@
 var NAVTREEINDEX71 =
 {
+"struct_process_1_1_pixmaps.html#a6d7b828e73deacbc8c97b4d288cfb5aa":[12,0,42,90,10],
+"struct_process_1_1_pixmaps.html#a727636d7ac5ae7f299cd02d294674445":[12,0,42,90,21],
 "struct_process_1_1_pixmaps.html#a732b6a7fab23424ff9275f9f8d028f84":[12,0,42,90,9],
 "struct_process_1_1_pixmaps.html#a7c3801d9858d796bbb36dde184779108":[12,0,42,90,15],
 "struct_process_1_1_pixmaps.html#a9ea8d221135486a952b6d0d4c2e84910":[12,0,42,90,12],
@@ -247,7 +249,5 @@ var NAVTREEINDEX71 =
 "struct_protocols_1_1_o_s_c_compatible_check.html#ac493aa836f42729673e543c7d8ff7c4d":[12,0,43,70,1],
 "struct_protocols_1_1_o_s_c_compatible_check.html#ac5202e8a572016c38d62e9e0c295cb77":[12,0,43,70,6],
 "struct_protocols_1_1_o_s_c_compatible_check.html#acb623ed209b7cc2637a58e51ad56d993":[12,0,43,70,8],
-"struct_protocols_1_1_o_s_c_compatible_check.html#add0e95dc9f7c550f042c7033c7f99712":[12,0,43,70,7],
-"struct_protocols_1_1_o_s_c_query_specific_settings.html":[12,0,43,81],
-"struct_protocols_1_1_o_s_c_query_specific_settings.html#aabc9d9431d38e1b5e0cc2d46db747e0e":[12,0,43,81,2]
+"struct_protocols_1_1_o_s_c_compatible_check.html#add0e95dc9f7c550f042c7033c7f99712":[12,0,43,70,7]
 };
