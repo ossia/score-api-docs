@@ -145,50 +145,61 @@ $(document).ready(function(){initNavTree('_j_s_a_p_i_wrapper_8hpp_source.html','
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  W_SLOT(write);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> exec(<span class="keyword">const</span> QString&amp; code) W_SIGNAL(exec, code);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">void</span> compute(<span class="keyword">const</span> QString&amp; code, <span class="keyword">const</span> QString&amp; cb) W_SIGNAL(compute, code, cb);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> system(<span class="keyword">const</span> QString&amp; code) W_SIGNAL(system, code);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">static</span> ossia::net::node_base* find_node(DeviceCache&amp; devices, std::string_view name);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">const</span> ossia::destination_t&amp; find_address(<span class="keyword">const</span> QString&amp;);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  DeviceCache devices;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  DevicePushFunction on_push;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  ossia::hash_map&lt;QString, ossia::destination_t&gt; m_address_cache;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  ossia::value_port m_port_cache;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="comment">// TODO share cache</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">class EditStateWrapper : public QObject</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">{</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">  W_OBJECT(EditStateWrapper)</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">public:</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">  EditStateWrapper(Device::DeviceList&amp; state, QObject* parent)</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">      : QObject{parent}</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">      , devices{state}</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">  {</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">  }</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">  ~EditStateWrapper() override;</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">  QVariant read(const QString&amp; address);</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">  W_SLOT(read);</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">  void write(const QString&amp; address, const QVariant&amp; value);</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">  W_SLOT(write);</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">private:</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">  Device::DeviceList&amp; devices;</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">  const ossia::destination_t&amp; find_address(const QString&amp;);</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">  ossia::hash_map&lt;QString, ossia::destination_t&gt; m_address_cache;</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">  ossia::value_port m_port_cache;</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">  // TODO share cache</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">};</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> system(<span class="keyword">const</span> QString&amp; code) W_SIGNAL(system, code);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  QVariant <a class="code" href="class_j_s_1_1_exec_state_wrapper.html#af63ab668e814e78e1271fcf089655cd3">asArray</a>(QVariant) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  W_SLOT(<a class="code" href="class_j_s_1_1_exec_state_wrapper.html#af63ab668e814e78e1271fcf089655cd3">asArray</a>)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  QVariant asColor(QVariant) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  W_SLOT(asColor)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  QVariant asVec2(QVariant) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  W_SLOT(asVec2)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  QVariant asVec3(QVariant) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  W_SLOT(asVec3)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  QVariant asVec4(QVariant) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  W_SLOT(asVec4)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">static</span> ossia::net::node_base* find_node(DeviceCache&amp; devices, std::string_view name);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">const</span> ossia::destination_t&amp; find_address(<span class="keyword">const</span> QString&amp;);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  DeviceCache devices;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  DevicePushFunction on_push;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  ossia::hash_map&lt;QString, ossia::destination_t&gt; m_address_cache;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  ossia::value_port m_port_cache;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="comment">// TODO share cache</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">class EditStateWrapper : public QObject</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">{</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">  W_OBJECT(EditStateWrapper)</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">public:</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">  EditStateWrapper(Device::DeviceList&amp; state, QObject* parent)</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">      : QObject{parent}</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">      , devices{state}</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">  {</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">  }</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">  ~EditStateWrapper() override;</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">  QVariant read(const QString&amp; address);</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">  W_SLOT(read);</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">  void write(const QString&amp; address, const QVariant&amp; value);</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">  W_SLOT(write);</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">private:</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">  Device::DeviceList&amp; devices;</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">  const ossia::destination_t&amp; find_address(const QString&amp;);</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">  ossia::hash_map&lt;QString, ossia::destination_t&gt; m_address_cache;</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">  ossia::value_port m_port_cache;</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">  // TODO share cache</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">};</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
 <div class="ttc" id="aclass_j_s_1_1_exec_state_wrapper_html"><div class="ttname"><a href="class_j_s_1_1_exec_state_wrapper.html">JS::ExecStateWrapper</a></div><div class="ttdef"><b>Definition:</b> JSAPIWrapper.hpp:31</div></div>
+<div class="ttc" id="aclass_j_s_1_1_exec_state_wrapper_html_af63ab668e814e78e1271fcf089655cd3"><div class="ttname"><a href="class_j_s_1_1_exec_state_wrapper.html#af63ab668e814e78e1271fcf089655cd3">JS::ExecStateWrapper::asArray</a></div><div class="ttdeci">QVariant asArray(QVariant) const noexcept</div><div class="ttdoc">Conversions ///.</div><div class="ttdef"><b>Definition:</b> JSAPIWrapper.cpp:192</div></div>
 <div class="ttc" id="anamespace_device_html"><div class="ttname"><a href="namespace_device.html">Device</a></div><div class="ttdoc">Manipulation of Devices from Qt.</div><div class="ttdef"><b>Definition:</b> AddressSettings.cpp:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
