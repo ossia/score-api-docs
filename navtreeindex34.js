@@ -1,5 +1,14 @@
 var NAVTREEINDEX34 =
 {
+"class_scenario_1_1_command_1_1_serializable_move_event.html#a2dcae9c126610bd2427fe2175611a894":[12,0,48,0,81,0],
+"class_scenario_1_1_command_1_1_serializable_move_event.html#a43d34e4bba2eecf0bc8cd35cb3458b13":[12,0,48,0,81,2],
+"class_scenario_1_1_command_1_1_set_auto_trigger.html":[12,0,48,0,107],
+"class_scenario_1_1_command_1_1_set_auto_trigger.html#a3445c3173d43f323b0de6b776dc66ca1":[12,0,48,0,107,1],
+"class_scenario_1_1_command_1_1_set_auto_trigger.html#a853996fba865495ea0a31768107594b9":[12,0,48,0,107,4],
+"class_scenario_1_1_command_1_1_set_auto_trigger.html#aa445b99edee334ce1101a4371cc679e3":[12,0,48,0,107,2],
+"class_scenario_1_1_command_1_1_set_auto_trigger.html#af083a62034fe94af9f49fa28f8300b6d":[12,0,48,0,107,3],
+"class_scenario_1_1_command_1_1_set_auto_trigger.html#aff4d6687b7f78dfb91cbb4e3fc839705":[12,0,48,0,107,0],
+"class_scenario_1_1_command_1_1_set_bus.html":[12,0,48,0,28],
 "class_scenario_1_1_command_1_1_set_bus.html#a0e1454d6368417ba6b412ade58ad66ac":[12,0,48,0,28,1],
 "class_scenario_1_1_command_1_1_set_bus.html#a109953444d08829820cb2a6d5d7a7b1f":[12,0,48,0,28,4],
 "class_scenario_1_1_command_1_1_set_bus.html#a12898b02cfe7a02ce7ba9d84906edc66":[12,0,48,0,28,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX34 =
 "class_scenario_1_1_displayed_elements_provider.html#aa14f960710c9b89a693d9cb609226095":[12,0,48,75,4],
 "class_scenario_1_1_displayed_elements_provider.html#aba0ff75ddf87a520301c7a98b36a5a0d":[12,0,48,75,0],
 "class_scenario_1_1_displayed_elements_provider.html#ac73b648c8d3f13ee8c01c912a4dd1fbc":[12,0,48,75,1],
-"class_scenario_1_1_displayed_elements_provider_list.html":[12,0,48,76],
-"class_scenario_1_1_displayed_elements_tool_palette_factory.html":[12,0,48,82],
-"class_scenario_1_1_displayed_elements_tool_palette_factory_list.html":[12,0,48,83],
-"class_scenario_1_1_do_not_move_interval___state_wrapper.html":[12,0,48,77],
-"class_scenario_1_1_drop_handler.html":[12,0,48,19],
-"class_scenario_1_1_drop_handler.html#a07ba09f2eeb5a6f9216ebc098535b1e8":[12,0,48,19,1],
-"class_scenario_1_1_drop_handler.html#a172f81a0cec93e59059f498d525ae14b":[12,0,48,19,0],
-"class_scenario_1_1_drop_handler.html#aa6706a2a71c3e92bfc8bbc4828695355":[12,0,48,19,3],
-"class_scenario_1_1_drop_handler.html#ace758a3ba157fd2a394b30dc91776d73":[12,0,48,19,2],
-"class_scenario_1_1_drop_handler.html#adcfe90b9c3576d44fd8961206b344682":[12,0,48,19,5]
+"class_scenario_1_1_displayed_elements_provider_list.html":[12,0,48,76]
 };

@@ -1,5 +1,14 @@
 var NAVTREEINDEX70 =
 {
+"struct_nodes_1_1_midi_hi_res_1_1_input_1_1_metadata.html":[12,0,36,23,0,0],
+"struct_nodes_1_1_midi_hi_res_1_1_output.html":[12,0,36,23,1],
+"struct_nodes_1_1_midi_hi_res_1_1_output.html#a2594813c27cc5a09321f63d1a7390a0c":[12,0,36,23,1,1],
+"struct_nodes_1_1_midi_hi_res_1_1_output_1_1_metadata.html":[12,0,36,23,1,0],
+"struct_nodes_1_1_midi_util_1_1_node.html":[12,0,36,24,0],
+"struct_nodes_1_1_midi_util_1_1_node.html#aed8866dc42a7184de254ae358cd9f3f0":[12,0,36,24,0,2],
+"struct_nodes_1_1_midi_util_1_1_node_1_1_metadata.html":[12,0,36,24,0,0],
+"struct_nodes_1_1_midi_util_1_1_node_1_1_state.html":[12,0,36,24,0,1],
+"struct_nodes_1_1_midi_util_1_1_node_1_1_state.html#a21555f4b6b2c9fcd12ac4d53052a8949":[12,0,36,24,0,1,1],
 "struct_nodes_1_1_midi_util_1_1_node_1_1_state.html#a58bdd7eee84efa87a4fad9480c69ae96":[12,0,36,24,0,1,2],
 "struct_nodes_1_1_midi_util_1_1_node_1_1_state.html#adb773ae83389f7028e70cc23626cca86":[12,0,36,24,0,1,0],
 "struct_nodes_1_1_midi_util_1_1_node_1_1_state.html#ae53f4ac0030b7a8b67612c5cc8d511f1":[12,0,36,24,0,1,3],
@@ -240,14 +249,5 @@ var NAVTREEINDEX70 =
 "struct_process_1_1_magnetic_info.html#a77d6bf73b8fd25e3d44ded1c6c1cd9e6":[12,0,42,7,2],
 "struct_process_1_1_magnetic_info.html#a8150ac3d0a59d9a38182095611e8caa3":[12,0,42,7,3],
 "struct_process_1_1_magnetic_info.html#a96f31e2800f223f03e5043439aa899c4":[12,0,42,7,1],
-"struct_process_1_1_multi_script_dialog_1_1_editor_tab.html":[12,0,42,82,0],
-"struct_process_1_1_multi_script_dialog_1_1_editor_tab.html#aff1d3f9585e815f9d0a8a3d272993c97":[12,0,42,82,0,0],
-"struct_process_1_1_outlets.html":[12,0,42,40],
-"struct_process_1_1_pixmaps.html":[12,0,42,90],
-"struct_process_1_1_pixmaps.html#a051f1b896236ce0c9d19e1300a4296d2":[12,0,42,90,18],
-"struct_process_1_1_pixmaps.html#a25ae2768266b8dea0499fabe0705a5dc":[12,0,42,90,4],
-"struct_process_1_1_pixmaps.html#a2fb0e3f337c29e745fab4acea156253d":[12,0,42,90,1],
-"struct_process_1_1_pixmaps.html#a3a67b2a7b1d3d4740fb1fe858af97087":[12,0,42,90,29],
-"struct_process_1_1_pixmaps.html#a3cfd99f9c1756f32ecbeba5a87402a9f":[12,0,42,90,23],
-"struct_process_1_1_pixmaps.html#a41dba16984afd98f047c6c6b25f2d02d":[12,0,42,90,24]
+"struct_process_1_1_multi_script_dialog_1_1_editor_tab.html":[12,0,42,82,0]
 };

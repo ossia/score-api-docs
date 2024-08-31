@@ -1,5 +1,14 @@
 var NAVTREEINDEX48 =
 {
+"classscore_1_1_int_slider.html#a72757a758807bfbd6454cf269956778a":[12,0,49,283,3],
+"classscore_1_1_int_slider.html#a89d7a8766bb2c8606fd0003eaacf0aed":[12,0,49,283,14],
+"classscore_1_1_int_slider.html#a98d691febe3e57dc663909e9ce52614b":[12,0,49,283,17],
+"classscore_1_1_int_slider.html#a9d5f1c5842c05629f3ba556fc577c546":[12,0,49,283,6],
+"classscore_1_1_int_slider.html#ab2a132644a45599bfce7b78fa6114114":[12,0,49,283,15],
+"classscore_1_1_int_slider.html#abce1a57cc3c6be1e1ba4f25371e604b0":[12,0,49,283,19],
+"classscore_1_1_int_slider.html#abe8718c4662bbdca4182c8175add3329":[12,0,49,283,11],
+"classscore_1_1_int_slider.html#adc63dc245cdadea3f4d6f51718f9756f":[12,0,49,283,12],
+"classscore_1_1_int_slider.html#af92491e6e277284e0fa764a9693f6fe3":[12,0,49,283,8],
 "classscore_1_1_int_slider.html#afc4540d0b5619cfa7e69f012ff3165e6":[12,0,49,283,7],
 "classscore_1_1_interactive_label.html":[12,0,49,7],
 "classscore_1_1_interactive_label.html#a0b877ef996cf831f9393eeb8dc95ac83":[12,0,49,7,10],
@@ -240,14 +249,5 @@ var NAVTREEINDEX48 =
 "classscore_1_1_property_command___t.html":[12,0,49,92],
 "classscore_1_1_property_command___t.html#a0fa1bb77493bca6380292080cedf8dd2":[12,0,49,92,8],
 "classscore_1_1_property_command___t.html#a0faef2daaac85d057e255cd05cad8c6b":[12,0,49,92,6],
-"classscore_1_1_property_command___t.html#a40881330da7229bf08e99de09e95e707":[12,0,49,92,3],
-"classscore_1_1_property_command___t.html#a4fd1cc71525bef220029847e1d2e9a89":[12,0,49,92,4],
-"classscore_1_1_property_command___t.html#abb3188cd4c2dc77202020ee130fadda3":[12,0,49,92,5],
-"classscore_1_1_property_command___t.html#acc7b7b4f13ead9d895b91bc3c3e78906":[12,0,49,92,7],
-"classscore_1_1_property_command___t.html#ad010e6c75c0cfdb5bafacf4d61e723ce":[12,0,49,92,1],
-"classscore_1_1_property_command___t.html#af982014a250b0fad882e5928edbb1397":[12,0,49,92,2],
-"classscore_1_1_q_graphics_button.html":[12,0,49,124],
-"classscore_1_1_q_graphics_button.html#a00243248c363bd0d7107c9417d06b025":[12,0,49,124,1],
-"classscore_1_1_q_graphics_button.html#a4c4d28e0de6197df3cc3b803b1756b6c":[12,0,49,124,3],
-"classscore_1_1_q_graphics_button.html#a958a494d5f9e2cbe423955b1c25ec7ae":[12,0,49,124,0]
+"classscore_1_1_property_command___t.html#a40881330da7229bf08e99de09e95e707":[12,0,49,92,3]
 };

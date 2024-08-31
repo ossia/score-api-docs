@@ -1,5 +1,14 @@
 var NAVTREEINDEX35 =
 {
+"class_scenario_1_1_displayed_elements_tool_palette_factory.html":[12,0,48,82],
+"class_scenario_1_1_displayed_elements_tool_palette_factory_list.html":[12,0,48,83],
+"class_scenario_1_1_do_not_move_interval___state_wrapper.html":[12,0,48,77],
+"class_scenario_1_1_drop_handler.html":[12,0,48,19],
+"class_scenario_1_1_drop_handler.html#a07ba09f2eeb5a6f9216ebc098535b1e8":[12,0,48,19,1],
+"class_scenario_1_1_drop_handler.html#a172f81a0cec93e59059f498d525ae14b":[12,0,48,19,0],
+"class_scenario_1_1_drop_handler.html#aa6706a2a71c3e92bfc8bbc4828695355":[12,0,48,19,3],
+"class_scenario_1_1_drop_handler.html#ace758a3ba157fd2a394b30dc91776d73":[12,0,48,19,2],
+"class_scenario_1_1_drop_handler.html#adcfe90b9c3576d44fd8961206b344682":[12,0,48,19,5],
 "class_scenario_1_1_drop_handler.html#af3c34305887bbc33e44c4dd9591d1c82":[12,0,48,19,4],
 "class_scenario_1_1_drop_handler_list.html":[12,0,48,21],
 "class_scenario_1_1_drop_handler_list.html#a0c9fa230ee29b70eeaa04febb9ae1ed6":[12,0,48,21,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX35 =
 "class_scenario_1_1_full_view_interval_view.html#ac75e29f6a03bb4e0a4d05cc335d8de3e":[12,0,48,104,0],
 "class_scenario_1_1_ghost_interval_drop_handler.html":[12,0,48,20],
 "class_scenario_1_1_ghost_interval_drop_handler.html#a4c6dc1da1e6d5d0e5aceaa1e9da9e1b3":[12,0,48,20,1],
-"class_scenario_1_1_ghost_interval_drop_handler.html#a6169d179f25ec4ce0e05e75d115db623":[12,0,48,20,0],
-"class_scenario_1_1_ghost_interval_drop_handler.html#aabd8a141409574227500d672f3044306":[12,0,48,20,2],
-"class_scenario_1_1_ghost_interval_drop_handler.html#adbc45b77b266d547d1255db1b8f897e6":[12,0,48,20,3],
-"class_scenario_1_1_good_old_displacement_policy.html":[12,0,48,292],
-"class_scenario_1_1_graphal_interval_presenter.html":[12,0,48,115],
-"class_scenario_1_1_graphal_interval_presenter.html#a1c8a678a6eadbadd06f0ea6f08213e8e":[12,0,48,115,10],
-"class_scenario_1_1_graphal_interval_presenter.html#a23ecc3c753d38c597405e79baa4e056d":[12,0,48,115,12],
-"class_scenario_1_1_graphal_interval_presenter.html#a2bb49c193493fae653f371d4c062c5a1":[12,0,48,115,22],
-"class_scenario_1_1_graphal_interval_presenter.html#a2bdff86d075606d2cd052636bffc3c6b":[12,0,48,115,4],
-"class_scenario_1_1_graphal_interval_presenter.html#a2d17764f8ce92bef8f463640e0e73560":[12,0,48,115,16]
+"class_scenario_1_1_ghost_interval_drop_handler.html#a6169d179f25ec4ce0e05e75d115db623":[12,0,48,20,0]
 };

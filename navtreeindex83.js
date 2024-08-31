@@ -1,5 +1,14 @@
 var NAVTREEINDEX83 =
 {
+"structscore_1_1gfx_1_1_rendered_i_s_f_node.html#ad9f49cf6238c24c06c618c8e0de3455a":[12,0,49,2,51,7],
+"structscore_1_1gfx_1_1_rendered_i_s_f_node.html#ae251267542155bd005dd8d1c6d9d87c2":[12,0,49,2,51,6],
+"structscore_1_1gfx_1_1_rendered_i_s_f_node.html#ae498906a7750ad7159e367fb6a3784f3":[12,0,49,2,51,3],
+"structscore_1_1gfx_1_1_rendered_phong_node.html":[12,0,49,2,46],
+"structscore_1_1gfx_1_1_rendered_phong_node.html#a6fb6b8b534b838fcdb31ff7c64ead3f1":[12,0,49,2,46,0],
+"structscore_1_1gfx_1_1_sampler.html":[12,0,49,2,61],
+"structscore_1_1gfx_1_1_sampler.html#a57623fcefbc75d11cedba03e2006ad03":[12,0,49,2,61,0],
+"structscore_1_1gfx_1_1_sampler.html#ad4d2595df54f6132f95d404f26033339":[12,0,49,2,61,1],
+"structscore_1_1gfx_1_1_screen_node.html":[12,0,49,2,55],
 "structscore_1_1gfx_1_1_screen_node.html#a097de047236ffa69435dd667db2878c8":[12,0,49,2,55,6],
 "structscore_1_1gfx_1_1_screen_node.html#a1c165b0493bb77ebaf2f8cb29cc2c7ca":[12,0,49,2,55,26],
 "structscore_1_1gfx_1_1_screen_node.html#a2432ebb887ebb71c944a17b39a5f9a9f":[12,0,49,2,55,15],
@@ -240,14 +249,5 @@ var NAVTREEINDEX83 =
 "structscore_1_1indirect__ptr__iterator.html#a035b15ac1bb3ac4495a38dd50076160f":[12,0,49,256,7],
 "structscore_1_1indirect__ptr__iterator.html#a11ec1b4ab9eade63120854e24e173f46":[12,0,49,256,15],
 "structscore_1_1indirect__ptr__iterator.html#a12d31b08149f3f31e18206f3015beb11":[12,0,49,256,0],
-"structscore_1_1indirect__ptr__iterator.html#a1aca5d5d65acaaa0d7d39389830b7772":[12,0,49,256,2],
-"structscore_1_1indirect__ptr__iterator.html#a1b3d6ad898022cb2c2d5fb1c604fc644":[12,0,49,256,10],
-"structscore_1_1indirect__ptr__iterator.html#a28150384272b1030a9fd1deddb2aad0a":[12,0,49,256,6],
-"structscore_1_1indirect__ptr__iterator.html#a4a133ce70a7172d4e5d859c3e1286813":[12,0,49,256,9],
-"structscore_1_1indirect__ptr__iterator.html#a62644e81b467d8f266045b73542cd261":[12,0,49,256,1],
-"structscore_1_1indirect__ptr__iterator.html#a6423135f1b4fac2dfa664bd7173c2665":[12,0,49,256,3],
-"structscore_1_1indirect__ptr__iterator.html#a75c2328e776f86085199052d34caa43d":[12,0,49,256,12],
-"structscore_1_1indirect__ptr__iterator.html#aa8a2e2b6cb6693df15f78a8d7b97321c":[12,0,49,256,14],
-"structscore_1_1indirect__ptr__iterator.html#aaf547fd5f21555dc83b17dfd49374640":[12,0,49,256,5],
-"structscore_1_1indirect__ptr__iterator.html#acab90026e166300c600d9ee73a7a32a0":[12,0,49,256,13]
+"structscore_1_1indirect__ptr__iterator.html#a1aca5d5d65acaaa0d7d39389830b7772":[12,0,49,256,2]
 };

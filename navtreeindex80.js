@@ -1,5 +1,14 @@
 var NAVTREEINDEX80 =
 {
+"structscore_1_1_document_context.html#aa66f8e03d18b7b055eca2070541480d0":[12,0,49,99,15],
+"structscore_1_1_document_context.html#aaaea7b1d93b33388a445ff9dc0e97828":[12,0,49,99,13],
+"structscore_1_1_document_context.html#ab07daa73d84357e9419a6500b9f9dff5":[12,0,49,99,18],
+"structscore_1_1_document_context.html#ac0c7d83df075bb81b1aab2a807dd1cd4":[12,0,49,99,3],
+"structscore_1_1_document_context.html#acbf184953c3798743dc6e20e294c0b98":[12,0,49,99,5],
+"structscore_1_1_document_context.html#acbfb83be5ddbc43a69dee2141617a68c":[12,0,49,99,8],
+"structscore_1_1_document_context.html#ad667dcddef2b41f4ca2109a316edf6da":[12,0,49,99,11],
+"structscore_1_1_document_context.html#ad9a3b2445ed3cecaaad316710071f1b3":[12,0,49,99,1],
+"structscore_1_1_document_context.html#add7752999aa62b29d7ced8fb5b818de8":[12,0,49,99,6],
 "structscore_1_1_document_context.html#aed20fab81ba0304225316f7e50e19c73":[12,0,49,99,12],
 "structscore_1_1_document_list.html":[12,0,49,38],
 "structscore_1_1_document_list.html#a40e417336380bdceb94ca18ca654d50c":[12,0,49,38,4],
@@ -240,14 +249,5 @@ var NAVTREEINDEX80 =
 "structscore_1_1_settings_parameter_metadata.html#a0b8c2550d83a978ce144735167a79b12":[12,0,49,231,5],
 "structscore_1_1_settings_parameter_metadata.html#a2174d54a642f0d5cfdcfa43437a8e9d3":[12,0,49,231,1],
 "structscore_1_1_settings_parameter_metadata.html#a620afa2af232b1edf8df5c52d0f56447":[12,0,49,231,4],
-"structscore_1_1_settings_parameter_metadata.html#ac52b9edddc59ed4cc4fb94c11bb825a5":[12,0,49,231,0],
-"structscore_1_1_settings_parameter_metadata.html#ae2c05283c6ffb397c199e92ff1e47363":[12,0,49,231,3],
-"structscore_1_1_settings_parameter_metadata.html#aeb4b6df903357484301d71632177722e":[12,0,49,231,2],
-"structscore_1_1_size_visitor.html":[12,0,49,141],
-"structscore_1_1_size_visitor.html#a1b1168e526b8089ff48111ee15b04646":[12,0,49,141,6],
-"structscore_1_1_size_visitor.html#a21c00c8d5512a2f81921f9b90613eeb6":[12,0,49,141,4],
-"structscore_1_1_size_visitor.html#a9e5bf91a2cd1db2e1c3b981523975960":[12,0,49,141,0],
-"structscore_1_1_size_visitor.html#acc9959a14d0de350e889822c0ed7a69c":[12,0,49,141,1],
-"structscore_1_1_size_visitor.html#ad3b72f4272c3bfa2ab0fd5396acc5927":[12,0,49,141,2],
-"structscore_1_1_size_visitor.html#adcb7b25972f744153ab994a27edada4d":[12,0,49,141,3]
+"structscore_1_1_settings_parameter_metadata.html#ac52b9edddc59ed4cc4fb94c11bb825a5":[12,0,49,231,0]
 };

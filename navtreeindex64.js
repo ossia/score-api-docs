@@ -1,5 +1,14 @@
 var NAVTREEINDEX64 =
 {
+"struct_faust_d_s_p_1_1_wrap.html#a226390a892f2f9a2c5466ba436bb0c16":[12,0,18,1,6],
+"struct_faust_d_s_p_1_1_wrap.html#a40814596810e98a9414373e0a031bd4a":[12,0,18,1,11],
+"struct_faust_d_s_p_1_1_wrap.html#a41d721d91fd7d0d633c2a96c09b28e1b":[12,0,18,1,3],
+"struct_faust_d_s_p_1_1_wrap.html#a49dd0587e1dad7754b2b66ad25f5304c":[12,0,18,1,1],
+"struct_faust_d_s_p_1_1_wrap.html#a53fac267a04244adb07fa1f04444848a":[12,0,18,1,12],
+"struct_faust_d_s_p_1_1_wrap.html#a688b9cfbc6db34723c393a2792e60fb0":[12,0,18,1,7],
+"struct_faust_d_s_p_1_1_wrap.html#a6b07966049e73370812c864037814eeb":[12,0,18,1,10],
+"struct_faust_d_s_p_1_1_wrap.html#a6f631c173036ff9f22f17d82a97cd6f5":[12,0,18,1,14],
+"struct_faust_d_s_p_1_1_wrap.html#a907570f461f857119fec60693bbe7343":[12,0,18,1,4],
 "struct_faust_d_s_p_1_1_wrap.html#a98b432f477ab4497198954e88f4b4153":[12,0,18,1,13],
 "struct_faust_d_s_p_1_1_wrap.html#aa2865c300ba5d31797b49e21bed3d366":[12,0,18,1,8],
 "struct_faust_d_s_p_1_1_wrap.html#acc61efdc4861553862fa00bdf73be301":[12,0,18,1,9],
@@ -240,14 +249,5 @@ var NAVTREEINDEX64 =
 "struct_gfx_1_1_sh4lt_output_node.html#ad33dbc26906ae1a53760530e06a10ded":[12,0,19,64,1],
 "struct_gfx_1_1_sh4lt_output_node.html#adb7d0be50e2443231fcce8fcb42a618b":[12,0,19,64,16],
 "struct_gfx_1_1_sh4lt_output_node.html#adc14c61b58c198c80c27fbae01a86180":[12,0,19,64,15],
-"struct_gfx_1_1_sh4lt_output_node.html#add8e0b119948f5a0de92392d7dfde3ec":[12,0,19,64,23],
-"struct_gfx_1_1_sh4lt_output_node.html#af1c645dcf539d12ff54df1a249c7dd38":[12,0,19,64,9],
-"struct_gfx_1_1_sh4lt_output_node.html#afb1a231daae4105680be94810a3fe462":[12,0,19,64,8],
-"struct_gfx_1_1_sh4lt_output_node.html#afbf355a03f4aa5713269763da18eefff":[12,0,19,64,3],
-"struct_gfx_1_1_shader_source.html":[12,0,19,67],
-"struct_gfx_1_1_shader_source.html#a07923f9dd253d54b4a222e8fef078c89":[12,0,19,67,12],
-"struct_gfx_1_1_shader_source.html#a0ff7b020926bd5c57ec80fce82104f6c":[12,0,19,67,5],
-"struct_gfx_1_1_shader_source.html#a24d69597743b70d3a2398ad7f818400a":[12,0,19,67,9],
-"struct_gfx_1_1_shader_source.html#a29fddbbfb5434dad6f420cf481a1531d":[12,0,19,67,15],
-"struct_gfx_1_1_shader_source.html#a2a50ab4b9c9a6b0f955036e811b13e5c":[12,0,19,67,8]
+"struct_gfx_1_1_sh4lt_output_node.html#add8e0b119948f5a0de92392d7dfde3ec":[12,0,19,64,23]
 };

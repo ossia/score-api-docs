@@ -2044,8 +2044,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model >", "class_path.html", null ],
+    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Patternist::ProcessModel >", "class_path.html", null ],
@@ -2742,7 +2742,8 @@ var hierarchy =
         [ "Protocols::JoystickEnumerator", "class_protocols_1_1_joystick_enumerator.html", null ],
         [ "Protocols::LibmapperClientEnumerator", "class_protocols_1_1_libmapper_client_enumerator.html", null ],
         [ "Protocols::LibraryDeviceEnumerator", "class_protocols_1_1_library_device_enumerator.html", null ],
-        [ "Protocols::MidiEnumerator< Type >", "class_protocols_1_1_midi_enumerator.html", null ]
+        [ "Protocols::MidiEnumerator< Type >", "class_protocols_1_1_midi_enumerator.html", null ],
+        [ "Protocols::MidiKeyboardEnumerator", "class_protocols_1_1_midi_keyboard_enumerator.html", null ]
       ] ],
       [ "Device::DeviceInterface", "class_device_1_1_device_interface.html", null ],
       [ "Device::DeviceList", "class_device_1_1_device_list.html", null ],
@@ -2957,6 +2958,7 @@ var hierarchy =
       [ "Process::NodeItem", "class_process_1_1_node_item.html", null ],
       [ "Process::ProcessFocusManager", "class_process_1_1_process_focus_manager.html", null ],
       [ "Protocols::DNSSDWorker", "class_protocols_1_1_d_n_s_s_d_worker.html", null ],
+      [ "Protocols::MidiKeyboardEventFilter", "class_protocols_1_1_midi_keyboard_event_filter.html", null ],
       [ "Recording::ApplicationPlugin", "class_recording_1_1_application_plugin.html", null ],
       [ "Recording::AutomationRecorder", "class_recording_1_1_automation_recorder.html", null ],
       [ "Recording::MessageRecorder", "class_recording_1_1_message_recorder.html", null ],

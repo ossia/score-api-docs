@@ -1,5 +1,14 @@
 var NAVTREEINDEX58 =
 {
+"namespacemembers.html":[11,1,0],
+"namespacemembers_enum.html":[11,1,3],
+"namespacemembers_eval.html":[11,1,4],
+"namespacemembers_func.html":[11,1,1],
+"namespacemembers_type.html":[11,1,2],
+"namespaceoscr.html":[11,0,39],
+"namespaceoscr.html#a0b1e23efad81b231e9a392bf927a5952":[11,0,39,61],
+"namespaceoscr.html#a12b9de9e4127874503bede0a45f841ac":[11,0,39,73],
+"namespaceoscr.html#a18b244ce2be8e952ff87f6d5d8a947a8":[11,0,39,55],
 "namespaceoscr.html#a2edcf62517990ac55add40293adc9ce8":[11,0,39,59],
 "namespaceoscr.html#a3027b1701466f874e6b570b6852a272a":[11,0,39,64],
 "namespaceoscr.html#a31f10d4052c20ea6d482d579e9e541c9":[11,0,39,60],
@@ -240,14 +249,5 @@ var NAVTREEINDEX58 =
 "plugins_2score-plugin-remotecontrol_2_remote_control_2_settings_2_presenter_8hpp_source.html":[13,0,978],
 "plugins_2score-plugin-spline3d_2_spline3_d_2_metadata_8hpp_source.html":[13,0,766],
 "plugins_2score-plugin-spline3d_2_spline3_d_2commands_8hpp_source.html":[13,0,189],
-"plugins_2score-plugin-spline_2_spline_2_metadata_8hpp_source.html":[13,0,765],
-"plugins_2score-plugin-spline_2_spline_2_presenter_8hpp_source.html":[13,0,979],
-"plugins_2score-plugin-spline_2_spline_2commands_8hpp_source.html":[13,0,188],
-"plugins_2score-plugin-transport_2_transport_2_document_plugin_8hpp_source.html":[13,0,360],
-"plugins_2score-plugin-vst3_2_vst3_2_u_i_2_window_8cpp.html#aac444e736c433bc7864afb6cd166aff5":[11,0,62,31],
-"plugins_2score-plugin-vst3_2_vst3_2_u_i_2_window_8hpp_source.html":[13,0,1505],
-"plugins_2score-plugin-vst3_2_vst3_2commands_8hpp_source.html":[13,0,191],
-"plugins_2score-plugin-vst_2_vst_2_settings_8hpp_source.html":[13,0,1269],
-"plugins_2score-plugin-vst_2_vst_2_window_8hpp_source.html":[13,0,1504],
-"plugins_2score-plugin-vst_2_vst_2commands_8hpp_source.html":[13,0,190]
+"plugins_2score-plugin-spline_2_spline_2_metadata_8hpp_source.html":[13,0,765]
 };

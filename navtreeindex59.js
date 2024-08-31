@@ -1,5 +1,14 @@
 var NAVTREEINDEX59 =
 {
+"plugins_2score-plugin-spline_2_spline_2_presenter_8hpp_source.html":[13,0,979],
+"plugins_2score-plugin-spline_2_spline_2commands_8hpp_source.html":[13,0,188],
+"plugins_2score-plugin-transport_2_transport_2_document_plugin_8hpp_source.html":[13,0,360],
+"plugins_2score-plugin-vst3_2_vst3_2_u_i_2_window_8cpp.html#aac444e736c433bc7864afb6cd166aff5":[11,0,62,31],
+"plugins_2score-plugin-vst3_2_vst3_2_u_i_2_window_8hpp_source.html":[13,0,1505],
+"plugins_2score-plugin-vst3_2_vst3_2commands_8hpp_source.html":[13,0,191],
+"plugins_2score-plugin-vst_2_vst_2_settings_8hpp_source.html":[13,0,1269],
+"plugins_2score-plugin-vst_2_vst_2_window_8hpp_source.html":[13,0,1504],
+"plugins_2score-plugin-vst_2_vst_2commands_8hpp_source.html":[13,0,190],
 "plugins_2score-plugin-ysfx_2_y_s_f_x_2_executor_2_component_8hpp.html#a92ec86cd10a125a4b9c6c372aa12c48e":[11,0,65,0,2],
 "plugins_2score-plugin-ysfx_2_y_s_f_x_2_executor_2_component_8hpp_source.html":[13,0,208],
 "prefix_8hpp_source.html":[13,0,967],
@@ -240,14 +249,5 @@ var NAVTREEINDEX59 =
 "score-plugin-ysfx_2_y_s_f_x_2_application_plugin_8hpp_source.html":[13,0,64],
 "score-plugin-ysfx_2_y_s_f_x_2_commands_2_command_factory_8hpp.html#aa9e3b44cfa70305875420ce7274d7412":[11,0,65,10],
 "score-plugin-ysfx_2_y_s_f_x_2_commands_2_command_factory_8hpp_source.html":[13,0,178],
-"score-plugin-ysfx_2_y_s_f_x_2_commands_2_edit_script_8hpp_source.html":[13,0,392],
-"score-plugin-ysfx_2_y_s_f_x_2_commands_2_script_macro_8hpp_source.html":[13,0,1227],
-"score-plugin-ysfx_2_y_s_f_x_2_process_factory_8hpp.html#ac214dfd75de5886e29f8d1f9e17faf97":[11,0,65,9],
-"score-plugin-ysfx_2_y_s_f_x_2_process_factory_8hpp_source.html":[13,0,1006],
-"score-plugin-ysfx_2_y_s_f_x_2_process_metadata_8hpp_source.html":[13,0,1013],
-"score-plugin-ysfx_2_y_s_f_x_2_process_model_8hpp.html#a278d0f563aa4a488bea4e6828962ba2a":[11,0,65,8],
-"score-plugin-ysfx_2_y_s_f_x_2_process_model_8hpp_source.html":[13,0,1016],
-"score2_o_s_s_i_a_8cpp.html#a0266b9f31c03952c21538f64b33e1876":[11,0,12,1,11],
-"score2_o_s_s_i_a_8cpp.html#a4fd234373c53268c5a385d2b8601ce6c":[11,0,12,1,7],
-"score2_o_s_s_i_a_8cpp.html#a5564a16675d1668701866e32e669ec4c":[11,0,12,1,4]
+"score-plugin-ysfx_2_y_s_f_x_2_commands_2_edit_script_8hpp_source.html":[13,0,392]
 };

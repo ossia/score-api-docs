@@ -1,5 +1,14 @@
 var NAVTREEINDEX61 =
 {
+"struct_control_1_1_custom_u_i_setup.html#a2c7a37125022a7c15e611cf85419f328":[12,0,6,27,2],
+"struct_control_1_1_custom_u_i_setup.html#a3682cb6fb50c1ade21bf48ea75373bea":[12,0,6,27,7],
+"struct_control_1_1_custom_u_i_setup.html#a3b17fc3555e6d65abe63cb2b1e4f0b28":[12,0,6,27,4],
+"struct_control_1_1_custom_u_i_setup.html#a6598ed16cdb92d9e787adb53530907a0":[12,0,6,27,5],
+"struct_control_1_1_custom_u_i_setup.html#a8eb55c45bb08292b9c1f0e4b53a47156":[12,0,6,27,8],
+"struct_control_1_1_custom_u_i_setup.html#aa5dac6c52a4be71bf8b02d368ebd9a6b":[12,0,6,27,0],
+"struct_control_1_1_custom_u_i_setup.html#aabbdc26bb2641f298edd9e257c185eb4":[12,0,6,27,3],
+"struct_control_1_1_enum.html":[12,0,6,14],
+"struct_control_1_1_enum.html#a27acdc231176eed775243953340a917e":[12,0,6,14,0],
 "struct_control_1_1_enum.html#a291383a5802ef45f3b934d535fa007ab":[12,0,6,14,2],
 "struct_control_1_1_enum.html#a2fbce06399ee6fd4c2c3325a6ed563f5":[12,0,6,14,4],
 "struct_control_1_1_enum.html#a54d79bbd830dc11c4246d263994c15b5":[12,0,6,14,5],
@@ -240,14 +249,5 @@ var NAVTREEINDEX61 =
 "struct_curve_1_1_curve_domain.html#a5b77b1fa927d3ae152ba3fedf0999db9":[12,0,9,9,7],
 "struct_curve_1_1_curve_domain.html#a6188781084458cb5210143c8e5dd5900":[12,0,9,9,3],
 "struct_curve_1_1_curve_domain.html#a64f7cf3858b2213fad3817a0104d48a8":[12,0,9,9,14],
-"struct_curve_1_1_curve_domain.html#a67181cac018932b4392cd465094325b7":[12,0,9,9,11],
-"struct_curve_1_1_curve_domain.html#a701d3db8b56494531e63805358548cbe":[12,0,9,9,6],
-"struct_curve_1_1_curve_domain.html#a86668b2190d8e440339943e4f9e5d73c":[12,0,9,9,8],
-"struct_curve_1_1_curve_domain.html#a8c16a67dfbc7b6552b7ff67409964a21":[12,0,9,9,9],
-"struct_curve_1_1_curve_domain.html#a8d6bfdee7acdf1028b812ab4ab6aae7b":[12,0,9,9,12],
-"struct_curve_1_1_curve_domain.html#aa7b89a9bc3ee6da633383ea04cd05650":[12,0,9,9,0],
-"struct_curve_1_1_curve_domain.html#ac986ffbfbafe52c462b6b6c4dfb68003":[12,0,9,9,13],
-"struct_curve_1_1_curve_domain.html#ace87e30be20f6ea1eaa97d3b4ca4e4d1":[12,0,9,9,10],
-"struct_curve_1_1_curve_domain.html#ae24aa7619910c9e248eaa76592ce40a7":[12,0,9,9,5],
-"struct_curve_1_1_curve_event.html":[12,0,9,24]
+"struct_curve_1_1_curve_domain.html#a67181cac018932b4392cd465094325b7":[12,0,9,9,11]
 };

@@ -1,5 +1,14 @@
 var NAVTREEINDEX74 =
 {
+"struct_scenario_1_1_slot.html#ab3acf99d26353a8e77ff99d37f4cc9f8":[12,0,48,125,4],
+"struct_scenario_1_1_slot.html#ac012744b2d36e07463882fd1b3d9e3d5":[12,0,48,125,2],
+"struct_scenario_1_1_slot.html#adcbfaefe9a125442c118598e1811e14d":[12,0,48,125,9],
+"struct_scenario_1_1_slot.html#af19d2260a15797ca089cc68c57233c5e":[12,0,48,125,13],
+"struct_scenario_1_1_slot.html#afb3cbe5bf847e941f34728104b135c03":[12,0,48,125,8],
+"struct_scenario_1_1_slot_id.html":[12,0,48,128],
+"struct_scenario_1_1_slot_id.html#a009e7dc7d1980b3cfd8b83521c7a5bb5":[12,0,48,128,6],
+"struct_scenario_1_1_slot_id.html#a020477d28b07726ab6d3f85f17a8bb6f":[12,0,48,128,8],
+"struct_scenario_1_1_slot_id.html#a02ac1fdd5a1662b1edad32648a1fe30e":[12,0,48,128,10],
 "struct_scenario_1_1_slot_id.html#a032a81ae0d23334734fbeea916f21680":[12,0,48,128,3],
 "struct_scenario_1_1_slot_id.html#a0d90fc79bdbcbb8caff50218d3fd0000":[12,0,48,128,7],
 "struct_scenario_1_1_slot_id.html#a7a43491af681e677ea682e7f68b94ade":[12,0,48,128,2],
@@ -240,14 +249,5 @@ var NAVTREEINDEX74 =
 "struct_state_1_1_message.html#a53a68d649e24c0eade0fbf8a2ca977d4":[12,0,53,6,4],
 "struct_state_1_1_message.html#a6b98af05e6ee776446ef2adace3f2a24":[12,0,53,6,2],
 "struct_state_1_1_message.html#a6c1a5b8741c55c71d22c6c08a1f45bfb":[12,0,53,6,3],
-"struct_state_1_1_message.html#aca67cdb0a258194f5e3fee282ef8fb10":[12,0,53,6,1],
-"struct_state_1_1_pulse.html":[12,0,53,8],
-"struct_state_1_1_pulse.html#a828a6f385ea298ee2da8802a29c6005f":[12,0,53,8,1],
-"struct_state_1_1_pulse.html#a8de2d510c5fa6085ef71cd3f040a583d":[12,0,53,8,0],
-"struct_state_1_1_relation.html":[12,0,53,7],
-"struct_state_1_1_relation.html#a1237eee420f385bae68359b82bb6a2fa":[12,0,53,7,7],
-"struct_state_1_1_relation.html#a17973aaad49108c6a2095eb922ec6e9f":[12,0,53,7,8],
-"struct_state_1_1_relation.html#a1f65a49fd8d5cc628b549b2de223bdb5":[12,0,53,7,0],
-"struct_state_1_1_relation.html#a21e3a646aff8cf67a35983ee8fa801eb":[12,0,53,7,9],
-"struct_state_1_1_relation.html#a4e4fc4de0cc0d32ebb948689cfc6b938":[12,0,53,7,2]
+"struct_state_1_1_message.html#aca67cdb0a258194f5e3fee282ef8fb10":[12,0,53,6,1]
 };

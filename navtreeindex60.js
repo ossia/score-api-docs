@@ -1,5 +1,14 @@
 var NAVTREEINDEX60 =
 {
+"score-plugin-ysfx_2_y_s_f_x_2_commands_2_script_macro_8hpp_source.html":[13,0,1227],
+"score-plugin-ysfx_2_y_s_f_x_2_process_factory_8hpp.html#ac214dfd75de5886e29f8d1f9e17faf97":[11,0,65,9],
+"score-plugin-ysfx_2_y_s_f_x_2_process_factory_8hpp_source.html":[13,0,1006],
+"score-plugin-ysfx_2_y_s_f_x_2_process_metadata_8hpp_source.html":[13,0,1013],
+"score-plugin-ysfx_2_y_s_f_x_2_process_model_8hpp.html#a278d0f563aa4a488bea4e6828962ba2a":[11,0,65,8],
+"score-plugin-ysfx_2_y_s_f_x_2_process_model_8hpp_source.html":[13,0,1016],
+"score2_o_s_s_i_a_8cpp.html#a0266b9f31c03952c21538f64b33e1876":[11,0,12,1,11],
+"score2_o_s_s_i_a_8cpp.html#a4fd234373c53268c5a385d2b8601ce6c":[11,0,12,1,7],
+"score2_o_s_s_i_a_8cpp.html#a5564a16675d1668701866e32e669ec4c":[11,0,12,1,4],
 "score2_o_s_s_i_a_8cpp.html#a71b8ad4d9fe2641013cac3e86bde5012":[11,0,12,1,10],
 "score2_o_s_s_i_a_8cpp.html#a7d6c34cf5f04ed2489c8ce4d123e5b4d":[11,0,12,1,12],
 "score2_o_s_s_i_a_8cpp.html#acc7170596457206e27151fbee9b714e0":[11,0,12,1,9],
@@ -240,14 +249,5 @@ var NAVTREEINDEX60 =
 "struct_control_1_1_custom_u_i_setup.html":[12,0,6,27],
 "struct_control_1_1_custom_u_i_setup.html#a1ec59ed8b27cdea17cfb4fef413161a9":[12,0,6,27,9],
 "struct_control_1_1_custom_u_i_setup.html#a1eed01131fe7c1fa36c68584903012e1":[12,0,6,27,6],
-"struct_control_1_1_custom_u_i_setup.html#a2737f785ce5717fdf701a66ac872e7c5":[12,0,6,27,1],
-"struct_control_1_1_custom_u_i_setup.html#a2c7a37125022a7c15e611cf85419f328":[12,0,6,27,2],
-"struct_control_1_1_custom_u_i_setup.html#a3682cb6fb50c1ade21bf48ea75373bea":[12,0,6,27,7],
-"struct_control_1_1_custom_u_i_setup.html#a3b17fc3555e6d65abe63cb2b1e4f0b28":[12,0,6,27,4],
-"struct_control_1_1_custom_u_i_setup.html#a6598ed16cdb92d9e787adb53530907a0":[12,0,6,27,5],
-"struct_control_1_1_custom_u_i_setup.html#a8eb55c45bb08292b9c1f0e4b53a47156":[12,0,6,27,8],
-"struct_control_1_1_custom_u_i_setup.html#aa5dac6c52a4be71bf8b02d368ebd9a6b":[12,0,6,27,0],
-"struct_control_1_1_custom_u_i_setup.html#aabbdc26bb2641f298edd9e257c185eb4":[12,0,6,27,3],
-"struct_control_1_1_enum.html":[12,0,6,14],
-"struct_control_1_1_enum.html#a27acdc231176eed775243953340a917e":[12,0,6,14,0]
+"struct_control_1_1_custom_u_i_setup.html#a2737f785ce5717fdf701a66ac872e7c5":[12,0,6,27,1]
 };
