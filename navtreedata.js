@@ -193,8 +193,8 @@ var NAVTREEINDEX =
 "structscore_1_1_document_context.html#aa66f8e03d18b7b055eca2070541480d0",
 "structscore_1_1_settings_parameter_metadata.html#ae2c05283c6ffb397c199e92ff1e47363",
 "structscore_1_1commands_1_1_factory_inserter.html#ac00eb77d06df98b9df35ed5cd69f7e3a",
-"structscore_1_1gfx_1_1_rendered_i_s_f_node.html#ad9f49cf6238c24c06c618c8e0de3455a",
-"structscore_1_1indirect__ptr__iterator.html#a1b3d6ad898022cb2c2d5fb1c604fc644",
+"structscore_1_1gfx_1_1_render_state.html#ad15454fbd8fa8b7f33c71b7d6cba9855",
+"structscore_1_1indirect__map__iterator.html#ad7710849d3e4d54584360d9abd253013",
 ""
 ];
 

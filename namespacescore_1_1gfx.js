@@ -14,6 +14,7 @@ var namespacescore_1_1gfx =
     [ "PackedDecoder", "structscore_1_1gfx_1_1_packed_decoder.html", "structscore_1_1gfx_1_1_packed_decoder" ],
     [ "PlanarDecoder", "structscore_1_1gfx_1_1_planar_decoder.html", "structscore_1_1gfx_1_1_planar_decoder" ],
     [ "PackedRectDecoder", "structscore_1_1gfx_1_1_packed_rect_decoder.html", "structscore_1_1gfx_1_1_packed_rect_decoder" ],
+    [ "RGB24Decoder", "structscore_1_1gfx_1_1_r_g_b24_decoder.html", "structscore_1_1gfx_1_1_r_g_b24_decoder" ],
     [ "YUV420Decoder", "structscore_1_1gfx_1_1_y_u_v420_decoder.html", "structscore_1_1gfx_1_1_y_u_v420_decoder" ],
     [ "YUV420P10Decoder", "structscore_1_1gfx_1_1_y_u_v420_p10_decoder.html", "structscore_1_1gfx_1_1_y_u_v420_p10_decoder" ],
     [ "YUV420P12Decoder", "structscore_1_1gfx_1_1_y_u_v420_p12_decoder.html", "structscore_1_1gfx_1_1_y_u_v420_p12_decoder" ],

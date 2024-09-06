@@ -928,6 +928,7 @@ var hierarchy =
       [ "score::gfx::PackedDecoder", "structscore_1_1gfx_1_1_packed_decoder.html", null ],
       [ "score::gfx::PackedRectDecoder", "structscore_1_1gfx_1_1_packed_rect_decoder.html", null ],
       [ "score::gfx::PlanarDecoder", "structscore_1_1gfx_1_1_planar_decoder.html", null ],
+      [ "score::gfx::RGB24Decoder", "structscore_1_1gfx_1_1_r_g_b24_decoder.html", null ],
       [ "score::gfx::UYVY422Decoder", "structscore_1_1gfx_1_1_u_y_v_y422_decoder.html", null ],
       [ "score::gfx::YUV420Decoder", "structscore_1_1gfx_1_1_y_u_v420_decoder.html", null ],
       [ "score::gfx::YUV420P10Decoder", "structscore_1_1gfx_1_1_y_u_v420_p10_decoder.html", null ],
@@ -1112,8 +1113,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -2044,8 +2045,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Patternist::ProcessModel >", "class_path.html", null ],
