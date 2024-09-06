@@ -1,5 +1,13 @@
 var NAVTREEINDEX71 =
 {
+"struct_process_1_1_layout_builder_base.html#ae0b00d1b1b060e9e8b5cd90b0bde3661":[12,0,42,1,8],
+"struct_process_1_1_layout_builder_base.html#aea3d208d90f241f65e4b17bfa251d39a":[12,0,42,1,5],
+"struct_process_1_1_magnetic_info.html":[12,0,42,7],
+"struct_process_1_1_magnetic_info.html#a5dc297e0f55d4bbfab3c92aee7346e93":[12,0,42,7,0],
+"struct_process_1_1_magnetic_info.html#a77d6bf73b8fd25e3d44ded1c6c1cd9e6":[12,0,42,7,2],
+"struct_process_1_1_magnetic_info.html#a8150ac3d0a59d9a38182095611e8caa3":[12,0,42,7,3],
+"struct_process_1_1_magnetic_info.html#a96f31e2800f223f03e5043439aa899c4":[12,0,42,7,1],
+"struct_process_1_1_multi_script_dialog_1_1_editor_tab.html":[12,0,42,82,0],
 "struct_process_1_1_multi_script_dialog_1_1_editor_tab.html#aff1d3f9585e815f9d0a8a3d272993c97":[12,0,42,82,0,0],
 "struct_process_1_1_outlets.html":[12,0,42,40],
 "struct_process_1_1_pixmaps.html":[12,0,42,90],
@@ -207,8 +215,8 @@ var NAVTREEINDEX71 =
 "struct_protocols_1_1_artnet_specific_settings.html#a4751dce842318274b333b0d0e52d88a0":[12,0,43,20,1],
 "struct_protocols_1_1_artnet_specific_settings.html#a4d06303be75d3e9c621899e5135d8239":[12,0,43,20,4],
 "struct_protocols_1_1_artnet_specific_settings.html#a77b6e21f64d9ce28f5af1710ec4b10df":[12,0,43,20,5],
-"struct_protocols_1_1_artnet_specific_settings.html#acccf8680e0d280d5d6fc79eb710ad932":[12,0,43,20,3],
-"struct_protocols_1_1_artnet_specific_settings.html#ae01479f0f25eb9e881c19706123c30c6":[12,0,43,20,0],
+"struct_protocols_1_1_artnet_specific_settings.html#a873c310bd2bf189fad50827a1e91c123":[12,0,43,20,0],
+"struct_protocols_1_1_artnet_specific_settings.html#aa54c0c0a2a828f33c1b1a73f89c130d6":[12,0,43,20,3],
 "struct_protocols_1_1_artnet_specific_settings.html#af633c42f6e9ab57071377281ee0bd583":[12,0,43,20,2],
 "struct_protocols_1_1_co_a_p_specific_settings.html":[12,0,43,26],
 "struct_protocols_1_1_co_a_p_specific_settings.html#a020259cea9f4bc1afd44a62a2bfc18b3":[12,0,43,26,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX71 =
 "struct_protocols_1_1_m_i_d_i_specific_settings.html#ad7f2505ac8519745180bff227d4c839c":[12,0,43,52,1],
 "struct_protocols_1_1_m_i_d_i_specific_settings.html#aee788304e939cdee1ebb1876af1d3aa3":[12,0,43,52,0],
 "struct_protocols_1_1_m_i_d_i_specific_settings.html#aee788304e939cdee1ebb1876af1d3aa3a7c147cda9e49590f6abe83d118b7353b":[12,0,43,52,0,1],
-"struct_protocols_1_1_m_i_d_i_specific_settings.html#aee788304e939cdee1ebb1876af1d3aa3aefeb369cccbd560588a756610865664c":[12,0,43,52,0,0],
-"struct_protocols_1_1_m_q_t_t_specific_settings.html":[12,0,43,62],
-"struct_protocols_1_1_m_q_t_t_specific_settings.html#a1301511c671cbe65538ba1c8379fa5d5":[12,0,43,62,1],
-"struct_protocols_1_1_m_q_t_t_specific_settings.html#a44b7444dd967c7b9071d828a15020905":[12,0,43,62,0],
-"struct_protocols_1_1_minuit_specific_settings.html":[12,0,43,56],
-"struct_protocols_1_1_minuit_specific_settings.html#a0cc7cf9446f9dd2f2b42e973c60cb50b":[12,0,43,56,2],
-"struct_protocols_1_1_minuit_specific_settings.html#a6f5cf61aeea82ab89aa291a557b14094":[12,0,43,56,1],
-"struct_protocols_1_1_minuit_specific_settings.html#ad150476803eb85a197987c7e2c36d334":[12,0,43,56,3],
-"struct_protocols_1_1_minuit_specific_settings.html#adfbb0ab883c705e80750d1cf9c9c91e3":[12,0,43,56,0]
+"struct_protocols_1_1_m_i_d_i_specific_settings.html#aee788304e939cdee1ebb1876af1d3aa3aefeb369cccbd560588a756610865664c":[12,0,43,52,0,0]
 };

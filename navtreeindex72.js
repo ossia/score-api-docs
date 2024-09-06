@@ -1,5 +1,13 @@
 var NAVTREEINDEX72 =
 {
+"struct_protocols_1_1_m_q_t_t_specific_settings.html":[12,0,43,62],
+"struct_protocols_1_1_m_q_t_t_specific_settings.html#a1301511c671cbe65538ba1c8379fa5d5":[12,0,43,62,1],
+"struct_protocols_1_1_m_q_t_t_specific_settings.html#a44b7444dd967c7b9071d828a15020905":[12,0,43,62,0],
+"struct_protocols_1_1_minuit_specific_settings.html":[12,0,43,56],
+"struct_protocols_1_1_minuit_specific_settings.html#a0cc7cf9446f9dd2f2b42e973c60cb50b":[12,0,43,56,2],
+"struct_protocols_1_1_minuit_specific_settings.html#a6f5cf61aeea82ab89aa291a557b14094":[12,0,43,56,1],
+"struct_protocols_1_1_minuit_specific_settings.html#ad150476803eb85a197987c7e2c36d334":[12,0,43,56,3],
+"struct_protocols_1_1_minuit_specific_settings.html#adfbb0ab883c705e80750d1cf9c9c91e3":[12,0,43,56,0],
 "struct_protocols_1_1_minuit_specific_settings.html#afd60fbe675c5103382d16b52ab3495b0":[12,0,43,56,4],
 "struct_protocols_1_1_o_s_c_compatible_check.html":[12,0,43,72],
 "struct_protocols_1_1_o_s_c_compatible_check.html#a2bef027729bebccf98c2295bda3112e8":[12,0,43,72,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX72 =
 "struct_scenario_1_1_categorized_address.html#a08bc4e57a508c524e74b38ad20a74008":[12,0,48,40,8],
 "struct_scenario_1_1_categorized_address.html#a0a4137a6523655bfebda5fd8ca562ba5":[12,0,48,40,9],
 "struct_scenario_1_1_categorized_address.html#a16f726dca9c7eef5b7b23fdc9b2994fd":[12,0,48,40,7],
-"struct_scenario_1_1_categorized_address.html#a1964793c8c7ab87042c9224e6c749502":[12,0,48,40,10],
-"struct_scenario_1_1_categorized_address.html#a2a183f1c3857a967100d23edd3ca61cc":[12,0,48,40,0],
-"struct_scenario_1_1_categorized_address.html#a316ed520cf7cbb8311fffe79309b83a2":[12,0,48,40,2],
-"struct_scenario_1_1_categorized_address.html#a46ef96b6b74f3be973dd140cdb0e3e9f":[12,0,48,40,6],
-"struct_scenario_1_1_categorized_address.html#a4792df302c051836cb4144008aeec5f3":[12,0,48,40,12],
-"struct_scenario_1_1_categorized_address.html#a52d332185784da472d78484c86834f46":[12,0,48,40,1],
-"struct_scenario_1_1_categorized_address.html#a754a4e6e8b826c4c0111547ffde79ca3":[12,0,48,40,11],
-"struct_scenario_1_1_categorized_address.html#a9fb1e600ec5b66b0bdb96a2dabcffaed":[12,0,48,40,4],
-"struct_scenario_1_1_categorized_address.html#ac692167681757bf3027f8f295bf10c97":[12,0,48,40,3]
+"struct_scenario_1_1_categorized_address.html#a1964793c8c7ab87042c9224e6c749502":[12,0,48,40,10]
 };

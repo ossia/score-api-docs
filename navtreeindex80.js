@@ -1,5 +1,13 @@
 var NAVTREEINDEX80 =
 {
+"structscore_1_1_document_context.html#a3838e0371d2a2c8fa297c660614001ed":[12,0,49,99,9],
+"structscore_1_1_document_context.html#a46a7fbcdb2340856d1a4d403bfb992c3":[12,0,49,99,0],
+"structscore_1_1_document_context.html#a4c9e4124859482d3a491f70969247096":[12,0,49,99,4],
+"structscore_1_1_document_context.html#a4e3d66d039e6298ab672dfda2aa7f408":[12,0,49,99,14],
+"structscore_1_1_document_context.html#a57c2dec66b8cbff6850e530425b9602c":[12,0,49,99,7],
+"structscore_1_1_document_context.html#a5959fdc7f229a81bd7b3be3992038340":[12,0,49,99,2],
+"structscore_1_1_document_context.html#a64dd2dc1e237a239545ad88e76cdee88":[12,0,49,99,10],
+"structscore_1_1_document_context.html#a71058c3d32e82917cf3e8eb429e22317":[12,0,49,99,17],
 "structscore_1_1_document_context.html#aa66f8e03d18b7b055eca2070541480d0":[12,0,49,99,15],
 "structscore_1_1_document_context.html#aaaea7b1d93b33388a445ff9dc0e97828":[12,0,49,99,13],
 "structscore_1_1_document_context.html#ab07daa73d84357e9419a6500b9f9dff5":[12,0,49,99,18],
@@ -241,13 +249,5 @@ var NAVTREEINDEX80 =
 "structscore_1_1_second_spin_box.html#ab8d70492a0ca194bf8c3754e8360d05f":[12,0,49,294,0],
 "structscore_1_1_second_spin_box.html#ac37e0fbb2784c820f5668582a2d5be86":[12,0,49,294,2],
 "structscore_1_1_second_spin_box.html#ae70c04811ccfb77ac5242e3a4b12a4c1":[12,0,49,294,1],
-"structscore_1_1_second_spin_box.html#afe5179278fddfdeb07297171a5f0c5d2":[12,0,49,294,3],
-"structscore_1_1_selection_action_condition.html":[12,0,49,66],
-"structscore_1_1_selection_action_condition.html#a34f49cef0d19a0d7df8f522e4e86b864":[12,0,49,66,1],
-"structscore_1_1_selection_action_condition.html#a8ec217748ebcbcd10a6d9cdab8dc9dcc":[12,0,49,66,0],
-"structscore_1_1_settings_parameter_metadata.html":[12,0,49,231],
-"structscore_1_1_settings_parameter_metadata.html#a0b8c2550d83a978ce144735167a79b12":[12,0,49,231,5],
-"structscore_1_1_settings_parameter_metadata.html#a2174d54a642f0d5cfdcfa43437a8e9d3":[12,0,49,231,1],
-"structscore_1_1_settings_parameter_metadata.html#a620afa2af232b1edf8df5c52d0f56447":[12,0,49,231,4],
-"structscore_1_1_settings_parameter_metadata.html#ac52b9edddc59ed4cc4fb94c11bb825a5":[12,0,49,231,0]
+"structscore_1_1_second_spin_box.html#afe5179278fddfdeb07297171a5f0c5d2":[12,0,49,294,3]
 };

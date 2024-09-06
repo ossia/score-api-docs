@@ -1,5 +1,13 @@
 var NAVTREEINDEX27 =
 {
+"class_process_1_1_default_header_delegate.html#a4ab3b835c8c2b72d308590b5f01899ad":[12,0,42,52,9],
+"class_process_1_1_default_header_delegate.html#a5f993b37ac4f80666dc029c49cb149ae":[12,0,42,52,13],
+"class_process_1_1_default_header_delegate.html#a691524a5acb5e924b8d22308b0cc37c9":[12,0,42,52,5],
+"class_process_1_1_default_header_delegate.html#a9173ce6c8c7fb1cbbb57799b8ceed55c":[12,0,42,52,11],
+"class_process_1_1_default_header_delegate.html#a9381d7be24a59c0c147dde3e2fac3860":[12,0,42,52,6],
+"class_process_1_1_default_header_delegate.html#a9618117f7acf3b9b9336547ebccea602":[12,0,42,52,8],
+"class_process_1_1_default_header_delegate.html#a98bd836e95615c69aca392059a259144":[12,0,42,52,1],
+"class_process_1_1_default_header_delegate.html#ad39106d247989c131e26dd71fb08fadd":[12,0,42,52,16],
 "class_process_1_1_default_header_delegate.html#adaf72600964f6d7ecaf79479e5eed207":[12,0,42,52,0],
 "class_process_1_1_default_header_delegate.html#ae08611e0ea85f0207fb246787de3636e":[12,0,42,52,19],
 "class_process_1_1_default_header_delegate.html#ae136291104e53423e2d686c6251c6242":[12,0,42,52,12],
@@ -241,13 +249,5 @@ var NAVTREEINDEX27 =
 "class_process_1_1_midi_inlet.html#ae4e74466ce82f314a33e3ff412baf2f2":[12,0,42,31,1],
 "class_process_1_1_midi_outlet.html":[12,0,42,32],
 "class_process_1_1_midi_outlet.html#a002b810969bad2493b8788e842b8b170":[12,0,42,32,4],
-"class_process_1_1_midi_outlet.html#a1437a54ace4c83551830ce9d0223bf69":[12,0,42,32,0],
-"class_process_1_1_midi_outlet.html#a30437fdcf7a8e14b96488c453c681c19":[12,0,42,32,5],
-"class_process_1_1_midi_outlet.html#a6d9d6919a95be17b909b81dc58f4780f":[12,0,42,32,7],
-"class_process_1_1_midi_outlet.html#a71c9ad8a9d7deef4239ff94f57f09b18":[12,0,42,32,6],
-"class_process_1_1_midi_outlet.html#a909ce5d0a258754ae9db222188c3835a":[12,0,42,32,3],
-"class_process_1_1_midi_outlet.html#a9311f6eaed394fd48ae40d2d1eb6ae0b":[12,0,42,32,1],
-"class_process_1_1_midi_outlet.html#ae31bf2a778d1dd07d9f192c748595dbc":[12,0,42,32,8],
-"class_process_1_1_midi_outlet.html#ae90999f0be3dba79f3bfc7716ec6aede":[12,0,42,32,2],
-"class_process_1_1_mini_layer.html":[12,0,42,64]
+"class_process_1_1_midi_outlet.html#a1437a54ace4c83551830ce9d0223bf69":[12,0,42,32,0]
 };

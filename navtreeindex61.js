@@ -1,5 +1,13 @@
 var NAVTREEINDEX61 =
 {
+"struct_control_1_1_combo_box.html#aa505ddacf7a0560e256c9faa77360644":[12,0,6,12,4],
+"struct_control_1_1_combo_box.html#ac21231363626421f72e5b8fd526ec43f":[12,0,6,12,8],
+"struct_control_1_1_combo_box.html#acaed2bc84486fcf249c27f5b58284a57":[12,0,6,12,10],
+"struct_control_1_1_combo_box.html#ae5bc0ce55f29fc6daf1d8155825c2015":[12,0,6,12,3],
+"struct_control_1_1_custom_u_i_setup.html":[12,0,6,27],
+"struct_control_1_1_custom_u_i_setup.html#a1ec59ed8b27cdea17cfb4fef413161a9":[12,0,6,27,9],
+"struct_control_1_1_custom_u_i_setup.html#a1eed01131fe7c1fa36c68584903012e1":[12,0,6,27,6],
+"struct_control_1_1_custom_u_i_setup.html#a2737f785ce5717fdf701a66ac872e7c5":[12,0,6,27,1],
 "struct_control_1_1_custom_u_i_setup.html#a2c7a37125022a7c15e611cf85419f328":[12,0,6,27,2],
 "struct_control_1_1_custom_u_i_setup.html#a3682cb6fb50c1ade21bf48ea75373bea":[12,0,6,27,7],
 "struct_control_1_1_custom_u_i_setup.html#a3b17fc3555e6d65abe63cb2b1e4f0b28":[12,0,6,27,4],
@@ -241,13 +249,5 @@ var NAVTREEINDEX61 =
 "struct_control_surface_1_1con__unvalidated.html#a0a1754b2f891fef83475006614619bcc":[12,0,7,3,3],
 "struct_control_surface_1_1con__unvalidated.html#a0ea977105fbc44896c84986013127509":[12,0,7,3,0],
 "struct_control_surface_1_1con__unvalidated.html#a39a26e59f471ae406875aa3fed356477":[12,0,7,3,1],
-"struct_control_surface_1_1con__unvalidated.html#ac0b1479e37d0424bcdeeeb9ce812d6b3":[12,0,7,3,2],
-"struct_curve_1_1_curve_domain.html":[12,0,9,9],
-"struct_curve_1_1_curve_domain.html#a2443b7bed5faed3290d5006152c36ee3":[12,0,9,9,1],
-"struct_curve_1_1_curve_domain.html#a287fe65a50ada2075647f40cb09854e0":[12,0,9,9,4],
-"struct_curve_1_1_curve_domain.html#a3e525ee57ca0ca2e5f6ab8f06c5f0062":[12,0,9,9,2],
-"struct_curve_1_1_curve_domain.html#a5b77b1fa927d3ae152ba3fedf0999db9":[12,0,9,9,7],
-"struct_curve_1_1_curve_domain.html#a6188781084458cb5210143c8e5dd5900":[12,0,9,9,3],
-"struct_curve_1_1_curve_domain.html#a64f7cf3858b2213fad3817a0104d48a8":[12,0,9,9,14],
-"struct_curve_1_1_curve_domain.html#a67181cac018932b4392cd465094325b7":[12,0,9,9,11]
+"struct_control_surface_1_1con__unvalidated.html#ac0b1479e37d0424bcdeeeb9ce812d6b3":[12,0,7,3,2]
 };

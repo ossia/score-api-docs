@@ -1,5 +1,13 @@
 var NAVTREEINDEX35 =
 {
+"class_scenario_1_1_displayed_elements_presenter.html#ae1e287adbcd0b45232c27d1637259ccb":[12,0,48,74,14],
+"class_scenario_1_1_displayed_elements_provider.html":[12,0,48,75],
+"class_scenario_1_1_displayed_elements_provider.html#a27635e0b273dc68b78fb69ec79d8fecc":[12,0,48,75,2],
+"class_scenario_1_1_displayed_elements_provider.html#a82927c99473581637e02eb8525a0d533":[12,0,48,75,3],
+"class_scenario_1_1_displayed_elements_provider.html#aa14f960710c9b89a693d9cb609226095":[12,0,48,75,4],
+"class_scenario_1_1_displayed_elements_provider.html#aba0ff75ddf87a520301c7a98b36a5a0d":[12,0,48,75,0],
+"class_scenario_1_1_displayed_elements_provider.html#ac73b648c8d3f13ee8c01c912a4dd1fbc":[12,0,48,75,1],
+"class_scenario_1_1_displayed_elements_provider_list.html":[12,0,48,76],
 "class_scenario_1_1_displayed_elements_tool_palette_factory.html":[12,0,48,82],
 "class_scenario_1_1_displayed_elements_tool_palette_factory_list.html":[12,0,48,83],
 "class_scenario_1_1_do_not_move_interval___state_wrapper.html":[12,0,48,77],
@@ -241,13 +249,5 @@ var NAVTREEINDEX35 =
 "class_scenario_1_1_full_view_interval_view.html#a3a0f5fb741942dd486fa54d021fb885e":[12,0,48,104,7],
 "class_scenario_1_1_full_view_interval_view.html#a61a8d1efbe81fb44b87e3115d799fe99":[12,0,48,104,6],
 "class_scenario_1_1_full_view_interval_view.html#a78af1487fc90c8897cf46810e45eac2e":[12,0,48,104,9],
-"class_scenario_1_1_full_view_interval_view.html#a7cfd4c5a200bb738891823dd860f98e8":[12,0,48,104,4],
-"class_scenario_1_1_full_view_interval_view.html#a8fbc262b6937a97b7b5770408e09fd44":[12,0,48,104,10],
-"class_scenario_1_1_full_view_interval_view.html#a9c317c616eeab818f14bf52403188cd3":[12,0,48,104,3],
-"class_scenario_1_1_full_view_interval_view.html#aa5a5d797416e4de05e15eb0b6583845b":[12,0,48,104,5],
-"class_scenario_1_1_full_view_interval_view.html#aae10f3c977e789e8903eec7742387ae9":[12,0,48,104,8],
-"class_scenario_1_1_full_view_interval_view.html#ac75e29f6a03bb4e0a4d05cc335d8de3e":[12,0,48,104,0],
-"class_scenario_1_1_ghost_interval_drop_handler.html":[12,0,48,20],
-"class_scenario_1_1_ghost_interval_drop_handler.html#a4c6dc1da1e6d5d0e5aceaa1e9da9e1b3":[12,0,48,20,1],
-"class_scenario_1_1_ghost_interval_drop_handler.html#a6169d179f25ec4ce0e05e75d115db623":[12,0,48,20,0]
+"class_scenario_1_1_full_view_interval_view.html#a7cfd4c5a200bb738891823dd860f98e8":[12,0,48,104,4]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX30 =
 {
+"class_protocols_1_1_m_i_d_i_device.html#a805c56b7f85188055525ff5b0ab2d7a0":[12,0,43,45,5],
+"class_protocols_1_1_m_i_d_i_device.html#a8662965d1a68c94ecd6abe945f86f0a8":[12,0,43,45,6],
+"class_protocols_1_1_m_i_d_i_device.html#ab97a69eddfb60dec7243bc67b34b84c7":[12,0,43,45,4],
+"class_protocols_1_1_m_i_d_i_input_protocol_factory.html":[12,0,43,48],
+"class_protocols_1_1_m_i_d_i_input_protocol_factory.html#a21c997bd35f609a2fbff32a20c2ef288":[12,0,43,48,11],
+"class_protocols_1_1_m_i_d_i_input_protocol_factory.html#a41141b75426ae3dafbe86e00a77f6b75":[12,0,43,48,6],
+"class_protocols_1_1_m_i_d_i_input_protocol_factory.html#a4fd23c80db38d233baa10261842e07dc":[12,0,43,48,3],
+"class_protocols_1_1_m_i_d_i_input_protocol_factory.html#a51f2eaae035d923cdc717bb9d3f938a8":[12,0,43,48,0],
 "class_protocols_1_1_m_i_d_i_input_protocol_factory.html#a743ad0d9989009e07a3bfe2da993bb50":[12,0,43,48,4],
 "class_protocols_1_1_m_i_d_i_input_protocol_factory.html#a77561d98e9880665a6fb2885f4b073c2":[12,0,43,48,2],
 "class_protocols_1_1_m_i_d_i_input_protocol_factory.html#a796483fb405cec0614848a3b6c1f9129":[12,0,43,48,8],
@@ -241,13 +249,5 @@ var NAVTREEINDEX30 =
 "class_recording_1_1_automation_recorder.html#a6267b8efed0d0babdd73c5f9c0cb9181":[12,0,44,8,2],
 "class_recording_1_1_automation_recorder.html#a6f9ded66aa3a4fa6e58733caefbc48ff":[12,0,44,8,3],
 "class_recording_1_1_automation_recorder.html#a79f9c712078f2eb87cb672647b5a2002":[12,0,44,8,0],
-"class_recording_1_1_automation_recorder.html#a7f5ae6f5beb67a9bd89b98ca437f394c":[12,0,44,8,8],
-"class_recording_1_1_automation_recorder.html#a99dc4866414413f71da09ae40d433728":[12,0,44,8,5],
-"class_recording_1_1_automation_recorder.html#aa38d48187370778eb89942377102df2c":[12,0,44,8,7],
-"class_recording_1_1_automation_recorder.html#ab48aff3bec2173100258d750893159a6":[12,0,44,8,9],
-"class_recording_1_1_automation_recorder.html#abaf11ef227fc53b3f9be0d75bbdd520f":[12,0,44,8,6],
-"class_recording_1_1_message_recorder.html":[12,0,44,10],
-"class_recording_1_1_message_recorder.html#a4831d9ff3b9360814df2b61273574e71":[12,0,44,10,0],
-"class_recording_1_1_message_recorder.html#a60366f0278eb89895eab0f25ceb00500":[12,0,44,10,4],
-"class_recording_1_1_message_recorder.html#aba36ebffe8e5fe7b20befc5a1d03e76b":[12,0,44,10,5]
+"class_recording_1_1_automation_recorder.html#a7f5ae6f5beb67a9bd89b98ca437f394c":[12,0,44,8,8]
 };

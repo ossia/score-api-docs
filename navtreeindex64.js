@@ -1,5 +1,13 @@
 var NAVTREEINDEX64 =
 {
+"struct_faust_1_1_update_u_i.html#aaec93ac2b5d65a682203b91fda2f5ffd":[12,0,17,5,6],
+"struct_faust_1_1_update_u_i.html#ab8279355d2c0998818b87a6397221010":[12,0,17,5,19],
+"struct_faust_1_1_update_u_i.html#abed44c210617e9b03dd47aec350c77af":[12,0,17,5,13],
+"struct_faust_1_1_update_u_i.html#ae7cfc7234bd90610bc4bdfa2502eae3e":[12,0,17,5,20],
+"struct_faust_1_1_update_u_i.html#aef15265de87ade4c8edf1af7b9cb0c07":[12,0,17,5,15],
+"struct_faust_1_1_update_u_i.html#aef22dc1a66af6174cdc23a547d84f5fb":[12,0,17,5,16],
+"struct_faust_1_1_update_u_i.html#af9c9c0160452c98fabe4bf7c6ce8a0d0":[12,0,17,5,2],
+"struct_faust_d_s_p_1_1_wrap.html":[12,0,18,1],
 "struct_faust_d_s_p_1_1_wrap.html#a226390a892f2f9a2c5466ba436bb0c16":[12,0,18,1,6],
 "struct_faust_d_s_p_1_1_wrap.html#a40814596810e98a9414373e0a031bd4a":[12,0,18,1,11],
 "struct_faust_d_s_p_1_1_wrap.html#a41d721d91fd7d0d633c2a96c09b28e1b":[12,0,18,1,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX64 =
 "struct_gfx_1_1_sh4lt_output_node.html#a73c518f36a910199c3773dfdfca3c5c6":[12,0,19,64,25],
 "struct_gfx_1_1_sh4lt_output_node.html#a826096f8b6cf48e3e139d0d533aed1e5":[12,0,19,64,17],
 "struct_gfx_1_1_sh4lt_output_node.html#a88c25f17ea12e71182053392d1d6608f":[12,0,19,64,11],
-"struct_gfx_1_1_sh4lt_output_node.html#a93149a85b581d5fbc34073b654f96492":[12,0,19,64,12],
-"struct_gfx_1_1_sh4lt_output_node.html#a958c10f109ed00d8d430d9e7b2dab163":[12,0,19,64,2],
-"struct_gfx_1_1_sh4lt_output_node.html#a9eaba2ec34f9ecc100b33404cd1c8cfb":[12,0,19,64,0],
-"struct_gfx_1_1_sh4lt_output_node.html#aa8127bd53610ffe5671a5dc0d6d13e79":[12,0,19,64,20],
-"struct_gfx_1_1_sh4lt_output_node.html#aaadb6c3850e4db09852034e3d33b3b70":[12,0,19,64,7],
-"struct_gfx_1_1_sh4lt_output_node.html#ad33dbc26906ae1a53760530e06a10ded":[12,0,19,64,1],
-"struct_gfx_1_1_sh4lt_output_node.html#adb7d0be50e2443231fcce8fcb42a618b":[12,0,19,64,16],
-"struct_gfx_1_1_sh4lt_output_node.html#adc14c61b58c198c80c27fbae01a86180":[12,0,19,64,15],
-"struct_gfx_1_1_sh4lt_output_node.html#add8e0b119948f5a0de92392d7dfde3ec":[12,0,19,64,23]
+"struct_gfx_1_1_sh4lt_output_node.html#a93149a85b581d5fbc34073b654f96492":[12,0,19,64,12]
 };

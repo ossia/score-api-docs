@@ -1,5 +1,13 @@
 var NAVTREEINDEX82 =
 {
+"structscore_1_1any__serializer.html#aafafa1e6f82d5cbb96bc6886fc9181b4":[12,0,49,236,4],
+"structscore_1_1any__serializer.html#ab7e07f61483e17f6322816c899e2a92c":[12,0,49,236,0],
+"structscore_1_1any__serializer__t.html":[12,0,49,237],
+"structscore_1_1any__serializer__t.html#a95f9bde3e4ec79452c93a38590dfe692":[12,0,49,237,0],
+"structscore_1_1any__serializer__t.html#ad415efc6198b146dd42d1eefafbb6ff1":[12,0,49,237,2],
+"structscore_1_1any__serializer__t.html#afd8833734535b70bac7949be777d622b":[12,0,49,237,1],
+"structscore_1_1any__serializer__t.html#aff675331817a44d01c4493f0c4d60194":[12,0,49,237,3],
+"structscore_1_1commands_1_1_factory_inserter.html":[12,0,49,0,0],
 "structscore_1_1commands_1_1_factory_inserter.html#ac00eb77d06df98b9df35ed5cd69f7e3a":[12,0,49,0,0,1],
 "structscore_1_1commands_1_1_factory_inserter.html#affe4d27c027636caad4e06b76a0a6c5d":[12,0,49,0,0,0],
 "structscore_1_1delete__later.html":[12,0,49,244],
@@ -241,13 +249,5 @@ var NAVTREEINDEX82 =
 "structscore_1_1gfx_1_1_render_state.html#a4f27f48a4c44a9f84f9be4ea3cd56db8":[12,0,49,2,55,3],
 "structscore_1_1gfx_1_1_render_state.html#a74409f949882a5207413610a97aeb48d":[12,0,49,2,55,9],
 "structscore_1_1gfx_1_1_render_state.html#a7adb91001fda0dbd0ba17641105f13a6":[12,0,49,2,55,11],
-"structscore_1_1gfx_1_1_render_state.html#a8968c759a416c5b7e36a1111a380034e":[12,0,49,2,55,5],
-"structscore_1_1gfx_1_1_render_state.html#a8fd89fedb65a4c623d22d6b284c36fa3":[12,0,49,2,55,1],
-"structscore_1_1gfx_1_1_render_state.html#a91bb511aefec15886865ba296d1e7939":[12,0,49,2,55,8],
-"structscore_1_1gfx_1_1_render_state.html#aa36a72c9f68f5a5bdc282fdb51f4e76e":[12,0,49,2,55,12],
-"structscore_1_1gfx_1_1_render_state.html#ab070308fb998032a0ee4588d75cf4fc4":[12,0,49,2,55,6],
-"structscore_1_1gfx_1_1_render_state.html#ab191a407711967c72d0d75ca4466300d":[12,0,49,2,55,13],
-"structscore_1_1gfx_1_1_render_state.html#ab3e739102a9afcca1cc63829575155ad":[12,0,49,2,55,7],
-"structscore_1_1gfx_1_1_render_state.html#ac5f793e7a86ca93dead567b101fd41ab":[12,0,49,2,55,2],
-"structscore_1_1gfx_1_1_render_state.html#ac8f3bbf5a5ea2d6f1e78e886aa947053":[12,0,49,2,55,14]
+"structscore_1_1gfx_1_1_render_state.html#a8968c759a416c5b7e36a1111a380034e":[12,0,49,2,55,5]
 };

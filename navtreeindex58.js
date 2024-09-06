@@ -1,5 +1,13 @@
 var NAVTREEINDEX58 =
 {
+"namespace_state.html#ae85d3382259227fba60632931e550a6f":[11,0,56,44],
+"namespace_state.html#ae9efaeb2af1aba9c6d3c329cc3e988da":[11,0,56,38],
+"namespace_state.html#af401eccc9299214a03ebbc149ec59448":[11,0,56,47],
+"namespace_state.html#af985045816edccfc22e48b46600313ae":[11,0,56,71],
+"namespace_state.html#afb6b240b3fe4a657abebc95bc7d7b29f":[11,0,56,65],
+"namespace_state.html#afd310dc091d659f9f910acc26fe2e6e1":[11,0,56,57],
+"namespace_state.html#afef311e74fc04db03e05007e79423274":[11,0,56,60],
+"namespacecsv2.html":[11,0,8],
 "namespacemembers.html":[11,1,0],
 "namespacemembers_enum.html":[11,1,3],
 "namespacemembers_eval.html":[11,1,4],
@@ -241,13 +249,5 @@ var NAVTREEINDEX58 =
 "plugins_2score-plugin-nodal_2_nodal_2_metadata_8hpp_source.html":[13,0,764],
 "plugins_2score-plugin-nodal_2_nodal_2_presenter_8hpp_source.html":[13,0,975],
 "plugins_2score-plugin-nodal_2_nodal_2commands_8hpp_source.html":[13,0,187],
-"plugins_2score-plugin-packagemanager_2_package_manager_2_presenter_8hpp_source.html":[13,0,976],
-"plugins_2score-plugin-protocols_2_protocols_2_network_widgets_2serialization_8hpp_source.html":[13,0,1249],
-"plugins_2score-plugin-protocols_2_protocols_2_settings_2_presenter_8hpp_source.html":[13,0,977],
-"plugins_2score-plugin-remotecontrol_2_remote_control_2_document_plugin_8cpp.html#a4373a4cd88a6520c49677dfe166b94ab":[11,0,49,22],
-"plugins_2score-plugin-remotecontrol_2_remote_control_2_document_plugin_8hpp_source.html":[13,0,359],
-"plugins_2score-plugin-remotecontrol_2_remote_control_2_settings_2_presenter_8hpp_source.html":[13,0,978],
-"plugins_2score-plugin-spline3d_2_spline3_d_2_metadata_8hpp_source.html":[13,0,766],
-"plugins_2score-plugin-spline3d_2_spline3_d_2commands_8hpp_source.html":[13,0,189],
-"plugins_2score-plugin-spline_2_spline_2_metadata_8hpp_source.html":[13,0,765]
+"plugins_2score-plugin-packagemanager_2_package_manager_2_presenter_8hpp_source.html":[13,0,976]
 };

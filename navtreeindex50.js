@@ -1,5 +1,13 @@
 var NAVTREEINDEX50 =
 {
+"classscore_1_1_q_graphics_range_slider.html#af9d576fe74bec534dfdc7a900abb4d3c":[12,0,49,148,4],
+"classscore_1_1_q_graphics_selectable_pixmap_toggle.html":[12,0,49,149],
+"classscore_1_1_q_graphics_selectable_pixmap_toggle.html#a0bad4429530a42cb2bca705fea0dfc76":[12,0,49,149,7],
+"classscore_1_1_q_graphics_selectable_pixmap_toggle.html#a293cd5600dda378385ac4c29ad90c04e":[12,0,49,149,5],
+"classscore_1_1_q_graphics_selectable_pixmap_toggle.html#a2b5057aa84584e63929f2b477d3924ce":[12,0,49,149,3],
+"classscore_1_1_q_graphics_selectable_pixmap_toggle.html#a5b9b1f481e487e6e4c463cbf14c704ad":[12,0,49,149,8],
+"classscore_1_1_q_graphics_selectable_pixmap_toggle.html#a6c1ef50d0966dbb4f2b48e890b5b4a53":[12,0,49,149,2],
+"classscore_1_1_q_graphics_selectable_pixmap_toggle.html#a82c3ebfc8df67cb351468b1c42b8275a":[12,0,49,149,4],
 "classscore_1_1_q_graphics_selectable_pixmap_toggle.html#a8d32bc4cdcc7ea9fc7ea856162469ee8":[12,0,49,149,6],
 "classscore_1_1_q_graphics_selectable_pixmap_toggle.html#ab8c3f725cdd1f2c036b448a85ad89112":[12,0,49,149,0],
 "classscore_1_1_q_graphics_selectable_pixmap_toggle.html#ae9fd60a0702ede874566eef95b6b1aab":[12,0,49,149,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX50 =
 "classscore_1_1_settings_delegate_factory.html":[12,0,49,228],
 "classscore_1_1_settings_delegate_factory.html#a5f9aa5ec073522c988d624eefebd8364":[12,0,49,228,1],
 "classscore_1_1_settings_delegate_factory.html#a8c50928412385e28b243218be41b84e4":[12,0,49,228,2],
-"classscore_1_1_settings_delegate_factory.html#a915bcd1656385dc0058399adff344165":[12,0,49,228,0],
-"classscore_1_1_settings_delegate_factory.html#ae8f631a1e17daf26049b1d22f537bafd":[12,0,49,228,4],
-"classscore_1_1_settings_delegate_factory.html#aedb5060af04ce9c1271133a5a62101b4":[12,0,49,228,3],
-"classscore_1_1_settings_delegate_factory___t.html":[12,0,49,229],
-"classscore_1_1_settings_delegate_model.html":[12,0,49,230],
-"classscore_1_1_settings_delegate_model.html#a57115828446b3e29548a467baff7542c":[12,0,49,230,0],
-"classscore_1_1_settings_delegate_presenter.html":[12,0,49,45],
-"classscore_1_1_settings_delegate_presenter.html#a1f9e1870100574f5e392638a9f2f7206":[12,0,49,45,3],
-"classscore_1_1_settings_delegate_presenter.html#a560c96fac4ee600bf242b54d93c7e6d1":[12,0,49,45,6]
+"classscore_1_1_settings_delegate_factory.html#a915bcd1656385dc0058399adff344165":[12,0,49,228,0]
 };

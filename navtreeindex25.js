@@ -1,5 +1,13 @@
 var NAVTREEINDEX25 =
 {
+"class_mixer_1_1_pan_slider_widget.html":[12,0,34,1],
+"class_mixer_1_1_pan_slider_widget.html#a18c068a5cdb9ca5a5fad1ee3c53192ce":[12,0,34,1,3],
+"class_mixer_1_1_pan_slider_widget.html#a2342b3ad71b58b990f20b6ac38fe4f08":[12,0,34,1,1],
+"class_mixer_1_1_pan_slider_widget.html#a357821c56d8ecac0f019705efbbce6d9":[12,0,34,1,0],
+"class_mixer_1_1_pan_slider_widget.html#a8da897eeb5b0047a5b141da55fe5c23e":[12,0,34,1,2],
+"class_mixer_1_1_panel_delegate.html":[12,0,34,5],
+"class_mixer_1_1_panel_delegate.html#a3a6eb5a204efec7a6ea038af3c6c11d6":[12,0,34,5,0],
+"class_mixer_1_1_panel_delegate.html#aa3159ac31204cb4ff6e9ab91dd091008":[12,0,34,5,1],
 "class_mixer_1_1_panel_delegate_factory.html":[12,0,34,6],
 "class_move_event_test.html":[12,0,198],
 "class_move_interval_test.html":[12,0,199],
@@ -241,13 +249,5 @@ var NAVTREEINDEX25 =
 "class_patternist_1_1_process_model.html#a1ee435ad8a287e0fe227a6abc74a1fac":[12,0,39,9,15],
 "class_patternist_1_1_process_model.html#a272faaf45dcf9f1143646ce9b60fedd3":[12,0,39,9,13],
 "class_patternist_1_1_process_model.html#a3853a3e8a292adfc5292ec483e8a362f":[12,0,39,9,2],
-"class_patternist_1_1_process_model.html#a468af39ee9f6ae77975010d75d93fa5e":[12,0,39,9,3],
-"class_patternist_1_1_process_model.html#a53edfe90c66a0f4892315f0865a518b7":[12,0,39,9,5],
-"class_patternist_1_1_process_model.html#a586adb53cc012f6a578e9fa11231f95d":[12,0,39,9,14],
-"class_patternist_1_1_process_model.html#a59aaa760db18d9fe7a3980729f76e4fc":[12,0,39,9,9],
-"class_patternist_1_1_process_model.html#a5d9dfdb2a3ad7558becff099a19c64a2":[12,0,39,9,4],
-"class_patternist_1_1_process_model.html#a5f0a1fcb16fbe4eb9ac10f7a918a2fa0":[12,0,39,9,0],
-"class_patternist_1_1_process_model.html#a6534cb3c2d4e71a0eb6c2e5e39e39363":[12,0,39,9,16],
-"class_patternist_1_1_process_model.html#a685fcf13ad4872093bba0b4dee92e3f6":[12,0,39,9,7],
-"class_patternist_1_1_process_model.html#a6e04e4406f3e803f772af6764c025577":[12,0,39,9,10]
+"class_patternist_1_1_process_model.html#a468af39ee9f6ae77975010d75d93fa5e":[12,0,39,9,3]
 };

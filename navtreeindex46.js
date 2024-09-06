@@ -1,5 +1,13 @@
 var NAVTREEINDEX46 =
 {
+"classscore_1_1_command_stack.html#aab71abfc223787a585b570a7ecabc255":[12,0,49,20,5],
+"classscore_1_1_command_stack.html#ababfab6f54f868929e7c72ff3ae8c21a":[12,0,49,20,29],
+"classscore_1_1_command_stack.html#abc253116e9021c0907d8215de4999f67":[12,0,49,20,57],
+"classscore_1_1_command_stack.html#abe423a8e50bb494bab24955302f9d779":[12,0,49,20,24],
+"classscore_1_1_command_stack.html#abe423a8e50bb494bab24955302f9d779":[12,0,49,20,23],
+"classscore_1_1_command_stack.html#ac200a1b0a99b4850751704b8b39fb5ab":[12,0,49,20,62],
+"classscore_1_1_command_stack.html#aca82bc449af903ef00024db0fc412c3c":[12,0,49,20,22],
+"classscore_1_1_command_stack.html#acbb9bf5f1e9e9df2a20a63d663f1bc34":[12,0,49,20,59],
 "classscore_1_1_command_stack.html#acd1bd407f63a31a546c030cbed9ad3c1":[12,0,49,20,54],
 "classscore_1_1_command_stack.html#acdba23171ccd21b6035cec9b6de3bfdf":[12,0,49,20,35],
 "classscore_1_1_command_stack.html#acee7aa1350c4d1025828d1f6a5b518fd":[12,0,49,20,48],
@@ -241,13 +249,5 @@ var NAVTREEINDEX46 =
 "classscore_1_1_entity_list.html#ab535275fe8a1946ccff0f89ba82c998b":[12,0,49,179,6],
 "classscore_1_1_entity_list.html#abdc350c561338d323fbe74f09dee81a0":[12,0,49,179,9],
 "classscore_1_1_entity_list.html#ac1c3ed0bc88bec5276d8a2e37398e181":[12,0,49,179,1],
-"classscore_1_1_entity_list.html#acd345764db0145e329b66c16bb264c6c":[12,0,49,179,17],
-"classscore_1_1_entity_list.html#ad5fef9654443f41b1c0ddaa7442946ea":[12,0,49,179,16],
-"classscore_1_1_entity_list.html#ad9c7885a1e9706c75a7a705075eb78d5":[12,0,49,179,19],
-"classscore_1_1_entity_list.html#adf5b3369b92e173be53b2d3a48514885":[12,0,49,179,24],
-"classscore_1_1_entity_list.html#ae5ce7ffd601fb7b514bf66c6217a0d40":[12,0,49,179,26],
-"classscore_1_1_entity_list.html#af750aeb36a32fe7f32c85bb63d18be09":[12,0,49,179,20],
-"classscore_1_1_entity_list.html#aff10874decc93129b02c5209ab7a2c0c":[12,0,49,179,7],
-"classscore_1_1_entity_map.html":[12,0,49,180],
-"classscore_1_1_entity_map.html#a00ea07ca5715323439eb565651d239e4":[12,0,49,180,25]
+"classscore_1_1_entity_list.html#acd345764db0145e329b66c16bb264c6c":[12,0,49,179,17]
 };

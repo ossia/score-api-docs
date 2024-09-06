@@ -1,5 +1,13 @@
 var NAVTREEINDEX24 =
 {
+"class_media_1_1_step_1_1_model.html#a36c384a9838224f86342718296787589":[12,0,32,4,3,7],
+"class_media_1_1_step_1_1_model.html#a37e98f244a9be2cf94b58b1139b83e75":[12,0,32,4,3,9],
+"class_media_1_1_step_1_1_model.html#a537e067891a91f26a5b6dd92d7e27c48":[12,0,32,4,3,16],
+"class_media_1_1_step_1_1_model.html#a551f4170d7d6bfc1c8225ec89d146da6":[12,0,32,4,3,11],
+"class_media_1_1_step_1_1_model.html#a6bb7dec75e9e0b8083d4fe62673a4834":[12,0,32,4,3,3],
+"class_media_1_1_step_1_1_model.html#a7e7a9c8f0f5beb756a08be8575a62bc2":[12,0,32,4,3,2],
+"class_media_1_1_step_1_1_model.html#aa8a8b9c481ee73a78dd38fc5346ded59":[12,0,32,4,3,5],
+"class_media_1_1_step_1_1_model.html#aa946a53508fd9c8a13ab2aa57c54edec":[12,0,32,4,3,17],
 "class_media_1_1_step_1_1_model.html#aad04f7dadeb25d568ccf4c748a2e40ce":[12,0,32,4,3,12],
 "class_media_1_1_step_1_1_model.html#aad58f2326f6ea4e7e5fa4c26e114155d":[12,0,32,4,3,1],
 "class_media_1_1_step_1_1_model.html#abd5b5376a113bae94dbaedd516aa7f9c":[12,0,32,4,3,4],
@@ -241,13 +249,5 @@ var NAVTREEINDEX24 =
 "class_mixer_1_1_mixer_panel.html#ad6c31610eff12744df28e83db7649d5f":[12,0,34,4,0],
 "class_mixer_1_1_mixer_panel.html#adc356c91316646347c1e87ee843fb975":[12,0,34,4,6],
 "class_mixer_1_1_mixer_panel.html#ae6f8f2fb08c5df47a77ad444224e24f9":[12,0,34,4,3],
-"class_mixer_1_1_mixer_panel.html#af17c28c258fa7182636b079c6f6bb2be":[12,0,34,4,10],
-"class_mixer_1_1_pan_slider_widget.html":[12,0,34,1],
-"class_mixer_1_1_pan_slider_widget.html#a18c068a5cdb9ca5a5fad1ee3c53192ce":[12,0,34,1,3],
-"class_mixer_1_1_pan_slider_widget.html#a2342b3ad71b58b990f20b6ac38fe4f08":[12,0,34,1,1],
-"class_mixer_1_1_pan_slider_widget.html#a357821c56d8ecac0f019705efbbce6d9":[12,0,34,1,0],
-"class_mixer_1_1_pan_slider_widget.html#a8da897eeb5b0047a5b141da55fe5c23e":[12,0,34,1,2],
-"class_mixer_1_1_panel_delegate.html":[12,0,34,5],
-"class_mixer_1_1_panel_delegate.html#a3a6eb5a204efec7a6ea038af3c6c11d6":[12,0,34,5,0],
-"class_mixer_1_1_panel_delegate.html#aa3159ac31204cb4ff6e9ab91dd091008":[12,0,34,5,1]
+"class_mixer_1_1_mixer_panel.html#af17c28c258fa7182636b079c6f6bb2be":[12,0,34,4,10]
 };

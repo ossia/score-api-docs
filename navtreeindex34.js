@@ -1,5 +1,13 @@
 var NAVTREEINDEX34 =
 {
+"class_scenario_1_1_command_1_1_scenario_paste_elements_after.html#ac1610248cc68cb1befc7f45643b73a21":[12,0,48,0,92,0],
+"class_scenario_1_1_command_1_1_scenario_paste_elements_after.html#ace633a849b3ed892873fc8adb2fed9a6":[12,0,48,0,92,1],
+"class_scenario_1_1_command_1_1_scenario_trigger_command_factory.html":[12,0,48,0,112],
+"class_scenario_1_1_command_1_1_scenario_trigger_command_factory.html#a47ac7bb630743540105162767092bff5":[12,0,48,0,112,0],
+"class_scenario_1_1_command_1_1_scenario_trigger_command_factory.html#a59366b6c8e42c5db11ba599f9ebe5aee":[12,0,48,0,112,2],
+"class_scenario_1_1_command_1_1_scenario_trigger_command_factory.html#ab7b0376a4340472dfdcd2310d2f1367d":[12,0,48,0,112,1],
+"class_scenario_1_1_command_1_1_serializable_move_event.html":[12,0,48,0,81],
+"class_scenario_1_1_command_1_1_serializable_move_event.html#a069cfbfa1d74e429bb3964a73fc6cedd":[12,0,48,0,81,1],
 "class_scenario_1_1_command_1_1_serializable_move_event.html#a2dcae9c126610bd2427fe2175611a894":[12,0,48,0,81,0],
 "class_scenario_1_1_command_1_1_serializable_move_event.html#a43d34e4bba2eecf0bc8cd35cb3458b13":[12,0,48,0,81,2],
 "class_scenario_1_1_command_1_1_set_auto_trigger.html":[12,0,48,0,107],
@@ -241,13 +249,5 @@ var NAVTREEINDEX34 =
 "class_scenario_1_1_displayed_elements_presenter.html#a98504dbff2ea9b070436610063b5cdca":[12,0,48,74,2],
 "class_scenario_1_1_displayed_elements_presenter.html#ac09d5d77ab769cd26b489647fae711a4":[12,0,48,74,15],
 "class_scenario_1_1_displayed_elements_presenter.html#ac27d5fe8ce6d3079b0d4348cb6e8ee1e":[12,0,48,74,13],
-"class_scenario_1_1_displayed_elements_presenter.html#adf53236b1e11b4aa553303bfd28d4933":[12,0,48,74,9],
-"class_scenario_1_1_displayed_elements_presenter.html#ae1e287adbcd0b45232c27d1637259ccb":[12,0,48,74,14],
-"class_scenario_1_1_displayed_elements_provider.html":[12,0,48,75],
-"class_scenario_1_1_displayed_elements_provider.html#a27635e0b273dc68b78fb69ec79d8fecc":[12,0,48,75,2],
-"class_scenario_1_1_displayed_elements_provider.html#a82927c99473581637e02eb8525a0d533":[12,0,48,75,3],
-"class_scenario_1_1_displayed_elements_provider.html#aa14f960710c9b89a693d9cb609226095":[12,0,48,75,4],
-"class_scenario_1_1_displayed_elements_provider.html#aba0ff75ddf87a520301c7a98b36a5a0d":[12,0,48,75,0],
-"class_scenario_1_1_displayed_elements_provider.html#ac73b648c8d3f13ee8c01c912a4dd1fbc":[12,0,48,75,1],
-"class_scenario_1_1_displayed_elements_provider_list.html":[12,0,48,76]
+"class_scenario_1_1_displayed_elements_presenter.html#adf53236b1e11b4aa553303bfd28d4933":[12,0,48,74,9]
 };

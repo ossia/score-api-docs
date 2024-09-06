@@ -689,6 +689,7 @@ var namespaces_dup =
       [ "AudioFile", "struct_media_1_1_audio_file.html", "struct_media_1_1_audio_file" ],
       [ "AudioFileManager", "class_media_1_1_audio_file_manager.html", "class_media_1_1_audio_file_manager" ],
       [ "SetMergeInCount", "class_media_1_1_set_merge_in_count.html", "class_media_1_1_set_merge_in_count" ],
+      [ "SetMergeMode", "class_media_1_1_set_merge_mode.html", "class_media_1_1_set_merge_mode" ],
       [ "RMSData", "struct_media_1_1_r_m_s_data.html", "struct_media_1_1_r_m_s_data" ],
       [ "SndfileDecoder", "class_media_1_1_sndfile_decoder.html", "class_media_1_1_sndfile_decoder" ],
       [ "SoundComponentSetup", "class_media_1_1_sound_component_setup.html", null ],

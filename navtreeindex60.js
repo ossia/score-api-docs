@@ -1,5 +1,13 @@
 var NAVTREEINDEX60 =
 {
+"score-plugin-vst_2_vst_2_library_8hpp_source.html":[13,0,687],
+"score-plugin-vst_2_vst_2_node_8hpp.html#a8ff405e06d14a5b8ff7808f6b5982715":[11,0,61,26],
+"score-plugin-vst_2_vst_2_node_8hpp_source.html":[13,0,862],
+"score-plugin-vst_2_vst_2_widgets_8hpp_source.html":[13,0,1494],
+"score-plugin-ysfx_2_y_s_f_x_2_application_plugin_8hpp_source.html":[13,0,64],
+"score-plugin-ysfx_2_y_s_f_x_2_commands_2_command_factory_8hpp.html#aa9e3b44cfa70305875420ce7274d7412":[11,0,65,10],
+"score-plugin-ysfx_2_y_s_f_x_2_commands_2_command_factory_8hpp_source.html":[13,0,178],
+"score-plugin-ysfx_2_y_s_f_x_2_commands_2_edit_script_8hpp_source.html":[13,0,392],
 "score-plugin-ysfx_2_y_s_f_x_2_commands_2_script_macro_8hpp_source.html":[13,0,1227],
 "score-plugin-ysfx_2_y_s_f_x_2_process_factory_8hpp.html#ac214dfd75de5886e29f8d1f9e17faf97":[11,0,65,9],
 "score-plugin-ysfx_2_y_s_f_x_2_process_factory_8hpp_source.html":[13,0,1006],
@@ -241,13 +249,5 @@ var NAVTREEINDEX60 =
 "struct_control_1_1_combo_box.html#a4eccdb0958f5e887fa00c5040d1a1af3":[12,0,6,12,7],
 "struct_control_1_1_combo_box.html#a54095cdb27223fc477df58e62adec8cc":[12,0,6,12,5],
 "struct_control_1_1_combo_box.html#a66f1b2ca09e0df45430f1428322df2fd":[12,0,6,12,0],
-"struct_control_1_1_combo_box.html#a8ef4dae2c0931b77a25a19b9dde1de12":[12,0,6,12,6],
-"struct_control_1_1_combo_box.html#aa505ddacf7a0560e256c9faa77360644":[12,0,6,12,4],
-"struct_control_1_1_combo_box.html#ac21231363626421f72e5b8fd526ec43f":[12,0,6,12,8],
-"struct_control_1_1_combo_box.html#acaed2bc84486fcf249c27f5b58284a57":[12,0,6,12,10],
-"struct_control_1_1_combo_box.html#ae5bc0ce55f29fc6daf1d8155825c2015":[12,0,6,12,3],
-"struct_control_1_1_custom_u_i_setup.html":[12,0,6,27],
-"struct_control_1_1_custom_u_i_setup.html#a1ec59ed8b27cdea17cfb4fef413161a9":[12,0,6,27,9],
-"struct_control_1_1_custom_u_i_setup.html#a1eed01131fe7c1fa36c68584903012e1":[12,0,6,27,6],
-"struct_control_1_1_custom_u_i_setup.html#a2737f785ce5717fdf701a66ac872e7c5":[12,0,6,27,1]
+"struct_control_1_1_combo_box.html#a8ef4dae2c0931b77a25a19b9dde1de12":[12,0,6,12,6]
 };

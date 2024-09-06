@@ -1,5 +1,13 @@
 var NAVTREEINDEX70 =
 {
+"struct_nodes_1_1_micro_mapping_1_1_node_1_1_state.html#ac1bf21abf70519c6df1382fde8ea1cfd":[12,0,36,22,0,1,4],
+"struct_nodes_1_1_micro_mapping_1_1_node_1_1_state.html#ac235a9370c00002a3995143c7ec351af":[12,0,36,22,0,1,11],
+"struct_nodes_1_1_micro_mapping_1_1_node_1_1_state.html#ae7dcde38de3c17bf4b4ec8de696da8e1":[12,0,36,22,0,1,2],
+"struct_nodes_1_1_micro_mapping_1_1_node_1_1_state.html#ae83436399281040c86ff6a3ff9345294":[12,0,36,22,0,1,6],
+"struct_nodes_1_1_micro_mapping_1_1_node_1_1_state.html#aedc58bb0cf3ee384284d46a929f8cf2c":[12,0,36,22,0,1,5],
+"struct_nodes_1_1_micro_mapping_1_1_node_1_1_state.html#affe58e3b93eec7ce6284902dd769307e":[12,0,36,22,0,1,7],
+"struct_nodes_1_1_midi_hi_res_1_1_input.html":[12,0,36,23,0],
+"struct_nodes_1_1_midi_hi_res_1_1_input.html#a6dc1ff78176ef079afe71a93cfc2c80c":[12,0,36,23,0,1],
 "struct_nodes_1_1_midi_hi_res_1_1_input_1_1_metadata.html":[12,0,36,23,0,0],
 "struct_nodes_1_1_midi_hi_res_1_1_output.html":[12,0,36,23,1],
 "struct_nodes_1_1_midi_hi_res_1_1_output.html#a2594813c27cc5a09321f63d1a7390a0c":[12,0,36,23,1,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX70 =
 "struct_process_1_1_layout_builder_base.html#ac6ab2bd4e4f63764ac38a05a06be1408":[12,0,42,1,1],
 "struct_process_1_1_layout_builder_base.html#acd48048384414268bcc06d3a18f86e3b":[12,0,42,1,10],
 "struct_process_1_1_layout_builder_base.html#aceecda053011705d68c7f670d4422f2a":[12,0,42,1,0],
-"struct_process_1_1_layout_builder_base.html#ad51bde0a8c04956a94bdc8ae514041c4":[12,0,42,1,18],
-"struct_process_1_1_layout_builder_base.html#ae0b00d1b1b060e9e8b5cd90b0bde3661":[12,0,42,1,8],
-"struct_process_1_1_layout_builder_base.html#aea3d208d90f241f65e4b17bfa251d39a":[12,0,42,1,5],
-"struct_process_1_1_magnetic_info.html":[12,0,42,7],
-"struct_process_1_1_magnetic_info.html#a5dc297e0f55d4bbfab3c92aee7346e93":[12,0,42,7,0],
-"struct_process_1_1_magnetic_info.html#a77d6bf73b8fd25e3d44ded1c6c1cd9e6":[12,0,42,7,2],
-"struct_process_1_1_magnetic_info.html#a8150ac3d0a59d9a38182095611e8caa3":[12,0,42,7,3],
-"struct_process_1_1_magnetic_info.html#a96f31e2800f223f03e5043439aa899c4":[12,0,42,7,1],
-"struct_process_1_1_multi_script_dialog_1_1_editor_tab.html":[12,0,42,82,0]
+"struct_process_1_1_layout_builder_base.html#ad51bde0a8c04956a94bdc8ae514041c4":[12,0,42,1,18]
 };
