@@ -1,5 +1,9 @@
 var NAVTREEINDEX8 =
 {
+"class_audio_outlet.html#a4bf1a71573adb2a314f1a4134b44597e":[12,0,77,3],
+"class_audio_outlet.html#a75fd6c642c074c18125c7b59501c12ac":[12,0,77,5],
+"class_audio_outlet.html#a77dab6bd9be7f8f0f865eea59d33ba67":[12,0,77,2],
+"class_audio_outlet.html#a821316ec5562cceeb25ff23ac93f9fdc":[12,0,77,0],
 "class_audio_outlet.html#ab8fb87d68a3999b5ee98817a35e23e42":[12,0,77,4],
 "class_audio_outlet.html#af33eaf132ad4c62440957e13e4589c69":[12,0,77,1],
 "class_automation_1_1_change_address.html":[12,0,2,5],
@@ -245,9 +249,5 @@ var NAVTREEINDEX8 =
 "class_curve_1_1_command_object_base.html#aff951630a3e4d92a55273db757a9397b":[12,0,9,15,16],
 "class_curve_1_1_create_pen_tool.html":[12,0,9,38],
 "class_curve_1_1_create_pen_tool.html#adebf0104be4978ad187596fbdeb201b0":[12,0,9,38,0],
-"class_curve_1_1_create_point_command_object.html":[12,0,9,14],
-"class_curve_1_1_create_point_command_object.html#a3f230fe01503f6d133688cd13d57b3ac":[12,0,9,14,2],
-"class_curve_1_1_create_point_command_object.html#a5a99531be9547997a6620947be749bcf":[12,0,9,14,4],
-"class_curve_1_1_create_point_command_object.html#a678931c6c3776758af6da58f9d45fa13":[12,0,9,14,1],
-"class_curve_1_1_create_point_command_object.html#aa26caec9a1d212c3886e975b4a149ec8":[12,0,9,14,3]
+"class_curve_1_1_create_point_command_object.html":[12,0,9,14]
 };

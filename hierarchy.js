@@ -129,23 +129,6 @@ var hierarchy =
     [ "base_kind< T, std::enable_if_t<!std::is_same_v< T, typename T::score_base_type > > >", "structbase__kind_3_01_t_00_01std_1_1enable__if__t_3_9std_1_1is__same__v_3_01_t_00_01typename_01_97048677e56782543c9f1d394cf20849.html", null ],
     [ "ossia::safe_nodes::base_metadata", null, [
       [ "Control::Meta_base", "struct_control_1_1_meta__base.html", [
-        [ "Analysis::CSD::Metadata", "struct_analysis_1_1_c_s_d_1_1_metadata.html", null ],
-        [ "Analysis::Centroid::Metadata", "struct_analysis_1_1_centroid_1_1_metadata.html", null ],
-        [ "Analysis::Crest::Metadata", "struct_analysis_1_1_crest_1_1_metadata.html", null ],
-        [ "Analysis::EnergyDifference::Metadata", "struct_analysis_1_1_energy_difference_1_1_metadata.html", null ],
-        [ "Analysis::Flatness::Metadata", "struct_analysis_1_1_flatness_1_1_metadata.html", null ],
-        [ "Analysis::Hfq::Metadata", "struct_analysis_1_1_hfq_1_1_metadata.html", null ],
-        [ "Analysis::Kurtosis::Metadata", "struct_analysis_1_1_kurtosis_1_1_metadata.html", null ],
-        [ "Analysis::MFCC::Metadata", "struct_analysis_1_1_m_f_c_c_1_1_metadata.html", null ],
-        [ "Analysis::MelSpectrum::Metadata", "struct_analysis_1_1_mel_spectrum_1_1_metadata.html", null ],
-        [ "Analysis::Peak::Metadata", "struct_analysis_1_1_peak_1_1_metadata.html", null ],
-        [ "Analysis::Pitch::Metadata", "struct_analysis_1_1_pitch_1_1_metadata.html", null ],
-        [ "Analysis::RMS::Metadata", "struct_analysis_1_1_r_m_s_1_1_metadata.html", null ],
-        [ "Analysis::Rolloff::Metadata", "struct_analysis_1_1_rolloff_1_1_metadata.html", null ],
-        [ "Analysis::SpectralDiff::Metadata", "struct_analysis_1_1_spectral_diff_1_1_metadata.html", null ],
-        [ "Analysis::SpectralDiffHWR::Metadata", "struct_analysis_1_1_spectral_diff_h_w_r_1_1_metadata.html", null ],
-        [ "Analysis::Spectrum::Metadata", "struct_analysis_1_1_spectrum_1_1_metadata.html", null ],
-        [ "Analysis::ZeroCrossing::Metadata", "struct_analysis_1_1_zero_crossing_1_1_metadata.html", null ],
         [ "Nodes::Arpeggiator::Node::Metadata", "struct_nodes_1_1_arpeggiator_1_1_node_1_1_metadata.html", null ],
         [ "Nodes::ArrayGenerator::Node::Metadata", "struct_nodes_1_1_array_generator_1_1_node_1_1_metadata.html", null ],
         [ "Nodes::ArrayMapping::Node::Metadata", "struct_nodes_1_1_array_mapping_1_1_node_1_1_metadata.html", null ],
@@ -209,6 +192,9 @@ var hierarchy =
     ] ],
     [ "Jit::BytebeatLanguageSpec", "struct_jit_1_1_bytebeat_language_spec.html", null ],
     [ "Process::CableData", "struct_process_1_1_cable_data.html", null ],
+    [ "halp::callback", null, [
+      [ "Analysis::pulse_out", "struct_analysis_1_1pulse__out.html", null ]
+    ] ],
     [ "score::RecursiveWatch::Callbacks", "structscore_1_1_recursive_watch_1_1_callbacks.html", null ],
     [ "Gfx::CameraSettings", "struct_gfx_1_1_camera_settings.html", null ],
     [ "Scenario::CategorisedScenario", "struct_scenario_1_1_categorised_scenario.html", null ],
@@ -219,7 +205,6 @@ var hierarchy =
     [ "csv2::Reader< delimiter, quote_character, first_row_is_header, trim_policy >::Row::CellIterator", "classcsv2_1_1_reader_1_1_row_1_1_cell_iterator.html", null ],
     [ "Scenario::CentralIntervalDisplay", "class_scenario_1_1_central_interval_display.html", null ],
     [ "Scenario::CentralNodalDisplay", "class_scenario_1_1_central_nodal_display.html", null ],
-    [ "Analysis::Centroid", "struct_analysis_1_1_centroid.html", null ],
     [ "Protocols::Artnet::Channel", "struct_protocols_1_1_artnet_1_1_channel.html", null ],
     [ "check_enum_size< T >", "structcheck__enum__size.html", null ],
     [ "Nodal::HierarchyManager::ChildPair", "struct_nodal_1_1_hierarchy_manager_1_1_child_pair.html", null ],
@@ -618,8 +603,6 @@ var hierarchy =
     [ "Process::ControlMessage", "struct_process_1_1_control_message.html", null ],
     [ "Process::ControlSetup< CreatePort, CreateControl, GetControlSize, GetName, GetFactory >", "struct_process_1_1_control_setup.html", null ],
     [ "Scenario::CopiedCables", "struct_scenario_1_1_copied_cables.html", null ],
-    [ "Analysis::Crest", "struct_analysis_1_1_crest.html", null ],
-    [ "Analysis::CSD", "struct_analysis_1_1_c_s_d.html", null ],
     [ "Scenario::CSPCoherencyCheckerInterface", "class_scenario_1_1_c_s_p_coherency_checker_interface.html", null ],
     [ "Scenario::CurveCreator", "struct_scenario_1_1_curve_creator.html", null ],
     [ "Curve::CurveDataHash", "class_curve_1_1_curve_data_hash.html", null ],
@@ -714,6 +697,10 @@ var hierarchy =
     [ "Scenario::DropProcessOnStateHelper", "class_scenario_1_1_drop_process_on_state_helper.html", null ],
     [ "vst3::vst_node< UseDouble >::dummy_t", "structvst3_1_1vst__node_1_1dummy__t.html", null ],
     [ "vst::vst_node< UseDouble, IsSynth >::dummy_t", "structvst_1_1vst__node_1_1dummy__t.html", null ],
+    [ "halp::dynamic_audio_bus", null, [
+      [ "Analysis::audio_in", "struct_analysis_1_1audio__in.html", null ],
+      [ "Analysis::audio_out", "struct_analysis_1_1audio__out.html", null ]
+    ] ],
     [ "score::dynarray_impl< T >", "classscore_1_1dynarray__impl.html", null ],
     [ "score::dynvector_impl< T >", "classscore_1_1dynvector__impl.html", null ],
     [ "Curve::EasingData", "struct_curve_1_1_easing_data.html", null ],
@@ -748,7 +735,6 @@ var hierarchy =
     [ "score::EnableWhenSelectionContains< T >", "classscore_1_1_enable_when_selection_contains.html", null ],
     [ "Scenario::EncapsData", "struct_scenario_1_1_encaps_data.html", null ],
     [ "Scenario::EndDateComparator", "struct_scenario_1_1_end_date_comparator.html", null ],
-    [ "Analysis::EnergyDifference", "struct_analysis_1_1_energy_difference.html", null ],
     [ "score::EntityList< T >", "classscore_1_1_entity_list.html", null ],
     [ "score::EntityMap< T, Ordered >", "classscore_1_1_entity_map.html", null ],
     [ "score::EntityMap< Midi::Note >", "classscore_1_1_entity_map.html", null ],
@@ -869,7 +855,6 @@ var hierarchy =
     ] ],
     [ "Protocols::FixtureData", "class_protocols_1_1_fixture_data.html", null ],
     [ "Protocols::FixtureMode", "struct_protocols_1_1_fixture_mode.html", null ],
-    [ "Analysis::Flatness", "struct_analysis_1_1_flatness.html", null ],
     [ "score::FlicksSpinBox", "structscore_1_1_flicks_spin_box.html", null ],
     [ "WidgetFactory::FloatControl< ControlUI, Normalizer, Control >", "struct_widget_factory_1_1_float_control.html", null ],
     [ "WidgetFactory::FloatControl< T, WidgetFactory::LinearNormalizer, false >", "struct_widget_factory_1_1_float_control.html", [
@@ -914,7 +899,25 @@ var hierarchy =
     [ "score::gfx::geometry", "structscore_1_1gfx_1_1geometry.html", null ],
     [ "Scenario::get_curve_domain", "struct_scenario_1_1get__curve__domain.html", null ],
     [ "Scenario::get_start_end", "struct_scenario_1_1get__start__end.html", null ],
-    [ "Analysis::GistState", "struct_analysis_1_1_gist_state.html", null ],
+    [ "Analysis::GistState", "struct_analysis_1_1_gist_state.html", [
+      [ "Analysis::CSD", "struct_analysis_1_1_c_s_d.html", null ],
+      [ "Analysis::Centroid", "struct_analysis_1_1_centroid.html", null ],
+      [ "Analysis::Crest", "struct_analysis_1_1_crest.html", null ],
+      [ "Analysis::EnergyDifference", "struct_analysis_1_1_energy_difference.html", null ],
+      [ "Analysis::Flatness", "struct_analysis_1_1_flatness.html", null ],
+      [ "Analysis::HFQ", "struct_analysis_1_1_h_f_q.html", null ],
+      [ "Analysis::Kurtosis", "struct_analysis_1_1_kurtosis.html", null ],
+      [ "Analysis::MFCC", "struct_analysis_1_1_m_f_c_c.html", null ],
+      [ "Analysis::MelSpectrum", "struct_analysis_1_1_mel_spectrum.html", null ],
+      [ "Analysis::Peak", "struct_analysis_1_1_peak.html", null ],
+      [ "Analysis::Pitch", "struct_analysis_1_1_pitch.html", null ],
+      [ "Analysis::RMS", "struct_analysis_1_1_r_m_s.html", null ],
+      [ "Analysis::Rolloff", "struct_analysis_1_1_rolloff.html", null ],
+      [ "Analysis::SpectralDiff", "struct_analysis_1_1_spectral_diff.html", null ],
+      [ "Analysis::SpectralDiffHWR", "struct_analysis_1_1_spectral_diff_h_w_r.html", null ],
+      [ "Analysis::Spectrum", "struct_analysis_1_1_spectrum.html", null ],
+      [ "Analysis::ZeroCrossing", "struct_analysis_1_1_zero_crossing.html", null ]
+    ] ],
     [ "score::GLCapabilities", "structscore_1_1_g_l_capabilities.html", null ],
     [ "Jit::GlobalAtExit", "struct_jit_1_1_global_at_exit.html", null ],
     [ "LV2::GlobalContext", "struct_l_v2_1_1_global_context.html", null ],
@@ -1041,13 +1044,16 @@ var hierarchy =
       [ "score::CommandStore", "structscore_1_1_command_store.html", null ]
     ] ],
     [ "Media::RMSData::Header", "struct_media_1_1_r_m_s_data_1_1_header.html", null ],
-    [ "Analysis::Hfq", "struct_analysis_1_1_hfq.html", null ],
     [ "score::HierarchicalMember< Model, T, ptr >", "structscore_1_1_hierarchical_member.html", null ],
     [ "score::HierarchicModel< Model, Args >", "structscore_1_1_hierarchic_model.html", null ],
     [ "score::HierarchicModel< Model, Args... >", "structscore_1_1_hierarchic_model.html", [
       [ "score::HierarchicModel< Model, Arg, Args... >", "structscore_1_1_hierarchic_model_3_01_model_00_01_arg_00_01_args_8_8_8_01_4.html", null ]
     ] ],
     [ "LV2::HostContext", "struct_l_v2_1_1_host_context.html", null ],
+    [ "halp::hslider_f32", null, [
+      [ "Analysis::gain_slider", "struct_analysis_1_1gain__slider.html", null ],
+      [ "Analysis::gate_slider", "struct_analysis_1_1gate__slider.html", null ]
+    ] ],
     [ "WidgetFactory::HSVSlider", "struct_widget_factory_1_1_h_s_v_slider.html", [
       [ "Control::HSVSlider", "struct_control_1_1_h_s_v_slider.html", null ]
     ] ],
@@ -1114,8 +1120,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1590,7 +1596,6 @@ var hierarchy =
     [ "Gfx::Kinect2::kinect2_settings", "struct_gfx_1_1_kinect2_1_1kinect2__settings.html", null ],
     [ "Gfx::Kinect2::Kinect2Context", "struct_gfx_1_1_kinect2_1_1_kinect2_context.html", null ],
     [ "Gfx::Kinect2::Kinect2Settings", "struct_gfx_1_1_kinect2_1_1_kinect2_settings.html", null ],
-    [ "Analysis::Kurtosis", "struct_analysis_1_1_kurtosis.html", null ],
     [ "Patternist::Lane", "struct_patternist_1_1_lane.html", null ],
     [ "Faust::LanguageSpec", "struct_faust_1_1_language_spec.html", null ],
     [ "JS::LanguageSpec", "struct_j_s_1_1_language_spec.html", null ],
@@ -1665,7 +1670,6 @@ var hierarchy =
     [ "oscr::MatchingWidget< Field >", "structoscr_1_1_matching_widget.html", null ],
     [ "oscr::MatchingWidget< Field >", "structoscr_1_1_matching_widget_3_01_field_01_4.html", null ],
     [ "avnd_tools::PatternCombiner::maximum", "structavnd__tools_1_1_pattern_combiner_1_1maximum.html", null ],
-    [ "Analysis::MelSpectrum", "struct_analysis_1_1_mel_spectrum.html", null ],
     [ "Gfx::ShaderSource::MemberSpec", "struct_gfx_1_1_shader_source_1_1_member_spec.html", null ],
     [ "score::Menu", "classscore_1_1_menu.html", null ],
     [ "score::MenuManager", "classscore_1_1_menu_manager.html", null ],
@@ -1731,7 +1735,6 @@ var hierarchy =
       [ "Faust::UpdateUI< Proc, SetInit >", "struct_faust_1_1_update_u_i.html", null ]
     ] ],
     [ "Execution::MetronomeSounds", "struct_execution_1_1_metronome_sounds.html", null ],
-    [ "Analysis::MFCC", "struct_analysis_1_1_m_f_c_c.html", null ],
     [ "Protocols::Settings::MidiAPI", "struct_protocols_1_1_settings_1_1_midi_a_p_i.html", null ],
     [ "oscr::MidiFileOctaver", "structoscr_1_1_midi_file_octaver.html", null ],
     [ "MidiMessage", "class_midi_message.html", null ],
@@ -2086,11 +2089,9 @@ var hierarchy =
       [ "avnd_tools::Teleplot", "structavnd__tools_1_1_teleplot.html", null ]
     ] ],
     [ "PdDataflowTest", "class_pd_dataflow_test.html", null ],
-    [ "Analysis::Peak", "struct_analysis_1_1_peak.html", null ],
     [ "score::gfx::PersistSampler", "structscore_1_1gfx_1_1_persist_sampler.html", null ],
     [ "Protocols::PhidgetSpecificSettings", "struct_protocols_1_1_phidget_specific_settings.html", null ],
     [ "score::gfx::Pipeline", "structscore_1_1gfx_1_1_pipeline.html", null ],
-    [ "Analysis::Pitch", "struct_analysis_1_1_pitch.html", null ],
     [ "Protocols::Pixel", "struct_protocols_1_1_pixel.html", null ],
     [ "Protocols::PixelGroup", "struct_protocols_1_1_pixel_group.html", null ],
     [ "Protocols::PixelMatrix", "struct_protocols_1_1_pixel_matrix.html", null ],
@@ -3486,8 +3487,6 @@ var hierarchy =
     [ "avnd_tools::DeviceRecorder::reset_path_message", "structavnd__tools_1_1_device_recorder_1_1reset__path__message.html", null ],
     [ "score::RestorableDocument", "structscore_1_1_restorable_document.html", null ],
     [ "score::RightClickImpl", "structscore_1_1_right_click_impl.html", null ],
-    [ "Analysis::RMS", "struct_analysis_1_1_r_m_s.html", null ],
-    [ "Analysis::Rolloff", "struct_analysis_1_1_rolloff.html", null ],
     [ "csv2::Reader< delimiter, quote_character, first_row_is_header, trim_policy >::Row", "classcsv2_1_1_reader_1_1_row.html", null ],
     [ "csv2::Reader< delimiter, quote_character, first_row_is_header, trim_policy >::RowIterator", "classcsv2_1_1_reader_1_1_row_iterator.html", null ],
     [ "Nodes::FactorOracle::safe_vector< T, default_value >", "struct_nodes_1_1_factor_oracle_1_1safe__vector.html", null ],
@@ -3583,9 +3582,6 @@ var hierarchy =
     [ "Media::SndfileDecoder", "class_media_1_1_sndfile_decoder.html", null ],
     [ "Audio::AudioPreviewExecutor::sound", "struct_audio_1_1_audio_preview_executor_1_1sound.html", null ],
     [ "Media::SoundComponentSetup", "class_media_1_1_sound_component_setup.html", null ],
-    [ "Analysis::SpectralDiff", "struct_analysis_1_1_spectral_diff.html", null ],
-    [ "Analysis::SpectralDiffHWR", "struct_analysis_1_1_spectral_diff_h_w_r.html", null ],
-    [ "Analysis::Spectrum", "struct_analysis_1_1_spectrum.html", null ],
     [ "SpinBox::spinbox_type", null, [
       [ "score::MaxRangeSpinBox< TemplatedSpinBox< T > >", "classscore_1_1_max_range_spin_box.html", [
         [ "score::SpinBox< T >", "classscore_1_1_spin_box.html", null ]
@@ -3892,6 +3888,9 @@ var hierarchy =
       [ "UuidKey< score::Plugin >", "class_uuid_key.html", null ],
       [ "UuidKey< Tag >", "class_uuid_key.html", null ]
     ] ],
+    [ "halp::val_port", null, [
+      [ "Analysis::value_out", "struct_analysis_1_1value__out.html", null ]
+    ] ],
     [ "Nodes::PulseToNote::Node::val_visitor", "struct_nodes_1_1_pulse_to_note_1_1_node_1_1val__visitor.html", null ],
     [ "jk::value", "structjk_1_1value.html", null ],
     [ "avnd_tools::PatternCombiner::value_size", "structavnd__tools_1_1_pattern_combiner_1_1value__size.html", null ],
@@ -4000,6 +3999,5 @@ var hierarchy =
     [ "WidgetFactory::XYSpinboxes", "struct_widget_factory_1_1_x_y_spinboxes.html", null ],
     [ "WidgetFactory::XYZSlider", "struct_widget_factory_1_1_x_y_z_slider.html", null ],
     [ "WidgetFactory::XYZSpinboxes", "struct_widget_factory_1_1_x_y_z_spinboxes.html", null ],
-    [ "Analysis::ZeroCrossing", "struct_analysis_1_1_zero_crossing.html", null ],
     [ "Scenario::ZPos", "class_scenario_1_1_z_pos.html", null ]
 ];

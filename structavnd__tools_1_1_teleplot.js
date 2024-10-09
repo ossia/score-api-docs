@@ -11,7 +11,7 @@ var structavnd__tools_1_1_teleplot =
     [ "update", "structavnd__tools_1_1_teleplot.html#a5546d4a1a358cc1cfa72036e012664b1", null ],
     [ "inputs", "structavnd__tools_1_1_teleplot.html#a106be3af6e0793cf997b6af9630ccfa9", null ],
     [ "io_context", "structavnd__tools_1_1_teleplot.html#a42ba4e80b40cd5c716805afedd578949", null ],
-    [ "outputs", "structavnd__tools_1_1_teleplot.html#a21e93b3501b4ca53b83527fd748aa65c", null ],
+    [ "outputs", "structavnd__tools_1_1_teleplot.html#a62467e93f8e697ce741f41dcd61b2c9d", null ],
     [ "params", "structavnd__tools_1_1_teleplot.html#a55c0ff8220c2343a3098f89ee34b789d", null ],
     [ "socket", "structavnd__tools_1_1_teleplot.html#a8fd74c87b9a3487cbd628c39bfd336cb", null ]
 ];

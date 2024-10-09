@@ -9,7 +9,13 @@ var namespaces_dup =
       [ "Peak", "struct_analysis_1_1_peak.html", "struct_analysis_1_1_peak" ],
       [ "Flatness", "struct_analysis_1_1_flatness.html", "struct_analysis_1_1_flatness" ],
       [ "GistState", "struct_analysis_1_1_gist_state.html", "struct_analysis_1_1_gist_state" ],
-      [ "Hfq", "struct_analysis_1_1_hfq.html", "struct_analysis_1_1_hfq" ],
+      [ "value_out", "struct_analysis_1_1value__out.html", null ],
+      [ "pulse_out", "struct_analysis_1_1pulse__out.html", null ],
+      [ "audio_in", "struct_analysis_1_1audio__in.html", null ],
+      [ "audio_out", "struct_analysis_1_1audio__out.html", null ],
+      [ "gain_slider", "struct_analysis_1_1gain__slider.html", "struct_analysis_1_1gain__slider" ],
+      [ "gate_slider", "struct_analysis_1_1gate__slider.html", null ],
+      [ "HFQ", "struct_analysis_1_1_h_f_q.html", "struct_analysis_1_1_h_f_q" ],
       [ "Kurtosis", "struct_analysis_1_1_kurtosis.html", "struct_analysis_1_1_kurtosis" ],
       [ "Spectrum", "struct_analysis_1_1_spectrum.html", "struct_analysis_1_1_spectrum" ],
       [ "MelSpectrum", "struct_analysis_1_1_mel_spectrum.html", "struct_analysis_1_1_mel_spectrum" ],
@@ -18,7 +24,10 @@ var namespaces_dup =
       [ "Rolloff", "struct_analysis_1_1_rolloff.html", "struct_analysis_1_1_rolloff" ],
       [ "SpectralDiff", "struct_analysis_1_1_spectral_diff.html", "struct_analysis_1_1_spectral_diff" ],
       [ "SpectralDiffHWR", "struct_analysis_1_1_spectral_diff_h_w_r.html", "struct_analysis_1_1_spectral_diff_h_w_r" ],
-      [ "ZeroCrossing", "struct_analysis_1_1_zero_crossing.html", "struct_analysis_1_1_zero_crossing" ]
+      [ "ZeroCrossing", "struct_analysis_1_1_zero_crossing.html", "struct_analysis_1_1_zero_crossing" ],
+      [ "analysis_vector", "_helpers_8hpp.html#a67678483e3dc855a9d12a886657a34a3", null ],
+      [ "output_type", "_helpers_8hpp.html#aa907d3cc8ca90d4ac0887216ce346fce", null ],
+      [ "PitchState", "_pitch_8hpp.html#a98239803e3c0ef601307762ab624c21e", null ]
     ] ],
     [ "Audio", null, [
       [ "Settings", null, [

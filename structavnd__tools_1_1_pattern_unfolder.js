@@ -6,5 +6,5 @@ var structavnd__tools_1_1_pattern_unfolder =
     [ "halp_meta", "structavnd__tools_1_1_pattern_unfolder.html#a38cd9cb40aab9fe4956969f9498b8c3f", null ],
     [ "operator()", "structavnd__tools_1_1_pattern_unfolder.html#a7b0f8ccec0f048cf1c74eeff96166918", null ],
     [ "inputs", "structavnd__tools_1_1_pattern_unfolder.html#a413e199601b515a22767df2685d590e0", null ],
-    [ "outputs", "structavnd__tools_1_1_pattern_unfolder.html#a78c5f1076868af4d313d930e29300b0d", null ]
+    [ "outputs", "structavnd__tools_1_1_pattern_unfolder.html#a003aba92fa32bfcdc1e375faa6811099", null ]
 ];

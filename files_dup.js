@@ -558,6 +558,7 @@ var files_dup =
     [ "HashMapSerialization.hpp", "_hash_map_serialization_8hpp_source.html", null ],
     [ "HeaderDelegate.hpp", "_header_delegate_8hpp_source.html", null ],
     [ "HelperPanelDelegate.hpp", "_helper_panel_delegate_8hpp_source.html", null ],
+    [ "Helpers.hpp", "_helpers_8hpp_source.html", null ],
     [ "HideRackInViewModel.hpp", "_hide_rack_in_view_model_8hpp_source.html", null ],
     [ "HierarchicalModel.hpp", "_hierarchical_model_8hpp_source.html", null ],
     [ "HighFrequencyContent.hpp", "_high_frequency_content_8hpp_source.html", null ],

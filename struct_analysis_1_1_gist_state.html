@@ -96,12 +96,38 @@ $(document).ready(function(){initNavTree('struct_analysis_1_1_gist_state.html','
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_analysis_1_1_gist_state-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Analysis::GistState Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for Analysis::GistState:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="struct_analysis_1_1_gist_state.png" usemap="#Analysis::GistState_map" alt=""/>
+  <map id="Analysis::GistState_map" name="Analysis::GistState_map">
+<area href="struct_analysis_1_1_c_s_d.html" alt="Analysis::CSD" shape="rect" coords="177,56,344,80"/>
+<area href="struct_analysis_1_1_centroid.html" alt="Analysis::Centroid" shape="rect" coords="177,112,344,136"/>
+<area href="struct_analysis_1_1_crest.html" alt="Analysis::Crest" shape="rect" coords="177,168,344,192"/>
+<area href="struct_analysis_1_1_energy_difference.html" alt="Analysis::EnergyDifference" shape="rect" coords="177,224,344,248"/>
+<area href="struct_analysis_1_1_flatness.html" alt="Analysis::Flatness" shape="rect" coords="177,280,344,304"/>
+<area href="struct_analysis_1_1_h_f_q.html" alt="Analysis::HFQ" shape="rect" coords="177,336,344,360"/>
+<area href="struct_analysis_1_1_kurtosis.html" alt="Analysis::Kurtosis" shape="rect" coords="177,392,344,416"/>
+<area href="struct_analysis_1_1_m_f_c_c.html" alt="Analysis::MFCC" shape="rect" coords="177,448,344,472"/>
+<area href="struct_analysis_1_1_mel_spectrum.html" alt="Analysis::MelSpectrum" shape="rect" coords="177,504,344,528"/>
+<area href="struct_analysis_1_1_peak.html" alt="Analysis::Peak" shape="rect" coords="177,560,344,584"/>
+<area href="struct_analysis_1_1_pitch.html" alt="Analysis::Pitch" shape="rect" coords="177,616,344,640"/>
+<area href="struct_analysis_1_1_r_m_s.html" alt="Analysis::RMS" shape="rect" coords="177,672,344,696"/>
+<area href="struct_analysis_1_1_rolloff.html" alt="Analysis::Rolloff" shape="rect" coords="177,728,344,752"/>
+<area href="struct_analysis_1_1_spectral_diff.html" alt="Analysis::SpectralDiff" shape="rect" coords="177,784,344,808"/>
+<area href="struct_analysis_1_1_spectral_diff_h_w_r.html" alt="Analysis::SpectralDiffHWR" shape="rect" coords="177,840,344,864"/>
+<area href="struct_analysis_1_1_spectrum.html" alt="Analysis::Spectrum" shape="rect" coords="177,896,344,920"/>
+<area href="struct_analysis_1_1_zero_crossing.html" alt="Analysis::ZeroCrossing" shape="rect" coords="177,952,344,976"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -111,69 +137,82 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa3ba96ef8f7a0b7f366646ce3b45e39c"><td class="memItemLeft" align="right" valign="top"><a id="aa3ba96ef8f7a0b7f366646ce3b45e39c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>GistState</b> (<a class="el" href="class_audio_1_1_settings_1_1_model.html">Audio::Settings::Model</a> &amp;settings)</td></tr>
 <tr class="separator:aa3ba96ef8f7a0b7f366646ce3b45e39c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26a1bd579d9e8b8a56c945889bec73b1"><td class="memItemLeft" align="right" valign="top"><a id="a26a1bd579d9e8b8a56c945889bec73b1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>preprocess</b> (const ossia::audio_port &amp;audio)</td></tr>
-<tr class="separator:a26a1bd579d9e8b8a56c945889bec73b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a400a02146f0a09d8132359039e8e8fc0"><td class="memTemplParams" colspan="2"><a id="a400a02146f0a09d8132359039e8e8fc0"></a>
+<tr class="memitem:a826aeae9ece8a430df7221b38041af8d"><td class="memItemLeft" align="right" valign="top"><a id="a826aeae9ece8a430df7221b38041af8d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>preprocess</b> (const auto &amp;audio)</td></tr>
+<tr class="separator:a826aeae9ece8a430df7221b38041af8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02c39a1862f55c2a3711775300e02815"><td class="memTemplParams" colspan="2"><a id="a02c39a1862f55c2a3711775300e02815"></a>
 template&lt;auto Func&gt; </td></tr>
-<tr class="memitem:a400a02146f0a09d8132359039e8e8fc0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>process_mono</b> (const ossia::audio_port &amp;audio, ossia::value_port &amp;out_port, const ossia::token_request &amp;tk, const ossia::exec_state_facade &amp;e)</td></tr>
-<tr class="separator:a400a02146f0a09d8132359039e8e8fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ac4b396a5017665ea91678148f08a8c"><td class="memTemplParams" colspan="2"><a id="a2ac4b396a5017665ea91678148f08a8c"></a>
+<tr class="memitem:a02c39a1862f55c2a3711775300e02815"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>process_mono</b> (const auto &amp;audio, auto &amp;out_port, int d)</td></tr>
+<tr class="separator:a02c39a1862f55c2a3711775300e02815"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87f357316fcadebbdef47d4241544e79"><td class="memTemplParams" colspan="2"><a id="a87f357316fcadebbdef47d4241544e79"></a>
 template&lt;auto Func&gt; </td></tr>
-<tr class="memitem:a2ac4b396a5017665ea91678148f08a8c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>process_stereo</b> (const ossia::audio_port &amp;audio, ossia::value_port &amp;out_port, const ossia::token_request &amp;tk, const ossia::exec_state_facade &amp;e)</td></tr>
-<tr class="separator:a2ac4b396a5017665ea91678148f08a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63575441db5e1fd54552c1eecc12cbf9"><td class="memTemplParams" colspan="2"><a id="a63575441db5e1fd54552c1eecc12cbf9"></a>
+<tr class="memitem:a87f357316fcadebbdef47d4241544e79"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>process_stereo</b> (const auto &amp;audio, auto &amp;out_port, int d)</td></tr>
+<tr class="separator:a87f357316fcadebbdef47d4241544e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a587f5ce8111363046153e4477a287952"><td class="memTemplParams" colspan="2"><a id="a587f5ce8111363046153e4477a287952"></a>
 template&lt;auto Func&gt; </td></tr>
-<tr class="memitem:a63575441db5e1fd54552c1eecc12cbf9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>process_multi</b> (const ossia::audio_port &amp;audio, ossia::value_port &amp;out_port, const ossia::token_request &amp;tk, const ossia::exec_state_facade &amp;e)</td></tr>
-<tr class="separator:a63575441db5e1fd54552c1eecc12cbf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a897475a52443023fdd2f1ef94bfd8114"><td class="memTemplParams" colspan="2"><a id="a897475a52443023fdd2f1ef94bfd8114"></a>
+<tr class="memitem:a587f5ce8111363046153e4477a287952"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>process_multi</b> (const auto &amp;audio, auto &amp;out_port, int d)</td></tr>
+<tr class="separator:a587f5ce8111363046153e4477a287952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8f7b0e08279fb5ac01e63e112d9ce43"><td class="memTemplParams" colspan="2"><a id="ac8f7b0e08279fb5ac01e63e112d9ce43"></a>
 template&lt;auto Func&gt; </td></tr>
-<tr class="memitem:a897475a52443023fdd2f1ef94bfd8114"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>process_mono</b> (const ossia::audio_port &amp;audio, float gain, float gate, ossia::value_port &amp;out_port, const ossia::token_request &amp;tk, const ossia::exec_state_facade &amp;e)</td></tr>
-<tr class="separator:a897475a52443023fdd2f1ef94bfd8114"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94247a9c43db303844a58fdb85247aa3"><td class="memTemplParams" colspan="2"><a id="a94247a9c43db303844a58fdb85247aa3"></a>
+<tr class="memitem:ac8f7b0e08279fb5ac01e63e112d9ce43"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>process_mono</b> (const auto &amp;audio, float gain, float gate, auto &amp;out_port, int d)</td></tr>
+<tr class="separator:ac8f7b0e08279fb5ac01e63e112d9ce43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fda15ced5f007631e14c25c7c0d6e6e"><td class="memTemplParams" colspan="2"><a id="a3fda15ced5f007631e14c25c7c0d6e6e"></a>
 template&lt;auto Func&gt; </td></tr>
-<tr class="memitem:a94247a9c43db303844a58fdb85247aa3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>process_stereo</b> (const ossia::audio_port &amp;audio, float gain, float gate, ossia::value_port &amp;out_port, const ossia::token_request &amp;tk, const ossia::exec_state_facade &amp;e)</td></tr>
-<tr class="separator:a94247a9c43db303844a58fdb85247aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20290b92a9d8047453480d1251094a94"><td class="memTemplParams" colspan="2"><a id="a20290b92a9d8047453480d1251094a94"></a>
+<tr class="memitem:a3fda15ced5f007631e14c25c7c0d6e6e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>process_stereo</b> (const auto &amp;audio, float gain, float gate, auto &amp;out_port, int d)</td></tr>
+<tr class="separator:a3fda15ced5f007631e14c25c7c0d6e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f1d8b0766fe59497d6ac3800e43add9"><td class="memTemplParams" colspan="2"><a id="a7f1d8b0766fe59497d6ac3800e43add9"></a>
 template&lt;auto Func&gt; </td></tr>
-<tr class="memitem:a20290b92a9d8047453480d1251094a94"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>process_multi</b> (const ossia::audio_port &amp;audio, float gain, float gate, ossia::value_port &amp;out_port, const ossia::token_request &amp;tk, const ossia::exec_state_facade &amp;e)</td></tr>
-<tr class="separator:a20290b92a9d8047453480d1251094a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb5543a00a9a5fd7bde13a0cf5823a83"><td class="memTemplParams" colspan="2"><a id="aeb5543a00a9a5fd7bde13a0cf5823a83"></a>
+<tr class="memitem:a7f1d8b0766fe59497d6ac3800e43add9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>process_multi</b> (const auto &amp;audio, float gain, float gate, auto &amp;out_port, int d)</td></tr>
+<tr class="separator:a7f1d8b0766fe59497d6ac3800e43add9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a550df49a14166571a1b2a95d941de012"><td class="memTemplParams" colspan="2"><a id="a550df49a14166571a1b2a95d941de012"></a>
 template&lt;auto Func&gt; </td></tr>
-<tr class="memitem:aeb5543a00a9a5fd7bde13a0cf5823a83"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>process_mono</b> (const ossia::audio_port &amp;audio, float gain, float gate, ossia::value_port &amp;out_port, ossia::value_port &amp;pulse_port, const ossia::token_request &amp;tk, const ossia::exec_state_facade &amp;e)</td></tr>
-<tr class="separator:aeb5543a00a9a5fd7bde13a0cf5823a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad10b69b2e463dbdbd5d2e762dbbf5bab"><td class="memTemplParams" colspan="2"><a id="ad10b69b2e463dbdbd5d2e762dbbf5bab"></a>
+<tr class="memitem:a550df49a14166571a1b2a95d941de012"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>process_mono</b> (const auto &amp;audio, float gain, float gate, auto &amp;out_port, auto &amp;pulse_port, int d)</td></tr>
+<tr class="separator:a550df49a14166571a1b2a95d941de012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d95d8d6ffc33cd5a95d29363d3480cb"><td class="memTemplParams" colspan="2"><a id="a8d95d8d6ffc33cd5a95d29363d3480cb"></a>
 template&lt;auto Func&gt; </td></tr>
-<tr class="memitem:ad10b69b2e463dbdbd5d2e762dbbf5bab"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>process_stereo</b> (const ossia::audio_port &amp;audio, float gain, float gate, ossia::value_port &amp;out_port, ossia::value_port &amp;pulse_port, const ossia::token_request &amp;tk, const ossia::exec_state_facade &amp;e)</td></tr>
-<tr class="separator:ad10b69b2e463dbdbd5d2e762dbbf5bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fb9cdcf4205408fc2d3f892ba9ac14d"><td class="memTemplParams" colspan="2"><a id="a4fb9cdcf4205408fc2d3f892ba9ac14d"></a>
+<tr class="memitem:a8d95d8d6ffc33cd5a95d29363d3480cb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>process_stereo</b> (const auto &amp;audio, float gain, float gate, auto &amp;out_port, auto &amp;pulse_port, int d)</td></tr>
+<tr class="separator:a8d95d8d6ffc33cd5a95d29363d3480cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef10cc70a731146738fdcbf3ee00adc0"><td class="memTemplParams" colspan="2"><a id="aef10cc70a731146738fdcbf3ee00adc0"></a>
 template&lt;auto Func&gt; </td></tr>
-<tr class="memitem:a4fb9cdcf4205408fc2d3f892ba9ac14d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>process_multi</b> (const ossia::audio_port &amp;audio, float gain, float gate, ossia::value_port &amp;out_port, ossia::value_port &amp;pulse_port, const ossia::token_request &amp;tk, const ossia::exec_state_facade &amp;e)</td></tr>
-<tr class="separator:a4fb9cdcf4205408fc2d3f892ba9ac14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5646709c029193f61efa1394139f87aa"><td class="memTemplParams" colspan="2"><a id="a5646709c029193f61efa1394139f87aa"></a>
+<tr class="memitem:aef10cc70a731146738fdcbf3ee00adc0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>process_multi</b> (const auto &amp;audio, float gain, float gate, auto &amp;out_port, auto &amp;pulse_port, int d)</td></tr>
+<tr class="separator:aef10cc70a731146738fdcbf3ee00adc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20983b2bf50ea0ca9ea32ed6a1c9d726"><td class="memTemplParams" colspan="2"><a id="a20983b2bf50ea0ca9ea32ed6a1c9d726"></a>
 template&lt;auto Func, typename... Args&gt; </td></tr>
-<tr class="memitem:a5646709c029193f61efa1394139f87aa"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>process</b> (const ossia::audio_port &amp;audio, Args &amp;&amp;... args)</td></tr>
-<tr class="separator:a5646709c029193f61efa1394139f87aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c6f2c0d4b31dc3473b4c942700a77a3"><td class="memTemplParams" colspan="2"><a id="a8c6f2c0d4b31dc3473b4c942700a77a3"></a>
+<tr class="memitem:a20983b2bf50ea0ca9ea32ed6a1c9d726"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>process</b> (const auto &amp;audio, Args &amp;&amp;... args)</td></tr>
+<tr class="separator:a20983b2bf50ea0ca9ea32ed6a1c9d726"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a365663e1af72f51e43ce073f992aa533"><td class="memTemplParams" colspan="2"><a id="a365663e1af72f51e43ce073f992aa533"></a>
 template&lt;auto Func&gt; </td></tr>
-<tr class="memitem:a8c6f2c0d4b31dc3473b4c942700a77a3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>processVector</b> (const ossia::audio_port &amp;audio, ossia::audio_port &amp;mfcc, const ossia::token_request &amp;tk, const ossia::exec_state_facade &amp;e)</td></tr>
-<tr class="separator:a8c6f2c0d4b31dc3473b4c942700a77a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a216ba4599c0c087a9440cd36d33cb894"><td class="memTemplParams" colspan="2"><a id="a216ba4599c0c087a9440cd36d33cb894"></a>
+<tr class="memitem:a365663e1af72f51e43ce073f992aa533"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>processVector</b> (const auto &amp;audio, ossia::audio_port &amp;mfcc, int d)</td></tr>
+<tr class="separator:a365663e1af72f51e43ce073f992aa533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a652ab9d7c63a905bf53902dda562ad1e"><td class="memTemplParams" colspan="2"><a id="a652ab9d7c63a905bf53902dda562ad1e"></a>
 template&lt;auto Func&gt; </td></tr>
-<tr class="memitem:a216ba4599c0c087a9440cd36d33cb894"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>processVector</b> (const ossia::audio_port &amp;audio, float gain, float gate, ossia::audio_port &amp;mfcc, const ossia::token_request &amp;tk, const ossia::exec_state_facade &amp;e)</td></tr>
-<tr class="separator:a216ba4599c0c087a9440cd36d33cb894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a652ab9d7c63a905bf53902dda562ad1e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>processVector</b> (const auto &amp;audio, float gain, float gate, auto &amp;mfcc, int d)</td></tr>
+<tr class="separator:a652ab9d7c63a905bf53902dda562ad1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:abc6a36bc9832d7a0aa6f05ff4fda35c2"><td class="memItemLeft" align="right" valign="top"><a id="abc6a36bc9832d7a0aa6f05ff4fda35c2"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>channels</b> (auto &amp;audio) noexcept</td></tr>
+<tr class="separator:abc6a36bc9832d7a0aa6f05ff4fda35c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d31e4ffb91e01d4add03f5350c9d56a"><td class="memItemLeft" align="right" valign="top"><a id="a9d31e4ffb91e01d4add03f5350c9d56a"></a>
+static auto&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> (auto *channel) noexcept</td></tr>
+<tr class="separator:a9d31e4ffb91e01d4add03f5350c9d56a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8844a0432feb49cbacd18ad3b7bdf59"><td class="memItemLeft" align="right" valign="top"><a id="ac8844a0432feb49cbacd18ad3b7bdf59"></a>
+static auto&#160;</td><td class="memItemRight" valign="bottom"><b>frames</b> (auto &amp;channel, int d) noexcept</td></tr>
+<tr class="separator:ac8844a0432feb49cbacd18ad3b7bdf59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08715e8fb2ebbd76daa015c926bc42f5"><td class="memTemplParams" colspan="2"><a id="a08715e8fb2ebbd76daa015c926bc42f5"></a>
+template&lt;typename V &gt; </td></tr>
+<tr class="memitem:a08715e8fb2ebbd76daa015c926bc42f5"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>write_value</b> (auto &amp;out_port, V &amp;&amp;ret)</td></tr>
+<tr class="separator:a08715e8fb2ebbd76daa015c926bc42f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a73754c104ebf15dc086f107174bdbb3f"><td class="memItemLeft" align="right" valign="top"><a id="a73754c104ebf15dc086f107174bdbb3f"></a>
 ossia::small_vector&lt; Gist&lt; double &gt;, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>gist</b></td></tr>
 <tr class="separator:a73754c104ebf15dc086f107174bdbb3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a849bef37f0d55ef3644722df145ba2ba"><td class="memItemLeft" align="right" valign="top"><a id="a849bef37f0d55ef3644722df145ba2ba"></a>
-ossia::value&#160;</td><td class="memItemRight" valign="bottom"><b>out_val</b></td></tr>
-<tr class="separator:a849bef37f0d55ef3644722df145ba2ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92088912e6bc53d416c12525f36406f3"><td class="memItemLeft" align="right" valign="top"><a id="a92088912e6bc53d416c12525f36406f3"></a>
-std::vector&lt; ossia::value &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>output</b></td></tr>
-<tr class="separator:a92088912e6bc53d416c12525f36406f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8a44453116ab22f60fe6acb8d8c5e66"><td class="memItemLeft" align="right" valign="top"><a id="ac8a44453116ab22f60fe6acb8d8c5e66"></a>
+Analysis::analysis_vector&#160;</td><td class="memItemRight" valign="bottom"><b>output</b></td></tr>
+<tr class="separator:ac8a44453116ab22f60fe6acb8d8c5e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9ac5f44712057e2a02e89f1cf6fd3ee"><td class="memItemLeft" align="right" valign="top"><a id="ad9ac5f44712057e2a02e89f1cf6fd3ee"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>bufferSize</b> {}</td></tr>
 <tr class="separator:ad9ac5f44712057e2a02e89f1cf6fd3ee"><td class="memSeparator" colspan="2">&#160;</td></tr>

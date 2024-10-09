@@ -1,5 +1,9 @@
 var NAVTREEINDEX23 =
 {
+"class_library_1_1_library_interface.html#a811b0e0c4fe06b9e1daecbc50d48cfdb":[12,0,28,3,5],
+"class_library_1_1_library_interface.html#ad4dca4cda932461ef5750dece185322e":[12,0,28,3,3],
+"class_library_1_1_library_interface.html#ad69a80074d63446e00f9c7ff181657a8":[12,0,28,3,4],
+"class_library_1_1_library_interface.html#ae19f3411affc282e71c3103c88eee1d7":[12,0,28,3,6],
 "class_library_1_1_library_interface.html#afd4ca148bc062a06e9512bcd597bf2df":[12,0,28,3,2],
 "class_library_1_1_library_interface_list.html":[12,0,28,4],
 "class_library_1_1_library_interface_list.html#a6e07f3a3a4d9e97e0a7f0cbcc29c9e60":[12,0,28,4,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX23 =
 "class_media_1_1_audio_file_manager.html#a11e2684301f3f21d1d980710610977f9":[12,0,32,16,2],
 "class_media_1_1_audio_file_manager.html#a2611f722629a5e39e99063fc0ce82749":[12,0,32,16,3],
 "class_media_1_1_audio_file_manager.html#a84009a855aaeeab3187f1930a86c5377":[12,0,32,16,0],
-"class_media_1_1_audio_file_manager.html#ae396b3636acf835d229fefe3a44bf29b":[12,0,32,16,1],
-"class_media_1_1_change_audio_file.html":[12,0,32,11],
-"class_media_1_1_change_audio_file.html#a1476589effd1dd3ac9704123340a7c0c":[12,0,32,11,0],
-"class_media_1_1_change_audio_file.html#a23d6b61086a7ed2a84f79eeefd3a4edf":[12,0,32,11,3],
-"class_media_1_1_change_audio_file.html#a38fbce061589bf338c48363948eb909c":[12,0,32,11,1]
+"class_media_1_1_audio_file_manager.html#ae396b3636acf835d229fefe3a44bf29b":[12,0,32,16,1]
 };

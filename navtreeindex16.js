@@ -1,5 +1,9 @@
 var NAVTREEINDEX16 =
 {
+"class_explorer_1_1_device_explorer_model.html#add56838333253b8df0ec250048578743":[12,0,14,31,19],
+"class_explorer_1_1_device_explorer_model.html#ae115f209cc15f44abfef1c5339c3529d":[12,0,14,31,8],
+"class_explorer_1_1_device_explorer_model.html#ae180bbc003d58cfdb4598a976c17b98b":[12,0,14,31,35],
+"class_explorer_1_1_device_explorer_model.html#ae488c2627ddb1425117f30d2eb5f9b1b":[12,0,14,31,22],
 "class_explorer_1_1_device_explorer_model.html#af33a30fce56720092f152a8250b7cf97":[12,0,14,31,3],
 "class_explorer_1_1_device_explorer_model.html#afc74f22e52114de66dd5e5064f18e735":[12,0,14,31,27],
 "class_explorer_1_1_device_explorer_view.html":[12,0,14,32],
@@ -245,9 +249,5 @@ var NAVTREEINDEX16 =
 "class_generic_macro_command_dispatcher.html#a7a12b8cd52ae3ddc62652b41909a3708":[12,0,118,0],
 "class_generic_macro_command_dispatcher.html#a805f24e85791c4c14dcea3f81b0512ad":[12,0,118,2],
 "class_generic_macro_command_dispatcher.html#ab10f639a3eb35a9f65a5fe2c6898f0b9":[12,0,118,6],
-"class_generic_macro_command_dispatcher.html#ac552a2a1edcc9cb72256597d3e4358b3":[12,0,118,4],
-"class_generic_macro_command_dispatcher.html#ae3dead9c1a8d549a815c0e1973b1614c":[12,0,118,5],
-"class_generic_macro_command_dispatcher.html#afc3e3a7b33cf54ed01c4bf09aaddfe8a":[12,0,118,1],
-"class_gfx_1_1_application_plugin.html":[12,0,19,22],
-"class_gfx_1_1_application_plugin.html#a35659f5dc8896557f9e81cfcc9568245":[12,0,19,22,0]
+"class_generic_macro_command_dispatcher.html#ac552a2a1edcc9cb72256597d3e4358b3":[12,0,118,4]
 };

@@ -19,10 +19,10 @@ var structavnd__tools_1_1_device_recorder =
     [ "first_message_sent_pos", "structavnd__tools_1_1_device_recorder.html#ad6b6f543a8a8388397d7e3bfe70d3eb8", null ],
     [ "inputs", "structavnd__tools_1_1_device_recorder.html#a1aa60196918af3a6f1ff30da4ce73fdd", null ],
     [ "last_message_sent_pos", "structavnd__tools_1_1_device_recorder.html#ace8a13f613aad641c8aa136a8955d828", null ],
-    [ "outputs", "structavnd__tools_1_1_device_recorder.html#a1fe871aee7a86abf74170eeca91a574f", null ],
+    [ "outputs", "structavnd__tools_1_1_device_recorder.html#aa5bcbcb289b5043db1a8f2cad1faec67", null ],
     [ "play_impl", "structavnd__tools_1_1_device_recorder.html#a71fc90b100034d0fc9922a90b1af5f1d", null ],
     [ "record_impl", "structavnd__tools_1_1_device_recorder.html#a5d9cf2af8d12765511c2cfa9b2ebc443", null ],
     [ "request", "structavnd__tools_1_1_device_recorder.html#a980faf583f2d92ab029d1cfe6206745f", null ],
     [ "started", "structavnd__tools_1_1_device_recorder.html#a117e4fee28e2e58e8b83af0401a19a88", null ],
-    [ "worker", "structavnd__tools_1_1_device_recorder.html#affcb598832b2e1ce5ff121dc1d163c0f", null ]
+    [ "worker", "structavnd__tools_1_1_device_recorder.html#a61a81ed9f008287fdc58447f066fa9db", null ]
 ];

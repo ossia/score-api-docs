@@ -1,6 +1,12 @@
 var struct_analysis_1_1_peak =
 [
-    [ "Metadata", "struct_analysis_1_1_peak_1_1_metadata.html", null ],
-    [ "control_policy", "struct_analysis_1_1_peak.html#a843a2c42b800077f0b3787f20dd878af", null ],
-    [ "State", "struct_analysis_1_1_peak.html#ac0d9d21c59c0d6a883843c4e3982ebec", null ]
+    [ "halp_meta", "struct_analysis_1_1_peak.html#a2e194cae13d68fe019b0d4e4225ec9d2", null ],
+    [ "halp_meta", "struct_analysis_1_1_peak.html#a388cfcb178ddaa40473e08fa141ad0c9", null ],
+    [ "halp_meta", "struct_analysis_1_1_peak.html#ac6c1d5871937e4e623cdb8091c895163", null ],
+    [ "halp_meta", "struct_analysis_1_1_peak.html#a8236718795ddeed10bccbd2aa2f36b37", null ],
+    [ "operator()", "struct_analysis_1_1_peak.html#a78d46d44b1f7043114af622167e9929c", null ],
+    [ "inputs", "struct_analysis_1_1_peak.html#a78fa7037eef948619614eec21faad75c", null ],
+    [ "outputs", "struct_analysis_1_1_peak.html#af9d1e61528a213e1471970894ff9d675", null ],
+    [ "result", "struct_analysis_1_1_peak.html#ad466e1450d66815dddf3bfe8be91e674", null ],
+    [ "score", "struct_analysis_1_1_peak.html#a2706d3df808a7938f1d0bc3788190638", null ]
 ];

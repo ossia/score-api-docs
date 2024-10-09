@@ -1,5 +1,9 @@
 var NAVTREEINDEX42 =
 {
+"class_scenario_1_1_time_signature_item.html#a2d5c920288ccdd429192febfd55ba18b":[12,0,48,113,2],
+"class_scenario_1_1_time_signature_item.html#a5157a96ca3203e82141b8ce8b6ff3c1a":[12,0,48,113,4],
+"class_scenario_1_1_time_signature_item.html#a9119634af40dffc58206de90a5040dbd":[12,0,48,113,1],
+"class_scenario_1_1_time_signature_item.html#a997b6ee5aac0403dec7d41bc18ae4666":[12,0,48,113,5],
 "class_scenario_1_1_time_signature_item.html#ab13b7d3f757f405b6b11b26f21e5a3bc":[12,0,48,113,3],
 "class_scenario_1_1_time_signature_item.html#af3e2e5c339f6c2455935ae6171b4cf1c":[12,0,48,113,0],
 "class_scenario_1_1_time_sync_inspector_widget.html":[12,0,48,220],
@@ -245,9 +249,5 @@ var NAVTREEINDEX42 =
 "class_spline3_d_1_1_change_spline.html#a709259d6f255b82d869aa1af91fef254":[12,0,52,1,1],
 "class_spline3_d_1_1_change_spline.html#ac6371d26094d53e4fa7ee75de043f6b9":[12,0,52,1,0],
 "class_spline3_d_1_1_change_spline.html#accb6200b3b0d4f6c7bac9de3d1390487":[12,0,52,1,4],
-"class_spline3_d_1_1_generator_dialog.html":[12,0,52,2],
-"class_spline3_d_1_1_generator_dialog.html#a00937cc599c0ec3a5dea1d000941a04d":[12,0,52,2,2],
-"class_spline3_d_1_1_generator_dialog.html#a1b592f7e809ad2be88e577719d615e0c":[12,0,52,2,3],
-"class_spline3_d_1_1_generator_dialog.html#a25c7745bf9a008e38b201a351d926784":[12,0,52,2,5],
-"class_spline3_d_1_1_generator_dialog.html#a4868707a41fa57be58f89d98ef34e263":[12,0,52,2,8]
+"class_spline3_d_1_1_generator_dialog.html":[12,0,52,2]
 };

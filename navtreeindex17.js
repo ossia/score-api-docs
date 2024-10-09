@@ -1,5 +1,9 @@
 var NAVTREEINDEX17 =
 {
+"class_generic_macro_command_dispatcher.html#ae3dead9c1a8d549a815c0e1973b1614c":[12,0,118,5],
+"class_generic_macro_command_dispatcher.html#afc3e3a7b33cf54ed01c4bf09aaddfe8a":[12,0,118,1],
+"class_gfx_1_1_application_plugin.html":[12,0,19,22],
+"class_gfx_1_1_application_plugin.html#a35659f5dc8896557f9e81cfcc9568245":[12,0,19,22,0],
 "class_gfx_1_1_application_plugin.html#a53d0a565be8406adf29288bade26515a":[12,0,19,22,1],
 "class_gfx_1_1_camera_device.html":[12,0,19,14],
 "class_gfx_1_1_camera_device.html#a8bc834b3a428c47c5403b4124caacdeb":[12,0,19,14,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX17 =
 "class_gfx_1_1_sh4lt_output_device.html#ab3509b9db476a3919f2ff22e3c9ad9a3":[12,0,19,62,1],
 "class_gfx_1_1_sh4lt_output_protocol_factory.html":[12,0,19,66],
 "class_gfx_1_1_sh4lt_output_protocol_factory.html#a0fa59cf3a18eed151e729e8e3ca47365":[12,0,19,66,2],
-"class_gfx_1_1_sh4lt_output_protocol_factory.html#a59a415aad3c92150979142bf1537dd83":[12,0,19,66,0],
-"class_gfx_1_1_sh4lt_output_protocol_factory.html#a830a7ca4cff93be1a17a10f46c877a68":[12,0,19,66,3],
-"class_gfx_1_1_sh4lt_output_protocol_factory.html#a8e2cf579f8e854d8b0093f4f0d6da49f":[12,0,19,66,1],
-"class_gfx_1_1_sh4lt_output_settings_widget.html":[12,0,19,63],
-"class_gfx_1_1_sh4lt_output_settings_widget.html#a6d2aa6fe01076ea5e72556db922c64b4":[12,0,19,63,1]
+"class_gfx_1_1_sh4lt_output_protocol_factory.html#a59a415aad3c92150979142bf1537dd83":[12,0,19,66,0]
 };

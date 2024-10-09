@@ -1,5 +1,9 @@
 var NAVTREEINDEX39 =
 {
+"class_scenario_1_1_musical_ruler.html#ab8c4759e7469476ec550130817db77dbadfd7aaba18200556a0eb071bab7c9ae7":[12,0,48,178,0,2],
+"class_scenario_1_1_musical_ruler.html#af5cd51ca9dd9b5d732e317044a259195":[12,0,48,178,1],
+"class_scenario_1_1_neighbour_selector.html":[12,0,48,209],
+"class_scenario_1_1_neighbour_selector.html#a07187cc2d44e19562e5dd40325fcac08":[12,0,48,209,3],
 "class_scenario_1_1_neighbour_selector.html#a219df1053659f7fe379b6d9eeaaccaa3":[12,0,48,209,4],
 "class_scenario_1_1_neighbour_selector.html#a406798fe8c82e4270735d6f90a5b6404":[12,0,48,209,8],
 "class_scenario_1_1_neighbour_selector.html#a58276527d70236bbd217762cde9fa6ad":[12,0,48,209,7],
@@ -245,9 +249,5 @@ var NAVTREEINDEX39 =
 "class_scenario_1_1_scenario_document_presenter.html#af019b16a91eba8f1f035db5e681b3828":[12,0,48,152,19],
 "class_scenario_1_1_scenario_document_presenter.html#af30fe4c25e16bc2568b7457b9d6bb778":[12,0,48,152,18],
 "class_scenario_1_1_scenario_document_presenter.html#af6945dc9487e25a0df83f8480b9b9f4b":[12,0,48,152,3],
-"class_scenario_1_1_scenario_document_presenter.html#afe49e878dc31e4edc9e16ec8ab09dc1f":[12,0,48,152,15],
-"class_scenario_1_1_scenario_document_view.html":[12,0,48,154],
-"class_scenario_1_1_scenario_document_view.html#a003ad881da3ecce629f8f595b27b7ff9":[12,0,48,154,16],
-"class_scenario_1_1_scenario_document_view.html#a09c50cadbd45d449682d85016aa25c5c":[12,0,48,154,11],
-"class_scenario_1_1_scenario_document_view.html#a1918c6d111331bc355703592b73d9659":[12,0,48,154,12]
+"class_scenario_1_1_scenario_document_presenter.html#afe49e878dc31e4edc9e16ec8ab09dc1f":[12,0,48,152,15]
 };

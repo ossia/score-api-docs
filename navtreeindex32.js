@@ -1,5 +1,9 @@
 var NAVTREEINDEX32 =
 {
+"class_remove_layer_model_from_slot_test.html":[12,0,234],
+"class_remove_process_from_interval_test.html":[12,0,235],
+"class_remove_rack_from_interval_test.html":[12,0,236],
+"class_remove_slot_from_rack_test.html":[12,0,237],
 "class_resize_slot_vertically_test.html":[12,0,239],
 "class_s_e_h_frame_handler.html":[12,0,278],
 "class_s_e_h_frame_handler.html#a16a117a2504e71208ee31a5ba4684b8f":[12,0,278,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX32 =
 "class_scenario_1_1_command_1_1_change_element_label.html#aaed2f62c92dea8c6f699f9a13c2a8913":[12,0,48,0,47,6],
 "class_scenario_1_1_command_1_1_change_element_label.html#ab2be3ee2e3546248258d95249f040daf":[12,0,48,0,47,1],
 "class_scenario_1_1_command_1_1_change_element_label.html#acb25dbcfe2a4a2d7ddd9e1efce69db57":[12,0,48,0,47,0],
-"class_scenario_1_1_command_1_1_change_element_name.html":[12,0,48,0,48],
-"class_scenario_1_1_command_1_1_change_element_name.html#a2dc8251dfa7be1ddeeb14acd0db1fa69":[12,0,48,0,48,0],
-"class_scenario_1_1_command_1_1_change_element_name.html#a34dc75d9a18225f60316863e38a48116":[12,0,48,0,48,5],
-"class_scenario_1_1_command_1_1_change_element_name.html#a3e420613f6e1c49608971db9550bd2bf":[12,0,48,0,48,8],
-"class_scenario_1_1_command_1_1_change_element_name.html#a523baa7c8f9c6336a5399404ce4c29d3":[12,0,48,0,48,4]
+"class_scenario_1_1_command_1_1_change_element_name.html":[12,0,48,0,48]
 };

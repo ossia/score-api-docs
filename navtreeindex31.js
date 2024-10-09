@@ -1,5 +1,9 @@
 var NAVTREEINDEX31 =
 {
+"class_protocols_1_1_o_s_c_protocol_settings_widget.html#adb792e86a7126151570297f77474b0b2":[12,0,43,77,0],
+"class_protocols_1_1_o_s_c_query_device.html":[12,0,43,79],
+"class_protocols_1_1_o_s_c_query_device.html#a1b1f5c2e8b1a038137a21ad059d11b7a":[12,0,43,79,4],
+"class_protocols_1_1_o_s_c_query_device.html#a4423bced84a6ed4e54bfd13361b080bc":[12,0,43,79,3],
 "class_protocols_1_1_o_s_c_query_device.html#a56c740cd98592dd25d4b66345ae874ea":[12,0,43,79,8],
 "class_protocols_1_1_o_s_c_query_device.html#a5f884c121796272a4094d344d025944f":[12,0,43,79,5],
 "class_protocols_1_1_o_s_c_query_device.html#a6ff158154c63f6f80a556e640b9e6e9d":[12,0,43,79,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX31 =
 "class_remote_control_1_1_sync.html":[12,0,46,17],
 "class_remote_control_1_1_sync.html#a0e1d508bdd3e73977cc90750566c8585":[12,0,46,17,0],
 "class_remove_event_test.html":[12,0,232],
-"class_remove_interval_test.html":[12,0,233],
-"class_remove_layer_model_from_slot_test.html":[12,0,234],
-"class_remove_process_from_interval_test.html":[12,0,235],
-"class_remove_rack_from_interval_test.html":[12,0,236],
-"class_remove_slot_from_rack_test.html":[12,0,237]
+"class_remove_interval_test.html":[12,0,233]
 };
