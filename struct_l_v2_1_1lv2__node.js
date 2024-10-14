@@ -5,6 +5,7 @@ var struct_l_v2_1_1lv2__node =
     [ "~lv2_node", "struct_l_v2_1_1lv2__node.html#aaa41de2bec820a16043ced869951f27f", null ],
     [ "all_notes_off", "struct_l_v2_1_1lv2__node.html#a77f5f3cfdd495d05639ffe2e6473b077", null ],
     [ "connect_all_ports", "struct_l_v2_1_1lv2__node.html#ac0bb78dc27102643a5e7fbacf7cada60", null ],
+    [ "label", "struct_l_v2_1_1lv2__node.html#a5000069c72e5c79ef43857519082f311", null ],
     [ "postProcess", "struct_l_v2_1_1lv2__node.html#a50fc6ae862cd1849834f549f028ace8c", null ],
     [ "preProcess", "struct_l_v2_1_1lv2__node.html#ad68fde91a972481cdadc9b2a05487130", null ],
     [ "run", "struct_l_v2_1_1lv2__node.html#a914f016ceee9633cd3588ee6dc249b17", null ],

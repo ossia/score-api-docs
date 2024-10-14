@@ -97,7 +97,9 @@ $(document).ready(function(){initNavTree('struct_nodes_1_1_chord_1_1_node.html',
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="struct_nodes_1_1_chord_1_1_node-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -107,46 +109,87 @@ $(document).ready(function(){initNavTree('struct_nodes_1_1_chord_1_1_node.html',
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_chord_1_1_node_1_1_metadata.html">Metadata</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_chord_1_1_node_1_1_state.html">State</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_chord_1_1_node_1_1chord__type.html">chord_type</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a6eef3e58c4e0de5c3ed01d38bb3e2ec6"><td class="memItemLeft" align="right" valign="top"><a id="a6eef3e58c4e0de5c3ed01d38bb3e2ec6"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Chord</b> { <br />
-&#160;&#160;<b>I</b>
-, <b>II</b>
-, <b>III</b>
-, <b>IV</b>
+&#160;&#160;<b>Maj</b>
+, <b>Min</b>
+, <b>Sus2</b>
+, <b>Sus4</b>
 , <br />
-&#160;&#160;<b>V</b>
-, <b>VI</b>
-, <b>VII</b>
+&#160;&#160;<b>Dim</b>
+, <b>Aug</b>
 <br />
  }</td></tr>
 <tr class="separator:a6eef3e58c4e0de5c3ed01d38bb3e2ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a4b577e0a925933f35cc66599804de7"><td class="memItemLeft" align="right" valign="top"><a id="a9a4b577e0a925933f35cc66599804de7"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>control_policy</b> = ossia::safe_nodes::default_tick_controls</td></tr>
-<tr class="separator:a9a4b577e0a925933f35cc66599804de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48fc074e5c71c799349341ec233e060e"><td class="memItemLeft" align="right" valign="top"><a id="a48fc074e5c71c799349341ec233e060e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>midi_out</b> = halp::midi_out_bus&lt;&quot;out&quot;, libremidi::message &gt;</td></tr>
+<tr class="separator:a48fc074e5c71c799349341ec233e060e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd65e0386a7dcfe5f91f49639d1a7d0d"><td class="memItemLeft" align="right" valign="top"><a id="abd65e0386a7dcfe5f91f49639d1a7d0d"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> = halp::tick_musical</td></tr>
+<tr class="separator:abd65e0386a7dcfe5f91f49639d1a7d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:af086bfc65dde176c1471273b99192a9f"><td class="memItemLeft" align="right" valign="top"><a id="af086bfc65dde176c1471273b99192a9f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (name, &quot;Chord&quot;) halp_meta(c_name</td></tr>
+<tr class="separator:af086bfc65dde176c1471273b99192a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99cc4232e87b96bd24e5468d40af6368"><td class="memItemLeft" align="right" valign="top"><a id="a99cc4232e87b96bd24e5468d40af6368"></a>
+Chord&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (category, &quot;Midi&quot;) halp_meta(author</td></tr>
+<tr class="separator:a99cc4232e87b96bd24e5468d40af6368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a91c13cff9017e3ff175cd28422bddd"><td class="memItemLeft" align="right" valign="top"><a id="a2a91c13cff9017e3ff175cd28422bddd"></a>
+Chord ossia score&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (manual_url, &quot;https://ossia.io/score-docs/processes/midi-utilities.html#chord&quot;) halp_meta(description</td></tr>
+<tr class="separator:a2a91c13cff9017e3ff175cd28422bddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae84c32e126c26604aee2973c1e800323"><td class="memItemLeft" align="right" valign="top"><a id="ae84c32e126c26604aee2973c1e800323"></a>
+Chord ossia score Generate a chord from a single note&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (uuid, &quot;F0904279-EA26-48DB-B0DF-F68FE3091DA1&quot;)</td></tr>
+<tr class="separator:ae84c32e126c26604aee2973c1e800323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64ec4f75015b8ba82fd1aa1bec752ad7"><td class="memItemLeft" align="right" valign="top"><a id="a64ec4f75015b8ba82fd1aa1bec752ad7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const halp::tick_musical &amp;tk)</td></tr>
+<tr class="separator:a64ec4f75015b8ba82fd1aa1bec752ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aa0dc312accf1ffe927ab32ff4a5e2dc7"><td class="memTemplParams" colspan="2"><a id="aa0dc312accf1ffe927ab32ff4a5e2dc7"></a>
+<tr class="memitem:aa8bfbcc7d0ac78759a45d8d5b7ca555f"><td class="memTemplParams" colspan="2"><a id="aa8bfbcc7d0ac78759a45d8d5b7ca555f"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aa0dc312accf1ffe927ab32ff4a5e2dc7"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>startChord</b> (const T &amp;chord, const libremidi::message &amp;m, const std::size_t num, ossia::midi_port &amp;op)</td></tr>
-<tr class="separator:aa0dc312accf1ffe927ab32ff4a5e2dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0711c4805e6083aef9f71ab822f9e26"><td class="memTemplParams" colspan="2"><a id="ac0711c4805e6083aef9f71ab822f9e26"></a>
+<tr class="memitem:aa8bfbcc7d0ac78759a45d8d5b7ca555f"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>startChord</b> (const T &amp;chord, const libremidi::message &amp;m, const std::size_t num, midi_out &amp;op)</td></tr>
+<tr class="separator:aa8bfbcc7d0ac78759a45d8d5b7ca555f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68aef37125bce94f8d26c342e0a795d6"><td class="memTemplParams" colspan="2"><a id="a68aef37125bce94f8d26c342e0a795d6"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ac0711c4805e6083aef9f71ab822f9e26"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stopChord</b> (const T &amp;chord, const libremidi::message &amp;m, const std::size_t num, ossia::midi_port &amp;op)</td></tr>
-<tr class="separator:ac0711c4805e6083aef9f71ab822f9e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b2777284abfab35a53afc9df2476721"><td class="memTemplParams" colspan="2"><a id="a8b2777284abfab35a53afc9df2476721"></a>
+<tr class="memitem:a68aef37125bce94f8d26c342e0a795d6"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stopChord</b> (const T &amp;chord, const libremidi::message &amp;m, const std::size_t num, midi_out &amp;op)</td></tr>
+<tr class="separator:a68aef37125bce94f8d26c342e0a795d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90417c6769de2ca32ff7c6ac29b05bea"><td class="memTemplParams" colspan="2"><a id="a90417c6769de2ca32ff7c6ac29b05bea"></a>
 template&lt;typename F &gt; </td></tr>
-<tr class="memitem:a8b2777284abfab35a53afc9df2476721"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>dispatchChord</b> (std::string_view chord, const libremidi::message &amp;m, int num, ossia::midi_port &amp;op, F &amp;&amp;f)</td></tr>
-<tr class="separator:a8b2777284abfab35a53afc9df2476721"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5c9597e75129296243cb40eed209514"><td class="memItemLeft" align="right" valign="top"><a id="af5c9597e75129296243cb40eed209514"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (const ossia::midi_port &amp;ip, const ossia::timed_vec&lt; int &gt; &amp;num, const ossia::timed_vec&lt; std::string &gt; &amp;chord, ossia::midi_port &amp;op, ossia::token_request tk, ossia::exec_state_facade st, <a class="el" href="struct_nodes_1_1_chord_1_1_node_1_1_state.html">State</a> &amp;self)</td></tr>
-<tr class="separator:af5c9597e75129296243cb40eed209514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90417c6769de2ca32ff7c6ac29b05bea"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>dispatchChord</b> (std::string_view chord, const libremidi::message &amp;m, int num, midi_out &amp;op, F &amp;&amp;f)</td></tr>
+<tr class="separator:a90417c6769de2ca32ff7c6ac29b05bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a2d72756aeb8d7739896fbf1d6e20b076"><td class="memItemLeft" ><a id="a2d72756aeb8d7739896fbf1d6e20b076"></a>
+struct {</td></tr>
+<tr class="memitem:ab735830ef48fdf1634ec2c76c361aade"><td class="memItemLeft" >
+&#160;&#160;&#160;halp::midi_bus&lt;&quot;in&quot;, libremidi::message &gt;&#160;&#160;&#160;<b>midi</b></td></tr>
+<tr class="separator:ab735830ef48fdf1634ec2c76c361aade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6e39693a2d86d6d92c9d5fd3d32e4e6"><td class="memItemLeft" >
+&#160;&#160;&#160;halp::hslider_i32&lt;&quot;Num. Notes&quot;, halp::irange{1, 5, 3}&gt;&#160;&#160;&#160;<b>num</b></td></tr>
+<tr class="separator:af6e39693a2d86d6d92c9d5fd3d32e4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6476d09fcdbdaaeca3f4463cea167f8e"><td class="memItemLeft" >
+&#160;&#160;&#160;halp::enum_t&lt; Chord, &quot;Chord&quot;&gt;&#160;&#160;&#160;<b>chord</b></td></tr>
+<tr class="separator:a6476d09fcdbdaaeca3f4463cea167f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d72756aeb8d7739896fbf1d6e20b076"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
+<tr class="separator:a2d72756aeb8d7739896fbf1d6e20b076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3cb534fe8a568437207a9201301005e"><td class="memItemLeft" ><a id="af3cb534fe8a568437207a9201301005e"></a>
+struct {</td></tr>
+<tr class="memitem:aadd07e884c8ce5fa22a504f48d0933d2"><td class="memItemLeft" >
+&#160;&#160;&#160;midi_out&#160;&#160;&#160;<b>midi</b></td></tr>
+<tr class="separator:aadd07e884c8ce5fa22a504f48d0933d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3cb534fe8a568437207a9201301005e"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b></td></tr>
+<tr class="separator:af3cb534fe8a568437207a9201301005e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fbfe84119a850a85423c870e893aaec"><td class="memItemLeft" align="right" valign="top"><a id="a7fbfe84119a850a85423c870e893aaec"></a>
+ossia::flat_map&lt; uint8_t, std::vector&lt; <a class="el" href="struct_nodes_1_1_chord_1_1_node_1_1chord__type.html">chord_type</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>chords</b></td></tr>
+<tr class="separator:a7fbfe84119a850a85423c870e893aaec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>

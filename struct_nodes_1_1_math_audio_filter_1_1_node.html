@@ -97,7 +97,8 @@ $(document).ready(function(){initNavTree('struct_nodes_1_1_math_audio_filter_1_1
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_nodes_1_1_math_audio_filter_1_1_node-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Nodes::MathAudioFilter::Node Struct Reference</div>  </div>
@@ -106,29 +107,63 @@ $(document).ready(function(){initNavTree('struct_nodes_1_1_math_audio_filter_1_1
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_math_audio_filter_1_1_node_1_1_metadata.html">Metadata</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html">State</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a8ad69373459e4a390a800240b8a19615"><td class="memItemLeft" align="right" valign="top"><a id="a8ad69373459e4a390a800240b8a19615"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>control_policy</b> = ossia::safe_nodes::last_tick</td></tr>
-<tr class="separator:a8ad69373459e4a390a800240b8a19615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0435e27a3e80a833005d071d7f2697e"><td class="memItemLeft" align="right" valign="top"><a id="ae0435e27a3e80a833005d071d7f2697e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> = halp::tick_flicks</td></tr>
+<tr class="separator:ae0435e27a3e80a833005d071d7f2697e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ae6aa851dd58d12469316212302cbba2a"><td class="memItemLeft" align="right" valign="top"><a id="ae6aa851dd58d12469316212302cbba2a"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (const ossia::audio_port &amp;input, const std::string &amp;expr, float a, float b, float c, ossia::audio_port &amp;output, ossia::token_request tk, ossia::exec_state_facade st, <a class="el" href="struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html">State</a> &amp;self)</td></tr>
-<tr class="separator:ae6aa851dd58d12469316212302cbba2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab923a9f62e4407acc4b59fc0ac8e6f61"><td class="memTemplParams" colspan="2"><a id="ab923a9f62e4407acc4b59fc0ac8e6f61"></a>
-template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:ab923a9f62e4407acc4b59fc0ac8e6f61"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>item</b> (Args &amp;&amp;... args)</td></tr>
-<tr class="separator:ab923a9f62e4407acc4b59fc0ac8e6f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a68916acf4374e5601cc0d883e9ecfa7d"><td class="memItemLeft" align="right" valign="top"><a id="a68916acf4374e5601cc0d883e9ecfa7d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (name, &quot;Expression Audio Filter&quot;) halp_meta(c_name</td></tr>
+<tr class="separator:a68916acf4374e5601cc0d883e9ecfa7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a5503b31f275a2916db26df94c47e0c"><td class="memItemLeft" align="right" valign="top"><a id="a8a5503b31f275a2916db26df94c47e0c"></a>
+MathAudioFilter&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (category, &quot;Audio/Utilities&quot;) halp_meta(manual_url</td></tr>
+<tr class="separator:a8a5503b31f275a2916db26df94c47e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a317a1881ffbf0fca85f92ea67ebd2054"><td class="memItemLeft" align="right" valign="top"><a id="a317a1881ffbf0fca85f92ea67ebd2054"></a>
+MathAudioFilter ossia&#160;</td><td class="memItemRight" valign="bottom"><b>ExprTK</b> (Arash Partow)&quot;) static const constexpr auto description </td></tr>
+<tr class="separator:a317a1881ffbf0fca85f92ea67ebd2054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a163104ac357b806447688615ba926ee6"><td class="memItemLeft" align="right" valign="top"><a id="a163104ac357b806447688615ba926ee6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (uuid, &quot;13e1f4b0-1c2c-40e6-93ad-dfc91aac5335&quot;) struct</td></tr>
+<tr class="separator:a163104ac357b806447688615ba926ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9513391423824b82eee3eb038e778c6"><td class="memItemLeft" align="right" valign="top"><a id="af9513391423824b82eee3eb038e778c6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>prepare</b> (halp::setup s)</td></tr>
+<tr class="separator:af9513391423824b82eee3eb038e778c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d05d559d906923877753ef53e05ecf9"><td class="memItemLeft" align="right" valign="top"><a id="a1d05d559d906923877753ef53e05ecf9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const tick &amp;tk)</td></tr>
+<tr class="separator:a1d05d559d906923877753ef53e05ecf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a777542c47e1bcbda32bb2bbb5f2dae8e"><td class="memItemLeft" align="right" valign="top"><a id="a777542c47e1bcbda32bb2bbb5f2dae8e"></a>
+MathAudioFilter&#160;</td><td class="memItemRight" valign="bottom"><b>https</b>: halp_meta(author</td></tr>
+<tr class="separator:a777542c47e1bcbda32bb2bbb5f2dae8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a454b265f8de765d32cceb3e5d31ea9ec"><td class="memItemLeft" align="right" valign="top"><a id="a454b265f8de765d32cceb3e5d31ea9ec"></a>
+MathAudioFilter ossia&#160;</td><td class="memItemRight" valign="bottom"><b>score</b></td></tr>
+<tr class="separator:a454b265f8de765d32cceb3e5d31ea9ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a45bf8dad55490d8291de753613e3fd"><td class="memItemLeft" align="right" valign="top"><a id="a2a45bf8dad55490d8291de753613e3fd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
+<tr class="separator:a2a45bf8dad55490d8291de753613e3fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57de031885d15be93ee0958bdc39cdfb"><td class="memItemLeft" ><a id="a57de031885d15be93ee0958bdc39cdfb"></a>
+struct {</td></tr>
+<tr class="memitem:a7c27cbc665b9d2a8947862ad17b84e5d"><td class="memItemLeft" >
+&#160;&#160;&#160;halp::mimic_audio_bus&lt;&quot;out&quot;, &amp;decltype(inputs)::audio &gt;&#160;&#160;&#160;<b>audio</b></td></tr>
+<tr class="separator:a7c27cbc665b9d2a8947862ad17b84e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57de031885d15be93ee0958bdc39cdfb"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b></td></tr>
+<tr class="separator:a57de031885d15be93ee0958bdc39cdfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f04d56294521579b78739036ac66fcd"><td class="memItemLeft" align="right" valign="top"><a id="a7f04d56294521579b78739036ac66fcd"></a>
+struct <a class="el" href="struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html">Nodes::MathAudioFilter::Node::State</a>&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
+<tr class="separator:a7f04d56294521579b78739036ac66fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ef01e5c2f98d782450c9ffdb59c1f8c"><td class="memItemLeft" align="right" valign="top"><a id="a5ef01e5c2f98d782450c9ffdb59c1f8c"></a>
+halp::setup&#160;</td><td class="memItemRight" valign="bottom"><b>setup</b></td></tr>
+<tr class="separator:a5ef01e5c2f98d782450c9ffdb59c1f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="_math_mapping_8hpp_source.html">MathMapping.hpp</a></li>
+<li><a class="el" href="_math_audio_filter_8hpp_source.html">MathAudioFilter.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

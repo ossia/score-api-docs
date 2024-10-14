@@ -97,7 +97,9 @@ $(document).ready(function(){initNavTree('struct_nodes_1_1_pulse_to_note_1_1_nod
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_nodes_1_1_pulse_to_note_1_1_node-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Nodes::PulseToNote::Node Struct Reference</div>  </div>
@@ -106,38 +108,76 @@ $(document).ready(function(){initNavTree('struct_nodes_1_1_pulse_to_note_1_1_nod
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_pulse_to_note_1_1_node_1_1_metadata.html">Metadata</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_pulse_to_note_1_1_node_1_1_note.html">Note</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_pulse_to_note_1_1_node_1_1_note_in.html">NoteIn</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_pulse_to_note_1_1_node_1_1_state.html">State</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_pulse_to_note_1_1_node_1_1val__visitor.html">val_visitor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ac17d9d5786db61a044111ca1a8165c2b"><td class="memItemLeft" align="right" valign="top"><a id="ac17d9d5786db61a044111ca1a8165c2b"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>Note</b> = <a class="el" href="struct_control_1_1_note.html">Control::Note</a></td></tr>
-<tr class="separator:ac17d9d5786db61a044111ca1a8165c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a836289a9218dddead73a78ed6576ef17"><td class="memItemLeft" align="right" valign="top"><a id="a836289a9218dddead73a78ed6576ef17"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>control_policy</b> = ossia::safe_nodes::default_tick_controls</td></tr>
-<tr class="separator:a836289a9218dddead73a78ed6576ef17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3561151b14a6645b510828544ae92245"><td class="memItemLeft" align="right" valign="top"><a id="a3561151b14a6645b510828544ae92245"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> = halp::tick_flicks</td></tr>
+<tr class="separator:a3561151b14a6645b510828544ae92245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a283a042897561fed0c8aa4a84eb06c77"><td class="memItemLeft" align="right" valign="top"><a id="a283a042897561fed0c8aa4a84eb06c77"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (name, &quot;Pulse to Midi&quot;) halp_meta(c_name</td></tr>
+<tr class="separator:a283a042897561fed0c8aa4a84eb06c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeff61f8774c0afc0d2be70514cf5101"><td class="memItemLeft" align="right" valign="top"><a id="abeff61f8774c0afc0d2be70514cf5101"></a>
+VelToNote&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (category, &quot;Midi&quot;) halp_meta(author</td></tr>
+<tr class="separator:abeff61f8774c0afc0d2be70514cf5101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f3a23f5e09925655057adfb06702516"><td class="memItemLeft" align="right" valign="top"><a id="a0f3a23f5e09925655057adfb06702516"></a>
+VelToNote ossia score&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (manual_url, &quot;https://ossia.io/score-docs/processes/midi-utilities.html#pulse-to-note&quot;) halp_meta(description</td></tr>
+<tr class="separator:a0f3a23f5e09925655057adfb06702516"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5edae71db340b8230a304eb4df74e7f1"><td class="memItemLeft" align="right" valign="top"><a id="a5edae71db340b8230a304eb4df74e7f1"></a>
+VelToNote ossia score Converts a message into MIDI n If the input is an the output will be the default pitch at the default velocity n If the input is a single integer the output will be the relevant note at the default velocity If the input is an array of two values the output will be the relevant note&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (uuid, &quot;2c6493c3-5449-4e52-ae04-9aee3be5fb6a&quot;) struct</td></tr>
+<tr class="separator:a5edae71db340b8230a304eb4df74e7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeb02f4b6f834d1752877d7dc847bc69"><td class="memItemLeft" align="right" valign="top"><a id="afeb02f4b6f834d1752877d7dc847bc69"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const tick &amp;tk)</td></tr>
+<tr class="separator:afeb02f4b6f834d1752877d7dc847bc69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae31f21a47dece73ec341fb1fe39c345f"><td class="memItemLeft" align="right" valign="top"><a id="ae31f21a47dece73ec341fb1fe39c345f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>start_all_notes</b> (ossia::physical_time abs_date, ossia::physical_time date_phys, int chan, float endq) noexcept</td></tr>
+<tr class="separator:ae31f21a47dece73ec341fb1fe39c345f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c0aa61730864a1e886288ddf975ec0e"><td class="memItemLeft" align="right" valign="top"><a id="a3c0aa61730864a1e886288ddf975ec0e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stop_notes</b> (ossia::physical_time date_phys, int chan)</td></tr>
+<tr class="separator:a3c0aa61730864a1e886288ddf975ec0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a7e5c00a27dbd539a9a5445f3b0098bf5"><td class="memItemLeft" align="right" valign="top"><a id="a7e5c00a27dbd539a9a5445f3b0098bf5"></a>
 static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>midi_clamp</b> (int num)</td></tr>
 <tr class="separator:a7e5c00a27dbd539a9a5445f3b0098bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc425f0389e7e89fd6442e394036582c"><td class="memItemLeft" align="right" valign="top"><a id="abc425f0389e7e89fd6442e394036582c"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (const ossia::value_port &amp;p1, const ossia::timed_vec&lt; float &gt; &amp;startq, const ossia::timed_vec&lt; float &gt; &amp;tightness, const ossia::timed_vec&lt; float &gt; &amp;endq, const ossia::timed_vec&lt; int &gt; &amp;basenote, const ossia::timed_vec&lt; int &gt; &amp;basevel, const ossia::timed_vec&lt; int &gt; &amp;shift_note, const ossia::timed_vec&lt; int &gt; &amp;note_random, const ossia::timed_vec&lt; int &gt; &amp;vel_random, const ossia::timed_vec&lt; int &gt; &amp;chan_vec, ossia::midi_port &amp;p2, ossia::token_request tk, ossia::exec_state_facade st, <a class="el" href="struct_nodes_1_1_pulse_to_note_1_1_node_1_1_state.html">State</a> &amp;self)</td></tr>
-<tr class="separator:abc425f0389e7e89fd6442e394036582c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c1a5fdd8072c253419387380f1844f6"><td class="memItemLeft" align="right" valign="top"><a id="a5c1a5fdd8072c253419387380f1844f6"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>start_all_notes</b> (ossia::time_value date, ossia::physical_time date_phys, int chan, float endq, ossia::midi_port &amp;p2, <a class="el" href="struct_nodes_1_1_pulse_to_note_1_1_node_1_1_state.html">State</a> &amp;self) noexcept</td></tr>
-<tr class="separator:a5c1a5fdd8072c253419387380f1844f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae54a58a009593f607d8f9409cc962401"><td class="memItemLeft" align="right" valign="top"><a id="ae54a58a009593f607d8f9409cc962401"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>stop_notes</b> (ossia::physical_time date_phys, int chan, ossia::midi_port &amp;p2, <a class="el" href="struct_nodes_1_1_pulse_to_note_1_1_node_1_1_state.html">State</a> &amp;self)</td></tr>
-<tr class="separator:ae54a58a009593f607d8f9409cc962401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a8d216b62d9e8ea9f075ec80d04d8d0c2"><td class="memItemLeft" align="right" valign="top"><a id="a8d216b62d9e8ea9f075ec80d04d8d0c2"></a>
+VelToNote ossia score Converts a message into MIDI n If the input is an&#160;</td><td class="memItemRight" valign="bottom"><b>impulse</b></td></tr>
+<tr class="separator:a8d216b62d9e8ea9f075ec80d04d8d0c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa90651a817bb8cab78f1f3ca61f6172d"><td class="memItemLeft" align="right" valign="top"><a id="aa90651a817bb8cab78f1f3ca61f6172d"></a>
+VelToNote ossia score Converts a message into MIDI n If the input is an the output will be the default pitch at the default velocity n If the input is a single integer&#160;</td><td class="memItemRight" valign="bottom"><b>in</b> [0;127]</td></tr>
+<tr class="separator:aa90651a817bb8cab78f1f3ca61f6172d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3f180ef2b6f933a3ee1957228cb92a1"><td class="memItemLeft" align="right" valign="top"><a id="ad3f180ef2b6f933a3ee1957228cb92a1"></a>
+VelToNote ossia score Converts a message into MIDI n If the input is an the output will be the default pitch at the default velocity n If the input is a single integer the output will be the relevant note at the default velocity If the input is an array of two values&#160;</td><td class="memItemRight" valign="bottom"><b>between</b> [0;127]</td></tr>
+<tr class="separator:ad3f180ef2b6f933a3ee1957228cb92a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a031dfeac6898c7d1bd4582e837f620d2"><td class="memItemLeft" align="right" valign="top"><a id="a031dfeac6898c7d1bd4582e837f620d2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
+<tr class="separator:a031dfeac6898c7d1bd4582e837f620d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b0ee93f325273869f96e6eb6c171d10"><td class="memItemLeft" ><a id="a2b0ee93f325273869f96e6eb6c171d10"></a>
+struct {</td></tr>
+<tr class="memitem:a8f6e2138623c41a22017ef59645dfacc"><td class="memItemLeft" >
+&#160;&#160;&#160;midi_out&#160;&#160;&#160;<b>midi</b></td></tr>
+<tr class="separator:a8f6e2138623c41a22017ef59645dfacc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b0ee93f325273869f96e6eb6c171d10"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b></td></tr>
+<tr class="separator:a2b0ee93f325273869f96e6eb6c171d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b2007cdb2f941bdad250179cc196771"><td class="memItemLeft" align="right" valign="top"><a id="a7b2007cdb2f941bdad250179cc196771"></a>
+std::vector&lt; <a class="el" href="struct_nodes_1_1_pulse_to_note_1_1_node_1_1_note_in.html">NoteIn</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>to_start</b></td></tr>
+<tr class="separator:a7b2007cdb2f941bdad250179cc196771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85a8cfe919458818d803534dd1b061e3"><td class="memItemLeft" align="right" valign="top"><a id="a85a8cfe919458818d803534dd1b061e3"></a>
+std::vector&lt; <a class="el" href="struct_nodes_1_1_pulse_to_note_1_1_node_1_1_note_in.html">NoteIn</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>running_notes</b></td></tr>
+<tr class="separator:a85a8cfe919458818d803534dd1b061e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_vel_to_note_8hpp_source.html">VelToNote.hpp</a></li>

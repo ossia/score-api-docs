@@ -200,6 +200,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoscr_1_1_outlet_init_func.html">OutletInitFunc</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoscr_1_1_score_layer_factory.html">ScoreLayerFactory</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoscr_1_1_port.html">Port</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoscr_1_1_edge_item.html">EdgeItem</a></td></tr>
@@ -230,14 +232,6 @@ Functions</h2></td></tr>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a3f06429e3623503593fba6a44daae8fc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>custom_factories</b> (std::vector&lt; <a class="el" href="classscore_1_1_interface_base.html">score::InterfaceBase</a> * &gt; &amp;fx, const <a class="el" href="structscore_1_1_application_context.html">score::ApplicationContext</a> &amp;ctx, const <a class="el" href="class_uuid_key.html">score::InterfaceKey</a> &amp;key)</td></tr>
 <tr class="separator:a3f06429e3623503593fba6a44daae8fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade1b186372a47d2d96df038e29707761"><td class="memTemplParams" colspan="2"><a id="ade1b186372a47d2d96df038e29707761"></a>
-template&lt;typename N &gt; </td></tr>
-<tr class="memitem:ade1b186372a47d2d96df038e29707761"><td class="memTemplItemLeft" align="right" valign="top">consteval <a class="el" href="structscore_1_1uuids_1_1uuid.html">score::uuid_t</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>uuid_from_string</b> ()</td></tr>
-<tr class="separator:ade1b186372a47d2d96df038e29707761"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3027b1701466f874e6b570b6852a272a"><td class="memTemplParams" colspan="2"><a id="a3027b1701466f874e6b570b6852a272a"></a>
-template&lt;typename Node &gt; </td></tr>
-<tr class="memitem:a3027b1701466f874e6b570b6852a272a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1uuids_1_1uuid.html">score::uuids::uuid</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_field_uuid</b> (uint64_t is_input, uint64_t index)</td></tr>
-<tr class="separator:a3027b1701466f874e6b570b6852a272a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b1e23efad81b231e9a392bf927a5952"><td class="memTemplParams" colspan="2"><a id="a0b1e23efad81b231e9a392bf927a5952"></a>
 template&lt;typename Node , typename T , std::size_t N&gt; </td></tr>
 <tr class="memitem:a0b1e23efad81b231e9a392bf927a5952"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_control_in</b> (avnd::field_index&lt; N &gt;, <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="class_process_1_1_port.html">Process::Port</a> &gt; &amp;&amp;id, QObject *parent)</td></tr>
@@ -304,6 +298,10 @@ Variables</h2></td></tr>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a12b9de9e4127874503bede0a45f841ac"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><b>is_gpu</b> = GpuNode&lt;T&gt; || GpuGraphicsNode2&lt;T&gt; || GpuComputeNode2&lt;T&gt;</td></tr>
 <tr class="separator:a12b9de9e4127874503bede0a45f841ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aece7f43efe61aba09d77309b4a5da52a"><td class="memTemplParams" colspan="2"><a id="aece7f43efe61aba09d77309b4a5da52a"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aece7f43efe61aba09d77309b4a5da52a"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><b>has_ossia_layer</b> = requires { sizeof(typename T::Layer); }</td></tr>
+<tr class="separator:aece7f43efe61aba09d77309b4a5da52a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="a6d690fba293ecfe0eb33de946626567d"></a>

@@ -106,6 +106,15 @@ $(document).ready(function(){initNavTree('structoscr_1_1_inlet_init_func.html','
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a4f4acdfd84b25c7a656f0be32eee4a97"><td class="memItemLeft" align="right" valign="top"><a id="a4f4acdfd84b25c7a656f0be32eee4a97"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const oscr::ossia_value_port auto &amp;in, auto idx)</td></tr>
+<tr class="separator:a4f4acdfd84b25c7a656f0be32eee4a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a403b9ab1ce43c26d4e002f565ad770e3"><td class="memItemLeft" align="right" valign="top"><a id="a403b9ab1ce43c26d4e002f565ad770e3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const oscr::ossia_audio_port auto &amp;in, auto idx)</td></tr>
+<tr class="separator:a403b9ab1ce43c26d4e002f565ad770e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ae6f31f09cf05b21c374570ff12d505"><td class="memItemLeft" align="right" valign="top"><a id="a5ae6f31f09cf05b21c374570ff12d505"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const oscr::ossia_midi_port auto &amp;in, auto idx)</td></tr>
+<tr class="separator:a5ae6f31f09cf05b21c374570ff12d505"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace7897bd30ea620f3b89ed0d9d7f40e9"><td class="memItemLeft" align="right" valign="top"><a id="ace7897bd30ea620f3b89ed0d9d7f40e9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const avnd::audio_port auto &amp;in, auto idx)</td></tr>
 <tr class="separator:ace7897bd30ea620f3b89ed0d9d7f40e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,10 +133,10 @@ template&lt;typename T &gt; </td></tr>
 template&lt;avnd::dynamic_ports_port T, std::size_t N&gt; </td></tr>
 <tr class="memitem:a349d975a2c56ea9c3b65418b2382f9c3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (const T &amp;in, avnd::field_index&lt; N &gt; i)</td></tr>
 <tr class="separator:a349d975a2c56ea9c3b65418b2382f9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a245ccc5eaa53e8f1281657af9bfb0523"><td class="memTemplParams" colspan="2"><a id="a245ccc5eaa53e8f1281657af9bfb0523"></a>
+<tr class="memitem:abfe1da40941e2112ff8acde4de7adebd"><td class="memTemplParams" colspan="2"><a id="abfe1da40941e2112ff8acde4de7adebd"></a>
 template&lt;avnd::parameter T, std::size_t N&gt; </td></tr>
-<tr class="memitem:a245ccc5eaa53e8f1281657af9bfb0523"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (const T &amp;in, avnd::field_index&lt; N &gt;)</td></tr>
-<tr class="separator:a245ccc5eaa53e8f1281657af9bfb0523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfe1da40941e2112ff8acde4de7adebd"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>requires</b> (!oscr::ossia_port&lt; T &gt;) void operator()(const T &amp;in</td></tr>
+<tr class="separator:abfe1da40941e2112ff8acde4de7adebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af612c7474c3ee21491155ce56f6e9155"><td class="memTemplParams" colspan="2"><a id="af612c7474c3ee21491155ce56f6e9155"></a>
 template&lt;std::size_t Idx, avnd::message T&gt; </td></tr>
 <tr class="memitem:af612c7474c3ee21491155ce56f6e9155"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (const avnd::field_reflection&lt; Idx, T &gt; &amp;in, auto dummy)</td></tr>

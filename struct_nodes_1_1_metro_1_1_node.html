@@ -95,37 +95,67 @@ $(document).ready(function(){initNavTree('struct_nodes_1_1_metro_1_1_node.html',
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_nodes_1_1_metro_1_1_node-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Nodes::Metro::Node Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_metro_1_1_node_1_1_metadata.html">Metadata</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ab79dbff5c443412dbfc0c6c1b7614703"><td class="memItemLeft" align="right" valign="top"><a id="ab79dbff5c443412dbfc0c6c1b7614703"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>control_policy</b> = ossia::safe_nodes::last_tick</td></tr>
-<tr class="separator:ab79dbff5c443412dbfc0c6c1b7614703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac21eadd79d5e2b033e739f48261cf784"><td class="memItemLeft" align="right" valign="top"><a id="ac21eadd79d5e2b033e739f48261cf784"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> = halp::tick_musical</td></tr>
+<tr class="separator:ac21eadd79d5e2b033e739f48261cf784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a0cf523c9d25f00e10506508aba4a9468"><td class="memItemLeft" align="right" valign="top"><a id="a0cf523c9d25f00e10506508aba4a9468"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (name, &quot;Free metronome&quot;) halp_meta(c_name</td></tr>
+<tr class="separator:a0cf523c9d25f00e10506508aba4a9468"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8359db360c0f307d6d3686bea612f34"><td class="memItemLeft" align="right" valign="top"><a id="aa8359db360c0f307d6d3686bea612f34"></a>
+Metro&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (category, &quot;Control/Generators&quot;) halp_meta(author</td></tr>
+<tr class="separator:aa8359db360c0f307d6d3686bea612f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dd425d780db9990d243fdf29406461a"><td class="memItemLeft" align="right" valign="top"><a id="a3dd425d780db9990d243fdf29406461a"></a>
+Metro ossia score&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (manual_url, &quot;https://ossia.io/score-docs/processes/control-utilities.html#free-metronome&quot;) halp_meta(description</td></tr>
+<tr class="separator:a3dd425d780db9990d243fdf29406461a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ee30b0b2d06dfec3b3383519e66c5ed"><td class="memItemLeft" align="right" valign="top"><a id="a6ee30b0b2d06dfec3b3383519e66c5ed"></a>
+Metro ossia score Metronome which is not synced to the parent quantization settings&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (uuid, &quot;50439197-521E-4ED0-A3B7-EDD8DEAEAC93&quot;) struct</td></tr>
+<tr class="separator:a6ee30b0b2d06dfec3b3383519e66c5ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbe4117c8efc2072f6920488ce505429"><td class="memItemLeft" align="right" valign="top"><a id="abbe4117c8efc2072f6920488ce505429"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>prepare</b> (halp::setup s)</td></tr>
+<tr class="separator:abbe4117c8efc2072f6920488ce505429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a964527fb18ae6700a2a37ddba8278870"><td class="memItemLeft" align="right" valign="top"><a id="a964527fb18ae6700a2a37ddba8278870"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const halp::tick_musical &amp;tk)</td></tr>
+<tr class="separator:a964527fb18ae6700a2a37ddba8278870"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ad935a8f7a8c78a719bda8c5803b044a6"><td class="memItemLeft" align="right" valign="top"><a id="ad935a8f7a8c78a719bda8c5803b044a6"></a>
 static constexpr int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_period</b> (bool use_tempo, double quantif, double freq, double tempo, int sr)</td></tr>
 <tr class="separator:ad935a8f7a8c78a719bda8c5803b044a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af18c9fba5242d011fe3655d3daab11a5"><td class="memItemLeft" align="right" valign="top"><a id="af18c9fba5242d011fe3655d3daab11a5"></a>
-static constexpr ossia::time_value&#160;</td><td class="memItemRight" valign="bottom"><b>next_date</b> (ossia::time_value cur_date, int64_t period)</td></tr>
-<tr class="separator:af18c9fba5242d011fe3655d3daab11a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f66f95ef762954086674254d9ac478a"><td class="memItemLeft" align="right" valign="top"><a id="a6f66f95ef762954086674254d9ac478a"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (float quantif, float freq, bool val, ossia::value_port &amp;res, ossia::token_request tk, ossia::exec_state_facade st)</td></tr>
-<tr class="separator:a6f66f95ef762954086674254d9ac478a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af720e30bf4fad8d732a46f84704f3c81"><td class="memItemLeft" align="right" valign="top"><a id="af720e30bf4fad8d732a46f84704f3c81"></a>
+static constexpr int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>next_date</b> (int64_t cur_date, int64_t period)</td></tr>
+<tr class="separator:af720e30bf4fad8d732a46f84704f3c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ad81193893f0f3ffb8f570a3733feaa84"><td class="memItemLeft" align="right" valign="top"><a id="ad81193893f0f3ffb8f570a3733feaa84"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
+<tr class="separator:ad81193893f0f3ffb8f570a3733feaa84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b0be69a07eb204312ee167adcdff048"><td class="memItemLeft" ><a id="a9b0be69a07eb204312ee167adcdff048"></a>
+struct {</td></tr>
+<tr class="memitem:a0714b0afd01300560a7125b854644530"><td class="memItemLeft" >
+&#160;&#160;&#160;halp::timed_callback&lt;&quot;out&quot;&gt;&#160;&#160;&#160;<b>out</b></td></tr>
+<tr class="separator:a0714b0afd01300560a7125b854644530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b0be69a07eb204312ee167adcdff048"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b></td></tr>
+<tr class="separator:a9b0be69a07eb204312ee167adcdff048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72077e1ff421efffd8384f4d2049d9e7"><td class="memItemLeft" align="right" valign="top"><a id="a72077e1ff421efffd8384f4d2049d9e7"></a>
+halp::setup&#160;</td><td class="memItemRight" valign="bottom"><b>setup</b></td></tr>
+<tr class="separator:a72077e1ff421efffd8384f4d2049d9e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_metro_8hpp_source.html">Metro.hpp</a></li>

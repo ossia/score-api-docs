@@ -97,7 +97,8 @@ $(document).ready(function(){initNavTree('struct_nodes_1_1_quantifier_1_1_node.h
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_nodes_1_1_quantifier_1_1_node-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Nodes::Quantifier::Node Struct Reference</div>  </div>
@@ -106,24 +107,78 @@ $(document).ready(function(){initNavTree('struct_nodes_1_1_quantifier_1_1_node.h
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_quantifier_1_1_node_1_1_metadata.html">Metadata</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_quantifier_1_1_node_1_1_note.html">Note</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_quantifier_1_1_node_1_1_note_in.html">NoteIn</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_quantifier_1_1_node_1_1_state.html">State</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:abe60124f6e900fd341b3dbf57b5881d5"><td class="memItemLeft" align="right" valign="top"><a id="abe60124f6e900fd341b3dbf57b5881d5"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>control_policy</b> = ossia::safe_nodes::default_tick_controls</td></tr>
-<tr class="separator:abe60124f6e900fd341b3dbf57b5881d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b18d1a2a8d7b4ace1ca6c44562ca479"><td class="memItemLeft" align="right" valign="top"><a id="a6b18d1a2a8d7b4ace1ca6c44562ca479"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> = halp::tick_flicks</td></tr>
+<tr class="separator:a6b18d1a2a8d7b4ace1ca6c44562ca479"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a5b1b4cfb8be426fc91a3f5666282126c"><td class="memItemLeft" align="right" valign="top"><a id="a5b1b4cfb8be426fc91a3f5666282126c"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (const ossia::midi_port &amp;p1, const ossia::timed_vec&lt; float &gt; &amp;startq, const ossia::timed_vec&lt; float &gt; &amp;tightness, const ossia::timed_vec&lt; float &gt; &amp;dur, const ossia::timed_vec&lt; float &gt; &amp;tempo_vec, ossia::midi_port &amp;p2, ossia::token_request tk, ossia::exec_state_facade st, <a class="el" href="struct_nodes_1_1_quantifier_1_1_node_1_1_state.html">State</a> &amp;self)</td></tr>
-<tr class="separator:a5b1b4cfb8be426fc91a3f5666282126c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aee360cd523a5a6a23957a4bee3fce511"><td class="memItemLeft" align="right" valign="top"><a id="aee360cd523a5a6a23957a4bee3fce511"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (name, &quot;Midi quantify&quot;) halp_meta(c_name</td></tr>
+<tr class="separator:aee360cd523a5a6a23957a4bee3fce511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bd1495c67b8873f75e1b48fb476bab1"><td class="memItemLeft" align="right" valign="top"><a id="a6bd1495c67b8873f75e1b48fb476bab1"></a>
+Quantifier&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (category, &quot;Midi&quot;) halp_meta(manual_url</td></tr>
+<tr class="separator:a6bd1495c67b8873f75e1b48fb476bab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae300a52a43b8d5c2652c9fb05e9a4de8"><td class="memItemLeft" align="right" valign="top"><a id="ae300a52a43b8d5c2652c9fb05e9a4de8"></a>
+Quantifier ossia score&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (description, &quot;Quantifies a MIDI input&quot;) halp_meta(uuid</td></tr>
+<tr class="separator:ae300a52a43b8d5c2652c9fb05e9a4de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5722e90c086e1222e0f708575b1f9ae"><td class="memItemLeft" align="right" valign="top"><a id="aa5722e90c086e1222e0f708575b1f9ae"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>prepare</b> (halp::setup s)</td></tr>
+<tr class="separator:aa5722e90c086e1222e0f708575b1f9ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a597c3dde4b1dcc8d85a51e0a9e012e4c"><td class="memItemLeft" align="right" valign="top"><a id="a597c3dde4b1dcc8d85a51e0a9e012e4c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sequence</b> (<a class="el" href="struct_nodes_1_1_quantifier_1_1_node_1_1_note.html">Note</a> new_note, int64_t date)</td></tr>
+<tr class="separator:a597c3dde4b1dcc8d85a51e0a9e012e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49ce6cf15625d34a474912f425df5ebb"><td class="memItemLeft" align="right" valign="top"><a id="a49ce6cf15625d34a474912f425df5ebb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const tick &amp;tk)</td></tr>
+<tr class="separator:a49ce6cf15625d34a474912f425df5ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a3e4a6846eaa57100795581afa7be2d35"><td class="memItemLeft" align="right" valign="top"><a id="a3e4a6846eaa57100795581afa7be2d35"></a>
+Quantifier&#160;</td><td class="memItemRight" valign="bottom"><b>https</b>: halp_meta(author</td></tr>
+<tr class="separator:a3e4a6846eaa57100795581afa7be2d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f00218461b18ced3b97aaa29f8255e7"><td class="memItemLeft" ><a id="a9f00218461b18ced3b97aaa29f8255e7"></a>
+struct {</td></tr>
+<tr class="memitem:a985fdc72a51418604476837717dd33c8"><td class="memItemLeft" >
+&#160;&#160;&#160;halp::midi_bus&lt;&quot;in&quot;, libremidi::message &gt;&#160;&#160;&#160;<b>midi</b></td></tr>
+<tr class="separator:a985fdc72a51418604476837717dd33c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad098a7287bf7d29502ce90ee0cc5835b"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="struct_nodes_1_1combobox__from__array.html">quant_selector</a>&lt;&quot;Quantization&quot;&gt;&#160;&#160;&#160;<b>start_quant</b></td></tr>
+<tr class="separator:ad098a7287bf7d29502ce90ee0cc5835b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5acf2d0bebfd31b859ef7ecc66376c9"><td class="memItemLeft" >
+&#160;&#160;&#160;halp::hslider_f32&lt;&quot;Tightness&quot;, halp::range{0.f, 1.f, 0.8f}&gt;&#160;&#160;&#160;<b>tightness</b></td></tr>
+<tr class="separator:af5acf2d0bebfd31b859ef7ecc66376c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d53e81249ede9611ef3cfb805dc52f4"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="struct_nodes_1_1combobox__from__array.html">duration_selector</a>&lt;&quot;Duration&quot;&gt;&#160;&#160;&#160;<b>duration</b></td></tr>
+<tr class="separator:a2d53e81249ede9611ef3cfb805dc52f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee09b429784795775156a5c0ca64298a"><td class="memItemLeft" >
+&#160;&#160;&#160;halp::hslider_f32&lt;&quot;Tempo&quot;, halp::range{20., 300., 120.}&gt;&#160;&#160;&#160;<b>tempo</b></td></tr>
+<tr class="separator:aee09b429784795775156a5c0ca64298a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f00218461b18ced3b97aaa29f8255e7"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
+<tr class="separator:a9f00218461b18ced3b97aaa29f8255e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4a8330653ab87db6d854381e3581f18"><td class="memItemLeft" ><a id="ac4a8330653ab87db6d854381e3581f18"></a>
+struct {</td></tr>
+<tr class="memitem:ad5fcd0b90f7b73eb8a582b868b8b4fef"><td class="memItemLeft" >
+&#160;&#160;&#160;midi_out&#160;&#160;&#160;<b>midi</b></td></tr>
+<tr class="separator:ad5fcd0b90f7b73eb8a582b868b8b4fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4a8330653ab87db6d854381e3581f18"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b></td></tr>
+<tr class="separator:ac4a8330653ab87db6d854381e3581f18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a482e2eaa1616c319a321bfc58d649966"><td class="memItemLeft" align="right" valign="top"><a id="a482e2eaa1616c319a321bfc58d649966"></a>
+std::vector&lt; <a class="el" href="struct_nodes_1_1_quantifier_1_1_node_1_1_note_in.html">NoteIn</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>to_start</b></td></tr>
+<tr class="separator:a482e2eaa1616c319a321bfc58d649966"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eedbb46be0b42a0896a5516e8bd4250"><td class="memItemLeft" align="right" valign="top"><a id="a4eedbb46be0b42a0896a5516e8bd4250"></a>
+std::vector&lt; <a class="el" href="struct_nodes_1_1_quantifier_1_1_node_1_1_note_in.html">NoteIn</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>running_notes</b></td></tr>
+<tr class="separator:a4eedbb46be0b42a0896a5516e8bd4250"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade93447db3809a63dd3e3dbcbf4ac357"><td class="memItemLeft" align="right" valign="top"><a id="ade93447db3809a63dd3e3dbcbf4ac357"></a>
+halp::setup&#160;</td><td class="memItemRight" valign="bottom"><b>setup</b></td></tr>
+<tr class="separator:ade93447db3809a63dd3e3dbcbf4ac357"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_quantifier_8hpp_source.html">Quantifier.hpp</a></li>

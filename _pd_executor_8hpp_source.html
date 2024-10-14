@@ -136,50 +136,54 @@ $(document).ready(function(){initNavTree('_pd_executor_8hpp_source.html',''); in
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_pd_1_1_patch_spec.html">Pd::PatchSpec</a>&amp; spec, <span class="keywordtype">bool</span> midi_in = <span class="keyword">true</span>, <span class="keywordtype">bool</span> midi_out = <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  ~<a class="code" href="class_pd_1_1_pd_graph_node.html">PdGraphNode</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  ossia::outlet* get_outlet(<span class="keyword">const</span> <span class="keywordtype">char</span>* str) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  ossia::value_port* get_value_port(<span class="keyword">const</span> <span class="keywordtype">char</span>* str) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  [[nodiscard]] std::string label() <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;puredata (&quot;</span> + m_file + <span class="stringliteral">&quot;)&quot;</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  ossia::midi_port* get_midi_in() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  ossia::midi_port* get_midi_out() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">void</span> run(<span class="keyword">const</span> ossia::token_request&amp; t, ossia::exec_state_facade e) noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> add_dzero(std::string&amp; s) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  std::shared_ptr&lt;Instance&gt; m_instance;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  std::size_t m_audioIns{};</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  std::size_t m_audioOuts{};</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  std::vector&lt;Process::Port*&gt; m_inport, m_outport;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  std::vector&lt;std::string&gt; m_inmess, m_outmess;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  std::vector&lt;float&gt; m_inbuf, m_outbuf;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  std::vector&lt;boost::circular_buffer&lt;float&gt;&gt; m_prev_outbuf;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  std::size_t m_firstInMessage{}, m_firstOutMessage{};</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  ossia::audio_port* m_audio_inlet{};</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  ossia::audio_port* m_audio_outlet{};</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  ossia::midi_port* m_midi_inlet{};</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  ossia::midi_port* m_midi_outlet{};</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  std::string m_file;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_pd_1_1_component.html">   67</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_pd_1_1_component.html">Component</a> final : <span class="keyword">public</span> <a class="code" href="class_execution_1_1_process_component.html">Execution::ProcessComponent</a></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  COMPONENT_METADATA(<span class="stringliteral">&quot;78657f42-3a2a-4b80-8736-8736463442b4&quot;</span>)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  ossia::outlet* get_outlet(<span class="keyword">const</span> <span class="keywordtype">char</span>* str) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  ossia::value_port* get_value_port(<span class="keyword">const</span> <span class="keywordtype">char</span>* str) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  ossia::midi_port* get_midi_in() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  ossia::midi_port* get_midi_out() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> run(<span class="keyword">const</span> ossia::token_request&amp; t, ossia::exec_state_facade e) noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> add_dzero(std::string&amp; s) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  std::shared_ptr&lt;Instance&gt; m_instance;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  std::size_t m_audioIns{};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  std::size_t m_audioOuts{};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  std::vector&lt;Process::Port*&gt; m_inport, m_outport;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  std::vector&lt;std::string&gt; m_inmess, m_outmess;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  std::vector&lt;float&gt; m_inbuf, m_outbuf;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  std::vector&lt;boost::circular_buffer&lt;float&gt;&gt; m_prev_outbuf;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  std::size_t m_firstInMessage{}, m_firstOutMessage{};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  ossia::audio_port* m_audio_inlet{};</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  ossia::audio_port* m_audio_outlet{};</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  ossia::midi_port* m_midi_inlet{};</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  ossia::midi_port* m_midi_outlet{};</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  std::string m_file;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">using</span> <a class="code" href="class_pd_1_1_process_model.html">model_type</a> = <a class="code" href="class_pd_1_1_process_model.html">Pd::ProcessModel</a>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <a class="code" href="class_pd_1_1_component.html">Component</a>(<a class="code" href="class_pd_1_1_process_model.html">Pd::ProcessModel</a>&amp; element, <span class="keyword">const</span> <a class="code" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx, QObject* parent);</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_pd_1_1_component.html">   71</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_pd_1_1_component.html">Component</a> final : <span class="keyword">public</span> <a class="code" href="class_execution_1_1_process_component.html">Execution::ProcessComponent</a></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  COMPONENT_METADATA(<span class="stringliteral">&quot;78657f42-3a2a-4b80-8736-8736463442b4&quot;</span>)</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  ~<a class="code" href="class_pd_1_1_component.html">Component</a>();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">using</span> <a class="code" href="class_execution_1_1_process_component_factory___t.html">ComponentFactory</a> = <a class="code" href="class_execution_1_1_process_component_factory___t.html">Execution::ProcessComponentFactory_T&lt;Pd::Component&gt;</a>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">using</span> <a class="code" href="class_pd_1_1_process_model.html">model_type</a> = <a class="code" href="class_pd_1_1_process_model.html">Pd::ProcessModel</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="class_pd_1_1_component.html">Component</a>(<a class="code" href="class_pd_1_1_process_model.html">Pd::ProcessModel</a>&amp; element, <span class="keyword">const</span> <a class="code" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx, QObject* parent);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  ~<a class="code" href="class_pd_1_1_component.html">Component</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">using</span> <a class="code" href="class_execution_1_1_process_component_factory___t.html">ComponentFactory</a> = <a class="code" href="class_execution_1_1_process_component_factory___t.html">Execution::ProcessComponentFactory_T&lt;Pd::Component&gt;</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
 <div class="ttc" id="aclass_execution_1_1_process_component_factory___t_html"><div class="ttname"><a href="class_execution_1_1_process_component_factory___t.html">Execution::ProcessComponentFactory_T</a></div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:119</div></div>
 <div class="ttc" id="aclass_execution_1_1_process_component_html"><div class="ttname"><a href="class_execution_1_1_process_component.html">Execution::ProcessComponent</a></div><div class="ttdef"><b>Definition:</b> Process/Execution/ProcessComponent.hpp:48</div></div>
-<div class="ttc" id="aclass_pd_1_1_component_html"><div class="ttname"><a href="class_pd_1_1_component.html">Pd::Component</a></div><div class="ttdef"><b>Definition:</b> PdExecutor.hpp:68</div></div>
+<div class="ttc" id="aclass_pd_1_1_component_html"><div class="ttname"><a href="class_pd_1_1_component.html">Pd::Component</a></div><div class="ttdef"><b>Definition:</b> PdExecutor.hpp:72</div></div>
 <div class="ttc" id="aclass_pd_1_1_pd_graph_node_html"><div class="ttname"><a href="class_pd_1_1_pd_graph_node.html">Pd::PdGraphNode</a></div><div class="ttdef"><b>Definition:</b> PdExecutor.hpp:30</div></div>
 <div class="ttc" id="aclass_pd_1_1_process_model_html"><div class="ttname"><a href="class_pd_1_1_process_model.html">Pd::ProcessModel</a></div><div class="ttdef"><b>Definition:</b> PdProcess.hpp:40</div></div>
 <div class="ttc" id="astruct_execution_1_1_context_html"><div class="ttname"><a href="struct_execution_1_1_context.html">Execution::Context</a></div><div class="ttdef"><b>Definition:</b> ExecutionContext.hpp:76</div></div>

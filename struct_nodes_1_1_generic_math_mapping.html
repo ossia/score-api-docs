@@ -107,33 +107,33 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a7edf30c6a6f5887fcbd58c851311d5d3"><td class="memItemLeft" align="right" valign="top"><a id="a7edf30c6a6f5887fcbd58c851311d5d3"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>store_output</b> (auto &amp;self, const ossia::value &amp;v)</td></tr>
 <tr class="separator:a7edf30c6a6f5887fcbd58c851311d5d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac70c4d28ec14450027dbcff7ce0b772a"><td class="memItemLeft" align="right" valign="top"><a id="ac70c4d28ec14450027dbcff7ce0b772a"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>exec_scalar</b> (int64_t timestamp, State &amp;self, ossia::value_port &amp;output)</td></tr>
-<tr class="separator:ac70c4d28ec14450027dbcff7ce0b772a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ff69d9c9268e0e0246a4e3bb5d7b71a"><td class="memItemLeft" align="right" valign="top"><a id="a3ff69d9c9268e0e0246a4e3bb5d7b71a"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>exec_polyphonic</b> (int64_t timestamp, State &amp;self, ossia::value_port &amp;output)</td></tr>
-<tr class="separator:a3ff69d9c9268e0e0246a4e3bb5d7b71a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b1eb3d1a3d3a47ae3330eb5e8d7dca3"><td class="memItemLeft" align="right" valign="top"><a id="a8b1eb3d1a3d3a47ae3330eb5e8d7dca3"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>exec_array</b> (int64_t timestamp, State &amp;self, ossia::value_port &amp;output, bool vector_size_did_change)</td></tr>
-<tr class="separator:a8b1eb3d1a3d3a47ae3330eb5e8d7dca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d24a3afdecdacfc2fb683c0bb111d2b"><td class="memItemLeft" align="right" valign="top"><a id="a5d24a3afdecdacfc2fb683c0bb111d2b"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>run_scalar</b> (const ossia::value_port &amp;input, ossia::value_port &amp;output, const ossia::token_request &amp;tk, ossia::exec_state_facade st, State &amp;self)</td></tr>
-<tr class="separator:a5d24a3afdecdacfc2fb683c0bb111d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac7b30a215c92ee8b7aa4099c97d3bea"><td class="memItemLeft" align="right" valign="top"><a id="aac7b30a215c92ee8b7aa4099c97d3bea"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>exec_scalar</b> (State &amp;self, value_output_callback &amp;output)</td></tr>
+<tr class="separator:aac7b30a215c92ee8b7aa4099c97d3bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a204d3136e8f026efaa21aa04e9b2f5e4"><td class="memItemLeft" align="right" valign="top"><a id="a204d3136e8f026efaa21aa04e9b2f5e4"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>exec_polyphonic</b> (State &amp;self, value_output_callback &amp;output)</td></tr>
+<tr class="separator:a204d3136e8f026efaa21aa04e9b2f5e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a097489da3edf28c963a1bf1bcc2602ee"><td class="memItemLeft" align="right" valign="top"><a id="a097489da3edf28c963a1bf1bcc2602ee"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>exec_array</b> (State &amp;self, value_output_callback &amp;output, bool vector_size_did_change)</td></tr>
+<tr class="separator:a097489da3edf28c963a1bf1bcc2602ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39f297fa26cf5dd48846b227e8c137d5"><td class="memItemLeft" align="right" valign="top"><a id="a39f297fa26cf5dd48846b227e8c137d5"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>run_scalar</b> (const ossia::value &amp;v, value_output_callback &amp;output, const halp::tick_flicks &amp;tk, State &amp;self)</td></tr>
+<tr class="separator:a39f297fa26cf5dd48846b227e8c137d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a6a70b1ca3a45788dd53917d701cf80"><td class="memItemLeft" align="right" valign="top"><a id="a9a6a70b1ca3a45788dd53917d701cf80"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>resize</b> (const std::string &amp;expr, State &amp;self, int sz)</td></tr>
 <tr class="separator:a9a6a70b1ca3a45788dd53917d701cf80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3c8e6d9412ace351c744c3e0939df3f"><td class="memItemLeft" align="right" valign="top"><a id="ac3c8e6d9412ace351c744c3e0939df3f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>run_polyphonic</b> (int size, ossia::value_port &amp;output, const std::string &amp;expr, const ossia::token_request &amp;tk, ossia::exec_state_facade st, State &amp;self)</td></tr>
-<tr class="separator:ac3c8e6d9412ace351c744c3e0939df3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd4efbca3a1e2867ebdbfa9d9e193476"><td class="memItemLeft" align="right" valign="top"><a id="afd4efbca3a1e2867ebdbfa9d9e193476"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>run_polyphonic</b> (const ossia::value_port &amp;input, ossia::value_port &amp;output, const std::string &amp;expr, const ossia::token_request &amp;tk, ossia::exec_state_facade st, State &amp;self)</td></tr>
-<tr class="separator:afd4efbca3a1e2867ebdbfa9d9e193476"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add90d2912ee8469f6a39d7d5104365d6"><td class="memItemLeft" align="right" valign="top"><a id="add90d2912ee8469f6a39d7d5104365d6"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>run_array</b> (const ossia::value_port &amp;input, ossia::value_port &amp;output, const ossia::token_request &amp;tk, ossia::exec_state_facade st, State &amp;self)</td></tr>
-<tr class="separator:add90d2912ee8469f6a39d7d5104365d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ecc6f48f85c9f4a548801cc4bf2542a"><td class="memItemLeft" align="right" valign="top"><a id="a7ecc6f48f85c9f4a548801cc4bf2542a"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>run_polyphonic</b> (int size, value_output_callback &amp;output, const std::string &amp;expr, const halp::tick_flicks &amp;tk, State &amp;self)</td></tr>
+<tr class="separator:a7ecc6f48f85c9f4a548801cc4bf2542a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb351a4f82fb577ea3da8edff213c355"><td class="memItemLeft" align="right" valign="top"><a id="aeb351a4f82fb577ea3da8edff213c355"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>run_polyphonic</b> (const ossia::value &amp;value, value_output_callback &amp;output, const std::string &amp;expr, const halp::tick_flicks &amp;tk, State &amp;self)</td></tr>
+<tr class="separator:aeb351a4f82fb577ea3da8edff213c355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e900834b1ed51611888be004cd8706c"><td class="memItemLeft" align="right" valign="top"><a id="a1e900834b1ed51611888be004cd8706c"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>run_array</b> (const ossia::value &amp;value, value_output_callback &amp;output, const halp::tick_flicks &amp;tk, State &amp;self)</td></tr>
+<tr class="separator:a1e900834b1ed51611888be004cd8706c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="_math_mapping_8hpp_source.html">MathMapping.hpp</a></li>
+<li><a class="el" href="_math_mapping__generic_8hpp_source.html">MathMapping_generic.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -99,99 +99,6 @@ var namespaces_dup =
         ] ]
       ] ]
     ] ],
-    [ "Control", null, [
-      [ "Widgets", null, [
-        [ "LoopMode", "_common_widgets_8hpp.html#a7ba549314437d367bffb469b27cdab6c", [
-          [ "Play", "_common_widgets_8hpp.html#a7ba549314437d367bffb469b27cdab6cabf31d16cbff48130cdf1b23749c9c06a", null ],
-          [ "Record", "_common_widgets_8hpp.html#a7ba549314437d367bffb469b27cdab6ca49a87df6f3ad88c50f3daa5a722a8510", null ],
-          [ "Overdub", "_common_widgets_8hpp.html#a7ba549314437d367bffb469b27cdab6ca777f2dd5354659c598d89edd16922aac", null ],
-          [ "Stop", "_common_widgets_8hpp.html#a7ba549314437d367bffb469b27cdab6ca3e8c8e73f66723c223e95b906ba46f4b", null ]
-        ] ],
-        [ "Waveform", "_common_widgets_8hpp.html#a0c6f8b88bdb16ba71e3658d7013023b6", [
-          [ "Sin", "_common_widgets_8hpp.html#a0c6f8b88bdb16ba71e3658d7013023b6ac57eaa7a34e6399151fd5378fba1ee76", null ],
-          [ "Triangle", "_common_widgets_8hpp.html#a0c6f8b88bdb16ba71e3658d7013023b6a3e60b9940b9aa4d284b3516484c0cf39", null ],
-          [ "Saw", "_common_widgets_8hpp.html#a0c6f8b88bdb16ba71e3658d7013023b6a3f3ef1a5bdc0eabe42537f16d8373019", null ],
-          [ "Square", "_common_widgets_8hpp.html#a0c6f8b88bdb16ba71e3658d7013023b6a6b11ba141af6b59d07144c6161bae1c1", null ],
-          [ "SampleAndHold", "_common_widgets_8hpp.html#a0c6f8b88bdb16ba71e3658d7013023b6a94c64b136693345ec6c92a79bc67160a", null ],
-          [ "Noise1", "_common_widgets_8hpp.html#a0c6f8b88bdb16ba71e3658d7013023b6a00a297ee012859945bac7cf9df64a171", null ],
-          [ "Noise2", "_common_widgets_8hpp.html#a0c6f8b88bdb16ba71e3658d7013023b6af92b803214e2f1f6741e2ac52e4dae05", null ],
-          [ "Noise3", "_common_widgets_8hpp.html#a0c6f8b88bdb16ba71e3658d7013023b6a25a96c51da623014f9314ab788940766", null ]
-        ] ],
-        [ "ArpeggioChooser", "_common_widgets_8hpp.html#a345b072517e00a015697d9e1d6870b62", null ],
-        [ "DefaultSlider", "_common_widgets_8hpp.html#a0d050bcdb384f70db534f34abac6725e", null ],
-        [ "DurationChooser", "_common_widgets_8hpp.html#a578f5e9e7d8c5936d43ae7197f149221", null ],
-        [ "FreqKnob", "_common_widgets_8hpp.html#a78c4cc3bec77563b8feb856cb74e1805", null ],
-        [ "FreqSlider", "_common_widgets_8hpp.html#aa16a68508fd00bb1da719a9b11785d77", null ],
-        [ "GetLoopMode", "_common_widgets_8hpp.html#a80a577c4763c2e454bf71228257c3424", null ],
-        [ "LFOFreqKnob", "_common_widgets_8hpp.html#a2f6fe385b0ff392a8534f3604feffe3c", null ],
-        [ "LFOFreqSlider", "_common_widgets_8hpp.html#ace102fd765a09ce4f823d27c5a473736", null ],
-        [ "LoopChooser", "_common_widgets_8hpp.html#a75733c4010e5fa2763877329346575fc", null ],
-        [ "LoopPostActionChooser", "_common_widgets_8hpp.html#a04bd1c2bba60163af4f62e02f54efb75", null ],
-        [ "MidiChannel", "_common_widgets_8hpp.html#a08f140bd0c2e86e94e8cf816712b0e00", null ],
-        [ "MidiSlider", "_common_widgets_8hpp.html#a213d4806586c3e1d30959aab6da5d64f", null ],
-        [ "MidiSpinbox", "_common_widgets_8hpp.html#a271a695ff27b61fa16c0d8552f477bc1", null ],
-        [ "MusicalDurationChooser", "_common_widgets_8hpp.html#a47c2dc8994f2b747c2a15eb779a4a845", null ],
-        [ "OctaveSlider", "_common_widgets_8hpp.html#a8d57d0e55459c7fea4e49cfaa151cb3b", null ],
-        [ "QuantificationChooser", "_common_widgets_8hpp.html#a069798a65e032966155cf657e2f808d8", null ],
-        [ "TempoChooser", "_common_widgets_8hpp.html#a74db45a98d1a81b27d3affab04dc7487", null ],
-        [ "waveformMap", "_common_widgets_8hpp.html#ad179fd3983e85ea0cd4bada03fec1cbe", null ]
-      ] ],
-      [ "OutControl", "struct_control_1_1_out_control.html", "struct_control_1_1_out_control" ],
-      [ "InControl", "struct_control_1_1_in_control.html", "struct_control_1_1_in_control" ],
-      [ "FloatControl", "struct_control_1_1_float_control.html", "struct_control_1_1_float_control" ],
-      [ "FloatDisplay", "struct_control_1_1_float_display.html", "struct_control_1_1_float_display" ],
-      [ "IntSlider", "struct_control_1_1_int_slider.html", "struct_control_1_1_int_slider" ],
-      [ "IntSpinBox", "struct_control_1_1_int_spin_box.html", "struct_control_1_1_int_spin_box" ],
-      [ "Button", "struct_control_1_1_button.html", "struct_control_1_1_button" ],
-      [ "ImpulseButton", "struct_control_1_1_impulse_button.html", "struct_control_1_1_impulse_button" ],
-      [ "Toggle", "struct_control_1_1_toggle.html", "struct_control_1_1_toggle" ],
-      [ "ChooserToggle", "struct_control_1_1_chooser_toggle.html", "struct_control_1_1_chooser_toggle" ],
-      [ "LineEdit", "struct_control_1_1_line_edit.html", "struct_control_1_1_line_edit" ],
-      [ "Soundfile", "struct_control_1_1_soundfile.html", "struct_control_1_1_soundfile" ],
-      [ "ComboBox", "struct_control_1_1_combo_box.html", "struct_control_1_1_combo_box" ],
-      [ "EnumBase", "struct_control_1_1_enum_base.html", "struct_control_1_1_enum_base" ],
-      [ "Enum", "struct_control_1_1_enum.html", "struct_control_1_1_enum" ],
-      [ "UnvalidatedEnum", "struct_control_1_1_unvalidated_enum.html", "struct_control_1_1_unvalidated_enum" ],
-      [ "XYSlider", "struct_control_1_1_x_y_slider.html", "struct_control_1_1_x_y_slider" ],
-      [ "HSVSlider", "struct_control_1_1_h_s_v_slider.html", "struct_control_1_1_h_s_v_slider" ],
-      [ "setup_Impl0", "struct_control_1_1setup___impl0.html", "struct_control_1_1setup___impl0" ],
-      [ "setup_Impl1", "struct_control_1_1setup___impl1.html", "struct_control_1_1setup___impl1" ],
-      [ "setup_Impl1_Out", "struct_control_1_1setup___impl1___out.html", "struct_control_1_1setup___impl1___out" ],
-      [ "ExecutorGuiUpdate", "struct_control_1_1_executor_gui_update.html", "struct_control_1_1_executor_gui_update" ],
-      [ "Executor", "class_control_1_1_executor.html", "class_control_1_1_executor" ],
-      [ "HasCustomUI", "struct_control_1_1_has_custom_u_i.html", null ],
-      [ "HasCustomUI< T, std::void_t< decltype(&T::item)> >", "struct_control_1_1_has_custom_u_i_3_01_t_00_01std_1_1void__t_3_01decltype_07_6_t_1_1item_08_4_01_4.html", null ],
-      [ "HasCustomLayer", "struct_control_1_1_has_custom_layer.html", null ],
-      [ "HasCustomLayer< T, std::void_t< typename T::Layer > >", "struct_control_1_1_has_custom_layer_3_01_t_00_01std_1_1void__t_3_01typename_01_t_1_1_layer_01_4_01_4.html", null ],
-      [ "CustomUISetup", "struct_control_1_1_custom_u_i_setup.html", "struct_control_1_1_custom_u_i_setup" ],
-      [ "is_control", "struct_control_1_1is__control.html", null ],
-      [ "ControlProcess", "class_control_1_1_control_process.html", "class_control_1_1_control_process" ],
-      [ "PortSetup", "struct_control_1_1_port_setup.html", null ],
-      [ "Meta_base", "struct_control_1_1_meta__base.html", null ],
-      [ "ExecutorFactory", "struct_control_1_1_executor_factory.html", null ],
-      [ "Note", "struct_control_1_1_note.html", "struct_control_1_1_note" ],
-      [ "score_generic_plugin", "struct_control_1_1score__generic__plugin.html", "struct_control_1_1score__generic__plugin" ],
-      [ "HasCustomUI< Nodes::MathAudioFilter::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_audio_filter_1_1_node_01_4.html", null ],
-      [ "HasCustomUI< Nodes::MathAudioGenerator::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_audio_generator_1_1_node_01_4.html", null ],
-      [ "HasCustomUI< Nodes::MathMapping::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_mapping_1_1_node_01_4.html", null ],
-      [ "HasCustomUI< Nodes::MicroMapping::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_micro_mapping_1_1_node_01_4.html", null ],
-      [ "HasCustomUI< Nodes::ArrayGenerator::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_array_generator_1_1_node_01_4.html", null ],
-      [ "HasCustomUI< Nodes::ArrayMapping::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_array_mapping_1_1_node_01_4.html", null ],
-      [ "HasCustomUI< Nodes::MathGenerator::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_generator_1_1_node_01_4.html", null ],
-      [ "Bargraph", "score-lib-process_2_control_2_widgets_8hpp.html#a9682dcc8dd50d285284bdb6f6385ef45", null ],
-      [ "FloatKnob", "score-lib-process_2_control_2_widgets_8hpp.html#a7a8f46e8e6dadc779dacb4ff1382f2ab", null ],
-      [ "FloatSlider", "score-lib-process_2_control_2_widgets_8hpp.html#a61185675e896350994d3af6c49efa215", null ],
-      [ "LayerFactory", "_simple_api_8hpp.html#ae5043094a832f006f402c9fc0ba24df8", null ],
-      [ "LogFloatKnob", "score-lib-process_2_control_2_widgets_8hpp.html#a38386323da3478cca650824bf3de9ad4", null ],
-      [ "LogFloatSlider", "score-lib-process_2_control_2_widgets_8hpp.html#a63f7119d056f70d47258384a899d22fb", null ],
-      [ "ProcessFactory", "_simple_api_8hpp.html#a095815f322311d91c6d4f5f1eea17911", null ],
-      [ "instantiate_fx", "_simple_api_8hpp.html#a4f9f1a5b327acaef3639c5eaad753716", null ],
-      [ "make_enum", "score-lib-process_2_control_2_widgets_8hpp.html#aa23ce74ad622ae88f07d0a3f39adcd1e", null ],
-      [ "make_enum", "score-lib-process_2_control_2_widgets_8hpp.html#aba4ddde4af46630b5b252fbbfd65d7e1", null ],
-      [ "make_unvalidated_enum", "score-lib-process_2_control_2_widgets_8hpp.html#a6fe63ef334dea6273632d0ba79db5507", null ],
-      [ "setup_node", "score-plugin-engine_2_engine_2_node_2_executor_8hpp.html#a1f1db3ba6208b1e6467b1003f90db5ac", null ],
-      [ "HasItem", "_simple_api_8hpp.html#ae0d71af9013af2ce15e62519587cfeba", null ]
-    ] ],
     [ "ControlSurface", null, [
       [ "AddControlMacro", "class_control_surface_1_1_add_control_macro.html", null ],
       [ "AddControl", "class_control_surface_1_1_add_control.html", "class_control_surface_1_1_add_control" ],
@@ -611,6 +518,11 @@ var namespaces_dup =
       [ "on_uiMessage", "score-plugin-lv2_2_l_v2_2_application_plugin_8cpp.html#a76d2ef4dce64a7fef334a3d55ec4cb70", null ],
       [ "port_index", "score-plugin-lv2_2_l_v2_2_application_plugin_8cpp.html#aff1dd18a6a0a6e955b31e0d13e08d049", null ]
     ] ],
+    [ "magic_enum", null, [
+      [ "customize", null, [
+        [ "enum_range< Nodes::MidiUtil::scale >", "structmagic__enum_1_1customize_1_1enum__range_3_01_nodes_1_1_midi_util_1_1scale_01_4.html", null ]
+      ] ]
+    ] ],
     [ "Mapping", null, [
       [ "RecreateOnPlay", null, [
         [ "Component", "class_mapping_1_1_recreate_on_play_1_1_component.html", "class_mapping_1_1_recreate_on_play_1_1_component" ],
@@ -798,6 +710,7 @@ var namespaces_dup =
     ] ],
     [ "Nodes", null, [
       [ "Arpeggiator", null, [
+        [ "Arpeggios", "struct_nodes_1_1_arpeggiator_1_1_arpeggios.html", "struct_nodes_1_1_arpeggiator_1_1_arpeggios" ],
         [ "Node", "struct_nodes_1_1_arpeggiator_1_1_node.html", "struct_nodes_1_1_arpeggiator_1_1_node" ]
       ] ],
       [ "ArrayGenerator", null, [
@@ -817,9 +730,6 @@ var namespaces_dup =
       ] ],
       [ "Debug", null, [
         [ "Node", "struct_nodes_1_1_debug_1_1_node.html", "struct_nodes_1_1_debug_1_1_node" ]
-      ] ],
-      [ "Direction", null, [
-        [ "Node", "struct_nodes_1_1_direction_1_1_node.html", "struct_nodes_1_1_direction_1_1_node" ]
       ] ],
       [ "EmptyAudioMapping", null, [
         [ "Node", "struct_nodes_1_1_empty_audio_mapping_1_1_node.html", "struct_nodes_1_1_empty_audio_mapping_1_1_node" ]
@@ -844,9 +754,6 @@ var namespaces_dup =
       ] ],
       [ "FactorOracle2MIDI", null, [
         [ "Node", "struct_nodes_1_1_factor_oracle2_m_i_d_i_1_1_node.html", "struct_nodes_1_1_factor_oracle2_m_i_d_i_1_1_node" ]
-      ] ],
-      [ "Gain", null, [
-        [ "Node", "struct_nodes_1_1_gain_1_1_node.html", "struct_nodes_1_1_gain_1_1_node" ]
       ] ],
       [ "LFO", null, [
         [ "v1", null, [
@@ -880,7 +787,6 @@ var namespaces_dup =
       ] ],
       [ "MidiUtil", null, [
         [ "Node", "struct_nodes_1_1_midi_util_1_1_node.html", "struct_nodes_1_1_midi_util_1_1_node" ],
-        [ "Note", "_midi_util_8hpp.html#ab6d89e1a9e7baad10919cc9285d2db18", null ],
         [ "scale_array", "_midi_util_8hpp.html#a0cb0782477744326aca988c61a6c5a03", null ],
         [ "scales_array", "_midi_util_8hpp.html#a9021369908844c22dbcb1b68923da92a", null ],
         [ "scale", "_midi_util_8hpp.html#a8d82e70b95f8c8740267960574deb23b", [
@@ -915,23 +821,38 @@ var namespaces_dup =
         [ "Node", "struct_nodes_1_1_pulse_to_note_1_1_node.html", "struct_nodes_1_1_pulse_to_note_1_1_node" ]
       ] ],
       [ "Quantifier", null, [
-        [ "Node", "struct_nodes_1_1_quantifier_1_1_node.html", "struct_nodes_1_1_quantifier_1_1_node" ],
-        [ "Note", "_quantifier_8hpp.html#a6611256190d47899de69bb6265565534", null ]
+        [ "Node", "struct_nodes_1_1_quantifier_1_1_node.html", "struct_nodes_1_1_quantifier_1_1_node" ]
       ] ],
       [ "RateLimiter", null, [
         [ "Node", "struct_nodes_1_1_rate_limiter_1_1_node.html", "struct_nodes_1_1_rate_limiter_1_1_node" ]
       ] ],
-      [ "ValueFilter", null, [
+      [ "Smooth", null, [
         [ "v1", null, [
-          [ "Node", "struct_nodes_1_1_value_filter_1_1v1_1_1_node.html", "struct_nodes_1_1_value_filter_1_1v1_1_1_node" ]
+          [ "Node", "struct_nodes_1_1_smooth_1_1v1_1_1_node.html", "struct_nodes_1_1_smooth_1_1v1_1_1_node" ]
         ] ],
         [ "v2", null, [
-          [ "Node", "struct_nodes_1_1_value_filter_1_1v2_1_1_node.html", "struct_nodes_1_1_value_filter_1_1v2_1_1_node" ]
-        ] ],
-        [ "NoiseFilter", "struct_nodes_1_1_value_filter_1_1_noise_filter.html", "struct_nodes_1_1_value_filter_1_1_noise_filter" ],
-        [ "NoiseState", "class_nodes_1_1_value_filter_1_1_noise_state.html", "class_nodes_1_1_value_filter_1_1_noise_state" ]
+          [ "Node", "struct_nodes_1_1_smooth_1_1v2_1_1_node.html", "struct_nodes_1_1_smooth_1_1v2_1_1_node" ]
+        ] ]
       ] ],
-      [ "GenericMathMapping", "struct_nodes_1_1_generic_math_mapping.html", null ]
+      [ "Direction", "struct_nodes_1_1_direction.html", "struct_nodes_1_1_direction" ],
+      [ "GenericMathMapping", "struct_nodes_1_1_generic_math_mapping.html", null ],
+      [ "NoiseFilter", "struct_nodes_1_1_noise_filter.html", "struct_nodes_1_1_noise_filter" ],
+      [ "NoiseState", "class_nodes_1_1_noise_state.html", "class_nodes_1_1_noise_state" ],
+      [ "ossia_port", "struct_nodes_1_1ossia__port.html", "struct_nodes_1_1ossia__port" ],
+      [ "combobox_from_array", "struct_nodes_1_1combobox__from__array.html", "struct_nodes_1_1combobox__from__array" ],
+      [ "default_slider", "_types_8hpp.html#a04a65897fe40bff0d6afe257325a4d98", null ],
+      [ "duration_selector", "_types_8hpp.html#a60cc664b5ff661512dac9f4257fa8637", null ],
+      [ "midi_channel", "_types_8hpp.html#a5ff09c1b255efc2cc6bf45188aa1413b", null ],
+      [ "midi_out", "_types_8hpp.html#ae3722f064b4c4a0b52b713a557a75671", null ],
+      [ "midi_slider", "_types_8hpp.html#a675f51ca87480d43ca7ac7b41afc15f4", null ],
+      [ "midi_spinbox", "_types_8hpp.html#a05b2d8d529649ada0811bbce3935e061", null ],
+      [ "multichannel_output_type", "_types_8hpp.html#a1e989d121cefbca595df33aa6e6e499a", null ],
+      [ "multichannel_output_vector", "_types_8hpp.html#a6c43816ce11be4f94d64835da463d358", null ],
+      [ "musical_duration_selector", "_types_8hpp.html#aa9350fcbc2732c59adbda175163616d7", null ],
+      [ "octave_slider", "_types_8hpp.html#aeb19e4f040ad9143a430031d8d975410", null ],
+      [ "quant_selector", "_types_8hpp.html#ae71ebd57a029b86b7ff58b9d46d3a078", null ],
+      [ "value_out", "_types_8hpp.html#a209796d9a57b410d6b6826f8d4bba734", null ],
+      [ "value_output_callback", "_types_8hpp.html#ad4c6dcfae6afc013d6d5b9d5d5b425f6", null ]
     ] ],
     [ "oscr", "namespaceoscr.html", "namespaceoscr" ],
     [ "ossia", null, [
@@ -1312,12 +1233,13 @@ var namespaces_dup =
       [ "DirectTransport", "class_transport_1_1_direct_transport.html", "class_transport_1_1_direct_transport" ]
     ] ],
     [ "Ui", null, [
-      [ "Display", null, [
-        [ "Node", "struct_ui_1_1_display_1_1_node.html", "struct_ui_1_1_display_1_1_node" ]
-      ] ],
       [ "SignalDisplay", null, [
         [ "Node", "struct_ui_1_1_signal_display_1_1_node.html", "struct_ui_1_1_signal_display_1_1_node" ]
-      ] ]
+      ] ],
+      [ "ValueDisplay", null, [
+        [ "Node", "struct_ui_1_1_value_display_1_1_node.html", "struct_ui_1_1_value_display_1_1_node" ]
+      ] ],
+      [ "value_out", "_signal_display_8hpp.html#a5904654632c2b1f560f35f27e2f562af", null ]
     ] ],
     [ "Video", null, [
       [ "ExternalInput", "class_video_1_1_external_input.html", "class_video_1_1_external_input" ],

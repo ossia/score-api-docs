@@ -2,6 +2,7 @@ var classossia_1_1nodes_1_1audio__metronome =
 [
     [ "played_sound", "structossia_1_1nodes_1_1audio__metronome_1_1played__sound.html", "structossia_1_1nodes_1_1audio__metronome_1_1played__sound" ],
     [ "audio_metronome", "classossia_1_1nodes_1_1audio__metronome.html#a8ef9bd3360155c946639f17f02a3b99e", null ],
+    [ "label", "classossia_1_1nodes_1_1audio__metronome.html#a1acb18b12c58e794891f4702f18e7892", null ],
     [ "run", "classossia_1_1nodes_1_1audio__metronome.html#a0d210f3fbbc09ca22400892ffbe89669", null ],
     [ "audio_out", "classossia_1_1nodes_1_1audio__metronome.html#a8f2a64f5a617713ec7c2dc5e0f88d1f6", null ],
     [ "bang_out", "classossia_1_1nodes_1_1audio__metronome.html#ab21d78f8877b7b31272b7ab833a84023", null ],

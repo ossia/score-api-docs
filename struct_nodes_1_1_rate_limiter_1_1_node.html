@@ -95,38 +95,74 @@ $(document).ready(function(){initNavTree('struct_nodes_1_1_rate_limiter_1_1_node
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="struct_nodes_1_1_rate_limiter_1_1_node-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Nodes::RateLimiter::Node Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_rate_limiter_1_1_node_1_1_metadata.html">Metadata</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_rate_limiter_1_1_node_1_1_rate_limiter.html">RateLimiter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nodes_1_1_rate_limiter_1_1_node_1_1_state.html">State</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a7f4b4cc558b3ac238f92efea34d89d94"><td class="memItemLeft" align="right" valign="top"><a id="a7f4b4cc558b3ac238f92efea34d89d94"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>control_policy</b> = ossia::safe_nodes::last_tick</td></tr>
-<tr class="separator:a7f4b4cc558b3ac238f92efea34d89d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae16d9090c880bcc0cf1c79e9f899b92f"><td class="memItemLeft" align="right" valign="top"><a id="ae16d9090c880bcc0cf1c79e9f899b92f"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> = halp::tick_flicks</td></tr>
+<tr class="separator:ae16d9090c880bcc0cf1c79e9f899b92f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a4e87b05e1a0f09735287e4a859bf1d01"><td class="memItemLeft" align="right" valign="top"><a id="a4e87b05e1a0f09735287e4a859bf1d01"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (const ossia::value_port &amp;in, float quantif, uint64_t ms, ossia::value_port &amp;out, ossia::token_request t, ossia::exec_state_facade st, <a class="el" href="class_nodes_1_1_rate_limiter_1_1_node_1_1_state.html">State</a> &amp;self)</td></tr>
-<tr class="separator:a4e87b05e1a0f09735287e4a859bf1d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9088784912eeb54445df57537bdcaf02"><td class="memItemLeft" align="right" valign="top"><a id="a9088784912eeb54445df57537bdcaf02"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>item</b> (Process::ComboBox &amp;quantif, Process::IntSlider &amp;ms, const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;process, QGraphicsItem &amp;parent, QObject &amp;context, const <a class="el" href="struct_process_1_1_context.html">Process::Context</a> &amp;doc)</td></tr>
-<tr class="separator:a9088784912eeb54445df57537bdcaf02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a129182afdb11d2d6eb79a9c6afd9d7ae"><td class="memItemLeft" align="right" valign="top"><a id="a129182afdb11d2d6eb79a9c6afd9d7ae"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (name, &quot;Rate Limiter&quot;) halp_meta(c_name</td></tr>
+<tr class="separator:a129182afdb11d2d6eb79a9c6afd9d7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b1e3d301501e8a36382bdd05c3725af"><td class="memItemLeft" align="right" valign="top"><a id="a0b1e3d301501e8a36382bdd05c3725af"></a>
+RateLimiter&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (category, &quot;Control/Mappings&quot;) halp_meta(manual_url</td></tr>
+<tr class="separator:a0b1e3d301501e8a36382bdd05c3725af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75a165b072d9ed4d00937a6dc66d105a"><td class="memItemLeft" align="right" valign="top"><a id="a75a165b072d9ed4d00937a6dc66d105a"></a>
+RateLimiter ossia score&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (description, &quot;Limit and quantize the rate of a value stream&quot;) halp_meta(uuid</td></tr>
+<tr class="separator:a75a165b072d9ed4d00937a6dc66d105a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14aa5d724470b09a4aed416ad6d22c6c"><td class="memItemLeft" align="right" valign="top"><a id="a14aa5d724470b09a4aed416ad6d22c6c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>should_output</b> (float quantif, int64_t ms, tick t)</td></tr>
+<tr class="separator:a14aa5d724470b09a4aed416ad6d22c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecb85e092d78edf44d74579cc4192d93"><td class="memItemLeft" align="right" valign="top"><a id="aecb85e092d78edf44d74579cc4192d93"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const tick &amp;t)</td></tr>
+<tr class="separator:aecb85e092d78edf44d74579cc4192d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a9deb47c04fa2a02e4c283560e2fcbaf6"><td class="memItemLeft" align="right" valign="top"><a id="a9deb47c04fa2a02e4c283560e2fcbaf6"></a>
+RateLimiter&#160;</td><td class="memItemRight" valign="bottom"><b>https</b>: halp_meta(author</td></tr>
+<tr class="separator:a9deb47c04fa2a02e4c283560e2fcbaf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ee4ec94d2d813c1d5245ac061702ac9"><td class="memItemLeft" ><a id="a0ee4ec94d2d813c1d5245ac061702ac9"></a>
+struct {</td></tr>
+<tr class="memitem:acf1a410a7cbec247351f1142789c5f0d"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="struct_nodes_1_1ossia__port.html">ossia_port</a>&lt;&quot;in&quot;, ossia::value_port &gt;&#160;&#160;&#160;<b>port</b> {}</td></tr>
+<tr class="separator:acf1a410a7cbec247351f1142789c5f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf2b70a134949908e0275b60b277f063"><td class="memItemLeft" >
+&#160;&#160;&#160;halp::val_port&lt;&quot;Quantification&quot;, int &gt;&#160;&#160;&#160;<b>quantification</b></td></tr>
+<tr class="separator:aaf2b70a134949908e0275b60b277f063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac03222c07606a059e6e9fc267c83242d"><td class="memItemLeft" >
+&#160;&#160;&#160;halp::hslider_i32&lt;&quot;ms.&quot;, halp::irange{0, 1000, 10}&gt;&#160;&#160;&#160;<b>ms</b></td></tr>
+<tr class="separator:ac03222c07606a059e6e9fc267c83242d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ee4ec94d2d813c1d5245ac061702ac9"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
+<tr class="separator:a0ee4ec94d2d813c1d5245ac061702ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73ab61dab13e1a6e05b8f1dc4705d444"><td class="memItemLeft" ><a id="a73ab61dab13e1a6e05b8f1dc4705d444"></a>
+struct {</td></tr>
+<tr class="memitem:a78cbb560b3df6ca9b5422cbd9206d8d0"><td class="memItemLeft" >
+&#160;&#160;&#160;halp::timed_callback&lt;&quot;out&quot;, ossia::value &gt;&#160;&#160;&#160;<b>out</b></td></tr>
+<tr class="separator:a78cbb560b3df6ca9b5422cbd9206d8d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73ab61dab13e1a6e05b8f1dc4705d444"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b></td></tr>
+<tr class="separator:a73ab61dab13e1a6e05b8f1dc4705d444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af69113c3d78a03df07148ff520b173ea"><td class="memItemLeft" align="right" valign="top"><a id="af69113c3d78a03df07148ff520b173ea"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>last_time</b> {}</td></tr>
+<tr class="separator:af69113c3d78a03df07148ff520b173ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:afc394e61901978124b90fc778f8c6580"><td class="memItemLeft" align="right" valign="top"><a id="afc394e61901978124b90fc778f8c6580"></a>
+static constexpr const int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>flicks_per_ms</b> = 705'600</td></tr>
+<tr class="separator:afc394e61901978124b90fc778f8c6580"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_rate_limiter_8hpp_source.html">RateLimiter.hpp</a></li>

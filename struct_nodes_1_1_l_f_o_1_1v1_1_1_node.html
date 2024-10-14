@@ -97,7 +97,8 @@ $(document).ready(function(){initNavTree('struct_nodes_1_1_l_f_o_1_1v1_1_1_node.
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_nodes_1_1_l_f_o_1_1v1_1_1_node-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Nodes::LFO::v1::Node Struct Reference</div>  </div>
@@ -106,25 +107,57 @@ $(document).ready(function(){initNavTree('struct_nodes_1_1_l_f_o_1_1v1_1_1_node.
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_l_f_o_1_1v1_1_1_node_1_1_metadata.html">Metadata</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_l_f_o_1_1v1_1_1_node_1_1_state.html">State</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_l_f_o_1_1v1_1_1_node_1_1_inputs.html">Inputs</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:af3db601ae0a8267a5ce614d2bd9bcd02"><td class="memItemLeft" align="right" valign="top"><a id="af3db601ae0a8267a5ce614d2bd9bcd02"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>control_policy</b> = ossia::safe_nodes::precise_tick</td></tr>
-<tr class="separator:af3db601ae0a8267a5ce614d2bd9bcd02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2093565168c5e24b5529833ecb4c315"><td class="memItemLeft" align="right" valign="top"><a id="af2093565168c5e24b5529833ecb4c315"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> = halp::tick_flicks</td></tr>
+<tr class="separator:af2093565168c5e24b5529833ecb4c315"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aa8b329ca5e21399c13f88a442ba1a774"><td class="memItemLeft" align="right" valign="top"><a id="aa8b329ca5e21399c13f88a442ba1a774"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (float freq, float ampl, float ampl_fine, float offset, float offset_fine, float jitter, float custom_phase, const std::string &amp;type, float quantif, ossia::value_port &amp;out, ossia::token_request tk, ossia::exec_state_facade st, <a class="el" href="struct_nodes_1_1_l_f_o_1_1v1_1_1_node_1_1_state.html">State</a> &amp;s)</td></tr>
-<tr class="separator:aa8b329ca5e21399c13f88a442ba1a774"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af319363fc1ede0799e55dfb94ff26dcb"><td class="memItemLeft" align="right" valign="top"><a id="af319363fc1ede0799e55dfb94ff26dcb"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>item</b> (Process::LogFloatSlider &amp;freq, Process::FloatKnob &amp;ampl, Process::FloatKnob &amp;ampl_fine, Process::FloatKnob &amp;offset, Process::FloatKnob &amp;offset_fine, Process::FloatKnob &amp;jitter, Process::FloatKnob &amp;phase, Process::Enum &amp;type, Process::ComboBox &amp;quantif, const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;process, QGraphicsItem &amp;parent, QObject &amp;context, const <a class="el" href="struct_process_1_1_context.html">Process::Context</a> &amp;doc)</td></tr>
-<tr class="separator:af319363fc1ede0799e55dfb94ff26dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4b02b7724a46f3e9b695c75555de5211"><td class="memItemLeft" align="right" valign="top"><a id="a4b02b7724a46f3e9b695c75555de5211"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (name, &quot;LFO (old)&quot;) halp_meta(c_name</td></tr>
+<tr class="separator:a4b02b7724a46f3e9b695c75555de5211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ba5c0fa48bfbb3770aae62d395be3d"><td class="memItemLeft" align="right" valign="top"><a id="ac8ba5c0fa48bfbb3770aae62d395be3d"></a>
+LFO&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (category, &quot;Control/Generators&quot;) halp_meta(author</td></tr>
+<tr class="separator:ac8ba5c0fa48bfbb3770aae62d395be3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53b71f9fa6f32bd2f8ef7763f6ea0095"><td class="memItemLeft" align="right" valign="top"><a id="a53b71f9fa6f32bd2f8ef7763f6ea0095"></a>
+LFO ossia score&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (manual_url, &quot;https://ossia.io/score-docs/processes/lfo.html#lfo&quot;) halp_meta(description</td></tr>
+<tr class="separator:a53b71f9fa6f32bd2f8ef7763f6ea0095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a896d0526e079c50c1b659fa3997ecb3d"><td class="memItemLeft" align="right" valign="top"><a id="a896d0526e079c50c1b659fa3997ecb3d"></a>
+LFO ossia score Low frequency oscillator&#160;</td><td class="memItemRight" valign="bottom"><b>halp_flag</b> (deprecated)</td></tr>
+<tr class="separator:a896d0526e079c50c1b659fa3997ecb3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1f46b2032c6bc7712fa8ed660a11301"><td class="memItemLeft" align="right" valign="top"><a id="af1f46b2032c6bc7712fa8ed660a11301"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (recommended_height, 130.) halp_meta(uuid</td></tr>
+<tr class="separator:af1f46b2032c6bc7712fa8ed660a11301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0366474d9bfaea09a4a7b3f8d139e856"><td class="memItemLeft" align="right" valign="top"><a id="a0366474d9bfaea09a4a7b3f8d139e856"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const halp::tick_flicks &amp;tk)</td></tr>
+<tr class="separator:a0366474d9bfaea09a4a7b3f8d139e856"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a8f66b47a9a5b55bc37496ff62b29ea54"><td class="memItemLeft" align="right" valign="top"><a id="a8f66b47a9a5b55bc37496ff62b29ea54"></a>
+f588&#160;</td><td class="memItemRight" valign="bottom"><b>f97701edd0d8</b></td></tr>
+<tr class="separator:a8f66b47a9a5b55bc37496ff62b29ea54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a431f5b0c261fd0646c72d2dba0596aa8"><td class="memItemLeft" align="right" valign="top"><a id="a431f5b0c261fd0646c72d2dba0596aa8"></a>
+struct <a class="el" href="struct_nodes_1_1_l_f_o_1_1v1_1_1_node_1_1_inputs.html">Nodes::LFO::v1::Node::Inputs</a>&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
+<tr class="separator:a431f5b0c261fd0646c72d2dba0596aa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cb66b7dc55bbdd6152e13eefcf22222"><td class="memItemLeft" ><a id="a6cb66b7dc55bbdd6152e13eefcf22222"></a>
+struct {</td></tr>
+<tr class="memitem:ae15497dc976694ee1c599ba8b0562efd"><td class="memItemLeft" >
+&#160;&#160;&#160;halp::val_port&lt;&quot;Out&quot;, std::optional&lt; float &gt; &gt;&#160;&#160;&#160;<b>out</b></td></tr>
+<tr class="separator:ae15497dc976694ee1c599ba8b0562efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cb66b7dc55bbdd6152e13eefcf22222"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b></td></tr>
+<tr class="separator:a6cb66b7dc55bbdd6152e13eefcf22222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1d3feda01e5c1e62163802a5897a202"><td class="memItemLeft" align="right" valign="top"><a id="ac1d3feda01e5c1e62163802a5897a202"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>phase</b> {}</td></tr>
+<tr class="separator:ac1d3feda01e5c1e62163802a5897a202"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64e8723699975260d5f89fc383d6db44"><td class="memItemLeft" align="right" valign="top"><a id="a64e8723699975260d5f89fc383d6db44"></a>
+rnd::pcg&#160;</td><td class="memItemRight" valign="bottom"><b>rd</b></td></tr>
+<tr class="separator:a64e8723699975260d5f89fc383d6db44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_l_f_o_8hpp_source.html">LFO.hpp</a></li>

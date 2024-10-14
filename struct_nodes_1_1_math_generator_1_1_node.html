@@ -97,7 +97,8 @@ $(document).ready(function(){initNavTree('struct_nodes_1_1_math_generator_1_1_no
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_nodes_1_1_math_generator_1_1_node-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Nodes::MathGenerator::Node Struct Reference</div>  </div>
@@ -106,26 +107,54 @@ $(document).ready(function(){initNavTree('struct_nodes_1_1_math_generator_1_1_no
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_math_generator_1_1_node_1_1_metadata.html">Metadata</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_math_generator_1_1_node_1_1_state.html">State</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a1ff66824002fce7562ff7d8b9f562610"><td class="memItemLeft" align="right" valign="top"><a id="a1ff66824002fce7562ff7d8b9f562610"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>control_policy</b> = ossia::safe_nodes::last_tick</td></tr>
-<tr class="separator:a1ff66824002fce7562ff7d8b9f562610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63876e84b0b7f29d2c59f7475dbff367"><td class="memItemLeft" align="right" valign="top"><a id="a63876e84b0b7f29d2c59f7475dbff367"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> = halp::tick_flicks</td></tr>
+<tr class="separator:a63876e84b0b7f29d2c59f7475dbff367"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a333e015d03989e3e136b28857e53f0d6"><td class="memItemLeft" align="right" valign="top"><a id="a333e015d03989e3e136b28857e53f0d6"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (const std::string &amp;expr, float a, float b, float c, ossia::value_port &amp;output, ossia::token_request tk, ossia::exec_state_facade st, <a class="el" href="struct_nodes_1_1_math_generator_1_1_node_1_1_state.html">State</a> &amp;self)</td></tr>
-<tr class="separator:a333e015d03989e3e136b28857e53f0d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae17163353f4830df511636d82fdef8b9"><td class="memTemplParams" colspan="2"><a id="ae17163353f4830df511636d82fdef8b9"></a>
-template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:ae17163353f4830df511636d82fdef8b9"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>item</b> (Args &amp;&amp;... args)</td></tr>
-<tr class="separator:ae17163353f4830df511636d82fdef8b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ae858db0b1d081d46acddd0b9a67bb186"><td class="memItemLeft" align="right" valign="top"><a id="ae858db0b1d081d46acddd0b9a67bb186"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (name, &quot;Expression Value Generator&quot;) halp_meta(c_name</td></tr>
+<tr class="separator:ae858db0b1d081d46acddd0b9a67bb186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f64be5b977a2a2c34c8df739a7e7952"><td class="memItemLeft" align="right" valign="top"><a id="a9f64be5b977a2a2c34c8df739a7e7952"></a>
+MathGenerator&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (category, &quot;Control/Generators&quot;) halp_meta(manual_url</td></tr>
+<tr class="separator:a9f64be5b977a2a2c34c8df739a7e7952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae646a5df5a42d07119f72481c828205a"><td class="memItemLeft" align="right" valign="top"><a id="ae646a5df5a42d07119f72481c828205a"></a>
+MathGenerator ossia&#160;</td><td class="memItemRight" valign="bottom"><b>ExprTK</b> (Arash Partow)&quot;) static const constexpr auto description </td></tr>
+<tr class="separator:ae646a5df5a42d07119f72481c828205a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34afb18d194996b25d7c9e25b1b4401b"><td class="memItemLeft" align="right" valign="top"><a id="a34afb18d194996b25d7c9e25b1b4401b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (uuid, &quot;d757bd0d-c0a1-4aec-bf72-945b722ab85b&quot;) struct</td></tr>
+<tr class="separator:a34afb18d194996b25d7c9e25b1b4401b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7c189a6c0c85e1aba7a7a9ecac22b26"><td class="memItemLeft" align="right" valign="top"><a id="ae7c189a6c0c85e1aba7a7a9ecac22b26"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const tick &amp;tk)</td></tr>
+<tr class="separator:ae7c189a6c0c85e1aba7a7a9ecac22b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a63f7108a2f0bf1425b5e25de7a377b19"><td class="memItemLeft" align="right" valign="top"><a id="a63f7108a2f0bf1425b5e25de7a377b19"></a>
+MathGenerator&#160;</td><td class="memItemRight" valign="bottom"><b>https</b>: halp_meta(author</td></tr>
+<tr class="separator:a63f7108a2f0bf1425b5e25de7a377b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a289eb611459348cf4762d58a9454a77c"><td class="memItemLeft" align="right" valign="top"><a id="a289eb611459348cf4762d58a9454a77c"></a>
+MathGenerator ossia&#160;</td><td class="memItemRight" valign="bottom"><b>score</b></td></tr>
+<tr class="separator:a289eb611459348cf4762d58a9454a77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b9e7283921a7c1bc779437c8fa56ca7"><td class="memItemLeft" align="right" valign="top"><a id="a8b9e7283921a7c1bc779437c8fa56ca7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
+<tr class="separator:a8b9e7283921a7c1bc779437c8fa56ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90c01ee90022d7051e053b5d8a9359f3"><td class="memItemLeft" ><a id="a90c01ee90022d7051e053b5d8a9359f3"></a>
+struct {</td></tr>
+<tr class="memitem:a28bfe755cfcedf43cca45c17c6ef4e35"><td class="memItemLeft" >
+&#160;&#160;&#160;value_out&#160;&#160;&#160;<b>port</b> {}</td></tr>
+<tr class="separator:a28bfe755cfcedf43cca45c17c6ef4e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90c01ee90022d7051e053b5d8a9359f3"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b></td></tr>
+<tr class="separator:a90c01ee90022d7051e053b5d8a9359f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefb1f786c157b6a34357d8f30d722d16"><td class="memItemLeft" align="right" valign="top"><a id="aefb1f786c157b6a34357d8f30d722d16"></a>
+struct <a class="el" href="struct_nodes_1_1_math_generator_1_1_node_1_1_state.html">Nodes::MathGenerator::Node::State</a>&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
+<tr class="separator:aefb1f786c157b6a34357d8f30d722d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_math_generator_8hpp_source.html">MathGenerator.hpp</a></li>

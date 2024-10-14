@@ -8,7 +8,7 @@ var structoscr_1_1_layout_builder =
     [ "createWidget", "structoscr_1_1_layout_builder.html#ad0904fecbc4239518e234389b8e219f2", null ],
     [ "requires", "structoscr_1_1_layout_builder.html#ad93ff49b118f5af2cf55eb2dff352914", null ],
     [ "setupControl", "structoscr_1_1_layout_builder.html#a4b3df3d8b675ac6174b095e4f0a3d9b4", null ],
-    [ "setupControl", "structoscr_1_1_layout_builder.html#aa67636a3b059e96aeb20f170dbdfc384", null ],
+    [ "setupControl", "structoscr_1_1_layout_builder.html#a7525d48abeda2a75a3652299f93bba84", null ],
     [ "subLayout", "structoscr_1_1_layout_builder.html#a327a621f23d9b4a4ee57b49ccf6da22b", null ],
     [ "walkLayout", "structoscr_1_1_layout_builder.html#a2b113133e6d4a7c19f3493c9010f8712", null ],
     [ "recursive_members", "structoscr_1_1_layout_builder.html#a45a0c7e7548aaa84b35f3a2ea063a18b", null ],

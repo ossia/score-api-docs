@@ -93,50 +93,6 @@ var annotated_dup =
         ] ]
       ] ]
     ] ],
-    [ "Control", null, [
-      [ "OutControl", "struct_control_1_1_out_control.html", "struct_control_1_1_out_control" ],
-      [ "InControl", "struct_control_1_1_in_control.html", "struct_control_1_1_in_control" ],
-      [ "FloatControl", "struct_control_1_1_float_control.html", "struct_control_1_1_float_control" ],
-      [ "FloatDisplay", "struct_control_1_1_float_display.html", "struct_control_1_1_float_display" ],
-      [ "IntSlider", "struct_control_1_1_int_slider.html", "struct_control_1_1_int_slider" ],
-      [ "IntSpinBox", "struct_control_1_1_int_spin_box.html", "struct_control_1_1_int_spin_box" ],
-      [ "Button", "struct_control_1_1_button.html", "struct_control_1_1_button" ],
-      [ "ImpulseButton", "struct_control_1_1_impulse_button.html", "struct_control_1_1_impulse_button" ],
-      [ "Toggle", "struct_control_1_1_toggle.html", "struct_control_1_1_toggle" ],
-      [ "ChooserToggle", "struct_control_1_1_chooser_toggle.html", "struct_control_1_1_chooser_toggle" ],
-      [ "LineEdit", "struct_control_1_1_line_edit.html", "struct_control_1_1_line_edit" ],
-      [ "Soundfile", "struct_control_1_1_soundfile.html", "struct_control_1_1_soundfile" ],
-      [ "ComboBox", "struct_control_1_1_combo_box.html", "struct_control_1_1_combo_box" ],
-      [ "EnumBase", "struct_control_1_1_enum_base.html", "struct_control_1_1_enum_base" ],
-      [ "Enum", "struct_control_1_1_enum.html", "struct_control_1_1_enum" ],
-      [ "UnvalidatedEnum", "struct_control_1_1_unvalidated_enum.html", "struct_control_1_1_unvalidated_enum" ],
-      [ "XYSlider", "struct_control_1_1_x_y_slider.html", "struct_control_1_1_x_y_slider" ],
-      [ "HSVSlider", "struct_control_1_1_h_s_v_slider.html", "struct_control_1_1_h_s_v_slider" ],
-      [ "setup_Impl0", "struct_control_1_1setup___impl0.html", "struct_control_1_1setup___impl0" ],
-      [ "setup_Impl1", "struct_control_1_1setup___impl1.html", "struct_control_1_1setup___impl1" ],
-      [ "setup_Impl1_Out", "struct_control_1_1setup___impl1___out.html", "struct_control_1_1setup___impl1___out" ],
-      [ "ExecutorGuiUpdate", "struct_control_1_1_executor_gui_update.html", "struct_control_1_1_executor_gui_update" ],
-      [ "Executor", "class_control_1_1_executor.html", "class_control_1_1_executor" ],
-      [ "HasCustomUI", "struct_control_1_1_has_custom_u_i.html", null ],
-      [ "HasCustomUI< T, std::void_t< decltype(&T::item)> >", "struct_control_1_1_has_custom_u_i_3_01_t_00_01std_1_1void__t_3_01decltype_07_6_t_1_1item_08_4_01_4.html", null ],
-      [ "HasCustomLayer", "struct_control_1_1_has_custom_layer.html", null ],
-      [ "HasCustomLayer< T, std::void_t< typename T::Layer > >", "struct_control_1_1_has_custom_layer_3_01_t_00_01std_1_1void__t_3_01typename_01_t_1_1_layer_01_4_01_4.html", null ],
-      [ "CustomUISetup", "struct_control_1_1_custom_u_i_setup.html", "struct_control_1_1_custom_u_i_setup" ],
-      [ "is_control", "struct_control_1_1is__control.html", null ],
-      [ "ControlProcess", "class_control_1_1_control_process.html", "class_control_1_1_control_process" ],
-      [ "PortSetup", "struct_control_1_1_port_setup.html", null ],
-      [ "Meta_base", "struct_control_1_1_meta__base.html", null ],
-      [ "ExecutorFactory", "struct_control_1_1_executor_factory.html", null ],
-      [ "Note", "struct_control_1_1_note.html", "struct_control_1_1_note" ],
-      [ "score_generic_plugin", "struct_control_1_1score__generic__plugin.html", "struct_control_1_1score__generic__plugin" ],
-      [ "HasCustomUI< Nodes::MathAudioFilter::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_audio_filter_1_1_node_01_4.html", null ],
-      [ "HasCustomUI< Nodes::MathAudioGenerator::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_audio_generator_1_1_node_01_4.html", null ],
-      [ "HasCustomUI< Nodes::MathMapping::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_mapping_1_1_node_01_4.html", null ],
-      [ "HasCustomUI< Nodes::MicroMapping::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_micro_mapping_1_1_node_01_4.html", null ],
-      [ "HasCustomUI< Nodes::ArrayGenerator::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_array_generator_1_1_node_01_4.html", null ],
-      [ "HasCustomUI< Nodes::ArrayMapping::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_array_mapping_1_1_node_01_4.html", null ],
-      [ "HasCustomUI< Nodes::MathGenerator::Node >", "struct_control_1_1_has_custom_u_i_3_01_nodes_1_1_math_generator_1_1_node_01_4.html", null ]
-    ] ],
     [ "ControlSurface", null, [
       [ "AddControlMacro", "class_control_surface_1_1_add_control_macro.html", null ],
       [ "AddControl", "class_control_surface_1_1_add_control.html", "class_control_surface_1_1_add_control" ],
@@ -803,6 +759,11 @@ var annotated_dup =
       [ "lv2_node", "struct_l_v2_1_1lv2__node.html", "struct_l_v2_1_1lv2__node" ],
       [ "Window", "class_l_v2_1_1_window.html", "class_l_v2_1_1_window" ]
     ] ],
+    [ "magic_enum", null, [
+      [ "customize", null, [
+        [ "enum_range< Nodes::MidiUtil::scale >", "structmagic__enum_1_1customize_1_1enum__range_3_01_nodes_1_1_midi_util_1_1scale_01_4.html", null ]
+      ] ]
+    ] ],
     [ "Mapping", null, [
       [ "RecreateOnPlay", null, [
         [ "Component", "class_mapping_1_1_recreate_on_play_1_1_component.html", "class_mapping_1_1_recreate_on_play_1_1_component" ]
@@ -941,6 +902,7 @@ var annotated_dup =
     ] ],
     [ "Nodes", null, [
       [ "Arpeggiator", null, [
+        [ "Arpeggios", "struct_nodes_1_1_arpeggiator_1_1_arpeggios.html", "struct_nodes_1_1_arpeggiator_1_1_arpeggios" ],
         [ "Node", "struct_nodes_1_1_arpeggiator_1_1_node.html", "struct_nodes_1_1_arpeggiator_1_1_node" ]
       ] ],
       [ "ArrayGenerator", null, [
@@ -960,9 +922,6 @@ var annotated_dup =
       ] ],
       [ "Debug", null, [
         [ "Node", "struct_nodes_1_1_debug_1_1_node.html", "struct_nodes_1_1_debug_1_1_node" ]
-      ] ],
-      [ "Direction", null, [
-        [ "Node", "struct_nodes_1_1_direction_1_1_node.html", "struct_nodes_1_1_direction_1_1_node" ]
       ] ],
       [ "EmptyAudioMapping", null, [
         [ "Node", "struct_nodes_1_1_empty_audio_mapping_1_1_node.html", "struct_nodes_1_1_empty_audio_mapping_1_1_node" ]
@@ -987,9 +946,6 @@ var annotated_dup =
       ] ],
       [ "FactorOracle2MIDI", null, [
         [ "Node", "struct_nodes_1_1_factor_oracle2_m_i_d_i_1_1_node.html", "struct_nodes_1_1_factor_oracle2_m_i_d_i_1_1_node" ]
-      ] ],
-      [ "Gain", null, [
-        [ "Node", "struct_nodes_1_1_gain_1_1_node.html", "struct_nodes_1_1_gain_1_1_node" ]
       ] ],
       [ "LFO", null, [
         [ "v1", null, [
@@ -1036,17 +992,20 @@ var annotated_dup =
       [ "RateLimiter", null, [
         [ "Node", "struct_nodes_1_1_rate_limiter_1_1_node.html", "struct_nodes_1_1_rate_limiter_1_1_node" ]
       ] ],
-      [ "ValueFilter", null, [
+      [ "Smooth", null, [
         [ "v1", null, [
-          [ "Node", "struct_nodes_1_1_value_filter_1_1v1_1_1_node.html", "struct_nodes_1_1_value_filter_1_1v1_1_1_node" ]
+          [ "Node", "struct_nodes_1_1_smooth_1_1v1_1_1_node.html", "struct_nodes_1_1_smooth_1_1v1_1_1_node" ]
         ] ],
         [ "v2", null, [
-          [ "Node", "struct_nodes_1_1_value_filter_1_1v2_1_1_node.html", "struct_nodes_1_1_value_filter_1_1v2_1_1_node" ]
-        ] ],
-        [ "NoiseFilter", "struct_nodes_1_1_value_filter_1_1_noise_filter.html", "struct_nodes_1_1_value_filter_1_1_noise_filter" ],
-        [ "NoiseState", "class_nodes_1_1_value_filter_1_1_noise_state.html", "class_nodes_1_1_value_filter_1_1_noise_state" ]
+          [ "Node", "struct_nodes_1_1_smooth_1_1v2_1_1_node.html", "struct_nodes_1_1_smooth_1_1v2_1_1_node" ]
+        ] ]
       ] ],
-      [ "GenericMathMapping", "struct_nodes_1_1_generic_math_mapping.html", null ]
+      [ "Direction", "struct_nodes_1_1_direction.html", "struct_nodes_1_1_direction" ],
+      [ "GenericMathMapping", "struct_nodes_1_1_generic_math_mapping.html", null ],
+      [ "NoiseFilter", "struct_nodes_1_1_noise_filter.html", "struct_nodes_1_1_noise_filter" ],
+      [ "NoiseState", "class_nodes_1_1_noise_state.html", "class_nodes_1_1_noise_state" ],
+      [ "ossia_port", "struct_nodes_1_1ossia__port.html", "struct_nodes_1_1ossia__port" ],
+      [ "combobox_from_array", "struct_nodes_1_1combobox__from__array.html", "struct_nodes_1_1combobox__from__array" ]
     ] ],
     [ "oscr", "namespaceoscr.html", [
       [ "ProcessFactory", "structoscr_1_1_process_factory.html", null ],
@@ -1095,6 +1054,7 @@ var annotated_dup =
       [ "MessageBusWrapperFromUi< Info >", "structoscr_1_1_message_bus_wrapper_from_ui_3_01_info_01_4.html", "structoscr_1_1_message_bus_wrapper_from_ui_3_01_info_01_4" ],
       [ "InletInitFunc", "structoscr_1_1_inlet_init_func.html", "structoscr_1_1_inlet_init_func" ],
       [ "OutletInitFunc", "structoscr_1_1_outlet_init_func.html", "structoscr_1_1_outlet_init_func" ],
+      [ "ScoreLayerFactory", "classoscr_1_1_score_layer_factory.html", "classoscr_1_1_score_layer_factory" ],
       [ "Port", "structoscr_1_1_port.html", "structoscr_1_1_port" ],
       [ "EdgeItem", "structoscr_1_1_edge_item.html", "structoscr_1_1_edge_item" ],
       [ "NodeItem", "structoscr_1_1_node_item.html", "structoscr_1_1_node_item" ],
@@ -2359,11 +2319,11 @@ var annotated_dup =
       [ "DirectTransport", "class_transport_1_1_direct_transport.html", "class_transport_1_1_direct_transport" ]
     ] ],
     [ "Ui", null, [
-      [ "Display", null, [
-        [ "Node", "struct_ui_1_1_display_1_1_node.html", "struct_ui_1_1_display_1_1_node" ]
-      ] ],
       [ "SignalDisplay", null, [
         [ "Node", "struct_ui_1_1_signal_display_1_1_node.html", "struct_ui_1_1_signal_display_1_1_node" ]
+      ] ],
+      [ "ValueDisplay", null, [
+        [ "Node", "struct_ui_1_1_value_display_1_1_node.html", "struct_ui_1_1_value_display_1_1_node" ]
       ] ]
     ] ],
     [ "Video", null, [
@@ -2578,25 +2538,18 @@ var annotated_dup =
     [ "matches", "structmatches.html", "structmatches" ],
     [ "MergeTimeSyncsTest", "class_merge_time_syncs_test.html", null ],
     [ "Metadata", "struct_metadata.html", null ],
-    [ "Metadata< Category_k, Control::ControlProcess< Info > >", "struct_metadata_3_01_category__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html", null ],
     [ "Metadata< Category_k, FaustDSP::Fx< DSP > >", "struct_metadata_3_01_category__k_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html", null ],
     [ "Metadata< Category_k, oscr::ProcessModel< Info > >", "struct_metadata_3_01_category__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html", null ],
-    [ "Metadata< ConcreteKey_k, Control::ControlProcess< Info > >", "struct_metadata_3_01_concrete_key__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html", null ],
     [ "Metadata< ConcreteKey_k, FaustDSP::Fx< mydsp > >", "struct_metadata_3_01_concrete_key__k_00_01_faust_d_s_p_1_1_fx_3_01mydsp_01_4_01_4.html", null ],
     [ "Metadata< ConcreteKey_k, oscr::ProcessModel< Info > >", "struct_metadata_3_01_concrete_key__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html", null ],
-    [ "Metadata< ObjectKey_k, Control::ControlProcess< Info > >", "struct_metadata_3_01_object_key__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html", null ],
     [ "Metadata< ObjectKey_k, FaustDSP::Fx< mydsp > >", "struct_metadata_3_01_object_key__k_00_01_faust_d_s_p_1_1_fx_3_01mydsp_01_4_01_4.html", null ],
     [ "Metadata< ObjectKey_k, oscr::ProcessModel< Info > >", "struct_metadata_3_01_object_key__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html", null ],
-    [ "Metadata< PrettyName_k, Control::ControlProcess< Info > >", "struct_metadata_3_01_pretty_name__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html", null ],
     [ "Metadata< PrettyName_k, FaustDSP::Fx< mydsp > >", "struct_metadata_3_01_pretty_name__k_00_01_faust_d_s_p_1_1_fx_3_01mydsp_01_4_01_4.html", null ],
     [ "Metadata< PrettyName_k, oscr::ProcessModel< Info > >", "struct_metadata_3_01_pretty_name__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html", null ],
-    [ "Metadata< Process::Descriptor_k, Control::ControlProcess< Info > >", "struct_metadata_3_01_process_1_1_descriptor__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html", null ],
     [ "Metadata< Process::Descriptor_k, FaustDSP::Fx< DSP > >", "struct_metadata_3_01_process_1_1_descriptor__k_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html", null ],
     [ "Metadata< Process::Descriptor_k, oscr::ProcessModel< Info > >", "struct_metadata_3_01_process_1_1_descriptor__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html", null ],
-    [ "Metadata< Process::ProcessFlags_k, Control::ControlProcess< Info > >", "struct_metadata_3_01_process_1_1_process_flags__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html", null ],
     [ "Metadata< Process::ProcessFlags_k, FaustDSP::Fx< DSP > >", "struct_metadata_3_01_process_1_1_process_flags__k_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html", null ],
     [ "Metadata< Process::ProcessFlags_k, oscr::ProcessModel< Info > >", "struct_metadata_3_01_process_1_1_process_flags__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html", null ],
-    [ "Metadata< Tags_k, Control::ControlProcess< Info > >", "struct_metadata_3_01_tags__k_00_01_control_1_1_control_process_3_01_info_01_4_01_4.html", null ],
     [ "Metadata< Tags_k, FaustDSP::Fx< DSP > >", "struct_metadata_3_01_tags__k_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html", null ],
     [ "Metadata< Tags_k, oscr::ProcessModel< Info > >", "struct_metadata_3_01_tags__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html", null ],
     [ "MethodPrinter", "class_method_printer.html", "class_method_printer" ],
@@ -2727,7 +2680,6 @@ var annotated_dup =
     [ "TSerializer< DataStream, FaustDSP::Fx< DSP > >", "struct_t_serializer_3_01_data_stream_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html", "struct_t_serializer_3_01_data_stream_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4" ],
     [ "TSerializer< DataStream, Id< U > >", "struct_t_serializer_3_01_data_stream_00_01_id_3_01_u_01_4_01_4.html", null ],
     [ "TSerializer< DataStream, IdentifiedObject< T > >", "struct_t_serializer_3_01_data_stream_00_01_identified_object_3_01_t_01_4_01_4.html", null ],
-    [ "TSerializer< DataStream, Model< Info, Control::is_control > >", "struct_t_serializer_3_01_data_stream_00_01_model_3_01_info_00_01_control_1_1is__control_01_4_01_4.html", "struct_t_serializer_3_01_data_stream_00_01_model_3_01_info_00_01_control_1_1is__control_01_4_01_4" ],
     [ "TSerializer< DataStream, oscr::CustomFloatControl< Node, FieldIndex > >", "struct_t_serializer_3_01_data_stream_00_01oscr_1_1_custom_float_control_3_01_node_00_01_field_index_01_4_01_4.html", "struct_t_serializer_3_01_data_stream_00_01oscr_1_1_custom_float_control_3_01_node_00_01_field_index_01_4_01_4" ],
     [ "TSerializer< DataStream, oscr::ProcessModel< Info > >", "struct_t_serializer_3_01_data_stream_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html", "struct_t_serializer_3_01_data_stream_00_01oscr_1_1_process_model_3_01_info_01_4_01_4" ],
     [ "TSerializer< DataStream, ossia::domain_base< bool > >", "struct_t_serializer_3_01_data_stream_00_01ossia_1_1domain__base_3_01bool_01_4_01_4.html", "struct_t_serializer_3_01_data_stream_00_01ossia_1_1domain__base_3_01bool_01_4_01_4" ],
@@ -2781,7 +2733,6 @@ var annotated_dup =
     [ "TSerializer< JSONObject, Id< T > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01_id_3_01_t_01_4_01_4.html", "struct_t_serializer_3_01_j_s_o_n_object_00_01_id_3_01_t_01_4_01_4" ],
     [ "TSerializer< JSONObject, IdContainer< T, U, O > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01_id_container_3_01_t_00_01_u_00_01_o_01_4_01_4.html", null ],
     [ "TSerializer< JSONObject, IdentifiedObject< T > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01_identified_object_3_01_t_01_4_01_4.html", null ],
-    [ "TSerializer< JSONObject, Model< Info, Control::is_control > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01_model_3_01_info_00_01_control_1_1is__control_01_4_01_4.html", "struct_t_serializer_3_01_j_s_o_n_object_00_01_model_3_01_info_00_01_control_1_1is__control_01_4_01_4" ],
     [ "TSerializer< JSONObject, oscr::CustomFloatControl< Node, FieldIndex > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01oscr_1_1_custom_float_control_3_01_node_00_01_field_index_01_4_01_4.html", "struct_t_serializer_3_01_j_s_o_n_object_00_01oscr_1_1_custom_float_control_3_01_node_00_01_field_index_01_4_01_4" ],
     [ "TSerializer< JSONObject, oscr::ProcessModel< Info > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html", "struct_t_serializer_3_01_j_s_o_n_object_00_01oscr_1_1_process_model_3_01_info_01_4_01_4" ],
     [ "TSerializer< JSONObject, ossia::domain_base< bool > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01bool_01_4_01_4.html", "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01bool_01_4_01_4" ],

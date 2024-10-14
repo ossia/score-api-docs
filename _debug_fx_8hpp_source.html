@@ -99,64 +99,46 @@ $(document).ready(function(){initNavTree('_debug_fx_8hpp_source.html',''); initR
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Engine/Node/SimpleApi.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">namespace </span>Nodes::Debug</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="struct_nodes_1_1_debug_1_1_node.html">    5</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_nodes_1_1_debug_1_1_node.html">Node</a></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;halp/controls.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;halp/meta.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;halp/midi.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>Nodes::Debug</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="struct_nodes_1_1_debug_1_1_node_1_1_metadata.html">    7</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="struct_nodes_1_1_debug_1_1_node_1_1_metadata.html">Metadata</a> : <a class="code" href="struct_control_1_1_meta__base.html">Control::Meta_base</a></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  {</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> prettyName = <span class="stringliteral">&quot;Test FX&quot;</span>;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> objectKey = <span class="stringliteral">&quot;TestFX&quot;</span>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> category = <span class="stringliteral">&quot;Debug&quot;</span>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> author = <span class="stringliteral">&quot;ossia score&quot;</span>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> manual_url = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> tags = std::array&lt;const char*, 0&gt;{};</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> kind = Process::ProcessCategory::Other;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> description = <span class="stringliteral">&quot;Shows all the available widgets&quot;</span>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> uuid</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        = make_uuid(<span class="stringliteral">&quot;887507d3-8a56-4634-9ee3-a25d38050335&quot;</span>);</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="struct_nodes_1_1_debug_1_1_node.html">    7</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_nodes_1_1_debug_1_1_node.html">Node</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  halp_meta(name, <span class="stringliteral">&quot;Test FX&quot;</span>)</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  halp_meta(c_name, <span class="stringliteral">&quot;TestFX&quot;</span>)</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  halp_meta(category, <span class="stringliteral">&quot;Debug&quot;</span>)</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  halp_meta(author, <span class="stringliteral">&quot;ossia score&quot;</span>)</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  halp_meta(manual_url, <span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  halp_meta(description, <span class="stringliteral">&quot;Shows all the available widgets&quot;</span>)</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  halp_meta(uuid, <span class="stringliteral">&quot;887507d3-8a56-4634-9ee3-a25d38050335&quot;</span>)</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">struct</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr value_in value_ins[]{<span class="stringliteral">&quot;in1&quot;</span>, <span class="stringliteral">&quot;in2&quot;</span>};</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr value_out value_outs[]{<span class="stringliteral">&quot;out1&quot;</span>, <span class="stringliteral">&quot;out2&quot;</span>};</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr audio_in audio_ins[]{<span class="stringliteral">&quot;ain&quot;</span>};</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr audio_out audio_outs[]{<span class="stringliteral">&quot;aout&quot;</span>};</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr midi_in midi_ins[]{<span class="stringliteral">&quot;min&quot;</span>};</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr midi_out midi_outs[]{<span class="stringliteral">&quot;mout&quot;</span>};</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> controls = tuplet::make_tuple(</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="struct_control_1_1_float_control.html">Control::FloatSlider</a>{<span class="stringliteral">&quot;FloatSlider&quot;</span>, -10, 20, 5},</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="struct_control_1_1_float_control.html">Control::LogFloatSlider</a>{<span class="stringliteral">&quot;LogFloatSlider&quot;</span>, -10, 20, 5},</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="struct_control_1_1_float_control.html">Control::FloatKnob</a>{<span class="stringliteral">&quot;FloatKnob&quot;</span>, -10, 20, 5},</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="struct_control_1_1_float_control.html">Control::LogFloatKnob</a>{<span class="stringliteral">&quot;LogFloatKnob&quot;</span>, -10, 20, 5},</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="struct_control_1_1_int_slider.html">Control::IntSlider</a>{<span class="stringliteral">&quot;IntSlider&quot;</span>, -10, 20, 5},</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="struct_control_1_1_int_spin_box.html">Control::IntSpinBox</a>{<span class="stringliteral">&quot;IntSpinBox&quot;</span>, -10, 20, 5}, <a class="code" href="struct_control_1_1_toggle.html">Control::Toggle</a>{<span class="stringliteral">&quot;Toggle&quot;</span>, <span class="keyword">true</span>},</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="struct_control_1_1_chooser_toggle.html">Control::ChooserToggle</a>{<span class="stringliteral">&quot;ChooserToggle&quot;</span>, {<span class="stringliteral">&quot;false&quot;</span>, <span class="stringliteral">&quot;true&quot;</span>}, <span class="keyword">true</span>},</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="struct_control_1_1_line_edit.html">Control::LineEdit</a>{<span class="stringliteral">&quot;LineEdit&quot;</span>, <span class="stringliteral">&quot;henlo&quot;</span>}, <a class="code" href="struct_control_1_1_button.html">Control::Button</a>{<span class="stringliteral">&quot;Bango&quot;</span>},</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        Control::Widgets::QuantificationChooser(),</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        Control::Widgets::MusicalDurationChooser(), Control::Widgets::DurationChooser(),</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        Control::Widgets::FreqSlider(), Control::Widgets::LFOFreqSlider(),</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        Control::Widgets::FreqKnob(), Control::Widgets::LFOFreqKnob(),</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        Control::Widgets::WaveformChooser());</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  };</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">using</span> control_policy = ossia::safe_nodes::default_tick_controls;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> run(Args&amp;&amp;...)</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
-<div class="ttc" id="astruct_control_1_1_button_html"><div class="ttname"><a href="struct_control_1_1_button.html">Control::Button</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Control/Widgets.hpp:267</div></div>
-<div class="ttc" id="astruct_control_1_1_chooser_toggle_html"><div class="ttname"><a href="struct_control_1_1_chooser_toggle.html">Control::ChooserToggle</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Control/Widgets.hpp:374</div></div>
-<div class="ttc" id="astruct_control_1_1_float_control_html"><div class="ttname"><a href="struct_control_1_1_float_control.html">Control::FloatControl</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Control/Widgets.hpp:77</div></div>
-<div class="ttc" id="astruct_control_1_1_int_slider_html"><div class="ttname"><a href="struct_control_1_1_int_slider.html">Control::IntSlider</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Control/Widgets.hpp:178</div></div>
-<div class="ttc" id="astruct_control_1_1_int_spin_box_html"><div class="ttname"><a href="struct_control_1_1_int_spin_box.html">Control::IntSpinBox</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Control/Widgets.hpp:223</div></div>
-<div class="ttc" id="astruct_control_1_1_line_edit_html"><div class="ttname"><a href="struct_control_1_1_line_edit.html">Control::LineEdit</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Control/Widgets.hpp:417</div></div>
-<div class="ttc" id="astruct_control_1_1_meta__base_html"><div class="ttname"><a href="struct_control_1_1_meta__base.html">Control::Meta_base</a></div><div class="ttdef"><b>Definition:</b> SimpleApi.hpp:32</div></div>
-<div class="ttc" id="astruct_control_1_1_toggle_html"><div class="ttname"><a href="struct_control_1_1_toggle.html">Control::Toggle</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Control/Widgets.hpp:337</div></div>
-<div class="ttc" id="astruct_nodes_1_1_debug_1_1_node_1_1_metadata_html"><div class="ttname"><a href="struct_nodes_1_1_debug_1_1_node_1_1_metadata.html">Nodes::Debug::Node::Metadata</a></div><div class="ttdef"><b>Definition:</b> DebugFx.hpp:8</div></div>
-<div class="ttc" id="astruct_nodes_1_1_debug_1_1_node_html"><div class="ttname"><a href="struct_nodes_1_1_debug_1_1_node.html">Nodes::Debug::Node</a></div><div class="ttdef"><b>Definition:</b> DebugFx.hpp:6</div></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  } inputs;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">struct</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  } outputs;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr value_in value_ins[]{<span class="stringliteral">&quot;in1&quot;</span>, <span class="stringliteral">&quot;in2&quot;</span>};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr value_out value_outs[]{<span class="stringliteral">&quot;out1&quot;</span>, <span class="stringliteral">&quot;out2&quot;</span>};</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr audio_in audio_ins[]{<span class="stringliteral">&quot;ain&quot;</span>};</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr audio_out audio_outs[]{<span class="stringliteral">&quot;aout&quot;</span>};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr midi_in midi_ins[]{<span class="stringliteral">&quot;min&quot;</span>};</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr midi_out midi_outs[]{<span class="stringliteral">&quot;mout&quot;</span>};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> controls = tuplet::make_tuple(Control::FloatSlider{<span class="stringliteral">&quot;FloatSlider&quot;</span>, -10, 20, 5}, Control::LogFloatSlider{<span class="stringliteral">&quot;LogFloatSlider&quot;</span>, -10, 20, 5}, Control::FloatKnob{<span class="stringliteral">&quot;FloatKnob&quot;</span>, -10, 20, 5}, Control::LogFloatKnob{<span class="stringliteral">&quot;LogFloatKnob&quot;</span>, -10, 20, 5}, Control::IntSlider{<span class="stringliteral">&quot;IntSlider&quot;</span>, -10, 20, 5}, Control::IntSpinBox{<span class="stringliteral">&quot;IntSpinBox&quot;</span>, -10, 20, 5}, Control::Toggle{<span class="stringliteral">&quot;Toggle&quot;</span>, <span class="keyword">true</span>}, Control::ChooserToggle{<span class="stringliteral">&quot;ChooserToggle&quot;</span>, {<span class="stringliteral">&quot;false&quot;</span>, <span class="stringliteral">&quot;true&quot;</span>}, <span class="keyword">true</span>}, Control::LineEdit{<span class="stringliteral">&quot;LineEdit&quot;</span>, <span class="stringliteral">&quot;henlo&quot;</span>}, Control::Button{<span class="stringliteral">&quot;Bango&quot;</span>}, Control::Widgets::QuantificationChooser(), Control::Widgets::MusicalDurationChooser(), Control::Widgets::DurationChooser(), Control::Widgets::FreqSlider(), Control::Widgets::LFOFreqSlider(), Control::Widgets::FreqKnob(), Control::Widgets::LFOFreqKnob(), Control::Widgets::WaveformChooser());</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">using</span> control_policy = ossia::safe_nodes::default_tick_controls;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> run(Args&amp;&amp;...)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="ttc" id="astruct_nodes_1_1_debug_1_1_node_html"><div class="ttname"><a href="struct_nodes_1_1_debug_1_1_node.html">Nodes::Debug::Node</a></div><div class="ttdef"><b>Definition:</b> DebugFx.hpp:8</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

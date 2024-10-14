@@ -7,6 +7,7 @@ var class_pd_1_1_pd_graph_node =
     [ "get_midi_out", "class_pd_1_1_pd_graph_node.html#af1aa28d7375255d212b5171d7e6d3f14", null ],
     [ "get_outlet", "class_pd_1_1_pd_graph_node.html#a7b4c5094da69877224681b3ea1951286", null ],
     [ "get_value_port", "class_pd_1_1_pd_graph_node.html#a30bd8d8043c70a093af97f629e15290e", null ],
+    [ "label", "class_pd_1_1_pd_graph_node.html#abdab16f485a229f63c5f739b5f09bddf", null ],
     [ "run", "class_pd_1_1_pd_graph_node.html#a7ec92421218927a6b4f09efdb7b19dc4", null ],
     [ "m_audio_inlet", "class_pd_1_1_pd_graph_node.html#aba52a152071b2afc9794d1f2809c7248", null ],
     [ "m_audio_outlet", "class_pd_1_1_pd_graph_node.html#a073b73365e8acfe35d74e789b96f6640", null ],

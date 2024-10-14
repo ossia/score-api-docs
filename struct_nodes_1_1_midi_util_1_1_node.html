@@ -97,7 +97,8 @@ $(document).ready(function(){initNavTree('struct_nodes_1_1_midi_util_1_1_node.ht
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_nodes_1_1_midi_util_1_1_node-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Nodes::MidiUtil::Node Struct Reference</div>  </div>
@@ -106,28 +107,63 @@ $(document).ready(function(){initNavTree('struct_nodes_1_1_midi_util_1_1_node.ht
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_midi_util_1_1_node_1_1_metadata.html">Metadata</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_midi_util_1_1_node_1_1_state.html">State</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_midi_util_1_1_node_1_1_note.html">Note</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aed8866dc42a7184de254ae358cd9f3f0"><td class="memItemLeft" align="right" valign="top"><a id="aed8866dc42a7184de254ae358cd9f3f0"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>control_policy</b> = ossia::safe_nodes::default_tick_controls</td></tr>
-<tr class="separator:aed8866dc42a7184de254ae358cd9f3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a283959d5a243705e5728d31fee7b816b"><td class="memItemLeft" align="right" valign="top"><a id="a283959d5a243705e5728d31fee7b816b"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> = halp::tick_flicks</td></tr>
+<tr class="separator:a283959d5a243705e5728d31fee7b816b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a855418953ab6f336be2cb84f5754aeda"><td class="memItemLeft" align="right" valign="top"><a id="a855418953ab6f336be2cb84f5754aeda"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>exec</b> (const ossia::midi_port &amp;midi_in, const scale_array &amp;scale, int transp, ossia::midi_port &amp;midi_out, const int64_t offset, <a class="el" href="struct_nodes_1_1_midi_util_1_1_node_1_1_state.html">State</a> &amp;self)</td></tr>
-<tr class="separator:a855418953ab6f336be2cb84f5754aeda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7576cc8a2c4e65ef5737b642d37c137c"><td class="memItemLeft" align="right" valign="top"><a id="a7576cc8a2c4e65ef5737b642d37c137c"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (const ossia::midi_port &amp;midi_in, const scale_array &amp;scale, int transp, ossia::midi_port &amp;midi_out, const int64_t offset, <a class="el" href="struct_nodes_1_1_midi_util_1_1_node_1_1_state.html">State</a> &amp;self)</td></tr>
-<tr class="separator:a7576cc8a2c4e65ef5737b642d37c137c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea35b21bdc97762130522d03051dcf97"><td class="memItemLeft" align="right" valign="top"><a id="aea35b21bdc97762130522d03051dcf97"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (const ossia::midi_port &amp;midi_in, const ossia::timed_vec&lt; std::string &gt; &amp;sc, const ossia::timed_vec&lt; int &gt; &amp;base, const ossia::timed_vec&lt; int &gt; &amp;transp, ossia::midi_port &amp;midi_out, ossia::token_request tk, ossia::exec_state_facade st, <a class="el" href="struct_nodes_1_1_midi_util_1_1_node_1_1_state.html">State</a> &amp;self)</td></tr>
-<tr class="separator:aea35b21bdc97762130522d03051dcf97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4c7521557808e77fd764027b23d1f36f"><td class="memItemLeft" align="right" valign="top"><a id="a4c7521557808e77fd764027b23d1f36f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (name, &quot;Midi scale&quot;) halp_meta(c_name</td></tr>
+<tr class="separator:a4c7521557808e77fd764027b23d1f36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2298c7b459c918b1a7e7cd5959574f3"><td class="memItemLeft" align="right" valign="top"><a id="ab2298c7b459c918b1a7e7cd5959574f3"></a>
+MidiScale&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (category, &quot;Midi&quot;) halp_meta(author</td></tr>
+<tr class="separator:ab2298c7b459c918b1a7e7cd5959574f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa10b6792da61bc15ad20bf9a25e89d4b"><td class="memItemLeft" align="right" valign="top"><a id="aa10b6792da61bc15ad20bf9a25e89d4b"></a>
+MidiScale ossia score&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (manual_url, &quot;https://ossia.io/score-docs/processes/midi-utilities.html#midi-scale&quot;) halp_meta(description</td></tr>
+<tr class="separator:aa10b6792da61bc15ad20bf9a25e89d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2d39d11a227e02fdebe97131e9e2246"><td class="memItemLeft" align="right" valign="top"><a id="af2d39d11a227e02fdebe97131e9e2246"></a>
+MidiScale ossia score Maps a midi input to a given scale&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (uuid, &quot;06b33b83-bb67-4f7a-9980-f5d66e4266c5&quot;) struct</td></tr>
+<tr class="separator:af2d39d11a227e02fdebe97131e9e2246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdef60bf917dbeba03e9d8354e91ea47"><td class="memItemLeft" align="right" valign="top"><a id="afdef60bf917dbeba03e9d8354e91ea47"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>exec</b> (const scale_array &amp;scale, int transp)</td></tr>
+<tr class="separator:afdef60bf917dbeba03e9d8354e91ea47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae61cf51c26767b54f5a798121f748a3b"><td class="memItemLeft" align="right" valign="top"><a id="ae61cf51c26767b54f5a798121f748a3b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (const scale_array &amp;scale, int transp)</td></tr>
+<tr class="separator:ae61cf51c26767b54f5a798121f748a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49aabf139e479786cedca901d7a363c3"><td class="memItemLeft" align="right" valign="top"><a id="a49aabf139e479786cedca901d7a363c3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const tick &amp;tk)</td></tr>
+<tr class="separator:a49aabf139e479786cedca901d7a363c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a0a084f2b2aab609709d53bce3e20008f"><td class="memItemLeft" align="right" valign="top"><a id="a0a084f2b2aab609709d53bce3e20008f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
+<tr class="separator:a0a084f2b2aab609709d53bce3e20008f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d8e7d9f63b4ac1f66504d9faf4789b2"><td class="memItemLeft" ><a id="a5d8e7d9f63b4ac1f66504d9faf4789b2"></a>
+struct {</td></tr>
+<tr class="memitem:ad3decf5c661d08b1e06d31994bb5d669"><td class="memItemLeft" >
+&#160;&#160;&#160;midi_out&#160;&#160;&#160;<b>midi</b></td></tr>
+<tr class="separator:ad3decf5c661d08b1e06d31994bb5d669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d8e7d9f63b4ac1f66504d9faf4789b2"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b></td></tr>
+<tr class="separator:a5d8e7d9f63b4ac1f66504d9faf4789b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f00b42394d179480c6631b48ad08458"><td class="memItemLeft" align="right" valign="top"><a id="a2f00b42394d179480c6631b48ad08458"></a>
+ossia::flat_map&lt; uint8_t, <a class="el" href="struct_nodes_1_1_midi_util_1_1_node_1_1_note.html">Note</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>map</b></td></tr>
+<tr class="separator:a2f00b42394d179480c6631b48ad08458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40c9c09d102dad8ea23d66a210efc2f7"><td class="memItemLeft" align="right" valign="top"><a id="a40c9c09d102dad8ea23d66a210efc2f7"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>scale</b> {}</td></tr>
+<tr class="separator:a40c9c09d102dad8ea23d66a210efc2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf0ca2969257d36862863688e5bc81a7"><td class="memItemLeft" align="right" valign="top"><a id="aaf0ca2969257d36862863688e5bc81a7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>base</b> {}</td></tr>
+<tr class="separator:aaf0ca2969257d36862863688e5bc81a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae77a3b55df1336e12206baaad282e17a"><td class="memItemLeft" align="right" valign="top"><a id="ae77a3b55df1336e12206baaad282e17a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>transpose</b> {}</td></tr>
+<tr class="separator:ae77a3b55df1336e12206baaad282e17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_midi_util_8hpp_source.html">MidiUtil.hpp</a></li>

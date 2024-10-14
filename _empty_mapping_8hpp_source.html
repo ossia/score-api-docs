@@ -99,109 +99,98 @@ $(document).ready(function(){initNavTree('_empty_mapping_8hpp_source.html',''); 
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Engine/Node/SimpleApi.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">namespace </span>Nodes</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>EmptyValueMapping</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="struct_nodes_1_1_empty_value_mapping_1_1_node.html">    7</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_nodes_1_1_empty_value_mapping_1_1_node.html">Node</a></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="struct_nodes_1_1_empty_value_mapping_1_1_node_1_1_metadata.html">    9</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="struct_nodes_1_1_empty_value_mapping_1_1_node_1_1_metadata.html">Metadata</a> : <a class="code" href="struct_control_1_1_meta__base.html">Control::Meta_base</a></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> prettyName = <span class="stringliteral">&quot;Empty value mapper&quot;</span>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> objectKey = <span class="stringliteral">&quot;EmptyValueMapper&quot;</span>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> category = <span class="stringliteral">&quot;Control/Mappings&quot;</span>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> author = <span class="stringliteral">&quot;ossia score&quot;</span>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> manual_url = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> tags = std::array&lt;const char*, 0&gt;{};</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> kind = Process::ProcessCategory::Mapping;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> description = <span class="stringliteral">&quot;Copies its inputs to its outputs&quot;</span>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> uuid</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        = make_uuid(<span class="stringliteral">&quot;70B12B42-BB4B-4A13-861B-53C577601186&quot;</span>);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr value_in value_ins[]{<span class="stringliteral">&quot;in&quot;</span>};</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr value_out value_outs[]{<span class="stringliteral">&quot;out&quot;</span>};</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  };</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">using</span> control_policy = ossia::safe_nodes::default_tick;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  run(<span class="keyword">const</span> ossia::value_port&amp; p1, ossia::value_port&amp; p2, ossia::token_request,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      ossia::exec_state_facade)</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    p2.set_data(p1.get_data());</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Fx/Types.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;ossia/dataflow/port.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;halp/audio.hpp&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;halp/callback.hpp&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;halp/controls.hpp&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;halp/meta.hpp&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;halp/midi.hpp&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>Nodes</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// FIXME all incorrect when token_request smaller than tick</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>EmptyValueMapping</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="struct_nodes_1_1_empty_value_mapping_1_1_node.html">   17</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_nodes_1_1_empty_value_mapping_1_1_node.html">Node</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  halp_meta(name, <span class="stringliteral">&quot;Empty value mapper&quot;</span>)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  halp_meta(c_name, <span class="stringliteral">&quot;EmptyValueMapper&quot;</span>)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  halp_meta(category, <span class="stringliteral">&quot;Control/Mappings&quot;</span>)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  halp_meta(author, <span class="stringliteral">&quot;ossia score&quot;</span>)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  halp_meta(manual_url, <span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  halp_meta(description, <span class="stringliteral">&quot;Copies its inputs to its outputs&quot;</span>)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  halp_meta(uuid, <span class="stringliteral">&quot;70B12B42-BB4B-4A13-861B-53C577601186&quot;</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">struct</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="struct_nodes_1_1ossia__port.html">ossia_port</a>&lt;<span class="stringliteral">&quot;in&quot;</span>, ossia::value_port&gt; port{};</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  } inputs;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">struct</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="struct_nodes_1_1ossia__port.html">ossia_port</a>&lt;<span class="stringliteral">&quot;out&quot;</span>, ossia::value_port&gt; port{};</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  } outputs;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span>EmptyMidiMapping</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="struct_nodes_1_1_empty_midi_mapping_1_1_node.html">   38</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_nodes_1_1_empty_midi_mapping_1_1_node.html">Node</a></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="struct_nodes_1_1_empty_midi_mapping_1_1_node_1_1_metadata.html">   40</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="struct_nodes_1_1_empty_midi_mapping_1_1_node_1_1_metadata.html">Metadata</a> : <a class="code" href="struct_control_1_1_meta__base.html">Control::Meta_base</a></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> prettyName = <span class="stringliteral">&quot;Empty midi mapper&quot;</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> objectKey = <span class="stringliteral">&quot;EmptyMidiMapper&quot;</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> category = <span class="stringliteral">&quot;Control/Mappings&quot;</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> author = <span class="stringliteral">&quot;ossia score&quot;</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> manual_url = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> kind = Process::ProcessCategory::Mapping;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> description = <span class="stringliteral">&quot;Copies its inputs to its outputs&quot;</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> tags = std::array&lt;const char*, 0&gt;{};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> uuid</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        = make_uuid(<span class="stringliteral">&quot;2CE4F3F3-E04F-48CD-B81C-1F6537EC8CFA&quot;</span>);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr midi_in midi_ins[]{<span class="stringliteral">&quot;in&quot;</span>};</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr midi_out midi_outs[]{<span class="stringliteral">&quot;out&quot;</span>};</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  };</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">using</span> control_policy = ossia::safe_nodes::default_tick;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  run(<span class="keyword">const</span> ossia::midi_port&amp; p1, ossia::midi_port&amp; p2, ossia::token_request,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      ossia::exec_state_facade)</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    p2.messages = p1.messages;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">namespace </span>EmptyAudioMapping</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">void</span> operator()() { outputs.port.value-&gt;set_data(inputs.port.value-&gt;get_data()); }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace </span>EmptyMidiMapping</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="struct_nodes_1_1_empty_midi_mapping_1_1_node.html">   42</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_nodes_1_1_empty_midi_mapping_1_1_node.html">Node</a></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  halp_meta(name, <span class="stringliteral">&quot;Empty midi mapper&quot;</span>)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  halp_meta(c_name, <span class="stringliteral">&quot;EmptyMidiMapper&quot;</span>)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  halp_meta(category, <span class="stringliteral">&quot;Control/Mappings&quot;</span>)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  halp_meta(author, <span class="stringliteral">&quot;ossia score&quot;</span>)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  halp_meta(manual_url, <span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  halp_meta(description, <span class="stringliteral">&quot;Copies its inputs to its outputs&quot;</span>)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  halp_meta(uuid, <span class="stringliteral">&quot;2CE4F3F3-E04F-48CD-B81C-1F6537EC8CFA&quot;</span>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">struct</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="struct_nodes_1_1ossia__port.html">ossia_port</a>&lt;<span class="stringliteral">&quot;in&quot;</span>, ossia::midi_port&gt; port{};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  } inputs;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">struct</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="struct_nodes_1_1ossia__port.html">ossia_port</a>&lt;<span class="stringliteral">&quot;out&quot;</span>, ossia::midi_port&gt; port{};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  } outputs;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">void</span> operator()() { outputs.port.value-&gt;messages = inputs.port.value-&gt;messages; }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">namespace </span>EmptyAudioMapping</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="struct_nodes_1_1_empty_audio_mapping_1_1_node.html">   67</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_nodes_1_1_empty_audio_mapping_1_1_node.html">Node</a></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="struct_nodes_1_1_empty_audio_mapping_1_1_node.html">   69</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_nodes_1_1_empty_audio_mapping_1_1_node.html">Node</a></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="struct_nodes_1_1_empty_audio_mapping_1_1_node_1_1_metadata.html">   71</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="struct_nodes_1_1_empty_audio_mapping_1_1_node_1_1_metadata.html">Metadata</a> : <a class="code" href="struct_control_1_1_meta__base.html">Control::Meta_base</a></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> prettyName = <span class="stringliteral">&quot;Empty audio mapper&quot;</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> objectKey = <span class="stringliteral">&quot;EmptyAudioMapper&quot;</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> category = <span class="stringliteral">&quot;Control/Mappings&quot;</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> author = <span class="stringliteral">&quot;ossia score&quot;</span>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> manual_url = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> kind = Process::ProcessCategory::Mapping;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> description = <span class="stringliteral">&quot;Copies its inputs to its outputs&quot;</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> tags = std::array&lt;const char*, 0&gt;{};</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr <span class="keyword">auto</span> uuid</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        = make_uuid(<span class="stringliteral">&quot;D074CC6C-D1CB-47F8-871D-CC949D8EEBEC&quot;</span>);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr audio_in audio_ins[]{<span class="stringliteral">&quot;in&quot;</span>};</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> constexpr audio_out audio_outs[]{<span class="stringliteral">&quot;out&quot;</span>};</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  };</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">using</span> control_policy = ossia::safe_nodes::default_tick;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  run(<span class="keyword">const</span> ossia::audio_port&amp; p1, ossia::audio_port&amp; p2, ossia::token_request,</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      ossia::exec_state_facade)</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    p2 = p1;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  }</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
-<div class="ttc" id="astruct_control_1_1_meta__base_html"><div class="ttname"><a href="struct_control_1_1_meta__base.html">Control::Meta_base</a></div><div class="ttdef"><b>Definition:</b> SimpleApi.hpp:32</div></div>
-<div class="ttc" id="astruct_nodes_1_1_empty_audio_mapping_1_1_node_1_1_metadata_html"><div class="ttname"><a href="struct_nodes_1_1_empty_audio_mapping_1_1_node_1_1_metadata.html">Nodes::EmptyAudioMapping::Node::Metadata</a></div><div class="ttdef"><b>Definition:</b> EmptyMapping.hpp:72</div></div>
-<div class="ttc" id="astruct_nodes_1_1_empty_audio_mapping_1_1_node_html"><div class="ttname"><a href="struct_nodes_1_1_empty_audio_mapping_1_1_node.html">Nodes::EmptyAudioMapping::Node</a></div><div class="ttdef"><b>Definition:</b> EmptyMapping.hpp:70</div></div>
-<div class="ttc" id="astruct_nodes_1_1_empty_midi_mapping_1_1_node_1_1_metadata_html"><div class="ttname"><a href="struct_nodes_1_1_empty_midi_mapping_1_1_node_1_1_metadata.html">Nodes::EmptyMidiMapping::Node::Metadata</a></div><div class="ttdef"><b>Definition:</b> EmptyMapping.hpp:41</div></div>
-<div class="ttc" id="astruct_nodes_1_1_empty_midi_mapping_1_1_node_html"><div class="ttname"><a href="struct_nodes_1_1_empty_midi_mapping_1_1_node.html">Nodes::EmptyMidiMapping::Node</a></div><div class="ttdef"><b>Definition:</b> EmptyMapping.hpp:39</div></div>
-<div class="ttc" id="astruct_nodes_1_1_empty_value_mapping_1_1_node_1_1_metadata_html"><div class="ttname"><a href="struct_nodes_1_1_empty_value_mapping_1_1_node_1_1_metadata.html">Nodes::EmptyValueMapping::Node::Metadata</a></div><div class="ttdef"><b>Definition:</b> EmptyMapping.hpp:10</div></div>
-<div class="ttc" id="astruct_nodes_1_1_empty_value_mapping_1_1_node_html"><div class="ttname"><a href="struct_nodes_1_1_empty_value_mapping_1_1_node.html">Nodes::EmptyValueMapping::Node</a></div><div class="ttdef"><b>Definition:</b> EmptyMapping.hpp:8</div></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  halp_meta(name, <span class="stringliteral">&quot;Empty audio mapper&quot;</span>)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  halp_meta(c_name, <span class="stringliteral">&quot;EmptyAudioMapper&quot;</span>)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  halp_meta(category, <span class="stringliteral">&quot;Control/Mappings&quot;</span>)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  halp_meta(author, <span class="stringliteral">&quot;ossia score&quot;</span>)</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  halp_meta(manual_url, <span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  halp_meta(description, <span class="stringliteral">&quot;Copies its inputs to its outputs&quot;</span>)</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  halp_meta(uuid, <span class="stringliteral">&quot;D074CC6C-D1CB-47F8-871D-CC949D8EEBEC&quot;</span>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">struct</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="struct_nodes_1_1ossia__port.html">ossia_port</a>&lt;<span class="stringliteral">&quot;in&quot;</span>, ossia::audio_port&gt; port{};</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  } inputs;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">struct</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="struct_nodes_1_1ossia__port.html">ossia_port</a>&lt;<span class="stringliteral">&quot;out&quot;</span>, ossia::audio_port&gt; port{};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  } outputs;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">void</span> operator()() { *outputs.port.value = *inputs.port.value; }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
+<div class="ttc" id="astruct_nodes_1_1_empty_audio_mapping_1_1_node_html"><div class="ttname"><a href="struct_nodes_1_1_empty_audio_mapping_1_1_node.html">Nodes::EmptyAudioMapping::Node</a></div><div class="ttdef"><b>Definition:</b> EmptyMapping.hpp:68</div></div>
+<div class="ttc" id="astruct_nodes_1_1_empty_midi_mapping_1_1_node_html"><div class="ttname"><a href="struct_nodes_1_1_empty_midi_mapping_1_1_node.html">Nodes::EmptyMidiMapping::Node</a></div><div class="ttdef"><b>Definition:</b> EmptyMapping.hpp:43</div></div>
+<div class="ttc" id="astruct_nodes_1_1_empty_value_mapping_1_1_node_html"><div class="ttname"><a href="struct_nodes_1_1_empty_value_mapping_1_1_node.html">Nodes::EmptyValueMapping::Node</a></div><div class="ttdef"><b>Definition:</b> EmptyMapping.hpp:18</div></div>
+<div class="ttc" id="astruct_nodes_1_1ossia__port_html"><div class="ttname"><a href="struct_nodes_1_1ossia__port.html">Nodes::ossia_port</a></div><div class="ttdef"><b>Definition:</b> Types.hpp:39</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

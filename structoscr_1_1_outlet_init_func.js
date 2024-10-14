@@ -5,8 +5,11 @@ var structoscr_1_1_outlet_init_func =
     [ "operator()", "structoscr_1_1_outlet_init_func.html#a2ddb4da360f674dfbc55919aa016e80e", null ],
     [ "operator()", "structoscr_1_1_outlet_init_func.html#a0bf688481adf04f4c37f1324333ea602", null ],
     [ "operator()", "structoscr_1_1_outlet_init_func.html#a472d268d46595f98c0ffb94b4cb1bccc", null ],
+    [ "operator()", "structoscr_1_1_outlet_init_func.html#ad3c302dea4223d6aaece52746b894293", null ],
+    [ "operator()", "structoscr_1_1_outlet_init_func.html#ae85a2f50b75c664e2e37546ec98b1b5c", null ],
+    [ "operator()", "structoscr_1_1_outlet_init_func.html#a73bd0f15acbeac31267beb69357e1e3c", null ],
     [ "operator()", "structoscr_1_1_outlet_init_func.html#a2b961f82d3ccb56286049049ec483a91", null ],
-    [ "operator()", "structoscr_1_1_outlet_init_func.html#a972b39a26efd4d6ec734f6c62728e199", null ],
+    [ "requires", "structoscr_1_1_outlet_init_func.html#a6406d67ad22a596da1b809fb046bc917", null ],
     [ "outlet", "structoscr_1_1_outlet_init_func.html#a265088b8d9bf03d47b48abec0962d9f3", null ],
     [ "outs", "structoscr_1_1_outlet_init_func.html#a4a394e4319b34a869bf9d047cb2d5599", null ],
     [ "self", "structoscr_1_1_outlet_init_func.html#a4489e8acaecb8b1ebb79516d59f94776", null ]

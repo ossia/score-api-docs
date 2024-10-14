@@ -95,31 +95,44 @@ $(document).ready(function(){initNavTree('struct_nodes_1_1_classical_beat_1_1_no
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_nodes_1_1_classical_beat_1_1_node-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Nodes::ClassicalBeat::Node Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_classical_beat_1_1_node_1_1_metadata.html">Metadata</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a4c81a21d29b370635628e7051c40371b"><td class="memItemLeft" align="right" valign="top"><a id="a4c81a21d29b370635628e7051c40371b"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>control_policy</b> = ossia::safe_nodes::last_tick</td></tr>
-<tr class="separator:a4c81a21d29b370635628e7051c40371b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abded5d064beaefe40fc49b1baaf46433"><td class="memItemLeft" align="right" valign="top"><a id="abded5d064beaefe40fc49b1baaf46433"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> = halp::tick_musical</td></tr>
+<tr class="separator:abded5d064beaefe40fc49b1baaf46433"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a2e1cb178e59305a41f90224b92f27c0b"><td class="memItemLeft" align="right" valign="top"><a id="a2e1cb178e59305a41f90224b92f27c0b"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (ossia::value_port &amp;res, ossia::token_request tk, ossia::exec_state_facade st)</td></tr>
-<tr class="separator:a2e1cb178e59305a41f90224b92f27c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a947054f91feee710a28e1bbc741c865c"><td class="memItemLeft" align="right" valign="top"><a id="a947054f91feee710a28e1bbc741c865c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (name, &quot;Beat Metronome&quot;) halp_meta(c_name</td></tr>
+<tr class="separator:a947054f91feee710a28e1bbc741c865c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bbd2201ee39a809db22cec5b76f5af0"><td class="memItemLeft" align="right" valign="top"><a id="a1bbd2201ee39a809db22cec5b76f5af0"></a>
+ImpulseMetronome&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (category, &quot;Control/Generators&quot;) halp_meta(author</td></tr>
+<tr class="separator:a1bbd2201ee39a809db22cec5b76f5af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bc291cf787601beee45e6325103ee9f"><td class="memItemLeft" align="right" valign="top"><a id="a1bc291cf787601beee45e6325103ee9f"></a>
+ImpulseMetronome ossia score&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (manual_url, &quot;https://ossia.io/score-docs/processes/control-utilities.html#impulse-metronome&quot;) halp_meta(description</td></tr>
+<tr class="separator:a1bc291cf787601beee45e6325103ee9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53e06e8951adc7fd4c374cfffc97d3e0"><td class="memItemLeft" align="right" valign="top"><a id="a53e06e8951adc7fd4c374cfffc97d3e0"></a>
+ImpulseMetronome ossia score A simple metronome outputs a bang on the current tick&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (uuid, &quot;1c185139-04f9-492f-8b4a-000dd4428990&quot;) struct</td></tr>
+<tr class="separator:a53e06e8951adc7fd4c374cfffc97d3e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a687596132b327d1e807429500aafd08a"><td class="memItemLeft" align="right" valign="top"><a id="a687596132b327d1e807429500aafd08a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const halp::tick_musical &amp;tk)</td></tr>
+<tr class="separator:a687596132b327d1e807429500aafd08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a7ec42862e73dd9497a869caa5e860664"><td class="memItemLeft" align="right" valign="top"><a id="a7ec42862e73dd9497a869caa5e860664"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b></td></tr>
+<tr class="separator:a7ec42862e73dd9497a869caa5e860664"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_classical_beat_8hpp_source.html">ClassicalBeat.hpp</a></li>

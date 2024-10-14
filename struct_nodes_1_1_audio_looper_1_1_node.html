@@ -97,7 +97,8 @@ $(document).ready(function(){initNavTree('struct_nodes_1_1_audio_looper_1_1_node
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_nodes_1_1_audio_looper_1_1_node-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Nodes::AudioLooper::Node Struct Reference</div>  </div>
@@ -106,63 +107,107 @@ $(document).ready(function(){initNavTree('struct_nodes_1_1_audio_looper_1_1_node
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1_metadata.html">Metadata</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1_inputs.html">Inputs</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html">State</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a5226e768b1b62538d0341159e16d63f2"><td class="memItemLeft" align="right" valign="top"><a id="a5226e768b1b62538d0341159e16d63f2"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>control_policy</b> = ossia::safe_nodes::last_tick</td></tr>
-<tr class="separator:a5226e768b1b62538d0341159e16d63f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85b4aea660e00a5d3ed65327c2f708a2"><td class="memItemLeft" align="right" valign="top"><a id="a85b4aea660e00a5d3ed65327c2f708a2"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>LoopMode</b> { <b>Play</b>
+, <b>Record</b>
+, <b>Overdub</b>
+, <b>Stop</b>
+ }</td></tr>
+<tr class="separator:a85b4aea660e00a5d3ed65327c2f708a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae159b1f9bc4b749a8689e268117ffb99"><td class="memItemLeft" align="right" valign="top"><a id="ae159b1f9bc4b749a8689e268117ffb99"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>Postaction</b> { <b>Play</b>
+, <b>Overdub</b>
+ }</td></tr>
+<tr class="separator:ae159b1f9bc4b749a8689e268117ffb99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef2d8a43ca213149a140607b1dd5adc7"><td class="memItemLeft" align="right" valign="top"><a id="aef2d8a43ca213149a140607b1dd5adc7"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> = ossia::token_request</td></tr>
+<tr class="separator:aef2d8a43ca213149a140607b1dd5adc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a8109be9bc111d9c9585323200486c08c"><td class="memItemLeft" align="right" valign="top"><a id="a8109be9bc111d9c9585323200486c08c"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>fade</b> (const ossia::token_request &amp;tk, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html">State</a> &amp;state)</td></tr>
-<tr class="separator:a8109be9bc111d9c9585323200486c08c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa400ae4a53cfeb0dcae3845f6b5566ac"><td class="memItemLeft" align="right" valign="top"><a id="aa400ae4a53cfeb0dcae3845f6b5566ac"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>changeAction</b> (const ossia::token_request &amp;tk, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html">State</a> &amp;state)</td></tr>
-<tr class="separator:aa400ae4a53cfeb0dcae3845f6b5566ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c355a1b1ea8d6ac3ba4ea0cf046dbd6"><td class="memItemLeft" align="right" valign="top"><a id="a1c355a1b1ea8d6ac3ba4ea0cf046dbd6"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>checkPostAction</b> (const std::string &amp;postaction, int postaction_bars, const ossia::token_request &amp;tk, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html">State</a> &amp;st)</td></tr>
-<tr class="separator:a1c355a1b1ea8d6ac3ba4ea0cf046dbd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a542501d32702b6f683ee236b8f4d1f"><td class="memItemLeft" align="right" valign="top"><a id="a0a542501d32702b6f683ee236b8f4d1f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (const ossia::audio_port &amp;p1, const std::string &amp;mode, float quantif, bool passthrough, const std::string &amp;postaction, int postaction_bars, ossia::audio_port &amp;p2, ossia::token_request tk, ossia::exec_state_facade st, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html">State</a> &amp;state)</td></tr>
-<tr class="separator:a0a542501d32702b6f683ee236b8f4d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1dc6af9b497e1e4f4c8eccea7d0d67b"><td class="memItemLeft" align="right" valign="top"><a id="ae1dc6af9b497e1e4f4c8eccea7d0d67b"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>preAction</b> (const ossia::audio_port &amp;p1, ossia::audio_port &amp;p2, ossia::token_request tk, ossia::exec_state_facade st, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html">State</a> &amp;state, const std::string &amp;postaction, int postaction_bars, bool passthrough)</td></tr>
-<tr class="separator:ae1dc6af9b497e1e4f4c8eccea7d0d67b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3777704da840d451d4f191177f5768f"><td class="memItemLeft" align="right" valign="top"><a id="aa3777704da840d451d4f191177f5768f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>action</b> (const ossia::audio_port &amp;p1, ossia::audio_port &amp;p2, const ossia::token_request &amp;tk, ossia::exec_state_facade st, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html">State</a> &amp;state, bool echoRecord)</td></tr>
-<tr class="separator:aa3777704da840d451d4f191177f5768f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a476b8d58e3304a49c196164ca83794c8"><td class="memItemLeft" align="right" valign="top"><a id="a476b8d58e3304a49c196164ca83794c8"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>action</b> (const ossia::audio_port &amp;p1, ossia::audio_port &amp;p2, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html">State</a> &amp;state, int64_t start, int64_t length, bool echoRecord)</td></tr>
-<tr class="separator:a476b8d58e3304a49c196164ca83794c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6be6f0cbc687b54b298b14f14061b264"><td class="memItemLeft" align="right" valign="top"><a id="a6be6f0cbc687b54b298b14f14061b264"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>play</b> (const ossia::audio_port &amp;p1, ossia::audio_port &amp;p2, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html">State</a> &amp;state, int64_t first_pos, int64_t N)</td></tr>
-<tr class="separator:a6be6f0cbc687b54b298b14f14061b264"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adde9846379c02e9fb8f4c80952ca9c4f"><td class="memItemLeft" align="right" valign="top"><a id="adde9846379c02e9fb8f4c80952ca9c4f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> (const ossia::audio_port &amp;p1, ossia::audio_port &amp;p2, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html">State</a> &amp;state, int64_t first_pos, int64_t N)</td></tr>
-<tr class="separator:adde9846379c02e9fb8f4c80952ca9c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2aede3bc11db2e333aac537754e4d94"><td class="memItemLeft" align="right" valign="top"><a id="aa2aede3bc11db2e333aac537754e4d94"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>record</b> (const ossia::audio_port &amp;p1, ossia::audio_port &amp;p2, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html">State</a> &amp;state, int64_t first_pos, int64_t N)</td></tr>
-<tr class="separator:aa2aede3bc11db2e333aac537754e4d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7ed4bc3dee26d7b253ff6643d5fd388"><td class="memItemLeft" align="right" valign="top"><a id="af7ed4bc3dee26d7b253ff6643d5fd388"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>record_noecho</b> (const ossia::audio_port &amp;p1, ossia::audio_port &amp;p2, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html">State</a> &amp;state, int64_t first_pos, int64_t N)</td></tr>
-<tr class="separator:af7ed4bc3dee26d7b253ff6643d5fd388"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e8dc443bdef99a7549fcc2f3387ec64"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#a9e8dc443bdef99a7549fcc2f3387ec64">overdub</a> (const ossia::audio_port &amp;p1, ossia::audio_port &amp;p2, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html">State</a> &amp;state, int64_t first_pos, int64_t N)</td></tr>
-<tr class="separator:a9e8dc443bdef99a7549fcc2f3387ec64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac510a2228d965fc11895afe577b8b870"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#ac510a2228d965fc11895afe577b8b870">overdub_noecho</a> (const ossia::audio_port &amp;p1, ossia::audio_port &amp;p2, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html">State</a> &amp;state, int64_t first_pos, int64_t N)</td></tr>
-<tr class="separator:ac510a2228d965fc11895afe577b8b870"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a348f12ef14c6353fd8bce14d4898e0c8"><td class="memItemLeft" align="right" valign="top"><a id="a348f12ef14c6353fd8bce14d4898e0c8"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>item</b> (Process::Enum &amp;mode, Process::ComboBox &amp;quantif, Process::Toggle &amp;echo, Process::Enum &amp;playmode, Process::IntSpinBox &amp;playmode_bars, const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;process, QGraphicsItem &amp;parent, QObject &amp;context, const <a class="el" href="struct_process_1_1_context.html">Process::Context</a> &amp;doc)</td></tr>
-<tr class="separator:a348f12ef14c6353fd8bce14d4898e0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a1c7b94ef3151439a367bed56b40cdc97"><td class="memItemLeft" align="right" valign="top"><a id="a1c7b94ef3151439a367bed56b40cdc97"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (name, &quot;Looper (audio)&quot;) halp_meta(c_name</td></tr>
+<tr class="separator:a1c7b94ef3151439a367bed56b40cdc97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f057dc2ce5d2f29be26b1bbe7a986c0"><td class="memItemLeft" align="right" valign="top"><a id="a3f057dc2ce5d2f29be26b1bbe7a986c0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Looper</b> (audio)&quot;) halp_meta(category</td></tr>
+<tr class="separator:a3f057dc2ce5d2f29be26b1bbe7a986c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10f795fc8fa1c74afa6347182fad9dbe"><td class="memItemLeft" align="right" valign="top"><a id="a10f795fc8fa1c74afa6347182fad9dbe"></a>
+Audio Utilities&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (author, &quot;ossia score&quot;) halp_meta(manual_url</td></tr>
+<tr class="separator:a10f795fc8fa1c74afa6347182fad9dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abff8a302da492b6646f0a6e8da111d3b"><td class="memItemLeft" align="right" valign="top"><a id="abff8a302da492b6646f0a6e8da111d3b"></a>
+Audio Utilities Loop audio&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (uuid, &quot;a0ad4227-ac3d-448b-a19b-19581ed4e2c6&quot;)</td></tr>
+<tr class="separator:abff8a302da492b6646f0a6e8da111d3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a610bf1303b7e57e0f532b27e40c0c401"><td class="memItemLeft" align="right" valign="top"><a id="a610bf1303b7e57e0f532b27e40c0c401"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (recommended_height, 65)</td></tr>
+<tr class="separator:a610bf1303b7e57e0f532b27e40c0c401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa275fc81b65de0954b6c2d9efa2a8a19"><td class="memItemLeft" align="right" valign="top"><a id="aa275fc81b65de0954b6c2d9efa2a8a19"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fade</b> (const ossia::token_request &amp;tk)</td></tr>
+<tr class="separator:aa275fc81b65de0954b6c2d9efa2a8a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4a30fa92cf60de8cacd699da8e4f85d"><td class="memItemLeft" align="right" valign="top"><a id="ad4a30fa92cf60de8cacd699da8e4f85d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>changeAction</b> (const ossia::token_request &amp;tk)</td></tr>
+<tr class="separator:ad4a30fa92cf60de8cacd699da8e4f85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad850b7d24fe93e490c63194448443fca"><td class="memItemLeft" align="right" valign="top"><a id="ad850b7d24fe93e490c63194448443fca"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>checkPostAction</b> (const std::string &amp;postaction, int postaction_bars, const ossia::token_request &amp;tk, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html">State</a> &amp;st)</td></tr>
+<tr class="separator:ad850b7d24fe93e490c63194448443fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b29defa9f7b2d4023348db00e732e54"><td class="memItemLeft" align="right" valign="top"><a id="a1b29defa9f7b2d4023348db00e732e54"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const tick &amp;tk)</td></tr>
+<tr class="separator:a1b29defa9f7b2d4023348db00e732e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95f3ce7a188c2534443c1a13b3876f7b"><td class="memItemLeft" align="right" valign="top"><a id="a95f3ce7a188c2534443c1a13b3876f7b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>preAction</b> (ossia::token_request tk, Postaction postaction, int postaction_bars, bool passthrough)</td></tr>
+<tr class="separator:a95f3ce7a188c2534443c1a13b3876f7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b781bc54e5ee99c7be1435f32175f0a"><td class="memItemLeft" align="right" valign="top"><a id="a5b781bc54e5ee99c7be1435f32175f0a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>action</b> (const ossia::token_request &amp;tk, bool echoRecord)</td></tr>
+<tr class="separator:a5b781bc54e5ee99c7be1435f32175f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad61d36d86cd2bf5fd3184305fe6529e"><td class="memItemLeft" align="right" valign="top"><a id="aad61d36d86cd2bf5fd3184305fe6529e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>action</b> (int64_t start, int64_t length, bool echoRecord)</td></tr>
+<tr class="separator:aad61d36d86cd2bf5fd3184305fe6529e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9545a5ed8a81857a89aea7582850090"><td class="memItemLeft" align="right" valign="top"><a id="ad9545a5ed8a81857a89aea7582850090"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>play</b> (int64_t first_pos, int64_t samples)</td></tr>
+<tr class="separator:ad9545a5ed8a81857a89aea7582850090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa28064132dd4dd61bbf40255248e7fa"><td class="memItemLeft" align="right" valign="top"><a id="afa28064132dd4dd61bbf40255248e7fa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> (int64_t first_pos, int64_t samples)</td></tr>
+<tr class="separator:afa28064132dd4dd61bbf40255248e7fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74b5948aeb1f677986a7f43e3db2903f"><td class="memItemLeft" align="right" valign="top"><a id="a74b5948aeb1f677986a7f43e3db2903f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>record</b> (int64_t first_pos, int64_t samples)</td></tr>
+<tr class="separator:a74b5948aeb1f677986a7f43e3db2903f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66cd38410c964e5a3adbbd07521d35dc"><td class="memItemLeft" align="right" valign="top"><a id="a66cd38410c964e5a3adbbd07521d35dc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>record_noecho</b> (int64_t first_pos, int64_t samples)</td></tr>
+<tr class="separator:a66cd38410c964e5a3adbbd07521d35dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf0b9b4df43473f75a1038306f4f93ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#abf0b9b4df43473f75a1038306f4f93ef">overdub</a> (int64_t first_pos, int64_t samples)</td></tr>
+<tr class="separator:abf0b9b4df43473f75a1038306f4f93ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadc91392d3d873690852745050363863"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#aadc91392d3d873690852745050363863">overdub_noecho</a> (int64_t first_pos, int64_t samples)</td></tr>
+<tr class="separator:aadc91392d3d873690852745050363863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a68568bb6bd41f1d6d38dcf40ae2151e6"><td class="memItemLeft" align="right" valign="top"><a id="a68568bb6bd41f1d6d38dcf40ae2151e6"></a>
+Audio Utilities&#160;</td><td class="memItemRight" valign="bottom"><b>https</b>: halp_meta(description</td></tr>
+<tr class="separator:a68568bb6bd41f1d6d38dcf40ae2151e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d25f8a9694a882bef311b12cf7e9698"><td class="memItemLeft" align="right" valign="top"><a id="a9d25f8a9694a882bef311b12cf7e9698"></a>
+struct <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1_inputs.html">Nodes::AudioLooper::Node::Inputs</a>&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
+<tr class="separator:a9d25f8a9694a882bef311b12cf7e9698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad02dc2a2f58225f35a8b8edce42e0b84"><td class="memItemLeft" ><a id="ad02dc2a2f58225f35a8b8edce42e0b84"></a>
+struct {</td></tr>
+<tr class="memitem:a9af3def4febaf563d9855b80f7e3f476"><td class="memItemLeft" >
+&#160;&#160;&#160;halp::mimic_audio_bus&lt;&quot;out&quot;, &amp;Inputs::audio &gt;&#160;&#160;&#160;<b>audio</b></td></tr>
+<tr class="separator:a9af3def4febaf563d9855b80f7e3f476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad02dc2a2f58225f35a8b8edce42e0b84"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b></td></tr>
+<tr class="separator:ad02dc2a2f58225f35a8b8edce42e0b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d9b6581d0fedc87b7b3093c54528e9f"><td class="memItemLeft" align="right" valign="top"><a id="a5d9b6581d0fedc87b7b3093c54528e9f"></a>
+struct <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html">Nodes::AudioLooper::Node::State</a>&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
+<tr class="separator:a5d9b6581d0fedc87b7b3093c54528e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e07bdad07701ca80c2a14c83ab41bf5"><td class="memItemLeft" align="right" valign="top"><a id="a0e07bdad07701ca80c2a14c83ab41bf5"></a>
+ossia::exec_state_facade&#160;</td><td class="memItemRight" valign="bottom"><b>ossia_state</b></td></tr>
+<tr class="separator:a0e07bdad07701ca80c2a14c83ab41bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9e8dc443bdef99a7549fcc2f3387ec64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e8dc443bdef99a7549fcc2f3387ec64">&#9670;&nbsp;</a></span>overdub()</h2>
+<a id="abf0b9b4df43473f75a1038306f4f93ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf0b9b4df43473f75a1038306f4f93ef">&#9670;&nbsp;</a></span>overdub()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -171,26 +216,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>item</b> (Proc
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void Nodes::AudioLooper::Node::overdub </td>
+          <td class="memname">void Nodes::AudioLooper::Node::overdub </td>
           <td>(</td>
-          <td class="paramtype">const ossia::audio_port &amp;&#160;</td>
-          <td class="paramname"><em>p1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ossia::audio_port &amp;&#160;</td>
-          <td class="paramname"><em>p2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html">State</a> &amp;&#160;</td>
-          <td class="paramname"><em>state</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">int64_t&#160;</td>
           <td class="paramname"><em>first_pos</em>, </td>
         </tr>
@@ -198,7 +225,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>item</b> (Proc
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int64_t&#160;</td>
-          <td class="paramname"><em>N</em>&#160;</td>
+          <td class="paramname"><em>samples</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -208,7 +235,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>item</b> (Proc
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -216,8 +243,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>item</b> (Proc
 
 </div>
 </div>
-<a id="ac510a2228d965fc11895afe577b8b870"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac510a2228d965fc11895afe577b8b870">&#9670;&nbsp;</a></span>overdub_noecho()</h2>
+<a id="aadc91392d3d873690852745050363863"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadc91392d3d873690852745050363863">&#9670;&nbsp;</a></span>overdub_noecho()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -226,26 +253,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>item</b> (Proc
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void Nodes::AudioLooper::Node::overdub_noecho </td>
+          <td class="memname">void Nodes::AudioLooper::Node::overdub_noecho </td>
           <td>(</td>
-          <td class="paramtype">const ossia::audio_port &amp;&#160;</td>
-          <td class="paramname"><em>p1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ossia::audio_port &amp;&#160;</td>
-          <td class="paramname"><em>p2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html">State</a> &amp;&#160;</td>
-          <td class="paramname"><em>state</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">int64_t&#160;</td>
           <td class="paramname"><em>first_pos</em>, </td>
         </tr>
@@ -253,7 +262,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>item</b> (Proc
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int64_t&#160;</td>
-          <td class="paramname"><em>N</em>&#160;</td>
+          <td class="paramname"><em>samples</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -263,7 +272,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>item</b> (Proc
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

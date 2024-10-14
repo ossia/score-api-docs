@@ -3,6 +3,7 @@ var class_j_s_1_1js__node =
     [ "js_node", "class_j_s_1_1js__node.html#a43835455e49a775d5c2439e43f5aba68", null ],
     [ "~js_node", "class_j_s_1_1js__node.html#a21d52d60637469a222b487e4c1c0d029", null ],
     [ "impulse", "class_j_s_1_1js__node.html#a360e2e3a53dda054c79005119aeb1a0d", null ],
+    [ "label", "class_j_s_1_1js__node.html#aec51e70e3a834bb384684d75d31a8ab7", null ],
     [ "run", "class_j_s_1_1js__node.html#a6c0ca4ad13c61062a859b06b407266e1", null ],
     [ "setControl", "class_j_s_1_1js__node.html#a244a38ef6599c8361dadb0e8a6c3ef97", null ],
     [ "setScript", "class_j_s_1_1js__node.html#a80ac971e4319c41b25acb08413258bd6", null ],

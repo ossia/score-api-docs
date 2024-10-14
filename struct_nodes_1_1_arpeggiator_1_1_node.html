@@ -95,22 +95,15 @@ $(document).ready(function(){initNavTree('struct_nodes_1_1_arpeggiator_1_1_node.
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_nodes_1_1_arpeggiator_1_1_node-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Nodes::Arpeggiator::Node Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_arpeggiator_1_1_node_1_1_metadata.html">Metadata</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html">State</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a5024d738a39e914a81d580a9be1b0c4b"><td class="memItemLeft" align="right" valign="top"><a id="a5024d738a39e914a81d580a9be1b0c4b"></a>
@@ -119,15 +112,67 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>byte</b> = unsigned 
 <tr class="memitem:ad4dce0e25db95343157ffaf4a86e0507"><td class="memItemLeft" align="right" valign="top"><a id="ad4dce0e25db95343157ffaf4a86e0507"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>chord</b> = ossia::small_vector&lt; std::pair&lt; byte, byte &gt;, 5 &gt;</td></tr>
 <tr class="separator:ad4dce0e25db95343157ffaf4a86e0507"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb2c6f15510b310d4c70bb985bf9ea0b"><td class="memItemLeft" align="right" valign="top"><a id="aeb2c6f15510b310d4c70bb985bf9ea0b"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>control_policy</b> = ossia::safe_nodes::precise_tick</td></tr>
-<tr class="separator:aeb2c6f15510b310d4c70bb985bf9ea0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc6235d60dc07412d0cf0c62fadf637d"><td class="memItemLeft" align="right" valign="top"><a id="adc6235d60dc07412d0cf0c62fadf637d"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> = halp::tick_musical</td></tr>
+<tr class="separator:adc6235d60dc07412d0cf0c62fadf637d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:af93285e334b497b4e58b929e80771be0"><td class="memItemLeft" align="right" valign="top"><a id="af93285e334b497b4e58b929e80771be0"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (const ossia::midi_port &amp;midi, int arpeggio, float octave, int quantif, ossia::midi_port &amp;out, ossia::token_request tk, ossia::exec_state_facade st, <a class="el" href="struct_nodes_1_1_arpeggiator_1_1_node_1_1_state.html">State</a> &amp;self)</td></tr>
-<tr class="separator:af93285e334b497b4e58b929e80771be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a1a9e032367efd03c7cdf0c637be32324"><td class="memItemLeft" align="right" valign="top"><a id="a1a9e032367efd03c7cdf0c637be32324"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (name, &quot;Arpeggiator&quot;) halp_meta(c_name</td></tr>
+<tr class="separator:a1a9e032367efd03c7cdf0c637be32324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3feefc9a1386c6e57965364ae7665d17"><td class="memItemLeft" align="right" valign="top"><a id="a3feefc9a1386c6e57965364ae7665d17"></a>
+Arpeggiator&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (category, &quot;Midi&quot;) halp_meta(author</td></tr>
+<tr class="separator:a3feefc9a1386c6e57965364ae7665d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7509a17c4eef89db3b9abf5b1f17d97"><td class="memItemLeft" align="right" valign="top"><a id="ae7509a17c4eef89db3b9abf5b1f17d97"></a>
+Arpeggiator ossia score&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (manual_url, &quot;https://ossia.io/score-docs/processes/midi-utilities.html#arpeggiator&quot;) halp_meta(description</td></tr>
+<tr class="separator:ae7509a17c4eef89db3b9abf5b1f17d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab601facb7ce0f447ed644ff6b6688b8f"><td class="memItemLeft" align="right" valign="top"><a id="ab601facb7ce0f447ed644ff6b6688b8f"></a>
+Arpeggiator ossia score Arpeggiator&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (uuid, &quot;0b98c7cd-f831-468f-81e3-706d6a97d705&quot;) struct</td></tr>
+<tr class="separator:ab601facb7ce0f447ed644ff6b6688b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98a41a2404675a745e9dd676dca70d2c"><td class="memItemLeft" align="right" valign="top"><a id="a98a41a2404675a745e9dd676dca70d2c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
+<tr class="separator:a98a41a2404675a745e9dd676dca70d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e84c353d1144a8eea0c92ed7c74a872"><td class="memItemLeft" align="right" valign="top"><a id="a5e84c353d1144a8eea0c92ed7c74a872"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>arpeggiate</b> (int size_mult)</td></tr>
+<tr class="separator:a5e84c353d1144a8eea0c92ed7c74a872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad732bf7fc5a85a63e3b37f9f6c74d2cc"><td class="memItemLeft" align="right" valign="top"><a id="ad732bf7fc5a85a63e3b37f9f6c74d2cc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>octavize</b> (std::size_t orig_size, int i)</td></tr>
+<tr class="separator:ad732bf7fc5a85a63e3b37f9f6c74d2cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44feef99ddfcc74ed85815aebcc819c7"><td class="memItemLeft" align="right" valign="top"><a id="a44feef99ddfcc74ed85815aebcc819c7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const halp::tick_musical &amp;tk)</td></tr>
+<tr class="separator:a44feef99ddfcc74ed85815aebcc819c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a5a4e159ad15a2ac03b24faa65ffbfcbc"><td class="memItemLeft" align="right" valign="top"><a id="a5a4e159ad15a2ac03b24faa65ffbfcbc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
+<tr class="separator:a5a4e159ad15a2ac03b24faa65ffbfcbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bbeda1a3d22244a58ac46a28b46ee78"><td class="memItemLeft" ><a id="a7bbeda1a3d22244a58ac46a28b46ee78"></a>
+struct {</td></tr>
+<tr class="memitem:af4b8c7761d506c7c03986ec98032cfd4"><td class="memItemLeft" >
+&#160;&#160;&#160;halp::midi_out_bus&lt;&quot;out&quot;, libremidi::message &gt;&#160;&#160;&#160;<b>midi</b></td></tr>
+<tr class="separator:af4b8c7761d506c7c03986ec98032cfd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bbeda1a3d22244a58ac46a28b46ee78"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b></td></tr>
+<tr class="separator:a7bbeda1a3d22244a58ac46a28b46ee78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf74ff8fad24fe03452919a19295f5bd"><td class="memItemLeft" align="right" valign="top"><a id="adf74ff8fad24fe03452919a19295f5bd"></a>
+ossia::flat_map&lt; byte, byte &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>notes</b></td></tr>
+<tr class="separator:adf74ff8fad24fe03452919a19295f5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dcc362e84e3ecf7bca68b08e60291a5"><td class="memItemLeft" align="right" valign="top"><a id="a8dcc362e84e3ecf7bca68b08e60291a5"></a>
+ossia::small_vector&lt; chord, 10 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>arpeggio</b></td></tr>
+<tr class="separator:a8dcc362e84e3ecf7bca68b08e60291a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06be436935f39262a28ffaef9d86754c"><td class="memItemLeft" align="right" valign="top"><a id="a06be436935f39262a28ffaef9d86754c"></a>
+std::array&lt; int8_t, 128 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>in_flight</b> {}</td></tr>
+<tr class="separator:a06be436935f39262a28ffaef9d86754c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9ea52d50bfaee6be054b67fd3bb5154"><td class="memItemLeft" align="right" valign="top"><a id="aa9ea52d50bfaee6be054b67fd3bb5154"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>previous_octave</b> {}</td></tr>
+<tr class="separator:aa9ea52d50bfaee6be054b67fd3bb5154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a496c3e5f40f722de385c29ef6469ca5c"><td class="memItemLeft" align="right" valign="top"><a id="a496c3e5f40f722de385c29ef6469ca5c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>previous_arpeggio</b> {}</td></tr>
+<tr class="separator:a496c3e5f40f722de385c29ef6469ca5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0556af2d7ec2582504a23bf5a618d550"><td class="memItemLeft" align="right" valign="top"><a id="a0556af2d7ec2582504a23bf5a618d550"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>index</b> {}</td></tr>
+<tr class="separator:a0556af2d7ec2582504a23bf5a618d550"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_arpeggiator_8hpp_source.html">Arpeggiator.hpp</a></li>

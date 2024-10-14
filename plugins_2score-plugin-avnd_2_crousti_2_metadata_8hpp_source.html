@@ -255,30 +255,37 @@ $(document).ready(function(){initNavTree('plugins_2score-plugin-avnd_2_crousti_2
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    }</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    {</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      <a class="code" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">Process::ProcessFlags</a> flags = <a class="code" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">Process::ProcessFlags</a>(</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;          Process::ProcessFlags::SupportsLasting</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;          | Process::ProcessFlags::ControlSurface);</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      <span class="keywordflow">if</span> constexpr(avnd::tag_single_exec&lt;Info&gt;)</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        flags |= Process::ProcessFlags::SupportsState;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;      <span class="keywordflow">return</span> flags;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    }</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  }</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;};</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Info&gt;</div>
-<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="struct_metadata_3_01_object_key__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html">  171</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_metadata.html">Metadata</a>&lt;<a class="code" href="class_object_key__k.html">ObjectKey_k</a>, <a class="code" href="namespaceoscr.html">oscr</a>::ProcessModel&lt;Info&gt;&gt;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;{</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keyword">static</span> constexpr <span class="keyword">auto</span> get() noexcept { <span class="keywordflow">return</span> avnd::get_c_name&lt;Info&gt;().data(); }</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;};</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Info&gt;</div>
-<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="struct_metadata_3_01_concrete_key__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html">  176</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_metadata.html">Metadata</a>&lt;ConcreteKey_k, <a class="code" href="namespaceoscr.html">oscr</a>::ProcessModel&lt;Info&gt;&gt;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;{</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keyword">static</span> Q_DECL_RELAXED_CONSTEXPR <a class="code" href="class_uuid_key.html">UuidKey&lt;Process::ProcessModel&gt;</a> get()</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  {</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordflow">return</span> oscr::uuid_from_string&lt;Info&gt;();</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  }</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;};</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      <a class="code" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">Process::ProcessFlags</a> flags{};</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      flags |= Process::ProcessFlags::ControlSurface;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;      <span class="keywordflow">if</span> constexpr(avnd::tag_temporal&lt;Info&gt;)</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        flags |= Process::ProcessFlags::SupportsTemporal;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        flags |= Process::ProcessFlags::SupportsLasting;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      <span class="keywordflow">if</span> constexpr(avnd::tag_single_exec&lt;Info&gt;)</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        flags |= Process::ProcessFlags::SupportsState;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      <span class="keywordflow">if</span> constexpr(avnd::tag_fully_custom_item&lt;Info&gt;)</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        flags |= Process::ProcessFlags::FullyCustomItem;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      <span class="keywordflow">return</span> flags;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  }</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;};</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Info&gt;</div>
+<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="struct_metadata_3_01_object_key__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html">  178</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_metadata.html">Metadata</a>&lt;<a class="code" href="class_object_key__k.html">ObjectKey_k</a>, <a class="code" href="namespaceoscr.html">oscr</a>::ProcessModel&lt;Info&gt;&gt;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;{</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keyword">static</span> constexpr <span class="keyword">auto</span> get() noexcept { <span class="keywordflow">return</span> avnd::get_c_name&lt;Info&gt;().data(); }</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;};</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Info&gt;</div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="struct_metadata_3_01_concrete_key__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html">  183</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_metadata.html">Metadata</a>&lt;ConcreteKey_k, <a class="code" href="namespaceoscr.html">oscr</a>::ProcessModel&lt;Info&gt;&gt;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;{</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="keyword">static</span> Q_DECL_RELAXED_CONSTEXPR <a class="code" href="class_uuid_key.html">UuidKey&lt;Process::ProcessModel&gt;</a> get()</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  {</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordflow">return</span> oscr::uuid_from_string&lt;Info&gt;();</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  }</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;};</div>
 <div class="ttc" id="aclass_category__k_html"><div class="ttname"><a href="class_category__k.html">Category_k</a></div><div class="ttdoc">Metadata to categorize objects: curves, audio, etc.</div><div class="ttdef"><b>Definition:</b> lib/score/tools/Metadata.hpp:61</div></div>
 <div class="ttc" id="aclass_object_key__k_html"><div class="ttname"><a href="class_object_key__k.html">ObjectKey_k</a></div><div class="ttdoc">Metadata to get the key part of ObjectIdentifier.</div><div class="ttdef"><b>Definition:</b> lib/score/tools/Metadata.hpp:36</div></div>
 <div class="ttc" id="aclass_pretty_name__k_html"><div class="ttname"><a href="class_pretty_name__k.html">PrettyName_k</a></div><div class="ttdoc">Metadata to get the name that will be shown in the user interface.</div><div class="ttdef"><b>Definition:</b> lib/score/tools/Metadata.hpp:42</div></div>
@@ -288,7 +295,7 @@ $(document).ready(function(){initNavTree('plugins_2score-plugin-avnd_2_crousti_2
 <div class="ttc" id="aclassoscr_1_1_process_model_html"><div class="ttname"><a href="classoscr_1_1_process_model.html">oscr::ProcessModel</a></div><div class="ttdef"><b>Definition:</b> score-plugin-avnd/Crousti/ProcessModel.hpp:73</div></div>
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1324</div></div>
 <div class="ttc" id="anamespace_process_html_a592bb361ebf8fbc09c929c93208c71f1"><div class="ttname"><a href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">Process::ProcessFlags</a></div><div class="ttdeci">ProcessFlags</div><div class="ttdoc">Various settings for processes.</div><div class="ttdef"><b>Definition:</b> ProcessFlags.hpp:17</div></div>
-<div class="ttc" id="anamespaceoscr_html"><div class="ttname"><a href="namespaceoscr.html">oscr</a></div><div class="ttdef"><b>Definition:</b> Factories.hpp:18</div></div>
+<div class="ttc" id="anamespaceoscr_html"><div class="ttname"><a href="namespaceoscr.html">oscr</a></div><div class="ttdef"><b>Definition:</b> Factories.hpp:19</div></div>
 <div class="ttc" id="astruct_metadata_html"><div class="ttname"><a href="struct_metadata.html">Metadata</a></div><div class="ttdoc">Static metadata implementation.</div><div class="ttdef"><b>Definition:</b> lib/score/tools/Metadata.hpp:36</div></div>
 <div class="ttc" id="astruct_process_1_1_descriptor_html"><div class="ttname"><a href="struct_process_1_1_descriptor.html">Process::Descriptor</a></div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/ProcessMetadata.hpp:37</div></div>
 </div><!-- fragment --></div><!-- contents -->

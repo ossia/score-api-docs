@@ -518,7 +518,7 @@ $(document).ready(function(){initNavTree('_gist_state_8hpp_source.html',''); ini
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        git-&gt;processAudioFrame(data(channel), samples, gain, gate);</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160; </div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        decltype(<span class="keyword">auto</span>) res = ((*git).*Func)();</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        SCORE_ASSERT(res.size() &lt;= d);</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        SCORE_ASSERT(std::ssize(res) &lt;= d);</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;        std::copy_n(res.begin(), res.size(), *it);</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;      }</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;      ++it;</div>
