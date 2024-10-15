@@ -178,7 +178,7 @@ $(document).ready(function(){initNavTree('_quantifier_8hpp_source.html',''); ini
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span> note : running_notes)</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      if(note.note.pitch == new_note.pitch)</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        return;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    to_start.emplace_back(new_note, date);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    to_start.push_back(NoteIn{new_note, date});</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  }</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> tick&amp; tk)</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  {</div>
