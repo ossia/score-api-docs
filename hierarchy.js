@@ -709,7 +709,7 @@ var hierarchy =
       [ "TSerializer< JSONObject, score::EntityMap< T, O > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01score_1_1_entity_map_3_01_t_00_01_o_01_4_01_4.html", null ]
     ] ],
     [ "WidgetFactory::Enum", "struct_widget_factory_1_1_enum.html", null ],
-    [ "magic_enum::customize::enum_range< Nodes::MidiUtil::scale >", "structmagic__enum_1_1customize_1_1enum__range_3_01_nodes_1_1_midi_util_1_1scale_01_4.html", null ],
+    [ "magic_enum::customize::enum_range< Nodes::MidiUtil::scale_type >", "structmagic__enum_1_1customize_1_1enum__range_3_01_nodes_1_1_midi_util_1_1scale__type_01_4.html", null ],
     [ "HierarchicalBaseScenario< Component_T, BaseScenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T >::EventPair", "struct_hierarchical_base_scenario_1_1_event_pair.html", null ],
     [ "HierarchicalScenarioComponent< Component_T, Scenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T, HasOwnership >::EventPair", "struct_hierarchical_scenario_component_1_1_event_pair.html", null ],
     [ "score::EventVisitor< Event >", "structscore_1_1_event_visitor.html", null ],
@@ -1025,8 +1025,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< model >", "classid__base__t.html", null ],
+    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1074,8 +1074,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -2904,7 +2904,6 @@ var hierarchy =
       [ "JS::ConsoleLibraryHandler", "class_j_s_1_1_console_library_handler.html", null ],
       [ "JS::DeviceContext", "class_j_s_1_1_device_context.html", null ],
       [ "JS::EditJsContext", "class_j_s_1_1_edit_js_context.html", null ],
-      [ "JS::ExecStateWrapper", "class_j_s_1_1_exec_state_wrapper.html", null ],
       [ "JS::Inlet", "class_j_s_1_1_inlet.html", [
         [ "JS::AudioInlet", "class_j_s_1_1_audio_inlet.html", null ],
         [ "JS::ControlInlet", "class_j_s_1_1_control_inlet.html", [

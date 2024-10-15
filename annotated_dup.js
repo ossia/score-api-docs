@@ -674,7 +674,6 @@ var annotated_dup =
       [ "EditJsContext", "class_j_s_1_1_edit_js_context.html", "class_j_s_1_1_edit_js_context" ],
       [ "EditScript", "class_j_s_1_1_edit_script.html", null ],
       [ "Enum", "class_j_s_1_1_enum.html", null ],
-      [ "ExecStateWrapper", "class_j_s_1_1_exec_state_wrapper.html", "class_j_s_1_1_exec_state_wrapper" ],
       [ "ExecutionStateValueType", "struct_j_s_1_1_execution_state_value_type.html", null ],
       [ "FileChooser", "struct_j_s_1_1_file_chooser.html", null ],
       [ "FloatRangeSpinBox", "struct_j_s_1_1_float_range_spin_box.html", null ],
@@ -791,7 +790,7 @@ var annotated_dup =
     ] ],
     [ "magic_enum", null, [
       [ "customize", null, [
-        [ "enum_range< Nodes::MidiUtil::scale >", "structmagic__enum_1_1customize_1_1enum__range_3_01_nodes_1_1_midi_util_1_1scale_01_4.html", null ]
+        [ "enum_range< Nodes::MidiUtil::scale_type >", "structmagic__enum_1_1customize_1_1enum__range_3_01_nodes_1_1_midi_util_1_1scale__type_01_4.html", null ]
       ] ]
     ] ],
     [ "Mapping", null, [

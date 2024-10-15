@@ -1,7 +1,5 @@
 var NAVTREEINDEX21 =
 {
-"struct_midi_1_1_midi_track.html":[12,0,33,8],
-"struct_midi_1_1_midi_track_1_1_midi_song.html":[12,0,33,8,0],
 "struct_midi_1_1_note_comparator.html":[12,0,33,11],
 "struct_midi_1_1_note_data.html":[12,0,33,12],
 "struct_mime.html":[12,0,161],
@@ -249,5 +247,7 @@ var NAVTREEINDEX21 =
 "struct_scenario_1_1_element_traits_3_01_scenario_1_1_scenario_interface_00_01_interval_model_01_4.html":[12,0,48,84],
 "struct_scenario_1_1_element_traits_3_01_scenario_1_1_scenario_interface_00_01_interval_model_01_4.html":[11,0,12,82],
 "struct_scenario_1_1_element_traits_3_01_scenario_1_1_scenario_interface_00_01_state_model_01_4.html":[12,0,48,85],
-"struct_scenario_1_1_element_traits_3_01_scenario_1_1_scenario_interface_00_01_state_model_01_4.html":[11,0,12,83]
+"struct_scenario_1_1_element_traits_3_01_scenario_1_1_scenario_interface_00_01_state_model_01_4.html":[11,0,12,83],
+"struct_scenario_1_1_element_traits_3_01_scenario_1_1_scenario_interface_00_01_time_sync_model_01_4.html":[11,0,12,84],
+"struct_scenario_1_1_element_traits_3_01_scenario_1_1_scenario_interface_00_01_time_sync_model_01_4.html":[12,0,48,86]
 };

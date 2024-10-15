@@ -1,7 +1,5 @@
 var NAVTREEINDEX19 =
 {
-"score-plugin-js_2_j_s_2_executor_2_gpu_node_8hpp_source.html":[13,0,0,2,19,0,1,3],
-"score-plugin-js_2_j_s_2_qml_2_metatypes_8hpp_source.html":[13,0,0,2,19,0,2,3],
 "score-plugin-js_2_j_s_2_qml_2_utils_8hpp_source.html":[13,0,0,2,19,0,2,7],
 "score-plugin-lv2_2_l_v2_2_application_plugin_8hpp_source.html":[13,0,0,2,21,0,0],
 "score-plugin-lv2_2_l_v2_2_effect_model_8hpp_source.html":[13,0,0,2,21,0,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX19 =
 "struct_execution_1_1_setup_context_1_1_registered_ports.html":[11,0,5,39,0],
 "struct_execution_1_1_time_sync_execution_callbacks.html":[11,0,5,45],
 "struct_execution_1_1_time_sync_execution_callbacks.html":[12,0,12,47],
-"struct_execution_1_1_transaction.html":[11,0,5,46]
+"struct_execution_1_1_transaction.html":[11,0,5,46],
+"struct_execution_1_1_transaction.html":[12,0,12,48],
+"struct_execution_1_1dfs__visitor.html":[11,0,5,6]
 };

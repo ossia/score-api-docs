@@ -1,7 +1,5 @@
 var NAVTREEINDEX23 =
 {
-"struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1unordered__map_3_01_t_00_01_u_00_01_h_00_01_e_00_01_a_01_4_01_4.html":[12,0,370],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1vector_3_01_args_8_8_8_01_4_01_4.html":[12,0,371],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1vector_3_01_t_01_5_00_01_alloc_01_4_01_4.html":[12,0,372],
 "struct_time_val.html":[12,0,263],
 "struct_ui_1_1_signal_display_1_1_node.html":[12,0,56,0,0],
@@ -111,7 +109,7 @@ var NAVTREEINDEX23 =
 "structis__shared__ptr.html":[12,0,131],
 "structis__shared__ptr_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html":[12,0,132],
 "structjk_1_1value.html":[12,0,25,0],
-"structmagic__enum_1_1customize_1_1enum__range_3_01_nodes_1_1_midi_util_1_1scale_01_4.html":[12,0,30,0,0],
+"structmagic__enum_1_1customize_1_1enum__range_3_01_nodes_1_1_midi_util_1_1scale__type_01_4.html":[12,0,30,0,0],
 "structmatches.html":[12,0,143],
 "structoscr_1_1_apply_engine_control_change_to_u_i.html":[12,0,37,0],
 "structoscr_1_1_apply_engine_control_change_to_u_i.html":[11,0,9,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX23 =
 "structscore_1_1_application_settings.html#a6ccaa699bec50370335dd173c0d8c55a":[12,0,49,25,10],
 "structscore_1_1_application_settings.html#a761ffb07905a9fa1234563f8bd559714":[11,0,13,20,8],
 "structscore_1_1_application_settings.html#a761ffb07905a9fa1234563f8bd559714":[12,0,49,25,8],
-"structscore_1_1_application_settings.html#ac4485606b08677be4115260f2e30b241":[11,0,13,20,5]
+"structscore_1_1_application_settings.html#ac4485606b08677be4115260f2e30b241":[11,0,13,20,5],
+"structscore_1_1_application_settings.html#ac4485606b08677be4115260f2e30b241":[12,0,49,25,5],
+"structscore_1_1_application_settings.html#adf1c9cd0f8980bf337fb2ba639553011":[12,0,49,25,11]
 };

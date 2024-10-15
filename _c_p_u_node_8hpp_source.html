@@ -133,93 +133,95 @@ $(document).ready(function(){initNavTree('_c_p_u_node_8hpp_source.html',''); ini
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;ossia-qt/js_utilities.hpp&gt;</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;ossia-qt/time.hpp&gt;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;ossia-qt/token_request.hpp&gt;</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">namespace </span>JS</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="foldopen" id="foldopen00028" data-start="{" data-end="};">
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_j_s_1_1js__node.html">   28</a></span><span class="keyword">class </span><a class="code hl_class" href="class_j_s_1_1js__node.html">js_node</a> final : <span class="keyword">public</span> ossia::graph_node</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keyword">explicit</span> <a class="code hl_class" href="class_j_s_1_1js__node.html">js_node</a>(ossia::execution_state&amp; st);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <a class="code hl_class" href="class_j_s_1_1js__node.html">~js_node</a>();</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  [[nodiscard]] std::string label() <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span> { <span class="keywordflow">return</span> <span class="stringliteral">&quot;javascript&quot;</span>; }</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordtype">void</span> run(<span class="keyword">const</span> ossia::token_request&amp; t, ossia::exec_state_facade) <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keywordtype">void</span> setupComponent();</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordtype">void</span> setScript(<span class="keyword">const</span> QString&amp; val);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  ossia::execution_state&amp; m_st;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  QQmlEngine* m_engine{};</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  std::vector&lt;Inlet*&gt; m_jsInlets;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  std::vector&lt;std::pair&lt;ControlInlet*, ossia::inlet_ptr&gt;&gt; m_ctrlInlets;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  std::vector&lt;std::pair&lt;Impulse*, ossia::inlet_ptr&gt;&gt; m_impulseInlets;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  std::vector&lt;std::pair&lt;ValueInlet*, ossia::inlet_ptr&gt;&gt; m_valInlets;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  std::vector&lt;std::pair&lt;ValueOutlet*, ossia::outlet_ptr&gt;&gt; m_valOutlets;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  std::vector&lt;std::pair&lt;AudioInlet*, ossia::inlet_ptr&gt;&gt; m_audInlets;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  std::vector&lt;std::pair&lt;AudioOutlet*, ossia::outlet_ptr&gt;&gt; m_audOutlets;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  std::vector&lt;std::pair&lt;MidiInlet*, ossia::inlet_ptr&gt;&gt; m_midInlets;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  std::vector&lt;std::pair&lt;MidiOutlet*, ossia::outlet_ptr&gt;&gt; m_midOutlets;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <a class="code hl_class" href="class_j_s_1_1_script.html">JS::Script</a>* m_object{};</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <a class="code hl_class" href="class_j_s_1_1_exec_state_wrapper.html">ExecStateWrapper</a>* m_execFuncs{};</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  QJSValueList m_tickCall;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  std::size_t m_gcIndex{};</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordtype">bool</span> triggerStart{};</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keywordtype">bool</span> triggerStop{};</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keywordtype">bool</span> triggerPause{};</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keywordtype">bool</span> triggerResume{};</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="keywordtype">void</span> setControl(std::size_t index, <span class="keyword">const</span> QVariant&amp; val)</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  {</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">if</span>(index &gt; m_jsInlets.size())</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordflow">if</span>(<span class="keyword">auto</span> v = qobject_cast&lt;ValueInlet*&gt;(m_jsInlets[index]))</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>      v-&gt;setValue(val);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<span class="keyword">auto</span> v = qobject_cast&lt;ControlInlet*&gt;(m_jsInlets[index]))</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>      v-&gt;setValue(val);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  }</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordtype">void</span> impulse(std::size_t index)</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  {</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordflow">if</span>(index &gt; m_jsInlets.size())</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordflow">if</span>(<span class="keyword">auto</span> v = qobject_cast&lt;Impulse*&gt;(m_jsInlets[index]))</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>      v-&gt;impulse();</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  }</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>};</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span>ossia::qt</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">class </span>qml_engine_functions;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">namespace </span>JS</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_j_s_1_1js__node.html">   31</a></span><span class="keyword">class </span><a class="code hl_class" href="class_j_s_1_1js__node.html">js_node</a> final : <span class="keyword">public</span> ossia::graph_node</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keyword">explicit</span> <a class="code hl_class" href="class_j_s_1_1js__node.html">js_node</a>(ossia::execution_state&amp; st);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <a class="code hl_class" href="class_j_s_1_1js__node.html">~js_node</a>();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  [[nodiscard]] std::string label() <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span> { <span class="keywordflow">return</span> <span class="stringliteral">&quot;javascript&quot;</span>; }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">void</span> run(<span class="keyword">const</span> ossia::token_request&amp; t, ossia::exec_state_facade) <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keywordtype">void</span> setupComponent();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keywordtype">void</span> setScript(<span class="keyword">const</span> QString&amp; val);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  ossia::execution_state&amp; m_st;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  QQmlEngine* m_engine{};</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  std::vector&lt;Inlet*&gt; m_jsInlets;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  std::vector&lt;std::pair&lt;ControlInlet*, ossia::inlet_ptr&gt;&gt; m_ctrlInlets;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  std::vector&lt;std::pair&lt;Impulse*, ossia::inlet_ptr&gt;&gt; m_impulseInlets;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  std::vector&lt;std::pair&lt;ValueInlet*, ossia::inlet_ptr&gt;&gt; m_valInlets;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  std::vector&lt;std::pair&lt;ValueOutlet*, ossia::outlet_ptr&gt;&gt; m_valOutlets;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  std::vector&lt;std::pair&lt;AudioInlet*, ossia::inlet_ptr&gt;&gt; m_audInlets;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  std::vector&lt;std::pair&lt;AudioOutlet*, ossia::outlet_ptr&gt;&gt; m_audOutlets;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  std::vector&lt;std::pair&lt;MidiInlet*, ossia::inlet_ptr&gt;&gt; m_midInlets;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  std::vector&lt;std::pair&lt;MidiOutlet*, ossia::outlet_ptr&gt;&gt; m_midOutlets;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <a class="code hl_class" href="class_j_s_1_1_script.html">JS::Script</a>* m_object{};</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  ossia::qt::qml_engine_functions* m_execFuncs{};</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  QJSValueList m_tickCall;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  std::size_t m_gcIndex{};</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keywordtype">bool</span> triggerStart{};</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keywordtype">bool</span> triggerStop{};</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="keywordtype">bool</span> triggerPause{};</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordtype">bool</span> triggerResume{};</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordtype">void</span> setControl(std::size_t index, <span class="keyword">const</span> QVariant&amp; val)</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">if</span>(index &gt; m_jsInlets.size())</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">if</span>(<span class="keyword">auto</span> v = qobject_cast&lt;ValueInlet*&gt;(m_jsInlets[index]))</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>      v-&gt;setValue(val);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<span class="keyword">auto</span> v = qobject_cast&lt;ControlInlet*&gt;(m_jsInlets[index]))</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>      v-&gt;setValue(val);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="keywordtype">void</span> impulse(std::size_t index)</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordflow">if</span>(index &gt; m_jsInlets.size())</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordflow">if</span>(<span class="keyword">auto</span> v = qobject_cast&lt;Impulse*&gt;(m_jsInlets[index]))</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>      v-&gt;impulse();</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>};</div>
 </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="foldopen" id="foldopen00080" data-start="{" data-end="};">
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="struct_j_s_1_1js__process.html">   80</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_j_s_1_1js__process.html">js_process</a> final : <span class="keyword">public</span> ossia::node_process</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>{</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keyword">using </span>node_process::node_process;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <a class="code hl_class" href="class_j_s_1_1js__node.html">js_node</a>&amp; js()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code hl_class" href="class_j_s_1_1js__node.html">js_node</a>&amp;<span class="keyword">&gt;</span>(*node); }</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <span class="keywordtype">void</span> start()<span class="keyword"> override </span>{ js().triggerStart = <span class="keyword">true</span>; }</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <span class="keywordtype">void</span> stop()<span class="keyword"> override </span>{ js().triggerStop = <span class="keyword">true</span>; }</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <span class="keywordtype">void</span> pause()<span class="keyword"> override </span>{ js().triggerPause = <span class="keyword">true</span>; }</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <span class="keywordtype">void</span> resume()<span class="keyword"> override </span>{ js().triggerResume = <span class="keyword">true</span>; }</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="keywordtype">void</span> transport_impl(ossia::time_value date)<span class="keyword"> override</span></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keyword">  </span>{</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    QMetaObject::invokeMethod(</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        js().m_object, <span class="stringliteral">&quot;transport&quot;</span>, Qt::DirectConnection,</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        Q_ARG(QVariant, <span class="keywordtype">double</span>(date.impl)));</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  }</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="keywordtype">void</span> offset_impl(ossia::time_value date)<span class="keyword"> override</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="keyword">  </span>{</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    QMetaObject::invokeMethod(</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        js().m_object, <span class="stringliteral">&quot;offset&quot;</span>, Qt::DirectConnection,</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        Q_ARG(QVariant, <span class="keywordtype">double</span>(date.impl)));</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  }</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>};</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="foldopen" id="foldopen00083" data-start="{" data-end="};">
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="struct_j_s_1_1js__process.html">   83</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_j_s_1_1js__process.html">js_process</a> final : <span class="keyword">public</span> ossia::node_process</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>{</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <span class="keyword">using </span>node_process::node_process;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <a class="code hl_class" href="class_j_s_1_1js__node.html">js_node</a>&amp; js()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code hl_class" href="class_j_s_1_1js__node.html">js_node</a>&amp;<span class="keyword">&gt;</span>(*node); }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <span class="keywordtype">void</span> start()<span class="keyword"> override </span>{ js().triggerStart = <span class="keyword">true</span>; }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="keywordtype">void</span> stop()<span class="keyword"> override </span>{ js().triggerStop = <span class="keyword">true</span>; }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keywordtype">void</span> pause()<span class="keyword"> override </span>{ js().triggerPause = <span class="keyword">true</span>; }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="keywordtype">void</span> resume()<span class="keyword"> override </span>{ js().triggerResume = <span class="keyword">true</span>; }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="keywordtype">void</span> transport_impl(ossia::time_value date)<span class="keyword"> override</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    QMetaObject::invokeMethod(</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        js().m_object, <span class="stringliteral">&quot;transport&quot;</span>, Qt::DirectConnection,</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        Q_ARG(QVariant, <span class="keywordtype">double</span>(date.impl)));</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="keywordtype">void</span> offset_impl(ossia::time_value date)<span class="keyword"> override</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    QMetaObject::invokeMethod(</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        js().m_object, <span class="stringliteral">&quot;offset&quot;</span>, Qt::DirectConnection,</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        Q_ARG(QVariant, <span class="keywordtype">double</span>(date.impl)));</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  }</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>};</div>
 </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}</div>
-<div class="ttc" id="aclass_j_s_1_1_exec_state_wrapper_html"><div class="ttname"><a href="class_j_s_1_1_exec_state_wrapper.html">JS::ExecStateWrapper</a></div><div class="ttdef"><b>Definition</b> JSAPIWrapper.hpp:31</div></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>}</div>
 <div class="ttc" id="aclass_j_s_1_1_script_html"><div class="ttname"><a href="class_j_s_1_1_script.html">JS::Script</a></div><div class="ttdef"><b>Definition</b> QmlObjects.hpp:575</div></div>
-<div class="ttc" id="aclass_j_s_1_1js__node_html"><div class="ttname"><a href="class_j_s_1_1js__node.html">JS::js_node</a></div><div class="ttdef"><b>Definition</b> CPUNode.hpp:29</div></div>
-<div class="ttc" id="astruct_j_s_1_1js__process_html"><div class="ttname"><a href="struct_j_s_1_1js__process.html">JS::js_process</a></div><div class="ttdef"><b>Definition</b> CPUNode.hpp:81</div></div>
+<div class="ttc" id="aclass_j_s_1_1js__node_html"><div class="ttname"><a href="class_j_s_1_1js__node.html">JS::js_node</a></div><div class="ttdef"><b>Definition</b> CPUNode.hpp:32</div></div>
+<div class="ttc" id="astruct_j_s_1_1js__process_html"><div class="ttname"><a href="struct_j_s_1_1js__process.html">JS::js_process</a></div><div class="ttdef"><b>Definition</b> CPUNode.hpp:84</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

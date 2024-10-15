@@ -1,7 +1,5 @@
 var NAVTREEINDEX26 =
 {
-"structstd_1_1hash_3_01_device_1_1_full_address_settings_01_4.html":[11,0,15,0],
-"structstd_1_1hash_3_01_device_1_1_full_address_settings_01_4.html":[12,0,54,0],
 "structstd_1_1hash_3_01_gfx_1_1_shader_source_01_4.html":[12,0,54,1],
 "structstd_1_1hash_3_01_gfx_1_1_shader_source_01_4.html":[11,0,15,1],
 "structstd_1_1hash_3_01_path_3_01tag_01_4_01_4.html":[11,0,15,3],

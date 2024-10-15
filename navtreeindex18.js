@@ -1,7 +1,5 @@
 var NAVTREEINDEX18 =
 {
-"functions_e.html":[12,3,0,3],
-"functions_f.html":[12,3,0,4],
 "functions_func.html":[12,3,1,0],
 "functions_func.html":[12,3,1],
 "functions_func_c.html":[12,3,1,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX18 =
 "score-plugin-jit_2_jit_cpp_2_edit_script_8hpp_source.html":[13,0,0,2,18,2,6],
 "score-plugin-js_2_j_s_2_application_plugin_8hpp_source.html":[13,0,0,2,19,0,3],
 "score-plugin-js_2_j_s_2_commands_2_edit_script_8hpp_source.html":[13,0,0,2,19,0,0,0],
-"score-plugin-js_2_j_s_2_commands_2_script_macro_8hpp_source.html":[13,0,0,2,19,0,0,2]
+"score-plugin-js_2_j_s_2_commands_2_script_macro_8hpp_source.html":[13,0,0,2,19,0,0,2],
+"score-plugin-js_2_j_s_2_executor_2_gpu_node_8hpp_source.html":[13,0,0,2,19,0,1,3],
+"score-plugin-js_2_j_s_2_qml_2_metatypes_8hpp_source.html":[13,0,0,2,19,0,2,3]
 };
