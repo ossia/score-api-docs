@@ -1,4 +1,0 @@
-var struct_t_serializer_3_01_data_stream_00_01oscr_1_1_custom_float_control_3_01_node_00_01_field_index_01_4_01_4 =
-[
-    [ "model_type", "struct_t_serializer_3_01_data_stream_00_01oscr_1_1_custom_float_control_3_01_node_00_01_field_index_01_4_01_4.html#a71185e247b68b9dd03666e0f3124c921", null ]
-];

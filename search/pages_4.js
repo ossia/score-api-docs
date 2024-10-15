@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['plug_2dins_2c_20factories_20and_20interfaces_5789',['Plug-ins, factories and interfaces',['../_plugins_factories_and_interfaces.html',1,'']]]
+  ['graphics_20plug_20ins_0',['Graphics plug-ins',['../_gfx_plugins.html',1,'']]]
 ];

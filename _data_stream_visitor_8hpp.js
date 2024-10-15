@@ -9,17 +9,10 @@ var _data_stream_visitor_8hpp =
     [ "TSerializer< DataStream, std::array< T, N > >", "struct_t_serializer_3_01_data_stream_00_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html", null ],
     [ "TSerializer< DataStream, ossia::small_vector< T, N > >", "struct_t_serializer_3_01_data_stream_00_01ossia_1_1small__vector_3_01_t_00_01_n_01_4_01_4.html", null ],
     [ "TSerializer< DataStream, ossia::static_vector< T, N > >", "struct_t_serializer_3_01_data_stream_00_01ossia_1_1static__vector_3_01_t_00_01_n_01_4_01_4.html", null ],
+    [ "TSerializer< DataStream, std::vector< T, Alloc > >", "struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01_t_00_01_alloc_01_4_01_4.html", null ],
+    [ "TSerializer< DataStream, boost::container::vector< T, Alloc > >", "struct_t_serializer_3_01_data_stream_00_01boost_1_1container_1_1vector_3_01_t_00_01_alloc_01_4_01_4.html", null ],
     [ "TSerializer< DataStream, std::vector< bool > >", "struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01bool_01_4_01_4.html", null ],
-    [ "TSerializer< DataStream, ossia::flat_set< T > >", "struct_t_serializer_3_01_data_stream_00_01ossia_1_1flat__set_3_01_t_01_4_01_4.html", "struct_t_serializer_3_01_data_stream_00_01ossia_1_1flat__set_3_01_t_01_4_01_4" ],
-    [ "TSerializer< DataStream, std::pair< T, U > >", "struct_t_serializer_3_01_data_stream_00_01std_1_1pair_3_01_t_00_01_u_01_4_01_4.html", "struct_t_serializer_3_01_data_stream_00_01std_1_1pair_3_01_t_00_01_u_01_4_01_4" ],
-    [ "TSerializer< DataStream, std::shared_ptr< T > >", "struct_t_serializer_3_01_data_stream_00_01std_1_1shared__ptr_3_01_t_01_4_01_4.html", "struct_t_serializer_3_01_data_stream_00_01std_1_1shared__ptr_3_01_t_01_4_01_4" ],
-    [ "operator<<", "_data_stream_visitor_8hpp.html#a22b1586d6107c02c1286b7b18b451ac7", null ],
-    [ "operator>>", "_data_stream_visitor_8hpp.html#a767c227e21388595e9b74c1d7ab8b35b", null ],
-    [ "readFrom", "_data_stream_visitor_8hpp.html#a83358ede0d6cf1f5ff55ebf341381738", null ],
-    [ "requires", "_data_stream_visitor_8hpp.html#a5d8c400380d4c76c1a7ba35ba8aee291", null ],
-    [ "requires", "_data_stream_visitor_8hpp.html#a1cdb060c72caed6bfa94b26e9631cb7c", null ],
-    [ "requires", "_data_stream_visitor_8hpp.html#ad6c3095d14c4e4fe6714b1e62920f999", null ],
-    [ "writeTo", "_data_stream_visitor_8hpp.html#a2d3644ba3703c6c874499e19b7e7de6c", null ],
-    [ "obj", "_data_stream_visitor_8hpp.html#a1beceed215cccbf241e8f38457cb5b35", null ],
-    [ "s", "_data_stream_visitor_8hpp.html#ab7123126e4885ef647dd9c6e3807a21c", null ]
+    [ "TSerializer< DataStream, ossia::flat_set< T > >", "struct_t_serializer_3_01_data_stream_00_01ossia_1_1flat__set_3_01_t_01_4_01_4.html", null ],
+    [ "TSerializer< DataStream, std::pair< T, U > >", "struct_t_serializer_3_01_data_stream_00_01std_1_1pair_3_01_t_00_01_u_01_4_01_4.html", null ],
+    [ "TSerializer< DataStream, std::shared_ptr< T > >", "struct_t_serializer_3_01_data_stream_00_01std_1_1shared__ptr_3_01_t_01_4_01_4.html", null ]
 ];

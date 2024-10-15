@@ -1,8 +1,5 @@
 var classscore_1_1_g_u_i_application_plugin =
 [
-    [ "GUIElements", "classscore_1_1_g_u_i_application_plugin.html#a45b38739c51b1dd0e42e238a3f061e08", null ],
-    [ "GUIApplicationPlugin", "classscore_1_1_g_u_i_application_plugin.html#aba3e49da450d061909daaab4f4847f28", null ],
-    [ "~GUIApplicationPlugin", "classscore_1_1_g_u_i_application_plugin.html#afe12d8e5b8dd3c0b4f78d3dfe55fe9e3", null ],
     [ "afterStartup", "classscore_1_1_g_u_i_application_plugin.html#ad90d1cf2a9a177224bac1aa476c57e41", null ],
     [ "currentDocument", "classscore_1_1_g_u_i_application_plugin.html#ab9b7f92447cd8f8e62856f3ca5159890", null ],
     [ "handleLoading", "classscore_1_1_g_u_i_application_plugin.html#aed04dd085c25410762a19da719d4d0b1", null ],
@@ -16,6 +13,5 @@ var classscore_1_1_g_u_i_application_plugin =
     [ "on_keyReleaseEvent", "classscore_1_1_g_u_i_application_plugin.html#a05683f211b55c61f104b5a6004db9240", null ],
     [ "on_loadedDocument", "classscore_1_1_g_u_i_application_plugin.html#a4ac5df59d48c03c0517f3bba8f8022a9", null ],
     [ "on_newDocument", "classscore_1_1_g_u_i_application_plugin.html#a6eb40d143abe1b1232d9ba277cdbae26", null ],
-    [ "prepareNewDocument", "classscore_1_1_g_u_i_application_plugin.html#a6bfc9f3a1bafd2109ebfcad1c28000c1", null ],
-    [ "context", "classscore_1_1_g_u_i_application_plugin.html#ababf38f495b0fd0e30263c6bb65d2e5b", null ]
+    [ "prepareNewDocument", "classscore_1_1_g_u_i_application_plugin.html#a6bfc9f3a1bafd2109ebfcad1c28000c1", null ]
 ];
