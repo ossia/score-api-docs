@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('_looper_8hpp_source.html',''); initRes
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    halp::dynamic_audio_bus&lt;<span class="stringliteral">&quot;in&quot;</span>, <span class="keywordtype">double</span>&gt; audio;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    halp::enum_t&lt;LoopMode, <span class="stringliteral">&quot;Loop&quot;</span>&gt; mode;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    halp::hslider_f32&lt;<span class="stringliteral">&quot;Quantif&quot;</span>&gt; quantif;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    halp::toggle&lt;<span class="stringliteral">&quot;Passthrough&quot;</span>, {<span class="keyword">true</span>}&gt; passthrough;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    halp::toggle&lt;<span class="stringliteral">&quot;Passthrough&quot;</span>, halp::toggle_setup{.init = <span class="keyword">true</span>}&gt; passthrough;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    halp::enum_t&lt;Postaction, <span class="stringliteral">&quot;Postaction&quot;</span>&gt; postaction;</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    halp::spinbox_i32&lt;<span class="stringliteral">&quot;Bars&quot;</span>, halp::irange{0, 64, 4}&gt; postaction_bars;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  } inputs;</div>
