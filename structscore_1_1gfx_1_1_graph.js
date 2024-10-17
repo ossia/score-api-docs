@@ -1,6 +1,7 @@
 var structscore_1_1gfx_1_1_graph =
 [
     [ "Graph", "structscore_1_1gfx_1_1_graph.html#a657e52f4fed5ca3becc4d019b775e34c", null ],
+    [ "~Graph", "structscore_1_1gfx_1_1_graph.html#acde595656cc0df87f2ced26a8c146a63", null ],
     [ "addAndLinkEdge", "structscore_1_1gfx_1_1_graph.html#a30516df5d2ae6aa857533489e7e34c19", null ],
     [ "addEdge", "structscore_1_1gfx_1_1_graph.html#a27b1df43407c54984e12e5717382c983", null ],
     [ "addNode", "structscore_1_1gfx_1_1_graph.html#ac01ddf31f96f7f24e070fba6635f9993", null ],
@@ -12,6 +13,7 @@ var structscore_1_1gfx_1_1_graph =
     [ "relinkGraph", "structscore_1_1gfx_1_1_graph.html#a2053b9d1b4c0466c9cc5fe87be8cb5a5", null ],
     [ "removeEdge", "structscore_1_1gfx_1_1_graph.html#a502b4abc23e8335948bec9e052ddef1c", null ],
     [ "removeNode", "structscore_1_1gfx_1_1_graph.html#a1693837e0d684408bb84af3f619cfc8a", null ],
+    [ "renderLists", "structscore_1_1gfx_1_1_graph.html#a8a3a244d4b543fc342abfb53b78896cf", null ],
     [ "setVSyncCallback", "structscore_1_1gfx_1_1_graph.html#a45f84cb4eb3648b7cb42c45e46e44575", null ],
     [ "unlinkAndRemoveEdge", "structscore_1_1gfx_1_1_graph.html#abe3ddb004ee53340f68c7eb87fd8ec5e", null ]
 ];

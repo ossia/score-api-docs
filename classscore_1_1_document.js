@@ -1,4 +1,27 @@
 var classscore_1_1_document =
 [
-    [ "virgin", "classscore_1_1_document.html#ab468cdc0d9a73e9cb666770f410e0b5e", null ]
+    [ "~Document", "classscore_1_1_document.html#ae99f705e9501b32174310ca01025de35", null ],
+    [ "Document", "classscore_1_1_document.html#af0057e5df836cd602faf84a23f8376a9", null ],
+    [ "backupManager", "classscore_1_1_document.html#ab579f423567b348af63cc8b6342beefd", null ],
+    [ "blockAllSignals", "classscore_1_1_document.html#a996bd9a82250baf9635492370dfa620e", null ],
+    [ "commandStack", "classscore_1_1_document.html#aa6d30f5621988f9b8b701264426218a6", null ],
+    [ "context", "classscore_1_1_document.html#a412ae527567f2853f0d0f1c51004f734", null ],
+    [ "focusManager", "classscore_1_1_document.html#aa5f8b21b216eb9b67f8c6280ab23d47a", null ],
+    [ "id", "classscore_1_1_document.html#a143f60f363884d7d90043caaaaa4af60", null ],
+    [ "locker", "classscore_1_1_document.html#a2d26a5888a46845c745bc0336b8a1e3d", null ],
+    [ "metadata", "classscore_1_1_document.html#af5da558b375d27dd868ae3daed9d9d10", null ],
+    [ "metadata", "classscore_1_1_document.html#afdd6e7443e6cdb8d276d4f6148e36b4b", null ],
+    [ "model", "classscore_1_1_document.html#ac5450419bc8914fd3541969a50439aa0", null ],
+    [ "presenter", "classscore_1_1_document.html#a09992c95ece7859060045558a2074bc1", null ],
+    [ "ready", "classscore_1_1_document.html#a60a379179f29bffebad8603a85bf9338", null ],
+    [ "saveAsByteArray", "classscore_1_1_document.html#a8f666cf852cc29941c8ccbf0d111801a", null ],
+    [ "saveAsJson", "classscore_1_1_document.html#afd5c45512a6362e4e076684c5525cf28", null ],
+    [ "saveDocumentModelAsByteArray", "classscore_1_1_document.html#a9fc96385aa99d0d44d0349aba156d752", null ],
+    [ "saveDocumentModelAsJson", "classscore_1_1_document.html#aea78eafd4c3e243d91cf7931d2a14947", null ],
+    [ "selectionStack", "classscore_1_1_document.html#a7f39b2512139999035e9db6dfbb28f6f", null ],
+    [ "updateTimers", "classscore_1_1_document.html#a02e9092cbef0832881a222295288d877", null ],
+    [ "view", "classscore_1_1_document.html#a526a4ff7b4a3ee1ed9501089be719ad8", null ],
+    [ "virgin", "classscore_1_1_document.html#ab468cdc0d9a73e9cb666770f410e0b5e", null ],
+    [ "DocumentBuilder", "classscore_1_1_document.html#ae9e8269d4e911d05fa87684010e29b26", null ],
+    [ "DocumentContext", "classscore_1_1_document.html#aa02123c86d837712d66647191007eddd", null ]
 ];

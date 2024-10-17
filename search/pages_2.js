@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['data_20models_0',['Data models',['../_models.html',1,'']]]
+  ['graphics_20plug_2dins_5783',['Graphics plug-ins',['../_gfx_plugins.html',1,'']]]
 ];
