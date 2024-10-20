@@ -260,7 +260,7 @@ $(document).ready(function(){initNavTree('_concepts_8hpp_source.html',''); initR
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  }</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span> constexpr(widg.widget == avnd::widget_type::slider)</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  {</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keyword">static</span> constexpr <span class="keyword">auto</span> c = avnd::get_visual_range&lt;T&gt;();</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keyword">static</span> constexpr <span class="keyword">auto</span> c = avnd::get_range&lt;T&gt;();</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordflow">if</span> constexpr(std::is_integral_v&lt;value_type&gt;)</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    {</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> Process::IntSlider{c.min, c.max, c.init, qname, id, parent};</div>
