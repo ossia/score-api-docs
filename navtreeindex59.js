@@ -1,11 +1,5 @@
 var NAVTREEINDEX59 =
 {
-"namespacescore.html#ae1d4d6253053dfebd482df22747a121b":[11,0,52,413],
-"namespacescore.html#ae37270831bbfe90ec45e2eaf1929d5b0":[11,0,52,354],
-"namespacescore.html#aeaebd6a190d42a9bfd173bef3762e194":[11,0,52,344],
-"namespacescore.html#aed5a0183b4501783c177e506781cec28":[11,0,52,393],
-"namespacescore.html#aefcbe0678d0a7f29ad11e15cd85c4f68":[11,0,52,330],
-"namespacescore.html#af3195f0511ed9eae30a74f7c9534e96a":[11,0,52,364],
 "namespacescore.html#af4c5fe5a08995a092b13a26c4ac76590":[11,0,52,414],
 "namespacescore.html#af6add989b19b668a4387c1cbc8131d2c":[11,0,52,361],
 "namespacescore.html#af9519ca15d82a9981008501da12757d2":[11,0,52,331],
@@ -249,5 +243,11 @@ var NAVTREEINDEX59 =
 "score-plugin-js_2_j_s_2_commands_2_edit_script_8hpp_source.html":[13,0,391],
 "score-plugin-js_2_j_s_2_commands_2_script_macro_8hpp_source.html":[13,0,1226],
 "score-plugin-js_2_j_s_2_executor_2_gpu_node_8hpp_source.html":[13,0,524],
-"score-plugin-js_2_j_s_2_qml_2_metatypes_8hpp_source.html":[13,0,770]
+"score-plugin-js_2_j_s_2_qml_2_metatypes_8hpp_source.html":[13,0,770],
+"score-plugin-js_2_j_s_2_qml_2_utils_8hpp_source.html":[13,0,1441],
+"score-plugin-lv2_2_l_v2_2_application_plugin_8cpp.html#a76d2ef4dce64a7fef334a3d55ec4cb70":[11,0,31,17],
+"score-plugin-lv2_2_l_v2_2_application_plugin_8cpp.html#aff1dd18a6a0a6e955b31e0d13e08d049":[11,0,31,18],
+"score-plugin-lv2_2_l_v2_2_application_plugin_8hpp_source.html":[13,0,57],
+"score-plugin-lv2_2_l_v2_2_effect_model_8cpp.html#a287fc0290b92b80d5b90738f7c1e7289":[11,0,31,14],
+"score-plugin-lv2_2_l_v2_2_effect_model_8cpp.html#a6e57219723dcba94ed1c5d2dcae1b8c5":[11,0,31,16]
 };

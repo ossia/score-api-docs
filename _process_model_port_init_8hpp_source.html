@@ -233,7 +233,7 @@ $(document).ready(function(){initNavTree('_process_model_port_init_8hpp_source.h
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      }</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span> constexpr(avnd::string_ish&lt;filter&gt;)</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;      {</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        constexpr <span class="keyword">auto</span> text_filters = P::filters();</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keyword">static</span> constexpr <span class="keyword">auto</span> text_filters = P::filters();</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordflow">return</span> fromStringView(P::filters());</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;      }</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      <span class="keywordflow">else</span></div>
@@ -251,7 +251,7 @@ $(document).ready(function(){initNavTree('_process_model_port_init_8hpp_source.h
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    requires avnd::soundfile_port&lt;T&gt;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> T&amp; in, <span class="keyword">auto</span> idx)</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  {</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    constexpr <span class="keyword">auto</span> name = avnd::get_name&lt;T&gt;();</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keyword">static</span> constexpr <span class="keyword">auto</span> name = avnd::get_name&lt;T&gt;();</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    Process::FileChooserBase* p{};</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">if</span> constexpr(requires { T::waveform; })</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    {</div>
@@ -279,7 +279,7 @@ $(document).ready(function(){initNavTree('_process_model_port_init_8hpp_source.h
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    requires avnd::midifile_port&lt;T&gt; || avnd::raw_file_port&lt;T&gt;</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> T&amp; in, <span class="keyword">auto</span> idx)</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  {</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    constexpr <span class="keyword">auto</span> name = avnd::get_name&lt;T&gt;();</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keyword">static</span> constexpr <span class="keyword">auto</span> name = avnd::get_name&lt;T&gt;();</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keyword">auto</span> p = <span class="keyword">new</span> Process::FileChooser{</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="stringliteral">&quot;&quot;</span>, getFilters(in), QString::fromUtf8(name.data(), name.size()),</div>
@@ -432,60 +432,90 @@ $(document).ready(function(){initNavTree('_process_model_port_init_8hpp_source.h
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;      }</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;      <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;      {</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="keyword">auto</span> vp = <span class="keyword">new</span> <a class="code" href="class_process_1_1_value_outlet.html">Process::ValueOutlet</a>(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>(outlet), &amp;<span class="keyword">self</span>);</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        setupNewPort(out, vp);</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        outs.push_back(vp);</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;      }</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    }</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    {</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;      <span class="keyword">auto</span> vp = <span class="keyword">new</span> <a class="code" href="class_process_1_1_value_outlet.html">Process::ValueOutlet</a>(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>(outlet), &amp;<span class="keyword">self</span>);</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;      setupNewPort(out, vp);</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;      outs.push_back(vp);</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    }</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    outlet++;</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  }</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160; </div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="preprocessor">#if SCORE_PLUGIN_GFX</span></div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> avnd::texture_port <span class="keyword">auto</span>&amp; out, <span class="keyword">auto</span> idx)</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;  {</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="keyword">auto</span> p = <span class="keyword">new</span> Gfx::TextureOutlet(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>(outlet++), &amp;<span class="keyword">self</span>);</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    setupNewPort(out, p);</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    outs.push_back(p);</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;  }</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;  <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> avnd::geometry_port <span class="keyword">auto</span>&amp; out, <span class="keyword">auto</span> idx)</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;  {</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keyword">auto</span> p = <span class="keyword">new</span> <a class="code" href="class_gfx_1_1_geometry_outlet.html">Gfx::GeometryOutlet</a>(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>(outlet++), &amp;<span class="keyword">self</span>);</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    setupNewPort(out, p);</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    outs.push_back(p);</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  }</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160; </div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;  <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> avnd::curve_port <span class="keyword">auto</span>&amp; out, <span class="keyword">auto</span> idx)</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;  {</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="keyword">auto</span> p = <span class="keyword">new</span> <a class="code" href="class_process_1_1_value_outlet.html">Process::ValueOutlet</a>(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>(outlet++), &amp;<span class="keyword">self</span>);</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    setupNewPort(out, p);</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    outs.push_back(p);</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  }</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; </div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;  <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> avnd::callback <span class="keyword">auto</span>&amp; out, <span class="keyword">auto</span> idx)</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  {</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="keyword">auto</span> p = <span class="keyword">new</span> <a class="code" href="class_process_1_1_value_outlet.html">Process::ValueOutlet</a>(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>(outlet++), &amp;<span class="keyword">self</span>);</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    setupNewPort(out, p);</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    outs.push_back(p);</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;  }</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; ctrl, <span class="keyword">auto</span> idx)</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  {</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    qDebug() &lt;&lt; fromStringView(avnd::get_name(ctrl)) &lt;&lt; <span class="stringliteral">&quot;unhandled&quot;</span>;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  }</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;};</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;}</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="comment">// FIXME ControlOutlet?</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="keyword">auto</span> vp = <span class="keyword">new</span> <a class="code" href="class_process_1_1_value_outlet.html">Process::ValueOutlet</a>(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>(outlet), &amp;<span class="keyword">self</span>);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        setupNewPort(out, vp);</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        outs.push_back(vp);</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;      }</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    }</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    {</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;      <span class="keyword">auto</span> vp = <span class="keyword">new</span> <a class="code" href="class_process_1_1_value_outlet.html">Process::ValueOutlet</a>(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>(outlet), &amp;<span class="keyword">self</span>);</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;      setupNewPort(out, vp);</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;      outs.push_back(vp);</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    }</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    outlet++;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  }</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="preprocessor">#if SCORE_PLUGIN_GFX</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;  <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> avnd::texture_port <span class="keyword">auto</span>&amp; out, <span class="keyword">auto</span> idx)</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;  {</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="keyword">auto</span> p = <span class="keyword">new</span> Gfx::TextureOutlet(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>(outlet++), &amp;<span class="keyword">self</span>);</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    setupNewPort(out, p);</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    outs.push_back(p);</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;  }</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;  <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> avnd::geometry_port <span class="keyword">auto</span>&amp; out, <span class="keyword">auto</span> idx)</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  {</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="keyword">auto</span> p = <span class="keyword">new</span> <a class="code" href="class_gfx_1_1_geometry_outlet.html">Gfx::GeometryOutlet</a>(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>(outlet++), &amp;<span class="keyword">self</span>);</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    setupNewPort(out, p);</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    outs.push_back(p);</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;  }</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160; </div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;  <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> avnd::curve_port <span class="keyword">auto</span>&amp; out, <span class="keyword">auto</span> idx)</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;  {</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <span class="keyword">auto</span> p = <span class="keyword">new</span> <a class="code" href="class_process_1_1_value_outlet.html">Process::ValueOutlet</a>(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>(outlet++), &amp;<span class="keyword">self</span>);</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    setupNewPort(out, p);</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    outs.push_back(p);</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  }</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160; </div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  <span class="keyword">template</span> &lt;avnd::callback T, std::<span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> T&amp; out, avnd::field_index&lt;N&gt;)</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  {</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="keywordflow">if</span> constexpr(avnd::control&lt;T&gt;)</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    {</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">auto</span> p = oscr::make_control_out&lt;T&gt;(</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;             avnd::field_index&lt;N&gt;{}, <a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>(outlet), &amp;<span class="keyword">self</span>))</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;      {</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        p-&gt;hidden = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        outs.push_back(p);</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;      }</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;      {</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        <span class="comment">// FIXME ControlOutlet?</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        <span class="keyword">auto</span> vp = <span class="keyword">new</span> <a class="code" href="class_process_1_1_value_outlet.html">Process::ValueOutlet</a>(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>(outlet), &amp;<span class="keyword">self</span>);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        setupNewPort(out, vp);</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        outs.push_back(vp);</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;      }</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    }</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> constexpr(requires { T::control; })</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    {</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;      <span class="comment">// FIXME remove this duplication</span></div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;      <span class="keyword">auto</span> p = <span class="keyword">new</span> <a class="code" href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a>(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>(outlet), &amp;<span class="keyword">self</span>);</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;      setupNewPort(out, p);</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;      outs.push_back(p);</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    }</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    {</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;      <span class="keyword">auto</span> p = <span class="keyword">new</span> <a class="code" href="class_process_1_1_value_outlet.html">Process::ValueOutlet</a>(<a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>(outlet), &amp;<span class="keyword">self</span>);</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;      setupNewPort(out, p);</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;      outs.push_back(p);</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    }</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    outlet++;</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;  }</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160; </div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;  <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; ctrl, <span class="keyword">auto</span> idx)</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;  {</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    qDebug() &lt;&lt; fromStringView(avnd::get_name(ctrl)) &lt;&lt; <span class="stringliteral">&quot;unhandled&quot;</span>;</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;  }</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;};</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;}</div>
 <div class="ttc" id="aclass_gfx_1_1_geometry_inlet_html"><div class="ttname"><a href="class_gfx_1_1_geometry_inlet.html">Gfx::GeometryInlet</a></div><div class="ttdef"><b>Definition:</b> TexturePort.hpp:121</div></div>
 <div class="ttc" id="aclass_gfx_1_1_geometry_outlet_html"><div class="ttname"><a href="class_gfx_1_1_geometry_outlet.html">Gfx::GeometryOutlet</a></div><div class="ttdef"><b>Definition:</b> TexturePort.hpp:144</div></div>
 <div class="ttc" id="aclass_media_1_1_sound_1_1_drop_handler_html"><div class="ttname"><a href="class_media_1_1_sound_1_1_drop_handler.html">Media::Sound::DropHandler</a></div><div class="ttdoc">The DropHandler class If something with audio mime type is dropped, then we create a box with an audi...</div><div class="ttdef"><b>Definition:</b> SoundDrop.hpp:26</div></div>
 <div class="ttc" id="aclass_process_1_1_audio_inlet_html"><div class="ttname"><a href="class_process_1_1_audio_inlet.html">Process::AudioInlet</a></div><div class="ttdef"><b>Definition:</b> Port.hpp:292</div></div>
 <div class="ttc" id="aclass_process_1_1_audio_outlet_html"><div class="ttname"><a href="class_process_1_1_audio_outlet.html">Process::AudioOutlet</a></div><div class="ttdef"><b>Definition:</b> Port.hpp:315</div></div>
+<div class="ttc" id="aclass_process_1_1_control_outlet_html"><div class="ttname"><a href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a></div><div class="ttdef"><b>Definition:</b> Port.hpp:417</div></div>
 <div class="ttc" id="aclass_process_1_1_midi_inlet_html"><div class="ttname"><a href="class_process_1_1_midi_inlet.html">Process::MidiInlet</a></div><div class="ttdef"><b>Definition:</b> Port.hpp:371</div></div>
 <div class="ttc" id="aclass_process_1_1_midi_outlet_html"><div class="ttname"><a href="class_process_1_1_midi_outlet.html">Process::MidiOutlet</a></div><div class="ttdef"><b>Definition:</b> Port.hpp:394</div></div>
 <div class="ttc" id="aclass_process_1_1_port_html"><div class="ttname"><a href="class_process_1_1_port.html">Process::Port</a></div><div class="ttdef"><b>Definition:</b> Port.hpp:102</div></div>

@@ -151,82 +151,8 @@ $(document).ready(function(){initNavTree('_math_helpers_8hpp_source.html',''); i
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">self</span>.cur_deltatime = tk.end_in_flicks - tk.start_in_flicks;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">self</span>.cur_pos = tk.parent_duration &gt; 0 ? tk.relative_position : 0.;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#if FX_UI</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> miniMathItem(<span class="keyword">const</span> tuplet::tuple&lt;Control::LineEdit&gt;&amp; controls, Process::LineEdit&amp; edit, <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; process, QGraphicsItem&amp; parent, QObject&amp; context, <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; doc)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">using namespace </span><a class="code" href="namespace_process.html">Process</a>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">using namespace </span>tuplet;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a>&amp; portFactory = doc.app.<a class="code" href="structscore_1_1_application_context.html#aad836474a385889c0486ecfeeadb06df">interfaces</a>&lt;<a class="code" href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a>&gt;();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">auto</span> edit_item = makeControlNoText(get&lt;0&gt;(controls), edit, parent, context, doc, portFactory);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  edit_item.control.setTextWidth(100);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  edit_item.control.setPos(15, 0);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordflow">if</span>(<span class="keyword">auto</span> obj = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="classscore_1_1_resizeable_item.html">score::ResizeableItem</a>*<span class="keyword">&gt;</span>(&amp;parent))</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    QObject::connect(&amp;edit_item.control, &amp;score::QGraphicsLineEdit::sizeChanged, obj, &amp;score::ResizeableItem::childrenSizeChanged);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> miniMathItem(<span class="keyword">const</span> tuplet::tuple&lt;Control::LineEdit, Control::IntSpinBox&gt;&amp; controls, Process::LineEdit&amp; edit, Process::IntSpinBox&amp; count, <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; process, QGraphicsItem&amp; parent, QObject&amp; context, <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; doc)</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">using namespace </span><a class="code" href="namespace_process.html">Process</a>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">using namespace </span>tuplet;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a>&amp; portFactory = doc.app.<a class="code" href="structscore_1_1_application_context.html#aad836474a385889c0486ecfeeadb06df">interfaces</a>&lt;<a class="code" href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a>&gt;();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">auto</span> count_item = makeControlNoText(get&lt;1&gt;(controls), count, parent, context, doc, portFactory);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  count_item.control.setPos(15, 0);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">auto</span> edit_item = makeControlNoText(get&lt;0&gt;(controls), edit, parent, context, doc, portFactory);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  edit_item.control.setTextWidth(100);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  edit_item.control.setPos(15, 25);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordflow">if</span>(<span class="keyword">auto</span> obj = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="classscore_1_1_resizeable_item.html">score::ResizeableItem</a>*<span class="keyword">&gt;</span>(&amp;parent))</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    QObject::connect(&amp;edit_item.control, &amp;score::QGraphicsLineEdit::sizeChanged, obj, &amp;score::ResizeableItem::childrenSizeChanged);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> mathItem(<span class="keyword">const</span> tuplet::tuple&lt;Control::LineEdit, Control::FloatSlider, Control::FloatSlider, Control::FloatSlider&gt;&amp; controls, Process::LineEdit&amp; edit, Process::FloatSlider&amp; a, Process::FloatSlider&amp; b, Process::FloatSlider&amp; c, <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; process, QGraphicsItem&amp; parent, QObject&amp; context, <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; doc)</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keyword">using namespace </span><a class="code" href="namespace_process.html">Process</a>;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keyword">using namespace </span>tuplet;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a>&amp; portFactory = doc.app.<a class="code" href="structscore_1_1_application_context.html#aad836474a385889c0486ecfeeadb06df">interfaces</a>&lt;<a class="code" href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a>&gt;();</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> c0 = 10;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keyword">auto</span> c0_bg = <span class="keyword">new</span> <a class="code" href="classscore_1_1_background_item.html">score::BackgroundItem</a>{&amp;parent};</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  c0_bg-&gt;setRect({0., 0., 300., 200.});</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keyword">auto</span> edit_item = makeControl(get&lt;0&gt;(controls), edit, parent, context, doc, portFactory);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  edit_item.control.setTextWidth(280);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  edit_item.root.setPos(c0, 40);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="comment">/*</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">  ((QGraphicsProxyWidget&amp;)edit_item.control).setMinimumWidth(200);</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">  ((QGraphicsProxyWidget&amp;)edit_item.control).setMaximumWidth(200);</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">  ((QGraphicsProxyWidget&amp;)edit_item.control).widget()-&gt;setMinimumWidth(200);</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">  ((QGraphicsProxyWidget&amp;)edit_item.control).widget()-&gt;setMaximumWidth(200);</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">  */</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keyword">auto</span> a_item = makeControl(get&lt;1&gt;(controls), a, parent, context, doc, portFactory);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  a_item.root.setPos(c0, 5);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keyword">auto</span> b_item = makeControl(get&lt;2&gt;(controls), b, parent, context, doc, portFactory);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  b_item.root.setPos(c0 + 70, 5);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keyword">auto</span> c_item = makeControl(get&lt;3&gt;(controls), c, parent, context, doc, portFactory);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  c_item.root.setPos(c0 + 140, 5);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
-<div class="ttc" id="aclass_process_1_1_port_factory_list_html"><div class="ttname"><a href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a></div><div class="ttdef"><b>Definition:</b> PortFactory.hpp:65</div></div>
-<div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Process.hpp:61</div></div>
-<div class="ttc" id="aclassscore_1_1_background_item_html"><div class="ttname"><a href="classscore_1_1_background_item.html">score::BackgroundItem</a></div><div class="ttdef"><b>Definition:</b> RectItem.hpp:96</div></div>
-<div class="ttc" id="aclassscore_1_1_resizeable_item_html"><div class="ttname"><a href="classscore_1_1_resizeable_item.html">score::ResizeableItem</a></div><div class="ttdef"><b>Definition:</b> RectItem.hpp:12</div></div>
-<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1324</div></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
 <div class="ttc" id="anamespace_state_html"><div class="ttname"><a href="namespace_state.html">State</a></div><div class="ttdoc">Utilities for OSSIA data structures.</div><div class="ttdef"><b>Definition:</b> DeviceInterface.hpp:33</div></div>
-<div class="ttc" id="astruct_process_1_1_context_html"><div class="ttname"><a href="struct_process_1_1_context.html">Process::Context</a></div><div class="ttdef"><b>Definition:</b> ProcessContext.hpp:12</div></div>
-<div class="ttc" id="astructscore_1_1_application_context_html_aad836474a385889c0486ecfeeadb06df"><div class="ttname"><a href="structscore_1_1_application_context.html#aad836474a385889c0486ecfeeadb06df">score::ApplicationContext::interfaces</a></div><div class="ttdeci">const T &amp; interfaces() const</div><div class="ttdoc">Access to a specific interface list.</div><div class="ttdef"><b>Definition:</b> ApplicationContext.hpp:67</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

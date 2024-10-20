@@ -1,6 +1,7 @@
 var struct_nodes_1_1_math_audio_generator_1_1_node =
 [
     [ "State", "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html", "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state" ],
+    [ "ui", "struct_nodes_1_1_math_audio_generator_1_1_node_1_1ui.html", "struct_nodes_1_1_math_audio_generator_1_1_node_1_1ui" ],
     [ "tick", "struct_nodes_1_1_math_audio_generator_1_1_node.html#abfcc483748039c279bfe6d21737fc876", null ],
     [ "ExprTK", "struct_nodes_1_1_math_audio_generator_1_1_node.html#ab58a5b2879f8f48df7b6f8a5f2007ff4", null ],
     [ "halp_meta", "struct_nodes_1_1_math_audio_generator_1_1_node.html#adcde5f09dc4f8372ab39953721cb338c", null ],

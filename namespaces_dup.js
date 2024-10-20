@@ -804,12 +804,7 @@ var namespaces_dup =
           [ "VII", "_midi_util_8hpp.html#ac7bd5755dbbc088ee37a4d17e600af90ad454319cf91657ff975f515a7047b24c", null ],
           [ "custom", "_midi_util_8hpp.html#ac7bd5755dbbc088ee37a4d17e600af90a0c282e978eb442f019af33ae1dbf54f4", null ],
           [ "SCALES_MAX", "_midi_util_8hpp.html#ac7bd5755dbbc088ee37a4d17e600af90ac6d2c17b7b97e639b7feb29234b17d7a", null ]
-        ] ],
-        [ "constexpr_rotate", "_midi_util_8hpp.html#a8b39d9d4e9b102b142b1a76a4f156b6b", null ],
-        [ "constexpr_swap", "_midi_util_8hpp.html#a08ced6a5e49e3a5c051556d405791bdf", null ],
-        [ "get_scale", "_midi_util_8hpp.html#a1ceed2bc099b85245e1d45f54a5f6255", null ],
-        [ "is_same", "_midi_util_8hpp.html#a00affc5f8dc50de59ef0cad4148c64fb", null ],
-        [ "make_scale", "_midi_util_8hpp.html#ae5862bf5a7463f9409e70fee5f24a62a", null ]
+        ] ]
       ] ],
       [ "PitchToValue", null, [
         [ "Node", "struct_nodes_1_1_pitch_to_value_1_1_node.html", "struct_nodes_1_1_pitch_to_value_1_1_node" ]

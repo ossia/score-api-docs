@@ -124,14 +124,14 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>outputs_type</b> = t
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7525d48abeda2a75a3652299f93bba84"><td class="memTemplParams" colspan="2"><a id="a7525d48abeda2a75a3652299f93bba84"></a>
+<tr class="memitem:a0b74474a18c899eaaa91c9bbc1d21307"><td class="memTemplParams" colspan="2"><a id="a0b74474a18c899eaaa91c9bbc1d21307"></a>
 template&lt;typename Item &gt; </td></tr>
-<tr class="memitem:a7525d48abeda2a75a3652299f93bba84"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setupControl</b> (<a class="el" href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a> *inl, Item &amp;item)=delete</td></tr>
-<tr class="separator:a7525d48abeda2a75a3652299f93bba84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b3df3d8b675ac6174b095e4f0a3d9b4"><td class="memTemplParams" colspan="2"><a id="a4b3df3d8b675ac6174b095e4f0a3d9b4"></a>
+<tr class="memitem:a0b74474a18c899eaaa91c9bbc1d21307"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setupControl</b> (QGraphicsItem *parent, <a class="el" href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a> *inl, const <a class="el" href="struct_process_1_1_control_layout.html">Process::ControlLayout</a> &amp;lay, Item &amp;item)=delete</td></tr>
+<tr class="separator:a0b74474a18c899eaaa91c9bbc1d21307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae676e3422a3228d90ac33c34b5449636"><td class="memTemplParams" colspan="2"><a id="ae676e3422a3228d90ac33c34b5449636"></a>
 template&lt;typename Item &gt; </td></tr>
-<tr class="memitem:a4b3df3d8b675ac6174b095e4f0a3d9b4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setupControl</b> (<a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> *inl, Item &amp;item)</td></tr>
-<tr class="separator:a4b3df3d8b675ac6174b095e4f0a3d9b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae676e3422a3228d90ac33c34b5449636"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setupControl</b> (QGraphicsItem *parent, <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> *inl, const <a class="el" href="struct_process_1_1_control_layout.html">Process::ControlLayout</a> &amp;lay, Item &amp;item)</td></tr>
+<tr class="separator:ae676e3422a3228d90ac33c34b5449636"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee5968955e45867c9bd29788b7a971e9"><td class="memTemplParams" colspan="2"><a id="aee5968955e45867c9bd29788b7a971e9"></a>
 template&lt;typename Item &gt; </td></tr>
 <tr class="memitem:aee5968955e45867c9bd29788b7a971e9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>createControl</b> (Item &amp;item, auto... member)</td></tr>
@@ -156,29 +156,33 @@ template&lt;typename Item &gt; </td></tr>
 template&lt;typename Item &gt; </td></tr>
 <tr class="memitem:a327a621f23d9b4a4ee57b49ccf6da22b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>subLayout</b> (Item &amp;item, <a class="el" href="classscore_1_1_graphics_layout.html">score::GraphicsLayout</a> *new_l, auto... recursive_members)</td></tr>
 <tr class="separator:a327a621f23d9b4a4ee57b49ccf6da22b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add6282fe0c41882a5ed4c8212d277a95"><td class="memTemplParams" colspan="2"><a id="add6282fe0c41882a5ed4c8212d277a95"></a>
+template&lt;typename Item &gt; </td></tr>
+<tr class="memitem:add6282fe0c41882a5ed4c8212d277a95"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>initRecursiveLayout</b> ()</td></tr>
+<tr class="separator:add6282fe0c41882a5ed4c8212d277a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b113133e6d4a7c19f3493c9010f8712"><td class="memTemplParams" colspan="2"><a id="a2b113133e6d4a7c19f3493c9010f8712"></a>
 template&lt;typename Item &gt; </td></tr>
 <tr class="memitem:a2b113133e6d4a7c19f3493c9010f8712"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>walkLayout</b> (Item &amp;item, auto... recursive_members)</td></tr>
 <tr class="separator:a2b113133e6d4a7c19f3493c9010f8712"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_struct_process_1_1_layout_builder_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_process_1_1_layout_builder_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="struct_process_1_1_layout_builder_base.html">Process::LayoutBuilderBase</a></td></tr>
-<tr class="memitem:a58212c14c66609c2b749df114eee1a08 inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memItemLeft" align="right" valign="top"><a id="a58212c14c66609c2b749df114eee1a08"></a>
-QGraphicsItem *&#160;</td><td class="memItemRight" valign="bottom"><b>makePort</b> (<a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> &amp;portModel)</td></tr>
-<tr class="separator:a58212c14c66609c2b749df114eee1a08 inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0b00d1b1b060e9e8b5cd90b0bde3661 inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memItemLeft" align="right" valign="top"><a id="ae0b00d1b1b060e9e8b5cd90b0bde3661"></a>
-QGraphicsItem *&#160;</td><td class="memItemRight" valign="bottom"><b>makePort</b> (<a class="el" href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a> &amp;portModel)</td></tr>
-<tr class="separator:ae0b00d1b1b060e9e8b5cd90b0bde3661 inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e630d7c10367d17baea4d51c263acd8 inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memItemLeft" align="right" valign="top"><a id="a1e630d7c10367d17baea4d51c263acd8"></a>
-std::pair&lt; <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> *, QGraphicsItem * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>makeInlet</b> (<a class="el" href="class_process_1_1_inlet.html">Process::Inlet</a> *)</td></tr>
-<tr class="separator:a1e630d7c10367d17baea4d51c263acd8 inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea3d208d90f241f65e4b17bfa251d39a inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memItemLeft" align="right" valign="top"><a id="aea3d208d90f241f65e4b17bfa251d39a"></a>
-std::pair&lt; <a class="el" href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a> *, QGraphicsItem * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>makeOutlet</b> (<a class="el" href="class_process_1_1_outlet.html">Process::Outlet</a> *)</td></tr>
-<tr class="separator:aea3d208d90f241f65e4b17bfa251d39a inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04e1262609cb11e84067a14022eb2f28 inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memItemLeft" align="right" valign="top"><a id="a04e1262609cb11e84067a14022eb2f28"></a>
-std::vector&lt; std::pair&lt; <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> *, QGraphicsItem * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>makeInlets</b> (std::span&lt; <a class="el" href="class_process_1_1_inlet.html">Process::Inlet</a> * &gt;)</td></tr>
-<tr class="separator:a04e1262609cb11e84067a14022eb2f28 inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4957583ec2ccae1a30e1c0f12c89e652 inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memItemLeft" align="right" valign="top"><a id="a4957583ec2ccae1a30e1c0f12c89e652"></a>
-std::vector&lt; std::pair&lt; <a class="el" href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a> *, QGraphicsItem * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>makeOutlets</b> (std::span&lt; <a class="el" href="class_process_1_1_outlet.html">Process::Outlet</a> * &gt;)</td></tr>
-<tr class="separator:a4957583ec2ccae1a30e1c0f12c89e652 inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab906dfb37cfb64c27743ca63fb534434 inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memItemLeft" align="right" valign="top"><a id="ab906dfb37cfb64c27743ca63fb534434"></a>
+<a class="el" href="struct_process_1_1_control_layout.html">Process::ControlLayout</a>&#160;</td><td class="memItemRight" valign="bottom"><b>makePort</b> (<a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> &amp;portModel)</td></tr>
+<tr class="separator:ab906dfb37cfb64c27743ca63fb534434 inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2b9aff48daf2ea5d4a8beee16eba702 inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memItemLeft" align="right" valign="top"><a id="aa2b9aff48daf2ea5d4a8beee16eba702"></a>
+<a class="el" href="struct_process_1_1_control_layout.html">Process::ControlLayout</a>&#160;</td><td class="memItemRight" valign="bottom"><b>makePort</b> (<a class="el" href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a> &amp;portModel)</td></tr>
+<tr class="separator:aa2b9aff48daf2ea5d4a8beee16eba702 inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4a63e8eb6dd74200f0c2cd1b4454cae inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memItemLeft" align="right" valign="top"><a id="ab4a63e8eb6dd74200f0c2cd1b4454cae"></a>
+std::pair&lt; <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> *, <a class="el" href="struct_process_1_1_control_layout.html">Process::ControlLayout</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>makeInlet</b> (<a class="el" href="class_process_1_1_inlet.html">Process::Inlet</a> *)</td></tr>
+<tr class="separator:ab4a63e8eb6dd74200f0c2cd1b4454cae inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c69304aba459e49d695c7fee6e0854b inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memItemLeft" align="right" valign="top"><a id="a3c69304aba459e49d695c7fee6e0854b"></a>
+std::pair&lt; <a class="el" href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a> *, <a class="el" href="struct_process_1_1_control_layout.html">Process::ControlLayout</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>makeOutlet</b> (<a class="el" href="class_process_1_1_outlet.html">Process::Outlet</a> *)</td></tr>
+<tr class="separator:a3c69304aba459e49d695c7fee6e0854b inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4e321db8194dbe3685d83d34919d209 inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memItemLeft" align="right" valign="top"><a id="ae4e321db8194dbe3685d83d34919d209"></a>
+std::vector&lt; std::pair&lt; <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> *, <a class="el" href="struct_process_1_1_control_layout.html">Process::ControlLayout</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>makeInlets</b> (std::span&lt; <a class="el" href="class_process_1_1_inlet.html">Process::Inlet</a> * &gt;)</td></tr>
+<tr class="separator:ae4e321db8194dbe3685d83d34919d209 inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d69f427e2c47aac4540f28cde9eebbb inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memItemLeft" align="right" valign="top"><a id="a5d69f427e2c47aac4540f28cde9eebbb"></a>
+std::vector&lt; std::pair&lt; <a class="el" href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a> *, <a class="el" href="struct_process_1_1_control_layout.html">Process::ControlLayout</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>makeOutlets</b> (std::span&lt; <a class="el" href="class_process_1_1_outlet.html">Process::Outlet</a> * &gt;)</td></tr>
+<tr class="separator:a5d69f427e2c47aac4540f28cde9eebbb inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6cf7eb19c039a544a894ec871e3a3c5 inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memItemLeft" align="right" valign="top"><a id="ab6cf7eb19c039a544a894ec871e3a3c5"></a>
 QGraphicsItem *&#160;</td><td class="memItemRight" valign="bottom"><b>makeLabel</b> (std::string_view item)</td></tr>
 <tr class="separator:ab6cf7eb19c039a544a894ec871e3a3c5 inherit pub_methods_struct_process_1_1_layout_builder_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,9 +234,9 @@ const <a class="el" href="struct_process_1_1_inlets.html">Process::Inlets</a> &a
 <tr class="memitem:a300e8637b0b309a62673c7d5c54763da inherit pub_attribs_struct_process_1_1_layout_builder_base"><td class="memItemLeft" align="right" valign="top"><a id="a300e8637b0b309a62673c7d5c54763da"></a>
 const <a class="el" href="struct_process_1_1_outlets.html">Process::Outlets</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>outlets</b></td></tr>
 <tr class="separator:a300e8637b0b309a62673c7d5c54763da inherit pub_attribs_struct_process_1_1_layout_builder_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e6178ad6882f0c279c1c2cd8aa72b0b inherit pub_attribs_struct_process_1_1_layout_builder_base"><td class="memItemLeft" align="right" valign="top"><a id="a4e6178ad6882f0c279c1c2cd8aa72b0b"></a>
-<a class="el" href="classscore_1_1_graphics_layout.html">score::GraphicsLayout</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>layout</b> {}</td></tr>
-<tr class="separator:a4e6178ad6882f0c279c1c2cd8aa72b0b inherit pub_attribs_struct_process_1_1_layout_builder_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0c7739acc6a35da958d3e264da6cd93 inherit pub_attribs_struct_process_1_1_layout_builder_base"><td class="memItemLeft" align="right" valign="top"><a id="ad0c7739acc6a35da958d3e264da6cd93"></a>
+QGraphicsItem *&#160;</td><td class="memItemRight" valign="bottom"><b>layout</b> {}</td></tr>
+<tr class="separator:ad0c7739acc6a35da958d3e264da6cd93 inherit pub_attribs_struct_process_1_1_layout_builder_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88846a62cd4735ee29785f0d4228a1f6 inherit pub_attribs_struct_process_1_1_layout_builder_base"><td class="memItemLeft" align="right" valign="top"><a id="a88846a62cd4735ee29785f0d4228a1f6"></a>
 std::vector&lt; <a class="el" href="classscore_1_1_graphics_layout.html">score::GraphicsLayout</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createdLayouts</b> {}</td></tr>
 <tr class="separator:a88846a62cd4735ee29785f0d4228a1f6 inherit pub_attribs_struct_process_1_1_layout_builder_base"><td class="memSeparator" colspan="2">&#160;</td></tr>

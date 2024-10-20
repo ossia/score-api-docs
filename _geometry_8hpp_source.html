@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('_geometry_8hpp_source.html',''); initR
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">  void setupBindings(QRhiBuffer&amp; vtxData, QRhiBuffer* idxData, QRhiCommandBuffer&amp; cb) const noexcept override</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">  {</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">    constexpr auto sz = avnd::pfr::tuple_size&lt;decltype(T{}.vertex_input)&gt;{};</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">    static constexpr auto sz = avnd::pfr::tuple_size&lt;decltype(T{}.vertex_input)&gt;{};</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">    QRhiCommandBuffer::VertexInput bindings[sz];</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"></span> </div>

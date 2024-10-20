@@ -62,11 +62,7 @@ var NAVTREEINDEX4 =
 "_midi_process_inspector_8hpp_source.html":[13,0,794],
 "_midi_process_metadata_8hpp_source.html":[13,0,795],
 "_midi_style_8hpp_source.html":[13,0,799],
-"_midi_util_8hpp.html#a00affc5f8dc50de59ef0cad4148c64fb":[11,0,38,22,7],
-"_midi_util_8hpp.html#a08ced6a5e49e3a5c051556d405791bdf":[11,0,38,22,5],
 "_midi_util_8hpp.html#a0cb0782477744326aca988c61a6c5a03":[11,0,38,22,1],
-"_midi_util_8hpp.html#a1ceed2bc099b85245e1d45f54a5f6255":[11,0,38,22,6],
-"_midi_util_8hpp.html#a8b39d9d4e9b102b142b1a76a4f156b6b":[11,0,38,22,4],
 "_midi_util_8hpp.html#a9021369908844c22dbcb1b68923da92a":[11,0,38,22,2],
 "_midi_util_8hpp.html#ac7bd5755dbbc088ee37a4d17e600af90":[11,0,38,22,3],
 "_midi_util_8hpp.html#ac7bd5755dbbc088ee37a4d17e600af90a0c282e978eb442f019af33ae1dbf54f4":[11,0,38,22,3,15],
@@ -86,7 +82,6 @@ var NAVTREEINDEX4 =
 "_midi_util_8hpp.html#ac7bd5755dbbc088ee37a4d17e600af90aed306b43bc4eb4f4b6d1a1cca39cda8a":[11,0,38,22,3,11],
 "_midi_util_8hpp.html#ac7bd5755dbbc088ee37a4d17e600af90afc96d9b8bdafde7f12e3832035514723":[11,0,38,22,3,12],
 "_midi_util_8hpp.html#ac7bd5755dbbc088ee37a4d17e600af90affacf714e31445bdff89f141d1c8cb68":[11,0,38,22,3,9],
-"_midi_util_8hpp.html#ae5862bf5a7463f9409e70fee5f24a62a":[11,0,38,22,8],
 "_midi_util_8hpp_source.html":[13,0,800],
 "_midi_view_8hpp_source.html":[13,0,801],
 "_mime_data_8hpp_source.html":[13,0,802],
@@ -249,5 +244,10 @@ var NAVTREEINDEX4 =
 "_pitch_8hpp.html#a98239803e3c0ef601307762ab624c21e":[11,0,0,26],
 "_pitch_8hpp_source.html":[13,0,936],
 "_pitch_to_value_8hpp_source.html":[13,0,937],
-"_pixmap_8hpp_source.html":[13,0,938]
+"_pixmap_8hpp_source.html":[13,0,938],
+"_pixmaps_8hpp_source.html":[13,0,939],
+"_play_context_menu_8hpp_source.html":[13,0,940],
+"_play_from_interval_in_scenario_8hpp_source.html":[13,0,941],
+"_play_listening_handler_8hpp_source.html":[13,0,942],
+"_play_listening_handler_factory_8hpp_source.html":[13,0,943]
 };

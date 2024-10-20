@@ -8,8 +8,8 @@ var struct_nodes_1_1_envelope_1_1_node =
     [ "halp_meta", "struct_nodes_1_1_envelope_1_1_node.html#a59260e807c490f9971fd0637bb340439", null ],
     [ "operator()", "struct_nodes_1_1_envelope_1_1_node.html#a84a0d92a41064e210715d089ea91458f", null ],
     [ "audio", "struct_nodes_1_1_envelope_1_1_node.html#ae612a989e615f159303f8d225596d5e3", null ],
-    [ "inputs", "struct_nodes_1_1_envelope_1_1_node.html#aeef54b508d90ce8cd88820dd62a020ac", null ],
-    [ "outputs", "struct_nodes_1_1_envelope_1_1_node.html#a09fb4896f1d10a9f4293909c794dbcaa", null ],
+    [ "inputs", "struct_nodes_1_1_envelope_1_1_node.html#ab36715b78d0181c39279a6a16b4d400b", null ],
+    [ "outputs", "struct_nodes_1_1_envelope_1_1_node.html#a64ff9323f2983265b0bfe46ba2b37af4", null ],
     [ "peak", "struct_nodes_1_1_envelope_1_1_node.html#a0faed94a895d00335f2ee8a33981092b", null ],
     [ "rms", "struct_nodes_1_1_envelope_1_1_node.html#a38621daa5b62531c618b92e53ceea598", null ]
 ];

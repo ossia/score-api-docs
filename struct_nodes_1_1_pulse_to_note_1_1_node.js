@@ -16,7 +16,7 @@ var struct_nodes_1_1_pulse_to_note_1_1_node =
     [ "in", "struct_nodes_1_1_pulse_to_note_1_1_node.html#aa90651a817bb8cab78f1f3ca61f6172d", null ],
     [ "inputs", "struct_nodes_1_1_pulse_to_note_1_1_node.html#a031dfeac6898c7d1bd4582e837f620d2", null ],
     [ "midi", "struct_nodes_1_1_pulse_to_note_1_1_node.html#a81486e2f788bd658768d9aa0baa60e4c", null ],
-    [ "outputs", "struct_nodes_1_1_pulse_to_note_1_1_node.html#a2b0ee93f325273869f96e6eb6c171d10", null ],
+    [ "outputs", "struct_nodes_1_1_pulse_to_note_1_1_node.html#ab2cb9af8adc821a417da105d2ed53d53", null ],
     [ "running_notes", "struct_nodes_1_1_pulse_to_note_1_1_node.html#a85a8cfe919458818d803534dd1b061e3", null ],
     [ "to_start", "struct_nodes_1_1_pulse_to_note_1_1_node.html#a7b2007cdb2f941bdad250179cc196771", null ]
 ];

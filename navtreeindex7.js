@@ -1,10 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"_types_8hpp.html#ad4c6dcfae6afc013d6d5b9d5d5b425f6":[11,0,38,46],
-"_types_8hpp.html#ae3722f064b4c4a0b52b713a557a75671":[11,0,38,37],
-"_types_8hpp.html#ae71ebd57a029b86b7ff58b9d46d3a078":[11,0,38,44],
-"_types_8hpp.html#aeb19e4f040ad9143a430031d8d975410":[11,0,38,43],
-"_types_8hpp_source.html":[13,0,1421],
 "_u_d_p_widget_8hpp_source.html":[13,0,1422],
 "_undo_application_plugin_8hpp_source.html":[13,0,1423],
 "_undo_list_widget_8hpp_source.html":[13,0,1424],
@@ -249,5 +244,10 @@ var NAVTREEINDEX7 =
 "class_automation_1_1_change_address.html#a6565e3caf624ff112818a236780b3087":[12,0,2,5,6],
 "class_automation_1_1_change_address.html#a98a96db82e32af2e9600f36c0ca60c5e":[12,0,2,5,0],
 "class_automation_1_1_change_address.html#a9b456cfb68c40f62279467ea6bac4ca3":[12,0,2,5,3],
-"class_automation_1_1_colors.html":[12,0,2,1]
+"class_automation_1_1_colors.html":[12,0,2,1],
+"class_automation_1_1_colors.html#a1dea65daa6f8b9d1e9988e20688ffa42":[12,0,2,1,0],
+"class_automation_1_1_colors.html#a3852959bb2e4b898eecbd3321489dd90":[12,0,2,1,1],
+"class_automation_1_1_init_automation.html":[12,0,2,6],
+"class_automation_1_1_init_automation.html#a14c8edaaa40bbb94c2b1abe2caaf6d09":[12,0,2,6,5],
+"class_automation_1_1_init_automation.html#a255604d12c5d9f6e1acd94a216c8d090":[12,0,2,6,2]
 };

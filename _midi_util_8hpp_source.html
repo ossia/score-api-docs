@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('_midi_util_8hpp_source.html',''); init
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;constexpr <span class="keywordtype">void</span> constexpr_swap(T&amp; a, T&amp; b)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">static</span> constexpr <span class="keywordtype">void</span> constexpr_swap(T&amp; a, T&amp; b)</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  T tmp = a;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  a = b;</div>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('_midi_util_8hpp_source.html',''); init
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Iterator&gt;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;constexpr <span class="keywordtype">void</span> constexpr_rotate(<a class="code" href="struct_iterator.html">Iterator</a> first, <a class="code" href="struct_iterator.html">Iterator</a> middle, <a class="code" href="struct_iterator.html">Iterator</a> last)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">static</span> constexpr <span class="keywordtype">void</span> constexpr_rotate(<a class="code" href="struct_iterator.html">Iterator</a> first, <a class="code" href="struct_iterator.html">Iterator</a> middle, <a class="code" href="struct_iterator.html">Iterator</a> last)</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="struct_iterator.html">Iterator</a> next = middle;</div>
@@ -166,7 +166,7 @@ $(document).ready(function(){initNavTree('_midi_util_8hpp_source.html',''); init
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">using</span> scale_array = std::array&lt;bool, 128&gt;;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">using</span> scales_array = std::array&lt;scale_array, 12&gt;;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;constexpr scales_array make_scale(std::initializer_list&lt;bool&gt; notes)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">static</span> constexpr scales_array make_scale(std::initializer_list&lt;bool&gt; notes)</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  std::array&lt;scale_array, 12&gt; r{};</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordflow">for</span>(std::size_t octave = 0; octave &lt; 11; octave++)</div>
@@ -190,7 +190,7 @@ $(document).ready(function(){initNavTree('_midi_util_8hpp_source.html',''); init
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordflow">return</span> r;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;constexpr <span class="keywordtype">bool</span> is_same(std::string_view lhs, std::string_view rhs)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> is_same(std::string_view lhs, std::string_view rhs)</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordflow">if</span>(lhs.size() == rhs.size())</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  {</div>
@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('_midi_util_8hpp_source.html',''); init
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;constexpr <span class="keywordtype">int</span> get_scale(std::string_view s)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">static</span> constexpr <span class="keywordtype">int</span> get_scale(std::string_view s)</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keyword">using namespace </span>std::literals;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordflow">if</span>(is_same(s, std::string_view(<span class="stringliteral">&quot;all&quot;</span>)))</div>

@@ -28,6 +28,9 @@ var namespaceoscr =
     [ "ExecutorGuiUpdate", "structoscr_1_1_executor_gui_update.html", "structoscr_1_1_executor_gui_update" ],
     [ "CustomNodeProcess", "classoscr_1_1_custom_node_process.html", null ],
     [ "Executor", "classoscr_1_1_executor.html", "classoscr_1_1_executor" ],
+    [ "MessageBusUi", "structoscr_1_1_message_bus_ui.html", null ],
+    [ "MessageBusUi< Info >", "structoscr_1_1_message_bus_ui_3_01_info_01_4.html", "structoscr_1_1_message_bus_ui_3_01_info_01_4" ],
+    [ "RootItem", "structoscr_1_1_root_item.html", "structoscr_1_1_root_item" ],
     [ "pmf_member_type", "structoscr_1_1pmf__member__type.html", null ],
     [ "pmf_member_type< V T::* >", "structoscr_1_1pmf__member__type_3_01_v_01_t_1_1_5_01_4.html", "structoscr_1_1pmf__member__type_3_01_v_01_t_1_1_5_01_4" ],
     [ "LayoutBuilder", "structoscr_1_1_layout_builder.html", "structoscr_1_1_layout_builder" ],
@@ -62,9 +65,6 @@ var namespaceoscr =
     [ "instantiate_convolver", "namespaceoscr.html#a8e2330b5ca381302604995b58f82ed10", null ],
     [ "instantiate_tests", "namespaceoscr.html#a2edcf62517990ac55add40293adc9ce8", null ],
     [ "instantiate_tests2", "namespaceoscr.html#a31f10d4052c20ea6d482d579e9e541c9", null ],
-    [ "make_control_in", "namespaceoscr.html#a0b1e23efad81b231e9a392bf927a5952", null ],
-    [ "make_control_out", "namespaceoscr.html#aba252532033aa53bd7588ce6496481e7", null ],
-    [ "make_control_out", "namespaceoscr.html#a97d78d5515e2590435e390d7a05532b6", null ],
     [ "makeidget", "namespaceoscr.html#a80e4a1cca07114f4e8cbaf8d6b7ba94e", null ],
     [ "setupNewPort", "namespaceoscr.html#a9a7274461ac9ab4d316835ba0d3c748c", null ],
     [ "setupNewPort", "namespaceoscr.html#a52ed3a5ade9361ba613045f8f37d5364", null ],
@@ -74,5 +74,6 @@ var namespaceoscr =
     [ "GpuNode", "namespaceoscr.html#aab360b1c298267d5e019974ac8802a1c", null ],
     [ "has_ossia_layer", "namespaceoscr.html#aece7f43efe61aba09d77309b4a5da52a", null ],
     [ "is_gpu", "namespaceoscr.html#a12b9de9e4127874503bede0a45f841ac", null ],
+    [ "recursive_container_layout", "namespaceoscr.html#a54e034d77805cb90f66e247ce41405ee", null ],
     [ "requires", "namespaceoscr.html#aa318b20b632c1b2bae4aae3b944829c6", null ]
 ];

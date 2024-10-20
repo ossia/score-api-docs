@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_gpu_node
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  QRhiTexture* createInput(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer, <span class="keywordtype">int</span> k, QSize size)</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  {</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">auto</span> port = parent.input[k];</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    constexpr <span class="keyword">auto</span> flags = QRhiTexture::RenderTarget;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">static</span> constexpr <span class="keyword">auto</span> flags = QRhiTexture::RenderTarget;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">auto</span> texture = renderer.<a class="code" href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">state</a>.rhi-&gt;newTexture(QRhiTexture::RGBA8, size, 1, flags);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    SCORE_ASSERT(texture-&gt;create());</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    m_rts[port]</div>
@@ -165,8 +165,8 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_gpu_node
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> F&gt;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  QRhiShaderResourceBinding initBinding(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer, F field)</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    constexpr <span class="keyword">auto</span> bindingStages = QRhiShaderResourceBinding::VertexStage</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                   | QRhiShaderResourceBinding::FragmentStage;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">static</span> constexpr <span class="keyword">auto</span> bindingStages = QRhiShaderResourceBinding::VertexStage</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                          | QRhiShaderResourceBinding::FragmentStage;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">if</span> constexpr(requires { F::ubo; })</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keyword">auto</span> it = createdUbos.find(F::binding());</div>
@@ -354,8 +354,8 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_gpu_node
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            <span class="keyword">auto</span> ubo = this-&gt;createdUbos.at(ubo_type::binding());</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            constexpr <span class="keywordtype">int</span> offset = gpp::std140_offset&lt;F::uniform()&gt;();</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            constexpr <span class="keywordtype">int</span> size = <span class="keyword">sizeof</span>(uniform_type::value);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            <span class="keyword">static</span> constexpr <span class="keywordtype">int</span> offset = gpp::std140_offset&lt;F::uniform()&gt;();</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <span class="keyword">static</span> constexpr <span class="keywordtype">int</span> size = <span class="keyword">sizeof</span>(uniform_type::value);</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            res.updateDynamicBuffer(ubo, offset, size, &amp;t.value);</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;          });</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    }</div>

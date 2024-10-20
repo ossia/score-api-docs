@@ -1,10 +1,5 @@
 var NAVTREEINDEX31 =
 {
-"class_protocols_1_1_phidget_protocol_settings_widget.html#a2e4df2b0c349218ca093ab81c02b7e0d":[12,0,43,86,4],
-"class_protocols_1_1_phidget_protocol_settings_widget.html#a680c2cb450d5311d63c1c9adaf3a5bb3":[12,0,43,86,3],
-"class_protocols_1_1_phidget_protocol_settings_widget.html#a762d77ef53a7f386a5cca263cb331bb8":[12,0,43,86,0],
-"class_protocols_1_1_phidget_protocol_settings_widget.html#adaa64e613429fbbcd4242beff35c54ac":[12,0,43,86,1],
-"class_protocols_1_1_rate_widget.html":[12,0,43,89],
 "class_protocols_1_1_rate_widget.html#a65c5143bc60caf1341145f3dd310e324":[12,0,43,89,0],
 "class_protocols_1_1_rate_widget.html#a65e02d2b613adc4c87ffc4b5196d1c1b":[12,0,43,89,3],
 "class_protocols_1_1_rate_widget.html#a8a6575cd0ee9c73a4adedd1ff8a7c441":[12,0,43,89,1],
@@ -249,5 +244,10 @@ var NAVTREEINDEX31 =
 "class_scenario_1_1_base_scenario.html#abd97d8dc7d669c2e3270dd6ebf2ea458":[12,0,48,60,1],
 "class_scenario_1_1_base_scenario.html#ac62396f200262a0bba3795dbc858d427":[12,0,48,60,5],
 "class_scenario_1_1_base_scenario.html#ad7bfe17398874acd1447802636f68972":[12,0,48,60,3],
-"class_scenario_1_1_base_scenario.html#ade53e15423f13aa68cfbb7a96be4a6bb":[12,0,48,60,2]
+"class_scenario_1_1_base_scenario.html#ade53e15423f13aa68cfbb7a96be4a6bb":[12,0,48,60,2],
+"class_scenario_1_1_base_scenario_container.html":[12,0,48,61],
+"class_scenario_1_1_base_scenario_container.html#a0639342653b9ac1febc011882fa2d7e4":[12,0,48,61,26],
+"class_scenario_1_1_base_scenario_container.html#a0b02a5573e91e936f6f8a184181cbc02":[12,0,48,61,15],
+"class_scenario_1_1_base_scenario_container.html#a236c4df373e697ed9d531da90e212939":[12,0,48,61,3],
+"class_scenario_1_1_base_scenario_container.html#a2572ed567777cbc6ca18227ba84f13f3":[12,0,48,61,16]
 };

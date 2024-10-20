@@ -12,6 +12,8 @@ var classscore_1_1_q_graphics_enum =
     [ "value", "classscore_1_1_q_graphics_enum.html#a82a34b24400782cd4ae3498a9ee2b8c6", null ],
     [ "array", "classscore_1_1_q_graphics_enum.html#a9c5567ff9e066015581bbeed27987d65", null ],
     [ "columns", "classscore_1_1_q_graphics_enum.html#a9b911116c4d819e5422353c77b67c4e6", null ],
+    [ "m_actualColumns", "classscore_1_1_q_graphics_enum.html#a17d9ae92cb80cba81b4ab336bd9c64f4", null ],
+    [ "m_actualRows", "classscore_1_1_q_graphics_enum.html#acf9a65e54f48f96be7feb1de098c63f8", null ],
     [ "m_clicking", "classscore_1_1_q_graphics_enum.html#a45546b0c49fec4598d0dd1bcdf83dbf6", null ],
     [ "m_rect", "classscore_1_1_q_graphics_enum.html#a814cf3c6d3f292e6b2af0f82a8162f4c", null ],
     [ "m_smallRect", "classscore_1_1_q_graphics_enum.html#adbb2b83cac8d60b8c8fb0f72770d70ea", null ],

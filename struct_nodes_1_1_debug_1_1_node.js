@@ -6,5 +6,5 @@ var struct_nodes_1_1_debug_1_1_node =
     [ "halp_meta", "struct_nodes_1_1_debug_1_1_node.html#aab05568704e26711a6e383127c13c0e9", null ],
     [ "halp_meta", "struct_nodes_1_1_debug_1_1_node.html#aef1332cfcb17d6c016b7142c0e97feb6", null ],
     [ "inputs", "struct_nodes_1_1_debug_1_1_node.html#ada5ce664569edad9bcf0737a78467ef4", null ],
-    [ "outputs", "struct_nodes_1_1_debug_1_1_node.html#a27c5206249bf583ba1681dc953b56456", null ]
+    [ "outputs", "struct_nodes_1_1_debug_1_1_node.html#a0b87b400300704ced80b3f59146bb0d3", null ]
 ];

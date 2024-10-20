@@ -96,6 +96,7 @@ $(document).ready(function(){initNavTree('struct_ui_1_1_signal_display_1_1_node.
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_ui_1_1_signal_display_1_1_node-members.html">List of all members</a>  </div>
@@ -108,6 +109,17 @@ $(document).ready(function(){initNavTree('struct_ui_1_1_signal_display_1_1_node.
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ui_1_1_signal_display_1_1_node_1_1_layer.html">Layer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ui_1_1_signal_display_1_1_node_1_1value__visitor.html">value_visitor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a5bc821337921b82c218d504fdf5db034"><td class="memItemLeft" align="right" valign="top"><a id="a5bc821337921b82c218d504fdf5db034"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>vec_type</b> = boost::container::small_vector&lt; float, 8 &gt;</td></tr>
+<tr class="separator:a5bc821337921b82c218d504fdf5db034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a691af57e17129972bc1e38262aa6ea9a"><td class="memItemLeft" align="right" valign="top"><a id="a691af57e17129972bc1e38262aa6ea9a"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> = halp::tick_flicks</td></tr>
+<tr class="separator:a691af57e17129972bc1e38262aa6ea9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -120,29 +132,41 @@ SignalDisplay&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b
 <tr class="memitem:a41afcc097f28b340e9642cf93629fc92"><td class="memItemLeft" align="right" valign="top"><a id="a41afcc097f28b340e9642cf93629fc92"></a>
 SignalDisplay ossia score&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (manual_url, &quot;https://ossia.io/score-docs/common-practices/&quot; &quot;4-audio.html#analysing-an-audio-signal&quot;) halp_meta(description</td></tr>
 <tr class="separator:a41afcc097f28b340e9642cf93629fc92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a509f7bcb993a19dae651bc7b3487c3f5"><td class="memItemLeft" align="right" valign="top"><a id="a509f7bcb993a19dae651bc7b3487c3f5"></a>
-SignalDisplay ossia score Visualize an input signal&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (uuid, &quot;9906e563-ddeb-4ecd-908c-952baee2a0a5&quot;) halp_flag(temporal)</td></tr>
-<tr class="separator:a509f7bcb993a19dae651bc7b3487c3f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ab10c1b535972b3148e0e2d9f8c1dcf"><td class="memItemLeft" align="right" valign="top"><a id="a2ab10c1b535972b3148e0e2d9f8c1dcf"></a>
+SignalDisplay ossia score Visualize an input signal&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (uuid, &quot;9906e563-ddeb-4ecd-908c-952baee2a0a5&quot;) halp_flag(fully_custom_item)</td></tr>
+<tr class="separator:a2ab10c1b535972b3148e0e2d9f8c1dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70e4d794f9fb747f55dafc942469bd16"><td class="memItemLeft" align="right" valign="top"><a id="a70e4d794f9fb747f55dafc942469bd16"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>halp_flag</b> (temporal)</td></tr>
+<tr class="separator:a70e4d794f9fb747f55dafc942469bd16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa141ad64e7f08f4b29dce4be086b1e38"><td class="memItemLeft" align="right" valign="top"><a id="aa141ad64e7f08f4b29dce4be086b1e38"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>halp_flag</b> (loops_by_default)</td></tr>
 <tr class="separator:aa141ad64e7f08f4b29dce4be086b1e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace55dfbccf90e53d4505622470a01149"><td class="memItemLeft" align="right" valign="top"><a id="ace55dfbccf90e53d4505622470a01149"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (halp::tick_flicks tk)</td></tr>
+<tr class="separator:ace55dfbccf90e53d4505622470a01149"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:af8947e5f1ee5deb95617d2f4ff7ce4c9"><td class="memItemLeft" ><a id="af8947e5f1ee5deb95617d2f4ff7ce4c9"></a>
+<tr class="memitem:a0c19d53868e156f21e087022d66988f0"><td class="memItemLeft" ><a id="a0c19d53868e156f21e087022d66988f0"></a>
 struct {</td></tr>
-<tr class="memitem:a3b69ff525b924662c7f400aae7897373"><td class="memItemLeft" >
-&#160;&#160;&#160;halp::val_port&lt;&quot;in&quot;, ossia::value &gt;&#160;&#160;&#160;<b>port</b></td></tr>
-<tr class="separator:a3b69ff525b924662c7f400aae7897373"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8947e5f1ee5deb95617d2f4ff7ce4c9"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
-<tr class="separator:af8947e5f1ee5deb95617d2f4ff7ce4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad44c2882b2f5f0d37323db8cb7cf8420"><td class="memItemLeft" ><a id="ad44c2882b2f5f0d37323db8cb7cf8420"></a>
+<tr class="memitem:a0654de6db6b64a8b5dd5c64cd788563e"><td class="memItemLeft" align="right" valign="top"><a id="a0654de6db6b64a8b5dd5c64cd788563e"></a>
+enum widget&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a0654de6db6b64a8b5dd5c64cd788563e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65ab7d7e381917dfb4f3cc73fc9a6a80"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;<b>port</b></td></tr>
+<tr class="separator:a65ab7d7e381917dfb4f3cc73fc9a6a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c19d53868e156f21e087022d66988f0"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
+<tr class="separator:a0c19d53868e156f21e087022d66988f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4767276e2faa90c7cb710849059eab5"><td class="memItemLeft" ><a id="af4767276e2faa90c7cb710849059eab5"></a>
 struct {</td></tr>
-<tr class="memitem:abbb45daf85dbb6ded2e0c2b34a1d3b4b"><td class="memItemLeft" >
-&#160;&#160;&#160;value_out&#160;&#160;&#160;<b>port</b> {}</td></tr>
-<tr class="separator:abbb45daf85dbb6ded2e0c2b34a1d3b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad44c2882b2f5f0d37323db8cb7cf8420"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b></td></tr>
-<tr class="separator:ad44c2882b2f5f0d37323db8cb7cf8420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab61c11dba79c9d9c8219368055a4557f"><td class="memItemLeft" align="right" valign="top"><a id="ab61c11dba79c9d9c8219368055a4557f"></a>
+enum widget&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ab61c11dba79c9d9c8219368055a4557f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4772ffc4ce23149a114b4d8acbe9d8b"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;<b>port</b></td></tr>
+<tr class="separator:ad4772ffc4ce23149a114b4d8acbe9d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4767276e2faa90c7cb710849059eab5"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b></td></tr>
+<tr class="separator:af4767276e2faa90c7cb710849059eab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_signal_display_8hpp_source.html">SignalDisplay.hpp</a></li>

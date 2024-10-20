@@ -4,7 +4,7 @@ var struct_ui_1_1_signal_display_1_1_node_1_1_layer =
     [ "paint_impl", "struct_ui_1_1_signal_display_1_1_node_1_1_layer.html#a5ab846d77df922de3dff76781cd7a6e2", null ],
     [ "reset", "struct_ui_1_1_signal_display_1_1_node_1_1_layer.html#a334c01793ce5702aa73e30db4014c163", null ],
     [ "m_interval", "struct_ui_1_1_signal_display_1_1_node_1_1_layer.html#ad2419d13186463bb845674625b0fc0f8", null ],
-    [ "m_values", "struct_ui_1_1_signal_display_1_1_node_1_1_layer.html#aed2dee8ba38d451ae197494bacc28a0f", null ],
-    [ "max", "struct_ui_1_1_signal_display_1_1_node_1_1_layer.html#a992c0ad305660a53db8a3852b86473fd", null ],
-    [ "min", "struct_ui_1_1_signal_display_1_1_node_1_1_layer.html#a9ea113d6675bebad37f728df542754c9", null ]
+    [ "m_values", "struct_ui_1_1_signal_display_1_1_node_1_1_layer.html#ad7c410533bb13c8c465a8deccd27310c", null ],
+    [ "max", "struct_ui_1_1_signal_display_1_1_node_1_1_layer.html#a8c5ceafcf66c368e70cf8bb52fc8a350", null ],
+    [ "min", "struct_ui_1_1_signal_display_1_1_node_1_1_layer.html#a50239f42b3a01d5f751f3382b244b472", null ]
 ];

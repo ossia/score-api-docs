@@ -18,9 +18,9 @@ var struct_nodes_1_1_chord_1_1_node =
     [ "operator()", "struct_nodes_1_1_chord_1_1_node.html#a64ec4f75015b8ba82fd1aa1bec752ad7", null ],
     [ "chord", "struct_nodes_1_1_chord_1_1_node.html#afc66e5a4faaf39989775c337c92e377b", null ],
     [ "chords", "struct_nodes_1_1_chord_1_1_node.html#a7fbfe84119a850a85423c870e893aaec", null ],
-    [ "inputs", "struct_nodes_1_1_chord_1_1_node.html#a2d72756aeb8d7739896fbf1d6e20b076", null ],
+    [ "inputs", "struct_nodes_1_1_chord_1_1_node.html#af7e4abb7ff5d625d59751747c0231b6f", null ],
     [ "midi", "struct_nodes_1_1_chord_1_1_node.html#a2a494ebe4acab67b45e5ca10f8e9fd72", null ],
     [ "midi", "struct_nodes_1_1_chord_1_1_node.html#af85a5754401ce6faed8ec0625a6a140a", null ],
     [ "num", "struct_nodes_1_1_chord_1_1_node.html#aea016c72356846ed8fe480deb466babd", null ],
-    [ "outputs", "struct_nodes_1_1_chord_1_1_node.html#af3cb534fe8a568437207a9201301005e", null ]
+    [ "outputs", "struct_nodes_1_1_chord_1_1_node.html#a90d0f1f9d7dd2c3939410648127b919c", null ]
 ];

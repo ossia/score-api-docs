@@ -1,7 +1,8 @@
 var struct_nodes_1_1_audio_looper_1_1_node =
 [
-    [ "Inputs", "struct_nodes_1_1_audio_looper_1_1_node_1_1_inputs.html", "struct_nodes_1_1_audio_looper_1_1_node_1_1_inputs" ],
+    [ "ins", "struct_nodes_1_1_audio_looper_1_1_node_1_1ins.html", "struct_nodes_1_1_audio_looper_1_1_node_1_1ins" ],
     [ "State", "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html", "struct_nodes_1_1_audio_looper_1_1_node_1_1_state" ],
+    [ "ui", "struct_nodes_1_1_audio_looper_1_1_node_1_1ui.html", "struct_nodes_1_1_audio_looper_1_1_node_1_1ui" ],
     [ "tick", "struct_nodes_1_1_audio_looper_1_1_node.html#aef2d8a43ca213149a140607b1dd5adc7", null ],
     [ "LoopMode", "struct_nodes_1_1_audio_looper_1_1_node.html#a85b4aea660e00a5d3ed65327c2f708a2", [
       [ "Play", "struct_nodes_1_1_audio_looper_1_1_node.html#a85b4aea660e00a5d3ed65327c2f708a2ade3c731be5633838089a07179d301d7b", null ],
@@ -31,10 +32,10 @@ var struct_nodes_1_1_audio_looper_1_1_node =
     [ "record", "struct_nodes_1_1_audio_looper_1_1_node.html#a74b5948aeb1f677986a7f43e3db2903f", null ],
     [ "record_noecho", "struct_nodes_1_1_audio_looper_1_1_node.html#a66cd38410c964e5a3adbbd07521d35dc", null ],
     [ "stop", "struct_nodes_1_1_audio_looper_1_1_node.html#afa28064132dd4dd61bbf40255248e7fa", null ],
-    [ "audio", "struct_nodes_1_1_audio_looper_1_1_node.html#a442c789c13ed03c2fe399676fbfb514a", null ],
+    [ "audio", "struct_nodes_1_1_audio_looper_1_1_node.html#ac529486c9c1dccbfeaa33b1a3e77d9d4", null ],
     [ "https", "struct_nodes_1_1_audio_looper_1_1_node.html#a68568bb6bd41f1d6d38dcf40ae2151e6", null ],
-    [ "inputs", "struct_nodes_1_1_audio_looper_1_1_node.html#a9d25f8a9694a882bef311b12cf7e9698", null ],
+    [ "inputs", "struct_nodes_1_1_audio_looper_1_1_node.html#a2ae3a966fc371a7bc336f5e4083c5758", null ],
     [ "ossia_state", "struct_nodes_1_1_audio_looper_1_1_node.html#a0e07bdad07701ca80c2a14c83ab41bf5", null ],
-    [ "outputs", "struct_nodes_1_1_audio_looper_1_1_node.html#ad02dc2a2f58225f35a8b8edce42e0b84", null ],
+    [ "outputs", "struct_nodes_1_1_audio_looper_1_1_node.html#a0a2f11095f9d6a9b755daafe0b7e49ac", null ],
     [ "state", "struct_nodes_1_1_audio_looper_1_1_node.html#a5d9b6581d0fedc87b7b3093c54528e9f", null ]
 ];

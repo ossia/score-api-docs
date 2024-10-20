@@ -9,8 +9,8 @@ var struct_nodes_1_1_smooth_1_1v1_1_1_node =
     [ "beta", "struct_nodes_1_1_smooth_1_1v1_1_1_node.html#aaa4fe7f4cbf9c7fe287c49537ec77413", null ],
     [ "cutoff", "struct_nodes_1_1_smooth_1_1v1_1_1_node.html#a580443ff238e93f7c00d45e0fc3ec1de", null ],
     [ "freq", "struct_nodes_1_1_smooth_1_1v1_1_1_node.html#a42f7e1c40aa3b18f0ad4b58029526d13", null ],
-    [ "inputs", "struct_nodes_1_1_smooth_1_1v1_1_1_node.html#a441be8ab8d7b16119e37da3e3734b696", null ],
-    [ "outputs", "struct_nodes_1_1_smooth_1_1v1_1_1_node.html#a0a14df22b9f0e3ca3456ffb577fbd6a6", null ],
+    [ "inputs", "struct_nodes_1_1_smooth_1_1v1_1_1_node.html#a4a4a404d338ff33365981fed622d8fe0", null ],
+    [ "outputs", "struct_nodes_1_1_smooth_1_1v1_1_1_node.html#a044b1ca414b42171ea8f3d9f0ab3d6e4", null ],
     [ "port", "struct_nodes_1_1_smooth_1_1v1_1_1_node.html#ad5ecbc457c7974666a857f3ed9286720", null ],
     [ "port", "struct_nodes_1_1_smooth_1_1v1_1_1_node.html#ad5ac22c085bae7533a1995502c601c8d", null ],
     [ "type", "struct_nodes_1_1_smooth_1_1v1_1_1_node.html#af157dc147d080580bfbdf338c2abfaf0", null ]

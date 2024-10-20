@@ -1,11 +1,12 @@
 var struct_nodes_1_1_math_audio_filter_1_1_node =
 [
     [ "State", "struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html", "struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state" ],
+    [ "ui", "struct_nodes_1_1_math_audio_filter_1_1_node_1_1ui.html", "struct_nodes_1_1_math_audio_filter_1_1_node_1_1ui" ],
     [ "tick", "struct_nodes_1_1_math_audio_filter_1_1_node.html#ae0435e27a3e80a833005d071d7f2697e", null ],
     [ "ExprTK", "struct_nodes_1_1_math_audio_filter_1_1_node.html#a317a1881ffbf0fca85f92ea67ebd2054", null ],
     [ "halp_meta", "struct_nodes_1_1_math_audio_filter_1_1_node.html#a8a5503b31f275a2916db26df94c47e0c", null ],
     [ "halp_meta", "struct_nodes_1_1_math_audio_filter_1_1_node.html#a68916acf4374e5601cc0d883e9ecfa7d", null ],
-    [ "halp_meta", "struct_nodes_1_1_math_audio_filter_1_1_node.html#a163104ac357b806447688615ba926ee6", null ],
+    [ "halp_meta", "struct_nodes_1_1_math_audio_filter_1_1_node.html#a243bffd59f314214f2c792c86a5b2126", null ],
     [ "operator()", "struct_nodes_1_1_math_audio_filter_1_1_node.html#a1d05d559d906923877753ef53e05ecf9", null ],
     [ "prepare", "struct_nodes_1_1_math_audio_filter_1_1_node.html#af9513391423824b82eee3eb038e778c6", null ],
     [ "audio", "struct_nodes_1_1_math_audio_filter_1_1_node.html#af6143b5ca8c0962f15762d5b3d4965c9", null ],

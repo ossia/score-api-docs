@@ -154,64 +154,11 @@ $(document).ready(function(){initNavTree('_smooth_8hpp_source.html',''); initRes
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    this-&gt;last = v;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#if FX_UI</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> item(</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      Process::Enum&amp; type, Process::FloatKnob&amp; amount, Process::LogFloatSlider&amp; freq,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      Process::LogFloatSlider&amp; cutoff, Process::FloatSlider&amp; beta,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keyword">const</span> <a class="code" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; process, QGraphicsItem&amp; parent, QObject&amp; context,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keyword">const</span> <a class="code" href="struct_process_1_1_context.html">Process::Context</a>&amp; doc)</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">using namespace </span><a class="code" href="namespace_process.html">Process</a>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a>&amp; portFactory</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        = doc.app.<a class="code" href="structscore_1_1_application_context.html#aad836474a385889c0486ecfeeadb06df">interfaces</a>&lt;<a class="code" href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a>&gt;();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> tMarg = 5;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> cMarg = 15;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> h = 125;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> w = 220;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">auto</span> c0_bg = <span class="keyword">new</span> <a class="code" href="classscore_1_1_background_item.html">score::BackgroundItem</a>{&amp;parent};</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    c0_bg-&gt;setRect({0., 0., w, h});</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">auto</span> type_item = makeControl(</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        tuplet::get&lt;0&gt;(Metadata::controls), type, parent, context, doc, portFactory);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    type_item.root.setPos(70, 0);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    type_item.control.rows = 4;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    type_item.control.columns = 1;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    type_item.control.setRect(QRectF{0, 0, 60, 105});</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">auto</span> amount_item = makeControl(</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        tuplet::get&lt;1&gt;(Metadata::controls), amount, parent, context, doc, portFactory);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    amount_item.root.setPos(tMarg, 30);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    amount_item.control.setPos(0, cMarg);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">auto</span> freq_item = makeControl(</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        tuplet::get&lt;2&gt;(Metadata::controls), freq, parent, context, doc, portFactory);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    freq_item.root.setPos(140, 0);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    freq_item.control.setPos(0, cMarg);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">auto</span> cutoff_item = makeControl(</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        tuplet::get&lt;3&gt;(Metadata::controls), cutoff, parent, context, doc, portFactory);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    cutoff_item.root.setPos(140, 40);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    cutoff_item.control.setPos(0, cMarg);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">auto</span> beta_item = makeControl(</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        tuplet::get&lt;4&gt;(Metadata::controls), beta, parent, context, doc, portFactory);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    beta_item.root.setPos(140, 80);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    beta_item.control.setPos(0, cMarg);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  }</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;};</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
 <div class="ttc" id="aclass_nodes_1_1_noise_state_html"><div class="ttname"><a href="class_nodes_1_1_noise_state.html">Nodes::NoiseState</a></div><div class="ttdef"><b>Definition:</b> NoiseFilter.hpp:128</div></div>
-<div class="ttc" id="aclass_process_1_1_port_factory_list_html"><div class="ttname"><a href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a></div><div class="ttdef"><b>Definition:</b> PortFactory.hpp:65</div></div>
-<div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Process.hpp:61</div></div>
-<div class="ttc" id="aclassscore_1_1_background_item_html"><div class="ttname"><a href="classscore_1_1_background_item.html">score::BackgroundItem</a></div><div class="ttdef"><b>Definition:</b> RectItem.hpp:96</div></div>
-<div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:1324</div></div>
 <div class="ttc" id="astruct_nodes_1_1_smooth_1_1v1_1_1_node_html"><div class="ttname"><a href="struct_nodes_1_1_smooth_1_1v1_1_1_node.html">Nodes::Smooth::v1::Node</a></div><div class="ttdef"><b>Definition:</b> Smooth.hpp:18</div></div>
-<div class="ttc" id="astruct_process_1_1_context_html"><div class="ttname"><a href="struct_process_1_1_context.html">Process::Context</a></div><div class="ttdef"><b>Definition:</b> ProcessContext.hpp:12</div></div>
-<div class="ttc" id="astructscore_1_1_application_context_html_aad836474a385889c0486ecfeeadb06df"><div class="ttname"><a href="structscore_1_1_application_context.html#aad836474a385889c0486ecfeeadb06df">score::ApplicationContext::interfaces</a></div><div class="ttdeci">const T &amp; interfaces() const</div><div class="ttdoc">Access to a specific interface list.</div><div class="ttdef"><b>Definition:</b> ApplicationContext.hpp:67</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

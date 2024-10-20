@@ -1,11 +1,12 @@
 var struct_nodes_1_1_math_mapping_1_1_node =
 [
     [ "State", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state" ],
+    [ "ui", "struct_nodes_1_1_math_mapping_1_1_node_1_1ui.html", "struct_nodes_1_1_math_mapping_1_1_node_1_1ui" ],
     [ "tick", "struct_nodes_1_1_math_mapping_1_1_node.html#a9e5ef8b76277ff7b24e62a15f932303f", null ],
     [ "ExprTK", "struct_nodes_1_1_math_mapping_1_1_node.html#a683a6974a644e2c17110e2ee78eae0ac", null ],
     [ "halp_meta", "struct_nodes_1_1_math_mapping_1_1_node.html#a5ac8c36474b1e044849d4d432f1700bb", null ],
     [ "halp_meta", "struct_nodes_1_1_math_mapping_1_1_node.html#a226692ed92a5957574d7bb19cf02a1df", null ],
-    [ "halp_meta", "struct_nodes_1_1_math_mapping_1_1_node.html#acf4ede085a2d6e5de28871e1f08b82e6", null ],
+    [ "halp_meta", "struct_nodes_1_1_math_mapping_1_1_node.html#a4113505bf322eba6b6d9e2897d6c823d", null ],
     [ "operator()", "struct_nodes_1_1_math_mapping_1_1_node.html#a25f5dfb5dc0e1e3ac70cda4de4d6747c", null ],
     [ "prepare", "struct_nodes_1_1_math_mapping_1_1_node.html#a62952f6a5a50d015a71aea075810643a", null ],
     [ "https", "struct_nodes_1_1_math_mapping_1_1_node.html#a40818588bf529093eebdeaf6c706e864", null ],
