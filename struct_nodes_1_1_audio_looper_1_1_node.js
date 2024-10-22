@@ -36,6 +36,6 @@ var struct_nodes_1_1_audio_looper_1_1_node =
     [ "https", "struct_nodes_1_1_audio_looper_1_1_node.html#a68568bb6bd41f1d6d38dcf40ae2151e6", null ],
     [ "inputs", "struct_nodes_1_1_audio_looper_1_1_node.html#a2ae3a966fc371a7bc336f5e4083c5758", null ],
     [ "ossia_state", "struct_nodes_1_1_audio_looper_1_1_node.html#a0e07bdad07701ca80c2a14c83ab41bf5", null ],
-    [ "outputs", "struct_nodes_1_1_audio_looper_1_1_node.html#a0a2f11095f9d6a9b755daafe0b7e49ac", null ],
+    [ "outputs", "struct_nodes_1_1_audio_looper_1_1_node.html#ad02dc2a2f58225f35a8b8edce42e0b84", null ],
     [ "state", "struct_nodes_1_1_audio_looper_1_1_node.html#a5d9b6581d0fedc87b7b3093c54528e9f", null ]
 ];

@@ -1,5 +1,6 @@
 var NAVTREEINDEX63 =
 {
+"struct_e_h_exception_record.html#acf3c94d6c056003c5002af6383ae058f":[12,0,104,3],
 "struct_e_h_exception_record.html#addfef9e882ed22dd7f1162abbbd4d3ee":[12,0,104,5],
 "struct_e_h_exception_record_1_1_e_h_parameters.html":[12,0,104,0],
 "struct_e_h_exception_record_1_1_e_h_parameters.html#a62879f7994971a7cfe8aedb8ce678a0e":[12,0,104,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX63 =
 "struct_faust_1_1_update_u_i.html#aaec93ac2b5d65a682203b91fda2f5ffd":[12,0,16,5,6],
 "struct_faust_1_1_update_u_i.html#ab8279355d2c0998818b87a6397221010":[12,0,16,5,19],
 "struct_faust_1_1_update_u_i.html#abed44c210617e9b03dd47aec350c77af":[12,0,16,5,13],
-"struct_faust_1_1_update_u_i.html#ae7cfc7234bd90610bc4bdfa2502eae3e":[12,0,16,5,20],
-"struct_faust_1_1_update_u_i.html#aef15265de87ade4c8edf1af7b9cb0c07":[12,0,16,5,15]
+"struct_faust_1_1_update_u_i.html#ae7cfc7234bd90610bc4bdfa2502eae3e":[12,0,16,5,20]
 };

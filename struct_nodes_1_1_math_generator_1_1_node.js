@@ -10,7 +10,7 @@ var struct_nodes_1_1_math_generator_1_1_node =
     [ "operator()", "struct_nodes_1_1_math_generator_1_1_node.html#ae7c189a6c0c85e1aba7a7a9ecac22b26", null ],
     [ "https", "struct_nodes_1_1_math_generator_1_1_node.html#a63f7108a2f0bf1425b5e25de7a377b19", null ],
     [ "inputs", "struct_nodes_1_1_math_generator_1_1_node.html#a8b9e7283921a7c1bc779437c8fa56ca7", null ],
-    [ "outputs", "struct_nodes_1_1_math_generator_1_1_node.html#a90c01ee90022d7051e053b5d8a9359f3", null ],
+    [ "outputs", "struct_nodes_1_1_math_generator_1_1_node.html#a96a1013ae7eeaf63ccce1ae0ec507b18", null ],
     [ "port", "struct_nodes_1_1_math_generator_1_1_node.html#afce6d33e43ce29f53e6c90fcfb8b9103", null ],
     [ "score", "struct_nodes_1_1_math_generator_1_1_node.html#a289eb611459348cf4762d58a9454a77c", null ],
     [ "state", "struct_nodes_1_1_math_generator_1_1_node.html#aefb1f786c157b6a34357d8f30d722d16", null ]

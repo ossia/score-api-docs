@@ -11,7 +11,7 @@ var struct_ui_1_1_signal_display_1_1_node =
     [ "halp_meta", "struct_ui_1_1_signal_display_1_1_node.html#a4ad26387f22690577d1fddfcb53561d8", null ],
     [ "halp_meta", "struct_ui_1_1_signal_display_1_1_node.html#a2ab10c1b535972b3148e0e2d9f8c1dcf", null ],
     [ "operator()", "struct_ui_1_1_signal_display_1_1_node.html#ace55dfbccf90e53d4505622470a01149", null ],
-    [ "inputs", "struct_ui_1_1_signal_display_1_1_node.html#a0c19d53868e156f21e087022d66988f0", null ],
-    [ "outputs", "struct_ui_1_1_signal_display_1_1_node.html#af4767276e2faa90c7cb710849059eab5", null ],
+    [ "inputs", "struct_ui_1_1_signal_display_1_1_node.html#af8947e5f1ee5deb95617d2f4ff7ce4c9", null ],
+    [ "outputs", "struct_ui_1_1_signal_display_1_1_node.html#ad44c2882b2f5f0d37323db8cb7cf8420", null ],
     [ "port", "struct_ui_1_1_signal_display_1_1_node.html#a686b8e16fa1fe628182b29bdefce6c47", null ]
 ];

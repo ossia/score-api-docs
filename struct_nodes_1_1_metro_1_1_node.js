@@ -9,6 +9,6 @@ var struct_nodes_1_1_metro_1_1_node =
     [ "prepare", "struct_nodes_1_1_metro_1_1_node.html#abbe4117c8efc2072f6920488ce505429", null ],
     [ "inputs", "struct_nodes_1_1_metro_1_1_node.html#ad81193893f0f3ffb8f570a3733feaa84", null ],
     [ "out", "struct_nodes_1_1_metro_1_1_node.html#a7bc4bf38e608905cbb8efe71b9cd9bc8", null ],
-    [ "outputs", "struct_nodes_1_1_metro_1_1_node.html#a9b0be69a07eb204312ee167adcdff048", null ],
+    [ "outputs", "struct_nodes_1_1_metro_1_1_node.html#a7e8a36e96073263df5ce4ba4a16bc86f", null ],
     [ "setup", "struct_nodes_1_1_metro_1_1_node.html#a72077e1ff421efffd8384f4d2049d9e7", null ]
 ];

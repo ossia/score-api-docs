@@ -1,5 +1,6 @@
 var NAVTREEINDEX80 =
 {
+"structoscr_1_1_graph_widget.html#a8ad49a807c85ecd130a81e38c2061c62":[12,0,37,54,4],
 "structoscr_1_1_graph_widget.html#abb7124535bde73508a8bb43b83397229":[12,0,37,54,2],
 "structoscr_1_1_graph_widget.html#ac3cf9fec0e04f1375f5c6233c06269fa":[12,0,37,54,0],
 "structoscr_1_1_graph_widget.html#aed662f0bf64f70b95598acec08b7c137":[12,0,37,54,3],
@@ -16,8 +17,8 @@ var NAVTREEINDEX80 =
 "structoscr_1_1_inlet_init_func.html#abfe1da40941e2112ff8acde4de7adebd":[12,0,37,47,11],
 "structoscr_1_1_inlet_init_func.html#ace7897bd30ea620f3b89ed0d9d7f40e9":[12,0,37,47,1],
 "structoscr_1_1_inlet_init_func.html#ad44f36dfbcfeea53fd7b706d8a200495":[12,0,37,47,13],
-"structoscr_1_1_inlet_init_func.html#af612c7474c3ee21491155ce56f6e9155":[12,0,37,47,2],
 "structoscr_1_1_inlet_init_func.html#af612c7474c3ee21491155ce56f6e9155":[12,0,37,47,3],
+"structoscr_1_1_inlet_init_func.html#af612c7474c3ee21491155ce56f6e9155":[12,0,37,47,2],
 "structoscr_1_1_inlet_init_func.html#afa4d475c6adea73a084803c2ebfedc39":[12,0,37,47,0],
 "structoscr_1_1_layout_builder.html":[12,0,37,33],
 "structoscr_1_1_layout_builder.html#a0b74474a18c899eaaa91c9bbc1d21307":[12,0,37,33,9],
@@ -211,9 +212,9 @@ var NAVTREEINDEX80 =
 "structoscr_1_1setup___impl0.html#a2ad50f84e6eea6ac4a97c6483330c22d":[12,0,37,22,1],
 "structoscr_1_1setup___impl0.html#a475fec302bc8c4f7d8821ee592319084":[12,0,37,22,6],
 "structoscr_1_1setup___impl0.html#a61f8e7ead77c10b7719c85d0dcea206f":[12,0,37,22,8],
-"structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,37,22,4],
-"structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,37,22,3],
 "structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,37,22,5],
+"structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,37,22,3],
+"structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,37,22,4],
 "structoscr_1_1setup___impl0.html#ab0925cd37367396714b0651fb445ad3d":[12,0,37,22,9],
 "structoscr_1_1setup___impl0.html#ac697cbf094cf1842eb7949c2bae9439d":[12,0,37,22,2],
 "structoscr_1_1setup___impl0.html#aced344fa4d64c5a68ac6e9227ebd6c95":[12,0,37,22,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX80 =
 "structossia_1_1nodes_1_1audio__metronome_1_1played__sound.html#acbf62e345dd923196980fc3d0617159d":[12,0,38,0,1,0,5],
 "structossia_1_1nodes_1_1audio__metronome_1_1played__sound.html#ad0ef1c016732a6532abc18e147b62ad0":[12,0,38,0,1,0,0],
 "structossia_1_1nodes_1_1audio__metronome_1_1played__sound.html#ae7efca1b11dba39ba5f16c92847abaed":[12,0,38,0,1,0,4],
-"structossia_1_1nodes_1_1audio__metronome_1_1played__sound.html#aeff59101e1124497dd573dfa14cd828c":[12,0,38,0,1,0,2],
-"structossia_1_1qt__property__converter_3_01_state_1_1_address_accessor_01_4.html":[12,0,38,4]
+"structossia_1_1nodes_1_1audio__metronome_1_1played__sound.html#aeff59101e1124497dd573dfa14cd828c":[12,0,38,0,1,0,2]
 };

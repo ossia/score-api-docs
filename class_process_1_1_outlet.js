@@ -10,5 +10,6 @@ var class_process_1_1_outlet =
     [ "Outlet", "class_process_1_1_outlet.html#a2d3526670e36503fb8f63e13d4de5572", null ],
     [ "Outlet", "class_process_1_1_outlet.html#a06cc88350f310adec325d54490e60d70", null ],
     [ "forChildInlets", "class_process_1_1_outlet.html#acbac34e45a00cbfe514c9ccbeeb859d9", null ],
-    [ "mapExecution", "class_process_1_1_outlet.html#ae85dbccd9ec46e0008de6f82026cc038", null ]
+    [ "mapExecution", "class_process_1_1_outlet.html#ae85dbccd9ec46e0008de6f82026cc038", null ],
+    [ "setupExecution", "class_process_1_1_outlet.html#a45219de541c5f7036e969a6fcac7ce66", null ]
 ];

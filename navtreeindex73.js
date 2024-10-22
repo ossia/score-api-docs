@@ -1,5 +1,6 @@
 var NAVTREEINDEX73 =
 {
+"struct_process_1_1_style.html#a0fd888c1ec7c1fbf71aab956022dd50f":[12,0,42,92,19],
 "struct_process_1_1_style.html#a10aff9e050d97c51e444e55485afc384":[12,0,42,92,55],
 "struct_process_1_1_style.html#a1143a8d2dda7f2517f9fe918a18def5f":[12,0,42,92,77],
 "struct_process_1_1_style.html#a140da7f2963f4782523a1d5e38c1fa24":[12,0,42,92,45],
@@ -111,11 +112,11 @@ var NAVTREEINDEX73 =
 "struct_protocols_1_1_artnet_1_1_range_capability.html#ac9ceade681882eab6953a7ccc54b1588":[12,0,43,0,2,0],
 "struct_protocols_1_1_artnet_1_1_single_capability.html":[12,0,43,0,1],
 "struct_protocols_1_1_artnet_specific_settings.html":[12,0,43,20],
-"struct_protocols_1_1_artnet_specific_settings.html#a342845b8a5a74da9b52fe654c9235192":[12,0,43,20,3],
+"struct_protocols_1_1_artnet_specific_settings.html#a3f3413ef66d7ad11072da74990172beb":[12,0,43,20,0],
 "struct_protocols_1_1_artnet_specific_settings.html#a4751dce842318274b333b0d0e52d88a0":[12,0,43,20,1],
 "struct_protocols_1_1_artnet_specific_settings.html#a4d06303be75d3e9c621899e5135d8239":[12,0,43,20,4],
-"struct_protocols_1_1_artnet_specific_settings.html#a5319a339fb59e0623cb52f7857ec2a60":[12,0,43,20,0],
 "struct_protocols_1_1_artnet_specific_settings.html#a77b6e21f64d9ce28f5af1710ec4b10df":[12,0,43,20,5],
+"struct_protocols_1_1_artnet_specific_settings.html#ac3f887bd2586ff19c22394c7598f17de":[12,0,43,20,3],
 "struct_protocols_1_1_artnet_specific_settings.html#af633c42f6e9ab57071377281ee0bd583":[12,0,43,20,2],
 "struct_protocols_1_1_co_a_p_specific_settings.html":[12,0,43,26],
 "struct_protocols_1_1_co_a_p_specific_settings.html#a020259cea9f4bc1afd44a62a2bfc18b3":[12,0,43,26,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX73 =
 "struct_recording_1_1_record_automation_first_callback_visitor.html#a94f6384cc433db7bc77a7c89a76b66f8":[12,0,44,3,3],
 "struct_recording_1_1_record_automation_first_callback_visitor.html#ab3905cc92846ab3c952f402cadf9d66b":[12,0,44,3,7],
 "struct_recording_1_1_record_automation_first_callback_visitor.html#ab676a410afa6e7fe19ca5720d3f04f53":[12,0,44,3,6],
-"struct_recording_1_1_record_automation_first_callback_visitor.html#abf0ac38d42a1428a440cc992b0b31220":[12,0,44,3,10],
-"struct_recording_1_1_record_automation_subsequent_callback_visitor.html":[12,0,44,6]
+"struct_recording_1_1_record_automation_first_callback_visitor.html#abf0ac38d42a1428a440cc992b0b31220":[12,0,44,3,10]
 };

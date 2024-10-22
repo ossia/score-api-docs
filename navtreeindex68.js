@@ -1,5 +1,6 @@
 var NAVTREEINDEX68 =
 {
+"struct_media_1_1_decoding_setup.html#a0e76416ca207dd949e1fe59366581a7f":[12,0,32,14,1],
 "struct_media_1_1_decoding_setup.html#a4c9251e5172789ec6eb3567c1709fb35":[12,0,32,14,2],
 "struct_media_1_1_decoding_setup.html#a79972aaa3668e28c7ded12cbdedbd757":[12,0,32,14,3],
 "struct_media_1_1_decoding_setup.html#ad36f85f5049837041ebfa1106a11ffb8":[12,0,32,14,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX68 =
 "struct_nodes_1_1_arpeggiator_1_1_arpeggios_1_1range.html#a5c82cec2dd0be03299ba876da9c84682":[12,0,36,0,0,0,1],
 "struct_nodes_1_1_arpeggiator_1_1_node.html":[12,0,36,0,1],
 "struct_nodes_1_1_arpeggiator_1_1_node.html#a0556af2d7ec2582504a23bf5a618d550":[12,0,36,0,1,13],
-"struct_nodes_1_1_arpeggiator_1_1_node.html#a06be436935f39262a28ffaef9d86754c":[12,0,36,0,1,12],
-"struct_nodes_1_1_arpeggiator_1_1_node.html#a1a9e032367efd03c7cdf0c637be32324":[12,0,36,0,1,6]
+"struct_nodes_1_1_arpeggiator_1_1_node.html#a06be436935f39262a28ffaef9d86754c":[12,0,36,0,1,12]
 };

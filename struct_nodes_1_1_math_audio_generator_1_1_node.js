@@ -13,7 +13,7 @@ var struct_nodes_1_1_math_audio_generator_1_1_node =
     [ "b", "struct_nodes_1_1_math_audio_generator_1_1_node.html#a15f20acf2580650e485953a4c44d20a0", null ],
     [ "c", "struct_nodes_1_1_math_audio_generator_1_1_node.html#a2ae530aca3cbeeba2b9691c603188ed8", null ],
     [ "https", "struct_nodes_1_1_math_audio_generator_1_1_node.html#a060a0c081688e96beb70481a5c579f95", null ],
-    [ "outputs", "struct_nodes_1_1_math_audio_generator_1_1_node.html#ab544dca68111f50d88248c474199f9df", null ],
+    [ "outputs", "struct_nodes_1_1_math_audio_generator_1_1_node.html#a4443d34c73b3356f42f60700ef93e5ae", null ],
     [ "score", "struct_nodes_1_1_math_audio_generator_1_1_node.html#a2431f7b11f06ad050a4dd66d7984d61a", null ],
     [ "setup", "struct_nodes_1_1_math_audio_generator_1_1_node.html#a4cbf6f68722872fb1eb0a1acc7f9fa7f", null ],
     [ "state", "struct_nodes_1_1_math_audio_generator_1_1_node.html#a6d052a426b25270aa056772637c727f2", null ],

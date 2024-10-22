@@ -1,5 +1,6 @@
 var NAVTREEINDEX55 =
 {
+"classvst_1_1_application_plugin.html#aeb4cdd861015090c41bf30e1701abe17":[12,0,58,1,5],
 "classvst_1_1_control_inlet.html":[12,0,58,6],
 "classvst_1_1_control_inlet.html#a0c012604077b15b51efc58f5f9f1244b":[12,0,58,6,8],
 "classvst_1_1_control_inlet.html#a2424a7e7d5c9fa6c1b52d50238e41a8b":[12,0,58,6,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX55 =
 "namespace_curve.html#aabe35d95de0d232e95c81f651bc9f2c7ab9f5c797ebbf55adccdd8539a65a0241":[11,0,8,114,0],
 "namespace_curve.html#aabe35d95de0d232e95c81f651bc9f2c7abbabc7d6204087b710f9fbaff1130875":[11,0,8,114,5],
 "namespace_curve.html#aabe35d95de0d232e95c81f651bc9f2c7ac9dbb2b7c84159b632d71e512eba8428":[11,0,8,114,6],
-"namespace_curve.html#aabe35d95de0d232e95c81f651bc9f2c7ae0626222614bdee31951d84c64e5e9ff":[11,0,8,114,1],
-"namespace_curve.html#aabe35d95de0d232e95c81f651bc9f2c7afb957274da161db29b4be1542092e9a6":[11,0,8,114,4]
+"namespace_curve.html#aabe35d95de0d232e95c81f651bc9f2c7ae0626222614bdee31951d84c64e5e9ff":[11,0,8,114,1]
 };

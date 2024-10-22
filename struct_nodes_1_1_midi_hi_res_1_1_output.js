@@ -7,8 +7,8 @@ var struct_nodes_1_1_midi_hi_res_1_1_output =
     [ "f", "struct_nodes_1_1_midi_hi_res_1_1_output.html#a0fd4d21530cedec7033dfb2ec2df426b", null ],
     [ "https", "struct_nodes_1_1_midi_hi_res_1_1_output.html#a7f17c2443ea792a0dd507b3d361de2fc", null ],
     [ "i", "struct_nodes_1_1_midi_hi_res_1_1_output.html#a27d48a568715de0628ffe43d29ae6857", null ],
-    [ "inputs", "struct_nodes_1_1_midi_hi_res_1_1_output.html#a1bd65a4429ed8b4044b76c91673b5eb2", null ],
+    [ "inputs", "struct_nodes_1_1_midi_hi_res_1_1_output.html#a5b3fef635f358e5622bb0eee2e0bee0e", null ],
     [ "lsb", "struct_nodes_1_1_midi_hi_res_1_1_output.html#a783cc5515eb3aa35b70c2c2382314591", null ],
     [ "msb", "struct_nodes_1_1_midi_hi_res_1_1_output.html#ae7d963a7bd10ba234420b4e59aa650d5", null ],
-    [ "outputs", "struct_nodes_1_1_midi_hi_res_1_1_output.html#a2d092501b5d5c1675cb18c875a5017c0", null ]
+    [ "outputs", "struct_nodes_1_1_midi_hi_res_1_1_output.html#a8165d27b8637a894f9ea9b0e52eb187c", null ]
 ];

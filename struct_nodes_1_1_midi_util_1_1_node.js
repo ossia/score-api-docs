@@ -13,7 +13,7 @@ var struct_nodes_1_1_midi_util_1_1_node =
     [ "inputs", "struct_nodes_1_1_midi_util_1_1_node.html#a0a084f2b2aab609709d53bce3e20008f", null ],
     [ "map", "struct_nodes_1_1_midi_util_1_1_node.html#a2f00b42394d179480c6631b48ad08458", null ],
     [ "midi", "struct_nodes_1_1_midi_util_1_1_node.html#ad967ddc747dff86b0cabc0325d940d59", null ],
-    [ "outputs", "struct_nodes_1_1_midi_util_1_1_node.html#a5d8e7d9f63b4ac1f66504d9faf4789b2", null ],
+    [ "outputs", "struct_nodes_1_1_midi_util_1_1_node.html#a4f9f0b8ebea0f74e8159f694d12f3359", null ],
     [ "scale", "struct_nodes_1_1_midi_util_1_1_node.html#a40c9c09d102dad8ea23d66a210efc2f7", null ],
     [ "transpose", "struct_nodes_1_1_midi_util_1_1_node.html#ae77a3b55df1336e12206baaad282e17a", null ]
 ];

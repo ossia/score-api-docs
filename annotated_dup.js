@@ -2602,6 +2602,7 @@ var annotated_dup =
     [ "QMapKeyAdaptor", "struct_q_map_key_adaptor.html", "struct_q_map_key_adaptor" ],
     [ "QtDiagnosticConsumer", "class_qt_diagnostic_consumer.html", "class_qt_diagnostic_consumer" ],
     [ "RandomNameProvider", "class_random_name_provider.html", null ],
+    [ "range", "structrange.html", "structrange" ],
     [ "Reader", "class_reader.html", null ],
     [ "RemoteApplication", "class_remote_application.html", "class_remote_application" ],
     [ "RemoveEventTest", "class_remove_event_test.html", null ],

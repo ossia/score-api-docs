@@ -305,7 +305,7 @@ $(document).ready(function(){initNavTree('_process_model_port_init_8hpp_source.h
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    requires(!oscr::ossia_port&lt;T&gt;)</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> T&amp; in, avnd::field_index&lt;N&gt;)</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  {</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordflow">if</span> constexpr(avnd::control&lt;T&gt; || avnd::curve_port&lt;T&gt;)</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordflow">if</span> constexpr(avnd::has_widget&lt;T&gt; || avnd::curve_port&lt;T&gt;)</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    {</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;      <span class="keyword">auto</span> p = oscr::make_control_in&lt;Node, T&gt;(</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;          avnd::field_index&lt;N&gt;{}, <a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>(inlet), &amp;<span class="keyword">self</span>);</div>
@@ -422,7 +422,7 @@ $(document).ready(function(){initNavTree('_process_model_port_init_8hpp_source.h
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    requires(!oscr::ossia_port&lt;T&gt;)</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> T&amp; out, avnd::field_index&lt;N&gt;)</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;  {</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordflow">if</span> constexpr(avnd::control&lt;T&gt;)</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordflow">if</span> constexpr(avnd::has_widget&lt;T&gt;)</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    {</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">auto</span> p = oscr::make_control_out&lt;T&gt;(</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;             avnd::field_index&lt;N&gt;{}, <a class="code" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>(outlet), &amp;<span class="keyword">self</span>))</div>
@@ -513,15 +513,15 @@ $(document).ready(function(){initNavTree('_process_model_port_init_8hpp_source.h
 <div class="ttc" id="aclass_gfx_1_1_geometry_inlet_html"><div class="ttname"><a href="class_gfx_1_1_geometry_inlet.html">Gfx::GeometryInlet</a></div><div class="ttdef"><b>Definition:</b> TexturePort.hpp:121</div></div>
 <div class="ttc" id="aclass_gfx_1_1_geometry_outlet_html"><div class="ttname"><a href="class_gfx_1_1_geometry_outlet.html">Gfx::GeometryOutlet</a></div><div class="ttdef"><b>Definition:</b> TexturePort.hpp:144</div></div>
 <div class="ttc" id="aclass_media_1_1_sound_1_1_drop_handler_html"><div class="ttname"><a href="class_media_1_1_sound_1_1_drop_handler.html">Media::Sound::DropHandler</a></div><div class="ttdoc">The DropHandler class If something with audio mime type is dropped, then we create a box with an audi...</div><div class="ttdef"><b>Definition:</b> SoundDrop.hpp:26</div></div>
-<div class="ttc" id="aclass_process_1_1_audio_inlet_html"><div class="ttname"><a href="class_process_1_1_audio_inlet.html">Process::AudioInlet</a></div><div class="ttdef"><b>Definition:</b> Port.hpp:292</div></div>
-<div class="ttc" id="aclass_process_1_1_audio_outlet_html"><div class="ttname"><a href="class_process_1_1_audio_outlet.html">Process::AudioOutlet</a></div><div class="ttdef"><b>Definition:</b> Port.hpp:315</div></div>
-<div class="ttc" id="aclass_process_1_1_control_outlet_html"><div class="ttname"><a href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a></div><div class="ttdef"><b>Definition:</b> Port.hpp:417</div></div>
-<div class="ttc" id="aclass_process_1_1_midi_inlet_html"><div class="ttname"><a href="class_process_1_1_midi_inlet.html">Process::MidiInlet</a></div><div class="ttdef"><b>Definition:</b> Port.hpp:371</div></div>
-<div class="ttc" id="aclass_process_1_1_midi_outlet_html"><div class="ttname"><a href="class_process_1_1_midi_outlet.html">Process::MidiOutlet</a></div><div class="ttdef"><b>Definition:</b> Port.hpp:394</div></div>
+<div class="ttc" id="aclass_process_1_1_audio_inlet_html"><div class="ttname"><a href="class_process_1_1_audio_inlet.html">Process::AudioInlet</a></div><div class="ttdef"><b>Definition:</b> Port.hpp:293</div></div>
+<div class="ttc" id="aclass_process_1_1_audio_outlet_html"><div class="ttname"><a href="class_process_1_1_audio_outlet.html">Process::AudioOutlet</a></div><div class="ttdef"><b>Definition:</b> Port.hpp:316</div></div>
+<div class="ttc" id="aclass_process_1_1_control_outlet_html"><div class="ttname"><a href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a></div><div class="ttdef"><b>Definition:</b> Port.hpp:418</div></div>
+<div class="ttc" id="aclass_process_1_1_midi_inlet_html"><div class="ttname"><a href="class_process_1_1_midi_inlet.html">Process::MidiInlet</a></div><div class="ttdef"><b>Definition:</b> Port.hpp:372</div></div>
+<div class="ttc" id="aclass_process_1_1_midi_outlet_html"><div class="ttname"><a href="class_process_1_1_midi_outlet.html">Process::MidiOutlet</a></div><div class="ttdef"><b>Definition:</b> Port.hpp:395</div></div>
 <div class="ttc" id="aclass_process_1_1_port_html"><div class="ttname"><a href="class_process_1_1_port.html">Process::Port</a></div><div class="ttdef"><b>Definition:</b> Port.hpp:102</div></div>
 <div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Process.hpp:61</div></div>
-<div class="ttc" id="aclass_process_1_1_value_inlet_html"><div class="ttname"><a href="class_process_1_1_value_inlet.html">Process::ValueInlet</a></div><div class="ttdef"><b>Definition:</b> Port.hpp:484</div></div>
-<div class="ttc" id="aclass_process_1_1_value_outlet_html"><div class="ttname"><a href="class_process_1_1_value_outlet.html">Process::ValueOutlet</a></div><div class="ttdef"><b>Definition:</b> Port.hpp:507</div></div>
+<div class="ttc" id="aclass_process_1_1_value_inlet_html"><div class="ttname"><a href="class_process_1_1_value_inlet.html">Process::ValueInlet</a></div><div class="ttdef"><b>Definition:</b> Port.hpp:485</div></div>
+<div class="ttc" id="aclass_process_1_1_value_outlet_html"><div class="ttname"><a href="class_process_1_1_value_outlet.html">Process::ValueOutlet</a></div><div class="ttdef"><b>Definition:</b> Port.hpp:508</div></div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition:</b> Identifier.hpp:57</div></div>
 <div class="ttc" id="anamespaceoscr_html"><div class="ttname"><a href="namespaceoscr.html">oscr</a></div><div class="ttdef"><b>Definition:</b> Factories.hpp:19</div></div>
 <div class="ttc" id="astruct_process_1_1_inlets_html"><div class="ttname"><a href="struct_process_1_1_inlets.html">Process::Inlets</a></div><div class="ttdef"><b>Definition:</b> PortForward.hpp:23</div></div>

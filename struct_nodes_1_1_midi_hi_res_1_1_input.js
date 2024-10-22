@@ -8,5 +8,5 @@ var struct_nodes_1_1_midi_hi_res_1_1_input =
     [ "f", "struct_nodes_1_1_midi_hi_res_1_1_input.html#a1cab717f7f204b92d3be5caf4b5c172e", null ],
     [ "i", "struct_nodes_1_1_midi_hi_res_1_1_input.html#a7910f84dc520af3912d3ef0451ee1479", null ],
     [ "inputs", "struct_nodes_1_1_midi_hi_res_1_1_input.html#a2f6a3bed8c8aa4f8ff68dbfe3e87dae7", null ],
-    [ "outputs", "struct_nodes_1_1_midi_hi_res_1_1_input.html#a5592997e71cf683405b407ae57f0112f", null ]
+    [ "outputs", "struct_nodes_1_1_midi_hi_res_1_1_input.html#abb4ddaebcf0c12c23936c41470dfef22", null ]
 ];

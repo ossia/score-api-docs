@@ -12,5 +12,5 @@ var struct_nodes_1_1_rate_limiter_1_1_node =
     [ "inputs", "struct_nodes_1_1_rate_limiter_1_1_node.html#a804cc0c02efcb39b43a6d9d5ab728af3", null ],
     [ "last_time", "struct_nodes_1_1_rate_limiter_1_1_node.html#af69113c3d78a03df07148ff520b173ea", null ],
     [ "out", "struct_nodes_1_1_rate_limiter_1_1_node.html#a3dfb4dd11a8313e29a029284e9700109", null ],
-    [ "outputs", "struct_nodes_1_1_rate_limiter_1_1_node.html#a7496dc7b1c2f6215f95304a62caa8f0b", null ]
+    [ "outputs", "struct_nodes_1_1_rate_limiter_1_1_node.html#a73ab61dab13e1a6e05b8f1dc4705d444", null ]
 ];
