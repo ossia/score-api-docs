@@ -4,6 +4,8 @@ var struct_curve_1_1_style =
     [ "update", "struct_curve_1_1_style.html#aa2e29d5d92431d5c619d3f6837d0be54", null ],
     [ "BrushPoint", "struct_curve_1_1_style.html#ad92fe1669dfadf91724dce3293786128", null ],
     [ "BrushPointSelected", "struct_curve_1_1_style.html#a9eea13bca928960229ac6231ca94bdf5", null ],
+    [ "PenDataset", "struct_curve_1_1_style.html#a2fa6734887d295c8cc72962bea2c9e46", null ],
+    [ "PenDatasetDisabled", "struct_curve_1_1_style.html#a620e67b2caec1f9121faa6997fb9adc3", null ],
     [ "PenPoint", "struct_curve_1_1_style.html#a8c6c8b02c4b8e90e04f03955983b6731", null ],
     [ "PenPointSelected", "struct_curve_1_1_style.html#a7d35ce5d9c6c684a0cac6d71ede61c56", null ],
     [ "PenSegment", "struct_curve_1_1_style.html#a0d8f72e366e6c85f074fb5795cd1debd", null ],

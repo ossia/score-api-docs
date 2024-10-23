@@ -117,61 +117,70 @@ $(document).ready(function(){initNavTree('_curve_view_8hpp_source.html',''); ini
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_curve.html">Curve</a></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_curve_1_1_view.html">   20</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_CURVE_EXPORT <a class="code" href="class_curve_1_1_view.html">View</a> final</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    : <span class="keyword">public</span> QObject</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    , <span class="keyword">public</span> QGraphicsItem</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  W_OBJECT(<a class="code" href="class_curve_1_1_view.html">View</a>)</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  Q_INTERFACES(QGraphicsItem)</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_curve_1_1_view.html">View</a>(QGraphicsItem* parent) noexcept;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  ~<a class="code" href="class_curve_1_1_view.html">View</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> setDefaultWidth(<span class="keywordtype">double</span> w) noexcept;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> setRect(<span class="keyword">const</span> QRectF&amp; theRect) noexcept;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  QRectF boundingRect() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> paint(QPainter* painter, <span class="keyword">const</span> QStyleOptionGraphicsItem* option, QWidget* widget)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">void</span> setSelectionArea(<span class="keyword">const</span> QRectF&amp;) noexcept;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  QPixmap pixmap() noexcept;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">void</span> setValueTooltip(QPointF pos, <span class="keyword">const</span> QString&amp;) noexcept;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> pressed(QPointF arg_1) E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, pressed, arg_1)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> moved(QPointF arg_1) E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, moved, arg_1)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> released(QPointF arg_1) E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, released, arg_1)</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> doubleClick(QPointF arg_1) E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, doubleClick, arg_1)</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> escPressed() E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, escPressed)</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> keyPressed(<span class="keywordtype">int</span> arg_1) E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, keyPressed, arg_1)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> keyReleased(<span class="keywordtype">int</span> arg_1) E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, keyReleased, arg_1)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> contextMenuRequested(<span class="keyword">const</span> QPoint&amp; arg_1, <span class="keyword">const</span> QPointF&amp; arg_2)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, contextMenuRequested, arg_1, arg_2)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">void</span> mousePressEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">void</span> mouseDoubleClickEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> mouseMoveEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> mouseReleaseEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> keyPressEvent(QKeyEvent* ev) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">void</span> keyReleaseEvent(QKeyEvent* ev) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> contextMenuEvent(QGraphicsSceneContextMenuEvent*) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  QRectF m_rect; <span class="comment">// The rect in which the whole curve must fit.</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  QRectF m_selectArea;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  QPointF m_tooltipPos;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  QString m_tooltip;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">double</span> m_defaultW{};</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
-<div class="ttc" id="aclass_curve_1_1_view_html"><div class="ttname"><a href="class_curve_1_1_view.html">Curve::View</a></div><div class="ttdef"><b>Definition:</b> CurveView.hpp:23</div></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span>Presenter;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">class </span>Model;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_curve_1_1_view.html">   22</a></span>&#160;<span class="keyword">class </span>SCORE_PLUGIN_CURVE_EXPORT <a class="code" href="class_curve_1_1_view.html">View</a> final</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    , <span class="keyword">public</span> QGraphicsItem</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  W_OBJECT(<a class="code" href="class_curve_1_1_view.html">View</a>)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  Q_INTERFACES(QGraphicsItem)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_curve_1_1_view.html">View</a>(QGraphicsItem* parent) noexcept;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  ~<a class="code" href="class_curve_1_1_view.html">View</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">void</span> setModel(<span class="keyword">const</span> <a class="code" href="class_curve_1_1_presenter.html">Curve::Presenter</a>* p, <span class="keyword">const</span> <a class="code" href="class_curve_1_1_model.html">Curve::Model</a>* m) noexcept;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">void</span> setDirectDraw(<span class="keywordtype">bool</span>) noexcept;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> setDefaultWidth(<span class="keywordtype">double</span> w) noexcept;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">void</span> setRect(<span class="keyword">const</span> QRectF&amp; theRect) noexcept;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  QRectF boundingRect() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">void</span> paint(QPainter* painter, <span class="keyword">const</span> QStyleOptionGraphicsItem* option, QWidget* widget)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> setSelectionArea(<span class="keyword">const</span> QRectF&amp;) noexcept;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  QPixmap pixmap() noexcept;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> setValueTooltip(QPointF pos, <span class="keyword">const</span> QString&amp;) noexcept;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">void</span> pressed(QPointF arg_1) E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, pressed, arg_1)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> moved(QPointF arg_1) E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, moved, arg_1)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> released(QPointF arg_1) E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, released, arg_1)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> doubleClick(QPointF arg_1) E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, doubleClick, arg_1)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> escPressed() E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, escPressed)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> keyPressed(<span class="keywordtype">int</span> arg_1) E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, keyPressed, arg_1)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> keyReleased(<span class="keywordtype">int</span> arg_1) E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, keyReleased, arg_1)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">void</span> contextMenuRequested(<span class="keyword">const</span> QPoint&amp; arg_1, <span class="keyword">const</span> QPointF&amp; arg_2)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      E_SIGNAL(SCORE_PLUGIN_CURVE_EXPORT, contextMenuRequested, arg_1, arg_2)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">void</span> mousePressEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> mouseDoubleClickEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">void</span> mouseMoveEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> mouseReleaseEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> keyPressEvent(QKeyEvent* ev) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> keyReleaseEvent(QKeyEvent* ev) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> contextMenuEvent(QGraphicsSceneContextMenuEvent*) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_curve_1_1_presenter.html">Curve::Presenter</a>* m_presenter{};</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_curve_1_1_model.html">Curve::Model</a>* m_model{};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  QRectF m_rect; <span class="comment">// The rect in which the whole curve must fit.</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  QRectF m_selectArea;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  QPointF m_tooltipPos;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  QString m_tooltip;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">double</span> m_defaultW{};</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">bool</span> m_directDraw{<span class="keyword">false</span>};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="ttc" id="aclass_curve_1_1_model_html"><div class="ttname"><a href="class_curve_1_1_model.html">Curve::Model</a></div><div class="ttdef"><b>Definition:</b> CurveModel.hpp:25</div></div>
+<div class="ttc" id="aclass_curve_1_1_presenter_html"><div class="ttname"><a href="class_curve_1_1_presenter.html">Curve::Presenter</a></div><div class="ttdef"><b>Definition:</b> CurvePresenter.hpp:32</div></div>
+<div class="ttc" id="aclass_curve_1_1_view_html"><div class="ttname"><a href="class_curve_1_1_view.html">Curve::View</a></div><div class="ttdef"><b>Definition:</b> CurveView.hpp:25</div></div>
 <div class="ttc" id="anamespace_curve_html"><div class="ttname"><a href="namespace_curve.html">Curve</a></div><div class="ttdoc">Utilities and base classes for 1D curves.</div><div class="ttdef"><b>Definition:</b> FocusDispatcher.hpp:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

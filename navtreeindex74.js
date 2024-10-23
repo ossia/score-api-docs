@@ -1,5 +1,10 @@
 var NAVTREEINDEX74 =
 {
+"struct_recording_1_1_record_automation_first_callback_visitor.html#a81a4b5e938315a940cda0cde0f859311":[12,0,44,3,8],
+"struct_recording_1_1_record_automation_first_callback_visitor.html#a94f6384cc433db7bc77a7c89a76b66f8":[12,0,44,3,3],
+"struct_recording_1_1_record_automation_first_callback_visitor.html#ab3905cc92846ab3c952f402cadf9d66b":[12,0,44,3,7],
+"struct_recording_1_1_record_automation_first_callback_visitor.html#ab676a410afa6e7fe19ca5720d3f04f53":[12,0,44,3,6],
+"struct_recording_1_1_record_automation_first_callback_visitor.html#abf0ac38d42a1428a440cc992b0b31220":[12,0,44,3,10],
 "struct_recording_1_1_record_automation_subsequent_callback_visitor.html":[12,0,44,6],
 "struct_recording_1_1_record_automation_subsequent_callback_visitor.html#a07fe12187305407b5bef98836d3da805":[12,0,44,6,8],
 "struct_recording_1_1_record_automation_subsequent_callback_visitor.html#a316b7940f7494666ca0748b000d3d2a9":[12,0,44,6,7],
@@ -244,10 +249,5 @@ var NAVTREEINDEX74 =
 "struct_scenario_1_1_displayed_elements_container.html#af5f6ae0db08c581340d3cc5e9a0d1029":[12,0,48,71,5],
 "struct_scenario_1_1_displayed_elements_container.html#afd99b6c4e881fa400ea2c8f0808676f3":[12,0,48,71,1],
 "struct_scenario_1_1_displayed_elements_presenter_container.html":[12,0,48,72],
-"struct_scenario_1_1_displayed_elements_presenter_container.html#a03c0a790047f6fff9a323ad7cf30c4b7":[12,0,48,72,0],
-"struct_scenario_1_1_displayed_elements_presenter_container.html#a0e65213a2aff3c1cd482bb64839da497":[12,0,48,72,7],
-"struct_scenario_1_1_displayed_elements_presenter_container.html#a1e4f2105d418f8ca6f35307706380b06":[12,0,48,72,5],
-"struct_scenario_1_1_displayed_elements_presenter_container.html#a5ac115771196b00ad24750ba23fd7ec9":[12,0,48,72,1],
-"struct_scenario_1_1_displayed_elements_presenter_container.html#a5b287457535229d3fc7a054211d026ca":[12,0,48,72,3],
-"struct_scenario_1_1_displayed_elements_presenter_container.html#a6474de7e99d45ebca25c6654d45032e5":[12,0,48,72,4]
+"struct_scenario_1_1_displayed_elements_presenter_container.html#a03c0a790047f6fff9a323ad7cf30c4b7":[12,0,48,72,0]
 };

@@ -18,5 +18,6 @@ var class_curve_1_1_presenter =
     [ "segments", "class_curve_1_1_presenter.html#a4535ea6bb23701eea4aa714b5ec87a2f", null ],
     [ "setBoundedMove", "class_curve_1_1_presenter.html#a76e7b1bbc0268039ab83e15153683604", null ],
     [ "setRect", "class_curve_1_1_presenter.html#a84b90e669ac5d60b665c1b43252f17a9", null ],
-    [ "view", "class_curve_1_1_presenter.html#ade8d440b085a4f9c0ef7a8b84646c2f6", null ]
+    [ "view", "class_curve_1_1_presenter.html#ade8d440b085a4f9c0ef7a8b84646c2f6", null ],
+    [ "View", "class_curve_1_1_presenter.html#a018ff8a950133459fda57a235706a80b", null ]
 ];

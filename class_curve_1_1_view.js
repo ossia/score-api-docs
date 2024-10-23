@@ -14,6 +14,8 @@ var class_curve_1_1_view =
     [ "pressed", "class_curve_1_1_view.html#a9c02994462788c8999f891ac7d7aaab1", null ],
     [ "released", "class_curve_1_1_view.html#a5622430eb115582ed5dd0f1005f6f2d4", null ],
     [ "setDefaultWidth", "class_curve_1_1_view.html#a1bf21b646899a668b12a424216fc1655", null ],
+    [ "setDirectDraw", "class_curve_1_1_view.html#ad0bf5ff68552c9bb1c8e651c6b5d96de", null ],
+    [ "setModel", "class_curve_1_1_view.html#adddcb5d3b8d4b79d86be4f6050a4771f", null ],
     [ "setRect", "class_curve_1_1_view.html#a5142ab10ffe76cf8cfa028520339ebc9", null ],
     [ "setSelectionArea", "class_curve_1_1_view.html#acb32afa39c9c5bb06b6d07b57add8183", null ],
     [ "setValueTooltip", "class_curve_1_1_view.html#a790530b96ae4f2870ab171de6e423e74", null ]

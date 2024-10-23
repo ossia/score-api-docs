@@ -1,5 +1,8 @@
 var NAVTREEINDEX15 =
 {
+"class_explorer_1_1_address_edit_dialog.html#aa4f0919f0fcec46651b9e36281cacca7":[12,0,13,41,9],
+"class_explorer_1_1_address_edit_dialog.html#aa9ce29e4e9ae6bc0216f58a0c1860796":[12,0,13,41,2],
+"class_explorer_1_1_address_edit_dialog.html#ac21662f00371121c747ea6523a2b7877":[12,0,13,41,7],
 "class_explorer_1_1_address_edit_dialog.html#ac4b62c88a8a3138eea8da5b9b4fc4379":[12,0,13,41,13],
 "class_explorer_1_1_address_edit_dialog.html#acd8af61279246e05c2da172c402decf2":[12,0,13,41,6],
 "class_explorer_1_1_address_impulse_settings_widget.html":[12,0,13,6],
@@ -246,8 +249,5 @@ var NAVTREEINDEX15 =
 "class_explorer_1_1_device_explorer_widget.html#adc7902a5c8dba921693478608ddcddf3":[12,0,13,35,8],
 "class_explorer_1_1_device_explorer_widget.html#ae9d948ccccbeee4b1a9d1cad0ab34116":[12,0,13,35,2],
 "class_explorer_1_1_double_slider_value_widget.html":[12,0,13,21],
-"class_explorer_1_1_double_slider_value_widget.html#a40327f31a41994d3a89a07f7359b6b2e":[12,0,13,21,2],
-"class_explorer_1_1_double_slider_value_widget.html#a5bba450d9894fddaaafea442f34e83f8":[12,0,13,21,0],
-"class_explorer_1_1_double_slider_value_widget.html#afb66c03c5951308a3c720dbd8fa8d101":[12,0,13,21,1],
-"class_explorer_1_1_exploration_worker.html":[12,0,13,36]
+"class_explorer_1_1_double_slider_value_widget.html#a40327f31a41994d3a89a07f7359b6b2e":[12,0,13,21,2]
 };

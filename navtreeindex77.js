@@ -1,5 +1,10 @@
 var NAVTREEINDEX77 =
 {
+"struct_t_serializer_3_01_data_stream_00_01ossia_1_1flat__map_3_01_t_00_01_u_01_4_01_4.html#ac0e1c4334bcee1b6fd511f17b9b9ee0a":[12,0,312,0],
+"struct_t_serializer_3_01_data_stream_00_01ossia_1_1flat__set_3_01_t_01_4_01_4.html":[12,0,313],
+"struct_t_serializer_3_01_data_stream_00_01ossia_1_1flat__set_3_01_t_01_4_01_4.html#a6aa8798d97834f0d30f6d72130d30bf1":[12,0,313,0],
+"struct_t_serializer_3_01_data_stream_00_01ossia_1_1nullable__variant_3_01_args_8_8_8_01_4_01_4.html":[12,0,314],
+"struct_t_serializer_3_01_data_stream_00_01ossia_1_1nullable__variant_3_01_args_8_8_8_01_4_01_4.html#a7083be497ff6f93cb1938e32b8039dd8":[12,0,314,0],
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1small__vector_3_01_t_00_01_n_01_4_01_4.html":[12,0,315],
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1static__vector_3_01_t_00_01_n_01_4_01_4.html":[12,0,316],
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1unit__t_01_4.html":[12,0,317],
@@ -244,10 +249,5 @@ var NAVTREEINDEX77 =
 "struct_video_1_1_frame_queue.html#aebe8ec66763812871da350513d4c038e":[12,0,57,2,13],
 "struct_video_1_1_frame_queue.html#aec10fd37e914a9f1c10caac2d43c4125":[12,0,57,2,12],
 "struct_video_1_1_free_a_v_frame.html":[12,0,57,12],
-"struct_video_1_1_free_a_v_frame.html#a8c606895c02d66fe17025031bafdbc17":[12,0,57,12,0],
-"struct_video_1_1_image_format.html":[12,0,57,8],
-"struct_video_1_1_image_format.html#a3a127bf29fdb576486e044ef247ab205":[12,0,57,8,1],
-"struct_video_1_1_image_format.html#a5e5d8d778e1a590a9203fc24ad3e92f4":[12,0,57,8,0],
-"struct_video_1_1_image_format.html#a695ab56b687abdc5bfd6db6be25fdd45":[12,0,57,8,2],
-"struct_video_1_1_lib_a_v_decoder.html":[12,0,57,5]
+"struct_video_1_1_free_a_v_frame.html#a8c606895c02d66fe17025031bafdbc17":[12,0,57,12,0]
 };
