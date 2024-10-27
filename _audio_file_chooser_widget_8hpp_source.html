@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('_audio_file_chooser_widget_8hpp_source
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      QGraphicsItem* parent, QObject* context)</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">auto</span> bt = <span class="keyword">new</span> <a class="code" href="classscore_1_1_q_graphics_waveform_button.html">score::QGraphicsWaveformButton</a>{parent};</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">auto</span> on_open = [bt, &amp;inlet, &amp;ctx] {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">auto</span> on_open = [&amp;inlet, &amp;ctx] {</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keyword">auto</span> filename</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;          = QFileDialog::getOpenFileName(<span class="keyword">nullptr</span>, <span class="stringliteral">&quot;Open File&quot;</span>, {}, inlet.filters());</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordflow">if</span>(filename.isEmpty())</div>
@@ -174,7 +174,7 @@ $(document).ready(function(){initNavTree('_audio_file_chooser_widget_8hpp_source
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;          .submit&lt;WidgetFactory::SetControlValue&lt;Control_T&gt;&gt;(</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;              inlet, filename.toStdString());</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    };</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">auto</span> on_set = [bt, &amp;inlet, &amp;ctx](<span class="keyword">const</span> QString&amp; filename) {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">auto</span> on_set = [&amp;inlet, &amp;ctx](<span class="keyword">const</span> QString&amp; filename) {</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="keywordflow">if</span>(filename.isEmpty())</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
