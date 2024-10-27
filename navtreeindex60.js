@@ -1,10 +1,5 @@
 var NAVTREEINDEX60 =
 {
-"score__plugin__spline3d_8cpp.html#a3970847b9ca03e96084d4e51cf592f19":[11,0,55,4],
-"score__plugin__spline3d_8cpp.html#a3cc9fcc8e6826576fe4c09b65728a253":[11,0,55,5],
-"score__plugin__spline3d_8hpp_source.html":[13,0,1215],
-"score__plugin__spline_8cpp.html#a44d9a3d62e3bcec2170be558b21d23c4":[11,0,54,8],
-"score__plugin__spline_8cpp.html#a74f83c85f0581f7e7d2795e299593963":[11,0,54,7],
 "score__plugin__spline_8hpp_source.html":[13,0,1214],
 "score__plugin__transport_8hpp_source.html":[13,0,1216],
 "score__plugin__ui_8hpp_source.html":[13,0,1217],
@@ -249,5 +244,10 @@ var NAVTREEINDEX60 =
 "struct_analysis_1_1_spectrum.html#afed0dd9804bff1f76ed79cb82527a9c8":[12,0,0,16,3],
 "struct_analysis_1_1_zero_crossing.html":[12,0,0,23],
 "struct_analysis_1_1_zero_crossing.html#a1a0518055cd771f2647c2b1e8c248a4b":[12,0,0,23,6],
-"struct_analysis_1_1_zero_crossing.html#a2d8899aec54e4474dd38bb6e8aec5418":[12,0,0,23,9]
+"struct_analysis_1_1_zero_crossing.html#a2d8899aec54e4474dd38bb6e8aec5418":[12,0,0,23,9],
+"struct_analysis_1_1_zero_crossing.html#a72012d03a92dcf2bd22047986c146bad":[12,0,0,23,5],
+"struct_analysis_1_1_zero_crossing.html#a7fe7c7195a181c1ac8529cbc046b875a":[12,0,0,23,3],
+"struct_analysis_1_1_zero_crossing.html#a84b2a8d4d7edf8c02870be66778a7935":[12,0,0,23,8],
+"struct_analysis_1_1_zero_crossing.html#a888104d989f41599dba20531f21d8983":[12,0,0,23,11],
+"struct_analysis_1_1_zero_crossing.html#a908cb5789feaf3aff96110f9cf3c1fb6":[12,0,0,23,4]
 };

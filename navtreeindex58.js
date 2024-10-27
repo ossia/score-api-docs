@@ -1,10 +1,5 @@
 var NAVTREEINDEX58 =
 {
-"namespaceoscr.html#ab51e832f1b0ff30b6cc6f759b1674b43":[11,0,39,70],
-"namespaceoscr.html#aece7f43efe61aba09d77309b4a5da52a":[11,0,39,72],
-"namespaces.html":[11,0],
-"namespacescore.html":[11,0,52],
-"namespacescore.html#a0078b6534d04fcd16f5945df5bd52fe9":[11,0,52,384],
 "namespacescore.html#a00ad6b3d5ae1f0a910b1ebf889caf592":[11,0,52,360],
 "namespacescore.html#a03969ba9b540624f62caade5c62ccf94":[11,0,52,338],
 "namespacescore.html#a050cb3388dfd41b0cc770d3a7e872422":[11,0,52,387],
@@ -249,5 +244,10 @@ var NAVTREEINDEX58 =
 "score-lib-process_2_process_2_process_metadata_8hpp_source.html":[13,0,1014],
 "score-lib-state_2_tests_2_utils_8hpp_source.html":[13,0,1439],
 "score-plugin-analysis_2_analysis_2_envelope_8hpp_source.html":[13,0,412],
-"score-plugin-audio_2_audio_2_settings_2_factory_8hpp_source.html":[13,0,470]
+"score-plugin-audio_2_audio_2_settings_2_factory_8hpp_source.html":[13,0,470],
+"score-plugin-audio_2_audio_2_settings_2_model_8cpp.html#a018d919ec946d708c1ea84f3ebf3a6ef":[11,0,1,0,0,0],
+"score-plugin-audio_2_audio_2_settings_2_model_8cpp.html#a03e847ff1ae611518d8c37a5f2123bef":[11,0,1,0,0,5],
+"score-plugin-audio_2_audio_2_settings_2_model_8cpp.html#a364035df3853d44838f14eabffbc2414":[11,0,1,0,0,3],
+"score-plugin-audio_2_audio_2_settings_2_model_8cpp.html#a42567c6b474b689fa52203d3dac21f0d":[11,0,1,0,0,9],
+"score-plugin-audio_2_audio_2_settings_2_model_8cpp.html#a4fb0d1574f501c8cf9936bb8433f7fbd":[11,0,1,0,0,6]
 };

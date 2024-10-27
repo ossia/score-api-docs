@@ -344,7 +344,6 @@ var hierarchy =
         [ "Scenario::Command::MoveEventOnCreationMeta", "class_scenario_1_1_command_1_1_move_event_on_creation_meta.html", null ],
         [ "Scenario::Command::MoveTopEventMeta", "class_scenario_1_1_command_1_1_move_top_event_meta.html", null ]
       ] ],
-      [ "Scenario::Command::SetAutoTrigger", "class_scenario_1_1_command_1_1_set_auto_trigger.html", null ],
       [ "Scenario::Command::SetBus", "class_scenario_1_1_command_1_1_set_bus.html", null ],
       [ "Scenario::Command::SetCommentText", "class_scenario_1_1_command_1_1_set_comment_text.html", null ],
       [ "Scenario::Command::SetCondition", "class_scenario_1_1_command_1_1_set_condition.html", null ],
@@ -383,6 +382,7 @@ var hierarchy =
         [ "Scenario::Command::AddProcessInNewSlot", "class_scenario_1_1_command_1_1_add_process_in_new_slot.html", null ],
         [ "Scenario::Command::AddStateWithData", "class_scenario_1_1_command_1_1_add_state_with_data.html", null ],
         [ "Scenario::Command::ClearSelection", "class_scenario_1_1_command_1_1_clear_selection.html", null ],
+        [ "Scenario::Command::CreateDot", "class_scenario_1_1_command_1_1_create_dot.html", null ],
         [ "Scenario::Command::CreateProcessInExistingSlot", "class_scenario_1_1_command_1_1_create_process_in_existing_slot.html", null ],
         [ "Scenario::Command::CreateSequence", "class_scenario_1_1_command_1_1_create_sequence.html", null ],
         [ "Scenario::Command::CreateStateMacro", "class_scenario_1_1_command_1_1_create_state_macro.html", null ],
@@ -1043,8 +1043,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [

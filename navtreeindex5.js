@@ -150,7 +150,7 @@ var NAVTREEINDEX5 =
 "_serialization.html#ObjDeser":[8,2,0],
 "_serialization.html#PolySer":[8,2,1],
 "_serialization.html#SerExamples":[8,2,2],
-"_set_auto_trigger_8hpp.html#a90e94d9bb699cb4a8cc9a6a0e523602b":[11,0,51,0,117],
+"_set_auto_trigger_8hpp.html#ac1bf29e395403acb34b0841064ba9001":[11,0,51,0,117],
 "_set_auto_trigger_8hpp_source.html":[13,0,1256],
 "_set_automation_max_8hpp_source.html":[13,0,1255],
 "_set_comment_text_8hpp_source.html":[13,0,1257],
