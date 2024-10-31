@@ -11,6 +11,7 @@ var class_curve_1_1_model =
     [ "fromCurveData", "class_curve_1_1_model.html#a5e65281179f15e8d51631f5bc471917f", null ],
     [ "insertSegment", "class_curve_1_1_model.html#a0c5a09981c9f4a4d0862df3c320417a2", null ],
     [ "lastPointPos", "class_curve_1_1_model.html#ae22718a828b3c4dcc55007a8e0ed203c", null ],
+    [ "loadSegments", "class_curve_1_1_model.html#a56b58f6155aedc685eba7d9e8d21e660", null ],
     [ "pointAdded", "class_curve_1_1_model.html#ae768b3d31f8932c09338ef5ce86f0042", null ],
     [ "pointRemoved", "class_curve_1_1_model.html#aceae5a5650b1b6a7c18ce4649419be70", null ],
     [ "points", "class_curve_1_1_model.html#adc1522580830accaeedf5125c8683b7d", null ],

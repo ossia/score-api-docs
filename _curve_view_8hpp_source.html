@@ -168,16 +168,19 @@ $(document).ready(function(){initNavTree('_curve_view_8hpp_source.html',''); ini
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> contextMenuEvent(QGraphicsSceneContextMenuEvent*) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_curve_1_1_presenter.html">Curve::Presenter</a>* m_presenter{};</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_curve_1_1_model.html">Curve::Model</a>* m_model{};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  QRectF m_rect; <span class="comment">// The rect in which the whole curve must fit.</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  QRectF m_selectArea;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  QPointF m_tooltipPos;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  QString m_tooltip;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">double</span> m_defaultW{};</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">bool</span> m_directDraw{<span class="keyword">false</span>};</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">void</span> drawAllPoints(QPainter* painter);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">void</span> drawOptimized(QPainter* painter);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_curve_1_1_presenter.html">Curve::Presenter</a>* m_presenter{};</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_curve_1_1_model.html">Curve::Model</a>* m_model{};</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  QRectF m_rect; <span class="comment">// The rect in which the whole curve must fit.</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  QRectF m_selectArea;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  QPointF m_tooltipPos;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  QString m_tooltip;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">double</span> m_defaultW{};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">bool</span> m_directDraw{<span class="keyword">false</span>};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
 <div class="ttc" id="aclass_curve_1_1_model_html"><div class="ttname"><a href="class_curve_1_1_model.html">Curve::Model</a></div><div class="ttdef"><b>Definition:</b> CurveModel.hpp:25</div></div>
 <div class="ttc" id="aclass_curve_1_1_presenter_html"><div class="ttname"><a href="class_curve_1_1_presenter.html">Curve::Presenter</a></div><div class="ttdef"><b>Definition:</b> CurvePresenter.hpp:32</div></div>
 <div class="ttc" id="aclass_curve_1_1_view_html"><div class="ttname"><a href="class_curve_1_1_view.html">Curve::View</a></div><div class="ttdef"><b>Definition:</b> CurveView.hpp:25</div></div>

@@ -1,5 +1,6 @@
 var NAVTREEINDEX68 =
 {
+"struct_metadata_3_01_process_1_1_process_flags__k_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[12,0,172],
 "struct_metadata_3_01_process_1_1_process_flags__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html":[12,0,173],
 "struct_metadata_3_01_tags__k_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[12,0,174],
 "struct_metadata_3_01_tags__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html":[12,0,175],
@@ -248,6 +249,5 @@ var NAVTREEINDEX68 =
 "struct_nodes_1_1_chord_1_1_node.html":[12,0,36,4,0],
 "struct_nodes_1_1_chord_1_1_node.html#a2a494ebe4acab67b45e5ca10f8e9fd72":[12,0,36,4,0,12],
 "struct_nodes_1_1_chord_1_1_node.html#a2a91c13cff9017e3ff175cd28422bddd":[12,0,36,4,0,5],
-"struct_nodes_1_1_chord_1_1_node.html#a48fc074e5c71c799349341ec233e060e":[12,0,36,4,0,1],
-"struct_nodes_1_1_chord_1_1_node.html#a64ec4f75015b8ba82fd1aa1bec752ad7":[12,0,36,4,0,8]
+"struct_nodes_1_1_chord_1_1_node.html#a48fc074e5c71c799349341ec233e060e":[12,0,36,4,0,1]
 };

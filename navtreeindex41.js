@@ -1,5 +1,6 @@
 var NAVTREEINDEX41 =
 {
+"class_scenario_1_1_text_dialog.html#a8f906d9a06b0772eda9f596b376a5781":[12,0,48,30,0],
 "class_scenario_1_1_time_ruler.html":[12,0,48,177],
 "class_scenario_1_1_time_ruler.html#a02bead6543c092e7b0070abb66d05ae1":[12,0,48,177,0],
 "class_scenario_1_1_time_ruler.html#a02bead6543c092e7b0070abb66d05ae1a38f246763036ccaeba7db6d563c4d821":[12,0,48,177,0,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX41 =
 "class_script.html#ae18d5330758e45857580d5e6c0472562":[12,0,271,16],
 "class_script.html#ae28c648295e1c703c14a5552d3aac84c":[12,0,271,5],
 "class_script.html#af0b0bc3aef4bf86274ea611e92c5b565":[12,0,271,11],
-"class_selectable.html":[12,0,273],
-"class_selectable.html#a041b98e407e91ee7e20d1b13e49c9177":[12,0,273,3]
+"class_selectable.html":[12,0,273]
 };

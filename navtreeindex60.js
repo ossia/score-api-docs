@@ -1,5 +1,6 @@
 var NAVTREEINDEX60 =
 {
+"score__plugin__spline_8cpp.html#a74f83c85f0581f7e7d2795e299593963":[11,0,54,7],
 "score__plugin__spline_8hpp_source.html":[13,0,1214],
 "score__plugin__transport_8hpp_source.html":[13,0,1216],
 "score__plugin__ui_8hpp_source.html":[13,0,1217],
@@ -248,6 +249,5 @@ var NAVTREEINDEX60 =
 "struct_analysis_1_1_zero_crossing.html#a72012d03a92dcf2bd22047986c146bad":[12,0,0,23,5],
 "struct_analysis_1_1_zero_crossing.html#a7fe7c7195a181c1ac8529cbc046b875a":[12,0,0,23,3],
 "struct_analysis_1_1_zero_crossing.html#a84b2a8d4d7edf8c02870be66778a7935":[12,0,0,23,8],
-"struct_analysis_1_1_zero_crossing.html#a888104d989f41599dba20531f21d8983":[12,0,0,23,11],
-"struct_analysis_1_1_zero_crossing.html#a908cb5789feaf3aff96110f9cf3c1fb6":[12,0,0,23,4]
+"struct_analysis_1_1_zero_crossing.html#a888104d989f41599dba20531f21d8983":[12,0,0,23,11]
 };

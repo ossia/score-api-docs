@@ -1,5 +1,6 @@
 var NAVTREEINDEX54 =
 {
+"classvst3_1_1_v_s_t_effect_item.html#aa2def84df48dc246cade00dc0c6fb370":[12,0,59,23,1],
 "classvst3_1_1_v_s_t_effect_item.html#ad5898861ac0878bf44d57f28c6837295":[12,0,59,23,0],
 "classvst3_1_1_v_s_t_graphics_slider.html":[12,0,59,24],
 "classvst3_1_1_v_s_t_graphics_slider.html#a2721215d3d25187e2c1bf521eec308f3":[12,0,59,24,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX54 =
 "functions_i.html":[12,3,0,7],
 "functions_l.html":[12,3,0,8],
 "functions_m.html":[12,3,0,9],
-"functions_n.html":[12,3,0,10],
-"functions_o.html":[12,3,0,11]
+"functions_n.html":[12,3,0,10]
 };

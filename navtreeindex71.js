@@ -1,5 +1,6 @@
 var NAVTREEINDEX71 =
 {
+"struct_nodes_1_1_quantifier_1_1_node.html#a597c3dde4b1dcc8d85a51e0a9e012e4c":[12,0,36,25,0,8],
 "struct_nodes_1_1_quantifier_1_1_node.html#a6b18d1a2a8d7b4ace1ca6c44562ca479":[12,0,36,25,0,2],
 "struct_nodes_1_1_quantifier_1_1_node.html#a6bd1495c67b8873f75e1b48fb476bab1":[12,0,36,25,0,3],
 "struct_nodes_1_1_quantifier_1_1_node.html#a96652555fd602ca51bda2f29a76f2543":[12,0,36,25,0,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX71 =
 "struct_process_1_1_layout_builder_base.html#aceecda053011705d68c7f670d4422f2a":[12,0,42,1,0],
 "struct_process_1_1_layout_builder_base.html#ad0c7739acc6a35da958d3e264da6cd93":[12,0,42,1,15],
 "struct_process_1_1_layout_builder_base.html#ad51bde0a8c04956a94bdc8ae514041c4":[12,0,42,1,18],
-"struct_process_1_1_layout_builder_base.html#ae4e321db8194dbe3685d83d34919d209":[12,0,42,1,3],
-"struct_process_1_1_magnetic_info.html":[12,0,42,7]
+"struct_process_1_1_layout_builder_base.html#ae4e321db8194dbe3685d83d34919d209":[12,0,42,1,3]
 };

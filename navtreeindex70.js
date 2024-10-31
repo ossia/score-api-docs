@@ -1,5 +1,6 @@
 var NAVTREEINDEX70 =
 {
+"struct_nodes_1_1_math_audio_generator_1_1_node.html#adcde5f09dc4f8372ab39953721cb338c":[12,0,36,16,0,4],
 "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html":[12,0,36,16,0,0],
 "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a0d275ab44052abe22fefebcccff48f86":[12,0,36,16,0,0,9],
 "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html#a26508726bd35c767b83a9e2d8984cf49":[12,0,36,16,0,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX70 =
 "struct_nodes_1_1_quantifier_1_1_node.html#a49ce6cf15625d34a474912f425df5ebb":[12,0,36,25,0,6],
 "struct_nodes_1_1_quantifier_1_1_node.html#a4ae037b84a8ef653fec5c5d6857cbae2":[12,0,36,25,0,12],
 "struct_nodes_1_1_quantifier_1_1_node.html#a4dea32e94dfd75f1ec76fd61aac849c4":[12,0,36,25,0,11],
-"struct_nodes_1_1_quantifier_1_1_node.html#a4eedbb46be0b42a0896a5516e8bd4250":[12,0,36,25,0,15],
-"struct_nodes_1_1_quantifier_1_1_node.html#a597c3dde4b1dcc8d85a51e0a9e012e4c":[12,0,36,25,0,8]
+"struct_nodes_1_1_quantifier_1_1_node.html#a4eedbb46be0b42a0896a5516e8bd4250":[12,0,36,25,0,15]
 };

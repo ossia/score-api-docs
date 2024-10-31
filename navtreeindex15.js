@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"class_explorer_1_1_command_1_1_update_device_settings.html#a54d33b294cd79dda30ae3b095455cefc":[12,0,13,0,11,1],
 "class_explorer_1_1_command_1_1_update_device_settings.html#adabf7560fb5a1828b40bf3449ff9d00d":[12,0,13,0,11,0],
 "class_explorer_1_1_default_listening_handler.html":[12,0,13,43],
 "class_explorer_1_1_default_listening_handler.html#af4976f1dfc3a8205ec1c8669c851e3a4":[12,0,13,43,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "class_factor_oracle2_m_i_d_i_1_1_notes.html#afcde53cc00e0f015a31d5f05333e606f":[12,0,15,0,1],
 "class_factor_oracle2_m_i_d_i_1_1_notes.html#afd5ea23d5d104d421701a17f5219dc6c":[12,0,15,0,3],
 "class_factor_oracle2_m_i_d_i_1_1_single_transition.html":[12,0,15,1],
-"class_factor_oracle2_m_i_d_i_1_1_single_transition.html#a0d3e61735d67c877040920bc5cb204a8":[12,0,15,1,0],
-"class_factor_oracle2_m_i_d_i_1_1_single_transition.html#a38a6c8337cf38096480fd5e0fa002bc1":[12,0,15,1,2]
+"class_factor_oracle2_m_i_d_i_1_1_single_transition.html#a0d3e61735d67c877040920bc5cb204a8":[12,0,15,1,0]
 };

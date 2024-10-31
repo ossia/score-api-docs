@@ -1,5 +1,6 @@
 var NAVTREEINDEX61 =
 {
+"struct_analysis_1_1_zero_crossing.html#a908cb5789feaf3aff96110f9cf3c1fb6":[12,0,0,23,4],
 "struct_analysis_1_1_zero_crossing.html#ac41d63badb8da8d177aa46a5a4570994":[12,0,0,23,2],
 "struct_analysis_1_1_zero_crossing.html#ac9103f4f995e4eda0ea5546e521e3a06":[12,0,0,23,10],
 "struct_analysis_1_1_zero_crossing.html#ad0929affea42bb45bcf0fa886fab8955":[12,0,0,23,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX61 =
 "struct_dataflow_1_1_widget_inlet_factory.html#a1b93832690db338cfb82a3d8eb056631":[12,0,9,36,1],
 "struct_dataflow_1_1_widget_inlet_factory.html#a4d2282c96a2531d5c39c6283b83e530b":[12,0,9,36,2],
 "struct_dataflow_1_1_widget_inlet_factory.html#aafbee5ad653ad42b4732b9204338873c":[12,0,9,36,0],
-"struct_dataflow_1_1_widget_inlet_factory.html#adb7df223fbdf862cc2be868e87b67490":[12,0,9,36,5],
-"struct_dataflow_1_1_widget_inlet_factory.html#ae1b2c53f3759a3f759beb8c51a0683bc":[12,0,9,36,4]
+"struct_dataflow_1_1_widget_inlet_factory.html#adb7df223fbdf862cc2be868e87b67490":[12,0,9,36,5]
 };

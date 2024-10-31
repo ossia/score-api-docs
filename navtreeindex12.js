@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"class_dataflow_1_1_clock.html#a7771f2ab05986bbb9f053975a08107f4":[12,0,9,38,0],
 "class_dataflow_1_1_clock.html#abcf2f7e87a640fc804caec7e3d5cad69":[12,0,9,38,1],
 "class_dataflow_1_1_clock_factory.html":[12,0,9,39],
 "class_dataflow_1_1_clock_factory.html#a0fb4e5ebcc5670d665b521278488b0ed":[12,0,9,39,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "class_device_1_1_protocol_settings_widget.html#a73ca733cd6d9ef1b23c773ab1a8975a9":[12,0,10,13,4],
 "class_device_1_1_protocol_settings_widget.html#a8493e1d2d303cecf736a8def0f381c26":[12,0,10,13,0],
 "class_editable_table.html":[12,0,103],
-"class_editable_table.html#a1f93bf02f8bec847d13848f3cf8cc51e":[12,0,103,4],
-"class_editable_table.html#a22726a53609a1219acf155cfb3169ce2":[12,0,103,1]
+"class_editable_table.html#a1f93bf02f8bec847d13848f3cf8cc51e":[12,0,103,4]
 };
