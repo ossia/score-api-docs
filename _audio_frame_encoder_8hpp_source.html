@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('_audio_frame_encoder_8hpp_source.html'
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="comment">// We assume that vec has correct channel count here</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="comment">// Also that vec.size() &gt; 0</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> add_frame(AVFrame&amp; frame, <span class="keyword">const</span> tcb::span&lt;ossia::float_vector&gt; vec) = 0;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="struct_gfx_1_1_audio_frame_encoder.html">AudioFrameEncoder</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">int</span> target_buffer_size{};</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>

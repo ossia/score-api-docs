@@ -940,6 +940,7 @@ var hierarchy =
     [ "Execution::HandleNodeChange", "struct_execution_1_1_handle_node_change.html", null ],
     [ "RemoteControl::Handler", "struct_remote_control_1_1_handler.html", null ],
     [ "score::gfx::HAPDecoder::HAPSection", "structscore_1_1gfx_1_1_h_a_p_decoder_1_1_h_a_p_section.html", null ],
+    [ "Device::HardwarePortDeviceResource", "struct_device_1_1_hardware_port_device_resource.html", null ],
     [ "Gfx::Settings::HardwareVideoDecoder", "struct_gfx_1_1_settings_1_1_hardware_video_decoder.html", null ],
     [ "has_base", "structhas__base.html", null ],
     [ "has_no_base", "structhas__no__base.html", null ],
@@ -1043,8 +1044,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1974,8 +1975,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Patternist::ProcessModel >", "class_path.html", null ],
@@ -3619,6 +3620,7 @@ var hierarchy =
     ] ],
     [ "Tags_k", "class_tags__k.html", null ],
     [ "score::TaskPool", "classscore_1_1_task_pool.html", null ],
+    [ "Device::TCPPortDeviceResource", "struct_device_1_1_t_c_p_port_device_resource.html", null ],
     [ "score::TemplatedSpinBox< T >", "structscore_1_1_templated_spin_box.html", null ],
     [ "score::TemplatedSpinBox< double >", "structscore_1_1_templated_spin_box_3_01double_01_4.html", null ],
     [ "score::TemplatedSpinBox< float >", "structscore_1_1_templated_spin_box_3_01float_01_4.html", null ],
@@ -3767,6 +3769,7 @@ var hierarchy =
     [ "score::gfx::ImagesNode::UBO", "structscore_1_1gfx_1_1_images_node_1_1_u_b_o.html", null ],
     [ "score::gfx::TexgenNode::ubo", "structscore_1_1gfx_1_1_texgen_node_1_1ubo.html", null ],
     [ "score::gfx::TextNode::UBO", "structscore_1_1gfx_1_1_text_node_1_1_u_b_o.html", null ],
+    [ "Device::UDPPortDeviceResource", "struct_device_1_1_u_d_p_port_device_resource.html", null ],
     [ "Nodes::ArrayGenerator::Node::ui", "struct_nodes_1_1_array_generator_1_1_node_1_1ui.html", null ],
     [ "Nodes::ArrayMapping::Node::ui", "struct_nodes_1_1_array_mapping_1_1_node_1_1ui.html", null ],
     [ "Nodes::AudioLooper::Node::ui", "struct_nodes_1_1_audio_looper_1_1_node_1_1ui.html", null ],

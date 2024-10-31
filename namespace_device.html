@@ -146,6 +146,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_device_1_1_device_settings.html">DeviceSettings</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_device_1_1_u_d_p_port_device_resource.html">UDPPortDeviceResource</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_device_1_1_t_c_p_port_device_resource.html">TCPPortDeviceResource</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_device_1_1_hardware_port_device_resource.html">HardwarePortDeviceResource</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_1_1_device_enumerator.html">DeviceEnumerator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_1_1_protocol_factory.html">ProtocolFactory</a></td></tr>
@@ -191,6 +197,15 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>FreeNodeList</b> = s
 <tr class="memitem:a8486daadd10c504d5819d3762bad0ec6"><td class="memItemLeft" align="right" valign="top"><a id="a8486daadd10c504d5819d3762bad0ec6"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>small_node_vec</b> = ossia::small_vector&lt; const <a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a> *, 16 &gt;</td></tr>
 <tr class="separator:a8486daadd10c504d5819d3762bad0ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab750309b78fa4897fcb29dcd818ba2fc"><td class="memItemLeft" align="right" valign="top"><a id="ab750309b78fa4897fcb29dcd818ba2fc"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>DeviceResource</b> = ossia::variant&lt; <a class="el" href="struct_device_1_1_u_d_p_port_device_resource.html">UDPPortDeviceResource</a>, <a class="el" href="struct_device_1_1_t_c_p_port_device_resource.html">TCPPortDeviceResource</a>, <a class="el" href="struct_device_1_1_hardware_port_device_resource.html">HardwarePortDeviceResource</a> &gt;</td></tr>
+<tr class="separator:ab750309b78fa4897fcb29dcd818ba2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c82578f3ac0971868eb6386d6cf4f01"><td class="memItemLeft" align="right" valign="top"><a id="a4c82578f3ac0971868eb6386d6cf4f01"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>DeviceResources</b> = ossia::small_vector&lt; DeviceResource, 2 &gt;</td></tr>
+<tr class="separator:a4c82578f3ac0971868eb6386d6cf4f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4204824c783078ca54ae59ff8e70d75e"><td class="memItemLeft" align="right" valign="top"><a id="a4204824c783078ca54ae59ff8e70d75e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>DeviceResourceMap</b> = ossia::flat_map&lt; QString, DeviceResources &gt;</td></tr>
+<tr class="separator:a4204824c783078ca54ae59ff8e70d75e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7082b693e3ee1f2380b515c4c1f479f3"><td class="memItemLeft" align="right" valign="top"><a id="a7082b693e3ee1f2380b515c4c1f479f3"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>DeviceEnumerators</b> = std::vector&lt; std::pair&lt; QString, <a class="el" href="class_device_1_1_device_enumerator.html">Device::DeviceEnumerator</a> * &gt; &gt;</td></tr>
 <tr class="separator:a7082b693e3ee1f2380b515c4c1f479f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -363,9 +378,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseDevice</b> (os
 <tr class="memitem:ac4257acbadada7e44076a713a42c1a8a"><td class="memItemLeft" align="right" valign="top"><a id="ac4257acbadada7e44076a713a42c1a8a"></a>
 ossia::net::node_base *&#160;</td><td class="memItemRight" valign="bottom"><b>getNodeFromPath</b> (const QStringList &amp;path, ossia::net::device_base &amp;dev)</td></tr>
 <tr class="separator:ac4257acbadada7e44076a713a42c1a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb70e1cbb3dc674e6d1f7be2073e06ed"><td class="memItemLeft" align="right" valign="top"><a id="acb70e1cbb3dc674e6d1f7be2073e06ed"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="struct_device_1_1_device_settings.html">DeviceSettings</a> &amp;lhs, const <a class="el" href="struct_device_1_1_device_settings.html">DeviceSettings</a> &amp;rhs)</td></tr>
-<tr class="separator:acb70e1cbb3dc674e6d1f7be2073e06ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1197d4f134fafe35316940c4a10ccbc0"><td class="memItemLeft" align="right" valign="top"><a id="a1197d4f134fafe35316940c4a10ccbc0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="struct_device_1_1_device_settings.html">DeviceSettings</a> &amp;lhs, const <a class="el" href="struct_device_1_1_device_settings.html">DeviceSettings</a> &amp;rhs) noexcept</td></tr>
+<tr class="separator:a1197d4f134fafe35316940c4a10ccbc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f49162738467394d6ee0fe07f2e38ce"><td class="memItemLeft" align="right" valign="top"><a id="a1f49162738467394d6ee0fe07f2e38ce"></a>
 DeviceLogging&#160;</td><td class="memItemRight" valign="bottom"><b>get_cur_logging</b> (bool b)</td></tr>
 <tr class="separator:a1f49162738467394d6ee0fe07f2e38ce"><td class="memSeparator" colspan="2">&#160;</td></tr>

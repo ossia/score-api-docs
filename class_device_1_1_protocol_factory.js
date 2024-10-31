@@ -7,6 +7,7 @@ var class_device_1_1_protocol_factory =
     [ "~ProtocolFactory", "class_device_1_1_protocol_factory.html#ad5e2808e0e651acaef0147c4d4fe216e", null ],
     [ "category", "class_device_1_1_protocol_factory.html#a412f5c064b2743919ddc3ddbec5f6afc", null ],
     [ "checkCompatibility", "class_device_1_1_protocol_factory.html#a234efca8b12f98a16a040b5108940110", null ],
+    [ "checkResourcesAvailable", "class_device_1_1_protocol_factory.html#acc2b8f9ccb4afb54eb1994843050f272", null ],
     [ "defaultSettings", "class_device_1_1_protocol_factory.html#afe23713305124395ecc5291ab89aeac9", null ],
     [ "flags", "class_device_1_1_protocol_factory.html#abf6565df9ccb2268838e3e3f27aeb892", null ],
     [ "getEnumerators", "class_device_1_1_protocol_factory.html#a39d81f042f0bccd5c2ef2cbf3befb71a", null ],
