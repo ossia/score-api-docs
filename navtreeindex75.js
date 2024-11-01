@@ -1,5 +1,6 @@
 var NAVTREEINDEX75 =
 {
+"struct_scenario_1_1_scenario_record_init_data.html":[12,0,48,38],
 "struct_scenario_1_1_scenario_record_init_data.html#a20832638928deb12d97aeb156aaf6e39":[12,0,48,38,0],
 "struct_scenario_1_1_scenario_record_init_data.html#a2c91a2ee4aafb91f4f854006fbf414f2":[12,0,48,38,1],
 "struct_scenario_1_1_scenario_record_init_data.html#a7bfa2f18676087c610a13f5f33f750c2":[12,0,48,38,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX75 =
 "struct_state_1_1_domain.html#a6a039d04b9c027066194826a94bb7634":[12,0,53,4,4],
 "struct_state_1_1_domain.html#aba945f829b00ba0e5e041fa9c2bee5fb":[12,0,53,4,8],
 "struct_state_1_1_domain.html#aea074ff2f4dcdc69533c7835fead86fc":[12,0,53,4,10],
-"struct_state_1_1_domain.html#af10391c41fc0a6e257ea924f1acf3eb8":[12,0,53,4,13],
-"struct_state_1_1_domain.html#af3dee8b908d2aa32b9d8545965162038":[12,0,53,4,9]
+"struct_state_1_1_domain.html#af10391c41fc0a6e257ea924f1acf3eb8":[12,0,53,4,13]
 };

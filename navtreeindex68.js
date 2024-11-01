@@ -1,5 +1,6 @@
 var NAVTREEINDEX68 =
 {
+"struct_media_1_1_sound_1_1_waveform_request.html#afbd67142f984b68d3939bf5d0b4eba73":[12,0,32,3,11,2],
 "struct_media_1_1_step_1_1_layer_factory.html":[12,0,32,4,0],
 "struct_media_1_1_step_1_1_layer_factory.html#a9f992a3b061ab9fcfa7b73ff85f800e9":[12,0,32,4,0,0],
 "struct_metadata.html":[12,0,161],
@@ -248,6 +249,5 @@ var NAVTREEINDEX68 =
 "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#af346a9a6502fb18e39e8c4d678e63e7b":[12,0,36,3,0,1,0],
 "struct_nodes_1_1_audio_looper_1_1_node_1_1ins.html":[12,0,36,3,0,0],
 "struct_nodes_1_1_audio_looper_1_1_node_1_1ins.html#a1f036675b1d5b8c0d8040744eecd638b":[12,0,36,3,0,0,2],
-"struct_nodes_1_1_audio_looper_1_1_node_1_1ins.html#a21fb353fcc6f5347a38c9ee5801d1a96":[12,0,36,3,0,0,5],
-"struct_nodes_1_1_audio_looper_1_1_node_1_1ins.html#a4dcbdd0cb30c5f35f108791c2d34624f":[12,0,36,3,0,0,0]
+"struct_nodes_1_1_audio_looper_1_1_node_1_1ins.html#a21fb353fcc6f5347a38c9ee5801d1a96":[12,0,36,3,0,0,5]
 };

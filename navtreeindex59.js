@@ -1,5 +1,6 @@
 var NAVTREEINDEX59 =
 {
+"score-lib-state_2_tests_2_utils_8hpp_source.html":[13,0,1439],
 "score-plugin-analysis_2_analysis_2_envelope_8hpp_source.html":[13,0,412],
 "score-plugin-audio_2_audio_2_settings_2_factory_8hpp_source.html":[13,0,470],
 "score-plugin-audio_2_audio_2_settings_2_model_8cpp.html#a018d919ec946d708c1ea84f3ebf3a6ef":[11,0,1,0,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX59 =
 "score__plugin__nodal_8hpp_source.html":[13,0,1207],
 "score__plugin__packagemanager_8hpp_source.html":[13,0,1208],
 "score__plugin__pd_8hpp_source.html":[13,0,1209],
-"score__plugin__protocols_8hpp_source.html":[13,0,1210],
-"score__plugin__recording_8hpp_source.html":[13,0,1211]
+"score__plugin__protocols_8hpp_source.html":[13,0,1210]
 };

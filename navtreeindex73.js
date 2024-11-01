@@ -1,5 +1,6 @@
 var NAVTREEINDEX73 =
 {
+"struct_protocols_1_1_local_specific_settings.html":[12,0,43,6],
 "struct_protocols_1_1_local_specific_settings.html#a37aaba774200b1304aef82c0d5983dc4":[12,0,43,6,1],
 "struct_protocols_1_1_local_specific_settings.html#a98eec5a96da486f31f6b80d2a41856e6":[12,0,43,6,0],
 "struct_protocols_1_1_m_i_d_i_specific_settings.html":[12,0,43,52],
@@ -248,6 +249,5 @@ var NAVTREEINDEX73 =
 "struct_scenario_1_1_base_scenario_container_1_1no__init.html":[12,0,48,61,0],
 "struct_scenario_1_1_categorised_scenario.html":[12,0,48,28],
 "struct_scenario_1_1_categorised_scenario.html#a1015ae51dbddb5b67f862cf5aca766a8":[12,0,48,28,8],
-"struct_scenario_1_1_categorised_scenario.html#a1f68f980aaad5f0ee601e19be1995646":[12,0,48,28,6],
-"struct_scenario_1_1_categorised_scenario.html#a38179cd631f712352134f8aea49ab91a":[12,0,48,28,7]
+"struct_scenario_1_1_categorised_scenario.html#a1f68f980aaad5f0ee601e19be1995646":[12,0,48,28,6]
 };

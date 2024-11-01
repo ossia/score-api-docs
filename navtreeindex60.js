@@ -1,5 +1,6 @@
 var NAVTREEINDEX60 =
 {
+"score__plugin__recording_8hpp_source.html":[13,0,1211],
 "score__plugin__remotecontrol_8hpp_source.html":[13,0,1212],
 "score__plugin__scenario_8hpp_source.html":[13,0,1213],
 "score__plugin__spline3d_8cpp.html#a3970847b9ca03e96084d4e51cf592f19":[11,0,55,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX60 =
 "struct_analysis_1_1_spectrum.html#a965486855b26f7721a73f7080a72959c":[12,0,0,16,1],
 "struct_analysis_1_1_spectrum.html#aa14df22f283c36baff62a7bfb5a65026":[12,0,0,16,6],
 "struct_analysis_1_1_spectrum.html#ae43fa5d5469ad0760bd4adb38d030202":[12,0,0,16,9],
-"struct_analysis_1_1_spectrum.html#afed0dd9804bff1f76ed79cb82527a9c8":[12,0,0,16,3],
-"struct_analysis_1_1_zero_crossing.html":[12,0,0,23]
+"struct_analysis_1_1_spectrum.html#afed0dd9804bff1f76ed79cb82527a9c8":[12,0,0,16,3]
 };

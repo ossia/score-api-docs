@@ -1,5 +1,6 @@
 var NAVTREEINDEX77 =
 {
+"struct_time_val.html#ac35f227dab2f36d7cef87a37968e3eb4":[12,0,288,11],
 "struct_time_val.html#ac9ccfe846cd59003ce78c54727b76a58":[12,0,288,27],
 "struct_time_val.html#acc8900718feb9f003d5eae5bdcb0d973":[12,0,288,23],
 "struct_time_val.html#ace7fb01a3353b5c98a5309e89f22af7a":[12,0,288,34],
@@ -248,6 +249,5 @@ var NAVTREEINDEX77 =
 "structavnd__tools_1_1_audio_recorder_1_1recorder__thread.html#a8afcfccbccaded785b64641478e12fb7":[12,0,3,3,1,7],
 "structavnd__tools_1_1_audio_recorder_1_1recorder__thread.html#ab28b1f9c3391748d6601c27fa6116f03":[12,0,3,3,1,6],
 "structavnd__tools_1_1_audio_recorder_1_1recorder__thread.html#ac68176223a5db51b33a22deb5a395839":[12,0,3,3,1,2],
-"structavnd__tools_1_1_audio_recorder_1_1reset__message.html":[12,0,3,3,2],
-"structavnd__tools_1_1_audio_recorder_1_1reset__message.html#a58a9084bd846134c56939abeee76fd58":[12,0,3,3,2,3]
+"structavnd__tools_1_1_audio_recorder_1_1reset__message.html":[12,0,3,3,2]
 };

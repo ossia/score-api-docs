@@ -1,5 +1,6 @@
 var NAVTREEINDEX78 =
 {
+"structavnd__tools_1_1_audio_recorder_1_1reset__message.html#a58a9084bd846134c56939abeee76fd58":[12,0,3,3,2,3],
 "structavnd__tools_1_1_audio_recorder_1_1reset__message.html#a6e57b1f66cb8c3411ba9e65af7bc1d60":[12,0,3,3,2,0],
 "structavnd__tools_1_1_audio_recorder_1_1reset__message.html#a6f3fdb79ff196e156086a6a80b21b086":[12,0,3,3,2,1],
 "structavnd__tools_1_1_audio_recorder_1_1reset__message.html#a86f404f76549c4a2e6091dbdc5cbe8bd":[12,0,3,3,2,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX78 =
 "structgraphics__item__ptr.html#a832908ac7b14d1317ab911b5eb1f0f93":[12,0,119,5],
 "structgraphics__item__ptr.html#aaf0261053d0acc8293feb1b9175ed47a":[12,0,119,9],
 "structgraphics__item__ptr.html#abebaeaaa39fb6bc347fc1fca58be1aab":[12,0,119,10],
-"structgraphics__item__ptr.html#ac62a43da815aa46133369f7beda95ff3":[12,0,119,7],
-"structgraphics__item__ptr.html#acbb10cc36f6e6e96faf5783f0fb23e74":[12,0,119,4]
+"structgraphics__item__ptr.html#ac62a43da815aa46133369f7beda95ff3":[12,0,119,7]
 };

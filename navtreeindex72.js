@@ -1,5 +1,6 @@
 var NAVTREEINDEX72 =
 {
+"struct_process_1_1_layout_builder_base.html#a62c645ed4396ad0d466e774380a41f9e":[12,0,42,1,9],
 "struct_process_1_1_layout_builder_base.html#a833519c19a2c48c35af60f367de171fb":[12,0,42,1,13],
 "struct_process_1_1_layout_builder_base.html#a88846a62cd4735ee29785f0d4228a1f6":[12,0,42,1,12],
 "struct_process_1_1_layout_builder_base.html#aa2b9aff48daf2ea5d4a8beee16eba702":[12,0,42,1,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX72 =
 "struct_protocols_1_1_joystick_specific_settings.html#a65482e1a14cf139b8866ae506d0c6583":[12,0,43,37,0],
 "struct_protocols_1_1_joystick_specific_settings.html#a9594eaa310829572d0d8a434cad71a9a":[12,0,43,37,2],
 "struct_protocols_1_1_libmapper_client_specific_settings.html":[12,0,43,39],
-"struct_protocols_1_1_libmapper_client_specific_settings.html#a1454e1f53efd51b1da6684bd9f756f0f":[12,0,43,39,0],
-"struct_protocols_1_1_local_specific_settings.html":[12,0,43,6]
+"struct_protocols_1_1_libmapper_client_specific_settings.html#a1454e1f53efd51b1da6684bd9f756f0f":[12,0,43,39,0]
 };

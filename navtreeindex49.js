@@ -187,12 +187,13 @@ var NAVTREEINDEX49 =
 "classscore_1_1_q_graphics_pixmap_button.html#ab941aad741a1f20119f326b0a96e2a5c":[12,0,49,145,2],
 "classscore_1_1_q_graphics_pixmap_button.html#ac4662cd01e62a2dc9a923107b7ab90e6":[12,0,49,145,0],
 "classscore_1_1_q_graphics_pixmap_enum.html":[12,0,49,146],
-"classscore_1_1_q_graphics_pixmap_enum.html#a12451b0647e9fd75823ac6a8533cf4bf":[12,0,49,146,6],
-"classscore_1_1_q_graphics_pixmap_enum.html#a17fca7d9c8abc2d665966fa3a1644a69":[12,0,49,146,2],
+"classscore_1_1_q_graphics_pixmap_enum.html#a12451b0647e9fd75823ac6a8533cf4bf":[12,0,49,146,7],
+"classscore_1_1_q_graphics_pixmap_enum.html#a16c65708fd336076218a92f5e814b343":[12,0,49,146,5],
+"classscore_1_1_q_graphics_pixmap_enum.html#a17fca7d9c8abc2d665966fa3a1644a69":[12,0,49,146,0],
 "classscore_1_1_q_graphics_pixmap_enum.html#a77e611cc293642fb5f25fec6a29894da":[12,0,49,146,3],
-"classscore_1_1_q_graphics_pixmap_enum.html#a937dd3e3f98188daa4aa325d1d976b23":[12,0,49,146,0],
-"classscore_1_1_q_graphics_pixmap_enum.html#abed793c7e667e745a4022807b19ad657":[12,0,49,146,1],
-"classscore_1_1_q_graphics_pixmap_enum.html#ac972cd9b42310977468dbb8734eef314":[12,0,49,146,5],
+"classscore_1_1_q_graphics_pixmap_enum.html#a937dd3e3f98188daa4aa325d1d976b23":[12,0,49,146,1],
+"classscore_1_1_q_graphics_pixmap_enum.html#abed793c7e667e745a4022807b19ad657":[12,0,49,146,2],
+"classscore_1_1_q_graphics_pixmap_enum.html#ac972cd9b42310977468dbb8734eef314":[12,0,49,146,6],
 "classscore_1_1_q_graphics_pixmap_enum.html#acd51e5ecfa3718b6c6e41a366466dc36":[12,0,49,146,4],
 "classscore_1_1_q_graphics_pixmap_toggle.html":[12,0,49,147],
 "classscore_1_1_q_graphics_pixmap_toggle.html#a0d717990336840107e24127d80378174":[12,0,49,147,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX49 =
 "classscore_1_1_q_graphics_slider.html#ae48ef60b7beb503c92b0555e7cd80fde":[12,0,49,151,3],
 "classscore_1_1_q_graphics_slider.html#ae4ba327778135b21a7bb3dd820930856":[12,0,49,151,16],
 "classscore_1_1_q_graphics_slider.html#aeb1c97e35c15e74dbbc40955ffa13d57":[12,0,49,151,11],
-"classscore_1_1_q_graphics_slider.html#aef02da39cd3361f8d2f680d98282325b":[12,0,49,151,19],
-"classscore_1_1_q_graphics_spinbox.html":[12,0,49,153]
+"classscore_1_1_q_graphics_slider.html#aef02da39cd3361f8d2f680d98282325b":[12,0,49,151,19]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX80 =
 {
+"structoscr_1_1_q_painter_adapter.html#ad0b92d64e0a6e1d9bb07d9dd471cce35":[12,0,37,40,11],
 "structoscr_1_1_q_painter_adapter.html#ad364a5a7b23436e5b80e01fecbac8ff9":[12,0,37,40,20],
 "structoscr_1_1_q_painter_adapter.html#ad3c877f16682909090e641b5bc59e7c6":[12,0,37,40,9],
 "structoscr_1_1_q_painter_adapter.html#ad5f6ca6ec980a157d2523d8f4f0fd143":[12,0,37,40,6],
@@ -74,16 +75,16 @@ var NAVTREEINDEX80 =
 "structoscr_1_1setup___impl0.html#a475fec302bc8c4f7d8821ee592319084":[12,0,37,22,6],
 "structoscr_1_1setup___impl0.html#a61f8e7ead77c10b7719c85d0dcea206f":[12,0,37,22,8],
 "structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,37,22,4],
-"structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,37,22,3],
 "structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,37,22,5],
+"structoscr_1_1setup___impl0.html#a8b9fe22b5dea9650b3dc09aeebba3cae":[12,0,37,22,3],
 "structoscr_1_1setup___impl0.html#ab0925cd37367396714b0651fb445ad3d":[12,0,37,22,9],
 "structoscr_1_1setup___impl0.html#ac697cbf094cf1842eb7949c2bae9439d":[12,0,37,22,2],
 "structoscr_1_1setup___impl0.html#aced344fa4d64c5a68ac6e9227ebd6c95":[12,0,37,22,7],
 "structoscr_1_1setup___impl1___out.html":[12,0,37,24],
 "structoscr_1_1setup___impl1___out.html#a3c38796c644b4a2dcc55b738abb9f310":[12,0,37,24,4],
 "structoscr_1_1setup___impl1___out.html#a4e425edcfcfb0d480595f318b2f852a7":[12,0,37,24,5],
-"structoscr_1_1setup___impl1___out.html#a5e297a645d89b6f22462f5ecc3d23efe":[12,0,37,24,3],
 "structoscr_1_1setup___impl1___out.html#a5e297a645d89b6f22462f5ecc3d23efe":[12,0,37,24,2],
+"structoscr_1_1setup___impl1___out.html#a5e297a645d89b6f22462f5ecc3d23efe":[12,0,37,24,3],
 "structoscr_1_1setup___impl1___out.html#a864711c3570060a1365323453762d922":[12,0,37,24,0],
 "structoscr_1_1setup___impl1___out.html#a929e10de753f29cb5102e4a87ada2324":[12,0,37,24,1],
 "structossia_1_1control__surface__node_1_1control__updater.html":[12,0,38,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX80 =
 "structscore_1_1_combo_slider.html#aa3d2ab5958db2977e4d1c9a271086579":[12,0,49,277,3],
 "structscore_1_1_combo_slider.html#acd3a4dcc4a634294a6ce8cb0c8bf5cde":[12,0,49,277,0],
 "structscore_1_1_combo_slider.html#ad0095e0ec43cc419f77b8a074f601fcb":[12,0,49,277,1],
-"structscore_1_1_command_data.html":[12,0,49,86],
-"structscore_1_1_command_data.html#a85d47906690ba43b4f590a39e7fb676f":[12,0,49,86,1]
+"structscore_1_1_command_data.html":[12,0,49,86]
 };
