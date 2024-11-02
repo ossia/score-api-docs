@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('score-plugin-vst3_2_vst3_2_library_8hp
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">auto</span>&amp; plug = ctx.<a class="code" href="structscore_1_1_g_u_i_application_context.html#a009d1e53ac9b30fc0f4d787ea677ce2a">applicationPlugin</a>&lt;<a class="code" href="classvst3_1_1_application_plugin.html">vst3::ApplicationPlugin</a>&gt;();</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">auto</span> reset_plugs = [=, &amp;plug, &amp;parent] {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">auto</span> reset_plugs = [<span class="keyword">this</span>, &amp;plug, &amp;parent] {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; vst : plug.vst_infos)</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      {</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">if</span>(vst.isValid)</div>
