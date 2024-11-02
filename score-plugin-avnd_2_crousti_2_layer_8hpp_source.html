@@ -421,7 +421,7 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_layer_8h
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;      <span class="keyword">auto</span> t = boost::pfr::detail::tie_as_tuple(item, size_t_&lt;N&gt;{});</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;      [&amp;]&lt;std::size_t... I&gt;(std::index_sequence&lt;I...&gt;) {</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        (this-&gt;walkLayout(sequence_tuple::get&lt;I&gt;(t), recursive_members...), ...);</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;      }(make_index_sequence&lt;N&gt;{});</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;      }(std::make_index_sequence&lt;N&gt;{});</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    }</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160; </div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    layout = old_l;</div>
