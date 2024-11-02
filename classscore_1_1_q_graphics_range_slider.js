@@ -6,7 +6,7 @@ var classscore_1_1_q_graphics_range_slider =
     [ "resetExecution", "classscore_1_1_q_graphics_range_slider.html#a587e8bb459448c7d7644866b83665d14", null ],
     [ "setEnd", "classscore_1_1_q_graphics_range_slider.html#af9d576fe74bec534dfdc7a900abb4d3c", null ],
     [ "setExecutionValue", "classscore_1_1_q_graphics_range_slider.html#a43402df1571a1c14c6134ef7e2043f2c", null ],
-    [ "setRange", "classscore_1_1_q_graphics_range_slider.html#a1b4c9d5aa39d04b44063238016901f01", null ],
+    [ "setRange", "classscore_1_1_q_graphics_range_slider.html#a860d6d5b0b255ae1e5f4d7f737f203d6", null ],
     [ "setStart", "classscore_1_1_q_graphics_range_slider.html#a60f30bd98b0e9eddff730dec160d6edd", null ],
     [ "setValue", "classscore_1_1_q_graphics_range_slider.html#ad733ed885ca439cd3c2a7480b84864e5", null ],
     [ "sliderMoved", "classscore_1_1_q_graphics_range_slider.html#a19f9feb60cafd6fea271f749e601e68b", null ],

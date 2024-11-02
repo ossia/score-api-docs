@@ -15,7 +15,7 @@ var classscore_1_1_int_slider =
     [ "setMaximum", "classscore_1_1_int_slider.html#adc63dc245cdadea3f4d6f51718f9756f", null ],
     [ "setMinimum", "classscore_1_1_int_slider.html#a52b8b4e00d6a49cb30c48ad319279b79", null ],
     [ "setOrientation", "classscore_1_1_int_slider.html#a89d7a8766bb2c8606fd0003eaacf0aed", null ],
-    [ "setRange", "classscore_1_1_int_slider.html#ab2a132644a45599bfce7b78fa6114114", null ],
+    [ "setRange", "classscore_1_1_int_slider.html#a25480bd167dcf25ee542e5b6bc7499b7", null ],
     [ "setValue", "classscore_1_1_int_slider.html#a6d21dc6f6082bddc8a22a47ab56baf34", null ],
     [ "sliderMoved", "classscore_1_1_int_slider.html#a98d691febe3e57dc663909e9ce52614b", null ],
     [ "sliderReleased", "classscore_1_1_int_slider.html#a1bcad805a1e337f6366ae4811bf938d2", null ],

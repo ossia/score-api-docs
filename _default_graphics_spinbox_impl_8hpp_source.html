@@ -298,9 +298,19 @@ $(document).ready(function(){initNavTree('_default_graphics_spinbox_impl_8hpp_so
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> mouseDoubleClickEvent(T&amp; <span class="keyword">self</span>, QGraphicsSceneMouseEvent* event)</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  {</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  }</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;};</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;}</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keyword">self</span>.m_value = <span class="keyword">self</span>.unmap(<span class="keyword">self</span>.init);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keyword">self</span>.m_grab = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keyword">self</span>.sliderMoved();</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keyword">self</span>.sliderReleased();</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keyword">self</span>.m_grab = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keyword">self</span>.update();</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keyword">event</span>-&gt;accept();</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  }</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;};</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;}</div>
 <div class="ttc" id="aclassscore_1_1_skin_html"><div class="ttname"><a href="classscore_1_1_skin.html">score::Skin</a></div><div class="ttdef"><b>Definition:</b> Skin.hpp:93</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition:</b> Application.cpp:90</div></div>
 <div class="ttc" id="astructscore_1_1_default_graphics_spinbox_impl_html"><div class="ttname"><a href="structscore_1_1_default_graphics_spinbox_impl.html">score::DefaultGraphicsSpinboxImpl</a></div><div class="ttdef"><b>Definition:</b> DefaultGraphicsSpinboxImpl.hpp:24</div></div>

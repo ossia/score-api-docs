@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('_q_graphics_knob_8hpp_source.html','')
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  QRectF m_rect{defaultKnobSize};</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">double</span> min{}, max{};</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">double</span> min{}, max{}, init{};</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">bool</span> m_grab{};</div>
@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('_q_graphics_knob_8hpp_source.html','')
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">double</span> map(<span class="keywordtype">double</span> v) <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> (v * (max - min)) + min; }</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> setRect(<span class="keyword">const</span> QRectF&amp; r);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">void</span> setRange(<span class="keywordtype">double</span> min, <span class="keywordtype">double</span> max);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">void</span> setRange(<span class="keywordtype">double</span> min, <span class="keywordtype">double</span> max, <span class="keywordtype">double</span> init);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> setValue(<span class="keywordtype">double</span> v);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">double</span> value() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> setExecutionValue(<span class="keywordtype">double</span> v);</div>

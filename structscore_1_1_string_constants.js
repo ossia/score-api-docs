@@ -40,6 +40,7 @@ var structscore_1_1_string_constants =
     [ "Host", "structscore_1_1_string_constants.html#a68d443de1a345e56f3170808a9d97d5a", null ],
     [ "id", "structscore_1_1_string_constants.html#a66da97056f342d58d32d26789503f2ce", null ],
     [ "Identifiers", "structscore_1_1_string_constants.html#a9e79cdc0739dd79b6f695f959ca43982", null ],
+    [ "Init", "structscore_1_1_string_constants.html#a9367bcc967fedce81a763aaa7d56518e", null ],
     [ "Inlet", "structscore_1_1_string_constants.html#a6d75cad2ed60a7610bc7236ac766aca7", null ],
     [ "Inlets", "structscore_1_1_string_constants.html#ab9c086c64bec74613275323443e88ae4", null ],
     [ "ioType", "structscore_1_1_string_constants.html#a206eef6ec68be5a55a1d95a90e2061ed", null ],

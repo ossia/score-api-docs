@@ -5,7 +5,7 @@ var classscore_1_1_q_graphics_int_x_y_spinbox_chooser =
     [ "getMax", "classscore_1_1_q_graphics_int_x_y_spinbox_chooser.html#a4e84ea3ceca94b8a62f4bcc3a8b61347", null ],
     [ "getMin", "classscore_1_1_q_graphics_int_x_y_spinbox_chooser.html#a469bf95c0392dc38f6867dd1fed441a0", null ],
     [ "setPoint", "classscore_1_1_q_graphics_int_x_y_spinbox_chooser.html#a66a5f307e7255636445f426538c1f7ea", null ],
-    [ "setRange", "classscore_1_1_q_graphics_int_x_y_spinbox_chooser.html#afa5e73dbebb523fa4c2bdd730f1e1a6c", null ],
+    [ "setRange", "classscore_1_1_q_graphics_int_x_y_spinbox_chooser.html#a94f2900016de585cb4b42b369a05cd58", null ],
     [ "setValue", "classscore_1_1_q_graphics_int_x_y_spinbox_chooser.html#aeece4a97841aef8fdc882cdde2726db8", null ],
     [ "sliderMoved", "classscore_1_1_q_graphics_int_x_y_spinbox_chooser.html#af104391d327ff14fd12a646465f50ec9", null ],
     [ "sliderReleased", "classscore_1_1_q_graphics_int_x_y_spinbox_chooser.html#a171539e3f1bb9df6e06f7f76a2de84e1", null ],
