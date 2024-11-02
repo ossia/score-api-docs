@@ -79,7 +79,6 @@ var hierarchy =
     ] ],
     [ "score::ApplicationServices", "structscore_1_1_application_services.html", null ],
     [ "score::ApplicationSettings", "structscore_1_1_application_settings.html", null ],
-    [ "oscr::ApplyEngineControlChangeToUI< Node >", "structoscr_1_1_apply_engine_control_change_to_u_i.html", null ],
     [ "Nodes::Arpeggiator::Arpeggios", "struct_nodes_1_1_arpeggiator_1_1_arpeggios.html", null ],
     [ "ArrayEntitySerializer", "struct_array_entity_serializer.html", [
       [ "TSerializer< DataStream, boost::container::small_vector< T *, N > >", "struct_t_serializer_3_01_data_stream_00_01boost_1_1container_1_1small__vector_3_01_t_01_5_00_01_n_01_4_01_4.html", null ],
@@ -531,9 +530,7 @@ var hierarchy =
       [ "vst3::VSTFloatSlider", "structvst3_1_1_v_s_t_float_slider.html", null ],
       [ "vst::VSTFloatSlider", "structvst_1_1_v_s_t_float_slider.html", null ]
     ] ],
-    [ "oscr::control_updater< ExecNode_T, T, ControlN >", "structoscr_1_1control__updater.html", null ],
     [ "ossia::control_surface_node::control_updater", "structossia_1_1control__surface__node_1_1control__updater.html", null ],
-    [ "oscr::control_updater_dynamic_port< ExecNode_T, T, ControlN >", "structoscr_1_1control__updater__dynamic__port.html", null ],
     [ "Dataflow::control_visitor", "struct_dataflow_1_1control__visitor.html", null ],
     [ "Process::ControlLayout", "struct_process_1_1_control_layout.html", null ],
     [ "Process::ControlMessage", "struct_process_1_1_control_message.html", null ],
@@ -604,6 +601,7 @@ var hierarchy =
       [ "QtDiagnosticConsumer", "class_qt_diagnostic_consumer.html", null ]
     ] ],
     [ "Nodes::Direction", "struct_nodes_1_1_direction.html", null ],
+    [ "oscr::dispatch_control_setup< Node >", "structoscr_1_1dispatch__control__setup.html", null ],
     [ "score::Dispatcher", "structscore_1_1_dispatcher.html", [
       [ "score::Dispatcher_T< T >", "structscore_1_1_dispatcher___t.html", null ]
     ] ],
@@ -706,7 +704,6 @@ var hierarchy =
     [ "Gfx::exec_control", "struct_gfx_1_1exec__control.html", null ],
     [ "JS::ExecutionStateValueType", "struct_j_s_1_1_execution_state_value_type.html", null ],
     [ "Scenario::ExecutionStatusProperty", "struct_scenario_1_1_execution_status_property.html", null ],
-    [ "oscr::ExecutorGuiUpdate< Node >", "structoscr_1_1_executor_gui_update.html", null ],
     [ "Nodes::ArrayGenerator::Node::State::Expr", "struct_nodes_1_1_array_generator_1_1_node_1_1_state_1_1_expr.html", null ],
     [ "Nodes::ArrayMapping::Node::State::Expr", "struct_nodes_1_1_array_mapping_1_1_node_1_1_state_1_1_expr.html", null ],
     [ "ExprData", null, [
@@ -3475,8 +3472,12 @@ var hierarchy =
     ] ],
     [ "score::SettingsCommandDispatcher", "classscore_1_1_settings_command_dispatcher.html", null ],
     [ "score::SettingsParameterMetadata< Parameter >", "structscore_1_1_settings_parameter_metadata.html", null ],
-    [ "oscr::setup_Impl0< Node >", "structoscr_1_1setup___impl0.html", null ],
-    [ "oscr::setup_Impl1_Out< Node >", "structoscr_1_1setup___impl1___out.html", null ],
+    [ "oscr::setup_control_for_exec_base< Node, Field >", "structoscr_1_1setup__control__for__exec__base.html", [
+      [ "oscr::setup_control_for_exec< Node, Field, N, NField >", "structoscr_1_1setup__control__for__exec.html", null ],
+      [ "oscr::setup_control_for_exec< Node, Field, N, NField >", "structoscr_1_1setup__control__for__exec_3_01_node_00_01_field_00_01_n_00_01_n_field_01_4.html", null ],
+      [ "oscr::setup_control_for_exec< Node, Field, N, NField >", "structoscr_1_1setup__control__for__exec_3_01_node_00_01_field_00_01_n_00_01_n_field_01_4.html", null ],
+      [ "oscr::setup_control_for_exec< Node, Field, N, NField >", "structoscr_1_1setup__control__for__exec_3_01_node_00_01_field_00_01_n_00_01_n_field_01_4.html", null ]
+    ] ],
     [ "score::gfx::ShaderCache", "structscore_1_1gfx_1_1_shader_cache.html", null ],
     [ "Gfx::ShaderSource", "struct_gfx_1_1_shader_source.html", [
       [ "Gfx::ProcessedProgram", "struct_gfx_1_1_processed_program.html", null ]
@@ -3789,6 +3790,9 @@ var hierarchy =
     [ "State::Unit", "struct_state_1_1_unit.html", null ],
     [ "Path< Object >::UnsafeDynamicCreation", "struct_path_1_1_unsafe_dynamic_creation.html", null ],
     [ "unused_t", "structunused__t.html", null ],
+    [ "oscr::update_control_in_value_in_ui< Node >", "structoscr_1_1update__control__in__value__in__ui.html", null ],
+    [ "oscr::update_control_out_value_in_ui< Node >", "structoscr_1_1update__control__out__value__in__ui.html", null ],
+    [ "oscr::update_control_value_in_ui< Node >", "structoscr_1_1update__control__value__in__ui.html", null ],
     [ "WidgetFactory::UpdatingNormalizer< Norm_T, Slider_T >", "struct_widget_factory_1_1_updating_normalizer.html", null ],
     [ "score::uuids::uuid", "structscore_1_1uuids_1_1uuid.html", [
       [ "UuidKey< score::Addon >", "class_uuid_key.html", null ],

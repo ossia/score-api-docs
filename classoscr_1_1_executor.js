@@ -9,8 +9,9 @@ var classoscr_1_1_executor =
     [ "key", "classoscr_1_1_executor.html#a0be3f8feb600d887c35bde499bd20a56", null ],
     [ "key_match", "classoscr_1_1_executor.html#a71b76f90c9cfd28e31daf3a131fdcf96", null ],
     [ "recompute_ports", "classoscr_1_1_executor.html#ac85d055f43d747f66bdd930e051db82b", null ],
+    [ "setup_cpu", "classoscr_1_1_executor.html#a465a093e438c97c6a89b94c3cb5f7f30", null ],
+    [ "setup_gpu", "classoscr_1_1_executor.html#afdd42c274997162671091c55c2e5d227", null ],
+    [ "setup_soundfile_task_pool", "classoscr_1_1_executor.html#abe30143e9225e348c8a1ec6649a2391b", null ],
     [ "update_controls", "classoscr_1_1_executor.html#afb8ac013a64f34ffade35784c17d03a7", null ],
-    [ "m_oldInlets", "classoscr_1_1_executor.html#aa79458a2483a522c6fa0012ca79728a0", null ],
-    [ "m_oldOutlets", "classoscr_1_1_executor.html#aa3f18a8676e0cb7f293d698b3ccaddcb", null ],
     [ "node_id", "classoscr_1_1_executor.html#a7b8bb10cbcc053ffb7d47ea87bdc0070", null ]
 ];

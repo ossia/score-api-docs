@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.9.1"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>score: oscr::control_updater&lt; ExecNode_T, T, ControlN &gt; Struct Template Reference</title>
+        <title>score: oscr::dispatch_control_setup&lt; Node &gt; Struct Template Reference</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -75,7 +75,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('structoscr_1_1control__updater.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('structoscr_1_1dispatch__control__setup.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -95,31 +95,48 @@ $(document).ready(function(){initNavTree('structoscr_1_1control__updater.html','
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="structoscr_1_1control__updater-members.html">List of all members</a>  </div>
+<a href="structoscr_1_1dispatch__control__setup-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">oscr::control_updater&lt; ExecNode_T, T, ControlN &gt; Struct Template Reference</div>  </div>
+<div class="title">oscr::dispatch_control_setup&lt; Node &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a71e0bb2e353d1708e8415a48a6776cbf"><td class="memItemLeft" align="right" valign="top"><a id="a71e0bb2e353d1708e8415a48a6776cbf"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ExecNode</b> = safe_node&lt; Node &gt;</td></tr>
+<tr class="separator:a71e0bb2e353d1708e8415a48a6776cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53d2eea4b567fb82602da2fc1bc00573"><td class="memItemLeft" align="right" valign="top"><a id="a53d2eea4b567fb82602da2fc1bc00573"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Model</b> = <a class="el" href="classoscr_1_1_process_model.html">ProcessModel</a>&lt; Node &gt;</td></tr>
+<tr class="separator:a53d2eea4b567fb82602da2fc1bc00573"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a207e5f38557d698bfb16820e66d87834"><td class="memItemLeft" align="right" valign="top"><a id="a207e5f38557d698bfb16820e66d87834"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> ()</td></tr>
-<tr class="separator:a207e5f38557d698bfb16820e66d87834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46baaa4aa5d3d3bf71069a45db733526"><td class="memTemplParams" colspan="2"><a id="a46baaa4aa5d3d3bf71069a45db733526"></a>
+template&lt;typename Field , std::size_t N, std::size_t NField&gt; </td></tr>
+<tr class="memitem:a46baaa4aa5d3d3bf71069a45db733526"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (Field &amp;param, avnd::predicate_index&lt; N &gt; np, avnd::field_index&lt; NField &gt; nf)</td></tr>
+<tr class="separator:a46baaa4aa5d3d3bf71069a45db733526"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:adffd0fb0b0e4c9f1c1e51ca18d8a3682"><td class="memItemLeft" align="right" valign="top"><a id="adffd0fb0b0e4c9f1c1e51ca18d8a3682"></a>
-std::weak_ptr&lt; ExecNode_T &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>weak_node</b></td></tr>
-<tr class="separator:adffd0fb0b0e4c9f1c1e51ca18d8a3682"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a533dde5daa268e2b4164b1a1b022fcd8"><td class="memItemLeft" align="right" valign="top"><a id="a533dde5daa268e2b4164b1a1b022fcd8"></a>
-T&#160;</td><td class="memItemRight" valign="bottom"><b>v</b></td></tr>
-<tr class="separator:a533dde5daa268e2b4164b1a1b022fcd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9177bc6fe3a2b1908d368631572b73eb"><td class="memItemLeft" align="right" valign="top"><a id="a9177bc6fe3a2b1908d368631572b73eb"></a>
+<a class="el" href="classoscr_1_1_process_model.html">Model</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>element</b></td></tr>
+<tr class="separator:a9177bc6fe3a2b1908d368631572b73eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefe9fd9c1a3ae727c34afbc46bb29d36"><td class="memItemLeft" align="right" valign="top"><a id="aefe9fd9c1a3ae727c34afbc46bb29d36"></a>
+const <a class="el" href="struct_execution_1_1_context.html">Execution::Context</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ctx</b></td></tr>
+<tr class="separator:aefe9fd9c1a3ae727c34afbc46bb29d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a399b7121faa9286f4cac4979b0d0b7dd"><td class="memItemLeft" align="right" valign="top"><a id="a399b7121faa9286f4cac4979b0d0b7dd"></a>
+const std::shared_ptr&lt; ExecNode &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>node_ptr</b></td></tr>
+<tr class="separator:a399b7121faa9286f4cac4979b0d0b7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4feafa859619b1b982128d423078756"><td class="memItemLeft" align="right" valign="top"><a id="ad4feafa859619b1b982128d423078756"></a>
+QObject *&#160;</td><td class="memItemRight" valign="bottom"><b>parent</b></td></tr>
+<tr class="separator:ad4feafa859619b1b982128d423078756"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="score-plugin-avnd_2_crousti_2_executor_8hpp_source.html">score-plugin-avnd/Crousti/Executor.hpp</a></li>
+<li><a class="el" href="_executor_port_setup_8hpp_source.html">ExecutorPortSetup.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
