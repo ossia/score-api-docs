@@ -41,6 +41,7 @@ var namespaceoscr =
     [ "Deserializer", "structoscr_1_1_deserializer.html", "structoscr_1_1_deserializer" ],
     [ "MessageBusReader", "structoscr_1_1_message_bus_reader.html", "structoscr_1_1_message_bus_reader" ],
     [ "ProcessModel", "classoscr_1_1_process_model.html", "classoscr_1_1_process_model" ],
+    [ "rgba_color", "structoscr_1_1rgba__color.html", "structoscr_1_1rgba__color" ],
     [ "QPainterAdapter", "structoscr_1_1_q_painter_adapter.html", "structoscr_1_1_q_painter_adapter" ],
     [ "CustomItem", "classoscr_1_1_custom_item.html", "classoscr_1_1_custom_item" ],
     [ "CustomControl", "classoscr_1_1_custom_control.html", "classoscr_1_1_custom_control" ],

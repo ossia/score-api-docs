@@ -1041,8 +1041,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1972,8 +1972,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Patternist::ProcessModel >", "class_path.html", null ],
@@ -3403,6 +3403,7 @@ var hierarchy =
     [ "avnd_tools::DeviceRecorder::reset_message", "structavnd__tools_1_1_device_recorder_1_1reset__message.html", null ],
     [ "avnd_tools::DeviceRecorder::reset_path_message", "structavnd__tools_1_1_device_recorder_1_1reset__path__message.html", null ],
     [ "score::RestorableDocument", "structscore_1_1_restorable_document.html", null ],
+    [ "oscr::rgba_color", "structoscr_1_1rgba__color.html", null ],
     [ "score::RightClickImpl", "structscore_1_1_right_click_impl.html", null ],
     [ "RootLayout", null, [
       [ "oscr::RootItem< Info, RootLayout >", "structoscr_1_1_root_item.html", null ]

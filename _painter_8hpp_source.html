@@ -109,87 +109,87 @@ $(document).ready(function(){initNavTree('_painter_8hpp_source.html',''); initRe
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QPolygon&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;avnd/concepts/painter.hpp&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;halp/texture.hpp&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceoscr.html">oscr</a></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structoscr_1_1_q_painter_adapter.html">   18</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structoscr_1_1_q_painter_adapter.html">QPainterAdapter</a></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  QPainter&amp; painter;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  QGraphicsItem&amp; item;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  QPainterPath path;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordtype">void</span> begin_path() { path = QPainterPath{}; }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">void</span> close_path() { path.closeSubpath(); }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">void</span> stroke() { painter.strokePath(path, painter.pen()); }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordtype">void</span> fill() { painter.fillPath(path, painter.brush()); }</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">void</span> update() { item.update(); }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> move_to(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y) { path.moveTo(x, y); }</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> line_to(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y) { path.lineTo(x, y); }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">void</span> arc_to(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> w, <span class="keywordtype">double</span> h, <span class="keywordtype">double</span> start, <span class="keywordtype">double</span> length)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    path.arcTo(x, y, w, h, start, length);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">void</span> cubic_to(<span class="keywordtype">double</span> c1x, <span class="keywordtype">double</span> c1y, <span class="keywordtype">double</span> c2x, <span class="keywordtype">double</span> c2y, <span class="keywordtype">double</span> endx, <span class="keywordtype">double</span> endy)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    path.cubicTo(c1x, c1y, c2x, c2y, endx, endy);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">void</span> quad_to(<span class="keywordtype">double</span> x1, <span class="keywordtype">double</span> y1, <span class="keywordtype">double</span> x2, <span class="keywordtype">double</span> y2)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    path.quadTo(x1, y1, x2, y2);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">void</span> translate(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y) { painter.translate(x, y); }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> scale(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y) { painter.scale(x, y); }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> rotate(<span class="keywordtype">double</span> a) { painter.rotate(a); }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> reset_transform() { painter.resetTransform(); }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="comment">// Colors:</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> set_stroke_color(halp::rgba_color c)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    QPen p = painter.pen();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    p.setColor(qRgba(c.r, c.g, c.b, c.a));</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    painter.setPen(p);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> set_stroke_width(<span class="keywordtype">double</span> w)</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    QPen p = painter.pen();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    p.setWidth(w);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    painter.setPen(p);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> set_fill_color(halp::rgba_color c)</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    painter.setBrush(QColor(qRgba(c.r, c.g, c.b, c.a)));</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">void</span> set_linear_gradient(</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="keywordtype">double</span> x1, <span class="keywordtype">double</span> y1, <span class="keywordtype">double</span> x2, <span class="keywordtype">double</span> y2, halp::rgba_color c1,</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      halp::rgba_color c2)</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    QLinearGradient gradient(QPointF(x1, y1), QPointF(x2, y2));</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    gradient.setColorAt(0, QColor(qRgba(c1.r, c1.g, c1.b, c1.a)));</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    gradient.setColorAt(1, QColor(qRgba(c2.r, c2.g, c2.b, c2.a)));</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    painter.setBrush(gradient);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">void</span> set_radial_gradient(</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="keywordtype">double</span> cx, <span class="keywordtype">double</span> cy, <span class="keywordtype">double</span> cr, halp::rgba_color c1, halp::rgba_color c2)</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    QRadialGradient gradient(cx, cy, cr);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    gradient.setColorAt(0, QColor(qRgba(c1.r, c1.g, c1.b, c1.a)));</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    gradient.setColorAt(1, QColor(qRgba(c2.r, c2.g, c2.b, c2.a)));</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    painter.setBrush(gradient);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">void</span> set_conical_gradient(</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> a, halp::rgba_color c1, halp::rgba_color c2)</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceoscr.html">oscr</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structoscr_1_1rgba__color.html">   17</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structoscr_1_1rgba__color.html">rgba_color</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  uint8_t r, g, b, a;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structoscr_1_1_q_painter_adapter.html">   21</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structoscr_1_1_q_painter_adapter.html">QPainterAdapter</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  QPainter&amp; painter;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  QGraphicsItem&amp; item;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  QPainterPath path;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordtype">void</span> begin_path() { path = QPainterPath{}; }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">void</span> close_path() { path.closeSubpath(); }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">void</span> stroke() { painter.strokePath(path, painter.pen()); }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> fill() { painter.fillPath(path, painter.brush()); }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> update() { item.update(); }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">void</span> move_to(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y) { path.moveTo(x, y); }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> line_to(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y) { path.lineTo(x, y); }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">void</span> arc_to(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> w, <span class="keywordtype">double</span> h, <span class="keywordtype">double</span> start, <span class="keywordtype">double</span> length)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    path.arcTo(x, y, w, h, start, length);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">void</span> cubic_to(<span class="keywordtype">double</span> c1x, <span class="keywordtype">double</span> c1y, <span class="keywordtype">double</span> c2x, <span class="keywordtype">double</span> c2y, <span class="keywordtype">double</span> endx, <span class="keywordtype">double</span> endy)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    path.cubicTo(c1x, c1y, c2x, c2y, endx, endy);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> quad_to(<span class="keywordtype">double</span> x1, <span class="keywordtype">double</span> y1, <span class="keywordtype">double</span> x2, <span class="keywordtype">double</span> y2)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    path.quadTo(x1, y1, x2, y2);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> translate(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y) { painter.translate(x, y); }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> scale(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y) { painter.scale(x, y); }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> rotate(<span class="keywordtype">double</span> a) { painter.rotate(a); }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> reset_transform() { painter.resetTransform(); }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="comment">// Colors:</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> set_stroke_color(<a class="code" href="structoscr_1_1rgba__color.html">rgba_color</a> c)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    QPen p = painter.pen();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    p.setColor(qRgba(c.r, c.g, c.b, c.a));</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    painter.setPen(p);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">void</span> set_stroke_width(<span class="keywordtype">double</span> w)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    QPen p = painter.pen();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    p.setWidth(w);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    painter.setPen(p);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span> set_fill_color(<a class="code" href="structoscr_1_1rgba__color.html">rgba_color</a> c)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    painter.setBrush(QColor(qRgba(c.r, c.g, c.b, c.a)));</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span> set_linear_gradient(</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keywordtype">double</span> x1, <span class="keywordtype">double</span> y1, <span class="keywordtype">double</span> x2, <span class="keywordtype">double</span> y2, <a class="code" href="structoscr_1_1rgba__color.html">rgba_color</a> c1, <a class="code" href="structoscr_1_1rgba__color.html">rgba_color</a> c2)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    QLinearGradient gradient(QPointF(x1, y1), QPointF(x2, y2));</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    gradient.setColorAt(0, QColor(qRgba(c1.r, c1.g, c1.b, c1.a)));</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    gradient.setColorAt(1, QColor(qRgba(c2.r, c2.g, c2.b, c2.a)));</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    painter.setBrush(gradient);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">void</span> set_radial_gradient(<span class="keywordtype">double</span> cx, <span class="keywordtype">double</span> cy, <span class="keywordtype">double</span> cr, <a class="code" href="structoscr_1_1rgba__color.html">rgba_color</a> c1, <a class="code" href="structoscr_1_1rgba__color.html">rgba_color</a> c2)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    QRadialGradient gradient(cx, cy, cr);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    gradient.setColorAt(0, QColor(qRgba(c1.r, c1.g, c1.b, c1.a)));</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    gradient.setColorAt(1, QColor(qRgba(c2.r, c2.g, c2.b, c2.a)));</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    painter.setBrush(gradient);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">void</span> set_conical_gradient(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> a, <a class="code" href="structoscr_1_1rgba__color.html">rgba_color</a> c1, <a class="code" href="structoscr_1_1rgba__color.html">rgba_color</a> c2)</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  {</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    QConicalGradient gradient(x, y, a);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    gradient.setColorAt(0, QColor(qRgba(c1.r, c1.g, c1.b, c1.a)));</div>
@@ -483,7 +483,8 @@ $(document).ready(function(){initNavTree('_painter_8hpp_source.html',''); initRe
 <div class="ttc" id="aclassoscr_1_1_custom_item_html"><div class="ttname"><a href="classoscr_1_1_custom_item.html">oscr::CustomItem</a></div><div class="ttdef"><b>Definition:</b> Painter.hpp:194</div></div>
 <div class="ttc" id="anamespaceoscr_html"><div class="ttname"><a href="namespaceoscr.html">oscr</a></div><div class="ttdef"><b>Definition:</b> Factories.hpp:19</div></div>
 <div class="ttc" id="astructoscr_1_1_custom_item_1_1custom__mouse__event_html"><div class="ttname"><a href="structoscr_1_1_custom_item_1_1custom__mouse__event.html">oscr::CustomItem::custom_mouse_event</a></div><div class="ttdef"><b>Definition:</b> Painter.hpp:231</div></div>
-<div class="ttc" id="astructoscr_1_1_q_painter_adapter_html"><div class="ttname"><a href="structoscr_1_1_q_painter_adapter.html">oscr::QPainterAdapter</a></div><div class="ttdef"><b>Definition:</b> Painter.hpp:19</div></div>
+<div class="ttc" id="astructoscr_1_1_q_painter_adapter_html"><div class="ttname"><a href="structoscr_1_1_q_painter_adapter.html">oscr::QPainterAdapter</a></div><div class="ttdef"><b>Definition:</b> Painter.hpp:22</div></div>
+<div class="ttc" id="astructoscr_1_1rgba__color_html"><div class="ttname"><a href="structoscr_1_1rgba__color.html">oscr::rgba_color</a></div><div class="ttdef"><b>Definition:</b> Painter.hpp:18</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition:</b> DocumentContext.hpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
