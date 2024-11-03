@@ -101,392 +101,393 @@ $(document).ready(function(){initNavTree('_executor_port_setup_8hpp_source.html'
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Process/Process.hpp&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Crousti/ProcessModel.hpp&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;avnd/binding/ossia/node.hpp&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceoscr.html">oscr</a></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node, <span class="keyword">typename</span> Field, std::<span class="keywordtype">size_t</span> NPred, std::<span class="keywordtype">size_t</span> NField&gt;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="structoscr_1_1con__unvalidated.html">   12</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structoscr_1_1con__unvalidated.html">con_unvalidated</a></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">using</span> ExecNode = safe_node&lt;Node&gt;;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  std::weak_ptr&lt;ExecNode&gt; weak_node;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  Field&amp; field;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> ossia::value&amp; val)</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">using</span> control_value_type = std::decay_t&lt;decltype(Field::value)&gt;;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">if</span>(<span class="keyword">auto</span> node = weak_node.lock())</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      control_value_type v;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      node-&gt;from_ossia_value(field, val, v, avnd::field_index&lt;NField&gt;{});</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      ctx.<a class="code" href="struct_execution_1_1_context.html#a1a0fd8f494c0a427dc09b7da3e94bf36">executionQueue</a>.enqueue([weak_node = weak_node, v = std::move(v)]() <span class="keyword">mutable</span> {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">if</span>(<span class="keyword">auto</span> n = weak_node.lock())</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;          n-&gt;template control_updated_from_ui&lt;control_value_type, NPred&gt;(std::move(v));</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      });</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node, <span class="keyword">typename</span> Field, std::<span class="keywordtype">size_t</span> NPred, std::<span class="keywordtype">size_t</span> NField&gt;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structoscr_1_1con__unvalidated__dynamic__port.html">   37</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structoscr_1_1con__unvalidated__dynamic__port.html">con_unvalidated_dynamic_port</a></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">using</span> ExecNode = safe_node&lt;Node&gt;;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  std::weak_ptr&lt;ExecNode&gt; weak_node;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  Field&amp; field;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">int</span> port_index;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> ossia::value&amp; val)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">using</span> control_value_type = std::decay_t&lt;decltype(Field::value)&gt;;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">if</span>(<span class="keyword">auto</span> node = weak_node.lock())</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      control_value_type v;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      node-&gt;from_ossia_value(field, val, v, avnd::field_index&lt;NField&gt;{});</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      ctx.<a class="code" href="struct_execution_1_1_context.html#a1a0fd8f494c0a427dc09b7da3e94bf36">executionQueue</a>.enqueue(</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;          [weak_node = weak_node, port_index = port_index, v = std::move(v)]() <span class="keyword">mutable</span> {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">if</span>(<span class="keyword">auto</span> n = weak_node.lock())</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;          n-&gt;template control_updated_from_ui&lt;control_value_type, NPred&gt;(</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;              std::move(v), port_index);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      });</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node, <span class="keyword">typename</span> Field&gt;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="structoscr_1_1setup__control__for__exec__base.html">   65</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structoscr_1_1setup__control__for__exec__base.html">setup_control_for_exec_base</a></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">using</span> ExecNode = safe_node&lt;Node&gt;;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">using</span> <a class="code" href="classoscr_1_1_process_model.html">Model</a> = <a class="code" href="classoscr_1_1_process_model.html">ProcessModel&lt;Node&gt;</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="classoscr_1_1_process_model.html">Model</a>&amp; element;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">const</span> std::shared_ptr&lt;ExecNode&gt;&amp; node_ptr;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  QObject* parent;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span> invoke_update(Field&amp; param)</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    avnd::effect_container&lt;Node&gt;&amp; eff = node_ptr-&gt;impl;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> state : eff.full_state())</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="comment">// FIXME dynamic_ports</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        if_possible(param.update(state.effect));</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node, <span class="keyword">typename</span> Field, std::<span class="keywordtype">size_t</span> N, std::<span class="keywordtype">size_t</span> NField&gt;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">struct </span><a class="code" href="structoscr_1_1setup__control__for__exec.html">setup_control_for_exec</a>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node, <span class="keyword">typename</span> Field, std::<span class="keywordtype">size_t</span> N, std::<span class="keywordtype">size_t</span> NField&gt;</div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="structoscr_1_1setup__control__for__exec.html">   91</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structoscr_1_1setup__control__for__exec.html">setup_control_for_exec</a> : <a class="code" href="structoscr_1_1setup__control__for__exec__base.html">setup_control_for_exec_base</a>&lt;Node, Field&gt;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keyword">using</span> ExecNode = safe_node&lt;Node&gt;;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keyword">using</span> <a class="code" href="classoscr_1_1_process_model.html">Model</a> = <a class="code" href="classoscr_1_1_process_model.html">ProcessModel&lt;Node&gt;</a>;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">void</span> initialize_control(Field&amp; param, <a class="code" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a>* inlet, <span class="keywordtype">int</span> k)</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">// Initialize the control with the current value of the inlet if it is not an optional</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">if</span> constexpr(avnd::dynamic_ports_port&lt;Field&gt;)</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <span class="keywordflow">if</span> constexpr(!requires { param.ports[0].value.reset(); })</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        this-&gt;node_ptr-&gt;from_ossia_value(</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            param, inlet-&gt;value(), param.ports[k].value, avnd::field_index&lt;NField&gt;{});</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      <span class="keywordflow">if</span> constexpr(!requires { param.value.reset(); })</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      {</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        this-&gt;node_ptr-&gt;from_ossia_value(</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            param, inlet-&gt;value(), param.value, avnd::field_index&lt;NField&gt;{});</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordtype">void</span> update_controller(Field&amp; param, <a class="code" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a>* inlet)</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">// FIXME proper tag</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">if</span> constexpr(requires { param.update_controller; })</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      param.update_controller</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;          = [inlet = QPointer{inlet}, <span class="keyword">self</span> = QPointer{&amp;this-&gt;element}](<span class="keyword">auto</span>&amp;&amp; value) {</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordflow">if</span>(!<span class="keyword">self</span> || !inlet)</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;          <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="comment">// Notify the UI if the object has the power</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="comment">// to actually change the value of the control</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="comment">// FIXME better to use in_edit queue ?</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="comment">// FIXME not too efficient but which choice do we have ?</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keyword">static</span> thread_local <span class="keyword">const</span> Field field;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        ossia::qt::run_async(</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            qApp, [<span class="keyword">self</span>, inlet, val = oscr::to_ossia_value(field, value)] {</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;          <span class="keywordflow">if</span>(!<span class="keyword">self</span> || !inlet)</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;          inlet-&gt;setValue(val);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        });</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;      };</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    }</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  }</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="keywordtype">void</span> connect_control_to_ui(Field&amp; param, <a class="code" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a>* inlet, <span class="keywordtype">int</span> k)</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="comment">// Connect to changes</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    std::weak_ptr&lt;ExecNode&gt; weak_node = this-&gt;node_ptr;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordflow">if</span> constexpr(avnd::dynamic_ports_port&lt;Field&gt;)</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    {</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      <span class="keyword">using</span> port_type = avnd::dynamic_port_type&lt;Field&gt;;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      QObject::connect(</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;          inlet, &amp;Process::ControlInlet::valueChanged, this-&gt;parent,</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;          <a class="code" href="structoscr_1_1con__unvalidated__dynamic__port.html">con_unvalidated_dynamic_port&lt;Node, port_type, N, NField&gt;</a>{</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;              this-&gt;ctx, weak_node, param.ports[k], k});</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      this-&gt;update_controller(param, inlet);</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    {</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      QObject::connect(</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;          inlet, &amp;Process::ControlInlet::valueChanged, this-&gt;parent,</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;          <a class="code" href="structoscr_1_1con__unvalidated.html">con_unvalidated&lt;Node, Field, N, NField&gt;</a>{this-&gt;ctx, weak_node, param});</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;      this-&gt;update_controller(param, inlet);</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    }</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  }</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;};</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node, avnd::soundfile_port Field, std::<span class="keywordtype">size_t</span> N, std::<span class="keywordtype">size_t</span> NField&gt;</div>
-<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="structoscr_1_1setup__control__for__exec_3_01_node_00_01_field_00_01_n_00_01_n_field_01_4.html">  168</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structoscr_1_1setup__control__for__exec.html">setup_control_for_exec</a>&lt;Node, Field, N, NField&gt;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    : <a class="code" href="structoscr_1_1setup__control__for__exec__base.html">setup_control_for_exec_base</a>&lt;Node, Field&gt;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;{</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="keyword">using</span> ExecNode = safe_node&lt;Node&gt;;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keyword">using</span> <a class="code" href="classoscr_1_1_process_model.html">Model</a> = <a class="code" href="classoscr_1_1_process_model.html">ProcessModel&lt;Node&gt;</a>;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="keywordtype">void</span> initialize_control(Field&amp; param, <a class="code" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a>* inlet, <span class="keywordtype">int</span> k)</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  {</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="comment">// FIXME handle dynamic ports correctly</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="comment">// First we can load it directly since execution hasn&#39;t started yet</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordflow">if</span>(<span class="keyword">auto</span> hdl = loadSoundfile(inlet-&gt;value(), this-&gt;ctx.doc, this-&gt;ctx.execState))</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      this-&gt;node_ptr-&gt;soundfile_loaded(</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;          hdl, avnd::predicate_index&lt;N&gt;{}, avnd::field_index&lt;NField&gt;{});</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  }</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="keywordtype">void</span> connect_control_to_ui(Field&amp; param, <a class="code" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a>* inlet, <span class="keywordtype">int</span> k)</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  {</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="comment">// Connect to changes</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    std::weak_ptr&lt;ExecNode&gt; weak_node = this-&gt;node_ptr;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    std::weak_ptr&lt;ossia::execution_state&gt; weak_st = this-&gt;ctx.execState;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    QObject::connect(</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        inlet, &amp;Process::ControlInlet::valueChanged, this-&gt;parent,</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        [&amp;ctx = this-&gt;ctx, weak_node = std::move(weak_node),</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;         weak_st = std::move(weak_st)](<span class="keyword">const</span> ossia::value&amp; v) {</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">auto</span> n = weak_node.lock())</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordflow">if</span>(<span class="keyword">auto</span> st = weak_st.lock())</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;          <span class="keywordflow">if</span>(<span class="keyword">auto</span> file = loadSoundfile(v, ctx.doc, st))</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;          {</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            ctx.executionQueue.enqueue([f = std::move(file), weak_node]() mutable {</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;              auto n = weak_node.lock();</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;              if(!n)</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                return;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;              <span class="comment">// We store the sound file handle returned in this lambda so that it gets</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;              <span class="comment">// GC&#39;d in the main thread</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;              n-&gt;soundfile_loaded(</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                  f, avnd::predicate_index&lt;N&gt;{}, avnd::field_index&lt;NField&gt;{});</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            });</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;          }</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    });</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  }</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;};</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node, avnd::m<span class="keywordtype">id</span>ifile_port Field, std::<span class="keywordtype">size_t</span> N, std::<span class="keywordtype">size_t</span> NField&gt;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="keyword">struct </span>setup_control_for_exec&lt;Node, Field, N, NField&gt;</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    : setup_control_for_exec_base&lt;Node, Field&gt;</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;{</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  <span class="keyword">using</span> ExecNode = safe_node&lt;Node&gt;;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="keyword">using</span> Model = ProcessModel&lt;Node&gt;;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <span class="keywordtype">void</span> initialize_control(Field&amp; param, <a class="code" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a>* inlet, <span class="keywordtype">int</span> k)</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  {</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="comment">// FIXME handle dynamic ports correctly</span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="comment">// First we can load it directly since execution hasn&#39;t started yet</span></div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordflow">if</span>(<span class="keyword">auto</span> hdl = loadMidifile(inlet-&gt;value(), this-&gt;ctx.doc))</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;      this-&gt;node_ptr-&gt;midifile_loaded(</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;          hdl, avnd::predicate_index&lt;N&gt;{}, avnd::field_index&lt;NField&gt;{});</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  }</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="keywordtype">void</span> connect_control_to_ui(Field&amp; param, <a class="code" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a>* inlet, <span class="keywordtype">int</span> k)</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  {</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="comment">// Connect to changes</span></div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    std::weak_ptr&lt;ExecNode&gt; weak_node = this-&gt;node_ptr;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    std::weak_ptr&lt;ossia::execution_state&gt; weak_st = this-&gt;ctx.execState;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    QObject::connect(</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        inlet, &amp;Process::ControlInlet::valueChanged, this-&gt;parent,</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        [inlet, &amp;ctx = this-&gt;ctx,</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;         weak_node = std::move(weak_node)](<span class="keyword">const</span> ossia::value&amp; v) {</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">auto</span> n = weak_node.lock())</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <span class="keywordflow">if</span>(<span class="keyword">auto</span> file = loadMidifile(v, ctx.doc))</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        {</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;          ctx.executionQueue.enqueue([f = std::move(file), weak_node]() mutable {</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            auto n = weak_node.lock();</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            if(!n)</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;              return;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            <span class="comment">// We store the sound file handle returned in this lambda so that it gets</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            <span class="comment">// GC&#39;d in the main thread</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            n-&gt;midifile_loaded(</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                f, avnd::predicate_index&lt;N&gt;{}, avnd::field_index&lt;NField&gt;{});</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;          });</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        }</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    });</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  }</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;};</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node, avnd::raw_file_port Field, std::<span class="keywordtype">size_t</span> N, std::<span class="keywordtype">size_t</span> NField&gt;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="keyword">struct </span>setup_control_for_exec&lt;<a class="code" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Node</a>, Field, N, NField&gt;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    : setup_control_for_exec_base&lt;Node, Field&gt;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;{</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  <span class="keyword">using</span> ExecNode = safe_node&lt;Node&gt;;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  <span class="keyword">using</span> Model = ProcessModel&lt;Node&gt;;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> has_text = requires { decltype(Field::file)::text; };</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> has_mmap = requires { decltype(Field::file)::mmap; };</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160; </div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  <span class="keywordtype">void</span> initialize_control(Field&amp; param, <a class="code" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a>* inlet, <span class="keywordtype">int</span> k)</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  {</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="comment">// FIXME handle dynamic ports correctly</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="comment">// First we can load it directly since execution hasn&#39;t started yet</span></div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordflow">if</span>(<span class="keyword">auto</span> hdl = loadRawfile(inlet-&gt;value(), this-&gt;ctx.doc, has_text, has_mmap))</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    {</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;      <span class="keywordflow">if</span> constexpr(avnd::port_can_process&lt;Field&gt;)</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      {</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="comment">// FIXME also do it when we get a run-time message from the exec engine,</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="comment">// OSC, etc</span></div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        <span class="keyword">auto</span> func = executePortPreprocess&lt;Field&gt;(*hdl);</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        this-&gt;node_ptr-&gt;file_loaded(</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            hdl, avnd::predicate_index&lt;N&gt;{}, avnd::field_index&lt;NField&gt;{});</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <span class="keywordflow">if</span>(func)</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;          func(this-&gt;node_ptr-&gt;impl.effect);</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;      }</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;      {</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        this-&gt;node_ptr-&gt;file_loaded(</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            hdl, avnd::predicate_index&lt;N&gt;{}, avnd::field_index&lt;NField&gt;{});</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;      }</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    }</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  }</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160; </div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  <span class="keywordtype">void</span> connect_control_to_ui(Field&amp; param, <a class="code" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a>* inlet, <span class="keywordtype">int</span> k)</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  {</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="comment">// Connect to changes</span></div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    std::weak_ptr&lt;ExecNode&gt; weak_node = this-&gt;node_ptr;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    std::weak_ptr&lt;ossia::execution_state&gt; weak_st = this-&gt;ctx.execState;</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    QObject::connect(</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        inlet, &amp;Process::ControlInlet::valueChanged, this-&gt;parent,</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        [inlet, &amp;ctx = this-&gt;ctx, weak_node = std::move(weak_node)] {</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">auto</span> n = weak_node.lock())</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <span class="keywordflow">if</span>(<span class="keyword">auto</span> file = loadRawfile(inlet-&gt;value(), ctx.doc, has_text, has_mmap))</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        {</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;          if constexpr(avnd::port_can_process&lt;Field&gt;)</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;          {</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;            auto func = executePortPreprocess&lt;Field&gt;(*file);</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;            ctx.executionQueue.enqueue(</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                [f = std::move(file), weak_node, ff = std::move(func)]() mutable {</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;              auto n = weak_node.lock();</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;              if(!n)</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                return;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;              <span class="comment">// We store the sound file handle returned in this lambda so that it gets</span></div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;              <span class="comment">// GC&#39;d in the main thread</span></div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;              n-&gt;file_loaded(f, avnd::predicate_index&lt;N&gt;{}, avnd::field_index&lt;NField&gt;{});</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;              if(ff)</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                ff(n-&gt;impl.effect);</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;            });</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;          }</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;          <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;          {</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;            ctx.executionQueue.enqueue([f = std::move(file), weak_node]() mutable {</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;              auto n = weak_node.lock();</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;              if(!n)</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                return;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;              <span class="comment">// We store the sound file handle returned in this lambda so that it gets</span></div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;              <span class="comment">// GC&#39;d in the main thread</span></div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;              n-&gt;file_loaded(f, avnd::predicate_index&lt;N&gt;{}, avnd::field_index&lt;NField&gt;{});</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            });</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;          }</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        }</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    });</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  }</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;};</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node&gt;</div>
-<div class="line"><a name="l00335"></a><span class="lineno"><a class="line" href="structoscr_1_1dispatch__control__setup.html">  335</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structoscr_1_1dispatch__control__setup.html">dispatch_control_setup</a></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;{</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;  <span class="keyword">using</span> ExecNode = safe_node&lt;Node&gt;;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;  <span class="keyword">using</span> <a class="code" href="classoscr_1_1_process_model.html">Model</a> = <a class="code" href="classoscr_1_1_process_model.html">ProcessModel&lt;Node&gt;</a>;</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160; </div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;  <a class="code" href="classoscr_1_1_process_model.html">Model</a>&amp; element;</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;  <span class="keyword">const</span> std::shared_ptr&lt;ExecNode&gt;&amp; node_ptr;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;  QObject* parent;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;  <span class="comment">// Main function being invoked, which dispatches to all the actual implementations</span></div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Field, std::<span class="keywordtype">size_t</span> N, std::<span class="keywordtype">size_t</span> NField&gt;</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  constexpr <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  operator()(Field&amp; param, avnd::predicate_index&lt;N&gt; np, avnd::field_index&lt;NField&gt; nf)</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;  {</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> ports = element.avnd_input_idx_to_model_ports(NField);</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160; </div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="keywordflow">if</span> constexpr(avnd::dynamic_ports_port&lt;Field&gt;)</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    {</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;      param.ports.resize(ports.size());</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    }</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160; </div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="keywordtype">int</span> k = 0;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> p : ports)</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    {</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">auto</span> inlet = qobject_cast&lt;Process::ControlInlet*&gt;(p))</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;      {</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        <a class="code" href="structoscr_1_1setup__control__for__exec_3_01_node_00_01_field_00_01_n_00_01_n_field_01_4.html">setup_control_for_exec&lt;Node, Field, N, NField&gt;</a> setup{</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;            element, ctx, node_ptr, parent};</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160; </div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        setup.initialize_control(param, inlet, k);</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160; </div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        setup.invoke_update(param);</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160; </div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        setup.connect_control_to_ui(param, inlet, k);</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;      }</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;      k++;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    }</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="comment">// Else it&#39;s an unhandled value inlet</span></div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  }</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;};</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160; </div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;}</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Crousti/File.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Crousti/ProcessModel.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;avnd/binding/ossia/node.hpp&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceoscr.html">oscr</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node, <span class="keyword">typename</span> Field, std::<span class="keywordtype">size_t</span> NPred, std::<span class="keywordtype">size_t</span> NField&gt;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structoscr_1_1con__unvalidated.html">   13</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structoscr_1_1con__unvalidated.html">con_unvalidated</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">using</span> ExecNode = safe_node&lt;Node&gt;;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  std::weak_ptr&lt;ExecNode&gt; weak_node;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  Field&amp; field;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> ossia::value&amp; val)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">using</span> control_value_type = std::decay_t&lt;decltype(Field::value)&gt;;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">if</span>(<span class="keyword">auto</span> node = weak_node.lock())</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      control_value_type v;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      node-&gt;from_ossia_value(field, val, v, avnd::field_index&lt;NField&gt;{});</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      ctx.<a class="code" href="struct_execution_1_1_context.html#a1a0fd8f494c0a427dc09b7da3e94bf36">executionQueue</a>.enqueue([weak_node = weak_node, v = std::move(v)]() <span class="keyword">mutable</span> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">if</span>(<span class="keyword">auto</span> n = weak_node.lock())</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;          n-&gt;template control_updated_from_ui&lt;control_value_type, NPred&gt;(std::move(v));</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      });</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node, <span class="keyword">typename</span> Field, std::<span class="keywordtype">size_t</span> NPred, std::<span class="keywordtype">size_t</span> NField&gt;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structoscr_1_1con__unvalidated__dynamic__port.html">   38</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structoscr_1_1con__unvalidated__dynamic__port.html">con_unvalidated_dynamic_port</a></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">using</span> ExecNode = safe_node&lt;Node&gt;;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  std::weak_ptr&lt;ExecNode&gt; weak_node;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  Field&amp; field;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">int</span> port_index;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> ossia::value&amp; val)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">using</span> control_value_type = std::decay_t&lt;decltype(Field::value)&gt;;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span>(<span class="keyword">auto</span> node = weak_node.lock())</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      control_value_type v;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      node-&gt;from_ossia_value(field, val, v, avnd::field_index&lt;NField&gt;{});</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      ctx.<a class="code" href="struct_execution_1_1_context.html#a1a0fd8f494c0a427dc09b7da3e94bf36">executionQueue</a>.enqueue(</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;          [weak_node = weak_node, port_index = port_index, v = std::move(v)]() <span class="keyword">mutable</span> {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">if</span>(<span class="keyword">auto</span> n = weak_node.lock())</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;          n-&gt;template control_updated_from_ui&lt;control_value_type, NPred&gt;(</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;              std::move(v), port_index);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      });</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node, <span class="keyword">typename</span> Field&gt;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="structoscr_1_1setup__control__for__exec__base.html">   66</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structoscr_1_1setup__control__for__exec__base.html">setup_control_for_exec_base</a></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">using</span> ExecNode = safe_node&lt;Node&gt;;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">using</span> <a class="code" href="classoscr_1_1_process_model.html">Model</a> = <a class="code" href="classoscr_1_1_process_model.html">ProcessModel&lt;Node&gt;</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="classoscr_1_1_process_model.html">Model</a>&amp; element;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">const</span> std::shared_ptr&lt;ExecNode&gt;&amp; node_ptr;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  QObject* parent;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">void</span> invoke_update(Field&amp; param)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    avnd::effect_container&lt;Node&gt;&amp; eff = node_ptr-&gt;impl;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> state : eff.full_state())</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="comment">// FIXME dynamic_ports</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        if_possible(param.update(state.effect));</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node, <span class="keyword">typename</span> Field, std::<span class="keywordtype">size_t</span> N, std::<span class="keywordtype">size_t</span> NField&gt;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">struct </span><a class="code" href="structoscr_1_1setup__control__for__exec.html">setup_control_for_exec</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node, <span class="keyword">typename</span> Field, std::<span class="keywordtype">size_t</span> N, std::<span class="keywordtype">size_t</span> NField&gt;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="structoscr_1_1setup__control__for__exec.html">   92</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structoscr_1_1setup__control__for__exec.html">setup_control_for_exec</a> : <a class="code" href="structoscr_1_1setup__control__for__exec__base.html">setup_control_for_exec_base</a>&lt;Node, Field&gt;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keyword">using</span> ExecNode = safe_node&lt;Node&gt;;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keyword">using</span> <a class="code" href="classoscr_1_1_process_model.html">Model</a> = <a class="code" href="classoscr_1_1_process_model.html">ProcessModel&lt;Node&gt;</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">void</span> initialize_control(Field&amp; param, <a class="code" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a>* inlet, <span class="keywordtype">int</span> k)</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">// Initialize the control with the current value of the inlet if it is not an optional</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">if</span> constexpr(avnd::dynamic_ports_port&lt;Field&gt;)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      <span class="keywordflow">if</span> constexpr(!requires { param.ports[0].value.reset(); })</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        this-&gt;node_ptr-&gt;from_ossia_value(</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            param, inlet-&gt;value(), param.ports[k].value, avnd::field_index&lt;NField&gt;{});</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      <span class="keywordflow">if</span> constexpr(!requires { param.value.reset(); })</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        this-&gt;node_ptr-&gt;from_ossia_value(</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            param, inlet-&gt;value(), param.value, avnd::field_index&lt;NField&gt;{});</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordtype">void</span> update_controller(Field&amp; param, <a class="code" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a>* inlet)</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="comment">// FIXME proper tag</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">if</span> constexpr(requires { param.update_controller; })</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      param.update_controller</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;          = [inlet = QPointer{inlet}, <span class="keyword">self</span> = QPointer{&amp;this-&gt;element}](<span class="keyword">auto</span>&amp;&amp; value) {</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">if</span>(!<span class="keyword">self</span> || !inlet)</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;          <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="comment">// Notify the UI if the object has the power</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="comment">// to actually change the value of the control</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="comment">// FIXME better to use in_edit queue ?</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="comment">// FIXME not too efficient but which choice do we have ?</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keyword">static</span> thread_local <span class="keyword">const</span> Field field;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        ossia::qt::run_async(</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            qApp, [<span class="keyword">self</span>, inlet, val = oscr::to_ossia_value(field, value)] {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;          <span class="keywordflow">if</span>(!<span class="keyword">self</span> || !inlet)</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;          inlet-&gt;setValue(val);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        });</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      };</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordtype">void</span> connect_control_to_ui(Field&amp; param, <a class="code" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a>* inlet, <span class="keywordtype">int</span> k)</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="comment">// Connect to changes</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    std::weak_ptr&lt;ExecNode&gt; weak_node = this-&gt;node_ptr;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordflow">if</span> constexpr(avnd::dynamic_ports_port&lt;Field&gt;)</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    {</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      <span class="keyword">using</span> port_type = avnd::dynamic_port_type&lt;Field&gt;;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      QObject::connect(</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;          inlet, &amp;Process::ControlInlet::valueChanged, this-&gt;parent,</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;          <a class="code" href="structoscr_1_1con__unvalidated__dynamic__port.html">con_unvalidated_dynamic_port&lt;Node, port_type, N, NField&gt;</a>{</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;              this-&gt;ctx, weak_node, param.ports[k], k});</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      this-&gt;update_controller(param, inlet);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    }</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    {</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      QObject::connect(</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;          inlet, &amp;Process::ControlInlet::valueChanged, this-&gt;parent,</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;          <a class="code" href="structoscr_1_1con__unvalidated.html">con_unvalidated&lt;Node, Field, N, NField&gt;</a>{this-&gt;ctx, weak_node, param});</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      this-&gt;update_controller(param, inlet);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    }</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  }</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;};</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node, avnd::soundfile_port Field, std::<span class="keywordtype">size_t</span> N, std::<span class="keywordtype">size_t</span> NField&gt;</div>
+<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="structoscr_1_1setup__control__for__exec_3_01_node_00_01_field_00_01_n_00_01_n_field_01_4.html">  169</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structoscr_1_1setup__control__for__exec.html">setup_control_for_exec</a>&lt;Node, Field, N, NField&gt;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    : <a class="code" href="structoscr_1_1setup__control__for__exec__base.html">setup_control_for_exec_base</a>&lt;Node, Field&gt;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;{</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keyword">using</span> ExecNode = safe_node&lt;Node&gt;;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keyword">using</span> <a class="code" href="classoscr_1_1_process_model.html">Model</a> = <a class="code" href="classoscr_1_1_process_model.html">ProcessModel&lt;Node&gt;</a>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="keywordtype">void</span> initialize_control(Field&amp; param, <a class="code" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a>* inlet, <span class="keywordtype">int</span> k)</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  {</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="comment">// FIXME handle dynamic ports correctly</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="comment">// First we can load it directly since execution hasn&#39;t started yet</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordflow">if</span>(<span class="keyword">auto</span> hdl = loadSoundfile(inlet-&gt;value(), this-&gt;ctx.doc, this-&gt;ctx.execState))</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      this-&gt;node_ptr-&gt;soundfile_loaded(</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;          hdl, avnd::predicate_index&lt;N&gt;{}, avnd::field_index&lt;NField&gt;{});</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  }</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="keywordtype">void</span> connect_control_to_ui(Field&amp; param, <a class="code" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a>* inlet, <span class="keywordtype">int</span> k)</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  {</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="comment">// Connect to changes</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    std::weak_ptr&lt;ExecNode&gt; weak_node = this-&gt;node_ptr;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    std::weak_ptr&lt;ossia::execution_state&gt; weak_st = this-&gt;ctx.execState;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    QObject::connect(</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        inlet, &amp;Process::ControlInlet::valueChanged, this-&gt;parent,</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        [&amp;ctx = this-&gt;ctx, weak_node = std::move(weak_node),</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;         weak_st = std::move(weak_st)](<span class="keyword">const</span> ossia::value&amp; v) {</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">auto</span> n = weak_node.lock())</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordflow">if</span>(<span class="keyword">auto</span> st = weak_st.lock())</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;          <span class="keywordflow">if</span>(<span class="keyword">auto</span> file = loadSoundfile(v, ctx.doc, st))</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;          {</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            ctx.executionQueue.enqueue([f = std::move(file), weak_node]() mutable {</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;              auto n = weak_node.lock();</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;              if(!n)</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                return;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;              <span class="comment">// We store the sound file handle returned in this lambda so that it gets</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;              <span class="comment">// GC&#39;d in the main thread</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;              n-&gt;soundfile_loaded(</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                  f, avnd::predicate_index&lt;N&gt;{}, avnd::field_index&lt;NField&gt;{});</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            });</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;          }</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    });</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  }</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;};</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node, avnd::m<span class="keywordtype">id</span>ifile_port Field, std::<span class="keywordtype">size_t</span> N, std::<span class="keywordtype">size_t</span> NField&gt;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="keyword">struct </span>setup_control_for_exec&lt;Node, Field, N, NField&gt;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    : setup_control_for_exec_base&lt;Node, Field&gt;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;{</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="keyword">using</span> ExecNode = safe_node&lt;Node&gt;;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <span class="keyword">using</span> Model = ProcessModel&lt;Node&gt;;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="keywordtype">void</span> initialize_control(Field&amp; param, <a class="code" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a>* inlet, <span class="keywordtype">int</span> k)</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  {</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="comment">// FIXME handle dynamic ports correctly</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="comment">// First we can load it directly since execution hasn&#39;t started yet</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordflow">if</span>(<span class="keyword">auto</span> hdl = loadMidifile(inlet-&gt;value(), this-&gt;ctx.doc))</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;      this-&gt;node_ptr-&gt;midifile_loaded(</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;          hdl, avnd::predicate_index&lt;N&gt;{}, avnd::field_index&lt;NField&gt;{});</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  }</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <span class="keywordtype">void</span> connect_control_to_ui(Field&amp; param, <a class="code" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a>* inlet, <span class="keywordtype">int</span> k)</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  {</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="comment">// Connect to changes</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    std::weak_ptr&lt;ExecNode&gt; weak_node = this-&gt;node_ptr;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    std::weak_ptr&lt;ossia::execution_state&gt; weak_st = this-&gt;ctx.execState;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    QObject::connect(</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        inlet, &amp;Process::ControlInlet::valueChanged, this-&gt;parent,</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        [inlet, &amp;ctx = this-&gt;ctx,</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;         weak_node = std::move(weak_node)](<span class="keyword">const</span> ossia::value&amp; v) {</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">auto</span> n = weak_node.lock())</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="keywordflow">if</span>(<span class="keyword">auto</span> file = loadMidifile(v, ctx.doc))</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        {</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;          ctx.executionQueue.enqueue([f = std::move(file), weak_node]() mutable {</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            auto n = weak_node.lock();</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            if(!n)</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;              return;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            <span class="comment">// We store the sound file handle returned in this lambda so that it gets</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            <span class="comment">// GC&#39;d in the main thread</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            n-&gt;midifile_loaded(</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                f, avnd::predicate_index&lt;N&gt;{}, avnd::field_index&lt;NField&gt;{});</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;          });</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        }</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    });</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  }</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;};</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node, avnd::raw_file_port Field, std::<span class="keywordtype">size_t</span> N, std::<span class="keywordtype">size_t</span> NField&gt;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="keyword">struct </span>setup_control_for_exec&lt;<a class="code" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Node</a>, Field, N, NField&gt;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    : setup_control_for_exec_base&lt;Node, Field&gt;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;{</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  <span class="keyword">using</span> ExecNode = safe_node&lt;Node&gt;;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  <span class="keyword">using</span> Model = ProcessModel&lt;Node&gt;;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> has_text = requires { decltype(Field::file)::text; };</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> has_mmap = requires { decltype(Field::file)::mmap; };</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  <span class="keywordtype">void</span> initialize_control(Field&amp; param, <a class="code" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a>* inlet, <span class="keywordtype">int</span> k)</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  {</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="comment">// FIXME handle dynamic ports correctly</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="comment">// First we can load it directly since execution hasn&#39;t started yet</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordflow">if</span>(<span class="keyword">auto</span> hdl = loadRawfile(inlet-&gt;value(), this-&gt;ctx.doc, has_text, has_mmap))</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    {</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      <span class="keywordflow">if</span> constexpr(avnd::port_can_process&lt;Field&gt;)</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;      {</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="comment">// FIXME also do it when we get a run-time message from the exec engine,</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        <span class="comment">// OSC, etc</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <span class="keyword">auto</span> func = executePortPreprocess&lt;Field&gt;(*hdl);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        this-&gt;node_ptr-&gt;file_loaded(</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            hdl, avnd::predicate_index&lt;N&gt;{}, avnd::field_index&lt;NField&gt;{});</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <span class="keywordflow">if</span>(func)</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;          func(this-&gt;node_ptr-&gt;impl.effect);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;      }</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;      {</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        this-&gt;node_ptr-&gt;file_loaded(</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;            hdl, avnd::predicate_index&lt;N&gt;{}, avnd::field_index&lt;NField&gt;{});</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;      }</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    }</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  }</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  <span class="keywordtype">void</span> connect_control_to_ui(Field&amp; param, <a class="code" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a>* inlet, <span class="keywordtype">int</span> k)</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  {</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="comment">// Connect to changes</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    std::weak_ptr&lt;ExecNode&gt; weak_node = this-&gt;node_ptr;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    std::weak_ptr&lt;ossia::execution_state&gt; weak_st = this-&gt;ctx.execState;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    QObject::connect(</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        inlet, &amp;Process::ControlInlet::valueChanged, this-&gt;parent,</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        [inlet, &amp;ctx = this-&gt;ctx, weak_node = std::move(weak_node)] {</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">auto</span> n = weak_node.lock())</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        <span class="keywordflow">if</span>(<span class="keyword">auto</span> file = loadRawfile(inlet-&gt;value(), ctx.doc, has_text, has_mmap))</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        {</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;          if constexpr(avnd::port_can_process&lt;Field&gt;)</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;          {</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;            auto func = executePortPreprocess&lt;Field&gt;(*file);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;            ctx.executionQueue.enqueue(</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                [f = std::move(file), weak_node, ff = std::move(func)]() mutable {</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;              auto n = weak_node.lock();</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;              if(!n)</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                return;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;              <span class="comment">// We store the sound file handle returned in this lambda so that it gets</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;              <span class="comment">// GC&#39;d in the main thread</span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;              n-&gt;file_loaded(f, avnd::predicate_index&lt;N&gt;{}, avnd::field_index&lt;NField&gt;{});</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;              if(ff)</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                ff(n-&gt;impl.effect);</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;            });</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;          }</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;          <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;          {</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            ctx.executionQueue.enqueue([f = std::move(file), weak_node]() mutable {</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;              auto n = weak_node.lock();</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;              if(!n)</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                return;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160; </div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;              <span class="comment">// We store the sound file handle returned in this lambda so that it gets</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;              <span class="comment">// GC&#39;d in the main thread</span></div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;              n-&gt;file_loaded(f, avnd::predicate_index&lt;N&gt;{}, avnd::field_index&lt;NField&gt;{});</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            });</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;          }</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        }</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    });</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  }</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;};</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160; </div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node&gt;</div>
+<div class="line"><a name="l00336"></a><span class="lineno"><a class="line" href="structoscr_1_1dispatch__control__setup.html">  336</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structoscr_1_1dispatch__control__setup.html">dispatch_control_setup</a></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;{</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;  <span class="keyword">using</span> ExecNode = safe_node&lt;Node&gt;;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;  <span class="keyword">using</span> <a class="code" href="classoscr_1_1_process_model.html">Model</a> = <a class="code" href="classoscr_1_1_process_model.html">ProcessModel&lt;Node&gt;</a>;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160; </div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;  <a class="code" href="classoscr_1_1_process_model.html">Model</a>&amp; element;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;  <span class="keyword">const</span> std::shared_ptr&lt;ExecNode&gt;&amp; node_ptr;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;  QObject* parent;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160; </div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  <span class="comment">// Main function being invoked, which dispatches to all the actual implementations</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Field, std::<span class="keywordtype">size_t</span> N, std::<span class="keywordtype">size_t</span> NField&gt;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  constexpr <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;  operator()(Field&amp; param, avnd::predicate_index&lt;N&gt; np, avnd::field_index&lt;NField&gt; nf)</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  {</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> ports = element.avnd_input_idx_to_model_ports(NField);</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160; </div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="keywordflow">if</span> constexpr(avnd::dynamic_ports_port&lt;Field&gt;)</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    {</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;      param.ports.resize(ports.size());</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    }</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keywordtype">int</span> k = 0;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> p : ports)</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    {</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">auto</span> inlet = qobject_cast&lt;Process::ControlInlet*&gt;(p))</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;      {</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        <a class="code" href="structoscr_1_1setup__control__for__exec_3_01_node_00_01_field_00_01_n_00_01_n_field_01_4.html">setup_control_for_exec&lt;Node, Field, N, NField&gt;</a> setup{</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;            element, ctx, node_ptr, parent};</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160; </div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        setup.initialize_control(param, inlet, k);</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160; </div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        setup.invoke_update(param);</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        setup.connect_control_to_ui(param, inlet, k);</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;      }</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;      k++;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    }</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <span class="comment">// Else it&#39;s an unhandled value inlet</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;  }</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;};</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;}</div>
 <div class="ttc" id="aclass_process_1_1_control_inlet_html"><div class="ttname"><a href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></div><div class="ttdef"><b>Definition:</b> Port.hpp:203</div></div>
 <div class="ttc" id="aclassoscr_1_1_process_model_html"><div class="ttname"><a href="classoscr_1_1_process_model.html">oscr::ProcessModel</a></div><div class="ttdef"><b>Definition:</b> score-plugin-avnd/Crousti/ProcessModel.hpp:73</div></div>
 <div class="ttc" id="anamespace_device_html_a5f5b5ed941f74703051e858d8733d0fc"><div class="ttname"><a href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a></div><div class="ttdeci">TreeNode&lt; DeviceExplorerNode &gt; Node</div><div class="ttdef"><b>Definition:</b> DeviceNode.hpp:74</div></div>
 <div class="ttc" id="anamespaceoscr_html"><div class="ttname"><a href="namespaceoscr.html">oscr</a></div><div class="ttdef"><b>Definition:</b> Factories.hpp:19</div></div>
 <div class="ttc" id="astruct_execution_1_1_context_html"><div class="ttname"><a href="struct_execution_1_1_context.html">Execution::Context</a></div><div class="ttdef"><b>Definition:</b> ExecutionContext.hpp:76</div></div>
 <div class="ttc" id="astruct_execution_1_1_context_html_a1a0fd8f494c0a427dc09b7da3e94bf36"><div class="ttname"><a href="struct_execution_1_1_context.html#a1a0fd8f494c0a427dc09b7da3e94bf36">Execution::Context::executionQueue</a></div><div class="ttdeci">ExecutionCommandQueue &amp; executionQueue</div><div class="ttdef"><b>Definition:</b> ExecutionContext.hpp:91</div></div>
-<div class="ttc" id="astructoscr_1_1con__unvalidated__dynamic__port_html"><div class="ttname"><a href="structoscr_1_1con__unvalidated__dynamic__port.html">oscr::con_unvalidated_dynamic_port</a></div><div class="ttdef"><b>Definition:</b> ExecutorPortSetup.hpp:38</div></div>
-<div class="ttc" id="astructoscr_1_1con__unvalidated_html"><div class="ttname"><a href="structoscr_1_1con__unvalidated.html">oscr::con_unvalidated</a></div><div class="ttdef"><b>Definition:</b> ExecutorPortSetup.hpp:13</div></div>
-<div class="ttc" id="astructoscr_1_1dispatch__control__setup_html"><div class="ttname"><a href="structoscr_1_1dispatch__control__setup.html">oscr::dispatch_control_setup</a></div><div class="ttdef"><b>Definition:</b> ExecutorPortSetup.hpp:336</div></div>
-<div class="ttc" id="astructoscr_1_1setup__control__for__exec_3_01_node_00_01_field_00_01_n_00_01_n_field_01_4_html"><div class="ttname"><a href="structoscr_1_1setup__control__for__exec_3_01_node_00_01_field_00_01_n_00_01_n_field_01_4.html">oscr::setup_control_for_exec&lt; Node, Field, N, NField &gt;</a></div><div class="ttdef"><b>Definition:</b> ExecutorPortSetup.hpp:170</div></div>
-<div class="ttc" id="astructoscr_1_1setup__control__for__exec__base_html"><div class="ttname"><a href="structoscr_1_1setup__control__for__exec__base.html">oscr::setup_control_for_exec_base</a></div><div class="ttdef"><b>Definition:</b> ExecutorPortSetup.hpp:66</div></div>
-<div class="ttc" id="astructoscr_1_1setup__control__for__exec_html"><div class="ttname"><a href="structoscr_1_1setup__control__for__exec.html">oscr::setup_control_for_exec</a></div><div class="ttdef"><b>Definition:</b> ExecutorPortSetup.hpp:92</div></div>
+<div class="ttc" id="astructoscr_1_1con__unvalidated__dynamic__port_html"><div class="ttname"><a href="structoscr_1_1con__unvalidated__dynamic__port.html">oscr::con_unvalidated_dynamic_port</a></div><div class="ttdef"><b>Definition:</b> ExecutorPortSetup.hpp:39</div></div>
+<div class="ttc" id="astructoscr_1_1con__unvalidated_html"><div class="ttname"><a href="structoscr_1_1con__unvalidated.html">oscr::con_unvalidated</a></div><div class="ttdef"><b>Definition:</b> ExecutorPortSetup.hpp:14</div></div>
+<div class="ttc" id="astructoscr_1_1dispatch__control__setup_html"><div class="ttname"><a href="structoscr_1_1dispatch__control__setup.html">oscr::dispatch_control_setup</a></div><div class="ttdef"><b>Definition:</b> ExecutorPortSetup.hpp:337</div></div>
+<div class="ttc" id="astructoscr_1_1setup__control__for__exec_3_01_node_00_01_field_00_01_n_00_01_n_field_01_4_html"><div class="ttname"><a href="structoscr_1_1setup__control__for__exec_3_01_node_00_01_field_00_01_n_00_01_n_field_01_4.html">oscr::setup_control_for_exec&lt; Node, Field, N, NField &gt;</a></div><div class="ttdef"><b>Definition:</b> ExecutorPortSetup.hpp:171</div></div>
+<div class="ttc" id="astructoscr_1_1setup__control__for__exec__base_html"><div class="ttname"><a href="structoscr_1_1setup__control__for__exec__base.html">oscr::setup_control_for_exec_base</a></div><div class="ttdef"><b>Definition:</b> ExecutorPortSetup.hpp:67</div></div>
+<div class="ttc" id="astructoscr_1_1setup__control__for__exec_html"><div class="ttname"><a href="structoscr_1_1setup__control__for__exec.html">oscr::setup_control_for_exec</a></div><div class="ttdef"><b>Definition:</b> ExecutorPortSetup.hpp:93</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
