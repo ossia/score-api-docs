@@ -243,7 +243,7 @@ $(document).ready(function(){initNavTree('_process_model_port_init_8hpp_source.h
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> constexpr(requires { P::extensions(); })</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    {</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;      <span class="keyword">static</span> constexpr <span class="keyword">auto</span> text_filters = P::extensions();</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;      <span class="keywordflow">return</span> fromStringView(P::extensions());</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;      <span class="keywordflow">return</span> fromStringView(text_filters);</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    }</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    {</div>
