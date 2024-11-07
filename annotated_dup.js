@@ -253,6 +253,9 @@ var annotated_dup =
       [ "DeviceModelProviderList", "class_device_1_1_device_model_provider_list.html", "class_device_1_1_device_model_provider_list" ],
       [ "DeviceList", "class_device_1_1_device_list.html", "class_device_1_1_device_list" ]
     ] ],
+    [ "doj", null, [
+      [ "alphanum_compare", "structdoj_1_1alphanum__compare.html", "structdoj_1_1alphanum__compare" ]
+    ] ],
     [ "Engine", "namespace_engine.html", [
       [ "score_to_ossia", null, [
         [ "CurveTraits", "struct_engine_1_1score__to__ossia_1_1_curve_traits.html", null ],

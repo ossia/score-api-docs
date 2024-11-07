@@ -8,7 +8,7 @@ var structavnd__tools_1_1_device_recorder =
     [ "reset_message", "structavnd__tools_1_1_device_recorder_1_1reset__message.html", "structavnd__tools_1_1_device_recorder_1_1reset__message" ],
     [ "reset_path_message", "structavnd__tools_1_1_device_recorder_1_1reset__path__message.html", "structavnd__tools_1_1_device_recorder_1_1reset__path__message" ],
     [ "tick", "structavnd__tools_1_1_device_recorder.html#a8fd03d05d034b509e8f4a9e57cd128f6", null ],
-    [ "worker_message", "structavnd__tools_1_1_device_recorder.html#ae2ba492dbb732c21091256050795a8d5", null ],
+    [ "worker_message", "structavnd__tools_1_1_device_recorder.html#a6f1f7591af573da224db866e781d0412", null ],
     [ "halp_meta", "structavnd__tools_1_1_device_recorder.html#aa4e8ed44c9576ed35d383be0084f7bb7", null ],
     [ "halp_meta", "structavnd__tools_1_1_device_recorder.html#a63431ca36c0eee40c19a0e2bcb1c3fb1", null ],
     [ "halp_meta", "structavnd__tools_1_1_device_recorder.html#a7212a56b662899b2f3e410808bc13bb8", null ],

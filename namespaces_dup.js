@@ -185,6 +185,9 @@ var namespaces_dup =
       [ "unstripCables", "_cable_helpers_8cpp.html#a9512318818955e72f60a901a6eaa7396", null ]
     ] ],
     [ "Device", "namespace_device.html", "namespace_device" ],
+    [ "doj", null, [
+      [ "alphanum_compare", "structdoj_1_1alphanum__compare.html", "structdoj_1_1alphanum__compare" ]
+    ] ],
     [ "Engine", "namespace_engine.html", "namespace_engine" ],
     [ "Execution", "namespace_execution.html", "namespace_execution" ],
     [ "Explorer", null, [

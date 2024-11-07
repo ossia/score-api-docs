@@ -35,6 +35,7 @@ var hierarchy =
     ] ],
     [ "Explorer::AddressSettingsFactory", "class_explorer_1_1_address_settings_factory.html", null ],
     [ "Scenario::IntervalDurations::Algorithms", "class_scenario_1_1_interval_durations_1_1_algorithms.html", null ],
+    [ "doj::alphanum_compare", "structdoj_1_1alphanum__compare.html", null ],
     [ "score::any_serializer", "structscore_1_1any__serializer.html", [
       [ "score::any_serializer_t< T >", "structscore_1_1any__serializer__t.html", null ]
     ] ],
@@ -3657,6 +3658,9 @@ var hierarchy =
     [ "HierarchicalScenarioComponent< Component_T, Scenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T, HasOwnership >::TimeSyncPair", "struct_hierarchical_scenario_component_1_1_time_sync_pair.html", null ],
     [ "Scenario::MusicalGrid::timings", "struct_scenario_1_1_musical_grid_1_1timings.html", null ],
     [ "score::gfx::Timings", "structscore_1_1gfx_1_1_timings.html", null ],
+    [ "halp::toggle", null, [
+      [ "avnd_tools::DeviceRecorder::inputs_t::ts", "structavnd__tools_1_1_device_recorder_1_1inputs__t_1_1ts.html", null ]
+    ] ],
     [ "WidgetFactory::Toggle", "struct_widget_factory_1_1_toggle.html", null ],
     [ "JS::TokenRequestValueType", "struct_j_s_1_1_token_request_value_type.html", null ],
     [ "score::Toolbar", "classscore_1_1_toolbar.html", null ],
