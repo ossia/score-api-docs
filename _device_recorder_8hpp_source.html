@@ -981,8 +981,8 @@ $(document).ready(function(){initNavTree('_device_recorder_8hpp_source.html','')
 <div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;    <span class="keywordflow">if</span>(!std::exchange(started, <span class="keyword">true</span>))</div>
 <div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;    {</div>
 <div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;      inputs.pattern.reprocess();</div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;      worker.request(std::make_unique&lt;reset_message&gt;(</div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;          record_impl, play_impl, inputs.filename, roots, inputs.timestamped));</div>
+<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;      worker.request(std::unique_ptr&lt;reset_message&gt;(<span class="keyword">new</span> reset_message{</div>
+<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;          record_impl, play_impl, inputs.filename, roots, inputs.timestamped}));</div>
 <div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;    }</div>
 <div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160; </div>
 <div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;    <span class="keywordflow">switch</span>(inputs.mode)</div>
