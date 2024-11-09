@@ -137,13 +137,12 @@ $(document).ready(function(){initNavTree('_o_s_c_query_device_8hpp_source.html',
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">void</span> slot_createDevice();</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  W_SLOT(slot_createDevice);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">using</span> mirror_proto = ossia::oscquery_asio::oscquery_mirror_asio_protocol;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  mirror_proto* m_mirror{};</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">bool</span> m_connected{};</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> m_oldSettings;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">const</span> ossia::net::network_context_ptr&amp; m_ctx;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  ossia::net::protocol_base* m_mirror{};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">bool</span> m_connected{};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> m_oldSettings;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">const</span> ossia::net::network_context_ptr&amp; m_ctx;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
 <div class="ttc" id="aclass_device_1_1_owning_device_interface_html"><div class="ttname"><a href="class_device_1_1_owning_device_interface.html">Device::OwningDeviceInterface</a></div><div class="ttdef"><b>Definition:</b> DeviceInterface.hpp:185</div></div>
 <div class="ttc" id="aclass_protocols_1_1_o_s_c_query_device_html"><div class="ttname"><a href="class_protocols_1_1_o_s_c_query_device.html">Protocols::OSCQueryDevice</a></div><div class="ttdef"><b>Definition:</b> OSCQueryDevice.hpp:15</div></div>
 <div class="ttc" id="aclass_tree_node_html"><div class="ttname"><a href="class_tree_node.html">TreeNode&lt; DeviceExplorerNode &gt;</a></div></div>

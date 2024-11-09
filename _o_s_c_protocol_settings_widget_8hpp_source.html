@@ -117,75 +117,80 @@ $(document).ready(function(){initNavTree('_o_s_c_protocol_settings_widget_8hpp_s
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span>UDPWidget;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span>TCPWidget;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span>UnixDatagramWidget;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">class </span>UnixStreamWidget;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">class </span>SerialWidget;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">class </span>WebsocketClientWidget;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">class </span>WebsocketServerWidget;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">class </span>RateWidget;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">enum class</span> OscProtocol</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  UDP = 0,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  TCP = 1,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  Serial = 2,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  UnixDatagram = 3,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  UnixStream = 4,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  WSClient = 5,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  WSServer = 6</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_protocols_1_1_o_s_c_transport_widget.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_protocols_1_1_o_s_c_transport_widget.html">OSCTransportWidget</a> : <span class="keyword">public</span> QWidget</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_protocols_1_1_o_s_c_transport_widget.html">OSCTransportWidget</a>(</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <a class="code" href="class_device_1_1_protocol_settings_widget.html">Device::ProtocolSettingsWidget</a>&amp; proto, QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> setCurrentProtocol(OscProtocol index);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  ossia::net::osc_protocol_configuration configuration(OscProtocol index) <span class="keyword">const</span> noexcept;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  OscProtocol setConfiguration(<span class="keyword">const</span> ossia::net::osc_protocol_configuration&amp; conf);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  QStackedLayout* m_transportLayout{};</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="class_protocols_1_1_u_d_p_widget.html">UDPWidget</a>* m_udp{};</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="class_protocols_1_1_t_c_p_widget.html">TCPWidget</a>* m_tcp{};</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="class_protocols_1_1_serial_widget.html">SerialWidget</a>* m_serial{};</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="class_protocols_1_1_unix_datagram_widget.html">UnixDatagramWidget</a>* m_unix_dgram{};</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="class_protocols_1_1_unix_stream_widget.html">UnixStreamWidget</a>* m_unix_stream{};</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="class_protocols_1_1_websocket_client_widget.html">WebsocketClientWidget</a>* m_ws_client{};</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="class_protocols_1_1_websocket_server_widget.html">WebsocketServerWidget</a>* m_ws_server{};</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_protocols_1_1_o_s_c_protocol_settings_widget.html">   61</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_protocols_1_1_o_s_c_protocol_settings_widget.html">OSCProtocolSettingsWidget</a> final : <span class="keyword">public</span> <a class="code" href="class_device_1_1_protocol_settings_widget.html">Device::ProtocolSettingsWidget</a></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_protocols_1_1_o_s_c_protocol_settings_widget.html">OSCProtocolSettingsWidget</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> getSettings() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="class_tree_node.html">Device::Node</a> getDevice() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> setSettings(<span class="keyword">const</span> <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; settings) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">using</span> Device::ProtocolSettingsWidget::checkForChanges;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> setDefaults();</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  QLineEdit* m_deviceNameEdit{};</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <a class="code" href="class_protocols_1_1_rate_widget.html">RateWidget</a>* m_rate{};</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  QCheckBox* m_bonjour{};</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  QComboBox* m_transport{};</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  QComboBox* m_oscVersion{};</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="class_protocols_1_1_o_s_c_transport_widget.html">OSCTransportWidget</a>* m_transportWidget{};</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="struct_protocols_1_1_o_s_c_specific_settings.html">OSCSpecificSettings</a> m_settings;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span>TCPServerWidget;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">class </span>UnixDatagramWidget;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">class </span>UnixStreamWidget;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">class </span>SerialWidget;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">class </span>WebsocketClientWidget;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">class </span>WebsocketServerWidget;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">class </span>RateWidget;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">enum class</span> OscProtocol</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  UDP = 0,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  TCP = 1,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  Serial = 2,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  UnixDatagram = 3,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  UnixStream = 4,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  WSClient = 5,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  WSServer = 6,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  TCPServer = 7</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_protocols_1_1_o_s_c_transport_widget.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_protocols_1_1_o_s_c_transport_widget.html">OSCTransportWidget</a> : <span class="keyword">public</span> QWidget</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_protocols_1_1_o_s_c_transport_widget.html">OSCTransportWidget</a>(</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <a class="code" href="class_device_1_1_protocol_settings_widget.html">Device::ProtocolSettingsWidget</a>&amp; proto, QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">void</span> setCurrentProtocol(OscProtocol index);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  ossia::net::osc_protocol_configuration configuration(OscProtocol index) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  OscProtocol setConfiguration(<span class="keyword">const</span> ossia::net::osc_protocol_configuration&amp; conf);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  QStackedLayout* m_transportLayout{};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="class_protocols_1_1_u_d_p_widget.html">UDPWidget</a>* m_udp{};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="class_protocols_1_1_t_c_p_widget.html">TCPWidget</a>* m_tcp{};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="class_protocols_1_1_t_c_p_server_widget.html">TCPServerWidget</a>* m_tcp_server{};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="class_protocols_1_1_serial_widget.html">SerialWidget</a>* m_serial{};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="class_protocols_1_1_unix_datagram_widget.html">UnixDatagramWidget</a>* m_unix_dgram{};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="class_protocols_1_1_unix_stream_widget.html">UnixStreamWidget</a>* m_unix_stream{};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="class_protocols_1_1_websocket_client_widget.html">WebsocketClientWidget</a>* m_ws_client{};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="class_protocols_1_1_websocket_server_widget.html">WebsocketServerWidget</a>* m_ws_server{};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_protocols_1_1_o_s_c_protocol_settings_widget.html">   64</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_protocols_1_1_o_s_c_protocol_settings_widget.html">OSCProtocolSettingsWidget</a> final : <span class="keyword">public</span> <a class="code" href="class_device_1_1_protocol_settings_widget.html">Device::ProtocolSettingsWidget</a></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_protocols_1_1_o_s_c_protocol_settings_widget.html">OSCProtocolSettingsWidget</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> getSettings() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="class_tree_node.html">Device::Node</a> getDevice() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">void</span> setSettings(<span class="keyword">const</span> <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; settings) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">using</span> Device::ProtocolSettingsWidget::checkForChanges;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">void</span> setDefaults();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  QLineEdit* m_deviceNameEdit{};</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="class_protocols_1_1_rate_widget.html">RateWidget</a>* m_rate{};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  QCheckBox* m_bonjour{};</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  QComboBox* m_transport{};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  QComboBox* m_oscVersion{};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  QSpinBox* m_oscquery{};</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="class_protocols_1_1_o_s_c_transport_widget.html">OSCTransportWidget</a>* m_transportWidget{};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="struct_protocols_1_1_o_s_c_specific_settings.html">OSCSpecificSettings</a> m_settings;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
 <div class="ttc" id="aclass_device_1_1_protocol_settings_widget_html"><div class="ttname"><a href="class_device_1_1_protocol_settings_widget.html">Device::ProtocolSettingsWidget</a></div><div class="ttdef"><b>Definition:</b> ProtocolSettingsWidget.hpp:22</div></div>
-<div class="ttc" id="aclass_protocols_1_1_o_s_c_protocol_settings_widget_html"><div class="ttname"><a href="class_protocols_1_1_o_s_c_protocol_settings_widget.html">Protocols::OSCProtocolSettingsWidget</a></div><div class="ttdef"><b>Definition:</b> OSCProtocolSettingsWidget.hpp:62</div></div>
-<div class="ttc" id="aclass_protocols_1_1_o_s_c_transport_widget_html"><div class="ttname"><a href="class_protocols_1_1_o_s_c_transport_widget.html">Protocols::OSCTransportWidget</a></div><div class="ttdef"><b>Definition:</b> OSCProtocolSettingsWidget.hpp:40</div></div>
+<div class="ttc" id="aclass_protocols_1_1_o_s_c_protocol_settings_widget_html"><div class="ttname"><a href="class_protocols_1_1_o_s_c_protocol_settings_widget.html">Protocols::OSCProtocolSettingsWidget</a></div><div class="ttdef"><b>Definition:</b> OSCProtocolSettingsWidget.hpp:65</div></div>
+<div class="ttc" id="aclass_protocols_1_1_o_s_c_transport_widget_html"><div class="ttname"><a href="class_protocols_1_1_o_s_c_transport_widget.html">Protocols::OSCTransportWidget</a></div><div class="ttdef"><b>Definition:</b> OSCProtocolSettingsWidget.hpp:42</div></div>
 <div class="ttc" id="aclass_protocols_1_1_rate_widget_html"><div class="ttname"><a href="class_protocols_1_1_rate_widget.html">Protocols::RateWidget</a></div><div class="ttdef"><b>Definition:</b> RateWidget.hpp:15</div></div>
 <div class="ttc" id="aclass_protocols_1_1_serial_widget_html"><div class="ttname"><a href="class_protocols_1_1_serial_widget.html">Protocols::SerialWidget</a></div><div class="ttdef"><b>Definition:</b> SerialWidget.hpp:15</div></div>
-<div class="ttc" id="aclass_protocols_1_1_t_c_p_widget_html"><div class="ttname"><a href="class_protocols_1_1_t_c_p_widget.html">Protocols::TCPWidget</a></div><div class="ttdef"><b>Definition:</b> TCPWidget.hpp:61</div></div>
+<div class="ttc" id="aclass_protocols_1_1_t_c_p_server_widget_html"><div class="ttname"><a href="class_protocols_1_1_t_c_p_server_widget.html">Protocols::TCPServerWidget</a></div><div class="ttdef"><b>Definition:</b> TCPServerWidget.hpp:15</div></div>
+<div class="ttc" id="aclass_protocols_1_1_t_c_p_widget_html"><div class="ttname"><a href="class_protocols_1_1_t_c_p_widget.html">Protocols::TCPWidget</a></div><div class="ttdef"><b>Definition:</b> TCPWidget.hpp:62</div></div>
 <div class="ttc" id="aclass_protocols_1_1_u_d_p_widget_html"><div class="ttname"><a href="class_protocols_1_1_u_d_p_widget.html">Protocols::UDPWidget</a></div><div class="ttdef"><b>Definition:</b> UDPWidget.hpp:14</div></div>
 <div class="ttc" id="aclass_protocols_1_1_unix_datagram_widget_html"><div class="ttname"><a href="class_protocols_1_1_unix_datagram_widget.html">Protocols::UnixDatagramWidget</a></div><div class="ttdef"><b>Definition:</b> UnixDatagramWidget.hpp:12</div></div>
 <div class="ttc" id="aclass_protocols_1_1_unix_stream_widget_html"><div class="ttname"><a href="class_protocols_1_1_unix_stream_widget.html">Protocols::UnixStreamWidget</a></div><div class="ttdef"><b>Definition:</b> UnixStreamWidget.hpp:15</div></div>

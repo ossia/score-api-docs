@@ -158,9 +158,9 @@ $(document).ready(function(){initNavTree('_u_d_p_widget_8hpp_source.html',''); i
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  ossia::net::udp_configuration settings() <span class="keyword">const</span> noexcept</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    ossia::net::udp_configuration conf;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    conf.local = ossia::net::receive_socket_configuration{</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    conf.local = ossia::net::inbound_socket_configuration{</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="stringliteral">&quot;0.0.0.0&quot;</span>, (uint16_t)m_localPort-&gt;value()};</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    conf.remote = ossia::net::send_socket_configuration{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    conf.remote = ossia::net::outbound_socket_configuration{</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        m_host-&gt;text().toStdString(), (uint16_t)m_remotePort-&gt;value(),</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        m_broadcast-&gt;isChecked()};</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> conf;</div>

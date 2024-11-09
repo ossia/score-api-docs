@@ -157,6 +157,7 @@ var hierarchy =
     ] ],
     [ "score::RecursiveWatch::Callbacks", "structscore_1_1_recursive_watch_1_1_callbacks.html", null ],
     [ "Gfx::CameraSettings", "struct_gfx_1_1_camera_settings.html", null ],
+    [ "ossia::net::can_learn< T >", "classossia_1_1net_1_1can__learn.html", null ],
     [ "Scenario::CategorisedScenario", "struct_scenario_1_1_categorised_scenario.html", null ],
     [ "Scenario::CategorizedAddress", "struct_scenario_1_1_categorized_address.html", null ],
     [ "Scenario::CategorizedAddresses", "struct_scenario_1_1_categorized_addresses.html", null ],
@@ -536,6 +537,7 @@ var hierarchy =
     [ "Process::ControlLayout", "struct_process_1_1_control_layout.html", null ],
     [ "Process::ControlMessage", "struct_process_1_1_control_message.html", null ],
     [ "Process::ControlSetup< CreatePort, CreateControl, GetControlSize, GetName, GetFactory >", "struct_process_1_1_control_setup.html", null ],
+    [ "Protocols::convert_osc_transport_to_server", "struct_protocols_1_1convert__osc__transport__to__server.html", null ],
     [ "Scenario::CopiedCables", "struct_scenario_1_1_copied_cables.html", null ],
     [ "Scenario::CSPCoherencyCheckerInterface", "class_scenario_1_1_c_s_p_coherency_checker_interface.html", null ],
     [ "Scenario::CurveCreator", "struct_scenario_1_1_curve_creator.html", null ],
@@ -1042,8 +1044,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1916,6 +1918,7 @@ var hierarchy =
     [ "score::OpenDocumentsFile", "structscore_1_1_open_documents_file.html", null ],
     [ "OptionalSentinel", "struct_optional_sentinel.html", null ],
     [ "Execution::Settings::OrderingPolicies", "struct_execution_1_1_settings_1_1_ordering_policies.html", null ],
+    [ "Protocols::osc_protocols", "struct_protocols_1_1osc__protocols.html", null ],
     [ "Protocols::OSCCompatibleCheck", "struct_protocols_1_1_o_s_c_compatible_check.html", null ],
     [ "Protocols::OSCQuerySpecificSettings", "struct_protocols_1_1_o_s_c_query_specific_settings.html", null ],
     [ "Protocols::OSCSpecificSettings", "struct_protocols_1_1_o_s_c_specific_settings.html", null ],
@@ -1973,8 +1976,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model >", "class_path.html", null ],
+    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Patternist::ProcessModel >", "class_path.html", null ],
@@ -3303,6 +3306,7 @@ var hierarchy =
       [ "Protocols::OSCTransportWidget", "class_protocols_1_1_o_s_c_transport_widget.html", null ],
       [ "Protocols::RateWidget", "class_protocols_1_1_rate_widget.html", null ],
       [ "Protocols::SerialWidget", "class_protocols_1_1_serial_widget.html", null ],
+      [ "Protocols::TCPServerWidget", "class_protocols_1_1_t_c_p_server_widget.html", null ],
       [ "Protocols::TCPWidget", "class_protocols_1_1_t_c_p_widget.html", null ],
       [ "Protocols::UDPWidget", "class_protocols_1_1_u_d_p_widget.html", null ],
       [ "Protocols::UnixDatagramWidget", "class_protocols_1_1_unix_datagram_widget.html", null ],

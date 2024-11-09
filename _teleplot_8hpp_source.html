@@ -190,7 +190,7 @@ $(document).ready(function(){initNavTree('_teleplot_8hpp_source.html',''); initR
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <span class="keywordflow">if</span>(!ip.empty() &amp;&amp; port &gt; 1)</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      {</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        socket = std::make_shared&lt;ossia::net::udp_send_socket&gt;(</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            ossia::net::send_socket_configuration{{.host = ip, .port = port}},</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            ossia::net::outbound_socket_configuration{.host = ip, .port = port},</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            *io_context);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        socket-&gt;connect();</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      }</div>
@@ -299,7 +299,7 @@ $(document).ready(function(){initNavTree('_teleplot_8hpp_source.html',''); initR
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordflow">if</span>(!socket)</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    {</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;      socket = std::make_shared&lt;ossia::net::udp_send_socket&gt;(</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;          ossia::net::send_socket_configuration{{.host = <span class="stringliteral">&quot;127.0.0.1&quot;</span>, .port = 47269}},</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;          ossia::net::outbound_socket_configuration{.host = <span class="stringliteral">&quot;127.0.0.1&quot;</span>, .port = 47269},</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;          *io_context);</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;      socket-&gt;connect();</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    }</div>

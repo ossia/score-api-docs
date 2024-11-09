@@ -1073,6 +1073,9 @@ var annotated_dup =
       [ "MidiFileOctaver", "structoscr_1_1_midi_file_octaver.html", "structoscr_1_1_midi_file_octaver" ]
     ] ],
     [ "ossia", null, [
+      [ "net", null, [
+        [ "can_learn", "classossia_1_1net_1_1can__learn.html", null ]
+      ] ],
       [ "nodes", null, [
         [ "state_interpolation", "classossia_1_1nodes_1_1state__interpolation.html", "classossia_1_1nodes_1_1state__interpolation" ],
         [ "audio_metronome", "classossia_1_1nodes_1_1audio__metronome.html", "classossia_1_1nodes_1_1audio__metronome" ]
@@ -1299,6 +1302,7 @@ var annotated_dup =
       [ "MQTTProtocolSettingsWidget", "class_protocols_1_1_m_q_t_t_protocol_settings_widget.html", "class_protocols_1_1_m_q_t_t_protocol_settings_widget" ],
       [ "MQTTSpecificSettings", "struct_protocols_1_1_m_q_t_t_specific_settings.html", "struct_protocols_1_1_m_q_t_t_specific_settings" ],
       [ "SerialWidget", "class_protocols_1_1_serial_widget.html", "class_protocols_1_1_serial_widget" ],
+      [ "TCPServerWidget", "class_protocols_1_1_t_c_p_server_widget.html", "class_protocols_1_1_t_c_p_server_widget" ],
       [ "BasicTCPWidget", "class_protocols_1_1_basic_t_c_p_widget.html", "class_protocols_1_1_basic_t_c_p_widget" ],
       [ "TCPWidget", "class_protocols_1_1_t_c_p_widget.html", "class_protocols_1_1_t_c_p_widget" ],
       [ "UDPWidget", "class_protocols_1_1_u_d_p_widget.html", "class_protocols_1_1_u_d_p_widget" ],
@@ -1306,6 +1310,8 @@ var annotated_dup =
       [ "UnixStreamWidget", "class_protocols_1_1_unix_stream_widget.html", "class_protocols_1_1_unix_stream_widget" ],
       [ "WebsocketClientWidget", "class_protocols_1_1_websocket_client_widget.html", "class_protocols_1_1_websocket_client_widget" ],
       [ "WebsocketServerWidget", "class_protocols_1_1_websocket_server_widget.html", "class_protocols_1_1_websocket_server_widget" ],
+      [ "osc_protocols", "struct_protocols_1_1osc__protocols.html", "struct_protocols_1_1osc__protocols" ],
+      [ "convert_osc_transport_to_server", "struct_protocols_1_1convert__osc__transport__to__server.html", "struct_protocols_1_1convert__osc__transport__to__server" ],
       [ "OSCDevice", "class_protocols_1_1_o_s_c_device.html", "class_protocols_1_1_o_s_c_device" ],
       [ "OSCCompatibleCheck", "struct_protocols_1_1_o_s_c_compatible_check.html", "struct_protocols_1_1_o_s_c_compatible_check" ],
       [ "OSCTCPEnumerator", "class_protocols_1_1_o_s_c_t_c_p_enumerator.html", "class_protocols_1_1_o_s_c_t_c_p_enumerator" ],

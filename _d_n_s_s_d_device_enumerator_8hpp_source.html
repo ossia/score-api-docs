@@ -136,10 +136,11 @@ $(document).ready(function(){initNavTree('_d_n_s_s_d_device_enumerator_8hpp_sour
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="class_protocols_1_1_d_n_s_s_d_worker.html">DNSSDWorker</a>* m_worker{};</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  QThread m_workerThread;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="comment">// Avahi only supports being called from *one* thread across an entire execution.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">static</span> QThread g_dnssd_worker_thread;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 <div class="ttc" id="aclass_device_1_1_device_enumerator_html"><div class="ttname"><a href="class_device_1_1_device_enumerator.html">Device::DeviceEnumerator</a></div><div class="ttdef"><b>Definition:</b> ProtocolFactoryInterface.hpp:28</div></div>
 <div class="ttc" id="aclass_protocols_1_1_d_n_s_s_d_enumerator_html"><div class="ttname"><a href="class_protocols_1_1_d_n_s_s_d_enumerator.html">Protocols::DNSSDEnumerator</a></div><div class="ttdef"><b>Definition:</b> DNSSDDeviceEnumerator.hpp:20</div></div>
 <div class="ttc" id="aclass_protocols_1_1_d_n_s_s_d_worker_html"><div class="ttname"><a href="class_protocols_1_1_d_n_s_s_d_worker.html">Protocols::DNSSDWorker</a></div><div class="ttdef"><b>Definition:</b> DNSSDDeviceEnumerator.cpp:18</div></div>

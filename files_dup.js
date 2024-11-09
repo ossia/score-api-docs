@@ -1369,6 +1369,7 @@ var files_dup =
     [ "SyphonInput.hpp", "_syphon_input_8hpp_source.html", null ],
     [ "SyphonOutput.hpp", "_syphon_output_8hpp_source.html", null ],
     [ "SystemLibraryWidget.hpp", "_system_library_widget_8hpp_source.html", null ],
+    [ "TCPServerWidget.hpp", "_t_c_p_server_widget_8hpp_source.html", null ],
     [ "TCPWidget.hpp", "_t_c_p_widget_8hpp_source.html", null ],
     [ "Teleplot.hpp", "_teleplot_8hpp_source.html", null ],
     [ "Tempo.hpp", "_tempo_8hpp_source.html", null ],

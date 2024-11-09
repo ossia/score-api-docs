@@ -852,7 +852,9 @@ var namespaces_dup =
     [ "oscr", "namespaceoscr.html", "namespaceoscr" ],
     [ "ossia", null, [
       [ "net", null, [
-        [ "network_context_ptr", "_device_interface_8hpp.html#a5b6574bc8ac41b97bff79ef3739923b5", null ]
+        [ "can_learn", "classossia_1_1net_1_1can__learn.html", null ],
+        [ "network_context_ptr", "_device_interface_8hpp.html#a5b6574bc8ac41b97bff79ef3739923b5", null ],
+        [ "osc_protocol_base", "_o_s_c_device_8hpp.html#aacea58c8ab94a9838475a9053c73971e", null ]
       ] ],
       [ "nodes", null, [
         [ "state_interpolation", "classossia_1_1nodes_1_1state__interpolation.html", "classossia_1_1nodes_1_1state__interpolation" ],
@@ -1032,6 +1034,7 @@ var namespaces_dup =
       [ "MQTTProtocolSettingsWidget", "class_protocols_1_1_m_q_t_t_protocol_settings_widget.html", "class_protocols_1_1_m_q_t_t_protocol_settings_widget" ],
       [ "MQTTSpecificSettings", "struct_protocols_1_1_m_q_t_t_specific_settings.html", "struct_protocols_1_1_m_q_t_t_specific_settings" ],
       [ "SerialWidget", "class_protocols_1_1_serial_widget.html", "class_protocols_1_1_serial_widget" ],
+      [ "TCPServerWidget", "class_protocols_1_1_t_c_p_server_widget.html", "class_protocols_1_1_t_c_p_server_widget" ],
       [ "BasicTCPWidget", "class_protocols_1_1_basic_t_c_p_widget.html", "class_protocols_1_1_basic_t_c_p_widget" ],
       [ "TCPWidget", "class_protocols_1_1_t_c_p_widget.html", "class_protocols_1_1_t_c_p_widget" ],
       [ "UDPWidget", "class_protocols_1_1_u_d_p_widget.html", "class_protocols_1_1_u_d_p_widget" ],
@@ -1039,6 +1042,8 @@ var namespaces_dup =
       [ "UnixStreamWidget", "class_protocols_1_1_unix_stream_widget.html", "class_protocols_1_1_unix_stream_widget" ],
       [ "WebsocketClientWidget", "class_protocols_1_1_websocket_client_widget.html", "class_protocols_1_1_websocket_client_widget" ],
       [ "WebsocketServerWidget", "class_protocols_1_1_websocket_server_widget.html", "class_protocols_1_1_websocket_server_widget" ],
+      [ "osc_protocols", "struct_protocols_1_1osc__protocols.html", "struct_protocols_1_1osc__protocols" ],
+      [ "convert_osc_transport_to_server", "struct_protocols_1_1convert__osc__transport__to__server.html", "struct_protocols_1_1convert__osc__transport__to__server" ],
       [ "OSCDevice", "class_protocols_1_1_o_s_c_device.html", "class_protocols_1_1_o_s_c_device" ],
       [ "OSCCompatibleCheck", "struct_protocols_1_1_o_s_c_compatible_check.html", "struct_protocols_1_1_o_s_c_compatible_check" ],
       [ "OSCTCPEnumerator", "class_protocols_1_1_o_s_c_t_c_p_enumerator.html", "class_protocols_1_1_o_s_c_t_c_p_enumerator" ],
@@ -1088,9 +1093,11 @@ var namespaces_dup =
         [ "UnixDatagram", "_o_s_c_protocol_settings_widget_8hpp.html#a1e19812563413d85318de0ad7ffd7f6caa66cce6841251223c5bd10e4ad28bda9", null ],
         [ "UnixStream", "_o_s_c_protocol_settings_widget_8hpp.html#a1e19812563413d85318de0ad7ffd7f6caffa3fb6e4372aa28f67435722622a945", null ],
         [ "WSClient", "_o_s_c_protocol_settings_widget_8hpp.html#a1e19812563413d85318de0ad7ffd7f6ca01ab1656b05738d2205fcd154fde2e63", null ],
-        [ "WSServer", "_o_s_c_protocol_settings_widget_8hpp.html#a1e19812563413d85318de0ad7ffd7f6ca67537f6eae2a706449f9023a62849c05", null ]
+        [ "WSServer", "_o_s_c_protocol_settings_widget_8hpp.html#a1e19812563413d85318de0ad7ffd7f6ca67537f6eae2a706449f9023a62849c05", null ],
+        [ "TCPServer", "_o_s_c_protocol_settings_widget_8hpp.html#a1e19812563413d85318de0ad7ffd7f6ca1cd36bc4ed5d3d1831fe270a23b434f6", null ]
       ] ],
       [ "fixturesLibraryPaths", "_artnet_protocol_settings_widget_8cpp.html#ae99806a89cdff8cf5cca8c3982cc9be1", null ],
+      [ "make_osc_protocol", "_o_s_c_device_8cpp.html#a87c52b1245da8a926c2b76afd4255f02", null ],
       [ "readCoAPConfig", "_co_a_p_protocol_factory_8cpp.html#a68651b6baf8a63f3f579eb2bbbf5b6df", null ],
       [ "readManufacturers", "_artnet_protocol_settings_widget_8cpp.html#a7a5bcefe8d8e3ce435e3f08a74167af1", null ],
       [ "readMQTTConfig", "_m_q_t_t_protocol_factory_8cpp.html#a023d2480df76f4984ba0bdf4146a89c4", null ],
