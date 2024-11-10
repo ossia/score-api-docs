@@ -905,49 +905,44 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_process_
 <div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;    Process::writePorts(</div>
 <div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;        s, s.components.interfaces&lt;<a class="code" href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a>&gt;(), obj.m_inlets,</div>
 <div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;        obj.m_outlets, &amp;obj);</div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;    qDebug() &lt;&lt; <span class="stringliteral">&quot;After deserialization&quot;</span> &lt;&lt; obj.inlets().size();</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;    qDebug() &lt;&lt; <span class="stringliteral">&quot;After deserialization 0: &quot;</span></div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;             &lt;&lt; ossia::value_to_pretty_string(</div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;                    ((<a class="code" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a>*)obj.inlets()[0])-&gt;value());</div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;    <span class="keywordflow">if</span> constexpr(avnd::dynamic_ports_input_introspection&lt;Info&gt;::size &gt; 0)</div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;    {</div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">auto</span> val = s.obj.tryGet(<span class="stringliteral">&quot;DynamicInlets&quot;</span>))</div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;      {</div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;        ossia::string_map&lt;int&gt; indices;</div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;        indices &lt;&lt;= *val;</div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;        avnd::dynamic_ports_input_introspection&lt;Info&gt;::for_all(</div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;            [&amp;obj, &amp;indices]&lt;std::size_t Idx, <span class="keyword">typename</span> P&gt;(</div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;                avnd::field_reflection&lt;Idx, P&gt; field) {</div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;          <span class="keywordflow">if</span> constexpr(avnd::dynamic_ports_port&lt;P&gt;)</div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;            obj.dynamic_ports.num_in_ports(avnd::field_index&lt;Idx&gt;{})</div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;                = indices[avnd::get_c_identifier&lt;P&gt;()];</div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;        });</div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;      }</div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;    }</div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;    <span class="keywordflow">if</span> constexpr(avnd::dynamic_ports_output_introspection&lt;Info&gt;::size &gt; 0)</div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;    {</div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">auto</span> val = s.obj.tryGet(<span class="stringliteral">&quot;DynamicOutlets&quot;</span>))</div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;      {</div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;        ossia::string_map&lt;int&gt; indices;</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;        indices &lt;&lt;= *val;</div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;        avnd::dynamic_ports_output_introspection&lt;Info&gt;::for_all(</div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;            [&amp;obj, &amp;indices]&lt;std::size_t Idx, <span class="keyword">typename</span> P&gt;(</div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;                avnd::field_reflection&lt;Idx, P&gt; field) {</div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;          <span class="keywordflow">if</span> constexpr(avnd::dynamic_ports_port&lt;P&gt;)</div>
-<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;            obj.dynamic_ports.num_out_ports(avnd::field_index&lt;Idx&gt;{})</div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;                = indices[avnd::get_c_identifier&lt;P&gt;()];</div>
-<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;        });</div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;      }</div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;    }</div>
-<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;  }</div>
-<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;};</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;    <span class="keywordflow">if</span> constexpr(avnd::dynamic_ports_input_introspection&lt;Info&gt;::size &gt; 0)</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;    {</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">auto</span> val = s.obj.tryGet(<span class="stringliteral">&quot;DynamicInlets&quot;</span>))</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;      {</div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;        ossia::string_map&lt;int&gt; indices;</div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;        indices &lt;&lt;= *val;</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;        avnd::dynamic_ports_input_introspection&lt;Info&gt;::for_all(</div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;            [&amp;obj, &amp;indices]&lt;std::size_t Idx, <span class="keyword">typename</span> P&gt;(</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;                avnd::field_reflection&lt;Idx, P&gt; field) {</div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;          <span class="keywordflow">if</span> constexpr(avnd::dynamic_ports_port&lt;P&gt;)</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;            obj.dynamic_ports.num_in_ports(avnd::field_index&lt;Idx&gt;{})</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;                = indices[avnd::get_c_identifier&lt;P&gt;()];</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;        });</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;      }</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;    }</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;    <span class="keywordflow">if</span> constexpr(avnd::dynamic_ports_output_introspection&lt;Info&gt;::size &gt; 0)</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;    {</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">auto</span> val = s.obj.tryGet(<span class="stringliteral">&quot;DynamicOutlets&quot;</span>))</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;      {</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;        ossia::string_map&lt;int&gt; indices;</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;        indices &lt;&lt;= *val;</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;        avnd::dynamic_ports_output_introspection&lt;Info&gt;::for_all(</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;            [&amp;obj, &amp;indices]&lt;std::size_t Idx, <span class="keyword">typename</span> P&gt;(</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;                avnd::field_reflection&lt;Idx, P&gt; field) {</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;          <span class="keywordflow">if</span> constexpr(avnd::dynamic_ports_port&lt;P&gt;)</div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;            obj.dynamic_ports.num_out_ports(avnd::field_index&lt;Idx&gt;{})</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;                = indices[avnd::get_c_identifier&lt;P&gt;()];</div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;        });</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;      }</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;    }</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;  }</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;};</div>
 <div class="ttc" id="aclass_data_stream_html"><div class="ttname"><a href="class_data_stream.html">DataStream</a></div><div class="ttdef"><b>Definition:</b> VisitorInterface.hpp:53</div></div>
 <div class="ttc" id="aclass_data_stream_reader_html"><div class="ttname"><a href="class_data_stream_reader.html">DataStreamReader</a></div><div class="ttdef"><b>Definition:</b> DataStreamVisitor.hpp:27</div></div>
 <div class="ttc" id="aclass_data_stream_writer_html"><div class="ttname"><a href="class_data_stream_writer.html">DataStreamWriter</a></div><div class="ttdef"><b>Definition:</b> DataStreamVisitor.hpp:202</div></div>
 <div class="ttc" id="aclass_j_s_o_n_object_html"><div class="ttname"><a href="class_j_s_o_n_object.html">JSONObject</a></div><div class="ttdef"><b>Definition:</b> VisitorInterface.hpp:61</div></div>
 <div class="ttc" id="aclass_j_s_o_n_reader_html"><div class="ttname"><a href="class_j_s_o_n_reader.html">JSONReader</a></div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:52</div></div>
 <div class="ttc" id="aclass_j_s_o_n_writer_html"><div class="ttname"><a href="class_j_s_o_n_writer.html">JSONWriter</a></div><div class="ttdef"><b>Definition:</b> JSONVisitor.hpp:423</div></div>
-<div class="ttc" id="aclass_process_1_1_control_inlet_html"><div class="ttname"><a href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></div><div class="ttdef"><b>Definition:</b> Port.hpp:203</div></div>
 <div class="ttc" id="aclass_process_1_1_inlet_html"><div class="ttname"><a href="class_process_1_1_inlet.html">Process::Inlet</a></div><div class="ttdef"><b>Definition:</b> Port.hpp:177</div></div>
 <div class="ttc" id="aclass_process_1_1_outlet_html"><div class="ttname"><a href="class_process_1_1_outlet.html">Process::Outlet</a></div><div class="ttdef"><b>Definition:</b> Port.hpp:273</div></div>
 <div class="ttc" id="aclass_process_1_1_port_factory_list_html"><div class="ttname"><a href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a></div><div class="ttdef"><b>Definition:</b> PortFactory.hpp:74</div></div>
