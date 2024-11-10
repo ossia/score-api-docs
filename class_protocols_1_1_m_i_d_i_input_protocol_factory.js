@@ -10,6 +10,7 @@ var class_protocols_1_1_m_i_d_i_input_protocol_factory =
     [ "makeEditAddressDialog", "class_protocols_1_1_m_i_d_i_input_protocol_factory.html#afdddd75152aa819eaaa777d12396bdac", null ],
     [ "makeProtocolSpecificSettings", "class_protocols_1_1_m_i_d_i_input_protocol_factory.html#a796483fb405cec0614848a3b6c1f9129", null ],
     [ "makeSettingsWidget", "class_protocols_1_1_m_i_d_i_input_protocol_factory.html#af02c1a0fb3f323b3df277dd4309c969d", null ],
+    [ "manual", "class_protocols_1_1_m_i_d_i_input_protocol_factory.html#adb6f15dd70827364a1c300c6960e3134", null ],
     [ "prettyName", "class_protocols_1_1_m_i_d_i_input_protocol_factory.html#ae7833c0260f99af16820f54ad38e3e05", null ],
     [ "serializeProtocolSpecificSettings", "class_protocols_1_1_m_i_d_i_input_protocol_factory.html#a21c997bd35f609a2fbff32a20c2ef288", null ]
 ];

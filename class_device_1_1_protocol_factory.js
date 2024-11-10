@@ -17,6 +17,7 @@ var class_device_1_1_protocol_factory =
     [ "makeProtocolSpecificSettings", "class_device_1_1_protocol_factory.html#a12b25ec26669f86e8f39baa36380f88b", null ],
     [ "makeProtocolSpecificSettings_T", "class_device_1_1_protocol_factory.html#a37b9fab38498d19b6693b90d734968bd", null ],
     [ "makeSettingsWidget", "class_device_1_1_protocol_factory.html#a79dba0f28e50772c340e3395a8aba839", null ],
+    [ "manual", "class_device_1_1_protocol_factory.html#ad33ea6d970da5e4f9df5708b7384c6d0", null ],
     [ "prettyName", "class_device_1_1_protocol_factory.html#af2ce8aea8a61af9dfd523e3c4191bea7", null ],
     [ "serializeProtocolSpecificSettings", "class_device_1_1_protocol_factory.html#aaa1f7f37f2c1374858b972d191e71aea", null ],
     [ "serializeProtocolSpecificSettings_T", "class_device_1_1_protocol_factory.html#abc4e0cb5daa6c17e78b38618598ee3ed", null ],
