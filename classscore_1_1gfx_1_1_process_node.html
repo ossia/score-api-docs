@@ -111,19 +111,20 @@ Inheritance diagram for score::gfx::ProcessNode:</div>
  <div class="center">
   <img src="classscore_1_1gfx_1_1_process_node.png" usemap="#score::gfx::ProcessNode_map" alt=""/>
   <map id="score::gfx::ProcessNode_map" name="score::gfx::ProcessNode_map">
-<area href="classscore_1_1gfx_1_1_node.html" title="Root data model for visual nodes." alt="score::gfx::Node" shape="rect" coords="416,0,614,24"/>
+<area href="classscore_1_1gfx_1_1_node.html" title="Root data model for visual nodes." alt="score::gfx::Node" shape="rect" coords="520,0,718,24"/>
 <area href="struct_gfx_1_1_spout_1_1_spout_input_node.html" alt="Gfx::Spout::SpoutInputNode" shape="rect" coords="0,112,198,136"/>
 <area href="structscore_1_1gfx_1_1_depth_node.html" alt="score::gfx::DepthNode" shape="rect" coords="208,112,406,136"/>
-<area href="classscore_1_1gfx_1_1_i_s_f_node.html" title="Data model for Interactive Shader Format filters." alt="score::gfx::ISFNode" shape="rect" coords="416,112,614,136"/>
-<area href="classscore_1_1gfx_1_1_node_model.html" title="Common base class for most single-pass, simple nodes." alt="score::gfx::NodeModel" shape="rect" coords="624,112,822,136"/>
-<area href="classscore_1_1gfx_1_1_video_node_base.html" alt="score::gfx::VideoNodeBase" shape="rect" coords="1352,112,1550,136"/>
-<area href="structscore_1_1gfx_1_1_full_screen_image_node.html" alt="score::gfx::FullScreenImageNode" shape="rect" coords="208,168,406,192"/>
-<area href="structscore_1_1gfx_1_1_images_node.html" title="A node that renders an image to screen." alt="score::gfx::ImagesNode" shape="rect" coords="416,168,614,192"/>
-<area href="structscore_1_1gfx_1_1_phong_node.html" alt="score::gfx::PhongNode" shape="rect" coords="624,168,822,192"/>
-<area href="structscore_1_1gfx_1_1_texgen_node.html" alt="score::gfx::TexgenNode" shape="rect" coords="832,168,1030,192"/>
-<area href="structscore_1_1gfx_1_1_text_node.html" title="A node that renders text to screen." alt="score::gfx::TextNode" shape="rect" coords="1040,168,1238,192"/>
-<area href="classscore_1_1gfx_1_1_camera_node.html" title="Model for rendering a camera feed." alt="score::gfx::CameraNode" shape="rect" coords="1248,168,1446,192"/>
-<area href="classscore_1_1gfx_1_1_video_node.html" title="Model for rendering a video." alt="score::gfx::VideoNode" shape="rect" coords="1456,168,1654,192"/>
+<area href="classscore_1_1gfx_1_1_geometry_filter_node.html" title="Data model for geometry filters." alt="score::gfx::GeometryFilterNode" shape="rect" coords="416,112,614,136"/>
+<area href="classscore_1_1gfx_1_1_i_s_f_node.html" title="Data model for Interactive Shader Format filters." alt="score::gfx::ISFNode" shape="rect" coords="624,112,822,136"/>
+<area href="classscore_1_1gfx_1_1_node_model.html" title="Common base class for most single-pass, simple nodes." alt="score::gfx::NodeModel" shape="rect" coords="832,112,1030,136"/>
+<area href="classscore_1_1gfx_1_1_video_node_base.html" alt="score::gfx::VideoNodeBase" shape="rect" coords="1560,112,1758,136"/>
+<area href="structscore_1_1gfx_1_1_full_screen_image_node.html" alt="score::gfx::FullScreenImageNode" shape="rect" coords="416,168,614,192"/>
+<area href="structscore_1_1gfx_1_1_images_node.html" title="A node that renders an image to screen." alt="score::gfx::ImagesNode" shape="rect" coords="624,168,822,192"/>
+<area href="structscore_1_1gfx_1_1_phong_node.html" alt="score::gfx::PhongNode" shape="rect" coords="832,168,1030,192"/>
+<area href="structscore_1_1gfx_1_1_texgen_node.html" alt="score::gfx::TexgenNode" shape="rect" coords="1040,168,1238,192"/>
+<area href="structscore_1_1gfx_1_1_text_node.html" title="A node that renders text to screen." alt="score::gfx::TextNode" shape="rect" coords="1248,168,1446,192"/>
+<area href="classscore_1_1gfx_1_1_camera_node.html" title="Model for rendering a camera feed." alt="score::gfx::CameraNode" shape="rect" coords="1456,168,1654,192"/>
+<area href="classscore_1_1gfx_1_1_video_node.html" title="Model for rendering a video." alt="score::gfx::VideoNode" shape="rect" coords="1664,168,1862,192"/>
   </map>
 </div></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -158,9 +159,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (int32_t 
 <tr class="memitem:a4461f30294e2664993ae76b47caf0ac9"><td class="memItemLeft" align="right" valign="top"><a id="a4461f30294e2664993ae76b47caf0ac9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (int32_t port, const ossia::audio_vector &amp;v)</td></tr>
 <tr class="separator:a4461f30294e2664993ae76b47caf0ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9a263142545fd758ca8f7e9ff76b3a4"><td class="memItemLeft" align="right" valign="top"><a id="aa9a263142545fd758ca8f7e9ff76b3a4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (int32_t port, const ossia::mesh_list_ptr &amp;v)</td></tr>
-<tr class="separator:aa9a263142545fd758ca8f7e9ff76b3a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0727b89cd905598d783a6e6a44e9d906"><td class="memItemLeft" align="right" valign="top"><a id="a0727b89cd905598d783a6e6a44e9d906"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (int32_t port, const ossia::geometry_spec &amp;v)</td></tr>
+<tr class="separator:a0727b89cd905598d783a6e6a44e9d906"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7efdfed332e10d012a16b25323620c86"><td class="memItemLeft" align="right" valign="top"><a id="a7efdfed332e10d012a16b25323620c86"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (int32_t port, const ossia::transform3d &amp;v)</td></tr>
 <tr class="separator:a7efdfed332e10d012a16b25323620c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,9 +216,9 @@ std::atomic_int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>geomet
 <tr class="memitem:a3d1669ef6e4560e73f413f040c97e669"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_process_u_b_o.html">ProcessUBO</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_process_node.html#a3d1669ef6e4560e73f413f040c97e669">standardUBO</a> {}</td></tr>
 <tr class="memdesc:a3d1669ef6e4560e73f413f040c97e669"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every node matching with a score process will have such an UBO.  <a href="classscore_1_1gfx_1_1_process_node.html#a3d1669ef6e4560e73f413f040c97e669">More...</a><br /></td></tr>
 <tr class="separator:a3d1669ef6e4560e73f413f040c97e669"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafcc02fc4abda17b8a1607ba19a99477"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; ossia::mesh_list &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_process_node.html#aafcc02fc4abda17b8a1607ba19a99477">geometry</a></td></tr>
-<tr class="memdesc:aafcc02fc4abda17b8a1607ba19a99477"><td class="mdescLeft">&#160;</td><td class="mdescRight">The geometry to use.  <a href="classscore_1_1gfx_1_1_process_node.html#aafcc02fc4abda17b8a1607ba19a99477">More...</a><br /></td></tr>
-<tr class="separator:aafcc02fc4abda17b8a1607ba19a99477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26d12e4b365e94e027f67c751b1bbf76"><td class="memItemLeft" align="right" valign="top">ossia::geometry_spec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_process_node.html#a26d12e4b365e94e027f67c751b1bbf76">geometry</a></td></tr>
+<tr class="memdesc:a26d12e4b365e94e027f67c751b1bbf76"><td class="mdescLeft">&#160;</td><td class="mdescRight">The geometry to use.  <a href="classscore_1_1gfx_1_1_process_node.html#a26d12e4b365e94e027f67c751b1bbf76">More...</a><br /></td></tr>
+<tr class="separator:a26d12e4b365e94e027f67c751b1bbf76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classscore_1_1gfx_1_1_node"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classscore_1_1gfx_1_1_node')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a></td></tr>
 <tr class="memitem:a32f530890af66e0ecee6c66cdf430146 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a32f530890af66e0ecee6c66cdf430146"></a>
 std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node.html#a32f530890af66e0ecee6c66cdf430146">input</a></td></tr>
@@ -230,19 +231,22 @@ std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *
 ossia::flat_map&lt; <a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> *, <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node.html#abbac77035201ad0586b55fb7f9075ea8">renderedNodes</a></td></tr>
 <tr class="memdesc:abbac77035201ad0586b55fb7f9075ea8 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map associating each <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a> to a Renderer for this model. <br /></td></tr>
 <tr class="separator:abbac77035201ad0586b55fb7f9075ea8 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a623cf7a9344f9b790efebfab304eb663 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a623cf7a9344f9b790efebfab304eb663"></a>
+int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>id</b> = -1</td></tr>
+<tr class="separator:a623cf7a9344f9b790efebfab304eb663 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c822b931b169c3225586c6c90150855 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a2c822b931b169c3225586c6c90150855"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>addedToGraph</b> {}</td></tr>
 <tr class="separator:a2c822b931b169c3225586c6c90150855 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="aafcc02fc4abda17b8a1607ba19a99477"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafcc02fc4abda17b8a1607ba19a99477">&#9670;&nbsp;</a></span>geometry</h2>
+<a id="a26d12e4b365e94e027f67c751b1bbf76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26d12e4b365e94e027f67c751b1bbf76">&#9670;&nbsp;</a></span>geometry</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt;ossia::mesh_list&gt; score::gfx::ProcessNode::geometry</td>
+          <td class="memname">ossia::geometry_spec score::gfx::ProcessNode::geometry</td>
         </tr>
       </table>
 </div><div class="memdoc">

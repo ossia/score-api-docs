@@ -111,18 +111,19 @@ Inheritance diagram for score::gfx::Node:</div>
  <div class="center">
   <img src="classscore_1_1gfx_1_1_node.png" usemap="#score::gfx::Node_map" alt=""/>
   <map id="score::gfx::Node_map" name="score::gfx::Node_map">
-<area href="classscore_1_1gfx_1_1_output_node.html" title="Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)" alt="score::gfx::OutputNode" shape="rect" coords="0,56,164,80"/>
-<area href="classscore_1_1gfx_1_1_process_node.html" title="Common base class for nodes that map to score processes." alt="score::gfx::ProcessNode" shape="rect" coords="348,56,512,80"/>
-<area href="struct_gfx_1_1_libav_encoder_node.html" alt="Gfx::LibavEncoderNode" shape="rect" coords="174,112,338,136"/>
-<area href="struct_gfx_1_1_sh4lt_output_node.html" alt="Gfx::Sh4ltOutputNode" shape="rect" coords="174,168,338,192"/>
-<area href="struct_gfx_1_1_shmdata_output_node.html" alt="Gfx::ShmdataOutputNode" shape="rect" coords="174,224,338,248"/>
-<area href="struct_gfx_1_1_spout_node.html" alt="Gfx::SpoutNode" shape="rect" coords="174,280,338,304"/>
-<area href="structscore_1_1gfx_1_1_screen_node.html" title="This node is used for rendering to a score::gfx::Window." alt="score::gfx::ScreenNode" shape="rect" coords="174,336,338,360"/>
-<area href="struct_gfx_1_1_spout_1_1_spout_input_node.html" alt="Gfx::Spout::SpoutInputNode" shape="rect" coords="522,112,686,136"/>
-<area href="structscore_1_1gfx_1_1_depth_node.html" alt="score::gfx::DepthNode" shape="rect" coords="522,168,686,192"/>
-<area href="classscore_1_1gfx_1_1_i_s_f_node.html" title="Data model for Interactive Shader Format filters." alt="score::gfx::ISFNode" shape="rect" coords="522,224,686,248"/>
-<area href="classscore_1_1gfx_1_1_node_model.html" title="Common base class for most single-pass, simple nodes." alt="score::gfx::NodeModel" shape="rect" coords="522,280,686,304"/>
-<area href="classscore_1_1gfx_1_1_video_node_base.html" alt="score::gfx::VideoNodeBase" shape="rect" coords="522,336,686,360"/>
+<area href="classscore_1_1gfx_1_1_output_node.html" title="Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)" alt="score::gfx::OutputNode" shape="rect" coords="0,56,186,80"/>
+<area href="classscore_1_1gfx_1_1_process_node.html" title="Common base class for nodes that map to score processes." alt="score::gfx::ProcessNode" shape="rect" coords="392,56,578,80"/>
+<area href="struct_gfx_1_1_libav_encoder_node.html" alt="Gfx::LibavEncoderNode" shape="rect" coords="196,112,382,136"/>
+<area href="struct_gfx_1_1_sh4lt_output_node.html" alt="Gfx::Sh4ltOutputNode" shape="rect" coords="196,168,382,192"/>
+<area href="struct_gfx_1_1_shmdata_output_node.html" alt="Gfx::ShmdataOutputNode" shape="rect" coords="196,224,382,248"/>
+<area href="struct_gfx_1_1_spout_node.html" alt="Gfx::SpoutNode" shape="rect" coords="196,280,382,304"/>
+<area href="structscore_1_1gfx_1_1_screen_node.html" title="This node is used for rendering to a score::gfx::Window." alt="score::gfx::ScreenNode" shape="rect" coords="196,336,382,360"/>
+<area href="struct_gfx_1_1_spout_1_1_spout_input_node.html" alt="Gfx::Spout::SpoutInputNode" shape="rect" coords="588,112,774,136"/>
+<area href="structscore_1_1gfx_1_1_depth_node.html" alt="score::gfx::DepthNode" shape="rect" coords="588,168,774,192"/>
+<area href="classscore_1_1gfx_1_1_geometry_filter_node.html" title="Data model for geometry filters." alt="score::gfx::GeometryFilterNode" shape="rect" coords="588,224,774,248"/>
+<area href="classscore_1_1gfx_1_1_i_s_f_node.html" title="Data model for Interactive Shader Format filters." alt="score::gfx::ISFNode" shape="rect" coords="588,280,774,304"/>
+<area href="classscore_1_1gfx_1_1_node_model.html" title="Common base class for most single-pass, simple nodes." alt="score::gfx::NodeModel" shape="rect" coords="588,336,774,360"/>
+<area href="classscore_1_1gfx_1_1_video_node_base.html" alt="score::gfx::VideoNodeBase" shape="rect" coords="588,392,774,416"/>
   </map>
 </div></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -171,6 +172,9 @@ std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *
 ossia::flat_map&lt; <a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> *, <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node.html#abbac77035201ad0586b55fb7f9075ea8">renderedNodes</a></td></tr>
 <tr class="memdesc:abbac77035201ad0586b55fb7f9075ea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map associating each <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a> to a Renderer for this model. <br /></td></tr>
 <tr class="separator:abbac77035201ad0586b55fb7f9075ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a623cf7a9344f9b790efebfab304eb663"><td class="memItemLeft" align="right" valign="top"><a id="a623cf7a9344f9b790efebfab304eb663"></a>
+int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>id</b> = -1</td></tr>
+<tr class="separator:a623cf7a9344f9b790efebfab304eb663"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c822b931b169c3225586c6c90150855"><td class="memItemLeft" align="right" valign="top"><a id="a2c822b931b169c3225586c6c90150855"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>addedToGraph</b> {}</td></tr>
 <tr class="separator:a2c822b931b169c3225586c6c90150855"><td class="memSeparator" colspan="2">&#160;</td></tr>

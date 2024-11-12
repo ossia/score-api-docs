@@ -8,5 +8,6 @@ var classscore_1_1gfx_1_1_node_renderer =
     [ "renderTargetForInput", "classscore_1_1gfx_1_1_node_renderer.html#a6fca9eddd9b9321ff6db77435f5924f8", null ],
     [ "runInitialPasses", "classscore_1_1gfx_1_1_node_renderer.html#a68930a31e1515ee26fbf856ceda236f6", null ],
     [ "runRenderPass", "classscore_1_1gfx_1_1_node_renderer.html#a5b185737cf2421008e1ca8a4d9188634", null ],
-    [ "update", "classscore_1_1gfx_1_1_node_renderer.html#a9808b5cf476d00be1214a68cf23a4f91", null ]
+    [ "update", "classscore_1_1gfx_1_1_node_renderer.html#a9808b5cf476d00be1214a68cf23a4f91", null ],
+    [ "id", "classscore_1_1gfx_1_1_node_renderer.html#a1f3f735f083f0b63332d6c8b7330dee6", null ]
 ];

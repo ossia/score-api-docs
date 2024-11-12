@@ -13,7 +13,10 @@ var structscore_1_1gfx_1_1_mesh =
     [ "defaultVertexShader", "structscore_1_1gfx_1_1_mesh.html#ac3f76147fad7cc5c8e314c8f651bf443", null ],
     [ "draw", "structscore_1_1gfx_1_1_mesh.html#a8ba2dc165b5361ef2ffce12f77f018be", null ],
     [ "flags", "structscore_1_1gfx_1_1_mesh.html#afefe012e5c583f9b39a960f448bb38b8", null ],
+    [ "hasGeometryChanged", "structscore_1_1gfx_1_1_mesh.html#a58ec265596d3ffe643c42653596b303a", null ],
     [ "init", "structscore_1_1gfx_1_1_mesh.html#abcee88bb7e2645aa7e58bcebe0fe865a", null ],
     [ "preparePipeline", "structscore_1_1gfx_1_1_mesh.html#ae6e8d1d92a37bc98af5bf7c748865d2b", null ],
-    [ "update", "structscore_1_1gfx_1_1_mesh.html#a32ceb9506582c1d970c56fdb73282f6a", null ]
+    [ "update", "structscore_1_1gfx_1_1_mesh.html#a32ceb9506582c1d970c56fdb73282f6a", null ],
+    [ "dirtyGeometryIndex", "structscore_1_1gfx_1_1_mesh.html#ac563a12bfbf459c473163c0945695b36", null ],
+    [ "filters", "structscore_1_1gfx_1_1_mesh.html#af79affa0457d2469c3df78b2ac27dcbf", null ]
 ];

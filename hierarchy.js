@@ -230,6 +230,11 @@ var hierarchy =
           [ "score::StaticPropertyCommand< JS::ProcessModel::p_script >", "structscore_1_1_static_property_command_3_01_j_s_1_1_process_model_1_1p__script_01_4.html", null ]
         ] ]
       ] ],
+      [ "Scenario::EditScript< GeometryFilter::Model, GeometryFilter::Model::p_script >", "class_scenario_1_1_edit_script.html", [
+        [ "Gfx::ChangeGeometryShader", "class_gfx_1_1_change_geometry_shader.html", [
+          [ "score::StaticPropertyCommand< Gfx::GeometryFilter::Model::p_script >", "structscore_1_1_static_property_command_3_01_gfx_1_1_geometry_filter_1_1_model_1_1p__script_01_4.html", null ]
+        ] ]
+      ] ],
       [ "Automation::ChangeAddress", "class_automation_1_1_change_address.html", null ],
       [ "Automation::InitAutomation", "class_automation_1_1_init_automation.html", null ],
       [ "ControlSurface::AddControl", "class_control_surface_1_1_add_control.html", null ],
@@ -822,6 +827,7 @@ var hierarchy =
     ] ],
     [ "Nodes::GenericMathMapping< State >", "struct_nodes_1_1_generic_math_mapping.html", null ],
     [ "score::gfx::geometry", "structscore_1_1gfx_1_1geometry.html", null ],
+    [ "score::gfx::geometry_input_port_vis", "structscore_1_1gfx_1_1geometry__input__port__vis.html", null ],
     [ "Scenario::get_curve_domain", "struct_scenario_1_1get__curve__domain.html", null ],
     [ "Scenario::get_start_end", "struct_scenario_1_1get__start__end.html", null ],
     [ "Analysis::GistState", "struct_analysis_1_1_gist_state.html", [
@@ -872,6 +878,7 @@ var hierarchy =
       [ "FaustDSP::Executor< DSP >::exec_node", "class_faust_d_s_p_1_1_executor_1_1exec__node.html", null ],
       [ "Gfx::gfx_exec_node", "class_gfx_1_1gfx__exec__node.html", [
         [ "Gfx::Filter::filter_node", "class_gfx_1_1_filter_1_1filter__node.html", null ],
+        [ "Gfx::GeometryFilter::geometry_filter_node", "class_gfx_1_1_geometry_filter_1_1geometry__filter__node.html", null ],
         [ "Gfx::Images::image_node", "class_gfx_1_1_images_1_1image__node.html", null ],
         [ "Gfx::Text::text_node", "class_gfx_1_1_text_1_1text__node.html", null ],
         [ "Gfx::Video::video_node", "class_gfx_1_1_video_1_1video__node.html", null ],
@@ -1216,6 +1223,7 @@ var hierarchy =
       [ "Library::LibraryInterface", "class_library_1_1_library_interface.html", [
         [ "Faust::LibraryHandler", "class_faust_1_1_library_handler.html", null ],
         [ "Gfx::Filter::LibraryHandler", "class_gfx_1_1_filter_1_1_library_handler.html", null ],
+        [ "Gfx::GeometryFilter::LibraryHandler", "class_gfx_1_1_geometry_filter_1_1_library_handler.html", null ],
         [ "Gfx::Images::LibraryHandler", "class_gfx_1_1_images_1_1_library_handler.html", null ],
         [ "Gfx::Video::LibraryHandler", "class_gfx_1_1_video_1_1_library_handler.html", null ],
         [ "JS::ConsoleLibraryHandler", "class_j_s_1_1_console_library_handler.html", null ],
@@ -1281,6 +1289,7 @@ var hierarchy =
       [ "Process::ProcessDropHandler", "class_process_1_1_process_drop_handler.html", [
         [ "Faust::DropHandler", "class_faust_1_1_drop_handler.html", null ],
         [ "Gfx::Filter::DropHandler", "class_gfx_1_1_filter_1_1_drop_handler.html", null ],
+        [ "Gfx::GeometryFilter::DropHandler", "class_gfx_1_1_geometry_filter_1_1_drop_handler.html", null ],
         [ "Gfx::Images::DropHandler", "class_gfx_1_1_images_1_1_drop_handler.html", null ],
         [ "Gfx::Video::DropHandler", "class_gfx_1_1_video_1_1_drop_handler.html", null ],
         [ "JS::DropHandler", "class_j_s_1_1_drop_handler.html", null ],
@@ -1522,6 +1531,7 @@ var hierarchy =
     [ "Gfx::Kinect2::Kinect2Settings", "struct_gfx_1_1_kinect2_1_1_kinect2_settings.html", null ],
     [ "Patternist::Lane", "struct_patternist_1_1_lane.html", null ],
     [ "Faust::LanguageSpec", "struct_faust_1_1_language_spec.html", null ],
+    [ "Gfx::GeometryFilter::LanguageSpec", "struct_gfx_1_1_geometry_filter_1_1_language_spec.html", null ],
     [ "JS::LanguageSpec", "struct_j_s_1_1_language_spec.html", null ],
     [ "YSFX::LanguageSpec", "struct_y_s_f_x_1_1_language_spec.html", null ],
     [ "Scenario::LayerData::Layer", "struct_scenario_1_1_layer_data_1_1_layer.html", null ],
@@ -1744,6 +1754,7 @@ var hierarchy =
       [ "score::gfx::ProcessNode", "classscore_1_1gfx_1_1_process_node.html", [
         [ "Gfx::Spout::SpoutInputNode", "struct_gfx_1_1_spout_1_1_spout_input_node.html", null ],
         [ "score::gfx::DepthNode", "structscore_1_1gfx_1_1_depth_node.html", null ],
+        [ "score::gfx::GeometryFilterNode", "classscore_1_1gfx_1_1_geometry_filter_node.html", null ],
         [ "score::gfx::ISFNode", "classscore_1_1gfx_1_1_i_s_f_node.html", null ],
         [ "score::gfx::NodeModel", "classscore_1_1gfx_1_1_node_model.html", [
           [ "score::gfx::FullScreenImageNode", "structscore_1_1gfx_1_1_full_screen_image_node.html", null ],
@@ -1783,6 +1794,7 @@ var hierarchy =
         [ "score::gfx::TexgenNode::Rendered", "structscore_1_1gfx_1_1_texgen_node_1_1_rendered.html", null ],
         [ "score::gfx::TextNode::Renderer", "classscore_1_1gfx_1_1_text_node_1_1_renderer.html", null ]
       ] ],
+      [ "score::gfx::GeometryFilterNodeRenderer", "structscore_1_1gfx_1_1_geometry_filter_node_renderer.html", null ],
       [ "score::gfx::OutputNodeRenderer", "classscore_1_1gfx_1_1_output_node_renderer.html", [
         [ "Gfx::InvertYRenderer", "class_gfx_1_1_invert_y_renderer.html", null ],
         [ "score::gfx::ScreenNode::BasicRenderer", "classscore_1_1gfx_1_1_screen_node_1_1_basic_renderer.html", null ],
@@ -1976,8 +1988,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Patternist::ProcessModel >", "class_path.html", null ],
@@ -2116,6 +2128,9 @@ var hierarchy =
         [ "Execution::ProcessComponent_T< Gfx::Images::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
           [ "Gfx::Images::ProcessExecutorComponent", "class_gfx_1_1_images_1_1_process_executor_component.html", null ]
         ] ],
+        [ "Execution::ProcessComponent_T< Gfx::GeometryFilter::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
+          [ "Gfx::GeometryFilter::ProcessExecutorComponent", "class_gfx_1_1_geometry_filter_1_1_process_executor_component.html", null ]
+        ] ],
         [ "Execution::ProcessComponent_T< ProcessModel< Node >, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
           [ "oscr::Executor< Node >", "classoscr_1_1_executor.html", null ]
         ] ],
@@ -2197,6 +2212,7 @@ var hierarchy =
       [ "TreeNode< ProcessData >", "class_tree_node.html", null ]
     ] ],
     [ "Process::ProcessDropHandler::ProcessDrop", "struct_process_1_1_process_drop_handler_1_1_process_drop.html", null ],
+    [ "Gfx::GeometryFilter::ProcessedGeometryProgram", "struct_gfx_1_1_geometry_filter_1_1_processed_geometry_program.html", null ],
     [ "Scenario::ProcessesBeingCopied", "struct_scenario_1_1_processes_being_copied.html", null ],
     [ "ProcessFlags_k", "class_process_flags__k.html", null ],
     [ "Process::ProcessIdentifier", "struct_process_1_1_process_identifier.html", null ],
@@ -2780,6 +2796,7 @@ var hierarchy =
               ] ],
               [ "FaustDSP::Fx< DSP >", "class_faust_d_s_p_1_1_fx.html", null ],
               [ "Gfx::Filter::Model", "class_gfx_1_1_filter_1_1_model.html", null ],
+              [ "Gfx::GeometryFilter::Model", "class_gfx_1_1_geometry_filter_1_1_model.html", null ],
               [ "Gfx::Images::Model", "class_gfx_1_1_images_1_1_model.html", null ],
               [ "Gfx::Text::Model", "class_gfx_1_1_text_1_1_model.html", null ],
               [ "Gfx::Video::Model", "class_gfx_1_1_video_1_1_model.html", null ],

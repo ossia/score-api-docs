@@ -9,6 +9,7 @@ var class_gfx_1_1gfx__exec__node =
     [ "add_texture", "class_gfx_1_1gfx__exec__node.html#a2bf4a0f2702f050c0f158e3ebd3da6cb", null ],
     [ "add_texture_out", "class_gfx_1_1gfx__exec__node.html#a73eb34805bd54b89250abcdbd70faeb2", null ],
     [ "add_value_port", "class_gfx_1_1gfx__exec__node.html#a517e7957810c825fe77b48803f14d0d0", null ],
+    [ "link_cable_to_inlet", "class_gfx_1_1gfx__exec__node.html#ab8f258f10cce48063d25596e6ab7b903", null ],
     [ "run", "class_gfx_1_1gfx__exec__node.html#a17ba07064d435121bfaf5720822f6f6a", null ],
     [ "control_outs", "class_gfx_1_1gfx__exec__node.html#a5be0eccafe444eb854fca08209b1f8b4", null ],
     [ "controls", "class_gfx_1_1gfx__exec__node.html#ada97d2ee84c679d448e2c9024a134860", null ],

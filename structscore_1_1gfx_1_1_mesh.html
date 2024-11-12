@@ -97,6 +97,7 @@ $(document).ready(function(){initNavTree('structscore_1_1gfx_1_1_mesh.html','');
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structscore_1_1gfx_1_1_mesh-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">score::gfx::Mesh Struct Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -160,6 +161,18 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> (con
 virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_mesh.html#ac3f76147fad7cc5c8e314c8f651bf443">defaultVertexShader</a> () const noexcept=0</td></tr>
 <tr class="memdesc:ac3f76147fad7cc5c8e314c8f651bf443"><td class="mdescLeft">&#160;</td><td class="mdescRight">A basic vertex shader that is going to work with this mesh. <br /></td></tr>
 <tr class="separator:ac3f76147fad7cc5c8e314c8f651bf443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58ec265596d3ffe643c42653596b303a"><td class="memItemLeft" align="right" valign="top"><a id="a58ec265596d3ffe643c42653596b303a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasGeometryChanged</b> (int64_t &amp;renderer) const noexcept</td></tr>
+<tr class="separator:a58ec265596d3ffe643c42653596b303a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:af79affa0457d2469c3df78b2ac27dcbf"><td class="memItemLeft" align="right" valign="top"><a id="af79affa0457d2469c3df78b2ac27dcbf"></a>
+ossia::geometry_filter_list_ptr&#160;</td><td class="memItemRight" valign="bottom"><b>filters</b></td></tr>
+<tr class="separator:af79affa0457d2469c3df78b2ac27dcbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac563a12bfbf459c473163c0945695b36"><td class="memItemLeft" align="right" valign="top"><a id="ac563a12bfbf459c473163c0945695b36"></a>
+std::atomic_int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>dirtyGeometryIndex</b> {-1}</td></tr>
+<tr class="separator:ac563a12bfbf459c473163c0945695b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="_mesh_8hpp_source.html">Mesh.hpp</a></li>

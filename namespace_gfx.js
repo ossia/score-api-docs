@@ -10,6 +10,18 @@ var namespace_gfx =
       [ "ProcessExecutorComponentFactory", "score-plugin-gfx_2_gfx_2_filter_2_executor_8hpp.html#af49e74c96dd800b73652feb593803a79", null ],
       [ "ProcessFactory", "score-plugin-gfx_2_gfx_2_filter_2_process_8hpp.html#af6ee4cb30d39392123335d4cd7de4f91", null ]
     ] ],
+    [ "GeometryFilter", null, [
+      [ "geometry_filter_node", "class_gfx_1_1_geometry_filter_1_1geometry__filter__node.html", "class_gfx_1_1_geometry_filter_1_1geometry__filter__node" ],
+      [ "ProcessExecutorComponent", "class_gfx_1_1_geometry_filter_1_1_process_executor_component.html", "class_gfx_1_1_geometry_filter_1_1_process_executor_component" ],
+      [ "LanguageSpec", "struct_gfx_1_1_geometry_filter_1_1_language_spec.html", null ],
+      [ "LibraryHandler", "class_gfx_1_1_geometry_filter_1_1_library_handler.html", null ],
+      [ "DropHandler", "class_gfx_1_1_geometry_filter_1_1_drop_handler.html", null ],
+      [ "ProcessedGeometryProgram", "struct_gfx_1_1_geometry_filter_1_1_processed_geometry_program.html", "struct_gfx_1_1_geometry_filter_1_1_processed_geometry_program" ],
+      [ "Model", "class_gfx_1_1_geometry_filter_1_1_model.html", "class_gfx_1_1_geometry_filter_1_1_model" ],
+      [ "LayerFactory", "score-plugin-gfx_2_gfx_2_geometry_filter_2_layer_8hpp.html#ae39b9479eb647dd34f66eb084e9baa01", null ],
+      [ "ProcessExecutorComponentFactory", "score-plugin-gfx_2_gfx_2_geometry_filter_2_executor_8hpp.html#ada67625417547248f5dc5cc941de29b5", null ],
+      [ "ProcessFactory", "score-plugin-gfx_2_gfx_2_geometry_filter_2_process_8hpp.html#a2943b182e7e7bd048fae2026b148a336", null ]
+    ] ],
     [ "Images", null, [
       [ "image_node", "class_gfx_1_1_images_1_1image__node.html", "class_gfx_1_1_images_1_1image__node" ],
       [ "ProcessExecutorComponent", "class_gfx_1_1_images_1_1_process_executor_component.html", "class_gfx_1_1_images_1_1_process_executor_component" ],
@@ -111,6 +123,7 @@ var namespace_gfx =
     [ "CameraSettings", "struct_gfx_1_1_camera_settings.html", "struct_gfx_1_1_camera_settings" ],
     [ "ShaderPreviewWidget", "class_gfx_1_1_shader_preview_widget.html", "class_gfx_1_1_shader_preview_widget" ],
     [ "ChangeShader", "class_gfx_1_1_change_shader.html", null ],
+    [ "ChangeGeometryShader", "class_gfx_1_1_change_geometry_shader.html", null ],
     [ "DocumentPlugin", "class_gfx_1_1_document_plugin.html", "class_gfx_1_1_document_plugin" ],
     [ "ApplicationPlugin", "class_gfx_1_1_application_plugin.html", "class_gfx_1_1_application_plugin" ],
     [ "GfxContext", "class_gfx_1_1_gfx_context.html", "class_gfx_1_1_gfx_context" ],

@@ -37,6 +37,7 @@ var class_data_stream_writer =
     [ "write", "class_data_stream_writer.html#ad16dac59b7916bc539a602d0f9b88d6a", null ],
     [ "write", "class_data_stream_writer.html#a4bd3bebf9ff6a9de8e331d651e14da7c", null ],
     [ "write", "class_data_stream_writer.html#a6da9c8a540031448d2921d542b32bda5", null ],
+    [ "write", "class_data_stream_writer.html#ab752a0734902b6af56bce6c6d357a453", null ],
     [ "write", "class_data_stream_writer.html#a0dd1b08fa87cb194e23dba9b589ee22c", null ],
     [ "write", "class_data_stream_writer.html#a27ccf139d8e31d98a0f5e43ae3763cba", null ],
     [ "write", "class_data_stream_writer.html#a5dcf4ea6a702514538bb1c491dd97dd4", null ],

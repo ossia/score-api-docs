@@ -207,23 +207,27 @@ $(document).ready(function(){initNavTree('_gfx_exec_node_8hpp_source.html',''); 
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  std::atomic_int32_t script_index{0};</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  ossia::time_value m_last_flicks{};</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordtype">void</span> run(<span class="keyword">const</span> ossia::token_request&amp; tk, ossia::exec_state_facade) noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;};</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="struct_gfx_1_1con__unvalidated.html">  112</a></span>&#160;<span class="keyword">struct </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="struct_gfx_1_1con__unvalidated.html">con_unvalidated</a></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;{</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keyword">const</span> std::size_t i;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keyword">const</span> int32_t script_index{};</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  std::weak_ptr&lt;gfx_exec_node&gt; weak_node;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> ossia::value&amp; val);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;};</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">void</span> link_cable_to_inlet(ossia::inlet* inlet, <span class="keywordtype">int</span> inlet_i);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keyword">using</span> ossia::graph_node::m_inlets;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keyword">using</span> ossia::graph_node::m_outlets;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;};</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="struct_gfx_1_1con__unvalidated.html">  116</a></span>&#160;<span class="keyword">struct </span>SCORE_PLUGIN_GFX_EXPORT <a class="code" href="struct_gfx_1_1con__unvalidated.html">con_unvalidated</a></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keyword">const</span> <a class="code" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keyword">const</span> std::size_t i;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keyword">const</span> int32_t script_index{};</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  std::weak_ptr&lt;gfx_exec_node&gt; weak_node;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> ossia::value&amp; val);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;};</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
 <div class="ttc" id="aclass_gfx_1_1_gfx_execution_action_html"><div class="ttname"><a href="class_gfx_1_1_gfx_execution_action.html">Gfx::GfxExecutionAction</a></div><div class="ttdef"><b>Definition:</b> GfxExecContext.hpp:16</div></div>
 <div class="ttc" id="aclass_gfx_1_1gfx__exec__node_html"><div class="ttname"><a href="class_gfx_1_1gfx__exec__node.html">Gfx::gfx_exec_node</a></div><div class="ttdef"><b>Definition:</b> GfxExecNode.hpp:40</div></div>
 <div class="ttc" id="anamespace_gfx_html"><div class="ttname"><a href="namespace_gfx.html">Gfx</a></div><div class="ttdoc">Binds the rendering pipeline to ossia processes.</div><div class="ttdef"><b>Definition:</b> CameraDevice.cpp:28</div></div>
 <div class="ttc" id="astruct_execution_1_1_context_html"><div class="ttname"><a href="struct_execution_1_1_context.html">Execution::Context</a></div><div class="ttdef"><b>Definition:</b> ExecutionContext.hpp:76</div></div>
-<div class="ttc" id="astruct_gfx_1_1con__unvalidated_html"><div class="ttname"><a href="struct_gfx_1_1con__unvalidated.html">Gfx::con_unvalidated</a></div><div class="ttdef"><b>Definition:</b> GfxExecNode.hpp:113</div></div>
+<div class="ttc" id="astruct_gfx_1_1con__unvalidated_html"><div class="ttname"><a href="struct_gfx_1_1con__unvalidated.html">Gfx::con_unvalidated</a></div><div class="ttdef"><b>Definition:</b> GfxExecNode.hpp:117</div></div>
 <div class="ttc" id="astruct_gfx_1_1exec__control_html"><div class="ttname"><a href="struct_gfx_1_1exec__control.html">Gfx::exec_control</a></div><div class="ttdef"><b>Definition:</b> GfxExecNode.hpp:32</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

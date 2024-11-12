@@ -5,7 +5,7 @@ var classscore_1_1gfx_1_1_generic_node_renderer =
     [ "defaultMeshInit", "classscore_1_1gfx_1_1_generic_node_renderer.html#a7cd26be75c2928ba58f92f43f9d338bb", null ],
     [ "defaultMeshUpdate", "classscore_1_1gfx_1_1_generic_node_renderer.html#aed3b281eb714ce99aa0be6236c995810", null ],
     [ "defaultPassesInit", "classscore_1_1gfx_1_1_generic_node_renderer.html#ad99161ccbb625d01cf8c941e84d1f9bc", null ],
-    [ "defaultPassesInit", "classscore_1_1gfx_1_1_generic_node_renderer.html#a8dc3ed3a16f84658560fd15a0605893d", null ],
+    [ "defaultPassesInit", "classscore_1_1gfx_1_1_generic_node_renderer.html#adacacc2980768dc42da7438b5db1b7eb", null ],
     [ "defaultRelease", "classscore_1_1gfx_1_1_generic_node_renderer.html#a0cc07b50e3c6690a0251eb2e41339bac", null ],
     [ "defaultRenderPass", "classscore_1_1gfx_1_1_generic_node_renderer.html#a4542fdece0191686165f8c0bcc3abd35", null ],
     [ "defaultRenderPass", "classscore_1_1gfx_1_1_generic_node_renderer.html#adf095a8f02f7d7138a7e8bac55fb74fd", null ],
