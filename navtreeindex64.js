@@ -1,5 +1,8 @@
 var NAVTREEINDEX64 =
 {
+"struct_gfx_1_1_camera_settings.html#a71b1bc3fd572fe7c3f0eca2a12d7ea02":[12,0,19,19,1],
+"struct_gfx_1_1_camera_settings.html#a72fa333ba1bfb81653edecc33585c26f":[12,0,19,19,5],
+"struct_gfx_1_1_camera_settings.html#a7b1db0f6e37e929617815f80611c9055":[12,0,19,19,0],
 "struct_gfx_1_1_camera_settings.html#ab159a0fda2c0408710f13d608d930d22":[12,0,19,19,4],
 "struct_gfx_1_1_dbl_i_audio_frame_encoder.html":[12,0,19,51],
 "struct_gfx_1_1_dbl_i_audio_frame_encoder.html#a02bbb807918a4d09c3c0f4167e654da6":[12,0,19,51,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX64 =
 "struct_gfx_1_1_shader_source_1_1_member_spec.html#ac21204317608ec2e8f884d3adbbd993f":[12,0,19,69,0,1],
 "struct_gfx_1_1_shared_input_settings.html":[12,0,19,72],
 "struct_gfx_1_1_shared_input_settings.html#ac151cdfd0591bf0b1b95eac456fb7ab6":[12,0,19,72,0],
-"struct_gfx_1_1_shared_output_settings.html":[12,0,19,75],
-"struct_gfx_1_1_shared_output_settings.html#a3e926717c8177c4894ed0d4c638fa76d":[12,0,19,75,2],
-"struct_gfx_1_1_shared_output_settings.html#aa193e186df672da8024cb5eefa7da05a":[12,0,19,75,3],
-"struct_gfx_1_1_shared_output_settings.html#aa372766ff3b6e41aed3461a99006d85b":[12,0,19,75,1]
+"struct_gfx_1_1_shared_output_settings.html":[12,0,19,75]
 };

@@ -117,21 +117,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a482c50fa8af319d0f22317db1b69fe79"><td class="memItemLeft" align="right" valign="top"><a id="a482c50fa8af319d0f22317db1b69fe79"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setPoint</b> (const QPointF &amp;r)</td></tr>
 <tr class="separator:a482c50fa8af319d0f22317db1b69fe79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a048cc81993d930c689f0379d348ccf"><td class="memItemLeft" align="right" valign="top"><a id="a6a048cc81993d930c689f0379d348ccf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setValue</b> (ossia::vec3f v)</td></tr>
-<tr class="separator:a6a048cc81993d930c689f0379d348ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9397613b6ed886eb5dd7368bb22df05e"><td class="memItemLeft" align="right" valign="top"><a id="a9397613b6ed886eb5dd7368bb22df05e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setValue</b> (std::array&lt; float, 3 &gt; v)</td></tr>
+<tr class="separator:a9397613b6ed886eb5dd7368bb22df05e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc76e08cb8d7ca4f7fea2591c67d184d"><td class="memItemLeft" align="right" valign="top"><a id="afc76e08cb8d7ca4f7fea2591c67d184d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setValue</b> (std::array&lt; double, 3 &gt; v)</td></tr>
+<tr class="separator:afc76e08cb8d7ca4f7fea2591c67d184d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c673d3ed61c7850f006ba5a6d9c51c2"><td class="memItemLeft" align="right" valign="top"><a id="a8c673d3ed61c7850f006ba5a6d9c51c2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setRange</b> (ossia::vec3f min={0.f, 0.f, 0.f}, ossia::vec3f max={1.f, 1.f, 1.f}, ossia::vec3f init={0.f, 0.f, 0.f})</td></tr>
 <tr class="separator:a8c673d3ed61c7850f006ba5a6d9c51c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c4016d6c9747a35dcc034d255f10b91"><td class="memItemLeft" align="right" valign="top"><a id="a2c4016d6c9747a35dcc034d255f10b91"></a>
-ossia::vec3f&#160;</td><td class="memItemRight" valign="bottom"><b>value</b> () const noexcept</td></tr>
-<tr class="separator:a2c4016d6c9747a35dcc034d255f10b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aede8ab74f6d0a18f5c06bfee38a3308f"><td class="memItemLeft" align="right" valign="top"><a id="aede8ab74f6d0a18f5c06bfee38a3308f"></a>
-ossia::vec3f&#160;</td><td class="memItemRight" valign="bottom"><b>getMin</b> () const noexcept</td></tr>
-<tr class="separator:aede8ab74f6d0a18f5c06bfee38a3308f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dc8823838a08ce5a0a8348810775775"><td class="memItemLeft" align="right" valign="top"><a id="a3dc8823838a08ce5a0a8348810775775"></a>
-ossia::vec3f&#160;</td><td class="memItemRight" valign="bottom"><b>getMax</b> () const noexcept</td></tr>
-<tr class="separator:a3dc8823838a08ce5a0a8348810775775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8233f28e877565c7bcfe979e0d6897ee"><td class="memItemLeft" align="right" valign="top"><a id="a8233f28e877565c7bcfe979e0d6897ee"></a>
+std::array&lt; double, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>value</b> () const noexcept</td></tr>
+<tr class="separator:a8233f28e877565c7bcfe979e0d6897ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a669f9dbf8ea57b295d582a40495a63d3"><td class="memItemLeft" align="right" valign="top"><a id="a669f9dbf8ea57b295d582a40495a63d3"></a>
+std::array&lt; double, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getMin</b> () const noexcept</td></tr>
+<tr class="separator:a669f9dbf8ea57b295d582a40495a63d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee4e505bb841bfcdf88feb829ba40ffc"><td class="memItemLeft" align="right" valign="top"><a id="aee4e505bb841bfcdf88feb829ba40ffc"></a>
+std::array&lt; double, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getMax</b> () const noexcept</td></tr>
+<tr class="separator:aee4e505bb841bfcdf88feb829ba40ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb3376c5dc025f8a18ea14ae491811c2"><td class="memItemLeft" align="right" valign="top"><a id="afb3376c5dc025f8a18ea14ae491811c2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>sliderMoved</b> ()</td></tr>
 <tr class="separator:afb3376c5dc025f8a18ea14ae491811c2"><td class="memSeparator" colspan="2">&#160;</td></tr>

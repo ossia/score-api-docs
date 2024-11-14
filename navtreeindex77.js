@@ -1,5 +1,8 @@
 var NAVTREEINDEX77 =
 {
+"struct_t_serializer_3_01_data_stream_00_01rapidjson_1_1_document_01_4.html":[12,0,326],
+"struct_t_serializer_3_01_data_stream_00_01rapidjson_1_1_value_01_4.html":[12,0,327],
+"struct_t_serializer_3_01_data_stream_00_01score_1_1_entity_3_01_t_01_4_01_4.html":[12,0,331],
 "struct_t_serializer_3_01_data_stream_00_01score_1_1_entity_list_3_01_t_01_4_01_4.html":[12,0,332],
 "struct_t_serializer_3_01_data_stream_00_01score_1_1_entity_map_3_01_t_00_01_o_01_4_01_4.html":[12,0,333],
 "struct_t_serializer_3_01_data_stream_00_01score_1_1any__map_01_4.html":[12,0,330],
@@ -246,8 +249,5 @@ var NAVTREEINDEX77 =
 "struct_video_1_1_lib_a_v_decoder.html#a87a6e6e9b56e7905b63e470df3385a90":[12,0,58,5,4],
 "struct_video_1_1_lib_a_v_decoder.html#a924281ef87eb6291cab62d30404507c3":[12,0,58,5,14],
 "struct_video_1_1_lib_a_v_decoder.html#a92d9f15cfaef5441132ae451dc33071a":[12,0,58,5,9],
-"struct_video_1_1_lib_a_v_decoder.html#aabddcb8114e1e30ee841f34b2c241d22":[12,0,58,5,7],
-"struct_video_1_1_lib_a_v_decoder.html#aaee71055b4bfb7a2ca7fde01859d46ac":[12,0,58,5,0],
-"struct_video_1_1_lib_a_v_decoder.html#abca3bd8c5a617f3d210ab7878df14c2f":[12,0,58,5,12],
-"struct_video_1_1_lib_a_v_decoder.html#ac60930cc75f011cf45cc8d82b99b1fcd":[12,0,58,5,5]
+"struct_video_1_1_lib_a_v_decoder.html#aabddcb8114e1e30ee841f34b2c241d22":[12,0,58,5,7]
 };

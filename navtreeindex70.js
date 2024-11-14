@@ -1,5 +1,8 @@
 var NAVTREEINDEX70 =
 {
+"struct_nodes_1_1_factor_oracle_1_1_node_1_1_state.html#af1a6d9230411c9d5a1148de4efa4c0c1":[12,0,37,11,3,0,1],
+"struct_nodes_1_1_factor_oracle_1_1_node_1_1_state.html#af316491af51facd144e207ff95a4cac0":[12,0,37,11,3,0,0],
+"struct_nodes_1_1_factor_oracle_1_1safe__vector.html":[12,0,37,11,0],
 "struct_nodes_1_1_factor_oracle_1_1safe__vector.html#a2fe39fe64ad8627aac4ec7eff9a46fcf":[12,0,37,11,0,4],
 "struct_nodes_1_1_factor_oracle_1_1safe__vector.html#a36ad78e29f2ac241a6e757668767d680":[12,0,37,11,0,3],
 "struct_nodes_1_1_factor_oracle_1_1safe__vector.html#a3908d6b0b77c3a9008399ccfb66e5433":[12,0,37,11,0,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX70 =
 "struct_nodes_1_1_micro_mapping_1_1_node.html#ac2c69b0cf499866128de824ef27c419e":[12,0,37,20,0,13],
 "struct_nodes_1_1_micro_mapping_1_1_node.html#addd2bda70518f5bf33a8bf940ab73182":[12,0,37,20,0,6],
 "struct_nodes_1_1_micro_mapping_1_1_node_1_1_state.html":[12,0,37,20,0,0],
-"struct_nodes_1_1_micro_mapping_1_1_node_1_1_state.html#a20abf75a6ef1ff0d5a7d164d24b0dc29":[12,0,37,20,0,0,10],
-"struct_nodes_1_1_micro_mapping_1_1_node_1_1_state.html#a3180f48a1eeaf5d780e2694c72496e4e":[12,0,37,20,0,0,1],
-"struct_nodes_1_1_micro_mapping_1_1_node_1_1_state.html#a34ee0e9f9863e8c40738bf8850d322f0":[12,0,37,20,0,0,8],
-"struct_nodes_1_1_micro_mapping_1_1_node_1_1_state.html#a59a2963f89250239d7a1f80cc8ecf8b4":[12,0,37,20,0,0,3]
+"struct_nodes_1_1_micro_mapping_1_1_node_1_1_state.html#a20abf75a6ef1ff0d5a7d164d24b0dc29":[12,0,37,20,0,0,10]
 };
