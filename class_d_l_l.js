@@ -2,7 +2,7 @@ var class_d_l_l =
 [
     [ "DLL", "class_d_l_l.html#ab7b361a3470c67295fbf7359ff5f6fca", null ],
     [ "DLL", "class_d_l_l.html#aa9c7dda5295a1e891ce3fc1341d16a7f", null ],
-    [ "DLL", "class_d_l_l.html#a97078de7145650cf850e727a39b8862e", null ],
+    [ "DLL", "class_d_l_l.html#a1a6fa991e487449d65ab8d3418b60622", null ],
     [ "~DLL", "class_d_l_l.html#aff5b45d4b57b97144d4b49bc05aa0ddd", null ],
     [ "errorString", "class_d_l_l.html#a95c49cd91f23558818e864e30c98d6ad", null ],
     [ "operator bool", "class_d_l_l.html#a9bf8996ef718633f82f6beb5b9544d98", null ],
