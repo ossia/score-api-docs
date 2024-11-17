@@ -1,6 +1,8 @@
 var struct_ui_1_1_signal_display_1_1_node_1_1_layer =
 [
     [ "Layer", "struct_ui_1_1_signal_display_1_1_node_1_1_layer.html#af4ce968995bed682e2171001965edd4e", null ],
+    [ "draw_row", "struct_ui_1_1_signal_display_1_1_node_1_1_layer.html#a1e14e80f6f9d9bcdf7bf9ef9ea6b216b", null ],
+    [ "draw_row_constant", "struct_ui_1_1_signal_display_1_1_node_1_1_layer.html#ac066f073d65646483af788c0ddfcf701", null ],
     [ "paint_impl", "struct_ui_1_1_signal_display_1_1_node_1_1_layer.html#a5ab846d77df922de3dff76781cd7a6e2", null ],
     [ "reset", "struct_ui_1_1_signal_display_1_1_node_1_1_layer.html#a334c01793ce5702aa73e30db4014c163", null ],
     [ "m_interval", "struct_ui_1_1_signal_display_1_1_node_1_1_layer.html#ad2419d13186463bb845674625b0fc0f8", null ],
