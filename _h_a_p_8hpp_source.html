@@ -190,47 +190,48 @@ $(document).ready(function(){initNavTree('_h_a_p_8hpp_source.html',''); initResi
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="stringliteral">layout(location = 0) in vec2 v_texcoord;</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="stringliteral">layout(location = 0) out vec4 fragColor;</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="stringliteral"></span> </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="stringliteral">vec4 processYCoCg(vec4 CoCgSY, vec4 alpha) {</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="stringliteral">  const vec4 offsets = vec4(-0.50196078431373, -0.50196078431373, 0.0, 0.0);</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="stringliteral">  CoCgSY += offsets;</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="stringliteral">  float scale = ( CoCgSY.z * ( 255.0 / 8.0 ) ) + 1.0;</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="stringliteral"></span> </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="stringliteral">  float Co = CoCgSY.x / scale;</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="stringliteral">  float Cg = CoCgSY.y / scale;</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="stringliteral">  float Y = CoCgSY.w;</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="stringliteral"></span> </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="stringliteral">  vec4 rgba = vec4(Y + Co - Cg, Y + Cg, Y - Co - Cg, alpha.r);</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="stringliteral">  return rgba;</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="stringliteral">}</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="stringliteral"></span> </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="stringliteral">vec4 processTexture(vec4 tex) {</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="stringliteral">  vec4 processed = tex;</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="stringliteral">  { %1 }</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="stringliteral">  return processed;</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="stringliteral">}</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="stringliteral"></span> </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="stringliteral">void main ()</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="stringliteral">{</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="stringliteral">  vec4 ycocg = texture(y_tex, v_texcoord);</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="stringliteral">  vec4 alpha = texture(alpha_tex, v_texcoord);</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="stringliteral">  fragColor = processTexture(processYCoCg(ycocg, alpha));</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="stringliteral">})_&quot;);</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="stringliteral"></span> </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="stringliteral">  <a class="code" href="structscore_1_1gfx_1_1_h_a_p_m_decoder.html">HAPMDecoder</a>(<a class="code" href="struct_video_1_1_image_format.html">Video::ImageFormat</a>&amp; d, QString f = </span><span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <a class="code" href="struct_video_1_1_image_format.html">Video::ImageFormat</a>&amp; decoder;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  QString filter;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  std::pair&lt;QShader, QShader&gt; <a class="code" href="structscore_1_1gfx_1_1_h_a_p_m_decoder.html#a2c4d54828b1ec6775a4626c101077466">init</a>(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="structscore_1_1gfx_1_1_h_a_p_m_decoder.html#af5d3eaae3d2ebe59af768e5dcd2c3938">exec</a>(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;, QRhiResourceUpdateBatch&amp; res, AVFrame&amp; frame) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> setPixels(</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;      QRhiResourceUpdateBatch&amp; res, QRhiTexture* tex, <span class="keyword">const</span> uint8_t* ycocg_start,</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      std::size_t ycocg_size);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  std::unique_ptr&lt;char[]&gt; m_alphaBuffer = std::make_unique&lt;char[]&gt;(1024 * 1024 * 16);</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;};</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;}</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="stringliteral">// FIXME what&#39;s that???</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="stringliteral">vec4 processYCoCg(vec4 CoCgSY, vec4 alpha) {</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="stringliteral">  const vec4 offsets = vec4(-0.50196078431373, -0.50196078431373, 0.0, 0.0);</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="stringliteral">  CoCgSY += offsets;</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="stringliteral">  float scale = ( CoCgSY.z * ( 255.0 / 8.0 ) ) + 1.0;</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="stringliteral"></span> </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="stringliteral">  float Co = CoCgSY.x / scale;</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="stringliteral">  float Cg = CoCgSY.y / scale;</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="stringliteral">  float Y = CoCgSY.w;</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="stringliteral"></span> </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="stringliteral">  vec4 rgba = vec4(Y + Co - Cg, Y + Cg, Y - Co - Cg, alpha.r);</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="stringliteral">  return rgba;</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="stringliteral">}</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="stringliteral"></span> </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="stringliteral">vec4 processTexture(vec4 tex) {</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="stringliteral">  vec4 processed = tex;</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="stringliteral">  { %1 }</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="stringliteral">  return processed;</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="stringliteral">}</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="stringliteral"></span> </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="stringliteral">void main ()</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="stringliteral">{</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="stringliteral">  vec4 ycocg = texture(y_tex, v_texcoord);</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="stringliteral">  vec4 alpha = texture(alpha_tex, v_texcoord);</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="stringliteral">  fragColor = processTexture(processYCoCg(ycocg, alpha));</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="stringliteral">})_&quot;);</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="stringliteral"></span> </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="stringliteral">  <a class="code" href="structscore_1_1gfx_1_1_h_a_p_m_decoder.html">HAPMDecoder</a>(<a class="code" href="struct_video_1_1_image_format.html">Video::ImageFormat</a>&amp; d, QString f = </span><span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <a class="code" href="struct_video_1_1_image_format.html">Video::ImageFormat</a>&amp; decoder;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  QString filter;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  std::pair&lt;QShader, QShader&gt; <a class="code" href="structscore_1_1gfx_1_1_h_a_p_m_decoder.html#a2c4d54828b1ec6775a4626c101077466">init</a>(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="structscore_1_1gfx_1_1_h_a_p_m_decoder.html#af5d3eaae3d2ebe59af768e5dcd2c3938">exec</a>(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;, QRhiResourceUpdateBatch&amp; res, AVFrame&amp; frame) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> setPixels(</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      QRhiResourceUpdateBatch&amp; res, QRhiTexture* tex, <span class="keyword">const</span> uint8_t* ycocg_start,</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;      std::size_t ycocg_size);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  std::unique_ptr&lt;char[]&gt; m_alphaBuffer = std::make_unique&lt;char[]&gt;(1024 * 1024 * 16);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;};</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;}</div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_g_p_u_video_decoder_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html">score::gfx::GPUVideoDecoder</a></div><div class="ttdoc">Processes and renders a video frame on the GPU.</div><div class="ttdef"><b>Definition:</b> GPUVideoDecoder.hpp:43</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition:</b> RenderList.hpp:19</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition:</b> Filter/PreviewWidget.hpp:12</div></div>

@@ -158,8 +158,8 @@ std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_sampler.html">Sampler
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:ad06828625be22e23f3afb1984c34c893"><td class="memItemLeft" align="right" valign="top">static constexpr const auto&#160;</td><td class="memItemRight" valign="bottom"><b>yuv422_filter</b></td></tr>
-<tr class="separator:ad06828625be22e23f3afb1984c34c893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b0201dde9040085759c07b3d2305966"><td class="memItemLeft" align="right" valign="top">static constexpr const auto&#160;</td><td class="memItemRight" valign="bottom"><b>frag</b></td></tr>
+<tr class="separator:a8b0201dde9040085759c07b3d2305966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -208,8 +208,8 @@ static QString&#160;</td><td class="memItemRight" valign="bottom"><b>vertexShade
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ad06828625be22e23f3afb1984c34c893"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad06828625be22e23f3afb1984c34c893">&#9670;&nbsp;</a></span>yuv422_filter</h2>
+<a id="a8b0201dde9040085759c07b3d2305966"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b0201dde9040085759c07b3d2305966">&#9670;&nbsp;</a></span>frag</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -218,7 +218,7 @@ static QString&#160;</td><td class="memItemRight" valign="bottom"><b>vertexShade
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr const auto score::gfx::YUV422Decoder::yuv422_filter</td>
+          <td class="memname">constexpr const auto score::gfx::YUV422Decoder::frag</td>
         </tr>
       </table>
   </td>
@@ -238,18 +238,21 @@ static QString&#160;</td><td class="memItemRight" valign="bottom"><b>vertexShade
 <div class="line"><span class="stringliteral">layout(location = 0) in vec2 v_texcoord;</span></div>
 <div class="line"><span class="stringliteral">layout(location = 0) out vec4 fragColor;</span></div>
 <div class="line"><span class="stringliteral"></span> </div>
-<div class="line"><span class="stringliteral">// See softpixel.com/~cwright/programming/colorspace/yuv</span></div>
-<div class="line"><span class="stringliteral">const vec3 offset = vec3(0., -0.5, -0.5);</span></div>
-<div class="line"><span class="stringliteral">const mat3 coeff = mat3(1.0   ,  1.0   , 1.0,</span></div>
-<div class="line"><span class="stringliteral">                        0.0   , -0.3455, 1.7790,</span></div>
-<div class="line"><span class="stringliteral">                        1.4075, -0.7169, 0.);</span></div>
+<div class="line"><span class="stringliteral">%2</span></div>
+<div class="line"><span class="stringliteral"></span> </div>
+<div class="line"><span class="stringliteral">vec4 processTexture(vec4 tex) {</span></div>
+<div class="line"><span class="stringliteral">  vec4 processed = convert_to_rgb(tex);</span></div>
+<div class="line"><span class="stringliteral">  { %1 }</span></div>
+<div class="line"><span class="stringliteral">  return processed;</span></div>
+<div class="line"><span class="stringliteral">}</span></div>
+<div class="line"><span class="stringliteral"></span> </div>
 <div class="line"><span class="stringliteral">void main()</span></div>
 <div class="line"><span class="stringliteral">{</span></div>
 <div class="line"><span class="stringliteral">    float y = texture(y_tex, v_texcoord).r;</span></div>
 <div class="line"><span class="stringliteral">    float u = texture(u_tex, v_texcoord).r;</span></div>
 <div class="line"><span class="stringliteral">    float v = texture(v_tex, v_texcoord).r;</span></div>
 <div class="line"><span class="stringliteral"></span> </div>
-<div class="line"><span class="stringliteral">    fragColor = vec4(coeff * (vec3(y,u,v) + offset), 1);</span></div>
+<div class="line"><span class="stringliteral">    fragColor = processTexture(vec4(y,u,v, 1.));</span></div>
 <div class="line"><span class="stringliteral">}</span></div>
 <div class="line"><span class="stringliteral">)_&quot;</span></div>
 </div><!-- fragment -->

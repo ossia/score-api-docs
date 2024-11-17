@@ -167,6 +167,7 @@ var files_dup =
     [ "CoherencyCheckerFactoryInterface.hpp", "_coherency_checker_factory_interface_8hpp_source.html", null ],
     [ "ColorInterpolator.hpp", "_color_interpolator_8hpp_source.html", null ],
     [ "ColorReference.hpp", "_color_reference_8hpp_source.html", null ],
+    [ "ColorSpace.hpp", "_color_space_8hpp_source.html", null ],
     [ "Column.hpp", "_column_8hpp_source.html", null ],
     [ "Combiner.hpp", "_combiner_8hpp_source.html", null ],
     [ "ComboBox.hpp", "_combo_box_8hpp_source.html", null ],

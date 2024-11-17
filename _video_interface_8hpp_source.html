@@ -117,44 +117,50 @@ $(document).ready(function(){initNavTree('_video_interface_8hpp_source.html','')
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordtype">int</span> width{};</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordtype">int</span> height{};</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  AVPixelFormat pixel_format = AVPixelFormat(-1);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="struct_video_1_1_video_metadata.html">   22</a></span>&#160;<span class="keyword">struct </span>SCORE_PLUGIN_MEDIA_EXPORT <a class="code" href="struct_video_1_1_video_metadata.html">VideoMetadata</a> : <a class="code" href="struct_video_1_1_image_format.html">ImageFormat</a></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordtype">double</span> fps{};</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">bool</span> realTime{};</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">double</span> flicks_per_dts{};</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordtype">double</span> dts_per_flicks{};</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="struct_video_1_1_video_interface.html">   30</a></span>&#160;<span class="keyword">struct </span>SCORE_PLUGIN_MEDIA_EXPORT <a class="code" href="struct_video_1_1_video_interface.html">VideoInterface</a> : <a class="code" href="struct_video_1_1_video_metadata.html">VideoMetadata</a></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="struct_video_1_1_video_interface.html">VideoInterface</a>();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">virtual</span> AVFrame* dequeue_frame() noexcept = 0;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> release_frame(AVFrame* frame) noexcept = 0;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="struct_video_1_1_read_frame.html">   37</a></span>&#160;<span class="keyword">struct </span>SCORE_PLUGIN_MEDIA_EXPORT <a class="code" href="struct_video_1_1_read_frame.html">ReadFrame</a></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  AVFrame* frame{};</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">int</span> error{};</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  AVColorRange color_range = AVColorRange(-1);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  AVColorPrimaries color_primaries = AVColorPrimaries(-1);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  AVColorTransferCharacteristic color_trc = AVColorTransferCharacteristic(-1);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  AVColorSpace color_space = AVColorSpace(-1);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  AVChromaLocation chroma_location = AVChromaLocation(-1);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct_video_1_1_video_metadata.html">   28</a></span>&#160;<span class="keyword">struct </span>SCORE_PLUGIN_MEDIA_EXPORT <a class="code" href="struct_video_1_1_video_metadata.html">VideoMetadata</a> : <a class="code" href="struct_video_1_1_image_format.html">ImageFormat</a></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">double</span> fps{};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">bool</span> realTime{};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">double</span> flicks_per_dts{};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">double</span> dts_per_flicks{};</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="struct_video_1_1_video_interface.html">   36</a></span>&#160;<span class="keyword">struct </span>SCORE_PLUGIN_MEDIA_EXPORT <a class="code" href="struct_video_1_1_video_interface.html">VideoInterface</a> : <a class="code" href="struct_video_1_1_video_metadata.html">VideoMetadata</a></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="struct_video_1_1_video_interface.html">VideoInterface</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">virtual</span> AVFrame* dequeue_frame() noexcept = 0;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> release_frame(AVFrame* frame) noexcept = 0;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="struct_video_1_1_free_a_v_frame.html">   42</a></span>&#160;<span class="keyword">struct </span>SCORE_PLUGIN_MEDIA_EXPORT <a class="code" href="struct_video_1_1_free_a_v_frame.html">FreeAVFrame</a></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> operator()(AVFrame* f) <span class="keyword">const</span> noexcept;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">using</span> AVFramePointer = std::unique_ptr&lt;AVFrame, FreeAVFrame&gt;;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<a class="code" href="struct_video_1_1_read_frame.html">ReadFrame</a> readVideoFrame(</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    AVCodecContext* codecContext, <span class="keyword">const</span> AVPacket* pkt, AVFrame* frame, <span class="keywordtype">bool</span> ignorePts);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="astruct_video_1_1_free_a_v_frame_html"><div class="ttname"><a href="struct_video_1_1_free_a_v_frame.html">Video::FreeAVFrame</a></div><div class="ttdef"><b>Definition:</b> VideoInterface.hpp:43</div></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="struct_video_1_1_read_frame.html">   43</a></span>&#160;<span class="keyword">struct </span>SCORE_PLUGIN_MEDIA_EXPORT <a class="code" href="struct_video_1_1_read_frame.html">ReadFrame</a></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  AVFrame* frame{};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">int</span> error{};</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="struct_video_1_1_free_a_v_frame.html">   48</a></span>&#160;<span class="keyword">struct </span>SCORE_PLUGIN_MEDIA_EXPORT <a class="code" href="struct_video_1_1_free_a_v_frame.html">FreeAVFrame</a></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> operator()(AVFrame* f) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">using</span> AVFramePointer = std::unique_ptr&lt;AVFrame, FreeAVFrame&gt;;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<a class="code" href="struct_video_1_1_read_frame.html">ReadFrame</a> readVideoFrame(</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    AVCodecContext* codecContext, <span class="keyword">const</span> AVPacket* pkt, AVFrame* frame, <span class="keywordtype">bool</span> ignorePts);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="astruct_video_1_1_free_a_v_frame_html"><div class="ttname"><a href="struct_video_1_1_free_a_v_frame.html">Video::FreeAVFrame</a></div><div class="ttdef"><b>Definition:</b> VideoInterface.hpp:49</div></div>
 <div class="ttc" id="astruct_video_1_1_image_format_html"><div class="ttname"><a href="struct_video_1_1_image_format.html">Video::ImageFormat</a></div><div class="ttdef"><b>Definition:</b> VideoInterface.hpp:16</div></div>
-<div class="ttc" id="astruct_video_1_1_read_frame_html"><div class="ttname"><a href="struct_video_1_1_read_frame.html">Video::ReadFrame</a></div><div class="ttdef"><b>Definition:</b> VideoInterface.hpp:38</div></div>
-<div class="ttc" id="astruct_video_1_1_video_interface_html"><div class="ttname"><a href="struct_video_1_1_video_interface.html">Video::VideoInterface</a></div><div class="ttdef"><b>Definition:</b> VideoInterface.hpp:31</div></div>
-<div class="ttc" id="astruct_video_1_1_video_metadata_html"><div class="ttname"><a href="struct_video_1_1_video_metadata.html">Video::VideoMetadata</a></div><div class="ttdef"><b>Definition:</b> VideoInterface.hpp:23</div></div>
+<div class="ttc" id="astruct_video_1_1_read_frame_html"><div class="ttname"><a href="struct_video_1_1_read_frame.html">Video::ReadFrame</a></div><div class="ttdef"><b>Definition:</b> VideoInterface.hpp:44</div></div>
+<div class="ttc" id="astruct_video_1_1_video_interface_html"><div class="ttname"><a href="struct_video_1_1_video_interface.html">Video::VideoInterface</a></div><div class="ttdef"><b>Definition:</b> VideoInterface.hpp:37</div></div>
+<div class="ttc" id="astruct_video_1_1_video_metadata_html"><div class="ttname"><a href="struct_video_1_1_video_metadata.html">Video::VideoMetadata</a></div><div class="ttdef"><b>Definition:</b> VideoInterface.hpp:29</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
