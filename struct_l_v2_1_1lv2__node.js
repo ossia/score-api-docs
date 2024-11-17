@@ -24,6 +24,9 @@ var struct_l_v2_1_1lv2__node =
     [ "m_atom_timePosition_midi", "struct_l_v2_1_1lv2__node.html#a8852b05b8106f3e0d774c50091431c84", null ],
     [ "m_atom_timePosition_owned", "struct_l_v2_1_1lv2__node.html#a9339cf8ce0accc320d84a73abcb3870a", null ],
     [ "m_message_for_atom_ins", "struct_l_v2_1_1lv2__node.html#a7719f76c530ff259cb99974e7e9d5c4f", null ],
+    [ "m_message_for_midi_atom_ins", "struct_l_v2_1_1lv2__node.html#a23614ce859c74f48991288db166ad1ac", null ],
+    [ "m_midi_atom_ins", "struct_l_v2_1_1lv2__node.html#a9725073a09fe348ec8f7656b0c1010d8", null ],
+    [ "m_midi_atom_outs", "struct_l_v2_1_1lv2__node.html#a18e946acf135c6d60c608b447354de4a", null ],
     [ "on_finished", "struct_l_v2_1_1lv2__node.html#aafb93dcacf0a8d917d3946b7fc6bc97f", null ],
     [ "on_start", "struct_l_v2_1_1lv2__node.html#a62a641c57dcbb30fb650836026ab82fe", null ],
     [ "timePositionBuffer", "struct_l_v2_1_1lv2__node.html#aa31deb99c5a389014bfbb873512856fc", null ]

@@ -1,5 +1,10 @@
 var NAVTREEINDEX80 =
 {
+"structavnd__tools_1_1_teleplot.html#a7b517c1dea904327c6d16191be4f098c":[12,0,3,8,3],
+"structavnd__tools_1_1_teleplot.html#a8f09e65056e7cd769b597783c970caf1":[12,0,3,8,5],
+"structavnd__tools_1_1_teleplot.html#a8fd74c87b9a3487cbd628c39bfd336cb":[12,0,3,8,14],
+"structavnd__tools_1_1_teleplot.html#ac8020c47bb9ad755f58a2f4eb75a24a5":[12,0,3,8,4],
+"structavnd__tools_1_1_teleplot_1_1inputs__t.html":[12,0,3,8,0],
 "structavnd__tools_1_1_teleplot_1_1inputs__t.html#a335a2510718241b6e59c5b02895a6bda":[12,0,3,8,0,1],
 "structavnd__tools_1_1_teleplot_1_1inputs__t.html#aaf0e175c85a77b2f1371a0f569b39f74":[12,0,3,8,0,0],
 "structbase__kind.html":[12,0,79],
@@ -244,10 +249,5 @@ var NAVTREEINDEX80 =
 "structoscr_1_1_node_item.html#aaee78beaca36af65def47ef9c0a4e35e":[12,0,38,54,11],
 "structoscr_1_1_node_item.html#aaf588c1dbb23bd3a054810c86de40fcc":[12,0,38,54,7],
 "structoscr_1_1_node_item.html#ab88f66d938eb9bbc8506fdf8c18348b3":[12,0,38,54,8],
-"structoscr_1_1_node_item.html#abb281862d10add49e4f49881c1e8cdeb":[12,0,38,54,14],
-"structoscr_1_1_node_item.html#ac1bc4dccee36bdf32cc4cbe805b3553e":[12,0,38,54,4],
-"structoscr_1_1_node_item.html#ac47435bb5ec2e592b4ce4a2bad66adb3":[12,0,38,54,6],
-"structoscr_1_1_node_item.html#ad187846272df226559d3c36aab8d0015":[12,0,38,54,0],
-"structoscr_1_1_node_item.html#af5253160d95c33e8fd6e012a84fa2b72":[12,0,38,54,17],
-"structoscr_1_1_node_item.html#af688eeaa2f9017027679080f523aa623":[12,0,38,54,15]
+"structoscr_1_1_node_item.html#abb281862d10add49e4f49881c1e8cdeb":[12,0,38,54,14]
 };

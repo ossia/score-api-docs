@@ -1,5 +1,10 @@
 var NAVTREEINDEX79 =
 {
+"struct_x_y_z_slider.html":[12,0,430],
+"struct_x_y_z_spinboxes.html":[12,0,431],
+"struct_y_s_f_x_1_1_language_spec.html":[12,0,63,5],
+"structaudio__channels__attr.html":[12,0,73],
+"structaudio__channels__attr.html#a3ab256c1b414e037a4b9f0981cf588dc":[12,0,73,0],
 "structaudio__kind__attr.html":[12,0,74],
 "structaudio__kind__attr.html#aee5a5247969c6d4b2bd4d3631cce57d0":[12,0,74,0],
 "structaudio__mapping__attr.html":[12,0,75],
@@ -244,10 +249,5 @@ var NAVTREEINDEX79 =
 "structavnd__tools_1_1_teleplot.html#a62467e93f8e697ce741f41dcd61b2c9d":[12,0,3,8,12],
 "structavnd__tools_1_1_teleplot.html#a6a542e9d3d5594d6456d29c2e1c8b8c8":[12,0,3,8,6],
 "structavnd__tools_1_1_teleplot.html#a72180ca4f167cb513dd2e3c3cfbf0628":[12,0,3,8,9],
-"structavnd__tools_1_1_teleplot.html#a74a68ed1e346278bab5ce44de241adaf":[12,0,3,8,1],
-"structavnd__tools_1_1_teleplot.html#a7b517c1dea904327c6d16191be4f098c":[12,0,3,8,3],
-"structavnd__tools_1_1_teleplot.html#a8f09e65056e7cd769b597783c970caf1":[12,0,3,8,5],
-"structavnd__tools_1_1_teleplot.html#a8fd74c87b9a3487cbd628c39bfd336cb":[12,0,3,8,14],
-"structavnd__tools_1_1_teleplot.html#ac8020c47bb9ad755f58a2f4eb75a24a5":[12,0,3,8,4],
-"structavnd__tools_1_1_teleplot_1_1inputs__t.html":[12,0,3,8,0]
+"structavnd__tools_1_1_teleplot.html#a74a68ed1e346278bab5ce44de241adaf":[12,0,3,8,1]
 };

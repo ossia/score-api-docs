@@ -1,5 +1,10 @@
 var NAVTREEINDEX78 =
 {
+"struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1optional_3_01_t_01_4_01_4.html":[12,0,393],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1pair_3_01_t_00_01_u_01_4_01_4.html":[12,0,394],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1pair_3_01_t_00_01_u_01_4_01_4.html#af11d07ae984dab2d81d0b68c5d9b00d3":[12,0,394,0],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1unordered__map_3_01_t_00_01_u_00_01_h_00_01_e_00_01_a_01_4_01_4.html":[12,0,395],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1vector_3_01_args_8_8_8_01_4_01_4.html":[12,0,396],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1vector_3_01_t_01_5_00_01_alloc_01_4_01_4.html":[12,0,397],
 "struct_time_val.html":[12,0,289],
 "struct_time_val.html#a04a3a1f2add08c109879367c40b9d91e":[12,0,289,24],
@@ -244,10 +249,5 @@ var NAVTREEINDEX78 =
 "struct_word_list.html":[12,0,426],
 "struct_word_list.html#a2ca0188e8ea194f6d84afdd943f14823":[12,0,426,0],
 "struct_x_y_slider.html":[12,0,428],
-"struct_x_y_spinboxes.html":[12,0,429],
-"struct_x_y_z_slider.html":[12,0,430],
-"struct_x_y_z_spinboxes.html":[12,0,431],
-"struct_y_s_f_x_1_1_language_spec.html":[12,0,63,5],
-"structaudio__channels__attr.html":[12,0,73],
-"structaudio__channels__attr.html#a3ab256c1b414e037a4b9f0981cf588dc":[12,0,73,0]
+"struct_x_y_spinboxes.html":[12,0,429]
 };

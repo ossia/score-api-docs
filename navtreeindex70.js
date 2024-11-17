@@ -1,5 +1,10 @@
 var NAVTREEINDEX70 =
 {
+"struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#a12e0f17a0f15d07d727e7961d3d3752e":[12,0,37,3,0,1,14],
+"struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#a1f53a380268917f9850e755a6cda24d7":[12,0,37,3,0,1,15],
+"struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#a22aef452560963485d1079f5e661c6f1":[12,0,37,3,0,1,13],
+"struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#a364bfde1c03c7eb1ad3c62548063e791":[12,0,37,3,0,1,3],
+"struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#a40649cf7c2f109f1ac514cfd05aa3cb0":[12,0,37,3,0,1,6],
 "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#a5097b8ca68fe6b3e362fec20174e582e":[12,0,37,3,0,1,4],
 "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#a557ae8cd6f9019efb5fe70bd72dbd4f4":[12,0,37,3,0,1,5],
 "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#a69c46c590b780704fb44ecdf4cd2ce8f":[12,0,37,3,0,1,11],
@@ -244,10 +249,5 @@ var NAVTREEINDEX70 =
 "struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html":[12,0,37,15,0,0],
 "struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html#a05874ebd70fd2427e57b197a20ceccae":[12,0,37,15,0,0,2],
 "struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html#a1a53459759c0f7f12843a7196afe56db":[12,0,37,15,0,0,14],
-"struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html#a378f35c138082b90bdb0b31a4b0cd80d":[12,0,37,15,0,0,3],
-"struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html#a3d4250d7f11a1320c944f93b8aa3c9d2":[12,0,37,15,0,0,6],
-"struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html#a47bb0378530a9bf3a449b06fcc1a14b8":[12,0,37,15,0,0,1],
-"struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html#a527f2954b93a3ecd4d4a1d279d67ba6e":[12,0,37,15,0,0,9],
-"struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html#a5f8466711f44ba92b90718d4f439b63a":[12,0,37,15,0,0,13],
-"struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html#a692baa72e3e0ae64b2f6fce9f7d864fb":[12,0,37,15,0,0,8]
+"struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html#a378f35c138082b90bdb0b31a4b0cd80d":[12,0,37,15,0,0,3]
 };
