@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"class_data_stream_writer.html#a28501869f93ad348a471c764c864228d":[12,0,100,23],
 "class_data_stream_writer.html#a287962f282d36f42a0caeb90f3f5d74a":[12,0,100,205],
 "class_data_stream_writer.html#a29917770aa0d041a8034f6be7dfc48a3":[12,0,100,4],
 "class_data_stream_writer.html#a2a19ae24812727f331e6f76904aee7b2":[12,0,100,195],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "class_dataflow_1_1_basic_tool_palette_input_dispatcher.html#a835c1efa1c1d814da4963f3d3649432a":[12,0,9,21,2],
 "class_dataflow_1_1_basic_tool_palette_input_dispatcher.html#a89aff07eb1d6acbd496ccf4cce1a0fc9":[12,0,9,21,0],
 "class_dataflow_1_1_cable_inspector_factory.html":[12,0,9,16],
-"class_dataflow_1_1_cable_inspector_factory.html#a64e83b69e2a32eb6d67e8079bd25d238":[12,0,9,16,0],
-"class_dataflow_1_1_cable_inspector_factory.html#a72d66247119a4a1f2f2402d5b8441b17":[12,0,9,16,2]
+"class_dataflow_1_1_cable_inspector_factory.html#a64e83b69e2a32eb6d67e8079bd25d238":[12,0,9,16,0]
 };

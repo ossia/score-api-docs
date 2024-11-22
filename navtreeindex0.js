@@ -1,7 +1,7 @@
 var NAVTREEINDEX0 =
 {
 "_2_vst3_2_control_8hpp_source.html":[13,0,226],
-"_2_vst3_2_widgets_8hpp_source.html":[13,0,1514],
+"_2_vst3_2_widgets_8hpp_source.html":[13,0,1515],
 "_a_l_s_a_interface_8hpp_source.html":[13,0,43],
 "_a_l_s_a_port_audio_interface_8hpp_source.html":[13,0,44],
 "_a_s_i_o_port_audio_interface_8hpp_source.html":[13,0,78],

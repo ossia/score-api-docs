@@ -21,6 +21,7 @@ var class_j_s_1_1_edit_js_context =
     [ "endMacro", "class_j_s_1_1_edit_js_context.html#a1d6911e26171d0ea39743046694ffc62", null ],
     [ "endState", "class_j_s_1_1_edit_js_context.html#a5e86138c62862dc473b4fe14b50bd843", null ],
     [ "endSync", "class_j_s_1_1_edit_js_context.html#a80b066dc5bed922fcc79d24934ee8e56", null ],
+    [ "enumerateDevices", "class_j_s_1_1_edit_js_context.html#adc32f808f525b006c5d97d165613ba8a", null ],
     [ "enumValues", "class_j_s_1_1_edit_js_context.html#a98278b78c214169372f36c3cb557abf0", null ],
     [ "find", "class_j_s_1_1_edit_js_context.html#acb23e62f7f92854d8c41f3f4e2748efe", null ],
     [ "findByLabel", "class_j_s_1_1_edit_js_context.html#a47b91aa4f773bb8de1af8b6f866997e2", null ],
@@ -57,5 +58,6 @@ var class_j_s_1_1_edit_js_context =
     [ "startSync", "class_j_s_1_1_edit_js_context.html#a6825ab93906b7d75f51d80ee0a07cc7a", null ],
     [ "stop", "class_j_s_1_1_edit_js_context.html#ad24a8da3f6ba858226e19b52db8c9b23", null ],
     [ "undo", "class_j_s_1_1_edit_js_context.html#af5da093f85dd83a731a7d0ff694a66d2", null ],
-    [ "valueType", "class_j_s_1_1_edit_js_context.html#a8650e1a70ad27bc87fa2283086719701", null ]
+    [ "valueType", "class_j_s_1_1_edit_js_context.html#a8650e1a70ad27bc87fa2283086719701", null ],
+    [ "w_state", "class_j_s_1_1_edit_js_context.html#a371c8ae5477d10af94a974c552915d7b", null ]
 ];

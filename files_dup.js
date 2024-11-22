@@ -323,6 +323,7 @@ var files_dup =
     [ "DeviceDocumentPlugin.hpp", "_device_document_plugin_8hpp_source.html", null ],
     [ "DeviceDocumentPluginFactory.hpp", "_device_document_plugin_factory_8hpp_source.html", null ],
     [ "DeviceEditDialog.hpp", "_device_edit_dialog_8hpp_source.html", null ],
+    [ "DeviceEnumerator.hpp", "_device_enumerator_8hpp_source.html", null ],
     [ "DeviceExplorerCommandFactory.hpp", "_device_explorer_command_factory_8hpp_source.html", null ],
     [ "DeviceExplorerFilterProxyModel.hpp", "_device_explorer_filter_proxy_model_8hpp_source.html", null ],
     [ "DeviceExplorerMimeTypes.hpp", "_device_explorer_mime_types_8hpp_source.html", null ],
