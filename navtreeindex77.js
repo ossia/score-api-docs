@@ -1,5 +1,6 @@
 var NAVTREEINDEX77 =
 {
+"struct_t_serializer_3_01_data_stream_00_01boost_1_1container_1_1dtl_1_1pair_3_01_t_00_01_u_01_4_01_4.html":[12,0,300],
 "struct_t_serializer_3_01_data_stream_00_01boost_1_1container_1_1dtl_1_1pair_3_01_t_00_01_u_01_4_01_4.html#aca398808212e0aba979de408ab003980":[12,0,300,0],
 "struct_t_serializer_3_01_data_stream_00_01boost_1_1container_1_1flat__map_3_01_t_00_01_u_01_4_01_4.html":[12,0,301],
 "struct_t_serializer_3_01_data_stream_00_01boost_1_1container_1_1small__vector_3_01_t_01_5_00_01_n_01_4_01_4.html":[12,0,302],
@@ -248,6 +249,5 @@ var NAVTREEINDEX77 =
 "struct_variant_j_s_o_n_serializer.html#adec56ad7c52baca6c4880ca9d711f253":[12,0,412,1],
 "struct_video_1_1_decoder_configuration.html":[12,0,58,4],
 "struct_video_1_1_decoder_configuration.html#a48ea068c4198417643aa944ebe0cc2be":[12,0,58,4,2],
-"struct_video_1_1_decoder_configuration.html#a6e8257510ba51ce01d6d7be2d04adad2":[12,0,58,4,1],
-"struct_video_1_1_decoder_configuration.html#a92a81a8aeab56a5d6e571f8108578dca":[12,0,58,4,0]
+"struct_video_1_1_decoder_configuration.html#a6e8257510ba51ce01d6d7be2d04adad2":[12,0,58,4,1]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX75 =
 {
+"struct_scenario_1_1_cycle_detector.html#a8ce22d96884503b120a2df3e3451cd4b":[12,0,49,93,5],
 "struct_scenario_1_1_cycle_detector.html#a98e181450aa4227c795edcf031e64f34":[12,0,49,93,2],
 "struct_scenario_1_1_cycle_detector.html#a9f5a68dd1a4af3e85e77d28314fd340a":[12,0,49,93,3],
 "struct_scenario_1_1_cycle_detector.html#ad866b63dd188bf3d4afac49175d3cd6c":[12,0,49,93,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX75 =
 "struct_scenario_1_1_time_signature_map.html#a4204f333626036819373d678e04682e9":[12,0,49,144,21],
 "struct_scenario_1_1_time_signature_map.html#a4741481c9b892c1725cb137694959c38":[12,0,49,144,17],
 "struct_scenario_1_1_time_signature_map.html#a4e49a565d503c853dea361f03cae9e73":[12,0,49,144,4],
-"struct_scenario_1_1_time_signature_map.html#a553eeb652fd3efdfeae1d008772b7c40":[12,0,49,144,9],
-"struct_scenario_1_1_time_signature_map.html#a61d0fdadce47f107c525f02f603cbb08":[12,0,49,144,12]
+"struct_scenario_1_1_time_signature_map.html#a553eeb652fd3efdfeae1d008772b7c40":[12,0,49,144,9]
 };

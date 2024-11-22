@@ -1,5 +1,6 @@
 var NAVTREEINDEX79 =
 {
+"structavnd__tools_1_1_pattern_combiner.html#a3561b19d8384a232f58c66f65ddc9bd2":[12,0,3,4,12],
 "structavnd__tools_1_1_pattern_combiner.html#a3a99743928eb98e890b247e3df978a49":[12,0,3,4,15],
 "structavnd__tools_1_1_pattern_combiner.html#a5f0937b5ad295361a1a84a539a597de2":[12,0,3,4,9],
 "structavnd__tools_1_1_pattern_combiner.html#a68aebcc96a658741341fd72c0b2cbda6":[12,0,3,4,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX79 =
 "structoscr_1_1_custom_float_control_base.html#ab04228bb4ca9ee07669f160aa7365f8e":[12,0,38,15,3],
 "structoscr_1_1_custom_float_control_base.html#ac256134e3edd00722b1699b0e6dd4f24":[12,0,38,15,2],
 "structoscr_1_1_custom_item_1_1custom__mouse__event.html":[12,0,38,43,0],
-"structoscr_1_1_custom_item_1_1custom__mouse__event.html#a2a5ed081a39e5ac4de97d7ba09d7a60f":[12,0,38,43,0,2],
-"structoscr_1_1_custom_item_1_1custom__mouse__event.html#a2de79040b087f8cad99eef06c1c7d9fe":[12,0,38,43,0,1]
+"structoscr_1_1_custom_item_1_1custom__mouse__event.html#a2a5ed081a39e5ac4de97d7ba09d7a60f":[12,0,38,43,0,2]
 };

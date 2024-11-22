@@ -1,5 +1,6 @@
 var NAVTREEINDEX76 =
 {
+"struct_scenario_1_1_time_signature_map.html#a61d0fdadce47f107c525f02f603cbb08":[12,0,49,144,12],
 "struct_scenario_1_1_time_signature_map.html#a70d2b9ad41f5ebf6f58b1cef72e39a1b":[12,0,49,144,15],
 "struct_scenario_1_1_time_signature_map.html#a86d47d378fc8d80b5bd5d55b5660b9c9":[12,0,49,144,13],
 "struct_scenario_1_1_time_signature_map.html#a89ffa356bc0931df92ddf55bc9e02721":[12,0,49,144,18],
@@ -248,6 +249,5 @@ var NAVTREEINDEX76 =
 "struct_t_serializer_3_01_data_stream_00_01_tree_node_3_01_t_01_4_01_4.html":[12,0,345],
 "struct_t_serializer_3_01_data_stream_00_01_tree_path_01_4.html":[12,0,346],
 "struct_t_serializer_3_01_data_stream_00_01_uuid_key_3_01_u_01_4_01_4.html":[12,0,347],
-"struct_t_serializer_3_01_data_stream_00_01ankerl_1_1unordered__dense_1_1detail_1_1table_3_01_key9d568c1b1874943c973b6c10a84e59db.html":[12,0,299],
-"struct_t_serializer_3_01_data_stream_00_01boost_1_1container_1_1dtl_1_1pair_3_01_t_00_01_u_01_4_01_4.html":[12,0,300]
+"struct_t_serializer_3_01_data_stream_00_01ankerl_1_1unordered__dense_1_1detail_1_1table_3_01_key9d568c1b1874943c973b6c10a84e59db.html":[12,0,299]
 };

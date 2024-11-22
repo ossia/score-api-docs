@@ -1,5 +1,6 @@
 var NAVTREEINDEX68 =
 {
+"struct_media_1_1_audio_info.html#a7d00c10ccb4aec745e52eccca372a263":[12,0,33,8,1],
 "struct_media_1_1_audio_info.html#aa37b806a4ff39129ef504a33b28167d7":[12,0,33,8,4],
 "struct_media_1_1_audio_info.html#acebeb9a461ab5bf13e8a49a450c866cb":[12,0,33,8,5],
 "struct_media_1_1_audio_info.html#ad18b8d2b66de8f1d9ee0c05827d0efa2":[12,0,33,8,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX68 =
 "struct_nodes_1_1_arpeggiator_1_1_arpeggios.html#a25346ef950492f5a8fc7239389f036f8":[12,0,37,0,0,3],
 "struct_nodes_1_1_arpeggiator_1_1_arpeggios.html#a272588a9b23079f8cdfd189257cf9a4a":[12,0,37,0,0,2],
 "struct_nodes_1_1_arpeggiator_1_1_arpeggios.html#ab939c526215ceb26cd935849c8363f46":[12,0,37,0,0,1],
-"struct_nodes_1_1_arpeggiator_1_1_arpeggios.html#ab939c526215ceb26cd935849c8363f46adb286f18fe863f7b4fc868f2e5b34a74":[12,0,37,0,0,1,0],
-"struct_nodes_1_1_arpeggiator_1_1_arpeggios_1_1range.html":[12,0,37,0,0,0]
+"struct_nodes_1_1_arpeggiator_1_1_arpeggios.html#ab939c526215ceb26cd935849c8363f46adb286f18fe863f7b4fc868f2e5b34a74":[12,0,37,0,0,1,0]
 };

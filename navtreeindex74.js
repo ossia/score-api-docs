@@ -1,5 +1,6 @@
 var NAVTREEINDEX74 =
 {
+"struct_recording_1_1_record_automation_creation_visitor.html#a428a3ecedbee738915479234fcb2399e":[12,0,45,2,3],
 "struct_recording_1_1_record_automation_creation_visitor.html#a52cf5c7cf365f7e405c2447fda2cb6e3":[12,0,45,2,0],
 "struct_recording_1_1_record_automation_creation_visitor.html#a62dc0c0ac02a29bcf7ba9feb2b6843f5":[12,0,45,2,4],
 "struct_recording_1_1_record_automation_creation_visitor.html#a75694eb91057fe534ed8ef8f13889c69":[12,0,45,2,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX74 =
 "struct_scenario_1_1_curve_creator.html#adf3e665d6cda553b31f64ae5562978b4":[12,0,49,43,5],
 "struct_scenario_1_1_curve_creator.html#ae741a91406d9c9ae2aabea8368775328":[12,0,49,43,16],
 "struct_scenario_1_1_cycle_detector.html":[12,0,49,93],
-"struct_scenario_1_1_cycle_detector.html#a0ff8d2d81f1d3b39036e445e30920d23":[12,0,49,93,1],
-"struct_scenario_1_1_cycle_detector.html#a8ce22d96884503b120a2df3e3451cd4b":[12,0,49,93,5]
+"struct_scenario_1_1_cycle_detector.html#a0ff8d2d81f1d3b39036e445e30920d23":[12,0,49,93,1]
 };

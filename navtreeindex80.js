@@ -1,5 +1,6 @@
 var NAVTREEINDEX80 =
 {
+"structoscr_1_1_custom_item_1_1custom__mouse__event.html#a2de79040b087f8cad99eef06c1c7d9fe":[12,0,38,43,0,1],
 "structoscr_1_1_custom_item_1_1custom__mouse__event.html#a2de79040b087f8cad99eef06c1c7d9fea31201ac336fc9dd79826456a7108dd98":[12,0,38,43,0,1,0],
 "structoscr_1_1_custom_item_1_1custom__mouse__event.html#a2de79040b087f8cad99eef06c1c7d9fea529ebcbb2c3b165e25ff5333cd4fd9ba":[12,0,38,43,0,1,4],
 "structoscr_1_1_custom_item_1_1custom__mouse__event.html#a2de79040b087f8cad99eef06c1c7d9feacdfcf9d45d73df07ebc6fef745e5cd12":[12,0,38,43,0,1,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX80 =
 "structoscr_1_1setup__control__for__exec.html#a4becd981a3c8514f3e2f70600d7a80fb":[12,0,38,23,4],
 "structoscr_1_1setup__control__for__exec.html#a6f00aec289a58cda9f3576c175f77c95":[12,0,38,23,0],
 "structoscr_1_1setup__control__for__exec.html#a8021ed839f6a2da6b7997edbfad93498":[12,0,38,23,1],
-"structoscr_1_1setup__control__for__exec.html#ad1fde95467583228b3af43c09a492f2b":[12,0,38,23,3],
-"structoscr_1_1setup__control__for__exec.html#adc7cfe9a0ffced6b966346f6f048d1b7":[12,0,38,23,2]
+"structoscr_1_1setup__control__for__exec.html#ad1fde95467583228b3af43c09a492f2b":[12,0,38,23,3]
 };

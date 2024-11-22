@@ -1,5 +1,6 @@
 var NAVTREEINDEX78 =
 {
+"struct_video_1_1_decoder_configuration.html#a92a81a8aeab56a5d6e571f8108578dca":[12,0,58,4,0],
 "struct_video_1_1_decoder_configuration.html#a92b12b291d6d9bb92f8b3dbdb6577a1c":[12,0,58,4,4],
 "struct_video_1_1_decoder_configuration.html#a9fea70bd0cebc2d62b54d165ef9f9b11":[12,0,58,4,3],
 "struct_video_1_1_frame_queue.html":[12,0,58,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX78 =
 "structavnd__tools_1_1_device_recorder_1_1reset__path__message.html#ac6a58d01961d1d2cd940ddfa624b6cfb":[12,0,3,5,6,2],
 "structavnd__tools_1_1_device_recorder_1_1reset__path__message.html#acfbe8c58d75ceb13c19eb0e57ad87c08":[12,0,3,5,6,3],
 "structavnd__tools_1_1_device_recorder_1_1reset__path__message.html#af352750dd5272748313e18e714060dde":[12,0,3,5,6,4],
-"structavnd__tools_1_1_pattern_combiner.html":[12,0,3,4],
-"structavnd__tools_1_1_pattern_combiner.html#a3561b19d8384a232f58c66f65ddc9bd2":[12,0,3,4,12]
+"structavnd__tools_1_1_pattern_combiner.html":[12,0,3,4]
 };
