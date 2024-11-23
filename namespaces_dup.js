@@ -438,7 +438,6 @@ var namespaces_dup =
       [ "AddressSource", "struct_j_s_1_1_address_source.html", "struct_j_s_1_1_address_source" ],
       [ "DeviceContext", "class_j_s_1_1_device_context.html", "class_j_s_1_1_device_context" ],
       [ "DeviceIdentifier", "struct_j_s_1_1_device_identifier.html", "struct_j_s_1_1_device_identifier" ],
-      [ "GlobalDeviceEnumerator", "class_j_s_1_1_global_device_enumerator.html", "class_j_s_1_1_global_device_enumerator" ],
       [ "EditJsContext", "class_j_s_1_1_edit_js_context.html", "class_j_s_1_1_edit_js_context" ],
       [ "PortSource", "struct_j_s_1_1_port_source.html", "struct_j_s_1_1_port_source" ],
       [ "Inlet", "class_j_s_1_1_inlet.html", "class_j_s_1_1_inlet" ],

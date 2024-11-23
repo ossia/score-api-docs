@@ -19,6 +19,7 @@ var structavnd__tools_1_1_device_recorder_1_1player__thread =
     [ "m_map", "structavnd__tools_1_1_device_recorder_1_1player__thread.html#a0981bcd87db4980c99b80f6528d49cac", null ],
     [ "m_vec_no_ts", "structavnd__tools_1_1_device_recorder_1_1player__thread.html#a044c73caaa6e25ca453bcaaef3124d52", null ],
     [ "m_vec_ts", "structavnd__tools_1_1_device_recorder_1_1player__thread.html#a01d06dfcc70a08eac4e430dac8ba8d6b", null ],
+    [ "nots_index", "structavnd__tools_1_1_device_recorder_1_1player__thread.html#a6779f756b81fa967f43d7144f576c278", null ],
     [ "num_params", "structavnd__tools_1_1_device_recorder_1_1player__thread.html#a48723d9e4419a825ea454f388399677d", null ],
     [ "roots", "structavnd__tools_1_1_device_recorder_1_1player__thread.html#ad91a7d2ab0931e612e2c65861fc1a63c", null ]
 ];

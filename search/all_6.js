@@ -56,7 +56,7 @@ var searchData=
   ['glcapabilities_860',['GLCapabilities',['../structscore_1_1_g_l_capabilities.html',1,'score']]],
   ['globalatexit_861',['GlobalAtExit',['../struct_jit_1_1_global_at_exit.html',1,'Jit']]],
   ['globalcontext_862',['GlobalContext',['../struct_l_v2_1_1_global_context.html',1,'LV2']]],
-  ['globaldeviceenumerator_863',['GlobalDeviceEnumerator',['../class_j_s_1_1_global_device_enumerator.html#a6830681261e58bb07c1f2e8788a6ebdd',1,'JS::GlobalDeviceEnumerator::GlobalDeviceEnumerator()'],['../class_j_s_1_1_global_device_enumerator.html',1,'JS::GlobalDeviceEnumerator']]],
+  ['globaldeviceenumerator_863',['GlobalDeviceEnumerator',['../class_global_device_enumerator.html#ae2d8c2a218db719408048bc1d2130189',1,'GlobalDeviceEnumerator::GlobalDeviceEnumerator()'],['../class_global_device_enumerator.html',1,'GlobalDeviceEnumerator']]],
   ['goodolddisplacementpolicy_864',['GoodOldDisplacementPolicy',['../class_scenario_1_1_good_old_displacement_policy.html',1,'Scenario']]],
   ['gpuvideodecoder_865',['GPUVideoDecoder',['../classscore_1_1gfx_1_1_g_p_u_video_decoder.html',1,'score::gfx']]],
   ['graph_866',['Graph',['../structscore_1_1gfx_1_1_graph.html#a657e52f4fed5ca3becc4d019b775e34c',1,'score::gfx::Graph::Graph()'],['../structscore_1_1gfx_1_1_graph.html',1,'score::gfx::Graph']]],

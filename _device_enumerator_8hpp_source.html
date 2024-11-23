@@ -122,65 +122,72 @@ $(document).ready(function(){initNavTree('_device_enumerator_8hpp_source.html','
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>JS</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="struct_j_s_1_1_device_identifier.html">   25</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_j_s_1_1_device_identifier.html">DeviceIdentifier</a></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="struct_j_s_1_1_device_identifier.html">   25</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_j_s_1_1_device_identifier.html">DeviceIdentifier</a> : <span class="keyword">public</span> QObject</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  W_GADGET(<a class="code" href="struct_j_s_1_1_device_identifier.html">DeviceIdentifier</a>)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  W_OBJECT(<a class="code" href="struct_j_s_1_1_device_identifier.html">DeviceIdentifier</a>)</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  QString name{};</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> settings{};</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <a class="code" href="class_device_1_1_protocol_factory.html">Device::ProtocolFactory</a>* protocol{};</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  W_PROPERTY(QString, MEMBER name)</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  W_PROPERTY(<a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>, MEMBER settings)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_j_s_1_1_global_device_enumerator.html">   36</a></span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">class </span><a class="code" href="class_j_s_1_1_global_device_enumerator.html">GlobalDeviceEnumerator</a> : <span class="keyword">public</span> QObject</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  W_OBJECT(<a class="code" href="class_j_s_1_1_global_device_enumerator.html">GlobalDeviceEnumerator</a>)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_j_s_1_1_global_device_enumerator.html#a6830681261e58bb07c1f2e8788a6ebdd">GlobalDeviceEnumerator</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  ~<a class="code" href="class_j_s_1_1_global_device_enumerator.html">GlobalDeviceEnumerator</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="struct_j_s_1_1_device_identifier.html">DeviceIdentifier</a>(</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      QString a, <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> b, <a class="code" href="class_device_1_1_protocol_factory.html">Device::ProtocolFactory</a>* c)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      : name{std::move(a)}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      , settings{std::move(b)}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      , protocol{c}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  QString name;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> settings;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="class_device_1_1_protocol_factory.html">Device::ProtocolFactory</a>* protocol{};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  W_PROPERTY(QString, name MEMBER name)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  W_PROPERTY(<a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>, settings MEMBER settings)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  W_PROPERTY(<a class="code" href="class_device_1_1_protocol_factory.html">Device::ProtocolFactory</a>*, protocol MEMBER protocol)</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_global_device_enumerator.html">   43</a></span>&#160;};</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> setContext(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>* doc);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  W_SLOT(setContext)</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> deviceAdded(</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <a class="code" href="class_device_1_1_protocol_factory.html">Device::ProtocolFactory</a>* factory, <span class="keyword">const</span> QString&amp; name,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> settings) W_SIGNAL(deviceAdded, factory, name, settings)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> deviceRemoved(<a class="code" href="class_device_1_1_protocol_factory.html">Device::ProtocolFactory</a>* factory, <span class="keyword">const</span> QString&amp; name)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      W_SIGNAL(deviceRemoved, factory, name)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="comment">// QList&lt;Device::DeviceSettings&gt; devices();</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  QQmlListProperty&lt;JS::DeviceIdentifier&gt; devices();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">class </span><a class="code" href="class_global_device_enumerator.html">GlobalDeviceEnumerator</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  W_OBJECT(<a class="code" href="class_global_device_enumerator.html">GlobalDeviceEnumerator</a>)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_global_device_enumerator.html">GlobalDeviceEnumerator</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  ~<a class="code" href="class_global_device_enumerator.html">GlobalDeviceEnumerator</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> setContext(<span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>* doc);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  W_SLOT(setContext)</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  W_PROPERTY(QQmlListProperty&lt;JS::DeviceIdentifier&gt;, devices READ devices)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">bool</span> enumerate() { <span class="keywordflow">return</span> m_enumerate; }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> setEnumerate(<span class="keywordtype">bool</span> b);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> enumerateChanged(<span class="keywordtype">bool</span> b) W_SIGNAL(enumerateChanged, b)</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  W_PROPERTY(<span class="keywordtype">bool</span>, enumerate READ enumerate WRITE setEnumerate NOTIFY enumerateChanged)</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> reprocess();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>* doc{};</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  std::unordered_map&lt;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <a class="code" href="class_device_1_1_protocol_factory.html">Device::ProtocolFactory</a>*, std::vector&lt;std::pair&lt;QString, Device::DeviceSettings&gt;&gt;&gt;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      m_known_devices;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  std::unordered_map&lt;Device::ProtocolFactory*, Device::DeviceEnumerators&gt;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      m_current_enums;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  std::vector&lt;DeviceIdentifier*&gt; m_raw_list;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> deviceAdded(</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <a class="code" href="class_device_1_1_protocol_factory.html">Device::ProtocolFactory</a>* factory, <span class="keyword">const</span> QString&amp; name,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <a class="code" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> settings) W_SIGNAL(deviceAdded, factory, name, settings)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> deviceRemoved(<a class="code" href="class_device_1_1_protocol_factory.html">Device::ProtocolFactory</a>* factory, <span class="keyword">const</span> QString&amp; name)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      W_SIGNAL(deviceRemoved, factory, name)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="comment">// QList&lt;Device::DeviceSettings&gt; devices();</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  QQmlListProperty&lt;JS::DeviceIdentifier&gt; devices();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  W_PROPERTY(QQmlListProperty&lt;JS::DeviceIdentifier&gt;, devices READ devices)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">bool</span> enumerate() { <span class="keywordflow">return</span> m_enumerate; }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> setEnumerate(<span class="keywordtype">bool</span> b);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> enumerateChanged(<span class="keywordtype">bool</span> b) W_SIGNAL(enumerateChanged, b)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  W_PROPERTY(<span class="keywordtype">bool</span>, enumerate READ enumerate WRITE setEnumerate NOTIFY enumerateChanged)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">void</span> reprocess();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">const</span> <a class="code" href="structscore_1_1_document_context.html">score::DocumentContext</a>* doc{};</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">bool</span> m_enumerate{};</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="class_j_s_1_1_global_device_enumerator.html">JS::GlobalDeviceEnumerator</a>*)</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="class_device_1_1_protocol_factory.html">Device::ProtocolFactory</a>*)</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  std::unordered_map&lt;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <a class="code" href="class_device_1_1_protocol_factory.html">Device::ProtocolFactory</a>*, std::vector&lt;std::pair&lt;QString, Device::DeviceSettings&gt;&gt;&gt;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      m_known_devices;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  std::unordered_map&lt;Device::ProtocolFactory*, Device::DeviceEnumerators&gt;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      m_current_enums;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  std::vector&lt;DeviceIdentifier*&gt; m_raw_list;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">bool</span> m_enumerate{};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;Q_DECLARE_METATYPE(JS::GlobalDeviceEnumerator*)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;W_REGISTER_ARGTYPE(<a class="code" href="class_device_1_1_protocol_factory.html">Device::ProtocolFactory</a>*)</div>
 <div class="ttc" id="aclass_device_1_1_protocol_factory_html"><div class="ttname"><a href="class_device_1_1_protocol_factory.html">Device::ProtocolFactory</a></div><div class="ttdef"><b>Definition:</b> ProtocolFactoryInterface.hpp:47</div></div>
-<div class="ttc" id="aclass_j_s_1_1_global_device_enumerator_html"><div class="ttname"><a href="class_j_s_1_1_global_device_enumerator.html">JS::GlobalDeviceEnumerator</a></div><div class="ttdef"><b>Definition:</b> DeviceEnumerator.hpp:37</div></div>
-<div class="ttc" id="aclass_j_s_1_1_global_device_enumerator_html_a6830681261e58bb07c1f2e8788a6ebdd"><div class="ttname"><a href="class_j_s_1_1_global_device_enumerator.html#a6830681261e58bb07c1f2e8788a6ebdd">JS::GlobalDeviceEnumerator::GlobalDeviceEnumerator</a></div><div class="ttdeci">GlobalDeviceEnumerator()</div><div class="ttdef"><b>Definition:</b> DeviceEnumerator.cpp:20</div></div>
+<div class="ttc" id="aclass_global_device_enumerator_html"><div class="ttname"><a href="class_global_device_enumerator.html">GlobalDeviceEnumerator</a></div><div class="ttdef"><b>Definition:</b> DeviceEnumerator.hpp:44</div></div>
 <div class="ttc" id="anamespace_device_html"><div class="ttname"><a href="namespace_device.html">Device</a></div><div class="ttdoc">Manipulation of Devices from Qt.</div><div class="ttdef"><b>Definition:</b> AddressSettings.cpp:14</div></div>
 <div class="ttc" id="astruct_device_1_1_device_settings_html"><div class="ttname"><a href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a></div><div class="ttdef"><b>Definition:</b> DeviceSettings.hpp:20</div></div>
 <div class="ttc" id="astruct_j_s_1_1_device_identifier_html"><div class="ttname"><a href="struct_j_s_1_1_device_identifier.html">JS::DeviceIdentifier</a></div><div class="ttdef"><b>Definition:</b> DeviceEnumerator.hpp:26</div></div>

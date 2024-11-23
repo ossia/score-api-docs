@@ -49,7 +49,7 @@ var searchData=
   ['glcapabilities_3677',['GLCapabilities',['../structscore_1_1_g_l_capabilities.html',1,'score']]],
   ['globalatexit_3678',['GlobalAtExit',['../struct_jit_1_1_global_at_exit.html',1,'Jit']]],
   ['globalcontext_3679',['GlobalContext',['../struct_l_v2_1_1_global_context.html',1,'LV2']]],
-  ['globaldeviceenumerator_3680',['GlobalDeviceEnumerator',['../class_j_s_1_1_global_device_enumerator.html',1,'JS']]],
+  ['globaldeviceenumerator_3680',['GlobalDeviceEnumerator',['../class_global_device_enumerator.html',1,'']]],
   ['goodolddisplacementpolicy_3681',['GoodOldDisplacementPolicy',['../class_scenario_1_1_good_old_displacement_policy.html',1,'Scenario']]],
   ['gpuvideodecoder_3682',['GPUVideoDecoder',['../classscore_1_1gfx_1_1_g_p_u_video_decoder.html',1,'score::gfx']]],
   ['graph_3683',['Graph',['../structscore_1_1gfx_1_1_graph.html',1,'score::gfx']]],

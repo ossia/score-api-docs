@@ -1,5 +1,6 @@
 var NAVTREEINDEX73 =
 {
+"struct_process_1_1_state_node_values.html#ae5570d12dfe8efdd65f86461ee6c3282":[12,0,43,89,3],
 "struct_process_1_1_style.html":[12,0,43,92],
 "struct_process_1_1_style.html#a0197decabf92b5b04303b4657765dce9":[12,0,43,92,48],
 "struct_process_1_1_style.html#a06b3c09406da02481154be6007df879d":[12,0,43,92,71],
@@ -235,10 +236,10 @@ var NAVTREEINDEX73 =
 "struct_protocols_1_1osc__protocols.html#a23918feefc04313c644ab7ee30df7ed2":[12,0,44,72,2],
 "struct_protocols_1_1osc__protocols.html#a328331beba9db4da83b2430c779748f6":[12,0,44,72,1],
 "struct_protocols_1_1osc__protocols.html#a9eeb1feac0030bddc594f9a25fed104e":[12,0,44,72,3],
-"struct_q_map_key_adaptor.html":[12,0,221],
-"struct_q_map_key_adaptor.html#a2d04c4beb09e6a21b14e03522698c229":[12,0,221,1],
-"struct_q_map_key_adaptor.html#aa37c93e953e29b4e8abbaba0dd83f4e2":[12,0,221,2],
-"struct_q_map_key_adaptor.html#ad89a272f642401011590109662f9856a":[12,0,221,0],
+"struct_q_map_key_adaptor.html":[12,0,222],
+"struct_q_map_key_adaptor.html#a2d04c4beb09e6a21b14e03522698c229":[12,0,222,1],
+"struct_q_map_key_adaptor.html#aa37c93e953e29b4e8abbaba0dd83f4e2":[12,0,222,2],
+"struct_q_map_key_adaptor.html#ad89a272f642401011590109662f9856a":[12,0,222,0],
 "struct_recording_1_1_box.html":[12,0,45,16],
 "struct_recording_1_1_box.html#a721abe014117ce48acbc6449f0666db3":[12,0,45,16,0],
 "struct_recording_1_1_box.html#a8067c433c341792f1434368b960c7c6a":[12,0,45,16,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX73 =
 "struct_recording_1_1_parameter_policy.html":[12,0,45,4],
 "struct_recording_1_1_parameter_policy.html#a6f72dd3ddb36c7f3caf6c79732f8e7de":[12,0,45,4,0],
 "struct_recording_1_1_record_automation_creation_visitor.html":[12,0,45,2],
-"struct_recording_1_1_record_automation_creation_visitor.html#a08b8ab3af6b67e8873b4729f075eb86d":[12,0,45,2,11],
-"struct_recording_1_1_record_automation_creation_visitor.html#a363e7ae8c597af79f5f66bf5ae5aa143":[12,0,45,2,10]
+"struct_recording_1_1_record_automation_creation_visitor.html#a08b8ab3af6b67e8873b4729f075eb86d":[12,0,45,2,11]
 };

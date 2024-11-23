@@ -602,7 +602,6 @@ var hierarchy =
     [ "DeviceExplorerNode", null, [
       [ "TreeNode< DeviceExplorerNode >", "class_tree_node.html", null ]
     ] ],
-    [ "JS::DeviceIdentifier", "struct_j_s_1_1_device_identifier.html", null ],
     [ "Explorer::Settings::DeviceLogLevel", "struct_explorer_1_1_settings_1_1_device_log_level.html", null ],
     [ "Device::DeviceSettings", "struct_device_1_1_device_settings.html", null ],
     [ "Execution::dfs_visitor_state", "struct_execution_1_1dfs__visitor__state.html", null ],
@@ -2705,6 +2704,7 @@ var hierarchy =
       [ "Faust::LibraryHandler", "class_faust_1_1_library_handler.html", null ],
       [ "FocusDispatcher", "class_focus_dispatcher.html", null ],
       [ "Gfx::GfxContext", "class_gfx_1_1_gfx_context.html", null ],
+      [ "GlobalDeviceEnumerator", "class_global_device_enumerator.html", null ],
       [ "GraphicsSceneToolPalette", "class_graphics_scene_tool_palette.html", [
         [ "Curve::ToolPalette", "class_curve_1_1_tool_palette.html", [
           [ "Curve::ToolPalette_T< Process::LayerContext >", "struct_curve_1_1_tool_palette___t.html", null ],
@@ -2834,8 +2834,8 @@ var hierarchy =
       [ "JS::ApplicationPlugin", "class_j_s_1_1_application_plugin.html", null ],
       [ "JS::ConsoleLibraryHandler", "class_j_s_1_1_console_library_handler.html", null ],
       [ "JS::DeviceContext", "class_j_s_1_1_device_context.html", null ],
+      [ "JS::DeviceIdentifier", "struct_j_s_1_1_device_identifier.html", null ],
       [ "JS::EditJsContext", "class_j_s_1_1_edit_js_context.html", null ],
-      [ "JS::GlobalDeviceEnumerator", "class_j_s_1_1_global_device_enumerator.html", null ],
       [ "JS::Inlet", "class_j_s_1_1_inlet.html", null ],
       [ "JS::JsUtils", "class_j_s_1_1_js_utils.html", null ],
       [ "JS::LibraryHandler", "class_j_s_1_1_library_handler.html", null ],
