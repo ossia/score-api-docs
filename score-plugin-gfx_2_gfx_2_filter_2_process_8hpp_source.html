@@ -163,39 +163,41 @@ $(document).ready(function(){initNavTree('score-plugin-gfx_2_gfx_2_filter_2_proc
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> loadPreset(<span class="keyword">const</span> <a class="code" href="struct_process_1_1_preset.html">Process::Preset</a>&amp; preset) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="struct_process_1_1_preset.html">Process::Preset</a> savePreset() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> setupIsf(<span class="keyword">const</span> isf::descriptor&amp; d);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="comment">//void setupNormalShader();</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  QString prettyName() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="struct_gfx_1_1_shader_source.html">ShaderSource</a> m_program;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="struct_gfx_1_1_processed_program.html">ProcessedProgram</a> m_processedProgram;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">using</span> <a class="code" href="class_process_1_1_process_factory___t.html">ProcessFactory</a> = <a class="code" href="class_process_1_1_process_factory___t.html">Process::ProcessFactory_T&lt;Gfx::Filter::Model&gt;</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> setupIsf(</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="keyword">const</span> isf::descriptor&amp; d,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keyword">const</span> ossia::flat_map&lt;QString, ossia::value&gt;&amp; previous_values);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="comment">//void setupNormalShader();</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  QString prettyName() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="struct_gfx_1_1_shader_source.html">ShaderSource</a> m_program;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <a class="code" href="struct_gfx_1_1_processed_program.html">ProcessedProgram</a> m_processedProgram;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">using</span> <a class="code" href="class_process_1_1_process_factory___t.html">ProcessFactory</a> = <a class="code" href="class_process_1_1_process_factory___t.html">Process::ProcessFactory_T&lt;Gfx::Filter::Model&gt;</a>;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#include &lt;Scenario/Commands/ScriptEditCommand.hpp&gt;</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_gfx.html">Gfx</a></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="class_gfx_1_1_change_shader.html">   82</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_gfx_1_1_change_shader.html">ChangeShader</a> : <span class="keyword">public</span> <a class="code" href="class_scenario_1_1_edit_script.html">Scenario::EditScript</a>&lt;Filter::Model, Filter::Model::p_program&gt;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#include &lt;Scenario/Commands/ScriptEditCommand.hpp&gt;</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_gfx.html">Gfx</a></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  SCORE_COMMAND_DECL(CommandFactoryName(), <a class="code" href="class_gfx_1_1_change_shader.html">ChangeShader</a>, <span class="stringliteral">&quot;Edit a script&quot;</span>)</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keyword">using</span> EditScript::EditScript;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore.html">score</a></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="structscore_1_1_static_property_command_3_01_gfx_1_1_filter_1_1_model_1_1p__program_01_4.html">   93</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structscore_1_1_static_property_command.html">StaticPropertyCommand</a>&lt;<a class="code" href="namespace_gfx.html">Gfx</a>::Filter::Model::p_program&gt; : <a class="code" href="class_gfx_1_1_change_shader.html">Gfx::ChangeShader</a></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keyword">using</span> ChangeShader::ChangeShader;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
-<div class="ttc" id="aclass_gfx_1_1_change_shader_html"><div class="ttname"><a href="class_gfx_1_1_change_shader.html">Gfx::ChangeShader</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Filter/Process.hpp:83</div></div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_gfx_1_1_change_shader.html">   84</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_gfx_1_1_change_shader.html">ChangeShader</a> : <span class="keyword">public</span> <a class="code" href="class_scenario_1_1_edit_script.html">Scenario::EditScript</a>&lt;Filter::Model, Filter::Model::p_program&gt;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  SCORE_COMMAND_DECL(CommandFactoryName(), <a class="code" href="class_gfx_1_1_change_shader.html">ChangeShader</a>, <span class="stringliteral">&quot;Edit a script&quot;</span>)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">using</span> EditScript::EditScript;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacescore.html">score</a></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="structscore_1_1_static_property_command_3_01_gfx_1_1_filter_1_1_model_1_1p__program_01_4.html">   95</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structscore_1_1_static_property_command.html">StaticPropertyCommand</a>&lt;<a class="code" href="namespace_gfx.html">Gfx</a>::Filter::Model::p_program&gt; : <a class="code" href="class_gfx_1_1_change_shader.html">Gfx::ChangeShader</a></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keyword">using</span> ChangeShader::ChangeShader;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;};</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
+<div class="ttc" id="aclass_gfx_1_1_change_shader_html"><div class="ttname"><a href="class_gfx_1_1_change_shader.html">Gfx::ChangeShader</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Filter/Process.hpp:85</div></div>
 <div class="ttc" id="aclass_gfx_1_1_filter_1_1_model_html"><div class="ttname"><a href="class_gfx_1_1_filter_1_1_model.html">Gfx::Filter::Model</a></div><div class="ttdef"><b>Definition:</b> score-plugin-gfx/Gfx/Filter/Process.hpp:16</div></div>
 <div class="ttc" id="aclass_process_1_1_process_factory___t_html"><div class="ttname"><a href="class_process_1_1_process_factory___t.html">Process::ProcessFactory_T</a></div><div class="ttdef"><b>Definition:</b> GenericProcessFactory.hpp:15</div></div>
 <div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition:</b> score-lib-process/Process/Process.hpp:61</div></div>
