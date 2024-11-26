@@ -105,16 +105,6 @@ var annotated_dup =
       [ "Model", "class_control_surface_1_1_model.html", "class_control_surface_1_1_model" ],
       [ "View", "class_control_surface_1_1_view.html", "class_control_surface_1_1_view" ]
     ] ],
-    [ "csv2", "namespacecsv2.html", [
-      [ "trim_policy", null, [
-        [ "no_trimming", "structcsv2_1_1trim__policy_1_1no__trimming.html", null ],
-        [ "trim_characters", "structcsv2_1_1trim__policy_1_1trim__characters.html", null ]
-      ] ],
-      [ "delimiter", "structcsv2_1_1delimiter.html", null ],
-      [ "quote_character", "structcsv2_1_1quote__character.html", null ],
-      [ "first_row_is_header", "structcsv2_1_1first__row__is__header.html", null ],
-      [ "Reader", "classcsv2_1_1_reader.html", "classcsv2_1_1_reader" ]
-    ] ],
     [ "Curve", "namespace_curve.html", [
       [ "Element", null, [
         [ "Nothing_tag", "struct_curve_1_1_element_1_1_nothing__tag.html", null ],

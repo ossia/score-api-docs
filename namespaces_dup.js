@@ -117,7 +117,6 @@ var namespaces_dup =
       [ "CommandFactoryName", "score-plugin-controlsurface_2_control_surface_2_command_factory_8hpp.html#a0920e7c1e4444ff9777ad992012df8b7", null ],
       [ "makeControlFromType", "score-plugin-controlsurface_2_control_surface_2_process_8cpp.html#ab4eb8c8346669a8b7780cd13c3271bd6", null ]
     ] ],
-    [ "csv2", "namespacecsv2.html", "namespacecsv2" ],
     [ "Curve", "namespace_curve.html", "namespace_curve" ],
     [ "Dataflow", null, [
       [ "CableItem", "class_dataflow_1_1_cable_item.html", "class_dataflow_1_1_cable_item" ],
