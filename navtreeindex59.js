@@ -1,5 +1,7 @@
 var NAVTREEINDEX59 =
 {
+"namespacescore_1_1gfx.html#add5f72745723b9cdbc8038d333a059dcaa21a5b355f7d0b15765b9e2b1b1b95f6":[11,0,52,2,89,3],
+"namespacescore_1_1gfx.html#add5f72745723b9cdbc8038d333a059dcad6b0e08ecf02adfa139e2a55781566ec":[11,0,52,2,89,0],
 "namespacescore_1_1gfx.html#aee3fecbd0a1860c0bef60edbfea54512":[11,0,52,2,91],
 "namespacescore_1_1gfx.html#aee3fecbd0a1860c0bef60edbfea54512a01b2dc1a2922d9be9e12ef0709600977":[11,0,52,2,91,4],
 "namespacescore_1_1gfx.html#aee3fecbd0a1860c0bef60edbfea54512a1686a6c336b71b36d77354cea19a8b52":[11,0,52,2,91,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX59 =
 "score-plugin-packagemanager_2_package_manager_2_view_8cpp.html#af9054d9a37fdf2e0d1eea5ca5f0d2eb6":[11,0,44,0,2],
 "score-plugin-packagemanager_2_package_manager_2_view_8hpp_source.html":[13,0,1494],
 "score-plugin-protocols_2_protocols_2_settings_2_factory_8hpp_source.html":[13,0,488],
-"score-plugin-protocols_2_protocols_2_settings_2_model_8cpp.html#ae6e3fb1cfeea0d8b2b9c95b5d947f952":[11,0,46,1,0,0],
-"score-plugin-protocols_2_protocols_2_settings_2_model_8hpp_source.html":[13,0,841],
-"score-plugin-protocols_2_protocols_2_settings_2_view_8hpp_source.html":[13,0,1495]
+"score-plugin-protocols_2_protocols_2_settings_2_model_8cpp.html#ae6e3fb1cfeea0d8b2b9c95b5d947f952":[11,0,46,1,0,0]
 };

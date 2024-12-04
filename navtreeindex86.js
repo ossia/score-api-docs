@@ -1,5 +1,7 @@
 var NAVTREEINDEX86 =
 {
+"structscore_1_1indirect__map__iterator.html#a707358daa6f16cc4a03f511774f6a429":[12,0,49,257,14],
+"structscore_1_1indirect__map__iterator.html#a82bed2b66203b69e366947c6bb3a2f30":[12,0,49,257,5],
 "structscore_1_1indirect__map__iterator.html#a972a7cae3b974183eb35740a7c54797f":[12,0,49,257,13],
 "structscore_1_1indirect__map__iterator.html#a9f91fce5d75e4be02dda67390dd73743":[12,0,49,257,8],
 "structscore_1_1indirect__map__iterator.html#aa049847c20c4c453cf0be3443287f2ef":[12,0,49,257,2],
@@ -241,13 +243,11 @@ var NAVTREEINDEX86 =
 "structvst_1_1vst__node__base_1_1vst__control.html#ac5cb8799293d4c342ef758549d932512":[12,0,58,12,0,0],
 "todo.html":[10],
 "widgets_2_constants_8hpp_source.html":[13,0,220],
-"":[11,0,34,4],
-"":[11,0,38,19],
-"":[11,0,25],
-"":[11,0,36],
-"":[11,0,59,1],
-"":[11,0,34],
-"":[11,0,32,0],
-"":[11,0,38,24],
-"":[11,0,46,1]
+"":[11,0,27,0],
+"":[11,0,18,3],
+"":[11,0,38,26],
+"":[11,0,38,23],
+"":[11,0,49],
+"":[11,0,14],
+"":[11,0,40,0]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX74 =
 {
+"struct_recording_1_1_record_automation_subsequent_callback_visitor.html#a443ec115a967a7d4f61153a659a44321":[12,0,44,6,6],
+"struct_recording_1_1_record_automation_subsequent_callback_visitor.html#a68dfe8c833b1549746dc22514af617fa":[12,0,44,6,5],
 "struct_recording_1_1_record_automation_subsequent_callback_visitor.html#a9316cbb253183261004235b6465597f2":[12,0,44,6,3],
 "struct_recording_1_1_record_automation_subsequent_callback_visitor.html#a931796c91c3dcff9a04e3d13384941c3":[12,0,44,6,10],
 "struct_recording_1_1_record_automation_subsequent_callback_visitor.html#aa7e74a1e57b0b3540094982284112786":[12,0,44,6,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX74 =
 "struct_scenario_1_1_displayed_elements_presenter_container.html#a6474de7e99d45ebca25c6654d45032e5":[12,0,48,72,4],
 "struct_scenario_1_1_displayed_elements_presenter_container.html#aa3a3d8a2ce073bd8178a5b4b306212e5":[12,0,48,72,8],
 "struct_scenario_1_1_displayed_elements_presenter_container.html#aaaf04fcbbc1e03fd3677b4763dad0a7b":[12,0,48,72,6],
-"struct_scenario_1_1_displayed_elements_presenter_container.html#aea4769915bc7761c5c5ec3aeab1625cc":[12,0,48,72,2],
-"struct_scenario_1_1_element_traits.html":[12,0,48,305],
-"struct_scenario_1_1_element_traits_3_01_base_scenario_container_00_01_event_model_01_4.html":[12,0,48,63]
+"struct_scenario_1_1_displayed_elements_presenter_container.html#aea4769915bc7761c5c5ec3aeab1625cc":[12,0,48,72,2]
 };

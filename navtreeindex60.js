@@ -1,5 +1,7 @@
 var NAVTREEINDEX60 =
 {
+"score-plugin-protocols_2_protocols_2_settings_2_model_8hpp_source.html":[13,0,841],
+"score-plugin-protocols_2_protocols_2_settings_2_view_8hpp_source.html":[13,0,1495],
 "score-plugin-recording_2_recording_2_application_plugin_8hpp_source.html":[13,0,59],
 "score-plugin-remotecontrol_2_remote_control_2_application_plugin_8hpp_source.html":[13,0,60],
 "score-plugin-remotecontrol_2_remote_control_2_scenario_2_process_8hpp.html#a1cc75b8c28816b55445c35b590bec850":[11,0,49,18],
@@ -247,7 +249,5 @@ var NAVTREEINDEX60 =
 "struct_analysis_1_1_m_f_c_c.html#af999515ce714ee9cf17ecd27196fde39":[12,0,0,18,11],
 "struct_analysis_1_1_mel_spectrum.html":[12,0,0,17],
 "struct_analysis_1_1_mel_spectrum.html#a103967e308595be0705794cfa08e93ed":[12,0,0,17,9],
-"struct_analysis_1_1_mel_spectrum.html#a1faef305e0a6d71277647ca827c0a3c8":[12,0,0,17,11],
-"struct_analysis_1_1_mel_spectrum.html#a29896937e96ec29c2ad7d88cd44935cc":[12,0,0,17,3],
-"struct_analysis_1_1_mel_spectrum.html#a2b1f39cc4ff63b0a4c24f37636a4755e":[12,0,0,17,1]
+"struct_analysis_1_1_mel_spectrum.html#a1faef305e0a6d71277647ca827c0a3c8":[12,0,0,17,11]
 };

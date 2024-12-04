@@ -1,5 +1,7 @@
 var NAVTREEINDEX30 =
 {
+"class_protocols_1_1_joystick_device.html#a27941c25db5c3228130b4b40acaa5bca":[12,0,43,33,0],
+"class_protocols_1_1_joystick_device.html#aa8391c679638f620fc2379e029cc9415":[12,0,43,33,1],
 "class_protocols_1_1_joystick_device.html#ade854aa04fe470f6b616f6e7d1298ec7":[12,0,43,33,3],
 "class_protocols_1_1_joystick_device.html#ae8c8e65b7cbca478a93dc5d0b8eb0dc7":[12,0,43,33,2],
 "class_protocols_1_1_joystick_enumerator.html":[12,0,43,34],
@@ -247,7 +249,5 @@ var NAVTREEINDEX30 =
 "class_protocols_1_1_u_d_p_widget.html#ac663320e7f1cc87010cafe9aa2502e10":[12,0,43,67,2],
 "class_protocols_1_1_unix_datagram_widget.html":[12,0,43,68],
 "class_protocols_1_1_unix_datagram_widget.html#a00c235f75279df897854399f4a0d6b0b":[12,0,43,68,0],
-"class_protocols_1_1_unix_datagram_widget.html#a2f3196aafa58e5fbfda1d4a497a69a61":[12,0,43,68,1],
-"class_protocols_1_1_unix_datagram_widget.html#a3490642c14fd9ed9b4682edd48cd0998":[12,0,43,68,2],
-"class_protocols_1_1_unix_stream_widget.html":[12,0,43,69]
+"class_protocols_1_1_unix_datagram_widget.html#a2f3196aafa58e5fbfda1d4a497a69a61":[12,0,43,68,1]
 };

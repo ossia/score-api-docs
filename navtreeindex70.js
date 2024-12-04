@@ -1,5 +1,7 @@
 var NAVTREEINDEX70 =
 {
+"struct_nodes_1_1_factor_oracle_1_1_node.html#a117d69b8c8f8067c6f08494a61841fad":[12,0,36,11,3,7],
+"struct_nodes_1_1_factor_oracle_1_1_node.html#a75632f522ba757348f89d0c70ce6988f":[12,0,36,11,3,1],
 "struct_nodes_1_1_factor_oracle_1_1_node.html#acf3f440b923a8a0f28d868e6ebb1ae3b":[12,0,36,11,3,4],
 "struct_nodes_1_1_factor_oracle_1_1_node.html#ad1162d6cd8911d54aae42cbd30882947":[12,0,36,11,3,3],
 "struct_nodes_1_1_factor_oracle_1_1_node.html#ad62033331ab37e10c8c0a2a42eec1848":[12,0,36,11,3,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX70 =
 "struct_nodes_1_1_micro_mapping_1_1_node.html#a37a17a630aad499110ac74a28ca4f54e":[12,0,36,20,0,12],
 "struct_nodes_1_1_micro_mapping_1_1_node.html#a4a58a638f8059155aa2d1d80965be270":[12,0,36,20,0,8],
 "struct_nodes_1_1_micro_mapping_1_1_node.html#a4e26ea90ae0d5ff1f4e858af424c3f3e":[12,0,36,20,0,3],
-"struct_nodes_1_1_micro_mapping_1_1_node.html#a54e9b2aee3c0088f1e79a945f9b7c7aa":[12,0,36,20,0,2],
-"struct_nodes_1_1_micro_mapping_1_1_node.html#a68b63943cd845dae636913cd263c790d":[12,0,36,20,0,5],
-"struct_nodes_1_1_micro_mapping_1_1_node.html#a733d2dce09d952855f79bac002260b64":[12,0,36,20,0,14]
+"struct_nodes_1_1_micro_mapping_1_1_node.html#a54e9b2aee3c0088f1e79a945f9b7c7aa":[12,0,36,20,0,2]
 };
