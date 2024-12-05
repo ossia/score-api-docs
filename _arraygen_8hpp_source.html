@@ -155,39 +155,40 @@ $(document).ready(function(){initNavTree('_arraygen_8hpp_source.html',''); initR
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    };</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    boost::container::static_vector&lt;Expr, 1024&gt; expressions;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">double</span> cur_time{};</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">double</span> cur_deltatime{};</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">double</span> cur_pos{};</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    int64_t last_value_time{};</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    std::string last_expression;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  } state;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  ossia::exec_state_facade ossia_state;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">using</span> tick = halp::tick_flicks;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> tick&amp; tk)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    GenericMathMapping&lt;State&gt;::run_polyphonic(</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        inputs.sz.value, outputs.port.call, inputs.expr.value, tk, state);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="struct_nodes_1_1_array_generator_1_1_node_1_1ui.html">   75</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="struct_nodes_1_1_array_generator_1_1_node_1_1ui.html">ui</a></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    halp_meta(layout, halp::layouts::vbox)</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    struct : halp::control&lt;&amp;ins::expr&gt;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      halp_flag(dynamic_size);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    } expr;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    halp::control&lt;&amp;ins::sz&gt; sz;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  };</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">double</span> count{};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">double</span> cur_time{};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">double</span> cur_deltatime{};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">double</span> cur_pos{};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    int64_t last_value_time{};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    std::string last_expression;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  } state;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  ossia::exec_state_facade ossia_state;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">using</span> tick = halp::tick_flicks;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> tick&amp; tk)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    GenericMathMapping&lt;State&gt;::run_polyphonic(</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        inputs.sz.value, outputs.port.call, inputs.expr.value, tk, state);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="struct_nodes_1_1_array_generator_1_1_node_1_1ui.html">   76</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="struct_nodes_1_1_array_generator_1_1_node_1_1ui.html">ui</a></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    halp_meta(layout, halp::layouts::vbox)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    struct : halp::control&lt;&amp;ins::expr&gt;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      halp_flag(dynamic_size);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    } expr;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    halp::control&lt;&amp;ins::sz&gt; sz;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  };</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
 <div class="ttc" id="anamespace_state_html"><div class="ttname"><a href="namespace_state.html">State</a></div><div class="ttdoc">Utilities for OSSIA data structures.</div><div class="ttdef"><b>Definition:</b> DeviceInterface.hpp:33</div></div>
 <div class="ttc" id="astruct_nodes_1_1_array_generator_1_1_node_1_1_state_1_1_expr_html"><div class="ttname"><a href="struct_nodes_1_1_array_generator_1_1_node_1_1_state_1_1_expr.html">Nodes::ArrayGenerator::Node::State::Expr</a></div><div class="ttdef"><b>Definition:</b> Arraygen.hpp:36</div></div>
 <div class="ttc" id="astruct_nodes_1_1_array_generator_1_1_node_1_1ins_html"><div class="ttname"><a href="struct_nodes_1_1_array_generator_1_1_node_1_1ins.html">Nodes::ArrayGenerator::Node::ins</a></div><div class="ttdef"><b>Definition:</b> Arraygen.hpp:23</div></div>
-<div class="ttc" id="astruct_nodes_1_1_array_generator_1_1_node_1_1ui_html"><div class="ttname"><a href="struct_nodes_1_1_array_generator_1_1_node_1_1ui.html">Nodes::ArrayGenerator::Node::ui</a></div><div class="ttdef"><b>Definition:</b> Arraygen.hpp:76</div></div>
+<div class="ttc" id="astruct_nodes_1_1_array_generator_1_1_node_1_1ui_html"><div class="ttname"><a href="struct_nodes_1_1_array_generator_1_1_node_1_1ui.html">Nodes::ArrayGenerator::Node::ui</a></div><div class="ttdef"><b>Definition:</b> Arraygen.hpp:77</div></div>
 <div class="ttc" id="astruct_nodes_1_1_array_generator_1_1_node_html"><div class="ttname"><a href="struct_nodes_1_1_array_generator_1_1_node.html">Nodes::ArrayGenerator::Node</a></div><div class="ttdef"><b>Definition:</b> Arraygen.hpp:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
