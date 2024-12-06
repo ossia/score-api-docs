@@ -16,6 +16,7 @@ var class_j_s_1_1_edit_js_context =
     [ "createState", "class_j_s_1_1_edit_js_context.html#a01f3629b05180aa1d3e85c35450090ca", null ],
     [ "ctx", "class_j_s_1_1_edit_js_context.html#a36fb0ef6013c686caef397ce62d86d08", null ],
     [ "deviceToJson", "class_j_s_1_1_edit_js_context.html#a34ea4a9c9dadbaf059de294af51ba4a0", null ],
+    [ "deviceToOSCQuery", "class_j_s_1_1_edit_js_context.html#aab9310a54872ff9e39b98266cb6f7994", null ],
     [ "document", "class_j_s_1_1_edit_js_context.html#a507454e11df014f236610006083e2722", null ],
     [ "endEvent", "class_j_s_1_1_edit_js_context.html#a9e04bcc983b42b65bdbd3787542f33b8", null ],
     [ "endMacro", "class_j_s_1_1_edit_js_context.html#a1d6911e26171d0ea39743046694ffc62", null ],

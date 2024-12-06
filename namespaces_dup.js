@@ -1263,7 +1263,7 @@ var namespaces_dup =
       [ "gstreamerToLibav", "_g_streamer_compatibility_8hpp.html#a29bc633952a8bbda95ce3c979d9328f9", null ],
       [ "hardwareDecoderIsAvailable", "_gpu_formats_8hpp.html#a9d22e27f971c8353f305217ccd186d5f", null ],
       [ "initFrameBuffer", "_frame_queue_8cpp.html#acfa505e62a71f436593f38a7705057fa", null ],
-      [ "initFrameFromRawData", "_g_streamer_compatibility_8hpp.html#a975cd0b76bdfa96fbcf6e68c1b0e25cd", null ],
+      [ "initFrameFromRawData", "_g_streamer_compatibility_8hpp.html#a7b93c8c56ee9c3ddd24dbb126eaa452c", null ],
       [ "readVideoFrame", "_video_decoder_8cpp.html#ad47fd8930d66e0b467ee38f2fe2546be", null ]
     ] ],
     [ "vst", null, [
