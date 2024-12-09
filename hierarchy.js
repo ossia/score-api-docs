@@ -1582,10 +1582,10 @@ var hierarchy =
     [ "Explorer::make_dataspace", "struct_explorer_1_1make__dataspace.html", null ],
     [ "Explorer::make_unit", "struct_explorer_1_1make__unit.html", null ],
     [ "MapSerializer", "struct_map_serializer.html", [
-      [ "TSerializer< DataStream, ankerl::unordered_dense::detail::table< Key, T, Hash, KeyEqual, AllocatorOrContainer, Bucket, IsSegmented > >", "struct_t_serializer_3_01_data_stream_00_01ankerl_1_1unordered__dense_1_1detail_1_1table_3_01_key9d568c1b1874943c973b6c10a84e59db.html", null ],
+      [ "TSerializer< DataStream, ankerl::unordered_dense::detail::table< Key, T, Hash, KeyEqual, AllocatorOrContainer, Bucket, BC, IsSegmented > >", "struct_t_serializer_3_01_data_stream_00_01ankerl_1_1unordered__dense_1_1detail_1_1table_3_01_key41104e411901c768d82ebf5dde8e463c.html", null ],
       [ "TSerializer< DataStream, boost::container::flat_map< T, U > >", "struct_t_serializer_3_01_data_stream_00_01boost_1_1container_1_1flat__map_3_01_t_00_01_u_01_4_01_4.html", null ],
       [ "TSerializer< DataStream, std::unordered_map< T, U, H, E, A > >", "struct_t_serializer_3_01_data_stream_00_01std_1_1unordered__map_3_01_t_00_01_u_00_01_h_00_01_e_00_01_a_01_4_01_4.html", null ],
-      [ "TSerializer< JSONObject, ankerl::unordered_dense::detail::table< Key, T, Hash, KeyEqual, AllocatorOrContainer, Bucket, IsSegmented > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01ankerl_1_1unordered__dense_1_1detail_1_1table_3_01_ee53973b510ab9619cf36e32b426cbc3.html", null ],
+      [ "TSerializer< JSONObject, ankerl::unordered_dense::detail::table< Key, T, Hash, KeyEqual, AllocatorOrContainer, Bucket, BC, IsSegmented > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01ankerl_1_1unordered__dense_1_1detail_1_1table_3_01_8a139c6fbcaf97eb0a7df3f6d04ea369.html", null ],
       [ "TSerializer< JSONObject, boost::container::flat_map< T, U > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01boost_1_1container_1_1flat__map_3_01_t_00_01_u_01_4_01_4.html", null ],
       [ "TSerializer< JSONObject, std::unordered_map< T, U, H, E, A > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1unordered__map_3_01_t_00_01_u_00_01_h_00_01_e_00_01_a_01_4_01_4.html", null ]
     ] ],
