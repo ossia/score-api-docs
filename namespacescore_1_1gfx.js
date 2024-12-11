@@ -117,7 +117,8 @@ var namespacescore_1_1gfx =
       [ "Image", "namespacescore_1_1gfx.html#aee3fecbd0a1860c0bef60edbfea54512abe53a0541a6d36f6ecb879fa2c584b08", null ],
       [ "Audio", "namespacescore_1_1gfx.html#aee3fecbd0a1860c0bef60edbfea54512ab22f0418e8ac915eb66f829d262d14a2", null ],
       [ "Camera", "namespacescore_1_1gfx.html#aee3fecbd0a1860c0bef60edbfea54512a967d35e40f3f95b1f538bd248640bf3b", null ],
-      [ "Geometry", "namespacescore_1_1gfx.html#aee3fecbd0a1860c0bef60edbfea54512ad9c6333623e6357515fcbf17be806273", null ]
+      [ "Geometry", "namespacescore_1_1gfx.html#aee3fecbd0a1860c0bef60edbfea54512ad9c6333623e6357515fcbf17be806273", null ],
+      [ "Buffer", "namespacescore_1_1gfx.html#aee3fecbd0a1860c0bef60edbfea54512a7e62bc342f41c946868f0ea6f0b712d8", null ]
     ] ],
     [ "buildPipeline", "namespacescore_1_1gfx.html#a8c078a7b49d41725690f0f9aa64d772f", null ],
     [ "buildPipeline", "namespacescore_1_1gfx.html#a5b9fe885aafe546214b24385dda52e77", null ],

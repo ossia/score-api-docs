@@ -1,5 +1,6 @@
 var NAVTREEINDEX61 =
 {
+"struct_analysis_1_1_mel_spectrum.html#a103967e308595be0705794cfa08e93ed":[12,0,0,17,9],
 "struct_analysis_1_1_mel_spectrum.html#a1faef305e0a6d71277647ca827c0a3c8":[12,0,0,17,11],
 "struct_analysis_1_1_mel_spectrum.html#a29896937e96ec29c2ad7d88cd44935cc":[12,0,0,17,3],
 "struct_analysis_1_1_mel_spectrum.html#a2b1f39cc4ff63b0a4c24f37636a4755e":[12,0,0,17,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX61 =
 "struct_curve_1_1_style.html#a1f226039738560c85a0b61b8d172628b":[12,0,7,11,0],
 "struct_curve_1_1_style.html#a22dfa696ccc5426b3acc6042747ea83f":[12,0,7,11,12],
 "struct_curve_1_1_style.html#a2fa6734887d295c8cc72962bea2c9e46":[12,0,7,11,4],
-"struct_curve_1_1_style.html#a35a0e5612260af5c65f36d481d83f50a":[12,0,7,11,13],
-"struct_curve_1_1_style.html#a5384e5342b4e776bb608dbae191bba9f":[12,0,7,11,9]
+"struct_curve_1_1_style.html#a35a0e5612260af5c65f36d481d83f50a":[12,0,7,11,13]
 };

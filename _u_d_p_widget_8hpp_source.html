@@ -138,56 +138,53 @@ $(document).ready(function(){initNavTree('_u_d_p_widget_8hpp_source.html',''); i
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    m_broadcast = <span class="keyword">new</span> QCheckBox{<span class="keyword">this</span>};</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    m_broadcast-&gt;setCheckState(Qt::Unchecked);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    m_broadcast-&gt;setWhatsThis(tr(<span class="stringliteral">&quot;Broadcast to every device in the IP broadcast range&quot;</span>));</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    connect(m_broadcast, &amp;QCheckBox::stateChanged, <span class="keyword">this</span>, [<span class="keyword">this</span>](<span class="keywordtype">int</span> checked) {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      m_host-&gt;setEnabled(!checked);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    });</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    m_host = <span class="keyword">new</span> QLineEdit(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    m_host-&gt;setText(<span class="stringliteral">&quot;127.0.0.1&quot;</span>);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    m_host-&gt;setWhatsThis(</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        tr(<span class="stringliteral">&quot;This is the IP address of the computer the OSC-compatible software is &quot;</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;           <span class="stringliteral">&quot;located on. You can use 127.0.0.1 if the software runs on the same machine &quot;</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;           <span class="stringliteral">&quot;than score.&quot;</span>));</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    layout-&gt;addRow(tr(<span class="stringliteral">&quot;Device listening port&quot;</span>), m_remotePort);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    layout-&gt;addRow(tr(<span class="stringliteral">&quot;Broadcast&quot;</span>), m_broadcast);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    layout-&gt;addRow(tr(<span class="stringliteral">&quot;Device host&quot;</span>), m_host);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    layout-&gt;addRow(tr(<span class="stringliteral">&quot;score listening port&quot;</span>), m_localPort);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  ossia::net::udp_configuration settings() <span class="keyword">const</span> noexcept</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    ossia::net::udp_configuration conf;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    conf.local = ossia::net::inbound_socket_configuration{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="stringliteral">&quot;0.0.0.0&quot;</span>, (uint16_t)m_localPort-&gt;value()};</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    conf.remote = ossia::net::outbound_socket_configuration{</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        m_host-&gt;text().toStdString(), (uint16_t)m_remotePort-&gt;value(),</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        m_broadcast-&gt;isChecked()};</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> conf;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> setSettings(<span class="keyword">const</span> ossia::net::udp_configuration&amp; conf)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">if</span>(conf.remote)</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      m_remotePort-&gt;setValue(conf.remote-&gt;port);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      m_host-&gt;setText(QString::fromStdString(conf.remote-&gt;host));</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      m_broadcast-&gt;setChecked(conf.remote-&gt;broadcast);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">if</span>(conf.local)</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      m_localPort-&gt;setValue(conf.local-&gt;port);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  QSpinBox* m_localPort{};</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  QSpinBox* m_remotePort{};</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  QCheckBox* m_broadcast{};</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  QLineEdit* m_host{};</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    m_host = <span class="keyword">new</span> QLineEdit(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    m_host-&gt;setText(<span class="stringliteral">&quot;127.0.0.1&quot;</span>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    m_host-&gt;setWhatsThis(</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        tr(<span class="stringliteral">&quot;This is the IP address of the computer the OSC-compatible software is &quot;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;           <span class="stringliteral">&quot;located on. You can use 127.0.0.1 if the software runs on the same machine &quot;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;           <span class="stringliteral">&quot;than score.&quot;</span>));</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    layout-&gt;addRow(tr(<span class="stringliteral">&quot;Device listening port&quot;</span>), m_remotePort);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    layout-&gt;addRow(tr(<span class="stringliteral">&quot;Broadcast&quot;</span>), m_broadcast);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    layout-&gt;addRow(tr(<span class="stringliteral">&quot;Device host&quot;</span>), m_host);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    layout-&gt;addRow(tr(<span class="stringliteral">&quot;score listening port&quot;</span>), m_localPort);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  ossia::net::udp_configuration settings() <span class="keyword">const</span> noexcept</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    ossia::net::udp_configuration conf;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    conf.local = ossia::net::inbound_socket_configuration{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="stringliteral">&quot;0.0.0.0&quot;</span>, (uint16_t)m_localPort-&gt;value()};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    conf.remote = ossia::net::outbound_socket_configuration{</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        m_host-&gt;text().toStdString(), (uint16_t)m_remotePort-&gt;value(),</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        m_broadcast-&gt;isChecked()};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> conf;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> setSettings(<span class="keyword">const</span> ossia::net::udp_configuration&amp; conf)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span>(conf.remote)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      m_remotePort-&gt;setValue(conf.remote-&gt;port);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      m_host-&gt;setText(QString::fromStdString(conf.remote-&gt;host));</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      m_broadcast-&gt;setChecked(conf.remote-&gt;broadcast);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">if</span>(conf.local)</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      m_localPort-&gt;setValue(conf.local-&gt;port);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  QSpinBox* m_localPort{};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  QSpinBox* m_remotePort{};</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  QCheckBox* m_broadcast{};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  QLineEdit* m_host{};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
 <div class="ttc" id="aclass_device_1_1_protocol_settings_widget_html"><div class="ttname"><a href="class_device_1_1_protocol_settings_widget.html">Device::ProtocolSettingsWidget</a></div><div class="ttdef"><b>Definition:</b> ProtocolSettingsWidget.hpp:22</div></div>
 <div class="ttc" id="aclass_protocols_1_1_u_d_p_widget_html"><div class="ttname"><a href="class_protocols_1_1_u_d_p_widget.html">Protocols::UDPWidget</a></div><div class="ttdef"><b>Definition:</b> UDPWidget.hpp:14</div></div>
 </div><!-- fragment --></div><!-- contents -->

@@ -1,5 +1,6 @@
 var NAVTREEINDEX79 =
 {
+"structavnd__tools_1_1_pattern_combiner_1_1do__process__fixed.html#ac13a78ffa4857179ed6a4f0849aa783a":[12,0,3,4,1,2],
 "structavnd__tools_1_1_pattern_combiner_1_1do__process__fixed.html#ac4e3717ef16d986dd05f21052f771190":[12,0,3,4,1,5],
 "structavnd__tools_1_1_pattern_combiner_1_1do__process__fixed.html#ac5f46ce454193265cc2861501c93df52":[12,0,3,4,1,12],
 "structavnd__tools_1_1_pattern_combiner_1_1do__process__fixed.html#ac7bbc58836373b9eaf92278f602c9e0b":[12,0,3,4,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX79 =
 "structoscr_1_1_edge_item.html":[12,0,37,53],
 "structoscr_1_1_edge_item.html#a4fa4b17ad4b9a3a7ef75b96063f887e1":[12,0,37,53,3],
 "structoscr_1_1_edge_item.html#a6dc71719c3db52192bc5d0f213d8e1a9":[12,0,37,53,2],
-"structoscr_1_1_edge_item.html#a712fe9e7675ea885ecac212cc322bffc":[12,0,37,53,0],
-"structoscr_1_1_edge_item.html#a77d18dd17b2e0edf3bc2c9e044ab5007":[12,0,37,53,4]
+"structoscr_1_1_edge_item.html#a712fe9e7675ea885ecac212cc322bffc":[12,0,37,53,0]
 };

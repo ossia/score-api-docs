@@ -1,5 +1,6 @@
 var NAVTREEINDEX65 =
 {
+"struct_gfx_1_1_shared_output_settings.html#aa193e186df672da8024cb5eefa7da05a":[12,0,18,75,3],
 "struct_gfx_1_1_shared_output_settings.html#aa372766ff3b6e41aed3461a99006d85b":[12,0,18,75,1],
 "struct_gfx_1_1_shared_output_settings.html#af9a6d0f89cf7a4008e9c01427d183c28":[12,0,18,75,0],
 "struct_gfx_1_1_shmdata_output_node.html":[12,0,18,80],
@@ -248,6 +249,5 @@ var NAVTREEINDEX65 =
 "struct_j_s_1_1_token_request_value_type.html#af262e3b0a2613a2c8c980bce51158219":[12,0,26,24,5],
 "struct_j_s_1_1_token_request_value_type.html#af3da8fd03a3794389aff3d420ae9bf7c":[12,0,26,24,10],
 "struct_j_s_1_1_token_request_value_type.html#afbc075c7fe766f682ce17cd0ffd08026":[12,0,26,24,26],
-"struct_j_s_1_1_vec2f_value_type.html":[12,0,26,21],
-"struct_j_s_1_1_vec2f_value_type.html#a0856794a3774e32c661a7252bd7835b9":[12,0,26,21,16]
+"struct_j_s_1_1_vec2f_value_type.html":[12,0,26,21]
 };

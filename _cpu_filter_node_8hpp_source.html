@@ -415,30 +415,17 @@ $(document).ready(function(){initNavTree('_cpu_filter_node_8hpp_source.html','')
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;  {</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    this-&gt;instance = id;</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keyword">using</span> texture_inputs = avnd::texture_input_introspection&lt;Node_T&gt;;</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="keyword">using</span> texture_outputs = avnd::texture_output_introspection&lt;Node_T&gt;;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    initGfxPorts&lt;Node_T&gt;(<span class="keyword">this</span>, this-&gt;input, this-&gt;output);</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  }</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    <span class="comment">// FIXME incorrect if we have other ports before, e.g. a float part followed by an image port</span></div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; texture_inputs::size; i++)</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    {</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;      this-&gt;input.push_back(</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;          <span class="keyword">new</span> <a class="code" href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a>{<span class="keyword">this</span>, {}, score::gfx::Types::Image, {}});</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    }</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; texture_outputs::size; i++)</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    {</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;      this-&gt;output.push_back(</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;          <span class="keyword">new</span> <a class="code" href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a>{<span class="keyword">this</span>, {}, score::gfx::Types::Image, {}});</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    }</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  }</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>*</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;  createRenderer(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; r) <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  {</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> GfxRenderer&lt;Node_T&gt;{*<span class="keyword">this</span>};</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;  }</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;};</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;}</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;  <a class="code" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>*</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  createRenderer(<a class="code" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; r) <span class="keyword">const</span> noexcept <span class="keyword">override</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  {</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> GfxRenderer&lt;Node_T&gt;{*<span class="keyword">this</span>};</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;  }</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;};</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;}</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassoscr_1_1_process_model_html"><div class="ttname"><a href="classoscr_1_1_process_model.html">oscr::ProcessModel</a></div><div class="ttdef"><b>Definition:</b> score-plugin-avnd/Crousti/ProcessModel.hpp:77</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdoc">Renderer for a given node.</div><div class="ttdef"><b>Definition:</b> NodeRenderer.hpp:11</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition:</b> RenderList.hpp:19</div></div>

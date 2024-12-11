@@ -1,5 +1,6 @@
 var NAVTREEINDEX86 =
 {
+"structscore_1_1indirect__iterator.html#afa0da5c10a7dfc0ab6d2d37e52877f0c":[12,0,49,255,4],
 "structscore_1_1indirect__map__iterator.html":[12,0,49,257],
 "structscore_1_1indirect__map__iterator.html#a0c47d30e1e068406aec18467d1815cc2":[12,0,49,257,1],
 "structscore_1_1indirect__map__iterator.html#a45a1a2a350a54d554754a5649c9f15c9":[12,0,49,257,15],
@@ -246,8 +247,7 @@ var NAVTREEINDEX86 =
 "structvst_1_1vst__node__base_1_1vst__control.html#ac5cb8799293d4c342ef758549d932512":[12,0,58,12,0,0],
 "todo.html":[10],
 "widgets_2_constants_8hpp_source.html":[13,0,220],
-"":[11,0,49,0],
-"":[11,0,51,1,0],
-"":[11,0,41],
-"":[11,0,52,0]
+"":[11,0,38,12],
+"":[11,0,34,3],
+"":[11,0,33,0]
 };

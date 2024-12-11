@@ -1,5 +1,6 @@
 var NAVTREEINDEX76 =
 {
+"struct_scenario_1_1_timenode_graph.html#a09d474121802dac36c666a730327260c":[12,0,48,98,5],
 "struct_scenario_1_1_timenode_graph.html#a118777a9de2061026a71fc943c794029":[12,0,48,98,3],
 "struct_scenario_1_1_timenode_graph.html#a1c2226bb460425da38e7d5a3c6791b47":[12,0,48,98,2],
 "struct_scenario_1_1_timenode_graph.html#ab0b98598fa83df2b2e1a655f7ed23fac":[12,0,48,98,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX76 =
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1flat__map_3_01_t_00_01_u_01_4_01_4.html#ac0e1c4334bcee1b6fd511f17b9b9ee0a":[12,0,313,0],
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1flat__set_3_01_t_01_4_01_4.html":[12,0,314],
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1flat__set_3_01_t_01_4_01_4.html#a6aa8798d97834f0d30f6d72130d30bf1":[12,0,314,0],
-"struct_t_serializer_3_01_data_stream_00_01ossia_1_1nullable__variant_3_01_args_8_8_8_01_4_01_4.html":[12,0,315],
-"struct_t_serializer_3_01_data_stream_00_01ossia_1_1nullable__variant_3_01_args_8_8_8_01_4_01_4.html#a7083be497ff6f93cb1938e32b8039dd8":[12,0,315,0]
+"struct_t_serializer_3_01_data_stream_00_01ossia_1_1nullable__variant_3_01_args_8_8_8_01_4_01_4.html":[12,0,315]
 };

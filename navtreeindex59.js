@@ -7,6 +7,7 @@ var NAVTREEINDEX59 =
 "namespacescore_1_1gfx.html#aee3fecbd0a1860c0bef60edbfea54512a01b2dc1a2922d9be9e12ef0709600977":[11,0,52,2,91,4],
 "namespacescore_1_1gfx.html#aee3fecbd0a1860c0bef60edbfea54512a1686a6c336b71b36d77354cea19a8b52":[11,0,52,2,91,1],
 "namespacescore_1_1gfx.html#aee3fecbd0a1860c0bef60edbfea54512a22ae0e2b89e5e3d477f988cc36d3272b":[11,0,52,2,91,2],
+"namespacescore_1_1gfx.html#aee3fecbd0a1860c0bef60edbfea54512a7e62bc342f41c946868f0ea6f0b712d8":[11,0,52,2,91,10],
 "namespacescore_1_1gfx.html#aee3fecbd0a1860c0bef60edbfea54512a967d35e40f3f95b1f538bd248640bf3b":[11,0,52,2,91,8],
 "namespacescore_1_1gfx.html#aee3fecbd0a1860c0bef60edbfea54512ab22f0418e8ac915eb66f829d262d14a2":[11,0,52,2,91,7],
 "namespacescore_1_1gfx.html#aee3fecbd0a1860c0bef60edbfea54512abe53a0541a6d36f6ecb879fa2c584b08":[11,0,52,2,91,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX59 =
 "score-plugin-packagemanager_2_package_manager_2_view_8cpp.html#a79b039a29b6cf8a636eb1cf7a48600ec":[11,0,44,0,1],
 "score-plugin-packagemanager_2_package_manager_2_view_8cpp.html#a8d0ed4af6f3d48c1508764669f122d88":[11,0,44,0,3],
 "score-plugin-packagemanager_2_package_manager_2_view_8cpp.html#af9054d9a37fdf2e0d1eea5ca5f0d2eb6":[11,0,44,0,2],
-"score-plugin-packagemanager_2_package_manager_2_view_8hpp_source.html":[13,0,1494],
-"score-plugin-protocols_2_protocols_2_settings_2_factory_8hpp_source.html":[13,0,488]
+"score-plugin-packagemanager_2_package_manager_2_view_8hpp_source.html":[13,0,1494]
 };
