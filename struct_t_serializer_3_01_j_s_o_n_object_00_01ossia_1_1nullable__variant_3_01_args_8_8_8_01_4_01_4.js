@@ -1,4 +1,0 @@
-var struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1nullable__variant_3_01_args_8_8_8_01_4_01_4 =
-[
-    [ "var_t", "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1nullable__variant_3_01_args_8_8_8_01_4_01_4.html#a771b714d23f2c21bd6e3aa89e0cc9d4d", null ]
-];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['oscr_5531',['oscr',['../namespaceoscr.html',1,'']]]
+  ['oscr_0',['oscr',['../namespaceoscr.html',1,'']]]
 ];

@@ -1,25 +1,4 @@
 var class_execution_1_1_document_plugin =
 [
-    [ "ContextData", "struct_execution_1_1_document_plugin_1_1_context_data.html", "struct_execution_1_1_document_plugin_1_1_context_data" ],
-    [ "DocumentPlugin", "class_execution_1_1_document_plugin.html#ade94efa2af7c59bdfb993bfe6957c3fb", null ],
-    [ "~DocumentPlugin", "class_execution_1_1_document_plugin.html#afe8fc0f92e478a99303a172af8bbd2fc", null ],
-    [ "actions", "class_execution_1_1_document_plugin.html#a3e3487172963806ec897c466de349d0d", null ],
-    [ "audioProto", "class_execution_1_1_document_plugin.html#a0defe0c2fd23e433c52ff49085a6002f", null ],
-    [ "baseScenario", "class_execution_1_1_document_plugin.html#a8aead00a59ac2ccf24aa9e387c69104e", null ],
-    [ "clear", "class_execution_1_1_document_plugin.html#a69d3f871e36166342c60045c95a0dd49", null ],
-    [ "context", "class_execution_1_1_document_plugin.html#af2e5a79fe6046a5b9c5c0ce19600bed9", null ],
-    [ "contextData", "class_execution_1_1_document_plugin.html#aee2779bc29cdb2ee3b6fe1dea9921c46", null ],
-    [ "executionController", "class_execution_1_1_document_plugin.html#af4dba5704c86e2bc77a78bdeb00cb3ed", null ],
-    [ "finished", "class_execution_1_1_document_plugin.html#af656fb9df4d2bf34a129c1c6edff7b22", null ],
-    [ "isPlaying", "class_execution_1_1_document_plugin.html#aeabe575ad5ff698daca2c6c699cfe53e", null ],
-    [ "on_documentClosing", "class_execution_1_1_document_plugin.html#a1b87e00b84199fec8346fc078e012f32", null ],
-    [ "playStartState", "class_execution_1_1_document_plugin.html#afa357d5bc7b9a259a8df6c97f086c093", null ],
-    [ "playStopState", "class_execution_1_1_document_plugin.html#ac924e1bf3e4d8f10a047ec268027c35d", null ],
-    [ "registerAction", "class_execution_1_1_document_plugin.html#a76526644fb8ee49804d70b1aec00beb2", null ],
-    [ "reload", "class_execution_1_1_document_plugin.html#a3d736e503e0f2719863cb4830101a9ed", null ],
-    [ "runAllCommands", "class_execution_1_1_document_plugin.html#a719926f4523402b4e88c6890e0a4890d", null ],
-    [ "slot_bench", "class_execution_1_1_document_plugin.html#a99b946df6c0c682902ce0ef2ae559988", null ],
-    [ "audio_device", "class_execution_1_1_document_plugin.html#a4031ee9584d23ceffeb49723c2e47f27", null ],
-    [ "local_device", "class_execution_1_1_document_plugin.html#a2669e9e755c91987326a9baf97a024c5", null ],
-    [ "settings", "class_execution_1_1_document_plugin.html#a4ced36ce308e7d09f57e3d4199696a83", null ]
+    [ "ContextData", "struct_execution_1_1_document_plugin_1_1_context_data.html", null ]
 ];

@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['coding_20style_5820',['Coding Style',['../_coding_style.html',1,'']]],
-  ['commands_5821',['Commands',['../_commands.html',1,'']]],
-  ['contexts_5822',['Contexts',['../_contexts.html',1,'']]]
+  ['and_20interfaces_0',['Plug-ins, factories and interfaces',['../_plugins_factories_and_interfaces.html',1,'']]]
 ];

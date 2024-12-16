@@ -173,7 +173,6 @@ var hierarchy =
     [ "Nodes::Chord::Node::chord_type", "struct_nodes_1_1_chord_1_1_node_1_1chord__type.html", null ],
     [ "Jit::ClangCC1Driver", "class_jit_1_1_clang_c_c1_driver.html", null ],
     [ "Gfx::clear_msg_visitor", "struct_gfx_1_1clear__msg__visitor.html", null ],
-    [ "score::Modifier::Click_tag", "structscore_1_1_modifier_1_1_click__tag.html", null ],
     [ "Execution::Clock", "class_execution_1_1_clock.html", [
       [ "Dataflow::Clock", "class_dataflow_1_1_clock.html", null ],
       [ "Execution::ManualClock::Clock", "class_execution_1_1_manual_clock_1_1_clock.html", null ]
@@ -200,6 +199,18 @@ var hierarchy =
           [ "score::StaticPropertyCommand< AvndJit::Model::p_script >", "structscore_1_1_static_property_command_3_01_avnd_jit_1_1_model_1_1p__script_01_4.html", null ]
         ] ]
       ] ],
+      [ "Scenario::EditScript< FaustEffectModel, FaustEffectModel::p_script >", "class_scenario_1_1_edit_script.html", [
+        [ "Faust::EditScript", "class_faust_1_1_edit_script.html", [
+          [ "score::StaticPropertyCommand< Faust::FaustEffectModel::p_script >", "structscore_1_1_static_property_command_3_01_faust_1_1_faust_effect_model_1_1p__script_01_4.html", null ]
+        ] ]
+      ] ],
+      [ "Scenario::EditScript< GeometryFilter::Model, GeometryFilter::Model::p_script >", "class_scenario_1_1_edit_script.html", null ],
+      [ "Scenario::EditScript< Filter::Model, Filter::Model::p_program >", "class_scenario_1_1_edit_script.html", null ],
+      [ "Scenario::EditScript< JS::ProcessModel, JS::ProcessModel::p_script >", "class_scenario_1_1_edit_script.html", [
+        [ "JS::EditScript", "class_j_s_1_1_edit_script.html", [
+          [ "score::StaticPropertyCommand< JS::ProcessModel::p_script >", "structscore_1_1_static_property_command_3_01_j_s_1_1_process_model_1_1p__script_01_4.html", null ]
+        ] ]
+      ] ],
       [ "Scenario::EditScript< BytebeatModel, BytebeatModel::p_script >", "class_scenario_1_1_edit_script.html", [
         [ "Jit::EditBytebeat", "class_jit_1_1_edit_bytebeat.html", [
           [ "score::StaticPropertyCommand< Jit::BytebeatModel::p_script >", "structscore_1_1_static_property_command_3_01_jit_1_1_bytebeat_model_1_1p__script_01_4.html", null ]
@@ -210,28 +221,8 @@ var hierarchy =
           [ "score::StaticPropertyCommand< Jit::JitEffectModel::p_script >", "structscore_1_1_static_property_command_3_01_jit_1_1_jit_effect_model_1_1p__script_01_4.html", null ]
         ] ]
       ] ],
-      [ "Scenario::EditScript< FaustEffectModel, FaustEffectModel::p_script >", "class_scenario_1_1_edit_script.html", [
-        [ "Faust::EditScript", "class_faust_1_1_edit_script.html", [
-          [ "score::StaticPropertyCommand< Faust::FaustEffectModel::p_script >", "structscore_1_1_static_property_command_3_01_faust_1_1_faust_effect_model_1_1p__script_01_4.html", null ]
-        ] ]
-      ] ],
-      [ "Scenario::EditScript< Filter::Model, Filter::Model::p_program >", "class_scenario_1_1_edit_script.html", [
-        [ "Gfx::ChangeShader", "class_gfx_1_1_change_shader.html", [
-          [ "score::StaticPropertyCommand< Gfx::Filter::Model::p_program >", "structscore_1_1_static_property_command_3_01_gfx_1_1_filter_1_1_model_1_1p__program_01_4.html", null ]
-        ] ]
-      ] ],
       [ "Scenario::EditScript< Pd::ProcessModel, Pd::ProcessModel::p_script >", "class_scenario_1_1_edit_script.html", [
         [ "Pd::EditPdPath", "class_pd_1_1_edit_pd_path.html", null ]
-      ] ],
-      [ "Scenario::EditScript< JS::ProcessModel, JS::ProcessModel::p_script >", "class_scenario_1_1_edit_script.html", [
-        [ "JS::EditScript", "class_j_s_1_1_edit_script.html", [
-          [ "score::StaticPropertyCommand< JS::ProcessModel::p_script >", "structscore_1_1_static_property_command_3_01_j_s_1_1_process_model_1_1p__script_01_4.html", null ]
-        ] ]
-      ] ],
-      [ "Scenario::EditScript< GeometryFilter::Model, GeometryFilter::Model::p_script >", "class_scenario_1_1_edit_script.html", [
-        [ "Gfx::ChangeGeometryShader", "class_gfx_1_1_change_geometry_shader.html", [
-          [ "score::StaticPropertyCommand< Gfx::GeometryFilter::Model::p_script >", "structscore_1_1_static_property_command_3_01_gfx_1_1_geometry_filter_1_1_model_1_1p__script_01_4.html", null ]
-        ] ]
       ] ],
       [ "Automation::ChangeAddress", "class_automation_1_1_change_address.html", null ],
       [ "Automation::InitAutomation", "class_automation_1_1_init_automation.html", null ],
@@ -485,6 +476,13 @@ var hierarchy =
             [ "LocalTree::DefaultProcessComponent", "class_local_tree_1_1_default_process_component.html", null ]
           ] ]
         ] ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, Automation::ProcessModel >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, AvndJit::Model >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, ControlSurface::Model >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, Faust::FaustEffectModel >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, Jit::JitEffectModel >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, Media::Merger::Model >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, Media::Metro::Model >", "class_process_1_1_generic_process_component___t.html", null ],
         [ "Process::GenericProcessComponent_T< ProcessComponent, Process_T >", "class_process_1_1_generic_process_component___t.html", [
           [ "ControlSurface::LocalTreeProcessComponent", "class_control_surface_1_1_local_tree_process_component.html", null ],
           [ "Execution::ProcessComponent_T< Process_T, OSSIA_Process_T >", "struct_execution_1_1_process_component___t.html", null ],
@@ -493,6 +491,29 @@ var hierarchy =
           [ "LocalTree::ScenarioComponentBase", "class_local_tree_1_1_scenario_component_base.html", null ],
           [ "RemoteControl::ScenarioBase", "class_remote_control_1_1_scenario_base.html", null ]
         ] ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, Scenario::ProcessModel >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, Media::Sound::ProcessModel >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, Media::Step::Model >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, Fx< DSP > >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, Gfx::Filter::Model >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, Gfx::GeometryFilter::Model >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, Gfx::Images::Model >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, Gfx::Text::Model >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, Gfx::Video::Model >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, Gradient::ProcessModel >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, InterpState::ProcessModel >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, JS::ProcessModel >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, Jit::BytebeatModel >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, Mapping::ProcessModel >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, Midi::ProcessModel >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, Nodal::Model >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, Patternist::ProcessModel >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, Spline3D::ProcessModel >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, Spline::ProcessModel >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, YSFX::ProcessModel >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, ProcessModel< Node > >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, vst3::Model >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, vst::Model >", "class_process_1_1_generic_process_component___t.html", null ],
         [ "Execution::ProcessComponent", "class_execution_1_1_process_component.html", [
           [ "Pd::Component", "class_pd_1_1_component.html", null ]
         ] ],
@@ -524,7 +545,7 @@ var hierarchy =
     [ "oscr::con_unvalidated_dynamic_port< Node, Field, NPred, NField >", "structoscr_1_1con__unvalidated__dynamic__port.html", null ],
     [ "score::gfx::OutputNode::Configuration", "structscore_1_1gfx_1_1_output_node_1_1_configuration.html", null ],
     [ "Scenario::ConstrainedDisplacementPolicy", "class_scenario_1_1_constrained_displacement_policy.html", null ],
-    [ "Container< std::unique_ptr< T >, std::allocator< std::unique_ptr< T >> >", null, [
+    [ "Container< std::unique_ptr< T >, std::allocator< std::unique_ptr< T > > >", null, [
       [ "PtrContainer< Container, T, U >", "class_ptr_container.html", null ]
     ] ],
     [ "Execution::Context", "struct_execution_1_1_context.html", null ],
@@ -654,10 +675,6 @@ var hierarchy =
     [ "Scenario::ElementTraits< BaseScenarioContainer, IntervalModel >", "struct_scenario_1_1_element_traits_3_01_base_scenario_container_00_01_interval_model_01_4.html", null ],
     [ "Scenario::ElementTraits< BaseScenarioContainer, StateModel >", "struct_scenario_1_1_element_traits_3_01_base_scenario_container_00_01_state_model_01_4.html", null ],
     [ "Scenario::ElementTraits< BaseScenarioContainer, TimeSyncModel >", "struct_scenario_1_1_element_traits_3_01_base_scenario_container_00_01_time_sync_model_01_4.html", null ],
-    [ "Scenario::ElementTraits< Scenario::ProcessModel, EventModel >", "struct_scenario_1_1_element_traits_3_01_scenario_1_1_process_model_00_01_event_model_01_4.html", null ],
-    [ "Scenario::ElementTraits< Scenario::ProcessModel, IntervalModel >", "struct_scenario_1_1_element_traits_3_01_scenario_1_1_process_model_00_01_interval_model_01_4.html", null ],
-    [ "Scenario::ElementTraits< Scenario::ProcessModel, StateModel >", "struct_scenario_1_1_element_traits_3_01_scenario_1_1_process_model_00_01_state_model_01_4.html", null ],
-    [ "Scenario::ElementTraits< Scenario::ProcessModel, TimeSyncModel >", "struct_scenario_1_1_element_traits_3_01_scenario_1_1_process_model_00_01_time_sync_model_01_4.html", null ],
     [ "Scenario::ElementTraits< Scenario::ScenarioInterface, EventModel >", "struct_scenario_1_1_element_traits_3_01_scenario_1_1_scenario_interface_00_01_event_model_01_4.html", null ],
     [ "Scenario::ElementTraits< Scenario::ScenarioInterface, IntervalModel >", "struct_scenario_1_1_element_traits_3_01_scenario_1_1_scenario_interface_00_01_interval_model_01_4.html", null ],
     [ "Scenario::ElementTraits< Scenario::ScenarioInterface, StateModel >", "struct_scenario_1_1_element_traits_3_01_scenario_1_1_scenario_interface_00_01_state_model_01_4.html", null ],
@@ -776,9 +793,7 @@ var hierarchy =
       [ "has_ui< T >", "structhas__ui.html", null ],
       [ "is_shared_ptr< T >", "structis__shared__ptr.html", null ]
     ] ],
-    [ "WidgetFactory::FileChooser", "struct_widget_factory_1_1_file_chooser.html", [
-      [ "Media::AudioFileChooser", "struct_media_1_1_audio_file_chooser.html", null ]
-    ] ],
+    [ "WidgetFactory::FileChooser", "struct_widget_factory_1_1_file_chooser.html", null ],
     [ "score::FilePath", "structscore_1_1_file_path.html", null ],
     [ "WidgetFactory::FixedNormalizer< Norm_T >", "struct_widget_factory_1_1_fixed_normalizer.html", null ],
     [ "Protocols::Artnet::Fixture", "struct_protocols_1_1_artnet_1_1_fixture.html", null ],
@@ -806,20 +821,6 @@ var hierarchy =
     [ "generator", "structgenerator.html", null ],
     [ "ossia::net::generic_device", null, [
       [ "Gfx::Kinect2::kinect2_device", "class_gfx_1_1_kinect2_1_1kinect2__device.html", null ]
-    ] ],
-    [ "JS::GenericControlInlet", null, [
-      [ "AudioFileChooser", "struct_audio_file_chooser.html", null ],
-      [ "FileChooser", "struct_file_chooser.html", null ],
-      [ "FloatRangeSpinBox", "struct_float_range_spin_box.html", null ],
-      [ "HSVSlider", "struct_h_s_v_slider.html", null ],
-      [ "IntRangeSlider", "struct_int_range_slider.html", null ],
-      [ "IntRangeSpinBox", "struct_int_range_spin_box.html", null ],
-      [ "MultiSlider", "struct_multi_slider.html", null ],
-      [ "VideoFileChooser", "struct_video_file_chooser.html", null ],
-      [ "XYSlider", "struct_x_y_slider.html", null ],
-      [ "XYSpinboxes", "struct_x_y_spinboxes.html", null ],
-      [ "XYZSlider", "struct_x_y_z_slider.html", null ],
-      [ "XYZSpinboxes", "struct_x_y_z_spinboxes.html", null ]
     ] ],
     [ "Nodes::GenericMathMapping< State >", "struct_nodes_1_1_generic_math_mapping.html", null ],
     [ "score::gfx::geometry", "structscore_1_1gfx_1_1geometry.html", null ],
@@ -894,12 +895,15 @@ var hierarchy =
     ] ],
     [ "graphics_item_ptr< T >", "structgraphics__item__ptr.html", null ],
     [ "graphics_item_ptr< Curve::View >", "structgraphics__item__ptr.html", null ],
+    [ "graphics_item_ptr< LayerView >", "structgraphics__item__ptr.html", null ],
     [ "graphics_item_ptr< LayerView_T >", "structgraphics__item__ptr.html", null ],
     [ "graphics_item_ptr< Scenario::CommentBlockView >", "structgraphics__item__ptr.html", null ],
     [ "graphics_item_ptr< Scenario::EventView >", "structgraphics__item__ptr.html", null ],
     [ "graphics_item_ptr< Scenario::ScenarioView >", "structgraphics__item__ptr.html", null ],
     [ "graphics_item_ptr< Scenario::StateView >", "structgraphics__item__ptr.html", null ],
     [ "graphics_item_ptr< Scenario::TimeSyncView >", "structgraphics__item__ptr.html", null ],
+    [ "graphics_item_ptr< TempoView >", "structgraphics__item__ptr.html", null ],
+    [ "graphics_item_ptr< View >", "structgraphics__item__ptr.html", null ],
     [ "Gfx::Settings::GraphicsApis", "struct_gfx_1_1_settings_1_1_graphics_apis.html", null ],
     [ "GraphicsSceneTool< Coordinates >", "class_graphics_scene_tool.html", null ],
     [ "GraphicsSceneTool< Curve::Point >", "class_graphics_scene_tool.html", [
@@ -913,11 +917,14 @@ var hierarchy =
       ] ]
     ] ],
     [ "GraphicsSceneTool< Scenario::Point >", "class_graphics_scene_tool.html", [
+      [ "Scenario::ToolBase< Scenario::BaseScenarioDisplayedElementsToolPalette >", "class_scenario_1_1_tool_base.html", null ],
+      [ "Scenario::ToolBase< Scenario::ScenarioDisplayedElementsToolPalette >", "class_scenario_1_1_tool_base.html", null ],
+      [ "Scenario::ToolBase< Scenario::ToolPalette >", "class_scenario_1_1_tool_base.html", null ],
       [ "Scenario::ToolBase< ToolPalette_T >", "class_scenario_1_1_tool_base.html", [
         [ "Scenario::CreationTool< Scenario::ProcessModel, Scenario::ToolPalette >", "class_scenario_1_1_creation_tool.html", null ],
+        [ "Scenario::SmartTool< Scenario::BaseScenario, Scenario::BaseScenarioDisplayedElementsToolPalette, BaseGraphicsObject, Scenario::DoNotMoveInterval_StateWrapper, Scenario::MoveLeftBraceInScenario_StateWrapper, Scenario::MoveRightBraceInScenario_StateWrapper, Scenario::MoveEventInBaseScenario_StateWrapper, Scenario::MoveTimeSyncInBaseScenario_StateWrapper >", "class_scenario_1_1_smart_tool.html", null ],
         [ "Scenario::SmartTool< Scenario::ProcessModel, Scenario::ScenarioDisplayedElementsToolPalette, BaseGraphicsObject, Scenario::DoNotMoveInterval_StateWrapper, Scenario::MoveLeftBraceInScenario_StateWrapper, Scenario::MoveRightBraceInScenario_StateWrapper, Scenario::MoveEventInTopScenario_StateWrapper, Scenario::MoveTimeSyncInTopScenario_StateWrapper >", "class_scenario_1_1_smart_tool.html", null ],
         [ "Scenario::SmartTool< Scenario::ProcessModel, Scenario::ToolPalette, Scenario::ScenarioView, Scenario::MoveIntervalInScenario_StateWrapper, Scenario::MoveLeftBraceInScenario_StateWrapper, Scenario::MoveRightBraceInScenario_StateWrapper, Scenario::MoveEventInScenario_StateWrapper, Scenario::MoveTimeSyncInScenario_StateWrapper >", "class_scenario_1_1_smart_tool.html", null ],
-        [ "Scenario::SmartTool< Scenario::BaseScenario, Scenario::BaseScenarioDisplayedElementsToolPalette, BaseGraphicsObject, Scenario::DoNotMoveInterval_StateWrapper, Scenario::MoveLeftBraceInScenario_StateWrapper, Scenario::MoveRightBraceInScenario_StateWrapper, Scenario::MoveEventInBaseScenario_StateWrapper, Scenario::MoveTimeSyncInBaseScenario_StateWrapper >", "class_scenario_1_1_smart_tool.html", null ],
         [ "Scenario::CreationTool< Scenario_T, ToolPalette_T >", "class_scenario_1_1_creation_tool.html", null ],
         [ "Scenario::SmartTool< Scenario_T, ToolPalette_T, View_T, MoveIntervalWrapper_T, MoveLeftBraceWrapper_T, MoveRightBraceWrapper_T, MoveEventWrapper_T, MoveTimeSyncWrapper_T >", "class_scenario_1_1_smart_tool.html", null ]
       ] ]
@@ -947,19 +954,16 @@ var hierarchy =
     [ "Gfx::Settings::HardwareVideoDecoder", "struct_gfx_1_1_settings_1_1_hardware_video_decoder.html", null ],
     [ "has_base", "structhas__base.html", null ],
     [ "has_no_base", "structhas__no__base.html", null ],
+    [ "has_ui< T >", "structhas__ui_3_01_t_01_4.html", null ],
     [ "Media::AudioFileManager::StreamInfo::hash", "struct_media_1_1_audio_file_manager_1_1_stream_info_1_1hash.html", null ],
     [ "std::hash", null, [
       [ "score::CommandKeyHash", "structscore_1_1_command_key_hash.html", null ]
     ] ],
     [ "std::hash< Device::FullAddressSettings >", "structstd_1_1hash_3_01_device_1_1_full_address_settings_01_4.html", null ],
     [ "std::hash< Gfx::ShaderSource >", "structstd_1_1hash_3_01_gfx_1_1_shader_source_01_4.html", null ],
-    [ "std::hash< Id< tag > >", "structstd_1_1hash_3_01_id_3_01tag_01_4_01_4.html", null ],
-    [ "std::hash< ObjectIdentifier >", "structstd_1_1hash_3_01_object_identifier_01_4.html", null ],
-    [ "std::hash< ObjectPath >", "structstd_1_1hash_3_01_object_path_01_4.html", null ],
     [ "std::hash< ossia::unit_variant >", "structstd_1_1hash_3_01ossia_1_1unit__variant_01_4.html", null ],
     [ "std::hash< Path< tag > >", "structstd_1_1hash_3_01_path_3_01tag_01_4_01_4.html", null ],
     [ "std::hash< score::LoadedPluginVersions >", "structstd_1_1hash_3_01score_1_1_loaded_plugin_versions_01_4.html", null ],
-    [ "std::hash< score::Version >", "structstd_1_1hash_3_01score_1_1_version_01_4.html", null ],
     [ "std::hash< State::Address >", "structstd_1_1hash_3_01_state_1_1_address_01_4.html", null ],
     [ "std::hash< State::AddressAccessor >", "structstd_1_1hash_3_01_state_1_1_address_accessor_01_4.html", null ],
     [ "std::hash< std::pair< int, int > >", "classstd_1_1hash_3_01std_1_1pair_3_01int_00_01int_01_4_01_4.html", null ],
@@ -991,15 +995,15 @@ var hierarchy =
     [ "ICommandDispatcher", "class_i_command_dispatcher.html", [
       [ "GenericMacroCommandDispatcher< Recording::Record, RedoStrategy::Quiet, SendStrategy::UndoRedo >", "class_generic_macro_command_dispatcher.html", null ],
       [ "GenericMacroCommandDispatcher< score::AggregateCommand >", "class_generic_macro_command_dispatcher.html", null ],
-      [ "SingleOngoingCommandDispatcher< MoveTimeSyncCommand_T >", "class_single_ongoing_command_dispatcher.html", null ],
-      [ "SingleOngoingCommandDispatcher< Midi::MoveNotes >", "class_single_ongoing_command_dispatcher.html", null ],
-      [ "SingleOngoingCommandDispatcher< MoveBraceCommand_T >", "class_single_ongoing_command_dispatcher.html", null ],
       [ "SingleOngoingCommandDispatcher< Curve::UpdateCurve >", "class_single_ongoing_command_dispatcher.html", null ],
-      [ "SingleOngoingCommandDispatcher< score::Command >", "class_single_ongoing_command_dispatcher.html", null ],
       [ "SingleOngoingCommandDispatcher< Curve::SetSegmentParameters >", "class_single_ongoing_command_dispatcher.html", null ],
-      [ "SingleOngoingCommandDispatcher< Midi::ChangeNotesVelocity >", "class_single_ongoing_command_dispatcher.html", null ],
       [ "SingleOngoingCommandDispatcher< Media::ChangeSteps >", "class_single_ongoing_command_dispatcher.html", null ],
+      [ "SingleOngoingCommandDispatcher< Midi::MoveNotes >", "class_single_ongoing_command_dispatcher.html", null ],
+      [ "SingleOngoingCommandDispatcher< Midi::ChangeNotesVelocity >", "class_single_ongoing_command_dispatcher.html", null ],
+      [ "SingleOngoingCommandDispatcher< MoveBraceCommand_T >", "class_single_ongoing_command_dispatcher.html", null ],
+      [ "SingleOngoingCommandDispatcher< MoveTimeSyncCommand_T >", "class_single_ongoing_command_dispatcher.html", null ],
       [ "SingleOngoingCommandDispatcher< Scenario::Command::ResizeSlotVertically >", "class_single_ongoing_command_dispatcher.html", null ],
+      [ "SingleOngoingCommandDispatcher< score::Command >", "class_single_ongoing_command_dispatcher.html", null ],
       [ "CommandDispatcher< SendStrategy >", "class_command_dispatcher.html", null ],
       [ "GenericMacroCommandDispatcher< Command_T, RedoStrategy_T, SendStrategy_T >", "class_generic_macro_command_dispatcher.html", null ],
       [ "MultiOngoingCommandDispatcher", "class_multi_ongoing_command_dispatcher.html", null ],
@@ -1013,31 +1017,57 @@ var hierarchy =
       [ "vst3::ComponentHandler", "classvst3_1_1_component_handler.html", null ]
     ] ],
     [ "id_base_t< tag, impl >", "classid__base__t.html", null ],
+    [ "id_base_t< BaseScenario >", "classid__base__t.html", null ],
+    [ "id_base_t< Cable >", "classid__base__t.html", null ],
+    [ "id_base_t< CommentBlockModel >", "classid__base__t.html", null ],
     [ "id_base_t< Curve::PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Curve::SegmentModel >", "classid__base__t.html", null ],
+    [ "id_base_t< DocumentDelegateModel >", "classid__base__t.html", null ],
+    [ "id_base_t< DocumentModel >", "classid__base__t.html", null ],
     [ "id_base_t< Element >", "classid__base__t.html", null ],
+    [ "id_base_t< EventModel >", "classid__base__t.html", null ],
+    [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
+    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< model >", "classid__base__t.html", null ],
+    [ "id_base_t< Note >", "classid__base__t.html", null ],
+    [ "id_base_t< PointModel >", "classid__base__t.html", null ],
+    [ "id_base_t< Port >", "classid__base__t.html", null ],
     [ "id_base_t< Process::Cable >", "classid__base__t.html", null ],
     [ "id_base_t< Process::Port >", "classid__base__t.html", null ],
     [ "id_base_t< Process::ProcessModel >", "classid__base__t.html", null ],
+    [ "id_base_t< ProcessModel >", "classid__base__t.html", null ],
+    [ "id_base_t< ProcessStateDataInterface >", "classid__base__t.html", null ],
     [ "id_base_t< Scenario::CommentBlockModel >", "classid__base__t.html", null ],
     [ "id_base_t< Scenario::EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< Scenario::IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Scenario::StateModel >", "classid__base__t.html", null ],
     [ "id_base_t< Scenario::TimeSyncModel >", "classid__base__t.html", null ],
+    [ "id_base_t< SegmentModel >", "classid__base__t.html", null ],
+    [ "id_base_t< StateModel >", "classid__base__t.html", null ],
+    [ "id_base_t< T >", "classid__base__t.html", null ],
+    [ "id_base_t< TimeSyncModel >", "classid__base__t.html", null ],
     [ "IdContainer< Element, Model, Order >", "class_id_container.html", null ],
     [ "IdContainer< Curve::PointView, Curve::PointModel >", "class_id_container.html", null ],
     [ "IdContainer< Curve::SegmentModel >", "class_id_container.html", null ],
     [ "IdContainer< Curve::SegmentView, Curve::SegmentModel >", "class_id_container.html", null ],
     [ "IdContainer< Element, Model, false >", "class_id_container_3_01_element_00_01_model_00_01false_01_4.html", null ],
     [ "IdContainer< Element, Model, true >", "class_id_container_3_01_element_00_01_model_00_01true_01_4.html", null ],
+    [ "IdContainer< Midi::Note, Midi::Note, false >", "class_id_container.html", null ],
+    [ "IdContainer< Process::Cable, Process::Cable, false >", "class_id_container.html", null ],
     [ "IdContainer< Process::NodeItem, Process::ProcessModel >", "class_id_container.html", null ],
+    [ "IdContainer< Process::ProcessModel, Process::ProcessModel, false >", "class_id_container.html", null ],
+    [ "IdContainer< Process::ProcessModel, Process::ProcessModel, Ordered >", "class_id_container.html", null ],
+    [ "IdContainer< Scenario::CommentBlockModel, Scenario::CommentBlockModel, false >", "class_id_container.html", null ],
     [ "IdContainer< Scenario::CommentBlockPresenter, Scenario::CommentBlockModel >", "class_id_container.html", null ],
+    [ "IdContainer< Scenario::EventModel, Scenario::EventModel, false >", "class_id_container.html", null ],
     [ "IdContainer< Scenario::EventPresenter, Scenario::EventModel >", "class_id_container.html", null ],
     [ "IdContainer< Scenario::GraphalIntervalPresenter, Scenario::IntervalModel >", "class_id_container.html", null ],
+    [ "IdContainer< Scenario::IntervalModel, Scenario::IntervalModel, false >", "class_id_container.html", null ],
+    [ "IdContainer< Scenario::StateModel, Scenario::StateModel, false >", "class_id_container.html", null ],
     [ "IdContainer< Scenario::StatePresenter, Scenario::StateModel >", "class_id_container.html", null ],
     [ "IdContainer< Scenario::TemporalIntervalPresenter, Scenario::IntervalModel >", "class_id_container.html", null ],
+    [ "IdContainer< Scenario::TimeSyncModel, Scenario::TimeSyncModel, false >", "class_id_container.html", null ],
     [ "IdContainer< Scenario::TimeSyncPresenter, Scenario::TimeSyncModel >", "class_id_container.html", null ],
     [ "IdContainer< T, T, false >", "class_id_container.html", null ],
     [ "mpl::identity", null, [
@@ -1055,8 +1085,6 @@ var hierarchy =
         [ "Video::VideoInterface", "struct_video_1_1_video_interface.html", [
           [ "Video::ExternalInput", "class_video_1_1_external_input.html", [
             [ "Gfx::Kinect2::kinect2_decoder", "class_gfx_1_1_kinect2_1_1kinect2__decoder.html", null ],
-            [ "Gfx::Sh4lt::InputStream", "class_gfx_1_1_sh4lt_1_1_input_stream.html", null ],
-            [ "Gfx::Shmdata::InputStream", "class_gfx_1_1_shmdata_1_1_input_stream.html", null ],
             [ "Video::CameraInput", "class_video_1_1_camera_input.html", null ]
           ] ],
           [ "Video::VideoDecoder", "class_video_1_1_video_decoder.html", null ]
@@ -1079,25 +1107,6 @@ var hierarchy =
     [ "score::IndirectMap< Map_T >", "classscore_1_1_indirect_map.html", null ],
     [ "score::IndirectUnorderedMap< Map_T >", "classscore_1_1_indirect_unordered_map.html", null ],
     [ "score::InfiniteScroller", "structscore_1_1_infinite_scroller.html", null ],
-    [ "Inlet", null, [
-      [ "AudioInlet", "class_audio_inlet.html", null ],
-      [ "ControlInlet", "class_control_inlet.html", [
-        [ "GenericControlInlet< Process::IntSlider, int >", "class_generic_control_inlet.html", [
-          [ "IntSlider< Impl >", "class_int_slider.html", null ]
-        ] ],
-        [ "GenericControlInlet< Process::FloatSlider, float >", "class_generic_control_inlet.html", [
-          [ "FloatSlider< Impl >", "class_float_slider.html", null ]
-        ] ],
-        [ "Button", "class_button.html", null ],
-        [ "Enum", "class_enum.html", null ],
-        [ "GenericControlInlet< Impl, ValueType >", "class_generic_control_inlet.html", null ],
-        [ "Impulse", "class_impulse.html", null ],
-        [ "LineEdit", "class_line_edit.html", null ],
-        [ "Toggle", "class_toggle.html", null ]
-      ] ],
-      [ "MidiInlet", "class_midi_inlet.html", null ],
-      [ "ValueInlet", "class_value_inlet.html", null ]
-    ] ],
     [ "AvndJit::inlet_vis", "struct_avnd_jit_1_1inlet__vis.html", null ],
     [ "Jit::inlet_vis", "struct_jit_1_1inlet__vis.html", null ],
     [ "oscr::InletInitFunc< Node >", "structoscr_1_1_inlet_init_func.html", null ],
@@ -1192,19 +1201,18 @@ var hierarchy =
         [ "Dataflow::OutletInspectorFactory", "class_dataflow_1_1_outlet_inspector_factory.html", null ],
         [ "Interpolation::StateInspectorFactory", "class_interpolation_1_1_state_inspector_factory.html", null ],
         [ "Process::InspectorWidgetDelegateFactory", "class_process_1_1_inspector_widget_delegate_factory.html", [
-          [ "Process::InspectorWidgetDelegateFactory_T< Model, InspectorWidget >", "class_process_1_1_inspector_widget_delegate_factory___t.html", [
-            [ "Gfx::Video::InspectorFactory", "class_gfx_1_1_video_1_1_inspector_factory.html", null ],
-            [ "Media::Merger::InspectorFactory", "class_media_1_1_merger_1_1_inspector_factory.html", null ],
-            [ "Media::Step::InspectorFactory", "class_media_1_1_step_1_1_inspector_factory.html", null ]
-          ] ],
           [ "Process::InspectorWidgetDelegateFactory_T< ProcessModel, InspectorWidget >", "class_process_1_1_inspector_widget_delegate_factory___t.html", [
             [ "Automation::InspectorFactory", "class_automation_1_1_inspector_factory.html", null ],
-            [ "Gradient::InspectorFactory", "class_gradient_1_1_inspector_factory.html", null ],
             [ "Interpolation::InspectorFactory", "class_interpolation_1_1_inspector_factory.html", null ],
             [ "Mapping::MappingInspectorFactory", "class_mapping_1_1_mapping_inspector_factory.html", null ],
             [ "Media::Sound::InspectorFactory", "class_media_1_1_sound_1_1_inspector_factory.html", null ],
             [ "Midi::InspectorFactory", "class_midi_1_1_inspector_factory.html", null ],
             [ "Patternist::InspectorFactory", "class_patternist_1_1_inspector_factory.html", null ]
+          ] ],
+          [ "Process::InspectorWidgetDelegateFactory_T< Model, InspectorWidget >", "class_process_1_1_inspector_widget_delegate_factory___t.html", [
+            [ "Gfx::Video::InspectorFactory", "class_gfx_1_1_video_1_1_inspector_factory.html", null ],
+            [ "Media::Merger::InspectorFactory", "class_media_1_1_merger_1_1_inspector_factory.html", null ],
+            [ "Media::Step::InspectorFactory", "class_media_1_1_step_1_1_inspector_factory.html", null ]
           ] ],
           [ "Process::InspectorWidgetDelegateFactory_T< ProcessModel, PdWidget >", "class_process_1_1_inspector_widget_delegate_factory___t.html", [
             [ "Pd::InspectorFactory", "class_pd_1_1_inspector_factory.html", null ]
@@ -1220,7 +1228,6 @@ var hierarchy =
         [ "Faust::LibraryHandler", "class_faust_1_1_library_handler.html", null ],
         [ "Gfx::Filter::LibraryHandler", "class_gfx_1_1_filter_1_1_library_handler.html", null ],
         [ "Gfx::GeometryFilter::LibraryHandler", "class_gfx_1_1_geometry_filter_1_1_library_handler.html", null ],
-        [ "Gfx::Images::LibraryHandler", "class_gfx_1_1_images_1_1_library_handler.html", null ],
         [ "Gfx::Video::LibraryHandler", "class_gfx_1_1_video_1_1_library_handler.html", null ],
         [ "JS::ConsoleLibraryHandler", "class_j_s_1_1_console_library_handler.html", null ],
         [ "JS::LibraryHandler", "class_j_s_1_1_library_handler.html", null ],
@@ -1286,7 +1293,6 @@ var hierarchy =
         [ "Faust::DropHandler", "class_faust_1_1_drop_handler.html", null ],
         [ "Gfx::Filter::DropHandler", "class_gfx_1_1_filter_1_1_drop_handler.html", null ],
         [ "Gfx::GeometryFilter::DropHandler", "class_gfx_1_1_geometry_filter_1_1_drop_handler.html", null ],
-        [ "Gfx::Images::DropHandler", "class_gfx_1_1_images_1_1_drop_handler.html", null ],
         [ "Gfx::Video::DropHandler", "class_gfx_1_1_video_1_1_drop_handler.html", null ],
         [ "JS::DropHandler", "class_j_s_1_1_drop_handler.html", null ],
         [ "Media::Sound::DropHandler", "class_media_1_1_sound_1_1_drop_handler.html", null ],
@@ -1367,11 +1373,11 @@ var hierarchy =
       [ "score::PanelDelegateFactory", "classscore_1_1_panel_delegate_factory.html", [
         [ "Explorer::PanelDelegateFactory", "class_explorer_1_1_panel_delegate_factory.html", null ],
         [ "InspectorPanel::PanelDelegateFactory", "class_inspector_panel_1_1_panel_delegate_factory.html", null ],
+        [ "JS::PanelDelegateFactory", "class_j_s_1_1_panel_delegate_factory.html", null ],
         [ "Library::ProcessPanelFactory", "class_library_1_1_process_panel_factory.html", null ],
         [ "Library::ProjectPanelFactory", "class_library_1_1_project_panel_factory.html", null ],
         [ "Library::UserPanelFactory", "class_library_1_1_user_panel_factory.html", null ],
         [ "Mixer::PanelDelegateFactory", "class_mixer_1_1_panel_delegate_factory.html", null ],
-        [ "PanelDelegateFactory", "class_panel_delegate_factory.html", null ],
         [ "Scenario::ObjectPanelDelegateFactory", "class_scenario_1_1_object_panel_delegate_factory.html", null ],
         [ "score::MessagesPanelDelegateFactory", "classscore_1_1_messages_panel_delegate_factory.html", null ],
         [ "score::UndoPanelDelegateFactory", "classscore_1_1_undo_panel_delegate_factory.html", null ]
@@ -1384,87 +1390,93 @@ var hierarchy =
       ] ]
     ] ],
     [ "score::InterfaceListBase", "classscore_1_1_interface_list_base.html", [
-      [ "score::InterfaceList< score::ValidityChecker >", "classscore_1_1_interface_list.html", [
-        [ "score::ValidityCheckerList", "classscore_1_1_validity_checker_list.html", null ]
+      [ "score::InterfaceList< AudioFactory >", "classscore_1_1_interface_list.html", [
+        [ "Audio::AudioFactoryList", "class_audio_1_1_audio_factory_list.html", null ]
       ] ],
-      [ "score::InterfaceList< ClockFactory >", "classscore_1_1_interface_list.html", [
-        [ "Execution::ClockFactoryList", "class_execution_1_1_clock_factory_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< score::DocumentDelegateFactory >", "classscore_1_1_interface_list.html", [
-        [ "score::DocumentDelegateList", "classscore_1_1_document_delegate_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< PortFactory >", "classscore_1_1_interface_list.html", [
-        [ "Process::PortFactoryList", "class_process_1_1_port_factory_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< CoherencyCheckerFactoryInterface >", "classscore_1_1_interface_list.html", [
-        [ "Scenario::CSPCoherencyCheckerList", "class_scenario_1_1_c_s_p_coherency_checker_list.html", null ]
+      [ "score::InterfaceList< SegmentFactory >", "classscore_1_1_interface_list.html", [
+        [ "Curve::SegmentList", "class_curve_1_1_segment_list.html", null ]
       ] ],
       [ "score::InterfaceList< DeviceModelProvider >", "classscore_1_1_interface_list.html", [
         [ "Device::DeviceModelProviderList", "class_device_1_1_device_model_provider_list.html", null ]
       ] ],
-      [ "score::InterfaceList< IntervalDropHandler >", "classscore_1_1_interface_list.html", [
-        [ "Scenario::IntervalDropHandlerList", "class_scenario_1_1_interval_drop_handler_list.html", null ]
+      [ "score::InterfaceList< ProtocolFactory >", "classscore_1_1_interface_list.html", [
+        [ "Device::ProtocolFactoryList", "class_device_1_1_protocol_factory_list.html", null ]
       ] ],
-      [ "score::InterfaceList< T >", "classscore_1_1_interface_list.html", [
-        [ "score::MatchingFactory< T >", "classscore_1_1_matching_factory.html", null ]
+      [ "score::InterfaceList< ClockFactory >", "classscore_1_1_interface_list.html", [
+        [ "Execution::ClockFactoryList", "class_execution_1_1_clock_factory_list.html", null ]
       ] ],
-      [ "score::InterfaceList< TransportInterface >", "classscore_1_1_interface_list.html", [
-        [ "Transport::TransportInterfaceList", "class_transport_1_1_transport_interface_list.html", null ]
+      [ "score::InterfaceList< ExecutionAction >", "classscore_1_1_interface_list.html", [
+        [ "Execution::ExecutionActionList", "class_execution_1_1_execution_action_list.html", null ]
       ] ],
-      [ "score::InterfaceList< PluginSettingsTab >", "classscore_1_1_interface_list.html", [
-        [ "Media::Settings::PluginSettingsFactoryList", "class_media_1_1_settings_1_1_plugin_settings_factory_list.html", null ]
-      ] ],
+      [ "score::InterfaceList< Execution::ProcessComponentFactory >", "classscore_1_1_interface_list.html", null ],
       [ "score::InterfaceList< Explorer::ListeningHandlerFactory >", "classscore_1_1_interface_list.html", [
         [ "Explorer::ListeningHandlerFactoryList", "class_explorer_1_1_listening_handler_factory_list.html", null ]
       ] ],
-      [ "score::InterfaceList< IntervalResizer >", "classscore_1_1_interface_list.html", [
-        [ "Scenario::IntervalResizerList", "class_scenario_1_1_interval_resizer_list.html", null ]
+      [ "score::InterfaceList< InspectorWidgetFactory >", "classscore_1_1_interface_list.html", null ],
+      [ "score::InterfaceList< LibraryInterface >", "classscore_1_1_interface_list.html", [
+        [ "Library::LibraryInterfaceList", "class_library_1_1_library_interface_list.html", null ]
       ] ],
-      [ "score::InterfaceList< MoveEventFactoryInterface >", "classscore_1_1_interface_list.html", [
-        [ "Scenario::Command::MoveEventList", "class_scenario_1_1_command_1_1_move_event_list.html", null ]
+      [ "score::InterfaceList< LocalTree::ProcessComponentFactory >", "classscore_1_1_interface_list.html", null ],
+      [ "score::InterfaceList< PluginSettingsTab >", "classscore_1_1_interface_list.html", [
+        [ "Media::Settings::PluginSettingsFactoryList", "class_media_1_1_settings_1_1_plugin_settings_factory_list.html", null ]
       ] ],
-      [ "score::InterfaceList< score::DocumentPluginFactory >", "classscore_1_1_interface_list.html", [
-        [ "score::DocumentPluginFactoryList", "classscore_1_1_document_plugin_factory_list.html", null ]
+      [ "score::InterfaceList< AutomatableFactory >", "classscore_1_1_interface_list.html", [
+        [ "Process::AutomatableFactoryList", "struct_process_1_1_automatable_factory_list.html", null ]
+      ] ],
+      [ "score::InterfaceList< LayerFactory >", "classscore_1_1_interface_list.html", [
+        [ "Process::LayerFactoryList", "class_process_1_1_layer_factory_list.html", null ]
+      ] ],
+      [ "score::InterfaceList< PortFactory >", "classscore_1_1_interface_list.html", [
+        [ "Process::PortFactoryList", "class_process_1_1_port_factory_list.html", null ]
+      ] ],
+      [ "score::InterfaceList< ProcessDropHandler >", "classscore_1_1_interface_list.html", [
+        [ "Process::ProcessDropHandlerList", "class_process_1_1_process_drop_handler_list.html", null ]
       ] ],
       [ "score::InterfaceList< ProcessModelFactory >", "classscore_1_1_interface_list.html", [
         [ "Process::ProcessFactoryList", "class_process_1_1_process_factory_list.html", null ]
       ] ],
-      [ "score::InterfaceList< SegmentFactory >", "classscore_1_1_interface_list.html", [
-        [ "Curve::SegmentList", "class_curve_1_1_segment_list.html", null ]
+      [ "score::InterfaceList< CoherencyCheckerFactoryInterface >", "classscore_1_1_interface_list.html", [
+        [ "Scenario::CSPCoherencyCheckerList", "class_scenario_1_1_c_s_p_coherency_checker_list.html", null ]
+      ] ],
+      [ "score::InterfaceList< MoveEventFactoryInterface >", "classscore_1_1_interface_list.html", [
+        [ "Scenario::Command::MoveEventList", "class_scenario_1_1_command_1_1_move_event_list.html", null ]
+      ] ],
+      [ "score::InterfaceList< TriggerCommandFactory >", "classscore_1_1_interface_list.html", null ],
+      [ "score::InterfaceList< DisplayedElementsProvider >", "classscore_1_1_interface_list.html", null ],
+      [ "score::InterfaceList< DisplayedElementsToolPaletteFactory >", "classscore_1_1_interface_list.html", null ],
+      [ "score::InterfaceList< DropHandler >", "classscore_1_1_interface_list.html", [
+        [ "Scenario::DropHandlerList", "class_scenario_1_1_drop_handler_list.html", null ]
+      ] ],
+      [ "score::InterfaceList< IntervalDropHandler >", "classscore_1_1_interface_list.html", [
+        [ "Scenario::IntervalDropHandlerList", "class_scenario_1_1_interval_drop_handler_list.html", null ]
+      ] ],
+      [ "score::InterfaceList< IntervalResizer >", "classscore_1_1_interface_list.html", [
+        [ "Scenario::IntervalResizerList", "class_scenario_1_1_interval_resizer_list.html", null ]
+      ] ],
+      [ "score::InterfaceList< TransportInterface >", "classscore_1_1_interface_list.html", [
+        [ "Transport::TransportInterfaceList", "class_transport_1_1_transport_interface_list.html", null ]
       ] ],
       [ "score::InterfaceList< Factory_T >", "classscore_1_1_interface_list.html", [
         [ "score::DefaultedGenericComponentFactoryList< Model_T, System_T, Factory_T, DefaultFactory_T >", "classscore_1_1_defaulted_generic_component_factory_list.html", null ],
         [ "score::GenericComponentFactoryList< Model_T, System_T, Factory_T >", "classscore_1_1_generic_component_factory_list.html", null ]
       ] ],
-      [ "score::InterfaceList< AutomatableFactory >", "classscore_1_1_interface_list.html", [
-        [ "Process::AutomatableFactoryList", "struct_process_1_1_automatable_factory_list.html", null ]
+      [ "score::InterfaceList< score::DocumentDelegateFactory >", "classscore_1_1_interface_list.html", [
+        [ "score::DocumentDelegateList", "classscore_1_1_document_delegate_list.html", null ]
       ] ],
-      [ "score::InterfaceList< AudioFactory >", "classscore_1_1_interface_list.html", [
-        [ "Audio::AudioFactoryList", "class_audio_1_1_audio_factory_list.html", null ]
+      [ "score::InterfaceList< score::DocumentPluginFactory >", "classscore_1_1_interface_list.html", [
+        [ "score::DocumentPluginFactoryList", "classscore_1_1_document_plugin_factory_list.html", null ]
       ] ],
-      [ "score::InterfaceList< score::PanelDelegateFactory >", "classscore_1_1_interface_list.html", [
-        [ "score::PanelDelegateFactoryList", "classscore_1_1_panel_delegate_factory_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< ProcessDropHandler >", "classscore_1_1_interface_list.html", [
-        [ "Process::ProcessDropHandlerList", "class_process_1_1_process_drop_handler_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< LibraryInterface >", "classscore_1_1_interface_list.html", [
-        [ "Library::LibraryInterfaceList", "class_library_1_1_library_interface_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< LayerFactory >", "classscore_1_1_interface_list.html", [
-        [ "Process::LayerFactoryList", "class_process_1_1_layer_factory_list.html", null ]
+      [ "score::InterfaceList< T >", "classscore_1_1_interface_list.html", [
+        [ "score::MatchingFactory< T >", "classscore_1_1_matching_factory.html", null ]
       ] ],
       [ "score::InterfaceList< ObjectEditor >", "classscore_1_1_interface_list.html", [
         [ "score::ObjectEditorList", "classscore_1_1_object_editor_list.html", null ]
       ] ],
-      [ "score::InterfaceList< DropHandler >", "classscore_1_1_interface_list.html", [
-        [ "Scenario::DropHandlerList", "class_scenario_1_1_drop_handler_list.html", null ]
+      [ "score::InterfaceList< score::PanelDelegateFactory >", "classscore_1_1_interface_list.html", [
+        [ "score::PanelDelegateFactoryList", "classscore_1_1_panel_delegate_factory_list.html", null ]
       ] ],
-      [ "score::InterfaceList< ExecutionAction >", "classscore_1_1_interface_list.html", [
-        [ "Execution::ExecutionActionList", "class_execution_1_1_execution_action_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< ProtocolFactory >", "classscore_1_1_interface_list.html", [
-        [ "Device::ProtocolFactoryList", "class_device_1_1_protocol_factory_list.html", null ]
+      [ "score::InterfaceList< score::ValidityChecker >", "classscore_1_1_interface_list.html", [
+        [ "score::ValidityCheckerList", "classscore_1_1_validity_checker_list.html", null ]
       ] ],
       [ "Process::MagnetismAdjuster", "class_process_1_1_magnetism_adjuster.html", null ],
       [ "Process::OfflineActionList", "class_process_1_1_offline_action_list.html", null ],
@@ -1475,9 +1487,6 @@ var hierarchy =
         [ "score::GenericComponentFactoryList< Process::ProcessModel, score::DocumentContext, LocalTree::ProcessComponentFactory >", "classscore_1_1_generic_component_factory_list.html", [
           [ "LocalTree::ProcessComponentFactoryList", "class_local_tree_1_1_process_component_factory_list.html", null ]
         ] ],
-        [ "score::MatchingFactory< DisplayedElementsToolPaletteFactory >", "classscore_1_1_matching_factory.html", [
-          [ "Scenario::DisplayedElementsToolPaletteFactoryList", "class_scenario_1_1_displayed_elements_tool_palette_factory_list.html", null ]
-        ] ],
         [ "score::MatchingFactory< InspectorWidgetFactory >", "classscore_1_1_matching_factory.html", [
           [ "Inspector::InspectorWidgetList", "class_inspector_1_1_inspector_widget_list.html", null ]
         ] ],
@@ -1486,6 +1495,9 @@ var hierarchy =
         ] ],
         [ "score::MatchingFactory< DisplayedElementsProvider >", "classscore_1_1_matching_factory.html", [
           [ "Scenario::DisplayedElementsProviderList", "class_scenario_1_1_displayed_elements_provider_list.html", null ]
+        ] ],
+        [ "score::MatchingFactory< DisplayedElementsToolPaletteFactory >", "classscore_1_1_matching_factory.html", [
+          [ "Scenario::DisplayedElementsToolPaletteFactoryList", "class_scenario_1_1_displayed_elements_tool_palette_factory_list.html", null ]
         ] ]
       ] ]
     ] ],
@@ -1501,7 +1513,7 @@ var hierarchy =
     [ "WidgetFactory::IntRangeSlider", "struct_widget_factory_1_1_int_range_slider.html", null ],
     [ "WidgetFactory::IntSlider", "struct_widget_factory_1_1_int_slider.html", null ],
     [ "WidgetFactory::IntSpinBox", "struct_widget_factory_1_1_int_spin_box.html", null ],
-    [ "InValueMessage", "struct_in_value_message.html", null ],
+    [ "JS::InValueMessage", "struct_j_s_1_1_in_value_message.html", null ],
     [ "InvisibleRootNode", "struct_invisible_root_node.html", null ],
     [ "Steinberg::Vst::IParameterChanges", null, [
       [ "vst3::param_changes", "classvst3_1_1param__changes.html", null ]
@@ -1661,7 +1673,7 @@ var hierarchy =
     [ "Execution::MetronomeSounds", "struct_execution_1_1_metronome_sounds.html", null ],
     [ "Protocols::Settings::MidiAPI", "struct_protocols_1_1_settings_1_1_midi_a_p_i.html", null ],
     [ "oscr::MidiFileOctaver", "structoscr_1_1_midi_file_octaver.html", null ],
-    [ "MidiMessage", "class_midi_message.html", null ],
+    [ "JS::MidiMessage", "class_j_s_1_1_midi_message.html", null ],
     [ "Midi::MidiTrack::MidiSong", "struct_midi_1_1_midi_track_1_1_midi_song.html", null ],
     [ "Protocols::MIDISpecificSettings", "struct_protocols_1_1_m_i_d_i_specific_settings.html", null ],
     [ "Midi::MidiStyle", "struct_midi_1_1_midi_style.html", null ],
@@ -1691,7 +1703,6 @@ var hierarchy =
     [ "score::gfx::ModelCameraUBO", "structscore_1_1gfx_1_1_model_camera_u_b_o.html", null ],
     [ "vst::Module", "structvst_1_1_module.html", null ],
     [ "Automation::RecreateOnPlay::modvalue", "struct_automation_1_1_recreate_on_play_1_1modvalue.html", null ],
-    [ "score::Modifier::Move_tag", "structscore_1_1_modifier_1_1_move__tag.html", null ],
     [ "Scenario::MoveEventInBaseScenario_StateWrapper", "class_scenario_1_1_move_event_in_base_scenario___state_wrapper.html", null ],
     [ "Scenario::MoveEventInScenario_StateWrapper", "class_scenario_1_1_move_event_in_scenario___state_wrapper.html", null ],
     [ "Scenario::MoveEventInTopScenario_StateWrapper", "class_scenario_1_1_move_event_in_top_scenario___state_wrapper.html", null ],
@@ -1707,6 +1718,10 @@ var hierarchy =
     [ "oscr::multichannel_audio_view", "structoscr_1_1multichannel__audio__view.html", null ],
     [ "WidgetFactory::MultiSlider", "struct_widget_factory_1_1_multi_slider.html", null ],
     [ "Gfx::MuxerInfo", "struct_gfx_1_1_muxer_info.html", null ],
+    [ "JS::InValueMessage ::W_MetaObjectCreatorHelper::Name", "struct_j_s_1_1_in_value_message_01_1_1_w___meta_object_creator_helper_1_1_name.html", null ],
+    [ "JS::MidiMessage ::W_MetaObjectCreatorHelper::Name", "struct_j_s_1_1_midi_message_01_1_1_w___meta_object_creator_helper_1_1_name.html", null ],
+    [ "JS::OutValueMessage ::W_MetaObjectCreatorHelper::Name", "struct_j_s_1_1_out_value_message_01_1_1_w___meta_object_creator_helper_1_1_name.html", null ],
+    [ "State::DestinationQualifiers ::W_MetaObjectCreatorHelper::Name", "struct_state_1_1_destination_qualifiers_01_1_1_w___meta_object_creator_helper_1_1_name.html", null ],
     [ "Scenario::NeighbourSelector", "class_scenario_1_1_neighbour_selector.html", null ],
     [ "Scenario::BaseScenarioContainer::no_init", "struct_scenario_1_1_base_scenario_container_1_1no__init.html", null ],
     [ "Explorer::AddressSettingsWidget::no_widgets_t", "struct_explorer_1_1_address_settings_widget_1_1no__widgets__t.html", null ],
@@ -1759,7 +1774,6 @@ var hierarchy =
           [ "score::gfx::TextNode", "structscore_1_1gfx_1_1_text_node.html", null ]
         ] ],
         [ "score::gfx::VideoNodeBase", "classscore_1_1gfx_1_1_video_node_base.html", [
-          [ "score::gfx::CameraNode", "classscore_1_1gfx_1_1_camera_node.html", null ],
           [ "score::gfx::VideoNode", "classscore_1_1gfx_1_1_video_node.html", null ]
         ] ]
       ] ]
@@ -1782,7 +1796,6 @@ var hierarchy =
       [ "Gfx::Spout::SpoutInputNode::Renderer", "class_gfx_1_1_spout_1_1_spout_input_node_1_1_renderer.html", null ],
       [ "RenderedDepthNode", "struct_rendered_depth_node.html", null ],
       [ "score::gfx::GenericNodeRenderer", "classscore_1_1gfx_1_1_generic_node_renderer.html", [
-        [ "score::gfx::FullScreenImageNode::Renderer", "classscore_1_1gfx_1_1_full_screen_image_node_1_1_renderer.html", null ],
         [ "score::gfx::ImagesNode::OnTheFlyRenderer", "classscore_1_1gfx_1_1_images_node_1_1_on_the_fly_renderer.html", null ],
         [ "score::gfx::ImagesNode::PreloadedRenderer", "classscore_1_1gfx_1_1_images_node_1_1_preloaded_renderer.html", null ],
         [ "score::gfx::RenderedPhongNode", "structscore_1_1gfx_1_1_rendered_phong_node.html", null ],
@@ -1824,6 +1837,9 @@ var hierarchy =
     [ "ObjectIdentifier", "class_object_identifier.html", null ],
     [ "ObjectKey_k", "class_object_key__k.html", null ],
     [ "Scenario::ObjectMapper", "struct_scenario_1_1_object_mapper.html", [
+      [ "Scenario::ToolBase< Scenario::BaseScenarioDisplayedElementsToolPalette >", "class_scenario_1_1_tool_base.html", null ],
+      [ "Scenario::ToolBase< Scenario::ScenarioDisplayedElementsToolPalette >", "class_scenario_1_1_tool_base.html", null ],
+      [ "Scenario::ToolBase< Scenario::ToolPalette >", "class_scenario_1_1_tool_base.html", null ],
       [ "Scenario::ToolBase< ToolPalette_T >", "class_scenario_1_1_tool_base.html", null ]
     ] ],
     [ "ObjectPath", "class_object_path.html", null ],
@@ -1912,14 +1928,14 @@ var hierarchy =
     [ "LV2::on_finish", "struct_l_v2_1_1on__finish.html", null ],
     [ "LV2::on_start", "struct_l_v2_1_1on__start.html", null ],
     [ "OpaqueString", "class_opaque_string.html", [
+      [ "StringKey< Process::LayerContextMenu >", "class_string_key.html", null ],
+      [ "StringKey< Action >", "class_string_key.html", null ],
+      [ "StringKey< ActionGroup >", "class_string_key.html", null ],
+      [ "StringKey< score::ActionCondition >", "class_string_key.html", null ],
+      [ "StringKey< CommandParentTag >", "class_string_key.html", null ],
       [ "StringKey< CommandTag >", "class_string_key.html", null ],
       [ "StringKey< score::Menu >", "class_string_key.html", null ],
-      [ "StringKey< ActionGroup >", "class_string_key.html", null ],
-      [ "StringKey< CommandParentTag >", "class_string_key.html", null ],
       [ "StringKey< score::Toolbar >", "class_string_key.html", null ],
-      [ "StringKey< score::ActionCondition >", "class_string_key.html", null ],
-      [ "StringKey< Action >", "class_string_key.html", null ],
-      [ "StringKey< Process::LayerContextMenu >", "class_string_key.html", null ],
       [ "StringKey< Tag >", "class_string_key.html", null ]
     ] ],
     [ "score::OpenDocumentsFile", "structscore_1_1_open_documents_file.html", null ],
@@ -1947,18 +1963,18 @@ var hierarchy =
     [ "Nodes::MidiHiRes::Output", "struct_nodes_1_1_midi_hi_res_1_1_output.html", null ],
     [ "Gfx::OutputStream", "struct_gfx_1_1_output_stream.html", null ],
     [ "score::gfx::OutputUBO", "structscore_1_1gfx_1_1_output_u_b_o.html", null ],
-    [ "OutValueMessage", "struct_out_value_message.html", null ],
+    [ "JS::OutValueMessage", "struct_j_s_1_1_out_value_message.html", null ],
     [ "PM::Package", "struct_p_m_1_1_package.html", null ],
     [ "score::PaintVisitor", "structscore_1_1_paint_visitor.html", null ],
     [ "score::Brush::Pair", "structscore_1_1_brush_1_1_pair.html", null ],
     [ "score::PanelDelegate", "classscore_1_1_panel_delegate.html", [
       [ "Explorer::PanelDelegate", "class_explorer_1_1_panel_delegate.html", null ],
       [ "InspectorPanel::PanelDelegate", "class_inspector_panel_1_1_panel_delegate.html", null ],
+      [ "JS::PanelDelegate", "class_j_s_1_1_panel_delegate.html", null ],
       [ "Library::ProcessPanel", "class_library_1_1_process_panel.html", null ],
       [ "Library::ProjectPanel", "class_library_1_1_project_panel.html", null ],
       [ "Library::UserPanel", "class_library_1_1_user_panel.html", null ],
       [ "Mixer::PanelDelegate", "class_mixer_1_1_panel_delegate.html", null ],
-      [ "PanelDelegate", "class_panel_delegate.html", null ],
       [ "Scenario::ObjectPanelDelegate", "class_scenario_1_1_object_panel_delegate.html", null ],
       [ "score::HelperPanelDelegate", "classscore_1_1_helper_panel_delegate.html", null ],
       [ "score::MessagesPanelDelegate", "classscore_1_1_messages_panel_delegate.html", null ],
@@ -1976,18 +1992,35 @@ var hierarchy =
     [ "Pd::PatchSpec", "struct_pd_1_1_patch_spec.html", null ],
     [ "Path< Object >", "class_path.html", null ],
     [ "Path< Automation::ProcessModel >", "class_path.html", null ],
+    [ "Path< BaseScenario >", "class_path.html", null ],
+    [ "Path< BytebeatModel >", "class_path.html", null ],
+    [ "Path< Cable >", "class_path.html", null ],
+    [ "Path< CommentBlockModel >", "class_path.html", null ],
     [ "Path< ControlSurface::Model >", "class_path.html", null ],
     [ "Path< Curve::Model >", "class_path.html", null ],
+    [ "Path< DocumentDelegateModel >", "class_path.html", null ],
+    [ "Path< DocumentModel >", "class_path.html", null ],
     [ "Path< Element >", "class_path.html", null ],
+    [ "Path< EventModel >", "class_path.html", null ],
+    [ "Path< FaustEffectModel >", "class_path.html", null ],
+    [ "Path< Filter::Model >", "class_path.html", null ],
+    [ "Path< GeometryFilter::Model >", "class_path.html", null ],
+    [ "Path< IntervalModel >", "class_path.html", null ],
+    [ "Path< JitEffectModel >", "class_path.html", null ],
+    [ "Path< JS::ProcessModel >", "class_path.html", null ],
     [ "Path< Mapping::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
+    [ "Path< Note >", "class_path.html", null ],
     [ "Path< Patternist::ProcessModel >", "class_path.html", null ],
+    [ "Path< Pd::ProcessModel >", "class_path.html", null ],
+    [ "Path< PointModel >", "class_path.html", null ],
+    [ "Path< Port >", "class_path.html", null ],
     [ "Path< Process::Cable >", "class_path.html", null ],
     [ "Path< Process::ControlInlet >", "class_path.html", null ],
     [ "Path< Process::ControlOutlet >", "class_path.html", null ],
@@ -1997,6 +2030,7 @@ var hierarchy =
     [ "Path< Process::ProcessModel >", "class_path.html", null ],
     [ "Path< Process_T >", "class_path.html", null ],
     [ "Path< ProcessModel >", "class_path.html", null ],
+    [ "Path< ProcessStateDataInterface >", "class_path.html", null ],
     [ "Path< Scenario::CommentBlockModel >", "class_path.html", null ],
     [ "Path< Scenario::EventModel >", "class_path.html", null ],
     [ "Path< Scenario::IntervalModel >", "class_path.html", null ],
@@ -2004,10 +2038,13 @@ var hierarchy =
     [ "Path< Scenario::ScenarioDocumentModel >", "class_path.html", null ],
     [ "Path< Scenario::StateModel >", "class_path.html", null ],
     [ "Path< Scenario::TimeSyncModel >", "class_path.html", null ],
+    [ "Path< SegmentModel >", "class_path.html", null ],
     [ "Path< SimpleScenario_T >", "class_path.html", null ],
     [ "Path< Spline3D::ProcessModel >", "class_path.html", null ],
     [ "Path< Spline::ProcessModel >", "class_path.html", null ],
+    [ "Path< StateModel >", "class_path.html", null ],
     [ "Path< T >", "class_path.html", null ],
+    [ "Path< TimeSyncModel >", "class_path.html", null ],
     [ "Path< vst3::ControlInlet >", "class_path.html", null ],
     [ "Path< vst3::Model >", "class_path.html", null ],
     [ "Path< vst::ControlInlet >", "class_path.html", null ],
@@ -2099,97 +2136,97 @@ var hierarchy =
     [ "avnd_tools::DeviceRecorder::process_message", "structavnd__tools_1_1_device_recorder_1_1process__message.html", null ],
     [ "ProcessComponentBase_T", null, [
       [ "Process::GenericProcessComponent_T< ProcessComponentBase_T, Process_T >", "class_process_1_1_generic_process_component___t.html", [
-        [ "Execution::ProcessComponent_T< vst::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-          [ "vst::Executor", "classvst_1_1_executor.html", null ]
-        ] ],
-        [ "Execution::ProcessComponent_T< vst3::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-          [ "vst3::Executor", "classvst3_1_1_executor.html", null ]
-        ] ],
-        [ "Execution::ProcessComponent_T< Gradient::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-          [ "Gradient::RecreateOnPlay::Component", "class_gradient_1_1_recreate_on_play_1_1_component.html", null ]
-        ] ],
-        [ "Execution::ProcessComponent_T< Scenario::ProcessModel, ossia::scenario >", "struct_execution_1_1_process_component___t.html", [
-          [ "Execution::ScenarioComponentBase", "class_execution_1_1_scenario_component_base.html", null ]
-        ] ],
-        [ "Execution::ProcessComponent_T< Spline::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-          [ "Spline::RecreateOnPlay::Component", "class_spline_1_1_recreate_on_play_1_1_component.html", null ]
-        ] ],
-        [ "Execution::ProcessComponent_T< Media::Step::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-          [ "Execution::StepComponent", "class_execution_1_1_step_component.html", null ]
-        ] ],
-        [ "Execution::ProcessComponent_T< JS::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-          [ "JS::Executor::Component", "class_j_s_1_1_executor_1_1_component.html", null ]
-        ] ],
-        [ "Execution::ProcessComponent_T< Gfx::Images::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-          [ "Gfx::Images::ProcessExecutorComponent", "class_gfx_1_1_images_1_1_process_executor_component.html", null ]
-        ] ],
-        [ "Execution::ProcessComponent_T< Gfx::GeometryFilter::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-          [ "Gfx::GeometryFilter::ProcessExecutorComponent", "class_gfx_1_1_geometry_filter_1_1_process_executor_component.html", null ]
-        ] ],
-        [ "Execution::ProcessComponent_T< ProcessModel< Node >, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-          [ "oscr::Executor< Node >", "classoscr_1_1_executor.html", null ]
-        ] ],
-        [ "Execution::ProcessComponent_T< Gfx::Filter::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-          [ "Gfx::Filter::ProcessExecutorComponent", "class_gfx_1_1_filter_1_1_process_executor_component.html", null ]
-        ] ],
-        [ "Execution::ProcessComponent_T< Media::Merger::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-          [ "Execution::MergerComponent", "class_execution_1_1_merger_component.html", null ]
-        ] ],
-        [ "Execution::ProcessComponent_T< Midi::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-          [ "Midi::Executor::Component", "class_midi_1_1_executor_1_1_component.html", null ]
-        ] ],
-        [ "Execution::ProcessComponent_T< Gfx::Text::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-          [ "Gfx::Text::ProcessExecutorComponent", "class_gfx_1_1_text_1_1_process_executor_component.html", null ]
-        ] ],
-        [ "Execution::ProcessComponent_T< Media::Sound::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-          [ "Execution::SoundComponent", "class_execution_1_1_sound_component.html", null ]
-        ] ],
-        [ "Execution::ProcessComponent_T< Faust::FaustEffectModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-          [ "Execution::FaustEffectComponent", "class_execution_1_1_faust_effect_component.html", null ]
-        ] ],
         [ "Execution::ProcessComponent_T< Automation::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
           [ "Automation::RecreateOnPlay::Component", "class_automation_1_1_recreate_on_play_1_1_component.html", null ]
-        ] ],
-        [ "Execution::ProcessComponent_T< Mapping::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-          [ "Mapping::RecreateOnPlay::Component", "class_mapping_1_1_recreate_on_play_1_1_component.html", null ]
-        ] ],
-        [ "Execution::ProcessComponent_T< YSFX::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-          [ "YSFX::Executor::Component", "class_y_s_f_x_1_1_executor_1_1_component.html", null ]
-        ] ],
-        [ "Execution::ProcessComponent_T< Gfx::Video::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-          [ "Gfx::Video::ProcessExecutorComponent", "class_gfx_1_1_video_1_1_process_executor_component.html", null ]
         ] ],
         [ "Execution::ProcessComponent_T< AvndJit::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
           [ "AvndJit::Executor", "class_avnd_jit_1_1_executor.html", null ]
         ] ],
-        [ "Execution::ProcessComponent_T< Fx< DSP >, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-          [ "FaustDSP::Executor< DSP >", "class_faust_d_s_p_1_1_executor.html", null ]
+        [ "Execution::ProcessComponent_T< ControlSurface::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
+          [ "ControlSurface::ProcessExecutorComponent", "class_control_surface_1_1_process_executor_component.html", null ]
         ] ],
-        [ "Execution::ProcessComponent_T< Patternist::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-          [ "Patternist::Executor", "class_patternist_1_1_executor.html", null ]
+        [ "Execution::ProcessComponent_T< Faust::FaustEffectModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
+          [ "Execution::FaustEffectComponent", "class_execution_1_1_faust_effect_component.html", null ]
         ] ],
         [ "Execution::ProcessComponent_T< Jit::JitEffectModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
           [ "Execution::JitEffectComponent", "class_execution_1_1_jit_effect_component.html", null ]
         ] ],
+        [ "Execution::ProcessComponent_T< Media::Merger::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
+          [ "Execution::MergerComponent", "class_execution_1_1_merger_component.html", null ]
+        ] ],
         [ "Execution::ProcessComponent_T< Media::Metro::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
           [ "Execution::MetroComponent", "class_execution_1_1_metro_component.html", null ]
+        ] ],
+        [ "Execution::ProcessComponent_T< Scenario::ProcessModel, ossia::scenario >", "struct_execution_1_1_process_component___t.html", [
+          [ "Execution::ScenarioComponentBase", "class_execution_1_1_scenario_component_base.html", null ]
+        ] ],
+        [ "Execution::ProcessComponent_T< Media::Sound::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
+          [ "Execution::SoundComponent", "class_execution_1_1_sound_component.html", null ]
+        ] ],
+        [ "Execution::ProcessComponent_T< Media::Step::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
+          [ "Execution::StepComponent", "class_execution_1_1_step_component.html", null ]
+        ] ],
+        [ "Execution::ProcessComponent_T< Fx< DSP >, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
+          [ "FaustDSP::Executor< DSP >", "class_faust_d_s_p_1_1_executor.html", null ]
+        ] ],
+        [ "Execution::ProcessComponent_T< Gfx::Filter::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
+          [ "Gfx::Filter::ProcessExecutorComponent", "class_gfx_1_1_filter_1_1_process_executor_component.html", null ]
+        ] ],
+        [ "Execution::ProcessComponent_T< Gfx::GeometryFilter::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
+          [ "Gfx::GeometryFilter::ProcessExecutorComponent", "class_gfx_1_1_geometry_filter_1_1_process_executor_component.html", null ]
+        ] ],
+        [ "Execution::ProcessComponent_T< Gfx::Images::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
+          [ "Gfx::Images::ProcessExecutorComponent", "class_gfx_1_1_images_1_1_process_executor_component.html", null ]
+        ] ],
+        [ "Execution::ProcessComponent_T< Gfx::Text::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
+          [ "Gfx::Text::ProcessExecutorComponent", "class_gfx_1_1_text_1_1_process_executor_component.html", null ]
+        ] ],
+        [ "Execution::ProcessComponent_T< Gfx::Video::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
+          [ "Gfx::Video::ProcessExecutorComponent", "class_gfx_1_1_video_1_1_process_executor_component.html", null ]
+        ] ],
+        [ "Execution::ProcessComponent_T< Gradient::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
+          [ "Gradient::RecreateOnPlay::Component", "class_gradient_1_1_recreate_on_play_1_1_component.html", null ]
+        ] ],
+        [ "Execution::ProcessComponent_T< InterpState::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
+          [ "InterpState::ExecComponent", "class_interp_state_1_1_exec_component.html", null ]
+        ] ],
+        [ "Execution::ProcessComponent_T< JS::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
+          [ "JS::Executor::Component", "class_j_s_1_1_executor_1_1_component.html", null ]
+        ] ],
+        [ "Execution::ProcessComponent_T< Jit::BytebeatModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
+          [ "Jit::BytebeatExecutor", "class_jit_1_1_bytebeat_executor.html", null ]
+        ] ],
+        [ "Execution::ProcessComponent_T< Mapping::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
+          [ "Mapping::RecreateOnPlay::Component", "class_mapping_1_1_recreate_on_play_1_1_component.html", null ]
+        ] ],
+        [ "Execution::ProcessComponent_T< Midi::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
+          [ "Midi::Executor::Component", "class_midi_1_1_executor_1_1_component.html", null ]
         ] ],
         [ "Execution::ProcessComponent_T< Nodal::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
           [ "Nodal::NodalExecutorBase", "class_nodal_1_1_nodal_executor_base.html", [
             [ "Nodal::HierarchyManager", "class_nodal_1_1_hierarchy_manager.html", null ]
           ] ]
         ] ],
-        [ "Execution::ProcessComponent_T< Jit::BytebeatModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-          [ "Jit::BytebeatExecutor", "class_jit_1_1_bytebeat_executor.html", null ]
+        [ "Execution::ProcessComponent_T< Patternist::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
+          [ "Patternist::Executor", "class_patternist_1_1_executor.html", null ]
         ] ],
         [ "Execution::ProcessComponent_T< Spline3D::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
           [ "Spline3D::RecreateOnPlay::Component", "class_spline3_d_1_1_recreate_on_play_1_1_component.html", null ]
         ] ],
-        [ "Execution::ProcessComponent_T< ControlSurface::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-          [ "ControlSurface::ProcessExecutorComponent", "class_control_surface_1_1_process_executor_component.html", null ]
+        [ "Execution::ProcessComponent_T< Spline::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
+          [ "Spline::RecreateOnPlay::Component", "class_spline_1_1_recreate_on_play_1_1_component.html", null ]
         ] ],
-        [ "Execution::ProcessComponent_T< InterpState::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
-          [ "InterpState::ExecComponent", "class_interp_state_1_1_exec_component.html", null ]
+        [ "Execution::ProcessComponent_T< YSFX::ProcessModel, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
+          [ "YSFX::Executor::Component", "class_y_s_f_x_1_1_executor_1_1_component.html", null ]
+        ] ],
+        [ "Execution::ProcessComponent_T< ProcessModel< Node >, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
+          [ "oscr::Executor< Node >", "classoscr_1_1_executor.html", null ]
+        ] ],
+        [ "Execution::ProcessComponent_T< vst3::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
+          [ "vst3::Executor", "classvst3_1_1_executor.html", null ]
+        ] ],
+        [ "Execution::ProcessComponent_T< vst::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
+          [ "vst::Executor", "classvst_1_1_executor.html", null ]
         ] ]
       ] ]
     ] ],
@@ -2198,7 +2235,8 @@ var hierarchy =
         [ "Execution::ProcessComponentFactory_T< ProcessComponent_T >", "class_execution_1_1_process_component_factory___t.html", null ],
         [ "LocalTree::ProcessComponentFactory_T< ProcessComponent_T >", "class_local_tree_1_1_process_component_factory___t.html", null ],
         [ "RemoteControl::ProcessComponentFactory_T< ProcessComponent_T >", "class_remote_control_1_1_process_component_factory___t.html", null ]
-      ] ]
+      ] ],
+      [ "score::GenericComponentFactoryImpl< oscr::Executor< Node >, ProcessComponentFactory >", "classscore_1_1_generic_component_factory_impl.html", null ]
     ] ],
     [ "Process::ProcessData", "struct_process_1_1_process_data.html", [
       [ "Library::ProcessData", "struct_library_1_1_process_data.html", null ]
@@ -2240,19 +2278,19 @@ var hierarchy =
       [ "State::EmptyModel", "class_state_1_1_empty_model.html", null ],
       [ "State::UnitModel", "class_state_1_1_unit_model.html", null ],
       [ "TreeModel", "class_tree_model.html", [
-        [ "TreeNodeBasedItemModel< Process::MessageNode >", "class_tree_node_based_item_model.html", [
-          [ "Scenario::MessageItemModel", "class_scenario_1_1_message_item_model.html", null ]
-        ] ],
-        [ "TreeNodeBasedItemModel< ProcessNode >", "class_tree_node_based_item_model.html", [
-          [ "Library::ProcessesItemModel", "class_library_1_1_processes_item_model.html", null ]
-        ] ],
         [ "TreeNodeBasedItemModel< Device::Node >", "class_tree_node_based_item_model.html", [
           [ "Device::NodeBasedItemModel", "class_device_1_1_node_based_item_model.html", [
             [ "Explorer::DeviceExplorerModel", "class_explorer_1_1_device_explorer_model.html", null ]
           ] ]
         ] ],
+        [ "TreeNodeBasedItemModel< ProcessNode >", "class_tree_node_based_item_model.html", [
+          [ "Library::ProcessesItemModel", "class_library_1_1_processes_item_model.html", null ]
+        ] ],
         [ "TreeNodeBasedItemModel< FixtureNode >", "class_tree_node_based_item_model.html", [
           [ "Protocols::FixtureDatabase", "class_protocols_1_1_fixture_database.html", null ]
+        ] ],
+        [ "TreeNodeBasedItemModel< Process::MessageNode >", "class_tree_node_based_item_model.html", [
+          [ "Scenario::MessageItemModel", "class_scenario_1_1_message_item_model.html", null ]
         ] ],
         [ "TreeNodeBasedItemModel< NodeType >", "class_tree_node_based_item_model.html", null ]
       ] ],
@@ -2265,8 +2303,22 @@ var hierarchy =
       [ "Scenario::MessageListProxy", "class_scenario_1_1_message_list_proxy.html", null ]
     ] ],
     [ "QAbstractTransition", null, [
+      [ "score::MatchedTransition< ClickOnEvent_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< ClickOnEvent_Event > >", "classscore_1_1_state_aware_transition.html", null ]
+      ] ],
+      [ "score::MatchedTransition< ClickOnState_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< ClickOnState_Event > >", "classscore_1_1_state_aware_transition.html", null ]
+      ] ],
+      [ "score::MatchedTransition< ClickOnTimeSync_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< ClickOnTimeSync_Event > >", "classscore_1_1_state_aware_transition.html", null ]
+      ] ],
       [ "score::MatchedTransition< ClickOnSlotHandle_Event >", "classscore_1_1_matched_transition.html", [
         [ "Scenario::ClickOnSlotHandle_Transition", "class_scenario_1_1_click_on_slot_handle___transition.html", null ]
+      ] ],
+      [ "score::MatchedTransition< Event_T >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< Event_T > >", "classscore_1_1_state_aware_transition.html", [
+          [ "Scenario::MatchedTransition< Scenario_T, Event_T >", "class_scenario_1_1_matched_transition.html", null ]
+        ] ]
       ] ],
       [ "score::MatchedTransition< MoveOnSlotHandle_Event >", "classscore_1_1_matched_transition.html", [
         [ "Scenario::MoveOnSlotHandle_Transition", "class_scenario_1_1_move_on_slot_handle___transition.html", null ]
@@ -2274,15 +2326,50 @@ var hierarchy =
       [ "score::MatchedTransition< ReleaseOnSlotHandle_Event >", "classscore_1_1_matched_transition.html", [
         [ "Scenario::ReleaseOnSlotHandle_Transition", "class_scenario_1_1_release_on_slot_handle___transition.html", null ]
       ] ],
+      [ "score::MatchedTransition< ClickOnInterval_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< ClickOnInterval_Event > >", "classscore_1_1_state_aware_transition.html", null ]
+      ] ],
+      [ "score::MatchedTransition< ClickOnLeftBrace_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< ClickOnLeftBrace_Event > >", "classscore_1_1_state_aware_transition.html", null ]
+      ] ],
+      [ "score::MatchedTransition< ClickOnNothing_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< ClickOnNothing_Event > >", "classscore_1_1_state_aware_transition.html", null ]
+      ] ],
+      [ "score::MatchedTransition< ClickOnRightBrace_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< ClickOnRightBrace_Event > >", "classscore_1_1_state_aware_transition.html", null ]
+      ] ],
+      [ "score::MatchedTransition< MoveOnEvent_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< MoveOnEvent_Event > >", "classscore_1_1_state_aware_transition.html", null ]
+      ] ],
+      [ "score::MatchedTransition< MoveOnInterval_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< MoveOnInterval_Event > >", "classscore_1_1_state_aware_transition.html", null ]
+      ] ],
+      [ "score::MatchedTransition< MoveOnNothing_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< MoveOnNothing_Event > >", "classscore_1_1_state_aware_transition.html", null ]
+      ] ],
+      [ "score::MatchedTransition< MoveOnState_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< MoveOnState_Event > >", "classscore_1_1_state_aware_transition.html", null ]
+      ] ],
+      [ "score::MatchedTransition< MoveOnTimeSync_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< MoveOnTimeSync_Event > >", "classscore_1_1_state_aware_transition.html", null ]
+      ] ],
+      [ "score::MatchedTransition< ReleaseOnEvent_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< ReleaseOnEvent_Event > >", "classscore_1_1_state_aware_transition.html", null ]
+      ] ],
+      [ "score::MatchedTransition< ReleaseOnNothing_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< ReleaseOnNothing_Event > >", "classscore_1_1_state_aware_transition.html", null ]
+      ] ],
+      [ "score::MatchedTransition< ReleaseOnState_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< ReleaseOnState_Event > >", "classscore_1_1_state_aware_transition.html", null ]
+      ] ],
+      [ "score::MatchedTransition< ReleaseOnTimeSync_Event >", "classscore_1_1_matched_transition.html", [
+        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< ReleaseOnTimeSync_Event > >", "classscore_1_1_state_aware_transition.html", null ]
+      ] ],
       [ "Curve::ReleaseOnAnything_Transition", "class_curve_1_1_release_on_anything___transition.html", null ],
       [ "Scenario::MoveOnAnything_SlotTransition", "class_scenario_1_1_move_on_anything___slot_transition.html", null ],
       [ "Scenario::ReleaseOnAnything_SlotTransition", "class_scenario_1_1_release_on_anything___slot_transition.html", null ],
       [ "Scenario::ReleaseOnAnything_Transition", "class_scenario_1_1_release_on_anything___transition.html", null ],
-      [ "score::MatchedTransition< Event >", "classscore_1_1_matched_transition.html", [
-        [ "score::StateAwareTransition< Scenario::StateBase< Scenario_T >, score::MatchedTransition< Event_T > >", "classscore_1_1_state_aware_transition.html", [
-          [ "Scenario::MatchedTransition< Scenario_T, Event_T >", "class_scenario_1_1_matched_transition.html", null ]
-        ] ]
-      ] ]
+      [ "score::MatchedTransition< Event >", "classscore_1_1_matched_transition.html", null ]
     ] ],
     [ "QAction", null, [
       [ "Scenario::SnapshotAction", "struct_scenario_1_1_snapshot_action.html", null ]
@@ -2342,11 +2429,11 @@ var hierarchy =
       [ "score::DoubleSpinboxWithEnter", "structscore_1_1_double_spinbox_with_enter.html", null ]
     ] ],
     [ "QEvent", null, [
-      [ "score::NumberedEvent< MoveOnSlotHandle >", "structscore_1_1_numbered_event.html", [
-        [ "Scenario::MoveOnSlotHandle_Event", "struct_scenario_1_1_move_on_slot_handle___event.html", null ]
-      ] ],
       [ "score::NumberedEvent< ClickOnSlotHandle >", "structscore_1_1_numbered_event.html", [
         [ "Scenario::ClickOnSlotHandle_Event", "struct_scenario_1_1_click_on_slot_handle___event.html", null ]
+      ] ],
+      [ "score::NumberedEvent< MoveOnSlotHandle >", "structscore_1_1_numbered_event.html", [
+        [ "Scenario::MoveOnSlotHandle_Event", "struct_scenario_1_1_move_on_slot_handle___event.html", null ]
       ] ],
       [ "score::NumberedEvent< ReleaseOnSlotHandle >", "structscore_1_1_numbered_event.html", [
         [ "Scenario::ReleaseOnSlotHandle_Event", "struct_scenario_1_1_release_on_slot_handle___event.html", null ]
@@ -2375,22 +2462,22 @@ var hierarchy =
       [ "Inspector::Layout", "class_inspector_1_1_layout.html", null ]
     ] ],
     [ "QGraphicsItem", null, [
+      [ "score::QGraphicsSliderBase< QGraphicsIntSlider >", "structscore_1_1_q_graphics_slider_base.html", [
+        [ "score::QGraphicsIntSlider", "classscore_1_1_q_graphics_int_slider.html", null ]
+      ] ],
       [ "score::QGraphicsSliderBase< QGraphicsLogSlider >", "structscore_1_1_q_graphics_slider_base.html", [
         [ "score::QGraphicsLogSlider", "classscore_1_1_q_graphics_log_slider.html", null ]
-      ] ],
-      [ "score::QGraphicsSliderBase< GraphicsSlider >", "structscore_1_1_q_graphics_slider_base.html", [
-        [ "vst::GraphicsSlider", "classvst_1_1_graphics_slider.html", null ]
-      ] ],
-      [ "score::QGraphicsSliderBase< VSTGraphicsSlider >", "structscore_1_1_q_graphics_slider_base.html", [
-        [ "vst3::VSTGraphicsSlider", "classvst3_1_1_v_s_t_graphics_slider.html", null ]
       ] ],
       [ "score::QGraphicsSliderBase< QGraphicsSlider >", "structscore_1_1_q_graphics_slider_base.html", [
         [ "score::QGraphicsSlider", "classscore_1_1_q_graphics_slider.html", [
           [ "oscr::CustomTextGraphicsSlider< Field >", "classoscr_1_1_custom_text_graphics_slider.html", null ]
         ] ]
       ] ],
-      [ "score::QGraphicsSliderBase< QGraphicsIntSlider >", "structscore_1_1_q_graphics_slider_base.html", [
-        [ "score::QGraphicsIntSlider", "classscore_1_1_q_graphics_int_slider.html", null ]
+      [ "score::QGraphicsSliderBase< VSTGraphicsSlider >", "structscore_1_1_q_graphics_slider_base.html", [
+        [ "vst3::VSTGraphicsSlider", "classvst3_1_1_v_s_t_graphics_slider.html", null ]
+      ] ],
+      [ "score::QGraphicsSliderBase< GraphicsSlider >", "structscore_1_1_q_graphics_slider_base.html", [
+        [ "vst::GraphicsSlider", "classvst_1_1_graphics_slider.html", null ]
       ] ],
       [ "BaseGraphicsObject", "class_base_graphics_object.html", null ],
       [ "Curve::PointView", "class_curve_1_1_point_view.html", null ],
@@ -2593,11 +2680,11 @@ var hierarchy =
       [ "score::ReactiveLabel< Property_T >", "classscore_1_1_reactive_label.html", null ]
     ] ],
     [ "QLineEdit", null, [
-      [ "State::AddressLineEditBase< AddressValidator, Parent_T >", "class_state_1_1_address_line_edit_base.html", [
-        [ "State::AddressLineEdit< Parent_T >", "class_state_1_1_address_line_edit.html", null ]
-      ] ],
       [ "State::AddressLineEditBase< AddressAccessorValidator, Parent_T >", "class_state_1_1_address_line_edit_base.html", [
         [ "State::AddressAccessorLineEdit< Parent_T >", "class_state_1_1_address_accessor_line_edit.html", null ]
+      ] ],
+      [ "State::AddressLineEditBase< AddressValidator, Parent_T >", "class_state_1_1_address_line_edit_base.html", [
+        [ "State::AddressLineEdit< Parent_T >", "class_state_1_1_address_line_edit.html", null ]
       ] ],
       [ "State::AddressFragmentLineEdit", "class_state_1_1_address_fragment_line_edit.html", null ],
       [ "State::AddressLineEditBase< Validator_T, Parent_T >", "class_state_1_1_address_line_edit_base.html", null ],
@@ -2631,10 +2718,17 @@ var hierarchy =
     [ "QObject", null, [
       [ "ControlSurface::NodeObserver< int, Apply >", "struct_control_surface_1_1_node_observer.html", null ],
       [ "Dataflow::BasicToolPaletteInputDispatcher< Curve::Tool, Curve::ToolPalette, Curve::View >", "class_dataflow_1_1_basic_tool_palette_input_dispatcher.html", null ],
-      [ "ToolPaletteInputDispatcher< Scenario::Tool, Scenario::ToolPalette, Process::LayerContext, Process::LayerView >", "class_tool_palette_input_dispatcher.html", null ],
-      [ "ToolPaletteInputDispatcher< Scenario::Tool, Scenario::BaseScenarioDisplayedElementsToolPalette, Scenario::BaseElementContext, Scenario::ScenarioDocumentPresenter >", "class_tool_palette_input_dispatcher.html", null ],
+      [ "Recording::SingleRecorder< Recording::AutomationRecorder >", "class_recording_1_1_single_recorder.html", null ],
+      [ "Recording::SingleRecorder< Recording::MessageRecorder >", "class_recording_1_1_single_recorder.html", null ],
+      [ "ToolPaletteInputDispatcher< Curve::Tool, Curve::ToolPalette, Process::LayerContext, Curve::View >", "class_tool_palette_input_dispatcher.html", null ],
       [ "ToolPaletteInputDispatcher< Curve::Tool, Curve::ToolPalette, Context_T, Curve::View >", "class_tool_palette_input_dispatcher.html", null ],
+      [ "ToolPaletteInputDispatcher< Scenario::Tool, Scenario::BaseScenarioDisplayedElementsToolPalette, Scenario::BaseElementContext, Scenario::ScenarioDocumentPresenter >", "class_tool_palette_input_dispatcher.html", null ],
       [ "ToolPaletteInputDispatcher< Scenario::Tool, Scenario::ScenarioDisplayedElementsToolPalette, Scenario::BaseElementContext, Scenario::ScenarioDocumentPresenter >", "class_tool_palette_input_dispatcher.html", null ],
+      [ "ToolPaletteInputDispatcher< Scenario::Tool, Scenario::ToolPalette, Process::LayerContext, Process::LayerView >", "class_tool_palette_input_dispatcher.html", null ],
+      [ "score::SettingsDelegatePresenter< score::ProjectSettingsModel >", "classscore_1_1_settings_delegate_presenter.html", null ],
+      [ "score::SettingsDelegatePresenter< score::SettingsDelegateModel >", "classscore_1_1_settings_delegate_presenter.html", null ],
+      [ "score::SettingsDelegateView< score::ProjectSettingsModel >", "classscore_1_1_settings_delegate_view.html", null ],
+      [ "score::SettingsDelegateView< score::SettingsDelegateModel >", "classscore_1_1_settings_delegate_view.html", null ],
       [ "score::SettingsPresenter< score::ProjectSettingsModel >", "classscore_1_1_settings_presenter.html", null ],
       [ "score::SettingsPresenter< score::SettingsDelegateModel >", "classscore_1_1_settings_presenter.html", null ],
       [ "AddLayerModelToSlotTest", "class_add_layer_model_to_slot_test.html", null ],
@@ -2684,7 +2778,6 @@ var hierarchy =
       [ "Device::DeviceInterface", "class_device_1_1_device_interface.html", null ],
       [ "Device::DeviceList", "class_device_1_1_device_list.html", null ],
       [ "Engine::ApplicationPlugin", "class_engine_1_1_application_plugin.html", null ],
-      [ "Execution::BaseScenarioElement", "class_execution_1_1_base_scenario_element.html", null ],
       [ "Execution::ExecutionController", "class_execution_1_1_execution_controller.html", null ],
       [ "Execution::ManualClock::Clock", "class_execution_1_1_manual_clock_1_1_clock.html", null ],
       [ "Execution::PlayContextMenu", "class_execution_1_1_play_context_menu.html", null ],
@@ -2699,7 +2792,6 @@ var hierarchy =
       [ "Faust::LibraryHandler", "class_faust_1_1_library_handler.html", null ],
       [ "FocusDispatcher", "class_focus_dispatcher.html", null ],
       [ "Gfx::GfxContext", "class_gfx_1_1_gfx_context.html", null ],
-      [ "GlobalDeviceEnumerator", "class_global_device_enumerator.html", null ],
       [ "GraphicsSceneToolPalette", "class_graphics_scene_tool_palette.html", [
         [ "Curve::ToolPalette", "class_curve_1_1_tool_palette.html", [
           [ "Curve::ToolPalette_T< Process::LayerContext >", "struct_curve_1_1_tool_palette___t.html", null ],
@@ -2711,10 +2803,22 @@ var hierarchy =
       ] ],
       [ "HideRackInViewModelTest", "class_hide_rack_in_view_model_test.html", null ],
       [ "IdentifiedObjectAbstract", "class_identified_object_abstract.html", [
-        [ "IdentifiedObject< DocumentDelegateModel >", "class_identified_object.html", [
-          [ "score::DocumentDelegateModel", "classscore_1_1_document_delegate_model.html", [
-            [ "Scenario::ScenarioDocumentModel", "class_scenario_1_1_scenario_document_model.html", null ]
+        [ "IdentifiedObject< Model >", "class_identified_object.html", [
+          [ "Curve::Model", "class_curve_1_1_model.html", null ]
+        ] ],
+        [ "IdentifiedObject< PointModel >", "class_identified_object.html", [
+          [ "Curve::PointModel", "class_curve_1_1_point_model.html", null ]
+        ] ],
+        [ "IdentifiedObject< SegmentModel >", "class_identified_object.html", [
+          [ "Curve::SegmentModel", "class_curve_1_1_segment_model.html", [
+            [ "Curve::EasingSegment< Easing_T >", "class_curve_1_1_easing_segment.html", null ]
           ] ]
+        ] ],
+        [ "IdentifiedObject< Note >", "class_identified_object.html", [
+          [ "Midi::Note", "class_midi_1_1_note.html", null ]
+        ] ],
+        [ "IdentifiedObject< Cable >", "class_identified_object.html", [
+          [ "Process::Cable", "class_process_1_1_cable.html", null ]
         ] ],
         [ "IdentifiedObject< Port >", "class_identified_object.html", [
           [ "Process::Port", "class_process_1_1_port.html", [
@@ -2742,47 +2846,34 @@ var hierarchy =
             ] ]
           ] ]
         ] ],
-        [ "IdentifiedObject< Note >", "class_identified_object.html", [
-          [ "Midi::Note", "class_midi_1_1_note.html", null ]
-        ] ],
-        [ "IdentifiedObject< BaseScenario >", "class_identified_object.html", [
-          [ "Scenario::BaseScenario", "class_scenario_1_1_base_scenario.html", null ]
-        ] ],
-        [ "IdentifiedObject< SegmentModel >", "class_identified_object.html", [
-          [ "Curve::SegmentModel", "class_curve_1_1_segment_model.html", [
-            [ "Curve::EasingSegment< Easing_T >", "class_curve_1_1_easing_segment.html", null ]
-          ] ]
-        ] ],
-        [ "IdentifiedObject< T >", "class_identified_object.html", [
-          [ "score::Entity< T >", "classscore_1_1_entity.html", null ]
-        ] ],
-        [ "IdentifiedObject< PointModel >", "class_identified_object.html", [
-          [ "Curve::PointModel", "class_curve_1_1_point_model.html", null ]
-        ] ],
+        [ "IdentifiedObject< ProcessModel >", "class_identified_object.html", null ],
         [ "IdentifiedObject< ProcessStateDataInterface >", "class_identified_object.html", [
           [ "ProcessStateDataInterface", "class_process_state_data_interface.html", [
             [ "Automation::ProcessState", "class_automation_1_1_process_state.html", null ]
           ] ]
         ] ],
-        [ "IdentifiedObject< DocumentModel >", "class_identified_object.html", [
-          [ "score::DocumentModel", "classscore_1_1_document_model.html", null ]
-        ] ],
-        [ "IdentifiedObject< Cable >", "class_identified_object.html", [
-          [ "Process::Cable", "class_process_1_1_cable.html", null ]
-        ] ],
-        [ "IdentifiedObject< Model >", "class_identified_object.html", [
-          [ "Curve::Model", "class_curve_1_1_model.html", null ]
+        [ "IdentifiedObject< BaseScenario >", "class_identified_object.html", [
+          [ "Scenario::BaseScenario", "class_scenario_1_1_base_scenario.html", null ]
         ] ],
         [ "IdentifiedObject< CommentBlockModel >", "class_identified_object.html", [
           [ "Scenario::CommentBlockModel", "class_scenario_1_1_comment_block_model.html", null ]
         ] ],
+        [ "IdentifiedObject< EventModel >", "class_identified_object.html", null ],
+        [ "IdentifiedObject< IntervalModel >", "class_identified_object.html", null ],
+        [ "IdentifiedObject< StateModel >", "class_identified_object.html", null ],
+        [ "IdentifiedObject< TimeSyncModel >", "class_identified_object.html", null ],
+        [ "IdentifiedObject< DocumentDelegateModel >", "class_identified_object.html", [
+          [ "score::DocumentDelegateModel", "classscore_1_1_document_delegate_model.html", [
+            [ "Scenario::ScenarioDocumentModel", "class_scenario_1_1_scenario_document_model.html", null ]
+          ] ]
+        ] ],
+        [ "IdentifiedObject< DocumentModel >", "class_identified_object.html", [
+          [ "score::DocumentModel", "classscore_1_1_document_model.html", null ]
+        ] ],
+        [ "IdentifiedObject< T >", "class_identified_object.html", [
+          [ "score::Entity< T >", "classscore_1_1_entity.html", null ]
+        ] ],
         [ "IdentifiedObject< model >", "class_identified_object.html", [
-          [ "score::Entity< TimeSyncModel >", "classscore_1_1_entity.html", [
-            [ "Scenario::TimeSyncModel", "class_scenario_1_1_time_sync_model.html", null ]
-          ] ],
-          [ "score::Entity< IntervalModel >", "classscore_1_1_entity.html", [
-            [ "Scenario::IntervalModel", "class_scenario_1_1_interval_model.html", null ]
-          ] ],
           [ "score::Entity< ProcessModel >", "classscore_1_1_entity.html", [
             [ "Process::ProcessModel", "class_process_1_1_process_model.html", [
               [ "ControlSurface::Model", "class_control_surface_1_1_model.html", null ],
@@ -2793,7 +2884,6 @@ var hierarchy =
               [ "FaustDSP::Fx< DSP >", "class_faust_d_s_p_1_1_fx.html", null ],
               [ "Gfx::Filter::Model", "class_gfx_1_1_filter_1_1_model.html", null ],
               [ "Gfx::GeometryFilter::Model", "class_gfx_1_1_geometry_filter_1_1_model.html", null ],
-              [ "Gfx::Images::Model", "class_gfx_1_1_images_1_1_model.html", null ],
               [ "Gfx::Text::Model", "class_gfx_1_1_text_1_1_model.html", null ],
               [ "Gfx::Video::Model", "class_gfx_1_1_video_1_1_model.html", null ],
               [ "Gradient::ProcessModel", "class_gradient_1_1_process_model.html", null ],
@@ -2814,11 +2904,17 @@ var hierarchy =
               [ "vst3::Model", "classvst3_1_1_model.html", null ]
             ] ]
           ] ],
+          [ "score::Entity< EventModel >", "classscore_1_1_entity.html", [
+            [ "Scenario::EventModel", "class_scenario_1_1_event_model.html", null ]
+          ] ],
+          [ "score::Entity< IntervalModel >", "classscore_1_1_entity.html", [
+            [ "Scenario::IntervalModel", "class_scenario_1_1_interval_model.html", null ]
+          ] ],
           [ "score::Entity< StateModel >", "classscore_1_1_entity.html", [
             [ "Scenario::StateModel", "class_scenario_1_1_state_model.html", null ]
           ] ],
-          [ "score::Entity< EventModel >", "classscore_1_1_entity.html", [
-            [ "Scenario::EventModel", "class_scenario_1_1_event_model.html", null ]
+          [ "score::Entity< TimeSyncModel >", "classscore_1_1_entity.html", [
+            [ "Scenario::TimeSyncModel", "class_scenario_1_1_time_sync_model.html", null ]
           ] ]
         ] ]
       ] ],
@@ -2831,11 +2927,72 @@ var hierarchy =
       [ "JS::DeviceContext", "class_j_s_1_1_device_context.html", null ],
       [ "JS::DeviceIdentifier", "struct_j_s_1_1_device_identifier.html", null ],
       [ "JS::EditJsContext", "class_j_s_1_1_edit_js_context.html", null ],
-      [ "JS::Inlet", "class_j_s_1_1_inlet.html", null ],
+      [ "JS::GlobalDeviceEnumerator", "class_j_s_1_1_global_device_enumerator.html", null ],
+      [ "JS::Inlet", "class_j_s_1_1_inlet.html", [
+        [ "JS::AudioInlet", "class_j_s_1_1_audio_inlet.html", null ],
+        [ "JS::ControlInlet", "class_j_s_1_1_control_inlet.html", [
+          [ "JS::GenericControlInlet< Process::AudioFileChooser, QString >", "class_j_s_1_1_generic_control_inlet.html", [
+            [ "JS::AudioFileChooser", "struct_j_s_1_1_audio_file_chooser.html", null ]
+          ] ],
+          [ "JS::GenericControlInlet< Process::FileChooser, QString >", "class_j_s_1_1_generic_control_inlet.html", [
+            [ "JS::FileChooser", "struct_j_s_1_1_file_chooser.html", null ]
+          ] ],
+          [ "JS::GenericControlInlet< Process::FloatRangeSpinBox, QVector2D >", "class_j_s_1_1_generic_control_inlet.html", [
+            [ "JS::FloatRangeSpinBox", "struct_j_s_1_1_float_range_spin_box.html", null ]
+          ] ],
+          [ "JS::GenericControlInlet< Process::FloatSlider, float >", "class_j_s_1_1_generic_control_inlet.html", null ],
+          [ "JS::GenericControlInlet< Process::HSVSlider, QVector4D >", "class_j_s_1_1_generic_control_inlet.html", [
+            [ "JS::HSVSlider", "struct_j_s_1_1_h_s_v_slider.html", null ]
+          ] ],
+          [ "JS::GenericControlInlet< Process::IntRangeSlider, QVector2D >", "class_j_s_1_1_generic_control_inlet.html", [
+            [ "JS::IntRangeSlider", "struct_j_s_1_1_int_range_slider.html", null ]
+          ] ],
+          [ "JS::GenericControlInlet< Process::IntRangeSpinBox, QVector2D >", "class_j_s_1_1_generic_control_inlet.html", [
+            [ "JS::IntRangeSpinBox", "struct_j_s_1_1_int_range_spin_box.html", null ]
+          ] ],
+          [ "JS::GenericControlInlet< Process::IntSlider, int >", "class_j_s_1_1_generic_control_inlet.html", null ],
+          [ "JS::GenericControlInlet< Process::MultiSlider, QVector< qreal > >", "class_j_s_1_1_generic_control_inlet.html", [
+            [ "JS::MultiSlider", "struct_j_s_1_1_multi_slider.html", null ]
+          ] ],
+          [ "JS::GenericControlInlet< Process::VideoFileChooser, QString >", "class_j_s_1_1_generic_control_inlet.html", [
+            [ "JS::VideoFileChooser", "struct_j_s_1_1_video_file_chooser.html", null ]
+          ] ],
+          [ "JS::GenericControlInlet< Process::XYSlider, QVector2D >", "class_j_s_1_1_generic_control_inlet.html", [
+            [ "JS::XYSlider", "struct_j_s_1_1_x_y_slider.html", null ]
+          ] ],
+          [ "JS::GenericControlInlet< Process::XYSpinboxes, QVector2D >", "class_j_s_1_1_generic_control_inlet.html", [
+            [ "JS::XYSpinboxes", "struct_j_s_1_1_x_y_spinboxes.html", null ]
+          ] ],
+          [ "JS::GenericControlInlet< Process::XYZSlider, QVector3D >", "class_j_s_1_1_generic_control_inlet.html", [
+            [ "JS::XYZSlider", "struct_j_s_1_1_x_y_z_slider.html", null ]
+          ] ],
+          [ "JS::GenericControlInlet< Process::XYZSpinboxes, QVector3D >", "class_j_s_1_1_generic_control_inlet.html", [
+            [ "JS::XYZSpinboxes", "struct_j_s_1_1_x_y_z_spinboxes.html", null ]
+          ] ],
+          [ "JS::Button", "class_j_s_1_1_button.html", null ],
+          [ "JS::Enum", "class_j_s_1_1_enum.html", null ],
+          [ "JS::GenericControlInlet< Impl, ValueType >", "class_j_s_1_1_generic_control_inlet.html", [
+            [ "JS::FloatSlider< Impl >", "class_j_s_1_1_float_slider.html", null ],
+            [ "JS::IntSlider< Impl >", "class_j_s_1_1_int_slider.html", null ]
+          ] ],
+          [ "JS::Impulse", "class_j_s_1_1_impulse.html", null ],
+          [ "JS::LineEdit", "class_j_s_1_1_line_edit.html", null ],
+          [ "JS::Toggle", "class_j_s_1_1_toggle.html", null ]
+        ] ],
+        [ "JS::MidiInlet", "class_j_s_1_1_midi_inlet.html", null ],
+        [ "JS::ValueInlet", "class_j_s_1_1_value_inlet.html", null ]
+      ] ],
       [ "JS::JsUtils", "class_j_s_1_1_js_utils.html", null ],
       [ "JS::LibraryHandler", "class_j_s_1_1_library_handler.html", null ],
       [ "JS::ModuleLibraryHandler", "class_j_s_1_1_module_library_handler.html", null ],
+      [ "JS::Outlet", "class_j_s_1_1_outlet.html", [
+        [ "JS::AudioOutlet", "class_j_s_1_1_audio_outlet.html", null ],
+        [ "JS::MidiOutlet", "class_j_s_1_1_midi_outlet.html", null ],
+        [ "JS::ValueOutlet", "class_j_s_1_1_value_outlet.html", null ]
+      ] ],
+      [ "JS::PanelDelegate", "class_j_s_1_1_panel_delegate.html", null ],
       [ "JS::PortSource", "struct_j_s_1_1_port_source.html", null ],
+      [ "JS::Script", "class_j_s_1_1_script.html", null ],
       [ "Jit::AddonCompiler", "class_jit_1_1_addon_compiler.html", null ],
       [ "Jit::ApplicationPlugin", "struct_jit_1_1_application_plugin.html", null ],
       [ "LV2::ApplicationPlugin", "class_l_v2_1_1_application_plugin.html", null ],
@@ -2850,12 +3007,6 @@ var hierarchy =
       [ "MoveEventTest", "class_move_event_test.html", null ],
       [ "MoveIntervalTest", "class_move_interval_test.html", null ],
       [ "NodeTest", "class_node_test.html", null ],
-      [ "Outlet", "class_outlet.html", [
-        [ "AudioOutlet", "class_audio_outlet.html", null ],
-        [ "MidiOutlet", "class_midi_outlet.html", null ],
-        [ "ValueOutlet", "class_value_outlet.html", null ]
-      ] ],
-      [ "PanelDelegate", "class_panel_delegate.html", null ],
       [ "Patternist::LibraryHandler", "class_patternist_1_1_library_handler.html", null ],
       [ "Pd::LibraryHandler", "class_pd_1_1_library_handler.html", null ],
       [ "Process::ApplicationPlugin", "class_process_1_1_application_plugin.html", null ],
@@ -2947,7 +3098,6 @@ var hierarchy =
       [ "Scenario::ToolMenuActions", "class_scenario_1_1_tool_menu_actions.html", null ],
       [ "Scenario::TransportActions", "class_scenario_1_1_transport_actions.html", null ],
       [ "Scenario::TriggerView", "class_scenario_1_1_trigger_view.html", null ],
-      [ "Script", "class_script.html", null ],
       [ "Selectable", "class_selectable.html", null ],
       [ "ShowRackInViewModelTest", "class_show_rack_in_view_model_test.html", null ],
       [ "SplitTimeSyncTest", "class_split_time_sync_test.html", null ],
@@ -3058,7 +3208,6 @@ var hierarchy =
         [ "Audio::Settings::Presenter", "class_audio_1_1_settings_1_1_presenter.html", null ],
         [ "Curve::Settings::Presenter", "class_curve_1_1_settings_1_1_presenter.html", null ],
         [ "Execution::Settings::Presenter", "class_execution_1_1_settings_1_1_presenter.html", null ],
-        [ "Explorer::ProjectSettings::Presenter", "class_explorer_1_1_project_settings_1_1_presenter.html", null ],
         [ "Explorer::Settings::Presenter", "class_explorer_1_1_settings_1_1_presenter.html", null ],
         [ "Gfx::Settings::Presenter", "class_gfx_1_1_settings_1_1_presenter.html", null ],
         [ "Library::Settings::Presenter", "class_library_1_1_settings_1_1_presenter.html", null ],
@@ -3072,7 +3221,6 @@ var hierarchy =
         [ "Audio::Settings::View", "class_audio_1_1_settings_1_1_view.html", null ],
         [ "Curve::Settings::View", "class_curve_1_1_settings_1_1_view.html", null ],
         [ "Execution::Settings::View", "class_execution_1_1_settings_1_1_view.html", null ],
-        [ "Explorer::ProjectSettings::View", "class_explorer_1_1_project_settings_1_1_view.html", null ],
         [ "Explorer::Settings::View", "class_explorer_1_1_settings_1_1_view.html", null ],
         [ "Gfx::Settings::View", "class_gfx_1_1_settings_1_1_view.html", null ],
         [ "Library::Settings::View", "class_library_1_1_settings_1_1_view.html", null ],
@@ -3128,6 +3276,9 @@ var hierarchy =
         [ "Scenario::MoveIntervalState< T >", "class_scenario_1_1_move_interval_state.html", null ]
       ] ],
       [ "CommonSelectionState", "class_common_selection_state.html", [
+        [ "Scenario::SelectionState< Scenario::BaseScenarioDisplayedElementsToolPalette, BaseGraphicsObject >", "class_scenario_1_1_selection_state.html", null ],
+        [ "Scenario::SelectionState< Scenario::ScenarioDisplayedElementsToolPalette, BaseGraphicsObject >", "class_scenario_1_1_selection_state.html", null ],
+        [ "Scenario::SelectionState< Scenario::ToolPalette, Scenario::ScenarioView >", "class_scenario_1_1_selection_state.html", null ],
         [ "Curve::SelectionState", "class_curve_1_1_selection_state.html", null ],
         [ "Scenario::SelectionState< ToolPalette_T, View_T >", "class_scenario_1_1_selection_state.html", null ]
       ] ],
@@ -3138,8 +3289,14 @@ var hierarchy =
         [ "Scenario::ResizeSlotState< Scenario_T, ToolPalette_T >", "class_scenario_1_1_resize_slot_state.html", null ]
       ] ],
       [ "Scenario::StateBase< Scenario_T >", "class_scenario_1_1_state_base.html", [
+        [ "Scenario::CreationStateBase< Scenario::ProcessModel >", "class_scenario_1_1_creation_state_base.html", null ],
         [ "Scenario::CreationStateBase< Scenario_T >", "class_scenario_1_1_creation_state_base.html", [
+          [ "Scenario::CreationState< Scenario::ProcessModel, Scenario::ToolPalette >", "class_scenario_1_1_creation_state.html", null ],
           [ "Scenario::CreationState< Scenario_T, ToolPalette_T >", "class_scenario_1_1_creation_state.html", [
+            [ "Scenario::Creation_FromEvent< Scenario::ProcessModel, Scenario::ToolPalette >", "class_scenario_1_1_creation___from_event.html", null ],
+            [ "Scenario::Creation_FromNothing< Scenario::ProcessModel, Scenario::ToolPalette >", "class_scenario_1_1_creation___from_nothing.html", null ],
+            [ "Scenario::Creation_FromState< Scenario::ProcessModel, Scenario::ToolPalette >", "class_scenario_1_1_creation___from_state.html", null ],
+            [ "Scenario::Creation_FromTimeSync< Scenario::ProcessModel, Scenario::ToolPalette >", "class_scenario_1_1_creation___from_time_sync.html", null ],
             [ "Scenario::Creation_FromEvent< Scenario_T, ToolPalette_T >", "class_scenario_1_1_creation___from_event.html", null ],
             [ "Scenario::Creation_FromNothing< Scenario_T, ToolPalette_T >", "class_scenario_1_1_creation___from_nothing.html", null ],
             [ "Scenario::Creation_FromState< Scenario_T, ToolPalette_T >", "class_scenario_1_1_creation___from_state.html", null ],
@@ -3203,31 +3360,29 @@ var hierarchy =
       [ "Process::InspectorWidgetDelegate_T< Automation::ProcessModel >", "class_process_1_1_inspector_widget_delegate___t.html", [
         [ "Automation::InspectorWidget", "class_automation_1_1_inspector_widget.html", null ]
       ] ],
-      [ "Process::InspectorWidgetDelegate_T< Sound::ProcessModel >", "class_process_1_1_inspector_widget_delegate___t.html", [
-        [ "Media::Sound::InspectorWidget", "class_media_1_1_sound_1_1_inspector_widget.html", null ]
+      [ "Process::InspectorWidgetDelegate_T< Gfx::Video::Model >", "class_process_1_1_inspector_widget_delegate___t.html", [
+        [ "Gfx::Video::InspectorWidget", "class_gfx_1_1_video_1_1_inspector_widget.html", null ]
       ] ],
-      [ "Process::InspectorWidgetDelegate_T< Model >", "class_process_1_1_inspector_widget_delegate___t.html", [
-        [ "Media::Merger::InspectorWidget", "class_media_1_1_merger_1_1_inspector_widget.html", null ],
-        [ "Media::Step::InspectorWidget", "class_media_1_1_step_1_1_inspector_widget.html", null ]
-      ] ],
+      [ "Process::InspectorWidgetDelegate_T< Gradient::ProcessModel >", "class_process_1_1_inspector_widget_delegate___t.html", null ],
       [ "Process::InspectorWidgetDelegate_T< Interpolation::ProcessModel >", "class_process_1_1_inspector_widget_delegate___t.html", [
         [ "Interpolation::InspectorWidget", "class_interpolation_1_1_inspector_widget.html", null ]
-      ] ],
-      [ "Process::InspectorWidgetDelegate_T< Pd::ProcessModel >", "class_process_1_1_inspector_widget_delegate___t.html", [
-        [ "Pd::PdWidget", "class_pd_1_1_pd_widget.html", null ]
-      ] ],
-      [ "Process::InspectorWidgetDelegate_T< Midi::ProcessModel >", "class_process_1_1_inspector_widget_delegate___t.html", [
-        [ "Midi::InspectorWidget", "class_midi_1_1_inspector_widget.html", null ]
       ] ],
       [ "Process::InspectorWidgetDelegate_T< ProcessModel >", "class_process_1_1_inspector_widget_delegate___t.html", [
         [ "Mapping::InspectorWidget", "class_mapping_1_1_inspector_widget.html", null ],
         [ "Patternist::InspectorWidget", "class_patternist_1_1_inspector_widget.html", null ]
       ] ],
-      [ "Process::InspectorWidgetDelegate_T< Gradient::ProcessModel >", "class_process_1_1_inspector_widget_delegate___t.html", [
-        [ "Gradient::InspectorWidget", "class_gradient_1_1_inspector_widget.html", null ]
+      [ "Process::InspectorWidgetDelegate_T< Model >", "class_process_1_1_inspector_widget_delegate___t.html", [
+        [ "Media::Merger::InspectorWidget", "class_media_1_1_merger_1_1_inspector_widget.html", null ],
+        [ "Media::Step::InspectorWidget", "class_media_1_1_step_1_1_inspector_widget.html", null ]
       ] ],
-      [ "Process::InspectorWidgetDelegate_T< Gfx::Video::Model >", "class_process_1_1_inspector_widget_delegate___t.html", [
-        [ "Gfx::Video::InspectorWidget", "class_gfx_1_1_video_1_1_inspector_widget.html", null ]
+      [ "Process::InspectorWidgetDelegate_T< Sound::ProcessModel >", "class_process_1_1_inspector_widget_delegate___t.html", [
+        [ "Media::Sound::InspectorWidget", "class_media_1_1_sound_1_1_inspector_widget.html", null ]
+      ] ],
+      [ "Process::InspectorWidgetDelegate_T< Midi::ProcessModel >", "class_process_1_1_inspector_widget_delegate___t.html", [
+        [ "Midi::InspectorWidget", "class_midi_1_1_inspector_widget.html", null ]
+      ] ],
+      [ "Process::InspectorWidgetDelegate_T< Pd::ProcessModel >", "class_process_1_1_inspector_widget_delegate___t.html", [
+        [ "Pd::PdWidget", "class_pd_1_1_pd_widget.html", null ]
       ] ],
       [ "State::NumericDomainWidget< float >", "class_state_1_1_numeric_domain_widget.html", null ],
       [ "WidgetWrapper< Explorer::AddressSettingsWidget >", "class_widget_wrapper.html", null ],
@@ -3410,7 +3565,6 @@ var hierarchy =
     [ "Nodal::NodalExecutorBase::RegisteredNode", "struct_nodal_1_1_nodal_executor_base_1_1_registered_node.html", null ],
     [ "Execution::SetupContext::RegisteredPorts", "struct_execution_1_1_setup_context_1_1_registered_ports.html", null ],
     [ "State::Relation", "struct_state_1_1_relation.html", null ],
-    [ "score::Modifier::Release_tag", "structscore_1_1_modifier_1_1_release__tag.html", null ],
     [ "RemoteControl::RemoteMessages", "struct_remote_control_1_1_remote_messages.html", null ],
     [ "score::gfx::RenderList", "classscore_1_1gfx_1_1_render_list.html", null ],
     [ "score::gfx::RenderState", "structscore_1_1gfx_1_1_render_state.html", null ],
@@ -3479,6 +3633,7 @@ var hierarchy =
       [ "Curve::SegmentModel", "class_curve_1_1_segment_model.html", null ]
     ] ],
     [ "serialization_tag< T >", "structserialization__tag.html", null ],
+    [ "serialization_tag< T >", "structserialization__tag_3_01_t_01_4.html", null ],
     [ "oscr::Serializer", "structoscr_1_1_serializer.html", null ],
     [ "Protocols::SerialSpecificSettings", "struct_protocols_1_1_serial_specific_settings.html", null ],
     [ "Curve::SetSegmentParametersCommandObject", "class_curve_1_1_set_segment_parameters_command_object.html", null ],
@@ -3505,6 +3660,8 @@ var hierarchy =
     [ "SendStrategy::Simple", "struct_send_strategy_1_1_simple.html", null ],
     [ "Factor::SingleTransition< T >", "class_factor_1_1_single_transition.html", null ],
     [ "FactorOracle2MIDI::SingleTransition< T >", "class_factor_oracle2_m_i_d_i_1_1_single_transition.html", null ],
+    [ "FactorOracle2MIDI::SingleTransition< int >", "class_factor_oracle2_m_i_d_i_1_1_single_transition.html", null ],
+    [ "Factor::SingleTransition< ossia::value >", "class_factor_1_1_single_transition.html", null ],
     [ "Media::Sound::WaveformComputerImpl::SizeInfos", "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html", null ],
     [ "score::SizeVisitor", "structscore_1_1_size_visitor.html", null ],
     [ "score::SliderWrapper< T >", "structscore_1_1_slider_wrapper.html", null ],
@@ -3547,6 +3704,8 @@ var hierarchy =
     [ "Nodes::MathGenerator::Node::State", "struct_nodes_1_1_math_generator_1_1_node_1_1_state.html", null ],
     [ "Nodes::MathMapping::Node::State", "struct_nodes_1_1_math_mapping_1_1_node_1_1_state.html", null ],
     [ "Nodes::MicroMapping::Node::State", "struct_nodes_1_1_micro_mapping_1_1_node_1_1_state.html", null ],
+    [ "FactorOracle2MIDI::State< int >", "class_factor_oracle2_m_i_d_i_1_1_state.html", null ],
+    [ "Factor::State< ossia::value >", "class_factor_1_1_state.html", null ],
     [ "Process::StateNodeData", "struct_process_1_1_state_node_data.html", null ],
     [ "StateNodeData", null, [
       [ "TreeNode< StateNodeData >", "class_tree_node.html", null ]
@@ -3574,56 +3733,56 @@ var hierarchy =
         [ "Curve::MatchedCurveTransition< CurveEvent< Element_T, Modifier_T > >", "class_curve_1_1_matched_curve_transition.html", [
           [ "Curve::PositionedCurveTransition< Element_T, Modifier_T >", "class_curve_1_1_positioned_curve_transition.html", null ]
         ] ],
-        [ "Scenario::MatchedTransition< Scenario_T, MoveOnInterval_Event >", "class_scenario_1_1_matched_transition.html", [
-          [ "Scenario::Transition_T< Scenario_T, MoveOnInterval >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_move_on_interval_01_4.html", null ]
-        ] ],
         [ "Scenario::MatchedTransition< Scenario_T, ClickOnEvent_Event >", "class_scenario_1_1_matched_transition.html", [
           [ "Scenario::ClickOnEndEvent_Transition< Scenario_T >", "class_scenario_1_1_click_on_end_event___transition.html", null ],
           [ "Scenario::Transition_T< Scenario_T, ClickOnEvent >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_click_on_event_01_4.html", null ]
-        ] ],
-        [ "Scenario::MatchedTransition< Scenario_T, ReleaseOnEvent_Event >", "class_scenario_1_1_matched_transition.html", [
-          [ "Scenario::Transition_T< Scenario_T, ReleaseOnEvent >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_release_on_event_01_4.html", null ]
-        ] ],
-        [ "Scenario::MatchedTransition< Scenario_T, ClickOnLeftBrace_Event >", "class_scenario_1_1_matched_transition.html", [
-          [ "Scenario::Transition_T< Scenario_T, ClickOnLeftBrace >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_click_on_left_brace_01_4.html", null ]
-        ] ],
-        [ "Scenario::MatchedTransition< Scenario_T, MoveOnNothing_Event >", "class_scenario_1_1_matched_transition.html", [
-          [ "Scenario::Transition_T< Scenario_T, MoveOnNothing >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_move_on_nothing_01_4.html", null ]
-        ] ],
-        [ "Scenario::MatchedTransition< Scenario_T, MoveOnEvent_Event >", "class_scenario_1_1_matched_transition.html", [
-          [ "Scenario::Transition_T< Scenario_T, MoveOnEvent >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_move_on_event_01_4.html", null ]
-        ] ],
-        [ "Scenario::MatchedTransition< Scenario_T, ClickOnTimeSync_Event >", "class_scenario_1_1_matched_transition.html", [
-          [ "Scenario::ClickOnEndTimeSync_Transition< Scenario_T >", "class_scenario_1_1_click_on_end_time_sync___transition.html", null ],
-          [ "Scenario::Transition_T< Scenario_T, ClickOnTimeSync >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_click_on_time_sync_01_4.html", null ]
-        ] ],
-        [ "Scenario::MatchedTransition< Scenario_T, MoveOnTimeSync_Event >", "class_scenario_1_1_matched_transition.html", [
-          [ "Scenario::Transition_T< Scenario_T, MoveOnTimeSync >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_move_on_time_sync_01_4.html", null ]
-        ] ],
-        [ "Scenario::MatchedTransition< Scenario_T, ReleaseOnTimeSync_Event >", "class_scenario_1_1_matched_transition.html", [
-          [ "Scenario::Transition_T< Scenario_T, ReleaseOnTimeSync >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_release_on_time_sync_01_4.html", null ]
-        ] ],
-        [ "Scenario::MatchedTransition< Scenario_T, ClickOnRightBrace_Event >", "class_scenario_1_1_matched_transition.html", [
-          [ "Scenario::Transition_T< Scenario_T, ClickOnRightBrace >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_click_on_right_brace_01_4.html", null ]
-        ] ],
-        [ "Scenario::MatchedTransition< Scenario_T, ClickOnInterval_Event >", "class_scenario_1_1_matched_transition.html", [
-          [ "Scenario::Transition_T< Scenario_T, ClickOnInterval >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_click_on_interval_01_4.html", null ]
-        ] ],
-        [ "Scenario::MatchedTransition< Scenario_T, ClickOnNothing_Event >", "class_scenario_1_1_matched_transition.html", [
-          [ "Scenario::Transition_T< Scenario_T, ClickOnNothing >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_click_on_nothing_01_4.html", null ]
-        ] ],
-        [ "Scenario::MatchedTransition< Scenario_T, ReleaseOnNothing_Event >", "class_scenario_1_1_matched_transition.html", [
-          [ "Scenario::Transition_T< Scenario_T, ReleaseOnNothing >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_release_on_nothing_01_4.html", null ]
         ] ],
         [ "Scenario::MatchedTransition< Scenario_T, ClickOnState_Event >", "class_scenario_1_1_matched_transition.html", [
           [ "Scenario::ClickOnEndState_Transition< Scenario_T >", "class_scenario_1_1_click_on_end_state___transition.html", null ],
           [ "Scenario::Transition_T< Scenario_T, ClickOnState >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_click_on_state_01_4.html", null ]
         ] ],
-        [ "Scenario::MatchedTransition< Scenario_T, ReleaseOnState_Event >", "class_scenario_1_1_matched_transition.html", [
-          [ "Scenario::Transition_T< Scenario_T, ReleaseOnState >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_release_on_state_01_4.html", null ]
+        [ "Scenario::MatchedTransition< Scenario_T, ClickOnTimeSync_Event >", "class_scenario_1_1_matched_transition.html", [
+          [ "Scenario::ClickOnEndTimeSync_Transition< Scenario_T >", "class_scenario_1_1_click_on_end_time_sync___transition.html", null ],
+          [ "Scenario::Transition_T< Scenario_T, ClickOnTimeSync >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_click_on_time_sync_01_4.html", null ]
+        ] ],
+        [ "Scenario::MatchedTransition< Scenario_T, ClickOnInterval_Event >", "class_scenario_1_1_matched_transition.html", [
+          [ "Scenario::Transition_T< Scenario_T, ClickOnInterval >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_click_on_interval_01_4.html", null ]
+        ] ],
+        [ "Scenario::MatchedTransition< Scenario_T, ClickOnLeftBrace_Event >", "class_scenario_1_1_matched_transition.html", [
+          [ "Scenario::Transition_T< Scenario_T, ClickOnLeftBrace >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_click_on_left_brace_01_4.html", null ]
+        ] ],
+        [ "Scenario::MatchedTransition< Scenario_T, ClickOnNothing_Event >", "class_scenario_1_1_matched_transition.html", [
+          [ "Scenario::Transition_T< Scenario_T, ClickOnNothing >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_click_on_nothing_01_4.html", null ]
+        ] ],
+        [ "Scenario::MatchedTransition< Scenario_T, ClickOnRightBrace_Event >", "class_scenario_1_1_matched_transition.html", [
+          [ "Scenario::Transition_T< Scenario_T, ClickOnRightBrace >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_click_on_right_brace_01_4.html", null ]
+        ] ],
+        [ "Scenario::MatchedTransition< Scenario_T, MoveOnEvent_Event >", "class_scenario_1_1_matched_transition.html", [
+          [ "Scenario::Transition_T< Scenario_T, MoveOnEvent >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_move_on_event_01_4.html", null ]
+        ] ],
+        [ "Scenario::MatchedTransition< Scenario_T, MoveOnInterval_Event >", "class_scenario_1_1_matched_transition.html", [
+          [ "Scenario::Transition_T< Scenario_T, MoveOnInterval >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_move_on_interval_01_4.html", null ]
+        ] ],
+        [ "Scenario::MatchedTransition< Scenario_T, MoveOnNothing_Event >", "class_scenario_1_1_matched_transition.html", [
+          [ "Scenario::Transition_T< Scenario_T, MoveOnNothing >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_move_on_nothing_01_4.html", null ]
         ] ],
         [ "Scenario::MatchedTransition< Scenario_T, MoveOnState_Event >", "class_scenario_1_1_matched_transition.html", [
           [ "Scenario::Transition_T< Scenario_T, MoveOnState >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_move_on_state_01_4.html", null ]
+        ] ],
+        [ "Scenario::MatchedTransition< Scenario_T, MoveOnTimeSync_Event >", "class_scenario_1_1_matched_transition.html", [
+          [ "Scenario::Transition_T< Scenario_T, MoveOnTimeSync >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_move_on_time_sync_01_4.html", null ]
+        ] ],
+        [ "Scenario::MatchedTransition< Scenario_T, ReleaseOnEvent_Event >", "class_scenario_1_1_matched_transition.html", [
+          [ "Scenario::Transition_T< Scenario_T, ReleaseOnEvent >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_release_on_event_01_4.html", null ]
+        ] ],
+        [ "Scenario::MatchedTransition< Scenario_T, ReleaseOnNothing_Event >", "class_scenario_1_1_matched_transition.html", [
+          [ "Scenario::Transition_T< Scenario_T, ReleaseOnNothing >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_release_on_nothing_01_4.html", null ]
+        ] ],
+        [ "Scenario::MatchedTransition< Scenario_T, ReleaseOnState_Event >", "class_scenario_1_1_matched_transition.html", [
+          [ "Scenario::Transition_T< Scenario_T, ReleaseOnState >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_release_on_state_01_4.html", null ]
+        ] ],
+        [ "Scenario::MatchedTransition< Scenario_T, ReleaseOnTimeSync_Event >", "class_scenario_1_1_matched_transition.html", [
+          [ "Scenario::Transition_T< Scenario_T, ReleaseOnTimeSync >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_release_on_time_sync_01_4.html", null ]
         ] ],
         [ "Curve::ClickOnAnything_Transition", "class_curve_1_1_click_on_anything___transition.html", null ],
         [ "Curve::MatchedCurveTransition< Event >", "class_curve_1_1_matched_curve_transition.html", null ],
@@ -3696,6 +3855,7 @@ var hierarchy =
     ] ],
     [ "TSerializer< Serializer_T, T, Enable >", "struct_t_serializer.html", null ],
     [ "TSerializer< DataStream, boost::container::dtl::pair< T, U > >", "struct_t_serializer_3_01_data_stream_00_01boost_1_1container_1_1dtl_1_1pair_3_01_t_00_01_u_01_4_01_4.html", null ],
+    [ "TSerializer< DataStream, boost::container::vector< T, Alloc > >", "struct_t_serializer_3_01_data_stream_00_01boost_1_1container_1_1vector_3_01_t_00_01_alloc_01_4_01_4.html", null ],
     [ "TSerializer< DataStream, FaustDSP::Fx< DSP > >", "struct_t_serializer_3_01_data_stream_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html", null ],
     [ "TSerializer< DataStream, Id< U > >", "struct_t_serializer_3_01_data_stream_00_01_id_3_01_u_01_4_01_4.html", null ],
     [ "TSerializer< DataStream, IdentifiedObject< T > >", "struct_t_serializer_3_01_data_stream_00_01_identified_object_3_01_t_01_4_01_4.html", null ],
@@ -3737,6 +3897,7 @@ var hierarchy =
     [ "TSerializer< DataStream, std::vector< ossia::value_map_element > >", "struct_t_serializer.html", [
       [ "TSerializer< DataStream, ossia::value_map_type >", "struct_t_serializer_3_01_data_stream_00_01ossia_1_1value__map__type_01_4.html", null ]
     ] ],
+    [ "TSerializer< DataStream, std::vector< T, Alloc > >", "struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01_t_00_01_alloc_01_4_01_4.html", null ],
     [ "TSerializer< DataStream, StringKey< U > >", "struct_t_serializer_3_01_data_stream_00_01_string_key_3_01_u_01_4_01_4.html", null ],
     [ "TSerializer< DataStream, TimeVal >", "struct_t_serializer_3_01_data_stream_00_01_time_val_01_4.html", null ],
     [ "TSerializer< DataStream, TreeNode< T > >", "struct_t_serializer_3_01_data_stream_00_01_tree_node_3_01_t_01_4_01_4.html", null ],
@@ -3813,10 +3974,10 @@ var hierarchy =
     [ "oscr::update_control_value_in_ui< Node >", "structoscr_1_1update__control__value__in__ui.html", null ],
     [ "WidgetFactory::UpdatingNormalizer< Norm_T, Slider_T >", "struct_widget_factory_1_1_updating_normalizer.html", null ],
     [ "score::uuids::uuid", "structscore_1_1uuids_1_1uuid.html", [
-      [ "UuidKey< score::Addon >", "class_uuid_key.html", null ],
       [ "UuidKey< Curve::SegmentFactory >", "class_uuid_key.html", null ],
       [ "UuidKey< Device::ProtocolFactory >", "class_uuid_key.html", null ],
       [ "UuidKey< Process::ProcessModel >", "class_uuid_key.html", null ],
+      [ "UuidKey< score::Addon >", "class_uuid_key.html", null ],
       [ "UuidKey< score::Plugin >", "class_uuid_key.html", null ],
       [ "UuidKey< Tag >", "class_uuid_key.html", null ]
     ] ],
@@ -3855,42 +4016,80 @@ var hierarchy =
     [ "JS::Vec3fValueType", "struct_j_s_1_1_vec3f_value_type.html", null ],
     [ "JS::Vec4fValueType", "struct_j_s_1_1_vec4f_value_type.html", null ],
     [ "std::vector< T >", null, [
-      [ "score::IndirectContainer< FactoryType >", "classscore_1_1_indirect_container.html", [
-        [ "score::InterfaceList< FactoryType >", "classscore_1_1_interface_list.html", null ]
-      ] ],
+      [ "score::IndirectContainer< AudioFactory >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< SegmentFactory >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< DeviceModelProvider >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< ProtocolFactory >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< ClockFactory >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< ExecutionAction >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< Execution::ProcessComponentFactory >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< Explorer::ListeningHandlerFactory >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< InspectorWidgetFactory >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< LibraryInterface >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< LocalTree::ProcessComponentFactory >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< PluginSettingsTab >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< AutomatableFactory >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< LayerFactory >", "classscore_1_1_indirect_container.html", null ],
       [ "score::IndirectContainer< OfflineAction >", "classscore_1_1_indirect_container.html", [
         [ "Process::OfflineActionList", "class_process_1_1_offline_action_list.html", null ]
       ] ],
+      [ "score::IndirectContainer< PortFactory >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< ProcessDropHandler >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< ProcessModelFactory >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< CoherencyCheckerFactoryInterface >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< MoveEventFactoryInterface >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< TriggerCommandFactory >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< DisplayedElementsProvider >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< DisplayedElementsToolPaletteFactory >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< DropHandler >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< IntervalDropHandler >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< IntervalResizer >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< TransportInterface >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< Factory_T >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< score::DocumentDelegateFactory >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< score::DocumentPluginFactory >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< FactoryType >", "classscore_1_1_indirect_container.html", [
+        [ "score::InterfaceList< FactoryType >", "classscore_1_1_interface_list.html", null ]
+      ] ],
+      [ "score::IndirectContainer< ObjectEditor >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< score::PanelDelegateFactory >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< score::ValidityChecker >", "classscore_1_1_indirect_container.html", null ],
       [ "TreePath", "class_tree_path.html", null ],
       [ "score::Components", "structscore_1_1_components.html", null ],
       [ "score::IndirectContainer< T, U >", "classscore_1_1_indirect_container.html", [
-        [ "score::InterfaceList< score::ValidityChecker >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< ClockFactory >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< score::DocumentDelegateFactory >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< PortFactory >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< CoherencyCheckerFactoryInterface >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< DeviceModelProvider >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< IntervalDropHandler >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< T >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< TransportInterface >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< PluginSettingsTab >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< Explorer::ListeningHandlerFactory >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< IntervalResizer >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< MoveEventFactoryInterface >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< score::DocumentPluginFactory >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< ProcessModelFactory >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< SegmentFactory >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< Factory_T >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< AutomatableFactory >", "classscore_1_1_interface_list.html", null ],
         [ "score::InterfaceList< AudioFactory >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< score::PanelDelegateFactory >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< ProcessDropHandler >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< LibraryInterface >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< LayerFactory >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< ObjectEditor >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< DropHandler >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< SegmentFactory >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< DeviceModelProvider >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< ProtocolFactory >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< ClockFactory >", "classscore_1_1_interface_list.html", null ],
         [ "score::InterfaceList< ExecutionAction >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< ProtocolFactory >", "classscore_1_1_interface_list.html", null ]
+        [ "score::InterfaceList< Execution::ProcessComponentFactory >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< Explorer::ListeningHandlerFactory >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< InspectorWidgetFactory >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< LibraryInterface >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< LocalTree::ProcessComponentFactory >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< PluginSettingsTab >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< AutomatableFactory >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< LayerFactory >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< PortFactory >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< ProcessDropHandler >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< ProcessModelFactory >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< CoherencyCheckerFactoryInterface >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< MoveEventFactoryInterface >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< TriggerCommandFactory >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< DisplayedElementsProvider >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< DisplayedElementsToolPaletteFactory >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< DropHandler >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< IntervalDropHandler >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< IntervalResizer >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< TransportInterface >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< Factory_T >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< score::DocumentDelegateFactory >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< score::DocumentPluginFactory >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< T >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< ObjectEditor >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< score::PanelDelegateFactory >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< score::ValidityChecker >", "classscore_1_1_interface_list.html", null ]
       ] ]
     ] ],
     [ "score::Version", "classscore_1_1_version.html", null ],
@@ -3914,6 +4113,10 @@ var hierarchy =
     [ "vst3::vst_node_base::vst_control", "structvst3_1_1vst__node__base_1_1vst__control.html", null ],
     [ "vst::vst_node_base::vst_control", "structvst_1_1vst__node__base_1_1vst__control.html", null ],
     [ "vst::VSTInfo", "structvst_1_1_v_s_t_info.html", null ],
+    [ "JS::InValueMessage ::W_MetaObjectCreatorHelper", "struct_j_s_1_1_in_value_message_01_1_1_w___meta_object_creator_helper.html", null ],
+    [ "JS::MidiMessage ::W_MetaObjectCreatorHelper", "struct_j_s_1_1_midi_message_01_1_1_w___meta_object_creator_helper.html", null ],
+    [ "JS::OutValueMessage ::W_MetaObjectCreatorHelper", "struct_j_s_1_1_out_value_message_01_1_1_w___meta_object_creator_helper.html", null ],
+    [ "State::DestinationQualifiers ::W_MetaObjectCreatorHelper", "struct_state_1_1_destination_qualifiers_01_1_1_w___meta_object_creator_helper.html", null ],
     [ "score::RecursiveWatch::Watched", "structscore_1_1_recursive_watch_1_1_watched.html", null ],
     [ "Media::Sound::WaveformComputerImpl", "struct_media_1_1_sound_1_1_waveform_computer_impl.html", null ],
     [ "Media::Sound::WaveformRequest", "struct_media_1_1_sound_1_1_waveform_request.html", null ],

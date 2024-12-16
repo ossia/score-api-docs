@@ -1,27 +1,4 @@
 var struct_gfx_1_1_libav_encoder_node =
 [
-    [ "LibavEncoderNode", "struct_gfx_1_1_libav_encoder_node.html#a0d905cf846976230e6e51bc6980ea292", null ],
-    [ "~LibavEncoderNode", "struct_gfx_1_1_libav_encoder_node.html#ab5f04dc1eeb7f408650cce0270705aa6", null ],
-    [ "canRender", "struct_gfx_1_1_libav_encoder_node.html#a0bc58a5d67a867d175056ea32ec37639", null ],
-    [ "configuration", "struct_gfx_1_1_libav_encoder_node.html#ac93c6659722095d41fa4e28a85b5d937", null ],
-    [ "createOutput", "struct_gfx_1_1_libav_encoder_node.html#ae95b5db985146aa443728fbc34e8495a", null ],
-    [ "createRenderer", "struct_gfx_1_1_libav_encoder_node.html#a708938af0daef8abd6d7346d8e7979ec", null ],
-    [ "destroyOutput", "struct_gfx_1_1_libav_encoder_node.html#a14996e63731b77ed7bdcf4eae31856c4", null ],
-    [ "onRendererChange", "struct_gfx_1_1_libav_encoder_node.html#a5658c88a4ffa5fe4d3265d886395f62c", null ],
-    [ "render", "struct_gfx_1_1_libav_encoder_node.html#ac4f9b6abe804e025949589cceb3b7ebf", null ],
-    [ "renderer", "struct_gfx_1_1_libav_encoder_node.html#aa9c885b2d645bd671a91b9e5e34a1b13", null ],
-    [ "renderState", "struct_gfx_1_1_libav_encoder_node.html#a29bc0a224ac06a9e7e1daac4f47a2649", null ],
-    [ "setRenderer", "struct_gfx_1_1_libav_encoder_node.html#acf86d4110eae1ce00c90bd3e4c236853", null ],
-    [ "startRendering", "struct_gfx_1_1_libav_encoder_node.html#aaa5d533056c024ca3d688d48b5ebb8b8", null ],
-    [ "stopRendering", "struct_gfx_1_1_libav_encoder_node.html#a14e904f8cae09e767c6c1e62e62e1352", null ],
-    [ "encoder", "struct_gfx_1_1_libav_encoder_node.html#ad638b56c412f942a658876789409b7c1", null ],
-    [ "m_hasSender", "struct_gfx_1_1_libav_encoder_node.html#a80894ce4df7e7b2af288f504810e8dcb", null ],
-    [ "m_readback", "struct_gfx_1_1_libav_encoder_node.html#afd8330782234a055bf646b899e5630ac", null ],
-    [ "m_renderer", "struct_gfx_1_1_libav_encoder_node.html#a57aa6b1e127e932ac0e63bd39bf891ef", null ],
-    [ "m_renderState", "struct_gfx_1_1_libav_encoder_node.html#a68c5d57531c445b75df6ad97e9708e6e", null ],
-    [ "m_renderTarget", "struct_gfx_1_1_libav_encoder_node.html#ae5ee7f0b8895e385d8dc42daf6ef2f4f", null ],
-    [ "m_settings", "struct_gfx_1_1_libav_encoder_node.html#a1e6c215db03799944dd8e9ec408e5d1e", null ],
-    [ "m_texture", "struct_gfx_1_1_libav_encoder_node.html#a152b980f23335e90e4609a25a00b1068", null ],
-    [ "m_update", "struct_gfx_1_1_libav_encoder_node.html#a610c0e6c960857bd1854259885dad4da", null ],
-    [ "stream", "struct_gfx_1_1_libav_encoder_node.html#a46ac820843253728b7065bef9a2ed532", null ]
+    [ "createRenderer", "struct_gfx_1_1_libav_encoder_node.html#a708938af0daef8abd6d7346d8e7979ec", null ]
 ];
