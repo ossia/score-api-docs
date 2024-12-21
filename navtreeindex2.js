@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"_graphics_grid_layout_8hpp_source.html":[13,0,0,1,1,5,0,2],
 "_graphics_item_8hpp_source.html":[13,0,0,1,1,5,7],
 "_graphics_layout_8hpp_source.html":[13,0,0,1,1,5,8],
 "_graphics_proxy_object_8hpp_source.html":[13,0,0,1,1,5,9],
@@ -16,6 +17,7 @@ var NAVTREEINDEX2 =
 "_hash_map_8hpp_source.html":[13,0,0,1,1,12,2,2],
 "_hash_map_serialization_8hpp_source.html":[13,0,0,1,1,12,2,3],
 "_header_delegate_8hpp_source.html":[13,0,0,2,3,4,27],
+"_help_interaction_8hpp_source.html":[13,0,0,1,1,13,9],
 "_helper_panel_delegate_8hpp_source.html":[13,0,0,1,0,9,1],
 "_helpers_8hpp_source.html":[13,0,0,2,5,0,7],
 "_hide_rack_in_view_model_8hpp_source.html":[13,0,0,2,31,4,1,5,6],
@@ -25,7 +27,7 @@ var NAVTREEINDEX2 =
 "_i_o_type_8hpp_source.html":[13,0,0,2,0,0,0,2],
 "_i_s_f_node_8hpp_source.html":[13,0,0,2,16,1,2,8],
 "_i_s_f_visitors_8hpp_source.html":[13,0,0,2,16,1,2,9],
-"_icon_provider_8hpp_source.html":[13,0,0,1,1,13,9],
+"_icon_provider_8hpp_source.html":[13,0,0,1,1,13,10],
 "_identified_object_8hpp_source.html":[13,0,0,1,1,7,17],
 "_identified_object_abstract_8hpp_source.html":[13,0,0,1,1,7,18],
 "_identified_object_map_8hpp_source.html":[13,0,0,1,1,7,19],
@@ -48,7 +50,7 @@ var NAVTREEINDEX2 =
 "_inspector_widget_base_8hpp_source.html":[13,0,0,2,1,0,2],
 "_inspector_widget_factory_interface_8hpp_source.html":[13,0,0,2,1,0,3],
 "_inspector_widget_list_8hpp_source.html":[13,0,0,2,1,0,4],
-"_int_slider_8hpp_source.html":[13,0,0,1,1,13,10],
+"_int_slider_8hpp_source.html":[13,0,0,1,1,13,11],
 "_interface_8hpp_source.html":[13,0,0,1,1,8,9],
 "_interface_list_8hpp_source.html":[13,0,0,1,1,8,10],
 "_interp_state_colors_8hpp_source.html":[13,0,0,2,31,2,0],
@@ -177,7 +179,7 @@ var NAVTREEINDEX2 =
 "_mapping_presenter_8hpp_source.html":[13,0,0,2,22,0,6],
 "_mapping_process_metadata_8hpp_source.html":[13,0,0,2,22,0,7],
 "_mapping_view_8hpp_source.html":[13,0,0,2,22,0,8],
-"_margin_less_8hpp_source.html":[13,0,0,1,1,13,12],
+"_margin_less_8hpp_source.html":[13,0,0,1,1,13,13],
 "_math_audio_filter_8hpp_source.html":[13,0,0,2,15,0,15],
 "_math_audio_generator_8hpp_source.html":[13,0,0,2,15,0,16],
 "_math_generator_8hpp_source.html":[13,0,0,2,15,0,17],
@@ -193,7 +195,7 @@ var NAVTREEINDEX2 =
 "_merge_time_syncs_8hpp_source.html":[13,0,0,2,31,4,1,5,3,1],
 "_mesh_8hpp_source.html":[13,0,0,2,16,1,2,10],
 "_message_8hpp_source.html":[13,0,0,2,4,0,7],
-"_message_box_8hpp_source.html":[13,0,0,1,1,13,13],
+"_message_box_8hpp_source.html":[13,0,0,1,1,13,14],
 "_message_bus_8hpp_source.html":[13,0,0,2,8,3,15],
 "_message_drop_handler_8hpp_source.html":[13,0,0,2,31,4,0,0,9],
 "_message_item_model_8hpp_source.html":[13,0,0,2,31,4,3,8,0,1],
@@ -230,7 +232,7 @@ var NAVTREEINDEX2 =
 "_midi_style_8hpp_source.html":[13,0,0,2,24,0,11],
 "_midi_util_8hpp_source.html":[13,0,0,2,15,0,25],
 "_midi_view_8hpp_source.html":[13,0,0,2,24,0,12],
-"_mime_data_8hpp_source.html":[13,0,0,1,1,13,14],
+"_mime_data_8hpp_source.html":[13,0,0,1,1,13,15],
 "_mime_visitor_8hpp_source.html":[13,0,0,1,1,10,10],
 "_min_max_commands_8hpp_source.html":[13,0,0,2,22,0,0,2],
 "_min_max_float_port_8hpp_source.html":[13,0,0,2,3,4,3,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX2 =
 "_model_consistency_8hpp_source.html":[13,0,0,2,31,4,3,14],
 "_model_factory_8hpp_source.html":[13,0,0,1,1,8,11],
 "_model_metadata_8hpp_source.html":[13,0,0,1,1,7,22],
-"_model_view_presenter.html":[5],
-"_models.html":[4],
-"_models.html#CreatingModels":[4,2]
+"_model_view_presenter.html":[5]
 };

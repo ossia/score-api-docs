@@ -401,6 +401,7 @@ var annotated_dup =
     [ "Faust", null, [
       [ "DropHandler", "class_faust_1_1_drop_handler.html", null ],
       [ "EditScript", "class_faust_1_1_edit_script.html", null ],
+      [ "FoundKeys", "struct_faust_1_1_found_keys.html", null ],
       [ "LanguageSpec", "struct_faust_1_1_language_spec.html", null ],
       [ "LibraryHandler", "class_faust_1_1_library_handler.html", null ],
       [ "UI", "struct_faust_1_1_u_i.html", null ],

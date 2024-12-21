@@ -9,6 +9,7 @@ var dir_e0f0a2e5702e7fb434434342fa318f9f =
     [ "DoubleSlider.hpp", "_double_slider_8hpp_source.html", null ],
     [ "DoubleSpinBox.hpp", "_double_spin_box_8hpp_source.html", null ],
     [ "FormWidget.hpp", "_form_widget_8hpp_source.html", null ],
+    [ "HelpInteraction.hpp", "_help_interaction_8hpp_source.html", null ],
     [ "IconProvider.hpp", "_icon_provider_8hpp_source.html", null ],
     [ "IntSlider.hpp", "_int_slider_8hpp_source.html", null ],
     [ "lib/score/widgets/Layout.hpp", "lib_2score_2widgets_2_layout_8hpp_source.html", null ],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"_models.html":[4],
+"_models.html#CreatingModels":[4,2],
 "_models.html#IdentificationObjects":[4,1],
 "_models.html#Identifiers":[4,1,0],
 "_models.html#ItemModel":[4,3],
@@ -104,7 +106,7 @@ var NAVTREEINDEX3 =
 "_pipe_wire_interface_8hpp_source.html":[13,0,0,2,6,0,14],
 "_pitch_8hpp_source.html":[13,0,0,2,5,0,11],
 "_pitch_to_value_8hpp_source.html":[13,0,0,2,15,0,27],
-"_pixmap_8hpp_source.html":[13,0,0,1,1,13,15],
+"_pixmap_8hpp_source.html":[13,0,0,1,1,13,16],
 "_pixmaps_8hpp_source.html":[13,0,0,2,3,4,12,0],
 "_play_context_menu_8hpp_source.html":[13,0,0,2,13,1,2,0],
 "_play_from_interval_in_scenario_8hpp_source.html":[13,0,0,2,13,1,2,1],
@@ -118,7 +120,7 @@ var NAVTREEINDEX3 =
 "_plugin_item_model_8hpp_source.html":[13,0,0,2,26,0,3],
 "_plugin_manager_8hpp_source.html":[13,0,0,1,0,5,1],
 "_plugin_requirements___qt_interface_8hpp_source.html":[13,0,0,1,1,8,4,4],
-"_plugin_window_8hpp_source.html":[13,0,0,1,1,13,16],
+"_plugin_window_8hpp_source.html":[13,0,0,1,1,13,17],
 "_plugins_factories_and_interfaces.html":[6],
 "_plugins_factories_and_interfaces.html#AddonManager":[6,3],
 "_plugins_factories_and_interfaces.html#Anatomy":[6,0],
@@ -209,14 +211,14 @@ var NAVTREEINDEX3 =
 "_q_rhi_gles2_8hpp_source.html":[13,0,0,1,1,4,1],
 "_qml_objects_8hpp_source.html":[13,0,0,2,19,0,2,6],
 "_qt_metatypes_8hpp_source.html":[13,0,0,2,19,0,2,7],
-"_quantification_widget_8hpp_source.html":[13,0,0,1,1,13,17],
+"_quantification_widget_8hpp_source.html":[13,0,0,1,1,13,18],
 "_quantifier_8hpp_source.html":[13,0,0,2,15,0,28],
 "_r_g_b_a_8hpp_source.html":[13,0,0,2,16,1,2,0,4],
 "_r_m_s_data_8hpp_source.html":[13,0,0,2,23,0,13],
 "_random_name_provider_8hpp_source.html":[13,0,0,1,1,12,19],
 "_rate_limiter_8hpp_source.html":[13,0,0,2,15,0,29],
 "_rate_widget_8hpp_source.html":[13,0,0,2,28,0,24],
-"_reactive_label_8hpp_source.html":[13,0,0,1,1,13,18],
+"_reactive_label_8hpp_source.html":[13,0,0,1,1,13,19],
 "_record_8hpp_source.html":[13,0,0,2,29,0,0,0],
 "_record_automation_creation_visitor_8hpp_source.html":[13,0,0,2,29,0,1,0,0],
 "_record_automation_first_parameter_callback_visitor_8hpp_source.html":[13,0,0,2,29,0,1,0,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "_remove_trigger_8hpp_source.html":[13,0,0,2,31,4,1,8,2],
 "_render_list_8hpp_source.html":[13,0,0,2,16,1,2,16],
 "_render_state_8hpp_source.html":[13,0,0,2,16,1,2,17],
-"_rendered_i_s_f_node_8hpp_source.html":[13,0,0,2,16,1,2,15],
-"_replace_addresses_8hpp_source.html":[13,0,0,2,31,4,1,12],
-"_replace_device_8hpp_source.html":[13,0,0,2,12,0,0,6]
+"_rendered_i_s_f_node_8hpp_source.html":[13,0,0,2,16,1,2,15]
 };

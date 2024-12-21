@@ -810,6 +810,7 @@ var hierarchy =
     [ "WidgetFactory::FloatSpinBox", "struct_widget_factory_1_1_float_spin_box.html", null ],
     [ "score::FocusFacade", "structscore_1_1_focus_facade.html", null ],
     [ "foo", "classfoo.html", null ],
+    [ "Faust::FoundKeys", "struct_faust_1_1_found_keys.html", null ],
     [ "libfreenect2::FrameListener", null, [
       [ "Gfx::Kinect2::Listener", "struct_gfx_1_1_kinect2_1_1_listener.html", null ]
     ] ],
@@ -2677,6 +2678,7 @@ var hierarchy =
     [ "Media::Sound::QImagePool", "struct_media_1_1_sound_1_1_q_image_pool.html", null ],
     [ "QLabel", null, [
       [ "TextLabel", "class_text_label.html", null ],
+      [ "score::HelperPanelDelegate::FasterLabel", "structscore_1_1_helper_panel_delegate_1_1_faster_label.html", null ],
       [ "score::ReactiveLabel< Property_T >", "classscore_1_1_reactive_label.html", null ]
     ] ],
     [ "QLineEdit", null, [

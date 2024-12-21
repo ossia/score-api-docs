@@ -31,7 +31,7 @@ var NAVTREEINDEX1 =
 "_curve_view_8hpp_source.html":[13,0,0,2,10,0,12],
 "_custom_mesh_8hpp_source.html":[13,0,0,2,16,1,2,2],
 "_d_n_s_s_d_device_enumerator_8hpp_source.html":[13,0,0,2,28,0,20],
-"_d_s_p_wrapper_8hpp_source.html":[13,0,0,2,14,0,1],
+"_d_s_p_wrapper_8hpp_source.html":[13,0,0,2,14,0,2],
 "_data_stream_8hpp_source.html":[13,0,0,2,37,0,4],
 "_data_stream_fwd_8hpp_source.html":[13,0,0,1,1,10,3],
 "_data_stream_helpers_8hpp_source.html":[13,0,0,1,1,10,4],
@@ -52,6 +52,7 @@ var NAVTREEINDEX1 =
 "_default_protocol_factory_8hpp_source.html":[13,0,0,2,12,0,9],
 "_delete_all_8hpp_source.html":[13,0,0,1,1,12,7],
 "_depth_node_8hpp_source.html":[13,0,0,2,16,1,2,3],
+"_descriptor_8hpp_source.html":[13,0,0,2,14,0,1],
 "_deserialize_known_sub_type_8hpp_source.html":[13,0,0,1,1,8,7],
 "_device_completer_8hpp_source.html":[13,0,0,2,0,0,5,1],
 "_device_context_8hpp_source.html":[13,0,0,2,19,0,2,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "_gradient_view_8hpp_source.html":[13,0,0,2,7,1,4],
 "_graph_interval_presenter_8hpp_source.html":[13,0,0,2,31,4,3,5,1,0],
 "_graphic_widgets_8hpp_source.html":[13,0,0,1,1,5,11],
-"_graphics_box_layout_8hpp_source.html":[13,0,0,1,1,5,0,1],
-"_graphics_grid_layout_8hpp_source.html":[13,0,0,1,1,5,0,2]
+"_graphics_box_layout_8hpp_source.html":[13,0,0,1,1,5,0,1]
 };
