@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"dir_f4a1867507f7680fbb60bcad7edfc425.html":[13,0,0,2,19,0,0],
 "dir_f4af4401b4f6e9ab0297df4b0dca82a5.html":[13,0,0,2,31,4,0],
 "dir_f51c2e74be4e7b1f507975ce33e45187.html":[13,0,0,2,28,0,1],
 "dir_f661da1126fdabe8e767f7126511e19c.html":[13,0,0,2,31,5],
@@ -15,8 +16,8 @@ var NAVTREEINDEX18 =
 "dir_ff56996379f66a234579aa3f0401ac06.html":[13,0,0,2,31,4,3,9],
 "element_finding_helper_8hpp_source.html":[13,0,0,2,31,4,11,1],
 "files.html":[13,0],
-"functions.html":[12,3,0],
 "functions.html":[12,3,0,0],
+"functions.html":[12,3,0],
 "functions_c.html":[12,3,0,1],
 "functions_d.html":[12,3,0,2],
 "functions_e.html":[12,3,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "score-plugin-fx_2_fx_2_envelope_8hpp_source.html":[13,0,0,2,15,0,8],
 "score-plugin-gfx_2_gfx_2_command_factory_8hpp_source.html":[13,0,0,2,16,1,15],
 "score-plugin-gfx_2_gfx_2_filter_2_executor_8hpp_source.html":[13,0,0,2,16,1,0,0],
-"score-plugin-gfx_2_gfx_2_filter_2_layer_8hpp_source.html":[13,0,0,2,16,1,0,1],
-"score-plugin-gfx_2_gfx_2_filter_2_library_8hpp_source.html":[13,0,0,2,16,1,0,2]
+"score-plugin-gfx_2_gfx_2_filter_2_layer_8hpp_source.html":[13,0,0,2,16,1,0,1]
 };

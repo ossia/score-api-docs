@@ -1029,8 +1029,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< model >", "classid__base__t.html", null ],
+    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1094,6 +1094,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "Media::Sound::QImagePool::Images", "struct_media_1_1_sound_1_1_q_image_pool_1_1_images.html", null ],
+    [ "mtk::MidiSync::storage::impl", "structmtk_1_1_midi_sync_1_1storage_1_1impl.html", null ],
     [ "impl_t", null, [
       [ "Media::AudioFile::Handle", "struct_media_1_1_audio_file_1_1_handle.html", null ]
     ] ],
@@ -1678,6 +1679,7 @@ var hierarchy =
     [ "Midi::MidiTrack::MidiSong", "struct_midi_1_1_midi_track_1_1_midi_song.html", null ],
     [ "Protocols::MIDISpecificSettings", "struct_protocols_1_1_m_i_d_i_specific_settings.html", null ],
     [ "Midi::MidiStyle", "struct_midi_1_1_midi_style.html", null ],
+    [ "mtk::MidiSync", "structmtk_1_1_midi_sync.html", null ],
     [ "Midi::MidiTrack", "struct_midi_1_1_midi_track.html", null ],
     [ "Mime< T >", "struct_mime.html", null ],
     [ "MimeDataReader", "struct_mime_data_reader.html", [
@@ -2013,8 +2015,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model >", "class_path.html", null ],
+    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -3666,6 +3668,7 @@ var hierarchy =
     [ "Factor::SingleTransition< ossia::value >", "class_factor_1_1_single_transition.html", null ],
     [ "Media::Sound::WaveformComputerImpl::SizeInfos", "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html", null ],
     [ "score::SizeVisitor", "structscore_1_1_size_visitor.html", null ],
+    [ "mtk::sleep_accurate", "structmtk_1_1sleep__accurate.html", null ],
     [ "score::SliderWrapper< T >", "structscore_1_1_slider_wrapper.html", null ],
     [ "Scenario::Slot", "struct_scenario_1_1_slot.html", null ],
     [ "Scenario::SlotId", "struct_scenario_1_1_slot_id.html", null ],
@@ -3716,6 +3719,7 @@ var hierarchy =
     [ "Scenario::StateOverlays", "struct_scenario_1_1_state_overlays.html", null ],
     [ "HierarchicalBaseScenario< Component_T, BaseScenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T >::StatePair", "struct_hierarchical_base_scenario_1_1_state_pair.html", null ],
     [ "HierarchicalScenarioComponent< Component_T, Scenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T, HasOwnership >::StatePair", "struct_hierarchical_scenario_component_1_1_state_pair.html", null ],
+    [ "mtk::MidiSync::storage", "unionmtk_1_1_midi_sync_1_1storage.html", null ],
     [ "Gfx::Video::VideoProps::Stream", "struct_gfx_1_1_video_1_1_video_props_1_1_stream.html", null ],
     [ "Gfx::StreamOptions", "struct_gfx_1_1_stream_options.html", null ],
     [ "Media::AudioFile::StreamView", "struct_media_1_1_audio_file_1_1_stream_view.html", null ],

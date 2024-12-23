@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"_rendered_i_s_f_node_8hpp_source.html":[13,0,0,2,16,1,2,15],
 "_replace_addresses_8hpp_source.html":[13,0,0,2,31,4,1,12],
 "_replace_device_8hpp_source.html":[13,0,0,2,12,0,0,6],
 "_rescale_8hpp_source.html":[13,0,0,2,23,2,4],
@@ -170,7 +171,7 @@ var NAVTREEINDEX4 =
 "_sound_model_8hpp_source.html":[13,0,0,2,23,0,5,6],
 "_sound_presenter_8hpp_source.html":[13,0,0,2,23,0,5,7],
 "_sound_view_8hpp_source.html":[13,0,0,2,23,0,5,8],
-"_spammer_8hpp_source.html":[13,0,0,2,8,2,5],
+"_spammer_8hpp_source.html":[13,0,0,2,8,2,6],
 "_spectral_difference_8hpp_source.html":[13,0,0,2,5,0,13],
 "_spectral_difference___h_w_r_8hpp_source.html":[13,0,0,2,5,0,14],
 "_speed_slider_8hpp_source.html":[13,0,0,2,31,4,6,3,4],
@@ -210,7 +211,7 @@ var NAVTREEINDEX4 =
 "_suil_8hpp_source.html":[13,0,0,2,21,0,6],
 "_summary_inspector_widget_8hpp_source.html":[13,0,0,2,31,4,6,6,0],
 "_swap_slots_8hpp_source.html":[13,0,0,2,31,4,1,3,0,3],
-"_sweeper_8hpp_source.html":[13,0,0,2,8,2,6],
+"_sweeper_8hpp_source.html":[13,0,0,2,8,2,7],
 "_sync_8hpp_source.html":[13,0,0,2,30,1,0,5],
 "_syphon_helpers_8hpp_source.html":[13,0,0,2,16,1,9,0],
 "_syphon_input_8hpp_source.html":[13,0,0,2,16,1,9,1],
@@ -218,7 +219,7 @@ var NAVTREEINDEX4 =
 "_system_library_widget_8hpp_source.html":[13,0,0,2,20,0,13],
 "_t_c_p_server_widget_8hpp_source.html":[13,0,0,2,28,0,11,2],
 "_t_c_p_widget_8hpp_source.html":[13,0,0,2,28,0,11,3],
-"_teleplot_8hpp_source.html":[13,0,0,2,8,2,7],
+"_teleplot_8hpp_source.html":[13,0,0,2,8,2,8],
 "_tempo_8hpp_source.html":[13,0,0,2,23,0,15],
 "_tempo_factory_8hpp_source.html":[13,0,0,2,31,4,3,9,0],
 "_tempo_inspector_8hpp_source.html":[13,0,0,2,31,4,3,9,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "_time_sync_execution_8hpp_source.html":[13,0,0,2,31,4,3,11,0],
 "_time_sync_inspector_widget_8hpp_source.html":[13,0,0,2,31,4,6,7,0],
 "_time_sync_model_8hpp_source.html":[13,0,0,2,31,4,3,11,1],
-"_time_sync_presenter_8hpp_source.html":[13,0,0,2,31,4,3,11,2],
-"_time_sync_summary_widget_8hpp_source.html":[13,0,0,2,31,4,6,7,1]
+"_time_sync_presenter_8hpp_source.html":[13,0,0,2,31,4,3,11,2]
 };

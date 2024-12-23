@@ -921,6 +921,10 @@ var annotated_dup =
       [ "PanelDelegateFactory", "class_mixer_1_1_panel_delegate_factory.html", null ],
       [ "PanSliderWidget", "class_mixer_1_1_pan_slider_widget.html", null ]
     ] ],
+    [ "mtk", null, [
+      [ "MidiSync", "structmtk_1_1_midi_sync.html", "structmtk_1_1_midi_sync" ],
+      [ "sleep_accurate", "structmtk_1_1sleep__accurate.html", null ]
+    ] ],
     [ "Nodal", null, [
       [ "AddNode", "struct_nodal_1_1_add_node.html", null ],
       [ "CreateNode", "class_nodal_1_1_create_node.html", null ],
