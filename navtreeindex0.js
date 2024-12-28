@@ -1,7 +1,7 @@
 var NAVTREEINDEX0 =
 {
-"_2_vst3_2_control_8hpp_source.html":[13,0,0,2,37,0,3],
-"_2_vst3_2_widgets_8hpp_source.html":[13,0,0,2,37,0,11],
+"_2_vst3_2_control_8hpp_source.html":[13,0,0,2,38,0,3],
+"_2_vst3_2_widgets_8hpp_source.html":[13,0,0,2,38,0,11],
 "_a_l_s_a_interface_8hpp_source.html":[13,0,0,2,6,0,1],
 "_a_l_s_a_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,2],
 "_a_s_i_o_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,3],
@@ -65,6 +65,7 @@ var NAVTREEINDEX0 =
 "_application_services_8hpp_source.html":[13,0,0,1,1,1,2],
 "_application_settings_8hpp_source.html":[13,0,0,1,0,0,2],
 "_arpeggiator_8hpp_source.html":[13,0,0,2,15,0,1],
+"_array_to_geometry_8hpp_source.html":[13,0,0,2,34,0,1],
 "_array_view_8hpp_source.html":[13,0,0,1,1,12,2,1],
 "_arraygen_8hpp_source.html":[13,0,0,2,15,0,2],
 "_arraymap_8hpp_source.html":[13,0,0,2,15,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "_cursor_8hpp_source.html":[13,0,0,1,1,12,5],
 "_curve_command_factory_8hpp_source.html":[13,0,0,2,10,0,0,0],
 "_curve_command_object_base_8hpp_source.html":[13,0,0,2,10,0,1,0,1],
-"_curve_conversion_8hpp_source.html":[13,0,0,2,10,0,7],
-"_curve_edition_settings_8hpp_source.html":[13,0,0,2,10,0,1,3]
+"_curve_conversion_8hpp_source.html":[13,0,0,2,10,0,7]
 };

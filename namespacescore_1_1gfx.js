@@ -29,6 +29,7 @@ var namespacescore_1_1gfx =
     [ "MeshBuffers", "structscore_1_1gfx_1_1_mesh_buffers.html", null ],
     [ "Message", "structscore_1_1gfx_1_1_message.html", null ],
     [ "ModelCameraUBO", "structscore_1_1gfx_1_1_model_camera_u_b_o.html", null ],
+    [ "ModelDisplayNode", "structscore_1_1gfx_1_1_model_display_node.html", "structscore_1_1gfx_1_1_model_display_node" ],
     [ "Node", "classscore_1_1gfx_1_1_node.html", "classscore_1_1gfx_1_1_node" ],
     [ "NodeModel", "classscore_1_1gfx_1_1_node_model.html", "classscore_1_1gfx_1_1_node_model" ],
     [ "NodeRenderer", "classscore_1_1gfx_1_1_node_renderer.html", "classscore_1_1gfx_1_1_node_renderer" ],

@@ -1,5 +1,8 @@
 var hierarchy =
 [
+    [ "Execution:: ProcessComponent_T", null, [
+      [ "Gfx::ModelDisplay::ProcessExecutorComponent", "class_gfx_1_1_model_display_1_1_process_executor_component.html", null ]
+    ] ],
     [ "AbstractVisitor", "class_abstract_visitor.html", [
       [ "DataStreamReader", "class_data_stream_reader.html", null ],
       [ "DataStreamWriter", "class_data_stream_writer.html", null ],
@@ -98,6 +101,7 @@ var hierarchy =
       [ "TSerializer< JSONObject, std::list< Args... > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1list_3_01_args_8_8_8_01_4_01_4.html", null ],
       [ "TSerializer< JSONObject, std::vector< Args... > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1vector_3_01_args_8_8_8_01_4_01_4.html", null ]
     ] ],
+    [ "Threedim::ArrayToMesh", "class_threedim_1_1_array_to_mesh.html", null ],
     [ "Protocols::ArtnetSpecificSettings", "struct_protocols_1_1_artnet_specific_settings.html", null ],
     [ "JSONReader::assigner", "struct_j_s_o_n_reader_1_1assigner.html", null ],
     [ "AtomBuffer", "struct_atom_buffer.html", null ],
@@ -599,6 +603,7 @@ var hierarchy =
     [ "score::DefaultGraphicsSpinboxImpl", "structscore_1_1_default_graphics_spinbox_impl.html", null ],
     [ "DefaultRollbackStrategy", "struct_default_rollback_strategy.html", null ],
     [ "score::gfx::DefaultShaderMaterial", "structscore_1_1gfx_1_1_default_shader_material.html", null ],
+    [ "Threedim::DeformationControl", "struct_threedim_1_1_deformation_control.html", null ],
     [ "score::delete_later< T >", "structscore_1_1delete__later.html", null ],
     [ "score::delete_later< Process::Inlets >", "structscore_1_1delete__later.html", null ],
     [ "score::delete_later< Process::Outlets >", "structscore_1_1delete__later.html", null ],
@@ -731,6 +736,9 @@ var hierarchy =
     [ "ExprData", null, [
       [ "TreeNode< ExprData >", "class_tree_node.html", null ]
     ] ],
+    [ "Face", null, [
+      [ "Threedim::TFace", "class_threedim_1_1_t_face.html", null ]
+    ] ],
     [ "Factor::FactorOracle< T >", "class_factor_1_1_factor_oracle.html", null ],
     [ "Nodes::FactorOracle::FactorOracle", "class_nodes_1_1_factor_oracle_1_1_factor_oracle.html", null ],
     [ "FactorOracle2MIDI::FactorOracle2MIDI< T >", "class_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i.html", null ],
@@ -769,6 +777,7 @@ var hierarchy =
       [ "score_plugin_scenario", "classscore__plugin__scenario.html", null ],
       [ "score_plugin_spline", "classscore__plugin__spline.html", null ],
       [ "score_plugin_spline3d", "classscore__plugin__spline3d.html", null ],
+      [ "score_plugin_threedim", "classscore__plugin__threedim.html", null ],
       [ "score_plugin_transport", "classscore__plugin__transport.html", null ],
       [ "score_plugin_ui", "classscore__plugin__ui.html", null ],
       [ "score_plugin_vst", "classscore__plugin__vst.html", null ],
@@ -792,6 +801,9 @@ var hierarchy =
     [ "std::false_type", null, [
       [ "has_ui< T >", "structhas__ui.html", null ],
       [ "is_shared_ptr< T >", "structis__shared__ptr.html", null ]
+    ] ],
+    [ "halp::file_port", null, [
+      [ "Threedim::ObjLoader::ins::obj_t", "struct_threedim_1_1_obj_loader_1_1ins_1_1obj__t.html", null ]
     ] ],
     [ "WidgetFactory::FileChooser", "struct_widget_factory_1_1_file_chooser.html", null ],
     [ "score::FilePath", "structscore_1_1_file_path.html", null ],
@@ -826,6 +838,7 @@ var hierarchy =
     [ "Nodes::GenericMathMapping< State >", "struct_nodes_1_1_generic_math_mapping.html", null ],
     [ "score::gfx::geometry", "structscore_1_1gfx_1_1geometry.html", null ],
     [ "score::gfx::geometry_input_port_vis", "structscore_1_1gfx_1_1geometry__input__port__vis.html", null ],
+    [ "Threedim::GeometryPort", "struct_threedim_1_1_geometry_port.html", null ],
     [ "Scenario::get_curve_domain", "struct_scenario_1_1get__curve__domain.html", null ],
     [ "Scenario::get_start_end", "struct_scenario_1_1get__start__end.html", null ],
     [ "Analysis::GistState", "struct_analysis_1_1_gist_state.html", [
@@ -878,6 +891,7 @@ var hierarchy =
         [ "Gfx::Filter::filter_node", "class_gfx_1_1_filter_1_1filter__node.html", null ],
         [ "Gfx::GeometryFilter::geometry_filter_node", "class_gfx_1_1_geometry_filter_1_1geometry__filter__node.html", null ],
         [ "Gfx::Images::image_node", "class_gfx_1_1_images_1_1image__node.html", null ],
+        [ "Gfx::ModelDisplay::model_display_node", "class_gfx_1_1_model_display_1_1model__display__node.html", null ],
         [ "Gfx::Text::text_node", "class_gfx_1_1_text_1_1text__node.html", null ],
         [ "Gfx::Video::video_node", "class_gfx_1_1_video_1_1video__node.html", null ],
         [ "Jit::texgen_node", "class_jit_1_1texgen__node.html", null ]
@@ -1029,8 +1043,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Model >", "classid__base__t.html", null ],
+    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1122,6 +1136,10 @@ var hierarchy =
     [ "Nodes::AudioLooper::Node::ins", "struct_nodes_1_1_audio_looper_1_1_node_1_1ins.html", null ],
     [ "Nodes::LFO::v2::Node::ins", "struct_nodes_1_1_l_f_o_1_1v2_1_1_node_1_1ins.html", null ],
     [ "Nodes::RateLimiter::Node::ins", "struct_nodes_1_1_rate_limiter_1_1_node_1_1ins.html", null ],
+    [ "Threedim::ArrayToMesh::ins", "struct_threedim_1_1_array_to_mesh_1_1ins.html", null ],
+    [ "Threedim::ObjLoader::ins", "struct_threedim_1_1_obj_loader_1_1ins.html", null ],
+    [ "Threedim::PCLToMesh::ins", "struct_threedim_1_1_p_c_l_to_mesh_1_1ins.html", null ],
+    [ "Threedim::StrucSynth::ins", "struct_threedim_1_1_struc_synth_1_1ins.html", null ],
     [ "Pd::Instance", "struct_pd_1_1_instance.html", null ],
     [ "score::InterfaceBase", "classscore_1_1_interface_base.html", [
       [ "score::GenericComponentFactory< Process::ProcessModel, Execution::Context, Execution::ProcessComponentFactory >", "classscore_1_1_generic_component_factory.html", [
@@ -1243,6 +1261,8 @@ var hierarchy =
         [ "Protocols::OSCLibraryHandler", "class_protocols_1_1_o_s_c_library_handler.html", null ],
         [ "Scenario::ScenarioLibraryHandler", "class_scenario_1_1_scenario_library_handler.html", null ],
         [ "Scenario::SlotLibraryHandler", "class_scenario_1_1_slot_library_handler.html", null ],
+        [ "Threedim::OBJLibraryHandler", "class_threedim_1_1_o_b_j_library_handler.html", null ],
+        [ "Threedim::SSynthLibraryHandler", "class_threedim_1_1_s_synth_library_handler.html", null ],
         [ "YSFX::LibraryHandler", "class_y_s_f_x_1_1_library_handler.html", null ],
         [ "vst3::LibraryHandler", "classvst3_1_1_library_handler.html", null ],
         [ "vst::LibraryHandler", "classvst_1_1_library_handler.html", null ]
@@ -1302,6 +1322,8 @@ var hierarchy =
         [ "Patternist::DropHandler", "class_patternist_1_1_drop_handler.html", null ],
         [ "Pd::DropHandler", "class_pd_1_1_drop_handler.html", null ],
         [ "Scenario::ProcessDataDropHandler", "class_scenario_1_1_process_data_drop_handler.html", null ],
+        [ "Threedim::OBJDropHandler", "class_threedim_1_1_o_b_j_drop_handler.html", null ],
+        [ "Threedim::SSynthDropHandler", "class_threedim_1_1_s_synth_drop_handler.html", null ],
         [ "YSFX::DropHandler", "class_y_s_f_x_1_1_drop_handler.html", null ]
       ] ],
       [ "Process::ProcessModelFactory", "class_process_1_1_process_model_factory.html", [
@@ -1628,6 +1650,7 @@ var hierarchy =
       ] ],
       [ "score::gfx::CustomMesh", "classscore_1_1gfx_1_1_custom_mesh.html", null ]
     ] ],
+    [ "Threedim::mesh", "struct_threedim_1_1mesh.html", null ],
     [ "score::gfx::MeshBuffers", "structscore_1_1gfx_1_1_mesh_buffers.html", null ],
     [ "LV2::Message", "struct_l_v2_1_1_message.html", null ],
     [ "score::gfx::Message", "structscore_1_1gfx_1_1_message.html", null ],
@@ -1772,6 +1795,7 @@ var hierarchy =
         [ "score::gfx::NodeModel", "classscore_1_1gfx_1_1_node_model.html", [
           [ "score::gfx::FullScreenImageNode", "structscore_1_1gfx_1_1_full_screen_image_node.html", null ],
           [ "score::gfx::ImagesNode", "structscore_1_1gfx_1_1_images_node.html", null ],
+          [ "score::gfx::ModelDisplayNode", "structscore_1_1gfx_1_1_model_display_node.html", null ],
           [ "score::gfx::PhongNode", "structscore_1_1gfx_1_1_phong_node.html", null ],
           [ "score::gfx::TexgenNode", "structscore_1_1gfx_1_1_texgen_node.html", null ],
           [ "score::gfx::TextNode", "structscore_1_1gfx_1_1_text_node.html", null ]
@@ -1816,6 +1840,7 @@ var hierarchy =
       [ "score::gfx::VideoNodeRenderer", "classscore_1_1gfx_1_1_video_node_renderer.html", null ]
     ] ],
     [ "Explorer::NodeUpdateProxy", "class_explorer_1_1_node_update_proxy.html", null ],
+    [ "Threedim::Noise", "struct_threedim_1_1_noise.html", null ],
     [ "Nodes::NoiseFilter", "struct_nodes_1_1_noise_filter.html", null ],
     [ "Nodes::NoiseState", "class_nodes_1_1_noise_state.html", [
       [ "Nodes::Smooth::v1::Node", "struct_nodes_1_1_smooth_1_1v1_1_1_node.html", null ],
@@ -1846,6 +1871,7 @@ var hierarchy =
       [ "Scenario::ToolBase< ToolPalette_T >", "class_scenario_1_1_tool_base.html", null ]
     ] ],
     [ "ObjectPath", "class_object_path.html", null ],
+    [ "Threedim::ObjLoader", "class_threedim_1_1_obj_loader.html", null ],
     [ "Nano::Observer", null, [
       [ "Dataflow::Clock", "class_dataflow_1_1_clock.html", null ],
       [ "Device::DeviceInterface", "class_device_1_1_device_interface.html", [
@@ -2015,8 +2041,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -2062,6 +2088,8 @@ var hierarchy =
       [ "avnd_tools::Spammer", "structavnd__tools_1_1_spammer.html", null ],
       [ "avnd_tools::Teleplot", "structavnd__tools_1_1_teleplot.html", null ]
     ] ],
+    [ "Threedim::PCLToMesh::ins::pcl_in", "struct_threedim_1_1_p_c_l_to_mesh_1_1ins_1_1pcl__in.html", null ],
+    [ "Threedim::PCLToMesh", "class_threedim_1_1_p_c_l_to_mesh.html", null ],
     [ "PdDataflowTest", "class_pd_dataflow_test.html", null ],
     [ "score::gfx::PersistSampler", "structscore_1_1gfx_1_1_persist_sampler.html", null ],
     [ "Protocols::PhidgetSpecificSettings", "struct_protocols_1_1_phidget_specific_settings.html", null ],
@@ -2108,6 +2136,7 @@ var hierarchy =
       [ "score_plugin_scenario", "classscore__plugin__scenario.html", null ],
       [ "score_plugin_spline", "classscore__plugin__spline.html", null ],
       [ "score_plugin_spline3d", "classscore__plugin__spline3d.html", null ],
+      [ "score_plugin_threedim", "classscore__plugin__threedim.html", null ],
       [ "score_plugin_transport", "classscore__plugin__transport.html", null ],
       [ "score_plugin_ui", "classscore__plugin__ui.html", null ],
       [ "score_plugin_vst", "classscore__plugin__vst.html", null ],
@@ -2133,6 +2162,16 @@ var hierarchy =
     [ "Process::PortWidgetSetup", "class_process_1_1_port_widget_setup.html", null ],
     [ "Process::Preset", "struct_process_1_1_preset.html", null ],
     [ "PrettyName_k", "class_pretty_name__k.html", null ],
+    [ "Threedim::Primitive", "struct_threedim_1_1_primitive.html", [
+      [ "Threedim::Cone", "struct_threedim_1_1_cone.html", null ],
+      [ "Threedim::Cube", "struct_threedim_1_1_cube.html", null ],
+      [ "Threedim::Cylinder", "struct_threedim_1_1_cylinder.html", null ],
+      [ "Threedim::Icosahedron", "struct_threedim_1_1_icosahedron.html", null ],
+      [ "Threedim::Plane", "struct_threedim_1_1_plane.html", null ],
+      [ "Threedim::Sphere", "struct_threedim_1_1_sphere.html", null ],
+      [ "Threedim::Torus", "struct_threedim_1_1_torus.html", null ]
+    ] ],
+    [ "Threedim::PrimitiveOutputs", "struct_threedim_1_1_primitive_outputs.html", null ],
     [ "boost::spirit::traits::print_attribute_debug< Out, QString, Enable >", "structboost_1_1spirit_1_1traits_1_1print__attribute__debug_3_01_out_00_01_q_string_00_01_enable_01_4.html", null ],
     [ "Explorer::print_node_rec", "struct_explorer_1_1print__node__rec.html", null ],
     [ "avnd_tools::AudioRecorder::process_message", "structavnd__tools_1_1_audio_recorder_1_1process__message.html", null ],
@@ -2888,6 +2927,7 @@ var hierarchy =
               [ "FaustDSP::Fx< DSP >", "class_faust_d_s_p_1_1_fx.html", null ],
               [ "Gfx::Filter::Model", "class_gfx_1_1_filter_1_1_model.html", null ],
               [ "Gfx::GeometryFilter::Model", "class_gfx_1_1_geometry_filter_1_1_model.html", null ],
+              [ "Gfx::ModelDisplay::Model", "class_gfx_1_1_model_display_1_1_model.html", null ],
               [ "Gfx::Text::Model", "class_gfx_1_1_text_1_1_model.html", null ],
               [ "Gfx::Video::Model", "class_gfx_1_1_video_1_1_model.html", null ],
               [ "Gradient::ProcessModel", "class_gradient_1_1_process_model.html", null ],
@@ -3105,6 +3145,8 @@ var hierarchy =
       [ "Selectable", "class_selectable.html", null ],
       [ "ShowRackInViewModelTest", "class_show_rack_in_view_model_test.html", null ],
       [ "SplitTimeSyncTest", "class_split_time_sync_test.html", null ],
+      [ "Threedim::OBJLibraryHandler", "class_threedim_1_1_o_b_j_library_handler.html", null ],
+      [ "Threedim::SSynthLibraryHandler", "class_threedim_1_1_s_synth_library_handler.html", null ],
       [ "TimeSyncModelTests", "class_time_sync_model_tests.html", null ],
       [ "ToolPaletteInputDispatcher< Tool_T, ToolPalette_T, Context_T, Input_T >", "class_tool_palette_input_dispatcher.html", null ],
       [ "Transport::TransportInterface", "class_transport_1_1_transport_interface.html", null ],
@@ -3547,7 +3589,9 @@ var hierarchy =
     [ "Nodes::Arpeggiator::Arpeggios::range", "struct_nodes_1_1_arpeggiator_1_1_arpeggios_1_1range.html", null ],
     [ "Nodes::combobox_from_array< lit, array, init_idx >::range", "struct_nodes_1_1combobox__from__array_1_1range.html", null ],
     [ "range", "structrange.html", null ],
+    [ "Threedim::DeformationControl::range", "struct_threedim_1_1_deformation_control_1_1range.html", null ],
     [ "Automation::RecreateOnPlay::range_position", "struct_automation_1_1_recreate_on_play_1_1range__position.html", null ],
+    [ "Threedim::raw_texture", "struct_threedim_1_1raw__texture.html", null ],
     [ "Reader< T >", "class_reader.html", null ],
     [ "Video::ReadFrame", "struct_video_1_1_read_frame.html", null ],
     [ "Execution::RecomputePropagate", "struct_execution_1_1_recompute_propagate.html", null ],
@@ -3725,6 +3769,7 @@ var hierarchy =
     [ "Media::AudioFile::StreamView", "struct_media_1_1_audio_file_1_1_stream_view.html", null ],
     [ "score::uuids::string_generator", "structscore_1_1uuids_1_1string__generator.html", null ],
     [ "score::StringConstants", "structscore_1_1_string_constants.html", null ],
+    [ "Threedim::StrucSynth", "class_threedim_1_1_struc_synth.html", null ],
     [ "Curve::Style", "struct_curve_1_1_style.html", null ],
     [ "Process::Style", "struct_process_1_1_style.html", null ],
     [ "Curve::StyleInterface", "struct_curve_1_1_style_interface.html", [
@@ -3815,6 +3860,7 @@ var hierarchy =
     ] ],
     [ "score::gfx::TextureRenderTarget", "structscore_1_1gfx_1_1_texture_render_target.html", null ],
     [ "score::ThreadPool", "classscore_1_1_thread_pool.html", null ],
+    [ "Threedim::Noise::tick", "struct_threedim_1_1_noise_1_1tick.html", null ],
     [ "Execution::Settings::TickPolicies", "struct_execution_1_1_settings_1_1_tick_policies.html", null ],
     [ "ossia::time_sync_callback", null, [
       [ "Execution::FinishCallback", "struct_execution_1_1_finish_callback.html", null ],
@@ -3853,6 +3899,10 @@ var hierarchy =
     ] ],
     [ "score::TreeViewExpandState< Node, NodePath >", "structscore_1_1_tree_view_expand_state.html", null ],
     [ "score::TreeViewExpandState< Device::Node, Device::NodePath >", "structscore_1_1_tree_view_expand_state.html", null ],
+    [ "Threedim::TriMesh", "struct_threedim_1_1_tri_mesh.html", null ],
+    [ "vcg::tri::TriMesh", null, [
+      [ "Threedim::TMesh", "class_threedim_1_1_t_mesh.html", null ]
+    ] ],
     [ "mpl::true_", null, [
       [ "boost::spirit::traits::is_container< QString >", "structboost_1_1spirit_1_1traits_1_1is__container_3_01_q_string_01_4.html", null ]
     ] ],
@@ -3975,10 +4025,14 @@ var hierarchy =
     [ "State::Unit", "struct_state_1_1_unit.html", null ],
     [ "Path< Object >::UnsafeDynamicCreation", "struct_path_1_1_unsafe_dynamic_creation.html", null ],
     [ "unused_t", "structunused__t.html", null ],
+    [ "Threedim::Update", "struct_threedim_1_1_update.html", null ],
     [ "oscr::update_control_in_value_in_ui< Node >", "structoscr_1_1update__control__in__value__in__ui.html", null ],
     [ "oscr::update_control_out_value_in_ui< Node >", "structoscr_1_1update__control__out__value__in__ui.html", null ],
     [ "oscr::update_control_value_in_ui< Node >", "structoscr_1_1update__control__value__in__ui.html", null ],
     [ "WidgetFactory::UpdatingNormalizer< Norm_T, Slider_T >", "struct_widget_factory_1_1_updating_normalizer.html", null ],
+    [ "vcg::UsedTypes", null, [
+      [ "Threedim::TUsedTypes", "struct_threedim_1_1_t_used_types.html", null ]
+    ] ],
     [ "score::uuids::uuid", "structscore_1_1uuids_1_1uuid.html", [
       [ "UuidKey< Curve::SegmentFactory >", "class_uuid_key.html", null ],
       [ "UuidKey< Device::ProtocolFactory >", "class_uuid_key.html", null ],
@@ -4099,6 +4153,9 @@ var hierarchy =
       ] ]
     ] ],
     [ "score::Version", "classscore_1_1_version.html", null ],
+    [ "Vertex", null, [
+      [ "Threedim::TVertex", "class_threedim_1_1_t_vertex.html", null ]
+    ] ],
     [ "score::gfx::VideoFrameShare", "structscore_1_1gfx_1_1_video_frame_share.html", [
       [ "score::gfx::VideoFrameReader", "structscore_1_1gfx_1_1_video_frame_reader.html", null ]
     ] ],
@@ -4131,12 +4188,18 @@ var hierarchy =
     [ "Protocols::WiimoteSpecificSettings", "struct_protocols_1_1_wiimote_specific_settings.html", null ],
     [ "vst3::WindowContainer", "structvst3_1_1_window_container.html", null ],
     [ "Gfx::WindowOutputSettings", "struct_gfx_1_1_window_output_settings.html", null ],
+    [ "Threedim::StrucSynth::worker", "struct_threedim_1_1_struc_synth_1_1worker.html", null ],
     [ "JSONWriter::wrapper", "struct_j_s_o_n_writer_1_1wrapper.html", null ],
     [ "Writer< T >", "class_writer.html", null ],
     [ "RemoteControl::WSClient", "struct_remote_control_1_1_w_s_client.html", null ],
     [ "Protocols::WSSpecificSettings", "struct_protocols_1_1_w_s_specific_settings.html", null ],
     [ "WidgetFactory::XYSlider", "struct_widget_factory_1_1_x_y_slider.html", null ],
     [ "WidgetFactory::XYSpinboxes", "struct_widget_factory_1_1_x_y_spinboxes.html", null ],
+    [ "halp::xyz_spinboxes_f32", null, [
+      [ "Threedim::PositionControl", "struct_threedim_1_1_position_control.html", null ],
+      [ "Threedim::RotationControl", "struct_threedim_1_1_rotation_control.html", null ],
+      [ "Threedim::ScaleControl", "struct_threedim_1_1_scale_control.html", null ]
+    ] ],
     [ "WidgetFactory::XYZSlider", "struct_widget_factory_1_1_x_y_z_slider.html", null ],
     [ "WidgetFactory::XYZSpinboxes", "struct_widget_factory_1_1_x_y_z_spinboxes.html", null ],
     [ "Scenario::ZPos", "class_scenario_1_1_z_pos.html", null ]

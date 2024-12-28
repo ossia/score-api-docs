@@ -34,6 +34,7 @@ var dir_7020b8b7abcceffa3f9f7a2d24718f16 =
     [ "score-plugin-scenario", "dir_3f3e6b33267ee136f69b31a183380e8c.html", "dir_3f3e6b33267ee136f69b31a183380e8c" ],
     [ "score-plugin-spline", "dir_d6a1fd741e348a3d8def68164844e119.html", "dir_d6a1fd741e348a3d8def68164844e119" ],
     [ "score-plugin-spline3d", "dir_b316cd664b70f609f7a7bb0bfb69c642.html", "dir_b316cd664b70f609f7a7bb0bfb69c642" ],
+    [ "score-plugin-threedim", "dir_f1857f89f993a86649574b65cc20809e.html", "dir_f1857f89f993a86649574b65cc20809e" ],
     [ "score-plugin-transport", "dir_d5c360120ad9e425bde75c992f2e67d1.html", "dir_d5c360120ad9e425bde75c992f2e67d1" ],
     [ "score-plugin-ui", "dir_f87cff44748dffb65d9de7d774e75250.html", "dir_f87cff44748dffb65d9de7d774e75250" ],
     [ "score-plugin-vst", "dir_2ef1a4200647ecbf0d0d93676e5f01b8.html", "dir_2ef1a4200647ecbf0d0d93676e5f01b8" ],

@@ -1,5 +1,13 @@
 var NAVTREEINDEX4 =
 {
+"_remove_notes_8hpp_source.html":[13,0,0,2,24,0,0,3],
+"_remove_process_from_interval_8hpp_source.html":[13,0,0,2,31,4,1,3,9],
+"_remove_selection_8hpp_source.html":[13,0,0,2,31,4,1,5,1,3],
+"_remove_slot_from_rack_8hpp_source.html":[13,0,0,2,31,4,1,3,0,2],
+"_remove_state_process_8hpp_source.html":[13,0,0,2,31,4,1,7,4],
+"_remove_trigger_8hpp_source.html":[13,0,0,2,31,4,1,8,2],
+"_render_list_8hpp_source.html":[13,0,0,2,16,1,2,16],
+"_render_state_8hpp_source.html":[13,0,0,2,16,1,2,17],
 "_rendered_i_s_f_node_8hpp_source.html":[13,0,0,2,16,1,2,15],
 "_replace_addresses_8hpp_source.html":[13,0,0,2,31,4,1,12],
 "_replace_device_8hpp_source.html":[13,0,0,2,12,0,0,6],
@@ -141,7 +149,7 @@ var NAVTREEINDEX4 =
 "_shmdata_input_device_8hpp_source.html":[13,0,0,2,16,1,7,0],
 "_shmdata_output_device_8hpp_source.html":[13,0,0,2,16,1,7,1],
 "_show_rack_in_view_model_8hpp_source.html":[13,0,0,2,31,4,1,5,12],
-"_signal_display_8hpp_source.html":[13,0,0,2,35,0,0],
+"_signal_display_8hpp_source.html":[13,0,0,2,36,0,0],
 "_signal_utils_8hpp_source.html":[13,0,0,1,1,13,24],
 "_signature_commands_8hpp_source.html":[13,0,0,2,31,4,1,6,0],
 "_simple_api_8hpp_source.html":[13,0,0,2,13,0,1,1],
@@ -206,6 +214,7 @@ var NAVTREEINDEX4 =
 "_string_factory_key_serialization_8hpp_source.html":[13,0,0,1,1,8,16],
 "_string_hash_8hpp_source.html":[13,0,0,1,1,12,2,10],
 "_string_value_widget_8hpp_source.html":[13,0,0,2,4,0,0,0,2],
+"_structure_synth_8hpp_source.html":[13,0,0,2,34,0,8],
 "_style_sheets_8hpp_source.html":[13,0,0,1,1,13,26],
 "_subtype_variant_8hpp_source.html":[13,0,0,1,1,12,22],
 "_suil_8hpp_source.html":[13,0,0,2,21,0,6],
@@ -240,14 +249,5 @@ var NAVTREEINDEX4 =
 "_thumbnailer_8hpp_source.html":[13,0,0,2,23,2,5],
 "_time_mode_8hpp_source.html":[13,0,0,1,1,13,28],
 "_time_ruler_8hpp_source.html":[13,0,0,2,31,4,3,10,0],
-"_time_ruler_graphics_view_8hpp_source.html":[13,0,0,2,31,4,3,10,1],
-"_time_signature_8hpp_source.html":[13,0,0,2,3,4,3,17],
-"_time_signature_item_8hpp_source.html":[13,0,0,2,31,4,3,5,0,7],
-"_time_signature_map_8hpp_source.html":[13,0,0,2,31,4,3,5,17],
-"_time_spin_box_8hpp_source.html":[13,0,0,1,1,13,29],
-"_time_sync_component_8hpp_source.html":[13,0,0,2,31,3,4],
-"_time_sync_execution_8hpp_source.html":[13,0,0,2,31,4,3,11,0],
-"_time_sync_inspector_widget_8hpp_source.html":[13,0,0,2,31,4,6,7,0],
-"_time_sync_model_8hpp_source.html":[13,0,0,2,31,4,3,11,1],
-"_time_sync_presenter_8hpp_source.html":[13,0,0,2,31,4,3,11,2]
+"_time_ruler_graphics_view_8hpp_source.html":[13,0,0,2,31,4,3,10,1]
 };

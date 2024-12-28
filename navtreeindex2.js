@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"_graphics_box_layout_8hpp_source.html":[13,0,0,1,1,5,0,1],
 "_graphics_grid_layout_8hpp_source.html":[13,0,0,1,1,5,0,2],
 "_graphics_item_8hpp_source.html":[13,0,0,1,1,5,7],
 "_graphics_layout_8hpp_source.html":[13,0,0,1,1,5,8],
@@ -131,7 +132,7 @@ var NAVTREEINDEX2 =
 "_library_settings_8hpp_source.html":[13,0,0,2,20,0,4],
 "_library_widget_8hpp_source.html":[13,0,0,2,20,0,5],
 "_linear_segment_8hpp_source.html":[13,0,0,2,10,0,4,0,0],
-"_linux_2_plug_frame_8hpp_source.html":[13,0,0,2,37,0,0,0,0],
+"_linux_2_plug_frame_8hpp_source.html":[13,0,0,2,38,0,0,0,0],
 "_list_network_addresses_8hpp_source.html":[13,0,0,1,1,12,14],
 "_listening_handler_8hpp_source.html":[13,0,0,2,12,0,4,2],
 "_listening_handler_factory_8hpp_source.html":[13,0,0,2,12,0,4,3],
@@ -140,7 +141,7 @@ var NAVTREEINDEX2 =
 "_load_cables_8hpp_source.html":[13,0,0,2,31,0,0,3],
 "_load_device_8hpp_source.html":[13,0,0,2,12,0,0,0,1],
 "_load_preset_8hpp_source.html":[13,0,0,2,3,4,2,1],
-"_loader_8hpp_source.html":[13,0,0,2,36,0,6],
+"_loader_8hpp_source.html":[13,0,0,2,37,0,6],
 "_local_device_8hpp_source.html":[13,0,0,2,13,2,0,0],
 "_local_protocol_factory_8hpp_source.html":[13,0,0,2,13,2,0,1],
 "_local_protocol_settings_widget_8hpp_source.html":[13,0,0,2,13,2,0,2],
@@ -195,6 +196,7 @@ var NAVTREEINDEX2 =
 "_merge_events_8hpp_source.html":[13,0,0,2,31,4,1,5,3,0],
 "_merge_time_syncs_8hpp_source.html":[13,0,0,2,31,4,1,5,3,1],
 "_mesh_8hpp_source.html":[13,0,0,2,16,1,2,10],
+"_mesh_helpers_8hpp_source.html":[13,0,0,2,34,0,2],
 "_message_8hpp_source.html":[13,0,0,2,4,0,7],
 "_message_box_8hpp_source.html":[13,0,0,1,1,13,14],
 "_message_bus_8hpp_source.html":[13,0,0,2,8,3,15],
@@ -247,7 +249,5 @@ var NAVTREEINDEX2 =
 "_missing_command_8hpp_source.html":[13,0,0,1,1,12,0,0],
 "_mixer_panel_8hpp_source.html":[13,0,0,2,23,1,0],
 "_mock_application_8hpp_source.html":[13,0,0,1,0,0,5],
-"_model_consistency_8hpp_source.html":[13,0,0,2,31,4,3,14],
-"_model_factory_8hpp_source.html":[13,0,0,1,1,8,11],
-"_model_metadata_8hpp_source.html":[13,0,0,1,1,7,22]
+"_model_consistency_8hpp_source.html":[13,0,0,2,31,4,3,14]
 };
