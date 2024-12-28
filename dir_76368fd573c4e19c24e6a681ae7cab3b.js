@@ -9,6 +9,7 @@ var dir_76368fd573c4e19c24e6a681ae7cab3b =
     [ "AudioInterface.hpp", "_audio_interface_8hpp_source.html", null ],
     [ "AudioPreviewExecutor.hpp", "_audio_preview_executor_8hpp_source.html", null ],
     [ "AudioTick.hpp", "_audio_tick_8hpp_source.html", null ],
+    [ "CoreAudioInterface.hpp", "_core_audio_interface_8hpp_source.html", null ],
     [ "CoreAudioPortAudioInterface.hpp", "_core_audio_port_audio_interface_8hpp_source.html", null ],
     [ "DummyInterface.hpp", "_dummy_interface_8hpp_source.html", null ],
     [ "GenericPortAudioInterface.hpp", "_generic_port_audio_interface_8hpp_source.html", null ],

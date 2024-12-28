@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"_remove_nodes_8hpp_source.html":[13,0,0,2,12,0,0,5],
 "_remove_notes_8hpp_source.html":[13,0,0,2,24,0,0,3],
 "_remove_process_from_interval_8hpp_source.html":[13,0,0,2,31,4,1,3,9],
 "_remove_selection_8hpp_source.html":[13,0,0,2,31,4,1,5,1,3],
@@ -17,7 +18,7 @@ var NAVTREEINDEX4 =
 "_resize_slot_vertically_8hpp_source.html":[13,0,0,2,31,4,1,3,0,0,1],
 "_rolloff_8hpp_source.html":[13,0,0,2,5,0,12],
 "_runtime_dispatcher_8hpp_source.html":[13,0,0,1,1,2,0,5],
-"_s_d_l_interface_8hpp_source.html":[13,0,0,2,6,0,16],
+"_s_d_l_interface_8hpp_source.html":[13,0,0,2,6,0,17],
 "_safe_cast_8hpp_source.html":[13,0,0,1,1,12,21],
 "_safe_q_application_8hpp_source.html":[13,0,0,1,0,0,7],
 "_scale_8hpp_source.html":[13,0,0,2,16,1,2,18],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "_thread_pool_8hpp_source.html":[13,0,0,1,1,12,23],
 "_thumbnailer_8hpp_source.html":[13,0,0,2,23,2,5],
 "_time_mode_8hpp_source.html":[13,0,0,1,1,13,28],
-"_time_ruler_8hpp_source.html":[13,0,0,2,31,4,3,10,0],
-"_time_ruler_graphics_view_8hpp_source.html":[13,0,0,2,31,4,3,10,1]
+"_time_ruler_8hpp_source.html":[13,0,0,2,31,4,3,10,0]
 };

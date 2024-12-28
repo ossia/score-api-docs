@@ -222,7 +222,8 @@ var NAVTREEINDEX0 =
 "_control_widget_domains_8hpp_source.html":[13,0,0,2,3,4,3,5],
 "_core_actions_8hpp_source.html":[13,0,0,1,0,6,1],
 "_core_application_plugin_8hpp_source.html":[13,0,0,1,0,6,2],
-"_core_audio_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,9],
+"_core_audio_interface_8hpp_source.html":[13,0,0,2,6,0,9],
+"_core_audio_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,10],
 "_cpu_analysis_node_8hpp_source.html":[13,0,0,2,8,3,2],
 "_cpu_filter_node_8hpp_source.html":[13,0,0,2,8,3,3],
 "_cpu_generator_node_8hpp_source.html":[13,0,0,2,8,3,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "_crest_8hpp_source.html":[13,0,0,2,5,0,2],
 "_cursor_8hpp_source.html":[13,0,0,1,1,12,5],
 "_curve_command_factory_8hpp_source.html":[13,0,0,2,10,0,0,0],
-"_curve_command_object_base_8hpp_source.html":[13,0,0,2,10,0,1,0,1],
-"_curve_conversion_8hpp_source.html":[13,0,0,2,10,0,7]
+"_curve_command_object_base_8hpp_source.html":[13,0,0,2,10,0,1,0,1]
 };

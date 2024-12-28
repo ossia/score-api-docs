@@ -1,5 +1,6 @@
 var NAVTREEINDEX21 =
 {
+"struct_l_v2_1_1_global_context.html":[12,0,29,2],
 "struct_l_v2_1_1_host_context.html":[12,0,29,3],
 "struct_l_v2_1_1_l_v2_data.html":[12,0,29,6],
 "struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html":[12,0,29,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX21 =
 "struct_protocols_1_1_artnet_1_1_fixture.html":[12,0,44,0,2],
 "struct_protocols_1_1_artnet_1_1_mode_info.html":[12,0,44,0,3],
 "struct_protocols_1_1_artnet_1_1_range_capability.html":[12,0,44,0,4],
-"struct_protocols_1_1_artnet_1_1_single_capability.html":[12,0,44,0,5],
-"struct_protocols_1_1_artnet_specific_settings.html":[12,0,44,6]
+"struct_protocols_1_1_artnet_1_1_single_capability.html":[12,0,44,0,5]
 };

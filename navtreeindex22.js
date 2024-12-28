@@ -1,5 +1,6 @@
 var NAVTREEINDEX22 =
 {
+"struct_protocols_1_1_artnet_specific_settings.html":[12,0,44,6],
 "struct_protocols_1_1_co_a_p_specific_settings.html":[12,0,44,11],
 "struct_protocols_1_1_fixture_database_1_1_scan.html":[12,0,44,19,0],
 "struct_protocols_1_1_fixture_mode.html":[12,0,44,20],
@@ -167,8 +168,8 @@ var NAVTREEINDEX22 =
 "struct_scenario_1_1_time_signature_map.html":[12,0,49,287],
 "struct_scenario_1_1_time_signature_map_1_1impl.html":[12,0,49,287,0],
 "struct_scenario_1_1_time_signature_map_1_1impl.html":[11,0,11,285,0],
-"struct_scenario_1_1_timebars.html":[11,0,11,275],
 "struct_scenario_1_1_timebars.html":[12,0,49,277],
+"struct_scenario_1_1_timebars.html":[11,0,11,275],
 "struct_scenario_1_1_timenode_graph.html":[11,0,11,276],
 "struct_scenario_1_1_timenode_graph.html":[12,0,49,278],
 "struct_scenario_1_1_timenode_graph.html#a09d474121802dac36c666a730327260c":[12,0,49,278,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX22 =
 "struct_t_serializer_3_01_data_stream_00_01_string_key_3_01_u_01_4_01_4.html":[12,0,322],
 "struct_t_serializer_3_01_data_stream_00_01_time_val_01_4.html":[12,0,323],
 "struct_t_serializer_3_01_data_stream_00_01_tree_node_3_01_t_01_4_01_4.html":[12,0,324],
-"struct_t_serializer_3_01_data_stream_00_01_tree_path_01_4.html":[12,0,325],
-"struct_t_serializer_3_01_data_stream_00_01_uuid_key_3_01_u_01_4_01_4.html":[12,0,326]
+"struct_t_serializer_3_01_data_stream_00_01_tree_path_01_4.html":[12,0,325]
 };

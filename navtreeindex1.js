@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"_curve_conversion_8hpp_source.html":[13,0,0,2,10,0,7],
 "_curve_edition_settings_8hpp_source.html":[13,0,0,2,10,0,1,3],
 "_curve_editor_8hpp_source.html":[13,0,0,2,10,0,8],
 "_curve_inlet_8hpp_source.html":[13,0,0,2,11,0,5],
@@ -115,7 +116,7 @@ var NAVTREEINDEX1 =
 "_drop_process_in_interval_8hpp_source.html":[13,0,0,2,31,4,0,0,6],
 "_drop_process_in_scenario_8hpp_source.html":[13,0,0,2,31,4,0,0,7],
 "_drop_process_on_state_8hpp_source.html":[13,0,0,2,31,4,0,0,8],
-"_dummy_interface_8hpp_source.html":[13,0,0,2,6,0,10],
+"_dummy_interface_8hpp_source.html":[13,0,0,2,6,0,11],
 "_duplicate_interval_8hpp_source.html":[13,0,0,2,31,4,1,5,4],
 "_duration_section_widget_8hpp_source.html":[13,0,0,2,31,4,6,3,0,0],
 "_easing_segment_8hpp_source.html":[13,0,0,2,10,0,4,9],
@@ -219,7 +220,7 @@ var NAVTREEINDEX1 =
 "_g_u_i_application_plugin_8hpp_source.html":[13,0,0,1,1,8,0,0],
 "_g_u_i_application_plugin___qt_interface_8hpp_source.html":[13,0,0,1,1,8,4,3],
 "_gain_8hpp_source.html":[13,0,0,2,18,0,0],
-"_generic_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,11],
+"_generic_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,12],
 "_generic_process_factory_8hpp_source.html":[13,0,0,2,3,4,26],
 "_geometry_8hpp_source.html":[13,0,0,2,8,3,9],
 "_geometry_filter_2_preview_widget_8hpp_source.html":[13,0,0,2,16,1,1,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "_gradient_model_8hpp_source.html":[13,0,0,2,7,1,2],
 "_gradient_presenter_8hpp_source.html":[13,0,0,2,7,1,3],
 "_gradient_view_8hpp_source.html":[13,0,0,2,7,1,4],
-"_graph_interval_presenter_8hpp_source.html":[13,0,0,2,31,4,3,5,1,0],
-"_graphic_widgets_8hpp_source.html":[13,0,0,1,1,5,11]
+"_graph_interval_presenter_8hpp_source.html":[13,0,0,2,31,4,3,5,1,0]
 };

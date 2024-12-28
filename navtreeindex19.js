@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"score-lib-process_2_process_2_process_factory_8hpp_source.html":[13,0,0,2,3,4,36],
 "score-lib-process_2_process_2_process_metadata_8hpp_source.html":[13,0,0,2,3,4,39],
 "score-lib-state_2_tests_2_utils_8hpp_source.html":[13,0,0,2,4,1,0],
 "score-plugin-analysis_2_analysis_2_envelope_8hpp_source.html":[13,0,0,2,5,0,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "struct_dataflow_1_1_widget_inlet_factory.html":[12,0,8,44],
 "struct_dataflow_1_1_widget_outlet_factory.html":[12,0,8,45],
 "struct_dataflow_1_1control__visitor.html":[12,0,8,17],
-"struct_dataflow_1_1minmax.html":[12,0,8,32],
-"struct_default_rollback_strategy.html":[12,0,97]
+"struct_dataflow_1_1minmax.html":[12,0,8,32]
 };
