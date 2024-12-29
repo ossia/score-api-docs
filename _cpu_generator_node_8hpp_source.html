@@ -241,102 +241,103 @@ $(document).ready(function(){initNavTree('_cpu_generator_node_8hpp_source.html',
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; mesh = renderer.<a class="code hl_function" href="classscore_1_1gfx_1_1_render_list.html#a907a2553f670adbc76fe64bb4ac7f37a">defaultTriangle</a>();</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    this-&gt;defaultMeshInit(renderer, mesh, res);</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    this-&gt;processUBOInit(renderer);</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    this-&gt;m_material.init(renderer, this-&gt;node.input, this-&gt;m_samplers);</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    std::tie(this-&gt;m_vertexS, this-&gt;m_fragmentS)</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        = <a class="code hl_function" href="namespacescore_1_1gfx.html#ada75ef58fe373211a06093b50051b6e0">score::gfx::makeShaders</a>(renderer.<a class="code hl_variable" href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">state</a>, generic_texgen_vs, generic_texgen_fs);</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="comment">// Init textures for the outputs</span></div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    avnd::cpu_texture_output_introspection&lt;Node_T&gt;::for_all(</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        avnd::get_outputs&lt;Node_T&gt;(state), [&amp;](<span class="keyword">auto</span>&amp; t) {</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>          createOutput(renderer, t.texture, QSize{t.texture.width, t.texture.height});</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        });</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    this-&gt;defaultPassesInit(renderer, mesh);</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>  }</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  <span class="keywordtype">void</span> update(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer, QRhiResourceUpdateBatch&amp; res)<span class="keyword"> override</span></div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="keyword">  </span>{</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    this-&gt;defaultUBOUpdate(renderer, res);</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>  }</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  <span class="keywordtype">void</span> release(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; r)<span class="keyword"> override</span></div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="keyword">  </span>{</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="comment">// Free outputs</span></div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; [sampl, texture] : this-&gt;m_samplers)</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    {</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>      <span class="keywordflow">if</span>(texture != &amp;r.<a class="code hl_function" href="classscore_1_1gfx_1_1_render_list.html#aba4c2c67428caf9f0a0bc409e948cf61">emptyTexture</a>())</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        texture-&gt;deleteLater();</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>      texture = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    }</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    this-&gt;defaultRelease(r);</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>  }</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>  <span class="keywordtype">void</span> runInitialPasses(</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>      <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer, QRhiCommandBuffer&amp; commands,</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>      QRhiResourceUpdateBatch*&amp; res, <a class="code hl_struct" href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a>&amp; edge)<span class="keyword"> override</span></div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="keyword">  </span>{</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <span class="comment">// If we are paused, we don&#39;t run the processor implementation.</span></div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keywordflow">if</span>(parent.last_message.token.date == m_last_time)</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    {</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    }</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    m_last_time = parent.last_message.token.date;</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    parent.processControlIn(</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        *<span class="keyword">this</span>, state, m_last_message, this-&gt;parent.last_message, parent.m_ctx);</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <span class="comment">// Run the processor</span></div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    state();</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <span class="comment">// Upload output textures</span></div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="keywordtype">int</span> k = 0;</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    avnd::cpu_texture_output_introspection&lt;Node_T&gt;::for_all(</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        avnd::get_outputs&lt;Node_T&gt;(state), [&amp;](<span class="keyword">auto</span>&amp; t) {</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>          uploadOutputTexture(renderer, k, t.texture, res);</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>          k++;</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        });</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    commands.resourceUpdate(res);</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    res = renderer.<a class="code hl_variable" href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">state</a>.rhi-&gt;nextResourceUpdateBatch();</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <span class="comment">// Copy the data to the model node</span></div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    parent.processControlOut(this-&gt;state);</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>  }</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>};</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node_T&gt;</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>  <span class="keyword">requires</span>(avnd::texture_input_introspection&lt;Node_T&gt;::size == 0</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>           &amp;&amp; avnd::texture_output_introspection&lt;Node_T&gt;::size &gt; 0)</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="keyword">struct</span> GfxNode&lt;Node_T&gt; <span class="keyword">final</span></div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    : CustomGfxNodeBase</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    , GpuWorker</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    , GpuControlIns</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    , GpuControlOuts</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    , GpuNodeElements&lt;Node_T&gt;</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>{</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>  <a class="code hl_class" href="classoscr_1_1_process_model.html">oscr::ProcessModel&lt;Node_T&gt;</a>&amp; processModel;</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  GfxNode(</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>      <a class="code hl_class" href="classoscr_1_1_process_model.html">oscr::ProcessModel&lt;Node_T&gt;</a>&amp; element,</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>      std::weak_ptr&lt;Execution::ExecutionCommandQueue&gt; q, Gfx::exec_controls ctls, <span class="keywordtype">int</span> <span class="keywordtype">id</span>,</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx)</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>      : CustomGfxNodeBase{ctx}</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>      , GpuControlOuts{<a class="code hl_namespace" href="namespacestd.html">std</a>::move(q), <a class="code hl_namespace" href="namespacestd.html">std</a>::move(ctls)}</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>      , processModel{element}</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  {</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    this-&gt;instance = id;</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    initGfxPorts&lt;Node_T&gt;(<span class="keyword">this</span>, this-&gt;input, this-&gt;output);</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>  }</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>  <a class="code hl_class" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>*</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  createRenderer(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; r) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span></div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  {</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    <span class="keywordflow">return</span> <span class="keyword">new</span> GfxRenderer&lt;Node_T&gt;{*<span class="keyword">this</span>};</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  }</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>};</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>}</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="comment">// Not needed here as we do not have a GPU pass:</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="comment">// this-&gt;m_material.init(renderer, this-&gt;node.input, this-&gt;m_samplers);</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    std::tie(this-&gt;m_vertexS, this-&gt;m_fragmentS)</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        = <a class="code hl_function" href="namespacescore_1_1gfx.html#ada75ef58fe373211a06093b50051b6e0">score::gfx::makeShaders</a>(renderer.<a class="code hl_variable" href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">state</a>, generic_texgen_vs, generic_texgen_fs);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="comment">// Init textures for the outputs</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    avnd::cpu_texture_output_introspection&lt;Node_T&gt;::for_all(</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        avnd::get_outputs&lt;Node_T&gt;(state), [&amp;](<span class="keyword">auto</span>&amp; t) {</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>          createOutput(renderer, t.texture, QSize{t.texture.width, t.texture.height});</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        });</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    this-&gt;defaultPassesInit(renderer, mesh);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  }</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  <span class="keywordtype">void</span> update(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer, QRhiResourceUpdateBatch&amp; res)<span class="keyword"> override</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    this-&gt;defaultUBOUpdate(renderer, res);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  }</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  <span class="keywordtype">void</span> release(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; r)<span class="keyword"> override</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <span class="comment">// Free outputs</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; [sampl, texture] : this-&gt;m_samplers)</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    {</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>      <span class="keywordflow">if</span>(texture != &amp;r.<a class="code hl_function" href="classscore_1_1gfx_1_1_render_list.html#aba4c2c67428caf9f0a0bc409e948cf61">emptyTexture</a>())</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        texture-&gt;deleteLater();</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>      texture = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    }</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    this-&gt;defaultRelease(r);</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>  }</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>  <span class="keywordtype">void</span> runInitialPasses(</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>      <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer, QRhiCommandBuffer&amp; commands,</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>      QRhiResourceUpdateBatch*&amp; res, <a class="code hl_struct" href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a>&amp; edge)<span class="keyword"> override</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="comment">// If we are paused, we don&#39;t run the processor implementation.</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="keywordflow">if</span>(parent.last_message.token.date == m_last_time)</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    {</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    }</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    m_last_time = parent.last_message.token.date;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    parent.processControlIn(</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        *<span class="keyword">this</span>, state, m_last_message, this-&gt;parent.last_message, parent.m_ctx);</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    <span class="comment">// Run the processor</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    state();</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="comment">// Upload output textures</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <span class="keywordtype">int</span> k = 0;</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    avnd::cpu_texture_output_introspection&lt;Node_T&gt;::for_all(</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        avnd::get_outputs&lt;Node_T&gt;(state), [&amp;](<span class="keyword">auto</span>&amp; t) {</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>          uploadOutputTexture(renderer, k, t.texture, res);</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>          k++;</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        });</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    commands.resourceUpdate(res);</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    res = renderer.<a class="code hl_variable" href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">state</a>.rhi-&gt;nextResourceUpdateBatch();</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="comment">// Copy the data to the model node</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    parent.processControlOut(this-&gt;state);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  }</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>};</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Node_T&gt;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  <span class="keyword">requires</span>(avnd::texture_input_introspection&lt;Node_T&gt;::size == 0</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>           &amp;&amp; avnd::texture_output_introspection&lt;Node_T&gt;::size &gt; 0)</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="keyword">struct</span> GfxNode&lt;Node_T&gt; <span class="keyword">final</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    : CustomGfxNodeBase</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    , GpuWorker</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    , GpuControlIns</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    , GpuControlOuts</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    , GpuNodeElements&lt;Node_T&gt;</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>{</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  <a class="code hl_class" href="classoscr_1_1_process_model.html">oscr::ProcessModel&lt;Node_T&gt;</a>&amp; processModel;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>  GfxNode(</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>      <a class="code hl_class" href="classoscr_1_1_process_model.html">oscr::ProcessModel&lt;Node_T&gt;</a>&amp; element,</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>      std::weak_ptr&lt;Execution::ExecutionCommandQueue&gt; q, Gfx::exec_controls ctls, <span class="keywordtype">int</span> <span class="keywordtype">id</span>,</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx)</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>      : CustomGfxNodeBase{ctx}</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>      , GpuControlOuts{<a class="code hl_namespace" href="namespacestd.html">std</a>::move(q), <a class="code hl_namespace" href="namespacestd.html">std</a>::move(ctls)}</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>      , processModel{element}</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>  {</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    this-&gt;instance = id;</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    initGfxPorts&lt;Node_T&gt;(<span class="keyword">this</span>, this-&gt;input, this-&gt;output);</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  }</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  <a class="code hl_class" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>*</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  createRenderer(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; r) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  {</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    <span class="keywordflow">return</span> <span class="keyword">new</span> GfxRenderer&lt;Node_T&gt;{*<span class="keyword">this</span>};</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>  }</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>};</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>}</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassoscr_1_1_process_model_html"><div class="ttname"><a href="classoscr_1_1_process_model.html">oscr::ProcessModel</a></div><div class="ttdef"><b>Definition</b> score-plugin-avnd/Crousti/ProcessModel.hpp:77</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdoc">Renderer for a given node.</div><div class="ttdef"><b>Definition</b> NodeRenderer.hpp:11</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:19</div></div>
