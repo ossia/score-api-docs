@@ -493,7 +493,7 @@ var hierarchy =
           [ "LocalTree::AutomationComponent", "class_local_tree_1_1_automation_component.html", null ],
           [ "LocalTree::MappingComponent", "class_local_tree_1_1_mapping_component.html", null ],
           [ "LocalTree::ScenarioComponentBase", "class_local_tree_1_1_scenario_component_base.html", null ],
-          [ "RemoteControl::ScenarioBase", "class_remote_control_1_1_scenario_base.html", null ]
+          [ "RemoteControl::WS::ScenarioBase", "class_remote_control_1_1_w_s_1_1_scenario_base.html", null ]
         ] ],
         [ "Process::GenericProcessComponent_T< ProcessComponent, Scenario::ProcessModel >", "class_process_1_1_generic_process_component___t.html", null ],
         [ "Process::GenericProcessComponent_T< ProcessComponent, Media::Sound::ProcessModel >", "class_process_1_1_generic_process_component___t.html", null ],
@@ -521,8 +521,8 @@ var hierarchy =
         [ "Execution::ProcessComponent", "class_execution_1_1_process_component.html", [
           [ "Pd::Component", "class_pd_1_1_component.html", null ]
         ] ],
-        [ "RemoteControl::ProcessComponent", "class_remote_control_1_1_process_component.html", [
-          [ "RemoteControl::DefaultProcessComponent", "class_remote_control_1_1_default_process_component.html", null ]
+        [ "RemoteControl::WS::ProcessComponent", "class_remote_control_1_1_w_s_1_1_process_component.html", [
+          [ "RemoteControl::WS::DefaultProcessComponent", "class_remote_control_1_1_w_s_1_1_default_process_component.html", null ]
         ] ]
       ] ],
       [ "Scenario::IntervalComponent< Component_T >", "class_scenario_1_1_interval_component.html", [
@@ -530,7 +530,7 @@ var hierarchy =
           [ "LocalTree::IntervalBase", "class_local_tree_1_1_interval_base.html", null ]
         ] ],
         [ "Execution::IntervalComponentBase", "class_execution_1_1_interval_component_base.html", null ],
-        [ "RemoteControl::IntervalBase", "class_remote_control_1_1_interval_base.html", null ]
+        [ "RemoteControl::WS::IntervalBase", "class_remote_control_1_1_w_s_1_1_interval_base.html", null ]
       ] ],
       [ "SimpleHierarchicalScenarioComponent< Component_T, Scenario_T, IntervalComponent_T, HasOwnership >", "class_simple_hierarchical_scenario_component.html", null ]
     ] ],
@@ -563,6 +563,7 @@ var hierarchy =
     [ "ossia::control_surface_node::control_updater", "structossia_1_1control__surface__node_1_1control__updater.html", null ],
     [ "Dataflow::control_visitor", "struct_dataflow_1_1control__visitor.html", null ],
     [ "Process::ControlLayout", "struct_process_1_1_control_layout.html", null ],
+    [ "RemoteControl::Controller::DocumentPlugin::Controller::ControlMap", "struct_remote_control_1_1_controller_1_1_document_plugin_1_1_controller_1_1_control_map.html", null ],
     [ "Process::ControlMessage", "struct_process_1_1_control_message.html", null ],
     [ "Process::ControlSetup< CreatePort, CreateControl, GetControlSize, GetName, GetFactory >", "struct_process_1_1_control_setup.html", null ],
     [ "Protocols::convert_osc_transport_to_server", "struct_protocols_1_1convert__osc__transport__to__server.html", null ],
@@ -963,7 +964,7 @@ var hierarchy =
     ] ],
     [ "score::GUIElements", "structscore_1_1_g_u_i_elements.html", null ],
     [ "Execution::HandleNodeChange", "struct_execution_1_1_handle_node_change.html", null ],
-    [ "RemoteControl::Handler", "struct_remote_control_1_1_handler.html", null ],
+    [ "RemoteControl::WS::Handler", "struct_remote_control_1_1_w_s_1_1_handler.html", null ],
     [ "score::gfx::HAPDecoder::HAPSection", "structscore_1_1gfx_1_1_h_a_p_decoder_1_1_h_a_p_section.html", null ],
     [ "Device::HardwarePortDeviceResource", "struct_device_1_1_hardware_port_device_resource.html", null ],
     [ "Gfx::Settings::HardwareVideoDecoder", "struct_gfx_1_1_settings_1_1_hardware_video_decoder.html", null ],
@@ -1043,8 +1044,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< model >", "classid__base__t.html", null ],
+    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1092,8 +1093,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1149,7 +1150,7 @@ var hierarchy =
         [ "LocalTree::ProcessComponentFactory", "class_local_tree_1_1_process_component_factory.html", null ]
       ] ],
       [ "score::GenericComponentFactory< Process::ProcessModel, DocumentPlugin, ProcessComponentFactory >", "classscore_1_1_generic_component_factory.html", [
-        [ "RemoteControl::ProcessComponentFactory", "class_remote_control_1_1_process_component_factory.html", null ]
+        [ "RemoteControl::WS::ProcessComponentFactory", "class_remote_control_1_1_w_s_1_1_process_component_factory.html", null ]
       ] ],
       [ "Audio::AudioFactory", "class_audio_1_1_audio_factory.html", [
         [ "Audio::DummyFactory", "class_audio_1_1_dummy_factory.html", null ],
@@ -1198,6 +1199,7 @@ var hierarchy =
           [ "Protocols::WiimoteProtocolFactory", "class_protocols_1_1_wiimote_protocol_factory.html", null ],
           [ "oscr::ProtocolFactory< Node >", "classoscr_1_1_protocol_factory.html", null ]
         ] ],
+        [ "Protocols::MCUProtocolFactory", "class_protocols_1_1_m_c_u_protocol_factory.html", null ],
         [ "Protocols::MIDIInputProtocolFactory", "class_protocols_1_1_m_i_d_i_input_protocol_factory.html", null ],
         [ "Protocols::MIDIOutputProtocolFactory", "class_protocols_1_1_m_i_d_i_output_protocol_factory.html", null ],
         [ "Protocols::PhidgetProtocolFactory", "class_protocols_1_1_phidget_protocol_factory.html", null ]
@@ -1333,6 +1335,9 @@ var hierarchy =
         [ "Process::EffectProcessFactory_T< Model_T >", "class_process_1_1_effect_process_factory___t.html", null ],
         [ "Process::ProcessFactory_T< Model_T >", "class_process_1_1_process_factory___t.html", null ]
       ] ],
+      [ "Process::RemoteControlProvider", "class_process_1_1_remote_control_provider.html", [
+        [ "RemoteControl::Controller::RemoteControlProvider", "class_remote_control_1_1_controller_1_1_remote_control_provider.html", null ]
+      ] ],
       [ "Recording::RecorderFactory", "class_recording_1_1_recorder_factory.html", null ],
       [ "Scenario::CoherencyCheckerFactoryInterface", "class_scenario_1_1_coherency_checker_factory_interface.html", null ],
       [ "Scenario::Command::MoveEventFactoryInterface", "class_scenario_1_1_command_1_1_move_event_factory_interface.html", [
@@ -1459,6 +1464,9 @@ var hierarchy =
       [ "score::InterfaceList< ProcessModelFactory >", "classscore_1_1_interface_list.html", [
         [ "Process::ProcessFactoryList", "class_process_1_1_process_factory_list.html", null ]
       ] ],
+      [ "score::InterfaceList< RemoteControlProvider >", "classscore_1_1_interface_list.html", [
+        [ "Process::RemoteControlProviderList", "class_process_1_1_remote_control_provider_list.html", null ]
+      ] ],
       [ "score::InterfaceList< CoherencyCheckerFactoryInterface >", "classscore_1_1_interface_list.html", [
         [ "Scenario::CSPCoherencyCheckerList", "class_scenario_1_1_c_s_p_coherency_checker_list.html", null ]
       ] ],
@@ -1526,7 +1534,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "Execution::interval_duration_data", "struct_execution_1_1interval__duration__data.html", null ],
-    [ "RemoteControl::IntervalMessages", "struct_remote_control_1_1_interval_messages.html", null ],
+    [ "RemoteControl::WS::IntervalMessages", "struct_remote_control_1_1_w_s_1_1_interval_messages.html", null ],
     [ "HierarchicalBaseScenario< Component_T, BaseScenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T >::IntervalPair", "struct_hierarchical_base_scenario_1_1_interval_pair.html", null ],
     [ "HierarchicalScenarioComponent< Component_T, Scenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T, HasOwnership >::IntervalPair", "struct_hierarchical_scenario_component_1_1_interval_pair.html", null ],
     [ "SimpleHierarchicalScenarioComponent< Component_T, Scenario_T, IntervalComponent_T, HasOwnership >::IntervalPair", "struct_simple_hierarchical_scenario_component_1_1_interval_pair.html", null ],
@@ -1633,6 +1641,7 @@ var hierarchy =
     [ "oscr::MatchingWidget< Field >", "structoscr_1_1_matching_widget.html", null ],
     [ "oscr::MatchingWidget< Field >", "structoscr_1_1_matching_widget_3_01_field_01_4.html", null ],
     [ "avnd_tools::PatternCombiner::maximum", "structavnd__tools_1_1_pattern_combiner_1_1maximum.html", null ],
+    [ "Protocols::MCUSpecificSettings", "struct_protocols_1_1_m_c_u_specific_settings.html", null ],
     [ "Gfx::ShaderSource::MemberSpec", "struct_gfx_1_1_shader_source_1_1_member_spec.html", null ],
     [ "score::Menu", "classscore_1_1_menu.html", null ],
     [ "score::MenuManager", "classscore_1_1_menu_manager.html", null ],
@@ -1882,6 +1891,7 @@ var hierarchy =
           [ "Protocols::HTTPDevice", "class_protocols_1_1_h_t_t_p_device.html", null ],
           [ "Protocols::JoystickDevice", "class_protocols_1_1_joystick_device.html", null ],
           [ "Protocols::LibmapperClientDevice", "class_protocols_1_1_libmapper_client_device.html", null ],
+          [ "Protocols::MCUDevice", "class_protocols_1_1_m_c_u_device.html", null ],
           [ "Protocols::MIDIDevice", "class_protocols_1_1_m_i_d_i_device.html", null ],
           [ "Protocols::MQTTDevice", "class_protocols_1_1_m_q_t_t_device.html", null ],
           [ "Protocols::MinuitDevice", "class_protocols_1_1_minuit_device.html", null ],
@@ -1930,7 +1940,7 @@ var hierarchy =
       [ "Patternist::Presenter", "class_patternist_1_1_presenter.html", null ],
       [ "Recording::AutomationRecorder", "class_recording_1_1_automation_recorder.html", null ],
       [ "Recording::MessageRecorder", "class_recording_1_1_message_recorder.html", null ],
-      [ "RemoteControl::Receiver", "struct_remote_control_1_1_receiver.html", null ],
+      [ "RemoteControl::WS::Receiver", "struct_remote_control_1_1_w_s_1_1_receiver.html", null ],
       [ "Scenario::IntervalModel", "class_scenario_1_1_interval_model.html", null ],
       [ "Scenario::IntervalPresenter", "class_scenario_1_1_interval_presenter.html", [
         [ "Scenario::FullViewIntervalPresenter", "class_scenario_1_1_full_view_interval_presenter.html", null ],
@@ -1951,7 +1961,7 @@ var hierarchy =
         [ "Execution::IntervalComponent", "class_execution_1_1_interval_component.html", null ],
         [ "Execution::StateComponent", "class_execution_1_1_state_component.html", null ],
         [ "LocalTree::Interval", "class_local_tree_1_1_interval.html", null ],
-        [ "RemoteControl::Interval", "class_remote_control_1_1_interval.html", null ]
+        [ "RemoteControl::WS::Interval", "class_remote_control_1_1_w_s_1_1_interval.html", null ]
       ] ]
     ] ],
     [ "LV2::on_finish", "struct_l_v2_1_1on__finish.html", null ],
@@ -2276,7 +2286,7 @@ var hierarchy =
       [ "score::GenericComponentFactoryImpl< ProcessComponent_T, ProcessComponentFactory >", "classscore_1_1_generic_component_factory_impl.html", [
         [ "Execution::ProcessComponentFactory_T< ProcessComponent_T >", "class_execution_1_1_process_component_factory___t.html", null ],
         [ "LocalTree::ProcessComponentFactory_T< ProcessComponent_T >", "class_local_tree_1_1_process_component_factory___t.html", null ],
-        [ "RemoteControl::ProcessComponentFactory_T< ProcessComponent_T >", "class_remote_control_1_1_process_component_factory___t.html", null ]
+        [ "RemoteControl::WS::ProcessComponentFactory_T< ProcessComponent_T >", "class_remote_control_1_1_w_s_1_1_process_component_factory___t.html", null ]
       ] ],
       [ "score::GenericComponentFactoryImpl< oscr::Executor< Node >, ProcessComponentFactory >", "classscore_1_1_generic_component_factory_impl.html", null ]
     ] ],
@@ -2303,6 +2313,7 @@ var hierarchy =
       ] ],
       [ "Gfx::simple_texture_input_protocol", "class_gfx_1_1simple__texture__input__protocol.html", null ],
       [ "Gfx::video_texture_input_protocol", "class_gfx_1_1video__texture__input__protocol.html", null ],
+      [ "Protocols::mcu_protocol", "class_protocols_1_1mcu__protocol.html", null ],
       [ "oscr::Protocol< Node >", "classoscr_1_1_protocol.html", null ]
     ] ],
     [ "State::Pulse", "struct_state_1_1_pulse.html", null ],
@@ -2873,12 +2884,12 @@ var hierarchy =
                 [ "Gfx::Images::ImageListChooser", "struct_gfx_1_1_images_1_1_image_list_chooser.html", null ],
                 [ "oscr::CustomFloatControlBase", "structoscr_1_1_custom_float_control_base.html", [
                   [ "oscr::CustomFloatControl< Node, FieldIndex >", "structoscr_1_1_custom_float_control.html", null ]
-                ] ]
+                ] ],
+                [ "vst3::ControlInlet", "classvst3_1_1_control_inlet.html", null ],
+                [ "vst::ControlInlet", "classvst_1_1_control_inlet.html", null ]
               ] ],
               [ "Process::MidiInlet", "class_process_1_1_midi_inlet.html", null ],
-              [ "Process::ValueInlet", "class_process_1_1_value_inlet.html", null ],
-              [ "vst3::ControlInlet", "classvst3_1_1_control_inlet.html", null ],
-              [ "vst::ControlInlet", "classvst_1_1_control_inlet.html", null ]
+              [ "Process::ValueInlet", "class_process_1_1_value_inlet.html", null ]
             ] ],
             [ "Process::Outlet", "class_process_1_1_outlet.html", [
               [ "Gfx::GeometryOutlet", "class_gfx_1_1_geometry_outlet.html", null ],
@@ -3089,15 +3100,19 @@ var hierarchy =
       [ "Process::MagnetismAdjuster", "class_process_1_1_magnetism_adjuster.html", null ],
       [ "Process::NodeItem", "class_process_1_1_node_item.html", null ],
       [ "Process::ProcessFocusManager", "class_process_1_1_process_focus_manager.html", null ],
+      [ "Process::RemoteControlInterface", "class_process_1_1_remote_control_interface.html", [
+        [ "RemoteControl::Controller::RemoteControlImpl", "class_remote_control_1_1_controller_1_1_remote_control_impl.html", null ]
+      ] ],
       [ "Protocols::DNSSDWorker", "class_protocols_1_1_d_n_s_s_d_worker.html", null ],
       [ "Protocols::MidiKeyboardEventFilter", "class_protocols_1_1_midi_keyboard_event_filter.html", null ],
+      [ "Protocols::mcu_protocol", "class_protocols_1_1mcu__protocol.html", null ],
       [ "Recording::ApplicationPlugin", "class_recording_1_1_application_plugin.html", null ],
       [ "Recording::AutomationRecorder", "class_recording_1_1_automation_recorder.html", null ],
       [ "Recording::MessageRecorder", "class_recording_1_1_message_recorder.html", null ],
       [ "Recording::RecordContext", "struct_recording_1_1_record_context.html", null ],
       [ "Recording::SingleRecorder< T >", "class_recording_1_1_single_recorder.html", null ],
       [ "RemoteApplication", "class_remote_application.html", null ],
-      [ "RemoteControl::Receiver", "struct_remote_control_1_1_receiver.html", null ],
+      [ "RemoteControl::WS::Receiver", "struct_remote_control_1_1_w_s_1_1_receiver.html", null ],
       [ "RemoveEventTest", "class_remove_event_test.html", null ],
       [ "RemoveIntervalTest", "class_remove_interval_test.html", null ],
       [ "RemoveLayerModelFromSlotTest", "class_remove_layer_model_from_slot_test.html", null ],
@@ -3165,9 +3180,9 @@ var hierarchy =
       [ "score::CommandSpinbox< Property, Command, SpinBox >", "structscore_1_1_command_spinbox.html", null ],
       [ "score::CommandStack", "classscore_1_1_command_stack.html", null ],
       [ "score::Component", "classscore_1_1_component.html", [
-        [ "RemoteControl::Event", "class_remote_control_1_1_event.html", null ],
-        [ "RemoteControl::State", "class_remote_control_1_1_state.html", null ],
-        [ "RemoteControl::Sync", "class_remote_control_1_1_sync.html", null ],
+        [ "RemoteControl::WS::Event", "class_remote_control_1_1_w_s_1_1_event.html", null ],
+        [ "RemoteControl::WS::State", "class_remote_control_1_1_w_s_1_1_state.html", null ],
+        [ "RemoteControl::WS::Sync", "class_remote_control_1_1_w_s_1_1_sync.html", null ],
         [ "score::GenericComponent< System_T >", "classscore_1_1_generic_component.html", [
           [ "Execution::EventComponent", "class_execution_1_1_event_component.html", null ],
           [ "Execution::StateComponentBase", "class_execution_1_1_state_component_base.html", null ],
@@ -3190,7 +3205,8 @@ var hierarchy =
         [ "Execution::DocumentPlugin", "class_execution_1_1_document_plugin.html", null ],
         [ "Gfx::DocumentPlugin", "class_gfx_1_1_document_plugin.html", null ],
         [ "LocalTree::DocumentPlugin", "class_local_tree_1_1_document_plugin.html", null ],
-        [ "RemoteControl::DocumentPlugin", "class_remote_control_1_1_document_plugin.html", null ],
+        [ "RemoteControl::Controller::DocumentPlugin", "class_remote_control_1_1_controller_1_1_document_plugin.html", null ],
+        [ "RemoteControl::WS::DocumentPlugin", "class_remote_control_1_1_w_s_1_1_document_plugin.html", null ],
         [ "Transport::DocumentPlugin", "class_transport_1_1_document_plugin.html", null ],
         [ "score::SerializableDocumentPlugin", "classscore_1_1_serializable_document_plugin.html", [
           [ "score::ProjectSettingsModel", "classscore_1_1_project_settings_model.html", null ]
@@ -3458,6 +3474,7 @@ var hierarchy =
         [ "Protocols::JoystickProtocolSettingsWidget", "class_protocols_1_1_joystick_protocol_settings_widget.html", null ],
         [ "Protocols::LibmapperClientProtocolSettingsWidget", "class_protocols_1_1_libmapper_client_protocol_settings_widget.html", null ],
         [ "Protocols::LocalProtocolSettingsWidget", "class_protocols_1_1_local_protocol_settings_widget.html", null ],
+        [ "Protocols::MCUSettingsWidget", "class_protocols_1_1_m_c_u_settings_widget.html", null ],
         [ "Protocols::MIDIInputSettingsWidget", "class_protocols_1_1_m_i_d_i_input_settings_widget.html", null ],
         [ "Protocols::MIDIOutputSettingsWidget", "class_protocols_1_1_m_i_d_i_output_settings_widget.html", null ],
         [ "Protocols::MQTTProtocolSettingsWidget", "class_protocols_1_1_m_q_t_t_protocol_settings_widget.html", null ],
@@ -3613,7 +3630,7 @@ var hierarchy =
     [ "Nodal::NodalExecutorBase::RegisteredNode", "struct_nodal_1_1_nodal_executor_base_1_1_registered_node.html", null ],
     [ "Execution::SetupContext::RegisteredPorts", "struct_execution_1_1_setup_context_1_1_registered_ports.html", null ],
     [ "State::Relation", "struct_state_1_1_relation.html", null ],
-    [ "RemoteControl::RemoteMessages", "struct_remote_control_1_1_remote_messages.html", null ],
+    [ "RemoteControl::WS::RemoteMessages", "struct_remote_control_1_1_w_s_1_1_remote_messages.html", null ],
     [ "score::gfx::RenderList", "classscore_1_1gfx_1_1_render_list.html", null ],
     [ "score::gfx::RenderState", "structscore_1_1gfx_1_1_render_state.html", null ],
     [ "Scenario::RequestOverlayMenuCallback", "struct_scenario_1_1_request_overlay_menu_callback.html", null ],
@@ -4096,6 +4113,7 @@ var hierarchy =
       [ "score::IndirectContainer< PortFactory >", "classscore_1_1_indirect_container.html", null ],
       [ "score::IndirectContainer< ProcessDropHandler >", "classscore_1_1_indirect_container.html", null ],
       [ "score::IndirectContainer< ProcessModelFactory >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< RemoteControlProvider >", "classscore_1_1_indirect_container.html", null ],
       [ "score::IndirectContainer< CoherencyCheckerFactoryInterface >", "classscore_1_1_indirect_container.html", null ],
       [ "score::IndirectContainer< MoveEventFactoryInterface >", "classscore_1_1_indirect_container.html", null ],
       [ "score::IndirectContainer< TriggerCommandFactory >", "classscore_1_1_indirect_container.html", null ],
@@ -4134,6 +4152,7 @@ var hierarchy =
         [ "score::InterfaceList< PortFactory >", "classscore_1_1_interface_list.html", null ],
         [ "score::InterfaceList< ProcessDropHandler >", "classscore_1_1_interface_list.html", null ],
         [ "score::InterfaceList< ProcessModelFactory >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< RemoteControlProvider >", "classscore_1_1_interface_list.html", null ],
         [ "score::InterfaceList< CoherencyCheckerFactoryInterface >", "classscore_1_1_interface_list.html", null ],
         [ "score::InterfaceList< MoveEventFactoryInterface >", "classscore_1_1_interface_list.html", null ],
         [ "score::InterfaceList< TriggerCommandFactory >", "classscore_1_1_interface_list.html", null ],
@@ -4191,7 +4210,7 @@ var hierarchy =
     [ "Threedim::StrucSynth::worker", "struct_threedim_1_1_struc_synth_1_1worker.html", null ],
     [ "JSONWriter::wrapper", "struct_j_s_o_n_writer_1_1wrapper.html", null ],
     [ "Writer< T >", "class_writer.html", null ],
-    [ "RemoteControl::WSClient", "struct_remote_control_1_1_w_s_client.html", null ],
+    [ "RemoteControl::WS::WSClient", "struct_remote_control_1_1_w_s_1_1_w_s_client.html", null ],
     [ "Protocols::WSSpecificSettings", "struct_protocols_1_1_w_s_specific_settings.html", null ],
     [ "WidgetFactory::XYSlider", "struct_widget_factory_1_1_x_y_slider.html", null ],
     [ "WidgetFactory::XYSpinboxes", "struct_widget_factory_1_1_x_y_spinboxes.html", null ],

@@ -2,7 +2,7 @@ var searchData=
 [
   ['handle_0',['Handle',['../struct_media_1_1_audio_file_1_1_handle.html',1,'Media::AudioFile']]],
   ['handlenodechange_1',['HandleNodeChange',['../struct_execution_1_1_handle_node_change.html',1,'Execution']]],
-  ['handler_2',['Handler',['../struct_remote_control_1_1_handler.html',1,'RemoteControl']]],
+  ['handler_2',['Handler',['../struct_remote_control_1_1_w_s_1_1_handler.html',1,'RemoteControl::WS']]],
   ['hapdecoder_3',['HAPDecoder',['../structscore_1_1gfx_1_1_h_a_p_decoder.html',1,'score::gfx']]],
   ['hapdefaultdecoder_4',['HAPDefaultDecoder',['../structscore_1_1gfx_1_1_h_a_p_default_decoder.html',1,'score::gfx']]],
   ['hapmdecoder_5',['HAPMDecoder',['../structscore_1_1gfx_1_1_h_a_p_m_decoder.html',1,'score::gfx']]],

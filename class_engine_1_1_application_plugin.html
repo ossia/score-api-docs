@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('class_engine_1_1_application_plugin.ht
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_engine_1_1_application_plugin-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Engine::ApplicationPlugin Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
@@ -144,9 +145,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6115abc9c0af8ddad1564697b11e5a15" id="r_a6115abc9c0af8ddad1564697b11e5a15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_engine_1_1_application_plugin.html#a6115abc9c0af8ddad1564697b11e5a15">on_documentChanged</a> (<a class="el" href="classscore_1_1_document.html">score::Document</a> *olddoc, <a class="el" href="classscore_1_1_document.html">score::Document</a> *newdoc) override</td></tr>
 <tr class="memdesc:a6115abc9c0af8ddad1564697b11e5a15"><td class="mdescLeft">&#160;</td><td class="mdescRight">on_documentChanged Will be called after a document switch. If newdoc isn't null, it means that it is currently being focused by score.  <br /></td></tr>
 <tr class="separator:a6115abc9c0af8ddad1564697b11e5a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab84e6280580528541561f7bd509d0831" id="r_ab84e6280580528541561f7bd509d0831"><td class="memItemLeft" align="right" valign="top"><a id="ab84e6280580528541561f7bd509d0831" name="ab84e6280580528541561f7bd509d0831"></a>
-QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>setupTimingWidget</b> (QLabel *) const</td></tr>
-<tr class="separator:ab84e6280580528541561f7bd509d0831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab671e2e093044c23ca2a259c9bdf6a96" id="r_ab671e2e093044c23ca2a259c9bdf6a96"><td class="memItemLeft" align="right" valign="top"><a id="ab671e2e093044c23ca2a259c9bdf6a96" name="ab671e2e093044c23ca2a259c9bdf6a96"></a>
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>setupTimingWidget</b> (QLabel *)</td></tr>
+<tr class="separator:ab671e2e093044c23ca2a259c9bdf6a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a007ee58a8349f54cc6b6da09623b2c1a" id="r_a007ee58a8349f54cc6b6da09623b2c1a"><td class="memItemLeft" align="right" valign="top"><a id="a007ee58a8349f54cc6b6da09623b2c1a" name="a007ee58a8349f54cc6b6da09623b2c1a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>initLocalTreeNodes</b> (<a class="el" href="class_local_tree_1_1_document_plugin.html">LocalTree::DocumentPlugin</a> &amp;)</td></tr>
 <tr class="separator:a007ee58a8349f54cc6b6da09623b2c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,16 +184,22 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>on_activeWind
 <tr class="memdesc:a05683f211b55c61f104b5a6004db9240 inherit pub_methods_classscore_1_1_g_u_i_application_plugin"><td class="mdescLeft">&#160;</td><td class="mdescRight">on_keyPressEvent Called with key events in the main document view.  <br /></td></tr>
 <tr class="separator:a05683f211b55c61f104b5a6004db9240 inherit pub_methods_classscore_1_1_g_u_i_application_plugin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a29d5a6fd93aa770b90e17e2bbc4c9131" id="r_a29d5a6fd93aa770b90e17e2bbc4c9131"><td class="memItemLeft" align="right" valign="top"><a id="a29d5a6fd93aa770b90e17e2bbc4c9131" name="a29d5a6fd93aa770b90e17e2bbc4c9131"></a>
+QTimer&#160;</td><td class="memItemRight" valign="bottom"><b>execution_ui_clock_timer</b> {}</td></tr>
+<tr class="separator:a29d5a6fd93aa770b90e17e2bbc4c9131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classscore_1_1_g_u_i_application_plugin"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classscore_1_1_g_u_i_application_plugin')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classscore_1_1_g_u_i_application_plugin.html">score::GUIApplicationPlugin</a></td></tr>
+<tr class="memitem:ababf38f495b0fd0e30263c6bb65d2e5b inherit pub_attribs_classscore_1_1_g_u_i_application_plugin" id="r_ababf38f495b0fd0e30263c6bb65d2e5b"><td class="memItemLeft" align="right" valign="top">
+const <a class="el" href="structscore_1_1_g_u_i_application_context.html">GUIApplicationContext</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>context</b></td></tr>
+<tr class="separator:ababf38f495b0fd0e30263c6bb65d2e5b inherit pub_attribs_classscore_1_1_g_u_i_application_plugin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classscore_1_1_g_u_i_application_plugin"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classscore_1_1_g_u_i_application_plugin')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classscore_1_1_g_u_i_application_plugin.html">score::GUIApplicationPlugin</a></td></tr>
 <tr class="memitem:a45b38739c51b1dd0e42e238a3f061e08 inherit pub_types_classscore_1_1_g_u_i_application_plugin" id="r_a45b38739c51b1dd0e42e238a3f061e08"><td class="memItemLeft" align="right" valign="top">
 using&#160;</td><td class="memItemRight" valign="bottom"><b>GUIElements</b> = <a class="el" href="structscore_1_1_g_u_i_elements.html">score::GUIElements</a></td></tr>
 <tr class="separator:a45b38739c51b1dd0e42e238a3f061e08 inherit pub_types_classscore_1_1_g_u_i_application_plugin"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_classscore_1_1_g_u_i_application_plugin"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classscore_1_1_g_u_i_application_plugin')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classscore_1_1_g_u_i_application_plugin.html">score::GUIApplicationPlugin</a></td></tr>
-<tr class="memitem:ababf38f495b0fd0e30263c6bb65d2e5b inherit pub_attribs_classscore_1_1_g_u_i_application_plugin" id="r_ababf38f495b0fd0e30263c6bb65d2e5b"><td class="memItemLeft" align="right" valign="top">
-const <a class="el" href="structscore_1_1_g_u_i_application_context.html">GUIApplicationContext</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>context</b></td></tr>
-<tr class="separator:ababf38f495b0fd0e30263c6bb65d2e5b inherit pub_attribs_classscore_1_1_g_u_i_application_plugin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a10e2608a84ffa6a7fc63113cab4b3dbd" name="a10e2608a84ffa6a7fc63113cab4b3dbd"></a>

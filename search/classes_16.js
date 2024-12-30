@@ -32,7 +32,7 @@ var searchData=
   ['wrap_29',['Wrap',['../struct_faust_d_s_p_1_1_wrap.html',1,'FaustDSP']]],
   ['wrapper_30',['wrapper',['../struct_j_s_o_n_writer_1_1wrapper.html',1,'JSONWriter']]],
   ['writer_31',['Writer',['../class_writer.html',1,'']]],
-  ['wsclient_32',['WSClient',['../struct_remote_control_1_1_w_s_client.html',1,'RemoteControl']]],
+  ['wsclient_32',['WSClient',['../struct_remote_control_1_1_w_s_1_1_w_s_client.html',1,'RemoteControl::WS']]],
   ['wsdevice_33',['WSDevice',['../class_protocols_1_1_w_s_device.html',1,'Protocols']]],
   ['wsprotocolfactory_34',['WSProtocolFactory',['../class_protocols_1_1_w_s_protocol_factory.html',1,'Protocols']]],
   ['wsprotocolsettingswidget_35',['WSProtocolSettingsWidget',['../class_protocols_1_1_w_s_protocol_settings_widget.html',1,'Protocols']]],

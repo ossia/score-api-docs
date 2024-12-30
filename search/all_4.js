@@ -84,7 +84,7 @@ var searchData=
   ['entitymapserializer_81',['EntityMapSerializer',['../struct_entity_map_serializer.html',1,'']]],
   ['enum_82',['enum',['../class_j_s_1_1_enum.html',1,'JS::Enum'],['../struct_widget_factory_1_1_enum.html',1,'WidgetFactory::Enum']]],
   ['enum_5frange_3c_20nodes_3a_3amidiutil_3a_3ascale_5ftype_20_3e_83',['enum_range&lt; Nodes::MidiUtil::scale_type &gt;',['../structmagic__enum_1_1customize_1_1enum__range_3_01_nodes_1_1_midi_util_1_1scale__type_01_4.html',1,'magic_enum::customize']]],
-  ['event_84',['event',['../class_local_tree_1_1_event.html',1,'LocalTree::Event'],['../class_remote_control_1_1_event.html',1,'RemoteControl::Event']]],
+  ['event_84',['event',['../class_local_tree_1_1_event.html',1,'LocalTree::Event'],['../class_remote_control_1_1_w_s_1_1_event.html',1,'RemoteControl::WS::Event']]],
   ['eventactions_85',['eventactions',['../class_scenario_1_1_event_actions.html',1,'Scenario::EventActions'],['../class_scenario_1_1_event_actions.html#a87cc41c3f6dcfa656b18d4c93397e728',1,'Scenario::EventActions::EventActions()']]],
   ['eventcomponent_86',['EventComponent',['../class_execution_1_1_event_component.html',1,'Execution']]],
   ['eventinspectorwidget_87',['eventinspectorwidget',['../class_scenario_1_1_event_inspector_widget.html',1,'Scenario::EventInspectorWidget'],['../class_scenario_1_1_event_inspector_widget.html#a09e2f483ac50554936c3799b1f031188',1,'Scenario::EventInspectorWidget::EventInspectorWidget()']]],

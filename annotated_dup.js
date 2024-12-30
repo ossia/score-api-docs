@@ -1255,6 +1255,9 @@ var annotated_dup =
       [ "ProcessMultiScriptEditDialog", "class_process_1_1_process_multi_script_edit_dialog.html", null ],
       [ "ProcessScriptEditDialog", "class_process_1_1_process_script_edit_dialog.html", null ],
       [ "ProcessStateData", "struct_process_1_1_process_state_data.html", null ],
+      [ "RemoteControlInterface", "class_process_1_1_remote_control_interface.html", null ],
+      [ "RemoteControlProvider", "class_process_1_1_remote_control_provider.html", null ],
+      [ "RemoteControlProviderList", "class_process_1_1_remote_control_provider_list.html", null ],
       [ "ScriptChangeResult", "struct_process_1_1_script_change_result.html", null ],
       [ "ScriptDialog", "class_process_1_1_script_dialog.html", null ],
       [ "SetControlOutletValue", "class_process_1_1_set_control_outlet_value.html", null ],
@@ -1319,6 +1322,11 @@ var annotated_dup =
       [ "LocalProtocolFactory", "class_protocols_1_1_local_protocol_factory.html", null ],
       [ "LocalProtocolSettingsWidget", "class_protocols_1_1_local_protocol_settings_widget.html", null ],
       [ "LocalSpecificSettings", "struct_protocols_1_1_local_specific_settings.html", null ],
+      [ "mcu_protocol", "class_protocols_1_1mcu__protocol.html", null ],
+      [ "MCUDevice", "class_protocols_1_1_m_c_u_device.html", null ],
+      [ "MCUProtocolFactory", "class_protocols_1_1_m_c_u_protocol_factory.html", null ],
+      [ "MCUSettingsWidget", "class_protocols_1_1_m_c_u_settings_widget.html", null ],
+      [ "MCUSpecificSettings", "struct_protocols_1_1_m_c_u_specific_settings.html", null ],
       [ "MIDIDevice", "class_protocols_1_1_m_i_d_i_device.html", null ],
       [ "MidiEnumerator", "class_protocols_1_1_midi_enumerator.html", null ],
       [ "MIDIInputProtocolFactory", "class_protocols_1_1_m_i_d_i_input_protocol_factory.html", null ],
@@ -1408,28 +1416,35 @@ var annotated_dup =
       [ "Redo", "struct_redo_strategy_1_1_redo.html", null ]
     ] ],
     [ "RemoteControl", null, [
+      [ "Controller", null, [
+        [ "DocumentPlugin", "class_remote_control_1_1_controller_1_1_document_plugin.html", null ],
+        [ "RemoteControlImpl", "class_remote_control_1_1_controller_1_1_remote_control_impl.html", null ],
+        [ "RemoteControlProvider", "class_remote_control_1_1_controller_1_1_remote_control_provider.html", null ]
+      ] ],
       [ "Settings", null, [
         [ "Model", "class_remote_control_1_1_settings_1_1_model.html", null ],
         [ "Presenter", "class_remote_control_1_1_settings_1_1_presenter.html", null ],
         [ "View", "class_remote_control_1_1_settings_1_1_view.html", null ]
       ] ],
-      [ "ApplicationPlugin", "class_remote_control_1_1_application_plugin.html", "class_remote_control_1_1_application_plugin" ],
-      [ "DefaultProcessComponent", "class_remote_control_1_1_default_process_component.html", null ],
-      [ "DocumentPlugin", "class_remote_control_1_1_document_plugin.html", null ],
-      [ "Event", "class_remote_control_1_1_event.html", null ],
-      [ "Handler", "struct_remote_control_1_1_handler.html", "struct_remote_control_1_1_handler" ],
-      [ "Interval", "class_remote_control_1_1_interval.html", null ],
-      [ "IntervalBase", "class_remote_control_1_1_interval_base.html", null ],
-      [ "IntervalMessages", "struct_remote_control_1_1_interval_messages.html", null ],
-      [ "ProcessComponent", "class_remote_control_1_1_process_component.html", null ],
-      [ "ProcessComponentFactory", "class_remote_control_1_1_process_component_factory.html", null ],
-      [ "ProcessComponentFactory_T", "class_remote_control_1_1_process_component_factory___t.html", null ],
-      [ "Receiver", "struct_remote_control_1_1_receiver.html", null ],
-      [ "RemoteMessages", "struct_remote_control_1_1_remote_messages.html", null ],
-      [ "ScenarioBase", "class_remote_control_1_1_scenario_base.html", null ],
-      [ "State", "class_remote_control_1_1_state.html", null ],
-      [ "Sync", "class_remote_control_1_1_sync.html", null ],
-      [ "WSClient", "struct_remote_control_1_1_w_s_client.html", null ]
+      [ "WS", null, [
+        [ "DefaultProcessComponent", "class_remote_control_1_1_w_s_1_1_default_process_component.html", null ],
+        [ "DocumentPlugin", "class_remote_control_1_1_w_s_1_1_document_plugin.html", null ],
+        [ "Event", "class_remote_control_1_1_w_s_1_1_event.html", null ],
+        [ "Handler", "struct_remote_control_1_1_w_s_1_1_handler.html", "struct_remote_control_1_1_w_s_1_1_handler" ],
+        [ "Interval", "class_remote_control_1_1_w_s_1_1_interval.html", null ],
+        [ "IntervalBase", "class_remote_control_1_1_w_s_1_1_interval_base.html", null ],
+        [ "IntervalMessages", "struct_remote_control_1_1_w_s_1_1_interval_messages.html", null ],
+        [ "ProcessComponent", "class_remote_control_1_1_w_s_1_1_process_component.html", null ],
+        [ "ProcessComponentFactory", "class_remote_control_1_1_w_s_1_1_process_component_factory.html", null ],
+        [ "ProcessComponentFactory_T", "class_remote_control_1_1_w_s_1_1_process_component_factory___t.html", null ],
+        [ "Receiver", "struct_remote_control_1_1_w_s_1_1_receiver.html", null ],
+        [ "RemoteMessages", "struct_remote_control_1_1_w_s_1_1_remote_messages.html", null ],
+        [ "ScenarioBase", "class_remote_control_1_1_w_s_1_1_scenario_base.html", null ],
+        [ "State", "class_remote_control_1_1_w_s_1_1_state.html", null ],
+        [ "Sync", "class_remote_control_1_1_w_s_1_1_sync.html", null ],
+        [ "WSClient", "struct_remote_control_1_1_w_s_1_1_w_s_client.html", null ]
+      ] ],
+      [ "ApplicationPlugin", "class_remote_control_1_1_application_plugin.html", "class_remote_control_1_1_application_plugin" ]
     ] ],
     [ "RollbackStrategy", null, [
       [ "Simple", "struct_rollback_strategy_1_1_simple.html", null ]

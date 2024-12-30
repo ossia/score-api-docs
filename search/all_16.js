@@ -36,7 +36,7 @@ var searchData=
   ['write_33',['write',['../class_data_stream_writer.html#a0b10a4e412ae08395c87b5f63a4f02d6',1,'DataStreamWriter']]],
   ['writegraphviz_34',['writeGraphviz',['../struct_scenario_1_1_timenode_graph.html#aee020c59323db73ea945be51d2215a73',1,'Scenario::TimenodeGraph']]],
   ['writer_35',['Writer',['../class_writer.html',1,'']]],
-  ['wsclient_36',['WSClient',['../struct_remote_control_1_1_w_s_client.html',1,'RemoteControl']]],
+  ['wsclient_36',['WSClient',['../struct_remote_control_1_1_w_s_1_1_w_s_client.html',1,'RemoteControl::WS']]],
   ['wsdevice_37',['WSDevice',['../class_protocols_1_1_w_s_device.html',1,'Protocols']]],
   ['wsprotocolfactory_38',['WSProtocolFactory',['../class_protocols_1_1_w_s_protocol_factory.html',1,'Protocols']]],
   ['wsprotocolsettingswidget_39',['WSProtocolSettingsWidget',['../class_protocols_1_1_w_s_protocol_settings_widget.html',1,'Protocols']]],
