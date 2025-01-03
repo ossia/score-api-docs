@@ -718,6 +718,7 @@ var hierarchy =
     ] ],
     [ "WidgetFactory::Enum", "struct_widget_factory_1_1_enum.html", null ],
     [ "magic_enum::customize::enum_range< Nodes::MidiUtil::scale_type >", "structmagic__enum_1_1customize_1_1enum__range_3_01_nodes_1_1_midi_util_1_1scale__type_01_4.html", null ],
+    [ "Analysis::EnvelopeFollower", "struct_analysis_1_1_envelope_follower.html", null ],
     [ "HierarchicalBaseScenario< Component_T, BaseScenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T >::EventPair", "struct_hierarchical_base_scenario_1_1_event_pair.html", null ],
     [ "HierarchicalScenarioComponent< Component_T, Scenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T, HasOwnership >::EventPair", "struct_hierarchical_scenario_component_1_1_event_pair.html", null ],
     [ "score::EventVisitor< Event >", "structscore_1_1_event_visitor.html", null ],

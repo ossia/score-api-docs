@@ -1,5 +1,6 @@
 var NAVTREEINDEX23 =
 {
+"struct_state_1_1_pulse.html":[11,0,13,20],
 "struct_state_1_1_relation.html":[12,0,54,22],
 "struct_state_1_1_relation.html":[11,0,13,21],
 "struct_state_1_1_unit.html":[11,0,13,25],
@@ -12,8 +13,8 @@ var NAVTREEINDEX23 =
 "struct_state_1_1_unit_model_1_1_tree_node.html":[12,0,54,27,2],
 "struct_state_1_1_unit_model_1_1_unit_data_model.html":[12,0,54,27,3],
 "struct_state_1_1_unit_model_1_1_unit_data_model.html":[11,0,13,26,3],
-"struct_state_1_1_vec_edit_base.html":[11,0,13,30],
 "struct_state_1_1_vec_edit_base.html":[12,0,54,31],
+"struct_state_1_1_vec_edit_base.html":[11,0,13,30],
 "struct_sync_info.html":[12,0,263],
 "struct_t_serializer.html":[12,0,275],
 "struct_t_serializer_3_01_data_stream_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[12,0,281],
@@ -248,6 +249,5 @@ var NAVTREEINDEX23 =
 "structhas__no__base.html":[12,0,115],
 "structhas__ui.html":[12,0,116],
 "structhas__ui_3_01_t_01_4.html":[12,0,117],
-"structin__relationship.html":[12,0,128],
-"structincrease__timer__precision.html":[12,0,129]
+"structin__relationship.html":[12,0,128]
 };

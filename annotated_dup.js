@@ -7,6 +7,7 @@ var annotated_dup =
       [ "Crest", "struct_analysis_1_1_crest.html", null ],
       [ "CSD", "struct_analysis_1_1_c_s_d.html", null ],
       [ "EnergyDifference", "struct_analysis_1_1_energy_difference.html", null ],
+      [ "EnvelopeFollower", "struct_analysis_1_1_envelope_follower.html", null ],
       [ "Flatness", "struct_analysis_1_1_flatness.html", null ],
       [ "gain_slider", "struct_analysis_1_1gain__slider.html", null ],
       [ "gate_slider", "struct_analysis_1_1gate__slider.html", null ],

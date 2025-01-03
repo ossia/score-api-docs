@@ -131,10 +131,10 @@ var NAVTREEINDEX =
 "dir_d63cad4c0fbadd40c246dee5f33095af.html",
 "plugins_2score-plugin-protocols_2_protocols_2_network_widgets_2serialization_8hpp_source.html",
 "struct_curve_1_1_style.html",
-"struct_j_s_1_1_port_source.html",
+"struct_j_s_1_1_out_value_message_01_1_1_w___meta_object_creator_helper_1_1_name.html",
 "struct_process_1_1_process_data.html",
-"struct_state_1_1_relation.html",
-"structis__shared__ptr.html",
+"struct_state_1_1_pulse.html",
+"structincrease__timer__precision.html",
 "structscore_1_1_g_u_i_elements.html",
 "structscore_1_1gfx_1_1_packed_rect_decoder.html#a15afca090160b7ed41a0eedf9cf35548"
 ];
