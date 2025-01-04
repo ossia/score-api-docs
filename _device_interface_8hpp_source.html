@@ -314,7 +314,7 @@ $(document).ready(function(){initNavTree('_device_interface_8hpp_source.html',''
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>  ossia::net::device_base* getDevice() <span class="keyword">const</span> <span class="keyword">final</span> <span class="keyword">override</span> { <span class="keywordflow">return</span> m_dev.get(); }</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  std::unique_ptr&lt;ossia::net::device_base&gt; m_dev;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  std::shared_ptr&lt;ossia::net::device_base&gt; m_dev;</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>  <span class="keywordtype">bool</span> m_owned{<span class="keyword">true</span>};</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>};</div>
 </div>
@@ -336,7 +336,10 @@ $(document).ready(function(){initNavTree('_device_interface_8hpp_source.html',''
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>SCORE_LIB_DEVICE_EXPORT</div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="keywordtype">void</span> releaseDevice(</div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    ossia::net::network_context&amp; ctx, std::unique_ptr&lt;ossia::net::device_base&gt; dev);</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>}</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>SCORE_LIB_DEVICE_EXPORT</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="keywordtype">void</span> releaseDevice(</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    ossia::net::network_context&amp; ctx, std::shared_ptr&lt;ossia::net::device_base&gt; dev);</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>}</div>
 <div class="ttc" id="aclass_device_1_1_device_interface_html"><div class="ttname"><a href="class_device_1_1_device_interface.html">Device::DeviceInterface</a></div><div class="ttdef"><b>Definition</b> DeviceInterface.hpp:66</div></div>
 <div class="ttc" id="aclass_device_1_1_owning_device_interface_html"><div class="ttname"><a href="class_device_1_1_owning_device_interface.html">Device::OwningDeviceInterface</a></div><div class="ttdef"><b>Definition</b> DeviceInterface.hpp:185</div></div>
 <div class="ttc" id="aclass_tree_node_html"><div class="ttname"><a href="class_tree_node.html">TreeNode&lt; DeviceExplorerNode &gt;</a></div></div>

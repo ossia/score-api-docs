@@ -11,6 +11,7 @@ var hierarchy =
     ] ],
     [ "Gfx::ACodecInfo", "struct_gfx_1_1_a_codec_info.html", null ],
     [ "score::Action", "classscore_1_1_action.html", null ],
+    [ "bitfocus::module_data::action_definition", "structbitfocus_1_1module__data_1_1action__definition.html", null ],
     [ "score::ActionCondition", "structscore_1_1_action_condition.html", [
       [ "Scenario::EnableWhenScenarioInterfaceInstantObject", "class_scenario_1_1_enable_when_scenario_interface_instant_object.html", null ],
       [ "Scenario::EnableWhenScenarioInterfaceObject", "class_scenario_1_1_enable_when_scenario_interface_object.html", null ],
@@ -149,6 +150,7 @@ var hierarchy =
       [ "Scenario::DisplayedElementsPresenter", "class_scenario_1_1_displayed_elements_presenter.html", null ]
     ] ],
     [ "BaseScenarioRefContainer", "class_base_scenario_ref_container.html", null ],
+    [ "Protocols::BitfocusSpecificSettings", "struct_protocols_1_1_bitfocus_specific_settings.html", null ],
     [ "Recording::Box", "struct_recording_1_1_box.html", null ],
     [ "score::Brush", "structscore_1_1_brush.html", null ],
     [ "score::BrushSet", "structscore_1_1_brush_set.html", null ],
@@ -173,6 +175,7 @@ var hierarchy =
     [ "Nodal::HierarchyManager::ChildPair", "struct_nodal_1_1_hierarchy_manager_1_1_child_pair.html", null ],
     [ "score::ComponentHierarchyManager< ParentComponent_T, ChildModel_T, ChildComponent_T >::ChildPair", "structscore_1_1_component_hierarchy_manager_1_1_child_pair.html", null ],
     [ "score::PolymorphicComponentHierarchyManager< ParentComponent_T, ChildModel_T, ChildComponent_T, ChildComponentFactoryList_T, HasOwnership >::ChildPair", "structscore_1_1_polymorphic_component_hierarchy_manager_1_1_child_pair.html", null ],
+    [ "bitfocus::module_data::config_field::choice", "structbitfocus_1_1module__data_1_1config__field_1_1choice.html", null ],
     [ "WidgetFactory::ChooserToggle", "struct_widget_factory_1_1_chooser_toggle.html", null ],
     [ "Nodes::Chord::Node::chord_type", "struct_nodes_1_1_chord_1_1_node_1_1chord__type.html", null ],
     [ "Jit::ClangCC1Driver", "class_jit_1_1_clang_c_c1_driver.html", null ],
@@ -547,6 +550,7 @@ var hierarchy =
     [ "Gfx::con_unvalidated", "struct_gfx_1_1con__unvalidated.html", null ],
     [ "oscr::con_unvalidated< Node, Field, NPred, NField >", "structoscr_1_1con__unvalidated.html", null ],
     [ "oscr::con_unvalidated_dynamic_port< Node, Field, NPred, NField >", "structoscr_1_1con__unvalidated__dynamic__port.html", null ],
+    [ "bitfocus::module_data::config_field", "structbitfocus_1_1module__data_1_1config__field.html", null ],
     [ "score::gfx::OutputNode::Configuration", "structscore_1_1gfx_1_1_output_node_1_1_configuration.html", null ],
     [ "Scenario::ConstrainedDisplacementPolicy", "class_scenario_1_1_constrained_displacement_policy.html", null ],
     [ "Container< std::unique_ptr< T >, std::allocator< std::unique_ptr< T > > >", null, [
@@ -804,6 +808,7 @@ var hierarchy =
       [ "has_ui< T >", "structhas__ui.html", null ],
       [ "is_shared_ptr< T >", "structis__shared__ptr.html", null ]
     ] ],
+    [ "bitfocus::module_data::feedback_definition", "structbitfocus_1_1module__data_1_1feedback__definition.html", null ],
     [ "halp::file_port", null, [
       [ "Threedim::ObjLoader::ins::obj_t", "struct_threedim_1_1_obj_loader_1_1ins_1_1obj__t.html", null ]
     ] ],
@@ -1045,8 +1050,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Model >", "classid__base__t.html", null ],
+    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1094,8 +1099,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1186,6 +1191,7 @@ var hierarchy =
         [ "Gfx::WindowProtocolFactory", "class_gfx_1_1_window_protocol_factory.html", null ],
         [ "Protocols::DefaultProtocolFactory", "class_protocols_1_1_default_protocol_factory.html", [
           [ "Protocols::ArtnetProtocolFactory", "class_protocols_1_1_artnet_protocol_factory.html", null ],
+          [ "Protocols::BitfocusProtocolFactory", "class_protocols_1_1_bitfocus_protocol_factory.html", null ],
           [ "Protocols::CoAPProtocolFactory", "class_protocols_1_1_co_a_p_protocol_factory.html", null ],
           [ "Protocols::HTTPProtocolFactory", "class_protocols_1_1_h_t_t_p_protocol_factory.html", null ],
           [ "Protocols::JoystickProtocolFactory", "class_protocols_1_1_joystick_protocol_factory.html", null ],
@@ -1662,6 +1668,7 @@ var hierarchy =
     ] ],
     [ "Threedim::mesh", "struct_threedim_1_1mesh.html", null ],
     [ "score::gfx::MeshBuffers", "structscore_1_1gfx_1_1_mesh_buffers.html", null ],
+    [ "bitfocus::win32_handles::message", "structbitfocus_1_1win32__handles_1_1message.html", null ],
     [ "LV2::Message", "struct_l_v2_1_1_message.html", null ],
     [ "score::gfx::Message", "structscore_1_1gfx_1_1_message.html", null ],
     [ "State::Message", "struct_state_1_1_message.html", null ],
@@ -1738,6 +1745,7 @@ var hierarchy =
     ] ],
     [ "score::gfx::ModelCameraUBO", "structscore_1_1gfx_1_1_model_camera_u_b_o.html", null ],
     [ "vst::Module", "structvst_1_1_module.html", null ],
+    [ "bitfocus::module_data", "structbitfocus_1_1module__data.html", null ],
     [ "Automation::RecreateOnPlay::modvalue", "struct_automation_1_1_recreate_on_play_1_1modvalue.html", null ],
     [ "Scenario::MoveEventInBaseScenario_StateWrapper", "class_scenario_1_1_move_event_in_base_scenario___state_wrapper.html", null ],
     [ "Scenario::MoveEventInScenario_StateWrapper", "class_scenario_1_1_move_event_in_scenario___state_wrapper.html", null ],
@@ -1888,6 +1896,7 @@ var hierarchy =
         [ "Dataflow::AudioDevice", "class_dataflow_1_1_audio_device.html", null ],
         [ "Device::OwningDeviceInterface", "class_device_1_1_owning_device_interface.html", [
           [ "Protocols::ArtnetDevice", "class_protocols_1_1_artnet_device.html", null ],
+          [ "Protocols::BitfocusDevice", "class_protocols_1_1_bitfocus_device.html", null ],
           [ "Protocols::CoAPDevice", "class_protocols_1_1_co_a_p_device.html", null ],
           [ "Protocols::HTTPDevice", "class_protocols_1_1_h_t_t_p_device.html", null ],
           [ "Protocols::JoystickDevice", "class_protocols_1_1_joystick_device.html", null ],
@@ -2052,8 +2061,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model >", "class_path.html", null ],
+    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -2172,6 +2181,7 @@ var hierarchy =
     [ "Process::PortItemLayout", "struct_process_1_1_port_item_layout.html", null ],
     [ "Process::PortWidgetSetup", "class_process_1_1_port_widget_setup.html", null ],
     [ "Process::Preset", "struct_process_1_1_preset.html", null ],
+    [ "bitfocus::module_data::preset_definition", "structbitfocus_1_1module__data_1_1preset__definition.html", null ],
     [ "PrettyName_k", "class_pretty_name__k.html", null ],
     [ "Threedim::Primitive", "struct_threedim_1_1_primitive.html", [
       [ "Threedim::Cone", "struct_threedim_1_1_cone.html", null ],
@@ -2315,7 +2325,8 @@ var hierarchy =
       [ "Gfx::simple_texture_input_protocol", "class_gfx_1_1simple__texture__input__protocol.html", null ],
       [ "Gfx::video_texture_input_protocol", "class_gfx_1_1video__texture__input__protocol.html", null ],
       [ "Protocols::mcu_protocol", "class_protocols_1_1mcu__protocol.html", null ],
-      [ "oscr::Protocol< Node >", "classoscr_1_1_protocol.html", null ]
+      [ "oscr::Protocol< Node >", "classoscr_1_1_protocol.html", null ],
+      [ "ossia::net::bitfocus_protocol", "classossia_1_1net_1_1bitfocus__protocol.html", null ]
     ] ],
     [ "State::Pulse", "struct_state_1_1_pulse.html", null ],
     [ "boost::spirit::traits::push_back_container< QString, QChar >", "structboost_1_1spirit_1_1traits_1_1push__back__container_3_01_q_string_00_01_q_char_01_4.html", null ],
@@ -2828,7 +2839,10 @@ var hierarchy =
         [ "Protocols::LibmapperClientEnumerator", "class_protocols_1_1_libmapper_client_enumerator.html", null ],
         [ "Protocols::LibraryDeviceEnumerator", "class_protocols_1_1_library_device_enumerator.html", null ],
         [ "Protocols::MidiEnumerator< Type >", "class_protocols_1_1_midi_enumerator.html", null ],
-        [ "Protocols::MidiKeyboardEnumerator", "class_protocols_1_1_midi_keyboard_enumerator.html", null ]
+        [ "Protocols::MidiKeyboardEnumerator", "class_protocols_1_1_midi_keyboard_enumerator.html", null ],
+        [ "Protocols::SubfolderDeviceEnumerator", "class_protocols_1_1_subfolder_device_enumerator.html", [
+          [ "Protocols::BitfocusEnumerator", "class_protocols_1_1_bitfocus_enumerator.html", null ]
+        ] ]
       ] ],
       [ "Device::DeviceInterface", "class_device_1_1_device_interface.html", null ],
       [ "Device::DeviceList", "class_device_1_1_device_list.html", null ],
@@ -3172,6 +3186,10 @@ var hierarchy =
       [ "YSFX::ApplicationPlugin", "class_y_s_f_x_1_1_application_plugin.html", null ],
       [ "YSFX::LibraryHandler", "class_y_s_f_x_1_1_library_handler.html", null ],
       [ "ZeroconfBrowser", "class_zeroconf_browser.html", null ],
+      [ "bitfocus::module_handler_base", "structbitfocus_1_1module__handler__base.html", [
+        [ "bitfocus::module_handler", "structbitfocus_1_1module__handler.html", null ]
+      ] ],
+      [ "ossia::net::bitfocus_protocol", "classossia_1_1net_1_1bitfocus__protocol.html", null ],
       [ "score::ActionManager", "classscore_1_1_action_manager.html", null ],
       [ "score::ApplicationRegistrar", "classscore_1_1_application_registrar.html", [
         [ "score::GUIApplicationRegistrar", "classscore_1_1_g_u_i_application_registrar.html", null ]
@@ -3470,6 +3488,7 @@ var hierarchy =
         ] ],
         [ "Gfx::WindowSettingsWidget", "class_gfx_1_1_window_settings_widget.html", null ],
         [ "Protocols::ArtnetProtocolSettingsWidget", "class_protocols_1_1_artnet_protocol_settings_widget.html", null ],
+        [ "Protocols::BitfocusProtocolSettingsWidget", "class_protocols_1_1_bitfocus_protocol_settings_widget.html", null ],
         [ "Protocols::CoAPProtocolSettingsWidget", "class_protocols_1_1_co_a_p_protocol_settings_widget.html", null ],
         [ "Protocols::HTTPProtocolSettingsWidget", "class_protocols_1_1_h_t_t_p_protocol_settings_widget.html", null ],
         [ "Protocols::JoystickProtocolSettingsWidget", "class_protocols_1_1_joystick_protocol_settings_widget.html", null ],
@@ -4073,6 +4092,7 @@ var hierarchy =
     [ "score::ValueAssigner< int >", "structscore_1_1_value_assigner_3_01int_01_4.html", null ],
     [ "score::ValueAssigner< ossia::value >", "structscore_1_1_value_assigner_3_01ossia_1_1value_01_4.html", null ],
     [ "ValueVariantDatastreamSerializer", "struct_value_variant_datastream_serializer.html", null ],
+    [ "bitfocus::module_data::variable_definition", "structbitfocus_1_1module__data_1_1variable__definition.html", null ],
     [ "ossia::variant", null, [
       [ "Scenario::SlotPresenter", "struct_scenario_1_1_slot_presenter.html", null ]
     ] ],
@@ -4206,6 +4226,7 @@ var hierarchy =
     [ "Protocols::Wheel", "struct_protocols_1_1_wheel.html", null ],
     [ "Protocols::WheelSlot", "struct_protocols_1_1_wheel_slot.html", null ],
     [ "Protocols::WiimoteSpecificSettings", "struct_protocols_1_1_wiimote_specific_settings.html", null ],
+    [ "bitfocus::win32_handles", "structbitfocus_1_1win32__handles.html", null ],
     [ "vst3::WindowContainer", "structvst3_1_1_window_container.html", null ],
     [ "Gfx::WindowOutputSettings", "struct_gfx_1_1_window_output_settings.html", null ],
     [ "Threedim::StrucSynth::worker", "struct_threedim_1_1_struc_synth_1_1worker.html", null ],

@@ -83,6 +83,12 @@ var annotated_dup =
       [ "inlet_vis", "struct_avnd_jit_1_1inlet__vis.html", null ],
       [ "outlet_vis", "struct_avnd_jit_1_1outlet__vis.html", null ]
     ] ],
+    [ "bitfocus", null, [
+      [ "module_data", "structbitfocus_1_1module__data.html", "structbitfocus_1_1module__data" ],
+      [ "module_handler", "structbitfocus_1_1module__handler.html", "structbitfocus_1_1module__handler" ],
+      [ "module_handler_base", "structbitfocus_1_1module__handler__base.html", null ],
+      [ "win32_handles", "structbitfocus_1_1win32__handles.html", "structbitfocus_1_1win32__handles" ]
+    ] ],
     [ "boost", null, [
       [ "spirit", null, [
         [ "traits", null, [
@@ -1115,6 +1121,7 @@ var annotated_dup =
     ] ],
     [ "ossia", null, [
       [ "net", null, [
+        [ "bitfocus_protocol", "classossia_1_1net_1_1bitfocus__protocol.html", null ],
         [ "can_learn", "classossia_1_1net_1_1can__learn.html", null ]
       ] ],
       [ "nodes", null, [
@@ -1290,6 +1297,11 @@ var annotated_dup =
       [ "ArtnetProtocolSettingsWidget", "class_protocols_1_1_artnet_protocol_settings_widget.html", null ],
       [ "ArtnetSpecificSettings", "struct_protocols_1_1_artnet_specific_settings.html", null ],
       [ "BasicTCPWidget", "class_protocols_1_1_basic_t_c_p_widget.html", null ],
+      [ "BitfocusDevice", "class_protocols_1_1_bitfocus_device.html", null ],
+      [ "BitfocusEnumerator", "class_protocols_1_1_bitfocus_enumerator.html", null ],
+      [ "BitfocusProtocolFactory", "class_protocols_1_1_bitfocus_protocol_factory.html", null ],
+      [ "BitfocusProtocolSettingsWidget", "class_protocols_1_1_bitfocus_protocol_settings_widget.html", null ],
+      [ "BitfocusSpecificSettings", "struct_protocols_1_1_bitfocus_specific_settings.html", null ],
       [ "CoAPDevice", "class_protocols_1_1_co_a_p_device.html", null ],
       [ "CoAPProtocolFactory", "class_protocols_1_1_co_a_p_protocol_factory.html", null ],
       [ "CoAPProtocolSettingsWidget", "class_protocols_1_1_co_a_p_protocol_settings_widget.html", null ],
@@ -1375,6 +1387,7 @@ var annotated_dup =
       [ "SerialProtocolSettingsWidget", "class_protocols_1_1_serial_protocol_settings_widget.html", null ],
       [ "SerialSpecificSettings", "struct_protocols_1_1_serial_specific_settings.html", null ],
       [ "SerialWidget", "class_protocols_1_1_serial_widget.html", null ],
+      [ "SubfolderDeviceEnumerator", "class_protocols_1_1_subfolder_device_enumerator.html", null ],
       [ "TCPServerWidget", "class_protocols_1_1_t_c_p_server_widget.html", null ],
       [ "TCPWidget", "class_protocols_1_1_t_c_p_widget.html", null ],
       [ "UDPWidget", "class_protocols_1_1_u_d_p_widget.html", null ],
