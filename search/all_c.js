@@ -211,7 +211,7 @@ var searchData=
   ['modification_20during_20execution_208',['Live modification during execution.',['../namespace_execution.html#LiveModification',1,'']]],
   ['module_209',['Module',['../structvst_1_1_module.html',1,'vst']]],
   ['module_5fdata_210',['module_data',['../structbitfocus_1_1module__data.html',1,'bitfocus']]],
-  ['module_5fhandler_211',['module_handler',['../structbitfocus_1_1module__handler.html',1,'bitfocus::module_handler'],['../structbitfocus_1_1module__handler.html#ae1598d092c9b0448a4e401c9ea77a9a4',1,'bitfocus::module_handler::module_handler()']]],
+  ['module_5fhandler_211',['module_handler',['../structbitfocus_1_1module__handler.html',1,'bitfocus::module_handler'],['../structbitfocus_1_1module__handler.html#abb52707a73b5450581d4ca6e335906f0',1,'bitfocus::module_handler::module_handler()']]],
   ['module_5fhandler_5fbase_212',['module_handler_base',['../structbitfocus_1_1module__handler__base.html',1,'bitfocus']]],
   ['modulelibraryhandler_213',['ModuleLibraryHandler',['../class_j_s_1_1_module_library_handler.html',1,'JS']]],
   ['modvalue_214',['modvalue',['../struct_automation_1_1_recreate_on_play_1_1modvalue.html',1,'Automation::RecreateOnPlay']]],

@@ -120,8 +120,8 @@ Inheritance diagram for bitfocus::module_handler:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae1598d092c9b0448a4e401c9ea77a9a4" id="r_ae1598d092c9b0448a4e401c9ea77a9a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbitfocus_1_1module__handler.html#ae1598d092c9b0448a4e401c9ea77a9a4">module_handler</a> (QString path, QString entrypoint, QString apiversion, module_configuration config)</td></tr>
-<tr class="separator:ae1598d092c9b0448a4e401c9ea77a9a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb52707a73b5450581d4ca6e335906f0" id="r_abb52707a73b5450581d4ca6e335906f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbitfocus_1_1module__handler.html#abb52707a73b5450581d4ca6e335906f0">module_handler</a> (QString path, QString entrypoint, QString nodeVersion, QString apiversion, module_configuration config)</td></tr>
+<tr class="separator:abb52707a73b5450581d4ca6e335906f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd34576b9e3845a7b07379fd825c10e1" id="r_afd34576b9e3845a7b07379fd825c10e1"><td class="memItemLeft" align="right" valign="top"><a id="afd34576b9e3845a7b07379fd825c10e1" name="afd34576b9e3845a7b07379fd825c10e1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>do_write</b> (QString res)</td></tr>
 <tr class="separator:afd34576b9e3845a7b07379fd825c10e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -266,9 +266,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>variableChanged</b> (
 void&#160;</td><td class="memItemRight" valign="bottom"><b>do_write</b> (std::string_view res)</td></tr>
 <tr class="separator:a0630d73326c9cd8ec4771d783f1a0bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structbitfocus_1_1module__handler__base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structbitfocus_1_1module__handler__base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structbitfocus_1_1module__handler__base.html">bitfocus::module_handler_base</a></td></tr>
-<tr class="memitem:a86777431d87baddb7ccb65281b769e3f inherit pub_methods_structbitfocus_1_1module__handler__base" id="r_a86777431d87baddb7ccb65281b769e3f"><td class="memItemLeft" align="right" valign="top">
-&#160;</td><td class="memItemRight" valign="bottom"><b>module_handler_base</b> (QString module_path, QString entrypoint)</td></tr>
-<tr class="separator:a86777431d87baddb7ccb65281b769e3f inherit pub_methods_structbitfocus_1_1module__handler__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a030598fa7c9601c5b2f0bc578af779 inherit pub_methods_structbitfocus_1_1module__handler__base" id="r_a1a030598fa7c9601c5b2f0bc578af779"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>module_handler_base</b> (QString node_path, QString module_path, QString entrypoint)</td></tr>
+<tr class="separator:a1a030598fa7c9601c5b2f0bc578af779 inherit pub_methods_structbitfocus_1_1module__handler__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6053e66247fa235b48c3090ec7153fb inherit pub_methods_structbitfocus_1_1module__handler__base" id="r_aa6053e66247fa235b48c3090ec7153fb"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>on_read</b> (QSocketDescriptor, QSocketNotifier::Type)</td></tr>
 <tr class="separator:aa6053e66247fa235b48c3090ec7153fb inherit pub_methods_structbitfocus_1_1module__handler__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -293,8 +293,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>pfd</b> [2] {}</td></t
 <tr class="separator:aac63a936b587f2a6ab48a86c99860fb6 inherit pub_attribs_structbitfocus_1_1module__handler__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae1598d092c9b0448a4e401c9ea77a9a4" name="ae1598d092c9b0448a4e401c9ea77a9a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1598d092c9b0448a4e401c9ea77a9a4">&#9670;&#160;</a></span>module_handler()</h2>
+<a id="abb52707a73b5450581d4ca6e335906f0" name="abb52707a73b5450581d4ca6e335906f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb52707a73b5450581d4ca6e335906f0">&#9670;&#160;</a></span>module_handler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -313,6 +313,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>pfd</b> [2] {}</td></t
           <td></td>
           <td class="paramtype">QString&#160;</td>
           <td class="paramname"><em>entrypoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>nodeVersion</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
