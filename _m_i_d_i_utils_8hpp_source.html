@@ -116,20 +116,19 @@ $(document).ready(function(){initNavTree('_m_i_d_i_utils_8hpp_source.html',''); 
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;score/application/GUIApplicationContext.hpp&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;libremidi/backends.hpp&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;libremidi/libremidi.hpp&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span>Protocols</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">inline</span> libremidi::API getCurrentAPI()</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  <span class="keyword">auto</span> api</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>      = score::AppContext().<a class="code hl_function" href="structscore_1_1_application_context.html#a00655aa4737305da2087253200d93064">settings</a>&lt;<a class="code hl_class" href="class_protocols_1_1_settings_1_1_model.html">Protocols::Settings::Model</a>&gt;().getMidiApiAsEnum();</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keywordflow">if</span>(api == libremidi::API::UNSPECIFIED)</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    api = libremidi::midi1::default_api();</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <span class="keywordflow">return</span> api;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;libremidi/api.hpp&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span>Protocols</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">inline</span> libremidi::API getCurrentAPI()</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <span class="keyword">auto</span> api</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>      = score::AppContext().<a class="code hl_function" href="structscore_1_1_application_context.html#a00655aa4737305da2087253200d93064">settings</a>&lt;<a class="code hl_class" href="class_protocols_1_1_settings_1_1_model.html">Protocols::Settings::Model</a>&gt;().getMidiApiAsEnum();</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <span class="keywordflow">if</span>(api == libremidi::API::UNSPECIFIED)</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    api = libremidi::midi1::default_api();</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keywordflow">return</span> api;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>}</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>}</div>
 <div class="ttc" id="aclass_protocols_1_1_settings_1_1_model_html"><div class="ttname"><a href="class_protocols_1_1_settings_1_1_model.html">Protocols::Settings::Model</a></div><div class="ttdef"><b>Definition</b> score-plugin-protocols/Protocols/Settings/Model.hpp:19</div></div>
 <div class="ttc" id="astructscore_1_1_application_context_html_a00655aa4737305da2087253200d93064"><div class="ttname"><a href="structscore_1_1_application_context.html#a00655aa4737305da2087253200d93064">score::ApplicationContext::settings</a></div><div class="ttdeci">T &amp; settings() const</div><div class="ttdoc">Access a specific Settings model instance.</div><div class="ttdef"><b>Definition</b> ApplicationContext.hpp:40</div></div>
 </div><!-- fragment --></div><!-- contents -->

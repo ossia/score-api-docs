@@ -1,5 +1,7 @@
 var NAVTREEINDEX19 =
 {
+"plugins_2score-plugin-gfx_2_gfx_2_text_2_metadata_8hpp_source.html":[13,0,0,2,16,1,10,2],
+"plugins_2score-plugin-gfx_2_gfx_2_video_2_metadata_8hpp_source.html":[13,0,0,2,16,1,11,3],
 "plugins_2score-plugin-gfx_2_gfx_2_video_2_presenter_8hpp_source.html":[13,0,0,2,16,1,11,4],
 "plugins_2score-plugin-js_2_j_s_2_executor_2_component_8hpp_source.html":[13,0,0,2,19,0,1,0],
 "plugins_2score-plugin-lv2_2_l_v2_2_window_8hpp_source.html":[13,0,0,2,21,0,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX19 =
 "struct_control_surface_1_1_node_observer.html":[12,0,7,5],
 "struct_control_surface_1_1_node_observer_1_1_available_node.html":[12,0,7,5,0],
 "struct_control_surface_1_1_presenter_1_1_port.html":[12,0,7,6,0],
-"struct_control_surface_1_1con__unvalidated.html":[12,0,7,2],
-"struct_curve_1_1_curve_domain.html":[12,0,8,9],
-"struct_curve_1_1_curve_domain.html":[11,0,1,7]
+"struct_control_surface_1_1con__unvalidated.html":[12,0,7,2]
 };

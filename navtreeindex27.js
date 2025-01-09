@@ -1,5 +1,7 @@
 var NAVTREEINDEX27 =
 {
+"structvst_1_1_v_s_t_info.html":[12,0,61,17],
+"structvst_1_1vst__node_1_1dummy__t.html":[12,0,61,14,0],
 "structvst_1_1vst__node__base_1_1vst__control.html":[12,0,61,15,0],
 "todo.html":[10],
 "unionmtk_1_1_midi_sync_1_1storage.html":[12,0,36,0,0],

@@ -166,9 +166,11 @@ var NAVTREEINDEX2 =
 "_m_c_u_specific_settings_8hpp_source.html":[13,0,0,2,28,0,9,3],
 "_m_f_c_c_8hpp_source.html":[13,0,0,2,5,0,10],
 "_m_i_d_i_device_8hpp_source.html":[13,0,0,2,28,0,10,0],
-"_m_i_d_i_protocol_factory_8hpp_source.html":[13,0,0,2,28,0,10,1],
-"_m_i_d_i_protocol_settings_widget_8hpp_source.html":[13,0,0,2,28,0,10,2],
-"_m_i_d_i_specific_settings_8hpp_source.html":[13,0,0,2,28,0,10,3],
+"_m_i_d_i_keyboard_event_filter_8linux_8hpp_source.html":[13,0,0,2,28,0,10,1],
+"_m_i_d_i_keyboard_event_filter_8macos_8hpp_source.html":[13,0,0,2,28,0,10,2],
+"_m_i_d_i_protocol_factory_8hpp_source.html":[13,0,0,2,28,0,10,3],
+"_m_i_d_i_protocol_settings_widget_8hpp_source.html":[13,0,0,2,28,0,10,4],
+"_m_i_d_i_specific_settings_8hpp_source.html":[13,0,0,2,28,0,10,5],
 "_m_i_d_i_sync_8hpp_source.html":[13,0,0,2,8,2,5],
 "_m_i_d_i_utils_8hpp_source.html":[13,0,0,2,28,0,24],
 "_m_m_e_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,14],
@@ -247,7 +249,5 @@ var NAVTREEINDEX2 =
 "_midi_style_8hpp_source.html":[13,0,0,2,24,0,11],
 "_midi_util_8hpp_source.html":[13,0,0,2,15,0,25],
 "_midi_view_8hpp_source.html":[13,0,0,2,24,0,12],
-"_mime_data_8hpp_source.html":[13,0,0,1,1,13,15],
-"_mime_visitor_8hpp_source.html":[13,0,0,1,1,10,10],
-"_min_max_commands_8hpp_source.html":[13,0,0,2,22,0,0,2]
+"_mime_data_8hpp_source.html":[13,0,0,1,1,13,15]
 };
