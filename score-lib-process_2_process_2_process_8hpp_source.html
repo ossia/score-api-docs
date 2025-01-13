@@ -338,22 +338,25 @@ $(document).ready(function(){initNavTree('score-lib-process_2_process_2_process_
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>ProcessModel* parentProcess(QObject* obj) <span class="keyword">noexcept</span>;</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>SCORE_LIB_PROCESS_EXPORT</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="keyword">const</span> ProcessModel* parentProcess(<span class="keyword">const</span> QObject* obj) <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>}</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>DEFAULT_MODEL_METADATA(<a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a>, <span class="stringliteral">&quot;Process&quot;</span>)</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>Q_DECLARE_METATYPE(<a class="code hl_class" href="classid__base__t.html">Id</a>&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&gt;)</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>W_REGISTER_ARGTYPE(<a class="code hl_class" href="classid__base__t.html">Id</a>&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&gt;)</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>W_REGISTER_ARGTYPE(OptionalId&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&gt;)</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>Q_DECLARE_METATYPE(<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel*)</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>Q_DECLARE_METATYPE(const <a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel*)</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>W_REGISTER_ARGTYPE(<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel*)</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>W_REGISTER_ARGTYPE(const <a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel*)</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>W_REGISTER_ARGTYPE(QPointer&lt;const <a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&gt;)</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>W_REGISTER_ARGTYPE(QPointer&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&gt;)</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>Q_DECLARE_METATYPE(<a class="code hl_namespace" href="namespacestd.html">std</a>::shared_ptr&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::Preset&gt;)</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>W_REGISTER_ARGTYPE(<a class="code hl_namespace" href="namespacestd.html">std</a>::shared_ptr&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::Preset&gt;)</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>SCORE_LIB_PROCESS_EXPORT</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>QString processLocalTreeAddress(<span class="keyword">const</span> <a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; proc);</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>}</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>DEFAULT_MODEL_METADATA(<a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a>, <span class="stringliteral">&quot;Process&quot;</span>)</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>Q_DECLARE_METATYPE(<a class="code hl_class" href="classid__base__t.html">Id</a>&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&gt;)</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>W_REGISTER_ARGTYPE(<a class="code hl_class" href="classid__base__t.html">Id</a>&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&gt;)</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>W_REGISTER_ARGTYPE(OptionalId&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&gt;)</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>Q_DECLARE_METATYPE(<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel*)</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>Q_DECLARE_METATYPE(const <a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel*)</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>W_REGISTER_ARGTYPE(<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel*)</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>W_REGISTER_ARGTYPE(const <a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel*)</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>W_REGISTER_ARGTYPE(QPointer&lt;const <a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&gt;)</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>W_REGISTER_ARGTYPE(QPointer&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&gt;)</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>Q_DECLARE_METATYPE(<a class="code hl_namespace" href="namespacestd.html">std</a>::shared_ptr&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::Preset&gt;)</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>W_REGISTER_ARGTYPE(<a class="code hl_namespace" href="namespacestd.html">std</a>::shared_ptr&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::Preset&gt;)</div>
 <div class="ttc" id="aclass_data_stream_writer_html"><div class="ttname"><a href="class_data_stream_writer.html">DataStreamWriter</a></div><div class="ttdef"><b>Definition</b> DataStreamVisitor.hpp:202</div></div>
 <div class="ttc" id="aclass_j_s_o_n_writer_html"><div class="ttname"><a href="class_j_s_o_n_writer.html">JSONWriter</a></div><div class="ttdef"><b>Definition</b> JSONVisitor.hpp:423</div></div>
 <div class="ttc" id="aclass_process_1_1_control_inlet_html"><div class="ttname"><a href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></div><div class="ttdef"><b>Definition</b> Port.hpp:203</div></div>
