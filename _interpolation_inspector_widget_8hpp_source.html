@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('_interpolation_inspector_widget_8hpp_s
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;Device/Widgets/AddressAccessorEditWidget.hpp&gt;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;Process/Dataflow/AddressAccessorEditWidget.hpp&gt;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;Process/Inspector/ProcessInspectorWidgetDelegate.hpp&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;Process/Inspector/ProcessInspectorWidgetDelegateFactory.hpp&gt;</span></div>
@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('_interpolation_inspector_widget_8hpp_s
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keywordtype">void</span> on_addressChange(const ::State::AddressAccessor&amp; newText);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <a class="code hl_class" href="class_device_1_1_address_accessor_edit_widget.html">Device::AddressAccessorEditWidget</a>* m_lineEdit{};</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <a class="code hl_class" href="class_process_1_1_address_accessor_edit_widget.html">Process::AddressAccessorEditWidget</a>* m_lineEdit{};</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  QCheckBox* m_tween{};</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  QLabel* m_label;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
@@ -187,7 +187,6 @@ $(document).ready(function(){initNavTree('_interpolation_inspector_widget_8hpp_s
 </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
 <div class="ttc" id="aclass_command_dispatcher_html"><div class="ttname"><a href="class_command_dispatcher.html">CommandDispatcher</a></div><div class="ttdoc">The CommandDispatcher class.</div><div class="ttdef"><b>Definition</b> CommandDispatcher.hpp:13</div></div>
-<div class="ttc" id="aclass_device_1_1_address_accessor_edit_widget_html"><div class="ttname"><a href="class_device_1_1_address_accessor_edit_widget.html">Device::AddressAccessorEditWidget</a></div><div class="ttdef"><b>Definition</b> AddressAccessorEditWidget.hpp:26</div></div>
 <div class="ttc" id="aclass_inspector_1_1_inspector_widget_base_html"><div class="ttname"><a href="class_inspector_1_1_inspector_widget_base.html">Inspector::InspectorWidgetBase</a></div><div class="ttdoc">The InspectorWidgetBase class Set the global structuration for an inspected element.</div><div class="ttdef"><b>Definition</b> InspectorWidgetBase.hpp:37</div></div>
 <div class="ttc" id="aclass_inspector_1_1_inspector_widget_factory_html"><div class="ttname"><a href="class_inspector_1_1_inspector_widget_factory.html">Inspector::InspectorWidgetFactory</a></div><div class="ttdoc">The InspectorWidgetFactoryInterface class.</div><div class="ttdef"><b>Definition</b> InspectorWidgetFactoryInterface.hpp:32</div></div>
 <div class="ttc" id="aclass_interpolation_1_1_inspector_factory_html"><div class="ttname"><a href="class_interpolation_1_1_inspector_factory.html">Interpolation::InspectorFactory</a></div><div class="ttdef"><b>Definition</b> InterpolationInspectorWidget.hpp:38</div></div>
@@ -195,6 +194,7 @@ $(document).ready(function(){initNavTree('_interpolation_inspector_widget_8hpp_s
 <div class="ttc" id="aclass_interpolation_1_1_state_inspector_factory_html"><div class="ttname"><a href="class_interpolation_1_1_state_inspector_factory.html">Interpolation::StateInspectorFactory</a></div><div class="ttdef"><b>Definition</b> InterpolationInspectorWidget.hpp:57</div></div>
 <div class="ttc" id="aclass_interpolation_1_1_state_inspector_factory_html_a87e56b47ce6679c1d216299993caf701"><div class="ttname"><a href="class_interpolation_1_1_state_inspector_factory.html#a87e56b47ce6679c1d216299993caf701">Interpolation::StateInspectorFactory::make</a></div><div class="ttdeci">QWidget * make(const InspectedObjects &amp;sourceElements, const score::DocumentContext &amp;doc, QWidget *parent) const override</div><div class="ttdoc">makeWidget Makes a widget for the inspector from an object</div><div class="ttdef"><b>Definition</b> InterpolationInspectorWidget.cpp:119</div></div>
 <div class="ttc" id="aclass_interpolation_1_1_state_inspector_widget_html"><div class="ttname"><a href="class_interpolation_1_1_state_inspector_widget.html">Interpolation::StateInspectorWidget</a></div><div class="ttdef"><b>Definition</b> InterpolationInspectorWidget.hpp:43</div></div>
+<div class="ttc" id="aclass_process_1_1_address_accessor_edit_widget_html"><div class="ttname"><a href="class_process_1_1_address_accessor_edit_widget.html">Process::AddressAccessorEditWidget</a></div><div class="ttdef"><b>Definition</b> AddressAccessorEditWidget.hpp:28</div></div>
 <div class="ttc" id="aclass_process_1_1_inspector_widget_delegate___t_html"><div class="ttname"><a href="class_process_1_1_inspector_widget_delegate___t.html">Process::InspectorWidgetDelegate_T</a></div><div class="ttdef"><b>Definition</b> ProcessInspectorWidgetDelegate.hpp:13</div></div>
 <div class="ttc" id="aclass_process_1_1_inspector_widget_delegate_factory___t_html"><div class="ttname"><a href="class_process_1_1_inspector_widget_delegate_factory___t.html">Process::InspectorWidgetDelegateFactory_T</a></div><div class="ttdef"><b>Definition</b> ProcessInspectorWidgetDelegateFactory.hpp:53</div></div>
 <div class="ttc" id="astructmatches_html"><div class="ttname"><a href="structmatches.html">matches</a></div><div class="ttdef"><b>Definition</b> ObjectMatches.hpp:6</div></div>

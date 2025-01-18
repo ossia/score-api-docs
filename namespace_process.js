@@ -1,5 +1,9 @@
 var namespace_process =
 [
+    [ "AddressAccessorEditWidget", "class_process_1_1_address_accessor_edit_widget.html", null ],
+    [ "AddressAccessorLineEdit", "class_process_1_1_address_accessor_line_edit.html", null ],
+    [ "AddressLineEdit", "class_process_1_1_address_line_edit.html", null ],
+    [ "AddressLineEditBase", "class_process_1_1_address_line_edit_base.html", null ],
     [ "ApplicationPlugin", "class_process_1_1_application_plugin.html", null ],
     [ "AudioInlet", "class_process_1_1_audio_inlet.html", null ],
     [ "AudioOutlet", "class_process_1_1_audio_outlet.html", null ],

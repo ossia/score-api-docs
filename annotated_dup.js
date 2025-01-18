@@ -226,7 +226,6 @@ var annotated_dup =
       [ "WidgetOutletFactory", "struct_dataflow_1_1_widget_outlet_factory.html", null ]
     ] ],
     [ "Device", "namespace_device.html", [
-      [ "AddressAccessorEditWidget", "class_device_1_1_address_accessor_edit_widget.html", null ],
       [ "AddressDialog", "class_device_1_1_address_dialog.html", null ],
       [ "AddressSettings", "struct_device_1_1_address_settings.html", null ],
       [ "AddressSettingsCommon", "struct_device_1_1_address_settings_common.html", null ],
@@ -1178,6 +1177,10 @@ var annotated_dup =
       [ "RemotePackagesModel", "class_p_m_1_1_remote_packages_model.html", null ]
     ] ],
     [ "Process", "namespace_process.html", [
+      [ "AddressAccessorEditWidget", "class_process_1_1_address_accessor_edit_widget.html", null ],
+      [ "AddressAccessorLineEdit", "class_process_1_1_address_accessor_line_edit.html", null ],
+      [ "AddressLineEdit", "class_process_1_1_address_line_edit.html", null ],
+      [ "AddressLineEditBase", "class_process_1_1_address_line_edit_base.html", null ],
       [ "ApplicationPlugin", "class_process_1_1_application_plugin.html", null ],
       [ "AudioInlet", "class_process_1_1_audio_inlet.html", null ],
       [ "AudioOutlet", "class_process_1_1_audio_outlet.html", null ],
@@ -2345,12 +2348,9 @@ var annotated_dup =
       [ "Address", "struct_state_1_1_address.html", "struct_state_1_1_address" ],
       [ "AddressAccessor", "struct_state_1_1_address_accessor.html", "struct_state_1_1_address_accessor" ],
       [ "AddressAccessorHead", "struct_state_1_1_address_accessor_head.html", null ],
-      [ "AddressAccessorLineEdit", "class_state_1_1_address_accessor_line_edit.html", null ],
       [ "AddressAccessorValidator", "class_state_1_1_address_accessor_validator.html", null ],
       [ "AddressFragmentLineEdit", "class_state_1_1_address_fragment_line_edit.html", null ],
       [ "AddressFragmentValidator", "class_state_1_1_address_fragment_validator.html", null ],
-      [ "AddressLineEdit", "class_state_1_1_address_line_edit.html", null ],
-      [ "AddressLineEditBase", "class_state_1_1_address_line_edit_base.html", null ],
       [ "AddressValidator", "class_state_1_1_address_validator.html", null ],
       [ "BoolValueWidget", "class_state_1_1_bool_value_widget.html", null ],
       [ "DestinationQualifiers", "struct_state_1_1_destination_qualifiers.html", null ],

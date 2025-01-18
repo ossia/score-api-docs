@@ -1,6 +1,5 @@
 var namespace_device =
 [
-    [ "AddressAccessorEditWidget", "class_device_1_1_address_accessor_edit_widget.html", null ],
     [ "AddressDialog", "class_device_1_1_address_dialog.html", null ],
     [ "AddressSettings", "struct_device_1_1_address_settings.html", null ],
     [ "AddressSettingsCommon", "struct_device_1_1_address_settings_common.html", null ],

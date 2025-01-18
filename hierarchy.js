@@ -1046,8 +1046,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< model >", "classid__base__t.html", null ],
+    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1095,8 +1095,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -2742,14 +2742,17 @@ var hierarchy =
       [ "score::ReactiveLabel< Property_T >", "classscore_1_1_reactive_label.html", null ]
     ] ],
     [ "QLineEdit", null, [
-      [ "State::AddressLineEditBase< AddressAccessorValidator, Parent_T >", "class_state_1_1_address_line_edit_base.html", [
-        [ "State::AddressAccessorLineEdit< Parent_T >", "class_state_1_1_address_accessor_line_edit.html", null ]
+      [ "Process::AddressLineEditBase< State::AddressAccessorValidator, Parent_T >", "class_process_1_1_address_line_edit_base.html", [
+        [ "Process::AddressAccessorLineEdit< Parent_T >", "class_process_1_1_address_accessor_line_edit.html", null ]
       ] ],
-      [ "State::AddressLineEditBase< AddressValidator, Parent_T >", "class_state_1_1_address_line_edit_base.html", [
-        [ "State::AddressLineEdit< Parent_T >", "class_state_1_1_address_line_edit.html", null ]
+      [ "Process::AddressLineEditBase< State::AddressValidator, Parent_T >", "class_process_1_1_address_line_edit_base.html", [
+        [ "Process::AddressLineEdit< Parent_T >", "class_process_1_1_address_line_edit.html", null ]
+      ] ],
+      [ "Process::AddressLineEditBase< State::AddressAccessorValidator, Process::AddressAccessorEditWidget >", "class_process_1_1_address_line_edit_base.html", null ],
+      [ "Process::AddressLineEditBase< Validator_T, Parent_T >", "class_process_1_1_address_line_edit_base.html", [
+        [ "Process::AddressAccessorLineEdit< Process::AddressAccessorEditWidget >", "class_process_1_1_address_accessor_line_edit.html", null ]
       ] ],
       [ "State::AddressFragmentLineEdit", "class_state_1_1_address_fragment_line_edit.html", null ],
-      [ "State::AddressLineEditBase< Validator_T, Parent_T >", "class_state_1_1_address_line_edit_base.html", null ],
       [ "score::SearchLineEdit", "classscore_1_1_search_line_edit.html", [
         [ "Explorer::ExplorerSearchLineEdit", "class_explorer_1_1_explorer_search_line_edit.html", null ],
         [ "Library::ItemModelFilterLineEdit", "struct_library_1_1_item_model_filter_line_edit.html", null ],
@@ -3465,7 +3468,6 @@ var hierarchy =
       [ "State::NumericDomainWidget< float >", "class_state_1_1_numeric_domain_widget.html", null ],
       [ "WidgetWrapper< Explorer::AddressSettingsWidget >", "class_widget_wrapper.html", null ],
       [ "Dataflow::PortTooltip", "class_dataflow_1_1_port_tooltip.html", null ],
-      [ "Device::AddressAccessorEditWidget", "class_device_1_1_address_accessor_edit_widget.html", null ],
       [ "Device::ProtocolSettingsWidget", "class_device_1_1_protocol_settings_widget.html", [
         [ "Dataflow::AudioSettingsWidget", "class_dataflow_1_1_audio_settings_widget.html", null ],
         [ "Gfx::CameraSettingsWidget", "class_gfx_1_1_camera_settings_widget.html", null ],
@@ -3546,6 +3548,7 @@ var hierarchy =
       [ "Mixer::AudioBusWidget", "class_mixer_1_1_audio_bus_widget.html", null ],
       [ "Mixer::AudioDeviceSlider", "class_mixer_1_1_audio_device_slider.html", null ],
       [ "Pd::UiWrapper", "struct_pd_1_1_ui_wrapper.html", null ],
+      [ "Process::AddressAccessorEditWidget", "class_process_1_1_address_accessor_edit_widget.html", null ],
       [ "Process::InspectorWidgetDelegate_T< Process_T >", "class_process_1_1_inspector_widget_delegate___t.html", null ],
       [ "Process::PortListWidget", "class_process_1_1_port_list_widget.html", null ],
       [ "Protocols::BasicTCPWidget", "class_protocols_1_1_basic_t_c_p_widget.html", null ],
