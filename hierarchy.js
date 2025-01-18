@@ -560,10 +560,6 @@ var hierarchy =
     [ "Execution::DocumentPlugin::ContextData", "struct_execution_1_1_document_plugin_1_1_context_data.html", null ],
     [ "Scenario::ContextMenuCallback", "struct_scenario_1_1_context_menu_callback.html", null ],
     [ "Pd::PatchSpec::Control", "struct_pd_1_1_patch_spec_1_1_control.html", null ],
-    [ "ossia::safe_nodes::control_in", null, [
-      [ "vst3::VSTFloatSlider", "structvst3_1_1_v_s_t_float_slider.html", null ],
-      [ "vst::VSTFloatSlider", "structvst_1_1_v_s_t_float_slider.html", null ]
-    ] ],
     [ "ossia::control_surface_node::control_updater", "structossia_1_1control__surface__node_1_1control__updater.html", null ],
     [ "Dataflow::control_visitor", "struct_dataflow_1_1control__visitor.html", null ],
     [ "Process::ControlLayout", "struct_process_1_1_control_layout.html", null ],
@@ -4216,6 +4212,8 @@ var hierarchy =
     [ "VisitorVariant", "struct_visitor_variant.html", null ],
     [ "vst3::vst_node_base::vst_control", "structvst3_1_1vst__node__base_1_1vst__control.html", null ],
     [ "vst::vst_node_base::vst_control", "structvst_1_1vst__node__base_1_1vst__control.html", null ],
+    [ "vst3::VSTFloatSlider", "structvst3_1_1_v_s_t_float_slider.html", null ],
+    [ "vst::VSTFloatSlider", "structvst_1_1_v_s_t_float_slider.html", null ],
     [ "vst::VSTInfo", "structvst_1_1_v_s_t_info.html", null ],
     [ "JS::InValueMessage ::W_MetaObjectCreatorHelper", "struct_j_s_1_1_in_value_message_01_1_1_w___meta_object_creator_helper.html", null ],
     [ "JS::MidiMessage ::W_MetaObjectCreatorHelper", "struct_j_s_1_1_midi_message_01_1_1_w___meta_object_creator_helper.html", null ],
