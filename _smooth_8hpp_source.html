@@ -145,32 +145,36 @@ $(document).ready(function(){initNavTree('_smooth_8hpp_source.html',''); initRes
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    {</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      <span class="comment">// Messages to this port trigger a new computation cycle with updated timestamps</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>      halp_flag(active_port);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    } port;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    halp::enum_t&lt;dno::type, <span class="stringliteral">&quot;Type&quot;</span>&gt; type;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    halp::knob_f32&lt;<span class="stringliteral">&quot;Amount&quot;</span>, halp::range{0., 1., 0.1}&gt; amount;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    halp::log_hslider_f32&lt;<span class="stringliteral">&quot;Freq (1e/LP)&quot;</span>, halp::range{0.001, 300., 120.}&gt; freq;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    halp::log_hslider_f32&lt;<span class="stringliteral">&quot;Cutoff (1e/LP)&quot;</span>, halp::range{0.001, 10., 1.}&gt; cutoff;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    halp::hslider_f32&lt;<span class="stringliteral">&quot;Beta (1e only)&quot;</span>, halp::range{0.001, 10., 1.}&gt; beta;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  } inputs;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keyword">struct</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  {</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    value_out port{};</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  } outputs;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keywordtype">void</span> operator()()</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  {</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">auto</span>&amp; v = this-&gt;inputs.port.value;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">auto</span> filtered = this-&gt;filter(</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        v, inputs.type, inputs.amount, inputs.freq, inputs.cutoff, inputs.beta);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    outputs.port(std::move(filtered)); <span class="comment">// TODO fix accuracy of timestamp</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>      <span class="keywordtype">void</span> update(<a class="code hl_struct" href="struct_nodes_1_1_smooth_1_1v1_1_1_node.html">Node</a>&amp; self) { self.trigger = <span class="keyword">true</span>; }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    } port;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    halp::enum_t&lt;dno::type, <span class="stringliteral">&quot;Type&quot;</span>&gt; type;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    halp::knob_f32&lt;<span class="stringliteral">&quot;Amount&quot;</span>, halp::range{0., 1., 0.1}&gt; amount;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    halp::log_hslider_f32&lt;<span class="stringliteral">&quot;Freq (1e/LP)&quot;</span>, halp::range{0.001, 300., 120.}&gt; freq;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    halp::log_hslider_f32&lt;<span class="stringliteral">&quot;Cutoff (1e/LP)&quot;</span>, halp::range{0.001, 10., 1.}&gt; cutoff;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    halp::hslider_f32&lt;<span class="stringliteral">&quot;Beta (1e only)&quot;</span>, halp::range{0.001, 10., 1.}&gt; beta;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  } inputs;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keyword">struct</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    value_out port{};</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  } outputs;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keywordtype">bool</span> trigger{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordtype">void</span> operator()()</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">if</span>(!std::exchange(trigger, <span class="keyword">false</span>))</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">auto</span>&amp; v = this-&gt;inputs.port.value;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    this-&gt;last = v;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  }</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>};</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">auto</span> filtered = this-&gt;filter(</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        v, inputs.type, inputs.amount, inputs.freq, inputs.cutoff, inputs.beta);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    outputs.port(std::move(filtered)); <span class="comment">// TODO fix accuracy of timestamp</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    this-&gt;last = v;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>};</div>
 </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
 <div class="ttc" id="aclass_nodes_1_1_noise_state_html"><div class="ttname"><a href="class_nodes_1_1_noise_state.html">Nodes::NoiseState</a></div><div class="ttdef"><b>Definition</b> NoiseFilter.hpp:128</div></div>
 <div class="ttc" id="astruct_nodes_1_1_smooth_1_1v1_1_1_node_html"><div class="ttname"><a href="struct_nodes_1_1_smooth_1_1v1_1_1_node.html">Nodes::Smooth::v1::Node</a></div><div class="ttdef"><b>Definition</b> Smooth.hpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
