@@ -145,36 +145,37 @@ $(document).ready(function(){initNavTree('_common_u_b_os_8hpp_source.html',''); 
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordtype">float</span> projection[16]{};</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keywordtype">float</span> modelNormal[9]{};</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordtype">float</span> padding[3]; <span class="comment">// Needed as a mat3 needs a bit more space...</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>};</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">float</span> fov = 90.;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>};</div>
 </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">static_assert</span>(</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keyword">sizeof</span>(<a class="code hl_struct" href="structscore_1_1gfx_1_1_model_camera_u_b_o.html">ModelCameraUBO</a>) == <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>) * (16 + 16 + 16 + 16 + 16 + 9 + 3));</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="foldopen" id="foldopen00047" data-start="{" data-end="};">
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_output_u_b_o.html">   47</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structscore_1_1gfx_1_1_output_u_b_o.html">OutputUBO</a></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordtype">float</span> clipSpaceCorrMatrix[16]{};</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordtype">float</span> renderSize[2]{};</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>};</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">static_assert</span>(</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">sizeof</span>(<a class="code hl_struct" href="structscore_1_1gfx_1_1_model_camera_u_b_o.html">ModelCameraUBO</a>) == <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>) * (16 + 16 + 16 + 16 + 16 + 9 + 3 + 1));</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="};">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_output_u_b_o.html">   48</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structscore_1_1gfx_1_1_output_u_b_o.html">OutputUBO</a></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keywordtype">float</span> clipSpaceCorrMatrix[16]{};</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keywordtype">float</span> renderSize[2]{};</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
 </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="foldopen" id="foldopen00057" data-start="{" data-end="};">
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_video_material_u_b_o.html">   57</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structscore_1_1gfx_1_1_video_material_u_b_o.html">VideoMaterialUBO</a></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>{</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keywordtype">float</span> scale[2]{1.f, 1.f};</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keywordtype">float</span> textureSize[2]{1.f, 1.f};</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>};</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="foldopen" id="foldopen00058" data-start="{" data-end="};">
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_video_material_u_b_o.html">   58</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structscore_1_1gfx_1_1_video_material_u_b_o.html">VideoMaterialUBO</a></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>{</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keywordtype">float</span> scale[2]{1.f, 1.f};</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keywordtype">float</span> textureSize[2]{1.f, 1.f};</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>};</div>
 </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#pragma pack(pop)</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#pragma pack(pop)</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:12</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_model_camera_u_b_o_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_model_camera_u_b_o.html">score::gfx::ModelCameraUBO</a></div><div class="ttdoc">UBO shared across all entities shown with the same camera.</div><div class="ttdef"><b>Definition</b> CommonUBOs.hpp:31</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_output_u_b_o_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_output_u_b_o.html">score::gfx::OutputUBO</a></div><div class="ttdoc">UBO shared across all entities shown on the same output.</div><div class="ttdef"><b>Definition</b> CommonUBOs.hpp:48</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_output_u_b_o_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_output_u_b_o.html">score::gfx::OutputUBO</a></div><div class="ttdoc">UBO shared across all entities shown on the same output.</div><div class="ttdef"><b>Definition</b> CommonUBOs.hpp:49</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_process_u_b_o_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_process_u_b_o.html">score::gfx::ProcessUBO</a></div><div class="ttdoc">UBO specific to individual processes / nodes.</div><div class="ttdef"><b>Definition</b> CommonUBOs.hpp:12</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_video_material_u_b_o_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_video_material_u_b_o.html">score::gfx::VideoMaterialUBO</a></div><div class="ttdoc">UBO shared across all video objects.</div><div class="ttdef"><b>Definition</b> CommonUBOs.hpp:58</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_video_material_u_b_o_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_video_material_u_b_o.html">score::gfx::VideoMaterialUBO</a></div><div class="ttdoc">UBO shared across all video objects.</div><div class="ttdef"><b>Definition</b> CommonUBOs.hpp:59</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
