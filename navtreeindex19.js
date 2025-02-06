@@ -1,5 +1,10 @@
 var NAVTREEINDEX19 =
 {
+"plugins_2score-plugin-gfx_2_gfx_2_filter_2_metadata_8hpp_source.html":[13,0,0,2,16,1,0,3],
+"plugins_2score-plugin-gfx_2_gfx_2_geometry_filter_2_metadata_8hpp_source.html":[13,0,0,2,16,1,1,3],
+"plugins_2score-plugin-gfx_2_gfx_2_graph_2_window_8hpp_source.html":[13,0,0,2,16,1,2,27],
+"plugins_2score-plugin-gfx_2_gfx_2_images_2_metadata_8hpp_source.html":[13,0,0,2,16,1,3,2],
+"plugins_2score-plugin-gfx_2_gfx_2_settings_2_presenter_8hpp_source.html":[13,0,0,2,16,1,5,2],
 "plugins_2score-plugin-gfx_2_gfx_2_text_2_metadata_8hpp_source.html":[13,0,0,2,16,1,10,2],
 "plugins_2score-plugin-gfx_2_gfx_2_video_2_metadata_8hpp_source.html":[13,0,0,2,16,1,11,3],
 "plugins_2score-plugin-gfx_2_gfx_2_video_2_presenter_8hpp_source.html":[13,0,0,2,16,1,11,4],
@@ -244,10 +249,5 @@ var NAVTREEINDEX19 =
 "struct_audio_1_1_port_audio_scope.html":[12,0,1,9],
 "struct_automation_1_1_recreate_on_play_1_1modvalue.html":[12,0,2,0,1],
 "struct_automation_1_1_recreate_on_play_1_1range__position.html":[12,0,2,0,2],
-"struct_avnd_jit_1_1inlet__vis.html":[12,0,4,2],
-"struct_avnd_jit_1_1outlet__vis.html":[12,0,4,3],
-"struct_control_surface_1_1_node_observer.html":[12,0,7,5],
-"struct_control_surface_1_1_node_observer_1_1_available_node.html":[12,0,7,5,0],
-"struct_control_surface_1_1_presenter_1_1_port.html":[12,0,7,6,0],
-"struct_control_surface_1_1con__unvalidated.html":[12,0,7,2]
+"struct_avnd_jit_1_1inlet__vis.html":[12,0,4,2]
 };

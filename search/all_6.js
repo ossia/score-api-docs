@@ -72,7 +72,7 @@ var searchData=
   ['geometry_69',['geometry',['../structscore_1_1gfx_1_1geometry.html',1,'score::gfx::geometry'],['../classscore_1_1gfx_1_1_process_node.html#a26d12e4b365e94e027f67c751b1bbf76',1,'score::gfx::ProcessNode::geometry']]],
   ['geometry_5ffilter_5fnode_70',['geometry_filter_node',['../class_gfx_1_1_geometry_filter_1_1geometry__filter__node.html',1,'Gfx::GeometryFilter']]],
   ['geometry_5finput_5fport_5fvis_71',['geometry_input_port_vis',['../structscore_1_1gfx_1_1geometry__input__port__vis.html',1,'score::gfx']]],
-  ['geometrychange_72',['geometryChange',['../classscore_1_1gfx_1_1_process_node.html#a8611138aeb721fb4db2b44d5c38ae29a',1,'score::gfx::ProcessNode']]],
+  ['geometrychange_72',['geometryChange',['../classscore_1_1gfx_1_1_node.html#a3eeabac2fbad142781f66833b563c8f0',1,'score::gfx::Node']]],
   ['geometryfilternode_73',['GeometryFilterNode',['../classscore_1_1gfx_1_1_geometry_filter_node.html',1,'score::gfx']]],
   ['geometryfilternoderenderer_74',['GeometryFilterNodeRenderer',['../structscore_1_1gfx_1_1_geometry_filter_node_renderer.html',1,'score::gfx']]],
   ['geometryinlet_75',['GeometryInlet',['../class_gfx_1_1_geometry_inlet.html',1,'Gfx']]],

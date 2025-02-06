@@ -1015,6 +1015,7 @@ var hierarchy =
       [ "GenericMacroCommandDispatcher< score::AggregateCommand >", "class_generic_macro_command_dispatcher.html", null ],
       [ "SingleOngoingCommandDispatcher< Curve::UpdateCurve >", "class_single_ongoing_command_dispatcher.html", null ],
       [ "SingleOngoingCommandDispatcher< Curve::SetSegmentParameters >", "class_single_ongoing_command_dispatcher.html", null ],
+      [ "SingleOngoingCommandDispatcher< ChangeTextureInletRenderSize >", "class_single_ongoing_command_dispatcher.html", null ],
       [ "SingleOngoingCommandDispatcher< Media::ChangeSteps >", "class_single_ongoing_command_dispatcher.html", null ],
       [ "SingleOngoingCommandDispatcher< Midi::MoveNotes >", "class_single_ongoing_command_dispatcher.html", null ],
       [ "SingleOngoingCommandDispatcher< Midi::ChangeNotesVelocity >", "class_single_ongoing_command_dispatcher.html", null ],
@@ -1095,8 +1096,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -3525,6 +3526,7 @@ var hierarchy =
       [ "Explorer::DeviceExplorerWidget", "class_explorer_1_1_device_explorer_widget.html", null ],
       [ "Gfx::GraphPreviewWidget", "class_gfx_1_1_graph_preview_widget.html", null ],
       [ "Gfx::ShaderPreviewWidget", "class_gfx_1_1_shader_preview_widget.html", null ],
+      [ "Gfx::TextureSizeWidget", "struct_gfx_1_1_texture_size_widget.html", null ],
       [ "Inspector::InspectorSectionWidget", "class_inspector_1_1_inspector_section_widget.html", null ],
       [ "Inspector::InspectorWidgetBase", "class_inspector_1_1_inspector_widget_base.html", [
         [ "Automation::StateInspectorWidget", "class_automation_1_1_state_inspector_widget.html", null ],
@@ -3653,6 +3655,7 @@ var hierarchy =
     [ "RemoteControl::WS::RemoteMessages", "struct_remote_control_1_1_w_s_1_1_remote_messages.html", null ],
     [ "score::gfx::RenderList", "classscore_1_1gfx_1_1_render_list.html", null ],
     [ "score::gfx::RenderState", "structscore_1_1gfx_1_1_render_state.html", null ],
+    [ "score::gfx::RenderTargetSpecs", "structscore_1_1gfx_1_1_render_target_specs.html", null ],
     [ "Scenario::RequestOverlayMenuCallback", "struct_scenario_1_1_request_overlay_menu_callback.html", null ],
     [ "Video::Rescale", "class_video_1_1_rescale.html", null ],
     [ "avnd_tools::AudioRecorder::reset_message", "structavnd__tools_1_1_audio_recorder_1_1reset__message.html", null ],

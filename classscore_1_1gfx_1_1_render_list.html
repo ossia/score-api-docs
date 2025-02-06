@@ -151,13 +151,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>render</b> (QRhiComma
 void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> ()</td></tr>
 <tr class="memdesc:a37cde7b19c5eee5009f717644af96ffd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release GPU resources owned by this render list. <br /></td></tr>
 <tr class="separator:a37cde7b19c5eee5009f717644af96ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d76d42b10aec8188188cc6bad2d04e7" id="r_a3d76d42b10aec8188188cc6bad2d04e7"><td class="memItemLeft" align="right" valign="top"><a id="a3d76d42b10aec8188188cc6bad2d04e7" name="a3d76d42b10aec8188188cc6bad2d04e7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>maybeRebuild</b> ()</td></tr>
-<tr class="memdesc:a3d76d42b10aec8188188cc6bad2d04e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the render size has changed in order to rebuild the pipelines. <br /></td></tr>
-<tr class="separator:a3d76d42b10aec8188188cc6bad2d04e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca38b48fa763dfd0aaf75f28f7a3ad60" id="r_aca38b48fa763dfd0aaf75f28f7a3ad60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#aca38b48fa763dfd0aaf75f28f7a3ad60">renderTargetForOutput</a> (const <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge) noexcept</td></tr>
-<tr class="memdesc:aca38b48fa763dfd0aaf75f28f7a3ad60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the texture corresponding to an output port.  <br /></td></tr>
-<tr class="separator:aca38b48fa763dfd0aaf75f28f7a3ad60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe481e0bfc451d77de8d2fa8ed5d270f" id="r_afe481e0bfc451d77de8d2fa8ed5d270f"><td class="memItemLeft" align="right" valign="top"><a id="afe481e0bfc451d77de8d2fa8ed5d270f" name="afe481e0bfc451d77de8d2fa8ed5d270f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>maybeRebuild</b> (bool force=false)</td></tr>
+<tr class="memdesc:afe481e0bfc451d77de8d2fa8ed5d270f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the render size has changed in order to rebuild the pipelines. <br /></td></tr>
+<tr class="separator:afe481e0bfc451d77de8d2fa8ed5d270f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98d894ff589d1fa80d36a99e59801e8f" id="r_a98d894ff589d1fa80d36a99e59801e8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a98d894ff589d1fa80d36a99e59801e8f">renderTargetForOutput</a> (const <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge) const noexcept</td></tr>
+<tr class="memdesc:a98d894ff589d1fa80d36a99e59801e8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the texture corresponding to an output port.  <br /></td></tr>
+<tr class="separator:a98d894ff589d1fa80d36a99e59801e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c05c20017599d13e6c64415ab6f5cb4" id="r_a4c05c20017599d13e6c64415ab6f5cb4"><td class="memItemLeft" align="right" valign="top">QImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a4c05c20017599d13e6c64415ab6f5cb4">adaptImage</a> (const QImage &amp;in)</td></tr>
 <tr class="memdesc:a4c05c20017599d13e6c64415ab6f5cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adapts an image to the GPU limits / format.  <br /></td></tr>
 <tr class="separator:a4c05c20017599d13e6c64415ab6f5cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,6 +189,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>samples</b> () const n
 <tr class="memitem:adc5ffce8aad2db1cd91bc75ada7c759c" id="r_adc5ffce8aad2db1cd91bc75ada7c759c"><td class="memItemLeft" align="right" valign="top"><a id="adc5ffce8aad2db1cd91bc75ada7c759c" name="adc5ffce8aad2db1cd91bc75ada7c759c"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>canRender</b> () const noexcept</td></tr>
 <tr class="separator:adc5ffce8aad2db1cd91bc75ada7c759c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab68845f6d4ca5b83aa92fce4846ffb05" id="r_ab68845f6d4ca5b83aa92fce4846ffb05"><td class="memItemLeft" align="right" valign="top"><a id="ab68845f6d4ca5b83aa92fce4846ffb05" name="ab68845f6d4ca5b83aa92fce4846ffb05"></a>
+QSize&#160;</td><td class="memItemRight" valign="bottom"><b>renderSize</b> (const <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> *e) const noexcept</td></tr>
+<tr class="separator:ab68845f6d4ca5b83aa92fce4846ffb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -321,8 +324,8 @@ std::vector&lt; <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">sc
 
 </div>
 </div>
-<a id="aca38b48fa763dfd0aaf75f28f7a3ad60" name="aca38b48fa763dfd0aaf75f28f7a3ad60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca38b48fa763dfd0aaf75f28f7a3ad60">&#9670;&#160;</a></span>renderTargetForOutput()</h2>
+<a id="a98d894ff589d1fa80d36a99e59801e8f" name="a98d894ff589d1fa80d36a99e59801e8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98d894ff589d1fa80d36a99e59801e8f">&#9670;&#160;</a></span>renderTargetForOutput()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -335,7 +338,7 @@ std::vector&lt; <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">sc
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;&#160;</td>
           <td class="paramname"><em>edge</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>

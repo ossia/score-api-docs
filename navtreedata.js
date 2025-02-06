@@ -127,17 +127,17 @@ var NAVTREEINDEX =
 "classossia_1_1control__surface__node.html",
 "classscore_1_1_int_slider.html",
 "classscore_1_1_validity_checker_list.html",
-"dir_1188f01a60bb6e1e760e31802786c973.html",
-"dir_cea2243ea391cf240532f6b99b78bf67.html",
-"plugins_2score-plugin-gfx_2_gfx_2_text_2_metadata_8hpp_source.html",
-"struct_curve_1_1_curve_domain.html",
-"struct_j_s_1_1_execution_state_value_type.html",
-"struct_process_1_1_layer_context.html",
-"struct_state_1_1_address_accessor.html",
-"structbase__kind.html",
-"structscore_1_1_event_visitor.html",
-"structscore_1_1gfx_1_1_message.html",
-"structvst_1_1_v_s_t_info.html"
+"dir_0f9169239e431be643636df276df9026.html",
+"dir_cc0c99238230346a0bd50ea0615d7be4.html",
+"plugins_2score-plugin-gfx_2_gfx_2_filter_2_metadata_8hpp_source.html",
+"struct_avnd_jit_1_1outlet__vis.html",
+"struct_invisible_root_node.html",
+"struct_process_1_1_descriptor.html",
+"struct_state_1_1_address.html#a3f9ed4064e6bfdbda9cd23f0da49a544",
+"structavnd__tools_1_1_pattern_selector.html",
+"structscore_1_1_double_spinbox_with_enter.html",
+"structscore_1_1gfx_1_1_images_node_1_1_u_b_o.html",
+"structvst3_1_1_v_s_t_float_slider.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

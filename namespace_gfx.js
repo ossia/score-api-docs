@@ -80,6 +80,7 @@ var namespace_gfx =
     [ "SyphonDevice", "class_gfx_1_1_syphon_device.html", null ],
     [ "SyphonProtocolFactory", "class_gfx_1_1_syphon_protocol_factory.html", null ],
     [ "SyphonSettingsWidget", "class_gfx_1_1_syphon_settings_widget.html", null ],
+    [ "TextureSizeWidget", "struct_gfx_1_1_texture_size_widget.html", null ],
     [ "V4L2CameraDeviceEnumerator", "struct_gfx_1_1_v4_l2_camera_device_enumerator.html", null ],
     [ "V4L2CameraEnumerator", "struct_gfx_1_1_v4_l2_camera_enumerator.html", null ],
     [ "VCodecInfo", "struct_gfx_1_1_v_codec_info.html", null ],

@@ -176,6 +176,27 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>renderedNodes
 <tr class="memitem:a3545eced8ad0116ffaa0f3a1032ad955 inherit pub_methods_classscore_1_1gfx_1_1_node" id="r_a3545eced8ad0116ffaa0f3a1032ad955"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
 <tr class="separator:a3545eced8ad0116ffaa0f3a1032ad955 inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8508b6bdb512aa868529f61d8c28a21b inherit pub_methods_classscore_1_1gfx_1_1_node" id="r_a8508b6bdb512aa868529f61d8c28a21b"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>materialChange</b> () noexcept</td></tr>
+<tr class="memdesc:a8508b6bdb512aa868529f61d8c28a21b inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to notify a material change from the model to the renderers. <br /></td></tr>
+<tr class="separator:a8508b6bdb512aa868529f61d8c28a21b inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1662f704e04b9de6f690bb089bff1a08 inherit pub_methods_classscore_1_1gfx_1_1_node" id="r_a1662f704e04b9de6f690bb089bff1a08"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasMaterialChanged</b> (int64_t &amp;renderer) const noexcept</td></tr>
+<tr class="separator:a1662f704e04b9de6f690bb089bff1a08 inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eeabac2fbad142781f66833b563c8f0 inherit pub_methods_classscore_1_1gfx_1_1_node" id="r_a3eeabac2fbad142781f66833b563c8f0"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>geometryChange</b> () noexcept</td></tr>
+<tr class="memdesc:a3eeabac2fbad142781f66833b563c8f0 inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to notify a geometry change from the model to the renderers. <br /></td></tr>
+<tr class="separator:a3eeabac2fbad142781f66833b563c8f0 inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf46c8358212a9800e9c2d35001e15da inherit pub_methods_classscore_1_1gfx_1_1_node" id="r_abf46c8358212a9800e9c2d35001e15da"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasGeometryChanged</b> (int64_t &amp;renderer) const noexcept</td></tr>
+<tr class="separator:abf46c8358212a9800e9c2d35001e15da inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5de8199d87e59e3e7cd0a8039c697f14 inherit pub_methods_classscore_1_1gfx_1_1_node" id="r_a5de8199d87e59e3e7cd0a8039c697f14"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetChange</b> () noexcept</td></tr>
+<tr class="memdesc:a5de8199d87e59e3e7cd0a8039c697f14 inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to notify a render target (texture inlet) change from the model to the renderers. <br /></td></tr>
+<tr class="separator:a5de8199d87e59e3e7cd0a8039c697f14 inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb786dd39ba199b5f3e9c9bc66d9893a inherit pub_methods_classscore_1_1gfx_1_1_node" id="r_acb786dd39ba199b5f3e9c9bc66d9893a"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasRenderTargetChanged</b> (int64_t &amp;renderer) const noexcept</td></tr>
+<tr class="separator:acb786dd39ba199b5f3e9c9bc66d9893a inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -191,6 +212,15 @@ std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *
 ossia::flat_map&lt; <a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> *, <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>renderedNodes</b></td></tr>
 <tr class="memdesc:abbac77035201ad0586b55fb7f9075ea8 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map associating each <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a> to a Renderer for this model. <br /></td></tr>
 <tr class="separator:abbac77035201ad0586b55fb7f9075ea8 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cfc51174b1526cf41bacf23b72bfa0f inherit pub_attribs_classscore_1_1gfx_1_1_node" id="r_a4cfc51174b1526cf41bacf23b72bfa0f"><td class="memItemLeft" align="right" valign="top">
+std::atomic_int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>materialChanged</b> {0}</td></tr>
+<tr class="separator:a4cfc51174b1526cf41bacf23b72bfa0f inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c65b1c66879e165c599c25692470874 inherit pub_attribs_classscore_1_1gfx_1_1_node" id="r_a3c65b1c66879e165c599c25692470874"><td class="memItemLeft" align="right" valign="top">
+std::atomic_int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>geometryChanged</b> {-1}</td></tr>
+<tr class="separator:a3c65b1c66879e165c599c25692470874 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a042a310b8086048cc4f47fd6b9dd23d6 inherit pub_attribs_classscore_1_1gfx_1_1_node" id="r_a042a310b8086048cc4f47fd6b9dd23d6"><td class="memItemLeft" align="right" valign="top">
+std::atomic_int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetSpecChanged</b> {-1}</td></tr>
+<tr class="separator:a042a310b8086048cc4f47fd6b9dd23d6 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a623cf7a9344f9b790efebfab304eb663 inherit pub_attribs_classscore_1_1gfx_1_1_node" id="r_a623cf7a9344f9b790efebfab304eb663"><td class="memItemLeft" align="right" valign="top">
 int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>id</b> = -1</td></tr>
 <tr class="separator:a623cf7a9344f9b790efebfab304eb663 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>

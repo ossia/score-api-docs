@@ -1007,7 +1007,7 @@ $(document).ready(function(){initNavTree('_gpu_utils_8hpp_source.html',''); init
 <div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span>  <span class="keywordtype">void</span> operator()(Field&amp; t, avnd::field_index&lt;NField&gt; field_index)</div>
 <div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span>  {</div>
 <div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span>    <span class="comment">// FIXME we should be loading a file there</span></div>
-<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>    <span class="keyword">using </span>node_type = std::remove_cvref_t&lt;<span class="keyword">decltype</span>(gpu.parent)&gt;;</div>
+<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>    <span class="keyword">using </span>node_type = std::remove_cvref_t&lt;<span class="keyword">decltype</span>(gpu.node())&gt;;</div>
 <div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span>    <span class="keyword">using </span>file_ports = avnd::raw_file_input_introspection&lt;Node&gt;;</div>
 <div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span> </div>
 <div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span>    <span class="keywordflow">if</span>(!can_process_message(field_index))</div>
@@ -1029,7 +1029,7 @@ $(document).ready(function(){initNavTree('_gpu_utils_8hpp_source.html',''); init
 <div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>        <span class="comment">// FIXME also do it when we get a run-time message from the exec engine,</span></div>
 <div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>        <span class="comment">// OSC, etc</span></div>
 <div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>        <span class="keyword">auto</span> func = executePortPreprocess&lt;Field&gt;(*hdl);</div>
-<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>        <span class="keyword">const_cast&lt;</span>node_type&amp;<span class="keyword">&gt;</span>(gpu.parent)</div>
+<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>        <span class="keyword">const_cast&lt;</span>node_type&amp;<span class="keyword">&gt;</span>(gpu.node())</div>
 <div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>            .file_loaded(</div>
 <div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>                state, hdl, avnd::predicate_index&lt;N&gt;{}, avnd::field_index&lt;NField&gt;{});</div>
 <div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>        <span class="keywordflow">if</span>(func)</div>
@@ -1037,7 +1037,7 @@ $(document).ready(function(){initNavTree('_gpu_utils_8hpp_source.html',''); init
 <div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>      }</div>
 <div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>      <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>      {</div>
-<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>        <span class="keyword">const_cast&lt;</span>node_type&amp;<span class="keyword">&gt;</span>(gpu.parent)</div>
+<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>        <span class="keyword">const_cast&lt;</span>node_type&amp;<span class="keyword">&gt;</span>(gpu.node())</div>
 <div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>            .file_loaded(</div>
 <div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>                state, hdl, avnd::predicate_index&lt;N&gt;{}, avnd::field_index&lt;NField&gt;{});</div>
 <div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>      }</div>
@@ -1331,9 +1331,9 @@ $(document).ready(function(){initNavTree('_gpu_utils_8hpp_source.html',''); init
 <div class="line"><a id="l01219" name="l01219"></a><span class="lineno"> 1219</span>}</div>
 <div class="line"><a id="l01220" name="l01220"></a><span class="lineno"> 1220</span> </div>
 <div class="line"><a id="l01221" name="l01221"></a><span class="lineno"> 1221</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a></div><div class="ttdoc">Root data model for visual nodes.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:60</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_node_model_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_model.html">score::gfx::NodeModel</a></div><div class="ttdoc">Common base class for most single-pass, simple nodes.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:181</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a></div><div class="ttdoc">Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)</div><div class="ttdef"><b>Definition</b> OutputNode.hpp:23</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a></div><div class="ttdoc">Root data model for visual nodes.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:75</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_node_model_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_model.html">score::gfx::NodeModel</a></div><div class="ttdoc">Common base class for most single-pass, simple nodes.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:227</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a></div><div class="ttdoc">Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)</div><div class="ttdef"><b>Definition</b> OutputNode.hpp:24</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:19</div></div>
 <div class="ttc" id="anamespace_device_html_a5f5b5ed941f74703051e858d8733d0fc"><div class="ttname"><a href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a></div><div class="ttdeci">TreeNode&lt; DeviceExplorerNode &gt; Node</div><div class="ttdef"><b>Definition</b> DeviceNode.hpp:74</div></div>
 <div class="ttc" id="anamespaceoscr_html"><div class="ttname"><a href="namespaceoscr.html">oscr</a></div><div class="ttdef"><b>Definition</b> Factories.hpp:19</div></div>
@@ -1341,7 +1341,7 @@ $(document).ready(function(){initNavTree('_gpu_utils_8hpp_source.html',''); init
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition</b> Application.cpp:90</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace.</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition</b> DocumentContext.hpp:18</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_message_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_message.html">score::gfx::Message</a></div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:51</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_message_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_message.html">score::gfx::Message</a></div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:50</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_port_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a></div><div class="ttdoc">Port of a score::gfx::Node.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:48</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

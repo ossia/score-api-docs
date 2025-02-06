@@ -284,6 +284,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global state associated to a rendering context.  <a href="structscore_1_1gfx_1_1_render_state.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_render_target_specs.html">RenderTargetSpecs</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_r_g_b24_decoder.html">RGB24Decoder</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_sampler.html">Sampler</a></td></tr>
@@ -373,9 +375,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>VertexMap</b> = ossi
 <tr class="memitem:ab4681733b16f8c97b749fd7f459a4e73" id="r_ab4681733b16f8c97b749fd7f459a4e73"><td class="memItemLeft" align="right" valign="top"><a id="ab4681733b16f8c97b749fd7f459a4e73" name="ab4681733b16f8c97b749fd7f459a4e73"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionMessage</b> = std::function&lt; void(<a class="el" href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a> &amp;)&gt;</td></tr>
 <tr class="separator:ab4681733b16f8c97b749fd7f459a4e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb361c97f88dc72c43b4f9e650c97c99" id="r_abb361c97f88dc72c43b4f9e650c97c99"><td class="memItemLeft" align="right" valign="top"><a id="abb361c97f88dc72c43b4f9e650c97c99" name="abb361c97f88dc72c43b4f9e650c97c99"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>gfx_input</b> = ossia::slow_variant&lt; ossia::monostate, ossia::value, ossia::audio_vector, ossia::geometry_spec, ossia::transform3d, FunctionMessage &gt;</td></tr>
-<tr class="separator:abb361c97f88dc72c43b4f9e650c97c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8727894f5a4f9a0e503cb1eca8d169c4" id="r_a8727894f5a4f9a0e503cb1eca8d169c4"><td class="memItemLeft" align="right" valign="top"><a id="a8727894f5a4f9a0e503cb1eca8d169c4" name="a8727894f5a4f9a0e503cb1eca8d169c4"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>gfx_input</b> = ossia::slow_variant&lt; ossia::monostate, ossia::value, ossia::audio_vector, ossia::render_target_spec, ossia::geometry_spec, ossia::transform3d, FunctionMessage &gt;</td></tr>
+<tr class="separator:a8727894f5a4f9a0e503cb1eca8d169c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7d09e369dac94fa9ff1bba162bba575" id="r_aa7d09e369dac94fa9ff1bba162bba575"><td class="memItemLeft" align="right" valign="top"><a id="aa7d09e369dac94fa9ff1bba162bba575" name="aa7d09e369dac94fa9ff1bba162bba575"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>PassMap</b> = ossia::small_vector&lt; std::pair&lt; <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> *, <a class="el" href="structscore_1_1gfx_1_1_pipeline.html">Pipeline</a> &gt;, 2 &gt;</td></tr>
 <tr class="separator:aa7d09e369dac94fa9ff1bba162bba575"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -474,6 +476,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>replaceTexture</b> (Q
 void&#160;</td><td class="memItemRight" valign="bottom"><b>replaceSampler</b> (QRhiShaderResourceBindings &amp;, QRhiSampler *oldSampler, QRhiSampler *newSampler)</td></tr>
 <tr class="memdesc:a35ba9e4c253f3bcae70e1d36cf469be3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace a sampler. <br /></td></tr>
 <tr class="separator:a35ba9e4c253f3bcae70e1d36cf469be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9422d6d02158084503b076c4a382cbf" id="r_ab9422d6d02158084503b076c4a382cbf"><td class="memItemLeft" align="right" valign="top"><a id="ab9422d6d02158084503b076c4a382cbf" name="ab9422d6d02158084503b076c4a382cbf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>replaceSamplerAndTexture</b> (QRhiShaderResourceBindings &amp;, QRhiSampler *oldSampler, QRhiSampler *newSampler, QRhiTexture *newTexture)</td></tr>
+<tr class="memdesc:ab9422d6d02158084503b076c4a382cbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace both sampler and texture in a SRC. <br /></td></tr>
+<tr class="separator:ab9422d6d02158084503b076c4a382cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4a120e4b5553a7ffeaeb10c7208b2e9" id="r_af4a120e4b5553a7ffeaeb10c7208b2e9"><td class="memItemLeft" align="right" valign="top"><a id="af4a120e4b5553a7ffeaeb10c7208b2e9" name="af4a120e4b5553a7ffeaeb10c7208b2e9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>replaceTexture</b> (QRhiShaderResourceBindings &amp;, QRhiSampler *sampler, QRhiTexture *newTexture)</td></tr>
 <tr class="memdesc:af4a120e4b5553a7ffeaeb10c7208b2e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace the texture currently bound to a sampler. <br /></td></tr>
