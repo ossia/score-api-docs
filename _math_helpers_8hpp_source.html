@@ -141,29 +141,13 @@ $(document).ready(function(){initNavTree('_math_helpers_8hpp_source.html',''); i
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> State&gt;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">static</span> <span class="keywordtype">void</span> setMathExpressionTiming(</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_namespace" href="namespace_state.html">State</a>&amp; self, ossia::time_value input_time, ossia::time_value prev_time,</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    ossia::time_value parent_dur, <span class="keywordtype">double</span> modelToSamples)</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  setMathExpressionTiming(</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>      self, input_time.impl * modelToSamples, prev_time.impl * modelToSamples,</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>      parent_dur.impl * modelToSamples);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">// template &lt;typename State&gt;</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">// static void setMathExpressionTiming(State&amp; self, const ossia::token_request&amp; tk, ossia::exec_state_facade st)</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">// {</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">//   setMathExpressionTiming(self, tk.date, tk.prev_date, tk.parent_duration, st.modelToSamples());</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">// }</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> State&gt;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">static</span> <span class="keywordtype">void</span> setMathExpressionTiming(<a class="code hl_namespace" href="namespace_state.html">State</a>&amp; self, <span class="keyword">const</span> halp::tick_flicks&amp; tk)</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  self.cur_time = tk.end_in_flicks;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  self.cur_deltatime = tk.end_in_flicks - tk.start_in_flicks;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  self.cur_pos = tk.parent_duration &gt; 0 ? tk.relative_position : 0.;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">static</span> <span class="keywordtype">void</span> setMathExpressionTiming(<a class="code hl_namespace" href="namespace_state.html">State</a>&amp; self, <span class="keyword">const</span> halp::tick_flicks&amp; tk)</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>{</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  self.cur_time = tk.end_in_flicks;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  self.cur_deltatime = tk.end_in_flicks - tk.start_in_flicks;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  self.cur_pos = tk.parent_duration &gt; 0 ? tk.relative_position : 0.;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
 <div class="ttc" id="anamespace_state_html"><div class="ttname"><a href="namespace_state.html">State</a></div><div class="ttdoc">Utilities for OSSIA data structures.</div><div class="ttdef"><b>Definition</b> DeviceInterface.hpp:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
