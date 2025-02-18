@@ -38,6 +38,8 @@ var NAVTREEINDEX1 =
 "_curve_tool_8hpp_source.html":[13,0,0,2,10,0,1,2,0],
 "_curve_view_8hpp_source.html":[13,0,0,2,10,0,12],
 "_custom_mesh_8hpp_source.html":[13,0,0,2,16,1,2,2],
+"_d_m_x_fixture_instantiation_8hpp_source.html":[13,0,0,2,28,0,0,4],
+"_d_m_x_protocol_creation_8hpp_source.html":[13,0,0,2,28,0,0,5],
 "_d_n_s_s_d_device_enumerator_8hpp_source.html":[13,0,0,2,28,0,22],
 "_d_s_p_wrapper_8hpp_source.html":[13,0,0,2,14,0,2],
 "_data_stream_8hpp_source.html":[13,0,0,2,38,0,4],
@@ -206,6 +208,8 @@ var NAVTREEINDEX1 =
 "_filter_2_preview_widget_8hpp_source.html":[13,0,0,2,16,1,0,4],
 "_find_string_in_file_8hpp_source.html":[13,0,0,1,1,12,11],
 "_fixed_tab_widget_8hpp_source.html":[13,0,0,1,0,9,0],
+"_fixture_database_8hpp_source.html":[13,0,0,2,28,0,0,6],
+"_fixture_dialog_8hpp_source.html":[13,0,0,2,28,0,0,7],
 "_flatness_8hpp_source.html":[13,0,0,2,5,0,5],
 "_focus_dispatcher_8hpp_source.html":[13,0,0,2,3,4,6,0],
 "_focus_manager_8hpp_source.html":[13,0,0,1,1,9,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX1 =
 "_gfx_plugins.html#CustomNode":[3,0],
 "_gfx_plugins.html#ShaderConventions":[3,1],
 "_gfx_plugins.html#VideoDecoders":[3,2],
-"_gist_state_8hpp_source.html":[13,0,0,2,5,0,6],
-"_good_old_displacement_policy_8hpp_source.html":[13,0,0,2,31,4,9,0,3],
-"_gpu_compute_node_8hpp_source.html":[13,0,0,2,8,3,11],
-"_gpu_formats_8hpp_source.html":[13,0,0,2,23,2,2],
-"_gpu_utils_8hpp_source.html":[13,0,0,2,8,3,13]
+"_gist_state_8hpp_source.html":[13,0,0,2,5,0,6]
 };

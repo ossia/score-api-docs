@@ -1,5 +1,14 @@
 var NAVTREEINDEX27 =
 {
+"structvisitor__enum__tag.html":[12,0,396],
+"structvisitor__object__tag.html":[12,0,397],
+"structvisitor__template__tag.html":[12,0,398],
+"structvst3_1_1_available_plugin.html":[12,0,62,1],
+"structvst3_1_1_bus_activation_visitor.html":[12,0,62,2],
+"structvst3_1_1_host_app.html":[12,0,62,7],
+"structvst3_1_1_plugin.html":[12,0,62,12],
+"structvst3_1_1_port_creation_visitor.html":[12,0,62,13],
+"structvst3_1_1_v_s_t_control_port_item.html":[12,0,62,20],
 "structvst3_1_1_v_s_t_float_slider.html":[12,0,62,22],
 "structvst3_1_1_vst3_data_stream.html":[12,0,62,16],
 "structvst3_1_1_window_container.html":[12,0,62,25],

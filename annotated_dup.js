@@ -1285,6 +1285,9 @@ var annotated_dup =
         [ "BaseCapability", "struct_protocols_1_1_artnet_1_1_base_capability.html", null ],
         [ "Channel", "struct_protocols_1_1_artnet_1_1_channel.html", null ],
         [ "Fixture", "struct_protocols_1_1_artnet_1_1_fixture.html", null ],
+        [ "LEDPaneLayout", "struct_protocols_1_1_artnet_1_1_l_e_d_pane_layout.html", null ],
+        [ "LEDStripLayout", "struct_protocols_1_1_artnet_1_1_l_e_d_strip_layout.html", null ],
+        [ "LEDVolumeLayout", "struct_protocols_1_1_artnet_1_1_l_e_d_volume_layout.html", null ],
         [ "ModeInfo", "struct_protocols_1_1_artnet_1_1_mode_info.html", null ],
         [ "RangeCapability", "struct_protocols_1_1_artnet_1_1_range_capability.html", null ],
         [ "SingleCapability", "struct_protocols_1_1_artnet_1_1_single_capability.html", null ]
@@ -1296,6 +1299,7 @@ var annotated_dup =
         [ "View", "class_protocols_1_1_settings_1_1_view.html", null ]
       ] ],
       [ "AddFixtureDialog", "class_protocols_1_1_add_fixture_dialog.html", null ],
+      [ "AddLEDStripDialog", "class_protocols_1_1_add_l_e_d_strip_dialog.html", null ],
       [ "ArtnetDevice", "class_protocols_1_1_artnet_device.html", null ],
       [ "ArtnetProtocolFactory", "class_protocols_1_1_artnet_protocol_factory.html", null ],
       [ "ArtnetProtocolSettingsWidget", "class_protocols_1_1_artnet_protocol_settings_widget.html", null ],

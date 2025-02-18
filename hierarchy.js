@@ -1591,6 +1591,9 @@ var hierarchy =
       [ "oscr::LayoutBuilder< Info >", "structoscr_1_1_layout_builder.html", null ]
     ] ],
     [ "score::lazy_init_t", "structscore_1_1lazy__init__t.html", null ],
+    [ "Protocols::Artnet::LEDPaneLayout", "struct_protocols_1_1_artnet_1_1_l_e_d_pane_layout.html", null ],
+    [ "Protocols::Artnet::LEDStripLayout", "struct_protocols_1_1_artnet_1_1_l_e_d_strip_layout.html", null ],
+    [ "Protocols::Artnet::LEDVolumeLayout", "struct_protocols_1_1_artnet_1_1_l_e_d_volume_layout.html", null ],
     [ "Video::LibAVDecoder", "struct_video_1_1_lib_a_v_decoder.html", [
       [ "Video::CameraInput", "class_video_1_1_camera_input.html", null ],
       [ "Video::VideoDecoder", "class_video_1_1_video_decoder.html", null ]
@@ -2058,8 +2061,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model >", "class_path.html", null ],
+    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -2472,6 +2475,7 @@ var hierarchy =
         [ "WidgetFactory::ProgramPortScriptDialog", "struct_widget_factory_1_1_program_port_script_dialog.html", null ]
       ] ],
       [ "Protocols::AddFixtureDialog", "class_protocols_1_1_add_fixture_dialog.html", null ],
+      [ "Protocols::AddLEDStripDialog", "class_protocols_1_1_add_l_e_d_strip_dialog.html", null ],
       [ "Scenario::AddProcessDialog", "class_scenario_1_1_add_process_dialog.html", null ],
       [ "Scenario::SearchReplaceWidget", "class_scenario_1_1_search_replace_widget.html", null ],
       [ "Scenario::Settings::ThemeDialog", "class_scenario_1_1_settings_1_1_theme_dialog.html", null ],

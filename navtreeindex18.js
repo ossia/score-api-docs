@@ -1,5 +1,11 @@
 var NAVTREEINDEX18 =
 {
+"dir_c77ebcea250b1326b61851564cb99e14.html":[13,0,0,2,13,1,3],
+"dir_c85422edeb661d85159551fb6293e3d5.html":[13,0,0,2,23,0,6],
+"dir_c85d3e3c5052e9ad9ce18c6863244a25.html":[13,0,0,1],
+"dir_caa3f5a107177bdccf6850903a194d3f.html":[13,0,0,2,8,2],
+"dir_cb3380b62555fdcbc07c39b91cf452a0.html":[13,0,0,2,23,1],
+"dir_cb8b74d039659fd2b20872bf24cc0878.html":[13,0,0,2,28,0,9],
 "dir_cc0c99238230346a0bd50ea0615d7be4.html":[13,0,0,2,0,0,5],
 "dir_cc17b413bf1d2b466bb81cc957a18261.html":[13,0,0,2,31,4,8],
 "dir_cc604fe5182a66a57f6a224d76b395c8.html":[13,0,0,2,29,0],
@@ -89,8 +95,8 @@ var NAVTREEINDEX18 =
 "dir_ff56996379f66a234579aa3f0401ac06.html":[13,0,0,2,31,4,3,9],
 "element_finding_helper_8hpp_source.html":[13,0,0,2,31,4,11,1],
 "files.html":[13,0],
-"functions.html":[12,3,0,0],
 "functions.html":[12,3,0],
+"functions.html":[12,3,0,0],
 "functions_c.html":[12,3,0,1],
 "functions_d.html":[12,3,0,2],
 "functions_e.html":[12,3,0,3],
@@ -243,11 +249,5 @@ var NAVTREEINDEX18 =
 "plugins_2score-lib-process_2_process_2_dataflow_2_control_widgets_8hpp_source.html":[13,0,0,2,3,4,3,8],
 "plugins_2score-lib-process_2_process_2_document_plugin_8hpp_source.html":[13,0,0,2,3,4,17],
 "plugins_2score-plugin-audio_2_audio_2_settings_2_presenter_8hpp_source.html":[13,0,0,2,6,0,0,2],
-"plugins_2score-plugin-avnd_2_crousti_2_file_8hpp_source.html":[13,0,0,2,8,3,8],
-"plugins_2score-plugin-avnd_2_crousti_2_metadata_8hpp_source.html":[13,0,0,2,8,3,16],
-"plugins_2score-plugin-controlsurface_2_control_surface_2_metadata_8hpp_source.html":[13,0,0,2,9,0,5],
-"plugins_2score-plugin-controlsurface_2_control_surface_2_presenter_8hpp_source.html":[13,0,0,2,9,0,6],
-"plugins_2score-plugin-controlsurface_2_control_surface_2commands_8hpp_source.html":[13,0,0,2,9,0,1],
-"plugins_2score-plugin-engine_2_execution_2_document_plugin_8hpp_source.html":[13,0,0,2,13,1,6],
-"plugins_2score-plugin-faust_2_faust_2commands_8hpp_source.html":[13,0,0,2,14,0,0]
+"plugins_2score-plugin-avnd_2_crousti_2_file_8hpp_source.html":[13,0,0,2,8,3,8]
 };

@@ -1,5 +1,11 @@
 var NAVTREEINDEX19 =
 {
+"plugins_2score-plugin-avnd_2_crousti_2_metadata_8hpp_source.html":[13,0,0,2,8,3,16],
+"plugins_2score-plugin-controlsurface_2_control_surface_2_metadata_8hpp_source.html":[13,0,0,2,9,0,5],
+"plugins_2score-plugin-controlsurface_2_control_surface_2_presenter_8hpp_source.html":[13,0,0,2,9,0,6],
+"plugins_2score-plugin-controlsurface_2_control_surface_2commands_8hpp_source.html":[13,0,0,2,9,0,1],
+"plugins_2score-plugin-engine_2_execution_2_document_plugin_8hpp_source.html":[13,0,0,2,13,1,6],
+"plugins_2score-plugin-faust_2_faust_2commands_8hpp_source.html":[13,0,0,2,14,0,0],
 "plugins_2score-plugin-gfx_2_gfx_2_filter_2_metadata_8hpp_source.html":[13,0,0,2,16,1,0,3],
 "plugins_2score-plugin-gfx_2_gfx_2_geometry_filter_2_metadata_8hpp_source.html":[13,0,0,2,16,1,1,3],
 "plugins_2score-plugin-gfx_2_gfx_2_graph_2_window_8hpp_source.html":[13,0,0,2,16,1,2,27],
@@ -243,11 +249,5 @@ var NAVTREEINDEX19 =
 "struct_analysis_1_1value__out.html":[12,0,0,23],
 "struct_array_entity_serializer.html":[12,0,72],
 "struct_array_serializer.html":[12,0,73],
-"struct_atom_buffer.html":[12,0,74],
-"struct_audio_1_1_audio_preview_executor_1_1sound.html":[12,0,1,4,0],
-"struct_audio_1_1_port_audio_card.html":[12,0,1,7],
-"struct_audio_1_1_port_audio_scope.html":[12,0,1,9],
-"struct_automation_1_1_recreate_on_play_1_1modvalue.html":[12,0,2,0,1],
-"struct_automation_1_1_recreate_on_play_1_1range__position.html":[12,0,2,0,2],
-"struct_avnd_jit_1_1inlet__vis.html":[12,0,4,2]
+"struct_atom_buffer.html":[12,0,74]
 };

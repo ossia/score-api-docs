@@ -129,12 +129,15 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:acf4f2f6c842c2ce9402a1f9b7f609464" id="r_acf4f2f6c842c2ce9402a1f9b7f609464"><td class="memItemLeft" align="right" valign="top"><a id="acf4f2f6c842c2ce9402a1f9b7f609464" name="acf4f2f6c842c2ce9402a1f9b7f609464"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>loadManufacturer</b> (rapidjson::Document &amp;doc, const QString &amp;fixtures_dir)</td></tr>
+<tr class="separator:acf4f2f6c842c2ce9402a1f9b7f609464"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af093406fcb8821069b0915b76b75fd53" id="r_af093406fcb8821069b0915b76b75fd53"><td class="memItemLeft" align="right" valign="top"><a id="af093406fcb8821069b0915b76b75fd53" name="af093406fcb8821069b0915b76b75fd53"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>loadFixture</b> (std::string_view fixture_data, <a class="el" href="class_tree_node.html">FixtureNode</a> &amp;manufacturer, const QModelIndex &amp;manufacturerIndex)</td></tr>
 <tr class="separator:af093406fcb8821069b0915b76b75fd53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d7c036456d524c81e347597a3ac421e" id="r_a5d7c036456d524c81e347597a3ac421e"><td class="memItemLeft" align="right" valign="top"><a id="a5d7c036456d524c81e347597a3ac421e" name="a5d7c036456d524c81e347597a3ac421e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>next</b> (std::shared_ptr&lt; <a class="el" href="struct_protocols_1_1_fixture_database_1_1_scan.html">Scan</a> &gt; scan, QModelIndex manufacturerIndex)</td></tr>
-<tr class="separator:a5d7c036456d524c81e347597a3ac421e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a242c813a152418f3f3047ed82ba7c820" id="r_a242c813a152418f3f3047ed82ba7c820"><td class="memItemLeft" align="right" valign="top"><a id="a242c813a152418f3f3047ed82ba7c820" name="a242c813a152418f3f3047ed82ba7c820"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>nextFixture</b> (std::shared_ptr&lt; <a class="el" href="struct_protocols_1_1_fixture_database_1_1_scan.html">Scan</a> &gt; scan, QModelIndex manufacturerIndex)</td></tr>
+<tr class="separator:a242c813a152418f3f3047ed82ba7c820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9294223518e2238cbd15eecbed4df62e" id="r_a9294223518e2238cbd15eecbed4df62e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_tree_node.html">FixtureNode</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_protocols_1_1_fixture_database.html#a9294223518e2238cbd15eecbed4df62e">rootNode</a> () override</td></tr>
 <tr class="separator:a9294223518e2238cbd15eecbed4df62e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6b8f18dd335e06f91badf66961d01dd" id="r_aa6b8f18dd335e06f91badf66961d01dd"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_tree_node.html">FixtureNode</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_protocols_1_1_fixture_database.html#aa6b8f18dd335e06f91badf66961d01dd">rootNode</a> () const override</td></tr>
@@ -151,6 +154,12 @@ QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>headerData</b> (i
 <tr class="memitem:a47d1702d79abcfaa7eda41ee19b0cc78" id="r_a47d1702d79abcfaa7eda41ee19b0cc78"><td class="memItemLeft" align="right" valign="top"><a id="a47d1702d79abcfaa7eda41ee19b0cc78" name="a47d1702d79abcfaa7eda41ee19b0cc78"></a>
 Qt::ItemFlags&#160;</td><td class="memItemRight" valign="bottom"><b>flags</b> (const QModelIndex &amp;index) const override</td></tr>
 <tr class="separator:a47d1702d79abcfaa7eda41ee19b0cc78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34778f6164d6521c5973e65b92f6d428" id="r_a34778f6164d6521c5973e65b92f6d428"><td class="memItemLeft" align="right" valign="top"><a id="a34778f6164d6521c5973e65b92f6d428" name="a34778f6164d6521c5973e65b92f6d428"></a>
+QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><b>modelIndexFromNode</b> (const <a class="el" href="class_tree_node.html">FixtureNode</a> &amp;n) const</td></tr>
+<tr class="separator:a34778f6164d6521c5973e65b92f6d428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1e1fa9ef0c9123712abb037f147983f" id="r_ab1e1fa9ef0c9123712abb037f147983f"><td class="memItemLeft" align="right" valign="top"><a id="ab1e1fa9ef0c9123712abb037f147983f" name="ab1e1fa9ef0c9123712abb037f147983f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onPopulated</b> (auto func)</td></tr>
+<tr class="separator:ab1e1fa9ef0c9123712abb037f147983f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_tree_node_based_item_model"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_tree_node_based_item_model')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_tree_node_based_item_model.html">TreeNodeBasedItemModel&lt; FixtureNode &gt;</a></td></tr>
 <tr class="memitem:a144aeeac17238d62a30b0fd2687ab407 inherit pub_methods_class_tree_node_based_item_model" id="r_a144aeeac17238d62a30b0fd2687ab407"><td class="memItemLeft" align="right" valign="top">
 FixtureNode &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>nodeFromModelIndex</b> (const QModelIndex &amp;index) const</td></tr>
@@ -191,6 +200,9 @@ std::vector&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom">
 <tr class="memitem:ae1c3b665b3c5c311ab2079c82b2d768c" id="r_ae1c3b665b3c5c311ab2079c82b2d768c"><td class="memItemLeft" align="right" valign="top"><a id="ae1c3b665b3c5c311ab2079c82b2d768c" name="ae1c3b665b3c5c311ab2079c82b2d768c"></a>
 <a class="el" href="class_tree_node.html">FixtureNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_root</b></td></tr>
 <tr class="separator:ae1c3b665b3c5c311ab2079c82b2d768c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad66c7532b41315b4a078253448f24b7b" id="r_ad66c7532b41315b4a078253448f24b7b"><td class="memItemLeft" align="right" valign="top"><a id="ad66c7532b41315b4a078253448f24b7b" name="ad66c7532b41315b4a078253448f24b7b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_inFlight</b> {}</td></tr>
+<tr class="separator:ad66c7532b41315b4a078253448f24b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -255,7 +267,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>node_type</b> = Fixt
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><b>ArtnetProtocolSettingsWidget.cpp</b></li>
+<li><a class="el" href="_fixture_database_8hpp_source.html">FixtureDatabase.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

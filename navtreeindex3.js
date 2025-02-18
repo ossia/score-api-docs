@@ -1,5 +1,10 @@
 var NAVTREEINDEX3 =
 {
+"_midi_process_metadata_8hpp_source.html":[13,0,0,2,24,0,10],
+"_midi_style_8hpp_source.html":[13,0,0,2,24,0,11],
+"_midi_util_8hpp_source.html":[13,0,0,2,15,0,25],
+"_midi_view_8hpp_source.html":[13,0,0,2,24,0,12],
+"_mime_data_8hpp_source.html":[13,0,0,1,1,13,15],
 "_mime_visitor_8hpp_source.html":[13,0,0,1,1,10,10],
 "_min_max_commands_8hpp_source.html":[13,0,0,2,22,0,0,2],
 "_min_max_float_port_8hpp_source.html":[13,0,0,2,3,4,3,9],
@@ -244,10 +249,5 @@ var NAVTREEINDEX3 =
 "_reactive_label_8hpp_source.html":[13,0,0,1,1,13,19],
 "_record_8hpp_source.html":[13,0,0,2,29,0,0,0],
 "_record_automation_creation_visitor_8hpp_source.html":[13,0,0,2,29,0,1,0,0],
-"_record_automation_first_parameter_callback_visitor_8hpp_source.html":[13,0,0,2,29,0,1,0,1],
-"_record_automation_parameter_callback_visitor_8hpp_source.html":[13,0,0,2,29,0,1,0,2],
-"_record_data_8hpp_source.html":[13,0,0,2,29,0,1,1],
-"_record_manager_8hpp_source.html":[13,0,0,2,29,0,1,2],
-"_record_messages_manager_8hpp_source.html":[13,0,0,2,29,0,1,3],
-"_record_provider_factory_8hpp_source.html":[13,0,0,2,29,0,1,4]
+"_record_automation_first_parameter_callback_visitor_8hpp_source.html":[13,0,0,2,29,0,1,0,1]
 };

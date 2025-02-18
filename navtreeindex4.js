@@ -1,5 +1,10 @@
 var NAVTREEINDEX4 =
 {
+"_record_automation_parameter_callback_visitor_8hpp_source.html":[13,0,0,2,29,0,1,0,2],
+"_record_data_8hpp_source.html":[13,0,0,2,29,0,1,1],
+"_record_manager_8hpp_source.html":[13,0,0,2,29,0,1,2],
+"_record_messages_manager_8hpp_source.html":[13,0,0,2,29,0,1,3],
+"_record_provider_factory_8hpp_source.html":[13,0,0,2,29,0,1,4],
 "_record_tools_8hpp_source.html":[13,0,0,2,29,0,1,5],
 "_recording_command_factory_8hpp_source.html":[13,0,0,2,29,0,0,1],
 "_rect_item_8hpp_source.html":[13,0,0,1,1,5,15],
@@ -244,10 +249,5 @@ var NAVTREEINDEX4 =
 "_t_c_p_widget_8hpp_source.html":[13,0,0,2,28,0,13,3],
 "_teleplot_8hpp_source.html":[13,0,0,2,8,2,8],
 "_tempo_8hpp_source.html":[13,0,0,2,23,0,15],
-"_tempo_factory_8hpp_source.html":[13,0,0,2,31,4,3,9,0],
-"_tempo_inspector_8hpp_source.html":[13,0,0,2,31,4,3,9,1],
-"_tempo_process_8hpp_source.html":[13,0,0,2,31,4,3,9,2],
-"_tempo_view_8hpp_source.html":[13,0,0,2,31,4,3,9,3],
-"_temporal_interval_header_8hpp_source.html":[13,0,0,2,31,4,3,5,2,1],
-"_temporal_interval_presenter_8hpp_source.html":[13,0,0,2,31,4,3,5,2,2]
+"_tempo_factory_8hpp_source.html":[13,0,0,2,31,4,3,9,0]
 };
