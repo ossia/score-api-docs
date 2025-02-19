@@ -164,16 +164,17 @@ $(document).ready(function(){initNavTree('_output_node_8hpp_source.html',''); in
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// rate (given in milliseconds)</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    std::optional&lt;double&gt; manualRenderingRate;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">bool</span> outputNeedsRenderPass{};</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  };</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a>* parent{};</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  };</div>
 </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_output_node_1_1_configuration.html">Configuration</a> configuration() const noexcept = 0;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>protected:</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  explicit <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a>();</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>};</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_output_node_1_1_configuration.html">Configuration</a> configuration() const noexcept = 0;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>protected:</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  explicit <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a>();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>};</div>
 </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a></div><div class="ttdoc">Root data model for visual nodes.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:75</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdoc">Renderer for a given node.</div><div class="ttdef"><b>Definition</b> NodeRenderer.hpp:11</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a></div><div class="ttdoc">Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)</div><div class="ttdef"><b>Definition</b> OutputNode.hpp:24</div></div>
