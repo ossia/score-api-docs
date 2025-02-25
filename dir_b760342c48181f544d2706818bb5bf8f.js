@@ -12,7 +12,7 @@ var dir_b760342c48181f544d2706818bb5bf8f =
     [ "Geometry.hpp", "_geometry_8hpp_source.html", null ],
     [ "GfxNode.hpp", "_gfx_node_8hpp_source.html", null ],
     [ "GpuComputeNode.hpp", "_gpu_compute_node_8hpp_source.html", null ],
-    [ "score-plugin-avnd/Crousti/GPUNode.hpp", "score-plugin-avnd_2_crousti_2_g_p_u_node_8hpp_source.html", null ],
+    [ "score-plugin-avnd/Crousti/GpuNode.hpp", "score-plugin-avnd_2_crousti_2_gpu_node_8hpp_source.html", null ],
     [ "GpuUtils.hpp", "_gpu_utils_8hpp_source.html", null ],
     [ "score-plugin-avnd/Crousti/Layer.hpp", "score-plugin-avnd_2_crousti_2_layer_8hpp_source.html", null ],
     [ "MessageBus.hpp", "_message_bus_8hpp_source.html", null ],
