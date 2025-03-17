@@ -136,22 +136,18 @@ template&lt;typename T &gt; </td></tr>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:accec956110516e565384f93b690aa2be"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>writeTo</b> (<a class="el" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a> &amp;s, T &amp;vec)</td></tr>
 <tr class="separator:accec956110516e565384f93b690aa2be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a606c085b79fb0b9986a54eef0ffcf245" id="r_a606c085b79fb0b9986a54eef0ffcf245"><td class="memTemplParams" colspan="2"><a id="a606c085b79fb0b9986a54eef0ffcf245" name="a606c085b79fb0b9986a54eef0ffcf245"></a>
-template&lt;typename Arg , std::size_t N&gt; </td></tr>
-<tr class="memitem:a606c085b79fb0b9986a54eef0ffcf245"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>readFrom</b> (<a class="el" href="class_j_s_o_n_reader.html">JSONObject::Serializer</a> &amp;s, const std::array&lt; Arg, N &gt; &amp;vec)</td></tr>
-<tr class="separator:a606c085b79fb0b9986a54eef0ffcf245"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01ee2e7f01783768bbc5fa6e4e3a062b" id="r_a01ee2e7f01783768bbc5fa6e4e3a062b"><td class="memTemplParams" colspan="2"><a id="a01ee2e7f01783768bbc5fa6e4e3a062b" name="a01ee2e7f01783768bbc5fa6e4e3a062b"></a>
-template&lt;typename Arg , std::size_t N&gt; </td></tr>
-<tr class="memitem:a01ee2e7f01783768bbc5fa6e4e3a062b"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>writeTo</b> (<a class="el" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a> &amp;s, std::array&lt; Arg, N &gt; &amp;vec)</td></tr>
-<tr class="separator:a01ee2e7f01783768bbc5fa6e4e3a062b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9a35c29d7593c97087f8a0a09db5ca1" id="r_af9a35c29d7593c97087f8a0a09db5ca1"><td class="memTemplParams" colspan="2"><a id="af9a35c29d7593c97087f8a0a09db5ca1" name="af9a35c29d7593c97087f8a0a09db5ca1"></a>
-template&lt;std::size_t N&gt; </td></tr>
-<tr class="memitem:af9a35c29d7593c97087f8a0a09db5ca1"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>readFrom</b> (<a class="el" href="class_j_s_o_n_reader.html">JSONObject::Serializer</a> &amp;s, const std::array&lt; float, N &gt; &amp;vec)</td></tr>
-<tr class="separator:af9a35c29d7593c97087f8a0a09db5ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a144247d131e88b41787aac6d53f66923" id="r_a144247d131e88b41787aac6d53f66923"><td class="memTemplParams" colspan="2"><a id="a144247d131e88b41787aac6d53f66923" name="a144247d131e88b41787aac6d53f66923"></a>
-template&lt;std::size_t N&gt; </td></tr>
-<tr class="memitem:a144247d131e88b41787aac6d53f66923"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>writeTo</b> (<a class="el" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a> &amp;s, std::array&lt; float, N &gt; &amp;vec)</td></tr>
-<tr class="separator:a144247d131e88b41787aac6d53f66923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8042b84dcbe59c112ef95aa4474ef20" id="r_af8042b84dcbe59c112ef95aa4474ef20"><td class="memTemplParams" colspan="2"><a id="af8042b84dcbe59c112ef95aa4474ef20" name="af8042b84dcbe59c112ef95aa4474ef20"></a>
+template&lt;template&lt; typename, typename... &gt; typename T, typename Arg , typename... Args&gt; </td></tr>
+<tr class="memitem:af8042b84dcbe59c112ef95aa4474ef20"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>readFrom</b> (<a class="el" href="class_j_s_o_n_reader.html">JSONObject::Serializer</a> &amp;s, const T&lt; Arg, Args... &gt; &amp;vec)</td></tr>
+<tr class="separator:af8042b84dcbe59c112ef95aa4474ef20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae52ec26f7d0cf9c02900fc525f1ee0c8" id="r_ae52ec26f7d0cf9c02900fc525f1ee0c8"><td class="memTemplParams" colspan="2"><a id="ae52ec26f7d0cf9c02900fc525f1ee0c8" name="ae52ec26f7d0cf9c02900fc525f1ee0c8"></a>
+template&lt;template&lt; typename, std::size_t, typename... &gt; typename T, typename Arg , std::size_t N, typename... Args&gt; </td></tr>
+<tr class="memitem:ae52ec26f7d0cf9c02900fc525f1ee0c8"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>writeTo</b> (<a class="el" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a> &amp;s, T&lt; Arg, N, Args... &gt; &amp;vec)</td></tr>
+<tr class="separator:ae52ec26f7d0cf9c02900fc525f1ee0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ba47d74f1bff69078cd8729855b39cf" id="r_a4ba47d74f1bff69078cd8729855b39cf"><td class="memTemplParams" colspan="2"><a id="a4ba47d74f1bff69078cd8729855b39cf" name="a4ba47d74f1bff69078cd8729855b39cf"></a>
+template&lt;template&lt; typename, typename, typename... &gt; typename T, typename Arg , typename Arg2 , typename... Args&gt; </td></tr>
+<tr class="memitem:a4ba47d74f1bff69078cd8729855b39cf"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>writeTo</b> (<a class="el" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a> &amp;s, T&lt; Arg, Arg2, Args... &gt; &amp;vec)</td></tr>
+<tr class="separator:a4ba47d74f1bff69078cd8729855b39cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b739a9ade9aa2d936cefd9550bfc887" id="r_a3b739a9ade9aa2d936cefd9550bfc887"><td class="memTemplParams" colspan="2"><a id="a3b739a9ade9aa2d936cefd9550bfc887" name="a3b739a9ade9aa2d936cefd9550bfc887"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a3b739a9ade9aa2d936cefd9550bfc887"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>readFrom</b> (<a class="el" href="class_j_s_o_n_reader.html">JSONObject::Serializer</a> &amp;s, const std::list&lt; T &gt; &amp;vec)</td></tr>
@@ -168,102 +164,6 @@ template&lt;typename T &gt; </td></tr>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a0e4033b485af0985fc59a3919aa79835"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>writeTo</b> (<a class="el" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a> &amp;s, QList&lt; T &gt; &amp;vec)</td></tr>
 <tr class="separator:a0e4033b485af0985fc59a3919aa79835"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32ea2217622a0e326661d72359d1075c" id="r_a32ea2217622a0e326661d72359d1075c"><td class="memTemplParams" colspan="2"><a id="a32ea2217622a0e326661d72359d1075c" name="a32ea2217622a0e326661d72359d1075c"></a>
-template&lt;template&lt; typename... Args &gt; typename T, typename... Args&gt; </td></tr>
-<tr class="memitem:a32ea2217622a0e326661d72359d1075c"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>readFrom</b> (<a class="el" href="class_j_s_o_n_reader.html">JSONObject::Serializer</a> &amp;s, const T&lt; std::string, Args... &gt; &amp;vec)</td></tr>
-<tr class="separator:a32ea2217622a0e326661d72359d1075c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b80b18aeb27f7fdca890e505f3f3157" id="r_a5b80b18aeb27f7fdca890e505f3f3157"><td class="memTemplParams" colspan="2"><a id="a5b80b18aeb27f7fdca890e505f3f3157" name="a5b80b18aeb27f7fdca890e505f3f3157"></a>
-template&lt;template&lt; typename... Args &gt; typename T, typename... Args&gt; </td></tr>
-<tr class="memitem:a5b80b18aeb27f7fdca890e505f3f3157"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>writeTo</b> (<a class="el" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a> &amp;s, T&lt; std::string, Args... &gt; &amp;vec)</td></tr>
-<tr class="separator:a5b80b18aeb27f7fdca890e505f3f3157"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2411195813e1ef9830003ac7dedaf7a7" id="r_a2411195813e1ef9830003ac7dedaf7a7"><td class="memTemplParams" colspan="2"><a id="a2411195813e1ef9830003ac7dedaf7a7" name="a2411195813e1ef9830003ac7dedaf7a7"></a>
-template&lt;template&lt; typename... Args &gt; typename T, typename... Args&gt; </td></tr>
-<tr class="memitem:a2411195813e1ef9830003ac7dedaf7a7"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>readFrom</b> (<a class="el" href="class_j_s_o_n_reader.html">JSONObject::Serializer</a> &amp;s, const T&lt; QString, Args... &gt; &amp;vec)</td></tr>
-<tr class="separator:a2411195813e1ef9830003ac7dedaf7a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad08ae71f9f7a6a65d1e051bf216a3a70" id="r_ad08ae71f9f7a6a65d1e051bf216a3a70"><td class="memTemplParams" colspan="2"><a id="ad08ae71f9f7a6a65d1e051bf216a3a70" name="ad08ae71f9f7a6a65d1e051bf216a3a70"></a>
-template&lt;template&lt; typename... Args &gt; typename T, typename... Args&gt; </td></tr>
-<tr class="memitem:ad08ae71f9f7a6a65d1e051bf216a3a70"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>writeTo</b> (<a class="el" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a> &amp;s, T&lt; QString, Args... &gt; &amp;vec)</td></tr>
-<tr class="separator:ad08ae71f9f7a6a65d1e051bf216a3a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a293fb4a49c66ff5554e0006a9cefc42f" id="r_a293fb4a49c66ff5554e0006a9cefc42f"><td class="memTemplParams" colspan="2"><a id="a293fb4a49c66ff5554e0006a9cefc42f" name="a293fb4a49c66ff5554e0006a9cefc42f"></a>
-template&lt;template&lt; typename... Args &gt; typename T, typename... Args&gt; </td></tr>
-<tr class="memitem:a293fb4a49c66ff5554e0006a9cefc42f"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>readFrom</b> (<a class="el" href="class_j_s_o_n_reader.html">JSONObject::Serializer</a> &amp;s, const T&lt; int, Args... &gt; &amp;vec)</td></tr>
-<tr class="separator:a293fb4a49c66ff5554e0006a9cefc42f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3be8328cc69cacbd764ad8bad269066d" id="r_a3be8328cc69cacbd764ad8bad269066d"><td class="memTemplParams" colspan="2"><a id="a3be8328cc69cacbd764ad8bad269066d" name="a3be8328cc69cacbd764ad8bad269066d"></a>
-template&lt;template&lt; typename... Args &gt; typename T, typename... Args&gt; </td></tr>
-<tr class="memitem:a3be8328cc69cacbd764ad8bad269066d"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>writeTo</b> (<a class="el" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a> &amp;s, T&lt; int, Args... &gt; &amp;vec)</td></tr>
-<tr class="separator:a3be8328cc69cacbd764ad8bad269066d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae18204e9f253eb0bb69d36b297dc312f" id="r_ae18204e9f253eb0bb69d36b297dc312f"><td class="memTemplParams" colspan="2"><a id="ae18204e9f253eb0bb69d36b297dc312f" name="ae18204e9f253eb0bb69d36b297dc312f"></a>
-template&lt;template&lt; typename... Args &gt; typename T, typename... Args&gt; </td></tr>
-<tr class="memitem:ae18204e9f253eb0bb69d36b297dc312f"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>readFrom</b> (<a class="el" href="class_j_s_o_n_reader.html">JSONObject::Serializer</a> &amp;s, const T&lt; char, Args... &gt; &amp;vec)</td></tr>
-<tr class="separator:ae18204e9f253eb0bb69d36b297dc312f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af94e8f1f30dffc6caae48eed864e3513" id="r_af94e8f1f30dffc6caae48eed864e3513"><td class="memTemplParams" colspan="2"><a id="af94e8f1f30dffc6caae48eed864e3513" name="af94e8f1f30dffc6caae48eed864e3513"></a>
-template&lt;template&lt; typename... Args &gt; typename T, typename... Args&gt; </td></tr>
-<tr class="memitem:af94e8f1f30dffc6caae48eed864e3513"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>writeTo</b> (<a class="el" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a> &amp;s, T&lt; char, Args... &gt; &amp;vec)</td></tr>
-<tr class="separator:af94e8f1f30dffc6caae48eed864e3513"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1aad6cd91dc1257b42d11c661ed0d8bf" id="r_a1aad6cd91dc1257b42d11c661ed0d8bf"><td class="memTemplParams" colspan="2"><a id="a1aad6cd91dc1257b42d11c661ed0d8bf" name="a1aad6cd91dc1257b42d11c661ed0d8bf"></a>
-template&lt;template&lt; typename... Args &gt; typename T, typename... Args&gt; </td></tr>
-<tr class="memitem:a1aad6cd91dc1257b42d11c661ed0d8bf"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>readFrom</b> (<a class="el" href="class_j_s_o_n_reader.html">JSONObject::Serializer</a> &amp;s, const T&lt; int64_t, Args... &gt; &amp;vec)</td></tr>
-<tr class="separator:a1aad6cd91dc1257b42d11c661ed0d8bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acad235acdd9c8aca21f8cf28e720f3ad" id="r_acad235acdd9c8aca21f8cf28e720f3ad"><td class="memTemplParams" colspan="2"><a id="acad235acdd9c8aca21f8cf28e720f3ad" name="acad235acdd9c8aca21f8cf28e720f3ad"></a>
-template&lt;template&lt; typename... Args &gt; typename T, typename... Args&gt; </td></tr>
-<tr class="memitem:acad235acdd9c8aca21f8cf28e720f3ad"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>writeTo</b> (<a class="el" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a> &amp;s, T&lt; int64_t, Args... &gt; &amp;vec)</td></tr>
-<tr class="separator:acad235acdd9c8aca21f8cf28e720f3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4ad556cab7c1234723f5c0a8006c80a" id="r_ad4ad556cab7c1234723f5c0a8006c80a"><td class="memTemplParams" colspan="2"><a id="ad4ad556cab7c1234723f5c0a8006c80a" name="ad4ad556cab7c1234723f5c0a8006c80a"></a>
-template&lt;template&lt; typename... Args &gt; typename T, typename... Args&gt; </td></tr>
-<tr class="memitem:ad4ad556cab7c1234723f5c0a8006c80a"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>readFrom</b> (<a class="el" href="class_j_s_o_n_reader.html">JSONObject::Serializer</a> &amp;s, const T&lt; float, Args... &gt; &amp;vec)</td></tr>
-<tr class="separator:ad4ad556cab7c1234723f5c0a8006c80a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8a507452661391aec9cf0b2ac43996b" id="r_af8a507452661391aec9cf0b2ac43996b"><td class="memTemplParams" colspan="2"><a id="af8a507452661391aec9cf0b2ac43996b" name="af8a507452661391aec9cf0b2ac43996b"></a>
-template&lt;template&lt; typename... Args &gt; typename T, typename... Args&gt; </td></tr>
-<tr class="memitem:af8a507452661391aec9cf0b2ac43996b"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>writeTo</b> (<a class="el" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a> &amp;s, T&lt; float, Args... &gt; &amp;vec)</td></tr>
-<tr class="separator:af8a507452661391aec9cf0b2ac43996b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24a5c4ca9cadb9b9838e398c23d2dc19" id="r_a24a5c4ca9cadb9b9838e398c23d2dc19"><td class="memTemplParams" colspan="2"><a id="a24a5c4ca9cadb9b9838e398c23d2dc19" name="a24a5c4ca9cadb9b9838e398c23d2dc19"></a>
-template&lt;template&lt; typename... Args &gt; typename T, typename... Args&gt; </td></tr>
-<tr class="memitem:a24a5c4ca9cadb9b9838e398c23d2dc19"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>readFrom</b> (<a class="el" href="class_j_s_o_n_reader.html">JSONObject::Serializer</a> &amp;s, const T&lt; double, Args... &gt; &amp;vec)</td></tr>
-<tr class="separator:a24a5c4ca9cadb9b9838e398c23d2dc19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5b0f44c00f65afcfb28aaae55feaa07" id="r_aa5b0f44c00f65afcfb28aaae55feaa07"><td class="memTemplParams" colspan="2"><a id="aa5b0f44c00f65afcfb28aaae55feaa07" name="aa5b0f44c00f65afcfb28aaae55feaa07"></a>
-template&lt;template&lt; typename... Args &gt; typename T, typename... Args&gt; </td></tr>
-<tr class="memitem:aa5b0f44c00f65afcfb28aaae55feaa07"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>writeTo</b> (<a class="el" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a> &amp;s, T&lt; double, Args... &gt; &amp;vec)</td></tr>
-<tr class="separator:aa5b0f44c00f65afcfb28aaae55feaa07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab67c2169f278fe5e790710095dffbadc" id="r_ab67c2169f278fe5e790710095dffbadc"><td class="memTemplParams" colspan="2"><a id="ab67c2169f278fe5e790710095dffbadc" name="ab67c2169f278fe5e790710095dffbadc"></a>
-template&lt;template&lt; typename, std::size_t, typename... &gt; typename T, std::size_t N, typename... Args&gt; </td></tr>
-<tr class="memitem:ab67c2169f278fe5e790710095dffbadc"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>readFrom</b> (<a class="el" href="class_j_s_o_n_reader.html">JSONObject::Serializer</a> &amp;s, const T&lt; int, N, Args... &gt; &amp;vec)</td></tr>
-<tr class="separator:ab67c2169f278fe5e790710095dffbadc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ac0e2ce80da22bd14337f5bf13227f8" id="r_a1ac0e2ce80da22bd14337f5bf13227f8"><td class="memTemplParams" colspan="2"><a id="a1ac0e2ce80da22bd14337f5bf13227f8" name="a1ac0e2ce80da22bd14337f5bf13227f8"></a>
-template&lt;template&lt; typename, std::size_t, typename... &gt; typename T, std::size_t N, typename... Args&gt; </td></tr>
-<tr class="memitem:a1ac0e2ce80da22bd14337f5bf13227f8"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>writeTo</b> (<a class="el" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a> &amp;s, T&lt; int, N, Args... &gt; &amp;vec)</td></tr>
-<tr class="separator:a1ac0e2ce80da22bd14337f5bf13227f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a4d01a6392372ce6377e3d9647593ca" id="r_a9a4d01a6392372ce6377e3d9647593ca"><td class="memTemplParams" colspan="2"><a id="a9a4d01a6392372ce6377e3d9647593ca" name="a9a4d01a6392372ce6377e3d9647593ca"></a>
-template&lt;template&lt; typename, std::size_t, typename... &gt; typename T, std::size_t N, typename... Args&gt; </td></tr>
-<tr class="memitem:a9a4d01a6392372ce6377e3d9647593ca"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>readFrom</b> (<a class="el" href="class_j_s_o_n_reader.html">JSONObject::Serializer</a> &amp;s, const T&lt; char, N, Args... &gt; &amp;vec)</td></tr>
-<tr class="separator:a9a4d01a6392372ce6377e3d9647593ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bf312029f47d27dcdc284385420c8b4" id="r_a4bf312029f47d27dcdc284385420c8b4"><td class="memTemplParams" colspan="2"><a id="a4bf312029f47d27dcdc284385420c8b4" name="a4bf312029f47d27dcdc284385420c8b4"></a>
-template&lt;template&lt; typename, std::size_t, typename... &gt; typename T, std::size_t N, typename... Args&gt; </td></tr>
-<tr class="memitem:a4bf312029f47d27dcdc284385420c8b4"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>writeTo</b> (<a class="el" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a> &amp;s, T&lt; char, N, Args... &gt; &amp;vec)</td></tr>
-<tr class="separator:a4bf312029f47d27dcdc284385420c8b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d0ddbee48fcf41adc628a6c91e93b5c" id="r_a9d0ddbee48fcf41adc628a6c91e93b5c"><td class="memTemplParams" colspan="2"><a id="a9d0ddbee48fcf41adc628a6c91e93b5c" name="a9d0ddbee48fcf41adc628a6c91e93b5c"></a>
-template&lt;template&lt; typename, std::size_t, typename... &gt; typename T, std::size_t N, typename... Args&gt; </td></tr>
-<tr class="memitem:a9d0ddbee48fcf41adc628a6c91e93b5c"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>readFrom</b> (<a class="el" href="class_j_s_o_n_reader.html">JSONObject::Serializer</a> &amp;s, const T&lt; int64_t, N, Args... &gt; &amp;vec)</td></tr>
-<tr class="separator:a9d0ddbee48fcf41adc628a6c91e93b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e3444f366217ba5bbf3f63d6ee9bd33" id="r_a3e3444f366217ba5bbf3f63d6ee9bd33"><td class="memTemplParams" colspan="2"><a id="a3e3444f366217ba5bbf3f63d6ee9bd33" name="a3e3444f366217ba5bbf3f63d6ee9bd33"></a>
-template&lt;template&lt; typename, std::size_t, typename... &gt; typename T, std::size_t N, typename... Args&gt; </td></tr>
-<tr class="memitem:a3e3444f366217ba5bbf3f63d6ee9bd33"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>writeTo</b> (<a class="el" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a> &amp;s, T&lt; int64_t, N, Args... &gt; &amp;vec)</td></tr>
-<tr class="separator:a3e3444f366217ba5bbf3f63d6ee9bd33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86aa7a99c0882fdb76ebdea8a5ffb62c" id="r_a86aa7a99c0882fdb76ebdea8a5ffb62c"><td class="memTemplParams" colspan="2"><a id="a86aa7a99c0882fdb76ebdea8a5ffb62c" name="a86aa7a99c0882fdb76ebdea8a5ffb62c"></a>
-template&lt;template&lt; typename, std::size_t, typename... &gt; typename T, std::size_t N, typename... Args&gt; </td></tr>
-<tr class="memitem:a86aa7a99c0882fdb76ebdea8a5ffb62c"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>readFrom</b> (<a class="el" href="class_j_s_o_n_reader.html">JSONObject::Serializer</a> &amp;s, const T&lt; float, N, Args... &gt; &amp;vec)</td></tr>
-<tr class="separator:a86aa7a99c0882fdb76ebdea8a5ffb62c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa49b91b4d188d9115f8b3ef9db2b8aee" id="r_aa49b91b4d188d9115f8b3ef9db2b8aee"><td class="memTemplParams" colspan="2"><a id="aa49b91b4d188d9115f8b3ef9db2b8aee" name="aa49b91b4d188d9115f8b3ef9db2b8aee"></a>
-template&lt;template&lt; typename, std::size_t, typename... &gt; typename T, std::size_t N, typename... Args&gt; </td></tr>
-<tr class="memitem:aa49b91b4d188d9115f8b3ef9db2b8aee"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>writeTo</b> (<a class="el" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a> &amp;s, T&lt; float, N, Args... &gt; &amp;vec)</td></tr>
-<tr class="separator:aa49b91b4d188d9115f8b3ef9db2b8aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44cb7675ffb66563208b86a95e02fd78" id="r_a44cb7675ffb66563208b86a95e02fd78"><td class="memTemplParams" colspan="2"><a id="a44cb7675ffb66563208b86a95e02fd78" name="a44cb7675ffb66563208b86a95e02fd78"></a>
-template&lt;template&lt; typename, std::size_t, typename... &gt; typename T, std::size_t N, typename... Args&gt; </td></tr>
-<tr class="memitem:a44cb7675ffb66563208b86a95e02fd78"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>readFrom</b> (<a class="el" href="class_j_s_o_n_reader.html">JSONObject::Serializer</a> &amp;s, const T&lt; double, N, Args... &gt; &amp;vec)</td></tr>
-<tr class="separator:a44cb7675ffb66563208b86a95e02fd78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0766e5531340d4d9481e2d8d0460404b" id="r_a0766e5531340d4d9481e2d8d0460404b"><td class="memTemplParams" colspan="2"><a id="a0766e5531340d4d9481e2d8d0460404b" name="a0766e5531340d4d9481e2d8d0460404b"></a>
-template&lt;template&lt; typename, std::size_t, typename... &gt; typename T, std::size_t N, typename... Args&gt; </td></tr>
-<tr class="memitem:a0766e5531340d4d9481e2d8d0460404b"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>writeTo</b> (<a class="el" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a> &amp;s, T&lt; double, N, Args... &gt; &amp;vec)</td></tr>
-<tr class="separator:a0766e5531340d4d9481e2d8d0460404b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_j_s_o_n_visitor_8hpp_source.html">JSONVisitor.hpp</a></li>
