@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"classoscr_1_1_protocol.html":[12,0,39,43],
 "classoscr_1_1_protocol_factory.html":[11,0,8,44],
 "classoscr_1_1_protocol_factory.html":[12,0,39,44],
 "classoscr_1_1_protocol_settings_widget.html":[12,0,39,45],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "classscore_1_1_indirect_array.html":[12,0,51,141],
 "classscore_1_1_indirect_array.html":[11,0,12,136],
 "classscore_1_1_indirect_container.html":[12,0,51,142],
-"classscore_1_1_indirect_container.html":[11,0,12,137],
-"classscore_1_1_indirect_container_wrapper.html":[12,0,51,143]
+"classscore_1_1_indirect_container.html":[11,0,12,137]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"classscore_1_1_indirect_container_wrapper.html":[12,0,51,143],
 "classscore_1_1_indirect_container_wrapper.html":[11,0,12,138],
 "classscore_1_1_indirect_map.html":[12,0,51,144],
 "classscore_1_1_indirect_map.html":[11,0,12,139],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "classscore_1_1_undo_list_widget.html":[11,0,12,290],
 "classscore_1_1_undo_list_widget.html":[12,0,51,295],
 "classscore_1_1_undo_panel_delegate.html":[11,0,12,291],
-"classscore_1_1_undo_panel_delegate.html":[12,0,51,296],
-"classscore_1_1_undo_panel_delegate_factory.html":[12,0,51,297]
+"classscore_1_1_undo_panel_delegate.html":[12,0,51,296]
 };

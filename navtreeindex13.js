@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"class_scenario_1_1_snapshot_states_macro.html":[12,0,50,254],
 "class_scenario_1_1_snapshot_states_macro.html":[11,0,11,252],
 "class_scenario_1_1_speed_widget.html":[12,0,50,255],
 "class_scenario_1_1_speed_widget.html":[11,0,11,253],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "classoscr_1_1_layer_factory.html":[11,0,8,19],
 "classoscr_1_1_process_model.html":[12,0,39,42],
 "classoscr_1_1_process_model.html":[11,0,8,42],
-"classoscr_1_1_protocol.html":[11,0,8,43],
-"classoscr_1_1_protocol.html":[12,0,39,43]
+"classoscr_1_1_protocol.html":[11,0,8,43]
 };

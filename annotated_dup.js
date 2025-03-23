@@ -1029,6 +1029,9 @@ var annotated_dup =
         [ "Input", "struct_nodes_1_1_midi_hi_res_1_1_input.html", null ],
         [ "Output", "struct_nodes_1_1_midi_hi_res_1_1_output.html", null ]
       ] ],
+      [ "MidiToArray", null, [
+        [ "Node", "struct_nodes_1_1_midi_to_array_1_1_node.html", null ]
+      ] ],
       [ "MidiUtil", null, [
         [ "Node", "struct_nodes_1_1_midi_util_1_1_node.html", "struct_nodes_1_1_midi_util_1_1_node" ]
       ] ],

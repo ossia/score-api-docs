@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"plugins_2score-plugin-avnd_2_crousti_2_file_8hpp_source.html":[13,0,0,2,8,3,8],
 "plugins_2score-plugin-avnd_2_crousti_2_metadata_8hpp_source.html":[13,0,0,2,8,3,16],
 "plugins_2score-plugin-controlsurface_2_control_surface_2_metadata_8hpp_source.html":[13,0,0,2,9,0,5],
 "plugins_2score-plugin-controlsurface_2_control_surface_2_presenter_8hpp_source.html":[13,0,0,2,9,0,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "struct_analysis_1_1pulse__out.html":[12,0,0,17],
 "struct_analysis_1_1value__out.html":[12,0,0,23],
 "struct_array_entity_serializer.html":[12,0,72],
-"struct_array_serializer.html":[12,0,73],
-"struct_atom_buffer.html":[12,0,74]
+"struct_array_serializer.html":[12,0,73]
 };

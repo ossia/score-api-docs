@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"dir_c604cc011f27174b86f8298fffef50ae.html":[13,0,0,2,9,0],
 "dir_c77ebcea250b1326b61851564cb99e14.html":[13,0,0,2,13,1,3],
 "dir_c85422edeb661d85159551fb6293e3d5.html":[13,0,0,2,23,0,6],
 "dir_c85d3e3c5052e9ad9ce18c6863244a25.html":[13,0,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "plugins_2score-lib-process_2_control_2_layout_8hpp_source.html":[13,0,0,2,3,0,1],
 "plugins_2score-lib-process_2_process_2_dataflow_2_control_widgets_8hpp_source.html":[13,0,0,2,3,4,3,8],
 "plugins_2score-lib-process_2_process_2_document_plugin_8hpp_source.html":[13,0,0,2,3,4,17],
-"plugins_2score-plugin-audio_2_audio_2_settings_2_presenter_8hpp_source.html":[13,0,0,2,6,0,0,2],
-"plugins_2score-plugin-avnd_2_crousti_2_file_8hpp_source.html":[13,0,0,2,8,3,8]
+"plugins_2score-plugin-audio_2_audio_2_settings_2_presenter_8hpp_source.html":[13,0,0,2,6,0,0,2]
 };

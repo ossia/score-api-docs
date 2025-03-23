@@ -25,6 +25,7 @@ var dir_f8299ef4164e854b5e2248e47e6641c2 =
     [ "Metro.hpp", "_metro_8hpp_source.html", null ],
     [ "MicroMapping.hpp", "_micro_mapping_8hpp_source.html", null ],
     [ "MidiHiRes.hpp", "_midi_hi_res_8hpp_source.html", null ],
+    [ "MidiToArray.hpp", "_midi_to_array_8hpp_source.html", null ],
     [ "MidiUtil.hpp", "_midi_util_8hpp_source.html", null ],
     [ "NoiseFilter.hpp", "_noise_filter_8hpp_source.html", null ],
     [ "PitchToValue.hpp", "_pitch_to_value_8hpp_source.html", null ],
