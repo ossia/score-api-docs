@@ -2061,8 +2061,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -4252,5 +4252,8 @@ var hierarchy =
     ] ],
     [ "WidgetFactory::XYZSlider", "struct_widget_factory_1_1_x_y_z_slider.html", null ],
     [ "WidgetFactory::XYZSpinboxes", "struct_widget_factory_1_1_x_y_z_spinboxes.html", null ],
+    [ "ysfx_midi_event_t", null, [
+      [ "YSFX::Executor::ysfx_midi_event_impl", "struct_y_s_f_x_1_1_executor_1_1ysfx__midi__event__impl.html", null ]
+    ] ],
     [ "Scenario::ZPos", "class_scenario_1_1_z_pos.html", null ]
 ];

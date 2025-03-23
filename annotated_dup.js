@@ -2548,6 +2548,7 @@ var annotated_dup =
     [ "YSFX", null, [
       [ "Executor", null, [
         [ "Component", "class_y_s_f_x_1_1_executor_1_1_component.html", null ],
+        [ "ysfx_midi_event_impl", "struct_y_s_f_x_1_1_executor_1_1ysfx__midi__event__impl.html", null ],
         [ "ysfx_node", "class_y_s_f_x_1_1_executor_1_1ysfx__node.html", null ]
       ] ],
       [ "ApplicationPlugin", "class_y_s_f_x_1_1_application_plugin.html", null ],

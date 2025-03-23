@@ -1,5 +1,6 @@
 var NAVTREEINDEX27 =
 {
+"structvisitor__entity__tag.html":[12,0,395],
 "structvisitor__enum__tag.html":[12,0,396],
 "structvisitor__object__tag.html":[12,0,397],
 "structvisitor__template__tag.html":[12,0,398],
