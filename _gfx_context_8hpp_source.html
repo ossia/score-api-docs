@@ -220,15 +220,16 @@ $(document).ready(function(){initNavTree('_gfx_context_8hpp_source.html',''); in
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  ossia::flat_set&lt;EdgeSpec&gt; preview_edges;</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  std::atomic_bool edges_changed{};</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <span class="keywordtype">int</span> m_timer{-1};</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  ossia::flat_map&lt;int, score::gfx::OutputNode*&gt; m_manualTimers;</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  ossia::object_pool&lt;std::vector&lt;score::gfx::gfx_input&gt;&gt; m_buffers;</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>};</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <span class="keywordtype">int</span> m_no_vsync_timer{-1};</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <span class="keywordtype">int</span> m_watchdog_timer{-1};</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  ossia::flat_map&lt;int, score::gfx::OutputNode*&gt; m_manualTimers;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  ossia::object_pool&lt;std::vector&lt;score::gfx::gfx_input&gt;&gt; m_buffers;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>};</div>
 </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>}</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>}</div>
 <div class="ttc" id="aclass_gfx_1_1_gfx_context_html"><div class="ttname"><a href="class_gfx_1_1_gfx_context.html">Gfx::GfxContext</a></div><div class="ttdef"><b>Definition</b> GfxContext.hpp:32</div></div>
 <div class="ttc" id="aclass_gfx_1_1_gfx_execution_action_html"><div class="ttname"><a href="class_gfx_1_1_gfx_execution_action.html">Gfx::GfxExecutionAction</a></div><div class="ttdef"><b>Definition</b> GfxExecContext.hpp:16</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a></div><div class="ttdoc">Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)</div><div class="ttdef"><b>Definition</b> OutputNode.hpp:24</div></div>
