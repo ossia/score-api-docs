@@ -1,5 +1,15 @@
 var NAVTREEINDEX27 =
 {
+"structstd_1_1hash_3_01std_1_1pair_3_01_q_string_00_01_q_string_01_4_01_4.html":[12,0,56,9],
+"structstd_1_1hash_3_01std_1_1pair_3_01_q_string_00_01_q_string_01_4_01_4.html":[11,0,14,9],
+"structstd_1_1hash_3_01std_1_1pair_3_01_q_string_00_01const_01_q_pen_01_5_01_4_01_4.html":[12,0,56,8],
+"structstd_1_1hash_3_01std_1_1pair_3_01_q_string_00_01const_01_q_pen_01_5_01_4_01_4.html":[11,0,14,8],
+"structstd_1_1hash_3_01std_1_1tuple_3_01_q_string_00_01_q_string_00_01_q_string_00_01_q_string_01_4_01_4.html":[11,0,14,10],
+"structstd_1_1hash_3_01std_1_1tuple_3_01_q_string_00_01_q_string_00_01_q_string_00_01_q_string_01_4_01_4.html":[12,0,56,10],
+"structtypeholder.html":[12,0,382],
+"structunused__t.html":[12,0,384],
+"structvisitor__abstract__entity__tag.html":[12,0,391],
+"structvisitor__abstract__object__tag.html":[12,0,392],
 "structvisitor__abstract__tag.html":[12,0,393],
 "structvisitor__default__tag.html":[12,0,394],
 "structvisitor__entity__tag.html":[12,0,395],

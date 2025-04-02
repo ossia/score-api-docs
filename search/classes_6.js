@@ -127,9 +127,10 @@ var searchData=
   ['graphpreviewwidget_124',['GraphPreviewWidget',['../class_gfx_1_1_graph_preview_widget.html',1,'Gfx']]],
   ['graphvertex_125',['GraphVertex',['../structscore_1_1_plugin_loader_1_1_plugin_dependency_graph_1_1_graph_vertex.html',1,'score::PluginLoader::PluginDependencyGraph']]],
   ['graphwidget_126',['GraphWidget',['../structoscr_1_1_graph_widget.html',1,'oscr']]],
-  ['guiapplicationcontext_127',['GUIApplicationContext',['../structscore_1_1_g_u_i_application_context.html',1,'score']]],
-  ['guiapplicationinterface_128',['GUIApplicationInterface',['../classscore_1_1_g_u_i_application_interface.html',1,'score']]],
-  ['guiapplicationplugin_129',['guiapplicationplugin',['../classscore_1_1_g_u_i_application_plugin.html',1,'score::GUIApplicationPlugin'],['../classvst_1_1_g_u_i_application_plugin.html',1,'vst::GUIApplicationPlugin']]],
-  ['guiapplicationregistrar_130',['GUIApplicationRegistrar',['../classscore_1_1_g_u_i_application_registrar.html',1,'score']]],
-  ['guielements_131',['GUIElements',['../structscore_1_1_g_u_i_elements.html',1,'score']]]
+  ['gridwidget_127',['GridWidget',['../structscore_1_1_grid_widget.html',1,'score']]],
+  ['guiapplicationcontext_128',['GUIApplicationContext',['../structscore_1_1_g_u_i_application_context.html',1,'score']]],
+  ['guiapplicationinterface_129',['GUIApplicationInterface',['../classscore_1_1_g_u_i_application_interface.html',1,'score']]],
+  ['guiapplicationplugin_130',['guiapplicationplugin',['../classscore_1_1_g_u_i_application_plugin.html',1,'score::GUIApplicationPlugin'],['../classvst_1_1_g_u_i_application_plugin.html',1,'vst::GUIApplicationPlugin']]],
+  ['guiapplicationregistrar_131',['GUIApplicationRegistrar',['../classscore_1_1_g_u_i_application_registrar.html',1,'score']]],
+  ['guielements_132',['GUIElements',['../structscore_1_1_g_u_i_elements.html',1,'score']]]
 ];

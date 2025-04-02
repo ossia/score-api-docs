@@ -1,5 +1,11 @@
 var NAVTREEINDEX19 =
 {
+"pages.html":[],
+"pluginfactories_8hpp_source.html":[13,0,0,1,0,3,7],
+"plugins_2score-lib-process_2_control_2_layout_8hpp_source.html":[13,0,0,2,3,0,1],
+"plugins_2score-lib-process_2_process_2_dataflow_2_control_widgets_8hpp_source.html":[13,0,0,2,3,4,3,8],
+"plugins_2score-lib-process_2_process_2_document_plugin_8hpp_source.html":[13,0,0,2,3,4,17],
+"plugins_2score-plugin-audio_2_audio_2_settings_2_presenter_8hpp_source.html":[13,0,0,2,6,0,0,2],
 "plugins_2score-plugin-avnd_2_crousti_2_file_8hpp_source.html":[13,0,0,2,8,3,8],
 "plugins_2score-plugin-avnd_2_crousti_2_metadata_8hpp_source.html":[13,0,0,2,8,3,16],
 "plugins_2score-plugin-controlsurface_2_control_surface_2_metadata_8hpp_source.html":[13,0,0,2,9,0,5],
@@ -243,11 +249,5 @@ var NAVTREEINDEX19 =
 "struct_analysis_1_1_spectrum.html":[12,0,0,22],
 "struct_analysis_1_1_zero_crossing.html":[12,0,0,24],
 "struct_analysis_1_1audio__in.html":[12,0,0,0],
-"struct_analysis_1_1audio__out.html":[12,0,0,1],
-"struct_analysis_1_1gain__slider.html":[12,0,0,8],
-"struct_analysis_1_1gate__slider.html":[12,0,0,9],
-"struct_analysis_1_1pulse__out.html":[12,0,0,17],
-"struct_analysis_1_1value__out.html":[12,0,0,23],
-"struct_array_entity_serializer.html":[12,0,72],
-"struct_array_serializer.html":[12,0,73]
+"struct_analysis_1_1audio__out.html":[12,0,0,1]
 };

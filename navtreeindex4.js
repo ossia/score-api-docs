@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"_record_8hpp_source.html":[13,0,0,2,29,0,0,0],
+"_record_automation_creation_visitor_8hpp_source.html":[13,0,0,2,29,0,1,0,0],
 "_record_automation_first_parameter_callback_visitor_8hpp_source.html":[13,0,0,2,29,0,1,0,1],
 "_record_automation_parameter_callback_visitor_8hpp_source.html":[13,0,0,2,29,0,1,0,2],
 "_record_data_8hpp_source.html":[13,0,0,2,29,0,1,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "_syphon_output_8hpp_source.html":[13,0,0,2,16,1,9,2],
 "_system_library_widget_8hpp_source.html":[13,0,0,2,20,0,13],
 "_t_c_p_server_widget_8hpp_source.html":[13,0,0,2,28,0,13,2],
-"_t_c_p_widget_8hpp_source.html":[13,0,0,2,28,0,13,3],
-"_teleplot_8hpp_source.html":[13,0,0,2,8,2,8],
-"_tempo_8hpp_source.html":[13,0,0,2,23,0,15]
+"_t_c_p_widget_8hpp_source.html":[13,0,0,2,28,0,13,3]
 };
