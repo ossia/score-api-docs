@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"namespacestd.html":[11,0,14],
 "pages.html":[],
 "pluginfactories_8hpp_source.html":[13,0,0,1,0,3,7],
 "plugins_2score-lib-process_2_control_2_layout_8hpp_source.html":[13,0,0,2,3,0,1],
@@ -119,7 +120,7 @@ var NAVTREEINDEX19 =
 "score-plugin-js_2_j_s_2_commands_2_script_macro_8hpp_source.html":[13,0,0,2,19,0,0,2],
 "score-plugin-js_2_j_s_2_executor_2_gpu_node_8hpp_source.html":[13,0,0,2,19,0,1,3],
 "score-plugin-js_2_j_s_2_qml_2_metatypes_8hpp_source.html":[13,0,0,2,19,0,2,4],
-"score-plugin-js_2_j_s_2_qml_2_utils_8hpp_source.html":[13,0,0,2,19,0,2,8],
+"score-plugin-js_2_j_s_2_qml_2_utils_8hpp_source.html":[13,0,0,2,19,0,2,9],
 "score-plugin-lv2_2_l_v2_2_application_plugin_8hpp_source.html":[13,0,0,2,21,0,0],
 "score-plugin-lv2_2_l_v2_2_effect_model_8hpp_source.html":[13,0,0,2,21,0,2],
 "score-plugin-lv2_2_l_v2_2_library_8hpp_source.html":[13,0,0,2,21,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "struct_analysis_1_1_spectral_diff_h_w_r.html":[12,0,0,21],
 "struct_analysis_1_1_spectrum.html":[12,0,0,22],
 "struct_analysis_1_1_zero_crossing.html":[12,0,0,24],
-"struct_analysis_1_1audio__in.html":[12,0,0,0],
-"struct_analysis_1_1audio__out.html":[12,0,0,1]
+"struct_analysis_1_1audio__in.html":[12,0,0,0]
 };

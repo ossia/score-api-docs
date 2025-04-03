@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"class_scenario_1_1_interval_inspector_widget.html":[11,0,11,120],
 "class_scenario_1_1_interval_model.html":[11,0,11,121],
 "class_scenario_1_1_interval_model.html":[12,0,50,123],
 "class_scenario_1_1_interval_model.html#a056b3b5b3ef883a6e4000e46546a5045":[12,0,50,123,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "class_scenario_1_1_slot_library_handler.html":[12,0,50,248],
 "class_scenario_1_1_slot_state.html":[11,0,11,249],
 "class_scenario_1_1_slot_state.html":[12,0,50,251],
-"class_scenario_1_1_smart_tool.html":[11,0,11,250],
-"class_scenario_1_1_smart_tool.html":[12,0,50,252]
+"class_scenario_1_1_smart_tool.html":[11,0,11,250]
 };

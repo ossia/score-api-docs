@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"classscore_1_1_toolbar_manager.html":[11,0,12,290],
 "classscore_1_1_undo_application_plugin.html":[11,0,12,292],
 "classscore_1_1_undo_application_plugin.html":[12,0,51,297],
 "classscore_1_1_undo_list_widget.html":[12,0,51,298],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "dir_01fe090d2842d042efcee11b991cdc5b.html":[13,0,0,2,8,1],
 "dir_0236dca6df11c178383bb6d32db89aba.html":[13,0,0,1,0,3],
 "dir_027c42a6e2e8c07ac01580fed38cd7e7.html":[13,0,0,2,10,0,4,0],
-"dir_02bb2b1b0723ceb5680c5433327dcc4d.html":[13,0,0,2,13,1,4],
-"dir_036c62b0d315610c0c685efbad0ec4e9.html":[13,0,0,2,31,4,3,6]
+"dir_02bb2b1b0723ceb5680c5433327dcc4d.html":[13,0,0,2,13,1,4]
 };

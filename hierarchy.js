@@ -1048,8 +1048,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Model >", "classid__base__t.html", null ],
+    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1097,8 +1097,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -3072,6 +3072,7 @@ var hierarchy =
         [ "JS::ValueOutlet", "class_j_s_1_1_value_outlet.html", null ]
       ] ],
       [ "JS::PanelDelegate", "class_j_s_1_1_panel_delegate.html", null ],
+      [ "JS::PortSink", "struct_j_s_1_1_port_sink.html", null ],
       [ "JS::PortSource", "struct_j_s_1_1_port_source.html", null ],
       [ "JS::Script", "class_j_s_1_1_script.html", null ],
       [ "Jit::AddonCompiler", "class_jit_1_1_addon_compiler.html", null ],
@@ -3346,6 +3347,7 @@ var hierarchy =
     ] ],
     [ "QQmlPropertyValueSource", null, [
       [ "JS::AddressSource", "struct_j_s_1_1_address_source.html", null ],
+      [ "JS::PortSink", "struct_j_s_1_1_port_sink.html", null ],
       [ "JS::PortSource", "struct_j_s_1_1_port_source.html", null ]
     ] ],
     [ "QScrollArea", null, [

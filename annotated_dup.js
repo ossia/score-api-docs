@@ -721,6 +721,7 @@ var annotated_dup =
       [ "OutValueMessage", "struct_j_s_1_1_out_value_message.html", null ],
       [ "PanelDelegate", "class_j_s_1_1_panel_delegate.html", null ],
       [ "PanelDelegateFactory", "class_j_s_1_1_panel_delegate_factory.html", null ],
+      [ "PortSink", "struct_j_s_1_1_port_sink.html", null ],
       [ "PortSource", "struct_j_s_1_1_port_source.html", null ],
       [ "ProcessModel", "class_j_s_1_1_process_model.html", null ],
       [ "SampleTimings", "struct_j_s_1_1_sample_timings.html", null ],

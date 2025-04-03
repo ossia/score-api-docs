@@ -1,5 +1,7 @@
 var NAVTREEINDEX27 =
 {
+"structstd_1_1hash_3_01score_1_1_loaded_plugin_versions_01_4.html":[12,0,56,4],
+"structstd_1_1hash_3_01score_1_1_loaded_plugin_versions_01_4.html":[11,0,14,4],
 "structstd_1_1hash_3_01std_1_1pair_3_01_q_string_00_01_q_string_01_4_01_4.html":[12,0,56,9],
 "structstd_1_1hash_3_01std_1_1pair_3_01_q_string_00_01_q_string_01_4_01_4.html":[11,0,14,9],
 "structstd_1_1hash_3_01std_1_1pair_3_01_q_string_00_01const_01_q_pen_01_5_01_4_01_4.html":[12,0,56,8],

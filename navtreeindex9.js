@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"class_media_1_1_step_1_1_inspector_widget.html":[12,0,33,4,1],
 "class_media_1_1_step_1_1_item.html":[12,0,33,4,2],
 "class_media_1_1_step_1_1_model.html":[12,0,33,4,4],
 "class_media_1_1_step_1_1_presenter.html":[12,0,33,4,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "class_process_1_1_process_factory___t.html":[11,0,10,80],
 "class_process_1_1_process_factory_list.html":[11,0,10,81],
 "class_process_1_1_process_factory_list.html":[12,0,44,81],
-"class_process_1_1_process_focus_manager.html":[11,0,10,82],
-"class_process_1_1_process_focus_manager.html":[12,0,44,82]
+"class_process_1_1_process_focus_manager.html":[11,0,10,82]
 };

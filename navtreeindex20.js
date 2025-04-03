@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"struct_analysis_1_1audio__out.html":[12,0,0,1],
 "struct_analysis_1_1gain__slider.html":[12,0,0,8],
 "struct_analysis_1_1gate__slider.html":[12,0,0,9],
 "struct_analysis_1_1pulse__out.html":[12,0,0,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "struct_gfx_1_1_video_1_1_video_props_1_1_stream.html":[12,0,19,11,9,0],
 "struct_gfx_1_1_window_output_settings.html":[12,0,19,102],
 "struct_gfx_1_1_window_output_settings.html":[11,0,5,90],
-"struct_gfx_1_1clear__msg__visitor.html":[12,0,19,21],
-"struct_gfx_1_1clear__msg__visitor.html":[11,0,5,9]
+"struct_gfx_1_1clear__msg__visitor.html":[12,0,19,21]
 };
