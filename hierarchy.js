@@ -1975,7 +1975,8 @@ var hierarchy =
         [ "Execution::StateComponent", "class_execution_1_1_state_component.html", null ],
         [ "LocalTree::Interval", "class_local_tree_1_1_interval.html", null ],
         [ "RemoteControl::WS::Interval", "class_remote_control_1_1_w_s_1_1_interval.html", null ]
-      ] ]
+      ] ],
+      [ "score::QGraphicsWaveformButton", "classscore_1_1_q_graphics_waveform_button.html", null ]
     ] ],
     [ "LV2::on_finish", "struct_l_v2_1_1on__finish.html", null ],
     [ "LV2::on_start", "struct_l_v2_1_1on__start.html", null ],

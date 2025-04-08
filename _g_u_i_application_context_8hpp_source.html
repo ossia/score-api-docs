@@ -154,42 +154,46 @@ $(document).ready(function(){initNavTree('_g_u_i_application_context_8hpp_source
 <div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="structscore_1_1_g_u_i_application_context.html#ace1244b45a34e2327c980238e98819c1">   69</a></span>  T&amp; <a class="code hl_function" href="structscore_1_1_g_u_i_application_context.html#ace1244b45a34e2327c980238e98819c1">applicationPlugin</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keyword">  </span>{</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">return</span> components.applicationPlugin&lt;T&gt;();</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">static_assert</span>(std::is_base_of_v&lt;score::ApplicationPlugin, T&gt;);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordflow">return</span> components.applicationPlugin&lt;T&gt;();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  }</div>
 </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  T* findApplicationPlugin()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keyword">  </span>{</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordflow">return</span> components.findApplicationPlugin&lt;T&gt;();</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  }</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="foldopen" id="foldopen00086" data-start="{" data-end="}">
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="structscore_1_1_g_u_i_application_context.html#aa9b4590be68367bf4a2c20ed241aa3e9">   86</a></span>  T&amp; <a class="code hl_function" href="structscore_1_1_g_u_i_application_context.html#aa9b4590be68367bf4a2c20ed241aa3e9">guiApplicationPlugin</a>()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="keyword">  </span>{</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordflow">return</span> components.guiApplicationPlugin&lt;T&gt;();</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  T* findApplicationPlugin()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">static_assert</span>(std::is_base_of_v&lt;score::ApplicationPlugin, T&gt;);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordflow">return</span> components.findApplicationPlugin&lt;T&gt;();</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00088" data-start="{" data-end="}">
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="structscore_1_1_g_u_i_application_context.html#aa9b4590be68367bf4a2c20ed241aa3e9">   88</a></span>  T&amp; <a class="code hl_function" href="structscore_1_1_g_u_i_application_context.html#aa9b4590be68367bf4a2c20ed241aa3e9">guiApplicationPlugin</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keyword">static_assert</span>(std::is_base_of_v&lt;score::GUIApplicationPlugin, T&gt;);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordflow">return</span> components.guiApplicationPlugin&lt;T&gt;();</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  }</div>
 </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  T* findGuiApplicationPlugin()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keyword">  </span>{</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordflow">return</span> components.findGuiApplicationPlugin&lt;T&gt;();</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  }</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  DocumentManager&amp; docManager;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  MenuManager&amp; menus;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  ToolbarManager&amp; toolbars;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  ActionManager&amp; actions;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  QMainWindow* mainWindow{};</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  QWidget* documentTabWidget{};</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>};</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  T* findGuiApplicationPlugin()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keyword">static_assert</span>(std::is_base_of_v&lt;score::GUIApplicationPlugin, T&gt;);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordflow">return</span> components.findGuiApplicationPlugin&lt;T&gt;();</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  DocumentManager&amp; docManager;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  MenuManager&amp; menus;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  ToolbarManager&amp; toolbars;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  ActionManager&amp; actions;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  QMainWindow* mainWindow{};</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  QWidget* documentTabWidget{};</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>};</div>
 </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>SCORE_LIB_BASE_EXPORT <span class="keyword">const</span> GUIApplicationContext&amp; GUIAppContext();</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>}</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>SCORE_LIB_BASE_EXPORT <span class="keyword">const</span> GUIApplicationContext&amp; GUIAppContext();</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>}</div>
 <div class="ttc" id="aclassscore_1_1_action_manager_html"><div class="ttname"><a href="classscore_1_1_action_manager.html">score::ActionManager</a></div><div class="ttdoc">The ActionManager class.</div><div class="ttdef"><b>Definition</b> ActionManager.hpp:19</div></div>
 <div class="ttc" id="aclassscore_1_1_application_components_html"><div class="ttname"><a href="classscore_1_1_application_components.html">score::ApplicationComponents</a></div><div class="ttdef"><b>Definition</b> ApplicationComponents.hpp:68</div></div>
 <div class="ttc" id="aclassscore_1_1_document_manager_html"><div class="ttname"><a href="classscore_1_1_document_manager.html">score::DocumentManager</a></div><div class="ttdoc">Owns the documents.</div><div class="ttdef"><b>Definition</b> DocumentManager.hpp:49</div></div>
@@ -203,7 +207,7 @@ $(document).ready(function(){initNavTree('_g_u_i_application_context_8hpp_source
 <div class="ttc" id="astructscore_1_1_g_u_i_application_context_html_a269e8cc6fb130c74fc7224220a69ad2c"><div class="ttname"><a href="structscore_1_1_g_u_i_application_context.html#a269e8cc6fb130c74fc7224220a69ad2c">score::GUIApplicationContext::guiApplicationPlugins</a></div><div class="ttdeci">const auto &amp; guiApplicationPlugins() const</div><div class="ttdoc">List of all the gui application-wide plug-ins.</div><div class="ttdef"><b>Definition</b> GUIApplicationContext.hpp:58</div></div>
 <div class="ttc" id="astructscore_1_1_g_u_i_application_context_html_a43846c8a6e044e823a169d8a82a0fbd0"><div class="ttname"><a href="structscore_1_1_g_u_i_application_context.html#a43846c8a6e044e823a169d8a82a0fbd0">score::GUIApplicationContext::panels</a></div><div class="ttdeci">auto panels() const</div><div class="ttdoc">List of the available GUI panels.</div><div class="ttdef"><b>Definition</b> GUIApplicationContext.hpp:28</div></div>
 <div class="ttc" id="astructscore_1_1_g_u_i_application_context_html_a56e095a4a7ae4751638f5dc9afdb06b5"><div class="ttname"><a href="structscore_1_1_g_u_i_application_context.html#a56e095a4a7ae4751638f5dc9afdb06b5">score::GUIApplicationContext::panel</a></div><div class="ttdeci">T &amp; panel() const</div><div class="ttdoc">Access to a specific PanelDelegate.</div><div class="ttdef"><b>Definition</b> GUIApplicationContext.hpp:36</div></div>
-<div class="ttc" id="astructscore_1_1_g_u_i_application_context_html_aa9b4590be68367bf4a2c20ed241aa3e9"><div class="ttname"><a href="structscore_1_1_g_u_i_application_context.html#aa9b4590be68367bf4a2c20ed241aa3e9">score::GUIApplicationContext::guiApplicationPlugin</a></div><div class="ttdeci">T &amp; guiApplicationPlugin() const</div><div class="ttdoc">Access a specific gui application plug-in instance.</div><div class="ttdef"><b>Definition</b> GUIApplicationContext.hpp:86</div></div>
+<div class="ttc" id="astructscore_1_1_g_u_i_application_context_html_aa9b4590be68367bf4a2c20ed241aa3e9"><div class="ttname"><a href="structscore_1_1_g_u_i_application_context.html#aa9b4590be68367bf4a2c20ed241aa3e9">score::GUIApplicationContext::guiApplicationPlugin</a></div><div class="ttdeci">T &amp; guiApplicationPlugin() const</div><div class="ttdoc">Access a specific gui application plug-in instance.</div><div class="ttdef"><b>Definition</b> GUIApplicationContext.hpp:88</div></div>
 <div class="ttc" id="astructscore_1_1_g_u_i_application_context_html_ace1244b45a34e2327c980238e98819c1"><div class="ttname"><a href="structscore_1_1_g_u_i_application_context.html#ace1244b45a34e2327c980238e98819c1">score::GUIApplicationContext::applicationPlugin</a></div><div class="ttdeci">T &amp; applicationPlugin() const</div><div class="ttdoc">Access a specific application plug-in instance.</div><div class="ttdef"><b>Definition</b> GUIApplicationContext.hpp:69</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
