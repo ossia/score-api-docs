@@ -205,68 +205,72 @@ $(document).ready(function(){initNavTree('_document_8hpp_source.html',''); initR
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <span class="comment">// Update the various internal timers rate after settings changes</span></div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <span class="keywordtype">void</span> updateTimers();</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="comment">// These are to be constructed by DocumentBuilder.</span></div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  <a class="code hl_class" href="classscore_1_1_document.html">Document</a>(</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>      <span class="keyword">const</span> QString&amp; name, <span class="keyword">const</span> <a class="code hl_class" href="classid__base__t.html">Id&lt;DocumentModel&gt;</a>&amp; <span class="keywordtype">id</span>, <a class="code hl_class" href="classscore_1_1_document_delegate_factory.html">DocumentDelegateFactory</a>&amp; type,</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>      QWidget* parentview, QObject* parent);</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  <span class="comment">// Load</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  <a class="code hl_class" href="classscore_1_1_document.html">Document</a>(</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>      <span class="keyword">const</span> QString&amp; name, <a class="code hl_class" href="classscore_1_1_document_delegate_factory.html">DocumentDelegateFactory</a>&amp; type, QWidget* parentview,</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>      QObject* parent);</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  <a class="code hl_class" href="classscore_1_1_document.html">Document</a>(</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>      <span class="keyword">const</span> QString&amp; name, <span class="keyword">const</span> QByteArray&amp; data, SerializationIdentifier format,</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>      <a class="code hl_class" href="classscore_1_1_document_delegate_factory.html">DocumentDelegateFactory</a>&amp; type, QWidget* parentview, QObject* parent);</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  <span class="comment">// Restore</span></div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  <a class="code hl_class" href="classscore_1_1_document.html">Document</a>(</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_restorable_document.html">score::RestorableDocument</a>&amp; data, <a class="code hl_class" href="classscore_1_1_document_delegate_factory.html">DocumentDelegateFactory</a>&amp; type,</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>      QWidget* parentview, QObject* parent);</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  <span class="keywordtype">void</span> loadModel(<span class="keyword">const</span> QString&amp; fileName, <a class="code hl_class" href="classscore_1_1_document_delegate_factory.html">DocumentDelegateFactory</a>&amp; factory);</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>  <span class="keywordtype">void</span> loadModel(</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>      <span class="keyword">const</span> QString&amp; fileName, <span class="keyword">const</span> QByteArray&amp; data, SerializationIdentifier format,</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>      <a class="code hl_class" href="classscore_1_1_document_delegate_factory.html">DocumentDelegateFactory</a>&amp; factory);</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  <span class="keywordtype">void</span> restoreModel(<span class="keyword">const</span> QByteArray&amp; data, <a class="code hl_class" href="classscore_1_1_document_delegate_factory.html">DocumentDelegateFactory</a>&amp; factory);</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  <span class="keywordtype">void</span> init();</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  <a class="code hl_struct" href="structscore_1_1_document_metadata.html">DocumentMetadata</a> m_metadata;</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>  <a class="code hl_class" href="classscore_1_1_command_stack.html">CommandStack</a> m_commandStack;</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  <a class="code hl_class" href="classscore_1_1_selection_stack.html">SelectionStack</a> m_selectionStack;</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>  <a class="code hl_class" href="classscore_1_1_object_locker.html">ObjectLocker</a> m_objectLocker;</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>  <a class="code hl_struct" href="structscore_1_1_focus_manager.html">FocusManager</a> m_focus;</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  QTimer m_documentCoarseUpdateTimer;</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  QTimer m_execTimer;</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>  <a class="code hl_class" href="classscore_1_1_command_stack_facade.html">CommandStackFacade</a> m_facade{m_commandStack};</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  <a class="code hl_class" href="class_ongoing_command_dispatcher.html">OngoingCommandDispatcher</a> m_disp{m_facade};</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  DocumentModel* m_model{};</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  DocumentView* m_view{};</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  DocumentPresenter* m_presenter{};</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>  DocumentBackupManager* m_backupMgr{};</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <span class="keywordtype">bool</span> loaded() const noexcept { <span class="keywordflow">return</span> m_loaded; }</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  <span class="comment">// These are to be constructed by DocumentBuilder.</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  Document(</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>      <span class="keyword">const</span> QString&amp; name, <span class="keyword">const</span> <a class="code hl_class" href="classid__base__t.html">Id&lt;DocumentModel&gt;</a>&amp; <span class="keywordtype">id</span>, DocumentDelegateFactory&amp; type,</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>      QWidget* parentview, QObject* parent);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  <span class="comment">// Load</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  Document(</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>      <span class="keyword">const</span> QString&amp; name, DocumentDelegateFactory&amp; type, QWidget* parentview,</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>      QObject* parent);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  Document(</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>      <span class="keyword">const</span> QString&amp; name, <span class="keyword">const</span> QByteArray&amp; data, SerializationIdentifier format,</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>      DocumentDelegateFactory&amp; type, QWidget* parentview, QObject* parent);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  <span class="comment">// Restore</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  Document(</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_restorable_document.html">score::RestorableDocument</a>&amp; data, DocumentDelegateFactory&amp; type,</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>      QWidget* parentview, QObject* parent);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <span class="keywordtype">void</span> loadModel(<span class="keyword">const</span> QString&amp; fileName, DocumentDelegateFactory&amp; factory);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  <span class="keywordtype">void</span> loadModel(</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>      <span class="keyword">const</span> QString&amp; fileName, <span class="keyword">const</span> QByteArray&amp; data, SerializationIdentifier format,</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>      DocumentDelegateFactory&amp; factory);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>  <span class="keywordtype">void</span> restoreModel(<span class="keyword">const</span> QByteArray&amp; data, DocumentDelegateFactory&amp; factory);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  <span class="keywordtype">void</span> init();</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>  DocumentMetadata m_metadata;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  CommandStack m_commandStack;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>  SelectionStack m_selectionStack;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  ObjectLocker m_objectLocker;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  FocusManager m_focus;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>  QTimer m_documentCoarseUpdateTimer;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  QTimer m_execTimer;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>  CommandStackFacade m_facade{m_commandStack};</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  <a class="code hl_class" href="class_ongoing_command_dispatcher.html">OngoingCommandDispatcher</a> m_disp{m_facade};</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  DocumentModel* m_model{};</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>  DocumentView* m_view{};</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>  DocumentPresenter* m_presenter{};</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  DocumentContext m_context;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  DocumentBackupManager* m_backupMgr{};</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  std::optional&lt;score::RestorableDocument&gt; m_initialData{};</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  <span class="keywordtype">bool</span> m_virgin{<span class="keyword">false</span>}; <span class="comment">// Used to check if we can safely close it</span></div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  <span class="comment">// if we want to load a document instead upon opening score.</span></div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>};</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  DocumentContext m_context;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  std::optional&lt;score::RestorableDocument&gt; m_initialData{};</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  <span class="keywordtype">bool</span> m_virgin{<span class="keyword">false</span>}; <span class="comment">// Used to check if we can safely close it</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  <span class="comment">// if we want to load a document instead upon opening score.</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  <span class="keywordtype">bool</span> m_loaded{<span class="keyword">false</span>}; <span class="comment">// Used to check if the document has finished loading.</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  <span class="comment">// Can be useful to turn some async operations into sync - creation of dynamic ports,</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  <span class="comment">// loading of vst plug-ins controls etc.</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>};</div>
 </div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>}</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>Q_DECLARE_METATYPE(<a class="code hl_class" href="classscore_1_1_document.html">score::Document</a>*)</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>Q_DECLARE_METATYPE(<a class="code hl_class" href="classid__base__t.html">Id&lt;score::DocumentModel&gt;</a>)</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>Q_DECLARE_METATYPE(rapidjson::Value*)</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>W_REGISTER_ARGTYPE(<a class="code hl_class" href="classscore_1_1_document.html">score::Document</a>*)</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>W_REGISTER_ARGTYPE(<a class="code hl_class" href="classid__base__t.html">Id&lt;score::DocumentModel&gt;</a>)</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>}</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>Q_DECLARE_METATYPE(<a class="code hl_class" href="classscore_1_1_document.html">score::Document</a>*)</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>Q_DECLARE_METATYPE(<a class="code hl_class" href="classid__base__t.html">Id&lt;score::DocumentModel&gt;</a>)</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>Q_DECLARE_METATYPE(rapidjson::Value*)</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>W_REGISTER_ARGTYPE(<a class="code hl_class" href="classscore_1_1_document.html">score::Document</a>*)</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>W_REGISTER_ARGTYPE(<a class="code hl_class" href="classid__base__t.html">Id&lt;score::DocumentModel&gt;</a>)</div>
 <div class="ttc" id="aclass_j_s_o_n_reader_html"><div class="ttname"><a href="class_j_s_o_n_reader.html">JSONReader</a></div><div class="ttdef"><b>Definition</b> JSONVisitor.hpp:52</div></div>
 <div class="ttc" id="aclass_ongoing_command_dispatcher_html"><div class="ttname"><a href="class_ongoing_command_dispatcher.html">OngoingCommandDispatcher</a></div><div class="ttdoc">The OngoingCommandDispatcher class.</div><div class="ttdef"><b>Definition</b> OngoingCommandDispatcher.hpp:27</div></div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition</b> Identifier.hpp:57</div></div>
-<div class="ttc" id="aclassscore_1_1_command_stack_facade_html"><div class="ttname"><a href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a></div><div class="ttdoc">A small abstraction layer over the score::CommandStack.</div><div class="ttdef"><b>Definition</b> CommandStackFacade.hpp:20</div></div>
 <div class="ttc" id="aclassscore_1_1_command_stack_html"><div class="ttname"><a href="classscore_1_1_command_stack.html">score::CommandStack</a></div><div class="ttdef"><b>Definition</b> CommandStack.hpp:26</div></div>
 <div class="ttc" id="aclassscore_1_1_document_backup_manager_html"><div class="ttname"><a href="classscore_1_1_document_backup_manager.html">score::DocumentBackupManager</a></div><div class="ttdoc">Handles document backup to allow restoring if there is a crash.</div><div class="ttdef"><b>Definition</b> DocumentBackupManager.hpp:36</div></div>
 <div class="ttc" id="aclassscore_1_1_document_builder_html"><div class="ttname"><a href="classscore_1_1_document_builder.html">score::DocumentBuilder</a></div><div class="ttdoc">Methods to set-up documents.</div><div class="ttdef"><b>Definition</b> DocumentBuilder.hpp:27</div></div>
