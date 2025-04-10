@@ -1,5 +1,6 @@
 var NAVTREEINDEX25 =
 {
+"structscore_1_1_default_control_impl.html":[11,0,12,48],
 "structscore_1_1_default_control_impl.html":[12,0,51,53],
 "structscore_1_1_default_graphics_knob_impl.html":[11,0,12,50],
 "structscore_1_1_default_graphics_knob_impl.html":[12,0,51,55],
@@ -105,14 +106,14 @@ var NAVTREEINDEX25 =
 "structscore_1_1_plugin_loader_1_1_plugin_dependency_graph_1_1_graph_vertex.html":[12,0,51,3,0,0],
 "structscore_1_1_polymorphic_component_hierarchy_manager_1_1_child_pair.html":[12,0,51,189,0],
 "structscore_1_1_polymorphic_component_hierarchy_manager_1_1_child_pair.html":[11,0,12,184,0],
-"structscore_1_1_positioned_event.html":[12,0,51,190],
 "structscore_1_1_positioned_event.html":[11,0,12,185],
+"structscore_1_1_positioned_event.html":[12,0,51,190],
 "structscore_1_1_positioned_event_3_01_scenario_1_1_point_01_4.html":[12,0,51,191],
 "structscore_1_1_positioned_event_3_01_scenario_1_1_point_01_4.html":[11,0,12,186],
 "structscore_1_1_property_command___t_1_1command.html":[12,0,51,198,0],
 "structscore_1_1_property_command___t_1_1command.html":[11,0,12,193,0],
-"structscore_1_1_q_graphics_line_edit.html":[11,0,12,204],
 "structscore_1_1_q_graphics_line_edit.html":[12,0,51,209],
+"structscore_1_1_q_graphics_line_edit.html":[11,0,12,204],
 "structscore_1_1_q_graphics_slider_base.html":[11,0,12,217],
 "structscore_1_1_q_graphics_slider_base.html":[12,0,51,222],
 "structscore_1_1_recursive_watch_1_1_callbacks.html":[12,0,51,238,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX25 =
 "structscore_1_1gfx_1_1_graph.html#a956b5fda40333edffaa3655bbf18f4c6":[12,0,51,2,15,4],
 "structscore_1_1gfx_1_1_graph.html#a956b5fda40333edffaa3655bbf18f4c6":[11,0,12,0,15,4],
 "structscore_1_1gfx_1_1_graph.html#abe3ddb004ee53340f68c7eb87fd8ec5e":[12,0,51,2,15,13],
-"structscore_1_1gfx_1_1_graph.html#abe3ddb004ee53340f68c7eb87fd8ec5e":[11,0,12,0,15,13],
-"structscore_1_1gfx_1_1_graph.html#ac01ddf31f96f7f24e070fba6635f9993":[12,0,51,2,15,3]
+"structscore_1_1gfx_1_1_graph.html#abe3ddb004ee53340f68c7eb87fd8ec5e":[11,0,12,0,15,13]
 };

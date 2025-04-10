@@ -194,6 +194,7 @@ var NAVTREEINDEX1 =
 "_expression_menu_8hpp_source.html":[13,0,0,2,31,4,6,1,1],
 "_expression_parser_8cpp_source.html":[13,0,0,2,4,0,6],
 "_expression_validator_8hpp_source.html":[13,0,0,2,31,4,6,9],
+"_external_input_8hpp_source.html":[13,0,0,2,23,2,1],
 "_factor_oracle2_8hpp_source.html":[13,0,0,2,15,0,10],
 "_factor_oracle2_m_i_d_i_8hpp_source.html":[13,0,0,2,15,0,11],
 "_factor_oracle_8hpp_source.html":[13,0,0,2,15,0,9],
@@ -216,7 +217,7 @@ var NAVTREEINDEX1 =
 "_for_each_8hpp_source.html":[13,0,0,1,1,12,12],
 "_form_widget_8hpp_source.html":[13,0,0,1,1,13,8],
 "_forward_declaration_8hpp_source.html":[13,0,0,2,31,5,0,0],
-"_frame_queue_8hpp_source.html":[13,0,0,2,23,2,1],
+"_frame_queue_8hpp_source.html":[13,0,0,2,23,2,2],
 "_full_view_interval_header_8hpp_source.html":[13,0,0,2,31,4,3,5,0,2],
 "_full_view_interval_presenter_8hpp_source.html":[13,0,0,2,31,4,3,5,0,3],
 "_full_view_interval_view_8hpp_source.html":[13,0,0,2,31,4,3,5,0,4],
@@ -225,7 +226,7 @@ var NAVTREEINDEX1 =
 "_g_p_s_protocol_settings_widget_8hpp_source.html":[13,0,0,2,28,0,4,2],
 "_g_p_s_specific_settings_8hpp_source.html":[13,0,0,2,28,0,4,3],
 "_g_p_u_video_decoder_8hpp_source.html":[13,0,0,2,16,1,2,0,1],
-"_g_streamer_compatibility_8hpp_source.html":[13,0,0,2,23,2,3],
+"_g_streamer_compatibility_8hpp_source.html":[13,0,0,2,23,2,4],
 "_g_u_i_application_context_8hpp_source.html":[13,0,0,1,1,1,3],
 "_g_u_i_application_plugin_8hpp_source.html":[13,0,0,1,1,8,0,0],
 "_g_u_i_application_plugin___qt_interface_8hpp_source.html":[13,0,0,1,1,8,4,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "_gfx_plugins.html":[3],
 "_gfx_plugins.html#CustomNode":[3,0],
 "_gfx_plugins.html#ShaderConventions":[3,1],
-"_gfx_plugins.html#VideoDecoders":[3,2],
-"_gist_state_8hpp_source.html":[13,0,0,2,5,0,6]
+"_gfx_plugins.html#VideoDecoders":[3,2]
 };

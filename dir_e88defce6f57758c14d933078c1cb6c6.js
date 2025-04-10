@@ -1,6 +1,7 @@
 var dir_e88defce6f57758c14d933078c1cb6c6 =
 [
     [ "CameraInput.hpp", "_camera_input_8hpp_source.html", null ],
+    [ "ExternalInput.hpp", "_external_input_8hpp_source.html", null ],
     [ "FrameQueue.hpp", "_frame_queue_8hpp_source.html", null ],
     [ "GpuFormats.hpp", "_gpu_formats_8hpp_source.html", null ],
     [ "GStreamerCompatibility.hpp", "_g_streamer_compatibility_8hpp_source.html", null ],

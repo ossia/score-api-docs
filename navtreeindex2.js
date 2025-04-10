@@ -1,8 +1,9 @@
 var NAVTREEINDEX2 =
 {
+"_gist_state_8hpp_source.html":[13,0,0,2,5,0,6],
 "_good_old_displacement_policy_8hpp_source.html":[13,0,0,2,31,4,9,0,3],
 "_gpu_compute_node_8hpp_source.html":[13,0,0,2,8,3,11],
-"_gpu_formats_8hpp_source.html":[13,0,0,2,23,2,2],
+"_gpu_formats_8hpp_source.html":[13,0,0,2,23,2,3],
 "_gpu_utils_8hpp_source.html":[13,0,0,2,8,3,13],
 "_gradient_execution_8hpp_source.html":[13,0,0,2,7,1,0],
 "_gradient_metadata_8hpp_source.html":[13,0,0,2,7,1,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "_midi_note_view_8hpp_source.html":[13,0,0,2,24,0,7],
 "_midi_outlet_item_8hpp_source.html":[13,0,0,2,11,0,8],
 "_midi_presenter_8hpp_source.html":[13,0,0,2,24,0,8],
-"_midi_process_8hpp_source.html":[13,0,0,2,24,0,9],
-"_midi_process_inspector_8hpp_source.html":[13,0,0,2,24,0,1,0]
+"_midi_process_8hpp_source.html":[13,0,0,2,24,0,9]
 };

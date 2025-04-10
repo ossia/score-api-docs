@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"namespacescore_1_1gfx.html#af4a120e4b5553a7ffeaeb10c7208b2e9":[11,0,12,0,93],
 "namespacestd.html":[11,0,14],
 "pages.html":[],
 "pluginfactories_8hpp_source.html":[13,0,0,1,0,3,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "struct_analysis_1_1_spectral_diff.html":[12,0,0,20],
 "struct_analysis_1_1_spectral_diff_h_w_r.html":[12,0,0,21],
 "struct_analysis_1_1_spectrum.html":[12,0,0,22],
-"struct_analysis_1_1_zero_crossing.html":[12,0,0,24],
-"struct_analysis_1_1audio__in.html":[12,0,0,0]
+"struct_analysis_1_1_zero_crossing.html":[12,0,0,24]
 };
