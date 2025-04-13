@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"_gfx_plugins.html#ShaderConventions":[3,1],
+"_gfx_plugins.html#VideoDecoders":[3,2],
 "_gist_state_8hpp_source.html":[13,0,0,2,5,0,6],
 "_good_old_displacement_policy_8hpp_source.html":[13,0,0,2,31,4,9,0,3],
 "_gpu_compute_node_8hpp_source.html":[13,0,0,2,8,3,11],
@@ -108,7 +110,7 @@ var NAVTREEINDEX2 =
 "_j_s_process_factory_8hpp_source.html":[13,0,0,2,19,0,6],
 "_j_s_process_metadata_8hpp_source.html":[13,0,0,2,19,0,7],
 "_j_s_process_model_8hpp_source.html":[13,0,0,2,19,0,8],
-"_jack_interface_8hpp_source.html":[13,0,0,2,6,0,13],
+"_jack_interface_8hpp_source.html":[13,0,0,2,6,0,15],
 "_jack_transport_8hpp_source.html":[13,0,0,2,13,1,4,0],
 "_jamoma_device_loader_8hpp_source.html":[13,0,0,2,0,0,2,0],
 "_jit_model_8hpp_source.html":[13,0,0,2,18,2,7],
@@ -179,7 +181,7 @@ var NAVTREEINDEX2 =
 "_m_i_d_i_specific_settings_8hpp_source.html":[13,0,0,2,28,0,10,5],
 "_m_i_d_i_sync_8hpp_source.html":[13,0,0,2,8,2,5],
 "_m_i_d_i_utils_8hpp_source.html":[13,0,0,2,28,0,24],
-"_m_m_e_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,14],
+"_m_m_e_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,16],
 "_m_q_t_t_device_8hpp_source.html":[13,0,0,2,28,0,12,0],
 "_m_q_t_t_protocol_factory_8hpp_source.html":[13,0,0,2,28,0,12,1],
 "_m_q_t_t_protocol_settings_widget_8hpp_source.html":[13,0,0,2,28,0,12,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX2 =
 "_midi_note_8hpp_source.html":[13,0,0,2,24,0,5],
 "_midi_note_editor_8hpp_source.html":[13,0,0,2,24,0,6],
 "_midi_note_view_8hpp_source.html":[13,0,0,2,24,0,7],
-"_midi_outlet_item_8hpp_source.html":[13,0,0,2,11,0,8],
-"_midi_presenter_8hpp_source.html":[13,0,0,2,24,0,8],
-"_midi_process_8hpp_source.html":[13,0,0,2,24,0,9]
+"_midi_outlet_item_8hpp_source.html":[13,0,0,2,11,0,8]
 };

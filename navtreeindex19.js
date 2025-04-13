@@ -1,5 +1,7 @@
 var NAVTREEINDEX19 =
 {
+"namespacescore_1_1gfx.html#ada75ef58fe373211a06093b50051b6e0":[11,0,12,0,90],
+"namespacescore_1_1gfx.html#af3bc42141b98c6699c7e5aee3674c38e":[11,0,12,0,96],
 "namespacescore_1_1gfx.html#af4a120e4b5553a7ffeaeb10c7208b2e9":[11,0,12,0,93],
 "namespacestd.html":[11,0,14],
 "pages.html":[],
@@ -247,7 +249,5 @@ var NAVTREEINDEX19 =
 "struct_analysis_1_1_r_m_s.html":[12,0,0,18],
 "struct_analysis_1_1_rolloff.html":[12,0,0,19],
 "struct_analysis_1_1_spectral_diff.html":[12,0,0,20],
-"struct_analysis_1_1_spectral_diff_h_w_r.html":[12,0,0,21],
-"struct_analysis_1_1_spectrum.html":[12,0,0,22],
-"struct_analysis_1_1_zero_crossing.html":[12,0,0,24]
+"struct_analysis_1_1_spectral_diff_h_w_r.html":[12,0,0,21]
 };

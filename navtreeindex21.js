@@ -1,11 +1,13 @@
 var NAVTREEINDEX21 =
 {
-"struct_gfx_1_1clear__msg__visitor.html":[12,0,19,21],
+"struct_gfx_1_1_window_output_settings.html":[12,0,19,102],
+"struct_gfx_1_1_window_output_settings.html":[11,0,5,90],
 "struct_gfx_1_1clear__msg__visitor.html":[11,0,5,9],
-"struct_gfx_1_1con__unvalidated.html":[11,0,5,10],
+"struct_gfx_1_1clear__msg__visitor.html":[12,0,19,21],
 "struct_gfx_1_1con__unvalidated.html":[12,0,19,22],
-"struct_gfx_1_1exec__control.html":[11,0,5,15],
+"struct_gfx_1_1con__unvalidated.html":[11,0,5,10],
 "struct_gfx_1_1exec__control.html":[12,0,19,27],
+"struct_gfx_1_1exec__control.html":[11,0,5,15],
 "struct_hierarchical_base_scenario_1_1_event_pair.html":[12,0,120,0],
 "struct_hierarchical_base_scenario_1_1_interval_pair.html":[12,0,120,1],
 "struct_hierarchical_base_scenario_1_1_state_pair.html":[12,0,120,2],
@@ -85,8 +87,8 @@ var NAVTREEINDEX21 =
 "struct_local_tree_1_1_get_property_wrapper.html":[11,0,7,7],
 "struct_local_tree_1_1_property_wrapper.html":[12,0,29,16],
 "struct_local_tree_1_1_property_wrapper.html":[11,0,7,16],
-"struct_local_tree_1_1_set_property_wrapper.html":[12,0,29,18],
 "struct_local_tree_1_1_set_property_wrapper.html":[11,0,7,18],
+"struct_local_tree_1_1_set_property_wrapper.html":[12,0,29,18],
 "struct_map_serializer.html":[12,0,145],
 "struct_media_1_1_a_v_codec_context___free.html":[12,0,33,9],
 "struct_media_1_1_a_v_format_context___free.html":[12,0,33,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX21 =
 "struct_patternist_1_1_lane.html":[12,0,41,4],
 "struct_patternist_1_1_pattern.html":[12,0,41,6],
 "struct_pd_1_1_instance.html":[12,0,42,4],
-"struct_pd_1_1_patch_spec.html":[12,0,42,8],
-"struct_pd_1_1_patch_spec_1_1_control.html":[12,0,42,8,0],
-"struct_pd_1_1_ui_wrapper.html":[12,0,42,17]
+"struct_pd_1_1_patch_spec.html":[12,0,42,8]
 };

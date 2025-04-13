@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"_create_time_sync___event___state_8hpp_source.html":[13,0,0,2,31,4,1,5,0,9],
 "_creation_meta_command_8hpp_source.html":[13,0,0,2,31,4,1,5,0,10],
 "_creation_tool_state_8hpp_source.html":[13,0,0,2,31,4,8,0,1],
 "_crest_8hpp_source.html":[13,0,0,2,5,0,2],
@@ -124,7 +125,7 @@ var NAVTREEINDEX1 =
 "_drop_process_in_interval_8hpp_source.html":[13,0,0,2,31,4,0,0,6],
 "_drop_process_in_scenario_8hpp_source.html":[13,0,0,2,31,4,0,0,7],
 "_drop_process_on_state_8hpp_source.html":[13,0,0,2,31,4,0,0,8],
-"_dummy_interface_8hpp_source.html":[13,0,0,2,6,0,11],
+"_dummy_interface_8hpp_source.html":[13,0,0,2,6,0,12],
 "_duplicate_interval_8hpp_source.html":[13,0,0,2,31,4,1,5,4],
 "_duration_section_widget_8hpp_source.html":[13,0,0,2,31,4,6,3,0,0],
 "_easing_segment_8hpp_source.html":[13,0,0,2,10,0,4,9],
@@ -231,7 +232,8 @@ var NAVTREEINDEX1 =
 "_g_u_i_application_plugin_8hpp_source.html":[13,0,0,1,1,8,0,0],
 "_g_u_i_application_plugin___qt_interface_8hpp_source.html":[13,0,0,1,1,8,4,3],
 "_gain_8hpp_source.html":[13,0,0,2,18,0,0],
-"_generic_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,12],
+"_generic_mini_audio_interface_8hpp_source.html":[13,0,0,2,6,0,13],
+"_generic_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,14],
 "_generic_process_factory_8hpp_source.html":[13,0,0,2,3,4,26],
 "_geometry_8hpp_source.html":[13,0,0,2,8,3,9],
 "_geometry_filter_2_preview_widget_8hpp_source.html":[13,0,0,2,16,1,1,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "_gfx_node_8hpp_source.html":[13,0,0,2,8,3,10],
 "_gfx_parameter_8hpp_source.html":[13,0,0,2,16,1,22],
 "_gfx_plugins.html":[3],
-"_gfx_plugins.html#CustomNode":[3,0],
-"_gfx_plugins.html#ShaderConventions":[3,1],
-"_gfx_plugins.html#VideoDecoders":[3,2]
+"_gfx_plugins.html#CustomNode":[3,0]
 };
