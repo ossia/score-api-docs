@@ -87,7 +87,8 @@ var namespacescore_1_1gfx =
       [ "OpenGL", "namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734a38d8011fe995adbf6247fa157d99ea3b", null ],
       [ "Vulkan", "namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734a6fdd5606769666af98fbd122d30d3f3a", null ],
       [ "D3D11", "namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734a57d8f1e6a706460bfbb419e8a26856da", null ],
-      [ "Metal", "namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734a9bb04ea840c3a95d7be0c3f7f5846293", null ]
+      [ "Metal", "namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734a9bb04ea840c3a95d7be0c3f7f5846293", null ],
+      [ "D3D12", "namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734af6a8d2f77966ef08037db61b37793bcd", null ]
     ] ],
     [ "ScaleMode", "namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58", [
       [ "Original", "namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58ad95b7700d898c1debb91984f45059ae4", null ],

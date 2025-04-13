@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"namespacescore_1_1gfx.html#acd667b8e0754c3ba35260d4e15e95bc0":[11,0,12,0,85],
 "namespacescore_1_1gfx.html#ada75ef58fe373211a06093b50051b6e0":[11,0,12,0,90],
 "namespacescore_1_1gfx.html#af3bc42141b98c6699c7e5aee3674c38e":[11,0,12,0,96],
 "namespacescore_1_1gfx.html#af4a120e4b5553a7ffeaeb10c7208b2e9":[11,0,12,0,93],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "struct_analysis_1_1_pitch.html":[12,0,0,16],
 "struct_analysis_1_1_r_m_s.html":[12,0,0,18],
 "struct_analysis_1_1_rolloff.html":[12,0,0,19],
-"struct_analysis_1_1_spectral_diff.html":[12,0,0,20],
-"struct_analysis_1_1_spectral_diff_h_w_r.html":[12,0,0,21]
+"struct_analysis_1_1_spectral_diff.html":[12,0,0,20]
 };

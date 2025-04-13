@@ -129,14 +129,14 @@ var NAVTREEINDEX =
 "classscore_1_1_toolbar.html",
 "dir_0236dca6df11c178383bb6d32db89aba.html",
 "dir_be0e72762b64dc4ae8710edea9b512f1.html",
-"namespacescore_1_1gfx.html#ada75ef58fe373211a06093b50051b6e0",
-"struct_analysis_1_1_spectrum.html",
-"struct_gfx_1_1_window_output_settings.html",
-"struct_pd_1_1_patch_spec_1_1_control.html",
-"struct_scenario_1_1_timenode_graph_components.html",
-"struct_y_s_f_x_1_1_language_spec.html",
-"structscore_1_1_default_combo_impl.html",
-"structscore_1_1gfx_1_1_graph.html#abe3ddb004ee53340f68c7eb87fd8ec5e",
+"namespacescore_1_1gfx.html#acd667b8e0754c3ba35260d4e15e95bc0",
+"struct_analysis_1_1_spectral_diff_h_w_r.html",
+"struct_gfx_1_1_video_1_1_video_props_1_1_stream.html",
+"struct_pd_1_1_patch_spec.html",
+"struct_scenario_1_1_timenode_graph.html#aee020c59323db73ea945be51d2215a73",
+"struct_y_s_f_x_1_1_executor_1_1ysfx__midi__event__impl.html",
+"structscore_1_1_custom_action_condition.html",
+"structscore_1_1gfx_1_1_graph.html#a956b5fda40333edffaa3655bbf18f4c6",
 "structstd_1_1hash_3_01_uuid_key_3_01_t_01_4_01_4.html"
 ];
 
