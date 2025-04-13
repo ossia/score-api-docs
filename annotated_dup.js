@@ -562,6 +562,7 @@ var annotated_dup =
       [ "Sh4ltOutputNode", "struct_gfx_1_1_sh4lt_output_node.html", "struct_gfx_1_1_sh4lt_output_node" ],
       [ "Sh4ltOutputProtocolFactory", "class_gfx_1_1_sh4lt_output_protocol_factory.html", null ],
       [ "Sh4ltOutputSettingsWidget", "class_gfx_1_1_sh4lt_output_settings_widget.html", null ],
+      [ "ShaderPreviewManager", "class_gfx_1_1_shader_preview_manager.html", null ],
       [ "ShaderPreviewWidget", "class_gfx_1_1_shader_preview_widget.html", null ],
       [ "ShaderSource", "struct_gfx_1_1_shader_source.html", "struct_gfx_1_1_shader_source" ],
       [ "SharedInputProtocolFactory", "class_gfx_1_1_shared_input_protocol_factory.html", null ],

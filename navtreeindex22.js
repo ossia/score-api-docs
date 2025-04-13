@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"struct_patternist_1_1_pattern.html":[12,0,41,6],
+"struct_pd_1_1_instance.html":[12,0,42,4],
 "struct_pd_1_1_patch_spec.html":[12,0,42,8],
 "struct_pd_1_1_patch_spec_1_1_control.html":[12,0,42,8,0],
 "struct_pd_1_1_ui_wrapper.html":[12,0,42,17],
@@ -247,7 +249,5 @@ var NAVTREEINDEX22 =
 "struct_scenario_1_1_timebars.html":[12,0,50,277],
 "struct_scenario_1_1_timenode_graph.html":[11,0,11,276],
 "struct_scenario_1_1_timenode_graph.html":[12,0,50,278],
-"struct_scenario_1_1_timenode_graph.html#a09d474121802dac36c666a730327260c":[11,0,11,276,0],
-"struct_scenario_1_1_timenode_graph.html#a09d474121802dac36c666a730327260c":[12,0,50,278,0],
-"struct_scenario_1_1_timenode_graph.html#aee020c59323db73ea945be51d2215a73":[12,0,50,278,1]
+"struct_scenario_1_1_timenode_graph.html#a09d474121802dac36c666a730327260c":[11,0,11,276,0]
 };

@@ -2873,6 +2873,7 @@ var hierarchy =
       [ "Faust::LibraryHandler", "class_faust_1_1_library_handler.html", null ],
       [ "FocusDispatcher", "class_focus_dispatcher.html", null ],
       [ "Gfx::GfxContext", "class_gfx_1_1_gfx_context.html", null ],
+      [ "Gfx::ShaderPreviewManager", "class_gfx_1_1_shader_preview_manager.html", null ],
       [ "GraphicsSceneToolPalette", "class_graphics_scene_tool_palette.html", [
         [ "Curve::ToolPalette", "class_curve_1_1_tool_palette.html", [
           [ "Curve::ToolPalette_T< Process::LayerContext >", "struct_curve_1_1_tool_palette___t.html", null ],

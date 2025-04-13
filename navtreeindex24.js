@@ -1,5 +1,7 @@
 var NAVTREEINDEX24 =
 {
+"struct_widget_factory_1_1_x_y_z_spinboxes.html":[12,0,63,30],
+"struct_word_list.html":[12,0,403],
 "struct_y_s_f_x_1_1_executor_1_1ysfx__midi__event__impl.html":[12,0,65,0,1],
 "struct_y_s_f_x_1_1_language_spec.html":[12,0,65,3],
 "structaudio__channels__attr.html":[12,0,75],
@@ -247,7 +249,5 @@ var NAVTREEINDEX24 =
 "structscore_1_1_command_store.html":[12,0,51,46],
 "structscore_1_1_component_hierarchy_manager_1_1_child_pair.html":[12,0,51,48,0],
 "structscore_1_1_component_hierarchy_manager_1_1_child_pair.html":[11,0,12,43,0],
-"structscore_1_1_components.html":[11,0,12,44],
-"structscore_1_1_components.html":[12,0,51,49],
-"structscore_1_1_custom_action_condition.html":[11,0,12,46]
+"structscore_1_1_components.html":[11,0,12,44]
 };

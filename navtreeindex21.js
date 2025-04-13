@@ -1,8 +1,10 @@
 var NAVTREEINDEX21 =
 {
+"struct_gfx_1_1_video_1_1_presenter_1_1_port.html":[12,0,19,11,5,0],
+"struct_gfx_1_1_video_1_1_video_props.html":[12,0,19,11,9],
 "struct_gfx_1_1_video_1_1_video_props_1_1_stream.html":[12,0,19,11,9,0],
-"struct_gfx_1_1_window_output_settings.html":[11,0,5,90],
-"struct_gfx_1_1_window_output_settings.html":[12,0,19,102],
+"struct_gfx_1_1_window_output_settings.html":[11,0,5,91],
+"struct_gfx_1_1_window_output_settings.html":[12,0,19,103],
 "struct_gfx_1_1clear__msg__visitor.html":[11,0,5,9],
 "struct_gfx_1_1clear__msg__visitor.html":[12,0,19,21],
 "struct_gfx_1_1con__unvalidated.html":[11,0,5,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX21 =
 "struct_p_m_1_1_local_packages_model.html":[12,0,43,0],
 "struct_p_m_1_1_package.html":[12,0,43,1],
 "struct_path_1_1_unsafe_dynamic_creation.html":[12,0,190,0],
-"struct_patternist_1_1_lane.html":[12,0,41,4],
-"struct_patternist_1_1_pattern.html":[12,0,41,6],
-"struct_pd_1_1_instance.html":[12,0,42,4]
+"struct_patternist_1_1_lane.html":[12,0,41,4]
 };
