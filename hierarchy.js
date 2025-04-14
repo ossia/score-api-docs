@@ -212,7 +212,11 @@ var hierarchy =
         ] ]
       ] ],
       [ "Scenario::EditScript< GeometryFilter::Model, GeometryFilter::Model::p_script >", "class_scenario_1_1_edit_script.html", null ],
-      [ "Scenario::EditScript< Filter::Model, Filter::Model::p_program >", "class_scenario_1_1_edit_script.html", null ],
+      [ "Scenario::EditScript< Filter::Model, Filter::Model::p_program >", "class_scenario_1_1_edit_script.html", [
+        [ "Gfx::ChangeShader", "class_gfx_1_1_change_shader.html", [
+          [ "score::StaticPropertyCommand< Gfx::Filter::Model::p_program >", "structscore_1_1_static_property_command_3_01_gfx_1_1_filter_1_1_model_1_1p__program_01_4.html", null ]
+        ] ]
+      ] ],
       [ "Scenario::EditScript< JS::ProcessModel, JS::ProcessModel::p_script >", "class_scenario_1_1_edit_script.html", [
         [ "JS::EditScript", "class_j_s_1_1_edit_script.html", [
           [ "score::StaticPropertyCommand< JS::ProcessModel::p_script >", "structscore_1_1_static_property_command_3_01_j_s_1_1_process_model_1_1p__script_01_4.html", null ]
@@ -1048,8 +1052,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< model >", "classid__base__t.html", null ],
+    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1097,8 +1101,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1334,6 +1338,9 @@ var hierarchy =
         [ "YSFX::DropHandler", "class_y_s_f_x_1_1_drop_handler.html", null ]
       ] ],
       [ "Process::ProcessModelFactory", "class_process_1_1_process_model_factory.html", [
+        [ "Process::ProcessFactory_T< Gfx::Filter::Model >", "class_process_1_1_process_factory___t.html", [
+          [ "Gfx::Filter::ProcessFactory", "struct_gfx_1_1_filter_1_1_process_factory.html", null ]
+        ] ],
         [ "Process::ProcessFactory_T< oscr::ProcessModel< Node > >", "class_process_1_1_process_factory___t.html", [
           [ "oscr::ProcessFactory< Node >", "structoscr_1_1_process_factory.html", null ]
         ] ],
@@ -2065,8 +2072,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model >", "class_path.html", null ],
+    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],

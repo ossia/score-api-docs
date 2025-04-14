@@ -9,6 +9,7 @@ var namespace_gfx =
     [ "CameraProtocolFactory", "class_gfx_1_1_camera_protocol_factory.html", null ],
     [ "CameraSettings", "struct_gfx_1_1_camera_settings.html", null ],
     [ "CameraSettingsWidget", "class_gfx_1_1_camera_settings_widget.html", null ],
+    [ "ChangeShader", "class_gfx_1_1_change_shader.html", null ],
     [ "clear_msg_visitor", "struct_gfx_1_1clear__msg__visitor.html", null ],
     [ "con_unvalidated", "struct_gfx_1_1con__unvalidated.html", null ],
     [ "CustomCameraEnumerator", "class_gfx_1_1_custom_camera_enumerator.html", null ],

@@ -424,7 +424,8 @@ var annotated_dup =
         [ "filter_node", "class_gfx_1_1_filter_1_1filter__node.html", null ],
         [ "LibraryHandler", "class_gfx_1_1_filter_1_1_library_handler.html", null ],
         [ "Model", "class_gfx_1_1_filter_1_1_model.html", null ],
-        [ "ProcessExecutorComponent", "class_gfx_1_1_filter_1_1_process_executor_component.html", "class_gfx_1_1_filter_1_1_process_executor_component" ]
+        [ "ProcessExecutorComponent", "class_gfx_1_1_filter_1_1_process_executor_component.html", "class_gfx_1_1_filter_1_1_process_executor_component" ],
+        [ "ProcessFactory", "struct_gfx_1_1_filter_1_1_process_factory.html", null ]
       ] ],
       [ "GeometryFilter", null, [
         [ "DropHandler", "class_gfx_1_1_geometry_filter_1_1_drop_handler.html", null ],
@@ -516,6 +517,7 @@ var annotated_dup =
       [ "CameraProtocolFactory", "class_gfx_1_1_camera_protocol_factory.html", null ],
       [ "CameraSettings", "struct_gfx_1_1_camera_settings.html", null ],
       [ "CameraSettingsWidget", "class_gfx_1_1_camera_settings_widget.html", null ],
+      [ "ChangeShader", "class_gfx_1_1_change_shader.html", null ],
       [ "clear_msg_visitor", "struct_gfx_1_1clear__msg__visitor.html", null ],
       [ "con_unvalidated", "struct_gfx_1_1con__unvalidated.html", null ],
       [ "CustomCameraEnumerator", "class_gfx_1_1_custom_camera_enumerator.html", null ],
