@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('_text_node_8hpp_source.html',''); init
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  QFont font;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  QPen pen;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  std::atomic_bool mustRerender{<span class="keyword">true</span>};</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  std::atomic_int64_t mustRerender{0};</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>};</div>
@@ -162,8 +162,8 @@ $(document).ready(function(){initNavTree('_text_node_8hpp_source.html',''); init
 <div class="ttc" id="astructscore_1_1gfx_1_1_message_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_message.html">score::gfx::Message</a></div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:50</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_text_node_1_1_u_b_o_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_text_node_1_1_u_b_o.html">score::gfx::TextNode::UBO</a></div><div class="ttdef"><b>Definition</b> TextNode.hpp:26</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_text_node_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_text_node.html">score::gfx::TextNode</a></div><div class="ttdoc">A node that renders text to screen.</div><div class="ttdef"><b>Definition</b> TextNode.hpp:14</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_text_node_html_a288d0fa8e9b5fb464c38730b7fba8a65"><div class="ttname"><a href="structscore_1_1gfx_1_1_text_node.html#a288d0fa8e9b5fb464c38730b7fba8a65">score::gfx::TextNode::createRenderer</a></div><div class="ttdeci">score::gfx::NodeRenderer * createRenderer(RenderList &amp;r) const noexcept override</div><div class="ttdoc">Create a renderer in a given context for this node.</div><div class="ttdef"><b>Definition</b> TextNode.cpp:196</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_text_node_html_a8f2f79c1ee738af2ea4bbbb3d078be4c"><div class="ttname"><a href="structscore_1_1gfx_1_1_text_node.html#a8f2f79c1ee738af2ea4bbbb3d078be4c">score::gfx::TextNode::process</a></div><div class="ttdeci">void process(Message &amp;&amp;msg) override</div><div class="ttdoc">Process a message from the execution engine.</div><div class="ttdef"><b>Definition</b> TextNode.cpp:201</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_text_node_html_a288d0fa8e9b5fb464c38730b7fba8a65"><div class="ttname"><a href="structscore_1_1gfx_1_1_text_node.html#a288d0fa8e9b5fb464c38730b7fba8a65">score::gfx::TextNode::createRenderer</a></div><div class="ttdeci">score::gfx::NodeRenderer * createRenderer(RenderList &amp;r) const noexcept override</div><div class="ttdoc">Create a renderer in a given context for this node.</div><div class="ttdef"><b>Definition</b> TextNode.cpp:199</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_text_node_html_a8f2f79c1ee738af2ea4bbbb3d078be4c"><div class="ttname"><a href="structscore_1_1gfx_1_1_text_node.html#a8f2f79c1ee738af2ea4bbbb3d078be4c">score::gfx::TextNode::process</a></div><div class="ttdeci">void process(Message &amp;&amp;msg) override</div><div class="ttdoc">Process a message from the execution engine.</div><div class="ttdef"><b>Definition</b> TextNode.cpp:204</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

@@ -398,6 +398,9 @@ std::unique_ptr&lt; char[]&gt;&#160;</td><td class="memItemRight" valign="bottom
 <div class="line"><span class="stringliteral">  {</span></div>
 <div class="line"><span class="stringliteral">    v_texcoord = texcoord;</span></div>
 <div class="line"><span class="stringliteral">    gl_Position = renderer.clipSpaceCorrMatrix * vec4(position.xy, 0.0, 1.);</span></div>
+<div class="line"><span class="stringliteral">#if defined(QSHADER_HLSL) || defined(QSHADER_MSL)</span></div>
+<div class="line"><span class="stringliteral">  gl_Position.y = - gl_Position.y;</span></div>
+<div class="line"><span class="stringliteral">#endif</span></div>
 <div class="line"><span class="stringliteral">  }</span></div>
 <div class="line"><span class="stringliteral">  )_&quot;</span></div>
 </div><!-- fragment -->
