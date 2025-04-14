@@ -238,7 +238,7 @@ $(document).ready(function(){initNavTree('_jit_platform_8hpp_source.html',''); i
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>populateCompileOptions(std::vector&lt;std::string&gt;&amp; args, CompilerOptions opts)</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>{</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  args.push_back(<span class="stringliteral">&quot;-triple&quot;</span>);</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  args.push_back(llvm::sys::getDefaultTargetTriple());</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  args.push_back(llvm::sys::getProcessTriple());</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  args.push_back(<span class="stringliteral">&quot;-target-cpu&quot;</span>);</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>  args.push_back(llvm::sys::getHostCPUName().lower());</div>
