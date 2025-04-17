@@ -1,5 +1,7 @@
 var NAVTREEINDEX23 =
 {
+"struct_scenario_1_1_timebars.html":[11,0,11,275],
+"struct_scenario_1_1_timebars.html":[12,0,50,277],
 "struct_scenario_1_1_timenode_graph.html":[11,0,11,276],
 "struct_scenario_1_1_timenode_graph.html":[12,0,50,278],
 "struct_scenario_1_1_timenode_graph.html#a09d474121802dac36c666a730327260c":[12,0,50,278,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX23 =
 "struct_widget_factory_1_1_program_edit.html":[12,0,63,21],
 "struct_widget_factory_1_1_program_port_script_dialog.html":[12,0,63,22],
 "struct_widget_factory_1_1_time_chooser.html":[12,0,63,23],
-"struct_widget_factory_1_1_time_signature_validator.html":[12,0,63,24],
-"struct_widget_factory_1_1_toggle.html":[12,0,63,25],
-"struct_widget_factory_1_1_updating_normalizer.html":[12,0,63,26]
+"struct_widget_factory_1_1_time_signature_validator.html":[12,0,63,24]
 };

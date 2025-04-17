@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"struct_ossia_variant_j_s_o_n_serializer.html":[12,0,189],
+"struct_p_m_1_1_local_packages_model.html":[12,0,43,0],
 "struct_p_m_1_1_package.html":[12,0,43,1],
 "struct_path_1_1_unsafe_dynamic_creation.html":[12,0,190,0],
 "struct_patternist_1_1_lane.html":[12,0,41,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX22 =
 "struct_scenario_1_1_time_signature_map.html":[12,0,50,287],
 "struct_scenario_1_1_time_signature_map.html":[11,0,11,285],
 "struct_scenario_1_1_time_signature_map_1_1impl.html":[11,0,11,285,0],
-"struct_scenario_1_1_time_signature_map_1_1impl.html":[12,0,50,287,0],
-"struct_scenario_1_1_timebars.html":[11,0,11,275],
-"struct_scenario_1_1_timebars.html":[12,0,50,277]
+"struct_scenario_1_1_time_signature_map_1_1impl.html":[12,0,50,287,0]
 };

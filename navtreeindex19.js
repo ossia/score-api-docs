@@ -6,6 +6,8 @@ var NAVTREEINDEX19 =
 "namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58ad95b7700d898c1debb91984f45059ae4":[11,0,12,0,83,0],
 "namespacescore_1_1gfx.html#acd667b8e0754c3ba35260d4e15e95bc0":[11,0,12,0,85],
 "namespacescore_1_1gfx.html#ada75ef58fe373211a06093b50051b6e0":[11,0,12,0,90],
+"namespacescore_1_1gfx.html#adcdcfcb454ba2b5ea25d7501e1b9c090":[11,0,12,0,87],
+"namespacescore_1_1gfx.html#aebc380fb69643736df552334c1be3cfb":[11,0,12,0,88],
 "namespacescore_1_1gfx.html#af3bc42141b98c6699c7e5aee3674c38e":[11,0,12,0,96],
 "namespacescore_1_1gfx.html#af4a120e4b5553a7ffeaeb10c7208b2e9":[11,0,12,0,93],
 "namespacestd.html":[11,0,14],
@@ -247,7 +249,5 @@ var NAVTREEINDEX19 =
 "struct_analysis_1_1_gist_state.html":[12,0,0,10],
 "struct_analysis_1_1_h_f_q.html":[12,0,0,11],
 "struct_analysis_1_1_kurtosis.html":[12,0,0,12],
-"struct_analysis_1_1_m_f_c_c.html":[12,0,0,14],
-"struct_analysis_1_1_mel_spectrum.html":[12,0,0,13],
-"struct_analysis_1_1_peak.html":[12,0,0,15]
+"struct_analysis_1_1_m_f_c_c.html":[12,0,0,14]
 };

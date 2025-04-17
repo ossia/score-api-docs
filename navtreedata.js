@@ -127,17 +127,17 @@ var NAVTREEINDEX =
 "classoscr_1_1_custom_text_graphics_slider.html",
 "classscore_1_1_helper_panel_delegate.html#a4e9304df762625b6ebf465871c7a5886",
 "classscore_1_1_time_spin_box.html",
-"dir_0004ed9aedabab06675ccf2cafe0b20d.html",
-"dir_b904dc45482e896cf6de8a1736957ee3.html",
+"d_2_spline3_d_2_generator_dialog_8hpp_source.html",
+"dir_b8f16202c37e734a2e71da7827b6679b.html",
 "namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58a758e4ffdefb224d656644eb82662a2f6",
-"struct_analysis_1_1_pitch.html",
-"struct_gfx_1_1_v4_l2_camera_enumerator.html",
-"struct_p_m_1_1_package.html",
-"struct_scenario_1_1_timenode_graph.html",
-"struct_widget_factory_1_1_x_y_slider.html",
-"structscore_1_1_component_hierarchy_manager_1_1_child_pair.html",
-"structscore_1_1gfx_1_1_graph.html#a502b4abc23e8335948bec9e052ddef1c",
-"structstd_1_1hash_3_01_state_1_1_address_accessor_01_4.html"
+"struct_analysis_1_1_mel_spectrum.html",
+"struct_gfx_1_1_v4_l2_camera_device_enumerator.html",
+"struct_ossia_variant_j_s_o_n_serializer.html",
+"struct_scenario_1_1_timebars.html",
+"struct_widget_factory_1_1_toggle.html",
+"structscore_1_1_command_store.html",
+"structscore_1_1gfx_1_1_graph.html#a45f84cb4eb3648b7cb42c45e46e44575",
+"structstd_1_1hash_3_01_state_1_1_address_01_4.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

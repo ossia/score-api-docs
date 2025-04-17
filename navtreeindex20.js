@@ -1,5 +1,7 @@
 var NAVTREEINDEX20 =
 {
+"struct_analysis_1_1_mel_spectrum.html":[12,0,0,13],
+"struct_analysis_1_1_peak.html":[12,0,0,15],
 "struct_analysis_1_1_pitch.html":[12,0,0,16],
 "struct_analysis_1_1_r_m_s.html":[12,0,0,18],
 "struct_analysis_1_1_rolloff.html":[12,0,0,19],
@@ -247,7 +249,5 @@ var NAVTREEINDEX20 =
 "struct_gfx_1_1_stream_options.html":[12,0,19,90],
 "struct_gfx_1_1_texture_size_widget.html":[12,0,19,94],
 "struct_gfx_1_1_texture_size_widget.html":[11,0,5,82],
-"struct_gfx_1_1_v4_l2_camera_device_enumerator.html":[11,0,5,83],
-"struct_gfx_1_1_v4_l2_camera_device_enumerator.html":[12,0,19,95],
-"struct_gfx_1_1_v4_l2_camera_enumerator.html":[11,0,5,84]
+"struct_gfx_1_1_v4_l2_camera_device_enumerator.html":[11,0,5,83]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX21 =
 {
+"struct_gfx_1_1_v4_l2_camera_device_enumerator.html":[12,0,19,95],
+"struct_gfx_1_1_v4_l2_camera_enumerator.html":[11,0,5,84],
 "struct_gfx_1_1_v4_l2_camera_enumerator.html":[12,0,19,96],
 "struct_gfx_1_1_v_codec_info.html":[11,0,5,85],
 "struct_gfx_1_1_v_codec_info.html":[12,0,19,97],
@@ -247,7 +249,5 @@ var NAVTREEINDEX21 =
 "struct_optional_sentinel.html":[12,0,185],
 "struct_ossia_variant_data_stream_deserializer.html":[12,0,186],
 "struct_ossia_variant_data_stream_serializer.html":[12,0,187],
-"struct_ossia_variant_j_s_o_n_deserializer.html":[12,0,188],
-"struct_ossia_variant_j_s_o_n_serializer.html":[12,0,189],
-"struct_p_m_1_1_local_packages_model.html":[12,0,43,0]
+"struct_ossia_variant_j_s_o_n_deserializer.html":[12,0,188]
 };

@@ -183,6 +183,9 @@ const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">score::gfx::Mesh</a>
 const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">score::gfx::Mesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>defaultTriangle</b> () const noexcept</td></tr>
 <tr class="memdesc:a907a2553f670adbc76fe64bb4ac7f37a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A triangle mesh correct for this API. <br /></td></tr>
 <tr class="separator:a907a2553f670adbc76fe64bb4ac7f37a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12f68daa9a8d640436c6afacd432cfa7" id="r_a12f68daa9a8d640436c6afacd432cfa7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a12f68daa9a8d640436c6afacd432cfa7">requiresDepth</a> () const noexcept</td></tr>
+<tr class="memdesc:a12f68daa9a8d640436c6afacd432cfa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this list of rendering actions requires depth testing at all.  <br /></td></tr>
+<tr class="separator:a12f68daa9a8d640436c6afacd432cfa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cd71ed981495ebaed3e82c7513ea163" id="r_a1cd71ed981495ebaed3e82c7513ea163"><td class="memItemLeft" align="right" valign="top"><a id="a1cd71ed981495ebaed3e82c7513ea163" name="a1cd71ed981495ebaed3e82c7513ea163"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>samples</b> () const noexcept</td></tr>
 <tr class="separator:a1cd71ed981495ebaed3e82c7513ea163"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -353,6 +356,34 @@ int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>frame</b> = 0</td>
 
 <p>Obtain the texture corresponding to an output port. </p>
 <p>This is done by looking for the render target which corresponds to a given port. </p>
+
+</div>
+</div>
+<a id="a12f68daa9a8d640436c6afacd432cfa7" name="a12f68daa9a8d640436c6afacd432cfa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12f68daa9a8d640436c6afacd432cfa7">&#9670;&#160;</a></span>requiresDepth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool score::gfx::RenderList::requiresDepth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether this list of rendering actions requires depth testing at all. </p>
+<p>e.g. it's not needed if we're just doing some generative shaders. </p>
 
 </div>
 </div>

@@ -1,5 +1,7 @@
 var NAVTREEINDEX24 =
 {
+"struct_widget_factory_1_1_toggle.html":[12,0,63,25],
+"struct_widget_factory_1_1_updating_normalizer.html":[12,0,63,26],
 "struct_widget_factory_1_1_x_y_slider.html":[12,0,63,27],
 "struct_widget_factory_1_1_x_y_spinboxes.html":[12,0,63,28],
 "struct_widget_factory_1_1_x_y_z_slider.html":[12,0,63,29],
@@ -247,7 +249,5 @@ var NAVTREEINDEX24 =
 "structscore_1_1_command_spinbox.html":[11,0,12,37],
 "structscore_1_1_command_spinbox.html":[12,0,51,42],
 "structscore_1_1_command_stack_backup.html":[11,0,12,39],
-"structscore_1_1_command_stack_backup.html":[12,0,51,44],
-"structscore_1_1_command_store.html":[12,0,51,46],
-"structscore_1_1_command_store.html":[11,0,12,41]
+"structscore_1_1_command_stack_backup.html":[12,0,51,44]
 };
