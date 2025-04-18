@@ -193,16 +193,16 @@ $(document).ready(function(){initNavTree('_window_container_8hpp_source.html',''
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  {</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordflow">if</span>(view.canResize() != Steinberg::kResultTrue)</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    Steinberg::ViewRect r;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    r.top = 0;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    r.left = 0;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    r.right = sz.width();</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    r.bottom = sz.height();</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    view.checkSizeConstraint(&amp;r);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordtype">int</span> qw = r.getWidth() * qtScaleFactor;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordtype">int</span> qh = r.getHeight() * qtScaleFactor;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordtype">int</span> qw = sz.width();</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordtype">int</span> qh = sz.height();</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    Steinberg::ViewRect r;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    r.top = 0;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    r.left = 0;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    r.right = sz.width() / qtScaleFactor;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    r.bottom = sz.height() / qtScaleFactor;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    view.checkSizeConstraint(&amp;r);</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    parentWindow.resize(QSize(qw, qh));</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
