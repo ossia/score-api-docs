@@ -115,20 +115,22 @@ $(document).ready(function(){initNavTree('_remove_nodes_8hpp_source.html',''); i
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;score/command/AggregateCommand.hpp&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span>Explorer</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span>Command</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
-<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_explorer_1_1_command_1_1_remove_nodes.html">   10</a></span><span class="keyword">class </span><a class="code hl_class" href="class_explorer_1_1_command_1_1_remove_nodes.html">RemoveNodes</a> final : <span class="keyword">public</span> <a class="code hl_class" href="classscore_1_1_aggregate_command.html">score::AggregateCommand</a></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  SCORE_COMMAND_DECL(</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>      DeviceExplorerCommandFactoryName(), <a class="code hl_class" href="class_explorer_1_1_command_1_1_remove_nodes.html">RemoveNodes</a>, <span class="stringliteral">&quot;Remove Explorer nodes&quot;</span>)</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>};</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;score_plugin_deviceexplorer_export.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span>Explorer</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span>Command</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_explorer_1_1_command_1_1_remove_nodes.html">   11</a></span><span class="keyword">class </span>SCORE_PLUGIN_DEVICEEXPLORER_EXPORT <a class="code hl_class" href="class_explorer_1_1_command_1_1_remove_nodes.html">RemoveNodes</a> final</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    : <span class="keyword">public</span> <a class="code hl_class" href="classscore_1_1_aggregate_command.html">score::AggregateCommand</a></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  SCORE_COMMAND_DECL(</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>      DeviceExplorerCommandFactoryName(), <a class="code hl_class" href="class_explorer_1_1_command_1_1_remove_nodes.html">RemoveNodes</a>, <span class="stringliteral">&quot;Remove Explorer nodes&quot;</span>)</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>};</div>
 </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>}</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>}</div>
-<div class="ttc" id="aclass_explorer_1_1_command_1_1_remove_nodes_html"><div class="ttname"><a href="class_explorer_1_1_command_1_1_remove_nodes.html">Explorer::Command::RemoveNodes</a></div><div class="ttdef"><b>Definition</b> RemoveNodes.hpp:11</div></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>}</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}</div>
+<div class="ttc" id="aclass_explorer_1_1_command_1_1_remove_nodes_html"><div class="ttname"><a href="class_explorer_1_1_command_1_1_remove_nodes.html">Explorer::Command::RemoveNodes</a></div><div class="ttdef"><b>Definition</b> RemoveNodes.hpp:13</div></div>
 <div class="ttc" id="aclassscore_1_1_aggregate_command_html"><div class="ttname"><a href="classscore_1_1_aggregate_command.html">score::AggregateCommand</a></div><div class="ttdoc">Allows for grouping of multiple commands in a single one.</div><div class="ttdef"><b>Definition</b> AggregateCommand.hpp:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
