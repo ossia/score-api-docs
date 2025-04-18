@@ -1052,8 +1052,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Model >", "classid__base__t.html", null ],
+    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -3060,6 +3060,7 @@ var hierarchy =
             [ "JS::XYZSpinboxes", "struct_j_s_1_1_x_y_z_spinboxes.html", null ]
           ] ],
           [ "JS::Button", "class_j_s_1_1_button.html", null ],
+          [ "JS::ComboBox", "class_j_s_1_1_combo_box.html", null ],
           [ "JS::Enum", "class_j_s_1_1_enum.html", null ],
           [ "JS::GenericControlInlet< Impl, ValueType >", "class_j_s_1_1_generic_control_inlet.html", [
             [ "JS::FloatSlider< Impl >", "class_j_s_1_1_float_slider.html", null ],

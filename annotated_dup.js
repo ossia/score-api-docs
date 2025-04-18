@@ -687,6 +687,7 @@ var annotated_dup =
       [ "AudioInlet", "class_j_s_1_1_audio_inlet.html", null ],
       [ "AudioOutlet", "class_j_s_1_1_audio_outlet.html", null ],
       [ "Button", "class_j_s_1_1_button.html", null ],
+      [ "ComboBox", "class_j_s_1_1_combo_box.html", null ],
       [ "ComponentCache", "struct_j_s_1_1_component_cache.html", null ],
       [ "ConsoleLibraryHandler", "class_j_s_1_1_console_library_handler.html", null ],
       [ "ControlInlet", "class_j_s_1_1_control_inlet.html", null ],

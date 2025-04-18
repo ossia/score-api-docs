@@ -79,7 +79,7 @@ var searchData=
   ['colorbang_76',['ColorBang',['../classscore_1_1_color_bang.html',1,'score']]],
   ['colorref_77',['ColorRef',['../structscore_1_1_color_ref.html',1,'score']]],
   ['colors_78',['colors',['../class_automation_1_1_colors.html',1,'Automation::Colors'],['../class_dataflow_1_1_curve_item_1_1_colors.html',1,'Dataflow::CurveItem::Colors'],['../class_interpolation_1_1_colors.html',1,'Interpolation::Colors'],['../class_interp_state_1_1_colors.html',1,'InterpState::Colors'],['../class_mapping_1_1_colors.html',1,'Mapping::Colors']]],
-  ['combobox_79',['combobox',['../classscore_1_1_combo_box.html',1,'score::ComboBox'],['../struct_widget_factory_1_1_combo_box.html',1,'WidgetFactory::ComboBox']]],
+  ['combobox_79',['combobox',['../class_j_s_1_1_combo_box.html',1,'JS::ComboBox'],['../classscore_1_1_combo_box.html',1,'score::ComboBox'],['../struct_widget_factory_1_1_combo_box.html',1,'WidgetFactory::ComboBox']]],
   ['combobox_5ffrom_5farray_80',['combobox_from_array',['../struct_nodes_1_1combobox__from__array.html',1,'Nodes']]],
   ['combobox_5ffrom_5farray_3c_22duration_22_3e_81',['combobox_from_array&lt;&quot;Duration&quot;&gt;',['../struct_nodes_1_1combobox__from__array.html',1,'Nodes']]],
   ['combobox_5ffrom_5farray_3c_22quantif_22_3e_82',['combobox_from_array&lt;&quot;Quantif&quot;&gt;',['../struct_nodes_1_1combobox__from__array.html',1,'Nodes']]],

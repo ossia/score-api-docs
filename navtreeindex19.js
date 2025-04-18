@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58":[11,0,12,0,83],
 "namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58a758e4ffdefb224d656644eb82662a2f6":[11,0,12,0,83,1],
 "namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58a77344a58890b502d0c2ac1c4fab38279":[11,0,12,0,83,2],
 "namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58aa9237ec7e51646b8653b2f43a413ff02":[11,0,12,0,83,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "struct_analysis_1_1_flatness.html":[12,0,0,7],
 "struct_analysis_1_1_gist_state.html":[12,0,0,10],
 "struct_analysis_1_1_h_f_q.html":[12,0,0,11],
-"struct_analysis_1_1_kurtosis.html":[12,0,0,12],
-"struct_analysis_1_1_m_f_c_c.html":[12,0,0,14]
+"struct_analysis_1_1_kurtosis.html":[12,0,0,12]
 };
