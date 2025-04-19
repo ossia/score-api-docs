@@ -191,25 +191,28 @@ $(document).ready(function(){initNavTree('score-plugin-vst3_2_vst3_2_library_8hp
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    con(plug, &amp;vst3::ApplicationPlugin::vstChanged, <span class="keyword">this</span>,</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        [&amp;plug, &amp;model, node, &amp;parent, reset_plugs] {</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      model.beginRemoveRows(node, 0, parent.childCount());</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>      parent.resize(0);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>      model.endRemoveRows();</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>      <span class="keywordtype">int</span> k = 0;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>      <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; vst : plug.vst_infos)</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordflow">if</span>(vst.isValid)</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>          k++;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>      <span class="keywordflow">if</span>(k &gt; 0)</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>      {</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        model.beginInsertRows(node, 0, k - 1);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        reset_plugs();</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        model.endInsertRows();</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>      }</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    });</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  }</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>};</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      <span class="keywordflow">if</span>(parent.childCount() &gt; 0)</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>      {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        model.beginRemoveRows(node, 0, parent.childCount() - 1);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        parent.resize(0);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        model.endRemoveRows();</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>      }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>      <span class="keywordtype">int</span> k = 0;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>      <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; vst : plug.vst_infos)</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordflow">if</span>(vst.isValid)</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>          k++;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      <span class="keywordflow">if</span>(k &gt; 0)</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>      {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        model.beginInsertRows(node, 0, k - 1);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        reset_plugs();</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        model.endInsertRows();</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    });</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>};</div>
 </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>}</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}</div>
 <div class="ttc" id="aclass_library_1_1_library_interface_html"><div class="ttname"><a href="class_library_1_1_library_interface.html">Library::LibraryInterface</a></div><div class="ttdef"><b>Definition</b> LibraryInterface.hpp:22</div></div>
 <div class="ttc" id="aclass_library_1_1_processes_item_model_html"><div class="ttname"><a href="class_library_1_1_processes_item_model.html">Library::ProcessesItemModel</a></div><div class="ttdef"><b>Definition</b> ProcessesItemModel.hpp:43</div></div>
 <div class="ttc" id="aclass_tree_node_html"><div class="ttname"><a href="class_tree_node.html">TreeNode&lt; ProcessData &gt;</a></div></div>
