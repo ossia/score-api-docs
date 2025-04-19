@@ -1558,6 +1558,7 @@ var hierarchy =
     [ "WidgetFactory::IntSlider", "struct_widget_factory_1_1_int_slider.html", null ],
     [ "WidgetFactory::IntSpinBox", "struct_widget_factory_1_1_int_spin_box.html", null ],
     [ "JS::InValueMessage", "struct_j_s_1_1_in_value_message.html", null ],
+    [ "invisible_window", "structinvisible__window.html", null ],
     [ "InvisibleRootNode", "struct_invisible_root_node.html", null ],
     [ "Steinberg::Vst::IParameterChanges", null, [
       [ "vst3::param_changes", "classvst3_1_1param__changes.html", null ]
@@ -2072,8 +2073,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"_midi_outlet_item_8hpp_source.html":[13,0,0,2,11,0,8],
 "_midi_presenter_8hpp_source.html":[13,0,0,2,24,0,8],
 "_midi_process_8hpp_source.html":[13,0,0,2,24,0,9],
 "_midi_process_inspector_8hpp_source.html":[13,0,0,2,24,0,1,0],
@@ -87,7 +88,7 @@ var NAVTREEINDEX3 =
 "_object_item_model_8hpp_source.html":[13,0,0,2,31,4,6,4,0],
 "_object_locker_8hpp_source.html":[13,0,0,1,1,6,0],
 "_object_mapper_8hpp_source.html":[13,0,0,2,31,4,8,0,2],
-"_object_matches_8hpp_source.html":[13,0,0,1,1,12,17],
+"_object_matches_8hpp_source.html":[13,0,0,1,1,12,18],
 "_object_menu_actions_8hpp_source.html":[13,0,0,2,31,4,0,1,1],
 "_object_path_8hpp_source.html":[13,0,0,1,1,7,0,1],
 "_offline_action_8hpp_source.html":[13,0,0,2,3,4,9,0],
@@ -241,13 +242,12 @@ var NAVTREEINDEX3 =
 "_q_graphics_x_y_z_chooser_8hpp_source.html":[13,0,0,1,1,5,1,28],
 "_q_graphics_x_y_z_spinbox_8hpp_source.html":[13,0,0,1,1,5,1,29],
 "_q_image_pool_8hpp_source.html":[13,0,0,2,23,0,5,1],
-"_q_map_helper_8hpp.html":[13,0,0,1,1,12,18],
-"_q_map_helper_8hpp_source.html":[13,0,0,1,1,12,18],
+"_q_map_helper_8hpp.html":[13,0,0,1,1,12,19],
+"_q_map_helper_8hpp_source.html":[13,0,0,1,1,12,19],
 "_q_rhi_gles2_8hpp_source.html":[13,0,0,1,1,4,1],
 "_qml_objects_8hpp_source.html":[13,0,0,2,19,0,2,7],
 "_qt_metatypes_8hpp_source.html":[13,0,0,2,19,0,2,8],
 "_quantification_widget_8hpp_source.html":[13,0,0,1,1,13,18],
 "_quantifier_8hpp_source.html":[13,0,0,2,15,0,29],
-"_r_g_b_a_8hpp_source.html":[13,0,0,2,16,1,2,0,4],
-"_r_m_s_data_8hpp_source.html":[13,0,0,2,23,0,13]
+"_r_g_b_a_8hpp_source.html":[13,0,0,2,16,1,2,0,4]
 };

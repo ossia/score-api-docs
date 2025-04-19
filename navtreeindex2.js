@@ -99,6 +99,7 @@ var NAVTREEINDEX2 =
 "_interval_view_8hpp_source.html":[13,0,0,2,31,4,3,5,12],
 "_invert_y_renderer_8hpp_source.html":[13,0,0,2,16,1,23],
 "_invisible_root_node_8hpp_source.html":[13,0,0,1,1,7,1,0],
+"_invisible_window_8hpp_source.html":[13,0,0,1,1,12,14],
 "_invoke_8hpp_source.html":[13,0,0,1,1,12,2,5],
 "_is_template_8hpp_source.html":[13,0,0,1,1,10,6],
 "_item_bounder_8hpp_source.html":[13,0,0,1,1,5,13],
@@ -148,7 +149,7 @@ var NAVTREEINDEX2 =
 "_library_widget_8hpp_source.html":[13,0,0,2,20,0,5],
 "_linear_segment_8hpp_source.html":[13,0,0,2,10,0,4,0,0],
 "_linux_2_plug_frame_8hpp_source.html":[13,0,0,2,38,0,0,0,0],
-"_list_network_addresses_8hpp_source.html":[13,0,0,1,1,12,14],
+"_list_network_addresses_8hpp_source.html":[13,0,0,1,1,12,15],
 "_listening_handler_8hpp_source.html":[13,0,0,2,12,0,4,2],
 "_listening_handler_factory_8hpp_source.html":[13,0,0,2,12,0,4,3],
 "_listening_handler_factory_list_8hpp_source.html":[13,0,0,2,12,0,4,4],
@@ -191,7 +192,7 @@ var NAVTREEINDEX2 =
 "_magnetism_adjuster_8hpp_source.html":[13,0,0,2,3,3,1],
 "_make_bus_8hpp_source.html":[13,0,0,2,31,4,1,3,7],
 "_manual_clock_8hpp_source.html":[13,0,0,2,13,1,1,3],
-"_map_copy_8hpp_source.html":[13,0,0,1,1,12,15],
+"_map_copy_8hpp_source.html":[13,0,0,1,1,12,16],
 "_map_serialization_8hpp_source.html":[13,0,0,1,1,10,9],
 "_mapper_device_8hpp_source.html":[13,0,0,2,28,0,8,0],
 "_mapping_colors_8hpp_source.html":[13,0,0,2,22,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "_midi_inlet_item_8hpp_source.html":[13,0,0,2,11,0,7],
 "_midi_note_8hpp_source.html":[13,0,0,2,24,0,5],
 "_midi_note_editor_8hpp_source.html":[13,0,0,2,24,0,6],
-"_midi_note_view_8hpp_source.html":[13,0,0,2,24,0,7],
-"_midi_outlet_item_8hpp_source.html":[13,0,0,2,11,0,8]
+"_midi_note_view_8hpp_source.html":[13,0,0,2,24,0,7]
 };

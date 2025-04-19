@@ -14,6 +14,7 @@ var dir_97b556a87b7c53069d27ffc5d3c87ca6 =
     [ "FindStringInFile.hpp", "_find_string_in_file_8hpp_source.html", null ],
     [ "ForEach.hpp", "_for_each_8hpp_source.html", null ],
     [ "IdentifierGeneration.hpp", "_identifier_generation_8hpp_source.html", null ],
+    [ "InvisibleWindow.hpp", "_invisible_window_8hpp_source.html", null ],
     [ "ListNetworkAddresses.hpp", "_list_network_addresses_8hpp_source.html", null ],
     [ "MapCopy.hpp", "_map_copy_8hpp_source.html", null ],
     [ "lib/score/tools/Metadata.hpp", "lib_2score_2tools_2_metadata_8hpp_source.html", null ],

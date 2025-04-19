@@ -2639,6 +2639,7 @@ var annotated_dup =
     [ "increase_timer_precision", "structincrease__timer__precision.html", null ],
     [ "InputCopier", "struct_input_copier.html", null ],
     [ "IntervalModelTests", "class_interval_model_tests.html", null ],
+    [ "invisible_window", "structinvisible__window.html", null ],
     [ "InvisibleRootNode", "struct_invisible_root_node.html", null ],
     [ "is_shared_ptr", "structis__shared__ptr.html", null ],
     [ "is_shared_ptr< std::shared_ptr< T > >", "structis__shared__ptr_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html", null ],

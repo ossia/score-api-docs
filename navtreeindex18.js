@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"dir_b760342c48181f544d2706818bb5bf8f.html":[13,0,0,2,8,3],
 "dir_b781242d5829ca23ce24bc852e9d6c04.html":[13,0,0,2,27],
 "dir_b8f16202c37e734a2e71da7827b6679b.html":[13,0,0,2,14,0],
 "dir_b8f4bf90a3246cac404bcbf75ce99b3b.html":[13,0,0,2,12],
@@ -119,8 +120,8 @@ var NAVTREEINDEX18 =
 "functions_d.html":[12,3,0,2],
 "functions_e.html":[12,3,0,3],
 "functions_f.html":[12,3,0,4],
-"functions_func.html":[12,3,1],
 "functions_func.html":[12,3,1,0],
+"functions_func.html":[12,3,1],
 "functions_func_c.html":[12,3,1,1],
 "functions_func_d.html":[12,3,1,2],
 "functions_func_e.html":[12,3,1,3],
@@ -173,7 +174,7 @@ var NAVTREEINDEX18 =
 "lib_2score_2model_2_component_8hpp_source.html":[13,0,0,1,1,7,4],
 "lib_2score_2plugins_2documentdelegate_2plugin_2_document_plugin_8hpp_source.html":[13,0,0,1,1,8,1,0,0],
 "lib_2score_2tools_2_file_8hpp_source.html":[13,0,0,1,1,12,8],
-"lib_2score_2tools_2_metadata_8hpp_source.html":[13,0,0,1,1,12,16],
+"lib_2score_2tools_2_metadata_8hpp_source.html":[13,0,0,1,1,12,17],
 "lib_2score_2widgets_2_control_widgets_8hpp_source.html":[13,0,0,1,1,13,5],
 "lib_2score_2widgets_2_layout_8hpp_source.html":[13,0,0,1,1,13,12],
 "lv2__atom__helpers_8hpp_source.html":[13,0,0,2,21,0,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "namespacescore_1_1gfx.html#a65ed3e9bcd7da04ca16e3feb18935e1f":[11,0,12,0,86],
 "namespacescore_1_1gfx.html#a78ab4e37b245596d7fbb9023414aa622":[11,0,12,0,94],
 "namespacescore_1_1gfx.html#a8c078a7b49d41725690f0f9aa64d772f":[11,0,12,0,84],
-"namespacescore_1_1gfx.html#aae9462b53d25a8fe2f2a7de730a261d8":[11,0,12,0,95],
-"namespacescore_1_1gfx.html#ab9422d6d02158084503b076c4a382cbf":[11,0,12,0,92]
+"namespacescore_1_1gfx.html#aae9462b53d25a8fe2f2a7de730a261d8":[11,0,12,0,95]
 };

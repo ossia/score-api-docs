@@ -1,6 +1,7 @@
 var NAVTREEINDEX4 =
 {
-"_random_name_provider_8hpp_source.html":[13,0,0,1,1,12,19],
+"_r_m_s_data_8hpp_source.html":[13,0,0,2,23,0,13],
+"_random_name_provider_8hpp_source.html":[13,0,0,1,1,12,20],
 "_rate_limiter_8hpp_source.html":[13,0,0,2,15,0,30],
 "_rate_widget_8hpp_source.html":[13,0,0,2,28,0,27],
 "_reactive_label_8hpp_source.html":[13,0,0,1,1,13,19],
@@ -16,7 +17,7 @@ var NAVTREEINDEX4 =
 "_recording_command_factory_8hpp_source.html":[13,0,0,2,29,0,0,1],
 "_rect_item_8hpp_source.html":[13,0,0,1,1,5,15],
 "_recursive_filter_proxy_8hpp_source.html":[13,0,0,2,20,0,12],
-"_recursive_watch_8hpp_source.html":[13,0,0,1,1,12,20],
+"_recursive_watch_8hpp_source.html":[13,0,0,1,1,12,21],
 "_refresh_states_8hpp_source.html":[13,0,0,2,31,4,1,0,6],
 "_refresh_states_macro_8hpp_source.html":[13,0,0,2,31,4,1,0,7],
 "_relation_8hpp_source.html":[13,0,0,2,4,0,10],
@@ -44,7 +45,7 @@ var NAVTREEINDEX4 =
 "_rolloff_8hpp_source.html":[13,0,0,2,5,0,12],
 "_runtime_dispatcher_8hpp_source.html":[13,0,0,1,1,2,0,5],
 "_s_d_l_interface_8hpp_source.html":[13,0,0,2,6,0,19],
-"_safe_cast_8hpp_source.html":[13,0,0,1,1,12,21],
+"_safe_cast_8hpp_source.html":[13,0,0,1,1,12,22],
 "_safe_q_application_8hpp_source.html":[13,0,0,1,0,0,7],
 "_scale_8hpp_source.html":[13,0,0,2,16,1,2,18],
 "_scale_notes_8hpp_source.html":[13,0,0,2,24,0,0,4],
@@ -242,12 +243,11 @@ var NAVTREEINDEX4 =
 "_string_value_widget_8hpp_source.html":[13,0,0,2,4,0,0,0,2],
 "_structure_synth_8hpp_source.html":[13,0,0,2,34,0,8],
 "_style_sheets_8hpp_source.html":[13,0,0,1,1,13,26],
-"_subtype_variant_8hpp_source.html":[13,0,0,1,1,12,22],
+"_subtype_variant_8hpp_source.html":[13,0,0,1,1,12,23],
 "_suil_8hpp_source.html":[13,0,0,2,21,0,6],
 "_summary_inspector_widget_8hpp_source.html":[13,0,0,2,31,4,6,6,0],
 "_swap_slots_8hpp_source.html":[13,0,0,2,31,4,1,3,0,3],
 "_sweeper_8hpp_source.html":[13,0,0,2,8,2,7],
 "_sync_8hpp_source.html":[13,0,0,2,30,1,2,0,5],
-"_syphon_helpers_8hpp_source.html":[13,0,0,2,16,1,9,0],
-"_syphon_input_8hpp_source.html":[13,0,0,2,16,1,9,1]
+"_syphon_helpers_8hpp_source.html":[13,0,0,2,16,1,9,0]
 };
