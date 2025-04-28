@@ -1,5 +1,10 @@
 var NAVTREEINDEX22 =
 {
+"struct_nodes_1_1combobox__from__array.html":[12,0,38,29],
+"struct_nodes_1_1combobox__from__array_1_1range.html":[12,0,38,29,0],
+"struct_nodes_1_1ossia__port.html":[12,0,38,34],
+"struct_optional_sentinel.html":[12,0,186],
+"struct_ossia_variant_data_stream_deserializer.html":[12,0,187],
 "struct_ossia_variant_data_stream_serializer.html":[12,0,188],
 "struct_ossia_variant_j_s_o_n_deserializer.html":[12,0,189],
 "struct_ossia_variant_j_s_o_n_serializer.html":[12,0,190],
@@ -244,10 +249,5 @@ var NAVTREEINDEX22 =
 "struct_scenario_1_1_slot_presenter.html":[12,0,50,250],
 "struct_scenario_1_1_snapshot_action.html":[12,0,50,253],
 "struct_scenario_1_1_snapshot_action.html":[11,0,11,251],
-"struct_scenario_1_1_start_date_comparator.html":[12,0,50,256],
-"struct_scenario_1_1_start_date_comparator.html":[11,0,11,254],
-"struct_scenario_1_1_state_overlays.html":[12,0,50,262],
-"struct_scenario_1_1_state_overlays.html":[11,0,11,260],
-"struct_scenario_1_1_time_signature_map.html":[12,0,50,287],
-"struct_scenario_1_1_time_signature_map.html":[11,0,11,285]
+"struct_scenario_1_1_start_date_comparator.html":[12,0,50,256]
 };

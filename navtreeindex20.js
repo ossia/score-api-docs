@@ -1,5 +1,10 @@
 var NAVTREEINDEX20 =
 {
+"struct_analysis_1_1_energy_difference.html":[12,0,0,5],
+"struct_analysis_1_1_envelope_follower.html":[12,0,0,6],
+"struct_analysis_1_1_flatness.html":[12,0,0,7],
+"struct_analysis_1_1_gist_state.html":[12,0,0,10],
+"struct_analysis_1_1_h_f_q.html":[12,0,0,11],
 "struct_analysis_1_1_kurtosis.html":[12,0,0,12],
 "struct_analysis_1_1_m_f_c_c.html":[12,0,0,14],
 "struct_analysis_1_1_mel_spectrum.html":[12,0,0,13],
@@ -244,10 +249,5 @@ var NAVTREEINDEX20 =
 "struct_gfx_1_1_spout_1_1_spout_input_node.html":[12,0,19,8,4],
 "struct_gfx_1_1_spout_1_1_spout_input_node.html#a877a31134a52df8de56c2a1d3e77cb4a":[12,0,19,8,4,1],
 "struct_gfx_1_1_spout_node.html":[11,0,5,75],
-"struct_gfx_1_1_spout_node.html":[12,0,19,87],
-"struct_gfx_1_1_spout_node.html#a28c7d5311530845d77f105f53ae58cd8":[12,0,19,87,0],
-"struct_gfx_1_1_spout_node.html#a28c7d5311530845d77f105f53ae58cd8":[11,0,5,75,0],
-"struct_gfx_1_1_stream_options.html":[11,0,5,78],
-"struct_gfx_1_1_stream_options.html":[12,0,19,90],
-"struct_gfx_1_1_texture_size_widget.html":[12,0,19,94]
+"struct_gfx_1_1_spout_node.html":[12,0,19,87]
 };

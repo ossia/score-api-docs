@@ -1,5 +1,10 @@
 var NAVTREEINDEX24 =
 {
+"struct_widget_factory_1_1_multi_slider.html":[12,0,63,18],
+"struct_widget_factory_1_1_multi_slider_x_y.html":[12,0,63,19],
+"struct_widget_factory_1_1_path_generator_x_y.html":[12,0,63,20],
+"struct_widget_factory_1_1_program_edit.html":[12,0,63,21],
+"struct_widget_factory_1_1_program_port_script_dialog.html":[12,0,63,22],
 "struct_widget_factory_1_1_time_chooser.html":[12,0,63,23],
 "struct_widget_factory_1_1_time_signature_validator.html":[12,0,63,24],
 "struct_widget_factory_1_1_toggle.html":[12,0,63,25],
@@ -244,10 +249,5 @@ var NAVTREEINDEX24 =
 "structscore_1_1_color_ref.html":[12,0,51,34],
 "structscore_1_1_color_ref.html":[11,0,12,29],
 "structscore_1_1_combo_slider.html":[12,0,51,36],
-"structscore_1_1_combo_slider.html":[11,0,12,31],
-"structscore_1_1_command_data.html":[12,0,51,39],
-"structscore_1_1_command_data.html":[11,0,12,34],
-"structscore_1_1_command_key_hash.html":[12,0,51,41],
-"structscore_1_1_command_key_hash.html":[11,0,12,36],
-"structscore_1_1_command_spinbox.html":[12,0,51,42]
+"structscore_1_1_combo_slider.html":[11,0,12,31]
 };

@@ -1,5 +1,10 @@
 var NAVTREEINDEX23 =
 {
+"struct_scenario_1_1_start_date_comparator.html":[11,0,11,254],
+"struct_scenario_1_1_state_overlays.html":[12,0,50,262],
+"struct_scenario_1_1_state_overlays.html":[11,0,11,260],
+"struct_scenario_1_1_time_signature_map.html":[12,0,50,287],
+"struct_scenario_1_1_time_signature_map.html":[11,0,11,285],
 "struct_scenario_1_1_time_signature_map_1_1impl.html":[11,0,11,285,0],
 "struct_scenario_1_1_time_signature_map_1_1impl.html":[12,0,50,287,0],
 "struct_scenario_1_1_timebars.html":[12,0,50,277],
@@ -244,10 +249,5 @@ var NAVTREEINDEX23 =
 "struct_widget_factory_1_1_int_spin_box.html":[12,0,63,14],
 "struct_widget_factory_1_1_line_edit.html":[12,0,63,16],
 "struct_widget_factory_1_1_linear_normalizer.html":[12,0,63,15],
-"struct_widget_factory_1_1_log_normalizer.html":[12,0,63,17],
-"struct_widget_factory_1_1_multi_slider.html":[12,0,63,18],
-"struct_widget_factory_1_1_multi_slider_x_y.html":[12,0,63,19],
-"struct_widget_factory_1_1_path_generator_x_y.html":[12,0,63,20],
-"struct_widget_factory_1_1_program_edit.html":[12,0,63,21],
-"struct_widget_factory_1_1_program_port_script_dialog.html":[12,0,63,22]
+"struct_widget_factory_1_1_log_normalizer.html":[12,0,63,17]
 };

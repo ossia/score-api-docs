@@ -693,6 +693,7 @@ var annotated_dup =
       [ "ControlInlet", "class_j_s_1_1_control_inlet.html", null ],
       [ "DeviceContext", "class_j_s_1_1_device_context.html", null ],
       [ "DeviceIdentifier", "struct_j_s_1_1_device_identifier.html", null ],
+      [ "DeviceListener", "class_j_s_1_1_device_listener.html", null ],
       [ "DropHandler", "class_j_s_1_1_drop_handler.html", null ],
       [ "EditJsContext", "class_j_s_1_1_edit_js_context.html", "class_j_s_1_1_edit_js_context" ],
       [ "EditScript", "class_j_s_1_1_edit_script.html", null ],

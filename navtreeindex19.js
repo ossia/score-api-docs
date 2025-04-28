@@ -1,5 +1,10 @@
 var NAVTREEINDEX19 =
 {
+"namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734af6a8d2f77966ef08037db61b37793bcd":[11,0,12,0,82,5],
+"namespacescore_1_1gfx.html#a65ed3e9bcd7da04ca16e3feb18935e1f":[11,0,12,0,86],
+"namespacescore_1_1gfx.html#a78ab4e37b245596d7fbb9023414aa622":[11,0,12,0,94],
+"namespacescore_1_1gfx.html#a8c078a7b49d41725690f0f9aa64d772f":[11,0,12,0,84],
+"namespacescore_1_1gfx.html#aae9462b53d25a8fe2f2a7de730a261d8":[11,0,12,0,95],
 "namespacescore_1_1gfx.html#ab9422d6d02158084503b076c4a382cbf":[11,0,12,0,92],
 "namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58":[11,0,12,0,83],
 "namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58a758e4ffdefb224d656644eb82662a2f6":[11,0,12,0,83,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX19 =
 "statemachines_8hpp_source.html":[13,0,0,1,0,3,10],
 "struct_analysis_1_1_c_s_d.html":[12,0,0,4],
 "struct_analysis_1_1_centroid.html":[12,0,0,2],
-"struct_analysis_1_1_crest.html":[12,0,0,3],
-"struct_analysis_1_1_energy_difference.html":[12,0,0,5],
-"struct_analysis_1_1_envelope_follower.html":[12,0,0,6],
-"struct_analysis_1_1_flatness.html":[12,0,0,7],
-"struct_analysis_1_1_gist_state.html":[12,0,0,10],
-"struct_analysis_1_1_h_f_q.html":[12,0,0,11]
+"struct_analysis_1_1_crest.html":[12,0,0,3]
 };
