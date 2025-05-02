@@ -219,6 +219,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetChange</b
 <tr class="memitem:acb786dd39ba199b5f3e9c9bc66d9893a inherit pub_methods_classscore_1_1gfx_1_1_node" id="r_acb786dd39ba199b5f3e9c9bc66d9893a"><td class="memItemLeft" align="right" valign="top">
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasRenderTargetChanged</b> (int64_t &amp;renderer) const noexcept</td></tr>
 <tr class="separator:acb786dd39ba199b5f3e9c9bc66d9893a inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a787a9e931cc9a74eec85ca6b436b03e6 inherit pub_methods_classscore_1_1gfx_1_1_node" id="r_a787a9e931cc9a74eec85ca6b436b03e6"><td class="memItemLeft" align="right" valign="top">
+QSize&#160;</td><td class="memItemRight" valign="bottom"><b>resolveRenderTargetSize</b> (int32_t port, <a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer) const noexcept</td></tr>
+<tr class="separator:a787a9e931cc9a74eec85ca6b436b03e6 inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b9dfcc16e1dc6a5e62282a5b830fca inherit pub_methods_classscore_1_1gfx_1_1_node" id="r_aa1b9dfcc16e1dc6a5e62282a5b830fca"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="structscore_1_1gfx_1_1_render_target_specs.html">RenderTargetSpecs</a>&#160;</td><td class="memItemRight" valign="bottom"><b>resolveRenderTargetSpecs</b> (int32_t port, <a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer) const noexcept</td></tr>
+<tr class="separator:aa1b9dfcc16e1dc6a5e62282a5b830fca inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac462c1c3ecc4e67b5ee1b3213135ccea inherit pub_methods_classscore_1_1gfx_1_1_node" id="r_ac462c1c3ecc4e67b5ee1b3213135ccea"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (int32_t port, const ossia::render_target_spec &amp;v)</td></tr>
+<tr class="separator:ac462c1c3ecc4e67b5ee1b3213135ccea inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -234,6 +243,9 @@ std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *
 ossia::flat_map&lt; <a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> *, <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>renderedNodes</b></td></tr>
 <tr class="memdesc:abbac77035201ad0586b55fb7f9075ea8 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map associating each <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a> to a Renderer for this model. <br /></td></tr>
 <tr class="separator:abbac77035201ad0586b55fb7f9075ea8 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f8f63f6ea44e509c74333b4f377456d inherit pub_attribs_classscore_1_1gfx_1_1_node" id="r_a0f8f63f6ea44e509c74333b4f377456d"><td class="memItemLeft" align="right" valign="top">ossia::flat_map&lt; int32_t, ossia::render_target_spec &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node.html#a0f8f63f6ea44e509c74333b4f377456d">renderTargetSpecs</a></td></tr>
+<tr class="memdesc:a0f8f63f6ea44e509c74333b4f377456d inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render target info.  <br /></td></tr>
+<tr class="separator:a0f8f63f6ea44e509c74333b4f377456d inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cfc51174b1526cf41bacf23b72bfa0f inherit pub_attribs_classscore_1_1gfx_1_1_node" id="r_a4cfc51174b1526cf41bacf23b72bfa0f"><td class="memItemLeft" align="right" valign="top">
 std::atomic_int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>materialChanged</b> {0}</td></tr>
 <tr class="separator:a4cfc51174b1526cf41bacf23b72bfa0f inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>

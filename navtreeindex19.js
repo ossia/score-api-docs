@@ -1,5 +1,7 @@
 var NAVTREEINDEX19 =
 {
+"namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734a6fdd5606769666af98fbd122d30d3f3a":[11,0,12,0,82,2],
+"namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734a9bb04ea840c3a95d7be0c3f7f5846293":[11,0,12,0,82,4],
 "namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734af6a8d2f77966ef08037db61b37793bcd":[11,0,12,0,82,5],
 "namespacescore_1_1gfx.html#a65ed3e9bcd7da04ca16e3feb18935e1f":[11,0,12,0,86],
 "namespacescore_1_1gfx.html#a78ab4e37b245596d7fbb9023414aa622":[11,0,12,0,94],
@@ -247,7 +249,5 @@ var NAVTREEINDEX19 =
 "score__plugin__ysfx_8hpp_source.html":[13,0,0,2,39,1],
 "scoreinterfaces_8hpp_source.html":[13,0,0,1,0,3,8],
 "statemachines_8hpp_source.html":[13,0,0,1,0,3,10],
-"struct_analysis_1_1_c_s_d.html":[12,0,0,4],
-"struct_analysis_1_1_centroid.html":[12,0,0,2],
-"struct_analysis_1_1_crest.html":[12,0,0,3]
+"struct_analysis_1_1_c_s_d.html":[12,0,0,4]
 };

@@ -184,6 +184,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetChange</b
 <tr class="memitem:acb786dd39ba199b5f3e9c9bc66d9893a" id="r_acb786dd39ba199b5f3e9c9bc66d9893a"><td class="memItemLeft" align="right" valign="top"><a id="acb786dd39ba199b5f3e9c9bc66d9893a" name="acb786dd39ba199b5f3e9c9bc66d9893a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasRenderTargetChanged</b> (int64_t &amp;renderer) const noexcept</td></tr>
 <tr class="separator:acb786dd39ba199b5f3e9c9bc66d9893a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a787a9e931cc9a74eec85ca6b436b03e6" id="r_a787a9e931cc9a74eec85ca6b436b03e6"><td class="memItemLeft" align="right" valign="top"><a id="a787a9e931cc9a74eec85ca6b436b03e6" name="a787a9e931cc9a74eec85ca6b436b03e6"></a>
+QSize&#160;</td><td class="memItemRight" valign="bottom"><b>resolveRenderTargetSize</b> (int32_t port, <a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer) const noexcept</td></tr>
+<tr class="separator:a787a9e931cc9a74eec85ca6b436b03e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b9dfcc16e1dc6a5e62282a5b830fca" id="r_aa1b9dfcc16e1dc6a5e62282a5b830fca"><td class="memItemLeft" align="right" valign="top"><a id="aa1b9dfcc16e1dc6a5e62282a5b830fca" name="aa1b9dfcc16e1dc6a5e62282a5b830fca"></a>
+<a class="el" href="structscore_1_1gfx_1_1_render_target_specs.html">RenderTargetSpecs</a>&#160;</td><td class="memItemRight" valign="bottom"><b>resolveRenderTargetSpecs</b> (int32_t port, <a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer) const noexcept</td></tr>
+<tr class="separator:aa1b9dfcc16e1dc6a5e62282a5b830fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac462c1c3ecc4e67b5ee1b3213135ccea" id="r_ac462c1c3ecc4e67b5ee1b3213135ccea"><td class="memItemLeft" align="right" valign="top"><a id="ac462c1c3ecc4e67b5ee1b3213135ccea" name="ac462c1c3ecc4e67b5ee1b3213135ccea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (int32_t port, const ossia::render_target_spec &amp;v)</td></tr>
+<tr class="separator:ac462c1c3ecc4e67b5ee1b3213135ccea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -198,6 +207,9 @@ std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *
 ossia::flat_map&lt; <a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> *, <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>renderedNodes</b></td></tr>
 <tr class="memdesc:abbac77035201ad0586b55fb7f9075ea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map associating each <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a> to a Renderer for this model. <br /></td></tr>
 <tr class="separator:abbac77035201ad0586b55fb7f9075ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f8f63f6ea44e509c74333b4f377456d" id="r_a0f8f63f6ea44e509c74333b4f377456d"><td class="memItemLeft" align="right" valign="top">ossia::flat_map&lt; int32_t, ossia::render_target_spec &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node.html#a0f8f63f6ea44e509c74333b4f377456d">renderTargetSpecs</a></td></tr>
+<tr class="memdesc:a0f8f63f6ea44e509c74333b4f377456d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render target info.  <br /></td></tr>
+<tr class="separator:a0f8f63f6ea44e509c74333b4f377456d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cfc51174b1526cf41bacf23b72bfa0f" id="r_a4cfc51174b1526cf41bacf23b72bfa0f"><td class="memItemLeft" align="right" valign="top"><a id="a4cfc51174b1526cf41bacf23b72bfa0f" name="a4cfc51174b1526cf41bacf23b72bfa0f"></a>
 std::atomic_int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>materialChanged</b> {0}</td></tr>
 <tr class="separator:a4cfc51174b1526cf41bacf23b72bfa0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,7 +286,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>addedToGraph</b> {}</
 
 <p><a class="el" href="namespace_process.html" title="Base classes and tools to implement processes and layers.">Process</a> a message from the execution engine. </p>
 
-<p>Reimplemented in <a class="el" href="classscore_1_1gfx_1_1_process_node.html#a7c97ba4a1eb26e9ca18df2e4cb45453b">score::gfx::ProcessNode</a>, <a class="el" href="structscore_1_1gfx_1_1_text_node.html#a8f2f79c1ee738af2ea4bbbb3d078be4c">score::gfx::TextNode</a>, <a class="el" href="classscore_1_1gfx_1_1_video_node.html#a7e11fd2b8096f8725d8f463ab45db047">score::gfx::VideoNode</a>, and <a class="el" href="structscore_1_1gfx_1_1_model_display_node.html#a19155e671ffc2c2e6ea5b8f0692887e6">score::gfx::ModelDisplayNode</a>.</p>
+<p>Reimplemented in <a class="el" href="classscore_1_1gfx_1_1_process_node.html#acac03f2e76d8ab63548bab3fac5968a3">score::gfx::ProcessNode</a>, <a class="el" href="classscore_1_1gfx_1_1_process_node.html#a7c97ba4a1eb26e9ca18df2e4cb45453b">score::gfx::ProcessNode</a>, <a class="el" href="structscore_1_1gfx_1_1_text_node.html#a8f2f79c1ee738af2ea4bbbb3d078be4c">score::gfx::TextNode</a>, <a class="el" href="classscore_1_1gfx_1_1_video_node.html#a7e11fd2b8096f8725d8f463ab45db047">score::gfx::VideoNode</a>, and <a class="el" href="structscore_1_1gfx_1_1_model_display_node.html#a19155e671ffc2c2e6ea5b8f0692887e6">score::gfx::ModelDisplayNode</a>.</p>
 
 </div>
 </div>
@@ -293,6 +305,23 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>addedToGraph</b> {}</
 
 <p>Output ports of that node. </p>
 <p>Most of the time there will be a single image output. </p>
+
+</div>
+</div>
+<a id="a0f8f63f6ea44e509c74333b4f377456d" name="a0f8f63f6ea44e509c74333b4f377456d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f8f63f6ea44e509c74333b4f377456d">&#9670;&#160;</a></span>renderTargetSpecs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ossia::flat_map&lt;int32_t, ossia::render_target_spec&gt; score::gfx::Node::renderTargetSpecs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Render target info. </p>
+<p>Each texture inlet will have a matching spec </p>
 
 </div>
 </div>

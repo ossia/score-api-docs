@@ -1,5 +1,7 @@
 var NAVTREEINDEX21 =
 {
+"struct_gfx_1_1_spout_node.html":[11,0,5,75],
+"struct_gfx_1_1_spout_node.html":[12,0,19,87],
 "struct_gfx_1_1_spout_node.html#a28c7d5311530845d77f105f53ae58cd8":[12,0,19,87,0],
 "struct_gfx_1_1_spout_node.html#a28c7d5311530845d77f105f53ae58cd8":[11,0,5,75,0],
 "struct_gfx_1_1_stream_options.html":[11,0,5,78],
@@ -247,7 +249,5 @@ var NAVTREEINDEX21 =
 "struct_nodes_1_1_quantifier_1_1_node_1_1_note_in.html":[12,0,38,26,0,1],
 "struct_nodes_1_1_rate_limiter_1_1_node.html":[12,0,38,27,0],
 "struct_nodes_1_1_rate_limiter_1_1_node_1_1ins.html":[12,0,38,27,0,0],
-"struct_nodes_1_1_rate_limiter_1_1_node_1_1ui.html":[12,0,38,27,0,1],
-"struct_nodes_1_1_smooth_1_1v1_1_1_node.html":[12,0,38,28,0,0],
-"struct_nodes_1_1_smooth_1_1v2_1_1_node.html":[12,0,38,28,1,0]
+"struct_nodes_1_1_rate_limiter_1_1_node_1_1ui.html":[12,0,38,27,0,1]
 };

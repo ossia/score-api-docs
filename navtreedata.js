@@ -127,17 +127,17 @@ var NAVTREEINDEX =
 "classoscr_1_1_custom_item.html",
 "classscore_1_1_graphics_tab_layout.html",
 "classscore_1_1_task_pool.html",
-"conceptoscr_1_1_gpu_node.html",
-"dir_b3c1f2346e6d035e1c077f760b2039bf.html",
-"namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734af6a8d2f77966ef08037db61b37793bcd",
-"struct_analysis_1_1_energy_difference.html",
-"struct_gfx_1_1_spout_node.html#a28c7d5311530845d77f105f53ae58cd8",
-"struct_nodes_1_1combobox__from__array.html",
-"struct_scenario_1_1_start_date_comparator.html",
-"struct_widget_factory_1_1_multi_slider.html",
-"structscore_1_1_command_data.html",
-"structscore_1_1gfx_1_1_graph.html#a27b1df43407c54984e12e5717382c983",
-"structserialization__tag_3_01_t_01_4.html"
+"conceptoscr_1_1_gpu_compute_node2.html",
+"dir_b2dbbf4b5db3d92bc8c15de17d8765ad.html",
+"namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734a6fdd5606769666af98fbd122d30d3f3a",
+"struct_analysis_1_1_centroid.html",
+"struct_gfx_1_1_spout_node.html",
+"struct_nodes_1_1_smooth_1_1v1_1_1_node.html",
+"struct_scenario_1_1_snapshot_action.html",
+"struct_widget_factory_1_1_linear_normalizer.html",
+"structscore_1_1_combo_slider.html",
+"structscore_1_1gfx_1_1_graph.html#a2053b9d1b4c0466c9cc5fe87be8cb5a5",
+"structscore_1_1uuids_1_1uuid.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

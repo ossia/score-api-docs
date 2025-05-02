@@ -1,5 +1,7 @@
 var NAVTREEINDEX23 =
 {
+"struct_scenario_1_1_snapshot_action.html":[11,0,11,251],
+"struct_scenario_1_1_start_date_comparator.html":[12,0,50,256],
 "struct_scenario_1_1_start_date_comparator.html":[11,0,11,254],
 "struct_scenario_1_1_state_overlays.html":[12,0,50,262],
 "struct_scenario_1_1_state_overlays.html":[11,0,11,260],
@@ -247,7 +249,5 @@ var NAVTREEINDEX23 =
 "struct_widget_factory_1_1_int_range_slider.html":[12,0,63,12],
 "struct_widget_factory_1_1_int_slider.html":[12,0,63,13],
 "struct_widget_factory_1_1_int_spin_box.html":[12,0,63,14],
-"struct_widget_factory_1_1_line_edit.html":[12,0,63,16],
-"struct_widget_factory_1_1_linear_normalizer.html":[12,0,63,15],
-"struct_widget_factory_1_1_log_normalizer.html":[12,0,63,17]
+"struct_widget_factory_1_1_line_edit.html":[12,0,63,16]
 };

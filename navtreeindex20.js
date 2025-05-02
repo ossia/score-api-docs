@@ -1,5 +1,7 @@
 var NAVTREEINDEX20 =
 {
+"struct_analysis_1_1_centroid.html":[12,0,0,2],
+"struct_analysis_1_1_crest.html":[12,0,0,3],
 "struct_analysis_1_1_energy_difference.html":[12,0,0,5],
 "struct_analysis_1_1_envelope_follower.html":[12,0,0,6],
 "struct_analysis_1_1_flatness.html":[12,0,0,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX20 =
 "struct_gfx_1_1_shmdata_output_node.html#af6b92929fd31630ac657dca9c682bb96":[12,0,19,79,0],
 "struct_gfx_1_1_shmdata_output_node.html#af6b92929fd31630ac657dca9c682bb96":[11,0,5,67,0],
 "struct_gfx_1_1_spout_1_1_spout_input_node.html":[12,0,19,8,4],
-"struct_gfx_1_1_spout_1_1_spout_input_node.html#a877a31134a52df8de56c2a1d3e77cb4a":[12,0,19,8,4,1],
-"struct_gfx_1_1_spout_node.html":[11,0,5,75],
-"struct_gfx_1_1_spout_node.html":[12,0,19,87]
+"struct_gfx_1_1_spout_1_1_spout_input_node.html#a877a31134a52df8de56c2a1d3e77cb4a":[12,0,19,8,4,1]
 };

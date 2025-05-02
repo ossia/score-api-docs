@@ -1,5 +1,7 @@
 var NAVTREEINDEX27 =
 {
+"structscore_1_1uuids_1_1uuid.html":[12,0,51,5,1],
+"structserialization__tag.html":[12,0,256],
 "structserialization__tag_3_01_t_01_4.html":[12,0,257],
 "structstd_1_1hash_3_01_device_1_1_full_address_settings_01_4.html":[11,0,14,0],
 "structstd_1_1hash_3_01_device_1_1_full_address_settings_01_4.html":[12,0,56,0],

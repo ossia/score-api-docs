@@ -99,7 +99,7 @@ var searchData=
   ['renderstate_96',['RenderState',['../structscore_1_1gfx_1_1_render_state.html',1,'score::gfx']]],
   ['rendertargetchange_97',['renderTargetChange',['../classscore_1_1gfx_1_1_node.html#a5de8199d87e59e3e7cd0a8039c697f14',1,'score::gfx::Node']]],
   ['rendertargetforoutput_98',['renderTargetForOutput',['../classscore_1_1gfx_1_1_render_list.html#a98d894ff589d1fa80d36a99e59801e8f',1,'score::gfx::RenderList']]],
-  ['rendertargetspecs_99',['rendertargetspecs',['../structscore_1_1gfx_1_1_render_target_specs.html',1,'score::gfx::RenderTargetSpecs'],['../classscore_1_1gfx_1_1_process_node.html#ae0270a459945badd41867636207321db',1,'score::gfx::ProcessNode::renderTargetSpecs']]],
+  ['rendertargetspecs_99',['rendertargetspecs',['../structscore_1_1gfx_1_1_render_target_specs.html',1,'score::gfx::RenderTargetSpecs'],['../classscore_1_1gfx_1_1_node.html#a0f8f63f6ea44e509c74333b4f377456d',1,'score::gfx::Node::renderTargetSpecs']]],
   ['replaceaddresses_100',['ReplaceAddresses',['../class_scenario_1_1_command_1_1_replace_addresses.html',1,'Scenario::Command']]],
   ['replaceallnodes_101',['ReplaceAllNodes',['../class_nodal_1_1_replace_all_nodes.html',1,'Nodal']]],
   ['replacedevice_102',['ReplaceDevice',['../class_explorer_1_1_command_1_1_replace_device.html',1,'Explorer::Command']]],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"struct_nodes_1_1_smooth_1_1v1_1_1_node.html":[12,0,38,28,0,0],
+"struct_nodes_1_1_smooth_1_1v2_1_1_node.html":[12,0,38,28,1,0],
 "struct_nodes_1_1combobox__from__array.html":[12,0,38,29],
 "struct_nodes_1_1combobox__from__array_1_1range.html":[12,0,38,29,0],
 "struct_nodes_1_1ossia__port.html":[12,0,38,34],
@@ -247,7 +249,5 @@ var NAVTREEINDEX22 =
 "struct_scenario_1_1_slot_path.html":[12,0,50,249],
 "struct_scenario_1_1_slot_presenter.html":[11,0,11,248],
 "struct_scenario_1_1_slot_presenter.html":[12,0,50,250],
-"struct_scenario_1_1_snapshot_action.html":[12,0,50,253],
-"struct_scenario_1_1_snapshot_action.html":[11,0,11,251],
-"struct_scenario_1_1_start_date_comparator.html":[12,0,50,256]
+"struct_scenario_1_1_snapshot_action.html":[12,0,50,253]
 };
