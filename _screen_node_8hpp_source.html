@@ -156,30 +156,31 @@ $(document).ready(function(){initNavTree('_screen_node_8hpp_source.html',''); in
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  std::function&lt;void(QPointF, QPointF)&gt; onMouseMove;</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  std::function&lt;void(QTabletEvent*)&gt; onTabletMove;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  std::function&lt;void(<span class="keywordtype">int</span>, <span class="keyword">const</span> QString&amp;)&gt; onKey;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keyword">class </span><a class="code hl_class" href="classscore_1_1gfx_1_1_screen_node_1_1_basic_renderer.html">BasicRenderer</a>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keyword">class </span><a class="code hl_class" href="classscore_1_1gfx_1_1_screen_node_1_1_scaled_renderer.html">ScaledRenderer</a>;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  std::shared_ptr&lt;Window&gt; m_window{};</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  QRhiSwapChain* m_swapChain{};</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  QRhiRenderBuffer* m_depthStencil{};</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  QScreen* m_screen{};</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  QString m_title;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  std::optional&lt;QPoint&gt; m_pos{};</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  std::optional&lt;QSize&gt; m_sz{};</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  std::optional&lt;QSize&gt; m_renderSz{};</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="keywordtype">bool</span> m_embedded{};</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordtype">bool</span> m_fullScreen{};</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordtype">bool</span> m_ownsWindow{};</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>};</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  std::function&lt;void(<span class="keywordtype">int</span>, <span class="keyword">const</span> QString&amp;)&gt; onKeyRelease;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keyword">class </span><a class="code hl_class" href="classscore_1_1gfx_1_1_screen_node_1_1_basic_renderer.html">BasicRenderer</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keyword">class </span><a class="code hl_class" href="classscore_1_1gfx_1_1_screen_node_1_1_scaled_renderer.html">ScaledRenderer</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  std::shared_ptr&lt;Window&gt; m_window{};</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  QRhiSwapChain* m_swapChain{};</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  QRhiRenderBuffer* m_depthStencil{};</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  QScreen* m_screen{};</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  QString m_title;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  std::optional&lt;QPoint&gt; m_pos{};</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  std::optional&lt;QSize&gt; m_sz{};</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  std::optional&lt;QSize&gt; m_renderSz{};</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordtype">bool</span> m_embedded{};</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordtype">bool</span> m_fullScreen{};</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordtype">bool</span> m_ownsWindow{};</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>};</div>
 </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a></div><div class="ttdoc">Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)</div><div class="ttdef"><b>Definition</b> OutputNode.hpp:24</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node_renderer.html">score::gfx::OutputNodeRenderer</a></div><div class="ttdef"><b>Definition</b> OutputNode.hpp:11</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:19</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_screen_node_1_1_basic_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_screen_node_1_1_basic_renderer.html">score::gfx::ScreenNode::BasicRenderer</a></div><div class="ttdef"><b>Definition</b> ScreenNode.cpp:526</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_screen_node_1_1_scaled_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_screen_node_1_1_scaled_renderer.html">score::gfx::ScreenNode::ScaledRenderer</a></div><div class="ttdef"><b>Definition</b> ScreenNode.cpp:556</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_screen_node_1_1_basic_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_screen_node_1_1_basic_renderer.html">score::gfx::ScreenNode::BasicRenderer</a></div><div class="ttdef"><b>Definition</b> ScreenNode.cpp:530</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_screen_node_1_1_scaled_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_screen_node_1_1_scaled_renderer.html">score::gfx::ScreenNode::ScaledRenderer</a></div><div class="ttdef"><b>Definition</b> ScreenNode.cpp:560</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:12</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html_a5b6a96306e1a02ccc56d8bb785bc6734"><div class="ttname"><a href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">score::gfx::GraphicsApi</a></div><div class="ttdeci">GraphicsApi</div><div class="ttdoc">Available graphics APIs to use.</div><div class="ttdef"><b>Definition</b> RenderState.hpp:17</div></div>
 <div class="ttc" id="anamespacescore_html_a46a7481be6eff1dfcfe2f4472bbf2e3f"><div class="ttname"><a href="namespacescore.html#a46a7481be6eff1dfcfe2f4472bbf2e3f">score::setCursor</a></div><div class="ttdeci">void setCursor(Qt::CursorShape c)</div><div class="ttdoc">setCursor sets the cursor safely.</div><div class="ttdef"><b>Definition</b> ClearLayout.cpp:8</div></div>
