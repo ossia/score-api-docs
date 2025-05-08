@@ -1,5 +1,6 @@
 var NAVTREEINDEX25 =
 {
+"structscore_1_1_color_ref.html":[11,0,12,29],
 "structscore_1_1_combo_slider.html":[12,0,51,36],
 "structscore_1_1_combo_slider.html":[11,0,12,31],
 "structscore_1_1_command_data.html":[12,0,51,39],
@@ -248,6 +249,5 @@ var NAVTREEINDEX25 =
 "structscore_1_1gfx_1_1_graph.html#a1693837e0d684408bb84af3f619cfc8a":[11,0,12,0,15,11],
 "structscore_1_1gfx_1_1_graph.html#a17a55c3427949d59d752108e3da2f0f3":[11,0,12,0,15,8],
 "structscore_1_1gfx_1_1_graph.html#a17a55c3427949d59d752108e3da2f0f3":[12,0,51,2,15,8],
-"structscore_1_1gfx_1_1_graph.html#a1c3b40f6e90a21e4fb0636257f7bc975":[11,0,12,0,15,5],
-"structscore_1_1gfx_1_1_graph.html#a1c3b40f6e90a21e4fb0636257f7bc975":[12,0,51,2,15,5]
+"structscore_1_1gfx_1_1_graph.html#a1c3b40f6e90a21e4fb0636257f7bc975":[11,0,12,0,15,5]
 };

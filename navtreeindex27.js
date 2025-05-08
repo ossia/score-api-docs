@@ -1,5 +1,6 @@
 var NAVTREEINDEX27 =
 {
+"structscore_1_1uuids_1_1string__generator.html":[12,0,51,5,0],
 "structscore_1_1uuids_1_1uuid.html":[12,0,51,5,1],
 "structserialization__tag.html":[12,0,256],
 "structserialization__tag_3_01_t_01_4.html":[12,0,257],

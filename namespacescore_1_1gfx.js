@@ -97,7 +97,8 @@ var namespacescore_1_1gfx =
       [ "Stretch", "namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58aa9237ec7e51646b8653b2f43a413ff02", null ]
     ] ],
     [ "buildPipeline", "namespacescore_1_1gfx.html#a8c078a7b49d41725690f0f9aa64d772f", null ],
-    [ "computeScale", "namespacescore_1_1gfx.html#acd667b8e0754c3ba35260d4e15e95bc0", null ],
+    [ "computeScaleForMeshSizing", "namespacescore_1_1gfx.html#ab0efa85a0401f25fe4c0b77474942eac", null ],
+    [ "computeScaleForTexcoordSizing", "namespacescore_1_1gfx.html#a01d504b5f64cee4bb5a97773ba34166d", null ],
     [ "createDefaultBindings", "namespacescore_1_1gfx.html#a65ed3e9bcd7da04ca16e3feb18935e1f", null ],
     [ "createRenderTarget", "namespacescore_1_1gfx.html#adcdcfcb454ba2b5ea25d7501e1b9c090", null ],
     [ "createRenderTarget", "namespacescore_1_1gfx.html#aebc380fb69643736df552334c1be3cfb", null ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX22 =
 {
+"struct_nodes_1_1_rate_limiter_1_1_node_1_1ui.html":[12,0,38,27,0,1],
 "struct_nodes_1_1_smooth_1_1v1_1_1_node.html":[12,0,38,28,0,0],
 "struct_nodes_1_1_smooth_1_1v2_1_1_node.html":[12,0,38,28,1,0],
 "struct_nodes_1_1combobox__from__array.html":[12,0,38,29],
@@ -248,6 +249,5 @@ var NAVTREEINDEX22 =
 "struct_scenario_1_1_slot_path.html":[11,0,11,247],
 "struct_scenario_1_1_slot_path.html":[12,0,50,249],
 "struct_scenario_1_1_slot_presenter.html":[11,0,11,248],
-"struct_scenario_1_1_slot_presenter.html":[12,0,50,250],
-"struct_scenario_1_1_snapshot_action.html":[12,0,50,253]
+"struct_scenario_1_1_slot_presenter.html":[12,0,50,250]
 };
