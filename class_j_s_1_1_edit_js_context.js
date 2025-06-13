@@ -1,5 +1,6 @@
 var class_j_s_1_1_edit_js_context =
 [
+    [ "availableProcesses", "class_j_s_1_1_edit_js_context.html#a07112b02f659e01dd83a8b9e526d9d10", null ],
     [ "createAddress", "class_j_s_1_1_edit_js_context.html#add27329d3c9aa1b3fa4d782a0b10b201", null ],
     [ "deviceToJson", "class_j_s_1_1_edit_js_context.html#a34ea4a9c9dadbaf059de294af51ba4a0", null ],
     [ "find", "class_j_s_1_1_edit_js_context.html#acb23e62f7f92854d8c41f3f4e2748efe", null ],

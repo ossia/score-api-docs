@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734a38d8011fe995adbf6247fa157d99ea3b":[11,0,12,0,82,1],
 "namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734a57d8f1e6a706460bfbb419e8a26856da":[11,0,12,0,82,3],
 "namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734a6fdd5606769666af98fbd122d30d3f3a":[11,0,12,0,82,2],
 "namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734a9bb04ea840c3a95d7be0c3f7f5846293":[11,0,12,0,82,4],
@@ -90,7 +91,7 @@ var NAVTREEINDEX19 =
 "score-plugin-automation_2_automation_2_commands_2_change_address_8hpp_source.html":[13,0,0,2,7,0,0,1],
 "score-plugin-automation_2_automation_2_local_tree_8hpp_source.html":[13,0,0,2,7,0,9],
 "score-plugin-avnd_2_crousti_2_executor_8hpp_source.html":[13,0,0,2,8,3,5],
-"score-plugin-avnd_2_crousti_2_gpu_node_8hpp_source.html":[13,0,0,2,8,3,12],
+"score-plugin-avnd_2_crousti_2_g_p_u_node_8hpp_source.html":[13,0,0,2,8,3,12],
 "score-plugin-avnd_2_crousti_2_layer_8hpp_source.html":[13,0,0,2,8,3,14],
 "score-plugin-avnd_2_crousti_2_process_model_8hpp_source.html":[13,0,0,2,8,3,19],
 "score-plugin-controlsurface_2_control_surface_2_command_factory_8hpp_source.html":[13,0,0,2,9,0,0],
@@ -138,7 +139,7 @@ var NAVTREEINDEX19 =
 "score-plugin-js_2_j_s_2_application_plugin_8hpp_source.html":[13,0,0,2,19,0,3],
 "score-plugin-js_2_j_s_2_commands_2_edit_script_8hpp_source.html":[13,0,0,2,19,0,0,0],
 "score-plugin-js_2_j_s_2_commands_2_script_macro_8hpp_source.html":[13,0,0,2,19,0,0,2],
-"score-plugin-js_2_j_s_2_executor_2_gpu_node_8hpp_source.html":[13,0,0,2,19,0,1,3],
+"score-plugin-js_2_j_s_2_executor_2_g_p_u_node_8hpp_source.html":[13,0,0,2,19,0,1,3],
 "score-plugin-js_2_j_s_2_qml_2_metatypes_8hpp_source.html":[13,0,0,2,19,0,2,4],
 "score-plugin-js_2_j_s_2_qml_2_utils_8hpp_source.html":[13,0,0,2,19,0,2,9],
 "score-plugin-lv2_2_l_v2_2_application_plugin_8hpp_source.html":[13,0,0,2,21,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "score__plugin__vst3_8hpp_source.html":[13,0,0,2,38,1],
 "score__plugin__vst_8hpp_source.html":[13,0,0,2,37,1],
 "score__plugin__ysfx_8hpp_source.html":[13,0,0,2,39,1],
-"scoreinterfaces_8hpp_source.html":[13,0,0,1,0,3,8],
-"statemachines_8hpp_source.html":[13,0,0,1,0,3,10]
+"scoreinterfaces_8hpp_source.html":[13,0,0,1,0,3,8]
 };

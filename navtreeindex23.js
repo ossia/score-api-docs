@@ -1,5 +1,6 @@
 var NAVTREEINDEX23 =
 {
+"struct_scenario_1_1_slot_presenter.html":[12,0,50,250],
 "struct_scenario_1_1_snapshot_action.html":[12,0,50,253],
 "struct_scenario_1_1_snapshot_action.html":[11,0,11,251],
 "struct_scenario_1_1_start_date_comparator.html":[12,0,50,256],
@@ -248,6 +249,5 @@ var NAVTREEINDEX23 =
 "struct_widget_factory_1_1_h_s_v_slider.html":[12,0,63,10],
 "struct_widget_factory_1_1_impulse_button.html":[12,0,63,11],
 "struct_widget_factory_1_1_int_range_slider.html":[12,0,63,12],
-"struct_widget_factory_1_1_int_slider.html":[12,0,63,13],
-"struct_widget_factory_1_1_int_spin_box.html":[12,0,63,14]
+"struct_widget_factory_1_1_int_slider.html":[12,0,63,13]
 };

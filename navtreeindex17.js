@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"codingstyle_8hpp_source.html":[13,0,0,1,0,3,0],
 "conceptoscr_1_1_gpu_compute_node2.html":[11,0,8,61],
 "conceptoscr_1_1_gpu_graphics_node2.html":[11,0,8,60],
 "conceptoscr_1_1_gpu_node.html":[11,0,8,59],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "dir_b07c2842a11793c94c0edd0ae8db99d0.html":[13,0,0,2,31,4,8,0],
 "dir_b115bdef57e8b530ea33e0929aadfd97.html":[13,0,0,2,9],
 "dir_b18438b30ce4c191ed301c2f3de5c697.html":[13,0,0,2,7,1],
-"dir_b237cc892e48b337a9f0af382bba3a0c.html":[13,0,0,2,31,4,3,8],
-"dir_b2627845ee7bcf412401ac64671be75c.html":[13,0,0,2,12,0,5]
+"dir_b237cc892e48b337a9f0af382bba3a0c.html":[13,0,0,2,31,4,3,8]
 };

@@ -156,7 +156,7 @@ var searchData=
   ['audioinfo_153',['AudioInfo',['../struct_media_1_1_audio_info.html',1,'Media']]],
   ['audioinlet_154',['audioinlet',['../class_j_s_1_1_audio_inlet.html',1,'JS::AudioInlet'],['../class_process_1_1_audio_inlet.html',1,'Process::AudioInlet']]],
   ['audioinletfactory_155',['AudioInletFactory',['../struct_dataflow_1_1_audio_inlet_factory.html',1,'Dataflow']]],
-  ['audiooutlet_156',['audiooutlet',['../class_j_s_1_1_audio_outlet.html',1,'JS::AudioOutlet'],['../class_process_1_1_audio_outlet.html',1,'Process::AudioOutlet']]],
+  ['audiooutlet_156',['audiooutlet',['../class_process_1_1_audio_outlet.html',1,'Process::AudioOutlet'],['../class_j_s_1_1_audio_outlet.html',1,'JS::AudioOutlet']]],
   ['audiooutletfactory_157',['AudioOutletFactory',['../struct_dataflow_1_1_audio_outlet_factory.html',1,'Dataflow']]],
   ['audiooutletitem_158',['AudioOutletItem',['../class_dataflow_1_1_audio_outlet_item.html',1,'Dataflow']]],
   ['audiooutletminipanel_159',['AudioOutletMiniPanel',['../class_dataflow_1_1_audio_outlet_mini_panel.html',1,'Dataflow']]],
@@ -181,8 +181,9 @@ var searchData=
   ['autoplay_178',['autoplay',['../structscore_1_1_application_settings.html#ae2b0c986e978926b5acc72732490123d',1,'score::ApplicationSettings']]],
   ['availablenode_179',['AvailableNode',['../struct_control_surface_1_1_node_observer_1_1_available_node.html',1,'ControlSurface::NodeObserver']]],
   ['availableplugin_180',['AvailablePlugin',['../structvst3_1_1_available_plugin.html',1,'vst3']]],
-  ['avcodeccontext_5ffree_181',['AVCodecContext_Free',['../struct_media_1_1_a_v_codec_context___free.html',1,'Media']]],
-  ['average_182',['average',['../structavnd__tools_1_1_pattern_combiner_1_1average.html',1,'avnd_tools::PatternCombiner']]],
-  ['avformatcontext_5ffree_183',['AVFormatContext_Free',['../struct_media_1_1_a_v_format_context___free.html',1,'Media']]],
-  ['avframe_5ffree_184',['AVFrame_Free',['../struct_media_1_1_a_v_frame___free.html',1,'Media']]]
+  ['availableprocesses_181',['availableProcesses',['../class_j_s_1_1_edit_js_context.html#a07112b02f659e01dd83a8b9e526d9d10',1,'JS::EditJsContext']]],
+  ['avcodeccontext_5ffree_182',['AVCodecContext_Free',['../struct_media_1_1_a_v_codec_context___free.html',1,'Media']]],
+  ['average_183',['average',['../structavnd__tools_1_1_pattern_combiner_1_1average.html',1,'avnd_tools::PatternCombiner']]],
+  ['avformatcontext_5ffree_184',['AVFormatContext_Free',['../struct_media_1_1_a_v_format_context___free.html',1,'Media']]],
+  ['avframe_5ffree_185',['AVFrame_Free',['../struct_media_1_1_a_v_frame___free.html',1,'Media']]]
 ];
