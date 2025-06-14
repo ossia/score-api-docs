@@ -129,7 +129,7 @@ var NAVTREEINDEX =
 "classscore_1_1_time_signature_widget.html",
 "conceptoscr_1_1recursive__container__layout.html",
 "dir_b636942c0295978537dae72da4a2a525.html",
-"namespacescore_1_1gfx.html#a65ed3e9bcd7da04ca16e3feb18935e1f",
+"namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734af6a8d2f77966ef08037db61b37793bcd",
 "struct_analysis_1_1_envelope_follower.html",
 "struct_gfx_1_1_spout_node.html#a28c7d5311530845d77f105f53ae58cd8",
 "struct_nodes_1_1combobox__from__array_1_1range.html",

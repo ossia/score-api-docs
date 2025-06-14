@@ -36,7 +36,7 @@ var searchData=
   ['box_33',['Box',['../struct_recording_1_1_box.html',1,'Recording']]],
   ['brush_34',['Brush',['../structscore_1_1_brush.html',1,'score']]],
   ['brushset_35',['BrushSet',['../structscore_1_1_brush_set.html',1,'score']]],
-  ['buildpipeline_36',['buildPipeline',['../namespacescore_1_1gfx.html#a8c078a7b49d41725690f0f9aa64d772f',1,'score::gfx']]],
+  ['buildpipeline_36',['buildPipeline',['../namespacescore_1_1gfx.html#a8a9f595fc39a0920c64def6125927259',1,'score::gfx']]],
   ['busactivationvisitor_37',['BusActivationVisitor',['../structvst3_1_1_bus_activation_visitor.html',1,'vst3']]],
   ['button_38',['button',['../class_j_s_1_1_button.html',1,'JS::Button'],['../struct_widget_factory_1_1_button.html',1,'WidgetFactory::Button']]],
   ['bytebeat_5fnode_39',['bytebeat_node',['../class_jit_1_1bytebeat__node.html',1,'Jit']]],

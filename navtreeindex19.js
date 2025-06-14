@@ -1,8 +1,8 @@
 var NAVTREEINDEX19 =
 {
-"namespacescore_1_1gfx.html#a65ed3e9bcd7da04ca16e3feb18935e1f":[11,0,12,0,87],
+"namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734af6a8d2f77966ef08037db61b37793bcd":[11,0,12,0,82,5],
 "namespacescore_1_1gfx.html#a78ab4e37b245596d7fbb9023414aa622":[11,0,12,0,95],
-"namespacescore_1_1gfx.html#a8c078a7b49d41725690f0f9aa64d772f":[11,0,12,0,84],
+"namespacescore_1_1gfx.html#a8a9f595fc39a0920c64def6125927259":[11,0,12,0,84],
 "namespacescore_1_1gfx.html#aae9462b53d25a8fe2f2a7de730a261d8":[11,0,12,0,96],
 "namespacescore_1_1gfx.html#ab0efa85a0401f25fe4c0b77474942eac":[11,0,12,0,85],
 "namespacescore_1_1gfx.html#ab9422d6d02158084503b076c4a382cbf":[11,0,12,0,93],

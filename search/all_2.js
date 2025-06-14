@@ -166,7 +166,7 @@ var searchData=
   ['createcommentblock_163',['CreateCommentBlock',['../class_scenario_1_1_command_1_1_create_comment_block.html',1,'Scenario::Command']]],
   ['createcontrol_164',['createcontrol',['../classvst3_1_1_create_control.html',1,'vst3::CreateControl'],['../classvst_1_1_create_control.html',1,'vst::CreateControl']]],
   ['createcontrols_165',['CreateControls',['../namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a38523301770f54c3e6f8daa92606322d',1,'Process']]],
-  ['createdefaultbindings_166',['createDefaultBindings',['../namespacescore_1_1gfx.html#a65ed3e9bcd7da04ca16e3feb18935e1f',1,'score::gfx']]],
+  ['createdefaultbindings_166',['createDefaultBindings',['../namespacescore_1_1gfx.html#a17289db47c989630c2c74f6a4343a703',1,'score::gfx']]],
   ['createdot_167',['CreateDot',['../class_scenario_1_1_command_1_1_create_dot.html',1,'Scenario::Command']]],
   ['createevent_5fstate_168',['CreateEvent_State',['../class_scenario_1_1_command_1_1_create_event___state.html',1,'Scenario::Command']]],
   ['createeventaftereventontimesynctest_169',['CreateEventAfterEventOnTimeSyncTest',['../class_create_event_after_event_on_time_sync_test.html',1,'']]],

@@ -96,10 +96,10 @@ var namespacescore_1_1gfx =
       [ "Fill", "namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58a77344a58890b502d0c2ac1c4fab38279", null ],
       [ "Stretch", "namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58aa9237ec7e51646b8653b2f43a413ff02", null ]
     ] ],
-    [ "buildPipeline", "namespacescore_1_1gfx.html#a8c078a7b49d41725690f0f9aa64d772f", null ],
+    [ "buildPipeline", "namespacescore_1_1gfx.html#a8a9f595fc39a0920c64def6125927259", null ],
     [ "computeScaleForMeshSizing", "namespacescore_1_1gfx.html#ab0efa85a0401f25fe4c0b77474942eac", null ],
     [ "computeScaleForTexcoordSizing", "namespacescore_1_1gfx.html#a01d504b5f64cee4bb5a97773ba34166d", null ],
-    [ "createDefaultBindings", "namespacescore_1_1gfx.html#a65ed3e9bcd7da04ca16e3feb18935e1f", null ],
+    [ "createDefaultBindings", "namespacescore_1_1gfx.html#a17289db47c989630c2c74f6a4343a703", null ],
     [ "createRenderTarget", "namespacescore_1_1gfx.html#adcdcfcb454ba2b5ea25d7501e1b9c090", null ],
     [ "createRenderTarget", "namespacescore_1_1gfx.html#aebc380fb69643736df552334c1be3cfb", null ],
     [ "makeCompute", "namespacescore_1_1gfx.html#a433eac87f8111d670824ff45923297fc", null ],
