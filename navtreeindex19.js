@@ -1,11 +1,5 @@
 var NAVTREEINDEX19 =
 {
-"namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734a38d8011fe995adbf6247fa157d99ea3b":[11,0,12,0,82,1],
-"namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734a57d8f1e6a706460bfbb419e8a26856da":[11,0,12,0,82,3],
-"namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734a6fdd5606769666af98fbd122d30d3f3a":[11,0,12,0,82,2],
-"namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734a9bb04ea840c3a95d7be0c3f7f5846293":[11,0,12,0,82,4],
-"namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734af6a8d2f77966ef08037db61b37793bcd":[11,0,12,0,82,5],
-"namespacescore_1_1gfx.html#a65ed3e9bcd7da04ca16e3feb18935e1f":[11,0,12,0,87],
 "namespacescore_1_1gfx.html#a78ab4e37b245596d7fbb9023414aa622":[11,0,12,0,95],
 "namespacescore_1_1gfx.html#a8c078a7b49d41725690f0f9aa64d772f":[11,0,12,0,84],
 "namespacescore_1_1gfx.html#aae9462b53d25a8fe2f2a7de730a261d8":[11,0,12,0,96],
@@ -249,5 +243,11 @@ var NAVTREEINDEX19 =
 "score__plugin__vst3_8hpp_source.html":[13,0,0,2,38,1],
 "score__plugin__vst_8hpp_source.html":[13,0,0,2,37,1],
 "score__plugin__ysfx_8hpp_source.html":[13,0,0,2,39,1],
-"scoreinterfaces_8hpp_source.html":[13,0,0,1,0,3,8]
+"scoreinterfaces_8hpp_source.html":[13,0,0,1,0,3,8],
+"statemachines_8hpp_source.html":[13,0,0,1,0,3,10],
+"struct_analysis_1_1_c_s_d.html":[12,0,0,4],
+"struct_analysis_1_1_centroid.html":[12,0,0,2],
+"struct_analysis_1_1_crest.html":[12,0,0,3],
+"struct_analysis_1_1_energy_difference.html":[12,0,0,5],
+"struct_analysis_1_1_envelope_follower.html":[12,0,0,6]
 };

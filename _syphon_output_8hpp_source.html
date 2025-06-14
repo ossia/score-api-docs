@@ -151,24 +151,25 @@ $(document).ready(function(){initNavTree('_syphon_output_8hpp_source.html',''); 
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <a class="code hl_class" href="class_gfx_1_1_syphon_device.html">~SyphonDevice</a>();</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">bool</span> reconnect() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  ossia::net::device_base* getDevice()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> m_dev.get(); }</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <a class="code hl_class" href="class_gfx_1_1gfx__protocol__base.html">gfx_protocol_base</a>* m_protocol{};</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keyword">mutable</span> std::unique_ptr&lt;ossia::net::device_base&gt; m_dev;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>};</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">void</span> disconnect() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keywordtype">bool</span> reconnect() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  ossia::net::device_base* getDevice()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> m_dev.get(); }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <a class="code hl_class" href="class_gfx_1_1gfx__protocol__base.html">gfx_protocol_base</a>* m_protocol{};</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keyword">mutable</span> std::unique_ptr&lt;ossia::net::device_base&gt; m_dev;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>};</div>
 </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="foldopen" id="foldopen00046" data-start="{" data-end="};">
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_gfx_1_1_syphon_settings_widget.html">   46</a></span><span class="keyword">class </span><a class="code hl_class" href="class_gfx_1_1_syphon_settings_widget.html">SyphonSettingsWidget</a> final : <span class="keyword">public</span> <a class="code hl_class" href="class_gfx_1_1_shared_output_settings_widget.html">SharedOutputSettingsWidget</a></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>{</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <a class="code hl_class" href="class_gfx_1_1_syphon_settings_widget.html">SyphonSettingsWidget</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <a class="code hl_struct" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> getSettings() <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>};</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="};">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_gfx_1_1_syphon_settings_widget.html">   47</a></span><span class="keyword">class </span><a class="code hl_class" href="class_gfx_1_1_syphon_settings_widget.html">SyphonSettingsWidget</a> final : <span class="keyword">public</span> <a class="code hl_class" href="class_gfx_1_1_shared_output_settings_widget.html">SharedOutputSettingsWidget</a></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <a class="code hl_class" href="class_gfx_1_1_syphon_settings_widget.html">SyphonSettingsWidget</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <a class="code hl_struct" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> getSettings() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
 </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
 <div class="ttc" id="aclass_device_1_1_device_interface_html"><div class="ttname"><a href="class_device_1_1_device_interface.html">Device::DeviceInterface</a></div><div class="ttdef"><b>Definition</b> DeviceInterface.hpp:66</div></div>
 <div class="ttc" id="aclass_device_1_1_protocol_settings_widget_html"><div class="ttname"><a href="class_device_1_1_protocol_settings_widget.html">Device::ProtocolSettingsWidget</a></div><div class="ttdef"><b>Definition</b> ProtocolSettingsWidget.hpp:22</div></div>
 <div class="ttc" id="aclass_gfx_1_1_gfx_output_device_html"><div class="ttname"><a href="class_gfx_1_1_gfx_output_device.html">Gfx::GfxOutputDevice</a></div><div class="ttdef"><b>Definition</b> GfxDevice.hpp:36</div></div>
@@ -176,9 +177,9 @@ $(document).ready(function(){initNavTree('_syphon_output_8hpp_source.html',''); 
 <div class="ttc" id="aclass_gfx_1_1_shared_output_settings_widget_html"><div class="ttname"><a href="class_gfx_1_1_shared_output_settings_widget.html">Gfx::SharedOutputSettingsWidget</a></div><div class="ttdef"><b>Definition</b> SharedOutputSettings.hpp:52</div></div>
 <div class="ttc" id="aclass_gfx_1_1_syphon_device_html"><div class="ttname"><a href="class_gfx_1_1_syphon_device.html">Gfx::SyphonDevice</a></div><div class="ttdef"><b>Definition</b> SyphonOutput.hpp:32</div></div>
 <div class="ttc" id="aclass_gfx_1_1_syphon_protocol_factory_html"><div class="ttname"><a href="class_gfx_1_1_syphon_protocol_factory.html">Gfx::SyphonProtocolFactory</a></div><div class="ttdef"><b>Definition</b> SyphonOutput.hpp:16</div></div>
-<div class="ttc" id="aclass_gfx_1_1_syphon_settings_widget_html"><div class="ttname"><a href="class_gfx_1_1_syphon_settings_widget.html">Gfx::SyphonSettingsWidget</a></div><div class="ttdef"><b>Definition</b> SyphonOutput.hpp:47</div></div>
+<div class="ttc" id="aclass_gfx_1_1_syphon_settings_widget_html"><div class="ttname"><a href="class_gfx_1_1_syphon_settings_widget.html">Gfx::SyphonSettingsWidget</a></div><div class="ttdef"><b>Definition</b> SyphonOutput.hpp:48</div></div>
 <div class="ttc" id="aclass_gfx_1_1gfx__protocol__base_html"><div class="ttname"><a href="class_gfx_1_1gfx__protocol__base.html">Gfx::gfx_protocol_base</a></div><div class="ttdef"><b>Definition</b> GfxParameter.hpp:41</div></div>
-<div class="ttc" id="anamespace_gfx_html"><div class="ttname"><a href="namespace_gfx.html">Gfx</a></div><div class="ttdoc">Binds the rendering pipeline to ossia processes.</div><div class="ttdef"><b>Definition</b> CameraDevice.cpp:28</div></div>
+<div class="ttc" id="anamespace_gfx_html"><div class="ttname"><a href="namespace_gfx.html">Gfx</a></div><div class="ttdoc">Binds the rendering pipeline to ossia processes.</div><div class="ttdef"><b>Definition</b> CameraDevice.cpp:24</div></div>
 <div class="ttc" id="astruct_device_1_1_device_settings_html"><div class="ttname"><a href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a></div><div class="ttdef"><b>Definition</b> DeviceSettings.hpp:20</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition</b> DocumentContext.hpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->

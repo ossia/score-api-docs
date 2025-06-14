@@ -2844,8 +2844,6 @@ var hierarchy =
       [ "Dataflow::DragMoveFilter", "struct_dataflow_1_1_drag_move_filter.html", null ],
       [ "Dataflow::PortItem", "class_dataflow_1_1_port_item.html", null ],
       [ "Device::DeviceEnumerator", "class_device_1_1_device_enumerator.html", [
-        [ "Gfx::CameraEnumerator", "class_gfx_1_1_camera_enumerator.html", null ],
-        [ "Gfx::CustomCameraEnumerator", "class_gfx_1_1_custom_camera_enumerator.html", null ],
         [ "Gfx::Kinect2::Kinect2Enumerator", "class_gfx_1_1_kinect2_1_1_kinect2_enumerator.html", null ],
         [ "Gfx::Spout::SpoutEnumerator", "class_gfx_1_1_spout_1_1_spout_enumerator.html", null ],
         [ "Gfx::V4L2CameraEnumerator", "struct_gfx_1_1_v4_l2_camera_enumerator.html", null ],
@@ -3498,7 +3496,6 @@ var hierarchy =
       [ "Dataflow::PortTooltip", "class_dataflow_1_1_port_tooltip.html", null ],
       [ "Device::ProtocolSettingsWidget", "class_device_1_1_protocol_settings_widget.html", [
         [ "Dataflow::AudioSettingsWidget", "class_dataflow_1_1_audio_settings_widget.html", null ],
-        [ "Gfx::CameraSettingsWidget", "class_gfx_1_1_camera_settings_widget.html", null ],
         [ "Gfx::SharedInputSettingsWidget", "class_gfx_1_1_shared_input_settings_widget.html", [
           [ "Gfx::Kinect2::Kinect2SettingsWidget", "class_gfx_1_1_kinect2_1_1_kinect2_settings_widget.html", null ],
           [ "Gfx::Sh4lt::InputSettingsWidget", "class_gfx_1_1_sh4lt_1_1_input_settings_widget.html", null ],
