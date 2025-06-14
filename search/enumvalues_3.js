@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['putinnewslot_0',['PutInNewSlot',['../namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1aa76f0cafad2868e7b714583dad50cc02',1,'Process']]]
+  ['itemrequiresuniquefocus_0',['ItemRequiresUniqueFocus',['../namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1ac2f49ac9dfa9d3586df76c3c7d551a32',1,'Process']]]
 ];

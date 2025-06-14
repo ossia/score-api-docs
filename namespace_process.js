@@ -114,6 +114,7 @@ var namespace_process =
       [ "CreateControls", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a38523301770f54c3e6f8daa92606322d", null ],
       [ "Snapshottable", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a329bab4a774c16e9f031ddbe332e1d57", null ],
       [ "Recordable", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a6138f7c2dccb204d113416acecc69b9d", null ],
+      [ "ItemRequiresUniqueFocus", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1ac2f49ac9dfa9d3586df76c3c7d551a32", null ],
       [ "SupportsLasting", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a29b3036018dcd388b9502a6aae1912b2", null ],
       [ "ExternalEffect", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1ac0745b11b10f8e4cdc8476e3d2862695", null ],
       [ "SupportsAll", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1accb6c989f8513bacb617f1d00fb237d9", null ]

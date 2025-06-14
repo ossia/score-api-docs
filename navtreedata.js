@@ -129,14 +129,14 @@ var NAVTREEINDEX =
 "classscore_1_1_time_signature_widget.html",
 "conceptoscr_1_1recursive__container__layout.html",
 "dir_b636942c0295978537dae72da4a2a525.html",
-"namespacescore_1_1gfx.html#a78ab4e37b245596d7fbb9023414aa622",
-"struct_analysis_1_1_flatness.html",
-"struct_gfx_1_1_stream_options.html",
-"struct_nodes_1_1ossia__port.html",
+"namespacescore_1_1gfx.html#a65ed3e9bcd7da04ca16e3feb18935e1f",
+"struct_analysis_1_1_envelope_follower.html",
+"struct_gfx_1_1_spout_node.html#a28c7d5311530845d77f105f53ae58cd8",
+"struct_nodes_1_1combobox__from__array_1_1range.html",
 "struct_scenario_1_1_state_overlays.html",
-"struct_widget_factory_1_1_path_generator_x_y.html",
-"structscore_1_1_command_key_hash.html",
-"structscore_1_1gfx_1_1_graph.html#a30516df5d2ae6aa857533489e7e34c19",
+"struct_widget_factory_1_1_multi_slider_x_y.html",
+"structscore_1_1_command_data.html",
+"structscore_1_1gfx_1_1_graph.html#a27b1df43407c54984e12e5717382c983",
 "structstd_1_1hash_3_01_device_1_1_full_address_settings_01_4.html"
 ];
 

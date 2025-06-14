@@ -159,14 +159,14 @@ $(document).ready(function(){initNavTree('_value_display_8hpp_source.html',''); 
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        QGraphicsItem* parent)</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        : <a class="code hl_class" href="class_process_1_1_effect_layer_view.html">Process::EffectLayerView</a>{parent}</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      setAcceptedMouseButtons({});</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      setAcceptedMouseButtons(Qt::NoButton);</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      <span class="keyword">const</span> <a class="code hl_class" href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a>&amp; portFactory</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>          = doc.app.<a class="code hl_function" href="structscore_1_1_application_context.html#af021fe95f288b8657dad09af97e67fe5">interfaces</a>&lt;<a class="code hl_class" href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a>&gt;();</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      <span class="keyword">auto</span> inl = <span class="keyword">static_cast&lt;</span><a class="code hl_class" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a>*<span class="keyword">&gt;</span>(process.inlets().front());</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      <span class="keyword">auto</span> fact = portFactory.get(inl-&gt;concreteKey());</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      <span class="keyword">auto</span> fact = portFactory.<a class="code hl_function" href="classscore_1_1_interface_list.html#ac8fa57db35efa0fcb50ab2fa8d8ca8a0">get</a>(inl-&gt;concreteKey());</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      <span class="keyword">auto</span> port = fact-&gt;makePortItem(*inl, doc, <span class="keyword">this</span>, <span class="keyword">this</span>);</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      port-&gt;setPos(0, 5);</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
@@ -205,6 +205,7 @@ $(document).ready(function(){initNavTree('_value_display_8hpp_source.html',''); 
 <div class="ttc" id="aclass_process_1_1_effect_layer_view_html"><div class="ttname"><a href="class_process_1_1_effect_layer_view.html">Process::EffectLayerView</a></div><div class="ttdef"><b>Definition</b> EffectLayer.hpp:16</div></div>
 <div class="ttc" id="aclass_process_1_1_port_factory_list_html"><div class="ttname"><a href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a></div><div class="ttdef"><b>Definition</b> PortFactory.hpp:74</div></div>
 <div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition</b> score-lib-process/Process/Process.hpp:61</div></div>
+<div class="ttc" id="aclassscore_1_1_interface_list_html_ac8fa57db35efa0fcb50ab2fa8d8ca8a0"><div class="ttname"><a href="classscore_1_1_interface_list.html#ac8fa57db35efa0fcb50ab2fa8d8ca8a0">score::InterfaceList::get</a></div><div class="ttdeci">FactoryType * get(const key_type &amp;k) const noexcept</div><div class="ttdoc">Get a particular factory from its ConcreteKey.</div><div class="ttdef"><b>Definition</b> InterfaceList.hpp:123</div></div>
 <div class="ttc" id="astruct_process_1_1_context_html"><div class="ttname"><a href="struct_process_1_1_context.html">Process::Context</a></div><div class="ttdef"><b>Definition</b> ProcessContext.hpp:12</div></div>
 <div class="ttc" id="astruct_ui_1_1_value_display_1_1_node_1_1_layer_html"><div class="ttname"><a href="struct_ui_1_1_value_display_1_1_node_1_1_layer.html">Ui::ValueDisplay::Node::Layer</a></div><div class="ttdef"><b>Definition</b> ValueDisplay.hpp:39</div></div>
 <div class="ttc" id="astruct_ui_1_1_value_display_1_1_node_html"><div class="ttname"><a href="struct_ui_1_1_value_display_1_1_node.html">Ui::ValueDisplay::Node</a></div><div class="ttdef"><b>Definition</b> ValueDisplay.hpp:18</div></div>

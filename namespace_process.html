@@ -410,7 +410,8 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a329bab4a774c16e9f031ddbe332e1d57">Snapshottable</a> = (1 &lt;&lt; 10 )
 , <a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a6138f7c2dccb204d113416acecc69b9d">Recordable</a> = (1 &lt;&lt; 11 )
 , <br />
-&#160;&#160;<b>SupportsLasting</b> = SupportsTemporal | TimeIndependent
+&#160;&#160;<a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1ac2f49ac9dfa9d3586df76c3c7d551a32">ItemRequiresUniqueFocus</a> = (1 &lt;&lt; 12 )
+, <b>SupportsLasting</b> = SupportsTemporal | TimeIndependent
 , <b>ExternalEffect</b> = SupportsTemporal | TimeIndependent | RequiresCustomData | ControlSurface
 , <b>SupportsAll</b> = SupportsTemporal | TimeIndependent | SupportsState
 <br />
@@ -720,6 +721,8 @@ QDebug&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b
 <tr><td class="fieldname"><a id="a592bb361ebf8fbc09c929c93208c71f1a329bab4a774c16e9f031ddbe332e1d57" name="a592bb361ebf8fbc09c929c93208c71f1a329bab4a774c16e9f031ddbe332e1d57"></a>Snapshottable&#160;</td><td class="fielddoc"><p>The process is snapshottable. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a592bb361ebf8fbc09c929c93208c71f1a6138f7c2dccb204d113416acecc69b9d" name="a592bb361ebf8fbc09c929c93208c71f1a6138f7c2dccb204d113416acecc69b9d"></a>Recordable&#160;</td><td class="fielddoc"><p>The process is recordable. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a592bb361ebf8fbc09c929c93208c71f1ac2f49ac9dfa9d3586df76c3c7d551a32" name="a592bb361ebf8fbc09c929c93208c71f1ac2f49ac9dfa9d3586df76c3c7d551a32"></a>ItemRequiresUniqueFocus&#160;</td><td class="fielddoc"><p>The process has an editable widget which must unfocus &amp; unselect other items. </p>
 </td></tr>
 </table>
 
