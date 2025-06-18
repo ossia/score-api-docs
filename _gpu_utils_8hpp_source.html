@@ -1342,29 +1342,30 @@ $(document).ready(function(){initNavTree('_gpu_utils_8hpp_source.html',''); init
 <div class="line"><a id="l01230" name="l01230"></a><span class="lineno"> 1230</span>  });</div>
 <div class="line"><a id="l01231" name="l01231"></a><span class="lineno"> 1231</span>}</div>
 <div class="line"><a id="l01232" name="l01232"></a><span class="lineno"> 1232</span> </div>
-<div class="line"><a id="l01233" name="l01233"></a><span class="lineno"> 1233</span><span class="keyword">inline</span> <span class="keywordtype">void</span> inplaceMirror(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* bytes, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height)</div>
-<div class="line"><a id="l01234" name="l01234"></a><span class="lineno"> 1234</span>{</div>
-<div class="line"><a id="l01235" name="l01235"></a><span class="lineno"> 1235</span>  <span class="keywordflow">if</span>(width &lt; 1 || height &lt;= 1)</div>
-<div class="line"><a id="l01236" name="l01236"></a><span class="lineno"> 1236</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l01237" name="l01237"></a><span class="lineno"> 1237</span>  <span class="keyword">const</span> <span class="keywordtype">size_t</span> row_size = width * 4;</div>
-<div class="line"><a id="l01238" name="l01238"></a><span class="lineno"> 1238</span> </div>
-<div class="line"><a id="l01239" name="l01239"></a><span class="lineno"> 1239</span>  <span class="keyword">auto</span> temp_row = (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*)alloca(row_size);</div>
-<div class="line"><a id="l01240" name="l01240"></a><span class="lineno"> 1240</span>  <span class="keyword">auto</span> top = bytes;</div>
-<div class="line"><a id="l01241" name="l01241"></a><span class="lineno"> 1241</span>  <span class="keyword">auto</span> bottom = bytes + (height - 1) * row_size;</div>
-<div class="line"><a id="l01242" name="l01242"></a><span class="lineno"> 1242</span> </div>
-<div class="line"><a id="l01243" name="l01243"></a><span class="lineno"> 1243</span>  <span class="keywordflow">while</span>(top &lt; bottom)</div>
-<div class="line"><a id="l01244" name="l01244"></a><span class="lineno"> 1244</span>  {</div>
-<div class="line"><a id="l01245" name="l01245"></a><span class="lineno"> 1245</span>    memcpy(temp_row, top, row_size);</div>
-<div class="line"><a id="l01246" name="l01246"></a><span class="lineno"> 1246</span>    memcpy(top, bottom, row_size);</div>
-<div class="line"><a id="l01247" name="l01247"></a><span class="lineno"> 1247</span>    memcpy(bottom, temp_row, row_size);</div>
-<div class="line"><a id="l01248" name="l01248"></a><span class="lineno"> 1248</span> </div>
-<div class="line"><a id="l01249" name="l01249"></a><span class="lineno"> 1249</span>    top += row_size;</div>
-<div class="line"><a id="l01250" name="l01250"></a><span class="lineno"> 1250</span>    bottom -= row_size;</div>
-<div class="line"><a id="l01251" name="l01251"></a><span class="lineno"> 1251</span>  }</div>
-<div class="line"><a id="l01252" name="l01252"></a><span class="lineno"> 1252</span>}</div>
+<div class="line"><a id="l01233" name="l01233"></a><span class="lineno"> 1233</span><span class="keyword">inline</span> <span class="keywordtype">void</span></div>
+<div class="line"><a id="l01234" name="l01234"></a><span class="lineno"> 1234</span>inplaceMirror(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* bytes, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">int</span> bytes_per_pixel)</div>
+<div class="line"><a id="l01235" name="l01235"></a><span class="lineno"> 1235</span>{</div>
+<div class="line"><a id="l01236" name="l01236"></a><span class="lineno"> 1236</span>  <span class="keywordflow">if</span>(width &lt; 1 || height &lt;= 1)</div>
+<div class="line"><a id="l01237" name="l01237"></a><span class="lineno"> 1237</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l01238" name="l01238"></a><span class="lineno"> 1238</span>  <span class="keyword">const</span> <span class="keywordtype">size_t</span> row_size = width * bytes_per_pixel;</div>
+<div class="line"><a id="l01239" name="l01239"></a><span class="lineno"> 1239</span> </div>
+<div class="line"><a id="l01240" name="l01240"></a><span class="lineno"> 1240</span>  <span class="keyword">auto</span> temp_row = (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*)alloca(row_size);</div>
+<div class="line"><a id="l01241" name="l01241"></a><span class="lineno"> 1241</span>  <span class="keyword">auto</span> top = bytes;</div>
+<div class="line"><a id="l01242" name="l01242"></a><span class="lineno"> 1242</span>  <span class="keyword">auto</span> bottom = bytes + (height - 1) * row_size;</div>
+<div class="line"><a id="l01243" name="l01243"></a><span class="lineno"> 1243</span> </div>
+<div class="line"><a id="l01244" name="l01244"></a><span class="lineno"> 1244</span>  <span class="keywordflow">while</span>(top &lt; bottom)</div>
+<div class="line"><a id="l01245" name="l01245"></a><span class="lineno"> 1245</span>  {</div>
+<div class="line"><a id="l01246" name="l01246"></a><span class="lineno"> 1246</span>    memcpy(temp_row, top, row_size);</div>
+<div class="line"><a id="l01247" name="l01247"></a><span class="lineno"> 1247</span>    memcpy(top, bottom, row_size);</div>
+<div class="line"><a id="l01248" name="l01248"></a><span class="lineno"> 1248</span>    memcpy(bottom, temp_row, row_size);</div>
+<div class="line"><a id="l01249" name="l01249"></a><span class="lineno"> 1249</span> </div>
+<div class="line"><a id="l01250" name="l01250"></a><span class="lineno"> 1250</span>    top += row_size;</div>
+<div class="line"><a id="l01251" name="l01251"></a><span class="lineno"> 1251</span>    bottom -= row_size;</div>
+<div class="line"><a id="l01252" name="l01252"></a><span class="lineno"> 1252</span>  }</div>
 <div class="line"><a id="l01253" name="l01253"></a><span class="lineno"> 1253</span>}</div>
-<div class="line"><a id="l01254" name="l01254"></a><span class="lineno"> 1254</span> </div>
-<div class="line"><a id="l01255" name="l01255"></a><span class="lineno"> 1255</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01254" name="l01254"></a><span class="lineno"> 1254</span>}</div>
+<div class="line"><a id="l01255" name="l01255"></a><span class="lineno"> 1255</span> </div>
+<div class="line"><a id="l01256" name="l01256"></a><span class="lineno"> 1256</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a></div><div class="ttdoc">Root data model for visual nodes.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:75</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_html_acac03f2e76d8ab63548bab3fac5968a3"><div class="ttname"><a href="classscore_1_1gfx_1_1_node.html#acac03f2e76d8ab63548bab3fac5968a3">score::gfx::Node::process</a></div><div class="ttdeci">virtual void process(Message &amp;&amp;msg)</div><div class="ttdoc">Process a message from the execution engine.</div><div class="ttdef"><b>Definition</b> Node.cpp:25</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_model_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_model.html">score::gfx::NodeModel</a></div><div class="ttdoc">Common base class for most single-pass, simple nodes.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:230</div></div>
