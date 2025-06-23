@@ -265,7 +265,7 @@ $(document).ready(function(){initNavTree('_cpu_filter_node_8hpp_source.html','')
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    {</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>      cpu_tex.bytes = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(buf.data());</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>      <span class="keywordflow">if</span>(rhi.isYUpInFramebuffer())</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>      <span class="keywordflow">if</span>(rhi.isYUpInNDC())</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <span class="keywordflow">if</span>(cpu_tex.width * cpu_tex.height &gt; 0)</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>          inplaceMirror(</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>              cpu_tex.bytes, cpu_tex.width, cpu_tex.height, cpu_tex.bytes_per_pixel);</div>
