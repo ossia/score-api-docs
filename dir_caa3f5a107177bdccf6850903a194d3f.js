@@ -8,5 +8,6 @@ var dir_caa3f5a107177bdccf6850903a194d3f =
     [ "MIDISync.hpp", "_m_i_d_i_sync_8hpp_source.html", null ],
     [ "Spammer.hpp", "_spammer_8hpp_source.html", null ],
     [ "Sweeper.hpp", "_sweeper_8hpp_source.html", null ],
-    [ "Teleplot.hpp", "_teleplot_8hpp_source.html", null ]
+    [ "Teleplot.hpp", "_teleplot_8hpp_source.html", null ],
+    [ "score-plugin-avnd/AvndProcesses/Utils.hpp", "score-plugin-avnd_2_avnd_processes_2_utils_8hpp_source.html", null ]
 ];

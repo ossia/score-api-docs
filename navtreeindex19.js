@@ -85,6 +85,7 @@ var NAVTREEINDEX19 =
 "score-plugin-audio_2_audio_2_settings_2_view_8hpp_source.html":[13,0,0,2,6,0,0,3],
 "score-plugin-automation_2_automation_2_commands_2_change_address_8hpp_source.html":[13,0,0,2,7,0,0,1],
 "score-plugin-automation_2_automation_2_local_tree_8hpp_source.html":[13,0,0,2,7,0,9],
+"score-plugin-avnd_2_avnd_processes_2_utils_8hpp_source.html":[13,0,0,2,8,2,9],
 "score-plugin-avnd_2_crousti_2_executor_8hpp_source.html":[13,0,0,2,8,3,5],
 "score-plugin-avnd_2_crousti_2_g_p_u_node_8hpp_source.html":[13,0,0,2,8,3,12],
 "score-plugin-avnd_2_crousti_2_layer_8hpp_source.html":[13,0,0,2,8,3,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "statemachines_8hpp_source.html":[13,0,0,1,0,3,10],
 "struct_analysis_1_1_c_s_d.html":[12,0,0,4],
 "struct_analysis_1_1_centroid.html":[12,0,0,2],
-"struct_analysis_1_1_crest.html":[12,0,0,3],
-"struct_analysis_1_1_energy_difference.html":[12,0,0,5]
+"struct_analysis_1_1_crest.html":[12,0,0,3]
 };
