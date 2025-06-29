@@ -521,6 +521,8 @@ var annotated_dup =
       [ "DblIAudioFrameEncoder", "struct_gfx_1_1_dbl_i_audio_frame_encoder.html", null ],
       [ "DemuxerInfo", "struct_gfx_1_1_demuxer_info.html", null ],
       [ "DocumentPlugin", "class_gfx_1_1_document_plugin.html", null ],
+      [ "DShowCameraDeviceEnumerator", "struct_gfx_1_1_d_show_camera_device_enumerator.html", null ],
+      [ "DShowCameraEnumerator", "struct_gfx_1_1_d_show_camera_enumerator.html", null ],
       [ "exec_control", "struct_gfx_1_1exec__control.html", null ],
       [ "FltIAudioFrameEncoder", "struct_gfx_1_1_flt_i_audio_frame_encoder.html", null ],
       [ "FltPAudioFrameEncoder", "struct_gfx_1_1_flt_p_audio_frame_encoder.html", null ],

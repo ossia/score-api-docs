@@ -692,6 +692,7 @@ var hierarchy =
     [ "std::enable_shared_from_this", null, [
       [ "Execution::ProcessComponent", "class_execution_1_1_process_component.html", null ],
       [ "Gfx::CameraDeviceEnumerator", "struct_gfx_1_1_camera_device_enumerator.html", [
+        [ "Gfx::DShowCameraDeviceEnumerator", "struct_gfx_1_1_d_show_camera_device_enumerator.html", null ],
         [ "Gfx::V4L2CameraDeviceEnumerator", "struct_gfx_1_1_v4_l2_camera_device_enumerator.html", null ]
       ] ]
     ] ],
@@ -1052,8 +1053,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< model >", "classid__base__t.html", null ],
+    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -2844,6 +2845,7 @@ var hierarchy =
       [ "Dataflow::DragMoveFilter", "struct_dataflow_1_1_drag_move_filter.html", null ],
       [ "Dataflow::PortItem", "class_dataflow_1_1_port_item.html", null ],
       [ "Device::DeviceEnumerator", "class_device_1_1_device_enumerator.html", [
+        [ "Gfx::DShowCameraEnumerator", "struct_gfx_1_1_d_show_camera_enumerator.html", null ],
         [ "Gfx::Kinect2::Kinect2Enumerator", "class_gfx_1_1_kinect2_1_1_kinect2_enumerator.html", null ],
         [ "Gfx::Spout::SpoutEnumerator", "class_gfx_1_1_spout_1_1_spout_enumerator.html", null ],
         [ "Gfx::V4L2CameraEnumerator", "struct_gfx_1_1_v4_l2_camera_enumerator.html", null ],

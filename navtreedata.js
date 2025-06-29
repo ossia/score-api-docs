@@ -131,13 +131,13 @@ var NAVTREEINDEX =
 "dir_b636942c0295978537dae72da4a2a525.html",
 "namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734af6a8d2f77966ef08037db61b37793bcd",
 "struct_analysis_1_1_energy_difference.html",
-"struct_gfx_1_1_spout_node.html#a28c7d5311530845d77f105f53ae58cd8",
-"struct_nodes_1_1combobox__from__array.html",
-"struct_scenario_1_1_start_date_comparator.html",
-"struct_widget_factory_1_1_multi_slider.html",
-"structscore_1_1_command_data.html",
-"structscore_1_1gfx_1_1_graph.html#a27b1df43407c54984e12e5717382c983",
-"structserialization__tag_3_01_t_01_4.html"
+"struct_gfx_1_1_spout_1_1_spout_input_node.html",
+"struct_nodes_1_1_rate_limiter_1_1_node_1_1ins.html",
+"struct_scenario_1_1_slot_presenter.html",
+"struct_widget_factory_1_1_int_spin_box.html",
+"structscore_1_1_color_ref.html",
+"structscore_1_1gfx_1_1_graph.html#a1c3b40f6e90a21e4fb0636257f7bc975",
+"structscore_1_1testing_1_1_mock_application.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
