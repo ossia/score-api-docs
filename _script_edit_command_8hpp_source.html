@@ -116,34 +116,34 @@ $(document).ready(function(){initNavTree('_script_edit_command_8hpp_source.html'
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;Process/Script/ScriptEditor.hpp&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;Process/Script/ScriptProcess.hpp&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;Scenario/Document/ScenarioDocument/ScenarioDocumentModel.hpp&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;Dataflow/Commands/CableHelpers.hpp&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;Dataflow/Commands/CableHelpers.hpp&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;ossia/detail/algorithms.hpp&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_scenario.html">Scenario</a></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">using </span>SavedPort = <a class="code hl_struct" href="struct_dataflow_1_1_saved_port.html">Dataflow::SavedPort</a>;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Process_T, <span class="keyword">typename</span> Property_T&gt;</div>
-<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_scenario_1_1_edit_script.html">   17</a></span><span class="keyword">class </span><a class="code hl_class" href="class_scenario_1_1_edit_script.html">EditScript</a> : <span class="keyword">public</span> <a class="code hl_class" href="classscore_1_1_command.html">score::Command</a></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keyword">using </span>param_type = <span class="keyword">typename</span> Property_T::param_type;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keyword">using </span>score::Command::Command;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <a class="code hl_class" href="class_scenario_1_1_edit_script.html">EditScript</a>(</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>      <span class="keyword">const</span> Process_T&amp; model, param_type newScript, <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx)</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>      : m_path{model}</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>      , m_newScript{std::move(newScript)}</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>      , m_oldScript{(model.*Property_T::get)()}</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  {</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    m_oldCables = Dataflow::saveCables({<span class="keyword">const_cast&lt;</span>Process_T*<span class="keyword">&gt;</span>(&amp;model)}, ctx);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; port : model.inlets())</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      m_oldInlets.emplace_back(<a class="code hl_struct" href="struct_dataflow_1_1_saved_port.html">SavedPort</a>{port-&gt;name(), port-&gt;type(), port-&gt;saveData()});</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; port : model.outlets())</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      m_oldOutlets.emplace_back(<a class="code hl_struct" href="struct_dataflow_1_1_saved_port.html">SavedPort</a>{port-&gt;name(), port-&gt;type(), port-&gt;saveData()});</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;ossia/detail/algorithms.hpp&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_scenario.html">Scenario</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">using </span>SavedPort = <a class="code hl_struct" href="struct_dataflow_1_1_saved_port.html">Dataflow::SavedPort</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Process_T, <span class="keyword">typename</span> Property_T&gt;</div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_scenario_1_1_edit_script.html">   15</a></span><span class="keyword">class </span><a class="code hl_class" href="class_scenario_1_1_edit_script.html">EditScript</a> : <span class="keyword">public</span> <a class="code hl_class" href="classscore_1_1_command.html">score::Command</a></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <span class="keyword">using </span>param_type = <span class="keyword">typename</span> Property_T::param_type;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keyword">using </span>score::Command::Command;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <a class="code hl_class" href="class_scenario_1_1_edit_script.html">EditScript</a>(</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>      <span class="keyword">const</span> Process_T&amp; model, param_type newScript, <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx)</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>      : m_path{model}</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>      , m_newScript{std::move(newScript)}</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>      , m_oldScript{(model.*Property_T::get)()}</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    m_oldCables = Dataflow::saveCables({<span class="keyword">const_cast&lt;</span>Process_T*<span class="keyword">&gt;</span>(&amp;model)}, ctx);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; port : model.inlets())</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>      m_oldInlets.emplace_back(</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>          <a class="code hl_struct" href="struct_dataflow_1_1_saved_port.html">Dataflow::SavedPort</a>{port-&gt;name(), port-&gt;type(), port-&gt;saveData()});</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; port : model.outlets())</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      m_oldOutlets.emplace_back(</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>          <a class="code hl_struct" href="struct_dataflow_1_1_saved_port.html">Dataflow::SavedPort</a>{port-&gt;name(), port-&gt;type(), port-&gt;saveData()});</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  }</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">private</span>:</div>
@@ -225,39 +225,14 @@ $(document).ready(function(){initNavTree('_script_edit_command_8hpp_source.html'
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>};</div>
 </div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>}</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="keyword">struct </span>is_custom_serialized&lt;<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::SavedPort&gt; : std::true_type</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>{</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>};</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="keyword">template</span> &lt;&gt;</div>
-<div class="foldopen" id="foldopen00121" data-start="{" data-end="};">
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="struct_t_serializer_3_01_data_stream_00_01_scenario_1_1_saved_port_01_4.html">  121</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_t_serializer.html">TSerializer</a>&lt;<a class="code hl_class" href="class_data_stream.html">DataStream</a>, <a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::SavedPort&gt;</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>{</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> readFrom(<a class="code hl_class" href="class_data_stream_reader.html">DataStream::Serializer</a>&amp; s, <span class="keyword">const</span> <a class="code hl_struct" href="struct_dataflow_1_1_saved_port.html">Scenario::SavedPort</a>&amp; tv)</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  {</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    s.stream() &lt;&lt; tv.name &lt;&lt; tv.type &lt;&lt; tv.data;</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  }</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> writeTo(<a class="code hl_class" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp; s, <a class="code hl_struct" href="struct_dataflow_1_1_saved_port.html">Scenario::SavedPort</a>&amp; tv)</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  {</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    s.stream() &gt;&gt; tv.name &gt;&gt; tv.type &gt;&gt; tv.data;</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  }</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>};</div>
-</div>
-<div class="ttc" id="aclass_data_stream_html"><div class="ttname"><a href="class_data_stream.html">DataStream</a></div><div class="ttdef"><b>Definition</b> VisitorInterface.hpp:53</div></div>
-<div class="ttc" id="aclass_data_stream_reader_html"><div class="ttname"><a href="class_data_stream_reader.html">DataStreamReader</a></div><div class="ttdef"><b>Definition</b> DataStreamVisitor.hpp:27</div></div>
-<div class="ttc" id="aclass_data_stream_writer_html"><div class="ttname"><a href="class_data_stream_writer.html">DataStreamWriter</a></div><div class="ttdef"><b>Definition</b> DataStreamVisitor.hpp:202</div></div>
 <div class="ttc" id="aclass_path_html"><div class="ttname"><a href="class_path.html">Path</a></div><div class="ttdoc">The Path class is a typesafe wrapper around ObjectPath.</div><div class="ttdef"><b>Definition</b> Path.hpp:52</div></div>
-<div class="ttc" id="aclass_scenario_1_1_edit_script_html"><div class="ttname"><a href="class_scenario_1_1_edit_script.html">Scenario::EditScript</a></div><div class="ttdef"><b>Definition</b> ScriptEditCommand.hpp:18</div></div>
+<div class="ttc" id="aclass_scenario_1_1_edit_script_html"><div class="ttname"><a href="class_scenario_1_1_edit_script.html">Scenario::EditScript</a></div><div class="ttdef"><b>Definition</b> ScriptEditCommand.hpp:16</div></div>
 <div class="ttc" id="aclassscore_1_1_command_html"><div class="ttname"><a href="classscore_1_1_command.html">score::Command</a></div><div class="ttdoc">The Command class.</div><div class="ttdef"><b>Definition</b> Command.hpp:34</div></div>
 <div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition</b> score-plugin-dataflow/Dataflow/PortItem.hpp:13</div></div>
 <div class="ttc" id="astruct_data_stream_input_html"><div class="ttname"><a href="struct_data_stream_input.html">DataStreamInput</a></div><div class="ttdef"><b>Definition</b> DataStreamHelpers.hpp:99</div></div>
 <div class="ttc" id="astruct_data_stream_output_html"><div class="ttname"><a href="struct_data_stream_output.html">DataStreamOutput</a></div><div class="ttdef"><b>Definition</b> DataStreamHelpers.hpp:103</div></div>
-<div class="ttc" id="astruct_dataflow_1_1_saved_port_html"><div class="ttname"><a href="struct_dataflow_1_1_saved_port.html">Dataflow::SavedPort</a></div><div class="ttdef"><b>Definition</b> CableHelpers.hpp:66</div></div>
+<div class="ttc" id="astruct_dataflow_1_1_saved_port_html"><div class="ttname"><a href="struct_dataflow_1_1_saved_port.html">Dataflow::SavedPort</a></div><div class="ttdef"><b>Definition</b> CableHelpers.hpp:69</div></div>
 <div class="ttc" id="astruct_process_1_1_script_change_result_html"><div class="ttname"><a href="struct_process_1_1_script_change_result.html">Process::ScriptChangeResult</a></div><div class="ttdef"><b>Definition</b> ScriptProcess.hpp:14</div></div>
-<div class="ttc" id="astruct_t_serializer_html"><div class="ttname"><a href="struct_t_serializer.html">TSerializer</a></div><div class="ttdef"><b>Definition</b> VisitorInterface.hpp:13</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition</b> DocumentContext.hpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

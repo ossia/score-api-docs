@@ -277,7 +277,6 @@ var hierarchy =
       [ "Nodal::ReplaceAllNodes", "class_nodal_1_1_replace_all_nodes.html", null ],
       [ "Patternist::UpdatePattern", "class_patternist_1_1_update_pattern.html", null ],
       [ "Process::ChangePortSettings", "class_process_1_1_change_port_settings.html", null ],
-      [ "Process::LoadPreset", "class_process_1_1_load_preset.html", null ],
       [ "Process::MoveNodes", "class_process_1_1_move_nodes.html", null ],
       [ "Process::SetControlOutletValue", "class_process_1_1_set_control_outlet_value.html", null ],
       [ "Process::SetControlValue", "class_process_1_1_set_control_value.html", null ],
@@ -315,6 +314,8 @@ var hierarchy =
       [ "Scenario::Command::InsertContentInState", "class_scenario_1_1_command_1_1_insert_content_in_state.html", null ],
       [ "Scenario::Command::LoadLayerInInterval", "class_scenario_1_1_command_1_1_load_layer_in_interval.html", null ],
       [ "Scenario::Command::LoadOnlyLayerInInterval", "class_scenario_1_1_command_1_1_load_only_layer_in_interval.html", null ],
+      [ "Scenario::Command::LoadPreset", "class_scenario_1_1_command_1_1_load_preset.html", null ],
+      [ "Scenario::Command::LoadPresetWithCablesBackup", "class_scenario_1_1_command_1_1_load_preset_with_cables_backup.html", null ],
       [ "Scenario::Command::MergeEvents", "class_scenario_1_1_command_1_1_merge_events.html", null ],
       [ "Scenario::Command::MergeTimeSyncs", "class_scenario_1_1_command_1_1_merge_time_syncs.html", null ],
       [ "Scenario::Command::MoveBaseEvent< SimpleScenario_T >", "class_scenario_1_1_command_1_1_move_base_event.html", null ],
@@ -980,7 +981,7 @@ var hierarchy =
     [ "has_no_base", "structhas__no__base.html", null ],
     [ "has_ui< T >", "structhas__ui_3_01_t_01_4.html", null ],
     [ "Media::AudioFileManager::StreamInfo::hash", "struct_media_1_1_audio_file_manager_1_1_stream_info_1_1hash.html", null ],
-    [ "std::hash", null, [
+    [ "ossia::hash", null, [
       [ "score::CommandKeyHash", "structscore_1_1_command_key_hash.html", null ]
     ] ],
     [ "std::hash< Device::FullAddressSettings >", "structstd_1_1hash_3_01_device_1_1_full_address_settings_01_4.html", null ],
@@ -997,7 +998,7 @@ var hierarchy =
     [ "std::hash< StringKey< T > >", "structstd_1_1hash_3_01_string_key_3_01_t_01_4_01_4.html", null ],
     [ "std::hash< TimeVal >", "structstd_1_1hash_3_01_time_val_01_4.html", null ],
     [ "std::hash< UuidKey< T > >", "structstd_1_1hash_3_01_uuid_key_3_01_t_01_4_01_4.html", null ],
-    [ "score::hash_map", null, [
+    [ "ossia::hash_map", null, [
       [ "score::CommandStore", "structscore_1_1_command_store.html", null ]
     ] ],
     [ "Media::RMSData::Header", "struct_media_1_1_r_m_s_data_1_1_header.html", null ],
@@ -1053,8 +1054,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Model >", "classid__base__t.html", null ],
+    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1296,6 +1297,9 @@ var hierarchy =
         [ "oscr::LayerFactory< Info >", "classoscr_1_1_layer_factory.html", null ],
         [ "oscr::ScoreLayerFactory< T >", "classoscr_1_1_score_layer_factory.html", null ]
       ] ],
+      [ "Process::LoadPresetCommandFactory", "class_process_1_1_load_preset_command_factory.html", [
+        [ "Scenario::Command::LoadPresetCommandFactory", "class_scenario_1_1_command_1_1_load_preset_command_factory.html", null ]
+      ] ],
       [ "Process::OfflineAction", "class_process_1_1_offline_action.html", null ],
       [ "Process::PortFactory", "class_process_1_1_port_factory.html", [
         [ "Dataflow::AutomatablePortFactory", "class_dataflow_1_1_automatable_port_factory.html", [
@@ -1468,6 +1472,7 @@ var hierarchy =
       [ "score::InterfaceList< LayerFactory >", "classscore_1_1_interface_list.html", [
         [ "Process::LayerFactoryList", "class_process_1_1_layer_factory_list.html", null ]
       ] ],
+      [ "score::InterfaceList< LoadPresetCommandFactory >", "classscore_1_1_interface_list.html", null ],
       [ "score::InterfaceList< PortFactory >", "classscore_1_1_interface_list.html", [
         [ "Process::PortFactoryList", "class_process_1_1_port_factory_list.html", null ]
       ] ],
@@ -1534,6 +1539,9 @@ var hierarchy =
         ] ],
         [ "score::MatchingFactory< InspectorWidgetFactory >", "classscore_1_1_matching_factory.html", [
           [ "Inspector::InspectorWidgetList", "class_inspector_1_1_inspector_widget_list.html", null ]
+        ] ],
+        [ "score::MatchingFactory< LoadPresetCommandFactory >", "classscore_1_1_matching_factory.html", [
+          [ "Process::LoadPresetCommandFactoryList", "class_process_1_1_load_preset_command_factory_list.html", null ]
         ] ],
         [ "score::MatchingFactory< TriggerCommandFactory >", "classscore_1_1_matching_factory.html", [
           [ "Scenario::Command::TriggerCommandFactoryList", "class_scenario_1_1_command_1_1_trigger_command_factory_list.html", null ]
@@ -3978,6 +3986,7 @@ var hierarchy =
     [ "TSerializer< Serializer_T, T, Enable >", "struct_t_serializer.html", null ],
     [ "TSerializer< DataStream, boost::container::dtl::pair< T, U > >", "struct_t_serializer_3_01_data_stream_00_01boost_1_1container_1_1dtl_1_1pair_3_01_t_00_01_u_01_4_01_4.html", null ],
     [ "TSerializer< DataStream, boost::container::vector< T, Alloc > >", "struct_t_serializer_3_01_data_stream_00_01boost_1_1container_1_1vector_3_01_t_00_01_alloc_01_4_01_4.html", null ],
+    [ "TSerializer< DataStream, Dataflow::SavedPort >", "struct_t_serializer_3_01_data_stream_00_01_dataflow_1_1_saved_port_01_4.html", null ],
     [ "TSerializer< DataStream, FaustDSP::Fx< DSP > >", "struct_t_serializer_3_01_data_stream_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html", null ],
     [ "TSerializer< DataStream, Id< U > >", "struct_t_serializer_3_01_data_stream_00_01_id_3_01_u_01_4_01_4.html", null ],
     [ "TSerializer< DataStream, IdentifiedObject< T > >", "struct_t_serializer_3_01_data_stream_00_01_identified_object_3_01_t_01_4_01_4.html", null ],
@@ -4002,7 +4011,6 @@ var hierarchy =
     [ "TSerializer< DataStream, QList< T > >", "struct_t_serializer_3_01_data_stream_00_01_q_list_3_01_t_01_4_01_4.html", null ],
     [ "TSerializer< DataStream, rapidjson::Document >", "struct_t_serializer_3_01_data_stream_00_01rapidjson_1_1_document_01_4.html", null ],
     [ "TSerializer< DataStream, rapidjson::Value >", "struct_t_serializer_3_01_data_stream_00_01rapidjson_1_1_value_01_4.html", null ],
-    [ "TSerializer< DataStream, Scenario::SavedPort >", "struct_t_serializer_3_01_data_stream_00_01_scenario_1_1_saved_port_01_4.html", null ],
     [ "TSerializer< DataStream, Scenario::TimeSignatureMap >", "struct_t_serializer_3_01_data_stream_00_01_scenario_1_1_time_signature_map_01_4.html", null ],
     [ "TSerializer< DataStream, score::any_map >", "struct_t_serializer_3_01_data_stream_00_01score_1_1any__map_01_4.html", null ],
     [ "TSerializer< DataStream, score::Entity< T > >", "struct_t_serializer_3_01_data_stream_00_01score_1_1_entity_3_01_t_01_4_01_4.html", null ],
@@ -4157,6 +4165,7 @@ var hierarchy =
       [ "score::IndirectContainer< PluginSettingsTab >", "classscore_1_1_indirect_container.html", null ],
       [ "score::IndirectContainer< AutomatableFactory >", "classscore_1_1_indirect_container.html", null ],
       [ "score::IndirectContainer< LayerFactory >", "classscore_1_1_indirect_container.html", null ],
+      [ "score::IndirectContainer< LoadPresetCommandFactory >", "classscore_1_1_indirect_container.html", null ],
       [ "score::IndirectContainer< OfflineAction >", "classscore_1_1_indirect_container.html", [
         [ "Process::OfflineActionList", "class_process_1_1_offline_action_list.html", null ]
       ] ],
@@ -4199,6 +4208,7 @@ var hierarchy =
         [ "score::InterfaceList< PluginSettingsTab >", "classscore_1_1_interface_list.html", null ],
         [ "score::InterfaceList< AutomatableFactory >", "classscore_1_1_interface_list.html", null ],
         [ "score::InterfaceList< LayerFactory >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< LoadPresetCommandFactory >", "classscore_1_1_interface_list.html", null ],
         [ "score::InterfaceList< PortFactory >", "classscore_1_1_interface_list.html", null ],
         [ "score::InterfaceList< ProcessDropHandler >", "classscore_1_1_interface_list.html", null ],
         [ "score::InterfaceList< ProcessModelFactory >", "classscore_1_1_interface_list.html", null ],

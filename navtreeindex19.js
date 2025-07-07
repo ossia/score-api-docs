@@ -1,5 +1,13 @@
 var NAVTREEINDEX19 =
 {
+"namespacescore_1_1gfx.html#a35ba9e4c253f3bcae70e1d36cf469be3":[11,0,12,0,92],
+"namespacescore_1_1gfx.html#a433eac87f8111d670824ff45923297fc":[11,0,12,0,90],
+"namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734":[11,0,12,0,82],
+"namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734a2fce123b21fdc92df7b967ec3fd6fd2f":[11,0,12,0,82,0],
+"namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734a38d8011fe995adbf6247fa157d99ea3b":[11,0,12,0,82,1],
+"namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734a57d8f1e6a706460bfbb419e8a26856da":[11,0,12,0,82,3],
+"namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734a6fdd5606769666af98fbd122d30d3f3a":[11,0,12,0,82,2],
+"namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734a9bb04ea840c3a95d7be0c3f7f5846293":[11,0,12,0,82,4],
 "namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734af6a8d2f77966ef08037db61b37793bcd":[11,0,12,0,82,5],
 "namespacescore_1_1gfx.html#a78ab4e37b245596d7fbb9023414aa622":[11,0,12,0,95],
 "namespacescore_1_1gfx.html#a8a9f595fc39a0920c64def6125927259":[11,0,12,0,84],
@@ -71,7 +79,7 @@ var NAVTREEINDEX19 =
 "prefix_8hpp_source.html":[13,0,0,1,1,15],
 "score-lib-device_2_tests_2_utils_8hpp_source.html":[13,0,0,2,0,1,0],
 "score-lib-process_2_process_2_application_plugin_8hpp_source.html":[13,0,0,2,3,4,15],
-"score-lib-process_2_process_2_commands_2_properties_8hpp_source.html":[13,0,0,2,3,4,2,3],
+"score-lib-process_2_process_2_commands_2_properties_8hpp_source.html":[13,0,0,2,3,4,2,4],
 "score-lib-process_2_process_2_dataflow_2_port_item_8hpp_source.html":[13,0,0,2,3,4,3,14],
 "score-lib-process_2_process_2_instantiations_8hpp_source.html":[13,0,0,2,3,4,28],
 "score-lib-process_2_process_2_process_8hpp_source.html":[13,0,0,2,3,4,33],
@@ -241,13 +249,5 @@ var NAVTREEINDEX19 =
 "score__plugin__spline_8hpp_source.html":[13,0,0,2,32,1],
 "score__plugin__threedim_8hpp_source.html":[13,0,0,2,34,1],
 "score__plugin__transport_8hpp_source.html":[13,0,0,2,35,1],
-"score__plugin__ui_8hpp_source.html":[13,0,0,2,36,1],
-"score__plugin__vst3_8hpp_source.html":[13,0,0,2,38,1],
-"score__plugin__vst_8hpp_source.html":[13,0,0,2,37,1],
-"score__plugin__ysfx_8hpp_source.html":[13,0,0,2,39,1],
-"scoreinterfaces_8hpp_source.html":[13,0,0,1,0,3,8],
-"statemachines_8hpp_source.html":[13,0,0,1,0,3,10],
-"struct_analysis_1_1_c_s_d.html":[12,0,0,4],
-"struct_analysis_1_1_centroid.html":[12,0,0,2],
-"struct_analysis_1_1_crest.html":[12,0,0,3]
+"score__plugin__ui_8hpp_source.html":[13,0,0,2,36,1]
 };

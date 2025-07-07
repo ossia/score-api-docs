@@ -166,6 +166,7 @@ var searchData=
   ['duplicateprocess_163',['DuplicateProcess',['../class_scenario_1_1_command_1_1_duplicate_process.html',1,'Scenario::Command']]],
   ['durationwidget_164',['DurationWidget',['../class_scenario_1_1_duration_widget.html',1,'Scenario']]],
   ['during_20execution_165',['Live modification during execution.',['../namespace_execution.html#LiveModification',1,'']]],
-  ['dynarray_5fimpl_166',['dynarray_impl',['../classscore_1_1dynarray__impl.html',1,'score']]],
-  ['dynvector_5fimpl_167',['dynvector_impl',['../classscore_1_1dynvector__impl.html',1,'score']]]
+  ['dynamicports_166',['DynamicPorts',['../namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a8c4b302dda329470aa905fd75a9d9c85',1,'Process']]],
+  ['dynarray_5fimpl_167',['dynarray_impl',['../classscore_1_1dynarray__impl.html',1,'score']]],
+  ['dynvector_5fimpl_168',['dynvector_impl',['../classscore_1_1dynvector__impl.html',1,'score']]]
 ];

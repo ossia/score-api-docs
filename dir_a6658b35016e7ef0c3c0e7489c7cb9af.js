@@ -11,6 +11,7 @@ var dir_a6658b35016e7ef0c3c0e7489c7cb9af =
     [ "TimeSync", "dir_44c1d9f9e8b476d82b1b434f3dddb8c9.html", "dir_44c1d9f9e8b476d82b1b434f3dddb8c9" ],
     [ "ClearSelection.hpp", "_clear_selection_8hpp_source.html", null ],
     [ "CommandAPI.hpp", "_command_a_p_i_8hpp_source.html", null ],
+    [ "LoadPresetCommand.hpp", "_load_preset_command_8hpp_source.html", null ],
     [ "MoveBaseEvent.hpp", "_move_base_event_8hpp_source.html", null ],
     [ "ReplaceAddresses.hpp", "_replace_addresses_8hpp_source.html", null ],
     [ "ScenarioCommandFactory.hpp", "_scenario_command_factory_8hpp_source.html", null ],

@@ -157,6 +157,8 @@ var NAVTREEINDEX2 =
 "_load_cables_8hpp_source.html":[13,0,0,2,31,0,0,3],
 "_load_device_8hpp_source.html":[13,0,0,2,12,0,0,0,1],
 "_load_preset_8hpp_source.html":[13,0,0,2,3,4,2,1],
+"_load_preset_command_8hpp_source.html":[13,0,0,2,31,4,1,11],
+"_load_preset_command_factory_8hpp_source.html":[13,0,0,2,3,4,2,2],
 "_loader_8hpp_source.html":[13,0,0,2,37,0,6],
 "_local_device_8hpp_source.html":[13,0,0,2,13,2,0,0],
 "_local_protocol_factory_8hpp_source.html":[13,0,0,2,13,2,0,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX2 =
 "_midi_factory_8hpp_source.html":[13,0,0,2,24,0,4],
 "_midi_hi_res_8hpp_source.html":[13,0,0,2,15,0,24],
 "_midi_inlet_item_8hpp_source.html":[13,0,0,2,11,0,7],
-"_midi_note_8hpp_source.html":[13,0,0,2,24,0,5],
-"_midi_note_editor_8hpp_source.html":[13,0,0,2,24,0,6],
-"_midi_note_view_8hpp_source.html":[13,0,0,2,24,0,7]
+"_midi_note_8hpp_source.html":[13,0,0,2,24,0,5]
 };

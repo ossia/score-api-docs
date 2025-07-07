@@ -231,24 +231,26 @@ $(document).ready(function(){initNavTree('_interface_list_8hpp_source.html','');
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>{</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Fun, <span class="keyword">typename</span>... Args&gt;</div>
-<div class="foldopen" id="foldopen00167" data-start="{" data-end="}">
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="classscore_1_1_matching_factory.html#a436303e1f30dbb2e0787855b32232549">  167</a></span>  <span class="keyword">auto</span> <a class="code hl_function" href="classscore_1_1_matching_factory.html#a436303e1f30dbb2e0787855b32232549">make</a>(Fun f, Args&amp;&amp;... args) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  {</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="keyword">using </span>val_t = <span class="keyword">decltype</span>(*this-&gt;begin());</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="keywordflow">for</span>(<span class="keyword">const</span> val_t&amp; elt : *<span class="keyword">this</span>)</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    {</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>      <span class="keywordflow">if</span>(elt.matches(std::forward&lt;Args&gt;(args)...))</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>      {</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        <span class="keywordflow">return</span> (elt.*f)(std::forward&lt;Args&gt;(args)...);</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>      }</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    }</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <span class="keywordflow">return</span> <span class="keyword">decltype</span>((std::declval&lt;val_t&gt;().*f)(std::forward&lt;Args&gt;(args)...)){};</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  }</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <span class="keyword">requires</span> std::is_invocable_v&lt;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        Fun, <span class="keyword">typename</span> score::InterfaceList&lt;T&gt;::factory_type&amp;, Args...&gt;</div>
+<div class="foldopen" id="foldopen00169" data-start="{" data-end="}">
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="classscore_1_1_matching_factory.html#a0bd7286f4ba8fc14237f82c559352816">  169</a></span>  <span class="keyword">auto</span> <a class="code hl_function" href="classscore_1_1_matching_factory.html#a0bd7286f4ba8fc14237f82c559352816">make</a>(Fun f, Args&amp;&amp;... args) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>  {</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    <span class="keyword">using </span>val_t = <span class="keyword">decltype</span>(*this-&gt;begin());</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <span class="keywordflow">for</span>(<span class="keyword">const</span> val_t&amp; elt : *<span class="keyword">this</span>)</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    {</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>      <span class="keywordflow">if</span>(elt.matches(std::forward&lt;Args&gt;(args)...))</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>      {</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        <span class="keywordflow">return</span> (elt.*f)(std::forward&lt;Args&gt;(args)...);</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>      }</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    }</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <span class="keywordflow">return</span> <span class="keyword">decltype</span>((std::declval&lt;val_t&gt;().*f)(std::forward&lt;Args&gt;(args)...)){};</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>  }</div>
 </div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>};</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>};</div>
 </div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>}</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>}</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_uuid_key_html"><div class="ttname"><a href="class_uuid_key.html">UuidKey</a></div><div class="ttdef"><b>Definition</b> UuidKey.hpp:344</div></div>
 <div class="ttc" id="aclassscore_1_1_indirect_container_html"><div class="ttname"><a href="classscore_1_1_indirect_container.html">score::IndirectContainer</a></div><div class="ttdef"><b>Definition</b> IndirectContainer.hpp:129</div></div>
 <div class="ttc" id="aclassscore_1_1_interface_base_html"><div class="ttname"><a href="classscore_1_1_interface_base.html">score::InterfaceBase</a></div><div class="ttdoc">Base class for plug-in interfaces.</div><div class="ttdef"><b>Definition</b> Interface.hpp:52</div></div>
@@ -259,7 +261,7 @@ $(document).ready(function(){initNavTree('_interface_list_8hpp_source.html','');
 <div class="ttc" id="aclassscore_1_1_interface_list_html_ac10b605e2d602971e59d74aec793302b"><div class="ttname"><a href="classscore_1_1_interface_list.html#ac10b605e2d602971e59d74aec793302b">score::InterfaceList::interfaceKey</a></div><div class="ttdeci">constexpr score::InterfaceKey interfaceKey() const noexcept final override</div><div class="ttdoc">A key that uniquely identifies this family of factories.</div><div class="ttdef"><b>Definition</b> InterfaceList.hpp:93</div></div>
 <div class="ttc" id="aclassscore_1_1_interface_list_html_ac8fa57db35efa0fcb50ab2fa8d8ca8a0"><div class="ttname"><a href="classscore_1_1_interface_list.html#ac8fa57db35efa0fcb50ab2fa8d8ca8a0">score::InterfaceList::get</a></div><div class="ttdeci">FactoryType * get(const key_type &amp;k) const noexcept</div><div class="ttdoc">Get a particular factory from its ConcreteKey.</div><div class="ttdef"><b>Definition</b> InterfaceList.hpp:123</div></div>
 <div class="ttc" id="aclassscore_1_1_matching_factory_html"><div class="ttname"><a href="classscore_1_1_matching_factory.html">score::MatchingFactory</a></div><div class="ttdoc">Utility class for making a factory interface list.</div><div class="ttdef"><b>Definition</b> InterfaceList.hpp:153</div></div>
-<div class="ttc" id="aclassscore_1_1_matching_factory_html_a436303e1f30dbb2e0787855b32232549"><div class="ttname"><a href="classscore_1_1_matching_factory.html#a436303e1f30dbb2e0787855b32232549">score::MatchingFactory::make</a></div><div class="ttdeci">auto make(Fun f, Args &amp;&amp;... args) const noexcept</div><div class="ttdoc">Apply a function on the correct factory according to a set of parameter.</div><div class="ttdef"><b>Definition</b> InterfaceList.hpp:167</div></div>
+<div class="ttc" id="aclassscore_1_1_matching_factory_html_a0bd7286f4ba8fc14237f82c559352816"><div class="ttname"><a href="classscore_1_1_matching_factory.html#a0bd7286f4ba8fc14237f82c559352816">score::MatchingFactory::make</a></div><div class="ttdeci">auto make(Fun f, Args &amp;&amp;... args) const noexcept</div><div class="ttdoc">Apply a function on the correct factory according to a set of parameter.</div><div class="ttdef"><b>Definition</b> InterfaceList.hpp:169</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition</b> Application.cpp:97</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace.</div></div>
 </div><!-- fragment --></div><!-- contents -->

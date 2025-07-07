@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"_midi_note_editor_8hpp_source.html":[13,0,0,2,24,0,6],
+"_midi_note_view_8hpp_source.html":[13,0,0,2,24,0,7],
 "_midi_outlet_item_8hpp_source.html":[13,0,0,2,11,0,8],
 "_midi_presenter_8hpp_source.html":[13,0,0,2,24,0,8],
 "_midi_process_8hpp_source.html":[13,0,0,2,24,0,9],
@@ -37,7 +39,7 @@ var NAVTREEINDEX3 =
 "_models.html#Paths":[4,1,1],
 "_models.html#SimpleObjectsModel":[4,4],
 "_move_and_merge_state_8hpp_source.html":[13,0,0,2,31,4,8,0,0,0],
-"_move_base_event_8hpp_source.html":[13,0,0,2,31,4,1,11],
+"_move_base_event_8hpp_source.html":[13,0,0,2,31,4,1,12],
 "_move_comment_block_8hpp_source.html":[13,0,0,2,31,4,1,5,2,0],
 "_move_event_8hpp_source.html":[13,0,0,2,31,4,1,5,2,1],
 "_move_event_classic_factory_8hpp_source.html":[13,0,0,2,31,4,1,5,2,2],
@@ -182,7 +184,7 @@ var NAVTREEINDEX3 =
 "_process_2_process_component_8hpp_source.html":[13,0,0,2,3,4,34],
 "_process_2_scenario_execution_8hpp_source.html":[13,0,0,2,31,4,9,2],
 "_process_actions_8hpp_source.html":[13,0,0,2,3,4,0,0],
-"_process_command_factory_8hpp_source.html":[13,0,0,2,3,4,2,2],
+"_process_command_factory_8hpp_source.html":[13,0,0,2,3,4,2,3],
 "_process_context_8hpp_source.html":[13,0,0,2,3,4,35],
 "_process_creation_8hpp_source.html":[13,0,0,2,31,4,3,7,4],
 "_process_drop_handler_8hpp_source.html":[13,0,0,2,3,4,4,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "_q_rhi_gles2_8hpp_source.html":[13,0,0,1,1,4,1],
 "_qml_objects_8hpp_source.html":[13,0,0,2,19,0,2,7],
 "_qt_metatypes_8hpp_source.html":[13,0,0,2,19,0,2,8],
-"_quantification_widget_8hpp_source.html":[13,0,0,1,1,13,18],
-"_quantifier_8hpp_source.html":[13,0,0,2,15,0,29],
-"_r_g_b_a_8hpp_source.html":[13,0,0,2,16,1,2,0,4]
+"_quantification_widget_8hpp_source.html":[13,0,0,1,1,13,18]
 };

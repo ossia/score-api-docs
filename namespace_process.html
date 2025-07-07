@@ -249,7 +249,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_process_1_1_layout_builder_base.html">LayoutBuilderBase</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_load_preset.html">LoadPreset</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_load_preset_command_factory.html">LoadPresetCommandFactory</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_load_preset_command_factory_list.html">LoadPresetCommandFactoryList</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_process_1_1_magnetic_info.html">MagneticInfo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -411,9 +413,11 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a6138f7c2dccb204d113416acecc69b9d">Recordable</a> = (1 &lt;&lt; 11 )
 , <br />
 &#160;&#160;<a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1ac2f49ac9dfa9d3586df76c3c7d551a32">ItemRequiresUniqueFocus</a> = (1 &lt;&lt; 12 )
+, <a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a8c4b302dda329470aa905fd75a9d9c85">DynamicPorts</a> = (1 &lt;&lt; 13 )
 , <b>SupportsLasting</b> = SupportsTemporal | TimeIndependent
 , <b>ExternalEffect</b> = SupportsTemporal | TimeIndependent | RequiresCustomData | ControlSurface
-, <b>SupportsAll</b> = SupportsTemporal | TimeIndependent | SupportsState
+, <br />
+&#160;&#160;<b>SupportsAll</b> = SupportsTemporal | TimeIndependent | SupportsState
 <br />
  }</td></tr>
 <tr class="memdesc:a592bb361ebf8fbc09c929c93208c71f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Various settings for processes.  <a href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">More...</a><br /></td></tr>
@@ -723,6 +727,8 @@ QDebug&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b
 <tr><td class="fieldname"><a id="a592bb361ebf8fbc09c929c93208c71f1a6138f7c2dccb204d113416acecc69b9d" name="a592bb361ebf8fbc09c929c93208c71f1a6138f7c2dccb204d113416acecc69b9d"></a>Recordable&#160;</td><td class="fielddoc"><p>The process is recordable. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a592bb361ebf8fbc09c929c93208c71f1ac2f49ac9dfa9d3586df76c3c7d551a32" name="a592bb361ebf8fbc09c929c93208c71f1ac2f49ac9dfa9d3586df76c3c7d551a32"></a>ItemRequiresUniqueFocus&#160;</td><td class="fielddoc"><p>The process has an editable widget which must unfocus &amp; unselect other items. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a592bb361ebf8fbc09c929c93208c71f1a8c4b302dda329470aa905fd75a9d9c85" name="a592bb361ebf8fbc09c929c93208c71f1a8c4b302dda329470aa905fd75a9d9c85"></a>DynamicPorts&#160;</td><td class="fielddoc"><p>The process has a variable structure, e.g. its ports can change dynamically. </p>
 </td></tr>
 </table>
 
