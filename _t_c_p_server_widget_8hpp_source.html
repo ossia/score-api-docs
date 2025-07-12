@@ -154,24 +154,25 @@ $(document).ready(function(){initNavTree('_t_c_p_server_widget_8hpp_source.html'
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  ossia::net::tcp_server_configuration settings() <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  {</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    ossia::net::tcp_server_configuration conf;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    conf.port = m_remotePort-&gt;value();</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">return</span> conf;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  }</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keywordtype">void</span> setSettings(</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      <span class="keyword">const</span> ossia::net::osc_protocol_configuration&amp; c,</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      <span class="keyword">const</span> ossia::net::tcp_server_configuration&amp; conf)</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    m_remotePort-&gt;setValue(conf.port);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    m_framing-&gt;setCurrentIndex(c.framing);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  }</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  QSpinBox* m_remotePort{};</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  QComboBox* m_framing{};</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>};</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    conf.bind = <span class="stringliteral">&quot;0.0.0.0&quot;</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    conf.port = m_remotePort-&gt;value();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">return</span> conf;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordtype">void</span> setSettings(</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      <span class="keyword">const</span> ossia::net::osc_protocol_configuration&amp; c,</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>      <span class="keyword">const</span> ossia::net::tcp_server_configuration&amp; conf)</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    m_remotePort-&gt;setValue(conf.port);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    m_framing-&gt;setCurrentIndex(c.framing);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  QSpinBox* m_remotePort{};</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  QComboBox* m_framing{};</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>};</div>
 </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
 <div class="ttc" id="aclass_device_1_1_protocol_settings_widget_html"><div class="ttname"><a href="class_device_1_1_protocol_settings_widget.html">Device::ProtocolSettingsWidget</a></div><div class="ttdef"><b>Definition</b> ProtocolSettingsWidget.hpp:22</div></div>
 <div class="ttc" id="aclass_protocols_1_1_t_c_p_server_widget_html"><div class="ttname"><a href="class_protocols_1_1_t_c_p_server_widget.html">Protocols::TCPServerWidget</a></div><div class="ttdef"><b>Definition</b> TCPServerWidget.hpp:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
