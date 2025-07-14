@@ -120,29 +120,40 @@ $(document).ready(function(){initNavTree('score-plugin-js_2_j_s_2_application_pl
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;QQmlContext&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;QQmlEngine&gt;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">class </span>QQuickWindow;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span>JS</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
-<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_j_s_1_1_application_plugin.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="class_j_s_1_1_application_plugin.html">ApplicationPlugin</a> final</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    : <span class="keyword">public</span> QObject</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    , <span class="keyword">public</span> <a class="code hl_class" href="classscore_1_1_g_u_i_application_plugin.html">score::GUIApplicationPlugin</a></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keyword">explicit</span> <a class="code hl_class" href="class_j_s_1_1_application_plugin.html">ApplicationPlugin</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; ctx);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <a class="code hl_class" href="class_j_s_1_1_application_plugin.html">~ApplicationPlugin</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_j_s_1_1_application_plugin.html#a173bfb0da53b8ed4a1a1ee5c64d70f2e">afterStartup</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  QQmlEngine m_engine;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  QQmlEngine m_dummyEngine;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  QQmlComponent* m_comp{};</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  QQuickWindow* m_window{};</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;thread&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span>ossia::net</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">struct </span>network_context;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">using </span>network_context_ptr = std::shared_ptr&lt;network_context&gt;;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>}</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">class </span>QQuickWindow;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span>JS</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_j_s_1_1_application_plugin.html">   21</a></span><span class="keyword">class </span><a class="code hl_class" href="class_j_s_1_1_application_plugin.html">ApplicationPlugin</a> final</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    : <span class="keyword">public</span> QObject</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    , <span class="keyword">public</span> <a class="code hl_class" href="classscore_1_1_g_u_i_application_plugin.html">score::GUIApplicationPlugin</a></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keyword">explicit</span> <a class="code hl_class" href="class_j_s_1_1_application_plugin.html">ApplicationPlugin</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; ctx);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <a class="code hl_class" href="class_j_s_1_1_application_plugin.html">~ApplicationPlugin</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_j_s_1_1_application_plugin.html#a173bfb0da53b8ed4a1a1ee5c64d70f2e">afterStartup</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  QQmlEngine m_engine;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  QQmlEngine m_dummyEngine;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  QQmlComponent* m_comp{};</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  QQuickWindow* m_window{};</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  std::atomic_bool m_processMessages{};</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  std::thread m_asioThread;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  ossia::net::network_context_ptr m_asioContext;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>};</div>
 </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
-<div class="ttc" id="aclass_j_s_1_1_application_plugin_html"><div class="ttname"><a href="class_j_s_1_1_application_plugin.html">JS::ApplicationPlugin</a></div><div class="ttdef"><b>Definition</b> score-plugin-js/JS/ApplicationPlugin.hpp:17</div></div>
-<div class="ttc" id="aclass_j_s_1_1_application_plugin_html_a173bfb0da53b8ed4a1a1ee5c64d70f2e"><div class="ttname"><a href="class_j_s_1_1_application_plugin.html#a173bfb0da53b8ed4a1a1ee5c64d70f2e">JS::ApplicationPlugin::afterStartup</a></div><div class="ttdeci">void afterStartup() override</div><div class="ttdoc">afterStartup Called after all the documents have been created / loaded</div><div class="ttdef"><b>Definition</b> score-plugin-js/JS/ApplicationPlugin.cpp:26</div></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
+<div class="ttc" id="aclass_j_s_1_1_application_plugin_html"><div class="ttname"><a href="class_j_s_1_1_application_plugin.html">JS::ApplicationPlugin</a></div><div class="ttdef"><b>Definition</b> score-plugin-js/JS/ApplicationPlugin.hpp:24</div></div>
+<div class="ttc" id="aclass_j_s_1_1_application_plugin_html_a173bfb0da53b8ed4a1a1ee5c64d70f2e"><div class="ttname"><a href="class_j_s_1_1_application_plugin.html#a173bfb0da53b8ed4a1a1ee5c64d70f2e">JS::ApplicationPlugin::afterStartup</a></div><div class="ttdeci">void afterStartup() override</div><div class="ttdoc">afterStartup Called after all the documents have been created / loaded</div><div class="ttdef"><b>Definition</b> score-plugin-js/JS/ApplicationPlugin.cpp:50</div></div>
 <div class="ttc" id="aclassscore_1_1_g_u_i_application_plugin_html"><div class="ttname"><a href="classscore_1_1_g_u_i_application_plugin.html">score::GUIApplicationPlugin</a></div><div class="ttdoc">Used to extend the software with application-wide data.</div><div class="ttdef"><b>Definition</b> GUIApplicationPlugin.hpp:89</div></div>
 <div class="ttc" id="astructscore_1_1_g_u_i_application_context_html"><div class="ttname"><a href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a></div><div class="ttdoc">Specializes ApplicationContext with the QMainWindow.</div><div class="ttdef"><b>Definition</b> GUIApplicationContext.hpp:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
