@@ -1726,9 +1726,9 @@ var hierarchy =
     [ "LocalTree::MetadataNamePropertyWrapper", "class_local_tree_1_1_metadata_name_property_wrapper.html", null ],
     [ "MetaDataUI", null, [
       [ "Faust::UI< Proc, Synth >", "struct_faust_1_1_u_i.html", [
-        [ "Faust::UpdateUI< Proc, SetInit >", "struct_faust_1_1_update_u_i.html", null ]
+        [ "Faust::UpdateUI< Proc, SetInit, Synth >", "struct_faust_1_1_update_u_i.html", null ]
       ] ],
-      [ "Faust::UpdateUI< Proc, SetInit >", "struct_faust_1_1_update_u_i.html", null ]
+      [ "Faust::UpdateUI< Proc, SetInit, Synth >", "struct_faust_1_1_update_u_i.html", null ]
     ] ],
     [ "Execution::MetronomeSounds", "struct_execution_1_1_metronome_sounds.html", null ],
     [ "Protocols::Settings::MidiAPI", "struct_protocols_1_1_settings_1_1_midi_a_p_i.html", null ],
