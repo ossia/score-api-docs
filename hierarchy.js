@@ -2083,8 +2083,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model >", "class_path.html", null ],
+    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -3139,7 +3139,9 @@ var hierarchy =
         [ "Nodal::Presenter", "class_nodal_1_1_presenter.html", null ],
         [ "Patternist::Presenter", "class_patternist_1_1_presenter.html", null ],
         [ "Process::DefaultLayerPresenter", "class_process_1_1_default_layer_presenter.html", null ],
-        [ "Process::EffectLayerPresenter", "class_process_1_1_effect_layer_presenter.html", null ],
+        [ "Process::EffectLayerPresenter", "class_process_1_1_effect_layer_presenter.html", [
+          [ "Ui::ValueDisplay::Node::Presenter", "struct_ui_1_1_value_display_1_1_node_1_1_presenter.html", null ]
+        ] ],
         [ "Scenario::ScenarioPresenter", "class_scenario_1_1_scenario_presenter.html", null ],
         [ "Spline::Presenter", "class_spline_1_1_presenter.html", null ],
         [ "WidgetLayer::Presenter< Process_T, Widget_T >", "class_widget_layer_1_1_presenter.html", null ]
