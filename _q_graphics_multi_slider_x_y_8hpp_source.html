@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('_q_graphics_multi_slider_x_y_8hpp_sour
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code hl_struct" href="structscore_1_1_grid_widget.html">GridWidget</a>;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  std::vector&lt;ossia::value&gt; tab;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  std::vector&lt;ossia::vec2f&gt; tab;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> width() { <span class="keywordflow">return</span> 400.; }</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> height() { <span class="keywordflow">return</span> 400.; }</div>
@@ -159,8 +159,8 @@ $(document).ready(function(){initNavTree('_q_graphics_multi_slider_x_y_8hpp_sour
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keywordtype">double</span> min{0.}, max{1.};</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keywordtype">int</span> m_grab{-1};</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  ossia::value m_value{};</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  ossia::value m_execValue{};</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  std::vector&lt;ossia::value&gt; m_value{};</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  std::vector&lt;ossia::value&gt; m_execValue{};</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordtype">bool</span> m_hasExec{};</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keywordtype">bool</span> moving = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <a class="code hl_struct" href="structscore_1_1_right_click_impl.html">RightClickImpl</a>* impl{};</div>
