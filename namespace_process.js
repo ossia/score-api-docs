@@ -117,6 +117,8 @@ var namespace_process =
       [ "Recordable", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a6138f7c2dccb204d113416acecc69b9d", null ],
       [ "ItemRequiresUniqueFocus", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1ac2f49ac9dfa9d3586df76c3c7d551a32", null ],
       [ "DynamicPorts", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a8c4b302dda329470aa905fd75a9d9c85", null ],
+      [ "PolyphonySupported", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a7e246c0c415497975ad76b40a9689ca4", null ],
+      [ "PolyphonyEnabled", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a7615e80e02861a5f6954e5c8ba304f31", null ],
       [ "SupportsLasting", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a29b3036018dcd388b9502a6aae1912b2", null ],
       [ "ExternalEffect", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1ac0745b11b10f8e4cdc8476e3d2862695", null ],
       [ "SupportsAll", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1accb6c989f8513bacb617f1d00fb237d9", null ]

@@ -66,6 +66,7 @@ var hierarchy =
     [ "score::ApplicationPlugin_QtInterface", "classscore_1_1_application_plugin___qt_interface.html", [
       [ "score_lib_process", "classscore__lib__process.html", null ],
       [ "score_plugin_audio", "classscore__plugin__audio.html", null ],
+      [ "score_plugin_clap", "classscore__plugin__clap.html", null ],
       [ "score_plugin_curve", "classscore__plugin__curve.html", null ],
       [ "score_plugin_deviceexplorer", "classscore__plugin__deviceexplorer.html", null ],
       [ "score_plugin_engine", "classscore__plugin__engine.html", null ],
@@ -490,6 +491,7 @@ var hierarchy =
         ] ],
         [ "Process::GenericProcessComponent_T< ProcessComponent, Automation::ProcessModel >", "class_process_1_1_generic_process_component___t.html", null ],
         [ "Process::GenericProcessComponent_T< ProcessComponent, AvndJit::Model >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, Clap::Model >", "class_process_1_1_generic_process_component___t.html", null ],
         [ "Process::GenericProcessComponent_T< ProcessComponent, ControlSurface::Model >", "class_process_1_1_generic_process_component___t.html", null ],
         [ "Process::GenericProcessComponent_T< ProcessComponent, Faust::FaustEffectModel >", "class_process_1_1_generic_process_component___t.html", null ],
         [ "Process::GenericProcessComponent_T< ProcessComponent, Jit::JitEffectModel >", "class_process_1_1_generic_process_component___t.html", null ],
@@ -725,6 +727,7 @@ var hierarchy =
     [ "WidgetFactory::Enum", "struct_widget_factory_1_1_enum.html", null ],
     [ "magic_enum::customize::enum_range< Nodes::MidiUtil::scale_type >", "structmagic__enum_1_1customize_1_1enum__range_3_01_nodes_1_1_midi_util_1_1scale__type_01_4.html", null ],
     [ "Analysis::EnvelopeFollower", "struct_analysis_1_1_envelope_follower.html", null ],
+    [ "Clap::event_storage", "struct_clap_1_1event__storage.html", null ],
     [ "HierarchicalBaseScenario< Component_T, BaseScenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T >::EventPair", "struct_hierarchical_base_scenario_1_1_event_pair.html", null ],
     [ "HierarchicalScenarioComponent< Component_T, Scenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T, HasOwnership >::EventPair", "struct_hierarchical_scenario_component_1_1_event_pair.html", null ],
     [ "score::EventVisitor< Event >", "structscore_1_1_event_visitor.html", null ],
@@ -760,6 +763,7 @@ var hierarchy =
       [ "score_plugin_audio", "classscore__plugin__audio.html", null ],
       [ "score_plugin_automation", "classscore__plugin__automation.html", null ],
       [ "score_plugin_avnd", "classscore__plugin__avnd.html", null ],
+      [ "score_plugin_clap", "classscore__plugin__clap.html", null ],
       [ "score_plugin_controlsurface", "classscore__plugin__controlsurface.html", null ],
       [ "score_plugin_curve", "classscore__plugin__curve.html", null ],
       [ "score_plugin_dataflow", "classscore__plugin__dataflow.html", null ],
@@ -895,6 +899,16 @@ var hierarchy =
     ] ],
     [ "score::gfx::Graph", "structscore_1_1gfx_1_1_graph.html", null ],
     [ "ossia::graph_node", null, [
+      [ "Clap::clap_node_base", "class_clap_1_1clap__node__base.html", [
+        [ "Clap::clap_node", "class_clap_1_1clap__node.html", [
+          [ "Clap::clap_node_32", "class_clap_1_1clap__node__32.html", null ],
+          [ "Clap::clap_node_64", "class_clap_1_1clap__node__64.html", null ]
+        ] ],
+        [ "Clap::clap_node_mono", "class_clap_1_1clap__node__mono.html", [
+          [ "Clap::clap_node_mono_32", "class_clap_1_1clap__node__mono__32.html", null ],
+          [ "Clap::clap_node_mono_64", "class_clap_1_1clap__node__mono__64.html", null ]
+        ] ]
+      ] ],
       [ "FaustDSP::Executor< DSP >::exec_node", "class_faust_d_s_p_1_1_executor_1_1exec__node.html", null ],
       [ "Gfx::gfx_exec_node", "class_gfx_1_1gfx__exec__node.html", [
         [ "Gfx::Filter::filter_node", "class_gfx_1_1_filter_1_1filter__node.html", null ],
@@ -957,6 +971,7 @@ var hierarchy =
     [ "score::GridWidget< T >", "structscore_1_1_grid_widget.html", null ],
     [ "score::GUIApplicationPlugin", "classscore_1_1_g_u_i_application_plugin.html", [
       [ "Audio::ApplicationPlugin", "class_audio_1_1_application_plugin.html", null ],
+      [ "Clap::ApplicationPlugin", "class_clap_1_1_application_plugin.html", null ],
       [ "Curve::ApplicationPlugin", "class_curve_1_1_application_plugin.html", null ],
       [ "Engine::ApplicationPlugin", "class_engine_1_1_application_plugin.html", null ],
       [ "Explorer::ApplicationPlugin", "class_explorer_1_1_application_plugin.html", null ],
@@ -1054,8 +1069,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< model >", "classid__base__t.html", null ],
+    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1103,8 +1118,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1258,6 +1273,7 @@ var hierarchy =
         [ "Scenario::TempoPointInspectorFactory", "class_scenario_1_1_tempo_point_inspector_factory.html", null ]
       ] ],
       [ "Library::LibraryInterface", "class_library_1_1_library_interface.html", [
+        [ "Clap::LibraryHandler", "class_clap_1_1_library_handler.html", null ],
         [ "Faust::LibraryHandler", "class_faust_1_1_library_handler.html", null ],
         [ "Gfx::Filter::LibraryHandler", "class_gfx_1_1_filter_1_1_library_handler.html", null ],
         [ "Gfx::GeometryFilter::LibraryHandler", "class_gfx_1_1_geometry_filter_1_1_library_handler.html", null ],
@@ -2155,6 +2171,7 @@ var hierarchy =
       [ "score_plugin_audio", "classscore__plugin__audio.html", null ],
       [ "score_plugin_automation", "classscore__plugin__automation.html", null ],
       [ "score_plugin_avnd", "classscore__plugin__avnd.html", null ],
+      [ "score_plugin_clap", "classscore__plugin__clap.html", null ],
       [ "score_plugin_controlsurface", "classscore__plugin__controlsurface.html", null ],
       [ "score_plugin_curve", "classscore__plugin__curve.html", null ],
       [ "score_plugin_dataflow", "classscore__plugin__dataflow.html", null ],
@@ -2189,12 +2206,14 @@ var hierarchy =
     ] ],
     [ "score::PluginLoader::PluginDependencyGraph", "structscore_1_1_plugin_loader_1_1_plugin_dependency_graph.html", null ],
     [ "vst3::vst_node_base::PluginHandle", "structvst3_1_1vst__node__base_1_1_plugin_handle.html", null ],
+    [ "Clap::ApplicationPlugin::PluginInfo", "struct_clap_1_1_application_plugin_1_1_plugin_info.html", null ],
     [ "oscr::pmf_member_type< T >", "structoscr_1_1pmf__member__type.html", null ],
     [ "oscr::pmf_member_type< V T::* >", "structoscr_1_1pmf__member__type_3_01_v_01_t_1_1_5_01_4.html", null ],
     [ "Scenario::Point", "struct_scenario_1_1_point.html", null ],
     [ "Curve::point_array_executor< T >", "struct_curve_1_1point__array__executor.html", null ],
     [ "Curve::Element::Point_tag", "struct_curve_1_1_element_1_1_point__tag.html", null ],
     [ "Curve::PointId", "struct_curve_1_1_point_id.html", null ],
+    [ "Clap::clap_node_mono::poly_plugin", "struct_clap_1_1clap__node__mono_1_1poly__plugin.html", null ],
     [ "ControlSurface::Presenter::Port", "struct_control_surface_1_1_presenter_1_1_port.html", null ],
     [ "Gfx::Video::Presenter::Port", "struct_gfx_1_1_video_1_1_presenter_1_1_port.html", null ],
     [ "oscr::Port", "structoscr_1_1_port.html", null ],
@@ -2227,6 +2246,9 @@ var hierarchy =
         ] ],
         [ "Execution::ProcessComponent_T< AvndJit::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
           [ "AvndJit::Executor", "class_avnd_jit_1_1_executor.html", null ]
+        ] ],
+        [ "Execution::ProcessComponent_T< Clap::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
+          [ "Clap::Executor", "class_clap_1_1_executor.html", null ]
         ] ],
         [ "Execution::ProcessComponent_T< ControlSurface::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
           [ "ControlSurface::ProcessExecutorComponent", "class_control_surface_1_1_process_executor_component.html", null ]
@@ -2507,6 +2529,7 @@ var hierarchy =
       [ "State::StringValueSetDialog", "class_state_1_1_string_value_set_dialog.html", null ],
       [ "score::AboutDialog", "classscore_1_1_about_dialog.html", null ],
       [ "score::PluginWindow", "classscore_1_1_plugin_window.html", [
+        [ "Clap::Window", "class_clap_1_1_window.html", null ],
         [ "LV2::Window", "class_l_v2_1_1_window.html", null ],
         [ "YSFX::Window", "class_y_s_f_x_1_1_window.html", null ],
         [ "vst3::Window", "classvst3_1_1_window.html", null ],
@@ -2836,6 +2859,8 @@ var hierarchy =
       [ "Audio::JackFactory", "class_audio_1_1_jack_factory.html", null ],
       [ "Audio::PulseAudioFactory", "class_audio_1_1_pulse_audio_factory.html", null ],
       [ "BaseGraphicsObject", "class_base_graphics_object.html", null ],
+      [ "Clap::ApplicationPlugin", "class_clap_1_1_application_plugin.html", null ],
+      [ "Clap::LibraryHandler", "class_clap_1_1_library_handler.html", null ],
       [ "ControlSurface::NodeObserver< Identifier, Func >", "struct_control_surface_1_1_node_observer.html", null ],
       [ "CreateEventAfterEventOnTimeSyncTest", "class_create_event_after_event_on_time_sync_test.html", null ],
       [ "CreateEventAfterEventTest", "class_create_event_after_event_test.html", null ],

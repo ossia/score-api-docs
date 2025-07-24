@@ -100,6 +100,20 @@ var annotated_dup =
         ] ]
       ] ]
     ] ],
+    [ "Clap", null, [
+      [ "ApplicationPlugin", "class_clap_1_1_application_plugin.html", "class_clap_1_1_application_plugin" ],
+      [ "clap_node", "class_clap_1_1clap__node.html", null ],
+      [ "clap_node_32", "class_clap_1_1clap__node__32.html", null ],
+      [ "clap_node_64", "class_clap_1_1clap__node__64.html", null ],
+      [ "clap_node_base", "class_clap_1_1clap__node__base.html", null ],
+      [ "clap_node_mono", "class_clap_1_1clap__node__mono.html", "class_clap_1_1clap__node__mono" ],
+      [ "clap_node_mono_32", "class_clap_1_1clap__node__mono__32.html", null ],
+      [ "clap_node_mono_64", "class_clap_1_1clap__node__mono__64.html", null ],
+      [ "event_storage", "struct_clap_1_1event__storage.html", null ],
+      [ "Executor", "class_clap_1_1_executor.html", null ],
+      [ "LibraryHandler", "class_clap_1_1_library_handler.html", null ],
+      [ "Window", "class_clap_1_1_window.html", null ]
+    ] ],
     [ "ControlSurface", null, [
       [ "AddControl", "class_control_surface_1_1_add_control.html", null ],
       [ "AddControlMacro", "class_control_surface_1_1_add_control_macro.html", null ],
@@ -2731,6 +2745,7 @@ var annotated_dup =
     [ "score_plugin_audio", "classscore__plugin__audio.html", null ],
     [ "score_plugin_automation", "classscore__plugin__automation.html", null ],
     [ "score_plugin_avnd", "classscore__plugin__avnd.html", null ],
+    [ "score_plugin_clap", "classscore__plugin__clap.html", null ],
     [ "score_plugin_controlsurface", "classscore__plugin__controlsurface.html", null ],
     [ "score_plugin_curve", "classscore__plugin__curve.html", null ],
     [ "score_plugin_dataflow", "classscore__plugin__dataflow.html", null ],

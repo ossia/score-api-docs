@@ -21,7 +21,7 @@ var searchData=
   ['wiimoteprotocolsettingswidget_18',['WiimoteProtocolSettingsWidget',['../class_protocols_1_1_wiimote_protocol_settings_widget.html',1,'Protocols']]],
   ['wiimotespecificsettings_19',['WiimoteSpecificSettings',['../struct_protocols_1_1_wiimote_specific_settings.html',1,'Protocols']]],
   ['win32_5fhandles_20',['win32_handles',['../structbitfocus_1_1win32__handles.html',1,'bitfocus']]],
-  ['window_21',['window',['../class_l_v2_1_1_window.html',1,'LV2::Window'],['../classscore_1_1gfx_1_1_window.html',1,'score::gfx::Window'],['../classvst3_1_1_window.html',1,'vst3::Window'],['../classvst_1_1_window.html',1,'vst::Window'],['../class_y_s_f_x_1_1_window.html',1,'YSFX::Window']]],
+  ['window_21',['window',['../class_l_v2_1_1_window.html',1,'LV2::Window'],['../classscore_1_1gfx_1_1_window.html',1,'score::gfx::Window'],['../classvst3_1_1_window.html',1,'vst3::Window'],['../classvst_1_1_window.html',1,'vst::Window'],['../class_y_s_f_x_1_1_window.html',1,'YSFX::Window'],['../class_clap_1_1_window.html',1,'Clap::Window']]],
   ['window_5fdevice_22',['window_device',['../class_gfx_1_1window__device.html',1,'Gfx']]],
   ['windowcontainer_23',['WindowContainer',['../structvst3_1_1_window_container.html',1,'vst3']]],
   ['windowdevice_24',['WindowDevice',['../class_gfx_1_1_window_device.html',1,'Gfx']]],

@@ -9,6 +9,7 @@ var dir_7020b8b7abcceffa3f9f7a2d24718f16 =
     [ "score-plugin-audio", "dir_9082cf01bb1ee724e13a8a4d7fb20d5a.html", "dir_9082cf01bb1ee724e13a8a4d7fb20d5a" ],
     [ "score-plugin-automation", "dir_9f7222c3f74921e97bde98de65c0f7f1.html", "dir_9f7222c3f74921e97bde98de65c0f7f1" ],
     [ "score-plugin-avnd", "dir_418105aa4727ade0876e4c2ab19a230e.html", "dir_418105aa4727ade0876e4c2ab19a230e" ],
+    [ "score-plugin-clap", "dir_f4e91d16a7017ca6b707cad9a3574225.html", "dir_f4e91d16a7017ca6b707cad9a3574225" ],
     [ "score-plugin-controlsurface", "dir_b115bdef57e8b530ea33e0929aadfd97.html", "dir_b115bdef57e8b530ea33e0929aadfd97" ],
     [ "score-plugin-curve", "dir_2a7414ab05aedefb6a6d75d1f71c72d4.html", "dir_2a7414ab05aedefb6a6d75d1f71c72d4" ],
     [ "score-plugin-dataflow", "dir_8926c7d91bde3f11016c686dc222e59c.html", "dir_8926c7d91bde3f11016c686dc222e59c" ],
