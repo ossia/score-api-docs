@@ -117,11 +117,11 @@ template&lt;typename T &gt; <br />
 requires std::is_trivial_v&lt;T&gt;</td></tr>
 <tr class="memitem:adb2c38b329bf7b8f62dd82cb9fbbf7f4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (T &amp;msg)</td></tr>
 <tr class="separator:adb2c38b329bf7b8f62dd82cb9fbbf7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeccb00e91b6363953733d6552e58521f" id="r_aeccb00e91b6363953733d6552e58521f"><td class="memTemplParams" colspan="2"><a id="aeccb00e91b6363953733d6552e58521f" name="aeccb00e91b6363953733d6552e58521f"></a>
+<tr class="memitem:afd747079bcf97aa029dfcef68e8d5261" id="r_afd747079bcf97aa029dfcef68e8d5261"><td class="memTemplParams" colspan="2"><a id="afd747079bcf97aa029dfcef68e8d5261" name="afd747079bcf97aa029dfcef68e8d5261"></a>
 template&lt;typename T &gt; <br />
-requires (!std::is_trivial_v&lt;T&gt; &amp;&amp; avnd::relocatable&lt;T&gt;)</td></tr>
-<tr class="memitem:aeccb00e91b6363953733d6552e58521f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (T &amp;msg)</td></tr>
-<tr class="separator:aeccb00e91b6363953733d6552e58521f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+requires ( !std::is_trivial_v&lt;T&gt; &amp;&amp; avnd::relocatable&lt;T&gt; &amp;&amp; alignof(T) &lt;= alignof(void*))</td></tr>
+<tr class="memitem:afd747079bcf97aa029dfcef68e8d5261"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (T &amp;msg)</td></tr>
+<tr class="separator:afd747079bcf97aa029dfcef68e8d5261"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af260e71dafdc2c4dcf51914c98decd51" id="r_af260e71dafdc2c4dcf51914c98decd51"><td class="memTemplParams" colspan="2"><a id="af260e71dafdc2c4dcf51914c98decd51" name="af260e71dafdc2c4dcf51914c98decd51"></a>
 template&lt;typename T &gt; <br />
 requires (!std::is_trivial_v&lt;T&gt; &amp;&amp; !avnd::relocatable&lt;T&gt;)</td></tr>
