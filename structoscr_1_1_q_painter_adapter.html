@@ -154,6 +154,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rotate</b> (double a)
 <tr class="memitem:a6bea756196e8ec8618f6a1b2a65b7820" id="r_a6bea756196e8ec8618f6a1b2a65b7820"><td class="memItemLeft" align="right" valign="top"><a id="a6bea756196e8ec8618f6a1b2a65b7820" name="a6bea756196e8ec8618f6a1b2a65b7820"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>reset_transform</b> ()</td></tr>
 <tr class="separator:a6bea756196e8ec8618f6a1b2a65b7820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac11f61717da503c80cd957994fda1feb" id="r_ac11f61717da503c80cd957994fda1feb"><td class="memItemLeft" align="right" valign="top"><a id="ac11f61717da503c80cd957994fda1feb" name="ac11f61717da503c80cd957994fda1feb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>unset_stroke</b> ()</td></tr>
+<tr class="separator:ac11f61717da503c80cd957994fda1feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a295ed63543d0105cec2ea335faab3650" id="r_a295ed63543d0105cec2ea335faab3650"><td class="memItemLeft" align="right" valign="top"><a id="a295ed63543d0105cec2ea335faab3650" name="a295ed63543d0105cec2ea335faab3650"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_stroke_color</b> (<a class="el" href="structoscr_1_1rgba__color.html">rgba_color</a> c)</td></tr>
 <tr class="separator:a295ed63543d0105cec2ea335faab3650"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,6 +184,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set_font_size</b> (do
 <tr class="memitem:ade512c333a38ac1354e494f511167cf7" id="r_ade512c333a38ac1354e494f511167cf7"><td class="memItemLeft" align="right" valign="top"><a id="ade512c333a38ac1354e494f511167cf7" name="ade512c333a38ac1354e494f511167cf7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>draw_text</b> (double x, double y, std::string_view str)</td></tr>
 <tr class="separator:ade512c333a38ac1354e494f511167cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d535dcd383fa745fcdb9a0ab9212498" id="r_a0d535dcd383fa745fcdb9a0ab9212498"><td class="memItemLeft" align="right" valign="top"><a id="a0d535dcd383fa745fcdb9a0ab9212498" name="a0d535dcd383fa745fcdb9a0ab9212498"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>draw_text</b> (double x, double y, double w, double h, std::string_view str)</td></tr>
+<tr class="separator:a0d535dcd383fa745fcdb9a0ab9212498"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cf96ce7d363b0098c137776b24ec7ff" id="r_a9cf96ce7d363b0098c137776b24ec7ff"><td class="memItemLeft" align="right" valign="top"><a id="a9cf96ce7d363b0098c137776b24ec7ff" name="a9cf96ce7d363b0098c137776b24ec7ff"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>draw_line</b> (double x1, double y1, double x2, double y2)</td></tr>
 <tr class="separator:a9cf96ce7d363b0098c137776b24ec7ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -205,9 +211,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>draw_circle</b> (doub
 <tr class="memitem:ad3c877f16682909090e641b5bc59e7c6" id="r_ad3c877f16682909090e641b5bc59e7c6"><td class="memItemLeft" align="right" valign="top"><a id="ad3c877f16682909090e641b5bc59e7c6" name="ad3c877f16682909090e641b5bc59e7c6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>draw_polygon</b> (const double *tab, int count)</td></tr>
 <tr class="separator:ad3c877f16682909090e641b5bc59e7c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52b7593376645903fe1d7f18fdaa35ce" id="r_a52b7593376645903fe1d7f18fdaa35ce"><td class="memItemLeft" align="right" valign="top"><a id="a52b7593376645903fe1d7f18fdaa35ce" name="a52b7593376645903fe1d7f18fdaa35ce"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>draw_bytes</b> (int x, int y, int w, int h, const unsigned char *image, int img_w, int img_h)</td></tr>
-<tr class="separator:a52b7593376645903fe1d7f18fdaa35ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1621b6c8f1dab8be86f43ecd76f8992" id="r_ad1621b6c8f1dab8be86f43ecd76f8992"><td class="memItemLeft" align="right" valign="top"><a id="ad1621b6c8f1dab8be86f43ecd76f8992" name="ad1621b6c8f1dab8be86f43ecd76f8992"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>draw_bytes</b> (int x, int y, int w, int h, const unsigned char *image, int img_w, int img_h, bool smooth=false)</td></tr>
+<tr class="separator:ad1621b6c8f1dab8be86f43ecd76f8992"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
