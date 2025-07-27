@@ -1833,32 +1833,6 @@ var hierarchy =
     [ "Nodes::PulseToNote::Node", "struct_nodes_1_1_pulse_to_note_1_1_node.html", null ],
     [ "Nodes::Quantifier::Node", "struct_nodes_1_1_quantifier_1_1_node.html", null ],
     [ "Nodes::RateLimiter::Node", "struct_nodes_1_1_rate_limiter_1_1_node.html", null ],
-    [ "score::gfx::Node", "classscore_1_1gfx_1_1_node.html", [
-      [ "score::gfx::OutputNode", "classscore_1_1gfx_1_1_output_node.html", [
-        [ "Gfx::LibavEncoderNode", "struct_gfx_1_1_libav_encoder_node.html", null ],
-        [ "Gfx::Sh4ltOutputNode", "struct_gfx_1_1_sh4lt_output_node.html", null ],
-        [ "Gfx::ShmdataOutputNode", "struct_gfx_1_1_shmdata_output_node.html", null ],
-        [ "Gfx::SpoutNode", "struct_gfx_1_1_spout_node.html", null ],
-        [ "score::gfx::ScreenNode", "structscore_1_1gfx_1_1_screen_node.html", null ]
-      ] ],
-      [ "score::gfx::ProcessNode", "classscore_1_1gfx_1_1_process_node.html", [
-        [ "Gfx::Spout::SpoutInputNode", "struct_gfx_1_1_spout_1_1_spout_input_node.html", null ],
-        [ "score::gfx::DepthNode", "structscore_1_1gfx_1_1_depth_node.html", null ],
-        [ "score::gfx::GeometryFilterNode", "classscore_1_1gfx_1_1_geometry_filter_node.html", null ],
-        [ "score::gfx::ISFNode", "classscore_1_1gfx_1_1_i_s_f_node.html", null ],
-        [ "score::gfx::NodeModel", "classscore_1_1gfx_1_1_node_model.html", [
-          [ "score::gfx::FullScreenImageNode", "structscore_1_1gfx_1_1_full_screen_image_node.html", null ],
-          [ "score::gfx::ImagesNode", "structscore_1_1gfx_1_1_images_node.html", null ],
-          [ "score::gfx::ModelDisplayNode", "structscore_1_1gfx_1_1_model_display_node.html", null ],
-          [ "score::gfx::PhongNode", "structscore_1_1gfx_1_1_phong_node.html", null ],
-          [ "score::gfx::TexgenNode", "structscore_1_1gfx_1_1_texgen_node.html", null ],
-          [ "score::gfx::TextNode", "structscore_1_1gfx_1_1_text_node.html", null ]
-        ] ],
-        [ "score::gfx::VideoNodeBase", "classscore_1_1gfx_1_1_video_node_base.html", [
-          [ "score::gfx::VideoNode", "classscore_1_1gfx_1_1_video_node.html", null ]
-        ] ]
-      ] ]
-    ] ],
     [ "Ui::SignalDisplay::Node", "struct_ui_1_1_signal_display_1_1_node.html", null ],
     [ "Ui::ValueDisplay::Node", "struct_ui_1_1_value_display_1_1_node.html", null ],
     [ "ossia::net::node_base", null, [
@@ -3377,6 +3351,32 @@ var hierarchy =
       [ "score::SimpleTextItem", "classscore_1_1_simple_text_item.html", null ],
       [ "score::Skin", "classscore_1_1_skin.html", null ],
       [ "score::ZoomItem", "classscore_1_1_zoom_item.html", null ],
+      [ "score::gfx::Node", "classscore_1_1gfx_1_1_node.html", [
+        [ "score::gfx::OutputNode", "classscore_1_1gfx_1_1_output_node.html", [
+          [ "Gfx::LibavEncoderNode", "struct_gfx_1_1_libav_encoder_node.html", null ],
+          [ "Gfx::Sh4ltOutputNode", "struct_gfx_1_1_sh4lt_output_node.html", null ],
+          [ "Gfx::ShmdataOutputNode", "struct_gfx_1_1_shmdata_output_node.html", null ],
+          [ "Gfx::SpoutNode", "struct_gfx_1_1_spout_node.html", null ],
+          [ "score::gfx::ScreenNode", "structscore_1_1gfx_1_1_screen_node.html", null ]
+        ] ],
+        [ "score::gfx::ProcessNode", "classscore_1_1gfx_1_1_process_node.html", [
+          [ "Gfx::Spout::SpoutInputNode", "struct_gfx_1_1_spout_1_1_spout_input_node.html", null ],
+          [ "score::gfx::DepthNode", "structscore_1_1gfx_1_1_depth_node.html", null ],
+          [ "score::gfx::GeometryFilterNode", "classscore_1_1gfx_1_1_geometry_filter_node.html", null ],
+          [ "score::gfx::ISFNode", "classscore_1_1gfx_1_1_i_s_f_node.html", null ],
+          [ "score::gfx::NodeModel", "classscore_1_1gfx_1_1_node_model.html", [
+            [ "score::gfx::FullScreenImageNode", "structscore_1_1gfx_1_1_full_screen_image_node.html", null ],
+            [ "score::gfx::ImagesNode", "structscore_1_1gfx_1_1_images_node.html", null ],
+            [ "score::gfx::ModelDisplayNode", "structscore_1_1gfx_1_1_model_display_node.html", null ],
+            [ "score::gfx::PhongNode", "structscore_1_1gfx_1_1_phong_node.html", null ],
+            [ "score::gfx::TexgenNode", "structscore_1_1gfx_1_1_texgen_node.html", null ],
+            [ "score::gfx::TextNode", "structscore_1_1gfx_1_1_text_node.html", null ]
+          ] ],
+          [ "score::gfx::VideoNodeBase", "classscore_1_1gfx_1_1_video_node_base.html", [
+            [ "score::gfx::VideoNode", "classscore_1_1gfx_1_1_video_node.html", null ]
+          ] ]
+        ] ]
+      ] ],
       [ "vst3::ApplicationPlugin", "classvst3_1_1_application_plugin.html", null ],
       [ "vst3::LibraryHandler", "classvst3_1_1_library_handler.html", null ],
       [ "vst3::VSTGraphicsSlider", "classvst3_1_1_v_s_t_graphics_slider.html", null ],
