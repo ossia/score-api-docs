@@ -140,32 +140,33 @@ $(document).ready(function(){initNavTree('plugins_2score-plugin-clap_2_clap_2_wi
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keywordtype">void</span> closeEvent(QCloseEvent* event) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordtype">void</span> showEvent(QShowEvent* event) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keywordtype">void</span> hideEvent(QHideEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> setup_rect(QWidget* container, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keywordtype">bool</span> queryExtensions();</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keywordtype">void</span> initializeGui();</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keyword">const</span> Model&amp; m_model;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  PluginHandle* m_handle{};</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="comment">// CLAP GUI extension</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keyword">const</span> clap_plugin_gui_t* m_gui_ext{};</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="comment">// Window state</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keywordtype">bool</span> m_gui_created{<span class="keyword">false</span>};</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordtype">bool</span> m_gui_visible{<span class="keyword">false</span>};</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keywordtype">bool</span> m_is_floating{<span class="keyword">false</span>};</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="comment">// Platform specific window handle</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  clap_window_t m_clap_window{};</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="comment">// GUI API being used</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  std::string m_gui_api;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>};</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keywordtype">void</span> contextMenuEvent(QContextMenuEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> setup_rect(QWidget* container, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keywordtype">bool</span> queryExtensions();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keywordtype">void</span> initializeGui();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keyword">const</span> Model&amp; m_model;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  PluginHandle* m_handle{};</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="comment">// CLAP GUI extension</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keyword">const</span> clap_plugin_gui_t* m_gui_ext{};</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="comment">// Window state</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordtype">bool</span> m_gui_created{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keywordtype">bool</span> m_gui_visible{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keywordtype">bool</span> m_is_floating{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="comment">// Platform specific window handle</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  clap_window_t m_clap_window{};</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="comment">// GUI API being used</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  std::string m_gui_api;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
 </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
 <div class="ttc" id="aclass_clap_1_1_window_html"><div class="ttname"><a href="class_clap_1_1_window.html">Clap::Window</a></div><div class="ttdef"><b>Definition</b> plugins/score-plugin-clap/Clap/Window.hpp:15</div></div>
 <div class="ttc" id="aclassscore_1_1_plugin_window_html"><div class="ttname"><a href="classscore_1_1_plugin_window.html">score::PluginWindow</a></div><div class="ttdef"><b>Definition</b> PluginWindow.hpp:9</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition</b> DocumentContext.hpp:18</div></div>

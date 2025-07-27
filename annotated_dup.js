@@ -111,6 +111,7 @@ var annotated_dup =
       [ "clap_node_mono_32", "class_clap_1_1clap__node__mono__32.html", null ],
       [ "clap_node_mono_64", "class_clap_1_1clap__node__mono__64.html", null ],
       [ "clap_process", "struct_clap_1_1clap__process.html", null ],
+      [ "context_menu_builder_impl", "struct_clap_1_1context__menu__builder__impl.html", null ],
       [ "event_storage", "struct_clap_1_1event__storage.html", null ],
       [ "Executor", "class_clap_1_1_executor.html", null ],
       [ "LibraryHandler", "class_clap_1_1_library_handler.html", null ],
