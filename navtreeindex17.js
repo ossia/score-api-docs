@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"classvst_1_1_control_inlet.html":[12,0,62,1],
 "classvst_1_1_control_port_factory.html":[12,0,62,2],
 "classvst_1_1_create_control.html":[12,0,62,4],
 "classvst_1_1_effect_item.html":[12,0,62,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "dir_a37792267ff7ff1d778fe23b0c33540e.html":[13,0,0,2,31],
 "dir_a3bf00e5057f054d725eb58d0ac7a803.html":[13,0,0,2,28,0,1],
 "dir_a4e452d551cac955bfa7c000022e9cdc.html":[13,0,0,2,32,4,7],
-"dir_a518d9a5f04c715499e427032d546455.html":[13,0,0,2,39,0,0,0],
-"dir_a5ad343cfde828aa5591572cc063aa32.html":[13,0,0,2,32,4,6,6]
+"dir_a518d9a5f04c715499e427032d546455.html":[13,0,0,2,39,0,0,0]
 };

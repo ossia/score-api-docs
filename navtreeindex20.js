@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"score__plugin__deviceexplorer_8hpp_source.html":[13,0,0,2,13,1],
 "score__plugin__engine_8hpp_source.html":[13,0,0,2,14,3],
 "score__plugin__faust_8hpp_source.html":[13,0,0,2,15,1],
 "score__plugin__fx_8hpp_source.html":[13,0,0,2,16,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "struct_gfx_1_1_kinect2_1_1kinect2__settings.html":[12,0,20,3,7],
 "struct_gfx_1_1_libav_encoder.html":[12,0,20,47],
 "struct_gfx_1_1_libav_encoder.html":[11,0,5,35],
-"struct_gfx_1_1_libav_encoder_node.html":[11,0,5,36],
-"struct_gfx_1_1_libav_encoder_node.html":[12,0,20,48]
+"struct_gfx_1_1_libav_encoder_node.html":[11,0,5,36]
 };

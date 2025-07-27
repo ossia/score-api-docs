@@ -1,5 +1,6 @@
 var NAVTREEINDEX22 =
 {
+"struct_nodes_1_1_factor_oracle_1_1safe__vector.html":[12,0,39,11,2],
 "struct_nodes_1_1_factor_oracle_1_1safe__vector__simple.html":[12,0,39,11,3],
 "struct_nodes_1_1_generic_math_mapping.html":[12,0,39,31],
 "struct_nodes_1_1_l_f_o_1_1v1_1_1_node.html":[12,0,39,14,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX22 =
 "struct_scenario_1_1_move_on_slot_handle___event.html":[12,0,51,165],
 "struct_scenario_1_1_move_on_slot_handle___event.html":[11,0,11,163],
 "struct_scenario_1_1_musical_grid_1_1timings.html":[12,0,51,172,0],
-"struct_scenario_1_1_musical_grid_1_1timings.html":[11,0,11,170,0],
-"struct_scenario_1_1_nodal_slot_presenter.html":[12,0,51,176]
+"struct_scenario_1_1_musical_grid_1_1timings.html":[11,0,11,170,0]
 };

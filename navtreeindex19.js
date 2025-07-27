@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"namespacemembers_eval.html":[11,1,4],
 "namespacemembers_func.html":[11,1,1],
 "namespacemembers_type.html":[11,1,2],
 "namespaceoscr.html":[11,0,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "score__plugin__clap__commands_8hpp_source.html":[13,0,0,2,9,2],
 "score__plugin__controlsurface_8hpp_source.html":[13,0,0,2,10,1],
 "score__plugin__curve_8hpp_source.html":[13,0,0,2,11,1],
-"score__plugin__dataflow_8hpp_source.html":[13,0,0,2,12,1],
-"score__plugin__deviceexplorer_8hpp_source.html":[13,0,0,2,13,1]
+"score__plugin__dataflow_8hpp_source.html":[13,0,0,2,12,1]
 };
