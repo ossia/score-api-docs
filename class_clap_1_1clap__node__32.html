@@ -133,6 +133,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (const ossia:
 <tr class="separator:a889a2051351484cad40b7b546dd757a8 inherit pub_methods_class_clap_1_1clap__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7607d96b167e38e0132338d93b607e8a inherit pub_methods_class_clap_1_1clap__node" id="r_a7607d96b167e38e0132338d93b607e8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_clap_1_1clap__node.html#a7607d96b167e38e0132338d93b607e8a">reset_execution</a> () override</td></tr>
 <tr class="separator:a7607d96b167e38e0132338d93b607e8a inherit pub_methods_class_clap_1_1clap__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aac112bf9e5a1c2caec76ab8516b0ae inherit pub_methods_class_clap_1_1clap__node" id="r_a7aac112bf9e5a1c2caec76ab8516b0ae"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>do_process</b> (clap_process_t &amp;process, <a class="el" href="struct_clap_1_1event__storage.html">event_storage</a> &amp;input_storage, <a class="el" href="struct_clap_1_1event__storage.html">event_storage</a> &amp;output_storage)</td></tr>
+<tr class="separator:a7aac112bf9e5a1c2caec76ab8516b0ae inherit pub_methods_class_clap_1_1clap__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_clap_1_1clap__node__base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_clap_1_1clap__node__base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_clap_1_1clap__node__base.html">Clap::clap_node_base</a></td></tr>
 <tr class="memitem:a4aff0abb4980e1da45f3512f12c2bf23 inherit pub_methods_class_clap_1_1clap__node__base" id="r_a4aff0abb4980e1da45f3512f12c2bf23"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>clap_node_base</b> (const Clap::Model &amp;proc)</td></tr>
@@ -170,6 +173,28 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>prepare_input_events<
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_class_clap_1_1clap__node"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_clap_1_1clap__node')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_clap_1_1clap__node.html">Clap::clap_node</a></td></tr>
+<tr class="memitem:aed5c51aa03a03593fe536883588d9276 inherit pub_attribs_class_clap_1_1clap__node" id="r_aed5c51aa03a03593fe536883588d9276"><td class="memItemLeft" align="right" valign="top">
+PluginHandle &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_instance</b></td></tr>
+<tr class="separator:aed5c51aa03a03593fe536883588d9276 inherit pub_attribs_class_clap_1_1clap__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6df988011f76cf79daba175964448cb2 inherit pub_attribs_class_clap_1_1clap__node" id="r_a6df988011f76cf79daba175964448cb2"><td class="memItemLeft" align="right" valign="top">
+std::vector&lt; clap_audio_port_info_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_expected_audio_inputs</b> {}</td></tr>
+<tr class="separator:a6df988011f76cf79daba175964448cb2 inherit pub_attribs_class_clap_1_1clap__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abade820d7e4cccf7402e7817861dde6d inherit pub_attribs_class_clap_1_1clap__node" id="r_abade820d7e4cccf7402e7817861dde6d"><td class="memItemLeft" align="right" valign="top">
+std::vector&lt; clap_audio_port_info_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_expected_audio_outputs</b> {}</td></tr>
+<tr class="separator:abade820d7e4cccf7402e7817861dde6d inherit pub_attribs_class_clap_1_1clap__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a925c3dee2f9a1516de97aadcf0fd5cae inherit pub_attribs_class_clap_1_1clap__node" id="r_a925c3dee2f9a1516de97aadcf0fd5cae"><td class="memItemLeft" align="right" valign="top">
+std::vector&lt; clap_audio_buffer_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>input_buffers</b></td></tr>
+<tr class="separator:a925c3dee2f9a1516de97aadcf0fd5cae inherit pub_attribs_class_clap_1_1clap__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa49b0b41b5bacc95c117ced8047b2154 inherit pub_attribs_class_clap_1_1clap__node" id="r_aa49b0b41b5bacc95c117ced8047b2154"><td class="memItemLeft" align="right" valign="top">
+std::vector&lt; clap_audio_buffer_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>output_buffers</b></td></tr>
+<tr class="separator:aa49b0b41b5bacc95c117ced8047b2154 inherit pub_attribs_class_clap_1_1clap__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0fc26a29108c566659fcb017705daf2 inherit pub_attribs_class_clap_1_1clap__node" id="r_aa0fc26a29108c566659fcb017705daf2"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_activated</b> {}</td></tr>
+<tr class="separator:aa0fc26a29108c566659fcb017705daf2 inherit pub_attribs_class_clap_1_1clap__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14672a6c4bfd98f8085f0d4825c782dd inherit pub_attribs_class_clap_1_1clap__node" id="r_a14672a6c4bfd98f8085f0d4825c782dd"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_processing</b> {}</td></tr>
+<tr class="separator:a14672a6c4bfd98f8085f0d4825c782dd inherit pub_attribs_class_clap_1_1clap__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_clap_1_1clap__node__base"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_clap_1_1clap__node__base')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_clap_1_1clap__node__base.html">Clap::clap_node_base</a></td></tr>
 <tr class="memitem:a05dc883c2132f4a3f459e6efce44ef9b inherit pub_attribs_class_clap_1_1clap__node__base" id="r_a05dc883c2132f4a3f459e6efce44ef9b"><td class="memItemLeft" align="right" valign="top">
 Clap::PluginHandle &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>handle</b></td></tr>
@@ -186,9 +211,12 @@ ossia::small_vector&lt; ossia::midi_inlet *, 2 &gt;&#160;</td><td class="memItem
 <tr class="memitem:a9e1cfb5092266160f0e1a31249a8da49 inherit pub_attribs_class_clap_1_1clap__node__base" id="r_a9e1cfb5092266160f0e1a31249a8da49"><td class="memItemLeft" align="right" valign="top">
 ossia::small_vector&lt; ossia::midi_outlet *, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>midi_outs</b></td></tr>
 <tr class="separator:a9e1cfb5092266160f0e1a31249a8da49 inherit pub_attribs_class_clap_1_1clap__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35e384c987f6bb812d16ce8b78bca57c inherit pub_attribs_class_clap_1_1clap__node__base" id="r_a35e384c987f6bb812d16ce8b78bca57c"><td class="memItemLeft" align="right" valign="top">
-std::vector&lt; ossia::value_inlet * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>controls</b></td></tr>
-<tr class="separator:a35e384c987f6bb812d16ce8b78bca57c inherit pub_attribs_class_clap_1_1clap__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7036c5f6ffeffd84879d85e3b4982c30 inherit pub_attribs_class_clap_1_1clap__node__base" id="r_a7036c5f6ffeffd84879d85e3b4982c30"><td class="memItemLeft" align="right" valign="top">
+std::vector&lt; ossia::value_inlet * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>parameter_ins</b></td></tr>
+<tr class="separator:a7036c5f6ffeffd84879d85e3b4982c30 inherit pub_attribs_class_clap_1_1clap__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33db81b21084a2b59881ec7d9814123c inherit pub_attribs_class_clap_1_1clap__node__base" id="r_a33db81b21084a2b59881ec7d9814123c"><td class="memItemLeft" align="right" valign="top">
+std::vector&lt; ossia::value_outlet * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>parameter_outs</b></td></tr>
+<tr class="separator:a33db81b21084a2b59881ec7d9814123c inherit pub_attribs_class_clap_1_1clap__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6de909bb14609af63465a91f9e168f5 inherit pub_attribs_class_clap_1_1clap__node__base" id="r_ac6de909bb14609af63465a91f9e168f5"><td class="memItemLeft" align="right" valign="top">
 clap_event_transport_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_current_transport</b></td></tr>
 <tr class="separator:ac6de909bb14609af63465a91f9e168f5 inherit pub_attribs_class_clap_1_1clap__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,47 +226,24 @@ clap_event_transport_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_c
 <tr class="memitem:ab4be11cca213b373ef2f4bb9d1a2bcdc inherit pub_attribs_class_clap_1_1clap__node__base" id="r_ab4be11cca213b373ef2f4bb9d1a2bcdc"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="struct_clap_1_1event__storage.html">event_storage</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_output_events</b></td></tr>
 <tr class="separator:ab4be11cca213b373ef2f4bb9d1a2bcdc inherit pub_attribs_class_clap_1_1clap__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae900fb7e63edd703439235672df13a29 inherit pub_attribs_class_clap_1_1clap__node__base" id="r_ae900fb7e63edd703439235672df13a29"><td class="memItemLeft" align="right" valign="top">
-const std::vector&lt; clap_param_info_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_param_info</b></td></tr>
-<tr class="separator:ae900fb7e63edd703439235672df13a29 inherit pub_attribs_class_clap_1_1clap__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ed83cfe10141d74ac651ff52392cf7b inherit pub_attribs_class_clap_1_1clap__node__base" id="r_a3ed83cfe10141d74ac651ff52392cf7b"><td class="memItemLeft" align="right" valign="top">
-const std::vector&lt; clap_note_port_info_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_midi_in_info</b></td></tr>
-<tr class="separator:a3ed83cfe10141d74ac651ff52392cf7b inherit pub_attribs_class_clap_1_1clap__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a197e369c0d2c85cc1d27fcd51642387b inherit pub_attribs_class_clap_1_1clap__node__base" id="r_a197e369c0d2c85cc1d27fcd51642387b"><td class="memItemLeft" align="right" valign="top">
-const std::vector&lt; clap_note_port_info_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_midi_out_info</b></td></tr>
-<tr class="separator:a197e369c0d2c85cc1d27fcd51642387b inherit pub_attribs_class_clap_1_1clap__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9f27738bb48315406f6cc6c4fd81219 inherit pub_attribs_class_clap_1_1clap__node__base" id="r_aa9f27738bb48315406f6cc6c4fd81219"><td class="memItemLeft" align="right" valign="top">
+const std::vector&lt; clap_param_info_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_param_ins</b></td></tr>
+<tr class="separator:aa9f27738bb48315406f6cc6c4fd81219 inherit pub_attribs_class_clap_1_1clap__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add94948b929490735d40f7a7e3839945 inherit pub_attribs_class_clap_1_1clap__node__base" id="r_add94948b929490735d40f7a7e3839945"><td class="memItemLeft" align="right" valign="top">
+const std::vector&lt; clap_param_info_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_param_outs</b></td></tr>
+<tr class="separator:add94948b929490735d40f7a7e3839945 inherit pub_attribs_class_clap_1_1clap__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adce12cd00efbe9e3b7024fdc416e90ae inherit pub_attribs_class_clap_1_1clap__node__base" id="r_adce12cd00efbe9e3b7024fdc416e90ae"><td class="memItemLeft" align="right" valign="top">
+const std::vector&lt; clap_note_port_info_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_midi_ins</b></td></tr>
+<tr class="separator:adce12cd00efbe9e3b7024fdc416e90ae inherit pub_attribs_class_clap_1_1clap__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59cdea826c5d90139604ad4d2c87c4bb inherit pub_attribs_class_clap_1_1clap__node__base" id="r_a59cdea826c5d90139604ad4d2c87c4bb"><td class="memItemLeft" align="right" valign="top">
+const std::vector&lt; clap_note_port_info_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_midi_outs</b></td></tr>
+<tr class="separator:a59cdea826c5d90139604ad4d2c87c4bb inherit pub_attribs_class_clap_1_1clap__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf3bfe8dbce05bce84e78ae4b74644d7 inherit pub_attribs_class_clap_1_1clap__node__base" id="r_acf3bfe8dbce05bce84e78ae4b74644d7"><td class="memItemLeft" align="right" valign="top">
 double&#160;</td><td class="memItemRight" valign="bottom"><b>m_sample_rate</b> {44100.0}</td></tr>
 <tr class="separator:acf3bfe8dbce05bce84e78ae4b74644d7 inherit pub_attribs_class_clap_1_1clap__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3b028d877b907fa20e95097dd43dfcf inherit pub_attribs_class_clap_1_1clap__node__base" id="r_aa3b028d877b907fa20e95097dd43dfcf"><td class="memItemLeft" align="right" valign="top">
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_buffer_size</b> {512}</td></tr>
 <tr class="separator:aa3b028d877b907fa20e95097dd43dfcf inherit pub_attribs_class_clap_1_1clap__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_class_clap_1_1clap__node"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_clap_1_1clap__node')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_clap_1_1clap__node.html">Clap::clap_node</a></td></tr>
-<tr class="memitem:a7aac112bf9e5a1c2caec76ab8516b0ae inherit pro_methods_class_clap_1_1clap__node" id="r_a7aac112bf9e5a1c2caec76ab8516b0ae"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>do_process</b> (clap_process_t &amp;process, <a class="el" href="struct_clap_1_1event__storage.html">event_storage</a> &amp;input_storage, <a class="el" href="struct_clap_1_1event__storage.html">event_storage</a> &amp;output_storage)</td></tr>
-<tr class="separator:a7aac112bf9e5a1c2caec76ab8516b0ae inherit pro_methods_class_clap_1_1clap__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_class_clap_1_1clap__node"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_clap_1_1clap__node')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_clap_1_1clap__node.html">Clap::clap_node</a></td></tr>
-<tr class="memitem:aed5c51aa03a03593fe536883588d9276 inherit pro_attribs_class_clap_1_1clap__node" id="r_aed5c51aa03a03593fe536883588d9276"><td class="memItemLeft" align="right" valign="top">
-PluginHandle &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_instance</b></td></tr>
-<tr class="separator:aed5c51aa03a03593fe536883588d9276 inherit pro_attribs_class_clap_1_1clap__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6df988011f76cf79daba175964448cb2 inherit pro_attribs_class_clap_1_1clap__node" id="r_a6df988011f76cf79daba175964448cb2"><td class="memItemLeft" align="right" valign="top">
-std::vector&lt; clap_audio_port_info_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_expected_audio_inputs</b> {}</td></tr>
-<tr class="separator:a6df988011f76cf79daba175964448cb2 inherit pro_attribs_class_clap_1_1clap__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abade820d7e4cccf7402e7817861dde6d inherit pro_attribs_class_clap_1_1clap__node" id="r_abade820d7e4cccf7402e7817861dde6d"><td class="memItemLeft" align="right" valign="top">
-std::vector&lt; clap_audio_port_info_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_expected_audio_outputs</b> {}</td></tr>
-<tr class="separator:abade820d7e4cccf7402e7817861dde6d inherit pro_attribs_class_clap_1_1clap__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a925c3dee2f9a1516de97aadcf0fd5cae inherit pro_attribs_class_clap_1_1clap__node" id="r_a925c3dee2f9a1516de97aadcf0fd5cae"><td class="memItemLeft" align="right" valign="top">
-std::vector&lt; clap_audio_buffer_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>input_buffers</b></td></tr>
-<tr class="separator:a925c3dee2f9a1516de97aadcf0fd5cae inherit pro_attribs_class_clap_1_1clap__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa49b0b41b5bacc95c117ced8047b2154 inherit pro_attribs_class_clap_1_1clap__node" id="r_aa49b0b41b5bacc95c117ced8047b2154"><td class="memItemLeft" align="right" valign="top">
-std::vector&lt; clap_audio_buffer_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>output_buffers</b></td></tr>
-<tr class="separator:aa49b0b41b5bacc95c117ced8047b2154 inherit pro_attribs_class_clap_1_1clap__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0fc26a29108c566659fcb017705daf2 inherit pro_attribs_class_clap_1_1clap__node" id="r_aa0fc26a29108c566659fcb017705daf2"><td class="memItemLeft" align="right" valign="top">
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_activated</b> {}</td></tr>
-<tr class="separator:aa0fc26a29108c566659fcb017705daf2 inherit pro_attribs_class_clap_1_1clap__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14672a6c4bfd98f8085f0d4825c782dd inherit pro_attribs_class_clap_1_1clap__node" id="r_a14672a6c4bfd98f8085f0d4825c782dd"><td class="memItemLeft" align="right" valign="top">
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_processing</b> {}</td></tr>
-<tr class="separator:a14672a6c4bfd98f8085f0d4825c782dd inherit pro_attribs_class_clap_1_1clap__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><b>score-plugin-clap/Clap/Executor.cpp</b></li>

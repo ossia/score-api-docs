@@ -180,9 +180,12 @@ ossia::small_vector&lt; ossia::midi_inlet *, 2 &gt;&#160;</td><td class="memItem
 <tr class="memitem:a9e1cfb5092266160f0e1a31249a8da49" id="r_a9e1cfb5092266160f0e1a31249a8da49"><td class="memItemLeft" align="right" valign="top"><a id="a9e1cfb5092266160f0e1a31249a8da49" name="a9e1cfb5092266160f0e1a31249a8da49"></a>
 ossia::small_vector&lt; ossia::midi_outlet *, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>midi_outs</b></td></tr>
 <tr class="separator:a9e1cfb5092266160f0e1a31249a8da49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35e384c987f6bb812d16ce8b78bca57c" id="r_a35e384c987f6bb812d16ce8b78bca57c"><td class="memItemLeft" align="right" valign="top"><a id="a35e384c987f6bb812d16ce8b78bca57c" name="a35e384c987f6bb812d16ce8b78bca57c"></a>
-std::vector&lt; ossia::value_inlet * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>controls</b></td></tr>
-<tr class="separator:a35e384c987f6bb812d16ce8b78bca57c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7036c5f6ffeffd84879d85e3b4982c30" id="r_a7036c5f6ffeffd84879d85e3b4982c30"><td class="memItemLeft" align="right" valign="top"><a id="a7036c5f6ffeffd84879d85e3b4982c30" name="a7036c5f6ffeffd84879d85e3b4982c30"></a>
+std::vector&lt; ossia::value_inlet * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>parameter_ins</b></td></tr>
+<tr class="separator:a7036c5f6ffeffd84879d85e3b4982c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33db81b21084a2b59881ec7d9814123c" id="r_a33db81b21084a2b59881ec7d9814123c"><td class="memItemLeft" align="right" valign="top"><a id="a33db81b21084a2b59881ec7d9814123c" name="a33db81b21084a2b59881ec7d9814123c"></a>
+std::vector&lt; ossia::value_outlet * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>parameter_outs</b></td></tr>
+<tr class="separator:a33db81b21084a2b59881ec7d9814123c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6de909bb14609af63465a91f9e168f5" id="r_ac6de909bb14609af63465a91f9e168f5"><td class="memItemLeft" align="right" valign="top"><a id="ac6de909bb14609af63465a91f9e168f5" name="ac6de909bb14609af63465a91f9e168f5"></a>
 clap_event_transport_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_current_transport</b></td></tr>
 <tr class="separator:ac6de909bb14609af63465a91f9e168f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,15 +195,18 @@ clap_event_transport_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_c
 <tr class="memitem:ab4be11cca213b373ef2f4bb9d1a2bcdc" id="r_ab4be11cca213b373ef2f4bb9d1a2bcdc"><td class="memItemLeft" align="right" valign="top"><a id="ab4be11cca213b373ef2f4bb9d1a2bcdc" name="ab4be11cca213b373ef2f4bb9d1a2bcdc"></a>
 <a class="el" href="struct_clap_1_1event__storage.html">event_storage</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_output_events</b></td></tr>
 <tr class="separator:ab4be11cca213b373ef2f4bb9d1a2bcdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae900fb7e63edd703439235672df13a29" id="r_ae900fb7e63edd703439235672df13a29"><td class="memItemLeft" align="right" valign="top"><a id="ae900fb7e63edd703439235672df13a29" name="ae900fb7e63edd703439235672df13a29"></a>
-const std::vector&lt; clap_param_info_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_param_info</b></td></tr>
-<tr class="separator:ae900fb7e63edd703439235672df13a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ed83cfe10141d74ac651ff52392cf7b" id="r_a3ed83cfe10141d74ac651ff52392cf7b"><td class="memItemLeft" align="right" valign="top"><a id="a3ed83cfe10141d74ac651ff52392cf7b" name="a3ed83cfe10141d74ac651ff52392cf7b"></a>
-const std::vector&lt; clap_note_port_info_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_midi_in_info</b></td></tr>
-<tr class="separator:a3ed83cfe10141d74ac651ff52392cf7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a197e369c0d2c85cc1d27fcd51642387b" id="r_a197e369c0d2c85cc1d27fcd51642387b"><td class="memItemLeft" align="right" valign="top"><a id="a197e369c0d2c85cc1d27fcd51642387b" name="a197e369c0d2c85cc1d27fcd51642387b"></a>
-const std::vector&lt; clap_note_port_info_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_midi_out_info</b></td></tr>
-<tr class="separator:a197e369c0d2c85cc1d27fcd51642387b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9f27738bb48315406f6cc6c4fd81219" id="r_aa9f27738bb48315406f6cc6c4fd81219"><td class="memItemLeft" align="right" valign="top"><a id="aa9f27738bb48315406f6cc6c4fd81219" name="aa9f27738bb48315406f6cc6c4fd81219"></a>
+const std::vector&lt; clap_param_info_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_param_ins</b></td></tr>
+<tr class="separator:aa9f27738bb48315406f6cc6c4fd81219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add94948b929490735d40f7a7e3839945" id="r_add94948b929490735d40f7a7e3839945"><td class="memItemLeft" align="right" valign="top"><a id="add94948b929490735d40f7a7e3839945" name="add94948b929490735d40f7a7e3839945"></a>
+const std::vector&lt; clap_param_info_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_param_outs</b></td></tr>
+<tr class="separator:add94948b929490735d40f7a7e3839945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adce12cd00efbe9e3b7024fdc416e90ae" id="r_adce12cd00efbe9e3b7024fdc416e90ae"><td class="memItemLeft" align="right" valign="top"><a id="adce12cd00efbe9e3b7024fdc416e90ae" name="adce12cd00efbe9e3b7024fdc416e90ae"></a>
+const std::vector&lt; clap_note_port_info_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_midi_ins</b></td></tr>
+<tr class="separator:adce12cd00efbe9e3b7024fdc416e90ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59cdea826c5d90139604ad4d2c87c4bb" id="r_a59cdea826c5d90139604ad4d2c87c4bb"><td class="memItemLeft" align="right" valign="top"><a id="a59cdea826c5d90139604ad4d2c87c4bb" name="a59cdea826c5d90139604ad4d2c87c4bb"></a>
+const std::vector&lt; clap_note_port_info_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_midi_outs</b></td></tr>
+<tr class="separator:a59cdea826c5d90139604ad4d2c87c4bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf3bfe8dbce05bce84e78ae4b74644d7" id="r_acf3bfe8dbce05bce84e78ae4b74644d7"><td class="memItemLeft" align="right" valign="top"><a id="acf3bfe8dbce05bce84e78ae4b74644d7" name="acf3bfe8dbce05bce84e78ae4b74644d7"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>m_sample_rate</b> {44100.0}</td></tr>
 <tr class="separator:acf3bfe8dbce05bce84e78ae4b74644d7"><td class="memSeparator" colspan="2">&#160;</td></tr>

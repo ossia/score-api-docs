@@ -102,6 +102,7 @@ var annotated_dup =
     ] ],
     [ "Clap", null, [
       [ "ApplicationPlugin", "class_clap_1_1_application_plugin.html", "class_clap_1_1_application_plugin" ],
+      [ "clap_mono_process", "struct_clap_1_1clap__mono__process.html", null ],
       [ "clap_node", "class_clap_1_1clap__node.html", null ],
       [ "clap_node_32", "class_clap_1_1clap__node__32.html", null ],
       [ "clap_node_64", "class_clap_1_1clap__node__64.html", null ],
@@ -109,9 +110,11 @@ var annotated_dup =
       [ "clap_node_mono", "class_clap_1_1clap__node__mono.html", "class_clap_1_1clap__node__mono" ],
       [ "clap_node_mono_32", "class_clap_1_1clap__node__mono__32.html", null ],
       [ "clap_node_mono_64", "class_clap_1_1clap__node__mono__64.html", null ],
+      [ "clap_process", "struct_clap_1_1clap__process.html", null ],
       [ "event_storage", "struct_clap_1_1event__storage.html", null ],
       [ "Executor", "class_clap_1_1_executor.html", null ],
       [ "LibraryHandler", "class_clap_1_1_library_handler.html", null ],
+      [ "PluginInfo", "struct_clap_1_1_plugin_info.html", null ],
       [ "Window", "class_clap_1_1_window.html", null ]
     ] ],
     [ "ControlSurface", null, [
