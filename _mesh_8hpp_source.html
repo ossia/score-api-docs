@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('_mesh_8hpp_source.html',''); initResiz
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;ossia/dataflow/geometry_port.hpp&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;ossia/detail/small_vector.hpp&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;ossia/detail/span.hpp&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;span&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;private/qrhi_p.h&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('_mesh_8hpp_source.html',''); initResiz
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  ossia::small_vector&lt;QRhiVertexInputBinding, 2&gt; vertexBindings;</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  ossia::small_vector&lt;QRhiVertexInputAttribute, 2&gt; vertexAttributes;</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  tcb::span&lt;const float&gt; vertexArray;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  std::span&lt;const float&gt; vertexArray;</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="keywordtype">int</span> vertexCount{};</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>};</div>
 </div>
@@ -212,7 +212,7 @@ $(document).ready(function(){initNavTree('_mesh_8hpp_source.html',''); initResiz
 <div class="foldopen" id="foldopen00101" data-start="{" data-end="};">
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_plain_mesh.html">  101</a></span><span class="keyword">struct </span>SCORE_PLUGIN_GFX_EXPORT <a class="code hl_struct" href="structscore_1_1gfx_1_1_plain_mesh.html">PlainMesh</a> : <a class="code hl_struct" href="structscore_1_1gfx_1_1_basic_mesh.html">BasicMesh</a></div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>{</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <span class="keyword">explicit</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_plain_mesh.html">PlainMesh</a>(tcb::span&lt;const float&gt; vtx, <span class="keywordtype">int</span> count);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <span class="keyword">explicit</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_plain_mesh.html">PlainMesh</a>(std::span&lt;const float&gt; vtx, <span class="keywordtype">int</span> count);</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  [[nodiscard]] Flags flags() <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span> { <span class="keywordflow">return</span> HasPosition; }</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <span class="keyword">const</span> <span class="keywordtype">char</span>* defaultVertexShader() <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <span class="keywordtype">void</span></div>
@@ -223,7 +223,7 @@ $(document).ready(function(){initNavTree('_mesh_8hpp_source.html',''); initResiz
 <div class="foldopen" id="foldopen00113" data-start="{" data-end="};">
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_textured_mesh.html">  113</a></span><span class="keyword">struct </span>SCORE_PLUGIN_GFX_EXPORT <a class="code hl_struct" href="structscore_1_1gfx_1_1_textured_mesh.html">TexturedMesh</a> : <a class="code hl_struct" href="structscore_1_1gfx_1_1_basic_mesh.html">BasicMesh</a></div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>{</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <span class="keyword">explicit</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_textured_mesh.html">TexturedMesh</a>(tcb::span&lt;const float&gt; vtx, <span class="keywordtype">int</span> count);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <span class="keyword">explicit</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_textured_mesh.html">TexturedMesh</a>(std::span&lt;const float&gt; vtx, <span class="keywordtype">int</span> count);</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  [[nodiscard]] Flags flags() <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span></div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  {</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keywordflow">return</span> HasPosition | HasTexCoord;</div>

@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('_concepts_8hpp_source.html',''); initR
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;ossia/dataflow/audio_port.hpp&gt;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;ossia/dataflow/port.hpp&gt;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;ossia/dataflow/safe_nodes/tick_policies.hpp&gt;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;ossia/detail/span.hpp&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;span&gt;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;boost/container/vector.hpp&gt;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
@@ -620,14 +620,14 @@ $(document).ready(function(){initNavTree('_concepts_8hpp_source.html',''); initR
 <div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>  int64_t offset{};</div>
 <div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>  int64_t duration{};</div>
 <div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span> </div>
-<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>  tcb::span&lt;const double&gt; operator[](std::size_t i) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>  std::span&lt;const double&gt; operator[](std::size_t i) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
 <div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>  {</div>
 <div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>    <span class="keyword">auto</span>&amp; chan = (*buffer)[i];</div>
 <div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>    int64_t min_dur = std::min(int64_t(chan.size()) - offset, duration);</div>
 <div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>    <span class="keywordflow">if</span>(min_dur &lt; 0)</div>
 <div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>      min_dur = 0;</div>
 <div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span> </div>
-<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>    <span class="keywordflow">return</span> tcb::span&lt;const double&gt;{chan.data() + offset, std::size_t(min_dur)};</div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>    <span class="keywordflow">return</span> std::span&lt;const double&gt;{chan.data() + offset, std::size_t(min_dur)};</div>
 <div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>  }</div>
 <div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span> </div>
 <div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>  std::size_t channels() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> buffer-&gt;size(); }</div>
@@ -648,14 +648,14 @@ $(document).ready(function(){initNavTree('_concepts_8hpp_source.html',''); initR
 <div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>  int64_t offset{};</div>
 <div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>  int64_t duration{};</div>
 <div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span> </div>
-<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>  tcb::span&lt;double&gt; operator[](std::size_t i) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>  std::span&lt;double&gt; operator[](std::size_t i) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
 <div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>  {</div>
 <div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>    <span class="keyword">auto</span>&amp; chan = (*buffer)[i];</div>
 <div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>    int64_t min_dur = std::min(int64_t(chan.size()) - offset, duration);</div>
 <div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>    <span class="keywordflow">if</span>(min_dur &lt; 0)</div>
 <div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>      min_dur = 0;</div>
 <div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span> </div>
-<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>    <span class="keywordflow">return</span> tcb::span&lt;double&gt;{chan.data() + offset, std::size_t(min_dur)};</div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>    <span class="keywordflow">return</span> std::span&lt;double&gt;{chan.data() + offset, std::size_t(min_dur)};</div>
 <div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>  }</div>
 <div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span> </div>
 <div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>  std::size_t channels() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> buffer-&gt;size(); }</div>
