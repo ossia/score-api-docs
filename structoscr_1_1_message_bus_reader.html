@@ -117,16 +117,16 @@ template&lt;typename T &gt; <br />
 requires std::is_trivial_v&lt;T&gt;</td></tr>
 <tr class="memitem:adb2c38b329bf7b8f62dd82cb9fbbf7f4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (T &amp;msg)</td></tr>
 <tr class="separator:adb2c38b329bf7b8f62dd82cb9fbbf7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd747079bcf97aa029dfcef68e8d5261" id="r_afd747079bcf97aa029dfcef68e8d5261"><td class="memTemplParams" colspan="2"><a id="afd747079bcf97aa029dfcef68e8d5261" name="afd747079bcf97aa029dfcef68e8d5261"></a>
+<tr class="memitem:ac4308f9a20986946e048c29e1dfcd3f9" id="r_ac4308f9a20986946e048c29e1dfcd3f9"><td class="memTemplParams" colspan="2"><a id="ac4308f9a20986946e048c29e1dfcd3f9" name="ac4308f9a20986946e048c29e1dfcd3f9"></a>
 template&lt;typename T &gt; <br />
-requires ( !std::is_trivial_v&lt;T&gt; &amp;&amp; avnd::relocatable&lt;T&gt; &amp;&amp; alignof(T) &lt;= alignof(void*))</td></tr>
-<tr class="memitem:afd747079bcf97aa029dfcef68e8d5261"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (T &amp;msg)</td></tr>
-<tr class="separator:afd747079bcf97aa029dfcef68e8d5261"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af260e71dafdc2c4dcf51914c98decd51" id="r_af260e71dafdc2c4dcf51914c98decd51"><td class="memTemplParams" colspan="2"><a id="af260e71dafdc2c4dcf51914c98decd51" name="af260e71dafdc2c4dcf51914c98decd51"></a>
+requires ( !std::is_trivial_v&lt;T&gt; &amp;&amp; avnd::relocatable&lt;T&gt; &amp;&amp; alignof(T) &lt;= alignof(max_align_t))</td></tr>
+<tr class="memitem:ac4308f9a20986946e048c29e1dfcd3f9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (T &amp;msg)</td></tr>
+<tr class="separator:ac4308f9a20986946e048c29e1dfcd3f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20708c735961c86141b79c7d47baf587" id="r_a20708c735961c86141b79c7d47baf587"><td class="memTemplParams" colspan="2"><a id="a20708c735961c86141b79c7d47baf587" name="a20708c735961c86141b79c7d47baf587"></a>
 template&lt;typename T &gt; <br />
-requires (!std::is_trivial_v&lt;T&gt; &amp;&amp; !avnd::relocatable&lt;T&gt;)</td></tr>
-<tr class="memitem:af260e71dafdc2c4dcf51914c98decd51"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (T &amp;msg)</td></tr>
-<tr class="separator:af260e71dafdc2c4dcf51914c98decd51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+requires ( !std::is_trivial_v&lt;T&gt; &amp;&amp; (!avnd::relocatable&lt;T&gt; || (alignof(T) &gt; alignof(max_align_t))))</td></tr>
+<tr class="memitem:a20708c735961c86141b79c7d47baf587"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (T &amp;msg)</td></tr>
+<tr class="separator:a20708c735961c86141b79c7d47baf587"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
