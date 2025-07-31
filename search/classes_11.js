@@ -105,5 +105,6 @@ var searchData=
   ['rmsdata_102',['RMSData',['../struct_media_1_1_r_m_s_data.html',1,'Media']]],
   ['rolloff_103',['Rolloff',['../struct_analysis_1_1_rolloff.html',1,'Analysis']]],
   ['rootitem_104',['RootItem',['../structoscr_1_1_root_item.html',1,'oscr']]],
-  ['rotationcontrol_105',['RotationControl',['../struct_threedim_1_1_rotation_control.html',1,'Threedim']]]
+  ['rotationcontrol_105',['RotationControl',['../struct_threedim_1_1_rotation_control.html',1,'Threedim']]],
+  ['runtimeinterposeplugin_106',['RuntimeInterposePlugin',['../class_jit_1_1_runtime_interpose_plugin.html',1,'Jit']]]
 ];

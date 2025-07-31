@@ -28,6 +28,7 @@ var hierarchy =
     [ "avnd_tools::DeviceRecorder::activate_message", "structavnd__tools_1_1_device_recorder_1_1activate__message.html", null ],
     [ "Nodal::AddNode", "struct_nodal_1_1_add_node.html", null ],
     [ "score::Addon", "structscore_1_1_addon.html", null ],
+    [ "Jit::AddonData", "struct_jit_1_1_addon_data.html", null ],
     [ "Execution::AddProcess", "struct_execution_1_1_add_process.html", null ],
     [ "State::Address", "struct_state_1_1_address.html", null ],
     [ "State::AddressAccessor", "struct_state_1_1_address_accessor.html", null ],
@@ -681,8 +682,6 @@ var hierarchy =
     [ "score::gfx::Edge", "structscore_1_1gfx_1_1_edge.html", null ],
     [ "Process::MultiScriptDialog::EditorTab", "struct_process_1_1_multi_script_dialog_1_1_editor_tab.html", null ],
     [ "LV2::EffectContext", "struct_l_v2_1_1_effect_context.html", null ],
-    [ "EHExceptionRecord", "struct_e_h_exception_record.html", null ],
-    [ "EHExceptionRecord::EHParameters", "struct_e_h_exception_record_1_1_e_h_parameters.html", null ],
     [ "Scenario::ElementsProperties", "struct_scenario_1_1_elements_properties.html", null ],
     [ "Scenario::ElementTraits< Scenario_T, Element_T >", "struct_scenario_1_1_element_traits.html", null ],
     [ "Scenario::ElementTraits< BaseScenarioContainer, EventModel >", "struct_scenario_1_1_element_traits_3_01_base_scenario_container_00_01_event_model_01_4.html", null ],
@@ -1070,8 +1069,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Model >", "classid__base__t.html", null ],
+    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1119,8 +1118,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -2140,6 +2139,10 @@ var hierarchy =
     [ "avnd_tools::DeviceRecorder::player_thread", "structavnd__tools_1_1_device_recorder_1_1player__thread.html", null ],
     [ "Execution::PlayFromIntervalScenarioPruner", "struct_execution_1_1_play_from_interval_scenario_pruner.html", null ],
     [ "Scenario::PlayToolState", "class_scenario_1_1_play_tool_state.html", null ],
+    [ "llvm::orc::ObjectLinkingLayer::Plugin", null, [
+      [ "Jit::EagerLinkingPlugin", "class_jit_1_1_eager_linking_plugin.html", null ],
+      [ "Jit::RuntimeInterposePlugin", "class_jit_1_1_runtime_interpose_plugin.html", null ]
+    ] ],
     [ "score::Plugin", "structscore_1_1_plugin.html", null ],
     [ "vst3::Plugin", "structvst3_1_1_plugin.html", null ],
     [ "score::Plugin_QtInterface", "classscore_1_1_plugin___qt_interface.html", [
@@ -3759,15 +3762,11 @@ var hierarchy =
     [ "Execution::Settings::SchedulingPolicies", "struct_execution_1_1_settings_1_1_scheduling_policies.html", null ],
     [ "Process::ScriptChangeResult", "struct_process_1_1_script_change_result.html", null ],
     [ "score::SecondSpinBox", "structscore_1_1_second_spin_box.html", null ],
-    [ "llvm::SectionMemoryManager", null, [
-      [ "SingleSectionMemoryManager", "class_single_section_memory_manager.html", null ]
-    ] ],
     [ "Curve::Element::Segment_tag", "struct_curve_1_1_element_1_1_segment__tag.html", null ],
     [ "Curve::SegmentData", "struct_curve_1_1_segment_data.html", null ],
     [ "SegmentMapImpl", null, [
       [ "Curve::CurveSegmentMap", "struct_curve_1_1_curve_segment_map.html", null ]
     ] ],
-    [ "SEHFrameHandler", "class_s_e_h_frame_handler.html", null ],
     [ "Explorer::SelectedNodes", "struct_explorer_1_1_selected_nodes.html", null ],
     [ "Scenario::SelectedNodes", "struct_scenario_1_1_selected_nodes.html", null ],
     [ "score::SelectionDispatcher", "classscore_1_1_selection_dispatcher.html", null ],

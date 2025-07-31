@@ -93,7 +93,7 @@ var searchData=
   ['renderednodes_90',['renderedNodes',['../classscore_1_1gfx_1_1_node.html#abbac77035201ad0586b55fb7f9075ea8',1,'score::gfx::Node']]],
   ['renderednodeschanged_91',['renderedNodesChanged',['../classscore_1_1gfx_1_1_node.html#aefe3301b3b662a8eb8c0276a348a5fa3',1,'score::gfx::Node']]],
   ['renderedphongnode_92',['RenderedPhongNode',['../structscore_1_1gfx_1_1_rendered_phong_node.html',1,'score::gfx']]],
-  ['renderer_93',['renderer',['../classscore_1_1gfx_1_1_text_node_1_1_renderer.html',1,'score::gfx::TextNode::Renderer'],['../class_gfx_1_1_spout_1_1_spout_input_node_1_1_renderer.html',1,'Gfx::Spout::SpoutInputNode::Renderer']]],
+  ['renderer_93',['renderer',['../class_gfx_1_1_spout_1_1_spout_input_node_1_1_renderer.html',1,'Gfx::Spout::SpoutInputNode::Renderer'],['../classscore_1_1gfx_1_1_text_node_1_1_renderer.html',1,'score::gfx::TextNode::Renderer']]],
   ['renderers_94',['renderers',['../classscore_1_1gfx_1_1_render_list.html#a73bb243161c6a3a62aa9216748d4c110',1,'score::gfx::RenderList']]],
   ['renderlist_95',['RenderList',['../classscore_1_1gfx_1_1_render_list.html',1,'score::gfx']]],
   ['renderstate_96',['RenderState',['../structscore_1_1gfx_1_1_render_state.html',1,'score::gfx']]],
@@ -134,5 +134,6 @@ var searchData=
   ['rollback_131',['rollback',['../class_ongoing_command_dispatcher.html#ac7d20a23177cc9acf50aabbbbf44b75f',1,'OngoingCommandDispatcher']]],
   ['rolloff_132',['Rolloff',['../struct_analysis_1_1_rolloff.html',1,'Analysis']]],
   ['rootitem_133',['RootItem',['../structoscr_1_1_root_item.html',1,'oscr']]],
-  ['rotationcontrol_134',['RotationControl',['../struct_threedim_1_1_rotation_control.html',1,'Threedim']]]
+  ['rotationcontrol_134',['RotationControl',['../struct_threedim_1_1_rotation_control.html',1,'Threedim']]],
+  ['runtimeinterposeplugin_135',['RuntimeInterposePlugin',['../class_jit_1_1_runtime_interpose_plugin.html',1,'Jit']]]
 ];

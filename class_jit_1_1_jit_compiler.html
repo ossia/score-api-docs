@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('class_jit_1_1_jit_compiler.html',''); 
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_jit_1_1_jit_compiler-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Jit::JitCompiler Class Reference</div></div>
 </div><!--header-->
@@ -121,6 +122,27 @@ template&lt;class Signature_t &gt; </td></tr>
 <tr class="memitem:aa62736fbca85b45846440de4207b7cc6" id="r_aa62736fbca85b45846440de4207b7cc6"><td class="memItemLeft" align="right" valign="top"><a id="aa62736fbca85b45846440de4207b7cc6" name="aa62736fbca85b45846440de4207b7cc6"></a>
 const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>errors</b> () const noexcept</td></tr>
 <tr class="separator:aa62736fbca85b45846440de4207b7cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a1a8938b21dc91c91d519597b014853c6" id="r_a1a8938b21dc91c91d519597b014853c6"><td class="memItemLeft" align="right" valign="top"><a id="a1a8938b21dc91c91d519597b014853c6" name="a1a8938b21dc91c91d519597b014853c6"></a>
+std::unique_ptr&lt; llvm::jitlink::InProcessMemoryManager &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_memmgr</b></td></tr>
+<tr class="separator:a1a8938b21dc91c91d519597b014853c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3032d52b7fb12b4dd19439d8b0522114" id="r_a3032d52b7fb12b4dd19439d8b0522114"><td class="memItemLeft" align="right" valign="top"><a id="a3032d52b7fb12b4dd19439d8b0522114" name="a3032d52b7fb12b4dd19439d8b0522114"></a>
+<a class="el" href="class_jit_1_1_clang_c_c1_driver.html">ClangCC1Driver</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_driver</b></td></tr>
+<tr class="separator:a3032d52b7fb12b4dd19439d8b0522114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5000e6582cd7e848422e9e4ae2aa22c0" id="r_a5000e6582cd7e848422e9e4ae2aa22c0"><td class="memItemLeft" align="right" valign="top"><a id="a5000e6582cd7e848422e9e4ae2aa22c0" name="a5000e6582cd7e848422e9e4ae2aa22c0"></a>
+std::unique_ptr&lt; llvm::orc::LLJIT &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_jit</b></td></tr>
+<tr class="separator:a5000e6582cd7e848422e9e4ae2aa22c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e929374b43e036f170881edb77e2170" id="r_a7e929374b43e036f170881edb77e2170"><td class="memItemLeft" align="right" valign="top"><a id="a7e929374b43e036f170881edb77e2170" name="a7e929374b43e036f170881edb77e2170"></a>
+llvm::orc::MangleAndInterner&#160;</td><td class="memItemRight" valign="bottom"><b>m_mangler</b></td></tr>
+<tr class="separator:a7e929374b43e036f170881edb77e2170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0302d3da8518c74cd8aca854394a25bf" id="r_a0302d3da8518c74cd8aca854394a25bf"><td class="memItemLeft" align="right" valign="top"><a id="a0302d3da8518c74cd8aca854394a25bf" name="a0302d3da8518c74cd8aca854394a25bf"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_errors</b></td></tr>
+<tr class="separator:a0302d3da8518c74cd8aca854394a25bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b49b10c59b3c4d831de5f61580ffecf" id="r_a8b49b10c59b3c4d831de5f61580ffecf"><td class="memItemLeft" align="right" valign="top"><a id="a8b49b10c59b3c4d831de5f61580ffecf" name="a8b49b10c59b3c4d831de5f61580ffecf"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_atExitId</b> {}</td></tr>
+<tr class="separator:a8b49b10c59b3c4d831de5f61580ffecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_compiler_8hpp_source.html">Compiler.hpp</a></li>
