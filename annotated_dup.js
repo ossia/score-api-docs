@@ -1175,6 +1175,7 @@ var annotated_dup =
       [ "Presenter", "class_patternist_1_1_presenter.html", null ],
       [ "ProcessModel", "class_patternist_1_1_process_model.html", null ],
       [ "UpdatePattern", "class_patternist_1_1_update_pattern.html", null ],
+      [ "UpdatePatterns", "class_patternist_1_1_update_patterns.html", null ],
       [ "View", "class_patternist_1_1_view.html", null ]
     ] ],
     [ "Pd", null, [

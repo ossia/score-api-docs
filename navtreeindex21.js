@@ -1,5 +1,6 @@
 var NAVTREEINDEX21 =
 {
+"struct_gfx_1_1_libav_encoder_node.html#a708938af0daef8abd6d7346d8e7979ec":[11,0,5,36,0],
 "struct_gfx_1_1_libav_encoder_node.html#a708938af0daef8abd6d7346d8e7979ec":[12,0,20,48,0],
 "struct_gfx_1_1_libav_introspection.html":[12,0,20,49],
 "struct_gfx_1_1_libav_introspection.html":[11,0,5,37],
@@ -248,6 +249,5 @@ var NAVTREEINDEX21 =
 "struct_nodes_1_1_factor_oracle2_m_i_d_i_1_1_node.html":[12,0,39,13,0],
 "struct_nodes_1_1_factor_oracle2_m_i_d_i_1_1_node_1_1_state.html":[12,0,39,13,0,0],
 "struct_nodes_1_1_factor_oracle_1_1_node.html":[12,0,39,11,1],
-"struct_nodes_1_1_factor_oracle_1_1_node_1_1_state.html":[12,0,39,11,1,0],
-"struct_nodes_1_1_factor_oracle_1_1safe__vector.html":[12,0,39,11,2]
+"struct_nodes_1_1_factor_oracle_1_1_node_1_1_state.html":[12,0,39,11,1,0]
 };
