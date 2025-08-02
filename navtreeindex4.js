@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"_quantification_widget_8hpp_source.html":[13,0,0,1,1,13,18],
 "_quantifier_8hpp_source.html":[13,0,0,2,16,0,29],
 "_r_g_b_a_8hpp_source.html":[13,0,0,2,17,1,2,0,4],
 "_r_m_s_data_8hpp_source.html":[13,0,0,2,24,0,13],
@@ -208,7 +209,7 @@ var NAVTREEINDEX4 =
 "_sound_model_8hpp_source.html":[13,0,0,2,24,0,5,6],
 "_sound_presenter_8hpp_source.html":[13,0,0,2,24,0,5,7],
 "_sound_view_8hpp_source.html":[13,0,0,2,24,0,5,8],
-"_spammer_8hpp_source.html":[13,0,0,2,8,2,6],
+"_spammer_8hpp_source.html":[13,0,0,2,8,2,7],
 "_spectral_difference_8hpp_source.html":[13,0,0,2,5,0,13],
 "_spectral_difference___h_w_r_8hpp_source.html":[13,0,0,2,5,0,14],
 "_speed_slider_8hpp_source.html":[13,0,0,2,32,4,6,3,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "_subtype_variant_8hpp_source.html":[13,0,0,1,1,12,23],
 "_suil_8hpp_source.html":[13,0,0,2,22,0,6],
 "_summary_inspector_widget_8hpp_source.html":[13,0,0,2,32,4,6,6,0],
-"_swap_slots_8hpp_source.html":[13,0,0,2,32,4,1,3,0,3],
-"_sweeper_8hpp_source.html":[13,0,0,2,8,2,7]
+"_swap_slots_8hpp_source.html":[13,0,0,2,32,4,1,3,0,3]
 };

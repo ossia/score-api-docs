@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"_midi_note_8hpp_source.html":[13,0,0,2,25,0,5],
 "_midi_note_editor_8hpp_source.html":[13,0,0,2,25,0,6],
 "_midi_note_view_8hpp_source.html":[13,0,0,2,25,0,7],
 "_midi_outlet_item_8hpp_source.html":[13,0,0,2,12,0,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "_q_map_helper_8hpp_source.html":[13,0,0,1,1,12,19],
 "_q_rhi_gles2_8hpp_source.html":[13,0,0,1,1,4,1],
 "_qml_objects_8hpp_source.html":[13,0,0,2,20,0,2,7],
-"_qt_metatypes_8hpp_source.html":[13,0,0,2,20,0,2,8],
-"_quantification_widget_8hpp_source.html":[13,0,0,1,1,13,18]
+"_qt_metatypes_8hpp_source.html":[13,0,0,2,20,0,2,8]
 };

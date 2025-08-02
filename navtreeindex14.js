@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"class_widget_wrapper.html":[12,0,402],
 "class_writer.html":[12,0,404],
 "class_y_s_f_x_1_1_application_plugin.html":[12,0,66,1],
 "class_y_s_f_x_1_1_drop_handler.html":[12,0,66,2],
@@ -191,12 +192,12 @@ var NAVTREEINDEX14 =
 "classscore_1_1_entity_map.html":[12,0,52,96],
 "classscore_1_1_entity_map_inserter.html":[11,0,12,92],
 "classscore_1_1_entity_map_inserter.html":[12,0,52,97],
-"classscore_1_1_entity_map_inserter_3_01score_1_1_entity_3_01_t_01_4_00_01_ordered_01_4.html":[11,0,12,93],
 "classscore_1_1_entity_map_inserter_3_01score_1_1_entity_3_01_t_01_4_00_01_ordered_01_4.html":[12,0,52,98],
-"classscore_1_1_factory_interface___qt_interface.html":[11,0,12,95],
+"classscore_1_1_entity_map_inserter_3_01score_1_1_entity_3_01_t_01_4_00_01_ordered_01_4.html":[11,0,12,93],
 "classscore_1_1_factory_interface___qt_interface.html":[12,0,52,100],
-"classscore_1_1_factory_list___qt_interface.html":[11,0,12,96],
+"classscore_1_1_factory_interface___qt_interface.html":[11,0,12,95],
 "classscore_1_1_factory_list___qt_interface.html":[12,0,52,101],
+"classscore_1_1_factory_list___qt_interface.html":[11,0,12,96],
 "classscore_1_1_file_downloader.html":[11,0,12,97],
 "classscore_1_1_file_downloader.html":[12,0,52,102],
 "classscore_1_1_file_watch.html":[11,0,12,99],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "classscore_1_1_generic_component_factory.html":[12,0,52,113],
 "classscore_1_1_generic_component_factory.html":[11,0,12,108],
 "classscore_1_1_generic_component_factory.html#ab32b81560d26156294043bd89d0472f8":[12,0,52,113,0],
-"classscore_1_1_generic_component_factory.html#ab32b81560d26156294043bd89d0472f8":[11,0,12,108,0],
-"classscore_1_1_generic_component_factory_impl.html":[12,0,52,114]
+"classscore_1_1_generic_component_factory.html#ab32b81560d26156294043bd89d0472f8":[11,0,12,108,0]
 };

@@ -1070,8 +1070,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< model >", "classid__base__t.html", null ],
+    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1571,6 +1571,7 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "avnd_tools::Interpolator", "structavnd__tools_1_1_interpolator.html", null ],
     [ "Execution::interval_duration_data", "struct_execution_1_1interval__duration__data.html", null ],
     [ "RemoteControl::WS::IntervalMessages", "struct_remote_control_1_1_w_s_1_1_interval_messages.html", null ],
     [ "HierarchicalBaseScenario< Component_T, BaseScenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T >::IntervalPair", "struct_hierarchical_base_scenario_1_1_interval_pair.html", null ],

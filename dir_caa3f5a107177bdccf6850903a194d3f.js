@@ -5,6 +5,7 @@ var dir_caa3f5a107177bdccf6850903a194d3f =
     [ "AudioRecorder.hpp", "_audio_recorder_8hpp_source.html", null ],
     [ "Combiner.hpp", "_combiner_8hpp_source.html", null ],
     [ "DeviceRecorder.hpp", "_device_recorder_8hpp_source.html", null ],
+    [ "Interpolator.hpp", "_interpolator_8hpp_source.html", null ],
     [ "MIDISync.hpp", "_m_i_d_i_sync_8hpp_source.html", null ],
     [ "Spammer.hpp", "_spammer_8hpp_source.html", null ],
     [ "Sweeper.hpp", "_sweeper_8hpp_source.html", null ],

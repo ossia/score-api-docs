@@ -82,6 +82,7 @@ var NAVTREEINDEX2 =
 "_interpolation_presenter_8hpp_source.html":[13,0,0,2,32,1,3],
 "_interpolation_process_8hpp_source.html":[13,0,0,2,32,1,4],
 "_interpolation_view_8hpp_source.html":[13,0,0,2,32,1,5],
+"_interpolator_8hpp_source.html":[13,0,0,2,8,2,5],
 "_interval_8hpp_source.html":[13,0,0,2,31,1,2,0,1],
 "_interval_actions_8hpp_source.html":[13,0,0,2,32,4,0,1,0,1],
 "_interval_brace_8hpp_source.html":[13,0,0,2,32,4,3,5,2,0,0],
@@ -182,7 +183,7 @@ var NAVTREEINDEX2 =
 "_m_i_d_i_protocol_factory_8hpp_source.html":[13,0,0,2,29,0,10,3],
 "_m_i_d_i_protocol_settings_widget_8hpp_source.html":[13,0,0,2,29,0,10,4],
 "_m_i_d_i_specific_settings_8hpp_source.html":[13,0,0,2,29,0,10,5],
-"_m_i_d_i_sync_8hpp_source.html":[13,0,0,2,8,2,5],
+"_m_i_d_i_sync_8hpp_source.html":[13,0,0,2,8,2,6],
 "_m_i_d_i_utils_8hpp_source.html":[13,0,0,2,29,0,24],
 "_m_m_e_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,16],
 "_m_q_t_t_device_8hpp_source.html":[13,0,0,2,29,0,12,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "_midi_executor_8hpp_source.html":[13,0,0,2,25,0,3],
 "_midi_factory_8hpp_source.html":[13,0,0,2,25,0,4],
 "_midi_hi_res_8hpp_source.html":[13,0,0,2,16,0,24],
-"_midi_inlet_item_8hpp_source.html":[13,0,0,2,12,0,7],
-"_midi_note_8hpp_source.html":[13,0,0,2,25,0,5]
+"_midi_inlet_item_8hpp_source.html":[13,0,0,2,12,0,7]
 };

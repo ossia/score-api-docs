@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"classvst_1_1_application_plugin.html":[12,0,62,0],
 "classvst_1_1_application_plugin.html#a15cfa781b8b2423c4d4e24b9b6eac901":[12,0,62,0,0],
 "classvst_1_1_control_inlet.html":[12,0,62,1],
 "classvst_1_1_control_port_factory.html":[12,0,62,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "dir_a21f65ea51c30481725f808f1c3cda39.html":[13,0,0,2,3,4,11],
 "dir_a2378c0a9fe4bbda0879acd814d1c416.html":[13,0,0,2,0],
 "dir_a37792267ff7ff1d778fe23b0c33540e.html":[13,0,0,2,31],
-"dir_a3bf00e5057f054d725eb58d0ac7a803.html":[13,0,0,2,28,0,1],
-"dir_a4e452d551cac955bfa7c000022e9cdc.html":[13,0,0,2,32,4,7]
+"dir_a3bf00e5057f054d725eb58d0ac7a803.html":[13,0,0,2,28,0,1]
 };
