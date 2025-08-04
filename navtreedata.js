@@ -132,12 +132,12 @@ var NAVTREEINDEX =
 "namespacemembers.html",
 "score__plugin__curve_8hpp_source.html",
 "struct_gfx_1_1_libav_encoder_node.html",
-"struct_nodes_1_1_factor_oracle_1_1_node_1_1_state.html",
+"struct_nodes_1_1_factor_oracle_1_1_node.html",
 "struct_scenario_1_1_musical_grid_1_1timings.html",
-"struct_threedim_1_1_torus.html",
-"structscore_1_1_application_context.html#a63ad78c9bf47c24bb16edecf48eac2b3",
-"structscore_1_1_volume_slider.html",
-"structscore_1_1gfx_1_1_y_u_v422_decoder.html#a94950bc858149c7b3972087c4ede7fe2"
+"struct_threedim_1_1_t_used_types.html",
+"structscore_1_1_application_context.html#a5ab7160ce378a711b3f5b9f28d9ead14",
+"structscore_1_1_value_slider.html",
+"structscore_1_1gfx_1_1_y_u_v422_decoder.html#a6e1ec1b1b0e4736ce8f8b14918227b6d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

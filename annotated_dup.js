@@ -680,6 +680,7 @@ var annotated_dup =
       [ "GlobalAtExit", "struct_jit_1_1_global_at_exit.html", null ],
       [ "inlet_vis", "struct_jit_1_1inlet__vis.html", null ],
       [ "JitCompiler", "class_jit_1_1_jit_compiler.html", null ],
+      [ "located_sdk", "struct_jit_1_1located__sdk.html", null ],
       [ "outlet_vis", "struct_jit_1_1outlet__vis.html", null ],
       [ "RuntimeInterposePlugin", "class_jit_1_1_runtime_interpose_plugin.html", null ],
       [ "texgen_node", "class_jit_1_1texgen__node.html", null ],
