@@ -384,8 +384,8 @@ $(document).ready(function(){initNavTree('_jit_platform_8hpp_source.html',''); i
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>  <span class="comment">// needed because otherwise readerwriterqueue includes CoreFoundation.h ...</span></div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>  args.push_back(<span class="stringliteral">&quot;-DMOODYCAMEL_MAYBE_ALIGN_TO_CACHELINE=&quot;</span>);</div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="preprocessor">#define XSTR(X) #X</span></div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="preprocessor">#define XSTR(s) STR(s)</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="preprocessor">#define STR(s) #s</span></div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="preprocessor">#if defined(BOOST_ASIO_ENABLE_BUFFER_DEBUGGING)</span></div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>  args.push_back(<span class="stringliteral">&quot;-DBOOST_ASIO_ENABLE_BUFFER_DEBUGGING&quot;</span>);</div>
