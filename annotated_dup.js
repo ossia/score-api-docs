@@ -2729,6 +2729,7 @@ var annotated_dup =
     [ "PrettyName_k", "class_pretty_name__k.html", null ],
     [ "ProcessFlags_k", "class_process_flags__k.html", null ],
     [ "ProcessPanelGraphicsProxy", "class_process_panel_graphics_proxy.html", null ],
+    [ "ProcessPortVisitor", "struct_process_port_visitor.html", null ],
     [ "ProcessStateDataInterface", "class_process_state_data_interface.html", "class_process_state_data_interface" ],
     [ "ProgressBar", "class_progress_bar.html", null ],
     [ "PtrContainer", "class_ptr_container.html", null ],

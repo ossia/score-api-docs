@@ -133,8 +133,8 @@ var NAVTREEINDEX =
 "score__plugin__curve_8hpp_source.html",
 "struct_gfx_1_1_libav_encoder_node.html",
 "struct_nodes_1_1_factor_oracle_1_1_node.html",
-"struct_scenario_1_1_musical_grid_1_1timings.html",
-"struct_threedim_1_1_t_used_types.html",
+"struct_scenario_1_1_move_on_slot_handle___event.html",
+"struct_threedim_1_1_struc_synth_1_1worker.html",
 "structscore_1_1_application_context.html#a5ab7160ce378a711b3f5b9f28d9ead14",
 "structscore_1_1_value_slider.html",
 "structscore_1_1gfx_1_1_y_u_v422_decoder.html#a6e1ec1b1b0e4736ce8f8b14918227b6d"
