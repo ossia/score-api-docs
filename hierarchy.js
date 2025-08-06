@@ -1119,8 +1119,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -2079,8 +2079,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -2899,6 +2899,7 @@ var hierarchy =
       [ "Explorer::ListeningManager", "class_explorer_1_1_listening_manager.html", null ],
       [ "Faust::LibraryHandler", "class_faust_1_1_library_handler.html", null ],
       [ "FocusDispatcher", "class_focus_dispatcher.html", null ],
+      [ "Gfx::Filter::ShadertoyDownloader", "class_gfx_1_1_filter_1_1_shadertoy_downloader.html", null ],
       [ "Gfx::GfxContext", "class_gfx_1_1_gfx_context.html", null ],
       [ "Gfx::ShaderPreviewManager", "class_gfx_1_1_shader_preview_manager.html", null ],
       [ "GraphicsSceneToolPalette", "class_graphics_scene_tool_palette.html", [

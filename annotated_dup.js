@@ -444,7 +444,8 @@ var annotated_dup =
         [ "LibraryHandler", "class_gfx_1_1_filter_1_1_library_handler.html", null ],
         [ "Model", "class_gfx_1_1_filter_1_1_model.html", null ],
         [ "ProcessExecutorComponent", "class_gfx_1_1_filter_1_1_process_executor_component.html", "class_gfx_1_1_filter_1_1_process_executor_component" ],
-        [ "ProcessFactory", "struct_gfx_1_1_filter_1_1_process_factory.html", null ]
+        [ "ProcessFactory", "struct_gfx_1_1_filter_1_1_process_factory.html", null ],
+        [ "ShadertoyDownloader", "class_gfx_1_1_filter_1_1_shadertoy_downloader.html", null ]
       ] ],
       [ "GeometryFilter", null, [
         [ "DropHandler", "class_gfx_1_1_geometry_filter_1_1_drop_handler.html", null ],
