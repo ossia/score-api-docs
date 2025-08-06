@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.9.8"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>score: score::gfx::OutputNode Class Reference</title>
+        <title>score: score::gfx::PreviewNode Class Reference</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -76,7 +76,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('classscore_1_1gfx_1_1_output_node.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('classscore_1_1gfx_1_1_preview_node.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -103,79 +103,59 @@ $(document).ready(function(){initNavTree('classscore_1_1gfx_1_1_output_node.html
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="classscore_1_1gfx_1_1_output_node-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">score::gfx::OutputNode Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+<a href="classscore_1_1gfx_1_1_preview_node-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">score::gfx::PreviewNode Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)  
- <a href="classscore_1_1gfx_1_1_output_node.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for score::gfx::OutputNode:</div>
+Inheritance diagram for score::gfx::PreviewNode:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="classscore_1_1gfx_1_1_output_node.png" usemap="#score::gfx::OutputNode_map" alt=""/>
-  <map id="score::gfx::OutputNode_map" name="score::gfx::OutputNode_map">
-<area href="classscore_1_1gfx_1_1_node.html" title="Root data model for visual nodes." alt="score::gfx::Node" shape="rect" coords="405,56,557,80"/>
-<area href="struct_gfx_1_1_libav_encoder_node.html" alt="Gfx::LibavEncoderNode" shape="rect" coords="0,168,152,192"/>
-<area href="struct_gfx_1_1_sh4lt_output_node.html" alt="Gfx::Sh4ltOutputNode" shape="rect" coords="162,168,314,192"/>
-<area href="struct_gfx_1_1_shmdata_output_node.html" alt="Gfx::ShmdataOutputNode" shape="rect" coords="324,168,476,192"/>
-<area href="struct_gfx_1_1_spout_node.html" alt="Gfx::SpoutNode" shape="rect" coords="486,168,638,192"/>
-<area href="classscore_1_1gfx_1_1_preview_node.html" alt="score::gfx::PreviewNode" shape="rect" coords="648,168,800,192"/>
-<area href="structscore_1_1gfx_1_1_screen_node.html" title="This node is used for rendering to a score::gfx::Window." alt="score::gfx::ScreenNode" shape="rect" coords="810,168,962,192"/>
+  <img src="classscore_1_1gfx_1_1_preview_node.png" usemap="#score::gfx::PreviewNode_map" alt=""/>
+  <map id="score::gfx::PreviewNode_map" name="score::gfx::PreviewNode_map">
+<area href="classscore_1_1gfx_1_1_output_node.html" title="Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)" alt="score::gfx::OutputNode" shape="rect" coords="0,112,149,136"/>
+<area href="classscore_1_1gfx_1_1_node.html" title="Root data model for visual nodes." alt="score::gfx::Node" shape="rect" coords="0,56,149,80"/>
   </map>
 </div></div>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Base class for sink nodes (QWindow, spout, syphon, NDI output, ...) </p>
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_output_node_1_1_configuration.html">Configuration</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2cf7d00bfcc2224814a0d753c601fae2" id="r_a2cf7d00bfcc2224814a0d753c601fae2"><td class="memItemLeft" align="right" valign="top"><a id="a2cf7d00bfcc2224814a0d753c601fae2" name="a2cf7d00bfcc2224814a0d753c601fae2"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setRenderer</b> (std::shared_ptr&lt; <a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &gt;)=0</td></tr>
-<tr class="separator:a2cf7d00bfcc2224814a0d753c601fae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5d5cca385fc753bc714210a90079422" id="r_ac5d5cca385fc753bc714210a90079422"><td class="memItemLeft" align="right" valign="top"><a id="ac5d5cca385fc753bc714210a90079422" name="ac5d5cca385fc753bc714210a90079422"></a>
-virtual <a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>renderer</b> () const =0</td></tr>
-<tr class="separator:ac5d5cca385fc753bc714210a90079422"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f4a8ebac30efd36d51e81e2a03e5eda" id="r_a0f4a8ebac30efd36d51e81e2a03e5eda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscore_1_1gfx_1_1_output_node_renderer.html">OutputNodeRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_output_node.html#a0f4a8ebac30efd36d51e81e2a03e5eda">createRenderer</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;r) const noexcept override=0</td></tr>
-<tr class="memdesc:a0f4a8ebac30efd36d51e81e2a03e5eda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a renderer in a given context for this node.  <br /></td></tr>
-<tr class="separator:a0f4a8ebac30efd36d51e81e2a03e5eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1463638f6e2291a628e59a1ef6c60ee" id="r_ab1463638f6e2291a628e59a1ef6c60ee"><td class="memItemLeft" align="right" valign="top"><a id="ab1463638f6e2291a628e59a1ef6c60ee" name="ab1463638f6e2291a628e59a1ef6c60ee"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>startRendering</b> ()=0</td></tr>
-<tr class="separator:ab1463638f6e2291a628e59a1ef6c60ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6eef39613bf544ace160d4660ecadba" id="r_af6eef39613bf544ace160d4660ecadba"><td class="memItemLeft" align="right" valign="top"><a id="af6eef39613bf544ace160d4660ecadba" name="af6eef39613bf544ace160d4660ecadba"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>render</b> ()=0</td></tr>
-<tr class="separator:af6eef39613bf544ace160d4660ecadba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8203c8e5c60c5e6db8084252d423c088" id="r_a8203c8e5c60c5e6db8084252d423c088"><td class="memItemLeft" align="right" valign="top"><a id="a8203c8e5c60c5e6db8084252d423c088" name="a8203c8e5c60c5e6db8084252d423c088"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopRendering</b> ()=0</td></tr>
-<tr class="separator:a8203c8e5c60c5e6db8084252d423c088"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4dcdec8c56f35a1feb75e2612718591" id="r_ad4dcdec8c56f35a1feb75e2612718591"><td class="memItemLeft" align="right" valign="top"><a id="ad4dcdec8c56f35a1feb75e2612718591" name="ad4dcdec8c56f35a1feb75e2612718591"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>canRender</b> () const =0</td></tr>
-<tr class="separator:ad4dcdec8c56f35a1feb75e2612718591"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf2e4b540c4e95cb891b4764efeaed2d" id="r_aaf2e4b540c4e95cb891b4764efeaed2d"><td class="memItemLeft" align="right" valign="top"><a id="aaf2e4b540c4e95cb891b4764efeaed2d" name="aaf2e4b540c4e95cb891b4764efeaed2d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onRendererChange</b> ()=0</td></tr>
-<tr class="separator:aaf2e4b540c4e95cb891b4764efeaed2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27d9eb167f211318d4205bc15bc193b1" id="r_a27d9eb167f211318d4205bc15bc193b1"><td class="memItemLeft" align="right" valign="top"><a id="a27d9eb167f211318d4205bc15bc193b1" name="a27d9eb167f211318d4205bc15bc193b1"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>createOutput</b> (<a class="el" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a> graphicsApi, std::function&lt; void()&gt; onReady, std::function&lt; void()&gt; onUpdate, std::function&lt; void()&gt; onResize)=0</td></tr>
-<tr class="separator:a27d9eb167f211318d4205bc15bc193b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aced0563f2ef5b827e0af7ab971e69062" id="r_aced0563f2ef5b827e0af7ab971e69062"><td class="memItemLeft" align="right" valign="top"><a id="aced0563f2ef5b827e0af7ab971e69062" name="aced0563f2ef5b827e0af7ab971e69062"></a>
+<tr class="memitem:a1b474f780b681ee3bd358d05f4508edb" id="r_a1b474f780b681ee3bd358d05f4508edb"><td class="memItemLeft" align="right" valign="top"><a id="a1b474f780b681ee3bd358d05f4508edb" name="a1b474f780b681ee3bd358d05f4508edb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PreviewNode</b> (<a class="el" href="struct_gfx_1_1_shared_output_settings.html">Gfx::SharedOutputSettings</a> s, QRhi *rhi, QRhiRenderTarget *tgt, QRhiTexture *tex)</td></tr>
+<tr class="separator:a1b474f780b681ee3bd358d05f4508edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a212a0a951ce3833426bb4a271fe67c7b" id="r_a212a0a951ce3833426bb4a271fe67c7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_preview_node.html#a212a0a951ce3833426bb4a271fe67c7b">startRendering</a> () override</td></tr>
+<tr class="separator:a212a0a951ce3833426bb4a271fe67c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7755b77063d6a1a533d37ae4afd8a748" id="r_a7755b77063d6a1a533d37ae4afd8a748"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_preview_node.html#a7755b77063d6a1a533d37ae4afd8a748">onRendererChange</a> () override</td></tr>
+<tr class="separator:a7755b77063d6a1a533d37ae4afd8a748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdc248d3138e9e18a1595bcc34ff62b4" id="r_afdc248d3138e9e18a1595bcc34ff62b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_preview_node.html#afdc248d3138e9e18a1595bcc34ff62b4">render</a> () override</td></tr>
+<tr class="separator:afdc248d3138e9e18a1595bcc34ff62b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae333ea24f0f44efc4ba5fb173a6364e0" id="r_ae333ea24f0f44efc4ba5fb173a6364e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_preview_node.html#ae333ea24f0f44efc4ba5fb173a6364e0">canRender</a> () const override</td></tr>
+<tr class="separator:ae333ea24f0f44efc4ba5fb173a6364e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0235065c88fdcd589bae6a06a704b466" id="r_a0235065c88fdcd589bae6a06a704b466"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_preview_node.html#a0235065c88fdcd589bae6a06a704b466">stopRendering</a> () override</td></tr>
+<tr class="separator:a0235065c88fdcd589bae6a06a704b466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15c4a920dee09282ebd271b5f80e79d5" id="r_a15c4a920dee09282ebd271b5f80e79d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_preview_node.html#a15c4a920dee09282ebd271b5f80e79d5">setRenderer</a> (std::shared_ptr&lt; <a class="el" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a> &gt; r) override</td></tr>
+<tr class="separator:a15c4a920dee09282ebd271b5f80e79d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6edcd2ab37a104ee8b0adba369fe0fe" id="r_af6edcd2ab37a104ee8b0adba369fe0fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_preview_node.html#af6edcd2ab37a104ee8b0adba369fe0fe">renderer</a> () const override</td></tr>
+<tr class="separator:af6edcd2ab37a104ee8b0adba369fe0fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49a5abbbf36b6346af980b6b055d4a69" id="r_a49a5abbbf36b6346af980b6b055d4a69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_preview_node.html#a49a5abbbf36b6346af980b6b055d4a69">createOutput</a> (<a class="el" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">score::gfx::GraphicsApi</a> graphicsApi, std::function&lt; void()&gt; onReady, std::function&lt; void()&gt; onUpdate, std::function&lt; void()&gt; onResize) override</td></tr>
+<tr class="separator:a49a5abbbf36b6346af980b6b055d4a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4d5f2a82901daec31944efc9512460e" id="r_ab4d5f2a82901daec31944efc9512460e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_preview_node.html#ab4d5f2a82901daec31944efc9512460e">destroyOutput</a> () override</td></tr>
+<tr class="separator:ab4d5f2a82901daec31944efc9512460e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aeb3ed887878396bf8ce3198cfd11e1" id="r_a7aeb3ed887878396bf8ce3198cfd11e1"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="structscore_1_1gfx_1_1_render_state.html">score::gfx::RenderState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_preview_node.html#a7aeb3ed887878396bf8ce3198cfd11e1">renderState</a> () const override</td></tr>
+<tr class="separator:a7aeb3ed887878396bf8ce3198cfd11e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40dbcc5b0bccc35c26be0d4f76b9885f" id="r_a40dbcc5b0bccc35c26be0d4f76b9885f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscore_1_1gfx_1_1_output_node_renderer.html">score::gfx::OutputNodeRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_preview_node.html#a40dbcc5b0bccc35c26be0d4f76b9885f">createRenderer</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a> &amp;r) const noexcept override</td></tr>
+<tr class="memdesc:a40dbcc5b0bccc35c26be0d4f76b9885f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a renderer in a given context for this node.  <br /></td></tr>
+<tr class="separator:a40dbcc5b0bccc35c26be0d4f76b9885f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7d36eec38c145bded9b6ba41d7feb9b" id="r_ab7d36eec38c145bded9b6ba41d7feb9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_output_node_1_1_configuration.html">Configuration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_preview_node.html#ab7d36eec38c145bded9b6ba41d7feb9b">configuration</a> () const noexcept override</td></tr>
+<tr class="separator:ab7d36eec38c145bded9b6ba41d7feb9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d6820fb84fb8d507d7388bee955a13b" id="r_a0d6820fb84fb8d507d7388bee955a13b"><td class="memItemLeft" align="right" valign="top"><a id="a0d6820fb84fb8d507d7388bee955a13b" name="a0d6820fb84fb8d507d7388bee955a13b"></a>
+QRhiTexture *&#160;</td><td class="memItemRight" valign="bottom"><b>texture</b> () const noexcept</td></tr>
+<tr class="separator:a0d6820fb84fb8d507d7388bee955a13b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classscore_1_1gfx_1_1_output_node"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1gfx_1_1_output_node')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a></td></tr>
+<tr class="memitem:aced0563f2ef5b827e0af7ab971e69062 inherit pub_methods_classscore_1_1gfx_1_1_output_node" id="r_aced0563f2ef5b827e0af7ab971e69062"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>updateGraphicsAPI</b> (<a class="el" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a>)</td></tr>
-<tr class="separator:aced0563f2ef5b827e0af7ab971e69062"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64827181b78520818e4394443642aa9f" id="r_a64827181b78520818e4394443642aa9f"><td class="memItemLeft" align="right" valign="top"><a id="a64827181b78520818e4394443642aa9f" name="a64827181b78520818e4394443642aa9f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>destroyOutput</b> ()=0</td></tr>
-<tr class="separator:a64827181b78520818e4394443642aa9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c167f584c2f36b5fc325005c1fc0524" id="r_a0c167f584c2f36b5fc325005c1fc0524"><td class="memItemLeft" align="right" valign="top"><a id="a0c167f584c2f36b5fc325005c1fc0524" name="a0c167f584c2f36b5fc325005c1fc0524"></a>
-virtual std::shared_ptr&lt; <a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>renderState</b> () const =0</td></tr>
-<tr class="separator:a0c167f584c2f36b5fc325005c1fc0524"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fda79789335d4a863e95539b73b0721" id="r_a2fda79789335d4a863e95539b73b0721"><td class="memItemLeft" align="right" valign="top"><a id="a2fda79789335d4a863e95539b73b0721" name="a2fda79789335d4a863e95539b73b0721"></a>
-virtual <a class="el" href="structscore_1_1gfx_1_1_output_node_1_1_configuration.html">Configuration</a>&#160;</td><td class="memItemRight" valign="bottom"><b>configuration</b> () const noexcept=0</td></tr>
-<tr class="separator:a2fda79789335d4a863e95539b73b0721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aced0563f2ef5b827e0af7ab971e69062 inherit pub_methods_classscore_1_1gfx_1_1_output_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1gfx_1_1_node"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1gfx_1_1_node')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a></td></tr>
 <tr class="memitem:a5eefadb34fb1f4cc12c50952550c7708 inherit pub_methods_classscore_1_1gfx_1_1_node" id="r_a5eefadb34fb1f4cc12c50952550c7708"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>Node</b> (const <a class="el" href="classscore_1_1gfx_1_1_node.html">Node</a> &amp;)=delete</td></tr>
@@ -267,8 +247,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>addedToGraph</b> {}</
 <tr class="separator:a2c822b931b169c3225586c6c90150855 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0f4a8ebac30efd36d51e81e2a03e5eda" name="a0f4a8ebac30efd36d51e81e2a03e5eda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f4a8ebac30efd36d51e81e2a03e5eda">&#9670;&#160;</a></span>createRenderer()</h2>
+<a id="ae333ea24f0f44efc4ba5fb173a6364e0" name="ae333ea24f0f44efc4ba5fb173a6364e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae333ea24f0f44efc4ba5fb173a6364e0">&#9670;&#160;</a></span>canRender()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -277,31 +257,350 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>addedToGraph</b> {}</
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classscore_1_1gfx_1_1_output_node_renderer.html">OutputNodeRenderer</a> * score::gfx::OutputNode::createRenderer </td>
+          <td class="memname">bool score::gfx::PreviewNode::canRender </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a>.</p>
+
+</div>
+</div>
+<a id="ab7d36eec38c145bded9b6ba41d7feb9b" name="ab7d36eec38c145bded9b6ba41d7feb9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7d36eec38c145bded9b6ba41d7feb9b">&#9670;&#160;</a></span>configuration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structscore_1_1gfx_1_1_output_node_1_1_configuration.html">score::gfx::OutputNode::Configuration</a> score::gfx::PreviewNode::configuration </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a>.</p>
+
+</div>
+</div>
+<a id="a49a5abbbf36b6346af980b6b055d4a69" name="a49a5abbbf36b6346af980b6b055d4a69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49a5abbbf36b6346af980b6b055d4a69">&#9670;&#160;</a></span>createOutput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::PreviewNode::createOutput </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">score::gfx::GraphicsApi</a>&#160;</td>
+          <td class="paramname"><em>graphicsApi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
+          <td class="paramname"><em>onReady</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
+          <td class="paramname"><em>onUpdate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
+          <td class="paramname"><em>onResize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a>.</p>
+
+</div>
+</div>
+<a id="a40dbcc5b0bccc35c26be0d4f76b9885f" name="a40dbcc5b0bccc35c26be0d4f76b9885f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40dbcc5b0bccc35c26be0d4f76b9885f">&#9670;&#160;</a></span>createRenderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classscore_1_1gfx_1_1_output_node_renderer.html">score::gfx::OutputNodeRenderer</a> * score::gfx::PreviewNode::createRenderer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a> &amp;&#160;</td>
           <td class="paramname"><em>r</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Create a renderer in a given context for this node. </p>
 
-<p>Implements <a class="el" href="classscore_1_1gfx_1_1_node.html#afada9ff513c4820efe50ee92c85364f6">score::gfx::Node</a>.</p>
+<p>Implements <a class="el" href="classscore_1_1gfx_1_1_output_node.html#a0f4a8ebac30efd36d51e81e2a03e5eda">score::gfx::OutputNode</a>.</p>
 
-<p>Implemented in <a class="el" href="structscore_1_1gfx_1_1_screen_node.html#a7057c698de89ebde92bfdc38bfa01352">score::gfx::ScreenNode</a>, <a class="el" href="classscore_1_1gfx_1_1_preview_node.html#a40dbcc5b0bccc35c26be0d4f76b9885f">score::gfx::PreviewNode</a>, <a class="el" href="struct_gfx_1_1_libav_encoder_node.html#a708938af0daef8abd6d7346d8e7979ec">Gfx::LibavEncoderNode</a>, <a class="el" href="struct_gfx_1_1_sh4lt_output_node.html#a4d413086a4714d9cd7948db980fc2ef6">Gfx::Sh4ltOutputNode</a>, <a class="el" href="struct_gfx_1_1_shmdata_output_node.html#af6b92929fd31630ac657dca9c682bb96">Gfx::ShmdataOutputNode</a>, and <a class="el" href="struct_gfx_1_1_spout_node.html#a28c7d5311530845d77f105f53ae58cd8">Gfx::SpoutNode</a>.</p>
+</div>
+</div>
+<a id="ab4d5f2a82901daec31944efc9512460e" name="ab4d5f2a82901daec31944efc9512460e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4d5f2a82901daec31944efc9512460e">&#9670;&#160;</a></span>destroyOutput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::PreviewNode::destroyOutput </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a>.</p>
+
+</div>
+</div>
+<a id="a7755b77063d6a1a533d37ae4afd8a748" name="a7755b77063d6a1a533d37ae4afd8a748"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7755b77063d6a1a533d37ae4afd8a748">&#9670;&#160;</a></span>onRendererChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::PreviewNode::onRendererChange </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a>.</p>
+
+</div>
+</div>
+<a id="afdc248d3138e9e18a1595bcc34ff62b4" name="afdc248d3138e9e18a1595bcc34ff62b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdc248d3138e9e18a1595bcc34ff62b4">&#9670;&#160;</a></span>render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::PreviewNode::render </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a>.</p>
+
+</div>
+</div>
+<a id="af6edcd2ab37a104ee8b0adba369fe0fe" name="af6edcd2ab37a104ee8b0adba369fe0fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6edcd2ab37a104ee8b0adba369fe0fe">&#9670;&#160;</a></span>renderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a> * score::gfx::PreviewNode::renderer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a>.</p>
+
+</div>
+</div>
+<a id="a7aeb3ed887878396bf8ce3198cfd11e1" name="a7aeb3ed887878396bf8ce3198cfd11e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7aeb3ed887878396bf8ce3198cfd11e1">&#9670;&#160;</a></span>renderState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="structscore_1_1gfx_1_1_render_state.html">score::gfx::RenderState</a> &gt; score::gfx::PreviewNode::renderState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a>.</p>
+
+</div>
+</div>
+<a id="a15c4a920dee09282ebd271b5f80e79d5" name="a15c4a920dee09282ebd271b5f80e79d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15c4a920dee09282ebd271b5f80e79d5">&#9670;&#160;</a></span>setRenderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::PreviewNode::setRenderer </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a> &gt;&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a>.</p>
+
+</div>
+</div>
+<a id="a212a0a951ce3833426bb4a271fe67c7b" name="a212a0a951ce3833426bb4a271fe67c7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a212a0a951ce3833426bb4a271fe67c7b">&#9670;&#160;</a></span>startRendering()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::PreviewNode::startRendering </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a>.</p>
+
+</div>
+</div>
+<a id="a0235065c88fdcd589bae6a06a704b466" name="a0235065c88fdcd589bae6a06a704b466"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0235065c88fdcd589bae6a06a704b466">&#9670;&#160;</a></span>stopRendering()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::PreviewNode::stopRendering </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="_output_node_8hpp_source.html">OutputNode.hpp</a></li>
-<li><b>OutputNode.cpp</b></li>
+<li><a class="el" href="_preview_node_8hpp_source.html">PreviewNode.hpp</a></li>
+<li><b>PreviewNode.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

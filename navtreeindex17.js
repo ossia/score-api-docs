@@ -1,5 +1,13 @@
 var NAVTREEINDEX17 =
 {
+"classvst3_1_1_v_s_t_control_port_factory.html":[12,0,63,19],
+"classvst3_1_1_v_s_t_effect_item.html":[12,0,63,21],
+"classvst3_1_1_v_s_t_graphics_slider.html":[12,0,63,23],
+"classvst3_1_1_window.html":[12,0,63,24],
+"classvst3_1_1param__changes.html":[12,0,63,10],
+"classvst3_1_1param__queue.html":[12,0,63,11],
+"classvst3_1_1vst__node.html":[12,0,63,17],
+"classvst3_1_1vst__node__base.html":[12,0,63,18],
 "classvst_1_1_application_plugin.html":[12,0,62,0],
 "classvst_1_1_application_plugin.html#a15cfa781b8b2423c4d4e24b9b6eac901":[12,0,62,0,0],
 "classvst_1_1_control_inlet.html":[12,0,62,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX17 =
 "dir_9ce6fb9ac068741c513ecbdb334f43f6.html":[13,0,0,2,32,4,1,6],
 "dir_9dc403dfeea06d03f915de27a7a2ab94.html":[13,0,0,1,0,0],
 "dir_9f62ac64b904fbfc63d0b13e2b5bcb7c.html":[13,0,0,2,13,0,1,0,0],
-"dir_9f7222c3f74921e97bde98de65c0f7f1.html":[13,0,0,2,7],
-"dir_a031fcc4dd894a9e007903792b2cf2d6.html":[13,0,0,2,31,1],
-"dir_a0a8c2553647f3463b902fa0afae1686.html":[13,0,0,2,24,0,5],
-"dir_a14b680e38cf37a783223798640263d9.html":[13,0,0,2,13,0,0,2],
-"dir_a1e1ead25d3a7fabb7a2bf6eb9fd8ae3.html":[13,0,0,2,39,0],
-"dir_a21f65ea51c30481725f808f1c3cda39.html":[13,0,0,2,3,4,11],
-"dir_a2378c0a9fe4bbda0879acd814d1c416.html":[13,0,0,2,0],
-"dir_a37792267ff7ff1d778fe23b0c33540e.html":[13,0,0,2,31],
-"dir_a3bf00e5057f054d725eb58d0ac7a803.html":[13,0,0,2,28,0,1]
+"dir_9f7222c3f74921e97bde98de65c0f7f1.html":[13,0,0,2,7]
 };

@@ -1070,8 +1070,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< model >", "classid__base__t.html", null ],
+    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1119,8 +1119,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1865,6 +1865,7 @@ var hierarchy =
       [ "score::gfx::GeometryFilterNodeRenderer", "structscore_1_1gfx_1_1_geometry_filter_node_renderer.html", null ],
       [ "score::gfx::OutputNodeRenderer", "classscore_1_1gfx_1_1_output_node_renderer.html", [
         [ "Gfx::InvertYRenderer", "class_gfx_1_1_invert_y_renderer.html", null ],
+        [ "score::gfx::PreviewRenderer", "classscore_1_1gfx_1_1_preview_renderer.html", null ],
         [ "score::gfx::ScreenNode::BasicRenderer", "classscore_1_1gfx_1_1_screen_node_1_1_basic_renderer.html", null ],
         [ "score::gfx::ScreenNode::ScaledRenderer", "classscore_1_1gfx_1_1_screen_node_1_1_scaled_renderer.html", null ]
       ] ],
@@ -3367,6 +3368,7 @@ var hierarchy =
           [ "Gfx::Sh4ltOutputNode", "struct_gfx_1_1_sh4lt_output_node.html", null ],
           [ "Gfx::ShmdataOutputNode", "struct_gfx_1_1_shmdata_output_node.html", null ],
           [ "Gfx::SpoutNode", "struct_gfx_1_1_spout_node.html", null ],
+          [ "score::gfx::PreviewNode", "classscore_1_1gfx_1_1_preview_node.html", null ],
           [ "score::gfx::ScreenNode", "structscore_1_1gfx_1_1_screen_node.html", null ]
         ] ],
         [ "score::gfx::ProcessNode", "classscore_1_1gfx_1_1_process_node.html", [

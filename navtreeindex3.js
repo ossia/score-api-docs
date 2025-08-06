@@ -180,6 +180,7 @@ var NAVTREEINDEX3 =
 "_preset_item_model_8hpp_source.html":[13,0,0,2,21,0,6],
 "_preset_list_view_8hpp_source.html":[13,0,0,2,21,0,7],
 "_pretty_port_name_8hpp_source.html":[13,0,0,2,3,4,3,18],
+"_preview_node_8hpp_source.html":[13,0,0,2,17,1,2,15],
 "_primitive_8hpp_source.html":[13,0,0,2,35,0,7],
 "_process_2_execution_2_process_component_8hpp_source.html":[13,0,0,2,3,4,5,0],
 "_process_2_process_component_8hpp_source.html":[13,0,0,2,3,4,34],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "_q_map_helper_8hpp.html":[13,0,0,1,1,12,19],
 "_q_map_helper_8hpp_source.html":[13,0,0,1,1,12,19],
 "_q_rhi_gles2_8hpp_source.html":[13,0,0,1,1,4,1],
-"_qml_objects_8hpp_source.html":[13,0,0,2,20,0,2,7],
-"_qt_metatypes_8hpp_source.html":[13,0,0,2,20,0,2,8]
+"_qml_objects_8hpp_source.html":[13,0,0,2,20,0,2,7]
 };

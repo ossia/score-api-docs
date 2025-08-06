@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('_gfx_context_8hpp_source.html',''); in
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="keywordtype">void</span> timerEvent(QTimerEvent*) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; m_context;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  int32_t index{};</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  std::atomic_int32_t index{};</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  ossia::hash_map&lt;int32_t, NodePtr&gt; nodes;</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <a class="code hl_struct" href="structscore_1_1gfx_1_1_graph.html">score::gfx::Graph</a>* m_graph{};</div>

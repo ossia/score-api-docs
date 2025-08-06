@@ -15,6 +15,7 @@ var dir_5abfc617cad4cedfbf70c3dd9e517c90 =
     [ "NodeRenderer.hpp", "_node_renderer_8hpp_source.html", null ],
     [ "OutputNode.hpp", "_output_node_8hpp_source.html", null ],
     [ "PhongNode.hpp", "_phong_node_8hpp_source.html", null ],
+    [ "PreviewNode.hpp", "_preview_node_8hpp_source.html", null ],
     [ "RenderedISFNode.hpp", "_rendered_i_s_f_node_8hpp_source.html", null ],
     [ "RenderList.hpp", "_render_list_8hpp_source.html", null ],
     [ "RenderState.hpp", "_render_state_8hpp_source.html", null ],

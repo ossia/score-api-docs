@@ -266,6 +266,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structscore_1_1gfx_1_1_port.html" title="Port of a score::gfx::Node.">Port</a> of a <a class="el" href="classscore_1_1gfx_1_1_node.html" title="Root data model for visual nodes.">score::gfx::Node</a>.  <a href="structscore_1_1gfx_1_1_port.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_preview_node.html">PreviewNode</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_preview_renderer.html">PreviewRenderer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_process_node.html">ProcessNode</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common base class for nodes that map to score processes.  <a href="classscore_1_1gfx_1_1_process_node.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -448,6 +452,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>defaultRenderPass</b>
 <tr class="memitem:a0a58880047dd23a1e25e529168536d2b" id="r_a0a58880047dd23a1e25e529168536d2b"><td class="memItemLeft" align="right" valign="top"><a id="a0a58880047dd23a1e25e529168536d2b" name="a0a58880047dd23a1e25e529168536d2b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>quadRenderPass</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, const <a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> &amp;bufs, QRhiCommandBuffer &amp;cb, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge, PassMap &amp;passes)</td></tr>
 <tr class="separator:a0a58880047dd23a1e25e529168536d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f26bc5652db9edccd8905a5d0b2eae" id="r_ac6f26bc5652db9edccd8905a5d0b2eae"><td class="memItemLeft" align="right" valign="top"><a id="ac6f26bc5652db9edccd8905a5d0b2eae" name="ac6f26bc5652db9edccd8905a5d0b2eae"></a>
+std::shared_ptr&lt; <a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>importRenderState</b> (QSize sz, QRhi *rhi)</td></tr>
+<tr class="separator:ac6f26bc5652db9edccd8905a5d0b2eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fe61425ca7d2507b2f06e98bf2fd789" id="r_a8fe61425ca7d2507b2f06e98bf2fd789"><td class="memItemLeft" align="right" valign="top"><a id="a8fe61425ca7d2507b2f06e98bf2fd789" name="a8fe61425ca7d2507b2f06e98bf2fd789"></a>
 std::shared_ptr&lt; <a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createRenderState</b> (<a class="el" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a> graphicsApi, QSize sz, QWindow *window)</td></tr>
 <tr class="separator:a8fe61425ca7d2507b2f06e98bf2fd789"><td class="memSeparator" colspan="2">&#160;</td></tr>

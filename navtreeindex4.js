@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"_qt_metatypes_8hpp_source.html":[13,0,0,2,20,0,2,8],
 "_quantification_widget_8hpp_source.html":[13,0,0,1,1,13,18],
 "_quantifier_8hpp_source.html":[13,0,0,2,16,0,29],
 "_r_g_b_a_8hpp_source.html":[13,0,0,2,17,1,2,0,4],
@@ -36,9 +37,9 @@ var NAVTREEINDEX4 =
 "_remove_slot_from_rack_8hpp_source.html":[13,0,0,2,32,4,1,3,0,2],
 "_remove_state_process_8hpp_source.html":[13,0,0,2,32,4,1,7,4],
 "_remove_trigger_8hpp_source.html":[13,0,0,2,32,4,1,8,2],
-"_render_list_8hpp_source.html":[13,0,0,2,17,1,2,16],
-"_render_state_8hpp_source.html":[13,0,0,2,17,1,2,17],
-"_rendered_i_s_f_node_8hpp_source.html":[13,0,0,2,17,1,2,15],
+"_render_list_8hpp_source.html":[13,0,0,2,17,1,2,17],
+"_render_state_8hpp_source.html":[13,0,0,2,17,1,2,18],
+"_rendered_i_s_f_node_8hpp_source.html":[13,0,0,2,17,1,2,16],
 "_replace_addresses_8hpp_source.html":[13,0,0,2,32,4,1,13],
 "_replace_device_8hpp_source.html":[13,0,0,2,13,0,0,6],
 "_rescale_8hpp_source.html":[13,0,0,2,24,2,5],
@@ -50,7 +51,7 @@ var NAVTREEINDEX4 =
 "_s_d_l_interface_8hpp_source.html":[13,0,0,2,6,0,19],
 "_safe_cast_8hpp_source.html":[13,0,0,1,1,12,22],
 "_safe_q_application_8hpp_source.html":[13,0,0,1,0,0,7],
-"_scale_8hpp_source.html":[13,0,0,2,17,1,2,18],
+"_scale_8hpp_source.html":[13,0,0,2,17,1,2,19],
 "_scale_notes_8hpp_source.html":[13,0,0,2,25,0,0,4],
 "_scenario_2_document_2_components_2_interval_component_8hpp_source.html":[13,0,0,2,32,4,3,2,0],
 "_scenario_2_document_2_components_2_scenario_component_8hpp_source.html":[13,0,0,2,32,4,3,2,1],
@@ -112,7 +113,7 @@ var NAVTREEINDEX4 =
 "_score_device_loader_8hpp_source.html":[13,0,0,2,0,0,2,1],
 "_score_interfaces.html":[7],
 "_score_layer_8hpp_source.html":[13,0,0,2,8,3,21],
-"_screen_node_8hpp_source.html":[13,0,0,2,17,1,2,19],
+"_screen_node_8hpp_source.html":[13,0,0,2,17,1,2,20],
 "_script_edit_command_8hpp_source.html":[13,0,0,2,32,4,1,15],
 "_script_editor_8hpp_source.html":[13,0,0,2,3,4,10,1],
 "_script_process_8hpp_source.html":[13,0,0,2,3,4,10,2],
@@ -172,7 +173,7 @@ var NAVTREEINDEX4 =
 "_settings_view_8hpp_source.html":[13,0,0,1,0,7,2],
 "_sh4lt_input_device_8hpp_source.html":[13,0,0,2,17,1,6,0],
 "_sh4lt_output_device_8hpp_source.html":[13,0,0,2,17,1,6,1],
-"_shader_cache_8hpp_source.html":[13,0,0,2,17,1,2,20],
+"_shader_cache_8hpp_source.html":[13,0,0,2,17,1,2,21],
 "_shader_program_8hpp_source.html":[13,0,0,2,17,1,25],
 "_shared_input_settings_8hpp_source.html":[13,0,0,2,17,1,26],
 "_shared_output_settings_8hpp_source.html":[13,0,0,2,17,1,27],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "_style_sheets_8hpp_source.html":[13,0,0,1,1,13,26],
 "_subtype_variant_8hpp_source.html":[13,0,0,1,1,12,23],
 "_suil_8hpp_source.html":[13,0,0,2,22,0,6],
-"_summary_inspector_widget_8hpp_source.html":[13,0,0,2,32,4,6,6,0],
-"_swap_slots_8hpp_source.html":[13,0,0,2,32,4,1,3,0,3]
+"_summary_inspector_widget_8hpp_source.html":[13,0,0,2,32,4,6,6,0]
 };
