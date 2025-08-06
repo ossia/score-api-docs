@@ -595,7 +595,7 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_executor
 <div class="line"><a id="l00480" name="l00480"></a><span class="lineno">  480</span>        {</div>
 <div class="line"><a id="l00481" name="l00481"></a><span class="lineno">  481</span>          self-&gt;in_edit(</div>
 <div class="line"><a id="l00482" name="l00482"></a><span class="lineno">  482</span>              [proc = QPointer{&amp;self-&gt;process()}, bb = std::move(b)]() <span class="keyword">mutable</span> {</div>
-<div class="line"><a id="l00483" name="l00483"></a><span class="lineno">  483</span>            <span class="keywordflow">if</span>(proc-&gt;to_ui)</div>
+<div class="line"><a id="l00483" name="l00483"></a><span class="lineno">  483</span>            <span class="keywordflow">if</span>(proc &amp;&amp; proc-&gt;to_ui)</div>
 <div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span>              <a class="code hl_struct" href="structoscr_1_1_message_bus_sender.html">MessageBusSender</a>{proc-&gt;to_ui}(std::move(bb));</div>
 <div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>          });</div>
 <div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>        }</div>
@@ -604,7 +604,7 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_executor
 <div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>          self-&gt;in_edit(</div>
 <div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>              [proc = QPointer{&amp;self-&gt;process()},</div>
 <div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>               bb = std::make_unique&lt;std::decay_t&lt;T&gt;&gt;(std::move(b))]() <span class="keyword">mutable</span> {</div>
-<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>            <span class="keywordflow">if</span>(proc-&gt;to_ui)</div>
+<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>            <span class="keywordflow">if</span>(proc &amp;&amp; proc-&gt;to_ui)</div>
 <div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>              <a class="code hl_struct" href="structoscr_1_1_message_bus_sender.html">MessageBusSender</a>{proc-&gt;to_ui}(*std::move(bb));</div>
 <div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>          });</div>
 <div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>        }</div>
