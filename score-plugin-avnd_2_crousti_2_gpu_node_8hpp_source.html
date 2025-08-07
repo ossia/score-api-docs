@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_gpu_node
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keyword">using </span>texture_inputs = avnd::texture_input_introspection&lt;Node_T&gt;;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keyword">using </span>texture_outputs = avnd::texture_output_introspection&lt;Node_T&gt;;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  std::vector&lt;Node_T&gt; states;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  std::vector&lt;std::shared_ptr&lt;Node_T&gt;&gt; states;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <a class="code hl_struct" href="structscore_1_1gfx_1_1_message.html">score::gfx::Message</a> m_last_message{};</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  ossia::small_flat_map&lt;const score::gfx::Port*, score::gfx::TextureRenderTarget, 2&gt;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>      m_rts;</div>
@@ -313,7 +313,7 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_gpu_node
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; state : states)</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>      {</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        parent.processControlIn(</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            *<span class="keyword">this</span>, state, m_last_message, parent.last_message, parent.m_ctx);</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            *<span class="keyword">this</span>, *state, m_last_message, parent.last_message, parent.m_ctx);</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        state.prepare();</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>      }</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    }</div>
@@ -341,7 +341,7 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_gpu_node
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>      <span class="keyword">auto</span> rt = renderer.<a class="code hl_function" href="classscore_1_1gfx_1_1_render_list.html#a98d894ff589d1fa80d36a99e59801e8f">renderTargetForOutput</a>(*edge);</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>      <span class="keywordflow">if</span>(rt.renderTarget)</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>      {</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        states.push_back({});</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        states.push_back(std::make_shared&lt;Node_T&gt;());</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        prepareNewState(states.back(), parent);</div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        <span class="keyword">auto</span> ps = createRenderPipeline(renderer, rt);</div>
@@ -368,7 +368,7 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_gpu_node
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    <span class="comment">// First copy all the &quot;public&quot; uniforms to their space in memory</span></div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    <span class="keywordflow">if</span>(states.size() &gt; 0)</div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    {</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>      <span class="keyword">auto</span>&amp; state = states[0];</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>      <span class="keyword">auto</span>&amp; state = *states[0];</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>      avnd::gpu_uniform_introspection&lt;Node_T&gt;::for_all(</div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>          avnd::get_inputs&lt;Node_T&gt;(state), [&amp;]&lt;avnd::uniform_port F&gt;(<span class="keyword">const</span> F&amp; t) {</div>
@@ -398,7 +398,7 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_gpu_node
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>      <span class="comment">//SCORE_SOFT_ASSERT(state.size() == edges);</span></div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>      <span class="keywordflow">for</span>(<span class="keywordtype">int</span> k = 0; k &lt; states.size(); k++)</div>
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>      {</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>        <span class="keyword">auto</span>&amp; state = states[k];</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>        <span class="keyword">auto</span>&amp; state = *states[k];</div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>        <span class="keyword">auto</span>&amp; pass = m_p[k].second;</div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        <span class="keywordtype">bool</span> srb_touched{<span class="keyword">false</span>};</div>
@@ -439,7 +439,7 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_gpu_node
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    {</div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; state : states)</div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>      {</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; promise : state.release())</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; promise : state-&gt;release())</div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>        {</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>          gpp::qrhi::handle_release handler{*r.<a class="code hl_variable" href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">state</a>.rhi};</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>          visit(handler, promise.current_command);</div>
@@ -499,7 +499,7 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_gpu_node
 <div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; state : states)</div>
 <div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>    {</div>
 <div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>      parent.processControlIn(</div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>          *<span class="keyword">this</span>, state, m_last_message, parent.last_message, parent.m_ctx);</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>          *<span class="keyword">this</span>, *state, m_last_message, parent.last_message, parent.m_ctx);</div>
 <div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>    }</div>
 <div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>  }</div>
 <div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span> </div>
@@ -514,7 +514,7 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_gpu_node
 <div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span> </div>
 <div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>    <span class="comment">// Copy the data to the model node</span></div>
 <div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>    <span class="keywordflow">if</span>(!this-&gt;states.empty())</div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>      parent.processControlOut(this-&gt;states[0]);</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>      parent.processControlOut(*this-&gt;states[0]);</div>
 <div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>  }</div>
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>};</div>
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span> </div>
