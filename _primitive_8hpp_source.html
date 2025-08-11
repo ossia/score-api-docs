@@ -150,8 +150,8 @@ $(document).ready(function(){initNavTree('_primitive_8hpp_source.html',''); init
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_struct" href="struct_threedim_1_1_position_control.html">PositionControl</a> position;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_struct" href="struct_threedim_1_1_rotation_control.html">RotationControl</a> rotation;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_struct" href="struct_threedim_1_1_scale_control.html">ScaleControl</a> scale;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    halp::spinbox_i32&lt;<span class="stringliteral">&quot;H divs.&quot;</span>, halp::range{1, 1000, 16}&gt; hdivs;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    halp::spinbox_i32&lt;<span class="stringliteral">&quot;V divs.&quot;</span>, halp::range{1, 1000, 16}&gt; vdivs;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    struct : halp::spinbox_i32&lt;<span class="stringliteral">&quot;H divs.&quot;</span>, halp::range{2, 200, 16}&gt;, <a class="code hl_struct" href="struct_threedim_1_1_update.html">Update</a> {} hdivs;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    struct : halp::spinbox_i32&lt;<span class="stringliteral">&quot;V divs.&quot;</span>, halp::range{2, 200, 16}&gt;, <a class="code hl_struct" href="struct_threedim_1_1_update.html">Update</a> {} vdivs;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  } inputs;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keyword">struct</span></div>
@@ -290,12 +290,12 @@ $(document).ready(function(){initNavTree('_primitive_8hpp_source.html',''); init
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <a class="code hl_struct" href="struct_threedim_1_1_rotation_control.html">RotationControl</a> rotation;</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <a class="code hl_struct" href="struct_threedim_1_1_scale_control.html">ScaleControl</a> scale;</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    struct</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        : halp::hslider_i32&lt;<span class="stringliteral">&quot;Slices&quot;</span>, halp::range{1, 1000, 64}&gt;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        : halp::hslider_i32&lt;<span class="stringliteral">&quot;Slices&quot;</span>, halp::range{1, 64, 16}&gt;</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        , <a class="code hl_struct" href="struct_threedim_1_1_update.html">Update</a></div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    {</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    } slices;</div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    struct</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        : halp::hslider_i32&lt;<span class="stringliteral">&quot;Stacks&quot;</span>, halp::range{1, 1000, 64}&gt;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        : halp::hslider_i32&lt;<span class="stringliteral">&quot;Stacks&quot;</span>, halp::range{1, 64, 16}&gt;</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        , <a class="code hl_struct" href="struct_threedim_1_1_update.html">Update</a></div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    {</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    } stacks;</div>
