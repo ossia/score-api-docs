@@ -314,7 +314,7 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_executor
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>  {</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="preprocessor">#if SCORE_PLUGIN_GFX</span></div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <span class="comment">// FIXME net context for gpu node ?</span></div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <span class="keyword">const</span> <span class="keyword">auto</span> <span class="keywordtype">id</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <span class="keyword">const</span> int64_t <span class="keywordtype">id</span></div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        = std::hash&lt;ObjectPath&gt;{}(<a class="code hl_class" href="class_path.html">Path&lt;Process::ProcessModel&gt;</a>{element}.unsafePath());</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keyword">auto</span>&amp; gfx_exec = ctx.doc.plugin&lt;<a class="code hl_class" href="class_gfx_1_1_document_plugin.html">Gfx::DocumentPlugin</a>&gt;().exec;</div>
