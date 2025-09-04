@@ -16,7 +16,7 @@ var namespace_local_tree =
     [ "ProcessComponentFactory", "class_local_tree_1_1_process_component_factory.html", null ],
     [ "ProcessComponentFactory_T", "class_local_tree_1_1_process_component_factory___t.html", null ],
     [ "ProcessComponentFactoryList", "class_local_tree_1_1_process_component_factory_list.html", null ],
-    [ "PropertyWrapper", "struct_local_tree_1_1_property_wrapper.html", null ],
+    [ "PropertyWrapper", "struct_local_tree_1_1_property_wrapper.html", "struct_local_tree_1_1_property_wrapper" ],
     [ "ScenarioComponentBase", "class_local_tree_1_1_scenario_component_base.html", null ],
     [ "SetPropertyWrapper", "struct_local_tree_1_1_set_property_wrapper.html", null ],
     [ "State", "class_local_tree_1_1_state.html", null ],

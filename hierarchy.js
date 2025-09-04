@@ -3811,6 +3811,7 @@ var hierarchy =
     [ "Gfx::ShaderSource", "struct_gfx_1_1_shader_source.html", [
       [ "Gfx::ProcessedProgram", "struct_gfx_1_1_processed_program.html", null ]
     ] ],
+    [ "LocalTree::PropertyWrapper< Property >::shared_state", "struct_local_tree_1_1_property_wrapper_1_1shared__state.html", null ],
     [ "Gfx::SharedInputSettings", "struct_gfx_1_1_shared_input_settings.html", null ],
     [ "Gfx::SharedOutputSettings", "struct_gfx_1_1_shared_output_settings.html", null ],
     [ "SignalUtils", "struct_signal_utils.html", null ],
