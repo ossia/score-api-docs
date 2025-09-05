@@ -22,7 +22,7 @@ var searchData=
   ['filesystemmodel_19',['FileSystemModel',['../class_library_1_1_file_system_model.html',1,'Library']]],
   ['filesystemrecursivefilterproxy_20',['FileSystemRecursiveFilterProxy',['../class_library_1_1_file_system_recursive_filter_proxy.html',1,'Library']]],
   ['filewatch_21',['FileWatch',['../classscore_1_1_file_watch.html',1,'score']]],
-  ['filter_5fnode_22',['filter_node',['../class_gfx_1_1_filter_1_1filter__node.html',1,'Gfx::Filter']]],
+  ['filter_5fnode_22',['filter_node',['../class_gfx_1_1filter__node.html',1,'Gfx']]],
   ['find_23',['find',['../class_j_s_1_1_edit_js_context.html#acb23e62f7f92854d8c41f3f4e2748efe',1,'JS::EditJsContext::find()'],['../class_object_path.html#ad785272ea5e004ae4e42741baea90d6a',1,'ObjectPath::find()']]],
   ['findbetter_24',['findbetter',['../class_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i.html#a23ba22540c2000f23e8821e016607fba',1,'FactorOracle2MIDI::FactorOracle2MIDI::FindBetter()'],['../class_factor_1_1_factor_oracle.html#a00629688b260aa99b8b20d3f97597309',1,'Factor::FactorOracle::FindBetter()']]],
   ['findcomponent_25',['findComponent',['../namespacescore.html#a9d0f6126642097ffac522396a72339b6',1,'score']]],

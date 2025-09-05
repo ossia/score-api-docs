@@ -147,6 +147,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_change_shader.html">ChangeShader</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_change_v_s_a_shader.html">ChangeVSAShader</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gfx_1_1clear__msg__visitor.html">clear_msg_visitor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gfx_1_1con__unvalidated.html">con_unvalidated</a></td></tr>
@@ -162,6 +164,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gfx_1_1_d_show_camera_enumerator.html">DShowCameraEnumerator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gfx_1_1exec__control.html">exec_control</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1filter__node.html">filter_node</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gfx_1_1_flt_i_audio_frame_encoder.html">FltIAudioFrameEncoder</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,6 +200,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gfx_1_1_image_cache.html">ImageCache</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_invert_y_renderer.html">InvertYRenderer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_i_s_f_executor_component.html">ISFExecutorComponent</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gfx_1_1_i_s_f_helpers.html">ISFHelpers</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1libav__output__device.html">libav_output_device</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -356,9 +364,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseImages</b> (st
 <tr class="memitem:a8959acef93cda3509ccf619a7ef66dc3" id="r_a8959acef93cda3509ccf619a7ef66dc3"><td class="memItemLeft" align="right" valign="top"><a id="a8959acef93cda3509ccf619a7ef66dc3" name="a8959acef93cda3509ccf619a7ef66dc3"></a>
 std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_image.html">score::gfx::Image</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getImages</b> (const ossia::value &amp;val)</td></tr>
 <tr class="separator:a8959acef93cda3509ccf619a7ef66dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae86461a88d951530000a284906e4beed" id="r_ae86461a88d951530000a284906e4beed"><td class="memItemLeft" align="right" valign="top"><a id="ae86461a88d951530000a284906e4beed" name="ae86461a88d951530000a284906e4beed"></a>
-<a class="el" href="struct_gfx_1_1_shader_source.html">ShaderSource</a>&#160;</td><td class="memItemRight" valign="bottom"><b>programFromFragmentShaderPath</b> (const QString &amp;fsFilename, QByteArray fsData)</td></tr>
-<tr class="separator:ae86461a88d951530000a284906e4beed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cbc2e9c5868a00a37b9aa0665bf9993" id="r_a1cbc2e9c5868a00a37b9aa0665bf9993"><td class="memItemLeft" align="right" valign="top"><a id="a1cbc2e9c5868a00a37b9aa0665bf9993" name="a1cbc2e9c5868a00a37b9aa0665bf9993"></a>
+<a class="el" href="struct_gfx_1_1_shader_source.html">ShaderSource</a>&#160;</td><td class="memItemRight" valign="bottom"><b>programFromISFFragmentShaderPath</b> (const QString &amp;fsFilename, QByteArray fsData)</td></tr>
+<tr class="separator:a1cbc2e9c5868a00a37b9aa0665bf9993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fc2639b99d7613aace7528046507961" id="r_a6fc2639b99d7613aace7528046507961"><td class="memItemLeft" align="right" valign="top"><a id="a6fc2639b99d7613aace7528046507961" name="a6fc2639b99d7613aace7528046507961"></a>
+<a class="el" href="struct_gfx_1_1_shader_source.html">ShaderSource</a>&#160;</td><td class="memItemRight" valign="bottom"><b>programFromVSAVertexShaderPath</b> (const QString &amp;vertexFilename, QByteArray vertexData)</td></tr>
+<tr class="separator:a6fc2639b99d7613aace7528046507961"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af30637ccc8e310e740f1732b2251e38b" id="r_af30637ccc8e310e740f1732b2251e38b"><td class="memItemLeft" align="right" valign="top"><a id="af30637ccc8e310e740f1732b2251e38b" name="af30637ccc8e310e740f1732b2251e38b"></a>
 CGLContextObj&#160;</td><td class="memItemRight" valign="bottom"><b>nativeContext</b> (QRhi &amp;rhi)</td></tr>
 <tr class="separator:af30637ccc8e310e740f1732b2251e38b"><td class="memSeparator" colspan="2">&#160;</td></tr>

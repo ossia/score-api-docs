@@ -40,7 +40,10 @@ var NAVTREEINDEX2 =
 "_high_frequency_content_8hpp_source.html":[13,0,0,2,5,0,8],
 "_i_command_dispatcher_8hpp_source.html":[13,0,0,1,1,2,0,1],
 "_i_o_type_8hpp_source.html":[13,0,0,2,0,0,0,2],
+"_i_s_f_executor_8hpp_source.html":[13,0,0,2,17,1,25],
+"_i_s_f_executor_node_8hpp_source.html":[13,0,0,2,17,1,26],
 "_i_s_f_node_8hpp_source.html":[13,0,0,2,17,1,2,8],
+"_i_s_f_process_8hpp_source.html":[13,0,0,2,17,1,27],
 "_i_s_f_visitors_8hpp_source.html":[13,0,0,2,17,1,2,9],
 "_icon_provider_8hpp_source.html":[13,0,0,1,1,13,10],
 "_identified_object_8hpp_source.html":[13,0,0,1,1,7,17],
@@ -98,7 +101,7 @@ var NAVTREEINDEX2 =
 "_interval_summary_widget_8hpp_source.html":[13,0,0,2,32,4,6,3,3],
 "_interval_transitions_8hpp_source.html":[13,0,0,2,32,4,8,1,2],
 "_interval_view_8hpp_source.html":[13,0,0,2,32,4,3,5,12],
-"_invert_y_renderer_8hpp_source.html":[13,0,0,2,17,1,23],
+"_invert_y_renderer_8hpp_source.html":[13,0,0,2,17,1,24],
 "_invisible_root_node_8hpp_source.html":[13,0,0,1,1,7,1,0],
 "_invisible_window_8hpp_source.html":[13,0,0,1,1,12,14],
 "_invoke_8hpp_source.html":[13,0,0,1,1,12,2,5],
@@ -123,7 +126,7 @@ var NAVTREEINDEX2 =
 "_joystick_protocol_factory_8hpp_source.html":[13,0,0,2,29,0,6,1],
 "_joystick_protocol_settings_widget_8hpp_source.html":[13,0,0,2,29,0,6,2],
 "_joystick_specific_settings_8hpp_source.html":[13,0,0,2,29,0,6,3],
-"_kinect2_device_8hpp_source.html":[13,0,0,2,17,1,24],
+"_kinect2_device_8hpp_source.html":[13,0,0,2,17,1,28],
 "_kurtosis_8hpp_source.html":[13,0,0,2,5,0,9],
 "_l_e_d_dialog_8hpp_source.html":[13,0,0,2,29,0,0,8],
 "_l_f_o_8hpp_source.html":[13,0,0,2,16,0,12],
@@ -246,8 +249,5 @@ var NAVTREEINDEX2 =
 "_metro_view_8hpp_source.html":[13,0,0,2,24,0,4,6],
 "_micro_mapping_8hpp_source.html":[13,0,0,2,16,0,23],
 "_midi_drop_8hpp_source.html":[13,0,0,2,25,0,2],
-"_midi_executor_8hpp_source.html":[13,0,0,2,25,0,3],
-"_midi_factory_8hpp_source.html":[13,0,0,2,25,0,4],
-"_midi_hi_res_8hpp_source.html":[13,0,0,2,16,0,24],
-"_midi_inlet_item_8hpp_source.html":[13,0,0,2,12,0,7]
+"_midi_executor_8hpp_source.html":[13,0,0,2,25,0,3]
 };

@@ -118,7 +118,7 @@ var searchData=
   ['dragmovefilter_115',['DragMoveFilter',['../struct_dataflow_1_1_drag_move_filter.html',1,'Dataflow']]],
   ['dragovertoolbutton_116',['DragOverToolButton',['../structscore_1_1_drag_over_tool_button.html',1,'score']]],
   ['driver_117',['Driver',['../struct_jit_1_1_driver.html',1,'Jit']]],
-  ['drophandler_118',['drophandler',['../class_y_s_f_x_1_1_drop_handler.html',1,'YSFX::DropHandler'],['../class_gfx_1_1_filter_1_1_drop_handler.html',1,'Gfx::Filter::DropHandler'],['../class_scenario_1_1_drop_handler.html',1,'Scenario::DropHandler'],['../class_pd_1_1_drop_handler.html',1,'Pd::DropHandler'],['../class_patternist_1_1_drop_handler.html',1,'Patternist::DropHandler'],['../class_midi_1_1_drop_handler.html',1,'Midi::DropHandler'],['../class_j_s_1_1_drop_handler.html',1,'JS::DropHandler'],['../class_media_1_1_sound_1_1_drop_handler.html',1,'Media::Sound::DropHandler'],['../class_faust_1_1_drop_handler.html',1,'Faust::DropHandler'],['../class_gfx_1_1_geometry_filter_1_1_drop_handler.html',1,'Gfx::GeometryFilter::DropHandler'],['../class_gfx_1_1_video_1_1_drop_handler.html',1,'Gfx::Video::DropHandler']]],
+  ['drophandler_118',['drophandler',['../class_y_s_f_x_1_1_drop_handler.html',1,'YSFX::DropHandler'],['../class_scenario_1_1_drop_handler.html',1,'Scenario::DropHandler'],['../class_pd_1_1_drop_handler.html',1,'Pd::DropHandler'],['../class_gfx_1_1_video_1_1_drop_handler.html',1,'Gfx::Video::DropHandler'],['../class_patternist_1_1_drop_handler.html',1,'Patternist::DropHandler'],['../class_midi_1_1_drop_handler.html',1,'Midi::DropHandler'],['../class_j_s_1_1_drop_handler.html',1,'JS::DropHandler'],['../class_media_1_1_sound_1_1_drop_handler.html',1,'Media::Sound::DropHandler'],['../class_faust_1_1_drop_handler.html',1,'Faust::DropHandler'],['../class_gfx_1_1_filter_1_1_drop_handler.html',1,'Gfx::Filter::DropHandler'],['../class_gfx_1_1_geometry_filter_1_1_drop_handler.html',1,'Gfx::GeometryFilter::DropHandler'],['../class_gfx_1_1_v_s_a_1_1_drop_handler.html',1,'Gfx::VSA::DropHandler']]],
   ['drophandlerlist_119',['DropHandlerList',['../class_scenario_1_1_drop_handler_list.html',1,'Scenario']]],
   ['droplayerininterval_120',['DropLayerInInterval',['../class_scenario_1_1_drop_layer_in_interval.html',1,'Scenario']]],
   ['droplayerinscenario_121',['DropLayerInScenario',['../class_scenario_1_1_drop_layer_in_scenario.html',1,'Scenario']]],
@@ -144,10 +144,11 @@ var searchData=
   ['dshowcameraenumerator_141',['DShowCameraEnumerator',['../struct_gfx_1_1_d_show_camera_enumerator.html',1,'Gfx']]],
   ['dummy_5ft_142',['dummy_t',['../structvst3_1_1vst__node_1_1dummy__t.html',1,'vst3::vst_node&lt; UseDouble &gt;::dummy_t'],['../structvst_1_1vst__node_1_1dummy__t.html',1,'vst::vst_node&lt; UseDouble, IsSynth &gt;::dummy_t']]],
   ['dummyfactory_143',['DummyFactory',['../class_audio_1_1_dummy_factory.html',1,'Audio']]],
-  ['duplicateinterval_144',['DuplicateInterval',['../class_scenario_1_1_command_1_1_duplicate_interval.html',1,'Scenario::Command']]],
-  ['duplicateonlyprocesstointerval_145',['DuplicateOnlyProcessToInterval',['../class_scenario_1_1_command_1_1_duplicate_only_process_to_interval.html',1,'Scenario::Command']]],
-  ['duplicateprocess_146',['DuplicateProcess',['../class_scenario_1_1_command_1_1_duplicate_process.html',1,'Scenario::Command']]],
-  ['durationwidget_147',['DurationWidget',['../class_scenario_1_1_duration_widget.html',1,'Scenario']]],
-  ['dynarray_5fimpl_148',['dynarray_impl',['../classscore_1_1dynarray__impl.html',1,'score']]],
-  ['dynvector_5fimpl_149',['dynvector_impl',['../classscore_1_1dynvector__impl.html',1,'score']]]
+  ['dummymesh_144',['DummyMesh',['../structscore_1_1gfx_1_1_dummy_mesh.html',1,'score::gfx']]],
+  ['duplicateinterval_145',['DuplicateInterval',['../class_scenario_1_1_command_1_1_duplicate_interval.html',1,'Scenario::Command']]],
+  ['duplicateonlyprocesstointerval_146',['DuplicateOnlyProcessToInterval',['../class_scenario_1_1_command_1_1_duplicate_only_process_to_interval.html',1,'Scenario::Command']]],
+  ['duplicateprocess_147',['DuplicateProcess',['../class_scenario_1_1_command_1_1_duplicate_process.html',1,'Scenario::Command']]],
+  ['durationwidget_148',['DurationWidget',['../class_scenario_1_1_duration_widget.html',1,'Scenario']]],
+  ['dynarray_5fimpl_149',['dynarray_impl',['../classscore_1_1dynarray__impl.html',1,'score']]],
+  ['dynvector_5fimpl_150',['dynvector_impl',['../classscore_1_1dynvector__impl.html',1,'score']]]
 ];

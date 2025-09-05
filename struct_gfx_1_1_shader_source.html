@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('struct_gfx_1_1_shader_source.html','')
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
@@ -127,6 +128,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gfx_1_1_shader_source_1_1_member_spec.html">MemberSpec</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aa4831d2ec88217b0335f3fd32ce0dcf3" id="r_aa4831d2ec88217b0335f3fd32ce0dcf3"><td class="memItemLeft" align="right" valign="top"><a id="aa4831d2ec88217b0335f3fd32ce0dcf3" name="aa4831d2ec88217b0335f3fd32ce0dcf3"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ProgramType</b> = isf::parser::ShaderType</td></tr>
+<tr class="separator:aa4831d2ec88217b0335f3fd32ce0dcf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6ae4d546290a3d79ac44850c46a3e87e" id="r_a6ae4d546290a3d79ac44850c46a3e87e"><td class="memItemLeft" align="right" valign="top"><a id="a6ae4d546290a3d79ac44850c46a3e87e" name="a6ae4d546290a3d79ac44850c46a3e87e"></a>
@@ -141,9 +148,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abc0857787ee1fd3b9f65c9d136a8fdfd" id="r_abc0857787ee1fd3b9f65c9d136a8fdfd"><td class="memItemLeft" align="right" valign="top"><a id="abc0857787ee1fd3b9f65c9d136a8fdfd" name="abc0857787ee1fd3b9f65c9d136a8fdfd"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ShaderSource</b> (const std::vector&lt; QString &gt; &amp;vec)</td></tr>
 <tr class="separator:abc0857787ee1fd3b9f65c9d136a8fdfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78d310257a84061a72630e17ff900e48" id="r_a78d310257a84061a72630e17ff900e48"><td class="memItemLeft" align="right" valign="top"><a id="a78d310257a84061a72630e17ff900e48" name="a78d310257a84061a72630e17ff900e48"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderSource</b> (std::vector&lt; QString &gt; &amp;&amp;vec)</td></tr>
-<tr class="separator:a78d310257a84061a72630e17ff900e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fb997a446f9caa8ffbdd062163d16dc" id="r_a1fb997a446f9caa8ffbdd062163d16dc"><td class="memItemLeft" align="right" valign="top"><a id="a1fb997a446f9caa8ffbdd062163d16dc" name="a1fb997a446f9caa8ffbdd062163d16dc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderSource</b> (ProgramType tp, const QString &amp;vert, const QString &amp;frag)</td></tr>
+<tr class="separator:a1fb997a446f9caa8ffbdd062163d16dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaf245223eca4a0dd52d8ff5d43059b0" id="r_afaf245223eca4a0dd52d8ff5d43059b0"><td class="memItemLeft" align="right" valign="top"><a id="afaf245223eca4a0dd52d8ff5d43059b0" name="afaf245223eca4a0dd52d8ff5d43059b0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderSource</b> (ProgramType tp, const std::vector&lt; QString &gt; &amp;vec)</td></tr>
+<tr class="separator:afaf245223eca4a0dd52d8ff5d43059b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61e1fed33cf965c83de3467f57dc01a2" id="r_a61e1fed33cf965c83de3467f57dc01a2"><td class="memItemLeft" align="right" valign="top"><a id="a61e1fed33cf965c83de3467f57dc01a2" name="a61e1fed33cf965c83de3467f57dc01a2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderSource</b> (ProgramType tp, std::vector&lt; QString &gt; &amp;&amp;vec)</td></tr>
+<tr class="separator:a61e1fed33cf965c83de3467f57dc01a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95ebaa9c1c004e9acba3b4dc774752f9" id="r_a95ebaa9c1c004e9acba3b4dc774752f9"><td class="memItemLeft" align="right" valign="top"><a id="a95ebaa9c1c004e9acba3b4dc774752f9" name="a95ebaa9c1c004e9acba3b4dc774752f9"></a>
 <a class="el" href="struct_gfx_1_1_shader_source.html">ShaderSource</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="struct_gfx_1_1_shader_source.html">ShaderSource</a> &amp;)=default</td></tr>
 <tr class="separator:a95ebaa9c1c004e9acba3b4dc774752f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,6 +166,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:ae68157e11efb1fbfcd31d6a3ca0528a4" id="r_ae68157e11efb1fbfcd31d6a3ca0528a4"><td class="memItemLeft" align="right" valign="top"><a id="ae68157e11efb1fbfcd31d6a3ca0528a4" name="ae68157e11efb1fbfcd31d6a3ca0528a4"></a>
+ProgramType&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> {}</td></tr>
+<tr class="separator:ae68157e11efb1fbfcd31d6a3ca0528a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a729e290fbebbc5e5a8ac8402408541af" id="r_a729e290fbebbc5e5a8ac8402408541af"><td class="memItemLeft" align="right" valign="top"><a id="a729e290fbebbc5e5a8ac8402408541af" name="a729e290fbebbc5e5a8ac8402408541af"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>vertex</b></td></tr>
 <tr class="separator:a729e290fbebbc5e5a8ac8402408541af"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,7 +223,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const
 <div class="line">      MemberSpec{QObject::tr(<span class="stringliteral">&quot;Fragment&quot;</span>), &amp;ShaderSource::fragment, <span class="stringliteral">&quot;GLSL&quot;</span>},</div>
 <div class="line">      <a class="code hl_struct" href="struct_gfx_1_1_shader_source_1_1_member_spec.html">MemberSpec</a>{QObject::tr(<span class="stringliteral">&quot;Vertex&quot;</span>), &amp;ShaderSource::vertex, <span class="stringliteral">&quot;GLSL&quot;</span>},</div>
 <div class="line">  }</div>
-<div class="ttc" id="astruct_gfx_1_1_shader_source_1_1_member_spec_html"><div class="ttname"><a href="struct_gfx_1_1_shader_source_1_1_member_spec.html">Gfx::ShaderSource::MemberSpec</a></div><div class="ttdef"><b>Definition</b> ShaderProgram.hpp:60</div></div>
+<div class="ttc" id="astruct_gfx_1_1_shader_source_1_1_member_spec_html"><div class="ttname"><a href="struct_gfx_1_1_shader_source_1_1_member_spec.html">Gfx::ShaderSource::MemberSpec</a></div><div class="ttdef"><b>Definition</b> ShaderProgram.hpp:79</div></div>
 </div><!-- fragment -->
 </div>
 </div>
