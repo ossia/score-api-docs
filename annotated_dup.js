@@ -27,6 +27,9 @@ var annotated_dup =
       [ "value_out", "struct_analysis_1_1value__out.html", null ],
       [ "ZeroCrossing", "struct_analysis_1_1_zero_crossing.html", null ]
     ] ],
+    [ "ao", null, [
+      [ "Easetanbul", "structao_1_1_easetanbul.html", null ]
+    ] ],
     [ "Audio", null, [
       [ "Settings", null, [
         [ "Model", "class_audio_1_1_settings_1_1_model.html", null ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"_midi_executor_8hpp_source.html":[13,0,0,2,25,0,3],
 "_midi_factory_8hpp_source.html":[13,0,0,2,25,0,4],
 "_midi_hi_res_8hpp_source.html":[13,0,0,2,16,0,24],
 "_midi_inlet_item_8hpp_source.html":[13,0,0,2,12,0,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "_q_graphics_x_y_spinbox_8hpp_source.html":[13,0,0,1,1,5,1,27],
 "_q_graphics_x_y_z_chooser_8hpp_source.html":[13,0,0,1,1,5,1,28],
 "_q_graphics_x_y_z_spinbox_8hpp_source.html":[13,0,0,1,1,5,1,29],
-"_q_image_pool_8hpp_source.html":[13,0,0,2,24,0,5,1],
-"_q_map_helper_8hpp.html":[13,0,0,1,1,12,19]
+"_q_image_pool_8hpp_source.html":[13,0,0,2,24,0,5,1]
 };

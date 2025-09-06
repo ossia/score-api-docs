@@ -128,6 +128,7 @@ var NAVTREEINDEX1 =
 "_dummy_interface_8hpp_source.html":[13,0,0,2,6,0,12],
 "_duplicate_interval_8hpp_source.html":[13,0,0,2,32,4,1,5,4],
 "_duration_section_widget_8hpp_source.html":[13,0,0,2,32,4,6,3,0,0],
+"_easetanbul_8hpp_source.html":[13,0,0,2,8,2,5],
 "_easing_segment_8hpp_source.html":[13,0,0,2,11,0,4,9],
 "_edit_connection_8hpp_source.html":[13,0,0,2,32,0,0,2],
 "_edit_context_8hpp_source.html":[13,0,0,2,20,0,2,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "_gfx_input_device_8hpp_source.html":[13,0,0,2,17,1,22],
 "_gfx_node_8hpp_source.html":[13,0,0,2,8,3,10],
 "_gfx_parameter_8hpp_source.html":[13,0,0,2,17,1,23],
-"_gfx_plugins.html":[3],
-"_gfx_plugins.html#CustomNode":[3,0]
+"_gfx_plugins.html":[3]
 };

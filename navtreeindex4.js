@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"_q_map_helper_8hpp.html":[13,0,0,1,1,12,19],
 "_q_map_helper_8hpp_source.html":[13,0,0,1,1,12,19],
 "_q_rhi_gles2_8hpp_source.html":[13,0,0,1,1,4,1],
 "_qml_objects_8hpp_source.html":[13,0,0,2,20,0,2,7],
@@ -213,7 +214,7 @@ var NAVTREEINDEX4 =
 "_sound_model_8hpp_source.html":[13,0,0,2,24,0,5,6],
 "_sound_presenter_8hpp_source.html":[13,0,0,2,24,0,5,7],
 "_sound_view_8hpp_source.html":[13,0,0,2,24,0,5,8],
-"_spammer_8hpp_source.html":[13,0,0,2,8,2,7],
+"_spammer_8hpp_source.html":[13,0,0,2,8,2,8],
 "_spectral_difference_8hpp_source.html":[13,0,0,2,5,0,13],
 "_spectral_difference___h_w_r_8hpp_source.html":[13,0,0,2,5,0,14],
 "_speed_slider_8hpp_source.html":[13,0,0,2,32,4,6,3,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "_string_factory_key_serialization_8hpp_source.html":[13,0,0,1,1,8,16],
 "_string_hash_8hpp_source.html":[13,0,0,1,1,12,2,10],
 "_string_value_widget_8hpp_source.html":[13,0,0,2,4,0,0,0,2],
-"_structure_synth_8hpp_source.html":[13,0,0,2,35,0,8],
-"_style_sheets_8hpp_source.html":[13,0,0,1,1,13,26]
+"_structure_synth_8hpp_source.html":[13,0,0,2,35,0,8]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"_gfx_plugins.html#CustomNode":[3,0],
 "_gfx_plugins.html#ShaderConventions":[3,1],
 "_gfx_plugins.html#VideoDecoders":[3,2],
 "_gist_state_8hpp_source.html":[13,0,0,2,5,0,6],
@@ -85,7 +86,7 @@ var NAVTREEINDEX2 =
 "_interpolation_presenter_8hpp_source.html":[13,0,0,2,32,1,3],
 "_interpolation_process_8hpp_source.html":[13,0,0,2,32,1,4],
 "_interpolation_view_8hpp_source.html":[13,0,0,2,32,1,5],
-"_interpolator_8hpp_source.html":[13,0,0,2,8,2,5],
+"_interpolator_8hpp_source.html":[13,0,0,2,8,2,6],
 "_interval_8hpp_source.html":[13,0,0,2,31,1,2,0,1],
 "_interval_actions_8hpp_source.html":[13,0,0,2,32,4,0,1,0,1],
 "_interval_brace_8hpp_source.html":[13,0,0,2,32,4,3,5,2,0,0],
@@ -186,7 +187,7 @@ var NAVTREEINDEX2 =
 "_m_i_d_i_protocol_factory_8hpp_source.html":[13,0,0,2,29,0,10,3],
 "_m_i_d_i_protocol_settings_widget_8hpp_source.html":[13,0,0,2,29,0,10,4],
 "_m_i_d_i_specific_settings_8hpp_source.html":[13,0,0,2,29,0,10,5],
-"_m_i_d_i_sync_8hpp_source.html":[13,0,0,2,8,2,6],
+"_m_i_d_i_sync_8hpp_source.html":[13,0,0,2,8,2,7],
 "_m_i_d_i_utils_8hpp_source.html":[13,0,0,2,29,0,24],
 "_m_m_e_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,16],
 "_m_q_t_t_device_8hpp_source.html":[13,0,0,2,29,0,12,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "_metro_presenter_8hpp_source.html":[13,0,0,2,24,0,4,5],
 "_metro_view_8hpp_source.html":[13,0,0,2,24,0,4,6],
 "_micro_mapping_8hpp_source.html":[13,0,0,2,16,0,23],
-"_midi_drop_8hpp_source.html":[13,0,0,2,25,0,2],
-"_midi_executor_8hpp_source.html":[13,0,0,2,25,0,3]
+"_midi_drop_8hpp_source.html":[13,0,0,2,25,0,2]
 };
