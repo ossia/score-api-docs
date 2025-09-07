@@ -703,7 +703,7 @@ $(document).ready(function(){initNavTree('plugins_2score-lib-process_2_process_2
 <div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>  {</div>
 <div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>    <span class="keyword">auto</span> sl = <span class="keyword">new</span> <a class="code hl_class" href="classscore_1_1_q_graphics_time_chooser.html">score::QGraphicsTimeChooser</a>{<span class="keyword">nullptr</span>};</div>
 <div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>    initWidgetProperties(inlet, *sl);</div>
-<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>    <span class="comment">// bindFloatDomain(slider, inlet, *sl);</span></div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>    bindFloatDomain(slider, inlet, sl-&gt;knob);</div>
 <div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>    sl-&gt;setValue(ossia::convert&lt;ossia::vec2f&gt;(inlet.value()));</div>
 <div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span> </div>
 <div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>    QObject::connect(</div>
