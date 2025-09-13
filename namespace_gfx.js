@@ -7,6 +7,7 @@ var namespace_gfx =
     [ "CameraDeviceEnumerator", "struct_gfx_1_1_camera_device_enumerator.html", null ],
     [ "CameraProtocolFactory", "class_gfx_1_1_camera_protocol_factory.html", null ],
     [ "CameraSettings", "struct_gfx_1_1_camera_settings.html", null ],
+    [ "ChangeCSF", "class_gfx_1_1_change_c_s_f.html", null ],
     [ "ChangeShader", "class_gfx_1_1_change_shader.html", null ],
     [ "ChangeVSAShader", "class_gfx_1_1_change_v_s_a_shader.html", null ],
     [ "clear_msg_visitor", "struct_gfx_1_1clear__msg__visitor.html", null ],

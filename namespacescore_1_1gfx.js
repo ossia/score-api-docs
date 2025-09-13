@@ -53,6 +53,7 @@ var namespacescore_1_1gfx =
     [ "ProcessNode", "classscore_1_1gfx_1_1_process_node.html", "classscore_1_1gfx_1_1_process_node" ],
     [ "ProcessUBO", "structscore_1_1gfx_1_1_process_u_b_o.html", null ],
     [ "RefcountedFrame", "structscore_1_1gfx_1_1_refcounted_frame.html", null ],
+    [ "RenderedCSFNode", "structscore_1_1gfx_1_1_rendered_c_s_f_node.html", null ],
     [ "RenderedISFNode", "structscore_1_1gfx_1_1_rendered_i_s_f_node.html", null ],
     [ "RenderedPhongNode", "structscore_1_1gfx_1_1_rendered_phong_node.html", null ],
     [ "RenderList", "classscore_1_1gfx_1_1_render_list.html", "classscore_1_1gfx_1_1_render_list" ],

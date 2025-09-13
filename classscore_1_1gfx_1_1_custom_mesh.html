@@ -123,8 +123,32 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6fd9ee82e4f1664288bdba5ad066c18b" id="r_a6fd9ee82e4f1664288bdba5ad066c18b"><td class="memItemLeft" align="right" valign="top"><a id="a6fd9ee82e4f1664288bdba5ad066c18b" name="a6fd9ee82e4f1664288bdba5ad066c18b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>CustomMesh</b> (const ossia::mesh_list &amp;g, const ossia::geometry_filter_list_ptr &amp;f)</td></tr>
 <tr class="separator:a6fd9ee82e4f1664288bdba5ad066c18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4b2b614d3fdae79620b71388e575e62" id="r_ac4b2b614d3fdae79620b71388e575e62"><td class="memItemLeft" align="right" valign="top"><a id="ac4b2b614d3fdae79620b71388e575e62" name="ac4b2b614d3fdae79620b71388e575e62"></a>
+QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>init_vbo</b> (const ossia::geometry::cpu_buffer &amp;buf, QRhi &amp;rhi) const noexcept</td></tr>
+<tr class="separator:ac4b2b614d3fdae79620b71388e575e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe9d492223f070686bebe01a6d9f5b76" id="r_abe9d492223f070686bebe01a6d9f5b76"><td class="memItemLeft" align="right" valign="top"><a id="abe9d492223f070686bebe01a6d9f5b76" name="abe9d492223f070686bebe01a6d9f5b76"></a>
+QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>init_vbo</b> (const ossia::geometry::gpu_buffer &amp;buf, QRhi &amp;rhi) const noexcept</td></tr>
+<tr class="separator:abe9d492223f070686bebe01a6d9f5b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e3e4df6d1b4b677d37af30ea3f63d64" id="r_a6e3e4df6d1b4b677d37af30ea3f63d64"><td class="memItemLeft" align="right" valign="top"><a id="a6e3e4df6d1b4b677d37af30ea3f63d64" name="a6e3e4df6d1b4b677d37af30ea3f63d64"></a>
+QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>init_index</b> (const ossia::geometry::cpu_buffer &amp;buf, QRhi &amp;rhi) const noexcept</td></tr>
+<tr class="separator:a6e3e4df6d1b4b677d37af30ea3f63d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8c16bb0256856f8e2d9319bd506e0ec" id="r_ad8c16bb0256856f8e2d9319bd506e0ec"><td class="memItemLeft" align="right" valign="top"><a id="ad8c16bb0256856f8e2d9319bd506e0ec" name="ad8c16bb0256856f8e2d9319bd506e0ec"></a>
+QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>init_index</b> (const ossia::geometry::gpu_buffer &amp;buf, QRhi &amp;rhi) const noexcept</td></tr>
+<tr class="separator:ad8c16bb0256856f8e2d9319bd506e0ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa7be6422e7a2e83a71484658ab290dc" id="r_aaa7be6422e7a2e83a71484658ab290dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_custom_mesh.html#aaa7be6422e7a2e83a71484658ab290dc">init</a> (QRhi &amp;rhi) const noexcept override</td></tr>
 <tr class="separator:aaa7be6422e7a2e83a71484658ab290dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d057bd8a378344e9e6af2d9715d300" id="r_a24d057bd8a378344e9e6af2d9715d300"><td class="memItemLeft" align="right" valign="top"><a id="a24d057bd8a378344e9e6af2d9715d300" name="a24d057bd8a378344e9e6af2d9715d300"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>update_vbo</b> (const ossia::geometry::cpu_buffer &amp;vtx_buf, <a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> &amp;meshbuf, QRhiResourceUpdateBatch &amp;rb) const noexcept</td></tr>
+<tr class="separator:a24d057bd8a378344e9e6af2d9715d300"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a649d170b4bb203d03f51b2a67927924b" id="r_a649d170b4bb203d03f51b2a67927924b"><td class="memItemLeft" align="right" valign="top"><a id="a649d170b4bb203d03f51b2a67927924b" name="a649d170b4bb203d03f51b2a67927924b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>update_vbo</b> (const ossia::geometry::gpu_buffer &amp;vtx_buf, <a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> &amp;meshbuf, QRhiResourceUpdateBatch &amp;rb) const noexcept</td></tr>
+<tr class="separator:a649d170b4bb203d03f51b2a67927924b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0864c29da1df4c6e9afac656f93ce21d" id="r_a0864c29da1df4c6e9afac656f93ce21d"><td class="memItemLeft" align="right" valign="top"><a id="a0864c29da1df4c6e9afac656f93ce21d" name="a0864c29da1df4c6e9afac656f93ce21d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>update_index</b> (const ossia::geometry::cpu_buffer &amp;idx_buf, <a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> &amp;meshbuf, QRhiResourceUpdateBatch &amp;rb) const noexcept</td></tr>
+<tr class="separator:a0864c29da1df4c6e9afac656f93ce21d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fe9fda2e02487e5a0cd9edb8e8d3121" id="r_a5fe9fda2e02487e5a0cd9edb8e8d3121"><td class="memItemLeft" align="right" valign="top"><a id="a5fe9fda2e02487e5a0cd9edb8e8d3121" name="a5fe9fda2e02487e5a0cd9edb8e8d3121"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>update_index</b> (const ossia::geometry::gpu_buffer &amp;idx_buf, <a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> &amp;meshbuf, QRhiResourceUpdateBatch &amp;rb) const noexcept</td></tr>
+<tr class="separator:a5fe9fda2e02487e5a0cd9edb8e8d3121"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4577ef14f7c3e50106c56b1e8eee8f5b" id="r_a4577ef14f7c3e50106c56b1e8eee8f5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_custom_mesh.html#a4577ef14f7c3e50106c56b1e8eee8f5b">update</a> (<a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> &amp;meshbuf, QRhiResourceUpdateBatch &amp;rb) const noexcept override</td></tr>
 <tr class="separator:a4577ef14f7c3e50106c56b1e8eee8f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa05d34acc58ae0cc2cf209b0c5f302cf" id="r_aa05d34acc58ae0cc2cf209b0c5f302cf"><td class="memItemLeft" align="right" valign="top">Flags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_custom_mesh.html#aa05d34acc58ae0cc2cf209b0c5f302cf">flags</a> () const noexcept override</td></tr>

@@ -4,6 +4,8 @@ var dir_11d0d5461602a732819a8983098b4844 =
     [ "AutomationDropHandler.hpp", "_automation_drop_handler_8hpp_source.html", null ],
     [ "DropLayerInInterval.hpp", "_drop_layer_in_interval_8hpp_source.html", null ],
     [ "DropLayerInScenario.hpp", "_drop_layer_in_scenario_8hpp_source.html", null ],
+    [ "DropOnCable.hpp", "_drop_on_cable_8hpp_source.html", null ],
+    [ "DropOnNode.hpp", "_drop_on_node_8hpp_source.html", null ],
     [ "DropPresetInInterval.hpp", "_drop_preset_in_interval_8hpp_source.html", null ],
     [ "DropPresetInScenario.hpp", "_drop_preset_in_scenario_8hpp_source.html", null ],
     [ "DropProcessInInterval.hpp", "_drop_process_in_interval_8hpp_source.html", null ],

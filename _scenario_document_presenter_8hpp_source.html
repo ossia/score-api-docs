@@ -256,41 +256,46 @@ $(document).ready(function(){initNavTree('_scenario_document_presenter_8hpp_sour
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  <span class="keywordtype">void</span> on_addProcessFromLibrary(<span class="keyword">const</span> <a class="code hl_struct" href="struct_library_1_1_process_data.html">Library::ProcessData</a>&amp; dat);</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  <span class="keywordtype">void</span> on_addPresetFromLibrary(<span class="keyword">const</span> <a class="code hl_struct" href="struct_process_1_1_preset.html">Process::Preset</a>&amp; dat);</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  <a class="code hl_class" href="class_process_1_1_dataflow_manager.html">Process::DataflowManager</a> m_dataflow;</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  CentralDisplay m_centralDisplay;</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  <a class="code hl_class" href="classscore_1_1_selection_dispatcher.html">score::SelectionDispatcher</a> m_selectionDispatcher;</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  <a class="code hl_class" href="class_focus_dispatcher.html">FocusDispatcher</a> m_focusDispatcher;</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  <span class="keyword">mutable</span> <a class="code hl_class" href="class_process_1_1_process_focus_manager.html">Process::ProcessFocusManager</a> m_focusManager;</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  QPointer&lt;IntervalModel&gt; m_focusedInterval{};</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  <a class="code hl_struct" href="struct_process_1_1_context.html">Process::Context</a> m_context;</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>  ZoomRatio m_zoomRatio{-1};</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>  QMetaObject::Connection m_intervalConnection, m_durationConnection;</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>  <a class="code hl_class" href="class_process_1_1_mini_layer.html">Process::MiniLayer</a>* m_miniLayer{};</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  <span class="keywordtype">void</span> on_cableItemCreated(<a class="code hl_class" href="class_dataflow_1_1_cable_item.html">Dataflow::CableItem</a>* item);</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  <span class="keywordtype">void</span> on_dropOnCable(<span class="keyword">const</span> QPointF&amp; pos, <span class="keyword">const</span> QMimeData&amp; mime);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  <span class="keywordtype">void</span> on_dropFinished();</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  <a class="code hl_class" href="class_process_1_1_dataflow_manager.html">Process::DataflowManager</a> m_dataflow;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  CentralDisplay m_centralDisplay;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  <a class="code hl_class" href="classscore_1_1_selection_dispatcher.html">score::SelectionDispatcher</a> m_selectionDispatcher;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  <a class="code hl_class" href="class_focus_dispatcher.html">FocusDispatcher</a> m_focusDispatcher;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>  <span class="keyword">mutable</span> <a class="code hl_class" href="class_process_1_1_process_focus_manager.html">Process::ProcessFocusManager</a> m_focusManager;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>  QPointer&lt;IntervalModel&gt; m_focusedInterval{};</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>  <a class="code hl_struct" href="struct_process_1_1_context.html">Process::Context</a> m_context;</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  QAction* m_timelineAction{};</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>  QAction* m_musicalAction{};</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  std::vector&lt;QMetaObject::Connection&gt; m_processSelectionConnections;</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>  <span class="keywordtype">int</span> m_nonGLTimebarTimer{-1};</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  ZoomRatio m_zoomRatio{-1};</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>  QMetaObject::Connection m_intervalConnection, m_durationConnection;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>  <a class="code hl_class" href="class_process_1_1_mini_layer.html">Process::MiniLayer</a>* m_miniLayer{};</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  QAction* m_timelineAction{};</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>  QAction* m_musicalAction{};</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  <span class="keywordtype">bool</span> m_zooming{<span class="keyword">false</span>};</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>  <span class="keywordtype">bool</span> m_updatingMinimap{<span class="keyword">false</span>};</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>  <span class="keywordtype">bool</span> m_reloadingMinimap{<span class="keyword">false</span>};</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>  <span class="keywordtype">bool</span> m_updatingView{<span class="keyword">false</span>};</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>  <span class="keywordtype">bool</span> m_autoScroll{<span class="keyword">false</span>};</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>};</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  std::vector&lt;QMetaObject::Connection&gt; m_processSelectionConnections;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>  <span class="keywordtype">int</span> m_nonGLTimebarTimer{-1};</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>  <span class="keywordtype">bool</span> m_zooming{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>  <span class="keywordtype">bool</span> m_updatingMinimap{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  <span class="keywordtype">bool</span> m_reloadingMinimap{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>  <span class="keywordtype">bool</span> m_updatingView{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>  <span class="keywordtype">bool</span> m_autoScroll{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>};</div>
 </div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a>* closestParentProcessBeforeInterval(<span class="keyword">const</span> QObject* obj);</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>}</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a>* closestParentProcessBeforeInterval(<span class="keyword">const</span> QObject* obj);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>}</div>
+<div class="ttc" id="aclass_dataflow_1_1_cable_item_html"><div class="ttname"><a href="class_dataflow_1_1_cable_item.html">Dataflow::CableItem</a></div><div class="ttdef"><b>Definition</b> CableItem.hpp:37</div></div>
 <div class="ttc" id="aclass_focus_dispatcher_html"><div class="ttname"><a href="class_focus_dispatcher.html">FocusDispatcher</a></div><div class="ttdef"><b>Definition</b> FocusDispatcher.hpp:17</div></div>
 <div class="ttc" id="aclass_object_path_html"><div class="ttname"><a href="class_object_path.html">ObjectPath</a></div><div class="ttdoc">The ObjectPath class.</div><div class="ttdef"><b>Definition</b> ObjectPath.hpp:37</div></div>
 <div class="ttc" id="aclass_process_1_1_cable_html"><div class="ttname"><a href="class_process_1_1_cable.html">Process::Cable</a></div><div class="ttdef"><b>Definition</b> Cable.hpp:38</div></div>
-<div class="ttc" id="aclass_process_1_1_dataflow_manager_html"><div class="ttname"><a href="class_process_1_1_dataflow_manager.html">Process::DataflowManager</a></div><div class="ttdef"><b>Definition</b> plugins/score-lib-process/Process/DocumentPlugin.hpp:12</div></div>
+<div class="ttc" id="aclass_process_1_1_dataflow_manager_html"><div class="ttname"><a href="class_process_1_1_dataflow_manager.html">Process::DataflowManager</a></div><div class="ttdef"><b>Definition</b> plugins/score-lib-process/Process/DocumentPlugin.hpp:13</div></div>
 <div class="ttc" id="aclass_process_1_1_mini_layer_html"><div class="ttname"><a href="class_process_1_1_mini_layer.html">Process::MiniLayer</a></div><div class="ttdef"><b>Definition</b> LayerView.hpp:95</div></div>
 <div class="ttc" id="aclass_process_1_1_process_focus_manager_html"><div class="ttname"><a href="class_process_1_1_process_focus_manager.html">Process::ProcessFocusManager</a></div><div class="ttdef"><b>Definition</b> ProcessFocusManager.hpp:33</div></div>
 <div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition</b> score-lib-process/Process/Process.hpp:61</div></div>
@@ -302,7 +307,7 @@ $(document).ready(function(){initNavTree('_scenario_document_presenter_8hpp_sour
 <div class="ttc" id="aclass_scenario_1_1_interval_presenter_html"><div class="ttname"><a href="class_scenario_1_1_interval_presenter.html">Scenario::IntervalPresenter</a></div><div class="ttdef"><b>Definition</b> IntervalPresenter.hpp:30</div></div>
 <div class="ttc" id="aclass_scenario_1_1_scenario_document_model_html"><div class="ttname"><a href="class_scenario_1_1_scenario_document_model.html">Scenario::ScenarioDocumentModel</a></div><div class="ttdef"><b>Definition</b> ScenarioDocumentModel.hpp:29</div></div>
 <div class="ttc" id="aclass_scenario_1_1_scenario_document_presenter_html"><div class="ttname"><a href="class_scenario_1_1_scenario_document_presenter.html">Scenario::ScenarioDocumentPresenter</a></div><div class="ttdoc">The ScenarioDocumentPresenter class.</div><div class="ttdef"><b>Definition</b> ScenarioDocumentPresenter.hpp:58</div></div>
-<div class="ttc" id="aclass_scenario_1_1_scenario_document_view_html"><div class="ttname"><a href="class_scenario_1_1_scenario_document_view.html">Scenario::ScenarioDocumentView</a></div><div class="ttdef"><b>Definition</b> ScenarioDocumentView.hpp:115</div></div>
+<div class="ttc" id="aclass_scenario_1_1_scenario_document_view_html"><div class="ttname"><a href="class_scenario_1_1_scenario_document_view.html">Scenario::ScenarioDocumentView</a></div><div class="ttdef"><b>Definition</b> ScenarioDocumentView.hpp:118</div></div>
 <div class="ttc" id="aclass_selection_html"><div class="ttname"><a href="class_selection.html">Selection</a></div><div class="ttdef"><b>Definition</b> Selection.hpp:12</div></div>
 <div class="ttc" id="aclassscore_1_1_document_delegate_model_html"><div class="ttname"><a href="classscore_1_1_document_delegate_model.html">score::DocumentDelegateModel</a></div><div class="ttdef"><b>Definition</b> DocumentDelegateModel.hpp:11</div></div>
 <div class="ttc" id="aclassscore_1_1_document_delegate_presenter_html"><div class="ttname"><a href="classscore_1_1_document_delegate_presenter.html">score::DocumentDelegatePresenter</a></div><div class="ttdef"><b>Definition</b> DocumentDelegatePresenter.hpp:16</div></div>

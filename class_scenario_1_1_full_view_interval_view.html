@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('class_scenario_1_1_full_view_interval_
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_scenario_1_1_full_view_interval_view-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Scenario::FullViewIntervalView Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
@@ -123,6 +124,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac75e29f6a03bb4e0a4d05cc335d8de3e" id="r_ac75e29f6a03bb4e0a4d05cc335d8de3e"><td class="memItemLeft" align="right" valign="top"><a id="ac75e29f6a03bb4e0a4d05cc335d8de3e" name="ac75e29f6a03bb4e0a4d05cc335d8de3e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>FullViewIntervalView</b> (<a class="el" href="class_scenario_1_1_full_view_interval_presenter.html">FullViewIntervalPresenter</a> &amp;presenter, QGraphicsItem *parent)</td></tr>
 <tr class="separator:ac75e29f6a03bb4e0a4d05cc335d8de3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56136a5b80e97adc2626d4649ba87d51" id="r_a56136a5b80e97adc2626d4649ba87d51"><td class="memItemLeft" align="right" valign="top"><a id="a56136a5b80e97adc2626d4649ba87d51" name="a56136a5b80e97adc2626d4649ba87d51"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const final override</td></tr>
+<tr class="separator:a56136a5b80e97adc2626d4649ba87d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c317c616eeab818f14bf52403188cd3" id="r_a9c317c616eeab818f14bf52403188cd3"><td class="memItemLeft" align="right" valign="top"><a id="a9c317c616eeab818f14bf52403188cd3" name="a9c317c616eeab818f14bf52403188cd3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>drawPaths</b> (QPainter &amp;p, QRectF visibleRect, const <a class="el" href="structscore_1_1_brush.html">score::Brush</a> &amp;defaultColor, const <a class="el" href="struct_process_1_1_style.html">Process::Style</a> &amp;skin)</td></tr>
 <tr class="separator:a9c317c616eeab818f14bf52403188cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,9 +156,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setSnapLine</b> (std:
 <tr class="memitem:a3c3350599cb9f1cfae7630bd512da285 inherit pub_methods_class_scenario_1_1_interval_view" id="r_a3c3350599cb9f1cfae7630bd512da285"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>IntervalView</b> (<a class="el" href="class_scenario_1_1_interval_presenter.html">IntervalPresenter</a> &amp;presenter, QGraphicsItem *parent)</td></tr>
 <tr class="separator:a3c3350599cb9f1cfae7630bd512da285 inherit pub_methods_class_scenario_1_1_interval_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1eabd5266c64c211522f375151545461 inherit pub_methods_class_scenario_1_1_interval_view" id="r_a1eabd5266c64c211522f375151545461"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const final override</td></tr>
-<tr class="separator:a1eabd5266c64c211522f375151545461 inherit pub_methods_class_scenario_1_1_interval_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e28385778c29a9bcbfb673d8435010d inherit pub_methods_class_scenario_1_1_interval_view" id="r_a3e28385778c29a9bcbfb673d8435010d"><td class="memItemLeft" align="right" valign="top">
 const <a class="el" href="class_scenario_1_1_interval_presenter.html">IntervalPresenter</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>presenter</b> () const</td></tr>
 <tr class="separator:a3e28385778c29a9bcbfb673d8435010d inherit pub_methods_class_scenario_1_1_interval_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,12 +262,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>requestOverlayMenu</b
 void&#160;</td><td class="memItemRight" valign="bottom"><b>dropReceived</b> (const QPointF &amp;pos, const QMimeData &amp;arg_2)</td></tr>
 <tr class="separator:aba0ca6966f8c7fdf6daf90a7e8160739 inherit pub_methods_class_scenario_1_1_interval_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:aca5f393ff4db8e09e3ed68345e5dddcf" id="r_aca5f393ff4db8e09e3ed68345e5dddcf"><td class="memItemLeft" align="right" valign="top"><a id="aca5f393ff4db8e09e3ed68345e5dddcf" name="aca5f393ff4db8e09e3ed68345e5dddcf"></a>
+static const constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>Type</b> = ItemType::FullViewInterval</td></tr>
+<tr class="separator:aca5f393ff4db8e09e3ed68345e5dddcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_static_attribs_class_scenario_1_1_interval_view"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_class_scenario_1_1_interval_view')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="class_scenario_1_1_interval_view.html">Scenario::IntervalView</a></td></tr>
-<tr class="memitem:a3fe7cfefba521acf7c7e479b13138501 inherit pub_static_attribs_class_scenario_1_1_interval_view" id="r_a3fe7cfefba521acf7c7e479b13138501"><td class="memItemLeft" align="right" valign="top">
-static const constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>Type</b> = ItemType::Interval</td></tr>
-<tr class="separator:a3fe7cfefba521acf7c7e479b13138501 inherit pub_static_attribs_class_scenario_1_1_interval_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_scenario_1_1_interval_view"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_scenario_1_1_interval_view')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_scenario_1_1_interval_view.html">Scenario::IntervalView</a></td></tr>
 <tr class="memitem:ab427c067bc181c13e3fa0a3f4869c387 inherit pro_methods_class_scenario_1_1_interval_view" id="r_ab427c067bc181c13e3fa0a3f4869c387"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>dragEnterEvent</b> (QGraphicsSceneDragDropEvent *event) override</td></tr>

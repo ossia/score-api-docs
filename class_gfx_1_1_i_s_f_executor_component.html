@@ -117,7 +117,8 @@ Inheritance diagram for Gfx::ISFExecutorComponent:</div>
   <map id="Gfx::ISFExecutorComponent_map" name="Gfx::ISFExecutorComponent_map">
 <area href="class_execution_1_1_process_component.html" alt="Execution::ProcessComponent" shape="rect" coords="159,112,468,136"/>
 <area href="class_process_1_1_process_component_base.html" alt="Process::ProcessComponentBase&lt; ProcessBase_T, Component_T &gt;" shape="rect" coords="0,56,309,80"/>
-<area href="class_gfx_1_1_v_s_a_1_1_process_executor_component.html" alt="Gfx::VSA::ProcessExecutorComponent" shape="rect" coords="159,224,468,248"/>
+<area href="class_gfx_1_1_c_s_f_1_1_process_executor_component.html" alt="Gfx::CSF::ProcessExecutorComponent" shape="rect" coords="0,224,309,248"/>
+<area href="class_gfx_1_1_v_s_a_1_1_process_executor_component.html" alt="Gfx::VSA::ProcessExecutorComponent" shape="rect" coords="319,224,628,248"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -128,9 +129,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8fe34c712292220653ede52f0926baa6" id="r_a8fe34c712292220653ede52f0926baa6"><td class="memItemLeft" align="right" valign="top"><a id="a8fe34c712292220653ede52f0926baa6" name="a8fe34c712292220653ede52f0926baa6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (const <a class="el" href="struct_gfx_1_1_processed_program.html">Gfx::ProcessedProgram</a> &amp;shader, const <a class="el" href="struct_execution_1_1_context.html">Execution::Context</a> &amp;ctx)</td></tr>
 <tr class="separator:a8fe34c712292220653ede52f0926baa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb6b7b42cc1429b336d784e3cb238500" id="r_abb6b7b42cc1429b336d784e3cb238500"><td class="memItemLeft" align="right" valign="top"><a id="abb6b7b42cc1429b336d784e3cb238500" name="abb6b7b42cc1429b336d784e3cb238500"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (const QString &amp;shader, const isf::descriptor &amp;desc, const <a class="el" href="struct_execution_1_1_context.html">Execution::Context</a> &amp;ctx)</td></tr>
+<tr class="separator:abb6b7b42cc1429b336d784e3cb238500"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97a2d5053294148482fe7493eb172c33" id="r_a97a2d5053294148482fe7493eb172c33"><td class="memItemLeft" align="right" valign="top"><a id="a97a2d5053294148482fe7493eb172c33" name="a97a2d5053294148482fe7493eb172c33"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>on_shaderChanged</b> (const <a class="el" href="struct_gfx_1_1_processed_program.html">Gfx::ProcessedProgram</a> &amp;shader)</td></tr>
 <tr class="separator:a97a2d5053294148482fe7493eb172c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5a88dd258dc6be6c47b9faa99774345" id="r_ad5a88dd258dc6be6c47b9faa99774345"><td class="memItemLeft" align="right" valign="top"><a id="ad5a88dd258dc6be6c47b9faa99774345" name="ad5a88dd258dc6be6c47b9faa99774345"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>on_shaderChanged</b> (const QString &amp;shader, const isf::descriptor &amp;desc)</td></tr>
+<tr class="separator:ad5a88dd258dc6be6c47b9faa99774345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1629cc5d5a3f4e175f366f65b4c74f52" id="r_a1629cc5d5a3f4e175f366f65b4c74f52"><td class="memItemLeft" align="right" valign="top">std::pair&lt; ossia::inlets, ossia::outlets &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_i_s_f_executor_component.html#a1629cc5d5a3f4e175f366f65b4c74f52">setup_node</a> (<a class="el" href="struct_execution_1_1_transaction.html">Execution::Transaction</a> &amp;transact)</td></tr>
 <tr class="separator:a1629cc5d5a3f4e175f366f65b4c74f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_execution_1_1_process_component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_execution_1_1_process_component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_execution_1_1_process_component.html">Execution::ProcessComponent</a></td></tr>

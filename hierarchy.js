@@ -105,6 +105,7 @@ var hierarchy =
       [ "TSerializer< JSONObject, std::vector< Args... > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1vector_3_01_args_8_8_8_01_4_01_4.html", null ]
     ] ],
     [ "Threedim::ArrayToMesh", "class_threedim_1_1_array_to_mesh.html", null ],
+    [ "Threedim::ArrayToTexture", "class_threedim_1_1_array_to_texture.html", null ],
     [ "Protocols::ArtnetSpecificSettings", "struct_protocols_1_1_artnet_specific_settings.html", null ],
     [ "JSONReader::assigner", "struct_j_s_o_n_reader_1_1assigner.html", null ],
     [ "AtomBuffer", "struct_atom_buffer.html", null ],
@@ -211,6 +212,11 @@ var hierarchy =
       [ "Scenario::EditScript< FaustEffectModel, FaustEffectModel::p_script >", "class_scenario_1_1_edit_script.html", [
         [ "Faust::EditScript", "class_faust_1_1_edit_script.html", [
           [ "score::StaticPropertyCommand< Faust::FaustEffectModel::p_script >", "structscore_1_1_static_property_command_3_01_faust_1_1_faust_effect_model_1_1p__script_01_4.html", null ]
+        ] ]
+      ] ],
+      [ "Scenario::EditScript< CSF::Model, CSF::Model::p_compute >", "class_scenario_1_1_edit_script.html", [
+        [ "Gfx::ChangeCSF", "class_gfx_1_1_change_c_s_f.html", [
+          [ "score::StaticPropertyCommand< Gfx::CSF::Model::p_compute >", "structscore_1_1_static_property_command_3_01_gfx_1_1_c_s_f_1_1_model_1_1p__compute_01_4.html", null ]
         ] ]
       ] ],
       [ "Scenario::EditScript< GeometryFilter::Model, GeometryFilter::Model::p_script >", "class_scenario_1_1_edit_script.html", null ],
@@ -411,6 +417,7 @@ var hierarchy =
         [ "Scenario::Command::MoveIntervalMacro", "class_scenario_1_1_command_1_1_move_interval_macro.html", null ],
         [ "Scenario::Command::MoveStateMacro", "class_scenario_1_1_command_1_1_move_state_macro.html", null ],
         [ "Scenario::Command::RefreshStatesMacro", "class_scenario_1_1_command_1_1_refresh_states_macro.html", null ],
+        [ "Scenario::Command::RemoveProcessAndKeepLinked", "class_scenario_1_1_command_1_1_remove_process_and_keep_linked.html", null ],
         [ "Scenario::Command::ReplaceAddresses", "class_scenario_1_1_command_1_1_replace_addresses.html", null ],
         [ "Scenario::Command::ScenarioPasteContent", "class_scenario_1_1_command_1_1_scenario_paste_content.html", null ],
         [ "Scenario::Command::SplitStateMacro", "class_scenario_1_1_command_1_1_split_state_macro.html", null ],
@@ -537,6 +544,7 @@ var hierarchy =
         [ "Process::GenericProcessComponent_T< ProcessComponent, vst::Model >", "class_process_1_1_generic_process_component___t.html", null ],
         [ "Execution::ProcessComponent", "class_execution_1_1_process_component.html", [
           [ "Gfx::ISFExecutorComponent", "class_gfx_1_1_i_s_f_executor_component.html", [
+            [ "Gfx::CSF::ProcessExecutorComponent", "class_gfx_1_1_c_s_f_1_1_process_executor_component.html", null ],
             [ "Gfx::VSA::ProcessExecutorComponent", "class_gfx_1_1_v_s_a_1_1_process_executor_component.html", null ]
           ] ],
           [ "Pd::Component", "class_pd_1_1_component.html", null ]
@@ -595,6 +603,7 @@ var hierarchy =
     [ "Engine::score_to_ossia::CurveTraits< float >", "struct_engine_1_1score__to__ossia_1_1_curve_traits_3_01float_01_4.html", null ],
     [ "Engine::score_to_ossia::CurveTraits< int >", "struct_engine_1_1score__to__ossia_1_1_curve_traits_3_01int_01_4.html", null ],
     [ "oscr::CustomItem< Item, Control >::custom_mouse_event", "structoscr_1_1_custom_item_1_1custom__mouse__event.html", null ],
+    [ "Threedim::custom_texture", "struct_threedim_1_1custom__texture.html", null ],
     [ "oscr::CustomControlFactory< Node, Refl >", "structoscr_1_1_custom_control_factory.html", null ],
     [ "Scenario::CycleDetector", "struct_scenario_1_1_cycle_detector.html", null ],
     [ "DataStream", "class_data_stream.html", null ],
@@ -1128,8 +1137,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1173,6 +1182,7 @@ var hierarchy =
     [ "Nodes::LFO::v2::Node::ins", "struct_nodes_1_1_l_f_o_1_1v2_1_1_node_1_1ins.html", null ],
     [ "Nodes::RateLimiter::Node::ins", "struct_nodes_1_1_rate_limiter_1_1_node_1_1ins.html", null ],
     [ "Threedim::ArrayToMesh::ins", "struct_threedim_1_1_array_to_mesh_1_1ins.html", null ],
+    [ "Threedim::ArrayToTexture::ins", "struct_threedim_1_1_array_to_texture_1_1ins.html", null ],
     [ "Threedim::ObjLoader::ins", "struct_threedim_1_1_obj_loader_1_1ins.html", null ],
     [ "Threedim::PCLToMesh::ins", "struct_threedim_1_1_p_c_l_to_mesh_1_1ins.html", null ],
     [ "Threedim::StrucSynth::ins", "struct_threedim_1_1_struc_synth_1_1ins.html", null ],
@@ -1285,6 +1295,7 @@ var hierarchy =
       [ "Library::LibraryInterface", "class_library_1_1_library_interface.html", [
         [ "Clap::LibraryHandler", "class_clap_1_1_library_handler.html", null ],
         [ "Faust::LibraryHandler", "class_faust_1_1_library_handler.html", null ],
+        [ "Gfx::CSF::LibraryHandler", "class_gfx_1_1_c_s_f_1_1_library_handler.html", null ],
         [ "Gfx::Filter::LibraryHandler", "class_gfx_1_1_filter_1_1_library_handler.html", null ],
         [ "Gfx::GeometryFilter::LibraryHandler", "class_gfx_1_1_geometry_filter_1_1_library_handler.html", null ],
         [ "Gfx::VSA::LibraryHandler", "class_gfx_1_1_v_s_a_1_1_library_handler.html", null ],
@@ -1371,6 +1382,9 @@ var hierarchy =
         [ "YSFX::DropHandler", "class_y_s_f_x_1_1_drop_handler.html", null ]
       ] ],
       [ "Process::ProcessModelFactory", "class_process_1_1_process_model_factory.html", [
+        [ "Process::ProcessFactory_T< Gfx::CSF::Model >", "class_process_1_1_process_factory___t.html", [
+          [ "Gfx::CSF::ProcessFactory", "struct_gfx_1_1_c_s_f_1_1_process_factory.html", null ]
+        ] ],
         [ "Process::ProcessFactory_T< Gfx::Filter::Model >", "class_process_1_1_process_factory___t.html", [
           [ "Gfx::Filter::ProcessFactory", "struct_gfx_1_1_filter_1_1_process_factory.html", null ]
         ] ],
@@ -1626,6 +1640,7 @@ var hierarchy =
     [ "Gfx::Kinect2::Kinect2Settings", "struct_gfx_1_1_kinect2_1_1_kinect2_settings.html", null ],
     [ "Patternist::Lane", "struct_patternist_1_1_lane.html", null ],
     [ "Faust::LanguageSpec", "struct_faust_1_1_language_spec.html", null ],
+    [ "Gfx::CSF::LanguageSpec", "struct_gfx_1_1_c_s_f_1_1_language_spec.html", null ],
     [ "Gfx::GeometryFilter::LanguageSpec", "struct_gfx_1_1_geometry_filter_1_1_language_spec.html", null ],
     [ "Gfx::VSA::LanguageSpec", "struct_gfx_1_1_v_s_a_1_1_language_spec.html", null ],
     [ "JS::LanguageSpec", "struct_j_s_1_1_language_spec.html", null ],
@@ -1886,6 +1901,7 @@ var hierarchy =
         [ "score::gfx::ScreenNode::BasicRenderer", "classscore_1_1gfx_1_1_screen_node_1_1_basic_renderer.html", null ],
         [ "score::gfx::ScreenNode::ScaledRenderer", "classscore_1_1gfx_1_1_screen_node_1_1_scaled_renderer.html", null ]
       ] ],
+      [ "score::gfx::RenderedCSFNode", "structscore_1_1gfx_1_1_rendered_c_s_f_node.html", null ],
       [ "score::gfx::RenderedISFNode", "structscore_1_1gfx_1_1_rendered_i_s_f_node.html", null ],
       [ "score::gfx::SimpleRenderedISFNode", "structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html", null ],
       [ "score::gfx::SimpleRenderedVSANode", "structscore_1_1gfx_1_1_simple_rendered_v_s_a_node.html", null ],
@@ -2082,6 +2098,7 @@ var hierarchy =
     [ "Path< Cable >", "class_path.html", null ],
     [ "Path< CommentBlockModel >", "class_path.html", null ],
     [ "Path< ControlSurface::Model >", "class_path.html", null ],
+    [ "Path< CSF::Model >", "class_path.html", null ],
     [ "Path< Curve::Model >", "class_path.html", null ],
     [ "Path< DocumentDelegateModel >", "class_path.html", null ],
     [ "Path< DocumentModel >", "class_path.html", null ],
@@ -2097,8 +2114,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model >", "class_path.html", null ],
+    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -2750,6 +2767,7 @@ var hierarchy =
         [ "score::EmptyRectItem", "classscore_1_1_empty_rect_item.html", [
           [ "Media::Step::Item", "class_media_1_1_step_1_1_item.html", null ],
           [ "Process::DefaultEffectItem", "class_process_1_1_default_effect_item.html", null ],
+          [ "Scenario::NodalContainer", "struct_scenario_1_1_nodal_container.html", null ],
           [ "Scenario::NodalIntervalView", "class_scenario_1_1_nodal_interval_view.html", null ],
           [ "vst3::VSTEffectItem", "classvst3_1_1_v_s_t_effect_item.html", null ],
           [ "vst::EffectItem", "classvst_1_1_effect_item.html", null ]
@@ -3011,6 +3029,7 @@ var hierarchy =
                 [ "Mapping::ProcessModel", "class_mapping_1_1_process_model.html", null ]
               ] ],
               [ "FaustDSP::Fx< DSP >", "class_faust_d_s_p_1_1_fx.html", null ],
+              [ "Gfx::CSF::Model", "class_gfx_1_1_c_s_f_1_1_model.html", null ],
               [ "Gfx::Filter::Model", "class_gfx_1_1_filter_1_1_model.html", null ],
               [ "Gfx::GeometryFilter::Model", "class_gfx_1_1_geometry_filter_1_1_model.html", null ],
               [ "Gfx::ModelDisplay::Model", "class_gfx_1_1_model_display_1_1_model.html", null ],
@@ -3206,6 +3225,8 @@ var hierarchy =
       [ "Scenario::CommentBlockView", "class_scenario_1_1_comment_block_view.html", null ],
       [ "Scenario::ConditionView", "class_scenario_1_1_condition_view.html", null ],
       [ "Scenario::DisplayedElementsPresenter", "class_scenario_1_1_displayed_elements_presenter.html", null ],
+      [ "Scenario::DropOnCable", "class_scenario_1_1_drop_on_cable.html", null ],
+      [ "Scenario::DropOnNode", "class_scenario_1_1_drop_on_node.html", null ],
       [ "Scenario::EditionSettings", "class_scenario_1_1_edition_settings.html", null ],
       [ "Scenario::EventActions", "class_scenario_1_1_event_actions.html", null ],
       [ "Scenario::EventPresenter", "class_scenario_1_1_event_presenter.html", null ],
@@ -3438,7 +3459,8 @@ var hierarchy =
       [ "Explorer::DeviceExplorerFilterProxyModel", "class_explorer_1_1_device_explorer_filter_proxy_model.html", null ],
       [ "Library::PresetFilterProxy", "class_library_1_1_preset_filter_proxy.html", null ],
       [ "Library::RecursiveFilterProxy", "class_library_1_1_recursive_filter_proxy.html", [
-        [ "Library::FileSystemRecursiveFilterProxy", "class_library_1_1_file_system_recursive_filter_proxy.html", null ]
+        [ "Library::FileSystemRecursiveFilterProxy", "class_library_1_1_file_system_recursive_filter_proxy.html", null ],
+        [ "Library::ProcessFilterProxy", "class_library_1_1_process_filter_proxy.html", null ]
       ] ]
     ] ],
     [ "QSpinBox", null, [
