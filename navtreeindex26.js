@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"structscore_1_1_q_graphics_slider_base.html":[12,0,53,222],
 "structscore_1_1_q_graphics_slider_base.html":[11,0,12,217],
 "structscore_1_1_recursive_watch_1_1_callbacks.html":[12,0,53,238,0],
 "structscore_1_1_recursive_watch_1_1_callbacks.html":[11,0,12,233,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "structscore_1_1gfx_1_1_r_g_b24_decoder.html#aff3affc30e6d8a900970cefcbbc325fb":[11,0,12,0,59,1],
 "structscore_1_1gfx_1_1_r_g_b24_decoder.html#aff3affc30e6d8a900970cefcbbc325fb":[12,0,53,2,59,1],
 "structscore_1_1gfx_1_1_refcounted_frame.html":[12,0,53,2,52],
-"structscore_1_1gfx_1_1_refcounted_frame.html":[11,0,12,0,52],
-"structscore_1_1gfx_1_1_render_state.html":[12,0,53,2,57]
+"structscore_1_1gfx_1_1_refcounted_frame.html":[11,0,12,0,52]
 };

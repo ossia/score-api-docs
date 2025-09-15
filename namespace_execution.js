@@ -41,7 +41,7 @@ var namespace_execution =
     [ "ScenarioComponentBase", "class_execution_1_1_scenario_component_base.html", null ],
     [ "SetupContext", "struct_execution_1_1_setup_context.html", "struct_execution_1_1_setup_context" ],
     [ "SoundComponent", "class_execution_1_1_sound_component.html", null ],
-    [ "StateComponent", "class_execution_1_1_state_component.html", "class_execution_1_1_state_component" ],
+    [ "StateComponent", "class_execution_1_1_state_component.html", null ],
     [ "StateComponentBase", "class_execution_1_1_state_component_base.html", "class_execution_1_1_state_component_base" ],
     [ "StepComponent", "class_execution_1_1_step_component.html", null ],
     [ "TimeSyncComponent", "class_execution_1_1_time_sync_component.html", "class_execution_1_1_time_sync_component" ],

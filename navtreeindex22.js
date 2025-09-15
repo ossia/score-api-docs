@@ -1,5 +1,6 @@
 var NAVTREEINDEX22 =
 {
+"struct_metadata_3_01_category__k_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[12,0,151],
 "struct_metadata_3_01_category__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html":[12,0,152],
 "struct_metadata_3_01_concrete_key__k_00_01_faust_d_s_p_1_1_fx_3_01mydsp_01_4_01_4.html":[12,0,153],
 "struct_metadata_3_01_concrete_key__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html":[12,0,154],
@@ -248,6 +249,5 @@ var NAVTREEINDEX22 =
 "struct_rendered_depth_node_1_1_pass.html":[12,0,214,0],
 "struct_rollback_strategy_1_1_simple.html":[12,0,51,0],
 "struct_scenario_1_1_address_accessor_curve_creator.html":[11,0,11,1],
-"struct_scenario_1_1_address_accessor_curve_creator.html":[12,0,52,3],
-"struct_scenario_1_1_base_scenario_container_1_1no__init.html":[11,0,11,7,0]
+"struct_scenario_1_1_address_accessor_curve_creator.html":[12,0,52,3]
 };

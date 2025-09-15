@@ -6,6 +6,7 @@ var classscore_1_1_g_u_i_application_plugin =
     [ "initialize", "classscore_1_1_g_u_i_application_plugin.html#a65db099590d76bf2c4361b161d35fd39", null ],
     [ "makeGUIElements", "classscore_1_1_g_u_i_application_plugin.html#adfcaff7c9e36c36d8f0138bebeb7a27a", null ],
     [ "on_activeWindowChanged", "classscore_1_1_g_u_i_application_plugin.html#afbb4ded4dfe511c7740aa2ff31a48f99", null ],
+    [ "on_closeDocument", "classscore_1_1_g_u_i_application_plugin.html#acfa0583d5e4f3c1454ef24ef62eef57d", null ],
     [ "on_createdDocument", "classscore_1_1_g_u_i_application_plugin.html#aff4905cf17ebfa809a129c858736e44e", null ],
     [ "on_documentChanged", "classscore_1_1_g_u_i_application_plugin.html#a45e268c5b923805dc82b45af79fe1e96", null ],
     [ "on_initDocument", "classscore_1_1_g_u_i_application_plugin.html#a8eaed2a17567ffc080b2911a0755ae86", null ],

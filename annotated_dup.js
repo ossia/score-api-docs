@@ -339,7 +339,7 @@ var annotated_dup =
       [ "ScenarioComponentBase", "class_execution_1_1_scenario_component_base.html", null ],
       [ "SetupContext", "struct_execution_1_1_setup_context.html", "struct_execution_1_1_setup_context" ],
       [ "SoundComponent", "class_execution_1_1_sound_component.html", null ],
-      [ "StateComponent", "class_execution_1_1_state_component.html", "class_execution_1_1_state_component" ],
+      [ "StateComponent", "class_execution_1_1_state_component.html", null ],
       [ "StateComponentBase", "class_execution_1_1_state_component_base.html", "class_execution_1_1_state_component_base" ],
       [ "StepComponent", "class_execution_1_1_step_component.html", null ],
       [ "TimeSyncComponent", "class_execution_1_1_time_sync_component.html", "class_execution_1_1_time_sync_component" ],
@@ -442,6 +442,7 @@ var annotated_dup =
     ] ],
     [ "Gfx", "namespace_gfx.html", [
       [ "CSF", null, [
+        [ "DropHandler", "class_gfx_1_1_c_s_f_1_1_drop_handler.html", null ],
         [ "LanguageSpec", "struct_gfx_1_1_c_s_f_1_1_language_spec.html", null ],
         [ "LibraryHandler", "class_gfx_1_1_c_s_f_1_1_library_handler.html", null ],
         [ "Model", "class_gfx_1_1_c_s_f_1_1_model.html", null ],

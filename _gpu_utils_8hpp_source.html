@@ -1392,12 +1392,12 @@ $(document).ready(function(){initNavTree('_gpu_utils_8hpp_source.html',''); init
 <div class="line"><a id="l01280" name="l01280"></a><span class="lineno"> 1280</span>  <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::has_processor_to_gui_bus&lt;Node_T&gt;)</div>
 <div class="line"><a id="l01281" name="l01281"></a><span class="lineno"> 1281</span>  {</div>
 <div class="line"><a id="l01282" name="l01282"></a><span class="lineno"> 1282</span>    <span class="keyword">auto</span>&amp; process = parent.processModel;</div>
-<div class="line"><a id="l01283" name="l01283"></a><span class="lineno"> 1283</span>    eff-&gt;send_message = [&amp;process](<span class="keyword">auto</span>&amp;&amp; b) <span class="keyword">mutable</span> {</div>
+<div class="line"><a id="l01283" name="l01283"></a><span class="lineno"> 1283</span>    eff-&gt;send_message = [ptr = QPointer{&amp;process}](<span class="keyword">auto</span>&amp;&amp; b) <span class="keyword">mutable</span> {</div>
 <div class="line"><a id="l01284" name="l01284"></a><span class="lineno"> 1284</span>      <span class="comment">// FIXME right now all the rendering is done in the UI thread, which is very MEH</span></div>
 <div class="line"><a id="l01285" name="l01285"></a><span class="lineno"> 1285</span>      <span class="comment">//    this-&gt;in_edit([&amp;process, bb = std::move(b)]() mutable {</span></div>
 <div class="line"><a id="l01286" name="l01286"></a><span class="lineno"> 1286</span> </div>
-<div class="line"><a id="l01287" name="l01287"></a><span class="lineno"> 1287</span>      <span class="keywordflow">if</span>(process.to_ui)</div>
-<div class="line"><a id="l01288" name="l01288"></a><span class="lineno"> 1288</span>        MessageBusSender{process.to_ui}(std::move(b));</div>
+<div class="line"><a id="l01287" name="l01287"></a><span class="lineno"> 1287</span>      <span class="keywordflow">if</span>(ptr &amp;&amp; ptr-&gt;to_ui)</div>
+<div class="line"><a id="l01288" name="l01288"></a><span class="lineno"> 1288</span>        MessageBusSender{ptr-&gt;to_ui}(std::move(b));</div>
 <div class="line"><a id="l01289" name="l01289"></a><span class="lineno"> 1289</span>      <span class="comment">//    });</span></div>
 <div class="line"><a id="l01290" name="l01290"></a><span class="lineno"> 1290</span>    };</div>
 <div class="line"><a id="l01291" name="l01291"></a><span class="lineno"> 1291</span> </div>

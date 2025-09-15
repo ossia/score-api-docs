@@ -1,5 +1,6 @@
 var NAVTREEINDEX25 =
 {
+"structoscr_1_1_node_item.html":[11,0,8,35],
 "structoscr_1_1_normalizer_from_mapper.html":[12,0,41,36],
 "structoscr_1_1_normalizer_from_mapper.html":[11,0,8,36],
 "structoscr_1_1_outlet_init_func.html":[12,0,41,37],
@@ -248,6 +249,5 @@ var NAVTREEINDEX25 =
 "structscore_1_1_property_command___t_1_1command.html":[12,0,53,198,0],
 "structscore_1_1_property_command___t_1_1command.html":[11,0,12,193,0],
 "structscore_1_1_q_graphics_line_edit.html":[11,0,12,204],
-"structscore_1_1_q_graphics_line_edit.html":[12,0,53,209],
-"structscore_1_1_q_graphics_slider_base.html":[12,0,53,222]
+"structscore_1_1_q_graphics_line_edit.html":[12,0,53,209]
 };

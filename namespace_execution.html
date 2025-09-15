@@ -189,8 +189,8 @@ Live modification during execution.</h1>
 <div class="line">         v</div>
 <div class="line">[ The execution algorithm applies the</div>
 <div class="line">  commands at the end of the current tick ]</div>
-<div class="ttc" id="anamespace_execution_html"><div class="ttname"><a href="namespace_execution.html">Execution</a></div><div class="ttdoc">Components used for the execution of a score.</div><div class="ttdef"><b>Definition</b> ProcessComponent.cpp:12</div></div>
-<div class="ttc" id="astruct_execution_1_1_context_html_a1a0fd8f494c0a427dc09b7da3e94bf36"><div class="ttname"><a href="struct_execution_1_1_context.html#a1a0fd8f494c0a427dc09b7da3e94bf36">Execution::Context::executionQueue</a></div><div class="ttdeci">ExecutionCommandQueue &amp; executionQueue</div><div class="ttdef"><b>Definition</b> ExecutionContext.hpp:91</div></div>
+<div class="ttc" id="anamespace_execution_html"><div class="ttname"><a href="namespace_execution.html">Execution</a></div><div class="ttdoc">Components used for the execution of a score.</div><div class="ttdef"><b>Definition</b> ProcessComponent.cpp:14</div></div>
+<div class="ttc" id="astruct_execution_1_1_context_html_a1a0fd8f494c0a427dc09b7da3e94bf36"><div class="ttname"><a href="struct_execution_1_1_context.html#a1a0fd8f494c0a427dc09b7da3e94bf36">Execution::Context::executionQueue</a></div><div class="ttdeci">ExecutionCommandQueue &amp; executionQueue</div><div class="ttdef"><b>Definition</b> ExecutionContext.hpp:122</div></div>
 </div><!-- fragment --><p>For modification of values, for instance the duration of a Interval, this is easily visible. See for instance <a class="el" href="class_execution_1_1_interval_component_base.html">Execution::IntervalComponentBase</a> 's constructor. <br  />
  For creation and removal of objects, this should be handled automatically by the various ComponentHierarchy classes which take care of creating and removing the objects in the correct order. The Component classes just have to provide functions that will do the actual instantiation, and pre- &amp; post- removal steps. <br  />
 <br  />
@@ -320,9 +320,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>Component</b> = <a c
 <tr class="memitem:a50ca0026d1e883ca0aa42e5a2331cde4" id="r_a50ca0026d1e883ca0aa42e5a2331cde4"><td class="memItemLeft" align="right" valign="top"><a id="a50ca0026d1e883ca0aa42e5a2331cde4" name="a50ca0026d1e883ca0aa42e5a2331cde4"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>reverse_time_function</b> = smallfun::function&lt; <a class="el" href="struct_time_val.html">TimeVal</a>(const ossia::time_value &amp;)&gt;</td></tr>
 <tr class="separator:a50ca0026d1e883ca0aa42e5a2331cde4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c16f797b9843a87b8be5b40e4cb0db9" id="r_a2c16f797b9843a87b8be5b40e4cb0db9"><td class="memItemLeft" align="right" valign="top"><a id="a2c16f797b9843a87b8be5b40e4cb0db9" name="a2c16f797b9843a87b8be5b40e4cb0db9"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ExecutionCommandQueue</b> = ossia::spsc_queue&lt; ExecutionCommand, 1024 &gt;</td></tr>
-<tr class="separator:a2c16f797b9843a87b8be5b40e4cb0db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83ea392faddfb7b38444deafa43cc697" id="r_a83ea392faddfb7b38444deafa43cc697"><td class="memItemLeft" align="right" valign="top"><a id="a83ea392faddfb7b38444deafa43cc697" name="a83ea392faddfb7b38444deafa43cc697"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ExecutionCommandQueue</b> = moodycamel::ConcurrentQueue&lt; ExecutionCommand &gt;</td></tr>
+<tr class="separator:a83ea392faddfb7b38444deafa43cc697"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03e7e1955fd00e9dd36a95013e8f30f5" id="r_a03e7e1955fd00e9dd36a95013e8f30f5"><td class="memItemLeft" align="right" valign="top"><a id="a03e7e1955fd00e9dd36a95013e8f30f5" name="a03e7e1955fd00e9dd36a95013e8f30f5"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>EditionCommandQueue</b> = moodycamel::ConcurrentQueue&lt; ExecutionCommand &gt;</td></tr>
 <tr class="separator:a03e7e1955fd00e9dd36a95013e8f30f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -375,10 +375,10 @@ std::optional&lt; ossia::destination &gt;&#160;</td><td class="memItemRight" val
 template&lt;typename T , typename Impl &gt; </td></tr>
 <tr class="memitem:a3c3b2d1098d41bb9fff19378443e015e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>set_destination_impl</b> (const <a class="el" href="struct_execution_1_1_context.html">Context</a> &amp;plug, const <a class="el" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a> &amp;address, const T &amp;port, Impl &amp;&amp;append)</td></tr>
 <tr class="separator:a3c3b2d1098d41bb9fff19378443e015e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af343da435d3bd29b671c70b0a41f41db" id="r_af343da435d3bd29b671c70b0a41f41db"><td class="memTemplParams" colspan="2"><a id="af343da435d3bd29b671c70b0a41f41db" name="af343da435d3bd29b671c70b0a41f41db"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:af343da435d3bd29b671c70b0a41f41db"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>gc</b> (T &amp;&amp;t) noexcept</td></tr>
-<tr class="separator:af343da435d3bd29b671c70b0a41f41db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf6eef690325494540c17034bb4bfadc" id="r_acf6eef690325494540c17034bb4bfadc"><td class="memTemplParams" colspan="2"><a id="acf6eef690325494540c17034bb4bfadc" name="acf6eef690325494540c17034bb4bfadc"></a>
+template&lt;typename... T&gt; </td></tr>
+<tr class="memitem:acf6eef690325494540c17034bb4bfadc"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>gc</b> (T &amp;&amp;... t) noexcept</td></tr>
+<tr class="separator:acf6eef690325494540c17034bb4bfadc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a670e4e9cfe63ea513e35ae9d4d6ec953" id="r_a670e4e9cfe63ea513e35ae9d4d6ec953"><td class="memItemLeft" align="right" valign="top"><a id="a670e4e9cfe63ea513e35ae9d4d6ec953" name="a670e4e9cfe63ea513e35ae9d4d6ec953"></a>
 Audio::tick_fun&#160;</td><td class="memItemRight" valign="bottom"><b>makeExecutionTick</b> (ossia::tick_setup_options opt, <a class="el" href="class_execution_1_1_document_plugin.html">Execution::DocumentPlugin</a> &amp;plug, const std::shared_ptr&lt; Execution::BaseScenarioElement &gt; &amp;scenar)</td></tr>
 <tr class="separator:a670e4e9cfe63ea513e35ae9d4d6ec953"><td class="memSeparator" colspan="2">&#160;</td></tr>

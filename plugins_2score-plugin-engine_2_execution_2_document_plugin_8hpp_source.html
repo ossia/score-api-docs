@@ -238,22 +238,23 @@ $(document).ready(function(){initNavTree('plugins_2score-plugin-engine_2_executi
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  <span class="keywordtype">void</span> makeGraph();</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  <span class="keywordtype">void</span> initExecState();</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  <span class="keywordtype">void</span> recreateBase();</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  <a class="code hl_namespace" href="namespacestd.html">std</a>::shared_ptr&lt;ContextData&gt; m_ctxData;</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  <a class="code hl_namespace" href="namespacestd.html">std</a>::shared_ptr&lt;BaseScenarioElement&gt; m_base;</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>  <a class="code hl_namespace" href="namespacestd.html">std</a>::vector&lt;ExecutionAction*&gt; m_actions;</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  <span class="keywordtype">int</span> m_tid{};</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>};</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  <span class="keywordtype">void</span> processEditCommands();</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  <a class="code hl_namespace" href="namespacestd.html">std</a>::shared_ptr&lt;ContextData&gt; m_ctxData;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>  <a class="code hl_namespace" href="namespacestd.html">std</a>::shared_ptr&lt;BaseScenarioElement&gt; m_base;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <a class="code hl_namespace" href="namespacestd.html">std</a>::vector&lt;ExecutionAction*&gt; m_actions;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  <span class="keywordtype">int</span> m_tid{};</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>};</div>
 </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>}</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>}</div>
 <div class="ttc" id="aclass_execution_1_1_document_plugin_html"><div class="ttname"><a href="class_execution_1_1_document_plugin.html">Execution::DocumentPlugin</a></div><div class="ttdef"><b>Definition</b> plugins/score-plugin-engine/Execution/DocumentPlugin.hpp:61</div></div>
 <div class="ttc" id="aclass_execution_1_1_execution_controller_html"><div class="ttname"><a href="class_execution_1_1_execution_controller.html">Execution::ExecutionController</a></div><div class="ttdef"><b>Definition</b> ExecutionController.hpp:31</div></div>
 <div class="ttc" id="aclass_execution_1_1_settings_1_1_model_html"><div class="ttname"><a href="class_execution_1_1_settings_1_1_model.html">Execution::Settings::Model</a></div><div class="ttdef"><b>Definition</b> ExecutorModel.hpp:64</div></div>
 <div class="ttc" id="aclass_scenario_1_1_interval_model_html"><div class="ttname"><a href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a></div><div class="ttdef"><b>Definition</b> IntervalModel.hpp:50</div></div>
 <div class="ttc" id="aclassscore_1_1_document_plugin_html"><div class="ttname"><a href="classscore_1_1_document_plugin.html">score::DocumentPlugin</a></div><div class="ttdoc">Extend a document with custom data and systems.</div><div class="ttdef"><b>Definition</b> DocumentPluginBase.hpp:24</div></div>
 <div class="ttc" id="anamespace_device_html"><div class="ttname"><a href="namespace_device.html">Device</a></div><div class="ttdoc">Manipulation of Devices from Qt.</div><div class="ttdef"><b>Definition</b> AddressSettings.cpp:14</div></div>
-<div class="ttc" id="anamespace_execution_html"><div class="ttname"><a href="namespace_execution.html">Execution</a></div><div class="ttdoc">Components used for the execution of a score.</div><div class="ttdef"><b>Definition</b> ProcessComponent.cpp:12</div></div>
+<div class="ttc" id="anamespace_execution_html"><div class="ttname"><a href="namespace_execution.html">Execution</a></div><div class="ttdoc">Components used for the execution of a score.</div><div class="ttdef"><b>Definition</b> ProcessComponent.cpp:14</div></div>
 <div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition</b> score-plugin-dataflow/Dataflow/PortItem.hpp:13</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition</b> Application.cpp:97</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace.</div></div>

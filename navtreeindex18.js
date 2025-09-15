@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"dir_8484db1e75aadb3aea19ef01bc6e5ef6.html":[13,0,0,2,4,0],
 "dir_86583ab4e4f10d5ef756dafa4be9fbc8.html":[13,0,0,2,32,4,5],
 "dir_872cc9259b8551f1de6c095c6547ec3e.html":[13,0,0,2,8,0],
 "dir_87db0560704d691046d100ef0190663f.html":[13,0,0,2,36,0],
@@ -187,8 +188,8 @@ var NAVTREEINDEX18 =
 "dir_ff56996379f66a234579aa3f0401ac06.html":[13,0,0,2,32,4,3,9],
 "element_finding_helper_8hpp_source.html":[13,0,0,2,32,4,11,1],
 "files.html":[13,0],
-"functions.html":[12,3,0,0],
 "functions.html":[12,3,0],
+"functions.html":[12,3,0,0],
 "functions_c.html":[12,3,0,1],
 "functions_d.html":[12,3,0,2],
 "functions_e.html":[12,3,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "lib_2score_2plugins_2documentdelegate_2plugin_2_document_plugin_8hpp_source.html":[13,0,0,1,1,8,1,0,0],
 "lib_2score_2tools_2_file_8hpp_source.html":[13,0,0,1,1,12,8],
 "lib_2score_2tools_2_metadata_8hpp_source.html":[13,0,0,1,1,12,17],
-"lib_2score_2widgets_2_control_widgets_8hpp_source.html":[13,0,0,1,1,13,5],
-"lib_2score_2widgets_2_layout_8hpp_source.html":[13,0,0,1,1,13,12]
+"lib_2score_2widgets_2_control_widgets_8hpp_source.html":[13,0,0,1,1,13,5]
 };

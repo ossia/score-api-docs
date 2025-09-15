@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"lib_2score_2widgets_2_layout_8hpp_source.html":[13,0,0,1,1,13,12],
 "lv2__atom__helpers_8hpp_source.html":[13,0,0,2,22,0,4],
 "models_8hpp_source.html":[13,0,0,1,0,3,5],
 "mvp_8hpp_source.html":[13,0,0,1,0,3,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "score-plugin-midi_2_midi_2_commands_2_command_factory_8hpp_source.html":[13,0,0,2,25,0,0,1],
 "score-plugin-nodal_2_nodal_2_command_factory_8hpp_source.html":[13,0,0,2,26,0,0],
 "score-plugin-nodal_2_nodal_2_executor_8hpp_source.html":[13,0,0,2,26,0,2],
-"score-plugin-nodal_2_nodal_2_layer_8hpp_source.html":[13,0,0,2,26,0,3],
-"score-plugin-nodal_2_nodal_2_process_8hpp_source.html":[13,0,0,2,26,0,6]
+"score-plugin-nodal_2_nodal_2_layer_8hpp_source.html":[13,0,0,2,26,0,3]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"score-plugin-nodal_2_nodal_2_process_8hpp_source.html":[13,0,0,2,26,0,6],
 "score-plugin-nodal_2_nodal_2_view_8hpp_source.html":[13,0,0,2,26,0,7],
 "score-plugin-packagemanager_2_package_manager_2_factory_8hpp_source.html":[13,0,0,2,27,0,0],
 "score-plugin-packagemanager_2_package_manager_2_model_8hpp_source.html":[13,0,0,2,27,0,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "struct_execution_1_1dfs__visitor__state.html":[11,0,4,7],
 "struct_execution_1_1dfs__visitor__state.html":[12,0,15,9],
 "struct_execution_1_1interval__duration__data.html":[12,0,15,18],
-"struct_execution_1_1interval__duration__data.html":[11,0,4,16],
-"struct_explorer_1_1_address_settings_widget_1_1no__widgets__t.html":[12,0,16,13,0]
+"struct_execution_1_1interval__duration__data.html":[11,0,4,16]
 };
