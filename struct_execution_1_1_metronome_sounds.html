@@ -170,7 +170,7 @@ const <a class="el" href="struct_media_1_1_audio_file_1_1_view_handle.html">Medi
 <div class="line">    <span class="keywordflow">while</span>(f-&gt;samples() != f-&gt;decodedSamples())</div>
 <div class="line">    {</div>
 <div class="line">      std::this_thread::sleep_for(std::chrono::milliseconds(1));</div>
-<div class="line">      qApp-&gt;processEvents();</div>
+<div class="line">      QCoreApplication::instance()-&gt;processEvents();</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">return</span> f;</div>
 <div class="line">  }()}</div>
@@ -197,7 +197,7 @@ const <a class="el" href="struct_media_1_1_audio_file_1_1_view_handle.html">Medi
 <div class="line">    <span class="keywordflow">while</span>(f-&gt;samples() != f-&gt;decodedSamples())</div>
 <div class="line">    {</div>
 <div class="line">      std::this_thread::sleep_for(std::chrono::milliseconds(1));</div>
-<div class="line">      qApp-&gt;processEvents();</div>
+<div class="line">      QCoreApplication::instance()-&gt;processEvents();</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">return</span> f;</div>
 <div class="line">  }()}</div>
