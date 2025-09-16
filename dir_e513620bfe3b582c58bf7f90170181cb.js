@@ -14,7 +14,6 @@ var dir_e513620bfe3b582c58bf7f90170181cb =
     [ "State", "dir_a21f65ea51c30481725f808f1c3cda39.html", "dir_a21f65ea51c30481725f808f1c3cda39" ],
     [ "Style", "dir_c522bd54bdc797949df25f90615f4126.html", "dir_c522bd54bdc797949df25f90615f4126" ],
     [ "Tools", "dir_df08b49d3796e3f42628005218e02f2f.html", "dir_df08b49d3796e3f42628005218e02f2f" ],
-    [ "WidgetLayer", "dir_65c22964d871eb1f6e86ccbec19b4ad6.html", "dir_65c22964d871eb1f6e86ccbec19b4ad6" ],
     [ "score-lib-process/Process/ApplicationPlugin.hpp", "score-lib-process_2_process_2_application_plugin_8hpp_source.html", null ],
     [ "ControlMessage.hpp", "_control_message_8hpp_source.html", null ],
     [ "plugins/score-lib-process/Process/DocumentPlugin.hpp", "plugins_2score-lib-process_2_process_2_document_plugin_8hpp_source.html", null ],

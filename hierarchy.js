@@ -1137,8 +1137,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1331,7 +1331,6 @@ var hierarchy =
         [ "Process::LayerFactory_T< Model_T, LayerPresenter_T, LayerView_T, HeaderDelegate_T >", "class_process_1_1_layer_factory___t.html", null ],
         [ "Process::LayerFactory_T< Model_T, default_t, default_t, default_t >", "class_process_1_1_layer_factory___t_3_01_model___t_00_01default__t_00_01default__t_00_01default__t_01_4.html", null ],
         [ "Scenario::ScenarioTemporalLayerFactory", "class_scenario_1_1_scenario_temporal_layer_factory.html", null ],
-        [ "WidgetLayer::LayerFactory< Model_T, Widget_T >", "class_widget_layer_1_1_layer_factory.html", null ],
         [ "oscr::LayerFactory< Info >", "classoscr_1_1_layer_factory.html", null ],
         [ "oscr::ScoreLayerFactory< T >", "classoscr_1_1_score_layer_factory.html", null ]
       ] ],
@@ -2115,8 +2114,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model >", "class_path.html", null ],
+    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -2659,8 +2658,7 @@ var hierarchy =
         ] ],
         [ "Scenario::ScenarioView", "class_scenario_1_1_scenario_view.html", null ],
         [ "Scenario::TempoView", "class_scenario_1_1_tempo_view.html", null ],
-        [ "Spline::View", "class_spline_1_1_view.html", null ],
-        [ "WidgetLayer::View", "class_widget_layer_1_1_view.html", null ]
+        [ "Spline::View", "class_spline_1_1_view.html", null ]
       ] ],
       [ "Process::MiniLayer", "class_process_1_1_mini_layer.html", [
         [ "Scenario::MiniScenarioView", "class_scenario_1_1_mini_scenario_view.html", null ]
@@ -3194,8 +3192,7 @@ var hierarchy =
           [ "Ui::ValueDisplay::Node::Presenter", "struct_ui_1_1_value_display_1_1_node_1_1_presenter.html", null ]
         ] ],
         [ "Scenario::ScenarioPresenter", "class_scenario_1_1_scenario_presenter.html", null ],
-        [ "Spline::Presenter", "class_spline_1_1_presenter.html", null ],
-        [ "WidgetLayer::Presenter< Process_T, Widget_T >", "class_widget_layer_1_1_presenter.html", null ]
+        [ "Spline::Presenter", "class_spline_1_1_presenter.html", null ]
       ] ],
       [ "Process::LayerView", "class_process_1_1_layer_view.html", null ],
       [ "Process::MagnetismAdjuster", "class_process_1_1_magnetism_adjuster.html", null ],

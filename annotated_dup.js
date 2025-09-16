@@ -2619,11 +2619,6 @@ var annotated_dup =
       [ "XYZSlider", "struct_widget_factory_1_1_x_y_z_slider.html", null ],
       [ "XYZSpinboxes", "struct_widget_factory_1_1_x_y_z_spinboxes.html", null ]
     ] ],
-    [ "WidgetLayer", null, [
-      [ "LayerFactory", "class_widget_layer_1_1_layer_factory.html", null ],
-      [ "Presenter", "class_widget_layer_1_1_presenter.html", null ],
-      [ "View", "class_widget_layer_1_1_view.html", null ]
-    ] ],
     [ "YSFX", null, [
       [ "Executor", null, [
         [ "Component", "class_y_s_f_x_1_1_executor_1_1_component.html", null ],
