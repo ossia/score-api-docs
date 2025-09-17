@@ -299,98 +299,100 @@ $(document).ready(function(){initNavTree('_drop_on_cable_8hpp_source.html',''); 
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>      <span class="keywordflow">if</span>(old.inlets().size() &gt; 0)</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>      {</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        <span class="keyword">auto</span>&amp; old_dst = old.inlets()[0];</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        <span class="keywordflow">if</span>(old_dst-&gt;type() == type)</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        {</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>          <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; edge : old.inlets()[0]-&gt;cables())</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>          {</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>            <span class="keyword">auto</span>&amp; cable = edge.find(m_context);</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            <span class="keyword">auto</span>&amp; src = cable.source().find(m_context);</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            <span class="keywordflow">if</span>(src.type() == type)</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            {</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>              m.createCable(sm, src, *dst);</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            }</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>          }</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>          m.setProperty&lt;Process::Port::p_address&gt;(*dst, old_dst-&gt;address());</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        }</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>      }</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    }</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="keywordflow">if</span>(p-&gt;outlets().size() &gt; 0)</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    {</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>      <span class="keyword">const</span> <span class="keyword">auto</span> src = p-&gt;outlets()[0];</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>      <span class="keyword">const</span> <span class="keyword">auto</span> type = src-&gt;type();</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>      <span class="keywordflow">if</span>(old.outlets().size() &gt; 0)</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>      {</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        <span class="keyword">auto</span>&amp; old_src = old.outlets()[0];</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        <span class="keywordflow">if</span>(old_src-&gt;type() == type)</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        {</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>          <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; edge : old.outlets()[0]-&gt;cables())</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>          {</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>            <span class="keyword">auto</span>&amp; cable = edge.find(m_context);</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>            <span class="keyword">auto</span>&amp; dst = cable.sink().find(m_context);</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>            <span class="keywordflow">if</span>(dst.type() == type)</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>            {</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>              m.createCable(sm, *src, dst);</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>            }</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>          }</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>          m.setProperty&lt;Process::Port::p_address&gt;(*src, old_src-&gt;address());</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>          <span class="keywordflow">if</span>(type == Process::PortType::Audio)</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>          {</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>            <span class="keyword">auto</span> old_audio_src = safe_cast&lt;Process::AudioOutlet*&gt;(old_src);</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>            <span class="keyword">auto</span> audio_src = safe_cast&lt;Process::AudioOutlet*&gt;(src);</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>            m.setProperty&lt;Process::AudioOutlet::p_propagate&gt;(</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                *audio_src, old_audio_src-&gt;propagate());</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>          }</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>          src-&gt;setAddress(old_src-&gt;address());</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        }</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>      }</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    }</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>  }</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  <span class="keywordtype">void</span> drop(<span class="keyword">const</span> QMimeData&amp; mime)</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>  {</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <span class="comment">// FIXME drop in nodal vs drop in scenario</span></div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    <span class="keyword">auto</span>&amp; model = item.model();</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    m_interval = qobject_cast&lt;Scenario::IntervalModel*&gt;(model.parent());</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    <span class="keywordflow">if</span>(!m_interval)</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    <span class="comment">// Something tricky here is that we have to separate mime data processing and command execution:</span></div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <span class="comment">// mime data processing has to happen synchronously as it gets deleted after the NodeItem::dropEvent function returns.</span></div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    <span class="comment">// On the other hand, we cannot run the command synchronously as it may delete the cable, which causes</span></div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <span class="comment">// the cableitem to be deleted too and thus it cannot finish the dropEvent without crashing.</span></div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; handlers = m_context.app.interfaces&lt;<a class="code hl_class" href="class_process_1_1_process_drop_handler_list.html">Process::ProcessDropHandlerList</a>&gt;();</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    <span class="keywordflow">if</span>(mime.hasFormat(score::mime::layerdata()))</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    {</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>      <span class="comment">// TODO</span></div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    }</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(mime.hasFormat(score::mime::processpreset()))</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    {</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>      <span class="keyword">const</span> <span class="keyword">auto</span> presetData = mime.data(score::mime::processpreset());</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>      QMetaObject::invokeMethod(<span class="keyword">this</span>, [presetData, <span class="keyword">this</span>]() {</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        createPreset(presetData);</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>      }, Qt::QueuedConnection);</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    }</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<span class="keyword">auto</span> res = handlers.getDrop(mime, m_context); !res.empty())</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    {</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>      <span class="keywordflow">if</span>(res.size() &gt;= 1)</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>      {</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        QMetaObject::invokeMethod(<span class="keyword">this</span>, [proc = res.front(), <span class="keyword">this</span>]() {</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>          createProcess(proc);</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        }, Qt::QueuedConnection);</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>      }</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    }</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(mime.hasUrls())</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    {</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>      <span class="comment">// TODO</span></div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    }</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>  }</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>};</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        <span class="keywordflow">if</span>(old_dst-&gt;type() == type &amp;&amp; !qobject_cast&lt;Process::ControlInlet*&gt;(dst)</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>           &amp;&amp; !qobject_cast&lt;Process::ControlInlet*&gt;(old_dst))</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        {</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>          <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; edge : old.inlets()[0]-&gt;cables())</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>          {</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            <span class="keyword">auto</span>&amp; cable = edge.find(m_context);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            <span class="keyword">auto</span>&amp; src = cable.source().find(m_context);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            <span class="keywordflow">if</span>(src.type() == type)</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>            {</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>              m.createCable(sm, src, *dst);</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>            }</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>          }</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>          m.setProperty&lt;Process::Port::p_address&gt;(*dst, old_dst-&gt;address());</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        }</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>      }</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    }</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="keywordflow">if</span>(p-&gt;outlets().size() &gt; 0)</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    {</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>      <span class="keyword">const</span> <span class="keyword">auto</span> src = p-&gt;outlets()[0];</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>      <span class="keyword">const</span> <span class="keyword">auto</span> type = src-&gt;type();</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>      <span class="keywordflow">if</span>(old.outlets().size() &gt; 0)</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>      {</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        <span class="keyword">auto</span>&amp; old_src = old.outlets()[0];</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        <span class="keywordflow">if</span>(old_src-&gt;type() == type &amp;&amp; !qobject_cast&lt;Process::ControlInlet*&gt;(src)</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>           &amp;&amp; !qobject_cast&lt;Process::ControlInlet*&gt;(old_src))</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        {</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>          <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; edge : old.outlets()[0]-&gt;cables())</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>          {</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>            <span class="keyword">auto</span>&amp; cable = edge.find(m_context);</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>            <span class="keyword">auto</span>&amp; dst = cable.sink().find(m_context);</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>            <span class="keywordflow">if</span>(dst.type() == type)</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>            {</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>              m.createCable(sm, *src, dst);</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>            }</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>          }</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>          m.setProperty&lt;Process::Port::p_address&gt;(*src, old_src-&gt;address());</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>          <span class="keywordflow">if</span>(type == Process::PortType::Audio)</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>          {</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>            <span class="keyword">auto</span> old_audio_src = safe_cast&lt;Process::AudioOutlet*&gt;(old_src);</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            <span class="keyword">auto</span> audio_src = safe_cast&lt;Process::AudioOutlet*&gt;(src);</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>            m.setProperty&lt;Process::AudioOutlet::p_propagate&gt;(</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                *audio_src, old_audio_src-&gt;propagate());</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>          }</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>          src-&gt;setAddress(old_src-&gt;address());</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        }</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>      }</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    }</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  }</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>  <span class="keywordtype">void</span> drop(<span class="keyword">const</span> QMimeData&amp; mime)</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  {</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    <span class="comment">// FIXME drop in nodal vs drop in scenario</span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    <span class="keyword">auto</span>&amp; model = item.model();</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    m_interval = qobject_cast&lt;Scenario::IntervalModel*&gt;(model.parent());</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <span class="keywordflow">if</span>(!m_interval)</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    <span class="comment">// Something tricky here is that we have to separate mime data processing and command execution:</span></div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <span class="comment">// mime data processing has to happen synchronously as it gets deleted after the NodeItem::dropEvent function returns.</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    <span class="comment">// On the other hand, we cannot run the command synchronously as it may delete the cable, which causes</span></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    <span class="comment">// the cableitem to be deleted too and thus it cannot finish the dropEvent without crashing.</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; handlers = m_context.app.interfaces&lt;<a class="code hl_class" href="class_process_1_1_process_drop_handler_list.html">Process::ProcessDropHandlerList</a>&gt;();</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    <span class="keywordflow">if</span>(mime.hasFormat(score::mime::layerdata()))</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    {</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>      <span class="comment">// TODO</span></div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    }</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(mime.hasFormat(score::mime::processpreset()))</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    {</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>      <span class="keyword">const</span> <span class="keyword">auto</span> presetData = mime.data(score::mime::processpreset());</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>      QMetaObject::invokeMethod(<span class="keyword">this</span>, [presetData, <span class="keyword">this</span>]() {</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        createPreset(presetData);</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>      }, Qt::QueuedConnection);</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    }</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<span class="keyword">auto</span> res = handlers.getDrop(mime, m_context); !res.empty())</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    {</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>      <span class="keywordflow">if</span>(res.size() &gt;= 1)</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>      {</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        QMetaObject::invokeMethod(<span class="keyword">this</span>, [proc = res.front(), <span class="keyword">this</span>]() {</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>          createProcess(proc);</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        }, Qt::QueuedConnection);</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>      }</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    }</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(mime.hasUrls())</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    {</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>      <span class="comment">// TODO</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    }</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>  }</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>};</div>
 </div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>}</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>}</div>
 <div class="ttc" id="aclass_command_dispatcher_html"><div class="ttname"><a href="class_command_dispatcher.html">CommandDispatcher</a></div><div class="ttdoc">The CommandDispatcher class.</div><div class="ttdef"><b>Definition</b> CommandDispatcher.hpp:13</div></div>
 <div class="ttc" id="aclass_dataflow_1_1_cable_item_html"><div class="ttname"><a href="class_dataflow_1_1_cable_item.html">Dataflow::CableItem</a></div><div class="ttdef"><b>Definition</b> CableItem.hpp:37</div></div>
 <div class="ttc" id="aclass_process_1_1_cable_html"><div class="ttname"><a href="class_process_1_1_cable.html">Process::Cable</a></div><div class="ttdef"><b>Definition</b> Cable.hpp:38</div></div>
