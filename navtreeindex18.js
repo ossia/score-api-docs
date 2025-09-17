@@ -1,5 +1,7 @@
 var NAVTREEINDEX18 =
 {
+"dir_884a69d3a277720cb0017286bbb1fc0c.html":[13,0,0,2,32,4,1,7],
+"dir_88e1cc06505da4c2098a708f9c7d3f0f.html":[13,0,0,1,1,1],
 "dir_8926c7d91bde3f11016c686dc222e59c.html":[13,0,0,2,12],
 "dir_8940b9717eab7226735774e0c7e02de1.html":[13,0,0,2,24,0],
 "dir_8a4e6332f07504b8c84a82f112e8278a.html":[13,0,0,2,22,0],
@@ -181,8 +183,8 @@ var NAVTREEINDEX18 =
 "dir_ff56996379f66a234579aa3f0401ac06.html":[13,0,0,2,32,4,3,9],
 "element_finding_helper_8hpp_source.html":[13,0,0,2,32,4,11,1],
 "files.html":[13,0],
-"functions.html":[12,3,0,0],
 "functions.html":[12,3,0],
+"functions.html":[12,3,0,0],
 "functions_c.html":[12,3,0,1],
 "functions_d.html":[12,3,0,2],
 "functions_e.html":[12,3,0,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX18 =
 "lv2__atom__helpers_8hpp_source.html":[13,0,0,2,22,0,4],
 "models_8hpp_source.html":[13,0,0,1,0,3,5],
 "mvp_8hpp_source.html":[13,0,0,1,0,3,6],
-"namespace_automation.html":[11,0,0],
-"namespace_curve.html":[11,0,1],
-"namespace_device.html":[11,0,2]
+"namespace_automation.html":[11,0,0]
 };

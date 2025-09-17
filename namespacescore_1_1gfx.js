@@ -23,6 +23,7 @@ var namespacescore_1_1gfx =
     [ "image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "ImagesNode", "structscore_1_1gfx_1_1_images_node.html", "structscore_1_1gfx_1_1_images_node" ],
+    [ "is_output", "structscore_1_1gfx_1_1is__output.html", null ],
     [ "isf_input_port_vis", "structscore_1_1gfx_1_1isf__input__port__vis.html", null ],
     [ "isf_input_size_vis", "structscore_1_1gfx_1_1isf__input__size__vis.html", null ],
     [ "ISFNode", "classscore_1_1gfx_1_1_i_s_f_node.html", "classscore_1_1gfx_1_1_i_s_f_node" ],

@@ -42,7 +42,7 @@ var searchData=
   ['path_3c_20media_3a_3asound_3a_3aprocessmodel_20_3e_39',['Path&lt; Media::Sound::ProcessModel &gt;',['../class_path.html',1,'']]],
   ['path_3c_20media_3a_3astep_3a_3amodel_20_3e_40',['Path&lt; Media::Step::Model &gt;',['../class_path.html',1,'']]],
   ['path_3c_20midi_3a_3aprocessmodel_20_3e_41',['Path&lt; Midi::ProcessModel &gt;',['../class_path.html',1,'']]],
-  ['path_3c_20model_20_3e_42',['path&lt; model &gt;',['../class_path.html',1,'Path&lt; model &gt;'],['../class_path.html',1,'Path&lt; Model &gt;']]],
+  ['path_3c_20model_20_3e_42',['path&lt; model &gt;',['../class_path.html',1,'Path&lt; Model &gt;'],['../class_path.html',1,'Path&lt; model &gt;']]],
   ['path_3c_20model_5ft_20_3e_43',['Path&lt; model_t &gt;',['../class_path.html',1,'']]],
   ['path_3c_20nodal_3a_3amodel_20_3e_44',['Path&lt; Nodal::Model &gt;',['../class_path.html',1,'']]],
   ['path_3c_20note_20_3e_45',['Path&lt; Note &gt;',['../class_path.html',1,'']]],

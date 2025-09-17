@@ -61,6 +61,7 @@ var namespace_process =
     [ "MidiOutlet", "class_process_1_1_midi_outlet.html", null ],
     [ "MiniLayer", "class_process_1_1_mini_layer.html", null ],
     [ "MoveNodes", "class_process_1_1_move_nodes.html", null ],
+    [ "MoveNodesMacro", "class_process_1_1_move_nodes_macro.html", null ],
     [ "MultiScriptDialog", "class_process_1_1_multi_script_dialog.html", "class_process_1_1_multi_script_dialog" ],
     [ "NodeItem", "class_process_1_1_node_item.html", null ],
     [ "OfflineAction", "class_process_1_1_offline_action.html", null ],
