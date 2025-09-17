@@ -200,6 +200,7 @@ var annotated_dup =
       [ "View", "class_curve_1_1_view.html", null ]
     ] ],
     [ "Dataflow", null, [
+      [ "AddressPropagationItem", "struct_dataflow_1_1_address_propagation_item.html", null ],
       [ "AudioAddressDialog", "class_dataflow_1_1_audio_address_dialog.html", null ],
       [ "AudioDevice", "class_dataflow_1_1_audio_device.html", null ],
       [ "AudioInletFactory", "struct_dataflow_1_1_audio_inlet_factory.html", null ],

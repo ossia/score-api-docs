@@ -1137,8 +1137,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -2114,8 +2114,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -2616,6 +2616,7 @@ var hierarchy =
       [ "Curve::PointView", "class_curve_1_1_point_view.html", null ],
       [ "Curve::SegmentView", "class_curve_1_1_segment_view.html", null ],
       [ "Curve::View", "class_curve_1_1_view.html", null ],
+      [ "Dataflow::AddressPropagationItem", "struct_dataflow_1_1_address_propagation_item.html", null ],
       [ "Dataflow::CableItem", "class_dataflow_1_1_cable_item.html", null ],
       [ "Dataflow::CurveItem", "struct_dataflow_1_1_curve_item.html", null ],
       [ "Dataflow::PortItem", "class_dataflow_1_1_port_item.html", [
