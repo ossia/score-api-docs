@@ -2037,6 +2037,7 @@ var annotated_dup =
         [ "PlainTriangle", "structscore_1_1gfx_1_1_plain_triangle.html", null ],
         [ "PlanarDecoder", "structscore_1_1gfx_1_1_planar_decoder.html", "structscore_1_1gfx_1_1_planar_decoder" ],
         [ "Port", "structscore_1_1gfx_1_1_port.html", "structscore_1_1gfx_1_1_port" ],
+        [ "port_indices", "structscore_1_1gfx_1_1port__indices.html", null ],
         [ "PreviewNode", "classscore_1_1gfx_1_1_preview_node.html", "classscore_1_1gfx_1_1_preview_node" ],
         [ "PreviewRenderer", "classscore_1_1gfx_1_1_preview_renderer.html", null ],
         [ "ProcessNode", "classscore_1_1gfx_1_1_process_node.html", "classscore_1_1gfx_1_1_process_node" ],
