@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"score-plugin-packagemanager_2_package_manager_2_view_8hpp_source.html":[13,0,0,2,27,0,5],
 "score-plugin-protocols_2_protocols_2_settings_2_factory_8hpp_source.html":[13,0,0,2,29,0,18,0],
 "score-plugin-protocols_2_protocols_2_settings_2_model_8hpp_source.html":[13,0,0,2,29,0,18,1],
 "score-plugin-protocols_2_protocols_2_settings_2_view_8hpp_source.html":[13,0,0,2,29,0,18,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "struct_execution_1_1interval__duration__data.html":[11,0,4,16],
 "struct_explorer_1_1_address_settings_widget_1_1no__widgets__t.html":[12,0,16,13,0],
 "struct_explorer_1_1_default_bounds.html":[12,0,16,20],
-"struct_explorer_1_1_default_bounds_3_01float_01_4.html":[12,0,16,21],
-"struct_explorer_1_1_default_bounds_3_01int_01_4.html":[12,0,16,22]
+"struct_explorer_1_1_default_bounds_3_01float_01_4.html":[12,0,16,21]
 };

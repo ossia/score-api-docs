@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"structscore_1_1_recursive_watch_1_1_callbacks.html":[11,0,12,233,0],
 "structscore_1_1_recursive_watch_1_1_watched.html":[11,0,12,233,1],
 "structscore_1_1_recursive_watch_1_1_watched.html":[12,0,53,238,1],
 "structscore_1_1_restorable_document.html":[11,0,12,235],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "structscore_1_1gfx_1_1_refcounted_frame.html":[12,0,53,2,53],
 "structscore_1_1gfx_1_1_render_state.html":[11,0,12,0,58],
 "structscore_1_1gfx_1_1_render_state.html":[12,0,53,2,58],
-"structscore_1_1gfx_1_1_render_target_specs.html":[12,0,53,2,59],
-"structscore_1_1gfx_1_1_render_target_specs.html":[11,0,12,0,59]
+"structscore_1_1gfx_1_1_render_target_specs.html":[12,0,53,2,59]
 };

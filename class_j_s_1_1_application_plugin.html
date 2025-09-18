@@ -124,6 +124,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2a1ef0b698623236e537fc9d6cfa1457" id="r_a2a1ef0b698623236e537fc9d6cfa1457"><td class="memItemLeft" align="right" valign="top"><a id="a2a1ef0b698623236e537fc9d6cfa1457" name="a2a1ef0b698623236e537fc9d6cfa1457"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ApplicationPlugin</b> (const <a class="el" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a> &amp;ctx)</td></tr>
 <tr class="separator:a2a1ef0b698623236e537fc9d6cfa1457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b169f0eb5776bb0bd75c99a8ae9f26d" id="r_a5b169f0eb5776bb0bd75c99a8ae9f26d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_application_plugin.html#a5b169f0eb5776bb0bd75c99a8ae9f26d">on_createdDocument</a> (<a class="el" href="classscore_1_1_document.html">score::Document</a> &amp;doc) override</td></tr>
+<tr class="memdesc:a5b169f0eb5776bb0bd75c99a8ae9f26d"><td class="mdescLeft">&#160;</td><td class="mdescRight">on_createdDocument Will be called after either on_newDocument or on_loadedDocument was called on every plug-in.  <br /></td></tr>
+<tr class="separator:a5b169f0eb5776bb0bd75c99a8ae9f26d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a173bfb0da53b8ed4a1a1ee5c64d70f2e" id="r_a173bfb0da53b8ed4a1a1ee5c64d70f2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_application_plugin.html#a173bfb0da53b8ed4a1a1ee5c64d70f2e">afterStartup</a> () override</td></tr>
 <tr class="memdesc:a173bfb0da53b8ed4a1a1ee5c64d70f2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">afterStartup Called after all the documents have been created / loaded  <br /></td></tr>
 <tr class="separator:a173bfb0da53b8ed4a1a1ee5c64d70f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,9 +162,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>on_newDocumen
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>on_loadedDocument</b> (<a class="el" href="classscore_1_1_document.html">score::Document</a> &amp;doc)</td></tr>
 <tr class="memdesc:a4ac5df59d48c03c0517f3bba8f8022a9 inherit pub_methods_classscore_1_1_g_u_i_application_plugin"><td class="mdescLeft">&#160;</td><td class="mdescRight">on_loadedDocument Will be called only after a document has been loaded <br /></td></tr>
 <tr class="separator:a4ac5df59d48c03c0517f3bba8f8022a9 inherit pub_methods_classscore_1_1_g_u_i_application_plugin"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff4905cf17ebfa809a129c858736e44e inherit pub_methods_classscore_1_1_g_u_i_application_plugin" id="r_aff4905cf17ebfa809a129c858736e44e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_g_u_i_application_plugin.html#aff4905cf17ebfa809a129c858736e44e">on_createdDocument</a> (<a class="el" href="classscore_1_1_document.html">score::Document</a> &amp;doc)</td></tr>
-<tr class="memdesc:aff4905cf17ebfa809a129c858736e44e inherit pub_methods_classscore_1_1_g_u_i_application_plugin"><td class="mdescLeft">&#160;</td><td class="mdescRight">on_createdDocument Will be called after either on_newDocument or on_loadedDocument was called on every plug-in.  <br /></td></tr>
-<tr class="separator:aff4905cf17ebfa809a129c858736e44e inherit pub_methods_classscore_1_1_g_u_i_application_plugin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bfc9f3a1bafd2109ebfcad1c28000c1 inherit pub_methods_classscore_1_1_g_u_i_application_plugin" id="r_a6bfc9f3a1bafd2109ebfcad1c28000c1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_g_u_i_application_plugin.html#a6bfc9f3a1bafd2109ebfcad1c28000c1">prepareNewDocument</a> ()</td></tr>
 <tr class="memdesc:a6bfc9f3a1bafd2109ebfcad1c28000c1 inherit pub_methods_classscore_1_1_g_u_i_application_plugin"><td class="mdescLeft">&#160;</td><td class="mdescRight">prepareNewDocument Will be called just before a document switch. It is possible to check if we are in the process of document switching via DocumentManager::preparingNewDocument.  <br /></td></tr>
 <tr class="separator:a6bfc9f3a1bafd2109ebfcad1c28000c1 inherit pub_methods_classscore_1_1_g_u_i_application_plugin"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -241,6 +241,36 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>GUIElements</b> = <a
 <p>afterStartup Called after all the documents have been created / loaded </p>
 
 <p>Reimplemented from <a class="el" href="classscore_1_1_g_u_i_application_plugin.html#ad90d1cf2a9a177224bac1aa476c57e41">score::GUIApplicationPlugin</a>.</p>
+
+</div>
+</div>
+<a id="a5b169f0eb5776bb0bd75c99a8ae9f26d" name="a5b169f0eb5776bb0bd75c99a8ae9f26d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b169f0eb5776bb0bd75c99a8ae9f26d">&#9670;&#160;</a></span>on_createdDocument()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JS::ApplicationPlugin::on_createdDocument </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classscore_1_1_document.html">score::Document</a> &amp;&#160;</td>
+          <td class="paramname"><em>doc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>on_createdDocument Will be called after either on_newDocument or on_loadedDocument was called on every plug-in. </p>
+
+<p>Reimplemented from <a class="el" href="classscore_1_1_g_u_i_application_plugin.html#aff4905cf17ebfa809a129c858736e44e">score::GUIApplicationPlugin</a>.</p>
 
 </div>
 </div>

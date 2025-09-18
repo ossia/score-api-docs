@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"dir_87ed57ff3e9a2a16143afabcb70477f4.html":[13,0,0,1,1,12,0],
 "dir_884a69d3a277720cb0017286bbb1fc0c.html":[13,0,0,2,32,4,1,7],
 "dir_88e1cc06505da4c2098a708f9c7d3f0f.html":[13,0,0,1,1,1],
 "dir_8926c7d91bde3f11016c686dc222e59c.html":[13,0,0,2,12],
@@ -189,8 +190,8 @@ var NAVTREEINDEX18 =
 "functions_d.html":[12,3,0,2],
 "functions_e.html":[12,3,0,3],
 "functions_f.html":[12,3,0,4],
-"functions_func.html":[12,3,1,0],
 "functions_func.html":[12,3,1],
+"functions_func.html":[12,3,1,0],
 "functions_func_c.html":[12,3,1,1],
 "functions_func_d.html":[12,3,1,2],
 "functions_func_e.html":[12,3,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "lib_2score_2widgets_2_layout_8hpp_source.html":[13,0,0,1,1,13,12],
 "lv2__atom__helpers_8hpp_source.html":[13,0,0,2,22,0,4],
 "models_8hpp_source.html":[13,0,0,1,0,3,5],
-"mvp_8hpp_source.html":[13,0,0,1,0,3,6],
-"namespace_automation.html":[11,0,0]
+"mvp_8hpp_source.html":[13,0,0,1,0,3,6]
 };

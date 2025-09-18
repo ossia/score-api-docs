@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"classscore__plugin__js.html":[12,0,233],
 "classscore__plugin__library.html":[12,0,234],
 "classscore__plugin__lv2.html":[12,0,235],
 "classscore__plugin__mapping.html":[12,0,236],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "dir_8484db1e75aadb3aea19ef01bc6e5ef6.html":[13,0,0,2,4,0],
 "dir_86583ab4e4f10d5ef756dafa4be9fbc8.html":[13,0,0,2,32,4,5],
 "dir_872cc9259b8551f1de6c095c6547ec3e.html":[13,0,0,2,8,0],
-"dir_87db0560704d691046d100ef0190663f.html":[13,0,0,2,36,0],
-"dir_87ed57ff3e9a2a16143afabcb70477f4.html":[13,0,0,1,1,12,0]
+"dir_87db0560704d691046d100ef0190663f.html":[13,0,0,2,36,0]
 };

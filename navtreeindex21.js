@@ -1,5 +1,6 @@
 var NAVTREEINDEX21 =
 {
+"struct_explorer_1_1_default_bounds_3_01int_01_4.html":[12,0,16,22],
 "struct_explorer_1_1_selected_nodes.html":[12,0,16,47],
 "struct_explorer_1_1_selected_nodes.html#a0015ee94bbf39be77cee2942759bcc15":[12,0,16,47,1],
 "struct_explorer_1_1_selected_nodes.html#ae290430e3602a169ce75d658819a3a87":[12,0,16,47,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX21 =
 "struct_metadata.html":[12,0,149],
 "struct_metadata_3_01_category__k_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[12,0,150],
 "struct_metadata_3_01_category__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html":[12,0,151],
-"struct_metadata_3_01_concrete_key__k_00_01_faust_d_s_p_1_1_fx_3_01mydsp_01_4_01_4.html":[12,0,152],
-"struct_metadata_3_01_concrete_key__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html":[12,0,153]
+"struct_metadata_3_01_concrete_key__k_00_01_faust_d_s_p_1_1_fx_3_01mydsp_01_4_01_4.html":[12,0,152]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX23 =
 {
+"struct_scenario_1_1_categorised_scenario.html":[12,0,52,14],
 "struct_scenario_1_1_categorized_address.html":[11,0,11,13],
 "struct_scenario_1_1_categorized_address.html":[12,0,52,15],
 "struct_scenario_1_1_categorized_addresses.html":[11,0,11,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX23 =
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_q_point_f_01_4.html":[12,0,359],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_q_rect_01_4.html":[12,0,360],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_q_rect_f_01_4.html":[12,0,361],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_q_size_01_4.html":[12,0,362],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_q_size_f_01_4.html":[12,0,363]
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_q_size_01_4.html":[12,0,362]
 };

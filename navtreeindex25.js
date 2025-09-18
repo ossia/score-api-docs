@@ -1,5 +1,6 @@
 var NAVTREEINDEX25 =
 {
+"structoscr_1_1_outlet_init_func.html":[12,0,41,37],
 "structoscr_1_1_outlet_init_func.html":[11,0,8,37],
 "structoscr_1_1_port.html":[12,0,41,40],
 "structoscr_1_1_port.html":[11,0,8,40],
@@ -248,6 +249,5 @@ var NAVTREEINDEX25 =
 "structscore_1_1_q_graphics_line_edit.html":[11,0,12,204],
 "structscore_1_1_q_graphics_slider_base.html":[12,0,53,222],
 "structscore_1_1_q_graphics_slider_base.html":[11,0,12,217],
-"structscore_1_1_recursive_watch_1_1_callbacks.html":[12,0,53,238,0],
-"structscore_1_1_recursive_watch_1_1_callbacks.html":[11,0,12,233,0]
+"structscore_1_1_recursive_watch_1_1_callbacks.html":[12,0,53,238,0]
 };

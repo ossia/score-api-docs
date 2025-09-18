@@ -1,5 +1,6 @@
 var NAVTREEINDEX27 =
 {
+"structscore_1_1gfx_1_1_render_target_specs.html":[11,0,12,0,59],
 "structscore_1_1gfx_1_1_rendered_c_s_f_node.html":[12,0,53,2,54],
 "structscore_1_1gfx_1_1_rendered_c_s_f_node.html":[11,0,12,0,54],
 "structscore_1_1gfx_1_1_rendered_i_s_f_node.html":[12,0,53,2,55],

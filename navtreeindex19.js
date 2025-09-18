@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"namespace_automation.html":[11,0,0],
 "namespace_curve.html":[11,0,1],
 "namespace_device.html":[11,0,2],
 "namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc":[11,0,2,22],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "score-plugin-nodal_2_nodal_2_process_8hpp_source.html":[13,0,0,2,26,0,6],
 "score-plugin-nodal_2_nodal_2_view_8hpp_source.html":[13,0,0,2,26,0,7],
 "score-plugin-packagemanager_2_package_manager_2_factory_8hpp_source.html":[13,0,0,2,27,0,0],
-"score-plugin-packagemanager_2_package_manager_2_model_8hpp_source.html":[13,0,0,2,27,0,2],
-"score-plugin-packagemanager_2_package_manager_2_view_8hpp_source.html":[13,0,0,2,27,0,5]
+"score-plugin-packagemanager_2_package_manager_2_model_8hpp_source.html":[13,0,0,2,27,0,2]
 };

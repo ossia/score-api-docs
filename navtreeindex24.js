@@ -1,5 +1,6 @@
 var NAVTREEINDEX24 =
 {
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_q_size_f_01_4.html":[12,0,363],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_q_variant_map_01_4.html":[12,0,364],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_scenario_1_1_time_signature_map_01_4.html":[12,0,365],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_time_val_01_4.html":[12,0,379],
@@ -248,6 +249,5 @@ var NAVTREEINDEX24 =
 "structoscr_1_1_node_item.html":[12,0,41,35],
 "structoscr_1_1_node_item.html":[11,0,8,35],
 "structoscr_1_1_normalizer_from_mapper.html":[12,0,41,36],
-"structoscr_1_1_normalizer_from_mapper.html":[11,0,8,36],
-"structoscr_1_1_outlet_init_func.html":[12,0,41,37]
+"structoscr_1_1_normalizer_from_mapper.html":[11,0,8,36]
 };
