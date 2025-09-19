@@ -52,6 +52,7 @@ var namespacescore_1_1gfx =
     [ "port_indices", "structscore_1_1gfx_1_1port__indices.html", null ],
     [ "PreviewNode", "classscore_1_1gfx_1_1_preview_node.html", "classscore_1_1gfx_1_1_preview_node" ],
     [ "PreviewRenderer", "classscore_1_1gfx_1_1_preview_renderer.html", null ],
+    [ "PreviewRendererInvertY", "classscore_1_1gfx_1_1_preview_renderer_invert_y.html", null ],
     [ "ProcessNode", "classscore_1_1gfx_1_1_process_node.html", "classscore_1_1gfx_1_1_process_node" ],
     [ "ProcessUBO", "structscore_1_1gfx_1_1_process_u_b_o.html", null ],
     [ "RefcountedFrame", "structscore_1_1gfx_1_1_refcounted_frame.html", null ],

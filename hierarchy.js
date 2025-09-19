@@ -1138,8 +1138,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1900,6 +1900,7 @@ var hierarchy =
       [ "score::gfx::OutputNodeRenderer", "classscore_1_1gfx_1_1_output_node_renderer.html", [
         [ "Gfx::InvertYRenderer", "class_gfx_1_1_invert_y_renderer.html", null ],
         [ "score::gfx::PreviewRenderer", "classscore_1_1gfx_1_1_preview_renderer.html", null ],
+        [ "score::gfx::PreviewRendererInvertY", "classscore_1_1gfx_1_1_preview_renderer_invert_y.html", null ],
         [ "score::gfx::ScreenNode::BasicRenderer", "classscore_1_1gfx_1_1_screen_node_1_1_basic_renderer.html", null ],
         [ "score::gfx::ScreenNode::ScaledRenderer", "classscore_1_1gfx_1_1_screen_node_1_1_scaled_renderer.html", null ]
       ] ],
@@ -2116,8 +2117,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model >", "class_path.html", null ],
+    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],

@@ -81,7 +81,7 @@ var searchData=
   ['identifiedobject_3c_20timesyncmodel_20_3e_78',['IdentifiedObject&lt; TimeSyncModel &gt;',['../class_identified_object.html',1,'']]],
   ['identifiedobjectabstract_79',['IdentifiedObjectAbstract',['../class_identified_object_abstract.html',1,'']]],
   ['idgen_80',['IdGen',['../structscore_1_1_id_gen.html',1,'score']]],
-  ['image_81',['image',['../structscore_1_1gfx_1_1_image.html',1,'score::gfx::Image'],['../structscore_1_1gfx_1_1image.html',1,'score::gfx::image']]],
+  ['image_81',['image',['../structscore_1_1gfx_1_1image.html',1,'score::gfx::image'],['../structscore_1_1gfx_1_1_image.html',1,'score::gfx::Image']]],
   ['image_5fnode_82',['image_node',['../class_gfx_1_1_images_1_1image__node.html',1,'Gfx::Images']]],
   ['imagecache_83',['ImageCache',['../struct_gfx_1_1_image_cache.html',1,'Gfx']]],
   ['imageformat_84',['ImageFormat',['../struct_video_1_1_image_format.html',1,'Video']]],
