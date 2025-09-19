@@ -623,7 +623,7 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_layer_8h
 <div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span> </div>
 <div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { new_l-&gt;ui.start(); })</div>
 <div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>    {</div>
-<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>      QObject::connect(&amp;proc, &amp;<a class="code hl_function" href="class_process_1_1_process_model.html#ad0b622083ce132f6a5fae0659c815184">Process::ProcessModel::startExecution</a>, new_l, [new_l] {</div>
+<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>      QObject::connect(&amp;proc, &amp;Process::ProcessModel::startExecution, new_l, [new_l] {</div>
 <div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>        new_l-&gt;ui.start();</div>
 <div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>      });</div>
 <div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>    }</div>
@@ -700,7 +700,6 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_layer_8h
 <div class="ttc" id="aclass_process_1_1_layer_view_html"><div class="ttname"><a href="class_process_1_1_layer_view.html">Process::LayerView</a></div><div class="ttdef"><b>Definition</b> LayerView.hpp:21</div></div>
 <div class="ttc" id="aclass_process_1_1_port_factory_list_html"><div class="ttname"><a href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a></div><div class="ttdef"><b>Definition</b> PortFactory.hpp:74</div></div>
 <div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition</b> score-lib-process/Process/Process.hpp:61</div></div>
-<div class="ttc" id="aclass_process_1_1_process_model_html_ad0b622083ce132f6a5fae0659c815184"><div class="ttname"><a href="class_process_1_1_process_model.html#ad0b622083ce132f6a5fae0659c815184">Process::ProcessModel::startExecution</a></div><div class="ttdeci">void startExecution()</div><div class="ttdoc">Execution.</div></div>
 <div class="ttc" id="aclass_uuid_key_html"><div class="ttname"><a href="class_uuid_key.html">UuidKey</a></div><div class="ttdef"><b>Definition</b> UuidKey.hpp:344</div></div>
 <div class="ttc" id="aclassoscr_1_1_custom_control_html"><div class="ttname"><a href="classoscr_1_1_custom_control.html">oscr::CustomControl</a></div><div class="ttdef"><b>Definition</b> Painter.hpp:505</div></div>
 <div class="ttc" id="aclassoscr_1_1_custom_item_html"><div class="ttname"><a href="classoscr_1_1_custom_item.html">oscr::CustomItem</a></div><div class="ttdef"><b>Definition</b> Painter.hpp:349</div></div>
