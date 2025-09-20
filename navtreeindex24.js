@@ -1,5 +1,7 @@
 var NAVTREEINDEX24 =
 {
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_q_point_f_01_4.html":[12,0,359],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_q_rect_01_4.html":[12,0,360],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_q_rect_f_01_4.html":[12,0,361],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_q_size_01_4.html":[12,0,362],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_q_size_f_01_4.html":[12,0,363],
@@ -247,7 +249,5 @@ var NAVTREEINDEX24 =
 "structoscr_1_1_message_bus_wrapper_to_ui_3_01_info_01_4.html":[12,0,41,31],
 "structoscr_1_1_message_bus_wrapper_to_ui_3_01_info_01_4.html":[11,0,8,31],
 "structoscr_1_1_midi_file_octaver.html":[11,0,8,32],
-"structoscr_1_1_midi_file_octaver.html":[12,0,41,32],
-"structoscr_1_1_node_item.html":[11,0,8,35],
-"structoscr_1_1_node_item.html":[12,0,41,35]
+"structoscr_1_1_midi_file_octaver.html":[12,0,41,32]
 };

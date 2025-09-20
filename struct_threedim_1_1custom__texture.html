@@ -105,6 +105,7 @@ $(document).ready(function(){initNavTree('struct_threedim_1_1custom__texture.htm
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_threedim_1_1custom__texture-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Threedim::custom_texture Struct Reference</div></div>
@@ -113,7 +114,7 @@ $(document).ready(function(){initNavTree('struct_threedim_1_1custom__texture.htm
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aef9bc12799bb015e8d30f0c24c4c80f2" id="r_aef9bc12799bb015e8d30f0c24c4c80f2"><td class="memItemLeft" align="right" valign="top"><a id="aef9bc12799bb015e8d30f0c24c4c80f2" name="aef9bc12799bb015e8d30f0c24c4c80f2"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: uint8_t { <br />
+<tr class="memitem:ac327283b2ecdd6f40fe729db3f0aef64" id="r_ac327283b2ecdd6f40fe729db3f0aef64"><td class="memItemLeft" align="right" valign="top"><a id="ac327283b2ecdd6f40fe729db3f0aef64" name="ac327283b2ecdd6f40fe729db3f0aef64"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>texture_format</b> : uint8_t { <br />
 &#160;&#160;<b>RGBA8</b>
 , <b>BGRA8</b>
 , <b>R8</b>
@@ -134,7 +135,7 @@ Public Types</h2></td></tr>
 , <b>RGBA32UI</b>
 <br />
  }</td></tr>
-<tr class="separator:aef9bc12799bb015e8d30f0c24c4c80f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ac327283b2ecdd6f40fe729db3f0aef64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac090f4fa5605ed1665705d67c8b0fbaa" id="r_ac090f4fa5605ed1665705d67c8b0fbaa"><td class="memItemLeft" align="right" valign="top"><a id="ac090f4fa5605ed1665705d67c8b0fbaa" name="ac090f4fa5605ed1665705d67c8b0fbaa"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>uninitialized_bytes</b> = boost::container::vector&lt; unsigned char &gt;</td></tr>
 <tr class="separator:ac090f4fa5605ed1665705d67c8b0fbaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,12 +148,24 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>bytes_per_pixel</b> ()
 <tr class="memitem:a33135929f24e597da49797328a0816f0" id="r_a33135929f24e597da49797328a0816f0"><td class="memItemLeft" align="right" valign="top"><a id="a33135929f24e597da49797328a0816f0" name="a33135929f24e597da49797328a0816f0"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>bytesize</b> () const noexcept</td></tr>
 <tr class="separator:a33135929f24e597da49797328a0816f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f19a0e3b143aab1b7d65f66964efbd2" id="r_a3f19a0e3b143aab1b7d65f66964efbd2"><td class="memItemLeft" align="right" valign="top"><a id="a3f19a0e3b143aab1b7d65f66964efbd2" name="a3f19a0e3b143aab1b7d65f66964efbd2"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>component_size</b> () const noexcept</td></tr>
+<tr class="separator:a3f19a0e3b143aab1b7d65f66964efbd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae867cccb59895d8d2fdbf592d8e7a6cc" id="r_ae867cccb59895d8d2fdbf592d8e7a6cc"><td class="memItemLeft" align="right" valign="top"><a id="ae867cccb59895d8d2fdbf592d8e7a6cc" name="ae867cccb59895d8d2fdbf592d8e7a6cc"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>allocate</b> (int width, int height)</td></tr>
 <tr class="separator:ae867cccb59895d8d2fdbf592d8e7a6cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ff6385c0760d89f0dfbac4bd800d399" id="r_a3ff6385c0760d89f0dfbac4bd800d399"><td class="memItemLeft" align="right" valign="top"><a id="a3ff6385c0760d89f0dfbac4bd800d399" name="a3ff6385c0760d89f0dfbac4bd800d399"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (unsigned char *data, int w, int h) noexcept</td></tr>
 <tr class="separator:a3ff6385c0760d89f0dfbac4bd800d399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a518f1417b6a56d26507638ea9711b289" id="r_a518f1417b6a56d26507638ea9711b289"><td class="memItemLeft" align="right" valign="top"><a id="a518f1417b6a56d26507638ea9711b289" name="a518f1417b6a56d26507638ea9711b289"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>component_size</b> (texture_format format) noexcept</td></tr>
+<tr class="separator:a518f1417b6a56d26507638ea9711b289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d9b16b30dfca0307e6257036a6cc98e" id="r_a2d9b16b30dfca0307e6257036a6cc98e"><td class="memItemLeft" align="right" valign="top"><a id="a2d9b16b30dfca0307e6257036a6cc98e" name="a2d9b16b30dfca0307e6257036a6cc98e"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>components</b> (texture_format format) noexcept</td></tr>
+<tr class="separator:a2d9b16b30dfca0307e6257036a6cc98e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -165,9 +178,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>width</b></td></tr>
 <tr class="memitem:a8da05164bc00f10af3408fa0750b980f" id="r_a8da05164bc00f10af3408fa0750b980f"><td class="memItemLeft" align="right" valign="top"><a id="a8da05164bc00f10af3408fa0750b980f" name="a8da05164bc00f10af3408fa0750b980f"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td></tr>
 <tr class="separator:a8da05164bc00f10af3408fa0750b980f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4443aace74e10e2a8894ae5985068779" id="r_a4443aace74e10e2a8894ae5985068779"><td class="memItemLeft" align="right" valign="top"><a id="a4443aace74e10e2a8894ae5985068779" name="a4443aace74e10e2a8894ae5985068779"></a>
-enum Threedim::custom_texture:: { ... } &#160;</td><td class="memItemRight" valign="bottom"><b>format</b> = RGBA8</td></tr>
-<tr class="separator:a4443aace74e10e2a8894ae5985068779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade26df2b68b245430d7f585151951e7c" id="r_ade26df2b68b245430d7f585151951e7c"><td class="memItemLeft" align="right" valign="top"><a id="ade26df2b68b245430d7f585151951e7c" name="ade26df2b68b245430d7f585151951e7c"></a>
+enum Threedim::custom_texture::texture_format&#160;</td><td class="memItemRight" valign="bottom"><b>format</b> = RGBA8</td></tr>
+<tr class="separator:ade26df2b68b245430d7f585151951e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1a1e90c6c24bfcd1ad163ae7689c953" id="r_ab1a1e90c6c24bfcd1ad163ae7689c953"><td class="memItemLeft" align="right" valign="top"><a id="ab1a1e90c6c24bfcd1ad163ae7689c953" name="ab1a1e90c6c24bfcd1ad163ae7689c953"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>changed</b></td></tr>
 <tr class="separator:ab1a1e90c6c24bfcd1ad163ae7689c953"><td class="memSeparator" colspan="2">&#160;</td></tr>

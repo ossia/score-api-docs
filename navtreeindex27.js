@@ -1,5 +1,7 @@
 var NAVTREEINDEX27 =
 {
+"structscore_1_1gfx_1_1_refcounted_frame.html":[12,0,53,2,55],
+"structscore_1_1gfx_1_1_render_state.html":[12,0,53,2,60],
 "structscore_1_1gfx_1_1_render_state.html":[11,0,12,0,60],
 "structscore_1_1gfx_1_1_render_target_specs.html":[12,0,53,2,61],
 "structscore_1_1gfx_1_1_render_target_specs.html":[11,0,12,0,61],

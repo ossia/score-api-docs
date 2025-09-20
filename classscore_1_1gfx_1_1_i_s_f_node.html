@@ -143,6 +143,9 @@ QSize&#160;</td><td class="memItemRight" valign="bottom"><b>computeTextureSize</
 <tr class="memitem:a280dee183f21421a3c0f148c1fc30149" id="r_a280dee183f21421a3c0f148c1fc30149"><td class="memItemLeft" align="right" valign="top"><a id="a280dee183f21421a3c0f148c1fc30149" name="a280dee183f21421a3c0f148c1fc30149"></a>
 const isf::descriptor &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>descriptor</b> () const noexcept</td></tr>
 <tr class="separator:a280dee183f21421a3c0f148c1fc30149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca935be310740331ee7fbcd972136624" id="r_aca935be310740331ee7fbcd972136624"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_i_s_f_node.html#aca935be310740331ee7fbcd972136624">process</a> (<a class="el" href="structscore_1_1gfx_1_1_message.html">Message</a> &amp;&amp;msg) override</td></tr>
+<tr class="memdesc:aca935be310740331ee7fbcd972136624"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_process.html" title="Base classes and tools to implement processes and layers.">Process</a> a message from the execution engine.  <br /></td></tr>
+<tr class="separator:aca935be310740331ee7fbcd972136624"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1gfx_1_1_process_node"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1gfx_1_1_process_node')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1gfx_1_1_process_node.html">score::gfx::ProcessNode</a></td></tr>
 <tr class="memitem:a7c97ba4a1eb26e9ca18df2e4cb45453b inherit pub_methods_classscore_1_1gfx_1_1_process_node" id="r_a7c97ba4a1eb26e9ca18df2e4cb45453b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_process_node.html#a7c97ba4a1eb26e9ca18df2e4cb45453b">process</a> (<a class="el" href="structscore_1_1gfx_1_1_message.html">Message</a> &amp;&amp;msg) override</td></tr>
 <tr class="memdesc:a7c97ba4a1eb26e9ca18df2e4cb45453b inherit pub_methods_classscore_1_1gfx_1_1_process_node"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_process.html" title="Base classes and tools to implement processes and layers.">Process</a> a message from the execution engine.  <br /></td></tr>
@@ -263,6 +266,9 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_fragmentS</b></t
 <tr class="memitem:a56fa32e6a823890d3bb514a84630a6cd" id="r_a56fa32e6a823890d3bb514a84630a6cd"><td class="memItemLeft" align="right" valign="top"><a id="a56fa32e6a823890d3bb514a84630a6cd" name="a56fa32e6a823890d3bb514a84630a6cd"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_computeS</b></td></tr>
 <tr class="separator:a56fa32e6a823890d3bb514a84630a6cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1b34e331a9da276c051e36c87b9240d" id="r_ad1b34e331a9da276c051e36c87b9240d"><td class="memItemLeft" align="right" valign="top"><a id="ad1b34e331a9da276c051e36c87b9240d" name="ad1b34e331a9da276c051e36c87b9240d"></a>
+std::vector&lt; int * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_event_ports</b></td></tr>
+<tr class="separator:ad1b34e331a9da276c051e36c87b9240d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeab42c4afb889b0956fa7e0f143a843d" id="r_aeab42c4afb889b0956fa7e0f143a843d"><td class="memItemLeft" align="right" valign="top"><a id="aeab42c4afb889b0956fa7e0f143a843d" name="aeab42c4afb889b0956fa7e0f143a843d"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>m_materialSize</b> {}</td></tr>
 <tr class="separator:aeab42c4afb889b0956fa7e0f143a843d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -335,6 +341,36 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>addedToGraph</b> {}</
 <p>Create a renderer in a given context for this node. </p>
 
 <p>Implements <a class="el" href="classscore_1_1gfx_1_1_node.html#afada9ff513c4820efe50ee92c85364f6">score::gfx::Node</a>.</p>
+
+</div>
+</div>
+<a id="aca935be310740331ee7fbcd972136624" name="aca935be310740331ee7fbcd972136624"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca935be310740331ee7fbcd972136624">&#9670;&#160;</a></span>process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::ISFNode::process </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structscore_1_1gfx_1_1_message.html">Message</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="namespace_process.html" title="Base classes and tools to implement processes and layers.">Process</a> a message from the execution engine. </p>
+
+<p>Reimplemented from <a class="el" href="classscore_1_1gfx_1_1_node.html#acac03f2e76d8ab63548bab3fac5968a3">score::gfx::Node</a>.</p>
 
 </div>
 </div>

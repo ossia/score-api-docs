@@ -174,7 +174,7 @@ $(document).ready(function(){initNavTree('_script_edit_command_8hpp_source.html'
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="comment">// Recreate the old cables</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    Dataflow::restoreCables(m_oldCables, ctx);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    Dataflow::restoreCablesWithoutTouchingPorts(m_oldCables, ctx);</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    cmt.inletsChanged();</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    cmt.outletsChanged();</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { cmt.isGpu(); })</div>
@@ -231,7 +231,7 @@ $(document).ready(function(){initNavTree('_script_edit_command_8hpp_source.html'
 <div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition</b> score-plugin-dataflow/Dataflow/PortItem.hpp:13</div></div>
 <div class="ttc" id="astruct_data_stream_input_html"><div class="ttname"><a href="struct_data_stream_input.html">DataStreamInput</a></div><div class="ttdef"><b>Definition</b> DataStreamHelpers.hpp:99</div></div>
 <div class="ttc" id="astruct_data_stream_output_html"><div class="ttname"><a href="struct_data_stream_output.html">DataStreamOutput</a></div><div class="ttdef"><b>Definition</b> DataStreamHelpers.hpp:103</div></div>
-<div class="ttc" id="astruct_dataflow_1_1_saved_port_html"><div class="ttname"><a href="struct_dataflow_1_1_saved_port.html">Dataflow::SavedPort</a></div><div class="ttdef"><b>Definition</b> CableHelpers.hpp:69</div></div>
+<div class="ttc" id="astruct_dataflow_1_1_saved_port_html"><div class="ttname"><a href="struct_dataflow_1_1_saved_port.html">Dataflow::SavedPort</a></div><div class="ttdef"><b>Definition</b> CableHelpers.hpp:74</div></div>
 <div class="ttc" id="astruct_process_1_1_script_change_result_html"><div class="ttname"><a href="struct_process_1_1_script_change_result.html">Process::ScriptChangeResult</a></div><div class="ttdef"><b>Definition</b> ScriptProcess.hpp:14</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition</b> DocumentContext.hpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->

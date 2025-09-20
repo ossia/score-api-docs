@@ -1,5 +1,7 @@
 var NAVTREEINDEX21 =
 {
+"struct_execution_1_1interval__duration__data.html":[11,0,4,16],
+"struct_explorer_1_1_address_settings_widget_1_1no__widgets__t.html":[12,0,16,13,0],
 "struct_explorer_1_1_default_bounds.html":[12,0,16,20],
 "struct_explorer_1_1_default_bounds_3_01float_01_4.html":[12,0,16,21],
 "struct_explorer_1_1_default_bounds_3_01int_01_4.html":[12,0,16,22],
@@ -247,7 +249,5 @@ var NAVTREEINDEX21 =
 "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_q_painter_cleanup.html":[12,0,35,3,12,1],
 "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html":[12,0,35,3,12,2],
 "struct_media_1_1_sound_1_1_waveform_request.html":[12,0,35,3,13],
-"struct_media_1_1_step_1_1_layer_factory.html":[12,0,35,4,3],
-"struct_metadata.html":[12,0,149],
-"struct_metadata_3_01_category__k_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[12,0,150]
+"struct_media_1_1_step_1_1_layer_factory.html":[12,0,35,4,3]
 };

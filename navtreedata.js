@@ -127,17 +127,17 @@ var NAVTREEINDEX =
 "class_threedim_1_1_array_to_texture.html",
 "classscore_1_1_g_u_i_application_plugin.html#a45e268c5b923805dc82b45af79fe1e96",
 "classscore_1_1_recursive_watch.html",
-"classscore__plugin__inspector.html",
-"dir_872cc9259b8551f1de6c095c6547ec3e.html",
-"models_8hpp_source.html",
-"score-plugin-packagemanager_2_package_manager_2_factory_8hpp_source.html",
-"struct_explorer_1_1_default_bounds.html",
-"struct_metadata_3_01_category__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html",
-"struct_scenario_1_1_base_scenario_container_1_1no__init.html",
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_q_rect_f_01_4.html",
-"structoscr_1_1_normalizer_from_mapper.html",
-"structscore_1_1_q_graphics_slider_base.html",
-"structscore_1_1gfx_1_1_render_state.html"
+"classscore__plugin__fx.html",
+"dir_8484db1e75aadb3aea19ef01bc6e5ef6.html",
+"lib_2score_2widgets_2_layout_8hpp_source.html",
+"score-plugin-nodal_2_nodal_2_process_8hpp_source.html",
+"struct_execution_1_1interval__duration__data.html",
+"struct_metadata.html",
+"struct_scenario_1_1_address_accessor_curve_creator.html",
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_q_point_f_01_4.html",
+"structoscr_1_1_node_item.html",
+"structscore_1_1_q_graphics_line_edit.html",
+"structscore_1_1gfx_1_1_refcounted_frame.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

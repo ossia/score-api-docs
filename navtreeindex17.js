@@ -1,5 +1,7 @@
 var NAVTREEINDEX17 =
 {
+"classscore__plugin__fx.html":[12,0,229],
+"classscore__plugin__gfx.html":[12,0,230],
 "classscore__plugin__inspector.html":[12,0,231],
 "classscore__plugin__jit.html":[12,0,232],
 "classscore__plugin__js.html":[12,0,233],
@@ -24,8 +26,8 @@ var NAVTREEINDEX17 =
 "classscore__plugin__vst.html":[12,0,251],
 "classscore__plugin__vst3.html":[12,0,252],
 "classscore__plugin__ysfx.html":[12,0,253],
-"classstd_1_1hash_3_01std_1_1pair_3_01int_00_01int_01_4_01_4.html":[12,0,58,7],
 "classstd_1_1hash_3_01std_1_1pair_3_01int_00_01int_01_4_01_4.html":[11,0,14,7],
+"classstd_1_1hash_3_01std_1_1pair_3_01int_00_01int_01_4_01_4.html":[12,0,58,7],
 "classvst3_1_1_application_plugin.html":[12,0,64,0],
 "classvst3_1_1_application_plugin.html#a6853897da3ff2bc9f8ce84e92a893a21":[12,0,64,0,0],
 "classvst3_1_1_component_handler.html":[12,0,64,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX17 =
 "dir_8309497446cb32c28db140c650e448f6.html":[13,0,0,2,29,0,17],
 "dir_835cf42a86498cf9221abdcc14014e00.html":[13,0,0,2,14],
 "dir_838c2889668b9130b0466feb67cd91a9.html":[13,0,0,2,32,4,3,7,0],
-"dir_83e4b18280e67abf8e48a592967cd2cf.html":[13,0,0,2,32,4,3,8,0],
-"dir_8484db1e75aadb3aea19ef01bc6e5ef6.html":[13,0,0,2,4,0],
-"dir_86583ab4e4f10d5ef756dafa4be9fbc8.html":[13,0,0,2,32,4,5]
+"dir_83e4b18280e67abf8e48a592967cd2cf.html":[13,0,0,2,32,4,3,8,0]
 };
