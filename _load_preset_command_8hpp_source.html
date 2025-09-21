@@ -222,7 +222,7 @@ $(document).ready(function(){initNavTree('_load_preset_command_8hpp_source.html'
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    }</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="comment">// Recreate the old cables</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    Dataflow::restoreCables(m_oldCables, ctx);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    Dataflow::restoreCablesWithoutTouchingPorts(m_oldCables, ctx);</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    cmt.inletsChanged();</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    cmt.outletsChanged();</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  }</div>

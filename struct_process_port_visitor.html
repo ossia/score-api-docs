@@ -151,11 +151,11 @@ template&lt;std::size_t N, avnd::audio_port Port&gt; </td></tr>
 template&lt;std::size_t N, avnd::midi_port Port&gt; </td></tr>
 <tr class="memitem:a8283a71da46559fd28f32f74518c1ab5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (const avnd::field_reflection&lt; N, Port &gt;)</td></tr>
 <tr class="separator:a8283a71da46559fd28f32f74518c1ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9295069a16518b2189bb2d27fceb41e" id="r_ad9295069a16518b2189bb2d27fceb41e"><td class="memTemplParams" colspan="2"><a id="ad9295069a16518b2189bb2d27fceb41e" name="ad9295069a16518b2189bb2d27fceb41e"></a>
+<tr class="memitem:a0c15b7fa99b987c337732e28e1cceffc" id="r_a0c15b7fa99b987c337732e28e1cceffc"><td class="memTemplParams" colspan="2"><a id="a0c15b7fa99b987c337732e28e1cceffc" name="a0c15b7fa99b987c337732e28e1cceffc"></a>
 template&lt;std::size_t N, avnd::parameter Port&gt; <br />
-requires (!oscr::ossia_port&lt;Port&gt;)</td></tr>
-<tr class="memitem:ad9295069a16518b2189bb2d27fceb41e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (const avnd::field_reflection&lt; N, Port &gt;)</td></tr>
-<tr class="separator:ad9295069a16518b2189bb2d27fceb41e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+requires (!oscr::ossia_port&lt;Port&gt; &amp;&amp; !avnd::curve_port&lt;Port&gt;)</td></tr>
+<tr class="memitem:a0c15b7fa99b987c337732e28e1cceffc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (const avnd::field_reflection&lt; N, Port &gt;)</td></tr>
+<tr class="separator:a0c15b7fa99b987c337732e28e1cceffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8283a71da46559fd28f32f74518c1ab5" id="r_a8283a71da46559fd28f32f74518c1ab5"><td class="memTemplParams" colspan="2"><a id="a8283a71da46559fd28f32f74518c1ab5" name="a8283a71da46559fd28f32f74518c1ab5"></a>
 template&lt;std::size_t N, avnd::file_port Port&gt; </td></tr>
 <tr class="memitem:a8283a71da46559fd28f32f74518c1ab5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (const avnd::field_reflection&lt; N, Port &gt;)</td></tr>

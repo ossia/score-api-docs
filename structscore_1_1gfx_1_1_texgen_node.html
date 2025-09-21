@@ -238,9 +238,6 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a4abc4a8ff19030e8c99b16278ca55787" id="r_a4abc4a8ff19030e8c99b16278ca55787"><td class="memItemLeft" align="right" valign="top"><a id="a4abc4a8ff19030e8c99b16278ca55787" name="a4abc4a8ff19030e8c99b16278ca55787"></a>
 struct <a class="el" href="structscore_1_1gfx_1_1_texgen_node_1_1ubo.html">score::gfx::TexgenNode::ubo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ubo</b></td></tr>
 <tr class="separator:a4abc4a8ff19030e8c99b16278ca55787"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6f3463ec5e3ead40089e313dbcdb93b" id="r_ad6f3463ec5e3ead40089e313dbcdb93b"><td class="memItemLeft" align="right" valign="top"><a id="ad6f3463ec5e3ead40089e313dbcdb93b" name="ad6f3463ec5e3ead40089e313dbcdb93b"></a>
-QImage&#160;</td><td class="memItemRight" valign="bottom"><b>image</b></td></tr>
-<tr class="separator:ad6f3463ec5e3ead40089e313dbcdb93b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa099fc44c6644699fd3bd0f99a14aaa0" id="r_aa099fc44c6644699fd3bd0f99a14aaa0"><td class="memItemLeft" align="right" valign="top"><a id="aa099fc44c6644699fd3bd0f99a14aaa0" name="aa099fc44c6644699fd3bd0f99a14aaa0"></a>
 std::atomic&lt; func_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>function</b> {}</td></tr>
 <tr class="separator:aa099fc44c6644699fd3bd0f99a14aaa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -407,7 +404,7 @@ std::unique_ptr&lt; char[]&gt;&#160;</td><td class="memItemRight" valign="bottom
 <div class="line"><span class="stringliteral">  {</span></div>
 <div class="line"><span class="stringliteral">    v_texcoord = texcoord;</span></div>
 <div class="line"><span class="stringliteral">    gl_Position = renderer.clipSpaceCorrMatrix * vec4(position.xy, 0.0, 1.);</span></div>
-<div class="line"><span class="stringliteral">#if defined(QSHADER_HLSL) || defined(QSHADER_MSL)</span></div>
+<div class="line"><span class="stringliteral">#if !(defined(QSHADER_SPIRV) || defined(QSHADER_HLSL) || defined(QSHADER_MSL))</span></div>
 <div class="line"><span class="stringliteral">  gl_Position.y = - gl_Position.y;</span></div>
 <div class="line"><span class="stringliteral">#endif</span></div>
 <div class="line"><span class="stringliteral">  }</span></div>

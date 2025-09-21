@@ -133,11 +133,11 @@ $(document).ready(function(){initNavTree('_math_helpers_8hpp_source.html',''); i
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> State&gt;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">static</span> <span class="keywordtype">void</span> setMathExpressionTiming(</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_namespace" href="namespace_state.html">State</a>&amp; self, int64_t input_time, int64_t prev_time,</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    std::floating_point <span class="keyword">auto</span> parent_dur)</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    std::floating_point <span class="keyword">auto</span> parent_pos)</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  self.cur_time = input_time;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  self.cur_deltatime = (input_time - prev_time);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  self.cur_pos = parent_dur &gt; 0 ? double(input_time) / parent_dur : 0;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  self.cur_pos = parent_pos;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> State&gt;</div>

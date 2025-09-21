@@ -240,7 +240,7 @@ $(document).ready(function(){initNavTree('plugins_2score-plugin-avnd_2_crousti_2
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  }</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  <span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> N, avnd::parameter Port&gt;</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keyword">requires</span>(!oscr::ossia_port&lt;Port&gt;)</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keyword">requires</span>(!oscr::ossia_port&lt;Port&gt; &amp;&amp; !avnd::curve_port&lt;Port&gt;)</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  <span class="keywordtype">void</span> <span class="keyword">operator</span>()(<span class="keyword">const</span> avnd::field_reflection&lt;N, Port&gt;)</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>  {</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    this-&gt;value();</div>
