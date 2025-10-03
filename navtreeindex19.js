@@ -1,5 +1,12 @@
 var NAVTREEINDEX19 =
 {
+"lib_2core_2settings_2_settings_8hpp_source.html":[13,0,0,1,0,7,0],
+"lib_2core_2view_2_window_8hpp_source.html":[13,0,0,1,0,9,2],
+"lib_2score_2model_2_component_8hpp_source.html":[13,0,0,1,1,7,4],
+"lib_2score_2plugins_2documentdelegate_2plugin_2_document_plugin_8hpp_source.html":[13,0,0,1,1,8,1,0,0],
+"lib_2score_2tools_2_file_8hpp_source.html":[13,0,0,1,1,12,8],
+"lib_2score_2tools_2_metadata_8hpp_source.html":[13,0,0,1,1,12,17],
+"lib_2score_2widgets_2_control_widgets_8hpp_source.html":[13,0,0,1,1,13,5],
 "lib_2score_2widgets_2_layout_8hpp_source.html":[13,0,0,1,1,13,12],
 "lv2__atom__helpers_8hpp_source.html":[13,0,0,2,22,0,4],
 "models_8hpp_source.html":[13,0,0,1,0,3,5],
@@ -242,12 +249,5 @@ var NAVTREEINDEX19 =
 "score-plugin-media_2_media_2_merger_2_inspector_8hpp_source.html":[13,0,0,2,24,0,3,3],
 "score-plugin-media_2_media_2_merger_2_model_8hpp_source.html":[13,0,0,2,24,0,3,5],
 "score-plugin-media_2_media_2_step_2_executor_8hpp_source.html":[13,0,0,2,24,0,6,1],
-"score-plugin-media_2_media_2_step_2_factory_8hpp_source.html":[13,0,0,2,24,0,6,2],
-"score-plugin-media_2_media_2_step_2_inspector_8hpp_source.html":[13,0,0,2,24,0,6,3],
-"score-plugin-media_2_media_2_step_2_model_8hpp_source.html":[13,0,0,2,24,0,6,5],
-"score-plugin-media_2_media_2_step_2_view_8hpp_source.html":[13,0,0,2,24,0,6,7],
-"score-plugin-midi_2_midi_2_commands_2_command_factory_8hpp_source.html":[13,0,0,2,25,0,0,1],
-"score-plugin-nodal_2_nodal_2_command_factory_8hpp_source.html":[13,0,0,2,26,0,0],
-"score-plugin-nodal_2_nodal_2_executor_8hpp_source.html":[13,0,0,2,26,0,2],
-"score-plugin-nodal_2_nodal_2_layer_8hpp_source.html":[13,0,0,2,26,0,3]
+"score-plugin-media_2_media_2_step_2_factory_8hpp_source.html":[13,0,0,2,24,0,6,2]
 };

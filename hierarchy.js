@@ -1138,8 +1138,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -3086,51 +3086,40 @@ var hierarchy =
       [ "JS::Inlet", "class_j_s_1_1_inlet.html", [
         [ "JS::AudioInlet", "class_j_s_1_1_audio_inlet.html", null ],
         [ "JS::ControlInlet", "class_j_s_1_1_control_inlet.html", [
-          [ "JS::GenericControlInlet< Process::AudioFileChooser, QString >", "class_j_s_1_1_generic_control_inlet.html", [
+          [ "JS::GenericControlInlet< Process::AudioFileChooser, QString, std::string >", "class_j_s_1_1_generic_control_inlet.html", [
             [ "JS::AudioFileChooser", "struct_j_s_1_1_audio_file_chooser.html", null ]
           ] ],
-          [ "JS::GenericControlInlet< Process::FileChooser, QString >", "class_j_s_1_1_generic_control_inlet.html", [
+          [ "JS::GenericControlInlet< Process::FileChooser, QString, std::string >", "class_j_s_1_1_generic_control_inlet.html", [
             [ "JS::FileChooser", "struct_j_s_1_1_file_chooser.html", null ]
           ] ],
-          [ "JS::GenericControlInlet< Process::FloatRangeSpinBox, QVector2D >", "class_j_s_1_1_generic_control_inlet.html", [
-            [ "JS::FloatRangeSpinBox", "struct_j_s_1_1_float_range_spin_box.html", null ]
+          [ "JS::GenericControlInlet< Impl, QVector2D, ossia::vec2f >", "class_j_s_1_1_generic_control_inlet.html", [
+            [ "JS::FloatControl1D_2D< Impl >", "class_j_s_1_1_float_control1_d__2_d.html", null ],
+            [ "JS::FloatControl2D< Impl >", "class_j_s_1_1_float_control2_d.html", null ],
+            [ "JS::IntControl2D< Impl >", "class_j_s_1_1_int_control2_d.html", null ]
           ] ],
-          [ "JS::GenericControlInlet< Process::FloatSlider, float >", "class_j_s_1_1_generic_control_inlet.html", null ],
-          [ "JS::GenericControlInlet< Process::HSVSlider, QVector4D >", "class_j_s_1_1_generic_control_inlet.html", [
-            [ "JS::HSVSlider", "struct_j_s_1_1_h_s_v_slider.html", null ]
+          [ "JS::GenericControlInlet< Impl, QVector3D, ossia::vec3f >", "class_j_s_1_1_generic_control_inlet.html", [
+            [ "JS::FloatControl3D< Impl >", "class_j_s_1_1_float_control3_d.html", null ],
+            [ "JS::IntControl3D< Impl >", "class_j_s_1_1_int_control3_d.html", null ]
           ] ],
-          [ "JS::GenericControlInlet< Process::IntRangeSlider, QVector2D >", "class_j_s_1_1_generic_control_inlet.html", [
-            [ "JS::IntRangeSlider", "struct_j_s_1_1_int_range_slider.html", null ]
+          [ "JS::GenericControlInlet< Impl, QVector4D, ossia::vec4f >", "class_j_s_1_1_generic_control_inlet.html", [
+            [ "JS::FloatControl4D< Impl >", "class_j_s_1_1_float_control4_d.html", null ]
           ] ],
-          [ "JS::GenericControlInlet< Process::IntRangeSpinBox, QVector2D >", "class_j_s_1_1_generic_control_inlet.html", [
-            [ "JS::IntRangeSpinBox", "struct_j_s_1_1_int_range_spin_box.html", null ]
-          ] ],
-          [ "JS::GenericControlInlet< Process::IntSlider, int >", "class_j_s_1_1_generic_control_inlet.html", null ],
-          [ "JS::GenericControlInlet< Process::MultiSlider, QVector< qreal > >", "class_j_s_1_1_generic_control_inlet.html", [
+          [ "JS::GenericControlInlet< Process::FloatSlider, float, float >", "class_j_s_1_1_generic_control_inlet.html", null ],
+          [ "JS::GenericControlInlet< Process::IntSlider, int, int >", "class_j_s_1_1_generic_control_inlet.html", null ],
+          [ "JS::GenericControlInlet< Process::MultiSlider, QVector< qreal >, std::vector< ossia::value > >", "class_j_s_1_1_generic_control_inlet.html", [
             [ "JS::MultiSlider", "struct_j_s_1_1_multi_slider.html", null ]
           ] ],
-          [ "JS::GenericControlInlet< Process::VideoFileChooser, QString >", "class_j_s_1_1_generic_control_inlet.html", [
+          [ "JS::GenericControlInlet< Process::VideoFileChooser, QString, std::string >", "class_j_s_1_1_generic_control_inlet.html", [
             [ "JS::VideoFileChooser", "struct_j_s_1_1_video_file_chooser.html", null ]
-          ] ],
-          [ "JS::GenericControlInlet< Process::XYSlider, QVector2D >", "class_j_s_1_1_generic_control_inlet.html", [
-            [ "JS::XYSlider", "struct_j_s_1_1_x_y_slider.html", null ]
-          ] ],
-          [ "JS::GenericControlInlet< Process::XYSpinboxes, QVector2D >", "class_j_s_1_1_generic_control_inlet.html", [
-            [ "JS::XYSpinboxes", "struct_j_s_1_1_x_y_spinboxes.html", null ]
-          ] ],
-          [ "JS::GenericControlInlet< Process::XYZSlider, QVector3D >", "class_j_s_1_1_generic_control_inlet.html", [
-            [ "JS::XYZSlider", "struct_j_s_1_1_x_y_z_slider.html", null ]
-          ] ],
-          [ "JS::GenericControlInlet< Process::XYZSpinboxes, QVector3D >", "class_j_s_1_1_generic_control_inlet.html", [
-            [ "JS::XYZSpinboxes", "struct_j_s_1_1_x_y_z_spinboxes.html", null ]
           ] ],
           [ "JS::Button", "class_j_s_1_1_button.html", null ],
           [ "JS::ComboBox", "class_j_s_1_1_combo_box.html", null ],
           [ "JS::Enum", "class_j_s_1_1_enum.html", null ],
-          [ "JS::GenericControlInlet< Impl, ValueType >", "class_j_s_1_1_generic_control_inlet.html", [
+          [ "JS::GenericControlInlet< Impl, ValueType, OssiaType >", "class_j_s_1_1_generic_control_inlet.html", [
             [ "JS::FloatSlider< Impl >", "class_j_s_1_1_float_slider.html", null ],
             [ "JS::IntSlider< Impl >", "class_j_s_1_1_int_slider.html", null ]
           ] ],
+          [ "JS::HSVSlider", "class_j_s_1_1_h_s_v_slider.html", null ],
           [ "JS::Impulse", "class_j_s_1_1_impulse.html", null ],
           [ "JS::LineEdit", "class_j_s_1_1_line_edit.html", null ],
           [ "JS::Toggle", "class_j_s_1_1_toggle.html", null ]

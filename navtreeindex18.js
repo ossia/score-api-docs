@@ -1,5 +1,12 @@
 var NAVTREEINDEX18 =
 {
+"dir_827389e204051fd7ad483a49f1387904.html":[13,0,0,2,14,2],
+"dir_82ae454cc1248246feb839974cce6759.html":[13,0,0,2,3,4,6],
+"dir_82f889bf1dac2aa3fe45f70e8d191950.html":[13,0,0,1,1,7,1],
+"dir_8309497446cb32c28db140c650e448f6.html":[13,0,0,2,29,0,17],
+"dir_835cf42a86498cf9221abdcc14014e00.html":[13,0,0,2,14],
+"dir_838c2889668b9130b0466feb67cd91a9.html":[13,0,0,2,32,4,3,7,0],
+"dir_83e4b18280e67abf8e48a592967cd2cf.html":[13,0,0,2,32,4,3,8,0],
 "dir_8484db1e75aadb3aea19ef01bc6e5ef6.html":[13,0,0,2,4,0],
 "dir_86583ab4e4f10d5ef756dafa4be9fbc8.html":[13,0,0,2,32,4,5],
 "dir_872cc9259b8551f1de6c095c6547ec3e.html":[13,0,0,2,8,0],
@@ -194,8 +201,8 @@ var NAVTREEINDEX18 =
 "functions_d.html":[12,3,0,2],
 "functions_e.html":[12,3,0,3],
 "functions_f.html":[12,3,0,4],
-"functions_func.html":[12,3,1],
 "functions_func.html":[12,3,1,0],
+"functions_func.html":[12,3,1],
 "functions_func_c.html":[12,3,1,1],
 "functions_func_d.html":[12,3,1,2],
 "functions_func_e.html":[12,3,1,3],
@@ -242,12 +249,5 @@ var NAVTREEINDEX18 =
 "layouts_2_constants_8hpp_source.html":[13,0,0,1,1,5,0,0],
 "lib_2core_2documentation_2commands_8hpp_source.html":[13,0,0,1,0,3,1],
 "lib_2core_2documentation_2serialization_8hpp_source.html":[13,0,0,1,0,3,9],
-"lib_2core_2presenter_2_presenter_8hpp_source.html":[13,0,0,1,0,6,4],
-"lib_2core_2settings_2_settings_8hpp_source.html":[13,0,0,1,0,7,0],
-"lib_2core_2view_2_window_8hpp_source.html":[13,0,0,1,0,9,2],
-"lib_2score_2model_2_component_8hpp_source.html":[13,0,0,1,1,7,4],
-"lib_2score_2plugins_2documentdelegate_2plugin_2_document_plugin_8hpp_source.html":[13,0,0,1,1,8,1,0,0],
-"lib_2score_2tools_2_file_8hpp_source.html":[13,0,0,1,1,12,8],
-"lib_2score_2tools_2_metadata_8hpp_source.html":[13,0,0,1,1,12,17],
-"lib_2score_2widgets_2_control_widgets_8hpp_source.html":[13,0,0,1,1,13,5]
+"lib_2core_2presenter_2_presenter_8hpp_source.html":[13,0,0,1,0,6,4]
 };
