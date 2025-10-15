@@ -123,9 +123,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a36fb0ef6013c686caef397ce62d86d08" id="r_a36fb0ef6013c686caef397ce62d86d08"><td class="memItemLeft" align="right" valign="top"><a id="a36fb0ef6013c686caef397ce62d86d08" name="a36fb0ef6013c686caef397ce62d86d08"></a>
 const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>ctx</b> ()</td></tr>
 <tr class="separator:a36fb0ef6013c686caef397ce62d86d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a471aa0a93d0ea36d477b519bdd4b8c9e" id="r_a471aa0a93d0ea36d477b519bdd4b8c9e"><td class="memItemLeft" align="right" valign="top"><a id="a471aa0a93d0ea36d477b519bdd4b8c9e" name="a471aa0a93d0ea36d477b519bdd4b8c9e"></a>
+QObject *&#160;</td><td class="memItemRight" valign="bottom"><b>device</b> (QString name)</td></tr>
+<tr class="memdesc:a471aa0a93d0ea36d477b519bdd4b8c9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devices ///. <br /></td></tr>
+<tr class="separator:a471aa0a93d0ea36d477b519bdd4b8c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34ea4a9c9dadbaf059de294af51ba4a0" id="r_a34ea4a9c9dadbaf059de294af51ba4a0"><td class="memItemLeft" align="right" valign="top"><a id="a34ea4a9c9dadbaf059de294af51ba4a0" name="a34ea4a9c9dadbaf059de294af51ba4a0"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>deviceToJson</b> (QString addr)</td></tr>
-<tr class="memdesc:a34ea4a9c9dadbaf059de294af51ba4a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devices ///. <br /></td></tr>
 <tr class="separator:a34ea4a9c9dadbaf059de294af51ba4a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab9310a54872ff9e39b98266cb6f7994" id="r_aab9310a54872ff9e39b98266cb6f7994"><td class="memItemLeft" align="right" valign="top"><a id="aab9310a54872ff9e39b98266cb6f7994" name="aab9310a54872ff9e39b98266cb6f7994"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>deviceToOSCQuery</b> (QString addr)</td></tr>
@@ -309,6 +312,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>undo</b> ()</td></tr>
 <tr class="memitem:a1ecc569ef0031eb4a9cee83278e93543" id="r_a1ecc569ef0031eb4a9cee83278e93543"><td class="memItemLeft" align="right" valign="top"><a id="a1ecc569ef0031eb4a9cee83278e93543" name="a1ecc569ef0031eb4a9cee83278e93543"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>redo</b> ()</td></tr>
 <tr class="separator:a1ecc569ef0031eb4a9cee83278e93543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a753578bf8657d43fb67b2432c76a1425" id="r_a753578bf8657d43fb67b2432c76a1425"><td class="memItemLeft" align="right" valign="top"><a id="a753578bf8657d43fb67b2432c76a1425" name="a753578bf8657d43fb67b2432c76a1425"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>load</b> (QString path)</td></tr>
+<tr class="separator:a753578bf8657d43fb67b2432c76a1425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1c10ca226c8a7af0f2b99ca6b358850" id="r_ae1c10ca226c8a7af0f2b99ca6b358850"><td class="memItemLeft" align="right" valign="top"><a id="ae1c10ca226c8a7af0f2b99ca6b358850" name="ae1c10ca226c8a7af0f2b99ca6b358850"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>save</b> ()</td></tr>
+<tr class="separator:ae1c10ca226c8a7af0f2b99ca6b358850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a248d1a0f95d4fa58e1dcf217c2d332e1" id="r_a248d1a0f95d4fa58e1dcf217c2d332e1"><td class="memItemLeft" align="right" valign="top"><a id="a248d1a0f95d4fa58e1dcf217c2d332e1" name="a248d1a0f95d4fa58e1dcf217c2d332e1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>saveAs</b> (QString path)</td></tr>
+<tr class="separator:a248d1a0f95d4fa58e1dcf217c2d332e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb23e62f7f92854d8c41f3f4e2748efe" id="r_acb23e62f7f92854d8c41f3f4e2748efe"><td class="memItemLeft" align="right" valign="top"><a id="acb23e62f7f92854d8c41f3f4e2748efe" name="acb23e62f7f92854d8c41f3f4e2748efe"></a>
 QObject *&#160;</td><td class="memItemRight" valign="bottom"><b>find</b> (QString p)</td></tr>
 <tr class="memdesc:acb23e62f7f92854d8c41f3f4e2748efe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Document ///. <br /></td></tr>
@@ -322,6 +334,9 @@ QObject *&#160;</td><td class="memItemRight" valign="bottom"><b>document</b> ()<
 <tr class="memitem:afff5dc8870315524c5608df6fd98677e" id="r_afff5dc8870315524c5608df6fd98677e"><td class="memItemLeft" align="right" valign="top"><a id="afff5dc8870315524c5608df6fd98677e" name="afff5dc8870315524c5608df6fd98677e"></a>
 QObject *&#160;</td><td class="memItemRight" valign="bottom"><b>rootInterval</b> ()</td></tr>
 <tr class="separator:afff5dc8870315524c5608df6fd98677e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad40807bcb149ba1f208f9930d11ace72" id="r_ad40807bcb149ba1f208f9930d11ace72"><td class="memItemLeft" align="right" valign="top"><a id="ad40807bcb149ba1f208f9930d11ace72" name="ad40807bcb149ba1f208f9930d11ace72"></a>
+QObject *&#160;</td><td class="memItemRight" valign="bottom"><b>documentPlugin</b> (QString key)</td></tr>
+<tr class="separator:ad40807bcb149ba1f208f9930d11ace72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d0ca780246fc2507dd3421f2da7324a" id="r_a0d0ca780246fc2507dd3421f2da7324a"><td class="memItemLeft" align="right" valign="top"><a id="a0d0ca780246fc2507dd3421f2da7324a" name="a0d0ca780246fc2507dd3421f2da7324a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>play</b> ()</td></tr>
 <tr class="memdesc:a0d0ca780246fc2507dd3421f2da7324a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_execution.html" title="Components used for the execution of a score.">Execution</a> ///. <br /></td></tr>

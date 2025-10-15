@@ -1544,9 +1544,51 @@ $(document).ready(function(){initNavTree('_gpu_utils_8hpp_source.html',''); init
 <div class="line"><a id="l01432" name="l01432"></a><span class="lineno"> 1432</span>    bottom -= row_size;</div>
 <div class="line"><a id="l01433" name="l01433"></a><span class="lineno"> 1433</span>  }</div>
 <div class="line"><a id="l01434" name="l01434"></a><span class="lineno"> 1434</span>}</div>
-<div class="line"><a id="l01435" name="l01435"></a><span class="lineno"> 1435</span>}</div>
-<div class="line"><a id="l01436" name="l01436"></a><span class="lineno"> 1436</span> </div>
-<div class="line"><a id="l01437" name="l01437"></a><span class="lineno"> 1437</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01435" name="l01435"></a><span class="lineno"> 1435</span> </div>
+<div class="line"><a id="l01436" name="l01436"></a><span class="lineno"> 1436</span><span class="keyword">template</span> &lt;avnd::cpu_texture Tex&gt;</div>
+<div class="line"><a id="l01437" name="l01437"></a><span class="lineno"> 1437</span><span class="keywordtype">void</span> loadInputTexture(QRhi&amp; rhi, <span class="keyword">auto</span>&amp; m_readbacks, Tex&amp; cpu_tex, <span class="keywordtype">int</span> k)</div>
+<div class="line"><a id="l01438" name="l01438"></a><span class="lineno"> 1438</span>{</div>
+<div class="line"><a id="l01439" name="l01439"></a><span class="lineno"> 1439</span>  <span class="keyword">auto</span>&amp; buf = m_readbacks[k].data;</div>
+<div class="line"><a id="l01440" name="l01440"></a><span class="lineno"> 1440</span>  <span class="keywordflow">if</span>(buf.size() &lt; (qsizetype)cpu_tex.bytesize())</div>
+<div class="line"><a id="l01441" name="l01441"></a><span class="lineno"> 1441</span>  {</div>
+<div class="line"><a id="l01442" name="l01442"></a><span class="lineno"> 1442</span>    cpu_tex.bytes = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l01443" name="l01443"></a><span class="lineno"> 1443</span>  }</div>
+<div class="line"><a id="l01444" name="l01444"></a><span class="lineno"> 1444</span>  <span class="keywordflow">else</span></div>
+<div class="line"><a id="l01445" name="l01445"></a><span class="lineno"> 1445</span>  {</div>
+<div class="line"><a id="l01446" name="l01446"></a><span class="lineno"> 1446</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { Tex::RGB; })</div>
+<div class="line"><a id="l01447" name="l01447"></a><span class="lineno"> 1447</span>    {</div>
+<div class="line"><a id="l01448" name="l01448"></a><span class="lineno"> 1448</span>      <span class="comment">// RGBA -&gt; RGB</span></div>
+<div class="line"><a id="l01449" name="l01449"></a><span class="lineno"> 1449</span>      <span class="keyword">const</span> QByteArray rgba = buf;</div>
+<div class="line"><a id="l01450" name="l01450"></a><span class="lineno"> 1450</span>      QByteArray rgb;</div>
+<div class="line"><a id="l01451" name="l01451"></a><span class="lineno"> 1451</span>      rgb.resize(cpu_tex.width * cpu_tex.height * 3);</div>
+<div class="line"><a id="l01452" name="l01452"></a><span class="lineno"> 1452</span>      <span class="keyword">auto</span> src = rgba.constData();</div>
+<div class="line"><a id="l01453" name="l01453"></a><span class="lineno"> 1453</span>      <span class="keyword">auto</span> dst = rgb.data();</div>
+<div class="line"><a id="l01454" name="l01454"></a><span class="lineno"> 1454</span>      <span class="keywordflow">for</span>(<span class="keywordtype">int</span> rgb_byte = 0, rgba_byte = 0, N = rgb.size(); rgb_byte &lt; N;)</div>
+<div class="line"><a id="l01455" name="l01455"></a><span class="lineno"> 1455</span>      {</div>
+<div class="line"><a id="l01456" name="l01456"></a><span class="lineno"> 1456</span>        dst[rgb_byte + 0] = src[rgba_byte + 0];</div>
+<div class="line"><a id="l01457" name="l01457"></a><span class="lineno"> 1457</span>        dst[rgb_byte + 1] = src[rgba_byte + 1];</div>
+<div class="line"><a id="l01458" name="l01458"></a><span class="lineno"> 1458</span>        dst[rgb_byte + 2] = src[rgba_byte + 2];</div>
+<div class="line"><a id="l01459" name="l01459"></a><span class="lineno"> 1459</span>        rgb_byte += 3;</div>
+<div class="line"><a id="l01460" name="l01460"></a><span class="lineno"> 1460</span>        rgba_byte += 4;</div>
+<div class="line"><a id="l01461" name="l01461"></a><span class="lineno"> 1461</span>      }</div>
+<div class="line"><a id="l01462" name="l01462"></a><span class="lineno"> 1462</span>      buf = rgb;</div>
+<div class="line"><a id="l01463" name="l01463"></a><span class="lineno"> 1463</span>    }</div>
+<div class="line"><a id="l01464" name="l01464"></a><span class="lineno"> 1464</span> </div>
+<div class="line"><a id="l01465" name="l01465"></a><span class="lineno"> 1465</span>    <span class="keyword">using </span>components_type = std::decay_t&lt;<span class="keyword">decltype</span>(cpu_tex.bytes)&gt;;</div>
+<div class="line"><a id="l01466" name="l01466"></a><span class="lineno"> 1466</span>    cpu_tex.bytes = <span class="keyword">reinterpret_cast&lt;</span>components_type<span class="keyword">&gt;</span>(buf.data());</div>
+<div class="line"><a id="l01467" name="l01467"></a><span class="lineno"> 1467</span> </div>
+<div class="line"><a id="l01468" name="l01468"></a><span class="lineno"> 1468</span>    <span class="keywordflow">if</span>(rhi.isYUpInNDC())</div>
+<div class="line"><a id="l01469" name="l01469"></a><span class="lineno"> 1469</span>      <span class="keywordflow">if</span>(cpu_tex.width * cpu_tex.height &gt; 0)</div>
+<div class="line"><a id="l01470" name="l01470"></a><span class="lineno"> 1470</span>        inplaceMirror(</div>
+<div class="line"><a id="l01471" name="l01471"></a><span class="lineno"> 1471</span>            <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(cpu_tex.bytes), cpu_tex.width,</div>
+<div class="line"><a id="l01472" name="l01472"></a><span class="lineno"> 1472</span>            cpu_tex.height, cpu_tex.bytes_per_pixel);</div>
+<div class="line"><a id="l01473" name="l01473"></a><span class="lineno"> 1473</span> </div>
+<div class="line"><a id="l01474" name="l01474"></a><span class="lineno"> 1474</span>    cpu_tex.changed = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01475" name="l01475"></a><span class="lineno"> 1475</span>  }</div>
+<div class="line"><a id="l01476" name="l01476"></a><span class="lineno"> 1476</span>}</div>
+<div class="line"><a id="l01477" name="l01477"></a><span class="lineno"> 1477</span>}</div>
+<div class="line"><a id="l01478" name="l01478"></a><span class="lineno"> 1478</span> </div>
+<div class="line"><a id="l01479" name="l01479"></a><span class="lineno"> 1479</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a></div><div class="ttdoc">Root data model for visual nodes.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:75</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_html_acac03f2e76d8ab63548bab3fac5968a3"><div class="ttname"><a href="classscore_1_1gfx_1_1_node.html#acac03f2e76d8ab63548bab3fac5968a3">score::gfx::Node::process</a></div><div class="ttdeci">virtual void process(Message &amp;&amp;msg)</div><div class="ttdoc">Process a message from the execution engine.</div><div class="ttdef"><b>Definition</b> Node.cpp:25</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_model_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_model.html">score::gfx::NodeModel</a></div><div class="ttdoc">Common base class for most single-pass, simple nodes.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:230</div></div>

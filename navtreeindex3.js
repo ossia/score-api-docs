@@ -216,6 +216,7 @@ var NAVTREEINDEX3 =
 "_project_settings_model_8hpp_source.html":[13,0,0,1,1,8,3,1],
 "_project_settings_presenter_8hpp_source.html":[13,0,0,1,1,8,3,2],
 "_project_settings_view_8hpp_source.html":[13,0,0,1,1,8,3,3],
+"_prompt_line_edit_8hpp_source.html":[13,0,0,1,1,13,18],
 "_property_8hpp_source.html":[13,0,0,2,2,0,5],
 "_property_command_8hpp_source.html":[13,0,0,1,1,2,8],
 "_protocol_factory_interface_8hpp_source.html":[13,0,0,2,0,0,4,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "_q_graphics_text_button_8hpp_source.html":[13,0,0,1,1,5,1,23],
 "_q_graphics_time_chooser_8hpp_source.html":[13,0,0,1,1,5,1,24],
 "_q_graphics_toggle_8hpp_source.html":[13,0,0,1,1,5,1,25],
-"_q_graphics_x_y_chooser_8hpp_source.html":[13,0,0,1,1,5,1,26],
-"_q_graphics_x_y_spinbox_8hpp_source.html":[13,0,0,1,1,5,1,27]
+"_q_graphics_x_y_chooser_8hpp_source.html":[13,0,0,1,1,5,1,26]
 };

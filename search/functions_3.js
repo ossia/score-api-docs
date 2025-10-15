@@ -5,7 +5,7 @@ var searchData=
   ['defaulttriangle_2',['defaultTriangle',['../classscore_1_1gfx_1_1_render_list.html#a907a2553f670adbc76fe64bb4ac7f37a',1,'score::gfx::RenderList']]],
   ['defaultvertexshader_3',['defaultvertexshader',['../structscore_1_1gfx_1_1_textured_mesh.html#acbcbf92d0d4b9a568b85d0124df4220e',1,'score::gfx::TexturedMesh::defaultVertexShader()'],['../structscore_1_1gfx_1_1_plain_mesh.html#ac831d7b47c4e3680439d6689de4b9673',1,'score::gfx::PlainMesh::defaultVertexShader()'],['../structscore_1_1gfx_1_1_dummy_mesh.html#a881e7dbad87f249cfb83ee5b1b6bdc30',1,'score::gfx::DummyMesh::defaultVertexShader()'],['../structscore_1_1gfx_1_1_mesh.html#a1efe5a9256e4098ec590f83a36e4e5b6',1,'score::gfx::Mesh::defaultVertexShader()'],['../classscore_1_1gfx_1_1_custom_mesh.html#afac178980cad286cc271a7f52e4d9cd6',1,'score::gfx::CustomMesh::defaultVertexShader()']]],
   ['destroyoutputrenderlist_4',['destroyOutputRenderList',['../structscore_1_1gfx_1_1_graph.html#a17a55c3427949d59d752108e3da2f0f3',1,'score::gfx::Graph']]],
-  ['devicetojson_5',['deviceToJson',['../class_j_s_1_1_edit_js_context.html#a34ea4a9c9dadbaf059de294af51ba4a0',1,'JS::EditJsContext']]],
+  ['device_5',['device',['../class_j_s_1_1_edit_js_context.html#a471aa0a93d0ea36d477b519bdd4b8c9e',1,'JS::EditJsContext']]],
   ['disableactions_6',['disableActions',['../classscore_1_1_command_stack.html#a34febb0870463d0784933e345ceee949',1,'score::CommandStack']]],
   ['displaynameforport_7',['displayNameForPort',['../namespace_process.html#a535ae95f6170e17fce20ef59f292c707',1,'Process']]],
   ['document_8',['document',['../classscore_1_1_panel_delegate.html#aece2f08d7c2418a7ad2db0a596d5bbcf',1,'score::PanelDelegate']]],

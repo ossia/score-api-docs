@@ -5,6 +5,7 @@ var namespacestd =
     [ "hash< ossia::unit_variant >", "structstd_1_1hash_3_01ossia_1_1unit__variant_01_4.html", null ],
     [ "hash< Path< tag > >", "structstd_1_1hash_3_01_path_3_01tag_01_4_01_4.html", null ],
     [ "hash< score::LoadedPluginVersions >", "structstd_1_1hash_3_01score_1_1_loaded_plugin_versions_01_4.html", null ],
+    [ "hash< score::uuid_t >", "structstd_1_1hash_3_01score_1_1uuid__t_01_4.html", null ],
     [ "hash< State::Address >", "structstd_1_1hash_3_01_state_1_1_address_01_4.html", null ],
     [ "hash< State::AddressAccessor >", "structstd_1_1hash_3_01_state_1_1_address_accessor_01_4.html", null ],
     [ "hash< std::pair< int, int > >", "classstd_1_1hash_3_01std_1_1pair_3_01int_00_01int_01_4_01_4.html", null ],

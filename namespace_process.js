@@ -28,6 +28,7 @@ var namespace_process =
     [ "DefaultLayerPresenter", "class_process_1_1_default_layer_presenter.html", null ],
     [ "DefaultLayerView", "class_process_1_1_default_layer_view.html", null ],
     [ "Descriptor", "struct_process_1_1_descriptor.html", null ],
+    [ "EffectLayerFactory_Base", "class_process_1_1_effect_layer_factory___base.html", null ],
     [ "EffectLayerFactory_T", "class_process_1_1_effect_layer_factory___t.html", null ],
     [ "EffectLayerPresenter", "class_process_1_1_effect_layer_presenter.html", null ],
     [ "EffectLayerView", "class_process_1_1_effect_layer_view.html", null ],

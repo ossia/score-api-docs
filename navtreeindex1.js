@@ -117,7 +117,7 @@ var NAVTREEINDEX1 =
 "_double_slider_8hpp_source.html":[13,0,0,1,1,13,6],
 "_double_spin_box_8hpp_source.html":[13,0,0,1,1,13,7],
 "_driver_8hpp_source.html":[13,0,0,2,19,2,0,1],
-"_drop_handler_8hpp_source.html":[13,0,0,2,20,0,5],
+"_drop_handler_8hpp_source.html":[13,0,0,2,20,0,6],
 "_drop_layer_in_interval_8hpp_source.html":[13,0,0,2,32,4,0,0,2],
 "_drop_layer_in_scenario_8hpp_source.html":[13,0,0,2,32,4,0,0,3],
 "_drop_on_cable_8hpp_source.html":[13,0,0,2,32,4,0,0,4],

@@ -29,7 +29,7 @@ var searchData=
   ['editscript_3c_20pd_3a_3aprocessmodel_2c_20pd_3a_3aprocessmodel_3a_3ap_5fscript_20_3e_26',['EditScript&lt; Pd::ProcessModel, Pd::ProcessModel::p_script &gt;',['../class_scenario_1_1_edit_script.html',1,'Scenario']]],
   ['editscript_3c_20vsa_3a_3amodel_2c_20vsa_3a_3amodel_3a_3ap_5fvertex_20_3e_27',['EditScript&lt; VSA::Model, VSA::Model::p_vertex &gt;',['../class_scenario_1_1_edit_script.html',1,'Scenario']]],
   ['effectcontext_28',['EffectContext',['../struct_l_v2_1_1_effect_context.html',1,'LV2']]],
-  ['effectitem_29',['EffectItem',['../classvst_1_1_effect_item.html',1,'vst']]],
+  ['effectlayerfactory_5fbase_29',['EffectLayerFactory_Base',['../class_process_1_1_effect_layer_factory___base.html',1,'Process']]],
   ['effectlayerfactory_5ft_30',['EffectLayerFactory_T',['../class_process_1_1_effect_layer_factory___t.html',1,'Process']]],
   ['effectlayerpresenter_31',['EffectLayerPresenter',['../class_process_1_1_effect_layer_presenter.html',1,'Process']]],
   ['effectlayerview_32',['EffectLayerView',['../class_process_1_1_effect_layer_view.html',1,'Process']]],

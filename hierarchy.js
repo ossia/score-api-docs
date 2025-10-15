@@ -1024,6 +1024,7 @@ var hierarchy =
     [ "std::hash< ossia::unit_variant >", "structstd_1_1hash_3_01ossia_1_1unit__variant_01_4.html", null ],
     [ "std::hash< Path< tag > >", "structstd_1_1hash_3_01_path_3_01tag_01_4_01_4.html", null ],
     [ "std::hash< score::LoadedPluginVersions >", "structstd_1_1hash_3_01score_1_1_loaded_plugin_versions_01_4.html", null ],
+    [ "std::hash< score::uuid_t >", "structstd_1_1hash_3_01score_1_1uuid__t_01_4.html", null ],
     [ "std::hash< State::Address >", "structstd_1_1hash_3_01_state_1_1_address_01_4.html", null ],
     [ "std::hash< State::AddressAccessor >", "structstd_1_1hash_3_01_state_1_1_address_accessor_01_4.html", null ],
     [ "std::hash< std::pair< int, int > >", "classstd_1_1hash_3_01std_1_1pair_3_01int_00_01int_01_4_01_4.html", null ],
@@ -1161,6 +1162,7 @@ var hierarchy =
     [ "WidgetFactory::ImpulseButton", "struct_widget_factory_1_1_impulse_button.html", null ],
     [ "in_relationship< T, U >", "structin__relationship.html", null ],
     [ "increase_timer_precision", "structincrease__timer__precision.html", null ],
+    [ "score::indirect_cast_map_iterator< base_iterator_t, CastTo >", "structscore_1_1indirect__cast__map__iterator.html", null ],
     [ "score::indirect_iterator< base_iterator_t >", "structscore_1_1indirect__iterator.html", null ],
     [ "score::indirect_map_iterator< base_iterator_t >", "structscore_1_1indirect__map__iterator.html", null ],
     [ "score::indirect_ptr_iterator< base_iterator_t >", "structscore_1_1indirect__ptr__iterator.html", null ],
@@ -1328,7 +1330,9 @@ var hierarchy =
           [ "Media::Step::LayerFactory", "struct_media_1_1_step_1_1_layer_factory.html", null ]
         ] ],
         [ "Curve::CurveLayerFactory_T< Model_T, LayerPresenter_T, LayerView_T, CurveColors_T, HeaderDelegate_T >", "class_curve_1_1_curve_layer_factory___t.html", null ],
-        [ "Process::EffectLayerFactory_T< Model_T, Item_T, ExtView_T >", "class_process_1_1_effect_layer_factory___t.html", null ],
+        [ "Process::EffectLayerFactory_Base", "class_process_1_1_effect_layer_factory___base.html", [
+          [ "Process::EffectLayerFactory_T< Model_T, ExtView_T >", "class_process_1_1_effect_layer_factory___t.html", null ]
+        ] ],
         [ "Process::LayerFactory_T< Model_T, LayerPresenter_T, LayerView_T, HeaderDelegate_T >", "class_process_1_1_layer_factory___t.html", null ],
         [ "Process::LayerFactory_T< Model_T, default_t, default_t, default_t >", "class_process_1_1_layer_factory___t_3_01_model___t_00_01default__t_00_01default__t_00_01default__t_01_4.html", null ],
         [ "Scenario::ScenarioTemporalLayerFactory", "class_scenario_1_1_scenario_temporal_layer_factory.html", null ],
@@ -1482,121 +1486,123 @@ var hierarchy =
       ] ]
     ] ],
     [ "score::InterfaceListBase", "classscore_1_1_interface_list_base.html", [
-      [ "score::InterfaceList< AudioFactory >", "classscore_1_1_interface_list.html", [
-        [ "Audio::AudioFactoryList", "class_audio_1_1_audio_factory_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< SegmentFactory >", "classscore_1_1_interface_list.html", [
-        [ "Curve::SegmentList", "class_curve_1_1_segment_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< DeviceModelProvider >", "classscore_1_1_interface_list.html", [
-        [ "Device::DeviceModelProviderList", "class_device_1_1_device_model_provider_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< ProtocolFactory >", "classscore_1_1_interface_list.html", [
-        [ "Device::ProtocolFactoryList", "class_device_1_1_protocol_factory_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< ClockFactory >", "classscore_1_1_interface_list.html", [
-        [ "Execution::ClockFactoryList", "class_execution_1_1_clock_factory_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< ExecutionAction >", "classscore_1_1_interface_list.html", [
-        [ "Execution::ExecutionActionList", "class_execution_1_1_execution_action_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< Execution::ProcessComponentFactory >", "classscore_1_1_interface_list.html", null ],
-      [ "score::InterfaceList< Explorer::ListeningHandlerFactory >", "classscore_1_1_interface_list.html", [
-        [ "Explorer::ListeningHandlerFactoryList", "class_explorer_1_1_listening_handler_factory_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< InspectorWidgetFactory >", "classscore_1_1_interface_list.html", null ],
-      [ "score::InterfaceList< LibraryInterface >", "classscore_1_1_interface_list.html", [
-        [ "Library::LibraryInterfaceList", "class_library_1_1_library_interface_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< LocalTree::ProcessComponentFactory >", "classscore_1_1_interface_list.html", null ],
-      [ "score::InterfaceList< PluginSettingsTab >", "classscore_1_1_interface_list.html", [
-        [ "Media::Settings::PluginSettingsFactoryList", "class_media_1_1_settings_1_1_plugin_settings_factory_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< AutomatableFactory >", "classscore_1_1_interface_list.html", [
-        [ "Process::AutomatableFactoryList", "struct_process_1_1_automatable_factory_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< LayerFactory >", "classscore_1_1_interface_list.html", [
-        [ "Process::LayerFactoryList", "class_process_1_1_layer_factory_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< LoadPresetCommandFactory >", "classscore_1_1_interface_list.html", null ],
-      [ "score::InterfaceList< PortFactory >", "classscore_1_1_interface_list.html", [
-        [ "Process::PortFactoryList", "class_process_1_1_port_factory_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< ProcessDropHandler >", "classscore_1_1_interface_list.html", [
-        [ "Process::ProcessDropHandlerList", "class_process_1_1_process_drop_handler_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< ProcessModelFactory >", "classscore_1_1_interface_list.html", [
-        [ "Process::ProcessFactoryList", "class_process_1_1_process_factory_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< RemoteControlProvider >", "classscore_1_1_interface_list.html", [
-        [ "Process::RemoteControlProviderList", "class_process_1_1_remote_control_provider_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< CoherencyCheckerFactoryInterface >", "classscore_1_1_interface_list.html", [
-        [ "Scenario::CSPCoherencyCheckerList", "class_scenario_1_1_c_s_p_coherency_checker_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< MoveEventFactoryInterface >", "classscore_1_1_interface_list.html", [
-        [ "Scenario::Command::MoveEventList", "class_scenario_1_1_command_1_1_move_event_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< TriggerCommandFactory >", "classscore_1_1_interface_list.html", null ],
-      [ "score::InterfaceList< DisplayedElementsProvider >", "classscore_1_1_interface_list.html", null ],
-      [ "score::InterfaceList< DisplayedElementsToolPaletteFactory >", "classscore_1_1_interface_list.html", null ],
-      [ "score::InterfaceList< DropHandler >", "classscore_1_1_interface_list.html", [
-        [ "Scenario::DropHandlerList", "class_scenario_1_1_drop_handler_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< IntervalDropHandler >", "classscore_1_1_interface_list.html", [
-        [ "Scenario::IntervalDropHandlerList", "class_scenario_1_1_interval_drop_handler_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< IntervalResizer >", "classscore_1_1_interface_list.html", [
-        [ "Scenario::IntervalResizerList", "class_scenario_1_1_interval_resizer_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< TransportInterface >", "classscore_1_1_interface_list.html", [
-        [ "Transport::TransportInterfaceList", "class_transport_1_1_transport_interface_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< Factory_T >", "classscore_1_1_interface_list.html", [
-        [ "score::DefaultedGenericComponentFactoryList< Model_T, System_T, Factory_T, DefaultFactory_T >", "classscore_1_1_defaulted_generic_component_factory_list.html", null ],
-        [ "score::GenericComponentFactoryList< Model_T, System_T, Factory_T >", "classscore_1_1_generic_component_factory_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< score::DocumentDelegateFactory >", "classscore_1_1_interface_list.html", [
-        [ "score::DocumentDelegateList", "classscore_1_1_document_delegate_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< score::DocumentPluginFactory >", "classscore_1_1_interface_list.html", [
-        [ "score::DocumentPluginFactoryList", "classscore_1_1_document_plugin_factory_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< T >", "classscore_1_1_interface_list.html", [
-        [ "score::MatchingFactory< T >", "classscore_1_1_matching_factory.html", null ]
-      ] ],
-      [ "score::InterfaceList< ObjectEditor >", "classscore_1_1_interface_list.html", [
-        [ "score::ObjectEditorList", "classscore_1_1_object_editor_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< score::PanelDelegateFactory >", "classscore_1_1_interface_list.html", [
-        [ "score::PanelDelegateFactoryList", "classscore_1_1_panel_delegate_factory_list.html", null ]
-      ] ],
-      [ "score::InterfaceList< score::ValidityChecker >", "classscore_1_1_interface_list.html", [
-        [ "score::ValidityCheckerList", "classscore_1_1_validity_checker_list.html", null ]
-      ] ],
       [ "Process::MagnetismAdjuster", "class_process_1_1_magnetism_adjuster.html", null ],
       [ "Process::OfflineActionList", "class_process_1_1_offline_action_list.html", null ],
-      [ "score::InterfaceList< FactoryType >", "classscore_1_1_interface_list.html", [
-        [ "score::GenericComponentFactoryList< Process::ProcessModel, Execution::Context, Execution::ProcessComponentFactory >", "classscore_1_1_generic_component_factory_list.html", [
-          [ "Execution::ProcessComponentFactoryList", "class_execution_1_1_process_component_factory_list.html", null ]
+      [ "score::InterfaceListMain", "classscore_1_1_interface_list_main.html", [
+        [ "score::InterfaceList< AudioFactory >", "classscore_1_1_interface_list.html", [
+          [ "Audio::AudioFactoryList", "class_audio_1_1_audio_factory_list.html", null ]
         ] ],
-        [ "score::GenericComponentFactoryList< Process::ProcessModel, score::DocumentContext, LocalTree::ProcessComponentFactory >", "classscore_1_1_generic_component_factory_list.html", [
-          [ "LocalTree::ProcessComponentFactoryList", "class_local_tree_1_1_process_component_factory_list.html", null ]
+        [ "score::InterfaceList< SegmentFactory >", "classscore_1_1_interface_list.html", [
+          [ "Curve::SegmentList", "class_curve_1_1_segment_list.html", null ]
         ] ],
-        [ "score::MatchingFactory< InspectorWidgetFactory >", "classscore_1_1_matching_factory.html", [
-          [ "Inspector::InspectorWidgetList", "class_inspector_1_1_inspector_widget_list.html", null ]
+        [ "score::InterfaceList< DeviceModelProvider >", "classscore_1_1_interface_list.html", [
+          [ "Device::DeviceModelProviderList", "class_device_1_1_device_model_provider_list.html", null ]
         ] ],
-        [ "score::MatchingFactory< LoadPresetCommandFactory >", "classscore_1_1_matching_factory.html", [
-          [ "Process::LoadPresetCommandFactoryList", "class_process_1_1_load_preset_command_factory_list.html", null ]
+        [ "score::InterfaceList< ProtocolFactory >", "classscore_1_1_interface_list.html", [
+          [ "Device::ProtocolFactoryList", "class_device_1_1_protocol_factory_list.html", null ]
         ] ],
-        [ "score::MatchingFactory< TriggerCommandFactory >", "classscore_1_1_matching_factory.html", [
-          [ "Scenario::Command::TriggerCommandFactoryList", "class_scenario_1_1_command_1_1_trigger_command_factory_list.html", null ]
+        [ "score::InterfaceList< ClockFactory >", "classscore_1_1_interface_list.html", [
+          [ "Execution::ClockFactoryList", "class_execution_1_1_clock_factory_list.html", null ]
         ] ],
-        [ "score::MatchingFactory< DisplayedElementsProvider >", "classscore_1_1_matching_factory.html", [
-          [ "Scenario::DisplayedElementsProviderList", "class_scenario_1_1_displayed_elements_provider_list.html", null ]
+        [ "score::InterfaceList< ExecutionAction >", "classscore_1_1_interface_list.html", [
+          [ "Execution::ExecutionActionList", "class_execution_1_1_execution_action_list.html", null ]
         ] ],
-        [ "score::MatchingFactory< DisplayedElementsToolPaletteFactory >", "classscore_1_1_matching_factory.html", [
-          [ "Scenario::DisplayedElementsToolPaletteFactoryList", "class_scenario_1_1_displayed_elements_tool_palette_factory_list.html", null ]
+        [ "score::InterfaceList< Execution::ProcessComponentFactory >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< Explorer::ListeningHandlerFactory >", "classscore_1_1_interface_list.html", [
+          [ "Explorer::ListeningHandlerFactoryList", "class_explorer_1_1_listening_handler_factory_list.html", null ]
+        ] ],
+        [ "score::InterfaceList< InspectorWidgetFactory >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< LibraryInterface >", "classscore_1_1_interface_list.html", [
+          [ "Library::LibraryInterfaceList", "class_library_1_1_library_interface_list.html", null ]
+        ] ],
+        [ "score::InterfaceList< LocalTree::ProcessComponentFactory >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< PluginSettingsTab >", "classscore_1_1_interface_list.html", [
+          [ "Media::Settings::PluginSettingsFactoryList", "class_media_1_1_settings_1_1_plugin_settings_factory_list.html", null ]
+        ] ],
+        [ "score::InterfaceList< AutomatableFactory >", "classscore_1_1_interface_list.html", [
+          [ "Process::AutomatableFactoryList", "struct_process_1_1_automatable_factory_list.html", null ]
+        ] ],
+        [ "score::InterfaceList< LayerFactory >", "classscore_1_1_interface_list.html", [
+          [ "Process::LayerFactoryList", "class_process_1_1_layer_factory_list.html", null ]
+        ] ],
+        [ "score::InterfaceList< LoadPresetCommandFactory >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< PortFactory >", "classscore_1_1_interface_list.html", [
+          [ "Process::PortFactoryList", "class_process_1_1_port_factory_list.html", null ]
+        ] ],
+        [ "score::InterfaceList< ProcessDropHandler >", "classscore_1_1_interface_list.html", [
+          [ "Process::ProcessDropHandlerList", "class_process_1_1_process_drop_handler_list.html", null ]
+        ] ],
+        [ "score::InterfaceList< ProcessModelFactory >", "classscore_1_1_interface_list.html", [
+          [ "Process::ProcessFactoryList", "class_process_1_1_process_factory_list.html", null ]
+        ] ],
+        [ "score::InterfaceList< RemoteControlProvider >", "classscore_1_1_interface_list.html", [
+          [ "Process::RemoteControlProviderList", "class_process_1_1_remote_control_provider_list.html", null ]
+        ] ],
+        [ "score::InterfaceList< CoherencyCheckerFactoryInterface >", "classscore_1_1_interface_list.html", [
+          [ "Scenario::CSPCoherencyCheckerList", "class_scenario_1_1_c_s_p_coherency_checker_list.html", null ]
+        ] ],
+        [ "score::InterfaceList< MoveEventFactoryInterface >", "classscore_1_1_interface_list.html", [
+          [ "Scenario::Command::MoveEventList", "class_scenario_1_1_command_1_1_move_event_list.html", null ]
+        ] ],
+        [ "score::InterfaceList< TriggerCommandFactory >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< DisplayedElementsProvider >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< DisplayedElementsToolPaletteFactory >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< DropHandler >", "classscore_1_1_interface_list.html", [
+          [ "Scenario::DropHandlerList", "class_scenario_1_1_drop_handler_list.html", null ]
+        ] ],
+        [ "score::InterfaceList< IntervalDropHandler >", "classscore_1_1_interface_list.html", [
+          [ "Scenario::IntervalDropHandlerList", "class_scenario_1_1_interval_drop_handler_list.html", null ]
+        ] ],
+        [ "score::InterfaceList< IntervalResizer >", "classscore_1_1_interface_list.html", [
+          [ "Scenario::IntervalResizerList", "class_scenario_1_1_interval_resizer_list.html", null ]
+        ] ],
+        [ "score::InterfaceList< TransportInterface >", "classscore_1_1_interface_list.html", [
+          [ "Transport::TransportInterfaceList", "class_transport_1_1_transport_interface_list.html", null ]
+        ] ],
+        [ "score::InterfaceList< Factory_T >", "classscore_1_1_interface_list.html", [
+          [ "score::DefaultedGenericComponentFactoryList< Model_T, System_T, Factory_T, DefaultFactory_T >", "classscore_1_1_defaulted_generic_component_factory_list.html", null ],
+          [ "score::GenericComponentFactoryList< Model_T, System_T, Factory_T >", "classscore_1_1_generic_component_factory_list.html", null ]
+        ] ],
+        [ "score::InterfaceList< score::DocumentDelegateFactory >", "classscore_1_1_interface_list.html", [
+          [ "score::DocumentDelegateList", "classscore_1_1_document_delegate_list.html", null ]
+        ] ],
+        [ "score::InterfaceList< score::DocumentPluginFactory >", "classscore_1_1_interface_list.html", [
+          [ "score::DocumentPluginFactoryList", "classscore_1_1_document_plugin_factory_list.html", null ]
+        ] ],
+        [ "score::InterfaceList< T >", "classscore_1_1_interface_list.html", [
+          [ "score::MatchingFactory< T >", "classscore_1_1_matching_factory.html", null ]
+        ] ],
+        [ "score::InterfaceList< ObjectEditor >", "classscore_1_1_interface_list.html", [
+          [ "score::ObjectEditorList", "classscore_1_1_object_editor_list.html", null ]
+        ] ],
+        [ "score::InterfaceList< score::PanelDelegateFactory >", "classscore_1_1_interface_list.html", [
+          [ "score::PanelDelegateFactoryList", "classscore_1_1_panel_delegate_factory_list.html", null ]
+        ] ],
+        [ "score::InterfaceList< score::ValidityChecker >", "classscore_1_1_interface_list.html", [
+          [ "score::ValidityCheckerList", "classscore_1_1_validity_checker_list.html", null ]
+        ] ],
+        [ "score::InterfaceList< FactoryType >", "classscore_1_1_interface_list.html", [
+          [ "score::GenericComponentFactoryList< Process::ProcessModel, Execution::Context, Execution::ProcessComponentFactory >", "classscore_1_1_generic_component_factory_list.html", [
+            [ "Execution::ProcessComponentFactoryList", "class_execution_1_1_process_component_factory_list.html", null ]
+          ] ],
+          [ "score::GenericComponentFactoryList< Process::ProcessModel, score::DocumentContext, LocalTree::ProcessComponentFactory >", "classscore_1_1_generic_component_factory_list.html", [
+            [ "LocalTree::ProcessComponentFactoryList", "class_local_tree_1_1_process_component_factory_list.html", null ]
+          ] ],
+          [ "score::MatchingFactory< InspectorWidgetFactory >", "classscore_1_1_matching_factory.html", [
+            [ "Inspector::InspectorWidgetList", "class_inspector_1_1_inspector_widget_list.html", null ]
+          ] ],
+          [ "score::MatchingFactory< LoadPresetCommandFactory >", "classscore_1_1_matching_factory.html", [
+            [ "Process::LoadPresetCommandFactoryList", "class_process_1_1_load_preset_command_factory_list.html", null ]
+          ] ],
+          [ "score::MatchingFactory< TriggerCommandFactory >", "classscore_1_1_matching_factory.html", [
+            [ "Scenario::Command::TriggerCommandFactoryList", "class_scenario_1_1_command_1_1_trigger_command_factory_list.html", null ]
+          ] ],
+          [ "score::MatchingFactory< DisplayedElementsProvider >", "classscore_1_1_matching_factory.html", [
+            [ "Scenario::DisplayedElementsProviderList", "class_scenario_1_1_displayed_elements_provider_list.html", null ]
+          ] ],
+          [ "score::MatchingFactory< DisplayedElementsToolPaletteFactory >", "classscore_1_1_matching_factory.html", [
+            [ "Scenario::DisplayedElementsToolPaletteFactoryList", "class_scenario_1_1_displayed_elements_tool_palette_factory_list.html", null ]
+          ] ]
         ] ]
       ] ]
     ] ],
@@ -2238,7 +2244,6 @@ var hierarchy =
     [ "Curve::PointId", "struct_curve_1_1_point_id.html", null ],
     [ "Clap::clap_node_mono::poly_plugin", "struct_clap_1_1clap__node__mono_1_1poly__plugin.html", null ],
     [ "ControlSurface::Presenter::Port", "struct_control_surface_1_1_presenter_1_1_port.html", null ],
-    [ "Gfx::Video::Presenter::Port", "struct_gfx_1_1_video_1_1_presenter_1_1_port.html", null ],
     [ "oscr::Port", "structoscr_1_1_port.html", null ],
     [ "score::gfx::Port", "structscore_1_1gfx_1_1_port.html", null ],
     [ "score::gfx::port_indices", "structscore_1_1gfx_1_1port__indices.html", null ],
@@ -2759,10 +2764,13 @@ var hierarchy =
         [ "Scenario::LayerRectItem", "class_scenario_1_1_layer_rect_item.html", null ],
         [ "score::BackgroundItem", "classscore_1_1_background_item.html", [
           [ "score::GraphicsLayout", "classscore_1_1_graphics_layout.html", [
+            [ "score::GraphicsDefaultInletLayout", "classscore_1_1_graphics_default_inlet_layout.html", null ],
             [ "score::GraphicsDefaultLayout", "classscore_1_1_graphics_default_layout.html", null ],
+            [ "score::GraphicsDefaultOutletLayout", "classscore_1_1_graphics_default_outlet_layout.html", null ],
             [ "score::GraphicsGridColumnsLayout", "classscore_1_1_graphics_grid_columns_layout.html", null ],
             [ "score::GraphicsGridRowsLayout", "classscore_1_1_graphics_grid_rows_layout.html", null ],
             [ "score::GraphicsHBoxLayout", "classscore_1_1_graphics_h_box_layout.html", null ],
+            [ "score::GraphicsIORootLayout", "classscore_1_1_graphics_i_o_root_layout.html", null ],
             [ "score::GraphicsSplitLayout", "classscore_1_1_graphics_split_layout.html", null ],
             [ "score::GraphicsTabLayout", "classscore_1_1_graphics_tab_layout.html", null ],
             [ "score::GraphicsVBoxLayout", "classscore_1_1_graphics_v_box_layout.html", null ]
@@ -2772,9 +2780,7 @@ var hierarchy =
           [ "Media::Step::Item", "class_media_1_1_step_1_1_item.html", null ],
           [ "Process::DefaultEffectItem", "class_process_1_1_default_effect_item.html", null ],
           [ "Scenario::NodalContainer", "struct_scenario_1_1_nodal_container.html", null ],
-          [ "Scenario::NodalIntervalView", "class_scenario_1_1_nodal_interval_view.html", null ],
-          [ "vst3::VSTEffectItem", "classvst3_1_1_v_s_t_effect_item.html", null ],
-          [ "vst::EffectItem", "classvst_1_1_effect_item.html", null ]
+          [ "Scenario::NodalIntervalView", "class_scenario_1_1_nodal_interval_view.html", null ]
         ] ],
         [ "score::RectItem", "classscore_1_1_rect_item.html", null ]
       ] ],
@@ -2832,6 +2838,7 @@ var hierarchy =
         [ "Process::AddressAccessorLineEdit< Process::AddressAccessorEditWidget >", "class_process_1_1_address_accessor_line_edit.html", null ]
       ] ],
       [ "State::AddressFragmentLineEdit", "class_state_1_1_address_fragment_line_edit.html", null ],
+      [ "score::PromptLineEdit", "classscore_1_1_prompt_line_edit.html", null ],
       [ "score::SearchLineEdit", "classscore_1_1_search_line_edit.html", [
         [ "Explorer::ExplorerSearchLineEdit", "class_explorer_1_1_explorer_search_line_edit.html", null ],
         [ "Library::ItemModelFilterLineEdit", "struct_library_1_1_item_model_filter_line_edit.html", null ],
@@ -4222,85 +4229,12 @@ var hierarchy =
     [ "JS::Vec3fValueType", "struct_j_s_1_1_vec3f_value_type.html", null ],
     [ "JS::Vec4fValueType", "struct_j_s_1_1_vec4f_value_type.html", null ],
     [ "std::vector< T >", null, [
-      [ "score::IndirectContainer< AudioFactory >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< SegmentFactory >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< DeviceModelProvider >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< ProtocolFactory >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< ClockFactory >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< ExecutionAction >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< Execution::ProcessComponentFactory >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< Explorer::ListeningHandlerFactory >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< InspectorWidgetFactory >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< LibraryInterface >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< LocalTree::ProcessComponentFactory >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< PluginSettingsTab >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< AutomatableFactory >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< LayerFactory >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< LoadPresetCommandFactory >", "classscore_1_1_indirect_container.html", null ],
       [ "score::IndirectContainer< OfflineAction >", "classscore_1_1_indirect_container.html", [
         [ "Process::OfflineActionList", "class_process_1_1_offline_action_list.html", null ]
       ] ],
-      [ "score::IndirectContainer< PortFactory >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< ProcessDropHandler >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< ProcessModelFactory >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< RemoteControlProvider >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< CoherencyCheckerFactoryInterface >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< MoveEventFactoryInterface >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< TriggerCommandFactory >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< DisplayedElementsProvider >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< DisplayedElementsToolPaletteFactory >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< DropHandler >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< IntervalDropHandler >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< IntervalResizer >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< TransportInterface >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< Factory_T >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< score::DocumentDelegateFactory >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< score::DocumentPluginFactory >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< FactoryType >", "classscore_1_1_indirect_container.html", [
-        [ "score::InterfaceList< FactoryType >", "classscore_1_1_interface_list.html", null ]
-      ] ],
-      [ "score::IndirectContainer< ObjectEditor >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< score::PanelDelegateFactory >", "classscore_1_1_indirect_container.html", null ],
-      [ "score::IndirectContainer< score::ValidityChecker >", "classscore_1_1_indirect_container.html", null ],
       [ "TreePath", "class_tree_path.html", null ],
       [ "score::Components", "structscore_1_1_components.html", null ],
-      [ "score::IndirectContainer< T, U >", "classscore_1_1_indirect_container.html", [
-        [ "score::InterfaceList< AudioFactory >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< SegmentFactory >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< DeviceModelProvider >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< ProtocolFactory >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< ClockFactory >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< ExecutionAction >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< Execution::ProcessComponentFactory >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< Explorer::ListeningHandlerFactory >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< InspectorWidgetFactory >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< LibraryInterface >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< LocalTree::ProcessComponentFactory >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< PluginSettingsTab >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< AutomatableFactory >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< LayerFactory >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< LoadPresetCommandFactory >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< PortFactory >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< ProcessDropHandler >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< ProcessModelFactory >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< RemoteControlProvider >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< CoherencyCheckerFactoryInterface >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< MoveEventFactoryInterface >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< TriggerCommandFactory >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< DisplayedElementsProvider >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< DisplayedElementsToolPaletteFactory >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< DropHandler >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< IntervalDropHandler >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< IntervalResizer >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< TransportInterface >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< Factory_T >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< score::DocumentDelegateFactory >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< score::DocumentPluginFactory >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< T >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< ObjectEditor >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< score::PanelDelegateFactory >", "classscore_1_1_interface_list.html", null ],
-        [ "score::InterfaceList< score::ValidityChecker >", "classscore_1_1_interface_list.html", null ]
-      ] ]
+      [ "score::IndirectContainer< T, U >", "classscore_1_1_indirect_container.html", null ]
     ] ],
     [ "score::Version", "classscore_1_1_version.html", null ],
     [ "Vertex", null, [

@@ -18,6 +18,7 @@ var dir_e0f0a2e5702e7fb434434342fa318f9f =
     [ "MimeData.hpp", "_mime_data_8hpp_source.html", null ],
     [ "Pixmap.hpp", "_pixmap_8hpp_source.html", null ],
     [ "PluginWindow.hpp", "_plugin_window_8hpp_source.html", null ],
+    [ "PromptLineEdit.hpp", "_prompt_line_edit_8hpp_source.html", null ],
     [ "QuantificationWidget.hpp", "_quantification_widget_8hpp_source.html", null ],
     [ "ReactiveLabel.hpp", "_reactive_label_8hpp_source.html", null ],
     [ "SearchLineEdit.hpp", "_search_line_edit_8hpp_source.html", null ],

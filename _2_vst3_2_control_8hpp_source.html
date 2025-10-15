@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('_2_vst3_2_control_8hpp_source.html',''
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  MODEL_METADATA_IMPL(<a class="code hl_class" href="classvst3_1_1_control_inlet.html">ControlInlet</a>)</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <a class="code hl_class" href="classvst3_1_1_control_inlet.html">ControlInlet</a>(<a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> c, QObject* parent)</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>      : <a class="code hl_class" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a>{std::move(c), parent}</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>      : <a class="code hl_class" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a>{<span class="stringliteral">&quot;Control&quot;</span>, std::move(c), parent}</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  {</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    setDomain(ossia::make_domain(0.f, 1.f));</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    setInit(0.5);</div>
@@ -212,24 +212,33 @@ $(document).ready(function(){initNavTree('_2_vst3_2_control_8hpp_source.html',''
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>      <a class="code hl_class" href="class_process_1_1_outlet.html">Process::Outlet</a>&amp; port, <span class="keyword">const</span> <a class="code hl_struct" href="struct_process_1_1_context.html">Process::Context</a>&amp; ctx, QGraphicsItem* parent,</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>      QObject* context) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="keywordtype">void</span> setupInletInspector(</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>      <span class="keyword">const</span> <a class="code hl_class" href="class_process_1_1_inlet.html">Process::Inlet</a>&amp; port, <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx, QWidget* parent,</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>      <a class="code hl_class" href="class_inspector_1_1_layout.html">Inspector::Layout</a>&amp; lay, QObject* context) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>};</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  QGraphicsItem* makeControlItem(</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>      <a class="code hl_class" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a>&amp; port, <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>      QGraphicsItem* parent, QObject* context) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  QGraphicsItem* makeControlItem(</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>      <a class="code hl_class" href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a>&amp; port, <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>      QGraphicsItem* parent, QObject* context) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <span class="keywordtype">void</span> setupInletInspector(</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>      <span class="keyword">const</span> <a class="code hl_class" href="class_process_1_1_inlet.html">Process::Inlet</a>&amp; port, <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx, QWidget* parent,</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>      <a class="code hl_class" href="class_inspector_1_1_layout.html">Inspector::Layout</a>&amp; lay, QObject* context) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>};</div>
 </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>}</div>
 <div class="ttc" id="aclass_data_stream_writer_html"><div class="ttname"><a href="class_data_stream_writer.html">DataStreamWriter</a></div><div class="ttdef"><b>Definition</b> DataStreamVisitor.hpp:202</div></div>
 <div class="ttc" id="aclass_dataflow_1_1_automatable_port_item_html"><div class="ttname"><a href="class_dataflow_1_1_automatable_port_item.html">Dataflow::AutomatablePortItem</a></div><div class="ttdef"><b>Definition</b> score-plugin-dataflow/Dataflow/PortItem.hpp:21</div></div>
 <div class="ttc" id="aclass_dataflow_1_1_port_item_html"><div class="ttname"><a href="class_dataflow_1_1_port_item.html">Dataflow::PortItem</a></div><div class="ttdef"><b>Definition</b> score-lib-process/Process/Dataflow/PortItem.hpp:40</div></div>
 <div class="ttc" id="aclass_inspector_1_1_layout_html"><div class="ttname"><a href="class_inspector_1_1_layout.html">Inspector::Layout</a></div><div class="ttdef"><b>Definition</b> lib/score/widgets/Layout.hpp:29</div></div>
 <div class="ttc" id="aclass_j_s_o_n_writer_html"><div class="ttname"><a href="class_j_s_o_n_writer.html">JSONWriter</a></div><div class="ttdef"><b>Definition</b> JSONVisitor.hpp:423</div></div>
-<div class="ttc" id="aclass_process_1_1_control_inlet_html"><div class="ttname"><a href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></div><div class="ttdef"><b>Definition</b> Port.hpp:204</div></div>
-<div class="ttc" id="aclass_process_1_1_inlet_html"><div class="ttname"><a href="class_process_1_1_inlet.html">Process::Inlet</a></div><div class="ttdef"><b>Definition</b> Port.hpp:178</div></div>
+<div class="ttc" id="aclass_process_1_1_control_inlet_html"><div class="ttname"><a href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></div><div class="ttdef"><b>Definition</b> Port.hpp:205</div></div>
+<div class="ttc" id="aclass_process_1_1_control_outlet_html"><div class="ttname"><a href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a></div><div class="ttdef"><b>Definition</b> Port.hpp:426</div></div>
+<div class="ttc" id="aclass_process_1_1_inlet_html"><div class="ttname"><a href="class_process_1_1_inlet.html">Process::Inlet</a></div><div class="ttdef"><b>Definition</b> Port.hpp:179</div></div>
 <div class="ttc" id="aclass_process_1_1_outlet_html"><div class="ttname"><a href="class_process_1_1_outlet.html">Process::Outlet</a></div><div class="ttdef"><b>Definition</b> Port.hpp:274</div></div>
 <div class="ttc" id="aclass_process_1_1_port_factory_html"><div class="ttname"><a href="class_process_1_1_port_factory.html">Process::PortFactory</a></div><div class="ttdef"><b>Definition</b> PortFactory.hpp:30</div></div>
-<div class="ttc" id="aclass_process_1_1_port_html"><div class="ttname"><a href="class_process_1_1_port.html">Process::Port</a></div><div class="ttdef"><b>Definition</b> Port.hpp:102</div></div>
+<div class="ttc" id="aclass_process_1_1_port_html"><div class="ttname"><a href="class_process_1_1_port.html">Process::Port</a></div><div class="ttdef"><b>Definition</b> Port.hpp:103</div></div>
 <div class="ttc" id="aclass_scenario_1_1_interval_model_html"><div class="ttname"><a href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a></div><div class="ttdef"><b>Definition</b> IntervalModel.hpp:50</div></div>
-<div class="ttc" id="aclass_uuid_key_html"><div class="ttname"><a href="class_uuid_key.html">UuidKey</a></div><div class="ttdef"><b>Definition</b> UuidKey.hpp:344</div></div>
+<div class="ttc" id="aclass_uuid_key_html"><div class="ttname"><a href="class_uuid_key.html">UuidKey</a></div><div class="ttdef"><b>Definition</b> UuidKey.hpp:345</div></div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition</b> Identifier.hpp:59</div></div>
 <div class="ttc" id="aclassscore_1_1_command_html"><div class="ttname"><a href="classscore_1_1_command.html">score::Command</a></div><div class="ttdoc">The Command class.</div><div class="ttdef"><b>Definition</b> Command.hpp:34</div></div>
 <div class="ttc" id="aclassvst3_1_1_control_inlet_html"><div class="ttname"><a href="classvst3_1_1_control_inlet.html">vst3::ControlInlet</a></div><div class="ttdef"><b>Definition</b> /Vst3/Control.hpp:19</div></div>

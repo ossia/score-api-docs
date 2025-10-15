@@ -195,9 +195,8 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>handleLoading
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>on_closeDocument</b> (<a class="el" href="classscore_1_1_document.html">score::Document</a> &amp;doc)</td></tr>
 <tr class="memdesc:acfa0583d5e4f3c1454ef24ef62eef57d"><td class="mdescLeft">&#160;</td><td class="mdescRight">on_closeDocument Will be called before closing the document. <br /></td></tr>
 <tr class="separator:acfa0583d5e4f3c1454ef24ef62eef57d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6eb40d143abe1b1232d9ba277cdbae26" id="r_a6eb40d143abe1b1232d9ba277cdbae26"><td class="memItemLeft" align="right" valign="top"><a id="a6eb40d143abe1b1232d9ba277cdbae26" name="a6eb40d143abe1b1232d9ba277cdbae26"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>on_newDocument</b> (<a class="el" href="classscore_1_1_document.html">score::Document</a> &amp;doc)</td></tr>
-<tr class="memdesc:a6eb40d143abe1b1232d9ba277cdbae26"><td class="mdescLeft">&#160;</td><td class="mdescRight">on_newDocument Will be called only when a new, empty document is created; classes inheriting from <a class="el" href="classscore_1_1_serializable_document_plugin.html" title="Document plug-in with serializable data.">SerializableDocumentPlugin</a> should be instantiated and added to the document at this point. <br /></td></tr>
+<tr class="memitem:a6eb40d143abe1b1232d9ba277cdbae26" id="r_a6eb40d143abe1b1232d9ba277cdbae26"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_g_u_i_application_plugin.html#a6eb40d143abe1b1232d9ba277cdbae26">on_newDocument</a> (<a class="el" href="classscore_1_1_document.html">score::Document</a> &amp;doc)</td></tr>
+<tr class="memdesc:a6eb40d143abe1b1232d9ba277cdbae26"><td class="mdescLeft">&#160;</td><td class="mdescRight">on_newDocument Will be called only when a new, empty document is created; classes inheriting from <a class="el" href="classscore_1_1_serializable_document_plugin.html" title="Document plug-in with serializable data.">SerializableDocumentPlugin</a> should be instantiated and added to the document at this point.  <br /></td></tr>
 <tr class="separator:a6eb40d143abe1b1232d9ba277cdbae26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ac5df59d48c03c0517f3bba8f8022a9" id="r_a4ac5df59d48c03c0517f3bba8f8022a9"><td class="memItemLeft" align="right" valign="top"><a id="a4ac5df59d48c03c0517f3bba8f8022a9" name="a4ac5df59d48c03c0517f3bba8f8022a9"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>on_loadedDocument</b> (<a class="el" href="classscore_1_1_document.html">score::Document</a> &amp;doc)</td></tr>
@@ -498,6 +497,36 @@ const <a class="el" href="structscore_1_1_g_u_i_application_context.html">GUIApp
 <p>on_keyPressEvent Called with key events in the main document view. </p>
 
 <p>Reimplemented in <a class="el" href="class_curve_1_1_application_plugin.html#a39d76c2b8e21b03e879553ae693e71da">Curve::ApplicationPlugin</a>.</p>
+
+</div>
+</div>
+<a id="a6eb40d143abe1b1232d9ba277cdbae26" name="a6eb40d143abe1b1232d9ba277cdbae26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eb40d143abe1b1232d9ba277cdbae26">&#9670;&#160;</a></span>on_newDocument()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::GUIApplicationPlugin::on_newDocument </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classscore_1_1_document.html">score::Document</a> &amp;&#160;</td>
+          <td class="paramname"><em>doc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>on_newDocument Will be called only when a new, empty document is created; classes inheriting from <a class="el" href="classscore_1_1_serializable_document_plugin.html" title="Document plug-in with serializable data.">SerializableDocumentPlugin</a> should be instantiated and added to the document at this point. </p>
+
+<p>Reimplemented in <a class="el" href="class_j_s_1_1_application_plugin.html#ad8b1b6f83368eaee9798081aa80a7c5a">JS::ApplicationPlugin</a>.</p>
 
 </div>
 </div>

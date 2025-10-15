@@ -201,6 +201,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_process_1_1_descriptor.html">Descriptor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_effect_layer_factory___base.html">EffectLayerFactory_Base</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_effect_layer_factory___t.html">EffectLayerFactory_T</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_effect_layer_presenter.html">EffectLayerPresenter</a></td></tr>
@@ -469,18 +471,6 @@ QGraphicsItem *&#160;</td><td class="memItemRight" valign="bottom"><b>makeExtern
 <tr class="memitem:a2d39a634ea7ae1242c45e31eab91704c" id="r_a2d39a634ea7ae1242c45e31eab91704c"><td class="memItemLeft" align="right" valign="top"><a id="a2d39a634ea7ae1242c45e31eab91704c" name="a2d39a634ea7ae1242c45e31eab91704c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>copyProcess</b> (<a class="el" href="class_j_s_o_n_reader.html">JSONReader</a> &amp;r, const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;proc)</td></tr>
 <tr class="separator:a2d39a634ea7ae1242c45e31eab91704c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a091e3079dd365daa1e97e99a8a9e45e6" id="r_a091e3079dd365daa1e97e99a8a9e45e6"><td class="memTemplParams" colspan="2"><a id="a091e3079dd365daa1e97e99a8a9e45e6" name="a091e3079dd365daa1e97e99a8a9e45e6"></a>
-template&lt;typename F &gt; </td></tr>
-<tr class="memitem:a091e3079dd365daa1e97e99a8a9e45e6"><td class="memTemplItemLeft" align="right" valign="top">QPointF&#160;</td><td class="memTemplItemRight" valign="bottom"><b>currentWidgetPos</b> (int controlIndex, F getControlSize) noexcept(noexcept(getControlSize(0)))</td></tr>
-<tr class="separator:a091e3079dd365daa1e97e99a8a9e45e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9c12f39c316675ab44c316c686f2700" id="r_aa9c12f39c316675ab44c316c686f2700"><td class="memTemplParams" colspan="2"><a id="aa9c12f39c316675ab44c316c686f2700" name="aa9c12f39c316675ab44c316c686f2700"></a>
-template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:aa9c12f39c316675ab44c316c686f2700"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>controlSetup</b> (Args &amp;&amp;... args)</td></tr>
-<tr class="separator:aa9c12f39c316675ab44c316c686f2700"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05ea65d3a780c967368f0031eb778f03" id="r_a05ea65d3a780c967368f0031eb778f03"><td class="memTemplParams" colspan="2"><a id="a05ea65d3a780c967368f0031eb778f03" name="a05ea65d3a780c967368f0031eb778f03"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a05ea65d3a780c967368f0031eb778f03"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>createControl</b> (int i, const auto &amp;setup, T &amp;port, const <a class="el" href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a> &amp;portFactory, const <a class="el" href="struct_process_1_1_context.html">Process::Context</a> &amp;doc, QGraphicsItem *parentItem, QObject *parent)</td></tr>
-<tr class="separator:a05ea65d3a780c967368f0031eb778f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca9caf5b23b73ab96c7ccdd34bad0878" id="r_aca9caf5b23b73ab96c7ccdd34bad0878"><td class="memItemLeft" align="right" valign="top"><a id="aca9caf5b23b73ab96c7ccdd34bad0878" name="aca9caf5b23b73ab96c7ccdd34bad0878"></a>
 const <a class="el" href="class_string_key.html">CommandGroupKey</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>CommandFactoryName</b> ()</td></tr>
 <tr class="separator:aca9caf5b23b73ab96c7ccdd34bad0878"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -505,24 +495,6 @@ template&lt;typename T &gt; </td></tr>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a535ec17ce025a333d025095707fb450f"><td class="memTemplItemLeft" align="right" valign="top">Dataflow::SerializedCables&#160;</td><td class="memTemplItemRight" valign="bottom"><b>cablesToCopy</b> (const std::vector&lt; T * &gt; &amp;array, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx)</td></tr>
 <tr class="separator:a535ec17ce025a333d025095707fb450f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa52d012342c2ff8f97651bbd37e790a" id="r_aaa52d012342c2ff8f97651bbd37e790a"><td class="memItemLeft" align="right" valign="top"><a id="aaa52d012342c2ff8f97651bbd37e790a" name="aaa52d012342c2ff8f97651bbd37e790a"></a>
-std::unique_ptr&lt; <a class="el" href="class_process_1_1_inlet.html">Inlet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>make_value_inlet</b> (const <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="class_process_1_1_port.html">Process::Port</a> &gt; &amp;c, QObject *parent)</td></tr>
-<tr class="separator:aaa52d012342c2ff8f97651bbd37e790a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af49d4a78ee4e4fd84ee6e8e648c5bec1" id="r_af49d4a78ee4e4fd84ee6e8e648c5bec1"><td class="memItemLeft" align="right" valign="top"><a id="af49d4a78ee4e4fd84ee6e8e648c5bec1" name="af49d4a78ee4e4fd84ee6e8e648c5bec1"></a>
-std::unique_ptr&lt; <a class="el" href="class_process_1_1_outlet.html">Outlet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>make_value_outlet</b> (const <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="class_process_1_1_port.html">Process::Port</a> &gt; &amp;c, QObject *parent)</td></tr>
-<tr class="separator:af49d4a78ee4e4fd84ee6e8e648c5bec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10f7f65c008925084229001cdcbc8c2c" id="r_a10f7f65c008925084229001cdcbc8c2c"><td class="memItemLeft" align="right" valign="top"><a id="a10f7f65c008925084229001cdcbc8c2c" name="a10f7f65c008925084229001cdcbc8c2c"></a>
-std::unique_ptr&lt; <a class="el" href="class_process_1_1_midi_inlet.html">MidiInlet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>make_midi_inlet</b> (const <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="class_process_1_1_port.html">Process::Port</a> &gt; &amp;c, QObject *parent)</td></tr>
-<tr class="separator:a10f7f65c008925084229001cdcbc8c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06d21f2e810788e3332e5be37f7ee9ca" id="r_a06d21f2e810788e3332e5be37f7ee9ca"><td class="memItemLeft" align="right" valign="top"><a id="a06d21f2e810788e3332e5be37f7ee9ca" name="a06d21f2e810788e3332e5be37f7ee9ca"></a>
-std::unique_ptr&lt; <a class="el" href="class_process_1_1_midi_outlet.html">MidiOutlet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>make_midi_outlet</b> (const <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="class_process_1_1_port.html">Process::Port</a> &gt; &amp;c, QObject *parent)</td></tr>
-<tr class="separator:a06d21f2e810788e3332e5be37f7ee9ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bed07ac2432035e5689612e6a0c3a64" id="r_a7bed07ac2432035e5689612e6a0c3a64"><td class="memItemLeft" align="right" valign="top"><a id="a7bed07ac2432035e5689612e6a0c3a64" name="a7bed07ac2432035e5689612e6a0c3a64"></a>
-std::unique_ptr&lt; <a class="el" href="class_process_1_1_audio_inlet.html">AudioInlet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>make_audio_inlet</b> (const <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="class_process_1_1_port.html">Process::Port</a> &gt; &amp;c, QObject *parent)</td></tr>
-<tr class="separator:a7bed07ac2432035e5689612e6a0c3a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada35e9c00efc2b0be2c2eb472feac95b" id="r_ada35e9c00efc2b0be2c2eb472feac95b"><td class="memItemLeft" align="right" valign="top"><a id="ada35e9c00efc2b0be2c2eb472feac95b" name="ada35e9c00efc2b0be2c2eb472feac95b"></a>
-std::unique_ptr&lt; <a class="el" href="class_process_1_1_audio_outlet.html">AudioOutlet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>make_audio_outlet</b> (const <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="class_process_1_1_port.html">Process::Port</a> &gt; &amp;c, QObject *parent)</td></tr>
-<tr class="separator:ada35e9c00efc2b0be2c2eb472feac95b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a203e68b2fafa3a09eb57fe648f497a7b" id="r_a203e68b2fafa3a09eb57fe648f497a7b"><td class="memItemLeft" align="right" valign="top"><a id="a203e68b2fafa3a09eb57fe648f497a7b" name="a203e68b2fafa3a09eb57fe648f497a7b"></a>
 std::unique_ptr&lt; <a class="el" href="class_process_1_1_inlet.html">Inlet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>load_inlet</b> (<a class="el" href="class_data_stream_writer.html">DataStreamWriter</a> &amp;wr, QObject *parent)</td></tr>
 <tr class="separator:a203e68b2fafa3a09eb57fe648f497a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -690,6 +662,18 @@ QDebug&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b
 <tr class="memitem:a4f313f2f789577aea33385dc21c31cb0" id="r_a4f313f2f789577aea33385dc21c31cb0"><td class="memItemLeft" align="right" valign="top"><a id="a4f313f2f789577aea33385dc21c31cb0" name="a4f313f2f789577aea33385dc21c31cb0"></a>
 QDebug&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (QDebug d, const <a class="el" href="struct_process_1_1_state_node_data.html">StateNodeData</a> &amp;mess)</td></tr>
 <tr class="separator:a4f313f2f789577aea33385dc21c31cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a091e3079dd365daa1e97e99a8a9e45e6" id="r_a091e3079dd365daa1e97e99a8a9e45e6"><td class="memTemplParams" colspan="2"><a id="a091e3079dd365daa1e97e99a8a9e45e6" name="a091e3079dd365daa1e97e99a8a9e45e6"></a>
+template&lt;typename F &gt; </td></tr>
+<tr class="memitem:a091e3079dd365daa1e97e99a8a9e45e6"><td class="memTemplItemLeft" align="right" valign="top">QPointF&#160;</td><td class="memTemplItemRight" valign="bottom"><b>currentWidgetPos</b> (int controlIndex, F getControlSize) noexcept(noexcept(getControlSize(0)))</td></tr>
+<tr class="separator:a091e3079dd365daa1e97e99a8a9e45e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9c12f39c316675ab44c316c686f2700" id="r_aa9c12f39c316675ab44c316c686f2700"><td class="memTemplParams" colspan="2"><a id="aa9c12f39c316675ab44c316c686f2700" name="aa9c12f39c316675ab44c316c686f2700"></a>
+template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:aa9c12f39c316675ab44c316c686f2700"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>controlSetup</b> (Args &amp;&amp;... args)</td></tr>
+<tr class="separator:aa9c12f39c316675ab44c316c686f2700"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05ea65d3a780c967368f0031eb778f03" id="r_a05ea65d3a780c967368f0031eb778f03"><td class="memTemplParams" colspan="2"><a id="a05ea65d3a780c967368f0031eb778f03" name="a05ea65d3a780c967368f0031eb778f03"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a05ea65d3a780c967368f0031eb778f03"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>createControl</b> (int i, const auto &amp;setup, T &amp;port, const <a class="el" href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a> &amp;portFactory, const <a class="el" href="struct_process_1_1_context.html">Process::Context</a> &amp;doc, QGraphicsItem *parentItem, QObject *parent)</td></tr>
+<tr class="separator:a05ea65d3a780c967368f0031eb778f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a592bb361ebf8fbc09c929c93208c71f1" name="a592bb361ebf8fbc09c929c93208c71f1"></a>

@@ -86,8 +86,7 @@ var searchData=
   ['vst_5fnode_5fbase_83',['vst_node_base',['../classvst_1_1vst__node__base.html',1,'vst::vst_node_base'],['../classvst3_1_1vst__node__base.html',1,'vst3::vst_node_base']]],
   ['vstcontrolportfactory_84',['VSTControlPortFactory',['../classvst3_1_1_v_s_t_control_port_factory.html',1,'vst3']]],
   ['vstcontrolportitem_85',['VSTControlPortItem',['../structvst3_1_1_v_s_t_control_port_item.html',1,'vst3']]],
-  ['vsteffectitem_86',['VSTEffectItem',['../classvst3_1_1_v_s_t_effect_item.html',1,'vst3']]],
-  ['vstfloatslider_87',['vstfloatslider',['../structvst3_1_1_v_s_t_float_slider.html',1,'vst3::VSTFloatSlider'],['../structvst_1_1_v_s_t_float_slider.html',1,'vst::VSTFloatSlider']]],
-  ['vstgraphicsslider_88',['VSTGraphicsSlider',['../classvst3_1_1_v_s_t_graphics_slider.html',1,'vst3']]],
-  ['vstinfo_89',['VSTInfo',['../structvst_1_1_v_s_t_info.html',1,'vst']]]
+  ['vstfloatslider_86',['vstfloatslider',['../structvst3_1_1_v_s_t_float_slider.html',1,'vst3::VSTFloatSlider'],['../structvst_1_1_v_s_t_float_slider.html',1,'vst::VSTFloatSlider']]],
+  ['vstgraphicsslider_87',['VSTGraphicsSlider',['../classvst3_1_1_v_s_t_graphics_slider.html',1,'vst3']]],
+  ['vstinfo_88',['VSTInfo',['../structvst_1_1_v_s_t_info.html',1,'vst']]]
 ];

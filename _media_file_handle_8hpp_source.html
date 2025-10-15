@@ -403,39 +403,43 @@ $(document).ready(function(){initNavTree('_media_file_handle_8hpp_source.html','
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    {</div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>      std::size_t operator()(<span class="keyword">const</span> StreamInfo&amp; f) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>      {</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        <span class="keyword">constexpr</span> <span class="keyword">const</span> QtPrivate::QHashCombine combine;</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        std::size_t h = 0;</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        h = combine(h, f.file);</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        h = combine(h, f.stream);</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        <span class="keywordflow">return</span> h;</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>      }</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    };</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        <span class="keyword">constexpr</span> <span class="keyword">const</span> QtPrivate::QHashCombine combine{</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><span class="preprocessor">#if QT_VERSION &gt;= QT_VERSION_CHECK(6, 10, 0)</span></div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>            0</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        };</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        std::size_t h = 0;</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        h = combine(h, f.file);</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        h = combine(h, f.stream);</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        <span class="keywordflow">return</span> h;</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>      }</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    };</div>
 </div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> StreamInfo&amp; other) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    {</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>      <span class="keywordflow">return</span> file == other.file &amp;&amp; stream == other.stream;</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    }</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    QString file;</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    <span class="keywordtype">int</span> stream{-1};</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>  };</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>  ossia::hash_map&lt;StreamInfo, std::shared_ptr&lt;AudioFile&gt;, StreamInfo::hash&gt; m_handles;</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>};</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> StreamInfo&amp; other) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    {</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>      <span class="keywordflow">return</span> file == other.file &amp;&amp; stream == other.stream;</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    }</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    QString file;</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    <span class="keywordtype">int</span> stream{-1};</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>  };</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>  ossia::hash_map&lt;StreamInfo, std::shared_ptr&lt;AudioFile&gt;, StreamInfo::hash&gt; m_handles;</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>};</div>
 </div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>SCORE_PLUGIN_MEDIA_EXPORT</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span><span class="keywordtype">void</span> writeAudioArrayToFile(<span class="keyword">const</span> QString&amp; path, <span class="keyword">const</span> ossia::audio_array&amp; arr, <span class="keywordtype">int</span> fs);</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>std::optional&lt;double&gt; estimateTempo(<span class="keyword">const</span> AudioFile&amp; file);</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>std::optional&lt;double&gt; estimateTempo(<span class="keyword">const</span> QString&amp; filePath);</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span> </div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>std::optional&lt;AudioInfo&gt; probe(<span class="keyword">const</span> QString&amp; path);</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>}</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span> </div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>SCORE_PLUGIN_MEDIA_EXPORT</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span><span class="keywordtype">void</span> writeAudioArrayToFile(<span class="keyword">const</span> QString&amp; path, <span class="keyword">const</span> ossia::audio_array&amp; arr, <span class="keywordtype">int</span> fs);</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>std::optional&lt;double&gt; estimateTempo(<span class="keyword">const</span> AudioFile&amp; file);</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>std::optional&lt;double&gt; estimateTempo(<span class="keyword">const</span> QString&amp; filePath);</div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>Q_DECLARE_METATYPE(std::shared_ptr&lt;Media::AudioFile&gt;)</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>W_REGISTER_ARGTYPE(std::shared_ptr&lt;Media::AudioFile&gt;)</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>Q_DECLARE_METATYPE(<span class="keyword">const</span> <a class="code hl_struct" href="struct_media_1_1_audio_file.html">Media::AudioFile</a>*)</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>W_REGISTER_ARGTYPE(<span class="keyword">const</span> <a class="code hl_struct" href="struct_media_1_1_audio_file.html">Media::AudioFile</a>*)</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>std::optional&lt;AudioInfo&gt; probe(<span class="keyword">const</span> QString&amp; path);</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span> </div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>}</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> </div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>Q_DECLARE_METATYPE(std::shared_ptr&lt;Media::AudioFile&gt;)</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>W_REGISTER_ARGTYPE(std::shared_ptr&lt;Media::AudioFile&gt;)</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>Q_DECLARE_METATYPE(<span class="keyword">const</span> <a class="code hl_struct" href="struct_media_1_1_audio_file.html">Media::AudioFile</a>*)</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>W_REGISTER_ARGTYPE(<span class="keyword">const</span> <a class="code hl_struct" href="struct_media_1_1_audio_file.html">Media::AudioFile</a>*)</div>
 <div class="ttc" id="aclass_media_1_1_audio_decoder_html"><div class="ttname"><a href="class_media_1_1_audio_decoder.html">Media::AudioDecoder</a></div><div class="ttdef"><b>Definition</b> AudioDecoder.hpp:37</div></div>
 <div class="ttc" id="aclass_media_1_1_audio_file_manager_html"><div class="ttname"><a href="class_media_1_1_audio_file_manager.html">Media::AudioFileManager</a></div><div class="ttdef"><b>Definition</b> MediaFileHandle.hpp:252</div></div>
 <div class="ttc" id="aclass_media_1_1_sndfile_decoder_html"><div class="ttname"><a href="class_media_1_1_sndfile_decoder.html">Media::SndfileDecoder</a></div><div class="ttdef"><b>Definition</b> SndfileDecoder.hpp:9</div></div>
