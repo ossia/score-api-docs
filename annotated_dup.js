@@ -241,6 +241,7 @@ var annotated_dup =
       [ "PortItem", "class_dataflow_1_1_port_item.html", null ],
       [ "PortTooltip", "class_dataflow_1_1_port_tooltip.html", null ],
       [ "RemoveCable", "class_dataflow_1_1_remove_cable.html", null ],
+      [ "ReplaceCable", "class_dataflow_1_1_replace_cable.html", null ],
       [ "SavedPort", "struct_dataflow_1_1_saved_port.html", null ],
       [ "UpdateCable", "class_dataflow_1_1_update_cable.html", null ],
       [ "ValueInletFactory", "struct_dataflow_1_1_value_inlet_factory.html", null ],

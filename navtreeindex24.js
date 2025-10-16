@@ -1,5 +1,6 @@
 var NAVTREEINDEX24 =
 {
+"struct_t_serializer_3_01_data_stream_00_01std_1_1optional_3_01_t_01_4_01_4.html":[12,0,317],
 "struct_t_serializer_3_01_data_stream_00_01std_1_1pair_3_01_t_00_01_u_01_4_01_4.html":[12,0,318],
 "struct_t_serializer_3_01_data_stream_00_01std_1_1shared__ptr_3_01_t_01_4_01_4.html":[12,0,319],
 "struct_t_serializer_3_01_data_stream_00_01std_1_1unordered__map_3_01_t_00_01_u_00_01_h_00_01_e_00_01_a_01_4_01_4.html":[12,0,320],
@@ -248,6 +249,5 @@ var NAVTREEINDEX24 =
 "structoscr_1_1_matching_widget_3_01_field_01_4.html":[11,0,8,23],
 "structoscr_1_1_message_bus_reader.html":[12,0,41,24],
 "structoscr_1_1_message_bus_reader.html":[11,0,8,24],
-"structoscr_1_1_message_bus_sender.html":[11,0,8,25],
-"structoscr_1_1_message_bus_sender.html":[12,0,41,25]
+"structoscr_1_1_message_bus_sender.html":[11,0,8,25]
 };

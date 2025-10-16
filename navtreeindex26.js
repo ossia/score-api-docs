@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"structscore_1_1_path_info.html":[11,0,12,185],
 "structscore_1_1_path_info.html":[12,0,53,190],
 "structscore_1_1_plugin.html":[11,0,12,186],
 "structscore_1_1_plugin.html":[12,0,53,191],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "structscore_1_1gfx_1_1_port.html":[12,0,53,2,48],
 "structscore_1_1gfx_1_1_port.html":[11,0,12,0,48],
 "structscore_1_1gfx_1_1_port.html#a25892065d473e121291fbbad7eee6643":[11,0,12,0,48,3],
-"structscore_1_1gfx_1_1_port.html#a25892065d473e121291fbbad7eee6643":[12,0,53,2,48,3],
-"structscore_1_1gfx_1_1_port.html#a6be11bbdf8a6631a446c943d42562818":[11,0,12,0,48,1]
+"structscore_1_1gfx_1_1_port.html#a25892065d473e121291fbbad7eee6643":[12,0,53,2,48,3]
 };

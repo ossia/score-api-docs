@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"functions_v.html":[12,3,0,17],
 "functions_vars.html":[12,3,2],
 "functions_w.html":[12,3,0,18],
 "functions_~.html":[12,3,0,19],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "score-plugin-js_2_j_s_2_application_plugin_8hpp_source.html":[13,0,0,2,20,0,3],
 "score-plugin-js_2_j_s_2_commands_2_edit_script_8hpp_source.html":[13,0,0,2,20,0,0,0],
 "score-plugin-js_2_j_s_2_commands_2_script_macro_8hpp_source.html":[13,0,0,2,20,0,0,2],
-"score-plugin-js_2_j_s_2_executor_2_g_p_u_node_8hpp_source.html":[13,0,0,2,20,0,1,3],
-"score-plugin-js_2_j_s_2_qml_2_metatypes_8hpp_source.html":[13,0,0,2,20,0,2,4]
+"score-plugin-js_2_j_s_2_executor_2_g_p_u_node_8hpp_source.html":[13,0,0,2,20,0,1,3]
 };

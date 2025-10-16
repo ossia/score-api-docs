@@ -1,5 +1,6 @@
 var NAVTREEINDEX22 =
 {
+"struct_media_1_1_decoding_setup.html":[12,0,35,14],
 "struct_media_1_1_float_pair.html":[12,0,35,15],
 "struct_media_1_1_r_m_s_data.html":[12,0,35,17],
 "struct_media_1_1_r_m_s_data_1_1_header.html":[12,0,35,17,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX22 =
 "struct_recording_1_1_record_automation_creation_visitor.html":[12,0,48,7],
 "struct_recording_1_1_record_automation_first_callback_visitor.html":[12,0,48,8],
 "struct_recording_1_1_record_automation_subsequent_callback_visitor.html":[12,0,48,9],
-"struct_recording_1_1_record_context.html":[12,0,48,10],
-"struct_recording_1_1_record_data.html":[12,0,48,11]
+"struct_recording_1_1_record_context.html":[12,0,48,10]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX21 =
 {
+"struct_execution_1_1_recompute_propagate.html":[11,0,4,35],
 "struct_execution_1_1_recompute_propagate.html":[12,0,15,37],
 "struct_execution_1_1_reconnect_outlets.html":[11,0,4,36],
 "struct_execution_1_1_reconnect_outlets.html":[12,0,15,38],
@@ -248,6 +249,5 @@ var NAVTREEINDEX21 =
 "struct_media_1_1_audio_file_1_1_sndfile_reader.html":[12,0,35,6,7],
 "struct_media_1_1_audio_file_1_1_stream_view.html":[12,0,35,6,8],
 "struct_media_1_1_audio_file_1_1_view_handle.html":[12,0,35,6,9],
-"struct_media_1_1_audio_info.html":[12,0,35,8],
-"struct_media_1_1_decoding_setup.html":[12,0,35,14]
+"struct_media_1_1_audio_info.html":[12,0,35,8]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"score-plugin-js_2_j_s_2_qml_2_metatypes_8hpp_source.html":[13,0,0,2,20,0,2,4],
 "score-plugin-js_2_j_s_2_qml_2_utils_8hpp_source.html":[13,0,0,2,20,0,2,10],
 "score-plugin-lv2_2_l_v2_2_application_plugin_8hpp_source.html":[13,0,0,2,22,0,0],
 "score-plugin-lv2_2_l_v2_2_effect_model_8hpp_source.html":[13,0,0,2,22,0,2],
@@ -194,11 +195,11 @@ var NAVTREEINDEX20 =
 "struct_dataflow_1_1_midi_inlet_factory.html":[12,0,11,31],
 "struct_dataflow_1_1_midi_outlet_factory.html":[12,0,11,32],
 "struct_dataflow_1_1_min_max_float_outlet_factory.html":[12,0,11,34],
-"struct_dataflow_1_1_saved_port.html":[12,0,11,41],
-"struct_dataflow_1_1_value_inlet_factory.html":[12,0,11,43],
-"struct_dataflow_1_1_value_outlet_factory.html":[12,0,11,44],
-"struct_dataflow_1_1_widget_inlet_factory.html":[12,0,11,45],
-"struct_dataflow_1_1_widget_outlet_factory.html":[12,0,11,46],
+"struct_dataflow_1_1_saved_port.html":[12,0,11,42],
+"struct_dataflow_1_1_value_inlet_factory.html":[12,0,11,44],
+"struct_dataflow_1_1_value_outlet_factory.html":[12,0,11,45],
+"struct_dataflow_1_1_widget_inlet_factory.html":[12,0,11,46],
+"struct_dataflow_1_1_widget_outlet_factory.html":[12,0,11,47],
 "struct_dataflow_1_1control__visitor.html":[12,0,11,18],
 "struct_dataflow_1_1minmax.html":[12,0,11,33],
 "struct_default_rollback_strategy.html":[12,0,99],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "struct_execution_1_1_process_component___t.html":[12,0,15,32],
 "struct_execution_1_1_process_component___t.html":[11,0,4,30],
 "struct_execution_1_1_queues.html":[11,0,4,34],
-"struct_execution_1_1_queues.html":[12,0,15,36],
-"struct_execution_1_1_recompute_propagate.html":[11,0,4,35]
+"struct_execution_1_1_queues.html":[12,0,15,36]
 };

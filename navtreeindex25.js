@@ -1,5 +1,6 @@
 var NAVTREEINDEX25 =
 {
+"structoscr_1_1_message_bus_sender.html":[12,0,41,25],
 "structoscr_1_1_message_bus_ui.html":[11,0,8,26],
 "structoscr_1_1_message_bus_ui.html":[12,0,41,26],
 "structoscr_1_1_message_bus_ui_3_01_info_01_4.html":[11,0,8,27],
@@ -248,6 +249,5 @@ var NAVTREEINDEX25 =
 "structscore_1_1_paint_visitor.html":[12,0,53,185],
 "structscore_1_1_paint_visitor.html":[11,0,12,180],
 "structscore_1_1_panel_status.html":[12,0,53,189],
-"structscore_1_1_panel_status.html":[11,0,12,184],
-"structscore_1_1_path_info.html":[11,0,12,185]
+"structscore_1_1_panel_status.html":[11,0,12,184]
 };

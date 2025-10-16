@@ -389,6 +389,7 @@ var hierarchy =
       [ "score::AggregateCommand", "classscore_1_1_aggregate_command.html", [
         [ "ControlSurface::AddControlMacro", "class_control_surface_1_1_add_control_macro.html", null ],
         [ "Dataflow::CreateModulation", "class_dataflow_1_1_create_modulation.html", null ],
+        [ "Dataflow::ReplaceCable", "class_dataflow_1_1_replace_cable.html", null ],
         [ "Explorer::Command::AddAddresses", "class_explorer_1_1_command_1_1_add_addresses.html", null ],
         [ "Explorer::Command::RemoveNodes", "class_explorer_1_1_command_1_1_remove_nodes.html", null ],
         [ "Explorer::Command::UpdateAndReloadMacro", "class_explorer_1_1_command_1_1_update_and_reload_macro.html", null ],
@@ -2123,8 +2124,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model >", "class_path.html", null ],
+    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],

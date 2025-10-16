@@ -1,5 +1,6 @@
 var NAVTREEINDEX23 =
 {
+"struct_recording_1_1_record_data.html":[12,0,48,11],
 "struct_recording_1_1_record_provider.html":[12,0,48,15],
 "struct_recording_1_1_recorded_message.html":[12,0,48,12],
 "struct_redo_strategy_1_1_quiet.html":[12,0,49,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX23 =
 "struct_t_serializer_3_01_data_stream_00_01score_1_1_entity_map_3_01_t_00_01_o_01_4_01_4.html":[12,0,313],
 "struct_t_serializer_3_01_data_stream_00_01score_1_1any__map_01_4.html":[12,0,310],
 "struct_t_serializer_3_01_data_stream_00_01score_1_1uuid__t_01_4.html":[12,0,314],
-"struct_t_serializer_3_01_data_stream_00_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html":[12,0,316],
-"struct_t_serializer_3_01_data_stream_00_01std_1_1optional_3_01_t_01_4_01_4.html":[12,0,317]
+"struct_t_serializer_3_01_data_stream_00_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html":[12,0,316]
 };
