@@ -162,11 +162,11 @@ $(document).ready(function(){initNavTree('_audio_recorder_8hpp_source.html','');
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      <span class="keywordflow">if</span>(must_record)</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      {</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="comment">// Open the file with the correct substitutions</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keyword">auto</span> fname = filter_filename(this-&gt;filename, context);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordflow">if</span>(fname.isEmpty())</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        actual_filename = filter_filename(this-&gt;filename, context).toStdString();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordflow">if</span>(actual_filename.empty())</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>          <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        f.open(fname.toStdString(), channels, rate, 16);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        f.open(actual_filename, channels, rate, 16);</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>      }</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      <span class="keywordflow">else</span></div>

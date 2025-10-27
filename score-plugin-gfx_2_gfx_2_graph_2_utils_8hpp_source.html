@@ -348,16 +348,80 @@ $(document).ready(function(){initNavTree('score-plugin-gfx_2_gfx_2_graph_2_utils
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>SCORE_PLUGIN_GFX_EXPORT</div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>QSizeF <a class="code hl_function" href="namespacescore_1_1gfx.html#a01d504b5f64cee4bb5a97773ba34166d">computeScaleForTexcoordSizing</a>(</div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    <a class="code hl_enumeration" href="namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58">score::gfx::ScaleMode</a> mode, QSizeF viewport, QSizeF texture);</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>}</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span> </div>
+<div class="foldopen" id="foldopen00305" data-start="{" data-end="}">
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno"><a class="line" href="namespacescore_1_1gfx.html#a07882c10d6e8879ef1f333db58cfbb26">  305</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespacescore_1_1gfx.html#a07882c10d6e8879ef1f333db58cfbb26">updateDynamicBufferWithStoredData</a>(</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    QRhiResourceUpdateBatch* ub</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>  , QRhiBuffer* buf</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>  , <span class="keywordtype">int</span> offset</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>  , int64_t bytesize</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>  , <span class="keyword">const</span> <span class="keywordtype">char</span>* data</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>  )</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>{</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span><span class="preprocessor">#if QT_VERSION &gt;= QT_VERSION_CHECK(6, 10, 0)</span></div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>  ub-&gt;updateDynamicBuffer(buf, offset, QByteArray::fromRawData(data, bytesize));</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>  ub-&gt;updateDynamicBuffer(buf, offset, bytesize, data);</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>}</div>
+</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespacescore_1_1gfx.html#a07882c10d6e8879ef1f333db58cfbb26">updateDynamicBufferWithStoredData</a>(</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    QRhiResourceUpdateBatch* ub</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    , QRhiBuffer* buf</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    , <span class="keywordtype">int</span> offset</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    , QByteArray b</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    )</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>{</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span><span class="preprocessor">#if QT_VERSION &gt;= QT_VERSION_CHECK(6, 10, 0)</span></div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  ub-&gt;updateDynamicBuffer(buf, offset, std::move(b));</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>  ub-&gt;updateDynamicBuffer(buf, offset, b.size(), b.data());</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>}</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
+<div class="foldopen" id="foldopen00337" data-start="{" data-end="}">
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno"><a class="line" href="namespacescore_1_1gfx.html#a7ed7c89deed0ea9800dc061d062f23dd">  337</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespacescore_1_1gfx.html#a7ed7c89deed0ea9800dc061d062f23dd">uploadStaticBufferWithStoredData</a>(</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>    QRhiResourceUpdateBatch* ub</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>    , QRhiBuffer* buf</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>    , <span class="keywordtype">int</span> offset</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>    , int64_t bytesize</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    , <span class="keyword">const</span> <span class="keywordtype">char</span>* data</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    )</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>{</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span><span class="preprocessor">#if QT_VERSION &gt;= QT_VERSION_CHECK(6, 10, 0)</span></div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>  ub-&gt;uploadStaticBuffer(buf, offset, QByteArray::fromRawData(data, bytesize));</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>  ub-&gt;uploadStaticBuffer(buf, offset, bytesize, data);</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>}</div>
+</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span> </div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespacescore_1_1gfx.html#a7ed7c89deed0ea9800dc061d062f23dd">uploadStaticBufferWithStoredData</a>(</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    QRhiResourceUpdateBatch* ub</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>    , QRhiBuffer* buf</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>    , <span class="keywordtype">int</span> offset</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>    , QByteArray b</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    )</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>{</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span><span class="preprocessor">#if QT_VERSION &gt;= QT_VERSION_CHECK(6, 10, 0)</span></div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>  ub-&gt;uploadStaticBuffer(buf, offset, std::move(b));</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>  ub-&gt;uploadStaticBuffer(buf, offset, b.size(), b.data());</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>}</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>}</div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a></div><div class="ttdoc">Root data model for visual nodes.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:75</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:19</div></div>
 <div class="ttc" id="anamespace_device_html_a5f5b5ed941f74703051e858d8733d0fc"><div class="ttname"><a href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a></div><div class="ttdeci">TreeNode&lt; DeviceExplorerNode &gt; Node</div><div class="ttdef"><b>Definition</b> DeviceNode.hpp:74</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:12</div></div>
-<div class="ttc" id="anamespacescore_1_1gfx_html_a01d504b5f64cee4bb5a97773ba34166d"><div class="ttname"><a href="namespacescore_1_1gfx.html#a01d504b5f64cee4bb5a97773ba34166d">score::gfx::computeScaleForTexcoordSizing</a></div><div class="ttdeci">QSizeF computeScaleForTexcoordSizing(ScaleMode mode, QSizeF renderSize, QSizeF textureSize)</div><div class="ttdoc">Comput the scale to apply to a texture rendered to a quad the size of viewport.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.cpp:607</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_a01d504b5f64cee4bb5a97773ba34166d"><div class="ttname"><a href="namespacescore_1_1gfx.html#a01d504b5f64cee4bb5a97773ba34166d">score::gfx::computeScaleForTexcoordSizing</a></div><div class="ttdeci">QSizeF computeScaleForTexcoordSizing(ScaleMode mode, QSizeF renderSize, QSizeF textureSize)</div><div class="ttdoc">Compute the scale to apply to a texture rendered to a quad the size of viewport.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.cpp:607</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_a07882c10d6e8879ef1f333db58cfbb26"><div class="ttname"><a href="namespacescore_1_1gfx.html#a07882c10d6e8879ef1f333db58cfbb26">score::gfx::updateDynamicBufferWithStoredData</a></div><div class="ttdeci">void updateDynamicBufferWithStoredData(QRhiResourceUpdateBatch *ub, QRhiBuffer *buf, int offset, int64_t bytesize, const char *data)</div><div class="ttdoc">Schedule a Dynamic buffer update when we can guarantee the buffer outlives the frame.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:305</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html_a17289db47c989630c2c74f6a4343a703"><div class="ttname"><a href="namespacescore_1_1gfx.html#a17289db47c989630c2c74f6a4343a703">score::gfx::createDefaultBindings</a></div><div class="ttdeci">QRhiShaderResourceBindings * createDefaultBindings(const RenderList &amp;renderer, const TextureRenderTarget &amp;rt, QRhiBuffer *processUBO, QRhiBuffer *materialUBO, std::span&lt; const Sampler &gt; samplers, std::span&lt; QRhiShaderResourceBinding &gt; additionalBindings)</div><div class="ttdoc">Create bindings following the score conventions for shaders and materials.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.cpp:316</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html_a433eac87f8111d670824ff45923297fc"><div class="ttname"><a href="namespacescore_1_1gfx.html#a433eac87f8111d670824ff45923297fc">score::gfx::makeCompute</a></div><div class="ttdeci">QShader makeCompute(const RenderState &amp;v, QString compute)</div><div class="ttdoc">Compile a compute shader.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.cpp:420</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_a7ed7c89deed0ea9800dc061d062f23dd"><div class="ttname"><a href="namespacescore_1_1gfx.html#a7ed7c89deed0ea9800dc061d062f23dd">score::gfx::uploadStaticBufferWithStoredData</a></div><div class="ttdeci">void uploadStaticBufferWithStoredData(QRhiResourceUpdateBatch *ub, QRhiBuffer *buf, int offset, int64_t bytesize, const char *data)</div><div class="ttdoc">Schedule a Static buffer update when we can guarantee the buffer outlives the frame.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:337</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html_aae9462b53d25a8fe2f2a7de730a261d8"><div class="ttname"><a href="namespacescore_1_1gfx.html#aae9462b53d25a8fe2f2a7de730a261d8">score::gfx::resizeTexture</a></div><div class="ttdeci">QImage resizeTexture(const QImage &amp;img, int min, int max) noexcept</div><div class="ttdoc">Resize a texture to fit within GPU limits.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.cpp:557</div></div>
-<div class="ttc" id="anamespacescore_1_1gfx_html_ab0efa85a0401f25fe4c0b77474942eac"><div class="ttname"><a href="namespacescore_1_1gfx.html#ab0efa85a0401f25fe4c0b77474942eac">score::gfx::computeScaleForMeshSizing</a></div><div class="ttdeci">QSizeF computeScaleForMeshSizing(ScaleMode mode, QSizeF viewport, QSizeF texture)</div><div class="ttdoc">Comput the scale to apply to a texture so that it fits in a GL viewport.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.cpp:567</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_ab0efa85a0401f25fe4c0b77474942eac"><div class="ttname"><a href="namespacescore_1_1gfx.html#ab0efa85a0401f25fe4c0b77474942eac">score::gfx::computeScaleForMeshSizing</a></div><div class="ttdeci">QSizeF computeScaleForMeshSizing(ScaleMode mode, QSizeF viewport, QSizeF texture)</div><div class="ttdoc">Compute the scale to apply to a texture so that it fits in a GL viewport.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.cpp:567</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html_ab9422d6d02158084503b076c4a382cbf"><div class="ttname"><a href="namespacescore_1_1gfx.html#ab9422d6d02158084503b076c4a382cbf">score::gfx::replaceSamplerAndTexture</a></div><div class="ttdeci">void replaceSamplerAndTexture(QRhiShaderResourceBindings &amp;srb, QRhiSampler *oldSampler, QRhiSampler *newSampler, QRhiTexture *newTexture)</div><div class="ttdoc">Replace both sampler and texture in a SRC.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.cpp:200</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html_ac7b0a6847f2f616b12a8fe08a1229b58"><div class="ttname"><a href="namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58">score::gfx::ScaleMode</a></div><div class="ttdeci">ScaleMode</div><div class="ttdoc">How to resize a texture to adapt it to a viewport.</div><div class="ttdef"><b>Definition</b> Scale.hpp:10</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html_ada75ef58fe373211a06093b50051b6e0"><div class="ttname"><a href="namespacescore_1_1gfx.html#ada75ef58fe373211a06093b50051b6e0">score::gfx::makeShaders</a></div><div class="ttdeci">std::pair&lt; QShader, QShader &gt; makeShaders(const RenderState &amp;v, QString vert, QString frag)</div><div class="ttdoc">Get a pair of compiled vertex / fragment shaders from GLSL 4.5 sources.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.cpp:393</div></div>

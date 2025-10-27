@@ -648,6 +648,15 @@ var annotated_dup =
       [ "WindowProtocolFactory", "class_gfx_1_1_window_protocol_factory.html", null ],
       [ "WindowSettingsWidget", "class_gfx_1_1_window_settings_widget.html", null ]
     ] ],
+    [ "gpp", null, [
+      [ "qrhi", null, [
+        [ "DefaultPipeline", "structgpp_1_1qrhi_1_1_default_pipeline.html", "structgpp_1_1qrhi_1_1_default_pipeline" ],
+        [ "generate_shaders", "structgpp_1_1qrhi_1_1generate__shaders.html", "structgpp_1_1qrhi_1_1generate__shaders" ],
+        [ "handle_dispatch", "structgpp_1_1qrhi_1_1handle__dispatch.html", null ],
+        [ "handle_release", "structgpp_1_1qrhi_1_1handle__release.html", null ],
+        [ "handle_update", "structgpp_1_1qrhi_1_1handle__update.html", null ]
+      ] ]
+    ] ],
     [ "Gradient", null, [
       [ "RecreateOnPlay", null, [
         [ "Component", "class_gradient_1_1_recreate_on_play_1_1_component.html", null ]
@@ -656,6 +665,11 @@ var annotated_dup =
       [ "Presenter", "class_gradient_1_1_presenter.html", null ],
       [ "ProcessModel", "class_gradient_1_1_process_model.html", null ],
       [ "View", "class_gradient_1_1_view.html", null ]
+    ] ],
+    [ "halp", null, [
+      [ "gpu_buffer", "structhalp_1_1gpu__buffer.html", null ],
+      [ "gpu_buffer_input", "structhalp_1_1gpu__buffer__input.html", null ],
+      [ "position_gpu_geometry", "structhalp_1_1position__gpu__geometry.html", "structhalp_1_1position__gpu__geometry" ]
     ] ],
     [ "Inspector", "namespace_inspector.html", [
       [ "InspectorSectionWidget", "class_inspector_1_1_inspector_section_widget.html", "class_inspector_1_1_inspector_section_widget" ],
@@ -2501,11 +2515,11 @@ var annotated_dup =
       [ "OBJLibraryHandler", "class_threedim_1_1_o_b_j_library_handler.html", null ],
       [ "ObjLoader", "class_threedim_1_1_obj_loader.html", "class_threedim_1_1_obj_loader" ],
       [ "PCLToMesh", "class_threedim_1_1_p_c_l_to_mesh.html", "class_threedim_1_1_p_c_l_to_mesh" ],
+      [ "PCLToMesh2", "class_threedim_1_1_p_c_l_to_mesh2.html", "class_threedim_1_1_p_c_l_to_mesh2" ],
       [ "Plane", "struct_threedim_1_1_plane.html", null ],
       [ "PositionControl", "struct_threedim_1_1_position_control.html", null ],
       [ "Primitive", "struct_threedim_1_1_primitive.html", null ],
       [ "PrimitiveOutputs", "struct_threedim_1_1_primitive_outputs.html", null ],
-      [ "raw_texture", "struct_threedim_1_1raw__texture.html", null ],
       [ "RotationControl", "struct_threedim_1_1_rotation_control.html", null ],
       [ "ScaleControl", "struct_threedim_1_1_scale_control.html", null ],
       [ "Sphere", "struct_threedim_1_1_sphere.html", null ],

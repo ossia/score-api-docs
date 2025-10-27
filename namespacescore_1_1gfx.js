@@ -117,5 +117,7 @@ var namespacescore_1_1gfx =
     [ "replaceTexture", "namespacescore_1_1gfx.html#af4a120e4b5553a7ffeaeb10c7208b2e9", null ],
     [ "replaceTexture", "namespacescore_1_1gfx.html#a78ab4e37b245596d7fbb9023414aa622", null ],
     [ "resizeTexture", "namespacescore_1_1gfx.html#aae9462b53d25a8fe2f2a7de730a261d8", null ],
-    [ "resizeTextureSize", "namespacescore_1_1gfx.html#af3bc42141b98c6699c7e5aee3674c38e", null ]
+    [ "resizeTextureSize", "namespacescore_1_1gfx.html#af3bc42141b98c6699c7e5aee3674c38e", null ],
+    [ "updateDynamicBufferWithStoredData", "namespacescore_1_1gfx.html#a07882c10d6e8879ef1f333db58cfbb26", null ],
+    [ "uploadStaticBufferWithStoredData", "namespacescore_1_1gfx.html#a7ed7c89deed0ea9800dc061d062f23dd", null ]
 ];

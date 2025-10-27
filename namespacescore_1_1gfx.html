@@ -544,11 +544,11 @@ QImage&#160;</td><td class="memItemRight" valign="bottom"><b>resizeTexture</b> (
 <tr class="separator:aae9462b53d25a8fe2f2a7de730a261d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0efa85a0401f25fe4c0b77474942eac" id="r_ab0efa85a0401f25fe4c0b77474942eac"><td class="memItemLeft" align="right" valign="top"><a id="ab0efa85a0401f25fe4c0b77474942eac" name="ab0efa85a0401f25fe4c0b77474942eac"></a>
 QSizeF&#160;</td><td class="memItemRight" valign="bottom"><b>computeScaleForMeshSizing</b> (<a class="el" href="namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58">score::gfx::ScaleMode</a> mode, QSizeF viewport, QSizeF texture)</td></tr>
-<tr class="memdesc:ab0efa85a0401f25fe4c0b77474942eac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comput the scale to apply to a texture so that it fits in a GL viewport. <br /></td></tr>
+<tr class="memdesc:ab0efa85a0401f25fe4c0b77474942eac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the scale to apply to a texture so that it fits in a GL viewport. <br /></td></tr>
 <tr class="separator:ab0efa85a0401f25fe4c0b77474942eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01d504b5f64cee4bb5a97773ba34166d" id="r_a01d504b5f64cee4bb5a97773ba34166d"><td class="memItemLeft" align="right" valign="top"><a id="a01d504b5f64cee4bb5a97773ba34166d" name="a01d504b5f64cee4bb5a97773ba34166d"></a>
 QSizeF&#160;</td><td class="memItemRight" valign="bottom"><b>computeScaleForTexcoordSizing</b> (<a class="el" href="namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58">score::gfx::ScaleMode</a> mode, QSizeF viewport, QSizeF texture)</td></tr>
-<tr class="memdesc:a01d504b5f64cee4bb5a97773ba34166d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comput the scale to apply to a texture rendered to a quad the size of viewport. <br /></td></tr>
+<tr class="memdesc:a01d504b5f64cee4bb5a97773ba34166d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the scale to apply to a texture rendered to a quad the size of viewport. <br /></td></tr>
 <tr class="separator:a01d504b5f64cee4bb5a97773ba34166d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ac6dcff8c5e43627a9801cd96b565e1" id="r_a9ac6dcff8c5e43627a9801cd96b565e1"><td class="memItemLeft" align="right" valign="top"><a id="a9ac6dcff8c5e43627a9801cd96b565e1" name="a9ac6dcff8c5e43627a9801cd96b565e1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>copyMatrix</b> (const QMatrix4x4 &amp;mat, float *ptr) noexcept</td></tr>
@@ -556,6 +556,20 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>copyMatrix</b> (const
 <tr class="memitem:a63d873668123906da344616f30f020f9" id="r_a63d873668123906da344616f30f020f9"><td class="memItemLeft" align="right" valign="top"><a id="a63d873668123906da344616f30f020f9" name="a63d873668123906da344616f30f020f9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>copyMatrix</b> (const QMatrix3x3 &amp;mat, float *ptr) noexcept</td></tr>
 <tr class="separator:a63d873668123906da344616f30f020f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07882c10d6e8879ef1f333db58cfbb26" id="r_a07882c10d6e8879ef1f333db58cfbb26"><td class="memItemLeft" align="right" valign="top"><a id="a07882c10d6e8879ef1f333db58cfbb26" name="a07882c10d6e8879ef1f333db58cfbb26"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateDynamicBufferWithStoredData</b> (QRhiResourceUpdateBatch *ub, QRhiBuffer *buf, int offset, int64_t bytesize, const char *data)</td></tr>
+<tr class="memdesc:a07882c10d6e8879ef1f333db58cfbb26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a Dynamic buffer update when we can guarantee the buffer outlives the frame. <br /></td></tr>
+<tr class="separator:a07882c10d6e8879ef1f333db58cfbb26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b416182b5ae3dd1182e7f53b931161f" id="r_a5b416182b5ae3dd1182e7f53b931161f"><td class="memItemLeft" align="right" valign="top"><a id="a5b416182b5ae3dd1182e7f53b931161f" name="a5b416182b5ae3dd1182e7f53b931161f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateDynamicBufferWithStoredData</b> (QRhiResourceUpdateBatch *ub, QRhiBuffer *buf, int offset, QByteArray b)</td></tr>
+<tr class="separator:a5b416182b5ae3dd1182e7f53b931161f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ed7c89deed0ea9800dc061d062f23dd" id="r_a7ed7c89deed0ea9800dc061d062f23dd"><td class="memItemLeft" align="right" valign="top"><a id="a7ed7c89deed0ea9800dc061d062f23dd" name="a7ed7c89deed0ea9800dc061d062f23dd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>uploadStaticBufferWithStoredData</b> (QRhiResourceUpdateBatch *ub, QRhiBuffer *buf, int offset, int64_t bytesize, const char *data)</td></tr>
+<tr class="memdesc:a7ed7c89deed0ea9800dc061d062f23dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a Static buffer update when we can guarantee the buffer outlives the frame. <br /></td></tr>
+<tr class="separator:a7ed7c89deed0ea9800dc061d062f23dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55e81b771e244a2d0107da18da175416" id="r_a55e81b771e244a2d0107da18da175416"><td class="memItemLeft" align="right" valign="top"><a id="a55e81b771e244a2d0107da18da175416" name="a55e81b771e244a2d0107da18da175416"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>uploadStaticBufferWithStoredData</b> (QRhiResourceUpdateBatch *ub, QRhiBuffer *buf, int offset, QByteArray b)</td></tr>
+<tr class="separator:a55e81b771e244a2d0107da18da175416"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

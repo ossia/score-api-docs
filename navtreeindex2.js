@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"_gfx_node_8hpp_source.html":[13,0,0,2,8,3,10],
 "_gfx_parameter_8hpp_source.html":[13,0,0,2,17,1,24],
 "_gfx_plugins.html":[3],
 "_gfx_plugins.html#CustomNode":[3,0],
@@ -8,9 +7,11 @@ var NAVTREEINDEX2 =
 "_gfx_plugins.html#VideoDecoders":[3,2],
 "_gist_state_8hpp_source.html":[13,0,0,2,5,0,6],
 "_good_old_displacement_policy_8hpp_source.html":[13,0,0,2,32,4,9,0,3],
-"_gpu_compute_node_8hpp_source.html":[13,0,0,2,8,3,11],
+"_gpp_coroutines_8hpp_source.html":[13,0,0,2,8,3,10],
+"_gpp_shaders_8hpp_source.html":[13,0,0,2,8,3,11],
+"_gpu_compute_node_8hpp_source.html":[13,0,0,2,8,3,12],
 "_gpu_formats_8hpp_source.html":[13,0,0,2,24,2,3],
-"_gpu_utils_8hpp_source.html":[13,0,0,2,8,3,13],
+"_gpu_utils_8hpp_source.html":[13,0,0,2,8,3,14],
 "_gradient_execution_8hpp_source.html":[13,0,0,2,7,1,0],
 "_gradient_metadata_8hpp_source.html":[13,0,0,2,7,1,1],
 "_gradient_model_8hpp_source.html":[13,0,0,2,7,1,2],
@@ -232,7 +233,7 @@ var NAVTREEINDEX2 =
 "_mesh_helpers_8hpp_source.html":[13,0,0,2,35,0,3],
 "_message_8hpp_source.html":[13,0,0,2,4,0,7],
 "_message_box_8hpp_source.html":[13,0,0,1,1,13,14],
-"_message_bus_8hpp_source.html":[13,0,0,2,8,3,15],
+"_message_bus_8hpp_source.html":[13,0,0,2,8,3,16],
 "_message_drop_handler_8hpp_source.html":[13,0,0,2,32,4,0,0,11],
 "_message_item_model_8hpp_source.html":[13,0,0,2,32,4,3,8,0,1],
 "_message_item_model_algorithms_8hpp_source.html":[13,0,0,2,32,4,3,8,0,2],
@@ -242,12 +243,11 @@ var NAVTREEINDEX2 =
 "_messages_panel_8hpp_source.html":[13,0,0,1,0,4,0],
 "_metadata_generator_8hpp_source.html":[13,0,0,2,19,2,11],
 "_metadata_widget_8hpp_source.html":[13,0,0,2,32,4,6,10],
-"_metadatas_8hpp_source.html":[13,0,0,2,8,3,17],
+"_metadatas_8hpp_source.html":[13,0,0,2,8,3,18],
 "_metro_8hpp_source.html":[13,0,0,2,16,0,22],
 "_metro_commands_8hpp_source.html":[13,0,0,2,24,0,4,0],
 "_metro_executor_8hpp_source.html":[13,0,0,2,24,0,4,1],
 "_metro_factory_8hpp_source.html":[13,0,0,2,24,0,4,2],
 "_metro_metadata_8hpp_source.html":[13,0,0,2,24,0,4,3],
-"_metro_model_8hpp_source.html":[13,0,0,2,24,0,4,4],
-"_metro_presenter_8hpp_source.html":[13,0,0,2,24,0,4,5]
+"_metro_model_8hpp_source.html":[13,0,0,2,24,0,4,4]
 };

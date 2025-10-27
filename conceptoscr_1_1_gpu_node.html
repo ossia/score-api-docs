@@ -107,8 +107,12 @@ $(document).ready(function(){initNavTree('conceptoscr_1_1_gpu_node.html',''); in
 <div class="contents">
 <h2 class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptoscr_1_1_gpu_node.html">oscr::GpuNode</a> =  avnd::texture_input_introspection&lt;T&gt;::size &gt;</div>
-<div class="line">0 || avnd::texture_output_introspection&lt;T&gt;::size &gt; 0</div>
+<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptoscr_1_1_gpu_node.html">oscr::GpuNode</a> = </div>
+<div class="line">    avnd::texture_input_introspection&lt;T&gt;::size &gt; 0</div>
+<div class="line"> || avnd::texture_output_introspection&lt;T&gt;::size &gt; 0</div>
+<div class="line"> || avnd::buffer_input_introspection&lt;T&gt;::size &gt; 0</div>
+<div class="line"> || avnd::buffer_output_introspection&lt;T&gt;::size &gt; 0</div>
+<div class="line">    </div>
 <div class="ttc" id="aconceptoscr_1_1_gpu_node_html"><div class="ttname"><a href="conceptoscr_1_1_gpu_node.html">oscr::GpuNode</a></div><div class="ttdef"><b>Definition</b> Metadatas.hpp:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

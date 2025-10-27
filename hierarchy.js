@@ -109,6 +109,7 @@ var hierarchy =
     [ "Protocols::ArtnetSpecificSettings", "struct_protocols_1_1_artnet_specific_settings.html", null ],
     [ "JSONReader::assigner", "struct_j_s_o_n_reader_1_1assigner.html", null ],
     [ "AtomBuffer", "struct_atom_buffer.html", null ],
+    [ "halp::position_gpu_geometry::attributes", "structhalp_1_1position__gpu__geometry_1_1attributes.html", null ],
     [ "audio_channels_attr", "structaudio__channels__attr.html", null ],
     [ "audio_kind_attr", "structaudio__kind__attr.html", null ],
     [ "audio_mapping_attr", "structaudio__mapping__attr.html", null ],
@@ -153,10 +154,13 @@ var hierarchy =
       [ "Scenario::DisplayedElementsPresenter", "class_scenario_1_1_displayed_elements_presenter.html", null ]
     ] ],
     [ "BaseScenarioRefContainer", "class_base_scenario_ref_container.html", null ],
+    [ "gpp::qrhi::DefaultPipeline::layout::bindings", "structgpp_1_1qrhi_1_1_default_pipeline_1_1layout_1_1bindings.html", null ],
+    [ "halp::position_gpu_geometry::bindings", "structhalp_1_1position__gpu__geometry_1_1bindings.html", null ],
     [ "Protocols::BitfocusSpecificSettings", "struct_protocols_1_1_bitfocus_specific_settings.html", null ],
     [ "Recording::Box", "struct_recording_1_1_box.html", null ],
     [ "score::Brush", "structscore_1_1_brush.html", null ],
     [ "score::BrushSet", "structscore_1_1_brush_set.html", null ],
+    [ "halp::position_gpu_geometry::buffers", "structhalp_1_1position__gpu__geometry_1_1buffers.html", null ],
     [ "vst3::BusActivationVisitor", "structvst3_1_1_bus_activation_visitor.html", null ],
     [ "WidgetFactory::Button", "struct_widget_factory_1_1_button.html", null ],
     [ "Jit::BytebeatLanguageSpec", "struct_jit_1_1_bytebeat_language_spec.html", null ],
@@ -631,6 +635,7 @@ var hierarchy =
     [ "score::DefaultGraphicsKnobImpl", "structscore_1_1_default_graphics_knob_impl.html", null ],
     [ "score::DefaultGraphicsSliderImpl", "structscore_1_1_default_graphics_slider_impl.html", null ],
     [ "score::DefaultGraphicsSpinboxImpl", "structscore_1_1_default_graphics_spinbox_impl.html", null ],
+    [ "gpp::qrhi::DefaultPipeline", "structgpp_1_1qrhi_1_1_default_pipeline.html", null ],
     [ "DefaultRollbackStrategy", "struct_default_rollback_strategy.html", null ],
     [ "score::gfx::DefaultShaderMaterial", "structscore_1_1gfx_1_1_default_shader_material.html", null ],
     [ "Threedim::DeformationControl", "struct_threedim_1_1_deformation_control.html", null ],
@@ -857,6 +862,7 @@ var hierarchy =
     [ "score::FocusFacade", "structscore_1_1_focus_facade.html", null ],
     [ "foo", "classfoo.html", null ],
     [ "Faust::FoundKeys", "struct_faust_1_1_found_keys.html", null ],
+    [ "gpp::qrhi::DefaultPipeline::layout::fragment_input", "structgpp_1_1qrhi_1_1_default_pipeline_1_1layout_1_1fragment__input.html", null ],
     [ "libfreenect2::FrameListener", null, [
       [ "Gfx::Kinect2::Listener", "struct_gfx_1_1_kinect2_1_1_listener.html", null ]
     ] ],
@@ -865,6 +871,7 @@ var hierarchy =
     [ "Device::FullAddressAccessorSettings", "struct_device_1_1_full_address_accessor_settings.html", null ],
     [ "Scenario::FullSlot", "struct_scenario_1_1_full_slot.html", null ],
     [ "FW_T< Factory_T, Types_T >", "struct_f_w___t.html", null ],
+    [ "gpp::qrhi::generate_shaders", "structgpp_1_1qrhi_1_1generate__shaders.html", null ],
     [ "generator", "structgenerator.html", null ],
     [ "ossia::net::generic_device", null, [
       [ "Gfx::Kinect2::kinect2_device", "class_gfx_1_1_kinect2_1_1kinect2__device.html", null ]
@@ -898,6 +905,9 @@ var hierarchy =
     [ "Jit::GlobalAtExit", "struct_jit_1_1_global_at_exit.html", null ],
     [ "LV2::GlobalContext", "struct_l_v2_1_1_global_context.html", null ],
     [ "Scenario::GoodOldDisplacementPolicy", "class_scenario_1_1_good_old_displacement_policy.html", null ],
+    [ "halp::gpu_buffer", "structhalp_1_1gpu__buffer.html", null ],
+    [ "halp::gpu_buffer_input< lit >", "structhalp_1_1gpu__buffer__input.html", null ],
+    [ "halp::gpu_buffer_input<\"Buffer\">", "structhalp_1_1gpu__buffer__input.html", null ],
     [ "score::gfx::GPUVideoDecoder", "classscore_1_1gfx_1_1_g_p_u_video_decoder.html", [
       [ "score::gfx::EmptyDecoder", "structscore_1_1gfx_1_1_empty_decoder.html", null ],
       [ "score::gfx::HAPDecoder", "structscore_1_1gfx_1_1_h_a_p_decoder.html", [
@@ -1008,6 +1018,9 @@ var hierarchy =
       [ "vst::GUIApplicationPlugin", "classvst_1_1_g_u_i_application_plugin.html", null ]
     ] ],
     [ "score::GUIElements", "structscore_1_1_g_u_i_elements.html", null ],
+    [ "gpp::qrhi::handle_dispatch< Self, Res >", "structgpp_1_1qrhi_1_1handle__dispatch.html", null ],
+    [ "gpp::qrhi::handle_release", "structgpp_1_1qrhi_1_1handle__release.html", null ],
+    [ "gpp::qrhi::handle_update< Self, Ret >", "structgpp_1_1qrhi_1_1handle__update.html", null ],
     [ "Execution::HandleNodeChange", "struct_execution_1_1_handle_node_change.html", null ],
     [ "RemoteControl::WS::Handler", "struct_remote_control_1_1_w_s_1_1_handler.html", null ],
     [ "score::gfx::HAPDecoder::HAPSection", "structscore_1_1gfx_1_1_h_a_p_decoder_1_1_h_a_p_section.html", null ],
@@ -1091,8 +1104,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< model >", "classid__base__t.html", null ],
+    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1140,8 +1153,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1188,6 +1201,7 @@ var hierarchy =
     [ "Threedim::ArrayToMesh::ins", "struct_threedim_1_1_array_to_mesh_1_1ins.html", null ],
     [ "Threedim::ArrayToTexture::ins", "struct_threedim_1_1_array_to_texture_1_1ins.html", null ],
     [ "Threedim::ObjLoader::ins", "struct_threedim_1_1_obj_loader_1_1ins.html", null ],
+    [ "Threedim::PCLToMesh2::ins", "struct_threedim_1_1_p_c_l_to_mesh2_1_1ins.html", null ],
     [ "Threedim::PCLToMesh::ins", "struct_threedim_1_1_p_c_l_to_mesh_1_1ins.html", null ],
     [ "Threedim::StrucSynth::ins", "struct_threedim_1_1_struc_synth_1_1ins.html", null ],
     [ "Pd::Instance", "struct_pd_1_1_instance.html", null ],
@@ -1660,6 +1674,7 @@ var hierarchy =
     [ "Process::LayerContextMenuManager", "class_process_1_1_layer_context_menu_manager.html", null ],
     [ "Scenario::LayerData", "class_scenario_1_1_layer_data.html", null ],
     [ "Scenario::LayerSlotPresenter", "struct_scenario_1_1_layer_slot_presenter.html", null ],
+    [ "gpp::qrhi::DefaultPipeline::layout", "structgpp_1_1qrhi_1_1_default_pipeline_1_1layout.html", null ],
     [ "Layout", null, [
       [ "score::MarginLess< Layout >", "classscore_1_1_margin_less.html", null ]
     ] ],
@@ -2124,8 +2139,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -2173,8 +2188,8 @@ var hierarchy =
       [ "avnd_tools::Spammer", "structavnd__tools_1_1_spammer.html", null ],
       [ "avnd_tools::Teleplot", "structavnd__tools_1_1_teleplot.html", null ]
     ] ],
-    [ "Threedim::PCLToMesh::ins::pcl_in", "struct_threedim_1_1_p_c_l_to_mesh_1_1ins_1_1pcl__in.html", null ],
     [ "Threedim::PCLToMesh", "class_threedim_1_1_p_c_l_to_mesh.html", null ],
+    [ "Threedim::PCLToMesh2", "class_threedim_1_1_p_c_l_to_mesh2.html", null ],
     [ "PdDataflowTest", "class_pd_dataflow_test.html", null ],
     [ "score::gfx::PersistSampler", "structscore_1_1gfx_1_1_persist_sampler.html", null ],
     [ "Protocols::PhidgetSpecificSettings", "struct_protocols_1_1_phidget_specific_settings.html", null ],
@@ -2253,6 +2268,7 @@ var hierarchy =
     [ "vst3::PortCreationVisitor", "structvst3_1_1_port_creation_visitor.html", null ],
     [ "Process::PortItemLayout", "struct_process_1_1_port_item_layout.html", null ],
     [ "Process::PortWidgetSetup", "class_process_1_1_port_widget_setup.html", null ],
+    [ "halp::position_gpu_geometry", "structhalp_1_1position__gpu__geometry.html", null ],
     [ "Process::Preset", "struct_process_1_1_preset.html", null ],
     [ "bitfocus::module_data::preset_definition", "structbitfocus_1_1module__data_1_1preset__definition.html", null ],
     [ "PrettyName_k", "class_pretty_name__k.html", null ],
@@ -3746,7 +3762,6 @@ var hierarchy =
     [ "range", "structrange.html", null ],
     [ "Threedim::DeformationControl::range", "struct_threedim_1_1_deformation_control_1_1range.html", null ],
     [ "Automation::RecreateOnPlay::range_position", "struct_automation_1_1_recreate_on_play_1_1range__position.html", null ],
-    [ "Threedim::raw_texture", "struct_threedim_1_1raw__texture.html", null ],
     [ "Reader< T >", "class_reader.html", null ],
     [ "Video::ReadFrame", "struct_video_1_1_read_frame.html", null ],
     [ "Execution::RecomputePropagate", "struct_execution_1_1_recompute_propagate.html", null ],
@@ -4241,6 +4256,8 @@ var hierarchy =
     [ "Vertex", null, [
       [ "Threedim::TVertex", "class_threedim_1_1_t_vertex.html", null ]
     ] ],
+    [ "gpp::qrhi::DefaultPipeline::layout::vertex_input", "structgpp_1_1qrhi_1_1_default_pipeline_1_1layout_1_1vertex__input.html", null ],
+    [ "gpp::qrhi::DefaultPipeline::layout::vertex_output", "structgpp_1_1qrhi_1_1_default_pipeline_1_1layout_1_1vertex__output.html", null ],
     [ "score::gfx::VideoFrameShare", "structscore_1_1gfx_1_1_video_frame_share.html", [
       [ "score::gfx::VideoFrameReader", "structscore_1_1gfx_1_1_video_frame_reader.html", null ]
     ] ],
@@ -4278,6 +4295,10 @@ var hierarchy =
     [ "Gfx::WindowOutputSettings", "struct_gfx_1_1_window_output_settings.html", null ],
     [ "Threedim::StrucSynth::worker", "struct_threedim_1_1_struc_synth_1_1worker.html", null ],
     [ "JSONWriter::wrapper", "struct_j_s_o_n_writer_1_1wrapper.html", null ],
+    [ "gpp::qrhi::generate_shaders::write_binding", "structgpp_1_1qrhi_1_1generate__shaders_1_1write__binding.html", null ],
+    [ "gpp::qrhi::generate_shaders::write_bindings", "structgpp_1_1qrhi_1_1generate__shaders_1_1write__bindings.html", null ],
+    [ "gpp::qrhi::generate_shaders::write_input", "structgpp_1_1qrhi_1_1generate__shaders_1_1write__input.html", null ],
+    [ "gpp::qrhi::generate_shaders::write_output", "structgpp_1_1qrhi_1_1generate__shaders_1_1write__output.html", null ],
     [ "Writer< T >", "class_writer.html", null ],
     [ "RemoteControl::WS::WSClient", "struct_remote_control_1_1_w_s_1_1_w_s_client.html", null ],
     [ "Protocols::WSSpecificSettings", "struct_protocols_1_1_w_s_specific_settings.html", null ],

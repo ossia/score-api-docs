@@ -234,7 +234,6 @@ var NAVTREEINDEX0 =
 "_core_audio_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,11],
 "_cpu_analysis_node_8hpp_source.html":[13,0,0,2,8,3,2],
 "_cpu_filter_node_8hpp_source.html":[13,0,0,2,8,3,3],
-"_cpu_generator_node_8hpp_source.html":[13,0,0,2,8,3,4],
 "_create_comment_block_8hpp_source.html":[13,0,0,2,32,4,1,5,0,0],
 "_create_curve_from_states_8hpp_source.html":[13,0,0,2,32,4,1,0,0],
 "_create_curves_8cpp_source.html":[13,0,0,2,32,4,1,0,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "_create_process_in_existing_slot_8hpp_source.html":[13,0,0,2,32,4,1,3,4],
 "_create_process_in_new_slot_8hpp_source.html":[13,0,0,2,32,4,1,3,5],
 "_create_sequence_8hpp_source.html":[13,0,0,2,32,4,1,5,0,6],
-"_create_state_8hpp_source.html":[13,0,0,2,32,4,1,5,0,7]
+"_create_state_8hpp_source.html":[13,0,0,2,32,4,1,5,0,7],
+"_create_state_macro_8hpp_source.html":[13,0,0,2,32,4,1,5,0,8]
 };

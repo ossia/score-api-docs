@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"_q_graphics_x_y_chooser_8hpp_source.html":[13,0,0,1,1,5,1,26],
 "_q_graphics_x_y_spinbox_8hpp_source.html":[13,0,0,1,1,5,1,27],
 "_q_graphics_x_y_z_chooser_8hpp_source.html":[13,0,0,1,1,5,1,28],
 "_q_graphics_x_y_z_spinbox_8hpp_source.html":[13,0,0,1,1,5,1,29],
@@ -124,7 +125,7 @@ var NAVTREEINDEX4 =
 "_scenario_view_interface_8hpp_source.html":[13,0,0,2,32,4,9,11],
 "_score_device_loader_8hpp_source.html":[13,0,0,2,0,0,2,1],
 "_score_interfaces.html":[7],
-"_score_layer_8hpp_source.html":[13,0,0,2,8,3,21],
+"_score_layer_8hpp_source.html":[13,0,0,2,8,3,22],
 "_screen_node_8hpp_source.html":[13,0,0,2,17,1,3,24],
 "_script_edit_command_8hpp_source.html":[13,0,0,2,32,4,1,15],
 "_script_editor_8hpp_source.html":[13,0,0,2,3,4,10,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "_state_menu_overlay_8hpp_source.html":[13,0,0,2,32,4,3,8,2],
 "_state_model_8hpp_source.html":[13,0,0,2,32,4,3,8,3],
 "_state_presenter_8hpp_source.html":[13,0,0,2,32,4,3,8,4],
-"_state_selection_8hpp_source.html":[13,0,0,2,32,4,8,0,7],
-"_state_transitions_8hpp_source.html":[13,0,0,2,32,4,8,1,5]
+"_state_selection_8hpp_source.html":[13,0,0,2,32,4,8,0,7]
 };

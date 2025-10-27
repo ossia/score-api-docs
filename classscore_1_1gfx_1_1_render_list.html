@@ -151,6 +151,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>render</b> (QRhiComma
 void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> ()</td></tr>
 <tr class="memdesc:a37cde7b19c5eee5009f717644af96ffd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release GPU resources owned by this render list. <br /></td></tr>
 <tr class="separator:a37cde7b19c5eee5009f717644af96ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4f4bd359c175d0e060f1b09ddda0dd3" id="r_ac4f4bd359c175d0e060f1b09ddda0dd3"><td class="memItemLeft" align="right" valign="top"><a id="ac4f4bd359c175d0e060f1b09ddda0dd3" name="ac4f4bd359c175d0e060f1b09ddda0dd3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseBuffer</b> (QRhiBuffer *buf)</td></tr>
+<tr class="separator:ac4f4bd359c175d0e060f1b09ddda0dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe481e0bfc451d77de8d2fa8ed5d270f" id="r_afe481e0bfc451d77de8d2fa8ed5d270f"><td class="memItemLeft" align="right" valign="top"><a id="afe481e0bfc451d77de8d2fa8ed5d270f" name="afe481e0bfc451d77de8d2fa8ed5d270f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>maybeRebuild</b> (bool force=false)</td></tr>
 <tr class="memdesc:afe481e0bfc451d77de8d2fa8ed5d270f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the render size has changed in order to rebuild the pipelines. <br /></td></tr>
@@ -158,6 +161,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>maybeRebuild</b> (boo
 <tr class="memitem:a98d894ff589d1fa80d36a99e59801e8f" id="r_a98d894ff589d1fa80d36a99e59801e8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a98d894ff589d1fa80d36a99e59801e8f">renderTargetForOutput</a> (const <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge) const noexcept</td></tr>
 <tr class="memdesc:a98d894ff589d1fa80d36a99e59801e8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the texture corresponding to an output port.  <br /></td></tr>
 <tr class="separator:a98d894ff589d1fa80d36a99e59801e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1689a59927229a50af30bd1abecb6ec1" id="r_a1689a59927229a50af30bd1abecb6ec1"><td class="memItemLeft" align="right" valign="top"><a id="a1689a59927229a50af30bd1abecb6ec1" name="a1689a59927229a50af30bd1abecb6ec1"></a>
+QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>bufferForInput</b> (const <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge) const noexcept</td></tr>
+<tr class="separator:a1689a59927229a50af30bd1abecb6ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31f6145a08ef51c178ccd374b8e6e90d" id="r_a31f6145a08ef51c178ccd374b8e6e90d"><td class="memItemLeft" align="right" valign="top"><a id="a31f6145a08ef51c178ccd374b8e6e90d" name="a31f6145a08ef51c178ccd374b8e6e90d"></a>
+QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>bufferForOutput</b> (const <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge) const noexcept</td></tr>
+<tr class="separator:a31f6145a08ef51c178ccd374b8e6e90d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c05c20017599d13e6c64415ab6f5cb4" id="r_a4c05c20017599d13e6c64415ab6f5cb4"><td class="memItemLeft" align="right" valign="top">QImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a4c05c20017599d13e6c64415ab6f5cb4">adaptImage</a> (const QImage &amp;in)</td></tr>
 <tr class="memdesc:a4c05c20017599d13e6c64415ab6f5cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adapts an image to the GPU limits / format.  <br /></td></tr>
 <tr class="separator:a4c05c20017599d13e6c64415ab6f5cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -4,13 +4,14 @@ var dir_b760342c48181f544d2706818bb5bf8f =
     [ "Concepts.hpp", "_concepts_8hpp_source.html", null ],
     [ "CpuAnalysisNode.hpp", "_cpu_analysis_node_8hpp_source.html", null ],
     [ "CpuFilterNode.hpp", "_cpu_filter_node_8hpp_source.html", null ],
-    [ "CpuGeneratorNode.hpp", "_cpu_generator_node_8hpp_source.html", null ],
     [ "score-plugin-avnd/Crousti/Executor.hpp", "score-plugin-avnd_2_crousti_2_executor_8hpp_source.html", null ],
     [ "ExecutorPortSetup.hpp", "_executor_port_setup_8hpp_source.html", null ],
     [ "ExecutorUpdateControlValueInUi.hpp", "_executor_update_control_value_in_ui_8hpp_source.html", null ],
     [ "plugins/score-plugin-avnd/Crousti/File.hpp", "plugins_2score-plugin-avnd_2_crousti_2_file_8hpp_source.html", null ],
     [ "Geometry.hpp", "_geometry_8hpp_source.html", null ],
     [ "GfxNode.hpp", "_gfx_node_8hpp_source.html", null ],
+    [ "GppCoroutines.hpp", "_gpp_coroutines_8hpp_source.html", null ],
+    [ "GppShaders.hpp", "_gpp_shaders_8hpp_source.html", null ],
     [ "GpuComputeNode.hpp", "_gpu_compute_node_8hpp_source.html", null ],
     [ "score-plugin-avnd/Crousti/GPUNode.hpp", "score-plugin-avnd_2_crousti_2_g_p_u_node_8hpp_source.html", null ],
     [ "GpuUtils.hpp", "_gpu_utils_8hpp_source.html", null ],
@@ -21,5 +22,7 @@ var dir_b760342c48181f544d2706818bb5bf8f =
     [ "Painter.hpp", "_painter_8hpp_source.html", null ],
     [ "score-plugin-avnd/Crousti/ProcessModel.hpp", "score-plugin-avnd_2_crousti_2_process_model_8hpp_source.html", null ],
     [ "ProcessModelPortInit.hpp", "_process_model_port_init_8hpp_source.html", null ],
-    [ "ScoreLayer.hpp", "_score_layer_8hpp_source.html", null ]
+    [ "ScoreLayer.hpp", "_score_layer_8hpp_source.html", null ],
+    [ "TextureConversion.hpp", "_texture_conversion_8hpp_source.html", null ],
+    [ "TextureFormat.hpp", "_texture_format_8hpp_source.html", null ]
 ];

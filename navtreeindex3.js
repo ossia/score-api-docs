@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"_metro_presenter_8hpp_source.html":[13,0,0,2,24,0,4,5],
 "_metro_view_8hpp_source.html":[13,0,0,2,24,0,4,6],
 "_micro_mapping_8hpp_source.html":[13,0,0,2,16,0,23],
 "_midi_drop_8hpp_source.html":[13,0,0,2,25,0,2],
@@ -111,7 +112,7 @@ var NAVTREEINDEX3 =
 "_output_node_8hpp_source.html":[13,0,0,2,17,1,3,13],
 "_owning_vector_8hpp_source.html":[13,0,0,1,1,12,2,7],
 "_p_c_l_to_geometry_8hpp_source.html":[13,0,0,2,35,0,6],
-"_painter_8hpp_source.html":[13,0,0,2,8,3,18],
+"_painter_8hpp_source.html":[13,0,0,2,8,3,19],
 "_painter_path_8hpp_source.html":[13,0,0,1,1,5,14],
 "_panel_delegate_8hpp_source.html":[13,0,0,1,1,8,2,0],
 "_panel_delegate_factory_8hpp_source.html":[13,0,0,1,1,8,2,1],
@@ -203,7 +204,7 @@ var NAVTREEINDEX3 =
 "_process_inspector_widget_delegate_factory_8hpp_source.html":[13,0,0,2,3,4,7,1],
 "_process_list_8hpp_source.html":[13,0,0,2,3,4,37],
 "_process_mime_serialization_8hpp_source.html":[13,0,0,2,3,4,39],
-"_process_model_port_init_8hpp_source.html":[13,0,0,2,8,3,20],
+"_process_model_port_init_8hpp_source.html":[13,0,0,2,8,3,21],
 "_process_panel_graphics_proxy_8hpp_source.html":[13,0,0,2,3,4,13,0],
 "_process_policy_8hpp_source.html":[13,0,0,2,32,4,9,0,4],
 "_process_state_data_interface_8hpp_source.html":[13,0,0,2,3,4,11,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "_q_graphics_spinbox_8hpp_source.html":[13,0,0,1,1,5,1,22],
 "_q_graphics_text_button_8hpp_source.html":[13,0,0,1,1,5,1,23],
 "_q_graphics_time_chooser_8hpp_source.html":[13,0,0,1,1,5,1,24],
-"_q_graphics_toggle_8hpp_source.html":[13,0,0,1,1,5,1,25],
-"_q_graphics_x_y_chooser_8hpp_source.html":[13,0,0,1,1,5,1,26]
+"_q_graphics_toggle_8hpp_source.html":[13,0,0,1,1,5,1,25]
 };
