@@ -1,7 +1,5 @@
 var NAVTREEINDEX24 =
 {
-"struct_t_serializer_3_01_data_stream_00_01score_1_1_entity_3_01_t_01_4_01_4.html":[12,0,313],
-"struct_t_serializer_3_01_data_stream_00_01score_1_1_entity_list_3_01_t_01_4_01_4.html":[12,0,314],
 "struct_t_serializer_3_01_data_stream_00_01score_1_1_entity_map_3_01_t_00_01_o_01_4_01_4.html":[12,0,315],
 "struct_t_serializer_3_01_data_stream_00_01score_1_1any__map_01_4.html":[12,0,312],
 "struct_t_serializer_3_01_data_stream_00_01score_1_1uuid__t_01_4.html":[12,0,316],
@@ -168,8 +166,9 @@ var NAVTREEINDEX24 =
 "structavnd__tools_1_1_device_recorder_1_1playback__message.html":[12,0,4,1,2],
 "structavnd__tools_1_1_device_recorder_1_1player__thread.html":[12,0,4,1,3],
 "structavnd__tools_1_1_device_recorder_1_1process__message.html":[12,0,4,1,4],
-"structavnd__tools_1_1_device_recorder_1_1reset__message.html":[12,0,4,1,5],
-"structavnd__tools_1_1_device_recorder_1_1reset__path__message.html":[12,0,4,1,6],
+"structavnd__tools_1_1_device_recorder_1_1recorder__thread.html":[12,0,4,1,5],
+"structavnd__tools_1_1_device_recorder_1_1reset__message.html":[12,0,4,1,6],
+"structavnd__tools_1_1_device_recorder_1_1reset__path__message.html":[12,0,4,1,7],
 "structavnd__tools_1_1_interpolator.html":[12,0,4,2],
 "structavnd__tools_1_1_pattern_combiner.html":[12,0,4,3],
 "structavnd__tools_1_1_pattern_combiner_1_1average.html":[12,0,4,3,0],
@@ -244,10 +243,11 @@ var NAVTREEINDEX24 =
 "structmtk_1_1_midi_sync.html":[12,0,40,0],
 "structmtk_1_1_midi_sync_1_1storage_1_1impl.html":[12,0,40,0,0,0],
 "structmtk_1_1sleep__accurate.html":[12,0,40,1],
-"structoscr_1_1_custom_control_factory.html":[11,0,8,3],
 "structoscr_1_1_custom_control_factory.html":[12,0,43,3],
-"structoscr_1_1_custom_control_factory_3_01_node_00_01avnd_1_1field__reflection_3_01_n_00_01_field_01_4_01_4.html":[11,0,8,4],
+"structoscr_1_1_custom_control_factory.html":[11,0,8,3],
 "structoscr_1_1_custom_control_factory_3_01_node_00_01avnd_1_1field__reflection_3_01_n_00_01_field_01_4_01_4.html":[12,0,43,4],
+"structoscr_1_1_custom_control_factory_3_01_node_00_01avnd_1_1field__reflection_3_01_n_00_01_field_01_4_01_4.html":[11,0,8,4],
 "structoscr_1_1_custom_float_control.html":[11,0,8,5],
-"structoscr_1_1_custom_float_control.html":[12,0,43,5]
+"structoscr_1_1_custom_float_control.html":[12,0,43,5],
+"structoscr_1_1_custom_float_control_base.html":[11,0,8,6]
 };

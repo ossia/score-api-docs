@@ -127,17 +127,17 @@ var NAVTREEINDEX =
 "class_state_1_1_type_combo_box.html",
 "classscore_1_1_file_downloader.html",
 "classscore_1_1_q_graphics_slider.html",
-"classscore_1_1gfx_1_1_screen_node_1_1_basic_renderer.html",
-"dir_732692d7f2ff6fb699416889ed5b398c.html",
-"functions_r.html",
-"score-plugin-jit_2_jit_cpp_2_application_plugin_8hpp_source.html",
-"struct_execution_1_1_play_from_interval_scenario_pruner.html",
-"struct_media_1_1_audio_file_1_1_r_a_m_reader.html",
-"struct_recording_1_1_message_policy.html",
-"struct_t_serializer_3_01_data_stream_00_01score_1_1_entity_3_01_t_01_4_01_4.html",
+"classscore_1_1gfx_1_1_screen_node_1_1_scaled_renderer.html",
+"dir_73e2091b37753395acae7571ce13ba72.html",
+"functions_t.html",
+"score-plugin-js_2_j_s_2_application_plugin_8hpp_source.html",
+"struct_execution_1_1_process_component___t.html",
+"struct_media_1_1_audio_file_1_1_sndfile_reader.html",
+"struct_recording_1_1_record_automation_creation_visitor.html",
+"struct_t_serializer_3_01_data_stream_00_01score_1_1_entity_map_3_01_t_00_01_o_01_4_01_4.html",
 "structoscr_1_1_custom_float_control_base.html",
-"structscore_1_1_id_gen.html",
-"structscore_1_1gfx_1_1_pass.html"
+"structscore_1_1_infinite_scroller.html",
+"structscore_1_1gfx_1_1_persist_sampler.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

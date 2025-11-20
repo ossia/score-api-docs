@@ -1104,8 +1104,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Model >", "classid__base__t.html", null ],
+    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1912,7 +1912,6 @@ var hierarchy =
       [ "Gfx::Spout::SpoutInputNode::Renderer", "class_gfx_1_1_spout_1_1_spout_input_node_1_1_renderer.html", null ],
       [ "RenderedDepthNode", "struct_rendered_depth_node.html", null ],
       [ "score::gfx::GenericNodeRenderer", "classscore_1_1gfx_1_1_generic_node_renderer.html", [
-        [ "score::gfx::ImagesNode::OnTheFlyRenderer", "classscore_1_1gfx_1_1_images_node_1_1_on_the_fly_renderer.html", null ],
         [ "score::gfx::ImagesNode::PreloadedRenderer", "classscore_1_1gfx_1_1_images_node_1_1_preloaded_renderer.html", null ],
         [ "score::gfx::RenderedPhongNode", "structscore_1_1gfx_1_1_rendered_phong_node.html", null ],
         [ "score::gfx::TexgenNode::Rendered", "structscore_1_1gfx_1_1_texgen_node_1_1_rendered.html", null ],
@@ -2139,8 +2138,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model >", "class_path.html", null ],
+    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -3773,6 +3772,7 @@ var hierarchy =
     [ "Recording::RecordedMessage", "struct_recording_1_1_recorded_message.html", null ],
     [ "Recording::Recorder", "class_recording_1_1_recorder.html", null ],
     [ "avnd_tools::AudioRecorder::recorder_thread", "structavnd__tools_1_1_audio_recorder_1_1recorder__thread.html", null ],
+    [ "avnd_tools::DeviceRecorder::recorder_thread", "structavnd__tools_1_1_device_recorder_1_1recorder__thread.html", null ],
     [ "Recording::RecordProvider", "struct_recording_1_1_record_provider.html", [
       [ "Recording::AutomationRecorder", "class_recording_1_1_automation_recorder.html", null ],
       [ "Recording::MessageRecorder", "class_recording_1_1_message_recorder.html", null ]

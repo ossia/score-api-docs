@@ -5,6 +5,7 @@ var structavnd__tools_1_1_device_recorder =
     [ "playback_message", "structavnd__tools_1_1_device_recorder_1_1playback__message.html", null ],
     [ "player_thread", "structavnd__tools_1_1_device_recorder_1_1player__thread.html", null ],
     [ "process_message", "structavnd__tools_1_1_device_recorder_1_1process__message.html", null ],
+    [ "recorder_thread", "structavnd__tools_1_1_device_recorder_1_1recorder__thread.html", null ],
     [ "reset_message", "structavnd__tools_1_1_device_recorder_1_1reset__message.html", null ],
     [ "reset_path_message", "structavnd__tools_1_1_device_recorder_1_1reset__path__message.html", null ]
 ];

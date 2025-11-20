@@ -1,8 +1,6 @@
 var NAVTREEINDEX17 =
 {
-"classscore_1_1gfx_1_1_screen_node_1_1_basic_renderer.html":[12,0,55,2,64,0],
 "classscore_1_1gfx_1_1_screen_node_1_1_scaled_renderer.html":[12,0,55,2,64,1],
-"classscore_1_1gfx_1_1_screen_node_1_1_scaled_renderer.html":[11,0,12,0,64,1],
 "classscore_1_1gfx_1_1_text_node_1_1_renderer.html":[11,0,12,0,69,0],
 "classscore_1_1gfx_1_1_text_node_1_1_renderer.html":[12,0,55,2,69,0],
 "classscore_1_1gfx_1_1_video_node.html":[12,0,55,2,79],
@@ -55,8 +53,8 @@ var NAVTREEINDEX17 =
 "classscore__plugin__vst.html":[12,0,253],
 "classscore__plugin__vst3.html":[12,0,254],
 "classscore__plugin__ysfx.html":[12,0,255],
-"classstd_1_1hash_3_01std_1_1pair_3_01int_00_01int_01_4_01_4.html":[12,0,60,8],
 "classstd_1_1hash_3_01std_1_1pair_3_01int_00_01int_01_4_01_4.html":[11,0,14,8],
+"classstd_1_1hash_3_01std_1_1pair_3_01int_00_01int_01_4_01_4.html":[12,0,60,8],
 "classvst3_1_1_application_plugin.html":[12,0,66,0],
 "classvst3_1_1_application_plugin.html#a6853897da3ff2bc9f8ce84e92a893a21":[12,0,66,0,0],
 "classvst3_1_1_component_handler.html":[12,0,66,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX17 =
 "dir_71f2db9d82f9b28ab1d354a7f61b9ae7.html":[13,0,0,2,17,0,0],
 "dir_72590f0b9ce1b0f1ffbe04f9b4faec7e.html":[13,0,0,2,24,0,1],
 "dir_72ab4b44fa971c64fe6f5381cc8b0846.html":[13,0,0,2,13,0,0,0],
-"dir_72d2cf69910bbd6c54c277766780965a.html":[13,0,0,2,13,0,4]
+"dir_72d2cf69910bbd6c54c277766780965a.html":[13,0,0,2,13,0,4],
+"dir_732692d7f2ff6fb699416889ed5b398c.html":[13,0,0,2,15],
+"dir_7335258607ad7536f439170a596f92b0.html":[13,0,0,2,3,4,0]
 };

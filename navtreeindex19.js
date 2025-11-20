@@ -1,7 +1,5 @@
 var NAVTREEINDEX19 =
 {
-"functions_r.html":[12,3,0,13],
-"functions_s.html":[12,3,0,14],
 "functions_t.html":[12,3,0,15],
 "functions_u.html":[12,3,0,16],
 "functions_v.html":[12,3,0,17],
@@ -249,5 +247,7 @@ var NAVTREEINDEX19 =
 "score-plugin-gfx_2_gfx_2_video_2_inspector_8hpp_source.html":[13,0,0,2,17,1,12,1],
 "score-plugin-gfx_2_gfx_2_video_2_layer_8hpp_source.html":[13,0,0,2,17,1,12,2],
 "score-plugin-gfx_2_gfx_2_video_2_process_8hpp_source.html":[13,0,0,2,17,1,12,5],
-"score-plugin-gfx_2_gfx_2_video_2_view_8hpp_source.html":[13,0,0,2,17,1,12,6]
+"score-plugin-gfx_2_gfx_2_video_2_view_8hpp_source.html":[13,0,0,2,17,1,12,6],
+"score-plugin-jit_2_jit_cpp_2_application_plugin_8hpp_source.html":[13,0,0,2,19,2,2],
+"score-plugin-jit_2_jit_cpp_2_edit_script_8hpp_source.html":[13,0,0,2,19,2,6]
 };
