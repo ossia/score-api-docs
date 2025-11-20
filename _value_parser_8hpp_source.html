@@ -227,20 +227,19 @@ $(document).ready(function(){initNavTree('_value_parser_8hpp_source.html',''); i
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    char_parser %= <span class="stringliteral">&quot;&#39;&quot;</span> &gt;&gt; (char_ - <span class="stringliteral">&quot;&#39;&quot;</span>) &gt;&gt; <span class="stringliteral">&quot;&#39;&quot;</span>;</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    str_parser %= <span class="charliteral">&#39;&quot;&#39;</span> &gt;&gt; qi::lexeme[*(char_ - <span class="charliteral">&#39;&quot;&#39;</span>)] &gt;&gt; <span class="charliteral">&#39;&quot;&#39;</span>;</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="comment">// FIXME does not support empty list [ ]</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    list_parser %= skip(boost::spirit::standard::space)[<span class="stringliteral">&quot;[&quot;</span> &gt;&gt; start % <span class="stringliteral">&quot;,&quot;</span> &gt;&gt; <span class="stringliteral">&quot;]&quot;</span>];</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    start %= real_parser&lt;float, boost::spirit::qi::strict_real_policies&lt;float&gt;&gt;() | int_</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>             | bool_parser | char_parser | str_parser | list_parser;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  }</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  BoolParse_map bool_parser;</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  qi::rule&lt;Iterator, std::vector&lt;ossia::value&gt;()&gt; list_parser;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  qi::rule&lt;<a class="code hl_struct" href="struct_iterator.html">Iterator</a>, char()&gt; char_parser;</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  qi::rule&lt;<a class="code hl_struct" href="struct_iterator.html">Iterator</a>, std::string()&gt; str_parser;</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  qi::rule&lt;<a class="code hl_struct" href="struct_iterator.html">Iterator</a>, ossia::value()&gt; start;</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>};</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>}</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    list_parser %= skip(boost::spirit::standard::space)[<span class="stringliteral">&quot;[&quot;</span> &gt;&gt; -(start % <span class="stringliteral">&quot;,&quot;</span>) &gt;&gt; <span class="stringliteral">&quot;]&quot;</span>];</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    start %= real_parser&lt;float, boost::spirit::qi::strict_real_policies&lt;float&gt;&gt;() | int_</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>             | bool_parser | char_parser | str_parser | list_parser;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  }</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  BoolParse_map bool_parser;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  qi::rule&lt;Iterator, std::vector&lt;ossia::value&gt;()&gt; list_parser;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  qi::rule&lt;<a class="code hl_struct" href="struct_iterator.html">Iterator</a>, char()&gt; char_parser;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  qi::rule&lt;<a class="code hl_struct" href="struct_iterator.html">Iterator</a>, std::string()&gt; str_parser;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  qi::rule&lt;<a class="code hl_struct" href="struct_iterator.html">Iterator</a>, ossia::value()&gt; start;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>};</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>}</div>
 <div class="ttc" id="astruct_iterator_html"><div class="ttname"><a href="struct_iterator.html">Iterator</a></div><div class="ttdef"><b>Definition</b> lv2_atom_helpers.hpp:99</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

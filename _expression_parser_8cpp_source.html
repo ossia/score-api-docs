@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('_expression_parser_8cpp_source.html','
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"># Values</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">char            := &#39;\&#39;&#39;, [:ascii:] - &#39;\&#39;&#39;, &#39;\&#39;&#39;;</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">str             := &#39;&quot;&#39;, ([:ascii:] - &#39;&quot;&#39;)*, &#39;&quot;&#39;;</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">list            := &#39;[&#39;, (value % &#39;,&#39;), &#39;]&#39;;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">list            := &#39;[&#39;, -(value % &#39;,&#39;), &#39;]&#39;;</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">bool            := &#39;true&#39; || &#39;false&#39; ;</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">int             := [:int:];</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">float           := [:float:];</span></div>
