@@ -167,12 +167,18 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> (
 <tr class="memitem:ada4ba7581605702479a1e2b9899a83f6" id="r_ada4ba7581605702479a1e2b9899a83f6"><td class="memItemLeft" align="right" valign="top"><a id="ada4ba7581605702479a1e2b9899a83f6" name="ada4ba7581605702479a1e2b9899a83f6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>checkForChanges</b> ()</td></tr>
 <tr class="separator:ada4ba7581605702479a1e2b9899a83f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9ffb02c70572368df209691557b34f5" id="r_ae9ffb02c70572368df209691557b34f5"><td class="memItemLeft" align="right" valign="top"><a id="ae9ffb02c70572368df209691557b34f5" name="ae9ffb02c70572368df209691557b34f5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (int32_t port, const ossia::geometry_spec &amp;v)</td></tr>
+<tr class="separator:ae9ffb02c70572368df209691557b34f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a9259b9b6e30514de6962dce0efe155a4" id="r_a9259b9b6e30514de6962dce0efe155a4"><td class="memItemLeft" align="right" valign="top"><a id="a9259b9b6e30514de6962dce0efe155a4" name="a9259b9b6e30514de6962dce0efe155a4"></a>
 const <a class="el" href="classscore_1_1gfx_1_1_node.html">Node</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>node</b></td></tr>
 <tr class="separator:a9259b9b6e30514de6962dce0efe155a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a569e44aa1e4837f7edf5e47111bd9b47" id="r_a569e44aa1e4837f7edf5e47111bd9b47"><td class="memItemLeft" align="right" valign="top">ossia::geometry_spec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a569e44aa1e4837f7edf5e47111bd9b47">geometry</a></td></tr>
+<tr class="memdesc:a569e44aa1e4837f7edf5e47111bd9b47"><td class="mdescLeft">&#160;</td><td class="mdescRight">The geometry to use.  <br /></td></tr>
+<tr class="separator:a569e44aa1e4837f7edf5e47111bd9b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f3f735f083f0b63332d6c8b7330dee6" id="r_a1f3f735f083f0b63332d6c8b7330dee6"><td class="memItemLeft" align="right" valign="top"><a id="a1f3f735f083f0b63332d6c8b7330dee6" name="a1f3f735f083f0b63332d6c8b7330dee6"></a>
 int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>id</b> {-1}</td></tr>
 <tr class="separator:a1f3f735f083f0b63332d6c8b7330dee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -227,6 +233,24 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetSpecsChan
 </table>
 </div><div class="memdoc">
 <p>Called when all the inbound nodes to a texture input have finished rendering. Mainly useful to slip in a readback. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a569e44aa1e4837f7edf5e47111bd9b47" name="a569e44aa1e4837f7edf5e47111bd9b47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a569e44aa1e4837f7edf5e47111bd9b47">&#9670;&#160;</a></span>geometry</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ossia::geometry_spec score::gfx::NodeRenderer::geometry</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The geometry to use. </p>
+<p>If not set, then a relevant default geometry for the node will be used, e.g. a full-screen quad or triangle </p>
 
 </div>
 </div>
