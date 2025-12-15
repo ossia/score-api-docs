@@ -103,6 +103,7 @@ $(document).ready(function(){initNavTree('class_dataflow_1_1_audio_device.html',
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_dataflow_1_1_audio_device-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Dataflow::AudioDevice Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
@@ -127,6 +128,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8feeb8352177206c7100324cc34bc3ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6728d3d590cf35fb357be8474541561" id="r_ac6728d3d590cf35fb357be8474541561"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dataflow_1_1_audio_device.html#ac6728d3d590cf35fb357be8474541561">updateAddress</a> (const <a class="el" href="struct_state_1_1_address.html">State::Address</a> &amp;currentAddr, const <a class="el" href="struct_device_1_1_full_address_settings.html">Device::FullAddressSettings</a> &amp;settings) override</td></tr>
 <tr class="separator:ac6728d3d590cf35fb357be8474541561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a739eb92e691b934c6432a802752944d6" id="r_a739eb92e691b934c6432a802752944d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dataflow_1_1_audio_device.html#a739eb92e691b934c6432a802752944d6">removeNode</a> (const <a class="el" href="struct_state_1_1_address.html">State::Address</a> &amp;address) override</td></tr>
+<tr class="separator:a739eb92e691b934c6432a802752944d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02d065336b5e63abc2a3caed545946bd" id="r_a02d065336b5e63abc2a3caed545946bd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dataflow_1_1_audio_device.html#a02d065336b5e63abc2a3caed545946bd">reconnect</a> () override</td></tr>
 <tr class="separator:a02d065336b5e63abc2a3caed545946bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36e2463925ebd2387a2f34ea979bd52c" id="r_a36e2463925ebd2387a2f34ea979bd52c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dataflow_1_1_audio_device.html#a36e2463925ebd2387a2f34ea979bd52c">recreate</a> (const <a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a> &amp;n) override</td></tr>
@@ -182,9 +185,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>addToListening</b> (c
 <tr class="memitem:a23d3df8fa5467bf9f3877e965c2bf45d inherit pub_methods_class_device_1_1_device_interface" id="r_a23d3df8fa5467bf9f3877e965c2bf45d"><td class="memItemLeft" align="right" valign="top">
 std::vector&lt; <a class="el" href="struct_state_1_1_address.html">State::Address</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>listening</b> () const</td></tr>
 <tr class="separator:a23d3df8fa5467bf9f3877e965c2bf45d inherit pub_methods_class_device_1_1_device_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac676a8a8b7c16a1d40d6f543f865862c inherit pub_methods_class_device_1_1_device_interface" id="r_ac676a8a8b7c16a1d40d6f543f865862c"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>removeNode</b> (const <a class="el" href="struct_state_1_1_address.html">State::Address</a> &amp;)</td></tr>
-<tr class="separator:ac676a8a8b7c16a1d40d6f543f865862c inherit pub_methods_class_device_1_1_device_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8e3468ae3d5eeebd3238b2f916f08e0 inherit pub_methods_class_device_1_1_device_interface" id="r_ae8e3468ae3d5eeebd3238b2f916f08e0"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>sendMessage</b> (const <a class="el" href="struct_state_1_1_address.html">State::Address</a> &amp;addr, const ossia::value &amp;v)</td></tr>
 <tr class="separator:ae8e3468ae3d5eeebd3238b2f916f08e0 inherit pub_methods_class_device_1_1_device_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -395,6 +395,34 @@ score::hash_map&lt; <a class="el" href="struct_state_1_1_address.html">State::Ad
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a> &amp;&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>.</p>
+
+</div>
+</div>
+<a id="a739eb92e691b934c6432a802752944d6" name="a739eb92e691b934c6432a802752944d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a739eb92e691b934c6432a802752944d6">&#9670;&#160;</a></span>removeNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dataflow::AudioDevice::removeNode </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_state_1_1_address.html">State::Address</a> &amp;&#160;</td>
+          <td class="paramname"><em>address</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
