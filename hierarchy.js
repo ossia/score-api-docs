@@ -109,7 +109,9 @@ var hierarchy =
     [ "Protocols::ArtnetSpecificSettings", "struct_protocols_1_1_artnet_specific_settings.html", null ],
     [ "JSONReader::assigner", "struct_j_s_o_n_reader_1_1assigner.html", null ],
     [ "AtomBuffer", "struct_atom_buffer.html", null ],
+    [ "Threedim::attribute_lookup", "struct_threedim_1_1attribute__lookup.html", null ],
     [ "halp::position_gpu_geometry::attributes", "structhalp_1_1position__gpu__geometry_1_1attributes.html", null ],
+    [ "Threedim::BuffersToGeometry::AttributeState", "struct_threedim_1_1_buffers_to_geometry_1_1_attribute_state.html", null ],
     [ "audio_channels_attr", "structaudio__channels__attr.html", null ],
     [ "audio_kind_attr", "structaudio__kind__attr.html", null ],
     [ "audio_mapping_attr", "structaudio__mapping__attr.html", null ],
@@ -161,6 +163,8 @@ var hierarchy =
     [ "score::Brush", "structscore_1_1_brush.html", null ],
     [ "score::BrushSet", "structscore_1_1_brush_set.html", null ],
     [ "halp::position_gpu_geometry::buffers", "structhalp_1_1position__gpu__geometry_1_1buffers.html", null ],
+    [ "Threedim::BuffersToGeometry", "class_threedim_1_1_buffers_to_geometry.html", null ],
+    [ "score::gfx::BufferView", "structscore_1_1gfx_1_1_buffer_view.html", null ],
     [ "vst3::BusActivationVisitor", "structvst3_1_1_bus_activation_visitor.html", null ],
     [ "WidgetFactory::Button", "struct_widget_factory_1_1_button.html", null ],
     [ "Jit::BytebeatLanguageSpec", "struct_jit_1_1_bytebeat_language_spec.html", null ],
@@ -224,6 +228,11 @@ var hierarchy =
         ] ]
       ] ],
       [ "Scenario::EditScript< GeometryFilter::Model, GeometryFilter::Model::p_script >", "class_scenario_1_1_edit_script.html", null ],
+      [ "Scenario::EditScript< RenderPipeline::Model, RenderPipeline::Model::p_program >", "class_scenario_1_1_edit_script.html", [
+        [ "Gfx::ChangeRenderPipelineShader", "class_gfx_1_1_change_render_pipeline_shader.html", [
+          [ "score::StaticPropertyCommand< Gfx::RenderPipeline::Model::p_program >", "structscore_1_1_static_property_command_3_01_gfx_1_1_render_pipeline_1_1_model_1_1p__program_01_4.html", null ]
+        ] ]
+      ] ],
       [ "Scenario::EditScript< Filter::Model, Filter::Model::p_program >", "class_scenario_1_1_edit_script.html", [
         [ "Gfx::ChangeShader", "class_gfx_1_1_change_shader.html", [
           [ "score::StaticPropertyCommand< Gfx::Filter::Model::p_program >", "structscore_1_1_static_property_command_3_01_gfx_1_1_filter_1_1_model_1_1p__program_01_4.html", null ]
@@ -477,6 +486,7 @@ var hierarchy =
       [ "score_plugin_scenario", "classscore__plugin__scenario.html", null ],
       [ "score_plugin_spline", "classscore__plugin__spline.html", null ],
       [ "score_plugin_spline3d", "classscore__plugin__spline3d.html", null ],
+      [ "score_plugin_threedim", "classscore__plugin__threedim.html", null ],
       [ "score_plugin_vst", "classscore__plugin__vst.html", null ],
       [ "score_plugin_vst3", "classscore__plugin__vst3.html", null ],
       [ "score_plugin_ysfx", "classscore__plugin__ysfx.html", null ]
@@ -551,6 +561,7 @@ var hierarchy =
         [ "Execution::ProcessComponent", "class_execution_1_1_process_component.html", [
           [ "Gfx::ISFExecutorComponent", "class_gfx_1_1_i_s_f_executor_component.html", [
             [ "Gfx::CSF::ProcessExecutorComponent", "class_gfx_1_1_c_s_f_1_1_process_executor_component.html", null ],
+            [ "Gfx::RenderPipeline::ProcessExecutorComponent", "class_gfx_1_1_render_pipeline_1_1_process_executor_component.html", null ],
             [ "Gfx::VSA::ProcessExecutorComponent", "class_gfx_1_1_v_s_a_1_1_process_executor_component.html", null ]
           ] ],
           [ "Pd::Component", "class_pd_1_1_component.html", null ]
@@ -577,10 +588,15 @@ var hierarchy =
       ] ]
     ] ],
     [ "Media::Sound::ComputedWaveform", "struct_media_1_1_sound_1_1_computed_waveform.html", null ],
+    [ "Threedim::ComputeExtractionStrategy", "class_threedim_1_1_compute_extraction_strategy.html", null ],
     [ "ControlSurface::con_unvalidated", "struct_control_surface_1_1con__unvalidated.html", null ],
     [ "Gfx::con_unvalidated", "struct_gfx_1_1con__unvalidated.html", null ],
     [ "oscr::con_unvalidated< Node, Field, NPred, NField >", "structoscr_1_1con__unvalidated.html", null ],
     [ "oscr::con_unvalidated_dynamic_port< Node, Field, NPred, NField >", "structoscr_1_1con__unvalidated__dynamic__port.html", null ],
+    [ "moodycamel::ConcurrentQueue", null, [
+      [ "Execution::EditionCommandQueue", "struct_execution_1_1_edition_command_queue.html", null ],
+      [ "Execution::GCCommandQueue", "struct_execution_1_1_g_c_command_queue.html", null ]
+    ] ],
     [ "bitfocus::module_data::config_field", "structbitfocus_1_1module__data_1_1config__field.html", null ],
     [ "score::gfx::OutputNode::Configuration", "structscore_1_1gfx_1_1_output_node_1_1_configuration.html", null ],
     [ "Scenario::ConstrainedDisplacementPolicy", "class_scenario_1_1_constrained_displacement_policy.html", null ],
@@ -666,7 +682,9 @@ var hierarchy =
     [ "DiagnosticConsumer", null, [
       [ "QtDiagnosticConsumer", "class_qt_diagnostic_consumer.html", null ]
     ] ],
+    [ "Threedim::DirectBufferReferenceStrategy", "class_threedim_1_1_direct_buffer_reference_strategy.html", null ],
     [ "Nodes::Direction", "struct_nodes_1_1_direction.html", null ],
+    [ "Threedim::DirectReferenceStrategy", "class_threedim_1_1_direct_reference_strategy.html", null ],
     [ "oscr::dispatch_control_setup< Node >", "structoscr_1_1dispatch__control__setup.html", null ],
     [ "score::Dispatcher", "structscore_1_1_dispatcher.html", [
       [ "score::Dispatcher_T< T >", "structscore_1_1_dispatcher___t.html", null ]
@@ -773,6 +791,7 @@ var hierarchy =
     [ "ExprData", null, [
       [ "TreeNode< ExprData >", "class_tree_node.html", null ]
     ] ],
+    [ "Threedim::ExtractBuffer", "class_threedim_1_1_extract_buffer.html", null ],
     [ "Face", null, [
       [ "Threedim::TFace", "class_threedim_1_1_t_face.html", null ]
     ] ],
@@ -879,6 +898,8 @@ var hierarchy =
     [ "Nodes::GenericMathMapping< State >", "struct_nodes_1_1_generic_math_mapping.html", null ],
     [ "score::gfx::geometry", "structscore_1_1gfx_1_1geometry.html", null ],
     [ "score::gfx::geometry_input_port_vis", "structscore_1_1gfx_1_1geometry__input__port__vis.html", null ],
+    [ "Threedim::GeometryInfo", "class_threedim_1_1_geometry_info.html", null ],
+    [ "Threedim::GeometryPacker", "class_threedim_1_1_geometry_packer.html", null ],
     [ "Threedim::GeometryPort", "struct_threedim_1_1_geometry_port.html", null ],
     [ "Scenario::get_curve_domain", "struct_scenario_1_1get__curve__domain.html", null ],
     [ "Scenario::get_start_end", "struct_scenario_1_1get__start__end.html", null ],
@@ -905,9 +926,7 @@ var hierarchy =
     [ "Jit::GlobalAtExit", "struct_jit_1_1_global_at_exit.html", null ],
     [ "LV2::GlobalContext", "struct_l_v2_1_1_global_context.html", null ],
     [ "Scenario::GoodOldDisplacementPolicy", "class_scenario_1_1_good_old_displacement_policy.html", null ],
-    [ "halp::gpu_buffer", "structhalp_1_1gpu__buffer.html", null ],
-    [ "halp::gpu_buffer_input< lit >", "structhalp_1_1gpu__buffer__input.html", null ],
-    [ "halp::gpu_buffer_input<\"Buffer\">", "structhalp_1_1gpu__buffer__input.html", null ],
+    [ "Threedim::gpu_buffer_view", "struct_threedim_1_1gpu__buffer__view.html", null ],
     [ "score::gfx::GPUVideoDecoder", "classscore_1_1gfx_1_1_g_p_u_video_decoder.html", [
       [ "score::gfx::EmptyDecoder", "structscore_1_1gfx_1_1_empty_decoder.html", null ],
       [ "score::gfx::HAPDecoder", "structscore_1_1gfx_1_1_h_a_p_decoder.html", [
@@ -1176,6 +1195,7 @@ var hierarchy =
     [ "WidgetFactory::ImpulseButton", "struct_widget_factory_1_1_impulse_button.html", null ],
     [ "in_relationship< T, U >", "structin__relationship.html", null ],
     [ "increase_timer_precision", "structincrease__timer__precision.html", null ],
+    [ "Threedim::IndexedExtractionStrategy", "class_threedim_1_1_indexed_extraction_strategy.html", null ],
     [ "score::indirect_cast_map_iterator< base_iterator_t, CastTo >", "structscore_1_1indirect__cast__map__iterator.html", null ],
     [ "score::indirect_iterator< base_iterator_t >", "structscore_1_1indirect__iterator.html", null ],
     [ "score::indirect_map_iterator< base_iterator_t >", "structscore_1_1indirect__map__iterator.html", null ],
@@ -1200,6 +1220,9 @@ var hierarchy =
     [ "Nodes::RateLimiter::Node::ins", "struct_nodes_1_1_rate_limiter_1_1_node_1_1ins.html", null ],
     [ "Threedim::ArrayToMesh::ins", "struct_threedim_1_1_array_to_mesh_1_1ins.html", null ],
     [ "Threedim::ArrayToTexture::ins", "struct_threedim_1_1_array_to_texture_1_1ins.html", null ],
+    [ "Threedim::BuffersToGeometry::ins", "struct_threedim_1_1_buffers_to_geometry_1_1ins.html", null ],
+    [ "Threedim::ExtractBuffer::ins", "struct_threedim_1_1_extract_buffer_1_1ins.html", null ],
+    [ "Threedim::GeometryPacker::ins", "struct_threedim_1_1_geometry_packer_1_1ins.html", null ],
     [ "Threedim::ObjLoader::ins", "struct_threedim_1_1_obj_loader_1_1ins.html", null ],
     [ "Threedim::PCLToMesh2::ins", "struct_threedim_1_1_p_c_l_to_mesh2_1_1ins.html", null ],
     [ "Threedim::PCLToMesh::ins", "struct_threedim_1_1_p_c_l_to_mesh_1_1ins.html", null ],
@@ -1407,6 +1430,9 @@ var hierarchy =
         ] ],
         [ "Process::ProcessFactory_T< Gfx::Filter::Model >", "class_process_1_1_process_factory___t.html", [
           [ "Gfx::Filter::ProcessFactory", "struct_gfx_1_1_filter_1_1_process_factory.html", null ]
+        ] ],
+        [ "Process::ProcessFactory_T< Gfx::RenderPipeline::Model >", "class_process_1_1_process_factory___t.html", [
+          [ "Gfx::RenderPipeline::ProcessFactory", "struct_gfx_1_1_render_pipeline_1_1_process_factory.html", null ]
         ] ],
         [ "Process::ProcessFactory_T< Gfx::VSA::Model >", "class_process_1_1_process_factory___t.html", [
           [ "Gfx::VSA::ProcessFactory", "struct_gfx_1_1_v_s_a_1_1_process_factory.html", null ]
@@ -1919,14 +1945,15 @@ var hierarchy =
       ] ],
       [ "score::gfx::GeometryFilterNodeRenderer", "structscore_1_1gfx_1_1_geometry_filter_node_renderer.html", null ],
       [ "score::gfx::OutputNodeRenderer", "classscore_1_1gfx_1_1_output_node_renderer.html", [
+        [ "Gfx::BasicRenderer", "class_gfx_1_1_basic_renderer.html", null ],
         [ "Gfx::InvertYRenderer", "class_gfx_1_1_invert_y_renderer.html", null ],
+        [ "Gfx::ScaledRenderer", "class_gfx_1_1_scaled_renderer.html", null ],
         [ "score::gfx::PreviewRenderer", "classscore_1_1gfx_1_1_preview_renderer.html", null ],
-        [ "score::gfx::PreviewRendererInvertY", "classscore_1_1gfx_1_1_preview_renderer_invert_y.html", null ],
-        [ "score::gfx::ScreenNode::BasicRenderer", "classscore_1_1gfx_1_1_screen_node_1_1_basic_renderer.html", null ],
-        [ "score::gfx::ScreenNode::ScaledRenderer", "classscore_1_1gfx_1_1_screen_node_1_1_scaled_renderer.html", null ]
+        [ "score::gfx::PreviewRendererInvertY", "classscore_1_1gfx_1_1_preview_renderer_invert_y.html", null ]
       ] ],
       [ "score::gfx::RenderedCSFNode", "structscore_1_1gfx_1_1_rendered_c_s_f_node.html", null ],
       [ "score::gfx::RenderedISFNode", "structscore_1_1gfx_1_1_rendered_i_s_f_node.html", null ],
+      [ "score::gfx::RenderedRawRasterPipelineNode", "structscore_1_1gfx_1_1_rendered_raw_raster_pipeline_node.html", null ],
       [ "score::gfx::SimpleRenderedISFNode", "structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html", null ],
       [ "score::gfx::SimpleRenderedVSANode", "structscore_1_1gfx_1_1_simple_rendered_v_s_a_node.html", null ],
       [ "score::gfx::VideoNodeRenderer", "classscore_1_1gfx_1_1_video_node_renderer.html", null ]
@@ -2088,8 +2115,12 @@ var hierarchy =
     [ "Nodes::MidiHiRes::Output", "struct_nodes_1_1_midi_hi_res_1_1_output.html", null ],
     [ "Gfx::OutputStream", "struct_gfx_1_1_output_stream.html", null ],
     [ "score::gfx::OutputUBO", "structscore_1_1gfx_1_1_output_u_b_o.html", null ],
+    [ "Threedim::GeometryPacker::outs", "struct_threedim_1_1_geometry_packer_1_1outs.html", null ],
     [ "JS::OutValueMessage", "struct_j_s_1_1_out_value_message.html", null ],
     [ "PM::Package", "struct_p_m_1_1_package.html", null ],
+    [ "Threedim::packed_attribute_info", "struct_threedim_1_1packed__attribute__info.html", null ],
+    [ "Threedim::packed_attribute_spec", "struct_threedim_1_1packed__attribute__spec.html", null ],
+    [ "Threedim::PackedExtractionStrategy", "class_threedim_1_1_packed_extraction_strategy.html", null ],
     [ "score::PaintVisitor", "structscore_1_1_paint_visitor.html", null ],
     [ "score::Brush::Pair", "structscore_1_1_brush_1_1_pair.html", null ],
     [ "score::PanelDelegate", "classscore_1_1_panel_delegate.html", [
@@ -2138,8 +2169,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model >", "class_path.html", null ],
+    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -2157,6 +2188,7 @@ var hierarchy =
     [ "Path< Process_T >", "class_path.html", null ],
     [ "Path< ProcessModel >", "class_path.html", null ],
     [ "Path< ProcessStateDataInterface >", "class_path.html", null ],
+    [ "Path< RenderPipeline::Model >", "class_path.html", null ],
     [ "Path< Scenario::CommentBlockModel >", "class_path.html", null ],
     [ "Path< Scenario::EventModel >", "class_path.html", null ],
     [ "Path< Scenario::IntervalModel >", "class_path.html", null ],
@@ -3060,6 +3092,7 @@ var hierarchy =
               [ "Gfx::Filter::Model", "class_gfx_1_1_filter_1_1_model.html", null ],
               [ "Gfx::GeometryFilter::Model", "class_gfx_1_1_geometry_filter_1_1_model.html", null ],
               [ "Gfx::ModelDisplay::Model", "class_gfx_1_1_model_display_1_1_model.html", null ],
+              [ "Gfx::RenderPipeline::Model", "class_gfx_1_1_render_pipeline_1_1_model.html", null ],
               [ "Gfx::Text::Model", "class_gfx_1_1_text_1_1_model.html", null ],
               [ "Gfx::VSA::Model", "class_gfx_1_1_v_s_a_1_1_model.html", null ],
               [ "Gfx::Video::Model", "class_gfx_1_1_video_1_1_model.html", null ],
@@ -3128,6 +3161,9 @@ var hierarchy =
             [ "JS::FloatControl4D< Impl >", "class_j_s_1_1_float_control4_d.html", null ]
           ] ],
           [ "JS::GenericControlInlet< Process::FloatSlider, float, float >", "class_j_s_1_1_generic_control_inlet.html", null ],
+          [ "JS::GenericControlInlet< Process::HSVSlider, QColor, ossia::vec4f >", "class_j_s_1_1_generic_control_inlet.html", [
+            [ "JS::HSVSlider", "class_j_s_1_1_h_s_v_slider.html", null ]
+          ] ],
           [ "JS::GenericControlInlet< Process::IntSlider, int, int >", "class_j_s_1_1_generic_control_inlet.html", null ],
           [ "JS::GenericControlInlet< Process::MultiSlider, QVector< qreal >, std::vector< ossia::value > >", "class_j_s_1_1_generic_control_inlet.html", [
             [ "JS::MultiSlider", "struct_j_s_1_1_multi_slider.html", null ]
@@ -3142,7 +3178,6 @@ var hierarchy =
             [ "JS::FloatSlider< Impl >", "class_j_s_1_1_float_slider.html", null ],
             [ "JS::IntSlider< Impl >", "class_j_s_1_1_int_slider.html", null ]
           ] ],
-          [ "JS::HSVSlider", "class_j_s_1_1_h_s_v_slider.html", null ],
           [ "JS::Impulse", "class_j_s_1_1_impulse.html", null ],
           [ "JS::LineEdit", "class_j_s_1_1_line_edit.html", null ],
           [ "JS::Toggle", "class_j_s_1_1_toggle.html", null ]
@@ -3762,6 +3797,9 @@ var hierarchy =
     [ "Threedim::DeformationControl::range", "struct_threedim_1_1_deformation_control_1_1range.html", null ],
     [ "Automation::RecreateOnPlay::range_position", "struct_automation_1_1_recreate_on_play_1_1range__position.html", null ],
     [ "Reader< T >", "class_reader.html", null ],
+    [ "moodycamel::ReaderWriterQueue", null, [
+      [ "Execution::ExecutionCommandQueue", "struct_execution_1_1_execution_command_queue.html", null ]
+    ] ],
     [ "Video::ReadFrame", "struct_video_1_1_read_frame.html", null ],
     [ "Execution::RecomputePropagate", "struct_execution_1_1_recompute_propagate.html", null ],
     [ "Execution::ReconnectOutlets< T >", "struct_execution_1_1_reconnect_outlets.html", null ],
@@ -4028,7 +4066,6 @@ var hierarchy =
     ] ],
     [ "score::gfx::TextureRenderTarget", "structscore_1_1gfx_1_1_texture_render_target.html", null ],
     [ "score::ThreadPool", "classscore_1_1_thread_pool.html", null ],
-    [ "Threedim::Noise::tick", "struct_threedim_1_1_noise_1_1tick.html", null ],
     [ "Execution::Settings::TickPolicies", "struct_execution_1_1_settings_1_1_tick_policies.html", null ],
     [ "ossia::time_sync_callback", null, [
       [ "Execution::FinishCallback", "struct_execution_1_1_finish_callback.html", null ],
@@ -4184,6 +4221,7 @@ var hierarchy =
     [ "Nodes::MathMapping::Node::ui", "struct_nodes_1_1_math_mapping_1_1_node_1_1ui.html", null ],
     [ "Nodes::MicroMapping::Node::ui", "struct_nodes_1_1_micro_mapping_1_1_node_1_1ui.html", null ],
     [ "Nodes::RateLimiter::Node::ui", "struct_nodes_1_1_rate_limiter_1_1_node_1_1ui.html", null ],
+    [ "Threedim::BuffersToGeometry::ui", "struct_threedim_1_1_buffers_to_geometry_1_1ui.html", null ],
     [ "UI", null, [
       [ "Faust::UI< Proc, Synth >", "struct_faust_1_1_u_i.html", null ],
       [ "FaustDSP::Wrap< T >", "struct_faust_d_s_p_1_1_wrap.html", null ]

@@ -114,39 +114,41 @@ $(document).ready(function(){initNavTree('_i_s_f_executor_8hpp_source.html','');
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;Process/Execution/ProcessComponent.hpp&gt;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;ossia/dataflow/node_process.hpp&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span>isf</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">struct </span>descriptor;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>}</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_gfx.html">Gfx</a></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">struct </span>ProcessedProgram;</div>
-<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_gfx_1_1_i_s_f_executor_component.html">   12</a></span><span class="keyword">class </span><a class="code hl_class" href="class_gfx_1_1_i_s_f_executor_component.html">ISFExecutorComponent</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_execution_1_1_process_component.html">Execution::ProcessComponent</a></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keyword">using </span>Execution::ProcessComponent::ProcessComponent;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <span class="keywordtype">void</span> cleanup() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;score_plugin_gfx_export.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span>isf</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">struct </span>descriptor;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>}</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_gfx.html">Gfx</a></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">struct </span>ProcessedProgram;</div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_gfx_1_1_i_s_f_executor_component.html">   14</a></span><span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT <a class="code hl_class" href="class_gfx_1_1_i_s_f_executor_component.html">ISFExecutorComponent</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_execution_1_1_process_component.html">Execution::ProcessComponent</a></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <span class="keyword">using </span>Execution::ProcessComponent::ProcessComponent;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keywordtype">void</span> init(<span class="keyword">const</span> <a class="code hl_struct" href="struct_gfx_1_1_processed_program.html">Gfx::ProcessedProgram</a>&amp; shader, <span class="keyword">const</span> <a class="code hl_struct" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keywordtype">void</span> init(</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>      <span class="keyword">const</span> QString&amp; shader, <span class="keyword">const</span> isf::descriptor&amp; desc, <span class="keyword">const</span> <a class="code hl_struct" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keywordtype">void</span> on_shaderChanged(<span class="keyword">const</span> <a class="code hl_struct" href="struct_gfx_1_1_processed_program.html">Gfx::ProcessedProgram</a>&amp; shader);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keywordtype">void</span> on_shaderChanged(<span class="keyword">const</span> QString&amp; shader, <span class="keyword">const</span> isf::descriptor&amp; desc);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  std::pair&lt;ossia::inlets, ossia::outlets&gt; <a class="code hl_function" href="class_gfx_1_1_i_s_f_executor_component.html#a1629cc5d5a3f4e175f366f65b4c74f52">setup_node</a>(<a class="code hl_struct" href="struct_execution_1_1_transaction.html">Execution::Transaction</a>&amp; transact);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <a class="code hl_struct" href="struct_process_1_1_inlets.html">Process::Inlets</a> m_oldInlets;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <a class="code hl_struct" href="struct_process_1_1_outlets.html">Process::Outlets</a> m_oldOutlets;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keywordtype">void</span> cleanup() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keywordtype">void</span> init(<span class="keyword">const</span> <a class="code hl_struct" href="struct_gfx_1_1_processed_program.html">Gfx::ProcessedProgram</a>&amp; shader, <span class="keyword">const</span> <a class="code hl_struct" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keywordtype">void</span> init(</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>      <span class="keyword">const</span> QString&amp; shader, <span class="keyword">const</span> isf::descriptor&amp; desc, <span class="keyword">const</span> <a class="code hl_struct" href="struct_execution_1_1_context.html">Execution::Context</a>&amp; ctx);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keywordtype">void</span> on_shaderChanged(<span class="keyword">const</span> <a class="code hl_struct" href="struct_gfx_1_1_processed_program.html">Gfx::ProcessedProgram</a>&amp; shader);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keywordtype">void</span> on_shaderChanged(<span class="keyword">const</span> QString&amp; shader, <span class="keyword">const</span> isf::descriptor&amp; desc);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  std::pair&lt;ossia::inlets, ossia::outlets&gt;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  setup_node(<span class="keyword">const</span> isf::descriptor&amp; desc, <a class="code hl_struct" href="struct_execution_1_1_transaction.html">Execution::Transaction</a>&amp; transact);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <a class="code hl_struct" href="struct_process_1_1_inlets.html">Process::Inlets</a> m_oldInlets;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <a class="code hl_struct" href="struct_process_1_1_outlets.html">Process::Outlets</a> m_oldOutlets;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>};</div>
 </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
 <div class="ttc" id="aclass_execution_1_1_process_component_html"><div class="ttname"><a href="class_execution_1_1_process_component.html">Execution::ProcessComponent</a></div><div class="ttdef"><b>Definition</b> Process/Execution/ProcessComponent.hpp:48</div></div>
-<div class="ttc" id="aclass_gfx_1_1_i_s_f_executor_component_html"><div class="ttname"><a href="class_gfx_1_1_i_s_f_executor_component.html">Gfx::ISFExecutorComponent</a></div><div class="ttdef"><b>Definition</b> ISFExecutor.hpp:13</div></div>
-<div class="ttc" id="aclass_gfx_1_1_i_s_f_executor_component_html_a1629cc5d5a3f4e175f366f65b4c74f52"><div class="ttname"><a href="class_gfx_1_1_i_s_f_executor_component.html#a1629cc5d5a3f4e175f366f65b4c74f52">Gfx::ISFExecutorComponent::setup_node</a></div><div class="ttdeci">std::pair&lt; ossia::inlets, ossia::outlets &gt; setup_node(Execution::Transaction &amp;transact)</div><div class="ttdef"><b>Definition</b> ISFExecutor.cpp:162</div></div>
+<div class="ttc" id="aclass_gfx_1_1_i_s_f_executor_component_html"><div class="ttname"><a href="class_gfx_1_1_i_s_f_executor_component.html">Gfx::ISFExecutorComponent</a></div><div class="ttdef"><b>Definition</b> ISFExecutor.hpp:15</div></div>
 <div class="ttc" id="anamespace_gfx_html"><div class="ttname"><a href="namespace_gfx.html">Gfx</a></div><div class="ttdoc">Binds the rendering pipeline to ossia processes.</div><div class="ttdef"><b>Definition</b> CameraDevice.cpp:24</div></div>
-<div class="ttc" id="astruct_execution_1_1_context_html"><div class="ttname"><a href="struct_execution_1_1_context.html">Execution::Context</a></div><div class="ttdef"><b>Definition</b> ExecutionContext.hpp:76</div></div>
-<div class="ttc" id="astruct_execution_1_1_transaction_html"><div class="ttname"><a href="struct_execution_1_1_transaction.html">Execution::Transaction</a></div><div class="ttdef"><b>Definition</b> ExecutionTransaction.hpp:20</div></div>
+<div class="ttc" id="astruct_execution_1_1_context_html"><div class="ttname"><a href="struct_execution_1_1_context.html">Execution::Context</a></div><div class="ttdef"><b>Definition</b> ExecutionContext.hpp:196</div></div>
+<div class="ttc" id="astruct_execution_1_1_transaction_html"><div class="ttname"><a href="struct_execution_1_1_transaction.html">Execution::Transaction</a></div><div class="ttdef"><b>Definition</b> ExecutionTransaction.hpp:21</div></div>
 <div class="ttc" id="astruct_gfx_1_1_processed_program_html"><div class="ttname"><a href="struct_gfx_1_1_processed_program.html">Gfx::ProcessedProgram</a></div><div class="ttdef"><b>Definition</b> ShaderProgram.hpp:145</div></div>
 <div class="ttc" id="astruct_process_1_1_inlets_html"><div class="ttname"><a href="struct_process_1_1_inlets.html">Process::Inlets</a></div><div class="ttdef"><b>Definition</b> PortForward.hpp:23</div></div>
 <div class="ttc" id="astruct_process_1_1_outlets_html"><div class="ttname"><a href="struct_process_1_1_outlets.html">Process::Outlets</a></div><div class="ttdef"><b>Definition</b> PortForward.hpp:27</div></div>

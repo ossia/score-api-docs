@@ -157,29 +157,28 @@ $(document).ready(function(){initNavTree('_video_node_renderer_8hpp_source.html'
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <a class="code hl_struct" href="structscore_1_1gfx_1_1_video_frame_share.html">VideoFrameShare</a>&amp; reader;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  PassMap m_p;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  QRhiBuffer* m_meshBuffer{};</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  QRhiBuffer* m_idxBuffer{};</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  QRhiBuffer* m_processUBO{};</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  QRhiBuffer* m_materialUBO{};</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keyword">struct </span>Material</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  {</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">float</span> scale_w{}, scale_h{};</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">float</span> tex_w{}, tex_h{};</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  };</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  std::unique_ptr&lt;GPUVideoDecoder&gt; m_gpu;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <a class="code hl_struct" href="struct_video_1_1_image_format.html">Video::ImageFormat</a> m_frameFormat{};</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <a class="code hl_enumeration" href="namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58">score::gfx::ScaleMode</a> m_currentScaleMode{};</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  std::shared_ptr&lt;RefcountedFrame&gt; m_currentFrame{};</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  int64_t m_currentFrameIdx{-1};</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordtype">bool</span> m_recomputeScale{};</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>};</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <a class="code hl_struct" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> m_meshBuffer{};</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  QRhiBuffer* m_processUBO{};</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  QRhiBuffer* m_materialUBO{};</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keyword">struct </span>Material</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">float</span> scale_w{}, scale_h{};</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">float</span> tex_w{}, tex_h{};</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  };</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  std::unique_ptr&lt;GPUVideoDecoder&gt; m_gpu;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <a class="code hl_struct" href="struct_video_1_1_image_format.html">Video::ImageFormat</a> m_frameFormat{};</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <a class="code hl_enumeration" href="namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58">score::gfx::ScaleMode</a> m_currentScaleMode{};</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  std::shared_ptr&lt;RefcountedFrame&gt; m_currentFrame{};</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  int64_t m_currentFrameIdx{-1};</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordtype">bool</span> m_recomputeScale{};</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>};</div>
 </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdoc">Renderer for a given node.</div><div class="ttdef"><b>Definition</b> NodeRenderer.hpp:11</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:19</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_video_node_base_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_video_node_base.html">score::gfx::VideoNodeBase</a></div><div class="ttdef"><b>Definition</b> VideoNode.hpp:71</div></div>
@@ -188,9 +187,10 @@ $(document).ready(function(){initNavTree('_video_node_renderer_8hpp_source.html'
 <div class="ttc" id="anamespacescore_1_1gfx_html_ac7b0a6847f2f616b12a8fe08a1229b58"><div class="ttname"><a href="namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58">score::gfx::ScaleMode</a></div><div class="ttdeci">ScaleMode</div><div class="ttdoc">How to resize a texture to adapt it to a viewport.</div><div class="ttdef"><b>Definition</b> Scale.hpp:10</div></div>
 <div class="ttc" id="astruct_video_1_1_image_format_html"><div class="ttname"><a href="struct_video_1_1_image_format.html">Video::ImageFormat</a></div><div class="ttdef"><b>Definition</b> VideoInterface.hpp:16</div></div>
 <div class="ttc" id="astruct_video_1_1_video_metadata_html"><div class="ttname"><a href="struct_video_1_1_video_metadata.html">Video::VideoMetadata</a></div><div class="ttdef"><b>Definition</b> VideoInterface.hpp:29</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_edge_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a></div><div class="ttdoc">Connection between two score::gfx::Port.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:70</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_port_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a></div><div class="ttdoc">Port of a score::gfx::Node.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:52</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_texture_render_target_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_texture_render_target.html">score::gfx::TextureRenderTarget</a></div><div class="ttdoc">Useful abstraction for storing all the data related to a render target.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:115</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_edge_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a></div><div class="ttdoc">Connection between two score::gfx::Port.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:71</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_mesh_buffers_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_mesh_buffers.html">score::gfx::MeshBuffers</a></div><div class="ttdef"><b>Definition</b> Mesh.hpp:23</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_port_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a></div><div class="ttdoc">Port of a score::gfx::Node.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:53</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_texture_render_target_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_texture_render_target.html">score::gfx::TextureRenderTarget</a></div><div class="ttdoc">Useful abstraction for storing all the data related to a render target.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:116</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_video_frame_share_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_video_frame_share.html">score::gfx::VideoFrameShare</a></div><div class="ttdef"><b>Definition</b> VideoNode.hpp:28</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

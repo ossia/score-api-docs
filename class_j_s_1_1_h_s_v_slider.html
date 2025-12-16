@@ -115,8 +115,9 @@ Inheritance diagram for JS::HSVSlider:</div>
  <div class="center">
   <img src="class_j_s_1_1_h_s_v_slider.png" usemap="#JS::HSVSlider_map" alt=""/>
   <map id="JS::HSVSlider_map" name="JS::HSVSlider_map">
-<area href="class_j_s_1_1_control_inlet.html" alt="JS::ControlInlet" shape="rect" coords="0,112,97,136"/>
-<area href="class_j_s_1_1_inlet.html" alt="JS::Inlet" shape="rect" coords="0,56,97,80"/>
+<area href="class_j_s_1_1_generic_control_inlet.html" alt="JS::GenericControlInlet&lt; Process::HSVSlider, QColor, ossia::vec4f &gt;" shape="rect" coords="0,168,403,192"/>
+<area href="class_j_s_1_1_control_inlet.html" alt="JS::ControlInlet" shape="rect" coords="0,112,403,136"/>
+<area href="class_j_s_1_1_inlet.html" alt="JS::Inlet" shape="rect" coords="0,56,403,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -126,6 +127,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad6cbaf01932cd3c0661bb6ffb1f1fad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43ddb4b3f7858f5ab4371862aeffd521" id="r_a43ddb4b3f7858f5ab4371862aeffd521"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_process_1_1_inlet.html">Process::Inlet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_h_s_v_slider.html#a43ddb4b3f7858f5ab4371862aeffd521">make</a> (<a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="class_process_1_1_port.html">Process::Port</a> &gt; &amp;&amp;id, QObject *parent) override</td></tr>
 <tr class="separator:a43ddb4b3f7858f5ab4371862aeffd521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e1a4c77929e364357076659280c85ff" id="r_a3e1a4c77929e364357076659280c85ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_h_s_v_slider.html#a3e1a4c77929e364357076659280c85ff">setValue</a> (QVariant value) override</td></tr>
+<tr class="separator:a3e1a4c77929e364357076659280c85ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a168a01aa69de2a8af50451823abbfb0e" id="r_a168a01aa69de2a8af50451823abbfb0e"><td class="memItemLeft" align="right" valign="top"><a id="a168a01aa69de2a8af50451823abbfb0e" name="a168a01aa69de2a8af50451823abbfb0e"></a>
 const QColor &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> () const noexcept</td></tr>
 <tr class="separator:a168a01aa69de2a8af50451823abbfb0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,9 +138,22 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setInit</b> (const QC
 <tr class="memitem:a65b614b030e7ded594e356fa5427a51a" id="r_a65b614b030e7ded594e356fa5427a51a"><td class="memItemLeft" align="right" valign="top"><a id="a65b614b030e7ded594e356fa5427a51a" name="a65b614b030e7ded594e356fa5427a51a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>initChanged</b> (const QColor &amp;v)</td></tr>
 <tr class="separator:a65b614b030e7ded594e356fa5427a51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6329492f8e36a4ccd099f54ed26d1c8" id="r_ad6329492f8e36a4ccd099f54ed26d1c8"><td class="memItemLeft" align="right" valign="top"><a id="ad6329492f8e36a4ccd099f54ed26d1c8" name="ad6329492f8e36a4ccd099f54ed26d1c8"></a>
+<tr class="inherit_header pub_methods_class_j_s_1_1_generic_control_inlet"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_j_s_1_1_generic_control_inlet')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_j_s_1_1_generic_control_inlet.html">JS::GenericControlInlet&lt; Process::HSVSlider, QColor, ossia::vec4f &gt;</a></td></tr>
+<tr class="memitem:a2cf548cf10ef6ad90fdc98569385268d inherit pub_methods_class_j_s_1_1_generic_control_inlet" id="r_a2cf548cf10ef6ad90fdc98569385268d"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
+<tr class="separator:a2cf548cf10ef6ad90fdc98569385268d inherit pub_methods_class_j_s_1_1_generic_control_inlet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af99601021d1d372b348a00a6878330e7 inherit pub_methods_class_j_s_1_1_generic_control_inlet" id="r_af99601021d1d372b348a00a6878330e7"><td class="memItemLeft" align="right" valign="top">
+QColor&#160;</td><td class="memItemRight" valign="bottom"><b>value</b> () const noexcept</td></tr>
+<tr class="separator:af99601021d1d372b348a00a6878330e7 inherit pub_methods_class_j_s_1_1_generic_control_inlet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6f82cb3fcd8151594c4fabd21d4ddc0 inherit pub_methods_class_j_s_1_1_generic_control_inlet" id="r_aa6f82cb3fcd8151594c4fabd21d4ddc0"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setValue</b> (QColor value)</td></tr>
+<tr class="separator:aa6f82cb3fcd8151594c4fabd21d4ddc0 inherit pub_methods_class_j_s_1_1_generic_control_inlet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebbcef0406aecb2442663b21125fe8a4 inherit pub_methods_class_j_s_1_1_generic_control_inlet" id="r_aebbcef0406aecb2442663b21125fe8a4"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>valueChanged</b> (QColor value)</td></tr>
+<tr class="separator:aebbcef0406aecb2442663b21125fe8a4 inherit pub_methods_class_j_s_1_1_generic_control_inlet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6329492f8e36a4ccd099f54ed26d1c8 inherit pub_methods_class_j_s_1_1_generic_control_inlet" id="r_ad6329492f8e36a4ccd099f54ed26d1c8"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>ControlInlet</b> (QObject *parent=nullptr)</td></tr>
-<tr class="separator:ad6329492f8e36a4ccd099f54ed26d1c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ad6329492f8e36a4ccd099f54ed26d1c8 inherit pub_methods_class_j_s_1_1_generic_control_inlet"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_j_s_1_1_control_inlet"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_j_s_1_1_control_inlet')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_j_s_1_1_control_inlet.html">JS::ControlInlet</a></td></tr>
 <tr class="memitem:ad6329492f8e36a4ccd099f54ed26d1c8 inherit pub_methods_class_j_s_1_1_control_inlet" id="r_ad6329492f8e36a4ccd099f54ed26d1c8"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>ControlInlet</b> (QObject *parent=nullptr)</td></tr>
@@ -148,9 +164,6 @@ QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>value</b> () cons
 <tr class="memitem:a02831d6e2c4dc80bb6e1f431e0c7503b inherit pub_methods_class_j_s_1_1_control_inlet" id="r_a02831d6e2c4dc80bb6e1f431e0c7503b"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
 <tr class="separator:a02831d6e2c4dc80bb6e1f431e0c7503b inherit pub_methods_class_j_s_1_1_control_inlet"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57124d72cd9990956713d08c047f69d2 inherit pub_methods_class_j_s_1_1_control_inlet" id="r_a57124d72cd9990956713d08c047f69d2"><td class="memItemLeft" align="right" valign="top">
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setValue</b> (QVariant value)</td></tr>
-<tr class="separator:a57124d72cd9990956713d08c047f69d2 inherit pub_methods_class_j_s_1_1_control_inlet"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73ab63925575065e414bb3153eb4d8db inherit pub_methods_class_j_s_1_1_control_inlet" id="r_a73ab63925575065e414bb3153eb4d8db"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>valueChanged</b> (QVariant value)</td></tr>
 <tr class="separator:a73ab63925575065e414bb3153eb4d8db inherit pub_methods_class_j_s_1_1_control_inlet"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,6 +183,13 @@ Friends</h2></td></tr>
 <tr class="memitem:a972d4ce22ecceb3322b55f83209f7ef7" id="r_a972d4ce22ecceb3322b55f83209f7ef7"><td class="memItemLeft" align="right" valign="top"><a id="a972d4ce22ecceb3322b55f83209f7ef7" name="a972d4ce22ecceb3322b55f83209f7ef7"></a>
 constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::PropertyStateTag, W_ThisType ** &gt; &gt;, w_internal::PropertyStateTag, W_ThisType **) -&gt; decltype((w_internal::makeMetaPropertyInfo&lt; QColor &gt;(w_internal::viewLiteral(&quot;init&quot;), w_internal::viewLiteral(&quot;QColor&quot;), &amp;W_ThisType::init, &amp;W_ThisType::setInit, W_Notify, &amp;W_ThisType::initChanged)))</td></tr>
 <tr class="separator:a972d4ce22ecceb3322b55f83209f7ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_j_s_1_1_generic_control_inlet"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_j_s_1_1_generic_control_inlet')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_j_s_1_1_generic_control_inlet.html">JS::GenericControlInlet&lt; Process::HSVSlider, QColor, ossia::vec4f &gt;</a></td></tr>
+<tr class="memitem:a2d23b7c5c0aa4390f12c8b7476e6c8cf inherit pro_attribs_class_j_s_1_1_generic_control_inlet" id="r_a2d23b7c5c0aa4390f12c8b7476e6c8cf"><td class="memItemLeft" align="right" valign="top">
+QColor&#160;</td><td class="memItemRight" valign="bottom"><b>m_value</b></td></tr>
+<tr class="separator:a2d23b7c5c0aa4390f12c8b7476e6c8cf inherit pro_attribs_class_j_s_1_1_generic_control_inlet"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad6cbaf01932cd3c0661bb6ffb1f1fad5" name="ad6cbaf01932cd3c0661bb6ffb1f1fad5"></a>
@@ -195,7 +215,7 @@ constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="class_j_s_1_1_inlet.html">JS::Inlet</a>.</p>
+<p>Reimplemented from <a class="el" href="class_j_s_1_1_generic_control_inlet.html">JS::GenericControlInlet&lt; Process::HSVSlider, QColor, ossia::vec4f &gt;</a>.</p>
 
 </div>
 </div>
@@ -233,7 +253,35 @@ constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="class_j_s_1_1_control_inlet.html">JS::ControlInlet</a>.</p>
+<p>Reimplemented from <a class="el" href="class_j_s_1_1_generic_control_inlet.html">JS::GenericControlInlet&lt; Process::HSVSlider, QColor, ossia::vec4f &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a3e1a4c77929e364357076659280c85ff" name="a3e1a4c77929e364357076659280c85ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e1a4c77929e364357076659280c85ff">&#9670;&#160;</a></span>setValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JS::HSVSlider::setValue </td>
+          <td>(</td>
+          <td class="paramtype">QVariant&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="class_j_s_1_1_generic_control_inlet.html">JS::GenericControlInlet&lt; Process::HSVSlider, QColor, ossia::vec4f &gt;</a>.</p>
 
 </div>
 </div>

@@ -6,7 +6,7 @@ var dir_97b556a87b7c53069d27ffc5d3c87ca6 =
     [ "Bind.hpp", "_bind_8hpp_source.html", null ],
     [ "Clamp.hpp", "_clamp_8hpp_source.html", null ],
     [ "Cursor.hpp", "_cursor_8hpp_source.html", null ],
-    [ "Debug.hpp", "_debug_8hpp_source.html", null ],
+    [ "lib/score/tools/Debug.hpp", "lib_2score_2tools_2_debug_8hpp_source.html", null ],
     [ "DeleteAll.hpp", "_delete_all_8hpp_source.html", null ],
     [ "lib/score/tools/File.hpp", "lib_2score_2tools_2_file_8hpp_source.html", null ],
     [ "FilePath.hpp", "_file_path_8hpp_source.html", null ],

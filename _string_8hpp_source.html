@@ -119,14 +119,17 @@ $(document).ready(function(){initNavTree('_string_8hpp_source.html',''); initRes
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#if QT_VERSION &lt; QT_VERSION_CHECK(6, 5, 0)</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>SCORE_LIB_BASE_EXPORT</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>QDebug operator&lt;&lt;(QDebug debug, <span class="keyword">const</span> std::string&amp; obj);</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">inline</span> QStringList splitWithoutEmptyParts(<span class="keyword">const</span> QString&amp; src, <span class="keyword">const</span> QString&amp; sep)</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keywordflow">return</span> src.split(sep, Qt::SkipEmptyParts);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>}</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;string_view&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>SCORE_LIB_BASE_EXPORT</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>QDebug operator&lt;&lt;(QDebug debug, <span class="keyword">const</span> std::string&amp; obj);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>SCORE_LIB_BASE_EXPORT</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>QDebug operator&lt;&lt;(QDebug debug, std::string_view obj);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">inline</span> QStringList splitWithoutEmptyParts(<span class="keyword">const</span> QString&amp; src, <span class="keyword">const</span> QString&amp; sep)</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keywordflow">return</span> src.split(sep, Qt::SkipEmptyParts);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

@@ -150,8 +150,8 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>Flags</b> = QFlags&l
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8ff728bc6d465f5b07aa81304dc53c05" id="r_a8ff728bc6d465f5b07aa81304dc53c05"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_basic_mesh.html#a8ff728bc6d465f5b07aa81304dc53c05">init</a> (QRhi &amp;rhi) const noexcept override</td></tr>
 <tr class="separator:a8ff728bc6d465f5b07aa81304dc53c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae18d3aff1511bd1299c56e88ae4b4cde" id="r_ae18d3aff1511bd1299c56e88ae4b4cde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_basic_mesh.html#ae18d3aff1511bd1299c56e88ae4b4cde">update</a> (<a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> &amp;bufs, QRhiResourceUpdateBatch &amp;cb) const noexcept override</td></tr>
-<tr class="separator:ae18d3aff1511bd1299c56e88ae4b4cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad652821716d0f69d63083609302beb7d" id="r_ad652821716d0f69d63083609302beb7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_basic_mesh.html#ad652821716d0f69d63083609302beb7d">update</a> (QRhi &amp;rhi, <a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> &amp;bufs, QRhiResourceUpdateBatch &amp;cb) const noexcept override</td></tr>
+<tr class="separator:ad652821716d0f69d63083609302beb7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8cb88f506a65693dccf446a85649ef9" id="r_ae8cb88f506a65693dccf446a85649ef9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_basic_mesh.html#ae8cb88f506a65693dccf446a85649ef9">preparePipeline</a> (QRhiGraphicsPipeline &amp;pip) const noexcept override</td></tr>
 <tr class="separator:ae8cb88f506a65693dccf446a85649ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a543064ee82321c2758b6be651c8dd260" id="r_a543064ee82321c2758b6be651c8dd260"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_basic_mesh.html#a543064ee82321c2758b6be651c8dd260">draw</a> (const <a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> &amp;bufs, QRhiCommandBuffer &amp;cb) const noexcept override</td></tr>
@@ -299,8 +299,8 @@ std::atomic_int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>dirtyG
 
 </div>
 </div>
-<a id="ae18d3aff1511bd1299c56e88ae4b4cde" name="ae18d3aff1511bd1299c56e88ae4b4cde"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae18d3aff1511bd1299c56e88ae4b4cde">&#9670;&#160;</a></span>update()</h2>
+<a id="ad652821716d0f69d63083609302beb7d" name="ad652821716d0f69d63083609302beb7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad652821716d0f69d63083609302beb7d">&#9670;&#160;</a></span>update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -311,6 +311,12 @@ std::atomic_int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>dirtyG
         <tr>
           <td class="memname">void score::gfx::BasicMesh::update </td>
           <td>(</td>
+          <td class="paramtype">QRhi &amp;&#160;</td>
+          <td class="paramname"><em>rhi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> &amp;&#160;</td>
           <td class="paramname"><em>bufs</em>, </td>
         </tr>

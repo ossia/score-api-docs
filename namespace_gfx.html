@@ -137,6 +137,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gfx_1_1_audio_frame_encoder.html">AudioFrameEncoder</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_basic_renderer.html">BasicRenderer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_camera_device.html">CameraDevice</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gfx_1_1_camera_device_enumerator.html">CameraDeviceEnumerator</a></td></tr>
@@ -146,6 +148,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gfx_1_1_camera_settings.html">CameraSettings</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_change_c_s_f.html">ChangeCSF</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_change_render_pipeline_shader.html">ChangeRenderPipelineShader</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_change_shader.html">ChangeShader</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -240,6 +244,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gfx_1_1_s24_i_audio_frame_encoder.html">S24IAudioFrameEncoder</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gfx_1_1_s32_i_audio_frame_encoder.html">S32IAudioFrameEncoder</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_scaled_renderer.html">ScaledRenderer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1sh4lt__output__device.html">sh4lt_output_device</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -363,9 +369,9 @@ ossia::value&#160;</td><td class="memItemRight" valign="bottom"><b>fromImageSet<
 <tr class="memitem:a2b03924ce56e9287e911d49cd9076d75" id="r_a2b03924ce56e9287e911d49cd9076d75"><td class="memItemLeft" align="right" valign="top"><a id="a2b03924ce56e9287e911d49cd9076d75" name="a2b03924ce56e9287e911d49cd9076d75"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseImages</b> (std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_image.html">score::gfx::Image</a> &gt; &amp;imgs)</td></tr>
 <tr class="separator:a2b03924ce56e9287e911d49cd9076d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8959acef93cda3509ccf619a7ef66dc3" id="r_a8959acef93cda3509ccf619a7ef66dc3"><td class="memItemLeft" align="right" valign="top"><a id="a8959acef93cda3509ccf619a7ef66dc3" name="a8959acef93cda3509ccf619a7ef66dc3"></a>
-std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_image.html">score::gfx::Image</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getImages</b> (const ossia::value &amp;val)</td></tr>
-<tr class="separator:a8959acef93cda3509ccf619a7ef66dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf3ddd38c4ac7bc56a3379f4e529bdbc" id="r_abf3ddd38c4ac7bc56a3379f4e529bdbc"><td class="memItemLeft" align="right" valign="top"><a id="abf3ddd38c4ac7bc56a3379f4e529bdbc" name="abf3ddd38c4ac7bc56a3379f4e529bdbc"></a>
+std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_image.html">score::gfx::Image</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getImages</b> (const ossia::value &amp;val, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx)</td></tr>
+<tr class="separator:abf3ddd38c4ac7bc56a3379f4e529bdbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cbc2e9c5868a00a37b9aa0665bf9993" id="r_a1cbc2e9c5868a00a37b9aa0665bf9993"><td class="memItemLeft" align="right" valign="top"><a id="a1cbc2e9c5868a00a37b9aa0665bf9993" name="a1cbc2e9c5868a00a37b9aa0665bf9993"></a>
 <a class="el" href="struct_gfx_1_1_shader_source.html">ShaderSource</a>&#160;</td><td class="memItemRight" valign="bottom"><b>programFromISFFragmentShaderPath</b> (const QString &amp;fsFilename, QByteArray fsData)</td></tr>
 <tr class="separator:a1cbc2e9c5868a00a37b9aa0665bf9993"><td class="memSeparator" colspan="2">&#160;</td></tr>

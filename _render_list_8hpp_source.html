@@ -146,8 +146,8 @@ $(document).ready(function(){initNavTree('_render_list_8hpp_source.html',''); in
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <a class="code hl_struct" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a> renderTargetForOutput(<span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_edge.html">Edge</a>&amp; edge) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  QRhiBuffer* bufferForInput(<span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_edge.html">Edge</a>&amp; edge) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  QRhiBuffer* bufferForOutput(<span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_edge.html">Edge</a>&amp; edge) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <a class="code hl_struct" href="structscore_1_1gfx_1_1_buffer_view.html">BufferView</a> bufferForInput(<span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_edge.html">Edge</a>&amp; edge) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <a class="code hl_struct" href="structscore_1_1gfx_1_1_buffer_view.html">BufferView</a> bufferForOutput(<span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_edge.html">Edge</a>&amp; edge) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  QImage adaptImage(<span class="keyword">const</span> QImage&amp; in);</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
@@ -174,41 +174,42 @@ $(document).ready(function(){initNavTree('_render_list_8hpp_source.html',''); in
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>  const <a class="code hl_namespace" href="namespacescore.html">score</a>::gfx::<a class="code hl_struct" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>&amp; defaultTriangle() const noexcept;</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_render_list.html#a12f68daa9a8d640436c6afacd432cfa7">  142</a></span>  <span class="keywordtype">bool</span> requiresDepth() const noexcept { <span class="keywordflow">return</span> m_requiresDepth; }</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  <span class="keywordtype">int</span> samples() const noexcept { <span class="keywordflow">return</span> m_samples; }</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  <span class="keywordtype">bool</span> canRender() const noexcept { <span class="keywordflow">return</span> m_ready; }</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>  QSize renderSize(<span class="keyword">const</span> Edge* e) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  int64_t frame = 0;</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  OutputUBO m_outputUBOData;</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  QRhiResourceUpdateBatch* m_initialBatch{};</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  <span class="comment">// Material</span></div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  QRhiBuffer* m_outputUBO{};</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  QRhiTexture* m_emptyTexture{};</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>  ossia::flat_map&lt;Mesh*, MeshBuffers&gt; m_vertexBuffers;</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>  ossia::flat_map&lt;ossia::geometry_spec, Mesh*&gt; m_customMeshCache;</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>  QSize m_lastSize{};</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>  <span class="keywordtype">int</span> m_minTexSize{};</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>  <span class="keywordtype">int</span> m_maxTexSize{};</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>  <span class="keywordtype">int</span> m_samples{1};</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>  <span class="keywordtype">bool</span> m_requiresDepth{};</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  <span class="keywordtype">bool</span> m_ready{};</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>  <span class="keywordtype">bool</span> m_built{};</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>};</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  <span class="keywordtype">bool</span> requiresDepth(<a class="code hl_namespace" href="namespacescore.html">score</a>::gfx::<a class="code hl_struct" href="structscore_1_1gfx_1_1_port.html">Port</a>&amp; p) const noexcept;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>  <span class="keywordtype">bool</span> anyNodeRequiresDepth() const noexcept { <span class="keywordflow">return</span> m_requiresDepth; }</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  <span class="keywordtype">int</span> samples() const noexcept { <span class="keywordflow">return</span> m_samples; }</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>  <span class="keywordtype">bool</span> canRender() const noexcept { <span class="keywordflow">return</span> m_ready; }</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  QSize renderSize(<span class="keyword">const</span> Edge* e) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  int64_t frame = 0;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  OutputUBO m_outputUBOData;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  QRhiResourceUpdateBatch* m_initialBatch{};</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  <span class="comment">// Material</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  QRhiBuffer* m_outputUBO{};</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>  QRhiTexture* m_emptyTexture{};</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  ossia::flat_map&lt;Mesh*, MeshBuffers&gt; m_vertexBuffers;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>  ossia::flat_map&lt;ossia::geometry_spec, Mesh*&gt; m_customMeshCache;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  QSize m_lastSize{};</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>  <span class="keywordtype">int</span> m_minTexSize{};</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>  <span class="keywordtype">int</span> m_maxTexSize{};</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>  <span class="keywordtype">int</span> m_samples{1};</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  <span class="keywordtype">bool</span> m_requiresDepth{};</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>  <span class="keywordtype">bool</span> m_ready{};</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>  <span class="keywordtype">bool</span> m_built{};</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>};</div>
 </div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>}</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>}</div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a></div><div class="ttdoc">Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)</div><div class="ttdef"><b>Definition</b> OutputNode.hpp:24</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:19</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html_a44cb2a527d818e954a9af25642cd5b6e"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html#a44cb2a527d818e954a9af25642cd5b6e">score::gfx::RenderList::outputUBO</a></div><div class="ttdeci">QRhiBuffer &amp; outputUBO() const noexcept</div><div class="ttdoc">UBO corresponding to the output parameters:</div><div class="ttdef"><b>Definition</b> RenderList.hpp:125</div></div>
@@ -219,11 +220,13 @@ $(document).ready(function(){initNavTree('_render_list_8hpp_source.html',''); in
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html_ae178a78f64300b29ba29beb21653e2b4"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html#ae178a78f64300b29ba29beb21653e2b4">score::gfx::RenderList::output</a></div><div class="ttdeci">OutputNode &amp; output</div><div class="ttdoc">Output node to which this RenderList is rendering to.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:89</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:12</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition</b> Application.cpp:97</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_edge_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a></div><div class="ttdoc">Connection between two score::gfx::Port.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:70</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_mesh_buffers_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_mesh_buffers.html">score::gfx::MeshBuffers</a></div><div class="ttdef"><b>Definition</b> Mesh.hpp:15</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_mesh_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_mesh.html">score::gfx::Mesh</a></div><div class="ttdoc">Data model for meshes.</div><div class="ttdef"><b>Definition</b> Mesh.hpp:23</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_buffer_view_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_buffer_view.html">score::gfx::BufferView</a></div><div class="ttdef"><b>Definition</b> Mesh.hpp:15</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_edge_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a></div><div class="ttdoc">Connection between two score::gfx::Port.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:71</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_mesh_buffers_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_mesh_buffers.html">score::gfx::MeshBuffers</a></div><div class="ttdef"><b>Definition</b> Mesh.hpp:23</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_mesh_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_mesh.html">score::gfx::Mesh</a></div><div class="ttdoc">Data model for meshes.</div><div class="ttdef"><b>Definition</b> Mesh.hpp:30</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_port_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a></div><div class="ttdoc">Port of a score::gfx::Node.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:53</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_render_state_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_render_state.html">score::gfx::RenderState</a></div><div class="ttdoc">Global state associated to a rendering context.</div><div class="ttdef"><b>Definition</b> RenderState.hpp:35</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_texture_render_target_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_texture_render_target.html">score::gfx::TextureRenderTarget</a></div><div class="ttdoc">Useful abstraction for storing all the data related to a render target.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:115</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_texture_render_target_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_texture_render_target.html">score::gfx::TextureRenderTarget</a></div><div class="ttdoc">Useful abstraction for storing all the data related to a render target.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:116</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

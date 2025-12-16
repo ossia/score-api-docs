@@ -20,7 +20,7 @@ var searchData=
   ['replacesampler_17',['replaceSampler',['../namespacescore_1_1gfx.html#a35ba9e4c253f3bcae70e1d36cf469be3',1,'score::gfx']]],
   ['replacesamplerandtexture_18',['replaceSamplerAndTexture',['../namespacescore_1_1gfx.html#ab9422d6d02158084503b076c4a382cbf',1,'score::gfx']]],
   ['replacetexture_19',['replacetexture',['../namespacescore_1_1gfx.html#a78ab4e37b245596d7fbb9023414aa622',1,'score::gfx::replaceTexture(QRhiShaderResourceBindings &amp;srb, QRhiTexture *old_tex, QRhiTexture *new_tex)'],['../namespacescore_1_1gfx.html#af4a120e4b5553a7ffeaeb10c7208b2e9',1,'score::gfx::replaceTexture(QRhiShaderResourceBindings &amp;, QRhiSampler *sampler, QRhiTexture *newTexture)']]],
-  ['requiresdepth_20',['requiresDepth',['../classscore_1_1gfx_1_1_render_list.html#a12f68daa9a8d640436c6afacd432cfa7',1,'score::gfx::RenderList']]],
+  ['requiresdepth_20',['requiresDepth',['../classscore_1_1gfx_1_1_render_list.html#a08bd67af91a5d2d74362be1e7ee4d8a9',1,'score::gfx::RenderList']]],
   ['resizetexture_21',['resizeTexture',['../namespacescore_1_1gfx.html#aae9462b53d25a8fe2f2a7de730a261d8',1,'score::gfx']]],
   ['resizetexturesize_22',['resizeTextureSize',['../namespacescore_1_1gfx.html#af3bc42141b98c6699c7e5aee3674c38e',1,'score::gfx']]],
   ['rollback_23',['rollback',['../class_ongoing_command_dispatcher.html#ac7d20a23177cc9acf50aabbbbf44b75f',1,'OngoingCommandDispatcher']]]

@@ -20,6 +20,7 @@ var dir_5abfc617cad4cedfbf70c3dd9e517c90 =
     [ "RenderedISFNode.hpp", "_rendered_i_s_f_node_8hpp_source.html", null ],
     [ "RenderedISFSamplerUtils.hpp", "_rendered_i_s_f_sampler_utils_8hpp_source.html", null ],
     [ "RenderedISFUtils.hpp", "_rendered_i_s_f_utils_8hpp_source.html", null ],
+    [ "RenderedRawRasterPipelineNode.hpp", "_rendered_raw_raster_pipeline_node_8hpp_source.html", null ],
     [ "RenderedVSANode.hpp", "_rendered_v_s_a_node_8hpp_source.html", null ],
     [ "RenderList.hpp", "_render_list_8hpp_source.html", null ],
     [ "RenderState.hpp", "_render_state_8hpp_source.html", null ],
