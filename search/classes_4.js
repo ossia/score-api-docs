@@ -80,7 +80,7 @@ var searchData=
   ['entitymapinserter_77',['EntityMapInserter',['../classscore_1_1_entity_map_inserter.html',1,'score']]],
   ['entitymapinserter_3c_20score_3a_3aentity_3c_20t_20_3e_2c_20ordered_20_3e_78',['EntityMapInserter&lt; score::Entity&lt; T &gt;, Ordered &gt;',['../classscore_1_1_entity_map_inserter_3_01score_1_1_entity_3_01_t_01_4_00_01_ordered_01_4.html',1,'score']]],
   ['entitymapserializer_79',['EntityMapSerializer',['../struct_entity_map_serializer.html',1,'']]],
-  ['enum_80',['enum',['../class_j_s_1_1_enum.html',1,'JS::Enum'],['../struct_widget_factory_1_1_enum.html',1,'WidgetFactory::Enum']]],
+  ['enum_80',['enum',['../struct_widget_factory_1_1_enum.html',1,'WidgetFactory::Enum'],['../struct_process_1_1_enum.html',1,'Process::Enum'],['../class_j_s_1_1_enum.html',1,'JS::Enum']]],
   ['enum_5frange_3c_20nodes_3a_3amidiutil_3a_3ascale_5ftype_20_3e_81',['enum_range&lt; Nodes::MidiUtil::scale_type &gt;',['../structmagic__enum_1_1customize_1_1enum__range_3_01_nodes_1_1_midi_util_1_1scale__type_01_4.html',1,'magic_enum::customize']]],
   ['envelopefollower_82',['EnvelopeFollower',['../struct_analysis_1_1_envelope_follower.html',1,'Analysis']]],
   ['event_83',['event',['../class_local_tree_1_1_event.html',1,'LocalTree::Event'],['../class_remote_control_1_1_w_s_1_1_event.html',1,'RemoteControl::WS::Event']]],

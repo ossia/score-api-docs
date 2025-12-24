@@ -49,7 +49,7 @@ var searchData=
   ['video_5ftexture_5finput_5fparameter_46',['video_texture_input_parameter',['../class_gfx_1_1video__texture__input__parameter.html',1,'Gfx']]],
   ['video_5ftexture_5finput_5fprotocol_47',['video_texture_input_protocol',['../class_gfx_1_1video__texture__input__protocol.html',1,'Gfx']]],
   ['videodecoder_48',['VideoDecoder',['../class_video_1_1_video_decoder.html',1,'Video']]],
-  ['videofilechooser_49',['VideoFileChooser',['../struct_j_s_1_1_video_file_chooser.html',1,'JS']]],
+  ['videofilechooser_49',['videofilechooser',['../struct_j_s_1_1_video_file_chooser.html',1,'JS::VideoFileChooser'],['../struct_process_1_1_video_file_chooser.html',1,'Process::VideoFileChooser']]],
   ['videoframereader_50',['VideoFrameReader',['../structscore_1_1gfx_1_1_video_frame_reader.html',1,'score::gfx']]],
   ['videoframeshare_51',['VideoFrameShare',['../structscore_1_1gfx_1_1_video_frame_share.html',1,'score::gfx']]],
   ['videointerface_52',['VideoInterface',['../struct_video_1_1_video_interface.html',1,'Video']]],

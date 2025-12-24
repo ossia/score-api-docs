@@ -156,7 +156,7 @@ var searchData=
   ['audiofactory_153',['AudioFactory',['../class_audio_1_1_audio_factory.html',1,'Audio']]],
   ['audiofactorylist_154',['AudioFactoryList',['../class_audio_1_1_audio_factory_list.html',1,'Audio']]],
   ['audiofile_155',['AudioFile',['../struct_media_1_1_audio_file.html',1,'Media']]],
-  ['audiofilechooser_156',['AudioFileChooser',['../struct_j_s_1_1_audio_file_chooser.html',1,'JS']]],
+  ['audiofilechooser_156',['audiofilechooser',['../struct_j_s_1_1_audio_file_chooser.html',1,'JS::AudioFileChooser'],['../struct_process_1_1_audio_file_chooser.html',1,'Process::AudioFileChooser']]],
   ['audiofilemanager_157',['AudioFileManager',['../class_media_1_1_audio_file_manager.html',1,'Media']]],
   ['audioframeencoder_158',['AudioFrameEncoder',['../struct_gfx_1_1_audio_frame_encoder.html',1,'Gfx']]],
   ['audioinfo_159',['AudioInfo',['../struct_media_1_1_audio_info.html',1,'Media']]],
