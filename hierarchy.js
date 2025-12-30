@@ -169,6 +169,7 @@ var hierarchy =
     [ "WidgetFactory::Button", "struct_widget_factory_1_1_button.html", null ],
     [ "Jit::BytebeatLanguageSpec", "struct_jit_1_1_bytebeat_language_spec.html", null ],
     [ "Process::CableData", "struct_process_1_1_cable_data.html", null ],
+    [ "JS::ComponentCache::Cache", "struct_j_s_1_1_component_cache_1_1_cache.html", null ],
     [ "halp::callback", null, [
       [ "Analysis::pulse_out", "struct_analysis_1_1pulse__out.html", null ]
     ] ],
@@ -243,9 +244,9 @@ var hierarchy =
           [ "score::StaticPropertyCommand< Gfx::VSA::Model::p_vertex >", "structscore_1_1_static_property_command_3_01_gfx_1_1_v_s_a_1_1_model_1_1p__vertex_01_4.html", null ]
         ] ]
       ] ],
-      [ "Scenario::EditScript< JS::ProcessModel, JS::ProcessModel::p_script >", "class_scenario_1_1_edit_script.html", [
+      [ "Scenario::EditScript< JS::ProcessModel, JS::ProcessModel::p_program >", "class_scenario_1_1_edit_script.html", [
         [ "JS::EditScript", "class_j_s_1_1_edit_script.html", [
-          [ "score::StaticPropertyCommand< JS::ProcessModel::p_script >", "structscore_1_1_static_property_command_3_01_j_s_1_1_process_model_1_1p__script_01_4.html", null ]
+          [ "score::StaticPropertyCommand< JS::ProcessModel::p_program >", "structscore_1_1_static_property_command_3_01_j_s_1_1_process_model_1_1p__program_01_4.html", null ]
         ] ]
       ] ],
       [ "Scenario::EditScript< BytebeatModel, BytebeatModel::p_script >", "class_scenario_1_1_edit_script.html", [
@@ -283,6 +284,7 @@ var hierarchy =
       [ "Explorer::Command::UpdateDeviceSettings", "class_explorer_1_1_command_1_1_update_device_settings.html", null ],
       [ "Gradient::ChangeGradient", "class_gradient_1_1_change_gradient.html", null ],
       [ "Interpolation::ChangeAddress", "class_interpolation_1_1_change_address.html", null ],
+      [ "JS::UpdateStateElement", "class_j_s_1_1_update_state_element.html", null ],
       [ "Mapping::ChangeSourceAddress", "class_mapping_1_1_change_source_address.html", null ],
       [ "Mapping::ChangeTargetAddress", "class_mapping_1_1_change_target_address.html", null ],
       [ "Media::ChangeAudioFile", "class_media_1_1_change_audio_file.html", null ],
@@ -407,6 +409,7 @@ var hierarchy =
         [ "Explorer::Command::RemoveNodes", "class_explorer_1_1_command_1_1_remove_nodes.html", null ],
         [ "Explorer::Command::UpdateAndReloadMacro", "class_explorer_1_1_command_1_1_update_and_reload_macro.html", null ],
         [ "JS::ScriptMacro", "class_j_s_1_1_script_macro.html", null ],
+        [ "JS::UpdateStateMacro", "class_j_s_1_1_update_state_macro.html", null ],
         [ "Midi::RescaleAllMidi", "class_midi_1_1_rescale_all_midi.html", null ],
         [ "Nodal::DropNodesMacro", "class_nodal_1_1_drop_nodes_macro.html", null ],
         [ "Nodal::RemoveNodes", "class_nodal_1_1_remove_nodes.html", null ],
@@ -652,7 +655,6 @@ var hierarchy =
     [ "score::DefaultGraphicsSliderImpl", "structscore_1_1_default_graphics_slider_impl.html", null ],
     [ "score::DefaultGraphicsSpinboxImpl", "structscore_1_1_default_graphics_spinbox_impl.html", null ],
     [ "gpp::qrhi::DefaultPipeline", "structgpp_1_1qrhi_1_1_default_pipeline.html", null ],
-    [ "DefaultRollbackStrategy", "struct_default_rollback_strategy.html", null ],
     [ "score::gfx::DefaultShaderMaterial", "structscore_1_1gfx_1_1_default_shader_material.html", null ],
     [ "Threedim::DeformationControl", "struct_threedim_1_1_deformation_control.html", null ],
     [ "score::delete_later< T >", "structscore_1_1delete__later.html", null ],
@@ -1124,8 +1126,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Model >", "classid__base__t.html", null ],
+    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1370,7 +1372,8 @@ var hierarchy =
         ] ],
         [ "Curve::CurveLayerFactory_T< Model_T, LayerPresenter_T, LayerView_T, CurveColors_T, HeaderDelegate_T >", "class_curve_1_1_curve_layer_factory___t.html", null ],
         [ "Process::EffectLayerFactory_Base", "class_process_1_1_effect_layer_factory___base.html", [
-          [ "Process::EffectLayerFactory_T< Model_T, ExtView_T >", "class_process_1_1_effect_layer_factory___t.html", null ]
+          [ "JS::LayerFactory", "struct_j_s_1_1_layer_factory.html", null ],
+          [ "Process::EffectLayerFactory_T< Model_T, ExtView_T, ScriptView_T >", "class_process_1_1_effect_layer_factory___t.html", null ]
         ] ],
         [ "Process::LayerFactory_T< Model_T, LayerPresenter_T, LayerView_T, HeaderDelegate_T >", "class_process_1_1_layer_factory___t.html", null ],
         [ "Process::LayerFactory_T< Model_T, default_t, default_t, default_t >", "class_process_1_1_layer_factory___t_3_01_model___t_00_01default__t_00_01default__t_00_01default__t_01_4.html", null ],
@@ -1769,6 +1772,7 @@ var hierarchy =
     [ "avnd_tools::PatternCombiner::maximum", "structavnd__tools_1_1_pattern_combiner_1_1maximum.html", null ],
     [ "Protocols::MCUSpecificSettings", "struct_protocols_1_1_m_c_u_specific_settings.html", null ],
     [ "Gfx::ShaderSource::MemberSpec", "struct_gfx_1_1_shader_source_1_1_member_spec.html", null ],
+    [ "JS::QmlSource::MemberSpec", "struct_j_s_1_1_qml_source_1_1_member_spec.html", null ],
     [ "score::Menu", "classscore_1_1_menu.html", null ],
     [ "score::MenuManager", "classscore_1_1_menu_manager.html", null ],
     [ "score::Menus", "structscore_1_1_menus.html", null ],
@@ -2916,6 +2920,7 @@ var hierarchy =
     [ "QMap< const QObject *, QPointer< const QObject > >", "class_q_map.html", null ],
     [ "QMap< QString, std::vector< QUrl > >", "class_q_map.html", null ],
     [ "QMapKeyAdaptor< T >", "struct_q_map_key_adaptor.html", null ],
+    [ "JS::QmlSource", "struct_j_s_1_1_qml_source.html", null ],
     [ "QObject", null, [
       [ "ControlSurface::NodeObserver< int, Apply >", "struct_control_surface_1_1_node_observer.html", null ],
       [ "Dataflow::BasicToolPaletteInputDispatcher< Curve::Tool, Curve::ToolPalette, Curve::View >", "class_dataflow_1_1_basic_tool_palette_input_dispatcher.html", null ],
@@ -3537,6 +3542,9 @@ var hierarchy =
       [ "JS::AddressSource", "struct_j_s_1_1_address_source.html", null ],
       [ "JS::PortSink", "struct_j_s_1_1_port_sink.html", null ],
       [ "JS::PortSource", "struct_j_s_1_1_port_source.html", null ]
+    ] ],
+    [ "QQuickItem", null, [
+      [ "JS::ScriptUI", "class_j_s_1_1_script_u_i.html", null ]
     ] ],
     [ "QScrollArea", null, [
       [ "Library::InfoWidget", "class_library_1_1_info_widget.html", null ]

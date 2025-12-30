@@ -25,7 +25,7 @@ var searchData=
   ['editscript_3c_20filter_3a_3amodel_2c_20filter_3a_3amodel_3a_3ap_5fprogram_20_3e_22',['EditScript&lt; Filter::Model, Filter::Model::p_program &gt;',['../class_scenario_1_1_edit_script.html',1,'Scenario']]],
   ['editscript_3c_20geometryfilter_3a_3amodel_2c_20geometryfilter_3a_3amodel_3a_3ap_5fscript_20_3e_23',['EditScript&lt; GeometryFilter::Model, GeometryFilter::Model::p_script &gt;',['../class_scenario_1_1_edit_script.html',1,'Scenario']]],
   ['editscript_3c_20jiteffectmodel_2c_20jiteffectmodel_3a_3ap_5fscript_20_3e_24',['EditScript&lt; JitEffectModel, JitEffectModel::p_script &gt;',['../class_scenario_1_1_edit_script.html',1,'Scenario']]],
-  ['editscript_3c_20js_3a_3aprocessmodel_2c_20js_3a_3aprocessmodel_3a_3ap_5fscript_20_3e_25',['EditScript&lt; JS::ProcessModel, JS::ProcessModel::p_script &gt;',['../class_scenario_1_1_edit_script.html',1,'Scenario']]],
+  ['editscript_3c_20js_3a_3aprocessmodel_2c_20js_3a_3aprocessmodel_3a_3ap_5fprogram_20_3e_25',['EditScript&lt; JS::ProcessModel, JS::ProcessModel::p_program &gt;',['../class_scenario_1_1_edit_script.html',1,'Scenario']]],
   ['editscript_3c_20model_2c_20model_3a_3ap_5fscript_20_3e_26',['EditScript&lt; Model, Model::p_script &gt;',['../class_scenario_1_1_edit_script.html',1,'Scenario']]],
   ['editscript_3c_20pd_3a_3aprocessmodel_2c_20pd_3a_3aprocessmodel_3a_3ap_5fscript_20_3e_27',['EditScript&lt; Pd::ProcessModel, Pd::ProcessModel::p_script &gt;',['../class_scenario_1_1_edit_script.html',1,'Scenario']]],
   ['editscript_3c_20renderpipeline_3a_3amodel_2c_20renderpipeline_3a_3amodel_3a_3ap_5fprogram_20_3e_28',['EditScript&lt; RenderPipeline::Model, RenderPipeline::Model::p_program &gt;',['../class_scenario_1_1_edit_script.html',1,'Scenario']]],
@@ -86,7 +86,7 @@ var searchData=
   ['entitymapinserter_83',['EntityMapInserter',['../classscore_1_1_entity_map_inserter.html',1,'score']]],
   ['entitymapinserter_3c_20score_3a_3aentity_3c_20t_20_3e_2c_20ordered_20_3e_84',['EntityMapInserter&lt; score::Entity&lt; T &gt;, Ordered &gt;',['../classscore_1_1_entity_map_inserter_3_01score_1_1_entity_3_01_t_01_4_00_01_ordered_01_4.html',1,'score']]],
   ['entitymapserializer_85',['EntityMapSerializer',['../struct_entity_map_serializer.html',1,'']]],
-  ['enum_86',['enum',['../class_j_s_1_1_enum.html',1,'JS::Enum'],['../struct_widget_factory_1_1_enum.html',1,'WidgetFactory::Enum'],['../struct_process_1_1_enum.html',1,'Process::Enum']]],
+  ['enum_86',['enum',['../struct_process_1_1_enum.html',1,'Process::Enum'],['../struct_widget_factory_1_1_enum.html',1,'WidgetFactory::Enum'],['../class_j_s_1_1_enum.html',1,'JS::Enum']]],
   ['enum_5frange_3c_20nodes_3a_3amidiutil_3a_3ascale_5ftype_20_3e_87',['enum_range&lt; Nodes::MidiUtil::scale_type &gt;',['../structmagic__enum_1_1customize_1_1enum__range_3_01_nodes_1_1_midi_util_1_1scale__type_01_4.html',1,'magic_enum::customize']]],
   ['envelopefollower_88',['EnvelopeFollower',['../struct_analysis_1_1_envelope_follower.html',1,'Analysis']]],
   ['event_89',['event',['../class_local_tree_1_1_event.html',1,'LocalTree::Event'],['../class_remote_control_1_1_w_s_1_1_event.html',1,'RemoteControl::WS::Event']]],
@@ -117,7 +117,7 @@ var searchData=
   ['executionqueue_114',['executionQueue',['../struct_execution_1_1_context.html#a1a0fd8f494c0a427dc09b7da3e94bf36',1,'Execution::Context']]],
   ['executionstatevaluetype_115',['ExecutionStateValueType',['../struct_j_s_1_1_execution_state_value_type.html',1,'JS']]],
   ['executionstatusproperty_116',['ExecutionStatusProperty',['../struct_scenario_1_1_execution_status_property.html',1,'Scenario']]],
-  ['executor_117',['executor',['../class_patternist_1_1_executor.html',1,'Patternist::Executor'],['../class_avnd_jit_1_1_executor.html',1,'AvndJit::Executor'],['../class_clap_1_1_executor.html',1,'Clap::Executor'],['../class_faust_d_s_p_1_1_executor.html',1,'FaustDSP::Executor&lt; DSP &gt;'],['../classoscr_1_1_executor.html',1,'oscr::Executor&lt; Node &gt;'],['../classvst3_1_1_executor.html',1,'vst3::Executor'],['../classvst_1_1_executor.html',1,'vst::Executor']]],
+  ['executor_117',['executor',['../classoscr_1_1_executor.html',1,'oscr::Executor&lt; Node &gt;'],['../class_avnd_jit_1_1_executor.html',1,'AvndJit::Executor'],['../class_clap_1_1_executor.html',1,'Clap::Executor'],['../class_faust_d_s_p_1_1_executor.html',1,'FaustDSP::Executor&lt; DSP &gt;'],['../class_patternist_1_1_executor.html',1,'Patternist::Executor'],['../classvst3_1_1_executor.html',1,'vst3::Executor'],['../classvst_1_1_executor.html',1,'vst::Executor']]],
   ['executorfactory_118',['ExecutorFactory',['../structoscr_1_1_executor_factory.html',1,'oscr']]],
   ['explorationworker_119',['ExplorationWorker',['../class_explorer_1_1_exploration_worker.html',1,'Explorer']]],
   ['explorationworkerwrapper_120',['ExplorationWorkerWrapper',['../class_explorer_1_1_exploration_worker_wrapper.html',1,'Explorer']]],
@@ -130,5 +130,7 @@ var searchData=
   ['expressionvalidator_3c_20treenode_20_3e_127',['ExpressionValidator&lt; TreeNode &gt;',['../class_expression_validator.html',1,'']]],
   ['extend_128',['extend',['../class_path.html#ab241fb45dd1062d7081f3c9a23be8682',1,'Path::extend(const QString &amp;name, const Id&lt; U &gt; &amp;id) const &amp;noexcept'],['../class_path.html#a29cc8284f912f06110ee8a9d09a84e9d',1,'Path::extend(const QString &amp;name, const Id&lt; U &gt; &amp;id) &amp;&amp;noexcept'],['../class_path.html#aeef1841f39deb54f8778c319e86943f7',1,'Path::extend(const Id&lt; U &gt; &amp;id) const &amp;noexcept'],['../class_path.html#a7b072fe8477cdeec63eb2772d91438c4',1,'Path::extend(const Id&lt; U &gt; &amp;id) &amp;&amp;noexcept']]],
   ['externalinput_129',['ExternalInput',['../class_video_1_1_external_input.html',1,'Video']]],
-  ['extractbuffer_130',['ExtractBuffer',['../class_threedim_1_1_extract_buffer.html',1,'Threedim']]]
+  ['externaluiavailable_130',['ExternalUIAvailable',['../namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a72fe866a84cc50d4400605b060322e69',1,'Process']]],
+  ['externaluisupported_131',['ExternalUISupported',['../namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1ae7e4d4d89c439a38bba5de1e10dfe667',1,'Process']]],
+  ['extractbuffer_132',['ExtractBuffer',['../class_threedim_1_1_extract_buffer.html',1,'Threedim']]]
 ];

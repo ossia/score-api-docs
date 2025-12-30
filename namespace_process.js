@@ -154,6 +154,9 @@ var namespace_process =
       [ "DynamicPorts", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a8c4b302dda329470aa905fd75a9d9c85", null ],
       [ "PolyphonySupported", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a7e246c0c415497975ad76b40a9689ca4", null ],
       [ "PolyphonyEnabled", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a7615e80e02861a5f6954e5c8ba304f31", null ],
+      [ "ScriptEditingSupported", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a904817600939b14aaf314f5184b4a7d5", null ],
+      [ "ExternalUISupported", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1ae7e4d4d89c439a38bba5de1e10dfe667", null ],
+      [ "ExternalUIAvailable", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a72fe866a84cc50d4400605b060322e69", null ],
       [ "SupportsLasting", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a29b3036018dcd388b9502a6aae1912b2", null ],
       [ "ExternalEffect", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1ac0745b11b10f8e4cdc8476e3d2862695", null ],
       [ "SupportsAll", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1accb6c989f8513bacb617f1d00fb237d9", null ]

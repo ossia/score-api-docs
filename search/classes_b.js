@@ -1,13 +1,13 @@
 var searchData=
 [
   ['lane_0',['Lane',['../struct_patternist_1_1_lane.html',1,'Patternist']]],
-  ['languagespec_1',['languagespec',['../struct_faust_1_1_language_spec.html',1,'Faust::LanguageSpec'],['../struct_y_s_f_x_1_1_language_spec.html',1,'YSFX::LanguageSpec'],['../struct_j_s_1_1_language_spec.html',1,'JS::LanguageSpec'],['../struct_gfx_1_1_geometry_filter_1_1_language_spec.html',1,'Gfx::GeometryFilter::LanguageSpec'],['../struct_gfx_1_1_c_s_f_1_1_language_spec.html',1,'Gfx::CSF::LanguageSpec'],['../struct_gfx_1_1_v_s_a_1_1_language_spec.html',1,'Gfx::VSA::LanguageSpec']]],
+  ['languagespec_1',['languagespec',['../struct_faust_1_1_language_spec.html',1,'Faust::LanguageSpec'],['../struct_y_s_f_x_1_1_language_spec.html',1,'YSFX::LanguageSpec'],['../struct_j_s_1_1_language_spec.html',1,'JS::LanguageSpec'],['../struct_gfx_1_1_geometry_filter_1_1_language_spec.html',1,'Gfx::GeometryFilter::LanguageSpec'],['../struct_gfx_1_1_v_s_a_1_1_language_spec.html',1,'Gfx::VSA::LanguageSpec'],['../struct_gfx_1_1_c_s_f_1_1_language_spec.html',1,'Gfx::CSF::LanguageSpec']]],
   ['layer_2',['layer',['../struct_scenario_1_1_layer_data_1_1_layer.html',1,'Scenario::LayerData::Layer'],['../struct_ui_1_1_signal_display_1_1_node_1_1_layer.html',1,'Ui::SignalDisplay::Node::Layer'],['../struct_ui_1_1_value_display_1_1_node_1_1_layer.html',1,'Ui::ValueDisplay::Node::Layer']]],
   ['layercontext_3',['LayerContext',['../struct_process_1_1_layer_context.html',1,'Process']]],
   ['layercontextmenu_4',['LayerContextMenu',['../class_process_1_1_layer_context_menu.html',1,'Process']]],
   ['layercontextmenumanager_5',['LayerContextMenuManager',['../class_process_1_1_layer_context_menu_manager.html',1,'Process']]],
   ['layerdata_6',['LayerData',['../class_scenario_1_1_layer_data.html',1,'Scenario']]],
-  ['layerfactory_7',['layerfactory',['../struct_media_1_1_step_1_1_layer_factory.html',1,'Media::Step::LayerFactory'],['../classoscr_1_1_layer_factory.html',1,'oscr::LayerFactory&lt; Info &gt;'],['../class_process_1_1_layer_factory.html',1,'Process::LayerFactory']]],
+  ['layerfactory_7',['layerfactory',['../struct_j_s_1_1_layer_factory.html',1,'JS::LayerFactory'],['../struct_media_1_1_step_1_1_layer_factory.html',1,'Media::Step::LayerFactory'],['../classoscr_1_1_layer_factory.html',1,'oscr::LayerFactory&lt; Info &gt;'],['../class_process_1_1_layer_factory.html',1,'Process::LayerFactory']]],
   ['layerfactory_5ft_8',['LayerFactory_T',['../class_process_1_1_layer_factory___t.html',1,'Process']]],
   ['layerfactory_5ft_3c_20model_5ft_2c_20default_5ft_2c_20default_5ft_2c_20default_5ft_20_3e_9',['LayerFactory_T&lt; Model_T, default_t, default_t, default_t &gt;',['../class_process_1_1_layer_factory___t_3_01_model___t_00_01default__t_00_01default__t_00_01default__t_01_4.html',1,'Process']]],
   ['layerfactory_5ft_3c_20step_3a_3amodel_2c_20step_3a_3apresenter_2c_20step_3a_3aview_20_3e_10',['LayerFactory_T&lt; Step::Model, Step::Presenter, Step::View &gt;',['../class_process_1_1_layer_factory___t.html',1,'Process']]],

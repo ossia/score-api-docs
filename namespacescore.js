@@ -284,7 +284,7 @@ var namespacescore =
     [ "StaticPropertyCommand< Gfx::VSA::Model::p_vertex >", "structscore_1_1_static_property_command_3_01_gfx_1_1_v_s_a_1_1_model_1_1p__vertex_01_4.html", null ],
     [ "StaticPropertyCommand< Jit::BytebeatModel::p_script >", "structscore_1_1_static_property_command_3_01_jit_1_1_bytebeat_model_1_1p__script_01_4.html", null ],
     [ "StaticPropertyCommand< Jit::JitEffectModel::p_script >", "structscore_1_1_static_property_command_3_01_jit_1_1_jit_effect_model_1_1p__script_01_4.html", null ],
-    [ "StaticPropertyCommand< JS::ProcessModel::p_script >", "structscore_1_1_static_property_command_3_01_j_s_1_1_process_model_1_1p__script_01_4.html", null ],
+    [ "StaticPropertyCommand< JS::ProcessModel::p_program >", "structscore_1_1_static_property_command_3_01_j_s_1_1_process_model_1_1p__program_01_4.html", null ],
     [ "StringConstants", "structscore_1_1_string_constants.html", null ],
     [ "SubtypeVariant", "classscore_1_1_subtype_variant.html", null ],
     [ "TaskPool", "classscore_1_1_task_pool.html", null ],

@@ -114,9 +114,10 @@ Inheritance diagram for Process::EffectLayerFactory_Base:</div>
  <div class="center">
   <img src="class_process_1_1_effect_layer_factory___base.png" usemap="#Process::EffectLayerFactory_5FBase_map" alt=""/>
   <map id="Process::EffectLayerFactory_5FBase_map" name="Process::EffectLayerFactory_5FBase_map">
-<area href="class_process_1_1_layer_factory.html" alt="Process::LayerFactory" shape="rect" coords="0,56,329,80"/>
-<area href="classscore_1_1_interface_base.html" title="Base class for plug-in interfaces." alt="score::InterfaceBase" shape="rect" coords="0,0,329,24"/>
-<area href="class_process_1_1_effect_layer_factory___t.html" alt="Process::EffectLayerFactory_T&lt; Model_T, ExtView_T &gt;" shape="rect" coords="0,168,329,192"/>
+<area href="class_process_1_1_layer_factory.html" alt="Process::LayerFactory" shape="rect" coords="211,56,624,80"/>
+<area href="classscore_1_1_interface_base.html" title="Base class for plug-in interfaces." alt="score::InterfaceBase" shape="rect" coords="211,0,624,24"/>
+<area href="struct_j_s_1_1_layer_factory.html" alt="JS::LayerFactory" shape="rect" coords="0,168,413,192"/>
+<area href="class_process_1_1_effect_layer_factory___t.html" alt="Process::EffectLayerFactory_T&lt; Model_T, ExtView_T, ScriptView_T &gt;" shape="rect" coords="423,168,836,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -135,6 +136,15 @@ virtual std::optional&lt; double &gt;&#160;</td><td class="memItemRight" valign=
 <tr class="memitem:a24c4f7f357e4ff7a9ad935ac191a629a inherit pub_methods_class_process_1_1_layer_factory" id="r_a24c4f7f357e4ff7a9ad935ac191a629a"><td class="memItemLeft" align="right" valign="top">
 virtual <a class="el" href="class_process_1_1_mini_layer.html">Process::MiniLayer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>makeMiniLayer</b> (const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;, QGraphicsItem *parent) const</td></tr>
 <tr class="separator:a24c4f7f357e4ff7a9ad935ac191a629a inherit pub_methods_class_process_1_1_layer_factory"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1304730db45d747bef31ee594b71b25 inherit pub_methods_class_process_1_1_layer_factory" id="r_aa1304730db45d747bef31ee594b71b25"><td class="memItemLeft" align="right" valign="top">
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasCodeEditor</b> (const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;proc, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx) const noexcept</td></tr>
+<tr class="separator:aa1304730db45d747bef31ee594b71b25 inherit pub_methods_class_process_1_1_layer_factory"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56af538fd136137106284675d4d615bc inherit pub_methods_class_process_1_1_layer_factory" id="r_a56af538fd136137106284675d4d615bc"><td class="memItemLeft" align="right" valign="top">
+virtual QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>makeCodeEditor</b> (const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, QWidget *parent) const</td></tr>
+<tr class="separator:a56af538fd136137106284675d4d615bc inherit pub_methods_class_process_1_1_layer_factory"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a2743cdbe453e6463f781f3e85c9790 inherit pub_methods_class_process_1_1_layer_factory" id="r_a6a2743cdbe453e6463f781f3e85c9790"><td class="memItemLeft" align="right" valign="top">
+virtual QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>makeScriptUI</b> (<a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, QWidget *parent) const</td></tr>
+<tr class="separator:a6a2743cdbe453e6463f781f3e85c9790 inherit pub_methods_class_process_1_1_layer_factory"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0720366db3c0a83586e6f90bde25ed5 inherit pub_methods_class_process_1_1_layer_factory" id="r_ab0720366db3c0a83586e6f90bde25ed5"><td class="memItemLeft" align="right" valign="top">
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasExternalUI</b> (const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;proc, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx) const noexcept</td></tr>
 <tr class="separator:ab0720366db3c0a83586e6f90bde25ed5 inherit pub_methods_class_process_1_1_layer_factory"><td class="memSeparator" colspan="2">&#160;</td></tr>

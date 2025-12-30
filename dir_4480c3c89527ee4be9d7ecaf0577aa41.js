@@ -10,5 +10,6 @@ var dir_4480c3c89527ee4be9d7ecaf0577aa41 =
     [ "JSProcessFactory.hpp", "_j_s_process_factory_8hpp_source.html", null ],
     [ "JSProcessMetadata.hpp", "_j_s_process_metadata_8hpp_source.html", null ],
     [ "JSProcessModel.hpp", "_j_s_process_model_8hpp_source.html", null ],
-    [ "LibraryHandler.hpp", "_library_handler_8hpp_source.html", null ]
+    [ "LibraryHandler.hpp", "_library_handler_8hpp_source.html", null ],
+    [ "ThreadLocalQmlEngine.hpp", "_thread_local_qml_engine_8hpp_source.html", null ]
 ];

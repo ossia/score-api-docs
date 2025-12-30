@@ -104,7 +104,6 @@ $(document).ready(function(){initNavTree('class_j_s_1_1_process_model.html','');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_j_s_1_1_process_model-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">JS::ProcessModel Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
@@ -125,6 +124,9 @@ Inheritance diagram for JS::ProcessModel:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:abff5f7ef9d4e749a0edbbccf3c57613e" id="r_abff5f7ef9d4e749a0edbbccf3c57613e"><td class="memItemLeft" align="right" valign="top"><a id="abff5f7ef9d4e749a0edbbccf3c57613e" name="abff5f7ef9d4e749a0edbbccf3c57613e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasExternalUI</b> () const noexcept</td></tr>
+<tr class="separator:abff5f7ef9d4e749a0edbbccf3c57613e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6cd1c9e3e7763f1524034b202ccd4f9" id="r_ac6cd1c9e3e7763f1524034b202ccd4f9"><td class="memItemLeft" align="right" valign="top"><a id="ac6cd1c9e3e7763f1524034b202ccd4f9" name="ac6cd1c9e3e7763f1524034b202ccd4f9"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ProcessModel</b> (const <a class="el" href="struct_time_val.html">TimeVal</a> &amp;duration, const QString &amp;data, const <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &gt; &amp;id, QObject *parent)</td></tr>
 <tr class="separator:ac6cd1c9e3e7763f1524034b202ccd4f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,36 +134,89 @@ Public Member Functions</h2></td></tr>
 template&lt;typename Impl &gt; </td></tr>
 <tr class="memitem:ac93c589717466d74333e9c3212fd1986"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ProcessModel</b> (Impl &amp;vis, QObject *parent)</td></tr>
 <tr class="separator:ac93c589717466d74333e9c3212fd1986"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca00c217d943464c20f1290aed0bbe09" id="r_aca00c217d943464c20f1290aed0bbe09"><td class="memItemLeft" align="right" valign="top"><a id="aca00c217d943464c20f1290aed0bbe09" name="aca00c217d943464c20f1290aed0bbe09"></a>
-<a class="el" href="struct_process_1_1_script_change_result.html">Process::ScriptChangeResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>setScript</b> (const QString &amp;script)</td></tr>
-<tr class="separator:aca00c217d943464c20f1290aed0bbe09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae18d23885ebf63c4b83a64f15985ad85" id="r_ae18d23885ebf63c4b83a64f15985ad85"><td class="memItemLeft" align="right" valign="top"><a id="ae18d23885ebf63c4b83a64f15985ad85" name="ae18d23885ebf63c4b83a64f15985ad85"></a>
-const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>script</b> () const noexcept</td></tr>
-<tr class="separator:ae18d23885ebf63c4b83a64f15985ad85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc599d1ab1997fcdacbfee2a62ea1185" id="r_acc599d1ab1997fcdacbfee2a62ea1185"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">Process::ProcessFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_process_model.html#acc599d1ab1997fcdacbfee2a62ea1185">flags</a> () const noexcept override</td></tr>
+<tr class="separator:acc599d1ab1997fcdacbfee2a62ea1185"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea3c984974fb8f42d0d4a36be77f2b26" id="r_aea3c984974fb8f42d0d4a36be77f2b26"><td class="memItemLeft" align="right" valign="top"><a id="aea3c984974fb8f42d0d4a36be77f2b26" name="aea3c984974fb8f42d0d4a36be77f2b26"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setExecutionScript</b> (const QString &amp;script)</td></tr>
+<tr class="separator:aea3c984974fb8f42d0d4a36be77f2b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a94f5b8af19ff3bb9d38465e69bfa72" id="r_a4a94f5b8af19ff3bb9d38465e69bfa72"><td class="memItemLeft" align="right" valign="top"><a id="a4a94f5b8af19ff3bb9d38465e69bfa72" name="a4a94f5b8af19ff3bb9d38465e69bfa72"></a>
+const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>executionScript</b> () const noexcept</td></tr>
+<tr class="separator:a4a94f5b8af19ff3bb9d38465e69bfa72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1715a06f3d8262bf212551e00431eb9" id="r_ab1715a06f3d8262bf212551e00431eb9"><td class="memItemLeft" align="right" valign="top"><a id="ab1715a06f3d8262bf212551e00431eb9" name="ab1715a06f3d8262bf212551e00431eb9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>executionScriptOk</b> ()</td></tr>
+<tr class="separator:ab1715a06f3d8262bf212551e00431eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a136aa97b036f7d3c93eff110b9d4d536" id="r_a136aa97b036f7d3c93eff110b9d4d536"><td class="memItemLeft" align="right" valign="top"><a id="a136aa97b036f7d3c93eff110b9d4d536" name="a136aa97b036f7d3c93eff110b9d4d536"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>executionScriptChanged</b> (const QString &amp;arg_1)</td></tr>
+<tr class="separator:a136aa97b036f7d3c93eff110b9d4d536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af842af94b166198715fd76dc011ef45b" id="r_af842af94b166198715fd76dc011ef45b"><td class="memItemLeft" align="right" valign="top"><a id="af842af94b166198715fd76dc011ef45b" name="af842af94b166198715fd76dc011ef45b"></a>
 const QByteArray &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>qmlData</b> () const noexcept</td></tr>
 <tr class="separator:af842af94b166198715fd76dc011ef45b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade51ac8e95e0897fcac5afc1f1392999" id="r_ade51ac8e95e0897fcac5afc1f1392999"><td class="memItemLeft" align="right" valign="top"><a id="ade51ac8e95e0897fcac5afc1f1392999" name="ade51ac8e95e0897fcac5afc1f1392999"></a>
-<a class="el" href="class_j_s_1_1_script.html">JS::Script</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>currentObject</b> () const noexcept</td></tr>
-<tr class="separator:ade51ac8e95e0897fcac5afc1f1392999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53f8dc9672133340ca07b874f92fb7ae" id="r_a53f8dc9672133340ca07b874f92fb7ae"><td class="memItemLeft" align="right" valign="top"><a id="a53f8dc9672133340ca07b874f92fb7ae" name="a53f8dc9672133340ca07b874f92fb7ae"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setUiScript</b> (const QString &amp;script)</td></tr>
+<tr class="separator:a53f8dc9672133340ca07b874f92fb7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9a7bea52134cea58698e046af902d93" id="r_aa9a7bea52134cea58698e046af902d93"><td class="memItemLeft" align="right" valign="top"><a id="aa9a7bea52134cea58698e046af902d93" name="aa9a7bea52134cea58698e046af902d93"></a>
+const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>uiScript</b> () const noexcept</td></tr>
+<tr class="separator:aa9a7bea52134cea58698e046af902d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a638808f0670870df1bca709d317c8857" id="r_a638808f0670870df1bca709d317c8857"><td class="memItemLeft" align="right" valign="top"><a id="a638808f0670870df1bca709d317c8857" name="a638808f0670870df1bca709d317c8857"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>uiScriptOk</b> ()</td></tr>
+<tr class="separator:a638808f0670870df1bca709d317c8857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a147256126c35678c17055865fcd8d923" id="r_a147256126c35678c17055865fcd8d923"><td class="memItemLeft" align="right" valign="top"><a id="a147256126c35678c17055865fcd8d923" name="a147256126c35678c17055865fcd8d923"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>uiScriptChanged</b> (const QString &amp;arg_1)</td></tr>
+<tr class="separator:a147256126c35678c17055865fcd8d923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca59aaa908b83a66a88352d45d68a7bf" id="r_aca59aaa908b83a66a88352d45d68a7bf"><td class="memItemLeft" align="right" valign="top"><a id="aca59aaa908b83a66a88352d45d68a7bf" name="aca59aaa908b83a66a88352d45d68a7bf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setState</b> (const JS::JSState &amp;s)</td></tr>
+<tr class="separator:aca59aaa908b83a66a88352d45d68a7bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aace9cd744051f0f13ca140a5f7fb2121" id="r_aace9cd744051f0f13ca140a5f7fb2121"><td class="memItemLeft" align="right" valign="top"><a id="aace9cd744051f0f13ca140a5f7fb2121" name="aace9cd744051f0f13ca140a5f7fb2121"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateState</b> (const QString &amp;k, const ossia::value &amp;v)</td></tr>
+<tr class="separator:aace9cd744051f0f13ca140a5f7fb2121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6582db6d6f6a570c8ce3008b1b7bb66" id="r_ad6582db6d6f6a570c8ce3008b1b7bb66"><td class="memItemLeft" align="right" valign="top"><a id="ad6582db6d6f6a570c8ce3008b1b7bb66" name="ad6582db6d6f6a570c8ce3008b1b7bb66"></a>
+const JS::JSState &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>state</b> () const noexcept</td></tr>
+<tr class="separator:ad6582db6d6f6a570c8ce3008b1b7bb66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f1f198c6f54c94d50026c939252fa16" id="r_a7f1f198c6f54c94d50026c939252fa16"><td class="memItemLeft" align="right" valign="top"><a id="a7f1f198c6f54c94d50026c939252fa16" name="a7f1f198c6f54c94d50026c939252fa16"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stateChanged</b> ()</td></tr>
+<tr class="separator:a7f1f198c6f54c94d50026c939252fa16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3711889d504e804c21e06412f04ef21" id="r_ac3711889d504e804c21e06412f04ef21"><td class="memItemLeft" align="right" valign="top"><a id="ac3711889d504e804c21e06412f04ef21" name="ac3711889d504e804c21e06412f04ef21"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stateElementChanged</b> (const QString &amp;k, const ossia::value &amp;v)</td></tr>
+<tr class="separator:ac3711889d504e804c21e06412f04ef21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c651a887b781c146a2e0bd3be1c078f" id="r_a6c651a887b781c146a2e0bd3be1c078f"><td class="memItemLeft" align="right" valign="top"><a id="a6c651a887b781c146a2e0bd3be1c078f" name="a6c651a887b781c146a2e0bd3be1c078f"></a>
+<a class="el" href="class_j_s_1_1_script.html">JS::Script</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>currentExecutionObject</b> () const noexcept</td></tr>
+<tr class="separator:a6c651a887b781c146a2e0bd3be1c078f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4288ce70ebd7388071b435b98eee8019" id="r_a4288ce70ebd7388071b435b98eee8019"><td class="memItemLeft" align="right" valign="top"><a id="a4288ce70ebd7388071b435b98eee8019" name="a4288ce70ebd7388071b435b98eee8019"></a>
+QQuickItem *&#160;</td><td class="memItemRight" valign="bottom"><b>currentUI</b> () const noexcept</td></tr>
+<tr class="separator:a4288ce70ebd7388071b435b98eee8019"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add2efdbe6e1083a7322f40658bafb722" id="r_add2efdbe6e1083a7322f40658bafb722"><td class="memItemLeft" align="right" valign="top"><a id="add2efdbe6e1083a7322f40658bafb722" name="add2efdbe6e1083a7322f40658bafb722"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isGpu</b> () const noexcept</td></tr>
 <tr class="separator:add2efdbe6e1083a7322f40658bafb722"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a686a15a608230c92edd9af84c05b07cf" id="r_a686a15a608230c92edd9af84c05b07cf"><td class="memItemLeft" align="right" valign="top"><a id="a686a15a608230c92edd9af84c05b07cf" name="a686a15a608230c92edd9af84c05b07cf"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>validate</b> (const QString &amp;str) const noexcept</td></tr>
-<tr class="separator:a686a15a608230c92edd9af84c05b07cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bf8f745b964feac14c8347002ee5eb9" id="r_a9bf8f745b964feac14c8347002ee5eb9"><td class="memItemLeft" align="right" valign="top"><a id="a9bf8f745b964feac14c8347002ee5eb9" name="a9bf8f745b964feac14c8347002ee5eb9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>errorMessage</b> (int arg_1, const QString &amp;arg_2) const</td></tr>
-<tr class="separator:a9bf8f745b964feac14c8347002ee5eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3770a2201da071c83b008e00be4db3b" id="r_ac3770a2201da071c83b008e00be4db3b"><td class="memItemLeft" align="right" valign="top"><a id="ac3770a2201da071c83b008e00be4db3b" name="ac3770a2201da071c83b008e00be4db3b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>scriptOk</b> ()</td></tr>
-<tr class="separator:ac3770a2201da071c83b008e00be4db3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab396ff6d6128da7ebc0b18e55f4e5d82" id="r_ab396ff6d6128da7ebc0b18e55f4e5d82"><td class="memItemLeft" align="right" valign="top"><a id="ab396ff6d6128da7ebc0b18e55f4e5d82" name="ab396ff6d6128da7ebc0b18e55f4e5d82"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>scriptChanged</b> (const QString &amp;arg_1)</td></tr>
-<tr class="separator:ab396ff6d6128da7ebc0b18e55f4e5d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad15939609c80f97534f38f165e42e865" id="r_ad15939609c80f97534f38f165e42e865"><td class="memItemLeft" align="right" valign="top"><a id="ad15939609c80f97534f38f165e42e865" name="ad15939609c80f97534f38f165e42e865"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasUi</b> () const noexcept</td></tr>
+<tr class="separator:ad15939609c80f97534f38f165e42e865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc15af567ce656f8e607f68ecf10cd16" id="r_acc15af567ce656f8e607f68ecf10cd16"><td class="memItemLeft" align="right" valign="top"><a id="acc15af567ce656f8e607f68ecf10cd16" name="acc15af567ce656f8e607f68ecf10cd16"></a>
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>createWindowForUI</b> (const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, QWidget *parent) const noexcept</td></tr>
+<tr class="separator:acc15af567ce656f8e607f68ecf10cd16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2e980d9b0a9e3f2e7bf66de37379dfb" id="r_ad2e980d9b0a9e3f2e7bf66de37379dfb"><td class="memItemLeft" align="right" valign="top"><a id="ad2e980d9b0a9e3f2e7bf66de37379dfb" name="ad2e980d9b0a9e3f2e7bf66de37379dfb"></a>
+QQuickItem *&#160;</td><td class="memItemRight" valign="bottom"><b>createItemForUI</b> (const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx) const noexcept</td></tr>
+<tr class="separator:ad2e980d9b0a9e3f2e7bf66de37379dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac22d422f6ff2c6e8cdce7dc61ed16e9a" id="r_ac22d422f6ff2c6e8cdce7dc61ed16e9a"><td class="memItemLeft" align="right" valign="top"><a id="ac22d422f6ff2c6e8cdce7dc61ed16e9a" name="ac22d422f6ff2c6e8cdce7dc61ed16e9a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>validate</b> (const std::vector&lt; QString &gt; &amp;str) const noexcept</td></tr>
+<tr class="separator:ac22d422f6ff2c6e8cdce7dc61ed16e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a273972756c0609e226ec3fa186a449c5" id="r_a273972756c0609e226ec3fa186a449c5"><td class="memItemLeft" align="right" valign="top"><a id="a273972756c0609e226ec3fa186a449c5" name="a273972756c0609e226ec3fa186a449c5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>errorMessage</b> (const QString &amp;arg_2) const</td></tr>
+<tr class="separator:a273972756c0609e226ec3fa186a449c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66c6b42474a8f74bb8e7004c0178b97c" id="r_a66c6b42474a8f74bb8e7004c0178b97c"><td class="memItemLeft" align="right" valign="top"><a id="a66c6b42474a8f74bb8e7004c0178b97c" name="a66c6b42474a8f74bb8e7004c0178b97c"></a>
+const <a class="el" href="struct_j_s_1_1_qml_source.html">QmlSource</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>program</b> () const noexcept</td></tr>
+<tr class="separator:a66c6b42474a8f74bb8e7004c0178b97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d0a2e5ab3a360f6e06f77ad0c38517d" id="r_a0d0a2e5ab3a360f6e06f77ad0c38517d"><td class="memItemLeft" align="right" valign="top"><a id="a0d0a2e5ab3a360f6e06f77ad0c38517d" name="a0d0a2e5ab3a360f6e06f77ad0c38517d"></a>
+<a class="el" href="struct_process_1_1_script_change_result.html">Process::ScriptChangeResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>setProgram</b> (const <a class="el" href="struct_j_s_1_1_qml_source.html">QmlSource</a> &amp;f)</td></tr>
+<tr class="separator:a0d0a2e5ab3a360f6e06f77ad0c38517d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b9f07f52e393b811fa67a13417d0f60" id="r_a0b9f07f52e393b811fa67a13417d0f60"><td class="memItemLeft" align="right" valign="top"><a id="a0b9f07f52e393b811fa67a13417d0f60" name="a0b9f07f52e393b811fa67a13417d0f60"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>programChanged</b> ()</td></tr>
 <tr class="separator:a0b9f07f52e393b811fa67a13417d0f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3ffc548de0cebd34d2f9cae2adf9681" id="r_aa3ffc548de0cebd34d2f9cae2adf9681"><td class="memItemLeft" align="right" valign="top"><a id="aa3ffc548de0cebd34d2f9cae2adf9681" name="aa3ffc548de0cebd34d2f9cae2adf9681"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>uiToExecution</b> (const QVariant &amp;v)</td></tr>
+<tr class="separator:aa3ffc548de0cebd34d2f9cae2adf9681"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93a1854e86b46e2f27b67c8afc2a93e4" id="r_a93a1854e86b46e2f27b67c8afc2a93e4"><td class="memItemLeft" align="right" valign="top"><a id="a93a1854e86b46e2f27b67c8afc2a93e4" name="a93a1854e86b46e2f27b67c8afc2a93e4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>executionToUi</b> (const QVariant &amp;v)</td></tr>
+<tr class="separator:a93a1854e86b46e2f27b67c8afc2a93e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_process_1_1_process_model"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_process_1_1_process_model')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a></td></tr>
 <tr class="memitem:a882042368991e0eee4cd5a51d73d04c0 inherit pub_methods_class_process_1_1_process_model" id="r_a882042368991e0eee4cd5a51d73d04c0"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>ProcessModel</b> (<a class="el" href="struct_time_val.html">TimeVal</a> duration, const <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="class_process_1_1_process_model.html">ProcessModel</a> &gt; &amp;id, const QString &amp;name, QObject *parent)</td></tr>
@@ -184,9 +239,6 @@ virtual QString&#160;</td><td class="memItemRight" valign="bottom"><b>category</
 <tr class="memitem:a7bf11caad01ef77a945a828e79c13c52 inherit pub_methods_class_process_1_1_process_model" id="r_a7bf11caad01ef77a945a828e79c13c52"><td class="memItemLeft" align="right" valign="top">
 virtual QStringList&#160;</td><td class="memItemRight" valign="bottom"><b>tags</b> () const noexcept=0</td></tr>
 <tr class="separator:a7bf11caad01ef77a945a828e79c13c52 inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a868ffa760b7923b685308572d81bed01 inherit pub_methods_class_process_1_1_process_model" id="r_a868ffa760b7923b685308572d81bed01"><td class="memItemLeft" align="right" valign="top">
-virtual <a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">ProcessFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><b>flags</b> () const noexcept=0</td></tr>
-<tr class="separator:a868ffa760b7923b685308572d81bed01 inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca261d66704364d06318dce734933b71 inherit pub_methods_class_process_1_1_process_model" id="r_aca261d66704364d06318dce734933b71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_process_model.html#aca261d66704364d06318dce734933b71">setParentDuration</a> (ExpandMode mode, const <a class="el" href="struct_time_val.html">TimeVal</a> &amp;t) noexcept</td></tr>
 <tr class="separator:aca261d66704364d06318dce734933b71 inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbca0c06f06584b2c3a02150fde6b4a8 inherit pub_methods_class_process_1_1_process_model" id="r_afbca0c06f06584b2c3a02150fde6b4a8"><td class="memItemLeft" align="right" valign="top">
@@ -354,6 +406,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>benchmark</b> (double
 <tr class="memitem:a308f3787f7042ffa777d12da4efe4049 inherit pub_methods_class_process_1_1_process_model" id="r_a308f3787f7042ffa777d12da4efe4049"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>externalUIVisible</b> (bool v) const</td></tr>
 <tr class="separator:a308f3787f7042ffa777d12da4efe4049 inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad13573c40eefbbd995bc5ec1226401e inherit pub_methods_class_process_1_1_process_model" id="r_aad13573c40eefbbd995bc5ec1226401e"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>scriptUIVisible</b> (bool v) const</td></tr>
+<tr class="separator:aad13573c40eefbbd995bc5ec1226401e inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba21b4c0e7f447ae79a15aed2de8e08c inherit pub_methods_class_process_1_1_process_model" id="r_aba21b4c0e7f447ae79a15aed2de8e08c"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>flagsChanged</b> () const</td></tr>
+<tr class="separator:aba21b4c0e7f447ae79a15aed2de8e08c inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1_entity"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1_entity')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1_entity.html">score::Entity&lt; ProcessModel &gt;</a></td></tr>
 <tr class="memitem:a180d9f13fe93f3ffd86d2725965c3bb4 inherit pub_methods_classscore_1_1_entity" id="r_a180d9f13fe93f3ffd86d2725965c3bb4"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>Entity</b> (<a class="el" href="classid__base__t.html">Id</a>&lt; ProcessModel &gt; id, const QString &amp;name, QObject *parent) noexcept</td></tr>
@@ -411,12 +469,6 @@ virtual <a class="el" href="class_uuid_key.html">UuidKey</a>&lt; ProcessModel &g
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>serialize_impl</b> (const <a class="el" href="struct_visitor_variant.html">VisitorVariant</a> &amp;vis) const</td></tr>
 <tr class="separator:aafa05e605f693e319e066767bd657abd inherit pub_methods_classscore_1_1_serializable_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a8f23687c107ebc201e7dad0d27c28986" id="r_a8f23687c107ebc201e7dad0d27c28986"><td class="memItemLeft" align="right" valign="top"><a id="a8f23687c107ebc201e7dad0d27c28986" name="a8f23687c107ebc201e7dad0d27c28986"></a>
-static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasExternalUI</b> () noexcept</td></tr>
-<tr class="separator:a8f23687c107ebc201e7dad0d27c28986"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classscore_1_1_entity"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classscore_1_1_entity')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classscore_1_1_entity.html">score::Entity&lt; ProcessModel &gt;</a></td></tr>
@@ -444,6 +496,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>is_abstract_base_tag
 <tr class="memitem:a348bd912133334cb0f4019efec96461c inherit pub_attribs_class_process_1_1_process_model" id="r_a348bd912133334cb0f4019efec96461c"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="class_selectable.html">Selectable</a>&#160;</td><td class="memItemRight" valign="bottom"><b>selection</b> {this}</td></tr>
 <tr class="separator:a348bd912133334cb0f4019efec96461c inherit pub_attribs_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0a38eec59aaf3e3e57dfbb0dbae507f inherit pub_attribs_class_process_1_1_process_model" id="r_ad0a38eec59aaf3e3e57dfbb0dbae507f"><td class="memItemLeft" align="right" valign="top">
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>scriptUI</b> {}</td></tr>
+<tr class="separator:ad0a38eec59aaf3e3e57dfbb0dbae507f inherit pub_attribs_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add99e25be911aa469160f3469cc2a85f inherit pub_attribs_class_process_1_1_process_model" id="r_add99e25be911aa469160f3469cc2a85f"><td class="memItemLeft" align="right" valign="top">
 QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>externalUI</b> {}</td></tr>
 <tr class="separator:add99e25be911aa469160f3469cc2a85f inherit pub_attribs_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -506,6 +561,34 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setDurationAn
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="acc599d1ab1997fcdacbfee2a62ea1185" name="acc599d1ab1997fcdacbfee2a62ea1185"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc599d1ab1997fcdacbfee2a62ea1185">&#9670;&#160;</a></span>flags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">Process::ProcessFlags</a> JS::ProcessModel::flags </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a>.</p>
 
 </div>
 </div>

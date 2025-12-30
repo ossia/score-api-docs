@@ -20,5 +20,6 @@ var searchData=
   ['anyserializers_17',['anySerializers',['../namespacescore.html#a0b6720796cb590c0cd175f0f5b83d981',1,'score']]],
   ['applicationplugin_18',['applicationPlugin',['../structscore_1_1_g_u_i_application_context.html#ace1244b45a34e2327c980238e98819c1',1,'score::GUIApplicationContext']]],
   ['applicationplugins_19',['applicationPlugins',['../structscore_1_1_g_u_i_application_context.html#a088bb1d03043afc26f5b18ad9d90ad45',1,'score::GUIApplicationContext']]],
-  ['availableprocesses_20',['availableProcesses',['../class_j_s_1_1_edit_js_context.html#a07112b02f659e01dd83a8b9e526d9d10',1,'JS::EditJsContext']]]
+  ['asarray_20',['asArray',['../class_j_s_1_1_device_context.html#a08f3e84d096ddf2b88e2c478fba9fb7f',1,'JS::DeviceContext']]],
+  ['availableprocesses_21',['availableProcesses',['../class_j_s_1_1_edit_js_context.html#a07112b02f659e01dd83a8b9e526d9d10',1,'JS::EditJsContext']]]
 ];

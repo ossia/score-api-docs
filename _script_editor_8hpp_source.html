@@ -193,15 +193,24 @@ $(document).ready(function(){initNavTree('_script_editor_8hpp_source.html',''); 
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keyword">protected</span>:</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keyword">const</span> Process_T&amp; m_process;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="keywordtype">void</span> closeEvent(QCloseEvent* event)<span class="keyword"> override</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="keyword">  </span>{</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keyword">const_cast&lt;</span>QWidget*&amp;<span class="keyword">&gt;</span>(m_process.externalUI) = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    m_process.externalUIVisible(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  }</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>};</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keywordtype">void</span> reject()<span class="keyword"> override</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keyword">const_cast&lt;</span>QWidget*&amp;<span class="keyword">&gt;</span>(m_process.scriptUI) = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    m_process.scriptUIVisible(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    QDialog::reject();</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keywordtype">void</span> closeEvent(QCloseEvent* event)<span class="keyword"> override</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keyword">const_cast&lt;</span>QWidget*&amp;<span class="keyword">&gt;</span>(m_process.scriptUI) = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    m_process.scriptUIVisible(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    QDialog::closeEvent(event);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>};</div>
 </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
 <div class="ttc" id="aclass_command_dispatcher_html"><div class="ttname"><a href="class_command_dispatcher.html">CommandDispatcher</a></div><div class="ttdoc">The CommandDispatcher class.</div><div class="ttdef"><b>Definition</b> CommandDispatcher.hpp:13</div></div>
 <div class="ttc" id="aclass_identified_object_abstract_html_a837d8cf72964d86c675a2aac0dba2761"><div class="ttname"><a href="class_identified_object_abstract.html#a837d8cf72964d86c675a2aac0dba2761">IdentifiedObjectAbstract::identified_object_destroying</a></div><div class="ttdeci">void identified_object_destroying(IdentifiedObjectAbstract *o)</div><div class="ttdoc">To be called by subclasses.</div></div>
 <div class="ttc" id="aclass_process_1_1_process_script_edit_dialog_html"><div class="ttname"><a href="class_process_1_1_process_script_edit_dialog.html">Process::ProcessScriptEditDialog</a></div><div class="ttdef"><b>Definition</b> ScriptEditor.hpp:49</div></div>

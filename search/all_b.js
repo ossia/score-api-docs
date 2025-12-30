@@ -9,7 +9,7 @@ var searchData=
   ['layercontextmenu_6',['LayerContextMenu',['../class_process_1_1_layer_context_menu.html',1,'Process']]],
   ['layercontextmenumanager_7',['LayerContextMenuManager',['../class_process_1_1_layer_context_menu_manager.html',1,'Process']]],
   ['layerdata_8',['LayerData',['../class_scenario_1_1_layer_data.html',1,'Scenario']]],
-  ['layerfactory_9',['layerfactory',['../struct_media_1_1_step_1_1_layer_factory.html',1,'Media::Step::LayerFactory'],['../classoscr_1_1_layer_factory.html',1,'oscr::LayerFactory&lt; Info &gt;'],['../class_process_1_1_layer_factory.html',1,'Process::LayerFactory']]],
+  ['layerfactory_9',['layerfactory',['../struct_j_s_1_1_layer_factory.html',1,'JS::LayerFactory'],['../struct_media_1_1_step_1_1_layer_factory.html',1,'Media::Step::LayerFactory'],['../classoscr_1_1_layer_factory.html',1,'oscr::LayerFactory&lt; Info &gt;'],['../class_process_1_1_layer_factory.html',1,'Process::LayerFactory']]],
   ['layerfactory_5ft_10',['LayerFactory_T',['../class_process_1_1_layer_factory___t.html',1,'Process']]],
   ['layerfactory_5ft_3c_20model_5ft_2c_20default_5ft_2c_20default_5ft_2c_20default_5ft_20_3e_11',['LayerFactory_T&lt; Model_T, default_t, default_t, default_t &gt;',['../class_process_1_1_layer_factory___t_3_01_model___t_00_01default__t_00_01default__t_00_01default__t_01_4.html',1,'Process']]],
   ['layerfactory_5ft_3c_20step_3a_3amodel_2c_20step_3a_3apresenter_2c_20step_3a_3aview_20_3e_12',['LayerFactory_T&lt; Step::Model, Step::Presenter, Step::View &gt;',['../class_process_1_1_layer_factory___t.html',1,'Process']]],

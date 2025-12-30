@@ -1,5 +1,16 @@
 var NAVTREEINDEX27 =
 {
+"structscore_1_1gfx_1_1_audio_texture_upload.html":[12,0,55,2,1],
+"structscore_1_1gfx_1_1_basic_mesh.html":[11,0,12,0,2],
+"structscore_1_1gfx_1_1_basic_mesh.html":[12,0,55,2,2],
+"structscore_1_1gfx_1_1_buffer_view.html":[11,0,12,0,3],
+"structscore_1_1gfx_1_1_buffer_view.html":[12,0,55,2,3],
+"structscore_1_1gfx_1_1_default_shader_material.html":[11,0,12,0,5],
+"structscore_1_1gfx_1_1_default_shader_material.html":[12,0,55,2,5],
+"structscore_1_1gfx_1_1_depth_node.html":[11,0,12,0,6],
+"structscore_1_1gfx_1_1_depth_node.html":[12,0,55,2,6],
+"structscore_1_1gfx_1_1_depth_node.html#a9e6884f55624ab97cc7eb8b5d62866ae":[12,0,55,2,6,0],
+"structscore_1_1gfx_1_1_depth_node.html#a9e6884f55624ab97cc7eb8b5d62866ae":[11,0,12,0,6,0],
 "structscore_1_1gfx_1_1_dummy_mesh.html":[11,0,12,0,7],
 "structscore_1_1gfx_1_1_dummy_mesh.html":[12,0,55,2,7],
 "structscore_1_1gfx_1_1_dummy_mesh.html#a881e7dbad87f249cfb83ee5b1b6bdc30":[11,0,12,0,7,0],
@@ -238,16 +249,5 @@ var NAVTREEINDEX27 =
 "structscore_1_1gfx_1_1_y_u_v422_decoder.html":[12,0,55,2,88],
 "structscore_1_1gfx_1_1_y_u_v422_decoder.html#a6e1ec1b1b0e4736ce8f8b14918227b6d":[12,0,55,2,88,1],
 "structscore_1_1gfx_1_1_y_u_v422_decoder.html#a6e1ec1b1b0e4736ce8f8b14918227b6d":[11,0,12,0,88,1],
-"structscore_1_1gfx_1_1_y_u_v422_decoder.html#a94950bc858149c7b3972087c4ede7fe2":[12,0,55,2,88,0],
-"structscore_1_1gfx_1_1_y_u_v422_decoder.html#a94950bc858149c7b3972087c4ede7fe2":[11,0,12,0,88,0],
-"structscore_1_1gfx_1_1_y_u_v422_p10_decoder.html":[12,0,55,2,89],
-"structscore_1_1gfx_1_1_y_u_v422_p10_decoder.html":[11,0,12,0,89],
-"structscore_1_1gfx_1_1_y_u_v422_p10_decoder.html#ab4a63b30c88df40ffb6640d5e6052c8f":[12,0,55,2,89,0],
-"structscore_1_1gfx_1_1_y_u_v422_p10_decoder.html#ab4a63b30c88df40ffb6640d5e6052c8f":[11,0,12,0,89,0],
-"structscore_1_1gfx_1_1_y_u_v422_p10_decoder.html#aee83e86a35f0d07609206b184628740d":[12,0,55,2,89,1],
-"structscore_1_1gfx_1_1_y_u_v422_p10_decoder.html#aee83e86a35f0d07609206b184628740d":[11,0,12,0,89,1],
-"structscore_1_1gfx_1_1_y_u_v422_p12_decoder.html":[11,0,12,0,90],
-"structscore_1_1gfx_1_1_y_u_v422_p12_decoder.html":[12,0,55,2,90],
-"structscore_1_1gfx_1_1_y_u_v422_p12_decoder.html#a6ae7b275ebaa7c7eabeb8d3c19364ad7":[12,0,55,2,90,0],
-"structscore_1_1gfx_1_1_y_u_v422_p12_decoder.html#a6ae7b275ebaa7c7eabeb8d3c19364ad7":[11,0,12,0,90,0]
+"structscore_1_1gfx_1_1_y_u_v422_decoder.html#a94950bc858149c7b3972087c4ede7fe2":[12,0,55,2,88,0]
 };

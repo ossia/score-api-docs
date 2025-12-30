@@ -145,11 +145,27 @@ $(document).ready(function(){initNavTree('_device_context_8hpp_source.html','');
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keywordtype">void</span> write(<span class="keyword">const</span> QString&amp; address, <span class="keyword">const</span> QVariant&amp; value);</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  W_SLOT(write);</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  ossia::qt::qml_engine_functions* m_impl{};</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>};</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keywordtype">void</span> exec(<span class="keyword">const</span> QString&amp; code) W_SIGNAL(exec, code);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordtype">void</span> compute(<span class="keyword">const</span> QString&amp; code, <span class="keyword">const</span> QString&amp; cb) W_SIGNAL(compute, code, cb);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keywordtype">void</span> system(<span class="keyword">const</span> QString&amp; code) W_SIGNAL(system, code);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  QVariant <a class="code hl_function" href="class_j_s_1_1_device_context.html#a08f3e84d096ddf2b88e2c478fba9fb7f">asArray</a>(QVariant v) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  W_SLOT(<a class="code hl_function" href="class_j_s_1_1_device_context.html#a08f3e84d096ddf2b88e2c478fba9fb7f">asArray</a>)</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  QVariant asColor(QVariant) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  W_SLOT(asColor)</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  QVariant asVec2(QVariant) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  W_SLOT(asVec2)</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  QVariant asVec3(QVariant) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  W_SLOT(asVec3)</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  QVariant asVec4(QVariant) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  W_SLOT(asVec4)</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  ossia::qt::qml_engine_functions* m_impl{};</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>};</div>
 </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
 <div class="ttc" id="aclass_j_s_1_1_device_context_html"><div class="ttname"><a href="class_j_s_1_1_device_context.html">JS::DeviceContext</a></div><div class="ttdef"><b>Definition</b> DeviceContext.hpp:19</div></div>
+<div class="ttc" id="aclass_j_s_1_1_device_context_html_a08f3e84d096ddf2b88e2c478fba9fb7f"><div class="ttname"><a href="class_j_s_1_1_device_context.html#a08f3e84d096ddf2b88e2c478fba9fb7f">JS::DeviceContext::asArray</a></div><div class="ttdeci">QVariant asArray(QVariant v) const noexcept</div><div class="ttdoc">Conversions ///.</div><div class="ttdef"><b>Definition</b> DeviceContext.cpp:142</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
