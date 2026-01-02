@@ -1415,6 +1415,7 @@ var hierarchy =
         [ "Faust::DropHandler", "class_faust_1_1_drop_handler.html", null ],
         [ "Gfx::CSF::DropHandler", "class_gfx_1_1_c_s_f_1_1_drop_handler.html", null ],
         [ "Gfx::Filter::DropHandler", "class_gfx_1_1_filter_1_1_drop_handler.html", null ],
+        [ "Gfx::Filter::VideoTextureDropHandler", "struct_gfx_1_1_filter_1_1_video_texture_drop_handler.html", null ],
         [ "Gfx::GeometryFilter::DropHandler", "class_gfx_1_1_geometry_filter_1_1_drop_handler.html", null ],
         [ "Gfx::VSA::DropHandler", "class_gfx_1_1_v_s_a_1_1_drop_handler.html", null ],
         [ "Gfx::Video::DropHandler", "class_gfx_1_1_video_1_1_drop_handler.html", null ],

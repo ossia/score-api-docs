@@ -132,10 +132,10 @@ var NAVTREEINDEX =
 "functions_func_f.html",
 "score-plugin-gfx_2_gfx_2_c_s_f_2_process_8hpp_source.html",
 "struct_device_1_1_full_address_accessor_settings.html",
-"struct_jit_1_1_timer.html",
+"struct_jit_1_1_global_at_exit.html",
 "struct_process_1_1_int_range_spin_box.html",
 "struct_scenario_1_1_time_signature_map_1_1impl.html",
-"struct_widget_factory_1_1_int_range_slider.html",
+"struct_widget_factory_1_1_impulse_button.html",
 "structscore_1_1_application_settings.html#a2ca3a0746bc5d3dd143ff71943607eba",
 "structscore_1_1gfx_1_1_audio_texture_upload.html",
 "structscore_1_1gfx_1_1_y_u_v422_decoder.html#a94950bc858149c7b3972087c4ede7fe2"
