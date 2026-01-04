@@ -59,11 +59,12 @@ var searchData=
   ['outletinspectorfactory_56',['OutletInspectorFactory',['../class_dataflow_1_1_outlet_inspector_factory.html',1,'Dataflow']]],
   ['outlets_57',['Outlets',['../struct_process_1_1_outlets.html',1,'Process']]],
   ['output_58',['Output',['../struct_nodes_1_1_midi_hi_res_1_1_output.html',1,'Nodes::MidiHiRes']]],
-  ['outputnode_59',['OutputNode',['../classscore_1_1gfx_1_1_output_node.html',1,'score::gfx']]],
-  ['outputnoderenderer_60',['OutputNodeRenderer',['../classscore_1_1gfx_1_1_output_node_renderer.html',1,'score::gfx']]],
-  ['outputstream_61',['OutputStream',['../struct_gfx_1_1_output_stream.html',1,'Gfx']]],
-  ['outputubo_62',['OutputUBO',['../structscore_1_1gfx_1_1_output_u_b_o.html',1,'score::gfx']]],
-  ['outs_63',['outs',['../struct_threedim_1_1_geometry_packer_1_1outs.html',1,'Threedim::GeometryPacker']]],
-  ['outvaluemessage_64',['OutValueMessage',['../struct_j_s_1_1_out_value_message.html',1,'JS']]],
-  ['owningdeviceinterface_65',['OwningDeviceInterface',['../class_device_1_1_owning_device_interface.html',1,'Device']]]
+  ['outputconfiguration_59',['OutputConfiguration',['../structscore_1_1gfx_1_1_output_configuration.html',1,'score::gfx']]],
+  ['outputnode_60',['OutputNode',['../classscore_1_1gfx_1_1_output_node.html',1,'score::gfx']]],
+  ['outputnoderenderer_61',['OutputNodeRenderer',['../classscore_1_1gfx_1_1_output_node_renderer.html',1,'score::gfx']]],
+  ['outputstream_62',['OutputStream',['../struct_gfx_1_1_output_stream.html',1,'Gfx']]],
+  ['outputubo_63',['OutputUBO',['../structscore_1_1gfx_1_1_output_u_b_o.html',1,'score::gfx']]],
+  ['outs_64',['outs',['../struct_threedim_1_1_geometry_packer_1_1outs.html',1,'Threedim::GeometryPacker']]],
+  ['outvaluemessage_65',['OutValueMessage',['../struct_j_s_1_1_out_value_message.html',1,'JS']]],
+  ['owningdeviceinterface_66',['OwningDeviceInterface',['../class_device_1_1_owning_device_interface.html',1,'Device']]]
 ];

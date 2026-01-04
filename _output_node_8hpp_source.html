@@ -120,71 +120,81 @@ $(document).ready(function(){initNavTree('_output_node_8hpp_source.html',''); in
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacescore_1_1gfx.html">score::gfx</a></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
 <div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_output_node_renderer.html">   10</a></span><span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node_renderer.html">OutputNodeRenderer</a> : <span class="keyword">public</span> <a class="code hl_class" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_output_configuration.html">   10</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structscore_1_1gfx_1_1_output_configuration.html">OutputConfiguration</a></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  <span class="keyword">using </span>score::gfx::NodeRenderer::NodeRenderer;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node_renderer.html">~OutputNodeRenderer</a>();</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  finishFrame(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;, QRhiCommandBuffer&amp; commands, QRhiResourceUpdateBatch*&amp; res);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>};</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <a class="code hl_enumeration" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a> graphicsApi{};</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  std::function&lt;void()&gt; onReady;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  std::function&lt;void()&gt; onResize;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>};</div>
 </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">class </span><a class="code hl_class" href="classscore_1_1gfx_1_1_window.html">Window</a>;</div>
-<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_output_node.html">   23</a></span><span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a> : <span class="keyword">public</span> <a class="code hl_class" href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node.html">~OutputNode</a>();</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> setRenderer(std::shared_ptr&lt;RenderList&gt;) = 0;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>* renderer() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_output_node.html#a0f4a8ebac30efd36d51e81e2a03e5eda">   31</a></span>  <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node_renderer.html">OutputNodeRenderer</a>* <a class="code hl_function" href="classscore_1_1gfx_1_1_output_node.html#a0f4a8ebac30efd36d51e81e2a03e5eda">createRenderer</a>(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span> = 0;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> startRendering() = 0;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> render() = 0;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> stopRendering() = 0;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> canRender() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> onRendererChange() = 0;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> createOutput(</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      <a class="code hl_enumeration" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a> graphicsApi, std::function&lt;<span class="keywordtype">void</span>()&gt; onReady,</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      std::function&lt;<span class="keywordtype">void</span>()&gt; onUpdate, std::function&lt;<span class="keywordtype">void</span>()&gt; onResize)</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>      = 0;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> updateGraphicsAPI(<a class="code hl_enumeration" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a>);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> destroyOutput() = 0;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keyword">virtual</span> std::shared_ptr&lt;RenderState&gt; renderState() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="foldopen" id="foldopen00048" data-start="{" data-end="};">
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_output_node_1_1_configuration.html">   48</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="structscore_1_1gfx_1_1_output_node_1_1_configuration.html">Configuration</a></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  {</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="comment">// If set, the host is responsible for calling render() at this</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// rate (given in milliseconds)</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    std::optional&lt;double&gt; manualRenderingRate;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">bool</span> outputNeedsRenderPass{};</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a>* parent{};</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  };</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_output_node_renderer.html">   17</a></span><span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node_renderer.html">OutputNodeRenderer</a> : <span class="keyword">public</span> <a class="code hl_class" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keyword">using </span>score::gfx::NodeRenderer::NodeRenderer;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node_renderer.html">~OutputNodeRenderer</a>();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  finishFrame(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;, QRhiCommandBuffer&amp; commands, QRhiResourceUpdateBatch*&amp; res);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>};</div>
 </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_output_node_1_1_configuration.html">Configuration</a> configuration() const noexcept = 0;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>protected:</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  explicit <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a>();</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>};</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">class </span><a class="code hl_class" href="classscore_1_1gfx_1_1_window.html">Window</a>;</div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_output_node.html">   30</a></span><span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a> : <span class="keyword">public</span> <a class="code hl_class" href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node.html">~OutputNode</a>();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> setRenderer(std::shared_ptr&lt;RenderList&gt;) = 0;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>* renderer() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_output_node.html#a0f4a8ebac30efd36d51e81e2a03e5eda">   38</a></span>  <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node_renderer.html">OutputNodeRenderer</a>* <a class="code hl_function" href="classscore_1_1gfx_1_1_output_node.html#a0f4a8ebac30efd36d51e81e2a03e5eda">createRenderer</a>(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span> = 0;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> startRendering() = 0;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> render() = 0;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> stopRendering() = 0;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> canRender() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> onRendererChange() = 0;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> setVSyncCallback(std::function&lt;<span class="keywordtype">void</span>()&gt;);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> createOutput(<a class="code hl_struct" href="structscore_1_1gfx_1_1_output_configuration.html">OutputConfiguration</a> conf) = 0;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> updateGraphicsAPI(<a class="code hl_enumeration" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a>);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> destroyOutput() = 0;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keyword">virtual</span> std::shared_ptr&lt;RenderState&gt; renderState() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="};">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_output_node_1_1_configuration.html">   60</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="structscore_1_1gfx_1_1_output_node_1_1_configuration.html">Configuration</a></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">// If set, the host is responsible for calling render() at this</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="comment">// rate (given in milliseconds)</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    std::optional&lt;double&gt; manualRenderingRate;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">bool</span> outputNeedsRenderPass{};</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">bool</span> supportsVSync{};</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a>* parent{};</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  };</div>
 </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_output_node_1_1_configuration.html">Configuration</a> configuration() const noexcept = 0;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>protected:</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  explicit <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a>();</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>};</div>
+</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}</div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a></div><div class="ttdoc">Root data model for visual nodes.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:71</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdoc">Renderer for a given node.</div><div class="ttdef"><b>Definition</b> NodeRenderer.hpp:11</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a></div><div class="ttdoc">Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)</div><div class="ttdef"><b>Definition</b> OutputNode.hpp:24</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a></div><div class="ttdoc">Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)</div><div class="ttdef"><b>Definition</b> OutputNode.hpp:31</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_html_a0f4a8ebac30efd36d51e81e2a03e5eda"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node.html#a0f4a8ebac30efd36d51e81e2a03e5eda">score::gfx::OutputNode::createRenderer</a></div><div class="ttdeci">OutputNodeRenderer * createRenderer(RenderList &amp;r) const noexcept override=0</div><div class="ttdoc">Create a renderer in a given context for this node.</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node_renderer.html">score::gfx::OutputNodeRenderer</a></div><div class="ttdef"><b>Definition</b> OutputNode.hpp:11</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node_renderer.html">score::gfx::OutputNodeRenderer</a></div><div class="ttdef"><b>Definition</b> OutputNode.hpp:18</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:19</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_window_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_window.html">score::gfx::Window</a></div><div class="ttdoc">A platform window in which the content is going to be rendered.</div><div class="ttdef"><b>Definition</b> plugins/score-plugin-gfx/Gfx/Graph/Window.hpp:21</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_window_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_window.html">score::gfx::Window</a></div><div class="ttdoc">A platform window in which the content is going to be rendered.</div><div class="ttdef"><b>Definition</b> plugins/score-plugin-gfx/Gfx/Graph/Window.hpp:22</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:12</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html_a5b6a96306e1a02ccc56d8bb785bc6734"><div class="ttname"><a href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">score::gfx::GraphicsApi</a></div><div class="ttdeci">GraphicsApi</div><div class="ttdoc">Available graphics APIs to use.</div><div class="ttdef"><b>Definition</b> RenderState.hpp:20</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_output_node_1_1_configuration_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_output_node_1_1_configuration.html">score::gfx::OutputNode::Configuration</a></div><div class="ttdef"><b>Definition</b> OutputNode.hpp:49</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_output_configuration_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_output_configuration.html">score::gfx::OutputConfiguration</a></div><div class="ttdef"><b>Definition</b> OutputNode.hpp:11</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_output_node_1_1_configuration_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_output_node_1_1_configuration.html">score::gfx::OutputNode::Configuration</a></div><div class="ttdef"><b>Definition</b> OutputNode.hpp:61</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

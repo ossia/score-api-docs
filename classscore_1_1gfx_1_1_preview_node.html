@@ -138,8 +138,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a15c4a920dee09282ebd271b5f80e79d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6edcd2ab37a104ee8b0adba369fe0fe" id="r_af6edcd2ab37a104ee8b0adba369fe0fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_preview_node.html#af6edcd2ab37a104ee8b0adba369fe0fe">renderer</a> () const override</td></tr>
 <tr class="separator:af6edcd2ab37a104ee8b0adba369fe0fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49a5abbbf36b6346af980b6b055d4a69" id="r_a49a5abbbf36b6346af980b6b055d4a69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_preview_node.html#a49a5abbbf36b6346af980b6b055d4a69">createOutput</a> (<a class="el" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">score::gfx::GraphicsApi</a> graphicsApi, std::function&lt; void()&gt; onReady, std::function&lt; void()&gt; onUpdate, std::function&lt; void()&gt; onResize) override</td></tr>
-<tr class="separator:a49a5abbbf36b6346af980b6b055d4a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12fdaffc1d7fa4efda8a63e7f8c88df7" id="r_a12fdaffc1d7fa4efda8a63e7f8c88df7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_preview_node.html#a12fdaffc1d7fa4efda8a63e7f8c88df7">createOutput</a> (<a class="el" href="structscore_1_1gfx_1_1_output_configuration.html">score::gfx::OutputConfiguration</a>) override</td></tr>
+<tr class="separator:a12fdaffc1d7fa4efda8a63e7f8c88df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4d5f2a82901daec31944efc9512460e" id="r_ab4d5f2a82901daec31944efc9512460e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_preview_node.html#ab4d5f2a82901daec31944efc9512460e">destroyOutput</a> () override</td></tr>
 <tr class="separator:ab4d5f2a82901daec31944efc9512460e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7aeb3ed887878396bf8ce3198cfd11e1" id="r_a7aeb3ed887878396bf8ce3198cfd11e1"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="structscore_1_1gfx_1_1_render_state.html">score::gfx::RenderState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_preview_node.html#a7aeb3ed887878396bf8ce3198cfd11e1">renderState</a> () const override</td></tr>
@@ -153,6 +153,9 @@ Public Member Functions</h2></td></tr>
 QRhiTexture *&#160;</td><td class="memItemRight" valign="bottom"><b>texture</b> () const noexcept</td></tr>
 <tr class="separator:a0d6820fb84fb8d507d7388bee955a13b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1gfx_1_1_output_node"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1gfx_1_1_output_node')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a></td></tr>
+<tr class="memitem:ae5b2ad56c1db4ac9c82dabe2a58d61b2 inherit pub_methods_classscore_1_1gfx_1_1_output_node" id="r_ae5b2ad56c1db4ac9c82dabe2a58d61b2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_output_node.html#ae5b2ad56c1db4ac9c82dabe2a58d61b2">setVSyncCallback</a> (std::function&lt; void()&gt;)</td></tr>
+<tr class="memdesc:ae5b2ad56c1db4ac9c82dabe2a58d61b2 inherit pub_methods_classscore_1_1gfx_1_1_output_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a callback to drive rendering when there is a single output.  <br /></td></tr>
+<tr class="separator:ae5b2ad56c1db4ac9c82dabe2a58d61b2 inherit pub_methods_classscore_1_1gfx_1_1_output_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aced0563f2ef5b827e0af7ab971e69062 inherit pub_methods_classscore_1_1gfx_1_1_output_node" id="r_aced0563f2ef5b827e0af7ab971e69062"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>updateGraphicsAPI</b> (<a class="el" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a>)</td></tr>
 <tr class="separator:aced0563f2ef5b827e0af7ab971e69062 inherit pub_methods_classscore_1_1gfx_1_1_output_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -291,8 +294,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>addedToGraph</b> {}</
 
 </div>
 </div>
-<a id="a49a5abbbf36b6346af980b6b055d4a69" name="a49a5abbbf36b6346af980b6b055d4a69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49a5abbbf36b6346af980b6b055d4a69">&#9670;&#160;</a></span>createOutput()</h2>
+<a id="a12fdaffc1d7fa4efda8a63e7f8c88df7" name="a12fdaffc1d7fa4efda8a63e7f8c88df7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12fdaffc1d7fa4efda8a63e7f8c88df7">&#9670;&#160;</a></span>createOutput()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -303,31 +306,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>addedToGraph</b> {}</
         <tr>
           <td class="memname">void score::gfx::PreviewNode::createOutput </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">score::gfx::GraphicsApi</a>&#160;</td>
-          <td class="paramname"><em>graphicsApi</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="structscore_1_1gfx_1_1_output_configuration.html">score::gfx::OutputConfiguration</a>&#160;</td>
+          <td class="paramname"><em>conf</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
-          <td class="paramname"><em>onReady</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
-          <td class="paramname"><em>onUpdate</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
-          <td class="paramname"><em>onResize</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>

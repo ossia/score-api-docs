@@ -12,6 +12,5 @@ var structscore_1_1gfx_1_1_graph =
     [ "relinkGraph", "structscore_1_1gfx_1_1_graph.html#a2053b9d1b4c0466c9cc5fe87be8cb5a5", null ],
     [ "removeEdge", "structscore_1_1gfx_1_1_graph.html#a502b4abc23e8335948bec9e052ddef1c", null ],
     [ "removeNode", "structscore_1_1gfx_1_1_graph.html#a1693837e0d684408bb84af3f619cfc8a", null ],
-    [ "setVSyncCallback", "structscore_1_1gfx_1_1_graph.html#a45f84cb4eb3648b7cb42c45e46e44575", null ],
     [ "unlinkAndRemoveEdge", "structscore_1_1gfx_1_1_graph.html#abe3ddb004ee53340f68c7eb87fd8ec5e", null ]
 ];

@@ -88,13 +88,14 @@ var searchData=
   ['outletinspectorfactory_85',['OutletInspectorFactory',['../class_dataflow_1_1_outlet_inspector_factory.html',1,'Dataflow']]],
   ['outlets_86',['Outlets',['../struct_process_1_1_outlets.html',1,'Process']]],
   ['output_87',['output',['../classscore_1_1gfx_1_1_node.html#afb7194d7e2605a0a39c17eb3ac3e2fa5',1,'score::gfx::Node::output'],['../classscore_1_1gfx_1_1_render_list.html#ae178a78f64300b29ba29beb21653e2b4',1,'score::gfx::RenderList::output'],['../struct_nodes_1_1_midi_hi_res_1_1_output.html',1,'Nodes::MidiHiRes::Output']]],
-  ['outputnode_88',['OutputNode',['../classscore_1_1gfx_1_1_output_node.html',1,'score::gfx']]],
-  ['outputnoderenderer_89',['OutputNodeRenderer',['../classscore_1_1gfx_1_1_output_node_renderer.html',1,'score::gfx']]],
-  ['outputstream_90',['OutputStream',['../struct_gfx_1_1_output_stream.html',1,'Gfx']]],
-  ['outputubo_91',['outputubo',['../structscore_1_1gfx_1_1_output_u_b_o.html',1,'score::gfx::OutputUBO'],['../classscore_1_1gfx_1_1_render_list.html#a44cb2a527d818e954a9af25642cd5b6e',1,'score::gfx::RenderList::outputUBO()']]],
-  ['outs_92',['outs',['../struct_threedim_1_1_geometry_packer_1_1outs.html',1,'Threedim::GeometryPacker']]],
-  ['outvaluemessage_93',['OutValueMessage',['../struct_j_s_1_1_out_value_message.html',1,'JS']]],
-  ['overdub_94',['overdub',['../struct_nodes_1_1_audio_looper_1_1_node.html#abf0b9b4df43473f75a1038306f4f93ef',1,'Nodes::AudioLooper::Node']]],
-  ['overdub_5fnoecho_95',['overdub_noecho',['../struct_nodes_1_1_audio_looper_1_1_node.html#aadc91392d3d873690852745050363863',1,'Nodes::AudioLooper::Node']]],
-  ['owningdeviceinterface_96',['OwningDeviceInterface',['../class_device_1_1_owning_device_interface.html',1,'Device']]]
+  ['outputconfiguration_88',['OutputConfiguration',['../structscore_1_1gfx_1_1_output_configuration.html',1,'score::gfx']]],
+  ['outputnode_89',['OutputNode',['../classscore_1_1gfx_1_1_output_node.html',1,'score::gfx']]],
+  ['outputnoderenderer_90',['OutputNodeRenderer',['../classscore_1_1gfx_1_1_output_node_renderer.html',1,'score::gfx']]],
+  ['outputstream_91',['OutputStream',['../struct_gfx_1_1_output_stream.html',1,'Gfx']]],
+  ['outputubo_92',['outputubo',['../structscore_1_1gfx_1_1_output_u_b_o.html',1,'score::gfx::OutputUBO'],['../classscore_1_1gfx_1_1_render_list.html#a44cb2a527d818e954a9af25642cd5b6e',1,'score::gfx::RenderList::outputUBO()']]],
+  ['outs_93',['outs',['../struct_threedim_1_1_geometry_packer_1_1outs.html',1,'Threedim::GeometryPacker']]],
+  ['outvaluemessage_94',['OutValueMessage',['../struct_j_s_1_1_out_value_message.html',1,'JS']]],
+  ['overdub_95',['overdub',['../struct_nodes_1_1_audio_looper_1_1_node.html#abf0b9b4df43473f75a1038306f4f93ef',1,'Nodes::AudioLooper::Node']]],
+  ['overdub_5fnoecho_96',['overdub_noecho',['../struct_nodes_1_1_audio_looper_1_1_node.html#aadc91392d3d873690852745050363863',1,'Nodes::AudioLooper::Node']]],
+  ['owningdeviceinterface_97',['OwningDeviceInterface',['../class_device_1_1_owning_device_interface.html',1,'Device']]]
 ];

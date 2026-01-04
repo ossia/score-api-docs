@@ -25,6 +25,7 @@ var dir_97b556a87b7c53069d27ffc5d3c87ca6 =
     [ "SafeCast.hpp", "_safe_cast_8hpp_source.html", null ],
     [ "SubtypeVariant.hpp", "_subtype_variant_8hpp_source.html", null ],
     [ "ThreadPool.hpp", "_thread_pool_8hpp_source.html", null ],
+    [ "Timers.hpp", "_timers_8hpp_source.html", null ],
     [ "Unused.hpp", "_unused_8hpp_source.html", null ],
     [ "Version.hpp", "_version_8hpp_source.html", null ],
     [ "WinMainToMain.hpp", "_win_main_to_main_8hpp_source.html", null ]

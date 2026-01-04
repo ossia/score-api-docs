@@ -1079,6 +1079,7 @@ var hierarchy =
     [ "score::HierarchicModel< Model, Args... >", "structscore_1_1_hierarchic_model.html", [
       [ "score::HierarchicModel< Model, Arg, Args... >", "structscore_1_1_hierarchic_model_3_01_model_00_01_arg_00_01_args_8_8_8_01_4.html", null ]
     ] ],
+    [ "score::HighResolutionTimerPrivate", "classscore_1_1_high_resolution_timer_private.html", null ],
     [ "LV2::HostContext", "struct_l_v2_1_1_host_context.html", null ],
     [ "halp::hslider_f32", null, [
       [ "Analysis::gain_slider", "struct_analysis_1_1gain__slider.html", null ],
@@ -2119,6 +2120,7 @@ var hierarchy =
     [ "Jit::outlet_vis", "struct_jit_1_1outlet__vis.html", null ],
     [ "oscr::OutletInitFunc< Node >", "structoscr_1_1_outlet_init_func.html", null ],
     [ "Nodes::MidiHiRes::Output", "struct_nodes_1_1_midi_hi_res_1_1_output.html", null ],
+    [ "score::gfx::OutputConfiguration", "structscore_1_1gfx_1_1_output_configuration.html", null ],
     [ "Gfx::OutputStream", "struct_gfx_1_1_output_stream.html", null ],
     [ "score::gfx::OutputUBO", "structscore_1_1gfx_1_1_output_u_b_o.html", null ],
     [ "Threedim::GeometryPacker::outs", "struct_threedim_1_1_geometry_packer_1_1outs.html", null ],
@@ -2175,8 +2177,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -3415,6 +3417,7 @@ var hierarchy =
       [ "score::FileDownloader", "classscore_1_1_file_downloader.html", null ],
       [ "score::FileWatch", "classscore_1_1_file_watch.html", null ],
       [ "score::FocusManager", "structscore_1_1_focus_manager.html", null ],
+      [ "score::HighResolutionTimer", "classscore_1_1_high_resolution_timer.html", null ],
       [ "score::MessagesPanelDelegate", "classscore_1_1_messages_panel_delegate.html", null ],
       [ "score::MinimalApplication", "classscore_1_1_minimal_application.html", null ],
       [ "score::MinimalGUIApplication", "classscore_1_1_minimal_g_u_i_application.html", null ],
@@ -3495,6 +3498,7 @@ var hierarchy =
       [ "score::SettingsPresenter< Model >", "classscore_1_1_settings_presenter.html", null ],
       [ "score::SimpleTextItem", "classscore_1_1_simple_text_item.html", null ],
       [ "score::Skin", "classscore_1_1_skin.html", null ],
+      [ "score::Timers", "classscore_1_1_timers.html", null ],
       [ "score::ZoomItem", "classscore_1_1_zoom_item.html", null ],
       [ "score::gfx::Node", "classscore_1_1gfx_1_1_node.html", [
         [ "score::gfx::OutputNode", "classscore_1_1gfx_1_1_output_node.html", [

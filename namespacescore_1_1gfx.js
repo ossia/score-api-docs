@@ -37,6 +37,7 @@ var namespacescore_1_1gfx =
     [ "NodeModel", "classscore_1_1gfx_1_1_node_model.html", "classscore_1_1gfx_1_1_node_model" ],
     [ "NodeRenderer", "classscore_1_1gfx_1_1_node_renderer.html", "classscore_1_1gfx_1_1_node_renderer" ],
     [ "NV12Decoder", "structscore_1_1gfx_1_1_n_v12_decoder.html", "structscore_1_1gfx_1_1_n_v12_decoder" ],
+    [ "OutputConfiguration", "structscore_1_1gfx_1_1_output_configuration.html", null ],
     [ "OutputNode", "classscore_1_1gfx_1_1_output_node.html", "classscore_1_1gfx_1_1_output_node" ],
     [ "OutputNodeRenderer", "classscore_1_1gfx_1_1_output_node_renderer.html", null ],
     [ "OutputUBO", "structscore_1_1gfx_1_1_output_u_b_o.html", null ],

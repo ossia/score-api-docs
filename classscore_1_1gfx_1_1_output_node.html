@@ -161,9 +161,12 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>canRender</b>
 <tr class="memitem:aaf2e4b540c4e95cb891b4764efeaed2d" id="r_aaf2e4b540c4e95cb891b4764efeaed2d"><td class="memItemLeft" align="right" valign="top"><a id="aaf2e4b540c4e95cb891b4764efeaed2d" name="aaf2e4b540c4e95cb891b4764efeaed2d"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onRendererChange</b> ()=0</td></tr>
 <tr class="separator:aaf2e4b540c4e95cb891b4764efeaed2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27d9eb167f211318d4205bc15bc193b1" id="r_a27d9eb167f211318d4205bc15bc193b1"><td class="memItemLeft" align="right" valign="top"><a id="a27d9eb167f211318d4205bc15bc193b1" name="a27d9eb167f211318d4205bc15bc193b1"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>createOutput</b> (<a class="el" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a> graphicsApi, std::function&lt; void()&gt; onReady, std::function&lt; void()&gt; onUpdate, std::function&lt; void()&gt; onResize)=0</td></tr>
-<tr class="separator:a27d9eb167f211318d4205bc15bc193b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5b2ad56c1db4ac9c82dabe2a58d61b2" id="r_ae5b2ad56c1db4ac9c82dabe2a58d61b2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_output_node.html#ae5b2ad56c1db4ac9c82dabe2a58d61b2">setVSyncCallback</a> (std::function&lt; void()&gt;)</td></tr>
+<tr class="memdesc:ae5b2ad56c1db4ac9c82dabe2a58d61b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a callback to drive rendering when there is a single output.  <br /></td></tr>
+<tr class="separator:ae5b2ad56c1db4ac9c82dabe2a58d61b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6deee4240bc844cad4bdb09bb710faf9" id="r_a6deee4240bc844cad4bdb09bb710faf9"><td class="memItemLeft" align="right" valign="top"><a id="a6deee4240bc844cad4bdb09bb710faf9" name="a6deee4240bc844cad4bdb09bb710faf9"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>createOutput</b> (<a class="el" href="structscore_1_1gfx_1_1_output_configuration.html">OutputConfiguration</a> conf)=0</td></tr>
+<tr class="separator:a6deee4240bc844cad4bdb09bb710faf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aced0563f2ef5b827e0af7ab971e69062" id="r_aced0563f2ef5b827e0af7ab971e69062"><td class="memItemLeft" align="right" valign="top"><a id="aced0563f2ef5b827e0af7ab971e69062" name="aced0563f2ef5b827e0af7ab971e69062"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>updateGraphicsAPI</b> (<a class="el" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a>)</td></tr>
 <tr class="separator:aced0563f2ef5b827e0af7ab971e69062"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -286,6 +289,37 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>addedToGraph</b> {}</
 <p>Implements <a class="el" href="classscore_1_1gfx_1_1_node.html#afada9ff513c4820efe50ee92c85364f6">score::gfx::Node</a>.</p>
 
 <p>Implemented in <a class="el" href="structscore_1_1gfx_1_1_screen_node.html#a7057c698de89ebde92bfdc38bfa01352">score::gfx::ScreenNode</a>, <a class="el" href="classscore_1_1gfx_1_1_preview_node.html#a40dbcc5b0bccc35c26be0d4f76b9885f">score::gfx::PreviewNode</a>, <a class="el" href="struct_gfx_1_1_libav_encoder_node.html#a708938af0daef8abd6d7346d8e7979ec">Gfx::LibavEncoderNode</a>, <a class="el" href="struct_gfx_1_1_sh4lt_output_node.html#a4d413086a4714d9cd7948db980fc2ef6">Gfx::Sh4ltOutputNode</a>, <a class="el" href="struct_gfx_1_1_shmdata_output_node.html#af6b92929fd31630ac657dca9c682bb96">Gfx::ShmdataOutputNode</a>, and <a class="el" href="struct_gfx_1_1_spout_node.html#a28c7d5311530845d77f105f53ae58cd8">Gfx::SpoutNode</a>.</p>
+
+</div>
+</div>
+<a id="ae5b2ad56c1db4ac9c82dabe2a58d61b2" name="ae5b2ad56c1db4ac9c82dabe2a58d61b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5b2ad56c1db4ac9c82dabe2a58d61b2">&#9670;&#160;</a></span>setVSyncCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::OutputNode::setVSyncCallback </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set a callback to drive rendering when there is a single output. </p>
+<p>If we render to a single window, we can use the GPU V-Sync mechanism. Otherwise the implementation will create timers to keep things in sync. </p>
+
+<p>Reimplemented in <a class="el" href="structscore_1_1gfx_1_1_screen_node.html#ab1dc3eeb47d4714d3ed55862e4a8d161">score::gfx::ScreenNode</a>.</p>
 
 </div>
 </div>

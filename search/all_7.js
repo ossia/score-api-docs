@@ -50,12 +50,14 @@ var searchData=
   ['hierarchicmodel_3c_20model_2c_20arg_2c_20args_2e_2e_2e_20_3e_47',['HierarchicModel&lt; Model, Arg, Args... &gt;',['../structscore_1_1_hierarchic_model_3_01_model_00_01_arg_00_01_args_8_8_8_01_4.html',1,'score']]],
   ['hierarchicmodel_3c_20model_2c_20args_2e_2e_2e_20_3e_48',['HierarchicModel&lt; Model, Args... &gt;',['../structscore_1_1_hierarchic_model.html',1,'score']]],
   ['hierarchymanager_49',['HierarchyManager',['../class_nodal_1_1_hierarchy_manager.html',1,'Nodal']]],
-  ['hostapp_50',['HostApp',['../structvst3_1_1_host_app.html',1,'vst3']]],
-  ['hostcontext_51',['HostContext',['../struct_l_v2_1_1_host_context.html',1,'LV2']]],
-  ['hseparator_52',['HSeparator',['../classscore_1_1_h_separator.html',1,'score']]],
-  ['hsvslider_53',['hsvslider',['../struct_widget_factory_1_1_h_s_v_slider.html',1,'WidgetFactory::HSVSlider'],['../struct_process_1_1_h_s_v_slider.html',1,'Process::HSVSlider'],['../class_j_s_1_1_h_s_v_slider.html',1,'JS::HSVSlider']]],
-  ['httpdevice_54',['HTTPDevice',['../class_protocols_1_1_h_t_t_p_device.html',1,'Protocols']]],
-  ['httpprotocolfactory_55',['HTTPProtocolFactory',['../class_protocols_1_1_h_t_t_p_protocol_factory.html',1,'Protocols']]],
-  ['httpprotocolsettingswidget_56',['HTTPProtocolSettingsWidget',['../class_protocols_1_1_h_t_t_p_protocol_settings_widget.html',1,'Protocols']]],
-  ['httpspecificsettings_57',['HTTPSpecificSettings',['../struct_protocols_1_1_h_t_t_p_specific_settings.html',1,'Protocols']]]
+  ['highresolutiontimer_50',['HighResolutionTimer',['../classscore_1_1_high_resolution_timer.html',1,'score']]],
+  ['highresolutiontimerprivate_51',['HighResolutionTimerPrivate',['../classscore_1_1_high_resolution_timer_private.html',1,'score']]],
+  ['hostapp_52',['HostApp',['../structvst3_1_1_host_app.html',1,'vst3']]],
+  ['hostcontext_53',['HostContext',['../struct_l_v2_1_1_host_context.html',1,'LV2']]],
+  ['hseparator_54',['HSeparator',['../classscore_1_1_h_separator.html',1,'score']]],
+  ['hsvslider_55',['hsvslider',['../struct_process_1_1_h_s_v_slider.html',1,'Process::HSVSlider'],['../struct_widget_factory_1_1_h_s_v_slider.html',1,'WidgetFactory::HSVSlider'],['../class_j_s_1_1_h_s_v_slider.html',1,'JS::HSVSlider']]],
+  ['httpdevice_56',['HTTPDevice',['../class_protocols_1_1_h_t_t_p_device.html',1,'Protocols']]],
+  ['httpprotocolfactory_57',['HTTPProtocolFactory',['../class_protocols_1_1_h_t_t_p_protocol_factory.html',1,'Protocols']]],
+  ['httpprotocolsettingswidget_58',['HTTPProtocolSettingsWidget',['../class_protocols_1_1_h_t_t_p_protocol_settings_widget.html',1,'Protocols']]],
+  ['httpspecificsettings_59',['HTTPSpecificSettings',['../struct_protocols_1_1_h_t_t_p_specific_settings.html',1,'Protocols']]]
 ];
